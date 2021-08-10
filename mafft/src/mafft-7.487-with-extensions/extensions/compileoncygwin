@@ -1,0 +1,13 @@
+rm -rf binaries64/
+mkdir binaries64/
+make clean
+rm -f ../binaries/*
+make CXX=x86_64-w64-mingw32-g++ CXXFLAGS="-static -O3"
+cp mxscarnamod.exe binaries64/
+
+rm -rf binaries32/
+mkdir binaries32/
+make clean
+rm -f ../binaries/*
+make CXX=i686-w64-mingw32-g++ CXXFLAGS="-static -O3"
+cp mxscarnamod.exe binaries32/

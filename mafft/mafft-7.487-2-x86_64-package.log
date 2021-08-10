@@ -1,0 +1,44 @@
+make: Entering directory '/build/mafft/src/mafft-7.487-with-extensions/core'
+cp mafft mafft-homologs.rb mafft-sparsecore.rb ../scripts
+chmod 755 ../scripts/*
+cp mafftash_premafft.pl seekquencer_premafft.pl dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ../binaries
+chmod 755 ../binaries/*
+cp mafft.1 mafft-homologs.1 ../binaries
+done.
+mkdir -p /build/mafft/pkg/mafft/usr/lib/mafft
+chmod 755 /build/mafft/pkg/mafft/usr/lib/mafft
+mkdir -p /build/mafft/pkg/mafft/usr/bin
+chmod 755 /build/mafft/pkg/mafft/usr/bin
+chmod 755 mafft mafft-homologs.rb mafft-sparsecore.rb
+install mafft mafft-homologs.rb mafft-sparsecore.rb  /build/mafft/pkg/mafft/usr/bin
+chmod 755 dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ||:     # in MinGW, it's ok if this fails
+strip dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  ||: # may fail for dash_client on mac.
+install dvtditr dndfast7 dndblast sextet5 mafft-distance pairlocalalign multi2hat3s pairash addsingle maffttext2hex hex2maffttext splittbfast disttbfast tbfast nodepair mafft-profile f2cl mccaskillwrap contrafoldwrap countlen seq2regtable regtable2seq score getlag dndpre setcore filter replaceu restoreu setdirection makedirectionlist version  /build/mafft/pkg/mafft/usr/lib/mafft
+install mafftash_premafft.pl seekquencer_premafft.pl /build/mafft/pkg/mafft/usr/lib/mafft
+install -m 644 mafft.1 mafft-homologs.1 /build/mafft/pkg/mafft/usr/lib/mafft
+( cd /build/mafft/pkg/mafft/usr/bin; \
+rm -f linsi ginsi einsi fftns fftnsi nwns nwnsi xinsi qinsi; \
+rm -f mafft-linsi mafft-ginsi mafft-einsi mafft-fftns mafft-fftnsi mafft-nwns mafft-nwnsi mafft-xinsi mafft-qinsi mafft-randomcore.rb ; \
+ln -s mafft linsi; ln -s mafft ginsi; ln -s mafft fftns; \
+ln -s mafft fftnsi; ln -s mafft nwns; ln -s mafft nwnsi; \
+ln -s mafft einsi; \
+ln -s mafft mafft-linsi; ln -s mafft mafft-ginsi; ln -s mafft mafft-fftns; \
+ln -s mafft mafft-fftnsi; ln -s mafft mafft-nwns; ln -s mafft mafft-nwnsi; \
+ln -s mafft mafft-einsi; ln -s mafft mafft-xinsi; ln -s mafft mafft-qinsi;\
+rm -f mafft-profile mafft-profile.exe; ln -s /usr/lib/mafft/mafft-profile .; \
+rm -f mafft-distance mafft-distance.exe; ln -s /usr/lib/mafft/mafft-distance . )
+mkdir -p /build/mafft/pkg/mafft/usr/share/man/man1
+chmod 755 /build/mafft/pkg/mafft/usr/share/man/man1
+install -m 644 mafft.1 mafft-homologs.1 /build/mafft/pkg/mafft/usr/share/man/man1
+make: Leaving directory '/build/mafft/src/mafft-7.487-with-extensions/core'
+make: Entering directory '/build/mafft/src/mafft-7.487-with-extensions/extensions'
+cp mxscarnamod ../binaries
+chmod 755 ../binaries/*
+done.
+mkdir -p /build/mafft/pkg/mafft/usr/lib/mafft
+chmod 755 /build/mafft/pkg/mafft/usr/lib/mafft
+chmod 755 mxscarnamod
+install mxscarnamod /build/mafft/pkg/mafft/usr/lib/mafft
+make: Leaving directory '/build/mafft/src/mafft-7.487-with-extensions/extensions'
+removed '/build/mafft/pkg/mafft/usr/lib/mafft/mafft-homologs.1'
+removed '/build/mafft/pkg/mafft/usr/lib/mafft/mafft.1'

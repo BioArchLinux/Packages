@@ -1,0 +1,129 @@
+1.Program name
+ MXSCARNA
+
+2.Author
+ Yasuo Tabei
+
+ Department of Computational Biology,
+ Graduate School of Frontier Science,
+ The University of Tokyo
+ and
+ Computational Biology Research Center (CBRC),
+ National Institute of Advanced Industrial Science and Technology (AIST)
+
+ E-mail: scarna@m.aist.go.jp
+
+3.What is MXSCARNA
+ MXSCARNA (Multiplex Stem Candidate Aligner for RNAs) is a tool for
+ fast structural multiple alignment of RNA sequences using progressive
+ alignment based on pairwise structural alignment algorithm of SCARNA.
+
+4.License
+ While its original source code is provided as free software, MXSCARNA
+ contains the source codes of ProbCons and Rfold and the energy parameters
+ of Vienna RNA package (version 1.5).
+ The author thanks Dr. Chuong Do, Dr. Hisanori Kiryu and Dr. Ivo Hofacker,
+ the authors of ProbCons, Rfold and Vienna RNA package respectively,
+ and Institute for Theoretical Chemistry of the  University of Vienna.
+
+ The source code of Rfold is located in ./src/rfold-0.1, which includes
+ energy parameters of Vienna RNA package in ./src/rfold-0.1/src/vienna.
+ Energy parameters of Vienna RNA package are also included in the source
+ code of MXSCARNA (./src/vienna). Please follow ./src/rfold-0.1/readme.txt
+ file, which describes the license of Rfold, and
+ ./src/rfold-0.1/src/vienna/COPYING file and ./src/vienna/COPYING file,
+ which describe the copyright notice of the Vienna RNA package.
+ The source code of ProbCons is located in ./src/probconsRNA. Please follow
+ ./src/probcons/README.
+
+ The original part of MXSCARNA is provided as free software. It is
+ distributed in the hope that it will be useful but WITHOUT ANY WARRANTY;
+ without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+ Permission is granted for research, educational, and commercial use
+ and modification so long as
+ 1) the package and any derived works are not redistributed for any fee,
+    other than media costs,
+ 2) proper credit is given to
+    the authors of MXSCARNA, ProbCons, Rfold and Vienna RNA package,
+    the Univeristy of Tokyo,
+    Computational Biology Research Center (CBRC), AIST
+    and Institute for Theoretical Chemistry of the  University of Vienna.
+
+ If you want to include this software in a commercial product, please
+ contact the author.
+
+5.Citation
+ Yasuo Tabei, Hisanori Kiryu, Taishin Kin, Kiyoshi Asai:
+ "A fast structural multiple alignment method for long RNA sequences,"
+ BMC bioinformatics, to appear.
+
+6.References
+
+ Do, C.B., Mahabhashyam, M.S.P., Brudno, M., and Batzoglou, S. 2005.
+ PROBCONS: Probabilistic Consistency-based Multiple Sequence Alignment.
+ Genome Research 15: 330-340.
+
+ Hisanori Kiryu, Taishin Kin, and Kiyoshi Asai
+ Rfold: An exact algorithm for computing local base pairing probabilities
+ Bioinformatics, Advance Access published on December 4, 2007;
+ doi:10.1093/bioinformatics/btm591
+
+ Ivo L. Hofacker
+ Vienna RNA secondary structure server
+ Nucleic Acids Res., Jul 2003; 31: 3429 - 3431.
+
+ Yasuo Tabei, Koji Tsuda, Taishin Kin, and Kiyoshi Asai
+ SCARNA: fast and accurate structural alignment of RNA sequences by matching fixed-length stem fragments
+ Bioinformatics 2006 22(14):1723-1729.
+
+7.Install
+ The program was tested using gcc 3.3.3 on linux machines and gcc 3.4 on
+ cygwin Some gcc specific features are currently used.
+
+ The command to compile this software is as follows:
+
+ make
+ cd program
+
+8.Usage
+
+ ./mxscarna [options] seqfile
+
+ seqfile:
+   sequence file is multi fasta format.
+
+ options:
+   -clustalw
+      use CLUSTALW output format instead of MFA
+
+   -stockholm
+      use STOCKHOLM output format instead of MFA
+
+   -mxscarna
+      use original output format instead of MFA
+
+   -l <SCSLENGTH>
+      the length of stem candidates (default:2)
+
+   -b <BASEPROBTHRESHOLD>
+      the threshold of base-pairing probability (default:0.01)
+
+   -g <BASEPAIRSCORECONT>
+      the control parameter of the prediction of base-pairs, (default:6)
+
+   -rfold
+      use Rfold instead of global McCaskill algorithm to calcurate base
+      paring probality matrices, (default: off)
+
+   -w <BANDWIDTH>
+      the control parameter of the distance of stem candidates, (default:500)
+
+9.Example
+   ./mxscarna -mxscarna ../sample/trna.mfa
+
+10.Version History
+1. 1/16/2008 (Yasuo Tabei)
+-- MXSCARNA ver 2.0 release
+  - Rfold was included.

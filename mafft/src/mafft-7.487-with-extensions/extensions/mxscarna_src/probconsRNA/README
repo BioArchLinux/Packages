@@ -1,0 +1,107 @@
+
+                          PROBCONS
+                          ~~~~~~~~                          
+
+   Probabilistic consistency-based multiple sequence alignment 
+
+-----------------------------------------------------------------
+                                                             
+PROBCONS is a novel tool for generating  multiple  alignments
+of protein sequences.  Using a combination  of  probabilistic 
+modeling and consistency-based alignment techniques, PROBCONS
+has achieved the highest accuracy of all alignment methods to
+date. 
+
+PROBCONS was developed by Chuong B. Do in collaboration  with 
+Michael Brudno in the research group  of  Serafim  Batzoglou,
+Department of Computer Science, Stanford University.
+
+For more information on the algorithms, please see
+
+     Do, C.B., Brudno, M., and Batzoglou, S. (2004) PROBCONS:
+     Probabilistic Consistency-based  Multiple  Alignment  of
+     Amino Acid Sequences.  12th International Conference  on
+     Intelligent Systems for Molecular Biology.  In press.
+
+and
+
+     Do, C.B., Brudno, M., and Batzoglou, S. (2004) PROBCONS:
+     Probabilistic Consistency-based  Multiple  Alignment  of
+     Amino Acid Sequences.  The 19th National  Conference  on
+     Artificial Intelligence (AAAI-04).  In press.
+
+-----------------------------------------------------------------
+
+PROBCONS has been made  freely  available  as  PUBLIC  DOMAIN
+software and hence is not subject to copyright in the  United
+States.  This system and/or any portion of  the  source  code
+may be used, modified, or redistributed without restrictions.  
+PROBCONS is distributed WITHOUT WARRANTY, express or implied.
+The authors accept NO LEGAL LIABILITY OR  RESPONSIBILITY  for
+loss due to reliance on the program.
+   
+-----------------------------------------------------------------
+
+Version History
+
+1.0, 3/23/2004 (Chuong Do)
+   -- initial release
+
+1.01, 3/25/2004 (Chuong Do)
+   -- fixed error in training procedure
+   -- retrained default parameters for 1 and 2 pairs of insert
+      states
+
+1.02, 4/17/2004 (Chuong Do)
+   -- replaced LOG_ADD and EXP routines
+   -- added support for reading MSF format files
+   -- added two extra utilities for scoring PROBCONS alignments
+      (for benchmarking purposes)
+      -- added the "compare" program for scoring alignments
+         according to a reference alignment with respect to 
+         sum-of-pairs and column scores
+      -- added the "fixref" program for adjusting PREFAB 
+	 alignments to contain all letters of the input 
+	 sequences; basically the main program for PROBCONS
+         "hacked" to get the job done
+
+1.03, 5/3/2004 (Chuong Do)
+   -- added option to do all-pairs pairwise alignments instead
+      of constructing a full multiple alignment
+   -- added support for reading DIALIGN style files
+   -- enabled support for using BAliBASE annotations for scoring
+      BAliBASE alignments
+   -- several minor bug fixes thanks to Bob Edgar
+   -- added "project" program to project multiple alignment to
+      pairwise alignments
+
+1.04, 5/9/2004 (Chuong Do)
+   -- switched over to default of one-insert state pair
+   -- retrained default parameters
+   -- added annotation scores
+   -- small changes to model topology to make end gaps symmetrical
+   -- added makegnuplot utility to plot annotation scores
+
+1.05, 5/26/2004 (Chuong Do)
+   -- added cutoff filtering for posterior scores
+   -- made small corrections to recurrences for computing alignments
+   -- added CLUSTALW output support
+
+1.06, 7/13/2004 (Chuong Do)
+   -- ProbCons is now PUBLIC DOMAIN software.
+
+1.07, 8/30/2004 (Chuong Do)
+   -- Fixed CLUSTALW output for sequence names (thanks to John Calley
+      for pointing this out)
+
+1.08, 8/31/2004 (Chuong Do)
+   -- Added option for alignment order output (-a).
+
+1.09, 9/1/2004 (Chuong Do)
+   -- PROBCONS now allows input files with existing gaps -- these are
+      automatically stripped before alignment.
+
+1.10, 3/16/2005 (Chuong Do)
+   -- Reduced memory consumption by
+      -- not storing posterior matrix transposes
+      -- restricting consistency-derived posterior matrices to original posterior matrix

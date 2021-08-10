@@ -1,0 +1,30 @@
+trap "echo 'Cancel' 1>&2" 0 15
+
+if [ ! $MAFFT_N_THREADS_PER_PROCESS ]; then
+	echo "set MAFFT_N_THREADS_PER_PROCESS, the number of cores to be used by a process." 1>&2
+	exit 1
+fi
+
+if [ ! "$MAFFT_MPIRUN" ]; then
+	MAFFT_MPIRUN="mpirun"
+fi
+
+
+
+command="$* -C $MAFFT_N_THREADS_PER_PROCESS"
+
+#rm -rf hat3dir # To avoid cache, don't touch hat3dir here
+
+$MAFFT_MPIRUN $command 1>&2
+sync;
+
+if [ -s hat3dir/tree ]; then
+#if [ -s infile.tree ]; then
+	val=0
+else
+	echo "error in MPI" 1>&2
+	val=1
+fi
+
+trap - 0 15
+exit $val

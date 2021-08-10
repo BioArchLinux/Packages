@@ -1,0 +1,24 @@
+progs="_PROGS"
+for prog in $progs; do
+	printf  $prog" "
+done
+
+
+make clean
+make CC="/opt/homebrew-x86_64/bin/gcc-11" CFLAGS="-O3 -arch x86_64  -mmacosx-version-min=10.9 -DMACOSX_DEPLOYMENT_TARGET=10.9" CXX="/opt/homebrew-x86_64/bin/g++-11" CXXFLAGS="-O3 -arch x86_64 -mmacosx-version-min=10.9 -DMACOSX_DEPLOYMENT_TARGET=10.9" LIBS="-lm  -static-libgcc"
+for prog in $progs; do
+	mv $prog $prog.x86_64
+done
+
+make clean
+make CC="/opt/homebrew/bin/gcc-11" CFLAGS="-O3 -arch arm64 -mmacosx-version-min=11.3 -DMACOSX_DEPLOYMENT_TARGET=11.3" CXX="/opt/homebrew/bin/g++-11" CXXFLAGS="-O3 -arch arm64 -mmacosx-version-min=11.3 -DMACOSX_DEPLOYMENT_TARGET=11.3" LIBS="-lm  -static-libgcc"
+for prog in $progs; do
+	mv $prog $prog.arm64
+done
+
+
+set $progs
+for prog in $progs; do
+	lipo -create $prog.x86_64 $prog.arm64 -output $prog
+	cp $prog ../binaries
+done
