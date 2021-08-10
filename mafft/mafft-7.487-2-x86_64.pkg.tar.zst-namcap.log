@@ -1,2 +1,0 @@
-mafft W: ELF file ('usr/lib/mafft/mxscarnamod') lacks FULL RELRO, check LDFLAGS.
-mafft W: Referenced library 'ruby' is an uninstalled dependency
