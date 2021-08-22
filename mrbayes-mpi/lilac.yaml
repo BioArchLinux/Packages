@@ -1,4 +1,4 @@
-build_prefix: multilib
+build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
