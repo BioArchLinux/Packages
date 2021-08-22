@@ -1,7 +1,7 @@
 # Packages
 Scripts of Lilac Repo, including PKGBUILD, lilac.yaml and lilac.py
 
-## Todo
+## To Check
 
 - [ ] phylobayes
 - [ ] popart
