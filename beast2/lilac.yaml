@@ -1,0 +1,8 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: github
+    github: CompEvol/beast2
+    use_latest_release: true
