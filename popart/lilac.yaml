@@ -7,5 +7,5 @@ pre_build: vcs_update
 
 update_on:
   - source: github
-    github: bayesiancook/pbmpi
+    github: jessicawleigh/popart-current
 
