@@ -19,8 +19,8 @@ put the output here
 
 **Desktop (please complete the following information):**
  - Desktop Enviroment: [e.g. gnome, kde, server]
- - LInux Kernel [e.g. linux-lts 5.10.60-1]
- - Package Version [e.g. 22]
+ - LInux Kernel: [e.g. linux-lts 5.10.60-1]
+ - Package Version: [e.g. 22]
 
 **Additional context**
 Add any other context about the problem here.
