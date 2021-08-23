@@ -19,7 +19,7 @@ Or some undergraduate students can hold a [National Students' Innovation Entrepr
 
 ### Todo List
 
-All the todo list for this repository is fixed at Projects. For contributing to new packages, see [packages todo list](https://github.com/BioArchLinux/Packages/projects/1), the in progress column shows the packages which are needed to be fixed, and the todo list column contains the packages which are needed to build and update to this repository. For fixing the bugs, see the [bug todo list](https://github.com/BioArchLinux/Packages/ projects/2), the issues reporting bugs will be moved to the todo column of this project.
+All the todo list for this repository is fixed at Projects. For contributing to new packages, see [packages todo list](https://github.com/BioArchLinux/Packages/projects/1), the in progress column shows the packages which are needed to be fixed, and the todo list column contains the packages which are needed to build and update to this repository. For fixing the bugs, see the [bug todo list](https://github.com/BioArchLinux/Packages/projects/2), the issues reporting bugs will be moved to the todo column of this project.
 
 ### Pull Request
 
