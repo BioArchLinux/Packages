@@ -4,5 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: github
-    github: starsareintherose/tiger
+    github: gaurav/taxondna
     use_latest_release: true
