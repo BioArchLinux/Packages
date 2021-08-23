@@ -1,9 +1,11 @@
 # Packages
 Scripts of Lilac Repo, including PKGBUILD, lilac.yaml and lilac.py
 
-## To Check
+i## To Check
 
 - [ ] phylobayes
 - [ ] popart
 - [ ] jmodeltest
-- [ ] gblocks
+- [ ] gblocksi
+- [ ] raxml-ng
+- [ ] ugene
