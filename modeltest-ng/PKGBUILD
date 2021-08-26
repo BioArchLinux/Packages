@@ -3,7 +3,7 @@
 
 pkgname=modeltest-ng
 pkgver=0.1.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A New and Scalable Tool for the Selection of DNA and Protein Evolutionary Models"
 url='https://github.com/ddarriba/modeltest'
 arch=('x86_64')
