@@ -2,7 +2,7 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=jmodeltest
-pkgver=2.1.10
+pkgver=2.1.10r20160303
 pkgrel=1
 pkgdesc="Phylogenetic Model Averaging, more models, new heuristics and high-performance computing"
 arch=('x86_64')
