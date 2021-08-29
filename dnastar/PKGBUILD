@@ -10,7 +10,7 @@ url="https://github.com/starsareintherose/dnastar"
 license=('custom')
 depends=(
 	'wine'
-	'wine_gecko'
+	'wine-gecko'
 	'wine-mono'
 )
 source=("https://github.com/starsareintherose/DNASTAR/releases/download/${pkgver}/DNASTAR.zip" "Editseq.png" "Editseq.desktop" "GeneQuest.png" "GeneQuest.desktop" "Megalign.png" "Megalign.desktop" "PrimerSelect.png" "PrimerSelect.desktop" "Protean.png" "Protean.desktop" "SeqBuilder.png" "SeqBuilder.desktop" "SeqMan.png" "SeqMan.desktop")
