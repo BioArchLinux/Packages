@@ -5,4 +5,4 @@ maintainers:
 update_on:
   - source: github
     github: stamatak/standard-RAxML
-    use_latest_release: true
+    use_max_tag: true
