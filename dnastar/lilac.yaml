@@ -4,6 +4,6 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: github
-    aur: starsareintherose/dnastar
+    github: starsareintherose/dnastar
     use_latest_release: true
 
