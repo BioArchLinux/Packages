@@ -2,7 +2,7 @@
 
 pkgname=libdivsufsort
 pkgver=2.0.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A lightweight suffix-sorting library"
 arch=("i686" "x86_64")
 url="https://github.com/y-256/libdivsufsort"
@@ -25,4 +25,4 @@ package() {
     rm -f "${pkgdir}"/usr/lib/*.la
 }
 
-sha256sums=("9164cb6044dcb6e430555721e3318d5a8f38871c2da9fd9256665746a69351e0")
+sha256sums=('9164cb6044dcb6e430555721e3318d5a8f38871c2da9fd9256665746a69351e0')
