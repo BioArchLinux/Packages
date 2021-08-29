@@ -2,7 +2,8 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
-pre_build_script: aur_pre_build(maintainers='malacology')
 update_on:
-  - source: aur
-    aur: dnastar7activated
+  - source: github
+    aur: starsareintherose/dnastar
+    use_latest_release: true
+
