@@ -4,6 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: github
-    aur: starsareintherose/dnastar
+    github: stephaneguindon/phyml
     use_latest_release: true
-
