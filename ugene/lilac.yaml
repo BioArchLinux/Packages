@@ -6,5 +6,3 @@ update_on:
   - source: github
     github: ugeneunipro/ugene
     use_latest_release: true
-repo_depends:
-  - qspec
