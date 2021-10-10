@@ -2,15 +2,15 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=raxmlgui
-pkgver=2.0.5
-pkgrel=2
+pkgver=2.0.6
+pkgrel=1
 pkgdesc="A new user-friendly program integrating RAxML-NG and ModelTest-NG for cutting-edge phylogenetic analysis"
 arch=('x86_64')
 url="https://antonellilab.github.io/raxmlGUI"
 provides=("raxmlgui")
 license=('AGPL3')
 source=("https://github.com/AntonelliLab/raxmlGUI/releases/download/v${pkgver}/raxmlGUI-${pkgver}.AppImage" "raxmlgui.desktop")
-sha256sums=('3e67b95551e26b2cc26e9a5f62583a2bec2351b53587d188718dcab8fc588068'
+sha256sums=('f2113bb75c5c7c65182ff7e4da5d7ec52c06ed6b0e741bbc8b3dadb716441cdd'
             '4997996df092faa5b4adf7952083bd93b2667c4b89a2781ac3f02f5c930202f3')
 
 prepare() {
