@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=
 Encoding=UTF-8
-Exec=/usr/share/raxmlgui/raxmlgui
+Exec=sudo /usr/share/raxmlgui/raxmlgui --no-sandbox
 GenericName=
 GenericName[zh]=
 Icon=/usr/share/raxmlgui/usr/share/icons/hicolor/512x512/apps/raxmlgui.png
