@@ -1,33 +1,30 @@
-# Maintainer: Jens Staal <staal1978@gmail.com>
+# Maintainer: Hu Butui <hot123tea123@gmail.com>
+# Contributor: Jens Staal <staal1978@gmail.com>
+
+_pkgname=QSpec
 pkgname=qspec
-pkgver=v0.2.r121.gd1b04ad
-pkgrel=1
+pkgver=0.2
+pkgrel=2
 pkgdesc="A GUI testing library for Qt desktop applications"
 arch=('x86_64')
-provides=('qspec')
-url="http://ugene.unipro.ru/"
-license=('GPL')
-depends=('qt5-base' 'qt5-webkit' 'libxtst')
-makedepends=('git')
-source=('qspec::git+https://github.com/ugeneunipro/QSpec.git')
-sha256sums=('SKIP')
+url='https://github.com/ugeneunipro/QSpec'
+license=('GPL2')
+depends=(
+  libxtst
+  qt5-webkit
+)
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/ugeneunipro/QSpec/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('6f5d44c6b7b7db82ece5238d343fab44f36dc2d3d56afae51bd122acb352d7bd')
 
 build() {
-  cd "${srcdir}"/qspec
-  #make sure that the wanted branch is active
-  git checkout master
-  qmake CONFIG+=x64 PREFIX=/usr -r
+  cd "${_pkgname}-${pkgver}"
+  qmake
   make
 }
 
-pkgver() {
-  cd "${srcdir}"/qspec
-  git describe --long --tags | sed 's/\([^-]*-g\)/r\1/; s/-/./g'
-}
-
 package() {
-  cd "${srcdir}"/qspec
-  make INSTALL_ROOT="$pkgdir/usr/lib" release-install
+  cd "${_pkgname}-${pkgver}"
+  make INSTALL_ROOT="${pkgdir}/usr/lib" install
 }
-
+# vim:set ts=2 sw=2 et:
 
