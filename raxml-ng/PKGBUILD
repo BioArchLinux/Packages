@@ -23,5 +23,5 @@ prepare() {
 package() {
   cd "${srcdir}"
   ./install.sh
-  install -Dm755 "${srcdir}/bin/raxml-ng-mpi" "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm755 bin/raxml-ng-mpi "${pkgdir}/usr/bin/${pkgname}"
 }
