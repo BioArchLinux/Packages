@@ -1,7 +1,7 @@
 # Maintainer: malacology
 # Contributor: malacology
 
-pkgname=dnastar7activated
+pkgname=dnastar
 pkgver=7.1.0
 pkgrel=1
 pkgdesc="leader in the field of bioinformatics software, including SeqMan Editseq GeneQuest Megalign PrimerSelect Protean SeqBuilder"
