@@ -17,7 +17,7 @@ depends=(
 )
 package() {
     install -dm755 "$pkgdir"/usr/{bin,share/{${_pkgname},applications}}
-    mv ${srcdir}/Tracer_v${pkgver}/* ${pkgdir}/usr/share/${_pkgname}
+    mv ${srcdir}/Tracer_v${pkgver}/* "${pkgdir}/usr/share/${_pkgname}"
     ln -s /usr/share/Tracer/bin/tracer ${pkgdir}/usr/bin/tracer
     
     install -m 755 ${srcdir}/tracer.desktop ${pkgdir}/usr/share/applications/tracer.desktop
