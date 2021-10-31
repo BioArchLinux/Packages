@@ -18,7 +18,7 @@ depends=(
 package() {
     install -dm 755 $pkgdir/usr/share/{applications,${pkgname}}
     
-    mv ${srcdir}/jmodeltest-${pkgver}/* ${pkgdir}/usr/share/jmodeltest
+    mv ${srcdir}/jmodeltest-${pkgver}/* "${pkgdir}/usr/share/jmodeltest"
  
     install -m 755 ${srcdir}/jmodeltest.desktop ${pkgdir}/usr/share/applications/jmodeltest.desktop
 }
