@@ -43,9 +43,17 @@ If you would like to join us, try to contact [starsareintherose](mailto:guoyizha
 
 ## Usage
 
-Todo...
-
-This repository is a future repository for BioArchLinux, now it's not put into usage. So sorry for this.
+Add the fllowing to the `/etc/pacman.conf`
+```
+[BioArchLinux]
+Server = https://repo.malacology.net/
+```
+Then import GPG key
+```
+$ pacman-key --recv-keys B1F96021DB62254D
+$ pacman-key --finger B1F96021DB62254D
+$ pacman-key --lsign-key B1F96021DB62254D
+```
 
 ## License and Code of Conduct
 
