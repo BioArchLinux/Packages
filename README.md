@@ -11,7 +11,7 @@ Scripts of Lilac Repo, including PKGBUILD, lilac.yaml and lilac.py
 
 ### Todo
 
-Now sponsors are still needed to promote the net speed of this repository. The funding will be used to buy faster a VPS service and a domain name. Now the repository is hosted in 1M VPS in Shenzhen, China and the domain is malacology.net. `bioarchlinux. org` or `bioarchlinux.net` should be bought and VPS is better to locate in Hongkong, China or Singapore considering the internet block and internet downloading speed.
+Now sponsors are still needed to promote the net speed of this repository. The funding will be used to buy faster a VPS service and a domain name. Now the repository is hosted in 1M VPS in Shenzhen, China and the domain is malacology.net. `bioarchlinux.org` or `bioarchlinux.net` should be bought and VPS is better to locate in Hongkong, China or Singapore considering the internet block and internet downloading speed.
 
 Or some undergraduate students can hold a [National Students' Innovation Entrepreneurship Training Program](http://gjcxcy.bjtu.edu.cn/Index.aspx) in his/her university to win the funding for this project. [starsareintherose]( mailto:guoyizhang@malacology.net) can give help to the undergraduate, considering her previous national level NSIETP.
 
@@ -57,7 +57,7 @@ $ pacman-key --lsign-key B1F96021DB62254D
 
 ## License and Code of Conduct
 
-License is [GPL version 3](./LICENSE) and Code of Conduct is [here}(./CODE_OF_CONDUCT.md).
+License is [GPL version 3](./LICENSE) and Code of Conduct is [here](./CODE_OF_CONDUCT.md).
 
 ## Acknowledgments
 
