@@ -1,7 +1,7 @@
 # Maintainer: malacology
 
 pkgname=popart
-pkgver=1.7
+pkgver=20190715.150937
 pkgrel=1
 pkgdesc="free population genetics software"
 arch=('x86_64')
