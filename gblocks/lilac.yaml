@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: Gblocks/Gblocks_Linux_([\d.]+).tar.Z
+  - regex: Gblocks_Linux_(\\S+?).tar.Z
     source: regex
     url: http://molevol.cmima.csic.es/castresana/Gblocks.html
 
