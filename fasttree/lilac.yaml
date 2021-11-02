@@ -1,0 +1,8 @@
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+build_prefix: extra-x86_64
+update_on:
+  - source: regex
+    url: "http://www.microbesonline.org/fasttree/"
+    regex: "FastTree-(\d+.\d+.\d).c"
