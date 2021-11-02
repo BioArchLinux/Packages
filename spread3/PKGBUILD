@@ -6,11 +6,7 @@ pkgver=0.9.6
 _pkgver=0-9-6
 pkgrel=1
 depends=(
-	'jre-openjdk-headless'
-	'jre-openjdk'
-	'jdk-openjdk'
-	'openjdk-doc'
-	'openjdk-src'
+	'java-runtime'
 )
 pkgdesc="a user-friendly application to analyze and visualize pathogen phylodynamic reconstructions resulting from Bayesian inference of sequence and trait evolutionary processes"
 arch=('x86_64')
