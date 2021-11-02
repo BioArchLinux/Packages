@@ -5,9 +5,9 @@ Scripts of Lilac Repo, including PKGBUILD, lilac.yaml and lilac.py
 
 ### Current goal
 
- -Migrate about 50 packages from aur_build to lilac.
- -Expansion of the users' awareness of this repository.
- -Include more popular packages for biologists.
+ - Migrate about 50 packages from aur_build to lilac.
+ - Expansion of the users' awareness of this repository.
+ - Include more popular packages for biologists.
 
 ### Todo
 
@@ -31,7 +31,7 @@ When you meet some difficulty in writing `PKGBUILD`, `lilac.yaml` and so on. The
 
 ### Periodical Flags
 
-When almost all packages are uploaded and fixed, the periodical flags would help this community work better. Some potential flags will be listed on the [discussions](https://github.com/BioArchLinux/Packages/discussions/categories/periodical-flags ) and users can comment on it. After merging some comments, the team can publish [announcements](https://github.com/BioArchLinux/Packages/discussions/categories/announcements) on discussions to show the tasks plan.
+When almost all packages are uploaded and fixed, the periodical flags would help this community work better. Some potential flags will be listed on the [discussions](https://github.com/BioArchLinux/Packages/discussions/categories/periodical-flags) and users can comment on it. After merging some comments, the team can publish [announcements](https://github.com/BioArchLinux/Packages/discussions/categories/announcements) on discussions to show the tasks plan.
 
 ### Bug Reports & Package Request
 
