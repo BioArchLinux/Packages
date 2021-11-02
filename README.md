@@ -27,7 +27,7 @@ For contributing to this repository, we would like to invite you as a member of 
 
 ### Discussions
 
-When you meet some difficulty in writing `PKGBUILD`, `lilac.yaml` and so on. There are two web pages that you could find help, one is bbs.archlinux.org and another is our [discussions](https:// github.com/BioArchLinux/Packages/discussions/categories/qa).
+When you meet some difficulty in writing `PKGBUILD`, `lilac.yaml` and so on. There are two web pages that you could find help, one is bbs.archlinux.org and another is our [discussions](https://github.com/BioArchLinux/Packages/discussions/categories/qa).
 
 ### Periodical Flags
 
