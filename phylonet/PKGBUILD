@@ -1,0 +1,22 @@
+# Maintainer: Malacology <guoyizhang at malacology dot com>
+# Contributor: Malacology <guoyizhang at malacology dot com>
+
+pkgname=phylonet
+_installname=PhyloNet
+pkgver=3.8.3
+pkgrel=1
+depends=(
+	'java-runtime'
+)
+pkgdesc="TA suite of software tools for reconstructing/analyzing phylogenetic networks in the presence of reticulate evolutionary events"
+arch=('x86_64')
+url="https://bioinfocs.rice.edu/PhyloNet"
+license=('GPL2')
+source=(""https://github.com/NakhlehLab/PhyloNet/releases/download/${pkgver}/PhyloNet.jar)
+sha256sums=('a03a4be48f0bd40b8b98b8c99be09bf8a3d509995d4d36aa1e33ecdfeb14c4a6')
+
+package() {
+    install -dm755 "$pkgdir"/usr/share
+    install -Dm644 ${srcdir}/${_installname}.jar ${pkgdir}/usr/share/phylonet/${_installname}.jar
+}
+
