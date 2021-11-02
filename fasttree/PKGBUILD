@@ -1,6 +1,6 @@
 # Maintainer: Stefan Seemayer <mail@semicolonsoftware.de>
 pkgname=fasttree
-pkgver=2.1.11
+pkgver=2.1.9
 pkgrel=1
 pkgdesc="Approximately-Maximum-Likelihood Trees for Large Alignments"
 arch=(i686 x86_64)
@@ -10,7 +10,7 @@ depends=(
 	'gcc'
 )
 source=(http://www.microbesonline.org/fasttree/FastTree-${pkgver}.c)
-sha256sums=('9026ae550307374be92913d3098f8d44187d30bea07902b9dcbfb123eaa2050f')
+sha256sums=('f3a4e57d27e3fd6b5e2a4201b15ae25bc43858092eefef160f9aaa1011df5b52')
 
 build() {
   cd "$srcdir/"
