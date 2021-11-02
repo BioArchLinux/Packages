@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: regex
+    url: http://doua.prabi.fr/software/seaview
+    regex: "64-bit Linux on x86_64"
