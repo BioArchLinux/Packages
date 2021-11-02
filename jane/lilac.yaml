@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - regex: linux.tar.gz
+    source: regex
+    url: https://www.cs.hmc.edu/~hadas/jane/downloads/
+
