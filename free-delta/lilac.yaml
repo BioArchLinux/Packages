@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - regex: freedelta_(\d+.\d+.\d+_\w+).deb
+    source: regex
+    url: https://sourceforge.net/projects/freedelta/files/freedelta/
+
