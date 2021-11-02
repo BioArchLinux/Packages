@@ -5,4 +5,4 @@ build_prefix: extra-x86_64
 update_on:
   - source: regex
     url: "https://evolution.gs.washington.edu/phylip/download/"
-    regex: "phylip-(\d+.\d+).zip"
+    regex: phylip-(\d+.\d+).zip
