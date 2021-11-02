@@ -3,7 +3,7 @@
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=phylip
 pkgver=3.698
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of programmes for evolutive genetics and inferring phylogenies"
 arch=('i686' 'x86_64')
 url="http://evolution.genetics.washington.edu/phylip.html"
