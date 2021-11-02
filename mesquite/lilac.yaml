@@ -5,4 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: MesquiteProject/MesquiteCore
-    use_latest_release: true
+    use_max_tag: true
+    include_regex: v(/d+./d+[^-])
