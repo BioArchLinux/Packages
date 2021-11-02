@@ -6,11 +6,7 @@ pkgver=1.0.7
 _pkgver=1-0-7
 pkgrel=1
 depends=(
-	'jre-openjdk-headless'
-	'jre-openjdk'
-	'jdk-openjdk'
-	'openjdk-doc'
-	'openjdk-src'
+	'java-runtime'
 )
 pkgdesc="a user-friendly application to analyze and visualize phylogeographic reconstructions resulting from Bayesian inference of spatio-temporal diffusion"
 arch=('x86_64')
