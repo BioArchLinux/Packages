@@ -1,0 +1,8 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: regex
+    url: http://www.lillo.org.ar/phylogeny/tnt/
+    regex: "Menu interface – no taxon limit"
