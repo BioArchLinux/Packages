@@ -5,4 +5,4 @@ maintainers:
 update_on:
   - source: github
     github: bayesiancook/phylobayes
-    use_latest_release: true
+    use_max_tag: true
