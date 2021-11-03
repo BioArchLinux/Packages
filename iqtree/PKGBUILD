@@ -26,7 +26,8 @@ build() {
 }
 
 package() {
-  chmod +x "$srcdir"/iqtree2-${pkgver}/build/iqtree2
   mkdir -p ${pkgdir}/usr/bin
-  mv "$srcdir"/iqtree2-${pkgver}/build/iqtree2 ${pkgdir}/usr/bin/iqtree
+  cd "$srcdir"/iqtree2-${pkgver}/build 
+  chmod +x iqtree2
+  mv iqtree2 ${pkgdir}/usr/bin/iqtree
 }
