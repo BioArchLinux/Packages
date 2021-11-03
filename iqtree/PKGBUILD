@@ -26,6 +26,7 @@ build() {
 }
 
 package() {
-  cd iqtree2-${pkgver}
-  install -D -m 755 build/iqtree2 ${pkgdir}/usr/bin/iqtree2
+  chmod +x "$srcdir"/iqtree2-${pkgver}/build/iqtree2
+  mkdir -p ${pkgdir}/usr/bin
+  mv "$srcdir"/iqtree2-${pkgver}/build/iqtree2 ${pkgdir}/usr/bin/iqtree
 }
