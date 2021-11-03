@@ -5,4 +5,4 @@ maintainers:
 update_on:
   - source: regex
     url: https://rega.kuleuven.be/cev/ecv/software/pibuss
-    regex: pibuss_v(/d+./d+).jar
+    regex: pibuss_v(\d+.\d+).jar
