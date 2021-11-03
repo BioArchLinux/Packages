@@ -19,5 +19,5 @@ package() {
     install -dm755 "$pkgdir"/usr/share/{${pkgname},applications} 
     mv ${srcdir}/open-delta-${pkgver}/* ${pkgdir}/usr/share/${pkgname}
     install -m 755 ${srcdir}/delta.gif  ${pkgdir}/usr/share/${pkgname}/delta.gif
-    install -m 755 ${srcdir}/delta.desktop ${pkgdir}/usr/share/applications/delta.desktop
+    install -m 755 ${srcdir}/open-delta.desktop ${pkgdir}/usr/share/applications/open-delta.desktop
 }
