@@ -23,6 +23,6 @@ prepare() {
 package() {
   cd "${srcdir}"
   ./install.sh
-  mv "${srcdir}"/bin/raxml-ng-mpi "${pkgdir}/usr/bin/${pkgname}"
-  chmod +x "${pkgdir}/usr/bin/${pkgname}"
+  cd "${srcdir}"/bin
+  install -Dm755 raxml-ng-mpi "${pkgdir}/usr/bin/${pkgname}"
 }
