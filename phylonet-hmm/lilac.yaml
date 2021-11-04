@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - regex: href="https://bioinfocs\.rice\.edu/sites/g/files/bxs266/f/phmm-(\d+.\d+)\.tar_0\.bz2"
+    source: regex
+    url: https://bioinfocs.rice.edu/software/phmm

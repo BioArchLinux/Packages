@@ -1,0 +1,27 @@
+# Maintainer: Malacology <guoyizhang at malacology dot com>
+# Contributor: Malacology <guoyizhang at malacology dot com>
+
+pkgname=phylonet-hmm
+_installname=PhyloNet
+pkgver=0.1
+pkgrel=1
+depends=(
+	'java-runtime'
+)
+makedepends=('ant')
+pkgdesc="An HMM-based comparative genomic framework for detecting introgression in eukaryotes"
+arch=('x86_64')
+url="https://bioinfocs.rice.edu/node/108"
+license=('GPL')
+source=("https://bioinfocs.rice.edu/sites/g/files/bxs266/f/phmm-0.1.tar_0.bz2")
+sha256sums=('a05afde10e6cef5d3b2901c2258dbc11d93f02b2869c8373e678f0d0fdecd8f2')
+build(){
+	cd ${srcdir}/phmm-${pkgver}
+	ant
+}
+package() {
+	cd ${srcdir}/phmm-${pkgver}
+	install -Dm755 dist/lib/phmm.jar ${pkgdir}/usr/share/${pkgname}/${pkgname}.jar
+	mkdir -p ${pkgdir}/usr/share/${pkgname}/templates
+	mv templates/* "${pkgdir}"/usr/share/"${pkgname}"/templates
+}
