@@ -1,0 +1,8 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - regex: href="\./RASP_Win64_(\d+)\.zip"
+    source: regex
+    url: http://mnh.scu.edu.cn/soft/blog/RASP/index.html
