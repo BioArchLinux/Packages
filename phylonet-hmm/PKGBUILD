@@ -4,7 +4,7 @@
 pkgname=phylonet-hmm
 _installname=PhyloNet
 pkgver=0.1
-pkgrel=1
+pkgrel=2
 depends=(
 	'java-runtime'
 )
