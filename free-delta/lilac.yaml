@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: freedelta_(\d+.\d+.\d+_\d+)_amd64.deb
+  - regex: freedelta_(\d+.\d+.\d+)_amd64.deb
     source: regex
     url: https://sourceforge.net/projects/freedelta/files/freedelta/
 
