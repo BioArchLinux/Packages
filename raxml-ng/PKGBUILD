@@ -2,7 +2,7 @@
 # Contributor: Guoyi ("malcology") <guoyizhang@malacology.net>
 # Contributor: Roberto Rossini ("robymetallo") <roberros@insert_university_of_oslo_domain.no>
 
-pkgname=raxml-ng
+pkgname=raxml-ng-mpi
 pkgver=1.0.3
 _commit=411611611793e53c992717d869ca64370f2e4789
 pkgrel=1
@@ -13,8 +13,8 @@ license=('AGPL3')
 depends=('gcc-libs')
 makedepends=('bison' 'cmake' 'flex' 'git' 'gmp')
 checkdepends=('gmock' 'gtest')
-source=("https://github.com/amkozlov/raxml-ng/releases/download/${pkgver}/raxml-ng_v${pkgver}_linux_x86_64_MPI.zip")
-sha256sums=('62e56d0249488b450d48d89ba63c0c56dae02f3de896d03c06352a39bc576798')
+source=("https://github.com/amkozlov/raxml-ng/releases/download/${pkgver}/raxml-ng_v${pkgver}_linux_x86_64.zip")
+sha256sums=('cc824fea81d73332ca2e8c641514013aaa8a478535461b2d3c80b8ef93f47b16')
 
 prepare() {
     cd "${srcdir}"
@@ -24,5 +24,5 @@ package() {
   cd "${srcdir}"
   ./install.sh
   cd "${srcdir}"/bin
-  install -Dm755 raxml-ng-mpi "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm755 raxml-ng "${pkgdir}/usr/bin/${pkgname}"
 }
