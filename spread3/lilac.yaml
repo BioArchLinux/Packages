@@ -5,4 +5,4 @@ maintainers:
 update_on:
   - source: regex
     url: https://rega.kuleuven.be/cev/ecv/software/spread3_files/
-    regex: spreaD3(\s+v\d+.\d+.\d+)
+    regex: href="https://rega\.kuleuven\.be/cev/ecv/software/spread3_files/spread3-v(\d+-\d+-\d)\.jar"
