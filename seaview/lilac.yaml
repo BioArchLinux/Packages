@@ -5,4 +5,4 @@ maintainers:
 update_on:
   - source: regex
     url: http://doua.prabi.fr/software/seaview
-    regex: "64-bit Linux on x86_64"
+    regex: href="seaview_data/seaview(\d+-\d+)\.tgz"
