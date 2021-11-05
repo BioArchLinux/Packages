@@ -7,4 +7,4 @@ update_on:
     url: https://rega.kuleuven.be/cev/ecv/software/spread
     regex: href="https://rega\.kuleuven\.be/cev/ecv/software/spread_files/spread-v(\d+)-(\d+)-(\d+)\.jar"
     from_pattern: (\d+)-(\d+)-(\d+)
-    to_pattern: (\1).(\2).(\3)
+    to_pattern: \\1).\\2.\\3
