@@ -6,5 +6,5 @@ update_on:
   - source: regex
     url: https://rega.kuleuven.be/cev/ecv/software/spread3_files/
     regex: href="https://rega\.kuleuven\.be/cev/ecv/software/spread3_files/spread3-v(\d+)-(\d+)-(\d+)\.jar"
-    from_pattern: -
-    to_pattern: \.
+    from_pattern: (\d+)-(\d+)-(\d+)
+    to_pattern: \\1\.\\2\.\\3
