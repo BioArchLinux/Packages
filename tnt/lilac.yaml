@@ -8,5 +8,5 @@ maintainers:
 #    regex: href="http://www\.lillo\.org\.ar/phylogeny/tnt/tnt-win-no-tax-limit\.zip"
 update_on:
   - source: aur
-    aur: tnt-cli
+    aur: tnt-gui
     strip_release: true
