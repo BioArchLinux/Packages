@@ -3,7 +3,7 @@
 
 pkgname=rasp
 pkgver=20211014
-pkgrel=1
+pkgrel=2
 pkgdesc="Reconstruct Ancestral State in Phylogenies is a tool for inferring ancestral state"
 arch=('x86_64')
 url="http://mnh.scu.edu.cn/soft/blog/rasp/"
