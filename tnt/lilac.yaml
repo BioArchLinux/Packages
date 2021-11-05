@@ -2,7 +2,11 @@ build_prefix: multilib
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
+# update_on:
+#  - source: regex
+#    url: http://www.lillo.org.ar/phylogeny/tnt/
+#    regex: href="http://www\.lillo\.org\.ar/phylogeny/tnt/tnt-win-no-tax-limit\.zip"
 update_on:
-  - source: regex
-    url: http://www.lillo.org.ar/phylogeny/tnt/
-    regex: href="http://www\.lillo\.org\.ar/phylogeny/tnt/tnt-win-no-tax-limit\.zip"
+  - source: aur
+    aur: tnt-cli
+    strip_release: true
