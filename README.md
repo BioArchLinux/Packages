@@ -47,7 +47,7 @@ If you would like to join us, try to contact [starsareintherose](mailto:guoyizha
 Add the fllowing to the `/etc/pacman.conf`
 ```
 [BioArchLinux]
-Server = https://repo.malacology.net/
+Server = https://repo.malacology.net/$arch
 ```
 Then import GPG key
 ```
