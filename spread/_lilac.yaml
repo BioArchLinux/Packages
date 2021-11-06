@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: regex
+    url: https://rega.kuleuven.be/cev/ecv/software/spread
+    regex: href="https://rega\.kuleuven\.be/cev/ecv/software/spread_files/spread-v(\d+-\d+-\d+)\.jar"
+    from_pattern: (\d+-\d+-\d+)
+    to_pattern: (\d+.\d+.\d+)
