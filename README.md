@@ -1,5 +1,5 @@
 # Packages
-Scripts of Lilac Repo, including PKGBUILD, lilac.yaml and lilac.py
+Aim to be the bioinformatics repository with more and newer packages
 
 ## Aim
 
