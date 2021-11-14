@@ -42,6 +42,8 @@ For bug reports, just posts some [issues](https://github.com/BioArchLinux/Packag
 
 If you would like to join us, try to contact [starsareintherose](mailto:guoyizhang@malacology.net). Better to introduce what you want to do in our organization.
 
+Or you can communicate at IRC channel #bioarchlinux at Libera Chat.
+
 ## Usage
 
 Add the fllowing to the `/etc/pacman.conf`
