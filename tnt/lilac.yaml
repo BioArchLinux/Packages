@@ -6,5 +6,6 @@ update_on:
   - regex: 'last update: (\w+\s\d+,\s\d+)'
     source: regex
     url: http://www.lillo.org.ar/phylogeny/tnt/
-    from_pattern: (\w+\s\d+,\s\d+)
-    to_pattern: (\w+\d+\d+)
+    exclude_regex: ,*\s
+repo_depends:
+  - ncurses5-compat-lib
