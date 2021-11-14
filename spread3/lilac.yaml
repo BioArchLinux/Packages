@@ -4,7 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: regex
-    url: https://rega.kuleuven.be/cev/ecv/software/spread3_files/
-    regex: href="https://rega\.kuleuven\.be/cev/ecv/software/spread3_files/spread3-v(\d+-\d+-\d+)\.jar"
-    from_pattern: (\d+-\d+-\d+)
-    to_pattern: (\d+.\d+.\d+)
+    url: "https://rega.kuleuven.be/cev/ecv/software/SpreaD3"
+    regex: 'SpreaD3 version (\d+.\d+.\d+)'
