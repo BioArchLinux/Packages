@@ -6,7 +6,7 @@ def pre_build():
   pkgver = datetime.strptime(dt, '%m %d, %Y').strftime('%Y%m%d')
     
   for line in edit_file('PKGBUILD'):
-     line.startswith('pkgver='):
+      line.startswith('pkgver='):
       line = f'pkgver={pkgver}'
     print(line)
     
