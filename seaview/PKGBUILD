@@ -12,7 +12,7 @@ optdepends=('clustal-omega'
       'muscle'
 	    'gblocks-bin'
 	    'phyml')
-source=("http://doua.prabi.fr/software/seaview_data/seaview${pkgver: 1: 1}-64.tgz"
+source=("http://doua.prabi.fr/software/seaview_data/seaview${pkgver: 0: 1}-64.tgz"
         'seaview.desktop'
         'seaview.png')
 md5sums=('c22422d4da24da45a0aa8a3c35e941bf'
