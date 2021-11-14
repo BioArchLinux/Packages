@@ -2,7 +2,16 @@
 from lilaclib import *
 
 def pre_build():
-    update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  version, dt = _G.newver.split(None, 1)
+  pkgver = datetime.strptime(dt, '%m %d, %Y').strftime('%Y%m%d')
+    
+  for line in edit_file('PKGBUILD'):
+     line.startswith('pkgver='):
+      line = f'pkgver={pkgver}'
+    print(line)
+    
+    update_pkgver_and_pkgrel(f'{pkgver}')
+    
     run_cmd(['updpkgsums'])
 
 def post_build():
