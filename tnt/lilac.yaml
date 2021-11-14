@@ -3,9 +3,9 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: 'last update: (\w+\s\d+,\s\d+)'
+  - regex: 'last update: (\w+ \d+, \d+)'
     source: regex
     url: http://www.lillo.org.ar/phylogeny/tnt/
-    include_regex: ^[,]^[\s]
+    include_regex: ^[,]\S
 repo_depends:
   - ncurses5-compat-lib
