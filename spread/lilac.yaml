@@ -5,4 +5,4 @@ maintainers:
 update_on:
   - source: regex
     url: "https://rega.kuleuven.be/cev/ecv/software/spread"
-    regex: 'Windows & Linux version: SPREAD v(\d+.\d+.\d+)'
+    regex: 'SPREAD v(\d+.\d+.\d+).jar'
