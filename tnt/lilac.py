@@ -3,7 +3,7 @@ from lilaclib import *
 
 def pre_build():
   dt = _G.newver.split(None)
-  dt = datetime.strptime(dt, '%d-%b-%Y %H:%M').strftime('%Y%m%d.%H')
+  dt = datetime.strptime(dt, '%m %d, %Y').strftime('%Y%m%d')
     
   for line in edit_file('PKGBUILD'):
       line.startswith('pkgver='):
