@@ -1,9 +1,9 @@
 # Maintainer: Malacology <guoyizhang at malacology dot com>
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
-pkgname=tnt
+pkgname=tnt-gui
 pkgver=1.5
-pkgrel=2
+pkgrel=1
 pkgdesc="Tree analysis using New Technology"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
