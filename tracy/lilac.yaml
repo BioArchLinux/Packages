@@ -5,5 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: gear-genomics/tracy
-    use_max_tag: true
+    use_latest_release: true
     include_regex: ^v
