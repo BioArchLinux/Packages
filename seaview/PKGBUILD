@@ -2,8 +2,8 @@
 # Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 pkgname=seaview
-pkgver=5.0.4
-pkgrel=2
+pkgver=5.0.5
+pkgrel=1
 pkgdesc="GUI for multiple sequence alignment and molecular phylogeny"
 arch=('x86_64')
 url="http://doua.prabi.fr/software/seaview"
