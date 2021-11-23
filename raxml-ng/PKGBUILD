@@ -1,7 +1,7 @@
 # Maintainer: Guoyi ("malcology") <guoyizhang@malacology.net>
 # Contributor: Guoyi ("malcology") <guoyizhang@malacology.net>
 
-pkgname=raxml-ng-mpi
+pkgname=raxml-ng
 pkgver=1.0.2
 _commit=411611611793e53c992717d869ca64370f2e4789
 pkgrel=1
