@@ -7,7 +7,7 @@ pkgrel=3
 pkgdesc="multiple sequence comparison by log-expectation"
 arch=('i686' 'x86_64')
 url="http://www.drive5.com/muscle/"
-license=('custom')
+license=('GPL3')
 source=(https://github.com/rcedgar/muscle/releases/download/v$pkgver/muscle_v${pkgver}_linux)
 sha256sums=('ac7c39fcfa663dfaa89dd0efa324d998d63d72d9fef0bf0322120f6bfdc8fb98')
 prepare() {
