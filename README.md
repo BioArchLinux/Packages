@@ -60,7 +60,7 @@ $ pacman-key --lsign-key B1F96021DB62254D
 
 ## License and Code of Conduct
 
-License is [GPL version 3](./LICENSE) and Code of Conduct is [here](./CODE_OF_CONDUCT.md).
+License is [AGPL-3.0](./LICENSE) and Code of Conduct is [here](./CODE_OF_CONDUCT.md).
 
 ## Acknowledgments
 
