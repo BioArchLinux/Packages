@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - regex: (\d+-\d+-\d+) \d+:\d+    -
+    source: regex
+    url: http://www.lillo.org.ar/phylogeny/
+    from_pattern: (\d+)-(\d+)-(\d+)
+    to_pattern: \1.\2.\3
+repo_depends:
+  - ncurses5-compat-lib

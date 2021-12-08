@@ -1,0 +1,25 @@
+# Maintainer: Malacology <guoyizhang at malacology dot com>
+# Contributor: Malacology <guoyizhang at malacology dot com>
+
+pkgname=tnt-mpi
+pkgver=1.5
+pkgrel=1
+pkgdesc="Tree analysis using New Technology"
+arch=('x86_64')
+url="http://www.lillo.org.ar/phylogeny/tnt/"
+provides=('tnt')
+license=('custom')
+depends=(
+	'ncurses5-compat-libs'
+)
+source=("http://www.lillo.org.ar/phylogeny/tnt/mpitnt.zip")
+sha256sums=('8eccbcee1fb2dc5eb698bffb679c28ae70ffc43ec06cb73b3dcdd60386bce62c')
+package () {
+	cd ${srcdir}
+	chmod +x tnt
+	chmod +x xtnt
+	install -Dm 755 tnt ${pkgdir}/usr/bin/tnt
+#	install -Dm 755 xtnt ${pkgdir}/usr/bin/xtnt
+	install -Dm 755 Tred.ttf ${pkgdir}/usr/share/fonts/Tred/Tred.ttf
+	install -Dm 755 tnt.htm ${pkgdir}/usr/share/doc/tnt/tnt.htm
+}
