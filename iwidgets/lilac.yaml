@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: '(\d+.\d+.\d+)'
+  - regex: href="/projects/incrtcl/files/%5BIncr%20Widgets%5D/(\d+.\d+.\d+)/"
     source: regex
     url: "https://sourceforge.net/projects/incrtcl/files/%5BIncr%20Widgets%5D/"
 repo_depends:
