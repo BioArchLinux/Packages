@@ -3,7 +3,7 @@
 
 pkgname=tnt-mpi
 _pkgname=mpitnt
-pkgver=1.5
+pkgver=2021.11.24
 pkgrel=1
 pkgdesc="Tree analysis using New Technology"
 arch=('x86_64')
