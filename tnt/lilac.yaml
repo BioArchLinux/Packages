@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: (\d+-\d+-\d+)
+  - regex: (\d+-\d+-\d+) \d+:\d+    -
     source: regex
     url: http://www.lillo.org.ar/phylogeny/
     from_pattern: (\d+)-(\d+)-(\d+)
