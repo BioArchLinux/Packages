@@ -9,4 +9,4 @@ update_on:
     from_pattern: (\d+)-(\d+)-(\d+)
     to_pattern: \1.\2.\3
 repo_depends:
-  - ncurses5-compat-lib
+  - ncurses5-compat-libs
