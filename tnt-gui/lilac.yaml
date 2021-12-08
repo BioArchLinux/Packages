@@ -1,12 +1,12 @@
-build_prefix: multilib
+build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
-# update_on:
-#  - source: regex
-#    url: http://www.lillo.org.ar/phylogeny/tnt/
-#    regex: href="http://www\.lillo\.org\.ar/phylogeny/tnt/tnt-win-no-tax-limit\.zip"
 update_on:
-  - source: aur
-    aur: tnt-gui
-    strip_release: true
+  - regex: (\d+-\d+-\d+) \d+:\d+    -
+    source: regex
+    url: http://www.lillo.org.ar/phylogeny/
+    from_pattern: (\d+)-(\d+)-(\d+)
+    to_pattern: \1.\2.\3
+repo_depends:
+  - ncurses5-compat-lib
