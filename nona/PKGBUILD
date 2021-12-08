@@ -3,7 +3,7 @@
 
 pkgname=nona
 pkgver=2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="NONA: a bastard son of Pee-Wee. Phylogenetic Analysis Software"
 arch=('any')
 url="www.cladistics.com"
