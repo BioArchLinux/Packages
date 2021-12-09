@@ -13,6 +13,7 @@ conflicts=('tnt')
 license=('custom')
 depends=(
 	'ncurses5-compat-libs'
+	'openmpi'
 )
 source=("http://www.lillo.org.ar/phylogeny/tnt/$_pkgname.zip")
 sha256sums=('8eccbcee1fb2dc5eb698bffb679c28ae70ffc43ec06cb73b3dcdd60386bce62c')
