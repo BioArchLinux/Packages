@@ -10,3 +10,4 @@ update_on:
     to_pattern: \1.\2.\3
 repo_depends:
   - ncurses5-compat-libs
+  - pvm

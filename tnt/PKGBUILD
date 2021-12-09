@@ -11,6 +11,7 @@ provides=('tnt')
 license=('custom')
 depends=(
 	'ncurses5-compat-libs'
+	'pvm'
 )
 source=("http://www.lillo.org.ar/phylogeny/tnt/tnt64-no-tax-limit.zip")
 sha256sums=('833d7eadc1132838e718ada44548626933a0ec76e8b2454d495bdf2352b8a25a')
