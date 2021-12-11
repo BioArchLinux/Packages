@@ -6,4 +6,4 @@ update_on:
   - source: github
     github: seqan/seqan
     use_latest_release: true
-    include_regex: "seqan-v(\d+.\d+.\d+)"
+    include_regex: seqan-v(\d+.\d+.\d+)
