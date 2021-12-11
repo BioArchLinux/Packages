@@ -1,0 +1,40 @@
+# Maintainer: Eric Berquist <eric DOT berquist AT gmail DOT com>
+
+pkgname=avogadro2
+_gitname=avogadroapp
+pkgver=1.95.1
+pkgrel=1
+pkgdesc="an advanced molecular editor designed for cross-platform use in computational chemistry, molecular modeling, bioinformatics, materials science, and related areas."
+url="http://openchemistry.org/projects/avogadro2"
+arch=("x86_64")
+license=("BSD-3-Clause")
+depends=("avogadrolibs" "desktop-file-utils")
+makedepends=("cmake" "eigen")
+install=avogadro2.install
+conflicts=("${pkgname}")
+provides=("${pkgname}")
+source=("${pkgname}::https://github.com/OpenChemistry/avogadroapp/archive/refs/tags/${pkgver}.zip")
+sha256sums=('b5db11747d20fab956149e04e7111eb56c6696c8ea9483f242f897613705fa7f')
+
+prepare() {
+  mkdir -p "${srcdir}"/build
+}
+
+build() {
+  cd "${srcdir}"/build
+  cmake \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_INSTALL_LIBDIR=lib \
+      -DBUILD_SHARED_LIBS=ON \
+      -DENABLE_TESTING=OFF \
+      -DUSE_VTK=ON \
+      "${srcdir}/${pkgname}-$pkgver"
+  make
+}
+
+package() {
+  cd "${srcdir}"/build
+  make DESTDIR="${pkgdir}" install
+  install -D -m 644 "${srcdir}/${pkgname}-$pkgver"/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
