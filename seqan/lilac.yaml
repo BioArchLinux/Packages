@@ -6,4 +6,4 @@ update_on:
   - source: github
     github: seqan/seqan
     use_max_tag: true
-    include_regex: ^[seqan-v]
+    include_regex: (\d+.\d+.\d+)
