@@ -17,58 +17,15 @@ depends=(
   python
   sqlite
 )
-makedepends=(
-  arrow
-  boost
-  cpio
-  fcgi
-  freeglut
-  freetype2
-  giflib
-  gl2ps
-  glew
-  gnutls
-  gtest
-  hdf5
-  hiredis
-  lapacke
-  leveldb
-  libjpeg
-  libpng
-  librdkafka
-  libtiff
-  libuv
-  libx11
-  libxext
-  libxmu
-  libxpm
-  libxslt
-  libxt
-  mariadb
-  mesa
-  microsoft-gsl
-  mimetic
-  muparser
-  pcre
-  procps-ng
-  protobuf
-  wxgtk2
-)
-source=("${pkgname}-${pkgver}.tar.gz::https://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/ncbi-blast-${pkgver}+-src.tar.gz")
-sha256sums=('fda3c9c9d488cad6c1880a98a236d842bcf3610e3e702af61f7a48cf0a714b88')
-
-build() {
-  cd "${srcdir}/ncbi-blast-${pkgver}+-src/c++"
-  ./configure \
-    --prefix=/usr \
-    --with-dll
-  make
-}
+source=(https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/$pkgver/ncbi-blast-$pkgver+-x64-linux.tar.gz)
+sha256sums=('89bd8edb535963ab9d0334935774b1bf789985b758754460be98378115feb091')
 
 package() {
-  cd "${srcdir}/ncbi-blast-${pkgver}+-src/c++"
-  make prefix="${pkgdir}/usr" install
-  install -Dm644 "scripts/projects/blast/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
-  # delete conflict files
-  rm -vf "${pkgdir}/usr/lib/libproj.so"
+  install -d "$pkgdir"/usr/bin
+  install -d "$pkgdir"/usr/share/doc/$pkgname
+
+  cd "$srcdir"/ncbi-blast-$pkgver+
+  install -Dm755 bin/* "$pkgdir"/usr/bin
+  install -Dm644 doc/* "$pkgdir"/usr/share/doc/$pkgname
+  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/blast+-bin/LICENSE
 }
