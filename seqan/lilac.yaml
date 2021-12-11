@@ -7,4 +7,3 @@ update_on:
     github: seqan/seqan
     use_latest_release: true
     include_regex: "seqan-v(\d+.\d+.\d+)"
-    exclude_regex: "[^rc]+"
