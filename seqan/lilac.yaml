@@ -5,5 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: seqan/seqan
-    use_max_tag: true
+    use_latest_release: true
     include_regex: (\d+.\d+.\d+)
