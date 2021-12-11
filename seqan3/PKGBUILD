@@ -1,0 +1,15 @@
+pkgname=seqan3
+pkgver=3.1.0
+pkgrel=1
+pkgdesc="The modern C++ library for sequence analysis. Contains version 3 of the library and API docs."
+arch=("any")
+url="http://www.seqan.de"
+license=('custom')
+source=("https://github.com/seqan/seqan3/releases/download/${pkgver}/seqan3-${pkgver}-Linux.tar.xz")
+sha256sums=('54e34293e7ac2e4953746db091c13e748fa0b2e0fdb7a75edbb7160967d3010a')
+package() {
+    mkdir -p ${pkgdir}/usr/share/doc/${pkgname}
+    mkdir -p ${pkgdir}/usr/include/${pkgname}
+    cp -rf "${srcdir}/${pkgname}-${pkgver}-Linux/include/${pkgname}/" ${pkgdir}/usr/include/
+    cp -rf "${srcdir}/${pkgname}-${pkgver}-Linux/share/doc/${pkgname}/" ${pkgdir}/usr/share/doc/
+}
