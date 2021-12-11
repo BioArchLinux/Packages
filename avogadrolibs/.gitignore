@@ -1,9 +1,0 @@
-# makepkg files
-pkg/
-src/
-*.log
-*.xz
-*.zst
-
-# source files
-avogadrolibs
