@@ -29,12 +29,12 @@ build() {
       -DBUILD_SHARED_LIBS=ON \
       -DENABLE_TESTING=OFF \
       -DUSE_VTK=ON \
-      "${srcdir}/${pkgname}-$pkgver"
+      "${srcdir}/${_gitname}-$pkgver"
   make
 }
 
 package() {
   cd "${srcdir}"/build
   make DESTDIR="${pkgdir}" install
-  install -D -m 644 "${srcdir}/${pkgname}-$pkgver"/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -D -m 644 "${srcdir}/${_gitname}-$pkgver"/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
