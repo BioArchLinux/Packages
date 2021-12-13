@@ -3,7 +3,6 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - source: github
-    github: seqan/seqan
-    use_latest_release: true
-    include_regex: (\d+.\d+.\d+)
+  - source: regex
+    url: https://github.com/seqan/seqan/releases
+    regex: 'seqan-v(\d+.\d+.\d+)'
