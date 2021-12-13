@@ -1,0 +1,16 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=bali-phy
+pkgver=3.6.1
+pkgrel=1
+pkgdesc="Bayesian co-estimation of phylogenies and multiple alignments via MCMC"
+arch=('x86_64')
+url="http://www.bali-phy.org/"
+license=('GPL')
+source=("https://github.com/bredelings/BAli-Phy/releases/download/${pkgver}/bali-phy-${pkgver}-linux64.tar.gz")
+sha256sums=('4a263aa012b8d94a1c2537e33826b4fea6b5ee5826b66b98ea3d89f3a82e2ed4')
+package() {
+	mkdir - $pkgdir/usr	
+	cd $srcdir/$pkgname-$pkgver
+	cp -r * $pkgdir/usr/
+  
+}
