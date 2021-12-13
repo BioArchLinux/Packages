@@ -16,7 +16,13 @@ build() {
 }
 
 package() {
-  cd "$pkgname-$pkgver"/source
+  
+  cd $srcdir/$pkgname-$pkgver
+  install -Dm 755 LICENSE ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE	  
+	
+  cd $srcdir/"$pkgname-$pkgver"/source
 
   install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+  install -Dm755 statal $pkgdir/usr/bin/statal
+  install -Dm755 readal $pkgdir/usr/bin/readal
 }
