@@ -2,7 +2,7 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=tnt
-pkgver=2021.12.10
+pkgver=2021.12.15
 pkgrel=1
 pkgdesc="Tree analysis using New Technology"
 arch=('x86_64')
