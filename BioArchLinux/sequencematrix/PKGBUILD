@@ -1,8 +1,8 @@
 # Maintainer: Malacology <guoyizhang at malacology dot com>
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
-pkgname=seqencematrix
-_installname=SeqenceMatrix
+pkgname=sequencematrix
+_pkgname=SequenceMatrix
 pkgver=1.9
 pkgrel=3
 depends=(
@@ -12,14 +12,14 @@ pkgdesc="Taxonomy-aware DNA sequence processing toolkit"
 arch=('x86_64')
 url="https://github.com/gaurav/taxondna"
 license=('GPL2')
-source=("https://github.com/gaurav/taxondna/releases/download/v${pkgver}/SequenceMatrix-${pkgver}.zip" "seqencematrix.desktop")
+source=("https://github.com/gaurav/taxondna/releases/download/v${pkgver}/SequenceMatrix-${pkgver}.zip" "$pkgname.desktop")
 sha256sums=('ba46fe8672ded973c835ea0a636c251d28fa2f80ee30a69469a4a7fab204e814'
-            '391168a6dc8ed31fde009c3f103836c2400bf32c882f28ec21332a915eae7bd0')
+            'a0ab58fb1c9611627344cf20e1441b913fae37287d375ace9837763fabd1dd65')
 
 package() {
-    install -dm755 "$pkgdir"/usr/share/{seqencematrix,applications}
+    install -dm755 "$pkgdir"/usr/share/{$pkgname,applications}
     chmod +x ${srcdir}/SequenceMatrix-${pkgver}/SequenceMatrix.jar
-    install -Dm755 ${srcdir}/seqencematrix.desktop "${pkgdir}/usr/share/applications/seqencematrix.desktop"
-    install -Dm755 ${srcdir}/SequenceMatrix-${pkgver}/SequenceMatrix.jar ${pkgdir}/usr/share/seqencematrix/SequenceMatrix.jar
+    install -Dm755 ${srcdir}/$pkgname.desktop "${pkgdir}/usr/share/applications/$pkgname.desktop"
+    install -Dm755 ${srcdir}/SequenceMatrix-${pkgver}/SequenceMatrix.jar ${pkgdir}/usr/share/$pkgname/$pkgname.jar
     mv ${srcdir}/SequenceMatrix-${pkgver}/* ${pkgdir}/usr/share/seqencematrix/
 }
