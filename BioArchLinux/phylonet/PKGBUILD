@@ -4,7 +4,7 @@
 pkgname=phylonet
 _installname=PhyloNet
 pkgver=3.8.3
-pkgrel=2
+pkgrel=3
 depends=(
 	'java-runtime'
 )
