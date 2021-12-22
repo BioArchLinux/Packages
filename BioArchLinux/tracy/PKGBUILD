@@ -2,7 +2,7 @@
 
 pkgname=tracy
 pkgver=0.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Basecalling, alignment, assembly and deconvolution of Sanger Chromatogram trace files"
 arch=('x86_64')
 url="https://github.com/gear-genomics/tracy"
