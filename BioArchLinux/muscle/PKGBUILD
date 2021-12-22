@@ -3,7 +3,7 @@
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=muscle
 pkgver=5.0.1428
-pkgrel=3
+pkgrel=4
 pkgdesc="multiple sequence comparison by log-expectation"
 arch=('i686' 'x86_64')
 url="http://www.drive5.com/muscle/"
