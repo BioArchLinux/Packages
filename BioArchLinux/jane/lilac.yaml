@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: linux.tar.gz
+  - regex: 'DOWNLOAD Jane \d+ (Version (\d+.\d+), updated \w+ \d+, \d+)'
     source: regex
-    url: https://www.cs.hmc.edu/~hadas/jane/downloads/
+    url: https://www.cs.hmc.edu/~hadas/jane/
 
