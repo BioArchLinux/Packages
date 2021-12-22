@@ -4,7 +4,7 @@
 pkgname=seqencematrix
 _installname=SeqenceMatrix
 pkgver=1.9
-pkgrel=2
+pkgrel=3
 depends=(
 	'java-runtime'
 )
