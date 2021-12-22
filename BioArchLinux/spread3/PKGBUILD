@@ -4,7 +4,7 @@
 pkgname=spread3
 pkgver=0.9.6
 _pkgver=0-9-6
-pkgrel=2
+pkgrel=3
 depends=(
 	'java-runtime'
 )
