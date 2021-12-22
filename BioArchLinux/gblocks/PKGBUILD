@@ -6,7 +6,7 @@ pkgname=gblocks
 _pkgname=Gblocks
 provides=("gblocks")
 pkgver=0.91b
-pkgrel=2
+pkgrel=3
 pkgdesc="A program written in ANSI C language that eliminates poorly aligned\
  positions and divergent regions of an alignment of DNA or protein sequences"
 
