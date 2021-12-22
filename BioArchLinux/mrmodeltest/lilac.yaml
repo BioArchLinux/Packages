@@ -5,5 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: nylander/MrModeltest2
-    use_max_tag: true
-    prefix: v.
+    use_latest_release: true
+    prefix: 'MrModeltest v'
