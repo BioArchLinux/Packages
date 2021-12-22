@@ -2,8 +2,8 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=jane
-pkgver=linux.tar.gz
-pkgrel=2
+pkgver=4.01
+pkgrel=1
 pkgdesc="software tool for the cophylogeny reconstruction problem"
 arch=('x86_64')
 url="https://www.cs.hmc.edu/~hadas/jane/"
