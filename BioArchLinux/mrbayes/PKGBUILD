@@ -3,7 +3,7 @@
 pkgname=mrbayes
 _up_pkgname=MrBayes
 pkgver=3.2.7
-pkgrel=2
+pkgrel=3
 provides=("mrbayes")
 pkgdesc="A program for the Bayesian estimation of phylogeny"
 arch=('i686' 'x86_64')
