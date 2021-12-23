@@ -3,7 +3,7 @@
 _pkgname=rappdirs
 _pkgver=0.3.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.3
 pkgrel=1
 pkgdesc='Application Directories: Determine Where to Save Data, Caches, and Logs'
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('49959f65b45b0b189a2792d6c1339bef59674ecae92f8c2ed9f26ff9e488c184')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
