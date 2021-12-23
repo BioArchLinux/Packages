@@ -13,13 +13,18 @@ Thanks!
 -->
 
 **Log of the bug**
+
+<details>
+
 ```
 put the output here
 ```
+ 
+ </details>
 
 **Desktop (please complete the following information):**
  - Desktop Enviroment: [e.g. gnome, kde, server]
- - LInux Kernel: [e.g. linux-lts 5.10.60-1]
+ - Linux Kernel: [e.g. linux-lts 5.10.60-1]
  - Package Version: [e.g. 22]
 
 **Additional context**
