@@ -3,7 +3,6 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - source: github
-    github: nylander/MrModeltest2
-    use_latest_release: true
-    prefix: 'MrModeltest v'
+  - source: regex
+    regex: 'MrModeltest v(\d+.\d+)'
+    url: "https://github.com/nylander/MrModeltest2/releases"
