@@ -3,7 +3,7 @@
 _pkgname=hms
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.1
 pkgrel=1
 pkgdesc='Pretty Time of Day'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6b5f30db1845c70d27b5de33f31caa487cdd0787cd80a4073375e5f482269062')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
