@@ -6,3 +6,5 @@ update_on:
   - source: github
     github: OpenChemistry/avogadroapp
     use_max_tag: true
+repo_depends:
+  -  avogadro2libs
