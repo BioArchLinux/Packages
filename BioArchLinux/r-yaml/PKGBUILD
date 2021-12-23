@@ -3,7 +3,7 @@
 _pkgname=yaml
 _pkgver=2.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.1
 pkgrel=1
 pkgdesc='Methods to Convert R Data to YAML and Back'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1115b7bc2a397fa724956eec916df5160c600c99a3be186d21558dd38d782783')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
