@@ -3,7 +3,7 @@
 _pkgname=httr
 _pkgver=1.4.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.2
 pkgrel=1
 pkgdesc='Tools for Working with URLs and HTTP'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('462bed6ed0d92f811d5df4d294336025f1dbff357286999d9269bfd9c20b1ef9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
