@@ -3,7 +3,7 @@
 _pkgname=DBI
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.2
 pkgrel=1
 pkgdesc='R Database Interface'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('56ec377d471c76ac234ddfd313bd01a050c99fb6fa5f704f5333b34a5d714f58')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
