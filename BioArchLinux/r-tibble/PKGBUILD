@@ -3,7 +3,7 @@
 _pkgname=tibble
 _pkgver=3.1.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.1.6
 pkgrel=1
 pkgdesc='Simple Data Frames'
 arch=('x86_64')
@@ -50,7 +50,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5b33d909f146ebad38e262f6a57cb91ab70bfe240c2af01004beec11b3898292')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
