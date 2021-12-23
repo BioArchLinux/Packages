@@ -3,7 +3,7 @@
 _pkgname=DelayedArray
 _pkgver=0.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.20.0
 pkgrel=1
 pkgdesc='A unified framework for working transparently with on-disk and in-memory array-like datasets'
 arch=('x86_64')
@@ -30,7 +30,7 @@ optdepends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f272d2ca627bde399274d93c6fc397dec6fe6a1bf8cc98ffc111ee1a00fca6b2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
