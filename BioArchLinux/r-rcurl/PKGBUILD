@@ -4,7 +4,7 @@
 _pkgname=RCurl
 _pkgver=1.98-1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.98.1.5
 pkgrel=1
 pkgdesc='General Network (HTTP/FTP/...) Client Interface for R'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('73187c9a039188ffdc255fb7fa53811a6abfb31e6375a51eae8c763b37dd698d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
