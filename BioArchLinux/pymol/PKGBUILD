@@ -39,6 +39,6 @@ package() {
   cd "${srcdir}/${_name}-${pkgver}"
   python setup.py install --prefix=/usr --root="${pkgdir}"
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-  install -Dm644 "${srcdir}/pymol.desktop" "${pkgdir}/usr/share/applications/pymol.desktop"
+  install -Dm644 "${srcdir}/pymol-open-source.desktop" "${pkgdir}/usr/share/applications/pymol.desktop"
   install -Dm644 "${srcdir}/pymol.png" "${pkgdir}/usr/share/pixmaps/pymol.png"
 }
