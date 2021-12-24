@@ -10,4 +10,4 @@ post_build: git_pkgbuild_commit
 
 update_on:
   - source: vcs
-    aur: git+https://gitlab.gnome.org/Archive/gconf.git
+    vcs: git+https://gitlab.gnome.org/Archive/gconf.git
