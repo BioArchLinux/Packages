@@ -1,29 +1,27 @@
-# Maintainer: Alex Peltzer ("alexpe87") <alexpe.aur@mailbox.org>
-# Contributor: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
+# Maintainer: PumpkinCheshire <sollyonzou at gmail dot com>
 
 pkgname=bwa
-pkgver=0.7.17
-_pkgver=${pkgver}
+pkgver=v0.7.17.r23.gfbfffc9
 pkgrel=1
 pkgdesc="Burrows-Wheeler Aligner maps low-divergent sequences against a large reference genome"
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url="http://bio-bwa.sourceforge.net/"
 license=('GPL3')
 depends=('perl' 'zlib')
-source=(https://github.com/lh3/bwa/releases/download/v$pkgver/bwa-${_pkgver}.tar.bz2)
-md5sums=('82cba7ef695538e6a38b9d4156837381')
+makedepends=('git' 'make')
+source=('git+https://github.com/lh3/bwa.git#branch=master')
+sha256sums=('SKIP')
+
+pkgver() {
+    git -C ${pkgname} describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
 
 build() {
-  cd $srcdir/$pkgname-$_pkgver
-
-  make
+    cd "$srcdir/${pkgname}"
+    make
 }
 
 package() {
-  cd $srcdir/$pkgname-$_pkgver
-
-  install -Dm755 bwa          $pkgdir/usr/bin/bwa
-  install -Dm755 qualfa2fq.pl $pkgdir/usr/bin/qualfa2fq
-  install -Dm755 xa2multi.pl  $pkgdir/usr/bin/xa2multi
-  install -Dm644 bwa.1        $pkgdir/usr/share/man/man1/bwa.1
+    install -Dm755 -t "${pkgdir}/usr/bin" ${srcdir}/${pkgname}/bwa
+    install -Dm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" ${pkgname}/COPYING
 }
