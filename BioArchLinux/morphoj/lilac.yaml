@@ -3,8 +3,6 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: Version (\d+.\d+\w+), \d+ \w+ \d+
+  - regex: Version (\d+.\w+),
     source: regex
     url: https://morphometrics.uk/MorphoJ_guide/frameset.htm?changelog.htm
-    from_pattern: (\d+).(\d+)(\w+)
-    to_pattern: \1.\2\3
