@@ -9,7 +9,7 @@ url="http://bio-bwa.sourceforge.net/"
 license=('GPL3')
 depends=('perl' 'zlib')
 makedepends=('git' 'make')
-source=('git+https://github.com/lh3/bwa.git#branch=master')
+source=('git+https://github.com/lh3/bwa.git')
 sha256sums=('SKIP')
 
 pkgver() {
