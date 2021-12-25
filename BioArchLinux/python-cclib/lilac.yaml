@@ -6,6 +6,6 @@ update_on:
   - source: github
     github: cclib/cclib
     use_latest_release: true
-    prefix: cclib-v
+    prefix: cclib-
 repo_depends:
   -  python-periodictable
