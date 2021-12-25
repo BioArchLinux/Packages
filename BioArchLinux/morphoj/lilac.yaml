@@ -3,7 +3,5 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: Version (\d+.\w+),
-    source: regex
-    url: https://morphometrics.uk/MorphoJ_guide/frameset.htm?changelog.htm
-    referrer: curl 'https://morphometrics.uk/MorphoJ_guide/changelog.htm' -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96"' -H 'Upgrade-Insecure-Requests: 1' -H 'Referer: https://morphometrics.uk/MorphoJ_guide/navbar.htm' --compressed
+  - source: cmd
+    cmd: curl 'https://morphometrics.uk/MorphoJ_guide/changelog.htm' | 
