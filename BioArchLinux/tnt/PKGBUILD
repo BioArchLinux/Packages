@@ -2,7 +2,7 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=tnt
-pkgver=2021.12.15
+pkgver=2021.12.25
 pkgrel=1
 pkgdesc="Tree analysis using New Technology"
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
 	'ncurses5-compat-libs'
 	)
 source=("http://www.lillo.org.ar/phylogeny/tnt/tnt64-no-tax-limit.zip")
-sha256sums=('833d7eadc1132838e718ada44548626933a0ec76e8b2454d495bdf2352b8a25a')
+sha256sums=('53be6f19e29d6df3421fe77b956d237f21bdc896b84a353ca85091b31ace365e')
 package () {
 	cd ${srcdir}
 	chmod +x tnt
