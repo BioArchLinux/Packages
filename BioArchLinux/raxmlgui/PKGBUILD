@@ -10,14 +10,8 @@ url="https://antonellilab.github.io/raxmlGUI"
 provides=("raxmlgui")
 license=('AGPL3')
 source=("https://github.com/AntonelliLab/raxmlGUI/releases/download/v${pkgver}/raxmlGUI-${pkgver}.AppImage" "raxmlgui.desktop")
-<<<<<<< HEAD
 sha256sums=('3e67b95551e26b2cc26e9a5f62583a2bec2351b53587d188718dcab8fc588068'
             'a589d49d17a9d07a7b6cf1e41334d5c014a57e1b4faa31f22f106223bb994596')
-=======
-sha256sums=('f2113bb75c5c7c65182ff7e4da5d7ec52c06ed6b0e741bbc8b3dadb716441cdd'
-            '4997996df092faa5b4adf7952083bd93b2667c4b89a2781ac3f02f5c930202f3')
->>>>>>> 1003a37edc7a5dda07925ace0e75ee8787d731e4
-
 prepare() {
   cd "${srcdir}"
   chmod +x raxmlGUI-${pkgver}.AppImage
