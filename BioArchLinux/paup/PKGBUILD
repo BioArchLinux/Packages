@@ -3,7 +3,7 @@
 pkgname=paup
 pkgver=4a168
 _execname=paup${pkgver//.0/}_ubuntu64
-pkgrel=3
+pkgrel=4
 pkgdesc="Phylogenetic Analysis Using PAUP"
 arch=('i686' 'x86_64')
 url="http://phylosolutions.com/paup-test/"
