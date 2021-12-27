@@ -1,7 +1,7 @@
 # Maintainer: Stefan Seemayer <mail@semicolonsoftware.de>
 pkgname=fasttree
 pkgver=2.1.9
-pkgrel=2
+pkgrel=3
 pkgdesc="Approximately-Maximum-Likelihood Trees for Large Alignments"
 arch=(i686 x86_64)
 url="http://www.microbesonline.org/fasttree/"
