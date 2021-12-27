@@ -2,7 +2,7 @@
 pkgname=mrmodeltest
 _pkgname=MrModeltest2
 pkgver=2.4
-pkgrel=2
+pkgrel=3
 pkgdesc="C program for selecting DNA substitution models using PAUP*"
 arch=('x86_64')
 url="https://github.com/nylander/MrModeltest2"
