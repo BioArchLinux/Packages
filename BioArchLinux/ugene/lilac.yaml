@@ -8,3 +8,4 @@ update_on:
     use_latest_release: true
 repo_depends:
   - qspec
+time_limit_hours: 6
