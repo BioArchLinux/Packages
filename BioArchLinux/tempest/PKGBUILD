@@ -3,7 +3,7 @@
 
 pkgname=tempest
 pkgver=1.5.3
-pkgrel=3
+pkgrel=4
 depends=(
 	'java-runtime'
 )
