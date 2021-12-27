@@ -3,7 +3,7 @@
 
 pkgname=beast
 pkgver=1.10.4
-pkgrel=7
+pkgrel=8
 provides=("beast")
 pkgdesc="Bayesian Evolutionary Analysis Sampling Trees"
 arch=('x86_64')
