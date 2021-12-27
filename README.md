@@ -49,7 +49,7 @@ Or you can communicate at IRC channel #bioarchlinux at Libera Chat.
 Add the fllowing to the `/etc/pacman.conf`
 ```
 [BioArchLinux]
-Server = https://repo.malacology.net/$arch
+Server = https://repo.bioarchlinux.org/$arch
 ```
 Then import GPG key
 ```
