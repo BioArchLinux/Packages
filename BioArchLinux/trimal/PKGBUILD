@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=trimal
 pkgver=1.4.1
-pkgrel=5
+pkgrel=6
 pkgdesc="A tool for automated alignment trimming in large-scale phylogenetic analyses"
 arch=('x86_64')
 url="trimal.cgenomics.org"
