@@ -1,6 +1,6 @@
 pkgname=seqan3
 pkgver=3.1.0
-pkgrel=3
+pkgrel=4
 pkgdesc="The modern C++ library for sequence analysis. Contains version 3 of the library and API docs."
 arch=("any")
 url="http://www.seqan.de"
