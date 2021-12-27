@@ -2,7 +2,7 @@
 
 pkgname=libgtextutils
 pkgver=0.7
-pkgrel=4
+pkgrel=5
 arch=(x86_64)
 pkgdesc='Gordon’s Text utils Library'
 url="https://github.com/agordon/$pkgname"
