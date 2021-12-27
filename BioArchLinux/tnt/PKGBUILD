@@ -3,7 +3,7 @@
 
 pkgname=tnt
 pkgver=2021.12.25
-pkgrel=1
+pkgrel=2
 pkgdesc="Tree analysis using New Technology"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
