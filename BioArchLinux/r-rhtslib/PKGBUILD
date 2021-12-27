@@ -5,11 +5,12 @@ _pkgname=Rhtslib
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
 pkgver=1.26.0
-pkgrel=2
+pkgrel=3
 pkgdesc='HTSlib high-throughput sequencing library as an R package'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('LGPL')
+options=(staticlibs)
 depends=(
   r
   r-zlibbioc
