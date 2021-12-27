@@ -3,7 +3,7 @@
 
 pkgname=morphoj
 pkgver=1.07a
-pkgrel=2
+pkgrel=3
 pkgdesc="MorphoJ is an integrated program package for doing geometric morphometrics"
 arch=('x86_64')
 depends=(
