@@ -3,7 +3,7 @@
 
 pkgname=phylobayes
 pkgver=4.1c
-pkgrel=2
+pkgrel=3
 pkgdesc="phylogenetic reconstruction using infinite mixtures"
 arch=('i686' 'x86_64')
 url="https://github.com/bayesiancook/phylobayes"
