@@ -3,7 +3,7 @@
 
 pkgname=raxmlgui
 pkgver=2.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="A new user-friendly program integrating RAxML-NG and ModelTest-NG for cutting-edge phylogenetic analysis"
 arch=('x86_64')
 url="https://antonellilab.github.io/raxmlGUI"
