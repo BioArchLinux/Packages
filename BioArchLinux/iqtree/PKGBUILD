@@ -13,8 +13,9 @@ pkgdesc="Efficient phylogenomic software by maximum likelihood; multicore versio
 arch=(x86_64)
 url="http://www.iqtree.org/"
 license=('GPL2')
-depends=('cmake' 'boost' 'eigen' 'glibc' 'libstdc++5' 'zlib')
-source=("https://github.com/iqtree/iqtree2/archive/v${pkgver}.tar.gz")
+depends=('boost' 'eigen' 'glibc' 'libstdc++5' 'zlib')
+makedepends=('cmake' 'make')
+source=("iqtree2-$pkgver::https://github.com/iqtree/iqtree2/archive/v${pkgver}.tar.gz")
 md5sums=('d20ca3e053852574dcbdd218f4e6ebfc')
 
 build() {
@@ -22,7 +23,7 @@ build() {
   mkdir -p build
   cd build
   cmake -DIQTREE_FLAGS=omp ..
-  make
+  make -j
 }
 
 package() {
