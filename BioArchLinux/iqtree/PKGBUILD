@@ -1,4 +1,4 @@
-iqtre# Maintainer: Dominik Schrempf <dominik dot schrempf at gmail dot com>
+# Maintainer: Dominik Schrempf <dominik dot schrempf at gmail dot com>
 
 # XXX: The following warning cannot be removed because CMAKE stores the build
 # directory in the executable 'iqtree'.
