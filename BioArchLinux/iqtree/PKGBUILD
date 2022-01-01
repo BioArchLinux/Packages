@@ -23,7 +23,7 @@ build() {
   mkdir -p build
   cd build
   cmake -DIQTREE_FLAGS=omp ..
-  make
+  make || bash -c "df -h"
 }
 
 package() {
