@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: michaelgelliot
+    email: m.g.elliot@rug.nl
+update_on:
+  - source: github
+    github: ChaissonLab/LRA
+    use_max_tag: true
+
