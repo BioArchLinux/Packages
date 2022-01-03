@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: michaelgelliot
+    email: m.g.elliot@rug.nl
+update_on:
+  - source: github
+    github: lh3/minimap2
+    use_max_tag: true
+
+

@@ -1,0 +1,25 @@
+# Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
+# Contributor: Mick Elliot <m.g.elliot@rug.nl>
+
+pkgname=minimap2
+pkgver=2.24
+pkgrel=1
+pkgdesc='A versatile pairwise aligner for genomic and spliced nucleotide sequences. doi:10.1093/bioinformatics/bty191'
+arch=('x86_64')
+url="https://github.com/lh3/${pkgname}"
+license=('MIT')
+depends=(zlib)
+provides=()
+source=("${pkgver}.tar.gz::${url}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.bz2")
+sha256sums=('9dd4c31ff082182948944bcdad6d328f64f09295d10547d72eba24189880a615')
+build() {
+  cd "${pkgname}-${pkgver}"
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -Dm644 ${pkgname} "${pkgdir}/usr/bin/${pkgname}"
+  chmod +x "${pkgdir}/usr/bin/${pkgname}"
+}
