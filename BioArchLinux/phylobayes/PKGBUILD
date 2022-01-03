@@ -4,7 +4,7 @@
 pkgname=phylobayes
 pkgver=4.1c
 pkgrel=3
-pkgdesc="phylogenetic reconstruction using infinite mixtures"
+pkgdesc="phylogenetic reconstruction using infinite mixtures. doi:10.1093/molbev/msh112"
 arch=('i686' 'x86_64')
 url="https://github.com/bayesiancook/phylobayes"
 license=('unknow')

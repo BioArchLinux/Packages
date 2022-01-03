@@ -2,7 +2,7 @@
 pkgname=fasttree
 pkgver=2.1.9
 pkgrel=3
-pkgdesc="Approximately-Maximum-Likelihood Trees for Large Alignments"
+pkgdesc="Approximately-Maximum-Likelihood Trees for Large Alignments. doi:10.1371/journal.pone.0009490"
 arch=(i686 x86_64)
 url="http://www.microbesonline.org/fasttree/"
 license=('GPL')

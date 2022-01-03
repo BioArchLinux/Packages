@@ -2,7 +2,7 @@
 pkgname=phylonium
 pkgver=1.6
 pkgrel=1
-pkgdesc="Fast and Accurate Estimation of Evolutionary Distances"
+pkgdesc="Fast and Accurate Estimation of Evolutionary Distances. doi:10.1093/bioinformatics/btz903"
 url="https://github.com/evolbioinf/phylonium/"
 license=("GPL3") # "custom:ISC"
 depends=("libdivsufsort")
