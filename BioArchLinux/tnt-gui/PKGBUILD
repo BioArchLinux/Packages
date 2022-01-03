@@ -4,7 +4,7 @@
 pkgname=tnt-gui
 pkgver=2021.12.27
 pkgrel=1
-pkgdesc="Tree analysis using New Technology. doi:10.1111/cla.12160"
+pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
 license=('custom')

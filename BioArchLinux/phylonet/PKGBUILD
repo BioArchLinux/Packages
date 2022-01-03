@@ -8,7 +8,7 @@ pkgrel=4
 depends=(
 	'java-runtime'
 )
-pkgdesc="TA suite of software tools for reconstructing/analyzing phylogenetic networks in the presence of reticulate evolutionary events. doi:10.1093/sysbio/syy015"
+pkgdesc="TA suite of software tools for reconstructing/analyzing phylogenetic networks in the presence of reticulate evolutionary events. https://doi.org/10.1093/sysbio/syy015"
 arch=('x86_64')
 url="https://bioinfocs.rice.edu/PhyloNet"
 license=('GPL2')

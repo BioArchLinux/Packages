@@ -4,7 +4,7 @@
 pkgname=rasp
 pkgver=20211014
 pkgrel=4
-pkgdesc="Ancestral state reconstruction tool for multiple genes and characters. doi:10.1093/molbev/msz257"
+pkgdesc="Ancestral state reconstruction tool for multiple genes and characters. https://doi.org/10.1093/molbev/msz257"
 arch=('x86_64')
 url="http://mnh.scu.edu.cn/soft/blog/rasp/"
 license=('GPL3')

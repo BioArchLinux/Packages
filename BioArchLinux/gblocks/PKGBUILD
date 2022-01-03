@@ -8,7 +8,7 @@ provides=("gblocks")
 pkgver=0.91b
 pkgrel=4
 pkgdesc="A program written in ANSI C language that eliminates poorly aligned\
- positions and divergent regions of an alignment of DNA or protein sequences. doi:10.1093/oxfordjournals.molbev.a026334"
+ positions and divergent regions of an alignment of DNA or protein sequences. https://doi.org/10.1093/oxfordjournals.molbev.a026334"
 
 url='http://molevol.cmima.csic.es/castresana/Gblocks.html'
 arch=('x86_64')

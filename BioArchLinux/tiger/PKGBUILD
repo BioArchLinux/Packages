@@ -4,7 +4,7 @@
 pkgname=tiger
 pkgver=1.02
 pkgrel=4
-pkgdesc="Identifying rapidly-evolving characters in evolutionary data. doi:10.1093/sysbio/syr064"
+pkgdesc="Identifying rapidly-evolving characters in evolutionary data. https://doi.org/10.1093/sysbio/syr064"
 arch=('x86_64')
 url="http://mcinerneylab.com/software/tiger/",""
 license=('GPL3')
