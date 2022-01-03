@@ -1,0 +1,29 @@
+# Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
+# Contributor: Mick Elliot <m.g.elliot@rug.nl>
+
+pkgname=gsalign
+pkgnamecaps=GSAlign
+pkgver=1.0.22
+pkgrel=1
+pkgdesc='An ultra-fast sequence alignment algorithm for intra-species genome comparison. doi:10.1186/s12864-020-6569-1'
+arch=('x86_64')
+url="https://github.com/hsinnan75/${pkgnamecaps}"
+license=('MIT')
+depends=(gcc-libs zlib)
+provides=()
+source=("${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz") 
+sha256sums=('832eb3f570756cf6c0165036994a184e8882b152f3163d50367caa9d0815f619')
+
+build() {
+  cd "${pkgnamecaps}-${pkgver}"
+  make
+}
+
+package() {
+  cd "${pkgnamecaps}-${pkgver}"
+  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -Dm644 bin/bwt_index "${pkgdir}/usr/bin/bwt_index"
+  install -Dm644 bin/${pkgnamecaps} "${pkgdir}/usr/bin/${pkgnamecaps}"
+  chmod +x "${pkgdir}/usr/bin/bwt_index"
+  chmod +x "${pkgdir}/usr/bin/${pkgnamecaps}"
+}
