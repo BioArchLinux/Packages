@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: michaelgelliot
+    email: m.g.elliot@rug.nl
+update_on:
+  - source: regex
+    regex: v(\d+.\d+.\w+)
+    url: https://github.com/mummer4/mummer/releases
+
+

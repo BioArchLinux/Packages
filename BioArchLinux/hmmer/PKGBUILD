@@ -5,7 +5,7 @@
 pkgname=hmmer
 pkgver=3.3.2
 pkgrel=1
-pkgdesc="Profile hidden Markov models (HMMs) for database searching using consensus sequences"
+pkgdesc="Profile hidden Markov models (HMMs) for database searching using consensus sequences. https://doi.org/10.1093/bioinformatics/14.9.755"
 arch=('i686' 'x86_64')
 checkdepends=('perl-perl4-corelibs' 'python')
 license=('GPL')

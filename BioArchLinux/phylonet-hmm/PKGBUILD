@@ -9,7 +9,7 @@ depends=(
 	'java-runtime'
 )
 makedepends=('ant')
-pkgdesc="An HMM-based comparative genomic framework for detecting introgression in eukaryotes"
+pkgdesc="An HMM-based comparative genomic framework for detecting introgression in eukaryotes. https://doi.org/10.1371/journal.pcbi.1003649"
 arch=('x86_64')
 url="https://bioinfocs.rice.edu/node/108"
 license=('GPL')

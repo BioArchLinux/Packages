@@ -8,7 +8,7 @@ pkgrel=4
 depends=(
 	'java-runtime'
 )
-pkgdesc="a user-friendly application to analyze and visualize pathogen phylodynamic reconstructions resulting from Bayesian inference of sequence and trait evolutionary processes"
+pkgdesc="a user-friendly application to analyze and visualize pathogen phylodynamic reconstructions resulting from Bayesian inference of sequence and trait evolutionary processes. https://doi.org/10.1093/molbev/msw082"
 arch=('x86_64')
 url="https://rega.kuleuven.be/cev/ecv/software/SpreaD3"
 license=('custom')

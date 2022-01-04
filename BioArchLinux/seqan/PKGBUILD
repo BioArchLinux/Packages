@@ -1,7 +1,7 @@
 pkgname=seqan
 pkgver=2.4.0
 pkgrel=4
-pkgdesc="SeqAn is an open source C++ library of efficient algorithms and data structures for the analysis of sequences with the focus on biological data"
+pkgdesc="SeqAn is an open source C++ library of efficient algorithms and data structures for the analysis of sequences with the focus on biological data. https://doi.org/10.1186/1471-2105-9-11"
 arch=("any")
 url="http://www.seqan.de"
 license=('custom')

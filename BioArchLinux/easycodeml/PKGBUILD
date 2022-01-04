@@ -4,7 +4,7 @@
 pkgname=easycodeml
 pkgver=1.21
 pkgrel=1
-pkgdesc="A visual tool for analysis of selection using CodeML"
+pkgdesc="A visual tool for analysis of selection using CodeML. https://doi.org/10.1002/ece3.5015"
 arch=('x86_64')
 url="https://github.com/BioEasy/EasyCodeML"
 license=('LGPL3')

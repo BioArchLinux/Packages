@@ -3,7 +3,7 @@
 pkgname=fastx-toolkit
 pkgver=0.0.14
 pkgrel=3
-pkgdesc="The FASTX-Toolkit is a collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing."
+pkgdesc="The FASTX-Toolkit is a collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing"
 arch=("any")
 url="https://github.com/agordon/fastx_toolkit"
 license=('AGPL3')

@@ -3,7 +3,7 @@
 pkgname=bowtie2
 pkgver=2.4.4
 pkgrel=3
-pkgdesc="Tool for aligning sequencing reads to long reference sequences"
+pkgdesc="Tool for aligning sequencing reads to long reference sequences. https://doi.org/10.1038/nmeth.1923"
 arch=('x86_64' 'aarch64')
 url="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml"
 license=('GPL')
