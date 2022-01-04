@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: michaelgelliot
+    email: m.g.elliot@rug.nl
+update_on:
+  - regex: armadillo-(\d+.\d+.\d+).tar.xz
+    source: regex
+    url: https://sourceforge.net/projects/arma/files/
+

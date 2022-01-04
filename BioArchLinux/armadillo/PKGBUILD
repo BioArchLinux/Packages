@@ -1,0 +1,30 @@
+# Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
+# Contributor: Mick Elliot <m.g.elliot@rug.nl>
+
+pkgname=armadillo
+sfname=arma
+pkgver=10.8.0
+pkgrel=1
+pkgdesc="C++ library for linear algebra & scientific computing"
+arch=('x86_64')
+url="http://${sfname}.sourceforge.net/"
+license=('Apache')
+depends=(openblas lapack)
+makedepends=()
+optdepends=()
+provides=()
+source=("http://sourceforge.net/projects/${sfname}/files/${pkgname}-${pkgver}.tar.xz")
+
+sha256sums=('7c5d2fd4bba095733829f7fe03d4a74e732b81c75dd4d40001163487c967d5bc')
+
+build() {
+  cd "${pkgname}-${pkgver}"
+  cmake . -DCMAKE_INSTALL_PREFIX="/usr"
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  make DESTDIR=${pkgdir} install 
+  install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
