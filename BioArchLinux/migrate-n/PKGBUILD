@@ -1,0 +1,30 @@
+# Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
+# Contributor: Mick Elliot <m.g.elliot@rug.nl>
+
+pkgname=migrate-n
+_pkgname=migrate
+pkgver=4.4.4
+pkgrel=1
+pkgdesc="Bayesian estimation of effective population sizes, migration rates, and population divergences or admixture, single CPU version"
+arch=('x86_64')
+url="https://peterbeerli.com/migrate-html5"
+license=('MIT')
+depends=()
+makedepends=()
+optdepends=(zlib)
+provides=(migrate-n)
+source=("${url}/download_version4/${_pkgname}-${pkgver}.src.tar.gz")
+
+sha256sums=('e30f2e9ce8aa7ec987019eca5cad16d1e51c68f7c56711899bf61c3031115d66')
+
+build() {
+  cd "${_pkgname}-${pkgver}/src"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "${_pkgname}-${pkgver}/src"
+  install -Dm755 migrate-n "${pkgdir}/usr/bin/migrate-n"
+}
+
