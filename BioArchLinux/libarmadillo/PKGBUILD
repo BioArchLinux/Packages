@@ -1,7 +1,8 @@
 # Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
-pkgname=armadillo
+pkgname=libarmadillo
+_pkgname=armadillo
 sfname=arma
 pkgver=10.8.0
 pkgrel=1
@@ -13,18 +14,18 @@ depends=(openblas lapack)
 makedepends=(cmake)
 optdepends=()
 provides=()
-source=("http://sourceforge.net/projects/${sfname}/files/${pkgname}-${pkgver}.tar.xz")
+source=("http://sourceforge.net/projects/${sfname}/files/${_pkgname}-${pkgver}.tar.xz")
 
 sha256sums=('7c5d2fd4bba095733829f7fe03d4a74e732b81c75dd4d40001163487c967d5bc')
 
 build() {
-  cd "${pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
   cmake . -DCMAKE_INSTALL_PREFIX="/usr"
   make
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"
+  cd "${_pkgname}-${pkgver}"
   make DESTDIR=${pkgdir} install 
   install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
