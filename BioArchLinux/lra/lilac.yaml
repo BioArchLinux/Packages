@@ -6,4 +6,5 @@ update_on:
   - source: github
     github: ChaissonLab/LRA
     use_max_tag: true
-
+repo_depends:
+  - htslib
