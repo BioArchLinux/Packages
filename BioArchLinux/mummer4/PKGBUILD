@@ -7,7 +7,7 @@ pkgrel=1
 pkgdesc="A fast and versatile genome alignment system. https://doi.org/10.1371/journal.pcbi.1005944"
 arch=('x86_64')
 url="https://mummer4.github.io/"
-license=('GPL' 'PerlArtistic')
+license=('PerlArtistic')
 depends=(gcc-libs)
 makedepends=(sh perl)
 provides=()
@@ -20,7 +20,16 @@ build() {
   make
 }
 
+# check seems to fail due to an apparent bug in test_md5
+# see also https://github.com/mummer4/mummer/issues/147
+
+# check() {
+#   cd "mummer-${pkgver}"
+#   make check
+# }
+
 package() {
   cd "mummer-${pkgver}"
   make DESTDIR="$pkgdir/" install
 }
+
