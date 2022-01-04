@@ -1,0 +1,28 @@
+# Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
+# Contributor: Mick Elliot <m.g.elliot@rug.nl>
+
+pkgname=bayesass
+_pkgname=BA3
+pkgver=3.0.4.2
+pkgrel=1
+pkgdesc="Software for inferring proportions of recent migrants among populations using multilocus genotype data."
+arch=('x86_64')
+url="https://github.com/brannala/${_pkgname}"
+license=('GPL')
+depends=(gsl cblas gcc-libs)
+source=("${url}/archive/refs/tags/${pkgver}.tar.gz")
+
+sha256sums=('6f808241da430a4554510870c381b646f4655bf461641c9f18feedda7b88889a')
+
+build() {
+  cd "${_pkgname}-${pkgver}"
+  make
+}
+
+package() {
+  cd "${_pkgname}-${pkgver}"
+  install -Dm755 BA3MSAT "${pkgdir}/usr/bin/BA3MSAT"
+  install -Dm755 BA3SNP "${pkgdir}/usr/bin/BA3SNP"
+}
+
+
