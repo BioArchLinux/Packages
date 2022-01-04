@@ -3,8 +3,8 @@ maintainers:
   - github: michaelgelliot
     email: m.g.elliot@rug.nl
 update_on:
-  - source: github
-    github: mummer4/mummer
-    use_max_tag: true
+  - source: regex
+    regex: v(\d+.\d+.\w+)
+    url: https://github.com/mummer4/mummer/releases
 
 
