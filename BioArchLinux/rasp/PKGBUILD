@@ -13,7 +13,7 @@ depends=(
 	'wine_gecko'
 	'wine-mono'
 )
-source=("http://mnh.scu.edu.cn/soft/blog/RASP/RASP_Win64_${pkgver}.zip" "rasp.desktop" "rasp.png")
+source=("https://sourceforge.net/projects/rasp2/files/RASP_Win64_${pkgver}.zip" "rasp.desktop" "rasp.png")
 md5sums=('7d39376e5a8ef44eef467ab0a511f2e0'
          '4304aead6dcffd521664dbc186997ec8'
          '5b403896e05a3da471be404bb9afe053')

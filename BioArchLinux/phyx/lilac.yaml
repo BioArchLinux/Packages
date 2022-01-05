@@ -6,4 +6,5 @@ update_on:
   - source: github
     github: FePhyFoFum/phyx
     use_max_tag: true
-
+repo_depends:
+  - libarmadillo

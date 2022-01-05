@@ -4,8 +4,8 @@
 pkgname=migrate-n-mpi
 _pkgname=migrate
 pkgver=4.4.4
-pkgrel=1
-pkgdesc="Bayesian estimation of effective population sizes, migration rates, and population divergences or admixture, mpi version"
+pkgrel=2
+pkgdesc="Bayesian estimation of effective population sizes, migration rates, and population divergences or admixture, multithreaded version"
 arch=('x86_64')
 url="https://peterbeerli.com/migrate-html5"
 license=('MIT')
