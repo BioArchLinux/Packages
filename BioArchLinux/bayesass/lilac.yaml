@@ -4,6 +4,6 @@ maintainers:
     email: m.g.elliot@rug.nl
 update_on:
   - source: regex
-    regex: (\d+.\d+.\d+.\d+)
-    url: https://github.com/brannala/BA3/tags
+    regex: Version (\d+.\d+.\d+.\d+)
+    url: https://github.com/brannala/BA3/releases
 
