@@ -3,8 +3,7 @@ maintainers:
   - github: michael.g.elliot
     email: m.g.elliot@rug.nl
 update_on:
-  - source: regex
-    regex: Version (\d+.\d+.\d+.\d+)
-    url: https://github.com/brannala/BA3/releases
-
+  - source: github
+    github: bpp/bpp
+    use_max_tag: true
 
