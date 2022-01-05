@@ -10,8 +10,7 @@ url="http://${sfname}.sourceforge.net/"
 license=('GPL')
 depends=(libarmadillo nlopt lapack)
 makedepends=(curl)
-optdepends=()
-provides=()
+TESTdepends=(python)
 source=("https://github.com/FePhyFoFum/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 
 sha256sums=('b09677f98f997838b39cd2724463be06d0627ddc90a7e659dc90d4e02db624eb')

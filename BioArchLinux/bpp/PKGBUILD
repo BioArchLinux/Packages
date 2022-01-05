@@ -1,0 +1,27 @@
+# Maintainer:  Mick Elliot <m.g.elliot@rug.nl>
+# Contributor: Mick Elliot <m.g.elliot@rug.nl>
+
+pkgname=bpp
+pkgver=4.4.1
+pkgrel=1
+pkgdesc="High-performance Bayesian phylogenetics and phylogeography. https://doi.org/10.1093/sysbio/syw119"
+arch=('x86_64')
+url="https://github.com/bpp/bpp"
+license=('Affero')
+source=("${url}/archive/refs/tags/v${pkgver}.tar.gz")
+depends=(glibc)
+
+sha256sums=('5e1e3dade3613d191f384077705e821081fcbc09e991c3c8a92b3a9306d4d295')
+
+build() {
+  cd "${pkgname}-${pkgver}/src"
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}/src"
+  install -Dm755 bpp "${pkgdir}/usr/bin/bpp"
+  install -Dm644 ../LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
+
+

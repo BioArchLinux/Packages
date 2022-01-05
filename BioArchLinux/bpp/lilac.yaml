@@ -4,6 +4,6 @@ maintainers:
     email: m.g.elliot@rug.nl
 update_on:
   - source: github
-    github: brannala/BA3
+    github: bpp/bpp
     use_max_tag: true
 
