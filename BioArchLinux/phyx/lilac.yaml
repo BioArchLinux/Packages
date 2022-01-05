@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: michael.g.elliot
+    email: m.g.elliot@rug.nl
+update_on:
+  - source: github
+    github: FePhyFoFum/phyx
+    use_max_tag: true
+
