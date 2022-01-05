@@ -1,8 +1,10 @@
-maintainers:
-  - github: michael.g.elliot
-    email: m.g.elliot@rug.nl
-build_prefix: extra-x86_64
-update_on:
-  - source: regex
-    url: "https://peterbeerli.com/migrate-html5/download_version4/"
-    regex:   migrate-(\d+.\d+.\d+).src.tar.gz
+#!/usr/bin/env python3
+
+from lilaclib import *
+
+def pre_build():
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+
+def post_build():
+  git_add_files('PKGBUILD')
+  git_commit()
