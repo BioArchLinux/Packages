@@ -9,7 +9,7 @@ arch=('x86_64')
 url="http://${sfname}.sourceforge.net/"
 license=('GPL')
 depends=(libarmadillo nlopt lapack)
-makedepends=(curl)
+makedepends=(curl python)
 testdepends=(python)
 source=("https://github.com/FePhyFoFum/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 
