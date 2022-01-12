@@ -3,7 +3,7 @@
 _pkgname=ARRmNormalization
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Adaptive Robust Regression normalization for Illumina methylation data'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-arrmdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d0d6c42ed028759e03ee9fb5ce0fa24d8750be9848cc0525a0554e75ebc8d8e7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
