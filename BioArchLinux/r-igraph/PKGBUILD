@@ -4,7 +4,7 @@
 _pkgname=igraph
 _pkgver=1.2.11
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.11
 pkgrel=1
 pkgdesc='Network Analysis and Visualization'
 arch=('x86_64')
@@ -31,7 +31,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1c8b715eb61e6e7d9082858673929f8e84dc832c0a2a7aba7811511bbd2000de')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
