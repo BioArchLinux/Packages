@@ -3,7 +3,7 @@
 _pkgname=objectSignals
 _pkgver=0.10.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.10.2
 pkgrel=1
 pkgdesc='objectSignals'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1c011090d784b173038710b6d29c6121d23a5c328092bd47c2e2db1103768fe5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
