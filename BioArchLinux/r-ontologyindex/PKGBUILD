@@ -3,7 +3,7 @@
 _pkgname=ontologyIndex
 _pkgver=2.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.7
 pkgrel=1
 pkgdesc='Functions for Reading Ontologies into R'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('33f4918cafb983635f9f831553daf15e10103dc375475e170f104a8eaf0e7048')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
