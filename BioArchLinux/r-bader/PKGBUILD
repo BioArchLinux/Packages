@@ -3,7 +3,7 @@
 _pkgname=BADER
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Bayesian Analysis of Differential Expression in RNA Sequencing Data'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-pasilla
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('eaa66d25c8dc725574af3ab853d1767d25656856b0b0d0c93cdf3dc0b325f1d9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
