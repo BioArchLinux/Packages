@@ -3,7 +3,7 @@
 _pkgname=Clomial
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Infers clonal composition of a tumor'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-permute
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('27e43f44e9a805a9887a599514b18c31736184d6578d25332f3afa2e5ac75b34')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
