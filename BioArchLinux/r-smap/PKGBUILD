@@ -3,7 +3,7 @@
 _pkgname=SMAP
 _pkgver=1.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.58.0
 pkgrel=1
 pkgdesc='A Segmental Maximum A Posteriori Approach to Array-CGH Copy Number Profiling'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b0df96370717282066368ee51025c8bc552dc47e19f1affa48b8c9aeb1eacd0d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
