@@ -3,7 +3,7 @@
 _pkgname=genalg
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.0
 pkgrel=1
 pkgdesc='R Based Genetic Algorithm'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7a288906274a66ec09eb1d247481cc6b243d57e1c173d0dbe2d097897055eef3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
