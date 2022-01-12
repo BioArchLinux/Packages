@@ -3,7 +3,7 @@
 _pkgname=TeachingDemos
 _pkgver=2.12
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.12
 pkgrel=1
 pkgdesc='Demonstrations for Teaching and Learning'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-tkrplot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3e75405ce1affa406d6df85e06f96381412bc7a2810b25d8c81bfe64c4698644')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
