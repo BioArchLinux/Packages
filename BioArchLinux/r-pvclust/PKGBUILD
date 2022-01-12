@@ -3,7 +3,7 @@
 _pkgname=pvclust
 _pkgver=2.2-0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.0
 pkgrel=1
 pkgdesc='Hierarchical Clustering with P-Values via Multiscale Bootstrap Resampling'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-parallel
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7892853bacd413b5a921006429641ad308a344ca171b3081c15e4c522a8b0201')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
