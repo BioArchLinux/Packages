@@ -3,7 +3,7 @@
 _pkgname=spatstat.sparse
 _pkgver=2.1-0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.0
 pkgrel=1
 pkgdesc='Sparse Three-Dimensional Arrays and Linear Algebra Utilities'
 arch=('x86_64')
@@ -16,7 +16,7 @@ depends=(
   r-tensor
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0019214418668cba9f01ee5901ed7f4dba9cfee5ff62d5c7e1c914adfbea0e91')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
