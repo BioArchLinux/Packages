@@ -3,7 +3,7 @@
 _pkgname=FMStable
 _pkgver=0.1-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.2
 pkgrel=1
 pkgdesc='Finite Moment Stable Distributions'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('93392247fa7841698252386324a6927a0a87f96291b3443d240c2f87ef8b7103')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
