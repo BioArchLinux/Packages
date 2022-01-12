@@ -3,7 +3,7 @@
 _pkgname=carData
 _pkgver=3.0-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.5
 pkgrel=1
 pkgdesc='Companion to Applied Regression Data Sets'
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-car
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('02e77159b33e3afb8cd9cfab11cf5a996a93175f924b07d991ce44bc6e16451a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
