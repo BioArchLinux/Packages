@@ -3,7 +3,7 @@
 _pkgname=polspline
 _pkgver=1.1.19
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.19
 pkgrel=1
 pkgdesc='Polynomial Spline Routines'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('953e3c4d007c3ef86ac2af3c71b272a99e8e35b194bdd58575785558c6711f66')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
