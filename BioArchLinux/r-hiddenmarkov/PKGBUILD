@@ -3,7 +3,7 @@
 _pkgname=HiddenMarkov
 _pkgver=1.8-13
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.13
 pkgrel=1
 pkgdesc='Hidden Markov Models'
 arch=('x86_64')
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7186d23e561818f3e1f01376a4fb2af9ccee775ce5afc1e3175f3b07a81db515')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
