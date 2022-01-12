@@ -3,7 +3,7 @@
 _pkgname=Rlab
 _pkgver=2.15.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.15.1
 pkgrel=1
 pkgdesc='Functions and Datasets Required for ST370 class'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4fa5f8696ac796a02ce8a9ba4c3c5150c2bc90ea983e56db6444874890bc60dd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
