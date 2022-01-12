@@ -3,7 +3,7 @@
 _pkgname=diffGeneAnalysis
 _pkgver=1.76.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.76.0
 pkgrel=1
 pkgdesc='Performs differential gene expression Analysis'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-minpack.lm
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('77a94b6d5acf7abb4b8913b9cf886aa4cedb4bf0a7b08443e20d2bc1f0b3f9aa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
