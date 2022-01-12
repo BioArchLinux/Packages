@@ -3,7 +3,7 @@
 _pkgname=splancs
 _pkgver=2.01-42
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.01.42
 pkgrel=1
 pkgdesc='Spatial and Space-Time Point Pattern Analysis'
 arch=('x86_64')
@@ -17,7 +17,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8c0af4764521e20b629dba6afd5c284e7be48786f378c37668eacfa26d2ef0aa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
