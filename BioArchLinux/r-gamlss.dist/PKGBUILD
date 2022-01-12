@@ -3,7 +3,7 @@
 _pkgname=gamlss.dist
 _pkgver=6.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=6.0.1
 pkgrel=1
 pkgdesc='Distributions for Generalized Additive Models for Location Scale and Shape'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b563b4de6bcedcfa4f8d29198a47004e38fd2de6e0509c788015d4e3feb18154')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
