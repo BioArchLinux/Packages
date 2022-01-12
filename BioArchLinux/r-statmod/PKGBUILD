@@ -3,7 +3,7 @@
 _pkgname=statmod
 _pkgver=1.4.36
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.36
 pkgrel=1
 pkgdesc='Statistical Modeling'
 arch=('x86_64')
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('14e897c83d426caca4d920d3d5bead7ae9a679276b3cb2e227f299ad189d7bc2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
