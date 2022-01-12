@@ -4,7 +4,7 @@
 _pkgname=systemfonts
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.3
 pkgrel=1
 pkgdesc='System Native Font Finding'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-tools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('647c99d5ea6f90a49768ea7b10b39816af6be85168475273369fd973a20dbbba')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
