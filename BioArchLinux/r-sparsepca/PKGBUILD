@@ -3,7 +3,7 @@
 _pkgname=sparsepca
 _pkgver=0.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.2
 pkgrel=1
 pkgdesc='Sparse Principal Component Analysis (SPCA)'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rsvd
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('646f2244a57ae8d2e490e0913d4dc9dcf3dafeffb1104d225aaf847b46b56272')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
