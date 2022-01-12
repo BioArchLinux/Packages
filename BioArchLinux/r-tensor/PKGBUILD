@@ -3,7 +3,7 @@
 _pkgname=tensor
 _pkgver=1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.5
 pkgrel=1
 pkgdesc='Tensor product of arrays'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e1dec23e3913a82e2c79e76313911db9050fb82711a0da227f94fc6df2d3aea6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
