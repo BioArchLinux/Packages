@@ -3,7 +3,7 @@
 _pkgname=IMPCdata
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Retrieves data from IMPC database'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rjson
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a8f4613a11661397caa5dbf8ac169c7317aba2dcab3a5a9b802fdf8fbf71e96f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
