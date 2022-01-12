@@ -3,7 +3,7 @@
 _pkgname=VGAM
 _pkgver=1.1-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.5
 pkgrel=1
 pkgdesc='Vector Generalized Linear and Additive Models'
 arch=('x86_64')
@@ -22,7 +22,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('30190b150f3e5478137d288a45f575b2654ad7c29254b0a1fe5c954ee010a1bb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
