@@ -4,7 +4,7 @@
 _pkgname=RLMM
 _pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.56.0
 pkgrel=1
 pkgdesc='A Genotype Calling Algorithm for Affymetrix SNP Arrays'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('34ef54f50b0e5570c68d05e4a6df67849b35e931bd84e27dee66e43091fc5c22')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
