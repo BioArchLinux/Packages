@@ -3,7 +3,7 @@
 _pkgname=ModelMetrics
 _pkgver=1.2.2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.2.2
 pkgrel=1
 pkgdesc='Rapid Calculation of Model Metrics'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5e06f1926aebca5654e1329c66ef19b04058376b2277ebb16e3bf8c208d73457')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
