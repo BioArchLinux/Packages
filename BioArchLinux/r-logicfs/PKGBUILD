@@ -3,7 +3,7 @@
 _pkgname=logicFS
 _pkgver=2.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.14.0
 pkgrel=1
 pkgdesc='Identification of SNP Interactions'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-siggenes
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f257731a3f828c0ce2597c40d07294c4243e5437f81aff1eece07a2d228d97fd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
