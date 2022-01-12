@@ -3,7 +3,7 @@
 _pkgname=yulab.utils
 _pkgver=0.0.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.0.4
 pkgrel=1
 pkgdesc="Supporting Functions for Packages Maintained by 'YuLab-SMU'"
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-pkgbuild
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('38850663de53a9166b8e85deb85be1ccf1a5b310bbe4355f3b8bc823ed1b49ae')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
