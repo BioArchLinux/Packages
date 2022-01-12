@@ -3,7 +3,7 @@
 _pkgname=seqCNA.annot
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Annotation for the copy number analysis of deep sequencing cancer data with seqCNA'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('75375d5127f23c7669f0167e21b7b98910612dec66ceb8a980f479aefd57a612')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
