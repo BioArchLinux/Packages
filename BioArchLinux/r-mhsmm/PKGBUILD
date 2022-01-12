@@ -3,7 +3,7 @@
 _pkgname=mhsmm
 _pkgver=0.4.16
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.16
 pkgrel=1
 pkgdesc='Inference for Hidden Markov and Semi-Markov Models'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-mvtnorm
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fab573abdc0dd44e8c8bc7242a1428df20b3ec64c4c194e5f1f907393f902d01')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
