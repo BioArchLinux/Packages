@@ -3,7 +3,7 @@
 _pkgname=fit.models
 _pkgver=0.64
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.64
 pkgrel=1
 pkgdesc='Compare Fitted Models'
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-mass
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f70806bfa85a05337fa5a665264d640e307584714a07a329fbe96c86b0e864da')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
