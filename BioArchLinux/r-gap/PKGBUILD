@@ -3,7 +3,7 @@
 _pkgname=gap
 _pkgver=1.2.3-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.3.1
 pkgrel=1
 pkgdesc='Genetic Analysis Package'
 arch=('x86_64')
@@ -54,7 +54,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('343ae58ca91e75147ae3961285c3413bdf6dedf7cb4743a822a6c5b16d1b89e7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
