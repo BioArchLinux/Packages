@@ -3,7 +3,7 @@
 _pkgname=sandwich
 _pkgver=3.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.1
 pkgrel=1
 pkgdesc='Robust Covariance Matrix Estimators'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f6584b7084f3223bbc0c4722f53280496be73849747819b0cb4e8f3910284a89')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
