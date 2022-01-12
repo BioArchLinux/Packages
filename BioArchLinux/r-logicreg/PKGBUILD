@@ -3,7 +3,7 @@
 _pkgname=LogicReg
 _pkgver=1.6.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.4
 pkgrel=1
 pkgdesc='Logic Regression'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2026081ac2e9b1a6580485dff6a98a467f6e589bb6b6f13387080656cacd2714')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
