@@ -3,7 +3,7 @@
 _pkgname=arrayhelpers
 _pkgver=1.1-0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.0
 pkgrel=1
 pkgdesc='Convenience Functions for Arrays'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-svunit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5fddd5dd4fb8237bcb24465ef823bc8715ba53e6e5fd7a716c31c48ec128340b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
