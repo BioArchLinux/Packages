@@ -3,7 +3,7 @@
 _pkgname=robustbase
 _pkgver=0.93-9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.93.9
 pkgrel=1
 pkgdesc='Basic Robust Statistics'
 arch=('x86_64')
@@ -43,7 +43,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d75fb5075463fec61d063bced7003936e9198492328b6fae15f67e8415713c45')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
