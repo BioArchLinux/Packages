@@ -3,7 +3,7 @@
 _pkgname=circlize
 _pkgver=0.4.13
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.13
 pkgrel=1
 pkgdesc='Circular Visualization'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-png
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6cbadbf8e8b1abbd71a79080677d2b95f2bdd18f2e4d707c32d5c2ff26c5369b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
