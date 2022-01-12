@@ -3,7 +3,7 @@
 _pkgname=BHC
 _pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.46.0
 pkgrel=1
 pkgdesc='Bayesian Hierarchical Clustering'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('021a3d6700851e704b2f5b41d8470a52b60a4930152898008fc7eac42425dc26')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
