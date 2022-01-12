@@ -3,7 +3,7 @@
 _pkgname=nleqslv
 _pkgver=3.3.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.3.2
 pkgrel=1
 pkgdesc='Solve Systems of Nonlinear Equations'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f54956cf67f9970bb3c6803684c84a27ac78165055745e444efc45cfecb63fed')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
