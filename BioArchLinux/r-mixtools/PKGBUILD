@@ -3,7 +3,7 @@
 _pkgname=mixtools
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Tools for Analyzing Finite Mixture Models'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-segmented
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ef033ef13625209065d26767bf70d129972e6808927f755629f1d70a118b9023')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
