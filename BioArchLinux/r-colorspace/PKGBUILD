@@ -3,7 +3,7 @@
 _pkgname=colorspace
 _pkgver=2.0-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.2
 pkgrel=1
 pkgdesc='A Toolbox for Manipulating and Assessing Colors and Palettes'
 arch=('x86_64')
@@ -38,7 +38,7 @@ optdepends=(
   r-wesanderson
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b891cd2ec129ed5f116429345947bcaadc33969758a108521eb0cf36bd12183a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
