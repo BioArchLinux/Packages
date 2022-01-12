@@ -3,7 +3,7 @@
 _pkgname=signal
 _pkgver=0.7-7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.7
 pkgrel=1
 pkgdesc='Signal Processing'
 arch=('x86_64')
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('67a015c46d67de7548c3adb83a1b22524de75501a861d91668c3c2ea761a4e61')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
