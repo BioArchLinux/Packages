@@ -3,7 +3,7 @@
 _pkgname=clusterRepro
 _pkgver=0.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9
 pkgrel=1
 pkgdesc='Reproducibility of Gene Expression Clusters'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('940d84529ff429b315cf4ad25700f93e1156ccacee7b6c38e4bdfbe2d4c6f868')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
