@@ -3,7 +3,7 @@
 _pkgname=coop
 _pkgver=0.6-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.3
 pkgrel=1
 pkgdesc='Co-Operation: Fast Covariance, Correlation, and Cosine Similarity Operations'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-slam
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('40904e172812c14810f83bc7ee7f6e3fc768fae268208fb3b14f73f5b44e8973')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
