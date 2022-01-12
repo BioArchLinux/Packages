@@ -3,7 +3,7 @@
 _pkgname=sizepower
 _pkgver=1.64.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.64.0
 pkgrel=1
 pkgdesc='Sample Size and Power Calculation in Micorarray Studies'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('358fca3c485a4017442b1b17c5f9756f54339a1041d1b6f156b2e0473c249bc9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
