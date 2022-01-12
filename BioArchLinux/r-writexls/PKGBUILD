@@ -4,7 +4,7 @@
 _pkgname=WriteXLS
 _pkgver=6.3.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=6.3.0
 pkgrel=1
 pkgdesc='Cross-Platform Perl Based R Function to Create Excel 2003 (XLS) and Excel 2007 (XLSX) Files'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0b1d987abe4b08f6a32003b77d1cfc2eefdc5a478382e77ca0da98bccf6e526b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
