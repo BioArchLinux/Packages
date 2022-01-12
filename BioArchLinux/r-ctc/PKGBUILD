@@ -3,7 +3,7 @@
 _pkgname=ctc
 _pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.68.0
 pkgrel=1
 pkgdesc='Cluster and Tree Conversion.'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-amap
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('dd2bb55691eaca3b2b7a91858cf5c138ce78a9ca77389c88efd071f6f98b05fb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
