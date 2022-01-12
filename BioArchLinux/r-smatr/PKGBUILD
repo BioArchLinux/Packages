@@ -3,7 +3,7 @@
 _pkgname=smatr
 _pkgver=3.4-8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.4.8
 pkgrel=1
 pkgdesc='(Standardised) Major Axis Estimation and Testing Routines'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3669388f4abc41fac7bf008680c2fa8eddf5dffe20f5c33522b05357cc5b1863')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
