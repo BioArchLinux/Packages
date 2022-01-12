@@ -3,7 +3,7 @@
 _pkgname=graph
 _pkgver=1.72.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.72.0
 pkgrel=1
 pkgdesc='graph: A package to handle graph data structures'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-xml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('000ab6023bdb49d254fccb12b0486a8324a9bec2b6a7c4cdb3b5d788c7a76174')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
