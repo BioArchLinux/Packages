@@ -3,7 +3,7 @@
 _pkgname=DeMAND
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='DeMAND'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ac1afa5629615874007abab9147eae5e95098031cd08774084f5e83c33aa6996')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
