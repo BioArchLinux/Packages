@@ -3,7 +3,7 @@
 _pkgname=ccdata
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Data for Combination Connectivity Mapping (ccmap) Package'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0d9fb146f89ecfcadb52e494acdd5444bdf5b1974e437b24216fdc907643d668')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
