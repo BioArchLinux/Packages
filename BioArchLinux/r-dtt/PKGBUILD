@@ -3,7 +3,7 @@
 _pkgname=dtt
 _pkgver=0.1-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.2
 pkgrel=1
 pkgdesc='Discrete Trigonometric Transforms'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b6ee86fb571b3ee04ac1d8d04fbc76b12515c09afee688d56a4f39ea63910f59')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
