@@ -3,7 +3,7 @@
 _pkgname=maps
 _pkgver=3.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.4.0
 pkgrel=1
 pkgdesc='Draw Geographical Maps'
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-sp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7918ccb2393ca19589d4c4e77d9ebe863dc6317ebfc1ff41869dbfaf439f5747')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
