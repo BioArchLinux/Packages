@@ -3,7 +3,7 @@
 _pkgname=flashClust
 _pkgver=1.01-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.01.2
 pkgrel=1
 pkgdesc='Implementation of optimal hierarchical clustering'
 arch=('any')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('48a7849bb86530465ff3fbfac1c273f0df4b846e67d5eee87187d250c8bf9450')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
