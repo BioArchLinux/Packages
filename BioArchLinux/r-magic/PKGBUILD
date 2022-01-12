@@ -3,7 +3,7 @@
 _pkgname=magic
 _pkgver=1.5-9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.5.9
 pkgrel=1
 pkgdesc='Create and Investigate Magic Squares'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-abind
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fa1d5ef2d39e880f262d31b77006a2a7e76ea38e306aae4356e682b90d6cd56a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
