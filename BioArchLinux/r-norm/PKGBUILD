@@ -3,7 +3,7 @@
 _pkgname=norm
 _pkgver=1.0-9.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.9.5
 pkgrel=1
 pkgdesc='Analysis of multivariate normal datasets with missing values'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('305cbf007f3905cfd535ed9bf5ae3e2995e228cc8883d6482e5d3a2f02814106')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
