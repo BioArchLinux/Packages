@@ -3,7 +3,7 @@
 _pkgname=wheatmap
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.0
 pkgrel=1
 pkgdesc='Incrementally Build Complex Plots using Natural Semantics'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fe37cefe41dcae15b82c813230e467bf5197fd4c174f3e5b1c7c9314fcdf3db0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
