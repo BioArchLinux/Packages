@@ -3,7 +3,7 @@
 _pkgname=repo
 _pkgver=2.1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.5
 pkgrel=1
 pkgdesc='A Data-Centered Data Flow Manager'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c9910453465c1ec3a899b16596a9f2b30187045cc5b86bc2ad44af79869aed8d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
