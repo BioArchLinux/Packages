@@ -3,7 +3,7 @@
 _pkgname=yaImpute
 _pkgver=1.0-32
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.32
 pkgrel=1
 pkgdesc='Nearest Neighbor Observation Imputation and Evaluation Tools'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-vegan
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('08eee5d851b80aad9c7c80f9531aadd50d60e4b16b3a80657a50212269cd73ff')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
