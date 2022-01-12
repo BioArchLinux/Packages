@@ -4,7 +4,7 @@
 _pkgname=gmp
 _pkgver=0.6-2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.2.1
 pkgrel=1
 pkgdesc='Multiple Precision Arithmetic'
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-round
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c458026346c12093a22e627e2d5707a929fe95f4de3281894db4ab988d8747d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
