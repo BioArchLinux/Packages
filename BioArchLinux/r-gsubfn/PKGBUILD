@@ -3,7 +3,7 @@
 _pkgname=gsubfn
 _pkgver=0.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7
 pkgrel=1
 pkgdesc='Utilities for Strings and Function Arguments'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('89351df9e65722d2862f26a0a3985666de3c86e8400808ced8a6eb6e165a4602')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
