@@ -3,7 +3,7 @@
 _pkgname=easyPubMed
 _pkgver=2.13
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.13
 pkgrel=1
 pkgdesc='Search and Retrieve Scientific Publication Records from PubMed'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ad94b76d7386594c1bd6fb008a7c2ee708d49712575632eef36f9e8f7d8ba8f1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
