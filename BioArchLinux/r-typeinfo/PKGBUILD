@@ -3,7 +3,7 @@
 _pkgname=TypeInfo
 _pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.60.0
 pkgrel=1
 pkgdesc='Optional Type Specification Prototype'
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5cd4e076e76e2d14d38d154f150411fe9bfb3eb063cd9d45caa035d698b93c2c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
