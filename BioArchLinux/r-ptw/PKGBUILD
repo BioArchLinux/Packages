@@ -3,7 +3,7 @@
 _pkgname=ptw
 _pkgver=1.9-15
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.9.15
 pkgrel=1
 pkgdesc='Parametric Time Warping'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-nloptr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('22fa003f280bc000f46bca88d69bf332b29bc68435115ba8044533b70bfb7b46')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
