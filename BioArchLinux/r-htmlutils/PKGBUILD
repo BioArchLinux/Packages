@@ -3,7 +3,7 @@
 _pkgname=HTMLUtils
 _pkgver=0.1.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.7
 pkgrel=1
 pkgdesc='Facilitates Automated HTML Report Creation'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-r2html
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('812217968d7924806c63974108434ae534883ea6775c2d4db350fdaf6401c517')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
