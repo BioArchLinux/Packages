@@ -3,7 +3,7 @@
 _pkgname=kpmt
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.0
 pkgrel=1
 pkgdesc='Known Population Median Test'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-matrixstats
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6342ad02c93bfa7a764d028821bb6115bb8bc8c55b057a5860736cc0e034a295')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
