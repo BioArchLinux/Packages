@@ -3,7 +3,7 @@
 _pkgname=stable
 _pkgver=1.1.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.4
 pkgrel=1
 pkgdesc='Probability Functions and Generalized Regression Models for Stable Distributions'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-stabledist
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1ad56ce6566911f1e7ddc396ab1b59e2971e083f05cbdb1c379497e8c9c35f05')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
