@@ -3,7 +3,7 @@
 _pkgname=breakpointRdata
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Strand-seq data for demonstration purposes'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6a9c42c01d9de7e62f49d40fd7ac95d794c9121b92517952a7b40489213111c7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
