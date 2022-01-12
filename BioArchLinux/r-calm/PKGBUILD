@@ -3,7 +3,7 @@
 _pkgname=calm
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='Covariate Assisted Large-scale Multiple testing'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('229785fece24c2d99735170d37c54373ae0b02fd404c82b84f4a1a4db64307eb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
