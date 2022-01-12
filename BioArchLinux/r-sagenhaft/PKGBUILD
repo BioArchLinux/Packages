@@ -3,7 +3,7 @@
 _pkgname=sagenhaft
 _pkgver=1.64.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.64.0
 pkgrel=1
 pkgdesc='Collection of functions for reading and comparing SAGE libraries'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-sparsem
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7c5762ad8b6b634e25de399159ff138ce473680bb076a54b3ae9aaa7a6791d84')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
