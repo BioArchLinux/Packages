@@ -3,7 +3,7 @@
 _pkgname=cMap2data
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Connectivity Map (version 2) Data'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f5bbdbb7a4a7703447476a13accb33dc51e642007598e674c7aa9f84034c6a97')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
