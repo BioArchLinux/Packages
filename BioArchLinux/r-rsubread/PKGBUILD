@@ -3,7 +3,7 @@
 _pkgname=Rsubread
 _pkgver=2.8.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.8.1
 pkgrel=1
 pkgdesc='Mapping, quantification and variant analysis of sequencing data'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b647bd67851ddb5d772a51a3e1320620c2d9d538e5817d705e139c526e03fd52')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
