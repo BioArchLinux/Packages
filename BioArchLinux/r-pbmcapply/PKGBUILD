@@ -3,7 +3,7 @@
 _pkgname=pbmcapply
 _pkgver=1.5.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.5.0
 pkgrel=1
 pkgdesc='Tracking the Progress of Mc*pply with Progress Bar'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('df52ed585c0b32ac6180616efd94cd75dd7c5621f5398c0861db2f7b317ba844')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
