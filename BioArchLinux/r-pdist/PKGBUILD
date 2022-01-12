@@ -3,7 +3,7 @@
 _pkgname=pdist
 _pkgver=1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2
 pkgrel=1
 pkgdesc='Partitioned Distance Function'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ad01bcc822fe58b9bf6faea1cb8d4f8a4046bb1e1c5cc6eb172e84a65e1dcda2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
