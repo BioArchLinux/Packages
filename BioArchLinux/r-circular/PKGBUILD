@@ -3,7 +3,7 @@
 _pkgname=circular
 _pkgver=0.4-93
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.93
 pkgrel=1
 pkgdesc='Circular Statistics'
 arch=('x86_64')
@@ -17,7 +17,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('76cee2393757390ad91d3db3e5aeb2c2d34c0a46822b7941498571a473417142')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
