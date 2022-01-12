@@ -3,7 +3,7 @@
 _pkgname=extrafontdb
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0
 pkgrel=1
 pkgdesc='Package for holding the database for the extrafont package'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('faa1bafee5d4fbc24d03ed237f29f1179964ebac6e3a46ac25b0eceda020b684')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
