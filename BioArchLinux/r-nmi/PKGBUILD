@@ -3,7 +3,7 @@
 _pkgname=NMI
 _pkgver=2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0
 pkgrel=1
 pkgdesc='Normalized Mutual Information of Community Structure in Network'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c39fd733944601dd314dc37a4b0332d374236aa2bb21f263833f79989387b7e7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
