@@ -3,7 +3,7 @@
 _pkgname=modeltools
 _pkgver=0.2-23
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.23
 pkgrel=1
 pkgdesc='Tools and Classes for Statistical Models'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6b3e8d5af1a039db5c178498dbf354ed1c5627a8cea9229726644053443210ef')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
