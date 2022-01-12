@@ -3,7 +3,7 @@
 _pkgname=RGSEA
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Random Gene Set Enrichment Analysis'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('09297d918dd803c3e37129f133d275586e959033fd562333c581a96bc79b68af')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
