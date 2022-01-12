@@ -3,7 +3,7 @@
 _pkgname=KMsurv
 _pkgver=0.1-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.5
 pkgrel=1
 pkgdesc='Data sets from Klein and Moeschberger (1997), Survival Analysis'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('55627bc301245e0a4d6be04565fbaabd9cc360e2e5e4bc1e38341354e6de2542')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
