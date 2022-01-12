@@ -3,7 +3,7 @@
 _pkgname=LBE
 _pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.0
 pkgrel=1
 pkgdesc='Estimation of the false discovery rate.'
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-qvalue
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4edf000a120d992665b5790f4723d27b8f6463adf1f0359b4c511f236c325350')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
