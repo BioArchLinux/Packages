@@ -3,7 +3,7 @@
 _pkgname=mclust
 _pkgver=5.4.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=5.4.9
 pkgrel=1
 pkgdesc='Gaussian Mixture Modelling for Model-Based Clustering, Classification, and Density Estimation'
 arch=('x86_64')
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('65f123c6af86cf5eb511c81ae0eafa60da7b2085bfea1a08bdc3116081da9568')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
