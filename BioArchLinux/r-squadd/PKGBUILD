@@ -3,7 +3,7 @@
 _pkgname=SQUADD
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.0
 pkgrel=1
 pkgdesc='Add-on of the SQUAD Software'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rcolorbrewer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fcf5858aedf4dbdaedaa80c62be4e0848af023d9ca68936a2479d6ed6ff18b0a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
