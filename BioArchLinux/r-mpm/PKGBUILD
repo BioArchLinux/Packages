@@ -3,7 +3,7 @@
 _pkgname=mpm
 _pkgver=1.0-22
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.22
 pkgrel=1
 pkgdesc='Multivariate Projection Methods'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d3ba4053cd57a189cb65c5fa20e6a4152374aead8c985254cb6e550e36e23272')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
