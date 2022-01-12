@@ -3,7 +3,7 @@
 _pkgname=maCorrPlot
 _pkgver=1.64.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.64.0
 pkgrel=1
 pkgdesc='Visualize artificial correlation in microarray data'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('db50e1e31abac3593742a35b7b0fc3bf0732cd65453e801843af9879ed10f6dd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
