@@ -3,7 +3,7 @@
 _pkgname=lpNet
 _pkgver=2.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.26.0
 pkgrel=1
 pkgdesc='Linear Programming Model for Network Inference'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-lpsolve
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4b0f6d4840bfd77d5b2bc54b0334eb61d68b32cc1757e184ff02611369a03148')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
