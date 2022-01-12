@@ -3,7 +3,7 @@
 _pkgname=DynDoc
 _pkgver=1.72.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.72.0
 pkgrel=1
 pkgdesc='Dynamic document tools'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1506f73275fa0008e38a66f007fb1a01e6170ffceac158358667af9a259ba1c7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
