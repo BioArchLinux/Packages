@@ -3,7 +3,7 @@
 _pkgname=zip
 _pkgver=2.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.0
 pkgrel=1
 pkgdesc="Cross-Platform 'zip' Compression"
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9f95987c964039834f770ecda2d5f7e3d3a9de553c89db2a5926c4219bf4b9d8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
