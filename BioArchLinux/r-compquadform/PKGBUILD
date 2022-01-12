@@ -3,7 +3,7 @@
 _pkgname=CompQuadForm
 _pkgver=1.4.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.3
 pkgrel=1
 pkgdesc='Distribution Function of Quadratic Forms in Normal Variables'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('042fc56c800dd8f5f47a017e2efa832caf74f0602824abf7099898d9708660c4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
