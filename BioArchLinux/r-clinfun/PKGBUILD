@@ -3,7 +3,7 @@
 _pkgname=clinfun
 _pkgver=1.0.15
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.15
 pkgrel=1
 pkgdesc='Clinical Trial Design and Data Analysis Functions'
 arch=('x86_64')
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6c5608cd3c7ed988976e5cb95004b94d6797260d42578162663a84247b9b6133')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
