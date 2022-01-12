@@ -3,7 +3,7 @@
 _pkgname=isa2
 _pkgver=0.3.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.5
 pkgrel=1
 pkgdesc='The Iterative Signature Algorithm'
 arch=('x86_64')
@@ -17,7 +17,7 @@ optdepends=(
   r-igraph
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9b9d41747b14b0e5ddd7b7abb143ab7fc9e818df24995ea680197e6d4002759f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
