@@ -3,7 +3,7 @@
 _pkgname=sgeostat
 _pkgver=1.0-27
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.27
 pkgrel=1
 pkgdesc='An Object-Oriented Framework for Geostatistical Modeling in S+'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6b930d09901be3a80368b3b23127b4bd15565a4834a851100cfb2e34a5b809c7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
