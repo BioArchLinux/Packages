@@ -3,7 +3,7 @@
 _pkgname=ITALICSData
 _pkgver=2.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.32.0
 pkgrel=1
 pkgdesc='ITALICSData'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5b983a4ff1a9d2da7484409ee400eb044d420bbf346e0a5d98b473b26777fa8e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
