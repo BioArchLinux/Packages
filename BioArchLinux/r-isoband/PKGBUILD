@@ -4,7 +4,7 @@
 _pkgname=isoband
 _pkgver=0.2.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.5
 pkgrel=1
 pkgdesc='Generate Isolines and Isobands from Regularly Spaced Elevation Grids'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('46f53fa066f0966f02cb2bf050190c0d5e950dab2cdf565feb63fc092c886ba5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
