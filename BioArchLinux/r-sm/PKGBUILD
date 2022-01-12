@@ -3,7 +3,7 @@
 _pkgname=sm
 _pkgver=2.2-5.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.5.7
 pkgrel=1
 pkgdesc='Smoothing Methods for Nonparametric Regression and Density Estimation'
 arch=('x86_64')
@@ -25,7 +25,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2607a2cafc68d7e99005daf99e36f4a66eaf569ebb6b7500e962642cf58be80f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
