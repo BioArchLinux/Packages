@@ -3,7 +3,7 @@
 _pkgname=vegan
 _pkgver=2.5-7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.5.7
 pkgrel=1
 pkgdesc='Community Ecology Package'
 arch=('x86_64')
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e63b586951ea7d8b0118811f329c700212892ec1db3b93951603ce1d68aa462a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
