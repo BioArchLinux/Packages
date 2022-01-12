@@ -3,7 +3,7 @@
 _pkgname=softImpute
 _pkgver=1.4-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.1
 pkgrel=1
 pkgdesc='Matrix Completion via Iterative Soft-Thresholded SVD'
 arch=('x86_64')
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ea4c39831dee834204f6d6594aad6b937540ba4f2adf3f37fb4546844c234aec')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
