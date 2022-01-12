@@ -3,7 +3,7 @@
 _pkgname=PROcess
 _pkgver=1.70.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.70.0
 pkgrel=1
 pkgdesc='Ciphergen SELDI-TOF Processing'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-icens
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('35a35da26147b5979532356613ad784f0d96b3a9b09a6b532f09614b7e4add84')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
