@@ -3,7 +3,7 @@
 _pkgname=relimp
 _pkgver=1.0-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.5
 pkgrel=1
 pkgdesc='Relative Contribution of Effects in a Regression Model'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-tcltk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('acac7cf72ea39916761b51c825db0ffcb2bb1640e0a04086831fb78e9e40b679')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
