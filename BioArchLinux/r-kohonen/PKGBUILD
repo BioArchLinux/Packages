@@ -3,7 +3,7 @@
 _pkgname=kohonen
 _pkgver=3.0.10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.10
 pkgrel=1
 pkgdesc='Supervised and Unsupervised Self-Organising Maps'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-rcpp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('996956ea46a827c9f214e4f940a19304a0ff35bda707d4d7312f80d3479067b2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
