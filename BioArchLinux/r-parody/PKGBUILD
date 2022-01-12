@@ -3,7 +3,7 @@
 _pkgname=parody
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='Parametric And Resistant Outlier DYtection'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c8d2122fa638651cf4c81c9d1a2a0a9783b7aba358035fbb759cc97a85e72bb8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
