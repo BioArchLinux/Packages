@@ -3,7 +3,7 @@
 _pkgname=float
 _pkgver=0.2-6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.6
 pkgrel=1
 pkgdesc='32-Bit Floats'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4105ecd5c475cb2159a171ede665d53a62e00e3c53ca3076006088b066f7a5af')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
