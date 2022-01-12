@@ -3,7 +3,7 @@
 _pkgname=lgr
 _pkgver=0.4.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.3
 pkgrel=1
 pkgdesc='A Fully Featured Logging Framework'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8c55b2d81cfe8b80f0c42f28f31d77d9f1eb9b3fe78839cd1877c3a93c1649a3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
