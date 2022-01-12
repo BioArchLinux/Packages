@@ -3,7 +3,7 @@
 _pkgname=pracma
 _pkgver=2.3.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.3.6
 pkgrel=1
 pkgdesc='Practical Numerical Math Functions'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-quadprog
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('17ac83fd48c9155e00dc3f0433f95723505dc73d046860afd9001866d699b8de')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
