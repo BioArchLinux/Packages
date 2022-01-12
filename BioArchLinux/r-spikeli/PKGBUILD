@@ -3,7 +3,7 @@
 _pkgname=spikeLI
 _pkgver=2.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.54.0
 pkgrel=1
 pkgdesc='Affymetrix Spike-in Langmuir Isotherm Data Analysis Tool'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6e40137a9d111572e318cecc3f307aae1fc48ec28162d70c6aca6061abdabdd9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
