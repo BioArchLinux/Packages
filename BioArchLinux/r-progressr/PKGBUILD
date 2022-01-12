@@ -3,7 +3,7 @@
 _pkgname=progressr
 _pkgver=0.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.10.0
 pkgrel=1
 pkgdesc='An Inclusive, Unifying API for Progress Updates'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-tools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4c95dc11c50c792440fa17f4538d59f1f3012bf6ef462a5a141609f87319badc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
