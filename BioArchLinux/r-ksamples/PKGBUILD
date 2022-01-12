@@ -3,7 +3,7 @@
 _pkgname=kSamples
 _pkgver=1.2-9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.9
 pkgrel=1
 pkgdesc='K-Sample Rank Tests and their Combinations'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-suppdists
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ba3ec4af3dfcf7cf12f0b784ef67bfea565e16985647ead904629886cc1542ff')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
