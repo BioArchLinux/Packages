@@ -3,7 +3,7 @@
 _pkgname=ISOcodes
 _pkgver=2022.01.10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2022.01.10
 pkgrel=1
 pkgdesc='Selected ISO Codes'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b25ddec624b46f5630c29267bdf4a749cfb9d001ef029fb9ca84dafe56b1c73f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
