@@ -3,7 +3,7 @@
 _pkgname=gss
 _pkgver=2.2-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.3
 pkgrel=1
 pkgdesc='General Smoothing Splines'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('24306401cf4e5869f8a690eca7e17c044ece83edd66969bd2daf5976272d244b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
