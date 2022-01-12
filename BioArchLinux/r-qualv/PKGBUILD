@@ -3,7 +3,7 @@
 _pkgname=qualV
 _pkgver=0.3-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.4
 pkgrel=1
 pkgdesc='Qualitative Validation Methods'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ab10da9f4b330364951ea000aaa35f2b4a7ca0945586615869a80428d4fe7266')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
