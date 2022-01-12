@@ -3,7 +3,7 @@
 _pkgname=ibh
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Interaction Based Homogeneity for Evaluating Gene Lists'
 arch=('any')
@@ -18,7 +18,7 @@ optdepends=(
   r-yeastcc
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('88ed90a94a3cc78b9342098f57554151f4c480c4f74fce1e4865caaa39c33fc0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
