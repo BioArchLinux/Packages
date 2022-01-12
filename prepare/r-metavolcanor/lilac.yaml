@@ -15,6 +15,6 @@ repo_depends:
 - r-topconfects
 - r-htmlwidgets
 update_on:
-- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/MetaVolcanoR

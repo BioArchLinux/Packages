@@ -3,6 +3,6 @@ maintainers:
 - github: starsareintherose
   email: starsareintherose@outlook.com
 update_on:
-- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/RNASeqPower
