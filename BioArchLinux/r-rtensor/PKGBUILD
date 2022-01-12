@@ -3,7 +3,7 @@
 _pkgname=rTensor
 _pkgver=1.4.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.8
 pkgrel=1
 pkgdesc='Tools for Tensor Analysis and Decomposition'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0e7d193996fc3ed9db98bdf1e1127c081aec7073530af6cad344401d15cf44cf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
