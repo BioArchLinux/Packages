@@ -4,7 +4,7 @@
 _pkgname=gitcreds
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="Query 'git' Credentials from 'R'"
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b14aaf4e910a9d2d6c65c93e645f0b0159c00898e669f917f83c03dfedb1dfea')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
