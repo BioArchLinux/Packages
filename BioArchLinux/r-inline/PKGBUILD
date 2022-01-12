@@ -3,7 +3,7 @@
 _pkgname=inline
 _pkgver=0.3.19
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.19
 pkgrel=1
 pkgdesc='Functions to Inline C, C++, Fortran Function Calls from R'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0ee9309bb7dab0b97761ddd18381aa12bd7d54678ccd7bec00784e831f4c99d5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
