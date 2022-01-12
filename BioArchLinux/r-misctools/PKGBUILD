@@ -3,7 +3,7 @@
 _pkgname=miscTools
 _pkgver=0.6-26
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.26
 pkgrel=1
 pkgdesc='Miscellaneous Tools and Utilities'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-ecdat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('be3c5a63ca12ce7ce4d43767a1815cd3dcf32664728ade251cfb03ea6f77fc9a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
