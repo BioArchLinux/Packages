@@ -3,7 +3,7 @@
 _pkgname=here
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='A Simpler Way to Find Your Files'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('08ed908033420d3d665c87248b3a14d1b6e2b37844bf736be620578c20ca346b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
