@@ -4,7 +4,7 @@
 _pkgname=Rmpfr
 _pkgver=0.8-7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.8.7
 pkgrel=1
 pkgdesc='R MPFR - Multiple Precision Floating-Point Reliable'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-sfsmisc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('93c2db785ff705dcfc6fa7f0373c2426cdc2ef72ceb5b294edeb2952775f57d2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
