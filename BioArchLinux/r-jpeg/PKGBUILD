@@ -4,7 +4,7 @@
 _pkgname=jpeg
 _pkgver=0.1-9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.9
 pkgrel=1
 pkgdesc='Read and write JPEG images'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('01a175442ec209b838a56a66a3908193aca6f040d537da7838d9368e46913072')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
