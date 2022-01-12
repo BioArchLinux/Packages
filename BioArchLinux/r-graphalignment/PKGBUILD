@@ -3,7 +3,7 @@
 _pkgname=GraphAlignment
 _pkgver=1.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.58.0
 pkgrel=1
 pkgdesc='GraphAlignment'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b390e5de9cc79f1117ca71439f3318f51705701618a58d8d3cecfe7c2237687c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
