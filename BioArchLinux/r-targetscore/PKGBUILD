@@ -3,7 +3,7 @@
 _pkgname=TargetScore
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='TargetScore: Infer microRNA targets using microRNA-overexpression data and sequence information'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-targetscoredata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fe8cd35b9f548b532cac064faf7a24f5bea4fb98b2d3e36620058d187405d097')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
