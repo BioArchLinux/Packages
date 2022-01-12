@@ -3,7 +3,7 @@
 _pkgname=tximport
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Import and summarize transcript-level estimates for transcript- and gene-level analysis'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-tximportdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e4a16b53ac6a0d0c37645e3f16dd60fdefee7576ebe73bec75842299f4c9d770')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
