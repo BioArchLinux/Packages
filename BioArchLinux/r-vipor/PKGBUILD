@@ -3,7 +3,7 @@
 _pkgname=vipor
 _pkgver=0.4.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.5
 pkgrel=1
 pkgdesc='Plot Categorical Data Using Quasirandom Noise and Density Estimates'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-vioplot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7d19251ac37639d6a0fed2d30f1af4e578785677df5e53dcdb2a22771a604f84')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
