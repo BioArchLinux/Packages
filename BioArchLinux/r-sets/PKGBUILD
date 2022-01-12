@@ -3,7 +3,7 @@
 _pkgname=sets
 _pkgver=1.0-20
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.20
 pkgrel=1
 pkgdesc='Sets, Generalized Sets, Customizable Sets and Intervals'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-proxy
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('234b724d40afcabc57eaf42dd34c6cb846e26803796e7fc80c00d26047c475d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
