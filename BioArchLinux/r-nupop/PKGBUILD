@@ -3,7 +3,7 @@
 _pkgname=NuPoP
 _pkgver=2.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.0
 pkgrel=1
 pkgdesc='An R package for nucleosome positioning prediction'
 arch=('x86_64')
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4f8d0c5e5fc8916ec99a356472acea1d8cee920e6bdcd16652171d7cc01a59e7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
