@@ -3,7 +3,7 @@
 _pkgname=evd
 _pkgver=2.3-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.3.3
 pkgrel=1
 pkgdesc='Functions for Extreme Value Distributions'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-akima
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2fc5ef2e0c3a2a9392425ddd45914445497433d90fb80b8c363877baee4559b4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
