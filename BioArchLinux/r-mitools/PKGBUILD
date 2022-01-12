@@ -3,7 +3,7 @@
 _pkgname=mitools
 _pkgver=2.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.4
 pkgrel=1
 pkgdesc='Tools for Multiple Imputation of Missing Data'
 arch=('any')
@@ -18,7 +18,7 @@ optdepends=(
   r-rodbc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f204f3774e29d79810f579f128de892539518f2cbe6ed237e08c8e7283155d30')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
