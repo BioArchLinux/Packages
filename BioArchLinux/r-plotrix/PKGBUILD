@@ -3,7 +3,7 @@
 _pkgname=plotrix
 _pkgver=3.8-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.8.2
 pkgrel=1
 pkgdesc='Various Plotting Functions'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bb72953102889cea41cd6521874e35d2458ebd10aab97ba6f262e102cac0bc1f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
