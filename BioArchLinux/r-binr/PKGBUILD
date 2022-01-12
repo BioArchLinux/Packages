@@ -3,7 +3,7 @@
 _pkgname=binr
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1
 pkgrel=1
 pkgdesc='Cut Numeric Values into Evenly Distributed Groups'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('191cf56bf7d8fe8a318a0894f5b9e412266f8088abb004e785b9ade37f48f34d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
