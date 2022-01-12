@@ -3,7 +3,7 @@
 _pkgname=chopsticks
 _pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.60.0
 pkgrel=1
 pkgdesc="The 'snp.matrix' and 'X.snp.matrix' Classes"
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-hexbin
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8743b8755c20e91ee7a921ded3e09dba0219d14e206900646690fad1f19c6923')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
