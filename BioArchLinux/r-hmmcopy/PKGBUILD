@@ -3,7 +3,7 @@
 _pkgname=HMMcopy
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='Copy number prediction with correction for GC and mappability bias for HTS data'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-data.table
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b173c885d4db74a193b409cc5a3e6b313a095962cb475c5401fee7bcb76e7b4d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
