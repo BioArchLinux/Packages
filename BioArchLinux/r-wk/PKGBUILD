@@ -4,7 +4,7 @@
 _pkgname=wk
 _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.0
 pkgrel=1
 pkgdesc='Lightweight Well-Known Geometry Parsing'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('af2c2837056a6dcc9f64d5ace29601d6d668c95769f855ca0329648d7326eaf5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
