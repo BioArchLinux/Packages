@@ -3,7 +3,7 @@
 _pkgname=Deriv
 _pkgver=4.1.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.1.3
 pkgrel=1
 pkgdesc='Symbolic Differentiation'
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('dbdbf5ed8babf706373ae33a937d013c46110a490aa821bcd158a70f761d0f8c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
