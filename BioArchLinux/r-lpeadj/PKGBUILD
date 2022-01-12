@@ -3,7 +3,7 @@
 _pkgname=LPEadj
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.54.0
 pkgrel=1
 pkgdesc='A correction of the local pooled error (LPE) method to replace the asymptotic variance adjustment with an unbiased adjustment based on sample size.'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-lpe
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0649f449e01879b38f32ff6defe549ba545e501912d5da0be0a03cc9160abe15')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
