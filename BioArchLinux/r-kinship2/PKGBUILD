@@ -3,7 +3,7 @@
 _pkgname=kinship2
 _pkgver=1.8.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.5
 pkgrel=1
 pkgdesc='Pedigree Functions'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-knitr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('72c226b6ccad9efcc70c86050a980fef2e8bb8040bbfe02cb105075a005a16d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
