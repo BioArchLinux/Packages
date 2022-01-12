@@ -3,7 +3,7 @@
 _pkgname=pspline
 _pkgver=1.0-18
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.18
 pkgrel=1
 pkgdesc='Penalized Smoothing Splines'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f71cf293bd5462e510ac5ad16c4a96eda18891a0bfa6447dd881c65845e19ac7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
