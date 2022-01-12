@@ -3,7 +3,7 @@
 _pkgname=qlcMatrix
 _pkgver=0.9.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.7
 pkgrel=1
 pkgdesc='Utility Sparse Matrix Functions for Quantitative Language Comparison'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-mass
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1ef5e0350cfbdb07fca761fc7251584d39d3da2958ea813498b467e4f7661347')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
