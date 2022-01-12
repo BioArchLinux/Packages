@@ -3,7 +3,7 @@
 _pkgname=rpart.plot
 _pkgver=3.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.1.0
 pkgrel=1
 pkgdesc="Plot 'rpart' Models: An Enhanced Version of 'plot.rpart'"
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   r-earth
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2aaba0c0cabbc17aca9085248b0ad74ee7ff2b8f729e020e84b3917de174c15e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
