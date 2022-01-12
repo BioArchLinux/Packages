@@ -3,7 +3,7 @@
 _pkgname=emdist
 _pkgver=0.3-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.1
 pkgrel=1
 pkgdesc="Earth Mover's Distance"
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('389f886db3604789d867e8ed61d36c4961373f24965ec484036ddaf4d3ba24fc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
