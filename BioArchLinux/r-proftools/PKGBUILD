@@ -3,7 +3,7 @@
 _pkgname=proftools
 _pkgver=0.99-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.99.3
 pkgrel=1
 pkgdesc='Profile Output Processing Tools for R'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-rgraphviz
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e034eb1531af54013143da3e15229e1d4c2260f8eb79c93846014db3bdefb724')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
