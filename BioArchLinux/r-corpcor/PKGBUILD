@@ -3,7 +3,7 @@
 _pkgname=corpcor
 _pkgver=1.6.10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.10
 pkgrel=1
 pkgdesc='Efficient Estimation of Covariance and (Partial) Correlation'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('71a04c503c93ec95ddde09abe8c7ddeb36175b7da76365a14b27066383e10e09')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
