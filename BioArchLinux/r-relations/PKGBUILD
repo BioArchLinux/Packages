@@ -3,7 +3,7 @@
 _pkgname=relations
 _pkgver=0.6-10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.10
 pkgrel=1
 pkgdesc='Data Structures and Algorithms for Relations'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-seriation
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b660b0a06c276bf119808e7f516fd8bc190f77cf6b557dd927937fb696d5068e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
