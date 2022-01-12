@@ -3,7 +3,7 @@
 _pkgname=future
 _pkgver=1.23.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.23.0
 pkgrel=1
 pkgdesc='Unified Parallel and Distributed Processing in R for Everyone'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-rhpcblasctl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d869c80e837c0937a414b8050deff081aefeac586b796f3d634d64f0f4fdb8f8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
