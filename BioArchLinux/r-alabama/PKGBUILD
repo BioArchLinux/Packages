@@ -3,7 +3,7 @@
 _pkgname=alabama
 _pkgver=2015.3-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2015.3.1
 pkgrel=1
 pkgdesc='Constrained Nonlinear Optimization'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-numderiv
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6600fcf4842488950e196d3f5a8fc4d69e8271b36292ce67ac3ab697449a8f56')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
