@@ -3,7 +3,7 @@
 _pkgname=lars
 _pkgver=1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2
 pkgrel=1
 pkgdesc='Least Angle Regression, Lasso and Forward Stagewise'
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('64745b568f20b2cfdae3dad02fba92ebf78ffee466a71aaaafd4f48c3921922e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
