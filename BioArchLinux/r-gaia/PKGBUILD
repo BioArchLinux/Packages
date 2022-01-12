@@ -3,7 +3,7 @@
 _pkgname=gaia
 _pkgver=2.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.38.0
 pkgrel=1
 pkgdesc='GAIA: An R package for genomic analysis of significant chromosomal aberrations.'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9e5b69a3a95713ba84f03c3df5f7eccf13b243d3dade45d9623f5799fc46a34f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
