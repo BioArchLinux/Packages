@@ -3,7 +3,7 @@
 _pkgname=dotCall64
 _pkgver=1.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='Enhanced Foreign Function Interface Supporting Long Vectors'
 arch=('x86_64')
@@ -24,7 +24,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f10b28fcffb9453b1d8888a72c8fd2112038b5ac33e02a481492c7bd249aa5c6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
