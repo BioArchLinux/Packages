@@ -3,7 +3,7 @@
 _pkgname=MatrixModels
 _pkgver=0.5-0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.5.0
 pkgrel=1
 pkgdesc='Modelling with Sparse and Dense Matrices'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a87faf1a185219f79ea2307e6787d293e1d30bf3af9398e8cfe1e079978946ed')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
