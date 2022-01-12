@@ -3,7 +3,7 @@
 _pkgname=weaver
 _pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.60.0
 pkgrel=1
 pkgdesc='Tools and extensions for processing Sweave documents'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-codetools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e7418218891047d206f5821b7ff07e9bc183a5799d6ccb2385aa7d4246c69e08')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
