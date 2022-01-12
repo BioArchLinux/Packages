@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-illuminahumanmethylation450kmanifest
+- r-matrixstats
+- r-minfi
+- r-rcolorbrewer
+- r-shiny
+update_on:
+- regex: shinyMethyl_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/shinyMethyl

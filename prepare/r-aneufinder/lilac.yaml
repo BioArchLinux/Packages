@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aneufinderdata
+- r-bamsignals
+- r-biocgenerics
+- r-biostrings
+- r-cowplot
+- r-dnacopy
+- r-doparallel
+- r-ecp
+- r-foreach
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggdendro
+- r-ggplot2
+- r-ggrepel
+- r-iranges
+- r-mclust
+- r-reordercluster
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: AneuFinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/AneuFinder

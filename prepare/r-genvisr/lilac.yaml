@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biomart
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-dbi
+- r-ffield
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-gtable
+- r-gtools
+- r-iranges
+- r-plyr
+- r-reshape2
+- r-rsamtools
+- r-scales
+- r-variantannotation
+- r-viridis
+update_on:
+- regex: GenVisR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GenVisR

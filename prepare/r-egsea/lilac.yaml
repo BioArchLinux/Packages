@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-dt
+- r-edger
+- r-egseadata
+- r-gage
+- r-ggplot2
+- r-globaltest
+- r-gplots
+- r-gsva
+- r-htmlutils
+- r-htmlwidgets
+- r-hwriter
+- r-limma
+- r-metap
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-org.rn.eg.db
+- r-padog
+- r-pathview
+- r-plotly
+- r-rcolorbrewer
+- r-safe
+- r-stringi
+- r-topgo
+update_on:
+- regex: EGSEA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EGSEA

@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-category
+- r-ctc
+- r-dplyr
+- r-energy
+- r-entropy
+- r-glmnet
+- r-gostats
+- r-gplots
+- r-hmisc
+- r-httr
+- r-impute
+- r-invariantcausalprediction
+- r-limma
+- r-org.hs.eg.db
+- r-pcalg
+- r-rcurl
+- r-stringr
+- r-summarizedexperiment
+- r-tcgabiolinks
+update_on:
+- regex: miRLAB_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/miRLAB

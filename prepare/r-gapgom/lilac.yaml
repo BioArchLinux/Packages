@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocfilecache
+- r-data.table
+- r-dplyr
+- r-fastmatch
+- r-geoquery
+- r-go.db
+- r-gosemsim
+- r-graph
+- r-igraph
+- r-magrittr
+- r-matrixstats
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-plyr
+- r-rbgl
+update_on:
+- regex: GAPGOM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GAPGOM

@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-dqrng
+- r-ggplot2
+- r-glmnet
+- r-gplots
+- r-gtools
+- r-hash
+- r-igraph
+- r-matrixstats
+- r-pvclust
+- r-r.utils
+- r-summarizedexperiment
+- r-vbsr
+update_on:
+- regex: TraRe_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TraRe

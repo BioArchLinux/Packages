@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-emt
+- r-ggplot2
+- r-gridextra
+- r-matching
+- r-mclust
+update_on:
+- regex: pathVar_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/pathVar

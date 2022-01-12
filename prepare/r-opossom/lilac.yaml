@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biobase
+- r-biomart
+- r-fastica
+- r-fdrtool
+- r-graph
+- r-igraph
+- r-pixmap
+- r-png
+- r-rcpp
+- r-rcppparallel
+- r-rcurl
+- r-scatterplot3d
+- r-tsne
+- r-xml
+update_on:
+- regex: oposSOM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/oposSOM

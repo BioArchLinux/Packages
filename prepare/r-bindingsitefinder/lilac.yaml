@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-genomicranges
+- r-ggforce
+- r-ggplot2
+- r-matrixstats
+- r-rtracklayer
+- r-s4vectors
+- r-tidyr
+update_on:
+- regex: BindingSiteFinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BindingSiteFinder

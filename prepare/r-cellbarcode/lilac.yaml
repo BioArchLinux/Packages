@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-ckmeans.1d.dp
+- r-data.table
+- r-egg
+- r-ggplot2
+- r-magrittr
+- r-plyr
+- r-rcpp
+- r-s4vectors
+- r-shortread
+- r-stringr
+update_on:
+- regex: CellBarcode_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CellBarcode

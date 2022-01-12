@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-ggplot2
+- r-hexbin
+- r-igraph
+- r-matrixstats
+- r-plyr
+- r-reshape
+- r-runit
+update_on:
+- regex: pandaR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/pandaR

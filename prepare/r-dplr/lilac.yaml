@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-matrixstats
+- r-plyr
+- r-png
+- r-r.utils
+- r-signal
+- r-stringi
+- r-stringr
+- r-xml
+update_on:
+- regex: dplR_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=dplR

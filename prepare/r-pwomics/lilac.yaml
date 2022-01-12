@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biobase
+- r-biocgenerics
+- r-biomart
+- r-data.table
+- r-genomicranges
+- r-gplots
+- r-graph
+- r-igraph
+- r-rbiopaxparser
+- r-stringdb
+update_on:
+- regex: pwOmics_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/pwOmics

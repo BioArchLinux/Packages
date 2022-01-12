@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-basilisk
+- r-biocgenerics
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-reticulate
+- r-s4vectors
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-zellkonverter
+update_on:
+- regex: velociraptor_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/velociraptor

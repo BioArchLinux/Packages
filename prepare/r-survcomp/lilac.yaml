@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bootstrap
+- r-ipred
+- r-prodlim
+- r-rmeta
+- r-suppdists
+- r-survivalroc
+update_on:
+- regex: survcomp_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/survcomp

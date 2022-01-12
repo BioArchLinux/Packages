@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+- r-structstrings
+- r-trna
+- r-xvector
+update_on:
+- regex: tRNAscanImport_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tRNAscanImport

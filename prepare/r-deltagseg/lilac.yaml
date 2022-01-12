@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-changepoint
+- r-fbasics
+- r-ggplot2
+- r-pvclust
+- r-reshape
+- r-scales
+- r-tseries
+- r-wavethresh
+update_on:
+- regex: deltaGseg_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/deltaGseg

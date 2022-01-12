@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-htmltools
+- r-jquerylib
+- r-knitr
+- r-rmarkdown
+- r-tinytex
+- r-xfun
+- r-yaml
+update_on:
+- regex: bookdown_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=bookdown

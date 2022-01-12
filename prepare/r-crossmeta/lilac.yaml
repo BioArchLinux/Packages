@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affxparser
+- r-affy
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-biocmanager
+- r-data.table
+- r-dbi
+- r-deseq2
+- r-dt
+- r-edger
+- r-fdrtool
+- r-geoquery
+- r-limma
+- r-matrixstats
+- r-metama
+- r-miniui
+- r-oligo
+- r-rcolorbrewer
+- r-rcurl
+- r-reader
+- r-readxl
+- r-rsqlite
+- r-shiny
+- r-shinybs
+- r-shinyjs
+- r-shinypanel
+- r-shinywidgets
+- r-statmod
+- r-stringr
+- r-summarizedexperiment
+- r-sva
+- r-tibble
+- r-xml
+update_on:
+- regex: crossmeta_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/crossmeta

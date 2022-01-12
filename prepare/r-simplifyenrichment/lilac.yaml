@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-circlize
+- r-clue
+- r-complexheatmap
+- r-digest
+- r-getoptlong
+- r-go.db
+- r-gosemsim
+- r-org.hs.eg.db
+- r-proxyc
+- r-slam
+- r-tm
+update_on:
+- regex: simplifyEnrichment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/simplifyEnrichment

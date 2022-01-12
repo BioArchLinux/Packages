@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affxparser
+- r-dbi
+- r-glad
+- r-italicsdata
+- r-oligo
+- r-oligoclasses
+- r-pd.mapping50k.xba240
+update_on:
+- regex: ITALICS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ITALICS

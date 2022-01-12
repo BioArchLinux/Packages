@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationforge
+- r-biomart
+- r-data.table
+- r-dendextend
+- r-diagrammer
+- r-dt
+- r-dynamictreecut
+- r-fgsea
+- r-ggplot2
+- r-go.db
+- r-gosemsim
+- r-heatmaply
+- r-htmlwidgets
+- r-igraph
+- r-plotly
+- r-processx
+- r-r.utils
+- r-rcolorbrewer
+- r-scales
+- r-topgo
+- r-upsetr
+update_on:
+- regex: ViSEAGO_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ViSEAGO

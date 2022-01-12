@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-circlize
+- r-complexheatmap
+- r-data.table
+- r-deseq2
+- r-edger
+- r-openxlsx
+- r-randomcolor
+- r-s4vectors
+- r-seriation
+- r-summarizedexperiment
+- r-sva
+update_on:
+- regex: SEtools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SEtools

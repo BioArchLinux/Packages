@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biostrings
+- r-coin
+- r-dplyr
+- r-dtplyr
+- r-foreach
+- r-ggplot2
+- r-ggrepel
+- r-ggsignif
+- r-ggstar
+- r-ggtree
+- r-ggtreeextra
+- r-magrittr
+- r-patchwork
+- r-pillar
+- r-rlang
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-tidytree
+- r-treeio
+- r-vegan
+- r-zoo
+update_on:
+- regex: MicrobiotaProcess_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MicrobiotaProcess

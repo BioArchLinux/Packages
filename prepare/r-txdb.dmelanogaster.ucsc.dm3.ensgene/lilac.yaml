@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-genomicfeatures
+update_on:
+- regex: TxDb.Dmelanogaster.UCSC.dm3.ensGene_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TxDb.Dmelanogaster.UCSC.dm3.ensGene

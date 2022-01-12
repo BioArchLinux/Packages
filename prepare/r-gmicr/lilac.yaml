@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-ape
+- r-bnlearn
+- r-category
+- r-data.table
+- r-doparallel
+- r-dt
+- r-foreach
+- r-gostats
+- r-grain
+- r-grbase
+- r-gseabase
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-reshape2
+- r-shiny
+- r-wgcna
+update_on:
+- regex: GmicR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GmicR

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocmanager
+- r-biocviews
+- r-graph
+- r-httr
+- r-knitr
+- r-optparse
+- r-stringdist
+update_on:
+- regex: BiocCheck_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BiocCheck

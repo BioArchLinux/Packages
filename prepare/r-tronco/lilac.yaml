@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bnlearn
+- r-cgdsr
+- r-circlize
+- r-doparallel
+- r-foreach
+- r-gridextra
+- r-gtable
+- r-gtools
+- r-igraph
+- r-iterators
+- r-r.matlab
+- r-rcolorbrewer
+- r-rgraphviz
+- r-scales
+- r-xtable
+update_on:
+- regex: TRONCO_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TRONCO

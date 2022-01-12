@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-coda
+- r-data.table
+- r-dplyr
+- r-formula
+- r-ggplot2
+- r-mcmcpack
+- r-modeest
+- r-plyr
+- r-pracma
+- r-rcpp
+- r-rcpparmadillo
+- r-reshape
+- r-rlang
+- r-scales
+- r-testthat
+- r-tidyr
+update_on:
+- regex: MIMOSA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MIMOSA

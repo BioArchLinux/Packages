@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-basilisk
+- r-corrplot
+- r-cowplot
+- r-delayedarray
+- r-dplyr
+- r-forcats
+- r-ggplot2
+- r-ggrepel
+- r-hdf5array
+- r-magrittr
+- r-pheatmap
+- r-rcolorbrewer
+- r-reshape2
+- r-reticulate
+- r-rhdf5
+- r-rtsne
+- r-stringi
+- r-tidyr
+- r-uwot
+update_on:
+- regex: MOFA2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MOFA2

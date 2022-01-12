@@ -1,0 +1,59 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.hsapiens.ucsc.hg38
+- r-bsgenome.mmusculus.ucsc.mm10
+- r-bsgenome.mmusculus.ucsc.mm9
+- r-complexheatmap
+- r-cowplot
+- r-data.table
+- r-decomptumor2sig
+- r-deconstructsigs
+- r-dplyr
+- r-factoextra
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-gtools
+- r-iranges
+- r-maftools
+- r-magrittr
+- r-matrixtests
+- r-mcmcprecision
+- r-nmf
+- r-philentropy
+- r-plotly
+- r-rlang
+- r-s4vectors
+- r-shiny
+- r-shinyalert
+- r-shinybs
+- r-shinybusy
+- r-shinydashboard
+- r-shinyjqui
+- r-shinyjs
+- r-sortable
+- r-stringi
+- r-stringr
+- r-summarizedexperiment
+- r-tcgabiolinks
+- r-tibble
+- r-tidyr
+- r-topicmodels
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+- r-uwot
+- r-variantannotation
+- r-withr
+update_on:
+- regex: musicatk_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/musicatk

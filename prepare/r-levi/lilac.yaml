@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-colorspace
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-httr
+- r-igraph
+- r-knitr
+- r-rcolorbrewer
+- r-rcpp
+- r-reshape2
+- r-rmarkdown
+- r-shiny
+- r-shinydashboard
+- r-shinyjs
+- r-testthat
+- r-xml2
+update_on:
+- regex: levi_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/levi

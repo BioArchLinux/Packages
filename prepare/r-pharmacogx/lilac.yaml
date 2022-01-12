@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-catools
+- r-checkmate
+- r-coregx
+- r-data.table
+- r-downloader
+- r-ggplot2
+- r-glue
+- r-jsonlite
+- r-magicaxis
+- r-multiassayexperiment
+- r-rcolorbrewer
+- r-reshape2
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: PharmacoGx_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PharmacoGx

@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-circlize
+- r-complexheatmap
+- r-corrplot
+- r-dendextend
+- r-doparallel
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-getoptlong
+- r-ggbeeswarm
+- r-ggplot2
+- r-gridextra
+- r-gtrellis
+- r-keggrest
+- r-limsolve
+- r-magrittr
+- r-pmcmrplus
+- r-pracma
+- r-reshape2
+- r-somaticsignatures
+- r-variantannotation
+update_on:
+- regex: YAPSA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/YAPSA

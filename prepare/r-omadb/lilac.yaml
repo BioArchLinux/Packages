@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biostrings
+- r-genomicranges
+- r-httr
+- r-iranges
+- r-jsonlite
+- r-plyr
+- r-topgo
+update_on:
+- regex: OmaDB_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/OmaDB

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-coda
+- r-colorspace
+- r-formula
+- r-mba
+- r-mvtnorm
+- r-sp
+update_on:
+- regex: bamlss_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=bamlss

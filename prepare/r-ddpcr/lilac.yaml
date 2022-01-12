@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-lazyeval
+- r-magrittr
+- r-mixtools
+- r-plyr
+- r-readr
+- r-shiny
+- r-shinyjs
+- r-tibble
+update_on:
+- regex: ddpcr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ddpcr

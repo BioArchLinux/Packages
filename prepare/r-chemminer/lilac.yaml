@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-base64enc
+- r-bh
+- r-biocgenerics
+- r-dbi
+- r-digest
+- r-dt
+- r-ggplot2
+- r-gridextra
+- r-jsonlite
+- r-png
+- r-rcpp
+- r-rcurl
+- r-rjson
+- r-rsvg
+- r-stringi
+update_on:
+- regex: ChemmineR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChemmineR

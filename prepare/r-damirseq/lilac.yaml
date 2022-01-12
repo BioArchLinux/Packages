@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-arm
+- r-caret
+- r-corrplot
+- r-deseq2
+- r-e1071
+- r-edaseq
+- r-edger
+- r-factominer
+- r-fselector
+- r-ggplot2
+- r-hmisc
+- r-ineq
+- r-kknn
+- r-limma
+- r-lubridate
+- r-pheatmap
+- r-pls
+- r-plsvarsel
+- r-plyr
+- r-randomforest
+- r-rcolorbrewer
+- r-reshape2
+- r-rsnns
+- r-summarizedexperiment
+- r-sva
+update_on:
+- regex: DaMiRseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DaMiRseq

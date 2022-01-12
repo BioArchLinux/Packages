@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ballgown
+- r-biostrings
+- r-clusterprofiler
+- r-corrplot
+- r-deseq2
+- r-dose
+- r-edger
+- r-factoextra
+- r-factominer
+- r-ggplot2
+- r-gridextra
+- r-org.hs.eg.db
+- r-org.sc.sgd.db
+- r-pathview
+- r-performanceanalytics
+- r-pheatmap
+- r-rafalib
+- r-reshape2
+- r-reticulate
+- r-rsamtools
+- r-stringr
+- r-systempiper
+- r-systempiperdata
+update_on:
+- regex: RNASeqR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RNASeqR

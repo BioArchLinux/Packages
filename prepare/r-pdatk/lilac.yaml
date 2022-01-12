@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-caret
+- r-clusterrepro
+- r-consensusclusterplus
+- r-coregx
+- r-data.table
+- r-dplyr
+- r-genefu
+- r-ggplot2
+- r-ggplotify
+- r-igraph
+- r-matrixgenerics
+- r-matrixstats
+- r-multiassayexperiment
+- r-piano
+- r-plyr
+- r-proc
+- r-rcolorbrewer
+- r-reportroc
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-survcomp
+- r-survminer
+- r-switchbox
+- r-verification
+update_on:
+- regex: PDATK_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PDATK

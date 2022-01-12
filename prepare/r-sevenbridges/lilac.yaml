@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-curl
+- r-data.table
+- r-docopt
+- r-httr
+- r-jsonlite
+- r-objectproperties
+- r-s4vectors
+- r-stringr
+- r-uuid
+- r-yaml
+update_on:
+- regex: sevenbridges_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sevenbridges

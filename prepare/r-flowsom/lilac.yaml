@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-colorramps
+- r-consensusclusterplus
+- r-cytoml
+- r-dplyr
+- r-flowcore
+- r-flowworkspace
+- r-ggforce
+- r-ggnewscale
+- r-ggplot2
+- r-ggpointdensity
+- r-ggpubr
+- r-ggrepel
+- r-igraph
+- r-magrittr
+- r-pheatmap
+- r-rcolorbrewer
+- r-rlang
+- r-rtsne
+- r-scattermore
+- r-tidyr
+- r-xml
+update_on:
+- regex: FlowSOM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/FlowSOM

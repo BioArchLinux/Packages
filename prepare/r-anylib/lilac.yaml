@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocmanager
+- r-curl
+- r-devtools
+- r-httr
+- r-withr
+update_on:
+- regex: anyLib_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=anyLib

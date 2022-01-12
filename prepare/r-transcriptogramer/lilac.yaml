@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-data.table
+- r-dosnow
+- r-foreach
+- r-ggplot2
+- r-igraph
+- r-limma
+- r-progress
+- r-reder
+- r-snow
+- r-tidyr
+- r-topgo
+update_on:
+- regex: transcriptogramer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/transcriptogramer

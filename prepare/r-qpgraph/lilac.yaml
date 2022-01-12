@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-biobase
+- r-biocparallel
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-graph
+- r-iranges
+- r-mvtnorm
+- r-qtl
+- r-rgraphviz
+- r-s4vectors
+update_on:
+- regex: qpgraph_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/qpgraph

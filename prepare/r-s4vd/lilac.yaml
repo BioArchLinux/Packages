@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biclust
+- r-foreach
+- r-irlba
+update_on:
+- regex: s4vd_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=s4vd

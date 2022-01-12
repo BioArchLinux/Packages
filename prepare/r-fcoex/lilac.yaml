@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clusterprofiler
+- r-data.table
+- r-dplyr
+- r-fcbf
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-intergraph
+- r-network
+- r-pathwaypca
+- r-progress
+- r-scales
+- r-singlecellexperiment
+- r-sna
+- r-stringr
+update_on:
+- regex: fcoex_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/fcoex

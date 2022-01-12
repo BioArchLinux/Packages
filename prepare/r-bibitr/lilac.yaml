@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biclust
+- r-dendextend
+- r-randomcolor
+- r-viridis
+update_on:
+- regex: BiBitR_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=BiBitR

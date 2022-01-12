@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-cowplot
+- r-dplyr
+- r-ggplot2
+- r-igraph
+- r-magrittr
+- r-yulab.utils
+update_on:
+- regex: seqcombo_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/seqcombo

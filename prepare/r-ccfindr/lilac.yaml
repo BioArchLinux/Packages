@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-gtools
+- r-irlba
+- r-rcolorbrewer
+- r-rcpp
+- r-rcppeigen
+- r-rdpack
+- r-rmpi
+- r-rtsne
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: ccfindR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ccfindR

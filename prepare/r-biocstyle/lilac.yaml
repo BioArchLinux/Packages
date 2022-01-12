@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocmanager
+- r-bookdown
+- r-knitr
+- r-rmarkdown
+- r-yaml
+update_on:
+- regex: BiocStyle_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BiocStyle

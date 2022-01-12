@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-htmltools
+- r-htmlwidgets
+- r-jsonlite
+- r-miniui
+- r-shiny
+- r-shinyjs
+update_on:
+- regex: colourpicker_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=colourpicker

@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-optparse
+- r-roxygen2
+- r-xml
+update_on:
+- regex: RGalaxy_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RGalaxy

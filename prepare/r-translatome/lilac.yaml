@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-anota
+- r-biobase
+- r-deseq2
+- r-edger
+- r-gosemsim
+- r-gplots
+- r-heatplus
+- r-limma
+- r-org.hs.eg.db
+- r-plotrix
+- r-rankprod
+- r-sigpathway
+- r-topgo
+update_on:
+- regex: tRanslatome_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tRanslatome

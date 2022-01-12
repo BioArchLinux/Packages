@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biostrings
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-s4vectors
+- r-seqlogo
+- r-stringi
+update_on:
+- regex: scanMiR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scanMiR

@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-crayon
+- r-digest
+- r-evaluate
+- r-irdisplay
+- r-jsonlite
+- r-pbdzmq
+- r-repr
+- r-uuid
+update_on:
+- regex: IRkernel_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=IRkernel

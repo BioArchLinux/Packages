@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-caret
+- r-chipseq
+- r-e1071
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-proc
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: transcriptR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/transcriptR

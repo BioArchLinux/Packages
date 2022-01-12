@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-quantmod
+- r-rlang
+- r-rsamtools
+- r-stringr
+update_on:
+- regex: cfDNAPro_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cfDNAPro

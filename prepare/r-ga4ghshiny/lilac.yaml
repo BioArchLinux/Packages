@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-dplyr
+- r-dt
+- r-ga4ghclient
+- r-genomeinfodb
+- r-genomicfeatures
+- r-openxlsx
+- r-purrr
+- r-s4vectors
+- r-shiny
+- r-shinyjs
+- r-shinythemes
+- r-tidyr
+update_on:
+- regex: GA4GHshiny_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GA4GHshiny

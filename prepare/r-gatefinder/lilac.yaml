@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-diptest
+- r-flowcore
+- r-flowfp
+- r-mvoutlier
+- r-splancs
+update_on:
+- regex: GateFinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GateFinder

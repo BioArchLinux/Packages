@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-httr
+- r-igraph
+- r-jsonlite
+- r-plyr
+- r-r.utils
+- r-rappdirs
+- r-readr
+- r-rjava
+- r-rjson
+- r-xml
+update_on:
+- regex: paxtoolsr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/paxtoolsr

@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-dnacopy
+- r-edger
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-gplots
+- r-gsmoothr
+- r-iranges
+- r-ringo
+- r-rsamtools
+- r-rsolnp
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: Repitools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Repitools

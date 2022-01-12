@@ -1,0 +1,48 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bumphunter
+- r-champdata
+- r-combinat
+- r-dendextend
+- r-dmrcate
+- r-dnacopy
+- r-doparallel
+- r-dt
+- r-genomicranges
+- r-ggplot2
+- r-globaltest
+- r-goseq
+- r-hmisc
+- r-illumina450probevariants.db
+- r-illuminahumanmethylation450kmanifest
+- r-illuminahumanmethylationepicanno.ilm10b4.hg19
+- r-illuminahumanmethylationepicmanifest
+- r-illuminaio
+- r-impute
+- r-isva
+- r-kpmt
+- r-limma
+- r-marray
+- r-matrixstats
+- r-minfi
+- r-missmethyl
+- r-plotly
+- r-plyr
+- r-preprocesscore
+- r-prettydoc
+- r-quadprog
+- r-qvalue
+- r-rcolorbrewer
+- r-rmarkdown
+- r-rpmm
+- r-shiny
+- r-shinythemes
+- r-sva
+- r-watermelon
+update_on:
+- regex: ChAMP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChAMP

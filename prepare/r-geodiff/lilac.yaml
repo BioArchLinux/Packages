@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-geomxtools
+- r-lme4
+- r-nanostringnctools
+- r-plyr
+- r-rcpp
+- r-rcpparmadillo
+- r-robust
+- r-roptim
+- r-testthat
+- r-withr
+update_on:
+- regex: GeoDiff_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GeoDiff

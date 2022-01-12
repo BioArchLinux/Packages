@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biovizbase
+- r-broom
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-hexbin
+- r-iranges
+- r-rcolorbrewer
+- r-rmarkdown
+- r-rsamtools
+- r-s4vectors
+- r-scales
+- r-viridis
+update_on:
+- regex: ChIPexoQual_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChIPexoQual

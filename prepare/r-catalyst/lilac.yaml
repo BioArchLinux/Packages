@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-consensusclusterplus
+- r-cowplot
+- r-data.table
+- r-dplyr
+- r-drc
+- r-flowcore
+- r-flowsom
+- r-ggplot2
+- r-ggrepel
+- r-ggridges
+- r-gridextra
+- r-magrittr
+- r-matrixstats
+- r-nnls
+- r-purrr
+- r-rcolorbrewer
+- r-reshape2
+- r-rtsne
+- r-s4vectors
+- r-scales
+- r-scater
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: CATALYST_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CATALYST

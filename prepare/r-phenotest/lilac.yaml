@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-biobase
+- r-biomart
+- r-bma
+- r-category
+- r-ellipse
+- r-genefilter
+- r-ggplot2
+- r-gplots
+- r-gseabase
+- r-heatplus
+- r-hgu133a.db
+- r-hmisc
+- r-hopach
+- r-limma
+- r-xtable
+update_on:
+- regex: phenoTest_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/phenoTest

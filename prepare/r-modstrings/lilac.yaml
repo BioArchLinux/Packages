@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-crayon
+- r-genomicranges
+- r-iranges
+- r-s4vectors
+- r-stringi
+- r-stringr
+- r-xvector
+update_on:
+- regex: Modstrings_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Modstrings

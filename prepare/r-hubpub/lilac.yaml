@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-available
+- r-aws.s3
+- r-biocmanager
+- r-biocthis
+- r-dplyr
+- r-fs
+- r-usethis
+update_on:
+- regex: HubPub_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/HubPub

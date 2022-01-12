@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bumphunter
+- r-cowplot
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-limma
+- r-plyr
+- r-readr
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: DAMEfinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DAMEfinder

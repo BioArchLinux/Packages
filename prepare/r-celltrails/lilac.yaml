@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-cba
+- r-dendextend
+- r-dtw
+- r-envstats
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-maptree
+- r-reshape2
+- r-rtsne
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: CellTrails_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CellTrails

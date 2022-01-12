@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-extrafont
+- r-ggplot2
+- r-gridextra
+- r-gtable
+- r-rcolorbrewer
+update_on:
+- regex: waffle_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=waffle

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-category
+- r-deseq2
+- r-edger
+- r-ggbio
+- r-ggplot2
+- r-gostats
+- r-gseabase
+- r-hwriter
+- r-iranges
+- r-knitr
+- r-limma
+- r-pfam.db
+- r-r.utils
+- r-xml
+update_on:
+- regex: ReportingTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ReportingTools

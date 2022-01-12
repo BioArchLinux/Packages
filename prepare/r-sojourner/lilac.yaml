@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ebimage
+- r-fitdistrplus
+- r-ggplot2
+- r-gridextra
+- r-mclust
+- r-minpack.lm
+- r-mixtools
+- r-mltools
+- r-nls2
+- r-pixmap
+- r-plyr
+- r-r.matlab
+- r-rcpp
+- r-reshape2
+- r-rlang
+- r-sampsurf
+- r-scales
+- r-shiny
+- r-shinyjs
+- r-sp
+- r-truncnorm
+update_on:
+- regex: sojourner_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sojourner

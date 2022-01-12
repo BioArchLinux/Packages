@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beachmat
+- r-biocgenerics
+- r-biocneighbors
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-delayedmatrixstats
+- r-igraph
+- r-rcpp
+- r-residualmatrix
+- r-s4vectors
+- r-scaledmatrix
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: batchelor_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/batchelor

@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clvalid
+- r-corrplot
+- r-cowplot
+- r-data.table
+- r-factoextra
+- r-factominer
+- r-fpc
+- r-genomeinfodb
+- r-ggplot2
+- r-helloranges
+- r-iranges
+- r-kableextra
+- r-magick
+- r-multiassayexperiment
+- r-nbclust
+- r-omicspcadata
+- r-pdftools
+- r-performanceanalytics
+- r-reshape2
+- r-rgl
+- r-rmarkdown
+- r-rtracklayer
+- r-tidyr
+update_on:
+- regex: OMICsPCA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/OMICsPCA

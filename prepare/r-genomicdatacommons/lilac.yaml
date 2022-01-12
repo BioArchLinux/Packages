@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-genomicranges
+- r-httr
+- r-iranges
+- r-jsonlite
+- r-magrittr
+- r-rappdirs
+- r-readr
+- r-rlang
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-xml2
+update_on:
+- regex: GenomicDataCommons_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GenomicDataCommons

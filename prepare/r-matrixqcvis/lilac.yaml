@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-complexheatmap
+- r-dplyr
+- r-ggplot2
+- r-hmisc
+- r-htmlwidgets
+- r-impute
+- r-imputelcmd
+- r-limma
+- r-openxlsx
+- r-pcamethods
+- r-plotly
+- r-proda
+- r-rlang
+- r-rmarkdown
+- r-rtsne
+- r-s4vectors
+- r-shiny
+- r-shinydashboard
+- r-shinyhelper
+- r-shinyjs
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-umap
+- r-upsetr
+- r-vegan
+- r-vsn
+update_on:
+- regex: MatrixQCvis_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MatrixQCvis

@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aldex2
+- r-biocparallel
+- r-corncob
+- r-cowplot
+- r-deseq2
+- r-edger
+- r-ffpe
+- r-ggdendro
+- r-ggplot2
+- r-limma
+- r-mast
+- r-metagenomeseq
+- r-mglm
+- r-phyloseq
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-seurat
+- r-summarizedexperiment
+- r-zinbwave
+update_on:
+- regex: benchdamic_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/benchdamic

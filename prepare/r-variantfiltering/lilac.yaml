@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-dt
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-genomicscores
+- r-graph
+- r-gviz
+- r-iranges
+- r-rbgl
+- r-rsamtools
+- r-s4vectors
+- r-shiny
+- r-shinyjs
+- r-shinythemes
+- r-shinytree
+- r-summarizedexperiment
+- r-variantannotation
+- r-xvector
+update_on:
+- regex: VariantFiltering_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/VariantFiltering

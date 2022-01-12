@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biocfilecache
+- r-biostrings
+- r-dbi
+- r-genomicranges
+- r-gviz
+- r-iranges
+- r-rcy3
+- r-rsqlite
+- r-s4vectors
+update_on:
+- regex: regutools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/regutools

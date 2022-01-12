@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beanplot
+- r-corrplot
+- r-glmnet
+- r-gridbase
+- r-gridextra
+- r-infotheo
+- r-liblinear
+- r-matrixstats
+- r-mlr
+- r-paramhelpers
+- r-phyloseq
+- r-proc
+- r-progress
+- r-prroc
+- r-rcolorbrewer
+- r-scales
+- r-stringr
+update_on:
+- regex: SIAMCAT_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SIAMCAT

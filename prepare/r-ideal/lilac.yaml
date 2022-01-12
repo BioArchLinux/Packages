@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-base64enc
+- r-biocparallel
+- r-deseq2
+- r-dplyr
+- r-dt
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-go.db
+- r-goseq
+- r-gostats
+- r-gplots
+- r-heatmaply
+- r-ihw
+- r-iranges
+- r-knitr
+- r-limma
+- r-pcaexplorer
+- r-pheatmap
+- r-plotly
+- r-rentrez
+- r-rintrojs
+- r-rlang
+- r-rmarkdown
+- r-s4vectors
+- r-shiny
+- r-shinyace
+- r-shinybs
+- r-shinydashboard
+- r-stringr
+- r-summarizedexperiment
+- r-topgo
+- r-upsetr
+update_on:
+- regex: ideal_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ideal

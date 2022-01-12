@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-complexheatmap
+- r-deseq2
+- r-dynamictreecut
+- r-genie3
+- r-ggnetwork
+- r-ggnewscale
+- r-ggplot2
+- r-ggpubr
+- r-igraph
+- r-intergraph
+- r-matrixstats
+- r-minet
+- r-netrep
+- r-networkd3
+- r-rcolorbrewer
+- r-reshape2
+- r-summarizedexperiment
+- r-sva
+- r-wgcna
+update_on:
+- regex: BioNERO_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BioNERO

@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beanplot
+- r-dosnow
+- r-dplyr
+- r-fnn
+- r-foreach
+- r-ggplot2
+- r-gmodels
+- r-gplots
+- r-matrixstats
+- r-mixomics
+- r-moments
+- r-rcpp
+- r-rcppeigen
+- r-reshape2
+- r-robustbase
+- r-viridis
+update_on:
+- regex: DepecheR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DepecheR

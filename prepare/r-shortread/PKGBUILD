@@ -1,0 +1,48 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=ShortRead
+_pkgver=1.52.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='FASTQ input and manipulation'
+arch=('x86_64')
+url="https://bioconductor.org/packages/${_pkgname}"
+license=('Artistic2.0')
+depends=(
+  r
+  r-biobase
+  r-biocgenerics
+  r-biocparallel
+  r-biostrings
+  r-genomeinfodb
+  r-genomicalignments
+  r-genomicranges
+  r-hwriter
+  r-iranges
+  r-latticeextra
+  r-rhtslib
+  r-rsamtools
+  r-s4vectors
+  r-xvector
+  r-zlibbioc
+)
+optdepends=(
+  r-biocstyle
+  r-biomart
+  r-genomicfeatures
+  r-runit
+  r-yeastnagalakshmi
+)
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

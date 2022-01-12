@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-dplyr
+- r-ggplot2
+- r-ggridges
+- r-gseabase
+- r-gsva
+- r-limma
+- r-msigdbr
+- r-singlecellexperiment
+update_on:
+- regex: escape_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/escape

@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocmanager
+- r-ccdata
+- r-data.table
+- r-doparallel
+- r-foreach
+- r-lsa
+- r-xgboost
+update_on:
+- regex: ccmap_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ccmap

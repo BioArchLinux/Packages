@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-capushe
+- r-edger
+- r-plotrix
+update_on:
+- regex: HTSCluster_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=HTSCluster

@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-diffusr
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-formula.tools
+- r-ggplot2
+- r-igraph
+- r-lazyeval
+- r-lme4
+- r-magrittr
+- r-rlang
+- r-scales
+- r-tibble
+- r-tidyr
+update_on:
+- regex: perturbatr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/perturbatr

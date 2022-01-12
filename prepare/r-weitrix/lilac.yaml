@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biocgenerics
+- r-biocparallel
+- r-ckmeans.1d.dp
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dplyr
+- r-ggplot2
+- r-glm2
+- r-limma
+- r-purrr
+- r-reshape2
+- r-rhpcblasctl
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-topconfects
+update_on:
+- regex: weitrix_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/weitrix

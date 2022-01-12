@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-genomicranges
+- r-ggplot2
+- r-magrittr
+- r-summarizedexperiment
+update_on:
+- regex: iteremoval_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/iteremoval

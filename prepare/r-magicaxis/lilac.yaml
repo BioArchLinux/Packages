@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-celestial
+- r-mapproj
+- r-plotrix
+- r-rann
+- r-rcolorbrewer
+- r-sm
+update_on:
+- regex: magicaxis_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=magicaxis

@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-a4base
+- r-a4classif
+- r-a4core
+- r-a4preproc
+- r-a4reporting
+update_on:
+- regex: a4_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/a4

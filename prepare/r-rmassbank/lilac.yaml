@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biobase
+- r-digest
+- r-envipat
+- r-httr
+- r-logger
+- r-msnbase
+- r-mzr
+- r-rcdk
+- r-rcpp
+- r-rcurl
+- r-rjson
+- r-s4vectors
+- r-xml
+- r-yaml
+update_on:
+- regex: RMassBank_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RMassBank

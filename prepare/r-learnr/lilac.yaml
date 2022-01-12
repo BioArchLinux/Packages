@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-ellipsis
+- r-evaluate
+- r-htmltools
+- r-htmlwidgets
+- r-jsonlite
+- r-knitr
+- r-markdown
+- r-rappdirs
+- r-renv
+- r-rmarkdown
+- r-rprojroot
+- r-shiny
+- r-withr
+update_on:
+- regex: learnr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=learnr

@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-data.table
+- r-edger
+- r-futile.logger
+- r-ggdendro
+- r-ggplot2
+- r-go.db
+- r-gostats
+- r-graph
+- r-gseabase
+- r-ismev
+- r-jsonlite
+- r-limma
+- r-matrixstats
+- r-org.hs.eg.db
+- r-rbgl
+- r-reshape2
+- r-rgraphviz
+- r-vegan
+update_on:
+- regex: MIGSA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MIGSA

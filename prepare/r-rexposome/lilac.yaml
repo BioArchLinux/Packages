@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-circlize
+- r-corrplot
+- r-factominer
+- r-ggplot2
+- r-ggrepel
+- r-glmnet
+- r-gplots
+- r-gridextra
+- r-gtools
+- r-hmisc
+- r-imputelcmd
+- r-lme4
+- r-lsr
+- r-mice
+- r-pryr
+- r-reshape2
+- r-s4vectors
+- r-scales
+- r-scatterplot3d
+- r-stringr
+update_on:
+- regex: rexposome_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rexposome

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-checkmate
+- r-data.table
+- r-deseq2
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-rcolorbrewer
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: SNPhood_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SNPhood

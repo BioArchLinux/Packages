@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-colorspace
+- r-data.table
+- r-digest
+- r-dplyr
+- r-ggforce
+- r-ggiraph
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-lpsolve
+- r-purrr
+- r-readr
+- r-rlang
+- r-shiny
+- r-shinycssloaders
+- r-shinyjs
+- r-shinywidgets
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-zeallot
+update_on:
+- regex: SpatialCPie_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SpatialCPie

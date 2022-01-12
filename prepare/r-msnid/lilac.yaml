@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biobase
+- r-biocgenerics
+- r-biocstyle
+- r-biostrings
+- r-data.table
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-ggplot2
+- r-iterators
+- r-msmstests
+- r-msnbase
+- r-mzid
+- r-mzr
+- r-protgenerics
+- r-purrr
+- r-r.cache
+- r-rcpp
+- r-reshape2
+- r-rlang
+- r-runit
+- r-stringr
+- r-tibble
+- r-xtable
+update_on:
+- regex: MSnID_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MSnID

@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biomart
+- r-brglm
+- r-cgdsr
+- r-data.table
+- r-dt
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-googlevis
+- r-httr
+- r-iranges
+- r-jsonlite
+- r-lowmacaannotation
+- r-magrittr
+- r-matrixstats
+- r-rcolorbrewer
+- r-reshape2
+- r-s4vectors
+- r-shiny
+- r-shinybs
+- r-stringr
+- r-xml
+update_on:
+- regex: PrecisionTrialDrawer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PrecisionTrialDrawer

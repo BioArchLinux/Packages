@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-doparallel
+- r-foreach
+- r-matchingr
+- r-nsga2r
+- r-proxy
+update_on:
+- regex: GSgalgoR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GSgalgoR

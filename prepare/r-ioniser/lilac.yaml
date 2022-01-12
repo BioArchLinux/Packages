@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bit64
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-rhdf5
+- r-shortread
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-xvector
+update_on:
+- regex: IONiseR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IONiseR

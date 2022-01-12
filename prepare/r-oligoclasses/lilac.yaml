@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affyio
+- r-biobase
+- r-biocgenerics
+- r-biocmanager
+- r-biostrings
+- r-dbi
+- r-ff
+- r-foreach
+- r-genomicranges
+- r-iranges
+- r-rsqlite
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: oligoClasses_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/oligoClasses

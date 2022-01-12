@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-bit64
+- r-data.table
+- r-dbi
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-mzr
+- r-phangorn
+- r-pracma
+- r-rcpp
+- r-rcppeigen
+- r-reticulate
+- r-rlang
+- r-rmsnumpress
+- r-rsqlite
+- r-signal
+- r-tidyr
+- r-zoo
+update_on:
+- regex: DIAlignR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DIAlignR

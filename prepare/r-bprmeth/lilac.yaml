@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biocstyle
+- r-cowplot
+- r-data.table
+- r-doparallel
+- r-e1071
+- r-earth
+- r-foreach
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-kernlab
+- r-magrittr
+- r-matrixcalc
+- r-mvtnorm
+- r-randomforest
+- r-rcpp
+- r-rcpparmadillo
+- r-s4vectors
+- r-truncnorm
+update_on:
+- regex: BPRMeth_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BPRMeth

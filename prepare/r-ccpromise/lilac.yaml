@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-ccp
+- r-gseabase
+- r-promise
+update_on:
+- regex: CCPROMISE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CCPROMISE

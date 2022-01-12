@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-dplyr
+- r-ggplot2
+- r-ggpubr
+- r-hiccompare
+- r-magrittr
+- r-primme
+- r-rcolorbrewer
+- r-reshape2
+- r-tidyr
+update_on:
+- regex: TADCompare_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TADCompare

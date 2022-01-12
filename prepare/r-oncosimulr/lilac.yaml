@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-car
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-ggrepel
+- r-graph
+- r-gtools
+- r-igraph
+- r-rcolorbrewer
+- r-rcpp
+- r-rgraphviz
+- r-smatr
+- r-stringr
+update_on:
+- regex: OncoSimulR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/OncoSimulR

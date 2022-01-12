@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-plyr
+- r-rcpp
+- r-stringr
+update_on:
+- regex: reshape2_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=reshape2

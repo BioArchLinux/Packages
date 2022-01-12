@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-caret
+- r-deldir
+- r-digest
+- r-distances
+- r-dplyr
+- r-filelock
+- r-furrr
+- r-ggplot2
+- r-purrr
+- r-r.utils
+- r-ranger
+- r-readr
+- r-rlang
+- r-rlist
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-withr
+update_on:
+- regex: mistyR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mistyR

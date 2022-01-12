@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-dt
+- r-genomeinfodb
+- r-genomeinfodbdata
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-gsubfn
+- r-mirbase.db
+- r-moments
+- r-organism.dplyr
+- r-s4vectors
+- r-shiny
+- r-shinydashboard
+- r-shinyfiles
+- r-shinyjs
+- r-sushi
+- r-yaml
+update_on:
+- regex: Ularcirc_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Ularcirc

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-doparallel
+- r-factominer
+- r-foreach
+- r-ggplot2
+- r-mice
+- r-mvtnorm
+update_on:
+- regex: missMDA_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=missMDA

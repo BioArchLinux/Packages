@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-car
+- r-colorspace
+- r-data.table
+- r-e1071
+- r-laeken
+- r-magrittr
+- r-ranger
+- r-rcpp
+- r-robustbase
+- r-sp
+- r-vcd
+update_on:
+- regex: VIM_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=VIM

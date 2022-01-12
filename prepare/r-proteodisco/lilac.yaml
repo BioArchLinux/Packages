@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-checkmate
+- r-cleaver
+- r-dplyr
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-parallellogger
+- r-plyr
+- r-rlang
+- r-s4vectors
+- r-tibble
+- r-tidyr
+- r-variantannotation
+- r-xvector
+update_on:
+- regex: ProteoDisco_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ProteoDisco

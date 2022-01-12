@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-cairo
+- r-chipseq
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-gmapr
+- r-hwriter
+- r-iranges
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-shortread
+- r-summarizedexperiment
+- r-variantannotation
+- r-varianttools
+update_on:
+- regex: HTSeqGenie_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/HTSeqGenie

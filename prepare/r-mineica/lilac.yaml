@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-biomart
+- r-colorspace
+- r-fastica
+- r-foreach
+- r-fpc
+- r-ggplot2
+- r-gostats
+- r-graph
+- r-gtools
+- r-hmisc
+- r-igraph
+- r-jade
+- r-lumi
+- r-lumihumanall.db
+- r-marray
+- r-mclust
+- r-plyr
+- r-rcolorbrewer
+- r-rgraphviz
+- r-scales
+- r-xtable
+update_on:
+- regex: MineICA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MineICA

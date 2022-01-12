@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-e1071
+- r-flexclust
+- r-ggplot2
+- r-graph
+- r-linnorm
+- r-matrixstats
+- r-naturalsort
+- r-rcpp
+- r-rcppeigen
+- r-rgraphviz
+- r-snowfall
+- r-tsne
+- r-wesanderson
+update_on:
+- regex: mnem_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mnem

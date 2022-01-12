@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-fgsea
+- r-forcats
+- r-ggplot2
+- r-imputelcmd
+- r-limma
+- r-magrittr
+- r-rlang
+- r-ropls
+- r-s4vectors
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: lipidr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/lipidr

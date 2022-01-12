@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-biobase
+- r-calibrate
+- r-edger
+- r-foreach
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-limma
+update_on:
+- regex: STATegRa_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/STATegRa

@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertive
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-crisprseek
+- r-data.table
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-karyoploter
+- r-magrittr
+- r-plyranges
+- r-rbowtie
+- r-reticulate
+- r-rtracklayer
+- r-stringi
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: multicrispr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/multicrispr

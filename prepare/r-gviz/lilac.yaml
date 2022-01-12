@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-biomart
+- r-biostrings
+- r-biovizbase
+- r-bsgenome
+- r-digest
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-latticeextra
+- r-matrixstats
+- r-rcolorbrewer
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-xvector
+update_on:
+- regex: Gviz_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Gviz

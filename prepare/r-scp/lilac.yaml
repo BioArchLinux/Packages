@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-magrittr
+- r-matrixstats
+- r-mscoreutils
+- r-multiassayexperiment
+- r-qfeatures
+- r-rlang
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: scp_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scp

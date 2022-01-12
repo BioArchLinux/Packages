@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beachmat
+- r-bh
+- r-biocgenerics
+- r-biocparallel
+- r-biocsingular
+- r-bluster
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dqrng
+- r-edger
+- r-igraph
+- r-limma
+- r-metapod
+- r-rcpp
+- r-s4vectors
+- r-scuttle
+- r-singlecellexperiment
+- r-statmod
+- r-summarizedexperiment
+update_on:
+- regex: scran_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scran

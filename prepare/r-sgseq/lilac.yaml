@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biostrings
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-igraph
+- r-iranges
+- r-rsamtools
+- r-rtracklayer
+- r-runit
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: SGSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SGSeq

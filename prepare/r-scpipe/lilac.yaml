@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biomart
+- r-dplyr
+- r-genomicranges
+- r-ggally
+- r-ggplot2
+- r-glue
+- r-hash
+- r-magrittr
+- r-mclust
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-rcpp
+- r-reshape
+- r-rhtslib
+- r-rlang
+- r-robustbase
+- r-rtracklayer
+- r-s4vectors
+- r-scales
+- r-scater
+- r-singlecellexperiment
+- r-stringr
+- r-summarizedexperiment
+- r-testthat
+- r-zlibbioc
+update_on:
+- regex: scPipe_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scPipe

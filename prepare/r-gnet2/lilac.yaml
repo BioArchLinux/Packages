@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-diagrammer
+- r-dplyr
+- r-ggplot2
+- r-igraph
+- r-matrixstats
+- r-rcpp
+- r-reshape2
+- r-summarizedexperiment
+- r-xgboost
+update_on:
+- regex: GNET2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GNET2

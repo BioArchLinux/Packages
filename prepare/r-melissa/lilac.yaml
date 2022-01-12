@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biocstyle
+- r-bprmeth
+- r-cowplot
+- r-data.table
+- r-doparallel
+- r-foreach
+- r-genomicranges
+- r-ggplot2
+- r-magrittr
+- r-matrixcalc
+- r-mclust
+- r-mcmcpack
+- r-mvtnorm
+- r-rocr
+- r-truncnorm
+update_on:
+- regex: Melissa_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Melissa

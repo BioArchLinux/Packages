@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-glue
+- r-htmltools
+- r-knitr
+- r-magrittr
+- r-rmarkdown
+- r-rstudioapi
+- r-rvest
+- r-scales
+- r-stringr
+- r-svglite
+- r-viridislite
+- r-webshot
+- r-xml2
+update_on:
+- regex: kableExtra_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=kableExtra

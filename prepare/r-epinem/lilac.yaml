@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-boolnet
+- r-e1071
+- r-graph
+- r-gtools
+- r-igraph
+- r-latex2exp
+- r-latticeextra
+- r-minet
+- r-mnem
+- r-pcalg
+- r-rcolorbrewer
+update_on:
+- regex: epiNEM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/epiNEM

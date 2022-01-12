@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-magrittr
+- r-purrr
+- r-r6
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+update_on:
+- regex: metagene2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/metagene2

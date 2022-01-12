@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clusterprofiler
+- r-ggplot2
+- r-graph
+- r-igraph
+- r-kegggraph
+- r-magrittr
+- r-plyr
+- r-tidyr
+update_on:
+- regex: PFP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PFP

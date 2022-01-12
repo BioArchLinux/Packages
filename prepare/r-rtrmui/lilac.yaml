@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-motifdb
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-rtrm
+- r-shiny
+update_on:
+- regex: rTRMui_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rTRMui

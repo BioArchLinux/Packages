@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocfilecache
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-condformat
+- r-dt
+- r-ensdb.hsapiens.v75
+- r-ensdb.hsapiens.v86
+- r-genomicranges
+- r-gviz
+- r-homo.sapiens
+- r-markdown
+- r-openxlsx
+- r-org.hs.eg.db
+- r-organismdbi
+- r-processx
+- r-rappdirs
+- r-rlist
+- r-rsamtools
+- r-shiny
+- r-shinybs
+- r-shinycssloaders
+- r-shinyjs
+- r-shinywidgets
+- r-stringr
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+update_on:
+- regex: uncoverappLib_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/uncoverappLib

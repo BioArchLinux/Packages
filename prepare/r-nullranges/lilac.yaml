@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggridges
+- r-interactionset
+- r-iranges
+- r-ks
+- r-plyranges
+- r-progress
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-speedglm
+update_on:
+- regex: nullranges_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/nullranges

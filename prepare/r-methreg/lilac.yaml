@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-delayedarray
+- r-dplyr
+- r-genomicranges
+- r-ggplot2
+- r-ggpubr
+- r-iranges
+- r-plyr
+- r-progress
+- r-pscl
+- r-readr
+- r-rlang
+- r-s4vectors
+- r-sesamedata
+- r-sfsmisc
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: MethReg_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MethReg

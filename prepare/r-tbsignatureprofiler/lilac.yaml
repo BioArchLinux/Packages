@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assign
+- r-biocgenerics
+- r-biocparallel
+- r-complexheatmap
+- r-deseq2
+- r-dt
+- r-edger
+- r-gdata
+- r-ggplot2
+- r-gsva
+- r-magrittr
+- r-rcolorbrewer
+- r-reshape2
+- r-rlang
+- r-rocit
+- r-s4vectors
+- r-singscore
+- r-summarizedexperiment
+update_on:
+- regex: TBSignatureProfiler_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TBSignatureProfiler

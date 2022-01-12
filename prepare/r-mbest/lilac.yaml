@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-bigmemory
+- r-foreach
+- r-lme4
+- r-logging
+update_on:
+- regex: mbest_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=mbest

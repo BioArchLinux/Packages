@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-data.table
+- r-dplyr
+- r-ensemblvep
+- r-genomeinfodb
+- r-genomicranges
+- r-gmapr
+- r-iranges
+- r-magrittr
+- r-rsamtools
+- r-s4vectors
+- r-stringr
+- r-tidyr
+- r-variantannotation
+- r-varianttools
+update_on:
+- regex: MMAPPR2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MMAPPR2

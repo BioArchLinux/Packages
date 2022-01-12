@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-circlize
+- r-complexheatmap
+- r-dplyr
+- r-dt
+- r-fdrtool
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-imputelcmd
+- r-limma
+- r-msnbase
+- r-purrr
+- r-rcolorbrewer
+- r-readr
+- r-rmarkdown
+- r-shiny
+- r-shinydashboard
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-vsn
+update_on:
+- regex: DEP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DEP

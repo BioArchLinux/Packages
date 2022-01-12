@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-basictrendline
+- r-investr
+- r-minerva
+- r-psych
+- r-delayedarray
+- r-summarizedexperiment
+- r-phyloseq
+update_on:
+- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+  source: regex
+  url: https://bioconductor.org/packages/gramm4R

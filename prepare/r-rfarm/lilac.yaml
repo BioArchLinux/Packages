@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-data.table
+- r-httr
+- r-iranges
+- r-magick
+- r-rsvg
+- r-rvest
+- r-s4vectors
+- r-stringi
+- r-xml2
+update_on:
+- regex: rfaRm_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rfaRm

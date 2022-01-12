@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-brew
+- r-circlize
+- r-clue
+- r-complexheatmap
+- r-crayon
+- r-digest
+- r-doparallel
+- r-eulerr
+- r-foreach
+- r-getoptlong
+- r-globaloptions
+- r-httr
+- r-impute
+- r-irlba
+- r-knitr
+- r-markdown
+- r-matrixstats
+- r-mclust
+- r-microbenchmark
+- r-png
+- r-rcolorbrewer
+- r-rcpp
+- r-skmeans
+- r-xml2
+update_on:
+- regex: cola_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cola

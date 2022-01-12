@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-blme
+- r-complexheatmap
+- r-data.table
+- r-deseq2
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-glmmtmb
+- r-limma
+- r-lme4
+- r-lmertest
+- r-matrixstats
+- r-progress
+- r-purrr
+- r-s4vectors
+- r-scales
+- r-scater
+- r-sctransform
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-variancepartition
+- r-viridis
+update_on:
+- regex: muscat_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/muscat

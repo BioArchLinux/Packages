@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocparallel
+- r-data.table
+- r-deseq2
+- r-dplyr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-gplots
+- r-iranges
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-tibble
+update_on:
+- regex: proActiv_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/proActiv

@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dbi
+- r-dbplyr
+- r-dosnow
+- r-dplyr
+- r-fastcluster
+- r-foreach
+- r-ggplot2
+- r-jsonlite
+- r-magrittr
+- r-mzr
+- r-plyr
+- r-rcpp
+- r-reshape2
+- r-rsqlite
+- r-stringr
+- r-uuid
+update_on:
+- regex: msPurity_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/msPurity

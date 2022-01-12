@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-dplyr
+- r-fdrtool
+- r-ggplot2
+- r-proc
+- r-tibble
+- r-tidyr
+update_on:
+- regex: Rtpca_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Rtpca

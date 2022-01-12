@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-ggplot2
+- r-msnbase
+- r-mzr
+- r-protgenerics
+- r-s4vectors
+update_on:
+- regex: topdownr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/topdownr

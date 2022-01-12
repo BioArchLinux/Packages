@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-biocgenerics
+- r-biocparallel
+- r-clue
+- r-colorspace
+- r-data.table
+- r-diagram
+- r-dnacopy
+- r-exomecopy
+- r-genomicalignments
+- r-genomicfiles
+- r-genomicranges
+- r-ggplot2
+- r-gplots
+- r-gtools
+- r-iranges
+- r-rcpp
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-tsp
+update_on:
+- regex: contiBAIT_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/contiBAIT

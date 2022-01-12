@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-broom
+- r-dplyr
+- r-ggplot2
+- r-ggpubr
+- r-ggtext
+- r-gridextra
+- r-magrittr
+- r-maxstat
+- r-purrr
+- r-rlang
+- r-scales
+- r-survmisc
+- r-tibble
+- r-tidyr
+update_on:
+- regex: survminer_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=survminer

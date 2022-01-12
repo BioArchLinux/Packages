@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-doparallel
+- r-dplyr
+- r-ggalluvial
+- r-ggplot2
+- r-igraph
+- r-plyr
+- r-powertcr
+- r-reshape2
+- r-rlang
+- r-seuratobject
+- r-stringdist
+- r-stringr
+- r-summarizedexperiment
+- r-vegan
+update_on:
+- regex: scRepertoire_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scRepertoire

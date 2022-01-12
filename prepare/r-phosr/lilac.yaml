@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-circlize
+- r-dendextend
+- r-dplyr
+- r-e1071
+- r-ggally
+- r-ggdendro
+- r-ggplot2
+- r-ggpubr
+- r-ggtext
+- r-igraph
+- r-limma
+- r-network
+- r-pcamethods
+- r-pheatmap
+- r-preprocesscore
+- r-rcolorbrewer
+- r-reshape2
+- r-rlang
+- r-ruv
+- r-s4vectors
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: PhosR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PhosR

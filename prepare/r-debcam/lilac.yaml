@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-apcluster
+- r-biobase
+- r-biocparallel
+- r-corpcor
+- r-dmwr2
+- r-geometry
+- r-nmf
+- r-nnls
+- r-pcapp
+- r-rjava
+- r-summarizedexperiment
+update_on:
+- regex: debCAM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/debCAM

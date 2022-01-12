@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biostrings
+- r-copynumberplots
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-karyoploter
+- r-pracma
+- r-regioner
+- r-rsamtools
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: CNVfilteR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNVfilteR

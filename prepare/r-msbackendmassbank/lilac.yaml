@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-dbi
+- r-iranges
+- r-mscoreutils
+- r-protgenerics
+- r-s4vectors
+- r-spectra
+update_on:
+- regex: MsBackendMassbank_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MsBackendMassbank

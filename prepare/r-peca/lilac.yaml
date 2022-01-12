@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-aroma.affymetrix
+- r-aroma.core
+- r-genefilter
+- r-limma
+- r-preprocesscore
+- r-rots
+update_on:
+- regex: PECA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PECA

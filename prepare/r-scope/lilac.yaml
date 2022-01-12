@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-desctools
+- r-dnacopy
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-gplots
+- r-iranges
+- r-rcolorbrewer
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: SCOPE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SCOPE

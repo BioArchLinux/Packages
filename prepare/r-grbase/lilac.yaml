@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-graph
+- r-igraph
+- r-magrittr
+- r-rbgl
+- r-rcpp
+- r-rcpparmadillo
+- r-rcppeigen
+- r-rgraphviz
+update_on:
+- regex: gRbase_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=gRbase

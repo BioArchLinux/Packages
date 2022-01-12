@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-assertive.sets
+- r-biobase
+- r-biocgenerics
+- r-broom
+- r-cowplot
+- r-degreport
+- r-deseq2
+- r-discriminer
+- r-dplyr
+- r-genomicranges
+- r-ggally
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-gtools
+- r-iranges
+- r-limma
+- r-rcolorbrewer
+- r-readr
+- r-reshape
+- r-rlang
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: isomiRs_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/isomiRs

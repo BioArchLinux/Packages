@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-backports
+- r-bbmisc
+- r-brew
+- r-checkmate
+- r-data.table
+- r-dbi
+- r-digest
+- r-rsqlite
+- r-sendmailr
+- r-stringi
+update_on:
+- regex: BatchJobs_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=BatchJobs

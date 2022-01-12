@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-matrixstats
+- r-r.methodss3
+- r-r.oo
+- r-r.utils
+update_on:
+- regex: aroma.light_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/aroma.light

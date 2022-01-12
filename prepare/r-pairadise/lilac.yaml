@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-biocparallel
+- r-nloptr
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: PAIRADISE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PAIRADISE

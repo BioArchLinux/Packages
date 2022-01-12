@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocstyle
+- r-biovizbase
+- r-dplyr
+- r-e1071
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-gtable
+- r-gtools
+- r-iranges
+- r-limma
+- r-magrittr
+- r-plyr
+- r-rcolorbrewer
+- r-writexls
+update_on:
+- regex: BubbleTree_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BubbleTree

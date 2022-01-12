@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bitops
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-gplots
+- r-gridextra
+- r-iranges
+- r-png
+- r-s4vectors
+- r-som
+- r-stringr
+update_on:
+- regex: CINdex_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CINdex

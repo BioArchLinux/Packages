@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-data.table
+- r-ggplot2
+- r-ggrepel
+- r-gplots
+- r-limma
+- r-lme4
+- r-marray
+- r-msstatsconvert
+- r-preprocesscore
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- regex: MSstats_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MSstats

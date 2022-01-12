@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome.hsapiens.ucsc.hg38
+- r-data.table
+- r-peptides
+- r-randomforest
+- r-rcpp
+- r-rtracklayer
+- r-stringr
+- r-xfun
+update_on:
+- regex: ORFhunteR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ORFhunteR

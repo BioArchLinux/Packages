@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-biocparallel
+- r-data.table
+- r-fastmatch
+- r-ggplot2
+- r-gridextra
+- r-rcpp
+update_on:
+- regex: fgsea_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/fgsea

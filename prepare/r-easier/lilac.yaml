@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-arules
+- r-biocparallel
+- r-coin
+- r-deseq2
+- r-dorothea
+- r-dplyr
+- r-easierdata
+- r-ggplot2
+- r-ggrepel
+- r-matrixstats
+- r-progeny
+- r-quantiseqr
+- r-reshape2
+- r-rlang
+- r-rocr
+- r-rstatix
+update_on:
+- regex: easier_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/easier

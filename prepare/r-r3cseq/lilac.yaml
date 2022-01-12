@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-qvalue
+- r-rcolorbrewer
+- r-rsamtools
+- r-rtracklayer
+- r-sqldf
+- r-vgam
+update_on:
+- regex: r3Cseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/r3Cseq

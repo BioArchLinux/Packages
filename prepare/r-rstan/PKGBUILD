@@ -1,0 +1,52 @@
+# system requirements: GNU make, pandoc
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=rstan
+_pkgver=2.21.3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='R Interface to Stan'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-bh
+  r-ggplot2
+  r-gridextra
+  r-inline
+  r-loo
+  r-pkgbuild
+  r-rcpp
+  r-rcppeigen
+  r-rcppparallel
+  r-stanheaders
+)
+optdepends=(
+  r-bayesplot
+  r-bh
+  r-kernsmooth
+  r-knitr
+  r-matrix
+  r-parallel
+  r-rcppeigen
+  r-rmarkdown
+  r-rstantools
+  r-rstudioapi
+  r-runit
+  r-shinystan
+  r-v8
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

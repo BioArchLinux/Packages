@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-effsize
+- r-furrr
+- r-future
+- r-ggiraph
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-htmlwidgets
+- r-igraph
+- r-matrixstats
+- r-purrr
+- r-rdpack
+- r-stringi
+- r-stringr
+- r-visnetwork
+update_on:
+- regex: flowGraph_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/flowGraph

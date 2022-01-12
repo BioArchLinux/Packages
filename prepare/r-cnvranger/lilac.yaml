@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-data.table
+- r-edger
+- r-gdsarray
+- r-gdsfmt
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-limma
+- r-plyr
+- r-qqman
+- r-raggedexperiment
+- r-rappdirs
+- r-reshape2
+- r-s4vectors
+- r-snprelate
+- r-summarizedexperiment
+update_on:
+- regex: CNVRanger_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNVRanger

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-dplyr
+- r-genomicalignments
+- r-genomicranges
+- r-hiannotator
+- r-readxl
+- r-soniclength
+update_on:
+- regex: hiReadsProcessor_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/hiReadsProcessor

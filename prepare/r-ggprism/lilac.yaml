@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-ggplot2
+- r-glue
+- r-gtable
+- r-rlang
+- r-scales
+- r-tibble
+update_on:
+- regex: ggprism_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggprism

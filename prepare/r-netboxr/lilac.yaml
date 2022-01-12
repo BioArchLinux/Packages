@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clusterprofiler
+- r-data.table
+- r-dt
+- r-gplots
+- r-igraph
+- r-jsonlite
+- r-plyr
+- r-rcolorbrewer
+update_on:
+- regex: netboxr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/netboxr

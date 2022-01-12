@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-config
+- r-data.table
+- r-dplyr
+- r-dt
+- r-golem
+- r-gridextra
+- r-plot3d
+- r-plotly
+- r-plyr
+- r-pryr
+- r-rcolorbrewer
+- r-shiny
+- r-shinybs
+- r-shinyfiles
+- r-shinyjs
+- r-stringdist
+- r-stringr
+update_on:
+- regex: tripr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tripr

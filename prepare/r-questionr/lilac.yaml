@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-classint
+- r-highr
+- r-htmltools
+- r-labelled
+- r-miniui
+- r-rstudioapi
+- r-shiny
+- r-styler
+update_on:
+- regex: questionr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=questionr

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bgeedb
+- r-dynamictreecut
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-gsubfn
+- r-hash
+- r-igraph
+- r-knitr
+- r-linkcomm
+- r-mcl
+- r-plotrix
+- r-png
+- r-rcolorbrewer
+- r-reshape2
+- r-ritandata
+- r-sqldf
+- r-stringdb
+update_on:
+- regex: RITAN_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RITAN

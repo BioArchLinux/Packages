@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-genomicranges
+- r-ggplot2
+- r-gviz
+- r-iranges
+- r-isva
+- r-limma
+- r-matrixstats
+- r-minfi
+- r-missmethyl
+- r-multidataset
+- r-permute
+- r-s4vectors
+- r-smartsva
+- r-summarizedexperiment
+- r-vegan
+update_on:
+- regex: MEAL_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MEAL

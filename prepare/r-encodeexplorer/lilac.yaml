@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-jsonlite
+- r-rcurl
+- r-tidyr
+- r-data.table
+- r-dplyr
+- r-stringr
+- r-stringi
+- r-annotationhub
+- r-genomicranges
+- r-rtracklayer
+- r-s4vectors
+- r-genomeinfodb
+- r-encodeexplordata
+update_on:
+- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+  source: regex
+  url: https://bioconductor.org/packages/ENCODExplorer

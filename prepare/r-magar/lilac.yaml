@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-argparse
+- r-bigstatsr
+- r-crlmm
+- r-data.table
+- r-doparallel
+- r-ff
+- r-hdf5array
+- r-igraph
+- r-impute
+- r-jsonlite
+- r-plyr
+- r-reshape2
+- r-rjson
+- r-rnbeads
+- r-rnbeads.hg19
+- r-snpstats
+- r-upsetr
+update_on:
+- regex: MAGAR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MAGAR

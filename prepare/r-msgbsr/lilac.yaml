@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bsgenome
+- r-easyrnaseq
+- r-edger
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggbio
+- r-ggplot2
+- r-iranges
+- r-plyr
+- r-r.utils
+- r-rsamtools
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: msgbsR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/msgbsR

@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocfilecache
+- r-biocgenerics
+- r-biocmanager
+- r-biocversion
+- r-curl
+- r-dplyr
+- r-httr
+- r-interactivedisplaybase
+- r-rappdirs
+- r-rsqlite
+- r-s4vectors
+- r-yaml
+update_on:
+- regex: AnnotationHub_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/AnnotationHub

@@ -1,0 +1,41 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-bsplus
+- r-crayon
+- r-dplyr
+- r-drawer
+- r-dt
+- r-ggplot2
+- r-glue
+- r-htmltools
+- r-magrittr
+- r-openssl
+- r-plotly
+- r-r6
+- r-rlang
+- r-rsqlite
+- r-rstudioapi
+- r-shiny
+- r-shinyace
+- r-shinydashboard
+- r-shinydashboardplus
+- r-shinyfiles
+- r-shinyjqui
+- r-shinyjs
+- r-shinytoastr
+- r-shinywidgets
+- r-spscomps
+- r-spsutil
+- r-stringr
+- r-styler
+- r-tibble
+- r-vroom
+- r-yaml
+update_on:
+- regex: systemPipeShiny_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/systemPipeShiny

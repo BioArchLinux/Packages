@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-forcats
+- r-ggplot2
+- r-ggthemes
+- r-openxlsx
+- r-rcolorbrewer
+- r-rcy3
+- r-tibble
+update_on:
+- regex: fedup_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/fedup

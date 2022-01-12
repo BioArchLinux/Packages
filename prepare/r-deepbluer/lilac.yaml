@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-diffr
+- r-dplyr
+- r-filehash
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-r.utils
+- r-rcurl
+- r-rjson
+- r-rtracklayer
+- r-settings
+- r-stringr
+- r-withr
+- r-xml
+update_on:
+- regex: DeepBlueR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DeepBlueR

@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-bookdown
+- r-httr
+- r-igraph
+- r-keggrest
+- r-knitr
+- r-pathview
+- r-rdpack
+- r-rmarkdown
+- r-rsvg
+- r-sbgnview.data
+- r-summarizedexperiment
+- r-xml2
+update_on:
+- regex: SBGNview_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SBGNview

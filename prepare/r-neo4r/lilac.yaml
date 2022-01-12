@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-attempt
+- r-data.table
+- r-glue
+- r-httr
+- r-igraph
+- r-jsonlite
+- r-magrittr
+- r-purrr
+- r-r6
+- r-rlang
+- r-rstudioapi
+- r-shiny
+- r-tibble
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: neo4r_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=neo4r

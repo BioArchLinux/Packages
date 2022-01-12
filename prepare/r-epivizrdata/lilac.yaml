@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-ensembldb
+- r-epivizrserver
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-organismdbi
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: epivizrData_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/epivizrData

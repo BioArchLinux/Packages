@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-dplyr
+- r-ggcorrplot
+- r-ggplot2
+- r-ggraph
+- r-glue
+- r-igraph
+- r-maftools
+- r-networkd3
+- r-purrr
+- r-relations
+- r-tidyr
+- r-visnetwork
+update_on:
+- regex: CIMICE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CIMICE

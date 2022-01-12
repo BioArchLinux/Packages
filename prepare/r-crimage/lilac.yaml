@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-acgh
+- r-dnacopy
+- r-e1071
+- r-ebimage
+- r-foreach
+- r-sgeostat
+update_on:
+- regex: CRImage_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CRImage

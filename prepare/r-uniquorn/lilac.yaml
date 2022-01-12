@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-doparallel
+- r-foreach
+- r-genomicranges
+- r-iranges
+- r-r.utils
+- r-stringr
+- r-variantannotation
+- r-writexls
+update_on:
+- regex: Uniquorn_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Uniquorn

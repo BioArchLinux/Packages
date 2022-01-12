@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-limma
+- r-reshape2
+- r-rocr
+- r-scales
+- r-shiny
+- r-shinybs
+- r-shinydashboard
+- r-upsetr
+update_on:
+- regex: iCOBRA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/iCOBRA

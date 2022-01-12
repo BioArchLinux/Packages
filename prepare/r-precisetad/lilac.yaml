@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-dbscan
+- r-dosnow
+- r-e1071
+- r-foreach
+- r-genomicranges
+- r-gtools
+- r-iranges
+- r-modelmetrics
+- r-pbapply
+- r-proc
+- r-prroc
+- r-randomforest
+- r-rcgh
+- r-s4vectors
+update_on:
+- regex: preciseTAD_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/preciseTAD

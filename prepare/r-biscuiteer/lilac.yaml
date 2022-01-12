@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biscuiteerdata
+- r-bsseq
+- r-data.table
+- r-delayedmatrixstats
+- r-dmrseq
+- r-genomeinfodb
+- r-genomicranges
+- r-gtools
+- r-hdf5array
+- r-homo.sapiens
+- r-impute
+- r-matrixstats
+- r-mus.musculus
+- r-qdnaseq
+- r-qualv
+- r-r.utils
+- r-readr
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: biscuiteer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/biscuiteer

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-rcpp
+- r-rlang
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: marr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/marr

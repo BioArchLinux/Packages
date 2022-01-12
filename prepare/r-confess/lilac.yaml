@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-changepoint
+- r-contrast
+- r-data.table
+- r-ebimage
+- r-ecp
+- r-flexmix
+- r-flowclust
+- r-flowcore
+- r-flowmeans
+- r-flowmerge
+- r-flowpeaks
+- r-foreach
+- r-ggplot2
+- r-limma
+- r-moments
+- r-outliers
+- r-plotrix
+- r-raster
+- r-readbitmap
+- r-reshape2
+- r-samspectral
+- r-waveslim
+- r-wavethresh
+- r-zoo
+update_on:
+- regex: CONFESS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CONFESS

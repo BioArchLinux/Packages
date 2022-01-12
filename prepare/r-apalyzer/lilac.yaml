@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-deseq2
+- r-dplyr
+- r-ensembldb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-repmis
+- r-rsamtools
+- r-rsubread
+- r-rtracklayer
+- r-summarizedexperiment
+- r-tidyr
+- r-variantannotation
+update_on:
+- regex: APAlyzer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/APAlyzer

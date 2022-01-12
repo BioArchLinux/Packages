@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocfilecache
+- r-dplyr
+- r-dt
+- r-gseabase
+- r-httr
+- r-magrittr
+- r-miniui
+- r-org.hs.eg.db
+- r-readxl
+- r-rjson
+- r-rsamtools
+- r-shiny
+update_on:
+- regex: TFutils_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TFutils

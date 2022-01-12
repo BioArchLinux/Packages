@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-calibrate
+- r-corrgram
+- r-drc
+- r-dt
+- r-ggplot2
+- r-gridextra
+- r-httr
+- r-jsonlite
+- r-limma
+- r-matrixstats
+- r-prodlim
+- r-readxl
+- r-reshape2
+- r-shiny
+- r-shinydashboard
+- r-stringr
+- r-vsn
+update_on:
+- regex: Doscheda_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Doscheda

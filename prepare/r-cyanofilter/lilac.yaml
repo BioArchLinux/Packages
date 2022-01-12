@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-cytometree
+- r-flowclust
+- r-flowcore
+- r-flowdensity
+- r-ggally
+- r-ggplot2
+- r-mrfdepth
+update_on:
+- regex: cyanoFilter_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cyanoFilter

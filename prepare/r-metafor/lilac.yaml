@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-mathjaxr
+- r-pbapply
+update_on:
+- regex: metafor_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=metafor

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-gplots
+- r-rcolorbrewer
+- r-reshape2
+- r-rhdf5
+- r-shiny
+- r-sp
+update_on:
+- regex: GSCA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GSCA

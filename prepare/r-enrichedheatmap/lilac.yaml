@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-genomicranges
+- r-getoptlong
+- r-iranges
+- r-locfit
+- r-matrixstats
+- r-rcpp
+update_on:
+- regex: EnrichedHeatmap_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EnrichedHeatmap

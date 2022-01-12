@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-curl
+- r-data.table
+- r-dplyr
+- r-ggplotify
+- r-plyranges
+- r-purrr
+- r-rcolorbrewer
+- r-rcpp
+- r-rlang
+- r-strawr
+update_on:
+- regex: plotgardener_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/plotgardener

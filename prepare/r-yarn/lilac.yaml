@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biomart
+- r-downloader
+- r-edger
+- r-gplots
+- r-limma
+- r-matrixstats
+- r-preprocesscore
+- r-quantro
+- r-rcolorbrewer
+- r-readr
+update_on:
+- regex: yarn_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/yarn

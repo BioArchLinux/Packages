@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-bsgenome
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-formula.tools
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-gtools
+- r-iranges
+- r-memoise
+- r-multiassayexperiment
+- r-plyr
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-som
+- r-stringdist
+- r-stringi
+- r-summarizedexperiment
+- r-vegan
+- r-vgam
+update_on:
+- regex: CAGEr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CAGEr

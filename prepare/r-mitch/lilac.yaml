@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beeswarm
+- r-echarts4r
+- r-ggally
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-knitr
+- r-plyr
+- r-reshape2
+- r-rmarkdown
+update_on:
+- regex: mitch_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mitch

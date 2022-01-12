@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-dbi
+- r-edger
+- r-gcrma
+- r-ggplot2
+- r-glimma
+- r-gostats
+- r-gplots
+- r-hwriter
+- r-limma
+- r-oligoclasses
+- r-reportingtools
+- r-rsqlite
+- r-s4vectors
+- r-xtable
+update_on:
+- regex: affycoretools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/affycoretools

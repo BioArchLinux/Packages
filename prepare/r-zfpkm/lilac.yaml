@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-dplyr
+- r-ggplot2
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: zFPKM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/zFPKM

@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-corpcor
+- r-genefilter
+- r-gplots
+- r-graphite
+- r-gseabase
+- r-svd
+update_on:
+- regex: mogsa_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mogsa

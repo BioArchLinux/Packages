@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-annotationforge
+- r-biobase
+- r-category
+- r-go.db
+- r-graph
+- r-rbgl
+- r-rgraphviz
+update_on:
+- regex: GOstats_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GOstats

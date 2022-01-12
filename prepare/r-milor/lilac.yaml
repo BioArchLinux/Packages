@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocneighbors
+- r-biocparallel
+- r-biocsingular
+- r-cowplot
+- r-dplyr
+- r-edger
+- r-ggbeeswarm
+- r-ggplot2
+- r-ggraph
+- r-ggrepel
+- r-gtools
+- r-igraph
+- r-irlba
+- r-limma
+- r-matrixstats
+- r-patchwork
+- r-rcolorbrewer
+- r-s4vectors
+- r-singlecellexperiment
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: miloR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/miloR

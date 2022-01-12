@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-iranges
+- r-massspecwavelet
+- r-mscoreutils
+- r-msfeatures
+- r-msnbase
+- r-mzr
+- r-plyr
+- r-protgenerics
+- r-rann
+- r-rcolorbrewer
+- r-robustbase
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: xcms_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/xcms

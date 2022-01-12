@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-genomicranges
+- r-iranges
+- r-multtest
+- r-rfast
+- r-s4vectors
+- r-summarizedexperiment
+- r-zcompositions
+update_on:
+- regex: ALDEx2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ALDEx2

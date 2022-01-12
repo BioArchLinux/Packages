@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-htmlwidgets
+- r-jsonlite
+- r-promises
+- r-shiny
+- r-stringr
+update_on:
+- regex: shinyTree_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=shinyTree

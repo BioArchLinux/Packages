@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bbmisc
+- r-biobase
+- r-complexheatmap
+- r-doparallel
+- r-downloader
+- r-ggplot2
+- r-pharmacogx
+- r-rmisc
+- r-scales
+update_on:
+- regex: Xeva_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Xeva

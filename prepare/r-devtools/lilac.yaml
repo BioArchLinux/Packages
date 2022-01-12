@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-callr
+- r-cli
+- r-desc
+- r-ellipsis
+- r-fs
+- r-httr
+- r-lifecycle
+- r-memoise
+- r-pkgbuild
+- r-pkgload
+- r-rcmdcheck
+- r-remotes
+- r-rlang
+- r-roxygen2
+- r-rstudioapi
+- r-rversions
+- r-sessioninfo
+- r-testthat
+- r-usethis
+- r-withr
+update_on:
+- regex: devtools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=devtools

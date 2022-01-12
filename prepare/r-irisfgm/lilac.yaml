@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-adaptgauss
+- r-annotationdbi
+- r-anocva
+- r-clusterprofiler
+- r-colorspace
+- r-desingle
+- r-drimpute
+- r-ggplot2
+- r-ggpubr
+- r-ggraph
+- r-igraph
+- r-knitr
+- r-mcl
+- r-mixtools
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-pheatmap
+- r-polychrome
+- r-rcolorbrewer
+- r-rcpp
+- r-scater
+- r-scran
+- r-seurat
+- r-singlecellexperiment
+update_on:
+- regex: IRISFGM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IRISFGM

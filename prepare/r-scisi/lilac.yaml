@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-apcomplex
+- r-go.db
+- r-org.sc.sgd.db
+- r-rpsixml
+update_on:
+- regex: ScISI_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ScISI

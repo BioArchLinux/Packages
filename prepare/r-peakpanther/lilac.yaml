@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-doparallel
+- r-dt
+- r-foreach
+- r-ggplot2
+- r-gridextra
+- r-minpack.lm
+- r-msnbase
+- r-mzr
+- r-pracma
+- r-scales
+- r-shiny
+- r-shinycssloaders
+- r-shinythemes
+- r-stringr
+- r-xml
+update_on:
+- regex: peakPantheR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/peakPantheR

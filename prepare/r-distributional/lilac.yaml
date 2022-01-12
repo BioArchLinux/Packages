@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-ellipsis
+- r-farver
+- r-generics
+- r-ggplot2
+- r-lifecycle
+- r-numderiv
+- r-rlang
+- r-scales
+- r-vctrs
+update_on:
+- regex: distributional_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=distributional

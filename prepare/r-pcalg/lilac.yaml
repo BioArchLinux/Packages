@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-bdsmatrix
+- r-bh
+- r-clue
+- r-corpcor
+- r-fastica
+- r-ggm
+- r-graph
+- r-igraph
+- r-rbgl
+- r-rcpp
+- r-rcpparmadillo
+- r-robustbase
+- r-sfsmisc
+- r-vcd
+update_on:
+- regex: pcalg_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=pcalg

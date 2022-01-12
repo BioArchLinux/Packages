@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-extradistr
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: proDA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/proDA

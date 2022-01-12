@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-beaddatapackr
+- r-biobase
+- r-biocgenerics
+- r-genomicranges
+- r-ggplot2
+- r-hexbin
+- r-illuminaio
+- r-iranges
+- r-limma
+- r-reshape2
+update_on:
+- regex: beadarray_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/beadarray

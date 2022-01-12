@@ -1,0 +1,41 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-annotationdbi
+- r-annotationhub
+- r-biocmanager
+- r-biocstyle
+- r-category
+- r-cctensor
+- r-checkmate
+- r-crayon
+- r-dose
+- r-ggplot2
+- r-gostats
+- r-heatmaply
+- r-igraph
+- r-knitr
+- r-meshdbi
+- r-meshr
+- r-nntensor
+- r-outliers
+- r-plotly
+- r-plotrix
+- r-reactome.db
+- r-reactomepa
+- r-rmarkdown
+- r-rsqlite
+- r-rtensor
+- r-s4vectors
+- r-schex
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tagcloud
+- r-visnetwork
+update_on:
+- regex: scTensor_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scTensor

@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-gmm
+- r-mvtnorm
+update_on:
+- regex: tmvtnorm_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=tmvtnorm

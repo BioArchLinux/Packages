@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-deseq2
+- r-edger
+- r-ggally
+- r-ggplot2
+- r-ggrepel
+- r-knitr
+- r-rcolorbrewer
+- r-rmarkdown
+- r-scales
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: vidger_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/vidger

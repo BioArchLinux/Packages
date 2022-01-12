@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-catencoders
+- r-keras
+- r-matlab
+- r-prroc
+- r-purrr
+- r-rcdk
+- r-reticulate
+- r-stringdist
+- r-tensorflow
+- r-tokenizers
+- r-ttgsea
+- r-webchem
+update_on:
+- regex: DeepPINCS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DeepPINCS

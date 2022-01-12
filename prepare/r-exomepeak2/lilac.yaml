@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-apeglm
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-cqn
+- r-deseq2
+- r-genefilter
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-mclust
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: exomePeak2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/exomePeak2

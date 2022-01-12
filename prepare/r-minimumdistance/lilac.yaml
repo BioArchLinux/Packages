@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-data.table
+- r-dnacopy
+- r-ff
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-matrixgenerics
+- r-matrixstats
+- r-oligoclasses
+- r-s4vectors
+- r-summarizedexperiment
+- r-vanillaice
+update_on:
+- regex: MinimumDistance_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MinimumDistance

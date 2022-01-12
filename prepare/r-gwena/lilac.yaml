@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-dynamictreecut
+- r-ggplot2
+- r-gprofiler2
+- r-igraph
+- r-magrittr
+- r-matrixstats
+- r-netrep
+- r-purrr
+- r-rcolorbrewer
+- r-rlist
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-wgcna
+update_on:
+- regex: GWENA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GWENA

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-ggplot2
+- r-hmisc
+- r-htmltable
+- r-htmltools
+- r-multcomp
+- r-polspline
+- r-quantreg
+- r-sparsem
+update_on:
+- regex: rms_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=rms

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-dt
+- r-go.db
+- r-keggrest
+- r-knitr
+- r-pbapply
+- r-rcpp
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: ADAM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ADAM

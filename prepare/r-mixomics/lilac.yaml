@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-corpcor
+- r-dplyr
+- r-ellipse
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-igraph
+- r-matrixstats
+- r-rarpack
+- r-rcolorbrewer
+- r-reshape2
+- r-tidyr
+update_on:
+- regex: mixOmics_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mixOmics

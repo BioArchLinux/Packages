@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-bnstruct
+- r-dexmadata
+- r-geoquery
+- r-impute
+- r-limma
+- r-pheatmap
+- r-plyr
+- r-scales
+- r-snpstats
+- r-sva
+- r-swamp
+update_on:
+- regex: DExMA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DExMA

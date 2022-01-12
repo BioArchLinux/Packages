@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biomart
+- r-biostrings
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.hsapiens.ucsc.hg38
+- r-bsgenome.mmusculus.ucsc.mm10
+- r-dbi
+- r-genomicranges
+- r-glmnet
+- r-lassopv
+- r-motifdb
+- r-org.hs.eg.db
+- r-randomforest
+- r-rmysql
+- r-rpostgresql
+- r-rsqlite
+- r-snplocs.hsapiens.dbsnp150.grch38
+- r-vbsr
+- r-wgcna
+- r-xgboost
+update_on:
+- regex: trena_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/trena

@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-corrplot
+- r-data.table
+- r-dplyr
+- r-ggfortify
+- r-ggplot2
+- r-lazyeval
+- r-lubridate
+- r-magrittr
+- r-pheatmap
+- r-preprocesscore
+- r-purrr
+- r-pvca
+- r-rcolorbrewer
+- r-reshape2
+- r-rlang
+- r-scales
+- r-sva
+- r-tibble
+- r-tidyr
+- r-viridis
+- r-wesanderson
+- r-wgcna
+update_on:
+- regex: proBatch_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/proBatch

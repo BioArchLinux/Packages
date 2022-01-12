@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biobase
+- r-dbscan
+- r-ggally
+- r-ggplot2
+- r-gplots
+- r-msnbase
+- r-mzr
+- r-network
+- r-plotly
+- r-rcolorbrewer
+- r-s4vectors
+- r-sna
+update_on:
+- regex: CluMSID_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CluMSID

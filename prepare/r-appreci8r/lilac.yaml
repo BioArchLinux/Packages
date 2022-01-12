@@ -1,0 +1,38 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-cosmic.67
+- r-dt
+- r-genomicfeatures
+- r-genomicranges
+- r-genomicscores
+- r-homo.sapiens
+- r-iranges
+- r-mafdb.1kgenomes.phase3.hs37d5
+- r-mafdb.exac.r1.0.hs37d5
+- r-mafdb.gnomadex.r2.1.hs37d5
+- r-openxlsx
+- r-polyphen.hsapiens.dbsnp131
+- r-rentrez
+- r-rsamtools
+- r-rsnps
+- r-s4vectors
+- r-seqinr
+- r-shiny
+- r-shinyjs
+- r-sift.hsapiens.dbsnp137
+- r-snplocs.hsapiens.dbsnp144.grch37
+- r-stringr
+- r-summarizedexperiment
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-variantannotation
+- r-xtrasnplocs.hsapiens.dbsnp144.grch37
+update_on:
+- regex: appreci8R_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/appreci8R

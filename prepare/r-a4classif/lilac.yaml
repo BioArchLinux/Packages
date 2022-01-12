@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-a4core
+- r-a4preproc
+- r-biobase
+- r-glmnet
+- r-pamr
+- r-rocr
+- r-varselrf
+update_on:
+- regex: a4Classif_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/a4Classif

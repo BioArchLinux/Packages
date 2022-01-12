@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-affyplm
+- r-beadarray
+- r-biobase
+- r-genefilter
+- r-gridsvg
+- r-hmisc
+- r-hwriter
+- r-latticeextra
+- r-limma
+- r-rcolorbrewer
+- r-setrng
+- r-svglite
+- r-vsn
+- r-xml
+update_on:
+- regex: arrayQualityMetrics_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/arrayQualityMetrics

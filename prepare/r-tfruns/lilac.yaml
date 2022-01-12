@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-base64enc
+- r-config
+- r-jsonlite
+- r-magrittr
+- r-reticulate
+- r-rlang
+- r-rstudioapi
+- r-tidyselect
+- r-whisker
+- r-yaml
+update_on:
+- regex: tfruns_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=tfruns

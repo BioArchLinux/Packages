@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-deseq2
+- r-ggplot2
+- r-knitr
+- r-locfit
+- r-plyr
+- r-qvalue
+- r-rocr
+update_on:
+- regex: Anaquin_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Anaquin

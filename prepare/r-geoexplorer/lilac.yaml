@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-dt
+- r-factoextra
+- r-geoquery
+- r-ggplot2
+- r-heatmaply
+- r-htmltools
+- r-impute
+- r-limma
+- r-maptools
+- r-pheatmap
+- r-plotly
+- r-scales
+- r-shiny
+- r-shinybs
+- r-shinybusy
+- r-shinyheatmaply
+- r-stringr
+- r-umap
+update_on:
+- regex: GEOexplorer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GEOexplorer

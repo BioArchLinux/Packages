@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bumphunter
+- r-cowplot
+- r-derfinder
+- r-derfinderplot
+- r-genomicranges
+- r-genomicstate
+- r-ggplot2
+- r-rcolorbrewer
+update_on:
+- regex: brainflowprobes_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/brainflowprobes

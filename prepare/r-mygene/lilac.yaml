@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-genomicfeatures
+- r-hmisc
+- r-httr
+- r-jsonlite
+- r-plyr
+- r-s4vectors
+- r-sqldf
+update_on:
+- regex: mygene_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mygene

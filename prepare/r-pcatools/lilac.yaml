@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beachmat
+- r-bh
+- r-biocparallel
+- r-biocsingular
+- r-cowplot
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dqrng
+- r-ggplot2
+- r-ggrepel
+- r-rcpp
+- r-reshape2
+update_on:
+- regex: PCAtools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PCAtools

@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggforce
+- r-ggplot2
+- r-htmltools
+- r-httr
+- r-igraph
+- r-kableextra
+- r-magrittr
+- r-msigdbr
+- r-openxlsx
+- r-purrr
+- r-r6
+- r-reactable
+- r-reshape2
+- r-rlang
+- r-rmarkdown
+- r-scales
+- r-shiny
+- r-stringr
+- r-visnetwork
+update_on:
+- regex: hypeR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/hypeR

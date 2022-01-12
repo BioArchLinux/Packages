@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhubdata
+- r-biocgenerics
+- r-biocmanager
+- r-curl
+- r-dbi
+- r-experimenthub
+- r-httr
+- r-s4vectors
+update_on:
+- regex: ExperimentHubData_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ExperimentHubData

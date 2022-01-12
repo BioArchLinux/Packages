@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-broom
+- r-dplyr
+- r-formattable
+- r-hardyweinberg
+- r-kableextra
+- r-knitr
+- r-magrittr
+- r-multiassayexperiment
+- r-qdaptools
+- r-rlang
+- r-s4vectors
+- r-stringi
+- r-summarizedexperiment
+- r-tibble
+update_on:
+- regex: midasHLA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/midasHLA

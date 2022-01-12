@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-basilisk
+- r-biocfilecache
+- r-biocparallel
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggpubr
+- r-ggrepel
+- r-iranges
+- r-magrittr
+- r-megadepth
+- r-plyranges
+- r-readr
+- r-reticulate
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: dasper_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/dasper

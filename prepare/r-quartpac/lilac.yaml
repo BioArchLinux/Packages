@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-graphpac
+- r-ipac
+- r-spacepac
+update_on:
+- regex: QuartPAC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/QuartPAC

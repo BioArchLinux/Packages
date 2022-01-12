@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-generics
+- r-ggplot2
+- r-ggpp
+- r-lmodel2
+- r-lubridate
+- r-plyr
+- r-polynom
+- r-quantreg
+- r-rlang
+- r-scales
+- r-splus2r
+- r-tibble
+update_on:
+- regex: ggpmisc_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggpmisc

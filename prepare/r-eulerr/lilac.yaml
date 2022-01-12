@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-gensa
+- r-polyclip
+- r-polylabelr
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- regex: eulerr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=eulerr

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-curl
+- r-data.table
+- r-digest
+- r-dplyr
+- r-graph
+- r-r.utils
+- r-rcurl
+- r-rsqlite
+- r-tidyr
+- r-topgo
+update_on:
+- regex: BgeeDB_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BgeeDB

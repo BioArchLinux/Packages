@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocfilecache
+- r-hdf5array
+- r-minfi
+- r-r.utils
+- r-rcurl
+- r-rhdf5
+- r-s4vectors
+update_on:
+- regex: recountmethylation_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/recountmethylation

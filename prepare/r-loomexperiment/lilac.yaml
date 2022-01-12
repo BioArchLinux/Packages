@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocio
+- r-delayedarray
+- r-genomicranges
+- r-hdf5array
+- r-rhdf5
+- r-s4vectors
+- r-singlecellexperiment
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: LoomExperiment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/LoomExperiment

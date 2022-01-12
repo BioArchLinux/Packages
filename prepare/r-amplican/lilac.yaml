@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-clustercrit
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggthemes
+- r-gridextra
+- r-gtable
+- r-iranges
+- r-knitr
+- r-matrixstats
+- r-rcpp
+- r-rmarkdown
+- r-s4vectors
+- r-shortread
+- r-stringr
+- r-waffle
+update_on:
+- regex: amplican_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/amplican

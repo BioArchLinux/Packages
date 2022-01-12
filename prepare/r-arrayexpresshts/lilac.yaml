@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biomart
+- r-biostrings
+- r-bitops
+- r-edger
+- r-genomicranges
+- r-hmisc
+- r-iranges
+- r-r2html
+- r-rcolorbrewer
+- r-rhtslib
+- r-rjava
+- r-rsamtools
+- r-sampling
+- r-sendmailr
+- r-shortread
+- r-snow
+- r-svmisc
+- r-xml
+update_on:
+- regex: ArrayExpressHTS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ArrayExpressHTS

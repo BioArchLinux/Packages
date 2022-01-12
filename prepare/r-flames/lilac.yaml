@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-basilisk
+- r-dplyr
+- r-magrittr
+- r-rcpp
+- r-reticulate
+- r-rhtslib
+- r-rsamtools
+- r-s4vectors
+- r-scater
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tidyr
+- r-zlibbioc
+update_on:
+- regex: FLAMES_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/FLAMES

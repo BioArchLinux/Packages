@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-gistr
+- r-hexbin
+- r-htmlwidgets
+- r-jsonlite
+- r-lazyeval
+- r-magrittr
+- r-maps
+- r-pryr
+- r-scales
+update_on:
+- regex: rbokeh_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=rbokeh

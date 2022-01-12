@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-chippeakanno
+- r-edger
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-genomicscores
+- r-iranges
+- r-limma
+- r-motifstack
+- r-preseqr
+- r-randomforest
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: ATACseqQC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ATACseqQC

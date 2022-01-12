@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biomart
+- r-deseq2
+- r-genefilter
+- r-geneplotter
+- r-genomicranges
+- r-hwriter
+- r-iranges
+- r-rcolorbrewer
+- r-rsamtools
+- r-s4vectors
+- r-statmod
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: DEXSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DEXSeq

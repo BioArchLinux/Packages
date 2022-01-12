@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-dplyr
+- r-ggforce
+- r-gghalves
+- r-ggplot2
+- r-ggpubr
+- r-ggrepel
+- r-ggridges
+- r-gridextra
+- r-gtable
+- r-knitr
+- r-magrittr
+- r-plyr
+- r-purrr
+- r-rcolorbrewer
+- r-readr
+- r-reshape2
+- r-rlang
+- r-rmarkdown
+- r-scales
+- r-stringr
+- r-tidyr
+update_on:
+- regex: MQmetrics_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MQmetrics

@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-ellipsis
+- r-fansi
+- r-ggplot2
+- r-lifecycle
+- r-magrittr
+- r-pillar
+- r-plotly
+- r-purrr
+- r-rlang
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: tidySummarizedExperiment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tidySummarizedExperiment

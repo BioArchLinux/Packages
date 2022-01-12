@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-brew
+- r-data.table
+- r-dbi
+- r-ggplot2
+- r-ggrepel
+- r-numderiv
+- r-rcolorbrewer
+- r-rcurl
+- r-rjsonio
+- r-rmysql
+- r-rsqlite
+- r-stringr
+- r-tidyr
+- r-xml
+- r-xtable
+update_on:
+- regex: GladiaTOX_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GladiaTOX

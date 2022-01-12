@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biocgenerics
+- r-ensembldb
+- r-experimenthub
+- r-genomicfeatures
+- r-genomicranges
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: scRNAseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scRNAseq

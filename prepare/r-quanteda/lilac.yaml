@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-fastmatch
+- r-magrittr
+- r-rcpp
+- r-rcpparmadillo
+- r-rcppparallel
+- r-snowballc
+- r-stopwords
+- r-stringi
+- r-xml2
+- r-yaml
+update_on:
+- regex: quanteda_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=quanteda

@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-e1071
+- r-mlinterfaces
+update_on:
+- regex: SigCheck_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SigCheck

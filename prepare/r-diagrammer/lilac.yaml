@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-downloader
+- r-dplyr
+- r-glue
+- r-htmltools
+- r-htmlwidgets
+- r-igraph
+- r-influencer
+- r-magrittr
+- r-purrr
+- r-rcolorbrewer
+- r-readr
+- r-rlang
+- r-rstudioapi
+- r-scales
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-viridis
+- r-visnetwork
+update_on:
+- regex: DiagrammeR_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=DiagrammeR

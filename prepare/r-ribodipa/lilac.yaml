@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocfilecache
+- r-data.table
+- r-deseq2
+- r-doparallel
+- r-elitism
+- r-foreach
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-matrixstats
+- r-qvalue
+- r-rcpp
+- r-reldist
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: RiboDiPA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RiboDiPA

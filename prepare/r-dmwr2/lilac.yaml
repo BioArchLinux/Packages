@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dbi
+- r-dplyr
+- r-quantmod
+- r-readr
+- r-xts
+- r-zoo
+update_on:
+- regex: DMwR2_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=DMwR2

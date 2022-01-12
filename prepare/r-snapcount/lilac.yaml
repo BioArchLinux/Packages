@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-data.table
+- r-genomicranges
+- r-httr
+- r-iranges
+- r-jsonlite
+- r-magrittr
+- r-purrr
+- r-r6
+- r-rlang
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: snapcount_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/snapcount

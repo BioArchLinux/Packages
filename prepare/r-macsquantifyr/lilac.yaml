@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-latticeextra
+- r-png
+- r-prettydoc
+- r-readxl
+- r-rmarkdown
+- r-rvest
+- r-xml2
+update_on:
+- regex: MACSQuantifyR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MACSQuantifyR

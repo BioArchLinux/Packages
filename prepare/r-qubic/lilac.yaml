@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biclust
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- regex: QUBIC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/QUBIC

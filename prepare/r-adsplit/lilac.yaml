@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-go.db
+- r-keggrest
+- r-multtest
+update_on:
+- regex: adSplit_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/adSplit

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-devtools
+- r-gtools
+- r-iranges
+- r-stringi
+- r-summarizedexperiment
+update_on:
+- regex: BUMHMM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BUMHMM

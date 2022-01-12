@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-delayedarray
+- r-gdsfmt
+- r-s4vectors
+- r-seqarray
+- r-snprelate
+update_on:
+- regex: GDSArray_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GDSArray

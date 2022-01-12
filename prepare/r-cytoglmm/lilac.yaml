@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-caret
+- r-cowplot
+- r-doparallel
+- r-dplyr
+- r-factoextra
+- r-flexmix
+- r-ggplot2
+- r-ggrepel
+- r-logging
+- r-magrittr
+- r-mbest
+- r-pheatmap
+- r-rcolorbrewer
+- r-rlang
+- r-speedglm
+- r-stringr
+- r-strucchange
+- r-tibble
+- r-tidyr
+update_on:
+- regex: CytoGLMM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CytoGLMM

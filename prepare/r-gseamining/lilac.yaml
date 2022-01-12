@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dendextend
+- r-dplyr
+- r-ggplot2
+- r-ggwordcloud
+- r-gridextra
+- r-rlang
+- r-stringr
+- r-tibble
+- r-tidytext
+update_on:
+- regex: GSEAmining_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GSEAmining

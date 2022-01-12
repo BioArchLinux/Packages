@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cn.mops
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: panelcn.mops_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/panelcn.mops

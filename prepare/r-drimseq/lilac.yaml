@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-edger
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-limma
+- r-reshape2
+- r-s4vectors
+update_on:
+- regex: DRIMSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DRIMSeq

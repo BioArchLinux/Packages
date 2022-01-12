@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocstyle
+- r-dmt
+- r-ggplot2
+- r-graph
+- r-igraph
+- r-mclust
+- r-minet
+- r-plyr
+- r-qvalue
+- r-rcolorbrewer
+- r-reshape2
+- r-rgraphviz
+- r-rmarkdown
+update_on:
+- regex: netresponse_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/netresponse

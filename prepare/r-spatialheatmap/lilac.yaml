@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-av
+- r-biocfilecache
+- r-data.table
+- r-deseq2
+- r-distinct
+- r-dynamictreecut
+- r-edger
+- r-flashclust
+- r-genefilter
+- r-ggdendro
+- r-ggplot2
+- r-ggplotify
+- r-gplots
+- r-gridextra
+- r-grimport
+- r-hdf5array
+- r-htmlwidgets
+- r-igraph
+- r-limma
+- r-magick
+- r-plotly
+- r-rappdirs
+- r-reshape2
+- r-rols
+- r-rsvg
+- r-s4vectors
+- r-shiny
+- r-shinydashboard
+- r-summarizedexperiment
+- r-upsetr
+- r-visnetwork
+- r-wgcna
+- r-xml2
+- r-yaml
+update_on:
+- regex: spatialHeatmap_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/spatialHeatmap

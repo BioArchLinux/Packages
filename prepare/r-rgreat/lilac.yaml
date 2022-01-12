@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-genomicranges
+- r-getoptlong
+- r-iranges
+- r-rcurl
+- r-rjson
+update_on:
+- regex: rGREAT_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rGREAT

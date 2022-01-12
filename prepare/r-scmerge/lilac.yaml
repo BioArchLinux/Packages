@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-delayedmatrixstats
+- r-distr
+- r-igraph
+- r-m3drop
+- r-pdist
+- r-proxy
+- r-ruv
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: scMerge_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scMerge

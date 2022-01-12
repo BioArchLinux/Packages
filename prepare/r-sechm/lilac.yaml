@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-randomcolor
+- r-s4vectors
+- r-seriation
+- r-summarizedexperiment
+update_on:
+- regex: sechm_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sechm

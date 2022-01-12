@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biomart
+- r-dbi
+- r-dbplyr
+- r-dplyr
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-go.db
+- r-igraph
+- r-iranges
+- r-keggrest
+- r-png
+- r-rcurl
+- r-reactome.db
+- r-readr
+- r-reshape2
+- r-rsqlite
+- r-rtracklayer
+- r-rwikipathways
+- r-s4vectors
+- r-summarizedexperiment
+- r-tidyr
+- r-zlibbioc
+update_on:
+- regex: NoRCE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/NoRCE

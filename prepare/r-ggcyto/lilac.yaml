@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-flowcore
+- r-flowworkspace
+- r-ggplot2
+- r-gridextra
+- r-hexbin
+- r-ncdfflow
+- r-plyr
+- r-rcolorbrewer
+- r-rlang
+- r-scales
+update_on:
+- regex: ggcyto_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ggcyto

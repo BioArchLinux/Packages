@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-cleanupdtseq
+- r-dbi
+- r-depmixs4
+- r-dplyr
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-limma
+- r-magrittr
+- r-plyranges
+- r-preprocesscore
+- r-purrr
+- r-readr
+- r-reshape2
+- r-rsqlite
+- r-s4vectors
+update_on:
+- regex: InPAS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/InPAS

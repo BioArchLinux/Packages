@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-bumpymatrix
+- r-checkmate
+- r-crayon
+- r-data.table
+- r-glue
+- r-lsa
+- r-matrixgenerics
+- r-multiassayexperiment
+- r-piano
+- r-rlang
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: CoreGx_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CoreGx

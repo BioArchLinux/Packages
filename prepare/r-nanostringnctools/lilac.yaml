@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-ggbeeswarm
+- r-ggiraph
+- r-ggplot2
+- r-ggthemes
+- r-iranges
+- r-pheatmap
+- r-rcolorbrewer
+- r-s4vectors
+update_on:
+- regex: NanoStringNCTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/NanoStringNCTools

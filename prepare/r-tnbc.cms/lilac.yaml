@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-e1071
+- r-forestplot
+- r-ggally
+- r-ggplot2
+- r-ggpubr
+- r-gsva
+- r-pheatmap
+- r-pracma
+- r-quadprog
+- r-r.utils
+- r-rcolorbrewer
+- r-summarizedexperiment
+update_on:
+- regex: TNBC.CMS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TNBC.CMS

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-gridextra
+- r-msstatstmt
+- r-rcpp
+- r-reshape2
+- r-stringr
+update_on:
+- regex: MSstatsTMTPTM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MSstatsTMTPTM

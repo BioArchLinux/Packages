@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-dplyr
+- r-forecast
+- r-hmisc
+- r-liblinear
+- r-magrittr
+- r-msnbase
+- r-naivebayes
+- r-progress
+- r-purrr
+- r-ranger
+- r-rdpack
+- r-robustbase
+- r-speedglm
+- r-tester
+- r-tidyr
+update_on:
+- regex: PrInCE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PrInCE

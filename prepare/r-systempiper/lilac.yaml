@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-crayon
+- r-genomicranges
+- r-ggplot2
+- r-htmlwidgets
+- r-magrittr
+- r-rsamtools
+- r-s4vectors
+- r-shortread
+- r-stringr
+- r-summarizedexperiment
+- r-yaml
+update_on:
+- regex: systemPipeR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/systemPipeR

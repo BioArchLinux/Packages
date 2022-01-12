@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-babelgene
+- r-biocgenerics
+- r-biocparallel
+- r-biocset
+- r-checkmate
+- r-circlize
+- r-complexheatmap
+- r-data.table
+- r-delayedmatrixstats
+- r-edger
+- r-ggplot2
+- r-gseabase
+- r-irlba
+- r-limma
+- r-plotly
+- r-viridis
+update_on:
+- regex: sparrow_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sparrow

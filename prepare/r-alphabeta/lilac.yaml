@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-data.table
+- r-dplyr
+- r-expm
+- r-ggplot2
+- r-gtools
+- r-igraph
+- r-optimx
+- r-plotly
+- r-stringr
+update_on:
+- regex: AlphaBeta_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/AlphaBeta

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biostrings
+- r-data.table
+- r-delayedarray
+- r-deseq2
+- r-futile.logger
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-hdf5array
+- r-iranges
+- r-rcpp
+- r-rcpparmadillo
+- r-rhdf5
+- r-rsamtools
+- r-s4vectors
+- r-sparseinv
+- r-summarizedexperiment
+update_on:
+- regex: GenoGAM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GenoGAM

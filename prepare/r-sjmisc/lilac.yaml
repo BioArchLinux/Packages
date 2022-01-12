@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-insight
+- r-magrittr
+- r-purrr
+- r-rlang
+- r-sjlabelled
+- r-tidyselect
+update_on:
+- regex: sjmisc_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=sjmisc

@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cli
+- r-clisymbols
+- r-crayon
+- r-desc
+- r-glue
+- r-jsonlite
+- r-memoise
+- r-snowballc
+- r-stringdist
+- r-tibble
+- r-tidytext
+- r-udapi
+- r-yesno
+update_on:
+- regex: available_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=available

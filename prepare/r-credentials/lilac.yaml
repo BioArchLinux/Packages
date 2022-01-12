@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-askpass
+- r-curl
+- r-jsonlite
+- r-openssl
+- r-sys
+update_on:
+- regex: credentials_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=credentials

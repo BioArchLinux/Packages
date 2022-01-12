@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-dnacopy
+- r-e1071
+- r-fgsea
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-illuminaio
+- r-iranges
+- r-matrixstats
+- r-preprocesscore
+- r-randomforest
+- r-reshape2
+- r-s4vectors
+- r-sesamedata
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-wheatmap
+update_on:
+- regex: sesame_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sesame

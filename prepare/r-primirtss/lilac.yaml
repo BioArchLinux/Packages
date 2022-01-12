@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome.hsapiens.ucsc.hg38
+- r-dplyr
+- r-genomicranges
+- r-genomicscores
+- r-gviz
+- r-iranges
+- r-jaspar2018
+- r-phastcons100way.ucsc.hg38
+- r-purrr
+- r-r.utils
+- r-rtracklayer
+- r-s4vectors
+- r-shiny
+- r-stringr
+- r-tfbstools
+- r-tibble
+- r-tidyr
+update_on:
+- regex: primirTSS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/primirTSS

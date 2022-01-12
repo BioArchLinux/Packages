@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-decipher
+- r-decontam
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dirichletmultinomial
+- r-dplyr
+- r-iranges
+- r-multiassayexperiment
+- r-rlang
+- r-s4vectors
+- r-scater
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-treesummarizedexperiment
+- r-vegan
+update_on:
+- regex: mia_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mia

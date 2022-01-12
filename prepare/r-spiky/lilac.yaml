@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bamlss
+- r-biostrings
+- r-blandaltmanleh
+- r-bsgenome
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-rsamtools
+- r-s4vectors
+- r-scales
+update_on:
+- regex: spiky_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/spiky

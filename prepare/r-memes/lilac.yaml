@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-cmdfun
+- r-dplyr
+- r-genomicranges
+- r-ggplot2
+- r-ggseqlogo
+- r-magrittr
+- r-matrixstats
+- r-patchwork
+- r-processx
+- r-purrr
+- r-readr
+- r-rlang
+- r-tibble
+- r-tidyr
+- r-universalmotif
+- r-usethis
+- r-xml2
+update_on:
+- regex: memes_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/memes

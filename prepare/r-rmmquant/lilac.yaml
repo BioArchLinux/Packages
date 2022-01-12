@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocstyle
+- r-deseq2
+- r-devtools
+- r-genomicranges
+- r-org.mm.eg.db
+- r-rcpp
+- r-s4vectors
+- r-summarizedexperiment
+- r-tbx20bamsubset
+- r-txdb.mmusculus.ucsc.mm9.knowngene
+update_on:
+- regex: Rmmquant_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Rmmquant

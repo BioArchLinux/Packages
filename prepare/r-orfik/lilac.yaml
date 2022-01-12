@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biocparallel
+- r-biomartr
+- r-biostrings
+- r-bsgenome
+- r-cowplot
+- r-data.table
+- r-deseq2
+- r-fst
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggally
+- r-ggplot2
+- r-gridextra
+- r-httr
+- r-iranges
+- r-jsonlite
+- r-r.utils
+- r-rcpp
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-xml2
+update_on:
+- regex: ORFik_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ORFik

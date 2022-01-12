@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-ggplot2
+- r-limma
+- r-mast
+- r-pheatmap
+- r-rcolorbrewer
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: POWSC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/POWSC

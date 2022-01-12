@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-base64enc
+- r-digest
+update_on:
+- regex: aws.signature_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=aws.signature

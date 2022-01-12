@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-modstrings
+- r-s4vectors
+- r-scales
+- r-stringr
+- r-structstrings
+- r-xvector
+update_on:
+- regex: tRNA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tRNA

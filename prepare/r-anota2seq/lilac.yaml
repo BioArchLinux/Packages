@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-deseq2
+- r-edger
+- r-limma
+- r-multtest
+- r-qvalue
+- r-rcolorbrewer
+- r-summarizedexperiment
+update_on:
+- regex: anota2seq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/anota2seq

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-colorspace
+- r-cowplot
+- r-ggplot2
+- r-ggrepel
+- r-ggridges
+- r-gridextra
+- r-pheatmap
+- r-reshape2
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: dittoSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/dittoSeq

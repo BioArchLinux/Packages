@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beachmat
+- r-biocneighbors
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-delayedmatrixstats
+- r-rcpp
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: SingleR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SingleR

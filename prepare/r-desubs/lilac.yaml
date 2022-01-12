@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-deseq2
+- r-ebseq
+- r-edger
+- r-ggplot2
+- r-graph
+- r-igraph
+- r-jsonlite
+- r-limma
+- r-locfit
+- r-nbpseq
+- r-pheatmap
+- r-rbgl
+update_on:
+- regex: DEsubs_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DEsubs

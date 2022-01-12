@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-catools
+- r-rcpp
+- r-rsamtools
+update_on:
+- regex: spp_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=spp

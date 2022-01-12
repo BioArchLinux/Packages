@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-edger
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-gtools
+- r-limma
+- r-locfit
+- r-plyr
+- r-qvalue
+- r-reshape2
+- r-rocr
+- r-scales
+- r-stringr
+update_on:
+- regex: erccdashboard_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/erccdashboard

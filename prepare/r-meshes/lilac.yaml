@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-dose
+- r-enrichplot
+- r-gosemsim
+- r-meshdbi
+- r-yulab.utils
+update_on:
+- regex: meshes_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/meshes

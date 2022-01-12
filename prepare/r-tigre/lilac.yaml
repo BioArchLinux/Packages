@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-dbi
+- r-gplots
+- r-rsqlite
+update_on:
+- regex: tigre_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tigre

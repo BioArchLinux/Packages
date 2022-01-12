@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-quadprog
+- r-xts
+- r-zoo
+update_on:
+- regex: PerformanceAnalytics_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=PerformanceAnalytics

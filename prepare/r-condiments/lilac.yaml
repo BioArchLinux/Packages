@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-dplyr
+- r-ecume
+- r-igraph
+- r-magrittr
+- r-matrixstats
+- r-pbapply
+- r-rann
+- r-singlecellexperiment
+- r-slingshot
+- r-summarizedexperiment
+- r-trajectoryutils
+update_on:
+- regex: condiments_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/condiments

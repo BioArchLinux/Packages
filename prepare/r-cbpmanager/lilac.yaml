@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-basilisk
+- r-dplyr
+- r-dt
+- r-htmltools
+- r-jsonlite
+- r-magrittr
+- r-markdown
+- r-plyr
+- r-rapportools
+- r-reticulate
+- r-rintrojs
+- r-shiny
+- r-shinybs
+- r-shinycssloaders
+- r-shinydashboard
+- r-vroom
+update_on:
+- regex: cbpManager_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cbpManager

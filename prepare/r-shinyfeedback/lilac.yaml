@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-fontawesome
+- r-htmltools
+- r-jsonlite
+- r-shiny
+update_on:
+- regex: shinyFeedback_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=shinyFeedback

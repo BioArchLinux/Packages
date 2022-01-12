@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-biocgenerics
+- r-biostrings
+- r-dichromat
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-hmisc
+- r-iranges
+- r-rcolorbrewer
+- r-rlang
+- r-rsamtools
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: biovizBase_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/biovizBase

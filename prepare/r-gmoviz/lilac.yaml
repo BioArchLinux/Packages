@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-circlize
+- r-colorspace
+- r-complexheatmap
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-gridbase
+- r-iranges
+- r-pracma
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: gmoviz_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/gmoviz

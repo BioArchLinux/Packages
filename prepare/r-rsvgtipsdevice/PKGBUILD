@@ -1,0 +1,26 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=RSVGTipsDevice
+_pkgver=1.0-7
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='An R SVG Graphics Device with Dynamic Tips and Hyperlinks'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+)
+source=("https://github.com/cran/${_pkgname}/archive/refs/tags/${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

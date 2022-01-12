@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggforce
+- r-ggfun
+- r-ggplot2
+- r-rlang
+- r-tidyr
+update_on:
+- regex: scatterpie_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=scatterpie

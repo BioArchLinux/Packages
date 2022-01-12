@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-biostrings
+- r-bsgenome.hsapiens.ucsc.hg38
+- r-caret
+- r-cowplot
+- r-data.table
+- r-gbm
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-kernlab
+- r-plyr
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+update_on:
+- regex: branchpointer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/branchpointer

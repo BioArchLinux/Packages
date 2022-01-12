@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocmanager
+- r-bsgenome
+- r-crisprseek
+- r-dt
+- r-genomicfeatures
+- r-genomicranges
+- r-guideseq
+- r-hash
+- r-shiny
+- r-shinyjs
+update_on:
+- regex: crisprseekplus_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/crisprseekplus

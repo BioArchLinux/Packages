@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-gridextra
+- r-matrixstats
+- r-ptw
+- r-reshape2
+update_on:
+- regex: PepsNMR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PepsNMR

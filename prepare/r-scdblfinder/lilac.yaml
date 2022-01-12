@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocneighbors
+- r-biocparallel
+- r-biocsingular
+- r-bluster
+- r-delayedarray
+- r-igraph
+- r-s4vectors
+- r-scater
+- r-scran
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-xgboost
+update_on:
+- regex: scDblFinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scDblFinder

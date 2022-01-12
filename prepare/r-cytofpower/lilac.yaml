@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cytoglmm
+- r-diffcyt
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-magrittr
+- r-rlang
+- r-shiny
+- r-shinyfeedback
+- r-shinyjs
+- r-shinymatrix
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: CyTOFpower_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CyTOFpower

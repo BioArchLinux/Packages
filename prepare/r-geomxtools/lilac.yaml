@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-data.table
+- r-dplyr
+- r-envstats
+- r-lmertest
+- r-nanostringnctools
+- r-outliers
+- r-readxl
+- r-reshape2
+- r-rjson
+- r-s4vectors
+update_on:
+- regex: GeomxTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GeomxTools

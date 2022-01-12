@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aricode
+- r-cowplot
+- r-dendextend
+- r-desctools
+- r-dorng
+- r-dosnow
+- r-dplyr
+- r-fastcluster
+- r-foreach
+- r-ggplot2
+- r-liblinear
+- r-paralleldist
+- r-pheatmap
+- r-plyr
+- r-reshape2
+- r-rspectra
+- r-rtsne
+- r-s4vectors
+- r-scales
+- r-singlecellexperiment
+- r-sparsem
+- r-summarizedexperiment
+- r-umap
+update_on:
+- regex: ILoReg_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ILoReg

@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-fpc
+- r-gplots
+- r-igraph
+- r-monocle
+- r-plyr
+- r-rann
+- r-rspectra
+- r-vgam
+update_on:
+- regex: uSORT_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/uSORT

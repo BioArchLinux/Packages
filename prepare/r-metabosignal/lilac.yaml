@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biomart
+- r-ensdb.hsapiens.v75
+- r-hpar
+- r-igraph
+- r-kegggraph
+- r-keggrest
+- r-mwastools
+- r-mygene
+- r-org.hs.eg.db
+- r-rcurl
+update_on:
+- regex: MetaboSignal_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MetaboSignal

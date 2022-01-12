@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-lazyeval
+- r-rlang
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: ggalluvial_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggalluvial

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bigassertr
+- r-doparallel
+- r-flock
+- r-foreach
+- r-parallelly
+- r-rhpcblasctl
+update_on:
+- regex: bigparallelr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=bigparallelr

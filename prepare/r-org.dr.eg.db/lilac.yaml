@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+update_on:
+- regex: org.Dr.eg.db_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/org.Dr.eg.db

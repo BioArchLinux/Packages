@@ -1,0 +1,41 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-cairo
+- r-chipseeker
+- r-circlize
+- r-complexheatmap
+- r-dplyr
+- r-enrichedheatmap
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-magrittr
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-pheatmap
+- r-r.utils
+- r-rgreat
+- r-rjson
+- r-rlang
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-soggi
+- r-summarizedexperiment
+- r-tidyr
+- r-tiff
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+- r-txdb.mmusculus.ucsc.mm10.knowngene
+- r-txdb.mmusculus.ucsc.mm9.knowngene
+update_on:
+- regex: profileplyr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/profileplyr

@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-cepo
+- r-diptest
+- r-ggplot2
+- r-ggraph
+- r-hopach
+- r-igraph
+- r-limma
+- r-minpack.lm
+- r-mixtools
+- r-proxy
+- r-proxyc
+- r-s4vectors
+- r-statmod
+update_on:
+- regex: scClassify_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scClassify

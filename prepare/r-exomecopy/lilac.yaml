@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-rsamtools
+update_on:
+- regex: exomeCopy_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/exomeCopy

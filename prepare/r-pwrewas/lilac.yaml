@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-biocmanager
+- r-cpgassoc
+- r-doparallel
+- r-dosnow
+- r-foreach
+- r-genefilter
+- r-ggplot2
+- r-limma
+- r-pwrewas.data
+- r-shiny
+- r-shinybs
+- r-shinywidgets
+- r-truncnorm
+update_on:
+- regex: pwrEWAS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/pwrEWAS

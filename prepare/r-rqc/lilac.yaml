@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biocstyle
+- r-biostrings
+- r-biovizbase
+- r-genomicalignments
+- r-genomicfiles
+- r-ggplot2
+- r-iranges
+- r-knitr
+- r-markdown
+- r-plyr
+- r-rcpp
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+- r-shiny
+- r-shortread
+update_on:
+- regex: Rqc_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Rqc

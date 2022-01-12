@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-biostrings
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-deseq2
+- r-dplyr
+- r-edger
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gwascat
+- r-iranges
+- r-magrittr
+- r-r.utils
+- r-readr
+- r-reshape2
+- r-rlang
+- r-rtracklayer
+- r-s4vectors
+- r-seqinr
+- r-stringi
+- r-stringr
+- r-universalmotif
+update_on:
+- regex: circRNAprofiler_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/circRNAprofiler

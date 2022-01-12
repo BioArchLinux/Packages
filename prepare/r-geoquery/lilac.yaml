@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-data.table
+- r-dplyr
+- r-httr
+- r-limma
+- r-magrittr
+- r-r.utils
+- r-readr
+- r-tidyr
+- r-xml2
+update_on:
+- regex: GEOquery_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GEOquery

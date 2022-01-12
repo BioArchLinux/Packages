@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-clusterprofiler
+- r-colourpicker
+- r-data.table
+- r-downloader
+- r-dt
+- r-elmer
+- r-ggplot2
+- r-ggrepel
+- r-maftools
+- r-pathview
+- r-plotly
+- r-readr
+- r-sesame
+- r-shiny
+- r-shinybs
+- r-shinydashboard
+- r-shinyfiles
+- r-shinyjs
+- r-stringr
+- r-summarizedexperiment
+- r-tcgabiolinks
+- r-tcgabiolinksgui.data
+update_on:
+- regex: TCGAbiolinksGUI_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TCGAbiolinksGUI

@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-ape
+- r-caret
+- r-data.tree
+- r-dplyr
+- r-e1071
+- r-ggplot2
+- r-kernlab
+- r-proc
+- r-rocr
+- r-seurat
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: scAnnotatR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scAnnotatR

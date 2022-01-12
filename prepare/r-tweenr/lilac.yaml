@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-farver
+- r-magrittr
+- r-rcpp
+- r-rlang
+update_on:
+- regex: tweenr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=tweenr

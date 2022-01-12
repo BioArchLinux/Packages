@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-ape
+- r-biostrings
+- r-circlize
+- r-complexheatmap
+- r-cowplot
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-ggrepel
+- r-ggridges
+- r-iranges
+- r-mclust
+- r-phangorn
+- r-pracma
+- r-rcolorbrewer
+- r-s4vectors
+- r-tidyr
+update_on:
+- regex: MesKit_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MesKit

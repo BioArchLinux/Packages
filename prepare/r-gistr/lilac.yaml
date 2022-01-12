@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-crul
+- r-dplyr
+- r-httr
+- r-jsonlite
+- r-knitr
+- r-magrittr
+- r-rmarkdown
+update_on:
+- regex: gistr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=gistr

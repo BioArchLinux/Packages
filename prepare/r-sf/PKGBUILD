@@ -1,0 +1,71 @@
+# system requirements: C++11, GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>=4.8.0), sqlite3
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=sf
+_pkgver=1.0-5
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Simple Features for R'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-classint
+  r-dbi
+  r-magrittr
+  r-rcpp
+  r-s2
+  r-units
+)
+optdepends=(
+  r-blob
+  r-covr
+  r-dplyr
+  r-ggplot2
+  r-knitr
+  r-lwgeom
+  r-maps
+  r-mapview
+  r-matrix
+  r-microbenchmark
+  r-odbc
+  r-pillar
+  r-pool
+  r-raster
+  r-rgdal
+  r-rgeos
+  r-rlang
+  r-rmarkdown
+  r-rpostgres
+  r-rpostgresql
+  r-rsqlite
+  r-sp
+  r-spatstat
+  r-spatstat.core
+  r-spatstat.geom
+  r-spatstat.linnet
+  r-spatstat.utils
+  r-stars
+  r-terra
+  r-testthat
+  r-tibble
+  r-tidyr
+  r-tidyselect
+  r-tmap
+  r-vctrs
+  r-wk
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

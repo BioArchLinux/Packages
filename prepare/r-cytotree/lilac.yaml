@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocneighbors
+- r-destiny
+- r-flowcore
+- r-flowsom
+- r-flowutils
+- r-ggplot2
+- r-gmodels
+- r-igraph
+- r-limma
+- r-matrixstats
+- r-mclust
+- r-pheatmap
+- r-prettydoc
+- r-rann
+- r-rcpp
+- r-rtsne
+- r-scatterpie
+- r-scatterplot3d
+- r-stringr
+- r-sva
+- r-umap
+update_on:
+- regex: CytoTree_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CytoTree

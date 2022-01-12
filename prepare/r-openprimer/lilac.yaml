@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biocgenerics
+- r-biostrings
+- r-decipher
+- r-digest
+- r-distr
+- r-distrex
+- r-dplyr
+- r-fitdistrplus
+- r-foreach
+- r-genomicranges
+- r-ggplot2
+- r-hmisc
+- r-iranges
+- r-lpsolveapi
+- r-magrittr
+- r-openxlsx
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-s4vectors
+- r-scales
+- r-seqinr
+- r-stringdist
+- r-stringr
+- r-uniqtag
+- r-xml
+update_on:
+- regex: openPrimeR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/openPrimeR

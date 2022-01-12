@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-gdsfmt
+- r-geoquery
+- r-illuminaio
+- r-methylumi
+- r-minfi
+- r-watermelon
+update_on:
+- regex: bigmelon_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/bigmelon

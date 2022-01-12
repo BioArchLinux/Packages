@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-biobase
+- r-doparallel
+- r-dynamictreecut
+- r-experimenthub
+- r-foreach
+- r-genefilter
+- r-geneplotter
+- r-gplots
+- r-gtools
+- r-illuminaio
+- r-impute
+- r-iranges
+- r-matrixstats
+- r-minfi
+- r-preprocesscore
+- r-quadprog
+- r-rpmm
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: ENmix_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ENmix

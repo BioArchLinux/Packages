@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biobase
+- r-biocparallel
+- r-catools
+- r-coregx
+- r-downloader
+- r-magicaxis
+- r-matrixstats
+- r-rcolorbrewer
+- r-reshape2
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+update_on:
+- regex: RadioGx_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RadioGx

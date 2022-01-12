@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-flexmix
+- r-ggplot2
+- r-gtools
+- r-limma
+- r-maptpx
+- r-picante
+- r-plyr
+- r-reshape2
+- r-slam
+- r-squarem
+update_on:
+- regex: CountClust_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CountClust

@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-dbscan
+- r-ggplot2
+- r-ggraph
+- r-ggridges
+- r-gridextra
+- r-igraph
+- r-mixtools
+- r-pheatmap
+- r-propr
+- r-randomforest
+- r-reshape2
+- r-rhdf5
+- r-rlang
+- r-rtsne
+- r-s4vectors
+- r-scales
+- r-scran
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-uwot
+update_on:
+- regex: CiteFuse_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CiteFuse

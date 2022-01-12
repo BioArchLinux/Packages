@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-rcpp
+- r-rdpack
+update_on:
+- regex: Ckmeans.1d.dp_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=Ckmeans.1d.dp

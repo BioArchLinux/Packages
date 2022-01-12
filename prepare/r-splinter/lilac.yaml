@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-biostrings
+- r-bsgenome.mmusculus.ucsc.mm9
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-googlevis
+- r-gviz
+- r-iranges
+- r-plyr
+- r-s4vectors
+- r-seqlogo
+- r-stringr
+update_on:
+- regex: SPLINTER_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SPLINTER

@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-coda
+- r-cowplot
+- r-ggextra
+- r-ggplot2
+- r-hexbin
+- r-matrixstats
+- r-rcpp
+- r-rcpparmadillo
+- r-reshape2
+- r-s4vectors
+- r-scran
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-viridis
+update_on:
+- regex: BASiCS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BASiCS

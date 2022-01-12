@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-biocparallel
+- r-data.table
+- r-futile.logger
+- r-outliers
+- r-rcpp
+- r-rdpack
+update_on:
+- regex: BEclear_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BEclear

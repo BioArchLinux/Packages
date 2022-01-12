@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-biocfilecache
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-fst
+- r-genefilter
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-hdf5array
+- r-iranges
+- r-magrittr
+- r-nxtirfdata
+- r-plotly
+- r-r.utils
+- r-rcpp
+- r-rcppprogress
+- r-rhdf5
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-zlibbioc
+update_on:
+- regex: NxtIRFcore_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/NxtIRFcore

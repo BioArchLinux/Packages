@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-doparallel
+- r-ga
+- r-ggplot2
+- r-memoise
+- r-rcpp
+- r-rcppeigen
+- r-reshape2
+update_on:
+- regex: GWAS.BAYES_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GWAS.BAYES

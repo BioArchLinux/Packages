@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-affyplm
+- r-biobase
+- r-biocgenerics
+- r-dbi
+- r-gtable
+- r-oligo
+- r-oligoclasses
+- r-preprocesscore
+- r-s4vectors
+- r-scales
+update_on:
+- regex: mimager_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mimager

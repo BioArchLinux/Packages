@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-adam
+- r-colorramps
+- r-data.table
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-ggpubr
+- r-ggrepel
+- r-ggsignif
+- r-go.db
+- r-gridextra
+- r-knitr
+- r-rcolorbrewer
+- r-reshape2
+- r-shiny
+- r-shinyjs
+- r-stringi
+- r-stringr
+- r-testthat
+- r-varhandle
+update_on:
+- regex: ADAMgui_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ADAMgui

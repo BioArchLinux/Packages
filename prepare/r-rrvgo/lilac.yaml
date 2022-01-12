@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-ggplot2
+- r-ggrepel
+- r-go.db
+- r-gosemsim
+- r-pheatmap
+- r-shiny
+- r-tm
+- r-treemap
+- r-wordcloud
+update_on:
+- regex: rrvgo_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rrvgo

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-gridextra
+- r-openxlsx
+- r-tibble
+- r-xml2
+update_on:
+- regex: HPAanalyze_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/HPAanalyze

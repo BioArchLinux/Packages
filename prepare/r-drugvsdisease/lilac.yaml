@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-annotate
+- r-arrayexpress
+- r-biocgenerics
+- r-biomart
+- r-cmap2data
+- r-drugvsdiseasedata
+- r-geoquery
+- r-hgu133a.db
+- r-hgu133a2.db
+- r-hgu133plus2.db
+- r-limma
+- r-qvalue
+- r-runit
+- r-xtable
+update_on:
+- regex: DrugVsDisease_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DrugVsDisease

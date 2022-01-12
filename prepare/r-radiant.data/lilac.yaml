@@ -1,0 +1,40 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-base64enc
+- r-broom
+- r-car
+- r-curl
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-glue
+- r-import
+- r-jsonlite
+- r-knitr
+- r-lubridate
+- r-magrittr
+- r-markdown
+- r-patchwork
+- r-plotly
+- r-psych
+- r-randomizr
+- r-readr
+- r-readxl
+- r-rlang
+- r-rmarkdown
+- r-rstudioapi
+- r-scales
+- r-shiny
+- r-shinyace
+- r-shinyfiles
+- r-stringi
+- r-tibble
+- r-tidyr
+- r-writexl
+update_on:
+- regex: radiant.data_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=radiant.data

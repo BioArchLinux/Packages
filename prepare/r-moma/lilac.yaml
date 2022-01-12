@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-mkmisc
+- r-multiassayexperiment
+- r-qvalue
+- r-rcolorbrewer
+- r-readr
+- r-reshape2
+- r-rlang
+- r-stringr
+- r-tibble
+- r-tidyr
+update_on:
+- regex: MOMA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MOMA

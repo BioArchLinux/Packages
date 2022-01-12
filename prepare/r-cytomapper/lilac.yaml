@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-delayedarray
+- r-ebimage
+- r-ggbeeswarm
+- r-ggplot2
+- r-hdf5array
+- r-matrixstats
+- r-raster
+- r-rcolorbrewer
+- r-rhdf5
+- r-s4vectors
+- r-shiny
+- r-shinydashboard
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-svglite
+- r-svgpanzoom
+- r-viridis
+update_on:
+- regex: cytomapper_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cytomapper

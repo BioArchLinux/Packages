@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocmanager
+- r-future
+- r-listenv
+- r-matrixstats
+- r-pscbs
+- r-r.cache
+- r-r.devices
+- r-r.filesets
+- r-r.methodss3
+- r-r.oo
+- r-r.rsp
+- r-r.utils
+- r-rcolorbrewer
+update_on:
+- regex: aroma.core_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=aroma.core

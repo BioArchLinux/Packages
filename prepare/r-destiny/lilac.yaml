@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-ggplot.multistats
+- r-ggplot2
+- r-ggthemes
+- r-irlba
+- r-knn.covertree
+- r-pcamethods
+- r-proxy
+- r-rcpp
+- r-rcppeigen
+- r-rcpphnsw
+- r-rspectra
+- r-scales
+- r-scatterplot3d
+- r-singlecellexperiment
+- r-smoother
+- r-summarizedexperiment
+- r-tidyr
+- r-tidyselect
+- r-vim
+update_on:
+- regex: destiny_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/destiny

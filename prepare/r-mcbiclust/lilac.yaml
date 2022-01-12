@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocparallel
+- r-ggally
+- r-ggplot2
+- r-go.db
+- r-org.hs.eg.db
+- r-scales
+- r-wgcna
+update_on:
+- regex: MCbiclust_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MCbiclust

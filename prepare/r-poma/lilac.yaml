@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-broom
+- r-caret
+- r-clisymbols
+- r-complexheatmap
+- r-crayon
+- r-dplyr
+- r-e1071
+- r-ggcorrplot
+- r-ggplot2
+- r-ggraph
+- r-ggrepel
+- r-glasso
+- r-glmnet
+- r-impute
+- r-knitr
+- r-limma
+- r-magrittr
+- r-mixomics
+- r-msnbase
+- r-patchwork
+- r-qpdf
+- r-randomforest
+- r-rankprod
+- r-rmarkdown
+- r-tibble
+- r-tidyr
+- r-vegan
+update_on:
+- regex: POMA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/POMA

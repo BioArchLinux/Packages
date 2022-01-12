@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aplot
+- r-dose
+- r-ggplot2
+- r-ggraph
+- r-ggtree
+- r-gosemsim
+- r-igraph
+- r-magrittr
+- r-plyr
+- r-purrr
+- r-rcolorbrewer
+- r-reshape2
+- r-scatterpie
+- r-shadowtext
+- r-yulab.utils
+update_on:
+- regex: enrichplot_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/enrichplot

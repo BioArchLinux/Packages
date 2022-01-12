@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-dplyr
+- r-entropy
+- r-fgsea
+- r-ggplot2
+- r-httr
+- r-matrixstats
+- r-proxy
+- r-readr
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-singlecellexperiment
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: clustifyr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/clustifyr

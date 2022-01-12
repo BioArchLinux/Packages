@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biostrings
+- r-caret
+- r-dplyr
+- r-rlang
+- r-rsample
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: supersigs_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/supersigs

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-impute
+- r-pdist
+- r-pls
+- r-plyr
+- r-randomforest
+- r-roc
+- r-rrcov
+update_on:
+- regex: statTarget_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/statTarget

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-ncdf4
+- r-protgenerics
+- r-rcpp
+- r-rhdf5lib
+- r-zlibbioc
+update_on:
+- regex: mzR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mzR

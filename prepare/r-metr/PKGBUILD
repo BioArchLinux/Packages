@@ -1,0 +1,64 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=metR
+_pkgver=0.11.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Tools for Easier Analysis of Meteorological Fields'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-checkmate
+  r-data.table
+  r-digest
+  r-fields
+  r-formula
+  r-formula.tools
+  r-ggplot2
+  r-gtable
+  r-isoband
+  r-lubridate
+  r-memoise
+  r-plyr
+  r-purrr
+  r-rcurl
+  r-scales
+  r-sp
+  r-stringr
+)
+optdepends=(
+  r-covr
+  r-gridextra
+  r-here
+  r-irlba
+  r-knitr
+  r-kriging
+  r-maps
+  r-maptools
+  r-ncdf4
+  r-pkgdown
+  r-proj4
+  r-raster
+  r-reshape2
+  r-rgdal
+  r-rmarkdown
+  r-testthat
+  r-udunits2
+  r-vdiffr
+  r-viridis
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

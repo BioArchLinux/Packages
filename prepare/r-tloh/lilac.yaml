@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-genomicranges
+- r-ggplot2
+- r-matrixgenerics
+- r-purrr
+- r-scales
+- r-variantannotation
+update_on:
+- regex: tLOH_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tLOH

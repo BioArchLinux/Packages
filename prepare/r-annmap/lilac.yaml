@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-dbi
+- r-digest
+- r-genefilter
+- r-genomicranges
+- r-iranges
+- r-rmysql
+- r-rsamtools
+update_on:
+- regex: annmap_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/annmap

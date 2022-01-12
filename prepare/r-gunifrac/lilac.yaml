@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-dirmult
+- r-foreach
+- r-ggplot2
+- r-ggrepel
+- r-lmertest
+- r-matrixstats
+- r-modeest
+- r-rcpp
+- r-rmutil
+- r-statmod
+- r-vegan
+update_on:
+- regex: GUniFrac_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=GUniFrac

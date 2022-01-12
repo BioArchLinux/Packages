@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-igraph
+- r-rcy3
+- r-runit
+- r-stringr
+update_on:
+- regex: MOGAMUN_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MOGAMUN

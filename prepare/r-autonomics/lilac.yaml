@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-assertive
+- r-biocfilecache
+- r-biocgenerics
+- r-colorspace
+- r-data.table
+- r-edger
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-limma
+- r-magrittr
+- r-matrixstats
+- r-multiassayexperiment
+- r-pcamethods
+- r-r.utils
+- r-rappdirs
+- r-readxl
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-stringi
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: autonomics_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/autonomics

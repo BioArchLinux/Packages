@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-dorng
+- r-foreach
+- r-gsa
+- r-hgu133a.db
+- r-hgu133plus2.db
+- r-keggdzpathwaysgeo
+- r-keggrest
+- r-limma
+update_on:
+- regex: PADOG_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PADOG

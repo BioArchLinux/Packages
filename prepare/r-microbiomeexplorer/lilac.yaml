@@ -1,0 +1,40 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biomformat
+- r-broom
+- r-car
+- r-deseq2
+- r-dplyr
+- r-dt
+- r-forcats
+- r-heatmaply
+- r-knitr
+- r-limma
+- r-lubridate
+- r-magrittr
+- r-matrixstats
+- r-metagenomeseq
+- r-plotly
+- r-purrr
+- r-rcolorbrewer
+- r-readr
+- r-reshape2
+- r-rlang
+- r-rmarkdown
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-shinyjs
+- r-shinywidgets
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-vegan
+update_on:
+- regex: microbiomeExplorer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/microbiomeExplorer

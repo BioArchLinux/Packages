@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-asserthat
+- r-biocparallel
+- r-chipseeker
+- r-corrplot
+- r-data.table
+- r-dplyr
+- r-genomicranges
+- r-ggally
+- r-genefilter
+- r-gghalves
+- r-ggplot2
+- r-ggseqlogo
+- r-gviz
+- r-magrittr
+- r-org.hs.eg.db
+- r-plyr
+- r-reshape2
+- r-rtracklayer
+- r-stringr
+- r-tibble
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+- r-rmarkdown
+- r-knitr
+- r-complexheatmap
+- r-circlize
+- r-testthat
+update_on:
+- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+  source: regex
+  url: https://bioconductor.org/packages/ALPS

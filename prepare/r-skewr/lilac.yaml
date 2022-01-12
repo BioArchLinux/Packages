@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-illuminahumanmethylation450kmanifest
+- r-methylumi
+- r-minfi
+- r-mixsmsn
+- r-rcolorbrewer
+- r-s4vectors
+- r-watermelon
+update_on:
+- regex: skewr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/skewr

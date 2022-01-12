@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biocparallel
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggfortify
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-ivas
+- r-lme4
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: IMAS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IMAS

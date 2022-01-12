@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-epivizr
+- r-epivizrserver
+- r-genomeinfodb
+- r-genomicfeatures
+- r-git2r
+- r-s4vectors
+update_on:
+- regex: epivizrStandalone_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/epivizrStandalone

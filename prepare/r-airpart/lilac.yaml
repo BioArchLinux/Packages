@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-apeglm
+- r-clue
+- r-complexheatmap
+- r-dplyr
+- r-dynamictreecut
+- r-emdbook
+- r-forestplot
+- r-ggplot2
+- r-lpsolve
+- r-matrixstats
+- r-mclust
+- r-pbapply
+- r-plyr
+- r-rcolorbrewer
+- r-rlang
+- r-s4vectors
+- r-scater
+- r-singlecellexperiment
+- r-smurf
+- r-summarizedexperiment
+update_on:
+- regex: airpart_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/airpart

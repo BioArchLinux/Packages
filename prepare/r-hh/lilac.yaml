@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-colorspace
+- r-gridextra
+- r-hmisc
+- r-latticeextra
+- r-leaps
+- r-multcomp
+- r-rcolorbrewer
+- r-reshape2
+- r-rmpfr
+- r-shiny
+- r-vcd
+update_on:
+- regex: HH_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=HH

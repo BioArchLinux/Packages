@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-circlize
+- r-doparallel
+- r-foreach
+- r-graph
+- r-igraph
+- r-openxlsx
+- r-rbgl
+- r-rcurl
+- r-rjava
+- r-xml
+update_on:
+- regex: CHRONOS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CHRONOS

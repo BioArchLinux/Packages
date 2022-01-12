@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-entropy
+- r-fastica
+- r-fields
+- r-ggplot2
+- r-igraph
+- r-proxy
+- r-rcpp
+- r-reshape2
+- r-rtsne
+- r-scatterplot3d
+- r-statmod
+- r-tsp
+update_on:
+- regex: sincell_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sincell

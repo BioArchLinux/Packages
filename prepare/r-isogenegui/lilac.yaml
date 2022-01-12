@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-ff
+- r-geneplotter
+- r-goric
+- r-iso
+- r-isogene
+- r-jpeg
+- r-multtest
+- r-orcme
+- r-oriclust
+- r-orqa
+- r-rcolorbrewer
+- r-rcpp
+- r-relimp
+- r-tkrplot
+- r-xlsx
+update_on:
+- regex: IsoGeneGUI_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IsoGeneGUI

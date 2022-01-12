@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-colorspace
+- r-data.table
+- r-ggplot2
+- r-gridbase
+- r-igraph
+- r-rcolorbrewer
+- r-shiny
+update_on:
+- regex: treemap_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=treemap

@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-checkmate
+- r-crayon
+- r-edger
+- r-fitdistrplus
+- r-ggplot2
+- r-locfit
+- r-matrixstats
+- r-s4vectors
+- r-scales
+- r-scater
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: splatter_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/splatter

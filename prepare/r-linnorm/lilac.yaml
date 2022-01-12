@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-amap
+- r-apcluster
+- r-ellipse
+- r-fastcluster
+- r-fpc
+- r-ggdendro
+- r-ggplot2
+- r-gmodels
+- r-igraph
+- r-limma
+- r-mclust
+- r-rcpp
+- r-rcpparmadillo
+- r-rtsne
+- r-statmod
+- r-vegan
+- r-zoo
+update_on:
+- regex: Linnorm_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Linnorm

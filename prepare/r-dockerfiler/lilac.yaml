@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-attempt
+- r-cli
+- r-desc
+- r-fs
+- r-glue
+- r-jsonlite
+- r-pkgbuild
+- r-r6
+- r-remotes
+- r-usethis
+update_on:
+- regex: dockerfiler_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=dockerfiler

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-ggplot2
+- r-gridbase
+- r-hexbin
+- r-matrixstats
+- r-minfi
+- r-rcolorbrewer
+- r-shiny
+- r-summarizedexperiment
+update_on:
+- regex: MethylAid_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MethylAid

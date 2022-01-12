@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biocparallel
+- r-coop
+- r-delayedarray
+- r-dplyr
+- r-elasticnet
+- r-kernlab
+- r-matrixgenerics
+- r-matrixstats
+- r-origami
+- r-purrr
+- r-rdpack
+- r-rspectra
+- r-scaledmatrix
+- r-sparsepca
+- r-stringr
+- r-tibble
+update_on:
+- regex: scPCA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scPCA

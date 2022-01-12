@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-genomeintervals
+- r-randomforest
+update_on:
+- regex: ChIC.data_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChIC.data

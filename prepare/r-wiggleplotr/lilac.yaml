@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-cowplot
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-purrr
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: wiggleplotr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/wiggleplotr

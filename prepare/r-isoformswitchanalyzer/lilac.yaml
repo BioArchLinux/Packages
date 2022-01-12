@@ -1,0 +1,38 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-dbi
+- r-dexseq
+- r-dplyr
+- r-drimseq
+- r-edger
+- r-futile.logger
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-limma
+- r-magrittr
+- r-plyr
+- r-rcolorbrewer
+- r-rcurl
+- r-readr
+- r-reshape2
+- r-rtracklayer
+- r-stringr
+- r-tibble
+- r-tximeta
+- r-tximport
+- r-venndiagram
+- r-xvector
+update_on:
+- regex: IsoformSwitchAnalyzeR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IsoformSwitchAnalyzeR

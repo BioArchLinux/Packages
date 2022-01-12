@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-dropletutils
+- r-ggplot2
+- r-igraph
+- r-jpeg
+- r-jsonlite
+- r-magrittr
+- r-png
+- r-s4vectors
+- r-scater
+- r-scran
+- r-seurat
+- r-shiny
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: Spaniel_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Spaniel

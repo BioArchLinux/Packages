@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-gviz
+- r-igraph
+- r-interactionset
+- r-iranges
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+update_on:
+- regex: GenomicInteractions_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GenomicInteractions

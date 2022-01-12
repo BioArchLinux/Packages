@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-delayedarray
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-hash
+- r-iranges
+- r-keras
+- r-mltools
+- r-reticulate
+- r-rhdf5
+- r-s4vectors
+- r-seqinr
+- r-xvector
+update_on:
+- regex: CRISPRseek_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CRISPRseek

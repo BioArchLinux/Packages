@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-memoise
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: regioneR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/regioneR

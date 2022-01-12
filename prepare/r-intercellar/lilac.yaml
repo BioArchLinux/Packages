@@ -1,0 +1,44 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-circlize
+- r-colorspace
+- r-colourpicker
+- r-complexheatmap
+- r-config
+- r-data.table
+- r-dendextend
+- r-dplyr
+- r-dt
+- r-factoextra
+- r-fmsb
+- r-fs
+- r-ggplot2
+- r-golem
+- r-htmltools
+- r-htmlwidgets
+- r-igraph
+- r-plotly
+- r-plyr
+- r-readxl
+- r-rlang
+- r-scales
+- r-shiny
+- r-shinyalert
+- r-shinycssloaders
+- r-shinydashboard
+- r-shinyfeedback
+- r-shinyfiles
+- r-signal
+- r-tibble
+- r-tidyr
+- r-umap
+- r-visnetwork
+- r-wordcloud2
+update_on:
+- regex: InterCellar_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/InterCellar

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-genomicranges
+- r-gviz
+- r-iranges
+- r-rnamodr
+- r-s4vectors
+update_on:
+- regex: RNAmodR.AlkAnilineSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RNAmodR.AlkAnilineSeq

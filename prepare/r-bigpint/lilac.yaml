@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-delayedarray
+- r-dplyr
+- r-ggally
+- r-ggplot2
+- r-gridextra
+- r-hexbin
+- r-hmisc
+- r-htmlwidgets
+- r-plotly
+- r-plyr
+- r-rcolorbrewer
+- r-reshape
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-stringr
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: bigPint_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/bigPint

@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-csaw
+- r-deseq2
+- r-edger
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-limma
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-shortread
+- r-summarizedexperiment
+- r-txdb.dmelanogaster.ucsc.dm6.ensgene
+- r-variantannotation
+update_on:
+- regex: icetea_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/icetea

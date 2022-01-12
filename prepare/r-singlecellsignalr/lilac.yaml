@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocmanager
+- r-circlize
+- r-data.table
+- r-edger
+- r-foreach
+- r-gplots
+- r-igraph
+- r-limma
+- r-multtest
+- r-pheatmap
+- r-rtsne
+- r-scran
+- r-simlr
+- r-stringr
+update_on:
+- regex: SingleCellSignalR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SingleCellSignalR

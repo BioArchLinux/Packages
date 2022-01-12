@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-deepsnv
+- r-genomicranges
+- r-ggplot2
+- r-pheatmap
+- r-reshape2
+- r-rhtslib
+- r-s4vectors
+update_on:
+- regex: mitoClone2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mitoClone2

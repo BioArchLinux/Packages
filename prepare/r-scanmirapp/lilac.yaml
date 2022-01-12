@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-annotationhub
+- r-biocparallel
+- r-biostrings
+- r-data.table
+- r-digest
+- r-dt
+- r-ensembldb
+- r-fst
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-htmlwidgets
+- r-iranges
+- r-plotly
+- r-rintrojs
+- r-rtracklayer
+- r-s4vectors
+- r-scanmir
+- r-scanmirdata
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-waiter
+update_on:
+- regex: scanMiRApp_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scanMiRApp

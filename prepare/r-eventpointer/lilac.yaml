@@ -1,0 +1,39 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-affxparser
+- r-biostrings
+- r-bsgenome
+- r-cobs
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-glmnet
+- r-graph
+- r-igraph
+- r-iranges
+- r-iterators
+- r-limma
+- r-lpsolve
+- r-matrixstats
+- r-nnls
+- r-poibin
+- r-prodlim
+- r-qvalue
+- r-rbgl
+- r-rhdf5
+- r-s4vectors
+- r-sgseq
+- r-speedglm
+- r-stringr
+- r-summarizedexperiment
+- r-tximport
+update_on:
+- regex: EventPointer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EventPointer

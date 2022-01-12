@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biobroom
+- r-broom
+- r-data.table
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-futile.logger
+- r-ggplot2
+- r-gridextra
+- r-knitr
+- r-limma
+- r-magrittr
+- r-mefa
+- r-nls2
+- r-openxlsx
+- r-plyr
+- r-purrr
+- r-rcolorbrewer
+- r-rcurl
+- r-reshape2
+- r-rmarkdown
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-venndiagram
+- r-vgam
+update_on:
+- regex: TPP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TPP

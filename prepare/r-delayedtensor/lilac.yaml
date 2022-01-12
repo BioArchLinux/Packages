@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocsingular
+- r-delayedarray
+- r-delayedrandomarray
+- r-einsum
+- r-hdf5array
+- r-irlba
+- r-rtensor
+update_on:
+- regex: DelayedTensor_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DelayedTensor

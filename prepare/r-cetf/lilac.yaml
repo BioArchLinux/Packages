@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-clusterprofiler
+- r-complexheatmap
+- r-deseq2
+- r-dplyr
+- r-genomictools
+- r-genomictools.filehandler
+- r-ggally
+- r-ggnetwork
+- r-ggplot2
+- r-ggpubr
+- r-ggrepel
+- r-igraph
+- r-network
+- r-rcpp
+- r-rcpparmadillo
+- r-rcy3
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: CeTF_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CeTF

@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-colorspace
+- r-dendextend
+- r-egg
+- r-ggplot2
+- r-htmlwidgets
+- r-magrittr
+- r-plotly
+- r-rcolorbrewer
+- r-reshape2
+- r-scales
+- r-seriation
+- r-viridis
+- r-webshot
+update_on:
+- regex: heatmaply_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=heatmaply

@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-dbi
+- r-dbplyr
+- r-dplyr
+- r-lazyeval
+- r-rsqlite
+- r-s4vectors
+- r-tibble
+update_on:
+- regex: SQLDataFrame_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SQLDataFrame

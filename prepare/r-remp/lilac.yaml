@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-caret
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-impute
+- r-iranges
+- r-iterators
+- r-kernlab
+- r-minfi
+- r-org.hs.eg.db
+- r-ranger
+- r-readr
+- r-rtracklayer
+- r-s4vectors
+- r-settings
+- r-summarizedexperiment
+update_on:
+- regex: REMP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/REMP

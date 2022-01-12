@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-digest
+- r-dplyr
+- r-ggforce
+- r-ggplot2
+- r-ggrepel
+- r-graphlayouts
+- r-gtable
+- r-igraph
+- r-rcpp
+- r-rlang
+- r-scales
+- r-tidygraph
+- r-viridis
+- r-withr
+update_on:
+- regex: ggraph_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggraph

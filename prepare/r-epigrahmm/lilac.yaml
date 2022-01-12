@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bamsignals
+- r-csaw
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggpubr
+- r-greylistchip
+- r-iranges
+- r-limma
+- r-magrittr
+- r-pheatmap
+- r-rcpp
+- r-rcpparmadillo
+- r-rhdf5
+- r-rhdf5lib
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+update_on:
+- regex: epigraHMM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/epigraHMM

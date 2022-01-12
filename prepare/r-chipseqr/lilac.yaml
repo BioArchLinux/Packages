@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-fbasics
+- r-genomicranges
+- r-hilbertvis
+- r-iranges
+- r-s4vectors
+- r-shortread
+- r-timsac
+update_on:
+- regex: ChIPseqR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChIPseqR

@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biomart
+- r-biostrings
+- r-dbi
+- r-dplyr
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-graph
+- r-interactionset
+- r-iranges
+- r-keggrest
+- r-matrixstats
+- r-multtest
+- r-rbgl
+- r-regioner
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-venndiagram
+update_on:
+- regex: ChIPpeakAnno_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChIPpeakAnno

@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-bit64
+- r-chron
+- r-data.table
+- r-doparallel
+- r-dt
+- r-envipat
+- r-foreach
+- r-ggplot2
+- r-ggpubr
+- r-gridextra
+- r-hmisc
+- r-minpack.lm
+- r-msnbase
+- r-plotly
+- r-rcpp
+- r-rhdf5
+- r-rlang
+- r-scales
+- r-shiny
+- r-shinyscreenshot
+- r-signal
+update_on:
+- regex: ptairMS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ptairMS

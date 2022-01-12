@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-expm
+- r-igraph
+- r-plyr
+- r-precrec
+- r-rcpp
+- r-rcpparmadillo
+- r-rcppparallel
+update_on:
+- regex: diffuStats_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/diffuStats

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-cli
+- r-curl
+- r-googleauthr
+- r-httr
+- r-jsonlite
+- r-openssl
+- r-yaml
+- r-zip
+update_on:
+- regex: googleCloudStorageR_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=googleCloudStorageR

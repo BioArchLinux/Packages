@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-car
+- r-flowcore
+- r-flowviz
+- r-flowworkspace
+- r-gplots
+- r-rfoc
+- r-rgeos
+- r-sp
+update_on:
+- regex: flowDensity_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/flowDensity

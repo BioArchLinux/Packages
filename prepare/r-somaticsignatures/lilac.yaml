@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biostrings
+- r-genomeinfodb
+- r-genomicranges
+- r-ggbio
+- r-ggplot2
+- r-iranges
+- r-nmf
+- r-pcamethods
+- r-proxy
+- r-reshape2
+- r-s4vectors
+- r-variantannotation
+update_on:
+- regex: SomaticSignatures_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SomaticSignatures

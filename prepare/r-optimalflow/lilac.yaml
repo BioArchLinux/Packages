@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dbscan
+- r-doparallel
+- r-dplyr
+- r-ellipse
+- r-flowmeans
+- r-foreach
+- r-optimalflowdata
+- r-randomforest
+- r-rfast
+- r-rgl
+- r-rlang
+- r-robustbase
+- r-transport
+update_on:
+- regex: optimalFlow_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/optimalFlow

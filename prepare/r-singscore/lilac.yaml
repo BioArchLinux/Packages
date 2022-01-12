@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-edger
+- r-ggplot2
+- r-ggrepel
+- r-gseabase
+- r-magrittr
+- r-matrixstats
+- r-plotly
+- r-plyr
+- r-rcolorbrewer
+- r-reshape
+- r-reshape2
+- r-s4vectors
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: singscore_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/singscore

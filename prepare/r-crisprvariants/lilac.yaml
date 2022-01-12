@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocparallel
+- r-biostrings
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: CrispRVariants_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CrispRVariants

@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-doparallel
+- r-dplyr
+- r-dt
+- r-foreach
+- r-genomicranges
+- r-ggplot2
+- r-gplots
+- r-heatmaply
+- r-limma
+- r-minfi
+- r-plotly
+- r-reshape2
+- r-rlang
+- r-rmarkdown
+- r-rtracklayer
+- r-shiny
+- r-shinycssloaders
+- r-shinyjs
+- r-shinythemes
+- r-shinywidgets
+- r-statmod
+- r-tidyr
+- r-zip
+update_on:
+- regex: shinyepico_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/shinyepico

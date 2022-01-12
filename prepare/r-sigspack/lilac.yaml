@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-quadprog
+- r-biobase
+- r-bsgenome
+- r-variantannotation
+- r-biostrings
+- r-genomeinfodb
+- r-genomicranges
+- r-rtracklayer
+- r-summarizedexperiment
+update_on:
+- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+  source: regex
+  url: https://bioconductor.org/packages/SigsPack
+

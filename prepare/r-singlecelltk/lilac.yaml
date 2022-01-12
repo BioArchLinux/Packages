@@ -1,0 +1,80 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-ape
+- r-batchelor
+- r-biobase
+- r-biocparallel
+- r-celda
+- r-celldex
+- r-circlize
+- r-colorspace
+- r-colourpicker
+- r-complexheatmap
+- r-cowplot
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-deseq2
+- r-dplyr
+- r-dropletutils
+- r-dt
+- r-enrichr
+- r-experimenthub
+- r-fields
+- r-fishpond
+- r-ggplot2
+- r-ggplotify
+- r-ggrepel
+- r-ggtree
+- r-gridextra
+- r-gseabase
+- r-gsva
+- r-gsvadata
+- r-igraph
+- r-limma
+- r-magrittr
+- r-mast
+- r-matrixstats
+- r-metap
+- r-msigdbr
+- r-multtest
+- r-plotly
+- r-r.utils
+- r-rcolorbrewer
+- r-reshape2
+- r-reticulate
+- r-rlang
+- r-rmarkdown
+- r-rocr
+- r-rtsne
+- r-s4vectors
+- r-scater
+- r-scdblfinder
+- r-scds
+- r-scmerge
+- r-scran
+- r-scrnaseq
+- r-seurat
+- r-shiny
+- r-shinyalert
+- r-shinycssloaders
+- r-shinyjs
+- r-singlecellexperiment
+- r-singler
+- r-summarizedexperiment
+- r-sva
+- r-tenxpbmcdata
+- r-tibble
+- r-tximport
+- r-vam
+- r-withr
+- r-yaml
+- r-zinbwave
+update_on:
+- regex: singleCellTK_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/singleCellTK

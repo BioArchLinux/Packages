@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-dplyr
+- r-fpc
+- r-ggplot2
+- r-igraph
+- r-maaslin2
+- r-metafor
+- r-tidyr
+update_on:
+- regex: MMUPHin_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MMUPHin

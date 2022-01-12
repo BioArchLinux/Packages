@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocfilecache
+- r-biocmanager
+- r-edger
+- r-go.db
+- r-graph
+- r-graphite
+- r-gseabase
+- r-hwriter
+- r-kegggraph
+- r-keggrest
+- r-limma
+- r-pathview
+- r-rgraphviz
+- r-s4vectors
+- r-safe
+- r-spia
+- r-summarizedexperiment
+update_on:
+- regex: EnrichmentBrowser_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EnrichmentBrowser

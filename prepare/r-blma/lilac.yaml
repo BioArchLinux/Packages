@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-graph
+- r-gsa
+- r-limma
+- r-metafor
+- r-padog
+- r-rontotools
+update_on:
+- regex: BLMA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BLMA

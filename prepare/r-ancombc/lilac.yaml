@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-microbiome
+- r-nloptr
+- r-phyloseq
+- r-rdpack
+update_on:
+- regex: ANCOMBC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ANCOMBC

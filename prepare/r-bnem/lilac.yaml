@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affy
+- r-binom
+- r-biobase
+- r-cellnoptr
+- r-epinem
+- r-flexclust
+- r-graph
+- r-limma
+- r-matrixstats
+- r-mnem
+- r-rcolorbrewer
+- r-rgraphviz
+- r-rmarkdown
+- r-snowfall
+- r-sva
+- r-vsn
+update_on:
+- regex: bnem_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/bnem

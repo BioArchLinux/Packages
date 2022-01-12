@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-dplyr
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-knitr
+- r-magrittr
+- r-rtracklayer
+update_on:
+- regex: Guitar_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Guitar

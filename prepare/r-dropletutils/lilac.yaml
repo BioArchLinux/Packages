@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beachmat
+- r-bh
+- r-biocgenerics
+- r-biocparallel
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dqrng
+- r-edger
+- r-genomicranges
+- r-hdf5array
+- r-iranges
+- r-r.utils
+- r-rcpp
+- r-rhdf5
+- r-rhdf5lib
+- r-s4vectors
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: DropletUtils_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DropletUtils

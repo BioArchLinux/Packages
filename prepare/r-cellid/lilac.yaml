@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-data.table
+- r-fastmatch
+- r-fgsea
+- r-ggplot2
+- r-glue
+- r-irlba
+- r-matrixstats
+- r-pbapply
+- r-rcpp
+- r-rcpparmadillo
+- r-reticulate
+- r-rtsne
+- r-scater
+- r-seurat
+- r-singlecellexperiment
+- r-stringr
+- r-summarizedexperiment
+- r-tictoc
+- r-umap
+update_on:
+- regex: CelliD_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CelliD

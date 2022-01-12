@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-matrixstats
+- r-ontoproc
+- r-org.mm.eg.db
+- r-restfulse
+- r-shiny
+- r-summarizedexperiment
+update_on:
+- regex: tenXplore_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tenXplore

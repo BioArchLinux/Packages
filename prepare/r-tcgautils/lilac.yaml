@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-genomeinfodb
+- r-genomicdatacommons
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-multiassayexperiment
+- r-raggedexperiment
+- r-rvest
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-xml2
+update_on:
+- regex: TCGAutils_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TCGAutils

@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-glue
+- r-plyr
+- r-progress
+- r-rlang
+- r-scales
+- r-stringi
+- r-tweenr
+update_on:
+- regex: gganimate_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=gganimate

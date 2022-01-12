@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-anylib
+- r-biosigner
+- r-caret
+- r-clusterprofiler
+- r-config
+- r-deseq2
+- r-dplyr
+- r-dt
+- r-easypubmed
+- r-enrichplot
+- r-golem
+- r-htmltools
+- r-igraph
+- r-infotheo
+- r-metap
+- r-mixomics
+- r-networkd3
+- r-ppcor
+- r-r6
+- r-reactomepa
+- r-rmarkdown
+- r-rwikipathways
+- r-shiny
+- r-shinydashboard
+- r-stringr
+update_on:
+- regex: multiSight_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/multiSight

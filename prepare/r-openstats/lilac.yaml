@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aiccmodavg
+- r-car
+- r-hmisc
+- r-jsonlite
+- r-knitr
+- r-rlist
+- r-summarytools
+update_on:
+- regex: OpenStats_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/OpenStats

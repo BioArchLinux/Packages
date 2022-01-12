@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocfilecache
+- r-chk
+- r-jsonlite
+- r-lgr
+- r-lifecycle
+- r-openssl
+- r-plyr
+- r-progress
+- r-r6
+- r-rappdirs
+- r-rcpp
+- r-rcurl
+- r-rsqlite
+- r-stringr
+- r-testthat
+- r-withr
+- r-xml
+- r-yaml
+update_on:
+- regex: biodb_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/biodb

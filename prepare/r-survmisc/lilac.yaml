@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-ggplot2
+- r-gridextra
+- r-km.ci
+- r-kmsurv
+- r-knitr
+- r-xtable
+- r-zoo
+update_on:
+- regex: survMisc_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=survMisc

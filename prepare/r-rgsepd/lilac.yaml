@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biomart
+- r-deseq2
+- r-go.db
+- r-goseq
+- r-gplots
+- r-hash
+- r-org.hs.eg.db
+- r-summarizedexperiment
+update_on:
+- regex: rgsepd_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rgsepd

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-genomicfeatures
+- r-go.db
+- r-org.mm.eg.db
+- r-organismdbi
+- r-txdb.mmusculus.ucsc.mm10.knowngene
+update_on:
+- regex: Mus.musculus_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Mus.musculus

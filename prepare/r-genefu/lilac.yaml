@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aims
+- r-amap
+- r-biomart
+- r-ic10
+- r-impute
+- r-limma
+- r-mclust
+- r-survcomp
+update_on:
+- regex: genefu_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/genefu

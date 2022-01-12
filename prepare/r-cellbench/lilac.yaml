@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocfilecache
+- r-biocgenerics
+- r-biocparallel
+- r-dplyr
+- r-glue
+- r-lubridate
+- r-magrittr
+- r-memoise
+- r-purrr
+- r-rappdirs
+- r-rlang
+- r-singlecellexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: CellBench_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CellBench

@@ -1,0 +1,64 @@
+# system requirements: openssl
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=GGally
+_pkgver=2.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Extension to 'ggplot2'"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-dplyr
+  r-forcats
+  r-ggplot2
+  r-gtable
+  r-lifecycle
+  r-plyr
+  r-progress
+  r-rcolorbrewer
+  r-reshape
+  r-rlang
+  r-scales
+  r-tidyr
+)
+optdepends=(
+  r-broom
+  r-broom.helpers
+  r-chemometrics
+  r-crosstalk
+  r-emmeans
+  r-geosphere
+  r-ggforce
+  r-hmisc
+  r-igraph
+  r-intergraph
+  r-knitr
+  r-labelled
+  r-mapproj
+  r-maps
+  r-network
+  r-nnet
+  r-rmarkdown
+  r-roxygen2
+  r-scagnostics
+  r-sna
+  r-spelling
+  r-survival
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biasedurn
+- r-biobase
+- r-biocgenerics
+- r-genomicranges
+- r-go.db
+- r-illuminahumanmethylation450kanno.ilmn12.hg19
+- r-illuminahumanmethylation450kmanifest
+- r-illuminahumanmethylationepicanno.ilm10b4.hg19
+- r-illuminahumanmethylationepicmanifest
+- r-iranges
+- r-limma
+- r-methylumi
+- r-minfi
+- r-org.hs.eg.db
+- r-ruv
+- r-s4vectors
+- r-statmod
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: missMethyl_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/missMethyl

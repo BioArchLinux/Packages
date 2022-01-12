@@ -1,0 +1,38 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biocstyle
+- r-complexheatmap
+- r-corpcor
+- r-deseq2
+- r-devtools
+- r-dplyr
+- r-dt
+- r-edger
+- r-ggplot2
+- r-glmnet
+- r-gmodels
+- r-knitr
+- r-limma
+- r-matrixstats
+- r-phyloseq
+- r-plotly
+- r-plyr
+- r-rcolorbrewer
+- r-rentrez
+- r-reshape2
+- r-rocr
+- r-scales
+- r-shiny
+- r-shinyjs
+- r-tidyr
+- r-vegan
+- r-webshot
+- r-xml
+update_on:
+- regex: PathoStat_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PathoStat

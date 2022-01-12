@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-changepoint
+- r-flowcore
+- r-ggplot2
+- r-knitr
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-rmarkdown
+- r-scales
+update_on:
+- regex: flowAI_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/flowAI

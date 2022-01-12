@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocstyle
+- r-bnlearn
+- r-c50
+- r-clusterprofiler
+- r-dbi
+- r-dplyr
+- r-gdata
+- r-ggplot2
+- r-go.db
+- r-graph
+- r-impute
+- r-matrixstats
+- r-openxlsx
+- r-partykit
+- r-pheatmap
+- r-preprocesscore
+- r-reactomepa
+- r-rgraphviz
+- r-wgcna
+update_on:
+- regex: Pigengene_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Pigengene

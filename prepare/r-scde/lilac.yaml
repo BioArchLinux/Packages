@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-cairo
+- r-edger
+- r-extremes
+- r-flexmix
+- r-pcamethods
+- r-quantreg
+- r-rcolorbrewer
+- r-rcpp
+- r-rcpparmadillo
+- r-rjson
+- r-rmtstat
+- r-rook
+update_on:
+- regex: scde_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scde

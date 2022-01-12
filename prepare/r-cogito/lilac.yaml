@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocmanager
+- r-entropy
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-jsonlite
+- r-magrittr
+- r-rmarkdown
+- r-s4vectors
+- r-txdb.mmusculus.ucsc.mm9.knowngene
+update_on:
+- regex: Cogito_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Cogito

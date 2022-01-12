@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-knitr
+- r-lazyeval
+- r-magrittr
+- r-prettydoc
+- r-raster
+- r-rmarkdown
+- r-shortread
+- r-stringr
+- r-tidyr
+- r-xml
+- r-yaml
+update_on:
+- regex: basecallQC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/basecallQC

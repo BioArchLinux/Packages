@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-minfi
+update_on:
+- regex: IlluminaHumanMethylation450kanno.ilmn12.hg19_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IlluminaHumanMethylation450kanno.ilmn12.hg19

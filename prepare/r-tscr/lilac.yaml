@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-dtw
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-kmlshape
+- r-knitr
+- r-latex2exp
+- r-prettydoc
+- r-rcolorbrewer
+- r-rmarkdown
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: tscR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tscR

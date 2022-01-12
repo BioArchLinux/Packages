@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-dplyr
+- r-iranges
+- r-rlang
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-treeio
+update_on:
+- regex: TreeSummarizedExperiment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TreeSummarizedExperiment

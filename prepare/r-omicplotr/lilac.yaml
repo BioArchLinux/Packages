@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aldex2
+- r-compositions
+- r-dt
+- r-jsonlite
+- r-knitr
+- r-matrixstats
+- r-rmarkdown
+- r-shiny
+- r-vegan
+- r-zcompositions
+update_on:
+- regex: omicplotR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/omicplotR

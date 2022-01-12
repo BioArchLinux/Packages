@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-futile.logger
+- r-ggplot2
+- r-magrittr
+- r-purrr
+- r-tibble
+- r-upsetr
+- r-venndiagram
+update_on:
+- regex: VennDetail_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/VennDetail

@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biobase
+- r-car
+- r-ggforce
+- r-ggplot2
+- r-limma
+- r-matrixstats
+- r-preprocesscore
+- r-raster
+- r-rcmdrmisc
+- r-summarizedexperiment
+- r-vsn
+update_on:
+- regex: NormalyzerDE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/NormalyzerDE

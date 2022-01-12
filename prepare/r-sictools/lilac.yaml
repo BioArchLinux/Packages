@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-doparallel
+- r-genomicranges
+- r-iranges
+- r-matrixstats
+- r-plyr
+- r-rsamtools
+- r-stringr
+update_on:
+- regex: SICtools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SICtools

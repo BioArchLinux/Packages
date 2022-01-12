@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-gtools
+- r-hgu133a.db
+- r-httr
+- r-igraph
+- r-kegggraph
+- r-keggrest
+- r-kodata
+- r-org.hs.eg.db
+- r-plyr
+- r-rjsonio
+- r-xml
+update_on:
+- regex: KEGGlincs_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/KEGGlincs

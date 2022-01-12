@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-biobase
+- r-biocgenerics
+- r-fpc
+- r-gbm
+- r-gdata
+- r-genefilter
+- r-ggvis
+- r-hwriter
+- r-magrittr
+- r-mlbench
+- r-pls
+- r-rcolorbrewer
+- r-rcpp
+- r-sfsmisc
+- r-shiny
+- r-threejs
+update_on:
+- regex: MLInterfaces_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MLInterfaces

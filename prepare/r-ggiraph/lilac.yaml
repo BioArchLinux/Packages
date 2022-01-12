@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-htmltools
+- r-htmlwidgets
+- r-purrr
+- r-rcpp
+- r-rlang
+- r-systemfonts
+- r-uuid
+update_on:
+- regex: ggiraph_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggiraph

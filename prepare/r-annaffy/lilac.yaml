@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocmanager
+- r-dbi
+- r-go.db
+update_on:
+- regex: annaffy_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/annaffy

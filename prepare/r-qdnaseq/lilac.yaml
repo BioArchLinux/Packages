@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-cghbase
+- r-cghcall
+- r-dnacopy
+- r-future.apply
+- r-genomicranges
+- r-iranges
+- r-matrixstats
+- r-r.utils
+- r-rsamtools
+update_on:
+- regex: QDNAseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/QDNAseq

@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-data.table
+- r-dnacopy
+- r-futile.logger
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-mclust
+- r-rcolorbrewer
+- r-rhdf5
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-variantannotation
+- r-vgam
+update_on:
+- regex: PureCN_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PureCN

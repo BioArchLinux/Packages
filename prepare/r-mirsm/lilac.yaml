@@ -1,0 +1,39 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bibitr
+- r-bicare
+- r-biclust
+- r-biobase
+- r-dbscan
+- r-dynamictreecut
+- r-energy
+- r-fabia
+- r-flashclust
+- r-gfa
+- r-gseabase
+- r-ibbig
+- r-igraph
+- r-isa2
+- r-linkcomm
+- r-matrixcorrelation
+- r-mcl
+- r-mclust
+- r-mirsponger
+- r-nmf
+- r-org.hs.eg.db
+- r-pma
+- r-ppclust
+- r-rcpp
+- r-rqubic
+- r-s4vd
+- r-sombrero
+- r-subspace
+- r-summarizedexperiment
+- r-wgcna
+update_on:
+- regex: miRSM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/miRSM

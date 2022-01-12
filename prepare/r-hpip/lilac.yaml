@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-corrplot
+- r-dplyr
+- r-ggplot2
+- r-httr
+- r-igraph
+- r-magrittr
+- r-proc
+- r-protr
+- r-prroc
+- r-purrr
+- r-readr
+- r-stringr
+- r-tibble
+- r-tidyr
+update_on:
+- regex: HPiP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/HPiP

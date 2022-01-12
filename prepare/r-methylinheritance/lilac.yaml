@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-methylkit
+- r-rebus
+- r-s4vectors
+update_on:
+- regex: methylInheritance_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/methylInheritance

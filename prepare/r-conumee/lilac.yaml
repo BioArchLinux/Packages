@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dnacopy
+- r-genomeinfodb
+- r-genomicranges
+- r-illuminahumanmethylation450kanno.ilmn12.hg19
+- r-illuminahumanmethylation450kmanifest
+- r-illuminahumanmethylationepicanno.ilm10b2.hg19
+- r-illuminahumanmethylationepicmanifest
+- r-iranges
+- r-minfi
+- r-rtracklayer
+update_on:
+- regex: conumee_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/conumee

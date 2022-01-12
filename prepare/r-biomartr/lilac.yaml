@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-biostrings
+- r-curl
+- r-data.table
+- r-downloader
+- r-dplyr
+- r-fs
+- r-httr
+- r-jsonlite
+- r-philentropy
+- r-purrr
+- r-r.utils
+- r-rcurl
+- r-readr
+- r-stringr
+- r-tibble
+- r-xml
+update_on:
+- regex: biomartr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=biomartr

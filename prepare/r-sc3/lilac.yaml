@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-doparallel
+- r-dorng
+- r-e1071
+- r-foreach
+- r-ggplot2
+- r-pheatmap
+- r-rcpp
+- r-rcpparmadillo
+- r-robustbase
+- r-rocr
+- r-rrcov
+- r-s4vectors
+- r-shiny
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-writexls
+update_on:
+- regex: SC3_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SC3

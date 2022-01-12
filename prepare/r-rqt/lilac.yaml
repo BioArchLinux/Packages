@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-car
+- r-compquadform
+- r-glmnet
+- r-metap
+- r-pls
+- r-ropls
+- r-runit
+- r-summarizedexperiment
+update_on:
+- regex: rqt_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/rqt

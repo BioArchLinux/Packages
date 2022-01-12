@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-delayedmatrixstats
+- r-gseabase
+- r-hdf5array
+- r-iranges
+- r-s4vectors
+- r-singlecellexperiment
+- r-sparsematrixstats
+- r-summarizedexperiment
+update_on:
+- regex: GSVA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GSVA

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-edger
+- r-genomicranges
+- r-iranges
+- r-limma
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: eisaR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/eisaR

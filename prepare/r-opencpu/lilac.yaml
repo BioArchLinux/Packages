@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-brew
+- r-curl
+- r-evaluate
+- r-httpuv
+- r-jsonlite
+- r-knitr
+- r-mime
+- r-openssl
+- r-protolite
+- r-rappdirs
+- r-remotes
+- r-sys
+- r-webutils
+- r-zip
+update_on:
+- regex: opencpu_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=opencpu

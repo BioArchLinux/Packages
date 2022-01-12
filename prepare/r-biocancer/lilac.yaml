@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-algdesign
+- r-annotationdbi
+- r-biobase
+- r-cgdsr
+- r-clusterprofiler
+- r-diagrammer
+- r-dose
+- r-dplyr
+- r-dt
+- r-genetclassifier
+- r-go.db
+- r-htmlwidgets
+- r-import
+- r-org.bt.eg.db
+- r-org.hs.eg.db
+- r-plyr
+- r-radiant.data
+- r-reactome.db
+- r-reactomepa
+- r-shiny
+- r-shinythemes
+- r-tibble
+- r-visnetwork
+- r-xml
+update_on:
+- regex: bioCancer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/bioCancer

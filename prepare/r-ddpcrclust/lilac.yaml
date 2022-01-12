@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clue
+- r-flowcore
+- r-flowdensity
+- r-flowpeaks
+- r-ggplot2
+- r-openxlsx
+- r-plotrix
+- r-r.utils
+- r-samspectral
+update_on:
+- regex: ddPCRclust_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ddPCRclust

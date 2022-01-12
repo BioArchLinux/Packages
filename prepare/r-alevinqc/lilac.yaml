@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-dplyr
+- r-dt
+- r-ggally
+- r-ggplot2
+- r-rjson
+- r-rlang
+- r-rmarkdown
+- r-shiny
+- r-shinydashboard
+- r-tximport
+update_on:
+- regex: alevinQC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/alevinQC

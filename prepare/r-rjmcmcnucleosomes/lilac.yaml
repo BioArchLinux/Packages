@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-consensusseeker
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-rcpp
+- r-s4vectors
+update_on:
+- regex: RJMCMCNucleosomes_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RJMCMCNucleosomes

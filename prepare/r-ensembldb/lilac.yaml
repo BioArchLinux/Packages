@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-curl
+- r-dbi
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-protgenerics
+- r-rsamtools
+- r-rsqlite
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: ensembldb_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ensembldb

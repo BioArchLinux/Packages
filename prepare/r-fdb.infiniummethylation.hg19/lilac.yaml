@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biostrings
+- r-genomicfeatures
+- r-org.hs.eg.db
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+update_on:
+- regex: FDb.InfiniumMethylation.hg19_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/FDb.InfiniumMethylation.hg19

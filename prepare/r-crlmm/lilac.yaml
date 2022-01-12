@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-affyio
+- r-beanplot
+- r-biobase
+- r-biocgenerics
+- r-ellipse
+- r-ff
+- r-foreach
+- r-illuminaio
+- r-limma
+- r-matrixstats
+- r-mvtnorm
+- r-oligoclasses
+- r-preprocesscore
+- r-rcppeigen
+- r-vgam
+update_on:
+- regex: crlmm_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/crlmm

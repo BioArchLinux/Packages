@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-base64enc
+- r-checkmate
+- r-dplyr
+- r-htmltools
+- r-lubridate
+- r-magick
+- r-matrixstats
+- r-pander
+- r-pryr
+- r-rapportools
+- r-tibble
+- r-tidyr
+update_on:
+- regex: summarytools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=summarytools

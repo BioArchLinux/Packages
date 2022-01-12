@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-biocneighbors
+- r-biocparallel
+- r-concaveman
+- r-cytomapper
+- r-data.table
+- r-dplyr
+- r-dt
+- r-ebimage
+- r-ggplot2
+- r-ggraph
+- r-igraph
+- r-magrittr
+- r-pheatmap
+- r-readr
+- r-rtriangle
+- r-s4vectors
+- r-scuttle
+- r-sf
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-stringr
+- r-summarizedexperiment
+- r-tidygraph
+- r-viridis
+- r-vroom
+update_on:
+- regex: imcRtools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/imcRtools

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-biostrings
+- r-bsgenome
+- r-dnacopy
+- r-edger
+- r-genomicranges
+- r-gtools
+- r-iranges
+- r-preprocesscore
+- r-rsamtools
+- r-rtracklayer
+update_on:
+- regex: MEDIPS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MEDIPS

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ada
+- r-data.table
+- r-dbi
+- r-e1071
+- r-evd
+- r-ff
+- r-ipred
+- r-rsqlite
+- r-xtable
+update_on:
+- regex: RecordLinkage_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=RecordLinkage

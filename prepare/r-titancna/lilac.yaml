@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-data.table
+- r-dplyr
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-variantannotation
+update_on:
+- regex: TitanCNA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TitanCNA

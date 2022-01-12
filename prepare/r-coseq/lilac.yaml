@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-capushe
+- r-compositions
+- r-corrplot
+- r-deseq2
+- r-e1071
+- r-edger
+- r-ggplot2
+- r-htscluster
+- r-htsfilter
+- r-mvtnorm
+- r-rmixmod
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+update_on:
+- regex: coseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/coseq

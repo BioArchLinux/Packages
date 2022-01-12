@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-nlp
+- r-rcpp
+- r-slam
+- r-xml2
+update_on:
+- regex: tm_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=tm

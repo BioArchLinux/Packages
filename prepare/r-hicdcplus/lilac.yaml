@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bbmle
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicinteractions
+- r-genomicranges
+- r-interactionset
+- r-iranges
+- r-pscl
+- r-r.utils
+- r-rcpp
+- r-rlang
+- r-rtracklayer
+- r-s4vectors
+- r-tibble
+- r-tidyr
+update_on:
+- regex: HiCDCPlus_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/HiCDCPlus

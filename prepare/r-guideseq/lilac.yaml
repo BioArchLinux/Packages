@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-chippeakanno
+- r-crisprseek
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-hash
+- r-iranges
+- r-limma
+- r-matrixstats
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: GUIDEseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GUIDEseq

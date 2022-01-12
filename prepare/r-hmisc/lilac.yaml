@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-base64enc
+- r-data.table
+- r-formula
+- r-ggplot2
+- r-gridextra
+- r-gtable
+- r-htmltable
+- r-htmltools
+- r-latticeextra
+- r-viridis
+update_on:
+- regex: Hmisc_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=Hmisc

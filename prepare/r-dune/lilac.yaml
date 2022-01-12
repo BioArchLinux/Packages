@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aricode
+- r-biocparallel
+- r-dplyr
+- r-gganimate
+- r-ggplot2
+- r-magrittr
+- r-purrr
+- r-rcolorbrewer
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: Dune_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Dune

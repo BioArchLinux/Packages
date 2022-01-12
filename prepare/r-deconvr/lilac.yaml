@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biocgenerics
+- r-data.table
+- r-dplyr
+- r-e1071
+- r-foreach
+- r-genomicranges
+- r-iranges
+- r-magrittr
+- r-matrixstats
+- r-methylkit
+- r-nnls
+- r-quadprog
+- r-rsq
+- r-s4vectors
+- r-tidyr
+update_on:
+- regex: deconvR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/deconvR

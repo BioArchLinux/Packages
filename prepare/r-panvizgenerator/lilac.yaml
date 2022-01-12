@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-findmyfriends
+- r-igraph
+- r-jsonlite
+- r-pcamethods
+- r-shiny
+update_on:
+- regex: PanVizGenerator_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PanVizGenerator

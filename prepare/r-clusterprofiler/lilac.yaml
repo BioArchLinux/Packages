@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-dose
+- r-downloader
+- r-dplyr
+- r-enrichplot
+- r-go.db
+- r-gosemsim
+- r-magrittr
+- r-plyr
+- r-qvalue
+- r-rlang
+- r-tidyr
+- r-yulab.utils
+update_on:
+- regex: clusterProfiler_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/clusterProfiler

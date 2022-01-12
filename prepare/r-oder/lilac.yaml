@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocfilecache
+- r-biocgenerics
+- r-dasper
+- r-data.table
+- r-derfinder
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggpubr
+- r-ggrepel
+- r-iranges
+- r-magrittr
+- r-megadepth
+- r-plyr
+- r-purrr
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+- r-tibble
+update_on:
+- regex: ODER_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ODER

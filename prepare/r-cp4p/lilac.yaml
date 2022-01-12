@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-limma
+- r-mess
+- r-multtest
+- r-qvalue
+update_on:
+- regex: cp4p_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=cp4p

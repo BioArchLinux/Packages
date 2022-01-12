@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-chipenrich.data
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-latticeextra
+- r-org.dm.eg.db
+- r-org.dr.eg.db
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-org.rn.eg.db
+- r-plyr
+- r-rms
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+update_on:
+- regex: chipenrich_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/chipenrich

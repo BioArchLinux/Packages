@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-dplyr
+- r-ebimage
+- r-irlba
+- r-magrittr
+- r-matter
+- r-mclust
+- r-protgenerics
+- r-s4vectors
+- r-signal
+- r-sp
+- r-viridislite
+update_on:
+- regex: Cardinal_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Cardinal

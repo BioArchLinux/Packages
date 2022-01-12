@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-ggthemes
+- r-knitr
+- r-purrr
+- r-rvest
+- r-scales
+- r-stringi
+- r-survminer
+- r-viridis
+- r-xml
+- r-xml2
+update_on:
+- regex: RTCGA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RTCGA

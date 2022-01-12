@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-combinepvalue
+- r-dplyr
+- r-edger
+- r-epinem
+- r-expm
+- r-ggplot2
+- r-ggraph
+- r-glm2
+- r-glue
+- r-graph
+- r-graphite
+- r-harmonicmeanp
+- r-igraph
+- r-logger
+- r-metap
+- r-mnem
+- r-naturalsort
+- r-org.hs.eg.db
+- r-pcalg
+- r-ppcor
+- r-purrr
+- r-reshape2
+- r-rgraphviz
+- r-rlang
+- r-tidygraph
+- r-tidyverse
+update_on:
+- regex: dce_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/dce

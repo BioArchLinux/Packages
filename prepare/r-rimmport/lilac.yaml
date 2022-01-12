@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dbi
+- r-dplyr
+- r-plyr
+- r-reshape2
+- r-rsqlite
+- r-sqldf
+update_on:
+- regex: RImmPort_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RImmPort

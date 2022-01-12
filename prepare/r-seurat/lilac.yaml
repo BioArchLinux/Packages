@@ -1,0 +1,48 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-fitdistrplus
+- r-future
+- r-future.apply
+- r-ggplot2
+- r-ggrepel
+- r-ggridges
+- r-httr
+- r-ica
+- r-igraph
+- r-irlba
+- r-jsonlite
+- r-leiden
+- r-lmtest
+- r-matrixstats
+- r-miniui
+- r-patchwork
+- r-pbapply
+- r-plotly
+- r-png
+- r-rann
+- r-rcolorbrewer
+- r-rcpp
+- r-rcppannoy
+- r-rcppeigen
+- r-rcppprogress
+- r-reticulate
+- r-rlang
+- r-rocr
+- r-rtsne
+- r-scales
+- r-scattermore
+- r-sctransform
+- r-seuratobject
+- r-shiny
+- r-spatstat.core
+- r-spatstat.geom
+- r-tibble
+- r-uwot
+update_on:
+- regex: Seurat_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=Seurat

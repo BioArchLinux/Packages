@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-adductdata
+- r-ade4
+- r-annotationhub
+- r-bootstrap
+- r-data.table
+- r-dosnow
+- r-dplyr
+- r-dt
+- r-experimenthub
+- r-fastcluster
+- r-foreach
+- r-fpc
+- r-mzr
+- r-orgmassspecr
+- r-pastecs
+- r-pracma
+- r-rcppeigen
+- r-reshape2
+- r-rvest
+- r-smoother
+- r-zoo
+update_on:
+- regex: adductomicsR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/adductomicsR

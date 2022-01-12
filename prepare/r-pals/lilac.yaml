@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-colorspace
+- r-dichromat
+- r-mapproj
+- r-maps
+update_on:
+- regex: pals_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=pals

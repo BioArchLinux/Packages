@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-data.table
+- r-ensdb.hsapiens.v86
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-gplots
+- r-iranges
+- r-magrittr
+- r-matrixstats
+- r-mustat
+- r-purrr
+- r-r6
+- r-rsamtools
+- r-rtracklayer
+- r-stringr
+update_on:
+- regex: metagene_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/metagene

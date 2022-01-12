@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-iranges
+- r-purrr
+- r-reshape2
+- r-rlang
+- r-s4vectors
+- r-zoo
+update_on:
+- regex: dStruct_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/dStruct

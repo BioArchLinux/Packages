@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-assertthat
+- r-data.table
+- r-future
+- r-future.apply
+- r-listenv
+update_on:
+- regex: origami_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=origami

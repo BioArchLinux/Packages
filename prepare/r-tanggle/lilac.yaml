@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-ggplot2
+- r-ggtree
+- r-phangorn
+update_on:
+- regex: tanggle_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tanggle

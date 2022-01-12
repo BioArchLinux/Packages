@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clusterprofiler
+- r-dplyr
+- r-dt
+- r-go.db
+- r-gprofiler2
+- r-keggrest
+- r-magrittr
+- r-mpinet
+- r-ontologyindex
+- r-org.hs.eg.db
+- r-plotly
+- r-reactome.db
+- r-rwikipathways
+- r-shiny
+- r-shinybs
+- r-shinydashboard
+- r-stringr
+- r-tidyr
+update_on:
+- regex: famat_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/famat

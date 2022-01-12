@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-biomart
+- r-cowplot
+- r-ewcedata
+- r-experimenthub
+- r-future
+- r-ggdendro
+- r-ggplot2
+- r-gridextra
+- r-hgnchelper
+- r-limma
+- r-reshape2
+- r-rnomni
+- r-scales
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: EWCE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EWCE

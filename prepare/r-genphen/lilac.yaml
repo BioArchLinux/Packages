@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-doparallel
+- r-e1071
+- r-foreach
+- r-ranger
+- r-rcpp
+- r-rpref
+- r-rstan
+update_on:
+- regex: genphen_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/genphen

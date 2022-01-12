@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-bsseq
+- r-bumphunter
+- r-dplyr
+- r-flowsorted.blood.450k
+- r-genefilter
+- r-genomicranges
+- r-illuminahumanmethylation450kanno.ilmn12.hg19
+- r-illuminahumanmethylation450kmanifest
+- r-iranges
+- r-magrittr
+- r-minfi
+- r-plyranges
+- r-quadprog
+- r-s4vectors
+update_on:
+- regex: methylCC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/methylCC

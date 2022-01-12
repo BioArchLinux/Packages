@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ks
+- r-plot3d
+update_on:
+- regex: feature_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=feature

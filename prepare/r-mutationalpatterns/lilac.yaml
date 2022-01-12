@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-cowplot
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggalluvial
+- r-ggdendro
+- r-ggplot2
+- r-iranges
+- r-magrittr
+- r-nmf
+- r-pracma
+- r-purrr
+- r-rcolorbrewer
+- r-s4vectors
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-variantannotation
+update_on:
+- regex: MutationalPatterns_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MutationalPatterns

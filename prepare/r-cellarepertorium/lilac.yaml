@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-dplyr
+- r-forcats
+- r-progress
+- r-purrr
+- r-rcpp
+- r-reshape2
+- r-rlang
+- r-s4vectors
+- r-stringr
+- r-tibble
+- r-tidyr
+update_on:
+- regex: CellaRepertorium_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CellaRepertorium

@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-crmn
+- r-ddpcr
+- r-dplyr
+- r-magrittr
+- r-missforest
+- r-pcamethods
+- r-preprocesscore
+- r-rlang
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-sva
+- r-tibble
+- r-tidyr
+- r-vim
+update_on:
+- regex: MSPrep_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MSPrep

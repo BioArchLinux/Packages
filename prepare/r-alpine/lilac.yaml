@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-graph
+- r-iranges
+- r-rbgl
+- r-rsamtools
+- r-s4vectors
+- r-speedglm
+- r-stringr
+- r-summarizedexperiment
+update_on:
+- regex: alpine_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/alpine

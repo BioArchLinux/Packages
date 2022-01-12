@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-bh
+- r-dendextend
+- r-doparallel
+- r-foreach
+- r-go.db
+- r-iranges
+- r-multiassayexperiment
+- r-org.hs.eg.db
+- r-rcpp
+- r-s4vectors
+update_on:
+- regex: GOpro_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GOpro

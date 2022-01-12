@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-float
+- r-lgr
+- r-matrixextra
+- r-rcpp
+- r-rcpparmadillo
+- r-rhpcblasctl
+update_on:
+- regex: rsparse_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=rsparse

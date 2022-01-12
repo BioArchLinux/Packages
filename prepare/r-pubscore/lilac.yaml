@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-intergraph
+- r-network
+- r-progress
+- r-rentrez
+- r-sna
+update_on:
+- regex: PubScore_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PubScore

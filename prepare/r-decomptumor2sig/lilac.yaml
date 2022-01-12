@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-data.table
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggseqlogo
+- r-gridextra
+- r-plyr
+- r-quadprog
+- r-readxl
+- r-s4vectors
+- r-summarizedexperiment
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-variantannotation
+update_on:
+- regex: decompTumor2Sig_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/decompTumor2Sig

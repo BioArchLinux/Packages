@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beanplot
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bumphunter
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-genefilter
+- r-genomeinfodb
+- r-genomicranges
+- r-geoquery
+- r-hdf5array
+- r-illuminaio
+- r-iranges
+- r-limma
+- r-mclust
+- r-nor1mix
+- r-preprocesscore
+- r-quadprog
+- r-rcolorbrewer
+- r-reshape
+- r-s4vectors
+- r-siggenes
+- r-summarizedexperiment
+update_on:
+- regex: minfi_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/minfi

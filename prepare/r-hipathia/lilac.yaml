@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationhub
+- r-coin
+- r-delayedarray
+- r-igraph
+- r-limma
+- r-matrixstats
+- r-multiassayexperiment
+- r-preprocesscore
+- r-s4vectors
+- r-servr
+- r-summarizedexperiment
+update_on:
+- regex: hipathia_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/hipathia

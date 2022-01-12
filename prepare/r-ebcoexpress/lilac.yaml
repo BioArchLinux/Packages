@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ebarrays
+- r-mclust
+- r-minqa
+update_on:
+- regex: EBcoexpress_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EBcoexpress

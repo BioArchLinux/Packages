@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-cowplot
+- r-dplyr
+- r-ggdendro
+- r-ggplot2
+- r-ggridges
+- r-magrittr
+- r-plyr
+- r-proxy
+- r-rcolorbrewer
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-shiny
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-vegan
+- r-viridis
+update_on:
+- regex: barcodetrackR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/barcodetrackR

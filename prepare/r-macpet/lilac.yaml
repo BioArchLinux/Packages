@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-bigmemory
+- r-biocparallel
+- r-biostrings
+- r-futile.logger
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-geoquery
+- r-gtools
+- r-interactionset
+- r-intervals
+- r-iranges
+- r-knitr
+- r-plyr
+- r-rbowtie
+- r-rcpp
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-shortread
+update_on:
+- regex: MACPET_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MACPET

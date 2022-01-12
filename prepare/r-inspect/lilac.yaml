@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-deseq2
+- r-desolve
+- r-gdata
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-plgem
+- r-proc
+- r-rootsolve
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-shiny
+- r-summarizedexperiment
+- r-txdb.mmusculus.ucsc.mm9.knowngene
+update_on:
+- regex: INSPEcT_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/INSPEcT

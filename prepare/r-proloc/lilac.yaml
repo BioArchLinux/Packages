@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biomart
+- r-caret
+- r-coda
+- r-dendextend
+- r-e1071
+- r-fnn
+- r-ggplot2
+- r-gtools
+- r-hexbin
+- r-kernlab
+- r-knitr
+- r-laplacesdemon
+- r-mclust
+- r-mixtools
+- r-mlinterfaces
+- r-msnbase
+- r-mvtnorm
+- r-plyr
+- r-proxy
+- r-randomforest
+- r-rcolorbrewer
+- r-rcpp
+- r-rcpparmadillo
+- r-sampling
+- r-scales
+update_on:
+- regex: pRoloc_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/pRoloc

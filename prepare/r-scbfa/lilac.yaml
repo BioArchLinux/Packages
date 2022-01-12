@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-copula
+- r-deseq2
+- r-ggplot2
+- r-seurat
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-zinbwave
+update_on:
+- regex: scBFA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scBFA

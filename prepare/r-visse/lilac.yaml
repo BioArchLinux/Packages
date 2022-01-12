@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggforce
+- r-ggplot2
+- r-ggraph
+- r-ggrepel
+- r-ggwordcloud
+- r-gseabase
+- r-igraph
+- r-msigdb
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-scales
+- r-scico
+- r-textstem
+- r-tidygraph
+- r-tm
+update_on:
+- regex: vissE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/vissE

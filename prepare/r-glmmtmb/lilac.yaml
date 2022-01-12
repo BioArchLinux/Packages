@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-lme4
+- r-numderiv
+- r-rcppeigen
+- r-tmb
+update_on:
+- regex: glmmTMB_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=glmmTMB

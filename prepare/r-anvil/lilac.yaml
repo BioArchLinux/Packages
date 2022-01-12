@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocmanager
+- r-dplyr
+- r-futile.logger
+- r-httr
+- r-jsonlite
+- r-rapiclient
+- r-rlang
+- r-tibble
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: AnVIL_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/AnVIL

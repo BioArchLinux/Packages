@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-coda
+- r-doby
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-reshape2
+- r-rsamtools
+- r-scales
+update_on:
+- regex: BaalChIP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BaalChIP

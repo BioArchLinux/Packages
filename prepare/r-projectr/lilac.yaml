@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cogaps
+- r-dplyr
+- r-ggalluvial
+- r-ggplot2
+- r-limma
+- r-nmf
+- r-rcolorbrewer
+- r-reshape2
+- r-rocr
+- r-scales
+- r-viridis
+update_on:
+- regex: projectR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/projectR

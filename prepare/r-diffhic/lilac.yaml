@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-csaw
+- r-edger
+- r-genomeinfodb
+- r-genomicranges
+- r-interactionset
+- r-iranges
+- r-limma
+- r-locfit
+- r-rcpp
+- r-rhdf5
+- r-rhtslib
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-zlibbioc
+update_on:
+- regex: diffHic_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/diffHic

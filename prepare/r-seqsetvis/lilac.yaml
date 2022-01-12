@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-eulerr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-ggplotify
+- r-iranges
+- r-limma
+- r-pbapply
+- r-pbmcapply
+- r-png
+- r-rcolorbrewer
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-upsetr
+update_on:
+- regex: seqsetvis_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/seqsetvis

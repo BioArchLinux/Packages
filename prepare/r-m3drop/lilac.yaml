@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bbmle
+- r-gplots
+- r-hmisc
+- r-irlba
+- r-matrixstats
+- r-numderiv
+- r-rcolorbrewer
+- r-reldist
+- r-statmod
+update_on:
+- regex: M3Drop_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/M3Drop

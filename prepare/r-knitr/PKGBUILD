@@ -1,0 +1,61 @@
+# system requirements: Package vignettes based on R Markdown v2 orreStructuredText require Pandoc (http://pandoc.org). Thefunction rst2pdf() require rst2pdf(https://github.com/rst2pdf/rst2pdf).
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=knitr
+_pkgver=1.37
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='A General-Purpose Package for Dynamic Report Generation in R'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-evaluate
+  r-highr
+  r-stringr
+  r-xfun
+  r-yaml
+)
+optdepends=(
+  r-bslib
+  r-codetools
+  r-dbi
+  r-digest
+  r-formatr
+  r-gifski
+  r-htmlwidgets
+  r-httr
+  r-jpeg
+  r-juliacall
+  r-magick
+  r-markdown
+  r-png
+  r-ragg
+  r-reticulate
+  r-rgl
+  r-rmarkdown
+  r-sass
+  r-showtext
+  r-styler
+  r-targets
+  r-testit
+  r-tibble
+  r-tikzdevice
+  r-tinytex
+  r-webshot
+  r-xml2
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

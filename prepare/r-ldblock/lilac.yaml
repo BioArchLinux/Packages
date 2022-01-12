@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-ensdb.hsapiens.v75
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicfiles
+- r-httr
+- r-rsamtools
+- r-snpstats
+- r-variantannotation
+update_on:
+- regex: ldblock_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ldblock

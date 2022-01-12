@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-ggplot2
+- r-ggridges
+- r-mumin
+- r-r.utils
+- r-robustbase
+- r-s4vectors
+- r-summarizedexperiment
+- r-tarifx
+- r-upsetr
+update_on:
+- regex: pulsedSilac_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/pulsedSilac

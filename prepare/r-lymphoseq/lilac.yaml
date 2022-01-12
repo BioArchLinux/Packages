@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-circlize
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-ggtree
+- r-ineq
+- r-lymphoseqdb
+- r-msa
+- r-phangorn
+- r-plyr
+- r-rcolorbrewer
+- r-reshape
+- r-stringdist
+- r-upsetr
+- r-venndiagram
+update_on:
+- regex: LymphoSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/LymphoSeq

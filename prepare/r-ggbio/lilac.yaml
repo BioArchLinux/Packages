@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-biovizbase
+- r-bsgenome
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggally
+- r-ggplot2
+- r-gridextra
+- r-gtable
+- r-hmisc
+- r-iranges
+- r-organismdbi
+- r-reshape2
+- r-rlang
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: ggbio_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ggbio

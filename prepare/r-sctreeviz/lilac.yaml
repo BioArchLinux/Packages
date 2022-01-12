@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clustree
+- r-data.table
+- r-digest
+- r-epivizr
+- r-epivizrdata
+- r-epivizrserver
+- r-ggplot2
+- r-ggraph
+- r-httr
+- r-igraph
+- r-rtsne
+- r-s4vectors
+- r-scater
+- r-scran
+- r-seurat
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-sys
+update_on:
+- regex: scTreeViz_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/scTreeViz

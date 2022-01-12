@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-bh
+- r-biocgenerics
+- r-biomart
+- r-biostrings
+- r-bsgenome
+- r-dplyr
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-magrittr
+- r-plyranges
+- r-rcpp
+- r-rcpparmadillo
+- r-rcppprogress
+- r-s4vectors
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-zeallot
+update_on:
+- regex: BUSpaRse_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BUSpaRse

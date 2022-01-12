@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-caret
+- r-dnet
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggnetwork
+- r-ggplot2
+- r-ggrepel
+- r-glmnet
+- r-igraph
+- r-iranges
+- r-osfr
+- r-plot3d
+- r-purrr
+- r-randomforest
+- r-rcircos
+- r-readr
+- r-rocr
+- r-scales
+- r-suprahex
+- r-tibble
+- r-tidyr
+update_on:
+- regex: Pi_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Pi

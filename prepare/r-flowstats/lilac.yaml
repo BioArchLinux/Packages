@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-fda
+- r-flowcore
+- r-flowviz
+- r-flowworkspace
+- r-ks
+- r-ncdfflow
+- r-rcolorbrewer
+- r-rrcov
+update_on:
+- regex: flowStats_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/flowStats

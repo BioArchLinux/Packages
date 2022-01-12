@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocfilecache
+- r-biocgenerics
+- r-rappdirs
+- r-rcurl
+- r-rsqlite
+update_on:
+- regex: UniProt.ws_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/UniProt.ws

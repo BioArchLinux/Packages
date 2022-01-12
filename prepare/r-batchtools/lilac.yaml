@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-backports
+- r-base64url
+- r-brew
+- r-checkmate
+- r-data.table
+- r-digest
+- r-fs
+- r-progress
+- r-r6
+- r-rappdirs
+- r-stringi
+- r-withr
+update_on:
+- regex: batchtools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=batchtools

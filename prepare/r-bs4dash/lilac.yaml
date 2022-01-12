@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bslib
+- r-fresh
+- r-htmltools
+- r-httpuv
+- r-httr
+- r-jsonlite
+- r-lifecycle
+- r-shiny
+- r-waiter
+update_on:
+- regex: bs4Dash_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=bs4Dash

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-biocgenerics
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-rcpp
+- r-rhtslib
+- r-stringi
+- r-summarizedexperiment
+- r-variantannotation
+- r-zlibbioc
+update_on:
+- regex: epialleleR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/epialleleR

@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-delayedarray
+- r-genomicranges
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: SingleCellExperiment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SingleCellExperiment

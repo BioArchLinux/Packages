@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocfilecache
+- r-complexheatmap
+- r-dplyr
+- r-flextable
+- r-ggplot2
+- r-ggpubr
+- r-plotly
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: GenomicSuperSignature_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GenomicSuperSignature

@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biocfilecache
+- r-biostrings
+- r-ensembldb
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-jsonlite
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-tximport
+update_on:
+- regex: tximeta_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tximeta

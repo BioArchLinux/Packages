@@ -1,0 +1,41 @@
+# system requirements: GNU make
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=dada2
+_pkgver=1.22.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Accurate, high-resolution sample inference from amplicon sequencing data'
+arch=('x86_64')
+url="https://bioconductor.org/packages/${_pkgname}"
+license=('LGPL')
+depends=(
+  r
+  r-biocgenerics
+  r-biostrings
+  r-ggplot2
+  r-iranges
+  r-rcpp
+  r-rcppparallel
+  r-reshape2
+  r-shortread
+  r-xvector
+)
+optdepends=(
+  r-biocstyle
+  r-knitr
+  r-rmarkdown
+)
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

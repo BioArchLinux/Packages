@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-cowplot
+- r-data.table
+- r-dt
+- r-genomation
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggseqlogo
+- r-gprofiler2
+- r-iranges
+- r-knitr
+- r-pbapply
+- r-pheatmap
+- r-plotly
+- r-plotrix
+- r-proxy
+- r-ranger
+- r-rmarkdown
+- r-rsqlite
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: RCAS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RCAS

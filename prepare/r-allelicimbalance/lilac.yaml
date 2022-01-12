@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-gridextra
+- r-gviz
+- r-iranges
+- r-latticeextra
+- r-rsamtools
+- r-s4vectors
+- r-seqinr
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: AllelicImbalance_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/AllelicImbalance

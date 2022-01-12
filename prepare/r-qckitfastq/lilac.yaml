@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-rcpp
+- r-reshape2
+- r-rlang
+- r-rseqan
+- r-seqtools
+- r-zlibbioc
+update_on:
+- regex: qckitfastq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/qckitfastq

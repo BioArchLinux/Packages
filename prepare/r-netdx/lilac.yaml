@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bigmemory
+- r-biocfilecache
+- r-combinat
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-glmnet
+- r-httr
+- r-igraph
+- r-iranges
+- r-multiassayexperiment
+- r-plotrix
+- r-pracma
+- r-rappdirs
+- r-rcolorbrewer
+- r-reshape2
+- r-rocr
+- r-rtsne
+- r-s4vectors
+update_on:
+- regex: netDx_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/netDx

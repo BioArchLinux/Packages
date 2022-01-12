@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aplot
+- r-biostrings
+- r-dplyr
+- r-ggalt
+- r-ggforce
+- r-ggplot2
+- r-magrittr
+- r-r4rna
+- r-rcolorbrewer
+- r-seqmagick
+- r-tidyr
+update_on:
+- regex: ggmsa_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ggmsa

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-broom.mixed
+- r-diffcyt
+- r-dirmult
+- r-dplyr
+- r-edger
+- r-fitdistrplus
+- r-lme4
+- r-magrittr
+- r-mice
+- r-multcomp
+- r-purrr
+- r-rlang
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: censcyt_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/censcyt

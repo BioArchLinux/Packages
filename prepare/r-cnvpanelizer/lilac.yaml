@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-exomecopy
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gplots
+- r-iranges
+- r-noiseq
+- r-openxlsx
+- r-plyr
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+- r-shiny
+- r-shinyfiles
+- r-shinyjs
+- r-stringr
+- r-testthat
+update_on:
+- regex: CNVPanelizer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNVPanelizer

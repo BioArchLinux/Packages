@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biglm
+- r-car
+- r-chemometrics
+- r-cplm
+- r-data.table
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-glmmtmb
+- r-hash
+- r-lme4
+- r-lmertest
+- r-logging
+- r-lpsymphony
+- r-metagenomeseq
+- r-optparse
+- r-pbapply
+- r-pcapp
+- r-pheatmap
+- r-pscl
+- r-robustbase
+- r-vegan
+update_on:
+- regex: Maaslin2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Maaslin2

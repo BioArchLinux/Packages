@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-htmlwidgets
+- r-rcolorbrewer
+- r-rcpp
+- r-reshape2
+- r-s4vectors
+- r-summarizedexperiment
+- r-umap
+- r-visnetwork
+update_on:
+- regex: sRACIPE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/sRACIPE

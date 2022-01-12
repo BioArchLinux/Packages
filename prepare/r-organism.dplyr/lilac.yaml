@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-biocfilecache
+- r-dbi
+- r-dbplyr
+- r-dplyr
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-rlang
+- r-rsqlite
+- r-s4vectors
+- r-tibble
+update_on:
+- regex: Organism.dplyr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Organism.dplyr

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bbmle
+- r-biocparallel
+- r-gamlss
+- r-maxlik
+- r-pscl
+- r-vgam
+update_on:
+- regex: DEsingle_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DEsingle

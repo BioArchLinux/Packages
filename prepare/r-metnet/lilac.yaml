@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-bnlearn
+- r-dplyr
+- r-genie3
+- r-ggplot2
+- r-mpmi
+- r-parmigene
+- r-ppcor
+- r-psych
+- r-rlang
+- r-s4vectors
+- r-stabs
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+update_on:
+- regex: MetNet_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MetNet

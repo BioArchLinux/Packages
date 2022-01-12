@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-broom
+- r-corrplot
+- r-countrycode
+- r-dplyr
+- r-htmltools
+- r-htmlwidgets
+- r-jsonlite
+- r-purrr
+- r-rstudioapi
+- r-scales
+- r-shiny
+update_on:
+- regex: echarts4r_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=echarts4r

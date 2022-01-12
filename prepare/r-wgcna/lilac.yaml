@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-doparallel
+- r-dynamictreecut
+- r-fastcluster
+- r-foreach
+- r-go.db
+- r-hmisc
+- r-impute
+- r-matrixstats
+- r-preprocesscore
+- r-rcpp
+update_on:
+- regex: WGCNA_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=WGCNA

@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bamsignals
+- r-biocgenerics
+- r-chromstardata
+- r-doparallel
+- r-foreach
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-mvtnorm
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: chromstaR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/chromstaR

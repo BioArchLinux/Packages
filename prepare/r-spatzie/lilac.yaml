@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-bsgenome
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicinteractions
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-matrixstats
+- r-motifmatchr
+- r-s4vectors
+- r-summarizedexperiment
+- r-tfbstools
+update_on:
+- regex: spatzie_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/spatzie

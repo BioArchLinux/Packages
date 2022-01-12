@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-ggplot2
+- r-glmnet
+- r-gridextra
+- r-mvtnorm
+- r-pepsnmr
+- r-plyr
+- r-quadprog
+- r-ropls
+- r-summarizedexperiment
+- r-zoo
+update_on:
+- regex: ASICS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ASICS

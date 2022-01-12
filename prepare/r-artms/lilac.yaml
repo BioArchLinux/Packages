@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-bit64
+- r-circlize
+- r-corrplot
+- r-data.table
+- r-dplyr
+- r-getopt
+- r-ggdendro
+- r-ggplot2
+- r-ggrepel
+- r-gplots
+- r-limma
+- r-msstats
+- r-openxlsx
+- r-org.hs.eg.db
+- r-pheatmap
+- r-plotly
+- r-plyr
+- r-rcolorbrewer
+- r-scales
+- r-seqinr
+- r-stringr
+- r-tidyr
+- r-upsetr
+- r-venndiagram
+- r-yaml
+update_on:
+- regex: artMS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/artMS

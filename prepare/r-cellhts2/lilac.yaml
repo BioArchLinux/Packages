@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-category
+- r-genefilter
+- r-gseabase
+- r-hwriter
+- r-locfit
+- r-rcolorbrewer
+- r-splots
+- r-vsn
+update_on:
+- regex: cellHTS2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cellHTS2

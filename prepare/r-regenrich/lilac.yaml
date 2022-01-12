@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biocset
+- r-deseq2
+- r-dose
+- r-dplyr
+- r-fgsea
+- r-ggplot2
+- r-limma
+- r-magrittr
+- r-randomforest
+- r-reshape2
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-wgcna
+update_on:
+- regex: RegEnrich_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RegEnrich

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-corpcor
+- r-epidish
+- r-limma
+- r-nnls
+- r-reffreeewas
+- r-summarizedexperiment
+update_on:
+- regex: TOAST_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TOAST

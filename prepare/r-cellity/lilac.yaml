@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-e1071
+- r-ggplot2
+- r-mvoutlier
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-robustbase
+- r-topgo
+update_on:
+- regex: cellity_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cellity

@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-hwriter
+- r-igraph
+- r-plotrix
+- r-png
+- r-r.utils
+- r-rcolorbrewer
+- r-reshape2
+- r-xml
+update_on:
+- regex: FGNet_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/FGNet

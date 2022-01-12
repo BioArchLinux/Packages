@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-isva
+- r-limma
+- r-multidataset
+- r-omicade4
+- r-pma
+- r-rexposome
+- r-smartsva
+- r-stringr
+- r-summarizedexperiment
+- r-sva
+update_on:
+- regex: omicRexposome_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/omicRexposome

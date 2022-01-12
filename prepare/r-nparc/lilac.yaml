@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-broom
+- r-dplyr
+- r-magrittr
+- r-rlang
+- r-tidyr
+update_on:
+- regex: NPARC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/NPARC

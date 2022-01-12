@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-concaveman
+- r-dplyr
+- r-entropy
+- r-ggforce
+- r-ggplot2
+- r-hexbin
+- r-scales
+- r-seurat
+- r-shiny
+- r-singlecellexperiment
+update_on:
+- regex: schex_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/schex

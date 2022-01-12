@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-biovizbase
+- r-data.table
+- r-genomicranges
+- r-gviz
+- r-iranges
+update_on:
+- regex: Pviz_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/Pviz

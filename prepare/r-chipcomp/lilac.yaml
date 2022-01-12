@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.mmusculus.ucsc.mm9
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-limma
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: ChIPComp_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ChIPComp

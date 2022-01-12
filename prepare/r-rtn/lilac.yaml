@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-car
+- r-data.table
+- r-igraph
+- r-iranges
+- r-limma
+- r-minet
+- r-mixtools
+- r-pheatmap
+- r-pwr
+- r-reder
+- r-s4vectors
+- r-snow
+- r-summarizedexperiment
+- r-viper
+update_on:
+- regex: RTN_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RTN

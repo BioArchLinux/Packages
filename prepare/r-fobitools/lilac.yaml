@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clisymbols
+- r-crayon
+- r-dplyr
+- r-fgsea
+- r-ggplot2
+- r-ggraph
+- r-magrittr
+- r-ontologyindex
+- r-purrr
+- r-recordlinkage
+- r-stringr
+- r-textclean
+- r-tictoc
+- r-tidygraph
+- r-tidyr
+- r-vroom
+update_on:
+- regex: fobitools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/fobitools

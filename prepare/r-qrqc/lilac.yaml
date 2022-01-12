@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-biovizbase
+- r-brew
+- r-ggplot2
+- r-plyr
+- r-reshape
+- r-rhtslib
+- r-testthat
+- r-xtable
+update_on:
+- regex: qrqc_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/qrqc

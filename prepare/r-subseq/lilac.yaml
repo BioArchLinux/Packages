@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-data.table
+- r-digest
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-qvalue
+- r-tidyr
+update_on:
+- regex: subSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/subSeq

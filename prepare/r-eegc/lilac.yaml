@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-clusterprofiler
+- r-deseq2
+- r-dose
+- r-edger
+- r-ggplot2
+- r-gplots
+- r-igraph
+- r-limma
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-pheatmap
+- r-r.utils
+- r-s4vectors
+- r-sna
+- r-wordcloud
+update_on:
+- regex: eegc_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/eegc

@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-googleauthr
+- r-httr
+- r-jsonlite
+- r-magrittr
+- r-r.utils
+- r-rcurl
+- r-rtracklayer
+- r-stringr
+- r-variantannotation
+update_on:
+- regex: MungeSumstats_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MungeSumstats

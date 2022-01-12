@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-clvalid
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-ggbio
+- r-ggplot2
+- r-hmisc
+- r-igraph
+- r-iranges
+- r-pheatmap
+- r-rcpp
+- r-rcurl
+- r-reshape2
+- r-s4vectors
+update_on:
+- regex: R3CPET_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/R3CPET

@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-batchjobs
+- r-biocparallel
+- r-biostrings
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-h5vcdata
+- r-iranges
+- r-reshape
+- r-rhdf5
+- r-rhtslib
+- r-rsamtools
+- r-s4vectors
+update_on:
+- regex: h5vc_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/h5vc

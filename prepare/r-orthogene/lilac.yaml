@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-babelgene
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dplyr
+- r-genomeinfodbdata
+- r-ggplot2
+- r-ggpubr
+- r-gprofiler2
+- r-grr
+- r-homologene
+- r-jsonlite
+- r-matrix.utils
+- r-patchwork
+- r-repmis
+update_on:
+- regex: orthogene_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/orthogene

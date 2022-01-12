@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-illuminahumanmethylation450kanno.ilmn12.hg19
+- r-illuminaio
+- r-limma
+- r-lumi
+- r-matrixstats
+- r-methylumi
+- r-roc
+update_on:
+- regex: wateRmelon_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/wateRmelon

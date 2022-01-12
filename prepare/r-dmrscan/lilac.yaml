@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-mvtnorm
+- r-rcpproll
+update_on:
+- regex: DMRScan_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DMRScan

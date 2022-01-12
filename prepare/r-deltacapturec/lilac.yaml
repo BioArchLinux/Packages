@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-deseq2
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-summarizedexperiment
+- r-tictoc
+update_on:
+- regex: deltaCaptureC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/deltaCaptureC

@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-data.table
+- r-forcats
+- r-ggplot2
+- r-moments
+- r-quantreg
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: SCnorm_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SCnorm

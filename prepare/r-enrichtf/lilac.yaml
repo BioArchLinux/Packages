@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-bsgenome
+- r-clusterprofiler
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggpubr
+- r-heatmap3
+- r-iranges
+- r-jaspar2018
+- r-magrittr
+- r-motifmatchr
+- r-pipeframe
+- r-r.utils
+- r-rmarkdown
+- r-rtracklayer
+- r-s4vectors
+- r-tfbstools
+update_on:
+- regex: enrichTF_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/enrichTF

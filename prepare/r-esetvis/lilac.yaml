@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-hexbin
+- r-mlp
+- r-mpm
+- r-rtsne
+update_on:
+- regex: esetVis_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/esetVis

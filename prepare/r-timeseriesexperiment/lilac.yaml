@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-deseq2
+- r-dplyr
+- r-dynamictreecut
+- r-edger
+- r-ggplot2
+- r-hmisc
+- r-limma
+- r-magrittr
+- r-proxy
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-vegan
+- r-viridis
+update_on:
+- regex: TimeSeriesExperiment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TimeSeriesExperiment

@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-dplyr
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-glmnet
+- r-iranges
+- r-multiassayexperiment
+- r-patchwork
+- r-progress
+- r-purrr
+- r-qvalue
+- r-rlang
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-withr
+update_on:
+- regex: FindIT2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/FindIT2

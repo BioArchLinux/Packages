@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-genomicfeatures
+- r-homo.sapiens
+- r-org.hs.eg.db
+update_on:
+- regex: GSReg_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GSReg

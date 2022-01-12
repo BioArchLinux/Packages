@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-doparallel
+- r-foreach
+- r-getpass
+- r-jsonlite
+- r-magrittr
+- r-neo4r
+- r-purrr
+- r-reactomecontentservice4r
+- r-rlang
+update_on:
+- regex: ReactomeGraph4R_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ReactomeGraph4R

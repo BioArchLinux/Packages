@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cellnoptr
+- r-nloptr
+update_on:
+- regex: CNORfuzzy_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNORfuzzy

@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biocstyle
+- r-data.table
+- r-dt
+- r-edger
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-gviz
+- r-htmltools
+- r-igraph
+- r-iranges
+- r-limma
+- r-pbmcapply
+- r-rsamtools
+- r-s4vectors
+- r-tidyr
+- r-upsetr
+update_on:
+- regex: ASpli_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ASpli

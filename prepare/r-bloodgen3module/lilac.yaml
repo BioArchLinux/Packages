@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-experimenthub
+- r-ggplot2
+- r-gtools
+- r-limma
+- r-matrixstats
+- r-preprocesscore
+- r-randomcolor
+- r-reshape2
+- r-summarizedexperiment
+- r-testthat
+- r-v8
+update_on:
+- regex: BloodGen3Module_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BloodGen3Module

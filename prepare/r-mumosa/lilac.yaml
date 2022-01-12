@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-batchelor
+- r-beachmat
+- r-biocgenerics
+- r-biocneighbors
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-delayedmatrixstats
+- r-igraph
+- r-iranges
+- r-metapod
+- r-s4vectors
+- r-scaledmatrix
+- r-scran
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-uwot
+update_on:
+- regex: mumosa_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/mumosa

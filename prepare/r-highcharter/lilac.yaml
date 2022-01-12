@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-broom
+- r-dplyr
+- r-htmltools
+- r-htmlwidgets
+- r-igraph
+- r-jsonlite
+- r-lubridate
+- r-magrittr
+- r-purrr
+- r-quantmod
+- r-rjson
+- r-rlang
+- r-rlist
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-xts
+- r-yaml
+- r-zoo
+update_on:
+- regex: highcharter_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=highcharter

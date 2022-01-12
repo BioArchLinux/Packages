@@ -1,0 +1,59 @@
+# system requirements: OpenGL, GLU Library, XQuartz (on OSX), zlib(optional), libpng (>=1.2.9, optional), FreeType (optional),pandoc (>=1.14, needed for vignettes; if not present, markdownpackage will be used)
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=rgl
+_pkgver=0.108.3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='3D Visualization Using OpenGL'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-htmltools
+  r-htmlwidgets
+  r-jsonlite
+  r-knitr
+  r-magrittr
+  r-r6
+)
+optdepends=(
+  r-akima
+  r-alphashape3d
+  r-crosstalk
+  r-deldir
+  r-downlit
+  r-extrafont
+  r-interp
+  r-js
+  r-lattice
+  r-magick
+  r-manipulatewidget
+  r-markdown
+  r-mass
+  r-misc3d
+  r-orientlib
+  r-pkgdown
+  r-plotrix
+  r-rmarkdown
+  r-shiny
+  r-tcltk
+  r-testthat
+  r-tripack
+  r-waldo
+  r-webshot2
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

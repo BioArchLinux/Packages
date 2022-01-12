@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-spatstat.core
+- r-spatstat.data
+- r-spatstat.geom
+- r-spatstat.sparse
+- r-spatstat.utils
+update_on:
+- regex: spatstat.linnet_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=spatstat.linnet

@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-httr
+- r-iranges
+- r-jsonlite
+- r-s4vectors
+- r-variantannotation
+update_on:
+- regex: GA4GHclient_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GA4GHclient

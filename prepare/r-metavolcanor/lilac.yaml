@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-tidyr
+- r-plotly
+- r-ggplot2
+- r-cowplot
+- r-metafor
+- r-metap
+- r-rlang
+- r-topconfects
+- r-htmlwidgets
+update_on:
+- regex: <tr class="row_even"><td>Version</td><td>(\d+.\d+.\d+)</td></tr>
+  source: regex
+  url: https://bioconductor.org/packages/MetaVolcanoR

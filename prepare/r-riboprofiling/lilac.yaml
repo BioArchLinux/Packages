@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-data.table
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggbio
+- r-ggplot2
+- r-iranges
+- r-plyr
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-sqldf
+update_on:
+- regex: RiboProfiling_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RiboProfiling

@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-dt
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-miniui
+- r-nabor
+- r-plotly
+- r-rcolorbrewer
+- r-rcpp
+- r-rcpparmadillo
+- r-rsamtools
+- r-rtsne
+- r-s4vectors
+- r-shiny
+- r-summarizedexperiment
+- r-tfbstools
+update_on:
+- regex: chromVAR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/chromVAR

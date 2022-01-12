@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-bh
+- r-cohcapanno
+- r-gplots
+- r-rcolorbrewer
+- r-rcpp
+- r-rcpparmadillo
+- r-writexls
+update_on:
+- regex: COHCAP_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/COHCAP

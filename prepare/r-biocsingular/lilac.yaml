@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-beachmat
+- r-biocgenerics
+- r-biocparallel
+- r-delayedarray
+- r-irlba
+- r-rcpp
+- r-rsvd
+- r-s4vectors
+- r-scaledmatrix
+update_on:
+- regex: BiocSingular_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BiocSingular

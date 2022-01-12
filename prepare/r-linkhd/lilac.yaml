@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-emmeans
+- r-ggplot2
+- r-ggpubr
+- r-gridextra
+- r-multiassayexperiment
+- r-reshape2
+- r-rio
+- r-scales
+- r-vegan
+update_on:
+- regex: LinkHD_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/LinkHD

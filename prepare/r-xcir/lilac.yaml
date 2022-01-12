@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-data.table
+- r-ggplot2
+- r-iranges
+- r-readxl
+- r-s4vectors
+- r-seqminer
+- r-variantannotation
+update_on:
+- regex: XCIR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/XCIR

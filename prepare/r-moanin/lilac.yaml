@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-clusterr
+- r-edger
+- r-limma
+- r-matrixstats
+- r-nmi
+- r-reshape2
+- r-s4vectors
+- r-summarizedexperiment
+- r-topgo
+- r-viridis
+- r-zoo
+update_on:
+- regex: moanin_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/moanin

@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-data.table
+- r-gdsfmt
+- r-genomicranges
+- r-gwasexacthw
+- r-iranges
+- r-logistf
+- r-s4vectors
+- r-seqarray
+update_on:
+- regex: SeqVarTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SeqVarTools

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-e1071
+- r-edger
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-locfit
+- r-reshape2
+- r-rsamtools
+- r-summarizedexperiment
+update_on:
+- regex: TCseq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TCseq

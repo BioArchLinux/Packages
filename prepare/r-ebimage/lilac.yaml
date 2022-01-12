@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-biocgenerics
+- r-fftwtools
+- r-htmltools
+- r-htmlwidgets
+- r-jpeg
+- r-locfit
+- r-png
+- r-rcurl
+- r-tiff
+update_on:
+- regex: EBImage_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/EBImage

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-copynumberplots
+- r-dplyr
+- r-dt
+- r-genomicranges
+- r-karyoploter
+- r-magrittr
+- r-plotly
+- r-scales
+- r-shiny
+update_on:
+- regex: CNViz_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNViz

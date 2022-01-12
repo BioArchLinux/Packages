@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-doparallel
+- r-foreach
+- r-ggplot2
+- r-gplots
+- r-iterators
+- r-limma
+- r-lme4
+- r-lmertest
+- r-pbkrtest
+- r-progress
+- r-reshape2
+- r-rlang
+- r-scales
+update_on:
+- regex: variancePartition_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/variancePartition

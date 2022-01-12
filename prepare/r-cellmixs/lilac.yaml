@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocneighbors
+- r-biocparallel
+- r-cowplot
+- r-dplyr
+- r-ggplot2
+- r-ggridges
+- r-ksamples
+- r-magrittr
+- r-purrr
+- r-scater
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tidyr
+- r-viridis
+update_on:
+- regex: CellMixS_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CellMixS

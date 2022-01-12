@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-argparse
+- r-biocgenerics
+- r-catools
+- r-coda
+- r-coin
+- r-digest
+- r-doparallel
+- r-dplyr
+- r-edger
+- r-fastcluster
+- r-fitdistrplus
+- r-foreach
+- r-futile.logger
+- r-future
+- r-ggplot2
+- r-gplots
+- r-gridextra
+- r-hiddenmarkov
+- r-leiden
+- r-phyclust
+- r-rann
+- r-rcolorbrewer
+- r-reshape
+- r-rjags
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- regex: infercnv_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/infercnv

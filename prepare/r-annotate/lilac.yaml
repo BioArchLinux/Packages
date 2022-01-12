@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-biocgenerics
+- r-dbi
+- r-httr
+- r-xml
+- r-xtable
+update_on:
+- regex: annotate_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/annotate

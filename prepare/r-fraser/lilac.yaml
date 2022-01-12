@@ -1,0 +1,47 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-bbmisc
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-biomart
+- r-bsgenome
+- r-cowplot
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-extradistr
+- r-generics
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-hdf5array
+- r-iranges
+- r-matrixstats
+- r-outrider
+- r-pcamethods
+- r-pheatmap
+- r-plotly
+- r-prroc
+- r-r.utils
+- r-rcolorbrewer
+- r-rcpp
+- r-rcpparmadillo
+- r-rhdf5
+- r-rsamtools
+- r-rsubread
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-vgam
+update_on:
+- regex: FRASER_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/FRASER

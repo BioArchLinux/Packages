@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-alabama
+- r-edger
+- r-ggplot2
+- r-nleqslv
+- r-phyloseq
+- r-rcolorbrewer
+- r-reshape2
+- r-tensor
+- r-tseries
+- r-vgam
+update_on:
+- regex: RCM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RCM

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-graph
+- r-htmlwidgets
+- r-plyr
+- r-rcpp
+- r-rgraphviz
+- r-rjson
+- r-xml
+update_on:
+- regex: GeneNetworkBuilder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GeneNetworkBuilder

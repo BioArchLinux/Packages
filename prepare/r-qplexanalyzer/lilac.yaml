@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-assertthat
+- r-biobase
+- r-biocgenerics
+- r-biostrings
+- r-dplyr
+- r-ggdendro
+- r-ggplot2
+- r-iranges
+- r-limma
+- r-magrittr
+- r-msnbase
+- r-preprocesscore
+- r-purrr
+- r-rcolorbrewer
+- r-readr
+- r-rlang
+- r-scales
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+update_on:
+- regex: qPLEXanalyzer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/qPLEXanalyzer

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-catdata
+- r-glmnet
+- r-rcolorbrewer
+- r-rcpp
+- r-rcpparmadillo
+- r-speedglm
+update_on:
+- regex: smurf_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=smurf

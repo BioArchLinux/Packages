@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-acde
+- r-affy
+- r-biobase
+- r-geoquery
+- r-igraph
+- r-limma
+- r-minet
+- r-rmarkdown
+- r-siggenes
+- r-stringdb
+- r-summarizedexperiment
+- r-vsn
+update_on:
+- regex: coexnet_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/coexnet

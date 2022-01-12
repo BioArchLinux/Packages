@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-data.table
+- r-genomictools.filehandler
+- r-gmwt
+- r-rcpp
+- r-rcpparmadillo
+- r-snpstats
+- r-stringr
+update_on:
+- regex: GenomicTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=GenomicTools

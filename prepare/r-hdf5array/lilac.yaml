@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-delayedarray
+- r-iranges
+- r-rhdf5
+- r-rhdf5filters
+- r-rhdf5lib
+- r-s4vectors
+update_on:
+- regex: HDF5Array_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/HDF5Array

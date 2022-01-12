@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggplot2
+- r-ggwordcloud
+- r-igraph
+- r-interp
+- r-markdown
+- r-metr
+- r-scatterplot3d
+- r-shiny
+update_on:
+- regex: SOMbrero_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=SOMbrero

@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-amap
+- r-apeglm
+- r-ashr
+- r-biocparallel
+- r-deseq2
+- r-dplyr
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-gplots
+- r-greylistchip
+- r-iranges
+- r-limma
+- r-locfit
+- r-rcolorbrewer
+- r-rcpp
+- r-rhtslib
+- r-rsamtools
+- r-s4vectors
+- r-summarizedexperiment
+- r-systempiper
+update_on:
+- regex: DiffBind_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DiffBind

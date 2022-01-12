@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-matrixgenerics
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: RaggedExperiment_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RaggedExperiment

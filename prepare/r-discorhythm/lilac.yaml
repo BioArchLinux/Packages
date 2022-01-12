@@ -1,0 +1,39 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-biocstyle
+- r-broom
+- r-data.table
+- r-dplyr
+- r-dt
+- r-ggextra
+- r-ggplot2
+- r-gridextra
+- r-heatmaply
+- r-kableextra
+- r-knitr
+- r-magick
+- r-matrixstats
+- r-matrixtests
+- r-metacycle
+- r-plotly
+- r-reshape2
+- r-rmarkdown
+- r-s4vectors
+- r-shiny
+- r-shinybs
+- r-shinycssloaders
+- r-shinydashboard
+- r-shinyjs
+- r-summarizedexperiment
+- r-upsetr
+- r-venndiagram
+- r-viridis
+- r-zip
+update_on:
+- regex: DiscoRhythm_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/DiscoRhythm

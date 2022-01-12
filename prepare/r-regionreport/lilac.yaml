@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocstyle
+- r-deformats
+- r-derfinder
+- r-deseq2
+- r-genomeinfodb
+- r-genomicranges
+- r-knitr
+- r-knitrbootstrap
+- r-refmanager
+- r-rmarkdown
+- r-s4vectors
+- r-summarizedexperiment
+update_on:
+- regex: regionReport_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/regionReport

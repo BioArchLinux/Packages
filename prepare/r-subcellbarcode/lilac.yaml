@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-caret
+- r-e1071
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-networkd3
+- r-org.hs.eg.db
+- r-rtsne
+- r-scatterplot3d
+update_on:
+- regex: SubCellBarCode_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SubCellBarCode

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-amap
+- r-apcluster
+- r-biobase
+- r-biwt
+- r-corrplot
+- r-devtools
+- r-doparallel
+- r-dplyr
+- r-fastcluster
+- r-foreach
+- r-ggplot2
+- r-gplots
+- r-kohonen
+- r-mclust
+- r-reshape2
+- r-stringr
+- r-tibble
+- r-tidyr
+update_on:
+- regex: cogena_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/cogena

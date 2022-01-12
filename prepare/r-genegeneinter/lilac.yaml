@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-factominer
+- r-genomicranges
+- r-igraph
+- r-iranges
+- r-kernlab
+- r-mvtnorm
+- r-rsamtools
+- r-snpstats
+update_on:
+- regex: GeneGeneInteR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GeneGeneInteR

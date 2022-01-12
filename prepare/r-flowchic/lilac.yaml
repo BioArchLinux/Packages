@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ebimage
+- r-flowcore
+- r-ggplot2
+- r-hexbin
+- r-vegan
+update_on:
+- regex: flowCHIC_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/flowCHIC

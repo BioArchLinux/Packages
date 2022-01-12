@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biomart
+- r-clusterprofiler
+- r-dplyr
+- r-freqprof
+- r-ggdendro
+- r-gghighlight
+- r-ggplot2
+- r-gplots
+- r-gtools
+- r-igraph
+- r-mfuzz
+- r-multiassayexperiment
+- r-rcy3
+- r-readxl
+- r-reshape2
+- r-rwikipathways
+- r-scales
+- r-stringr
+- r-tidyr
+update_on:
+- regex: TimiRGeN_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TimiRGeN

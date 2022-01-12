@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-doparallel
+- r-e1071
+- r-foreach
+- r-future
+- r-future.apply
+- r-missforest
+- r-pcamethods
+- r-s4vectors
+- r-summarizedexperiment
+- r-tidyverse
+update_on:
+- regex: MAI_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MAI

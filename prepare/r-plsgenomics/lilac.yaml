@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-fields
+- r-plyr
+- r-reshape2
+- r-rhpcblasctl
+update_on:
+- regex: plsgenomics_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=plsgenomics

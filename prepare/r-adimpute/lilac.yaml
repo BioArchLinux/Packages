@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-checkmate
+- r-data.table
+- r-drimpute
+- r-kernlab
+- r-rsvd
+- r-s4vectors
+- r-saver
+- r-singlecellexperiment
+- r-summarizedexperiment
+update_on:
+- regex: ADImpute_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ADImpute

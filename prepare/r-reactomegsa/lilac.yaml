@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-gplots
+- r-httr
+- r-jsonlite
+- r-progress
+- r-rcolorbrewer
+- r-tidyr
+update_on:
+- regex: ReactomeGSA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/ReactomeGSA

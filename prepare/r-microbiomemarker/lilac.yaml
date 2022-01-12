@@ -1,0 +1,39 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-aldex2
+- r-ancombc
+- r-biobase
+- r-biocgenerics
+- r-biomformat
+- r-biostrings
+- r-caret
+- r-coin
+- r-complexheatmap
+- r-deseq2
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-ggsignif
+- r-ggtree
+- r-iranges
+- r-limma
+- r-magrittr
+- r-metagenomeseq
+- r-multtest
+- r-patchwork
+- r-phyloseq
+- r-plotroc
+- r-purrr
+- r-rlang
+- r-s4vectors
+- r-tibble
+- r-tidyr
+- r-tidytree
+- r-yaml
+update_on:
+- regex: microbiomeMarker_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/microbiomeMarker

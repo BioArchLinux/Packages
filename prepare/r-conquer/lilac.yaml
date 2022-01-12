@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-caret
+- r-matrixstats
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- regex: conquer_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=conquer

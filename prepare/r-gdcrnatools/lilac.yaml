@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-biomart
+- r-clusterprofiler
+- r-deseq2
+- r-dose
+- r-dt
+- r-edger
+- r-genomicdatacommons
+- r-ggplot2
+- r-gplots
+- r-jsonlite
+- r-limma
+- r-org.hs.eg.db
+- r-pathview
+- r-rjson
+- r-shiny
+- r-survminer
+- r-xml
+update_on:
+- regex: GDCRNATools_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GDCRNATools

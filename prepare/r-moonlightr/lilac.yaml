@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-circlize
+- r-clusterprofiler
+- r-doparallel
+- r-dose
+- r-foreach
+- r-geoquery
+- r-gplots
+- r-hiver
+- r-limma
+- r-parmigene
+- r-randomforest
+- r-rcolorbrewer
+- r-rismed
+- r-summarizedexperiment
+- r-tcgabiolinks
+update_on:
+- regex: MoonlightR_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MoonlightR

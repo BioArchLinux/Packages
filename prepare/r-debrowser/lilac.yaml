@@ -1,0 +1,44 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-annotationdbi
+- r-apeglm
+- r-ashr
+- r-clusterprofiler
+- r-colourpicker
+- r-deseq2
+- r-dose
+- r-dt
+- r-edger
+- r-enrichplot
+- r-genomicranges
+- r-ggplot2
+- r-gplots
+- r-harman
+- r-heatmaply
+- r-igraph
+- r-iranges
+- r-jsonlite
+- r-limma
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-pathview
+- r-plotly
+- r-rcolorbrewer
+- r-rcurl
+- r-reshape2
+- r-s4vectors
+- r-shiny
+- r-shinybs
+- r-shinydashboard
+- r-shinyjs
+- r-stringi
+- r-summarizedexperiment
+- r-sva
+update_on:
+- regex: debrowser_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/debrowser

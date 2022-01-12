@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-biocviews
+- r-combinat
+- r-ddrtree
+- r-densityclust
+- r-dplyr
+- r-fastica
+- r-ggplot2
+- r-hsmmsinglecell
+- r-igraph
+- r-irlba
+- r-limma
+- r-matrixstats
+- r-pheatmap
+- r-plyr
+- r-proxy
+- r-qlcmatrix
+- r-rann
+- r-rcpp
+- r-reshape2
+- r-rtsne
+- r-slam
+- r-stringr
+- r-tibble
+- r-vgam
+- r-viridis
+update_on:
+- regex: monocle_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/monocle

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-e1071
+- r-gplots
+- r-gtools
+- r-limma
+- r-mrmre
+- r-randomforest
+- r-rcpp
+- r-rocr
+- r-sva
+update_on:
+- regex: PAA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PAA

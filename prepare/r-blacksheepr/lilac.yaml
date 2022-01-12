@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-pasilla
+- r-rcolorbrewer
+- r-summarizedexperiment
+- r-viridis
+update_on:
+- regex: blacksheepr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/blacksheepr

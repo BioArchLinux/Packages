@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-edger
+- r-ggplot2
+- r-igraph
+- r-magrittr
+- r-matrixstats
+- r-pbapply
+- r-princurve
+- r-rcolorbrewer
+- r-s4vectors
+- r-singlecellexperiment
+- r-slingshot
+- r-summarizedexperiment
+- r-tibble
+- r-trajectoryutils
+- r-viridis
+update_on:
+- regex: tradeSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/tradeSeq

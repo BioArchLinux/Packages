@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-chron
+- r-data.table
+- r-rcurl
+- r-xml
+update_on:
+- regex: qdapTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=qdapTools

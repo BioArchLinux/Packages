@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-abind
+- r-biobase
+- r-cellhts2
+- r-geneplotter
+- r-gplots
+- r-hwriter
+- r-ics
+- r-icsnp
+- r-latticeextra
+- r-limma
+- r-locfit
+- r-rcolorbrewer
+- r-splots
+update_on:
+- regex: RNAinteract_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/RNAinteract

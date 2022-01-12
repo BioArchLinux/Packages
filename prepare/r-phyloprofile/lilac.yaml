@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ape
+- r-biocstyle
+- r-biodist
+- r-biostrings
+- r-colourpicker
+- r-data.table
+- r-dt
+- r-energy
+- r-experimenthub
+- r-ggplot2
+- r-gridextra
+- r-omadb
+- r-pbapply
+- r-plyr
+- r-rcolorbrewer
+- r-rcurl
+- r-shiny
+- r-shinybs
+- r-shinyjs
+- r-xml2
+- r-yaml
+- r-zoo
+update_on:
+- regex: PhyloProfile_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/PhyloProfile

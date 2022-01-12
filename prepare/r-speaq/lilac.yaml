@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-dosnow
+- r-foreach
+- r-ggplot2
+- r-gridextra
+- r-impute
+- r-massspecwavelet
+- r-missforest
+- r-mqtl
+- r-reshape2
+- r-rfast
+- r-rvest
+- r-xml2
+update_on:
+- regex: speaq_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=speaq

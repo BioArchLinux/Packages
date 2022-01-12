@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocgenerics
+- r-circlize
+- r-colourpicker
+- r-complexheatmap
+- r-dt
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-rintrojs
+- r-s4vectors
+- r-shiny
+- r-shinyace
+- r-shinydashboard
+- r-shinyjs
+- r-shinywidgets
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-vipor
+- r-viridislite
+update_on:
+- regex: iSEE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/iSEE

@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-biocparallel
+- r-bumphunter
+- r-derfinderhelper
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicfiles
+- r-genomicranges
+- r-hmisc
+- r-iranges
+- r-qvalue
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+update_on:
+- regex: derfinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/derfinder

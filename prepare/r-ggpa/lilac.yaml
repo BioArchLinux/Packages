@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-ggally
+- r-matrixstats
+- r-network
+- r-rcpp
+- r-rcpparmadillo
+- r-scales
+- r-sna
+update_on:
+- regex: GGPA_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/GGPA

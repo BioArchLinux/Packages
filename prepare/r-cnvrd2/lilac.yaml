@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dnacopy
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-rjags
+- r-rsamtools
+- r-variantannotation
+update_on:
+- regex: CNVrd2_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNVrd2

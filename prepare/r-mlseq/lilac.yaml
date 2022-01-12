@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biobase
+- r-caret
+- r-deseq2
+- r-edger
+- r-foreach
+- r-ggplot2
+- r-limma
+- r-pamr
+- r-plyr
+- r-sseq
+- r-summarizedexperiment
+- r-testthat
+- r-venndiagram
+- r-xtable
+update_on:
+- regex: MLSeq_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/MLSeq

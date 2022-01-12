@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotate
+- r-biocgenerics
+- r-biostrings
+- r-dbi
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-go.db
+- r-iranges
+- r-keggrest
+- r-powerlaw
+- r-r.utils
+- r-readr
+- r-reshape2
+- r-rsqlite
+- r-rtracklayer
+- r-s4vectors
+- r-xvector
+update_on:
+- regex: CNEr_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/CNEr

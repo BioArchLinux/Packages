@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biglm
+- r-coda
+- r-ggplot2
+- r-minqa
+- r-reshape2
+- r-statmod
+- r-tweedie
+update_on:
+- regex: cplm_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=cplm

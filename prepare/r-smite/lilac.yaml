@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-bionet
+- r-genelendatabase
+- r-genomicranges
+- r-ggplot2
+- r-goseq
+- r-hmisc
+- r-igraph
+- r-iranges
+- r-keggrest
+- r-org.hs.eg.db
+- r-plyr
+- r-reactome.db
+- r-s4vectors
+- r-scales
+update_on:
+- regex: SMITE_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/SMITE

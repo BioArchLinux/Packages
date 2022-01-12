@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-biocparallel
+- r-cmplot
+- r-e1071
+- r-ggplot2
+- r-glmnet
+- r-imager
+- r-nsprcomp
+- r-precrec
+- r-ranger
+- r-rms
+- r-topgo
+- r-vioplot
+- r-xlsx
+update_on:
+- regex: BioMM_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/BioMM

@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationfilter
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-ensembldb
+- r-ensemblvep
+- r-genomeinfodb
+- r-genomicranges
+- r-ggally
+- r-ggplot2
+- r-gviz
+- r-iranges
+- r-limma
+- r-reshape2
+- r-rsamtools
+- r-s4vectors
+- r-summarizedexperiment
+- r-variantannotation
+update_on:
+- regex: TVTB_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/TVTB

@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-dplyr
+- r-drc
+- r-furrr
+- r-future
+- r-ggforce
+- r-ggplot2
+- r-ggrepel
+- r-gstat
+- r-kriging
+- r-magrittr
+- r-metr
+- r-mice
+- r-nleqslv
+- r-pbapply
+- r-plotly
+- r-purrr
+- r-reshape2
+- r-sp
+- r-spatialextremes
+- r-stringr
+- r-tidyr
+- r-tidyverse
+- r-vegan
+update_on:
+- regex: synergyfinder_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/synergyfinder

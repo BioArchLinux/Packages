@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-cowplot
+- r-ggplot2
+- r-gofkernel
+- r-igraph
+- r-mclust
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- regex: cytometree_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=cytometree

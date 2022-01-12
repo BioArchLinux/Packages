@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-graph
+- r-grimport
+- r-gviz
+- r-htmlwidgets
+- r-interactionset
+- r-iranges
+- r-plotrix
+- r-rcpp
+- r-rgraphviz
+- r-rhdf5
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-scales
+update_on:
+- regex: trackViewer_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/trackViewer
