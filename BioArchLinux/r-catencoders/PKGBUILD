@@ -3,7 +3,7 @@
 _pkgname=CatEncoders
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Encoders for Categorical Variables'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-data.table
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('74a66c700f65da394742cdc58a39e20b9175bba6aa98857cfa88296a00fe3ce1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
