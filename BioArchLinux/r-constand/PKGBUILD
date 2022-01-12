@@ -3,7 +3,7 @@
 _pkgname=CONSTANd
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Data normalization by matrix raking'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2e8729f1934f06c8cfc85196206fc8a7549c8caa2986289abf0f75d6ebc70e44')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
