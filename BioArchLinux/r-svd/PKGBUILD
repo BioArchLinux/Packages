@@ -3,7 +3,7 @@
 _pkgname=svd
 _pkgver=0.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.5
 pkgrel=1
 pkgdesc='Interfaces to Various State-of-Art SVD and Eigensolvers'
 arch=('x86_64')
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d042d448671355d0664d37fd64dc90932eb780e6494c479d4431d1faae2071a1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
