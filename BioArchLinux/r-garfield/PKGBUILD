@@ -3,7 +3,7 @@
 _pkgname=garfield
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='GWAS Analysis of Regulatory or Functional Information Enrichment with LD correction'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('03ba64d8b36228dd179304284e5a47f2d870ce096bb55f79c67c85ce6cdacf4a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
