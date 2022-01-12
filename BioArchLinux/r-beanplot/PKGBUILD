@@ -3,7 +3,7 @@
 _pkgname=beanplot
 _pkgver=1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2
 pkgrel=1
 pkgdesc='Visualization via Beanplots (like Boxplot/Stripchart/Violin Plot)'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-vioplot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('49da299139a47171c5b4ccdea79ffbbc152894e05d552e676f135147c0c9b372')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
