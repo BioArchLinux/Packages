@@ -3,7 +3,7 @@
 _pkgname=ORCME
 _pkgver=2.0.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.2
 pkgrel=1
 pkgdesc='Order Restricted Clustering for Microarray Experiments'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-iso
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d3ab53aa5d7a3cf370f9a23a232d0bf4ba4a5cc15f3e90a313126322a454a8de')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
