@@ -3,7 +3,7 @@
 _pkgname=dichromat
 _pkgver=2.0-0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.0
 pkgrel=1
 pkgdesc='Color Schemes for Dichromats'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('31151eaf36f70bdc1172da5ff5088ee51cc0a3db4ead59c7c38c25316d580dd1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
