@@ -3,7 +3,7 @@
 _pkgname=nsga2R
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0
 pkgrel=1
 pkgdesc='Elitist Non-dominated Sorting Genetic Algorithm based on R'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-mco
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1d3a8b1a94cd647e49ad8097cf553f998d41532f341af2362283391d87025212')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
