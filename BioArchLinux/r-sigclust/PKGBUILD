@@ -3,7 +3,7 @@
 _pkgname=sigclust
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.0
 pkgrel=1
 pkgdesc='Statistical Significance of Clustering'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('efc4d8b8a19208efee9e86bbfd1aec09cac4fe3340033992f59e5892e9d9a104')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
