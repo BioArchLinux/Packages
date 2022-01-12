@@ -3,7 +3,7 @@
 _pkgname=agilp
 _pkgver=3.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.26.0
 pkgrel=1
 pkgdesc='Agilent expression array processing package'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b7278b80560fb7271ed1f70c299691dd61b14c62a22b9be937c18f4dbc609e09')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
