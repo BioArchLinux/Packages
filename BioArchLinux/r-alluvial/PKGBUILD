@@ -3,7 +3,7 @@
 _pkgname=alluvial
 _pkgver=0.1-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.2
 pkgrel=1
 pkgdesc='Alluvial Diagrams'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('77b6dc4651b33b03aaaf1e09a35f9c3536e5fddac2eda34f5a34e0ae33cf2e0d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
