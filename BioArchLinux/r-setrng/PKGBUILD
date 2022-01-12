@@ -3,7 +3,7 @@
 _pkgname=setRNG
 _pkgver=2013.9-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2013.9.1
 pkgrel=1
 pkgdesc='Set (Normal) Random Number Generator and Seed'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1a1a399682a06a5fea3934985ebb1334005676c6a2a22d06f3c91c3923432908')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
