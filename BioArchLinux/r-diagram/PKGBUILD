@@ -3,7 +3,7 @@
 _pkgname=diagram
 _pkgver=1.6.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.5
 pkgrel=1
 pkgdesc='Functions for Visualising Simple Graphs (Networks), Plotting Flow Diagrams'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-shape
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e9c03e7712e0282c5d9f2b760bafe2aac9e99a9723578d9e6369d60301f574e4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
