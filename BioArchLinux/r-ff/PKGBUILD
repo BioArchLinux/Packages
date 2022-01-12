@@ -3,7 +3,7 @@
 _pkgname=ff
 _pkgver=4.0.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.0.5
 pkgrel=1
 pkgdesc='Memory-Efficient Storage of Large Data on Disk and Fast Access Functions'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9aba9e271144ec224063ddba0d791e2fcdb9c912d48fdc49e204fce628355037')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
