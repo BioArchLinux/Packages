@@ -3,7 +3,7 @@
 _pkgname=startupmsg
 _pkgver=0.9.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.6
 pkgrel=1
 pkgdesc='Utilities for Start-Up Messages'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1d60ff13bb260630f797bde66a377a5d4cd65d78ae81a3936dc4374572ec786e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
