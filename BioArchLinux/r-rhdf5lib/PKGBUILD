@@ -4,7 +4,7 @@
 _pkgname=Rhdf5lib
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='hdf5 library as an R package'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-tinytest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3735fe66a9e12da8957946a1a1bf2f63af8806c5d37529224b0ddac6874e9e7a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
