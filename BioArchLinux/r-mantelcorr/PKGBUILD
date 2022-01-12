@@ -3,7 +3,7 @@
 _pkgname=MantelCorr
 _pkgver=1.64.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.64.0
 pkgrel=1
 pkgdesc='Compute Mantel Cluster Correlations'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('746501e2ccaa7c55cc03724a2a259fb59a0d15e5ff085e4f9c9f23040870c182')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
