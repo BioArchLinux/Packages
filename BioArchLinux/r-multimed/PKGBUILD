@@ -3,7 +3,7 @@
 _pkgname=MultiMed
 _pkgver=2.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.16.0
 pkgrel=1
 pkgdesc='Testing multiple biological mediators simultaneously'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('818c143e4d3e84aeda4b74ef6ca2b58c86ba57cd8bfb8f485304302777de7bb6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
