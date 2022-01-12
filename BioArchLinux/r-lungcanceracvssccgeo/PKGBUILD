@@ -3,7 +3,7 @@
 _pkgname=LungCancerACvsSCCGEO
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='A lung cancer dataset that can be used with maPredictDSC package for developing outcome prediction models from Affymetrix CEL files.'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b0e9258ab7ba3222b90640644c462106d1e9fd867b7c605bf85b5aa2ac6fca69')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
