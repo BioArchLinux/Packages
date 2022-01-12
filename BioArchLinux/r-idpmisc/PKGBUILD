@@ -3,7 +3,7 @@
 _pkgname=IDPmisc
 _pkgver=1.1.20
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.20
 pkgrel=1
 pkgdesc="'Utilities of Institute of Data Analyses and Process Design (www.zhaw.ch/idp)'"
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-swissair
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bcb9cd7b8097e5089d1936286ef310ac2030ea7791350df706382ba470afc67f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
