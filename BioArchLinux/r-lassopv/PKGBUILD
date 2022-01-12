@@ -3,7 +3,7 @@
 _pkgname=lassopv
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.0
 pkgrel=1
 pkgdesc='Nonparametric P-Value Estimation for Predictors in Lasso'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-lars
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3f65b1fe1b0d4e700c0a7129db12333bd2cad2523df998c7bc5e0e03b8b45c79')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
