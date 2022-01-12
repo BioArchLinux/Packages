@@ -3,7 +3,7 @@
 _pkgname=hunspell
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.1
 pkgrel=1
 pkgdesc='High-Performance Stemmer, Tokenizer, and Spell Checker'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-wordcloud2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1fedbb913bc13c790d2fabfe4edda0a987db3a078bea8c0ca9b777d20af08662')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
