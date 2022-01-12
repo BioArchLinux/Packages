@@ -4,7 +4,7 @@
 _pkgname=minqa
 _pkgver=1.2.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.4
 pkgrel=1
 pkgdesc='Derivative-free optimization algorithms by quadratic approximation'
 arch=('x86_64')
@@ -18,7 +18,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cfa193a4a9c55cb08f3faf4ab09c11b70412523767f19894e4eafc6e94cccd0c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
