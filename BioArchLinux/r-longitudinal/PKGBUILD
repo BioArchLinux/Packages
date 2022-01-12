@@ -3,7 +3,7 @@
 _pkgname=longitudinal
 _pkgver=1.1.13
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.13
 pkgrel=1
 pkgdesc='Analysis of Multiple Time Course Data'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-corpcor
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('57f04a0f387c1cc30d2feb945dc3ed35d2a304d94d21d3bc2cac8c92571fdc10')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
