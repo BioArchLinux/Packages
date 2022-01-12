@@ -3,7 +3,7 @@
 _pkgname=smoothie
 _pkgver=1.0-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.3
 pkgrel=1
 pkgdesc='Two-Dimensional Field Smoothing'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-spatialvx
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('086f2ed935ec2a26865f8776da91c7ba4f50988b4e6f535e57cdeb4db62231ab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
