@@ -3,7 +3,7 @@
 _pkgname=proxy
 _pkgver=0.4-26
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.26
 pkgrel=1
 pkgdesc='Distance and Similarity Measures'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-cba
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('676bad821343974e0297a0566c4bf0cf0ea890104906a745b87d3b5989c81a4d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
