@@ -3,7 +3,7 @@
 _pkgname=LymphoSeqDB
 _pkgver=0.99.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.99.2
 pkgrel=1
 pkgdesc='LymphoSeq annotation databases'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('27e322948b2a61df048d8f84ab65d09da9e8f926acd9af87c89f4059a3b0beb1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
