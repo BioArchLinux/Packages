@@ -3,7 +3,7 @@
 _pkgname=CCP
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1
 pkgrel=1
 pkgdesc='Significance Tests for Canonical Correlation Analysis (CCA)'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9d21cda05221f1a458fe2938cd5ff0e89711ef058865d25f9894a275c7805d1e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
