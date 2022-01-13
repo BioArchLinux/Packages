@@ -4,7 +4,7 @@
 _pkgname=maftools
 _pkgver=2.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.10.0
 pkgrel=1
 pkgdesc='Summarize, Analyze and Visualize MAF Files'
 arch=('x86_64')
@@ -36,7 +36,7 @@ optdepends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cdd90412aa3cc19ac3564c4af4532e7cefd5c46249af80e800e8bfc8791f1ce9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
