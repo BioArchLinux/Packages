@@ -3,7 +3,7 @@
 _pkgname=miRNAtap.db
 _pkgver=0.99.10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.99.10
 pkgrel=1
 pkgdesc='Data for miRNAtap'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-rsqlite
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('43e735987bae9aa68b6e7544c5d1d87ebf7edcc075427114508eb8b47c7d91c8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
