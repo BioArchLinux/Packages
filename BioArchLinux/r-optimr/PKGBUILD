@@ -3,7 +3,7 @@
 _pkgname=optimr
 _pkgver=2019-12.16
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2019.12.16
 pkgrel=1
 pkgdesc="A Replacement and Extension of the 'optim' Function"
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('73b1ed560ffd74599517e8baa4c5b293aa062e9c8d50219a3a24b63e72fa7c00')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
