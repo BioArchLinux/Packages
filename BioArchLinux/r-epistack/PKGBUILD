@@ -3,7 +3,7 @@
 _pkgname=epistack
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Heatmaps of Stack Profiles from Epigenetic Signals'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b6246a1b6c9c6d53a31bfd78498b98c6da08d4c2b7bbf0eee5a53b753618bb3c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
