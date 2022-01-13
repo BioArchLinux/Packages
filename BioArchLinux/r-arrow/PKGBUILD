@@ -4,7 +4,7 @@
 _pkgname=arrow
 _pkgver=6.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=6.0.1
 pkgrel=1
 pkgdesc="Integration to 'Apache' 'Arrow'"
 arch=('x86_64')
@@ -40,7 +40,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('17d49e80d7c2be8ccfabfc2ab192ff0ffad7a2db9915c3c06499c9d8d387cf91')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
