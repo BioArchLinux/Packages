@@ -3,7 +3,7 @@
 _pkgname=rGADEM
 _pkgver=2.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.42.0
 pkgrel=1
 pkgdesc='de novo motif discovery'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7b709ce7bcda17d9d937e79b766fa174c783b6e6f7a68e06f353d4b3317e1ded')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
