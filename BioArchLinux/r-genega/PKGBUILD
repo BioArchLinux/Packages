@@ -3,7 +3,7 @@
 _pkgname=GeneGA
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.0
 pkgrel=1
 pkgdesc='Design gene based on both mRNA secondary structure and codon usage bias using Genetic algorithm'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-seqinr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('76ac823e0defbe282c72ea673d91b44f0f707fae7060f5ac9634f2cd9e7b11b4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
