@@ -4,7 +4,7 @@
 _pkgname=glmmTMB
 _pkgver=1.1.2.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.2.3
 pkgrel=1
 pkgdesc='Generalized Linear Mixed Models using Template Model Builder'
 arch=('x86_64')
@@ -48,7 +48,7 @@ optdepends=(
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('55631e001ff3f1d8e419e3b0b5555317713c733c11a2f7d4db6434d8c4e7dcf9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
