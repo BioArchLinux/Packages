@@ -3,7 +3,7 @@
 _pkgname=GSVA
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Gene Set Variation Analysis for microarray and RNA-seq data'
 arch=('x86_64')
@@ -47,7 +47,7 @@ optdepends=(
   r-shinyjs
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9e8451d006cc022ebc6c9887fb57935def3411c8285fae8aaf32f8d500a898fc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
