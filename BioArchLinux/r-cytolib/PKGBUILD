@@ -4,7 +4,7 @@
 _pkgname=cytolib
 _pkgver=2.6.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.6.1
 pkgrel=1
 pkgdesc='C++ infrastructure for representing and interacting with the gated cytometry data'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8961b64045d0f57fa20948ab5b11ed0699161e931931748576e4227199e1a59a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
