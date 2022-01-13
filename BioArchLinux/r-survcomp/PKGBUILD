@@ -3,7 +3,7 @@
 _pkgname=survcomp
 _pkgver=1.44.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.1
 pkgrel=1
 pkgdesc='Performance Assessment and Comparison for Survival Analysis'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b8c4eaf5740569507dee18183a1ddb15d0eeb8d6908aab9f178481100e70c6c5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
