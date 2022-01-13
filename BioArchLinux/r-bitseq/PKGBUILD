@@ -4,7 +4,7 @@
 _pkgname=BitSeq
 _pkgver=1.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.38.0
 pkgrel=1
 pkgdesc='Transcript expression inference and differential expression analysis for RNA-seq data'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8410dd01a79328c97fda69c7e74785afacf698bb6b9ccc743e53226e5caf505e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
