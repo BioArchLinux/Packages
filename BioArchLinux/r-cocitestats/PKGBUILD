@@ -3,7 +3,7 @@
 _pkgname=CoCiteStats
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Different test statistics based on co-citation.'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-org.hs.eg.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('025501d248667cbf3ae7daf6f20b44fd98adbf89f90a6af800185792f82821b6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
