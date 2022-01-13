@@ -4,7 +4,7 @@
 _pkgname=svglite
 _pkgver=2.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.0
 pkgrel=1
 pkgdesc="An 'SVG' Graphics Device"
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('76e625fe172a5b7ce99a67b6d631b037b3f7f0021cfe15f2e15e8851b89defa5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
