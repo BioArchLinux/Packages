@@ -3,7 +3,7 @@
 _pkgname=kmer
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.2
 pkgrel=1
 pkgdesc='Fast K-Mer Counting and Clustering for Biological Sequence Analysis'
 arch=('x86_64')
@@ -23,7 +23,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9c5b0e905fa9dfe5f0977d36afa09195a5a43a051fff405be7f42d0572b2354a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
