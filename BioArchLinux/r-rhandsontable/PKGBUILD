@@ -3,7 +3,7 @@
 _pkgname=rhandsontable
 _pkgver=0.3.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.8
 pkgrel=1
 pkgdesc="Interface to the 'Handsontable.js' Library"
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('901ed9c59936f7fa52ad8db3111c8904ab962f9c74f1b6cd40f81683af35d21d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
