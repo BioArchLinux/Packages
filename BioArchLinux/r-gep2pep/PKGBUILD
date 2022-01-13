@@ -3,7 +3,7 @@
 _pkgname=gep2pep
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Creation and Analysis of Pathway Expression Profiles (PEPs)'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-writexls
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('34ac21cac7b3daea8cbf09f61b9d34e55291100991af219350132bf038f15807')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
