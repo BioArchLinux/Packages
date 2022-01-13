@@ -3,7 +3,7 @@
 _pkgname=hgu95a.db
 _pkgver=3.13.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.13.0
 pkgrel=1
 pkgdesc='Affymetrix Affymetrix HG_U95A Array annotation data (chip hgu95a)'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0a6648a6088eba9b955d8cdbd24c52309f8f34e8e2789cb7246b3b3c0bb535cf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
