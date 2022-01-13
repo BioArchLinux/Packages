@@ -3,7 +3,7 @@
 _pkgname=PSCBS
 _pkgver=0.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.66.0
 pkgrel=1
 pkgdesc='Analysis of Parent-Specific DNA Copy Numbers'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('58805636e55e0fd3f57bd4a0e296a8bb3d57a7bdd0fdd5868a73ddc83d173a93')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
