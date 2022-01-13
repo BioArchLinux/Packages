@@ -3,7 +3,7 @@
 _pkgname=SCArray
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Large-scale single-cell RNA-seq data manipulation with GDS files'
 arch=('x86_64')
@@ -30,7 +30,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b3f67428aa5473dbf48ea5e7b820cede1a55fecd76328ed50784cd3e231351ca')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
