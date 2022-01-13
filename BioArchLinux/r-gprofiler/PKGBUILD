@@ -3,7 +3,7 @@
 _pkgname=gProfileR
 _pkgver=0.7.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.0
 pkgrel=1
 pkgdesc="Interface to the 'g:Profiler' Toolkit"
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-rcurl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9364e0721889e101cf24ff3158a48e3c6691dd81f6ff281a5504587ddf043bc0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
