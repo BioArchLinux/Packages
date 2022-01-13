@@ -3,7 +3,7 @@
 _pkgname=FME
 _pkgver=1.3.6.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.3.6.2
 pkgrel=1
 pkgdesc='A Flexible Modelling Environment for Inverse Modelling, Sensitivity, Identifiability and Monte Carlo Analysis'
 arch=('x86_64')
@@ -24,7 +24,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('65a200f8171e27f0a3d7ffce3e49b01561f219a11f3cb515ff613a45927ff618')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
