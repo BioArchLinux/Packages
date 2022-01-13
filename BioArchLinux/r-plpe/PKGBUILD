@@ -3,7 +3,7 @@
 _pkgname=PLPE
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.54.0
 pkgrel=1
 pkgdesc='Local Pooled Error Test for Differential Expression with Paired High-throughput Data'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-lpe
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2ee377d72aa115d5b409293754a6acfcf5186a5b1f1508c9809b9a65c6a95fda')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
