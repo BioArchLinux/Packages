@@ -3,7 +3,7 @@
 _pkgname=trio
 _pkgver=3.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.32.0
 pkgrel=1
 pkgdesc='Testing of SNPs and SNP Interactions in Case-Parent Trio Studies'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('86509d44418b8c6d7df764a81f0dff69d0acc32a1ef2b3099f57ac5170807699')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
