@@ -3,7 +3,7 @@
 _pkgname=c3net
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.1
 pkgrel=1
 pkgdesc='Infering large-scale gene networks with C3NET'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-igraph
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8260569962f2d91ec6627f226d3949f271cc2cfd03886ad854b4ce4074de9654')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
