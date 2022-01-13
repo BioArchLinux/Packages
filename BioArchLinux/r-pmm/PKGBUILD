@@ -3,7 +3,7 @@
 _pkgname=pmm
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Parallel Mixed Model'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-lme4
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f6ebce2468dd729a6d182f393e761ba30520900855c1edeb9acf51e03abeb36e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
