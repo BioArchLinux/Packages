@@ -3,7 +3,7 @@
 _pkgname=caOmicsV
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='Visualization of multi-dimentional cancer genomics data'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-igraph
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d730829c6f4f8b72062a33f28606bdec2d9fa16caff61772de9ee395de31d96a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
