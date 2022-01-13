@@ -3,7 +3,7 @@
 _pkgname=CGHnormaliter
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Normalization of array CGH data with imbalanced aberrations.'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-cghcall
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d7f48ed8e18a1d447ea7d07cfa11dcfa329ea76d11154c551f6015e7bb8ae4ff')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
