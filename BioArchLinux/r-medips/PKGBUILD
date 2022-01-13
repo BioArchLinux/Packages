@@ -3,7 +3,7 @@
 _pkgname=MEDIPS
 _pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.46.0
 pkgrel=1
 pkgdesc='DNA IP-seq data analysis'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-medipsdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f7abbddb2373c44680f1565d46bf40d7a83942f15346504560b4d18dcbe97966')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
