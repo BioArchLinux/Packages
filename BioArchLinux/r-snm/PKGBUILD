@@ -3,7 +3,7 @@
 _pkgname=snm
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Supervised Normalization of Microarrays'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-lme4
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cbc2c8595426afb5e6b22ba9cfbaa5ce9ff0c693ded3a9792565df41aa5e770d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
