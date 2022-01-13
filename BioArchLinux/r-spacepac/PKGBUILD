@@ -3,7 +3,7 @@
 _pkgname=SpacePAC
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Identification of Mutational Clusters in 3D Protein Space via Simulation.'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('544c7b12f83618285c783b7d9ec91a464cda5cc2c613cf253d2e08c37d77f7dd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
