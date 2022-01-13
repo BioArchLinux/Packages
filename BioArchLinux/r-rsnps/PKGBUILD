@@ -3,7 +3,7 @@
 _pkgname=rsnps
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.0
 pkgrel=1
 pkgdesc="Get 'SNP' ('Single-Nucleotide' 'Polymorphism') Data on the Web"
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a6ce61a0320678e668f0adf95b2416639dc16496cde849091e01da203d31fb5e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
