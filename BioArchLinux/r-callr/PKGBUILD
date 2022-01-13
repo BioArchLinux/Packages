@@ -3,7 +3,7 @@
 _pkgname=callr
 _pkgver=3.7.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.7.0
 pkgrel=1
 pkgdesc='Call R from R'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d67255148595c6d0ba4c4d241bc9f6b5e00cafe25fdc13e38c10acc38653360a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
