@@ -3,7 +3,7 @@
 _pkgname=DART
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Denoising Algorithm based on Relevance network Topology'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-breastcancervdx
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2bfff1dcc1e9972fd5eabb7c3534eebe5bf166e1a084bbc91fc363fdbe1eaff3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
