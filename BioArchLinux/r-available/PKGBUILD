@@ -3,7 +3,7 @@
 _pkgname=available
 _pkgver=1.0.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.5
 pkgrel=1
 pkgdesc='Check if the Title of a Package is Available, Appropriate and Interesting'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c59f6c1c92bb846ed7eedbfae02da4854129626716966c2b68a3aaa95dfd9ed6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
