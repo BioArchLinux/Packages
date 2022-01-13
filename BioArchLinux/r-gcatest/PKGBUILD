@@ -3,7 +3,7 @@
 _pkgname=gcatest
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='Genotype Conditional Association TEST'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9845472d3fa128a30d52a91f47fb54aac94909127de03773cf09c46b4f269472')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
