@@ -3,7 +3,7 @@
 _pkgname=parglms
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='support for parallelized estimation of GLMs/GEEs'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-sandwich
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c8b50daeab23389fa53756a0c9bdd0c15fa9db1dca1091b3d40220c5e98de726')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
