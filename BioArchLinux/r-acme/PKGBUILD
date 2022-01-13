@@ -3,7 +3,7 @@
 _pkgname=ACME
 _pkgver=2.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.50.0
 pkgrel=1
 pkgdesc='Algorithms for Calculating Microarray Enrichment (ACME)'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-biocgenerics
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8fdd0f72269956a8b9d8d1ea155afa9d1857062d537b7a301a897186d7c28b40')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
