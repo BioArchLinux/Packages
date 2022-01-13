@@ -3,7 +3,7 @@
 _pkgname=RnBeads.hg19
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='RnBeads.hg19'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-rnbeads
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0d782bae6dec4026a0f90f40cfb7d5e6ea6a5ddf9bd8b34d3240914b025330e5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
