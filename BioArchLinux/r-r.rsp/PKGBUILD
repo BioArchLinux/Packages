@@ -3,7 +3,7 @@
 _pkgname=R.rsp
 _pkgver=0.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.44.0
 pkgrel=1
 pkgdesc='Dynamic Generation of Scientific Reports'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-tcltk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8969075bdcabd43bad40eef6b82223e119426279fded041163fd41e55cee3a59')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
