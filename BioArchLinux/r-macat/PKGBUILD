@@ -3,7 +3,7 @@
 _pkgname=macat
 _pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.68.0
 pkgrel=1
 pkgdesc='MicroArray Chromosome Analysis Tool'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-stjudem
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c97a9b3dff546f2ef844cf0b1e438bce491fa47da34dd2ad3a87d3c5007e5d9e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
