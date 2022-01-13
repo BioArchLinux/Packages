@@ -3,7 +3,7 @@
 _pkgname=HIREewas
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Detection of cell-type-specific risk-CpG sites in epigenome-wide association studies'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cd83e0ad11f7598083f0ef33e8c6afff996e2bbb73c3302cfbd005b6132c522e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
