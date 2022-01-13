@@ -4,7 +4,7 @@
 _pkgname=DDRTree
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.5
 pkgrel=1
 pkgdesc='Learning Principal Graphs with DDRTree'
 arch=('x86_64')
@@ -18,7 +18,7 @@ depends=(
   r-rcppeigen
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d351ec029461b43c0dcc7c30d9f378753b31ba16c6dbf667869df279b874459b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
