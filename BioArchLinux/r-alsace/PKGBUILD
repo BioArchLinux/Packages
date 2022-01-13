@@ -3,7 +3,7 @@
 _pkgname=alsace
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='ALS for the Automatic Chemical Exploration of mixtures'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-lattice
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f63765eb8e61520ec7c5a0e238333fbc80d077b6a744a881f45ad0f188c94d9d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
