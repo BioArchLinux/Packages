@@ -3,7 +3,7 @@
 _pkgname=easyreporting
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Helps creating report for improving Reproducible Computational Research'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-statmod
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cd5035cb8f6f82a3118c4ea8902cddf5f4ebcc0e36cd64c8798e77b424d047b7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
