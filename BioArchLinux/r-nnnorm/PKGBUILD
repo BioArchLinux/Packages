@@ -3,7 +3,7 @@
 _pkgname=nnNorm
 _pkgver=2.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.58.0
 pkgrel=1
 pkgdesc='Spatial and intensity based normalization of cDNA microarray data based on robust neural nets'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-marray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('01e9f4cd62a199bdfa34988db187b8062c119020de2ae951b44d039f266df283')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
