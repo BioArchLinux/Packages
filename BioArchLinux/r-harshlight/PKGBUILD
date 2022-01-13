@@ -3,7 +3,7 @@
 _pkgname=Harshlight
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='A "corrective make-up" program for microarray chips'
 arch=('x86_64')
@@ -16,7 +16,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5ffe6b6425f21ff926e2904432c9fd4a7c25aa87aa12a1d423c7b9e284ef1f28')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
