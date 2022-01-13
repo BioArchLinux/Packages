@@ -3,7 +3,7 @@
 _pkgname=DelayedMatrixStats
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc="Functions that Apply to Rows and Columns of 'DelayedMatrix' Objects"
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('534e33b7f08548a7398416609f02d5ea4952ab7b6042f62ab40cba9cc69c1cdf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
