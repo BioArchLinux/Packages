@@ -3,7 +3,7 @@
 _pkgname=NormqPCR
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Functions for normalisation of RT-qPCR data'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-readqpcr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('670c1568d9b5b34977c3fb420ec199a45f195c032908b0caaee738539c231823')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
