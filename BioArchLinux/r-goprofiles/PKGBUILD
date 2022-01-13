@@ -3,7 +3,7 @@
 _pkgname=goProfiles
 _pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.56.0
 pkgrel=1
 pkgdesc='goProfiles: an R package for the statistical analysis of functional profiles'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-org.hs.eg.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('efffaa2f8992263a832b5a62bf01f2dee679227cada7b6bd9c6cdc87d72cf72d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
