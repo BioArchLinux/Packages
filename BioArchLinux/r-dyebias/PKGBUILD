@@ -3,7 +3,7 @@
 _pkgname=dyebias
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.54.0
 pkgrel=1
 pkgdesc='The GASSCO method for correcting for slide-dependent gene-specific dye bias'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-methods
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fa5cf31e67beb212d309bfe9f06913d655b452bdbe5859ae86f70570891d0a46')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
