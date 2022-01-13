@@ -3,7 +3,7 @@
 _pkgname=Scale4C
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='Scale4C: an R/Bioconductor package for scale-space transformation of 4C-seq data'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a88ef1de3094c85451edaf98295c9d7e2e6e6dc40f4d36802ff1ea6b6d4d883f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
