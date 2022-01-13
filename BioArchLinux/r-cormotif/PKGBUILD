@@ -3,7 +3,7 @@
 _pkgname=Cormotif
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Correlation Motif Fit'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-limma
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0b27b7622dd0211e15a3251178b9deb66fc9b272522f19549af2c9979fb3fab7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
