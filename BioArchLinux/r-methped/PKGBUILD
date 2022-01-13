@@ -3,7 +3,7 @@
 _pkgname=MethPed
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='A DNA methylation classifier tool for the identification of pediatric brain tumor subtypes'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-markdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c8d7ab080d34d19c366a076310e34a20387f642a8d7b20595a9d02ae2cf488a8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
