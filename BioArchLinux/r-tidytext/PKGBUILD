@@ -3,7 +3,7 @@
 _pkgname=tidytext
 _pkgver=0.3.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.2
 pkgrel=1
 pkgdesc="Text Mining using 'dplyr', 'ggplot2', and Other Tidy Tools"
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6fe0ada78ee2cdf77c16e519a29b9baff61d8e23ab56aa0a9adc1b2a99a6472b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
