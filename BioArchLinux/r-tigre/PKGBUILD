@@ -3,7 +3,7 @@
 _pkgname=tigre
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Transcription factor Inference through Gaussian process Reconstruction of Expression'
 arch=('x86_64')
@@ -27,7 +27,7 @@ optdepends=(
   r-puma
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5f0d33f415263b4e46efda53721d69239ca319d1cd0e4832799bce422d9ca509')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
