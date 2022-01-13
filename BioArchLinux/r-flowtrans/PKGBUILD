@@ -3,7 +3,7 @@
 _pkgname=flowTrans
 _pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.46.0
 pkgrel=1
 pkgdesc='Parameter Optimization for Flow Cytometry Data Transformation'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-flowviz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4bdd39613d0d10448ff9f7362aabdc504bb4f4595ccf6abcc22701a192aa77ba')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
