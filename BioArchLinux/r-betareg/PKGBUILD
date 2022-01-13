@@ -3,7 +3,7 @@
 _pkgname=betareg
 _pkgver=3.1-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.1.4
 pkgrel=1
 pkgdesc='Beta Regression'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-strucchange
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5106986096a68b2b516215968158589b71969ce7912879253d6e930355a18101')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
