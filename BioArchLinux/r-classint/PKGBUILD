@@ -3,7 +3,7 @@
 _pkgname=classInt
 _pkgver=0.4-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.3
 pkgrel=1
 pkgdesc='Choose Univariate Class Intervals'
 arch=('x86_64')
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9ede7a2a7a6b6c114919a3315a884fb592e33b037a50a4fe45cbd4fe2fc434ac')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
