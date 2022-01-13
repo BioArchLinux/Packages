@@ -3,7 +3,7 @@
 _pkgname=biocGraph
 _pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.56.0
 pkgrel=1
 pkgdesc='Graph examples and use cases in Bioinformatics'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-hgu95av2.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b8b375948d6cd8b9f2e7ebd53d2e887e14b7e65c8d866622a74d883e0303f930')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
