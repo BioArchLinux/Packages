@@ -3,7 +3,7 @@
 _pkgname=RefPlus
 _pkgver=1.64.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.64.0
 pkgrel=1
 pkgdesc='A function set for the Extrapolation Strategy (RMA+) and Extrapolation Averaging (RMA++) methods.'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-affydata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('19aaf71cedc183b1fa9b9b892bb71659c1c9c37eee825762049ab17835a5f9fc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
