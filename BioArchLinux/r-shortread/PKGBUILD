@@ -3,7 +3,7 @@
 _pkgname=ShortRead
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='FASTQ input and manipulation'
 arch=('x86_64')
@@ -35,7 +35,7 @@ optdepends=(
   r-yeastnagalakshmi
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5dcba7ecf069db6d3caa100a7f0ac56222bf919852de1769e2668fc64bd827dc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
