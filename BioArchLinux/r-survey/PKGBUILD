@@ -3,7 +3,7 @@
 _pkgname=survey
 _pkgver=4.1-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.1.1
 pkgrel=1
 pkgdesc='Analysis of Complex Survey Samples'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-rsqlite
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('05e89a1678a39e32bfb41af8a31d643b04fc4d2660a96e701825e6bffcd75a52')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
