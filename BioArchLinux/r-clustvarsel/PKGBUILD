@@ -3,7 +3,7 @@
 _pkgname=clustvarsel
 _pkgver=2.3.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.3.4
 pkgrel=1
 pkgdesc='Variable Selection for Gaussian Model-Based Clustering'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3da13e4a58116f5bff59a934721f41c277569f03d57459929123cca02573fb43')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
