@@ -3,7 +3,7 @@
 _pkgname=lapmix
 _pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.60.0
 pkgrel=1
 pkgdesc='Laplace Mixture Model in Microarray Experiments'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c2d2145dda4961a2acdd9a57b8ca1845ddfa0783a247b91746683094d7f4d19e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
