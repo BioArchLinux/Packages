@@ -3,7 +3,7 @@
 _pkgname=scReClassify
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='scReClassify: post hoc cell type classification of single-cell RNA-seq data'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ac10d33839bb41815120e7e9f46ff64716a458f861b5338832785c1420fa4c6c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
