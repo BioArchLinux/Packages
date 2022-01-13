@@ -3,7 +3,7 @@
 _pkgname=timecourse
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Statistical Analysis for Developmental Microarray Time Course Data'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-marray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('685a64ac45d7c9f34db20b71ea4a46fe72d19d2add9b427cea4f77f9d83f644e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
