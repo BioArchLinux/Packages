@@ -3,7 +3,7 @@
 _pkgname=RbcBook1
 _pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.0
 pkgrel=1
 pkgdesc='Support for Springer monograph on Bioconductor'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-graph
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('40babce9b6687e9fd6cda05371541a6b97198c0139fca933509977e40e08a29c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
