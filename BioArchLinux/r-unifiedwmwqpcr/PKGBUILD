@@ -3,7 +3,7 @@
 _pkgname=unifiedWMWqPCR
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Unified Wilcoxon-Mann Whitney Test for testing differential expression in qPCR data'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-htqpcr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f3bd0ac1232e52696b0a049cb44f7f440e75a912eb935c301aca7a2fea32824f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
