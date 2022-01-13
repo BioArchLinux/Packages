@@ -3,7 +3,7 @@
 _pkgname=FELLA
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Interpretation and enrichment for metabolomics data'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-visnetwork
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('acb526baf20bfe4f29cbbbfa5ad4eddd1c3d8b48ab2cbb2a06e85b41fcc44477')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
