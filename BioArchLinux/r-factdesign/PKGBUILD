@@ -3,7 +3,7 @@
 _pkgname=factDesign
 _pkgver=1.70.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.70.0
 pkgrel=1
 pkgdesc='Factorial designed microarray experiment analysis'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-multtest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9bebd5cb5baf4cb0dd823ec80ac1156dfe8cedca49084c6d6f992207ebfd0b36')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
