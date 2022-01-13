@@ -3,7 +3,7 @@
 _pkgname=genefilter
 _pkgver=1.76.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.76.0
 pkgrel=1
 pkgdesc='genefilter: methods for filtering genes from high-throughput experiments'
 arch=('x86_64')
@@ -30,7 +30,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c21b3c778a61c4fd85c4c157755fcf9ba636abac6658ad2809e4b594ea186a15')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
