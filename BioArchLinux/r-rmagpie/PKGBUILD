@@ -3,7 +3,7 @@
 _pkgname=Rmagpie
 _pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='MicroArray Gene-expression-based Program In Error rate estimation'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6ffa92bcc5c274458014f29e30a817a0a03db554e0d6f13a00cbc5223ed9c17a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
