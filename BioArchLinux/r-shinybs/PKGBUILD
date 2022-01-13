@@ -3,7 +3,7 @@
 _pkgname=shinyBS
 _pkgver=0.61
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.61
 pkgrel=1
 pkgdesc='Twitter Bootstrap Components for Shiny'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('51be29541e066d30c66e243393f20b0da705eba1b7ce7eeadea993bb2aa91166')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
