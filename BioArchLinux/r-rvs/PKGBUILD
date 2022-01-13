@@ -3,7 +3,7 @@
 _pkgname=RVS
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='Computes estimates of the probability of related individuals sharing a rare variant'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('023a448fb4cf62ef44d7adb08715bfcd8391ca41cb1feaab7fd5ba107d5b8454')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
