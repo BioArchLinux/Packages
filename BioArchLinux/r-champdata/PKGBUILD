@@ -3,7 +3,7 @@
 _pkgname=ChAMPdata
 _pkgver=2.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.26.0
 pkgrel=1
 pkgdesc='Data Packages for ChAMP package'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-genomicranges
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('08d2e3dcddb66c228178f99c7a4fffc692a46461f8c7e5d83ce7d258cd9af1fd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
