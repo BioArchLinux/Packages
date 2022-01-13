@@ -3,7 +3,7 @@
 _pkgname=BMA
 _pkgver=3.18.15
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.18.15
 pkgrel=1
 pkgdesc='Bayesian Model Averaging'
 arch=('x86_64')
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4be0d52f433503631e9574944067f613bafba129ebe27396bcfccb3b95992b1a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
