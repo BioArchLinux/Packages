@@ -3,7 +3,7 @@
 _pkgname=flowMatch
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Matching and meta-clustering in flow cytometry'
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-healthyflowdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a4af3e2d04d81f69aa764117eede42ef10f24f354a13014d84f18f4293801508')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
