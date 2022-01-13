@@ -3,7 +3,7 @@
 _pkgname=supraHex
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='supraHex: a supra-hexagonal map for analysing tabular omics data'
 arch=('any')
@@ -23,7 +23,7 @@ depends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ddb084acd0c3258c1ea732c12b317baa0cefa18b1b69a9c42eb90723726ce403')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
