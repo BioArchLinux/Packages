@@ -4,7 +4,7 @@
 _pkgname=MethTargetedNGS
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Perform Methylation Analysis on Next Generation Sequencing Data'
 arch=('any')
@@ -18,7 +18,7 @@ depends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('732b278bfd7aa35e64a7b6b5d7f6896c08a2660cc89d2d6215d8b1f47ed4afd8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
