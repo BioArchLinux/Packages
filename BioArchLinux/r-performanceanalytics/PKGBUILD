@@ -3,7 +3,7 @@
 _pkgname=PerformanceAnalytics
 _pkgver=2.0.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.4
 pkgrel=1
 pkgdesc='Econometric Tools for Performance and Risk Analysis'
 arch=('x86_64')
@@ -36,7 +36,7 @@ optdepends=(
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('78a17070977665b30ddf3999d02fbbcca0f418b0791358c14bdc722235342232')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
