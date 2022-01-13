@@ -3,7 +3,7 @@
 _pkgname=apComplex
 _pkgver=2.60.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.60.0
 pkgrel=1
 pkgdesc='Estimate protein complex membership using AP-MS protein data'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-rgraphviz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a30e9ee5b691640fa49a8cdc7ef01be94d273cbd85c42c353c2cf20335230124')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
