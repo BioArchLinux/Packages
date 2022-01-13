@@ -3,7 +3,7 @@
 _pkgname=geva
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Gene Expression Variation Analysis (GEVA)'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-topgo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('88c5c6c5514b34c62e374577f18f7de9b1906452655d85344e4b4551303ea667')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
