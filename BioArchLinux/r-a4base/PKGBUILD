@@ -3,7 +3,7 @@
 _pkgname=a4Base
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Automated Affymetrix Array Analysis Base Package'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-nlcv
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('be2b5ff2cce462c52207603a2479cef003e83cd212412135f986ad4d9dedad65')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
