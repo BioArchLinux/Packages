@@ -3,7 +3,7 @@
 _pkgname=ChIPsim
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Simulation of ChIP-seq experiments'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-zoo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0df7809d92cc8f516834e90696781b3bc933abcea58b8f85f8572486a676badd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
