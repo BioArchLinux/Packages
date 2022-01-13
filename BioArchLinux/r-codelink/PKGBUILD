@@ -3,7 +3,7 @@
 _pkgname=codelink
 _pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.0
 pkgrel=1
 pkgdesc='Manipulation of Codelink microarray data'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-parallel
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('db4da262e1536b770011448caa647073f18042730f51efa2a68a978953f1cd8f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
