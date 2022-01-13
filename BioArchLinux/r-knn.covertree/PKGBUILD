@@ -4,7 +4,7 @@
 _pkgname=knn.covertree
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0
 pkgrel=1
 pkgdesc='An Accurate kNN Implementation with Multiple Distance Measures'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7fbfd7f2a6366392c7368fd282eba16b5ab0546f603559eac147f3e679654e57')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
