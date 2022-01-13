@@ -3,7 +3,7 @@
 _pkgname=robust
 _pkgver=0.6-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.1
 pkgrel=1
 pkgdesc='Port of the S+ "Robust Library"'
 arch=('x86_64')
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('496fd225f6bc6f734e338308f18475125aaf691b39e25308bddb284d3106117d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
