@@ -3,7 +3,7 @@
 _pkgname=hopach
 _pkgver=2.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.54.0
 pkgrel=1
 pkgdesc='Hierarchical Ordered Partitioning and Collapsing Hybrid (HOPACH)'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-biocgenerics
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b159a548ea06f47cff9716911c0838b9c1d7c2a7173e5a915c0eceae217d48d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
