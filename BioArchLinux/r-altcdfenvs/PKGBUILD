@@ -3,7 +3,7 @@
 _pkgname=altcdfenvs
 _pkgver=2.56.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.56.0
 pkgrel=1
 pkgdesc='alternative CDF environments (aka probeset mappings)'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-rgraphviz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fe148c7ba1f06d0991f163a86e77cdaedd7f7af2d1abc232a9f165c9ea48962b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
