@@ -3,7 +3,7 @@
 _pkgname=dks
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='The double Kolmogorov-Smirnov package for evaluating multiple testing procedures.'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-cubature
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a88ed87b554a00de2290bd6928b63759a36ea700dcfc49570ed0f5bc2012de6e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
