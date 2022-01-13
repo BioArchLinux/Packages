@@ -3,7 +3,7 @@
 _pkgname=svgPanZoom
 _pkgver=0.3.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.4
 pkgrel=1
 pkgdesc="R 'Htmlwidget' to Add Pan and Zoom to Almost any R Graphic"
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('02368f3640853cae6c9ea478fe4dc038c05e1d136a2568c221b8b8ee177ff4c5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
