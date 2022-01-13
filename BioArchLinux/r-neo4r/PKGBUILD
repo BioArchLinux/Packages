@@ -3,7 +3,7 @@
 _pkgname=neo4r
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="A 'Neo4J' Driver"
 arch=('any')
@@ -28,7 +28,7 @@ depends=(
   r-tidyselect
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('47e5f51c6980a9383befc8247a5cdee708d60652e4908b2e510cb12a2c949968')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
