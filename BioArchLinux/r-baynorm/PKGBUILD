@@ -3,7 +3,7 @@
 _pkgname=bayNorm
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Single-cell RNA sequencing data normalization'
 arch=('x86_64')
@@ -32,7 +32,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7bb20a89103d0928d22085da02cf3726f525fdafe96775bfebc9d0769420afe7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
