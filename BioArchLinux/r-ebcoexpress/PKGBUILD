@@ -3,7 +3,7 @@
 _pkgname=EBcoexpress
 _pkgver=1.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.38.0
 pkgrel=1
 pkgdesc='EBcoexpress for Differential Co-Expression Analysis'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-igraph
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2b43500acc7dcf619074a6173f7ab6d2441b3f50a4baf8b694782e0f4404849a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
