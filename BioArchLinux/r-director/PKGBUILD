@@ -3,7 +3,7 @@
 _pkgname=Director
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='A dynamic visualization tool of multi-level data'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-htmltools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8f1088f202fb3e63f0801a759845b258f50ed589f1c840546128997f67460ab8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
