@@ -3,7 +3,7 @@
 _pkgname=maSigPro
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Significant Gene Expression Profile Differences in Time Course Gene Expression Data'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-venn
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ebaa80caa013e3d88bf32c4891209da8dbcc517c70248e7547f9e33beb75420b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
