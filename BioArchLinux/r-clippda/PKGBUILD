@@ -3,7 +3,7 @@
 _pkgname=clippda
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.0
 pkgrel=1
 pkgdesc='A package for the clinical proteomic profiling data analysis'
 arch=('any')
@@ -18,7 +18,7 @@ depends=(
   r-statmod
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5ec43b55c238536f218e6ef6a5cbc8ee6951db78408b3537e7d95b46839410b0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
