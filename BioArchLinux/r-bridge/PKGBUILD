@@ -3,7 +3,7 @@
 _pkgname=bridge
 _pkgver=1.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.58.0
 pkgrel=1
 pkgdesc='Bayesian Robust Inference for Differential Gene Expression'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-rama
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3ec761ac724b3069a1ccf9c3e9f9632809040a4be90147f58edb08c26b8cf663')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
