@@ -3,7 +3,7 @@
 _pkgname=leiden
 _pkgver=0.3.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.9
 pkgrel=1
 pkgdesc='R Implementation of Leiden Clustering Algorithm'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('81754276e026a9a8436476365bbadf0f15a403a525a349cb56418da5d8edea0d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
