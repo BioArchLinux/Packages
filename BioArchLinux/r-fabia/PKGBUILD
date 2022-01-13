@@ -3,7 +3,7 @@
 _pkgname=fabia
 _pkgver=2.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.40.0
 pkgrel=1
 pkgdesc='FABIA: Factor Analysis for Bicluster Acquisition'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('21c836720cb429db563e71e640c6518e2617fd1f7407b21d8e8a3fa9689f47b6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
