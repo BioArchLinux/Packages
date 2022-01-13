@@ -3,7 +3,7 @@
 _pkgname=doSNOW
 _pkgver=1.0.19
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.19
 pkgrel=1
 pkgdesc="Foreach Parallel Adaptor for the 'snow' Package"
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4cd2d080628482f4c6ecab593313d7e42516f5ff13fbf9f90e461fcad0580738')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
