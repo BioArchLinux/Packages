@@ -3,7 +3,7 @@
 _pkgname=ChIPXpressData
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='ChIPXpress Pre-built Databases'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-bigmemory
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cac618fe429aab09b7b7dc5f44a80465500f8cd627210938d4154be5b50a7c41')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
