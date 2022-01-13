@@ -3,7 +3,7 @@
 _pkgname=farms
 _pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.46.0
 pkgrel=1
 pkgdesc='FARMS - Factor Analysis for Robust Microarray Summarization'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-utils
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('84234400ee3eaa33d03fb37a6f96b41eaef9c6d95d6f95a2b2a0ba1001c248d4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
