@@ -3,7 +3,7 @@
 _pkgname=copa
 _pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.0
 pkgrel=1
 pkgdesc='Functions to perform cancer outlier profile analysis.'
 arch=('x86_64')
@@ -17,7 +17,7 @@ optdepends=(
   r-colonca
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ede835b0b0923d655278dd38aa0339a0c60f0d04385a8e2005b99f54ee975418')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
