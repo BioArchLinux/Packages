@@ -3,7 +3,7 @@
 _pkgname=exomeCopy
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Copy number variant detection from exome sequencing read depth'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-biostrings
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8ce46324e1064e252a6c9044d879d8a7e010b85ccc8983318b8cad7ac1c7acbf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
