@@ -3,7 +3,7 @@
 _pkgname=smurf
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.2
 pkgrel=1
 pkgdesc='Sparse Multi-Type Regularized Feature Modeling'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4ee92da72e4db2a3b33e2fb879ff5d5fcf7a8ed85b42a819a4d12a41de250503')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
