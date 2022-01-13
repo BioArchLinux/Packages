@@ -3,7 +3,7 @@
 _pkgname=bioDist
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Different distance measures'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-locfit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b73df0b83dc6e48537b2e6de30c3a101c09acac78f831b89c1a417dc74626578')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
