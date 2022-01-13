@@ -3,7 +3,7 @@
 _pkgname=googleCloudStorageR
 _pkgver=0.7.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.0
 pkgrel=1
 pkgdesc='Interface with Google Cloud Storage API'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('37f8bc52a75adc481945384130b9dfc5a2905a6731e57953a36a9e100f82e8fa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
