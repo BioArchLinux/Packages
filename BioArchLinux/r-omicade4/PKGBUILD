@@ -3,7 +3,7 @@
 _pkgname=omicade4
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Multiple co-inertia analysis of omics datasets'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('95ebc28f88fa3037442b5a332090c971ee5d9170efa4368604be53a3bc0e0753')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
