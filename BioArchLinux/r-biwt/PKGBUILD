@@ -3,7 +3,7 @@
 _pkgname=biwt
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0
 pkgrel=1
 pkgdesc='Functions to compute the biweight mean vector and covariance & correlation matrices'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rrcov
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2428758fad46b1569b58e4985806c0df79e9fd3a3115d4902512f5e127ea63d5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
