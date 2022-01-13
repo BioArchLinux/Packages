@@ -3,7 +3,7 @@
 _pkgname=pcalg
 _pkgver=2.7-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.7.4
 pkgrel=1
 pkgdesc='Methods for Graphical Models and Causal Inference'
 arch=('x86_64')
@@ -37,7 +37,7 @@ optdepends=(
   r-rgraphviz
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('31a2d45dc462ef90eff82f24d04caddca6991951f34e6e38d21af10d0b27f07a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
