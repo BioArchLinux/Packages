@@ -3,7 +3,7 @@
 _pkgname=rio
 _pkgver=0.5.29
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.5.29
 pkgrel=1
 pkgdesc='A Swiss-Army Knife for Data I/O'
 arch=('any')
@@ -39,7 +39,7 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9fa63187e1814053e6ed2a164665b4924e08c3453adccb78f7211d403dcc5412')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
