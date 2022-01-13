@@ -3,7 +3,7 @@
 _pkgname=org.Rn.eg.db
 _pkgver=3.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.14.0
 pkgrel=1
 pkgdesc='Genome wide annotation for Rat'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('591be1fc4fcc9765bffd412a220c7c37728d986385cf096c8a5c0ada4cfb97dc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
