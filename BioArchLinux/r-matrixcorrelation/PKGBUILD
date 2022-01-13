@@ -3,7 +3,7 @@
 _pkgname=MatrixCorrelation
 _pkgver=0.9.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.5
 pkgrel=1
 pkgdesc='Matrix Correlation Coefficients'
 arch=('x86_64')
@@ -19,7 +19,7 @@ depends=(
   r-rspectra
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8d40d02e4a31d5a1c7af9f9397c959a8652a4891fa76281c157a6b86aaab57a4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
