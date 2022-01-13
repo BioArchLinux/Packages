@@ -4,7 +4,7 @@
 _pkgname=orQA
 _pkgver=0.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.1
 pkgrel=1
 pkgdesc='Order Restricted Assessment Of Microarray Titration Experiments'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-rcpp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('18378f62fbfc7f751dda71ca21e438fb3677dd0c293e74801784e2c56e963b6e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
