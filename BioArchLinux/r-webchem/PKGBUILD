@@ -3,7 +3,7 @@
 _pkgname=webchem
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.2
 pkgrel=1
 pkgdesc='Chemical Information from the Web'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-vcr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b72fee1b862b554626a79ac4dc37c62dd19ab6041393cc0328dd72f36f7ebfd1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
