@@ -3,7 +3,7 @@
 _pkgname=promises
 _pkgver=1.2.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0.1
 pkgrel=1
 pkgdesc='Abstractions for Promise-Based Asynchronous Programming'
 arch=('x86_64')
@@ -28,7 +28,7 @@ optdepends=(
   r-vembedr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8d3a8217909e91f4c2a2eebba5ac8fc902a9ac1a9e9d8a30815c9dc0f162c4b7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
