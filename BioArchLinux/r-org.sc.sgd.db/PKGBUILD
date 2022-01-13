@@ -3,7 +3,7 @@
 _pkgname=org.Sc.sgd.db
 _pkgver=3.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.14.0
 pkgrel=1
 pkgdesc='Genome wide annotation for Yeast'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f888a303630f11a86e09d6ee8e2535cd8afc63b7494f9990815431afa8c274b2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
