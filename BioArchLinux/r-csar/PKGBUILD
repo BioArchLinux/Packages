@@ -3,7 +3,7 @@
 _pkgname=CSAR
 _pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.46.0
 pkgrel=1
 pkgdesc='Statistical tools for the analysis of ChIP-seq data'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-shortread
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1d15e272a095ab921b18c5c4d2589d952cba0d178e543bb1b2047fd57d2e1a77')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
