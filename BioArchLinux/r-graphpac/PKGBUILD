@@ -3,7 +3,7 @@
 _pkgname=GraphPAC
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='Identification of Mutational Clusters in Proteins via a Graph Theoretical Approach.'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e5fa11da997d123066f86621bc6427fab8acb7dc62716a531af2e43a142c22a5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
