@@ -3,7 +3,7 @@
 _pkgname=brglm
 _pkgver=0.7.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.2
 pkgrel=1
 pkgdesc='Bias Reduction in Binomial-Response Generalized Linear Models'
 arch=('x86_64')
@@ -17,7 +17,7 @@ optdepends=(
   r-mass
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('56098d2ce238478e7a27cacc4cdec0bc65f287fe746b38fbb1edda20c1675023')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
