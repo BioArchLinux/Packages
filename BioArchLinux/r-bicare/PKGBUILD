@@ -3,7 +3,7 @@
 _pkgname=BicARE
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='Biclustering Analysis and Results Exploration'
 arch=('x86_64')
@@ -16,7 +16,7 @@ depends=(
   r-multtest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c651bb9f1c7bd6c971c26c9f11a52270bd6672751a71fdcc58dab30298ce1bbd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
