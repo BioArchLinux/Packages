@@ -3,7 +3,7 @@
 _pkgname=gplots
 _pkgver=3.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.1.1
 pkgrel=1
 pkgdesc='Various R Programming Tools for Plotting Data'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-mass
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f9ae19c2574b6d41adbeccaf7bc66cf56d7b2769004daba7e0038d5fbd821339')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
