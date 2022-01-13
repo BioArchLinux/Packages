@@ -3,7 +3,7 @@
 _pkgname=koRpus.lang.en
 _pkgver=0.1-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.4
 pkgrel=1
 pkgdesc="Language Support for 'koRpus' Package: English"
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-sylly.en
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('629cfc278a2d9aa28cb31323bc5f0077322273aefff8532232ea48c98b0152b9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
