@@ -3,7 +3,7 @@
 _pkgname=SemDist
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Information Accretion-based Function Predictor Evaluation'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-gosemsim
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('558989af68d2ec3701acab23de34b69babdf49404f3567a4c82e434a14d62109')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
