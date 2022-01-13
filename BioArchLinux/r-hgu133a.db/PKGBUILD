@@ -3,7 +3,7 @@
 _pkgname=hgu133a.db
 _pkgver=3.13.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.13.0
 pkgrel=1
 pkgdesc='Affymetrix Affymetrix HG-U133A Array annotation data (chip hgu133a)'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('945e21ba79483ef0d022855978b3e46a3cf8f2b27eeb0e93a6c104ed6c7c4c02')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
