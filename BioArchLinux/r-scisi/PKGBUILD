@@ -3,7 +3,7 @@
 _pkgname=ScISI
 _pkgver=1.65.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.65.0
 pkgrel=1
 pkgdesc='In Silico Interactome'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e1c7a5299b15230c9aae69cf8ff86fb560ba394e225c487547ad4c1bb55b6b60')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
