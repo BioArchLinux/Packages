@@ -3,7 +3,7 @@
 _pkgname=NeighborNet
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Neighbor_net analysis'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-graph
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('132037b1e657bf3cb89f1d223ef6f4687d2a588e854d15af572d2be353a23a49')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
