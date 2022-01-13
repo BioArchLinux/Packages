@@ -3,7 +3,7 @@
 _pkgname=InvariantCausalPrediction
 _pkgver=0.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.8
 pkgrel=1
 pkgdesc='Invariant Causal Prediction'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-mboost
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('542ecf1dacc153bca2d9c055da57f8650d4e8925aa850df2bcadd344e5f69305')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
