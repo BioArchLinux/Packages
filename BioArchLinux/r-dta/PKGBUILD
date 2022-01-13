@@ -3,7 +3,7 @@
 _pkgname=DTA
 _pkgver=2.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.40.0
 pkgrel=1
 pkgdesc='Dynamic Transcriptome Analysis'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-scatterplot3d
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e1096e23bd7cda28e1820b6973af69af7217da9568030503119c421fb4acb7a4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
