@@ -3,7 +3,7 @@
 _pkgname=BCRANK
 _pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.56.0
 pkgrel=1
 pkgdesc='Predicting binding site consensus from ranked DNA sequences'
 arch=('x86_64')
@@ -17,7 +17,7 @@ optdepends=(
   r-seqlogo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bf9d87e8123b7ae01912cc679a6ded8e83894f693901a254d2e4a9ff8dc69f06')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
