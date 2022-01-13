@@ -3,7 +3,7 @@
 _pkgname=iPAC
 _pkgver=1.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.38.0
 pkgrel=1
 pkgdesc='Identification of Protein Amino acid Clustering'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-scatterplot3d
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1c1217076d555c7adc8e0d336f5aad12c1a1d51e3538a5755846f1e551a872fb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
