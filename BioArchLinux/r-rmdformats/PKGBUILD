@@ -3,7 +3,7 @@
 _pkgname=rmdformats
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.3
 pkgrel=1
 pkgdesc="HTML Output Formats and Templates for 'rmarkdown' Documents"
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-questionr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a4a6bb1778f6e5dd930b5804c7717e0175879c3770436ef6a6b86159824673ff')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
