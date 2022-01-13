@@ -3,7 +3,7 @@
 _pkgname=pingr
 _pkgver=2.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.1
 pkgrel=1
 pkgdesc='Check if a Remote Computer is Up'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d49653e705e99ed6ff950d305777ffc18da09b1a79a3091622eeef5df25f7221')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
