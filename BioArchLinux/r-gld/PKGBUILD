@@ -3,7 +3,7 @@
 _pkgname=gld
 _pkgver=2.6.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.6.4
 pkgrel=1
 pkgdesc='Estimation and Use of the Generalised (Tukey) Lambda Distribution'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-lmom
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0db6daee1b6e256d64d292c1f6795c505677331dcf2f97e04e264566ded93323')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
