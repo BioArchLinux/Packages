@@ -3,7 +3,7 @@
 _pkgname=ChromHeatMap
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Heat map plotting by genome coordinate'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-hgu95av2.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8e826b1e3b1cbf06960410e3708a39cea0d2e802b5d5f53b65cafd5466ef9b23')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
