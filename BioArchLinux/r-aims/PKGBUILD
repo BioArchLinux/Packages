@@ -3,7 +3,7 @@
 _pkgname=AIMS
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='AIMS : Absolute Assignment of Breast Cancer Intrinsic Molecular Subtype'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d882d4a2ba08b67166394618d2081af7a8b0dd9d38dfa74651c333b25bf35bcb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
