@@ -3,7 +3,7 @@
 _pkgname=EBarrays
 _pkgver=2.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.58.0
 pkgrel=1
 pkgdesc='Unified Approach for Simultaneous Gene Clustering and Differential Expression Identification'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e609e9816cdce3a304cd919f7e7027f888458f1f1c5a46dcb7f3d63c1233bc81')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
