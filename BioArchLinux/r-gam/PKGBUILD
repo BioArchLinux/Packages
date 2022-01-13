@@ -3,7 +3,7 @@
 _pkgname=gam
 _pkgver=1.20
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20
 pkgrel=1
 pkgdesc='Generalized Additive Models'
 arch=('x86_64')
@@ -21,7 +21,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('91eb416ba06aa1c3f611661530467f4513992f6c168e3f6e474cf57bae131efe')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
