@@ -3,7 +3,7 @@
 _pkgname=AssessORF
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Assess Gene Predictions Using Proteomics and Evolutionary Conservation'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9e9718caec0f1826b9490d85d9c9aa7f33b88a0e75b3b1bfe0462175ad8cc266')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
