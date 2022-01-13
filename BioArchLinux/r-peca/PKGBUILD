@@ -3,7 +3,7 @@
 _pkgname=PECA
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Probe-level Expression Change Averaging'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-spikein
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('be9f6a6521513904c1e678427f7509f0d3cd5982640a0ab70491cebb31c3e1a5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
