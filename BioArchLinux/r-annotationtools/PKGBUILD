@@ -3,7 +3,7 @@
 _pkgname=annotationTools
 _pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.68.0
 pkgrel=1
 pkgdesc='Annotate microarrays and perform cross-species gene expression analyses using flat file databases'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('70b7f8eb939cbf802442a61a5990cf4d109172d4f8160b28c7405ae416d72d3f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
