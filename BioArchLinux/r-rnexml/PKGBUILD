@@ -3,7 +3,7 @@
 _pkgname=RNeXML
 _pkgver=2.4.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.4.5
 pkgrel=1
 pkgdesc="Semantically Rich I/O for the 'NeXML' Format"
 arch=('any')
@@ -40,7 +40,7 @@ optdepends=(
   r-xslt
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2b667ecb6400e4c0c125ca73a98cde81330cde3a85b764261f77159e702754f3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
