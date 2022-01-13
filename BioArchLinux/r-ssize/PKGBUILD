@@ -3,7 +3,7 @@
 _pkgname=ssize
 _pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.68.0
 pkgrel=1
 pkgdesc='Estimate Microarray Sample Size'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6893fe897416f1b93eff918af575d6b48684602b0273ae82b3d719253b7e1ce0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
