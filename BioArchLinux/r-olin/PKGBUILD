@@ -3,7 +3,7 @@
 _pkgname=OLIN
 _pkgver=1.72.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.72.0
 pkgrel=1
 pkgdesc='Optimized local intensity-dependent normalisation of two-color microarrays'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-convert
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('eb257ccda61d423061e96f0ee63ba46c08bee47a9c5395049b2c7d40c6102473')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
