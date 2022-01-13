@@ -3,7 +3,7 @@
 _pkgname=MiPP
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Misclassification Penalized Posterior Classification'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-e1071
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d6dd7b68ce052b5fbd8e6e8c2db29cc0fd9142a5a44f7652b69c2507c4ce82d4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
