@@ -3,7 +3,7 @@
 _pkgname=ENCODExplorerData
 _pkgver=0.99.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.99.5
 pkgrel=1
 pkgdesc='A compilation of ENCODE metadata'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('70cfc18dd800a084ec186826f3740c4397cf80359c4ac219d12ef78b68a9ee01')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
