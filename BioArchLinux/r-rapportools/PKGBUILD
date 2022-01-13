@@ -3,7 +3,7 @@
 _pkgname=rapportools
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0
 pkgrel=1
 pkgdesc='Miscellaneous (stats) helper functions with sane defaults for reporting'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-reshape
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2b80267625a92b8f7375306203de6fe36b39871183b502b312219e719826fbe9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
