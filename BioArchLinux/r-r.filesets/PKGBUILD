@@ -3,7 +3,7 @@
 _pkgname=R.filesets
 _pkgver=2.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.14.0
 pkgrel=1
 pkgdesc='Easy Handling of and Access to Files Organized in Structured Directories'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-gtools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('707dd7c099aeadbecebbd2ba57e6400405aa44487c641f3729ce06c4c642bb23')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
