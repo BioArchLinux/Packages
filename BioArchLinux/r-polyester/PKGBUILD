@@ -3,7 +3,7 @@
 _pkgname=polyester
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Simulate RNA-seq reads'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-markdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1e81c68f1d1ae06933c751423e4cdd5f21dd7b26a553d65d5fc40937a892290d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
