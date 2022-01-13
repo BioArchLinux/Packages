@@ -3,7 +3,7 @@
 _pkgname=LIM
 _pkgver=1.4.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.6
 pkgrel=1
 pkgdesc='Linear Inverse Model examples and solution methods.'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-limsolve
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a8152ec6aa590a01bfcaab0ab67e93bb8af6e5022104c07ee6812f03aa7da10f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
