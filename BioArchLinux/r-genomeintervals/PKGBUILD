@@ -3,7 +3,7 @@
 _pkgname=genomeIntervals
 _pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='Operations on genomic intervals'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f2e4db3d8e3fdb557b7ac478e5f7ac0e50dd5d25070187edfbd0ce86341b4cc5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
