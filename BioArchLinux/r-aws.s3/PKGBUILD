@@ -3,7 +3,7 @@
 _pkgname=aws.s3
 _pkgver=0.3.21
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.21
 pkgrel=1
 pkgdesc="'AWS S3' Client Package"
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bd21054ab63555d294e7465dcb6c86f107db52ba841aeac5bdf4d00af0674c8c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
