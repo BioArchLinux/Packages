@@ -3,7 +3,7 @@
 _pkgname=shinypanel
 _pkgver=0.1.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.4
 pkgrel=1
 pkgdesc='Shiny Control Panel'
 arch=('any')
@@ -18,7 +18,7 @@ depends=(
   r-shinyjs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f98644118a582aed4149920beaeac12851ae2cacbd3cbe46f547620f9dbcae41')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
