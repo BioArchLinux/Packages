@@ -3,7 +3,7 @@
 _pkgname=CNTools
 _pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='Convert segment data into a region by sample matrix to allow for other high level computational analyses.'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-genefilter
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c6695f83dd9a4c760c5a13907750702e7cc4fe8eb10884edae62d48f7edf15a5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
