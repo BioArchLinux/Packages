@@ -3,7 +3,7 @@
 _pkgname=shinydashboard
 _pkgver=0.7.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.2
 pkgrel=1
 pkgdesc="Create Dashboards with 'Shiny'"
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a56ee48572649830cd8d82f1caa2099411461e19e19223cbad36a375299f3843')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
