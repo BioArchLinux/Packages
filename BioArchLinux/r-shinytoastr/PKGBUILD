@@ -3,7 +3,7 @@
 _pkgname=shinytoastr
 _pkgver=2.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.1
 pkgrel=1
 pkgdesc="Notifications from 'Shiny'"
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9618b16f6247e60ac9431d8c344f2469202d72eb7c7aaf64a6abf3e01ef94206')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
