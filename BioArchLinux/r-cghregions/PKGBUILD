@@ -3,7 +3,7 @@
 _pkgname=CGHregions
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='Dimension Reduction for Array CGH Data with Minimal Information Loss.'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-cghbase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fa7956b8e946038e87d6d458810a743433b597f940f09bec9d6b55e9cc3a63bc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
