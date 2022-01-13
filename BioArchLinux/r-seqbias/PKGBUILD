@@ -4,7 +4,7 @@
 _pkgname=seqbias
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Estimation of per-position bias in high-throughput sequencing data'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-rsamtools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f9cad2eff647236ba427c8db194dd69a8db845e1834a2a0a453236550343c0e0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
