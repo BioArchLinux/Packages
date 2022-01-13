@@ -3,7 +3,7 @@
 _pkgname=chk
 _pkgver=0.7.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.0
 pkgrel=1
 pkgdesc='Check User-Supplied Function Arguments'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9a9e06b5a02c292ffc73f25959ab212063d810e9443f5995599322d0f6ebbabb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
