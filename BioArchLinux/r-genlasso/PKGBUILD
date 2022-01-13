@@ -3,7 +3,7 @@
 _pkgname=genlasso
 _pkgver=1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.5
 pkgrel=1
 pkgdesc='Path Algorithm for Generalized Lasso Problems'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-igraph
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('de1cfe83a5e851f41a0de55ebf58980c849ffbf978751c401fcdc767377ec01d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
