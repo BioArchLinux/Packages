@@ -3,7 +3,7 @@
 _pkgname=makecdfenv
 _pkgver=1.70.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.70.0
 pkgrel=1
 pkgdesc='CDF Environment Maker'
 arch=('x86_64')
@@ -17,7 +17,7 @@ depends=(
   r-zlibbioc
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('965f19c45817b4cd76333df25a53ccec5141c7d7b02992026d5217d34d279dec')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
