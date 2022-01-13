@@ -3,7 +3,7 @@
 _pkgname=HybridMTest
 _pkgver=1.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.38.0
 pkgrel=1
 pkgdesc='Hybrid Multiple Testing'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-fdrtool
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d3ccba82c10eb1f4b76deda2b3499b939914e311cb5f4ee94d2246f982f161dc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
