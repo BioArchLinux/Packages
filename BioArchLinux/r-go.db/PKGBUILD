@@ -3,7 +3,7 @@
 _pkgname=GO.db
 _pkgver=3.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.14.0
 pkgrel=1
 pkgdesc='A set of annotation maps describing the entire Gene Ontology'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-dbi
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('45d0a681a662667d45b2472d160b72f7058ad0a28dd0ca24742e11ddfd87d8e7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
