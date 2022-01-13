@@ -3,7 +3,7 @@
 _pkgname=densvis
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='Density-Preserving Data Visualization via Non-Linear Dimensionality Reduction'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2d3be28228cb5c5898c7c3ee479227a1606be8e806d5eb50bc1d02fe0f189240')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
