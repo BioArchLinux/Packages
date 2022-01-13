@@ -3,7 +3,7 @@
 _pkgname=bs4Dash
 _pkgver=2.0.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.3
 pkgrel=1
 pkgdesc="A 'Bootstrap 4' Version of 'shinydashboard'"
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-thematic
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0f84a336c09f221202807fafa6e351a57d717421a50d8c955d236ba0c1b3779f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
