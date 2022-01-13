@@ -3,7 +3,7 @@
 _pkgname=CMA
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='Synthesis of microarray-based classification'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-st
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('950d9786515f2f8a9a71ccfd93b83bd7aff9dc756622cd5d1e48675585e48027')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
