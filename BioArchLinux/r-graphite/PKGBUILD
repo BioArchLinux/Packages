@@ -3,7 +3,7 @@
 _pkgname=graphite
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='GRAPH Interaction from pathway Topological Environment'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-topologygsa
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d9d110d1e0f991a925dc0676272a5c500538a16e4d8a7f79ffdac66624d9ad72')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
