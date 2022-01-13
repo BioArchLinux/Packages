@@ -3,7 +3,7 @@
 _pkgname=cellranger
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.0
 pkgrel=1
 pkgdesc='Translate Spreadsheet Cell Ranges to Rows and Columns'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5d38f288c752bbb9cea6ff830b8388bdd65a8571fd82d8d96064586bd588cf99')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
