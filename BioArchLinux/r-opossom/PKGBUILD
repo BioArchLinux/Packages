@@ -3,7 +3,7 @@
 _pkgname=oposSOM
 _pkgver=2.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.12.0
 pkgrel=1
 pkgdesc='Comprehensive analysis of transcriptome data'
 arch=('x86_64')
@@ -28,7 +28,7 @@ depends=(
   r-xml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('eb8c0d924ed4ec42a211596fbf2c9e83aeab304969c373a7f26c384822022b92')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
