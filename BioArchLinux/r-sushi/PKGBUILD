@@ -3,7 +3,7 @@
 _pkgname=Sushi
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Tools for visualizing genomics data'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-zoo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('84d3ec4474c19c640cc190babe708f81924cd7bb71a216e62ff00e035a80751c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
