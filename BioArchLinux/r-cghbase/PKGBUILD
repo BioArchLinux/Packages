@@ -3,7 +3,7 @@
 _pkgname=CGHbase
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.54.0
 pkgrel=1
 pkgdesc='CGHbase: Base functions and classes for arrayCGH data analysis.'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-marray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8ddc75282c7a437a67541139d9a73b6f118c93620db9ca8ef1aeb56544e0ddcd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
