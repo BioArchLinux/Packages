@@ -3,7 +3,7 @@
 _pkgname=iterativeBMAsurv
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='The Iterative Bayesian Model Averaging (BMA) Algorithm For Survival Analysis'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-leaps
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bc73b4eb02c7808f726b62fd69a589c8c7efb65b99bec6978fafba295ef6324b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
