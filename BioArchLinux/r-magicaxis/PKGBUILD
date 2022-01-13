@@ -3,7 +3,7 @@
 _pkgname=magicaxis
 _pkgver=2.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.1
 pkgrel=1
 pkgdesc='Pretty Scientific Plotting with Minor-Tick and Log Minor-Tick Support'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-imager
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('549cc3ccd72fd4df880d78ef32a1cf923a5dbed4dc3b1574320b29399ebe48ad')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
