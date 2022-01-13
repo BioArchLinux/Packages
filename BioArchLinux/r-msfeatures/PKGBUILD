@@ -3,7 +3,7 @@
 _pkgname=MsFeatures
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Functionality for Mass Spectrometry Features'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3823b872d27bf2dd2be383cedc683ca8156927f9a9c145261ead7d2a63761108')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
