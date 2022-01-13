@@ -3,7 +3,7 @@
 _pkgname=baySeq
 _pkgver=2.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.28.0
 pkgrel=1
 pkgdesc='Empirical Bayesian analysis of patterns of differential expression in count data'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('19b5cd9837bf3711926b87674fa8083bfe6fed74ae76a931279fb183c4e2fdfd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
