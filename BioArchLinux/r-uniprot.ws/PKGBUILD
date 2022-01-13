@@ -3,7 +3,7 @@
 _pkgname=UniProt.ws
 _pkgver=2.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.34.0
 pkgrel=1
 pkgdesc='R Interface to UniProt Web Services'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('dc610b2e1b96f5c4a9b3b6ec1da20c66f73aedebc6bba62911ca9a2a3ad2ad51')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
