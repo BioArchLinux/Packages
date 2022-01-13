@@ -3,7 +3,7 @@
 _pkgname=rclipboard
 _pkgver=0.1.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.3
 pkgrel=1
 pkgdesc="Shiny/R Wrapper for 'clipboard.js'"
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4940be589ba27d9dc95d24a2e584ac92a71df221f51dcf989defc7351680f120')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
