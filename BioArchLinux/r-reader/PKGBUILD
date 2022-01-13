@@ -3,7 +3,7 @@
 _pkgname=reader
 _pkgver=1.0.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.6
 pkgrel=1
 pkgdesc='Suite of Functions to Flexibly Read Data from Files'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-ncmisc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('905c7c5a1b035ac8213fc533fa26e511abfeea40bd22e3edfde42a49074e88f4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
