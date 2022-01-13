@@ -3,7 +3,7 @@
 _pkgname=gamlss
 _pkgver=5.3-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=5.3.4
 pkgrel=1
 pkgdesc='Generalised Additive Models for Location Scale and Shape'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-gamlss.dist
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('72707187471fd35c5379ae8c9b7b0ca87e302557f09cb3979d1cdb2e2500b01a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
