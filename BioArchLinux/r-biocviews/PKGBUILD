@@ -3,7 +3,7 @@
 _pkgname=biocViews
 _pkgver=1.62.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.1
 pkgrel=1
 pkgdesc='Categorized views of R package repositories'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('39e96f0549ef4ba8aace670430bae88807a13cb5606f90d2bacd90727f8dd0ec')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
