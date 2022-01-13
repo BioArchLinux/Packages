@@ -3,7 +3,7 @@
 _pkgname=AffyRNADegradation
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Analyze and correct probe positional bias in microarray data due to RNA degradation'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-ampaffyexample
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6da64ef2db4933f36ff6bd4dc8e1691059fe77845de7891ee12106db85c91f02')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
