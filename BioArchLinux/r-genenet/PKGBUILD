@@ -3,7 +3,7 @@
 _pkgname=GeneNet
 _pkgver=1.2.16
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.16
 pkgrel=1
 pkgdesc='Modeling and Inferring Gene Networks'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-rgraphviz
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c1e98073ccdaa18f4952630bfe4fc0617106eeaf7ed94d347cb2773bd48333e4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
