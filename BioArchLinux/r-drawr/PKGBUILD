@@ -3,7 +3,7 @@
 _pkgname=DRaWR
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='Discriminative Random Walk with Restart'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rocr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('10bfdd9afe193f5c259d5c3af9286c842e08e67a8b24ee89616688f6f967cddd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
