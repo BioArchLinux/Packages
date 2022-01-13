@@ -3,7 +3,7 @@
 _pkgname=smoother
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1
 pkgrel=1
 pkgdesc='Functions Relating to the Smoothing of Numerical Data'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-ttr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('91b55b82f805cfa1deedacc0a4e844a2132aa59df593f3b05676954cf70a195b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
