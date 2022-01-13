@@ -3,7 +3,7 @@
 _pkgname=reportROC
 _pkgver=3.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.5
 pkgrel=1
 pkgdesc='An Easy Way to Report ROC Analysis'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-proc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('16d9d1032cfc4de25b23f686ec3e1379a38760bd81ac516fd013ae427e6f7bb8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
