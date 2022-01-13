@@ -3,7 +3,7 @@
 _pkgname=tseries
 _pkgver=0.10-49
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.10.49
 pkgrel=1
 pkgdesc='Time Series Analysis and Computational Finance'
 arch=('x86_64')
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('45bf26d8f41f12a72954bbe5fb6f4da6cc4ef29ee075c49fe7cc8456926c14ba')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
