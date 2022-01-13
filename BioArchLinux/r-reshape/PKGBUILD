@@ -3,7 +3,7 @@
 _pkgname=reshape
 _pkgver=0.8.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.8.8
 pkgrel=1
 pkgdesc='Flexibly Reshape Data'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-plyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4d5597fde8511e8fe4e4d1fd7adfc7ab37ff41ac68c76a746f7487d7b106d168')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
