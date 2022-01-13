@@ -3,7 +3,7 @@
 _pkgname=graphlayouts
 _pkgver=0.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.8.0
 pkgrel=1
 pkgdesc='Additional Layout Algorithms for Network Visualizations'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-uwot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d724266778e4d97ca7a762253c293ffa3d09e2627cb1c3c7a654c690819defd0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
