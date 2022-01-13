@@ -3,7 +3,7 @@
 _pkgname=SANTA
 _pkgver=2.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.30.0
 pkgrel=1
 pkgdesc='Spatial Analysis of Network Associations'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f46570fc8fd4a87a8e3f5bace93ca04c957e6cbc338e326544e96f5937681970')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
