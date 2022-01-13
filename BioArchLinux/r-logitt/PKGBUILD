@@ -3,7 +3,7 @@
 _pkgname=logitT
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='logit-t Package'
 arch=('x86_64')
@@ -17,7 +17,7 @@ optdepends=(
   r-spikeinsubset
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('483cf4b14a06610c2e0f409895f418128a286cf2e0aac84037e89578d6d5892a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
