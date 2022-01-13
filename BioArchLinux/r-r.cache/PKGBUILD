@@ -3,7 +3,7 @@
 _pkgname=R.cache
 _pkgver=0.15.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.15.0
 pkgrel=1
 pkgdesc='Fast and Light-Weight Caching (Memoization) of Objects and Results to Speed Up Computations'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-r.utils
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('adb4d3b08f7917e10fe6188c7b90a3318701a974c58eaa09943b929382bdf126')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
