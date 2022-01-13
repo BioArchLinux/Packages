@@ -3,7 +3,7 @@
 _pkgname=phylogram
 _pkgver=2.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.0
 pkgrel=1
 pkgdesc='Dendrograms for Evolutionary Analysis'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5bd0de13106ad0ba07f84b25d71e22b6accaea98126014d8bfa50296e32d90dc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
