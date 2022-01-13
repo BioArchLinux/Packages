@@ -3,7 +3,7 @@
 _pkgname=dnet
 _pkgver=1.1.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.7
 pkgrel=1
 pkgdesc='Integrative Analysis of Omics Data in Terms of Network, Evolution and Ontology'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ac2be6d2b64dd6f63002c80b4646506fadf3ec9dc690249193db40d1d17db816')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
