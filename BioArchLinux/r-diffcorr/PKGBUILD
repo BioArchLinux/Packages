@@ -3,7 +3,7 @@
 _pkgname=DiffCorr
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.1
 pkgrel=1
 pkgdesc='Analyzing and Visualizing Differential Correlation Networks in Biological Data'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-pcamethods
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('15125ae871949ef2be89916384e46c665079e6826ecbba6b3608701e574bb7cf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
