@@ -3,7 +3,7 @@
 _pkgname=GenomicTools.fileHandler
 _pkgver=0.1.5.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.5.9
 pkgrel=1
 pkgdesc='File Handlers for Genomic Data Analysis'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0c1991cc85eddddc7b2a14c1d861bc84956061407de4031b4b442e741c3f8826')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
