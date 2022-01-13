@@ -3,7 +3,7 @@
 _pkgname=rsq
 _pkgver=2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2
 pkgrel=1
 pkgdesc='R-Squared and Related Measures'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-lme4
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('00166e415aaecdd8453b85a36b7d5462fc58427a3a2e9445068ba8bd6b995fc2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
