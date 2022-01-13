@@ -4,7 +4,7 @@
 _pkgname=SingleR
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='Reference-Based Single-Cell RNA-Seq Annotation'
 arch=('x86_64')
@@ -41,7 +41,7 @@ optdepends=(
   r-viridis
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('91d556ec4d4c80f942ab3ea43ce43e34336533e7eb6149fa7270c277d9b09aa6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
