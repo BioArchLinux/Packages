@@ -3,7 +3,7 @@
 _pkgname=htmlTable
 _pkgver=2.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.4.0
 pkgrel=1
 pkgdesc='Advanced Tables for Markdown/HTML'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4ca2b5616d77cfeee8ae5ca74307b86407d478b12d1ce17ba9c447e233b89a9d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
