@@ -3,7 +3,7 @@
 _pkgname=cleaver
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Cleavage of Polypeptide Sequences'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-uniprot.ws
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c03dc748ff301951d033b1270d8821a6e2ed5a0c1452c60644c3688e0f3a5664')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
