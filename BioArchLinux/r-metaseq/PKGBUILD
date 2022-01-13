@@ -3,7 +3,7 @@
 _pkgname=metaSeq
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Meta-analysis of RNA-Seq count data in multiple studies'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d9fba2bf901f34a938a808fbd0ada773d45879c8b5151f35a299ff09662a5a26')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
