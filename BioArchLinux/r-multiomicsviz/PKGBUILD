@@ -3,7 +3,7 @@
 _pkgname=multiOmicsViz
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='Plot the effect of one omics data on other omics data along the chromosome'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-biocgenerics
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a93aba7bd7568ee4d70e21af8af7f272c97aa4288d761fb8b6dab9f60b15e74d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
