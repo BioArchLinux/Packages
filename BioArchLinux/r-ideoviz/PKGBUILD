@@ -3,7 +3,7 @@
 _pkgname=IdeoViz
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Plots data (continuous/discrete) along chromosomal ideogram'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8fd0cda0a90b385aafefc7da8e5f58744d67291ef8030ebbd3bb8ac5ae989431')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
