@@ -3,7 +3,7 @@
 _pkgname=OTUbase
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.0
 pkgrel=1
 pkgdesc='Provides structure and functions for the analysis of OTU data'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   r-vegan
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('faf9b30a5664ffdaa68d676419286399cbbe25999f8297614c1dc1c126a595a3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
