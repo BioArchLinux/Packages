@@ -3,7 +3,7 @@
 _pkgname=copynumber
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Segmentation of single- and multi-track copy number data by penalized least squares regression.'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('64141b1c455e553c5b62be7bdf04bb652117e4ad5da09a9b48037c39e5767190')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
