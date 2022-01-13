@@ -3,7 +3,7 @@
 _pkgname=C50
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.5
 pkgrel=1
 pkgdesc='C5.0 Decision Trees and Rule-Based Models'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f0c17b4830371832ca64f5fcc702351a394ee90b384e0865307de9447f3f16d7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
