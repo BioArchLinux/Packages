@@ -3,7 +3,7 @@
 _pkgname=SwathXtend
 _pkgver=2.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.16.0
 pkgrel=1
 pkgdesc='SWATH extended library generation and statistical data analysis'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-venndiagram
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('eb7d979ff516cb1a162ff1da67b6807467845948a193c8f8669173074a971206')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
