@@ -3,7 +3,7 @@
 _pkgname=dtplyr
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc="Data Table Back-End for 'dplyr'"
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a6dedfb6dd80dfc1d29d005ab634c060b7bfda8cb49835ece84d3b7d12077414')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
