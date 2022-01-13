@@ -3,7 +3,7 @@
 _pkgname=SynExtend
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Tools for Working With Synteny Objects'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e2d09867646744ee64fd105dba7d3e124c2d97e16ced83c314acf766b60f0ee4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
