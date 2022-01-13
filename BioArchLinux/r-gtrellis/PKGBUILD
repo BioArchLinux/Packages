@@ -3,7 +3,7 @@
 _pkgname=gtrellis
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Genome Level Trellis Layout'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-tiff
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f4e7baf21a7a3f3b695c8b47a4b9ac06605e512679054c38c418f670d1f25460')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
