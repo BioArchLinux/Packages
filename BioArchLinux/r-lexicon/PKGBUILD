@@ -3,7 +3,7 @@
 _pkgname=lexicon
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.1
 pkgrel=1
 pkgdesc='Lexicons for Text Analysis'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-syuzhet
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cc0023d16309fc24e0a3a1f01887b19d05f2eb3a7ee9102415595d0335d3f974')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
