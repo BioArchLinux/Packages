@@ -3,7 +3,7 @@
 _pkgname=arm
 _pkgver=1.12-2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.2
 pkgrel=1
 pkgdesc='Data Analysis Using Regression and Multilevel/Hierarchical Models'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-lme4
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('816ba1c31eec00feef472c57e280488d3d233b592f6f0a1a30e4abb903cb4f5d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
