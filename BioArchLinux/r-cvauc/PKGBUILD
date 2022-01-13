@@ -3,7 +3,7 @@
 _pkgname=cvAUC
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.0
 pkgrel=1
 pkgdesc='Cross-Validated Area Under the ROC Curve Confidence Intervals'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-rocr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c4d8ed53b93869650aa2f666cf6d1076980cbfea7fa41f0b8227595be849738d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
