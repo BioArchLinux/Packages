@@ -4,7 +4,7 @@
 pkgname=bayesass
 _pkgname=BA3
 pkgver=3.0.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Software for inferring proportions of recent migrants among populations using multilocus genotype data."
 arch=('x86_64')
 url="https://github.com/brannala/${_pkgname}"
