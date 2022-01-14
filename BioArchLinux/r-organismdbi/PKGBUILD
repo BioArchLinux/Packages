@@ -3,7 +3,7 @@
 _pkgname=OrganismDbi
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='Software to enable the smooth interfacing of different database packages'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0349e79ca54df218c98dbd44d5e6666a1c0b4db634fa036e1f3a5988a3e8e67e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
