@@ -4,7 +4,7 @@ _pkgname=Rlab
 _pkgver=2.15.1
 pkgname=r-${_pkgname,,}
 pkgver=2.15.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Functions and Datasets Required for ST370 class'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
