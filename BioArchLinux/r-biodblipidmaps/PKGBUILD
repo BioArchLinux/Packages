@@ -3,7 +3,7 @@
 _pkgname=biodbLipidmaps
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='biodbLipidmaps, a library for connecting to the Lipidmaps Structure database'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('285b5991940344016eb59c763c0546f8a745e285750874ffddaa9e8c90330890')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
