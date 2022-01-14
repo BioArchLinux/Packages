@@ -3,7 +3,7 @@
 _pkgname=TSRchitect
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Promoter identification from large-scale TSS profiling data'
 arch=('any')
@@ -33,7 +33,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('31c50f0af34aee8c22b2847451774510194863a2896c86d2f793e7e42dfa3fed')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
