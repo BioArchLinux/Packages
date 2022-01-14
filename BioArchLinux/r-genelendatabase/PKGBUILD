@@ -3,7 +3,7 @@
 _pkgname=geneLenDataBase
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Lengths of mRNA transcripts for a number of genomes'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3438242b95c4d43cb95f6040ce66abe23738a46911acb9ee9825906149e221a8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
