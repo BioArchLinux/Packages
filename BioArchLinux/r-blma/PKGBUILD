@@ -3,7 +3,7 @@
 _pkgname=BLMA
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='BLMA: A package for bi-level meta-analysis'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('417a5123f5078908fc48db88360077234ee37208863de45cefadf3096a65fec6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
