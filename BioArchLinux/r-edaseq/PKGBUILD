@@ -3,7 +3,7 @@
 _pkgname=EDASeq
 _pkgver=2.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.28.0
 pkgrel=1
 pkgdesc='Exploratory Data Analysis and Normalization for RNA-Seq'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-yeastrnaseq
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('47d2652e2e641c475d183ff94f3708bd8dc0cfd5470ef6b13e9c33b97a73cfef')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
