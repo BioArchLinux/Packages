@@ -3,7 +3,7 @@
 _pkgname=casper
 _pkgver=2.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.28.0
 pkgrel=1
 pkgdesc='Characterization of Alternative Splicing based on Paired-End Reads'
 arch=('x86_64')
@@ -32,7 +32,7 @@ optdepends=(
   r-parallel
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ed93bc3c17488ce1514918fa068f5b628a03f67d604313980168b8cc0afe057d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
