@@ -3,7 +3,7 @@
 _pkgname=TxDb.Hsapiens.UCSC.hg18.knownGene
 _pkgver=3.2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.2.2
 pkgrel=1
 pkgdesc='Annotation package for TxDb object(s)'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-genomicfeatures
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bc9ca40b4eab87f5ca64a4b876d42502b9b8e9f5983d745bfe0ee349d97b69fa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
