@@ -6,7 +6,7 @@
 
 pkgname=tcllib
 pkgver=1.20
-pkgrel=4
+pkgrel=5
 pkgdesc="Set of pure-Tcl extensions."
 arch=('any')
 url="http://core.tcl.tk/tcllib/"
