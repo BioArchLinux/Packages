@@ -3,7 +3,7 @@
 _pkgname=traseR
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='GWAS trait-associated SNP enrichment analyses in genomic intervals'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d7515882e372a1bbb98e8eda078e14fd6d34eb5f1ecb5752bcac4909ab820832')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
