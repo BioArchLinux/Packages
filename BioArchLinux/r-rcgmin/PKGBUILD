@@ -4,7 +4,7 @@ _pkgname=Rcgmin
 _pkgver=2013-2.21
 pkgname=r-${_pkgname,,}
 pkgver=2013.2.21
-pkgrel=1
+pkgrel=2
 pkgdesc='Conjugate Gradient Minimization of Nonlinear Functions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
