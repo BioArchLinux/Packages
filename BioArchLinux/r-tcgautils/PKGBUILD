@@ -3,7 +3,7 @@
 _pkgname=TCGAutils
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='TCGA utility functions for data management'
 arch=('any')
@@ -50,7 +50,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('92ad808e373d80b805d3bc4f2c8c391bcc3328e6bb17ffe261c85708c47f553e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
