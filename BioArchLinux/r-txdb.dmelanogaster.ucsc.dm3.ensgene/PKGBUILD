@@ -3,7 +3,7 @@
 _pkgname=TxDb.Dmelanogaster.UCSC.dm3.ensGene
 _pkgver=3.2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.2.2
 pkgrel=1
 pkgdesc='Annotation package for TxDb object(s)'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-genomicfeatures
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('879d366e7c6ca9734a059c060e0b36019e11f32c42e83a90fa31d69687e8678c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
