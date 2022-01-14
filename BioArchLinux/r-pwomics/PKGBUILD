@@ -3,7 +3,7 @@
 _pkgname=pwOmics
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Pathway-based data integration of omics data'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-mfuzz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2cf04cc1a7d0d669547ea93a6bff3214a75e45d6e84afa63724c44e5e78268e4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
