@@ -3,7 +3,7 @@
 _pkgname=HelloRanges
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Introduce *Ranges to bedtools users'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-hellorangesdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3721ac3408f5b09690fe58c604ff6a24badf00e7cc22dacd59fdea719df22eb9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
