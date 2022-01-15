@@ -5,7 +5,7 @@ _pkgname=questionr
 _pkgver=0.7.6
 pkgname=r-${_pkgname,,}
 pkgver=0.7.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Functions to Make Surveys Processing Easier'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
