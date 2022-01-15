@@ -3,7 +3,7 @@
 _pkgname=PloGO2
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Plot Gene Ontology and KEGG pathway Annotation and Abundance'
 arch=('any')
@@ -18,7 +18,7 @@ depends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b7316865b6aea7afb90a5c1fc61a66e8b5cf87dfb012dc36f7a14b179d3dab44')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
