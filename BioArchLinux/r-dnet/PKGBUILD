@@ -4,7 +4,7 @@ _pkgname=dnet
 _pkgver=1.1.7
 pkgname=r-${_pkgname,,}
 pkgver=1.1.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Integrative Analysis of Omics Data in Terms of Network, Evolution and Ontology'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
