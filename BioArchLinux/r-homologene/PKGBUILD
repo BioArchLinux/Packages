@@ -4,7 +4,7 @@ _pkgname=homologene
 _pkgver=1.4.68.19.3.27
 pkgname=r-${_pkgname,,}
 pkgver=1.4.68.19.3.27
-pkgrel=1
+pkgrel=2
 pkgdesc='Quick Access to Homologene and Gene Annotation Updates'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
