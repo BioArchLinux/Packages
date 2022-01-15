@@ -4,7 +4,7 @@ _pkgname=tidytree
 _pkgver=0.3.7
 pkgname=r-${_pkgname,,}
 pkgver=0.3.7
-pkgrel=1
+pkgrel=2
 pkgdesc='A Tidy Tool for Phylogenetic Tree Data Manipulation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
