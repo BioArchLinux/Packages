@@ -4,7 +4,7 @@ _pkgname=DMwR2
 _pkgver=0.0.2
 pkgname=r-${_pkgname,,}
 pkgver=0.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Functions and Data for the Second Edition of "Data Mining with R"'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
