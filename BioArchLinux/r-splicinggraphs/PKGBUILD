@@ -3,7 +3,7 @@
 _pkgname=SplicingGraphs
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Create, manipulate, visualize splicing graphs, and assign RNA-seq reads to them'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b487a2abef9f1c75604db7e216c415bc47a71062abf294872ae99c0279047a7a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
