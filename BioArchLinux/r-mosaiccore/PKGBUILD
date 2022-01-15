@@ -4,7 +4,7 @@ _pkgname=mosaicCore
 _pkgver=0.9.0
 pkgname=r-${_pkgname,,}
 pkgver=0.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Common Utilities for Other MOSAIC-Family Packages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
