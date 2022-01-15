@@ -3,7 +3,7 @@
 _pkgname=drugTargetInteractions
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Drug-Target Interactions'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fe60fea6f77c2687f5eaeb14dc79f4259d397fe20eff699c30684299039c95c9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
