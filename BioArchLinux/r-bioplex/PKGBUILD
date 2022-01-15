@@ -3,7 +3,7 @@
 _pkgname=BioPlex
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='R-side access to BioPlex protein-protein interaction data'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('416de42d0cc125f92b5dec1915765d3038d383d150acdfa84a384399c5c9fb3b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
