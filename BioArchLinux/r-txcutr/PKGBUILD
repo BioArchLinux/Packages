@@ -3,7 +3,7 @@
 _pkgname=txcutr
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Transcriptome CUTteR'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-txdb.scerevisiae.ucsc.saccer3.sgdgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('522fcacad28306417c8b779ad8f4a06b655134f947e5122d591ba6568e5ded6f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
