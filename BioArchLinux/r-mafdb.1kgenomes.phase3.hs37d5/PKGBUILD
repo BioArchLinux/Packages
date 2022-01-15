@@ -3,7 +3,7 @@
 _pkgname=MafDb.1Kgenomes.phase3.hs37d5
 _pkgver=3.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.10.0
 pkgrel=1
 pkgdesc='Minor allele frequency data from 1000 Genomes Phase 3 for hs37d5'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-snplocs.hsapiens.dbsnp144.grch37
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0d997b1985eaaed3954d314dee3d7e2ef4423615464c8ab5fb7add35fceb4bb0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
