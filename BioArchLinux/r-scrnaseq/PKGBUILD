@@ -3,7 +3,7 @@
 _pkgname=scRNAseq
 _pkgver=2.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.8.0
 pkgrel=1
 pkgdesc='Collection of Public Single-Cell RNA-Seq Datasets'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-tools
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7335a73724a9035f273a7c2dccd51548dbb445b27601c3f91e2e2b9f8e568aa5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
