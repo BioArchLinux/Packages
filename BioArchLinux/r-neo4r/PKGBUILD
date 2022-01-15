@@ -4,7 +4,7 @@ _pkgname=neo4r
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
 pkgver=0.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A 'Neo4J' Driver"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
