@@ -4,7 +4,7 @@ _pkgname=syuzhet
 _pkgver=1.0.6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Extracts Sentiment and Sentiment-Derived Plot Arcs from Text'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
