@@ -3,7 +3,7 @@
 
 pkgname=mummer4
 pkgver=4.0.0rc1
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast and versatile genome alignment system. https://doi.org/10.1371/journal.pcbi.1005944"
 arch=('x86_64')
 url="https://mummer4.github.io/"
