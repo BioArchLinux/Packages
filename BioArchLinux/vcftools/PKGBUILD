@@ -3,7 +3,7 @@
 
 pkgname=vcftools
 pkgver=0.1.16
-pkgrel=4
+pkgrel=5
 pkgdesc="A set of tools written in Perl and C++ for working with VCF files. https://doi.org/10.1093/bioinformatics/btr330"
 arch=('x86_64')
 url="https://vcftools.github.io/"
