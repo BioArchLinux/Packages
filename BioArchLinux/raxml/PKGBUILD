@@ -2,7 +2,7 @@
 
 pkgname=raxml
 pkgver=8.2.12
-pkgrel=4
+pkgrel=5
 pkgdesc="Randomized Axelerated Maximum Likelihood. https://doi.org/10.1093/bioinformatics/btu033"
 arch=('x86_64')
 url="http://sco.h-its.org/exelixis/web/software/raxml/"
