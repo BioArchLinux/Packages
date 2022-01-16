@@ -4,7 +4,7 @@
 pkgname=gsalign
 pkgnamecaps=GSAlign
 pkgver=1.0.22
-pkgrel=2
+pkgrel=3
 pkgdesc='An ultra-fast sequence alignment algorithm for intra-species genome comparison. https://doi.org/10.1186/s12864-020-6569-1'
 arch=('x86_64')
 url="https://github.com/hsinnan75/${pkgnamecaps}"
