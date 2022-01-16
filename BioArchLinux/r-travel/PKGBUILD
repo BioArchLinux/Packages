@@ -13,6 +13,8 @@ license=('GPL')
 depends=(
   r
   r-rcpp
+  fuse2
+  fuse3
 )
 optdepends=(
   r-biocstyle
