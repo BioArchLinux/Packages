@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('LGPL')
 depends=(
   r
+  tk
 )
 optdepends=(
   r-biobase
