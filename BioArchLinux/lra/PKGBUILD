@@ -3,7 +3,7 @@
 
 pkgname=lra
 pkgver=1.3.2
-pkgrel=2
+pkgrel=3
 pkgdesc='A long read aligner for sequences and contigs. https://doi.org/10.1371/journal.pcbi.1009078'
 arch=('x86_64')
 url="https://github.com/ChaissonLab/${pkgname^^}"
