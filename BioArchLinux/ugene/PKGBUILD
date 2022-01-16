@@ -3,7 +3,7 @@
 
 pkgname=ugene
 pkgver=41.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A free cross-platform genome analysis suite. https://doi.org/10.1093/bioinformatics/bts091"
 arch=('x86_64')
 url="http://ugene.net"
