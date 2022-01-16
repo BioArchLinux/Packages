@@ -3,7 +3,7 @@
 
 pkgname=minimap2
 pkgver=2.24
-pkgrel=2
+pkgrel=3
 pkgdesc='A versatile pairwise aligner for genomic and spliced nucleotide sequences. https://doi.org/10.1093/bioinformatics/bty191'
 arch=('x86_64')
 url="https://github.com/lh3/${pkgname}"
