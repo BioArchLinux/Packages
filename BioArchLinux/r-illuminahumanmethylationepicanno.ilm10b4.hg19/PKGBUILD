@@ -3,7 +3,7 @@
 _pkgname=IlluminaHumanMethylationEPICanno.ilm10b4.hg19
 _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.0
 pkgrel=1
 pkgdesc="Annotation for Illumina's EPIC methylation arrays"
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-minfi
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2c8128126b63e7fa805a5f3b02449367dca9c3be3eb5f6300acc718826590719')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
