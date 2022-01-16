@@ -3,7 +3,7 @@
 _pkgname=ENmix
 _pkgver=1.30.01
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.01
 pkgrel=1
 pkgdesc='Quality control and analysis tools for Illumina DNA methylation BeadChip'
 arch=('any')
@@ -38,7 +38,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('36c5527d0ff395df21ace82b2a3ea10f39a07525890b63ae721c538f658de192')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
