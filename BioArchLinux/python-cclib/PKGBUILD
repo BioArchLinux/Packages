@@ -3,7 +3,7 @@
 _name="cclib"
 pkgname="python-${_name}"
 pkgver=1.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for parsing and interpreting the results of computational chemistry packages."
 arch=("any")
 url="http://cclib.github.io"
