@@ -3,7 +3,7 @@
 _pkgname=GSReg
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Gene Set Regulation (GS-Reg)'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-gsbenchmark
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cffe23ef173792b2c631d541a4d6895524d07c1a5e8337992e513532d53e76ae')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
