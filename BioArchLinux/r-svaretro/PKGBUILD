@@ -3,7 +3,7 @@
 _pkgname=svaRetro
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Retrotransposed transcript detection from structural variants'
 arch=('any')
@@ -42,7 +42,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0ce18ca3f6bcc7f4721d86cd4047992bf724a9a680407e1e783a1ccfc0c3042a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
