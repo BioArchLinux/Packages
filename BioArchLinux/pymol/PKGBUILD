@@ -3,7 +3,7 @@
 _name=pymol-open-source
 pkgname=pymol
 pkgver=2.5.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Molecular visualization system on an Open Source foundation"
 arch=('x86_64')
 url="https://pymol.org/"
