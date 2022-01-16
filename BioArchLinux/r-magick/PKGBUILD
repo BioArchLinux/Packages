@@ -15,6 +15,7 @@ depends=(
   r-curl
   r-magrittr
   r-rcpp
+  imagemagick
 )
 optdepends=(
   r-av
