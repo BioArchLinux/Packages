@@ -3,7 +3,7 @@
 _pkgname=ExperimentHubData
 _pkgver=1.20.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.1
 pkgrel=1
 pkgdesc='Add resources to ExperimentHub'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('35905911b07f1ed7a69cfafe6fc1d709373698b92f95665fbd2f5200ffb9f689')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
