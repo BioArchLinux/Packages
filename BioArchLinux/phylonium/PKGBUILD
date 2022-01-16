@@ -1,7 +1,7 @@
 # Maintainer: Fabian Klötzl <fabian-aur@kloetzl.info>
 pkgname=phylonium
 pkgver=1.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast and Accurate Estimation of Evolutionary Distances. https://doi.org/10.1093/bioinformatics/btz903"
 url="https://github.com/evolbioinf/phylonium/"
 license=("GPL3") # "custom:ISC"
