@@ -3,7 +3,7 @@
 
 pkgname=phyx
 pkgver=1.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Command-line phylogenetic tools for unix. https://doi.org/10.1093/bioinformatics/btx063"
 arch=('x86_64')
 url="http://${sfname}.sourceforge.net/"
