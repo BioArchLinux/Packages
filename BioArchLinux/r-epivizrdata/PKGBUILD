@@ -3,7 +3,7 @@
 _pkgname=epivizrData
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Data Management API for epiviz interactive visualization app'
 arch=('any')
@@ -42,7 +42,7 @@ optdepends=(
   r-utils
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a52ee2d39658a288e9396f708244043ddd28ad138b97d9b23489d9bc9a3bb67e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
