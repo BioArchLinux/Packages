@@ -3,7 +3,7 @@
 
 pkgname=bpp
 pkgver=4.4.1
-pkgrel=2
+pkgrel=3
 pkgdesc="High-performance Bayesian phylogenetics and phylogeography. https://doi.org/10.1093/sysbio/syw119"
 arch=('x86_64')
 url="https://github.com/bpp/bpp"
