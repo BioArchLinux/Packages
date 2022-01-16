@@ -3,7 +3,7 @@
 _pkgname=funtooNorm
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='Normalization Procedure for Infinium HumanMethylation450 BeadChip Kit'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f91432d88db02affab5f1e0522de2bff3706e0b0ad3baa5b559bc729de8e6be1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
