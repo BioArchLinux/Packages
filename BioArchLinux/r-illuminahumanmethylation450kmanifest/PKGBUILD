@@ -3,7 +3,7 @@
 _pkgname=IlluminaHumanMethylation450kmanifest
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.0
 pkgrel=1
 pkgdesc="Annotation for Illumina's 450k methylation arrays"
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-minfi
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('41b2e54bac3feafc7646fe40bce3aa2b92c10871b0a13657c5736517792fa763')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
