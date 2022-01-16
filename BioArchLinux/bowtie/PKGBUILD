@@ -2,7 +2,7 @@
 # Contributor: sauliusl
 pkgname=bowtie
 pkgver=1.3.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Bowtie is an alignment tool for short nucleotide sequences against long templates. https://doi.org/10.1186/gb-2009-10-3-r25"
 url="http://bowtie-bio.sf.net"
 arch=('x86_64' 'aarch64')
