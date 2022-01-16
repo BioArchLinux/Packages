@@ -16,6 +16,7 @@ depends=(
   r-biocgenerics
   r-rcpp
   r-zlibbioc
+  openbabel
 )
 optdepends=(
   r-biocmanager
