@@ -4,7 +4,7 @@
 pkgname=jmodeltest
 pkgver=2.1.10r20160303
 _pkgver=2.1.10
-pkgrel=4
+pkgrel=5
 pkgdesc="Phylogenetic Model Averaging, more models, new heuristics and high-performance computing. https://doi.org/10.1093/molbev/msn083"
 arch=('x86_64')
 provides=("jmodeltest")
