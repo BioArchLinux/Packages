@@ -13,6 +13,7 @@ depends=(
   r
   r-biobase
   r-multtest
+  tk
 )
 optdepends=(
   r-limma
