@@ -1,0 +1,144 @@
+#!/usr/bin/env python3
+
+import os
+from collections import defaultdict
+import re
+import subprocess
+import sys
+from pathlib import Path
+from typing import Set, List, Dict, Tuple
+
+import archpkg
+
+repo_path: Path = Path('/home/bio/Repo')
+gitrepo_path: Path = Path('/home/bio/Packages/BioArchLinux').expanduser()
+max_keep: int = 1
+DRY_RUN: bool = False
+
+re_package = re.compile(r'package(?:_(.+))?\s*\(')
+
+def search_pkgbuild_for_pkgname(
+  pkgbuild: Path,
+) -> Set[str]:
+  ret = set()
+  try:
+    with open(pkgbuild) as f:
+      for l in f:
+        l = l.strip()
+        m = re_package.match(l)
+        if m:
+          if m.group(1):
+            ret.add(m.group(1))
+          else:
+            ret.add(pkgbuild.parent.name)
+  except FileNotFoundError:
+    pass
+
+  return ret
+
+def get_all_pkgnames() -> Set[str]:
+  # also see lilac2.packages.get_all_pkgnames
+  packages: Set[str] = set()
+  for ly in gitrepo_path.glob('*/lilac.yaml'):
+
+    pkgfile = ly.with_name('package.list')
+    if pkgfile.exists():
+      with open(pkgfile) as f:
+        packages.update(f.read().split())
+        continue
+
+    pkgbuild = ly.with_name('PKGBUILD')
+    new = search_pkgbuild_for_pkgname(pkgbuild)
+    if new:
+      packages.update(new)
+    else:
+      packages.add(pkgbuild.parent.name)
+
+  return packages
+
+def remove_pkg(path: Path) -> None:
+  if DRY_RUN:
+    return
+
+  try:
+    path.unlink()
+  except FileNotFoundError:
+    pass
+  sig = path.with_name(path.name + '.sig')
+  if sig.exists():
+    try:
+      sig.unlink()
+    except FileNotFoundError:
+      pass
+
+def clean(path: Path, all_packages: Set[str]) -> None:
+  pkgs: Dict[str, List[Tuple[archpkg.PkgNameInfo, Path]]] = defaultdict(list)
+  debug_pkgs: List[Path] = []
+
+  for f in path.iterdir():
+    if f.name[0] == '.':
+      continue
+
+    if f.name.endswith(('.pkg.tar.xz', '.pkg.tar.zst')):
+      pkg = archpkg.PkgNameInfo.parseFilename(f.name)
+      if pkg.name.endswith('-debug'):
+        debug_pkgs.append(f)
+        continue
+      else:
+        name = pkg.name
+
+      if name not in all_packages:
+        print('package %s removed, removing file %s.' % (pkg.name, f))
+        remove_pkg(f)
+      else:
+        pkgs[pkg.name].append((pkg, f))
+
+  for v in pkgs.values():
+    try:
+      # some files may have been deleted already
+      v = [x for x in v if x[1].exists()]
+      v.sort(key=lambda x: x[1].stat().st_mtime)
+    except TypeError:
+      print('Bad things happen: %s' % v)
+      raise
+    for _, f in v[:-max_keep]:
+      print('remove old package file %s.' % f)
+      remove_pkg(f)
+
+  for f in debug_pkgs:
+    pkgname = f.name.replace('-debug-', '-')
+    if not f.with_name(pkgname).exists():
+      print('Removing debug package %s.' % f)
+      remove_pkg(f)
+
+def main() -> None:
+  os.chdir(gitrepo_path)
+  try:
+    error = False
+    out = subprocess.check_output(['git', 'pull'],
+                                  stderr = subprocess.STDOUT)
+  except subprocess.CalledProcessError as e:
+    out = e.output
+    error = True
+  for line in out.decode('utf-8', errors='backslashreplace').splitlines():
+    if 'Already up-to-date.' in line:
+      continue
+    print(line)
+  if error:
+    sys.exit(1)
+
+  all_packages = get_all_pkgnames()
+  for d in repo_path.iterdir():
+    if d.is_dir():
+      clean(d, all_packages)
+
+if __name__ == '__main__':
+  if len(sys.argv) == 1:
+    pass
+  elif len(sys.argv) == 2 and sys.argv[1] == '-n':
+    DRY_RUN = True
+  else:
+    sys.exit('bad argument')
+
+  main()
+

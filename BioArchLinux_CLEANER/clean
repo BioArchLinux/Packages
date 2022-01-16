@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf /home/bio/Packages/BioArchLinux/*/src
+python /home/bio/Packages/BioArchLinux_CLEANER/lilac-cleaner -f
+python /home/bio/Packages/BioArchLinux_CLEANER/repocleaner
