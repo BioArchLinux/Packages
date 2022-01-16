@@ -3,7 +3,7 @@
 _pkgname=phylobayes
 pkgname=$_pkgname-mpi
 pkgver=1.8c
-pkgrel=4
+pkgrel=5
 pkgdesc="phylogenetic reconstruction using infinite mixtures. https://doi.org/10.1093/molbev/msh112"
 arch=('i686' 'x86_64')
 url="https://github.com/bayesiancook/pbmpi"
