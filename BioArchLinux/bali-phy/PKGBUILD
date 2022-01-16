@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=bali-phy
 pkgver=3.6.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Bayesian co-estimation of phylogenies and multiple alignments via MCMC. https://doi.org/10.1093/bioinformatics/btab129"
 arch=('x86_64')
 url="http://www.bali-phy.org/"
