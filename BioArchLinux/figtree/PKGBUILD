@@ -4,7 +4,7 @@
 pkgname=figtree
 _pkgname=figtree
 pkgver=1.4.4
-pkgrel=4
+pkgrel=5
 pkgdesc='Graphical viewer of phylogenetic trees'
 arch=('any')
 url='http://tree.bio.ed.ac.uk/software/figtree'
