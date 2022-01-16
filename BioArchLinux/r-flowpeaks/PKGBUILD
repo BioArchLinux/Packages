@@ -12,6 +12,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  gsl
 )
 optdepends=(
   r-flowcore
