@@ -4,7 +4,7 @@
 pkgname=tracer
 _pkgname=Tracer
 pkgver=1.7.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Posterior summarisation in Bayesian phylogenetics. https://doi.org/10.1093/sysbio/syy032"
 arch=('x86_64')
 url="https://github.com/beast-dev/tracer"
