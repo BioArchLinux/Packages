@@ -3,7 +3,7 @@ maintainers:
 - github: starsareintherose
   email: starsareintherose@outlook.com
 repo_depends:
-- r-curl
+- r-rcurl
 - r-biobase
 - r-rjsonio
 update_on:
