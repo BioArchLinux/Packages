@@ -13,6 +13,7 @@ license=('Apache')
 depends=(
   r
   r-rcpp
+  gcc
 )
 optdepends=(
   r-biostrings
