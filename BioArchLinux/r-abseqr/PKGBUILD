@@ -30,6 +30,7 @@ depends=(
   r-stringr
   r-vegan
   r-venndiagram
+  pandoc
 )
 optdepends=(
   r-testthat
