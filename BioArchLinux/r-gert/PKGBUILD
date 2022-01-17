@@ -18,6 +18,7 @@ depends=(
   r-rstudioapi
   r-sys
   r-zip
+  libgit2
 )
 optdepends=(
   r-knitr
