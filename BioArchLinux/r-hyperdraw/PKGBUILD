@@ -15,6 +15,7 @@ depends=(
   r-graph
   r-hypergraph
   r-rgraphviz
+  graphviz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('f2fb8ee41a964f786c462f8f3c0c19f9272379b7de69f892ae50c30066c671d2')
