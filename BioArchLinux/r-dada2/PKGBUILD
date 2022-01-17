@@ -21,6 +21,7 @@ depends=(
   r-reshape2
   r-shortread
   r-xvector
+  make
 )
 optdepends=(
   r-biocstyle
