@@ -38,6 +38,8 @@ depends=(
   r-rmarkdown
   r-rsamtools
   r-s4vectors
+  bowtie
+  samtools
 )
 optdepends=(
   r-devtools
@@ -45,6 +47,7 @@ optdepends=(
   r-lintr
   r-roxygen2
   r-testthat
+  grep
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
