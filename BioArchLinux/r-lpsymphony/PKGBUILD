@@ -12,6 +12,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('EPL')
 depends=(
   r
+  coin-or-coinutils
 )
 optdepends=(
   r-biocstyle
