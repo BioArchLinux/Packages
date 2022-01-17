@@ -17,6 +17,7 @@ depends=(
   r-gtools
   r-rcpp
   r-rcpparmadillo
+  blas
 )
 optdepends=(
   r-covr
