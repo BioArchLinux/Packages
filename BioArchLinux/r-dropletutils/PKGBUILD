@@ -31,6 +31,8 @@ depends=(
   r-scuttle
   r-singlecellexperiment
   r-summarizedexperiment
+  gcc
+  make
 )
 optdepends=(
   r-biocstyle
