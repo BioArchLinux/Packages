@@ -38,6 +38,8 @@ depends=(
   r-s4vectors
   r-scales
   r-xml
+  make
+  gcc
 )
 optdepends=(
   r-cytoml
