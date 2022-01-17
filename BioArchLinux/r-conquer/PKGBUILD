@@ -16,6 +16,7 @@ depends=(
   r-matrixstats
   r-rcpp
   r-rcpparmadillo
+  gcc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
