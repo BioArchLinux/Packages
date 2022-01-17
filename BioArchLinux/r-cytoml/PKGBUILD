@@ -38,6 +38,9 @@ depends=(
   r-xml
   r-xml2
   r-yaml
+  gcc
+  make
+  libxml2
 )
 optdepends=(
   r-flowworkspacedata
