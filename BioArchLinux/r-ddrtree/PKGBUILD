@@ -16,6 +16,7 @@ depends=(
   r-irlba
   r-rcpp
   r-rcppeigen
+  gcc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('d351ec029461b43c0dcc7c30d9f378753b31ba16c6dbf667869df279b874459b')
