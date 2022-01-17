@@ -17,6 +17,7 @@ depends=(
   r-rcpp
   r-zlibbioc
   openbabel
+  eigen
 )
 optdepends=(
   r-biocmanager
