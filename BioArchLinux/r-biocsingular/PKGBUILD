@@ -21,6 +21,7 @@ depends=(
   r-rsvd
   r-s4vectors
   r-scaledmatrix
+  gcc
 )
 optdepends=(
   r-biocstyle
