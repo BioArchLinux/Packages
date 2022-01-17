@@ -17,6 +17,11 @@ depends=(
   r-rcpp
   r-reticulate
   r-summarizedexperiment
+  python
+  python-scikit-learn
+  python-numpy
+  python-pandas
+  python-h5py
 )
 optdepends=(
   r-biocstyle
