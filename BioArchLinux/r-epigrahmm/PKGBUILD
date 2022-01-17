@@ -33,6 +33,7 @@ depends=(
   r-s4vectors
   r-scales
   r-summarizedexperiment
+  make
 )
 optdepends=(
   r-biocstyle
