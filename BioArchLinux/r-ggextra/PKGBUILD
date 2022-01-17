@@ -20,6 +20,7 @@ depends=(
   r-scales
   r-shiny
   r-shinyjs
+  pandoc
 )
 optdepends=(
   r-devtools
