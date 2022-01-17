@@ -33,6 +33,7 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-xgboost
+  gcc
 )
 optdepends=(
   r-dplyr
