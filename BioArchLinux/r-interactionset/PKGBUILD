@@ -19,6 +19,7 @@ depends=(
   r-rcpp
   r-s4vectors
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-biocstyle
