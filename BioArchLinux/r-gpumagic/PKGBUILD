@@ -19,12 +19,16 @@ depends=(
   r-pryr
   r-rcpp
   r-stringr
+  ocl-icd
 )
 optdepends=(
   r-biocstyle
   r-knitr
   r-rmarkdown
   r-testthat
+)
+makdepends=(
+  make
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
