@@ -26,6 +26,9 @@ optdepends=(
   r-tcltk
   r-testthat
   r-withr
+  gmp
+  glpk
+  libxml2
 )
 makedepends=(
   gcc-fortran
