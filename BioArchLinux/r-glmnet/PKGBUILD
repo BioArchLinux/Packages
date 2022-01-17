@@ -16,6 +16,7 @@ depends=(
   r-rcpp
   r-rcppeigen
   r-shape
+  gcc
 )
 optdepends=(
   r-knitr
