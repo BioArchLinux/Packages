@@ -21,6 +21,7 @@ depends=(
   r-rann
   r-rcpp
   r-rcppeigen
+  gcc
 )
 optdepends=(
   r-biocstyle
