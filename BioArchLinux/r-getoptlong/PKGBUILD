@@ -15,6 +15,7 @@ depends=(
   r-crayon
   r-globaloptions
   r-rjson
+  perl
 )
 optdepends=(
   r-knitr
