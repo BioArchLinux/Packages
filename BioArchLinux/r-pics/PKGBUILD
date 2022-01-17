@@ -15,6 +15,7 @@ depends=(
   r-genomicranges
   r-iranges
   r-rsamtools
+  gsl
 )
 optdepends=(
   r-knitr
