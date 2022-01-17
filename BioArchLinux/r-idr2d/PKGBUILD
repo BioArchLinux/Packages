@@ -23,6 +23,7 @@ depends=(
   r-reticulate
   r-scales
   r-stringr
+  python
 )
 optdepends=(
   r-dt
