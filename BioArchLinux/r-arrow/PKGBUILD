@@ -19,6 +19,7 @@ depends=(
   r-rlang
   r-tidyselect
   r-vctrs
+  gcc
 )
 optdepends=(
   r-dbi
@@ -38,6 +39,8 @@ optdepends=(
   r-testthat
   r-tibble
   r-withr
+  libcurl-compat
+  openssl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('17d49e80d7c2be8ccfabfc2ab192ff0ffad7a2db9915c3c06499c9d8d387cf91')
