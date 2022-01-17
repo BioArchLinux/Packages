@@ -19,6 +19,7 @@ depends=(
   r-outliers
   r-rcpp
   r-rdpack
+  gcc
 )
 optdepends=(
   r-biocstyle
