@@ -13,6 +13,8 @@ license=('GPL')
 depends=(
   r
   r-rcppparallel
+  gcc
+  make
 )
 optdepends=(
   r-gdsfmt
