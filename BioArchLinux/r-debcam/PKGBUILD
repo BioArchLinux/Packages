@@ -23,6 +23,7 @@ depends=(
   r-pcapp
   r-rjava
   r-summarizedexperiment
+  java-common-runtime
 )
 optdepends=(
   r-biocstyle
