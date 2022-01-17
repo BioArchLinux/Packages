@@ -23,6 +23,8 @@ depends=(
   r-rcurl
   r-rjava
   r-xml
+  java-common-runtime
+  pandoc
 )
 optdepends=(
   r-biocgenerics
