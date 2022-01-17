@@ -20,6 +20,7 @@ depends=(
   r-pcapp
   r-pspline
   r-stabledist
+  texlive-core
 )
 optdepends=(
   r-abind
