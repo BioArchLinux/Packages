@@ -12,6 +12,10 @@ license=('Artistic2.0')
 depends=(
   r
   r-delayedarray
+  r-s4vectors
+  r-httr
+  r-r6
+  r-rjson
 )
 optdepends=(
   r-knitr
