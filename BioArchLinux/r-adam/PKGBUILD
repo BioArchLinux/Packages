@@ -21,6 +21,7 @@ depends=(
   r-rcpp
   r-stringr
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-rmarkdown
