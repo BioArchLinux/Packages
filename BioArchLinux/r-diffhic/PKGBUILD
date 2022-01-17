@@ -31,6 +31,8 @@ depends=(
   r-s4vectors
   r-summarizedexperiment
   r-zlibbioc
+  gcc
+  make
 )
 optdepends=(
   r-bsgenome.ecoli.ncbi.20080805
