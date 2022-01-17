@@ -20,6 +20,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-survminer
+  gcc
 )
 optdepends=(
   r-biocstyle
