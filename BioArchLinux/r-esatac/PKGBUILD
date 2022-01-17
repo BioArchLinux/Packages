@@ -43,6 +43,7 @@ depends=(
   r-shortread
   r-tfbstools
   r-venndiagram
+  gcc
 )
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg19
