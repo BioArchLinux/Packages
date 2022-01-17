@@ -18,6 +18,7 @@ depends=(
   r-rcpparmadillo
   r-reshape2
   r-sp
+  gcc
 )
 optdepends=(
   r-abcanalysis
