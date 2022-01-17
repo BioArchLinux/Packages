@@ -19,6 +19,7 @@ depends=(
   r-rhdf5filters
   r-rhdf5lib
   r-s4vectors
+  make
 )
 optdepends=(
   r-biocparallel
