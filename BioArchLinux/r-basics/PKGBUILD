@@ -31,6 +31,7 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-viridis
+  gcc
 )
 optdepends=(
   r-biocstyle
