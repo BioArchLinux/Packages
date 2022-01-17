@@ -22,6 +22,7 @@ depends=(
   r-stringi
   r-stringr
   r-xml
+  graphviz
 )
 optdepends=(
   r-biocgenerics
