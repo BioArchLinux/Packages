@@ -16,6 +16,7 @@ depends=(
   r-delayedarray
   r-dqrng
   r-rcpp
+  gcc
 )
 optdepends=(
   r-biocstyle
