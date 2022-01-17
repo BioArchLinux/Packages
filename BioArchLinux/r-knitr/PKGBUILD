@@ -17,6 +17,8 @@ depends=(
   r-stringr
   r-xfun
   r-yaml
+  rst2pdf
+  pandoc
 )
 optdepends=(
   r-bslib
