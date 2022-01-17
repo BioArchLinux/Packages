@@ -19,6 +19,7 @@ depends=(
   r-tinytex
   r-xfun
   r-yaml
+  pandoc
 )
 optdepends=(
   r-bslib
