@@ -27,6 +27,7 @@ depends=(
   r-scuttle
   r-singlecellexperiment
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-biocstyle
