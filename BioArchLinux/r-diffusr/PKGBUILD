@@ -15,6 +15,7 @@ depends=(
   r-igraph
   r-rcpp
   r-rcppeigen
+  gcc
 )
 optdepends=(
   r-knitr
