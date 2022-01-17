@@ -23,6 +23,8 @@ depends=(
   r-summarizedexperiment
   r-variantannotation
   r-zlibbioc
+  gcc
+  make
 )
 optdepends=(
   r-knitr
