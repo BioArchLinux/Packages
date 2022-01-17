@@ -17,6 +17,7 @@ depends=(
   r-igraph
   r-rcpp
   r-s4vectors
+  gcc
 )
 optdepends=(
   r-apcluster
