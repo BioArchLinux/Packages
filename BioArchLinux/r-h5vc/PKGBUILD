@@ -27,6 +27,7 @@ depends=(
   r-rhtslib
   r-rsamtools
   r-s4vectors
+  make
 )
 optdepends=(
   r-biocgenerics
