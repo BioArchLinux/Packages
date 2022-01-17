@@ -15,6 +15,7 @@ depends=(
   r-modeltools
   r-slam
   r-tm
+  gsl
 )
 optdepends=(
   r-corpus.jss.papers
