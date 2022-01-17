@@ -17,6 +17,7 @@ depends=(
   r-memoise
   r-readr
   r-whisker
+  docker
 )
 optdepends=(
   r-biocstyle
