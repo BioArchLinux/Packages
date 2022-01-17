@@ -18,6 +18,7 @@ depends=(
   r-ebimage
   r-plotly
   r-shiny
+  imagemagick
 )
 optdepends=(
   r-biocstyle
