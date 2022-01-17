@@ -33,6 +33,7 @@ depends=(
   r-shiny
   r-summarizedexperiment
   r-tfbstools
+  gcc
 )
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg19
