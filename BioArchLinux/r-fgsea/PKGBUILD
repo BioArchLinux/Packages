@@ -19,6 +19,7 @@ depends=(
   r-ggplot2
   r-gridextra
   r-rcpp
+  gcc
 )
 optdepends=(
   r-annotationdbi
