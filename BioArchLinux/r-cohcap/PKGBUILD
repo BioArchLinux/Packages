@@ -19,6 +19,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-writexls
+  perl
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('bf3e53fdbedca8e73fa8da13288f3b36e232e5e2eed6a6be7c142b66be82e36b')
