@@ -21,6 +21,7 @@ depends=(
   r-flowviz
   r-graph
   r-mnormt
+  make
 )
 optdepends=(
   r-flowworkspace
