@@ -15,6 +15,7 @@ depends=(
   r-biocgenerics
   r-delayedarray
   r-rcpp
+  gcc
 )
 optdepends=(
   r-biocparallel
