@@ -12,6 +12,7 @@ license=('Artistic2.0')
 depends=(
   r
   r-flowcore
+  gsl
 )
 optdepends=(
   r-biocstyle
