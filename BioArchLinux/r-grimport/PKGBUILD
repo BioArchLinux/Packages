@@ -13,6 +13,7 @@ license=('GPL')
 depends=(
   r
   r-xml
+  ghostscript
 )
 optdepends=(
   r-cluster
