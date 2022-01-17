@@ -19,6 +19,7 @@ depends=(
   r-rcpparmadillo
   r-scales
   r-sna
+  make
 )
 optdepends=(
   r-biocstyle
