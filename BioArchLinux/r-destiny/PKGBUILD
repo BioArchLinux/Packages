@@ -33,6 +33,8 @@ depends=(
   r-tidyr
   r-tidyselect
   r-vim
+  gcc
+  jupyter-nbconvert
 )
 optdepends=(
   r-fnn
