@@ -15,8 +15,6 @@ depends=(
   r-rcpp
   r-rcppeigen
   r-snpstats
-)
-optdepends=(
   r-biomart
   r-circlize
   r-httr
