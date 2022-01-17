@@ -22,6 +22,7 @@ depends=(
   r-r.utils
   r-rcpp
   r-rcpparmadillo
+  gcc
 )
 optdepends=(
   r-biocstyle
