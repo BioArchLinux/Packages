@@ -24,6 +24,7 @@ depends=(
   r-rlang
   r-scales
   r-tidyr
+  openssl
 )
 optdepends=(
   r-broom
