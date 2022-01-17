@@ -20,6 +20,8 @@ depends=(
   r-rlang
   r-systemfonts
   r-uuid
+  gcc
+  libpng
 )
 optdepends=(
   r-dplyr
