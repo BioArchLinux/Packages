@@ -15,6 +15,7 @@ depends=(
   r-bh
   r-futile.logger
   r-snow
+  gcc
 )
 optdepends=(
   r-batchjobs
