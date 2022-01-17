@@ -21,6 +21,8 @@ depends=(
   r-rcpparmadillo
   r-rprotobuflib
   r-s4vectors
+  make
+  gcc
 )
 optdepends=(
   r-flowstats
