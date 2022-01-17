@@ -26,6 +26,8 @@ depends=(
   r-summarizedexperiment
   r-tidyr
   r-zlibbioc
+  gcc
+  make
 )
 optdepends=(
   r-biocfilecache
