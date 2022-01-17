@@ -35,6 +35,7 @@ depends=(
   r-s4vectors
   r-scales
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-batchjobs
