@@ -4,6 +4,10 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-delayedarray
+- r-s4vectors
+- r-httr
+- r-r6
+- r-rjson
 update_on:
 - regex:  rhdf5client_(\d.+\d+.\d+).tar.gz
   source: regex
