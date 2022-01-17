@@ -20,6 +20,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-xcms
+  gcc
 )
 optdepends=(
   r-camera
