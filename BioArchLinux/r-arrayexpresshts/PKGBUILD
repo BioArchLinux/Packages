@@ -32,6 +32,7 @@ depends=(
   r-snow
   r-svmisc
   r-xml
+  make
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
