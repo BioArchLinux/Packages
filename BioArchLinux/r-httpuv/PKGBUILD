@@ -16,6 +16,9 @@ depends=(
   r-promises
   r-r6
   r-rcpp
+  gcc
+  make
+  zlib
 )
 optdepends=(
   r-callr
