@@ -20,6 +20,7 @@ depends=(
   r-rlang
   r-stringr
   r-xml2
+  gcc
 )
 optdepends=(
   r-covr
