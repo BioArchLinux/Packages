@@ -7,6 +7,17 @@ repo_depends:
 - r-rcpp
 - r-rcppeigen
 - r-snpstats
+- r-biomart
+- r-circlize
+- r-httr
+- r-iranges
+- r-knitr
+- r-memoise
+- r-readr
+- r-rmarkdown
+- r-s4vectors
+- r-stringdb
+- r-testthat
 update_on:
 - regex: martini_([\d._-]+).tar.gz
   source: regex
