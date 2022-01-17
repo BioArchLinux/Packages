@@ -15,6 +15,7 @@ depends=(
   r-glue
   r-mathjaxr
   r-rcpp
+  gcc
 )
 optdepends=(
   r-covr
