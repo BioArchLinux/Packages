@@ -20,6 +20,9 @@ depends=(
   r-tibble
   r-tidyselect
   r-vctrs
+  make
+  gcc
+  zlib
 )
 optdepends=(
   r-cli
