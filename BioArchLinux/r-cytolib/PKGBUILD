@@ -18,6 +18,8 @@ depends=(
   r-rcppparallel
   r-rhdf5lib
   r-rprotobuflib
+  make
+  gcc
 )
 optdepends=(
   r-knitr
