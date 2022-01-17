@@ -27,6 +27,7 @@ depends=(
   r-rjson
   r-rsvg
   r-stringi
+  make
 )
 optdepends=(
   r-biocmanager
