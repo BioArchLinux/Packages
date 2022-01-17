@@ -26,6 +26,7 @@ depends=(
   r-rmarkdown
   r-shiny
   r-sva
+  pandoc
 )
 optdepends=(
   r-testthat
