@@ -17,6 +17,9 @@ depends=(
   r-magrittr
   r-sf
   r-v8
+  geos
+  proj
+  gdal
 )
 optdepends=(
   r-testthat
