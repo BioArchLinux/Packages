@@ -12,6 +12,7 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  xclip
 )
 optdepends=(
   r-covr
