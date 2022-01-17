@@ -21,6 +21,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-beachmat
