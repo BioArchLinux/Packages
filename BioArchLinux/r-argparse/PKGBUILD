@@ -15,6 +15,7 @@ depends=(
   r-findpython
   r-jsonlite
   r-r6
+  python
 )
 optdepends=(
   r-knitr
