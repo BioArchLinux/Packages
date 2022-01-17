@@ -20,6 +20,9 @@ depends=(
   r-rfoc
   r-rgeos
   r-sp
+  libxml2
+  make
+  gcc
 )
 optdepends=(
   r-knitr
