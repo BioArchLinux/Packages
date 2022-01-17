@@ -46,6 +46,9 @@ depends=(
   r-sva
   r-tibble
   r-xml
+  libxml2
+  openssh
+  curl
 )
 optdepends=(
   r-knitr
