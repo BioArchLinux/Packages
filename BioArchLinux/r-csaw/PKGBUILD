@@ -26,6 +26,8 @@ depends=(
   r-s4vectors
   r-summarizedexperiment
   r-zlibbioc
+  gcc
+  make
 )
 optdepends=(
   r-annotationdbi
