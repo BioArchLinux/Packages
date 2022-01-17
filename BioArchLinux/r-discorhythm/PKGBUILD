@@ -42,6 +42,7 @@ depends=(
   r-venndiagram
   r-viridis
   r-zip
+  pandoc
 )
 optdepends=(
   r-testthat
