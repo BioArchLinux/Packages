@@ -14,6 +14,7 @@ depends=(
   r
   r-rcpp
   r-rlang
+  gcc
 )
 optdepends=(
   r-knitr
