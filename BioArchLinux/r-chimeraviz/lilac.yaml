@@ -29,6 +29,8 @@ repo_depends:
 - r-rmarkdown
 - r-rsamtools
 - r-s4vectors
+- bowtie
+- samtools
 update_on:
 - regex: chimeraviz_([\d._-]+).tar.gz
   source: regex
