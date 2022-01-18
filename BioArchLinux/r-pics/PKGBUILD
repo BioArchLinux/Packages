@@ -3,7 +3,7 @@
 _pkgname=PICS
 _pkgver=2.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.38.0
 pkgrel=1
 pkgdesc='Probabilistic inference of ChIP-seq'
 arch=('x86_64')
@@ -23,7 +23,7 @@ optdepends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('30867d2d01261810195c530c81634f4c396e9ea2f8a3daae974d48f0bf40279a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
