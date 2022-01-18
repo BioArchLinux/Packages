@@ -23,6 +23,7 @@ depends=(
   r-s4vectors
   r-singlecellexperiment
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-beachmat
