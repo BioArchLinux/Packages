@@ -4,7 +4,7 @@
 _pkgname=HilbertVisGUI
 _pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.52.0
 pkgrel=1
 pkgdesc='HilbertVisGUI'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-lattice
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0fcdfb8934d8d5672e8924b4cf35dbfd35a5262be02aae30370f3e2515646735')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
