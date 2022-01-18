@@ -14,6 +14,7 @@ depends=(
   r
   r-cpp11
   r-generics
+  gcc
 )
 optdepends=(
   r-chron
