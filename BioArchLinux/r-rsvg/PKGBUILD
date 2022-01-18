@@ -4,7 +4,7 @@
 _pkgname=rsvg
 _pkgver=2.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.2
 pkgrel=1
 pkgdesc='Render SVG Images into PDF, PNG, PostScript, or Bitmap Arrays'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-webp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d6221c182a72c3e8e342bac94be15f980bc780e8893efb3a7170eb2cf455e682')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
