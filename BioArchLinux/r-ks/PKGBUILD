@@ -3,7 +3,7 @@
 _pkgname=ks
 _pkgver=1.13.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.13.3
 pkgrel=1
 pkgdesc='Kernel Smoothing'
 arch=('x86_64')
@@ -27,7 +27,7 @@ optdepends=(
   r-rgl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('defb80df665d987f1751899f7a9809cb5a770f3c74266d7fbc7b9493616dce73')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
