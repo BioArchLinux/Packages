@@ -19,6 +19,7 @@ depends=(
   r-reshape2
   r-rhtslib
   r-s4vectors
+  make
 )
 optdepends=(
   r-biostrings
