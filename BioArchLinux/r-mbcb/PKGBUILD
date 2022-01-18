@@ -3,7 +3,7 @@
 _pkgname=MBCB
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='MBCB (Model-based Background Correction for Beadarray)'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-tcltk2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('031f595c237b4bf59ce0fec34b917df9c4514becd44d960bc1a928a091a32d1a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
