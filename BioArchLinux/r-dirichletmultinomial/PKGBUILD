@@ -4,7 +4,7 @@
 _pkgname=DirichletMultinomial
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='Dirichlet-Multinomial Mixture Model Machine Learning for Microbiome Data'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('06fbbdd0d0c71e9443b91aedf6750281c9ea23340f857694aa5b48992ea5ca1a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
