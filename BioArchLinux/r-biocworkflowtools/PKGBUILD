@@ -3,7 +3,7 @@
 _pkgname=BiocWorkflowTools
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Tools to aid the development of Bioconductor Workflow packages'
 arch=('any')
@@ -22,7 +22,7 @@ depends=(
   r-usethis
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4a353ac20dd7725878d43c4c6efb8d3360a6ba55f35a7060655b69e40b473ac9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
