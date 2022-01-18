@@ -3,7 +3,7 @@
 _pkgname=ABarray
 _pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.0
 pkgrel=1
 pkgdesc='Microarray QA and statistical data analysis for Applied Biosystems Genome Survey Microrarray (AB1700) gene expression data.'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-lpe
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b32cc73f8f39ebf72eebe65d4790e7abe8a1e8ea0cc48852ad73bcc66795077a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
