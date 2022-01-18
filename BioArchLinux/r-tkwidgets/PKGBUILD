@@ -3,7 +3,7 @@
 _pkgname=tkWidgets
 _pkgver=1.72.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.72.0
 pkgrel=1
 pkgdesc='R based tk widgets'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-hgu95av2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6efb04a33230e360f685e8f6a606db37a468cb3936fbed677616439452cf9bf2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
