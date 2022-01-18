@@ -3,7 +3,7 @@
 _pkgname=Mfuzz
 _pkgver=2.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.54.0
 pkgrel=1
 pkgdesc='Soft clustering of time series gene expression data'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-marray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f015462c0d416c057ffb9c724d127659e1145973ea277c8aeb503185bb18665e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
