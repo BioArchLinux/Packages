@@ -7,6 +7,7 @@ repo_depends:
 - r-gplots
 - r-seqinr
 - r-stringr
+- hmmer
 update_on:
 - regex: MethTargetedNGS_([\d._-]+).tar.gz
   source: regex
