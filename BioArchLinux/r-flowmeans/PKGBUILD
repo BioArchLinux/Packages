@@ -3,7 +3,7 @@
 _pkgname=flowMeans
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.54.0
 pkgrel=1
 pkgdesc='Non-parametric Flow Cytometry Data Gating'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-rrcov
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('86eadfac8f62f51ab0cdcd999fef57b1949994af049bde20f541da08e286c847')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
