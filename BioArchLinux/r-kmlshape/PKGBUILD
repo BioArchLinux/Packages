@@ -3,7 +3,7 @@
 _pkgname=kmlShape
 _pkgver=0.9.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.5
 pkgrel=1
 pkgdesc='K-Means for Longitudinal Data using Shape-Respecting Distance'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-longitudinaldata
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('617542d4981bb3ae5b839358e446b00c0706185d4d4f8f0efe561284258c65dc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
