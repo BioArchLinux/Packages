@@ -4,7 +4,7 @@
 _pkgname=ncdf4
 _pkgver=1.19
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.19
 pkgrel=1
 pkgdesc='Interface to Unidata netCDF (Version 4 or Earlier) Format Data Files'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   netcdf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cb8d139211fc7475c435ce9f6a43e47710603409dc523b053c8b7de9848dfb63')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
