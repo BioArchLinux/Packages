@@ -4,7 +4,7 @@
 _pkgname=fftw
 _pkgver=1.0-6.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.6.1
 pkgrel=1
 pkgdesc='Fast FFT and DCT Based on the FFTW Library'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   fftw
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ffc32b4f9725c9b11cab692e2bba1f0f73cb067b443a0e629905f19031ca26e8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
