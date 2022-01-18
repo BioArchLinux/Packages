@@ -3,7 +3,7 @@
 _pkgname=RcppZiggurat
 _pkgver=0.1.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.6
 pkgrel=1
 pkgdesc="'Rcpp' Integration of Different "Ziggurat" Normal RNG Implementations"
 arch=('x86_64')
@@ -23,7 +23,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9c78255ca476c945c05a564d1e4da363de714d890e0e27f3b252fd73c50eed71')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
