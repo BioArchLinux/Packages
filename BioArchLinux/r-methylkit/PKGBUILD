@@ -29,6 +29,7 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-zlibbioc
+  make
 )
 optdepends=(
   r-biocmanager
