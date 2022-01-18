@@ -3,7 +3,7 @@
 _pkgname=OLINgui
 _pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.68.0
 pkgrel=1
 pkgdesc='Graphical user interface for OLIN'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-widgettools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('31640a5e169df4eb2f831f9013ea8a1dd49b26ef8fdff686ff3d1c565a626935')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
