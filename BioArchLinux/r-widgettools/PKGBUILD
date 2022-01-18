@@ -3,7 +3,7 @@
 _pkgname=widgetTools
 _pkgver=1.72.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.72.0
 pkgrel=1
 pkgdesc='Creates an interactive tcltk widget'
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1239f79153d7c7228b86aefeeb9394242aaefb62dbfdbab893dc84800e745249')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
