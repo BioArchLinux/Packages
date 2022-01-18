@@ -3,7 +3,7 @@
 _pkgname=IsoGene
 _pkgver=1.0-24
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.24
 pkgrel=1
 pkgdesc='Order-Restricted Inference for Microarray Experiments'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   tk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('19049382c45c870cd8e51e47ec1ec9b38bbfa1ff4af31fd5a07b5af57505953a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
