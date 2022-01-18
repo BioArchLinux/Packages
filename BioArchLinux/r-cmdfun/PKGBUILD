@@ -3,7 +3,7 @@
 _pkgname=cmdfun
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.2
 pkgrel=1
 pkgdesc='Framework for Building Interfaces to Shell Commands'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7288d35777260156bf67ea0c036af12e3130b51378f80a9fc5955111e1c16cdd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
