@@ -3,7 +3,7 @@
 _pkgname=mpmi
 _pkgver=0.43.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.43.1
 pkgrel=1
 pkgdesc='Mixed-Pair Mutual Information Estimators'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1313c6b742546f9c276f3eba4aa4071eed69211932a7a61ad25094bf9148e7d3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
