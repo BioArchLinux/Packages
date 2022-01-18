@@ -3,7 +3,7 @@
 _pkgname=genArise
 _pkgver=1.70.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.70.0
 pkgrel=1
 pkgdesc='Microarray Analysis tool'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('df4ec5bb1ac73a85deb067f7894ef4468d042396641e9cf5d003316fd30990a2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
