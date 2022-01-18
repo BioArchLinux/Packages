@@ -3,7 +3,7 @@
 _pkgname=limmaGUI
 _pkgver=1.70.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.70.0
 pkgrel=1
 pkgdesc='GUI for limma Package With Two Color Microarrays'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('57762204cfb0f183ea10e12cec62794bf16f0336b64e7f408213110423ba8b3c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
