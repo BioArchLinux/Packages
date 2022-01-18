@@ -4,7 +4,7 @@
 _pkgname=copula
 _pkgver=1.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='Multivariate Dependence with Copulas'
 arch=('x86_64')
@@ -55,7 +55,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d09b2ccffc7379e48b00952aa6b282baf502feebaf55cc44e93f881d7b909742')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
