@@ -3,7 +3,7 @@
 _pkgname=plot3D
 _pkgver=1.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4
 pkgrel=1
 pkgdesc='Plotting Multi-Dimensional Data'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-misc3d
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d04a45197646fb36bc38870c1c2351cb56b912bd772b1ebfa25eaeef35fda9c0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
