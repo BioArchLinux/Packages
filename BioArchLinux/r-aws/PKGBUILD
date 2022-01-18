@@ -3,7 +3,7 @@
 _pkgname=aws
 _pkgver=2.5-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.5.1
 pkgrel=1
 pkgdesc='Adaptive Weights Smoothing'
 arch=('x86_64')
@@ -18,7 +18,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e8abadc5614f132edc3fb9cb1c82ce4dacc1315b727fbd49db7399aee24115ba')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
