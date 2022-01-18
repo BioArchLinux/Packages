@@ -14,6 +14,7 @@ repo_depends:
 - r-rcolorbrewer
 - r-reshape2
 - r-stringr
+- clustal-omega
 update_on:
 - regex: LowMACA_([\d._-]+).tar.gz
   source: regex
