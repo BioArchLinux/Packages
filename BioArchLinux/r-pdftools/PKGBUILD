@@ -4,7 +4,7 @@
 _pkgname=pdftools
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.1
 pkgrel=1
 pkgdesc='Text Extraction, Rendering and Converting of PDF Documents'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-webp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('13d5935459aef1ea0ad215f5004696754e3463aa2191eed73af1235f6cd18bb5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
