@@ -3,7 +3,7 @@
 _pkgname=ReactomeGraph4R
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Interface for the Reactome Graph Database'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-wesanderson
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fa7e084680731755922bde65463d536c7e3b6025fb83b8bc95ebc034baef4719')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
