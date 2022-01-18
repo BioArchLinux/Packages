@@ -4,7 +4,7 @@
 _pkgname=flowPeaks
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='An R package for flow data clustering'
 arch=('x86_64')
@@ -18,7 +18,7 @@ optdepends=(
   r-flowcore
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('51570cc74d6864c8e7c4870db79b5c5f0053398af3122662dd648f6f370b8b93')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
