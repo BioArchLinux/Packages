@@ -3,7 +3,7 @@
 _pkgname=synapsis
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='An R package to automate the analysis of double-strand break repair during meiosis'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('453be32ce6c231696123cf348b159f671aa7e6ec2e33a8b1f2757fd1d8bf0acf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
