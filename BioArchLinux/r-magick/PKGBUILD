@@ -4,7 +4,7 @@
 _pkgname=magick
 _pkgver=2.7.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.7.3
 pkgrel=1
 pkgdesc='Advanced Graphics and Image-Processing in R'
 arch=('x86_64')
@@ -34,7 +34,7 @@ optdepends=(
   r-webp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('83877b2e23ea43fbc1164de9c2422eafbe7858393ac384df5adf3a7eec122441')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
