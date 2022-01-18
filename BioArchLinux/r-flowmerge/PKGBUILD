@@ -3,7 +3,7 @@
 _pkgname=flowMerge
 _pkgver=2.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.42.0
 pkgrel=1
 pkgdesc='Cluster Merging for Flow Cytometry Data'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6a2d59becba45ba3bc81dd8beb1c980e92a31c07b4dbe17de2a089ef2b8e21ae')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
