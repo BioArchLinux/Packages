@@ -17,6 +17,7 @@ depends=(
   r-corpcor
   r-cubature
   r-tensora
+  gcc
 )
 optdepends=(
   r-combinat
