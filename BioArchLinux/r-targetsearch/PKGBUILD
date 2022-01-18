@@ -3,7 +3,7 @@
 _pkgname=TargetSearch
 _pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='A package for the analysis of GC-MS metabolite profiling data'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-tinytest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('dbef59e8be30f9739059ed0f9e80f0f3bfb351fe9868a68e7825a22bf35b7c46')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
