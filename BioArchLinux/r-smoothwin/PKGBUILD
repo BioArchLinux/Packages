@@ -3,7 +3,7 @@
 _pkgname=SmoothWin
 _pkgver=3.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.0
 pkgrel=1
 pkgdesc='Soft Windowing on Linear Regression'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rfast
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c668284e087a59030bab0f61544d87a121b4ff5a8f13a172864367c201d6027f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
