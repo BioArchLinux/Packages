@@ -16,6 +16,7 @@ depends=(
   r-gplots
   r-seqinr
   r-stringr
+  hmmer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('732b278bfd7aa35e64a7b6b5d7f6896c08a2660cc89d2d6215d8b1f47ed4afd8')
