@@ -23,6 +23,9 @@ depends=(
   r-rcolorbrewer
   r-reshape2
   r-stringr
+  ghostscript
+  perl
+  clustal-omega
 )
 optdepends=(
   r-biocstyle
