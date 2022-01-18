@@ -3,7 +3,7 @@
 _pkgname=feature
 _pkgver=1.2.15
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.15
 pkgrel=1
 pkgdesc='Local Inferential Feature Significance for Multivariate Kernel Density Estimation'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('de38292b7e800068a20824e2a9e7d5d4d0b465b7925db0d165346aa5030ff67b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
