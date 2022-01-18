@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=annmap
-_pkgver=1.36.0
+_pkgver=1.36.99
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.99
 pkgrel=1
 pkgdesc='Genome annotation and visualisation package pertaining to Affymetrix arrays and NGS analysis.'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('569d46df129d8e0c9082bd8f74f0fe027e07feb3bda8715af93b3493a04a22e0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
