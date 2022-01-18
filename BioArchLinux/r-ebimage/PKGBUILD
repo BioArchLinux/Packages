@@ -3,7 +3,7 @@
 _pkgname=EBImage
 _pkgver=4.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.36.0
 pkgrel=1
 pkgdesc='Image processing and analysis toolbox for R'
 arch=('x86_64')
@@ -30,7 +30,7 @@ optdepends=(
   r-shiny
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('29181cea9e913e714358527d837de827344038598d300408c1d8dd5b8abd1b0c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
