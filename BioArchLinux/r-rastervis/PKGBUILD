@@ -3,7 +3,7 @@
 _pkgname=rasterVis
 _pkgver=0.51.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.51.1
 pkgrel=1
 pkgdesc='Visualization Methods for Raster Data'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-sf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('222fa7594456d04178f2d021f50ad29f1b65b5a0123ed9cd57a94bf5a50de1d5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
