@@ -16,6 +16,7 @@ depends=(
   r-rcolorbrewer
   r-rhtslib
   r-zlibbioc
+  make
 )
 optdepends=(
   r-berryfunctions
