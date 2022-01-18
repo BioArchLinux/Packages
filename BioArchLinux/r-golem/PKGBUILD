@@ -3,7 +3,7 @@
 _pkgname=golem
 _pkgver=0.3.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.1
 pkgrel=1
 pkgdesc='A Framework for Robust Shiny Applications'
 arch=('any')
@@ -49,7 +49,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9380a2ea62982311daca2058fd0cbb96118a55a49537384f07d7737f52d7aaaa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
