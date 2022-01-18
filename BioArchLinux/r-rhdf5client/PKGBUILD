@@ -3,7 +3,7 @@
 _pkgname=rhdf5client
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='Access HDF5 content from h5serv'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-markdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('96b80b98cd8a518af118add5f0c1c88c2a734708a41635fa9f21d38819946fdd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
