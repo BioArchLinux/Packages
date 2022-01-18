@@ -3,7 +3,7 @@
 _pkgname=qusage
 _pkgver=2.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.28.0
 pkgrel=1
 pkgdesc='qusage: Quantitative Set Analysis for Gene Expression'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-limma
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9fe9a19313c54d544544c1298f3c57ba4b740bfe31c6257b7182cfd427ba6669')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
