@@ -3,7 +3,7 @@
 _pkgname=gdm
 _pkgver=1.5.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.5.0.1
 pkgrel=1
 pkgdesc='Generalized Dissimilarity Modeling'
 arch=('x86_64')
@@ -19,7 +19,7 @@ depends=(
   r-vegan
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6b0e7d920f80e1539bcbc6a1726a59294859c057b00b8dd052b8b689ac29ee86')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
