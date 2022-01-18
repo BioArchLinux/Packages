@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=cvAUC
-_pkgver=1.1.0
+_pkgver=1.1.4
 pkgname=r-${_pkgname,,}
-pkgver=1.1.0
-pkgrel=2
+pkgver=1.1.4
+pkgrel=1
 pkgdesc='Cross-Validated Area Under the ROC Curve Confidence Intervals'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-rocr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c4d8ed53b93869650aa2f666cf6d1076980cbfea7fa41f0b8227595be849738d')
+sha256sums=('48b4a3c34e9beb63239e9c7372dd125fe87648262ad5490e0bee2a1f14285ed4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
