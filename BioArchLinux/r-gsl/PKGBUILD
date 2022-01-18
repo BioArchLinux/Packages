@@ -4,7 +4,7 @@
 _pkgname=gsl
 _pkgver=2.1-7.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.7.1
 pkgrel=1
 pkgdesc='Wrapper for the Gnu Scientific Library'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   gsl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ee98d1382d37ffa77538a90ccdbf44affbf1710a9e66b8ada73fa72e67921985')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
