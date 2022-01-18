@@ -15,6 +15,7 @@ depends=(
   r-coda
   r-mcmc
   r-quantreg
+  gcc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
