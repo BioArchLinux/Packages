@@ -3,7 +3,7 @@
 _pkgname=HiveR
 _pkgver=0.3.63
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.63
 pkgrel=1
 pkgdesc='2D and 3D Hive Plots for R'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('83c16ab55324f51ac3f5d0377244fddcb7a009ae30cee4dd67270035c42422ee')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
