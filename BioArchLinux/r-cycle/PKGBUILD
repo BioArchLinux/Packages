@@ -3,7 +3,7 @@
 _pkgname=cycle
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Significance of periodic expression pattern in time-series data'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-mfuzz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4b6d70eabde9ef5b7ef95ff2ceb2a0b58961f45a6a2791e20568b21888db9dfd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
