@@ -4,7 +4,7 @@
 _pkgname=CGEN
 _pkgver=3.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.30.0
 pkgrel=1
 pkgdesc="An R package for analysis of case-control studies in genetic epidemiology"
 arch=('x86_64')
