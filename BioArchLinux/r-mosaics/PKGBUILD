@@ -19,6 +19,7 @@ depends=(
   r-rcpp
   r-rsamtools
   r-s4vectors
+  perl
 )
 optdepends=(
   r-mosaicsexample
