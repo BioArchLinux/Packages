@@ -19,6 +19,8 @@ depends=(
   r-rcpp
   r-rhdf5lib
   r-zlibbioc
+  gcc
+  make
 )
 optdepends=(
   r-biocstyle
