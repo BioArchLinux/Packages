@@ -17,6 +17,7 @@ depends=(
   r-iranges
   r-rcpp
   r-s4vectors
+  make
 )
 optdepends=(
   r-ape
