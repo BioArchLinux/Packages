@@ -2,7 +2,7 @@
 pkgname=seqcombgo
 _pkgname=SeqCombGo
 pkgver=0.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Sequence Combination tool written in Golang"
 arch=('x86_64' 'i686' 'aarch64' 'armv7h' 'armv6h' 'arm')
 url="https://github.com/MalacoLab/SeqCombGo"
