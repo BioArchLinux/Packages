@@ -19,6 +19,10 @@ depends=(
   r-rcpp
   r-rcppparallel
   r-wgcna
+  make
+  bash
+  perl
+  gzip
 )
 optdepends=(
   r-knitr
