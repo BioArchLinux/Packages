@@ -18,6 +18,7 @@ depends=(
   r-rawrr
   r-s4vectors
   r-spectra
+  mono
 )
 optdepends=(
   r-biocstyle
