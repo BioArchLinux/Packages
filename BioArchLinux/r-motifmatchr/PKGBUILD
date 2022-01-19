@@ -23,6 +23,7 @@ depends=(
   r-s4vectors
   r-summarizedexperiment
   r-tfbstools
+  gcc
 )
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg19
