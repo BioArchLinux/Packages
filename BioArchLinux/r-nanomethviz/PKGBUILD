@@ -43,6 +43,7 @@ depends=(
   r-tidyr
   r-withr
   r-zlibbioc
+  gcc
 )
 optdepends=(
   r-covr
