@@ -23,6 +23,7 @@ depends=(
   r-scran
   r-softimpute
   r-tidyr
+  python
 )
 optdepends=(
   r-biocstyle
