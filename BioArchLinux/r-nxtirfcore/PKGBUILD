@@ -39,6 +39,7 @@ depends=(
   r-s4vectors
   r-summarizedexperiment
   r-zlibbioc
+  gcc
 )
 optdepends=(
   r-crayon
