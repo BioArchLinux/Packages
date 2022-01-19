@@ -23,6 +23,8 @@ depends=(
   r-rcpp
   r-rcppparallel
   r-xml2
+  gcc
+  make
 )
 optdepends=(
   r-biocgenerics
