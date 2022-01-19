@@ -20,6 +20,7 @@ depends=(
   r-rcpparmadillo
   r-rhpcblasctl
   r-statmod
+  gcc
 )
 optdepends=(
   r-bigmemory
