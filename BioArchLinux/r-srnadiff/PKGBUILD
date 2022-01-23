@@ -30,6 +30,7 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-biocmanager
