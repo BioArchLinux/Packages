@@ -18,6 +18,11 @@ depends=(
   r-rcpp
   r-s2
   r-units
+  gcc
+  gdal
+  geos
+  proj
+  sqlite3
 )
 optdepends=(
   r-blob
