@@ -25,6 +25,7 @@ depends=(
   r-rcppparallel
   r-singlecellexperiment
   r-summarizedexperiment
+  make
 )
 optdepends=(
   r-biocparallel
