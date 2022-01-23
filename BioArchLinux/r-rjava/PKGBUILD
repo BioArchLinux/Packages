@@ -12,7 +12,7 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('LGPL')
 depends=(
   r
-  java-runtime-common
+  java-environment
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
