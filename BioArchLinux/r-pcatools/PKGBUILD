@@ -24,6 +24,7 @@ depends=(
   r-ggrepel
   r-rcpp
   r-reshape2
+  gcc
 )
 optdepends=(
   r-airway
