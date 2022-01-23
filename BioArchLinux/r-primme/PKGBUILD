@@ -13,6 +13,7 @@ license=('GPL')
 depends=(
   r
   r-rcpp
+  make
 )
 optdepends=(
   r-matrix
