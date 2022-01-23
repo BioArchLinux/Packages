@@ -22,6 +22,7 @@ depends=(
   r-rcpp
   r-rhtslib
   r-rsamtools
+  make
 )
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg38.masked
