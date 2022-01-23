@@ -18,6 +18,7 @@ depends=(
   r-png
   r-rcdklibs
   r-rjava
+  jdk11-openjdk
 )
 optdepends=(
   r-devtools
