@@ -6,5 +6,5 @@ repo_depends:
 - r-quadprog
 update_on:
   - source: regex
-  regex: href="/cran/RefFreeEWAS/releases/tag/(\d+.\d+)"
-  url: "https://github.com/cran/RefFreeEWAS/tags"
+    regex: href="/cran/RefFreeEWAS/releases/tag/(\d+.\d+)"
+    url: "https://github.com/cran/RefFreeEWAS/tags"
