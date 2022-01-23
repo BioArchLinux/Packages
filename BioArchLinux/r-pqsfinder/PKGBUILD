@@ -18,6 +18,8 @@ depends=(
   r-iranges
   r-rcpp
   r-s4vectors
+  make
+  gcc
 )
 optdepends=(
   r-biocstyle
