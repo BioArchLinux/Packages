@@ -18,6 +18,7 @@ depends=(
   r-rappdirs
   r-rcwl
   r-s4vectors
+  nodejs
 )
 optdepends=(
   r-biocstyle
