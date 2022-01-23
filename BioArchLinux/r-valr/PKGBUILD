@@ -21,6 +21,7 @@ depends=(
   r-rtracklayer
   r-stringr
   r-tibble
+  gcc
 )
 optdepends=(
   r-bench
