@@ -27,6 +27,7 @@ depends=(
   r-s4vectors
   r-xml
   r-yaml
+  openbabel
 )
 optdepends=(
   r-biocstyle
