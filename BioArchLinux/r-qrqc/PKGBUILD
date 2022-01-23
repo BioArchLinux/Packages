@@ -21,6 +21,7 @@ depends=(
   r-rhtslib
   r-testthat
   r-xtable
+  make
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
