@@ -35,6 +35,8 @@ depends=(
   r-stringr
   r-systempiper
   r-systempiperdata
+  python2
+  python
 )
 optdepends=(
   r-grid
