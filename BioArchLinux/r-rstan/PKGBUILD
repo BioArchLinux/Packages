@@ -22,6 +22,8 @@ depends=(
   r-rcppeigen
   r-rcppparallel
   r-stanheaders
+  make
+  pandoc
 )
 optdepends=(
   r-bayesplot
