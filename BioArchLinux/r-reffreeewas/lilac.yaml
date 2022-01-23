@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-quadprog
-update_on: regex
+update_on:
+  - source: regex
   regex: href="/cran/RefFreeEWAS/releases/tag/(\d+.\d+)"
-  url: https://github.com/cran/RefFreeEWAS/tags
+  url: "https://github.com/cran/RefFreeEWAS/tags"
