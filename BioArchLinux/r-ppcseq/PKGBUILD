@@ -32,6 +32,7 @@ depends=(
   r-tibble
   r-tidybayes
   r-tidyr
+  make
 )
 optdepends=(
   r-biocstyle
