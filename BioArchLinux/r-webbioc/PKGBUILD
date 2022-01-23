@@ -20,6 +20,8 @@ depends=(
   r-multtest
   r-qvalue
   r-vsn
+  perl
+  netpbm
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
