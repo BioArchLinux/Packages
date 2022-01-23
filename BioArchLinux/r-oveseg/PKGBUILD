@@ -17,6 +17,7 @@ depends=(
   r-limma
   r-rcpp
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-biocstyle
