@@ -39,6 +39,8 @@ depends=(
   r-summarizedexperiment
   r-testthat
   r-zlibbioc
+  gcc
+  make
 )
 optdepends=(
   r-knitr
