@@ -20,6 +20,7 @@ depends=(
   r-rstudioapi
   r-shiny
   r-styler
+  xclip
 )
 optdepends=(
   r-dplyr
