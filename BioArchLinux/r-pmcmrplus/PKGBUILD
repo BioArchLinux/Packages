@@ -19,6 +19,8 @@ depends=(
   r-mvtnorm
   r-rmpfr
   r-suppdists
+  mpfr
+  gmp
 )
 optdepends=(
   r-car
