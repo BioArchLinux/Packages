@@ -23,6 +23,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-variantannotation
+  gcc
 )
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg19
