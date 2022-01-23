@@ -18,6 +18,9 @@ depends=(
   r-knitr
   r-magrittr
   r-r6
+  mesa
+  glu
+  pandoc
 )
 optdepends=(
   r-akima
@@ -44,6 +47,8 @@ optdepends=(
   r-tripack
   r-waldo
   r-webshot2
+  libpng
+  freetype2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('89f96eb462cacfcc796ad351d7dac0480a7eb9f80e9bd75e58c5a79f0ee8133b')
