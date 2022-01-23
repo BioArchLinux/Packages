@@ -15,6 +15,7 @@ depends=(
   r-rcpp
   fuse2
   fuse3
+  gcc
 )
 optdepends=(
   r-biocstyle
