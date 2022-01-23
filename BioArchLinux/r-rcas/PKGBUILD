@@ -38,6 +38,7 @@ depends=(
   r-rsqlite
   r-rtracklayer
   r-s4vectors
+  pandoc
 )
 optdepends=(
   r-covr
