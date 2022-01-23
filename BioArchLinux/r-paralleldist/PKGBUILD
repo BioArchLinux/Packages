@@ -15,6 +15,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-rcppparallel
+  gcc
 )
 optdepends=(
   r-dtw
