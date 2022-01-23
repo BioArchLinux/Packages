@@ -13,6 +13,7 @@ license=('Apache')
 depends=(
   r
   r-rmarkdown
+  pandoc
 )
 optdepends=(
   r-kernsmooth
