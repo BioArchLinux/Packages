@@ -21,6 +21,7 @@ depends=(
   r-seurat
   r-singlecellexperiment
   r-summarizedexperiment
+  gcc
 )
 optdepends=(
   r-beachmat
