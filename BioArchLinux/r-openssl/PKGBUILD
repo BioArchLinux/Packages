@@ -13,6 +13,7 @@ license=('MIT')
 depends=(
   r
   r-askpass
+  openssl
 )
 optdepends=(
   r-digest
