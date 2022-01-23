@@ -20,6 +20,8 @@ depends=(
   r-seurat
   r-singlecellexperiment
   r-tensorflow
+  python
+  tensorflow
 )
 optdepends=(
   r-knitr
