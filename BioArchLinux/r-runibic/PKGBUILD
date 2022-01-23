@@ -16,6 +16,7 @@ depends=(
   r-rcpp
   r-summarizedexperiment
   r-testthat
+  make
 )
 optdepends=(
   r-affy
