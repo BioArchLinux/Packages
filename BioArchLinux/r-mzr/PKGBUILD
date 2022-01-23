@@ -4,7 +4,7 @@
 _pkgname=mzR
 _pkgver=2.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.28.0
 pkgrel=1
 pkgdesc='parser for netCDF, mzXML, mzData and mzML and mzIdentML files (mass spectrometry data)'
 arch=('x86_64')
@@ -32,7 +32,7 @@ optdepends=(
   r-xml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('41e71d2c4e8f7fd9f4db645cb24af8520d529d325fbe200eebc51a2f2507f8ab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
