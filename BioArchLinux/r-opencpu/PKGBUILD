@@ -26,6 +26,7 @@ depends=(
   r-sys
   r-webutils
   r-zip
+  pandoc
 )
 optdepends=(
   r-feather
@@ -34,6 +35,7 @@ optdepends=(
   r-r.rsp
   r-svglite
   r-unix
+  apparmor
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('21716dd33b7142d66c8c7238e27ac4af6bbae32d1868a5501f3592b92674b232')
