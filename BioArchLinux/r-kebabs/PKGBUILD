@@ -1,4 +1,5 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=kebabs
 _pkgver=1.28.0
@@ -21,21 +22,35 @@ depends=(
   r-s4vectors
   r-xvector
 )
+makedepends=(
+  patch
+)
 optdepends=(
   r-biobase
   r-biocgenerics
   r-knitr
   r-sparsem
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix_strictrhdrs.patch")
 sha256sums=('98305512fffa397b38d7d412fb7de59b5320b9290d03308f06df25aa576ea410')
 
+prepare() {
+  cd "${srcdir}/${_pkgname}"
+
+  # fix issues with transition to the strict R headers
+  patch -Np0 -i "${srcdir}/fix_strictrhdrs.patch"
+}
+
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  # create staging directory for installation
+  mkdir -p "${srcdir}/staged"
+
+  R CMD INSTALL "${_pkgname}" -l "${srcdir}/staged"
 }
 
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${srcdir}/staged/${_pkgname}" "${pkgdir}/usr/lib/R/library"
 }
 # vim:set ts=2 sw=2 et:
