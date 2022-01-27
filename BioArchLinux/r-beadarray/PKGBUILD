@@ -3,7 +3,7 @@
 _pkgname=beadarray
 _pkgver=2.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.44.0
 pkgrel=1
 pkgdesc='Quality assessment and low-level analysis for Illumina BeadArray data'
 arch=('x86_64')
@@ -38,7 +38,7 @@ optdepends=(
   r-vsn
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('42273dd6f32ebca08e49e17af25159ffd4edacf98457cc95d046a11c5529a116')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
