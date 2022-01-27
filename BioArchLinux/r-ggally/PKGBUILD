@@ -4,7 +4,7 @@
 _pkgname=GGally
 _pkgver=2.1.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.2
 pkgrel=1
 pkgdesc="Extension to 'ggplot2'"
 arch=('any')
@@ -52,7 +52,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('30352f36bf061bc98bdd5fa373ea0f23d007040bd908c7c018c8e627e0fb28e5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
