@@ -3,7 +3,7 @@
 _pkgname=cplm
 _pkgver=0.7-9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.9
 pkgrel=1
 pkgdesc='Compound Poisson Linear Models'
 arch=('x86_64')
@@ -20,7 +20,7 @@ depends=(
   r-tweedie
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d2539056a71250a248f16f8e390a805dcec4ea17220d596329eb43817330f514')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
