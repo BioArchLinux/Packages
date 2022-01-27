@@ -3,7 +3,7 @@
 _pkgname=ggthemes
 _pkgver=4.2.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.2.4
 pkgrel=1
 pkgdesc="Extra Themes, Scales and Geoms for 'ggplot2'"
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7b35168cf5b68f6f52dd533a1b345ec87e09d1a85ca68e8dc5377cdf95718567')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
