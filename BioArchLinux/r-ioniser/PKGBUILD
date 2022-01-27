@@ -3,7 +3,7 @@
 _pkgname=IONiseR
 _pkgver=2.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.18.0
 pkgrel=1
 pkgdesc='Quality Assessment Tools for Oxford Nanopore MinION data'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('90d404e389e8ef500552dbaf2aeaaf365d1e5c4ce47faa9432c1e8f20d21afc1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
