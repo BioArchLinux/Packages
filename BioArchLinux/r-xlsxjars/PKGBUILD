@@ -3,7 +3,7 @@
 _pkgname=xlsxjars
 _pkgver=0.6.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.1
 pkgrel=1
 pkgdesc='Package required POI jars for the xlsx package'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rjava
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('37c1517f95f8bca6e3514429394d2457b9e62383305eba288416fb53ab2e6ae6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
