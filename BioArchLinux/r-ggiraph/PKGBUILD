@@ -4,7 +4,7 @@
 _pkgname=ggiraph
 _pkgver=0.8.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.8.1
 pkgrel=1
 pkgdesc="Make 'ggplot2' Graphics Interactive"
 arch=('x86_64')
@@ -37,7 +37,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('07ed7f085bf39a532a01a6e85043bc1a05e6cd6c5ed2b7724f2628a4de716d6a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
