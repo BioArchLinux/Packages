@@ -3,7 +3,7 @@
 _pkgname=CNEr
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='CNE Detection and Visualization'
 arch=('x86_64')
@@ -44,7 +44,7 @@ optdepends=(
   r-txdb.drerio.ucsc.danrer10.refgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('825e085aa2d72503928a0545576288e21b4960e3d8301457a26669e87dc59170')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
