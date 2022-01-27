@@ -4,7 +4,7 @@
 _pkgname=CellNOptR
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Training of boolean logic models of signalling networks using prior knowledge networks and perturbation data'
 arch=('x86_64')
@@ -36,7 +36,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('380e972460fe726f89cb50e2511bf7c02057e769104bb1061a566339fecd0c2f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
