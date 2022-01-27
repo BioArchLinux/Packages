@@ -3,7 +3,7 @@
 _pkgname=hdrcde
 _pkgver=3.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.4
 pkgrel=1
 pkgdesc='Highest Density Regions and Conditional Density Estimation'
 arch=('x86_64')
@@ -21,7 +21,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4341c6a021da46dcae3b1ef6d580e84dcf625c2b2139f537d0c26ec90899149b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
