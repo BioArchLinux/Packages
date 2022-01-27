@@ -3,7 +3,7 @@
 _pkgname=rcdklibs
 _pkgver=2.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.3
 pkgrel=1
 pkgdesc='The CDK Libraries Packaged for R'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-rjava
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d733f5ca586ea5fe0a2325d3d281bd5b3ba5b48802b52e7ef837c7c0f4df329a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
