@@ -3,7 +3,7 @@
 _pkgname=survMisc
 _pkgver=0.5.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.5.5
 pkgrel=1
 pkgdesc='Miscellaneous Functions for Survival Data'
 arch=('any')
@@ -21,7 +21,7 @@ depends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('75091b08fb9125561a4d2b0800d1d615553dddeea06522963a8790ff10dddb02')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
