@@ -3,7 +3,7 @@
 _pkgname=ggbeeswarm
 _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.0
 pkgrel=1
 pkgdesc='Categorical Scatter (Violin Point) Plots'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-gridextra
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bbac8552f67ff1945180fbcda83f7f1c47908f27ba4e84921a39c45d6e123333')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
