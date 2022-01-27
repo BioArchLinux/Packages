@@ -3,7 +3,7 @@
 _pkgname=EMDomics
 _pkgver=2.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.24.0
 pkgrel=1
 pkgdesc="Earth Mover's Distance for Differential Analysis of Genomics Data"
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f4aa7fb59f571192c398b3d77c9ed870223789027ed13d1eb71ab70ff31ac865')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
