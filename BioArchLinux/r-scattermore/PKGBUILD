@@ -3,7 +3,7 @@
 _pkgname=scattermore
 _pkgver=0.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7
 pkgrel=1
 pkgdesc='Scatterplots with More Points'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-scales
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f36280197b8476314d6ce81a51c4ae737180b180204043d2937bc25bf3a5dfa2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
