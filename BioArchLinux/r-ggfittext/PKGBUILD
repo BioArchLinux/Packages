@@ -3,7 +3,7 @@
 _pkgname=ggfittext
 _pkgver=0.9.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.1
 pkgrel=1
 pkgdesc="Fit Text Inside a Box in 'ggplot2'"
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ae1460061eec92d0d71103acfaf6a565e36fe995093b7a36cd5e90ce95919379')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
