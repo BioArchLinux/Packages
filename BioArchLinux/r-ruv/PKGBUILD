@@ -3,7 +3,7 @@
 _pkgname=ruv
 _pkgver=0.9.7.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.7.1
 pkgrel=1
 pkgdesc='Detect and Remove Unwanted Variation using Negative Controls'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a0c54e56ba3d8f6ae178ae4d0e417a79295abf5dcb68bbae26c4b874734d98d8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
