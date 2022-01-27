@@ -3,7 +3,7 @@
 _pkgname=gemini
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='GEMINI: Variational inference approach to infer genetic interactions from pairwise CRISPR screens'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a4358bbe9e99eed875853e53ad275307217a3c66b3b2ebf83131b405659824e8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
