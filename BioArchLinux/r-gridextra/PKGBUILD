@@ -3,7 +3,7 @@
 _pkgname=gridExtra
 _pkgver=2.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.3
 pkgrel=1
 pkgdesc='Miscellaneous Functions for "Grid" Graphics'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('81b60ce6f237ec308555471ae0119158b115463df696d2eca9b177ded8988e3b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
