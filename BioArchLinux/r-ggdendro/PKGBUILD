@@ -3,7 +3,7 @@
 _pkgname=ggdendro
 _pkgver=0.1.22
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.22
 pkgrel=1
 pkgdesc="Create Dendrograms and Tree Diagrams Using 'ggplot2'"
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-tree
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f0a65f3498c1abc3076df0fb56364b63bdf5d212d8931f85bcc6997510916b6a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
