@@ -3,7 +3,7 @@
 _pkgname=IsoGeneGUI
 _pkgver=2.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.30.0
 pkgrel=1
 pkgdesc='A graphical user interface to conduct a dose-response analysis of microarray data'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1ae5c13bd7a6b7dd330e2a2b746c01d604d4ab4a4bd0ea19e691286b5ee0e024')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
