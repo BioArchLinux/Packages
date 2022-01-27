@@ -3,7 +3,7 @@
 _pkgname=MAST
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Model-based Analysis of Single Cell Transcriptomics'
 arch=('any')
@@ -51,7 +51,7 @@ optdepends=(
   r-zinbwave
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('de17627595e046eaf25684ea5feeb6dc7154356cefc0d1b5c41fd2e46d7c0692')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
