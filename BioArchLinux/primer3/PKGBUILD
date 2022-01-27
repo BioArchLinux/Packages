@@ -1,15 +1,15 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 # Contributor: Abhishek Dasgupta <abhidg@gmail.com>
 pkgname=primer3
-pkgver=2.6.0
-pkgrel=2
+pkgver=2.6.1
+pkgrel=1
 pkgdesc="Tool to design flanking oligo nucleotides for DNA amplification. https://doi.org/10.1093/nar/gks596"
 arch=('i686' 'x86_64')
 license=('GPL2')
 depends=('gcc-libs')
 url="https://github.com/$pkgname-org/$pkgname"
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('664903d528cc5473fc55355f6c47da3141b91c0284cf5cc8d219efede2d9a8e3')
+sha256sums=('805cef7ef39607cd40f0f5bb8b32e35e20007153a0a55131dd430ce644c8fb9e')
 
 build() {
   cd "$srcdir"/$pkgname-$pkgver/src
