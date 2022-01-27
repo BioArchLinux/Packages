@@ -3,7 +3,7 @@
 _pkgname=CINdex
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Chromosome Instability Index'
 arch=('any')
@@ -41,7 +41,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg18.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8c9ca8d770c2cc10c31448e6ee4b112c7283ee83d66e9f0c5e2b5f5d61cbe328')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
