@@ -3,7 +3,7 @@
 _pkgname=distributional
 _pkgver=0.3.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.0
 pkgrel=1
 pkgdesc='Vectorised Probability Distributions'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fab36c7346617d8f2ca4b3cd0e3c9da93cb2f95fb7f102a3ae88670e694751d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
