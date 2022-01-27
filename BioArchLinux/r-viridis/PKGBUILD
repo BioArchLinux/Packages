@@ -3,7 +3,7 @@
 _pkgname=viridis
 _pkgver=0.6.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.2
 pkgrel=1
 pkgdesc='Colorblind-Friendly Color Maps for R'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('69b58cd1d992710a08b0b227fd0a9590430eea3ed4858099412f910617e41311')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
