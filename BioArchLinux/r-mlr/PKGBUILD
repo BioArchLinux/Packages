@@ -4,7 +4,7 @@
 _pkgname=mlr
 _pkgver=2.19.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.19.0
 pkgrel=1
 pkgdesc='Machine Learning in R'
 arch=('x86_64')
@@ -136,7 +136,7 @@ optdepends=(
   r-xgboost
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1149c9b453896481c85906045aa82d511d96979ddecbe5a3faf04f9f4a5e6113')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
