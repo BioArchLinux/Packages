@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=renv
-_pkgver=0.15.1
+_pkgver=0.15.2
 pkgname=r-${_pkgname,,}
-pkgver=0.15.1
+pkgver=0.15.2
 pkgrel=1
 pkgdesc='Project Environments'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('36e8c8df4af50f2341053aa567798dfca6852ade10fa70f9dc146fe9f96f9b5b')
+sha256sums=('d07effd329f6d653fec9cb517bc8adf3cd6b711758e439055b6d2f06c88765db')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
