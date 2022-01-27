@@ -3,7 +3,7 @@
 _pkgname=motifStack
 _pkgver=1.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.38.0
 pkgrel=1
 pkgdesc='Plot stacked logos for single or multiple DNA, RNA and amino acid sequence'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5fada7533e39f6ee3983740ecff6740053b359d6cd51058e5b152d95ed5a66b2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
