@@ -1,15 +1,15 @@
-pkgname=devtools-cn-git
+pkgname=devtools-bio
 pkgver=8.69b0223
 pkgrel=2
-pkgdesc='Tools for Arch Linux Chinese Community package maintainers'
+pkgdesc='Tools for BioArchLinux Community package maintainers'
 arch=('any')
-url='http://github.com/yuyichao/devtools-cn'
+url='https://github.com/BioArchLinux/devtools-bio'
 license=('GPL')
 depends=('devtools')
 makedepends=('cmake' 'git')
 provides=('devtools-cn')
 conflicts=('devtools-cn')
-source=('git+https://github.com/yuyichao/devtools-cn.git')
+source=('git+https://github.com/BioArchLinux/devtools-bio.git')
 sha256sums=('SKIP')
 
 pkgver() {
@@ -19,7 +19,7 @@ pkgver() {
 }
 
 build() {
-  cd devtools-cn
+  cd devtools-bio
   mkdir -p build
   cd build
 
@@ -28,7 +28,7 @@ build() {
 }
 
 package() {
-  cd devtools-cn/build
+  cd devtools-bio/build
 
   make DESTDIR="${pkgdir}" install
 }
