@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=energy
-_pkgver=1.7-8
+_pkgver=1.7-9
 pkgname=r-${_pkgname,,}
-pkgver=1.7.8
+pkgver=1.7.9
 pkgrel=1
 pkgdesc='E-Statistics: Multivariate Inference via the Energy of Data'
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-mass
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('de08e8de037bb30068bbf0c1880b153a586d342304681f4ba103ab808c7f4789')
+sha256sums=('68d0e0ed99f5a8a03858603ed36010a2f67b87a947dbcc65a9da2e08a2d3bad9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
