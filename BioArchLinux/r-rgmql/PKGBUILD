@@ -3,7 +3,7 @@
 _pkgname=RGMQL
 _pkgver=1.14.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.1
 pkgrel=1
 pkgdesc='GenoMetric Query Language for R/Bioconductor'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('18723c346174effa73e635aad52e342571274176405f9162e00085d7b9864487')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
