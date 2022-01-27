@@ -3,7 +3,7 @@
 _pkgname=ggforce
 _pkgver=0.3.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.3
 pkgrel=1
 pkgdesc="Accelerating 'ggplot2'"
 arch=('x86_64')
@@ -31,7 +31,7 @@ optdepends=(
   r-units
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2a283bb409da6b96929863a926b153bcc59b2c6f00551805db1d1d43e5929f2f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
