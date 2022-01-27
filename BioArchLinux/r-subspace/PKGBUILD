@@ -4,7 +4,7 @@
 _pkgname=subspace
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.4
 pkgrel=1
 pkgdesc='Interface to OpenSubspace'
 arch=('any')
@@ -18,7 +18,7 @@ depends=(
   r-stringr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7b905d61101fb0643b4886b5152d5568cd28ff49d928dac90ed50fc92d05525c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
