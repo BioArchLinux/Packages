@@ -4,7 +4,7 @@
 _pkgname=ChemmineR
 _pkgver=3.46.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.46.0
 pkgrel=1
 pkgdesc='Cheminformatics Toolkit for R'
 arch=('x86_64')
@@ -47,7 +47,7 @@ optdepends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e882dad0016b7eba37e9b17cc3e249d3de3f3337f455559d4a46bbe3e2693d19')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
