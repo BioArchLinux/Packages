@@ -3,7 +3,7 @@
 _pkgname=gaggle
 _pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.62.0
 pkgrel=1
 pkgdesc='Broadcast data between R and Gaggle'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0885275d6f09e54c0ce222eedc19ecf4c5daf81b7d903146bbf98da8e53df962')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
