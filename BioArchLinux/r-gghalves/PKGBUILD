@@ -3,7 +3,7 @@
 _pkgname=gghalves
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Compose Half-Half Plots Using Your Favourite Geoms'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('834606bfe5b1091dab21c71f633917b2d0f9997164eae64e5628861cf34392f0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
