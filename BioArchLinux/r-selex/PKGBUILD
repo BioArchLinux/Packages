@@ -4,7 +4,7 @@
 _pkgname=SELEX
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Functions for analyzing SELEX-seq data'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-rjava
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('562326d6c80fa64a6ade33f8bae222f08a888b0cbe2d6105e82af8a5bb00db73')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
