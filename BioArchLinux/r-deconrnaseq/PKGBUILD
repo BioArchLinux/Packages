@@ -3,7 +3,7 @@
 _pkgname=DeconRNASeq
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='Deconvolution of Heterogeneous Tissue Samples for mRNA-Seq data'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-pcamethods
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5bf34cb0ad1d9394fc0e9eb84cf672ab219ca0bb7095b16b606592874ba7a9ab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
