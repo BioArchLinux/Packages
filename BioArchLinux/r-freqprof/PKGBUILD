@@ -3,7 +3,7 @@
 _pkgname=FreqProf
 _pkgver=0.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.0.1
 pkgrel=1
 pkgdesc='Frequency Profiles Computing and Plotting'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-shiny
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a409b4e24b302e9aa9d41833f4935177639f7606aad6b299834f0b5a061116fb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
