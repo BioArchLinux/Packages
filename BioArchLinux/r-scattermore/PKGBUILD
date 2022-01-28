@@ -4,7 +4,7 @@ _pkgname=scattermore
 _pkgver=0.7
 pkgname=r-${_pkgname,,}
 pkgver=0.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Scatterplots with More Points'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
