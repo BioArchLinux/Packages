@@ -3,7 +3,7 @@
 _pkgname=GWAS.BAYES
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='GWAS for Selfing Species'
 arch=('x86_64')
@@ -29,7 +29,7 @@ optdepends=(
   r-rrblup
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3e7784cb34b7d8e9a83b7cab880ca9305f6e48dc5e03335950f81444f4f32177')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
