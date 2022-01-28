@@ -4,7 +4,7 @@ _pkgname=UpSetR
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A More Scalable Alternative to Venn and Euler Diagrams for Visualizing Intersecting Sets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
