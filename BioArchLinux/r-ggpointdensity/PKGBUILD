@@ -4,7 +4,7 @@ _pkgname=ggpointdensity
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A Cross Between a 2D Density Plot and a Scatter Plot'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
