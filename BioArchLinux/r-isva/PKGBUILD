@@ -3,7 +3,7 @@
 _pkgname=isva
 _pkgver=1.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.9
 pkgrel=1
 pkgdesc='Independent Surrogate Variable Analysis'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-qvalue
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9fd016e0b34034d271d45f8a0d0db62780bf0187112e45f610aa9237014e1d17')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
