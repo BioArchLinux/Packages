@@ -3,7 +3,7 @@
 _pkgname=Rnits
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='R Normalization and Inference of Time Series data'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0be0d3d4c29f24ff0bec9cb4bd0c81776f87a735ad568ab4a159f9093007ef73')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
