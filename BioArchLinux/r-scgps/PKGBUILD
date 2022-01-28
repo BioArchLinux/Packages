@@ -5,7 +5,7 @@ _pkgname=scGPS
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A complete analysis of single cell subpopulations, from identifying subpopulations to analysing their relationship (scGPS = single cell Global Predictions of Subpopulation)'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
