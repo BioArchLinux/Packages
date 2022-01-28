@@ -4,7 +4,7 @@ _pkgname=speaq
 _pkgver=2.6.1
 pkgname=r-${_pkgname,,}
 pkgver=2.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools for Nuclear Magnetic Resonance (NMR) Spectra Alignment, Peak Based Processing, Quantitative Analysis and Visualizations'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
