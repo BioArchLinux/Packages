@@ -4,7 +4,7 @@ _pkgname=pheatmap
 _pkgver=1.0.12
 pkgname=r-${_pkgname,,}
 pkgver=1.0.12
-pkgrel=1
+pkgrel=2
 pkgdesc='Pretty Heatmaps'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
