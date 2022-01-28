@@ -3,7 +3,7 @@
 _pkgname=scHOT
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='single-cell higher order testing'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-scattermore
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5ae8c122309f214ccc81b3767ccbb2c5009bfacfaa07bcb6a1b2bc34807018a1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
