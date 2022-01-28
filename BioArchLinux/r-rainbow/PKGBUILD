@@ -3,7 +3,7 @@
 _pkgname=rainbow
 _pkgver=3.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.6
 pkgrel=1
 pkgdesc='Bagplots, Boxplots and Rainbow Plots for Functional Data'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-forecast
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('63d1246f88a498f3db0321b46a552163631b288a25b24400935db41326636e87')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
