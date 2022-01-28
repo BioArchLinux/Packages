@@ -4,7 +4,7 @@ _pkgname=rcdklibs
 _pkgver=2.3
 pkgname=r-${_pkgname,,}
 pkgver=2.3
-pkgrel=1
+pkgrel=2
 pkgdesc='The CDK Libraries Packaged for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
