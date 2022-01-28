@@ -4,7 +4,7 @@ _pkgname=biclust
 _pkgver=2.0.3
 pkgname=r-${_pkgname,,}
 pkgver=2.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc='BiCluster Algorithms'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
