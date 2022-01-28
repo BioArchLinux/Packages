@@ -3,7 +3,7 @@
 _pkgname=HPiP
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Host-Pathogen Interaction Prediction'
 arch=('any')
@@ -46,7 +46,7 @@ optdepends=(
   r-tools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4544856c02fa72a7d8738858d47f4f5ff9f0f266f1590c46539f887d29f1de71')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
