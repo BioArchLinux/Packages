@@ -3,7 +3,7 @@
 _pkgname=pathVar
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='Methods to Find Pathways with Significantly Different Variability'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   r-mclust
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('428469dd94dea695e6c43ac871a4297cb4aea234aaa2ec4353019c7b82fdeda3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
