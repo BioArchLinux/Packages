@@ -4,7 +4,7 @@ _pkgname=bigstatsr
 _pkgver=1.5.5
 pkgname=r-${_pkgname,,}
 pkgver=1.5.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Statistical Tools for Filebacked Big Matrices'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
