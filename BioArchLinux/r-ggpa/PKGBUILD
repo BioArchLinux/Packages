@@ -4,7 +4,7 @@
 _pkgname=GGPA
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='graph-GPA: A graphical model for prioritizing GWAS results and investigating pleiotropic architecture'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6170851b6ec86d759ef763288f07de97a633d177b34216a0609959ba518ff16a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
