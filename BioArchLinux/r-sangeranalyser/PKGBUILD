@@ -3,7 +3,7 @@
 _pkgname=sangeranalyseR
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='sangeranalyseR: a suite of functions for the analysis of Sanger sequence data in R'
 arch=('any')
@@ -41,7 +41,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cdc3a80246fcc3f2a1957b223fa0292a34eae7dff8183c3b6ed35e9851fa7591')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
