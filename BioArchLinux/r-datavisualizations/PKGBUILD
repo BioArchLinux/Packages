@@ -5,7 +5,7 @@ _pkgname=DataVisualizations
 _pkgver=1.2.2
 pkgname=r-${_pkgname,,}
 pkgver=1.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Visualizations of High-Dimensional Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
