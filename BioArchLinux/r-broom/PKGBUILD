@@ -4,7 +4,7 @@ _pkgname=broom
 _pkgver=0.7.11
 pkgname=r-${_pkgname,,}
 pkgver=0.7.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Convert Statistical Objects into Tidy Tibbles'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
