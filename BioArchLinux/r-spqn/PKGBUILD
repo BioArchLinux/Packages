@@ -3,7 +3,7 @@
 _pkgname=spqn
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Spatial quantile normalization'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-tools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0838e1f3711020a1e4eb4f2da1739f27544b5e410cbfe46dba38eb47f8412b20')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
