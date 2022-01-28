@@ -3,7 +3,7 @@
 _pkgname=chromstaR
 _pkgver=1.20.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.2
 pkgrel=1
 pkgdesc='Combinatorial and Differential Chromatin State Analysis for ChIP-Seq Data'
 arch=('x86_64')
@@ -33,7 +33,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('587a6e369b4daf54f819e0572525122b43041d82ee693a2c813749627faf6caa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
