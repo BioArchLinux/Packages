@@ -5,7 +5,7 @@ _pkgname=RWekajars
 _pkgver=3.9.3-2
 pkgname=r-${_pkgname,,}
 pkgver=3.9.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='R/Weka Interface Jars'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
