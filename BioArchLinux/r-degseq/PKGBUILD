@@ -3,7 +3,7 @@
 _pkgname=DEGseq
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Identify Differentially Expressed Genes from RNA-seq data'
 arch=('x86_64')
@@ -14,7 +14,7 @@ depends=(
   r-qvalue
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5608775f8eab60e63c4539679eeef669d566036c67857c2733229c198eeca6af')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
