@@ -3,7 +3,7 @@
 _pkgname=switchde
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Switch-like differential expression across single-cell trajectories'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fbb8f589b21735f4ac723f98272c096b2f84130207fd3bd86bcdfe22f92f01d9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
