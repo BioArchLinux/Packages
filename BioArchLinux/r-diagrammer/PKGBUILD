@@ -4,7 +4,7 @@ _pkgname=DiagrammeR
 _pkgver=1.0.8
 pkgname=r-${_pkgname,,}
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Graph/Network Visualization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
