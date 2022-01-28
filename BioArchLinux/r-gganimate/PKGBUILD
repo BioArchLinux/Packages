@@ -4,7 +4,7 @@ _pkgname=gganimate
 _pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=1.0.7
-pkgrel=1
+pkgrel=2
 pkgdesc='A Grammar of Animated Graphics'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
