@@ -3,7 +3,7 @@
 _pkgname=SummarizedBenchmark
 _pkgver=2.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.12.0
 pkgrel=1
 pkgdesc='Classes and methods for performing benchmark comparisons'
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-tximport
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bc4f1d827587706cf816ddacbe6972c8be0cac9c1c4512013d7bfdb13f248dee')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
