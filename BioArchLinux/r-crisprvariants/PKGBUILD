@@ -3,7 +3,7 @@
 _pkgname=CrispRVariants
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Tools for counting and visualising mutations in a target location'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d18ce20f1d11c9deb1dc8f9e9b97cdf1824e42c173bfd8cd4691a2ef00d3794b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
