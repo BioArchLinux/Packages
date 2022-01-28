@@ -4,7 +4,7 @@ _pkgname=survMisc
 _pkgver=0.5.5
 pkgname=r-${_pkgname,,}
 pkgver=0.5.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Miscellaneous Functions for Survival Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
