@@ -3,7 +3,7 @@
 _pkgname=trigger
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Transcriptional Regulatory Inference from Genetics of Gene ExpRession'
 arch=('x86_64')
@@ -17,7 +17,7 @@ depends=(
   r-sva
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2e30496212efbae702cf23527560d3830dc2cfb698ac94e9c0e2c26dfcef3447')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
