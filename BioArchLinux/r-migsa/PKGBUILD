@@ -3,7 +3,7 @@
 _pkgname=MIGSA
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='Massive and Integrative Gene Set Analysis'
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0e0a28b5d717bda755e340901a719b78ddbb758560b85c20d509af9b46fe348e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
