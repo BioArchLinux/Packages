@@ -3,7 +3,7 @@
 _pkgname=scater
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Single-Cell Analysis Toolkit for Gene Expression Data in R'
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('afbdb75aa1f72228a547c47751d82e963316333f824a0a882a99755ef94d914c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
