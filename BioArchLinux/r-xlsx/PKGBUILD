@@ -5,7 +5,7 @@ _pkgname=xlsx
 _pkgver=0.6.5
 pkgname=r-${_pkgname,,}
 pkgver=0.6.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Read, Write, Format Excel 2007 and Excel 97/2000/XP/2003 Files'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
