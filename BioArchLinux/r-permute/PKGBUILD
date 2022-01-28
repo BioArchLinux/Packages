@@ -4,7 +4,7 @@ _pkgname=permute
 _pkgver=0.9-7
 pkgname=r-${_pkgname,,}
 pkgver=0.9.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Functions for Generating Restricted Permutations of Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
