@@ -4,7 +4,7 @@ _pkgname=modelr
 _pkgver=0.1.8
 pkgname=r-${_pkgname,,}
 pkgver=0.1.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Modelling Functions that Work with the Pipe'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
