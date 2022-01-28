@@ -3,7 +3,7 @@
 _pkgname=VplotR
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='Set of tools to make V-plots and compute footprint profiles'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-txdb.scerevisiae.ucsc.saccer3.sgdgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e6ad99847da98fd095bdea70adebdf2a10beaf3418239d0737a457dfb13d0e2a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
