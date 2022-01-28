@@ -3,7 +3,7 @@
 _pkgname=r3Cseq
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Analysis of Chromosome Conformation Capture and Next-generation Sequencing (3C-seq)'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-bsgenome.rnorvegicus.ucsc.rn5.masked
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4d54824ea7b163717f395e229c7d26a6e345f7fd9eecaf19e4f99f8ba2904c1a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
