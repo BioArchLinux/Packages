@@ -4,7 +4,7 @@ _pkgname=ggalt
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Extra Coordinate Systems, 'Geoms', Statistical Transformations, Scales and Fonts for 'ggplot2'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
