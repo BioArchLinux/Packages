@@ -4,7 +4,7 @@ _pkgname=enrichR
 _pkgver=3.0
 pkgname=r-${_pkgname,,}
 pkgver=3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Provides an R Interface to 'Enrichr'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
