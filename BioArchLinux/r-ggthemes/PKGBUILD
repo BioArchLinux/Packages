@@ -4,7 +4,7 @@ _pkgname=ggthemes
 _pkgver=4.2.4
 pkgname=r-${_pkgname,,}
 pkgver=4.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Extra Themes, Scales and Geoms for 'ggplot2'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
