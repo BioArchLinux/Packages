@@ -4,7 +4,7 @@ _pkgname=ggplotify
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Convert Plot to 'grob' or 'ggplot' Object"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
