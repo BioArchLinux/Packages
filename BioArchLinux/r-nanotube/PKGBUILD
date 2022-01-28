@@ -3,7 +3,7 @@
 _pkgname=NanoTube
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='An Easy Pipeline for NanoString nCounter Data Analysis'
 arch=('any')
@@ -33,7 +33,7 @@ optdepends=(
   r-xlsx
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('afc3673b260be10284ea9296f70b3ec16c62e3b4f0084b4d0cee4d747cf9d573')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
