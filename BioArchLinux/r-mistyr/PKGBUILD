@@ -3,7 +3,7 @@
 _pkgname=mistyR
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.1
 pkgrel=1
 pkgdesc='Multiview Intercellular SpaTial modeling framework'
 arch=('any')
@@ -47,7 +47,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c3dbae3fdcc3652317f166744cc5a93ac33a82f451ff5bddd0512b6043437fa8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
