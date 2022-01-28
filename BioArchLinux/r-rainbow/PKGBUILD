@@ -4,7 +4,7 @@ _pkgname=rainbow
 _pkgver=3.6
 pkgname=r-${_pkgname,,}
 pkgver=3.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Bagplots, Boxplots and Rainbow Plots for Functional Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
