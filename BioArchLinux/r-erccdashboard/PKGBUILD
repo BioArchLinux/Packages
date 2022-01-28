@@ -3,7 +3,7 @@
 _pkgname=erccdashboard
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Assess Differential Gene Expression Experiments with ERCC Controls'
 arch=('any')
@@ -26,7 +26,7 @@ depends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('96ee37dbeae75cf70d2e887895ee283194c754f7f62e1dfb005f1e60ab2856c2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
