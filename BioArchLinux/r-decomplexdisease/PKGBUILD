@@ -3,7 +3,7 @@
 _pkgname=DEComplexDisease
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='A tool for differential expression analysis and DEGs based investigation to complex diseases by bi-clustering analysis'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3169f1116c4abf41c2ba7a05ff0ccd429212f1de5f8a6557eed1559cc1e17561')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
