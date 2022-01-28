@@ -4,7 +4,7 @@ _pkgname=superheat
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A Graphical Tool for Exploring Complex Datasets Using Heatmaps'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
