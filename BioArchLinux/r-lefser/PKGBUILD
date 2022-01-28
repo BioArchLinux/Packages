@@ -3,7 +3,7 @@
 _pkgname=lefser
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='R implementation of the LEfSE method for microbiome biomarker discovery'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-withr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('db75d4ed79ac059e144348f7975028299745aca70aa1df65835837040f8dc141')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
