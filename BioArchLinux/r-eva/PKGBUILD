@@ -3,7 +3,7 @@
 _pkgname=eva
 _pkgver=0.2.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.6
 pkgrel=1
 pkgdesc='Extreme Value Analysis with Goodness-of-Fit Testing'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-spatialextremes
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c2b8d972a6229bfdcd529576bd5f056c10343eed7b42ee876129f0d51ecfb0ac')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
