@@ -3,7 +3,7 @@
 _pkgname=DeMixT
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Cell type-specific deconvolution of heterogeneous tumor samples with two or three components using expression data from RNAseq or microarray platforms'
 arch=('x86_64')
@@ -22,7 +22,7 @@ depends=(
   r-truncdist
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('96c6ce6033001d9f8736062017e26c64b318836208a086b3191c1d042c937374')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
