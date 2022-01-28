@@ -3,7 +3,7 @@
 _pkgname=TCC
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='TCC: Differential expression analysis for tag count data with robust normalization strategies'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4dbffb399007aaca032906ba5bd08f1a98ebcb734288a14101a61f9db7fb2809')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
