@@ -5,7 +5,7 @@ _pkgname=rJava
 _pkgver=1.0-6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=4
+pkgrel=5
 pkgdesc='Low-Level R to Java Interface'
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
