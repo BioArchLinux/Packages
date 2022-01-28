@@ -4,7 +4,7 @@ _pkgname=mrfDepth
 _pkgver=1.0.13
 pkgname=r-${_pkgname,,}
 pkgver=1.0.13
-pkgrel=1
+pkgrel=2
 pkgdesc='Depth Measures in Multivariate, Regression and Functional Settings'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
