@@ -4,7 +4,7 @@ _pkgname=gridExtra
 _pkgver=2.3
 pkgname=r-${_pkgname,,}
 pkgver=2.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Miscellaneous Functions for "Grid" Graphics'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
