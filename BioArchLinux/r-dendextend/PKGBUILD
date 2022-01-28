@@ -4,7 +4,7 @@ _pkgname=dendextend
 _pkgver=1.15.2
 pkgname=r-${_pkgname,,}
 pkgver=1.15.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Extending 'dendrogram' Functionality in R"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
