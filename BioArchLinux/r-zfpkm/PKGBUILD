@@ -3,7 +3,7 @@
 _pkgname=zFPKM
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='A suite of functions to facilitate zFPKM transformations'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('89bb2d7ed9380ef49f9f6142fedc90f8d23a4a899a1a10f9ac307b5ff32e603a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
