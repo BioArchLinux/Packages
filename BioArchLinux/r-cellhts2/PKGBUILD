@@ -3,7 +3,7 @@
 _pkgname=cellHTS2
 _pkgver=2.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.58.0
 pkgrel=1
 pkgdesc='Analysis of cell-based screens - revised version of cellHTS'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-ggplot2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('10aabfded1ca633e1db8cb606ca9ad07e4503f5ae0d61a08745d9dd8918bbb40')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
