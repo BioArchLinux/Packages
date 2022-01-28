@@ -4,7 +4,7 @@
 _pkgname=GPA
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='GPA (Genetic analysis incorporating Pleiotropy and Annotation)'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-gpaexample
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0972dabff25495ea158438a376ab09f07ffc37ce5d2012c0519c1868185cc044')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
