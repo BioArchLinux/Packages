@@ -4,7 +4,7 @@ _pkgname=egg
 _pkgver=0.4.5
 pkgname=r-${_pkgname,,}
 pkgver=0.4.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Extensions for 'ggplot2': Custom Geom, Custom Themes, Plot Alignment, Labelled Panels, Symmetric Scales, and Fixed Panel Size"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
