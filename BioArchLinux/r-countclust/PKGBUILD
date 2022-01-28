@@ -3,7 +3,7 @@
 _pkgname=CountClust
 _pkgver=1.21.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.21.0
 pkgrel=1
 pkgdesc='Clustering and Visualizing RNA-Seq Expression Data using Grade of Membership Models'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('580fce08ae67513398fc6c37b3e8c6341201b928bb23589c90e07379a74cfd9e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
