@@ -3,7 +3,7 @@
 _pkgname=sojourner
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='Statistical analysis of single molecule trajectories'
 arch=('any')
@@ -42,7 +42,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6c315177d634e621162ab67afc91dbe00d3b92ee45fddc1368bbdabf0d7ca151')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
