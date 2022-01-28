@@ -3,7 +3,7 @@
 _pkgname=ggplot.multistats
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Multiple Summary Statistics for Binned Stats/Geometries'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-scales
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('34825fa78bd7008ea27affc54c50e9eaca01fc0cf5bccbd92288b06d9072dfa9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
