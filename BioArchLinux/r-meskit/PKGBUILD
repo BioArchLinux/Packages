@@ -3,7 +3,7 @@
 _pkgname=MesKit
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='A tool kit for dissecting cancer evolution from multi-region derived tumor biopsies via somatic alterations'
 arch=('any')
@@ -40,7 +40,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6ee3c366b1992395e1a4b792d9470c0edc8d909c3bf6f56bd2c36cd4799ee5af')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
