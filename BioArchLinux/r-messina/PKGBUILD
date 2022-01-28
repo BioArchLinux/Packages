@@ -3,7 +3,7 @@
 _pkgname=messina
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Single-gene classifiers and outlier-resistant detection of differential expression for two-group and survival problems'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('098baf5ddb2b5468068a934b050d21dabdccbc6f09b2a3eca4c6ca8231a100cc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
