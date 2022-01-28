@@ -4,7 +4,7 @@ _pkgname=Ecume
 _pkgver=0.9.1
 pkgname=r-${_pkgname,,}
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Equality of 2 (or k) Continuous Univariate and Multivariate Distributions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
