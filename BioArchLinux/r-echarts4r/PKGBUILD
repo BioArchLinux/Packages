@@ -4,7 +4,7 @@ _pkgname=echarts4r
 _pkgver=0.4.3
 pkgname=r-${_pkgname,,}
 pkgver=0.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Create Interactive Graphs with 'Echarts JavaScript' Version 5"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
