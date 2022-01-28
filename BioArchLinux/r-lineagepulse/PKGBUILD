@@ -3,7 +3,7 @@
 _pkgname=LineagePulse
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Differential expression analysis and model fitting for single-cell RNA-seq data'
 arch=('any')
@@ -22,7 +22,7 @@ depends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8cb04fd3f297e04f7c32c5f5420689ae749805b0ef4d2292190cd45b5cff9579')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
