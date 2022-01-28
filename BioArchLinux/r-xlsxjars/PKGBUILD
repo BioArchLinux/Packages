@@ -4,7 +4,7 @@ _pkgname=xlsxjars
 _pkgver=0.6.1
 pkgname=r-${_pkgname,,}
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Package required POI jars for the xlsx package'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
