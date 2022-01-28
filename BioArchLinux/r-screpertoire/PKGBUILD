@@ -3,7 +3,7 @@
 _pkgname=scRepertoire
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='A toolkit for single-cell immune receptor profiling'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-seurat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('54435528d12c6219e2b3dc82618f93630bf8cb732006a1bec2ab5fb0e938349e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
