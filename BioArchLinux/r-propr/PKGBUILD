@@ -4,7 +4,7 @@ _pkgname=propr
 _pkgver=4.2.6
 pkgname=r-${_pkgname,,}
 pkgver=4.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Calculating Proportionality Between Vectors of Compositional Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
