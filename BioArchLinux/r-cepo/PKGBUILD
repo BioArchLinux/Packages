@@ -3,7 +3,7 @@
 _pkgname=Cepo
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Cepo for the identification of differentially stable genes'
 arch=('any')
@@ -39,7 +39,7 @@ optdepends=(
   r-upsetr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c7ccb3f619776f8822cef869538deb04f29d9c563dd401d7e1ba4ae3ee5d3024')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
