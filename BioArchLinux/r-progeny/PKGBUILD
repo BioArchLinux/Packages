@@ -3,7 +3,7 @@
 _pkgname=progeny
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='Pathway RespOnsive GENes for activity inference from gene expression'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-tibble
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3e491303330c11d40ff28d2bc00dcf2c8a07ed312d72b324fe531db44b2c197e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
