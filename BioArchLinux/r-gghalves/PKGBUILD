@@ -4,7 +4,7 @@ _pkgname=gghalves
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
 pkgver=0.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Compose Half-Half Plots Using Your Favourite Geoms'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
