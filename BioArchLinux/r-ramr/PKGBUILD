@@ -3,7 +3,7 @@
 _pkgname=ramr
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Detection of Rare Aberrantly Methylated Regions in Array and NGS Data'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('55ebac634989ba808a00877131ba06ac9a35aeee2becd9f12e6d0e12740b2fdf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
