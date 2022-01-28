@@ -4,7 +4,7 @@
 _pkgname=fishpond
 _pkgver=2.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.1
 pkgrel=1
 pkgdesc='Fishpond: differential transcript and gene expression with inferential replicates'
 arch=('x86_64')
@@ -38,7 +38,7 @@ optdepends=(
   r-tximportdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5f1f84dd675a320bb00e149c631ef5df97a04976fbf780d497dbdcc34851fa14')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
