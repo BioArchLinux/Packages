@@ -3,7 +3,7 @@
 _pkgname=ggstar
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.3
 pkgrel=1
 pkgdesc="Multiple Geometric Shape Point Layer for 'ggplot2'"
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('23df22864a38321346f75a059d8266df28c4789ff40af3958e02b508bac62635')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
