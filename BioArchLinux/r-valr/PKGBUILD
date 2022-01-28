@@ -5,7 +5,7 @@ _pkgname=valr
 _pkgver=0.6.4
 pkgname=r-${_pkgname,,}
 pkgver=0.6.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Genome Interval Arithmetic'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
