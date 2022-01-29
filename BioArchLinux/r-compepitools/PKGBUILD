@@ -3,7 +3,7 @@
 _pkgname=compEpiTools
 _pkgver=1.27.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.27.0
 pkgrel=1
 pkgdesc='Tools for computational epigenomics'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-txdb.mmusculus.ucsc.mm9.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c52b61014a33a4d6cfd629855ddafaa6dba0e1f2a76422727a3c248a4ff36342')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
