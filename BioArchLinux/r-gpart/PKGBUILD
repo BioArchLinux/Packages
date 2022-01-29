@@ -4,7 +4,7 @@
 _pkgname=gpart
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Human genome partitioning of dense sequencing data by identifying haplotype blocks'
 arch=('x86_64')
@@ -34,7 +34,8 @@ optdepends=(
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix_pi.patch")
-sha256sums=('a')
+sha256sums=('3a169ed88adbcb3576a7320dd564ddf6ff2ddfd137d6eb9a494b2dffb03f8e83'
+            '033774f380e8c8edbe056b8dd2b076bcd408895a4ecaa75eb6da5e1c99caae70')
 
 prepare() {
   cd "${srcdir}/${_pkgname}"
