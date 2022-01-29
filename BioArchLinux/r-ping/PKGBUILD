@@ -3,7 +3,7 @@
 _pkgname=PING
 _pkgver=2.38.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.38.0
 pkgrel=1
 pkgdesc='Probabilistic inference for Nucleosome Positioning with MNase-based or Sonicated Short-read Data'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-shortread
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e157b25cb96e5bb850eaf32b17a2899d0d447621bf4ca279f61e872074a0a559')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
