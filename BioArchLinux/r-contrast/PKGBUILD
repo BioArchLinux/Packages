@@ -3,7 +3,7 @@
 _pkgname=contrast
 _pkgver=0.24.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.24.1
 pkgrel=1
 pkgdesc='A Collection of Contrast Methods'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('589103633eb9d5958152189f52ba04bbe055376e31bfdf6f597f788aee612984')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
