@@ -3,7 +3,7 @@
 _pkgname=SeqVarTools
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Tools for variant data'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c6d060801bb22b8faf4685a85e1aa761a1969bc9777af3afdaec5ed9c6c0b12b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
