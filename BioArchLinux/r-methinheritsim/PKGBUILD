@@ -3,7 +3,7 @@
 _pkgname=methInheritSim
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='Simulating Whole-Genome Inherited Bisulphite Sequencing Data'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('29bb8aa8a1768b50d5f2cc40c448849f437f0e3989910ad060cd09593650e445')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
