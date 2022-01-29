@@ -3,7 +3,7 @@
 _pkgname=HardyWeinberg
 _pkgver=1.7.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.7.4
 pkgrel=1
 pkgdesc='Statistical Tests and Graphics for Hardy-Weinberg Equilibrium'
 arch=('x86_64')
@@ -16,7 +16,7 @@ depends=(
   r-rsolnp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2b22316639b829a286521a59e11e07caf839f15b239ead7feb6576acd0fbc387')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
