@@ -3,7 +3,7 @@
 _pkgname=multiSight
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Multi-omics Classification, Functional Enrichment and Network Inference analysis'
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9ca8a5d20bfe91a8d818231d81c8f2f8efb3c6073545c35c02ae66ad65a3f219')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
