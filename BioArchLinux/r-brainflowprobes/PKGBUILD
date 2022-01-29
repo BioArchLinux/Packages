@@ -3,7 +3,7 @@
 _pkgname=brainflowprobes
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='Plots and annotation for choosing BrainFlow target probe sequence'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5c4f1d561cc5bc8f161b463a736505fefb38676203635ea110344d3a519e34f8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
