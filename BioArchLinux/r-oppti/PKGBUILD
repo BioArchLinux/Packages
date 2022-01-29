@@ -3,7 +3,7 @@
 _pkgname=oppti
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='Outlier Protein and Phosphosite Target Identifier'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-markdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2200a89d3298db8b28b23d3e55bc71f878283bbfdce4f2b2d6ce0d9f699a7a67')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
