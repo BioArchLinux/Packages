@@ -3,7 +3,7 @@
 _pkgname=skewr
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc="Visualize Intensities Produced by Illumina's Human Methylation 450k BeadChip"
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-minfidata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9d88d0b217a29cf5805868d168fdd714c63766ebfda53b3cfc495b3a7d58ae82')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
