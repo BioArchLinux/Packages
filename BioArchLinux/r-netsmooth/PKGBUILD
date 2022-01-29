@@ -3,7 +3,7 @@
 _pkgname=netSmooth
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Network smoothing for scRNAseq'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('207664398f9a3a938b0245ce0565a2e9cb8c0bc8abf9f6e68ba96e48ef426ea1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
