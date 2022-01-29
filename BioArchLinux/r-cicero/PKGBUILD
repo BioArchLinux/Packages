@@ -3,7 +3,7 @@
 _pkgname=cicero
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Precict cis-co-accessibility from single-cell chromatin accessibility data'
 arch=('any')
@@ -43,7 +43,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a7b6ef0651119c88ec25976bc80c22bc660ae0152a57379fc9973351a74d86b9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
