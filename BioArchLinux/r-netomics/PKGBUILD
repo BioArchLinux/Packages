@@ -3,7 +3,7 @@
 _pkgname=netOmics
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Multi-Omics (time-course) network-based integration and interpretation'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-timeomics
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('06dd8d36f82c0dba08805a7efbbde157903cee01e7a547873ea0d7fc5e710657')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
