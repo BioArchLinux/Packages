@@ -3,7 +3,7 @@
 _pkgname=RNAinteract
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='Estimate Pairwise Interactions from multidimensional features'
 arch=('any')
@@ -26,7 +26,7 @@ depends=(
   r-splots
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('11a70cb9ba292d1a30f5f305fc77b9cc405cbc680c2eabedad94f995a971295b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
