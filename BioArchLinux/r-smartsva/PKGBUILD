@@ -3,7 +3,7 @@
 _pkgname=SmartSVA
 _pkgver=0.1.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.3
 pkgrel=1
 pkgdesc='Fast and Robust Surrogate Variable Analysis'
 arch=('x86_64')
@@ -18,7 +18,7 @@ depends=(
   r-sva
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d7925743d04bd52dee575a477cc7e8395fedb08f5dbb8427e61e3d6dbfd04881')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
