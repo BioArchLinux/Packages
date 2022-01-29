@@ -3,7 +3,7 @@
 _pkgname=quantsmooth
 _pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.60.0
 pkgrel=1
 pkgdesc='Quantile smoothing and genomic visualization of array data'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-quantreg
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1aa5a93275c052a426ce414a63145cb433723d0911d85eeb29050234e1aefa8c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
