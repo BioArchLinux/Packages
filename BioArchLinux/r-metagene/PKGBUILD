@@ -3,7 +3,7 @@
 _pkgname=metagene
 _pkgver=2.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.26.0
 pkgrel=1
 pkgdesc='A package to produce metagene plots'
 arch=('any')
@@ -41,7 +41,7 @@ optdepends=(
   r-similarpeak
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('67c78329d2222509ab6d1ea95fa933cf2228e3cf712c97783a61e12c38cbd7f4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
