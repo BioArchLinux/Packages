@@ -3,7 +3,7 @@
 _pkgname=XCIR
 _pkgver=1.7.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.7.0
 pkgrel=1
 pkgdesc='XCI-inference'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9cd249f510c3cd3c29074a5f9a29e18a7fd365e433f9050d983a6c1e00bf8258')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
