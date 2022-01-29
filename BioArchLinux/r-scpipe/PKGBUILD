@@ -4,7 +4,7 @@
 _pkgname=scPipe
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='pipeline for single cell RNA-seq data analysis'
 arch=('x86_64')
@@ -49,7 +49,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b11a7b6edace615f72c1dd2e11559e25533add220bf4b5681ba5e75233337432')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
