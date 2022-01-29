@@ -3,7 +3,7 @@
 _pkgname=ChIC
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Quality Control Pipeline for ChIP-Seq Data'
 arch=('any')
@@ -25,7 +25,7 @@ depends=(
   r-spp
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fe9605ddcd7bddf179709e1245cdab532cabf112784445e8c1de90a54cc5a235')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
