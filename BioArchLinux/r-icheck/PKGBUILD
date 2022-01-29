@@ -3,7 +3,7 @@
 _pkgname=iCheck
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='QC Pipeline and Data Analysis Tools for High-Dimensional Illumina mRNA Expression Data'
 arch=('any')
@@ -24,7 +24,7 @@ depends=(
   r-scatterplot3d
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('856a97a64ef558537b71d17afc85993eb4a09ada7f42f4a1f5491e238ab4ce1a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
