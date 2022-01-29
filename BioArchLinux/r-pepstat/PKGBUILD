@@ -3,7 +3,7 @@
 _pkgname=pepStat
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Statistical analysis of peptide microarrays'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-shiny
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5d711f7c1fdc14636a158ddd4fa002d91df7b25ab16e839b65184a5b6984651e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
