@@ -3,7 +3,7 @@
 _pkgname=GenVisR
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Genomic Visualizations in R'
 arch=('any')
@@ -49,7 +49,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6dbcdf1e6fdbff3ac9b7095ef538ca9467162bd763bcd45ac48044172205c40a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
