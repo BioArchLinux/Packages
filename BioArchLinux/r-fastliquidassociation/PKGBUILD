@@ -3,7 +3,7 @@
 _pkgname=fastLiquidAssociation
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='functions for genome-wide application of Liquid Association'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-yeastcc
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c78884588f74c385fdaab0a6a457ab68081ffc42fe6f415b37bef3079497ebbb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
