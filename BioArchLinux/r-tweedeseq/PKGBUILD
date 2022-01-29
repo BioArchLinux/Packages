@@ -3,7 +3,7 @@
 _pkgname=tweeDEseq
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='RNA-seq data analysis using the Poisson-Tweedie family of distributions'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('90e8c2c3f5ee22eb79fc132cf55a91fee2fb8960aadffe50a9aee0d24a040d77')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
