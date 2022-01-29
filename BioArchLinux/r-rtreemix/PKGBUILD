@@ -3,7 +3,7 @@
 _pkgname=Rtreemix
 _pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.56.0
 pkgrel=1
 pkgdesc='Rtreemix: Mutagenetic trees mixture models.'
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-rgraphviz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('017210091d11106a66f7ed7d575dd7b29415c0c3479e9e28ec2b15c091477996')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
