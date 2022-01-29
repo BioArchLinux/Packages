@@ -3,7 +3,7 @@
 _pkgname=MatrixRider
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Obtain total affinity and occupancies for binding site matrices on a given sequence'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('823d6daa4c42cbf01cd301e466810298990b806d15a6e11faa0e2b7eeae06057')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
