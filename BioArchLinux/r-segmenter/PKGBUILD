@@ -3,7 +3,7 @@
 _pkgname=segmenter
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Perform Chromatin Segmentation Analysis in R by Calling ChromHMM'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg18.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4447b73fd63f888bb4155158aece66e5e6dcfb4e388478bbec79e488272e7a14')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
