@@ -3,7 +3,7 @@
 _pkgname=AgiMicroRna
 _pkgver=2.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.44.0
 pkgrel=1
 pkgdesc='Processing and Differential Expression Analysis of Agilent microRNA chips'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-marray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d7d422a6bb89d6d12acf2c7d7e0fc14d71b1245c3afb4c8b49f7fb8e53a6a916')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
