@@ -3,7 +3,7 @@
 _pkgname=missMethyl
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Analysing Illumina HumanMethylation BeadChip Data'
 arch=('any')
@@ -43,7 +43,7 @@ optdepends=(
   r-tweedeseqcountdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fc6ed50e00f2f7fc4e7d2787370033cf0a9a2d3a483499fa8d2e2b2da0e8d143')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
