@@ -3,7 +3,7 @@
 _pkgname=ggdist
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.1
 pkgrel=1
 pkgdesc='Visualizations of Distributions and Uncertainty'
 arch=('any')
@@ -43,7 +43,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('caa918f4d4cfbb09415c951cf598cea50bae60a7a70507dc64697a206f1c0b3d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
