@@ -3,7 +3,7 @@
 _pkgname=ADaCGH2
 _pkgver=2.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.34.0
 pkgrel=1
 pkgdesc='Analysis of big data from aCGH experiments using parallel computing and ff objects'
 arch=('x86_64')
@@ -28,7 +28,7 @@ optdepends=(
   r-rmpi
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('544d969f5c9d6ed3c7e8915f0c44ed34473470cfcbfe17211750c43174e30128')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
