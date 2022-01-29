@@ -3,7 +3,7 @@
 _pkgname=miloR
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Differential neighbourhood abundance testing on a graph'
 arch=('any')
@@ -53,7 +53,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('24b5379fefb18d388a59905d7b8d05aff00332c76800ec3308bb5603db446ddf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
