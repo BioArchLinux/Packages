@@ -3,7 +3,7 @@
 _pkgname=REDseq
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Analysis of high-throughput sequencing data processed by restriction enzyme digestion'
 arch=('any')
@@ -21,7 +21,7 @@ depends=(
   r-multtest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('84961eca135b184d524fc39ca574763c5e99833b2f6d739eeb547e0b4ce8cd80')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
