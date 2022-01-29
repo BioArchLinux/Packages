@@ -3,7 +3,7 @@
 _pkgname=ToxicoGx
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='Analysis of Large-Scale Toxico-Genomic Data'
 arch=('any')
@@ -42,7 +42,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b73d0879064b8eaac50c90b9a3403e504f6261f892ab6e60ee721b388c188a50')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
