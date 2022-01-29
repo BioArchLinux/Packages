@@ -3,7 +3,7 @@
 _pkgname=recoup
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='An R package for the creation of complex genomic profile plots'
 arch=('any')
@@ -41,7 +41,7 @@ optdepends=(
   r-zoo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a568441eb34c6c21038027d4d353ccbe1e9fa8a0574a50a6daa62fb2a49c1d03')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
