@@ -3,7 +3,7 @@
 _pkgname=derfinderPlot
 _pkgver=1.28.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.1
 pkgrel=1
 pkgdesc='Plotting functions for derfinder'
 arch=('any')
@@ -40,7 +40,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d15a15de19107642fb57ecb82885d3be765e1af70f1ba6b3616f5085d6263c08')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
