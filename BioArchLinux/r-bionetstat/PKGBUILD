@@ -3,7 +3,7 @@
 _pkgname=BioNetStat
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Biological Network Analysis'
 arch=('any')
@@ -31,7 +31,7 @@ depends=(
   r-yaml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('c8f1ae1942452fc3f78c6edf59bf624626f5252e3e9abf22c91926804847798d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
