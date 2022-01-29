@@ -3,7 +3,7 @@
 _pkgname=Mulcom
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.0
 pkgrel=1
 pkgdesc='Calculates Mulcom test'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-fields
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('45fa6bb4f87f23234a396410733debaee7ac32f1effb58fcfadf212440c40368')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
