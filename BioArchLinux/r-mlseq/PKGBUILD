@@ -3,7 +3,7 @@
 _pkgname=MLSeq
 _pkgver=2.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.12.0
 pkgrel=1
 pkgdesc='Machine Learning Interface for RNA-Seq Data'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d23b06d566fd6f5ea3013478e7567c02d8213d6cc91e12e9bf6ecebd1613e27c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
