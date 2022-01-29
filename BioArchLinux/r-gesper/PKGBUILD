@@ -3,7 +3,7 @@
 _pkgname=gespeR
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Gene-Specific Phenotype EstimatoR'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d829882f9c0f2ce4eca2dae0b43889abc2a8a5b61b648c1fa2afbabd1401a239')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
