@@ -3,7 +3,7 @@
 _pkgname=proActiv
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='Estimate Promoter Activity from RNA-Seq data'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6f3ab506578696cbdc2c435b582ff0adbca306a19e7dc865f61a0cd03abdd7ca')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
