@@ -3,7 +3,7 @@
 _pkgname=BubbleTree
 _pkgver=2.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.24.0
 pkgrel=1
 pkgdesc='BubbleTree: an intuitive visualization to elucidate tumoral aneuploidy and clonality in somatic mosaicism using next generation sequencing data'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b9f1676b59ceb69136994fef07ae0757fa9f8bea24dfa59ddeaa6a3067136993')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
