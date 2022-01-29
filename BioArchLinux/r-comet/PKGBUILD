@@ -3,7 +3,7 @@
 _pkgname=coMET
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='coMET: visualisation of regional epigenome-wide association scan (EWAS) results and DNA co-methylation patterns'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('64a7a6a8864ac3dc35f1bac83cc7a69dbdd6cfb3a64b5c0ad238e3233a848e58')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
