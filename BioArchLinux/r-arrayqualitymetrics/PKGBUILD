@@ -3,7 +3,7 @@
 _pkgname=arrayQualityMetrics
 _pkgver=3.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.50.0
 pkgrel=1
 pkgdesc='Quality metrics report for microarray data sets'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('deba47a664ddbad6dbb3802ad29b463e02f961fdb2d613200f1ef3b7b16d9d0c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
