@@ -3,7 +3,7 @@
 _pkgname=affycoretools
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Functions useful for those doing repetitive analyses with Affymetrix GeneChips'
 arch=('any')
@@ -40,7 +40,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('80b8916c6b8d2e38f6f81bc95294e56432e3c9f01a07920f7129c62482549eb1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
