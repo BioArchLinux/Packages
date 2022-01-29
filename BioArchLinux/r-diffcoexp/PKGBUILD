@@ -3,7 +3,7 @@
 _pkgname=diffcoexp
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Differential Co-expression Analysis'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-geoquery
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8ad024a027bf3e003989048e2c665011e480801a6cfff7f752f810bb46d46248')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
