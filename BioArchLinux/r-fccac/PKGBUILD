@@ -3,7 +3,7 @@
 _pkgname=fCCAC
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='functional Canonical Correlation Analysis to evaluate Covariance between nucleic acid sequencing datasets'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2e6151e19cf128e039529f7419c85a09bbf4e2bca918f9e69d9125441f9e7337')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
