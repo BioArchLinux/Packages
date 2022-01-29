@@ -3,7 +3,7 @@
 _pkgname=meshes
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='MeSH Enrichment and Semantic analyses'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8f41f051358762f936d665a7b4edf90482fce983a8a418c158f0ee23f1cd8dd7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
