@@ -3,7 +3,7 @@
 _pkgname=Pviz
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Peptide Annotation and Data Visualization using Gviz'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-pepdat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('34887db39f0ce7338f3f82099335cdf4e5baf9d172c525f37368ac67a17dab58')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
