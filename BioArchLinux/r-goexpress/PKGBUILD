@@ -3,7 +3,7 @@
 _pkgname=GOexpress
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Visualise microarray and RNAseq data using gene ontology annotations'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5c6199c7f7e062c7ae6c955a7081b0c1c4bf7a54815c941bd4194a51455f65d7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
