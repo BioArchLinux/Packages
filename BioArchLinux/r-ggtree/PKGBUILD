@@ -3,7 +3,7 @@
 _pkgname=ggtree
 _pkgver=3.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.2.1
 pkgrel=1
 pkgdesc='an R package for visualization of tree and annotation data'
 arch=('any')
@@ -38,7 +38,7 @@ optdepends=(
   r-tibble
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6803a1dd37c6fd86fa1ec7ec6a62c8423676b5f045c45da1b47f127fdb4b6362')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
