@@ -4,7 +4,7 @@
 _pkgname=qrqc
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Quick Read Quality Control'
 arch=('x86_64')
@@ -24,7 +24,7 @@ depends=(
   make
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b4ea4e63f358f86e4074e205139494519b09c8fcb05c2ae977739022a10ed5ae')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
