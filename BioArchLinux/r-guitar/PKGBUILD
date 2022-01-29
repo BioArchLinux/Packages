@@ -3,7 +3,7 @@
 _pkgname=Guitar
 _pkgver=2.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.10.0
 pkgrel=1
 pkgdesc='Guitar'
 arch=('any')
@@ -21,7 +21,7 @@ depends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8985d0bddf326a371d5a790a1a7997662dd99f42888d4da93e07eb5a89925e20')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
