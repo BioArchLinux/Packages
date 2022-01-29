@@ -3,7 +3,7 @@
 _pkgname=enhancerHomologSearch
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Identification of putative mammalian orthologs to given enhancer'
 arch=('x86_64')
@@ -41,7 +41,7 @@ optdepends=(
   r-txdb.mmusculus.ucsc.mm10.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('75d2cee04c5138d9d271e081b1658074ebbf685874aae3242e6ea939c67d1fed')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
