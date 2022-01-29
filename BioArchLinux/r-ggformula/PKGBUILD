@@ -3,7 +3,7 @@
 _pkgname=ggformula
 _pkgver=0.10.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.10.1
 pkgrel=1
 pkgdesc='Formula Interface to the Grammar of Graphics'
 arch=('any')
@@ -47,7 +47,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5743eb25fac8343569ab6f584f5c6d8fff816fad9b2414a1ae10cdad519305de')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
