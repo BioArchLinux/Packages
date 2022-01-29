@@ -3,7 +3,7 @@
 _pkgname=mBPCR
 _pkgver=1.48.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.48.0
 pkgrel=1
 pkgdesc='Bayesian Piecewise Constant Regression for DNA copy number estimation'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('22574c633480cf0c3650d77eb499dea8b2eab0efa524c3e31374ca0e24cd3244')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
