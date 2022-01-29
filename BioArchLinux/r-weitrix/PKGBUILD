@@ -3,7 +3,7 @@
 _pkgname=weitrix
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Tools for matrices with precision weights, test and explore weighted or sparse data'
 arch=('any')
@@ -45,7 +45,7 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8a575b38c8e1df733346835f2971bdfe45480d97932fd1c3ba16bcfe1d8d5a29')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
