@@ -3,7 +3,7 @@
 _pkgname=GISPA
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='GISPA: Method for Gene Integrated Set Profile Analysis'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('58ff6f0a6a7640bd26585754fdf416925015f62d779d6121db57b06df092316c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
