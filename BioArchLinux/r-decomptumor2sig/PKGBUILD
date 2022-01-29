@@ -3,7 +3,7 @@
 _pkgname=decompTumor2Sig
 _pkgver=2.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.10.0
 pkgrel=1
 pkgdesc='Decomposition of individual tumors into mutational signatures by signature refitting'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d720bcf8a43ef1fff4c7b47d227a051e2189146b1bbd6d69fd6a9771f008a988')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
