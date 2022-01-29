@@ -3,7 +3,7 @@
 _pkgname=staRank
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='Stability Ranking'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-cellhts2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('887d2cfa8ed9037d48840d510c84822dac14534a7c367e448b1ac84a0f29ff04')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
