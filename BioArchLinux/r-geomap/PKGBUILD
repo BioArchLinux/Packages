@@ -3,7 +3,7 @@
 _pkgname=GEOmap
 _pkgver=2.4-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.4.4
 pkgrel=1
 pkgdesc='Topographic and Geologic Mapping'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-rfoc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('101f177135514572d2aba44633dae4a870019340cf8570662a9571c61dd86272')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
