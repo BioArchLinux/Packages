@@ -3,7 +3,7 @@
 _pkgname=PureCN
 _pkgver=2.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.1
 pkgrel=1
 pkgdesc='Copy number calling and SNV classification using targeted short read sequencing'
 arch=('any')
@@ -51,7 +51,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('88f28fdb5223e221b300057f16badf75479f23dbddc019e4be2219c5bdd34714')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
