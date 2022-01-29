@@ -4,7 +4,7 @@
 _pkgname=esATAC
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='An Easy-to-use Systematic pipeline for ATACseq data analysis'
 arch=('x86_64')
@@ -53,7 +53,7 @@ optdepends=(
   r-webshot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ce30f3664ec270e8b2b58875d0fbf1a6de43b56773d02c02f08831d82e4893bd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
