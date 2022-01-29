@@ -3,7 +3,7 @@
 _pkgname=flowStats
 _pkgver=4.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.6.0
 pkgrel=1
 pkgdesc='Statistical methods for the analysis of flow cytometry data'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a9e6d149129ec2e7df1992b144e5b8d0fe02dacceaaacead9f7751528dc14e4a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
