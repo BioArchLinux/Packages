@@ -3,7 +3,7 @@
 _pkgname=tLOH
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Assessment of evidence for LOH in spatial transcriptomics pre-processed data using Bayes factor calculations'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a0e482b1da10ae6d3b578308d283cd35cb4c06bd70ea78a37a64afbe23c5744c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
