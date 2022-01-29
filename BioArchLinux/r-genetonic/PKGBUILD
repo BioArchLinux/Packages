@@ -3,7 +3,7 @@
 _pkgname=GeneTonic
 _pkgver=1.6.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.1
 pkgrel=1
 pkgdesc='Enjoy Analyzing And Integrating The Results From Differential Expression Analysis And Functional Enrichment Analysis'
 arch=('any')
@@ -58,7 +58,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('aef9dc0bdfe427c3a0b9c7a9288c4b6819ef4bb783e1d9d11f237929d74194cd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
