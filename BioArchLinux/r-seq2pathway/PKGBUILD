@@ -3,7 +3,7 @@
 _pkgname=seq2pathway
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='a novel tool for functional gene-set (or termed as pathway) analysis of next-generation sequencing data'
 arch=('any')
@@ -18,7 +18,7 @@ depends=(
   r-wgcna
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('992f9b54b895cd32c2640c3ca0bb3590a3f0c6a9f912cec34102704c5506e864')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
