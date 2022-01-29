@@ -3,7 +3,7 @@
 _pkgname=FunChIP
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Clustering and Alignment of ChIP-Seq peaks based on their shapes'
 arch=('x86_64')
@@ -23,7 +23,7 @@ depends=(
   r-shiny
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d04135b8584de353a6e51bd9c88bdf3f1bb7e758d0ca4ab12bd6b110b644ec55')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
