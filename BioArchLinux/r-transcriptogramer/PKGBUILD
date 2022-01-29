@@ -4,7 +4,7 @@
 _pkgname=transcriptogramer
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='Transcriptional analysis based on transcriptograms'
 arch=('any')
@@ -33,7 +33,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('535e8877d0857ec3f32e6b0a9847ba7b3b3cc18c6eb03e1fb12acc95d2426b96')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
