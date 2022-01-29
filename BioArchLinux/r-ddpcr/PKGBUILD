@@ -4,7 +4,7 @@ _pkgname=ddpcr
 _pkgver=1.15
 pkgname=r-${_pkgname,,}
 pkgver=1.15
-pkgrel=1
+pkgrel=2
 pkgdesc='Analysis and Visualization of Droplet Digital PCR in R and on the Web'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
