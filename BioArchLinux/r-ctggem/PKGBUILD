@@ -3,7 +3,7 @@
 _pkgname=ctgGEM
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Generating Tree Hierarchy Visualizations from Gene Expression Data'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-vgam
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a220ff5146f48c6be791c114fe43f001cb26dd988afce86290c875daf1466a0d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
