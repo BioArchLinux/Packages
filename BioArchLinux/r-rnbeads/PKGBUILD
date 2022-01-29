@@ -3,7 +3,7 @@
 _pkgname=RnBeads
 _pkgver=2.12.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.12.2
 pkgrel=1
 pkgdesc='RnBeads'
 arch=('any')
@@ -72,7 +72,7 @@ optdepends=(
   r-xml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a0997082cede0ba1fc6530e7d637800b5230eb891277082ce6b31f532e814b10')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
