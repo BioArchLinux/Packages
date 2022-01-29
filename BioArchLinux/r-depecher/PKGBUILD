@@ -3,7 +3,7 @@
 _pkgname=DepecheR
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Determination of essential phenotypic elements of clusters in high-dimensional entities'
 arch=('x86_64')
@@ -37,7 +37,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a923165f6cff6f68115ef85f8b21f88413725f3d0b44d01af3ed1f1977940094')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
