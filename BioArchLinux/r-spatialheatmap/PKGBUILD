@@ -3,7 +3,7 @@
 _pkgname=spatialHeatmap
 _pkgver=2.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.0
 pkgrel=1
 pkgdesc='spatialHeatmap'
 arch=('any')
@@ -66,7 +66,7 @@ optdepends=(
   r-sortable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0e3e7809eaa2f17714366186783d945a51512d5edd238c65a688f32dcb6cc728')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
