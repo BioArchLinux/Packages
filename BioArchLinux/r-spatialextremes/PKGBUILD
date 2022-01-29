@@ -3,7 +3,7 @@
 _pkgname=SpatialExtremes
 _pkgver=2.0-9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0.9
 pkgrel=1
 pkgdesc='Modelling Spatial Extremes'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-maps
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1eaccc0c40694f64c76638523c3fd71fa443a2e483292f1d70afae61110b16d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
