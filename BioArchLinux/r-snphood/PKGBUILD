@@ -3,7 +3,7 @@
 _pkgname=SNPhood
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='SNPhood: Investigate, quantify and visualise the epigenomic neighbourhood of SNPs using NGS data'
 arch=('any')
@@ -39,7 +39,7 @@ optdepends=(
   r-snphooddata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('196712e74e3263cdd7e05a522593866c52714bd12f32237eef3fe52bf7c5f48c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
