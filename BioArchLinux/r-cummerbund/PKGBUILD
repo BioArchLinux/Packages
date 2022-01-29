@@ -3,7 +3,7 @@
 _pkgname=cummeRbund
 _pkgver=2.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.36.0
 pkgrel=1
 pkgdesc='Analysis, exploration, manipulation, and visualization of Cufflinks high-throughput sequencing data.'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1477a6e16b8f8d480900eac49f23dd6821d59a0de1051da15e4b49f169866004')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
