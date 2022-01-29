@@ -4,7 +4,7 @@ _pkgname=rasterVis
 _pkgver=0.51.2
 pkgname=r-${_pkgname,,}
 pkgver=0.51.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Visualization Methods for Raster Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
