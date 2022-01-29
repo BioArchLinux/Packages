@@ -3,7 +3,7 @@
 _pkgname=nanotatoR
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Next generation structural variant annotation and classification'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-yaml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f3f1d78f7f5e8b1f88807fd2c35e0e47e5645b48145ea016845c38febf1b078f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
