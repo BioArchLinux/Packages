@@ -3,7 +3,7 @@
 _pkgname=RiboProfiling
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='Ribosome Profiling Data Analysis: from BAM to Data Representation and Interpretation'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9d16def6f60fa60d10e1aa3c217992e6210185eadd894f26204cbe87eafef4eb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
