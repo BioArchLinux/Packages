@@ -3,7 +3,7 @@
 _pkgname=FRGEpistasis
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Epistasis Analysis for Quantitative Traits by Functional Regression Model'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-fda
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('62c8b3e6899ad705244db10a15367972deb9ccdfa0c06055d84a383a4378c9ac')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
