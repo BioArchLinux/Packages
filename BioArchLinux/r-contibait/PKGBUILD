@@ -3,7 +3,7 @@
 _pkgname=contiBAIT
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Improves Early Build Genome Assemblies using Strand-Seq Data'
 arch=('x86_64')
@@ -38,7 +38,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cac9e7c921c614fb8df6c734e57715a89696be957d9460d14f3e3b90bdb0eba6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
