@@ -3,7 +3,7 @@
 _pkgname=cqn
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.40.0
 pkgrel=1
 pkgdesc='Conditional quantile normalization'
 arch=('any')
@@ -21,7 +21,7 @@ optdepends=(
   r-scales
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('8a889115569736b5647fbd7bebf2f41b1426d8154f7a85dfe4d645cb34e7372e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
