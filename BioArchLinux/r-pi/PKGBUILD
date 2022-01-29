@@ -3,7 +3,7 @@
 _pkgname=Pi
 _pkgver=2.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.6.0
 pkgrel=1
 pkgdesc='Leveraging Genetic Evidence to Prioritise Drug Targets at the Gene and Pathway Level'
 arch=('any')
@@ -55,7 +55,7 @@ optdepends=(
   r-rtracklayer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1497174569fccc176ca029060ff14f10a322b97940da6348e950a7d2f9c77791')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
