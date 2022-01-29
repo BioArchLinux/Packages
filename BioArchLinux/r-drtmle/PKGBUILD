@@ -3,7 +3,7 @@
 _pkgname=drtmle
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.0
 pkgrel=1
 pkgdesc='Doubly-Robust Nonparametric Estimation and Inference'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('aa6fde72defcb38fd2a4ca2d7b5057768bd2072ae130c9a96eb89a972d984621')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
