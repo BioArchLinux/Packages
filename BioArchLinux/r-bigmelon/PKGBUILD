@@ -3,7 +3,7 @@
 _pkgname=bigmelon
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Illumina methylation array analysis for large experiments'
 arch=('any')
@@ -31,7 +31,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('912a7c017b38113678c15c5ce52f48314d8c7b90314db24a284f731497af4b4f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
