@@ -3,7 +3,7 @@
 _pkgname=ASpli
 _pkgver=2.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.4.0
 pkgrel=1
 pkgdesc='Analysis of Alternative Splicing Using RNA-Seq'
 arch=('any')
@@ -32,7 +32,7 @@ depends=(
   r-upsetr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('703853fa54095e591fa8bda9ba495fe9850a0f5b19a07638c6e90c3526ba8814')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
