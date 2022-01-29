@@ -3,7 +3,7 @@
 _pkgname=imageHTS
 _pkgver=1.44.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.1
 pkgrel=1
 pkgdesc='Analysis of high-throughput microscopy-based screens'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-mass
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b925cec1e6586185446bd5a89b32fa47a801b4a76ed6a5b7d00429af596ac454')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
