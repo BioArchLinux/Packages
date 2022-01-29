@@ -3,7 +3,7 @@
 _pkgname=LymphoSeq
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.22.0
 pkgrel=1
 pkgdesc='Analyze high-throughput sequencing of T and B cell receptors'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-wordcloud
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6a9ad6fbfaa66d5a4784eba67158da6ae449ba206bc1d3a6c3396b6ddea16b5a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
