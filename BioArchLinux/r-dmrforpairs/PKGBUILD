@@ -3,7 +3,7 @@
 _pkgname=DMRforPairs
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='DMRforPairs: identifying Differentially Methylated Regions between unique samples using array based methylation profiles'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-r2html
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('eb4c82840e258bfcdff5eb175294cfc573a4c6b4822663dcc2598e07d9300bb9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
