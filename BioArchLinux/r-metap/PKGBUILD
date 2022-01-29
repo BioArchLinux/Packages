@@ -3,7 +3,7 @@
 _pkgname=metap
 _pkgver=1.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.7
 pkgrel=1
 pkgdesc='Meta-Analysis of Significance Values'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-tfisher
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d9b511607d0e37de4428549061c5577a4e812b0f55bb7ed887d1b24711f58c42')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
