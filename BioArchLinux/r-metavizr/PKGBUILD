@@ -3,7 +3,7 @@
 _pkgname=metavizr
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='R Interface to the metaviz web app for interactive metagenomics data analysis and visualization'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a2260799d46a5d7a4a93f3e677c086d245f7d5516c0c401f4e32cdc0d5993abf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
