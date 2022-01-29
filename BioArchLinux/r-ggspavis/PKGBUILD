@@ -3,7 +3,7 @@
 _pkgname=ggspavis
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Visualization functions for spatially resolved transcriptomics data'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a04b643e0186b2fdbc965ef770b2841c0be2bfeede51140cfe87f0fd1dfaa752')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
