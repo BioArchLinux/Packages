@@ -3,7 +3,7 @@
 _pkgname=SimBindProfiles
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Similar Binding Profiles'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-ringo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('46e6f6ff0e2689e08842f637be6921cd31e82a2c4287c27cc633d35356c99a22')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
