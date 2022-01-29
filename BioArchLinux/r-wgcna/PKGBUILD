@@ -3,7 +3,7 @@
 _pkgname=WGCNA
 _pkgver=1.70-3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.70.3
 pkgrel=1
 pkgdesc='Weighted Correlation Network Analysis'
 arch=('x86_64')
@@ -31,7 +31,7 @@ optdepends=(
   r-org.mm.eg.db
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b9843b839728183af6b746f239e9519d438b294613362b556002acdb8522cbd4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
