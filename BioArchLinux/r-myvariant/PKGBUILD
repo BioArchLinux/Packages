@@ -3,7 +3,7 @@
 _pkgname=myvariant
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='Accesses MyVariant.info variant query and annotation services'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('31c510b2e99e384ad67d69414c35b1a5203f0bda19440555fbf772771d8f07b5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
