@@ -3,7 +3,7 @@
 _pkgname=RLSeq
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='RLSeq: An analysis package for R-loop mapping data'
 arch=('any')
@@ -59,7 +59,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4f0c89e69e3ac6dd768d1c5612a361d3e597e4d059014de097c24c7b11c1941e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
