@@ -20,6 +20,7 @@ depends=(
   r-ggplot2
   r-gridextra
   r-iranges
+  tk
 )
 optdepends=(
   r-biocgenerics
