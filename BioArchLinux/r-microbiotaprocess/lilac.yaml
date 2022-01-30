@@ -27,6 +27,7 @@ repo_depends:
 - r-treeio
 - r-vegan
 - r-zoo
+- r-plyr
 update_on:
 - regex: MicrobiotaProcess_([\d._-]+).tar.gz
   source: regex
