@@ -35,6 +35,7 @@ depends=(
   r-treeio
   r-vegan
   r-zoo
+  r-plyr
 )
 optdepends=(
   r-aplot
