@@ -18,3 +18,4 @@ update_on:
 - regex: canceR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/canceR
+time_limit_hours: 6
