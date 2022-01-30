@@ -12,6 +12,8 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('LGPL')
 depends=(
   r
+  nlopt
+  testthat
 )
 optdepends=(
   r-inline
