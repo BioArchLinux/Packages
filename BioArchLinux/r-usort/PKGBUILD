@@ -21,6 +21,7 @@ depends=(
   r-rann
   r-rspectra
   r-vgam
+  tk
 )
 optdepends=(
   r-ggplot2
