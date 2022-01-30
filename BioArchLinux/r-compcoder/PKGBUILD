@@ -24,6 +24,7 @@ depends=(
   r-sm
   r-stringr
   r-vioplot
+  tk
 )
 optdepends=(
   r-bayseq
