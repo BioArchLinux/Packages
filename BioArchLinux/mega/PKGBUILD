@@ -4,7 +4,7 @@
 pkgname=mega
 _pkgname=mega
 pkgver=11.0.10
-pkgrel=3
+pkgrel=4
 pkgdesc="Molecular Evolutionary Genetics Analysis. https://doi.org/10.1093/molbev/msy096"
 arch=('x86_64')
 url="https://megasoftware.net"
