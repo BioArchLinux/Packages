@@ -33,6 +33,7 @@ depends=(
   r-xml2
   r-yaml
   r-zoo
+  r-shinyfiles
 )
 optdepends=(
   r-knitr
