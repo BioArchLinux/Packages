@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-graph
+- libsbml
 update_on:
 - regex: rsbml_([\d._-]+).tar.gz
   source: regex

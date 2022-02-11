@@ -14,6 +14,7 @@ depends=(
   r
   r-biocgenerics
   r-graph
+  libsbml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
