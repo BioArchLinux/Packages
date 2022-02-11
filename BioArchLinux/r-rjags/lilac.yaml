@@ -8,3 +8,5 @@ update_on:
 - regex: rjags_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=rjags
+repo_depends:
+  - jags
