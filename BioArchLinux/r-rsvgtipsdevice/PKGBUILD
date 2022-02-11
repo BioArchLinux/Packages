@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RSVGTipsDevice
-_pkgver=1.0-${pkgver}
+_pkgver=1.0-7
 pkgname=r-${_pkgname,,}
-pkgver=7
+pkgver=${_pkgver//[:-]/.}
 pkgrel=1
 pkgdesc='An R SVG Graphics Device with Dynamic Tips and Hyperlinks'
 arch=('any')
