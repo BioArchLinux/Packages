@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-rcpp
+- udunits
 update_on:
 - regex: units_([\d._-]+).tar.gz
   source: regex
