@@ -23,6 +23,7 @@ depends=(
   r-rapportools
   r-tibble
   r-tidyr
+  tk
 )
 optdepends=(
   r-forcats

@@ -6,3 +6,5 @@ update_on:
 - regex: affxparser_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/affxparser
+repo_depends:
+  - fusion

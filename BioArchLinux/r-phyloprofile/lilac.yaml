@@ -25,6 +25,7 @@ repo_depends:
 - r-xml2
 - r-yaml
 - r-zoo
+- r-shinyfiles
 update_on:
 - regex: PhyloProfile_([\d._-]+).tar.gz
   source: regex

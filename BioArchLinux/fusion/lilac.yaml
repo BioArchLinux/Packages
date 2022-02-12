@@ -1,0 +1,12 @@
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+build_prefix: extra-x86_64
+pre_build_script: |
+    update_pkgrel()
+    vcs_update()
+post_build_script: |
+    git_pkgbuild_commit()
+update_on:
+  - source: github
+    github: v1olen/fusion

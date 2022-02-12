@@ -15,6 +15,7 @@ depends=(
   r-vsn
   r-aplpack
   r-affyio
+  tk
 )
 makedepends=(
   git

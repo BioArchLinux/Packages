@@ -1,38 +1,27 @@
-# system requirements: Java (>= 1.8)
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=debCAM
-_pkgver=1.12.0
+_pkgname=MafDb.ExAC.r1.0.hs37d5
+_pkgver=3.10.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Deconvolution by Convex Analysis of Mixtures'
+pkgdesc='Minor allele frequency data from ExAC release 1.0 for hs37d5'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('GPL')
+license=('Artistic2.0')
 depends=(
   r
-  r-apcluster
-  r-biobase
-  r-biocparallel
-  r-corpcor
-  r-dmwr2
-  r-geometry
-  r-nmf
-  r-nnls
-  r-pcapp
-  r-rjava
-  r-summarizedexperiment
+  r-bsgenome
+  r-genomeinfodb
+  r-genomicranges
+  r-genomicscores
+  r-iranges
+  r-s4vectors
 )
 optdepends=(
-  r-biocstyle
-  r-geoquery
-  r-knitr
-  r-rgl
-  r-rmarkdown
-  r-testthat
+  r-snplocs.hsapiens.dbsnp144.grch37
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
 
 build() {

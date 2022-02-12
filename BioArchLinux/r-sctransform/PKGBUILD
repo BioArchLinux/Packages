@@ -20,6 +20,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-reshape2
+  r-dplyr
   gcc
 )
 optdepends=(

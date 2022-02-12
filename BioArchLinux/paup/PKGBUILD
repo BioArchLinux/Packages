@@ -3,12 +3,12 @@
 pkgname=paup
 pkgver=4a168
 _execname=paup${pkgver//.0/}_ubuntu64
-pkgrel=5
+pkgrel=6
 pkgdesc="Phylogenetic Analysis Using PAUP. https://doi.org/10.1002/0471250953.bi0604s00"
 arch=('i686' 'x86_64')
 url="http://phylosolutions.com/paup-test/"
 license=('custom')
-depends=('python2' 'gcc-fortran')
+depends=('python2')
 source=("http://phylosolutions.com/paup-test/paup${pkgver}_ubuntu64.gz")
 md5sums=('a4a4f378cd5f8656664956180649d589')
 

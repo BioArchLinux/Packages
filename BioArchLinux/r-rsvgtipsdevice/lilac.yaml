@@ -3,6 +3,6 @@ maintainers:
 - github: starsareintherose
   email: starsareintherose@outlook.com
 update_on:
-- regex: href="/cran/RSVGTipsDevice/releases/tag/1.0-(\d+)"
+- regex: href="/cran/RSVGTipsDevice/releases/tag/([\d._-]+)"
   source: regex
   url: "https://github.com/cran/RSVGTipsDevice/tags"

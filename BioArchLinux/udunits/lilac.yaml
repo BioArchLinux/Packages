@@ -1,0 +1,10 @@
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+build_prefix: extra-x86_64
+update_on:
+  - source: regex
+    url: "https://artifacts.unidata.ucar.edu/service/rest/repository/browse/downloads-udunits/"
+    regex: href="(\d+.\d+.\d+)/"
+# vim:set ts=2 sw=2 et:
+
