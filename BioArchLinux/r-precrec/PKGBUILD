@@ -4,7 +4,7 @@ _pkgname=precrec
 _pkgver=0.12.8
 pkgname=r-${_pkgname,,}
 pkgver=0.12.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Calculate Accurate Precision-Recall and ROC (Receiver Operator Characteristics) Curves'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
