@@ -4,8 +4,8 @@
 pkgname=libarmadillo
 _pkgname=armadillo
 sfname=arma
-pkgver=10.8.1
-pkgrel=2
+pkgver=10.8.2
+pkgrel=1
 pkgdesc="C++ library for linear algebra & scientific computing"
 arch=('x86_64')
 url="http://${sfname}.sourceforge.net/"
@@ -16,7 +16,7 @@ optdepends=()
 provides=()
 source=("http://sourceforge.net/projects/${sfname}/files/${_pkgname}-${pkgver}.tar.xz")
 
-sha256sums=('5087ab5a2268e5ce71798c1afcb6d1fb246463f8dc88a60db49a083600f98332')
+sha256sums=('89fdd898bf6bff75f6efc3a301817e4ede752b9a80927fb07ee358b13e353922')
 
 build() {
   cd "${_pkgname}-${pkgver}"
