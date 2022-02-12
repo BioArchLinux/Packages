@@ -3,7 +3,7 @@
 
 pkgname=jags
 pkgver=4.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian hierarchical models using Markov Chain Monte Carlo (MCMC) simulation"
 arch=('x86_64' 'i686')
 url="http://mcmc-jags.sourceforge.net/"
