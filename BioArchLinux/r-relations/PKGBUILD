@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=relations
-_pkgver=0.6-10
+_pkgver=0.6-11
 pkgname=r-${_pkgname,,}
-pkgver=0.6.10
-pkgrel=2
+pkgver=0.6.11
+pkgrel=1
 pkgdesc='Data Structures and Algorithms for Relations'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-seriation
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b660b0a06c276bf119808e7f516fd8bc190f77cf6b557dd927937fb696d5068e')
+sha256sums=('ba468dea1328b1de446926dabbede64c768e9be577ecc982a1a759d9040154db')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
