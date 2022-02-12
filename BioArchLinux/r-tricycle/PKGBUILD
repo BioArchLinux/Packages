@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tricycle
-_pkgver=1.2.0
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
+pkgver=1.2.1
 pkgrel=1
 pkgdesc='tricycle: Transferable Representation and Inference of cell cycle'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('38d99283a98d545ede94b03657be4195ecece302714f638df7deb1d2ee5f9bc9')
+sha256sums=('19a5f4bb5f589a03b2df90c8c49924be832fd46e2da75a08926018e4a23fd0a7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
