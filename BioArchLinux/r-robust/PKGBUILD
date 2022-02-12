@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=robust
-_pkgver=0.6-1
+_pkgver=0.7-0
 pkgname=r-${_pkgname,,}
-pkgver=0.6.1
-pkgrel=2
+pkgver=0.7.0
+pkgrel=1
 pkgdesc='Port of the S+ "Robust Library"'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('496fd225f6bc6f734e338308f18475125aaf691b39e25308bddb284d3106117d')
+sha256sums=('5e1aac30e185e416c22445663704f39433af9fdb48452185f2c9beb3528084b9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
