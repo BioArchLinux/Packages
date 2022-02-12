@@ -8,11 +8,11 @@ pkgdesc="Multiple sequence alignment software enabling improved estimates of phy
 arch=('i686' 'x86_64')
 url="http://www.drive5.com/muscle/"
 license=('GPL3')
-source=(${pkgname}::https://github.com/rcedgar/muscle/releases/download/v$pkgver/muscle${pkgver}.linux_intel64)
+source=($pkgname::https://github.com/rcedgar/muscle/releases/download/v$pkgver/muscle${pkgver}.linux_intel64)
 sha256sums=('ac7c39fcfa663dfaa89dd0efa324d998d63d72d9fef0bf0322120f6bfdc8fb98')
 prepare() {
   cd "$srcdir"
-  chmod +x muscle_v${pkgver}_linux
+  chmod +x $pkgname
 }
 package() {
   install -D -m755 "$srcdir"/muscle "$pkgdir/usr/bin/muscle"
