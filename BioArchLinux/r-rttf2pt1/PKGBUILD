@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rttf2pt1
-_pkgver=1.3.9
+_pkgver=1.3.10
 pkgname=r-${_pkgname,,}
-pkgver=1.3.9
-pkgrel=2
+pkgver=1.3.10
+pkgrel=1
 pkgdesc="'ttf2pt1' Program"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8667e48ed639c80180b1c1b65eff6ca2031bc9633a4fe79b50772f92375e3e71')
+sha256sums=('81886b4f686341ce5139816233c957e840541d17a1d2db0047af17d527f0e1ba')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
