@@ -3,7 +3,7 @@
 _pkgname=MADSEQ
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Mosaic Aneuploidy Detection and Quantification using Massive Parallel Sequencing Data'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6fbf60279ea38b85806c169856544e53741351779da1a9aa7f666e5b404e0ac0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
