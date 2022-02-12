@@ -4,7 +4,7 @@ _pkgname=admisc
 _pkgver=0.24
 pkgname=r-${_pkgname,,}
 pkgver=0.24
-pkgrel=1
+pkgrel=2
 pkgdesc="Adrian Dusa's Miscellaneous"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
