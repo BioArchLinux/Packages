@@ -2,14 +2,14 @@
 # Contributor: Mick Elliot <micke@sfu.ca>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=muscle
-pkgver=5.0.1428
-pkgrel=6
+pkgver=5.1
+pkgrel=1
 pkgdesc="Multiple sequence alignment software enabling improved estimates of phylogenetic tree confidence by ensemble bootstrapping. https://doi.org/10.1101/2021.06.20.449169"
 arch=('i686' 'x86_64')
 url="http://www.drive5.com/muscle/"
 license=('GPL3')
 source=($pkgname::https://github.com/rcedgar/muscle/releases/download/v$pkgver/muscle${pkgver}.linux_intel64)
-sha256sums=('ac7c39fcfa663dfaa89dd0efa324d998d63d72d9fef0bf0322120f6bfdc8fb98')
+sha256sums=('2bd82928a5cc72b5086b60928a3a820a0ce066ca9fbc0fecd1543eebca981e76')
 prepare() {
   cd "$srcdir"
   chmod +x $pkgname
