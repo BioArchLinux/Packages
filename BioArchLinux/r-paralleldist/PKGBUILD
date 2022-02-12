@@ -5,7 +5,7 @@ _pkgname=parallelDist
 _pkgver=0.2.6
 pkgname=r-${_pkgname,,}
 pkgver=0.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Parallel Distance Matrix Computation using Multiple Threads'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
