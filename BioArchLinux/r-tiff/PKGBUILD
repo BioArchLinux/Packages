@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tiff
-_pkgver=0.1-10
+_pkgver=0.1-11
 pkgname=r-${_pkgname,,}
-pkgver=0.1.10
-pkgrel=2
+pkgver=0.1.11
+pkgrel=1
 pkgdesc='Read and Write TIFF Images'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('535154e89e85e14fe697469d2c59826a44c7937e7eca2eaca1aee6b0fe320afe')
+sha256sums=('b8c3ea15114d972f8140541c7b01f5ce2e5322af1f63c1a083aaf766fd3eec75')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
