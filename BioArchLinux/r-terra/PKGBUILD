@@ -5,7 +5,7 @@ _pkgname=terra
 _pkgver=1.5-17
 pkgname=r-${_pkgname,,}
 pkgver=1.5.17
-pkgrel=1
+pkgrel=2
 pkgdesc='Spatial Data Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
