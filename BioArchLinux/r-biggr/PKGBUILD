@@ -3,7 +3,7 @@
 _pkgname=BiGGR
 _pkgver=1.30.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.30.0
 pkgrel=1
 pkgdesc='Constraint based modeling in R using metabolic reconstruction databases'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7926d8b5d95c781c1a990f364408756d440743de449b731009d37ece8d3101bc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
