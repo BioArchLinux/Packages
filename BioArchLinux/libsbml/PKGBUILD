@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail>
 pkgname=libsbml
 pkgver=5.19.2
-pkgrel=1
+pkgrel=2
 pkgdesc="XML-based description language for computational models in systems biology"
 url="https://github.com/sbmlteam/libsbml"
 license=('LGPL')
