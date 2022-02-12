@@ -3,7 +3,7 @@
 _pkgname=RmiR
 _pkgver=1.49.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.49.0
 pkgrel=1
 pkgdesc='Package to work with miRNAs and miRNA targets with R'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-org.hs.eg.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4ad28fb669731a44e39bde01b440a30c752a8aee0204472a8b7ee3931481dc9a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
