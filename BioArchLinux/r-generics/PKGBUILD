@@ -4,7 +4,7 @@ _pkgname=generics
 _pkgver=0.1.2
 pkgname=r-${_pkgname,,}
 pkgver=0.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Common S3 Generics not Provided by Base R Methods Related to Model Fitting'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
