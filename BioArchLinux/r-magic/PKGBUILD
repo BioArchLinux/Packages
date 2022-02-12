@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=magic
-_pkgver=1.5-9
+_pkgver=1.6-0
 pkgname=r-${_pkgname,,}
-pkgver=1.5.9
-pkgrel=2
+pkgver=1.6.0
+pkgrel=1
 pkgdesc='Create and Investigate Magic Squares'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-abind
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fa1d5ef2d39e880f262d31b77006a2a7e76ea38e306aae4356e682b90d6cd56a')
+sha256sums=('4516d48c9618e3f395db873e886f5deb3b66b32ebe10d4c26c1420ac848acbbf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
