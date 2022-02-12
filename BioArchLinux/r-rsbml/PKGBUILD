@@ -4,7 +4,7 @@
 _pkgname=rsbml
 _pkgver=2.52.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.52.0
 pkgrel=1
 pkgdesc='R support for SBML, using libsbml'
 arch=('x86_64')
@@ -17,7 +17,7 @@ depends=(
   libsbml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('026afb40a2b7247af886937347e36e30d05b8516116d664a605a3d7d86c9be55')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
