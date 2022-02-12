@@ -4,7 +4,7 @@ _pkgname=chk
 _pkgver=0.8.0
 pkgname=r-${_pkgname,,}
 pkgver=0.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Check User-Supplied Function Arguments'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
