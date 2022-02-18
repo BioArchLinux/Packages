@@ -3,18 +3,36 @@
 
 pkgname=raxml-ng
 pkgver=1.1.0
-_commit=411611611793e53c992717d869ca64370f2e4789
-pkgrel=17
+pkgrel=18
 pkgdesc="A phylogenetic tree inference tool which uses maximum-likelihood (ML) optimality criterion. https://doi.org/10.1093/bioinformatics/btz305"
 url='https://github.com/amkozlov/raxml-ng'
 arch=('x86_64')
 license=('AGPL3')
 depends=('gcc-libs')
-source=("https://github.com/amkozlov/raxml-ng/releases/download/${pkgver}/raxml-ng_v${pkgver}_linux_x86_64.zip")
-sha256sums=('e721b9437b006559582d6eb71bcc4da75f5debc727c4454f437c9fe6117afccc')
+makedepends=('bison' 'make' 'cmake' 'flex' 'gmp' 'gtest' 'git')
+source=("https://github.com/amkozlov/raxml-ng/archive/refs/tags/${pkgver}.zip")
+sha256sums=('2d2d4143c50b86e40cfc9ecb328e96b2a68a166001433bf939a0c38048257d34')
 
-package() {
-  cd "${srcdir}"
-  install -Dm755 raxml-ng "${pkgdir}/usr/bin/${pkgname}"
+prepare() {
+  cd "${srcdir}/raxml-ng-${pkgver}/libs"
+  git clone git@github.com:amkozlov/terraphast-one.git
+  rm -rf terraphast
+  mv terraphast-one terraphast
+  git clone git@github.com:ddarriba/pll-modules.git
+  cd pll-modules/libs/
+  rm -rf libpll
+  git clone git@github.com:xflouris/libpll-2.git
+  mv libpll-2 libpll
+  cp libpll/src/pll.h pll.h
 }
-
+build(){
+  cd "${srcdir}"/raxml-ng-${pkgver}
+  mkdir -p build
+  cd build
+  cmake ..
+  make
+}
+package() {
+  cd ${srcdir}/raxml-ng-${pkgver}/bin
+  install -Dm755 $pkgname "${pkgdir}/usr/bin/${pkgname}"
+}
