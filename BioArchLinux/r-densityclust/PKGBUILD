@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=densityClust
-_pkgver=0.3
+_pkgver=0.3.1
 pkgname=r-${_pkgname,,}
-pkgver=0.3
-pkgrel=2
+pkgver=0.3.1
+pkgrel=1
 pkgdesc='Clustering by Fast Search and Find of Density Peaks'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,7 +23,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('23749ba57d1d7886e0fe9ba535d7f30dd2cbb7ebf451afcec8f54be5d4063eff')
+sha256sums=('c082f054ea273ce34b3b58acabda0cba60fe0ddddcfe7d187960758470b9c311')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
