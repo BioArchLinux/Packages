@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=xgboost
-_pkgver=1.5.0.2
+_pkgver=1.5.2.1
 pkgname=r-${_pkgname,,}
-pkgver=1.5.0.2
-pkgrel=2
+pkgver=1.5.2.1
+pkgrel=1
 pkgdesc='Extreme Gradient Boosting'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -30,7 +30,7 @@ optdepends=(
   r-vcd
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4750b9a289d8cb685291939eed7c493bb42c5cc154ef98e13100abb1727eab13')
+sha256sums=('290c8d6a6912988ea228b18629a2f23db46213ad9875521726f5c17e6b1eb18e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
