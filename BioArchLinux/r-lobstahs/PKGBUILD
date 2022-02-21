@@ -3,7 +3,7 @@
 _pkgname=LOBSTAHS
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Lipid and Oxylipin Biomarker Screening through Adduct Hierarchy Sequences'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('79ae008ecfe8805d90ab086f1f71f3a3e614be9c2ef1d94bd8cb4b626b126bd9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
