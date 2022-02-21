@@ -3,7 +3,7 @@
 _pkgname=MSnID
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Utilities for Exploration and Assessment of Confidence of LC-MSn Proteomics Identifications'
 arch=('any')
@@ -39,7 +39,7 @@ depends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('178d3ae5fe08f315ae78bb5bd9eff29d454c57a159f44b44479ea6bb072c7a36')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
