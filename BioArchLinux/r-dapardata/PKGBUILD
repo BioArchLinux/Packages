@@ -3,7 +3,7 @@
 _pkgname=DAPARdata
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='Data accompanying the DAPAR and Prostar packages'
 arch=('any')
@@ -18,7 +18,7 @@ optdepends=(
   r-dapar
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('80befc2418dc6fb495cc776600d49447568ced5c31fd20a662516ff36763aff3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
