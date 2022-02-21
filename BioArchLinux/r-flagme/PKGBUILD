@@ -3,7 +3,7 @@
 _pkgname=flagme
 _pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='Analysis of Metabolomics GC/MS Data'
 arch=('x86_64')
@@ -18,7 +18,7 @@ depends=(
   r-xcms
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('18f6c8ecda9416550e9a5829b6d42d5e1c0394ed11424df132972bfca70af4a0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
