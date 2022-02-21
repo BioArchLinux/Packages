@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pspline
-_pkgver=1.0-18
+_pkgver=1.0-19
 pkgname=r-${_pkgname,,}
-pkgver=1.0.18
-pkgrel=2
+pkgver=1.0.19
+pkgrel=1
 pkgdesc='Penalized Smoothing Splines'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f71cf293bd5462e510ac5ad16c4a96eda18891a0bfa6447dd881c65845e19ac7')
+sha256sums=('ba55bf193f1df9785a0e13b7ef727d5fd2415b318cd6a26b48a2db490c4dfe40')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
