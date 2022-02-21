@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rfast
-_pkgver=2.0.5
+_pkgver=2.0.6
 pkgname=r-${_pkgname,,}
-pkgver=2.0.5
+pkgver=2.0.6
 pkgrel=1
 pkgdesc='A Collection of Efficient and Extremely Fast R Functions'
 arch=('x86_64')
@@ -17,7 +17,7 @@ depends=(
   r-rcppziggurat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c399cb8623d757367ebfeaefb529407a7422a2160c65d60f16c2962004a80aa3')
+sha256sums=('34694b5c67ce8fcbdc90aac2ac80a74d4b66515f383e6301aea7c020009ebe7f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
