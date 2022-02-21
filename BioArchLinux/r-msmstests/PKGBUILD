@@ -3,7 +3,7 @@
 _pkgname=msmsTests
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='LC-MS/MS Differential Expression Tests'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-qvalue
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cb7ef8506293fa07d1422433db1c5f2836a1da91765f43da89685d9c517bb276')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
