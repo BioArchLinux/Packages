@@ -3,7 +3,7 @@
 _pkgname=msmsEDA
 _pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='Exploratory Data Analysis of LC-MS/MS data by spectral counts'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-rcolorbrewer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('29ee62a3fe957aa1bc1a866c180ef4cb4be2da155480384553984d29a7ac55c9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
