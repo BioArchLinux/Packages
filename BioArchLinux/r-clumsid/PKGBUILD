@@ -3,7 +3,7 @@
 _pkgname=CluMSID
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Clustering of MS2 Spectra for Metabolite Identification'
 arch=('any')
@@ -39,7 +39,7 @@ optdepends=(
   r-xcms
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('27ed5db916cf8797693c63315403cf0559da2dae84faff201c31529bd6307b93')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
