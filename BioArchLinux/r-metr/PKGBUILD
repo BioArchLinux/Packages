@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=metR
-_pkgver=0.11.0
+_pkgver=0.12.0
 pkgname=r-${_pkgname,,}
-pkgver=0.11.0
+pkgver=0.12.0
 pkgrel=1
 pkgdesc='Tools for Easier Analysis of Meteorological Fields'
 arch=('any')
@@ -51,7 +51,7 @@ optdepends=(
   r-viridis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('dc896d235cc83045ab93af8103bd11c45293a4cd94db2781677bfd3c194d5925')
+sha256sums=('9ab084720283c51d6789eb0aeeb6661607d09ad5ebe6ccf75ba5bbf9fb2fe47f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
