@@ -3,7 +3,7 @@
 _pkgname=xcms
 _pkgver=3.16.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.16.1
 pkgrel=1
 pkgdesc='LC-MS and GC-MS Data Analysis'
 arch=('x86_64')
@@ -50,7 +50,7 @@ optdepends=(
   r-xml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('83842663d7a62d8c38e2219d343b560ac7c1f97a501371ed1517a7bc4cf472a6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
