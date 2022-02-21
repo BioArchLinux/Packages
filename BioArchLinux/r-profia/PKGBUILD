@@ -3,7 +3,7 @@
 _pkgname=proFIA
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Preprocessing of FIA-HRMS data'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-plasfia
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('f39b7ba83d84a75d18966bf868f3ef8869fbfe2c09d5507c257eb5f26e19702d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
