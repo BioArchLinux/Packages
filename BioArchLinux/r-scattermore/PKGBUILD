@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=scattermore
-_pkgver=0.7
+_pkgver=0.8
 pkgname=r-${_pkgname,,}
-pkgver=0.7
-pkgrel=2
+pkgver=0.8
+pkgrel=1
 pkgdesc='Scatterplots with More Points'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-scales
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f36280197b8476314d6ce81a51c4ae737180b180204043d2937bc25bf3a5dfa2')
+sha256sums=('dbdd73d8261cb063464bb29d5c17733b7e87bc50a19948bc80439e19f2a9f8e5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
