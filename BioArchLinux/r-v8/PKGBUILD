@@ -15,6 +15,7 @@ depends=(
   r-curl
   r-jsonlite
   r-rcpp
+  v8
 )
 optdepends=(
   r-knitr

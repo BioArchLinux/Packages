@@ -6,6 +6,7 @@ repo_depends:
 - r-curl
 - r-jsonlite
 - r-rcpp
+- v8
 update_on:
 - regex: V8_([\d._-]+).tar.gz
   source: regex
