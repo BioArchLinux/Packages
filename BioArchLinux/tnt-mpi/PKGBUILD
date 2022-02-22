@@ -3,7 +3,7 @@
 
 pkgname=tnt-mpi
 _pkgname=mpitnt
-pkgver=2022.01.13
+pkgver=2022.02.21
 pkgrel=1
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
@@ -16,7 +16,7 @@ depends=(
 	'openmpi'
 )
 source=("http://www.lillo.org.ar/phylogeny/tnt/$_pkgname.zip")
-sha256sums=('a10dd61abc9b4d5b7cb26afa2e8468eaebbf2baaa0ef40d6f3caf4cdf14637d7')
+sha256sums=('d570b4aaf3c198448e28b277495af33abcf7619cedbdc6a1dd7ec09d9db3dc7b')
 package () {
 	cd ${srcdir}
 	chmod +x $_pkgname
