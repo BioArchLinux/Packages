@@ -1,0 +1,23 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname='affx-fusion'
+pkgver=0.5.0.11.ge7e1c45
+pkgrel=1
+arch=('x86_64')
+url="https://github.com/HenrikBengtsson/Affx-Fusion-SDK"
+pkgdesc="Affymetrix Fusion Software Developers Kit"
+license=('AGPL')
+makedepends=('git')
+checkdepends=()
+source=("$pkgname::git+https://github.com/HenrikBengtsson/Affx-Fusion-SDK.git")
+sha256sums=('SKIP')
+
+prepare() {
+	cd $pkgname
+	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+package() {
+	cd $pkgname/affy/sdk
+	mkdir -p $pkgdir/usr/include/fusion
+	mv * "$pkgdir/usr/include/fusion"
+}

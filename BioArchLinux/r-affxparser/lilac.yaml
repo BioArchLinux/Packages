@@ -7,4 +7,4 @@ update_on:
   source: regex
   url: https://bioconductor.org/packages/affxparser
 repo_depends:
-  - fusion
+  - affx-fusion
