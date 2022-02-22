@@ -6,3 +6,5 @@ update_on:
 - regex: nloptr_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=nloptr
+repo_depends:
+- r-testthat
