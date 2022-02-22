@@ -14,16 +14,17 @@ depends=(
 	'wine-mono'
 )
 source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-win-no-tax-limit.zip" "tnt.desktop" "tnt.png")
-sha256sums=('893db93a167f47ab090718c85422e2689233ab6d0ecec8040ac7894480a31807'
-            '963042eaff0fe25ecb25d8d1d3ad227542a8c085124a80f5437505e4871d2661'
+sha256sums=('c6d7b8f45c1de9bfc2e28faaf96ab144f2cf6878265e69f3e82b1a7ba40484b8'
+            '8c20bf27a003145cf32f054dfd8fcc3846aca379d0cedd3a42c51085c46d05a7'
             '292f95bbcb47bea8eae753123df282e19bc1461a0d0f7c0312e3864656b77da3')
 
 package() {
-	install -Dm755 ${srcdir}/tnt.exe ${pkgdir}/usr/share/tnt/tnt.exe
-	install -D -m 755 ${srcdir}/*.htm "${pkgdir}/usr/share/tnt/"
-	install -Dm755 ${srcdir}/tnt_scripts.zip ${pkgdir}/usr/share/tnt/tnt_scripts.zip
-	install -Dm755 ${srcdir}/Tred.ttf ${pkgdir}/usr/share/tnt/Tred.ttf
+	mkdir -p $pkgdir/usr/share/tnt-gui
+	install -Dm755 ${srcdir}/tnt.exe ${pkgdir}/usr/share/tnt-gui/tnt.exe
+#	install -Dm755 ${srcdir}/tnt.htm "${pkgdir}/usr/share/tnt-gui"
+#	install -Dm755 ${srcdir}/tnt_scripts.zip ${pkgdir}/usr/share/tnt-gui/tnt_scripts.zip
+#	install -Dm755 ${srcdir}/Tred.ttf ${pkgdir}/usr/share/tnt-gui/Tred.ttf
 	
-	install -Dm755 ${srcdir}/tnt.png ${pkgdir}/usr/share/tnt/tnt.png
-	install -Dm755 ${srcdir}/tnt.desktop ${pkgdir}/usr/share/applications/tnt.desktop
+	install -Dm755 ${srcdir}/tnt.png ${pkgdir}/usr/share/tnt-gui/tnt.png
+	install -Dm755 ${srcdir}/tnt.desktop ${pkgdir}/usr/share/applications/tnt-gui.desktop
 }
