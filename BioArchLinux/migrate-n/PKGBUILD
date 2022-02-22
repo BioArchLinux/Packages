@@ -4,7 +4,7 @@
 pkgname=migrate-n
 _pkgname=migrate
 pkgver=5.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian estimation of effective population sizes, migration rates, and population divergences or admixture, single CPU version"
 arch=('x86_64')
 url="https://peterbeerli.com/migrate-html5"
