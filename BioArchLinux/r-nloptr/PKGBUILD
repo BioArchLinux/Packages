@@ -13,7 +13,7 @@ license=('LGPL')
 depends=(
   r
   nlopt
-  testthat
+  r-testthat
 )
 optdepends=(
   r-inline
