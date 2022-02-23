@@ -3,7 +3,7 @@
 _pkgname=msqrob2
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Robust statistical inference for quantitative LC-MS proteomics'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ec835b87c8ee449cbe9f3ae77cb5f41ded9aa596dc14192b5ede6bd48d586929')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
