@@ -3,7 +3,7 @@
 _pkgname=hardhat
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.0
 pkgrel=1
 pkgdesc='Construct Modeling Packages'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('9497ca0fe6206c54d1da79f248d44c5faffc7d375b630091ef45dfca46c29628')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
