@@ -4,5 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: github
-    github: amkozlov/raxml-ng
+    github: ddarriba/modeltest
     use_latest_release: true
