@@ -1,40 +1,30 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=spatstat.core
-_pkgver=2.3-2
+_pkgname=spatstat.random
+_pkgver=2.1-0
 pkgname=r-${_pkgname,,}
-pkgver=2.3.2
-pkgrel=2
-pkgdesc="Core Functionality of the 'spatstat' Family"
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Random Generation Functionality for the 'spatstat' Family"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-abind
-  r-goftest
   r-spatstat.data
   r-spatstat.geom
-  r-spatstat.sparse
   r-spatstat.utils
-  r-spatstat.random
-  r-tensor
 )
 optdepends=(
-  r-fftwtools
-  r-gsl
-  r-locfit
-  r-maptools
-  r-nleqslv
   r-randomfields
   r-randomfieldsutils
-  r-sm
   r-spatial
   r-spatstat
+  r-spatstat.core
   r-spatstat.linnet
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('7f4d6d997f9187eda71097a53917e7cbe03f8dcfb4e758d86a90fbe42c92f63c')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

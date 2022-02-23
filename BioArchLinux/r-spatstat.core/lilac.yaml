@@ -8,6 +8,7 @@ repo_depends:
 - r-spatstat.data
 - r-spatstat.geom
 - r-spatstat.sparse
+- r-spatstat.random
 - r-spatstat.utils
 - r-tensor
 update_on:
