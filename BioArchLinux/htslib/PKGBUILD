@@ -3,7 +3,7 @@
 
 pkgname=htslib
 pkgver=1.15
-pkgrel=1
+pkgrel=2
 pkgdesc='A C library for high-throughput sequencing data formats. https://doi.org/10.1093/gigascience/giab007'
 arch=('x86_64')
 url="https://github.com/samtools/${pkgname}"
