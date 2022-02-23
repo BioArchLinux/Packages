@@ -3,7 +3,7 @@
 _pkgname=enrichTF
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Transcription Factors Enrichment Analysis'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-webshot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('bb13f8ce3a8b3b7969c3d9bdb9f1b0e52ed48261867a820ac08d03b80bd5526b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
