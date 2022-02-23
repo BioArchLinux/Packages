@@ -3,7 +3,7 @@
 _pkgname=MethReg
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='Assessing the regulatory potential of DNA methylation regions or sites on gene transcription'
 arch=('any')
@@ -57,7 +57,7 @@ optdepends=(
   r-viper
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('992957d0728a5d2d3cc093abea670420fab2b580bf2d749ac5fc6413d467b8ab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
