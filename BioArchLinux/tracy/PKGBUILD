@@ -1,15 +1,15 @@
 # maintainer: Guoyi Zhang <GuoyiZhang at malacology dot net>
 
 pkgname=tracy
-pkgver=0.6.1
-pkgrel=5
+pkgver=0.7.1
+pkgrel=1
 pkgdesc="Basecalling, alignment, assembly and deconvolution of Sanger Chromatogram trace files. https://doi.org/10.1186/s12864-020-6635-8"
 arch=('x86_64')
 url="https://github.com/gear-genomics/tracy"
 license=('BSDv3')
 provides=('tracy')
 source=("https://github.com/gear-genomics/tracy/releases/download/v${pkgver}/tracy_v${pkgver}_linux_x86_64bit")
-sha256sums=('b6e1412f0589ca149493dd28401a397dfd5fff97254faaf4b55ffa598e50ab4c')
+sha256sums=('752c9b971dbad4cd8d2531ee6a846b78b91d716c5a3f0bb6ba0feab133df0246')
 
 package(){
 	cd "$srcdir"
