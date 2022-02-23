@@ -3,7 +3,7 @@
 _pkgname=ODER
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Optimising the Definition of Expressed Regions'
 arch=('any')
@@ -46,7 +46,7 @@ optdepends=(
   r-xfun
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3ae11a517052207e2fda4b3e2dcddaff36b2d38ae9acba7d089f376503448c0b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
