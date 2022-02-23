@@ -3,7 +3,7 @@
 _pkgname=TNBC.CMS
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='TNBC.CMS: Prediction of TNBC Consensus Molecular Subtypes'
 arch=('any')
@@ -28,7 +28,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('fd04ea5e0292e9864755baba5859304451c6f6ae23bd34b78a54c392d092e2c7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
