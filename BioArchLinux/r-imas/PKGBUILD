@@ -3,7 +3,7 @@
 _pkgname=IMAS
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.0
 pkgrel=1
 pkgdesc='Integrative analysis of Multi-omics data for Alternative Splicing'
 arch=('any')
@@ -34,7 +34,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6bc2c1e4c203a047ed3a69bb30e2214ecc364d7127b2c0cf7ccc436086c83180')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
