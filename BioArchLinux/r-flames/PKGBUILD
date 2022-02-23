@@ -4,7 +4,7 @@
 _pkgname=FLAMES
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.2
 pkgrel=1
 pkgdesc='FLAMES: Full Length Analysis of Mutations and Splicing in long read RNA-seq data'
 arch=('x86_64')
@@ -37,7 +37,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d1b7d08f62ecf8aef7c3615b86676b67530ed2733318c72c7eb0e0219d4eb808')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
