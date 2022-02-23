@@ -20,6 +20,7 @@ repo_depends:
 - r-timedate
 - r-vctrs
 - r-withr
+- r-hardhat
 update_on:
 - regex: recipes_([\d._-]+).tar.gz
   source: regex
