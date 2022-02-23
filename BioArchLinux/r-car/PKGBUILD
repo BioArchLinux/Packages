@@ -3,7 +3,7 @@
 _pkgname=car
 _pkgver=3.0-12
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.0.12
 pkgrel=1
 pkgdesc='Companion to Applied Regression'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('b899a6efae3842a90a2349d381dbcf4b4ed36bd03108ebe7380e81120e457302')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
