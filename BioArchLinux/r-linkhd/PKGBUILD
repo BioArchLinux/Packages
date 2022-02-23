@@ -3,7 +3,7 @@
 _pkgname=LinkHD
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='LinkHD: a versatile framework to explore and integrate heterogeneous data'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('6d054b83a82f1c3b1fc31f91ba57cd91efa788f426a62fd212e01438fc18c600')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
