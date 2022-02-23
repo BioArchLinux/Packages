@@ -12,6 +12,7 @@ license=('LGPL')
 depends=(
   r
   affx-fusion
+  make
 )
 optdepends=(
   r-affymetrixdatatestfiles
