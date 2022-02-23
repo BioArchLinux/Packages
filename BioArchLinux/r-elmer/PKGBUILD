@@ -3,7 +3,7 @@
 _pkgname=ELMER
 _pkgver=2.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.18.0
 pkgrel=1
 pkgdesc='Inferring Regulatory Element Landscapes and Transcription Factor Networks Using Cancer Methylomes'
 arch=('any')
@@ -62,7 +62,7 @@ optdepends=(
   r-webshot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ed88e5f4b43d15d3ad6309a305a763931cf92f5be7132b6f643311e753f6c54e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
