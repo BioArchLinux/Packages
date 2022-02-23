@@ -3,7 +3,7 @@
 _pkgname=NHPoisson
 _pkgver=3.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=3.3
 pkgrel=1
 pkgdesc='Modelling and Validation of Non Homogeneous Poisson Processes'
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-car
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4d452b03d13ba6f32f456a1a55a555d1a4e5c9b6559ef43d87617636592ad6c4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
