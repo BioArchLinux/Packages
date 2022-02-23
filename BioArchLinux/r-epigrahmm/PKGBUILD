@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=epigraHMM
-_pkgver=1.2.1
+_pkgver=1.2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.2
 pkgrel=1
 pkgdesc='Epigenomic R-based analysis with hidden Markov models'
 arch=('x86_64')
@@ -45,7 +45,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('63a98708fd79eef88629a9c5a169ce8a882440e6e36a00d7ccbaa6cde0f6d533')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
