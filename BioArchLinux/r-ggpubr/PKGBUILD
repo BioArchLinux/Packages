@@ -3,7 +3,7 @@
 _pkgname=ggpubr
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.0
 pkgrel=1
 pkgdesc="'ggplot2' Based Publication Ready Plots"
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-rcolorbrewer
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('abb21ec0b1ae3fa1c58eedca2d59b9b009621b30e3660f1247b3880c5fa50675')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
