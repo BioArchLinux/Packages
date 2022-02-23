@@ -3,7 +3,7 @@
 _pkgname=pvca
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Principal Variance Component Analysis (PVCA)'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=(
   r-golubesets
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('cfb35126cf8863acff8e61510b077ec7bfa361b4ee0d39fc701a499c04cba489')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
