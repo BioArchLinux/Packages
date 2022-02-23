@@ -9,6 +9,7 @@ repo_depends:
 - r-rappdirs
 - r-rcpp
 - r-withr
+- r-rcpptoml
 update_on:
 - regex: reticulate_([\d._-]+).tar.gz
   source: regex
