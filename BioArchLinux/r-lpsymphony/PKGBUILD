@@ -13,6 +13,7 @@ license=('EPL')
 depends=(
   r
   coin-or-coinutils
+  symphony
 )
 optdepends=(
   r-biocstyle

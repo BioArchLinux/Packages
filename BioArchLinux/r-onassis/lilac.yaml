@@ -16,6 +16,7 @@ repo_depends:
 - r-dendextend
 - r-ggplot2
 - r-ggfortify
+- r-clusteval
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

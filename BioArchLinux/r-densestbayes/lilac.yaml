@@ -10,6 +10,7 @@ repo_depends:
 - r-rcppparallel
 - r-rstan
 - r-stanheaders
+- r-rstantools
 update_on:
 - regex: densEstBayes_([\d._-]+).tar.gz
   source: regex

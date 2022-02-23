@@ -1,0 +1,8 @@
+build_prefix: BioArchLinux-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+update_on:
+- regex: href="/coin-or/SYMPHONY/releases/tag/releases%2F(\d+.\d+.\d+)"
+  source: regex
+  url: "https://github.com/coin-or/SYMPHONY/tags"

@@ -9,6 +9,10 @@ repo_depends:
 - r-nnls
 - r-reffreeewas
 - r-summarizedexperiment
+- r-doparallel
+- r-ggplot2
+- r-tidyr
+- r-ggally
 update_on:
 - regex: TOAST_([\d._-]+).tar.gz
   source: regex

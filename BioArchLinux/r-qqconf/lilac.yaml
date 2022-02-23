@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-distr
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-rlang
+- r-robustbase
+update_on:
+- regex: qqconf_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=qqconf

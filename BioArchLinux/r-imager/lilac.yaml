@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-downloader
+- r-igraph
+- r-jpeg
+- r-magrittr
+- r-png
+- r-purrr
+- r-rcpp
+- r-readbitmap
+- r-stringr
+update_on:
+- regex: imager_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=imager

@@ -12,6 +12,7 @@ repo_depends:
 - r-rcurl
 - r-ggplot2
 - r-reshape2
+- r-kegg.db
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

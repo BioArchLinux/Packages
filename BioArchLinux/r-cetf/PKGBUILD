@@ -32,7 +32,7 @@ depends=(
   r-s4vectors
   r-summarizedexperiment
   libxml2
-  gfortran
+  gcc-fortran
   curl
   openssl
   zlib

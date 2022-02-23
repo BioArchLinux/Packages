@@ -10,6 +10,7 @@ repo_depends:
 - r-rlang
 - r-tidyselect
 - r-vctrs
+- r-cpp11
 update_on:
 - regex: arrow_([\d._-]+).tar.gz
   source: regex

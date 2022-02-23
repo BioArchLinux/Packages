@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-dplyr
 - r-rcpp
+- r-poorman
 update_on:
 - regex: philentropy_([\d._-]+).tar.gz
   source: regex

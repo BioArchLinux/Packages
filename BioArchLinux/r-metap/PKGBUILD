@@ -15,6 +15,7 @@ depends=(
   r-mutoss
   r-rdpack
   r-tfisher
+  r-qqconf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('d9b511607d0e37de4428549061c5577a4e812b0f55bb7ed887d1b24711f58c42')

@@ -6,3 +6,6 @@ update_on:
 - regex: rmio_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=rmio
+repo_depends:
+- r-bigassertr
+- r-ff

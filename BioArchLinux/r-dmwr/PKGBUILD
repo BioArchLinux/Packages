@@ -1,0 +1,35 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=DMwR
+_pkgver=0.4.1
+pkgname=r-${_pkgname,,}
+pkgver=0.4.1
+pkgrel=1
+pkgdesc='Data Mining with R, learning with case studies'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-xts
+  r-quantmod
+  r-zoo
+  r-abind
+  r-rpart
+  r-class
+  r-rocr
+  r-lattice
+)
+source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
+sha256sums=('c3f263e9055b9dbcfcaa387c7ef7f09fa17db8997982590a3d2b14554275ee67')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+#  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
+# vim:set ts=2 sw=2 et:

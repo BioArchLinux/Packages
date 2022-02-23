@@ -7,6 +7,7 @@ repo_depends:
 - r-mutoss
 - r-rdpack
 - r-tfisher
+- r-qqconf
 update_on:
 - regex: metap_([\d._-]+).tar.gz
   source: regex

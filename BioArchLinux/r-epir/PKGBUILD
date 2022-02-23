@@ -15,6 +15,7 @@ depends=(
   r-lubridate
   r-pander
   r-sf
+  r-zoo
 )
 optdepends=(
   r-foreign

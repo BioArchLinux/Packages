@@ -10,6 +10,7 @@ repo_depends:
 - r-delayedarray
 - r-summarizedexperiment
 - r-phyloseq
+- r-dmwr
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

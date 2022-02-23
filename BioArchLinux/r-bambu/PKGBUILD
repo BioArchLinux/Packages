@@ -27,6 +27,7 @@ depends=(
   r-summarizedexperiment
   r-tidyr
   r-xgboost
+  r-bsgenome
 )
 optdepends=(
   r-annotationdbi

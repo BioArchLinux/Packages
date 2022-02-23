@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-rcpp
+- r-fstcore
 update_on:
 - regex: fst_([\d._-]+).tar.gz
   source: regex

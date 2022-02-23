@@ -19,6 +19,7 @@ depends=(
   r-rcurl
   r-ggplot2
   r-reshape2
+  r-kegg.db
 )
 makedepends=(
   git

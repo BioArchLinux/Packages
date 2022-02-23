@@ -1,0 +1,17 @@
+build_prefix: BioArchLinux-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+update_on:
+- regex: DMwR_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/src/contrib/Archive/DMwR/
+repo_depends:
+- r-xts
+- r-quantmod
+- r-zoo
+- r-abind
+- r-rpart
+- r-class
+- r-rocr
+- r-lattice

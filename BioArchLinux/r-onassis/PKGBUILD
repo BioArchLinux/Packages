@@ -24,6 +24,7 @@ depends=(
   r-dendextend
   r-ggplot2
   r-ggfortify
+  r-clusteval
 )
 makedepends=(
   git

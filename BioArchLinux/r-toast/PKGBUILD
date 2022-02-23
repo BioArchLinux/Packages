@@ -17,6 +17,10 @@ depends=(
   r-nnls
   r-reffreeewas
   r-summarizedexperiment
+  r-doparallel
+  r-ggplot2
+  r-tidyr
+  r-ggally
 )
 optdepends=(
   r-biocstyle

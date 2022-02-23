@@ -20,6 +20,7 @@ depends=(
   r-rstan
   r-stanheaders
   make
+  r-rstantools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')

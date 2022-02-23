@@ -20,6 +20,7 @@ depends=(
   r-tidyselect
   r-vctrs
   gcc
+  r-cpp11
 )
 optdepends=(
   r-dbi

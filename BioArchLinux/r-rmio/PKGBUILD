@@ -11,6 +11,8 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-bigassertr
+  r-ff
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('01bc88a98324fb54429d9435fd2680dfa08939281bde90670c322a3e8835cd3e')
