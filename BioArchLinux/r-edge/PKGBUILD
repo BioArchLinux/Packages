@@ -3,7 +3,7 @@
 _pkgname=edge
 _pkgver=2.26.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.26.0
 pkgrel=1
 pkgdesc='Extraction of Differential Gene Expression'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('51789324e598f45dd4a5a17bef0edc03039ba297265c2eeee00d2be26c7a9201')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
