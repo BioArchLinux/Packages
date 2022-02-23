@@ -3,7 +3,7 @@
 _pkgname=RTCGA
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.24.0
 pkgrel=1
 pkgdesc='The Cancer Genome Atlas Data Integration'
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2fcba430b57a7fa481662bc28896b3ff3b4532da6571c0228298d5235c2320c1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
