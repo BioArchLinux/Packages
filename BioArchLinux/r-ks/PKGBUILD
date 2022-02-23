@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ks
-_pkgver=1.13.3
+_pkgver=1.13.4
 pkgname=r-${_pkgname,,}
-pkgver=1.13.3
+pkgver=1.13.4
 pkgrel=1
 pkgdesc='Kernel Smoothing'
 arch=('x86_64')
@@ -27,7 +27,7 @@ optdepends=(
   r-rgl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('defb80df665d987f1751899f7a9809cb5a770f3c74266d7fbc7b9493616dce73')
+sha256sums=('272458134f225331209267723bcf40ae4962732733ee90e1b10f4c7db40f5597')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
