@@ -1,21 +1,26 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=ptw
-_pkgver=1.9-15
+_pkgname=RcppDE
+_pkgver=0.1.6
 pkgname=r-${_pkgname,,}
-pkgver=1.9.15
-pkgrel=2
-pkgdesc='Parametric Time Warping'
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Global Optimization by Differential Evolution in C++'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-nloptr
-  r-rcppde
+  r-rcpp
+  r-rcpparmadillo
+)
+optdepends=(
+  r-deoptim
+  r-inline
+  r-lattice
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('22fa003f280bc000f46bca88d69bf332b29bc68435115ba8044533b70bfb7b46')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

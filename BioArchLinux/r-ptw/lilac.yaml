@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-nloptr
+- r-rcppde
 update_on:
 - regex: ptw_([\d._-]+).tar.gz
   source: regex
