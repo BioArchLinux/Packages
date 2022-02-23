@@ -3,7 +3,7 @@
 _pkgname=PepsNMR
 _pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.12.0
 pkgrel=1
 pkgdesc='Pre-process 1H-NMR FID signals'
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('28a1a40a9056bf14718e141d8cd134858eb421fc8773f20a98a4de6ea65ca116')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
