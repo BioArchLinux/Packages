@@ -3,7 +3,7 @@
 _pkgname=cyanoFilter
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Phytoplankton Population Identification using Cell Pigmentation and/or Complexity'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a041244a7fe0a46f665280731582a3a5d33bcd1b35bfb46a7ae957ca46ea3d04')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
