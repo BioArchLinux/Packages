@@ -3,7 +3,7 @@
 
 pkgname=modeltest-gui
 pkgver=0.1.7
-pkgrel=5
+pkgrel=6
 pkgdesc="A New and Scalable Tool for the Selection of DNA and Protein Evolutionary Models. https://doi.org/10.1093/molbev/msz189"
 url='https://github.com/ddarriba/modeltest'
 arch=('x86_64')
