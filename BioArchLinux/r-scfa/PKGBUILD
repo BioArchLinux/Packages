@@ -3,7 +3,7 @@
 _pkgname=SCFA
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='SCFA: Subtyping via Consensus Factor Analysis'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d43489634f0e6565c5bdb78f1b8362982b4c76b5257665d8b8b0ec68d161a0a0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
