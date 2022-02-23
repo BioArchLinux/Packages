@@ -3,7 +3,7 @@
 _pkgname=RNAdecay
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.14.0
 pkgrel=1
 pkgdesc='Maximum Likelihood Decay Modeling of RNA Degradation Data'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('38c6fb6f60856d392421d932b114c3d28f8b4097254393541d9bf0810fd2a11f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
