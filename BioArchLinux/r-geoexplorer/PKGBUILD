@@ -3,7 +3,7 @@
 _pkgname=GEOexplorer
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='GEOexplorer: an R/Bioconductor package for gene expression analysis and visualisation'
 arch=('any')
@@ -38,7 +38,7 @@ optdepends=(
   r-usethis
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('0b6e1d9f0c78071263e408d008ec40a95fe0cc084d03480810392d126e930f06')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
