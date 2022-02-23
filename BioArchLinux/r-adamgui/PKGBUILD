@@ -3,7 +3,7 @@
 _pkgname=ADAMgui
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Activity and Diversity Analysis Module Graphical User Interface'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-markdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('988fd85534048a3b98c645ecd57d8e1de0642f41bdd3440450f045d9d25a0658')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
