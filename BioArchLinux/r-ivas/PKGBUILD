@@ -3,7 +3,7 @@
 _pkgname=IVAS
 _pkgver=2.14.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.14.0
 pkgrel=1
 pkgdesc='Identification of genetic Variants affecting Alternative Splicing'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('db199ed86c1e051caee0d6f5af60febdb3606840a46bc961482f561503889c09')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
