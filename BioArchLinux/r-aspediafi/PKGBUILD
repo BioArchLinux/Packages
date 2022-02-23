@@ -3,7 +3,7 @@
 _pkgname=ASpediaFI
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='ASpedia-FI: Functional Interaction Analysis of Alternative Splicing Events'
 arch=('any')
@@ -40,7 +40,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a7ff6801f5ba539d9dd3cdbd23e70ebaccc93ecf32b7c4374e3d52c8468e6360')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
