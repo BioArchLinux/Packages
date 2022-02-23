@@ -3,7 +3,7 @@
 _pkgname=POMA
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='User-friendly Workflow for Metabolomics and Proteomics Data Analysis'
 arch=('any')
@@ -48,7 +48,7 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4b3399621028a8096c4a1c84bd4b0bfb1c137d1309a5a4ad68de688f65c43086')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
