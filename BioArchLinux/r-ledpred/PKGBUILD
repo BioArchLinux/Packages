@@ -3,7 +3,7 @@
 _pkgname=LedPred
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.28.0
 pkgrel=1
 pkgdesc='Learning from DNA to Predict Enhancers'
 arch=('any')
@@ -23,7 +23,7 @@ depends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7ccfc3191cddecf07d96ab1067bd21d152d4613e1c75087bd164f4be1526924f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
