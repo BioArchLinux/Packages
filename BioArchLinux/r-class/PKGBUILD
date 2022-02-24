@@ -3,7 +3,7 @@
 _pkgname=class
 _pkgver=7.3-20
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=7.3.20
 pkgrel=1
 pkgdesc='Functions for Classification'
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e65b046bc72b312ff0c5dc7feba4fa3e9bc63387274d44911493782b85f65483')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
