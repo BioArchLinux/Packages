@@ -3,7 +3,7 @@
 _pkgname=akima
 _pkgver=0.6-2.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.2.3
 pkgrel=1
 pkgdesc='Interpolation of Irregularly and Regularly Spaced Data'
 arch=('x86_64')
@@ -17,7 +17,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('3b9b180c4298fb2e96f04ec686dd31753901542496743d81694ea01cac506a43')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
