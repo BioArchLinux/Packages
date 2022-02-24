@@ -9,6 +9,7 @@ repo_depends:
 - r-magrittr
 - r-rlang
 - r-robustbase
+- r-rcpp
 update_on:
 - regex: qqconf_([\d._-]+).tar.gz
   source: regex
