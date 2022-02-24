@@ -4,7 +4,7 @@ _pkgname=heatmap.plus
 _pkgver=1.3
 pkgname=r-${_pkgname,,}
 pkgver=1.3
-pkgrel=3
+pkgrel=4
 pkgdesc='Allows heatmap matrix to have non-identical X- and Y-dimensions. Allows multiple tracks of annotation for RowSideColors and ColSideColors'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
