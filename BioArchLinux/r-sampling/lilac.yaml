@@ -6,3 +6,6 @@ update_on:
 - regex: sampling_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=sampling
+repo_depends:
+- r-mass
+- r-lpsolve
