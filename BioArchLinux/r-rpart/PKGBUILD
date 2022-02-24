@@ -3,7 +3,7 @@
 _pkgname=rpart
 _pkgver=4.1.16
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=4.1.16
 pkgrel=1
 pkgdesc='Recursive Partitioning and Regression Trees'
 arch=('x86_64')
@@ -16,7 +16,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('27ec75258a5a3459ad999f5f36760ead974930744249605bf8465f234f31425c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
