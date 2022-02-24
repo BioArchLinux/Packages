@@ -4,7 +4,7 @@
 _pkgname=BiBitR
 _pkgver=0.3.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.1
 pkgrel=1
 pkgdesc='R Wrapper for Java Implementation of BiBit'
 arch=('any')
@@ -19,7 +19,7 @@ depends=(
   java-runtime-common
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('66bbbedfcac8abcc1276ea5ceb4b05f68b8a24f3299220075950046e0dbcdc71')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
