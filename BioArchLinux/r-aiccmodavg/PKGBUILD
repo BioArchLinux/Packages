@@ -4,7 +4,7 @@ _pkgname=AICcmodavg
 _pkgver=2.3-1
 pkgname=r-${_pkgname,,}
 pkgver=2.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Model Selection and Multimodel Inference Based on (Q)AIC(c)'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
