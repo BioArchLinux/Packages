@@ -3,7 +3,7 @@
 _pkgname=OCplus
 _pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.68.0
 pkgrel=1
 pkgdesc='Operating characteristics plus sample size and local fdr for microarray experiments'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-multtest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('d446bf1ed9d89ac798a5463b937ecc89cb26f86102cbdd470407bd767cdc4134')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
