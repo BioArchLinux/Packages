@@ -4,7 +4,7 @@
 _pkgname=unmarked
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.1
 pkgrel=1
 pkgdesc='Models for Data from Unmarked Animals'
 arch=('x86_64')
@@ -21,7 +21,7 @@ depends=(
   make
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('48474f396c4a91e257490025ede6a998883683e8020a898fff5d4e23a3764bfd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
