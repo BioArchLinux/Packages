@@ -4,7 +4,7 @@ _pkgname=rpart
 _pkgver=4.1.16
 pkgname=r-${_pkgname,,}
 pkgver=4.1.16
-pkgrel=2
+pkgrel=3
 pkgdesc='Recursive Partitioning and Regression Trees'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
