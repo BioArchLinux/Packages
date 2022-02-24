@@ -36,12 +36,12 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
 sha256sums=('98305512fffa397b38d7d412fb7de59b5320b9290d03308f06df25aa576ea410'
             'ee468bac3f162ee1d3a23ad59fb8ea5a050e03eb9a96d35950e16fbadc1b95ee')
 
-prepare() {
-  cd "${srcdir}/${_pkgname}"
+#prepare() {
+#  cd "${srcdir}/${_pkgname}"
 
   # fix issues with transition to the strict R headers
-  patch -Np0 -i "${srcdir}/fix_strictrhdrs.patch"
-}
+#  patch -Np0 -i "${srcdir}/fix_strictrhdrs.patch"
+#}
 
 build() {
   # create staging directory for installation
