@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=speedglm
-_pkgver=0.3-3
+_pkgver=0.3-4
 pkgname=r-${_pkgname,,}
-pkgver=0.3.3
-pkgrel=2
+pkgver=0.3.4
+pkgrel=1
 pkgdesc='Fitting Linear and Generalized Linear Models to Large Data Sets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d065d0ee42fb772760fca8d97ad2aa56cd76b1d9ecb4e97478ec362429e16738')
+sha256sums=('1a12db7dbceaaf5cf4f9a0c03e2a2b9f32e91b697daf2ccfe81bbae9ac3046ce')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
