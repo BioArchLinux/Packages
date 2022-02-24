@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=fst
-_pkgver=0.9.4
+_pkgver=0.9.8
 pkgname=r-${_pkgname,,}
-pkgver=0.9.4
-pkgrel=2
+pkgver=0.9.8
+pkgrel=1
 pkgdesc='Lightning Fast Serialization of Data Frames'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('39cb959ae17fe504d34903a8799e9428e71a8e5d49487fad4dbc22cefba78c6f')
+sha256sums=('44c7e889879c2a3a704b70152196e27b6fc1d700062056f9a9c0a49cb98d2665')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
