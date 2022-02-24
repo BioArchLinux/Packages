@@ -17,6 +17,7 @@ depends=(
   r-magrittr
   r-rlang
   r-robustbase
+  r-rcpp
 )
 optdepends=(
   r-knitr
