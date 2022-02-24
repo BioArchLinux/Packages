@@ -4,7 +4,7 @@ _pkgname=class
 _pkgver=7.3-20
 pkgname=r-${_pkgname,,}
 pkgver=7.3.20
-pkgrel=1
+pkgrel=2
 pkgdesc='Functions for Classification'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
