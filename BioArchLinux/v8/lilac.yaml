@@ -13,4 +13,4 @@ update_on:
     url: https://chromium.googlesource.com/v8/v8.git/+refs
     regex: (\d+.\d+)-lkgr
 
-time_limit_hours: 6
+time_limit_hours: 12
