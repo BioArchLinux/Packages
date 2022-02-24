@@ -10,7 +10,5 @@ post_build: git_pkgbuild_commit
 
 update_on:
   - source: regex
-    url: https://chromium.googlesource.com/v8/v8.git/+refs
-    regex: (\d+.\d+)-lkgr
-
-time_limit_hours: 12
+    url: https://www.garbuszus.de/archpkgs/x86_64/
+    regex: 'v8-r-(\d+.\d+.\d+.\d+)-1-x86_64.pkg.tar.zst'
