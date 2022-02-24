@@ -3,7 +3,7 @@
 _pkgname=deconstructSigs
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='Identifies Signatures Present in a Tumor Sample'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2ab8f6c0fd674bd270035ba2112f1a79d63de1155ba9698c4169c92196059d04')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
