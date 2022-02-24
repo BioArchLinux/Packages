@@ -3,7 +3,7 @@
 _pkgname=BioMM
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='BioMM: Biological-informed Multi-stage Machine learning framework for phenotype prediction using omics data'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('e9eff67fd9e6c5063474c3ab5b8a154f5f3b8faf3fcc0b1856f378d21d7739ef')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
