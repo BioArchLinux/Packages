@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=
+Encoding=UTF-8
+Exec=wine /usr/share/tnt-gui/tnt.exe
+GenericName=
+GenericName[zh]=
+Icon=/usr/share/tnt-gui/tnt.png
+MimeType=
+Name=TNT
+Name[zh]=TNT
+ServiceTypes=
+SwallowExec=
+SwallowTitle=
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=root
+
