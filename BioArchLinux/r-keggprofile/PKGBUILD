@@ -2,7 +2,7 @@
 _pkgname=KEGGprofile
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.36.0
 pkgrel=1
 pkgdesc='An annotation and visualization package for multi-types and multi-groups expression data in KEGG pathway'
 arch=('any')
