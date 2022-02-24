@@ -11,6 +11,6 @@ post_build: git_pkgbuild_commit
 update_on:
   - source: regex
     url: https://chromium.googlesource.com/v8/v8.git/+refs
-    regex: href="/v8/v8\.git/+/refs/heads/(\d+.\d+)-lkgr"
+    regex: (\d+.\d+)-lkgr
 
 time_limit_hours: 6

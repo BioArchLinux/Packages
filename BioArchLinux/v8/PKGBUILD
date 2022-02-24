@@ -19,7 +19,7 @@ makedepends=('git' 'lld' 'python3')
 conflicts=('v8-r' 'v8-3.14' 'v8.3.14-bin' 'v8-6.7-static' 'v8-static-gyp' 'v8-static-gyp-5.4')
 provides=('v8')
 _pkgver=$pkgver-lkgr
-source=("depot_tools::https://chromium.googlesource.com/v8/v8.git/+archive/refs/heads/${pkgver}-lkgr.tar.gz"
+source=("depot_tools::git+https://chromium.googlesource.com/chromium/tools/depot_tools.git"
         "v8.pc"
         "v8_libbase.pc"
         "v8_libplatform.pc"
