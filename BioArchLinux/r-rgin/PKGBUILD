@@ -12,6 +12,7 @@ license=('MIT')
 depends=(
   r
   r-rcppeigen
+  r-rcpp
 )
 optdepends=(
   r-knitr

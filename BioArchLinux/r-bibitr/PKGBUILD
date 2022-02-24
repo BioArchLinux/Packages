@@ -16,7 +16,7 @@ depends=(
   r-dendextend
   r-randomcolor
   r-viridis
-  java-common-runtime
+  java-runtime-common
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')

@@ -14,7 +14,7 @@ depends=(
   r-gplots
   r-signal
   r-r2html
-  r-heat.maps
+  r-heatmaps
 )
 makedepends=(
   git

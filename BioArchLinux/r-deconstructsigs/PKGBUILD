@@ -1,28 +1,23 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=qqconf
-_pkgver=1.1.1
+_pkgname=deconstructSigs
+_pkgver=1.8.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Creates Simultaneous Testing Bands for QQ-Plots'
-arch=('x86_64')
+pkgdesc='Identifies Signatures Present in a Tumor Sample'
+arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-distr
-  r-dplyr
-  r-ggplot2
-  r-magrittr
-  r-rlang
-  r-robustbase
-  r-rcpp
-  fftw
+  r-bsgenome
+  r-bsgenome.hsapiens.ucsc.hg19
+  r-genomeinfodb
+  r-reshape2
 )
 optdepends=(
-  r-knitr
-  r-rmarkdown
+  r-variantannotation
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
