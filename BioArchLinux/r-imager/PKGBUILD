@@ -5,7 +5,7 @@ _pkgname=imager
 _pkgver=0.42.11
 pkgname=r-${_pkgname,,}
 pkgver=0.42.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Image Processing Library Based on 'CImg'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
