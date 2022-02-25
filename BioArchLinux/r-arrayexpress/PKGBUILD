@@ -3,7 +3,7 @@
 _pkgname=ArrayExpress
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.54.0
 pkgrel=1
 pkgdesc='Access the ArrayExpress Microarray Database at EBI and build Bioconductor data structures: ExpressionSet, AffyBatch, NChannelSet'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-affy
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7127a8cb4ccfa3f3dc3d71a08e1c963c4a7f22723ed62cb10e1d702a33f3dbe5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
