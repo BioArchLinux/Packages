@@ -3,7 +3,7 @@
 _pkgname=DrugVsDisease
 _pkgver=2.36.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.36.0
 pkgrel=1
 pkgdesc='Comparison of disease and drug profiles using Gene set Enrichment Analysis'
 arch=('any')
@@ -28,7 +28,7 @@ depends=(
   r-xtable
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('5e7d321bd3bd0800a465757bf79cf83adbb6fa042cd8dec2278c40ae5e64f4a6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
