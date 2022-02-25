@@ -4,7 +4,7 @@
 _pkgname=ArrayExpressHTS
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.0
 pkgrel=1
 pkgdesc='ArrayExpress High Throughput Sequencing Processing Pipeline'
 arch=('x86_64')
@@ -35,7 +35,7 @@ depends=(
   make
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('1110aefa48057df2685819fbfdc81c1f8df227ea4db25e845d06f8027c6b56d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
