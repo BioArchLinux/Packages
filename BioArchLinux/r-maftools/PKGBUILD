@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=maftools
-_pkgver=2.10.0
+_pkgver=2.10.05
 pkgname=r-${_pkgname,,}
-pkgver=2.10.0
-pkgrel=2
+pkgver=2.10.05
+pkgrel=1
 pkgdesc='Summarize, Analyze and Visualize MAF Files'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -37,7 +37,7 @@ optdepends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cdd90412aa3cc19ac3564c4af4532e7cefd5c46249af80e800e8bfc8791f1ce9')
+sha256sums=('f394b026dc2cfa8c9cabcec9189fb1c1bc3096d8f709939572b3f574169268d4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
