@@ -6,7 +6,7 @@ repo_depends:
 - r-gplots
 - r-signal
 - r-r2html
-- r-heatmaps
+- r-heatmap.plus
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

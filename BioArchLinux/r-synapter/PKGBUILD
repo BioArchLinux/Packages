@@ -12,7 +12,6 @@ license=('GPL')
 depends=(
   r
   r-rcolorbrewer
-  r-lattice
   r-qvalue
   r-multtest
   r-biobase

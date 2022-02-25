@@ -4,7 +4,6 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-rcolorbrewer
-- r-lattice
 - r-qvalue
 - r-multtest
 - r-biobase

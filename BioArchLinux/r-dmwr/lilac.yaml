@@ -11,7 +11,4 @@ repo_depends:
 - r-quantmod
 - r-zoo
 - r-abind
-- r-rpart
-- r-class
 - r-rocr
-- r-lattice

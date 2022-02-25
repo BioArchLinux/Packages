@@ -1,26 +1,18 @@
-# system requirements: GNU make
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=lpsymphony
-_pkgver=1.22.0
+_pkgname=GFA
+_pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Symphony integer linear programming solver in R'
-arch=('x86_64')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('EPL')
+pkgdesc='Group Factor Analysis'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
 depends=(
   r
-  symphony
 )
-optdepends=(
-  r-biocstyle
-  r-knitr
-  r-slam
-  r-testthat
-)
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
 
 build() {

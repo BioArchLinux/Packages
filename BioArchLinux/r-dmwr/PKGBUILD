@@ -15,10 +15,7 @@ depends=(
   r-quantmod
   r-zoo
   r-abind
-  r-rpart
-  r-class
   r-rocr
-  r-lattice
 )
 source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
 sha256sums=('c3f263e9055b9dbcfcaa387c7ef7f09fa17db8997982590a3d2b14554275ee67')
