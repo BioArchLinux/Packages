@@ -4,7 +4,6 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-ebcoexpress
-- r-mass
 - r-igraph
 - r-pvclust
 - r-gdm

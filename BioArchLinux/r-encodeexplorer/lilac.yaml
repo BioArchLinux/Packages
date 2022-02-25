@@ -15,7 +15,7 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-genomeinfodb
-- r-encodeexplordata
+- r-encodexplorerdata
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

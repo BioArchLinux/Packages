@@ -12,7 +12,6 @@ license=('GPL')
 depends=(
   r
   r-ebcoexpress
-  r-mass
   r-igraph
   r-pvclust
   r-gdm

@@ -23,7 +23,7 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-genomeinfodb
-  r-encodeexplordata
+  r-encodexplorerdata
 )
 makedepends=(
   git

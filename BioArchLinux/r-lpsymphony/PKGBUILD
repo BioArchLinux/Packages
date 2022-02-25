@@ -12,7 +12,8 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('EPL')
 depends=(
   r
-  symphony
+  coin-or-coinutils
+  make
   glpk
 )
 optdepends=(
