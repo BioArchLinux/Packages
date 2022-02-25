@@ -4,7 +4,7 @@
 _pkgname=crossmeta
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.20.0
 pkgrel=1
 pkgdesc='Cross Platform Meta-Analysis of Microarray Data'
 arch=('any')
@@ -59,7 +59,7 @@ optdepends=(
   r-tximportdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('a48a0ee5cc0fe8bf8fdfa898e4421ca3bd72ace4896bfc3dfd95d05c7494ddf5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
