@@ -13,6 +13,7 @@ license=('EPL')
 depends=(
   r
   symphony
+  glpk
 )
 optdepends=(
   r-biocstyle
