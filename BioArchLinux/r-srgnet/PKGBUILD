@@ -18,6 +18,8 @@ depends=(
   r-limma
   r-matrixstats
   r-hmisc
+  r-dmwr
+  r-gbm
 )
 makedepends=(
   git
