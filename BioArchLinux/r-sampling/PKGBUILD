@@ -3,7 +3,7 @@
 _pkgname=sampling
 _pkgver=2.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.9
 pkgrel=1
 pkgdesc="Survey Sampling"
 arch=('any')
@@ -14,7 +14,7 @@ depends=(
   r-lpsolve
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('7f5ba5978f6cdbbbdb6f51958197b28b6fc63e7eeee59e6845ea09fb37d1b187')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
