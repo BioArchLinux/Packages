@@ -3,7 +3,7 @@
 _pkgname=cn.farms
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.42.0
 pkgrel=1
 pkgdesc='cn.FARMS - factor analysis for copy number estimation'
 arch=('x86_64')
@@ -28,7 +28,7 @@ optdepends=(
   r-pd.mapping250k.sty
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('95a2b19bd735d6bae33939c67136814f7afc9dd419dc2d71e465f39045b95918')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
