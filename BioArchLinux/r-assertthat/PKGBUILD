@@ -4,7 +4,7 @@ _pkgname=assertthat
 _pkgver=0.2.1
 pkgname=r-${_pkgname,,}
 pkgver=0.2.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Easy Pre and Post Assertions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
