@@ -10,6 +10,8 @@ repo_depends:
 - r-limma
 - r-matrixstats
 - r-hmisc
+- r-dmwr
+- r-gbm
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
