@@ -3,7 +3,7 @@
 _pkgname=synapter
 _pkgver=2.18.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.18.0
 pkgrel=1
 pkgdesc='Label-free data analysis pipeline for optimal identification and quantitation'
 arch=('any')
