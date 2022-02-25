@@ -3,7 +3,7 @@
 _pkgname=pdInfoBuilder
 _pkgver=1.58.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.58.0
 pkgrel=1
 pkgdesc='Platform Design Information Package Builder'
 arch=('x86_64')
@@ -23,7 +23,7 @@ depends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('20c8666fcd2e2821bac95ca579e9205443137676634fea3eb77ea7a7ef9d60ee')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
