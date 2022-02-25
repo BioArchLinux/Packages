@@ -4,7 +4,7 @@ _pkgname=DMwR
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Data Mining with R, learning with case studies'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ depends=(
   r-rocr
 )
 source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${pkgver}.tar.gz")
-sha256sums=('c3f263e9055b9dbcfcaa387c7ef7f09fa17db8997982590a3d2b14554275ee67')
+sha256sums=('8ead6a21194e165d516196259c2d5f3b4d587b2e3dc6001023f5edf6139d3ee3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
