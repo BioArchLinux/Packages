@@ -19,7 +19,7 @@ optdepends=(
   r-r.utils
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('54b1d597c5abeebd687292bd5fd370ed89282b68f5f251456f871ae92272a0ad')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}" || bash -c "ls /usr/include/fusion && ls fusion/calvin_files/data/src/"
