@@ -3,13 +3,13 @@
 
 pkgname=tiger
 pkgver=1.04
-pkgrel=7
+pkgrel=3
 pkgdesc="Identifying rapidly-evolving characters in evolutionary data. https://doi.org/10.1093/sysbio/syr064"
 arch=('x86_64')
 url="http://mcinerneylab.com/software/tiger/",""
 license=('GPL3')
 depends=(
-	'python2>=2.6'
+	'python'
 )
 source=("https://github.com/starsareintherose/tiger/releases/download/${pkgver}/tiger_unix_${pkgver}.zip")
 md5sums=('5c4aebdd3e0357f0f41f5f93d4e17bd0')
