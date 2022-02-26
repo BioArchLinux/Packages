@@ -12,6 +12,7 @@ license=('LGPL')
 depends=(
   r
   make
+  gcc
 )
 optdepends=(
   r-affymetrixdatatestfiles
