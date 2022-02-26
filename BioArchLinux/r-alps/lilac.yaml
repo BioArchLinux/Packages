@@ -3,7 +3,7 @@ maintainers:
 - github: starsareintherose
   email: starsareintherose@outlook.com
 repo_depends:
-- r-asserthat
+- r-assertthat
 - r-biocparallel
 - r-chipseeker
 - r-corrplot
