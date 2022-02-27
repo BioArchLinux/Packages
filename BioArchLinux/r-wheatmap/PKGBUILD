@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=wheatmap
-_pkgver=0.1.0
+_pkgver=0.2.0
 pkgname=r-${_pkgname,,}
-pkgver=0.1.0
-pkgrel=2
+pkgver=0.2.0
+pkgrel=1
 pkgdesc='Incrementally Build Complex Plots using Natural Semantics'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fe37cefe41dcae15b82c813230e467bf5197fd4c174f3e5b1c7c9314fcdf3db0')
+sha256sums=('b76dff6f668874d08acb5f6d3849288645470ab2e3be34b6eabda065336d9118')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
