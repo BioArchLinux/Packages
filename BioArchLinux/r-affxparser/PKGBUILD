@@ -3,7 +3,7 @@
 _pkgname=affxparser
 _pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.66.0
 pkgrel=1
 pkgdesc='Affymetrix File Parsing SDK'
 arch=('x86_64')
