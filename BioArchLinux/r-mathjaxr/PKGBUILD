@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=mathjaxr
-_pkgver=1.4-0
+_pkgver=1.6-0
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
-pkgrel=2
+pkgver=1.6.0
+pkgrel=1
 pkgdesc="Using 'Mathjax' in Rd Files"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-js
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ba57378236d593a39c5839054adc5473526de0c8f05b7eeb87c99438496ddc67')
+sha256sums=('ecc47607111b788d84789459af7f4f9102719f98640b7a23bd5a4eb1a6d3c179')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
