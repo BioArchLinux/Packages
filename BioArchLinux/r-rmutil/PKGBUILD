@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rmutil
-_pkgver=1.1.8
+_pkgver=1.1.9
 pkgname=r-${_pkgname,,}
-pkgver=1.1.8
-pkgrel=2
+pkgver=1.1.9
+pkgrel=1
 pkgdesc='Utilities for Nonlinear Regression and Repeated Measurements Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0f8d7008df646bf899bbf9f97245da1df7f42e9b68da5e0e9c3d3f71e05151f7')
+sha256sums=('3a68cc4058394fcb6bab960a680bad939ad7270888f4c271ca6438e49670333c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
