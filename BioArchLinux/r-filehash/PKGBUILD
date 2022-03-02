@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=filehash
-_pkgver=2.4-2
+_pkgver=2.4-3
 pkgname=r-${_pkgname,,}
-pkgver=2.4.2
-pkgrel=2
+pkgver=2.4.3
+pkgrel=1
 pkgdesc='Simple Key-Value Database'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b6d056f75d45e315943a4618f5f62802612cd8931ba3f9f474b595140a3cfb93')
+sha256sums=('f394e2c93233e8ad1c104562ea9349855dc8e303131f559cd59834f9aa3e41bd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
