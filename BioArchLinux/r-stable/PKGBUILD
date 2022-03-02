@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=stable
-_pkgver=1.1.5
+_pkgver=1.1.6
 pkgname=r-${_pkgname,,}
-pkgver=1.1.5
+pkgver=1.1.6
 pkgrel=1
 pkgdesc='Probability Functions and Generalized Regression Models for Stable Distributions'
 arch=('x86_64')
@@ -15,7 +15,7 @@ depends=(
   r-stabledist
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('41cc59a64f1a5b5f09ba274ba0b7992b8d2506401b86dce5d806bb9288b437dc')
+sha256sums=('2238788a35b5aa9e175ad7b92348640c3dcad68b6ab0a0bc04aeec9084d29da4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
