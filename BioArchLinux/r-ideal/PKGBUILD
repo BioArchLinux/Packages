@@ -3,7 +3,7 @@
 _pkgname=ideal
 _pkgver=1.18.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.18.1
 pkgrel=1
 pkgdesc='Interactive Differential Expression AnaLysis'
 arch=('any')
