@@ -12,7 +12,11 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('EPL')
 depends=(
   r
+  coin-or-asl
+  coin-or-clp
   coin-or-coinutils
+  coin-or-osi
+  coin-or-cgl
   make
   glpk
 )
@@ -23,10 +27,16 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('da49e8f36d5a479ead3a1e43e5a7c5676849b9b196f00ea4d95fb1e7c24262af')
+
+prepare() {
+  sed -i 's#CXXFLAGS="-w -g -O2"#CXXFLAGS="-w -g -O2 -I/usr/include/coin"#' "${srcdir}/${_pkgname}/configure"
+  tar cfz "${_pkgname}.tar.gz" "${_pkgname}"
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  #R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
 }
 
 package() {
