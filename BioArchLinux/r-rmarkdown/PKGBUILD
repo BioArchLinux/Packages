@@ -21,6 +21,7 @@ depends=(
   r-tinytex
   r-xfun
   r-yaml
+  r-bslib
 )
 optdepends=(
   r-bslib
