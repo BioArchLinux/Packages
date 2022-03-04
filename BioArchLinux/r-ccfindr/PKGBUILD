@@ -10,6 +10,7 @@ arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
+  gsl
   r
   r-ape
   r-gtools
@@ -30,7 +31,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('ed5387dfbd5ffb03e127b8860cb563c69bbfa601da7120d5a4cec2c9e6d5aa03')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
