@@ -3,7 +3,7 @@
 
 pkgname=winclada
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Winclada‐ASADO"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/winclada/"
