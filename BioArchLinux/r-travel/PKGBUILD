@@ -1,4 +1,3 @@
-# system requirements: C++11 Windows: Dokan Linux&Mac: fuse, pkg-config
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Travel
@@ -26,10 +25,16 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('47c682da597b776436b5a03aef03782564266c5d478c052a8e49396d6044d24e')
+
+prepare() {
+  sed -i "7i #include <cstddef>" "${_pkgname}/src/class_Cache_block.h"
+  tar cfz "${_pkgname}.tar.gz" "${_pkgname}"
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  #R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
 }
 
 package() {
