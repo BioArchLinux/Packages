@@ -21,13 +21,21 @@ optdepends=(
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('b0cbde4bdb9f19dcbc1d745efcc5eebaa853ef767b7f338eefbc74d84aa4dbbf')
 
+prepare() {
+  sed -i 's#PKG_CXXFLAGS = #PKG_CXXFLAGS = -I/usr/lib/R/library/Rcpp/include #' "${_pkgname}/src/Makevars"
+  tar cfz "${_pkgname}.tar.gz" "${_pkgname}"
+}
+
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  #R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
 }
 
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
   cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
   install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  # delete unneeded object files
+  find "${pkgdir}/usr/lib/R/library/${_pkgname}" -type f -name "*.o" -delete
 }
 # vim:set ts=2 sw=2 et:
