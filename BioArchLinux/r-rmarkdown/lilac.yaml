@@ -12,6 +12,7 @@ repo_depends:
 - r-tinytex
 - r-xfun
 - r-yaml
+- r-bslib
 update_on:
 - regex: rmarkdown_([\d._-]+).tar.gz
   source: regex
