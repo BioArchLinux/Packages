@@ -29,10 +29,16 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('4bdedfc8350563aca5087dac67a7ad76a32b41cefd8244d405afad31da17c7a8')
+
+prepare() {
+  sed -i "s#PI#M_PI#" "${_pkgname}/src/gibbs.cpp"
+  tar cfz "${_pkgname}.tar.gz" "${_pkgname}"
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  #R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
 }
 
 package() {
