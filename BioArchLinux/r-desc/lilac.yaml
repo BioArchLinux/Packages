@@ -6,6 +6,7 @@ repo_depends:
 - r-crayon
 - r-r6
 - r-rprojroot
+- r-cli
 update_on:
 - regex: desc_([\d._-]+).tar.gz
   source: regex
