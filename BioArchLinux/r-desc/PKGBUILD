@@ -14,6 +14,7 @@ depends=(
   r-crayon
   r-r6
   r-rprojroot
+  r-cli
 )
 optdepends=(
   r-covr
