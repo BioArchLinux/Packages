@@ -3,8 +3,8 @@
 
 pkgname=phylonet
 _installname=PhyloNet
-pkgver=3.8.3
-pkgrel=5
+pkgver=3.8.4
+pkgrel=1
 depends=(
 	'java-runtime'
 )
@@ -13,7 +13,7 @@ arch=('x86_64')
 url="https://bioinfocs.rice.edu/PhyloNet"
 license=('GPL2')
 source=(""https://github.com/NakhlehLab/PhyloNet/releases/download/${pkgver}/PhyloNet.jar)
-sha256sums=('a03a4be48f0bd40b8b98b8c99be09bf8a3d509995d4d36aa1e33ecdfeb14c4a6')
+sha256sums=('eefabc198f113d3c835d67a44206203382e99a582d199478cc53f0bb746658fb')
 
 package() {
     install -dm755 "$pkgdir"/usr/share
