@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gamlss.dist
-_pkgver=6.0-1
+_pkgver=6.0-3
 pkgname=r-${_pkgname,,}
-pkgver=6.0.1
-pkgrel=2
+pkgver=6.0.3
+pkgrel=1
 pkgdesc='Distributions for Generalized Additive Models for Location Scale and Shape'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b563b4de6bcedcfa4f8d29198a47004e38fd2de6e0509c788015d4e3feb18154')
+sha256sums=('ec90ea83cd81b894c73f987f69814077697be33abf0708e0f3e2a39d02c912bf')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
