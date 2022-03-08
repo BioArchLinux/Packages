@@ -18,6 +18,7 @@ depends=(
   r-rcurl
   r-rhdf5
   r-s4vectors
+  r-illuminahumanmethylation450kmanifest
 )
 optdepends=(
   r-annotationhub
