@@ -1,4 +1,4 @@
-#Maintainer Matthijs Tadema <M dot J dot Tadema at pm dot me>
+ugene#Maintainer Matthijs Tadema <M dot J dot Tadema at pm dot me>
 #Previous Maintainer Jens Staal <staal1978@gmail.com>
 
 pkgname=ugene
@@ -15,7 +15,7 @@ optdepends=('cufflinks' 'bowtie' 'clustalw' 'phyml' 'blast+' 'clustal-omega' 'vc
 	'python2-cutadapt' 'python' 'java-runtime' 'bowtie2' 'tophat' 'fastqc')
 provides=('ugene')
 conflicts=('ugene-git')
-source=("https://github.com/ugeneunipro/ugene/archive/refs/tags/41.0.tar.gz")
+source=("https://github.com/ugeneunipro/ugene/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('eab798354f71d8b21e4dff94e76abc48ca0e59e3d5234bf25d269960ef4be0b9')
 
 build() {
