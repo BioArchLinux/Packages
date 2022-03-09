@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=evd
-_pkgver=2.3-3
+_pkgver=2.3-4
 pkgname=r-${_pkgname,,}
-pkgver=2.3.3
-pkgrel=2
+pkgver=2.3.4
+pkgrel=1
 pkgdesc='Functions for Extreme Value Distributions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-akima
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2fc5ef2e0c3a2a9392425ddd45914445497433d90fb80b8c363877baee4559b4')
+sha256sums=('21145a8b621c7dce769549d3c4e37aecda97b62d3902e4749e5a0e0527286fee')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
