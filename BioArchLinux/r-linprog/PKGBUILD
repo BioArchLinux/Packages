@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=linprog
-_pkgver=0.9-2
+_pkgver=0.9-4
 pkgname=r-${_pkgname,,}
-pkgver=0.9.2
-pkgrel=2
+pkgver=0.9.4
+pkgrel=1
 pkgdesc='Linear Programming / Optimization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-lpsolve
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8937b2e30692e38de1713f1513b78f505f73da6f5b4a576d151ad60bac2221ce')
+sha256sums=('81a6aa2fdc075f12dc912794d0554f87705a8b872b99c89a90a69ee9ada864b4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
