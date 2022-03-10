@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=klaR
-_pkgver=0.6-15
+_pkgver=1.7-0
 pkgname=r-${_pkgname,,}
-pkgver=0.6.15
+pkgver=1.7.0
 pkgrel=1
 pkgdesc='Classification and Visualization'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-som
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5bfe5bc643f8a64b222317732c26e9f93be297cdc318a869f15cc9ab0d9e0fae')
+sha256sums=('b4795250ef19fd1b5e1b9a59343fd01159a33dbdbb504a06258220e37a718198')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
