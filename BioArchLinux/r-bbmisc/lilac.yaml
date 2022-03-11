@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-checkmate
+- r-data.table
 update_on:
 - regex: BBmisc_([\d._-]+).tar.gz
   source: regex
