@@ -12,6 +12,7 @@ license=('BSD')
 depends=(
   r
   r-checkmate
+  r-data.table
 )
 optdepends=(
   r-codetools
