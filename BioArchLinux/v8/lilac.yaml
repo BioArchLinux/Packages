@@ -11,4 +11,4 @@ post_build: git_pkgbuild_commit
 update_on:
   - source: regex
     url: https://www.garbuszus.de/archpkgs/x86_64/
-    regex: 'v8-r-(\d+.\d+.\d+.\d+)-1-x86_64.pkg.tar.zst'
+    regex: 'v8-r-([\d._-]+)-1-x86_64.pkg.tar.zst'
