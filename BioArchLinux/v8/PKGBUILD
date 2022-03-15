@@ -11,7 +11,7 @@ makedepends=('git' 'lld' 'python3')
 conflicts=('v8-r' 'v8-3.14' 'v8.3.14-bin' 'v8-6.7-static' 'v8-static-gyp' 'v8-static-gyp-5.4')
 provides=('v8')
 source=("https://www.garbuszus.de/archpkgs/x86_64/v8-r-${pkgver}-1-x86_64.pkg.tar.zst")
-sha256sums=('401fbc78a7ac01c5b8fc41233f540d30e4070fba7976f5c3bc943c7a1456ae0a')
+sha256sums=('c0901f07258330b071148675776de8c5cd299ae64bc4e76d38e5a7d64b8efce2')
 package() {
   install -dm0755 "${pkgdir}/usr/"
   cd ${srcdir}/usr/
