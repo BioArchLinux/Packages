@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=recountmethylation
-_pkgver=1.4.2
+_pkgver=1.4.5
 pkgname=r-${_pkgname,,}
-pkgver=1.4.2
+pkgver=1.4.5
 pkgrel=1
 pkgdesc='Access and analyze DNA methylation database compilations'
 arch=('any')
@@ -33,7 +33,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('dc5851e49b5868fb20ce7c9ddd5a9b48c99e0567d26426455aaf167dacd6e887')
+sha256sums=('0a2ab3b36f3762ee3fbbccf40a0993ee1aa1e99d7302bb5e262f9ef2a36cb9de')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
