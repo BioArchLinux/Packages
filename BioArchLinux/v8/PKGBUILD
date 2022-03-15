@@ -1,4 +1,4 @@
-vpkgname=v8
+pkgname=v8
 pkgver=10.1.104
 pkgrel=2
 pkgdesc="Google's open source JavaScript and WebAssembly engine"
