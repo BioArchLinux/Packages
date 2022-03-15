@@ -21,6 +21,7 @@ depends=(
   r-rpx
   r-summarizedexperiment
   r-xml2
+  r-rmarkdown
 )
 optdepends=(
   r-knitr
