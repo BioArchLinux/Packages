@@ -13,6 +13,7 @@ repo_depends:
 - r-rpx
 - r-summarizedexperiment
 - r-xml2
+- r-rmarkdown
 update_on:
 - regex: MBQN_([\d._-]+).tar.gz
   source: regex
