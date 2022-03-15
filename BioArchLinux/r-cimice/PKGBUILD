@@ -24,6 +24,7 @@ depends=(
   r-relations
   r-tidyr
   r-visnetwork
+  r-expm
 )
 optdepends=(
   r-biocstyle
