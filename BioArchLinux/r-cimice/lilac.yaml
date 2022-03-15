@@ -16,6 +16,7 @@ repo_depends:
 - r-relations
 - r-tidyr
 - r-visnetwork
+- r-expm
 update_on:
 - regex: CIMICE_([\d._-]+).tar.gz
   source: regex
