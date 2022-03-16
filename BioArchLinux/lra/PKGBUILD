@@ -2,8 +2,8 @@
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
 pkgname=lra
-pkgver=1.3.2
-pkgrel=3
+pkgver=1.3.3
+pkgrel=1
 pkgdesc='A long read aligner for sequences and contigs. https://doi.org/10.1371/journal.pcbi.1009078'
 arch=('x86_64')
 url="https://github.com/ChaissonLab/${pkgname^^}"
@@ -11,7 +11,7 @@ license=('USC-RL v1.0')
 depends=('zlib' 'htslib')
 provides=()
 source=("${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('a0ec18d4bd2bc196eb4063ad45fcdb306f212feddca6a7aca8ef87122a0cca1f')
+sha256sums=('17d07a31b9349c20b1208cee65a73b64789c3f52c5e72a4ac9e9083cee1eb169')
 
 build() {
   cd "${pkgname^^}-${pkgver}"
