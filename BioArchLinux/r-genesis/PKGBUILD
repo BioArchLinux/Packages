@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GENESIS
-_pkgver=2.24.1
+_pkgver=2.24.2
 pkgname=r-${_pkgname,,}
-pkgver=2.24.1
+pkgver=2.24.2
 pkgrel=1
 pkgdesc='GENetic EStimation and Inference in Structured samples (GENESIS): Statistical methods for analyzing genetic data from samples with population structure and/or relatedness'
 arch=('x86_64')
@@ -44,7 +44,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5a1def60947d57805ca62e642a96a9a1e2f9b8103fa7fc11a72af565bc176781')
+sha256sums=('fcfc2b5816b2616c5e1aadf4e25e546dfa73ae967346110137f54a0b54b2b28f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
