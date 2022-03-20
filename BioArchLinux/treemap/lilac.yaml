@@ -3,6 +3,6 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - source: aur
-    aur: treemap
-    strip_release: true
+  - source: regex
+    url: https://sites.google.com/site/cophylogeny/software
+    regex: TreeMap(\w+).jar
