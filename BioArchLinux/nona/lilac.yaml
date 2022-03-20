@@ -2,8 +2,11 @@ build_prefix: multilib
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
-pre_build_script: aur_pre_build(maintainers='malacology')
-post_build: aur_post_build
+#pre_build_script: aur_pre_build(maintainers='malacology')
+#post_build: aur_post_build
 update_on:
-  - source: aur
-    aur: nona
+  - source: cmd
+    cmd: curl -sS http://www.lillo.org.ar/phylogeny/Nona-PeeWee/ | grep 'linux' | sed -i 's@-@.@g' | awk '{print $7}'
+#update_on:
+#  - source: aur
+#    aur: nona
