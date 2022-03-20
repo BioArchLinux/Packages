@@ -2,7 +2,7 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
-pre_build_script: aur_pre_build(maintainers='malacology')
+#pre_build_script: aur_pre_build(maintainers='malacology')
 update_on:
-  - source: aur
-    aur: easycodeml
+  - source: cmd
+    cmd: curl -sS https://raw.githubusercontent.com/BioEasy/EasyCodeML/master/Version%20History.txt | awk 'NR==1{print}' | awk '{print$2}'
