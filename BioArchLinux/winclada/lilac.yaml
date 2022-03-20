@@ -2,8 +2,14 @@ build_prefix: multilib
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
-pre_build_script: aur_pre_build(maintainers='malacology')
-post_build: aur_post_build
 update_on:
-  - source: aur
-    aur: winclada
+  - regex: (\d+-\d+-\d+) \d+:\d+    -
+    source: regex
+    url: http://www.lillo.org.ar/phylogeny/winclada/
+    from_pattern: (\d+)-(\d+)-(\d+)
+    to_pattern: \1.\2.\3
+#pre_build_script: aur_pre_build(maintainers='malacology')
+#post_build: aur_post_build
+#update_on:
+#  - source: aur
+#    aur: winclada
