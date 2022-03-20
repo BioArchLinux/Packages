@@ -8,3 +8,4 @@ update_on:
     regex: pamlX(\d+.\d+.\d+)-src.tgz
 repo_depends:
   - paml
+  - qt4
