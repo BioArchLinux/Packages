@@ -3,7 +3,7 @@
 
 pkgname=nona
 pkgver=2014.03.10
-pkgrel=1
+pkgrel=2
 pkgdesc="NONA: a bastard son of Pee-Wee. Phylogenetic Analysis Software"
 arch=('any')
 url="http://www.lillo.org.ar/phylogeny/Nona-PeeWee/readme.htm"
