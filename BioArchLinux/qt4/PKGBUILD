@@ -12,7 +12,7 @@ depends=('sqlite' 'ca-certificates' 'fontconfig' 'libgl' 'libxrandr' 'libxv'
 provides=('qt4')
 conflicts=('qt4-bin' 'qt4-git')
 replaces=('qt<=4.8.4')
-source=("qt4-$pkgver-35-$arch.pkg.tar.zst")
+source=("$url/qt4-$pkgver-35-$arch.pkg.tar.zst")
 options=(!strip)
 md5sums=('fcb2652d53b35b1aee0f88855a9fc7f9')
 
