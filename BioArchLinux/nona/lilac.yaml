@@ -6,7 +6,7 @@ maintainers:
 #post_build: aur_post_build
 update_on:
   - source: cmd
-    cmd: curl -sS http://www.lillo.org.ar/phylogeny/Nona-PeeWee/ | grep 'linux' | sed -i 's@-@.@g' | awk '{print $7}'
+    cmd: curl -sS http://www.lillo.org.ar/phylogeny/Nona-PeeWee/ | grep 'linux' | sed 's@-@.@g' | awk '{print $7}'
 #update_on:
 #  - source: aur
 #    aur: nona
