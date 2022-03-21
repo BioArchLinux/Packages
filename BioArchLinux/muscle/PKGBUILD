@@ -3,18 +3,22 @@
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=muscle
 pkgver=5.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Multiple sequence alignment software enabling improved estimates of phylogenetic tree confidence by ensemble bootstrapping. https://doi.org/10.1101/2021.06.20.449169"
 arch=('i686' 'x86_64')
-url="http://www.drive5.com/muscle/"
+url="https://github.com/rcedgar/muscle"
 license=('GPL3')
-source=($pkgname::https://github.com/rcedgar/muscle/releases/download/v$pkgver/muscle${pkgver}.linux_intel64)
-sha256sums=('2bd82928a5cc72b5086b60928a3a820a0ce066ca9fbc0fecd1543eebca981e76')
+source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
+sha256sums=('091d9f8733b92ff106c2a8eb274d1e5a57960d397a2068d8638d6002e8880dab')
 prepare() {
-  cd "$srcdir"
-  chmod +x $pkgname
+  # -static flag does not find -lgomp (part of gcc-libs)
+  sed -i "/LDFLAGS += -static/s:-static::" "$srcdir"/$pkgname-$pkgver/src/Makefile
+}
+build() {
+  cd "$srcdir"/$pkgname-$pkgver
+  make -C src
 }
 package() {
-  install -D -m755 "$srcdir"/muscle "$pkgdir/usr/bin/muscle"
+  cd "$srcdir"/$pkgname-$pkgver
+  install -Dm755 src/$(uname)/muscle "$pkgdir"/usr/bin/muscle
 }
- 
