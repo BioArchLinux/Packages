@@ -3,11 +3,14 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-  - regex: (\d+-\d+-\d+) \d+:\d+    -
-    source: regex
-    url: http://www.lillo.org.ar/phylogeny/winclada/
-    from_pattern: (\d+)-(\d+)-(\d+)
-    to_pattern: \1.\2.\3
+  - source: cmd
+    cmd: curl -sS http://www.lillo.org.ar/phylogeny/winclada/ | grep 'winclad' | sed 's@-@.@g' | awk '{print $7}'
+#update_on:
+#  - regex: (\d+-\d+-\d+) \d+:\d+    -
+#    source: regex
+#    url: http://www.lillo.org.ar/phylogeny/winclada/
+#    from_pattern: (\d+)-(\d+)-(\d+)
+#    to_pattern: \1.\2.\3
 #pre_build_script: aur_pre_build(maintainers='malacology')
 #post_build: aur_post_build
 #update_on:
