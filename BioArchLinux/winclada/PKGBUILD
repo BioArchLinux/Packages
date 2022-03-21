@@ -2,8 +2,8 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=winclada
-pkgver=2.0
-pkgrel=3
+pkgver=2021.12.27
+pkgrel=1
 pkgdesc="Winclada‐ASADO"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/winclada/"
