@@ -8,6 +8,7 @@ pkgdesc="Multiple sequence alignment software enabling improved estimates of phy
 arch=('i686' 'x86_64')
 url="https://github.com/rcedgar/muscle"
 license=('GPL3')
+makedepends=('make')
 source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
 sha256sums=('091d9f8733b92ff106c2a8eb274d1e5a57960d397a2068d8638d6002e8880dab')
 prepare() {
