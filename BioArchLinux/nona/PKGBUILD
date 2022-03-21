@@ -2,8 +2,8 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=nona
-pkgver=2.0
-pkgrel=11
+pkgver=2014.03.10
+pkgrel=1
 pkgdesc="NONA: a bastard son of Pee-Wee. Phylogenetic Analysis Software"
 arch=('any')
 url="http://www.lillo.org.ar/phylogeny/Nona-PeeWee/readme.htm"
