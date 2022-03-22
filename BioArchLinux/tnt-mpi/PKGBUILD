@@ -8,13 +8,13 @@ pkgrel=1
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
-depends=('cuda')
 provides=('tnt')
 conflicts=('tnt')
 license=('custom')
 depends=(
 	'ncurses5-compat-libs'
 	'openmpi'
+	'cuda'
 )
 source=("http://www.lillo.org.ar/phylogeny/tnt/$_pkgname.zip")
 sha256sums=('d570b4aaf3c198448e28b277495af33abcf7619cedbdc6a1dd7ec09d9db3dc7b')
