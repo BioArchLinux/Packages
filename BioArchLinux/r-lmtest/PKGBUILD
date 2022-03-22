@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=lmtest
-_pkgver=0.9-39
+_pkgver=0.9-40
 pkgname=r-${_pkgname,,}
-pkgver=0.9.39
-pkgrel=2
+pkgver=0.9.40
+pkgrel=1
 pkgdesc='Testing Linear Regression Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -26,7 +26,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('71f8d67cbe559b33fe02910a3e98cddc60c9dcc421c64f7878c647218f07d488')
+sha256sums=('64400d4d6cc635316531042971f1783539686e9015c76f5741c07304fa14d997')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
