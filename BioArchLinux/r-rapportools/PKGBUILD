@@ -14,6 +14,7 @@ depends=(
   r-pander
   r-plyr
   r-reshape
+  r-reshape2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('2b80267625a92b8f7375306203de6fe36b39871183b502b312219e719826fbe9')
