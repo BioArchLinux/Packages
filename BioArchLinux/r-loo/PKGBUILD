@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=loo
-_pkgver=2.5.0
+_pkgver=2.5.1
 pkgname=r-${_pkgname,,}
-pkgver=2.5.0
+pkgver=2.5.1
 pkgrel=1
 pkgdesc='Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models'
 arch=('any')
@@ -30,7 +30,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('faaca0b3d07bc529963bd420ffc77e2d5cf7a303fea4ab82e745601c157db41f')
+sha256sums=('866a2f54a4e8726cc3062e27daa8a073e6ac4aeb6719af7845284f7a668745f1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
