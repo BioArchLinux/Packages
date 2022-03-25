@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=geneplast
-_pkgver=1.20.0
+_pkgver=1.20.1
 pkgname=r-${_pkgname,,}
-pkgver=1.20.0
-pkgrel=2
+pkgver=1.20.1
+pkgrel=1
 pkgdesc='Evolutionary and plasticity analysis of orthologous groups'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -30,7 +30,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f15696393551303c0bcc2ec95591dfe8f81d95a686741d0a2c82893898eeee8d')
+sha256sums=('a002e2f0d45ece0d107833a8d3edc075b35c4f1e8908821720745eccbb675201')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
