@@ -1,0 +1,7 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: cmd
+    cmd: curl -sS http://sbmorphometrics.org/soft-utility.html | grep '\<td width="59"' | head -n 1 | sed 's@<@ @g'| sed 's@>@ @g' | awk '{print$3}' | sed 's@/@ @g' | awk '{printf"%s.%s.%s\n",$3,$1,$2}'
