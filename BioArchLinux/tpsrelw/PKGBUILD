@@ -2,7 +2,7 @@
 # Contributor: malacology
 
 pkgname=tpsrelw
-pkgver=2021.02.16
+pkgver=2021.12.28
 pkgrel=1
 pkgdesc="Relative warps analysis"
 arch=('any')
