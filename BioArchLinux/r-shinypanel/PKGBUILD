@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=shinypanel
-_pkgver=0.1.4
+_pkgver=0.1.5
 pkgname=r-${_pkgname,,}
-pkgver=0.1.4
-pkgrel=2
+pkgver=0.1.5
+pkgrel=1
 pkgdesc='Shiny Control Panel'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ depends=(
   r-shinyjs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f98644118a582aed4149920beaeac12851ae2cacbd3cbe46f547620f9dbcae41')
+sha256sums=('3264a5a75a306881e6a1622413298d7f3cda3dc78f54446171925774bab97a00')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
