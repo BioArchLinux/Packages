@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+pre_build_script: aur_pre_build(maintainers='JstKddng')
+update_on:
+  - source: aur
+    aur: libstdc++5
+    strip_release: true
+pre_build: aur_pre_build
+post_build: aur_post_build
+time_limit_hours: 6
