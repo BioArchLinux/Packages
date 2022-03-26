@@ -10,29 +10,20 @@ arch=('x86_64')
 license=('AGPL3')
 depends=('gcc-libs' 'openmpi' 'cuda')
 makedepends=('bison' 'make' 'cmake' 'flex' 'gmp' 'gtest' 'git')
-source=("https://github.com/amkozlov/raxml-ng/archive/refs/tags/${pkgver}.zip")
-sha256sums=('2d2d4143c50b86e40cfc9ecb328e96b2a68a166001433bf939a0c38048257d34')
-
-prepare() {
-  cd "${srcdir}/raxml-ng-${pkgver}/libs"
-  git clone git@github.com:amkozlov/terraphast-one.git
-  rm -rf terraphast
-  mv terraphast-one terraphast
-  git clone git@github.com:ddarriba/pll-modules.git
-  cd pll-modules/libs/
-  rm -rf libpll
-  git clone git@github.com:xflouris/libpll-2.git
-  mv libpll-2 libpll
-  cp libpll/src/pll.h pll.h
+source=("git+https://github.com/amkozlov/raxml-ng.git#tag=${pkgver}")
+sha256sums=('SKIP')
+prepare(){
+  cd ${srcdir}/raxml-ng
+  git submodule update --init --recursive
 }
 build(){
-  cd "${srcdir}"/raxml-ng-${pkgver}
+  cd "${srcdir}"/raxml-ng
   mkdir -p build
   cd build
   cmake -DUSE_MPI=ON ..
   make
 }
 package() {
-  cd ${srcdir}/raxml-ng-${pkgver}/bin
+  cd ${srcdir}/raxml-ng/bin
   install -Dm755 $pkgname "${pkgdir}/usr/bin/${pkgname}"
 }
