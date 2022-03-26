@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=qqconf
-_pkgver=1.2.1
+_pkgver=1.2.2
 pkgname=r-${_pkgname,,}
-pkgver=1.2.1
+pkgver=1.2.2
 pkgrel=1
 pkgdesc='Creates Simultaneous Testing Bands for QQ-Plots'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('eed52b1824df3b86917d1960b6d27bb19cac8ded13a2d0c775be18e03930b5a4')
+sha256sums=('dbf5ec870ff468565dd42970af2281f4b13a981009aed0103ac2614a6317d3f4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
