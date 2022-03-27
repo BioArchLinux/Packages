@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=zCompositions
-_pkgver=1.4.0
+_pkgver=1.4.0-1
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
+pkgver=1.4.0.1
 pkgrel=1
 pkgdesc='Treatment of Zeros, Left-Censored and Missing Values in Compositional Data Sets'
 arch=('any')
@@ -15,7 +15,7 @@ depends=(
   r-truncnorm
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a00d7d0ba861988b1836e947fd521d58137a4def04a5d7aa73a099314b7e530c')
+sha256sums=('33ee11f635cb87cc9c0617e1cfc91f1ac41c6cfe2b70fc441e226015939230e7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
