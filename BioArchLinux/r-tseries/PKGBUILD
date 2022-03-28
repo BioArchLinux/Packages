@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tseries
-_pkgver=0.10-49
+_pkgver=0.10-50
 pkgname=r-${_pkgname,,}
-pkgver=0.10.49
-pkgrel=2
+pkgver=0.10.50
+pkgrel=1
 pkgdesc='Time Series Analysis and Computational Finance'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('45bf26d8f41f12a72954bbe5fb6f4da6cc4ef29ee075c49fe7cc8456926c14ba')
+sha256sums=('1c47a3bb760b915adf1d13ee979849f2756a7f828290af637c17cb90cc26c598')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
