@@ -3,7 +3,7 @@
 
 pkgname=migrate-n-mpi
 _pkgname=migrate
-pkgver=5.0.2
+pkgver=5.0.3
 pkgrel=1
 pkgdesc="Bayesian estimation of effective population sizes, migration rates, and population divergences or admixture, multithreaded version"
 arch=('x86_64')
@@ -15,7 +15,7 @@ optdepends=(zlib)
 provides=()
 source=("${url}/download_version4/${_pkgname}-${pkgver}.src.tar.gz")
 
-sha256sums=('f3b3458c9d28574c90cb344fa38d1905847319c175f980676043a488062e3902')
+sha256sums=('b9f3253db9dfb58afdc594641384638661b36c27b74c96e551d009bd3f4fbfb7')
 
 build() {
   cd "${_pkgname}-${pkgver}/src"
