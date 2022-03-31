@@ -9,6 +9,7 @@ repo_depends:
 - r-rlang
 - r-tibble
 - r-tidyselect
+- r-vctrs
 update_on:
 - regex: msigdbr_([\d._-]+).tar.gz
   source: regex
