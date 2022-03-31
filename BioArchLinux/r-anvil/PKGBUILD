@@ -21,6 +21,7 @@ depends=(
   r-tibble
   r-tidyr
   r-tidyselect
+  r-vctrs
 )
 optdepends=(
   r-biocstyle
