@@ -10,6 +10,7 @@ repo_depends:
 - r-stringr
 - r-tibble
 - r-tidyr
+- r-vctrs
 update_on:
 - regex: broom.mixed_([\d._-]+).tar.gz
   source: regex
