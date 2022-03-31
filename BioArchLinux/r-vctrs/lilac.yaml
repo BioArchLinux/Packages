@@ -6,6 +6,7 @@ repo_depends:
 - r-ellipsis
 - r-glue
 - r-rlang
+- r-cli
 update_on:
 - regex: vctrs_([\d._-]+).tar.gz
   source: regex
