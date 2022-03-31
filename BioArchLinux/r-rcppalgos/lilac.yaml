@@ -6,6 +6,7 @@ repo_depends:
 - r-gmp
 - r-rcpp
 - r-rcppthread
+- r-cpp11
 update_on:
 - regex: RcppAlgos_([\d._-]+).tar.gz
   source: regex
