@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-dplyr
 - r-rlang
+- r-vctrs
 update_on:
 - regex: babelgene_([\d._-]+).tar.gz
   source: regex
