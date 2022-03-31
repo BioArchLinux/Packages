@@ -18,6 +18,7 @@ depends=(
   r-stringr
   r-tibble
   r-tidyr
+  r-vctrs
 )
 optdepends=(
   r-brms
