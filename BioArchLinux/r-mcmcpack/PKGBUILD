@@ -16,6 +16,7 @@ depends=(
   r-mcmc
   r-quantreg
   gcc
+  r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('32af8d9804a64cb05d3a0ee0543250e6a79a925959da36821e68bacfccb56aea')
