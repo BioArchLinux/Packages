@@ -15,6 +15,7 @@ depends=(
   r-gmp
   r-rcpp
   r-rcppthread
+  gcc
 )
 optdepends=(
   r-knitr
