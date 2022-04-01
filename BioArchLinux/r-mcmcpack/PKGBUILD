@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MCMCpack
-_pkgver=1.6-1
+_pkgver=1.6-2
 pkgname=r-${_pkgname,,}
-pkgver=1.6.1
+pkgver=1.6.2
 pkgrel=1
 pkgdesc='Markov Chain Monte Carlo (MCMC) Package'
 arch=('x86_64')
@@ -19,7 +19,7 @@ depends=(
   r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('32af8d9804a64cb05d3a0ee0543250e6a79a925959da36821e68bacfccb56aea')
+sha256sums=('17ef0f16e265bbaa9b3f72c24b6984d8fa931b4d29da66a943b89cf536b3dea2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
