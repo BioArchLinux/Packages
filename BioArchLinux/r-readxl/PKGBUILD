@@ -15,6 +15,7 @@ depends=(
   r-progress
   r-rcpp
   r-tibble
+  r-cpp11
 )
 optdepends=(
   r-covr
