@@ -16,6 +16,8 @@ depends=(
   r-pander
   r-sf
   r-zoo
+  r-flextable
+  r-officer
 )
 optdepends=(
   r-foreign
