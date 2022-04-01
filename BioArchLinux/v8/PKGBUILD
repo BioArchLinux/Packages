@@ -1,5 +1,5 @@
 pkgname=v8
-pkgver=10.2.23
+pkgver=10.2.54
 pkgrel=1
 pkgdesc="Google's open source JavaScript and WebAssembly engine"
 arch=('x86_64')
@@ -11,7 +11,7 @@ makedepends=('git' 'lld' 'python3')
 conflicts=('v8-r' 'v8-3.14' 'v8.3.14-bin' 'v8-6.7-static' 'v8-static-gyp' 'v8-static-gyp-5.4')
 provides=('v8')
 source=("https://www.garbuszus.de/archpkgs/x86_64/v8-r-${pkgver}-1-x86_64.pkg.tar.zst")
-sha256sums=('774bd297ce50a12a57689bfc46fcd79db06baf0eac9bc8d53380c75d74568e8d')
+sha256sums=('d1ee54f0244060c73dbba0ac821700e7fa3d448e3ae2638610546f173e8e3313')
 package() {
   install -dm0755 "${pkgdir}/usr/"
   cd ${srcdir}/usr/
