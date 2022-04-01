@@ -7,6 +7,7 @@ repo_depends:
 - r-progress
 - r-rcpp
 - r-tibble
+- r-cpp11
 update_on:
 - regex: readxl_([\d._-]+).tar.gz
   source: regex
