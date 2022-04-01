@@ -8,6 +8,8 @@ repo_depends:
 - r-pander
 - r-sf
 - r-zoo
+- r-flextable
+- r-officer
 update_on:
 - regex: epiR_([\d._-]+).tar.gz
   source: regex
