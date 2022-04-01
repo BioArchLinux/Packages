@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=AnVIL
-_pkgver=1.6.6
+_pkgver=1.6.7
 pkgname=r-${_pkgname,,}
-pkgver=1.6.6
+pkgver=1.6.7
 pkgrel=1
 pkgdesc='Bioconductor on the AnVIL compute environment'
 arch=('any')
@@ -33,7 +33,7 @@ optdepends=(
   r-withr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('95d0a025736a852d11dcf1573a5fb2008d16f3aad705ca83eee1c56517f783fa')
+sha256sums=('6963f8c7637799d87b3fbcb12a66ff9ec9d943a101f68898cee999b7d118c36b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
