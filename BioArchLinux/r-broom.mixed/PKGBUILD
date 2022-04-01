@@ -18,7 +18,8 @@ depends=(
   r-stringr
   r-tibble
   r-tidyr
-  r-vctrs
+  r-forcats
+  r-furrr
 )
 optdepends=(
   r-brms
