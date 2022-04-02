@@ -19,6 +19,7 @@ depends=(
   r-rcpparmadillo
   r-rcppeigen
   r-rgraphviz
+  r-biocmanager
 )
 optdepends=(
   r-knitr
