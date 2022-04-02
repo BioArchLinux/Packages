@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=kernlab
-_pkgver=0.9-29
+_pkgver=0.9-30
 pkgname=r-${_pkgname,,}
-pkgver=0.9.29
-pkgrel=2
+pkgver=0.9.30
+pkgrel=1
 pkgdesc='Kernel-Based Machine Learning Lab'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   gcc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c3da693a0041dd34f869e7b63a8d8cf7d4bc588ac601bcdddcf7d44f68b3106f')
+sha256sums=('48fc3a839ae57e8ab6ec26a34093ca3306391e7b271bef6e69812e2b4859ee81')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
