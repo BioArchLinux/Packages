@@ -11,6 +11,7 @@ repo_depends:
 - r-rcpparmadillo
 - r-rcppeigen
 - r-rgraphviz
+- r-biocmanager
 update_on:
 - regex: gRbase_([\d._-]+).tar.gz
   source: regex
