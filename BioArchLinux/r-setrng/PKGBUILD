@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=setRNG
-_pkgver=2013.9-1
+_pkgver=2022.4-1
 pkgname=r-${_pkgname,,}
-pkgver=2013.9.1
-pkgrel=2
+pkgver=2022.4.1
+pkgrel=1
 pkgdesc='Set (Normal) Random Number Generator and Seed'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1a1a399682a06a5fea3934985ebb1334005676c6a2a22d06f3c91c3923432908')
+sha256sums=('61c06e6bd6b43c295472c6990266fe87ca41e57db04d3460e756a35ef24e0824')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
