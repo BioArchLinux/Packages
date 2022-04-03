@@ -1,0 +1,26 @@
+# Maintainer: Guoyi Zhang <guoyi zhang at malacology dot net>
+pkgname=seqtools
+pkgver=4.44.1
+pkgrel=1
+pkgdesc="A suite of tools for visualising sequence alignments"
+arch=('x86_64')
+url="https://www.sanger.ac.uk/tool/seqtools/"
+license=('GPL')
+depends=('readline' 'glib2' 'gtk2' 'gtk-engine-murrine' 'jsoncpp')
+makedepends=('make')
+optdepends=('sqlite' 'libcurl-gnutls')
+source=(ftp://ftp.sanger.ac.uk/pub/resources/software/seqtools/PRODUCTION/seqtools-${pkgver}.tar.gz)
+sha256sums=('ffcc3249302eea27a4692f96ceaca92676c9efd4ab98a85a75001927f015c6fb')
+build() {
+  cd $srcdir/"$pkgname-$pkgver"
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/"$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir/" install
+  rm -f $pkgdir/usr/include/json/json.h
+}
