@@ -9,6 +9,7 @@ repo_depends:
 - r-rcpp
 - r-reshape2
 - r-vegan
+- r-pbapply
 update_on:
 - regex: gdm_([\d._-]+).tar.gz
   source: regex
