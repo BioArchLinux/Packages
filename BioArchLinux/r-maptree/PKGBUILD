@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=maptree
-_pkgver=1.4-7
+_pkgver=1.4-8
 pkgname=r-${_pkgname,,}
-pkgver=1.4.7
-pkgrel=2
+pkgver=1.4.8
+pkgrel=1
 pkgdesc='Mapping, pruning, and graphing tree models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e4369cadc81bb2f31da11498d9a2a3191db7e9689b47dfc0339f1bbf3941fbcc')
+sha256sums=('55cf12af55540e7d53c8a7ae4bf87e192f5dec4161b3cdf2146689e8c8b465f4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
