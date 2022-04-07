@@ -6,6 +6,7 @@ repo_depends:
 - r-igraph
 - r-slam
 - r-tsne
+- r-rtsne
 update_on:
 - regex: BiRewire_([\d._-]+).tar.gz
   source: regex
