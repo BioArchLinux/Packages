@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=survMisc
-_pkgver=0.5.5
+_pkgver=0.5.6
 pkgname=r-${_pkgname,,}
-pkgver=0.5.5
-pkgrel=2
+pkgver=0.5.6
+pkgrel=1
 pkgdesc='Miscellaneous Functions for Survival Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,7 @@ depends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('75091b08fb9125561a4d2b0800d1d615553dddeea06522963a8790ff10dddb02')
+sha256sums=('d911125bc374dfc67f31a81ebeaf98a09cac8f81e30259655ab136ebf4718c04')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
