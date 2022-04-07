@@ -14,6 +14,7 @@ depends=(
   r-igraph
   r-slam
   r-tsne
+  r-rtsne
 )
 optdepends=(
   r-biocgenerics
