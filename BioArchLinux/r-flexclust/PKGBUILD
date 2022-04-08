@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=flexclust
-_pkgver=1.4-0
+_pkgver=1.4-1
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
-pkgrel=2
+pkgver=1.4.1
+pkgrel=1
 pkgdesc='Flexible Cluster Algorithms'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-skmeans
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('82fe445075a795c724644864c7ee803c5dd332a89ea9e6ccf7cd1ae2d1ecfc74')
+sha256sums=('d67977df059e622832358069509f8968d506074320a45d34bfd21c65f898538d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
