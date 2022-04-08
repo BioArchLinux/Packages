@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=seqsetvis
-_pkgver=1.14.2
+_pkgver=1.14.4
 pkgname=r-${_pkgname,,}
-pkgver=1.14.2
+pkgver=1.14.4
 pkgrel=1
 pkgdesc='Set Based Visualizations for Next-Gen Sequencing Data'
 arch=('any')
@@ -41,7 +41,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('19debfb0a344bb4cb73b36f5a7a86f1c710a7949747cdf7fa8aa408ea7ee6ed0')
+sha256sums=('7404fc0373764f00c5e010e232a5fd829ec64be365c3bb3d2c505f06868307b5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
