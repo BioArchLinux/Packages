@@ -11,7 +11,7 @@ pkgdesc="a tool for investigating the temporal signal and 'clocklikeness' of mol
 arch=('x86_64')
 url="http://tree.bio.ed.ac.uk/software/tempest/"
 license=('GPL2')
-source=("http://tree.bio.ed.ac.uk/download.php?id=102&num=3" "tempest.desktop")
+source=("https://raw.githubusercontent.com/beast-dev/Tempest/main/release/TempEst_v${pkgver}.tgz" "tempest.desktop")
 sha256sums=('83e482a7ba946e38606cc3331765db45b4331337d92d030ebeb537e3e16fa44e'
             '2af28c04f9d96f046947efeab28c27552be88ac56af0d8f1a0db2e439a228c45')
 
