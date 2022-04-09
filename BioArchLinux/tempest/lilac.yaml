@@ -4,5 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: regex
-    url: http://tree.bio.ed.ac.uk/software/tempest/
-    regex: TempEst_v(\d+.\d+.\d).tgz
+    url: https://github.com/beast-dev/Tempest/tree/main/release
+    regex: TempEst_v(\d+.\d+.\d+).tgz
