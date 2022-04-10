@@ -1,0 +1,26 @@
+# Maintainer: guoyi
+pkgname=fasta
+pkgver=36.3.8i
+pkgrel=1
+pkgdesc="Fast protein or a fast nucleotide comparison"
+arch=('x86_64')
+url="https://fasta.bioch.virginia.edu/wrpearson/fasta/"
+license=('GPL')
+depends=()
+makedepends=('make' 'git')
+optdepends=()
+source=(git+https://github.com/wrpearson/fasta36)
+md5sums=('SKIP') #autofill using updpkgsums
+
+build() {
+  cd "$pkgname"36/src
+
+  make -f ../make/Makefile.linux64 all
+}
+
+package() {
+  cd "$pkgname"36
+  install -dDm755 "$pkgdir"/usr/
+  rm bin/README
+  mv bin "$pkgdir"/usr
+}

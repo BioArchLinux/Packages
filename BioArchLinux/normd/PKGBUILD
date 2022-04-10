@@ -1,0 +1,27 @@
+# Maintainer: Guoyi 
+pkgname=normd
+pkgver=1_3
+pkgrel=1
+pkgdesc="a new objective scoring function for multiple sequence alignments https://doi.org/10.1006/jmbi.2001.5187"
+arch=('x86_64')
+url="https://doi.org/10.1006/jmbi.2001.5187"
+license=('GPL')
+depends=()
+makedepends=('make' 'gcc')
+source=(http://www.bork.embl.de/Docu/AQUA/latest/norMD${pkgver}.tar.gz)
+noextract=()
+sha256sums=('24ba32425640ae6288d59ca2bf5820dd85616132fe6a05337d849035184c660d')
+build() {
+  cd $srcdir/${pkgname}_noexpat
+  make -f makefile
+}
+
+package() {
+  cd $srcdir/${pkgname}_noexpat
+  install -Dm 755 normd $pkgdir/usr/bin/normd
+  install -Dm 755 normd_aln $pkgdir/usr/bin/normd_aln
+  install -Dm 755 normd_aln1 $pkgdir/usr/bin/normd_aln1
+  install -Dm 755 normd_subaln $pkgdir/usr/bin/normd_subaln
+  install -Dm 755 normd_range $pkgdir/usr/bin/normd_range
+  install -Dm 755 normd_sw $pkgdir/usr/bin/normd_sw
+}
