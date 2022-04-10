@@ -1,0 +1,33 @@
+# Maintainer: guoyi
+pkgname=dust
+pkgver=0.6.1b
+pkgrel=1
+pkgdesc=""
+arch=('x86_64')
+url=""
+license=('MIT')
+depends=('hdf5' 'cgns' 'lapack' 'blas')
+makedepends=('gcc' 'make' 'cmake' 'gcc-fortran')
+optdepends=()
+provides=()
+source=(https://gitlab.com/dust_group/dust/-/archive/${pkgver:0:5}-${pkgver:5:1}/dust-${pkgver:0:5}-${pkgver:5:1}.zip)
+sha256sums=('3a2b7f22379e33574f7f8c2e00f8d76ab788ae574ea3f04654f89c6533493df8')
+prepare() {
+  cd "$pkgname-${pkgver:0:5}-${pkgver:5:1}"
+  mkdir build
+}
+build() {
+  cd "$pkgname-${pkgver:0:5}-${pkgver:5:1}"
+  cd build
+  cmake ../
+  make
+}
+
+package() {
+  cd "$pkgname-${pkgver:0:5}-${pkgver:5:1}"
+  cd build/bin
+  install -Dm 755 dust $pkgdir/usr/bin/dust
+  install -Dm 755 dust_pre $pkgdir/usr/bin/dust_pre
+  install -Dm 755 dust_post $pkgdir/usr/bin/dust_post
+
+}
