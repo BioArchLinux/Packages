@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-insight
+- r-datawizard
 update_on:
 - regex: sjlabelled_([\d._-]+).tar.gz
   source: regex

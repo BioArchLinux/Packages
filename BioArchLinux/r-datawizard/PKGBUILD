@@ -1,33 +1,39 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=sjlabelled
-_pkgver=1.1.8
+_pkgname=datawizard
+_pkgver=0.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.1.8
-pkgrel=2
-pkgdesc='Labelled Data Utility Functions'
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Easy Data Wrangling'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
   r-insight
-  r-datawizard
 )
 optdepends=(
-  r-dplyr
-  r-haven
+  r-bayestestr
+  r-boot
+  r-effectsize
+  r-gamm4
+  r-ggplot2
   r-knitr
-  r-magrittr
-  r-rlang
+  r-lme4
+  r-mass
+  r-modelbased
+  r-parameters
+  r-poorman
+  r-psych
   r-rmarkdown
-  r-sjmisc
-  r-sjplot
-  r-snakecase
+  r-rstanarm
+  r-see
+  r-spelling
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('40f94e57c7ccf73402692a1e20a7c07a3e2c1e3a6b28eaf579ebe541729ffa9d')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
