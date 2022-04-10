@@ -2,6 +2,8 @@ build_prefix: multilib
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
 update_on:
   - source: cmd
     cmd: curl -sS https://raw.githubusercontent.com/wrpearson/fasta36/v36.3.8/README.md | grep 'fasta-' | sed 's/\*\*/ /g' | awk '{print $3}' | sed 's/-/ /g' | awk '{print $2}' | head -n 1

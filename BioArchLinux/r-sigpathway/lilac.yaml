@@ -6,3 +6,4 @@ update_on:
 - regex: sigPathway_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/sigPathway
+pre_build: vcs_update

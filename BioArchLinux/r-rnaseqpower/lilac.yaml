@@ -6,3 +6,4 @@ update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/RNASeqPower
+pre_build: vcs_update
