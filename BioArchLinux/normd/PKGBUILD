@@ -1,7 +1,7 @@
 # Maintainer: Guoyi 
 pkgname=normd
 pkgver=1_3
-pkgrel=1
+pkgrel=2
 pkgdesc="a new objective scoring function for multiple sequence alignments https://doi.org/10.1006/jmbi.2001.5187"
 arch=('x86_64')
 url="https://doi.org/10.1006/jmbi.2001.5187"
