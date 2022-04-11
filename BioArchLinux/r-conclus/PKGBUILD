@@ -41,8 +41,6 @@ optdepends=(
   r-dynamictreecut
   r-knitr
   r-matrixstats
-  r-org.hs.eg.db
-  r-org.mm.eg.db
   r-rmarkdown
   r-s4vectors
   r-testthat
