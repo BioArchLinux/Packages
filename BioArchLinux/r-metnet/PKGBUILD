@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MetNet
-_pkgver=1.12.1
+_pkgver=1.12.2
 pkgname=r-${_pkgname,,}
-pkgver=1.12.1
+pkgver=1.12.2
 pkgrel=1
 pkgdesc='Inferring metabolic networks from untargeted high-resolution mass spectrometry data'
 arch=('any')
@@ -37,7 +37,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('91e434b0e268b36a8405ca55814a94518a2293234b15bf9ba44a709a70c1a468')
+sha256sums=('fd911a0979b64795b3609599806e31933c074df4d844c9eed2cda36cf9763049')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
