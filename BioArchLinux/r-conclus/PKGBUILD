@@ -33,6 +33,8 @@ depends=(
   r-singlecellexperiment
   r-stringr
   r-summarizedexperiment
+  r-org.mm.eg.db
+  r-org.hs.eg.db
 )
 optdepends=(
   r-biocstyle
