@@ -25,6 +25,8 @@ repo_depends:
 - r-singlecellexperiment
 - r-stringr
 - r-summarizedexperiment
+- r-org.mm.eg.db
+- r-org.hs.eg.db
 update_on:
 - regex: conclus_([\d._-]+).tar.gz
   source: regex
