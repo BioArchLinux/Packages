@@ -3,5 +3,5 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 update_on:
-- regex: cmd
+- source: cmd
   cmd: curl -sS http://www.bork.embl.de/Docu/AQUA/latest/ | grep norMD | sed 's/"/ /g' | awk '{print $10}' | sed 's/norMD//g' | sed 's/.tar.gz//g'
