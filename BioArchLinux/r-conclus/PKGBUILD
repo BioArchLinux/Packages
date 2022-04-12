@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=conclus
-_pkgver=1.2.0
+_pkgver=1.2.4
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
+pkgver=1.2.4
 pkgrel=1
 pkgdesc='ScRNA-seq Workflow CONCLUS - From CONsensus CLUSters To A Meaningful CONCLUSion'
 arch=('any')
@@ -46,7 +46,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e2868e533d5cae6c2c79f35e6063c7b28db467d1f075d8fc40ed5e50972796b0')
+sha256sums=('23b5dd4ffd6a8b50637de193248bea6fc3baeb05c604da0e4d210d5fdd862854')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
