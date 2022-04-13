@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=minpack.lm
-_pkgver=1.2-1
+_pkgver=1.2-2
 pkgname=r-${_pkgname,,}
-pkgver=1.2.1
-pkgrel=2
+pkgver=1.2.2
+pkgrel=1
 pkgdesc='R Interface to the Levenberg-Marquardt Nonlinear Least-Squares Algorithm Found in MINPACK, Plus Support for Bounds'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('14cb7dba3ef2b46da0479b46d46c76198e129a31f6157cd8b37f178adb15d5a3')
+sha256sums=('c70956122528575433c57a5669e26f4f9b1e160b004f135a38658c2c2634df87')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
