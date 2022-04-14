@@ -26,6 +26,7 @@ depends=(
   r-reshape2
   r-rlang
   r-scales
+  r-rhpcblasctl
 )
 optdepends=(
   r-ballgown
