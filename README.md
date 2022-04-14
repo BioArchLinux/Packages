@@ -34,6 +34,12 @@ When you meet some difficulty in writing `PKGBUILD`, `lilac.yaml` and so on. The
 
 When almost all packages are uploaded and fixed, the periodical flags would help this community work better. Some potential flags will be listed on the [discussions](https://github.com/BioArchLinux/Packages/discussions/categories/periodical-flags) and users can comment on it. After merging some comments, the team can publish [announcements](https://github.com/BioArchLinux/Packages/discussions/categories/announcements) on discussions to show the tasks plan.
 
+### Mirror
+
+```
+rsync -avh bio@bioarchlinux.org::sync/ destdir
+```
+
 ### Bug Reports & Package Request
 
 For bug reports, just posts some [issues](https://github.com/BioArchLinux/Packages/issues) with a detailed output log and give us detailed information of your working environment, we will fix it. It's almost the same as the request, give details about the packages information following the template.
