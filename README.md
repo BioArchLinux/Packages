@@ -37,7 +37,7 @@ When almost all packages are uploaded and fixed, the periodical flags would help
 ### Mirror
 
 ```
-rsync -avh bio@bioarchlinux.org::sync/ destdir
+rsync -rtlivH bioarchlinux.org::sync/ destdir 
 ```
 
 ### Bug Reports & Package Request
