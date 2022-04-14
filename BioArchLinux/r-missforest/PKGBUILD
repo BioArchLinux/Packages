@@ -14,6 +14,7 @@ depends=(
   r-foreach
   r-itertools
   r-randomforest
+  r-dorng
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('f785804b03bdf424e1c76095989a803afb3b47d6bebca9a6832074b6326c0278')
