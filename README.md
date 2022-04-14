@@ -57,6 +57,8 @@ Add the fllowing to the `/etc/pacman.conf`
 [BioArchLinux]
 Server = https://repo.bioarchlinux.org/$arch
 ```
+You can repleace the repo.bioarchlinux with any mirror in [mirrorlist](https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
+
 Then import GPG key
 ```
 $ pacman-key --recv-keys B1F96021DB62254D
