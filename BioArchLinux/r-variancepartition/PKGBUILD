@@ -28,6 +28,7 @@ depends=(
   r-scales
   r-rhpcblasctl
   r-aod
+  r-rdpack
 )
 optdepends=(
   r-ballgown
