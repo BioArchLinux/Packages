@@ -27,6 +27,7 @@ depends=(
   r-rlang
   r-scales
   r-rhpcblasctl
+  r-aod
 )
 optdepends=(
   r-ballgown
