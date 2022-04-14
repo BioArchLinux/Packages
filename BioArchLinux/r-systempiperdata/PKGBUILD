@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=systemPipeRdata
-_pkgver=1.22.2
+_pkgver=1.22.3
 pkgname=r-${_pkgname,,}
-pkgver=1.22.2
+pkgver=1.22.3
 pkgrel=1
 pkgdesc='systemPipeRdata: Workflow templates and sample data'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-systempiper
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('43ef1a30e0241a2fa557e9717d0000d5a7fd3b448150adaee5c2e6df8c7c75c2')
+sha256sums=('de536cf319667b668c963e72e49b0e63a5baca4134b846be0a6e88c80fc2ed80')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
