@@ -6,6 +6,7 @@ repo_depends:
 - r-foreach
 - r-itertools
 - r-randomforest
+- r-dorng
 update_on:
 - regex: missForest_([\d._-]+).tar.gz
   source: regex
