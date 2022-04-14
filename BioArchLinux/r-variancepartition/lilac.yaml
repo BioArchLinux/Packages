@@ -19,6 +19,7 @@ repo_depends:
 - r-rlang
 - r-scales
 - r-rhpcblasctl
+- r-aod
 update_on:
 - regex: variancePartition_([\d._-]+).tar.gz
   source: regex
