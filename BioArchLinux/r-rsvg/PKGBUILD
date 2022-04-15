@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rsvg
-_pkgver=2.2.0
+_pkgver=2.3.0
 pkgname=r-${_pkgname,,}
-pkgver=2.2.0
-pkgrel=2
+pkgver=2.3.0
+pkgrel=1
 pkgdesc='Render SVG Images into PDF, PNG, PostScript, or Bitmap Arrays'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-webp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2ad8620e9f879dadd5410de0a5413fb5327b4d59165de282f45e752b6388bb16')
+sha256sums=('12a1f2423806334a6fc0b17e9a3bdde744eae63547a0ddbbbe5b4f1cf95ea881')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
