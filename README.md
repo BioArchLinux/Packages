@@ -3,9 +3,6 @@
 </p>
 <h1 align="center">BioArchLinux</h1>
 
-# Packages
-Aim to be the bioinformatics repository with more and newer packages
-
 ## Special sponser
 
 <div>
