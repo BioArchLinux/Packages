@@ -13,7 +13,7 @@ BioArchLinux</h3>
 
 Add the fllowing content to the `/etc/pacman.conf`
 ```
-[BioArchLinux]
+[bioarchlinux]
 Server = https://repo.bioarchlinux.org/$arch
 ```
 You can repleace the `https://repo.bioarchlinux/$arch` with any mirror in [mirrorlist](https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
