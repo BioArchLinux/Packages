@@ -1,7 +1,9 @@
-# manually update by farseerfc
-
+build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
-
-managed: false
+update_on:
+  - source: gitlab
+    gitlab: archlinux/devtools
+    host: gitlab.archlinux.org
+    use_max_tag: true

@@ -2,7 +2,7 @@
 
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=20200407
+pkgver=20220207
 pkgrel=1
 pkgdesc='Tools for Arch Linux package maintainers, archlinuxcn fork'
 arch=('any')
@@ -14,21 +14,10 @@ makedepends=('asciidoc')
 optdepends=('btrfs-progs: btrfs support')
 provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
-source=(https://sources.archlinux.org/other/${_pkgname}/${_pkgname}-${pkgver}.tar.gz{,.sig}
+source=(https://gitlab.archlinux.org/archlinux/devtools/-/archive/20220207/devtools-${pkgver}.tar.gz
         "no-yes-y.patch::https://git.archlinux.org/devtools.git/patch/?id=b7893a2ca8e09062197129881bce3fd6700a573a"
         "unshare-pacstrap.patch")
-
-validpgpkeys=('487EACC08557AD082088DABA1EB2638FF56C0C53'
-              '4AA4767BBC9C4B1D18AE28B77F2D434B9741E8AC'
-              '86CFFCA918CF3AF47147588051E8B148A9999C34'
-              '8FC15A064950A99DD1BD14DD39E4B877E62EB915'
-              '8218F88849AAC522E94CF470A5E9288C4FA415FA'
-              'B81B051F2D7FC867AAFF35A58DBD63B82072D77A'
-              'F3691687D867B81B51CE07D9BBE43771487328A9'
-              '6645B0A8C7005E78DB1D7864F99FFE0FEAE999BD'
-              'E240B57E2C4630BA768E2F26FC1B547C8D8172C8')
-b2sums=('01ff4d17a9502df468d545e273e94ab7d7b6817efa6d7f2fe661b4a978a5051a03a8a04ea1e82902b30988413f32f65afdf49a234d82ab05fa510ffc52f62e02'
-        'SKIP'
+b2sums=('334c434868f3769765b8e05cde1b825433322725247d6cb1509993cca980a2f02a55c763b0e4d6bd53988bb4630d86785ccbe636b842e7103c93a43d1036e36f'
         '2da933aa8a0bce8acab22fcbdf857462a28bb313e4554b73cf4cb02dafb40ad124b71e5666cd88257dee8a1721a57e6659581026ab2ff21aa2c257df2397db0c'
         'ad659b04b7b7a9111ceace6629e971ef775e73a2b68a82dc13d3dd5b732f3e7a056b3328fab54fa6b16e520212e4b5a6d5d27e1b0b87d10495c89a17ff130fc5')
 
