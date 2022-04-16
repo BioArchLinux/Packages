@@ -1,12 +1,12 @@
 <h3 align="center">
-<img src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/bioarchlinux.png" alt="BioArchLinux" width="150">
+<img src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logo/bioarchlinux.png" alt="BioArchLinux" width="150">
 </p>
 BioArchLinux</h3>
 
 ## Special sponsor
 
 <div>
-<a href="https://v.ps/" target="_blank"><img height="70px" src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/xtom.png"></a>
+<a href="https://v.ps/" target="_blank"><img height="70px" src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logo/xtom.png"></a>
 </div>
 
 ## Usage
