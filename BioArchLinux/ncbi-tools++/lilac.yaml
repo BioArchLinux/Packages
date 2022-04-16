@@ -1,0 +1,7 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+- source: cmd
+  cmd: curl -sS https://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools++/CURRENT/ | grep 'tar.gz' |sed 's/--/ /g' | sed 's/\./ /g' | sed 's/_/./g' | awk '{print $3}'
