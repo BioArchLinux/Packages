@@ -1,7 +1,7 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/bioarchlinux.png" alt="BioArchLinux" width="120">
+<h3 align="center">
+<img src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/bioarchlinux.png" alt="BioArchLinux" width="150">
 </p>
-<h1 align="center">BioArchLinux</h1>
+BioArchLinux</h3>
 
 ## Special sponser
 
