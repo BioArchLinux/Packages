@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=zoo
-_pkgver=1.8-9
+_pkgver=1.8-10
 pkgname=r-${_pkgname,,}
-pkgver=1.8.9
-pkgrel=2
+pkgver=1.8.10
+pkgrel=1
 pkgdesc="S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -29,7 +29,7 @@ optdepends=(
   r-xts
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b7be259067a8b9d4a8f5d387e0946a5ba1eb43474baa67ccf4f8bf4b15f772a3')
+sha256sums=('c9a282d8004c22651c4fa1d657d3cad946c5ec55c4dc068569d860ee9b31ed47')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
