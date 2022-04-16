@@ -1,0 +1,13 @@
+# Maintainer: guoyi
+build_prefix: extra-x86_64
+maintainers:
+  - github: stasareintherose
+    email: stasareintherose@outlook.com
+pre_build_script: |
+    update_pkgrel()
+    vcs_update()
+post_build_script: |
+    git_pkgbuild_commit()
+update_on:
+  - source: github
+    github: BioArchLinux/keyring

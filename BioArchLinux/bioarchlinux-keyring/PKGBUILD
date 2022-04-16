@@ -1,0 +1,21 @@
+# Maintainer: Guoyi
+pkgname=bioarchlinux-keyring
+pkgver=20220416
+pkgrel=1
+pkgdesc='BioArchLinux PGP keyring'
+arch=('any')
+url='https://github.com/BioArchLinux/keyring'
+install=${pkgname}.install
+makedepends=('git')
+license=('GPL')
+source=('git+https://github.com/BioArchLinux/keyring.git')
+sha256sums=('SKIP')
+pkgver(){
+  date +%Y%m%d
+}
+package() {
+  cd "${srcdir}"/keyring
+  install -Dm644 bioarchlinux.gpg $pkgdir/usr/share/pacman/keyrings/bioarchlinux.gpg
+  install -Dm644 bioarchlinux-revoked $pkgdir/usr/share/pacman/keyrings/bioarchlinux-revoked
+  install -Dm644 bioarchlinux-trusted $pkgdir/usr/share/pacman/keyrings/bioarchlinux-trusted
+}
