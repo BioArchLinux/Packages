@@ -1,20 +1,16 @@
+<p align="center">
+<img src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/bioarchlinux.png" alt="BioArchLinux" width="120">
+</p>
+<h1 align="center">BioArchLinux</h1>
+
 # Packages
 Aim to be the bioinformatics repository with more and newer packages
 
-## Aim
+## Special sponser
 
-### Current goal
-
- - Expansion of the users' awareness of this repository.
- - Include more popular packages for biologists.
-
- - Migrate about 50 packages from aur_build to lilac. [finished 06-11-2021]
-
-### Todo
-
-Now sponsors are still needed to promote the net speed of this repository. The funding will be used to buy faster a VPS service and a domain name [done 27-12-2021]. But we still need donations.
-
-Or some undergraduate students can hold a [National Students' Innovation Entrepreneurship Training Program](http://gjcxcy.bjtu.edu.cn/Index.aspx) in his/her university to win the funding for this project. [starsareintherose]( mailto:guoyizhang@malacology.net) can give help to the undergraduate, considering her previous national level NSIETP.
+<div>
+<a href="https://v.ps/" target="_blank"><img height="70px" src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/xtom.png"></a>
+</div>
 
 ## Invovled
 
