@@ -1,0 +1,15 @@
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+
+build_prefix: extra-x86_64
+
+repo_depends:
+  - pid_children
+
+update_on:
+  - source: github
+    github: archlinuxcn/lilac
+  - alias: python
+  - source: aur
+    aur: lilac-git

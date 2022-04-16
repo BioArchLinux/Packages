@@ -1,0 +1,20 @@
+# Maintainer: Guoyi
+
+pkgname=bioarchlinux-mirrorlist
+pkgver=20220416
+pkgrel=1
+pkgdesc="BioArchLinux mirror list for use by pacman"
+arch=('any')
+url="https://github.com/BioArchLinux/mirror"
+license=('GPL')
+backup=(etc/pacman.d/mirrorlist.bio)
+source=(https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
+sha256sums=('d83843df89a800fbe33a738d74233501e69de00a2347d0a584049494678762a3')
+pkgver(){
+  date + '%Y%m%d'
+}
+package() {
+  mkdir -p "$pkgdir/etc/pacman.d"
+  install -m644 "$srcdir/mirrorlist.bio" "$pkgdir/etc/pacman.d/"
+}
+

@@ -1,0 +1,7 @@
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+update_on:
+- source: github
+  github: lilydjwg/archrepo2
+- alias: python
