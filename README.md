@@ -3,7 +3,7 @@
 </p>
 BioArchLinux</h3>
 
-## Special sponser
+## Special sponsor
 
 <div>
 <a href="https://v.ps/" target="_blank"><img height="70px" src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logs/xtom.png"></a>
