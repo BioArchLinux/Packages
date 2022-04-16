@@ -1,0 +1,7 @@
+
+#!/bin/sh
+
+exec /usr/lib/v8/d8 "$@"
+© 2022 GitHub, Inc.
+Terms
+

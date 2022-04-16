@@ -1,8 +1,10 @@
-build_prefix: BioArchLinux-x86_64
 maintainers:
-- github: starsareintherose
-  email: starsareintherose@outlook.com
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+build_prefix: extra-x86_64
 update_on:
-- regex: qt4-(\d+.\d+.\d+)-35-x86_64.pkg.tar.zst
-  source: regex
-  url: https://desolve.ru/archrepo/x86_64/
+  - source: cmd
+    cmd: curl -sS https://download.qt.io/archive/qt/4.8/ | grep 'href="4.' | sed 's/\// /g' | sed 's/>/ /g' | awk '{print $10}' | head -n 1
+time_limit_hours: 6
+
+
