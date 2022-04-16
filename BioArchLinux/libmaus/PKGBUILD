@@ -1,0 +1,28 @@
+# Maintainer: Clint Valentine <valentine.clint@gmail.com>
+
+pkgname=libmaus
+pkgver=2.0.810_release_20220216151520
+pkgrel=2
+pkgdesc="Bioinformatics data structures and algorithms in C++"
+arch=('x86_64')
+url=https://gitlab.com/german.tischler/libmaus2
+license=('GPL2')
+source=(https://gitlab.com/german.tischler/"${pkgname}"2/-/archive/"${pkgver//_/-}"/"${pkgname}"2-"${pkgver//_/-}".tar.gz)
+sha256sums=('6639289aba6bbece3057ab7d1782a1b94b80a9ae22fc3d136a78ba8f7b9edaee')
+makedepends=('make' 'gcc' 'boost')
+build() {
+  cd "${srcdir}"/libmaus2-"${pkgver//_/-}"
+  ./configure --prefix="${pkgdir}"/usr/local --exec-prefix "${pkgdir}"/
+  make
+}
+
+check() {
+  cd "${srcdir}/libmaus2-${pkgver}-release-${_release}"
+  make test
+}
+
+package() {
+  cd "${srcdir}"/libmaus2-"${pkgver//_/-}"
+  make install && mv "${pkgdir}"/lib "${pkgdir}"/usr/lib
+  install -Dm644 AUTHORS "${pkgdir}"/usr/share/licenses/"${pkgname}"2/AUTHORS
+}

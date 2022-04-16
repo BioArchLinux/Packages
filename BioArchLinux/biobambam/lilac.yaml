@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: cmd
+  cmd: curl -sS https://github.com/gt1/biobambam2/tags | grep '\-release-' | head -n 1 | sed 's/\// /g' | sed 's/"/ /g' | awk '{print $7}' | sed 's/-/_/g'
+repo_depends:
+  - libmaus 
