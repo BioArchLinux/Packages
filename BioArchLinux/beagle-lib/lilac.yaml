@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: github
+    github: beagle-dev/beagle-lib
+    use_late_release: true
+    prefix: 'v'
