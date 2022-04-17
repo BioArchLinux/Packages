@@ -13,16 +13,16 @@ source=(https://github.com/gt1/biobambam2/archive/refs/tags/${pkgver//_/-}.tar.g
 sha256sums=('292a99d356f4523b31a18c79441fc387184ee13adf79682b040f88b4b2a05d27')
 
 build() {
-  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}."
+  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}"
   ./configure --prefix="${pkgdir}"/usr
 }
 
 check() {
-  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}."
+  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}"
   make test
 }
 
 package() {
-  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}."
+  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}"
   make install
 }
