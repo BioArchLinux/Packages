@@ -17,12 +17,13 @@ build() {
 }
 
 check() {
-  cd "${srcdir}/libmaus2-"${pkgver//_/-}"
+  cd ${srcdir}/libmaus2-"${pkgver//_/-}"
   make test
 }
 
 package() {
-  cd "${srcdir}"/libmaus2-"${pkgver//_/-}"
-  make install && mv "${pkgdir}"/lib "${pkgdir}"/usr/lib
+  cd ${srcdir}/libmaus2-"${pkgver//_/-}"
+  make install
+  mv "${pkgdir}"/lib "${pkgdir}"/usr/lib
   install -Dm644 AUTHORS "${pkgdir}"/usr/share/licenses/"${pkgname}"2/AUTHORS
 }
