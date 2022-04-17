@@ -4,5 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: cmd
-  cmd: curl -sS https://gitlab.com/german.tischler/libmaus2/-/tags | grep '\-release-' | head -n1 | sed 's/</ /g' | sed 's/>/ /g' | awk '{print $5}' | sed 's/-/_/g'
+    cmd: curl -sS https://gitlab.com/german.tischler/libmaus2/-/tags | grep '\-release-' | head -n1 | sed 's/</ /g' | sed 's/>/ /g' | awk '{print $5}' | sed 's/-/_/g'
 time_limit_hours: 6
