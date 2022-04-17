@@ -1,0 +1,27 @@
+# Maintainer: Guoyi
+pkgname=star
+_pkgname=STAR
+pkgver=2.7.10a
+pkgrel=1
+pkgdesc="RNA-seq aligner"
+arch=('x86_64')
+url="https://github.com/alexdobin/STAR"
+license=('MIT')
+depends=()
+makedepends=()
+optdepends=()
+source=(https://github.com/alexdobin/STAR/archive/refs/tags/$pkgver.tar.gz)
+sha256sums=('af0df8fdc0e7a539b3ec6665dce9ac55c33598dfbc74d24df9dae7a309b0426a')
+build() {
+  cd "$_pkgname-$pkgver"
+  cd source
+  make -f Makefile
+}
+
+package() {
+  cd "$_pkgname-$pkgver"
+  cd bin/Linux_x86_64
+  install -Dm 755 STAR $pkgdir/usr/bin/STAR
+  install -Dm 755 STARlong $pkgdir/usr/bin/STARlong
+  
+}
