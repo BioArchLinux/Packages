@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: regex
+    regex: 'stringtie-(\d+.\d+.\d+).tar.gz '
+    url: "https://ccb.jhu.edu/software/stringtie/index.shtml"
