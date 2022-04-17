@@ -7,6 +7,7 @@ arch=('i686' 'x86_64')
 license=('GPL')
 url="http://zzz.bwh.harvard.edu/plink/download.shtml"
 depends=('r' 'zlib' 'lapack')
+makedepends=('clang' 'make')
 source=(http://zzz.bwh.harvard.edu/plink/dist/${pkgname}-${pkgver}-src.zip
         current_gcc.patch)
 md5sums=('4566376791df4e69459b849bd7078fa3'
@@ -22,7 +23,7 @@ prepare() {
 
 build() {
   cd ${srcdir}/${pkgname}-${pkgver}-src
-  make
+  make CXX_UNIX='clang++'
 }
 
 package() {
