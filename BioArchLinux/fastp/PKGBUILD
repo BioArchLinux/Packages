@@ -2,7 +2,7 @@
 # Maintainer: Baytars <feicuihuangfeng@qq.com>
 pkgname=fastp
 pkgver=0.23.2
-pkgrel=1
+pkgrel=2
 pkgdesc="a tool designed to provide fast all-in-one preprocessing for FastQ files, developed in C++ with multithreading supported to afford high performance"
 url="https://github.com/OpenGene/fastp"
 license=('MIT')
