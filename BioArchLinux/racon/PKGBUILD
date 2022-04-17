@@ -2,7 +2,7 @@
 
 pkgname=racon
 pkgver=1.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Ultrafast consensus module for raw de novo genome assembly"
 arch=('i686' 'x86_64')
 url="https://github.com/lbcb-sci/racon"
