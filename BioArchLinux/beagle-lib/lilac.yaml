@@ -5,5 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: beagle-dev/beagle-lib
-    use_late_release: true
+    use_max_tag: true
     prefix: 'v'
