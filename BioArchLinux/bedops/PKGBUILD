@@ -20,6 +20,6 @@ build() {
 
 package() {
     cd "$srcdir"/$pkgname-$pkgver
-    mkdir -p "$pkgdir"/usr
-    cp -r bin $pkgdir/usr/
+    mkdir -p "$pkgdir"/usr/bin
+    cp -r bin/* $pkgdir/usr/
 }
