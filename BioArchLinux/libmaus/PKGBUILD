@@ -17,7 +17,7 @@ build() {
 }
 
 check() {
-  cd "${srcdir}/libmaus2-${pkgver}-release-${_release}"
+  cd "${srcdir}/libmaus2-"${pkgver//_/-}"
   make test
 }
 
