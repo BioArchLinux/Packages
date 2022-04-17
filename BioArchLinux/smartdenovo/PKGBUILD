@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=smartdenovo
 pkgver=r80.8488de9
-pkgrel=1
+pkgrel=2
 pkgdesc="About Ultra-fast de novo assembler using long noisy reads"
 arch=('x86_64')
 url="https://github.com/ruanjue/smartdenovo"
