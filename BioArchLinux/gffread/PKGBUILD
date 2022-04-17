@@ -21,7 +21,7 @@ build(){
 }
 build() {
   cd "${pkgname}"-$pkgver
-  make release
+  make release || bash -c "ls ../gclib/"
 }
 
 package() {
