@@ -4,5 +4,5 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: regex
-    regex: 'stringtie-(\d+.\d+.\d+).tar.gz '
+    regex: 'stringtie-(\d+.\d+.\d+).tar.gz'
     url: "https://ccb.jhu.edu/software/stringtie/index.shtml"
