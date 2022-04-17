@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=gffread
 pkgver=0.12.7
-pkgrel=1
+pkgrel=2
 pkgdesc="GFF/GTF utility providing format conversions, region filtering, FASTA sequence extraction and more"
 arch=('x86_64')
 url="https://github.com/gpertea/gffread"
