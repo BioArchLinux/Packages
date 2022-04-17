@@ -4,5 +4,6 @@ maintainers:
     email: starsareintherose@outlook.com
 update_on:
   - source: github
-    github: alexdobin/STAR
+    github: ruanjue/wtdbg2
     use_latest_release: true
+    prefix: 'v'
