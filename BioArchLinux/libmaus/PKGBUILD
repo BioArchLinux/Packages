@@ -2,7 +2,7 @@
 
 pkgname=libmaus
 pkgver=2.0.810_release_20220216151520
-pkgrel=3
+pkgrel=4
 pkgdesc="Bioinformatics data structures and algorithms in C++"
 arch=('x86_64')
 url=https://gitlab.com/german.tischler/libmaus2
@@ -12,7 +12,7 @@ sha256sums=('6639289aba6bbece3057ab7d1782a1b94b80a9ae22fc3d136a78ba8f7b9edaee')
 makedepends=('make' 'gcc' 'boost')
 build() {
   cd "${srcdir}"/libmaus2-"${pkgver//_/-}"
-  ./configure --prefix="${pkgdir}"/usr/local --exec-prefix "${pkgdir}"/
+  ./configure --prefix="${pkgdir}"/usr --exec-prefix "${pkgdir}"/
   make
 }
 
