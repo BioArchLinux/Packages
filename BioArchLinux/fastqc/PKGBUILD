@@ -2,7 +2,7 @@
 
 pkgname=fastqc
 pkgver=0.11.9
-pkgrel=1
+pkgrel=2
 pkgdesc='A quality control tool for high throughput sequence data.'
 arch=('any')
 url="http://www.bioinformatics.babraham.ac.uk/projects/fastqc"
