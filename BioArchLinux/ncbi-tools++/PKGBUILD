@@ -3,7 +3,7 @@
 pkgname=ncbi-tools++
 pkgver=25.2.0
 _pkgver=${pkgver//./_}
-pkgrel=2
+pkgrel=3
 pkgdesc="Applications, scripts and C++ libraries for the analysis of biological data"
 arch=('i686' 'x86_64')
 url="https://ncbi.github.io/cxx-toolkit/"
