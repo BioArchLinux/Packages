@@ -20,6 +20,6 @@ build() {
 
 package() {
     cd "$srcdir"/$pkgname-$pkgver
-    install -dm755 "$pkgdir"/usr/bin
+    mkdir -p "$pkgdir"/usr/bin
     mv bin/* $pkgdir/usr/bin 
 }
