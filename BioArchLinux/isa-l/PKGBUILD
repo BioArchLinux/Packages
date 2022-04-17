@@ -1,7 +1,7 @@
 # Maintainer: Roy Oursler <roy.j.oursler@intel.com>
 pkgname=isa-l
 pkgver=2.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of optimized low-level functions targeting storage applications"
 arch=(x86_64)
 url="https://github.com/intel/$pkgname"
