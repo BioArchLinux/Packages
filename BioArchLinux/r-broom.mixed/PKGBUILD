@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=broom.mixed
-_pkgver=0.2.9.3
+_pkgver=0.2.9.4
 pkgname=r-${_pkgname,,}
-pkgver=0.2.9.3
+pkgver=0.2.9.4
 pkgrel=1
 pkgdesc='Tidying Methods for Mixed Models'
 arch=('any')
@@ -46,7 +46,7 @@ optdepends=(
   r-tmb
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('16e313f9ecd5aa5ca682454c68f96e743f153fdb5d96834a93e0e8176e608706')
+sha256sums=('7631cd29316a32050b9e72057754e053d7f9064a75900bb7e69b29ebca6c60b2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
