@@ -3,7 +3,7 @@
 
 pkgname=abyss
 pkgver=2.3.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Assembly By Short Sequences - a de novo, parallel, paired-end sequence assembler"
 arch=("i686" "x86_64")
 url="https://github.com/bcgsc/abyss"
