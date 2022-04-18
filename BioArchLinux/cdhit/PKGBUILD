@@ -1,0 +1,35 @@
+# Maintainer: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
+
+pkgname=cdhit
+pkgver=4.8.1
+#_pkgver="v$pkgver-2019-0228"
+pkgrel=1
+pkgdesc="clustering DNA/protein sequence database at high identity with tolerance"
+arch=('i686' 'x86_64')
+url="http://weizhongli-lab.org/cd-hit/"
+license=('GPL2')
+depends=('perl' 'openmpi')
+source=("https://github.com/weizhongli/cdhit/archive/refs/tags/V${pkgver}.tar.gz"
+        "perl-shebangs.patch::https://patch-diff.githubusercontent.com/raw/weizhongli/cdhit/pull/25.patch")
+sha512sums=('28f350c67079f000b4102126a29d2eed110c636fb32a8a53699b60e6f3447348ea3838fe87a4dd952895d62491298394a314254e91036f6a23b1956b1e237a64'
+            'f9a918ebe2865d84c31fbd5ab4b0b2f58bf3faee879cb304e1fa44969e01db3786f12b3699a712094f9ee261efd306188aff548b1a88f57daae5d02205551236')
+
+prepare() {
+  cd $srcdir/cdhit-$pkgver
+
+  patch -Np1 -i $srcdir/perl-shebangs.patch
+}
+
+build() {
+  cd $srcdir/cdhit-$pkgver
+
+  make openmp=yes
+}
+
+package() {
+  cd $srcdir/cdhit-$pkgver
+
+  for file in cd-hit cd-hit-est cd-hit-2d cd-hit-est-2d cd-hit-div cd-hit-454 *.pl ; do
+    install -Dm755 $file $pkgdir/usr/bin/$(basename $file .pl)
+  done
+}
