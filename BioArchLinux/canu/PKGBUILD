@@ -3,7 +3,7 @@
 
 pkgname=canu
 pkgver=2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A fork of the Celera Assembler designed for high-noise single-molecule sequencing"
 arch=('i686' 'x86_64')
 url="https://canu.readthedocs.io/"
