@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: github
+    github: cytoscape/cytoscape
+    use_max_tag: true
