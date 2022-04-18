@@ -4,7 +4,7 @@
 
 pkgname=cytoscape
 pkgver=3.9.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Network Data Integration, Analysis, and Visualization in a Box"
 arch=('any')
 url=https://www.cytoscape.org
