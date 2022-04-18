@@ -1,0 +1,7 @@
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+build_prefix: extra-x86_64
+update_on:
+  - source: cmd
+    cmd:  curl -sS "https://sourceforge.net/projects/bbmap/rss?path=/" | grep '<link>' | grep 'tar.gz' | head -n 1 | sed 's/_/ /g' | sed 's/.tar.gz/ /g' | awk '{print $2}'
