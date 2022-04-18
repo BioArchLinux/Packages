@@ -3,7 +3,7 @@
 pkgname=cdhit
 pkgver=4.8.1
 #_pkgver="v$pkgver-2019-0228"
-pkgrel=1
+pkgrel=2
 pkgdesc="clustering DNA/protein sequence database at high identity with tolerance"
 arch=('i686' 'x86_64')
 url="http://weizhongli-lab.org/cd-hit/"
