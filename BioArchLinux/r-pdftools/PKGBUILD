@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pdftools
-_pkgver=3.1.1
+_pkgver=3.2.0
 pkgname=r-${_pkgname,,}
-pkgver=3.1.1
+pkgver=3.2.0
 pkgrel=1
 pkgdesc='Text Extraction, Rendering and Converting of PDF Documents'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-webp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2651283b68826ed8dc73f33b41ae268332e4759d5efa3d06e0a4b6eb85c3d4d1')
+sha256sums=('a2ae003d730cfdd95dbd3a7eecbd8ce4ecd3cb43441700e6bfa5d897e714982c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
