@@ -21,6 +21,7 @@ depends=(
   r-htmltools
   r-latticeextra
   r-viridis
+  r-stringi
 )
 optdepends=(
   r-acepack
