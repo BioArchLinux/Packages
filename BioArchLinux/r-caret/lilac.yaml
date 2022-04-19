@@ -12,6 +12,7 @@ repo_depends:
 - r-recipes
 - r-reshape2
 - r-withr
+- r-stringi
 update_on:
 - regex: caret_([\d._-]+).tar.gz
   source: regex
