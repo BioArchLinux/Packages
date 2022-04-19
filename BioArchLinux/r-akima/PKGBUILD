@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=akima
-_pkgver=0.6-2.3
+_pkgver=0.6-3.3
 pkgname=r-${_pkgname,,}
-pkgver=0.6.2.3
-pkgrel=3
+pkgver=0.6.3.3
+pkgrel=1
 pkgdesc='Interpolation of Irregularly and Regularly Spaced Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,7 +17,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3b9b180c4298fb2e96f04ec686dd31753901542496743d81694ea01cac506a43')
+sha256sums=('69cbb88079f98905736322bb2fe2a6a58091f0f3c0fdc9a407d8fdd48160d175')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
