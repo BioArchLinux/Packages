@@ -6,7 +6,7 @@ update_on:
   - source: github
     github: iqtree/iqtree2
     use_latest_release: true
-    include_regex: v(\d+.\d+.\d+)
+    prefix: 'v'
 #repo_depends:
 #  - libstdc++5
 time_limit_hours: 6
