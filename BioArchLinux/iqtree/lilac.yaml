@@ -5,7 +5,7 @@ maintainers:
 update_on:
   - source: github
     github: iqtree/iqtree2
-    use_max_tag: true
+    use_latest_release: true
     include_regex: v(\d+.\d+.\d+)
 #repo_depends:
 #  - libstdc++5
