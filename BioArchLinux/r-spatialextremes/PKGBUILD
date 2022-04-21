@@ -4,7 +4,7 @@ _pkgname=SpatialExtremes
 _pkgver=2.1-0
 pkgname=r-${_pkgname,,}
 pkgver=2.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Modelling Spatial Extremes'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
