@@ -4,7 +4,7 @@
 # Contributor: martin <martin pipegrep.co.uk>
 pkgname=afni
 pkgver=22.1.04
-pkgrel=1
+pkgrel=2
 pkgdesc="An open-source environment for processing and displaying functional MRI data"
 arch=("x86_64")
 url="http://afni.nimh.nih.gov"
