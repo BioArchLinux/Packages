@@ -2,7 +2,7 @@
 
 pkgname=biobambam
 pkgver=2.0.183_release_20210802180148
-pkgrel=2
+pkgrel=3
 pkgdesc="BAM file pre-processing utilities for bioinformatics."
 arch=('x86_64')
 url="https://github.com/gt1/biobambam2"
