@@ -1,7 +1,7 @@
 # Maintainer: Stunts <f.pinamartins@gmail.com>
 pkgname=plink
 pkgver=1.07
-pkgrel=5
+pkgrel=6
 pkgdesc="Whole genome association analysis toolset"
 arch=('i686' 'x86_64')
 license=('GPL')
