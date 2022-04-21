@@ -2,7 +2,7 @@
 pkgname=star
 _pkgname=STAR
 pkgver=2.7.10a
-pkgrel=2
+pkgrel=3
 pkgdesc="RNA-seq aligner"
 arch=('x86_64')
 url="https://github.com/alexdobin/STAR"
