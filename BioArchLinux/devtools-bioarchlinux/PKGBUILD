@@ -3,7 +3,7 @@
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
 pkgver=20220207
-pkgrel=4
+pkgrel=5
 pkgdesc='Tools for Arch Linux package maintainers, archlinuxcn fork'
 arch=('any')
 license=('GPL')
