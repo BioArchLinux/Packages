@@ -4,7 +4,7 @@ _pkgname=vegan
 _pkgver=2.6-2
 pkgname=r-${_pkgname,,}
 pkgver=2.6.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Community Ecology Package'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
