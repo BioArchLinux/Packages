@@ -3,7 +3,7 @@
 
 pkgname=gatk
 pkgver=4.2.6.1
-pkgrel=2
+pkgrel=3
 epoch=2
 pkgdesc="Variant discovery in high-throughput bioinformatics sequencing data"
 arch=('any')
