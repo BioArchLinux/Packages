@@ -2,7 +2,7 @@
 
 pkgname=stringtie
 pkgver=2.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast and highly efficient assembler of RNA-Seq\
  alignments into potential transcripts"
 
