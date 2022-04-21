@@ -4,7 +4,7 @@ _pkgname=splancs
 _pkgver=2.01-43
 pkgname=r-${_pkgname,,}
 pkgver=2.01.43
-pkgrel=1
+pkgrel=2
 pkgdesc='Spatial and Space-Time Point Pattern Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
