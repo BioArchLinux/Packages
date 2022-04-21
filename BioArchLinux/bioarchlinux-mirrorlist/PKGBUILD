@@ -1,8 +1,8 @@
 # Maintainer: Guoyi
 
 pkgname=bioarchlinux-mirrorlist
-pkgver=20220416
-pkgrel=2
+pkgver=20220421
+pkgrel=1
 pkgdesc="BioArchLinux mirror list for use by pacman"
 arch=('any')
 url="https://github.com/BioArchLinux/mirror"
