@@ -2,7 +2,7 @@
 
 pkgname=libmaus
 pkgver=2.0.810_release_20220216151520
-pkgrel=5
+pkgrel=6
 pkgdesc="Bioinformatics data structures and algorithms in C++"
 arch=('x86_64')
 url=https://gitlab.com/german.tischler/libmaus2
