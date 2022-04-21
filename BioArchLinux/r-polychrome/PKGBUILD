@@ -4,7 +4,7 @@ _pkgname=Polychrome
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Qualitative Palettes with Many Colors'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
