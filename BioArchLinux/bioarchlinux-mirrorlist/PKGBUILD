@@ -2,7 +2,7 @@
 
 pkgname=bioarchlinux-mirrorlist
 pkgver=20220421
-pkgrel=1
+pkgrel=2
 pkgdesc="BioArchLinux mirror list for use by pacman"
 arch=('any')
 url="https://github.com/BioArchLinux/mirror"
