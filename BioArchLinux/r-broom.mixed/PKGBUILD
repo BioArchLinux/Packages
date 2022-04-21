@@ -4,7 +4,7 @@ _pkgname=broom.mixed
 _pkgver=0.2.9.4
 pkgname=r-${_pkgname,,}
 pkgver=0.2.9.4
-pkgrel=2
+pkgrel=3
 pkgdesc='Tidying Methods for Mixed Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
