@@ -4,7 +4,7 @@ _pkgname=shinyBS
 _pkgver=0.61.1
 pkgname=r-${_pkgname,,}
 pkgver=0.61.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Twitter Bootstrap Components for Shiny'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
