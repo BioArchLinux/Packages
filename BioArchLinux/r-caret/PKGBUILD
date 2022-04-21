@@ -4,7 +4,7 @@ _pkgname=caret
 _pkgver=6.0-92
 pkgname=r-${_pkgname,,}
 pkgver=6.0.92
-pkgrel=2
+pkgrel=3
 pkgdesc='Classification and Regression Training'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
