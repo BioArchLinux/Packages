@@ -4,7 +4,7 @@ _pkgname=akima
 _pkgver=0.6-3.3
 pkgname=r-${_pkgname,,}
 pkgver=0.6.3.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Interpolation of Irregularly and Regularly Spaced Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
