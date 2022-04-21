@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=gffcompare
 pkgver=0.12.6
-pkgrel=4
+pkgrel=5
 pkgdesc="classify, merge, tracking and annotation of GFF files by comparing to a reference annotation GFF"
 arch=('x86_64')
 url="https://github.com/gpertea/gffcompare"
