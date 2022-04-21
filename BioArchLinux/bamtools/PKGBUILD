@@ -2,7 +2,7 @@
 
 pkgname=bamtools
 pkgver=2.5.2
-pkgrel=2
+pkgrel=3
 pkgdesc="C++ API & command-line toolkit for working with BAM data"
 arch=('x86_64' 'i686')
 url="https://github.com/pezmaster31/bamtools"
