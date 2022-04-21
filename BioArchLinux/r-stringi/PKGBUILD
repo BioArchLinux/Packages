@@ -5,7 +5,7 @@ _pkgname=stringi
 _pkgver=1.7.6
 pkgname=r-${_pkgname,,}
 pkgver=1.7.6
-pkgrel=6
+pkgrel=7
 pkgdesc='Character String Processing Facilities'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
