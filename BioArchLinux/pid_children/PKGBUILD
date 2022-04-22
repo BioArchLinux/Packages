@@ -2,7 +2,7 @@
 
 pkgname=pid_children
 pkgver=r10.749d59c
-pkgrel=10
+pkgrel=11
 pkgdesc='A simple program outputs descendant process ids for each pid given on the command line'
 arch=(x86_64)
 depends=(gcc-libs)
