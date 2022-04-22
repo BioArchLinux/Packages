@@ -1,0 +1,10 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: starsareintherose@outlook.com
+update_on:
+  - source: github
+    github: NBISweden/MrBayes
+    use_latest_release: true
+repo_depends:
+  - beagle-lib
