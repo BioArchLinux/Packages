@@ -4,7 +4,7 @@ _pkgname=Rtsne
 _pkgver=0.16
 pkgname=r-${_pkgname,,}
 pkgver=0.16
-pkgrel=4
+pkgrel=5
 pkgdesc='T-Distributed Stochastic Neighbor Embedding using a Barnes-Hut Implementation'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
