@@ -4,7 +4,7 @@ _pkgname=MatrixCorrelation
 _pkgver=0.10.0
 pkgname=r-${_pkgname,,}
 pkgver=0.10.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Matrix Correlation Coefficients'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
