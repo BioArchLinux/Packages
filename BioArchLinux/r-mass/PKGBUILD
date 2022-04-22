@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MASS
-_pkgver=7.3-56
+_pkgver=7.3-57
 pkgname=r-${_pkgname,,}
-pkgver=7.3.56
+pkgver=7.3.57
 pkgrel=1
 pkgdesc="Support Functions and Datasets for Venables and Ripley's MASS"
 arch=('x86_64')
@@ -19,7 +19,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9bdabd14e0b0b020791e20a8fbdfd3e0e634da2e2485ab31c9dda8554c2afb85')
+sha256sums=('bd8b880105bc1aadb2db699086f74bd92a8611287979a24243187f9d80795a8d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
