@@ -5,7 +5,7 @@ _pkgname=rsvg
 _pkgver=2.3.1
 pkgname=r-${_pkgname,,}
 pkgver=2.3.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Render SVG Images into PDF, PNG, PostScript, or Bitmap Arrays'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
