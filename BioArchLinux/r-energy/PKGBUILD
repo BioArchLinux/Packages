@@ -4,7 +4,7 @@ _pkgname=energy
 _pkgver=1.7-10
 pkgname=r-${_pkgname,,}
 pkgver=1.7.10
-pkgrel=3
+pkgrel=4
 pkgdesc='E-Statistics: Multivariate Inference via the Energy of Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
