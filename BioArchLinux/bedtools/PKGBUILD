@@ -1,7 +1,7 @@
 # Maintainer: Piotr Balwierz
 pkgname=bedtools
 pkgver=2.30.0
-pkgrel=4
+pkgrel=5
 pkgdesc='powerful toolset for genome arithmetic'
 arch=('i686' 'x86_64')
 url="https://github.com/arq5x/bedtools2"
