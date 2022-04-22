@@ -3,7 +3,7 @@
 _reponame=ncbi-genome-download
 pkgname=ncbi-genome-download
 pkgver=0.3.1
-pkgrel=5
+pkgrel=6
 pkgdesc="Scripts to download genomes from the NCBI FTP servers"
 arch=('any')
 url="https://github.com/kblin/ncbi-genome-download"
