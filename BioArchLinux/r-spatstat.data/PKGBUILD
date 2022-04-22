@@ -4,7 +4,7 @@ _pkgname=spatstat.data
 _pkgver=2.2-0
 pkgname=r-${_pkgname,,}
 pkgver=2.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Datasets for 'spatstat' Family"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
