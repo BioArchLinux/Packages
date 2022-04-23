@@ -3,7 +3,7 @@
 pkgname=mrbayes-beagle
 _up_pkgname=MrBayes
 pkgver=3.2.7
-pkgrel=5
+pkgrel=6
 provides=("mrbayes")
 pkgdesc="A program for the Bayesian estimation of phylogeny. https://doi.org/10.1093/sysbio/sys029"
 arch=('i686' 'x86_64')
