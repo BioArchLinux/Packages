@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=penalized
-_pkgver=0.9-51
+_pkgver=0.9-52
 pkgname=r-${_pkgname,,}
-pkgver=0.9.51
-pkgrel=2
+pkgver=0.9.52
+pkgrel=1
 pkgdesc='L1 (Lasso and Fused Lasso) and L2 (Ridge) Penalized Estimation in GLMs and in the Cox Model'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-globaltest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('eaa80dca99981fb9eb576261f30046cfe492d014cc2bf286c447b03a92e299fd')
+sha256sums=('d8e38e6c4e993c74998ca8f986b4e11e09c0b9971103e1d5c7ebdee75f6d6a21')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
