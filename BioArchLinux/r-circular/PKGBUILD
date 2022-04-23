@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=circular
-_pkgver=0.4-94
+_pkgver=0.4-94.1
 pkgname=r-${_pkgname,,}
-pkgver=0.4.94
+pkgver=0.4.94.1
 pkgrel=1
 pkgdesc='Circular Statistics'
 arch=('x86_64')
@@ -17,7 +17,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b9ba433ca8bfd76d2a273ffa257a6cc8a0c7a7a5a0dec3fcde2abc634d5b5671')
+sha256sums=('82c653230e186e1e2612fa6181253a6484801119cafc2db957e9fa4f3d730a37')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
