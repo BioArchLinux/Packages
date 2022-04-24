@@ -4,7 +4,7 @@
 
 pkgname=mrbayes-mpi-beagle
 pkgver=3.2.7
-pkgrel=10
+pkgrel=11
 pkgdesc="MrBayes is a program for Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models. https://doi.org/10.1093/sysbio/sys029"
 arch=('i686' 'x86_64')
 url="nbisweden.github.io/mrbayes/"
