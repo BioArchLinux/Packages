@@ -1,46 +1,37 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=metafor
-_pkgver=3.0-2
+_pkgname=metadat
+_pkgver=1.2-0
 pkgname=r-${_pkgname,,}
-pkgver=3.0.2
-pkgrel=2
-pkgdesc='Meta-Analysis Package for R'
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Meta-Analysis Datasets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
   r-mathjaxr
-  r-pbapply
-  r-metadat
 )
 optdepends=(
   r-ape
   r-biasedurn
-  r-boot
-  r-compquadform
-  r-crayon
+  r-clubsandwich
   r-dfoptim
-  r-epi
-  r-glmmadaptive
-  r-gsl
+  r-digest
+  r-gridextra
+  r-igraph
   r-lme4
-  r-minqa
-  r-multcomp
+  r-meta
+  r-metafor
   r-mvtnorm
-  r-nloptr
+  r-netmeta
   r-numderiv
-  r-optimparallel
-  r-r.rsp
-  r-rmarkdown
-  r-sp
-  r-survival
+  r-rms
   r-testthat
-  r-ucminf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('02df435197b225da736103edf73d19253a542bc31fc0b99610c02daec434138a')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

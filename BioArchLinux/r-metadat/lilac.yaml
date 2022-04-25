@@ -4,9 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-mathjaxr
-- r-pbapply
-- r-metadat
 update_on:
-- regex: metafor_([\d._-]+).tar.gz
+- regex: metadat_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=metafor
+  url: https://cran.r-project.org/package=metadat
