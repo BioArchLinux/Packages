@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rrcov
-_pkgver=1.6-2
+_pkgver=1.7-0
 pkgname=r-${_pkgname,,}
-pkgver=1.6.2
-pkgrel=2
+pkgver=1.7.0
+pkgrel=1
 pkgdesc='Scalable Robust Estimators with High Breakdown Point'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c5e6425b04cba19ce42d3baf89ce7ae71ec1d294d31a0488bdf40a9b96f0a8a3')
+sha256sums=('cbcca84a82d63fa50556aa8db29312b9bb588a638eb306ce4a81c271529228fd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
