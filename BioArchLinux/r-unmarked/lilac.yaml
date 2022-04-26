@@ -9,6 +9,7 @@ repo_depends:
 - r-rcpp
 - r-rcpparmadillo
 - r-tmb
+- r-pbapply
 update_on:
 - regex: unmarked_([\d._-]+).tar.gz
   source: regex
