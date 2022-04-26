@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=TH.data
-_pkgver=1.1-0
+_pkgver=1.1-1
 pkgname=r-${_pkgname,,}
-pkgver=1.1.0
-pkgrel=2
+pkgver=1.1.1
+pkgrel=1
 pkgdesc="TH's Data Archive"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -29,7 +29,7 @@ optdepends=(
   r-vcd
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('21b37e251da5635ae91668f64b4c6f6a7ccedbe1f01af769d30fb532af83113e')
+sha256sums=('edf3ab16b142f4c52d21fc64e41409ed138e5b3e142f2fae964b00f02d53dd7a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
