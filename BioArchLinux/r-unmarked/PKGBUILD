@@ -18,6 +18,7 @@ depends=(
   r-rcpp
   r-rcpparmadillo
   r-tmb
+  r-pbapply
   make
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
