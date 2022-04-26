@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=cplm
-_pkgver=0.7-9
+_pkgver=0.7-10
 pkgname=r-${_pkgname,,}
-pkgver=0.7.9
-pkgrel=2
+pkgver=0.7.10
+pkgrel=1
 pkgdesc='Compound Poisson Linear Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,7 @@ depends=(
   r-tweedie
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d2539056a71250a248f16f8e390a805dcec4ea17220d596329eb43817330f514')
+sha256sums=('b3533e031f79579ce31d7dd3765ff0ea3b44435fafc258d84a18162340981257')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
