@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=exactRankTests
-_pkgver=0.8-34
+_pkgver=0.8-35
 pkgname=r-${_pkgname,,}
-pkgver=0.8.34
-pkgrel=2
+pkgver=0.8.35
+pkgrel=1
 pkgdesc='Exact Distributions for Rank and Permutation Tests'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('496d9a0e090972453bca56d24a18e23c7516a7bc82f336a20a90ca1acce795c4')
+sha256sums=('7eb4a9ff431a306f634a5feba39c381afb17573e24230976ece843c84e8969e3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
