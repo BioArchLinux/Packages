@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=geneRecommender
-_pkgver=1.66.0
+_pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=1.66.0
-pkgrel=2
+pkgver=1.68.0
+pkgrel=1
 pkgdesc='A gene recommender algorithm to identify genes coexpressed with a query set of genes'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2b98a76adf028c7e72cc00a06a620be157525cc3887c3b35c44346e413f2bf86')
+sha256sums=('8c223947666229b7648e4236914eb9bfaa2d49e7a88c02658f537f7b3ead88ea')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
