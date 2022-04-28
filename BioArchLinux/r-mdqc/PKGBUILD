@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=mdqc
-_pkgver=1.56.0
+_pkgver=1.58.0
 pkgname=r-${_pkgname,,}
-pkgver=1.56.0
-pkgrel=2
+pkgver=1.58.0
+pkgrel=1
 pkgdesc='Mahalanobis Distance Quality Control for microarrays'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e444b608dca6d0a12fabbc0aab1109fb702741b94da3316aa501428cecabdb1b')
+sha256sums=('c54e23331c3b449dc1a20cf1cbc2450257cb24f55be9a690230631e881bb5a8c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
