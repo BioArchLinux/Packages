@@ -8,6 +8,7 @@ repo_depends:
 - r-ggplot2
 - r-htmlwidgets
 - r-xml
+- r-tfbstools
 update_on:
 - regex: motifStack_([\d._-]+).tar.gz
   source: regex

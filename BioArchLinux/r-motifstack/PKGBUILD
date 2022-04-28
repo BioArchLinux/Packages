@@ -16,6 +16,7 @@ depends=(
   r-ggplot2
   r-htmlwidgets
   r-xml
+  r-tfbstools
 )
 optdepends=(
   r-biocgenerics
