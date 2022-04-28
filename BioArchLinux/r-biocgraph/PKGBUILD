@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=biocGraph
-_pkgver=1.56.0
+_pkgver=1.58.0
 pkgname=r-${_pkgname,,}
-pkgver=1.56.0
-pkgrel=2
+pkgver=1.58.0
+pkgrel=1
 pkgdesc='Graph examples and use cases in Bioinformatics'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-hgu95av2.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b8b375948d6cd8b9f2e7ebd53d2e887e14b7e65c8d866622a74d883e0303f930')
+sha256sums=('d69a0cf93f2f83d6e430b7f75a0b8ac8ba1f07ea138acfc50b164245d851a9f8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
