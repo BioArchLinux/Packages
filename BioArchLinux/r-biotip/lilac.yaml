@@ -8,6 +8,7 @@ repo_depends:
 - r-igraph
 - r-psych
 - r-stringr
+- r-scran
 update_on:
 - regex: BioTIP_([\d._-]+).tar.gz
   source: regex
