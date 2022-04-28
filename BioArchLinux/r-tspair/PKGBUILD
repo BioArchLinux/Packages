@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tspair
-_pkgver=1.52.0
+_pkgver=1.53.0
 pkgname=r-${_pkgname,,}
-pkgver=1.52.0
-pkgrel=2
+pkgver=1.53.0
+pkgrel=1
 pkgdesc='Top Scoring Pairs for Microarray Classification'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9a6b59a2a49520359ea4e8addeee2bc29eb144fc209dacec1947a81f63cba15e')
+sha256sums=('b3a00f4f49371e46b138a728d5430f4fb0084dd7816e3418b4d3d61146cdbd13')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
