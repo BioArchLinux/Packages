@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomicDataCommons
-_pkgver=1.18.0
+_pkgver=1.19.8
 pkgname=r-${_pkgname,,}
-pkgver=1.18.0
-pkgrel=2
+pkgver=1.19.8
+pkgrel=1
 pkgdesc='NIH / NCI Genomic Data Commons Access'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -40,7 +40,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('34adf8c8ab85cfc813d7cbf46d1d6b43b49fcb640c60999f5a2e46c81a0125db')
+sha256sums=('1c803bda2eec3b18e2b203b2ea0b53b7cc3c580e02f9a816e514ac1c8d2a9bc5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
