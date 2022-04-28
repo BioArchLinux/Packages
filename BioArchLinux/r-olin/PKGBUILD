@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=OLIN
-_pkgver=1.72.0
+_pkgver=1.73.0
 pkgname=r-${_pkgname,,}
-pkgver=1.72.0
-pkgrel=2
+pkgver=1.73.0
+pkgrel=1
 pkgdesc='Optimized local intensity-dependent normalisation of two-color microarrays'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-convert
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('eb257ccda61d423061e96f0ee63ba46c08bee47a9c5395049b2c7d40c6102473')
+sha256sums=('412a4df05884e00d637d3afa51171777a470c06fb43261fee1cbe82c3c83c914')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
