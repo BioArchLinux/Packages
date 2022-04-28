@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sparrow
-_pkgver=1.0.3
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.3
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Take command of set enrichment analyses through a unified interface'
 arch=('any')
@@ -57,7 +57,7 @@ optdepends=(
   r-webshot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6ed93174cb50cd158a1cf6cc60a0691f532bf3b5d86eb8021b9400ad585c9a56')
+sha256sums=('9cbfa3ca99dc8fe4ae140239365a69784ebc99345f3796774b8949dc94c3552b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
