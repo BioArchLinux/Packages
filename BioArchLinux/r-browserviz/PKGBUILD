@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BrowserViz
-_pkgver=2.16.0
+_pkgver=2.18.0
 pkgname=r-${_pkgname,,}
-pkgver=2.16.0
-pkgrel=2
+pkgver=2.18.0
+pkgrel=1
 pkgdesc='BrowserViz: interactive R/browser graphics using websockets and JSON'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c62f43b6a97f58438e2a4fb7e32fd79e9ee237590c7afe1f8229c3023ebbf924')
+sha256sums=('cd8ef6efbb7915b3179a35f5a7471b4dbcf7e56ed622c012950fee1ad7dce10f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
