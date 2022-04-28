@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ITALICSData
-_pkgver=2.32.0
+_pkgver=2.33.0
 pkgname=r-${_pkgname,,}
-pkgver=2.32.0
-pkgrel=2
+pkgver=2.33.0
+pkgrel=1
 pkgdesc='ITALICSData'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5b983a4ff1a9d2da7484409ee400eb044d420bbf346e0a5d98b473b26777fa8e')
+sha256sums=('9c730438217656add0492aa5a372e08354fcdf8298e4824fd289b6c565ce7315')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
