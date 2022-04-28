@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=KEGGdzPathwaysGEO
-_pkgver=1.32.0
+_pkgver=1.33.0
 pkgname=r-${_pkgname,,}
-pkgver=1.32.0
-pkgrel=2
+pkgver=1.33.0
+pkgrel=1
 pkgdesc='KEGG Disease Datasets from GEO'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-biocgenerics
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('91be291954cd8c3773fa269adde8773a3c2ce96dd1e818e45da57e0b499dea0f')
+sha256sums=('0d1a481b7053181606d8e90e83b32370f929b94d01356db06617c43219efa629')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
