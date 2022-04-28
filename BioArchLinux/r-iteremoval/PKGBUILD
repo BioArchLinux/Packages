@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=iteremoval
-_pkgver=1.14.0
+_pkgver=1.15.1
 pkgname=r-${_pkgname,,}
-pkgver=1.14.0
-pkgrel=2
+pkgver=1.15.1
+pkgrel=1
 pkgdesc='Iteration removal method for feature selection'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('14a26af1c8c685c9aa1ae6d0cece5b229404389ad5a5bf7d4c8c1ee103289a96')
+sha256sums=('0218f4fd2bcf4e71df405a78db01a028fa49a8093d6da63cffaab8dd3f45942f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
