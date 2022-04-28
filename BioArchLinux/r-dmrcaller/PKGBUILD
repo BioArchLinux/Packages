@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=DMRcaller
-_pkgver=1.26.0
+_pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=1.26.0
-pkgrel=2
+pkgver=1.28.0
+pkgrel=1
 pkgdesc='Differentially Methylated Regions caller'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('dc5c23f16b65c109f71ad20bdd7b9c86f2eba3e616ed75f14cde5f20adf0c362')
+sha256sums=('362b23674874b7d9b5dcc18ded37731386e4949594da63d337baca2de8e02d8b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
