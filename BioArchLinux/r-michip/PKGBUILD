@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MiChip
-_pkgver=1.48.0
+_pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=1.48.0
-pkgrel=2
+pkgver=1.50.0
+pkgrel=1
 pkgdesc='MiChip Parsing and Summarizing Functions'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-biobase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('82060e9ebd4a9a12819ac04fe15bb7f30703f4640d353f060a444a777e44458e')
+sha256sums=('a958a8499827a039b37cf988bcdb7684161ca669168aa1779fcc07128133e083')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
