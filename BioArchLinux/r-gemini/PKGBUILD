@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gemini
-_pkgver=1.8.0
+_pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=1.8.0
-pkgrel=2
+pkgver=1.10.0
+pkgrel=1
 pkgdesc='GEMINI: Variational inference approach to infer genetic interactions from pairwise CRISPR screens'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a4358bbe9e99eed875853e53ad275307217a3c66b3b2ebf83131b405659824e8')
+sha256sums=('593546124c8f8164355f7c0fddd362b45baa2c0466a134674c564fd5cb42a34f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
