@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MsBackendMgf
-_pkgver=1.2.0
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
-pkgrel=2
+pkgver=1.4.0
+pkgrel=1
 pkgdesc='Mass Spectrometry Data Backend for Mascot Generic Format (mgf) Files'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('29e6b199280b30706891b7627b0c2f65e0e2514e30beac7100babe2e63acf45c')
+sha256sums=('0c795d8c443f0871b80b73ce122d92a2e0c5082b0a9d3c6091376750f85406d4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
