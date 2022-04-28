@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=messina
-_pkgver=1.30.0
+_pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=1.30.0
-pkgrel=2
+pkgver=1.32.0
+pkgrel=1
 pkgdesc='Single-gene classifiers and outlier-resistant detection of differential expression for two-group and survival problems'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('098baf5ddb2b5468068a934b050d21dabdccbc6f09b2a3eca4c6ca8231a100cc')
+sha256sums=('2443f46bf8901d1e943a9ef33857644542195c0f32d1a6833bb186de7a926eab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
