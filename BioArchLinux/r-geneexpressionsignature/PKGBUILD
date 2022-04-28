@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GeneExpressionSignature
-_pkgver=1.40.0
+_pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=1.40.0
-pkgrel=2
+pkgver=1.42.0
+pkgrel=1
 pkgdesc='Gene Expression Signature based Similarity Metric'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('854b604dc37ac5f9795e09d2e199022e8c6a93d918d9e37db452911e2eae65b4')
+sha256sums=('5b6fdce7c81930b0219eb0452f0215b41c46c58728f8a9c45e5c3f54b1dedd4b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
