@@ -13,23 +13,21 @@ license=('GPL')
 depends=(
   'r>=4.0'
    r-mvtnorm
-   gcc-fortran
 )
 makedepends=(
   gcc-fortran
-  patch
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix_globals.patch")
 sha256sums=('289c70ee6eff34d9c66ba44ab12f7fcb616c8343526a2704c04c73c444e43ac8'
             'a1e9baa3c89b9950209e4832c35856ccb6b660fedb9ddf9c72c2ed0bc552c752')
 
-prepare() {
-  cd "${srcdir}/${_pkgname}"
+#prepare() {
+#  cd "${srcdir}/${_pkgname}"
 
   # fix global variables overlap until it will be fixed in upstream
-  patch -Np0 -i "${srcdir}/fix_globals.patch"
-}
+#  patch -Np0 -i "${srcdir}/fix_globals.patch"
+#}
 
 build() {
   # create staging directory for installation
