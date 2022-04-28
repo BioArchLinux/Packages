@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=bridge
-_pkgver=1.58.0
+_pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=1.58.0
-pkgrel=2
+pkgver=1.60.0
+pkgrel=1
 pkgdesc='Bayesian Robust Inference for Differential Gene Expression'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-rama
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3ec761ac724b3069a1ccf9c3e9f9632809040a4be90147f58edb08c26b8cf663')
+sha256sums=('85c1ef5a7893ae42a590d1beddfd634f8a48bbe8ef358ed63d3f8e16bf2b1471')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
