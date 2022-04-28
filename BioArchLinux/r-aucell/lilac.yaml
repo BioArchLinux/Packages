@@ -11,6 +11,7 @@ repo_depends:
 - r-s4vectors
 - r-shiny
 - r-summarizedexperiment
+- r-delayedmatrixstats
 update_on:
 - regex: AUCell_([\d._-]+).tar.gz
   source: regex

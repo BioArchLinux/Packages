@@ -19,6 +19,7 @@ depends=(
   r-s4vectors
   r-shiny
   r-summarizedexperiment
+  r-delayedmatrixstats
 )
 optdepends=(
   r-biobase
