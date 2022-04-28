@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Summix
-_pkgver=2.0.0
+_pkgver=2.2.0
 pkgname=r-${_pkgname,,}
-pkgver=2.0.0
-pkgrel=2
+pkgver=2.2.0
+pkgrel=1
 pkgdesc='Summix: A method to estimate and adjust for population structure in genetic summary data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('896cbefcbfa99afab953f688cf95b1208cbadc815099383545ea59379afec5ae')
+sha256sums=('8b436a78ba35b23c72b577a7db93b2c1f66e7462eee5534b69b38968476ec721')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
