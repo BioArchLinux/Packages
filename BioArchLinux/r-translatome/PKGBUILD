@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tRanslatome
-_pkgver=1.32.0
+_pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=1.32.0
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Comparison between multiple levels of gene expression'
 arch=('any')
@@ -26,7 +26,7 @@ depends=(
   r-topgo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ee7b0bd7356d4cf555c9096238ffa3eecd8e52e0228624701b213525e11078f9')
+sha256sums=('ea2fbde3e86387f4a7cb9c89d03bc6bf2cae3195ffcc31d2be4e3bf0320d615f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
