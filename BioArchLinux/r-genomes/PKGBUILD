@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=genomes
-_pkgver=3.24.0
+_pkgver=3.26.0
 pkgname=r-${_pkgname,,}
-pkgver=3.24.0
-pkgrel=2
+pkgver=3.26.0
+pkgrel=1
 pkgdesc='Genome sequencing project metadata'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-readr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6f67145663342b3d15b5141adb4f2396e1d0ad059d2d92c83e83fa7c3dc2a987')
+sha256sums=('4e02ad9bb913e390eee732ccf79c63bd95eadd2ef443d5f71dbdf43185a20ca9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
