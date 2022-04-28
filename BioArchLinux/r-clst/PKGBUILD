@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=clst
-_pkgver=1.42.0
+_pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=1.42.0
-pkgrel=2
+pkgver=1.44.0
+pkgrel=1
 pkgdesc='Classification by local similarity threshold'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -17,7 +17,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('59b8317c6c9ab4ceab2c2c5bab785e792b30bfe0d25e9e4aae69af4208af43b5')
+sha256sums=('a510afcd9e39858a542103ba01cd6c4fd0c6074d276a3445fb20cc6ce034b96a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
