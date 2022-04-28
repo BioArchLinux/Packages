@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomeInfoDb
-_pkgver=1.30.1
+_pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=1.30.1
-pkgrel=2
+pkgver=1.32.0
+pkgrel=1
 pkgdesc='Utilities for manipulating chromosome names, including modifying them to follow a particular naming style'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -32,7 +32,7 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a5f461e3c2038664fefb5978bb6bc7ab10e689b967b75b372624f86e7828c8d3')
+sha256sums=('622756af303fab201a0a091b2c77856d58c5a7dd79deb7896c9471aa5ce45bdb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
