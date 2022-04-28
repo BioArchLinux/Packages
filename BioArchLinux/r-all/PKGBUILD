@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ALL
-_pkgver=1.36.0
+_pkgver=1.37.0
 pkgname=r-${_pkgname,,}
-pkgver=1.36.0
-pkgrel=2
+pkgver=1.37.0
+pkgrel=1
 pkgdesc='A data package'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -17,7 +17,7 @@ optdepends=(
   r-rpart
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8b96af99fd7e12b73dbb19698cef0c165f40d8ba4f2106bb75b3c0ddd20ca968')
+sha256sums=('acaba3dd46906842a4f83117dec7e9777387de60fc664813e85733487c6bdf77')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
