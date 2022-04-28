@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rnits
-_pkgver=1.28.0
+_pkgver=1.29.0
 pkgname=r-${_pkgname,,}
-pkgver=1.28.0
-pkgrel=2
+pkgver=1.29.0
+pkgrel=1
 pkgdesc='R Normalization and Inference of Time Series data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -26,7 +26,7 @@ optdepends=(
   r-stringr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0be0d3d4c29f24ff0bec9cb4bd0c81776f87a735ad568ab4a159f9093007ef73')
+sha256sums=('d034d60c8924200e662073c9e65fcd162b3d8af3ffd8f96cb55e9f9b5874ca54')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
