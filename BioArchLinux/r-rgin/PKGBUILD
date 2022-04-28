@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rgin
-_pkgver=1.14.0
+_pkgver=1.15.0
 pkgname=r-${_pkgname,,}
-pkgver=1.14.0
-pkgrel=2
+pkgver=1.15.0
+pkgrel=1
 pkgdesc='gin in R'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b0cbde4bdb9f19dcbc1d745efcc5eebaa853ef767b7f338eefbc74d84aa4dbbf')
+sha256sums=('6ae18bf9e748671366ad65c3de03552da49db4cff6ba08601759ef5c9a90bff4')
 
 prepare() {
   sed -i 's#PKG_CXXFLAGS = #PKG_CXXFLAGS = -I/usr/lib/R/library/Rcpp/include #' "${_pkgname}/src/Makevars"
