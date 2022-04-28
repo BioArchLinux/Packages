@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SpacePAC
-_pkgver=1.32.0
+_pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=1.32.0
-pkgrel=2
+pkgver=1.34.0
+pkgrel=1
 pkgdesc='Identification of Mutational Clusters in 3D Protein Space via Simulation.'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('544c7b12f83618285c783b7d9ec91a464cda5cc2c613cf253d2e08c37d77f7dd')
+sha256sums=('a29fbed02d39ab05a4bdcfb4d6770faf60255f5f7cc04df74f12e6c54aa10b44')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
