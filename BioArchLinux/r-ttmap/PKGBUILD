@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=TTMap
-_pkgver=1.16.0
+_pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=1.16.0
-pkgrel=2
+pkgver=1.18.0
+pkgrel=1
 pkgdesc='Two-Tier Mapper: a clustering tool based on topological data analysis'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6bea21571562280c1ef7da0c49db79dda576484125011c80b952dbf7cf7e76fd')
+sha256sums=('a8084384216eef827105f629ddd980a1d52c94bf00b63e0e686510b7ac2e7206')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
