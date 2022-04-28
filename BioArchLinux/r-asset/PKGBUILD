@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ASSET
-_pkgver=2.12.0
+_pkgver=2.14.0
 pkgname=r-${_pkgname,,}
-pkgver=2.12.0
-pkgrel=2
+pkgver=2.14.0
+pkgrel=1
 pkgdesc='An R package for subset-based association analysis of heterogeneous traits and subtypes'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d6732ddefb2fa82403eade627be76fb96c960c115bdcf8af886ba042e111d17e')
+sha256sums=('6f4133c465017f454d4c479785ec0f839b994966494539fcb690b4340b652a09')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
