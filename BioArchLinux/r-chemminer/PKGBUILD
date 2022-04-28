@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ChemmineR
-_pkgver=3.46.0
+_pkgver=3.48.0
 pkgname=r-${_pkgname,,}
-pkgver=3.46.0
-pkgrel=2
+pkgver=3.48.0
+pkgrel=1
 pkgdesc='Cheminformatics Toolkit for R'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -47,7 +47,7 @@ optdepends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e882dad0016b7eba37e9b17cc3e249d3de3f3337f455559d4a46bbe3e2693d19')
+sha256sums=('aa82584e19ac48257abd662594c48ebcc76d10410582a81faee1d2c4e62731db')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
