@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=splots
-_pkgver=1.60.0
+_pkgver=1.62.0
 pkgname=r-${_pkgname,,}
-pkgver=1.60.0
-pkgrel=2
+pkgver=1.62.0
+pkgrel=1
 pkgdesc='Visualization of high-throughput assays in microtitre plate or slide format'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('09bb11c0a91f16c2d83f5090cd7b52a9d01b0966d6310a8976eb557931d4e159')
+sha256sums=('d5dd41514aaeba73a1b655c6d12f3b3223e4956909a079243cfa83b40999b922')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
