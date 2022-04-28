@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=OMICsPCAdata
-_pkgver=1.12.0
+_pkgver=1.13.0
 pkgname=r-${_pkgname,,}
-pkgver=1.12.0
-pkgrel=2
+pkgver=1.13.0
+pkgrel=1
 pkgdesc='Supporting data for package OMICsPCA'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9851b1c07cb209c49ad833f13f1962a9a05133a17aa1bffd45d029c79aab99d0')
+sha256sums=('a070ad6b12c52ef1323a6f7c6b7e5f4bf4bbd97af1519729f342035646667351')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
