@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=clusterSeq
-_pkgver=1.18.0
+_pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=1.18.0
-pkgrel=2
+pkgver=1.20.0
+pkgrel=1
 pkgdesc='Clustering of high-throughput sequencing data by identifying co-expression patterns'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('7401325fb917d3c41f764a22e36680561670cdd6f1ef2cd82265c6cc1163dee3')
+sha256sums=('384eda1ba70deaa95470687cdaa5c91e5f0628ca656b4b7987e9fce006c50966')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
