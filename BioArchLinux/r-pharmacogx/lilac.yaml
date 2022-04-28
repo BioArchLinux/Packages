@@ -20,6 +20,7 @@ repo_depends:
 - r-reshape2
 - r-s4vectors
 - r-summarizedexperiment
+- r-coop
 update_on:
 - regex: PharmacoGx_([\d._-]+).tar.gz
   source: regex

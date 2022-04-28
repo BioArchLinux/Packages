@@ -28,6 +28,7 @@ depends=(
   r-reshape2
   r-s4vectors
   r-summarizedexperiment
+  r-coop
 )
 optdepends=(
   r-crayon
