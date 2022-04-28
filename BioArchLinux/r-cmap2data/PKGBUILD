@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=cMap2data
-_pkgver=1.30.0
+_pkgver=1.31.0
 pkgname=r-${_pkgname,,}
-pkgver=1.30.0
-pkgrel=2
+pkgver=1.31.0
+pkgrel=1
 pkgdesc='Connectivity Map (version 2) Data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f5bbdbb7a4a7703447476a13accb33dc51e642007598e674c7aa9f84034c6a97')
+sha256sums=('19a0cd190e5f13e46f47ba251d79b521cdfd8a0584abeee184b84ec52106b08c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
