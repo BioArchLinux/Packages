@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=xmapbridge
-_pkgver=1.52.0
+_pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=1.52.0
-pkgrel=2
+pkgver=1.54.0
+pkgrel=1
 pkgdesc='Export plotting files to the xmapBridge for visualisation in X:Map'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -17,7 +17,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f1d166c7e1cedaa2adf32784132a1eb00c037b8f460197f8c3c919bc748458ff')
+sha256sums=('20bc67e2aa68957c9882836d746153494c6f45515f8313c5f8c5752e09eb76d8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
