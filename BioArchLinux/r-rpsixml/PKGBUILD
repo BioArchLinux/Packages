@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RpsiXML
-_pkgver=2.36.0
+_pkgver=2.38.0
 pkgname=r-${_pkgname,,}
-pkgver=2.36.0
-pkgrel=2
+pkgver=2.38.0
+pkgrel=1
 pkgdesc='R interface to PSI-MI 2.5 files'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -31,7 +31,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1e567ea47aed87b47b76c47f0ede816fcd7936297cbfbd380b5f78cf612b4ca6')
+sha256sums=('719df8cadff4d9133cde3cd9a7577318673f869452c6e7088e9768dd09bc9674')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
