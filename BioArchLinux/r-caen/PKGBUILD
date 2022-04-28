@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=CAEN
-_pkgver=1.2.0
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
-pkgrel=2
+pkgver=1.4.0
+pkgrel=1
 pkgdesc='Category encoding method for selecting feature genes for the classification of single-cell RNA-seq'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('df62bd6abe127a6a17ee55d734e9d14350bb42301d8f541f83b68db5de4ab14b')
+sha256sums=('744c5e5dd27e186bc19fa0326071f41a91398451d90f18ec33b66b500acf9c14')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
