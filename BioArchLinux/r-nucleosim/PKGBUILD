@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=nucleoSim
-_pkgver=1.22.0
+_pkgver=1.24.0
 pkgname=r-${_pkgname,,}
-pkgver=1.22.0
-pkgrel=2
+pkgver=1.24.0
+pkgrel=1
 pkgdesc='Generate synthetic nucleosome maps'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c522e18dbf49baf99873dba5b6be6b9fefe108983124a3eca8acacac68430ef8')
+sha256sums=('a958628987ce519a2d4d72d593a901a21fabdbbc267ca97dfa4e8da498dc0169')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
