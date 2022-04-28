@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=CONSTANd
-_pkgver=1.2.0
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
-pkgrel=2
+pkgver=1.4.0
+pkgrel=1
 pkgdesc='Data normalization by matrix raking'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2e8729f1934f06c8cfc85196206fc8a7549c8caa2986289abf0f75d6ebc70e44')
+sha256sums=('ffba0f74911f526ef4c711e44c65369745b70772331e4c7fede9248672199c12')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
