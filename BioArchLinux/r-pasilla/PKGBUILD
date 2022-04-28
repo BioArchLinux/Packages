@@ -11,10 +11,10 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('LGPL')
 depends=(
   r
+  r-dexseq
 )
 optdepends=(
   r-biocstyle
-  r-dexseq
   r-knitr
   r-rmarkdown
 )

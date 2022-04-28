@@ -6,3 +6,5 @@ update_on:
 - regex: pasilla_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pasilla
+repo_depends:
+- r-dexseq
