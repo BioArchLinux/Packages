@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rBiopaxParser
-_pkgver=2.34.0
+_pkgver=2.36.0
 pkgname=r-${_pkgname,,}
-pkgver=2.34.0
-pkgrel=2
+pkgver=2.36.0
+pkgrel=1
 pkgdesc='Parses BioPax files and represents them in R'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9fc65770b7bdcf3f8c4ef2c903ce4cb052b4d5e8efe60074ffd5ada2dc2bdd9a')
+sha256sums=('82161fb1a8fd99e16ff3333c17236d288e2ef9584651d503182a7389d927d017')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
