@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=meshr
-_pkgver=2.0.2
+_pkgver=2.2.0
 pkgname=r-${_pkgname,,}
-pkgver=2.0.2
-pkgrel=2
+pkgver=2.2.0
+pkgrel=1
 pkgdesc='Tools for conducting enrichment analysis of MeSH'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -23,7 +23,7 @@ depends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('55656e60249792255f04fe65d3618290d7ac602351b65fdde4a519a9ceec1c0c')
+sha256sums=('b43933d6d71d7aed07bacdc1b4926fdbf67d5cb7c03704dd8ddd78d5ca975dbd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
