@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SingleCellExperiment
-_pkgver=1.16.0
+_pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=1.16.0
-pkgrel=2
+pkgver=1.18.0
+pkgrel=1
 pkgdesc='S4 Classes for Single Cell Data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -27,7 +27,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('69445241bbde85f2a74ca5dc4810ddb2913f574e5b51d56f4ac343a4d72e0704')
+sha256sums=('f76ccbb90d2cf14edca37f34815b3242e25eb18dd749eedd97f15b47f7c22a68')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
