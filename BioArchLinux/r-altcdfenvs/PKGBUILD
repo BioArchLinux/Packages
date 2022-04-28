@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=altcdfenvs
-_pkgver=2.56.0
+_pkgver=2.58.0
 pkgname=r-${_pkgname,,}
-pkgver=2.56.0
-pkgrel=2
+pkgver=2.58.0
+pkgrel=1
 pkgdesc='alternative CDF environments (aka probeset mappings)'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -29,7 +29,7 @@ optdepends=(
   r-rgraphviz
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fe148c7ba1f06d0991f163a86e77cdaedd7f7af2d1abc232a9f165c9ea48962b')
+sha256sums=('2617c2036660b16450b8128f505c4c05d4a75693cd671cc9cb0e0ffe004c5c31')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
