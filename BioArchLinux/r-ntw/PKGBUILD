@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=NTW
-_pkgver=1.44.0
+_pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=1.44.0
-pkgrel=2
+pkgver=1.46.0
+pkgrel=1
 pkgdesc='Predict gene network using an Ordinary Differential Equation (ODE) based method'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-mvtnorm
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a3d3cba9715a615391c745786f3c59d992aef021ce3679b72209d45ab72fadd6')
+sha256sums=('bd7bb619806d5f91a631be1c43a814f127797c923756637fe6395283aa4d0edb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
