@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=OnassisJavaLibs
-_pkgver=1.16.0
+_pkgver=1.17.0
 pkgname=r-${_pkgname,,}
-pkgver=1.16.0
-pkgrel=2
+pkgver=1.17.0
+pkgrel=1
 pkgdesc='OnassisJavaLibs, java libraries to run conceptmapper and semantic similarity'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('db50e46814df79620ac86bbfd378b14c37912d9af174726d28d32dc49c6c8043')
+sha256sums=('ac92bd34798353b3c537d4797becdbf8a21e8c4996c098b6635ddb6f6d8ca8b0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
