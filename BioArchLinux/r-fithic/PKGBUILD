@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=FitHiC
-_pkgver=1.20.0
+_pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=1.20.0
-pkgrel=2
+pkgver=1.22.0
+pkgrel=1
 pkgdesc='Confidence estimation for intra-chromosomal contact maps'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9e64392f21fea87cbe4fbf1c9899c3be6fdeb97b9f1814875b95a274fb126d28')
+sha256sums=('7896421fd485d1e45cc89f87b6742892fa5857f776ca8c11fd509f37ba276147')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
