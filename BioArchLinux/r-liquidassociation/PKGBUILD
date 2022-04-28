@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=LiquidAssociation
-_pkgver=1.48.0
+_pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=1.48.0
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='LiquidAssociation'
 arch=('any')
@@ -17,7 +17,7 @@ depends=(
   r-yeastcc
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ee9b62b82c88eeb0c21c7a4bb15e91431b5b3c6999285bd2ae9af5c3a344df00')
+sha256sums=('0e50f7c46abf93435979548e252158715bea3fe240f787add470138fcaa67888')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
