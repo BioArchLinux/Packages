@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=timescape
-_pkgver=1.18.0
+_pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=1.18.0
-pkgrel=2
+pkgver=1.20.0
+pkgrel=1
 pkgdesc='Patient Clonal Timescapes'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3efddcecd4907beac72343e0f7e43b850e1cf19e438a5b4589c546bfbc04726c')
+sha256sums=('e574b97ae0a7a14ac924bc76916c73de225c5c45aa236f43fff01093c85cf270')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
