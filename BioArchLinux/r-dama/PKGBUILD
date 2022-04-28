@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=daMA
-_pkgver=1.66.0
+_pkgver=1.68.0
 pkgname=r-${_pkgname,,}
-pkgver=1.66.0
-pkgrel=2
+pkgver=1.68.0
+pkgrel=1
 pkgdesc='Efficient design and analysis of factorial two-colour microarray data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('31b71ffea23b9656b5dc3b31710134d9468116f847024ee7aaa6a4d2aa48e154')
+sha256sums=('551ccc88053c2060de0bd2c887c208a726e1b77b5ac5a1f2bbb5694e04ddf2d6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
