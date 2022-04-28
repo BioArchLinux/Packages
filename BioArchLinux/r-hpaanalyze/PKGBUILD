@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=HPAanalyze
-_pkgver=1.12.0
+_pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=1.12.0
-pkgrel=2
+pkgver=1.14.0
+pkgrel=1
 pkgdesc='Retrieve and analyze data from the Human Protein Atlas'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -26,7 +26,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e9afacd319c06c597a76f3c41c58e116a0cc8b300a45138b1ee08bab5123a6b2')
+sha256sums=('a59900af248cfc9e7b34ad871406e7a50654fdf8b80d7b90b066d0648cc6c970')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
