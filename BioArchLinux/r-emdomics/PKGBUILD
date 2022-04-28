@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=EMDomics
-_pkgver=2.24.0
+_pkgver=2.26.0
 pkgname=r-${_pkgname,,}
-pkgver=2.24.0
-pkgrel=2
+pkgver=2.26.0
+pkgrel=1
 pkgdesc="Earth Mover's Distance for Differential Analysis of Genomics Data"
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f4aa7fb59f571192c398b3d77c9ed870223789027ed13d1eb71ab70ff31ac865')
+sha256sums=('efbfb1857ba6e00797d5171a84d9f43af8e313c05238eb4b7e0c025cc71db692')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
