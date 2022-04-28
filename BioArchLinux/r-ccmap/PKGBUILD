@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ccmap
-_pkgver=1.20.0
+_pkgver=1.22.0
 pkgname=r-${_pkgname,,}
-pkgver=1.20.0
-pkgrel=2
+pkgver=1.22.0
+pkgrel=1
 pkgdesc='Combination Connectivity Mapping'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -28,7 +28,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6de073489fc8452cdf9052ed1b26404554196ea5eee34c25b38c9752cff6b4fc')
+sha256sums=('c7cbf2e562b392ec795aebd9bd52313866cfd10add80af012399064bc1143c0f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
