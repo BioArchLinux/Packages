@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=AIMS
-_pkgver=1.26.0
+_pkgver=1.28.0
 pkgname=r-${_pkgname,,}
-pkgver=1.26.0
-pkgrel=2
+pkgver=1.28.0
+pkgrel=1
 pkgdesc='AIMS : Absolute Assignment of Breast Cancer Intrinsic Molecular Subtype'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d882d4a2ba08b67166394618d2081af7a8b0dd9d38dfa74651c333b25bf35bcb')
+sha256sums=('bd31a06a3586b62a48954da96c1a9887a46607300021c44d299b7dffa3fafefc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
