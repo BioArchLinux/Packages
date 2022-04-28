@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ERSSA
-_pkgver=1.12.0
+_pkgver=1.14.0
 pkgname=r-${_pkgname,,}
-pkgver=1.12.0
-pkgrel=2
+pkgver=1.14.0
+pkgrel=1
 pkgdesc='Empirical RNA-seq Sample Size Analysis'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('28ce93122f46cda9ec5e237df31686f1546456bf2741f26b8a5cd78d02998a86')
+sha256sums=('04d2a0c5c5bf440cac3209b4b4ca81664ba4df2187a7298bf9041ccee9d6063c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
