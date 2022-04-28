@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=netboost
-_pkgver=2.2.0
+_pkgver=2.4.0
 pkgname=r-${_pkgname,,}
-pkgver=2.2.0
+pkgver=2.4.0
 pkgrel=1
 pkgdesc='Network Analysis Supported by Boosting'
 arch=('x86_64')
@@ -30,7 +30,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cc725e36b262d7e37a4ac59b8b91d4afb79ac51fbd44451dd8bfffbd6bd6a2ec')
+sha256sums=('d5622bb7f620f04f66e690abb816d560c237591b8d715db474f0a12e2f4cd31d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
