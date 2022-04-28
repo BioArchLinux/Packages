@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=STRINGdb
-_pkgver=2.6.5
+_pkgver=2.8.0
 pkgname=r-${_pkgname,,}
-pkgver=2.6.5
+pkgver=2.8.0
 pkgrel=1
 pkgdesc='STRINGdb (Search Tool for the Retrieval of Interacting proteins database)'
 arch=('any')
@@ -26,7 +26,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('bb96289f1ac126438e8b8f2f1e5190ca7a12cf37bf63cc91122a742dd8175958')
+sha256sums=('dcafbbc5912c6a77bf1723e8383c24e6a44b555aee4c56f1cd11089c8cce8fa4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
