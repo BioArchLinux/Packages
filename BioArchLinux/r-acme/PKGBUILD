@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ACME
-_pkgver=2.50.0
+_pkgver=2.52.0
 pkgname=r-${_pkgname,,}
-pkgver=2.50.0
-pkgrel=2
+pkgver=2.52.0
+pkgrel=1
 pkgdesc='Algorithms for Calculating Microarray Enrichment (ACME)'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-biocgenerics
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8fdd0f72269956a8b9d8d1ea155afa9d1857062d537b7a301a897186d7c28b40')
+sha256sums=('454cde118e4336b7a5b5ccd6128a578dbc11bbe8df03d65d7c8754c2eed38c46')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
