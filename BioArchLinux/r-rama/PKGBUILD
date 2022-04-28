@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rama
-_pkgver=1.68.0
+_pkgver=1.70.0
 pkgname=r-${_pkgname,,}
-pkgver=1.68.0
-pkgrel=2
+pkgver=1.70.0
+pkgrel=1
 pkgdesc='Robust Analysis of MicroArrays'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3439d870a2e1c76046b03e9a296637a74d07849136c8671723e4026a57eb09c7')
+sha256sums=('0ce6943e8efe2009f7e43d867c2cfe9889bec394c925f517e31a8f8604f620d0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
