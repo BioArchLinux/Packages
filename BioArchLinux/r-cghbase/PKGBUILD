@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=CGHbase
-_pkgver=1.54.0
+_pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=1.54.0
-pkgrel=2
+pkgver=1.56.0
+pkgrel=1
 pkgdesc='CGHbase: Base functions and classes for arrayCGH data analysis.'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-marray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8ddc75282c7a437a67541139d9a73b6f118c93620db9ca8ef1aeb56544e0ddcd')
+sha256sums=('9971d4f559ad99604a43c664993360e3b42e5298afb9f5c4f6b63c9281f11ee1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
