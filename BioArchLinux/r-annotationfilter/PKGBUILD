@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=AnnotationFilter
-_pkgver=1.18.0
+_pkgver=1.20.0
 pkgname=r-${_pkgname,,}
-pkgver=1.18.0
-pkgrel=2
+pkgver=1.20.0
+pkgrel=1
 pkgdesc='Facilities for Filtering Bioconductor Annotation Resources'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -23,7 +23,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9c18bd835fd5903be2b6e2abf79c5c97d6b4f1e070d3c54a95062c8f8408d795')
+sha256sums=('8d2ab20f253890fd7a560bf16be9e9cdd9d130e66232da6c9f56646f1abb5420')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
