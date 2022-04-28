@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=zlibbioc
-_pkgver=1.40.0
+_pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=1.40.0
-pkgrel=3
+pkgver=1.42.0
+pkgrel=1
 pkgdesc='An R packaged zlib-1.2.5'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1276702b631a9fb50a68364ceae30b52d2076f8f7d7d349291ad7f54fea10d28')
+sha256sums=('fbf78b33def67a1778e97c15c5161c095268c14baf14ab559dcaccd6a34c1e70')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
