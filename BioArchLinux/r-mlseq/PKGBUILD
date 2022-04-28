@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MLSeq
-_pkgver=2.12.0
+_pkgver=2.14.0
 pkgname=r-${_pkgname,,}
-pkgver=2.12.0
+pkgver=2.14.0
 pkgrel=1
 pkgdesc='Machine Learning Interface for RNA-Seq Data'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d23b06d566fd6f5ea3013478e7567c02d8213d6cc91e12e9bf6ecebd1613e27c')
+sha256sums=('7246366c35fc804da215f3c3f266b9455464144cff78148d6b2588ca8dea532a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
