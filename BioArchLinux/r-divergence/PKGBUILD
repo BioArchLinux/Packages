@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=divergence
-_pkgver=1.10.0
+_pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=1.10.0
-pkgrel=2
+pkgver=1.12.0
+pkgrel=1
 pkgdesc='Divergence: Functionality for assessing omics data by divergence with respect to a baseline'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2cf3cbcaeac0d9f4eab540d22a37d8f45b62c5c5200ebbbd1ba2e9ec882c1686')
+sha256sums=('fed0e5fa2f61f8a63af79ecd0709cbdf3db932461fca6853af27ea5c2843037e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
