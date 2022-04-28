@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Path2PPI
-_pkgver=1.24.0
+_pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=1.24.0
-pkgrel=2
+pkgver=1.26.0
+pkgrel=1
 pkgdesc='Prediction of pathway-related protein-protein interaction networks'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('690b5d096619c256b3b2cc43be080b3882448722d1e27a0350d462aa63fa401d')
+sha256sums=('571abbfa2b86e7e36002ff4fcd110cd9aa3cba61a5c3e334f455d9ad70645833')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
