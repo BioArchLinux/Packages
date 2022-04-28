@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=clonotypeR
-_pkgver=1.32.1
+_pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=1.32.1
-pkgrel=2
+pkgver=1.34.0
+pkgrel=1
 pkgdesc='High throughput analysis of T cell antigen receptor sequences'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-vegan
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4e0d579e40ee18cfb3408bc6d465a10a112b3e5a0f64c6338c9e7c78ded8b0bb')
+sha256sums=('d83cf13658ec2119cfddf4b4d88cdd74843a823bba57dd83a596ad219891d696')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
