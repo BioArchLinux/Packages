@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=HilbertVis
-_pkgver=1.52.0
+_pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=1.52.0
-pkgrel=2
+pkgver=1.54.0
+pkgrel=1
 pkgdesc='Hilbert curve visualization'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -17,7 +17,7 @@ optdepends=(
   r-iranges
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f3a7bc220d7ad17d843c373c813add7c9a53aa8a5a4d947374213e2b5bff9eef')
+sha256sums=('65a59b9a44fb8456b099022aa4c62fc5599ea7458481b44bdadf7afead41916d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
