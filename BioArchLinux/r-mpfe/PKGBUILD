@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MPFE
-_pkgver=1.30.0
+_pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=1.30.0
-pkgrel=2
+pkgver=1.32.0
+pkgrel=1
 pkgdesc='Estimation of the amplicon methylation pattern distribution from bisulphite sequencing data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d230359aaef18464b78ce69e17a16276b23c2736cb63bf9d439f99289945fa6c')
+sha256sums=('14ea946d16e472e303e1bcdce21e0222871ca18b3a19b1afed8111a29ea74083')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
