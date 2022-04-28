@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=EGSEAdata
-_pkgver=1.22.0
+_pkgver=1.23.0
 pkgname=r-${_pkgname,,}
-pkgver=1.22.0
-pkgrel=2
+pkgver=1.23.0
+pkgrel=1
 pkgdesc='Gene set collections for the EGSEA package'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-egsea
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1e7d46553ceaceb53ca536ad721772a300d675a068d5c0a7a0421b1e7234ece3')
+sha256sums=('1b719de6dd5f00364de6eb9ab48853751bdc7ac6bbffb62665b23a98764da206')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
