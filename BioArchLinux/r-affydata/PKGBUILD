@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=affydata
-_pkgver=1.42.0
+_pkgver=1.43.0
 pkgname=r-${_pkgname,,}
-pkgver=1.42.0
-pkgrel=2
+pkgver=1.43.0
+pkgrel=1
 pkgdesc='Affymetrix Data for Demonstration Purpose'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-hgu95av2cdf
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('244584f125849c2090ed94c889bb3eccf86c0359f85f29a1c6df42401fce9fa0')
+sha256sums=('1efc9a0d2990718e757e021e51fd7bbca0f183e2504ba94ff4dbc00849361894')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
