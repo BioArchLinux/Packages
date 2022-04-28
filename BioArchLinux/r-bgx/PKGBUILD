@@ -15,6 +15,7 @@ depends=(
   r-biobase
   r-gcrma
   r-rcpp
+  boost
 )
 optdepends=(
   r-affydata
