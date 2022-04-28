@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SQUADD
-_pkgver=1.44.0
+_pkgver=1.46.0
 pkgname=r-${_pkgname,,}
-pkgver=1.44.0
-pkgrel=2
+pkgver=1.46.0
+pkgrel=1
 pkgdesc='Add-on of the SQUAD Software'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-rcolorbrewer
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fcf5858aedf4dbdaedaa80c62be4e0848af023d9ca68936a2479d6ed6ff18b0a')
+sha256sums=('95b3e9b50ae05636f86d74063c44693f8dac6568c3bdcabb81edaf3e6440e38d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
