@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=packFinder
-_pkgver=1.6.0
+_pkgver=1.8.0
 pkgname=r-${_pkgname,,}
-pkgver=1.6.0
-pkgrel=2
+pkgver=1.8.0
+pkgrel=1
 pkgdesc='de novo Annotation of Pack-TYPE Transposable Elements'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -29,7 +29,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0c34934597172a701d2b22ab81494d712229767308d5b9171f612e0c114a7c90')
+sha256sums=('f8e994f58d306a3132b7d81316bddb0cd50c098daa96f8eff5e1a0ce11e49b6b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
