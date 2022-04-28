@@ -17,6 +17,7 @@ depends=(
   r-gplots
   r-openxlsx
   r-rcolorbrewer
+  r-cbioportaldata
 )
 optdepends=(
   r-biocstyle
