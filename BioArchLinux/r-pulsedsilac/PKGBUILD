@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pulsedSilac
-_pkgver=1.8.0
+_pkgver=1.9.1
 pkgname=r-${_pkgname,,}
-pkgver=1.8.0
+pkgver=1.9.1
 pkgrel=1
 pkgdesc='Analysis of pulsed-SILAC quantitative proteomics data'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d66262d8541ca7b0a1e9c2a8597bf8401b7861289df32db7c12cbdbeccc1594c')
+sha256sums=('8b4a5597eaf54181566e0ff3d6bf5d72d81e71583c6fa7abcd2c1398f4ef68fd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
