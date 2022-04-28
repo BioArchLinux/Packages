@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GCSConnection
-_pkgver=1.6.0
+_pkgver=1.7.0
 pkgname=r-${_pkgname,,}
-pkgver=1.6.0
-pkgrel=2
+pkgver=1.7.0
+pkgrel=1
 pkgdesc='Creating R Connection with Google Cloud Storage'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c9e425939b74c11aeb2e2092f3af71522585a858cfdfd3f8266a0b776ae5be41')
+sha256sums=('ceee2f03534b4e498db7bb4cb4bc9b662540d9d3135ffcd7fe1ef222d0e055df')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
