@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pcxn
-_pkgver=2.16.0
+_pkgver=2.18.0
 pkgname=r-${_pkgname,,}
-pkgver=2.16.0
-pkgrel=2
+pkgver=2.18.0
+pkgrel=1
 pkgdesc='Exploring, analyzing and visualizing functions utilizing the pcxnData package'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-org.hs.eg.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1c9f00ee626ac90872eb7852dda2ab2e3b05999c808ceb720e669233837dc1d8')
+sha256sums=('88fb13ddd6834b6523973fb96370ef31a109d5e4bf2e6f18b467e7f52c5a8323')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
