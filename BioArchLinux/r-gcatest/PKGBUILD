@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gcatest
-_pkgver=1.24.0
+_pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=1.24.0
-pkgrel=2
+pkgver=1.26.0
+pkgrel=1
 pkgdesc='Genotype Conditional Association TEST'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9845472d3fa128a30d52a91f47fb54aac94909127de03773cf09c46b4f269472')
+sha256sums=('2a14c226038176b632001d8529c5ac8b0ff68d930d972a76038709d83cd3d1ac')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
