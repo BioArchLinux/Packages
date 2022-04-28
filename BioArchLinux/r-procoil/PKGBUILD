@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=procoil
-_pkgver=2.22.0
+_pkgver=2.24.0
 pkgname=r-${_pkgname,,}
-pkgver=2.22.0
-pkgrel=4
+pkgver=2.24.0
+pkgrel=1
 pkgdesc='Prediction of Oligomerization of Coiled Coil Proteins'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e8a87dff9907f19c7f811b398b0f473c8e3e3e1fb8d604b1f8a0aea17bc64ef0')
+sha256sums=('90227c689c375126b83df9f8519defc079ad16131c396a6dac447149a54e85fb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
