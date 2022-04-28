@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=chromstaRData
-_pkgver=1.20.0
+_pkgver=1.21.0
 pkgname=r-${_pkgname,,}
-pkgver=1.20.0
-pkgrel=2
+pkgver=1.21.0
+pkgrel=1
 pkgdesc='ChIP-seq data for Demonstration Purposes'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f2dc592a00db939fcc332dc8117a36e45780f59b750ff7b4e4ed12a29db6eb2e')
+sha256sums=('3c41fe184a82abd81cf0ae1557e29c607a1057334650baf17e39015394dd16cb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
