@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=TOAST
-_pkgver=1.8.3
+_pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=1.8.3
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Tools for the analysis of heterogeneous tissues'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0158d52e2be6546ff29f56c390ae0ad3c8e96ef350911fade71183ef9f9f6d8f')
+sha256sums=('924e79d6ac4eb53f4443a12eb13310dc71fc2a635c23e2693243880fa6783fd5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
