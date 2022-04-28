@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=a4Preproc
-_pkgver=1.42.0
+_pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=1.42.0
-pkgrel=2
+pkgver=1.44.0
+pkgrel=1
 pkgdesc='Automated Affymetrix Array Analysis Preprocessing Package'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0d8993f9a18996e9aa502614bbac7532b601ca29abc470dabd417b1c3829f9e3')
+sha256sums=('e97be413e73c4523ed1c1270754037fdd8a65bd571ab688e5c6694d28fff1e25')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
