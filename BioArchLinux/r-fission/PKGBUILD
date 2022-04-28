@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=fission
-_pkgver=1.14.0
+_pkgver=1.15.0
 pkgname=r-${_pkgname,,}
-pkgver=1.14.0
-pkgrel=2
+pkgver=1.15.0
+pkgrel=1
 pkgdesc='RangedSummarizedExperiment for time course RNA-Seq of fission yeast in response to stress, by Leong et al., Nat Commun 2014.'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-markdown
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6fdca55172cbd78c9af390cdd830d1a0b13d67e372a4f6a5bcad25ab4866f0a7')
+sha256sums=('a4c5042abd92b603a55661075dea75664593b33f61b40c17fc073c026c442585')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
