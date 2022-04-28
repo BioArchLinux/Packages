@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=deco
-_pkgver=1.10.0
+_pkgver=1.12.0
 pkgname=r-${_pkgname,,}
-pkgver=1.10.0
-pkgrel=2
+pkgver=1.12.0
+pkgrel=1
 pkgdesc='Decomposing Heterogeneous Cohorts using Omic Data Profiling'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -37,7 +37,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('aa258819a6565286d6c8bc7b5405baedd3b2ef1824504e0e2cbefb7d232f76af')
+sha256sums=('15cc63d465fff5a736c5cec66a22fbe8791891de91ca2f974c878d61e9fbc5a2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
