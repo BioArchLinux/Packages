@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BAGS
-_pkgver=2.34.0
+_pkgver=2.36.0
 pkgname=r-${_pkgname,,}
-pkgver=2.34.0
-pkgrel=2
+pkgver=2.36.0
+pkgrel=1
 pkgdesc='A Bayesian Approach for Geneset Selection'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-breastcancervdx
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0a8eb4428390707ad79aa1999d5282d0030ebb8bca649ab4820b08af08236f52')
+sha256sums=('49304beba9bab01421b24feaafe63fcb1125dcaacb7218da1572a614d06e3ab0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
