@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=nondetects
-_pkgver=2.24.0
+_pkgver=2.26.0
 pkgname=r-${_pkgname,,}
-pkgver=2.24.0
-pkgrel=2
+pkgver=2.26.0
+pkgrel=1
 pkgdesc='Non-detects in qPCR data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b0d50a7f811d494d405340e737415f0dc33fa386a013aa7ea6544f43e6f865dd')
+sha256sums=('0e36d79bfcf2276f7601a99570df4f5348b7aee63dd1d7f285b46218f5bf61f8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
