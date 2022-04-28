@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=fastseg
-_pkgver=1.40.0
+_pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=1.40.0
-pkgrel=2
+pkgver=1.42.0
+pkgrel=1
 pkgdesc='fastseg - a fast segmentation algorithm'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-oligo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('00f9df95e383b6e1a87407fbb1006afc9072c5b4a8d15de9900eda40188440b7')
+sha256sums=('1e2644aa7bcabe41e91a6e9db44cbc52d425693d7486e3ee0f3fdcb7645821b3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
