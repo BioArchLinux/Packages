@@ -18,6 +18,7 @@ depends=(
   r-rjson
   r-rmarkdown
   r-stringr
+  r-tidyr
 )
 optdepends=(
   r-knitr
