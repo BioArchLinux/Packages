@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=bluster
-_pkgver=1.4.0
+_pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
-pkgrel=2
+pkgver=1.6.0
+pkgrel=1
 pkgdesc='Clustering Algorithms for Bioconductor'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -36,7 +36,7 @@ optdepends=(
   r-viridis
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('55ae7b356012d6d95abc64bd673f85797b60c242521f811a26eaa91145a044c8')
+sha256sums=('681356e8ff7f8be93115a733f18b8a66a4ae8e841d59908d831ab67a983789bc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
