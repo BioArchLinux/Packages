@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sizepower
-_pkgver=1.64.0
+_pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=1.64.0
-pkgrel=2
+pkgver=1.66.0
+pkgrel=1
 pkgdesc='Sample Size and Power Calculation in Micorarray Studies'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('358fca3c485a4017442b1b17c5f9756f54339a1041d1b6f156b2e0473c249bc9')
+sha256sums=('f4f1a58b35b7b28e5b2df15ae9314d76d3c0583ba7eee18b96e8a4fec912be38')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
