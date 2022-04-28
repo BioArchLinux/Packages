@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=maCorrPlot
-_pkgver=1.64.0
+_pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=1.64.0
-pkgrel=2
+pkgver=1.66.0
+pkgrel=1
 pkgdesc='Visualize artificial correlation in microarray data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('db50e1e31abac3593742a35b7b0fc3bf0732cd65453e801843af9879ed10f6dd')
+sha256sums=('7529e121ce193d0a0b4c69a9e792336e509e537f8d4c909bab6c888b75611005')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
