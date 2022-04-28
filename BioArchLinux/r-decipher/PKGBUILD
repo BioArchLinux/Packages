@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=DECIPHER
-_pkgver=2.22.0
+_pkgver=2.24.0
 pkgname=r-${_pkgname,,}
-pkgver=2.22.0
-pkgrel=2
+pkgver=2.24.0
+pkgrel=1
 pkgdesc='Tools for curating, analyzing, and manipulating biological sequences'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ depends=(
   r-xvector
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('15230675d0057618b9f9ef8ba61caf0d68e9f26f55fee0fa3ca155098e1b3329')
+sha256sums=('059fbb6df17a7e5dc0e6bd4b95677c44cd4babcd30ef9f3dfc3ee0f7dd12b810')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
