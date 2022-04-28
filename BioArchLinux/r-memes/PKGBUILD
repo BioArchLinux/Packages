@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=memes
-_pkgver=1.2.5
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.5
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='motif matching, comparison, and de novo discovery using the MEME Suite'
 arch=('any')
@@ -46,7 +46,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0ffa53ec5cf2525629614ff2e8b85207480eacf441c98bdb0ebe7a84b1804494')
+sha256sums=('acccc53a0bc3dcb07d070b39971bd4d169913a6aeb342999e4b2bf1fc94d0608')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
