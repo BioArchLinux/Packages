@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=csdR
-_pkgver=1.0.0
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.0
+pkgver=1.2.0
 pkgrel=1
 pkgdesc='Differential gene co-expression'
 arch=('x86_64')
@@ -27,7 +27,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('10b31a1ec1bac295a8647264dc4bbcd1f54fc5310698926d164f3145c2bbffe1')
+sha256sums=('3bb0f4af51f188b12ebfe0410274a9b45665880f6477c197bc6793bdb1e2230b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
