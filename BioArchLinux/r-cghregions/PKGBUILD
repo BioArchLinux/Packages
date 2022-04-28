@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=CGHregions
-_pkgver=1.52.0
+_pkgver=1.54.0
 pkgname=r-${_pkgname,,}
-pkgver=1.52.0
-pkgrel=2
+pkgver=1.54.0
+pkgrel=1
 pkgdesc='Dimension Reduction for Array CGH Data with Minimal Information Loss.'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-cghbase
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fa7956b8e946038e87d6d458810a743433b597f940f09bec9d6b55e9cc3a63bc')
+sha256sums=('9590e848d5a60db2ed66073f4fb40f5261366a67f4d5b7b947d2cf75f11868a2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
