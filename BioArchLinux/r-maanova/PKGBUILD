@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=maanova
-_pkgver=1.64.0
+_pkgver=1.66.0
 pkgname=r-${_pkgname,,}
-pkgver=1.64.0
-pkgrel=2
+pkgver=1.66.0
+pkgrel=1
 pkgdesc='Tools for analyzing Micro Array experiments'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fc9d7e6111183df67068fcce021dae7d0f4af446d0c5c990048041f9dd892eae')
+sha256sums=('38ca2aa761612955070b03c073bc60dd2e0f9fb54052dcbb16f546ff91e5025a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
