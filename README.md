@@ -20,7 +20,9 @@ You can repleace the `https://repo.bioarchlinux/$arch` with any mirror in [mirro
 
 install GPG keyring to use bioarchlinux
 ```
-sudo pacman -Sy && sudo pacman -S bioarchlinux-keyring
+$ pacman-key --recv-keys B1F96021DB62254D
+$ pacman-key --finger B1F96021DB62254D
+$ pacman-key --lsign-key B1F96021DB62254D
 ```
 
 ## Details
