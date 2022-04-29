@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=miRcompData
-_pkgver=1.25.0
+_pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=1.25.0
+pkgver=1.26.0
 pkgrel=1
 pkgdesc='Data used in the miRcomp package'
 arch=('any')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e113991c8d9a2852be96fdec931563640a8a68eeb7132d15caa9b48d25ef7a71')
+sha256sums=('8fddf651cc2051933ac26f2ab36672d7f8b3f7886924e0af194c606ab71181f3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
