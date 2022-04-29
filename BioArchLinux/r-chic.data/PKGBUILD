@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ChIC.data
-_pkgver=1.15.0
+_pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=1.15.0
+pkgver=1.16.0
 pkgrel=1
 pkgdesc='ChIC package data'
 arch=('any')
@@ -16,7 +16,7 @@ depends=(
   r-randomforest
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('02c2f2864401f459f1b19c45ac9cf31f8f5c023e22f44acda19d94e4d98a7725')
+sha256sums=('008bb904b2f6fb604a04432f5ca62ca2069e0b7a6638473150ec428c93494c99')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
