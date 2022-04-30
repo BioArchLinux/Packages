@@ -31,7 +31,7 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
 sha256sums=('1b338bf440cd59a9c66649519af90dd06a8e1b736c5c58309107d2fb94f2a30e')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}" --no-test-load
 }
 
 package() {
