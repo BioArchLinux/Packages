@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rsamtools
-_pkgver=2.10.0
+_pkgver=2.12.0
 pkgname=r-${_pkgname,,}
-pkgver=2.10.0
-pkgrel=2
+pkgver=2.12.0
+pkgrel=1
 pkgdesc='Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -36,7 +36,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg18.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d02799a7883b801abb5c0399e22a18f116bfb8dc41bbeb0870a9ed58881ccb6c')
+sha256sums=('20e860c61ef66f8e61f8de7f77c4a244439c8fe39286d080cd580417073894f2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}" --no-test-load
