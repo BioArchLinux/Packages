@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MSQC
-_pkgver=1.0.2
+_pkgver=1.1.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.2
-pkgrel=2
+pkgver=1.1.0
+pkgrel=1
 pkgdesc='Multivariate Statistical Quality Control'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-rgl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f6f925845b977fd3073041911b7e43e15c162a257a6ba1c36196cacb08f08c87')
+sha256sums=('8e5c43c57d6bbd2399cb83a7e6c7039cd6157bd24ef097a21ea1a06141393ac7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
