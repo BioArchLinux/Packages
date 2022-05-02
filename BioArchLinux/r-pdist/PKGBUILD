@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pdist
-_pkgver=1.2
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
-pkgver=1.2
-pkgrel=2
+pkgver=1.2.1
+pkgrel=1
 pkgdesc='Partitioned Distance Function'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ad01bcc822fe58b9bf6faea1cb8d4f8a4046bb1e1c5cc6eb172e84a65e1dcda2')
+sha256sums=('06904ee8c609cebd62553b5593c5d4e08abd3ed95b9f96c64e47c380a2466f2f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
