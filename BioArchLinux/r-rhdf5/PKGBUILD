@@ -5,7 +5,7 @@ _pkgname=rhdf5
 _pkgver=2.40.0
 pkgname=r-${_pkgname,,}
 pkgver=2.40.0
-pkgrel=1
+pkgrel=2
 pkgdesc='R Interface to HDF5'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -30,7 +30,7 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
 sha256sums=('ce4585ddf67848e3b34c531e02df7ee712874127dd54eaa21ce8a2652b489701')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}" --no-test-load
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
 package() {
