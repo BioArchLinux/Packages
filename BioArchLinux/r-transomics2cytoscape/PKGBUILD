@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=transomics2cytoscape
-_pkgver=1.6.0
+_pkgver=1.6.1
 pkgname=r-${_pkgname,,}
-pkgver=1.6.0
+pkgver=1.6.1
 pkgrel=1
 pkgdesc='A tool set for 3D Trans-Omic network visualization with Cytoscape'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('afb48d780d97548a70bbf7f73164acf6a20fb8cd904832a88302d51eeb23c747')
+sha256sums=('150a9a01c6a732c24eaa02789b72f010d007f9bff8dc5a4c75a8fdb67e2d4795')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
