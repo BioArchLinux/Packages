@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=affxparser
-_pkgver=1.68.0
+_pkgver=1.68.1
 pkgname=r-${_pkgname,,}
-pkgver=1.68.0
+pkgver=1.68.1
 pkgrel=1
 pkgdesc='Affymetrix File Parsing SDK'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-r.utils
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4ac66bf4fcfc066e9e007435ca48cc228eaa691db8ed58f9b5d496b20d5aa14f')
+sha256sums=('9a462b6dc5c3592b32cdc06afc4cc3d50bdb0f419c9156c9f7ed1faff913a99b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}" || bash -c "ls /usr/include/fusion && ls fusion/calvin_files/data/src/"
