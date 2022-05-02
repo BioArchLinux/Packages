@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=nls2
-_pkgver=0.2
+_pkgver=0.3-3
 pkgname=r-${_pkgname,,}
-pkgver=0.2
-pkgrel=2
+pkgver=0.3.3
+pkgrel=1
 pkgdesc='Non-linear regression with brute force'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,7 +17,7 @@ optdepends=(
   r-nlstools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9831b5b16db980e1fff370d8cc120482dd30028e72000f9904539a5b0c8a864c')
+sha256sums=('74d2fa178320823b98ddb72118d968ab9852f82123ae7183bb3289775dc7b116')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
