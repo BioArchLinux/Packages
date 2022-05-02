@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=binom
-_pkgver=1.1-1
+_pkgver=1.1-1.1
 pkgname=r-${_pkgname,,}
-pkgver=1.1.1
-pkgrel=2
+pkgver=1.1.1.1
+pkgrel=1
 pkgdesc='Binomial Confidence Intervals For Several Parameterizations'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-tcltk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8c88a1047a18ffb138a9b4dad5fcacc3d31ad68f4479fcbb4c0617879b485256')
+sha256sums=('ee215f41223bb1ca80f91f54b99dc75339aac74906db57698e7c2b0d9a86befb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
