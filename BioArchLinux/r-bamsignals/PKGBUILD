@@ -5,7 +5,7 @@ _pkgname=bamsignals
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
 pkgver=1.28.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Extract read count signals from bam files'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -31,7 +31,7 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
 sha256sums=('7ea6ee5fcbc6aa916771a271fa012adaed7e753ee79ab54a8694c12410ee8b7b')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}" --no-test-load
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
 package() {
