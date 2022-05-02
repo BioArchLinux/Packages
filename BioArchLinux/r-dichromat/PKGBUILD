@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=dichromat
-_pkgver=2.0-0
+_pkgver=2.0-0.1
 pkgname=r-${_pkgname,,}
-pkgver=2.0.0
-pkgrel=2
+pkgver=2.0.0.1
+pkgrel=1
 pkgdesc='Color Schemes for Dichromats'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('31151eaf36f70bdc1172da5ff5088ee51cc0a3db4ead59c7c38c25316d580dd1')
+sha256sums=('a10578e9ad8a581bd8fe0d8a8370051f3cdcf12c7d282f3af2a18dacda566081')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
