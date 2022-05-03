@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=CopywriteR
-_pkgver=2.26.0
+_pkgver=2.28.0
 pkgname=r-${_pkgname,,}
-pkgver=2.26.0
-pkgrel=2
+pkgver=2.28.0
+pkgrel=1
 pkgdesc='Copy number information from targeted sequencing using off-target reads'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -32,7 +32,7 @@ optdepends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9ec1c0e0822448938c7d622698d35c157ad8315dc9987cacff3d6412bf7ca576')
+sha256sums=('ab03a36302d61d4d46ddee175c576867d51fbf63c98a0fc379179a54d59e21cc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
