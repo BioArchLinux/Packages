@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=TFutils
-_pkgver=1.14.0
+_pkgver=1.16.0
 pkgname=r-${_pkgname,,}
-pkgver=1.14.0
-pkgrel=2
+pkgver=1.16.0
+pkgrel=1
 pkgdesc='TFutils'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -53,7 +53,7 @@ optdepends=(
   r-upsetr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5f51d789ece5ff68edab4c443d13089d21ef8ad1bceee0988397fe6bd11d4802')
+sha256sums=('497e98094a5d53a7e172d8e5917806a63e364e5dfb47401d21b051648cec9fab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
