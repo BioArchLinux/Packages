@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=TxDb.Hsapiens.UCSC.hg38.knownGene
-_pkgver=3.14.0
+_pkgver=3.15.0
 pkgname=r-${_pkgname,,}
-pkgver=3.14.0
-pkgrel=2
+pkgver=3.15.0
+pkgrel=1
 pkgdesc='Annotation package for TxDb object(s)'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   r-genomicfeatures
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ccbcab4f4be41fda207ca5ee6505ba5320a97e103ef5d02eda962ac8783e7faa')
+sha256sums=('e92069ef6ccf6ec5ab6395d195c9f83b11ef944012b0be06f1f6f13227c42ef9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
