@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ReQON
-_pkgver=1.40.0
+_pkgver=1.42.0
 pkgname=r-${_pkgname,,}
-pkgver=1.40.0
-pkgrel=2
+pkgver=1.42.0
+pkgrel=1
 pkgdesc='Recalibrating Quality Of Nucleotides'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('61e5e5740e7c443f04fdcb9076ca439af12681000d7764df5ff3d63bde4e6793')
+sha256sums=('991cb5ee9a944f30179059fa884b4f31e146e07d2858b300dd7c78872abdb7b8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
