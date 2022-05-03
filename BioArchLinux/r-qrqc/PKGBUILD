@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=qrqc
-_pkgver=1.48.0
+_pkgver=1.50.0
 pkgname=r-${_pkgname,,}
-pkgver=1.48.0
+pkgver=1.50.0
 pkgrel=1
 pkgdesc='Quick Read Quality Control'
 arch=('x86_64')
@@ -24,7 +24,7 @@ depends=(
   make
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b4ea4e63f358f86e4074e205139494519b09c8fcb05c2ae977739022a10ed5ae')
+sha256sums=('0578b7ca92825fe506aa36432057c386d8088da3bd9e01f3dfccce5e9ee86637')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
