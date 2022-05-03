@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ChIPseeker
-_pkgver=1.30.3
+_pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=1.30.3
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='ChIPseeker for ChIP peak Annotation, Comparison, and Visualization'
 arch=('any')
@@ -42,7 +42,7 @@ optdepends=(
   r-tibble
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2f4878b31cecc51bcbc7977a17b83c047097a59d55e412769d2fc6b8c30d35b9')
+sha256sums=('872efd44995e8cf1b09bdfc7700540c42fd784a43616a0df4ed357326d412e00')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
