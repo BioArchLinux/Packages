@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=panelcn.mops
-_pkgver=1.16.0
+_pkgver=1.18.0
 pkgname=r-${_pkgname,,}
-pkgver=1.16.0
-pkgrel=2
+pkgver=1.18.0
+pkgrel=1
 pkgdesc='CNV detection tool for targeted NGS panel data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9f6cabf7732666c23fb5ea1460b016adbc765e67bdf6ec66a01428ad5ed251e5')
+sha256sums=('1d585ca2f871a159dcb89d5fb2e713bb01b0b3ef0542ec55635b1d3dd4ee26de')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
