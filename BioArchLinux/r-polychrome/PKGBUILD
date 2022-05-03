@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Polychrome
-_pkgver=1.4.0
+_pkgver=1.5.1
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
-pkgrel=5
+pkgver=1.5.1
+pkgrel=1
 pkgdesc='Qualitative Palettes with Many Colors'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e96be422fd3d81a4a51f7546b562b2f4dbed400b71962dc421aaa0033d764841')
+sha256sums=('6fe7da62459d7b94b1a8516a4626971cf35b76331f46e36798b05d29aa00d143')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
