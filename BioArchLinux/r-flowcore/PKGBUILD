@@ -38,7 +38,7 @@ optdepends=(
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('19ce4ffbf70bd3b5a68b045f0c4a21f85c0586ff0817be22d01b44c2b289cc9e')
-
+options=(!lto !buildflags staticlibs)
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
