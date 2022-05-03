@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=objectProperties
-_pkgver=0.6.7
+_pkgver=0.6.8
 pkgname=r-${_pkgname,,}
-pkgver=0.6.7
-pkgrel=2
+pkgver=0.6.8
+pkgrel=1
 pkgdesc='A Factory of Self-Describing Properties'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-objectsignals
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cbaa5c7905dd40bde9e4eeb6802680a0dcf3a5f346e0d46a79752251f45d5dbf')
+sha256sums=('dfa97111f348862a3174356e1d4fb18d3614215129c9b7ffc8da60c0c5ed2b0b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
