@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=traseR
-_pkgver=1.24.0
+_pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=1.24.0
-pkgrel=2
+pkgver=1.26.0
+pkgrel=1
 pkgdesc='GWAS trait-associated SNP enrichment analyses in genomic intervals'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d7515882e372a1bbb98e8eda078e14fd6d34eb5f1ecb5752bcac4909ab820832')
+sha256sums=('2914e8f1b2dc52e53351e9b9fcacb62e0f79d7451169a89d8224c71831d24ae9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
