@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=CAGEr
-_pkgver=2.0.2
+_pkgver=2.2.0
 pkgname=r-${_pkgname,,}
-pkgver=2.0.2
-pkgrel=2
+pkgver=2.2.0
+pkgrel=1
 pkgdesc='Analysis of CAGE (Cap Analysis of Gene Expression) sequencing data for precise mapping of transcription start sites and promoterome mining'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -47,7 +47,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('67eaf476b842cd70f27d354616dbee1c41841b8ddc09023914cca9faf04a2569')
+sha256sums=('1cd64f6b045a5e246ae92cd709234c806edfcc25463819df0bd32fe4f4b2fd0d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
