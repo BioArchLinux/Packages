@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=extRemes
-_pkgver=2.1-1
+_pkgver=2.1-2
 pkgname=r-${_pkgname,,}
-pkgver=2.1.1
-pkgrel=2
+pkgver=2.1.2
+pkgrel=1
 pkgdesc='Extreme Value Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-fields
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5a1927bb21f178ec5a3e3f862d792e690e45c16c88190e64e83aa1fb9e3ffa02')
+sha256sums=('a7a38dc9a876967d54843872b4355c65e1910c324b0630f91a50009c2f3005a7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
