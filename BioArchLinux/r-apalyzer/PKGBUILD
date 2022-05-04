@@ -26,6 +26,7 @@ depends=(
   r-summarizedexperiment
   r-tidyr
   r-variantannotation
+  r-hybridmtest
 )
 optdepends=(
   r-annotationdbi
