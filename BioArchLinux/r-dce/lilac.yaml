@@ -30,6 +30,7 @@ repo_depends:
 - r-rlang
 - r-tidygraph
 - r-tidyverse
+- r-shadowtext
 update_on:
 - regex: dce_([\d._-]+).tar.gz
   source: regex
