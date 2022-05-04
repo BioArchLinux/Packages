@@ -17,6 +17,7 @@ depends=(
   r-rhtslib
   r-zlibbioc
   make
+  r-dnacopy
 )
 optdepends=(
   r-berryfunctions
