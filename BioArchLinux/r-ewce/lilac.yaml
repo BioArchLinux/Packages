@@ -19,6 +19,10 @@ repo_depends:
 - r-scales
 - r-stringr
 - r-summarizedexperiment
+- r-singlecellexperiment
+- r-biocparallel
+- r-orthogene
+- r-data.table
 update_on:
 - regex: EWCE_([\d._-]+).tar.gz
   source: regex
