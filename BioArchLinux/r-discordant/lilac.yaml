@@ -6,6 +6,8 @@ repo_depends:
 - r-biobase
 - r-biwt
 - r-gtools
+- r-dplyr
+- r-rcpp
 update_on:
 - regex: discordant_([\d._-]+).tar.gz
   source: regex
