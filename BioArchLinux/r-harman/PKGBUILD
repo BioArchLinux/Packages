@@ -12,6 +12,8 @@ license=('GPL')
 depends=(
   r
   r-rcpp
+  r-matrixstats
+  r-ckmeans.1d.dp
 )
 optdepends=(
   r-affydata
