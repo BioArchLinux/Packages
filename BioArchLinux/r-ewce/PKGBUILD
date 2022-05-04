@@ -27,6 +27,10 @@ depends=(
   r-scales
   r-stringr
   r-summarizedexperiment
+  r-singlecellexperiment
+  r-biocparallel
+  r-orthogene
+  r-data.table
 )
 optdepends=(
   r-biocstyle
