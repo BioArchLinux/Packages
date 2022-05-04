@@ -23,6 +23,7 @@ depends=(
   r-slingshot
   r-summarizedexperiment
   r-trajectoryutils
+  r-distinct
 )
 optdepends=(
   r-covr
