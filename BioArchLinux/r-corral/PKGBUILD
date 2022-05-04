@@ -20,6 +20,7 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-transport
+  r-reshape2
 )
 optdepends=(
   r-ade4
