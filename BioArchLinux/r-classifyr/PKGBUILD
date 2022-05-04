@@ -16,6 +16,7 @@ depends=(
   r-multiassayexperiment
   r-plyr
   r-s4vectors
+  r-randomforest
 )
 optdepends=(
   r-biocstyle
@@ -36,7 +37,6 @@ optdepends=(
   r-pamr
   r-parathyroidse
   r-poiclaclu
-  r-randomforest
   r-rmarkdown
   r-rmixmod
   r-robustbase
