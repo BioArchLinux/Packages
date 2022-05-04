@@ -32,6 +32,7 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-summarizedexperiment
+  r-speedglm
 )
 optdepends=(
   r-knitr
