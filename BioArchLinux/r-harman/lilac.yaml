@@ -4,6 +4,8 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-rcpp
+- r-matrixstats
+- r-ckmeans.1d.dp
 update_on:
 - regex: Harman_([\d._-]+).tar.gz
   source: regex
