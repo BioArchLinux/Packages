@@ -10,6 +10,7 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-tidyr
+- r-plyr
 update_on:
 - regex: BindingSiteFinder_([\d._-]+).tar.gz
   source: regex
