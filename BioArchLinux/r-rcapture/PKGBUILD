@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rcapture
-_pkgver=1.4-3
+_pkgver=1.4-4
 pkgname=r-${_pkgname,,}
-pkgver=1.4.3
-pkgrel=2
+pkgver=1.4.4
+pkgrel=1
 pkgdesc='Loglinear Models for Capture-Recapture Experiments'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2ffeeafbb0c299f4e22c1c727a58098d8dcdfc446151ec2b83277eb3d4fb61e6')
+sha256sums=('992d59e773d7936d4641797b769de481ef76834e7668b082e64f255cef93307a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
