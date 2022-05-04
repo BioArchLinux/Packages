@@ -38,6 +38,7 @@ depends=(
   r-rlang
   r-tidygraph
   r-tidyverse
+  r-shadowtext
 )
 optdepends=(
   r-biocstyle
