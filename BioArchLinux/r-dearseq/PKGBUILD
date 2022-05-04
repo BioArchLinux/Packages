@@ -18,6 +18,9 @@ depends=(
   r-statmod
   r-survey
   r-viridislite
+  r-compquadform
+  r-reshape2
+  r-plyr
 )
 optdepends=(
   r-biobase
