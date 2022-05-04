@@ -9,6 +9,7 @@ repo_depends:
 - r-plotrix
 - r-s4vectors
 - r-viridislite
+- r-summarizedexperiment
 update_on:
 - regex: epistack_([\d._-]+).tar.gz
   source: regex
