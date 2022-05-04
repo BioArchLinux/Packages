@@ -17,6 +17,7 @@ depends=(
   r-plotrix
   r-s4vectors
   r-viridislite
+  r-summarizedexperiment
 )
 optdepends=(
   r-biocstyle
