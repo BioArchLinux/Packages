@@ -23,6 +23,8 @@ depends=(
   r-reshape2
   r-rjson
   r-s4vectors
+  r-seuratobject
+  r-ggally
 )
 optdepends=(
   r-ggiraph
