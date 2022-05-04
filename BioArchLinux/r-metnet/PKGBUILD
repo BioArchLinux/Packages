@@ -26,6 +26,7 @@ depends=(
   r-summarizedexperiment
   r-tibble
   r-tidyr
+  r-genenet
 )
 optdepends=(
   r-biocgenerics
