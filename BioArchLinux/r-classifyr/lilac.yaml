@@ -8,6 +8,7 @@ repo_depends:
 - r-multiassayexperiment
 - r-plyr
 - r-s4vectors
+- r-randomforest
 update_on:
 - regex: ClassifyR_([\d._-]+).tar.gz
   source: regex
