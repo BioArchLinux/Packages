@@ -15,6 +15,7 @@ repo_depends:
 - r-slingshot
 - r-summarizedexperiment
 - r-trajectoryutils
+- r-distinct
 update_on:
 - regex: condiments_([\d._-]+).tar.gz
   source: regex
