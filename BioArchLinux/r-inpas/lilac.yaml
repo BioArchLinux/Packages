@@ -26,6 +26,11 @@ repo_depends:
 - r-reshape2
 - r-rsqlite
 - r-s4vectors
+- r-batchtools
+- r-flock
+- r-future
+- r-future.apply
+- r-parallelly
 update_on:
 - regex: InPAS_([\d._-]+).tar.gz
   source: regex
