@@ -7,6 +7,7 @@ repo_depends:
 - r-rcolorbrewer
 - r-rhtslib
 - r-zlibbioc
+- r-dnacopy
 update_on:
 - regex: maftools_([\d._-]+).tar.gz
   source: regex
