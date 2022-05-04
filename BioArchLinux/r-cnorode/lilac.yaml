@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-cellnoptr
 - r-genalg
+- r-knitr
 update_on:
 - regex: CNORode_([\d._-]+).tar.gz
   source: regex
