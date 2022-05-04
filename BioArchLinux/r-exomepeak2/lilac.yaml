@@ -24,6 +24,7 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-summarizedexperiment
+- r-speedglm
 update_on:
 - regex: exomePeak2_([\d._-]+).tar.gz
   source: regex
