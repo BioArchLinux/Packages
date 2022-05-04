@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=HPiP
-_pkgver=1.0.0
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.0
-pkgrel=2
+pkgver=1.2.0
+pkgrel=1
 pkgdesc='Host-Pathogen Interaction Prediction'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -47,7 +47,7 @@ optdepends=(
   r-tools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4544856c02fa72a7d8738858d47f4f5ff9f0f266f1590c46539f887d29f1de71')
+sha256sums=('288e832641af5bffb673a959718f1b9386da0641c285ceea04bce09040f0eaa6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
