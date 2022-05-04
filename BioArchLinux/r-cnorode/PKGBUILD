@@ -13,6 +13,7 @@ depends=(
   r
   r-cellnoptr
   r-genalg
+  r-knitr
 )
 optdepends=(
   r-doparallel
