@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=PRIMME
-_pkgver=3.2-1
+_pkgver=3.2-2
 pkgname=r-${_pkgname,,}
-pkgver=3.2.1
-pkgrel=2
+pkgver=3.2.2
+pkgrel=1
 pkgdesc='Eigenvalues and Singular Values and Vectors from Large Matrices'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-matrix
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3f1d6c12f3a1b525f222c9338a5c56e4365d4f174b3728c0d7a5ba924017468d')
+sha256sums=('53149390aacc093a3313e8fadf7e3aebeceb867623e105e1abcfccf997f7552e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
