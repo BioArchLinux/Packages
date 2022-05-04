@@ -18,6 +18,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
+- r-genenet
 update_on:
 - regex: MetNet_([\d._-]+).tar.gz
   source: regex
