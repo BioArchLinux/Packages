@@ -18,6 +18,7 @@ repo_depends:
 - r-stringr
 - r-tibble
 - r-tidyr
+- r-mcl
 update_on:
 - regex: HPiP_([\d._-]+).tar.gz
   source: regex
