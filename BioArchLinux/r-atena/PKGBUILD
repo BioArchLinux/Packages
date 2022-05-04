@@ -22,6 +22,8 @@ depends=(
   r-sparsematrixstats
   r-squarem
   r-summarizedexperiment
+  r-annotationhub
+  r-scales
 )
 optdepends=(
   r-biocstyle
