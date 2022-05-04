@@ -18,6 +18,7 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-tidyr
+  r-plyr
 )
 optdepends=(
   r-biocstyle
