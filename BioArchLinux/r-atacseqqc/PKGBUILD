@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ATACseqQC
-_pkgver=1.18.1
+_pkgver=1.20.2
 pkgname=r-${_pkgname,,}
-pkgver=1.18.1
+pkgver=1.20.2
 pkgrel=1
 pkgdesc='ATAC-seq Quality Control'
 arch=('any')
@@ -41,7 +41,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cc7c7a3bed74235d45c91bc956d35fd24b4c98989850b361702d6968a98ab4ca')
+sha256sums=('17cf6c17610c287a187010f30b880ae57e5e9f9ef42b3d018fec01c92ab0474a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
