@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=arrow
-_pkgver=7.0.0
+_pkgver=8.0.0
 pkgname=r-${_pkgname,,}
-pkgver=7.0.0
+pkgver=8.0.0
 pkgrel=1
 pkgdesc="Integration to 'Apache' 'Arrow'"
 arch=('x86_64')
@@ -44,7 +44,7 @@ optdepends=(
   openssl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d49ca7f9dba9b2e450d1d864c298e9cd6370171e61ba2cbe2de4c568b81230e9')
+sha256sums=('6c9aa08c68b7b39cb7d6b9394c0b94a566c0fe9a85cea61f5ed19e460bdb05ad')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
