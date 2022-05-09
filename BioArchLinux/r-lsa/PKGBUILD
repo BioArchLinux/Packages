@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=lsa
-_pkgver=0.73.2
+_pkgver=0.73.3
 pkgname=r-${_pkgname,,}
-pkgver=0.73.2
-pkgrel=2
+pkgver=0.73.3
+pkgrel=1
 pkgdesc='Latent Semantic Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,7 +17,7 @@ optdepends=(
   r-tm
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cb0017bbda9b0eb1d05b451e0f557d02f789f65b2f8bf005606b63a3708e63a8')
+sha256sums=('f07f1159f215501495d7a077911e7ed2ac61e1705899f3be3a5cf9012778619a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
