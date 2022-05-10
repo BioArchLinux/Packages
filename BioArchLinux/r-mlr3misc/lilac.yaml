@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-backports
+- r-checkmate
+- r-data.table
+- r-digest
+- r-r6
+update_on:
+- regex: mlr3misc_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=mlr3misc

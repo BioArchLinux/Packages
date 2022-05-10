@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-backports
+- r-checkmate
+- r-data.table
+- r-evaluate
+- r-future
+- r-future.apply
+- r-lgr
+- r-mlbench
+- r-mlr3measures
+- r-mlr3misc
+- r-palmerpenguins
+- r-paradox
+- r-parallelly
+- r-r6
+- r-uuid
+update_on:
+- regex: mlr3_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=mlr3

@@ -20,6 +20,12 @@ repo_depends:
 - r-rcolorbrewer
 - r-scales
 - r-stringr
+- r-mlr3
+- r-lmertest
+- r-mlr3learners
+- r-mlr3tuning
+- r-paradox
+- r-lgr
 update_on:
 - regex: SIAMCAT_([\d._-]+).tar.gz
   source: regex
