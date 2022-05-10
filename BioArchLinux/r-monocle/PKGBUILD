@@ -38,6 +38,7 @@ depends=(
   r-tibble
   r-vgam
   r-viridis
+  r-leidenbase
 )
 optdepends=(
   r-destiny

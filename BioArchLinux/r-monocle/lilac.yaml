@@ -30,6 +30,7 @@ repo_depends:
 - r-tibble
 - r-vgam
 - r-viridis
+- r-leidenbase
 update_on:
 - regex: monocle_([\d._-]+).tar.gz
   source: regex
