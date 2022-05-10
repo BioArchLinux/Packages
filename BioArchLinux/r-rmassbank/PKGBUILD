@@ -28,6 +28,12 @@ depends=(
   r-xml
   r-yaml
   openbabel
+  r-readjdx
+  r-webchem
+  r-chemminer
+  r-chemmineob
+  r-r.utils
+  r-data.table
 )
 optdepends=(
   r-biocstyle

@@ -18,6 +18,12 @@ repo_depends:
 - r-s4vectors
 - r-xml
 - r-yaml
+- r-readjdx
+- r-webchem
+- r-chemminer
+- r-chemmineob
+- r-r.utils
+- r-data.table
 update_on:
 - regex: RMassBank_([\d._-]+).tar.gz
   source: regex
