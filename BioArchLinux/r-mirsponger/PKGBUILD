@@ -21,6 +21,9 @@ depends=(
   r-rcpp
   r-reactomepa
   r-varhandle
+  r-sponge
+  r-foreach
+  r-doparallel
 )
 optdepends=(
   r-biocstyle

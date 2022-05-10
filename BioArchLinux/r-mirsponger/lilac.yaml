@@ -13,6 +13,9 @@ repo_depends:
 - r-rcpp
 - r-reactomepa
 - r-varhandle
+- r-sponge
+- r-foreach
+- r-doparallel
 update_on:
 - regex: miRspongeR_([\d._-]+).tar.gz
   source: regex
