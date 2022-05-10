@@ -7,6 +7,7 @@ repo_depends:
 - r-multiassayexperiment
 - r-plotrix
 - r-ropls
+- r-pcamethods
 update_on:
 - regex: MultiBaC_([\d._-]+).tar.gz
   source: regex

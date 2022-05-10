@@ -15,6 +15,7 @@ depends=(
   r-multiassayexperiment
   r-plotrix
   r-ropls
+  r-pcamethods
 )
 optdepends=(
   r-biocstyle
