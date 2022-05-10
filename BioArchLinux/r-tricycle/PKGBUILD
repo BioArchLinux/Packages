@@ -23,6 +23,7 @@ depends=(
   r-scattermore
   r-singlecellexperiment
   r-summarizedexperiment
+  r-ggnewscale
 )
 optdepends=(
   r-biocstyle

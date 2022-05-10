@@ -15,6 +15,7 @@ repo_depends:
 - r-scattermore
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-ggnewscale
 update_on:
 - regex: tricycle_([\d._-]+).tar.gz
   source: regex
