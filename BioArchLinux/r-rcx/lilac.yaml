@@ -3,13 +3,10 @@ maintainers:
 - github: starsareintherose
   email: starsareintherose@outlook.com
 repo_depends:
-- r-httr
 - r-igraph
 - r-jsonlite
 - r-plyr
-- r-tidyr
-- r-rcx
 update_on:
-- regex: ndexr_([\d._-]+).tar.gz
+- regex: RCX_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/ndexr
+  url: https://bioconductor.org/packages/RCX

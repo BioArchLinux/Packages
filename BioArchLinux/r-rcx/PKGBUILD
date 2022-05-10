@@ -1,31 +1,30 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=ndexr
-_pkgver=1.16.0
+_pkgname=RCX
+_pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=1.16.0
-pkgrel=2
-pkgdesc='NDEx R client library'
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='R package implementing the Cytoscape Exchange (CX) format'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('BSD')
+license=('MIT')
 depends=(
   r
-  r-httr
   r-igraph
   r-jsonlite
   r-plyr
-  r-tidyr
-  r-rcx
 )
 optdepends=(
+  r-base64enc
   r-biocstyle
+  r-graph
   r-knitr
   r-rmarkdown
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e6b88792a3347ebfcb5da6142ae68638aa14c15ba64c4b0fc83e5f1c63d8a15f')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
@@ -34,5 +33,6 @@ build() {
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
   cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
 # vim:set ts=2 sw=2 et:
