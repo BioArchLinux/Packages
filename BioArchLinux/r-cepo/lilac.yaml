@@ -15,6 +15,7 @@ repo_depends:
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-dplyr
 update_on:
 - regex: Cepo_([\d._-]+).tar.gz
   source: regex
