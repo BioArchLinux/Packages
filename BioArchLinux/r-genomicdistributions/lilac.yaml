@@ -12,6 +12,7 @@ repo_depends:
 - r-iranges
 - r-plyr
 - r-reshape2
+- r-broom
 update_on:
 - regex: GenomicDistributions_([\d._-]+).tar.gz
   source: regex

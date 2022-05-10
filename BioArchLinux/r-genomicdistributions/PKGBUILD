@@ -20,6 +20,7 @@ depends=(
   r-iranges
   r-plyr
   r-reshape2
+  r-broom
 )
 optdepends=(
   r-annotationfilter
