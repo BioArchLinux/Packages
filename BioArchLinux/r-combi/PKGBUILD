@@ -23,6 +23,7 @@ depends=(
   r-summarizedexperiment
   r-tensor
   r-vegan
+  r-dbi
 )
 optdepends=(
   r-knitr

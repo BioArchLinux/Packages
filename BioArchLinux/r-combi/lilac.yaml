@@ -15,6 +15,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-tensor
 - r-vegan
+- r-dbi
 update_on:
 - regex: combi_([\d._-]+).tar.gz
   source: regex
