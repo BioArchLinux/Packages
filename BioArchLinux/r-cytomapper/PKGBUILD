@@ -29,6 +29,7 @@ depends=(
   r-svglite
   r-svgpanzoom
   r-viridis
+  r-nnls
 )
 optdepends=(
   r-biocstyle

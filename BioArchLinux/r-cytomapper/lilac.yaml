@@ -21,6 +21,7 @@ repo_depends:
 - r-svglite
 - r-svgpanzoom
 - r-viridis
+- r-nnls
 update_on:
 - regex: cytomapper_([\d._-]+).tar.gz
   source: regex
