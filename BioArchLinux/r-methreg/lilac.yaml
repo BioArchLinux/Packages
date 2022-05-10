@@ -21,6 +21,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
+- r-sesame
 update_on:
 - regex: MethReg_([\d._-]+).tar.gz
   source: regex

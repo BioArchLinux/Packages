@@ -29,6 +29,7 @@ depends=(
   r-summarizedexperiment
   r-tibble
   r-tidyr
+  r-sesame
 )
 optdepends=(
   r-biocfilecache
@@ -50,7 +51,6 @@ optdepends=(
   r-r.utils
   r-reshape2
   r-rmarkdown
-  r-sesame
   r-stager
   r-testthat
   r-tfbstools
