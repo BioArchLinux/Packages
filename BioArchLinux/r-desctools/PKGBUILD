@@ -20,7 +20,8 @@ depends=(
   r-mvtnorm
   r-rcpp
   r-rstudioapi
-  gcc
+  r-readxl
+  r-httr
 )
 optdepends=(
   r-r.rsp

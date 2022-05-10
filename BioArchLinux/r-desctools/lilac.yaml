@@ -11,6 +11,8 @@ repo_depends:
 - r-mvtnorm
 - r-rcpp
 - r-rstudioapi
+- r-readxl
+- r-httr
 update_on:
 - regex: DescTools_([\d._-]+).tar.gz
   source: regex
