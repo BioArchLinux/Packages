@@ -10,6 +10,11 @@ repo_depends:
 - r-matlab
 - r-rcpp
 - r-rnaseqsamplesizedata
+- r-ggplot2
+- r-recount
+- r-ggpubr
+- r-summarizedexperiment
+- r-tidyr
 update_on:
 - regex: RnaSeqSampleSize_([\d._-]+).tar.gz
   source: regex

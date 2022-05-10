@@ -18,6 +18,11 @@ depends=(
   r-matlab
   r-rcpp
   r-rnaseqsamplesizedata
+  r-ggplot2
+  r-recount
+  r-ggpubr
+  r-summarizedexperiment
+  r-tidyr
 )
 optdepends=(
   r-biocstyle
