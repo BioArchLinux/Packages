@@ -36,6 +36,7 @@ depends=(
   r-shiny
   r-shinydashboard
   r-stringr
+  r-ggnewscale
 )
 optdepends=(
   r-attempt
