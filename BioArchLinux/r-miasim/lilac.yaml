@@ -6,6 +6,8 @@ repo_depends:
 - r-desolve
 - r-powerlaw
 - r-summarizedexperiment
+- r-treesummarizedexperiment
+- r-gtools
 update_on:
 - regex: miaSim_([\d._-]+).tar.gz
   source: regex
