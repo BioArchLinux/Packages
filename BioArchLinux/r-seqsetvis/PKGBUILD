@@ -28,6 +28,7 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-upsetr
+  r-cowplot
 )
 optdepends=(
   r-biocfilecache

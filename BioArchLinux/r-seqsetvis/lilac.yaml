@@ -20,6 +20,7 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-upsetr
+- r-cowplot
 update_on:
 - regex: seqsetvis_([\d._-]+).tar.gz
   source: regex
