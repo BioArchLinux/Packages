@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-data.table
+- r-lgr
+- r-mlr3misc
+- r-paradox
+- r-r6
+update_on:
+- regex: bbotk_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=bbotk

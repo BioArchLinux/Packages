@@ -1,22 +1,27 @@
-# system requirements: Gnu Scientific Library version >= 1.14
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=ridge
-_pkgver=3.3
+_pkgname=configr
+_pkgver=0.3.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Ridge Regression with Automatic Selection of the Penalty Parameter'
-arch=('x86_64')
+pkgdesc='An Implementation of Parsing and Writing Configuration File (JSON/INI/YAML/TOML)'
+arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=('MIT')
 depends=(
   r
-  gsl
+  r-glue
+  r-ini
+  r-jsonlite
+  r-rcpptoml
+  r-stringr
+  r-yaml
 )
 optdepends=(
-  r-covr
-  r-datasets
+  r-knitr
+  r-prettydoc
+  r-rmarkdown
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
@@ -29,5 +34,6 @@ build() {
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
   cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
 # vim:set ts=2 sw=2 et:

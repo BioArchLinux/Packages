@@ -1,23 +1,26 @@
-# system requirements: Gnu Scientific Library version >= 1.14
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=ridge
-_pkgver=3.3
+_pkgname=gggenes
+_pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Ridge Regression with Automatic Selection of the Penalty Parameter'
-arch=('x86_64')
+pkgdesc="Draw Gene Arrow Maps in 'ggplot2'"
+arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  gsl
+  r-ggfittext
+  r-ggplot2
+  r-rlang
 )
 optdepends=(
-  r-covr
-  r-datasets
+  r-knitr
+  r-rmarkdown
+  r-spelling
   r-testthat
+  r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a')
