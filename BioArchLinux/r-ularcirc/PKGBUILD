@@ -36,6 +36,8 @@ depends=(
   r-shinyjs
   r-sushi
   r-yaml
+  r-plotgardener
+  r-r.utils
 )
 optdepends=(
   r-biocstyle

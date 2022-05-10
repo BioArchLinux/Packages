@@ -28,6 +28,8 @@ repo_depends:
 - r-shinyjs
 - r-sushi
 - r-yaml
+- r-plotgardener
+- r-r.utils
 update_on:
 - regex: Ularcirc_([\d._-]+).tar.gz
   source: regex
