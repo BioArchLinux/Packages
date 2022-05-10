@@ -16,6 +16,9 @@ repo_depends:
 - r-sm
 - r-stringr
 - r-vioplot
+- r-matrixstats
+- r-ape
+- r-phylolm
 update_on:
 - regex: compcodeR_([\d._-]+).tar.gz
   source: regex

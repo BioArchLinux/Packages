@@ -25,6 +25,9 @@ depends=(
   r-stringr
   r-vioplot
   tk
+  r-matrixstats
+  r-ape
+  r-phylolm
 )
 optdepends=(
   r-bayseq
