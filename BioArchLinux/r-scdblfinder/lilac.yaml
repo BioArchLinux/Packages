@@ -17,6 +17,8 @@ repo_depends:
 - r-singlecellexperiment
 - r-summarizedexperiment
 - r-xgboost
+- r-rtracklayer
+- r-rsamtools
 update_on:
 - regex: scDblFinder_([\d._-]+).tar.gz
   source: regex

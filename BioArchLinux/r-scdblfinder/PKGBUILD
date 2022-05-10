@@ -25,6 +25,8 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-xgboost
+  r-rtracklayer
+  r-rsamtools
 )
 optdepends=(
   r-biocstyle
