@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=uncoverappLib
-_pkgver=1.4.0
+_pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Interactive graphical application for clinical assessment of sequence coverage at the base-pair level'
 arch=('any')
@@ -46,7 +46,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cb32708e8abb3f64aca217501bfdb75ab5b4fd42394c6370d9b1e11c63f8055a')
+sha256sums=('2c8cbc5fe9f2883da696406c1338a51ccee77a348963560fbf7b247c4f7c1b64')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
