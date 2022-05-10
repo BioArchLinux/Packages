@@ -14,6 +14,11 @@ depends=(
   r-rcpp
   r-rcppeigen
   r-rlang
+  r-future
+  r-future.apply
+  r-progressr
+  r-sp
+  r-rgeos
 )
 optdepends=(
   r-testthat
