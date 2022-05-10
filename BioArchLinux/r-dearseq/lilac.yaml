@@ -13,6 +13,7 @@ repo_depends:
 - r-compquadform
 - r-reshape2
 - r-plyr
+- r-dplyr
 update_on:
 - regex: dearseq_([\d._-]+).tar.gz
   source: regex

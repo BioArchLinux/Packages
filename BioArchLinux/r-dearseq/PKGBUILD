@@ -21,6 +21,7 @@ depends=(
   r-compquadform
   r-reshape2
   r-plyr
+  r-dplyr
 )
 optdepends=(
   r-biobase
