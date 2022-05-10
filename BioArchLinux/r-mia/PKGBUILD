@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=mia
-_pkgver=1.2.7
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.7
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='Microbiome analysis'
 arch=('any')
@@ -50,7 +50,7 @@ optdepends=(
   r-yaml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9fe6d6e9cbbdac91d2d5698955862a55c840b051bae56e95065376847620b382')
+sha256sums=('b332f5bc9a2955fd4fff40b98c06696a816fcf15224c0799ea00afa40d4eea96')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
