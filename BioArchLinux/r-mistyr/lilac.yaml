@@ -22,6 +22,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-withr
+- r-ridge
 update_on:
 - regex: mistyR_([\d._-]+).tar.gz
   source: regex

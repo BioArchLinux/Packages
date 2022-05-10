@@ -30,6 +30,7 @@ depends=(
   r-tibble
   r-tidyr
   r-withr
+  r-ridge
 )
 optdepends=(
   r-biocstyle
