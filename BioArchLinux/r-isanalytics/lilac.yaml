@@ -27,6 +27,7 @@ repo_depends:
 - r-shinywidgets
 - r-datamods
 - r-bslib
+- r-dt
 update_on:
 - regex: ISAnalytics_([\d._-]+).tar.gz
   source: regex

@@ -35,12 +35,12 @@ depends=(
   r-shinywidgets
   r-datamods
   r-bslib
+  r-dt
 )
 optdepends=(
   r-biocstyle
   r-circlize
   r-covr
-  r-dt
   r-eulerr
   r-extradistr
   r-flexdashboard
