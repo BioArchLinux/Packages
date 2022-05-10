@@ -36,6 +36,7 @@ depends=(
   r-stringr
   r-txdb.hsapiens.ucsc.hg19.knowngene
   r-txdb.hsapiens.ucsc.hg38.knowngene
+  r-bsgenome.hsapiens.ucsc.hg38
 )
 optdepends=(
   r-biocstyle
