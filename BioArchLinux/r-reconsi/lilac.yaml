@@ -7,6 +7,7 @@ repo_depends:
 - r-matrixstats
 - r-phyloseq
 - r-reshape2
+- r-ks
 update_on:
 - regex: reconsi_([\d._-]+).tar.gz
   source: regex

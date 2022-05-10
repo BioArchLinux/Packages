@@ -15,6 +15,7 @@ depends=(
   r-matrixstats
   r-phyloseq
   r-reshape2
+  r-ks
 )
 optdepends=(
   r-knitr
