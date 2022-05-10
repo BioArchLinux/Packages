@@ -38,6 +38,7 @@ depends=(
   r-tibble
   r-tidyr
   r-vegan
+  r-summarizedexperiment
 )
 optdepends=(
   r-biobase
