@@ -12,6 +12,12 @@ repo_depends:
 - r-limma
 - r-msigdbr
 - r-singlecellexperiment
+- r-broom
+- r-reshape2
+- r-patchwork
+- r-stringr
+- r-data.table
+- r-ucell
 update_on:
 - regex: escape_([\d._-]+).tar.gz
   source: regex

@@ -1,43 +1,34 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=escape
-_pkgver=1.4.0
+_pkgname=UCell
+_pkgver=2.0.0
 pkgname=r-${_pkgname,,}
-pkgver=1.4.0
+pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Easy single cell analysis platform for enrichment'
+pkgdesc='Rank-based signature enrichment analysis for single-cell data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Apache')
+license=('GPL')
 depends=(
   r
   r-biocparallel
-  r-dplyr
-  r-ggplot2
-  r-ggridges
-  r-gseabase
-  r-gsva
-  r-limma
-  r-msigdbr
-  r-singlecellexperiment
-  r-broom
-  r-reshape2
-  r-patchwork
-  r-stringr
   r-data.table
-  r-ucell
+  r-singlecellexperiment
+  r-summarizedexperiment
 )
 optdepends=(
   r-biocstyle
-  r-dittoseq
+  r-ggplot2
   r-knitr
+  r-patchwork
+  r-reshape2
   r-rmarkdown
+  r-scater
+  r-scrnaseq
   r-seurat
-  r-seuratobject
-  r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8222b13b66e8733c05f911894e9384eaf412258b9b013201da7f0b5353de3c12')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
