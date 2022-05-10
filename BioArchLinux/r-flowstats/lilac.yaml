@@ -13,6 +13,8 @@ repo_depends:
 - r-ncdfflow
 - r-rcolorbrewer
 - r-rrcov
+- r-mnormt
+- r-corpcor
 update_on:
 - regex: flowStats_([\d._-]+).tar.gz
   source: regex

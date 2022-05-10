@@ -21,6 +21,8 @@ depends=(
   r-ncdfflow
   r-rcolorbrewer
   r-rrcov
+  r-mnormt
+  r-corpcor
 )
 optdepends=(
   r-ggcyto
