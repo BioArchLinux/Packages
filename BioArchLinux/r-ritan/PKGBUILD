@@ -29,6 +29,10 @@ depends=(
   r-ritandata
   r-sqldf
   r-stringdb
+  r-genomicfeatures
+  r-ensembldb
+  r-annotationfilter
+  r-ensdb.hsapiens.v86
 )
 optdepends=(
   r-rmarkdown

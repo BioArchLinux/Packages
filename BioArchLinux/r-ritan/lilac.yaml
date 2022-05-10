@@ -21,6 +21,10 @@ repo_depends:
 - r-ritandata
 - r-sqldf
 - r-stringdb
+- r-genomicfeatures
+- r-ensembldb
+- r-annotationfilter
+- r-ensdb.hsapiens.v86
 update_on:
 - regex: RITAN_([\d._-]+).tar.gz
   source: regex
