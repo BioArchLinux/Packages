@@ -13,6 +13,7 @@ repo_depends:
 - r-tensor
 - r-tseries
 - r-vgam
+- r-dbi
 update_on:
 - regex: RCM_([\d._-]+).tar.gz
   source: regex

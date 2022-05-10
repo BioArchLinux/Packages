@@ -21,6 +21,7 @@ depends=(
   r-tensor
   r-tseries
   r-vgam
+  r-dbi
 )
 optdepends=(
   r-knitr
