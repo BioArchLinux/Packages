@@ -16,6 +16,31 @@ depends=(
   r-rcolorbrewer
   r-rfast
   r-summarizedexperiment
+  r-curl
+  r-foreach
+  r-doparallel
+  r-sortable
+  r-dplyr
+  r-purrr
+  r-stringr
+  r-tidyr
+  r-jsonlite
+  r-readr
+  r-configr
+  r-dt
+  r-fs
+  r-data.table
+  r-htmltools
+  r-htmlwidgets
+  r-bsplus
+  r-shiny
+  r-shinythemes
+  r-shinyfiles
+  r-shinyjs
+  r-shinybs
+  r-shinydashboard
+  r-biomart
+  r-callr
 )
 optdepends=(
   r-biocgenerics
