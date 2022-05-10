@@ -21,6 +21,7 @@ depends=(
   r-rms
   r-survivalroc
   r-survivalsvm
+  r-igraph
 )
 optdepends=(
   r-affycoretools

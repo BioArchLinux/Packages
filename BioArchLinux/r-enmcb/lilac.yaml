@@ -13,6 +13,7 @@ repo_depends:
 - r-rms
 - r-survivalroc
 - r-survivalsvm
+- r-igraph
 update_on:
 - regex: EnMCB_([\d._-]+).tar.gz
   source: regex
