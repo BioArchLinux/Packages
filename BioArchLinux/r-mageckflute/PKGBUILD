@@ -18,6 +18,9 @@ depends=(
   r-ggrepel
   r-gridextra
   r-reshape2
+  r-msigdbr
+  r-pathview
+  r-depmap
 )
 optdepends=(
   r-biocstyle
@@ -26,8 +29,6 @@ optdepends=(
   r-dose
   r-graphics
   r-knitr
-  r-msigdbr
-  r-pathview
   r-pheatmap
   r-png
   r-scales
