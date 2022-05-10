@@ -26,8 +26,16 @@ depends=(
   r-summarizedexperiment
   r-tidyr
   r-zlibbioc
-  gcc
-  make
+  r-complexheatmap
+  r-rtracklayer
+  r-igraph
+  r-ggbio
+  r-scran
+  r-genomicfeatures
+  r-circlize
+  r-cowplot
+  r-stringr
+  r-bambu
 )
 optdepends=(
   r-biocfilecache

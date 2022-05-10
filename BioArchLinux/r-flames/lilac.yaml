@@ -17,6 +17,16 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 - r-zlibbioc
+- r-complexheatmap
+- r-rtracklayer
+- r-igraph
+- r-ggbio
+- r-scran
+- r-genomicfeatures
+- r-circlize
+- r-cowplot
+- r-stringr
+- r-bambu
 update_on:
 - regex: FLAMES_([\d._-]+).tar.gz
   source: regex
