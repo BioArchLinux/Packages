@@ -22,12 +22,27 @@ depends=(
   r-iterators
   r-logging
   r-ppcor
+  r-tidyverse
+  r-caret
+  r-dplyr
+  r-biomart
+  r-randomforest
+  r-ggridges
+  r-cvms
+  r-mirbaseconverter
+  r-complexheatmap
+  r-ggplot2
+  r-metbrewer
+  r-rlang
+  r-tnet
+  r-ggpubr
+  r-stringr
+  r-tidyr
 )
 optdepends=(
   r-bigmemory
   r-digest
   r-doparallel
-  r-ggplot2
   r-ggrepel
   r-gridextra
   r-knitr

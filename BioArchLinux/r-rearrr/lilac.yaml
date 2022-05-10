@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-dplyr
+- r-lifecycle
+- r-plyr
+- r-purrr
+- r-r6
+- r-rlang
+- r-tibble
+update_on:
+- regex: rearrr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=rearrr

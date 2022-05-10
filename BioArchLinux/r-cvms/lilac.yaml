@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-checkmate
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-lifecycle
+- r-lme4
+- r-mumin
+- r-parameters
+- r-plyr
+- r-proc
+- r-purrr
+- r-rearrr
+- r-recipes
+- r-rlang
+- r-stringr
+- r-tibble
+- r-tidyr
+update_on:
+- regex: cvms_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=cvms
