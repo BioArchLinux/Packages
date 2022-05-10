@@ -46,6 +46,7 @@ depends=(
   r-tippy
   r-viridis
   r-visnetwork
+  r-complexupset
 )
 optdepends=(
   r-biocstyle

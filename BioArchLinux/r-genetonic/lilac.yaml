@@ -38,6 +38,7 @@ repo_depends:
 - r-tippy
 - r-viridis
 - r-visnetwork
+- r-complexupset
 update_on:
 - regex: GeneTonic_([\d._-]+).tar.gz
   source: regex
