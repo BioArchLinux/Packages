@@ -20,6 +20,12 @@ depends=(
   r-ggplot2
   r-gplots
   r-matrixstats
+  r-aods3
+  r-shiny
+  r-shinycssloaders
+  r-ade4
+  r-factoextra
+  r-dt
 )
 optdepends=(
   r-biocstyle
