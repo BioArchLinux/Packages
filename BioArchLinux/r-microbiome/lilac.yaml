@@ -12,6 +12,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-vegan
+- r-compositions
 update_on:
 - regex: microbiome_([\d._-]+).tar.gz
   source: regex

@@ -20,6 +20,7 @@ depends=(
   r-tibble
   r-tidyr
   r-vegan
+  r-compositions
 )
 optdepends=(
   r-biocgenerics
