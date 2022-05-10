@@ -15,6 +15,7 @@ repo_depends:
 - r-seriation
 - r-summarizedexperiment
 - r-sva
+- r-sechm
 update_on:
 - regex: SEtools_([\d._-]+).tar.gz
   source: regex

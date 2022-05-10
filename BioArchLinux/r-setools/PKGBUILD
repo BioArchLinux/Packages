@@ -23,6 +23,7 @@ depends=(
   r-seriation
   r-summarizedexperiment
   r-sva
+  r-sechm
 )
 optdepends=(
   r-biocstyle
