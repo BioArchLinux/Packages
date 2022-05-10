@@ -10,6 +10,7 @@ repo_depends:
 - r-iranges
 - r-s4vectors
 - r-summarizedexperiment
+- r-biocfilecache
 update_on:
 - regex: PhIPData_([\d._-]+).tar.gz
   source: regex
