@@ -30,6 +30,7 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-viridis
+  r-rcppml
 )
 optdepends=(
   r-biobase

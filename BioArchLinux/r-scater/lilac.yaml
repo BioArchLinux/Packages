@@ -22,6 +22,7 @@ repo_depends:
 - r-singlecellexperiment
 - r-summarizedexperiment
 - r-viridis
+- r-rcppml
 update_on:
 - regex: scater_([\d._-]+).tar.gz
   source: regex
