@@ -6,6 +6,9 @@ repo_depends:
 - r-biocparallel
 - r-fields
 - r-markdown
+- r-fdrtool
+- r-fgsea
+- r-ggrepel
 update_on:
 - regex: metapone_([\d._-]+).tar.gz
   source: regex
