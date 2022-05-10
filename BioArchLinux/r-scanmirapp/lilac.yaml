@@ -29,6 +29,7 @@ repo_depends:
 - r-shinycssloaders
 - r-shinydashboard
 - r-waiter
+- r-shinyjqui
 update_on:
 - regex: scanMiRApp_([\d._-]+).tar.gz
   source: regex

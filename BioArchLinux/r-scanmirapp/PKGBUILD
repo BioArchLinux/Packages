@@ -37,6 +37,7 @@ depends=(
   r-shinycssloaders
   r-shinydashboard
   r-waiter
+  r-shinyjqui
 )
 optdepends=(
   r-biocstyle
