@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: starsareintherose@outlook.com
+repo_depends:
+- r-data.table
+- r-htmltools
+- r-htmlwidgets
+- r-phosphoricons
+- r-reactable
+- r-readxl
+- r-rio
+- r-rlang
+- r-shiny
+- r-shinywidgets
+- r-tibble
+update_on:
+- regex: datamods_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=datamods

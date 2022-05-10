@@ -30,6 +30,11 @@ depends=(
   r-tibble
   r-tidyr
   r-zip
+  r-forcats
+  r-shiny
+  r-shinywidgets
+  r-datamods
+  r-bslib
 )
 optdepends=(
   r-biocstyle

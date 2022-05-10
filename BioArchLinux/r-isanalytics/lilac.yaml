@@ -22,6 +22,11 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-zip
+- r-forcats
+- r-shiny
+- r-shinywidgets
+- r-datamods
+- r-bslib
 update_on:
 - regex: ISAnalytics_([\d._-]+).tar.gz
   source: regex
