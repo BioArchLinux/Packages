@@ -9,6 +9,8 @@ repo_depends:
 - r-ggrepel
 - r-gridextra
 - r-tidyr
+- r-decoupler
+- r-reshape2
 update_on:
 - regex: progeny_([\d._-]+).tar.gz
   source: regex

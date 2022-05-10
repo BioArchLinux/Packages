@@ -17,6 +17,8 @@ depends=(
   r-ggrepel
   r-gridextra
   r-tidyr
+  r-decoupler
+  r-reshape2
 )
 optdepends=(
   r-airway
