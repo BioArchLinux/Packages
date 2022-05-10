@@ -18,6 +18,7 @@ depends=(
   r-ggplot2
   r-reshape2
   r-zoo
+  r-hexbin
 )
 optdepends=(
   r-biocstyle
