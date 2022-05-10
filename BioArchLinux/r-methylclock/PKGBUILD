@@ -30,6 +30,7 @@ depends=(
   r-tibble
   r-tidyr
   r-tidyverse
+  r-planet
 )
 optdepends=(
   r-biocstyle

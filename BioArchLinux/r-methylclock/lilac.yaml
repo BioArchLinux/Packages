@@ -22,6 +22,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyverse
+- r-planet
 update_on:
 - regex: methylclock_([\d._-]+).tar.gz
   source: regex
