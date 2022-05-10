@@ -22,7 +22,7 @@ depends=(
   r-scater
   r-singlecellexperiment
   r-summarizedexperiment
-  gcc
+  r-rfast
 )
 optdepends=(
   r-knitr

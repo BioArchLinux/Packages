@@ -13,6 +13,7 @@ repo_depends:
 - r-scater
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-rfast
 update_on:
 - regex: distinct_([\d._-]+).tar.gz
   source: regex
