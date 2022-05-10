@@ -29,6 +29,7 @@ depends=(
   r-tibble
   r-tidyr
   r-tidyselect
+  r-ttservice
 )
 optdepends=(
   r-biocstyle

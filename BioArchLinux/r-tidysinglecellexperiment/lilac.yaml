@@ -21,6 +21,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyselect
+- r-ttservice
 update_on:
 - regex: tidySingleCellExperiment_([\d._-]+).tar.gz
   source: regex
