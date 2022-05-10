@@ -6,6 +6,7 @@ repo_depends:
 - r-bh
 - r-bigmemory.sri
 - r-rcpp
+- r-uuid
 update_on:
 - regex: bigmemory_([\d._-]+).tar.gz
   source: regex
