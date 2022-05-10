@@ -10,6 +10,7 @@ repo_depends:
 - r-outliers
 - r-rcpp
 - r-rdpack
+- r-dixontest
 update_on:
 - regex: BEclear_([\d._-]+).tar.gz
   source: regex
