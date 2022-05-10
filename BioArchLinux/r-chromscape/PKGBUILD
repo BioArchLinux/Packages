@@ -58,6 +58,7 @@ depends=(
   r-tidyr
   r-umap
   r-viridis
+  r-gggenes
 )
 optdepends=(
   r-biocstyle

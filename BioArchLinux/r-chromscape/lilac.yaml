@@ -50,6 +50,7 @@ repo_depends:
 - r-tidyr
 - r-umap
 - r-viridis
+- r-gggenes
 update_on:
 - regex: ChromSCape_([\d._-]+).tar.gz
   source: regex
