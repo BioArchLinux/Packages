@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ctgGEM
-_pkgver=1.6.0
+_pkgver=1.7.0
 pkgname=r-${_pkgname,,}
-pkgver=1.6.0
+pkgver=1.7.0
 pkgrel=1
 pkgdesc='Generating Tree Hierarchy Visualizations from Gene Expression Data'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-vgam
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a220ff5146f48c6be791c114fe43f001cb26dd988afce86290c875daf1466a0d')
+sha256sums=('abb1cc74e7598e646df2a920557ddc0145d0ae068e07cdd7c844806cd2bfaa42')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
