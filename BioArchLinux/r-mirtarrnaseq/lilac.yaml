@@ -13,6 +13,7 @@ repo_depends:
 - r-purrr
 - r-r.utils
 - r-reshape2
+- r-ggplot2
 update_on:
 - regex: mirTarRnaSeq_([\d._-]+).tar.gz
   source: regex

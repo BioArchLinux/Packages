@@ -21,6 +21,7 @@ depends=(
   r-purrr
   r-r.utils
   r-reshape2
+  r-ggplot2
 )
 optdepends=(
   r-biocstyle
