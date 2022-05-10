@@ -26,6 +26,7 @@ depends=(
   r-matrix.utils
   r-patchwork
   r-repmis
+  r-ggtree
 )
 optdepends=(
   r-badger

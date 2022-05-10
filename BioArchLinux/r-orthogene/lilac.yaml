@@ -18,6 +18,7 @@ repo_depends:
 - r-matrix.utils
 - r-patchwork
 - r-repmis
+- r-ggtree
 update_on:
 - regex: orthogene_([\d._-]+).tar.gz
   source: regex
