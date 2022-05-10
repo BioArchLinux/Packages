@@ -22,6 +22,8 @@ depends=(
   r-s4vectors
   r-seqlogo
   r-stringi
+  r-ggseqlogo
+  r-cowplot
 )
 optdepends=(
   r-biocstyle
