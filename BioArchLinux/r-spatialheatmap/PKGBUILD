@@ -45,6 +45,8 @@ depends=(
   r-wgcna
   r-xml2
   r-yaml
+  r-proc
+  r-scran
 )
 optdepends=(
   r-biobase

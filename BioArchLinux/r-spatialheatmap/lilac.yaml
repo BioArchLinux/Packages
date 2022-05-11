@@ -37,6 +37,8 @@ repo_depends:
 - r-wgcna
 - r-xml2
 - r-yaml
+- r-proc
+- r-scran
 update_on:
 - regex: spatialHeatmap_([\d._-]+).tar.gz
   source: regex
