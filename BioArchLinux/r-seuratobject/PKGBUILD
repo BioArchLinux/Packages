@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SeuratObject
-_pkgver=4.0.4
+_pkgver=4.1.0
 pkgname=r-${_pkgname,,}
-pkgver=4.0.4
-pkgrel=2
+pkgver=4.1.0
+pkgrel=1
 pkgdesc='Data Structures for Single Cell Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('585261b7d2045193accf817a29e2e3356e731f57c554bed37d232fa49784088c')
+sha256sums=('9ca406cb3bd95c588e1a81c5383e3173a446cc0667142b139ca32685b4b20a05')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
