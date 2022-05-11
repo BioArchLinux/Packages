@@ -74,6 +74,9 @@ repo_depends:
 - r-withr
 - r-yaml
 - r-zinbwave
+- r-trajectoryutils
+- r-tscan
+- r-soupx
 update_on:
 - regex: singleCellTK_([\d._-]+).tar.gz
   source: regex

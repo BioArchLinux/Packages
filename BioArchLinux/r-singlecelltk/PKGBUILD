@@ -82,6 +82,9 @@ depends=(
   r-withr
   r-yaml
   r-zinbwave
+  r-trajectoryutils
+  r-tscan
+  r-soupx
 )
 optdepends=(
   r-biocgenerics
