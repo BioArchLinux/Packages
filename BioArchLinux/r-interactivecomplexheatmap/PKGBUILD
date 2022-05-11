@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=InteractiveComplexHeatmap
-_pkgver=1.2.0
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
-pkgrel=2
+pkgver=1.4.0
+pkgrel=1
 pkgdesc='Make Interactive Complex Heatmaps'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -59,7 +59,7 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1920070fb177775a45dbfcbc22ee59bd84bb80ba914adfe437158bef31a0bfe6')
+sha256sums=('422ef89a462d0182d7653116d9dbdce52839b1d930196092bbd129b80391f18e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
