@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gdata
-_pkgver=2.18.0
+_pkgver=2.18.0.1
 pkgname=r-${_pkgname,,}
-pkgver=2.18.0
-pkgrel=2
+pkgver=2.18.0.1
+pkgrel=1
 pkgdesc='Various R Programming Tools for Data Manipulation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4b287f59f5bbf5fcbf18db16477852faac4a605b10c5284c46b93fa6e9918d7f')
+sha256sums=('5e2f3d5b9398d52a4c07a4d35f5f936450a44567c7db8d8f68b4cc6946e032d9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
