@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=reldist
-_pkgver=1.7-0
+_pkgver=1.7-1
 pkgname=r-${_pkgname,,}
-pkgver=1.7.0
+pkgver=1.7.1
 pkgrel=1
 pkgdesc='Relative Distribution Methods'
 arch=('any')
@@ -18,7 +18,7 @@ optdepends=(
   r-locfit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('51ba13e16fdf8d0c4ea497f2b28369f5d966a0b5d4fce917a9df993cb8690444')
+sha256sums=('2693ab9660e34a3f5e27bf8eec985f7f8dcd625df14779367c93557c15c66b9e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
