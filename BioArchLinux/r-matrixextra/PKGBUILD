@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MatrixExtra
-_pkgver=0.1.9-1
+_pkgver=0.1.10
 pkgname=r-${_pkgname,,}
-pkgver=0.1.9.1
-pkgrel=2
+pkgver=0.1.10
+pkgrel=1
 pkgdesc='Extra Methods for Sparse Matrices'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('40eab057c6dae9e6f7e411430e101a73b932ade88bc48ad4d5fd314bf1bb0a25')
+sha256sums=('2818f825646a8e16c3a1b8a7799320596f9b4af6c8b836f44be0886bf8d3c601')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
