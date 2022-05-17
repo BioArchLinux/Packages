@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gmodels
-_pkgver=2.18.1
+_pkgver=2.18.1.1
 pkgname=r-${_pkgname,,}
-pkgver=2.18.1
-pkgrel=2
+pkgver=2.18.1.1
+pkgrel=1
 pkgdesc='Various R Programming Tools for Model Fitting'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-nlme
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('626140a34eb8c53dd0a06511a76c71bc61c48777fa76fcc5e6934c9c276a1369')
+sha256sums=('da7d48021b7cd2fd8a7cd8d0bb9658b12342a32698a13877b25ca94aa03f1e95')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
