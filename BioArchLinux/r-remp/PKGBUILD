@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=REMP
-_pkgver=1.19.1
+_pkgver=1.20.1
 pkgname=r-${_pkgname,,}
-pkgver=1.19.1
+pkgver=1.20.1
 pkgrel=1
 pkgdesc='Repetitive Element Methylation Prediction'
 arch=('any')
@@ -44,7 +44,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6f006e038dd457e7f32bc5c0e20c6cee9aa05f9fbcdacd7463ed6dbf26fa2549')
+sha256sums=('f291ddac2c2df84f0665328afda4b08788aa958f7fe2a87549d7572a17b8e604')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
