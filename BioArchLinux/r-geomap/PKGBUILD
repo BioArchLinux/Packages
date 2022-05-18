@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GEOmap
-_pkgver=2.4-4
+_pkgver=2.5-0
 pkgname=r-${_pkgname,,}
-pkgver=2.4.4
+pkgver=2.5.0
 pkgrel=1
 pkgdesc='Topographic and Geologic Mapping'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-rfoc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('101f177135514572d2aba44633dae4a870019340cf8570662a9571c61dd86272')
+sha256sums=('82e5608eda7330632bc67aa662b649e7b7b3ccdfda6a18a19d2e3379e0db1093')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
