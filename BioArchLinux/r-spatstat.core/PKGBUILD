@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=spatstat.core
-_pkgver=2.4-2
+_pkgver=2.4-4
 pkgname=r-${_pkgname,,}
-pkgver=2.4.2
+pkgver=2.4.4
 pkgrel=1
 pkgdesc="Core Functionality of the 'spatstat' Family"
 arch=('x86_64')
@@ -34,7 +34,7 @@ optdepends=(
   r-spatstat.linnet
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6985c284b8410bedc15317cb0947e6434d04bc277f6d6d934fce8b20b8ef0d2e')
+sha256sums=('e38c39efe8b14d6e8fdbee8dd870b90c52f78ea571ab7988fd3685f48347d13b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
