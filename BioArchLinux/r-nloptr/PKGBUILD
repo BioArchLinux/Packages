@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=nloptr
-_pkgver=2.0.1
+_pkgver=2.0.2
 pkgname=r-${_pkgname,,}
-pkgver=2.0.1
+pkgver=2.0.2
 pkgrel=1
 pkgdesc='R Interface to NLopt'
 arch=('x86_64')
@@ -25,7 +25,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3984f075f77de5afbe58404909d2574d2af7c08825596849bc08dff303612a19')
+sha256sums=('a82a80c639927e9bde5574014d48ddd362a8a60c7b6a1021ea990f6b09394211')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
