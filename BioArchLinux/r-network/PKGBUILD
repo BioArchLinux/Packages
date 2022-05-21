@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=network
-_pkgver=1.17.1
+_pkgver=1.17.2
 pkgname=r-${_pkgname,,}
-pkgver=1.17.1
-pkgrel=2
+pkgver=1.17.2
+pkgrel=1
 pkgdesc='Classes for Relational Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fc3c3a0014f8895a11c33994c9b44c6ef6cc49c7d026cd41ae6bba5ef63005a7')
+sha256sums=('9588a198807c8c68da147f479ca9af5bcb4468cf91b6a90b8044d313d9fa30f7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
