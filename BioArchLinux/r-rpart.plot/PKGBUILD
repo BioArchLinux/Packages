@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rpart.plot
-_pkgver=3.1.0
+_pkgver=3.1.1
 pkgname=r-${_pkgname,,}
-pkgver=3.1.0
-pkgrel=2
+pkgver=3.1.1
+pkgrel=1
 pkgdesc="Plot 'rpart' Models: An Enhanced Version of 'plot.rpart'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-earth
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2aaba0c0cabbc17aca9085248b0ad74ee7ff2b8f729e020e84b3917de174c15e')
+sha256sums=('30736240058df21a96d10912a091d938f821d521a3bc4efb9aa4ef6fb233024d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
