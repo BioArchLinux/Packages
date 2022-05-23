@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=nsga2R
-_pkgver=1.0
+_pkgver=1.1
 pkgname=r-${_pkgname,,}
-pkgver=1.0
-pkgrel=2
+pkgver=1.1
+pkgrel=1
 pkgdesc='Elitist Non-dominated Sorting Genetic Algorithm based on R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-mco
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1d3a8b1a94cd647e49ad8097cf553f998d41532f341af2362283391d87025212')
+sha256sums=('645111e633b5cd5b512e05ec9b943349c409fef6f8cf2ae81ae19958439b73ac')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
