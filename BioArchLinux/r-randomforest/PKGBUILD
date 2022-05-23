@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=randomForest
-_pkgver=4.7-1
+_pkgver=4.7-1.1
 pkgname=r-${_pkgname,,}
-pkgver=4.7.1
-pkgrel=2
+pkgver=4.7.1.1
+pkgrel=1
 pkgdesc="Breiman and Cutler's Random Forests for Classification and Regression"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('785a590a3f845ab3fef4d01f2e0da092221c3addc9b13310f7a4d513d27a0613')
+sha256sums=('f59ea87534480edbcd6baf53d7ec57e8c69f4532c2d2528eacfd48924efa2cd6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
