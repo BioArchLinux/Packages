@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=keras
-_pkgver=2.8.0
+_pkgver=2.9.0
 pkgname=r-${_pkgname,,}
-pkgver=2.8.0
+pkgver=2.9.0
 pkgrel=1
 pkgdesc="R Interface to 'Keras'"
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-tfdatasets
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8ec19b1ad51d9c606cb82a1081625d49f65b92bb2254fd805d5a2c5829f1fb83')
+sha256sums=('cc2392a49b8dcbbff8b774f08d714bb776231fa4a9f60136999d9deb421ba118')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
