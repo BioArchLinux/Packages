@@ -1,7 +1,7 @@
 _pkgname=pzfx
 _pkgver=0.3.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver}
+pkgver=0.3.0
 pkgrel=1
 pkgdesc='Import GraphPad Prism (pzfx) data in R'
 arch=('any')
