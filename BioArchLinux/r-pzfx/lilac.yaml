@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: staalmannen
+  email: staal1978@gmail.com
+update_on:
+- regex: pzfx_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/src/contrib 
