@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bh
+  - r-dplyr
+  - r-dygraphs
+  - r-extradistr
+  - r-ggplot2
+  - r-lubridate
+  - r-rcpp
+  - r-rcppeigen
+  - r-rcppparallel
+  - r-rlang
+  - r-rstan
+  - r-rstantools
+  - r-scales
+  - r-stanheaders
+  - r-tidyr
+  - r-xts
+update_on:
+  - regex: prophet_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=prophet

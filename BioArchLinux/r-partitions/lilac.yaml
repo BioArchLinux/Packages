@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-gmp
+  - r-mathjaxr
+  - r-polynom
+  - r-sets
+update_on:
+  - regex: partitions_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=partitions

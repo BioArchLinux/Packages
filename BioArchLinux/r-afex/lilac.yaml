@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-car
+  - r-lme4
+  - r-lmertest
+  - r-pbkrtest
+  - r-reshape2
+update_on:
+  - regex: afex_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=afex

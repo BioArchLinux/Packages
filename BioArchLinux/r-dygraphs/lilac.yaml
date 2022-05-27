@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-htmltools
+  - r-htmlwidgets
+  - r-magrittr
+  - r-xts
+  - r-zoo
+update_on:
+  - regex: dygraphs_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=dygraphs

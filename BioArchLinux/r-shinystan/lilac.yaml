@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bayesplot
+  - r-colourpicker
+  - r-dt
+  - r-dygraphs
+  - r-ggplot2
+  - r-gridextra
+  - r-gtools
+  - r-markdown
+  - r-reshape2
+  - r-rstan
+  - r-shiny
+  - r-shinyjs
+  - r-shinythemes
+  - r-threejs
+  - r-xtable
+  - r-xts
+update_on:
+  - regex: shinystan_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=shinystan

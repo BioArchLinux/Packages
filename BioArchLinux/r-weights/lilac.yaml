@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-gdata
+  - r-hmisc
+  - r-lme4
+  - r-mice
+update_on:
+  - regex: weights_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=weights

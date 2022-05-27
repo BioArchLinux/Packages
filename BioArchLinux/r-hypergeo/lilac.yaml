@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-contfrac
+  - r-desolve
+  - r-elliptic
+update_on:
+  - regex: hypergeo_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=hypergeo
