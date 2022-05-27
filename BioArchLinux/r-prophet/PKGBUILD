@@ -35,6 +35,7 @@ optdepends=(
   r-rmarkdown
   r-testthat
 )
+makedepends=('make' 'gcc')
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('94bea364c7c625bd34fee08da221b7a6c4d3ef939869f22229b2273fb7f2b91a')
 

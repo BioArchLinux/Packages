@@ -24,6 +24,7 @@ depends=(
   r-rjags
   r-runjags
   r-scales
+  jags
 )
 optdepends=(
   r-covr

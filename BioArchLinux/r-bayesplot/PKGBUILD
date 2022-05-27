@@ -21,6 +21,8 @@ depends=(
   r-rlang
   r-tibble
   r-tidyselect
+  pandoc
+  pandoc-citeproc
 )
 optdepends=(
   r-ggfortify

@@ -20,6 +20,7 @@ depends=(
   r-rdpack
   r-rjags
   r-runjags
+  jags
 )
 optdepends=(
   r-bayesfactor

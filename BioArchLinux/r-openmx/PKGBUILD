@@ -40,6 +40,7 @@ optdepends=(
 )
 makedepends=(
   gcc-fortran
+  make
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('65c50ce09f9c006b41b7311ec05eba3ae77926d84fb44e3905905208404826ed')
