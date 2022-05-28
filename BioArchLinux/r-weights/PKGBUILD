@@ -3,7 +3,7 @@
 _pkgname=weights
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.4
 pkgrel=1
 pkgdesc='Weighting and Weighted Statistics'
 arch=('x86_64')
