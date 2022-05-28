@@ -3,7 +3,7 @@
 _pkgname=eigenmodel
 _pkgver=1.11
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.11
 pkgrel=1
 pkgdesc='Semiparametric Factor and Regression Models for Symmetric Relational Data'
 arch=('any')
