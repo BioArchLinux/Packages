@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-car
+  - r-ggplot2
+  - r-moments
+  - r-nortest
+update_on:
+  - regex: onewaytests_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=onewaytests

@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-ca
+  - r-gnm
+  - r-vcd
+update_on:
+  - regex: vcdExtra_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=vcdExtra

@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-abind
+  - r-corpcor
+  - r-dplyr
+  - r-ggplot2
+  - r-gtools
+  - r-igraph
+  - r-isingfit
+  - r-isingsampler
+  - r-mgm
+  - r-mvtnorm
+  - r-networktoolbox
+  - r-networktools
+  - r-pbapply
+  - r-qgraph
+  - r-rlang
+  - r-snow
+  - r-tibble
+  - r-tidyr
+update_on:
+  - regex: bootnet_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=bootnet

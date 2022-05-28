@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-combinat
+  - r-conf.design
+  - r-numbers
+  - r-partitions
+  - r-vcd
+update_on:
+  - regex: DoE.base_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=DoE.base

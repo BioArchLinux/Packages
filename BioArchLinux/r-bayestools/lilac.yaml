@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bridgesampling
+  - r-coda
+  - r-extradistr
+  - r-ggplot2
+  - r-mvtnorm
+  - r-rdpack
+  - r-rjags
+  - r-runjags
+  - jags
+update_on:
+  - regex: BayesTools_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=BayesTools

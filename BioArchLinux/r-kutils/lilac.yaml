@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-openxlsx
+  - r-plyr
+  - r-runit
+  - r-xtable
+update_on:
+  - regex: kutils_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=kutils

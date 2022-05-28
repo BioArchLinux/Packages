@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-colorspace
+  - r-corpcor
+  - r-igraph
+  - r-lavaan
+  - r-lisreltor
+  - r-openmx
+  - r-plyr
+  - r-qgraph
+  - r-rockchalk
+  - r-sem
+  - r-xml
+update_on:
+  - regex: semPlot_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=semPlot

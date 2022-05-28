@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-brobdingnag
+  - r-coda
+  - r-mvtnorm
+  - r-scales
+  - r-stringr
+update_on:
+  - regex: bridgesampling_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=bridgesampling

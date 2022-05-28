@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-dplyr
+  - r-magrittr
+  - r-plyr
+  - r-rcpp
+update_on:
+  - regex: IsingSampler_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=IsingSampler

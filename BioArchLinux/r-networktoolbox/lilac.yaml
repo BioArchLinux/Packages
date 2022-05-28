@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-corrplot
+  - r-doparallel
+  - r-fdrtool
+  - r-foreach
+  - r-igraph
+  - r-isingfit
+  - r-pbapply
+  - r-ppcor
+  - r-psych
+  - r-pwr
+  - r-qgraph
+  - r-r.matlab
+update_on:
+  - regex: NetworkToolbox_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=NetworkToolbox

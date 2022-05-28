@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bh
+  - r-digest
+  - r-lifecycle
+  - r-rcpp
+  - r-rcppeigen
+  - r-rcppparallel
+  - r-rpf
+  - r-stanheaders
+update_on:
+  - regex: OpenMx_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=OpenMx

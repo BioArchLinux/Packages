@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-candisc
+  - r-colorspace
+  - r-doparallel
+  - r-e1071
+  - r-ellipse
+  - r-foreach
+  - r-hmisc
+  - r-nnls
+  - r-plotrix
+  - r-polynom
+  - r-weights
+  - r-wordcloud
+update_on:
+  - regex: smacof_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=smacof

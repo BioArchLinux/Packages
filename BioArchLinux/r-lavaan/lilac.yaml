@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-mnormt
+  - r-numderiv
+  - r-pbivnorm
+update_on:
+  - regex: lavaan_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=lavaan

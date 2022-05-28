@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-isingfit
+  - r-isingsampler
+  - r-qgraph
+  - r-reshape2
+update_on:
+  - regex: NetworkComparisonTest_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=NetworkComparisonTest
