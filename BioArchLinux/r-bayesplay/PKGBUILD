@@ -3,7 +3,7 @@
 _pkgname=bayesplay
 _pkgver=0.9.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.2
 pkgrel=1
 pkgdesc='The Bayes Factor Playground'
 arch=('any')
