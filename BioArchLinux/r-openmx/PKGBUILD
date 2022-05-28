@@ -4,7 +4,7 @@
 _pkgname=OpenMx
 _pkgver=2.20.6
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.20.6
 pkgrel=1
 pkgdesc='Extended Structural Equation Modelling'
 arch=('x86_64')
