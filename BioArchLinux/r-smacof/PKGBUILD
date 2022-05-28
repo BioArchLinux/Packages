@@ -3,7 +3,7 @@
 _pkgname=smacof
 _pkgver=2.1-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.1.5
 pkgrel=1
 pkgdesc='Multidimensional Scaling'
 arch=('x86_64')
