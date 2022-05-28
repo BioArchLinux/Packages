@@ -3,7 +3,7 @@
 _pkgname=GPArotation
 _pkgver=2022.4-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2022.4.1
 pkgrel=1
 pkgdesc='GPA Factor Rotation'
 arch=('any')
