@@ -3,7 +3,7 @@
 _pkgname=BAS
 _pkgver=1.6.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.6.2
 pkgrel=1
 pkgdesc='Bayesian Variable Selection and Model Averaging using Bayesian Adaptive Sampling'
 arch=('x86_64')
