@@ -3,7 +3,7 @@
 _pkgname=shinystan
 _pkgver=2.6.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.6.0
 pkgrel=1
 pkgdesc='Interactive Visual and Numerical Diagnostics and Posterior Analysis for Bayesian Models'
 arch=('any')
