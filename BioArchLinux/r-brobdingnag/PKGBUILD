@@ -3,7 +3,7 @@
 _pkgname=Brobdingnag
 _pkgver=1.2-7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.7
 pkgrel=1
 pkgdesc='Very Large Numbers in R'
 arch=('any')
