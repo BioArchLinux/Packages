@@ -3,7 +3,7 @@
 _pkgname=gginnards
 _pkgver=0.1.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.0.1
 pkgrel=1
 pkgdesc="Explore the Innards of 'ggplot2' Objects"
 arch=('any')
