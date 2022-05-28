@@ -3,7 +3,7 @@
 _pkgname=neuralnet
 _pkgver=1.44.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.44.2
 pkgrel=1
 pkgdesc='Training of Neural Networks'
 arch=('any')
