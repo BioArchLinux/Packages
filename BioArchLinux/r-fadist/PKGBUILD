@@ -4,7 +4,7 @@ _pkgname=FAdist
 _pkgver=2.4
 pkgname=r-${_pkgname,,}
 pkgver=2.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Distributions that are Sometimes Used in Hydrology'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
