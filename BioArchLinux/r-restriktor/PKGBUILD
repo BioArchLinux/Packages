@@ -3,7 +3,7 @@
 _pkgname=restriktor
 _pkgver=0.3-400
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.400
 pkgrel=1
 pkgdesc='Restricted Statistical Estimation and Inference for Linear Models'
 arch=('any')
