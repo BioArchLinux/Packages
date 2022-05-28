@@ -3,7 +3,7 @@
 _pkgname=jfa
 _pkgver=0.6.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.3
 pkgrel=1
 pkgdesc='Bayesian and Classical Audit Sampling'
 arch=('any')
