@@ -4,7 +4,7 @@
 _pkgname=metaBMA
 _pkgver=0.6.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.6.7
 pkgrel=1
 pkgdesc='Bayesian Model Averaging for Random and Fixed Effects Meta-Analysis'
 arch=('x86_64')
