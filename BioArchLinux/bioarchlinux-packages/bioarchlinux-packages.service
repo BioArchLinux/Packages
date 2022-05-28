@@ -1,0 +1,11 @@
+[Unit]
+Description=bioarchlinux-packages service for bioarchlinux repo
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bioarchlinux-packages
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+

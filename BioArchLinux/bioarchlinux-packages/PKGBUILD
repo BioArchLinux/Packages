@@ -1,0 +1,34 @@
+# Maintainer: guoyi
+pkgname=bioarchlinux-packages
+_pkgname=guoyi-packages
+pkgver=r111.89ce082
+pkgrel=1
+pkgdesc="build status site"
+arch=('x86_64')
+url="https://github.com/BioArchLinux/bioarchlinux-packages"
+depends=()
+makedepends=('rust' 'git')
+optdepends=()
+provides=()
+source=(git+https://github.com/BioArchLinux/bioarchlinux-packages.git
+		$pkgname.service)
+sha256sums=('SKIP'
+            'dd2a46ad3b1e7d532b53f10ced77fbd74924c8635ff3778d62a42f0606295d2c')
+pkgver() {
+  cd "$pkgname"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+build() {
+  cd "$pkgname"/src
+  cargo build --release --all-features
+}
+
+package() {
+  install -Dm755 $pkgname.service $pkgdir/usr/lib/systemd/system/$pkgname.service
+  cd "$pkgname"
+  install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/$pkgname"
+  install -dm755 "$pkgdir"/usr/share/webapps/${pkgname}
+  cd html
+  cp *.html $pkgdir/usr/share/webapps/$pkgname/
+}
+
