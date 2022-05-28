@@ -3,7 +3,7 @@
 _pkgname=contfrac
 _pkgver=1.1-12
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.1.12
 pkgrel=1
 pkgdesc='Continued Fractions'
 arch=('x86_64')
