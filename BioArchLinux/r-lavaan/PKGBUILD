@@ -4,7 +4,7 @@ _pkgname=lavaan
 _pkgver=0.6-11
 pkgname=r-${_pkgname,,}
 pkgver=0.6.11
-pkgrel=2
+pkgrel=3
 pkgdesc='Latent Variable Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
