@@ -3,7 +3,7 @@
 _pkgname=mle.tools
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0.0
 pkgrel=1
 pkgdesc='Expected/Observed Fisher Information and Bias-Corrected Maximum Likelihood Estimate(s)'
 arch=('any')
