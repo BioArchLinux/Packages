@@ -3,7 +3,7 @@
 _pkgname=Bayesrel
 _pkgver=0.7.4.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.4.1
 pkgrel=1
 pkgdesc='Bayesian Reliability Estimation'
 arch=('x86_64')
