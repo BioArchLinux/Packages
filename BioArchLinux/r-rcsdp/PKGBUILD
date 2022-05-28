@@ -3,7 +3,7 @@
 _pkgname=Rcsdp
 _pkgver=0.1.57.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.57.2
 pkgrel=1
 pkgdesc='R Interface to the CSDP Semidefinite Programming Library'
 arch=('x86_64')
