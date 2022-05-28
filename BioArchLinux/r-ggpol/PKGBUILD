@@ -3,7 +3,7 @@
 _pkgname=ggpol
 _pkgver=0.0.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.0.7
 pkgrel=1
 pkgdesc="Visualizing Social Science Data with 'ggplot2'"
 arch=('any')
