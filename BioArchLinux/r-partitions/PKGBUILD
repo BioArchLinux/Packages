@@ -3,7 +3,7 @@
 _pkgname=partitions
 _pkgver=1.10-4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.10.4
 pkgrel=1
 pkgdesc='Additive Partitions of Integers'
 arch=('x86_64')
