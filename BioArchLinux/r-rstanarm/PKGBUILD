@@ -25,7 +25,6 @@ depends=(
   r-shinystan
   r-stanheaders
   pandoc
-  pandoc-citeproc
 )
 optdepends=(
   r-betareg

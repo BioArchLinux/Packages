@@ -3,6 +3,7 @@ maintainers:
   - github: sukanka
 repo_depends:
   - r-coda
+  - jags
 update_on:
   - regex: runjags_([\d._-]+).tar.gz
     source: regex

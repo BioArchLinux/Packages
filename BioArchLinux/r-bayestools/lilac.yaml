@@ -10,6 +10,7 @@ repo_depends:
   - r-rdpack
   - r-rjags
   - r-runjags
+  - jags
 update_on:
   - regex: BayesTools_([\d._-]+).tar.gz
     source: regex

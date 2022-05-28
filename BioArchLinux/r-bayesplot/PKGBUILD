@@ -22,7 +22,6 @@ depends=(
   r-tibble
   r-tidyselect
   pandoc
-  pandoc-citeproc
 )
 optdepends=(
   r-ggfortify
