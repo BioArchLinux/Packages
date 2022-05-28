@@ -11,6 +11,10 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-gap.datasets
+  r-dplyr
+  r-ggplot2
+  r-plotly
 )
 optdepends=(
   r-bdsmatrix
