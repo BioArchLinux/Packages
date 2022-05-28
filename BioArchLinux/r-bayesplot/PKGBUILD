@@ -4,7 +4,7 @@
 _pkgname=bayesplot
 _pkgver=1.9.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.9.0
 pkgrel=1
 pkgdesc='Plotting for Bayesian Models'
 arch=('any')
