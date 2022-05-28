@@ -3,7 +3,7 @@
 _pkgname=kappalab
 _pkgver=0.4-7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.7
 pkgrel=1
 pkgdesc='Non-Additive Measure and Integral Manipulation Functions'
 arch=('x86_64')
