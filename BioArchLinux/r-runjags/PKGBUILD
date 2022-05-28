@@ -4,7 +4,7 @@
 _pkgname=runjags
 _pkgver=2.2.1-7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.1.7
 pkgrel=1
 pkgdesc='Interface Utilities, Model Templates, Parallel Computing Methods and Additional Distributions for MCMC Models in JAGS'
 arch=('x86_64')
