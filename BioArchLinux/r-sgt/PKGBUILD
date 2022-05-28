@@ -3,7 +3,7 @@
 _pkgname=sgt
 _pkgver=2.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.0
 pkgrel=1
 pkgdesc='Skewed Generalized T Distribution Tree'
 arch=('any')
