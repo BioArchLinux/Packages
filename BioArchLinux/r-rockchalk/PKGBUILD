@@ -3,7 +3,7 @@
 _pkgname=rockchalk
 _pkgver=1.8.152
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.152
 pkgrel=1
 pkgdesc='Regression Estimation and Presentation'
 arch=('any')
