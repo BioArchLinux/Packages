@@ -3,7 +3,7 @@
 _pkgname=IsingFit
 _pkgver=0.3.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.1
 pkgrel=1
 pkgdesc='Fitting Ising Models Using the ELasso Method'
 arch=('any')
