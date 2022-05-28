@@ -22,6 +22,8 @@ depends=(
   r-rcolorbrewer
   r-seqmagick
   r-tidyr
+  r-statebins
+  r-ggtree
 )
 optdepends=(
   r-ape
@@ -29,7 +31,6 @@ optdepends=(
   r-cowplot
   r-gggenes
   r-ggnewscale
-  r-ggtree
   r-ggtreeextra
   r-kableextra
   r-knitr

@@ -14,6 +14,8 @@ repo_depends:
 - r-rcolorbrewer
 - r-seqmagick
 - r-tidyr
+- r-statebins
+- r-ggtree
 update_on:
 - regex: ggmsa_([\d._-]+).tar.gz
   source: regex
