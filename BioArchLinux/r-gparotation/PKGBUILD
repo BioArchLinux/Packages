@@ -4,7 +4,7 @@ _pkgname=GPArotation
 _pkgver=2022.4-1
 pkgname=r-${_pkgname,,}
 pkgver=2022.4.1
-pkgrel=4
+pkgrel=5
 pkgdesc='GPA Factor Rotation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
