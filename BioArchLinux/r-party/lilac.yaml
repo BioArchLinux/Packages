@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-coin
+  - r-modeltools
+  - r-mvtnorm
+  - r-sandwich
+  - r-strucchange
+  - r-zoo
+update_on:
+  - regex: party_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=party
