@@ -4,7 +4,7 @@ _pkgname=kappalab
 _pkgver=0.4-7
 pkgname=r-${_pkgname,,}
 pkgver=0.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Non-Additive Measure and Integral Manipulation Functions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
