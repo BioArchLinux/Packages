@@ -12,6 +12,7 @@ license=('GPL')
 depends=(
   r
   r-numderiv
+  r-optextras
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('a824a09c32d7565a3e30607c71333506d5b7197478fbe8b43f8a77dad6c12f0a')

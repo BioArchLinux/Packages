@@ -4,6 +4,7 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-numderiv
+- r-optextras
 update_on:
 - regex: Rcgmin_([\d._-]+).tar.gz
   source: regex
