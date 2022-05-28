@@ -3,7 +3,7 @@
 _pkgname=qcc
 _pkgver=2.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.7
 pkgrel=1
 pkgdesc='Quality Control Charts'
 arch=('any')
