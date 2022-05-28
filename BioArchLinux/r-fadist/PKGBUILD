@@ -3,7 +3,7 @@
 _pkgname=FAdist
 _pkgver=2.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.4
 pkgrel=1
 pkgdesc='Distributions that are Sometimes Used in Hydrology'
 arch=('any')
