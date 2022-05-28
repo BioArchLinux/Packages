@@ -3,7 +3,7 @@
 _pkgname=ca
 _pkgver=0.71.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.71.1
 pkgrel=1
 pkgdesc='Simple, Multiple and Joint Correspondence Analysis'
 arch=('any')
