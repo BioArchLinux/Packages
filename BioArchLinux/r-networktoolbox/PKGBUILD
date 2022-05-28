@@ -3,7 +3,7 @@
 _pkgname=NetworkToolbox
 _pkgver=1.4.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.4.2
 pkgrel=1
 pkgdesc='Methods and Measures for Brain, Cognitive, and Psychometric Network Analysis'
 arch=('any')
