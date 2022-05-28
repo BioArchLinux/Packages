@@ -3,7 +3,7 @@
 _pkgname=weibullness
 _pkgver=1.19.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.19.8
 pkgrel=1
 pkgdesc='Goodness-of-Fit Test for Weibull Distribution (Weibullness)'
 arch=('any')
