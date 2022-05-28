@@ -3,7 +3,7 @@
 _pkgname=mi
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.0
 pkgrel=1
 pkgdesc='Missing Data Imputation and Model Checking'
 arch=('any')
