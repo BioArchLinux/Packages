@@ -3,7 +3,7 @@
 _pkgname=DoE.base
 _pkgver=1.2-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.1
 pkgrel=1
 pkgdesc='Full Factorials, Orthogonal Arrays and Base Utilities for DoE Packages'
 arch=('any')
