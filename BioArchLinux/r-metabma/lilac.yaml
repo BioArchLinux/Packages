@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bh
+  - r-bridgesampling
+  - r-coda
+  - r-laplacesdemon
+  - r-logspline
+  - r-mvtnorm
+  - r-rcpp
+  - r-rcppeigen
+  - r-rcppparallel
+  - r-rstan
+  - r-rstantools
+  - r-stanheaders
+update_on:
+  - regex: metaBMA_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=metaBMA
