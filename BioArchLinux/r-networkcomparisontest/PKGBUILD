@@ -3,7 +3,7 @@
 _pkgname=NetworkComparisonTest
 _pkgver=2.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=2.2.1
 pkgrel=1
 pkgdesc='Statistical Comparison of Two Networks Based on Three Invariance Measures'
 arch=('any')
