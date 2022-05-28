@@ -4,7 +4,7 @@ _pkgname=vcdExtra
 _pkgver=0.8-0
 pkgname=r-${_pkgname,,}
 pkgver=0.8.0
-pkgrel=3
+pkgrel=4
 pkgdesc="'vcd' Extensions and Additions"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
