@@ -3,7 +3,7 @@
 _pkgname=lisrelToR
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.5
 pkgrel=1
 pkgdesc="Import Output from 'LISREL' into 'R'"
 arch=('any')
