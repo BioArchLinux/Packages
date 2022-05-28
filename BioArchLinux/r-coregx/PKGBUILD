@@ -26,6 +26,7 @@ depends=(
   r-rlang
   r-s4vectors
   r-summarizedexperiment
+  r-bench
 )
 optdepends=(
   r-biocstyle
