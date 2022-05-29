@@ -13,7 +13,9 @@ depends=(
   r
   r-deldir
   r-rcpp
-  r-rcppeigen
+  r-rcppeigen)
+makedepends=(
+  gcc-fortran
 )
 optdepends=(
   r-deriv
