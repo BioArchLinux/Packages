@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
-    email: starsareintherose@outlook.com
+    email: git@malacology.net
 pre_build_script: aur_pre_build(maintainers='malacology')
 post_build: aur_post_build
 update_on:

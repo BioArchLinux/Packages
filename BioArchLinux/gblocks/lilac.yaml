@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
-    email: starsareintherose@outlook.com
+    email: git@malacology.net
 update_on:
   - regex: Gblocks_Linux_(\d+.\w+).tar.Z
     source: regex

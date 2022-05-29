@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
-    email: starsareintherose@outlook.com
+    email: git@malacology.net
 update_on:
   - regex: href="/projects/incrtcl/files/%5BIncr%20Widgets%5D/(\d+.\d+.\d+)/"
     source: regex

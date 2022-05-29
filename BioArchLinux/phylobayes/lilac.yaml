@@ -1,7 +1,7 @@
 build_prefix: multilib
 maintainers:
   - github: starsareintherose
-    email: starsareintherose@outlook.com
+    email: git@malacology.net
 update_on:
   - source: github
     github: bayesiancook/phylobayes

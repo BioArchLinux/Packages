@@ -1,7 +1,7 @@
 build_prefix: multilib
 maintainers:
   - github: starsareintherose
-    email: starsareintherose@outlook.com
+    email: git@malacology.net
 update_on:
   - source: cmd
     cmd: curl -sS http://www.lillo.org.ar/phylogeny/ | grep 'tnt' | sed 's@-@.@g' | awk '{print $6}'
