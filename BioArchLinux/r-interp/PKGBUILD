@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=interp
-_pkgver=1.0-33
+_pkgver=1.1-2
 pkgname=r-${_pkgname,,}
-pkgver=1.0.33
-pkgrel=2
+pkgver=1.1.2
+pkgrel=1
 pkgdesc='Interpolation Methods'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-sp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('661f927115fea3a5d4e67d5fff469ca9c0bf45ce718edf4a25423dbaf7f9be84')
+sha256sums=('1900cfb84897ad427cd37a0cb2a4d4e99457ce4f6690a5fde7a86f35b73eb2d7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
