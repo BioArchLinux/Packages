@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=lmom
-_pkgver=2.8
+_pkgver=2.9
 pkgname=r-${_pkgname,,}
-pkgver=2.8
-pkgrel=2
+pkgver=2.9
+pkgrel=1
 pkgdesc='L-Moments'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cae2a925c39429d8e9f91bdb2682ea0d1343e9b2e5c9e8752c5929eb5f20d2d2')
+sha256sums=('363e62751a73e0870fd0206206f1743a884a23aeac9b31b9afc71c0a1b51bb90')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
