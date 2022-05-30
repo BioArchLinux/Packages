@@ -4,7 +4,7 @@ _pkgname=latticeExtra
 _pkgver=0.6-29
 pkgname=r-${_pkgname,,}
 pkgver=0.6.29
-pkgrel=3
+pkgrel=4
 pkgdesc='Extra Graphical Utilities Based on Lattice'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
