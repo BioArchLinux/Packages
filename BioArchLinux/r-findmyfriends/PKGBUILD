@@ -28,6 +28,9 @@ depends=(
   r-reshape2
   r-s4vectors
 )
+makedepends=(
+  git
+)
 optdepends=(
   r-biocstyle
   r-knitr
@@ -35,11 +38,12 @@ optdepends=(
   r-rmarkdown
   r-testthat
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("git+https://git.bioconductor.org/packages/${_pkgname}.git")
 sha256sums=('e91305becc2fb8c276f57457eaf99c58a9f85b377b0b034a16a2ac2ea9a17075')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  tar -zcvf ${_pkgname}.tar.gz  ${_pkgname}
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
 }
 
 package() {
