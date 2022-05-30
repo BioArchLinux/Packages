@@ -22,7 +22,7 @@ optdepends=(
   r-seqcna
   r-testthat
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.zip")
 sha256sums=('79a7aeb091795e58b0fec8780306f5e7e5df9045c8d95bd3aefb9dbfec560c0d')
 
 build() {
