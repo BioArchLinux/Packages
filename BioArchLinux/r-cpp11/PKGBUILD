@@ -5,7 +5,7 @@ _pkgname=cpp11
 _pkgver=0.4.2
 pkgname=r-${_pkgname,,}
 pkgver=0.4.2
-pkgrel=3
+pkgrel=4
 pkgdesc="A C++11 Interface for R's C Interface"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
