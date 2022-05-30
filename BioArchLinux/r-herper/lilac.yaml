@@ -7,6 +7,6 @@ repo_depends:
 - r-rjson
 - r-withr
 update_on:
-- regex: Herper_([\d._-]+).tar.gz
+- regex: Herper_([\d._-]+).zip
   source: regex
   url: https://bioconductor.org/packages/Herper
