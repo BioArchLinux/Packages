@@ -4,7 +4,7 @@ _pkgname=aroma.core
 _pkgver=3.2.2
 pkgname=r-${_pkgname,,}
 pkgver=3.2.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Core Methods and Classes Used by 'aroma.*' Packages Part of the Aroma Framework"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
