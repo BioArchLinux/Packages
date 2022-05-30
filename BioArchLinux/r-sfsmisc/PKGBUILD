@@ -4,7 +4,7 @@ _pkgname=sfsmisc
 _pkgver=1.1-13
 pkgname=r-${_pkgname,,}
 pkgver=1.1.13
-pkgrel=1
+pkgrel=2
 pkgdesc='Utilities from Seminar fuer Statistik ETH Zurich'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

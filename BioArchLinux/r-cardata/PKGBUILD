@@ -4,7 +4,7 @@ _pkgname=carData
 _pkgver=3.0-5
 pkgname=r-${_pkgname,,}
 pkgver=3.0.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Companion to Applied Regression Data Sets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
