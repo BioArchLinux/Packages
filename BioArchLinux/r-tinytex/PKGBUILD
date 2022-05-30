@@ -4,7 +4,7 @@ _pkgname=tinytex
 _pkgver=0.39
 pkgname=r-${_pkgname,,}
 pkgver=0.39
-pkgrel=1
+pkgrel=2
 pkgdesc='Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
