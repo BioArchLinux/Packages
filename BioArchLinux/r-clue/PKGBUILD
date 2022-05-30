@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=clue
-_pkgver=0.3-60
+_pkgver=0.3-61
 pkgname=r-${_pkgname,,}
-pkgver=0.3.60
-pkgrel=2
+pkgver=0.3.61
+pkgrel=1
 pkgdesc='Cluster Ensembles'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -29,7 +29,7 @@ optdepends=(
   r-rweka
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6d21ddfd0d621ed3bac861890c600884b6ed5ff7d2a36c9778b892636dbbef2a')
+sha256sums=('71311b16ce380fd9a8834be95b55b3d1b47e4ee2b8acb35b8d481138c314dc31')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
