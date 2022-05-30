@@ -4,7 +4,7 @@ _pkgname=RUnit
 _pkgver=0.4.32
 pkgname=r-${_pkgname,,}
 pkgver=0.4.32
-pkgrel=2
+pkgrel=3
 pkgdesc='R Unit Test Framework'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

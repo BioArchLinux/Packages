@@ -4,7 +4,7 @@ _pkgname=DEoptimR
 _pkgver=1.0-11
 pkgname=r-${_pkgname,,}
 pkgver=1.0.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Differential Evolution Optimization in Pure R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

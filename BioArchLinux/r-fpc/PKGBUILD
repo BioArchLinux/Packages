@@ -4,7 +4,7 @@ _pkgname=fpc
 _pkgver=2.2-9
 pkgname=r-${_pkgname,,}
 pkgver=2.2.9
-pkgrel=2
+pkgrel=3
 pkgdesc='Flexible Procedures for Clustering'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
