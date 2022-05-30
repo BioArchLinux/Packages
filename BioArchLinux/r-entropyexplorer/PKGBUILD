@@ -12,7 +12,7 @@ license=('GPL')
 depends=(
   r
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('04961645e63085b5b74b4b42144b6b28ce3243eed49a6573a6e475af12b6920a')
 
 build() {
