@@ -32,5 +32,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/ALPS
+  url: https://bioconductor.org/packages/3.14/bioc/html/ALPS.html
 pre_build: vcs_update
