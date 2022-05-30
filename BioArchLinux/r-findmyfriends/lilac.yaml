@@ -20,6 +20,7 @@ repo_depends:
 - r-reshape2
 - r-s4vectors
 update_on:
-- regex: FindMyFriends_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/FindMyFriends
+  url: https://bioconductor.org/packages/3.14/bioc/html/FindMyFriends.html
+pre_build: vcs_update
