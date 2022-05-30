@@ -4,7 +4,7 @@ _pkgname=tractor.base
 _pkgver=3.3.3.1
 pkgname=r-${_pkgname,,}
 pkgver=3.3.3.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Read, Manipulate and Visualise Magnetic Resonance Images'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
