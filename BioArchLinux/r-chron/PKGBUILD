@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=chron
-_pkgver=2.3-56
+_pkgver=2.3-57
 pkgname=r-${_pkgname,,}
-pkgver=2.3.56
-pkgrel=2
+pkgver=2.3.57
+pkgrel=1
 pkgdesc='Chronological Objects which can Handle Dates and Times'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('863ecbb951a3da994761ea9062fa96d34e94e19fbc4122521ac179274dfa3f5d')
+sha256sums=('9645d86a84d1afc12a0accf4f826fdd40e6d050a313424ad70f8085e8f19c232')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
