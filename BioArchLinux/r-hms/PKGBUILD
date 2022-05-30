@@ -4,7 +4,7 @@ _pkgname=hms
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=1.1.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Pretty Time of Day'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
