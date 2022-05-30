@@ -14,5 +14,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.riken.jp/packages/3.14/bioc/html/gramm4R.html
+  url: https://bioconductor.org/packages/3.14/bioc/html/gramm4R.html
 pre_build: vcs_update
