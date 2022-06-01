@@ -1,0 +1,7 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: git@malacology.net
+update_on:
+  - source: cmd
+    cmd: curl -sS http://www.atgc-montpellier.fr/download/sources/bionj/BIONJ.c | grep 'Copyright' | awk '{print$3}'
