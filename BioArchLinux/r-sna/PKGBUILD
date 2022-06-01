@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sna
-_pkgver=2.6
+_pkgver=2.7
 pkgname=r-${_pkgname,,}
-pkgver=2.6
-pkgrel=4
+pkgver=2.7
+pkgrel=1
 pkgdesc='Tools for Social Network Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-sparsem
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3a016550d9f424a0613c3f5b0b680dbd3a1f20a343173d39a96034340ad9202a')
+sha256sums=('440fa4347c7b437e93c73127d34894068afd240d3128898474a7201e740a434d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
