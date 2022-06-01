@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=matlab
-_pkgver=1.0.2
+_pkgver=1.0.4
 pkgname=r-${_pkgname,,}
-pkgver=1.0.2
-pkgrel=2
+pkgver=1.0.4
+pkgrel=1
 pkgdesc='MATLAB emulation package'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a23dec736c51ae1864c1a53caac556a2f98e8020138a3b121badb0f5b7984154')
+sha256sums=('1988a2220703444a575f2bad4eb090a0da71478599eb53081dd7237b7ec216ea')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
