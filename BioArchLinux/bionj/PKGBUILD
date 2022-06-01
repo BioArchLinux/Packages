@@ -1,7 +1,7 @@
 # guoyi
 pkgname=bionj
 pkgver=1997
-pkgrel=1
+pkgrel=2
 pkgdesc="an improved version of the NJ algorithm based on a simple model of sequence data"
 arch=('x86_64')
 url="http://www.atgc-montpellier.fr/bionj/"
