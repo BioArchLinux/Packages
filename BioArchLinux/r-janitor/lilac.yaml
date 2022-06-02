@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-dplyr
+  - r-lifecycle
+  - r-lubridate
+  - r-magrittr
+  - r-purrr
+  - r-rlang
+  - r-snakecase
+  - r-stringi
+  - r-stringr
+  - r-tidyr
+  - r-tidyselect
+update_on:
+  - regex: janitor_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=janitor

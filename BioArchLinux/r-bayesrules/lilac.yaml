@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-dplyr
+  - r-e1071
+  - r-ggplot2
+  - r-groupdata2
+  - r-janitor
+  - r-magrittr
+  - r-purrr
+  - r-rstanarm
+update_on:
+  - regex: bayesrules_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=bayesrules

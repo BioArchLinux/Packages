@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bh
+  - r-cpp11
+  - r-later
+  - r-systemfonts
+  - libpng
+  - cairo
+  - freetype2
+  - fontconfig
+update_on:
+  - regex: httpgd_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=httpgd
+  - alias: cairo
