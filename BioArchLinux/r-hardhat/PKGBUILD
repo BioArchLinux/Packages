@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=hardhat
-_pkgver=0.2.0
+_pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=0.2.0
-pkgrel=3
+pkgver=1.0.0
+pkgrel=1
 pkgdesc='Construct Modeling Packages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -30,7 +30,7 @@ optdepends=(
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9497ca0fe6206c54d1da79f248d44c5faffc7d375b630091ef45dfca46c29628')
+sha256sums=('2740dc243a440e7d32370a78f9258255faea6d900075901cf6009c651769e7bd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
