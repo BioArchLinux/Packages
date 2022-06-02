@@ -3,7 +3,7 @@
 _pkgname=RInside
 _pkgver=0.2.17
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.17
 pkgrel=1
 pkgdesc='C++ Classes to Embed R in C++ (and C) Applications'
 arch=('x86_64')
