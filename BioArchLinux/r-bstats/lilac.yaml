@@ -6,7 +6,8 @@ repo_depends:
 - r-hypergeo 
 - r-purrr
 - r-suppdists 
-
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
 update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
