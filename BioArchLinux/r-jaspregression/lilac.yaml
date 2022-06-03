@@ -1,0 +1,30 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-bas
+  - r-boot
+  - r-bstats
+  - r-emmeans
+  - r-ggplot2
+  - r-ggrepel
+  - r-hmeasure
+  - r-jaspanova
+  - r-jaspbase
+  - r-jaspdescriptives
+  - r-jaspgraphs
+  - r-jaspttests
+  - r-lmtest
+  - r-matrixstats
+  - r-mdscore
+  - r-ppcor
+  - r-purrr
+  - r-rcpp
+  - r-statmod
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'Version:\s*([\d._-]+)'
+    source: regex
+    url: https://raw.githubusercontent.com/jasp-stats/jaspRegression/master/DESCRIPTION

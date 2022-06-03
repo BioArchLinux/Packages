@@ -1,0 +1,15 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-jaspbase
+  - r-jaspgraphs
+  - r-jaspdescriptives
+  - r-jaspmetaanalysis
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'Version:\s*([\d._-]+)'
+    source: regex
+    url: https://raw.githubusercontent.com/jasp-stats/jaspCochrane/master/DESCRIPTION

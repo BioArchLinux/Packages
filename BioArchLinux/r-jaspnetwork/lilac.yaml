@@ -1,0 +1,26 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-bootnet
+  - r-corpcor
+  - r-dplyr
+  - r-foreach
+  - r-ggplot2
+  - r-gtools
+  - r-huge
+  - r-isingsampler
+  - r-jaspbase
+  - r-jaspgraphs
+  - r-mvtnorm
+  - r-qgraph
+  - r-reshape2
+  - r-snow
+  - r-stringr
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'Version:\s*([\d._-]+)'
+    source: regex
+    url: https://raw.githubusercontent.com/jasp-stats/jaspNetwork/master/DESCRIPTION

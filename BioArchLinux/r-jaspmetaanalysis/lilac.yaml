@@ -1,0 +1,29 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-dplyr
+  - r-ggplot2
+  - r-jaspbase
+  - r-jaspgraphs
+  - r-mass
+  - r-metabma
+  - r-metafor
+  - r-psych
+  - r-purrr
+  - r-rstan
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-weightr
+  - r-bayestools
+  - r-robma
+  - r-metamisc
+  - r-ggmcmc
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'Version:\s*([\d._-]+)'
+    source: regex
+    url: https://raw.githubusercontent.com/jasp-stats/jaspMetaAnalysis/master/DESCRIPTION
