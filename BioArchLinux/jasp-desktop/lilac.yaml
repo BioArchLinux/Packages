@@ -1,0 +1,40 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - "r-rinside"
+  - "r-jaspbase"
+  - "r-jaspgraphs"
+  - "r-jaspresults"
+  - "r-jasptools"
+  - "r-jaspdescriptives"
+  - "r-jaspttests"
+  - "r-jaspanova"
+  - "r-jaspmixedmodels"
+  - "r-jaspregression"
+  - "r-jaspfrequencies"
+  - "r-jaspfactor"
+  - "r-jaspaudit"
+  - "r-jaspbain"
+  - "r-jaspcircular"
+  - "r-jaspcochrane"
+  - "r-jaspdistributions"
+  - "r-jaspequivalencettests"
+  - "r-jaspjags"
+  - "r-jasplearnbayes"
+  - "r-jaspmachinelearning"
+  - "r-jaspmetaanalysis"
+  - "r-jaspnetwork"
+  - "r-jaspprocesscontrol"
+  - "r-jaspreliability"
+  - "r-jaspsem"
+  - "r-jaspsummarystatistics"
+  - "r-jaspvisualmodeling"
+  - "r-jaspprophet"
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - source: github
+    github: jasp-stats/jasp-desktop
+    use_latest_release: true

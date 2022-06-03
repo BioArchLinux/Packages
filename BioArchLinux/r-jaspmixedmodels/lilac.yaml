@@ -1,0 +1,23 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-afex 
+  - r-emmeans 
+  - r-ggplot2
+  - r-ggpol
+  - r-jaspbase
+  - r-jaspgraphs
+  - r-lme4
+  - r-loo
+  - r-mgcv
+  - r-rstan
+  - r-rstanarm
+  - r-stanova
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'Version:\s*([\d._-]+)'
+    source: regex
+    url: https://raw.githubusercontent.com/jasp-stats/jaspMixedModels/master/DESCRIPTION

@@ -1,0 +1,27 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-cowplot
+  - r-tibble
+  - r-withr
+  - r-dplyr
+  - r-magrittr
+  - r-forcats
+  - r-purrr
+  - r-plyr
+  - r-r6
+  - r-ggplot2
+  - r-patchwork
+  - r-ggsci
+  - r-lme4
+  - r-party
+  - r-rlang
+  - r-jmvcore
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'Version:\s*([\d._-]+)'
+    source: regex
+    url: https://raw.githubusercontent.com/dustinfife/flexplot/master/DESCRIPTION
