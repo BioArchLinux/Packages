@@ -4,7 +4,7 @@
 _pkgname=Boom
 _pkgver=0.9.10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.10
 pkgrel=1
 pkgdesc='Bayesian Object Oriented Modeling'
 arch=('x86_64')
