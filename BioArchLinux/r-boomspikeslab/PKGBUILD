@@ -3,7 +3,7 @@
 _pkgname=BoomSpikeSlab
 _pkgver=1.2.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.5
 pkgrel=1
 pkgdesc='MCMC for Spike and Slab Regression'
 arch=('x86_64')
