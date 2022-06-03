@@ -6,10 +6,6 @@ repo_depends:
   - r-cpp11
   - r-later
   - r-systemfonts
-  - libpng
-  - cairo
-  - freetype2
-  - fontconfig
 update_on:
   - regex: httpgd_([\d._-]+).tar.gz
     source: regex
