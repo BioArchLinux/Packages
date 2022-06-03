@@ -3,7 +3,7 @@
 _pkgname=bsts
 _pkgver=0.9.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.9.8
 pkgrel=1
 pkgdesc='Bayesian Structural Time Series'
 arch=('x86_64')
