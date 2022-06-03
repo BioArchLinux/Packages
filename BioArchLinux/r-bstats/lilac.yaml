@@ -8,6 +8,6 @@ repo_depends:
 - r-suppdists 
 
 update_on:
-  - regex: "Version:\s*([\d._-]+)"
+  - regex: 'Version:\s*([\d._-]+)'
     source: regex
     url: https://raw.githubusercontent.com/AlexanderLyNL/bstats/master/DESCRIPTION
