@@ -22,8 +22,12 @@ build() {
   cd $srcdir/build
   cmake "$srcdir/$_pkgname-$pkgver" \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DUSE_VTK=ON
+       -DCMAKE_INSTALL_PREFIX=/usr \
+      -DCMAKE_INSTALL_LIBDIR=lib \
+      -DBUILD_SHARED_LIBS=ON \
+      -DENABLE_TESTING=OFF \
+      -DUSE_VTK=OFF \
+      "${srcdir}/${_pkgname}-$pkgver"
   make
 }
 
