@@ -2,8 +2,8 @@
 _pkgname=jaspTTests
 _pkgver=0.15.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=0.15.0
+pkgrel=1
 pkgdesc="T-Tests Module for JASP"
 arch=('x86_64')
 url="https://github.com/jasp-stats/${_pkgname}"
