@@ -3,10 +3,10 @@ _pkgname=jaspBain
 _pkgver=0.16.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Bain Module for JASP"
 arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://github.com/jasp-stats/${_pkgname}"
 license=('GPL3')
 depends=(r
   r-bain

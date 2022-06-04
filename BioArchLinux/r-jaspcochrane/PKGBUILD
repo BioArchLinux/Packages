@@ -3,10 +3,10 @@ _pkgname=jaspCochrane
 _pkgver=0.15.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Cochrane Module for JASP"
 arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://github.com/jasp-stats/${_pkgname}"
 license=('GPL')
 depends=(r
   r-jaspbase
