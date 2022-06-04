@@ -2,8 +2,8 @@
 _pkgname=jaspAnova
 _pkgver=0.15
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=0.15
+pkgrel=1
 pkgdesc="ANOVA Module for JASP"
 arch=('x86_64')
 url="https://github.com/jasp-stats/${_pkgname}"
