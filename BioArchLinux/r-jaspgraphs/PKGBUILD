@@ -2,8 +2,8 @@
 _pkgname=jaspGraphs
 _pkgver=0.5.2.13
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=0.5.2.13
+pkgrel=1
 pkgdesc="Custom Graphs for JASP"
 arch=('x86_64')
 url="https://github.com/jasp-stats/${_pkgname}"
