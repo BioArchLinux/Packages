@@ -2,8 +2,8 @@
 _pkgname=jaspBain
 _pkgver=0.16.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=0.16.1
+pkgrel=1
 pkgdesc="Bain Module for JASP"
 arch=('x86_64')
 url="https://github.com/jasp-stats/${_pkgname}"
