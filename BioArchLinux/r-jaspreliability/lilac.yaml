@@ -10,7 +10,6 @@ repo_depends:
   - r-jaspbase
   - r-jaspgraphs
   - r-laplacesdemon
-  - r-mass
   - r-psych
   - r-lme4
   - r-irr

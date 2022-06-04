@@ -5,7 +5,6 @@ build_prefix: extra-x86_64
 repo_depends:
   - r-afex
   - r-bayesfactor
-  - r-boot
   - r-car
   - r-colorspace
   - r-emmeans
@@ -14,7 +13,6 @@ repo_depends:
   - r-jaspdescriptives
   - r-jaspgraphs
   - r-jaspttests
-  - r-kernsmooth
   - r-matrixstats
   - r-multcomp
   - r-onewaytests

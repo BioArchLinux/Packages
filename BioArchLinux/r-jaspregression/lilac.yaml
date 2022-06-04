@@ -4,7 +4,6 @@ maintainers:
 build_prefix: extra-x86_64
 repo_depends:
   - r-bas
-  - r-boot
   - r-bstats
   - r-emmeans
   - r-ggplot2

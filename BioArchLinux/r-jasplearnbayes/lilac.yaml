@@ -14,8 +14,6 @@ repo_depends:
   - r-ggalluvial
   - r-ragg
   - r-ggdist
-  - r-grid
-  - r-grdevices
   - r-png
 pre_build: vcs_update
 post_build: git_pkgbuild_commit

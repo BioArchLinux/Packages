@@ -11,7 +11,6 @@ repo_depends:
   - r-jaspgraphs
   - r-lme4
   - r-loo
-  - r-mgcv
   - r-rstan
   - r-rstanarm
   - r-stanova
