@@ -14,7 +14,7 @@ depends=(r
     r-rstan
     r-emmeans
 )
-makedepends=()
+makedepends=(git)
 optdepends=(
     r-testthat 
     r-rstanarm

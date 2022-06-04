@@ -12,7 +12,7 @@ depends=(r
 'r-rcpp'
 )
 groups=(r-jasp r-jaspbase)
-makedepends=()
+makedepends=('git')
 optdepends=('r-jaspgraphs')
 source=("git+https://github.com/jasp-stats/${_pkgname}.git"
 "jaspColumnEncoder::git+https://github.com/jasp-stats/jaspColumnEncoder.git"

@@ -14,7 +14,7 @@ depends=(r
   r-jaspgraphs
 )
 groups=(r-jasp r-jaspextra)
-makedepends=()
+makedepends=('git')
 optdepends=()
 source=("git+https://github.com/jasp-stats/${_pkgname}.git")
 sha256sums=('SKIP')

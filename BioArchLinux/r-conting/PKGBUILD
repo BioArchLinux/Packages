@@ -14,7 +14,7 @@ depends=(r
  	r-tseries
  	r-coda
 )
-makedepends=()
+makedepends=('git')
 optdepends=()
 source=("git+https://github.com/vandenman/${_pkgname}.git")
 sha256sums=('SKIP')

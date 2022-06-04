@@ -13,7 +13,7 @@ depends=(r
     r-purrr
     r-suppdists 
 )
-makedepends=()
+makedepends=(git)
 optdepends=()
 source=("git+https://github.com/AlexanderLyNL/${_pkgname}.git")
 sha256sums=('SKIP')

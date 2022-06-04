@@ -24,7 +24,7 @@ depends=(r
 'r-vdiffr'
 )
 groups=(r-jasp jaspbase)
-makedepends=()
+makedepends=('git')
 optdepends=()
 source=("git+https://github.com/jasp-stats/${_pkgname}.git")
 sha256sums=('SKIP')

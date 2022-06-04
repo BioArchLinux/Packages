@@ -19,7 +19,7 @@ depends=(r
 'r-rcolorbrewer'
 )
 groups=(r-jasp r-jaspbase)
-makedepends=()
+makedepends=('git')
 optdepends=('r-testthat')
 source=("git+https://github.com/jasp-stats/${_pkgname}.git")
 sha256sums=('SKIP')

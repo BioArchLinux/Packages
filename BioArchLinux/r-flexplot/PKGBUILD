@@ -25,7 +25,7 @@ depends=(r
 	r-party
 	r-rlang
 )
-makedepends=(r-jmvcore)
+makedepends=(r-jmvcore git)
 optdepends=(
   	r-jmvcore
 	r-vdiffr

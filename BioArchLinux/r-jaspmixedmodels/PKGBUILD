@@ -23,7 +23,7 @@ depends=(r
   r-stanova
 )
 groups=(r-jasp r-jaspcommon)
-makedepends=()
+makedepends=('git')
 optdepends=()
 source=("git+https://github.com/jasp-stats/${_pkgname}.git")
 sha256sums=('SKIP')
