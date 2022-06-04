@@ -2,8 +2,8 @@
 _pkgname=jaspResults
 _pkgver=1.16
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=1.16
+pkgrel=1
 pkgdesc="Easy results for your JASP analysis"
 arch=('x86_64')
 url="https://github.com/jasp-stats/${_pkgname}"
