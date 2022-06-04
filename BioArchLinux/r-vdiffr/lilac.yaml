@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-cpp11
+  - r-diffobj
+  - r-glue
+  - r-htmltools
+  - r-lifecycle
+  - r-rlang
+  - r-testthat
+  - r-xml2
+update_on:
+  - regex: vdiffr_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=vdiffr
