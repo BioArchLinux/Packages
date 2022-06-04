@@ -2,8 +2,8 @@
 _pkgname=bstats
 _pkgver=0.0.0.9002
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=0.0.0.9002
+pkgrel=1
 pkgdesc="Bayesian statistics"
 arch=('x86_64')
 url="https://github.com/AlexanderLyNL/${_pkgname}"
