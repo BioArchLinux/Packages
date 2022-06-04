@@ -24,7 +24,6 @@ repo_depends:
   - r-partykit
   - r-plyr
   - r-randomforest
-  - r-rpart
   - r-rocr
   - r-rtsne
   - r-signal
