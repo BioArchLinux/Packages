@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-car
+  - r-gmodels
+  - r-xtable
+update_on:
+  - regex: papeR_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=papeR
