@@ -4,7 +4,7 @@ _pkgname=JADE
 _pkgver=2.0-3
 pkgname=r-${_pkgname,,}
 pkgver=2.0.3
-pkgrel=3
+pkgrel=4
 pkgdesc='Blind Source Separation Methods Based on Joint Diagonalization and Some BSS Performance Criteria'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
