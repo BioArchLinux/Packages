@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=dbplyr
-_pkgver=2.1.1
+_pkgver=2.2.0
 pkgname=r-${_pkgname,,}
-pkgver=2.1.1
-pkgrel=5
+pkgver=2.2.0
+pkgrel=1
 pkgdesc="A 'dplyr' Back End for Databases"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -43,7 +43,7 @@ optdepends=(
   r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('aba4cf47b85ab240fd3ec4cd8d512f6e1958201e151577c1a2ebc3d6ebc5bc08')
+sha256sums=('4a6e092c9349f8b3030c752f8c6cc551637d6fbca3c84be0da89968f1e9adce1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
