@@ -4,7 +4,7 @@ _pkgname=dockerfiler
 _pkgver=0.1.4
 pkgname=r-${_pkgname,,}
 pkgver=0.1.4
-pkgrel=2
+pkgrel=3
 pkgdesc='Easy Dockerfile Creation from R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
