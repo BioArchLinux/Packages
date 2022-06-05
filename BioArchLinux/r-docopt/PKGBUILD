@@ -4,7 +4,7 @@ _pkgname=docopt
 _pkgver=0.7.1
 pkgname=r-${_pkgname,,}
 pkgver=0.7.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Command-Line Interface Specification Language'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
