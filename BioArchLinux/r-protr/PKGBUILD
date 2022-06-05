@@ -5,7 +5,7 @@ _pkgname=protr
 _pkgver=1.6-2
 pkgname=r-${_pkgname,,}
 pkgver=1.6.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Generating Various Numerical Representation Schemes for Protein Sequences'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
