@@ -4,7 +4,7 @@
 _pkgname=BayesFM
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.5
 pkgrel=1
 pkgdesc='Bayesian Inference for Factor Modeling'
 arch=('x86_64')
