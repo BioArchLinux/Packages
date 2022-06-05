@@ -5,7 +5,7 @@ _pkgname=tcltk2
 _pkgver=1.2-11
 pkgname=r-${_pkgname,,}
 pkgver=1.2.11
-pkgrel=2
+pkgrel=3
 pkgdesc='Tcl/Tk Additions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
