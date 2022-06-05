@@ -4,7 +4,7 @@ _pkgname=BiasedUrn
 _pkgver=1.07
 pkgname=r-${_pkgname,,}
 pkgver=1.07
-pkgrel=3
+pkgrel=4
 pkgdesc='Biased Urn Model Distributions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
