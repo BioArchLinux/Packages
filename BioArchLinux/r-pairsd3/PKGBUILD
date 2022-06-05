@@ -4,7 +4,7 @@ _pkgname=pairsD3
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
 pkgver=0.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc='D3 Scatterplot Matrices'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

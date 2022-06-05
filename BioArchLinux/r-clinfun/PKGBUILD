@@ -4,7 +4,7 @@ _pkgname=clinfun
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Clinical Trial Design and Data Analysis Functions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

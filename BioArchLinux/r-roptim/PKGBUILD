@@ -5,7 +5,7 @@ _pkgname=roptim
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5
-pkgrel=2
+pkgrel=3
 pkgdesc='General Purpose Optimization in R using C++'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

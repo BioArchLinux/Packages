@@ -5,7 +5,7 @@ _pkgname=tm
 _pkgver=0.7-8
 pkgname=r-${_pkgname,,}
 pkgver=0.7.8
-pkgrel=2
+pkgrel=3
 pkgdesc='Text Mining Package'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

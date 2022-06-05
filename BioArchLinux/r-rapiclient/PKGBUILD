@@ -4,7 +4,7 @@ _pkgname=rapiclient
 _pkgver=0.1.3
 pkgname=r-${_pkgname,,}
 pkgver=0.1.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Dynamic OpenAPI/Swagger Client'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

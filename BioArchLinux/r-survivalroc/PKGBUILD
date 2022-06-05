@@ -4,7 +4,7 @@ _pkgname=survivalROC
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=1.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Time-dependent ROC curve estimation from censored survival data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

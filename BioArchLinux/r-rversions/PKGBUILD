@@ -4,7 +4,7 @@ _pkgname=rversions
 _pkgver=2.1.1
 pkgname=r-${_pkgname,,}
 pkgver=2.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Query 'R' Versions, Including 'r-release' and 'r-oldrel'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

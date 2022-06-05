@@ -4,7 +4,7 @@ _pkgname=agricolae
 _pkgver=1.3-5
 pkgname=r-${_pkgname,,}
 pkgver=1.3.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Statistical Procedures for Agricultural Research'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

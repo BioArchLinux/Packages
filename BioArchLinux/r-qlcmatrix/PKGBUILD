@@ -4,7 +4,7 @@ _pkgname=qlcMatrix
 _pkgver=0.9.7
 pkgname=r-${_pkgname,,}
 pkgver=0.9.7
-pkgrel=2
+pkgrel=3
 pkgdesc='Utility Sparse Matrix Functions for Quantitative Language Comparison'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

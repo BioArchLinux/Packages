@@ -4,7 +4,7 @@ _pkgname=bit
 _pkgver=4.0.4
 pkgname=r-${_pkgname,,}
 pkgver=4.0.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Classes and Methods for Fast Memory-Efficient Boolean Selections'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

@@ -4,7 +4,7 @@ _pkgname=snowfall
 _pkgver=1.84-6.1
 pkgname=r-${_pkgname,,}
 pkgver=1.84.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Easier cluster computing (based on snow).'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

@@ -4,7 +4,7 @@ _pkgname=svUnit
 _pkgver=1.0.6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=2
+pkgrel=3
 pkgdesc="'SciViews' - Unit, Integration and System Testing"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

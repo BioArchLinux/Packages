@@ -5,7 +5,7 @@ _pkgname=Rfast
 _pkgver=2.0.6
 pkgname=r-${_pkgname,,}
 pkgver=2.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc='A Collection of Efficient and Extremely Fast R Functions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

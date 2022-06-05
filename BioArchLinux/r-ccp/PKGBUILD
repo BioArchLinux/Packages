@@ -4,7 +4,7 @@ _pkgname=CCP
 _pkgver=1.2
 pkgname=r-${_pkgname,,}
 pkgver=1.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Significance Tests for Canonical Correlation Analysis (CCA)'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
