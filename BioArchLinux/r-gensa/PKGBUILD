@@ -4,7 +4,7 @@ _pkgname=GenSA
 _pkgver=1.1.7
 pkgname=r-${_pkgname,,}
 pkgver=1.1.7
-pkgrel=3
+pkgrel=4
 pkgdesc='Generalized Simulated Annealing'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
