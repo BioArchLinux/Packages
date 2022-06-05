@@ -4,7 +4,7 @@ _pkgname=timeSeries
 _pkgver=3062.100
 pkgname=r-${_pkgname,,}
 pkgver=3062.100
-pkgrel=3
+pkgrel=4
 pkgdesc='Financial Time Series Objects (Rmetrics)'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
