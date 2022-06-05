@@ -4,7 +4,7 @@ _pkgname=maptree
 _pkgver=1.4-8
 pkgname=r-${_pkgname,,}
 pkgver=1.4.8
-pkgrel=2
+pkgrel=3
 pkgdesc='Mapping, pruning, and graphing tree models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
