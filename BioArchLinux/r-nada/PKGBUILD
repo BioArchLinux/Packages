@@ -4,7 +4,7 @@ _pkgname=NADA
 _pkgver=1.6-1.1
 pkgname=r-${_pkgname,,}
 pkgver=1.6.1.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Nondetects and Data Analysis for Environmental Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
