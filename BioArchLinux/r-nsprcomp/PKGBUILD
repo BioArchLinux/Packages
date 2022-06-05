@@ -4,7 +4,7 @@ _pkgname=nsprcomp
 _pkgver=0.5.1-2
 pkgname=r-${_pkgname,,}
 pkgver=0.5.1.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Non-Negative and Sparse PCA'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
