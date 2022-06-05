@@ -5,7 +5,7 @@ _pkgname=strawr
 _pkgver=0.0.9
 pkgname=r-${_pkgname,,}
 pkgver=0.0.9
-pkgrel=3
+pkgrel=4
 pkgdesc='Fast Implementation of Reading/Dump for .hic Files'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
