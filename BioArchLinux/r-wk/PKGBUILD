@@ -5,7 +5,7 @@ _pkgname=wk
 _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
 pkgver=0.6.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Lightweight Well-Known Geometry Parsing'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
