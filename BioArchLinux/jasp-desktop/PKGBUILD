@@ -3,8 +3,8 @@
 _pkgname=jasp
 _pkgver=0.16.2
 pkgname=jasp-desktop
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=0.16.2
+pkgrel=1
 pkgdesc="A complete statistical package for both Bayesian and Frequentist statistical methods"
 arch=('x86_64')
 url="https://github.com/jasp-stats/jasp-desktop"
@@ -75,8 +75,7 @@ sha256sums=('6f62db1b2b0741c894a7937f413799887e0d443f25f1b85d59e914847b14fff1'
             '3e359651595e76790ea287b57cfd629279f027a9934a36b95b2825c2ba3bf43d'
             'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
             'SKIP'
-            'SKIP'
-            )
+            'SKIP')
 
 prepare(){
     cd $srcdir/${pkgname}-${pkgver}
