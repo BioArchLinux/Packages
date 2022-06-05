@@ -3,7 +3,7 @@
 _pkgname=TSA
 _pkgver=1.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.3
 pkgrel=1
 pkgdesc='Time Series Analysis'
 arch=('any')
