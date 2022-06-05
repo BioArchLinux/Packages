@@ -5,7 +5,7 @@ _pkgname=readbitmap
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5
-pkgrel=3
+pkgrel=4
 pkgdesc='Simple Unified Interface to Read Bitmap Images (BMP,JPEG,PNG,TIFF)'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
