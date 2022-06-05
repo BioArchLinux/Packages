@@ -4,7 +4,7 @@ _pkgname=GWASExactHW
 _pkgver=1.01
 pkgname=r-${_pkgname,,}
 pkgver=1.01
-pkgrel=3
+pkgrel=4
 pkgdesc='Exact Hardy-Weinburg testing for Genome Wide Association Studies'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
