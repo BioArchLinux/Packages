@@ -4,7 +4,7 @@ _pkgname=OrgMassSpecR
 _pkgver=0.5-3
 pkgname=r-${_pkgname,,}
 pkgver=0.5.3
-pkgrel=3
+pkgrel=4
 pkgdesc='Organic Mass Spectrometry'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
