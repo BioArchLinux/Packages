@@ -19,6 +19,7 @@ makedepends=("cmake" 'boost' 'jsoncpp'
 'gcc-fortran'
 'qtcreator'
 'git'
+'patchelf'
 )
 depends=('r'
 'qt6-5compat'
