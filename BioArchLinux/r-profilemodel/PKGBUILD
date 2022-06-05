@@ -4,7 +4,7 @@ _pkgname=profileModel
 _pkgver=0.6.1
 pkgname=r-${_pkgname,,}
 pkgver=0.6.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Profiling Inference Functions for Various Model Classes'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
