@@ -17,6 +17,7 @@ repo_depends:
   - "r-jaspfactor"
   - "r-jaspaudit"
   - "r-jaspbain"
+  - "r-jaspbsts"
   - "r-jaspcircular"
   - "r-jaspcochrane"
   - "r-jaspdistributions"
