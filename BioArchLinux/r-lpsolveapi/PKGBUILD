@@ -4,7 +4,7 @@ _pkgname=lpSolveAPI
 _pkgver=5.5.2.0-17.7
 pkgname=r-${_pkgname,,}
 pkgver=5.5.2.0.17.7
-pkgrel=3
+pkgrel=4
 pkgdesc="R Interface to 'lp_solve' Version 5.5.2.0"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
