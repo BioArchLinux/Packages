@@ -5,25 +5,24 @@ _pkgname=rJava
 _pkgver=1.0-6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=7
+pkgrel=8
 pkgdesc='Low-Level R to Java Interface'
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(LGPL)
 depends=(
   r
-  jdk-openjdk
+  jdk17-openjdk
 )
 makedepends=(
   make
-clang
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('e290d0493317a5d6c452793e92baa914e37ef03faef19b2e436329b4ec8658c6')
 
 build() {
-  export CXX="clang++"
-  export CC="clang"
+#  export CXX="clang++"
+#  export CC="clang"
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
