@@ -4,7 +4,7 @@ _pkgname=sparsebn
 _pkgver=0.1.2
 pkgname=r-${_pkgname,,}
 pkgver=0.1.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Learning Sparse Bayesian Networks from High-Dimensional Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
