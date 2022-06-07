@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=clusterProfiler
-_pkgver=4.4.1
+_pkgver=4.4.2
 pkgname=r-${_pkgname,,}
-pkgver=4.4.1
+pkgver=4.4.2
 pkgrel=1
 pkgdesc='A universal enrichment tool for interpreting omics data'
 arch=('any')
@@ -35,7 +35,7 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('17d5a63e288cace55567fc05655c3c43f3d0b69eed94f740c0a4661d9f1a6f0d')
+sha256sums=('8dfb762febc2a5e6a8cd783abe1080800a554b7d182b8683c7202503da60cb1d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
