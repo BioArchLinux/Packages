@@ -15,6 +15,6 @@ repo_depends:
 - r-slam
 - r-squarem
 update_on:
-- regex: CountClust_([\d._-]+).tar.gz
+- regex: CountClust_([\d._-]+).zip
   source: regex
   url: https://bioconductor.org/packages/CountClust
