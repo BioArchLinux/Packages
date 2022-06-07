@@ -10,5 +10,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/SwimR
+  url: https://bioconductor.org/packages/3.13/bioc/html/SwimR.html
 pre_build: vcs_update

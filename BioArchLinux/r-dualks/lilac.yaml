@@ -8,4 +8,4 @@ repo_depends:
 update_on:
 - regex: dualKS_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/dualKS
+  url: https://bioconductor.org/packages/3.13/bioc/html/dualKS.html

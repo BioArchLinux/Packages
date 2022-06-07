@@ -15,4 +15,4 @@ repo_depends:
 update_on:
 - regex: slinky_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/slinky
+  url: https://bioconductor.org/packages/3.14/bioc/html/slinky.html

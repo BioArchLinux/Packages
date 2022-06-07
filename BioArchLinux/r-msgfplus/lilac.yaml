@@ -8,4 +8,4 @@ repo_depends:
 update_on:
 - regex: MSGFplus_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/MSGFplus
+  url: https://bioconductor.org/packages/3.14/bioc/html/MSGFplus.html

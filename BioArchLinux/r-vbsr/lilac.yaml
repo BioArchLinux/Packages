@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: vbsr_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=vbsr
+  url: https://cran.r-project.org/src/contrib/Archive/vbsr/

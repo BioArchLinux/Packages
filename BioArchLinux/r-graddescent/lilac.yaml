@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: gradDescent_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=gradDescent
+  url: https://cran.r-project.org/src/contrib/Archive/gradDescent/

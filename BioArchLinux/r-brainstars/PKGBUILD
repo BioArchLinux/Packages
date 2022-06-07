@@ -7,7 +7,7 @@ pkgver=1.38.0
 pkgrel=2
 pkgdesc='query gene expression data and plots from BrainStars'
 arch=('any')
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/3.12/bioc/html/${_pkgname}.html"
 license=('Artistic2.0')
 depends=(
   r

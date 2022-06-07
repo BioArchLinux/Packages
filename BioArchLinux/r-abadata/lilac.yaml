@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: ABAData_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/ABAData
+  url: https://bioconductor.org/packages/3.14/data/experiment/html/ABAData.html

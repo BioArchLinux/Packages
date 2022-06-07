@@ -9,5 +9,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/BrainStars
+  url: https://bioconductor.org/packages/3.12/bioc/html/BrainStars.html
 pre_build: vcs_update

@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: CombinePValue_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=CombinePValue
+  url: https://cran.r-project.org/src/contrib/Archive/CombinePValue/
