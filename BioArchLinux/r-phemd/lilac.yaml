@@ -26,6 +26,6 @@ repo_depends:
 - r-transport
 - r-vgam
 update_on:
-- regex: phemd_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/phemd

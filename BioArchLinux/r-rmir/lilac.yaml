@@ -7,6 +7,6 @@ repo_depends:
 - r-rmir.hs.mirna
 - r-rsvgtipsdevice
 update_on:
-- regex: RmiR_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/RmiR

@@ -9,6 +9,6 @@ repo_depends:
 - r-go.db
 - r-scisi
 update_on:
-- regex: SLGI_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/SLGI

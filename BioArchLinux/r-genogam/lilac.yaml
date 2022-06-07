@@ -22,6 +22,6 @@ repo_depends:
 - r-sparseinv
 - r-summarizedexperiment
 update_on:
-- regex: GenoGAM_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/GenoGAM

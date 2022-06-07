@@ -13,6 +13,6 @@ repo_depends:
 - r-mzr
 - r-rcurl
 update_on:
-- regex: ProteomicsAnnotationHubData_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/ProteomicsAnnotationHubData

@@ -11,6 +11,6 @@ repo_depends:
 - r-rcolorbrewer
 - r-scales
 update_on:
-- regex: Autotuner_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/Autotuner

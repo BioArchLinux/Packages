@@ -19,6 +19,6 @@ repo_depends:
 - r-tibble
 - r-tidyr
 update_on:
-- regex: perturbatr_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/perturbatr

@@ -16,6 +16,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-vsn
 update_on:
-- regex: coexnet_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/coexnet

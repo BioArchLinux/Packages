@@ -10,6 +10,6 @@ repo_depends:
 - r-gtools
 - r-rcpp
 update_on:
-- regex: ABAEnrichment_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/ABAEnrichment

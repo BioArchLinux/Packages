@@ -13,6 +13,6 @@ repo_depends:
 - r-methylkit
 - r-s4vectors
 update_on:
-- regex: MethCP_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/MethCP

@@ -17,6 +17,6 @@ repo_depends:
 - r-singlecellexperiment
 - r-summarizedexperiment
 update_on:
-- regex: CHETAH_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/CHETAH

@@ -18,6 +18,6 @@ repo_depends:
 - r-s4vectors
 - r-summarizedexperiment
 update_on:
-- regex: TSRchitect_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/TSRchitect

@@ -12,6 +12,6 @@ repo_depends:
 - r-seqminer
 - r-variantannotation
 update_on:
-- regex: XCIR_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/XCIR

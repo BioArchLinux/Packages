@@ -10,6 +10,6 @@ repo_depends:
 - r-org.sc.sgd.db
 - r-rpsixml
 update_on:
-- regex: ScISI_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/ScISI

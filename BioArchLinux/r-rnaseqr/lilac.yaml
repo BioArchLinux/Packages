@@ -27,6 +27,6 @@ repo_depends:
 - r-systempiper
 - r-systempiperdata
 update_on:
-- regex: RNASeqR_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/RNASeqR

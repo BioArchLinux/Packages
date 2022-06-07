@@ -10,6 +10,6 @@ repo_depends:
 - r-rcpparmadillo
 - r-signal
 update_on:
-- regex: tofsims_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/tofsims
