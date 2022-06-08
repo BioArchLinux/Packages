@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RmiR
-_pkgver=1.49.0
+_pkgver=1.52.0
 pkgname=r-${_pkgname,,}
-pkgver=1.49.0
-pkgrel=4
+pkgver=1.52.0
+pkgrel=1
 pkgdesc='Package to work with miRNAs and miRNA targets with R'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
