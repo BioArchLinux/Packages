@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=proxy
-_pkgver=0.4-26
+_pkgver=0.4-27
 pkgname=r-${_pkgname,,}
-pkgver=0.4.26
-pkgrel=4
+pkgver=0.4.27
+pkgrel=1
 pkgdesc='Distance and Similarity Measures'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-cba
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('676bad821343974e0297a0566c4bf0cf0ea890104906a745b87d3b5989c81a4d')
+sha256sums=('249991a4c4d70ad139e93f3a24e17f161ad1ec854951813ea192daf79478563f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
