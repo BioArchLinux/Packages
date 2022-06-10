@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=processx
-_pkgver=3.5.3
+_pkgver=3.6.0
 pkgname=r-${_pkgname,,}
-pkgver=3.5.3
-pkgrel=3
+pkgver=3.6.0
+pkgrel=1
 pkgdesc='Execute and Control System Processes'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -26,7 +26,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('679629fa56ec185d4fd52ade5b699c78a2a0e875acdf57555b31bc62111f342a')
+sha256sums=('75186769ad934fedf1ddb38ec2942ad85bd4e7862920d83245901a39e786a64f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
