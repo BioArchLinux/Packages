@@ -2,21 +2,23 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rgl
-_pkgver=0.108.3.2
+_pkgver=0.109.2
 pkgname=r-${_pkgname,,}
-pkgver=0.108.3.2
-pkgrel=3
+pkgver=0.109.2
+pkgrel=1
 pkgdesc='3D Visualization Using OpenGL'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-base64enc
   r-htmltools
   r-htmlwidgets
   r-jsonlite
   r-knitr
   r-magrittr
+  r-mime
   r-r6
   mesa
   glu
@@ -51,7 +53,7 @@ optdepends=(
   freetype2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('033af3aceade6c21d0a602958fff1c25c21febc7d0e867cf88860cfa25fc3c65')
+sha256sums=('117504ce5a22ead0b068314988804f4aeec0fb8a354c4c5f214cfe2de29d2c97')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

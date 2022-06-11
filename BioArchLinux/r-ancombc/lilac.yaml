@@ -3,10 +3,21 @@ maintainers:
 - github: starsareintherose
   email: git@malacology.net
 repo_depends:
+- r-desctools
+- r-doparallel
+- r-dorng
+- r-dplyr
+- r-energy
+- r-foreach
+- r-hmisc
+- r-magrittr
 - r-microbiome
 - r-nloptr
 - r-phyloseq
 - r-rdpack
+- r-rlang
+- r-tibble
+- r-tidyr
 update_on:
 - regex: ANCOMBC_([\d._-]+).tar.gz
   source: regex

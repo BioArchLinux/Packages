@@ -9,6 +9,7 @@ repo_depends:
 - r-bsgenome
 - r-cobs
 - r-doparallel
+- r-fgsea
 - r-foreach
 - r-genomeinfodb
 - r-genomicfeatures
@@ -31,7 +32,6 @@ repo_depends:
 - r-sgseq
 - r-speedglm
 - r-stringr
-- r-summarizedexperiment
 - r-tximport
 update_on:
 - regex: EventPointer_([\d._-]+).tar.gz

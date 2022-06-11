@@ -3,11 +3,13 @@ maintainers:
 - github: starsareintherose
   email: git@malacology.net
 repo_depends:
+- r-base64enc
 - r-htmltools
 - r-htmlwidgets
 - r-jsonlite
 - r-knitr
 - r-magrittr
+- r-mime
 - r-r6
 update_on:
 - regex: rgl_([\d._-]+).tar.gz
