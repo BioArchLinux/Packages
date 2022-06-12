@@ -34,6 +34,7 @@ source=("git+https://git.bioconductor.org/packages/${_pkgname}")
 sha256sums=('SKIP')
 
 build() {
+  rm -rf .git
   tar -zcvf ${_pkgname}_${_pkgver}.tar.gz  ${_pkgname}
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
