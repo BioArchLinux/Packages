@@ -9,6 +9,7 @@ repo_depends:
 - r-foreach
 - r-httr
 - r-tibble
+- r-stringr
 update_on:
 - regex: benchmarkme_([\d._-]+).tar.gz
   source: regex
