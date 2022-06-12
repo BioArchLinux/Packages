@@ -2,8 +2,8 @@
 
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=20220207
-pkgrel=7
+pkgver=20220609
+pkgrel=1
 pkgdesc='Tools for Arch Linux package maintainers, archlinuxcn fork'
 arch=('any')
 license=('GPL')
@@ -14,7 +14,7 @@ makedepends=('asciidoc')
 optdepends=('btrfs-progs: btrfs support')
 provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
-source=(https://gitlab.archlinux.org/archlinux/devtools/-/archive/20220207/devtools-${pkgver}.tar.gz
+source=(https://gitlab.archlinux.org/archlinux/devtools/-/archive/${pkgver}/devtools-${pkgver}.tar.gz
         "no-yes-y.patch::https://git.archlinux.org/devtools.git/patch/?id=b7893a2ca8e09062197129881bce3fd6700a573a"
         "unshare-pacstrap.patch"
         "arch-nspawn-read-CacheDir-from-host.patch")
