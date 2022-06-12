@@ -2,7 +2,8 @@
 
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=20220609
+pkgver=20200407
+_pkgver=a17c9c6a703901bff12779ab3b5bebde5194c617
 pkgrel=1
 pkgdesc='Tools for Arch Linux package maintainers, archlinuxcn fork'
 arch=('any')
@@ -14,20 +15,21 @@ makedepends=('asciidoc')
 optdepends=('btrfs-progs: btrfs support')
 provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
-source=(https://gitlab.archlinux.org/archlinux/devtools/-/archive/${pkgver}/devtools-${pkgver}.tar.gz
-        "no-yes-y.patch::https://git.archlinux.org/devtools.git/patch/?id=b7893a2ca8e09062197129881bce3fd6700a573a"
+#source=(https://gitlab.archlinux.org/archlinux/devtools/-/archive/${pkgver}/devtools-${pkgver}.tar.gz
+source=("${_pkgname}-${pkgver}.tar.gz::https://sources.archlinux.org/other/${_pkgname}/${_pkgname}-${pkgver}.tar.gz"
+        "no-yes-y.patch"
         "unshare-pacstrap.patch"
         "arch-nspawn-read-CacheDir-from-host.patch")
-b2sums=('334c434868f3769765b8e05cde1b825433322725247d6cb1509993cca980a2f02a55c763b0e4d6bd53988bb4630d86785ccbe636b842e7103c93a43d1036e36f'
+b2sums=('01ff4d17a9502df468d545e273e94ab7d7b6817efa6d7f2fe661b4a978a5051a03a8a04ea1e82902b30988413f32f65afdf49a234d82ab05fa510ffc52f62e02'
         '2da933aa8a0bce8acab22fcbdf857462a28bb313e4554b73cf4cb02dafb40ad124b71e5666cd88257dee8a1721a57e6659581026ab2ff21aa2c257df2397db0c'
         'ad659b04b7b7a9111ceace6629e971ef775e73a2b68a82dc13d3dd5b732f3e7a056b3328fab54fa6b16e520212e4b5a6d5d27e1b0b87d10495c89a17ff130fc5'
-        'a')
+        '329b341619ae13d0a29a0d32e012036901cd9b9371b2f9ead5b5f22633b85bc78ae70088d566536e93f77275e8b05a6fce1caa076e721a066d3f4ac502daa983')
 
 prepare() {
-  cd ${_pkgname}-${pkgver}
-  patch -RNp1 -i ../no-yes-y.patch
-  patch -Np1 -i ../unshare-pacstrap.patch
-  patch -Np1 -i ../arch-nspawn-read-CacheDir-from-host.patch
+  cd ${_pkgname}-${pkgver}| ls $srcdir
+  patch -RNp1 -i ${srcdir}/no-yes-y.patch
+  patch -Np1 -i ${srcdir}/unshare-pacstrap.patch
+  patch -Np1 -i ${srcdir}/arch-nspawn-read-CacheDir-from-host.patch
 
   ## silent while show errors for curl
   sed "s|bin/curl -g|bin/curl -sS -g|g" -i makepkg-x86_64.conf

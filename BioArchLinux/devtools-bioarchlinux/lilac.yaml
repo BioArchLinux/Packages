@@ -1,9 +1,10 @@
-build_prefix: extra-x86_64
+#build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: git@malacology.net
-update_on:
-  - source: gitlab
-    gitlab: archlinux/devtools
-    host: gitlab.archlinux.org
-    use_max_tag: true
+managed: false
+#supdate_on:
+#  - source: gitlab
+#    gitlab: archlinux/devtools
+#    host: gitlab.archlinux.org
+#    use_max_tag: true
