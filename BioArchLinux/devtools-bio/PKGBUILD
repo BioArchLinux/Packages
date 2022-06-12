@@ -1,5 +1,5 @@
 pkgname=devtools-bio
-pkgver=11.c773a51
+pkgver=17.a76fe65
 pkgrel=1
 pkgdesc='Tools for BioArchLinux Community package maintainers'
 arch=('any')
