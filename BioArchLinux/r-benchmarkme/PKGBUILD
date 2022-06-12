@@ -4,7 +4,7 @@ _pkgname=benchmarkme
 _pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=1.0.7
-pkgrel=4
+pkgrel=5
 pkgdesc='Crowd Sourced System Benchmarks'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,6 +17,7 @@ depends=(
   r-foreach
   r-httr
   r-tibble
+  r-stringr
 )
 optdepends=(
   r-covr
