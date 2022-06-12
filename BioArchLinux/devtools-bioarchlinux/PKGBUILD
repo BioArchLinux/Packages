@@ -16,15 +16,18 @@ provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
 source=(https://gitlab.archlinux.org/archlinux/devtools/-/archive/20220207/devtools-${pkgver}.tar.gz
         "no-yes-y.patch::https://git.archlinux.org/devtools.git/patch/?id=b7893a2ca8e09062197129881bce3fd6700a573a"
-        "unshare-pacstrap.patch")
+        "unshare-pacstrap.patch"
+        "arch-nspawn-read-CacheDir-from-host.patch")
 b2sums=('334c434868f3769765b8e05cde1b825433322725247d6cb1509993cca980a2f02a55c763b0e4d6bd53988bb4630d86785ccbe636b842e7103c93a43d1036e36f'
         '2da933aa8a0bce8acab22fcbdf857462a28bb313e4554b73cf4cb02dafb40ad124b71e5666cd88257dee8a1721a57e6659581026ab2ff21aa2c257df2397db0c'
-        'ad659b04b7b7a9111ceace6629e971ef775e73a2b68a82dc13d3dd5b732f3e7a056b3328fab54fa6b16e520212e4b5a6d5d27e1b0b87d10495c89a17ff130fc5')
+        'ad659b04b7b7a9111ceace6629e971ef775e73a2b68a82dc13d3dd5b732f3e7a056b3328fab54fa6b16e520212e4b5a6d5d27e1b0b87d10495c89a17ff130fc5'
+        'a')
 
 prepare() {
   cd ${_pkgname}-${pkgver}
   patch -RNp1 -i ../no-yes-y.patch
   patch -Np1 -i ../unshare-pacstrap.patch
+  patch -Np1 -i ../arch-nspawn-read-CacheDir-from-host.patch
 
   ## silent while show errors for curl
   sed "s|bin/curl -g|bin/curl -sS -g|g" -i makepkg-x86_64.conf
