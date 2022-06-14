@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=R.methodsS3
-_pkgver=1.8.1
+_pkgver=1.8.2
 pkgname=r-${_pkgname,,}
-pkgver=1.8.1
-pkgrel=5
+pkgver=1.8.2
+pkgrel=1
 pkgdesc='S3 Methods Simplified'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-codetools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8a98fb81bcfa78193450f855f614f6f64e6c65daf115f301d97d1f474f5e619b')
+sha256sums=('822d5e61dad4c91e8883be2b38d7b89f87492046d0fe345704eb5d2658927c2e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
