@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=car
-_pkgver=3.0-13
+_pkgver=3.1-0
 pkgname=r-${_pkgname,,}
-pkgver=3.0.13
+pkgver=3.1.0
 pkgrel=1
 pkgdesc='Companion to Applied Regression'
 arch=('any')
@@ -36,7 +36,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d35ae8da80284c9e4471ff13e7100c3cdc1809fd06f813cd223a3958e29e47eb')
+sha256sums=('bd52b4eaea46ce828fccd93445301d06ebd265e2ffff796064875a8c0f0aea21')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
