@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=symphony
-pkgver=5.6.18
-pkgrel=4
+pkgver=5.6.19
+pkgrel=1
 pkgdesc="an open-source solver, callable library, and development framework for mixed-integer linear programs (MILPs) written in C with a number of unique features"
 arch=('x86_64')
 url="https://github.com/coin-or/SYMPHONY"
@@ -10,7 +10,7 @@ depends=()
 makedepends=()
 optdepends=()
 source=("https://github.com/coin-or/SYMPHONY/releases/download/releases%2F${pkgver}/SYMPHONY-releases.${pkgver}-x86_64-ubuntu18-gcc750-static.tar.gz")
-sha256sums=('9cff80b458c768fa9773c66698669a0c3cd1891f6b24cf2d52478ee8ef0cc58c')
+sha256sums=('f1a5ad4fda16dcbc644eb85af1165be218f1535b61af5a01d9a896e7ce379355')
 package() {
   mkdir -p ${pkgdir}/usr
   cd "$srcdir"
