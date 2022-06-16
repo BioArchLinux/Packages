@@ -5,11 +5,11 @@ maintainers:
 repo_depends:
 - r-ggplot2
 - r-graph
-- r-hash
 - r-igraph
 - r-rbgl
 - r-rcurl
 - r-rgraphviz
+- r-rmarkdown
 - r-stringi
 - r-stringr
 - r-xml
