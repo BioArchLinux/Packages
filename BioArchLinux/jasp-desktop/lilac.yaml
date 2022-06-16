@@ -38,5 +38,5 @@ post_build: git_pkgbuild_commit
 update_on:
   - source: github
     github: jasp-stats/jasp-desktop
-    use_latest_release: true
+    use_max_tag: true
     prefix: 'v'
