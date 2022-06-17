@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-ape
 - r-fastmatch
+- r-generics
 - r-igraph
 - r-quadprog
 - r-rcpp
