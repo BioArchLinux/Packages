@@ -4,6 +4,7 @@ maintainers:
   email: git@malacology.net
 repo_depends:
 - r-proc
+- r-vcd
 update_on:
 - regex: reportROC_([\d._-]+).tar.gz
   source: regex
