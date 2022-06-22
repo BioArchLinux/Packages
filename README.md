@@ -25,6 +25,16 @@ $ pacman-key --finger B1F96021DB62254D
 $ pacman-key --lsign-key B1F96021DB62254D
 ```
 
+update the database
+```
+$ pacman -Syy
+```
+
+install any package
+```
+$ pacman -S foo
+```
+
 ## Details
 
 For details of [usage](https://github.com/BioArchLinux/Packages/wiki/Usage), [participation](https://github.com/BioArchLinux/Packages/wiki/Participation), [contribution](https://github.com/BioArchLinux/Packages/wiki/Contribution-to-the-repository), [maintainence contact](https://github.com/BioArchLinux/Packages/wiki/Become-maintainer) and [sponsorship](https://github.com/BioArchLinux/Packages/wiki/Sponsorship), please see our repository wiki page.
