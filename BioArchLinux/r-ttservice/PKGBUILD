@@ -11,6 +11,7 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-dplyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('1c08a25cf4ca6a563ddd5c04f96cc0c017a5ab5f4eb69a8cc423c1be615f4d73')
