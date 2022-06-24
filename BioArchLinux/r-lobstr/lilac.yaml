@@ -6,6 +6,7 @@ repo_depends:
 - r-crayon
 - r-rcpp
 - r-rlang
+- r-prettyunits
 update_on:
 - regex: lobstr_([\d._-]+).tar.gz
   source: regex
