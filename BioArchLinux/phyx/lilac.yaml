@@ -7,4 +7,4 @@ update_on:
     github: FePhyFoFum/phyx
     use_max_tag: true
 repo_depends:
-  - libarmadillo
+  - armadillo
