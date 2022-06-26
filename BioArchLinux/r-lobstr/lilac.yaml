@@ -4,7 +4,7 @@ maintainers:
   email: git@malacology.net
 repo_depends:
 - r-crayon
-- r-rcpp
+- r-cpp11
 - r-rlang
 - r-prettyunits
 update_on:

@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-multidataset
+- r-multiassayexperiment
+- r-summarizedexperiment
 update_on:
 - regex: ropls_([\d._-]+).tar.gz
   source: regex
