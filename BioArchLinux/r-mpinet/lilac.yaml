@@ -7,4 +7,4 @@ repo_depends:
 update_on:
 - regex: MPINet_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=MPINet
+  url: https://cran.r-project.org/src/contrib/Archive/MPINet/

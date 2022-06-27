@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: muStat_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=muStat
+  url: https://cran.r-project.org/src/contrib/Archive/muStat/

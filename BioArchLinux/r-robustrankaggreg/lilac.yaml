@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: RobustRankAggreg_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=RobustRankAggreg
+  url: https://cran.r-project.org/src/contrib/Archive/RobustRankAggreg/

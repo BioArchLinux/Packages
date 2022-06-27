@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: DiscriMiner_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=DiscriMiner
+  url: https://cran.r-project.org/src/contrib/Archive/DiscriMiner/

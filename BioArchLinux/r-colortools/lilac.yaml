@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: colortools_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=colortools
+  url: https://cran.r-project.org/src/contrib/Archive/colortools/

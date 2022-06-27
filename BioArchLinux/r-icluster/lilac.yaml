@@ -10,4 +10,4 @@ repo_depends:
 update_on:
 - regex: iCluster_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=iCluster
+  url: https://cran.r-project.org/src/contrib/Archive/iCluster/

@@ -7,4 +7,4 @@ repo_depends:
 update_on:
 - regex: gptk_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=gptk
+  url: https://cran.r-project.org/src/contrib/Archive/gptk/
