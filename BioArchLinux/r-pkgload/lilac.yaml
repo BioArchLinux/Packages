@@ -6,9 +6,10 @@ repo_depends:
 - r-cli
 - r-crayon
 - r-desc
+- r-fs
+- r-glue
 - r-rlang
 - r-rprojroot
-- r-rstudioapi
 - r-withr
 update_on:
 - regex: pkgload_([\d._-]+).tar.gz

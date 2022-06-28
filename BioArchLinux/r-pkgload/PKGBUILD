@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pkgload
-_pkgver=1.2.4
+_pkgver=1.3.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.4
-pkgrel=4
+pkgver=1.3.0
+pkgrel=1
 pkgdesc='Simulate Package Installation and Attach'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,16 +14,21 @@ depends=(
   r-cli
   r-crayon
   r-desc
+  r-fs
+  r-glue
   r-rlang
   r-rprojroot
-  r-rstudioapi
   r-withr
 )
 optdepends=(
   r-bitops
   r-covr
+  r-mathaxr
+  r-pak
   r-pkgbuild
   r-rcpp
+  r-remotes
+  r-rstudioapi
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
