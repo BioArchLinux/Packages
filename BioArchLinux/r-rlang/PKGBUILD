@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rlang
-_pkgver=1.0.2
+_pkgver=1.0.3
 pkgname=r-${_pkgname,,}
-pkgver=1.0.2
-pkgrel=3
+pkgver=1.0.3
+pkgrel=1
 pkgdesc="Functions for Base Types and Core R and 'Tidyverse' Features"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -28,7 +28,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8de87c3e6fb0b3cce2dabc6908186f8e1528cc0c16b54de965fe02d405fdd7cc')
+sha256sums=('04cc48b1a92dcd531c8e54288119f6dbecc7698928f7aaca840214ae815e0e3e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
