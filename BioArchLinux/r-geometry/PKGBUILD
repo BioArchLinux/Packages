@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=geometry
-_pkgver=0.4.6
+_pkgver=0.4.6.1
 pkgname=r-${_pkgname,,}
-pkgver=0.4.6
-pkgrel=5
+pkgver=0.4.6.1
+pkgrel=1
 pkgdesc='Mesh Generation and Surface Tessellation'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-tripack
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('910465a8c8043faca73bcc7c81c9249b9938677ee6649468003b438a6503f5d8')
+sha256sums=('52c87a43cdf414c08b8183441c44497039cba92a9cff719debf09ad8d5d7f472')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
