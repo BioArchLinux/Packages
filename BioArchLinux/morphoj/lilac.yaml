@@ -4,4 +4,4 @@ maintainers:
     email: git@malacology.net
 update_on:
   - source: cmd
-    cmd: curl 'https://morphometrics.uk/MorphoJ_guide/changelog.htm' | grep '<h2>Version [0-9].[0-9][0-9][a-z],' | sed -n "1p" | sed 's/,/ /g' | awk '/[0-9]+.[a-zA-Z0-9]+/{print $2}'
+    cmd: curl 'https://morphometrics.uk/MorphoJ_guide/frameset.htm?changelog.htm' | grep '<h2>Version [0-9].[0-9][0-9][a-z],' | sed -n "1p" | sed 's/,/ /g' | awk '/[0-9]+.[a-zA-Z0-9]+/{print $2}'

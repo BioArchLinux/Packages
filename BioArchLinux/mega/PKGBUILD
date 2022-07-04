@@ -3,8 +3,8 @@
 
 pkgname=mega
 _pkgname=mega
-pkgver=11.0.11
-pkgrel=2
+pkgver=11.0.13
+pkgrel=1
 pkgdesc="Molecular Evolutionary Genetics Analysis. https://doi.org/10.1093/molbev/msy096"
 arch=('x86_64')
 url="https://megasoftware.net"
@@ -22,5 +22,5 @@ package() {
 	tar -p -xf data.tar.xz -C "${pkgdir}"
 	chmod 755 -R ../pkg/${pkgname}/usr
 	cp -r ../pkg/${pkgname}/usr/local/* ../pkg/${pkgname}/usr/
-	rm -r ../pkg/${pkgname}/usr/local 
+	rm -r ../pkg/${pkgname}/usr/local
 }
