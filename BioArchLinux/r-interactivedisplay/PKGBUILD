@@ -3,7 +3,7 @@
 _pkgname=interactiveDisplay
 _pkgver=1.34.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.34.0
 pkgrel=1
 pkgdesc='Package for enabling powerful shiny web displays of Bioconductor objects'
 arch=('any')
