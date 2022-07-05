@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=latticeExtra
-_pkgver=0.6-29
+_pkgver=0.6-30
 pkgname=r-${_pkgname,,}
-pkgver=0.6.29
-pkgrel=4
+pkgver=0.6.30
+pkgrel=1
 pkgdesc='Extra Graphical Utilities Based on Lattice'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,6 +14,7 @@ depends=(
   r-jpeg
   r-png
   r-rcolorbrewer
+  r-interp
 )
 optdepends=(
   r-deldir
@@ -26,7 +27,7 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6cadc31d56f73d926e2e8d72e43ae17ac03607a4d1a374719999a4a231e3df11')
+sha256sums=('c550a76913624818482bf237d48883c58e368ba356ced8ed5e76146672279eed')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
