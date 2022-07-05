@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=interactiveDisplay
-_pkgver=1.32.0
+_pkgver=1.34.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
@@ -41,9 +41,14 @@ optdepends=(
   r-vegan
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+sha256sums=('2fcd9e6dbeb6a09bb5c5f446bfae46a6e83dd0db5c639cc66da06182c1b08e3a')
+
+prepare() {
+  echo 'options(repos = list(CRAN = "http://cran.r-project.org"))' > "${srcdir}/.Rprofile"
+}
 
 build() {
+  R_PROFILE="${srcdir}/.Rprofile" \
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
