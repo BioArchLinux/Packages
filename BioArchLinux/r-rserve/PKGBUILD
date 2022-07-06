@@ -4,7 +4,7 @@
 _pkgname=Rserve
 _pkgver=1.8-10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.8.10
 pkgrel=1
 pkgdesc='Binary R server'
 arch=('x86_64')
