@@ -1,0 +1,106 @@
+#Maintainer: sukanka <su975853527 AT gmail.com>
+_pkgname=MetaboAnalystR
+_pkgver=3.2.0
+pkgname=r-${_pkgname,,}
+pkgver=3.2.0
+pkgrel=1
+pkgdesc="An R Package for Comprehensive Analysis of Metabolomics Data"
+arch=('x86_64')
+url="https://github.com/xia-lab/MetaboAnalystR"
+license=('GPL3')
+depends=(r
+  r-biocparallel
+  r-cairo
+  r-caret
+  r-crmn
+  r-data.table
+  r-dplyr
+  r-edger
+  r-fgsea
+  r-ggplot2
+  r-glasso
+  r-gplots
+  r-igraph
+  r-impute
+  r-jsonlite
+  r-lattice
+  r-mass
+  r-msnbase
+  r-pcamethods
+  r-plotly
+  r-plyr
+  r-proc
+  r-progress
+  r-purrr
+  r-qs
+  r-rbgl
+  r-rcolorbrewer
+  r-rcpp
+  r-rlang
+  r-rserve
+  r-rsqlite
+  r-scales
+  r-siggenes
+  r-tibble
+  r-vctrs
+)
+makedepends=('git')
+optdepends=(
+r-car
+r-catools
+r-ctc
+r-devtools
+r-e1071
+r-ellipse
+r-entropy
+r-fitdistrplus
+r-gdata
+r-genefilter
+r-ggraph
+r-globalancova
+r-globaltest
+r-graph
+r-hmisc
+r-htmltools
+r-httr
+r-huge
+r-kegggraph
+r-knitr
+r-lars
+r-limma
+r-magrittr
+r-metap
+r-optilcms
+r-pheatmap
+r-pls
+r-ppcor
+r-preprocesscore
+r-randomforest
+r-rgraphviz
+r-rjson
+r-rjsonio
+r-rmarkdown
+r-rocr
+r-rsclient
+r-rsm
+r-scatterplot3d
+r-som
+r-sspa
+r-sva
+r-testthat
+r-visnetwork
+r-xtable
+)
+source=("git+https://github.com/xia-lab/MetaboAnalystR.git")
+sha256sums=('SKIP')
+
+
+build() {
+  tar -zcvf ${_pkgname}_${_pkgver}.tar.gz  ${_pkgname}
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}

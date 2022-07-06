@@ -1,0 +1,43 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+  - r-biocparallel
+  - r-cairo
+  - r-caret
+  - r-crmn
+  - r-data.table
+  - r-dplyr
+  - r-edger
+  - r-fgsea
+  - r-ggplot2
+  - r-glasso
+  - r-gplots
+  - r-igraph
+  - r-impute
+  - r-jsonlite
+  - r-msnbase
+  - r-pcamethods
+  - r-plotly
+  - r-plyr
+  - r-proc
+  - r-progress
+  - r-purrr
+  - r-qs
+  - r-rbgl
+  - r-rcolorbrewer
+  - r-rcpp
+  - r-rlang
+  - r-rserve
+  - r-rsqlite
+  - r-scales
+  - r-siggenes
+  - r-tibble
+  - r-vctrs
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - regex: 'CellMix_([\d._-]+).tar.gz'
+    source: regex
+    url: http://web.cbio.uct.ac.za/~renaud/CRAN/src/contrib/

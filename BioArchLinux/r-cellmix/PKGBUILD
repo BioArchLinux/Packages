@@ -1,0 +1,83 @@
+#Maintainer: sukanka <su975853527 AT gmail.com>
+_pkgname=CellMix
+_pkgver=1.6.2
+pkgname=r-${_pkgname,,}
+pkgver=1.6.2
+pkgrel=1
+pkgdesc="A Comprehensive Toolbox for Gene Expression Deconvolution"
+arch=('x86_64')
+url="http://web.cbio.uct.ac.za/~renaud/CRAN/web/CellMix/"
+license=('GPL')
+depends=(r
+  r-annotate
+  r-annotationdbi
+  r-beeswarm
+  r-bibtex
+  r-biobase
+  r-biocgenerics
+  r-biocmanager
+  r-corpcor
+  r-cssam
+  r-dbi
+  r-digest
+  r-genefilter
+  r-ggplot2
+  r-graph
+  r-graphics
+  r-gseabase
+  r-gtools
+  r-limsolve
+  r-matrixstats
+  r-methods
+  r-nmf
+  r-pkgmaker
+  r-plyr
+  r-preprocesscore
+  r-quadprog
+  r-registry
+  r-rsqlite
+  r-stats
+  r-stringr
+  r-xtable
+)
+optdepends=(
+  r-arrayexpress
+  r-biomart
+  r-geometadb
+  r-geoquery
+  r-hgu133a.db
+  r-hgu133b.db
+  r-hgu133plus2.db
+  r-hom.hs.inp.db
+  r-illuminahumanv2.db
+  r-knitr
+  r-lumi
+  r-rat2302.db
+  r-rcppoctave
+  r-runit
+  r-xlsx
+)
+source=("${_pkgname}_${_pkgver}.tar.gz::http://web.cbio.uct.ac.za/~renaud/CRAN/src/contrib/CellMix_${pkgver}.tar.gz"
+)
+sha256sums=('957313a8ae80a7b31d77c91d5f1fa1cd0f430447bd7ed205b098cde319b38ca3'
+            )
+
+prepare(){
+  # replace BiocInstaller with BiocManager
+  find . -type f -exec sed -i "s/BiocInstaller/BiocManager/g" {} \;
+  # fix for dims
+  sed -i '486c function(x){' ${_pkgname}/R/registry-data.R
+  sed -i '487c x$dim' ${_pkgname}/R/registry-data.R
+  tar -zcvf ${_pkgname}_${_pkgver}_1.tar.gz  ${_pkgname}
+
+}
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}_1.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
