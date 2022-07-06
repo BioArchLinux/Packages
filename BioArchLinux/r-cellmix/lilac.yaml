@@ -3,38 +3,33 @@ maintainers:
     email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-biocparallel
-  - r-cairo
-  - r-caret
-  - r-crmn
-  - r-data.table
-  - r-dplyr
-  - r-edger
-  - r-fgsea
+  - r-annotate
+  - r-annotationdbi
+  - r-beeswarm
+  - r-bibtex
+  - r-biobase
+  - r-biocgenerics
+  - r-biocmanager
+  - r-corpcor
+  - r-cssam
+  - r-dbi
+  - r-digest
+  - r-genefilter
   - r-ggplot2
-  - r-glasso
-  - r-gplots
-  - r-igraph
-  - r-impute
-  - r-jsonlite
-  - r-msnbase
-  - r-pcamethods
-  - r-plotly
+  - r-graph
+  - r-gseabase
+  - r-gtools
+  - r-limsolve
+  - r-matrixstats
+  - r-nmf
+  - r-pkgmaker
   - r-plyr
-  - r-proc
-  - r-progress
-  - r-purrr
-  - r-qs
-  - r-rbgl
-  - r-rcolorbrewer
-  - r-rcpp
-  - r-rlang
-  - r-rserve
+  - r-preprocesscore
+  - r-quadprog
+  - r-registry
   - r-rsqlite
-  - r-scales
-  - r-siggenes
-  - r-tibble
-  - r-vctrs
+  - r-stringr
+  - r-xtable
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
