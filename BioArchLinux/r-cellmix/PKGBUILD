@@ -3,7 +3,7 @@ _pkgname=CellMix
 _pkgver=1.6.2
 pkgname=r-${_pkgname,,}
 pkgver=1.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A Comprehensive Toolbox for Gene Expression Deconvolution"
 arch=('x86_64')
 url="http://web.cbio.uct.ac.za/~renaud/CRAN/web/CellMix/"
@@ -59,8 +59,7 @@ optdepends=(
 )
 source=("${_pkgname}_${_pkgver}.tar.gz::http://web.cbio.uct.ac.za/~renaud/CRAN/src/contrib/CellMix_${pkgver}.tar.gz"
 )
-sha256sums=('957313a8ae80a7b31d77c91d5f1fa1cd0f430447bd7ed205b098cde319b38ca3'
-            )
+sha256sums=('957313a8ae80a7b31d77c91d5f1fa1cd0f430447bd7ed205b098cde319b38ca3')
 
 prepare(){
   # replace BiocInstaller with BiocManager
