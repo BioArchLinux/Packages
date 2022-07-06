@@ -3,7 +3,7 @@
 _pkgname=csSAM
 _pkgver=1.2.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.4
 pkgrel=1
 pkgdesc='csSAM - cell-specific Significance Analysis of Microarrays'
 arch=('any')
