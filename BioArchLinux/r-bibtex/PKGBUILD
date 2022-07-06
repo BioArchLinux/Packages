@@ -3,7 +3,7 @@
 _pkgname=bibtex
 _pkgver=0.4.2.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.2.3
 pkgrel=1
 pkgdesc='Bibtex Parser'
 arch=('x86_64')
