@@ -4,7 +4,7 @@
 _pkgname=bspm
 _pkgver=0.3.9
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.3.9
 pkgrel=1
 pkgdesc='Bridge to System Package Manager'
 arch=('any')
