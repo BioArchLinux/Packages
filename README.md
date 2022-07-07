@@ -34,32 +34,7 @@ install any package
 ```
 # pacman -S foo
 ```
-Besides, you are suggested to install `r-bspm`,
-```
-# pacman -S r-bspm
-```
-and add the following line to your `~/.Rprofile` so that `pacman` will take over `install.packages`.
-```R
-bspm::enable()
-```
-Below is an example.
-```R
-r$> install.packages("cssam")
-[sudo] password for user:
-Install system packages as root...
-:: Synchronizing package databases...
- core
- extra
- community
- multilib
- archlinuxcn
- arch4edu
- bioarchlinux
-:: Retrieving packages...
- r-cssam-1.2.4-1-any
-:: Processing package changes...
-(1/1) r-cssam
-```
+
 ## Request a package
 If you find some package useful but not in our repository, (for example even if you used `r-bspm` it still installed a package from CRAN/Bioconductor),
 you can open an issue and tell us.
