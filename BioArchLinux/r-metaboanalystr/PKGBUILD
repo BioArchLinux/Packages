@@ -44,7 +44,7 @@ depends=(r
   r-tibble
   r-vctrs
 )
-makedepends=('git')
+makedepends=('git' 'gcc-fortran')
 optdepends=(
 r-car
 r-catools
