@@ -1,36 +1,44 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: sukanka <su975853527@gmail.com>
 
-_pkgname=dockerfiler
-_pkgver=0.2.0
+_pkgname=pak
+_pkgver=0.3.0
 pkgname=r-${_pkgname,,}
-pkgver=0.2.0
+pkgver=${_pkgver//[:-]/.}
 pkgrel=1
-pkgdesc='Easy Dockerfile Creation from R'
+pkgdesc='Another Approach to Package Installation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+license=('GPL')
 depends=(
   r
-  r-attempt
-  r-cli
-  r-desc
-  r-fs
-  r-glue
-  r-jsonlite
-  r-pak
-  r-pkgbuild
-  r-r6
-  r-remotes
-  r-renv
-  r-usethis
 )
 optdepends=(
-  r-knitr
-  r-rmarkdown
+  r-callr
+  r-cli
+  r-covr
+  r-curl
+  r-desc
+  r-digest
+  r-distro
+  r-filelock
+  r-gitcreds
+  r-glue
+  r-jsonlite
+  r-mockery
+  r-pingr
+  r-pkgcache
+  r-pkgdepends
+  r-pkgsearch
+  r-prettyunits
+  r-processx
+  r-ps
+  r-rprojroot
+  r-rstudioapi
   r-testthat
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ba6ee7f0cd00191e0ff0b5aaf84985b8cf63bef6956860fc810b8db7ee1ce7c8')
+sha256sums=('95914403da6f7ffedfd0c09078a6fbc84d6e207ef0dc42cf8a158738cb90ee4f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
@@ -39,6 +47,5 @@ build() {
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
   cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
 # vim:set ts=2 sw=2 et:

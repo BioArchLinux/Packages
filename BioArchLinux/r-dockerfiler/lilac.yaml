@@ -9,9 +9,11 @@ repo_depends:
 - r-fs
 - r-glue
 - r-jsonlite
+- r-pak
 - r-pkgbuild
 - r-r6
 - r-remotes
+- r-renv
 - r-usethis
 update_on:
 - regex: dockerfiler_([\d._-]+).tar.gz
