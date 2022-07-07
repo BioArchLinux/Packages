@@ -1,4 +1,4 @@
-
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 _pkgname=affyPara
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
