@@ -1,0 +1,27 @@
+# Maintainer: sukanka <su975853527@gmail.com>
+
+_pkgname=hgu95av2cdf
+_pkgver=2.18.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='hgu95av2cdf'
+arch=('any')
+url="https://bioconductor.org/packages/${_pkgname}"
+license=('LGPL')
+depends=(
+  r
+  r-annotationdbi
+)
+source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('d449a06a2f55a5a1f942710c8da2a37a81e20342b6e600669df94ecb55f1e1fe')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

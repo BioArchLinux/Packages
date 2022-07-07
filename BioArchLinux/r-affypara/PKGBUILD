@@ -1,13 +1,13 @@
 
 _pkgname=affyPara
-_pkgver=1.34.0
+_pkgver=1.54.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
 pkgdesc='Sample size for RNAseq studies'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('GPL')
+license=('GPL3')
 depends=(
   r
   r-affy
@@ -26,6 +26,18 @@ optdepends=(
 )
 source=("git+https://git.bioconductor.org/packages/${_pkgname}.git")
 sha256sums=('SKIP')
+
+prepare(){
+  # remove 22c `assign(".affyParaInternalEnv", .affyParaInternalEnv, envir=topenv(parent.frame()))`
+  # adapted from
+  # https://github.com/tidyverse/ggplot2/blob/7ebb6bd9d664f58794078afdb5a8ff71d5edf96d/R/ggplot-global.R#L4
+  sed -i '/assign(".affyParaInternalEnv/d' ${_pkgname}/R/zzz.R
+
+  # mv .affyParaInternalEnv <- new.env(parent=emptyenv()) to top of the file.
+  grep -E '^\s+.affyParaInternalEnv' ${_pkgname}/R/zzz.R  > tmpzzz.R
+  grep -vE '^\s+.affyParaInternalEnv' ${_pkgname}/R/zzz.R >> tmpzzz.R
+  mv tmpzzz.R ${_pkgname}/R/zzz.R
+}
 
 build() {
   tar -zcvf ${_pkgname}.tar.gz  ${_pkgname}
