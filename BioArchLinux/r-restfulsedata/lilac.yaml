@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-delayedarray
+  - r-experimenthub
+  - r-hdf5array
+  - r-summarizedexperiment
+update_on:
+  - regex: restfulSEData_([\d._-]+).tar.gz
+    source: regex
+    url: https://bioconductor.org/packages/restfulSEData

@@ -1,0 +1,34 @@
+# Maintainer: sukanka <su975853527@gmail.com>
+
+_pkgname=restfulSEData
+_pkgver=1.18.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Example metadata for the "restfulSE" R package'
+arch=('any')
+url="https://bioconductor.org/packages/${_pkgname}"
+license=('Artistic2.0')
+depends=(
+  r
+  r-delayedarray
+  r-experimenthub
+  r-hdf5array
+  r-summarizedexperiment
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+)
+source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('dd29ef22c993164ffe66e254fe721cf69ddc1ed86c28beaaf046d0b6e1d9b124')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
