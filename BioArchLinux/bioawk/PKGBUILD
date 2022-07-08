@@ -2,7 +2,7 @@
 
 pkgname=bioawk
 pkgver=1.0.0.r51.fd40150
-pkgrel=2
+pkgrel=3
 pkgdesc="BWK awk modified for biological data"
 arch=('i686' 'x86_64')
 url="https://github.com/lh3/bioawk"
@@ -20,12 +20,10 @@ prepare() {
 
 build() {
   cd "$srcdir/bioawk"
-  make
+  make -j1
 }
 
 package() {
   cd "$srcdir/bioawk"
   install -Dm755 bioawk $pkgdir/usr/bin/bioawk
 }
-
-
