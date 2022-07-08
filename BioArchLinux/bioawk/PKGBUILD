@@ -1,8 +1,8 @@
 # Maintainer: alienzj <alienchuj@gmail.com>
 
 pkgname=bioawk
-pkgver=1.0.0.r51.fd40150
-pkgrel=3
+pkgver=20170911.134301
+pkgrel=1
 pkgdesc="BWK awk modified for biological data"
 arch=('i686' 'x86_64')
 url="https://github.com/lh3/bioawk"
