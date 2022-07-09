@@ -6,7 +6,7 @@
 pkgname=mummer
 _pkgver=4.0.0rc1
 pkgver=4.0.0rc1
-pkgrel=2
+pkgrel=3
 pkgdesc="MUMmer is a program for rapidly aligning large genomes"
 arch=('i686' 'x86_64')
 url="http://mummer.sourceforge.net"
