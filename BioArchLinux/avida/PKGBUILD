@@ -61,5 +61,7 @@ package() {
   cp -r documentation/* "${pkgdir}/usr/share/doc/${pkgname}"
   install -Dm644 libs/apto/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE_APTO"
 
+  install -d ${pkgdir}/usr/bin
+  mv ${pkgdir}/usr/work/{avida,avida-viewer} ${pkgdir}/usr/bin
   mv ${pkgdir}/usr/work ${pkgdir}/usr/lib/${pkgname}
 }
