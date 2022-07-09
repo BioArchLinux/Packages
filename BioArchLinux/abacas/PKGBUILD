@@ -1,0 +1,28 @@
+# Maintainer: sukanka <su975853527 [at] gmail.com>
+
+_pkgname=abacas
+_pkgver=1.3.1
+pkgname=${_pkgname,,}
+pkgver=1.3.1
+pkgrel=1
+pkgdesc="Order and orientate DNA contigs even via 6-frame protein alignments"
+arch=('any')
+url="http://abacas.sourceforge.net"
+license=('GPL')
+depends=(
+  perl
+  mummer
+)
+
+source=("https://downloads.sourceforge.net/project/abacas/abacas.${pkgver}.pl")
+sha256sums=('0afee209a4f879987b320e2f882bc0eab540a7a712a81a5f01b9795d2749310d')
+
+prepare(){
+  sed -i 's#/usr/local/bin/perl#/usr/bin/perl#'  ${pkgname}.${pkgver}.pl
+}
+
+package() {
+  install -Dm755 ${pkgname}.${pkgver}.pl ${pkgdir}/usr/bin/${pkgname}
+
+}
+# vim:set ts=2 sw=2 et:

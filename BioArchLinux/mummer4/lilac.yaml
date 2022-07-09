@@ -1,8 +1,0 @@
-build_prefix: extra-x86_64
-maintainers:
-  - github: michaelgelliot
-    email: m.g.elliot@rug.nl
-update_on:
-  - source: github
-    github: mummer4/mummer
-    use_latest_release: true
