@@ -4,6 +4,7 @@
 # Note: this software is difficult to install.
 
 pkgname=mummer
+_pkgver=4.0.0rc1
 pkgver=4.0.0rc1
 pkgrel=2
 pkgdesc="MUMmer is a program for rapidly aligning large genomes"

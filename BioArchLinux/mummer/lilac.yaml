@@ -5,5 +5,9 @@ maintainers:
 repo_depends:
 - yaggo
 update_on:
-- source: github
-  github: mummer4/mummer
+  - source: github
+    github: mummer4/mummer
+    use_max_tag: true
+    prefix: 'v'
+  - source: aur
+    aur: mummer

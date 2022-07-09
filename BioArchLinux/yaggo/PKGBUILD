@@ -1,5 +1,6 @@
 # Maintainer: Sukanka <su975853527 [AT] gmail.com>
 pkgname=yaggo
+_pkgver=1.5.10
 pkgver=1.5.10
 pkgrel=1
 pkgdesc="Yet Another GenGetOpt"
