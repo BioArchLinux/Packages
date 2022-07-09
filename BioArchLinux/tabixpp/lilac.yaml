@@ -2,6 +2,8 @@ build_prefix: extra-x86_64
 maintainers:
 - github: sukanka
   email: su975853527@gmail.com
+repo_depends:
+- htslib
 update_on:
 - source: github
   github: vcflib/tabixpp

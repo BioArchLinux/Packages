@@ -6,3 +6,5 @@ update_on:
   - source: github
     github: samtools/htslib
     use_max_tag: true
+  - source: aur
+    aur: htslib
