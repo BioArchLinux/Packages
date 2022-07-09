@@ -3,6 +3,7 @@ maintainers:
   - github: starsareintherose
     email: git@malacology.net
 managed: false
+post_build: git_pkgbuild_commit
 #supdate_on:
 #  - source: gitlab
 #    gitlab: archlinux/devtools
