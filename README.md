@@ -35,10 +35,6 @@ install any package
 # pacman -S foo
 ```
 
-## Request a package
-If you find some package useful but not in our repository, (for example even if you used `r-bspm` it still installed a package from CRAN/Bioconductor),
-you can open an issue and tell us.
-
 ## Details
 
 For details of [usage](https://github.com/BioArchLinux/Packages/wiki/Usage), [participation](https://github.com/BioArchLinux/Packages/wiki/Participation), [contribution](https://github.com/BioArchLinux/Packages/wiki/Contribution-to-the-repository), [maintainence contact](https://github.com/BioArchLinux/Packages/wiki/Become-maintainer) and [sponsorship](https://github.com/BioArchLinux/Packages/wiki/Sponsorship), please see our repository wiki page.
