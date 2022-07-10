@@ -1,7 +1,9 @@
 maintainers:
-  - github: starsareintherose
-    email: starsareintherose@outlook.com
+  - github: sukanka
+    email: su975853527@gmail.com
 build_prefix: extra-x86_64
 update_on:
   - source: github
-  - github: devosoft/avida
+    github: devosoft/avida
+    use_max_tag: true
+    prefix: 'v'
