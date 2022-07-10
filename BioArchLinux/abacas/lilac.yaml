@@ -5,6 +5,6 @@ maintainers:
 repo_depends:
 - mummer
 update_on:
-- regex: abacas.\d+.pl
+- regex: 'abacas.(\d+.\d+.\d+).pl'
   source: regex
   url: https://sourceforge.net/projects/abacas/files/
