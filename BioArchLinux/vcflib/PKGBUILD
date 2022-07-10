@@ -1,16 +1,18 @@
 # Maintainer: Guoyi
 pkgname=vcflib
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
-arch=('any')
+arch=('x86_64')
 url="https://github.com/vcflib/vcflib"
 license=('MIT')
-depends=()
-makedepends=('git' 'cmake' 'make' 'htslib'
+depends=('python' 'htslib')
+makedepends=('git' 'cmake' 'make' 'pybind11'
 'pandoc'
 )
-optdepends=()
+optdepends=('r: running R scripts'
+'perl: running Perl scripts'
+)
 source=("git+https://github.com/vcflib/vcflib.git"
 "git+https://github.com/smarco/WFA2-lib.git"
 "fastahack.tar.gz::https://github.com/ekg/fastahack/archive/refs/tags/v1.0.0.tar.gz"
@@ -50,15 +52,15 @@ build() {
   cd $srcdir/${pkgname}
   install -d build
   cd build
-  cmake .. -DCAME_INSTALL_PREFIX=/usr -DPREFIX=/usr -DHTS_HEADERS=/usr/include/htslib  -DHTS_LIB=/usr/lib/libhts.so
-  cmake --build .
+  cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+  make PREFIX=/usr HTS_HEADERS=/usr/include/htslib  HTS_LIB=/usr/lib/libhts.so
 
 }
 
 package() {
   cd "$pkgname"/build
   make install DESTDIR="$pkgdir"
-  mv ${pkgdir}/usr/local/* ${pkgdir}/usr/
   mv ${pkgdir}/usr/lib/pyvcf*  ${pkgdir}/usr/lib/pyvcflib.so
-  rmdir ${pkgdir}/usr/local
+  mkdir ${pkgdir}/usr/share
+  mv ${pkgdir}/usr/man ${pkgdir}/usr/share
 }
