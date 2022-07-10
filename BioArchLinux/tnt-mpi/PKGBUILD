@@ -3,7 +3,7 @@
 
 pkgname=tnt-mpi
 _pkgname=mpitnt
-pkgver=2022.05.02
+pkgver=2022.07.10
 pkgrel=1
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
@@ -17,7 +17,7 @@ depends=(
 	'cuda'
 )
 source=("http://www.lillo.org.ar/phylogeny/tnt/$_pkgname.zip")
-sha256sums=('9c6d3100cf6d77c2bf79806df2fa350fa65a7b642facb62572fe17fbb3f79e58')
+sha256sums=('8941b6b9fd60d7c509f7e67f7146bc8442b3ca666fb0a443a29de1bb76b43e7b')
 package () {
 	cd ${srcdir}
 	chmod +x $_pkgname
