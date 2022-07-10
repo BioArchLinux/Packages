@@ -1,13 +1,11 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
-  email: su975853527@gmail.com
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- yaggo
+  - yaggo
 update_on:
   - source: github
     github: mummer4/mummer
     use_max_tag: true
     prefix: 'v'
-  - source: aur
-    aur: mummer
