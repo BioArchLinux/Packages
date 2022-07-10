@@ -3,7 +3,7 @@
 
 pkgname=avida
 pkgver=2.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A software platform to study evolution of digital organisms"
 arch=('i686' 'x86_64')
 url="https://github.com/devosoft/avida"
