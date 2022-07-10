@@ -9,3 +9,4 @@ repo_depends:
 update_on:
   - source: github
     github: vcflib/vcflib
+    use_max_tag: true

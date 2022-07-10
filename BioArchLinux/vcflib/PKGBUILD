@@ -1,13 +1,13 @@
 # Maintainer: Guoyi
 pkgname=vcflib
-pkgver=20220627.152412
-pkgrel=1
+pkgver=1.0.3
+pkgrel=3
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
 arch=('x86_64')
 url="https://github.com/vcflib/vcflib"
 license=('MIT')
 depends=('python' 'htslib')
-makedepends=('git' 'cmake' 'make' 'pybind11'
+makedepends=('git' 'cmake' 'make' 'pybind11' 'tabixpp'
 'pandoc'
 )
 optdepends=('r: running R scripts'
@@ -24,7 +24,6 @@ source=("git+https://github.com/vcflib/vcflib.git"
 "git+https://github.com/ekg/multichoose.git"
 "git+https://github.com/ekg/smithwaterman.git"
 "simde::git+https://github.com/simd-everywhere/simde-no-tests.git"
-"https://github.com/vcflib/tabixpp/archive/refs/tags/v1.1.1.tar.gz"
 )
 
 md5sums=('SKIP'
@@ -36,24 +35,25 @@ md5sums=('SKIP'
          'SKIP'
          'SKIP'
          'SKIP'
-         'SKIP'
-         '6441f3e3bbeb6c642edc7dea1c4cf8c3')
+         'SKIP')
 
 prepare(){
   cd ${srcdir}
   cp -rf WFA2-lib/*  ${pkgname}/contrib/WFA2-lib
-  cp -rf tabixpp-1.1.1/*  ${pkgname}/contrib/tabixpp
   cp -rf  fastahack-1.0.0 fastahack
   for module in {fastahack,filevercmp,fsom,intervaltree,libVCFH,multichoose,smithwaterman}; do
     cp -rf ${module}/* ${pkgname}/${module}
   done
+  cd ${pkgname}
+  sed -i 's| contrib/tabixpp/tabix.cpp|/usr/include/tabix/tabix.cpp|g' CMakeLists.txt
+  sed -i 's|<tabix.hpp>|<tabix/tabix.hpp>|g' src/Variant.h
 }
 build() {
   cd $srcdir/${pkgname}
   install -d build
   cd build
   cmake .. -DCMAKE_INSTALL_PREFIX=/usr
-  make PREFIX=/usr HTS_HEADERS=/usr/include/htslib  HTS_LIB=/usr/lib/libhts.so
+  cmake --build . -- PREFIX=/usr HTS_HEADERS=/usr/include/htslib  HTS_LIB=/usr/lib/libhts.so
 
 }
 

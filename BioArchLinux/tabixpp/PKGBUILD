@@ -2,7 +2,7 @@
 pkgname=tabixpp
 _pkgver=1.1.1
 pkgver=1.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="C++ wrapper to tabix indexer"
 arch=('x86_64')
 url="https://github.com/ekg/tabixpp"
@@ -21,7 +21,8 @@ build() {
 
 package() {
   cd $srcdir/"$pkgname"-${pkgver}
-  install -Dm 755 tabix.hpp $pkgdir/usr/include/tabix.hpp
+  install -Dm 755 tabix.hpp $pkgdir/usr/include/tabix/tabix.hpp
+  install -Dm 755 tabix.cpp $pkgdir/usr/include/tabix/tabix.cpp
   install -Dm 755 tabix++ $pkgdir/usr/bin/tabix++
 
   install -Dm 755 libtabix.so.1 ${pkgdir}/usr/lib/libtabix.so.1
