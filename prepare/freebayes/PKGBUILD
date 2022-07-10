@@ -1,0 +1,33 @@
+# maintainer: Guoyi
+pkgname=freebayes
+pkgver=1.3.6
+pkgrel=1
+pkgdesc="About Bayesian haplotype-based genetic polymorphism discovery and genotyping"
+arch=('x86_64')
+url="https://github.com/freebayes/freebayes"
+license=('MIT')
+
+depends=('tabixpp' 'vcflib' 'vcftools' 'samtools' 'parallel' 'bc')
+makedepends=('ninja' 'meson' 'git' 'cmake' 'make')
+optdepends=()
+
+source=(git+https://github.com/freebayes/freebayes.git#tag=v${pkgver})
+noextract=()
+sha256sums=('SKIP')
+prepare() {
+  cd "$pkgname"
+  git submodule update --init --recursive
+}
+build() {
+  cd "$pkgname"
+  rm -rf build
+  mkdir build
+  meson --prefix=/usr --buildtype=debug build
+  cd build
+  ninja -v
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  install -Dm 755 build/freebayes $pkgdir/usr/bin/freebayes
+}
