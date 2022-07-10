@@ -2,8 +2,8 @@
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
 pkgname=tnt
-pkgver=2022.05.02
-pkgrel=3
+pkgver=2022.07.10
+pkgrel=1
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
