@@ -27,7 +27,7 @@ prepare() {
 build() {
   cd "$pkgname"
   test -d build || mkdir build
-  meson --prefix=/usr --buildtype=release --includedir=/usr/include/vcflib	  build -Dprefer_system_deps=true
+  meson --prefix=/usr --buildtype=release --includedir=/usr/include/vcflib build -Dprefer_system_deps=true
   cd build
   ninja -v
 }
