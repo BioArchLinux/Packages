@@ -7,30 +7,37 @@ arch=('x86_64')
 url="https://github.com/freebayes/freebayes"
 license=('MIT')
 
-depends=('tabixpp' 'vcflib' 'vcftools' 'samtools' 'parallel' 'bc')
-makedepends=('ninja' 'meson' 'git' 'cmake' 'make')
+depends=('tabixpp' 'htslib')
+makedepends=('ninja' 'meson' 'git' 'cmake' 'make'
+'vcflib' 'vcftools' 'samtools' 'parallel' 'bc')
 optdepends=()
 
-source=(git+https://github.com/freebayes/freebayes.git#tag=v${pkgver})
+source=(git+https://github.com/freebayes/freebayes.git#tag=v${pkgver}
+)
 noextract=()
 sha256sums=('SKIP')
 prepare() {
   cd "$pkgname"
   git submodule update --init --recursive
-  # find vcflib
-  sed -i "s|dependency('libvcflib'|cc.find_library('libvcflib'|g" meson.build
-  sed -i "s|dependency('libseqlib'|cc.find_library('libseqlib'|g" meson.build
-  # sed -i "167c include_directories : [ seqlib_inc]," meson.build
+
+  # fix limits
+  sed -i "/#include <limits>/d" intervaltree/IntervalTree.h
+  sed -i "8i #include <limits>" intervaltree/IntervalTree.h
+  cp vcflib/tabixpp/tabix.*   vcflib/src
 }
 build() {
   cd "$pkgname"
   test -d build || mkdir build
-  meson --prefix=/usr --buildtype=release  build -Dprefer_system_deps=true
+  meson --prefix=/usr --buildtype=release --includedir=/usr/include/vcflib	  build -Dprefer_system_deps=true
   cd build
   ninja -v
 }
 
 package() {
-  cd "$pkgname-$pkgver"
-  install -Dm 755 build/freebayes $pkgdir/usr/bin/freebayes
+  cd "$pkgname"
+  install -Dm 755 build/freebayes  -t $pkgdir/usr/bin/
+  install -Dm 755 build/bamleftalign -t  $pkgdir/usr/bin/
+  cd build/libfreebayes_common.a.p
+  gcc -shared *.o -o libfreebayes_common.so
+  install -Dm755 libfreebayes_common.so -t $pkgdir/usr/lib/
 }
