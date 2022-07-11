@@ -37,7 +37,8 @@ package() {
     gcc  -shared *.o -o lib${mylib}.so
     rm -rf *.o
   done
-
+  cd $srcdir/${pkgname}
+  sed -i 's|htslib/htslib/|htslib/|g' SeqLib/*.h
   mkdir -p ${pkgdir}/usr/include/
   cp -rf SeqLib ${pkgdir}/usr/include/
 }
