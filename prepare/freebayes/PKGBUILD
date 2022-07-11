@@ -17,12 +17,13 @@ sha256sums=('SKIP')
 prepare() {
   cd "$pkgname"
   git submodule update --init --recursive
+  # find vcflib
+  sed -i "s|dependency('libvcflib'|cc.find_library('libvcflib'" CMakeLists.txt
 }
 build() {
   cd "$pkgname"
-  rm -rf build
-  mkdir build
-  meson --prefix=/usr --buildtype=debug build
+  test -d build || mkdir build
+  meson --prefix=/usr --buildtype=release  build -Dprefer_system_deps=true
   cd build
   ninja -v
 }

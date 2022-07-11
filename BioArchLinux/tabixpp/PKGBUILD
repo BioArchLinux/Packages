@@ -29,4 +29,5 @@ package() {
   install -Dm 755 libtabix.a $pkgdir/usr/lib/libtabix.a
 
   ln -s /usr/lib/libtabix.so.1 ${pkgdir}/usr/lib/libtabix.so
+  ln -s /usr/lib/libtabix.so   ${pkgdir}/usr/lib/libtabixpp.so
 }

@@ -46,6 +46,7 @@ prepare(){
   done
   cd ${pkgname}
   sed -i 's| contrib/tabixpp/tabix.cpp|/usr/include/tabix/tabix.cpp|g' CMakeLists.txt
+  sed -i 's|vcflib STATIC|vcflib SHARED|g' CMakeLists.txt
   sed -i 's|<tabix.hpp>|<tabix/tabix.hpp>|g' src/Variant.h
 }
 build() {
