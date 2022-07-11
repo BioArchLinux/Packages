@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+repo_depends:
+  - htslib
+  - tabixpp
+  - vcflib
+  - vcftools 
+  - samtools 
+update_on:
+  - source: github
+    github: freebayes/freebayes
+    use_max_tag: true
+    prefix: 'v'
