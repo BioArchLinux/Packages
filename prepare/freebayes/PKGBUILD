@@ -21,11 +21,15 @@ prepare() {
   sed -i "s|dependency('libvcflib'|cc.find_library('libvcflib'|g" meson.build
   sed -i "s|dependency('libseqlib'|cc.find_library('libseqlib'|g" meson.build
   # sed -i "167c include_directories : [ seqlib_inc]," meson.build
+
+  # fix limits
+  sed -i "/#include <limits>/d" intervaltree/IntervalTree.h
+  sed -i "8i #include <limits>" intervaltree/IntervalTree.h
 }
 build() {
   cd "$pkgname"
   test -d build || mkdir build
-  meson --prefix=/usr --buildtype=release  build -Dprefer_system_deps=true
+  meson --prefix=/usr --buildtype=release --includedir=/usr/include/vcflib	  build -Dprefer_system_deps=true
   cd build
   ninja -v
 }

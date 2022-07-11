@@ -1,8 +1,8 @@
 # Maintainer: PumpkinCheshire <sollyonzou at gmail dot com>
 
 pkgname=bwa
-pkgver=v0.7.17.r27.g3ddd7b8
-pkgrel=6
+pkgver=0.7.17.r47.gb56db22
+pkgrel=1
 pkgdesc="Burrows-Wheeler Aligner maps low-divergent sequences against a large reference genome. https://doi.org/10.1093/bioinformatics/btp324"
 arch=('x86_64')
 url="http://bio-bwa.sourceforge.net/"
@@ -13,7 +13,7 @@ source=('git+https://github.com/lh3/bwa.git')
 sha256sums=('SKIP')
 
 pkgver() {
-    git -C ${pkgname} describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+    git -C ${pkgname} describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 build() {
@@ -24,4 +24,6 @@ build() {
 package() {
     install -Dm755 -t "${pkgdir}/usr/bin" ${srcdir}/${pkgname}/bwa
     install -Dm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" ${pkgname}/COPYING
+    cd $srcdir/${pkgname}
+    install -Dm644 *.h -t "${pkgdir}/usr/include/bwa"
 }
