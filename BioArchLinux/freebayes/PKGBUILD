@@ -12,8 +12,7 @@ makedepends=('ninja' 'meson' 'git' 'cmake' 'make'
 'vcflib' 'vcftools' 'samtools' 'parallel' 'bc')
 optdepends=()
 
-source=(git+https://github.com/freebayes/freebayes.git#tag=v${pkgver}
-)
+source=("git+https://github.com/freebayes/freebayes.git#tag=v${pkgver}")
 noextract=()
 sha256sums=('SKIP')
 prepare() {
