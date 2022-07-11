@@ -17,7 +17,7 @@ noextract=()
 sha256sums=('SKIP')
 prepare() {
   cd "$pkgname"
-  git submodule update --init --recursive --progress
+  git submodule update --init --recursive
 
   # fix limits
   sed -i "/#include <limits>/d" intervaltree/IntervalTree.h
