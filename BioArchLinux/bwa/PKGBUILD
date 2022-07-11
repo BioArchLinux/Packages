@@ -1,7 +1,7 @@
 # Maintainer: PumpkinCheshire <sollyonzou at gmail dot com>
 
 pkgname=bwa
-pkgver=0.7.17.r47.gb56db22
+pkgver=0.7.17.r27.g3ddd7b8
 pkgrel=1
 pkgdesc="Burrows-Wheeler Aligner maps low-divergent sequences against a large reference genome. https://doi.org/10.1093/bioinformatics/btp324"
 arch=('x86_64')
