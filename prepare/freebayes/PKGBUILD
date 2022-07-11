@@ -18,7 +18,9 @@ prepare() {
   cd "$pkgname"
   git submodule update --init --recursive
   # find vcflib
-  sed -i "s|dependency('libvcflib'|cc.find_library('libvcflib'" CMakeLists.txt
+  sed -i "s|dependency('libvcflib'|cc.find_library('libvcflib'|g" meson.build
+  sed -i "s|dependency('libseqlib'|cc.find_library('libseqlib'|g" meson.build
+  # sed -i "167c include_directories : [ seqlib_inc]," meson.build
 }
 build() {
   cd "$pkgname"
