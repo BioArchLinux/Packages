@@ -1,0 +1,44 @@
+# Maintainer: Guoyi
+pkgname=arb-bio
+pkgver=7.0
+pkgrel=1
+pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
+arch=('x86_64')
+url="http://www.arb-home.de/"
+license=('UNKNOWN')
+depends=('lynx'  'imake' 'time' 'libxslt'
+)
+makedepends=('xerces-c' 'clang' 'libtirpc' 'boost')
+source=("${pkgname}-${pkgver}.tgz::http://download.arb-home.de/production/2021_09_16/arb-r18733-source.tgz"
+)
+
+md5sums=('a491b52f74fc4ddbd0ec373311ece8a0')
+
+prepare(){
+  mv arbsrc_* ${pkgname}-${pkgver}
+  cd ${srcdir}/${pkgname}-${pkgver}
+  cp config.makefile.template config.makefile
+  sed -i 's|-lCORE|-lCORE -ltirpc|g' Makefile
+
+  # If use gcc, also fail.
+  # gccver=$(gcc --version | grep ^gcc | sed 's/^.* //g')
+  # sed "s|9.3.0|9.3.0 ${gccver}|g" -i Makefile
+  # sed -i 's/LOOP_VECTORIZED//g' CORE/arb_strarray.cxx
+  # sed -i 's|LOOP_VECTORIZED=2\[||g'  MULTI_PROBE/MP_sonde.cxx
+}
+
+build() {
+  cd $srcdir/${pkgname}-${pkgver}
+  export ARBHOME=${srcdir}/${pkgname}-${pkgver}
+  export PATH=$ARBHOME/bin:$PATH
+  export XINCLUDES="-I/usr/include -I/usr/include/tirpc"
+  export CC=clang
+  export CXX=clang++
+  make
+  make all
+}
+
+package() {
+  cd $srcdir/arbsrc_*
+  make install DESTDIR="$pkgdir"
+}
