@@ -3,7 +3,7 @@
 _pkgname=corpus
 _pkgver=0.10.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.10.2
 pkgrel=1
 pkgdesc='Text Corpus Analysis'
 arch=('x86_64')
