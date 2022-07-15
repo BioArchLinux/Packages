@@ -33,6 +33,6 @@ repo_depends:
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-  - regex: 'CellMix_([\d._-]+).tar.gz'
+  - regex: '\d+.\d+.\d+'
     source: regex
-    url: http://web.cbio.uct.ac.za/~renaud/CRAN/src/contrib/
+    url: https://bio.tools/cellmix
