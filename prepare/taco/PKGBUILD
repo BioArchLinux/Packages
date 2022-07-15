@@ -1,0 +1,28 @@
+# Maintainer: sukanka <su975853527 at gmail dot com>
+
+pkgname=taco
+pkgver=0.7.3
+pkgrel=1
+pkgdesc="Multi-sample transcriptome assembly from RNA-Seq"
+arch=('x86_64')
+url="https://tacorna.github.io/"
+license=('MIT')
+depends=('python' 'cython' 'python-numpy' 'python-pandas')
+makedepends=('python-setuptools' 'python-pip')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/tacorna/taco/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('441499883e92462f14050f9e011c0c225950ab679c6bfa7ead5e4cb592b1f69b')
+
+prepare(){
+	cd "$srcdir/${pkgname}-${pkgver}"
+	sed -i 's|cythonize(cython_extensions)|cythonize(cython_extensions, compiler_directives={"language_level": 3})|' setup.py
+}
+
+build() {
+	cd "$srcdir/${pkgname}-${pkgver}"
+	python setup.py build
+}
+
+package() {
+	cd "$srcdir/${pkgname}-${pkgver}"
+	python setup.py install --root="$pkgdir" --optimize=1
+}
