@@ -33,6 +33,6 @@ repo_depends:
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-  - regex: '\d+.\d+.\d+'
+  - regex: 'CellMix ([\d._-]+)'
     source: regex
-    url: https://bio.tools/cellmix
+    url: https://mybiosoftware.com/cellmix-1-6-1-gene-expression-deconvolution.html
