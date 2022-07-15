@@ -1,0 +1,25 @@
+# Maintainer: sukanka <su975853527 at gmail dot com>
+pkgname=circexplorer
+pkgver=1.1.10
+pkgrel=1
+pkgdesc="A combined strategy to identify circular RNAs"
+arch=('any')
+url="http://yanglab.github.io/CIRCexplorer/"
+license=('custom')
+depends=('python' 'python-pysam' 'python-docopt')
+makedepends=('python-setuptools' 'python-pip')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/YangLab/CIRCexplorer/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('4f09cbac1e86e3e09d845e7808aeea3af7b91e8a76db081c22a10a4ede628524')
+
+
+
+build() {
+	cd "$srcdir/CIRCexplorer-${pkgver}"
+	python setup.py build
+}
+
+package() {
+	cd "$srcdir/CIRCexplorer-${pkgver}"
+	python setup.py install --root="$pkgdir" --optimize=1
+	install -Dm644 LICENSE.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
