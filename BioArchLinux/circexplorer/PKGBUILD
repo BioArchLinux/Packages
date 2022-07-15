@@ -1,7 +1,7 @@
 # Maintainer: sukanka <su975853527 at gmail dot com>
 pkgname=circexplorer
 pkgver=1.1.10
-pkgrel=1
+pkgrel=2
 pkgdesc="A combined strategy to identify circular RNAs"
 arch=('any')
 url="http://yanglab.github.io/CIRCexplorer/"
