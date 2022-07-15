@@ -1,6 +1,6 @@
 pkgname=hisat2
 pkgver=2.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='A fast and sensitive alignment program for mapping next-generation sequencing reads against genomes'
 url="https://ccb.jhu.edu/software/$pkgname"
 license=(GPL3)
