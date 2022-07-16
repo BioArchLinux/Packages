@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=deSolve
-_pkgver=1.32
+_pkgver=1.33
 pkgname=r-${_pkgname,,}
-pkgver=1.32
-pkgrel=3
+pkgver=1.33
+pkgrel=1
 pkgdesc="Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE')"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('74670f16eaafddd044a3ac1813acd5d164aed3f862b87aa1ac275b600e27d9ad')
+sha256sums=('71de979e05ce7e472308ac5218e97efe976051364ba579b10940dc1fe4c8b684')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
