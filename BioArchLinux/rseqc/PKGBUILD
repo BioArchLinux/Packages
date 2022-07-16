@@ -2,7 +2,7 @@
 
 pkgname=rseqc
 pkgver=4.0.0
-pkgrel=1
+pkgrel=0
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('any')
 url="http://rseqc.sourceforge.net/"
@@ -22,4 +22,8 @@ build() {
 package() {
 	cd "$srcdir/RSeQC-${pkgver}"
 	python setup.py install --root="$pkgdir" --optimize=1
+
+	# these files owned by python-bx.
+	rm -rf  ${pkgdir}/usr/lib/python3.10/site-packages/\
+		{psyco_full.py,__pycache__/psyco_full.cpython-310{.opt-1.pyc,.pyc}}
 }

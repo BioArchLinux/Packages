@@ -1,0 +1,26 @@
+# Maintainer: sukanka <su975853527  at gmail>
+pkgname=python-bx
+_pkgname=bx-python
+pkgver=0.8.13
+pkgrel=0
+pkgdesc="Tools for manipulating biological data, particularly multiple sequence alignments"
+arch=('x86_64')
+url="https://github.com/bxlab/bx-python"
+license=('MIT')
+depends=('lzo' 'python' 'python-numpy')
+makedepends=('python-setuptools' 'cython' )
+provides=('bx-python')
+options=(!emptydirs)
+source=($_pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz)
+sha256sums=('38597646e52ae183a03a598759ce152af91199a32c5a82c3be2b0f7ead0e1880')
+
+build(){
+  cd "$srcdir"/$_pkgname-$pkgver
+  python setup.py build
+}
+
+package() {
+  cd $_pkgname-$pkgver
+  python setup.py install --root="$pkgdir" --optimize=1 --skip-build
+  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+}

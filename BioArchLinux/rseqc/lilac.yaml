@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+repo_depends:
+  - python-pybigwig
+  - python-bx
+update_on:
+  - source: regex
+    regex: 'RSeQC v(\d+.\d+.\d+)'
+    url: http://rseqc.sourceforge.net/
