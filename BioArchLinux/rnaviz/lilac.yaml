@@ -4,7 +4,8 @@ maintainers:
     email: su975853527@gmail.com
 repo_depends:
   - extral
-  - classytk
+  - classytk: classytk
+  - classytk: classytcl
 update_on:
   - regex: 'Rnaviz-(\d+.\d+.\d+).src.tar.gz'
     source: regex
