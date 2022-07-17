@@ -1,0 +1,21 @@
+# Maintainer: sukanka <su975853527 at gmail dot com>
+pkgname=ucsc-genome-browser
+pkgver=433
+pkgrel=1
+pkgdesc="An RNA-seq Quality Control Package"
+arch=('x86_64')
+url="https://github.com/ucscGenomeBrowser/kent"
+license=('custom' 'MIT')
+depends=('perl' 'python' 'curl')
+makedepends=('rsync')
+prepare(){
+	rsync -aP hgdownload.soe.ucsc.edu::genome/admin/exe/linux.x86_64/ ${srcdir}/${pkgname}-${pkgver}
+	cd ${srcdir}/${pkgname}-${pkgver}
+	# fix  for python3
+	sed -i 's|#!/usr/bin/env python2.7|#!/usr/bin/env python|' expMatrixToBarchartBed bedJoinTabOffset.py
+}
+
+package() {
+	cd ${srcdir}/${pkgname}-${pkgver}
+	find . -type f -executable -print0 | xargs -0 install -Dm755 -t ${pkgdir}/usr/bin/
+}

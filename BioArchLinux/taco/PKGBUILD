@@ -1,0 +1,18 @@
+# Maintainer: sukanka <su975853527 at gmail dot com>
+
+pkgname=taco
+pkgver=0.7.3
+pkgrel=1
+pkgdesc="Multi-sample transcriptome assembly from RNA-Seq"
+arch=('x86_64')
+url="https://tacorna.github.io/"
+depends=('zlib')
+license=('MIT')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/tacorna/taco/releases/download/v${pkgver}/taco-v${pkgver}.Linux_x86_64.tar.gz")
+sha256sums=('fe00b16a3657aadec25d9dc5491971056f35a71dda0bfcb36656902236964588')
+
+
+package() {
+	cd "$srcdir/${pkgname}-v${pkgver}.Linux_x86_64/"
+	install -Dm755 taco_refcomp taco_run -t ${pkgdir}/usr/bin
+}
