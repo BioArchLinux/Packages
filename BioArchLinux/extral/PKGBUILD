@@ -1,0 +1,35 @@
+# Maintainer: Guoyi
+pkgname=extral
+pkgver=2.0.0
+pkgrel=1
+pkgdesc="Extra commands for Tcl"
+arch=('x86_64')
+url="http://rnaviz.sourceforge.net/index.html"
+license=('BSD')
+depends=('tcl' )
+source=("http://prdownloads.sourceforge.net/extral/Extral-${pkgver}.src.tar.gz")
+
+sha256sums=('99bb61735febda9cbe1ee6ce0368cbe4bdf1d2a9fb44f23af72148707dc204ad')
+options=(!emptydirs)
+
+
+build() {
+  cd ${srcdir}/Extral/build
+  ./configure --prefix=/usr  --with-tcl=/usr/lib --with-tclinclude=/usr/include
+  make
+}
+
+
+
+package() {
+  cd ${srcdir}/Extral/build
+  make install DESTDIR="$pkgdir"
+
+  # place files
+  cd $pkgdir/usr/lib/Extral2.0
+  install -d ${pkgdir}/usr/share/doc/Extral2.0
+  mv docs/* README  ${pkgdir}/usr/share/doc/Extral2.0
+
+  # strip ${pkgdir}
+  sed -i "s|${pkgdir}||g" lib/init.tcl pkgIndex.tcl
+}

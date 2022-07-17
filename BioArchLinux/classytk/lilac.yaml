@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: su975853527@gmail.com
+repo_depends:
+- extral
+update_on:
+- regex: 'Latest version is (\d+.\d+.\d+)'
+  source: regex
+  url: http://classytcl.sourceforge.net/

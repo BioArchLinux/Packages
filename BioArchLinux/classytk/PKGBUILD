@@ -1,0 +1,50 @@
+# Maintainer: Guoyi
+pkgbase="classytk"
+pkgname=(classytk classytcl)
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="widget set and GUI builder based on ClassyTcl object system"
+arch=('x86_64')
+url="https://wiki.tcl-lang.org/page/ClassyTk"
+license=('BSD')
+depends=('tcl'  'tk' 'extral')
+source=(
+"http://prdownloads.sourceforge.net/classytcl/ClassyTcl-${pkgver}.src.tar.gz"
+"http://prdownloads.sourceforge.net/classytk/ClassyTk-${pkgver}.src.tar.gz"
+)
+
+sha256sums=('123db5a192dc0fc3f9ccb61f513b4aa16d9712d17b96048494823d9f67ee568a'
+            'b458284ec0bc47a81d7acbb8f0707c8eb906164f8070cdceb07866a39809e96f')
+options=(!emptydirs)
+
+prepare(){
+  cd ${srcdir}/ClassyTcl/help
+  rm -rf 'ClassyTcl.html~'
+
+}
+
+
+build() {
+  cd ${srcdir}/ClassyTcl/build
+  ./configure --prefix=/usr --with-tcl=/usr/lib --with-tclinclude=/usr/include
+  make
+  cd ${srcdir}/ClassyTk/build
+  ./configure --prefix=/usr --with-tcl=/usr/lib --with-tclinclude=/usr/include
+  make
+
+}
+
+package_classytcl() {
+  cd ${srcdir}/ClassyTcl/build
+  make install DESTDIR="$pkgdir"
+  cd ${pkgdir}/usr/lib/Class1.0/
+  sed -i "s|${pkgdir}||g" lib/init.tcl pkgIndex.tcl
+
+  install -d ${pkgdir}/usr/share/doc/Class1.0/
+  mv help/* README  ${pkgdir}/usr/share/doc/Class1.0/
+}
+
+package_classytk() {
+  cd ${srcdir}/ClassyTk/build
+  make install DESTDIR="$pkgdir"
+}
