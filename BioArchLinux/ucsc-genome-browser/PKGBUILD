@@ -8,6 +8,8 @@ url="https://github.com/ucscGenomeBrowser/kent"
 license=('custom' 'MIT')
 depends=('perl' 'python' 'curl')
 makedepends=('rsync')
+source=("https://raw.githubusercontent.com/ucscGenomeBrowser/kent/master/LICENSE")
+sha256sums=('167e2e578f1fa4c83304397dcb18d06d64c78d47773f363aee476a47731af3a9')
 prepare(){
 	rsync -aP hgdownload.soe.ucsc.edu::genome/admin/exe/linux.x86_64/ ${srcdir}/${pkgname}-${pkgver}
 	cd ${srcdir}/${pkgname}-${pkgver}
@@ -18,4 +20,6 @@ prepare(){
 package() {
 	cd ${srcdir}/${pkgname}-${pkgver}
 	find . -type f -executable -print0 | xargs -0 install -Dm755 -t ${pkgdir}/usr/bin/
+	cd $srcdir
+	install -Dm644 LICENSE ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE
 }
