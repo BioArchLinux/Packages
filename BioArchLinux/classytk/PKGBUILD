@@ -47,4 +47,10 @@ package_classytcl() {
 package_classytk() {
   cd ${srcdir}/ClassyTk/build
   make install DESTDIR="$pkgdir"
+  # fix broken links
+  cd ${pkgdir}/usr/bin
+  for bin in $(ls);
+  do
+    ln -sf ../lib/ClassyTk1.0/$bin ${pkgdir}/usr/bin/$bin
+  done;
 }
