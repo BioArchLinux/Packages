@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=argparse
-_pkgver=2.1.5
+_pkgver=2.1.6
 pkgname=r-${_pkgname,,}
-pkgver=2.1.5
-pkgrel=3
+pkgver=2.1.6
+pkgrel=1
 pkgdesc='Command Line Optional and Positional Argument Parser'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,7 +23,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('83e112beb47733849980b286d93ac930f0cbe6ac78fcb94fc9f6b0eea882658d')
+sha256sums=('2ad7faad795878b88969ac5d91ba38f4e96deb85dfea7148c3510f0eaa3de592')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
