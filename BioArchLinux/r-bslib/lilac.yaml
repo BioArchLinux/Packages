@@ -3,9 +3,11 @@ maintainers:
 - github: starsareintherose
   email: git@malacology.net
 repo_depends:
+- r-cachem
 - r-htmltools
 - r-jquerylib
 - r-jsonlite
+- r-memoise
 - r-rlang
 - r-sass
 update_on:

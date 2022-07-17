@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
   - python-pybigwig
   - python-bx
+  - python-pysam
 update_on:
   - source: regex
     regex: 'RSeQC v(\d+.\d+.\d+)'
