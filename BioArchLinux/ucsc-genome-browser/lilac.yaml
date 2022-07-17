@@ -3,6 +3,6 @@ maintainers:
 - github: sukanka
   email: su975853527@gmail.com
 update_on:
-- regex: 'v\d+_base'
+- regex: 'v(\d+)_base'
   source: regex
   url: https://github.com/ucscGenomeBrowser/kent/tags
