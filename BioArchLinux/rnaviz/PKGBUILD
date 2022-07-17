@@ -6,7 +6,7 @@ pkgdesc="GUI program for producing publication-quality secondary structure drawi
 arch=('x86_64')
 url="http://rnaviz.sourceforge.net/index.html"
 license=('GPL')
-depends=(extral classytk)
+depends=(extral classytk classytcl)
 source=("http://prdownloads.sourceforge.net/rnaviz/Rnaviz-${pkgver}.src.tar.gz")
 
 sha256sums=('84c2e86ea22894046b07bc09808fe2dc25ba19400d2783829e59777df41b2fc9')
