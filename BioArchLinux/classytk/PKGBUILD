@@ -26,35 +26,26 @@ prepare(){
 
 build() {
   cd ${srcdir}/ClassyTcl/build
-  ./configure --prefix=/usr --with-tcl=/usr/lib --with-tclinclude=/usr/include
-  make
+  ./makedoc.tcl
   cd ${srcdir}/ClassyTk/build
-  ./configure --prefix=/usr --with-tcl=/usr/lib --with-tclinclude=/usr/include
-  make
+  ./makedoc.tcl
 
 }
 
 package_classytcl() {
   cd ${srcdir}/ClassyTcl/build
-  make install DESTDIR="$pkgdir"
-  cd ${pkgdir}/usr/lib/Class1.0/
+  ./install.tcl ${pkgdir}/usr/lib/ClassyTcl
+  cd ${pkgdir}/usr/lib/ClassyTcl${pkgver}/
   sed -i "s|${pkgdir}||g" lib/init.tcl pkgIndex.tcl
 
-  install -d ${pkgdir}/usr/share/doc/Class1.0/
-  mv help/* README  ${pkgdir}/usr/share/doc/Class1.0/
+  install -d ${pkgdir}/usr/share/doc/ClassyTcl${pkgver}/
+  mv help/* README  ${pkgdir}/usr/share/doc/ClassyTcl${pkgver}/
+  cd ${pkgdir}/usr/lib/ClassyTcl${pkgver}/linux-$CARCH/
+  mv *.so ${pkgdir}/usr/lib/
 }
 
 package_classytk() {
+  arch=('any')
   cd ${srcdir}/ClassyTk/build
-  make install DESTDIR="$pkgdir"
-  # fix broken links
-  cd ${pkgdir}/usr/bin
-  for bin in $(ls);
-  do
-    ln -sf ../lib/ClassyTk1.0/bin/$bin ${pkgdir}/usr/bin/$bin
-  done;
-  ln -sf ../lib/ClassyTk1.0/apps/cwww/cwww.tcl ${pkgdir}/usr/bin/cwww
-
-  cd ${pkgdir}/usr/lib/ClassyTk1.0/apps/cwww/
-  sed -i 's|ClassyTk 0.4|ClassyTk 1.0|g' cwww.tcl
+ ./install.tcl ${pkgdir}/usr/lib/ClassyTk
 }
