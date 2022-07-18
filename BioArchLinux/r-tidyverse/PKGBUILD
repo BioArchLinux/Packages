@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tidyverse
-_pkgver=1.3.1
+_pkgver=1.3.2
 pkgname=r-${_pkgname,,}
-pkgver=1.3.1
-pkgrel=3
+pkgver=1.3.2
+pkgrel=1
 pkgdesc="Easily Install and Load the 'Tidyverse'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -50,7 +50,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('83cf95109d4606236274f5a8ec2693855bf75d3a1b3bc1ab4426dcc275ed6632')
+sha256sums=('37fbf8b72e49e96b1770dfb8e37f3e9e29269e8d6c96d6d3902561252ec1cf61')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
