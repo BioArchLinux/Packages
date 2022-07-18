@@ -6,6 +6,6 @@ repo_depends:
 - extral
 - tcl-pkgtools
 update_on:
-- regex: 'Latest version is (\d+.\d+.\d+)'
+- regex: 'ClassyTk-(\d+.\d+.\d+)-src.tar.gz'
   source: regex
-  url: http://classytcl.sourceforge.net/
+  url: https://sourceforge.net/projects/classytcl/files/
