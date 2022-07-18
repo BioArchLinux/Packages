@@ -4,6 +4,7 @@ maintainers:
   email: su975853527@gmail.com
 repo_depends:
 - extral
+- tcl-pkgtools
 update_on:
 - regex: 'Latest version is (\d+.\d+.\d+)'
   source: regex

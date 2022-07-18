@@ -1,0 +1,25 @@
+# Maintainer: Guoyi
+pkgname=tcl-pkgtools
+pkgver=0.9.0
+pkgrel=1
+pkgdesc="A number of commands in pkgtools is used in the initializing of an extension"
+arch=('any')
+url="https://sourceforge.net/projects/tcl-dbi/files/"
+license=('UNKNOWN')
+depends=('tk' 'tcl')
+
+source=("https://sourceforge.net/projects/tcl-dbi/files/pkgtools-${pkgver}-src.tar.gz"
+)
+
+sha256sums=('11d7312ca9164ee564223aae178e41e9b0fea6f80d392c608c31a225a8fec959')
+
+build() {
+  cd ${srcdir}/pkgtools/build
+  ./makedoc.tcl
+
+}
+
+package() {
+  cd ${srcdir}/pkgtools/build
+  ./install.tcl ${pkgdir}/usr/lib/pkgtools
+}

@@ -1,20 +1,20 @@
 # Maintainer: Guoyi
 pkgbase="classytk"
 pkgname=(classytk classytcl)
-pkgver=1.0.0
-pkgrel=6
+pkgver=1.1.0
+pkgrel=0
 pkgdesc="widget set and GUI builder based on ClassyTcl object system"
 arch=('x86_64')
 url="https://wiki.tcl-lang.org/page/ClassyTk"
 license=('BSD')
-depends=('tcl'  'tk' 'extral')
+depends=('tcl'  'tk' 'extral' 'tcl-pkgtools')
 source=(
-"http://prdownloads.sourceforge.net/classytcl/ClassyTcl-${pkgver}.src.tar.gz"
-"http://prdownloads.sourceforge.net/classytk/ClassyTk-${pkgver}.src.tar.gz"
+"https://sourceforge.net/projects/classytcl/files/ClassyTk-${pkgver}-src.tar.gz"
+"https://sourceforge.net/projects/classytcl/files/ClassyTcl-${pkgver}-src.tar.gz"
 )
 
-sha256sums=('123db5a192dc0fc3f9ccb61f513b4aa16d9712d17b96048494823d9f67ee568a'
-            'b458284ec0bc47a81d7acbb8f0707c8eb906164f8070cdceb07866a39809e96f')
+sha256sums=('0ad607abaa4892e8dd087278c523579ebd47bd78d7001e167df0e3570e3914cf'
+            'a0d5d37c1660119887fac7e38f306797dda335b6f69812227e49639be01faeca')
 options=(!emptydirs)
 
 prepare(){
