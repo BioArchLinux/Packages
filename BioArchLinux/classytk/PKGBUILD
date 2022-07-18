@@ -2,7 +2,7 @@
 pkgbase="classytk"
 pkgname=(classytk classytcl)
 pkgver=1.0.0
-pkgrel=4
+pkgrel=5
 pkgdesc="widget set and GUI builder based on ClassyTcl object system"
 arch=('x86_64')
 url="https://wiki.tcl-lang.org/page/ClassyTk"
@@ -51,6 +51,10 @@ package_classytk() {
   cd ${pkgdir}/usr/bin
   for bin in $(ls);
   do
-    ln -sf ../lib/ClassyTk1.0/$bin ${pkgdir}/usr/bin/$bin
+    ln -sf ../lib/ClassyTk1.0/bin/$bin ${pkgdir}/usr/bin/$bin
   done;
+  ln -sf ../lib/ClassyTk1.0/apps/cwww/cwww.tcl ${pkgdir}/usr/bin/cwww
+
+  cd ${pkgdir}/usr/lib/ClassyTk1.0/apps/cwww/
+  sed -i 's|ClassyTk 0.4|ClassyTk 1.0|g' cwww.tcl
 }
