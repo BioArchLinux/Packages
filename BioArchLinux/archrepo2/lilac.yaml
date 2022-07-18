@@ -1,6 +1,6 @@
 maintainers:
 - github: starsareintherose
-  email: git@malacology.net
+  email: kuoi@bioarchlinux.org
 update_on:
 - source: github
   github: lilydjwg/archrepo2

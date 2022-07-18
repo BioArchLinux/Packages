@@ -4,7 +4,7 @@ post_build_script: |
     update_aur_repo
 maintainers:
   - github: starsareintherose
-    email: git@malacology.net
+    email: kuoi@bioarchlinux.org
 update_on:
   - source: github
     github: CompEvol/beast2

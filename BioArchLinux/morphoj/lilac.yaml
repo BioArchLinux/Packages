@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
-    email: git@malacology.net
+    email: kuoi@bioarchlinux.org
 update_on:
   - source: cmd
     cmd: w3m -dump https://morphometrics.uk/MorphoJ_guide/changelog.htm  |grep -o 'Version [0-9].[0-9]\+\w\|Version [0-9].[0-9]\+.[0-9]\+' | head -n1 | cut -d' ' -f2
