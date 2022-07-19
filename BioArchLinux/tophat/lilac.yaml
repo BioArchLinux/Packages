@@ -4,6 +4,6 @@ maintainers:
   email: su975853527@gmail.com
 update_on:
 - source: github
-  github: infphilo/tophat
+  github: DaehwanKimLab/tophat
   use_max_tag: true
   prefix: 'v'
