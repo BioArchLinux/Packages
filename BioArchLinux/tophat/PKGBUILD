@@ -9,7 +9,7 @@ url="http://ccb.jhu.edu/software/tophat/index.shtml"
 license=('custom')
 depends=('boost-libs' 'bowtie2' 'python')
 makedepends=('boost' 'clang')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/infphilo/tophat/archive/refs/tags/v${pkgver}.tar.gz"
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/DaehwanKimLab/tophat/archive/refs/tags/v${pkgver}.tar.gz"
         'make_pair.patch'
         'configure.patch'
         )
