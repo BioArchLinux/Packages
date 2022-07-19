@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: su975853527@gmail.com
+update_on:
+- source: github
+  github: infphilo/tophat
+  use_max_tag: true
+  prefix: 'v'
