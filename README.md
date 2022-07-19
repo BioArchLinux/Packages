@@ -11,6 +11,8 @@ BioArchLinux</h3>
 
 ## Usage
 
+### ArchLinux and ArchLinux based distributions
+
 Add the fllowing content to the `/etc/pacman.conf`
 ```
 [bioarchlinux]
@@ -34,6 +36,10 @@ install any package
 ```
 # pacman -S foo
 ```
+
+### Windows
+
+You can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) to use our repo, see [here](https://github.com/BioArchLinux/wsl)
 
 ## Details
 
