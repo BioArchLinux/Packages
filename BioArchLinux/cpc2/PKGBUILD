@@ -1,16 +1,14 @@
 pkgname=cpc2
-pkgver=1.0.1
+pkgver=1.0.0
 _pkgname=CPC2_standalone
-pkgrel=1
+pkgrel=2
 pkgdesc="Official repo for the standalone package of Coding Potential Calculator (CPC) 2 https://doi.org/10.1093/nar/gkx428"
 arch=(x86_64)
 url="https://github.com/gao-lab/CPC2_standalone"
 license=('GPL')
 depends=('python' 'python-biopython' 'python-six' 'libsvm')
-source=("https://github.com/gao-lab/CPC2_standalone/archive/refs/tags/v${pkgver}.tar.gz"
-	"$pkgname")
-md5sums=('a4d3fc436eca403c07d05c67d3d33ae7'
-         '335bbef85c12ed2834ba5f3770c532f4')
+source=("https://github.com/gao-lab/CPC2_standalone/archive/refs/tags/v${pkgver}.tar.gz")
+md5sums=('a4d3fc436eca403c07d05c67d3d33ae7')
 
 package() {
   mkdir -p ${pkgdir}/usr/share/$pkgname
