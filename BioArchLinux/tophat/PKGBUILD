@@ -2,7 +2,7 @@
 
 pkgname=tophat
 pkgver=2.1.2
-pkgrel=0
+pkgrel=1
 pkgdesc="fast splice junction mapper for RNA-Seq reads"
 arch=('x86_64' 'i686')
 url="http://ccb.jhu.edu/software/tophat/index.shtml"
