@@ -1,0 +1,42 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+*.directory
+doc/site/*
+*.Rhistory
+seqkit/seqkit*
+TODO.md
+benchmark/.Rhistory
+seqkit/binaries*
+doc/site*
+*ssshtest
+t.*
+seqkit/t.*
+seqkit/bench-fx2tab
+doc/docs/chinese/
+*.brename_detail.txt
+dataset_A.fa*
+dataset_B.fa*
+dataset_C.fq*
+dataset_Ca.fq*

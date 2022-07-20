@@ -1,0 +1,23 @@
+pkgname=seqkit
+pkgver=2.2.0
+pkgrel=1
+pkgdesc="A cross-platform and ultrafast toolkit for FASTA/Q file manipulation in Golang"
+arch=('x86_64')
+url=http://bioinf.shenwei.me/seqkit
+license=('MIT')
+makedepends=('go')
+provides=('seqkit')
+source=(
+  https://github.com/shenwei356/seqkit/archive/refs/tags/v${pkgver}.tar.gz
+  https://raw.githubusercontent.com/shenwei356/seqkit/v"${pkgver}"/LICENSE
+)
+sha256sums=('6e7e292532d78d54ac7aecb934f992c85d04b2dcb2d7a1141808bada0f5b13ba'
+            'ffa76e8a163f7a8785ccf4f517d601d562d2a68fbd019de9b2eccf49c9b89730')
+build(){
+  cd $srcdir/$pkgname-$pkgver/$pkgname
+  go build
+}
+package() {
+  install -Dm644 LICENSE ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE
+  install -Dm775 ${srcdir}/$pkgname-$pkgver/$pkgname/$pkgname ${pkgdir}/usr/bin/${pkgname}
+}
