@@ -1,6 +1,6 @@
 pkgname=seqkit
 pkgver=2.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform and ultrafast toolkit for FASTA/Q file manipulation in Golang"
 arch=('x86_64')
 url=http://bioinf.shenwei.me/seqkit
