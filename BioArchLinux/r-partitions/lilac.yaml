@@ -6,6 +6,7 @@ repo_depends:
   - r-mathjaxr
   - r-polynom
   - r-sets
+  - r-rdpack
 update_on:
   - regex: partitions_([\d._-]+).tar.gz
     source: regex
