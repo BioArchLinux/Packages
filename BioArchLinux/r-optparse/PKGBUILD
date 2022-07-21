@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=optparse
-_pkgver=1.7.1
+_pkgver=1.7.3
 pkgname=r-${_pkgname,,}
-pkgver=1.7.1
-pkgrel=4
+pkgver=1.7.3
+pkgrel=1
 pkgdesc='Command Line Option Parser'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('324e304c13efd565d766766193d4ccd75e2cd949dfcfb416afc3939489071fe7')
+sha256sums=('6287e1af051d4a65037900ce7b30bd962039450dd4eab63b6f2491eace6a07ed')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
