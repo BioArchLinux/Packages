@@ -3,7 +3,7 @@
 _pkgname=downlit
 _pkgver=0.4.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.4.2
 pkgrel=1
 pkgdesc='Syntax Highlighting and Automatic Linking'
 arch=('any')
