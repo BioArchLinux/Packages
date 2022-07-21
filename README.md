@@ -4,7 +4,7 @@
 BioArchLinux</h3>
 
 <h3 align="center">
-<a href="https://wiki.bioarchlinux">Wiki</a> <a href="https://matrix.to/#/@bioarchlinux:matrix.org">Matrix</a> <a href="https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio">Mirror</a> <a href="https://repo.bioarchlinux">Repo</a> <a href="https://build.bioarchlinux">Status</a>
+<a href="https://wiki.bioarchlinux.org">Wiki</a> <a href="https://matrix.to/#/#bioarchlinux:matrix.org">Matrix</a> <a href="https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio">Mirror</a> <a href="https://repo.bioarchlinux.org">Repo</a> <a href="https://build.bioarchlinux.org">Status</a>
 </h3>
 
 ## Special sponsor
