@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bslib
+  - r-callr
+  - r-cli
+  - r-desc
+  - r-digest
+  - r-downlit
+  - r-fs
+  - r-httr
+  - r-jsonlite
+  - r-magrittr
+  - r-memoise
+  - r-purrr
+  - r-ragg
+  - r-rlang
+  - r-rmarkdown
+  - r-tibble
+  - r-whisker
+  - r-withr
+  - r-xml2
+  - r-yaml
+update_on:
+  - regex: pkgdown_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=pkgdown

@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-callr
 - r-cli
 - r-desc
 - r-ellipsis
@@ -11,16 +10,19 @@ repo_depends:
 - r-httr
 - r-lifecycle
 - r-memoise
+- r-miniui
 - r-pkgbuild
+- r-pkgdown
 - r-pkgload
+- r-profvis
 - r-rcmdcheck
 - r-remotes
 - r-rlang
 - r-roxygen2
-- r-rstudioapi
 - r-rversions
 - r-sessioninfo
 - r-testthat
+- r-urlchecker
 - r-usethis
 - r-withr
 update_on:

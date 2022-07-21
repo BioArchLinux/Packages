@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-brio
+  - r-desc
+  - r-digest
+  - r-evaluate
+  - r-fansi
+  - r-memoise
+  - r-rlang
+  - r-vctrs
+  - r-withr
+  - r-yaml
+update_on:
+  - regex: downlit_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=downlit
