@@ -50,4 +50,6 @@ You can use [docker](https://hub.docker.com/r/bioarchlinux/bioarchlinux) to use 
 
 ## Citation
 
-> Zhang G. Hu Y. Drobot V. Staal J. Yi Y. Elliot MG. BioArchLinux: bioinformatics community with Arch Linux. F1000Research 2022 11: 809. https://doi.org/10.7490/f1000research.1119039.1
+> Zhang G. Hu Y. Drobot V. Staal J. Yi Y. Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux. F1000Research 11: 809. https://doi.org/10.7490/f1000research.1119039.1
+
+[Get Bibtex Here](https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux.bibtex)
