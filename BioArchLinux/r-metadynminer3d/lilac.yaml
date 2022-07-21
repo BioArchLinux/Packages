@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-metadynminer
+  - r-misc3d
+  - r-rcpp
+  - r-rgl
+update_on:
+  - regex: metadynminer3d_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=metadynminer3d
