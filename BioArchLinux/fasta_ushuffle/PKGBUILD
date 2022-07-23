@@ -1,0 +1,26 @@
+# guoyi
+
+pkgname=fasta_ushuffle
+pkgver=0.2
+pkgrel=1
+pkgdesc="Wrapper for uShuffle"
+arch=('x86_64')
+url="https://github.com/agordon/fasta_ushuffle"
+license=('custom')
+
+depends=('glibc')
+makedepends=('make' 'git')
+optdepends=()
+
+source=(git+https://github.com/agordon/fasta_ushuffle.git)
+sha256sums=('SKIP')
+build() {
+  cd $pkgname
+  make
+}
+
+package() {
+  cd $pkgname
+  installi -Dm755 ushuffle $pkgdir/usr/bin/ushuffle
+  installi -Dm755 fasta_ushuffle $pkgdir/usr/bin/fasta_ushuffle
+}

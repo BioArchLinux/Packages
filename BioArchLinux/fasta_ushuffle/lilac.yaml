@@ -1,0 +1,10 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build: vcs_update
+post_build: git_pkgbuild_commit
+update_on:
+  - source: cmd
+    cmd: curl -sS https://raw.githubusercontent.com/agordon/fasta_ushuffle/master/README | grep 'VERSION' | awk '{print $2}'
+
