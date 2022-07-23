@@ -14,7 +14,7 @@ url='http://search.mcpan.org/dist/Data-Stag'
 source=('http://search.cpan.org/CPAN/authors/id/C/CM/CMUNGALL/Data-Stag-0.14.tar.gz')
 md5sums=('f803acf74f1bfccc118aeac5483ee871')
 sha512sums=('72b0b5995795d593a844356e1955bd15e5c1cfc31934e55b748badcc21a29b7862475e7304bd56bd22086fcd31657a37f83acd8aee9343767c31dbfe8aba8e99')
-_distdir="Data-Stag-0.14"
+_distdir="Data-Stag-${pkgver}"
 
 build() {
   ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
