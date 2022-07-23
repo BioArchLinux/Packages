@@ -1,0 +1,21 @@
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=mediawiki-extensions-mobilefrontend
+_pkgname=mediawiki-extensions-MobileFrontend
+_pkg=MobileFrontend
+pkgver=1_38
+pkgrel=1
+pkgdesc="add a mobile view to your mediawiki instance"
+arch=('x86_64')
+url="https://github.com/wikimedia/${_pkgname}"
+license=('GPL')
+depends=('mediawiki')
+makedepends=('git')
+optdepends=('mediawiki-extensions-templatestyles' 'mediawiki-extensions-geodata')
+source=(git+https://github.com/wikimedia/${_pkgname}.git#branch=REL${pkgver})
+noextract=()
+sha256sums=('SKIP')
+
+package() {
+  install -dm755 "$pkgdir"/usr/share/webapps/mediawiki/extensions/${_pkg}
+  mv "$srcdir"/"$_pkgname"/* "$pkgdir"/usr/share/webapps/mediawiki/extensions/${_pkg}/
+}
