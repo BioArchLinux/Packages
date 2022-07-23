@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - regex: Graph-(\d+.\d+)
+    source: regex
+    url: https://metacpan.org/dist/Graph
+repo_depends:
+  - perl-heap
+  - perl-set-object
