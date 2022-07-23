@@ -19,7 +19,8 @@ Thanks!
  -  Website:
  - Download URL:
  - Package description:
-
+ - DOI:
+ 
 <!--
 Popular packages would be considered priorly.
 -->
