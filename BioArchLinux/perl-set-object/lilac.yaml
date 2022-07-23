@@ -6,3 +6,4 @@ update_on:
   - regex: Set-Object-(\d+.\d+)
     source: regex
     url: https://metacpan.org/dist/Set-Object
+  - alias: perl

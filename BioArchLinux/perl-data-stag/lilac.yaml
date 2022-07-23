@@ -6,3 +6,4 @@ update_on:
   - regex: Data-Stag-(\d+.\d+)
     source: regex
     url: https://metacpan.org/dist/Data-Stag
+  - alias: perl

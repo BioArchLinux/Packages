@@ -6,3 +6,4 @@ update_on:
   - regex: XML-DOM-(\d+.\d+)
     source: regex
     url: https://metacpan.org/dist/XML-DOM
+  - alias: perl

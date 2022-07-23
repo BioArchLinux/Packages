@@ -6,3 +6,4 @@ update_on:
   - regex: Heap-(\d+.\d+)
     source: regex
     url: https://metacpan.org/dist/Heap
+  - alias: perl

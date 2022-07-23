@@ -6,3 +6,4 @@ update_on:
   - regex: Set-Scalar-(\d+.\d+)
     source: regex
     url: https://metacpan.org/dist/Set-Scalar
+  - alias: perl

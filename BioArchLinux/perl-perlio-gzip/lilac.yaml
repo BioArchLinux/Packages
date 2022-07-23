@@ -6,3 +6,4 @@ update_on:
   - source: regex
     regex: 'PerlIO-gzip-(\d+.\d+)'
     url: "https://metacpan.org/pod/PerlIO::gzip"
+  - alias: perl
