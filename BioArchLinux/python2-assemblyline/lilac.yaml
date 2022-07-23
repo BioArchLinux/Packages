@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: github
+    github: bmpvieira-forks/assemblyline
+    use_max_tag: true
+    prefix: 'assemblyline-v'
+    include_regex: 'assemblyline-v(\d+.\d+.\d+)'

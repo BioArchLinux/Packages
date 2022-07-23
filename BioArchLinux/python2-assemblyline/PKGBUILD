@@ -1,0 +1,20 @@
+pkgname=python2-assemblyline
+pkgver=0.2.0
+pkgrel=1
+pkgdesc="transcriptome meta-assembly from RNA-Seq"
+arch=('any')
+url="https://github.com/bmpvieira-forks/assemblyline"
+license=('GPL')
+depends=('python2')
+makedepends=('python2-setuptools' 'cython2')
+source=(https://github.com/bmpvieira-forks/assemblyline/archive/refs/tags/assemblyline-v${pkgver}.tar.gz)
+md5sums=('7cfbb95f6cd2b756e996c863994ab560')
+build() {
+  cd "assemblyline-assemblyline-v${pkgver}"
+  python2 setup.py build
+}
+
+package() {
+  cd "assemblyline-assemblyline-v${pkgver}"
+  python2 setup.py install --prefix=/usr --root="${pkgdir}"
+}
