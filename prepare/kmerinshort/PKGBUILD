@@ -1,0 +1,34 @@
+# guoyi
+
+pkgname=kmerinshort
+_pkgname=KmerInShort
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="short kmer counter"
+arch=('x86_64')
+url="https://github.com/rizkg/KmerInShort"
+license=('AGPL')
+
+depends=()
+makedepends=('gcc' 'make' 'cmake' 'git')
+optdepends=()
+
+source=(git+https://github.com/rizkg/KmerInShort.git#tag=v${pkgver})
+sha256sums=('SKIP')
+prepare() {
+  cd "$_pkgname"
+  git submodule update --init --recursive
+  mkdir -p build
+}
+build() {
+  cd "$_pkgname"
+  cd build
+  cmake ..
+  make
+}
+
+package() {
+  cd "$_pkgname"
+
+  make DESTDIR="$pkgdir/" install
+}
