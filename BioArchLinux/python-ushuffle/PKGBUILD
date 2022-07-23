@@ -1,0 +1,23 @@
+# guoyi
+
+pkgname=python-ushuffle
+pkgver=1.1.2
+pkgrel=1
+pkgdesc="A useful tool for shuffling biological sequences while preserving the k-let counts"
+arch=('x86_64')
+url=""
+license=('GPL')
+depends=('python')
+makedepends=('cython' 'python-setuptools')
+source=(https://github.com/guma44/ushuffle/archive/refs/tags/v${pkgver}.tar.gz)
+sha256sums=('fde19b9f1f2b00aa94544b700c3eacdad6b1674de30fc56f81e41f525c3cbda3')
+
+build() {
+  cd "$pkgname-$pkgver"
+  python setup.py install --prefix=/usr --root="${pkgdir}"
+}
+
+package_python-ushuffle() {
+  cd "$pkgname-$pkgver"
+  python setup.py install --prefix=/usr --root="${pkgdir}"
+}
