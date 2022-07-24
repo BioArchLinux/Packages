@@ -8,9 +8,9 @@ pkgdesc="Perl modules for biology"
 arch=('any')
 license=('PerlArtistic' 'GPL')
 options=('!emptydirs')
-depends=('perl-data-stag>=0' 'perl-error>=0' 'perl-graph>=0' 'perl-http-message>=0' 'perl-io-string>=0' 'perl-io-stringy>=0' 'perl-ipc-run>=0' 'perl-list-moreutils>=0' 'perl-module-build>=0' 'perl-set-scalar>=0' 'perl-uri>=0' 'perl-xml-dom>=0' 'perl-xml-libxml>=0' 'perl-xml-sax>=0' 'perl-xml-sax-base>=0' 'perl-xml-sax-writer>=0' 'perl-xml-twig>=0' 'perl-xml-writer>=0' 'perl-yaml>=0' 'perl-libwww>=0' 'libxml-perl>=0' 'perl>=5.006')
+depends=('perl-data-stag' 'perl-error' 'perl-graph' 'perl-http-message' 'perl-io-string' 'perl-io-stringy' 'perl-ipc-run' 'perl-list-moreutils' 'perl-module-build' 'perl-set-scalar' 'perl-uri' 'perl-xml-dom' 'perl-xml-libxml' 'perl-xml-sax' 'perl-xml-sax-base' 'perl-xml-sax-writer' 'perl-xml-twig' 'perl-xml-writer' 'perl-yaml' 'perl-libwww' 'libxml-perl' 'perl')
 makedepends=()
-checkdepends=('perl-test-memory-cycle>=0' 'perl-test-most>=0' 'perl-test-requiresinternet>=0' 'perl-test-weaken>=0')
+checkdepends=('perl-test-memory-cycle' 'perl-test-most' 'perl-test-requiresinternet' 'perl-test-weaken')
 url='https://metacpan.org/dik/BioPerl'
 source=("https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-$pkgver.tar.gz")
 md5sums=('8164ac52f37bc6355ec1b69633ac795f')
