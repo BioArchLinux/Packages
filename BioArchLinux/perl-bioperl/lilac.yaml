@@ -3,9 +3,8 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 update_on:
-  - regex: ^BioPerl-(\d+.\d+.\d+).tar.gz  
-    source: regex
-    url: https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/
+  - source: cmd
+    cmd: curl -sS https://fastapi.metacpan.org/source/CJFIELDS/BioPerl-1.7.8/Changes | grep '[0-9]\+' | head -n 1 | awk '{print $1}'
   - alias: perl
 repo_depends:
   - perl-data-stag
