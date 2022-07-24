@@ -3,7 +3,7 @@
 # Contributor: Jonas Heinrich <onny@project-insantiy.org>
 pkgname='maddy'
 pkgver=0.6.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Composable all-in-one mail server'
 arch=('x86_64')
 url='https://github.com/foxcpp/maddy'
