@@ -1,0 +1,54 @@
+# system requirements: C++11
+# Maintainer: sukanka <su975853527@gmail.com>
+
+_pkgname=MatchIt
+_pkgver=4.4.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Nonparametric Preprocessing for Parametric Causal Inference'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-backports
+  r-rcpp
+  r-rcppprogress
+)
+optdepends=(
+  r-boot
+  r-cbps
+  r-cobalt
+  r-dbarts
+  r-gbm
+  r-glmnet
+  r-gurobi
+  r-knitr
+  r-lmtest
+  r-matching
+  r-mgcv
+  r-nnet
+  r-optmatch
+  r-randomforest
+  r-rcppprogress
+  r-rgenoud
+  r-rglpk
+  r-rmarkdown
+  r-rpart
+  r-rsymphony
+  r-sandwich
+  r-survival
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('e79a96e7972097829a839c855c0bc97638eeae4b148e01340dfa5296323e6c06')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
