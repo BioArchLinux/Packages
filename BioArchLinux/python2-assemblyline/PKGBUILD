@@ -1,6 +1,6 @@
 pkgname=python2-assemblyline
 pkgver=0.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="transcriptome meta-assembly from RNA-Seq"
 arch=('any')
 url="https://github.com/bmpvieira-forks/assemblyline"
