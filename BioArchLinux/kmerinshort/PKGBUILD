@@ -3,15 +3,14 @@
 pkgname=kmerinshort
 _pkgname=KmerInShort
 pkgver=1.0.1
-pkgrel=1
+pkgrel=0
 pkgdesc="short kmer counter"
 arch=('x86_64')
 url="https://github.com/rizkg/KmerInShort"
 license=('AGPL')
 
-depends=()
+depends=('gcc-libs' 'zlib')
 makedepends=('gcc' 'make' 'cmake' 'git')
-optdepends=()
 
 source=(git+https://github.com/rizkg/KmerInShort.git#tag=v${pkgver})
 sha256sums=('SKIP')
@@ -19,16 +18,17 @@ prepare() {
   cd "$_pkgname"
   git submodule update --init --recursive
   mkdir -p build
+
+  sed -i '/sys\/vtimes.h/d' gatb-core/gatb-core/src/gatb/system/impl/SystemInfoCommon.cpp
 }
 build() {
-  cd "$_pkgname"
-  cd build
-  cmake ..
+  cd "$_pkgname"/build
+  cmake ../ -DCMAKE_C_FLAGS='-Wno-error' -DCMAKE_CXX_FLAGS='-Wno-error' \
+    -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
   make
 }
 
 package() {
-  cd "$_pkgname"
-
-  make DESTDIR="$pkgdir/" install
+  cd "$_pkgname"/build
+  install -Dm755 ${_pkgname} -t "$pkgdir/usr/bin"
 }
