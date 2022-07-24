@@ -9,6 +9,7 @@ arch=('any')
 license=('PerlArtistic' 'GPL')
 options=('!emptydirs')
 depends=('perl-bio-db-gff' 'perl-bioperl' 'perl-dbi' 'perl')
+checkdepends=('perl-test-most')
 makedepends=()
 url='https://metacpan.org/release/Bio-DB-SeqFeature'
 source=("http://search.cpan.org/CPAN/authors/id/C/CJ/CJFIELDS/Bio-DB-SeqFeature-${pkgver}.tar.gz")

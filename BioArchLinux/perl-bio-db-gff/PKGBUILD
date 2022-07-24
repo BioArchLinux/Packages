@@ -10,6 +10,7 @@ license=('PerlArtistic' 'GPL')
 options=('!emptydirs')
 depends=('perl-apache-dbi' 'perl-bio-db-biofetch' 'perl-bioperl' 'perl-cgi' 'perl-dbi' 'perl-module-build' 'perl')
 makedepends=()
+checkdepends=('perl-test-most')
 url='https://metacpan.org/release/Bio-DB-GFF'
 source=("http://search.cpan.org/CPAN/authors/id/C/CJ/CJFIELDS/Bio-DB-GFF-${pkgver}.tar.gz")
 md5sums=('f603ebc9a1d8574cdfc4812ef4b9abec')
