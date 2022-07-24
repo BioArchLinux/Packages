@@ -3,7 +3,7 @@
 pkgname=python-ushuffle
 _pkgname=ushuffle
 pkgver=1.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A useful tool for shuffling biological sequences while preserving the k-let counts"
 arch=('x86_64')
 url="https://github.com/guma44/ushuffle/"
@@ -15,7 +15,7 @@ sha256sums=('fde19b9f1f2b00aa94544b700c3eacdad6b1674de30fc56f81e41f525c3cbda3')
 
 build() {
   cd "$_pkgname-$pkgver"
-  python setup.py install --prefix=/usr --root="${pkgdir}"
+  python setup.py build
 }
 
 package_python-ushuffle() {
