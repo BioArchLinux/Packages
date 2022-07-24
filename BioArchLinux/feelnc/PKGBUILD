@@ -3,7 +3,7 @@
 pkgname=feelnc
 _pkgname=FEELnc
 pkgver=0.2.1
-pkgrel=0
+pkgrel=1
 pkgdesc="FlExible Extraction of LncRNA"
 arch=('any')
 url="https://github.com/tderrien/FEELnc"
