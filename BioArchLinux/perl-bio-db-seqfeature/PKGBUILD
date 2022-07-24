@@ -1,0 +1,49 @@
+# Contributor: sukanka <su975853527@gmail.com>
+# Generator  : CPANPLUS::Dist::Arch 1.32
+
+pkgname='perl-bio-db-seqfeature'
+pkgver='1.7.4'
+pkgrel='1'
+pkgdesc="Normalized feature for use with Bio::DB::SeqFeature::Store"
+arch=('any')
+license=('PerlArtistic' 'GPL')
+options=('!emptydirs')
+depends=('perl-bio-db-gff' 'perl-bioperl' 'perl-dbi' 'perl')
+makedepends=()
+url='https://metacpan.org/release/Bio-DB-SeqFeature'
+source=("http://search.cpan.org/CPAN/authors/id/C/CJ/CJFIELDS/Bio-DB-SeqFeature-${pkgver}.tar.gz")
+md5sums=('05a289d46d45f8d3932a4a3f8ed16f6b')
+sha512sums=('8faa8a4a85d15d9e9256edf950b163252f19ff0e1a1ca08df6fdbd57888e782dee325c23c52d878f4174bad67def8c80877da913ca308a6699982debdd91300b')
+_distdir="Bio-DB-SeqFeature-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:

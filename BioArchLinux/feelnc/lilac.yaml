@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+repo_depends:
+  - 'fasta_ushuffle'
+  - 'kmerinshort'
+  - 'perl-bio-db-seqfeature'
+  - 'perl-bioperl'
+  - 'r-rocr'
+  - 'r-randomforest'
+update_on:
+  - source: github
+    github: tderrien/FEELnc
+    use_latest_release: true
+    prefix: 'v.'

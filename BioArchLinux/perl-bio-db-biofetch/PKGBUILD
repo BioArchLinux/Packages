@@ -1,0 +1,30 @@
+# Contributor: sukanka <su975853527@gmail.com>
+# Generator  : CPANPLUS::Dist::Arch 1.32
+
+pkgname='perl-bio-db-biofetch'
+pkgver='1.7.3'
+pkgrel='1'
+pkgdesc=""
+arch=('any')
+license=('PerlArtistic' 'GPL')
+options=('!emptydirs')
+depends=('perl-bioperl')
+makedepends=()
+url='https://github.com/bioperl/Bio-DB-BioFetch'
+source=("https://github.com/bioperl/Bio-DB-BioFetch/archive/refs/tags/Bio-DB-BioFetch-v${pkgver}.tar.gz")
+md5sums=('afa0e7a5adc6a4d61cf7be5a2f4dced2')
+sha512sums=('3e09931af88be0e7d8a3b790eb398beeab86551baad2d105e60715b239ee1dea1461a56507dc5a5873f25d1996de08ab4099d7f5f18f893235361e1ce7f01ebb')
+_distdir="Bio-DB-BioFetch-Bio-DB-BioFetch-v${pkgver}"
+
+
+package() {
+  cd "$srcdir/$_distdir"
+  install -d ${pkgdir}/usr/share/perl5/vendor_perl
+  cp -rf lib/* ${pkgdir}/usr/share/perl5/vendor_perl
+}
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:

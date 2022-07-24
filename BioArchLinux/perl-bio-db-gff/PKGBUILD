@@ -1,0 +1,49 @@
+# Contributor: sukanka <su975853527@gmail.com>
+# Generator  : CPANPLUS::Dist::Arch 1.32
+
+pkgname='perl-bio-db-gff'
+pkgver='1.7.4'
+pkgrel='1'
+pkgdesc="Storage and retrieval of sequence annotation data"
+arch=('any')
+license=('PerlArtistic' 'GPL')
+options=('!emptydirs')
+depends=('perl-apache-dbi' 'perl-bio-db-biofetch' 'perl-bioperl' 'perl-cgi' 'perl-dbi' 'perl-module-build' 'perl')
+makedepends=()
+url='https://metacpan.org/release/Bio-DB-GFF'
+source=("http://search.cpan.org/CPAN/authors/id/C/CJ/CJFIELDS/Bio-DB-GFF-${pkgver}.tar.gz")
+md5sums=('f603ebc9a1d8574cdfc4812ef4b9abec')
+sha512sums=('2ab4a184fc1d65d11372acf5bed62359f66fa25754dfae109438663ab268d3fcd5646a165cafa51dc078a0ffa1a9867dbb64a633122e413d7a75697fb1243a07')
+_distdir="Bio-DB-GFF-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:

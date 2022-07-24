@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: regex
+    regex: 'Bio-DB-SeqFeature-[\d.]+'
+    url: https://metacpan.org/release/Bio-DB-SeqFeature
+  - alias: perl
+repo_depends:
+  - 'perl-bio-db-gff'
+  - 'perl-bioperl'

@@ -1,0 +1,40 @@
+# guoyi
+
+pkgname=feelnc
+_pkgname=FEELnc
+pkgver=0.2.1
+pkgrel=0
+pkgdesc="FlExible Extraction of LncRNA"
+arch=('any')
+url="https://github.com/tderrien/FEELnc"
+license=('GPL3')
+depends=('perl'  'perl-parallel-forkmanager' 'r'
+'perl-bioperl' 'r-rocr' 'r-randomforest' 'kmerinshort' 'fasta_ushuffle'
+'perl-bio-db-seqfeature'
+)
+# These dependencies are needed for sure, ignore namcap.
+source=(${_pkgname}-${pkgver}.tar.gz::https://github.com/tderrien/FEELnc/archive/refs/tags/v.${pkgver}.tar.gz
+)
+sha256sums=('796f1261e2275cb6511ee247ed1145896e02e042fa1f304ea7c806e760adc880')
+
+prepare(){
+  cd ${srcdir}/${_pkgname}-v.${pkgver}
+  # fix for enviroment variables
+  sed -i '2i export FEELNCPATH=/usr/share/FEELnc' utils/*.sh
+  cd lib/Bio/DB/SeqFeature/Store/
+  mv berkeleydb.pm Store.pm
+}
+
+package(){
+  cd ${srcdir}/${_pkgname}-v.${pkgver}
+  install -d ${pkgdir}/usr/share/perl5/vendor_perl
+  cp -rf lib/* ${pkgdir}/usr/share/perl5/vendor_perl
+
+  install -Dm755 utils/*.sh -t ${pkgdir}/usr/bin/
+  install -d ${pkgdir}/usr/share/${_pkgname}
+  cp -rf utils ${pkgdir}/usr/share/${_pkgname}
+
+  install -Dm755 scripts/* -t ${pkgdir}/usr/bin/
+
+  rm -rf ${pkgdir}/usr/share/perl5/vendor_perl/Bio/DB/IndexedBase.pm
+}
