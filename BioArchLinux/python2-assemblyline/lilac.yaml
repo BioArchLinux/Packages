@@ -7,5 +7,4 @@ update_on:
     github: bmpvieira-forks/assemblyline
     use_max_tag: true
     prefix: 'assemblyline-v'
-    include_regex: 'assemblyline-v(\d+.\d+.\d+)'
   - alias: python2
