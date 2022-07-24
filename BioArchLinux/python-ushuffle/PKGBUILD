@@ -13,11 +13,11 @@ source=(https://github.com/guma44/ushuffle/archive/refs/tags/v${pkgver}.tar.gz)
 sha256sums=('fde19b9f1f2b00aa94544b700c3eacdad6b1674de30fc56f81e41f525c3cbda3')
 
 build() {
-  cd "$pkgname-$pkgver"
+  cd "$pkgname-v$pkgver"
   python setup.py install --prefix=/usr --root="${pkgdir}"
 }
 
 package_python-ushuffle() {
-  cd "$pkgname-$pkgver"
+  cd "$pkgname-v$pkgver"
   python setup.py install --prefix=/usr --root="${pkgdir}"
 }
