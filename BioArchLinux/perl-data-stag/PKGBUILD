@@ -3,7 +3,7 @@
 
 pkgname='perl-data-stag'
 pkgver='0.14'
-pkgrel='1'
+pkgrel=2
 pkgdesc="Structured Tags datastructures"
 arch=('any')
 license=('PerlArtistic' 'GPL')
