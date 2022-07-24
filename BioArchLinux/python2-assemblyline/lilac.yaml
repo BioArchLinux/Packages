@@ -7,4 +7,3 @@ update_on:
     github: bmpvieira-forks/assemblyline
     use_max_tag: true
     prefix: 'assemblyline-v'
-  - alias: python2
