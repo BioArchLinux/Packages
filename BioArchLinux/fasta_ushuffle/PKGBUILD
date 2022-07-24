@@ -21,6 +21,6 @@ build() {
 
 package() {
   cd $pkgname
-  installi -Dm755 ushuffle $pkgdir/usr/bin/ushuffle
-  installi -Dm755 fasta_ushuffle $pkgdir/usr/bin/fasta_ushuffle
+  install -Dm755 ushuffle $pkgdir/usr/bin/ushuffle
+  install -Dm755 fasta_ushuffle $pkgdir/usr/bin/fasta_ushuffle
 }
