@@ -1,35 +1,63 @@
 # guoyi
 
-pkgname=gatb-core
+pkgbase=gatb-core
+pkgname=(gatb-core gatb-core-doc)
+_pkgname=gatb-core
 pkgver=1.4.2
-pkgrel=2
-pkgdesc="Core library of the Genome Analysis Toolbox with de-Bruijn graph"
-arch=('any')
-url="https://github.com/GATB/gatb-core"
+pkgrel=1
+pkgdesc="The Genome Analysis Toolbox with de-Bruijn graph"
+arch=('x86_64')
+url="https://github.com/GATB/gatb-core/tree/master"
 license=('AGPL')
+depends=('gcc-libs')
+makedepends=('gcc' 'make' 'cmake' 'doxygen' 'hdf5' 'boost' 'graphviz')
 
-depends=()
-makedepends=('gcc' 'make' 'cmake')
-optdepends=()
+source=(${_pkgname}-${pkgver}.tar.gz::https://github.com/GATB/gatb-core/archive/refs/tags/v${pkgver}.tar.gz
+"gatb.patch"
+)
+sha256sums=('824c84a3712973746b977a9d49923fd499021a894225231100eaad1a66e9742d'
+            '8d5d82352cbd7680c2c560d9de92009815ea13aa05c10ae99b9bfac13d0a7f8d')
 
-source=(https://github.com/GATB/gatb-core/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('824c84a3712973746b977a9d49923fd499021a894225231100eaad1a66e9742d')
-prepare() {
-  cd "$pkgname-$pkgver"/$pkgname
-  mkdir -p build
+prepare(){
+  cd ${srcdir}/gatb-core-${pkgver}/gatb-core/src
+  mkdir build src
+  cp -rf ../thirdparty/{BooPHF,json} src
+  cp -rf  gatb src
+  rm -rf gatb
+  patch -p1 < ${srcdir}/gatb.patch
+  # fix for hdf5
+  find src -type f -print0 | xargs -0 sed -i "s|hdf5/hdf5.h|hdf5.h|g"
 }
 build() {
-  cd "$pkgname-$pkgver"/$pkgname
-  cd build
-  cmake ..
-  make -j 4
+  cd ${srcdir}/gatb-core-${pkgver}/gatb-core/src/build
+  cmake .. -DINT128_FOUND=0 -Dgatb-core-version=${pkgver} \
+    -Dgatb-core-date=$(date -I) -Dgatb-core-flags="-std=c++11 -Wno-invalid-offsetof" \
+    -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+  make
+
+  # doc
+  cd ${srcdir}/gatb-core-${pkgver}/gatb-core/doc
+  cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/share/doc/${pkgbase}
+  make doc
 }
 
-package() {
-  cd "$pkgname-$pkgver"/$pkgname
-  cd build
-  install -dm755 "$pkgdir"/usr/{bin,lib,include}
-  mv bin/* $pkgdir/usr/bin/
-  mv lib/* $pkgdir/usr/lib/
-  mv include/* $pkgdir/usr/include
+package_gatb-core() {
+  cd ${srcdir}/gatb-core-${pkgver}/gatb-core/src/build
+  make install DESTDIR=${pkgdir}
+}
+package_gatb-core-doc() {
+  arch=('any')
+  pkgdesc+=" Documentation"
+  depends=()
+
+  cd ${srcdir}/gatb-core-${pkgver}/gatb-core/doc
+  # fix bugs for CMakelists.txt
+  mkdir doc
+  mv html doc
+
+  make install DESTDIR=${pkgdir}
+  cd ${pkgdir}/usr/share/doc/${pkgbase}
+  find doc/html -type f -print0 | xargs -0 sed -i "s|$srcdir||g"
+  mv doc/html ./
+  rmdir doc
 }
