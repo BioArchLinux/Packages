@@ -5,7 +5,7 @@ maintainers:
 update_on:
   - regex: Graph-(\d+.\d+)
     source: regex
-    url: https://metacpan.org/dist/Graph
+    url: https://metacpan.org/release/Graph
   - alias: perl
 repo_depends:
   - perl-heap
