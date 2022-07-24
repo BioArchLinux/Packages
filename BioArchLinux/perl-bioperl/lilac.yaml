@@ -8,7 +8,6 @@ update_on:
     url: https://metacpan.org/dist/BioPerl
   - alias: perl
 repo_depends:
-  - perl-bioperl
   - perl-data-stag
   - perl-graph
   - perl-perlio-gzip
