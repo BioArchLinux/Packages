@@ -4,7 +4,7 @@ maintainers:
     email: kuoi@bioarchlinux.org
 update_on:
   - source: regex
-    regex: 'Bio-DB-GFF-[\d.]+'
+    regex: 'Bio-DB-GFF-([\d.]+)'
     url: https://metacpan.org/release/Bio-DB-GFF
   - alias: perl
 repo_depends:

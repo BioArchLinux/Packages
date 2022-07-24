@@ -4,6 +4,6 @@ maintainers:
     email: kuoi@bioarchlinux.org
 update_on:
   - source: regex
-    regex: 'Apache-DBI-[\d.]+'
+    regex: 'Apache-DBI-([\d.]+)'
     url: https://metacpan.org/dist/Apache-DBI
   - alias: perl
