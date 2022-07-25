@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=terra
-_pkgver=1.5-34
+_pkgver=1.6-3
 pkgname=r-${_pkgname,,}
-pkgver=1.5.34
+pkgver=1.6.3
 pkgrel=1
 pkgdesc='Spatial Data Analysis'
 arch=('x86_64')
@@ -25,7 +25,7 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3cad88f4fad6517713861a8debc8c7c746c32e0c2ee851bb0c2bc43744fcaa1c')
+sha256sums=('6ed376717e375807d4af026977618572bee185245fdd183b3cbe3835c82f0b0b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
