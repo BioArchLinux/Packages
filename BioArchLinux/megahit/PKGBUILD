@@ -4,7 +4,7 @@
 
 pkgname=megahit
 pkgver=1.2.9
-pkgrel=1
+pkgrel=2
 pkgdesc='Ultra-fast and memory-efficient (meta-)genome assembler'
 url='https://github.com/voutcn/megahit'
 arch=('any')
