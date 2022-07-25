@@ -5,5 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: voutcn/megahit
-    use_max_tag: true
+    use_latest_release: true
     prefix: 'v'
