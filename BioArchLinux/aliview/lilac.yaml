@@ -1,0 +1,7 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: cmd
+    cmd: curl -sS http://www.ormbunkar.se/aliview/downloads/linux/linux-versions-all/ | grep 'linux-version' | sed 's/linux-version-/ /g' | sed 's/\/"/ /g' | awk '{print $6}'

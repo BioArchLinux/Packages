@@ -1,0 +1,26 @@
+pkgname=aliview
+_pkgname=AliView
+pkgver=1.28
+pkgrel=1
+pkgdesc="Software for aligning viewing and editing dna/aminoacid sequences."
+arch=('any')
+url="http://www.ormbunkar.se/aliview/"
+license=('GPL')
+depends=('java-environment')
+noextract=("$pkgname.jar")
+source=("http://www.ormbunkar.se/aliview/downloads/linux/linux-versions-all/linux-version-$pkgver/aliview/AliView.desktop"
+	"http://www.ormbunkar.se/aliview/downloads/linux/linux-versions-all/linux-version-$pkgver/aliview/$pkgname"
+	"http://www.ormbunkar.se/aliview/downloads/linux/linux-versions-all/linux-version-$pkgver/aliview/aliicon_128x128.png"
+	"http://www.ormbunkar.se/aliview/downloads/linux/linux-versions-all/linux-version-$pkgver/aliview/aliview.jar")
+sha256sums=('3f757d5d70e30dfbe948d16f7e748d4fc68041fd0293db97813cc0d129878aee'
+            '38f4fb4b81459e389262b6fb73eac69e7dd9b5f2716d5b8f65cd299fb5bd45b7'
+            'ad448539ff0fa5166644fd30cf8bf4069306e6bb6c6b0a8d05520fb2711f09d7'
+            '87fdf1e7fe5853625edcd9cc5556b898a27109890cecd99c8905f6cbdc10e3ff')
+
+
+package(){
+	install -Dm 755 $pkgname $pkgdir/usr/bin/$pkgname
+	install -Dm 644 $_pkgname.desktop $pkgdir/usr/share/applications/$_pkgname.desktop
+	install -Dm 755 aliicon_128x128.png $pkgdir/usr/share/$pkgname/aliicon_128x128.png
+       install -Dm 755 $pkgname.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
+}
