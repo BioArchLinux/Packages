@@ -1,0 +1,40 @@
+# guoyi
+
+pkgname=mcscanx
+_pkgname=MCScanX
+pkgver=r51.97e74f4
+pkgrel=1
+pkgdesc="Multiple Collinearity Scan toolkit X version"
+arch=('x86_64')
+url="https://github.com/wyp1125/MCScanX"
+license=('BSD')
+
+depends=('java-environment' 'glibc')
+makedepends=('make' 'git')
+optdepends=('perl')
+
+source=(git+https://github.com/wyp1125/MCScanX.git)
+sha256sums=('SKIP')
+pkgver(){
+  cd $_pkgname
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cd "$_pkgname"
+  make
+}
+
+package() {
+  cd "$_pkgname"
+  for bin in "duplicate_gene_classifier" "MCScanX" "MCScanX_h"
+do
+	install -D -m 755 $bin $pkgdir/usr/bin/$bin
+done
+  cd downstream_analyses
+  for downstream in *.java *.pl detect_collinear_tandem_arrays dissect_multiple_alignment
+do
+	install -D -m 755 $downstream $pkgdir/usr/share/$pkgname/$downstream
+done
+
+}
