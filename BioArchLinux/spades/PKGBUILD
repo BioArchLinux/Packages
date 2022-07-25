@@ -21,6 +21,7 @@ makedepends=(
     'bash'
     'openmp'
 )
+checkdepends=('python')
 provides=('spades')
 conflicts=(
     'spades-bin'
