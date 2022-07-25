@@ -22,11 +22,7 @@ makedepends=(
     'openmp'
 )
 checkdepends=('python')
-provides=('spades')
-conflicts=(
-    'spades-bin'
-    'spades-git'
-)
+
 source=(
     "https://github.com/ablab/spades/archive/refs/tags/v$pkgver.tar.gz"
     "spades"
