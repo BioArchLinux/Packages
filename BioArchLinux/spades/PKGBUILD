@@ -1,0 +1,96 @@
+#!/bin/bash
+
+# Maintainer: PumpkinCheshire <me at pumpkincheshire dot top>
+# Maintainer: alienzj <alienchuj at gmail dot com>
+
+pkgname=spades
+pkgver=3.15.5
+pkgrel=1
+pkgdesc='SPAdes Genome Assembler'
+url='http://cab.spbu.ru/software/spades/'
+arch=('x86_64')
+license=('GPLv2')
+depends=('python')
+makedepends=(
+    'gcc'
+    'cmake'
+    'make'
+    'pkgconf'
+    'zlib'
+    'bzip2'
+    'bash'
+    'openmp'
+)
+checkdepends=('python')
+provides=('spades')
+conflicts=(
+    'spades-bin'
+    'spades-git'
+)
+source=(
+    "https://github.com/ablab/spades/archive/refs/tags/v$pkgver.tar.gz"
+    "spades"
+)
+sha512sums=('30aed03cc6047b10657a850897fc43058c0e2deef5402081278b91442820d0829c02505357c84c3dd809ae41adf315c7da195027c5a58fdd9ce9a343e0049879'
+            '20fa67151bea016e088058171cc1cb8668b810046e859a16b609711d7a1e539d4ddb37835bd5c9b881696f6ff9eaec5f0d40873ed09359c100687b861f87d215')
+
+prepare() {
+    cd "$srcdir/$pkgname-$pkgver/assembler" || exit
+
+    mkdir -p bin
+}
+
+build() {
+    cd "$srcdir/$pkgname-$pkgver/assembler" || exit
+
+    ./spades_compile.sh
+}
+
+check() {
+    cd "$srcdir/$pkgname-$pkgver/assembler/bin/" || exit
+
+    python spades.py --test
+}
+
+package() {
+    cd "$srcdir/$pkgname-$pkgver/assembler" || exit
+
+    install -Dm755 "$srcdir/$pkgname" "$pkgdir/usr/bin/$pkgname"
+
+    mkdir -p "$pkgdir/usr/share/$pkgname/"
+
+    cp -R 'bin' "$pkgdir/usr/share/$pkgname/"
+    chmod -R 755 "$pkgdir/usr/share/$pkgname/bin"
+
+    cp -R 'share' "$pkgdir/usr/share/$pkgname/"
+    chmod -R 755 "$pkgdir/usr/share/$pkgname/share"
+
+    ln -s "/usr/share/$pkgname/bin/cds-mapping-stats"           "$pkgdir/usr/bin/cds-mapping-stats"
+    ln -s "/usr/share/$pkgname/bin/cds-subgraphs"               "$pkgdir/usr/bin/cds-subgraphs"
+    ln -s "/usr/share/$pkgname/bin/coronaspades.py"             "$pkgdir/usr/bin/coronaspades.py"
+    ln -s "/usr/share/$pkgname/bin/mag-improve"                 "$pkgdir/usr/bin/mag-improve"
+    ln -s "/usr/share/$pkgname/bin/metaplasmidspades.py"        "$pkgdir/usr/bin/metaplasmidspades.py"
+    ln -s "/usr/share/$pkgname/bin/metaspades.py"               "$pkgdir/usr/bin/metaspades.py"
+    ln -s "/usr/share/$pkgname/bin/metaviralspades.py"          "$pkgdir/usr/bin/metaviralspades.py"
+    ln -s "/usr/share/$pkgname/bin/plasmidspades.py"            "$pkgdir/usr/bin/plasmidspades.py"
+    ln -s "/usr/share/$pkgname/bin/rnaspades.py"                "$pkgdir/usr/bin/rnaspades.py"
+    ln -s "/usr/share/$pkgname/bin/rnaviralspades.py"           "$pkgdir/usr/bin/rnaviralspades.py"
+    ln -s "/usr/share/$pkgname/bin/spades-bwa"                  "$pkgdir/usr/bin/spades-bwa"
+    ln -s "/usr/share/$pkgname/bin/spades-convert-bin-to-fasta" "$pkgdir/usr/bin/spades-convert-bin-to-fasta"
+    ln -s "/usr/share/$pkgname/bin/spades-core"                 "$pkgdir/usr/bin/spades-core"
+    ln -s "/usr/share/$pkgname/bin/spades-corrector-core"       "$pkgdir/usr/bin/spades-corrector-core"
+    ln -s "/usr/share/$pkgname/bin/spades-gbuilder"             "$pkgdir/usr/bin/spades-gbuilder"
+    ln -s "/usr/share/$pkgname/bin/spades-gmapper"              "$pkgdir/usr/bin/spades-gmapper"
+    ln -s "/usr/share/$pkgname/bin/spades-gsimplifier"          "$pkgdir/usr/bin/spades-gsimplifier"
+    ln -s "/usr/share/$pkgname/bin/spades-hammer"               "$pkgdir/usr/bin/spades-hammer"
+    ln -s "/usr/share/$pkgname/bin/spades-ionhammer"            "$pkgdir/usr/bin/spades-ionhammer"
+    ln -s "/usr/share/$pkgname/bin/spades-kmer-estimating"      "$pkgdir/usr/bin/spades-kmer-estimating"
+    ln -s "/usr/share/$pkgname/bin/spades-kmercount"            "$pkgdir/usr/bin/spades-kmercount"
+    ln -s "/usr/share/$pkgname/bin/spades-read-filter"          "$pkgdir/usr/bin/spades-read-filter"
+    ln -s "/usr/share/$pkgname/bin/spades-truseq-scfcorrection" "$pkgdir/usr/bin/spades-truseq-scfcorrection"
+    ln -s "/usr/share/$pkgname/bin/spades.py"                   "$pkgdir/usr/bin/spades.py"
+    ln -s "/usr/share/$pkgname/bin/spades_init.py"              "$pkgdir/usr/bin/spades_init.py"
+    ln -s "/usr/share/$pkgname/bin/spaligner"                   "$pkgdir/usr/bin/spaligner"
+    ln -s "/usr/share/$pkgname/bin/truspades.py"                "$pkgdir/usr/bin/truspades.py"
+
+}
