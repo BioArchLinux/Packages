@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: alienzj
+    email: alienchuj@gmail.com
+update_on:
+  - source: github
+    github: voutcn/megahit
+    use_max_tag: true
+    prefix: 'v'
