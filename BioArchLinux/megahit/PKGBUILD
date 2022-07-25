@@ -18,6 +18,9 @@ makedepends=(
     'cmake'
     'gcc'
 )
+checkdepends=(
+    'python'
+)
 provides=("megahit")
 conflicts=("megahit-bin" "megahit-git")
 source=("$url/archive/refs/tags/v$pkgver.tar.gz")
