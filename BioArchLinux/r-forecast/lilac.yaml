@@ -6,6 +6,7 @@ repo_depends:
 - r-colorspace
 - r-fracdiff
 - r-ggplot2
+- r-generics
 - r-lmtest
 - r-magrittr
 - r-rcpp
