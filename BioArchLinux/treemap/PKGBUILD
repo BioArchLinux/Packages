@@ -3,7 +3,7 @@
 
 pkgname=treemap
 pkgver=3b1243
-pkgrel=4
+pkgrel=5
 pkgdesc="a tool for analysing relationships between evolutionary histories of ecologically linked species"
 arch=('x86_64')
 url="https://sites.google.com/site/cophylogeny/treemap/"
