@@ -25,16 +25,15 @@ source=(
 sha512sums=('30aed03cc6047b10657a850897fc43058c0e2deef5402081278b91442820d0829c02505357c84c3dd809ae41adf315c7da195027c5a58fdd9ce9a343e0049879')
 
 build() {
-  cmake -B ${pkgname}-${pkgver}/assembler/build_spades -S ${pkgname}-${pkgver}/assembler/src \
+  cmake -B build -S ${pkgname}-${pkgver}/assembler/src \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_SKIP_INSTALL_RPATH=ON \
     -DCMAKE_BUILD_TYPE=None
-  make -C ${pkgname}-${pkgver}/assembler/build_spades
-  make DESTDIR=${srcdir}/${pkgname}-${pkgver}/assembler -C ${pkgname}-${pkgver}/assembler/build_spades install
+  make -C build
 }
 
 package() {
-  make DESTDIR="${pkgdir}" -C ${pkgname}-${pkgver}/assembler/build_spades install
+  make DESTDIR="${pkgdir}" -C build install
   ln -s "/usr/bin/spades.py" "${pkgdir}/usr/bin/${pkgname}"
 }
 # vim:set ts=2 sw=2 et:
