@@ -21,6 +21,7 @@ sha256sums=('05dcc619c2e10163f2c1089ec66149f6e53ec5a0583cd2cb8ffdccbbdb1d8183'
 depends=(
 	'java-runtime'
 )
+optdepends=('beagle-lib')
 package() {
     install -dm755 "$pkgdir"/usr/{bin,share/{beast2,applications}}
     sed -i 's/\/usr\/local\/lib/\/usr\/lib/g'  ${srcdir}/beast/bin/beast

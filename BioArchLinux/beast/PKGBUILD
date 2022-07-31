@@ -19,6 +19,7 @@ sha256sums=('be652c4d55953f7c6c7a9d3eb3de203c77dc380e81ad81cfe0492408990c36a8'
             'aca5c3f88ea8624d94b9e6e0e8f4b41a1f981562ad33bee2f35cc15de84f9906')
 depends=('java-runtime')
 makedepends=('java-environment')
+optdepends=('beagle-lib')
 package() {
     install -dm755 "$pkgdir"/usr/{bin,share/{applications,${pkgname}}}
     sed -i 's/\/usr\/local\/lib/\/usr\/lib/g'  ${srcdir}/BEASTv${pkgver}/bin/beast
