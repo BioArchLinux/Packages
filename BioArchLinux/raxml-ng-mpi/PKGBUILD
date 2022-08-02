@@ -12,6 +12,8 @@ depends=('gcc-libs' 'openmpi' 'cuda')
 makedepends=('bison' 'make' 'cmake' 'flex' 'gmp' 'gtest' 'git')
 source=("git+https://github.com/amkozlov/raxml-ng.git#tag=${pkgver}")
 sha256sums=('SKIP')
+provides=('raxml-ng')
+conflicts=('raxml-ng')
 prepare(){
   cd ${srcdir}/raxml-ng
   git submodule update --init --recursive
