@@ -1,22 +1,22 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 # Contributor: Mick Elliot <micke at sfu dot ca>
-pkgname=phyml
+pkgname=phyml-mpi
 pkgver=3.3.20220408
-pkgrel=3
+pkgrel=1
 pkgdesc="Builds phylogenies from DNA or protein sequences using a maximum likelihood approach. https://doi.org/10.1093/sysbio/syq010"
 arch=('i686' 'x86_64')
 url="https://github.com/stephaneguindon/phyml"
 license=('GPL2')
-conflicts=('phyml-mpi')
-depends=('gcc-libs')
+conflicts=('phyml')
+depends=('openmpi' 'gcc-libs')
 makedepends=('make' 'autoconf')
-source=($pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz)
+source=($pkgname-$pkgver.tar.gz::$''url/archive/v$pkgver.tar.gz)
 sha256sums=('9cef375c0186e8a8d4db72ac02148707624c97174ffac244167a138ceb9f65bd')
 
 build() {
   cd "$srcdir/phyml-$pkgver"
   autoreconf --force --install -v
-  ./configure --prefix=/usr --enable-phyml
+  ./configure --prefix=/usr --enable-phyml-mpi
   make
 }
 
