@@ -17,6 +17,7 @@ depends=(
   r-knitr
   r-rmarkdown
   r-shiny
+  r-scales
 )
 optdepends=(
   r-testthat
