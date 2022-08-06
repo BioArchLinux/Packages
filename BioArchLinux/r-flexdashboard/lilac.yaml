@@ -9,6 +9,7 @@ repo_depends:
 - r-knitr
 - r-rmarkdown
 - r-shiny
+- r-scales
 update_on:
 - regex: flexdashboard_([\d._-]+).tar.gz
   source: regex
