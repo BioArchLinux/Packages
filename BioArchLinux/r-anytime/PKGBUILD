@@ -1,38 +1,25 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=shinyWidgets
-_pkgver=0.7.1
+_pkgname=anytime
+_pkgver=0.3.9
 pkgname=r-${_pkgname,,}
-pkgver=0.7.1
-pkgrel=2
-pkgdesc='Custom Inputs Widgets for Shiny'
-arch=('any')
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Anything to 'POSIXct' or 'Date' Converter"
+arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-bslib
-  r-htmltools
-  r-jsonlite
-  r-sass
-  r-shiny
-  r-anytime
+  r-bh
+  r-rcpp
 )
 optdepends=(
-  r-argondash
-  r-argonr
-  r-bs4dash
-  r-covr
-  r-dt
-  r-ggplot2
-  r-scales
-  r-shinydashboard
-  r-shinydashboardplus
-  r-tablerdash
-  r-testthat
+  r-gettz
+  r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3f753f7611bc4ec014b5bf90bc50cdfde15dc2e55e65407d0733831d6882d6c7')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

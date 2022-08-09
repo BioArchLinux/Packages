@@ -8,6 +8,7 @@ repo_depends:
 - r-jsonlite
 - r-sass
 - r-shiny
+- r-anytime
 update_on:
 - regex: shinyWidgets_([\d._-]+).tar.gz
   source: regex
