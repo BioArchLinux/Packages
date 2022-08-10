@@ -3,7 +3,7 @@ from lilaclib import *
 
 
 def apply_patch(filename, patch, reverse=False):
-    rev = "-R" if revert else ""
+    rev = "-R" if reverse else ""
     patch_proc = subprocess.Popen(
         ["patch", "-p1", rev, filename], stdin=subprocess.PIPE, text=True)
     patch_proc.communicate(patch)
