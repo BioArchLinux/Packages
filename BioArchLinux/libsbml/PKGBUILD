@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail>
 pkgname=libsbml
 pkgver=5.19.6
-pkgrel=1
+pkgrel=2
 pkgdesc="XML-based description language for computational models in systems biology"
 url="https://github.com/sbmlteam/libsbml"
 license=('LGPL')
@@ -34,7 +34,7 @@ build() {
     -DENABLE_FBC=ON \
     -DENABLE_GROUPS=ON
 
-  make -j6
+  make
 }
 
 package() {
