@@ -17,7 +17,7 @@ BioArchLinux</h3>
 
 ### ArchLinux and ArchLinux based distributions
 
-Add the fllowing content to the `/etc/pacman.conf`
+Add the following content to the `/etc/pacman.conf`
 ```
 [bioarchlinux]
 Server = https://repo.bioarchlinux.org/$arch
