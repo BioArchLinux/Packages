@@ -5,4 +5,4 @@ maintainers:
 update_on:
 - regex: lasso2_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=lasso2
+  url: https://cran.r-project.org/src/contrib/Archive/lasso2
