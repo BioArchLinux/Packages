@@ -16,6 +16,7 @@ repo_depends:
 - r-scales
 - r-splus2r
 - r-tibble
+- r-confintr
 update_on:
 - regex: ggpmisc_([\d._-]+).tar.gz
   source: regex

@@ -1,42 +1,24 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=ggpmisc
-_pkgver=0.4.7
+_pkgname=confintr
+_pkgver=0.1.2
 pkgname=r-${_pkgname,,}
-pkgver=0.4.7
-pkgrel=2
-pkgdesc="Miscellaneous Extensions to 'ggplot2'"
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Confidence Intervals'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-dplyr
-  r-generics
-  r-ggplot2
-  r-ggpp
-  r-lmodel2
-  r-lubridate
-  r-plyr
-  r-polynom
-  r-quantreg
-  r-rlang
-  r-scales
-  r-splus2r
-  r-tibble
-  r-confintr
 )
 optdepends=(
-  r-broom
-  r-broom.mixed
-  r-gginnards
-  r-ggrepel
   r-knitr
-  r-nlme
   r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fd93e10f23c477cc39e3e776b380afeefc31f89283e09605ad6878b8a86536fc')
+sha256sums=('a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
