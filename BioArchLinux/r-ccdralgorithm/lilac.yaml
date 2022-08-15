@@ -8,4 +8,4 @@ repo_depends:
 update_on:
 - regex: ccdrAlgorithm_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=ccdrAlgorithm
+  url: https://cran.r-project.org/src/contrib/Archive/ccdrAlgorithm
