@@ -4,7 +4,7 @@ _pkgname=additivityTests
 _pkgver=1.1-4.1
 pkgname=r-${_pkgname,,}
 pkgver=1.1.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Additivity Tests in the Two Way Anova with Single Sub-class Numbers'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
