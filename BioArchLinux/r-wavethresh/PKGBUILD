@@ -4,7 +4,7 @@ _pkgname=wavethresh
 _pkgver=4.7.0
 pkgname=r-${_pkgname,,}
 pkgver=4.7.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Wavelets Statistics and Transforms'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
