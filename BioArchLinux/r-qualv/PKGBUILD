@@ -4,7 +4,7 @@ _pkgname=qualV
 _pkgver=0.3-4
 pkgname=r-${_pkgname,,}
 pkgver=0.3.4
-pkgrel=4
+pkgrel=5
 pkgdesc='Qualitative Validation Methods'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
