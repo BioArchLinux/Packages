@@ -4,7 +4,7 @@ _pkgname=MALDIquant
 _pkgver=1.21
 pkgname=r-${_pkgname,,}
 pkgver=1.21
-pkgrel=4
+pkgrel=5
 pkgdesc='Quantitative Analysis of Mass Spectrometry Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
