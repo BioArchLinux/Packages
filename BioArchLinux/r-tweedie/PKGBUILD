@@ -4,7 +4,7 @@ _pkgname=tweedie
 _pkgver=2.3.3
 pkgname=r-${_pkgname,,}
 pkgver=2.3.3
-pkgrel=4
+pkgrel=5
 pkgdesc='Evaluation of Tweedie Exponential Family Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
