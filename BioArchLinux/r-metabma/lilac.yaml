@@ -18,4 +18,4 @@ update_on:
   - regex: metaBMA_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=metaBMA
-- alias: r
+  - alias: r
