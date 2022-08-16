@@ -5,7 +5,7 @@ _pkgname=fs
 _pkgver=1.5.2
 pkgname=r-${_pkgname,,}
 pkgver=1.5.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Cross-Platform File System Operations Based on 'libuv'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
