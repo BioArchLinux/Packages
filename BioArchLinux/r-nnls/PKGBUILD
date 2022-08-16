@@ -4,7 +4,7 @@ _pkgname=nnls
 _pkgver=1.4
 pkgname=r-${_pkgname,,}
 pkgver=1.4
-pkgrel=4
+pkgrel=5
 pkgdesc='The Lawson-Hanson algorithm for non-negative least squares (NNLS)'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
