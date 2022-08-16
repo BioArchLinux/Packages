@@ -4,7 +4,7 @@ _pkgname=IDPmisc
 _pkgver=1.1.20
 pkgname=r-${_pkgname,,}
 pkgver=1.1.20
-pkgrel=4
+pkgrel=5
 pkgdesc="'Utilities of Institute of Data Analyses and Process Design (www.zhaw.ch/idp)'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
