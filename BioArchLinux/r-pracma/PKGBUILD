@@ -4,7 +4,7 @@ _pkgname=pracma
 _pkgver=2.3.8
 pkgname=r-${_pkgname,,}
 pkgver=2.3.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Practical Numerical Math Functions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
