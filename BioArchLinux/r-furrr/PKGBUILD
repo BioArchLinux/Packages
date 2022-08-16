@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=furrr
-_pkgver=0.3.0
+_pkgver=0.3.1
 pkgname=r-${_pkgname,,}
-pkgver=0.3.0
+pkgver=0.3.1
 pkgrel=1
 pkgdesc='Apply Mapping Functions in Parallel using Futures'
 arch=('any')
@@ -32,7 +32,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3fe91cc1614f9404c708ea3a15b6a40289fa57f40f3ece54452093408d91fd84')
+sha256sums=('0d91735e2e9be759b1ab148d115c2c7429b79740514778828e5dab631dc0e48b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
