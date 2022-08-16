@@ -5,7 +5,7 @@ _pkgname=remotes
 _pkgver=2.4.2
 pkgname=r-${_pkgname,,}
 pkgver=2.4.2
-pkgrel=4
+pkgrel=5
 pkgdesc="R Package Installation from Remote Repositories, Including 'GitHub'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
