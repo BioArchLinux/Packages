@@ -4,7 +4,7 @@ _pkgname=RcppProgress
 _pkgver=0.4.2
 pkgname=r-${_pkgname,,}
 pkgver=0.4.2
-pkgrel=4
+pkgrel=5
 pkgdesc='An Interruptible Progress Bar with OpenMP Support for C++ in R Packages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
