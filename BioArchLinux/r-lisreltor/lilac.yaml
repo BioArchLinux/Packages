@@ -5,4 +5,4 @@ update_on:
   - regex: lisrelToR_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=lisrelToR
-- alias: r
+  - alias: r
