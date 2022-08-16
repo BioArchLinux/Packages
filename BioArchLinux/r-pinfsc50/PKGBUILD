@@ -4,7 +4,7 @@ _pkgname=pinfsc50
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=1.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Sequence, Annotation and Variants for 17 Samples of P. Infestans and 1 P. Mirabilis"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
