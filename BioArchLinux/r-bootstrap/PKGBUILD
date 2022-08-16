@@ -4,7 +4,7 @@ _pkgname=bootstrap
 _pkgver=2019.6
 pkgname=r-${_pkgname,,}
 pkgver=2019.6
-pkgrel=4
+pkgrel=5
 pkgdesc='Functions for the Book "An Introduction to the Bootstrap"'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
