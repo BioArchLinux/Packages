@@ -2,17 +2,17 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=av
-_pkgver=0.7.0
+_pkgver=0.8.0
 pkgname=r-${_pkgname,,}
-pkgver=0.7.0
-pkgrel=4
+pkgver=0.8.0
+pkgrel=0
 pkgdesc='Working with Audio and Video in R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  ffmpeg
+  ffmpeg4.4
 )
 optdepends=(
   r-gapminder
@@ -21,10 +21,11 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b4e773d756b28942160bcf9c551f557793242fe025d74fcc544dc0a773cb8c00')
+sha256sums=('7ba8d81126247f8df6f732ad28a5f588eff6ff2d8a863424004fb0d20cf4421a')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL  --configure-vars="LIB_DIR='/usr/lib/ffmpeg4.4' INCLUDE_DIR='/usr/include/ffmpeg4.4'" \
+    ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
 package() {
