@@ -4,7 +4,7 @@ _pkgname=ISOcodes
 _pkgver=2022.01.10
 pkgname=r-${_pkgname,,}
 pkgver=2022.01.10
-pkgrel=4
+pkgrel=5
 pkgdesc='Selected ISO Codes'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
