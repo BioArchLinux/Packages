@@ -15,3 +15,4 @@ update_on:
 - regex: MMUPHin_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MMUPHin
+- alias: r

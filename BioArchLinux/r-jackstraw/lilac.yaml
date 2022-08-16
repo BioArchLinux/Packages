@@ -13,3 +13,4 @@ update_on:
 - regex: jackstraw_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/jackstraw/
+- alias: r

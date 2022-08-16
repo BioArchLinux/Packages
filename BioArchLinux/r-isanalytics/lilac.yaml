@@ -32,3 +32,4 @@ update_on:
 - regex: ISAnalytics_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ISAnalytics
+- alias: r

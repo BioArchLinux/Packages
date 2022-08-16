@@ -14,3 +14,4 @@ update_on:
 - regex: tigre_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tigre
+- alias: r

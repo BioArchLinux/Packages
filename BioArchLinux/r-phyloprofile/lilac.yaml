@@ -30,3 +30,4 @@ update_on:
 - regex: PhyloProfile_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PhyloProfile
+- alias: r

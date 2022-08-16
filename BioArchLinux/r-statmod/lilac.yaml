@@ -6,3 +6,4 @@ update_on:
 - regex: statmod_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=statmod
+- alias: r

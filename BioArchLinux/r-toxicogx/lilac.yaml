@@ -25,3 +25,4 @@ update_on:
 - regex: ToxicoGx_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ToxicoGx
+- alias: r

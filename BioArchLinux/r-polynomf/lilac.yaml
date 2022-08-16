@@ -8,3 +8,4 @@ update_on:
 - regex: PolynomF_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=PolynomF
+- alias: r

@@ -17,3 +17,4 @@ update_on:
 - regex: transite_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/transite
+- alias: r

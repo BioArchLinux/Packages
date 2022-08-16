@@ -15,3 +15,4 @@ update_on:
 - regex: BindingSiteFinder_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BindingSiteFinder
+- alias: r

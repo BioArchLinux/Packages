@@ -14,3 +14,4 @@ update_on:
 - regex: OpenStats_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/OpenStats
+- alias: r

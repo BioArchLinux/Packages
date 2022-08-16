@@ -10,3 +10,4 @@ update_on:
 - regex: edgeR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/edgeR
+- alias: r

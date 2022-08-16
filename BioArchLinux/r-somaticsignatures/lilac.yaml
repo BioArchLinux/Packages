@@ -20,3 +20,4 @@ update_on:
 - regex: SomaticSignatures_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SomaticSignatures
+- alias: r

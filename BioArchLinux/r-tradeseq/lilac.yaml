@@ -24,3 +24,4 @@ update_on:
 - regex: tradeSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tradeSeq
+- alias: r

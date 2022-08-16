@@ -10,3 +10,4 @@ update_on:
 - regex: Wrench_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Wrench
+- alias: r

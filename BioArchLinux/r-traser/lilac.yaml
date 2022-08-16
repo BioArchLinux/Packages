@@ -10,3 +10,4 @@ update_on:
 - regex: traseR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/traseR
+- alias: r

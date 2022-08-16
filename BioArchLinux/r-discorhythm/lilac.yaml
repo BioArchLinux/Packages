@@ -37,3 +37,4 @@ update_on:
 - regex: DiscoRhythm_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DiscoRhythm
+- alias: r

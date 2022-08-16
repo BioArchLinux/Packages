@@ -6,3 +6,4 @@ update_on:
 - regex: utf8_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=utf8
+- alias: r

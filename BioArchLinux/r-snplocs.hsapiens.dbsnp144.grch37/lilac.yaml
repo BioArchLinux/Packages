@@ -13,3 +13,4 @@ update_on:
 - regex: SNPlocs.Hsapiens.dbSNP144.GRCh37_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SNPlocs.Hsapiens.dbSNP144.GRCh37
+- alias: r

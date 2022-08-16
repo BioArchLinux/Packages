@@ -24,3 +24,4 @@ update_on:
 - regex: GUIDEseq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GUIDEseq
+- alias: r

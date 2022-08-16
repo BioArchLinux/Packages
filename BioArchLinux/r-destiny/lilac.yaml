@@ -28,3 +28,4 @@ update_on:
 - regex: destiny_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/destiny
+- alias: r

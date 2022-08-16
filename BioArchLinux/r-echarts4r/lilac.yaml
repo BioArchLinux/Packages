@@ -18,3 +18,4 @@ update_on:
 - regex: echarts4r_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=echarts4r
+- alias: r

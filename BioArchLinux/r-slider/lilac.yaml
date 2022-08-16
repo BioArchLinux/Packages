@@ -12,3 +12,4 @@ update_on:
 - regex: slider_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=slider
+- alias: r

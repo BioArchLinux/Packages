@@ -8,3 +8,4 @@ update_on:
 - regex: ecolitk_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ecolitk
+- alias: r

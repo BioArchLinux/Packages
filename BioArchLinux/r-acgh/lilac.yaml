@@ -9,3 +9,4 @@ update_on:
 - regex: aCGH_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/aCGH
+- alias: r

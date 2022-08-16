@@ -13,3 +13,4 @@ update_on:
 - regex: nempi_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/nempi
+- alias: r

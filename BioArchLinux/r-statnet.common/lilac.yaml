@@ -8,3 +8,4 @@ update_on:
 - regex: statnet.common_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=statnet.common
+- alias: r

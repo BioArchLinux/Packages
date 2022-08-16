@@ -21,3 +21,4 @@ update_on:
 - regex: kableExtra_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=kableExtra
+- alias: r

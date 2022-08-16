@@ -6,3 +6,4 @@ update_on:
 - regex: xml2_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=xml2
+- alias: r

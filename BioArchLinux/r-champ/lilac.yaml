@@ -46,3 +46,4 @@ update_on:
 - regex: ChAMP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ChAMP
+- alias: r

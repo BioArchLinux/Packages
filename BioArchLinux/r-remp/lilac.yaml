@@ -29,3 +29,4 @@ update_on:
 - regex: REMP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/REMP
+- alias: r

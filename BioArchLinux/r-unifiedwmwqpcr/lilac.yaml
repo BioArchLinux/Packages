@@ -9,3 +9,4 @@ update_on:
 - regex: unifiedWMWqPCR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/unifiedWMWqPCR
+- alias: r

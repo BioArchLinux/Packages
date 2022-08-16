@@ -27,3 +27,4 @@ update_on:
 - regex: EWCE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/EWCE
+- alias: r

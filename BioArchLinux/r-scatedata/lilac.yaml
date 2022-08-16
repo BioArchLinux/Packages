@@ -10,3 +10,4 @@ update_on:
 - regex: SCATEData_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SCATEData
+- alias: r

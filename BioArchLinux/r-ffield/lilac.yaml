@@ -6,3 +6,4 @@ update_on:
 - regex: FField_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/FField/
+- alias: r

@@ -14,3 +14,4 @@ update_on:
 - regex: HPAStainR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/HPAStainR
+- alias: r

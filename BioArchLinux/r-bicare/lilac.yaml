@@ -10,3 +10,4 @@ update_on:
 - regex: BicARE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BicARE
+- alias: r

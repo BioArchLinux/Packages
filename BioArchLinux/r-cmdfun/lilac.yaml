@@ -13,3 +13,4 @@ update_on:
 - regex: cmdfun_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=cmdfun
+- alias: r

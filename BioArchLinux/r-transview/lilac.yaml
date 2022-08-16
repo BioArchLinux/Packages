@@ -14,3 +14,4 @@ update_on:
 - regex: TransView_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TransView
+- alias: r

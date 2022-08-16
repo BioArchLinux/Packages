@@ -13,3 +13,4 @@ update_on:
 - regex: phastCons100way.UCSC.hg19_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/phastCons100way.UCSC.hg19
+- alias: r

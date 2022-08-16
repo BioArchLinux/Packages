@@ -18,3 +18,4 @@ update_on:
 - regex: multipanelfigure_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=multipanelfigure
+- alias: r

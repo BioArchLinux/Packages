@@ -27,3 +27,4 @@ update_on:
 - regex: BioNERO_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BioNERO
+- alias: r

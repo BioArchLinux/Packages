@@ -13,3 +13,4 @@ update_on:
 - regex: apeglm_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/apeglm
+- alias: r

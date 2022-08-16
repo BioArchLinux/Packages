@@ -15,3 +15,4 @@ update_on:
 - regex: OmaDB_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/OmaDB
+- alias: r

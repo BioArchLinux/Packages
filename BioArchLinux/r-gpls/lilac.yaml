@@ -6,3 +6,4 @@ update_on:
 - regex: gpls_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/gpls
+- alias: r

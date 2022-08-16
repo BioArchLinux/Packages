@@ -23,3 +23,4 @@ update_on:
 - regex: deconvR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/deconvR
+- alias: r

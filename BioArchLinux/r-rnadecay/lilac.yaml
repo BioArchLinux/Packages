@@ -12,3 +12,4 @@ update_on:
 - regex: RNAdecay_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RNAdecay
+- alias: r

@@ -27,3 +27,4 @@ update_on:
 - regex: missMethyl_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/missMethyl
+- alias: r

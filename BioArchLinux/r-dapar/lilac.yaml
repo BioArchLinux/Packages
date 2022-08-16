@@ -54,3 +54,4 @@ update_on:
 - regex: DAPAR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DAPAR
+- alias: r

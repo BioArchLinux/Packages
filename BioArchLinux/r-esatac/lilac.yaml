@@ -38,3 +38,4 @@ update_on:
 - regex: esATAC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/esATAC
+- alias: r

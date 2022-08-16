@@ -13,3 +13,4 @@ update_on:
 - regex: Rbec_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Rbec
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: gamlss_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gamlss
+- alias: r

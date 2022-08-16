@@ -6,3 +6,4 @@ update_on:
 - regex: lpSolve_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=lpSolve
+- alias: r

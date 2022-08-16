@@ -24,3 +24,4 @@ update_on:
 - regex: CRISPRseek_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CRISPRseek
+- alias: r

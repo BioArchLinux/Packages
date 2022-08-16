@@ -7,3 +7,4 @@ update_on:
   - regex: corpus_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=corpus
+- alias: r

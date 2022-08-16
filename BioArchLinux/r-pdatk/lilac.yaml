@@ -35,3 +35,4 @@ update_on:
 - regex: PDATK_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PDATK
+- alias: r

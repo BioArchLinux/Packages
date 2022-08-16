@@ -27,3 +27,4 @@ update_on:
 - regex: INSPEcT_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/INSPEcT
+- alias: r

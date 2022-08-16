@@ -19,3 +19,4 @@ update_on:
 - regex: lisaClust_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/lisaClust
+- alias: r

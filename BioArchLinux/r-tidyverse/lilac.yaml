@@ -36,3 +36,4 @@ update_on:
 - regex: tidyverse_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=tidyverse
+- alias: r

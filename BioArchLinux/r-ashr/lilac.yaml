@@ -13,3 +13,4 @@ update_on:
 - regex: ashr_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ashr
+- alias: r

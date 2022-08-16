@@ -6,3 +6,4 @@ update_on:
 - regex: cMap2data_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cMap2data
+- alias: r

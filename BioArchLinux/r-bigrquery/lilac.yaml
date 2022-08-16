@@ -22,3 +22,4 @@ update_on:
 - regex: bigrquery_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=bigrquery
+- alias: r

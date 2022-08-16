@@ -14,3 +14,4 @@ update_on:
 - regex: ggfortify_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggfortify
+- alias: r

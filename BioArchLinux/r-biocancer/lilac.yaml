@@ -31,3 +31,4 @@ update_on:
 - regex: bioCancer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/bioCancer
+- alias: r

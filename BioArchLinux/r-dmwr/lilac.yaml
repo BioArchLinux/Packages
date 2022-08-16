@@ -6,6 +6,7 @@ update_on:
 - regex: DMwR_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/DMwR/
+- alias: r
 repo_depends:
 - r-xts
 - r-quantmod

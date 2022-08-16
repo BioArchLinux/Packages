@@ -10,3 +10,4 @@ update_on:
 - regex: metafor_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=metafor
+- alias: r

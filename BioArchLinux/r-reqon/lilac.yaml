@@ -10,3 +10,4 @@ update_on:
 - regex: ReQON_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ReQON
+- alias: r

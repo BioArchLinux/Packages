@@ -12,3 +12,4 @@ update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
     url: https://raw.githubusercontent.com/AlexanderLyNL/bstats/master/DESCRIPTION
+- alias: r

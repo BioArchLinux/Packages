@@ -9,3 +9,4 @@ update_on:
 - regex: biodbChebi_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biodbChebi
+- alias: r

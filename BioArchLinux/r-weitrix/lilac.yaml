@@ -25,3 +25,4 @@ update_on:
 - regex: weitrix_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/weitrix
+- alias: r

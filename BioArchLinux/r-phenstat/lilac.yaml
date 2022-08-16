@@ -19,3 +19,4 @@ update_on:
 - regex: PhenStat_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PhenStat
+- alias: r

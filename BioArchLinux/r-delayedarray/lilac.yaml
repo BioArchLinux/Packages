@@ -11,3 +11,4 @@ update_on:
 - regex: DelayedArray_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DelayedArray
+- alias: r

@@ -10,3 +10,4 @@ update_on:
 - regex: lefser_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/lefser
+- alias: r

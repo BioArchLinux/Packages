@@ -19,3 +19,4 @@ update_on:
 - regex: iCOBRA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/iCOBRA
+- alias: r

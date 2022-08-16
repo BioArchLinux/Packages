@@ -10,3 +10,4 @@ update_on:
 - regex: ggfittext_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggfittext
+- alias: r

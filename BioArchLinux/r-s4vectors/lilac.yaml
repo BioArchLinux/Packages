@@ -8,3 +8,4 @@ update_on:
 - regex: S4Vectors_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/S4Vectors
+- alias: r

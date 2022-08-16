@@ -8,3 +8,4 @@ update_on:
 - regex: MiChip_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MiChip
+- alias: r

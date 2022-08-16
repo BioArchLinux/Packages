@@ -17,3 +17,4 @@ update_on:
 - regex: ReactomeGraph4R_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ReactomeGraph4R
+- alias: r

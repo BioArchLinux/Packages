@@ -8,3 +8,4 @@ update_on:
 - regex: rebus.numbers_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=rebus.numbers
+- alias: r

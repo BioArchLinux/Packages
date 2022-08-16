@@ -15,3 +15,4 @@ update_on:
 - regex: FactoMineR_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=FactoMineR
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: DTA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DTA
+- alias: r

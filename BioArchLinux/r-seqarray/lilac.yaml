@@ -13,3 +13,4 @@ update_on:
 - regex: SeqArray_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SeqArray
+- alias: r

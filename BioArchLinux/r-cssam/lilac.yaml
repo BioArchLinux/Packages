@@ -5,3 +5,4 @@ update_on:
   - regex: csSAM_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/src/contrib/Archive/csSAM/
+- alias: r

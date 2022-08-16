@@ -17,3 +17,4 @@ update_on:
 - regex: omicplotR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/omicplotR
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: ncdf4_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ncdf4
+- alias: r

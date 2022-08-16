@@ -21,3 +21,4 @@ update_on:
 - regex: GA4GHshiny_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GA4GHshiny
+- alias: r

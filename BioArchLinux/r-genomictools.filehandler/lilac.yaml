@@ -9,3 +9,4 @@ update_on:
 - regex: GenomicTools.fileHandler_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=GenomicTools.fileHandler
+- alias: r

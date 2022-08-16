@@ -9,3 +9,4 @@ update_on:
 - regex: assertive.data_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=assertive.data
+- alias: r

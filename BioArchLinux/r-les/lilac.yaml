@@ -10,3 +10,4 @@ update_on:
 - regex: les_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/les
+- alias: r

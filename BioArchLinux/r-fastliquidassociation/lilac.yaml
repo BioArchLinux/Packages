@@ -13,3 +13,4 @@ update_on:
 - regex: fastLiquidAssociation_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/fastLiquidAssociation
+- alias: r

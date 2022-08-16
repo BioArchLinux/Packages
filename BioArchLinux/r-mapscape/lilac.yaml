@@ -11,3 +11,4 @@ update_on:
 - regex: mapscape_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/mapscape
+- alias: r

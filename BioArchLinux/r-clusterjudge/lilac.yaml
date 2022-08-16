@@ -11,3 +11,4 @@ update_on:
 - regex: ClusterJudge_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ClusterJudge
+- alias: r

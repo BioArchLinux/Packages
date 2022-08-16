@@ -6,3 +6,4 @@ update_on:
 - regex: extrafontdb_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=extrafontdb
+- alias: r

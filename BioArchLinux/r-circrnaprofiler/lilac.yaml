@@ -30,3 +30,4 @@ update_on:
 - regex: circRNAprofiler_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/circRNAprofiler
+- alias: r

@@ -19,3 +19,4 @@ update_on:
 - regex: multiHiCcompare_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/multiHiCcompare
+- alias: r

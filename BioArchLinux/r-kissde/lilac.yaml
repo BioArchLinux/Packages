@@ -22,3 +22,4 @@ update_on:
 - regex: kissDE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/kissDE
+- alias: r

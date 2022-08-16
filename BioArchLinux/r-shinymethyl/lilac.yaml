@@ -13,3 +13,4 @@ update_on:
 - regex: shinyMethyl_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/shinyMethyl
+- alias: r

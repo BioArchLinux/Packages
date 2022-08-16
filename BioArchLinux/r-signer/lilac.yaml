@@ -18,3 +18,4 @@ update_on:
 - regex: signeR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/signeR
+- alias: r

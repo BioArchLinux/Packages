@@ -14,3 +14,4 @@ update_on:
 - regex: caretEnsemble_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=caretEnsemble
+- alias: r

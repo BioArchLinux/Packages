@@ -12,3 +12,4 @@ update_on:
 - regex: EpiDISH_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/EpiDISH
+- alias: r

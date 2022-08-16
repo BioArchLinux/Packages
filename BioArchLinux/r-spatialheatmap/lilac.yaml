@@ -43,3 +43,4 @@ update_on:
 - regex: spatialHeatmap_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/spatialHeatmap
+- alias: r

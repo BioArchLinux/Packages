@@ -8,3 +8,4 @@ update_on:
 - regex: FlowSorted.Blood.450k_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/FlowSorted.Blood.450k
+- alias: r

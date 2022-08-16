@@ -19,3 +19,4 @@ update_on:
 - regex: forecast_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=forecast
+- alias: r

@@ -16,3 +16,4 @@ update_on:
 - regex: M3Drop_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/M3Drop
+- alias: r

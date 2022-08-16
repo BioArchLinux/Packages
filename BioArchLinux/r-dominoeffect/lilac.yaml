@@ -16,3 +16,4 @@ update_on:
 - regex: DominoEffect_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DominoEffect
+- alias: r

@@ -31,3 +31,4 @@ update_on:
 - regex: conclus_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/conclus
+- alias: r

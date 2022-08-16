@@ -13,3 +13,4 @@ update_on:
 - regex: RNAAgeCalc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RNAAgeCalc
+- alias: r

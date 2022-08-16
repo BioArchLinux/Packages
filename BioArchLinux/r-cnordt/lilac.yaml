@@ -9,3 +9,4 @@ update_on:
 - regex: CNORdt_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CNORdt
+- alias: r

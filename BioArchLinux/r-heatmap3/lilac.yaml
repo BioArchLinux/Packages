@@ -8,3 +8,4 @@ update_on:
 - regex: heatmap3_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=heatmap3
+- alias: r

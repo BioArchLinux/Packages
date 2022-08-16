@@ -14,3 +14,4 @@ update_on:
 - regex: DelayedTensor_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DelayedTensor
+- alias: r

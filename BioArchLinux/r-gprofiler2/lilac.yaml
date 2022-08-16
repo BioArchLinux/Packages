@@ -16,3 +16,4 @@ update_on:
 - regex: gprofiler2_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gprofiler2
+- alias: r

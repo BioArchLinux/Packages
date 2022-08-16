@@ -16,3 +16,4 @@ update_on:
 - regex: StarBioTrek_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/StarBioTrek
+- alias: r

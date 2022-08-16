@@ -21,3 +21,4 @@ update_on:
 - regex: ontoProc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ontoProc
+- alias: r

@@ -10,3 +10,4 @@ update_on:
 - regex: ncGTW_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ncGTW
+- alias: r

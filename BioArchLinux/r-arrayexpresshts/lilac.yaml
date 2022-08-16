@@ -27,3 +27,4 @@ update_on:
 - regex: ArrayExpressHTS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ArrayExpressHTS
+- alias: r

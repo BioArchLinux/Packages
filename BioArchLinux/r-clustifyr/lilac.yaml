@@ -24,3 +24,4 @@ update_on:
 - regex: clustifyr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/clustifyr
+- alias: r

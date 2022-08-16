@@ -26,3 +26,4 @@ update_on:
 - regex: scTGIF_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scTGIF
+- alias: r

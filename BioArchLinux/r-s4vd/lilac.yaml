@@ -10,3 +10,4 @@ update_on:
 - regex: s4vd_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=s4vd
+- alias: r

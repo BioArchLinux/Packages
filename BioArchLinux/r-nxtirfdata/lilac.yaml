@@ -11,3 +11,4 @@ update_on:
 - regex: NxtIRFdata_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/NxtIRFdata
+- alias: r

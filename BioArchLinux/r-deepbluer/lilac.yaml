@@ -22,3 +22,4 @@ update_on:
 - regex: DeepBlueR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DeepBlueR
+- alias: r

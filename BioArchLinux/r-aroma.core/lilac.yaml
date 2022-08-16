@@ -20,3 +20,4 @@ update_on:
 - regex: aroma.core_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=aroma.core
+- alias: r

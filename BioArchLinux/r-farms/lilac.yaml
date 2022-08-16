@@ -9,3 +9,4 @@ update_on:
 - regex: farms_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/farms
+- alias: r

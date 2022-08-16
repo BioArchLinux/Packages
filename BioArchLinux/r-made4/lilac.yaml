@@ -13,3 +13,4 @@ update_on:
 - regex: made4_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/made4
+- alias: r

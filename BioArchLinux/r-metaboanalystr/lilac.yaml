@@ -41,3 +41,4 @@ update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
     url: https://raw.githubusercontent.com/xia-lab/MetaboAnalystR/master/DESCRIPTION
+- alias: r

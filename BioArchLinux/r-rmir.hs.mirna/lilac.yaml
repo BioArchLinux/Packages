@@ -8,3 +8,4 @@ update_on:
 - regex: RmiR.Hs.miRNA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RmiR.Hs.miRNA
+- alias: r

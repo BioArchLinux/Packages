@@ -6,3 +6,4 @@ update_on:
 - regex: mdqc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/mdqc
+- alias: r

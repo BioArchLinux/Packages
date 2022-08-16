@@ -8,3 +8,4 @@ update_on:
 - regex: ewceData_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ewceData
+- alias: r

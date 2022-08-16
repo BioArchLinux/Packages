@@ -26,3 +26,4 @@ update_on:
 - regex: testthat_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=testthat
+- alias: r

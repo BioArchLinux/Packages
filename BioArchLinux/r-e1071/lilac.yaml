@@ -8,3 +8,4 @@ update_on:
 - regex: e1071_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=e1071
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: splus2R_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=splus2R
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: assertive.numbers_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=assertive.numbers
+- alias: r

@@ -24,3 +24,4 @@ update_on:
 - regex: phenoTest_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/phenoTest
+- alias: r

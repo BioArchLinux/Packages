@@ -6,3 +6,4 @@ update_on:
 - regex: sizepower_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/sizepower
+- alias: r

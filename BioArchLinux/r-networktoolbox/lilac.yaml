@@ -18,3 +18,4 @@ update_on:
   - regex: NetworkToolbox_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=NetworkToolbox
+- alias: r

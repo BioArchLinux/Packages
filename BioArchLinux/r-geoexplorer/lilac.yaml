@@ -26,3 +26,4 @@ update_on:
 - regex: GEOexplorer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GEOexplorer
+- alias: r

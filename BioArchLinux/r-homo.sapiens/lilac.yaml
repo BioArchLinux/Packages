@@ -13,3 +13,4 @@ update_on:
 - regex: Homo.sapiens_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Homo.sapiens
+- alias: r

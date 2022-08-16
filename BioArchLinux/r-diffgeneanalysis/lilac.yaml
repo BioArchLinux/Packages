@@ -8,3 +8,4 @@ update_on:
 - regex: diffGeneAnalysis_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/diffGeneAnalysis
+- alias: r

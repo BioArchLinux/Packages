@@ -11,3 +11,4 @@ update_on:
 - regex: ccaPP_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ccaPP
+- alias: r

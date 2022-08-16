@@ -15,3 +15,4 @@ update_on:
 - regex: wateRmelon_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/wateRmelon
+- alias: r

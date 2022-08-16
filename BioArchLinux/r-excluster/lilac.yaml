@@ -12,3 +12,4 @@ update_on:
 - regex: ExCluster_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ExCluster
+- alias: r

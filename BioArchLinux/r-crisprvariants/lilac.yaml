@@ -19,3 +19,4 @@ update_on:
 - regex: CrispRVariants_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CrispRVariants
+- alias: r

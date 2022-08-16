@@ -6,3 +6,4 @@ update_on:
 - regex: scatterplot3d_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=scatterplot3d
+- alias: r

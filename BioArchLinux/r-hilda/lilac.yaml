@@ -23,3 +23,4 @@ update_on:
 - regex: HiLDA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/HiLDA
+- alias: r

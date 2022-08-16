@@ -9,3 +9,4 @@ update_on:
   - regex: papeR_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=papeR
+- alias: r

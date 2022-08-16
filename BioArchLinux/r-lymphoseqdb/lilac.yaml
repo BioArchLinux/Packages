@@ -6,3 +6,4 @@ update_on:
 - regex: LymphoSeqDB_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/LymphoSeqDB
+- alias: r

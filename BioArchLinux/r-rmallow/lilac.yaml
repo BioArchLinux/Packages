@@ -8,3 +8,4 @@ update_on:
 - regex: RMallow_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=RMallow
+- alias: r

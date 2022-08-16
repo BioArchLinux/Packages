@@ -33,3 +33,4 @@ update_on:
 - regex: flowWorkspace_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/flowWorkspace
+- alias: r

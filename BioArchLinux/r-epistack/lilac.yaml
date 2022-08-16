@@ -14,3 +14,4 @@ update_on:
 - regex: epistack_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/epistack
+- alias: r

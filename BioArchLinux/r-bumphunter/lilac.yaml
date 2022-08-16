@@ -20,3 +20,4 @@ update_on:
 - regex: bumphunter_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/bumphunter
+- alias: r

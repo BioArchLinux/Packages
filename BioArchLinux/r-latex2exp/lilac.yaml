@@ -9,3 +9,4 @@ update_on:
 - regex: latex2exp_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=latex2exp
+- alias: r

@@ -13,3 +13,4 @@ update_on:
 - regex: OTUbase_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/OTUbase
+- alias: r

@@ -26,3 +26,4 @@ update_on:
 - regex: TimiRGeN_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TimiRGeN
+- alias: r

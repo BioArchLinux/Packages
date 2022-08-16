@@ -6,3 +6,4 @@ update_on:
 - regex: bigmemory.sri_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=bigmemory.sri
+- alias: r

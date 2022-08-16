@@ -17,3 +17,4 @@ update_on:
 - regex: spatialDE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/spatialDE
+- alias: r

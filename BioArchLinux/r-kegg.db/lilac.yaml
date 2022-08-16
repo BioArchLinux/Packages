@@ -8,3 +8,4 @@ update_on:
 - regex: KEGG.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/3.11/data/annotation/html/KEGG.db.html
+- alias: r

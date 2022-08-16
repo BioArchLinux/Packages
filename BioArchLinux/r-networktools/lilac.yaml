@@ -20,3 +20,4 @@ update_on:
   - regex: networktools_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=networktools
+- alias: r

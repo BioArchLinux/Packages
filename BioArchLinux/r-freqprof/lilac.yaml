@@ -10,3 +10,4 @@ update_on:
 - regex: FreqProf_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=FreqProf
+- alias: r

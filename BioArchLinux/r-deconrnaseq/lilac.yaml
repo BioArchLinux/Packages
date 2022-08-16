@@ -10,3 +10,4 @@ update_on:
 - regex: DeconRNASeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DeconRNASeq
+- alias: r

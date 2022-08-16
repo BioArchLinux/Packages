@@ -8,3 +8,4 @@ update_on:
 - regex: miRmine_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/miRmine
+- alias: r

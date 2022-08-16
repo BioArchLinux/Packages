@@ -6,3 +6,4 @@ update_on:
 - regex: emdist_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=emdist
+- alias: r

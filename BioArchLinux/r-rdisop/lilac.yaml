@@ -8,3 +8,4 @@ update_on:
 - regex: Rdisop_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Rdisop
+- alias: r

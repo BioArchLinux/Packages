@@ -12,3 +12,4 @@ update_on:
 - regex: ExiMiR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ExiMiR
+- alias: r

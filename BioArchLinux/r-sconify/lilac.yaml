@@ -15,3 +15,4 @@ update_on:
 - regex: Sconify_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Sconify
+- alias: r

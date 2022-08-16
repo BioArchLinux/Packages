@@ -6,3 +6,4 @@ update_on:
 - regex: iSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/iSeq
+- alias: r

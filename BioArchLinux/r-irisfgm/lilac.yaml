@@ -31,3 +31,4 @@ update_on:
 - regex: IRISFGM_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/IRISFGM
+- alias: r

@@ -13,3 +13,4 @@ update_on:
 - regex: CRImage_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CRImage
+- alias: r

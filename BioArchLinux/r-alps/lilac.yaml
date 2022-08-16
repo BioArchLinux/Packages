@@ -33,4 +33,5 @@ update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/3.14/bioc/html/ALPS.html
+- alias: r
 pre_build: vcs_update

@@ -14,3 +14,4 @@ update_on:
 - regex: flowPloidy_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/flowPloidy
+- alias: r

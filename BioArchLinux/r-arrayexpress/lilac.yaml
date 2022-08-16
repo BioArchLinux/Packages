@@ -11,3 +11,4 @@ update_on:
 - regex: ArrayExpress_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ArrayExpress
+- alias: r

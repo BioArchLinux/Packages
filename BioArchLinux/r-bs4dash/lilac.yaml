@@ -16,3 +16,4 @@ update_on:
 - regex: bs4Dash_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=bs4Dash
+- alias: r

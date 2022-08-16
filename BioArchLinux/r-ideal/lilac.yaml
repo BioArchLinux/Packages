@@ -41,3 +41,4 @@ update_on:
 - regex: ideal_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ideal
+- alias: r

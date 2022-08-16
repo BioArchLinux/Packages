@@ -18,3 +18,4 @@ update_on:
 - regex: wppi_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/wppi
+- alias: r

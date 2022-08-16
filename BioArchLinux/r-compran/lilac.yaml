@@ -25,3 +25,4 @@ update_on:
 - regex: ComPrAn_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ComPrAn
+- alias: r

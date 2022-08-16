@@ -36,3 +36,4 @@ update_on:
 - regex: appreci8R_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/appreci8R
+- alias: r

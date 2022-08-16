@@ -8,3 +8,4 @@ update_on:
 - regex: Informeasure_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Informeasure
+- alias: r

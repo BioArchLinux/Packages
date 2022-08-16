@@ -29,3 +29,4 @@ update_on:
 - regex: Maaslin2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Maaslin2
+- alias: r

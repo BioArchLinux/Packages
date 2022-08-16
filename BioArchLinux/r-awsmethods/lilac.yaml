@@ -6,3 +6,4 @@ update_on:
 - regex: awsMethods_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=awsMethods
+- alias: r

@@ -13,3 +13,4 @@ update_on:
 - regex: Pviz_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Pviz
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: Rhdf5lib_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Rhdf5lib
+- alias: r

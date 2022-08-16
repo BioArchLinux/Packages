@@ -37,3 +37,4 @@ update_on:
 - regex: celda_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/celda
+- alias: r

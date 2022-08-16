@@ -11,3 +11,4 @@ update_on:
 - regex: limmaGUI_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/limmaGUI
+- alias: r

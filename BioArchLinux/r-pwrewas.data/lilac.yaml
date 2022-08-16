@@ -8,3 +8,4 @@ update_on:
 - regex: pwrEWAS.data_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pwrEWAS.data
+- alias: r

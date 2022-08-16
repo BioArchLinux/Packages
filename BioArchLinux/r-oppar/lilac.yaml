@@ -10,3 +10,4 @@ update_on:
 - regex: oppar_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/oppar
+- alias: r

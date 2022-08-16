@@ -11,3 +11,4 @@ update_on:
   - regex: bridgesampling_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=bridgesampling
+- alias: r

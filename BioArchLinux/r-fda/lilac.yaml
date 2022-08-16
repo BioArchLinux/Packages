@@ -9,3 +9,4 @@ update_on:
 - regex: fda_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=fda
+- alias: r

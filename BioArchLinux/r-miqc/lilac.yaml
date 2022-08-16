@@ -10,3 +10,4 @@ update_on:
 - regex: miQC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/miQC
+- alias: r

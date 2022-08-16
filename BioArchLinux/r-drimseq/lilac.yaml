@@ -16,3 +16,4 @@ update_on:
 - regex: DRIMSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DRIMSeq
+- alias: r

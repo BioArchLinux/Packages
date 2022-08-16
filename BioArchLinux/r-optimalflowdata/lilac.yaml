@@ -6,3 +6,4 @@ update_on:
 - regex: optimalFlowData_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/optimalFlowData
+- alias: r

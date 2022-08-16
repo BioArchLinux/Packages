@@ -13,3 +13,4 @@ update_on:
 - regex: BiGGR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BiGGR
+- alias: r

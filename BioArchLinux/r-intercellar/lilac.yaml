@@ -42,3 +42,4 @@ update_on:
 - regex: InterCellar_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/InterCellar
+- alias: r

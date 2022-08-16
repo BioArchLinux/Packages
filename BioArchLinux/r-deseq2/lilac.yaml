@@ -20,3 +20,4 @@ update_on:
 - regex: DESeq2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DESeq2
+- alias: r

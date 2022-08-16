@@ -11,3 +11,4 @@ update_on:
 - regex: quantmod_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=quantmod
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: ROI.plugin.lpsolve_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ROI.plugin.lpsolve
+- alias: r

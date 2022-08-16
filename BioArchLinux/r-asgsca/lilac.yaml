@@ -6,3 +6,4 @@ update_on:
 - regex: ASGSCA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ASGSCA
+- alias: r

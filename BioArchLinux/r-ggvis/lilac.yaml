@@ -14,3 +14,4 @@ update_on:
 - regex: ggvis_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggvis
+- alias: r

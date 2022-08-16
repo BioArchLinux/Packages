@@ -19,3 +19,4 @@ update_on:
 - regex: pwOmics_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pwOmics
+- alias: r

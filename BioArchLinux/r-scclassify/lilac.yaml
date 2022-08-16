@@ -21,3 +21,4 @@ update_on:
 - regex: scClassify_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scClassify
+- alias: r

@@ -10,3 +10,4 @@ update_on:
 - regex: biomformat_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biomformat
+- alias: r

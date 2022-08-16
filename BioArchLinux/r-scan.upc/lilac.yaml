@@ -16,3 +16,4 @@ update_on:
 - regex: SCAN.UPC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SCAN.UPC
+- alias: r

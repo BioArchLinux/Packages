@@ -21,3 +21,4 @@ update_on:
 - regex: IVAS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/IVAS
+- alias: r

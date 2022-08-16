@@ -6,3 +6,4 @@ update_on:
 - regex: insight_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=insight
+- alias: r

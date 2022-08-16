@@ -10,3 +10,4 @@ update_on:
 - regex: SIFT.Hsapiens.dbSNP137_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SIFT.Hsapiens.dbSNP137
+- alias: r

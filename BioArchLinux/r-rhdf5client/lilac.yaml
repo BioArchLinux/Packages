@@ -12,3 +12,4 @@ update_on:
 - regex:  rhdf5client_(\d.+\d+.\d+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rhdf5client
+- alias: r

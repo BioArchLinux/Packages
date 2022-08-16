@@ -15,3 +15,4 @@ update_on:
 - regex: SummarizedExperiment_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SummarizedExperiment
+- alias: r

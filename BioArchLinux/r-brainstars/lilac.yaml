@@ -10,4 +10,5 @@ update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/3.12/bioc/html/BrainStars.html
+- alias: r
 pre_build: vcs_update

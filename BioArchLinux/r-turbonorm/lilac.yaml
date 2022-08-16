@@ -11,3 +11,4 @@ update_on:
 - regex: TurboNorm_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TurboNorm
+- alias: r

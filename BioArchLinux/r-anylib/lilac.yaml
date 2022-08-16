@@ -12,3 +12,4 @@ update_on:
 - regex: anyLib_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=anyLib
+- alias: r

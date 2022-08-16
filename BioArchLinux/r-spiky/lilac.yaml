@@ -19,3 +19,4 @@ update_on:
 - regex: spiky_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/spiky
+- alias: r

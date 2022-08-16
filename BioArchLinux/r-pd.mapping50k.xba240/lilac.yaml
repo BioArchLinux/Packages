@@ -14,3 +14,4 @@ update_on:
 - regex: pd.mapping50k.xba240_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pd.mapping50k.xba240
+- alias: r

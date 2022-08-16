@@ -13,3 +13,4 @@ update_on:
 - regex: CAMERA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CAMERA
+- alias: r

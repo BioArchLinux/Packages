@@ -22,3 +22,4 @@ update_on:
 - regex: MOMA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MOMA
+- alias: r

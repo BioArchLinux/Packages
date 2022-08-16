@@ -6,3 +6,4 @@ update_on:
 - regex: LBE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/LBE
+- alias: r

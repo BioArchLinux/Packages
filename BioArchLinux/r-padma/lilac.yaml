@@ -11,3 +11,4 @@ update_on:
 - regex: padma_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/padma
+- alias: r

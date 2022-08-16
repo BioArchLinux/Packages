@@ -9,3 +9,4 @@ update_on:
 - regex: RBM_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RBM
+- alias: r

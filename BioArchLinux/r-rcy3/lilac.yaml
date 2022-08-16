@@ -22,3 +22,4 @@ update_on:
 - regex: RCy3_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RCy3
+- alias: r

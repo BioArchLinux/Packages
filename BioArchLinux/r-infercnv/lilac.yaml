@@ -36,3 +36,4 @@ update_on:
 - regex: infercnv_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/infercnv
+- alias: r

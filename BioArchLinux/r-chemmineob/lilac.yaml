@@ -11,3 +11,4 @@ update_on:
 - regex: ChemmineOB_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ChemmineOB
+- alias: r

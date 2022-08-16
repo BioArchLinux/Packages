@@ -9,3 +9,4 @@ update_on:
 - regex: SPARQL_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/SPARQL/
+- alias: r

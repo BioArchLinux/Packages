@@ -9,3 +9,4 @@ update_on:
 - regex: protolite_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=protolite
+- alias: r

@@ -17,3 +17,4 @@ update_on:
 - regex: vcfR_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=vcfR
+- alias: r

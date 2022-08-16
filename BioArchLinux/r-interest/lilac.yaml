@@ -24,3 +24,4 @@ update_on:
 - regex: IntEREst_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/IntEREst
+- alias: r

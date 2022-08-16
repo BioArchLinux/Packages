@@ -21,3 +21,4 @@ update_on:
 - regex: erma_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/erma
+- alias: r

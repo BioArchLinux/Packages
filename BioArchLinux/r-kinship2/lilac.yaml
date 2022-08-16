@@ -8,3 +8,4 @@ update_on:
 - regex: kinship2_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=kinship2
+- alias: r

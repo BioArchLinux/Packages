@@ -18,3 +18,4 @@ update_on:
 - regex: scDD_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scDD
+- alias: r

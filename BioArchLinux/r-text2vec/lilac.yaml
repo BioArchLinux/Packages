@@ -15,3 +15,4 @@ update_on:
 - regex: text2vec_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=text2vec
+- alias: r

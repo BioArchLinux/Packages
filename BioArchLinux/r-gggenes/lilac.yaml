@@ -10,3 +10,4 @@ update_on:
 - regex: gggenes_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gggenes
+- alias: r

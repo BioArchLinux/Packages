@@ -38,3 +38,4 @@ update_on:
 - regex: microbiomeExplorer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/microbiomeExplorer
+- alias: r

@@ -21,3 +21,4 @@ update_on:
 - regex: survminer_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=survminer
+- alias: r

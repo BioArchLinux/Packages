@@ -13,3 +13,4 @@ update_on:
 - regex: diffcoexp_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/diffcoexp
+- alias: r

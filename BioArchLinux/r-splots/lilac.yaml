@@ -8,3 +8,4 @@ update_on:
 - regex: splots_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/splots
+- alias: r

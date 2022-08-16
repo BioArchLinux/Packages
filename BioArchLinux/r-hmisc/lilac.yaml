@@ -18,3 +18,4 @@ update_on:
 - regex: Hmisc_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Hmisc
+- alias: r

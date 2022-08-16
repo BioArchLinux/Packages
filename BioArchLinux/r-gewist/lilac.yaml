@@ -8,3 +8,4 @@ update_on:
 - regex: GEWIST_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GEWIST
+- alias: r

@@ -11,3 +11,4 @@ update_on:
 - regex: spp_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=spp
+- alias: r

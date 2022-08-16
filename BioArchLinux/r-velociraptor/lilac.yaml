@@ -18,3 +18,4 @@ update_on:
 - regex: velociraptor_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/velociraptor
+- alias: r

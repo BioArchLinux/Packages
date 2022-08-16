@@ -22,3 +22,4 @@ update_on:
 - regex: pcalg_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=pcalg
+- alias: r

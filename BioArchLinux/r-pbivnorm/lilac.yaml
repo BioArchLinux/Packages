@@ -5,3 +5,4 @@ update_on:
   - regex: pbivnorm_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=pbivnorm
+- alias: r

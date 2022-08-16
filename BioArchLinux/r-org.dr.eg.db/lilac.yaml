@@ -8,3 +8,4 @@ update_on:
 - regex: org.Dr.eg.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/org.Dr.eg.db
+- alias: r

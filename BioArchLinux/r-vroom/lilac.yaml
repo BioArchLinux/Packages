@@ -21,3 +21,4 @@ update_on:
 - regex: vroom_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=vroom
+- alias: r

@@ -20,3 +20,4 @@ update_on:
 - regex: annotatr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/annotatr
+- alias: r

@@ -7,3 +7,4 @@ update_on:
   - regex: Rpdb_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=Rpdb
+- alias: r

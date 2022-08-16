@@ -6,3 +6,4 @@ update_on:
 - regex: data.table_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=data.table
+- alias: r

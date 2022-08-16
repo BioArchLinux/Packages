@@ -11,3 +11,4 @@ update_on:
 - regex: rfPred_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rfPred
+- alias: r

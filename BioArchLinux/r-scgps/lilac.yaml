@@ -20,3 +20,4 @@ update_on:
 - regex: scGPS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scGPS
+- alias: r

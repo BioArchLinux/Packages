@@ -22,3 +22,4 @@ update_on:
 - regex: MungeSumstats_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MungeSumstats
+- alias: r

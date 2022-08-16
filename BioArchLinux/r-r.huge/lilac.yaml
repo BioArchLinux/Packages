@@ -10,3 +10,4 @@ update_on:
 - regex: R.huge_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=R.huge
+- alias: r

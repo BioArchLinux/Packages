@@ -11,3 +11,4 @@ update_on:
 - regex: miRNAtap.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/miRNAtap.db
+- alias: r

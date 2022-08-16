@@ -16,3 +16,4 @@ update_on:
 - regex: recount3_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/recount3
+- alias: r

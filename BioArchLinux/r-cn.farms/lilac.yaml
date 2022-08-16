@@ -16,3 +16,4 @@ update_on:
 - regex: cn.farms_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cn.farms
+- alias: r

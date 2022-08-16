@@ -8,3 +8,4 @@ update_on:
 - regex: RcppRoll_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=RcppRoll
+- alias: r

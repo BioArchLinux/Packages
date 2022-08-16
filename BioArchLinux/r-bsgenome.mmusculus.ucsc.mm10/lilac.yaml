@@ -8,3 +8,4 @@ update_on:
 - regex: BSgenome.Mmusculus.UCSC.mm10_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BSgenome.Mmusculus.UCSC.mm10
+- alias: r

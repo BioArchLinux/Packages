@@ -13,3 +13,4 @@ update_on:
 - regex: biocthis_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biocthis
+- alias: r

@@ -17,3 +17,4 @@ update_on:
 - regex: reprex_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=reprex
+- alias: r

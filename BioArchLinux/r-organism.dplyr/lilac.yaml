@@ -21,3 +21,4 @@ update_on:
 - regex: Organism.dplyr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Organism.dplyr
+- alias: r

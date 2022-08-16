@@ -13,3 +13,4 @@ update_on:
 - regex: GDSArray_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GDSArray
+- alias: r

@@ -40,3 +40,4 @@ update_on:
 - regex: UMI4Cats_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/UMI4Cats
+- alias: r

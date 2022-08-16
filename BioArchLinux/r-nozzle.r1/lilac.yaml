@@ -6,3 +6,4 @@ update_on:
 - regex: Nozzle.R1_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Nozzle.R1
+- alias: r

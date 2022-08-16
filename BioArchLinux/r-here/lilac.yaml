@@ -8,3 +8,4 @@ update_on:
 - regex: here_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=here
+- alias: r

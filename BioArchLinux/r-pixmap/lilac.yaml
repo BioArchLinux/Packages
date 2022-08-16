@@ -6,3 +6,4 @@ update_on:
 - regex: pixmap_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=pixmap
+- alias: r

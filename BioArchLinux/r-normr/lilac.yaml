@@ -14,3 +14,4 @@ update_on:
 - regex: normr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/normr
+- alias: r

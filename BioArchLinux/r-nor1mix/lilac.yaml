@@ -6,3 +6,4 @@ update_on:
 - regex: nor1mix_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=nor1mix
+- alias: r

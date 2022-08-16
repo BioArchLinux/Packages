@@ -14,3 +14,4 @@ update_on:
 - regex: fgga_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/fgga
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: BeadDataPackR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BeadDataPackR
+- alias: r

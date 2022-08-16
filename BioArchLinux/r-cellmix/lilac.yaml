@@ -36,3 +36,4 @@ update_on:
   - regex: 'CellMix ([\d._-]+)'
     source: regex
     url: https://mybiosoftware.com/cellmix-1-6-1-gene-expression-deconvolution.html
+- alias: r

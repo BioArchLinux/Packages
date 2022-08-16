@@ -23,3 +23,4 @@ update_on:
 - regex: R453Plus1Toolbox_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/R453Plus1Toolbox
+- alias: r

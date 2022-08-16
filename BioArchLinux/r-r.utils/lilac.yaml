@@ -9,3 +9,4 @@ update_on:
 - regex: R.utils_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=R.utils
+- alias: r

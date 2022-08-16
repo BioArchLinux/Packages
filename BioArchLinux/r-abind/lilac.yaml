@@ -6,3 +6,4 @@ update_on:
 - regex: abind_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=abind
+- alias: r

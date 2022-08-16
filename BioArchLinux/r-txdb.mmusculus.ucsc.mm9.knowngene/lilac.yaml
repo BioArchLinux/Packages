@@ -9,3 +9,4 @@ update_on:
 - regex: TxDb.Mmusculus.UCSC.mm9.knownGene_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TxDb.Mmusculus.UCSC.mm9.knownGene
+- alias: r

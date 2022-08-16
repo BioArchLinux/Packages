@@ -11,3 +11,4 @@ update_on:
 - regex: miRBaseVersions.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/miRBaseVersions.db
+- alias: r

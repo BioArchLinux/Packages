@@ -19,3 +19,4 @@ update_on:
 - regex: GSVA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GSVA
+- alias: r

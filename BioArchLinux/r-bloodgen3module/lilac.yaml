@@ -20,3 +20,4 @@ update_on:
 - regex: BloodGen3Module_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BloodGen3Module
+- alias: r

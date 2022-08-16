@@ -9,3 +9,4 @@ update_on:
 - regex: MethPed_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MethPed
+- alias: r

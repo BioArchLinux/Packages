@@ -20,3 +20,4 @@ update_on:
 - regex: HiCcompare_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/HiCcompare
+- alias: r

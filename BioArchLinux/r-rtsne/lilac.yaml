@@ -8,3 +8,4 @@ update_on:
 - regex: Rtsne_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Rtsne
+- alias: r

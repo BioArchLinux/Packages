@@ -13,3 +13,4 @@ update_on:
 - regex: Rfastp_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Rfastp
+- alias: r

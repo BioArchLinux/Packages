@@ -28,3 +28,4 @@ update_on:
 - regex: cicero_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cicero
+- alias: r

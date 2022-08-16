@@ -25,3 +25,4 @@ update_on:
 - regex: biodb_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biodb
+- alias: r

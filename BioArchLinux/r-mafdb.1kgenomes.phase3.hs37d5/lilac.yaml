@@ -13,3 +13,4 @@ update_on:
 - regex: MafDb.1Kgenomes.phase3.hs37d5_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MafDb.1Kgenomes.phase3.hs37d5
+- alias: r

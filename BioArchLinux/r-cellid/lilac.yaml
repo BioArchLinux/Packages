@@ -27,3 +27,4 @@ update_on:
 - regex: CelliD_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CelliD
+- alias: r

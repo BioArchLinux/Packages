@@ -8,3 +8,4 @@ update_on:
 - regex: NetPathMiner_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/NetPathMiner
+- alias: r

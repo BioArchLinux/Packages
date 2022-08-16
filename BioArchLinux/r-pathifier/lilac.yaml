@@ -9,3 +9,4 @@ update_on:
 - regex: pathifier_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pathifier
+- alias: r

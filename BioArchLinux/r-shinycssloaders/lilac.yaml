@@ -10,3 +10,4 @@ update_on:
 - regex: shinycssloaders_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=shinycssloaders
+- alias: r

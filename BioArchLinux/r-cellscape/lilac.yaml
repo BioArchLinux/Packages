@@ -14,3 +14,4 @@ update_on:
 - regex: cellscape_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cellscape
+- alias: r

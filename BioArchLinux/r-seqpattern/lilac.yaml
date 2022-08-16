@@ -11,3 +11,4 @@ update_on:
 - regex: seqPattern_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/seqPattern
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: Deriv_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Deriv
+- alias: r

@@ -21,3 +21,4 @@ update_on:
 - regex: BatchQC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BatchQC
+- alias: r

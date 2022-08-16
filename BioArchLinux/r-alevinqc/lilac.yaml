@@ -18,3 +18,4 @@ update_on:
 - regex: alevinQC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/alevinQC
+- alias: r

@@ -24,3 +24,4 @@ update_on:
 - regex: MMAPPR2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MMAPPR2
+- alias: r

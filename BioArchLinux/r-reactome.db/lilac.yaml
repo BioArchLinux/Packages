@@ -8,3 +8,4 @@ update_on:
 - regex: reactome.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/reactome.db
+- alias: r

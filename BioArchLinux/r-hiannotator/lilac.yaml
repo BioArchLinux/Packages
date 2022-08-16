@@ -15,3 +15,4 @@ update_on:
 - regex: hiAnnotator_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/hiAnnotator
+- alias: r

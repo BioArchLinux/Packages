@@ -20,3 +20,4 @@ update_on:
 - regex: speaq_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=speaq
+- alias: r

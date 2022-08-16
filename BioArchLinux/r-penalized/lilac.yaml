@@ -9,3 +9,4 @@ update_on:
 - regex: penalized_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=penalized
+- alias: r

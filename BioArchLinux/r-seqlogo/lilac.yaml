@@ -6,3 +6,4 @@ update_on:
 - regex: seqLogo_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/seqLogo
+- alias: r

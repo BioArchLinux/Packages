@@ -27,3 +27,4 @@ update_on:
 - regex: HiCBricks_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/HiCBricks
+- alias: r

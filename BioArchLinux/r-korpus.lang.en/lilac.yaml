@@ -9,3 +9,4 @@ update_on:
 - regex: koRpus.lang.en_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=koRpus.lang.en
+- alias: r

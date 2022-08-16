@@ -12,3 +12,4 @@ update_on:
 - regex: maftools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/maftools
+- alias: r

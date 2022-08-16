@@ -6,3 +6,4 @@ update_on:
 - regex: parody_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/parody
+- alias: r

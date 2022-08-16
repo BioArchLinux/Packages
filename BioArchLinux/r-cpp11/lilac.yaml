@@ -6,3 +6,4 @@ update_on:
 - regex: cpp11_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=cpp11
+- alias: r

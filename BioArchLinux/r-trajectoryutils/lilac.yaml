@@ -11,3 +11,4 @@ update_on:
 - regex: TrajectoryUtils_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TrajectoryUtils
+- alias: r

@@ -27,3 +27,4 @@ update_on:
 - regex: airpart_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/airpart
+- alias: r

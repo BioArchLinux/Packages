@@ -9,3 +9,4 @@ update_on:
 - regex: TxDb.Rnorvegicus.UCSC.rn4.ensGene_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TxDb.Rnorvegicus.UCSC.rn4.ensGene
+- alias: r

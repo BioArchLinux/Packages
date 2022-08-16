@@ -14,3 +14,4 @@ update_on:
 - regex: GreyListChIP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GreyListChIP
+- alias: r

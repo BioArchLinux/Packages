@@ -14,3 +14,4 @@ update_on:
 - regex: gghighlight_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gghighlight
+- alias: r

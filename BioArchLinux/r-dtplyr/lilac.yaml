@@ -17,3 +17,4 @@ update_on:
 - regex: dtplyr_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=dtplyr
+- alias: r

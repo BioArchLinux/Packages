@@ -6,3 +6,4 @@ update_on:
 - regex: href="/cran/RSVGTipsDevice/releases/tag/([\d._-]+)"
   source: regex
   url: "https://github.com/cran/RSVGTipsDevice/tags"
+- alias: r

@@ -33,3 +33,4 @@ update_on:
 - regex: MSnID_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MSnID
+- alias: r

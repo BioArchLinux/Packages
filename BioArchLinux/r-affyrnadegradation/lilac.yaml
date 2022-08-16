@@ -8,3 +8,4 @@ update_on:
 - regex: AffyRNADegradation_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/AffyRNADegradation
+- alias: r

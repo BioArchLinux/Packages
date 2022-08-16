@@ -13,3 +13,4 @@ update_on:
 - regex: curatedTCGAData_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/curatedTCGAData
+- alias: r

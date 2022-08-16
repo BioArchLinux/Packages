@@ -25,3 +25,4 @@ update_on:
 - regex: motifbreakR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/motifbreakR
+- alias: r

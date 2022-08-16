@@ -10,3 +10,4 @@ update_on:
 - regex: textshape_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=textshape
+- alias: r

@@ -31,3 +31,4 @@ update_on:
 - regex: OUTRIDER_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/OUTRIDER
+- alias: r

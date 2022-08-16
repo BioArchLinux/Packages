@@ -10,3 +10,4 @@ update_on:
 - regex: ROSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ROSeq
+- alias: r

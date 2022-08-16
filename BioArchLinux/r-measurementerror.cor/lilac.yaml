@@ -6,3 +6,4 @@ update_on:
 - regex: MeasurementError.cor_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MeasurementError.cor
+- alias: r

@@ -29,3 +29,4 @@ update_on:
 - regex: devtools_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=devtools
+- alias: r

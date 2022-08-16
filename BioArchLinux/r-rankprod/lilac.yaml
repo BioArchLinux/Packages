@@ -9,3 +9,4 @@ update_on:
 - regex: RankProd_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RankProd
+- alias: r

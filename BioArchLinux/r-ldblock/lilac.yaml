@@ -16,3 +16,4 @@ update_on:
 - regex: ldblock_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ldblock
+- alias: r

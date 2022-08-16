@@ -6,3 +6,4 @@ update_on:
 - regex: amap_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=amap
+- alias: r

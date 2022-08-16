@@ -12,3 +12,4 @@ update_on:
 - regex: FDb.InfiniumMethylation.hg19_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/FDb.InfiniumMethylation.hg19
+- alias: r

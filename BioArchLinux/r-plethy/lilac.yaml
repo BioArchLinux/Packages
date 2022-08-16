@@ -18,3 +18,4 @@ update_on:
 - regex: plethy_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/plethy
+- alias: r

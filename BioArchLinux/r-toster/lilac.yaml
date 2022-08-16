@@ -13,3 +13,4 @@ update_on:
   - regex: TOSTER_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=TOSTER
+- alias: r

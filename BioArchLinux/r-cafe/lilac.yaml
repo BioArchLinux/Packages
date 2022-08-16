@@ -16,3 +16,4 @@ update_on:
 - regex: CAFE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CAFE
+- alias: r

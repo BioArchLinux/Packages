@@ -20,3 +20,4 @@ update_on:
 - regex: ggpp_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggpp
+- alias: r

@@ -52,3 +52,4 @@ update_on:
 - regex: metaseqR2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/metaseqR2
+- alias: r

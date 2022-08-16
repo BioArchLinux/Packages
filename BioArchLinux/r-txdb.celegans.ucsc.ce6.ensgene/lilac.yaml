@@ -9,3 +9,4 @@ update_on:
 - regex: TxDb.Celegans.UCSC.ce6.ensGene_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TxDb.Celegans.UCSC.ce6.ensGene
+- alias: r

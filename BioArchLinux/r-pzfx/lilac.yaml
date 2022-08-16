@@ -6,6 +6,7 @@ update_on:
 - regex: pzfx_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib 
+- alias: r
 repo_depends:
 - r-xml2
 - r-testthat

@@ -5,3 +5,4 @@ update_on:
   - regex: mle.tools_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=mle.tools
+- alias: r

@@ -25,3 +25,4 @@ update_on:
 - regex: Doscheda_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Doscheda
+- alias: r

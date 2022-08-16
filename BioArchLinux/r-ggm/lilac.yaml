@@ -9,3 +9,4 @@ update_on:
 - regex: ggm_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggm
+- alias: r

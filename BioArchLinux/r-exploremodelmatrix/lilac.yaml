@@ -21,3 +21,4 @@ update_on:
 - regex: ExploreModelMatrix_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ExploreModelMatrix
+- alias: r

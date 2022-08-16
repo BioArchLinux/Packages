@@ -8,3 +8,4 @@ update_on:
 - regex: EnsDb.Hsapiens.v75_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/EnsDb.Hsapiens.v75
+- alias: r

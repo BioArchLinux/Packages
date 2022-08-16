@@ -19,3 +19,4 @@ update_on:
 - regex: InTAD_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/InTAD
+- alias: r

@@ -24,3 +24,4 @@ update_on:
 - regex: metR_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=metR
+- alias: r

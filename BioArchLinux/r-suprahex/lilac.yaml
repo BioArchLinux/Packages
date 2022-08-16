@@ -17,3 +17,4 @@ update_on:
 - regex: supraHex_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/supraHex
+- alias: r

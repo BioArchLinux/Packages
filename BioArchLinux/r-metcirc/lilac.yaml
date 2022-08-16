@@ -14,3 +14,4 @@ update_on:
 - regex: MetCirc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MetCirc
+- alias: r

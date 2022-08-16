@@ -20,3 +20,4 @@ update_on:
 - regex: clusterProfiler_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/clusterProfiler
+- alias: r

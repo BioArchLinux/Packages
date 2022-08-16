@@ -14,3 +14,4 @@ update_on:
 - regex: synlet_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/synlet
+- alias: r

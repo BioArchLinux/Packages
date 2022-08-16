@@ -20,3 +20,4 @@ update_on:
 - regex: OncoSimulR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/OncoSimulR
+- alias: r

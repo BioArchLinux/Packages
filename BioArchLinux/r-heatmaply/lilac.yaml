@@ -21,3 +21,4 @@ update_on:
 - regex: heatmaply_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=heatmaply
+- alias: r

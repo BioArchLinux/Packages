@@ -13,3 +13,4 @@ update_on:
 - regex: scShapes_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scShapes
+- alias: r

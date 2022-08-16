@@ -8,3 +8,4 @@ update_on:
 - regex: cli_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=cli
+- alias: r

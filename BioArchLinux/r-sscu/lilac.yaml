@@ -10,3 +10,4 @@ update_on:
 - regex: sscu_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/sscu
+- alias: r

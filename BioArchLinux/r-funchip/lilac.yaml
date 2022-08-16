@@ -17,3 +17,4 @@ update_on:
 - regex: FunChIP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/FunChIP
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: h5vcData_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/h5vcData
+- alias: r

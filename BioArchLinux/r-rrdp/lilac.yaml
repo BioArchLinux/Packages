@@ -8,3 +8,4 @@ update_on:
 - regex: rRDP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rRDP
+- alias: r

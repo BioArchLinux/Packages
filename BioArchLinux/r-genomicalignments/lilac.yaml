@@ -16,3 +16,4 @@ update_on:
 - regex: GenomicAlignments_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GenomicAlignments
+- alias: r

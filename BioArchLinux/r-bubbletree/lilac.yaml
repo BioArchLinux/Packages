@@ -24,3 +24,4 @@ update_on:
 - regex: BubbleTree_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BubbleTree
+- alias: r

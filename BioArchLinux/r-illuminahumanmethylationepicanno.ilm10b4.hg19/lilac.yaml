@@ -8,3 +8,4 @@ update_on:
 - regex: IlluminaHumanMethylationEPICanno.ilm10b4.hg19_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/IlluminaHumanMethylationEPICanno.ilm10b4.hg19
+- alias: r

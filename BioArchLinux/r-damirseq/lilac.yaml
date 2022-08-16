@@ -32,3 +32,4 @@ update_on:
 - regex: DaMiRseq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DaMiRseq
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: aods3_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=aods3
+- alias: r

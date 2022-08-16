@@ -20,3 +20,4 @@ update_on:
 - regex: TraRe_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TraRe
+- alias: r

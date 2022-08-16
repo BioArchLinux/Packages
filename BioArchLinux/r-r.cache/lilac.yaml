@@ -11,3 +11,4 @@ update_on:
 - regex: R.cache_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=R.cache
+- alias: r

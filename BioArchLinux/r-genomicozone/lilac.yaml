@@ -19,3 +19,4 @@ update_on:
 - regex: GenomicOZone_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GenomicOZone
+- alias: r

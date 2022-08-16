@@ -6,3 +6,4 @@ update_on:
 - regex: seqCNA.annot_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/seqCNA.annot
+- alias: r

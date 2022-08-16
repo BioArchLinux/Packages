@@ -10,3 +10,4 @@ update_on:
 - regex: UNDO_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/UNDO
+- alias: r

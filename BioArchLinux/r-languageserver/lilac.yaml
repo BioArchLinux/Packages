@@ -17,3 +17,4 @@ update_on:
   - regex: languageserver_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=languageserver
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: NMI_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=NMI
+- alias: r

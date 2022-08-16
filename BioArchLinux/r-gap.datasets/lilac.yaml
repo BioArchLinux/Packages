@@ -6,3 +6,4 @@ update_on:
 - regex: gap.datasets_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gap.datasets
+- alias: r

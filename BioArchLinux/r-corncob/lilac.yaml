@@ -18,3 +18,4 @@ update_on:
 - regex: corncob_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=corncob
+- alias: r

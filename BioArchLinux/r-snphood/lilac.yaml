@@ -25,3 +25,4 @@ update_on:
 - regex: SNPhood_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SNPhood
+- alias: r

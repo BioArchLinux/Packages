@@ -6,3 +6,4 @@ update_on:
 - regex: Rttf2pt1_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Rttf2pt1
+- alias: r

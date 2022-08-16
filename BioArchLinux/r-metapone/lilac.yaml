@@ -13,3 +13,4 @@ update_on:
 - regex: metapone_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/metapone
+- alias: r

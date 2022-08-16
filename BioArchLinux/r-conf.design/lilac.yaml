@@ -5,3 +5,4 @@ update_on:
   - regex: conf.design_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=conf.design
+- alias: r

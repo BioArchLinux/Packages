@@ -8,3 +8,4 @@ update_on:
 - regex: CMA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CMA
+- alias: r

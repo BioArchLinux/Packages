@@ -27,3 +27,4 @@ update_on:
 - regex: RNAmodR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RNAmodR
+- alias: r

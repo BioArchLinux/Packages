@@ -6,3 +6,4 @@ update_on:
 - regex: MBAmethyl_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MBAmethyl
+- alias: r

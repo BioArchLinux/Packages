@@ -22,3 +22,4 @@ update_on:
 - regex: SummarizedBenchmark_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SummarizedBenchmark
+- alias: r

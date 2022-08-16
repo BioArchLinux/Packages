@@ -8,3 +8,4 @@ update_on:
 - regex: GeneExpressionSignature_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GeneExpressionSignature
+- alias: r

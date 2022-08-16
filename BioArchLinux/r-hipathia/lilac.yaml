@@ -18,3 +18,4 @@ update_on:
 - regex: hipathia_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/hipathia
+- alias: r

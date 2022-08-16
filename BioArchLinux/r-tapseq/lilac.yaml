@@ -19,3 +19,4 @@ update_on:
 - regex: TAPseq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TAPseq
+- alias: r

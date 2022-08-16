@@ -21,3 +21,4 @@ update_on:
 - regex: learnr_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=learnr
+- alias: r

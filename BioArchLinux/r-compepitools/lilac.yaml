@@ -21,3 +21,4 @@ update_on:
 - regex: compEpiTools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/compEpiTools
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: ssrch_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ssrch
+- alias: r

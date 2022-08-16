@@ -21,3 +21,4 @@ update_on:
 - regex: TCGAutils_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TCGAutils
+- alias: r

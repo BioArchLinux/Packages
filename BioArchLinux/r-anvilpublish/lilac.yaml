@@ -14,3 +14,4 @@ update_on:
 - regex: AnVILPublish_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/AnVILPublish
+- alias: r

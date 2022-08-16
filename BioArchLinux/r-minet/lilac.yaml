@@ -8,3 +8,4 @@ update_on:
 - regex: minet_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/minet
+- alias: r

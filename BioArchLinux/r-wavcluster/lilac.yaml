@@ -21,3 +21,4 @@ update_on:
 - regex: wavClusteR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/wavClusteR
+- alias: r

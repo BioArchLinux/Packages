@@ -6,3 +6,4 @@ update_on:
 - regex: coGPS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/coGPS
+- alias: r

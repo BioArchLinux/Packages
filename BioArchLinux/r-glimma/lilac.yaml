@@ -14,3 +14,4 @@ update_on:
 - regex: Glimma_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Glimma
+- alias: r

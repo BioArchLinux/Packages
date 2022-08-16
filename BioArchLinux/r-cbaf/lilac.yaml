@@ -14,3 +14,4 @@ update_on:
 - regex: cbaf_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cbaf
+- alias: r

@@ -46,3 +46,4 @@ update_on:
 - regex: Seurat_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Seurat
+- alias: r

@@ -18,3 +18,4 @@ update_on:
   - regex: smacof_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=smacof
+- alias: r

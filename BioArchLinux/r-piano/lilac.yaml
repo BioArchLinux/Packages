@@ -21,3 +21,4 @@ update_on:
 - regex: piano_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/piano
+- alias: r

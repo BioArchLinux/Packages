@@ -13,3 +13,4 @@ update_on:
 - regex: RefManageR_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=RefManageR
+- alias: r

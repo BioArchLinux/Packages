@@ -9,3 +9,4 @@ update_on:
 - regex: knn.covertree_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=knn.covertree
+- alias: r

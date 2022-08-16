@@ -18,3 +18,4 @@ update_on:
 - regex: GeoDiff_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GeoDiff
+- alias: r

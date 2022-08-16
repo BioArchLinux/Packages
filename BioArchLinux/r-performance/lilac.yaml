@@ -9,3 +9,4 @@ update_on:
   - regex: performance_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=performance
+- alias: r

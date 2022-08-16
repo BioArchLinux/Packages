@@ -19,3 +19,4 @@ update_on:
 - regex: InterMineR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/InterMineR
+- alias: r

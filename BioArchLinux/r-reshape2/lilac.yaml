@@ -10,3 +10,4 @@ update_on:
 - regex: reshape2_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=reshape2
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: KOdata_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/KOdata
+- alias: r

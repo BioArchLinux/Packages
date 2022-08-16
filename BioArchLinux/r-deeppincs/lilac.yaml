@@ -19,3 +19,4 @@ update_on:
 - regex: DeepPINCS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DeepPINCS
+- alias: r

@@ -14,3 +14,4 @@ update_on:
 - regex: marr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/marr
+- alias: r

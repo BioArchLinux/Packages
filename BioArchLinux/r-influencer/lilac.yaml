@@ -8,3 +8,4 @@ update_on:
 - regex: influenceR_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=influenceR
+- alias: r

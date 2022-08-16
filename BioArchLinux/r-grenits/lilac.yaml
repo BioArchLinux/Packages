@@ -11,3 +11,4 @@ update_on:
 - regex: GRENITS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GRENITS
+- alias: r

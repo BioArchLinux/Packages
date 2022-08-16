@@ -8,3 +8,4 @@ update_on:
 - regex: DFP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DFP
+- alias: r

@@ -12,3 +12,4 @@ update_on:
 - regex: rmspc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rmspc
+- alias: r

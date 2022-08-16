@@ -13,3 +13,4 @@ update_on:
 - regex: ncRNAtools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ncRNAtools
+- alias: r

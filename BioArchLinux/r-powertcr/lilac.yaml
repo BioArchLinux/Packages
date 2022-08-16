@@ -16,3 +16,4 @@ update_on:
 - regex: powerTCR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/powerTCR
+- alias: r

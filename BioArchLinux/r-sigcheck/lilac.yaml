@@ -11,3 +11,4 @@ update_on:
 - regex: SigCheck_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SigCheck
+- alias: r

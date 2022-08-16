@@ -17,3 +17,4 @@ update_on:
 - regex: GEOquery_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GEOquery
+- alias: r

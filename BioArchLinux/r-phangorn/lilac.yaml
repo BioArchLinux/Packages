@@ -13,3 +13,4 @@ update_on:
 - regex: phangorn_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=phangorn
+- alias: r

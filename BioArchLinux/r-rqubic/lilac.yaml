@@ -10,3 +10,4 @@ update_on:
 - regex: rqubic_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rqubic
+- alias: r

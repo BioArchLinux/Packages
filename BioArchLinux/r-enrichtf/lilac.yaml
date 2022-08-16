@@ -25,3 +25,4 @@ update_on:
 - regex: enrichTF_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/enrichTF
+- alias: r

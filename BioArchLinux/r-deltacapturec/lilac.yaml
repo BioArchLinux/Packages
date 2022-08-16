@@ -13,3 +13,4 @@ update_on:
 - regex: deltaCaptureC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/deltaCaptureC
+- alias: r

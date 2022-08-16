@@ -16,3 +16,4 @@ update_on:
 - regex: dada2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/dada2
+- alias: r

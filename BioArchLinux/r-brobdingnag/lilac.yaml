@@ -5,3 +5,4 @@ update_on:
   - regex: Brobdingnag_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=Brobdingnag
+- alias: r

@@ -10,3 +10,4 @@ update_on:
 - regex: depmap_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/depmap
+- alias: r

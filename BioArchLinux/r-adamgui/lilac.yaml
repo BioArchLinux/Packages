@@ -27,3 +27,4 @@ update_on:
 - regex: ADAMgui_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ADAMgui
+- alias: r

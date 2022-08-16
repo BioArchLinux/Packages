@@ -30,3 +30,4 @@ update_on:
 - regex: OMICsPCA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/OMICsPCA
+- alias: r

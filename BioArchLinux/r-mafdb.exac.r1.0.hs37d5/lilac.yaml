@@ -13,3 +13,4 @@ update_on:
 - regex: MafDb.ExAC.r1.0.hs37d5_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MafDb.ExAC.r1.0.hs37d5
+- alias: r

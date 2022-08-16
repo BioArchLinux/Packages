@@ -14,3 +14,4 @@ update_on:
 - regex: tenXplore_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tenXplore
+- alias: r

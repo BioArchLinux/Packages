@@ -11,3 +11,4 @@ update_on:
 - regex: qusage_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/qusage
+- alias: r

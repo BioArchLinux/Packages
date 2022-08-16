@@ -15,3 +15,4 @@ update_on:
 - regex: PFP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PFP
+- alias: r

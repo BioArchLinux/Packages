@@ -14,3 +14,4 @@ update_on:
 - regex: celldex_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/celldex
+- alias: r

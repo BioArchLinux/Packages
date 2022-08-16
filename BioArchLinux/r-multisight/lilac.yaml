@@ -33,3 +33,4 @@ update_on:
 - regex: multiSight_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/multiSight
+- alias: r

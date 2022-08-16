@@ -16,3 +16,4 @@ update_on:
 - regex: gRbase_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gRbase
+- alias: r

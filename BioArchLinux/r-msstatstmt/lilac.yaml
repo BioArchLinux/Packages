@@ -15,3 +15,4 @@ update_on:
 - regex: MSstatsTMT_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MSstatsTMT
+- alias: r

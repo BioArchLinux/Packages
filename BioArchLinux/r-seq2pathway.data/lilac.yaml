@@ -6,3 +6,4 @@ update_on:
 - regex: seq2pathway.data_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/seq2pathway.data
+- alias: r

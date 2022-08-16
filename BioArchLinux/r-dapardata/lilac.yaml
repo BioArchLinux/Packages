@@ -9,3 +9,4 @@ update_on:
 - regex: DAPARdata_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DAPARdata
+- alias: r

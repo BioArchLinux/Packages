@@ -14,3 +14,4 @@ update_on:
 - regex: netprioR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/netprioR
+- alias: r

@@ -19,3 +19,4 @@ update_on:
 - regex: transcriptogramer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/transcriptogramer
+- alias: r

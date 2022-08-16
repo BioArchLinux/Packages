@@ -14,3 +14,4 @@ update_on:
 - regex: pipeFrame_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pipeFrame
+- alias: r

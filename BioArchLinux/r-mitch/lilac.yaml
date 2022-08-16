@@ -17,3 +17,4 @@ update_on:
 - regex: mitch_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/mitch
+- alias: r

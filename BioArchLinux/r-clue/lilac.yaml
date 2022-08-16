@@ -6,3 +6,4 @@ update_on:
 - regex: clue_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=clue
+- alias: r

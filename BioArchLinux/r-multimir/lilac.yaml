@@ -14,3 +14,4 @@ update_on:
 - regex: multiMiR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/multiMiR
+- alias: r

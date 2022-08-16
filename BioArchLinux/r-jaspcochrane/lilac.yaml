@@ -13,3 +13,4 @@ update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
     url: https://raw.githubusercontent.com/jasp-stats/jaspCochrane/master/DESCRIPTION
+- alias: r

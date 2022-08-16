@@ -9,3 +9,4 @@ update_on:
 - regex: TxDb.Dmelanogaster.UCSC.dm3.ensGene_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TxDb.Dmelanogaster.UCSC.dm3.ensGene
+- alias: r

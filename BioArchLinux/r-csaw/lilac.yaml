@@ -21,3 +21,4 @@ update_on:
 - regex: csaw_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/csaw
+- alias: r

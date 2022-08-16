@@ -9,3 +9,4 @@ update_on:
 - regex: iterativeBMAsurv_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/iterativeBMAsurv
+- alias: r

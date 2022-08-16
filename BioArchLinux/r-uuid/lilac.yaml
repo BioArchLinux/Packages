@@ -6,3 +6,4 @@ update_on:
 - regex: uuid_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=uuid
+- alias: r

@@ -10,3 +10,4 @@ update_on:
   - regex: IsingSampler_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=IsingSampler
+- alias: r

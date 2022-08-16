@@ -6,3 +6,4 @@ update_on:
 - regex: SNAGEEdata_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SNAGEEdata
+- alias: r

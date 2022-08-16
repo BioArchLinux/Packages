@@ -33,3 +33,4 @@ update_on:
 - regex: minfi_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/minfi
+- alias: r

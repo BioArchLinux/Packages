@@ -9,3 +9,4 @@ update_on:
 - regex: SEPIRA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SEPIRA
+- alias: r

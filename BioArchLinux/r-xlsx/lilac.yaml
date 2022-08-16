@@ -9,3 +9,4 @@ update_on:
 - regex: xlsx_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=xlsx
+- alias: r

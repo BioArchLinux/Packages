@@ -24,3 +24,4 @@ update_on:
 - regex: nearBynding_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/nearBynding
+- alias: r

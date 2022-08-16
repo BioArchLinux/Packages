@@ -27,3 +27,4 @@ update_on:
 - regex: MSnbase_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MSnbase
+- alias: r

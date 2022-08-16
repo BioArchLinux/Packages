@@ -6,3 +6,4 @@ update_on:
 - regex: KBoost_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/KBoost
+- alias: r

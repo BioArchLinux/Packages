@@ -14,3 +14,4 @@ update_on:
 - regex: riboSeqR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/riboSeqR
+- alias: r

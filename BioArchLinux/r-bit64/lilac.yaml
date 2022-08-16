@@ -8,3 +8,4 @@ update_on:
 - regex: bit64_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=bit64
+- alias: r

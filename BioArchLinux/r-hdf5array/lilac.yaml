@@ -14,3 +14,4 @@ update_on:
 - regex: HDF5Array_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/HDF5Array
+- alias: r

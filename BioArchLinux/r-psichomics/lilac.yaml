@@ -40,3 +40,4 @@ update_on:
 - regex: psichomics_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/psichomics
+- alias: r

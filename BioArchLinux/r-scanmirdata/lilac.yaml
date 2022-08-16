@@ -8,3 +8,4 @@ update_on:
 - regex: scanMiRData_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scanMiRData
+- alias: r

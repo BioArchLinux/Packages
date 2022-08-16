@@ -21,3 +21,4 @@ update_on:
 - regex: tscR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tscR
+- alias: r

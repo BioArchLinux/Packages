@@ -14,3 +14,4 @@ update_on:
 - regex: MSstatsTMTPTM_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/3.13/bioc/html/MSstatsTMTPTM.html
+- alias: r

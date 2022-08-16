@@ -9,3 +9,4 @@ update_on:
 - regex: cobs_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=cobs
+- alias: r

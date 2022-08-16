@@ -9,3 +9,4 @@ update_on:
 - regex: C50_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=C50
+- alias: r

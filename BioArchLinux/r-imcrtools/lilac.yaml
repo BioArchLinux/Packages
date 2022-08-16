@@ -33,3 +33,4 @@ update_on:
 - regex: imcRtools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/imcRtools
+- alias: r

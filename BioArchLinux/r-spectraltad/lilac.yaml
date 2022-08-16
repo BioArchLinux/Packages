@@ -13,3 +13,4 @@ update_on:
 - regex: SpectralTAD_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SpectralTAD
+- alias: r

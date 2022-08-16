@@ -34,3 +34,4 @@ update_on:
 - regex: MatrixQCvis_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MatrixQCvis
+- alias: r

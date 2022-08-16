@@ -19,3 +19,4 @@ update_on:
 - regex: LowMACA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/LowMACA
+- alias: r

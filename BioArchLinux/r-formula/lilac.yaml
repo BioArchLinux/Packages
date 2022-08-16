@@ -6,3 +6,4 @@ update_on:
 - regex: Formula_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Formula
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: CodeDepends_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=CodeDepends
+- alias: r

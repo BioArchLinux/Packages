@@ -24,3 +24,4 @@ update_on:
 - regex: methylKit_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/methylKit
+- alias: r

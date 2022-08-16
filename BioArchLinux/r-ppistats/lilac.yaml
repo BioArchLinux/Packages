@@ -11,3 +11,4 @@ update_on:
 - regex: ppiStats_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ppiStats
+- alias: r

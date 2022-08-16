@@ -5,3 +5,4 @@ update_on:
   - regex: modules_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=modules
+- alias: r

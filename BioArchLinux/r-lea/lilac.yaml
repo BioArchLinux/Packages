@@ -6,3 +6,4 @@ update_on:
 - regex: LEA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/LEA
+- alias: r

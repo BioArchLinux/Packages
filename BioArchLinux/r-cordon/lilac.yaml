@@ -14,3 +14,4 @@ update_on:
 - regex: coRdon_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/coRdon
+- alias: r

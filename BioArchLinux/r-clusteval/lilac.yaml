@@ -6,6 +6,7 @@ update_on:
 - regex: clusteval_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/clusteval/
+- alias: r
 repo_depends:
 - r-rcpp
 - r-mvtnorm

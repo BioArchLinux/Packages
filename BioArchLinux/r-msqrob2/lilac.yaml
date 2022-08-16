@@ -13,3 +13,4 @@ update_on:
 - regex: msqrob2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/msqrob2
+- alias: r

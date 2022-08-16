@@ -17,3 +17,4 @@ update_on:
 - regex: cummeRbund_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cummeRbund
+- alias: r

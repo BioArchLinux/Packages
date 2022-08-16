@@ -9,3 +9,4 @@ update_on:
 - regex: maskBAD_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/maskBAD
+- alias: r

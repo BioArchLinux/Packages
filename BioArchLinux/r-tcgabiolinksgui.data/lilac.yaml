@@ -6,3 +6,4 @@ update_on:
 - regex: TCGAbiolinksGUI.data_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TCGAbiolinksGUI.data
+- alias: r

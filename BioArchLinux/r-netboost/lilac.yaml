@@ -14,3 +14,4 @@ update_on:
 - regex: netboost_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/netboost
+- alias: r

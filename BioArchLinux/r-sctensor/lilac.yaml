@@ -39,3 +39,4 @@ update_on:
 - regex: scTensor_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scTensor
+- alias: r

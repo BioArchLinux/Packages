@@ -8,3 +8,4 @@ update_on:
 - regex: checkmate_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=checkmate
+- alias: r

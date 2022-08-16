@@ -19,3 +19,4 @@ update_on:
 - regex: summarytools_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=summarytools
+- alias: r

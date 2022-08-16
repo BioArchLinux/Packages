@@ -15,3 +15,4 @@ update_on:
 - regex: myvariant_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/myvariant
+- alias: r

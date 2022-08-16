@@ -6,3 +6,4 @@ update_on:
 - regex: gsmoothr_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gsmoothr
+- alias: r

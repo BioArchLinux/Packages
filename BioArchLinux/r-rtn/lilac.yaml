@@ -21,3 +21,4 @@ update_on:
 - regex: RTN_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RTN
+- alias: r

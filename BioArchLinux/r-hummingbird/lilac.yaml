@@ -11,3 +11,4 @@ update_on:
 - regex: hummingbird_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/hummingbird
+- alias: r

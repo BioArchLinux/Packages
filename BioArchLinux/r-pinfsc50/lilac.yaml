@@ -6,3 +6,4 @@ update_on:
 - regex: pinfsc50_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=pinfsc50
+- alias: r

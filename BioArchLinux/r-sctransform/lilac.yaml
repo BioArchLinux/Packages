@@ -16,3 +16,4 @@ update_on:
 - regex: sctransform_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=sctransform
+- alias: r

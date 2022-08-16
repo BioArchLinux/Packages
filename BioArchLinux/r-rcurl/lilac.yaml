@@ -8,3 +8,4 @@ update_on:
 - regex: RCurl_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=RCurl
+- alias: r

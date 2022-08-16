@@ -9,3 +9,4 @@ update_on:
 - regex: dyebias_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/dyebias
+- alias: r

@@ -19,3 +19,4 @@ update_on:
 - regex: GenomicFiles_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GenomicFiles
+- alias: r

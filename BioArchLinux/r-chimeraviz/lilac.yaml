@@ -35,3 +35,4 @@ update_on:
 - regex: chimeraviz_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/chimeraviz
+- alias: r

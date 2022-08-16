@@ -10,3 +10,4 @@ update_on:
 - regex: PairedData_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=PairedData
+- alias: r

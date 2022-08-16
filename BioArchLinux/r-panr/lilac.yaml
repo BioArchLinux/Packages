@@ -10,3 +10,4 @@ update_on:
 - regex: PANR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PANR
+- alias: r

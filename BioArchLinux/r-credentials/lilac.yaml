@@ -12,3 +12,4 @@ update_on:
 - regex: credentials_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=credentials
+- alias: r

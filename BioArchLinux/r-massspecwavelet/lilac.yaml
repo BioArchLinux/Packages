@@ -8,3 +8,4 @@ update_on:
 - regex: MassSpecWavelet_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MassSpecWavelet
+- alias: r

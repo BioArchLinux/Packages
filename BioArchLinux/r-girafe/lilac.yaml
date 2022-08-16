@@ -16,3 +16,4 @@ update_on:
 - regex: girafe_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/girafe
+- alias: r

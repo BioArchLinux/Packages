@@ -11,3 +11,4 @@ update_on:
 - regex: flowFP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/flowFP
+- alias: r

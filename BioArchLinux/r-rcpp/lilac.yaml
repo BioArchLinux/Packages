@@ -6,3 +6,4 @@ update_on:
 - regex: Rcpp_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=Rcpp
+- alias: r

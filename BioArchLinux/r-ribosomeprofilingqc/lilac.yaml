@@ -28,3 +28,4 @@ update_on:
 - regex: ribosomeProfilingQC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ribosomeProfilingQC
+- alias: r

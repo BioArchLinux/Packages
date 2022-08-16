@@ -6,3 +6,4 @@ update_on:
 - regex: base64enc_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=base64enc
+- alias: r

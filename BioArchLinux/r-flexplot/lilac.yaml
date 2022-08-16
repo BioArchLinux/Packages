@@ -25,3 +25,4 @@ update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
     url: https://raw.githubusercontent.com/dustinfife/flexplot/master/DESCRIPTION
+- alias: r

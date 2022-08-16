@@ -10,3 +10,4 @@ update_on:
 - regex: GOSemSim_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GOSemSim
+- alias: r

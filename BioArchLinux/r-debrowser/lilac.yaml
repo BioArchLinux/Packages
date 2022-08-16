@@ -42,3 +42,4 @@ update_on:
 - regex: debrowser_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/debrowser
+- alias: r

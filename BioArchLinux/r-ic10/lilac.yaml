@@ -10,3 +10,4 @@ update_on:
 - regex: iC10_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=iC10
+- alias: r

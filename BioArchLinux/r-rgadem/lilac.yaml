@@ -12,3 +12,4 @@ update_on:
 - regex: rGADEM_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rGADEM
+- alias: r

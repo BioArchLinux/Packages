@@ -10,3 +10,4 @@ update_on:
 - regex: linkcomm_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=linkcomm
+- alias: r

@@ -26,3 +26,4 @@ update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
     url: https://raw.githubusercontent.com/jasp-stats/jaspMetaAnalysis/master/DESCRIPTION
+- alias: r

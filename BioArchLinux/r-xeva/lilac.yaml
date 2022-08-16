@@ -16,3 +16,4 @@ update_on:
 - regex: Xeva_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Xeva
+- alias: r

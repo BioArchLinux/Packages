@@ -25,3 +25,4 @@ update_on:
 - regex: TBSignatureProfiler_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TBSignatureProfiler
+- alias: r

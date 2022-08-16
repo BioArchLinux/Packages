@@ -13,3 +13,4 @@ update_on:
 - regex: RNAmodR.RiboMethSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RNAmodR.RiboMethSeq
+- alias: r

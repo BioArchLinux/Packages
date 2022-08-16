@@ -18,3 +18,4 @@ update_on:
 - regex: maser_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/maser
+- alias: r

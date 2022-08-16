@@ -17,3 +17,4 @@ update_on:
 - regex: genbankr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/genbankr
+- alias: r

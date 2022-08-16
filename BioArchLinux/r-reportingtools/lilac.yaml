@@ -25,3 +25,4 @@ update_on:
 - regex: ReportingTools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ReportingTools
+- alias: r

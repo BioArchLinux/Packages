@@ -10,3 +10,4 @@ update_on:
 - regex: mosaicCore_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=mosaicCore
+- alias: r

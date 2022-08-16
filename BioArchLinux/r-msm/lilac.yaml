@@ -9,3 +9,4 @@ update_on:
 - regex: msm_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=msm
+- alias: r

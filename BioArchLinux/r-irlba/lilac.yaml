@@ -6,3 +6,4 @@ update_on:
 - regex: irlba_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=irlba
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: R2HTML_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=R2HTML
+- alias: r

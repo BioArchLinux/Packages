@@ -9,3 +9,4 @@ update_on:
 - regex: GeneGA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GeneGA
+- alias: r

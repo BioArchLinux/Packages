@@ -26,3 +26,4 @@ update_on:
 - regex: primirTSS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/primirTSS
+- alias: r

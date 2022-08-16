@@ -9,3 +9,4 @@ update_on:
 - regex: tmvtnorm_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=tmvtnorm
+- alias: r

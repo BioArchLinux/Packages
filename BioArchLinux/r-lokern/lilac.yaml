@@ -8,3 +8,4 @@ update_on:
 - regex: lokern_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=lokern
+- alias: r

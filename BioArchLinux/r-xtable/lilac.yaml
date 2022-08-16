@@ -6,3 +6,4 @@ update_on:
 - regex: xtable_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=xtable
+- alias: r

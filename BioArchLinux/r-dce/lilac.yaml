@@ -35,3 +35,4 @@ update_on:
 - regex: dce_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/dce
+- alias: r

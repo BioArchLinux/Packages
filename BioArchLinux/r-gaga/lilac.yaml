@@ -10,3 +10,4 @@ update_on:
 - regex: gaga_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/gaga
+- alias: r

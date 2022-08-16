@@ -9,3 +9,4 @@ update_on:
 - regex: GraphAT_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GraphAT
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: EBSEA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/EBSEA
+- alias: r

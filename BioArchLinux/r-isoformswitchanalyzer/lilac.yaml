@@ -36,3 +36,4 @@ update_on:
 - regex: IsoformSwitchAnalyzeR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/IsoformSwitchAnalyzeR
+- alias: r

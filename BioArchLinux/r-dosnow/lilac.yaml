@@ -10,3 +10,4 @@ update_on:
 - regex: doSNOW_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=doSNOW
+- alias: r

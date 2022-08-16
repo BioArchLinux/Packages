@@ -8,3 +8,4 @@ update_on:
 - regex: ggdendro_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggdendro
+- alias: r

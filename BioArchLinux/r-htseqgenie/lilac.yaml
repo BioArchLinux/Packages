@@ -26,3 +26,4 @@ update_on:
 - regex: HTSeqGenie_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/HTSeqGenie
+- alias: r

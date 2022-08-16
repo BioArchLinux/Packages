@@ -13,3 +13,4 @@ update_on:
 - regex: RcwlPipelines_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RcwlPipelines
+- alias: r

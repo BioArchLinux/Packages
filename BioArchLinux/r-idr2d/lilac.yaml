@@ -18,3 +18,4 @@ update_on:
 - regex: idr2d_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/idr2d
+- alias: r

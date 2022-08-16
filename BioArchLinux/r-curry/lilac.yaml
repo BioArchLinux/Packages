@@ -6,3 +6,4 @@ update_on:
 - regex:  curry_(\d+.\d+.\d+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=curry
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: R.oo_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=R.oo
+- alias: r

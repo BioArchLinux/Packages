@@ -9,3 +9,4 @@ update_on:
 - regex: rDGIdb_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rDGIdb
+- alias: r

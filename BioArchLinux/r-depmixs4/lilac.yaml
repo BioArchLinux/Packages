@@ -8,3 +8,4 @@ update_on:
 - regex: depmixS4_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=depmixS4
+- alias: r

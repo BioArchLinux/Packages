@@ -6,3 +6,4 @@ update_on:
 - regex: calibrate_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=calibrate
+- alias: r

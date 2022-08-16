@@ -19,3 +19,4 @@ update_on:
 - regex: scClassifR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/3.14/bioc/html/scClassifR.html
+- alias: r

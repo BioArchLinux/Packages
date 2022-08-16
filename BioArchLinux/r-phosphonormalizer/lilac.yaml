@@ -9,3 +9,4 @@ update_on:
 - regex: phosphonormalizer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/phosphonormalizer
+- alias: r

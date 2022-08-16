@@ -17,3 +17,4 @@ update_on:
 - regex: scRNAseq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scRNAseq
+- alias: r

@@ -20,3 +20,4 @@ update_on:
 - regex: tRNAscanImport_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tRNAscanImport
+- alias: r

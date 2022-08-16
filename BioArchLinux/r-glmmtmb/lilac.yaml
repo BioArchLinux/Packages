@@ -11,3 +11,4 @@ update_on:
 - regex: glmmTMB_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=glmmTMB
+- alias: r

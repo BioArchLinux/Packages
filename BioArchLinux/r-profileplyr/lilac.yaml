@@ -39,3 +39,4 @@ update_on:
 - regex: profileplyr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/profileplyr
+- alias: r

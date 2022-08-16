@@ -10,3 +10,4 @@ update_on:
   - regex: kutils_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=kutils
+- alias: r

@@ -21,3 +21,4 @@ update_on:
 - regex: GenomicScores_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GenomicScores
+- alias: r

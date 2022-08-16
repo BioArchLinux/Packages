@@ -11,3 +11,4 @@ update_on:
 - regex: biocGraph_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biocGraph
+- alias: r

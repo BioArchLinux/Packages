@@ -8,3 +8,4 @@ update_on:
 - regex: similaRpeak_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/similaRpeak
+- alias: r

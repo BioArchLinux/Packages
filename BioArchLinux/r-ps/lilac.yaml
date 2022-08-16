@@ -6,3 +6,4 @@ update_on:
 - regex: ps_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ps
+- alias: r

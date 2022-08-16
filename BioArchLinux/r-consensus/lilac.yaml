@@ -10,3 +10,4 @@ update_on:
 - regex: consensus_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/consensus
+- alias: r

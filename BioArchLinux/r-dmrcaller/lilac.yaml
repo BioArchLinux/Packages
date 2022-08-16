@@ -13,3 +13,4 @@ update_on:
 - regex: DMRcaller_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DMRcaller
+- alias: r

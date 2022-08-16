@@ -16,3 +16,4 @@ update_on:
 - regex: eiR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/eiR
+- alias: r

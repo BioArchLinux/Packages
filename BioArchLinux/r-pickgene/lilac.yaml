@@ -6,3 +6,4 @@ update_on:
 - regex: pickgene_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pickgene
+- alias: r

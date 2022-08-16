@@ -31,3 +31,4 @@ update_on:
 - regex: consensusDE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/consensusDE
+- alias: r

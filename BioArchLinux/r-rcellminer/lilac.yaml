@@ -13,3 +13,4 @@ update_on:
 - regex: rcellminer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rcellminer
+- alias: r

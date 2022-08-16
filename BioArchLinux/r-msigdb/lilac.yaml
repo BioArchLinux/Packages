@@ -13,3 +13,4 @@ update_on:
 - regex: msigdb_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/msigdb
+- alias: r

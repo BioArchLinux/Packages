@@ -21,3 +21,4 @@ update_on:
 - regex: VanillaICE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/VanillaICE
+- alias: r

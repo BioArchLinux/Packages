@@ -10,3 +10,4 @@ update_on:
 - regex: MsFeatures_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MsFeatures
+- alias: r

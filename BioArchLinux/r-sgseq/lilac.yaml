@@ -21,3 +21,4 @@ update_on:
 - regex: SGSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SGSeq
+- alias: r

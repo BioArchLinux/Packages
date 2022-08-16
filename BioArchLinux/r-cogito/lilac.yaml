@@ -19,3 +19,4 @@ update_on:
 - regex: Cogito_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Cogito
+- alias: r

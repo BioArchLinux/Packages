@@ -9,3 +9,4 @@ update_on:
 - regex: Clomial_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Clomial
+- alias: r

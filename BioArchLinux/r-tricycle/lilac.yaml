@@ -20,3 +20,4 @@ update_on:
 - regex: tricycle_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tricycle
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: RedeR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RedeR
+- alias: r

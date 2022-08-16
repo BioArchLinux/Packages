@@ -9,3 +9,4 @@ update_on:
 - regex: aws.signature_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=aws.signature
+- alias: r

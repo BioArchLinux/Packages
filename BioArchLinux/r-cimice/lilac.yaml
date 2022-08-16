@@ -21,3 +21,4 @@ update_on:
 - regex: CIMICE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CIMICE
+- alias: r

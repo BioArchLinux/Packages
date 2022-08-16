@@ -6,3 +6,4 @@ update_on:
 - regex: operator.tools_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=operator.tools
+- alias: r

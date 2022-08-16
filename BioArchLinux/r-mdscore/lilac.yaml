@@ -5,3 +5,4 @@ update_on:
   - regex: mdscore_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=mdscore
+- alias: r

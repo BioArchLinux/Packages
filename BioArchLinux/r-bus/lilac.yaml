@@ -9,3 +9,4 @@ update_on:
 - regex: BUS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BUS
+- alias: r

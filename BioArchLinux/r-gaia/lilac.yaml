@@ -6,3 +6,4 @@ update_on:
 - regex: gaia_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/gaia
+- alias: r

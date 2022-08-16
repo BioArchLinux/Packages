@@ -11,3 +11,4 @@ update_on:
 - regex: RSVSim_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RSVSim
+- alias: r

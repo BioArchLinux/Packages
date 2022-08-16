@@ -35,3 +35,4 @@ update_on:
 - regex: InPAS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/InPAS
+- alias: r

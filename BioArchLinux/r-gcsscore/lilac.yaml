@@ -15,3 +15,4 @@ update_on:
 - regex: GCSscore_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GCSscore
+- alias: r

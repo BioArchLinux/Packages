@@ -16,3 +16,4 @@ update_on:
 - regex: ADaCGH2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ADaCGH2
+- alias: r

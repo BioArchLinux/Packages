@@ -13,3 +13,4 @@ update_on:
 - regex: survcomp_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/survcomp
+- alias: r

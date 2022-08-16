@@ -13,3 +13,4 @@ update_on:
 - regex: MSstatsSampleSize_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MSstatsSampleSize
+- alias: r

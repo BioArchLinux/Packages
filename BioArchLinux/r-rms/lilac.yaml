@@ -16,3 +16,4 @@ update_on:
 - regex: rms_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=rms
+- alias: r

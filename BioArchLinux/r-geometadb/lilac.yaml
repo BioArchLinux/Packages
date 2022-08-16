@@ -9,3 +9,4 @@ update_on:
 - regex: GEOmetadb_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GEOmetadb
+- alias: r

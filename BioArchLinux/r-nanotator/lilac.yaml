@@ -24,3 +24,4 @@ update_on:
 - regex: nanotatoR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/nanotatoR
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: BiFET_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BiFET
+- alias: r

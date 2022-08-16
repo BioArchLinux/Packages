@@ -5,3 +5,4 @@ update_on:
   - regex: pak_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=pak
+- alias: r

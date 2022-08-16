@@ -55,3 +55,4 @@ update_on:
 - regex: ChromSCape_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ChromSCape
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: tfautograph_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=tfautograph
+- alias: r

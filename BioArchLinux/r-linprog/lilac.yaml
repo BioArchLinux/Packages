@@ -8,3 +8,4 @@ update_on:
 - regex: linprog_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=linprog
+- alias: r

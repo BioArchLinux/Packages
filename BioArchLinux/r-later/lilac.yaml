@@ -9,3 +9,4 @@ update_on:
 - regex: later_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=later
+- alias: r

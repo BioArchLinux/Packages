@@ -57,3 +57,4 @@ update_on:
 - regex: musicatk_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/musicatk
+- alias: r

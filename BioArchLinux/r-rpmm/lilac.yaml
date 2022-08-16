@@ -6,3 +6,4 @@ update_on:
 - regex: RPMM_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=RPMM
+- alias: r

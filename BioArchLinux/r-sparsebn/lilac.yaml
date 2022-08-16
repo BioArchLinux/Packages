@@ -10,3 +10,4 @@ update_on:
 - regex: sparsebn_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/sparsebn/
+- alias: r

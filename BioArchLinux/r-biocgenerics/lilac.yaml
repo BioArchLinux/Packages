@@ -6,3 +6,4 @@ update_on:
 - regex: BiocGenerics_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BiocGenerics
+- alias: r

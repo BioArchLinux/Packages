@@ -9,3 +9,4 @@ update_on:
 - regex: units_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=units
+- alias: r

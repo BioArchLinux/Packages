@@ -9,3 +9,4 @@ update_on:
 - regex: SBMLR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SBMLR
+- alias: r

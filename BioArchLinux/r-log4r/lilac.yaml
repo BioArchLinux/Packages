@@ -6,3 +6,4 @@ update_on:
 - regex: log4r_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=log4r
+- alias: r

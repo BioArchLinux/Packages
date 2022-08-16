@@ -16,3 +16,4 @@ update_on:
 - regex: gargle_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gargle
+- alias: r

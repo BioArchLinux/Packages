@@ -28,3 +28,4 @@ update_on:
 - regex: trena_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/trena
+- alias: r

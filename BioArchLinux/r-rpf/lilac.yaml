@@ -10,3 +10,4 @@ update_on:
   - regex: rpf_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=rpf
+- alias: r

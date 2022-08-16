@@ -6,3 +6,4 @@ update_on:
 - regex: nleqslv_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=nleqslv
+- alias: r

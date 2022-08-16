@@ -20,3 +20,4 @@ update_on:
 - regex: bnbc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/bnbc
+- alias: r

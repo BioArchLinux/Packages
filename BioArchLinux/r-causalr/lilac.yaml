@@ -8,3 +8,4 @@ update_on:
 - regex: CausalR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/CausalR
+- alias: r

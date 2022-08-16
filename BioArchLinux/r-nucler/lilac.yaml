@@ -19,3 +19,4 @@ update_on:
 - regex: nucleR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/nucleR
+- alias: r

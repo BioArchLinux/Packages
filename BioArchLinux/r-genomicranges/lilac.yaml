@@ -12,3 +12,4 @@ update_on:
 - regex: GenomicRanges_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GenomicRanges
+- alias: r

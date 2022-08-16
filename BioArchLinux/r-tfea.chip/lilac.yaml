@@ -14,3 +14,4 @@ update_on:
 - regex: TFEA.ChIP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TFEA.ChIP
+- alias: r

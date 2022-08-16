@@ -9,3 +9,4 @@ update_on:
 - regex: hgu133a.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/hgu133a.db
+- alias: r

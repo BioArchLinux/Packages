@@ -17,3 +17,4 @@ update_on:
 - regex: SingleMoleculeFootprinting_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SingleMoleculeFootprinting
+- alias: r

@@ -27,3 +27,4 @@ update_on:
 - regex: BPRMeth_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BPRMeth
+- alias: r

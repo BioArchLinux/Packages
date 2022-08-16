@@ -22,3 +22,4 @@ update_on:
 - regex: arrayQualityMetrics_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/arrayQualityMetrics
+- alias: r

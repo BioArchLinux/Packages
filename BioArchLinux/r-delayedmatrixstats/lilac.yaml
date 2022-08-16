@@ -13,3 +13,4 @@ update_on:
 - regex: DelayedMatrixStats_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DelayedMatrixStats
+- alias: r

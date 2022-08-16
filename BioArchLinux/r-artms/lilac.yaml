@@ -33,3 +33,4 @@ update_on:
 - regex: artMS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/artMS
+- alias: r

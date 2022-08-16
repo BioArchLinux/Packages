@@ -13,3 +13,4 @@ update_on:
 - regex: funtooNorm_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/funtooNorm
+- alias: r

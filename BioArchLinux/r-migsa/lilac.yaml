@@ -29,3 +29,4 @@ update_on:
 - regex: MIGSA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MIGSA
+- alias: r

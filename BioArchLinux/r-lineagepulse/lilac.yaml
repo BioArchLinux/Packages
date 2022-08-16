@@ -16,3 +16,4 @@ update_on:
 - regex: LineagePulse_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/LineagePulse
+- alias: r

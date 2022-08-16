@@ -9,3 +9,4 @@ update_on:
 - regex: RSpectra_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=RSpectra
+- alias: r

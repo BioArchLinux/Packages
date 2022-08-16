@@ -9,3 +9,4 @@ update_on:
 - regex: MiPP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MiPP
+- alias: r

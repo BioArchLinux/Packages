@@ -17,3 +17,4 @@ update_on:
 - regex: MACSQuantifyR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MACSQuantifyR
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: TBX20BamSubset_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TBX20BamSubset
+- alias: r

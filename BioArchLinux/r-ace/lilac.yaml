@@ -11,3 +11,4 @@ update_on:
 - regex: ACE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ACE
+- alias: r

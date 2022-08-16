@@ -30,3 +30,4 @@ update_on:
 - regex: miloR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/miloR
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: distrEx_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=distrEx
+- alias: r

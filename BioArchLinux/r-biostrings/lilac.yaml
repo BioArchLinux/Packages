@@ -13,3 +13,4 @@ update_on:
 - regex: Biostrings_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Biostrings
+- alias: r

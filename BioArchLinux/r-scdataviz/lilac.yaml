@@ -19,3 +19,4 @@ update_on:
 - regex: scDataviz_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scDataviz
+- alias: r

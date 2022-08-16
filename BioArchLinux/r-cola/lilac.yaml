@@ -32,3 +32,4 @@ update_on:
 - regex: cola_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/cola
+- alias: r

@@ -16,3 +16,4 @@ update_on:
 - regex: GNET2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GNET2
+- alias: r

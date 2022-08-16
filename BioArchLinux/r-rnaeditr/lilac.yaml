@@ -16,3 +16,4 @@ update_on:
 - regex: rnaEditr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rnaEditr
+- alias: r

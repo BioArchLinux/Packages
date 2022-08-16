@@ -16,3 +16,4 @@ update_on:
 - regex: tidytree_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=tidytree
+- alias: r

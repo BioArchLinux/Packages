@@ -10,3 +10,4 @@ update_on:
 - regex: longitudinalData_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=longitudinalData
+- alias: r

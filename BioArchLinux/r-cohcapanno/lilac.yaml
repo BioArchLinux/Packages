@@ -6,3 +6,4 @@ update_on:
 - regex: COHCAPanno_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/COHCAPanno
+- alias: r

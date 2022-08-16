@@ -12,3 +12,4 @@ update_on:
 - regex: savR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/savR
+- alias: r

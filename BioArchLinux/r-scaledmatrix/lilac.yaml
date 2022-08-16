@@ -9,3 +9,4 @@ update_on:
 - regex: ScaledMatrix_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ScaledMatrix
+- alias: r

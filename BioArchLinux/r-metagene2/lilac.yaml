@@ -21,3 +21,4 @@ update_on:
 - regex: metagene2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/metagene2
+- alias: r

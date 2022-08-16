@@ -17,3 +17,4 @@ update_on:
 - regex: textstem_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=textstem
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: smoother_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=smoother
+- alias: r

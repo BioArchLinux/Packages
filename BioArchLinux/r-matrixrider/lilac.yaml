@@ -12,3 +12,4 @@ update_on:
 - regex: MatrixRider_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MatrixRider
+- alias: r

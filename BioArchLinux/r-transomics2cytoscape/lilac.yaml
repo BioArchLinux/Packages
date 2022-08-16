@@ -10,3 +10,4 @@ update_on:
 - regex: transomics2cytoscape_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/transomics2cytoscape
+- alias: r

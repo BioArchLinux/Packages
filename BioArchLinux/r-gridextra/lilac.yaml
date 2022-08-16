@@ -8,3 +8,4 @@ update_on:
 - regex: gridExtra_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=gridExtra
+- alias: r

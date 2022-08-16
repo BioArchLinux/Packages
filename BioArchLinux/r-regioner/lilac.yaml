@@ -15,3 +15,4 @@ update_on:
 - regex: regioneR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/regioneR
+- alias: r

@@ -40,3 +40,4 @@ update_on:
 - regex: AlpsNMR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/AlpsNMR
+- alias: r

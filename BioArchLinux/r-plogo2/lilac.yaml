@@ -12,3 +12,4 @@ update_on:
 - regex: PloGO2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PloGO2
+- alias: r

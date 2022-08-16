@@ -8,3 +8,4 @@ update_on:
 - regex: pmm_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pmm
+- alias: r

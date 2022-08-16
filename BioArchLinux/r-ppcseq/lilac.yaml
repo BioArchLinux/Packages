@@ -27,3 +27,4 @@ update_on:
 - regex: ppcseq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ppcseq
+- alias: r

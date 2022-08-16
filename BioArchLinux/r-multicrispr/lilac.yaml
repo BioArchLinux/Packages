@@ -26,3 +26,4 @@ update_on:
 - regex: multicrispr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/multicrispr
+- alias: r

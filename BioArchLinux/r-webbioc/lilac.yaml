@@ -15,3 +15,4 @@ update_on:
 - regex: webbioc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/webbioc
+- alias: r

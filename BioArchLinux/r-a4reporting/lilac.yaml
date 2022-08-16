@@ -8,3 +8,4 @@ update_on:
 - regex: a4Reporting_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/a4Reporting
+- alias: r

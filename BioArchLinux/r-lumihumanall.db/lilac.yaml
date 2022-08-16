@@ -9,3 +9,4 @@ update_on:
 - regex: lumiHumanAll.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/lumiHumanAll.db
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: gsean_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/gsean
+- alias: r

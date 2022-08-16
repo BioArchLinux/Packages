@@ -9,3 +9,4 @@ update_on:
 - regex: processx_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=processx
+- alias: r

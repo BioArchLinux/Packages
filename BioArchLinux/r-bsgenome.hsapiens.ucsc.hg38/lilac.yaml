@@ -8,3 +8,4 @@ update_on:
 - regex: BSgenome.Hsapiens.UCSC.hg38_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BSgenome.Hsapiens.UCSC.hg38
+- alias: r

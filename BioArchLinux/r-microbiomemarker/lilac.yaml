@@ -37,3 +37,4 @@ update_on:
 - regex: microbiomeMarker_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/microbiomeMarker
+- alias: r

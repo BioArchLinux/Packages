@@ -10,3 +10,4 @@ update_on:
 - regex: DEqMS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DEqMS
+- alias: r

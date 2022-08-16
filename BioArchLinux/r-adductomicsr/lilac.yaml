@@ -28,3 +28,4 @@ update_on:
 - regex: adductomicsR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/adductomicsR
+- alias: r

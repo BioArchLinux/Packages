@@ -9,3 +9,4 @@ update_on:
 - regex: MGFR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MGFR
+- alias: r

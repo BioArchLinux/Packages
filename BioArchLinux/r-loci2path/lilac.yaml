@@ -14,3 +14,4 @@ update_on:
 - regex: loci2path_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/loci2path
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: hierinf_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/hierinf
+- alias: r

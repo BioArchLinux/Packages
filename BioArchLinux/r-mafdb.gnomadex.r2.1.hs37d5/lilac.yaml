@@ -13,3 +13,4 @@ update_on:
 - regex: MafDb.gnomADex.r2.1.hs37d5_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MafDb.gnomADex.r2.1.hs37d5
+- alias: r

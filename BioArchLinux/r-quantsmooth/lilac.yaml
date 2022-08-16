@@ -8,3 +8,4 @@ update_on:
 - regex: quantsmooth_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/quantsmooth
+- alias: r

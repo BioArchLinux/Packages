@@ -31,3 +31,4 @@ update_on:
 - regex: VariantFiltering_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/VariantFiltering
+- alias: r

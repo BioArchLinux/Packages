@@ -10,3 +10,4 @@ update_on:
   - regex: metadynminer3d_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=metadynminer3d
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: antiProfiles_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/antiProfiles
+- alias: r

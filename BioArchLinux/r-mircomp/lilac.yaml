@@ -9,3 +9,4 @@ update_on:
 - regex: miRcomp_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/miRcomp
+- alias: r

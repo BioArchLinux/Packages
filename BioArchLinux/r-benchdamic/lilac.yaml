@@ -27,3 +27,4 @@ update_on:
 - regex: benchdamic_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/benchdamic
+- alias: r

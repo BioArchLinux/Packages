@@ -10,3 +10,4 @@ update_on:
 - regex: SBGNview.data_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SBGNview.data
+- alias: r

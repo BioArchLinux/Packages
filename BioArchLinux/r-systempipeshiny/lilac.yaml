@@ -39,3 +39,4 @@ update_on:
 - regex: systemPipeShiny_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/systemPipeShiny
+- alias: r

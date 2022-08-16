@@ -16,3 +16,4 @@ update_on:
 - regex: imager_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=imager
+- alias: r

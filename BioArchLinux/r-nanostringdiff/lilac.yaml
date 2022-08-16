@@ -10,3 +10,4 @@ update_on:
 - regex: NanoStringDiff_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/NanoStringDiff
+- alias: r

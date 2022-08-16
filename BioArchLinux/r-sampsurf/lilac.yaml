@@ -11,3 +11,4 @@ update_on:
 - regex: sampSurf_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/sampSurf/
+- alias: r

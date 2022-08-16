@@ -34,3 +34,4 @@ update_on:
 - regex: Ularcirc_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Ularcirc
+- alias: r

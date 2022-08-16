@@ -13,3 +13,4 @@ update_on:
 - regex: openPrimeRui_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/openPrimeRui
+- alias: r

@@ -14,3 +14,4 @@ update_on:
 - regex: tomoda_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/tomoda
+- alias: r

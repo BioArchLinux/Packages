@@ -10,3 +10,4 @@ update_on:
 - regex: Herper_([\d._-]+).zip
   source: regex
   url: https://bioconductor.org/packages/Herper
+- alias: r

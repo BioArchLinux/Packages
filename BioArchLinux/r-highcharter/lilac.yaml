@@ -27,3 +27,4 @@ update_on:
 - regex: highcharter_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=highcharter
+- alias: r

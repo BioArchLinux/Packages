@@ -27,3 +27,4 @@ update_on:
 - regex: KnowSeq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/KnowSeq
+- alias: r

@@ -14,3 +14,4 @@ update_on:
 - regex: plsVarSel_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=plsVarSel
+- alias: r

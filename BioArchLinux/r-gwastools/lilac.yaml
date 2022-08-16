@@ -18,3 +18,4 @@ update_on:
 - regex: GWASTools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GWASTools
+- alias: r

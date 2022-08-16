@@ -26,3 +26,4 @@ update_on:
 - regex: iSEE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/iSEE
+- alias: r

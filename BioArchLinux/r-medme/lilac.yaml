@@ -9,3 +9,4 @@ update_on:
 - regex: MEDME_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MEDME
+- alias: r

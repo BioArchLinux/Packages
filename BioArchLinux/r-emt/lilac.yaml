@@ -6,3 +6,4 @@ update_on:
 - regex: EMT_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=EMT
+- alias: r

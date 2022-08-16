@@ -6,3 +6,4 @@ update_on:
 - regex: SMAP_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SMAP
+- alias: r

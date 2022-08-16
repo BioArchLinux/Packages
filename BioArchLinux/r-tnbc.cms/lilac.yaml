@@ -19,3 +19,4 @@ update_on:
 - regex: TNBC.CMS_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TNBC.CMS
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: energy_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=energy
+- alias: r

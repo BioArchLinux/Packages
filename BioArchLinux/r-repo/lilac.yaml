@@ -8,3 +8,4 @@ update_on:
 - regex: repo_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=repo
+- alias: r

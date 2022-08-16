@@ -24,3 +24,4 @@ update_on:
 - regex: rCGH_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rCGH
+- alias: r

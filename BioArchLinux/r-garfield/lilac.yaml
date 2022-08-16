@@ -6,3 +6,4 @@ update_on:
 - regex: garfield_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/garfield
+- alias: r

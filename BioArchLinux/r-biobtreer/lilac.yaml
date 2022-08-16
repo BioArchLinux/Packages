@@ -11,3 +11,4 @@ update_on:
 - regex: biobtreeR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biobtreeR
+- alias: r

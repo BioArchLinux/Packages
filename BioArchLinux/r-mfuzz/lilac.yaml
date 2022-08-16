@@ -10,3 +10,4 @@ update_on:
 - regex: Mfuzz_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Mfuzz
+- alias: r

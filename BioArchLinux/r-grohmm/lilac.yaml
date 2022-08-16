@@ -13,3 +13,4 @@ update_on:
 - regex: groHMM_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/groHMM
+- alias: r

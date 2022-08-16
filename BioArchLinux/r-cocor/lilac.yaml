@@ -5,3 +5,4 @@ update_on:
   - regex: cocor_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=cocor
+- alias: r

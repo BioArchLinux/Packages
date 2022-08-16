@@ -16,3 +16,4 @@ update_on:
 - regex: DEGraph_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DEGraph
+- alias: r

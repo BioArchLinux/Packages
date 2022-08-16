@@ -28,3 +28,4 @@ update_on:
 - regex: qPLEXanalyzer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/qPLEXanalyzer
+- alias: r

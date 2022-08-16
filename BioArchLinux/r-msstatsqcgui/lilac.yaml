@@ -13,3 +13,4 @@ update_on:
 - regex: MSstatsQCgui_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MSstatsQCgui
+- alias: r

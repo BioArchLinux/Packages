@@ -24,3 +24,4 @@ update_on:
 - regex: decompTumor2Sig_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/decompTumor2Sig
+- alias: r

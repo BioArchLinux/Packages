@@ -8,3 +8,4 @@ update_on:
 - regex: rhdf5filters_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/rhdf5filters
+- alias: r

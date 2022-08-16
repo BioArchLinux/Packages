@@ -29,3 +29,4 @@ update_on:
 - regex: GenVisR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GenVisR
+- alias: r

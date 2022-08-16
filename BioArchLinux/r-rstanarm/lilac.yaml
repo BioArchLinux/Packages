@@ -18,3 +18,4 @@ update_on:
   - regex: rstanarm_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=rstanarm
+- alias: r

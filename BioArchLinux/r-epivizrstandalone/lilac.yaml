@@ -14,3 +14,4 @@ update_on:
 - regex: epivizrStandalone_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/epivizrStandalone
+- alias: r

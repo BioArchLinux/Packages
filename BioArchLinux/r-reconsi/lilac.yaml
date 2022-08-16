@@ -12,3 +12,4 @@ update_on:
 - regex: reconsi_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/reconsi
+- alias: r

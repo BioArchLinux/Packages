@@ -13,3 +13,4 @@ update_on:
 - regex: SNPlocs.Hsapiens.dbSNP150.GRCh38_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/SNPlocs.Hsapiens.dbSNP150.GRCh38
+- alias: r

@@ -9,3 +9,4 @@ update_on:
 - regex: ALS_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/ALS/
+- alias: r

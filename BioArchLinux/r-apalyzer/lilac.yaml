@@ -23,3 +23,4 @@ update_on:
 - regex: APAlyzer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/APAlyzer
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: metaCCA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/metaCCA
+- alias: r

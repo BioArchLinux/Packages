@@ -32,3 +32,4 @@ update_on:
 - regex: EGSEA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/EGSEA
+- alias: r

@@ -11,3 +11,4 @@ update_on:
 - regex: predictionet_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/3.14/bioc/html/predictionet.html
+- alias: r

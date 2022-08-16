@@ -6,3 +6,4 @@ update_on:
 - regex: BAC_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BAC
+- alias: r

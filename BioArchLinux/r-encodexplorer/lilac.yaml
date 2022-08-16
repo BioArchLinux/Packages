@@ -20,5 +20,6 @@ update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/3.14/ENCODExplorer
+- alias: r
 
 pre_build: vcs_update

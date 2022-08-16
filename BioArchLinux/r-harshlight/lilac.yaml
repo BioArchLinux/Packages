@@ -10,3 +10,4 @@ update_on:
 - regex: Harshlight_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Harshlight
+- alias: r

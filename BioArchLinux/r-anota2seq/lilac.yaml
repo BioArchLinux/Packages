@@ -14,3 +14,4 @@ update_on:
 - regex: anota2seq_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/anota2seq
+- alias: r

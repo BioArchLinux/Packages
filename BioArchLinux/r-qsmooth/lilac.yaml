@@ -10,3 +10,4 @@ update_on:
 - regex: qsmooth_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/qsmooth
+- alias: r

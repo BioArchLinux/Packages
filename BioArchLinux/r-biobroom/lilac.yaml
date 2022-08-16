@@ -11,3 +11,4 @@ update_on:
 - regex: biobroom_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/biobroom
+- alias: r

@@ -12,3 +12,4 @@ update_on:
 - regex: R.rsp_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=R.rsp
+- alias: r

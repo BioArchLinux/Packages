@@ -15,3 +15,4 @@ update_on:
 - regex: ggiraph_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggiraph
+- alias: r

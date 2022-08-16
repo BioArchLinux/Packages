@@ -9,3 +9,4 @@ update_on:
 - regex: chromPlot_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/chromPlot
+- alias: r

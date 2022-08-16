@@ -9,3 +9,4 @@ update_on:
 - regex: extRemes_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=extRemes
+- alias: r

@@ -16,3 +16,4 @@ update_on:
 - regex: flowCore_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/flowCore
+- alias: r

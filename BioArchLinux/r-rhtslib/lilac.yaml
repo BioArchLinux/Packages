@@ -8,3 +8,4 @@ update_on:
 - regex: Rhtslib_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Rhtslib
+- alias: r

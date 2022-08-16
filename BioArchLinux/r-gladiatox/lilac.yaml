@@ -22,3 +22,4 @@ update_on:
 - regex: GladiaTOX_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/GladiaTOX
+- alias: r

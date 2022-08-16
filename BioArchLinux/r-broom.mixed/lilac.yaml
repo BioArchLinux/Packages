@@ -16,3 +16,4 @@ update_on:
 - regex: broom.mixed_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=broom.mixed
+- alias: r

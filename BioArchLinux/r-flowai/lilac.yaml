@@ -16,3 +16,4 @@ update_on:
 - regex: flowAI_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/flowAI
+- alias: r

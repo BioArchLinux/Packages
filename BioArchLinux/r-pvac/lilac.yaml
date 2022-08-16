@@ -9,3 +9,4 @@ update_on:
 - regex: pvac_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pvac
+- alias: r

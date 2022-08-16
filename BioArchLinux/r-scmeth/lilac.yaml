@@ -21,3 +21,4 @@ update_on:
 - regex: scmeth_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scmeth
+- alias: r

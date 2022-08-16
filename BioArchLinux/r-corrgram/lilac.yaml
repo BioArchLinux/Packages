@@ -6,3 +6,4 @@ update_on:
 - regex: corrgram_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=corrgram
+- alias: r

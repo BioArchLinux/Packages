@@ -12,3 +12,4 @@ update_on:
 - regex: RCyjs_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RCyjs
+- alias: r

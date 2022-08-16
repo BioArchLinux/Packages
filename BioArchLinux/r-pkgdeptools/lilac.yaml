@@ -9,3 +9,4 @@ update_on:
 - regex: pkgDepTools_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/pkgDepTools
+- alias: r

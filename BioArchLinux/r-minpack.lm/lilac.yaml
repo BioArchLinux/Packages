@@ -6,3 +6,4 @@ update_on:
 - regex: minpack.lm_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=minpack.lm
+- alias: r

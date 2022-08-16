@@ -11,3 +11,4 @@ update_on:
 - regex: flowClean_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/flowClean
+- alias: r

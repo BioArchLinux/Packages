@@ -8,3 +8,4 @@ update_on:
 - regex: aricode_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=aricode
+- alias: r

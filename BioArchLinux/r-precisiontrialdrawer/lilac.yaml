@@ -30,3 +30,4 @@ update_on:
 - regex: PrecisionTrialDrawer_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PrecisionTrialDrawer
+- alias: r

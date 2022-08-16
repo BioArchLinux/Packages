@@ -10,3 +10,4 @@ update_on:
 - regex: qlcMatrix_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=qlcMatrix
+- alias: r

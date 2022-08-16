@@ -22,3 +22,4 @@ update_on:
 - regex: neo4r_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=neo4r
+- alias: r

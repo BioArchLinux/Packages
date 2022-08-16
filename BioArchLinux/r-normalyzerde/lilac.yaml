@@ -19,3 +19,4 @@ update_on:
 - regex: NormalyzerDE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/NormalyzerDE
+- alias: r

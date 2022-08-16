@@ -9,3 +9,4 @@ update_on:
 - regex: LIM_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=LIM
+- alias: r

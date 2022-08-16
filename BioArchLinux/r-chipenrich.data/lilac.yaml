@@ -15,3 +15,4 @@ update_on:
 - regex: chipenrich.data_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/chipenrich.data
+- alias: r

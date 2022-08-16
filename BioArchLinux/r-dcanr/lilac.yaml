@@ -15,3 +15,4 @@ update_on:
 - regex: dcanr_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/dcanr
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: org.Sc.sgd.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/org.Sc.sgd.db
+- alias: r

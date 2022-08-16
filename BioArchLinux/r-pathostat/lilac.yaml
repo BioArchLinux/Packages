@@ -36,3 +36,4 @@ update_on:
 - regex: PathoStat_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/PathoStat
+- alias: r

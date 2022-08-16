@@ -23,3 +23,4 @@ update_on:
 - regex: ggpubr_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=ggpubr
+- alias: r

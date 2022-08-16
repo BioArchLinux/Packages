@@ -6,3 +6,4 @@ update_on:
 - regex: Illumina450ProbeVariants.db_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/Illumina450ProbeVariants.db
+- alias: r

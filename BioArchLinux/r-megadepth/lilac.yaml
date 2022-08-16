@@ -14,3 +14,4 @@ update_on:
 - regex: megadepth_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/megadepth
+- alias: r

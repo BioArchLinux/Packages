@@ -37,3 +37,4 @@ update_on:
 - regex: LACE_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/LACE
+- alias: r

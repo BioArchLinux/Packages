@@ -13,3 +13,4 @@ update_on:
 - regex: sf_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=sf
+- alias: r

@@ -19,3 +19,4 @@ update_on:
 - regex: VplotR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/VplotR
+- alias: r

@@ -6,3 +6,4 @@ update_on:
 - regex: JASPAR2018_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/JASPAR2018
+- alias: r

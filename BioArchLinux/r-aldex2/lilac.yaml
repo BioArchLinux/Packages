@@ -15,3 +15,4 @@ update_on:
 - regex: ALDEx2_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ALDEx2
+- alias: r

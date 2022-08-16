@@ -8,3 +8,4 @@ update_on:
 - regex: IlluminaHumanMethylation450kanno.ilmn12.hg19_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/IlluminaHumanMethylation450kanno.ilmn12.hg19
+- alias: r

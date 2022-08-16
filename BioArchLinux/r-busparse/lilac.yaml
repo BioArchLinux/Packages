@@ -31,3 +31,4 @@ update_on:
 - regex: BUSpaRse_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BUSpaRse
+- alias: r

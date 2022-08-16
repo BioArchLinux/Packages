@@ -21,3 +21,4 @@ update_on:
 - regex: gmapR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/gmapR
+- alias: r

@@ -13,3 +13,4 @@ update_on:
 - regex: MetaCyto_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MetaCyto
+- alias: r

@@ -8,3 +8,4 @@ update_on:
 - regex: airway_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/airway
+- alias: r

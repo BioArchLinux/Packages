@@ -9,3 +9,4 @@ update_on:
 - regex: TxDb.Hsapiens.UCSC.hg38.knownGene_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/TxDb.Hsapiens.UCSC.hg38.knownGene
+- alias: r

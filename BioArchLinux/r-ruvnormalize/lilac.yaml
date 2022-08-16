@@ -9,3 +9,4 @@ update_on:
 - regex: RUVnormalize_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/RUVnormalize
+- alias: r

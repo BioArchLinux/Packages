@@ -34,3 +34,4 @@ update_on:
 - regex: scanMiRApp_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/scanMiRApp
+- alias: r

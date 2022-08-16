@@ -17,3 +17,4 @@ update_on:
 - regex: BiocSet_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/BiocSet
+- alias: r

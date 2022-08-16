@@ -15,3 +15,4 @@ update_on:
 - regex: MIRA_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/MIRA
+- alias: r

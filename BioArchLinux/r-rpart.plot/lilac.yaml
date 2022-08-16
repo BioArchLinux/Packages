@@ -6,3 +6,4 @@ update_on:
 - regex: rpart.plot_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=rpart.plot
+- alias: r

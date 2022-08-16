@@ -6,3 +6,4 @@ update_on:
 - regex: ProtGenerics_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/ProtGenerics
+- alias: r
