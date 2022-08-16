@@ -4,7 +4,7 @@ _pkgname=dtt
 _pkgver=0.1-2
 pkgname=r-${_pkgname,,}
 pkgver=0.1.2
-pkgrel=4
+pkgrel=5
 pkgdesc='Discrete Trigonometric Transforms'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
