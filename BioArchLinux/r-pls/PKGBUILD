@@ -4,7 +4,7 @@ _pkgname=pls
 _pkgver=2.8-1
 pkgname=r-${_pkgname,,}
 pkgver=2.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Partial Least Squares and Principal Component Regression'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
