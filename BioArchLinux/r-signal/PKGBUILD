@@ -4,7 +4,7 @@ _pkgname=signal
 _pkgver=0.7-7
 pkgname=r-${_pkgname,,}
 pkgver=0.7.7
-pkgrel=4
+pkgrel=5
 pkgdesc='Signal Processing'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
