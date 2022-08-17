@@ -22,4 +22,4 @@ update_on:
   - regex: shinystan_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=shinystan
-- alias: r
+  - alias: r
