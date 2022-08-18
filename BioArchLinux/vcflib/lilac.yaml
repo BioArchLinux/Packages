@@ -14,3 +14,6 @@ update_on:
   - alias: alpm-lilac
     alpm: htslib
     strip_release: true
+  - alias: alpm-lilac
+    alpm: tabixpp
+    strip_release: true

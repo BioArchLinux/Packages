@@ -1,15 +1,13 @@
 # Maintainer: Guoyi
 pkgname=vcflib
 pkgver=1.0.3
-pkgrel=6
+pkgrel=7
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
 arch=('x86_64')
 url="https://github.com/vcflib/vcflib"
 license=('MIT')
 depends=('python' 'htslib')
-makedepends=('git' 'cmake' 'make' 'pybind11' 'tabixpp'
-'pandoc'
-)
+makedepends=('git' 'cmake' 'make' 'pybind11' 'tabixpp' 'pandoc' 'zig')
 optdepends=('r: running R scripts'
 'perl: running Perl scripts'
 )
