@@ -9,6 +9,7 @@ repo_depends:
 - r-fs
 - r-glue
 - r-knitr
+- r-lifecycle
 - r-rlang
 - r-rmarkdown
 - r-rstudioapi

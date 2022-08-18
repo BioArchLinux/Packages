@@ -1,27 +1,28 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tweenr
-_pkgver=1.0.2
+_pkgver=2.0.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.2
-pkgrel=5
+pkgver=2.0.0
+pkgrel=0
 pkgdesc='Interpolate Data for Smooth Animations'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-cpp11
   r-farver
   r-magrittr
-  r-rcpp
   r-rlang
+  r-vctrs
 )
 optdepends=(
   r-covr
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1805f575da6705ca4e5ec1c4605222fc826ba806d9ff9af41770294fe08ff69f')
+sha256sums=('2a0880c7397f021c930b778374948d0580c2473564cd9c322266877c055cd867')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
