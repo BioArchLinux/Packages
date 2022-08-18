@@ -3,6 +3,8 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 #pre_build_script: aur_pre_build(maintainers='malacology')
+repo_depends:
+  - paml
 update_on:
   - source: cmd
     cmd: curl -sS https://raw.githubusercontent.com/BioEasy/EasyCodeML/master/Version%20History.txt | awk 'NR==1{print}' | awk '{print$2}'
