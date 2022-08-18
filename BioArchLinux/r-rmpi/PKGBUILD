@@ -13,6 +13,11 @@ depends=(
   r
   openmpi
 )
+makedepends=(
+  openssh
+  inetutils
+  nvidia-utils
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('358ac1af97402e676f209261a231f36a35e60f0301edf8ca53dac11af3c3bd1a')
 
