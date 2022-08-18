@@ -8,5 +8,3 @@ repo_depends:
 update_on:
   - source: cmd
     cmd: curl -sS https://raw.githubusercontent.com/BioEasy/EasyCodeML/master/Version%20History.txt | awk 'NR==1{print}' | awk '{print$2}'
-repo_depends:
-  - paml
