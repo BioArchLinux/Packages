@@ -11,3 +11,7 @@ update_on:
   - source: github
     github: vcflib/vcflib
     use_max_tag: true
+  - alias: alpm-lilac
+    alpm: htslib
+    provided: libhts.so
+    strip_release: true

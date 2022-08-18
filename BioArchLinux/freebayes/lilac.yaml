@@ -13,3 +13,7 @@ update_on:
     github: freebayes/freebayes
     use_latest_release: true
     prefix: 'v'
+  - alias: alpm-lilac
+    alpm: htslib
+    provided: libhts.so
+    strip_release: true

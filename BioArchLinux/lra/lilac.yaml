@@ -6,5 +6,9 @@ update_on:
   - source: github
     github: ChaissonLab/LRA
     use_latest_release: true
+  - alias: alpm-lilac
+    alpm: htslib
+    provided: libhts.so
+    strip_release: true
 repo_depends:
   - htslib
