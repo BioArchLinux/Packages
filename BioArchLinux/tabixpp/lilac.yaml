@@ -9,3 +9,6 @@ update_on:
   github: vcflib/tabixpp
   use_max_tag: true
   prefix: 'v'
+- alias: alpm-lilac
+  alpm: htslib
+  strip_release: true

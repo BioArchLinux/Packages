@@ -11,5 +11,4 @@ update_on:
     prefix: 'v'
   - alias: alpm-lilac
     alpm: htslib
-    provided: libhts.so
     strip_release: true

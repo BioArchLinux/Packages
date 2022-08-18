@@ -8,7 +8,6 @@ update_on:
     use_latest_release: true
   - alias: alpm-lilac
     alpm: htslib
-    provided: libhts.so
     strip_release: true
 repo_depends:
   - htslib
