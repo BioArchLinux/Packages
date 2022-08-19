@@ -7,7 +7,6 @@ repo_depends:
 - r-rjson
 - r-withr
 update_on:
-- regex: Herper_([\d._-]+).zip
-  source: regex
-  url: https://bioconductor.org/packages/Herper
+- source: cmd
+  cmd: curl -sS https://raw.githubusercontent.com/RockefellerUniversity/Herper/master/DESCRIPTION | grep 'Version' | awk '{print $2}'
 - alias: r
