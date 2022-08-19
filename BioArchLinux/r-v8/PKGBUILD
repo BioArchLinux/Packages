@@ -16,7 +16,10 @@ depends=(
   r-jsonlite
   r-rcpp
   v8
-makedepends=('make')
+)
+makedepends=(
+  make
+)
 optdepends=(
   r-knitr
   r-rmarkdown
