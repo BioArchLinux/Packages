@@ -18,6 +18,7 @@ depends=(
   r-selectr
   r-tibble
   r-xml2
+  r-withr
 )
 optdepends=(
   r-covr
