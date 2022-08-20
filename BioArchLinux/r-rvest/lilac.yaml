@@ -10,6 +10,7 @@ repo_depends:
 - r-selectr
 - r-tibble
 - r-xml2
+- r-withr
 update_on:
 - regex: rvest_([\d._-]+).tar.gz
   source: regex
