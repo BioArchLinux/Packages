@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rvest
-_pkgver=1.0.2
+_pkgver=1.0.3
 pkgname=r-${_pkgname,,}
-pkgver=1.0.2
-pkgrel=6
+pkgver=1.0.3
+pkgrel=1
 pkgdesc='Easily Harvest (Scrape) Web Pages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -33,7 +33,7 @@ optdepends=(
   r-webfakes
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('89bb477e0944c80298a52ccf650db8f6377fd7ed3c1bc7034d000f695fdf05a4')
+sha256sums=('a465ef7391afaa3c26eebe8c61db02314ac04c4d8de5aa53f090716763d21c1e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
