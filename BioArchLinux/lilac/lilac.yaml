@@ -11,5 +11,3 @@ update_on:
   - source: github
     github: archlinuxcn/lilac
   - alias: python
-  - source: aur
-    aur: lilac-git
