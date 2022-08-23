@@ -10,6 +10,8 @@ repo_depends:
 - r-rcurl
 - r-rsqlite
 - r-httpcache
+- r-cellxgenedp
+- r-progress
 update_on:
 - regex: UniProt.ws_([\d._-]+).tar.gz
   source: regex

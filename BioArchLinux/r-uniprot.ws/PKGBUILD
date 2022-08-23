@@ -18,6 +18,9 @@ depends=(
   r-rcurl
   r-rsqlite
   r-httpcache
+  r-cellxgenedp
+  r-progress
+
 )
 optdepends=(
   r-biocstyle
