@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-digest
+- r-httr
+update_on:
+- regex: httpcache_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=httpcache
+- alias: r
