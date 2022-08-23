@@ -17,6 +17,7 @@ depends=(
   r-rappdirs
   r-rcurl
   r-rsqlite
+  r-httpcache
 )
 optdepends=(
   r-biocstyle
