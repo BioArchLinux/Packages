@@ -7,3 +7,4 @@ update_on:
     github: pkienzle/periodictable
     use_max_tag: true
     prefix: 'v'
+  - alias: python

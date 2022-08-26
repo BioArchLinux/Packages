@@ -7,3 +7,4 @@ update_on:
     github: bxlab/bx-python
     use_latest_release: true
     prefix: 'v'
+  - alias: python

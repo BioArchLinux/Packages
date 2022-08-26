@@ -7,5 +7,6 @@ update_on:
     github: cclib/cclib
     use_max_tag: true
     prefix: 'v'
+  - alias: python
 repo_depends:
   -  python-periodictable

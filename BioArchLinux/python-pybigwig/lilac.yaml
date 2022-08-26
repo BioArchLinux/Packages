@@ -6,3 +6,4 @@ update_on:
   - source: github
     github: deeptools/pyBigWig
     use_latest_release: true
+  - alias: python

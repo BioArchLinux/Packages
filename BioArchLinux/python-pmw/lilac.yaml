@@ -6,3 +6,4 @@ update_on:
   - source: regex
     url: "https://pypi.org/project/Pmw/"
     regex: 'Pmw (\d+.\d+.\d+)'
+  - alias: python
