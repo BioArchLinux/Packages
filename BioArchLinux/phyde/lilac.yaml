@@ -1,0 +1,7 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: cmd
+    cmd: curl -sS http://www.phyde.de/download.html | grep '<a href="PhyDE' | sed 's/v/ /g' | sed 's/</ /g' | awk '{print $4}'
