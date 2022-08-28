@@ -9,5 +9,5 @@ post_build_script: |
     git_pkgbuild_commit()
 update_on:
   - source: git
-    git: git+https://gitlab.gnome.org/Archive/gconf.git
+    git: https://gitlab.gnome.org/Archive/gconf.git
     use_commit: true
