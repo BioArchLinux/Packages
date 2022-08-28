@@ -2,7 +2,7 @@
 
 pkgname=nanopolish
 pkgver=0.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Provide signal-level analysis of Oxford Nanopore sequencing data"
 arch=('x86_64')
 url="https://github.com/jts/nanopolish"
@@ -10,8 +10,7 @@ license=('MIT')
 depends=('glibc' 'hdf5' 'htslib' 'zlib')
 makedepends=('git' 'eigen' 'wget')
 source=("git+https://github.com/jts/nanopolish.git#tag=v$pkgver")
-sha256sums=('SKIP'
-            '8863f56ef51672a4c6c50aeaea2e0e1b866a06bf4d4ca14006680f698e795a26')
+sha256sums=('SKIP')
 
 prepare() {
   cd "nanopolish"
