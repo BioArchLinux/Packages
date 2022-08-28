@@ -3,15 +3,15 @@ pkgver=2.1
 pkgrel=1
 pkgdesc="Phylogenetic analysis of molecular sequence data using the maximum-likelihood criterion"
 arch=('x86_64')
-url="https://github.com/Ashod/garli"
-license=('GPL')
+url="https://github.com/zwickl/garli"
+license=('GPL2')
 depends=('gcc-libs' 'ncl')
-makedepends=('make' 'autoconf')
-source=("$url/archive/refs/tags/$pkgver-release.tar.gz")
+makedepends=('make' 'autoconf' 'git')
+source=("git+$url.git")
 sha256sums=('SKIP')
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver-release"
+  cd "$srcdir/$pkgname/$pkgname/tags/$pkgver-release"
   aclocal -I config
   autoheader
   automake --add-missing
@@ -21,6 +21,6 @@ build() {
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver-release"
+  cd "$srcdir/$pkgname/$pkgname/tags/$pkgver-release"
   make DESTDIR="$pkgdir" install
 }
