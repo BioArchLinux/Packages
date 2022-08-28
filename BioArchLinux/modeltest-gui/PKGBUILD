@@ -19,7 +19,7 @@ prepare(){
 build(){
   cd ${srcdir}/modeltest/
   mkdir build && cd build
-  cmake cmake -DUSE_GUI=ON ..
+  cmake -DUSE_GUI=ON ..
   make
 }
 package() {
