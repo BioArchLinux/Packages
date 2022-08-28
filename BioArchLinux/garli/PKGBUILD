@@ -1,0 +1,26 @@
+pkgname=garli
+pkgver=2.1
+pkgrel=1
+pkgdesc="Phylogenetic analysis of molecular sequence data using the maximum-likelihood criterion"
+arch=('x86_64')
+url="https://github.com/Ashod/garli"
+license=('GPL2')
+depends=('gcc-libs' 'ncl')
+makedepends=('make' 'autoconf')
+source=("$url/archive/refs/tags/$pkgver-release.tar.gz")
+sha256sums=('SKIP')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver-release"
+  aclocal -I config
+  autoheader
+  automake --add-missing
+  autoreconf --force --install -v
+  ./configure --prefix=/usr -with-ncl=/usr --disable-shared --enable-static
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver-release"
+  make DESTDIR="$pkgdir" install
+}

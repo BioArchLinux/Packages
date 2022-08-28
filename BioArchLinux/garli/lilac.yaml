@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: github
+    github: Ashod/garli
+    use_max_tag: true
+    include_regex: (\d+.\d+)-release
+  - alias: alpm-lilac
+    alpm: ncl
+    strip_release: true
+repo_depends:
+  - ncl
