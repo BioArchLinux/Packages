@@ -5,7 +5,6 @@ pkgdesc="Nexus Class Library"
 arch=('x86_64')
 url="https://github.com/mtholder/ncl"
 license=('GPL2')
-conflicts=('phyml-mpi')
 depends=('gcc-libs')
 makedepends=('make' 'autoconf' 'git')
 source=(git+$url.git)
