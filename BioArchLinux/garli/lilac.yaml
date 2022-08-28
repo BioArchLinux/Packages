@@ -3,7 +3,6 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 pre_build: |
-    update_pkgrel()
     vcs_update
 post_build: |
     git_pkgbuild_commit()
