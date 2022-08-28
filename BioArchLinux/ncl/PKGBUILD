@@ -1,6 +1,6 @@
 pkgname=ncl
 pkgver=2.1.21
-pkgrel=1
+pkgrel=2
 pkgdesc="Nexus Class Library"
 arch=('x86_64')
 url="https://github.com/mtholder/ncl"
