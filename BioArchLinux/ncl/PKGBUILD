@@ -1,0 +1,27 @@
+pkgname=ncl
+pkgver=2.1.21
+pkgrel=1
+pkgdesc="Nexus Class Library"
+arch=('x86_64')
+url="https://github.com/mtholder/ncl"
+license=('GPL2')
+conflicts=('phyml-mpi')
+depends=('gcc-libs')
+makedepends=('make' 'autoconf' 'git')
+source=(git+$url.git)
+sha256sums=('SKIP')
+
+build() {
+  cd "$srcdir/$pkgname"
+  aclocal -I config
+  autoheader
+  automake --add-missing
+  autoreconf --force --install -v
+  ./configure --prefix=/usr --with-constfuncs 
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  make DESTDIR="$pkgdir" install
+}
