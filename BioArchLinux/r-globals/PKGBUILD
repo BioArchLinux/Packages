@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=globals
-_pkgver=0.16.0
+_pkgver=0.16.1
 pkgname=r-${_pkgname,,}
-pkgver=0.16.0
-pkgrel=5
+pkgver=0.16.1
+pkgrel=1
 pkgdesc='Identify Global Objects in R Expressions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c53f406418a4ea261c3da822ef8c9dc6aeb17e4a0b124d34f7847c397da70714')
+sha256sums=('f7f63a575a3dd518c6afeabb4116bd26692a2a250df113059bc1a5b4711a1e95')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
