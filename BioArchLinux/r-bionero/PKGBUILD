@@ -31,6 +31,7 @@ depends=(
   r-summarizedexperiment
   r-sva
   r-wgcna
+  r-patchwork
 )
 optdepends=(
   r-biocstyle
