@@ -13,7 +13,7 @@ license=('GPL3')
 source=("$url/archive/refs/tags/v$pkgver.zip" "jmodeltest.desktop")
 sha256sums=('62415b31f218c2f194d6a4a3ba4cccbfd0fc6073e5f11bc74680e1d9b2af86c5'
             'b35c9b5041ca7b9e0e96f29a958da356b9e5149d8ee581ff7c5c83adbcd6706f')
-depends=('java-runtime')
+depends=('java-runtime=11')
 makedepends=('ant')
 optdepends=('phyml' 'phyml-mpi')
 install="$pkgname.install"
