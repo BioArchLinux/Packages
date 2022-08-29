@@ -23,6 +23,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-sva
 - r-wgcna
+- r-patchwork
 update_on:
 - regex: BioNERO_([\d._-]+).tar.gz
   source: regex
