@@ -3,6 +3,5 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 update_on:
-  - regex: 'RAxML-Light v1(\d+.\d+.\d+) available here'
-    source: regex
-    url: https://cme.h-its.org/exelixis/web/software/raxml-light/index.html
+  - source: cmd
+    cmd: curl -sS https://cme.h-its.org/exelixis/web/software/raxml-light/index.html | grep '<li>RAxML-Light' | awk '{print $2}' | sed 's/v//g' | sort -r | head -n  1
