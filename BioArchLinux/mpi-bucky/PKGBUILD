@@ -7,7 +7,7 @@ conflicts=('bucky')
 url="https://github.com/tkchafin/mpi-bucky"
 license=('GPL')
 depends=('gcc-libs' 'boost-libs' 'openmpi')
-makedepends=('clang' 'boost' 'openmpi')
+makedepends=('clang' 'boost' 'openmpi' 'git')
 source=("git+$url.git")
 sha256sums=('SKIP')
 
