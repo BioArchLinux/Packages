@@ -2,7 +2,7 @@
 
 pkgname=oblong
 pkgver=2014.03.10
-pkgrel=1
+pkgrel=2
 pkgdesc="A program to analyse phylogenomic data sets with millions of characters, requiring negligible amounts of RAM. https://doi.org/10.1111/cla.12056"
 arch=(x86_64)
 url="http://www.lillo.org.ar/phylogeny/oblong/"
