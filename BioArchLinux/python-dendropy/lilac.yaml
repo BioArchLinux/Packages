@@ -1,0 +1,13 @@
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+build_prefix: extra-x86_64
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+  update_aur_repo()
+update_on:
+  - source: regex
+    url: "https://pypi.org/project/DendroPy/"
+    regex: 'DendroPy (\d+.\d+.\d+)'
+  - alias: python
