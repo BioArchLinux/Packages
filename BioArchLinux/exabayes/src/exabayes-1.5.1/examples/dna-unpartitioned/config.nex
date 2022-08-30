@@ -1,0 +1,7 @@
+#NEXUS
+
+begin run; 
+ numruns 2 
+ numCoupledChains 2 
+end; 
+

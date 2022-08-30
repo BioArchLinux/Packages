@@ -1,0 +1,12 @@
+#NEXUS
+
+begin params; 
+      revmat = (0)
+end; 
+
+begin run; 
+ numruns 2 
+ parsimonyStart  true
+ printFreq 10 
+end; 
+

@@ -1,0 +1,14 @@
+Original ExaBayes source code is licensed under the GNU Public License
+v3 (see LICENSE.txt). If not stated otherwise, any file in "src" and
+"utils" is original ExaBayes source code.
+
+We merely distribute software included in the lib-folder: 
+* the random-123 library, 
+* the nexus class library.
+
+We distribute modified versions of ExaML and the phylogenetic
+likelihood library (PLL).
+
+The copyright for original ExaBayes source code and modifications to
+distributed software is:
+Copyright December 2013 by Andre Aberer, Kassian Kobert, Alexandros Stamatakis

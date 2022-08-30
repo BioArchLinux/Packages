@@ -1,0 +1,469 @@
+autoreconf: export WARNINGS=
+autoreconf: Entering directory '.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force 
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: not using Libtool
+autoreconf: configure.ac: not using Intltool
+autoreconf: configure.ac: not using Gtkdoc
+autoreconf: running: /usr/bin/autoconf --force
+configure.ac:33: warning: The macro `AC_C_LONG_LONG' is obsolete.
+configure.ac:33: You should run autoupdate.
+aclocal.m4:47: AC_C_LONG_LONG is expanded from...
+configure.ac:33: the top level
+configure.ac:39: warning: The macro `AC_PROG_CC_STDC' is obsolete.
+configure.ac:39: You should run autoupdate.
+./lib/autoconf/c.m4:1666: AC_PROG_CC_STDC is expanded from...
+configure.ac:39: the top level
+configure.ac:40: warning: The macro `AC_PROG_CC_C99' is obsolete.
+configure.ac:40: You should run autoupdate.
+./lib/autoconf/c.m4:1659: AC_PROG_CC_C99 is expanded from...
+configure.ac:40: the top level
+configure.ac:109: warning: The macro `AC_TRY_COMPILE' is obsolete.
+configure.ac:109: You should run autoupdate.
+./lib/autoconf/general.m4:2847: AC_TRY_COMPILE is expanded from...
+configure.ac:109: the top level
+configure.ac:149: warning: The macro `AC_TRY_LINK' is obsolete.
+configure.ac:149: You should run autoupdate.
+./lib/autoconf/general.m4:2920: AC_TRY_LINK is expanded from...
+./m4/lx_find_mpi.m4:117: LX_QUERY_MPI_COMPILER is expanded from...
+./m4/lx_find_mpi.m4:65: LX_FIND_MPI is expanded from...
+configure.ac:149: the top level
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+autoreconf: Leaving directory '.'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking for g++... g++
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking dependency style of g++... gcc3
+checking for long long int... yes
+checking whether g++ supports C++11 features by default... yes
+checking whether g++ supports C++14 features with -std=c++14... yes
+checking for ranlib... ranlib
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for x86 cpuid  output... unknown
+checking for x86-AVX xgetbv  output... unknown
+checking for x86 cpuid 0x00000000 output... d:756e6547:6c65746e:49656e69
+checking for x86 cpuid 0x80000000 output... 80000008:0:0:0
+checking for x86 cpuid 0x00000001 output... 306c3:4100800:7ffafbff:bfebfbff
+checking for x86 cpuid 0x00000007 output... 0:2fbb:0:0
+checking for x86 cpuid 0x80000001 output... 0:0:21:2c100800
+checking for x86-AVX xgetbv 0x00000000 output... 7:0
+checking whether RDRND is supported by the processor... yes
+checking whether RDRND is supported by the processor and OS... yes
+checking whether C compiler accepts -mrdrnd... yes
+checking whether BMI1 is supported by the processor... yes
+checking whether BMI1 is supported by the processor and OS... yes
+checking whether C compiler accepts -mbmi... yes
+checking whether BMI2 is supported by the processor... yes
+checking whether BMI2 is supported by the processor and OS... yes
+checking whether C compiler accepts -mbmi2... yes
+checking whether ADX is supported by the processor... no
+checking whether MPX is supported by the processor... no
+checking whether PREFETCHWT1 is supported by the processor... no
+checking whether ABM is supported by the processor... yes
+checking whether ABM is supported by the processor and OS... yes
+checking whether C compiler accepts -mabm... yes
+checking whether MMX is supported by the processor... yes
+checking whether MMX is supported by the processor and OS... yes
+checking whether C compiler accepts -mmmx... yes
+checking whether SSE is supported by the processor... yes
+checking whether SSE is supported by the processor and OS... yes
+checking whether C compiler accepts -msse... yes
+checking whether SSE2 is supported by the processor... yes
+checking whether SSE2 is supported by the processor and OS... yes
+checking whether C compiler accepts -msse2... yes
+checking whether SSE3 is supported by the processor... yes
+checking whether SSE3 is supported by the processor and OS... yes
+checking whether C compiler accepts -msse3... yes
+checking whether SSSE3 is supported by the processor... yes
+checking whether SSSE3 is supported by the processor and OS... yes
+checking whether C compiler accepts -mssse3... yes
+checking whether SSE4.1 is supported by the processor... yes
+checking whether SSE4.1 is supported by the processor and OS... yes
+checking whether C compiler accepts -msse4.1... yes
+checking whether SSE4.2 is supported by the processor... yes
+checking whether SSE4.2 is supported by the processor and OS... yes
+checking whether C compiler accepts -msse4.2... yes
+checking whether SSE4a is supported by the processor... no
+checking whether SHA is supported by the processor... no
+checking whether AES is supported by the processor... yes
+checking whether AES is supported by the processor and OS... yes
+checking whether C compiler accepts -maes... yes
+checking whether AVX is supported by the processor... yes
+checking whether AVX is supported by the processor and OS... yes
+checking whether C compiler accepts -mavx... yes
+checking whether FMA3 is supported by the processor... yes
+checking whether FMA3 is supported by the processor and OS... yes
+checking whether C compiler accepts -mfma... yes
+checking whether FMA4 is supported by the processor... no
+checking whether XOP is supported by the processor... no
+checking whether AVX2 is supported by the processor... yes
+checking whether AVX2 is supported by the processor and OS... yes
+checking whether C compiler accepts -mavx2... yes
+checking whether AVX512-F is supported by the processor... no
+checking whether AVX512-CD is supported by the processor... no
+checking whether AVX512-PF is supported by the processor... no
+checking whether AVX512-ER is supported by the processor... no
+checking whether AVX512-VL is supported by the processor... no
+checking whether AVX512-BW is supported by the processor... no
+checking whether AVX512-DQ is supported by the processor... no
+checking whether AVX512-IFMA is supported by the processor... no
+checking whether AVX512-VBMI is supported by the processor... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether gcc is Clang... no
+checking whether pthreads work with "-pthread" and "-lpthread"... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking whether more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for sys/param.h... yes
+checking for fcntl.h... yes
+checking for limits.h... yes
+checking for stdint.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking for inline... inline
+checking for size_t... yes
+checking for uint32_t... yes
+checking for uint64_t... yes
+checking for GNU libc compatible malloc... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for GNU libc compatible realloc... yes
+checking for clock_gettime... yes
+checking for getcwd... yes
+checking for getpagesize... (cached) yes
+checking for gettimeofday... yes
+checking for memset... yes
+checking for pow... no
+checking for sqrt... no
+checking for strcasecmp... yes
+checking for strchr... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/config.h
+config.status: executing depfiles commands
+  CC       src/libpll_a-avxConditional.o
+  CC       lib/pll/libpll_model_a-models.o
+  CXX      src/apps/parser_exabayes-parser.o
+  CXX      src/apps/sdsf-sdsf.o
+  CXX      src/apps/postProcParam-postProcParam.o
+  CXX      src/apps/credibleSet-credibleSet.o
+  CXX      src/apps/extractBips-extractBips.o
+  CXX      src/apps/consense-consense.o
+  CXX      src/apps/yggdrasil-exabayes.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxstoken.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxstaxaassociationblock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsassumptionsblock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsdatablock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsstring.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsblock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxspublicblocks.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxscxxdiscretematrix.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxstaxablock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxstreesblock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsreader.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxssetreader.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsmultiformat.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsunalignedblock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxscharactersblock.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsexception.o
+  CXX      lib/ncl-2.1.18/ncl/libncl_a-nxsdistancesblock.o
+  CXX      src/libbayes_a-TreePrinter.o
+  CXX      src/libbayes_a-TreeRandomizer.o
+  CXX      src/branches/libbayes_a-BranchLengthOptimizer.o
+  CXX      src/branches/libbayes_a-ComplexTuner.o
+  CXX      src/branches/libbayes_a-BranchSetProposer.o
+  CXX      src/branches/libbayes_a-WeibullProposer.o
+  CXX      src/branches/libbayes_a-BranchBackup.o
+  CXX      src/branches/libbayes_a-GammaProposer.o
+  CXX      src/branches/libbayes_a-TreeTraverser.o
+  CXX      src/branches/libbayes_a-OptimizedParameter.o
+  CXX      src/eval/libbayes_a-FullCachePolicy.o
+  CXX      src/eval/libbayes_a-ArrayRestorer.o
+  CXX      src/eval/libbayes_a-NoCachePolicy.o
+  CXX      src/eval/libbayes_a-ArrayReservoir.o
+  CXX      src/eval/libbayes_a-ArrayOrientation.o
+  CXX      src/eval/libbayes_a-LikelihoodEvaluator.o
+  CXX      src/eval/libbayes_a-ParsimonyEvaluator.o
+  CXX      src/system/libbayes_a-ByteFile.o
+  CXX      src/system/libbayes_a-BoundsChecker.o
+  CXX      src/system/libbayes_a-NastyGlobalVariables.o
+  CXX      src/system/libbayes_a-BandWidthTest.o
+  CXX      src/system/libbayes_a-Serializable.o
+  CXX      src/system/libbayes_a-Teebuf.o
+  CXX      src/system/libbayes_a-RunFactory.o
+  CXX      src/system/libbayes_a-TimeTracker.o
+  CXX      src/system/libbayes_a-extensions.o
+  CXX      src/system/libbayes_a-log_double.o
+  CXX      src/system/libbayes_a-PartitionAssignment.o
+  CXX      src/system/libbayes_a-ProposalRegistry.o
+  CXX      src/system/libbayes_a-BitMask.o
+  CXX      src/math/libbayes_a-Arithmetics.o
+./src/system/extensions.cpp: In instantiation of ‘T* aligned_malloc(size_t) [with T = int; int ALIGN = 32; size_t = long unsigned int]’:
+./src/system/extensions.cpp:48:66:   required from here
+./src/system/extensions.cpp:43:36: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+   43 |   int res = posix_memalign((void**)&ptr, ALIGN, sizeof(T) * size);
+      |                                    ^~~~
+./src/system/extensions.cpp: In instantiation of ‘T* aligned_malloc(size_t) [with T = unsigned int; int ALIGN = 32; size_t = long unsigned int]’:
+./src/system/extensions.cpp:49:66:   required from here
+./src/system/extensions.cpp:43:36: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+./src/system/extensions.cpp: In instantiation of ‘T* aligned_malloc(size_t) [with T = unsigned char; int ALIGN = 32; size_t = long unsigned int]’:
+./src/system/extensions.cpp:50:86:   required from here
+./src/system/extensions.cpp:43:36: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+./src/system/extensions.cpp: In instantiation of ‘T* aligned_malloc(size_t) [with T = double; int ALIGN = 32; size_t = long unsigned int]’:
+./src/system/extensions.cpp:51:72:   required from here
+./src/system/extensions.cpp:43:36: warning: dereferencing type-punned pointer might break strict-aliasing rules [-Wstrict-aliasing]
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning-option’ may have been intended to silence earlier diagnostics
+  CXX      src/math/libbayes_a-Density.o
+  CXX      src/math/libbayes_a-brent.o
+./src/system/ByteFile.cpp: In member function ‘void ByteFile::seek(Position)’:
+./src/system/ByteFile.cpp:463:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  463 |         toSkip += toSkipHere;
+      |         ~~~~~~~^~~~~~~~~~~~~
+./src/system/ByteFile.cpp:465:5: note: here
+  465 |     case Position::ALIGNMENT:   // skips partitions
+      |     ^~~~
+./src/system/ByteFile.cpp:480:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  480 |         toSkip += toSkipHere;
+      |         ~~~~~~~^~~~~~~~~~~~~
+./src/system/ByteFile.cpp:482:5: note: here
+  482 |     case Position::PARTITIONS:  // skips taxa
+      |     ^~~~
+./src/system/ByteFile.cpp:488:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  488 |         toSkip += toSkipHere;
+      |         ~~~~~~~^~~~~~~~~~~~~
+./src/system/ByteFile.cpp:490:5: note: here
+  490 |     case Position::TAXA:
+      |     ^~~~
+./src/system/ByteFile.cpp:492:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  492 |         toSkip += _numPat * size_t(_weightType); // skips weights
+      |         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./src/system/ByteFile.cpp:494:5: note: here
+  494 |     case Position::WEIGHTS:
+      |     ^~~~
+  CXX      src/math/libbayes_a-Randomness.o
+  CXX      src/mcmc/libbayes_a-Chain.o
+  CXX      src/mcmc/libbayes_a-SuccessCounter.o
+  CXX      src/mcmc/libbayes_a-SampleMaster.o
+  CXX      src/mcmc/libbayes_a-ParameterList.o
+At top level:
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning-option’ may have been intended to silence earlier diagnostics
+  CXX      src/mcmc/libbayes_a-CoupledChains.o
+  CXX      src/mcmc/libbayes_a-SwapMatrix.o
+  CXX      src/config/libbayes_a-BlockPrior.o
+  CXX      src/config/libbayes_a-BlockRunParameters.o
+  CXX      src/config/libbayes_a-ExaBlock.o
+  CXX      src/config/libbayes_a-CommandLine.o
+  CXX      src/config/libbayes_a-BlockProposalConfig.o
+  CXX      src/config/libbayes_a-MemoryMode.o
+  CXX      src/config/libbayes_a-BlockParams.o
+  CXX      src/contrib/libbayes_a-AlignmentPLL.o
+  CXX      src/contrib/libbayes_a-CredibleSet.o
+  CXX      src/contrib/libbayes_a-ConsensusTree.o
+  CXX      src/contrib/libbayes_a-BipartitionExtractor.o
+  CXX      src/contrib/libbayes_a-SplitFreqAssessor.o
+  CXX      src/tree-parse/libbayes_a-BasicTreeReader.o
+  CXX      src/tree-parse/libbayes_a-TreeProcessor.o
+  CXX      src/parameters/libbayes_a-AbstractParameter.o
+  CXX      src/parameters/libbayes_a-TopologyParameter.o
+  CXX      src/parameters/libbayes_a-ParameterContent.o
+  CXX      src/parameters/libbayes_a-RateHetParameter.o
+  CXX      src/parameters/libbayes_a-BranchLengthsParameter.o
+  CXX      src/parameters/libbayes_a-RevMatParameter.o
+  CXX      src/parameters/libbayes_a-ProtModelParameter.o
+  CXX      src/parameters/libbayes_a-DivergenceTimes.o
+  CXX      src/parameters/libbayes_a-FrequencyParameter.o
+  CXX      src/parameters/libbayes_a-DivergenceRates.o
+  CXX      src/proposals/libbayes_a-NodeSlider.o
+  CXX      src/proposals/libbayes_a-ProposalType.o
+  CXX      src/proposals/libbayes_a-DivRateSlider.o
+  CXX      src/proposals/libbayes_a-AbstractProposal.o
+  CXX      src/proposals/libbayes_a-GenericTopoProposal.o
+./src/parameters/DivergenceRates.cpp: In member function ‘virtual void DivergenceRates::applyParameter(TreeAln&, const ParameterContent&)’:
+./src/parameters/DivergenceRates.cpp:70:33: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+   70 |           if (content.values[i] != _rates[i])
+  CXX      src/proposals/libbayes_a-TreeLengthMultiplier.o
+  CXX      src/proposals/libbayes_a-ParameterProposal.o
+At top level:
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning-option’ may have been intended to silence earlier diagnostics
+  CXX      src/proposals/libbayes_a-AminoModelJump.o
+  CXX      src/proposals/libbayes_a-ProposalSet.o
+./src/proposals/DivRateSlider.cpp: In member function ‘virtual void DivRateSlider::applyToState(TreeAln&, PriorBelief&, log_double&, Randomness&, LikelihoodEvaluator&)’:
+./src/proposals/DivRateSlider.cpp:29:59: warning: conversion from ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} to ‘nat’ {aka ‘unsigned int’} may change value [-Wconversion]
+   29 |         numberOfRates = _savedContent.rateAssignments.size();
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+./src/proposals/DivRateSlider.cpp:115:29: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+  115 |                         if (branchLength
+      |                             ^~~~~~~~~~~~
+./src/proposals/DivRateSlider.cpp:117:94: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+  117 |                                                         || branchLength > BoundsChecker::zMax))
+      |                                                                                              ^
+./src/proposals/DivRateSlider.cpp:162:45: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+  162 |                                         if (branchLength
+      |                                             ^~~~~~~~~~~~
+./src/proposals/DivRateSlider.cpp:164:110: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+  164 |                                                                         || branchLength > BoundsChecker::zMax))
+      |                                                                                                              ^
+  CXX      src/proposals/libbayes_a-MoveEnumeration.o
+At top level:
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning-option’ may have been intended to silence earlier diagnostics
+  CXX      src/proposals/libbayes_a-DivTimeProposal.o
+  CXX      src/proposals/libbayes_a-BranchLengthMultiplier.o
+  CXX      src/proposals/libbayes_a-DivTimeSlider.o
+  CXX      src/proposals/topo-proposers/libbayes_a-SprMove.o
+  CXX      src/proposals/topo-proposers/libbayes_a-TopoMove.o
+  CXX      src/proposals/topo-proposers/libbayes_a-ExtendedSprProposer.o
+  CXX      src/proposals/topo-proposers/libbayes_a-ExtendedTbrProposer.o
+  CXX      src/proposals/topo-proposers/libbayes_a-MoveOptMode.o
+  CXX      src/proposals/topo-proposers/libbayes_a-LikelihoodSprProposer.o
+  CXX      src/proposals/topo-proposers/libbayes_a-ParsSprProposer.o
+  CXX      src/proposals/topo-proposers/libbayes_a-StatNniProposer.o
+  CXX      src/proposals/topo-proposers/libbayes_a-TbrMove.o
+./src/proposals/DivTimeSlider.cpp: In member function ‘virtual void DivTimeSlider::applyToState(TreeAln&, PriorBelief&, log_double&, Randomness&, LikelihoodEvaluator&)’:
+./src/proposals/DivTimeSlider.cpp:231:21: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+  231 |                 if (value
+      |                     ^~~~~
+./src/proposals/DivTimeSlider.cpp:232:95: warning: comparing floating-point with ‘==’ or ‘!=’ is unsafe [-Wfloat-equal]
+  232 |                                 && (value < BoundsChecker::zMin || value > BoundsChecker::zMax))
+      |                                                                                               ^
+At top level:
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning’ may have been intended to silence earlier diagnostics
+cc1plus: note: unrecognized command-line option ‘-Wno-unknown-warning-option’ may have been intended to silence earlier diagnostics
+  CXX      src/proposals/param-proposers/libbayes_a-MultiplierProposer.o
+  CXX      src/proposals/param-proposers/libbayes_a-SlidingProposer.o
+  CXX      src/proposals/param-proposers/libbayes_a-RateSlidingProposer.o
+  CXX      src/proposals/param-proposers/libbayes_a-DirichletProposer.o
+  CXX      src/proposals/param-proposers/libbayes_a-RateDirichletProposer.o
+  CXX      src/proposals/param-proposers/libbayes_a-AbstractProposer.o
+  CXX      src/file/libbayes_a-DiagnosticsFile.o
+  CXX      src/file/libbayes_a-ParameterFile.o
+  CXX      src/file/libbayes_a-OutputFile.o
+  CXX      src/file/libbayes_a-TopologyFile.o
+  CXX      src/model/libbayes_a-InternalBranchLength.o
+  CXX      src/model/libbayes_a-BranchLengths.o
+  CXX      src/model/libbayes_a-AbstractAlphabet.o
+  CXX      src/model/libbayes_a-TreeAln.o
+  CXX      src/model/libbayes_a-BranchPlain.o
+  CXX      src/model/libbayes_a-ProtModel.o
+  CXX      src/model/libbayes_a-NodeAge.o
+  CXX      src/model/libbayes_a-Partition.o
+  CXX      src/model/libbayes_a-BranchLengthResource.o
+  CXX      src/model/libbayes_a-RateHelper.o
+  CXX      src/model/libbayes_a-Category.o
+  CXX      src/model/libbayes_a-BranchLength.o
+  CXX      src/data-struct/libbayes_a-BipartitionHash.o
+  CXX      src/data-struct/libbayes_a-Bipartition.o
+  CXX      src/data-struct/libbayes_a-Path.o
+  CXX      src/priors/libbayes_a-DirichletPrior.o
+  CXX      src/priors/libbayes_a-FixedPrior.o
+  CXX      src/priors/libbayes_a-PriorBelief.o
+  CXX      src/priors/libbayes_a-UniformPrior.o
+  CXX      src/priors/libbayes_a-DiscreteModelPrior.o
+  CXX      src/priors/libbayes_a-ExponentialPrior.o
+  CXX      src/comm/dummy/libcommdummy_a-PendingSwapImpl.o
+  CXX      src/comm/dummy/libcommdummy_a-CommRequestImpl.o
+  CXX      src/comm/dummy/libcommdummy_a-RemoteCommImpl.o
+  CXX      src/comm/libcommdummy_a-RemoteComm.o
+  CXX      src/comm/libcommdummy_a-SwapElem.o
+  CXX      src/comm/libcommdummy_a-IncompleteMesh.o
+  CXX      src/comm/libcommdummy_a-LocalComm.o
+  CXX      src/comm/libcommdummy_a-Communicator.o
+  CXX      src/comm/libcommdummy_a-PendingSwap.o
+  CXX      src/comm/libcommdummy_a-ParallelSetup.o
+  CXX      src/comm/libcommdummy_a-LocalSwap.o
+  CXX      src/comm/libcommdummy_a-CommRequest.o
+  CXX      src/comm/threads/libcommdummy_a-MessageQueueSingle.o
+  CXX      src/comm/threads/libcommdummy_a-ThreadResource.o
+  CXX      src/comm/threads/libcommdummy_a-MessageQueue.o
+  CC       lib/pll/libpll_a-alignment.o
+  CC       lib/pll/libpll_a-evaluateGenericSpecial.o
+  CC       lib/pll/libpll_a-lexer.o
+  CC       lib/pll/libpll_a-recom.o
+  CC       lib/pll/libpll_a-utils.o
+  CC       lib/pll/libpll_a-evaluatePartialGenericSpecial.o
+  CC       lib/pll/libpll_a-newviewGenericSpecial.o
+  CC       lib/pll/libpll_a-restartHashTable.o
+  CC       lib/pll/libpll_a-topologies.o
+  CC       lib/pll/libpll_a-bipartitionList.o
+  CC       lib/pll/libpll_a-fastDNAparsimony.o
+  CC       lib/pll/libpll_a-makenewzGenericSpecial.o
+  CC       lib/pll/libpll_a-optimizeModel.o
+  CC       lib/pll/libpll_a-queue.o
+  CC       lib/pll/libpll_a-searchAlgo.o
+  CC       lib/pll/libpll_a-trash.o
+  CC       lib/pll/libpll_a-hash.o
+  CC       lib/pll/libpll_a-parsePartition.o
+  CC       lib/pll/libpll_a-ssort.o
+  CC       lib/pll/libpll_a-treeIO.o
+  CC       lib/pll/libpll_a-newick.o
+  CC       lib/pll/libpll_a-randomTree.o
+  CC       lib/pll/libpll_a-stack.o
+  AR       libpll_model.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  AR       libncl.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  AR       libbayes.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  AR       libpll.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  AR       libcommdummy.a
+ar: `u' modifier ignored since `D' is the default (see `U')
+  CXXLD    yggdrasil
+  CXXLD    parser-exabayes
+  CXXLD    sdsf
+  CXXLD    postProcParam
+  CXXLD    credibleSet
+  CXXLD    extractBips
+  CXXLD    consense
+./lib/pll/models.c: In function ‘pllMakeGammaCats’:
+./lib/pll/models.c:3833:33: warning: ‘*gammaProbs_79’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3833 |       gammaRates[0] = gammaProbs[0] * factor;
+      |                                 ^
+./lib/pll/models.c:3835:42: warning: ‘*_181’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3835 |       gammaRates[K - 1] = (1 - gammaProbs[K - 2]) * factor;
+      |                                          ^
+At top level:
+lto1: note: unrecognized command-line option ‘-Wno-unknown-warning’ may have been intended to silence earlier diagnostics
+lto1: note: unrecognized command-line option ‘-Wno-unknown-warning-option’ may have been intended to silence earlier diagnostics

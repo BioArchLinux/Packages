@@ -1,0 +1,19 @@
+#NEXUS
+
+begin params; 
+ stateFreq = (0)       [ also integrate over state frequencies ] 
+end;  
+
+begin run; 
+ numruns 2 
+ parsimonyStart  true
+ printFreq 10
+end; 
+
+begin priors; 
+ aaPr disc(  DAYHOFF=1, DCMUT=1, JTT=1, MTREV=1, WAG=1, 
+       	      RTREV=1, CPREV=1, VT=1, BLOSUM62=1, MTMAM=1, 
+	      LG=1, MTART=1, MTZOA=1, PMB=1, HIVB=1, HIVW=1, 
+	      JTTDCMUT=1, FLU=1) 
+end; 
+

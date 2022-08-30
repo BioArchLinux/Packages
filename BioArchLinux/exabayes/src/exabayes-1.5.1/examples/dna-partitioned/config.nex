@@ -1,0 +1,19 @@
+#NEXUS
+
+begin params; 
+ [ apply an arbitrary linking scheme here ] 
+
+  stateFreq = (0+1+2) 
+  brlens = (0+1,2+3)
+  ratehet = (0-3)
+
+end;  
+
+begin run; 
+ numruns 4 
+ numCoupledChains 4 
+ numgen 1e4 
+ numswapspergen 4 
+ parsimonyStart  true
+end; 
+
