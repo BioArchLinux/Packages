@@ -1,6 +1,6 @@
 pkgname=exabayes
 pkgver=1.5.1
-pkgrel=3
+pkgrel=4
 pkgdesc="software package for Bayesian tree inference https://doi.org/10.1093/molbev/msu236"
 arch=('x86_64')
 url="https://cme.h-its.org/exelixis/web/software/exabayes/"
