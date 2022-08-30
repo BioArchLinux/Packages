@@ -4,7 +4,7 @@
 pkgbase=garlic
 pkgname=('garlic' 'garlic-doc')
 pkgver=1.6
-pkgrel=9
+pkgrel=10
 arch=('i686' 'x86_64')
 url="http://www.zucic.org/garlic/"
 license=('GPL2')
