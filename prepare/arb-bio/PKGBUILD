@@ -2,7 +2,7 @@
 pkgname=arb-bio
 pkgver=7.0
 pkgrel=1
-pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
+pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files https://10.1101/2021.05.21.445151"
 arch=('x86_64')
 url="http://www.arb-home.de/"
 license=('UNKNOWN')
