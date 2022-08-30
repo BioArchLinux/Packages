@@ -2,7 +2,10 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
-post_build: update_aur_repo
+post_build_script: |
+  git_add_files('.')
+  git_commit()
+  update_aur_repo()
 update_on:
   - source: cmd
     cmd: curl -sS https://cme.h-its.org/exelixis/web/software/exabayes/index.html | grep 'href="../../../resource/download/software/exabayes-' | sed 's/resource\/download\/software\/exabayes-/ /g' | sed 's/\.tar\.gz/ /g' | awk '{print $4}' | head -n 1
