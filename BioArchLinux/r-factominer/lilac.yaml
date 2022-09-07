@@ -11,6 +11,8 @@ repo_depends:
 - r-ggrepel
 - r-leaps
 - r-scatterplot3d
+- r-multcompview
+- r-emmeans
 update_on:
 - regex: FactoMineR_([\d._-]+).tar.gz
   source: regex
