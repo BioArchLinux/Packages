@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=desc
-_pkgver=1.4.1
+_pkgver=1.4.2
 pkgname=r-${_pkgname,,}
-pkgver=1.4.1
-pkgrel=4
+pkgver=1.4.2
+pkgrel=1
 pkgdesc='Manipulate DESCRIPTION Files'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8f9ebb51eccf925b2e76bc65ecf495e8f3882b8c0053023f396622f0402d6f54')
+sha256sums=('758acf14be478c09ba7e84ade3a7ce512becf35d44e5e6a997b932065f2a227c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
