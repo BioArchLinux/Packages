@@ -4,10 +4,10 @@ maintainers:
     email: kuoi@bioarchlinux.org
 update_on:
   - source: cmd
-    cmd: curl -sS http://www.lillo.org.ar/phylogeny/ | grep 'tnt' | sed 's@-@.@g' | awk '{print $6}'
+    cmd: curl -sS https://www.lillo.org.ar/phylogeny/ | grep 'tnt' | sed 's@-@.@g' | awk '{print $6}'
 #  - regex: (\d+-\d+-\d+) \d+:\d+    -
 #    source: regex
-#    url: http://www.lillo.org.ar/phylogeny/
+#    url: https://www.lillo.org.ar/phylogeny/
 #    from_pattern: (\d+)-(\d+)-(\d+)
 #    to_pattern: \1.\2.\3
 repo_depends:
