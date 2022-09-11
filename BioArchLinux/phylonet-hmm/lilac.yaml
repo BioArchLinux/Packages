@@ -3,6 +3,8 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 update_on:
-  - regex: href="https://bioinfocs\.rice\.edu/sites/g/files/bxs266/f/phmm-(\d+.\d+)\.tar_0\.bz2"
-    source: regex
-    url: https://bioinfocs.rice.edu/software/phmm
+#  - regex: href="https://bioinfocs\.rice\.edu/sites/g/files/bxs266/f/phmm-(\d+.\d+)\.tar_0\.bz2"
+#    source: regex
+#    url: https://bioinfocs.rice.edu/software/phmm
+  - source: cmd
+    cmd: echo 'y' | w3m -dump http://bioinfocs.rice.edu/software/phmm | grep 'File PhyloNet-HMM version' | awk '{print $4}'
