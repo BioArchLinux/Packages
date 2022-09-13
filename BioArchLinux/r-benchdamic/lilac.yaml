@@ -4,9 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-aldex2
+- r-ancombc
 - r-biocparallel
-- r-corncob
 - r-cowplot
+- r-dearseq
 - r-deseq2
 - r-edger
 - r-ffpe
@@ -16,12 +17,15 @@ repo_depends:
 - r-mast
 - r-metagenomeseq
 - r-mglm
+- r-noiseq
 - r-phyloseq
 - r-plyr
 - r-rcolorbrewer
 - r-reshape2
 - r-seurat
 - r-summarizedexperiment
+- r-tidytext
+- r-treesummarizedexperiment
 - r-zinbwave
 update_on:
 - regex: benchdamic_([\d._-]+).tar.gz
