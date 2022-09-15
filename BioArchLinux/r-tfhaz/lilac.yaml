@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-genomicranges
 - r-iranges
+- r-orfik
 - r-s4vectors
 update_on:
 - regex: TFHAZ_([\d._-]+).tar.gz
