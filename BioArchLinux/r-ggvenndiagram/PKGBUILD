@@ -3,7 +3,7 @@
 _pkgname=ggVennDiagram
 _pkgver=1.2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=1.2.2
 pkgrel=1
 pkgdesc="A 'ggplot2' Implement of Venn Diagram"
 arch=('any')
