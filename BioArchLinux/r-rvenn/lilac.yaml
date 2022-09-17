@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-ggforce
+  - r-ggplot2
+  - r-magrittr
+  - r-pheatmap
+  - r-purrr
+  - r-rlang
+  - r-vegan
+update_on:
+  - regex: RVenn_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=RVenn
