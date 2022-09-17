@@ -11,6 +11,7 @@ repo_depends:
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
+- r-ggvenndiagram
 - r-gplots
 - r-gtools
 - r-iranges

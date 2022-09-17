@@ -3,11 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-curl
 - r-jpeg
 - r-markdown
 - r-png
 - r-rcpp
-- r-rcurl
 - r-rlang
 - r-stringr
 - r-xml2
