@@ -13,3 +13,4 @@ update_on:
   - regex: RVenn_([\d._-]+).tar.gz
     source: regex
     url: https://cran.r-project.org/package=RVenn
+  - alias: r
