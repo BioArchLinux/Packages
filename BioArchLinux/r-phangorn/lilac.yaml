@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
+- r-digest
 - r-fastmatch
 - r-generics
 - r-igraph
