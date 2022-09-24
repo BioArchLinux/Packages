@@ -6,3 +6,5 @@ update_on:
   - source: regex
     url: "http://phylosolutions.com/paup-test/"
     regex: paup(\w+)_ubuntu64.gz
+repo_depends:
+  - python2

@@ -7,3 +7,7 @@ update_on:
     github: bmpvieira-forks/assemblyline
     use_max_tag: true
     prefix: 'assemblyline-v'
+repo_depends:
+  - python2
+  - python2-setuptools
+  - cython2

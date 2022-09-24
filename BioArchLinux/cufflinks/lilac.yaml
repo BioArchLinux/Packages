@@ -7,3 +7,5 @@ update_on:
     github: cole-trapnell-lab/cufflinks
     use_max_tag: true
     prefix: 'v'
+repo_depends:
+  - python2

@@ -26,6 +26,7 @@ repo_depends:
 - r-stringr
 - r-systempiper
 - r-systempiperdata
+- python2
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
