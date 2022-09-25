@@ -9,3 +9,6 @@ update_on:
   - source: github
     github: cython/cython
     use_latest_release: true
+repo_depends:
+  - python2-setuptools
+  - python2
