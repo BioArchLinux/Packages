@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=classInt
-_pkgver=0.4-7
+_pkgver=0.4-8
 pkgname=r-${_pkgname,,}
-pkgver=0.4.7
-pkgrel=2
+pkgver=0.4.8
+pkgrel=1
 pkgdesc='Choose Univariate Class Intervals'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a30e3a8987ce133944897100ab5bdc31b019d897969c452c3795f50ac234606e')
+sha256sums=('6ae9617f5b71bbecfa204a4f36b5972808bafd060d87a4a5bac17f3ad2ca59b3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
