@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-abind
 - r-checkmate
-- r-magrittr
 update_on:
 - regex: forestplot_([\d._-]+).tar.gz
   source: regex

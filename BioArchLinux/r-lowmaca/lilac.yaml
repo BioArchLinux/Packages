@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-biostrings
+- r-cbioportaldata
 - r-cgdsr
 - r-data.table
 - r-gridbase

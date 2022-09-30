@@ -3,15 +3,19 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-ggplot2
 - r-gtable
+- r-lifecycle
 - r-polyclip
 - r-rcpp
 - r-rcppeigen
 - r-rlang
 - r-scales
+- r-systemfonts
 - r-tidyselect
 - r-tweenr
+- r-vctrs
 - r-withr
 update_on:
 - regex: ggforce_([\d._-]+).tar.gz
