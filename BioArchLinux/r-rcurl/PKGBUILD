@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RCurl
-_pkgver=1.98-1.8
+_pkgver=1.98-1.9
 pkgname=r-${_pkgname,,}
-pkgver=1.98.1.8
-pkgrel=2
+pkgver=1.98.1.9
+pkgrel=1
 pkgdesc='General Network (HTTP/FTP/...) Client Interface for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1e3b51acbfe600dec94668fd781f3b6f27b6074cc727824855c6334f8cc88f28')
+sha256sums=('f28d4871675ec3d2b45fb5d36f7647f546f81121510954c3ad24fdec1643cec5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
