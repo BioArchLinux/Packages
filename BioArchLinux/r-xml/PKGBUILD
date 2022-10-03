@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=XML
-_pkgver=3.99-0.10
+_pkgver=3.99-0.11
 pkgname=r-${_pkgname,,}
-pkgver=3.99.0.10
-pkgrel=5
+pkgver=3.99.0.11
+pkgrel=1
 pkgdesc='Tools for Parsing and Generating XML Within R and S-Plus'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,7 @@ optdepends=(
   r-rcurl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c45991b5edadc3cf7e2d80c38e798a5d6c4e27baf6007004d4db5a6ca97ff35b')
+sha256sums=('c523bd8e6419d44a477038396e9c3b3ec70a67ed85a0c9bfa8b9445f91647fc8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
