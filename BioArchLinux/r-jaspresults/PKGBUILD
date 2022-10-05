@@ -15,7 +15,6 @@ depends=(r
 'r-r6'
 'r-qgraph'
 )
-groups=(r-jasp r-jaspbase)
 makedepends=('git')
 optdepends=('r-jaspgraphs')
 source=("git+https://github.com/jasp-stats/${_pkgname}.git"

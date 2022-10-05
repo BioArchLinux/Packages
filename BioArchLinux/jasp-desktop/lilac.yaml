@@ -6,7 +6,6 @@ repo_depends:
   - "r-rinside"
   - "r-jaspbase"
   - "r-jaspgraphs"
-  - "r-jaspresults"
   - "r-jasptools"
   - "r-jaspdescriptives"
   - "r-jaspttests"
@@ -28,11 +27,11 @@ repo_depends:
   - "r-jaspmetaanalysis"
   - "r-jaspnetwork"
   - "r-jaspprocesscontrol"
+  - "r-jaspprophet"
   - "r-jaspreliability"
   - "r-jaspsem"
   - "r-jaspsummarystatistics"
   - "r-jaspvisualmodeling"
-  - "r-jaspprophet"
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

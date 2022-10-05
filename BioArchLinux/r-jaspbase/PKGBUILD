@@ -5,7 +5,7 @@ pkgname=r-${_pkgname,,}
 pkgver=0.16.4
 pkgrel=4
 pkgdesc="Package contains the JASP Bayesian and Frequentist analyses."
-arch=('any')
+arch=('x86_64' 'aarch64')
 url="https://github.com/jasp-stats/${_pkgname}"
 license=('GPL')
 depends=(r
@@ -39,7 +39,7 @@ depends=(r
 groups=(r-jasp r-jaspbase)
 makedepends=('git')
 optdepends=()
-source=("git+https://github.com/jasp-stats/${_pkgname}.git#commit=5734a5974")
+source=("git+https://github.com/jasp-stats/${_pkgname}.git#commit=809bc624a")
 sha256sums=('SKIP')
 
 
