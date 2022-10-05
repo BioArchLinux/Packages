@@ -7,4 +7,4 @@ update_on:
 #    source: regex
 #    url: https://bioinfocs.rice.edu/software/phmm
   - source: cmd
-    cmd: echo 'y' | w3m -dump http://bioinfocs.rice.edu/software/phmm | grep 'File PhyloNet-HMM version' | awk '{print $4}'
+    cmd: curl -sS https://phylogenomics.rice.edu/html/phyloHMM.html | grep 'Download PhyloNet-HMM as Tarball' | sed 's/-/ /g' | sed 's/.tar.bz2/ /g' | awk '{print $11}'
