@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=av
-_pkgver=0.8.1
+_pkgver=0.8.2
 pkgname=r-${_pkgname,,}
-pkgver=0.8.1
+pkgver=0.8.2
 pkgrel=1
 pkgdesc='Working with Audio and Video in R'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c622b1295aa3287c23afb15299eff7cd0ec8e6090f94d20738945d9bd5d307c2')
+sha256sums=('32358ab1e187ce4e212c26245523981b4212fefdab82187a4c39e8027c4c0922')
 
 build() {
   R CMD INSTALL  --configure-vars="LIB_DIR='/usr/lib/ffmpeg4.4' INCLUDE_DIR='/usr/include/ffmpeg4.4'" \
