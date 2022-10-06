@@ -5,5 +5,5 @@ maintainers:
 update_on:
   - regex: Gblocks_Linux_(\d+.\w+).tar.Z
     source: regex
-    url: http://molevol.cmima.csic.es/castresana/Gblocks.html
+    url: https://web.archive.org/web/20220603195226/http://molevol.cmima.csic.es/castresana/Gblocks.html
 
