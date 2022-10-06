@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-knitr
 - r-quadprog
 update_on:
 - regex: kinship2_([\d._-]+).tar.gz

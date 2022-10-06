@@ -7,6 +7,7 @@ repo_depends:
 - r-biocparallel
 - r-data.table
 - r-futile.logger
+- r-ids
 - r-outliers
 - r-rcpp
 - r-rdpack
