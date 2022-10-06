@@ -3,6 +3,6 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 update_on:
-  - source: regex
-    url: https://github.com/jkbonfield/io_lib/releases
-    regex: 'io_lib-(\d+.\d+.\d+).tar.gz'
+  - source: cmd
+    cmd: curl -sS https://raw.githubusercontent.com/jkbonfield/io_lib/master/CHANGES | grep 'Version ' | head -n 1 | awk '{print $2}'
+
