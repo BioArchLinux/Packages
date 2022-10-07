@@ -1,25 +1,52 @@
 # Maintainer: Malacology <guoyizhang at malacology dot com>
 # Contributor: Malacology <guoyizhang at malacology dot com>
 
-pkgname=tnt
+pkgbase=tnt
+pkgname=('tnt' 'tnt-mpi' 'tnt-gui' 'tnt-extra')
 pkgver=2022.10.06
 pkgrel=1
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
-provides=('tnt')
 license=('custom')
-depends=(
-	'ncurses5-compat-libs'
-	)
-source=("http://www.lillo.org.ar/phylogeny/tnt/tnt64-no-tax-limit.zip")
-sha256sums=('85eda16c58bcf5bb3f585b4fadc10fe3cfe1dadb1077228d8bbfbbcddf7fe1c4')
-package () {
-	cd ${srcdir}
+makedepends=('unzip')
+depends=('ncurses5-compat-libs')
+source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip")
+sha256sums=('8f328d8856efe93f3a7a8fcc039978d695a8251e38455c3c848d9eac47fda40d')
+prepare () {
+	cd $srcdir/Docs_and_Datasets
+	unzip tnt_scripts.zip -d ./tnt_scripts
+}
+package_tnt () {
+  depends=('ncurses5-compat-libs')
+	cd ${srcdir}/binaries
 	chmod +x tnt
-	chmod +x xtnt
 	install -Dm 755 tnt ${pkgdir}/usr/bin/tnt
-	install -Dm 755 xtnt ${pkgdir}/usr/bin/xtnt
+}
+package_tnt-mpi () {
+  depends=('ncurses5-compat-libs' 'pvm')
+	cd ${srcdir}/binaries
+	chmod +x mpitnt
+	install -Dm 755 mpitnt ${pkgdir}/usr/bin/mpitnt
+}
+package_tnt-gui () {
+  depends=('ncurses5-compat-libs' 'gtk3')
+	cd ${srcdir}/binaries
+	chmod +x gTNT
+	install -Dm 755 gTNT ${pkgdir}/usr/bin/gTNT
+}
+package_tnt-extra () {
+	install -dm755 $pkgdir/usr/share/tnt/
+	
+	cd $srcdir/
+	# PDF
+	install -Dm 755 README_FIRST.pdf $pkgdir/usr/share/tnt/
+
+	cd $srcdir/Docs_and_Datasets
+	# script
+	mv $srcdir/Docs_and_Datasets/tnt_scripts $pkgdir/usr/share/tnt/
+	# font
 	install -Dm 755 Tred.ttf ${pkgdir}/usr/share/fonts/Tred/Tred.ttf
-	install -Dm 755 tnt.htm ${pkgdir}/usr/share/doc/tnt/tnt.htm
+	# html
+	mv $srcdir/Docs_and_Datasets/*.htm $pkgdir/usr/share/tnt/
 }
