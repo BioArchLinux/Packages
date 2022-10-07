@@ -8,13 +8,13 @@ pkgrel=5
 pkgdesc="Parallel Virtual Machine"
 url="http://www.netlib.org/pvm3"
 license=('GPL')
-depends=('glibc')
+depends=('libtirpc')
 arch=('i686' 'x86_64')
 install=${pkgname}.install
 source=(http://www.netlib.org/pvm3/$pkgname$pkgver.tgz pvm.profile)
 sha512sums=('a8ddb8fc944bbe64d185eeffba0e020f28af4c8175a446511deca55d7c4f5cf62884c8c5dcb03dd9700bcc48368c8dab353e45656094d139385d88fdf34dd78a'
-            '8c7a612abd0f9f132900a2e4839d9ac2cbcae88cc3d835b82cdad25c3dddcf03f98542afb4d15ac4360523ce6f36057e1269af28694eebf1621cf5b35d0ca920')
-
+            '39b5bdb2231b04b280d44c240d4d51aab9cfbfa8100165e6908b4ab5c3b68a1509d0908330357b9016c69afd165da6efe2c63c4a18b9048d890e043750ecd894')
+options=(!buildflags !lto)
 build() {
   cd $srcdir/${pkgname}3
 
@@ -27,28 +27,29 @@ build() {
 
   unset PVM_ARCH
   export PVM_ROOT=$srcdir/${pkgname}3
+  export CXXFLAGS="${CXXFLAGS} -I/usr/include/tirpc -ltirpc"
   make || return 1
 }
 
 package() {
   cd $srcdir/${pkgname}3
 
-  mkdir -p $pkgdir/usr/man
-  mv $srcdir/${pkgname}3/man/man1 $pkgdir/usr/man
-  mkdir -p $pkgdir/usr/man/man3
-  mv $srcdir/${pkgname}3/man/man3 $pkgdir/usr/man
+  mkdir -p $pkgdir/usr/share/man
+  mv $srcdir/${pkgname}3/man/man1 $pkgdir/usr/share/man
+  mkdir -p $pkgdir/usr/share/man/man3
+  mv $srcdir/${pkgname}3/man/man3 $pkgdir/usr/share/man
 
   # remove some unnecessary files
   # rm -rf Readme.* Makefile* WIN32 examples gexamples conf console make* cygwin.mak doc hoster libfpvm man misc pvmgs rm shmd src tasker tracer xdr xep
   # find . -name '*.cmd' -o -name '*.bat' -o -name '*.stub' | xargs rm -f
 
   # install the rest of pvm
-  mkdir -p $pkgdir/usr/share/${pkgname}3
-  cp -r * $pkgdir/usr/share/${pkgname}3
+  mkdir -p $pkgdir/usr/lib/${pkgname}3
+  cp -r * $pkgdir/usr/lib/${pkgname}3
   mkdir -p $pkgdir/usr/bin
-  ln -s /usr/share/pvm3/lib/LINUX/pvm $pkgdir/usr/bin/pvm
-  ln -s /usr/share/pvm3/lib/LINUX/pvmd3 $pkgdir/usr/bin/pvmd3
-  ln -s /usr/share/pvm3/lib/LINUX/pvmgs $pkgdir/usr/bin/pvmgs
+  ln -s /usr/lib/pvm3/lib/LINUX64/pvm $pkgdir/usr/bin/pvm
+  ln -s /usr/lib/pvm3/lib/LINUX64/pvmd3 $pkgdir/usr/bin/pvmd3
+  ln -s /usr/lib/pvm3/lib/LINUX64/pvmgs $pkgdir/usr/bin/pvmgs
 
   # environment variables
   mkdir -p $pkgdir/etc/profile.d
