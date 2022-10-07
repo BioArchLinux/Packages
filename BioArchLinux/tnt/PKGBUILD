@@ -4,7 +4,7 @@
 pkgbase=tnt
 pkgname=('tnt' 'tnt-mpi' 'tnt-gui' 'tnt-extra')
 pkgver=2022.10.06
-pkgrel=3
+pkgrel=4
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
@@ -18,19 +18,19 @@ prepare () {
 	unzip tnt_scripts.zip -d ./tnt_scripts
 }
 package_tnt () {
-  depends=('ncurses5-compat-libs')
+  depends=('ncurses5-compat-libs' 'glibc')
 	cd ${srcdir}/binaries
 	chmod +x tnt
 	install -Dm 755 tnt ${pkgdir}/usr/bin/tnt
 }
 package_tnt-mpi () {
-  depends=('ncurses5-compat-libs' 'pvm')
+  depends=('ncurses5-compat-libs' 'pvm' 'openmpi' 'glibc')
 	cd ${srcdir}/binaries
 	chmod +x mpitnt
 	install -Dm 755 mpitnt ${pkgdir}/usr/bin/mpitnt
 }
 package_tnt-gui () {
-  depends=('ncurses5-compat-libs' 'gtk3')
+  depends=('ncurses5-compat-libs' 'gtk3' 'glibc')
   optdepends=('pvm')
 	cd ${srcdir}/binaries
 	chmod +x gTNT
