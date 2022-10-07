@@ -4,7 +4,7 @@
 pkgname=tracer
 _pkgname=Tracer
 pkgver=1.7.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Posterior summarisation in Bayesian phylogenetics. https://doi.org/10.1093/sysbio/syy032"
 arch=('x86_64')
 url="https://github.com/beast-dev/tracer"
@@ -19,5 +19,5 @@ package() {
     install -dm755 "$pkgdir"/usr/{bin,share/{${_pkgname},applications}}
     install -m 755 ${srcdir}/tracer.desktop ${pkgdir}/usr/share/applications/tracer.desktop
     mv ${srcdir}/* "${pkgdir}/usr/share/${_pkgname}"
-    ln -s /usr/share/Tracer/bin/tracer ${pkgdir}/usr/bin/tracer
+    ln -s /usr/share/Tracer/bin/tracer ${pkgdir}/usr/bin/tracer-beast
 }
