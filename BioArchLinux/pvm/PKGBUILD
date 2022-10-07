@@ -7,7 +7,7 @@
 
 pkgname=pvm
 pkgver=3.4.6
-pkgrel=7
+pkgrel=8
 pkgdesc="Parallel Virtual Machine"
 url="http://www.netlib.org/pvm3"
 license=('GPL')
