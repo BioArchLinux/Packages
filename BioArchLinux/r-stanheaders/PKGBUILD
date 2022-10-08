@@ -1,5 +1,7 @@
 # system requirements: pandoc
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=StanHeaders
 _pkgver=2.21.0-7

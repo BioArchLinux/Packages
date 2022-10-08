@@ -1,4 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Hyacinthe Cartiaux <hyacinthe.cartiaux@free.fr>
+# Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=xts
 _pkgver=0.12.1

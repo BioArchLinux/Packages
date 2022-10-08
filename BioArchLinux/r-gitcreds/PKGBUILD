@@ -1,5 +1,6 @@
 # system requirements: git
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=gitcreds
 _pkgver=0.1.2

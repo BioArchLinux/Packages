@@ -1,5 +1,8 @@
 # system requirements: pandoc (>= 1.12.3), pandoc-citeproc
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Robert Greener <me@r0bert.dev>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+
 
 _pkgname=loo
 _pkgver=2.5.1

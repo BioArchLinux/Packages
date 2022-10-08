@@ -1,5 +1,6 @@
 # system requirements: Windows or X11
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=tkrplot
 _pkgver=0.0-26

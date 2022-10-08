@@ -1,5 +1,6 @@
 # system requirements: git (optional)
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=credentials
 _pkgver=1.3.2
