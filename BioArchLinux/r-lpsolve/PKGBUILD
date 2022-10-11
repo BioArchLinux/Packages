@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=lpSolve
-_pkgver=5.6.16
+_pkgver=5.6.17
 pkgname=r-${_pkgname,,}
-pkgver=5.6.16
+pkgver=5.6.17
 pkgrel=1
 pkgdesc="Interface to 'Lp_solve' v. 5.5 to Solve Linear/Integer Programs"
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('18a11e5184914e02b056d3d8f54ad92e4bbce651d930d61430570b4ae2ecbb2a')
+sha256sums=('f725802bd9dc05c6913daf48f2458441ad4d2996056d0942737886d8b76c9288')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
