@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-r6
+  - r-rcpp
+update_on:
+  - regex: osqp_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=osqp
+  - alias: r

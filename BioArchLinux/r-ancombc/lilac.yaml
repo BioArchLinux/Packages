@@ -3,21 +3,27 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-desctools
-- r-doparallel
-- r-dorng
-- r-dplyr
-- r-energy
-- r-foreach
-- r-hmisc
-- r-magrittr
-- r-microbiome
-- r-nloptr
-- r-phyloseq
-- r-rdpack
-- r-rlang
-- r-tibble
-- r-tidyr
+  - r-cvxr
+  - r-desctools
+  - r-doparallel
+  - r-dorng
+  - r-dplyr
+  - r-emmeans
+  - r-energy
+  - r-foreach
+  - r-hmisc
+  - r-lmertest
+  - r-magrittr
+  - r-mia
+  - r-nloptr
+  - r-rdpack
+  - r-rlang
+  - r-rngtools
+  - r-s4vectors
+  - r-singlecellexperiment
+  - r-summarizedexperiment
+  - r-tibble
+  - r-tidyr
 update_on:
 - regex: ANCOMBC_([\d._-]+).tar.gz
   source: regex
