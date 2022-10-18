@@ -7,7 +7,7 @@ _pkgname=StanHeaders
 _pkgver=2.21.0-7
 pkgname=r-${_pkgname,,}
 pkgver=2.21.0.7
-pkgrel=6
+pkgrel=7
 pkgdesc='C++ Header Files for Stan'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
