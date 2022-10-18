@@ -1,8 +1,8 @@
 # Maintainer: sukanka <su975853527 at gmail dot com>
 
 pkgname=rseqc
-pkgver=4.0.0
-pkgrel=1
+pkgver=5.0.0
+pkgrel=0
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('any')
 url="http://rseqc.sourceforge.net/"
@@ -10,7 +10,7 @@ license=('UNKNOWN')
 depends=('python' 'python-bx' 'python-pysam' 'python-numpy' 'python-pybigwig' 'cython')
 makedepends=('python-setuptools' 'python-pip')
 source=("https://sourceforge.net/projects/rseqc/files/RSeQC-${pkgver}.tar.gz")
-sha256sums=('5b44932bad669c6d9190c5c111d181e868fb40077ed20c16c0881f67fbcc669b')
+sha256sums=('546bda73cdf6a1c76272096dd3b491be2ff977f6ead2305c4c060b095c2fff28')
 
 
 
@@ -24,6 +24,6 @@ package() {
 	python setup.py install --root="$pkgdir" --optimize=1
 
 	# these files owned by python-bx.
-	rm -rf  ${pkgdir}/usr/lib/python3.10/site-packages/\
-		{psyco_full.py,__pycache__/psyco_full.cpython-310{.opt-1.pyc,.pyc}}
+	cd  ${pkgdir}/usr/lib/python3.10/site-packages/
+	rm -rf __pycache__ psyco_full.py
 }
