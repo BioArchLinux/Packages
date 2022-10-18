@@ -6,7 +6,7 @@ _pkgname=mvtnorm
 _pkgver=1.1-3
 pkgname=r-${_pkgname,,}
 pkgver=1.1.3
-pkgrel=9
+pkgrel=10
 pkgdesc='Multivariate Normal and t Distributions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
