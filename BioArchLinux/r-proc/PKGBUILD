@@ -5,7 +5,7 @@ _pkgname=pROC
 _pkgver=1.18.0
 pkgname=r-${_pkgname,,}
 pkgver=1.18.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Display and Analyze ROC Curves'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
