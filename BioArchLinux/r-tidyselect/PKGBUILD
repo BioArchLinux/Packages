@@ -1,21 +1,22 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tidyselect
-_pkgver=1.1.2
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=1.1.2
-pkgrel=4
+pkgver=1.2.0
+pkgrel=1
 pkgdesc='Select from a Set of Strings'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  r-ellipsis
+  r-cli
   r-glue
-  r-purrr
+  r-lifecycle
   r-rlang
   r-vctrs
+  r-withr
 )
 optdepends=(
   r-covr
@@ -23,13 +24,13 @@ optdepends=(
   r-dplyr
   r-knitr
   r-magrittr
+  r-stringr
   r-rmarkdown
   r-testthat
   r-tibble
-  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0389a3b15417954a30d6d692f6ebdd3d0f318cb94a5c9b05365df2f4ea1d8270')
+sha256sums=('538d26b727e37d618e2efd3b00836048f103112a03e6994bf07a02392e269e3b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

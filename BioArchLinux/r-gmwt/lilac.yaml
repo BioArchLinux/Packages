@@ -9,5 +9,5 @@ repo_depends:
 update_on:
 - regex: gMWT_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=gMWT
+  url: https://cran.r-project.org/src/contrib/Archive/gMWT/
 - alias: r

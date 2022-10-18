@@ -14,5 +14,5 @@ repo_depends:
 update_on:
 - regex: GenomicTools_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=GenomicTools
+  url: https://cran.r-project.org/src/contrib/Archive/GenomicTools/
 - alias: r

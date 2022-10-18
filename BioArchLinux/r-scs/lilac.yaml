@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+update_on:
+  - regex: scs_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=scs
+  - alias: r

@@ -3,11 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-ellipsis
+- r-cli
 - r-glue
-- r-purrr
+- r-lifecycle
 - r-rlang
 - r-vctrs
+- r-withr
 update_on:
 - regex: tidyselect_([\d._-]+).tar.gz
   source: regex

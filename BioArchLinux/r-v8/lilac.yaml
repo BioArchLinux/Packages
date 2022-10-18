@@ -6,12 +6,8 @@ repo_depends:
 - r-curl
 - r-jsonlite
 - r-rcpp
-- v8
 update_on:
 - regex: V8_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/package=V8
 - alias: r
-- alias: alpm-lilac
-  alpm: v8
-  strip_release: true

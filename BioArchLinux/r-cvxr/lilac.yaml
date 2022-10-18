@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-bit64
+  - r-ecosolver
+  - r-gmp
+  - r-osqp
+  - r-r6
+  - r-rcpp
+  - r-rcppeigen
+  - r-rmpfr
+  - r-scs
+update_on:
+  - regex: CVXR_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=CVXR
+  - alias: r

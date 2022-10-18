@@ -5,4 +5,5 @@ maintainers:
 update_on:
   - source: github
     github: bayesiancook/pbmpi
-    use_latest_release: true
+    use_max_tag: true
+    prefix: 'v'
