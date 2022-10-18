@@ -6,7 +6,7 @@ _pkgname=tkrplot
 _pkgver=0.0-26
 pkgname=r-${_pkgname,,}
 pkgver=0.0.26
-pkgrel=6
+pkgrel=7
 pkgdesc='TK Rplot'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

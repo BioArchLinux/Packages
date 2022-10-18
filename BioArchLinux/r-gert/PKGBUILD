@@ -7,7 +7,7 @@ _pkgname=gert
 _pkgver=1.9.1
 pkgname=r-${_pkgname,,}
 pkgver=1.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple Git Client for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

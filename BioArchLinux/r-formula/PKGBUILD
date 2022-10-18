@@ -5,7 +5,7 @@ _pkgname=Formula
 _pkgver=1.2-4
 pkgname=r-${_pkgname,,}
 pkgver=1.2.4
-pkgrel=8
+pkgrel=9
 pkgdesc='Extended Model Formulas'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

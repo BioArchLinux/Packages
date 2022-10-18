@@ -8,7 +8,7 @@ _pkgname=lintr
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
 pkgver=3.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A 'Linter' for R Code"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

@@ -7,7 +7,7 @@ _pkgname=rematch
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=1.0.1
-pkgrel=8
+pkgrel=9
 pkgdesc="Match Regular Expressions with a Nicer 'API'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

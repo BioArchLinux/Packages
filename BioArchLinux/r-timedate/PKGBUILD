@@ -7,7 +7,7 @@ _pkgname=timeDate
 _pkgver=4021.106
 pkgname=r-${_pkgname,,}
 pkgver=4021.106
-pkgrel=1
+pkgrel=2
 pkgdesc='Rmetrics - Chronological and Calendar Objects'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

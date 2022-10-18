@@ -5,7 +5,7 @@ _pkgname=promises
 _pkgver=1.2.0.1
 pkgname=r-${_pkgname,,}
 pkgver=1.2.0.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Abstractions for Promise-Based Asynchronous Programming'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

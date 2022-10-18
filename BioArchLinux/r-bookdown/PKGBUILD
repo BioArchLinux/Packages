@@ -8,7 +8,7 @@ _pkgname=bookdown
 _pkgver=0.29
 pkgname=r-${_pkgname,,}
 pkgver=0.29
-pkgrel=1
+pkgrel=2
 pkgdesc='Authoring Books and Technical Documents with R Markdown'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

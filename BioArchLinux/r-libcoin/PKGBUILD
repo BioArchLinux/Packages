@@ -5,7 +5,7 @@ _pkgname=libcoin
 _pkgver=1.0-9
 pkgname=r-${_pkgname,,}
 pkgver=1.0.9
-pkgrel=5
+pkgrel=6
 pkgdesc='Linear Test Statistics for Permutation Inference'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"

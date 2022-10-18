@@ -8,7 +8,7 @@ _pkgname=roxygen2
 _pkgver=7.2.1
 pkgname=r-${_pkgname,,}
 pkgver=7.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc='In-Line Documentation for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
