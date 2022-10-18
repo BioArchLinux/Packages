@@ -6,7 +6,7 @@ _pkgname=spam
 _pkgver=2.9-1
 pkgname=r-${_pkgname,,}
 pkgver=2.9.1
-pkgrel=3
+pkgrel=4
 pkgdesc='SPArse Matrix'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
