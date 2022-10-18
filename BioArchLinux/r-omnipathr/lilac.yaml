@@ -19,6 +19,7 @@ repo_depends:
 - r-rappdirs
 - r-readr
 - r-readxl
+- r-rmarkdown
 - r-rlang
 - r-stringr
 - r-tibble

@@ -27,6 +27,7 @@ depends=(
   r-rappdirs
   r-readr
   r-readxl
+  r-rmarkdown
   r-rlang
   r-stringr
   r-tibble
@@ -46,7 +47,6 @@ optdepends=(
   r-parallelmap
   r-paramhelpers
   r-rgraphviz
-  r-rmarkdown
   r-smoof
   r-suprahex
   r-testthat
