@@ -1,4 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: frichtlm <frichtlm@gmail.com>
 
 _pkgname=pkgconfig
 _pkgver=2.0.3

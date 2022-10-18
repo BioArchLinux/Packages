@@ -1,5 +1,8 @@
 # system requirements: Pandoc (>= 1.17.2)
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Robert Greener <me@r0bert.dev>
+# Contributor: haha662 <haha662 at outlook dot com>
+
 
 _pkgname=bookdown
 _pkgver=0.29

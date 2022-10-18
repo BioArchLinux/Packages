@@ -1,4 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contribitor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contribitor: frichtlm <frichtlm@gmail.com>
+# Contribitor: wagnerflo <florian@wagner-flo.net>
 
 _pkgname=reshape2
 _pkgver=1.4.4

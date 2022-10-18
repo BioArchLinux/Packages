@@ -1,4 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=SQUAREM
 _pkgver=2021.1
