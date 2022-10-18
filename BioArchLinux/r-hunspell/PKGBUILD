@@ -6,7 +6,7 @@ _pkgname=hunspell
 _pkgver=3.0.2
 pkgname=r-${_pkgname,,}
 pkgver=3.0.2
-pkgrel=2
+pkgrel=3
 pkgdesc='High-Performance Stemmer, Tokenizer, and Spell Checker'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
