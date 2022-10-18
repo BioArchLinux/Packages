@@ -4,7 +4,7 @@
 pkgbase=tnt
 pkgname=('tnt' 'tnt-mpi' 'tnt-gui' 'tnt-extra')
 pkgver=2022.10.06
-pkgrel=6
+pkgrel=7
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
