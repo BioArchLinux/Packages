@@ -7,7 +7,7 @@ _pkgname=deSolve
 _pkgver=1.33
 pkgname=r-${_pkgname,,}
 pkgver=1.33
-pkgrel=6
+pkgrel=7
 pkgdesc="Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE')"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
