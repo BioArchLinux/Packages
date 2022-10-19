@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=markdown
-_pkgver=1.1
+_pkgver=1.2
 pkgname=r-${_pkgname,,}
-pkgver=1.1
-pkgrel=5
+pkgver=1.2
+pkgrel=1
 pkgdesc="Render Markdown with the C Library 'Sundown'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-rcurl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8d8cd47472a37362e615dbb8865c3780d7b7db694d59050e19312f126e5efc1b')
+sha256sums=('0224cfe9c1037048ea14e0a2dcec6f6935751c946dcab3b35a472b2e9d2afdc0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
