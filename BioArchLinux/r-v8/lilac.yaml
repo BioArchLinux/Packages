@@ -1,13 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
 repo_depends:
-- r-curl
-- r-jsonlite
-- r-rcpp
+  - r-curl
+  - r-jsonlite
+  - r-rcpp
 update_on:
-- regex: V8_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=V8
-- alias: r
+  - source: regex
+    regex: V8_([\d._-]+).tar.gz
+    url: https://cran.r-project.org/package=V8
+  - source: manual
+    manual: 1
+  - alias: r
