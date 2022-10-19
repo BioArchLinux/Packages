@@ -1,8 +1,9 @@
-# Maintainer: Clint Valentine <valentine.clint@gmail.com>
+# Maintainer: Guoyi Zhang <myname at malacology dot net>
+# Contributor: Clint Valentine <valentine.clint@gmail.com>
 
 pkgname=libmaus
 pkgver=2.0.812_release_20220919125234
-pkgrel=1
+pkgrel=2
 pkgdesc="Bioinformatics data structures and algorithms in C++"
 arch=('x86_64')
 url=https://gitlab.com/german.tischler/libmaus2
