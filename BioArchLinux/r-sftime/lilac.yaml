@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-sf
+update_on:
+  - regex: sftime_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=sftime

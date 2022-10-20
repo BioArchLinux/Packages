@@ -4,8 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-fnn
+- r-sf
+- r-sftime
 - r-sp
 - r-spacetime
+- r-stars
 - r-zoo
 update_on:
 - regex: gstat_([\d._-]+).tar.gz

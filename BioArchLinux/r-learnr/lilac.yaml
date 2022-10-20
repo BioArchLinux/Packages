@@ -4,13 +4,17 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-checkmate
+- r-curl
+- r-digest
 - r-ellipsis
 - r-evaluate
 - r-htmltools
 - r-htmlwidgets
 - r-jsonlite
 - r-knitr
+- r-lifecycle
 - r-markdown
+- r-promises
 - r-rappdirs
 - r-renv
 - r-rmarkdown
