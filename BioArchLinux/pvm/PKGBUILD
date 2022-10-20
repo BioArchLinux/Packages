@@ -1,4 +1,4 @@
-# Contributor: Guoyi Zhang <GuoyiZhang at malacology dot net>
+# Maintainer: Guoyi Zhang <GuoyiZhang at malacology dot net>
 # Contributor: Hu Butui <hot123tea123@gmail.com>
 # Contributor: sukanka <su975853527 [at] gmail.com>
 # Contributor: Thomas Zervogiannis <tzervo@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=pvm
 pkgver=3.4.6
-pkgrel=8
+pkgrel=9
 pkgdesc="Parallel Virtual Machine"
 url="http://www.netlib.org/pvm3"
 license=('GPL')
