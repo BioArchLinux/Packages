@@ -1,7 +1,7 @@
 # Maintainer: sukanka <su975853527 at gmail dot com>
 
 pkgname=rseqc
-pkgver=5.0.0
+pkgver=5.0.1
 pkgrel=1
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('any')
@@ -10,7 +10,7 @@ license=('UNKNOWN')
 depends=('python' 'python-bx' 'python-pysam' 'python-numpy' 'python-pybigwig' 'cython')
 makedepends=('python-setuptools' 'python-pip')
 source=("https://sourceforge.net/projects/rseqc/files/RSeQC-${pkgver}.tar.gz")
-sha256sums=('546bda73cdf6a1c76272096dd3b491be2ff977f6ead2305c4c060b095c2fff28')
+sha256sums=('3c7d458784861af352d8da3f4f1cc8941934b37643164e9b74f929a32bd9ca80')
 
 
 
