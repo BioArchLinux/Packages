@@ -3,10 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-ellipsis
-- r-glue
-- r-rlang
 - r-cli
+- r-glue
+- r-lifecycle
+- r-rlang
 update_on:
 - regex: vctrs_([\d._-]+).tar.gz
   source: regex
