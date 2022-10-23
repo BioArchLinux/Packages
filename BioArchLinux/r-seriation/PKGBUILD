@@ -4,7 +4,7 @@ _pkgname=seriation
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=0
+pkgrel=1
 pkgdesc='Infrastructure for Ordering Objects Using Seriation'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
