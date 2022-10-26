@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ps
-_pkgver=1.7.1
+_pkgver=1.7.2
 pkgname=r-${_pkgname,,}
-pkgver=1.7.1
-pkgrel=5
+pkgver=1.7.2
+pkgrel=1
 pkgdesc='List, Query, Manipulate System Processes'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9c458a377d47cc972d3cd0b2a17d0b7ad3cf3b62226410803072089a57a55ef1')
+sha256sums=('9225ebdedb5c1b245bb38b01ce88084c0fc7eafcff6c4fda2e299003ace6b21a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
