@@ -2,15 +2,15 @@
 # Contributor: Mick Elliot <micke@sfu.ca>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=muscle
-pkgver=5.1
-pkgrel=5
+pkgver=5.1.0
+pkgrel=1
 pkgdesc="Multiple sequence alignment software enabling improved estimates of phylogenetic tree confidence by ensemble bootstrapping. https://doi.org/10.1101/2021.06.20.449169"
 arch=('i686' 'x86_64')
 url="https://github.com/rcedgar/muscle"
 license=('GPL3')
 makedepends=('make')
 source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz)
-sha256sums=('091d9f8733b92ff106c2a8eb274d1e5a57960d397a2068d8638d6002e8880dab')
+sha256sums=('2bba8b06e3ccabf6465fa26f459763b2029d7e7b9596881063e3aaba60d9e87d')
 prepare() {
   # -static flag does not find -lgomp (part of gcc-libs)
   sed -i "/LDFLAGS += -static/s:-static::" "$srcdir"/$pkgname-$pkgver/src/Makefile
