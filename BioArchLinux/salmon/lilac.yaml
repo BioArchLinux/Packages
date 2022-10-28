@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: su975853527@gmail.com
+
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+
+update_on:
+  - source: github
+    github: COMBINE-lab/salmon
+    use_latest_release: true
+    prefix: v
+  - source: aur
+    aur: salmon
+  - alias: boost-libs
