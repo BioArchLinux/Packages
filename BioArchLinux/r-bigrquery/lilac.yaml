@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-bit64
+- r-brio
 - r-curl
 - r-dbi
 - r-gargle
