@@ -8,4 +8,3 @@ update_on:
     github: COMBINE-lab/salmon
     use_latest_release: true
     prefix: v
-  - alias: boost-libs
