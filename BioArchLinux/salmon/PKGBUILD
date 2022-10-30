@@ -1,7 +1,7 @@
 # Maintainer: bipin kumar <bipin@ccmb.res.in>
 pkgname=salmon
 pkgver=1.9.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Highly-accurate & wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments"
 arch=('x86_64')
 url="https://combine-lab.github.io/$pkgname/"
