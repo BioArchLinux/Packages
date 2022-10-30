@@ -6,5 +6,6 @@ maintainers:
 update_on:
   - source: github
     github: COMBINE-lab/salmon
-    use_latest_release: true
+    use_max_tag: true
     prefix: v
+  - alias: boost
