@@ -1,0 +1,12 @@
+#!/bin/sh
+export JAVA_HOME=/usr/lib/jvm/default
+export BEAST=/usr/share/beast2
+
+BEAST_LIB="$BEAST/lib"
+
+JAVA="$JAVA_HOME"/bin/java
+
+# use BEAGLE_LIB if the BEAGLE library is not in a standard location
+BEAST_EXTRA_LIBS="$BEAST_EXTRA_LIBS:$BEAGLE_LIB"
+
+"$JAVA" -Dlauncher.wait.for.exit=true -Xms256m -Xmx8g -Djava.library.path="$BEAST_LIB" -Duser.language=en -cp "$BEAST_LIB/launcher.jar" beast.pkgmgmt.launcher.BeautiLauncher -capture $*
