@@ -5,7 +5,7 @@ _pkgname=ggpubr
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=0.4.0
-pkgrel=5
+pkgrel=6
 pkgdesc="'ggplot2' Based Publication Ready Plots"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

@@ -7,7 +7,7 @@ _pkgname=DescTools
 _pkgver=0.99.46
 pkgname=r-${_pkgname,,}
 pkgver=0.99.46
-pkgrel=3
+pkgrel=4
 pkgdesc='Tools for Descriptive Statistics'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
