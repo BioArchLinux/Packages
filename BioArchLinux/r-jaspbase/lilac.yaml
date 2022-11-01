@@ -7,6 +7,7 @@ repo_depends:
   - "r-gridextra"
   - "r-gridgraphics"
   - "r-jsonlite"
+  - "r-kknn"
   - "r-modules"
   - "r-officer"
   - "r-pkgbuild"
