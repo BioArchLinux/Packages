@@ -11,6 +11,7 @@ repo_depends:
 - r-dplyr
 - r-easierdata
 - r-ggplot2
+- r-ggpubr
 - r-ggrepel
 - r-matrixstats
 - r-progeny
