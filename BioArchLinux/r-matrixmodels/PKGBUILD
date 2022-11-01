@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MatrixModels
-_pkgver=0.5-0
+_pkgver=0.5-1
 pkgname=r-${_pkgname,,}
-pkgver=0.5.0
-pkgrel=9
+pkgver=0.5.1
+pkgrel=1
 pkgdesc='Modelling with Sparse and Dense Matrices'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a87faf1a185219f79ea2307e6787d293e1d30bf3af9398e8cfe1e079978946ed')
+sha256sums=('3fc55bdfa5ab40c75bf395e90983d14c9715078c33c727c1658e4e1f36e43ea9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
