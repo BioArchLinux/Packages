@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomeInfoDbData
-_pkgver=1.2.8
+_pkgver=1.2.9
 pkgname=r-${_pkgname,,}
-pkgver=1.2.8
-pkgrel=5
+pkgver=1.2.9
+pkgrel=1
 pkgdesc='Species and taxonomy ID look up tables used by GenomeInfoDb'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('576750330a011c1eccb47c7154ca1b40ae4cd473fd7973f6c2955237a0729eb4')
+sha256sums=('e63a719a8eceefeda39fc95de83e7aa41caad39705efc712a44ab4021adc45fa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
