@@ -2,7 +2,7 @@
 
 pkgname=bamm
 pkgver=2.5.0
-pkgrel=0
+pkgrel=1
 pkgdesc="A program for multimodel inference on speciation and trait evolution https://doi.org/10.1038/ncomms2958"
 arch=('x86_64')
 url="https://github.com/macroevolution/bamm"
