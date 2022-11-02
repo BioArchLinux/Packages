@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=callr
-_pkgver=3.7.2
+_pkgver=3.7.3
 pkgname=r-${_pkgname,,}
-pkgver=3.7.2
+pkgver=3.7.3
 pkgrel=1
 pkgdesc='Call R from R'
 arch=('any')
@@ -24,7 +24,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('12da8a212679e450d8d43c3c6e61ed09b82047f376f316f6f6392f1638580307')
+sha256sums=('567bfedf073a1d4c5785f0553341608a214938110567b9a6495ff20ebb2fd04e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
