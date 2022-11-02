@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: github
+    github: macroevolution/bamm
+    use_max_tag: true
+    prefix: 'v'
