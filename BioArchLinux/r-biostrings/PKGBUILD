@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Biostrings
-_pkgver=2.64.1
+_pkgver=2.66.0
 pkgname=r-${_pkgname,,}
-pkgver=2.64.1
+pkgver=2.66.0
 pkgrel=1
 pkgdesc='Efficient manipulation of biological strings'
 arch=('x86_64')
@@ -34,7 +34,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6370d7aee06c4e474d44e434c5b9f76878353422cb91c5b2d4ce38732bb568f2')
+sha256sums=('7312c508bc2fe6ea3da75edd621b41a35929f9dbdca16d25eb3724ca2cd206fd')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
