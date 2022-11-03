@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=dada2
-_pkgver=1.24.0
+_pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=1.24.0
-pkgrel=2
+pkgver=1.26.0
+pkgrel=1
 pkgdesc='Accurate, high-resolution sample inference from amplicon sequencing data'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -29,7 +29,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9dd083928fc06d53cdb0a2e2d35be7c304fac74a300f8d3c3026022859b5725b')
+sha256sums=('6c9ee66abfa2e21096b8a3669346a445ee051308d9773f2d9e6e4ea230c1aeb1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
