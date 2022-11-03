@@ -41,6 +41,8 @@ depends=(
   r-summarizedexperiment
   r-tidyr
   r-paralleldist
+  r-reshape2
+  r-seurat
 )
 optdepends=(
   r-biocstyle

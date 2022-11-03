@@ -32,6 +32,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 - r-paralleldist
+- r-reshape2
+- r-seurat
 update_on:
 - regex: infercnv_([\d._-]+).tar.gz
   source: regex
