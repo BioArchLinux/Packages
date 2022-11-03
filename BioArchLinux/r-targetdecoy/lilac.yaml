@@ -7,6 +7,8 @@ repo_depends:
 - r-ggpubr
 - r-mzid
 - r-mzr
+- r-shiny
+- r-miniui
 update_on:
 - regex: TargetDecoy_([\d._-]+).tar.gz
   source: regex
