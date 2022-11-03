@@ -25,6 +25,9 @@ depends=(
   r-viridis
   r-xml
   r-xml2
+  r-rcurl
+  r-rmarkdown
+  r-htmltools
 )
 optdepends=(
   r-biobase
@@ -33,7 +36,6 @@ optdepends=(
   r-iranges
   r-magrittr
   r-pander
-  r-rmarkdown
   r-rtcga.clinical
   r-rtcga.cnv
   r-rtcga.methylation

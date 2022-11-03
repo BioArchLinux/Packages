@@ -17,6 +17,9 @@ repo_depends:
 - r-viridis
 - r-xml
 - r-xml2
+- r-rcurl
+- r-rmarkdown
+- r-htmltools
 update_on:
 - regex: RTCGA_([\d._-]+).tar.gz
   source: regex
