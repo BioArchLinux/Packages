@@ -25,6 +25,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyselect
+- r-rvest
 - r-xml2
 - r-yaml
 update_on:
