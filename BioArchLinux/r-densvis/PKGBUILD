@@ -15,6 +15,7 @@ depends=(
   r-basilisk
   r-rcpp
   r-reticulate
+  r-irlba
 )
 optdepends=(
   r-biocstyle
