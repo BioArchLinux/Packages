@@ -25,6 +25,7 @@ depends=(
   r-rgraphviz
   r-s4vectors
   r-shiny
+  r-summarizedexperiment
 )
 optdepends=(
   r-biocstyle
