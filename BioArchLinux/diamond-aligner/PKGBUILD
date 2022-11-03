@@ -20,7 +20,7 @@ prepare() {
 }
 
 build() {
-  cd "$srcdir"/diamond-$pkgver/build || exit 1
+  cd "$srcdir"/diamond-$pkgver/build
 
   cmake \
     -DCMAKE_INSTALL_PREFIX=/usr \
@@ -31,7 +31,7 @@ build() {
 }
 
 package() {
-  cd "$srcdir"/diamond-$pkgver/build || exit 1
+  cd "$srcdir"/diamond-$pkgver/build
 
   # shellcheck disable=2154
   make DESTDIR="$pkgdir" install
