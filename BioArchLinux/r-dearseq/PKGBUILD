@@ -22,6 +22,7 @@ depends=(
   r-reshape2
   r-plyr
   r-dplyr
+  r-scattermore
 )
 optdepends=(
   r-biobase
