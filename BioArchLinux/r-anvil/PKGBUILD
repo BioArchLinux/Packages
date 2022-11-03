@@ -22,6 +22,10 @@ depends=(
   r-tidyr
   r-tidyselect
   r-vctrs
+  r-shiny
+  r-dt
+  r-miniui
+  r-htmltools
 )
 optdepends=(
   r-biocstyle
