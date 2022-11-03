@@ -6,6 +6,7 @@ repo_depends:
 - r-bh
 - r-futile.logger
 - r-snow
+- r-cpp11
 update_on:
 - regex: BiocParallel_([\d._-]+).tar.gz
   source: regex
