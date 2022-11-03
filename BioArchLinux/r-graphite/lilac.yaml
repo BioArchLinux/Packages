@@ -8,6 +8,7 @@ repo_depends:
 - r-graph
 - r-httr
 - r-rappdirs
+- r-purrr
 update_on:
 - regex: graphite_([\d._-]+).tar.gz
   source: regex

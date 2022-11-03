@@ -16,6 +16,7 @@ depends=(
   r-graph
   r-httr
   r-rappdirs
+  r-purrr
 )
 optdepends=(
   r-a4preproc
