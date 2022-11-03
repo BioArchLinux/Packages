@@ -21,6 +21,7 @@ depends=(
   r-ggplot2
   r-lifecycle
   r-lubridate
+  r-patchwork
   r-pander
   r-plotly
   r-readr
