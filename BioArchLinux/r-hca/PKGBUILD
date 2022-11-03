@@ -19,6 +19,9 @@ depends=(
   r-readr
   r-tibble
   r-tidyr
+  r-shiny
+  r-miniui
+  r-dt
 )
 optdepends=(
   r-biocstyle

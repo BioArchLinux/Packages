@@ -11,6 +11,9 @@ repo_depends:
 - r-readr
 - r-tibble
 - r-tidyr
+- r-shiny
+- r-miniui
+- r-dt
 update_on:
 - regex: hca_([\d._-]+).tar.gz
   source: regex
