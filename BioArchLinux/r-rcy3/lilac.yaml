@@ -8,6 +8,7 @@ repo_depends:
 - r-biocgenerics
 - r-fs
 - r-glue
+- r-gplots
 - r-graph
 - r-httr
 - r-irdisplay
