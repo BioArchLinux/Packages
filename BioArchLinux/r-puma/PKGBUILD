@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=puma
-_pkgver=3.38.0
+_pkgver=3.40.0
 pkgname=r-${_pkgname,,}
-pkgver=3.38.0
-pkgrel=2
+pkgver=3.40.0
+pkgrel=1
 pkgdesc="Propagating Uncertainty in Microarray Analysis(including Affymetrix tranditional 3' arrays and exon arrays and Human Transcriptome Array 2.0)"
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -27,7 +27,7 @@ optdepends=(
   r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2b2c41a391f352854b0a303a9861c3806078867bb626c65d2405143964b17e5b')
+sha256sums=('9dd1c4b2b32eebe88f2a4c7aef095270e33383eae60b394a5037bce85e2db6f1')
 
 prepare() {
   echo "CFLAGS=-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions -Wp,-D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fstack-clash-protection -fcf-protection" > "${srcdir}/Makevars"
