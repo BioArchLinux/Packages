@@ -12,6 +12,8 @@ repo_depends:
 - r-rcpp
 - r-rcpparmadillo
 - r-summarizedexperiment
+- r-singlecellexperiment
+- r-rlang
 update_on:
 - regex: glmGamPoi_([\d._-]+).tar.gz
   source: regex
