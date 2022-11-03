@@ -21,6 +21,7 @@ depends=(
   r-tm
   r-treemap
   r-wordcloud
+  r-umap
 )
 optdepends=(
   r-biocstyle

@@ -13,6 +13,7 @@ repo_depends:
 - r-tm
 - r-treemap
 - r-wordcloud
+- r-umap
 update_on:
 - regex: rrvgo_([\d._-]+).tar.gz
   source: regex
