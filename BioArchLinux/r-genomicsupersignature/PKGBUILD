@@ -21,6 +21,7 @@ depends=(
   r-plotly
   r-s4vectors
   r-summarizedexperiment
+  r-irlba
 )
 optdepends=(
   r-bcellviper

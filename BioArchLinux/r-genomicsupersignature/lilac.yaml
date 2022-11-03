@@ -13,6 +13,7 @@ repo_depends:
 - r-plotly
 - r-s4vectors
 - r-summarizedexperiment
+- r-irlba
 update_on:
 - regex: GenomicSuperSignature_([\d._-]+).tar.gz
   source: regex
