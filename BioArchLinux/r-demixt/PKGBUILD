@@ -20,6 +20,10 @@ depends=(
   r-rmarkdown
   r-summarizedexperiment
   r-truncdist
+  r-dss
+  r-dendextend
+  r-psych
+  r-sva
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('ce42e26ce92ffd15299325b9b72ef14d368544110b05310aa20540ab9bd1a687')

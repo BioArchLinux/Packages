@@ -12,6 +12,10 @@ repo_depends:
 - r-rmarkdown
 - r-summarizedexperiment
 - r-truncdist
+- r-dss
+- r-dendextend
+- r-psych
+- r-sva
 update_on:
 - regex: DeMixT_([\d._-]+).tar.gz
   source: regex
