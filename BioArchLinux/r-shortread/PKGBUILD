@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ShortRead
-_pkgver=1.54.0
+_pkgver=1.56.0
 pkgname=r-${_pkgname,,}
-pkgver=1.54.0
-pkgrel=2
+pkgver=1.56.0
+pkgrel=1
 pkgdesc='FASTQ input and manipulation'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -35,7 +35,7 @@ optdepends=(
   r-yeastnagalakshmi
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('18ca2c82688c158cdc952436434d4a608000ec4c02b199a0925c6cb2500a030c')
+sha256sums=('94d6066d439553c77161adf51378cde3015e5228d7b41c0a19fb0f4a6505e07c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
