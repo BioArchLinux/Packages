@@ -6,6 +6,7 @@ repo_depends:
 - r-annotate
 - r-biobase
 - r-biocgenerics
+- r-summarizedexperiment
 - r-fpc
 - r-gbm
 - r-gdata
