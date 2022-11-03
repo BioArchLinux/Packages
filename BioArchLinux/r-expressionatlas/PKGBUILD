@@ -18,6 +18,7 @@ depends=(
   r-summarizedexperiment
   r-xml
   r-xml2
+  r-biocstyle
 )
 optdepends=(
   r-knitr

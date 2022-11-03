@@ -10,6 +10,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-xml
 - r-xml2
+- r-biocstyle
 update_on:
 - regex: ExpressionAtlas_([\d._-]+).tar.gz
   source: regex
