@@ -13,6 +13,7 @@ depends=(
   r
   r-akima
   r-multtest
+  r-interp
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('5d50526b009daecf6530a499a715630bb18798a17d9479df4da18350e659b96a')

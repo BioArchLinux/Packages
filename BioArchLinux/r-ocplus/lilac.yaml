@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-akima
 - r-multtest
+- r-interp
 update_on:
 - regex: OCplus_([\d._-]+).tar.gz
   source: regex
