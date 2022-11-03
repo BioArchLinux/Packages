@@ -16,6 +16,7 @@ depends=(
   r-rstan
   r-stanheaders
   r-summarizedexperiment
+  r-rstantools
 )
 optdepends=(
   r-biocstyle

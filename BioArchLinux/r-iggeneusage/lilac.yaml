@@ -8,6 +8,7 @@ repo_depends:
 - r-rstan
 - r-stanheaders
 - r-summarizedexperiment
+- r-rstantools
 update_on:
 - regex: IgGeneUsage_([\d._-]+).tar.gz
   source: regex
