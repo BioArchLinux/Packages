@@ -15,6 +15,7 @@ depends=(
   r-bh
   r-biobase
   r-biocgenerics
+  r-cpp11
   r-cytolib
   r-matrixstats
   r-rcpp
