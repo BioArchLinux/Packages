@@ -12,5 +12,5 @@ repo_depends:
 update_on:
 - regex: networkBMA_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/networkBMA
+  url: https://bioconductor.org/packages/3.15/networkBMA
 - alias: r

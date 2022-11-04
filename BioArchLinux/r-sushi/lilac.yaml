@@ -8,5 +8,5 @@ repo_depends:
 update_on:
 - regex: Sushi_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/Sushi
+  url: https://bioconductor.org/packages/3.15/Sushi
 - alias: r

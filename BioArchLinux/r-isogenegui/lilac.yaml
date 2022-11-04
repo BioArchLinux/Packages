@@ -22,5 +22,5 @@ repo_depends:
 update_on:
 - regex: IsoGeneGUI_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/IsoGeneGUI
+  url: https://bioconductor.org/packages/3.15/IsoGeneGUI
 - alias: r

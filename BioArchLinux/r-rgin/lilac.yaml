@@ -8,5 +8,5 @@ repo_depends:
 update_on:
 - regex: Rgin_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/Rgin
+  url: https://bioconductor.org/packages/3.15/Rgin
 - alias: r

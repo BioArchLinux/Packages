@@ -21,5 +21,5 @@ repo_depends:
 update_on:
 - regex: TimeSeriesExperiment_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/TimeSeriesExperiment
+  url: https://bioconductor.org/packages/3.15/TimeSeriesExperiment
 - alias: r

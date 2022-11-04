@@ -7,5 +7,5 @@ repo_depends:
 update_on:
 - regex: gprege_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/gprege
+  url: https://bioconductor.org/packages/3.15/gprege
 - alias: r

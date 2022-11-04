@@ -24,5 +24,5 @@ repo_depends:
 update_on:
 - regex: TVTB_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/TVTB
+  url: https://bioconductor.org/packages/3.15/TVTB
 - alias: r
