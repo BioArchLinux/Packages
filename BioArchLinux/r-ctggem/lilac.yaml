@@ -13,5 +13,5 @@ repo_depends:
 update_on:
 - regex: ctgGEM_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/ctgGEM
+  url: https://bioconductor.org/packages/3.15/ctgGEM
 - alias: r

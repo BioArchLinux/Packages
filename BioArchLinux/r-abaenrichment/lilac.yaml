@@ -12,5 +12,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/ABAEnrichment
+  url: https://bioconductor.org/packages/3.15/ABAEnrichment
 - alias: r

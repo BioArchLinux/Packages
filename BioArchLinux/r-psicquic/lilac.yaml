@@ -12,5 +12,5 @@ repo_depends:
 update_on:
 - regex: PSICQUIC_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/PSICQUIC
+  url: https://bioconductor.org/packages/3.15/PSICQUIC
 - alias: r

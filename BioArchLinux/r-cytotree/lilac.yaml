@@ -28,5 +28,5 @@ repo_depends:
 update_on:
 - regex: CytoTree_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/CytoTree
+  url: https://bioconductor.org/packages/3.15/CytoTree
 - alias: r
