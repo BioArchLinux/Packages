@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=future.apply
-_pkgver=1.9.1
+_pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=1.9.1
+pkgver=1.10.0
 pkgrel=1
 pkgdesc='Apply Function to Elements in Parallel using Futures'
 arch=('any')
@@ -23,7 +23,7 @@ optdepends=(
   r-tools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4f22ccd5caa62077581c6adc4d35543451e547220270aed3f1abcbaa6a202133')
+sha256sums=('dee92dd84812fe8c55064c0f0e6d806c0c29848b5a5fc4a7725d6a4b623e94aa')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
