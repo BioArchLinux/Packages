@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-geomxtools
+- r-lognormreg
 - r-repmis
 - r-seuratobject
 update_on:

@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
-- r-biocparallel
 - r-biostrings
 - r-bsgenome
 - r-chippeakanno
@@ -13,13 +12,23 @@ repo_depends:
 - r-dplyr
 - r-genomeinfodb
 - r-genomicalignments
+- r-genomicfeatures
 - r-genomicranges
+- r-ggplot2
 - r-hash
 - r-iranges
 - r-limma
 - r-matrixstats
+- r-multtest
+- r-openxlsx
+- r-patchwork
+- r-purrr
+- r-rio
+- r-rlang
 - r-rsamtools
 - r-s4vectors
+- r-stringr
+- r-tidyr
 update_on:
 - regex: GUIDEseq_([\d._-]+).tar.gz
   source: regex

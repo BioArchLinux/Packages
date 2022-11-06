@@ -40,6 +40,7 @@ depends=(
   r-sgseq
   r-speedglm
   r-stringr
+  r-summarizedexperiment
   r-tximport
 )
 optdepends=(

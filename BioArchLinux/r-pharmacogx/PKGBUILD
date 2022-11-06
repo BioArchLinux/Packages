@@ -16,21 +16,22 @@ depends=(
   r-biocparallel
   r-catools
   r-checkmate
+  r-coop
   r-coregx
   r-data.table
   r-downloader
   r-ggplot2
-  r-glue
   r-jsonlite
   r-magicaxis
   r-multiassayexperiment
   r-rcolorbrewer
+  r-rcpp
   r-reshape2
   r-s4vectors
   r-summarizedexperiment
-  r-coop
 )
 optdepends=(
+  r-biocstyle
   r-crayon
   r-knitcitations
   r-knitr

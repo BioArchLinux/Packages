@@ -10,6 +10,7 @@ repo_depends:
 - r-enrichplot
 - r-go.db
 - r-gosemsim
+- r-gson
 - r-magrittr
 - r-plyr
 - r-qvalue

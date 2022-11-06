@@ -16,6 +16,7 @@ depends=(
   r-concaveman
   r-data.table
   r-dplyr
+  r-ggforce
   r-ggplot2
   r-iranges
   r-lme4
@@ -24,8 +25,11 @@ depends=(
   r-rlang
   r-s4vectors
   r-scam
+  r-singlecellexperiment
+  r-spatialexperiment
   r-spatstat.core
   r-spatstat.geom
+  r-summarizedexperiment
   r-tidyr
 )
 optdepends=(

@@ -12,12 +12,12 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
-  r-cpp11
   r-curl
   r-dplyr
   r-dt
   r-httr
   r-jsonlite
+  r-rjsoncons
   r-shiny
 )
 optdepends=(

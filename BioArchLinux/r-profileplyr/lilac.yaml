@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-biocparallel
-- r-cairo
 - r-chipseeker
 - r-circlize
 - r-complexheatmap

@@ -13,17 +13,11 @@ depends=(
   r
   r-annotationdbi
   r-gdata
-  r-ggplot2
-  r-gplots
-  r-gridextra
   r-httr
   r-igraph
-  r-latticeextra
-  r-mageckflute
   r-mirnatap
   r-mirnatap.db
   r-org.hs.eg.db
-  r-tcgabiolinks
 )
 optdepends=(
   r-biocstyle

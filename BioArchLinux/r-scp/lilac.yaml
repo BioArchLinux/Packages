@@ -9,7 +9,6 @@ repo_depends:
 - r-mscoreutils
 - r-multiassayexperiment
 - r-qfeatures
-- r-rlang
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment

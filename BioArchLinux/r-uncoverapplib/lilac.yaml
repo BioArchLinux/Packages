@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocfilecache
 - r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.hsapiens.ucsc.hg38
 - r-condformat
 - r-dt
 - r-ensdb.hsapiens.v75
@@ -20,6 +21,7 @@ repo_depends:
 - r-rappdirs
 - r-rlist
 - r-rsamtools
+- r-s4vectors
 - r-shiny
 - r-shinybs
 - r-shinycssloaders
@@ -28,7 +30,6 @@ repo_depends:
 - r-stringr
 - r-txdb.hsapiens.ucsc.hg19.knowngene
 - r-txdb.hsapiens.ucsc.hg38.knowngene
-- r-bsgenome.hsapiens.ucsc.hg38
 update_on:
 - regex: uncoverappLib_([\d._-]+).tar.gz
   source: regex

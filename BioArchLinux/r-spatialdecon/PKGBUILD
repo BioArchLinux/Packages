@@ -13,6 +13,7 @@ depends=(
   r
   r-biobase
   r-geomxtools
+  r-lognormreg
   r-repmis
   r-seuratobject
 )

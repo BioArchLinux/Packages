@@ -20,6 +20,7 @@ depends=(
   r-energy
   r-foreach
   r-hmisc
+  r-lme4
   r-lmertest
   r-magrittr
   r-mia
@@ -32,6 +33,7 @@ depends=(
   r-summarizedexperiment
   r-tibble
   r-tidyr
+  r-treesummarizedexperiment
 )
 optdepends=(
   r-caret

@@ -3,14 +3,18 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-dplyr
+- r-genomeinfodb
 - r-genomicranges
 - r-ggforce
 - r-ggplot2
+- r-gviz
 - r-matrixstats
+- r-plyr
 - r-rtracklayer
 - r-s4vectors
+- r-tibble
 - r-tidyr
-- r-plyr
 update_on:
 - regex: BindingSiteFinder_([\d._-]+).tar.gz
   source: regex

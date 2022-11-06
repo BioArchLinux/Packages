@@ -16,7 +16,10 @@ repo_depends:
 - r-forcats
 - r-fs
 - r-genomicranges
+- r-gggenes
 - r-ggplot2
+- r-ggrepel
+- r-gridextra
 - r-iranges
 - r-irlba
 - r-jsonlite
@@ -44,13 +47,12 @@ repo_depends:
 - r-shinywidgets
 - r-singlecellexperiment
 - r-stringdist
+- r-stringr
 - r-summarizedexperiment
-- r-sushi
 - r-tibble
 - r-tidyr
 - r-umap
 - r-viridis
-- r-gggenes
 update_on:
 - regex: ChromSCape_([\d._-]+).tar.gz
   source: regex

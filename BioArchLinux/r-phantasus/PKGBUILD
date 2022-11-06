@@ -16,6 +16,7 @@ depends=(
   r-biobase
   r-ccapp
   r-curl
+  r-data.table
   r-deseq2
   r-fgsea
   r-geoquery
@@ -37,7 +38,6 @@ depends=(
 )
 optdepends=(
   r-biocstyle
-  r-data.table
   r-knitr
   r-rmarkdown
   r-testthat

@@ -10,6 +10,7 @@ repo_depends:
 - r-ggplot2
 - r-hdf5array
 - r-matrixstats
+- r-nnls
 - r-raster
 - r-rcolorbrewer
 - r-rhdf5
@@ -17,11 +18,11 @@ repo_depends:
 - r-shiny
 - r-shinydashboard
 - r-singlecellexperiment
+- r-spatialexperiment
 - r-summarizedexperiment
 - r-svglite
 - r-svgpanzoom
 - r-viridis
-- r-nnls
 update_on:
 - regex: cytomapper_([\d._-]+).tar.gz
   source: regex

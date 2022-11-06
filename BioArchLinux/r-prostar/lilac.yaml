@@ -3,21 +3,17 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biocmanager
-- r-colourpicker
 - r-dapar
 - r-dapardata
 - r-data.table
-- r-dt
 - r-future
+- r-ggplot2
+- r-gplots
 - r-highcharter
 - r-htmlwidgets
 - r-later
 - r-promises
-- r-r.utils
-- r-rclipboard
 - r-rhandsontable
-- r-sass
 - r-shiny
 - r-shinyace
 - r-shinybs
@@ -25,11 +21,9 @@ repo_depends:
 - r-shinyjqui
 - r-shinyjs
 - r-shinythemes
-- r-shinytree
-- r-shinywidgets
 - r-tibble
+- r-vioplot
 - r-webshot
-- r-xml
 update_on:
 - regex: Prostar_([\d._-]+).tar.gz
   source: regex

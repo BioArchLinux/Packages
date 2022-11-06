@@ -9,10 +9,10 @@ repo_depends:
 - r-irlba
 - r-multiassayexperiment
 - r-pals
+- r-reshape2
 - r-singlecellexperiment
 - r-summarizedexperiment
 - r-transport
-- r-reshape2
 update_on:
 - regex: corral_([\d._-]+).tar.gz
   source: regex

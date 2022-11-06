@@ -5,9 +5,11 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-e1071
+- r-multiassayexperiment
 - r-multidataset
 - r-randomforest
 - r-ropls
+- r-summarizedexperiment
 update_on:
 - regex: biosigner_([\d._-]+).tar.gz
   source: regex

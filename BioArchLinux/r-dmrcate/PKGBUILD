@@ -28,10 +28,13 @@ depends=(
 )
 optdepends=(
   r-biocgenerics
+  r-dmrcatedata
+  r-flowsorted.blood.epic
   r-illuminahumanmethylation450kanno.ilmn12.hg19
   r-illuminahumanmethylationepicanno.ilm10b4.hg19
   r-knitr
   r-runit
+  r-tissuetreg
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('5bdadf1c57ae1cc8d4f85ab9c184e0c94af45bc6eda7dff4d7b2dbd013fa0e50')

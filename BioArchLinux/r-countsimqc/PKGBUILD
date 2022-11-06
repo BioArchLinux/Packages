@@ -19,6 +19,7 @@ depends=(
   r-genefilter
   r-genomeinfodbdata
   r-ggplot2
+  r-ragg
   r-randtests
   r-rmarkdown
   r-summarizedexperiment

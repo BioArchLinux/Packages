@@ -6,6 +6,7 @@ repo_depends:
 - r-biocparallel
 - r-limma
 - r-lme4
+- r-multiassayexperiment
 - r-purrr
 - r-qfeatures
 - r-summarizedexperiment

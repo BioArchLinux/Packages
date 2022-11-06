@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bh
 - r-biostrings
 - r-ckmeans.1d.dp
 - r-data.table
@@ -12,8 +13,10 @@ repo_depends:
 - r-plyr
 - r-rcpp
 - r-s4vectors
+- r-seqinr
 - r-shortread
 - r-stringr
+- r-zlibbioc
 update_on:
 - regex: CellBarcode_([\d._-]+).tar.gz
   source: regex

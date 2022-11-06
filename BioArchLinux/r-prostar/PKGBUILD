@@ -11,21 +11,17 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
-  r-biocmanager
-  r-colourpicker
   r-dapar
   r-dapardata
   r-data.table
-  r-dt
   r-future
+  r-ggplot2
+  r-gplots
   r-highcharter
   r-htmlwidgets
   r-later
   r-promises
-  r-r.utils
-  r-rclipboard
   r-rhandsontable
-  r-sass
   r-shiny
   r-shinyace
   r-shinybs
@@ -33,15 +29,24 @@ depends=(
   r-shinyjqui
   r-shinyjs
   r-shinythemes
-  r-shinytree
-  r-shinywidgets
   r-tibble
+  r-vioplot
   r-webshot
-  r-xml
 )
 optdepends=(
+  r-biocmanager
   r-biocstyle
+  r-colourpicker
+  r-dt
+  r-gtools
+  r-knitr
+  r-r.utils
+  r-rcolorbrewer
+  r-sass
+  r-shinytree
+  r-shinywidgets
   r-testthat
+  r-xml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('cf246dc018f1e7f2e4d6517535a91b8df27830660df529b84d2fa447d2fa5cce')

@@ -13,6 +13,7 @@ repo_depends:
 - r-corrplot
 - r-digest
 - r-genomeinfodb
+- r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2

@@ -5,17 +5,15 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-circlize
-- r-complexheatmap
 - r-data.table
 - r-deseq2
 - r-edger
 - r-openxlsx
-- r-randomcolor
+- r-pheatmap
 - r-s4vectors
-- r-seriation
+- r-sechm
 - r-summarizedexperiment
 - r-sva
-- r-sechm
 update_on:
 - regex: SEtools_([\d._-]+).tar.gz
   source: regex

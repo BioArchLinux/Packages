@@ -11,21 +11,23 @@ arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
+  gcc
   r
   r-bh
   r-biocparallel
+  r-cowplot
   r-data.table
   r-fastmatch
   r-ggplot2
-  r-gridextra
   r-rcpp
-  gcc
 )
 optdepends=(
+  r-aggregation
   r-annotationdbi
   r-geoquery
   r-knitr
   r-limma
+  r-msigdbr
   r-org.mm.eg.db
   r-parallel
   r-reactome.db

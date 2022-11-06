@@ -3,7 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-annotationdbi
+- r-annotationhub
 - r-ape
 - r-batchelor
 - r-biobase
@@ -23,6 +23,7 @@ repo_depends:
 - r-dropletutils
 - r-dt
 - r-enrichr
+- r-ensembldb
 - r-experimenthub
 - r-fields
 - r-fishpond
@@ -43,8 +44,8 @@ repo_depends:
 - r-msigdbr
 - r-multtest
 - r-plotly
+- r-plyr
 - r-r.utils
-- r-rcolorbrewer
 - r-reshape2
 - r-reticulate
 - r-rlang
@@ -58,6 +59,7 @@ repo_depends:
 - r-scmerge
 - r-scran
 - r-scrnaseq
+- r-scuttle
 - r-seurat
 - r-shiny
 - r-shinyalert
@@ -65,18 +67,18 @@ repo_depends:
 - r-shinyjs
 - r-singlecellexperiment
 - r-singler
+- r-soupx
 - r-summarizedexperiment
 - r-sva
 - r-tenxpbmcdata
 - r-tibble
+- r-trajectoryutils
+- r-tscan
 - r-tximport
 - r-vam
 - r-withr
 - r-yaml
 - r-zinbwave
-- r-trajectoryutils
-- r-tscan
-- r-soupx
 update_on:
 - regex: singleCellTK_([\d._-]+).tar.gz
   source: regex

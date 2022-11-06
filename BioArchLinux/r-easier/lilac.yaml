@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-arules
 - r-biocparallel
 - r-coin
 - r-deseq2

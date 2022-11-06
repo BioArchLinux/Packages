@@ -22,6 +22,7 @@ depends=(
   r-rcircos
   r-rcurl
   r-rjsonio
+  r-rvest
   r-s4vectors
   r-stringr
   r-summarizedexperiment

@@ -13,9 +13,11 @@ depends=(
   r
   r-biobase
   r-e1071
+  r-multiassayexperiment
   r-multidataset
   r-randomforest
   r-ropls
+  r-summarizedexperiment
 )
 optdepends=(
   r-biocgenerics

@@ -24,7 +24,10 @@ depends=(
   r-forcats
   r-fs
   r-genomicranges
+  r-gggenes
   r-ggplot2
+  r-ggrepel
+  r-gridextra
   r-iranges
   r-irlba
   r-jsonlite
@@ -52,17 +55,19 @@ depends=(
   r-shinywidgets
   r-singlecellexperiment
   r-stringdist
+  r-stringr
   r-summarizedexperiment
-  r-sushi
   r-tibble
   r-tidyr
   r-umap
   r-viridis
-  r-gggenes
 )
 optdepends=(
   r-biocstyle
+  r-bluster
   r-future
+  r-httr
+  r-igraph
   r-knitr
   r-markdown
   r-rmarkdown

@@ -24,10 +24,10 @@ optdepends=(
   r-nanostringdiff
   r-pheatmap
   r-plotly
-  r-qusage
   r-rlang
   r-rmarkdown
   r-ruv
+  r-ruvseq
   r-shiny
   r-testthat
   r-xlsx

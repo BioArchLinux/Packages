@@ -17,6 +17,7 @@ depends=(
   r-ggplot2
   r-ggraph
   r-graphite
+  r-gson
   r-igraph
   r-reactome.db
 )

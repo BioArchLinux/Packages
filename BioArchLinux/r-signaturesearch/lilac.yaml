@@ -18,6 +18,7 @@ repo_depends:
 - r-gseabase
 - r-hdf5array
 - r-magrittr
+- r-org.hs.eg.db
 - r-qvalue
 - r-rcpp
 - r-reactome.db
@@ -27,6 +28,7 @@ repo_depends:
 - r-rsqlite
 - r-scales
 - r-summarizedexperiment
+- r-tibble
 - r-visnetwork
 update_on:
 - regex: signatureSearch_([\d._-]+).tar.gz

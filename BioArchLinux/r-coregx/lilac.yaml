@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bench
 - r-biobase
 - r-biocgenerics
 - r-biocparallel
@@ -18,7 +19,6 @@ repo_depends:
 - r-rlang
 - r-s4vectors
 - r-summarizedexperiment
-- r-bench
 update_on:
 - regex: CoreGx_([\d._-]+).tar.gz
   source: regex

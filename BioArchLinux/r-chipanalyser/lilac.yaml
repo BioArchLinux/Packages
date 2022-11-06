@@ -9,6 +9,7 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-iranges
+- r-rcolorbrewer
 - r-rcpproll
 - r-rocr
 - r-rtracklayer

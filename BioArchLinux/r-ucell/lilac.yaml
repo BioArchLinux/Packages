@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocneighbors
 - r-biocparallel
 - r-data.table
 - r-singlecellexperiment

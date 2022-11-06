@@ -17,6 +17,7 @@ repo_depends:
 - r-hdf5array
 - r-homo.sapiens
 - r-impute
+- r-iranges
 - r-matrixstats
 - r-mus.musculus
 - r-qdnaseq

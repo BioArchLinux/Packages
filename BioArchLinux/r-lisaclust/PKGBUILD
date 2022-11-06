@@ -17,11 +17,15 @@ depends=(
   r-data.table
   r-dplyr
   r-ggplot2
+  r-pheatmap
   r-purrr
   r-s4vectors
+  r-singlecellexperiment
+  r-spatialexperiment
   r-spatstat.core
   r-spatstat.geom
   r-spicyr
+  r-summarizedexperiment
   r-tidyr
 )
 optdepends=(

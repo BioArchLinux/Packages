@@ -9,6 +9,7 @@ repo_depends:
 - r-concaveman
 - r-cytomapper
 - r-data.table
+- r-distances
 - r-dplyr
 - r-dt
 - r-ebimage
@@ -16,6 +17,7 @@ repo_depends:
 - r-ggraph
 - r-igraph
 - r-magrittr
+- r-matrixgenerics
 - r-pheatmap
 - r-readr
 - r-rtriangle
@@ -27,6 +29,7 @@ repo_depends:
 - r-stringr
 - r-summarizedexperiment
 - r-tidygraph
+- r-tidyselect
 - r-viridis
 - r-vroom
 update_on:

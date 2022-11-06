@@ -6,13 +6,14 @@ repo_depends:
 - r-aldex2
 - r-ancombc
 - r-biocparallel
+- r-corncob
 - r-cowplot
 - r-dearseq
 - r-deseq2
 - r-edger
-- r-ffpe
 - r-ggdendro
 - r-ggplot2
+- r-ggridges
 - r-limma
 - r-mast
 - r-metagenomeseq

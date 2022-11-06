@@ -3,17 +3,55 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-ada
+- r-biocfilecache
 - r-biocgenerics
 - r-biostrings
+- r-bsgenome
+- r-bsplus
+- r-clue
+- r-cowplot
+- r-dplyr
+- r-dt
+- r-e1071
+- r-future
+- r-future.apply
 - r-genomeinfodb
 - r-genomicranges
+- r-ggplot2
+- r-ggpubr
+- r-glmnet
 - r-iranges
+- r-kknn
+- r-listenv
+- r-magrittr
+- r-maxstat
 - r-nloptr
 - r-nmf
+- r-pheatmap
 - r-pmcmrplus
+- r-ppclust
+- r-proc
+- r-proxy
+- r-pvclust
+- r-randomforest
+- r-rcolorbrewer
 - r-rcpp
 - r-rcpparmadillo
+- r-readr
+- r-reshape2
+- r-rtracklayer
+- r-scales
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-shinywidgets
+- r-survivalanalysis
+- r-survminer
+- r-tibble
+- r-tidyr
 - r-variantannotation
+- r-vgam
 update_on:
 - regex: signeR_([\d._-]+).tar.gz
   source: regex

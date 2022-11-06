@@ -5,10 +5,10 @@ maintainers:
 repo_depends:
 - r-bh
 - r-biocparallel
+- r-cowplot
 - r-data.table
 - r-fastmatch
 - r-ggplot2
-- r-gridextra
 - r-rcpp
 update_on:
 - regex: fgsea_([\d._-]+).tar.gz

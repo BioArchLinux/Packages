@@ -3,13 +3,17 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bestnormalize
 - r-data.table
+- r-depmixs4
 - r-dplyr
 - r-genomicranges
 - r-ggplot2
 - r-matrixgenerics
+- r-naniar
 - r-purrr
 - r-scales
+- r-stringr
 - r-variantannotation
 update_on:
 - regex: tLOH_([\d._-]+).tar.gz

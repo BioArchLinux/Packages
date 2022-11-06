@@ -10,10 +10,10 @@ repo_depends:
 - r-limma
 - r-rcpp
 - r-rcpparmadillo
+- r-rfast
 - r-scater
 - r-singlecellexperiment
 - r-summarizedexperiment
-- r-rfast
 update_on:
 - regex: distinct_([\d._-]+).tar.gz
   source: regex

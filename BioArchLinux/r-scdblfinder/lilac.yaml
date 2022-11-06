@@ -9,7 +9,12 @@ repo_depends:
 - r-biocsingular
 - r-bluster
 - r-delayedarray
+- r-genomeinfodb
+- r-genomicranges
 - r-igraph
+- r-iranges
+- r-rsamtools
+- r-rtracklayer
 - r-s4vectors
 - r-scater
 - r-scran
@@ -17,8 +22,6 @@ repo_depends:
 - r-singlecellexperiment
 - r-summarizedexperiment
 - r-xgboost
-- r-rtracklayer
-- r-rsamtools
 update_on:
 - regex: scDblFinder_([\d._-]+).tar.gz
   source: regex

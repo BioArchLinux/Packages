@@ -12,11 +12,14 @@ license=('GPL')
 depends=(
   r
   r-biocparallel
-  r-locfit
+  r-dplyr
+  r-genefilter
+  r-generics
   r-multiassayexperiment
-  r-plyr
+  r-ranger
+  r-rlang
   r-s4vectors
-  r-randomforest
+  r-tidyr
 )
 optdepends=(
   r-biocstyle
@@ -25,7 +28,6 @@ optdepends=(
   r-cowplot
   r-e1071
   r-edger
-  r-genefilter
   r-ggplot2
   r-glmnet
   r-gridextra
@@ -34,13 +36,16 @@ optdepends=(
   r-iranges
   r-knitr
   r-limma
+  r-matrixmodels
   r-pamr
   r-parathyroidse
   r-poiclaclu
+  r-randomforestsrc
   r-rmarkdown
   r-rmixmod
   r-robustbase
   r-scales
+  r-xgboost
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('15115bd2058bba6a79d42a2e48b7175df23ddb6e0f08971cab9b893d028944a8')

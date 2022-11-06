@@ -56,7 +56,6 @@ optdepends=(
   r-quadprog
   r-qvalue
   r-qvalue
-  r-reffreeewas
   r-rnbeads.hg19
   r-rnbeads.mm9
   r-rpmm

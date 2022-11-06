@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-biobase
+- r-biocgenerics
 - r-biocparallel
 - r-catools
 - r-coregx

@@ -14,7 +14,9 @@ depends=(
   r
   r-dplyr
   r-keggrest
+  r-purrr
   r-rcy3
+  r-tibble
 )
 optdepends=(
   r-biocstyle

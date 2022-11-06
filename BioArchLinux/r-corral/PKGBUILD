@@ -29,6 +29,7 @@ optdepends=(
   r-duoclustering2018
   r-knitr
   r-rmarkdown
+  r-scater
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

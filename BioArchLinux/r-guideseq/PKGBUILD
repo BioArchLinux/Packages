@@ -12,7 +12,6 @@ license=('GPL')
 depends=(
   r
   r-biocgenerics
-  r-biocparallel
   r-biostrings
   r-bsgenome
   r-chippeakanno
@@ -21,20 +20,32 @@ depends=(
   r-dplyr
   r-genomeinfodb
   r-genomicalignments
+  r-genomicfeatures
   r-genomicranges
+  r-ggplot2
   r-hash
   r-iranges
   r-limma
   r-matrixstats
+  r-multtest
+  r-openxlsx
+  r-patchwork
+  r-purrr
+  r-rio
+  r-rlang
   r-rsamtools
   r-s4vectors
+  r-stringr
+  r-tidyr
 )
 optdepends=(
   r-biocstyle
   r-bsgenome.hsapiens.ucsc.hg19
+  r-bsgenome.hsapiens.ucsc.hg38
   r-knitr
   r-org.hs.eg.db
   r-runit
+  r-testthat
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

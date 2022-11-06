@@ -4,17 +4,19 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biomart
+- r-dplyr
 - r-edger
+- r-ggplot2
+- r-ggpubr
 - r-heatmap3
 - r-keggrest
 - r-matlab
 - r-rcpp
-- r-rnaseqsamplesizedata
-- r-ggplot2
 - r-recount
-- r-ggpubr
+- r-rnaseqsamplesizedata
 - r-summarizedexperiment
 - r-tidyr
+- r-tidyselect
 update_on:
 - regex: RnaSeqSampleSize_([\d._-]+).tar.gz
   source: regex

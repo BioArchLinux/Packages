@@ -8,6 +8,7 @@ repo_depends:
 - r-concaveman
 - r-data.table
 - r-dplyr
+- r-ggforce
 - r-ggplot2
 - r-iranges
 - r-lme4
@@ -16,8 +17,11 @@ repo_depends:
 - r-rlang
 - r-s4vectors
 - r-scam
+- r-singlecellexperiment
+- r-spatialexperiment
 - r-spatstat.core
 - r-spatstat.geom
+- r-summarizedexperiment
 - r-tidyr
 update_on:
 - regex: spicyR_([\d._-]+).tar.gz

@@ -6,6 +6,7 @@ repo_depends:
 - r-biocgenerics
 - r-biomart
 - r-biostrings
+- r-httr
 - r-motifstack
 - r-pheatmap
 - r-uniprot.ws

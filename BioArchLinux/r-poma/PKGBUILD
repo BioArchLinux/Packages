@@ -13,37 +13,33 @@ depends=(
   r
   r-broom
   r-caret
-  r-clisymbols
   r-complexheatmap
-  r-crayon
+  r-dbscan
+  r-deseq2
   r-dplyr
-  r-e1071
-  r-ggcorrplot
   r-ggplot2
-  r-ggraph
   r-ggrepel
   r-glasso
   r-glmnet
   r-impute
-  r-knitr
   r-limma
   r-magrittr
   r-mixomics
-  r-msnbase
-  r-patchwork
-  r-qpdf
   r-randomforest
   r-rankprod
   r-rmarkdown
+  r-summarizedexperiment
   r-tibble
   r-tidyr
+  r-uwot
   r-vegan
-  r-summarizedexperiment
 )
 optdepends=(
-  r-biobase
   r-biocstyle
   r-covr
+  r-ggraph
+  r-knitr
+  r-patchwork
   r-plotly
   r-testthat
   r-tidyverse

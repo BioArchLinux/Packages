@@ -11,16 +11,25 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-biocgenerics
   r-dplyr
+  r-genomeinfodb
+  r-genomicalignments
+  r-genomicranges
   r-ggplot2
+  r-iranges
   r-magrittr
+  r-plyranges
   r-quantmod
   r-rlang
   r-rsamtools
   r-stringr
+  r-tibble
 )
 optdepends=(
   r-biocstyle
+  r-bsgenome.hsapiens.ucsc.hg19
+  r-bsgenome.hsapiens.ucsc.hg38
   r-devtools
   r-ggpubr
   r-knitr

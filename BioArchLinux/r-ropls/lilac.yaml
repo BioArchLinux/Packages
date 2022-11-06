@@ -4,8 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
-- r-multidataset
+- r-ggplot2
 - r-multiassayexperiment
+- r-multidataset
+- r-plotly
 - r-summarizedexperiment
 update_on:
 - regex: ropls_([\d._-]+).tar.gz

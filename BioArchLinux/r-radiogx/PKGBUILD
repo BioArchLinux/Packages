@@ -13,9 +13,11 @@ depends=(
   r
   r-assertthat
   r-biobase
+  r-biocgenerics
   r-biocparallel
   r-catools
   r-coregx
+  r-data.table
   r-downloader
   r-magicaxis
   r-matrixstats

@@ -4,13 +4,13 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-decoupler
 - r-dplyr
 - r-ggplot2
 - r-ggrepel
 - r-gridextra
-- r-tidyr
-- r-decoupler
 - r-reshape2
+- r-tidyr
 update_on:
 - regex: progeny_([\d._-]+).tar.gz
   source: regex

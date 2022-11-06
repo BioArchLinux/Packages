@@ -37,6 +37,7 @@ optdepends=(
   r-annotationdbi
   r-covr
   r-knitr
+  r-markdown
   r-rmarkdown
   r-rtracklayer
   r-testthat
