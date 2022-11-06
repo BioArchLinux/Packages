@@ -22,3 +22,4 @@ update_on:
   source: regex
   url: https://bioconductor.org/packages/rtracklayer
 - alias: r
+- alias: libssl
