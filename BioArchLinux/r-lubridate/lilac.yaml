@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-cpp11
 - r-generics
+- r-timechange
 update_on:
 - regex: lubridate_([\d._-]+).tar.gz
   source: regex
