@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=decoupleR
-_pkgver=2.2.2
+_pkgver=2.4.0
 pkgname=r-${_pkgname,,}
-pkgver=2.2.2
-pkgrel=4
+pkgver=2.4.0
+pkgrel=1
 pkgdesc='decoupleR: Inferring biological activities from omics data using a collection of methods'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -48,7 +48,7 @@ optdepends=(
   r-viper
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('354d165e9c6f0bf5211966242c63a797117ed2a78867f44b54a8f335b8473c60')
+sha256sums=('b141afd331449b0b1c2dc3dc3097465c2c02b5026129d8f06dd5bfb445bce2a0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
