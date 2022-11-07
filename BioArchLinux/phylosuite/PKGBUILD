@@ -3,7 +3,7 @@
 
 pkgname=phylosuite
 pkgver=1.2.2
-pkgrel=6
+pkgrel=7
 pkgdesc="an integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies. https://doi.org/10.1111/1755-0998.13096"
 arch=('x86_64')
 url="https://github.com/dongzhang0725/PhyloSuite"
