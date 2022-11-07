@@ -16,6 +16,7 @@ depends=(
   r-c50
   r-clusterprofiler
   r-dbi
+  r-dose
   r-dplyr
   r-gdata
   r-ggplot2
@@ -34,7 +35,6 @@ depends=(
 optdepends=(
   r-annotationdbi
   r-biomart
-  r-dose
   r-energy
   r-knitr
   r-org.hs.eg.db

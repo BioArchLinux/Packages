@@ -8,19 +8,19 @@ repo_depends:
 - r-biocparallel
 - r-catools
 - r-checkmate
+- r-coop
 - r-coregx
 - r-data.table
 - r-downloader
 - r-ggplot2
-- r-glue
 - r-jsonlite
 - r-magicaxis
 - r-multiassayexperiment
 - r-rcolorbrewer
+- r-rcpp
 - r-reshape2
 - r-s4vectors
 - r-summarizedexperiment
-- r-coop
 update_on:
 - regex: PharmacoGx_([\d._-]+).tar.gz
   source: regex

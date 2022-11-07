@@ -5,17 +5,16 @@ maintainers:
 repo_depends:
 - r-clusterprofiler
 - r-corpcor
+- r-doparallel
 - r-dose
+- r-foreach
 - r-igraph
 - r-linkcomm
 - r-mcl
 - r-org.hs.eg.db
 - r-rcpp
 - r-reactomepa
-- r-varhandle
 - r-sponge
-- r-foreach
-- r-doparallel
 update_on:
 - regex: miRspongeR_([\d._-]+).tar.gz
   source: regex

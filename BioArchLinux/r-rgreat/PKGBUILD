@@ -11,17 +11,41 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-annotationdbi
+  r-circlize
+  r-digest
+  r-doparallel
+  r-dt
+  r-foreach
+  r-genomeinfodb
+  r-genomicfeatures
   r-genomicranges
   r-getoptlong
+  r-globaloptions
+  r-go.db
   r-iranges
+  r-org.hs.eg.db
+  r-progress
+  r-rcolorbrewer
+  r-rcpp
   r-rcurl
   r-rjson
+  r-s4vectors
+  r-shiny
+  r-txdb.hsapiens.ucsc.hg19.knowngene
+  r-txdb.hsapiens.ucsc.hg38.knowngene
 )
 optdepends=(
-  r-circlize
+  r-biocmanager
+  r-biomartgogenesets
+  r-keggrest
   r-knitr
+  r-msigdbr
+  r-org.mm.eg.db
+  r-reactome.db
   r-rmarkdown
   r-testthat
+  r-uniprotkeywords
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('7e2ac85193d58b2080878160ac5ee1f25d3c0df9382dee7a2dae46595116a75f')

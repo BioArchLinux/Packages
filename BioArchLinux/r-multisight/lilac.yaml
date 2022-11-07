@@ -13,6 +13,7 @@ repo_depends:
 - r-dt
 - r-easypubmed
 - r-enrichplot
+- r-ggnewscale
 - r-golem
 - r-htmltools
 - r-igraph
@@ -28,7 +29,6 @@ repo_depends:
 - r-shiny
 - r-shinydashboard
 - r-stringr
-- r-ggnewscale
 update_on:
 - regex: multiSight_([\d._-]+).tar.gz
   source: regex

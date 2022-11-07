@@ -50,10 +50,12 @@ depends=(
   r-xml2
 )
 optdepends=(
+  r-annotationhub
   r-biocstyle
   r-covr
   r-data.table
   r-dt
+  r-experimenthub
   r-genomicinteractions
   r-knitr
   r-r.utils

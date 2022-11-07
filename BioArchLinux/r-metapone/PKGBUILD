@@ -12,11 +12,12 @@ license=('Artistic2.0')
 depends=(
   r
   r-biocparallel
-  r-fields
-  r-markdown
   r-fdrtool
   r-fgsea
+  r-fields
+  r-ggplot2
   r-ggrepel
+  r-markdown
 )
 optdepends=(
   r-knitr

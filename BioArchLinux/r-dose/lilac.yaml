@@ -5,10 +5,10 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 - r-biocparallel
-- r-do.db
 - r-fgsea
 - r-ggplot2
 - r-gosemsim
+- r-hdo.db
 - r-qvalue
 - r-reshape2
 update_on:

@@ -11,14 +11,15 @@ arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
-  r
-  r-cpp11
-  r-generics
   gcc
+  r
+  r-generics
+  r-timechange
 )
 optdepends=(
   r-chron
   r-covr
+  r-data.table
   r-knitr
   r-rmarkdown
   r-testthat

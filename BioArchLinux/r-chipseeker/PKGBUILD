@@ -19,7 +19,6 @@ depends=(
   r-genomicfeatures
   r-genomicranges
   r-ggplot2
-  r-ggvenndiagram
   r-gplots
   r-gtools
   r-iranges
@@ -35,6 +34,7 @@ optdepends=(
   r-ggimage
   r-ggplotify
   r-ggupset
+  r-ggvenndiagram
   r-knitr
   r-org.hs.eg.db
   r-reactomepa

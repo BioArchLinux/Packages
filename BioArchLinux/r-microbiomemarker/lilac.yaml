@@ -7,6 +7,7 @@ repo_depends:
 - r-ancombc
 - r-biobase
 - r-biocgenerics
+- r-biocparallel
 - r-biomformat
 - r-biostrings
 - r-caret
@@ -26,12 +27,14 @@ repo_depends:
 - r-patchwork
 - r-phyloseq
 - r-plotroc
+- r-proc
 - r-purrr
 - r-rlang
 - r-s4vectors
 - r-tibble
 - r-tidyr
 - r-tidytree
+- r-vegan
 - r-yaml
 update_on:
 - regex: microbiomeMarker_([\d._-]+).tar.gz

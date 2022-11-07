@@ -13,15 +13,16 @@ depends=(
   r
   r-annotationdbi
   r-biocparallel
-  r-do.db
   r-fgsea
   r-ggplot2
   r-gosemsim
+  r-hdo.db
   r-qvalue
   r-reshape2
 )
 optdepends=(
   r-clusterprofiler
+  r-gson
   r-knitr
   r-org.hs.eg.db
   r-prettydoc

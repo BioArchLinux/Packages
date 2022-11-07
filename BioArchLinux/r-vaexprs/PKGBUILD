@@ -14,7 +14,6 @@ depends=(
   r-catencoders
   r-deeppincs
   r-diagrammer
-  r-graddescent
   r-keras
   r-mclust
   r-purrr

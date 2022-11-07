@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-biocneighbors
   r-biocparallel
   r-data.table
   r-singlecellexperiment

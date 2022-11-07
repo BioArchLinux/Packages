@@ -12,8 +12,10 @@ license=('CeCILL')
 depends=(
   r
   r-biobase
-  r-multidataset
+  r-ggplot2
   r-multiassayexperiment
+  r-multidataset
+  r-plotly
   r-summarizedexperiment
 )
 optdepends=(

@@ -3,8 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-annotationhub
 - r-delayedarray
 - r-dplyr
+- r-experimenthub
 - r-genomicranges
 - r-ggplot2
 - r-ggpubr
@@ -15,13 +17,13 @@ repo_depends:
 - r-readr
 - r-rlang
 - r-s4vectors
+- r-sesame
 - r-sesamedata
 - r-sfsmisc
 - r-stringr
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
-- r-sesame
 update_on:
 - regex: MethReg_([\d._-]+).tar.gz
   source: regex

@@ -17,7 +17,6 @@ depends=(
   r-bsgenome
   r-genomeinfodb
   r-genomicranges
-  r-grimport
   r-gviz
   r-iranges
   r-matrixstats

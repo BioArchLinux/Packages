@@ -4,7 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-biocbaseutils
 - r-biocgenerics
+- r-delayedarray
 - r-genomicranges
 - r-iranges
 - r-s4vectors

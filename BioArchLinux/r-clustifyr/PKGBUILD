@@ -40,6 +40,7 @@ optdepends=(
   r-purrr
   r-remotes
   r-rmarkdown
+  r-seurat
   r-shiny
   r-testthat
 )

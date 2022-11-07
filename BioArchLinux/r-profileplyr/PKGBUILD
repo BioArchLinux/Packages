@@ -13,7 +13,6 @@ depends=(
   r
   r-biocgenerics
   r-biocparallel
-  r-cairo
   r-chipseeker
   r-circlize
   r-complexheatmap
@@ -46,6 +45,7 @@ depends=(
 )
 optdepends=(
   r-biocstyle
+  r-cairo
   r-knitr
   r-png
   r-rmarkdown

@@ -12,12 +12,11 @@ license=('Artistic2.0')
 depends=(
   r
   r-biocfilecache
-  r-cgdsr
+  r-cbioportaldata
   r-genefilter
   r-gplots
   r-openxlsx
   r-rcolorbrewer
-  r-cbioportaldata
 )
 optdepends=(
   r-biocstyle

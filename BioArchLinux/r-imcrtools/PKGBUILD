@@ -17,6 +17,7 @@ depends=(
   r-concaveman
   r-cytomapper
   r-data.table
+  r-distances
   r-dplyr
   r-dt
   r-ebimage
@@ -24,6 +25,7 @@ depends=(
   r-ggraph
   r-igraph
   r-magrittr
+  r-matrixgenerics
   r-pheatmap
   r-readr
   r-rtriangle
@@ -35,6 +37,7 @@ depends=(
   r-stringr
   r-summarizedexperiment
   r-tidygraph
+  r-tidyselect
   r-viridis
   r-vroom
 )
@@ -46,7 +49,6 @@ optdepends=(
   r-markdown
   r-rmarkdown
   r-testthat
-  r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('dc7d7dc805ad18d23fce68c5fd60fe036343af2b89b254893a5d1093ea554fa8')

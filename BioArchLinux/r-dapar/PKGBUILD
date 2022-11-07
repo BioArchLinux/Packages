@@ -11,13 +11,19 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-biobase
+  r-dapardata
+  r-foreach
+  r-highcharter
+  r-msnbase
+)
+optdepends=(
   r-annotationdbi
   r-apcluster
-  r-biobase
-  r-cairo
+  r-biocstyle
+  r-cluster
   r-clusterprofiler
   r-cp4p
-  r-dapardata
   r-dendextend
   r-diptest
   r-doparallel
@@ -25,44 +31,40 @@ depends=(
   r-factoextra
   r-factominer
   r-forcats
-  r-foreach
   r-ggplot2
   r-gplots
   r-graph
-  r-highcharter
+  r-graphics
+  r-grdevices
   r-igraph
   r-imp4p
   r-impute
   r-knitr
   r-limma
   r-lme4
+  r-matrix
+  r-methods
   r-mfuzz
-  r-msnbase
   r-multcomp
   r-norm
   r-openxlsx
-  r-pcamethods
-  r-png
+  r-org.sc.sgd.db
+  r-parallel
   r-preprocesscore
   r-purrr
   r-rcolorbrewer
   r-readxl
   r-reshape2
   r-scales
-  r-siggenes
+  r-stats
   r-stringr
+  r-testthat
   r-tibble
   r-tidyr
   r-tidyverse
-  r-tmvtnorm
   r-vioplot
   r-visnetwork
   r-vsn
-)
-optdepends=(
-  r-biocgenerics
-  r-biocstyle
-  r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('7f28c77662ecbabeda7c8a5a50603a50fa283cd741bbd0306c659a230334f7fc')

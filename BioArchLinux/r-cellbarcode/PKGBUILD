@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-bh
   r-biostrings
   r-ckmeans.1d.dp
   r-data.table
@@ -20,8 +21,10 @@ depends=(
   r-plyr
   r-rcpp
   r-s4vectors
+  r-seqinr
   r-shortread
   r-stringr
+  r-zlibbioc
 )
 optdepends=(
   r-biocstyle

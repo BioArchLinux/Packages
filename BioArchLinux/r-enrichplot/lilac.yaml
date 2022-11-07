@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-aplot
 - r-dose
+- r-ggnewscale
 - r-ggplot2
 - r-ggraph
 - r-ggtree
@@ -15,6 +16,7 @@ repo_depends:
 - r-purrr
 - r-rcolorbrewer
 - r-reshape2
+- r-rlang
 - r-scatterpie
 - r-shadowtext
 - r-yulab.utils

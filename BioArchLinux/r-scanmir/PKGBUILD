@@ -13,17 +13,15 @@ depends=(
   r
   r-biocparallel
   r-biostrings
+  r-cowplot
   r-data.table
   r-genomeinfodb
   r-genomicranges
   r-ggplot2
-  r-gridextra
+  r-ggseqlogo
   r-iranges
   r-s4vectors
-  r-seqlogo
   r-stringi
-  r-ggseqlogo
-  r-cowplot
 )
 optdepends=(
   r-biocstyle

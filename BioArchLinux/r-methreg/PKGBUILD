@@ -11,8 +11,10 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-annotationhub
   r-delayedarray
   r-dplyr
+  r-experimenthub
   r-genomicranges
   r-ggplot2
   r-ggpubr
@@ -23,13 +25,13 @@ depends=(
   r-readr
   r-rlang
   r-s4vectors
+  r-sesame
   r-sesamedata
   r-sfsmisc
   r-stringr
   r-summarizedexperiment
   r-tibble
   r-tidyr
-  r-sesame
 )
 optdepends=(
   r-biocfilecache
@@ -41,7 +43,7 @@ optdepends=(
   r-dorothea
   r-downloader
   r-htmltools
-  r-jaspar2020
+  r-jaspar2022
   r-jpeg
   r-knitr
   r-matrixstats

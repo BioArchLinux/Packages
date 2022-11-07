@@ -6,10 +6,11 @@ repo_depends:
 - r-amap
 - r-circlize
 - r-ggplot2
-- r-msnbase
+- r-mscoreutils
 - r-s4vectors
 - r-scales
 - r-shiny
+- r-spectra
 update_on:
 - regex: MetCirc_([\d._-]+).tar.gz
   source: regex

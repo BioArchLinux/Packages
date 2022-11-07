@@ -5,9 +5,9 @@ maintainers:
 repo_depends:
 - r-ggplot2
 - r-multiassayexperiment
+- r-pcamethods
 - r-plotrix
 - r-ropls
-- r-pcamethods
 update_on:
 - regex: MultiBaC_([\d._-]+).tar.gz
   source: regex

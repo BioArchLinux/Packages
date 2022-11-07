@@ -14,12 +14,14 @@ depends=(
   r-biocparallel
   r-limma
   r-lme4
+  r-multiassayexperiment
   r-purrr
   r-qfeatures
   r-summarizedexperiment
 )
 optdepends=(
   r-biocstyle
+  r-covr
   r-gridextra
   r-knitr
   r-matrixstats

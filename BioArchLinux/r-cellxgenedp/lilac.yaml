@@ -3,12 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-cpp11
 - r-curl
 - r-dplyr
 - r-dt
 - r-httr
 - r-jsonlite
+- r-rjsoncons
 - r-shiny
 update_on:
 - regex: cellxgenedp_([\d._-]+).tar.gz

@@ -3,19 +3,19 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- clustal-omega
 - r-biocparallel
 - r-biostrings
 - r-cbioportaldata
-- r-cgdsr
 - r-data.table
 - r-gridbase
 - r-httr
 - r-lowmacaannotation
 - r-motifstack
+- r-plyr
 - r-rcolorbrewer
 - r-reshape2
 - r-stringr
-- clustal-omega
 update_on:
 - regex: LowMACA_([\d._-]+).tar.gz
   source: regex

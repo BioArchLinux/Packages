@@ -13,17 +13,16 @@ depends=(
   r
   r-clusterprofiler
   r-corpcor
+  r-doparallel
   r-dose
+  r-foreach
   r-igraph
   r-linkcomm
   r-mcl
   r-org.hs.eg.db
   r-rcpp
   r-reactomepa
-  r-varhandle
   r-sponge
-  r-foreach
-  r-doparallel
 )
 optdepends=(
   r-biocstyle

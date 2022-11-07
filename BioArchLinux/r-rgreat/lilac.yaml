@@ -3,11 +3,29 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-annotationdbi
+- r-circlize
+- r-digest
+- r-doparallel
+- r-dt
+- r-foreach
+- r-genomeinfodb
+- r-genomicfeatures
 - r-genomicranges
 - r-getoptlong
+- r-globaloptions
+- r-go.db
 - r-iranges
+- r-org.hs.eg.db
+- r-progress
+- r-rcolorbrewer
+- r-rcpp
 - r-rcurl
 - r-rjson
+- r-s4vectors
+- r-shiny
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-txdb.hsapiens.ucsc.hg38.knowngene
 update_on:
 - regex: rGREAT_([\d._-]+).tar.gz
   source: regex

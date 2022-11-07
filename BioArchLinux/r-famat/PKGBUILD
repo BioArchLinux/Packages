@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-biasedurn
   r-clusterprofiler
   r-dplyr
   r-dt
@@ -18,7 +19,6 @@ depends=(
   r-gprofiler2
   r-keggrest
   r-magrittr
-  r-mpinet
   r-ontologyindex
   r-org.hs.eg.db
   r-plotly

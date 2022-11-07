@@ -18,6 +18,7 @@ depends=(
   r-ggplot2
   r-hdf5array
   r-matrixstats
+  r-nnls
   r-raster
   r-rcolorbrewer
   r-rhdf5
@@ -25,11 +26,11 @@ depends=(
   r-shiny
   r-shinydashboard
   r-singlecellexperiment
+  r-spatialexperiment
   r-summarizedexperiment
   r-svglite
   r-svgpanzoom
   r-viridis
-  r-nnls
 )
 optdepends=(
   r-biocstyle

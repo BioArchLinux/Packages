@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-biocparallel
+- r-bsgenome
 - r-data.table
 - r-dplyr
 - r-genomeinfodb
@@ -19,7 +20,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 - r-xgboost
-- r-bsgenome
 update_on:
 - regex: bambu_([\d._-]+).tar.gz
   source: regex

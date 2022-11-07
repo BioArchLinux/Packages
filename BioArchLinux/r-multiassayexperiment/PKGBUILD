@@ -12,7 +12,9 @@ license=('Artistic2.0')
 depends=(
   r
   r-biobase
+  r-biocbaseutils
   r-biocgenerics
+  r-delayedarray
   r-genomicranges
   r-iranges
   r-s4vectors

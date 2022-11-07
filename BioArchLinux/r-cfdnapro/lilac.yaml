@@ -3,13 +3,20 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocgenerics
 - r-dplyr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
 - r-ggplot2
+- r-iranges
 - r-magrittr
+- r-plyranges
 - r-quantmod
 - r-rlang
 - r-rsamtools
 - r-stringr
+- r-tibble
 update_on:
 - regex: cfDNAPro_([\d._-]+).tar.gz
   source: regex

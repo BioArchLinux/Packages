@@ -38,6 +38,7 @@ optdepends=(
   r-htmltools
   r-httr
   r-knitr
+  r-motifstack
   r-org.hs.eg.db
   r-rmarkdown
   r-runit

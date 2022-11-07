@@ -11,13 +11,17 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-bestnormalize
   r-data.table
+  r-depmixs4
   r-dplyr
   r-genomicranges
   r-ggplot2
   r-matrixgenerics
+  r-naniar
   r-purrr
   r-scales
+  r-stringr
   r-variantannotation
 )
 optdepends=(

@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocparallel
+- r-distinct
 - r-dplyr
 - r-ecume
 - r-igraph
@@ -15,7 +16,6 @@ repo_depends:
 - r-slingshot
 - r-summarizedexperiment
 - r-trajectoryutils
-- r-distinct
 update_on:
 - regex: condiments_([\d._-]+).tar.gz
   source: regex

@@ -13,23 +13,20 @@ depends=(
   r
   r-biocparallel
   r-circlize
-  r-complexheatmap
   r-data.table
   r-deseq2
   r-edger
   r-openxlsx
-  r-randomcolor
+  r-pheatmap
   r-s4vectors
-  r-seriation
+  r-sechm
   r-summarizedexperiment
   r-sva
-  r-sechm
 )
 optdepends=(
   r-biocstyle
   r-ggplot2
   r-knitr
-  r-pheatmap
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

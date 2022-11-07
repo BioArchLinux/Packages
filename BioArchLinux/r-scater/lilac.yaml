@@ -12,17 +12,20 @@ repo_depends:
 - r-delayedmatrixstats
 - r-ggbeeswarm
 - r-ggplot2
+- r-ggrastr
 - r-ggrepel
 - r-gridextra
+- r-pheatmap
 - r-rcolorbrewer
+- r-rcppml
 - r-rlang
 - r-rtsne
 - r-s4vectors
 - r-scuttle
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-uwot
 - r-viridis
-- r-rcppml
 update_on:
 - regex: scater_([\d._-]+).tar.gz
   source: regex

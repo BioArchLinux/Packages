@@ -17,6 +17,7 @@ depends=(
   r-genomeinfodb
   r-genomicranges
   r-iranges
+  r-rcolorbrewer
   r-rcpproll
   r-rocr
   r-rtracklayer
@@ -24,7 +25,7 @@ depends=(
 )
 optdepends=(
   r-biocgenerics
-  r-bsgenome.dmelanogaster.ucsc.dm3
+  r-bsgenome.dmelanogaster.ucsc.dm6
   r-knitr
   r-runit
 )

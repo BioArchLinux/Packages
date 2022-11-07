@@ -11,21 +11,23 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-dplyr
+  r-genomeinfodb
   r-genomicranges
   r-ggforce
   r-ggplot2
+  r-gviz
   r-matrixstats
+  r-plyr
   r-rtracklayer
   r-s4vectors
+  r-tibble
   r-tidyr
-  r-plyr
 )
 optdepends=(
   r-biocstyle
   r-complexheatmap
-  r-dplyr
   r-forcats
-  r-genomeinfodb
   r-genomicalignments
   r-knitr
   r-rmarkdown

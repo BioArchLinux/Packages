@@ -7,15 +7,18 @@ repo_depends:
 - r-dplyr
 - r-ggalluvial
 - r-ggplot2
+- r-ggraph
 - r-igraph
 - r-plyr
 - r-powertcr
 - r-reshape2
 - r-rlang
 - r-seuratobject
+- r-singlecellexperiment
 - r-stringdist
 - r-stringr
 - r-summarizedexperiment
+- r-tidygraph
 - r-vegan
 update_on:
 - regex: scRepertoire_([\d._-]+).tar.gz

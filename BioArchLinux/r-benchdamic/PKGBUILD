@@ -14,13 +14,14 @@ depends=(
   r-aldex2
   r-ancombc
   r-biocparallel
+  r-corncob
   r-cowplot
   r-dearseq
   r-deseq2
   r-edger
-  r-ffpe
   r-ggdendro
   r-ggplot2
+  r-ggridges
   r-limma
   r-mast
   r-metagenomeseq
@@ -38,10 +39,10 @@ depends=(
 )
 optdepends=(
   r-biocstyle
-  r-curatedmetagenomicdata
-  r-hmp16sdata
+  r-kableextra
   r-knitr
   r-rmarkdown
+  r-spsimseq
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

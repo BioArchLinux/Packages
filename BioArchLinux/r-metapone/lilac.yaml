@@ -4,11 +4,12 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocparallel
-- r-fields
-- r-markdown
 - r-fdrtool
 - r-fgsea
+- r-fields
+- r-ggplot2
 - r-ggrepel
+- r-markdown
 update_on:
 - regex: metapone_([\d._-]+).tar.gz
   source: regex

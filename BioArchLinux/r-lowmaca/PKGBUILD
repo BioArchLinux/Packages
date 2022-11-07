@@ -11,24 +11,24 @@ arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
+  clustal-omega
+  ghostscript
+  perl
+  perl-lwp-protocol-https
+  perl-xml-simple
   r
   r-biocparallel
   r-biostrings
   r-cbioportaldata
-  r-cgdsr
   r-data.table
   r-gridbase
   r-httr
   r-lowmacaannotation
   r-motifstack
+  r-plyr
   r-rcolorbrewer
   r-reshape2
   r-stringr
-  ghostscript
-  perl
-  perl-lwp-protocol-https
-  perl-xml-simple
-  clustal-omega
 )
 optdepends=(
   r-biocstyle

@@ -27,12 +27,14 @@ depends=(
   r-xml2
 )
 optdepends=(
+  r-annotationhub
   r-biocfilecache
   r-biocstyle
   r-complexheatmap
   r-curatedtcgadata
   r-devtools
   r-dplyr
+  r-httr
   r-illuminahumanmethylation450kanno.ilmn12.hg19
   r-impute
   r-knitr

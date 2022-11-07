@@ -17,7 +17,6 @@ depends=(
 optdepends=(
   r-knitr
   r-plotly
-  r-ranks
   r-rmarkdown
   r-summarizedexperiment
   r-wgcna

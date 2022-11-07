@@ -4,12 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocfilecache
-- r-cgdsr
+- r-cbioportaldata
 - r-genefilter
 - r-gplots
 - r-openxlsx
 - r-rcolorbrewer
-- r-cbioportaldata
 update_on:
 - regex: cbaf_([\d._-]+).tar.gz
   source: regex

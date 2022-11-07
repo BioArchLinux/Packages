@@ -13,6 +13,7 @@ depends=(
   r
   r-aplot
   r-dose
+  r-ggnewscale
   r-ggplot2
   r-ggraph
   r-ggtree
@@ -23,6 +24,7 @@ depends=(
   r-purrr
   r-rcolorbrewer
   r-reshape2
+  r-rlang
   r-scatterpie
   r-shadowtext
   r-yulab.utils
@@ -33,7 +35,6 @@ optdepends=(
   r-dplyr
   r-europepmc
   r-ggforce
-  r-ggnewscale
   r-ggplotify
   r-ggrepel
   r-ggridges
@@ -48,6 +49,7 @@ optdepends=(
   r-rmarkdown
   r-scales
   r-tibble
+  r-tidydr
   r-tidyr
   r-tidytree
   r-treeio

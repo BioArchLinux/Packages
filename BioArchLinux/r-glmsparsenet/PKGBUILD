@@ -12,19 +12,18 @@ license=('GPL')
 depends=(
   r
   r-biomart
+  r-digest
   r-dplyr
   r-forcats
   r-futile.logger
+  r-futile.options
   r-ggplot2
   r-glmnet
   r-glue
   r-httr
-  r-loose.rock
   r-multiassayexperiment
   r-readr
   r-reshape2
-  r-sparsebn
-  r-sparsebnutils
   r-stringr
   r-summarizedexperiment
   r-survminer

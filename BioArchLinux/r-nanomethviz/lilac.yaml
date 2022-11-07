@@ -15,11 +15,12 @@ repo_depends:
 - r-fs
 - r-genomicranges
 - r-ggplot2
-- r-ggthemes
+- r-ggrastr
 - r-glue
 - r-limma
 - r-patchwork
 - r-purrr
+- r-r.utils
 - r-rcpp
 - r-readr
 - r-rlang

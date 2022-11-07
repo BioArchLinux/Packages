@@ -27,6 +27,7 @@ depends=(
   r-gseabase
   r-hdf5array
   r-magrittr
+  r-org.hs.eg.db
   r-qvalue
   r-rcpp
   r-reactome.db
@@ -36,13 +37,13 @@ depends=(
   r-rsqlite
   r-scales
   r-summarizedexperiment
+  r-tibble
   r-visnetwork
 )
 optdepends=(
   r-biocstyle
   r-dt
   r-knitr
-  r-org.hs.eg.db
   r-rmarkdown
   r-signaturesearchdata
   r-testthat

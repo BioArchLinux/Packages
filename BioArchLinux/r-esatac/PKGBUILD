@@ -11,6 +11,7 @@ arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
+  gcc
   r
   r-annotationdbi
   r-biocgenerics
@@ -22,6 +23,7 @@ depends=(
   r-corrplot
   r-digest
   r-genomeinfodb
+  r-genomicalignments
   r-genomicfeatures
   r-genomicranges
   r-ggplot2
@@ -43,7 +45,6 @@ depends=(
   r-shortread
   r-tfbstools
   r-venndiagram
-  gcc
 )
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg19

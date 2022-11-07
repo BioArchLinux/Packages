@@ -14,18 +14,17 @@ depends=(
   r-amap
   r-circlize
   r-ggplot2
-  r-msnbase
+  r-mscoreutils
   r-s4vectors
   r-scales
   r-shiny
+  r-spectra
 )
 optdepends=(
   r-biocgenerics
   r-graphics
   r-grdevices
   r-knitr
-  r-methods
-  r-stats
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

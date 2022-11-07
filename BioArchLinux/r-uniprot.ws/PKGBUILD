@@ -12,15 +12,15 @@ license=('Artistic2.0')
 depends=(
   r
   r-annotationdbi
+  r-biocbaseutils
   r-biocfilecache
   r-biocgenerics
-  r-rappdirs
-  r-rcurl
-  r-rsqlite
   r-httpcache
-  r-cellxgenedp
+  r-httr
+  r-jsonlite
   r-progress
-
+  r-rjsoncons
+  r-rsqlite
 )
 optdepends=(
   r-biocstyle

@@ -5,7 +5,9 @@ maintainers:
 repo_depends:
 - r-dplyr
 - r-keggrest
+- r-purrr
 - r-rcy3
+- r-tibble
 update_on:
 - regex: transomics2cytoscape_([\d._-]+).tar.gz
   source: regex

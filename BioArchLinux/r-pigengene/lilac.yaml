@@ -8,6 +8,7 @@ repo_depends:
 - r-c50
 - r-clusterprofiler
 - r-dbi
+- r-dose
 - r-dplyr
 - r-gdata
 - r-ggplot2

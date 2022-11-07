@@ -38,6 +38,7 @@ optdepends=(
   r-rmarkdown
   r-roxygen2
   r-testthat
+  r-tidyr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('06b0adc3cfc81b2a0151e39692be4f9aa9b351ef1c90f1895f19b9b7dfb44a52')

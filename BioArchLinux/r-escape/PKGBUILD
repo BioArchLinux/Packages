@@ -12,25 +12,28 @@ license=('Apache')
 depends=(
   r
   r-biocparallel
+  r-broom
+  r-data.table
   r-dplyr
   r-ggplot2
   r-ggridges
   r-gseabase
   r-gsva
-  r-limma
+  r-matrixgenerics
   r-msigdbr
-  r-singlecellexperiment
-  r-broom
-  r-reshape2
   r-patchwork
+  r-reshape2
+  r-rlang
+  r-singlecellexperiment
   r-stringr
-  r-data.table
+  r-summarizedexperiment
   r-ucell
 )
 optdepends=(
   r-biocstyle
   r-dittoseq
   r-knitr
+  r-markdown
   r-rmarkdown
   r-seurat
   r-seuratobject

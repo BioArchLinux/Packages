@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- python2
 - r-ballgown
 - r-biostrings
 - r-clusterprofiler
@@ -26,7 +27,6 @@ repo_depends:
 - r-stringr
 - r-systempiper
 - r-systempiperdata
-- python2
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

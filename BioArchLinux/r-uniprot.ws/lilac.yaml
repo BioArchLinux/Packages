@@ -4,14 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-biocbaseutils
 - r-biocfilecache
 - r-biocgenerics
-- r-rappdirs
-- r-rcurl
-- r-rsqlite
 - r-httpcache
-- r-cellxgenedp
+- r-httr
+- r-jsonlite
 - r-progress
+- r-rjsoncons
+- r-rsqlite
 update_on:
 - regex: UniProt.ws_([\d._-]+).tar.gz
   source: regex

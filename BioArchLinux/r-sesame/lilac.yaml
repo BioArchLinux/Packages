@@ -3,18 +3,16 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocfilecache
 - r-biocparallel
-- r-dnacopy
-- r-e1071
-- r-fgsea
+- r-dplyr
+- r-genomeinfodb
 - r-genomicranges
 - r-ggplot2
-- r-ggrepel
 - r-illuminaio
 - r-iranges
-- r-matrixstats
 - r-preprocesscore
-- r-randomforest
+- r-readr
 - r-reshape2
 - r-s4vectors
 - r-sesamedata

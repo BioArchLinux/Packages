@@ -8,6 +8,7 @@ repo_depends:
 - r-biobase
 - r-ccapp
 - r-curl
+- r-data.table
 - r-deseq2
 - r-fgsea
 - r-geoquery

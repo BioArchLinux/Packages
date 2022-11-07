@@ -6,7 +6,6 @@ repo_depends:
 - r-algdesign
 - r-annotationdbi
 - r-biobase
-- r-cgdsr
 - r-clusterprofiler
 - r-diagrammer
 - r-dose
@@ -15,10 +14,13 @@ repo_depends:
 - r-genetclassifier
 - r-go.db
 - r-htmlwidgets
+- r-httr
 - r-import
 - r-org.bt.eg.db
 - r-org.hs.eg.db
 - r-plyr
+- r-r.methodss3
+- r-r.oo
 - r-radiant.data
 - r-reactome.db
 - r-reactomepa

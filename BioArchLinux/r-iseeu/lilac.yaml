@@ -8,6 +8,7 @@ repo_depends:
 - r-ggplot2
 - r-iranges
 - r-isee
+- r-iseehex
 - r-s4vectors
 - r-shiny
 - r-shinyace

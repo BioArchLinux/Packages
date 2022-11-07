@@ -19,11 +19,10 @@ repo_depends:
 - r-rbgl
 - r-readr
 - r-rlang
+- r-rorcid
 - r-rvest
 - r-stringr
 - r-tibble
-- r-tidyr
-- r-tidyselect
 - r-xml2
 update_on:
 - regex: BiocPkgTools_([\d._-]+).tar.gz
