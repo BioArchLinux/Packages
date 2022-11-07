@@ -13,6 +13,7 @@ update_on:
   - alias: alpm-lilac
     alpm: seqlib
     strip_release: true
+  - alias: libssl
 repo_depends:
   - htslib
   - seqlib

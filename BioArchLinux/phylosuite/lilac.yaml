@@ -6,3 +6,4 @@ update_on:
   - source: github
     github: dongzhang0725/PhyloSuite
     use_latest_release: true
+  - alias: libcrypto
