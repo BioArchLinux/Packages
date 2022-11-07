@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+  update_aur_repo()
+repo_depends:
+  - r-annotationdbi
+update_on:
+  - regex: HDO.db_([\d._-]+).tar.gz
+    source: regex
+    url: https://bioconductor.org/packages/HDO.db
