@@ -2,7 +2,7 @@
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
 pkgname=bpp
-pkgver=4.6.1
+pkgver=4.6.2
 pkgrel=1
 pkgdesc="High-performance Bayesian phylogenetics and phylogeography. https://doi.org/10.1093/sysbio/syw119"
 arch=('x86_64')
@@ -11,7 +11,7 @@ license=('Affero')
 source=("${url}/archive/refs/tags/v${pkgver}.tar.gz")
 depends=(glibc)
 
-sha256sums=('dfa4a0d2fcbbf7efc32224e1d29403ce37848e645661c4ac6034e465f6a7f87f')
+sha256sums=('4ce7b76811e8f1c199bc3e1d07b21db425c23d54fd08470a4accf3140a16edd6')
 
 build() {
   cd "${pkgname}-${pkgver}/src"
