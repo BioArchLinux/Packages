@@ -1,7 +1,7 @@
 # Maintainer: Ramiro Magno <ramiro dot magno at gmail.com>
 pkgname=shapeit4
 pkgver=4.2.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Segmented HAPlotype Estimation and Imputation Tools"
 arch=('i686' 'x86_64')
 url="https://odelaneau.github.io/shapeit4/"
