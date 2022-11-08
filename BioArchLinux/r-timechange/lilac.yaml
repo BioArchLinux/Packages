@@ -8,7 +8,9 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
 repo_depends:
+  - cctz
   - r-cpp11
+  - r-testthat
 update_on:
   - regex: timechange_([\d._-]+).tar.gz
     source: regex
