@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+repo_depends:
+  - r-dplyr
+  - r-forcats
+  - r-ggplot2
+  - r-glue
+  - r-magrittr
+  - r-norm
+  - r-purrr
+  - r-rlang
+  - r-tibble
+  - r-tidyr
+  - r-upsetr
+  - r-viridis
+  - r-visdat
+update_on:
+  - regex: naniar_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=naniar

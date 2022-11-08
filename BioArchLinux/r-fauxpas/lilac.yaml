@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+repo_depends:
+  - r-httpcode
+  - r-r6
+  - r-whisker
+update_on:
+  - regex: fauxpas_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=fauxpas
