@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomicRanges
-_pkgver=1.50.0
+_pkgver=1.50.1
 pkgname=r-${_pkgname,,}
-pkgver=1.50.0
+pkgver=1.50.1
 pkgrel=1
 pkgdesc='Representation and manipulation of genomic intervals'
 arch=('x86_64')
@@ -55,7 +55,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('315568f3aee7c2f161a533d7c0d826995483a093cd86ecd2aca7e9f0cc8ff991')
+sha256sums=('c62493a28b60f0e703eb2b849722c0f19d1577aab380340fbb13d5d4f6bea492')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
