@@ -1,9 +1,30 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it as below."
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Zhang"
+    given-names: "Guoyi"
+    orcid: "https://orcid.org/0000-0002-3426-9273"
+  - family-names: "Hu"
+    given-names: "Yujin"
+  - family-names: "Drobot"
+    given-names: "Viktor"
+  - family-names: "Staal"
+    given-names: "Jens"
+  - family-names: "Yi"
+    given-names: "Yun"
+  doi: "10.7490/F1000RESEARCH.1119039.1"
+  journal: "F1000 Research"
+  start: 809
+  end: 809
+  title: "BioArchLinux: bioinformatics community with Arch Linux"
+  volume: 11
+  year: 2022
 authors:
 - family-names: "Zhang"
   given-names: "Guoyi"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
+  orcid: "https://orcid.org/0000-0002-3426-9273"
 - family-names: "Hu"
   given-names: "Yujin"
 - family-names: "Drobot"
@@ -14,7 +35,4 @@ authors:
   given-names: "Yun"
 title: "BioArchLinux: bioinformatics community with Arch Linux"
 doi: 10.7490/F1000RESEARCH.1119039.1
-publisher: F1000 Research
-volume: 11
-pages: 809
 url: "https://github.com/BioArchLinux/Packages"
