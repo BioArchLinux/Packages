@@ -3,7 +3,7 @@
 _pkgname=visdat
 _pkgver=0.5.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.5.3
 pkgrel=1
 pkgdesc='Preliminary Visualisation of Data'
 arch=('any')
