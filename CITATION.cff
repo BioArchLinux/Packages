@@ -13,7 +13,6 @@ authors:
 - family-names: "Yi"
   given-names: "Yun"
 title: "BioArchLinux: bioinformatics community with Arch Linux"
-version: 2.0.4
 doi: 10.7490/F1000RESEARCH.1119039.1
 publisher: F1000 Research
 volume: 11
