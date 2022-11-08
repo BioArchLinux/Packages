@@ -19,7 +19,8 @@ preferred-citation:
   start: 809
   end: 809
   title: "BioArchLinux: bioinformatics community with Arch Linux"
-  volume: 11
+  volume: 2022
+  issue: 11
   year: 2022
 authors:
 - family-names: "Zhang"
