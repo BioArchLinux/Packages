@@ -3,7 +3,7 @@
 _pkgname=rorcid
 _pkgver=0.7.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.7.0
 pkgrel=1
 pkgdesc="Interface to the 'Orcid.org' API"
 arch=('any')
