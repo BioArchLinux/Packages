@@ -1,6 +1,6 @@
 pkgname=revbayes
 pkgver=1.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Bayesian Phylogenetic Inference Using Graphical Models and an Interactive Model-Specification Language https://doi.org/10.1093/sysbio/syw021"
 arch=(x86_64)
 url="https://github.com/revbayes/revbayes"
@@ -19,7 +19,8 @@ prepare() {
 
 build() {
   cd $srcdir/$pkgname
-  arch-meson build
+  CXXFLAGS="${CXXFLAGS} -std=c++14" arch-meson build \
+  --buildtype      release
   ninja -C build
 }
 
@@ -27,5 +28,3 @@ package() {
   cd $srcdir/$pkgname
   DESTDIR="${pkgdir}" ninja -C build install
 }
-
-
