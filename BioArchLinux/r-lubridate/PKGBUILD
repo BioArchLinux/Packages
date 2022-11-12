@@ -5,7 +5,7 @@ _pkgname=lubridate
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
 pkgver=1.8.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Make Dealing with Dates a Little Easier'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
