@@ -4,6 +4,9 @@ maintainers:
 repo_depends:
   - r-rcpp
   - r-rcppparallel
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
   - regex: lamW_([\d._-]+).tar.gz
     source: regex
