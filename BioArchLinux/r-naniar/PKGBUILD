@@ -3,7 +3,7 @@
 _pkgname=naniar
 _pkgver=0.6.1
 pkgname=r-${_pkgname,,}
-pkgver=0.6.1
+pkgver=${_pkgver//[:-]/.}
 pkgrel=1
 pkgdesc='Data Structures, Summaries, and Visualisations for Missing Data'
 arch=('any')

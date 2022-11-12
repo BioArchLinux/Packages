@@ -1,3 +1,4 @@
+# system requirements: A system with zoneinfo data (e.g./usr/share/zoneinfo) as well as a recent-enough C++11 compiler(such as g++-4.8 or later). On Windows the zoneinfo includedwith R is used.
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=timechange
@@ -9,32 +10,24 @@ pkgdesc='Efficient Manipulation of Date-Times'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
-depends=(cctz r)
-makedepends=(r-cpp11)
-checkdepends=(r-testthat)
-optdepends=(r-testthat r-knitr)
+depends=(
+  cctz
+  r
+  r-cpp11
+)
+optdepends=(
+  r-knitr
+  r-testthat
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('8503919d233d7d7b81fe47692f0f2d6742ff4cae7320a5522bf98f077f5d7f70')
 
-prepare() {
-  # build against system cctz
-  sed -i -e 's/$(SHLIB): libcctz.a/$(SHLIB):/' \
-      -e 's#PKG_CPPFLAGS= -I. -I./cctz/src/#PKG_CPPFLAGS= -I.#' \
-      "$_cranname/src/Makevars"
-}
-
 build() {
-  mkdir -p build
-  R CMD INSTALL "${_cranname}" -l "${srcdir}/build"
-}
-
-check() {
-  cd "${_cranname}/tests"
-  R_LIBS="${srcdir}/build" NOT_CRAN=true Rscript --vanilla testthat.R
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
-
-  cp -a --no-preserve=ownership "build/${_cranname}" "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
 }
+# vim:set ts=2 sw=2 et:
