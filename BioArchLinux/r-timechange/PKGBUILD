@@ -4,7 +4,7 @@
 _pkgname=timechange
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Efficient Manipulation of Date-Times'
 arch=('x86_64')
