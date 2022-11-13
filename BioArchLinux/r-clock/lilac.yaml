@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+repo_depends:
+  - r-cpp11
+  - r-rlang
+  - r-tzdb
+  - r-vctrs
+update_on:
+  - regex: clock_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=clock

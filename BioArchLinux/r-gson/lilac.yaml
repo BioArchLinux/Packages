@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-jsonlite
+  - r-rlang
+  - r-tidyr
+update_on:
+  - regex: gson_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=gson

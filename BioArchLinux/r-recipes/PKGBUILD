@@ -11,11 +11,14 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-cli
+  r-clock
   r-dplyr
   r-ellipsis
   r-generics
   r-glue
   r-gower
+  r-hardhat
   r-ipred
   r-lifecycle
   r-lubridate
@@ -28,13 +31,11 @@ depends=(
   r-timedate
   r-vctrs
   r-withr
-  r-hardhat
 )
 optdepends=(
   r-covr
   r-ddalpha
-  r-dimred
-  r-fastica
+  r-dials
   r-ggplot2
   r-igraph
   r-kernlab
@@ -47,6 +48,7 @@ optdepends=(
   r-rpart
   r-rsample
   r-rspectra
+  r-splines2
   r-testthat
   r-workflows
   r-xml2
