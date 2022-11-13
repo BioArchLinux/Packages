@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-ggplot2
+  - r-hexbin
+  - r-isee
+  - r-shiny
+  - r-summarizedexperiment
+update_on:
+  - regex: iSEEhex_([\d._-]+).tar.gz
+    source: regex
+    url: https://bioconductor.org/packages/iSEEhex

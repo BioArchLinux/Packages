@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-gbutils
+  - r-rdpack
+update_on:
+  - regex: cvar_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=cvar

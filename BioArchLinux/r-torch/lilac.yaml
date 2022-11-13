@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-bit64
+  - r-callr
+  - r-cli
+  - r-coro
+  - r-ellipsis
+  - r-magrittr
+  - r-r6
+  - r-rcpp
+  - r-rlang
+  - r-withr
+update_on:
+  - regex: torch_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=torch
