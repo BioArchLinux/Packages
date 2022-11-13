@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=recipes
-_pkgver=1.0.2
+_pkgver=1.0.3
 pkgname=r-${_pkgname,,}
-pkgver=1.0.2
-pkgrel=2
+pkgver=1.0.3
+pkgrel=1
 pkgdesc='Preprocessing and Feature Engineering Steps for Modeling'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -54,7 +54,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1a7b5a9a2946fa34599935b6d93101ec559d8a901d49cc691972c75df8d5670e')
+sha256sums=('0ffeab49b815e937ba581631641de1ed28df4332757ed3ff2cacb6226590275e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
