@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-cowplot
+  - r-dplyr
+  - r-forcats
+  - r-ggplot2
+  - r-gridextra
+  - r-magrittr
+  - r-purrr
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-survminer
+  - r-tibble
+  - r-tidyr
+  - r-tidytidbits
+update_on:
+  - regex: survivalAnalysis_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=survivalAnalysis

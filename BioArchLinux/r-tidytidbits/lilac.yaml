@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-dplyr
+  - r-extrafont
+  - r-forcats
+  - r-magrittr
+  - r-purrr
+  - r-rlang
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+update_on:
+  - regex: tidytidbits_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=tidytidbits
