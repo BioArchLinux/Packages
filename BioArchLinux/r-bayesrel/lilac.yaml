@@ -12,5 +12,5 @@ repo_depends:
 update_on:
   - regex: Bayesrel_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=Bayesrel
+    url: https://cran.r-project.org/src/contrib/Archive/Bayesrel/
   - alias: r

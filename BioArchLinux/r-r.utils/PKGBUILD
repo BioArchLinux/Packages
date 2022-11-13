@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=R.utils
-_pkgver=2.12.1
+_pkgver=2.12.2
 pkgname=r-${_pkgname,,}
-pkgver=2.12.1
+pkgver=2.12.2
 pkgrel=1
 pkgdesc='Various Programming Utilities'
 arch=('any')
@@ -18,7 +18,7 @@ optdepends=(
   r-digest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3eb82903bee99f9684cd9dbd4f92d682fdb82feb7ff32a70aa54550e9e09ad62')
+sha256sums=('fe3cf1aa8641540634e96990294d0202d4d94ec79ce73aaf78e4eda30fcb8836')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

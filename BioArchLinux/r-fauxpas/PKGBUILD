@@ -3,7 +3,7 @@
 _pkgname=fauxpas
 _pkgver=0.5.0
 pkgname=r-${_pkgname,,}
-pkgver=0.5.0
+pkgver=${_pkgver//[:-]/.}
 pkgrel=1
 pkgdesc='HTTP Error Helpers'
 arch=('any')

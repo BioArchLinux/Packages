@@ -4,7 +4,7 @@
 _pkgname=lamW
 _pkgver=2.1.1
 pkgname=r-${_pkgname,,}
-pkgver=2.1.1
+pkgver=${_pkgver//[:-]/.}
 pkgrel=1
 pkgdesc='Lambert-W Function'
 arch=('x86_64')

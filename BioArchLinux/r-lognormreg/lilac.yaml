@@ -2,11 +2,8 @@ build_prefix: extra-x86_64
 maintainers:
   - github: sukanka
 post_build_script: |
-  git_add_files('PKGBUILD')
-  git_commit()
-pre_build_script: |
-  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
-  run_cmd(['updpkgsums'])
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
   - regex: logNormReg_([\d._-]+).tar.gz
     source: regex
