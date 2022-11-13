@@ -5,7 +5,9 @@ maintainers:
 repo_depends:
 - r-spatstat.core
 - r-spatstat.data
+- r-spatstat.explore
 - r-spatstat.geom
+- r-spatstat.model
 - r-spatstat.sparse
 - r-spatstat.utils
 update_on:

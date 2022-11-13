@@ -39,6 +39,7 @@ repo_depends:
 - r-seuratobject
 - r-shiny
 - r-spatstat.core
+- r-spatstat.explore
 - r-spatstat.geom
 - r-tibble
 - r-uwot
