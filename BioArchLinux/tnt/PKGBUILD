@@ -4,7 +4,7 @@
 pkgbase=tnt
 pkgname=('tnt' 'tnt-mpi' 'tnt-gui' 'tnt-extra')
 pkgver=2022.11.04
-pkgrel=1
+pkgrel=2
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
@@ -12,9 +12,10 @@ license=('custom')
 makedepends=('unzip')
 depends=('ncurses5-compat-libs')
 source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip")
-sha256sums=('4beb6f0808bab43fd7c42938b9fd1fd2b64c3a739845d73b5b328bd612ec714b')
+sha256sums=('a84111e204a3a69e246addd0d259f4174427e14eecd42c16167ccebf9b4e41a8')
 prepare () {
 	cd $srcdir/Docs_and_Datasets
+	chmod ag+r $srcdir/Docs_and_Datasets -R
 	unzip tnt_scripts.zip -d ./tnt_scripts
 }
 package_tnt () {
@@ -38,7 +39,7 @@ package_tnt-gui () {
 }
 package_tnt-extra () {
 	install -dm755 $pkgdir/usr/share/tnt/
-	
+
 	cd $srcdir/
 	# PDF
 	install -Dm 755 README_FIRST.pdf $pkgdir/usr/share/tnt/
