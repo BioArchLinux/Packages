@@ -3,8 +3,8 @@
 _pkgname=bestNormalize
 _pkgver=1.8.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgver=1.8.3
+pkgrel=1
 pkgdesc='Normalizing Transformation Functions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
