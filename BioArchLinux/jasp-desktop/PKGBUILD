@@ -20,6 +20,7 @@ makedepends=("cmake" 'boost' 'jsoncpp'
 'qtcreator'
 'git'
 'patchelf'
+'ninja'
 )
 depends=('r'
 'qt6-5compat'
@@ -94,16 +95,17 @@ build(){
     mkdir -p ${srcdir}/usr/lib/R
     cmake -S . -B build -DCUSTOM_R_PATH=/usr/lib/R -DLINUX_LOCAL_BUILD=OFF -DINSTALL_R_MODULES=OFF \
         -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_INSTALL_PREFIX=/usr/lib/${pkgname} -DCMAKE_INSTALL_LIBDIR=lib
+        -DCMAKE_INSTALL_PREFIX=/usr/lib/${pkgname} -DCMAKE_INSTALL_LIBDIR=lib \
+        -GNinja
 
         # -DBUILD_TESTS=ON does not work on linux.
-
-    cmake --build build
+    cd build
+    ninja
 }
 
 package() {
     cd $srcdir/${pkgname}-${pkgver}/build
-    make install DESTDIR=${pkgdir}
+    DESTDIR=${pkgdir} ninja -C . install
     install -Dm755 $srcdir/jasp.sh ${pkgdir}/usr/bin/jasp
 
     cd ${pkgdir}/usr/lib/${pkgname}
