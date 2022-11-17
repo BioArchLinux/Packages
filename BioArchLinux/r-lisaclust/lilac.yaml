@@ -14,7 +14,7 @@ repo_depends:
 - r-s4vectors
 - r-singlecellexperiment
 - r-spatialexperiment
-- r-spatstat.core
+- r-spatstat.explore
 - r-spatstat.geom
 - r-spicyr
 - r-summarizedexperiment

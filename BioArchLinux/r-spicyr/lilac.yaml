@@ -19,7 +19,7 @@ repo_depends:
 - r-scam
 - r-singlecellexperiment
 - r-spatialexperiment
-- r-spatstat.core
+- r-spatstat.explore
 - r-spatstat.geom
 - r-summarizedexperiment
 - r-tidyr
