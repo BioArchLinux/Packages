@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=matrixStats
-_pkgver=0.62.0
+_pkgver=0.63.0
 pkgname=r-${_pkgname,,}
-pkgver=0.62.0
-pkgrel=13
+pkgver=0.63.0
+pkgrel=1
 pkgdesc='Functions that Apply to Rows and Columns of Matrices (and to Vectors)'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,7 +22,7 @@ optdepends=(
   r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('85e2016b6dd20cbfe32d38a2ef2578ae80e688d9a3590aefd1d2f4bf4bd44eca')
+sha256sums=('c000b60421742eb035ff4ceedd3e588a79e4b28985484f0c81361e5a6c351f5f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
