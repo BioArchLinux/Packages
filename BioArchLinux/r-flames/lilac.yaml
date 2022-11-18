@@ -11,6 +11,7 @@ repo_depends:
 - r-complexheatmap
 - r-cowplot
 - r-dplyr
+- r-dropletutils
 - r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges
@@ -18,7 +19,9 @@ repo_depends:
 - r-ggplot2
 - r-gridextra
 - r-igraph
+- r-jsonlite
 - r-magrittr
+- r-multiassayexperiment
 - r-rcolorbrewer
 - r-rcpp
 - r-reticulate
