@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sass
-_pkgver=0.4.2
+_pkgver=0.4.3
 pkgname=r-${_pkgname,,}
-pkgver=0.4.2
-pkgrel=2
+pkgver=0.4.3
+pkgrel=1
 pkgdesc="Syntactically Awesome Style Sheets ('Sass')"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,7 +27,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b409049d0de9fae853f46c19d353226c8e9244ce847bdada033d8669fc2c9646')
+sha256sums=('94883c9e8219ca9609a704690c98d5dd9a0af52dfc9c98b0f7d8655b5a1365c0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
