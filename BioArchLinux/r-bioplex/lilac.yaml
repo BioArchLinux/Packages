@@ -4,6 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocfilecache
+- r-genomeinfodb
+- r-genomicranges
 - r-geoquery
 - r-graph
 - r-summarizedexperiment
