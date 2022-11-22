@@ -3,7 +3,7 @@
 pkgname=augustus
 _pkgname=Augustus
 pkgver=3.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A eukaryotic gene prediction program"
 arch=('i686' 'x86_64')
 url="http://augustus.gobics.de/"
@@ -20,18 +20,18 @@ prepare() {
 
 build() {
   cd $_pkgname-$pkgver
-  make SAMTOOLS=/usr/include/bam PREFIX="$pkgdir"/usr INSTALLDIR=${pkgdir}/opt/augustus
+  make SAMTOOLS=/usr/include/bam PREFIX="$pkgdir"/usr INSTALLDIR=${pkgdir}/usr/lib/augustus
 }
 
 package() {
   cd $_pkgname-$pkgver
   install -d ${pkgdir}/usr/bin
-  make DESTDIR="$pkgdir" PREFIX="$pkgdir"/usr INSTALLDIR=${pkgdir}/usr/share/augustus install
+  make DESTDIR="$pkgdir" PREFIX="$pkgdir"/usr INSTALLDIR=${pkgdir}/usr/lib/augustus install
 
   # fix broken links
   for bin in {augustus,etraining,prepareAlign,fastBlockSearch}
   do
-    ln -sf /usr/share/augustus/bin/${bin} "$pkgdir"/usr/bin/${bin}
+    ln -sf /usr/lib/augustus/bin/${bin} "$pkgdir"/usr/bin/${bin}
   done
   rm "$pkgdir"/usr/bin/{load2db,getSeq}
 
