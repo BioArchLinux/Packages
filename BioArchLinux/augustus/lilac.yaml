@@ -8,6 +8,10 @@ pre_build_script: |
 post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
+  update_aur_repo()
+repo_depends:
+- htslib
+- bamtools
 update_on:
 - source: github
   github: Gaius-Augustus/Augustus
