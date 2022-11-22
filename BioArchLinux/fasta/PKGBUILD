@@ -1,7 +1,7 @@
 # Maintainer: guoyi
 pkgname=fasta
-pkgver=36.3.8i
-pkgrel=2
+pkgver=36.3.8i_Nov_2022
+pkgrel=1
 pkgdesc="Fast protein or a fast nucleotide comparison"
 arch=('x86_64')
 url="https://fasta.bioch.virginia.edu/wrpearson/fasta/"
