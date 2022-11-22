@@ -12,6 +12,7 @@ post_build_script: |
 repo_depends:
 - htslib
 - bamtools
+- samtools
 update_on:
 - source: github
   github: Gaius-Augustus/Augustus
