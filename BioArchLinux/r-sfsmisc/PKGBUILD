@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sfsmisc
-_pkgver=1.1-13
+_pkgver=1.1-14
 pkgname=r-${_pkgname,,}
-pkgver=1.1.13
-pkgrel=6
+pkgver=1.1.14
+pkgrel=1
 pkgdesc='Utilities from Seminar fuer Statistik ETH Zurich'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a81710357de2dcdaf00d9fa30a29cde0dd83616edc358452fd6105ea88f34218')
+sha256sums=('bca942d8c2d738c6e4a8fdee832ae29e39dc3010d18cdf74613f379b6ffcb3ef')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
