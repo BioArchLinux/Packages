@@ -2,7 +2,7 @@
 pkgname=seqdistk
 _pkgname=SeqDistK
 pkgver=1.0
-pkgrel=0
+pkgrel=1
 pkgdesc="tools to calculate the distance among sequence"
 arch=('x86_64')
 url="https://github.com/htczero/SeqDistK"
