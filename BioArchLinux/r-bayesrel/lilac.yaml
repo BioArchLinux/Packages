@@ -5,7 +5,6 @@ repo_depends:
   - r-coda
   - r-laplacesdemon
   - r-lavaan
-  - r-progress
   - r-rcpp
   - r-rcpparmadillo
   - r-rdpack
