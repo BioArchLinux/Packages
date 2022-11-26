@@ -5,7 +5,7 @@ _pkgname=openssl
 _pkgver=2.0.4
 pkgname=r-${_pkgname,,}
 pkgver=2.0.4
-pkgrel=4
+pkgrel=5
 pkgdesc='Toolkit for Encryption, Signatures and Certificates Based on OpenSSL'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
