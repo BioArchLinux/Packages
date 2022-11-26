@@ -24,6 +24,8 @@ depends=(
   r-vctrs
 )
 optdepends=(
+  libcurl-compat
+  openssl
   r-blob
   r-cli
   r-dbi

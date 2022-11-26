@@ -17,6 +17,9 @@ depends=(
   r-rlang
 )
 optdepends=(
+  glpk
+  gmp
+  libxml2
   r-ape
   r-digest
   r-graph

@@ -29,6 +29,7 @@ depends=(
   pandoc
 )
 optdepends=(
+  apparmor
   r-arrow
   r-haven
   r-pander

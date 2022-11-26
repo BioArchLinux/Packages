@@ -42,6 +42,7 @@ depends=(
   samtools
 )
 optdepends=(
+  grep
   r-devtools
   r-knitr
   r-lintr

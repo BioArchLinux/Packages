@@ -20,6 +20,7 @@ depends=(
   r-sys
 )
 optdepends=(
+  git
   r-knitr
   r-rmarkdown
   r-testthat

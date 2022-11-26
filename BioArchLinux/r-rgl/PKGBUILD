@@ -27,6 +27,8 @@ depends=(
   pandoc
 )
 optdepends=(
+  freetype2
+  libpng
   r-alphashape3d
   r-chromote
   r-crosstalk
