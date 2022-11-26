@@ -4,7 +4,7 @@ _pkgname=spatstat
 _pkgver=3.0-2
 pkgname=r-${_pkgname,,}
 pkgver=3.0.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
