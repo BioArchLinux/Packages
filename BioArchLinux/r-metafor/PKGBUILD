@@ -4,7 +4,7 @@ _pkgname=metafor
 _pkgver=3.8-1
 pkgname=r-${_pkgname,,}
 pkgver=3.8.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Meta-Analysis Package for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
