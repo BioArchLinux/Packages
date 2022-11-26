@@ -5,5 +5,5 @@ maintainers:
 update_on:
 - regex: catnet_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/src/contrib/Archive/package=catnet
+  url: https://cran.r-project.org/src/contrib/Archive/catnet
 - alias: r
