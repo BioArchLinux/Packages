@@ -4,7 +4,7 @@ _pkgname=changepoint
 _pkgver=2.2.4
 pkgname=r-${_pkgname,,}
 pkgver=2.2.4
-pkgrel=2
+pkgrel=3
 pkgdesc='Methods for Changepoint Detection'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
