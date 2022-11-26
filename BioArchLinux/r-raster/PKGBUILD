@@ -5,7 +5,7 @@ _pkgname=raster
 _pkgver=3.6-3
 pkgname=r-${_pkgname,,}
 pkgver=3.6.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Geographic Data Analysis and Modeling'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
