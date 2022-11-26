@@ -2,7 +2,8 @@
 pkgbase=arlequin
 pkgname=('arlecore' 'arlsumstat' 'arlequin-extra')
 pkgver=3.5.2.2
-pkgrel=2
+pkgrel=3
+arch=('x86_64' 'any')
 url="http://cmpg.unibe.ch/software/arlequin${pkgver//./}"
 license=('custom')
 depends=('glibc')
