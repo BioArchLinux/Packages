@@ -4,7 +4,7 @@ _pkgname=callr
 _pkgver=3.7.3
 pkgname=r-${_pkgname,,}
 pkgver=3.7.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Call R from R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
