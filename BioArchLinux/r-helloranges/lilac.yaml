@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
+- r-biocio
 - r-biostrings
 - r-bsgenome
 - r-docopt

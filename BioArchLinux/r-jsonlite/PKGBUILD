@@ -4,7 +4,7 @@ _pkgname=jsonlite
 _pkgver=1.8.3
 pkgname=r-${_pkgname,,}
 pkgver=1.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A Simple and Robust JSON Parser and Generator for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,14 +13,13 @@ depends=(
   r
 )
 optdepends=(
-  r-curl
   r-httr
   r-knitr
-  r-plyr
   r-r.rsp
   r-rmarkdown
   r-sf
   r-testthat
+  r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('c57f1daf681fc7d5db893693a65ac61a48ddd7aabf66b28647b0e30df92ac8f0')

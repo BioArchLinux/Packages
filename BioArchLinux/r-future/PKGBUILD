@@ -4,7 +4,7 @@ _pkgname=future
 _pkgver=1.29.0
 pkgname=r-${_pkgname,,}
 pkgver=1.29.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Unified Parallel and Distributed Processing in R for Everyone'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,6 +18,7 @@ depends=(
 )
 optdepends=(
   r-markdown
+  r-methods
   r-r.rsp
   r-rhpcblasctl
 )

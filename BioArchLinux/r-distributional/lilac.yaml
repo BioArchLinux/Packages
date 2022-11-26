@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-digest
-- r-ellipsis
 - r-farver
 - r-generics
 - r-ggplot2

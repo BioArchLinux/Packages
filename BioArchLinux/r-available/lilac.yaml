@@ -14,7 +14,6 @@ repo_depends:
 - r-stringdist
 - r-tibble
 - r-tidytext
-- r-udapi
 - r-yesno
 update_on:
 - regex: available_([\d._-]+).tar.gz

@@ -4,7 +4,7 @@ _pkgname=renv
 _pkgver=0.16.0
 pkgname=r-${_pkgname,,}
 pkgver=0.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Project Environments'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,6 +17,7 @@ optdepends=(
   r-cli
   r-covr
   r-devtools
+  r-jsonlite
   r-knitr
   r-miniui
   r-packrat

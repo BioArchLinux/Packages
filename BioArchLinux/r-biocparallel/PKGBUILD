@@ -5,7 +5,7 @@ _pkgname=BiocParallel
 _pkgver=1.32.3
 pkgname=r-${_pkgname,,}
 pkgver=1.32.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Bioconductor facilities for parallel evaluation'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -23,7 +23,6 @@ optdepends=(
   r-bbmisc
   r-biocgenerics
   r-biocstyle
-  r-codetools
   r-data.table
   r-doparallel
   r-foreach

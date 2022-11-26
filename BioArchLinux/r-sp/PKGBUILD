@@ -4,7 +4,7 @@ _pkgname=sp
 _pkgver=1.5-1
 pkgname=r-${_pkgname,,}
 pkgver=1.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Classes and Methods for Spatial Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,6 +21,7 @@ optdepends=(
   r-rgdal
   r-rgeos
   r-rmarkdown
+  r-sf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('69b9eab481d389bbb736d2adcf50c180aca248c3ffc4ebda8ffe2accc5f229df')

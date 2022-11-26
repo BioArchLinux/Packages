@@ -20,6 +20,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyselect
+- r-vctrs
 update_on:
 - regex: tidySummarizedExperiment_([\d._-]+).tar.gz
   source: regex

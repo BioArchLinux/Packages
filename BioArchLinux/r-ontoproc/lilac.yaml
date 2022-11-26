@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-annotationdbi
 - r-annotationhub
 - r-biobase
 - r-biocfilecache

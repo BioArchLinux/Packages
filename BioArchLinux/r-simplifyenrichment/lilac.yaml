@@ -7,9 +7,11 @@ repo_depends:
 - r-biocgenerics
 - r-circlize
 - r-clue
+- r-colorspace
 - r-complexheatmap
 - r-digest
 - r-getoptlong
+- r-globaloptions
 - r-go.db
 - r-gosemsim
 - r-org.hs.eg.db

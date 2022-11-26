@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bslib
 - r-doparallel
 - r-dt
 - r-foreach
@@ -15,7 +16,6 @@ repo_depends:
 - r-scales
 - r-shiny
 - r-shinycssloaders
-- r-shinythemes
 - r-stringr
 - r-xml
 update_on:

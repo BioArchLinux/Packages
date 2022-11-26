@@ -4,7 +4,7 @@ _pkgname=latticeExtra
 _pkgver=0.6-30
 pkgname=r-${_pkgname,,}
 pkgver=0.6.30
-pkgrel=3
+pkgrel=4
 pkgdesc='Extra Graphical Utilities Based on Lattice'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,10 +20,8 @@ optdepends=(
   r-deldir
   r-mapproj
   r-maps
-  r-mass
   r-mgcv
   r-quantreg
-  r-tripack
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

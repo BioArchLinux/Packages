@@ -3,10 +3,10 @@ _pkgname=affyPara
 _pkgver=1.54.0
 pkgname=r-${_pkgname,,}
 pkgver=1.54.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Sample size for RNAseq studies'
 arch=('any')
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/3.13/${_pkgname}"
 license=('GPL3')
 depends=(
   r
@@ -22,6 +22,7 @@ makedepends=(
   tar
 )
 optdepends=(
+  r-affy
   r-affydata
 )
 source=("git+https://git.bioconductor.org/packages/${_pkgname}.git")

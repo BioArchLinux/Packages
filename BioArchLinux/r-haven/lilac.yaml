@@ -3,9 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-cpp11
 - r-forcats
 - r-hms
+- r-lifecycle
 - r-readr
 - r-rlang
 - r-tibble

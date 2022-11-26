@@ -3,12 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biocparallel
+- r-bslib
 - r-data.table
+- r-datamods
 - r-dplyr
+- r-forcats
 - r-fs
 - r-ggplot2
 - r-ggrepel
+- r-glue
 - r-lifecycle
 - r-lubridate
 - r-magrittr
@@ -18,16 +21,11 @@ repo_depends:
 - r-readr
 - r-readxl
 - r-rlang
+- r-shiny
+- r-shinywidgets
 - r-stringr
 - r-tibble
 - r-tidyr
-- r-zip
-- r-forcats
-- r-shiny
-- r-shinywidgets
-- r-datamods
-- r-bslib
-- r-dt
 update_on:
 - regex: ISAnalytics_([\d._-]+).tar.gz
   source: regex

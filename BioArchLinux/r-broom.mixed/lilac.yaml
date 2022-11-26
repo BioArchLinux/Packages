@@ -6,12 +6,12 @@ repo_depends:
 - r-broom
 - r-coda
 - r-dplyr
+- r-forcats
+- r-furrr
 - r-purrr
 - r-stringr
 - r-tibble
 - r-tidyr
-- r-forcats
-- r-furrr
 update_on:
 - regex: broom.mixed_([\d._-]+).tar.gz
   source: regex

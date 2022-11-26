@@ -5,7 +5,7 @@ _pkgname=raster
 _pkgver=3.6-3
 pkgname=r-${_pkgname,,}
 pkgver=3.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Geographic Data Analysis and Modeling'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,8 +25,6 @@ optdepends=(
   r-ncdf4
   r-parallel
   r-rastervis
-  r-rgdal
-  r-rgeos
   r-sf
   r-tcltk
   r-tinytest

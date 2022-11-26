@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biostrings
+- r-broom
 - r-data.table
 - r-dplyr
 - r-genomeinfodb
@@ -12,7 +13,7 @@ repo_depends:
 - r-iranges
 - r-plyr
 - r-reshape2
-- r-broom
+- r-scales
 update_on:
 - regex: GenomicDistributions_([\d._-]+).tar.gz
   source: regex

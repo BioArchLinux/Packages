@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-crayon
 - r-dplyr
 - r-genomicranges
 - r-lifecycle
@@ -11,6 +12,7 @@ repo_depends:
 - r-purrr
 - r-readr
 - r-rlang
+- r-s4vectors
 - r-scales
 - r-stringi
 - r-stringr

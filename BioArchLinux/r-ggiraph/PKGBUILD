@@ -5,12 +5,14 @@ _pkgname=ggiraph
 _pkgver=0.8.3
 pkgname=r-${_pkgname,,}
 pkgver=0.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Make 'ggplot2' Graphics Interactive"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
+  gcc
+  libpng
   r
   r-ggplot2
   r-htmltools
@@ -20,8 +22,7 @@ depends=(
   r-rlang
   r-systemfonts
   r-uuid
-  gcc
-  libpng
+  r-vctrs
 )
 optdepends=(
   r-dplyr

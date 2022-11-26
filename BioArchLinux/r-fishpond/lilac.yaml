@@ -4,11 +4,12 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-abind
+- r-genomicranges
 - r-gtools
+- r-iranges
 - r-jsonlite
 - r-matrixstats
 - r-qvalue
-- r-rcpp
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment

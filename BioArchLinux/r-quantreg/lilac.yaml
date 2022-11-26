@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-conquer
 - r-matrixmodels
 - r-sparsem
 update_on:

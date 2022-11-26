@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-dplyr
+- r-expm
 - r-ggcorrplot
 - r-ggplot2
 - r-ggraph
@@ -13,10 +14,9 @@ repo_depends:
 - r-maftools
 - r-networkd3
 - r-purrr
-- r-relations
+- r-tidygraph
 - r-tidyr
 - r-visnetwork
-- r-expm
 update_on:
 - regex: CIMICE_([\d._-]+).tar.gz
   source: regex

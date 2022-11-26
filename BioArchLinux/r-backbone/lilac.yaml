@@ -4,8 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-igraph
-- r-network
-- r-poissonbinomial
 - r-rcpp
 update_on:
 - regex: backbone_([\d._-]+).tar.gz

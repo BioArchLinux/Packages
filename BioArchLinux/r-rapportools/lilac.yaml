@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-pander
 - r-plyr
-- r-reshape
 - r-reshape2
 update_on:
 - regex: rapportools_([\d._-]+).tar.gz

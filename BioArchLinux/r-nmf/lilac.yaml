@@ -11,7 +11,6 @@ repo_depends:
 - r-foreach
 - r-ggplot2
 - r-gridbase
-- r-pkgmaker
 - r-rcolorbrewer
 - r-registry
 - r-reshape2

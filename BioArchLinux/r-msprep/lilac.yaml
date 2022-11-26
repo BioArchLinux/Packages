@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-crmn
-- r-ddpcr
 - r-dplyr
 - r-magrittr
 - r-missforest

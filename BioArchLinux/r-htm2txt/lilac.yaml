@@ -5,5 +5,5 @@ maintainers:
 update_on:
 - regex: htm2txt_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/src/contrib/Archive/htm2txt/
+  url: https://cran.r-project.org/package=htm2txt
 - alias: r

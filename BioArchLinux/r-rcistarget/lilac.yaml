@@ -8,11 +8,11 @@ repo_depends:
 - r-biocgenerics
 - r-data.table
 - r-dplyr
-- r-feather
 - r-genomeinfodb
 - r-genomicranges
 - r-gseabase
 - r-r.utils
+- r-s4vectors
 - r-summarizedexperiment
 - r-tibble
 update_on:

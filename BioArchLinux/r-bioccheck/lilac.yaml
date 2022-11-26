@@ -8,7 +8,6 @@ repo_depends:
 - r-graph
 - r-httr
 - r-knitr
-- r-optparse
 - r-stringdist
 update_on:
 - regex: BiocCheck_([\d._-]+).tar.gz

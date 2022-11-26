@@ -1,13 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: hubutui
+- github: hubutui
 repo_depends:
-  - r-bayestestr
-  - r-insight
-  - r-parameters
-  - r-performance
+- r-bayestestr
+- r-datawizard
+- r-insight
+- r-parameters
+- r-performance
 update_on:
-  - regex: effectsize_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=effectsize
-  - alias: r
+- regex: effectsize_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=effectsize
+- alias: r

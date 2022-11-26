@@ -3,21 +3,20 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-aod
+- r-ade4
+- r-aods3
 - r-biobase
 - r-deseq2
 - r-doparallel
 - r-dss
+- r-dt
+- r-factoextra
 - r-foreach
 - r-ggplot2
 - r-gplots
 - r-matrixstats
-- r-aods3
 - r-shiny
 - r-shinycssloaders
-- r-ade4
-- r-factoextra
-- r-dt
 update_on:
 - regex: kissDE_([\d._-]+).tar.gz
   source: regex

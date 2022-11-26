@@ -1,8 +1,8 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 update_on:
-  - regex: Brobdingnag_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=Brobdingnag
-  - alias: r
+- regex: Brobdingnag_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=Brobdingnag
+- alias: r

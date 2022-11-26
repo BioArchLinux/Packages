@@ -5,13 +5,13 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
 - r-gseabase
 - r-mixtools
 - r-r.utils
-- r-s4vectors
 - r-shiny
 - r-summarizedexperiment
-- r-delayedmatrixstats
 update_on:
 - regex: AUCell_([\d._-]+).tar.gz
   source: regex

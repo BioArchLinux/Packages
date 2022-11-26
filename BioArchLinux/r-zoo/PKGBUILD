@@ -4,7 +4,7 @@ _pkgname=zoo
 _pkgver=1.8-11
 pkgname=r-${_pkgname,,}
 pkgver=1.8.11
-pkgrel=1
+pkgrel=2
 pkgdesc="S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,6 @@ optdepends=(
   r-aer
   r-chron
   r-coda
-  r-fts
   r-ggplot2
   r-mondate
   r-scales

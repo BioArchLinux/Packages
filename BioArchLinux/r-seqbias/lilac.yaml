@@ -6,6 +6,7 @@ repo_depends:
 - r-biostrings
 - r-genomicranges
 - r-rhtslib
+- r-zlibbioc
 update_on:
 - regex: seqbias_([\d._-]+).tar.gz
   source: regex

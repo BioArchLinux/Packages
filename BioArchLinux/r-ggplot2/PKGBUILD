@@ -4,20 +4,22 @@ _pkgname=ggplot2
 _pkgver=3.4.0
 pkgname=r-${_pkgname,,}
 pkgver=3.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Create Elegant Data Visualisations Using the Grammar of Graphics'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  r-digest
+  r-cli
   r-glue
   r-gtable
   r-isoband
+  r-lifecycle
   r-rlang
   r-scales
   r-tibble
+  r-vctrs
   r-withr
 )
 optdepends=(
@@ -26,7 +28,6 @@ optdepends=(
   r-ggplot2movies
   r-hexbin
   r-hmisc
-  r-interp
   r-knitr
   r-lattice
   r-mapproj

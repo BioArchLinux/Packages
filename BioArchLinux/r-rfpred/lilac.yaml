@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-data.table
+- r-genomeinfodb
 - r-genomicranges
 - r-iranges
 - r-rsamtools

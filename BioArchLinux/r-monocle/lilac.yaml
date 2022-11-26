@@ -8,13 +8,13 @@ repo_depends:
 - r-biocviews
 - r-combinat
 - r-ddrtree
-- r-densityclust
 - r-dplyr
 - r-fastica
 - r-ggplot2
 - r-hsmmsinglecell
 - r-igraph
 - r-irlba
+- r-leidenbase
 - r-limma
 - r-matrixstats
 - r-pheatmap
@@ -30,7 +30,6 @@ repo_depends:
 - r-tibble
 - r-vgam
 - r-viridis
-- r-leidenbase
 update_on:
 - regex: monocle_([\d._-]+).tar.gz
   source: regex

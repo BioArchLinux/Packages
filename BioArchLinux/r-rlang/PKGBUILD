@@ -4,7 +4,7 @@ _pkgname=rlang
 _pkgver=1.0.6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Functions for Base Types and Core R and 'Tidyverse' Features"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,13 +16,17 @@ optdepends=(
   r-cli
   r-covr
   r-crayon
+  r-fs
   r-glue
+  r-knitr
   r-magrittr
   r-methods
-  r-pak
   r-pillar
   r-rmarkdown
+  r-stats
   r-testthat
+  r-tibble
+  r-usethis
   r-vctrs
   r-winch
   r-withr

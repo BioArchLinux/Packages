@@ -6,7 +6,6 @@ repo_depends:
 - r-coda
 - r-mcmc
 - r-quantreg
-- r-vctrs
 update_on:
 - regex: MCMCpack_([\d._-]+).tar.gz
   source: regex

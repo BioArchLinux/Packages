@@ -1,21 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: hubutui
+- github: hubutui
 repo_depends:
-  - r-backports
-  - r-crayon
-  - r-cyclocomp
-  - r-digest
-  - r-httr
-  - r-jsonlite
-  - r-knitr
-  - r-rex
-  - r-rstudioapi
-  - r-testthat
-  - r-xml2
-  - r-xmlparsedata
+- r-backports
+- r-crayon
+- r-cyclocomp
+- r-digest
+- r-glue
+- r-jsonlite
+- r-knitr
+- r-rex
+- r-xml2
+- r-xmlparsedata
 update_on:
-  - regex: lintr_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=lintr
-  - alias: r
+- regex: lintr_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=lintr
+- alias: r

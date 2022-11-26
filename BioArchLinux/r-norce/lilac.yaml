@@ -8,6 +8,7 @@ repo_depends:
 - r-dbi
 - r-dbplyr
 - r-dplyr
+- r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
@@ -24,6 +25,7 @@ repo_depends:
 - r-rtracklayer
 - r-rwikipathways
 - r-s4vectors
+- r-stringr
 - r-summarizedexperiment
 - r-tidyr
 - r-zlibbioc

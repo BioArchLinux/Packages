@@ -3,14 +3,16 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
+- r-glue
 - r-httr
 - r-lifecycle
 - r-magrittr
 - r-rlang
 - r-selectr
 - r-tibble
-- r-xml2
 - r-withr
+- r-xml2
 update_on:
 - regex: rvest_([\d._-]+).tar.gz
   source: regex

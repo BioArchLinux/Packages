@@ -6,7 +6,6 @@ repo_depends:
 - r-ade4
 - r-e1071
 - r-r2html
-- r-rgl
 update_on:
 - regex: clusterSim_([\d._-]+).tar.gz
   source: regex

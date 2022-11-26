@@ -7,6 +7,7 @@ repo_depends:
 - r-data.table
 - r-dplyr
 - r-ggplot2
+- r-groupdata2
 - r-lifecycle
 - r-lme4
 - r-mumin

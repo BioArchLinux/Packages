@@ -6,9 +6,8 @@ repo_depends:
 - r-bh
 - r-biobase
 - r-biocgenerics
+- r-cpp11
 - r-flowcore
-- r-rcpp
-- r-rcpparmadillo
 - r-rhdf5lib
 - r-zlibbioc
 update_on:

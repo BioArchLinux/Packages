@@ -5,7 +5,7 @@ _pkgname=terra
 _pkgver=1.6-41
 pkgname=r-${_pkgname,,}
 pkgver=1.6.41
-pkgrel=1
+pkgrel=2
 pkgdesc='Spatial Data Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,9 +17,9 @@ depends=(
 )
 optdepends=(
   r-deldir
+  r-leaflet
   r-ncdf4
   r-parallel
-  r-raster
   r-sf
   r-tinytest
   r-xml

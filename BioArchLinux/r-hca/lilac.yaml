@@ -6,14 +6,14 @@ repo_depends:
 - r-biocfilecache
 - r-digest
 - r-dplyr
+- r-dt
 - r-httr
 - r-jsonlite
+- r-miniui
 - r-readr
+- r-shiny
 - r-tibble
 - r-tidyr
-- r-shiny
-- r-miniui
-- r-dt
 update_on:
 - regex: hca_([\d._-]+).tar.gz
   source: regex

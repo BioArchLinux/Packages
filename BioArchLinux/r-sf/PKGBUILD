@@ -5,7 +5,7 @@ _pkgname=sf
 _pkgver=1.0-9
 pkgname=r-${_pkgname,,}
 pkgver=1.0.9
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple Features for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -36,11 +36,10 @@ optdepends=(
   r-matrix
   r-microbenchmark
   r-odbc
+  r-pbapply
   r-pillar
   r-pool
   r-raster
-  r-rgdal
-  r-rgeos
   r-rlang
   r-rmarkdown
   r-rpostgres
@@ -48,9 +47,9 @@ optdepends=(
   r-rsqlite
   r-sp
   r-spatstat
-  r-spatstat.core
   r-spatstat.geom
   r-spatstat.linnet
+  r-spatstat.random
   r-spatstat.utils
   r-stars
   r-terra

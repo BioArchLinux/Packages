@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-rcppeigen
-- r-rcpp
 update_on:
 - regex: Rgin_([\d._-]+).tar.gz
   source: regex

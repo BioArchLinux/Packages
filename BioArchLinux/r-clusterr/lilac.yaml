@@ -6,6 +6,7 @@ repo_depends:
 - r-ggplot2
 - r-gmp
 - r-gtools
+- r-lifecycle
 - r-rcpp
 - r-rcpparmadillo
 update_on:

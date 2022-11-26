@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-gplots
+- r-gtools
 - r-rcpp
 update_on:
 - regex: ReorderCluster_([\d._-]+).tar.gz

@@ -3,14 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-rcpp
-- r-rcppeigen
-- r-rlang
 - r-future
 - r-future.apply
 - r-progressr
+- r-rcpp
+- r-rcppeigen
+- r-rlang
 - r-sp
-- r-rgeos
 update_on:
 - regex: SeuratObject_([\d._-]+).tar.gz
   source: regex

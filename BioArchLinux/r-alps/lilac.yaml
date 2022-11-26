@@ -9,9 +9,9 @@ repo_depends:
 - r-corrplot
 - r-data.table
 - r-dplyr
+- r-genefilter
 - r-genomicranges
 - r-ggally
-- r-genefilter
 - r-gghalves
 - r-ggplot2
 - r-ggseqlogo
@@ -23,12 +23,9 @@ repo_depends:
 - r-rtracklayer
 - r-stringr
 - r-tibble
+- r-tidyr
+- r-txdb.hsapiens.ucsc.hg19.knowngene
 - r-txdb.hsapiens.ucsc.hg38.knowngene
-- r-rmarkdown
-- r-knitr
-- r-complexheatmap
-- r-circlize
-- r-testthat
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-base64enc
 - r-broom
+- r-bslib
 - r-car
 - r-curl
 - r-dplyr
@@ -19,6 +20,7 @@ repo_depends:
 - r-markdown
 - r-patchwork
 - r-plotly
+- r-png
 - r-psych
 - r-randomizr
 - r-readr
@@ -34,7 +36,6 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-writexl
-- r-png
 update_on:
 - regex: radiant.data_([\d._-]+).tar.gz
   source: regex

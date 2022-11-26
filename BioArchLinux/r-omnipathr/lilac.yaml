@@ -19,13 +19,14 @@ repo_depends:
 - r-rappdirs
 - r-readr
 - r-readxl
-- r-rmarkdown
 - r-rlang
+- r-rmarkdown
+- r-rvest
 - r-stringr
 - r-tibble
 - r-tidyr
 - r-tidyselect
-- r-rvest
+- r-withr
 - r-xml2
 - r-yaml
 update_on:

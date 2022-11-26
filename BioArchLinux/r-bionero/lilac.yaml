@@ -5,25 +5,24 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-complexheatmap
-- r-deseq2
 - r-dynamictreecut
 - r-genie3
 - r-ggnetwork
 - r-ggnewscale
 - r-ggplot2
-- r-ggpubr
+- r-ggrepel
 - r-igraph
 - r-intergraph
 - r-matrixstats
 - r-minet
 - r-netrep
 - r-networkd3
+- r-patchwork
 - r-rcolorbrewer
 - r-reshape2
 - r-summarizedexperiment
 - r-sva
 - r-wgcna
-- r-patchwork
 update_on:
 - regex: BioNERO_([\d._-]+).tar.gz
   source: regex

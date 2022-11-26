@@ -6,7 +6,6 @@ repo_depends:
 - r-checkmate
 - r-data.table
 - r-digest
-- r-fields
 - r-formula
 - r-formula.tools
 - r-ggplot2
@@ -16,7 +15,6 @@ repo_depends:
 - r-memoise
 - r-plyr
 - r-purrr
-- r-rcurl
 - r-scales
 - r-sp
 - r-stringr

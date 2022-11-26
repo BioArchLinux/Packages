@@ -8,6 +8,7 @@ repo_depends:
 - r-dt
 - r-ggally
 - r-ggplot2
+- r-rcpp
 - r-rjson
 - r-rlang
 - r-rmarkdown
