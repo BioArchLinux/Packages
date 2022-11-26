@@ -7,7 +7,7 @@ pkgver=2.20.0
 pkgrel=5
 pkgdesc='A compilation of ENCODE metadata'
 arch=('any')
-url="https://bioconductor.org/packages/3.12/${_pkgname}"
+url="https://bioconductor.org/packages/3.14/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r

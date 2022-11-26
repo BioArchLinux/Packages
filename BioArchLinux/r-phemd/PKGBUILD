@@ -4,10 +4,10 @@ _pkgname=phemd
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=1.14.0
-pkgrel=2
+pkgrel=1
 pkgdesc='Phenotypic EMD for comparison of single-cell samples'
 arch=('any')
-url="https://bioconductor.org/packages/3.15/${_pkgname}"
+url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r

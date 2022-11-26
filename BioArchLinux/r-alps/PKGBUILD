@@ -7,7 +7,7 @@ pkgver=1.8.0
 pkgrel=5
 pkgdesc='AnaLysis routines for ePigenomicS data'
 arch=('any')
-url="https://bioconductor.org/packages/3.13/${_pkgname}"
+url="https://bioconductor.org/packages/3.14/${_pkgname}"
 license=('MIT')
 depends=(
   r
