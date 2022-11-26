@@ -4,7 +4,7 @@ _pkgname=effectsize
 _pkgver=0.8.2
 pkgname=r-${_pkgname,,}
 pkgver=0.8.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Indices of Effect Size and Standardized Parameters'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
