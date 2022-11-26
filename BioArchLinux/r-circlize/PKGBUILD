@@ -4,7 +4,7 @@ _pkgname=circlize
 _pkgver=0.4.15
 pkgname=r-${_pkgname,,}
 pkgver=0.4.15
-pkgrel=3
+pkgrel=4
 pkgdesc='Circular Visualization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
