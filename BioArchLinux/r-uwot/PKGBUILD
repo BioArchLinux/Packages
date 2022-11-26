@@ -4,7 +4,7 @@ _pkgname=uwot
 _pkgver=0.1.14
 pkgname=r-${_pkgname,,}
 pkgver=0.1.14
-pkgrel=2
+pkgrel=3
 pkgdesc='The Uniform Manifold Approximation and Projection (UMAP) Method for Dimensionality Reduction'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
