@@ -4,14 +4,16 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-batchtools
 - r-biobase
-- r-biocparallel
 - r-biostrings
 - r-bsgenome
 - r-cleanupdtseq
-- r-dbi
 - r-depmixs4
 - r-dplyr
+- r-flock
+- r-future
+- r-future.apply
 - r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges
@@ -19,18 +21,13 @@ repo_depends:
 - r-iranges
 - r-limma
 - r-magrittr
+- r-parallelly
 - r-plyranges
 - r-preprocesscore
-- r-purrr
 - r-readr
 - r-reshape2
 - r-rsqlite
 - r-s4vectors
-- r-batchtools
-- r-flock
-- r-future
-- r-future.apply
-- r-parallelly
 update_on:
 - regex: InPAS_([\d._-]+).tar.gz
   source: regex

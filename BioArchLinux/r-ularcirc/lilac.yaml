@@ -21,15 +21,14 @@ repo_depends:
 - r-mirbase.db
 - r-moments
 - r-organism.dplyr
+- r-plotgardener
+- r-r.utils
 - r-s4vectors
 - r-shiny
 - r-shinydashboard
 - r-shinyfiles
 - r-shinyjs
-- r-sushi
 - r-yaml
-- r-plotgardener
-- r-r.utils
 update_on:
 - regex: Ularcirc_([\d._-]+).tar.gz
   source: regex

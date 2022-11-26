@@ -11,6 +11,7 @@ repo_depends:
 - r-limma
 - r-pheatmap
 - r-plyr
+- r-rcolorbrewer
 - r-scales
 - r-snpstats
 - r-sva

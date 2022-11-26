@@ -9,7 +9,6 @@ repo_depends:
 - r-go.db
 - r-goseq
 - r-gplots
-- r-hash
 - r-org.hs.eg.db
 - r-summarizedexperiment
 update_on:

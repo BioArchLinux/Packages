@@ -3,39 +3,32 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-assertthat
 - r-baseline
 - r-biocparallel
 - r-dplyr
 - r-fs
-- r-furrr
 - r-future
-- r-ggally
+- r-generics
 - r-ggplot2
-- r-ggrepel
 - r-glue
 - r-htmltools
 - r-magrittr
 - r-matrixstats
 - r-mixomics
 - r-pcapp
-- r-plyr
 - r-purrr
 - r-readxl
 - r-reshape2
 - r-rlang
 - r-rmarkdown
-- r-s4vectors
+- r-scales
 - r-signal
 - r-speaq
 - r-stringr
-- r-summarizedexperiment
 - r-tibble
 - r-tidyr
 - r-tidyselect
 - r-vctrs
-- r-writexl
-- r-zip
 update_on:
 - regex: AlpsNMR_([\d._-]+).tar.gz
   source: regex

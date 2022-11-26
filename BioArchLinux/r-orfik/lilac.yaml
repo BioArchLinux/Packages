@@ -6,6 +6,7 @@ repo_depends:
 - r-annotationdbi
 - r-biocgenerics
 - r-biocparallel
+- r-biomart
 - r-biomartr
 - r-biostrings
 - r-bsgenome
@@ -17,7 +18,6 @@ repo_depends:
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
-- r-ggally
 - r-ggplot2
 - r-gridextra
 - r-httr

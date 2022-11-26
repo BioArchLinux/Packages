@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-rmutil
-- r-stabledist
 update_on:
 - regex: stable_([\d._-]+).tar.gz
   source: regex

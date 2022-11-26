@@ -3,8 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-annotationfilter
 - r-bgeedb
 - r-dynamictreecut
+- r-ensdb.hsapiens.v86
+- r-ensembldb
+- r-genomicfeatures
 - r-ggplot2
 - r-gplots
 - r-gridextra
@@ -21,10 +25,6 @@ repo_depends:
 - r-ritandata
 - r-sqldf
 - r-stringdb
-- r-genomicfeatures
-- r-ensembldb
-- r-annotationfilter
-- r-ensdb.hsapiens.v86
 update_on:
 - regex: RITAN_([\d._-]+).tar.gz
   source: regex

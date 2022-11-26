@@ -13,6 +13,7 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-hdf5array
+- r-httr
 - r-iranges
 - r-rhdf5
 - r-s4vectors

@@ -4,9 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-cli
-- r-crayon
-- r-ellipsis
 - r-fansi
+- r-glue
 - r-lifecycle
 - r-rlang
 - r-utf8

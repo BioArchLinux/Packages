@@ -7,7 +7,6 @@ repo_depends:
 - r-mapproj
 - r-plotrix
 - r-rann
-- r-rcolorbrewer
 - r-sm
 update_on:
 - regex: magicaxis_([\d._-]+).tar.gz

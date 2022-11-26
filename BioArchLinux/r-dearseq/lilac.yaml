@@ -3,18 +3,20 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-compquadform
+- r-dplyr
 - r-ggplot2
+- r-magrittr
 - r-matrixstats
 - r-patchwork
 - r-pbapply
+- r-reshape2
+- r-rlang
+- r-scattermore
 - r-statmod
 - r-survey
+- r-tibble
 - r-viridislite
-- r-compquadform
-- r-reshape2
-- r-plyr
-- r-dplyr
-- r-scattermore
 update_on:
 - regex: dearseq_([\d._-]+).tar.gz
   source: regex

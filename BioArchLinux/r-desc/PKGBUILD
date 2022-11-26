@@ -4,19 +4,19 @@ _pkgname=desc
 _pkgver=1.4.2
 pkgname=r-${_pkgname,,}
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Manipulate DESCRIPTION Files'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  r-crayon
+  r-cli
   r-r6
   r-rprojroot
-  r-cli
 )
 optdepends=(
+  r-callr
   r-covr
   r-gh
   r-spelling

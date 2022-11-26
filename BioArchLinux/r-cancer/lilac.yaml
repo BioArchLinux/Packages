@@ -4,15 +4,16 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
-- r-cgdsr
 - r-circlize
 - r-formula
 - r-genetclassifier
 - r-gseabase
+- r-httr
 - r-phenotest
 - r-plyr
+- r-r.methodss3
+- r-r.oo
 - r-runit
-- r-tcltk2
 - r-tkrplot
 update_on:
 - regex: canceR_([\d._-]+).tar.gz

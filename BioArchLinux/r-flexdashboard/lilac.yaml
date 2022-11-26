@@ -3,13 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bslib
 - r-htmltools
 - r-htmlwidgets
 - r-jsonlite
 - r-knitr
 - r-rmarkdown
-- r-shiny
+- r-sass
 - r-scales
+- r-shiny
 update_on:
 - regex: flexdashboard_([\d._-]+).tar.gz
   source: regex

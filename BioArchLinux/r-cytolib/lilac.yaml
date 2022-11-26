@@ -4,9 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bh
-- r-rcpp
-- r-rcpparmadillo
-- r-rcppparallel
 - r-rhdf5lib
 - r-rprotobuflib
 update_on:

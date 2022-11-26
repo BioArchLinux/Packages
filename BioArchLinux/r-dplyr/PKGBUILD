@@ -4,14 +4,13 @@ _pkgname=dplyr
 _pkgver=1.0.10
 pkgname=r-${_pkgname,,}
 pkgver=1.0.10
-pkgrel=1
+pkgrel=2
 pkgdesc='A Grammar of Data Manipulation'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  r-ellipsis
   r-generics
   r-glue
   r-lifecycle
@@ -30,6 +29,7 @@ optdepends=(
   r-covr
   r-dbi
   r-dbplyr
+  r-ggplot2
   r-knitr
   r-lahman
   r-lobstr

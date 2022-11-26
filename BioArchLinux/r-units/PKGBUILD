@@ -5,7 +5,7 @@ _pkgname=units
 _pkgver=0.8-0
 pkgname=r-${_pkgname,,}
 pkgver=0.8.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Measurement Units for R Vectors'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,7 +17,7 @@ depends=(
 )
 optdepends=(
   r-dplyr
-  r-ggforce
+  r-ggplot2
   r-knitr
   r-magrittr
   r-measurements
@@ -25,8 +25,8 @@ optdepends=(
   r-pillar
   r-rmarkdown
   r-testthat
-  r-udunits2
   r-vctrs
+  r-vdiffr
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

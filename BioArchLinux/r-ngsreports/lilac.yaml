@@ -13,11 +13,12 @@ repo_depends:
 - r-ggplot2
 - r-lifecycle
 - r-lubridate
-- r-patchwork
 - r-pander
+- r-patchwork
 - r-plotly
 - r-readr
 - r-reshape2
+- r-rlang
 - r-rmarkdown
 - r-scales
 - r-stringr

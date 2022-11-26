@@ -7,8 +7,8 @@ repo_depends:
 - r-biostrings
 - r-ggplot2
 - r-htmlwidgets
-- r-xml
 - r-tfbstools
+- r-xml
 update_on:
 - regex: motifStack_([\d._-]+).tar.gz
   source: regex

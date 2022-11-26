@@ -4,25 +4,26 @@ _pkgname=rvest
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Easily Harvest (Scrape) Web Pages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-cli
+  r-glue
   r-httr
   r-lifecycle
   r-magrittr
   r-rlang
   r-selectr
   r-tibble
-  r-xml2
   r-withr
+  r-xml2
 )
 optdepends=(
   r-covr
-  r-glue
   r-knitr
   r-readr
   r-repurrrsive

@@ -3,17 +3,17 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cowplot
 - r-data.table
 - r-dplyr
-- r-tidyr
-- r-plotly
 - r-ggplot2
-- r-cowplot
+- r-htmlwidgets
 - r-metafor
 - r-metap
+- r-plotly
 - r-rlang
+- r-tidyr
 - r-topconfects
-- r-htmlwidgets
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

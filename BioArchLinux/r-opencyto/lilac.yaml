@@ -3,25 +3,19 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bh
 - r-biobase
 - r-biocgenerics
-- r-clue
+- r-cpp11
 - r-data.table
 - r-flowclust
 - r-flowcore
-- r-flowstats
 - r-flowviz
 - r-flowworkspace
 - r-graph
-- r-gtools
-- r-ks
 - r-ncdfflow
-- r-plyr
-- r-r.utils
 - r-rbgl
 - r-rcolorbrewer
-- r-rcpp
-- r-rrcov
 update_on:
 - regex: openCyto_([\d._-]+).tar.gz
   source: regex

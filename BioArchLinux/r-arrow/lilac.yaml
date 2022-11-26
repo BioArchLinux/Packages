@@ -5,12 +5,13 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-bit64
+- r-cpp11
+- r-glue
 - r-purrr
 - r-r6
 - r-rlang
 - r-tidyselect
 - r-vctrs
-- r-cpp11
 update_on:
 - regex: arrow_([\d._-]+).tar.gz
   source: regex

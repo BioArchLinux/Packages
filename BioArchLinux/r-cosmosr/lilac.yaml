@@ -3,23 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-annotationdbi
-- r-biomart
 - r-carnival
 - r-dorothea
 - r-dplyr
-- r-ggplot2
 - r-gseabase
 - r-igraph
-- r-magrittr
-- r-org.hs.eg.db
-- r-plyr
+- r-progress
 - r-purrr
-- r-readr
 - r-rlang
-- r-scales
 - r-stringr
-- r-tibble
 - r-visnetwork
 update_on:
 - regex: cosmosR_([\d._-]+).tar.gz

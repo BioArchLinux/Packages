@@ -4,9 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bh
+- r-cpp11
 - r-futile.logger
 - r-snow
-- r-cpp11
 update_on:
 - regex: BiocParallel_([\d._-]+).tar.gz
   source: regex

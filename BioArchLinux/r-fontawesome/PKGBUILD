@@ -4,7 +4,7 @@ _pkgname=fontawesome
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Easily Work with 'Font Awesome' Icons"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,6 +16,7 @@ depends=(
 )
 optdepends=(
   r-covr
+  r-dplyr
   r-knitr
   r-rsvg
   r-testthat

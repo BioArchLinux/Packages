@@ -10,7 +10,6 @@ repo_depends:
 - r-ggplot2
 - r-reshape2
 - r-zoo
-- r-hexbin
 update_on:
 - regex: flowSpecs_([\d._-]+).tar.gz
   source: regex

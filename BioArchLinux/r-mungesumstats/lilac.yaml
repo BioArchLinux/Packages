@@ -11,6 +11,7 @@ repo_depends:
 - r-genomicranges
 - r-googleauthr
 - r-httr
+- r-iranges
 - r-jsonlite
 - r-magrittr
 - r-r.utils

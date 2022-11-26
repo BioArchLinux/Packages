@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-digest
 - r-dplyr
 - r-ggforce
@@ -11,10 +12,12 @@ repo_depends:
 - r-graphlayouts
 - r-gtable
 - r-igraph
+- r-lifecycle
 - r-rcpp
 - r-rlang
 - r-scales
 - r-tidygraph
+- r-vctrs
 - r-viridis
 - r-withr
 update_on:

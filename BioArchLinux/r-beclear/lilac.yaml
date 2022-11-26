@@ -6,12 +6,11 @@ repo_depends:
 - r-abind
 - r-biocparallel
 - r-data.table
+- r-dixontest
 - r-futile.logger
 - r-ids
-- r-outliers
 - r-rcpp
 - r-rdpack
-- r-dixontest
 update_on:
 - regex: BEclear_([\d._-]+).tar.gz
   source: regex

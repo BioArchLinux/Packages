@@ -4,7 +4,7 @@ _pkgname=GENLIB
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=1.1.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Genealogical Data Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ depends=(
   r-quadprog
   r-rcpp
 )
-source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('f686074dec99e5d775e44d7e4926d945f8725fd7f00a16d7d558d275c14e928c')
 
 build() {

@@ -5,13 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-biocgenerics
-- r-clue
-- r-corpcor
-- r-ellipse
 - r-flowcore
-- r-flowviz
 - r-graph
-- r-mnormt
 update_on:
 - regex: flowClust_([\d._-]+).tar.gz
   source: regex

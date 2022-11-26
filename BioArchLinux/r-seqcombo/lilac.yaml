@@ -3,12 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biostrings
-- r-cowplot
-- r-dplyr
 - r-ggplot2
 - r-igraph
-- r-magrittr
 - r-yulab.utils
 update_on:
 - regex: seqcombo_([\d._-]+).tar.gz

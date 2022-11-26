@@ -4,12 +4,12 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biasedurn
+- r-flextable
 - r-lubridate
+- r-officer
 - r-pander
 - r-sf
 - r-zoo
-- r-flextable
-- r-officer
 update_on:
 - regex: epiR_([\d._-]+).tar.gz
   source: regex

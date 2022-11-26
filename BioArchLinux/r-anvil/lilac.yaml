@@ -5,19 +5,18 @@ maintainers:
 repo_depends:
 - r-biocmanager
 - r-dplyr
+- r-dt
 - r-futile.logger
+- r-htmltools
 - r-httr
 - r-jsonlite
+- r-miniui
 - r-rapiclient
 - r-rlang
+- r-shiny
 - r-tibble
 - r-tidyr
 - r-tidyselect
-- r-vctrs
-- r-shiny
-- r-dt
-- r-miniui
-- r-htmltools
 update_on:
 - regex: AnVIL_([\d._-]+).tar.gz
   source: regex

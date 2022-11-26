@@ -3,23 +3,22 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-jsonlite
-- r-rcurl
-- r-tidyr
+- r-annotationhub
 - r-data.table
 - r-dplyr
-- r-stringr
-- r-stringi
-- r-annotationhub
+- r-encodexplorerdata
+- r-genomeinfodb
 - r-genomicranges
+- r-jsonlite
+- r-rcurl
 - r-rtracklayer
 - r-s4vectors
-- r-genomeinfodb
-- r-encodexplorerdata
+- r-stringi
+- r-stringr
+- r-tidyr
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/3.14/ENCODExplorer
 - alias: r
-
 pre_build: vcs_update

@@ -4,9 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-curl
 - r-data.table
 - r-dplyr
-- r-httr
 - r-limma
 - r-magrittr
 - r-r.utils

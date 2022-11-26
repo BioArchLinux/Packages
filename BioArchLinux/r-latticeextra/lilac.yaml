@@ -3,10 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-interp
 - r-jpeg
 - r-png
 - r-rcolorbrewer
-- r-interp
 update_on:
 - regex: latticeExtra_([\d._-]+).tar.gz
   source: regex

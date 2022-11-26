@@ -5,27 +5,28 @@ _pkgname=haven
 _pkgver=2.5.1
 pkgname=r-${_pkgname,,}
 pkgver=2.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Import and Export 'SPSS', 'Stata' and 'SAS' Files"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
+  gcc
+  make
   r
+  zlib
+  r-cli
   r-cpp11
   r-forcats
   r-hms
+  r-lifecycle
   r-readr
   r-rlang
   r-tibble
   r-tidyselect
   r-vctrs
-  make
-  gcc
-  zlib
 )
 optdepends=(
-  r-cli
   r-covr
   r-crayon
   r-fs

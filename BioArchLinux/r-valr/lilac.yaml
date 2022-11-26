@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-broom
+- r-cli
 - r-dplyr
 - r-ggplot2
 - r-rcpp

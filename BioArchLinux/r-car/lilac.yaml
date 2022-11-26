@@ -6,9 +6,9 @@ repo_depends:
 - r-abind
 - r-cardata
 - r-lme4
-- r-maptools
 - r-pbkrtest
 - r-quantreg
+- r-scales
 update_on:
 - regex: car_([\d._-]+).tar.gz
   source: regex

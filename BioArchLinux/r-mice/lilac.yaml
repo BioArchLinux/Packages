@@ -10,7 +10,6 @@ repo_depends:
 - r-rcpp
 - r-rlang
 - r-tidyr
-- r-withr
 update_on:
 - regex: mice_([\d._-]+).tar.gz
   source: regex
