@@ -4,7 +4,7 @@ _pkgname=ggstar
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
 pkgver=1.0.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Multiple Geometric Shape Point Layer for 'ggplot2'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
