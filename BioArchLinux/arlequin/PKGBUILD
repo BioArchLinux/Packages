@@ -2,7 +2,7 @@
 pkgbase=arlequin
 pkgname=('arlecore' 'arlsumstat' 'arlequin-extra')
 pkgver=3.5.2.2
-pkgrel=0
+pkgrel=1
 pkgdesc="An Integrated Software for Population Genetics Data Analysis"
 arch=('x86_64')
 url="http://cmpg.unibe.ch/software/arlequin${pkgver//./}"
