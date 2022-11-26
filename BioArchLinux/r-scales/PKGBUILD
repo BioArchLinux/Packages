@@ -4,7 +4,7 @@ _pkgname=scales
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=1.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Scale Functions for Visualization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
