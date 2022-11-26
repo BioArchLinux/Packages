@@ -4,7 +4,7 @@ _pkgname=flextable
 _pkgver=0.8.3
 pkgname=r-${_pkgname,,}
 pkgver=0.8.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Functions for Tabular Reporting'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
