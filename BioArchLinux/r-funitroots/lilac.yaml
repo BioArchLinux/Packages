@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-fbasics
+  - r-timeseries
+  - r-urca
+update_on:
+  - regex: fUnitRoots_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=fUnitRoots
+  - alias: r
