@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=jpeg
-_pkgver=0.1-9
+_pkgver=0.1-10
 pkgname=r-${_pkgname,,}
-pkgver=0.1.9
-pkgrel=8
+pkgver=0.1.10
+pkgrel=1
 pkgdesc='Read and write JPEG images'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,7 +15,7 @@ depends=(
   libjpeg
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('01a175442ec209b838a56a66a3908193aca6f040d537da7838d9368e46913072')
+sha256sums=('c8d9f609c3088f91ec4853d6cc0e66511038a465811dea79ca6a0c09519178ca')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
