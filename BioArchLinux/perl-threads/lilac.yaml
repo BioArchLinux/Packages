@@ -9,7 +9,7 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
 update_on:
-  - regex: threads-(\d+.\d+)
+  - regex: threads-(\d+.\d+_\d+)
     source: regex
     url: https://metacpan.org/dist/threads
   - alias: perl
