@@ -2,7 +2,7 @@
 _pkgname=ProtHint
 pkgname=${_pkgname,,}
 pkgver=2.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Protein hint generation pipeline for gene finding in eukaryotic genomes."
 arch=('x86_64')
 license=('custom')
