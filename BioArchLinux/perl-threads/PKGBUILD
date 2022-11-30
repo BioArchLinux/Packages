@@ -1,0 +1,49 @@
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Generator  : CPANPLUS::Dist::Arch 1.32
+
+pkgname='perl-threads'
+pkgver='2.21'
+pkgrel='1'
+pkgdesc="Perl interpreter-based threads"
+arch=('i686' 'x86_64')
+license=('PerlArtistic' 'GPL')
+options=('!emptydirs')
+depends=('perl>=0' 'glibc>=2.36')
+makedepends=()
+url='https://metacpan.org/release/threads'
+source=("http://search.cpan.org/CPAN/authors/id/J/JD/JDHEDDEN/threads-${pkgver}.tar.gz")
+md5sums=('45fa009703074f0b0b0d036cb23706e3')
+sha512sums=('2604b46e2befd54529d874ca4b135976c42cef0955bf4b29206eab061bfa61d84bde29cce0a68c7842e304707a114db6550af18a3d1d85a87ef0e5e2e39a4222')
+_distdir="threads-$pkgver"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,23 @@
+# Contributor: sukanka <su975853527 at gmail.com>
+_pkgname=ProtHint
+pkgname=${_pkgname,,}
+pkgver=2.6.0
+pkgrel=0
+pkgdesc="Protein hint generation pipeline for gene finding in eukaryotic genomes."
+arch=('x86_64')
+license=('custom')
+depends=('python' 'perl' 'diamond' 'perl-mce' 'perl-yaml' 'perl-math-utils' 'perl-threads')
+url="https://github.com/gatech-genemark/ProtHint"
+source=("$pkgname-$pkgver.tar.gz::${url}/releases/download/v${pkgver}/${_pkgname}-${pkgver}.tar.gz")
+sha256sums=('f6a8ef366d924508c953a4cedc660442694dfa41ec2180da32799be5094fe51f')
+
+package() {
+  install -d "$pkgdir"/usr/lib/$_pkgname
+  cp -rf "$srcdir"/$_pkgname-$pkgver/* "$pkgdir"/usr/lib/$_pkgname
+  cd "$pkgdir"/usr/lib/$_pkgname
+  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$_pkgname/LICENSE
+
+  rm -rf docs .gitignore CHANGELOG README.md LICENSE
+  ln -sf /usr/bin/diamond "$pkgdir"/usr/lib/$_pkgname/dependencies/diamond
+
+}
