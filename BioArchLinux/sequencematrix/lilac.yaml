@@ -1,8 +1,0 @@
-build_prefix: extra-x86_64
-maintainers:
-  - github: starsareintherose
-    email: kuoi@bioarchlinux.org
-update_on:
-  - source: github
-    github: gaurav/taxondna
-    use_latest_release: true
