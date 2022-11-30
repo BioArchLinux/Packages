@@ -7,7 +7,7 @@ pkg1=SequenceMatrix
 pkg2=SpeciesIdentifier
 pkg3=GenBankExplorer
 pkgver=1.9
-pkgrel=6
+pkgrel=7
 depends=('java-runtime=11')
 makedepends=('maven')
 pkgdesc="Taxonomy-aware DNA sequence processing toolkit"
