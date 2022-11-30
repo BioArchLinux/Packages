@@ -12,7 +12,6 @@ post_build_script: |
 update_on:
   - source: github
     github: MesquiteProject/MesquiteCore
-    use_max_tag: true
-    prefix: 'v'
-    from_pattern: (\d+\.\d+-\w+-\d+)
+    use_latest_release: true
+    from_pattern: v(\d+\.\d+-\w+-\d+)
     to_pattern: \1\.\2_\3_\4
