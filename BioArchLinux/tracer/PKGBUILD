@@ -3,11 +3,11 @@
 pkgname=tracer
 _pkgname=Tracer
 pkgver=1.7.2
-pkgrel=9
+pkgrel=10
 pkgdesc="Posterior summarisation in Bayesian phylogenetics. https://doi.org/10.1093/sysbio/syy032"
 arch=('x86_64')
 url="https://github.com/beast-dev/tracer"
-license=('unknown')
+license=('LGPL2')
 source=("https://github.com/beast-dev/tracer/archive/refs/tags/v${pkgver}.tar.gz"
 	"tracer.desktop"
 	"tracer")
@@ -22,6 +22,6 @@ build() {
 }
 package() {
   cd $pkgname-$pkgver
-  install -Dm 644 release/Linux/Tracer.png $pkgdir/usr/share/pixmaps/Tracer.png
+  install -Dm 644 release/Linux/icons/Tracer.png $pkgdir/usr/share/pixmaps/Tracer.png
   install -Dm 755 build/dist/tracer.jar $pkgdir/usr/share/tracer/tracer.jar
 }
