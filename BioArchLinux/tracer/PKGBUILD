@@ -3,7 +3,7 @@
 pkgname=tracer
 _pkgname=Tracer
 pkgver=1.7.2
-pkgrel=7
+pkgrel=8
 pkgdesc="Posterior summarisation in Bayesian phylogenetics. https://doi.org/10.1093/sysbio/syy032"
 arch=('x86_64')
 url="https://github.com/beast-dev/tracer"
@@ -15,7 +15,7 @@ sha256sums=('fd891e2244445fef71ab8010d8fab924abff2e5436e035bb335834e7c2e6d83b'
             '07c099a1d34b4718d46e083b98cf9352e50d81ee6cb7346544cd9d1248f02ea8'
             '6f88890e5e08a9280a966c29a4ca8678ec6dcbb445f2308c3845af3fb3615ff0')
 depends=('java-runtime=8')
-makedepends=('ant')
+makedepends=('ant' 'java-enviroment=8')
 build() {
   cd $pkgname-$pkgver
   ant dist
