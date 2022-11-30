@@ -4,8 +4,10 @@ maintainers:
     email: bipin@ccmb.res.in
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  vcs_update()
 post_build_script: |
   git_add_files('PKGBUILD')
+  git_pkgbuild_commit()
   git_commit() 
 update_on:
   - source: github
