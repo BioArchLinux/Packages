@@ -1,5 +1,4 @@
-# Maintainer: Malacology <guoyizhang at malacology dot com>
-# Contributor: Malacology <guoyizhang at malacology dot com>
+# Maintainer: Malacology <guoyizhang at malacology dot net>
 
 pkgbase=taxondna
 pkgname=('sequencematrix' 'speciesidentifier' 'genbankexplorer')
