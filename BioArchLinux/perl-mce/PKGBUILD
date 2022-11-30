@@ -2,8 +2,8 @@
 # Generator  : CPANPLUS::Dist::Arch 1.32
 
 pkgname='perl-mce'
-pkgver='1.879'
-pkgrel='1'
+pkgver=1.881
+pkgrel=1
 pkgdesc="Many-Core Engine for Perl providing parallel processing capabilities"
 arch=('any')
 license=('PerlArtistic' 'GPL')
@@ -12,8 +12,8 @@ depends=('perl>=5.8.1')
 makedepends=()
 url='https://metacpan.org/release/MCE'
 source=("http://search.cpan.org/CPAN/authors/id/M/MA/MARIOROY/MCE-${pkgver}.tar.gz")
-md5sums=('1fb046fb3d9a39e345a017ae12b7c482')
-sha512sums=('665ef022394e2bc3a498fb1743f94ceee2ed77d3f5c344c49d5d1e1eefb7ace58899e42a69d24a5a17c2665e9ca7888f43b8c8951949b7f2eb1510ad4621a744')
+md5sums=('690b999d512273cadab67def36538c9b')
+sha512sums=('5417146261f9c8069fdf7f99ef5f366e0772d18bee5ea2ef7642b3927e105a99e4f6e120ce5be5a2ecbf6cd2499cf7fafbfe1852f908c483942923ea2deaff34')
 _distdir="MCE-${pkgver}"
 
 build() {
