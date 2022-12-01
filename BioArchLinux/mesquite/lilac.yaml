@@ -10,5 +10,8 @@ post_build_script: |
   git_commit()
   update_aur_repo()
 update_on:
-  - source: cmd
-    cmd: curl -sS https://github.com/MesquiteProject/MesquiteCore/tags | grep '/MesquiteProject/MesquiteCore/releases/tag' | head -n 1 | sed 's@MesquiteProject/MesquiteCore/releases/tag/v@ @g' | awk '{print $6}' | sed 's@"@@g' | sed 's@-@_@g'
+- source: github
+    github: MesquiteProject/MesquiteCore
+    use_latest_release: true
+    from_pattern: v(\d+)\.(\d+)-(\w+)-(\d+)
+    to_pattern: \1\.\2_\3_\4
