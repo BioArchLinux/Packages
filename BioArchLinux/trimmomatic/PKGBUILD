@@ -1,21 +1,32 @@
 # Maintainer: ZJLIN <zjin841126@gmail.com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+
 pkgname=trimmomatic
+_pkgname=Trimmomatic
 pkgver=0.39
-pkgrel=5
+pkgrel=6
 pkgdesc='Trimmomatic: A flexible read trimming tool for Illumina NGS data'
 arch=('any')
 url="http://www.usadellab.org/cms/?page=trimmomatic"
 license=('GPL3')
-depends=('java-runtime>=6')
-source=("http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-$pkgver.zip"
-        "trimmomatic"
+depends=('java-runtime')
+makedepends=('java-environment=11' 'ant')
+source=("https://github.com/usadellab/Trimmomatic/archive/refs/tags/v${pkgver}.tar.gz"
+        "$pkgname"
+	"$pkgname.patch"
         )
-md5sums=('271ed9dca91132eee0c960e0ae487bcd'
-         'acd57c8656a1a398b42b50677a79df9c')
-
+md5sums=('2f80c01dd0876f7761b33ed77768a76c'
+         '0716cd4695be3e8ea6d4a5aa78f7eb85'
+         '4612f0187c29f7be68433778f884a067')
+prepare() {
+  cd $_pkgname-$pkgver
+  patch -N -i $srcdir/$pkgname.patch
+}
+build() {
+  cd $_pkgname-$pkgver
+  ant
+}
 package() {
-    mkdir -p  $pkgdir/usr/share/java/${pkgname}
-    cp -rf  $srcdir/Trimmomatic-$pkgver/* $pkgdir/usr/share/java/${pkgname}
-
-    install -Dm755 $srcdir/trimmomatic -t  $pkgdir/usr/bin
+  install -Dm 755 $srcdir/$_pkgname-$pkgver/dist/jar/$pkgname-$pkgver.jar $pkgdir/usr/share/java/$pkgname/$pkgname.jar
+  install -Dm 755 $srcdir/$pkgname -t  $pkgdir/usr/bin
 }
