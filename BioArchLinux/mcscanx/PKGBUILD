@@ -3,13 +3,13 @@
 pkgname=mcscanx
 _pkgname=MCScanX
 pkgver=r53.b1ca533
-pkgrel=1
+pkgrel=2
 pkgdesc="Multiple Collinearity Scan toolkit X version https://doi.org/10.1093/nar/gkr1293"
 arch=('x86_64')
 url="https://github.com/wyp1125/MCScanX"
 license=('BSD')
 
-depends=('java-environment' 'glibc')
+depends=('java-runtime' 'glibc')
 makedepends=('make' 'git')
 optdepends=('perl')
 
