@@ -10,7 +10,7 @@ post_build_script: |
   git_commit()
   update_aur_repo()
 update_on:
-- source: github
+  - source: github
     github: MesquiteProject/MesquiteCore
     use_latest_release: true
     from_pattern: v(\d+)\.(\d+)-(\w+)-(\d+)
