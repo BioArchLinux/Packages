@@ -3,7 +3,7 @@
 
 pkgname=jane
 pkgver=4.01
-pkgrel=3
+pkgrel=4
 pkgdesc="software tool for the cophylogeny reconstruction problem. https://doi.org/10.1186/1748-7188-5-16"
 arch=('x86_64')
 url="https://www.cs.hmc.edu/~hadas/jane/"
@@ -19,5 +19,5 @@ package() {
     install -dm755 "$pkgdir"/usr/share/{jane,icons,applications}
     install -m 755 ${srcdir}/*.desktop ${pkgdir}/usr/share/applications
     install -m 755 ${srcdir}/*.png ${pkgdir}/usr/share/icons
-    mv "$srcdir"/* "$pkgdir"/usr/share/jane
+    mv "$srcdir"/lib "$pkgdir"/usr/share/jane
 }
