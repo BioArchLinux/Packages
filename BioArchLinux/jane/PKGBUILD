@@ -3,7 +3,7 @@
 
 pkgname=jane
 pkgver=4.01
-pkgrel=4
+pkgrel=5
 pkgdesc="software tool for the cophylogeny reconstruction problem. https://doi.org/10.1186/1748-7188-5-16"
 arch=('x86_64')
 url="https://www.cs.hmc.edu/~hadas/jane/"
