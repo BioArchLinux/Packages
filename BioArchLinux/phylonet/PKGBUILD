@@ -4,7 +4,7 @@
 pkgname=phylonet
 _pkgname=PhyloNet
 pkgver=3.8.4
-pkgrel=2
+pkgrel=3
 depends=('java-runtime')
 makedepends=('ant' 'java-environment=8')
 pkgdesc="suite of software tools for reconstructing/analyzing phylogenetic networks in the presence of reticulate evolutionary events. https://doi.org/10.1093/sysbio/syy015"
