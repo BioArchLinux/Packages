@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=Tracer
 MimeType=
-Exec=java -jar /usr/share/Tracer/lib/tracer.jar
+Exec=java -jar /usr/share/tracer/tracer.jar
 Type=Application
 Terminal=flase
-Icon=/usr/share/Tracer/images/Tracer.png
+Icon=Tracer
 Comment=Tracer
 X-KDE-StartupNotify=false
 Categories=System;
