@@ -10,7 +10,7 @@ url="https://github.com/wyp1125/MCScanX"
 license=('BSD')
 
 depends=('java-runtime' 'glibc')
-makedepends=('make' 'git')
+makedepends=('make' 'git' 'java-environmnet')
 optdepends=('perl')
 
 source=(git+https://github.com/wyp1125/MCScanX.git)
