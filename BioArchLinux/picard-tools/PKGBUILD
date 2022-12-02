@@ -4,7 +4,7 @@
 pkgname=picard-tools
 _pkgname=picard
 pkgver=2.27.5
-pkgrel=3
+pkgrel=4
 pkgdesc='set of tools for working with next generation sequencing data in the BAM format'
 arch=(x86_64)
 url="https://github.com/broadinstitute/picard"
