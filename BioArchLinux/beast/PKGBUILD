@@ -2,8 +2,8 @@
 # Contributor: Malacology <guoyizhang at malacology dot net>
 
 pkgname=beast
-pkgver=1.10.5pre_thorney_v0.1.2
-pkgrel=2
+pkgver=sars#cov#2#origins
+pkgrel=1
 pkgdesc="Bayesian Evolutionary Analysis Sampling Trees. https://doi.org/10.1186/1471-2148-7-214"
 arch=('x86_64')
 url="http://beast.community/"
@@ -16,7 +16,7 @@ source=("https://github.com/beast-dev/beast-mcmc/archive/refs/tags/${pkgver//#/-
 	"beast-treeannotator.desktop"
 	"beast-treestat.desktop"
 	"fix_bin.patch")
-sha256sums=('7dac6881ca3cc53bb178388a068e735e3e11d1e1744bdcda1ac1699efe75f0e2'
+sha256sums=('fab8750313b66844f4dd8dcacfa55913f30bb877bded87057ba347d38cc9dc75'
             'bd6f29c93a6ff8145de5af3137f976bfd84c4441bb3ee32778af4b0bcbcdb18b'
             '1b84708063fd2ac39b8ff234c75d0fba2fc1737b82c926d9844db2694a21a91c'
             '98b7b7cc4c2b744031b27d12bf737a6cb37a58e2e127539b53d49d4b7ada1524'
