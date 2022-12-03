@@ -2,8 +2,8 @@
 # Contributor: Malacology <guoyizhang at malacology dot net>
 
 pkgname=beast
-pkgver=sars#cov#2#origins
-pkgrel=2
+pkgver=sars__cov__2__origins
+pkgrel=1
 pkgdesc="Bayesian Evolutionary Analysis Sampling Trees. https://doi.org/10.1186/1471-2148-7-214"
 arch=('x86_64')
 url="http://beast.community/"
