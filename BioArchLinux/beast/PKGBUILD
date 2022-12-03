@@ -3,7 +3,7 @@
 
 pkgname=beast
 pkgver=sars#cov#2#origins
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian Evolutionary Analysis Sampling Trees. https://doi.org/10.1186/1471-2148-7-214"
 arch=('x86_64')
 url="http://beast.community/"
