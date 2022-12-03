@@ -25,7 +25,7 @@ sha256sums=('7dac6881ca3cc53bb178388a068e735e3e11d1e1744bdcda1ac1699efe75f0e2'
             '385c9078b0cac257b94a115ed000f71b9eb8b1d6c7edc1ba3e75a9724e11df05'
             '086b899c6f4bfa43d4af61d497c0265d087e919de5723faa6b3e58ae48fb6813')
 depends=('java-runtime=8')
-makedepends=('java-environment' 'ant' 'cmake' 'beagle-lib')
+makedepends=('java-environment=8' 'ant' 'cmake' 'beagle-lib')
 optdepends=('beagle-lib')
 build() {
   cd $srcdir/$pkgname-mcmc-$pkgver 
