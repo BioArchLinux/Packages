@@ -12,8 +12,8 @@ post_build_script: |
 update_on:
   - source: github
     github: beast-dev/beast-mcmc
-    use_max_tag: true
-    prefix: 'v'
-    include_regex: '[^v]+'
+    use_latest_release: true
+#    prefix: 'v'
+#    include_regex: '[^v]+'
 repo_depends:
   - beagle-lib
