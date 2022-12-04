@@ -7,7 +7,7 @@ _pkgname=rgeos
 _pkgver=0.5-9
 pkgname=r-${_pkgname,,}
 pkgver=0.5.9
-pkgrel=5
+pkgrel=6
 pkgdesc="Interface to Geometry Engine - Open Source ('GEOS')"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
