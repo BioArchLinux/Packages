@@ -4,16 +4,20 @@ _pkgname=stringr
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=1.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple, Consistent Wrappers for Common String Operations'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-cli
   r-glue
+  r-lifecycle
   r-magrittr
+  r-rlang
   r-stringi
+  r-vctrs
 )
 optdepends=(
   r-covr
