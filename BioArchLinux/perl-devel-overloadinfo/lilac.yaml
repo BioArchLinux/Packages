@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: bipin@ccmb.res.in
+update_on:
+  - regex: Devel-OverloadInfo-(\d+.\d+)
+    source: regex
+    url: https://metacpan.org/dist/Devel-OverloadInfo
+  - alias: perl
