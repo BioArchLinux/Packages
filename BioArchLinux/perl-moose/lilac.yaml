@@ -7,3 +7,7 @@ update_on:
     source: regex
     url: https://metacpan.org/dist/Moose
   - alias: perl
+repo_depends:
+  - perl-test-cleannamespaces
+  - perl-module-runtime-conflicts
+  - perl-devel-overloadinfo
