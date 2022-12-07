@@ -1,54 +1,49 @@
-#!/bin/bash
-
-# Maintainer: PumpkinCheshire <me at pumpkincheshire dot com>
-# Contributor: John D Jones III AKA jnbek <jnbek1972 -_AT_- g m a i l -_Dot_- com>
+# Maintainer : Bipin Kumar <bipin@ccmb.res.in>
+# Generator  : CPANPLUS::Dist::Arch 1.32
 
 pkgname='perl-graph'
-_dist='Graph'
 pkgver='0.9725'
-pkgrel=2
-pkgdesc='graph data structures and algorithms'
-url='https://metacpan.org/release/Graph'
+pkgrel='1'
+pkgdesc="graph data structures and algorithms"
 arch=('any')
 license=('PerlArtistic' 'GPL')
 options=('!emptydirs')
-depends=(
-  'perl'
-  'perl-heap'
-  'perl-set-object'
-)
-
-source=("http://search.cpan.org/CPAN/authors/id/E/ET/ETJ/$_dist-$pkgver.tar.gz")
-b2sums=('ab63a75653848ed6297f687cf8431f9e871f9b0473448008ad10d0f8e9d122bddc469069d4eefff1d0d03ba38facca5cc41048afea5f654b155812786e21d86c')
+depends=('perl-heap>=0.80' 'perl-set-object>=1.40' 'perl>=5.006')
+makedepends=()
+url='https://metacpan.org/dist/Graph'
+source=("http://search.cpan.org/CPAN/authors/id/E/ET/ETJ/Graph-$pkgver.tar.gz")
+md5sums=('078ff2e4a94085921384606f97625824')
+sha512sums=('51638c45dd7b21a87e3d6771f06dd5fae1e71da7dea4d337de2e540de4ab625a53e349799ee4c0cc77108fff4c47027d33f501edafb52daaef699f82edd5c3d3')
+_distdir="Graph-$pkgver"
 
 build() {
-  cd "$srcdir/$_dist-$pkgver" || exit
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
 
-  unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
-
-  export PERL_MM_USE_DEFAULT=1 \
-    PERL_AUTOINSTALL=--skipdeps \
-    MODULEBUILDRC=/dev/null
-
-  /usr/bin/perl Makefile.PL
-  make
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
 }
 
 check() {
-  cd "$srcdir/$_dist-$pkgver" || exit
-
-  unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
-  export PERL_MM_USE_DEFAULT=1
-
-  make test
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
 }
 
 package() {
-  cd "$srcdir/$_dist-$pkgver" || exit
-
-  unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
-
-  make install INSTALLDIRS=vendor DESTDIR="$pkgdir"
-
-  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" \( -name .packlist -o -name perllocal.pod \) -delete
 }
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:
