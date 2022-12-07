@@ -1,9 +1,0 @@
-build_prefix: extra-x86_64
-maintainers:
-  - github: kbipinkumar
-    email: bipin@ccmb.res.in
-update_on:
-  - regex: Graph-(\d+.\d+)
-    source: regex
-    url: https://metacpan.org/dist/Graph
-  - alias: perl
