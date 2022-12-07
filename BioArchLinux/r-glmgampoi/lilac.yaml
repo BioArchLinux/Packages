@@ -8,12 +8,13 @@ repo_depends:
 - r-delayedarray
 - r-delayedmatrixstats
 - r-hdf5array
+- r-matrixgenerics
 - r-matrixstats
 - r-rcpp
 - r-rcpparmadillo
-- r-summarizedexperiment
-- r-singlecellexperiment
 - r-rlang
+- r-singlecellexperiment
+- r-summarizedexperiment
 update_on:
 - regex: glmGamPoi_([\d._-]+).tar.gz
   source: regex

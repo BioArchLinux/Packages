@@ -3,9 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-akima
-- r-multtest
 - r-interp
+- r-multtest
 update_on:
 - regex: OCplus_([\d._-]+).tar.gz
   source: regex

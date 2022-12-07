@@ -8,6 +8,7 @@ repo_depends:
 - r-gtable
 - r-rlang
 - r-scales
+- r-tibble
 update_on:
 - regex: ggside_([\d._-]+).tar.gz
   source: regex

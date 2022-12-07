@@ -4,15 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-corpcor
+- r-doparallel
 - r-epidish
+- r-ggally
+- r-ggplot2
 - r-limma
 - r-nnls
-- r-reffreeewas
+- r-quadprog
 - r-summarizedexperiment
-- r-doparallel
-- r-ggplot2
 - r-tidyr
-- r-ggally
 update_on:
 - regex: TOAST_([\d._-]+).tar.gz
   source: regex

@@ -4,7 +4,7 @@ _pkgname=formatR
 _pkgver=1.12
 pkgname=r-${_pkgname,,}
 pkgver=1.12
-pkgrel=7
+pkgrel=9
 pkgdesc='Format R Code Automatically'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,9 +13,9 @@ depends=(
   r
 )
 optdepends=(
-  r-codetools
   r-knitr
   r-rmarkdown
+  r-rstudioapi
   r-shiny
   r-testit
 )

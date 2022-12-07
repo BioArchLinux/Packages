@@ -4,19 +4,19 @@ _pkgname=cli
 _pkgver=3.4.1
 pkgname=r-${_pkgname,,}
 pkgver=3.4.1
-pkgrel=1
+pkgrel=3
 pkgdesc='Helpers for Developing Command Line Interfaces'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  r-glue
 )
 optdepends=(
-  r-asciicast
   r-callr
   r-covr
+  r-digest
+  r-glue
   r-grdevices
   r-htmltools
   r-htmlwidgets
@@ -27,8 +27,8 @@ optdepends=(
   r-ps
   r-rlang
   r-rmarkdown
+  r-rprojroot
   r-rstudioapi
-  r-shiny
   r-testthat
   r-tibble
   r-whoami

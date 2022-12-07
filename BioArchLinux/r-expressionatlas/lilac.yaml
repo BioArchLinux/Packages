@@ -4,13 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-biocstyle
 - r-httr
+- r-jsonlite
 - r-limma
+- r-rcurl
 - r-s4vectors
 - r-summarizedexperiment
 - r-xml
 - r-xml2
-- r-biocstyle
 update_on:
 - regex: ExpressionAtlas_([\d._-]+).tar.gz
   source: regex

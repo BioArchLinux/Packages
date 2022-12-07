@@ -6,7 +6,9 @@ repo_depends:
 - r-distributional
 - r-dplyr
 - r-ggplot2
+- r-glue
 - r-hdinterval
+- r-numderiv
 - r-rlang
 - r-scales
 - r-tibble

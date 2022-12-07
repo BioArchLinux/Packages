@@ -4,14 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
-- r-genomicfeatures
-- r-genomicranges
-- r-iranges
+- r-biostrings
 - r-jsonlite
 - r-remotes
-- r-rsamtools
-- r-rtracklayer
-- r-shortread
 update_on:
 - regex: systemPipeRdata_([\d._-]+).tar.gz
   source: regex

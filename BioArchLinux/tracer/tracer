@@ -1,0 +1,2 @@
+#!/bin/bash
+java -Xms64m -Xmx10000m -jar /usr/share/tracer/tracer.jar $*

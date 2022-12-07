@@ -3,8 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-ellipsis
-- r-glue
+- r-cli
 - r-rlang
 - r-vctrs
 - r-warp

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=
+Encoding=UTF-8
+Exec=beauti
+Icon=beauti
+MimeType=
+Name=beauti
+ServiceTypes=
+SwallowExec=
+SwallowTitle=
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=root
+X-GNOME-UsesNotifications=true

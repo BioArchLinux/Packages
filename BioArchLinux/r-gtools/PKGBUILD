@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gtools
-_pkgver=3.9.3
+_pkgver=3.9.4
 pkgname=r-${_pkgname,,}
-pkgver=3.9.3
-pkgrel=5
+pkgver=3.9.4
+pkgrel=1
 pkgdesc='Various R Programming Tools'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,7 @@ optdepends=(
   r-taxize
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('7afb53277b382d5752f4597ae433f3c0addf5e8eb24d01a9562faf2a01e33133')
+sha256sums=('59cf8b194fe98b1cc05dbb4d686810a1068f59d8b402b731548a898ece85f111')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

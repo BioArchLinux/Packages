@@ -4,9 +4,9 @@ _pkgname=markdown
 _pkgver=1.4
 pkgname=r-${_pkgname,,}
 pkgver=1.4
-pkgrel=1
+pkgrel=3
 pkgdesc="Render Markdown with the C Library 'Sundown'"
-arch=('x86_64')
+arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
@@ -18,6 +18,8 @@ depends=(
 optdepends=(
   r-knitr
   r-rcurl
+  r-rmarkdown
+  r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('e0e3ade62942a38c129de76454a8cc513487cb00967253a7888cc94f6f8e3c7e')

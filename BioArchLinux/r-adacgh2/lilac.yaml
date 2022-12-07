@@ -7,7 +7,6 @@ repo_depends:
 - r-bit
 - r-dnacopy
 - r-ff
-- r-ffbase
 - r-glad
 - r-snapcgh
 - r-tilingarray

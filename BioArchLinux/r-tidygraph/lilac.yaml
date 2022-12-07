@@ -3,12 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
+- r-cpp11
 - r-dplyr
 - r-igraph
 - r-magrittr
 - r-pillar
 - r-r6
-- r-rcpp
 - r-rlang
 - r-tibble
 - r-tidyr

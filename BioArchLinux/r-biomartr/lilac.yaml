@@ -19,6 +19,7 @@ repo_depends:
 - r-readr
 - r-stringr
 - r-tibble
+- r-withr
 - r-xml
 update_on:
 - regex: biomartr_([\d._-]+).tar.gz

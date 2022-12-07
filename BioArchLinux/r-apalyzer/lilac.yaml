@@ -5,12 +5,12 @@ maintainers:
 repo_depends:
 - r-deseq2
 - r-dplyr
-- r-ensembldb
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
 - r-ggrepel
+- r-hybridmtest
 - r-repmis
 - r-rsamtools
 - r-rsubread
@@ -18,7 +18,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 - r-variantannotation
-- r-hybridmtest
 update_on:
 - regex: APAlyzer_([\d._-]+).tar.gz
   source: regex

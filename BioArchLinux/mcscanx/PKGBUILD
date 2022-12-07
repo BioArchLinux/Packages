@@ -1,18 +1,16 @@
-# guoyi
+# Maintainer: Guoyi Zhang <guoyi zhang at malacology dot net>
 
 pkgname=mcscanx
 _pkgname=MCScanX
 pkgver=r53.b1ca533
-pkgrel=1
+pkgrel=6
 pkgdesc="Multiple Collinearity Scan toolkit X version https://doi.org/10.1093/nar/gkr1293"
 arch=('x86_64')
 url="https://github.com/wyp1125/MCScanX"
 license=('BSD')
-
-depends=('java-environment' 'glibc')
-makedepends=('make' 'git')
+depends=('java-runtime=11' 'glibc')
+makedepends=('make' 'git' 'java-environment=11')
 optdepends=('perl')
-
 source=(git+https://github.com/wyp1125/MCScanX.git)
 sha256sums=('SKIP')
 pkgver(){
@@ -38,3 +36,4 @@ do
 done
 
 }
+

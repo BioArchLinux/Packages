@@ -4,10 +4,10 @@ maintainers:
   email: starsareintherose@outlook.com
 repo_depends:
 - r-affy
+- r-affyio
+- r-aplpack
 - r-snow
 - r-vsn
-- r-aplpack
-- r-affyio
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

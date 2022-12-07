@@ -10,7 +10,6 @@ repo_depends:
 - r-numderiv
 - r-optimr
 - r-phyloseq
-- r-rmutil
 - r-scales
 - r-trust
 - r-vgam

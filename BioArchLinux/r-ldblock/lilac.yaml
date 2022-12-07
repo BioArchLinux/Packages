@@ -4,14 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
-- r-ensdb.hsapiens.v75
-- r-ensembldb
-- r-genomeinfodb
-- r-genomicfiles
 - r-httr
-- r-rsamtools
-- r-snpstats
-- r-variantannotation
+- r-rlang
 update_on:
 - regex: ldblock_([\d._-]+).tar.gz
   source: regex

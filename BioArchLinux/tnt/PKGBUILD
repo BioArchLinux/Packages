@@ -1,10 +1,10 @@
-# Maintainer: Malacology <guoyizhang at malacology dot com>
-# Contributor: Malacology <guoyizhang at malacology dot com>
+# Maintainer: Malacology <guoyizhang at malacology dot net>
+# Contributor: Malacology <guoyizhang at malacology dot net>
 
 pkgbase=tnt
 pkgname=('tnt' 'tnt-mpi' 'tnt-gui' 'tnt-extra')
-pkgver=2022.11.18
-pkgrel=2
+pkgver=2022.12.01
+pkgrel=1
 pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
@@ -12,7 +12,7 @@ license=('custom')
 makedepends=('unzip')
 depends=('ncurses5-compat-libs')
 source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip")
-sha256sums=('afff8fd2f9055894becc32e1a8dcea87ac2c3ab17c5735629a2e6d5ce502e683')
+sha256sums=('7b3da75376593f704f4327397a8a41206eadd8fca20ef8cc00c82276ed110e21')
 prepare () {
 	cd $srcdir/TNT-Docs_n_Datasets
 	chmod a+r $srcdir/TNT-Docs_n_Datasets -R

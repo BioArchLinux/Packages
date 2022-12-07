@@ -10,6 +10,7 @@ repo_depends:
 - r-igraph
 - r-maaslin2
 - r-metafor
+- r-stringr
 - r-tidyr
 update_on:
 - regex: MMUPHin_([\d._-]+).tar.gz

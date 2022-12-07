@@ -8,7 +8,6 @@ repo_depends:
 - r-ggplotify
 - r-magrittr
 - r-patchwork
-- r-yulab.utils
 update_on:
 - regex: aplot_([\d._-]+).tar.gz
   source: regex

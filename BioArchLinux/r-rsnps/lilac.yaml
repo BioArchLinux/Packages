@@ -8,7 +8,6 @@ repo_depends:
 - r-httr
 - r-jsonlite
 - r-plyr
-- r-rjsonio
 - r-stringr
 update_on:
 - regex: rsnps_([\d._-]+).tar.gz

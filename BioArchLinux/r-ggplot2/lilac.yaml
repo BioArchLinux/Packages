@@ -3,13 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-digest
+- r-cli
 - r-glue
 - r-gtable
 - r-isoband
+- r-lifecycle
 - r-rlang
 - r-scales
 - r-tibble
+- r-vctrs
 - r-withr
 update_on:
 - regex: ggplot2_([\d._-]+).tar.gz

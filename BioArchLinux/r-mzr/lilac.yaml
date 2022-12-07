@@ -9,7 +9,6 @@ repo_depends:
 - r-protgenerics
 - r-rcpp
 - r-rhdf5lib
-- r-zlibbioc
 update_on:
 - regex: mzR_([\d._-]+).tar.gz
   source: regex

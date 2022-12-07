@@ -6,19 +6,16 @@ repo_depends:
 - r-babelgene
 - r-data.table
 - r-delayedarray
-- r-delayedmatrixstats
 - r-dplyr
-- r-genomeinfodbdata
 - r-ggplot2
 - r-ggpubr
+- r-ggtree
 - r-gprofiler2
 - r-grr
 - r-homologene
 - r-jsonlite
-- r-matrix.utils
 - r-patchwork
 - r-repmis
-- r-ggtree
 update_on:
 - regex: orthogene_([\d._-]+).tar.gz
   source: regex

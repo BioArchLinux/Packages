@@ -5,7 +5,7 @@ _pkgname=MatchIt
 _pkgver=4.5.0
 pkgname=r-${_pkgname,,}
 pkgver=4.5.0
-pkgrel=1
+pkgrel=3
 pkgdesc='Nonparametric Preprocessing for Parametric Causal Inference'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,11 +25,12 @@ optdepends=(
   r-glmnet
   r-gurobi
   r-knitr
-  r-lmtest
+  r-marginaleffects
   r-matching
   r-mgcv
   r-nnet
   r-optmatch
+  r-quickmatch
   r-randomforest
   r-rcppprogress
   r-rgenoud

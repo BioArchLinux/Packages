@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-gap.datasets
 - r-dplyr
+- r-gap.datasets
 - r-ggplot2
 - r-plotly
 update_on:

@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-nanotime
 - r-rcpp
+- r-rcppspdlog
+- r-spdl
 update_on:
 - regex: tiledb_([\d._-]+).tar.gz
   source: regex

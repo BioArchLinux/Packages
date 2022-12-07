@@ -10,6 +10,7 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-iranges
+- r-s4vectors
 - r-seqinr
 - r-stringr
 update_on:

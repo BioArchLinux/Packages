@@ -3,18 +3,17 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-quadprog
 - r-biobase
-- r-bsgenome
-- r-variantannotation
 - r-biostrings
+- r-bsgenome
 - r-genomeinfodb
 - r-genomicranges
+- r-quadprog
 - r-rtracklayer
 - r-summarizedexperiment
+- r-variantannotation
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/SigsPack
 - alias: r
-

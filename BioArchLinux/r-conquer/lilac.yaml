@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-caret
 - r-matrixstats
 - r-rcpp
 - r-rcpparmadillo

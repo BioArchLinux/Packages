@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-circlize
 - r-complexheatmap
+- r-matrixstats
 - r-randomcolor
 - r-s4vectors
 - r-seriation

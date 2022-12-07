@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+repo_depends:
+  - diamond
+  - perl-mce
+  - perl-math-utils
+  - perl-threads
+update_on:
+  - source: github
+    github: gatech-genemark/ProtHint
+    use_latest_release: true
+    prefix: "v"

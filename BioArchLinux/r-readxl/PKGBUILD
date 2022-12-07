@@ -4,7 +4,7 @@ _pkgname=readxl
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=1.4.1
-pkgrel=1
+pkgrel=3
 pkgdesc='Read Excel Files'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,16 +12,13 @@ license=('GPL')
 depends=(
   r
   r-cellranger
-  r-progress
-  r-rcpp
-  r-tibble
   r-cpp11
+  r-progress
+  r-tibble
 )
 optdepends=(
-  r-covr
   r-knitr
   r-rmarkdown
-  r-rprojroot
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

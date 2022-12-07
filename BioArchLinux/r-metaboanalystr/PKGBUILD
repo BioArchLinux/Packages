@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=MetaboAnalystR
-_pkgver=3.2.0
+_pkgver=3.3.0
 pkgname=r-${_pkgname,,}
-pkgver=3.2.0
-pkgrel=3
+pkgver=3.3.0
+pkgrel=1
 pkgdesc="An R Package for Comprehensive Analysis of Metabolomics Data"
 arch=('x86_64')
 url="https://github.com/xia-lab/MetaboAnalystR"

@@ -12,5 +12,5 @@ repo_depends:
 update_on:
 - regex: pkgmaker_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=pkgmaker
+  url: https://cran.r-project.org/src/contrib/Archive/pkgmaker
 - alias: r

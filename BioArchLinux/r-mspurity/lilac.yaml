@@ -10,7 +10,6 @@ repo_depends:
 - r-fastcluster
 - r-foreach
 - r-ggplot2
-- r-jsonlite
 - r-magrittr
 - r-mzr
 - r-plyr
@@ -18,7 +17,6 @@ repo_depends:
 - r-reshape2
 - r-rsqlite
 - r-stringr
-- r-uuid
 update_on:
 - regex: msPurity_([\d._-]+).tar.gz
   source: regex

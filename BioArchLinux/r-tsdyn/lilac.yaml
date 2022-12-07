@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-foreach
+  - r-forecast
+  - r-mnormt
+  - r-tseries
+  - r-tserieschaos
+  - r-urca
+  - r-vars
+update_on:
+  - regex: tsDyn_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=tsDyn
+  - alias: r

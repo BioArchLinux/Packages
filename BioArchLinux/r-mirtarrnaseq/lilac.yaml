@@ -8,12 +8,12 @@ repo_depends:
 - r-corrplot
 - r-data.table
 - r-dplyr
+- r-ggplot2
 - r-pheatmap
 - r-pscl
 - r-purrr
 - r-r.utils
 - r-reshape2
-- r-ggplot2
 update_on:
 - regex: mirTarRnaSeq_([\d._-]+).tar.gz
   source: regex

@@ -4,7 +4,7 @@ _pkgname=testthat
 _pkgver=3.1.5
 pkgname=r-${_pkgname,,}
 pkgver=3.1.5
-pkgrel=1
+pkgrel=3
 pkgdesc='Unit Testing for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,6 @@ depends=(
   r-brio
   r-callr
   r-cli
-  r-crayon
   r-desc
   r-digest
   r-ellipsis

@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
-- r-jackstraw
 - r-qvalue
 - r-snm
 - r-sva

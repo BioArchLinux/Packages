@@ -6,9 +6,9 @@ repo_depends:
 - r-ape
 - r-dplyr
 - r-httr
-- r-lazyeval
 - r-plyr
 - r-reshape2
+- r-rlang
 - r-stringi
 - r-stringr
 - r-tidyr

@@ -5,11 +5,9 @@ maintainers:
 repo_depends:
 - r-compquadform
 - r-data.table
-- r-dplyr
 - r-igraph
 - r-keggrest
 - r-magrittr
-- r-s4vectors
 - r-summarizedexperiment
 - r-tibble
 update_on:

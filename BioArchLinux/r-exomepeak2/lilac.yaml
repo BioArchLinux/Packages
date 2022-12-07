@@ -3,28 +3,24 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-apeglm
-- r-biobase
 - r-biocgenerics
 - r-biocparallel
 - r-biostrings
 - r-bsgenome
-- r-cqn
 - r-deseq2
-- r-genefilter
 - r-genomeinfodb
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
 - r-iranges
+- r-magrittr
 - r-mclust
-- r-reshape2
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
-- r-summarizedexperiment
 - r-speedglm
+- r-summarizedexperiment
 update_on:
 - regex: exomePeak2_([\d._-]+).tar.gz
   source: regex

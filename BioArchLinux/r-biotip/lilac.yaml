@@ -4,11 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-genomicranges
-- r-hmisc
 - r-igraph
 - r-psych
-- r-stringr
 - r-scran
+- r-stringr
 update_on:
 - regex: BioTIP_([\d._-]+).tar.gz
   source: regex

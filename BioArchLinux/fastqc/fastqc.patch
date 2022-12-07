@@ -1,0 +1,21 @@
+From: Guoyi Zhang <guoyizhang at malacology dot net>
+Date: Fri, 2 Dec 2022
+Subject: [PATCH] fix build.xml temp
+
+---
+
+diff --git a/build.xml b/build.xml
+index c4a6920..5f60dec 100644
+--- a/build.xml
++++ b/build.xml
+@@ -7,8 +7,8 @@
+ <project basedir="." default="build" name="FastQC">
+     <property environment="env"/>
+     <property name="debuglevel" value="source,lines,vars"/>
+-    <property name="target" value="1.5"/>
+-    <property name="source" value="1.5"/>
++    <property name="target" value="11"/>
++    <property name="source" value="11"/>
+     <path id="FastQC.classpath">
+         <pathelement location="bin"/>
+         <pathelement location="jbzip2-0.9.jar"/>

@@ -4,7 +4,7 @@ _pkgname=dbplyr
 _pkgver=2.2.1
 pkgname=r-${_pkgname,,}
 pkgver=2.2.1
-pkgrel=2
+pkgrel=4
 pkgdesc="A 'dplyr' Back End for Databases"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,12 +13,13 @@ depends=(
   r
   r-assertthat
   r-blob
+  r-cli
   r-dbi
   r-dplyr
-  r-ellipsis
   r-glue
   r-lifecycle
   r-magrittr
+  r-pillar
   r-purrr
   r-r6
   r-rlang

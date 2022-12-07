@@ -5,25 +5,25 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-biobase
+- r-chemmineob
+- r-chemminer
+- r-data.table
 - r-digest
 - r-envipat
 - r-httr
 - r-logger
 - r-msnbase
 - r-mzr
+- r-r.utils
 - r-rcdk
 - r-rcpp
 - r-rcurl
+- r-readjdx
 - r-rjson
 - r-s4vectors
+- r-webchem
 - r-xml
 - r-yaml
-- r-readjdx
-- r-webchem
-- r-chemminer
-- r-chemmineob
-- r-r.utils
-- r-data.table
 update_on:
 - regex: RMassBank_([\d._-]+).tar.gz
   source: regex

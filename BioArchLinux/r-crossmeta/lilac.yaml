@@ -11,7 +11,6 @@ repo_depends:
 - r-biocmanager
 - r-data.table
 - r-dbi
-- r-deseq2
 - r-dt
 - r-edger
 - r-fdrtool
@@ -21,7 +20,6 @@ repo_depends:
 - r-metama
 - r-miniui
 - r-oligo
-- r-rcolorbrewer
 - r-rcurl
 - r-reader
 - r-readxl
@@ -31,9 +29,7 @@ repo_depends:
 - r-shinyjs
 - r-shinypanel
 - r-shinywidgets
-- r-statmod
 - r-stringr
-- r-summarizedexperiment
 - r-sva
 - r-tibble
 - r-xml

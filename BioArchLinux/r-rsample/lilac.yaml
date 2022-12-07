@@ -7,7 +7,8 @@ repo_depends:
 - r-ellipsis
 - r-furrr
 - r-generics
-- r-lifecycle
+- r-glue
+- r-pillar
 - r-purrr
 - r-rlang
 - r-slider

@@ -1,10 +1,10 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-extradistr
+- r-extradistr
 update_on:
-  - regex: jfa_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=jfa
-  - alias: r
+- regex: jfa_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=jfa
+- alias: r

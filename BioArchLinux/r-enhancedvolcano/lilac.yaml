@@ -3,9 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-ggalt
 - r-ggplot2
-- r-ggrastr
 - r-ggrepel
 update_on:
 - regex: EnhancedVolcano_([\d._-]+).tar.gz

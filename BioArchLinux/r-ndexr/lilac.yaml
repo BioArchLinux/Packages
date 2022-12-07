@@ -4,11 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-httr
-- r-igraph
 - r-jsonlite
 - r-plyr
-- r-tidyr
 - r-rcx
+- r-tidyr
 update_on:
 - regex: ndexr_([\d._-]+).tar.gz
   source: regex

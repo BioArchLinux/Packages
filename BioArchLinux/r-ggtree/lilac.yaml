@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-ape
 - r-aplot
+- r-cli
 - r-dplyr
 - r-ggfun
 - r-ggplot2

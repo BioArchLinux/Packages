@@ -2,8 +2,18 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.replace('-', '__'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+  update_aur_repo()
 update_on:
   - source: github
     github: beast-dev/beast-mcmc
-    use_max_tag: true
-    include_regex: 'v(\d+.\d+.\d+)'
+    use_latest_release: true
+#    prefix: 'v'
+#    include_regex: '[^v]+'
+repo_depends:
+  - beagle-lib

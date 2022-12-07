@@ -6,12 +6,12 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 - r-biocparallel
-- r-genefilter
 - r-geneplotter
 - r-genomicranges
 - r-ggplot2
 - r-iranges
 - r-locfit
+- r-matrixstats
 - r-rcpp
 - r-rcpparmadillo
 - r-s4vectors

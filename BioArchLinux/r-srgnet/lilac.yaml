@@ -3,15 +3,14 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-dmwr
 - r-ebcoexpress
+- r-gbm
+- r-hmisc
 - r-igraph
-- r-pvclust
-- r-gdm
 - r-limma
 - r-matrixstats
-- r-hmisc
-- r-dmwr
-- r-gbm
+- r-pvclust
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
