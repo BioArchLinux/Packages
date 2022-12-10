@@ -4,6 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-kernlab
+- r-plotly
+- r-scales
 - r-segmented
 update_on:
 - regex: mixtools_([\d._-]+).tar.gz
