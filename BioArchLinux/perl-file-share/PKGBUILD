@@ -1,4 +1,5 @@
 # Maintainer : Bipin Kumar <bipin@ccmb.res.in>
+# Previous Maintainer: Mike Swanson <mikeonthecomputer@gmail.com>
 # Generator  : CPANPLUS::Dist::Arch 1.32
 
 pkgname='perl-file-share'
