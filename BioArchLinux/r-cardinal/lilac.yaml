@@ -6,7 +6,6 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 - r-biocparallel
-- r-dplyr
 - r-ebimage
 - r-irlba
 - r-magrittr

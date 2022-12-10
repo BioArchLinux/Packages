@@ -3,6 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biostrings
+- r-compositions
 - r-dplyr
 - r-ggplot2
 - r-phyloseq
@@ -12,7 +14,6 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-vegan
-- r-compositions
 update_on:
 - regex: microbiome_([\d._-]+).tar.gz
   source: regex

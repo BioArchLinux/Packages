@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=jsonlite
-_pkgver=1.8.3
+_pkgver=1.8.4
 pkgname=r-${_pkgname,,}
-pkgver=1.8.3
+pkgver=1.8.4
 pkgrel=1
 pkgdesc='A Simple and Robust JSON Parser and Generator for R'
 arch=('x86_64')
@@ -13,17 +13,16 @@ depends=(
   r
 )
 optdepends=(
-  r-curl
   r-httr
   r-knitr
-  r-plyr
   r-r.rsp
   r-rmarkdown
   r-sf
   r-testthat
+  r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c57f1daf681fc7d5db893693a65ac61a48ddd7aabf66b28647b0e30df92ac8f0')
+sha256sums=('79eaabe042226b0918aa828cc63d54fee8be67ae7c67f5e0d3010f468efb1278')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

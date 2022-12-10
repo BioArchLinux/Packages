@@ -21,7 +21,6 @@ repo_depends:
 - r-rpostgresql
 - r-rsqlite
 - r-snplocs.hsapiens.dbsnp150.grch38
-- r-vbsr
 - r-wgcna
 - r-xgboost
 update_on:

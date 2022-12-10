@@ -4,10 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-cellranger
-- r-progress
-- r-rcpp
-- r-tibble
 - r-cpp11
+- r-progress
+- r-tibble
 update_on:
 - regex: readxl_([\d._-]+).tar.gz
   source: regex

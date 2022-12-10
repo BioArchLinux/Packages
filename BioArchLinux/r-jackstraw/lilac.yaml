@@ -6,11 +6,10 @@ repo_depends:
 - r-clusterr
 - r-corpcor
 - r-irlba
-- r-lfa
 - r-qvalue
 - r-rsvd
 update_on:
 - regex: jackstraw_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/src/contrib/Archive/jackstraw/
+  url: https://cran.r-project.org/package=jackstraw
 - alias: r

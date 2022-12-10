@@ -4,8 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-mathjaxr
-- r-pbapply
 - r-metadat
+- r-pbapply
 update_on:
 - regex: metafor_([\d._-]+).tar.gz
   source: regex

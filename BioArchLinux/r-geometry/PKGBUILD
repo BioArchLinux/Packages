@@ -4,7 +4,7 @@ _pkgname=geometry
 _pkgver=0.4.6.1
 pkgname=r-${_pkgname,,}
 pkgver=0.4.6.1
-pkgrel=2
+pkgrel=4
 pkgdesc='Mesh Generation and Surface Tessellation'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,11 +18,11 @@ depends=(
   r-rcppprogress
 )
 optdepends=(
+  r-interp
   r-r.matlab
   r-rgl
   r-spelling
   r-testthat
-  r-tripack
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('52c87a43cdf414c08b8183441c44497039cba92a9cff719debf09ad8d5d7f472')

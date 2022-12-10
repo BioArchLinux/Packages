@@ -8,18 +8,13 @@ repo_depends:
 - r-config
 - r-crayon
 - r-desc
-- r-dockerfiler
 - r-fs
 - r-here
 - r-htmltools
-- r-jsonlite
 - r-pkgload
-- r-remotes
-- r-rlang
 - r-roxygen2
 - r-rstudioapi
 - r-shiny
-- r-testthat
 - r-usethis
 - r-yaml
 update_on:

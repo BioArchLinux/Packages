@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biomart
-- r-colortools
 - r-corrplot
 - r-genomicranges
 - r-gridextra

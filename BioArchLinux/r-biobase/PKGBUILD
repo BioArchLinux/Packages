@@ -4,7 +4,7 @@ _pkgname=Biobase
 _pkgver=2.58.0
 pkgname=r-${_pkgname,,}
 pkgver=2.58.0
-pkgrel=1
+pkgrel=3
 pkgdesc='Biobase: Base functions for Bioconductor'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,7 +15,9 @@ depends=(
 )
 optdepends=(
   r-all
+  r-biocstyle
   r-golubesets
+  r-knitr
   r-runit
   r-tkwidgets
   r-tools

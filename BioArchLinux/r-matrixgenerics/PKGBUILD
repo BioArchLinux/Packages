@@ -4,7 +4,7 @@ _pkgname=MatrixGenerics
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
 pkgver=1.10.0
-pkgrel=1
+pkgrel=3
 pkgdesc='S4 Generic Summary Statistic Functions that Operate on Matrix-Like Objects'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,6 +15,7 @@ depends=(
 )
 optdepends=(
   r-delayedmatrixstats
+  r-matrix
   r-sparsematrixstats
   r-summarizedexperiment
   r-testthat

@@ -6,6 +6,7 @@ repo_depends:
 - r-ape
 - r-biostrings
 - r-coin
+- r-data.table
 - r-dplyr
 - r-dtplyr
 - r-foreach
@@ -18,6 +19,7 @@ repo_depends:
 - r-magrittr
 - r-patchwork
 - r-pillar
+- r-plyr
 - r-rlang
 - r-summarizedexperiment
 - r-tibble
@@ -27,7 +29,6 @@ repo_depends:
 - r-treeio
 - r-vegan
 - r-zoo
-- r-plyr
 update_on:
 - regex: MicrobiotaProcess_([\d._-]+).tar.gz
   source: regex

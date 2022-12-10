@@ -11,6 +11,7 @@ repo_depends:
 - r-rlang
 - r-systemfonts
 - r-uuid
+- r-vctrs
 update_on:
 - regex: ggiraph_([\d._-]+).tar.gz
   source: regex

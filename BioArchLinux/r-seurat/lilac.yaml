@@ -23,6 +23,7 @@ repo_depends:
 - r-pbapply
 - r-plotly
 - r-png
+- r-progressr
 - r-rann
 - r-rcolorbrewer
 - r-rcpp
@@ -38,7 +39,6 @@ repo_depends:
 - r-sctransform
 - r-seuratobject
 - r-shiny
-- r-spatstat.core
 - r-spatstat.explore
 - r-spatstat.geom
 - r-tibble

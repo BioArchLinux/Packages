@@ -6,6 +6,7 @@ repo_depends:
 - r-htmltools
 - r-htmlwidgets
 - r-jsonlite
+- r-rlang
 - r-shiny
 update_on:
 - regex: shinyjqui_([\d._-]+).tar.gz

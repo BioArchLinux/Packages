@@ -8,7 +8,6 @@ repo_depends:
 - r-cowplot
 - r-dendextend
 - r-ggplot2
-- r-gplots
 - r-pheatmap
 - r-plotly
 - r-reshape2

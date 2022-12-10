@@ -9,7 +9,6 @@ repo_depends:
 - r-rcpp
 - r-rcppannoy
 - r-rcppprogress
-- r-rspectra
 update_on:
 - regex: uwot_([\d._-]+).tar.gz
   source: regex

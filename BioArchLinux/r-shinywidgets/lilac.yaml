@@ -3,12 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-anytime
 - r-bslib
 - r-htmltools
 - r-jsonlite
+- r-rlang
 - r-sass
 - r-shiny
-- r-anytime
 update_on:
 - regex: shinyWidgets_([\d._-]+).tar.gz
   source: regex

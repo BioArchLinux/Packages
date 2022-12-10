@@ -17,6 +17,7 @@ repo_depends:
 - r-promises
 - r-rappdirs
 - r-renv
+- r-rlang
 - r-rmarkdown
 - r-rprojroot
 - r-shiny

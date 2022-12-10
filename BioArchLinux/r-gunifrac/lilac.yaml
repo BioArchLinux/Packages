@@ -8,7 +8,6 @@ repo_depends:
 - r-foreach
 - r-ggplot2
 - r-ggrepel
-- r-lmertest
 - r-matrixstats
 - r-modeest
 - r-rcpp

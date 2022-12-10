@@ -11,10 +11,12 @@ repo_depends:
 - r-ggplot2
 - r-ggpmisc
 - r-ggpubr
+- r-gridextra
 - r-impute
 - r-methylclockdata
 - r-minfi
 - r-performanceanalytics
+- r-planet
 - r-preprocesscore
 - r-quadprog
 - r-rcpp
@@ -22,7 +24,6 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyverse
-- r-planet
 update_on:
 - regex: methylclock_([\d._-]+).tar.gz
   source: regex

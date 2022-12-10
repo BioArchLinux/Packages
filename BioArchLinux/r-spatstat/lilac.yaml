@@ -3,10 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-spatstat.core
 - r-spatstat.data
+- r-spatstat.explore
 - r-spatstat.geom
 - r-spatstat.linnet
+- r-spatstat.model
+- r-spatstat.random
 - r-spatstat.utils
 update_on:
 - regex: spatstat_([\d._-]+).tar.gz

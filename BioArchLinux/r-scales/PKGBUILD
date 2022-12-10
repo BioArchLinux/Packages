@@ -4,7 +4,7 @@ _pkgname=scales
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=1.2.1
-pkgrel=1
+pkgrel=3
 pkgdesc='Scale Functions for Visualization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,6 +17,7 @@ depends=(
   r-munsell
   r-r6
   r-rcolorbrewer
+  r-rlang
   r-viridislite
 )
 optdepends=(
@@ -25,7 +26,9 @@ optdepends=(
   r-dichromat
   r-ggplot2
   r-hms
+  r-stringi
   r-testthat
+  r-waldo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('59453e6dbdafee93dfb101e4d86048a62a12898134259d3ef02d65aeec57ed08')

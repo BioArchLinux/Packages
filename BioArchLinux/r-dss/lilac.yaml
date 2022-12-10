@@ -6,7 +6,6 @@ repo_depends:
 - r-biobase
 - r-biocparallel
 - r-bsseq
-- r-delayedarray
 update_on:
 - regex: DSS_([\d._-]+).tar.gz
   source: regex

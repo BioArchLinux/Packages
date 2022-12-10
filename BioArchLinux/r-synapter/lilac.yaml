@@ -3,16 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-rcolorbrewer
-- r-qvalue
-- r-multtest
 - r-biobase
-- r-knitr
 - r-biostrings
 - r-cleaver
+- r-msnbase
+- r-multtest
+- r-qvalue
+- r-rcolorbrewer
 - r-readr
 - r-rmarkdown
-- r-msnbase
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

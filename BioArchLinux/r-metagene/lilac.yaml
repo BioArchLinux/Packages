@@ -16,7 +16,6 @@ repo_depends:
 - r-iranges
 - r-magrittr
 - r-matrixstats
-- r-mustat
 - r-purrr
 - r-r6
 - r-rsamtools

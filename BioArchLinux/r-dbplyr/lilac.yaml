@@ -5,12 +5,13 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-blob
+- r-cli
 - r-dbi
 - r-dplyr
-- r-ellipsis
 - r-glue
 - r-lifecycle
 - r-magrittr
+- r-pillar
 - r-purrr
 - r-r6
 - r-rlang

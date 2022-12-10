@@ -11,14 +11,12 @@ repo_depends:
 - r-impute
 - r-imputelcmd
 - r-limma
-- r-openxlsx
 - r-pcamethods
 - r-plotly
 - r-proda
 - r-rlang
 - r-rmarkdown
 - r-rtsne
-- r-s4vectors
 - r-shiny
 - r-shinydashboard
 - r-shinyhelper
@@ -28,7 +26,6 @@ repo_depends:
 - r-tidyr
 - r-umap
 - r-upsetr
-- r-vegan
 - r-vsn
 update_on:
 - regex: MatrixQCvis_([\d._-]+).tar.gz

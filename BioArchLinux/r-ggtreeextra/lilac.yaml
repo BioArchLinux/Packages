@@ -3,10 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-ggnewscale
 - r-ggplot2
 - r-ggtree
 - r-rlang
+- r-tidytree
 update_on:
 - regex: ggtreeExtra_([\d._-]+).tar.gz
   source: regex

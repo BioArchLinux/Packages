@@ -3,10 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-gmp
-- r-rcpp
-- r-rcppthread
 - r-cpp11
+- r-gmp
 update_on:
 - regex: RcppAlgos_([\d._-]+).tar.gz
   source: regex

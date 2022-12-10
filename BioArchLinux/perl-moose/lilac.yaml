@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: bipin@ccmb.res.in
+update_on:
+  - regex: Moose-(\d+.\d+)
+    source: regex
+    url: https://metacpan.org/dist/Moose
+  - alias: perl
+repo_depends:
+  - perl-test-cleannamespaces
+  - perl-module-runtime-conflicts
+  - perl-devel-overloadinfo

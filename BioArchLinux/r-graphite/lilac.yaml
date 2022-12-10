@@ -4,11 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
-- r-checkmate
 - r-graph
 - r-httr
-- r-rappdirs
 - r-purrr
+- r-rappdirs
+- r-rlang
 update_on:
 - regex: graphite_([\d._-]+).tar.gz
   source: regex

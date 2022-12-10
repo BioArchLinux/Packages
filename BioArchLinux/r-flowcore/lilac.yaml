@@ -10,7 +10,6 @@ repo_depends:
 - r-cytolib
 - r-matrixstats
 - r-rcpp
-- r-rcpparmadillo
 - r-rprotobuflib
 - r-s4vectors
 update_on:

@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-filehash
 - r-sp
 update_on:
 - regex: adehabitatMA_([\d._-]+).tar.gz

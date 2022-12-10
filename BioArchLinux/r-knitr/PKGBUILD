@@ -5,7 +5,7 @@ _pkgname=knitr
 _pkgver=1.41
 pkgname=r-${_pkgname,,}
 pkgver=1.41
-pkgrel=1
+pkgrel=3
 pkgdesc='A General-Purpose Package for Dynamic Report Generation in R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,6 +27,7 @@ optdepends=(
   r-digest
   r-formatr
   r-gifski
+  r-gridsvg
   r-htmlwidgets
   r-httr
   r-jpeg

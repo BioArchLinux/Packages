@@ -1,22 +1,21 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-bayestools
-  - r-bridgesampling
-  - r-callr
-  - r-coda
-  - r-extradistr
-  - r-ggplot2
-  - r-mvtnorm
-  - r-psych
-  - r-rdpack
-  - r-rjags
-  - r-runjags
-  - r-scales
-  - jags
+- jags
+- r-bayestools
+- r-bridgesampling
+- r-coda
+- r-extradistr
+- r-ggplot2
+- r-mvtnorm
+- r-psych
+- r-rdpack
+- r-rjags
+- r-runjags
+- r-scales
 update_on:
-  - regex: RoBMA_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=RoBMA
-  - alias: r
+- regex: RoBMA_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=RoBMA
+- alias: r

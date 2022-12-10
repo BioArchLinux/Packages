@@ -9,6 +9,7 @@ repo_depends:
 - r-munsell
 - r-r6
 - r-rcolorbrewer
+- r-rlang
 - r-viridislite
 update_on:
 - regex: scales_([\d._-]+).tar.gz

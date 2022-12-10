@@ -1,12 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-backports
-  - r-rcpp
-  - r-rcppprogress
+- r-backports
+- r-rcpp
+- r-rcppprogress
 update_on:
-  - regex: MatchIt_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=MatchIt
-  - alias: r
+- regex: MatchIt_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=MatchIt
+- alias: r

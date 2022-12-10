@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-bessel
+  - r-corpcor
+  - r-ff
+  - r-pcapp
+  - r-rcpp
+  - r-rcpparmadillo
+  - r-rsolnp
+  - r-rugarch
+  - r-shape
+  - r-spd
+  - r-xts
+  - r-zoo
+update_on:
+  - regex: rmgarch_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=rmgarch
+  - alias: r

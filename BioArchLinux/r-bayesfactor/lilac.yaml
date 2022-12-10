@@ -1,18 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-coda
-  - r-gtools
-  - r-hypergeo
-  - r-matrixmodels
-  - r-mvtnorm
-  - r-pbapply
-  - r-rcpp
-  - r-rcppeigen
-  - r-stringr
+- r-coda
+- r-hypergeo
+- r-matrixmodels
+- r-mvtnorm
+- r-pbapply
+- r-rcpp
+- r-rcppeigen
+- r-stringr
 update_on:
-  - regex: BayesFactor_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=BayesFactor
-  - alias: r
+- regex: BayesFactor_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=BayesFactor
+- alias: r

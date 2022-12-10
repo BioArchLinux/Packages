@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bslib
 - r-evaluate
 - r-htmltools
 - r-jquerylib
@@ -12,7 +13,6 @@ repo_depends:
 - r-tinytex
 - r-xfun
 - r-yaml
-- r-bslib
 update_on:
 - regex: rmarkdown_([\d._-]+).tar.gz
   source: regex

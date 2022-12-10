@@ -12,8 +12,6 @@ repo_depends:
 - r-rappdirs
 - r-readr
 - r-rlang
-- r-s4vectors
-- r-summarizedexperiment
 - r-tibble
 - r-xml2
 update_on:

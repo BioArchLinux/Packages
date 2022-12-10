@@ -4,26 +4,24 @@ _pkgname=quantreg
 _pkgver=5.94
 pkgname=r-${_pkgname,,}
 pkgver=5.94
-pkgrel=2
+pkgrel=4
 pkgdesc='Quantile Regression'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-conquer
   r-matrixmodels
   r-sparsem
 )
 optdepends=(
-  r-akima
+  r-conquer
   r-formula
+  r-interp
   r-logspline
-  r-mass
   r-nor1mix
   r-r.rsp
   r-rgl
-  r-survival
   r-tripack
   r-zoo
 )

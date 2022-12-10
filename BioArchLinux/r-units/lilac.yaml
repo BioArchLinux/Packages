@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-rcpp
 - udunits
+- r-rcpp
 update_on:
 - regex: units_([\d._-]+).tar.gz
   source: regex

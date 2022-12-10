@@ -14,6 +14,7 @@ repo_depends:
 - r-magrittr
 - r-matrixstats
 - r-methylkit
+- r-minfi
 - r-nnls
 - r-quadprog
 - r-rsq

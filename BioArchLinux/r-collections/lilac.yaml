@@ -1,8 +1,8 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: hubutui
+- github: hubutui
 update_on:
-  - regex: collections_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=collections
-  - alias: r
+- regex: collections_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=collections
+- alias: r

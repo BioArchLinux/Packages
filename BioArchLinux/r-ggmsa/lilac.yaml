@@ -9,13 +9,13 @@ repo_depends:
 - r-ggalt
 - r-ggforce
 - r-ggplot2
+- r-ggtree
 - r-magrittr
 - r-r4rna
 - r-rcolorbrewer
 - r-seqmagick
-- r-tidyr
 - r-statebins
-- r-ggtree
+- r-tidyr
 update_on:
 - regex: ggmsa_([\d._-]+).tar.gz
   source: regex

@@ -5,12 +5,11 @@ repo_depends:
   - r-coda
   - r-laplacesdemon
   - r-lavaan
-  - r-progress
   - r-rcpp
   - r-rcpparmadillo
   - r-rdpack
 update_on:
   - regex: Bayesrel_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/src/contrib/Archive/Bayesrel/
+    url: https://cran.r-project.org/package=Bayesrel/
   - alias: r

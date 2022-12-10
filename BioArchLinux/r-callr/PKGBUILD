@@ -4,7 +4,7 @@ _pkgname=callr
 _pkgver=3.7.3
 pkgname=r-${_pkgname,,}
 pkgver=3.7.3
-pkgrel=1
+pkgrel=3
 pkgdesc='Call R from R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,8 +15,10 @@ depends=(
   r-r6
 )
 optdepends=(
+  r-asciicast
   r-cli
   r-covr
+  r-mockery
   r-ps
   r-rprojroot
   r-spelling

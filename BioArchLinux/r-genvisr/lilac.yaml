@@ -10,7 +10,6 @@ repo_depends:
 - r-bsgenome
 - r-data.table
 - r-dbi
-- r-ffield
 - r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges

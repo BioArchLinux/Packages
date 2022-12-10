@@ -1,9 +1,9 @@
-# Maintainer: Malacology <guoyizhang at malacology dot com>
-# Contributor: Malacology <guoyizhang at malacology dot com>
+# Maintainer: Malacology <guoyizhang at malacology dot net>
+# Contributor: Malacology <guoyizhang at malacology dot net>
 
 pkgname=pibuss
 pkgver=1.4
-_pkgver=1-4
+_pkgver=${pkgver//./-}
 pkgrel=5
 depends=(
 	'java-runtime'

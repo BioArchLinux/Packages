@@ -10,7 +10,6 @@ repo_depends:
 - r-ggplot2
 - r-ggpubr
 - r-ggrepel
-- r-ggridges
 - r-gridextra
 - r-gtable
 - r-knitr

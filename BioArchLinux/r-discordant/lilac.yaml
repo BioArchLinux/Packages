@@ -5,8 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-biwt
-- r-gtools
 - r-dplyr
+- r-gtools
 - r-rcpp
 update_on:
 - regex: discordant_([\d._-]+).tar.gz

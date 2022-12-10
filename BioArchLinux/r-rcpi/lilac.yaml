@@ -4,9 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biostrings
-- r-chemminer
 - r-doparallel
-- r-fmcsr
 - r-foreach
 - r-gosemsim
 - r-rcdk

@@ -5,12 +5,12 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-bnlearn
+- r-corpcor
 - r-dplyr
+- r-genenet
 - r-genie3
 - r-ggplot2
-- r-mpmi
 - r-parmigene
-- r-ppcor
 - r-psych
 - r-rlang
 - r-s4vectors
@@ -18,7 +18,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
-- r-genenet
 update_on:
 - regex: MetNet_([\d._-]+).tar.gz
   source: regex

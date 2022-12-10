@@ -3,7 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-rrcov
+- r-robustbase
 update_on:
 - regex: biwt_([\d._-]+).tar.gz
   source: regex

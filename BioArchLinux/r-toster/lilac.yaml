@@ -1,16 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-cowplot
-  - r-distributional
-  - r-ggdist
-  - r-ggplot2
-  - r-jmvcore
-  - r-r6
-  - r-tidyr
+- r-cowplot
+- r-distributional
+- r-ggdist
+- r-ggplot2
+- r-jmvcore
+- r-tidyr
 update_on:
-  - regex: TOSTER_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=TOSTER
-  - alias: r
+- regex: TOSTER_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=TOSTER
+- alias: r

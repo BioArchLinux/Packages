@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-ape
 - r-catools
 - r-edger
 - r-ggplot2
@@ -11,14 +12,13 @@ repo_depends:
 - r-knitr
 - r-limma
 - r-markdown
+- r-matrixstats
 - r-modeest
+- r-phylolm
 - r-rocr
 - r-sm
 - r-stringr
 - r-vioplot
-- r-matrixstats
-- r-ape
-- r-phylolm
 update_on:
 - regex: compcodeR_([\d._-]+).tar.gz
   source: regex

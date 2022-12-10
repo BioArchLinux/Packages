@@ -12,8 +12,8 @@ repo_depends:
 - r-shiny
 - r-tm
 - r-treemap
-- r-wordcloud
 - r-umap
+- r-wordcloud
 update_on:
 - regex: rrvgo_([\d._-]+).tar.gz
   source: regex

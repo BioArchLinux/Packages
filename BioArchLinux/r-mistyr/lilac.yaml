@@ -16,13 +16,14 @@ repo_depends:
 - r-r.utils
 - r-ranger
 - r-readr
+- r-ridge
 - r-rlang
 - r-rlist
 - r-stringr
 - r-tibble
 - r-tidyr
+- r-tidyselect
 - r-withr
-- r-ridge
 update_on:
 - regex: mistyR_([\d._-]+).tar.gz
   source: regex

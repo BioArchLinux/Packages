@@ -1,23 +1,21 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-cocor
-  - r-eigenmodel
-  - r-ggplot2
-  - r-gridextra
-  - r-igraph
-  - r-isingfit
-  - r-networkcomparisontest
-  - r-psych
-  - r-qgraph
-  - r-r.utils
-  - r-rcolorbrewer
-  - r-reshape2
-  - r-smacof
-  - r-wordcloud
+- r-cocor
+- r-eigenmodel
+- r-ggplot2
+- r-gridextra
+- r-igraph
+- r-psych
+- r-qgraph
+- r-r.utils
+- r-rcolorbrewer
+- r-reshape2
+- r-smacof
+- r-wordcloud
 update_on:
-  - regex: networktools_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=networktools
-  - alias: r
+- regex: networktools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=networktools
+- alias: r

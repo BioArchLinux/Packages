@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bnlearn
-- r-cgdsr
 - r-circlize
 - r-doparallel
 - r-foreach

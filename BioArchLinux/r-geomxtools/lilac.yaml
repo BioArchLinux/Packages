@@ -8,15 +8,17 @@ repo_depends:
 - r-data.table
 - r-dplyr
 - r-envstats
+- r-ggally
+- r-ggplot2
 - r-lmertest
 - r-nanostringnctools
-- r-outliers
 - r-readxl
 - r-reshape2
 - r-rjson
+- r-rlang
 - r-s4vectors
 - r-seuratobject
-- r-ggally
+- r-stringr
 update_on:
 - regex: GeomxTools_([\d._-]+).tar.gz
   source: regex

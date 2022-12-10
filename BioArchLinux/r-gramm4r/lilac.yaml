@@ -4,13 +4,13 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-basictrendline
+- r-delayedarray
+- r-dmwr
 - r-investr
 - r-minerva
-- r-psych
-- r-delayedarray
-- r-summarizedexperiment
 - r-phyloseq
-- r-dmwr
+- r-psych
+- r-summarizedexperiment
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex

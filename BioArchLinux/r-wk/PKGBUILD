@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=wk
-_pkgver=0.7.0
+_pkgver=0.7.1
 pkgname=r-${_pkgname,,}
-pkgver=0.7.0
+pkgver=0.7.1
 pkgrel=1
 pkgdesc='Lightweight Well-Known Geometry Parsing'
 arch=('x86_64')
@@ -21,7 +21,7 @@ optdepends=(
   r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e24327d38f2ff2d502c67c60eba3b4e44079a64ed8b805df64f231dc4712a2de')
+sha256sums=('e5a5772c982da9c43593cecab9b4f2edbab7b290bb6efc1409eabda4c4dbd384')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

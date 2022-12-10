@@ -12,8 +12,10 @@ repo_depends:
 - r-rio
 - r-rlang
 - r-shiny
+- r-shinybusy
 - r-shinywidgets
 - r-tibble
+- r-writexl
 update_on:
 - regex: datamods_([\d._-]+).tar.gz
   source: regex

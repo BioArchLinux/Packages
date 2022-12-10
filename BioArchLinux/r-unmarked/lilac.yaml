@@ -4,12 +4,12 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-lme4
+- r-pbapply
 - r-plyr
-- r-raster
 - r-rcpp
 - r-rcpparmadillo
+- r-rcppeigen
 - r-tmb
-- r-pbapply
 update_on:
 - regex: unmarked_([\d._-]+).tar.gz
   source: regex

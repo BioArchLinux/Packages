@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-consensusclusterplus
-- r-icluster
 - r-impute
 - r-limma
 - r-nmf

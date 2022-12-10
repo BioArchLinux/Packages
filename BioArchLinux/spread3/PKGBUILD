@@ -1,9 +1,9 @@
-# Maintainer: Malacology <guoyizhang at malacology dot com>
-# Contributor: Malacology <guoyizhang at malacology dot com>
+# Maintainer: Malacology <guoyizhang at malacology dot net>
+# Contributor: Malacology <guoyizhang at malacology dot net>
 
 pkgname=spread3
 pkgver=0.9.6
-_pkgver=0-9-6
+_pkgver=${pkgver//./-}
 pkgrel=5
 depends=(
 	'java-runtime'
