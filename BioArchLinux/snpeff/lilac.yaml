@@ -2,10 +2,12 @@ maintainers:
   - github: kbipinkumar
     email: bipin@ccmb.res.in
 build_prefix: extra-x86_64
-post_build_script:
+post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
   update_aur_repo()
 update_on:
-  - source: aur
-    aur: snpeff
+- source: github
+  github: pcingola/SnpEff
+  use_max_tag: true
+  prefix: 'v'
