@@ -6,9 +6,8 @@ pkgrel=1
 pkgdesc="Genetic variant annotation and effect prediction toolbox. https://doi.org/10.4161/fly.19695"
 arch=('any')
 url="https://pcingola.github.io/SnpEff/"
-provides=(""${pkgname%-pkgver}"")
 license=('MIT')
-depends=('java-runtime>=12''python''perl''bash')
+depends=('java-runtime>=12' 'python' 'perl' 'bash')
 source=(
   snpEff.sh
   SnpSift.sh
