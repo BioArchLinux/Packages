@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: bipin@ccmb.res.in
+update_on:
+  - regex: Test-CleanNamespaces-(\d+.\d+)
+    source: regex
+    url: https://metacpan.org/dist/Test-CleanNamespaces
+  - alias: perl

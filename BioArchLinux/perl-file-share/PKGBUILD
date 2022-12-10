@@ -1,0 +1,50 @@
+# Maintainer : Bipin Kumar <bipin@ccmb.res.in>
+# Previous Maintainer: Mike Swanson <mikeonthecomputer@gmail.com>
+# Generator  : CPANPLUS::Dist::Arch 1.32
+
+pkgname='perl-file-share'
+pkgver='0.27'
+pkgrel='1'
+pkgdesc="Extend File::ShareDir to Local Libraries"
+arch=('any')
+license=('PerlArtistic' 'GPL')
+options=('!emptydirs')
+depends=('perl-file-sharedir>=1.03' 'perl-readonly>=2.05' 'perl>=5.8.1')
+makedepends=()
+url='https://metacpan.org/dist/File-Share'
+source=("http://search.cpan.org/CPAN/authors/id/I/IN/INGY/File-Share-$pkgver.tar.gz")
+md5sums=('985e9fc1a92fed8c20e66bafbc480ea7')
+sha512sums=('7c321de08e49f252e8e2126da00ea05ced13db362de758a693ee7f40452827fbf2591fb9e6c80caa27bb8767b3596893fc8762993a167583a0b40091e5db5ec7')
+_distdir="File-Share-$pkgver"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" \( -name .packlist -o -name perllocal.pod \) -delete
+}
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:
