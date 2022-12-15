@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=maptools
-_pkgver=1.1-5
+_pkgver=1.1-6
 pkgname=r-${_pkgname,,}
-pkgver=1.1.5
+pkgver=1.1.6
 pkgrel=1
 pkgdesc='Tools for Handling Spatial Objects'
 arch=('x86_64')
@@ -28,7 +28,7 @@ optdepends=(
   r-spatstat.utils
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3cd9bd95d3a1cb4aae3a350e0582319dacc25f070af6995061b85e68042f25dc')
+sha256sums=('d6a5df52db03b2231f21921b693c67f85df3c3b376181aa13ef4f21710f69308')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
