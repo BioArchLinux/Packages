@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: bipin@ccmb.res.in
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+  update_aur_repo()
+repo_depends:
+- perl-graph
+- perl-lwp-useragent-determined
+- perl-moose
+- perl-file-share
+- perl-test-cleannamespaces
+- perl-module-runtime-conflicts 
+- perl-devel-overloadinfo
+- perl-bioperl
+update_on:
+- source: github
+  github: NBISweden/AGAT
+  use_max_tag: true
+  prefix: 'v'
