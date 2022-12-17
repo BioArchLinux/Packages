@@ -5,7 +5,6 @@ build_prefix: extra-x86_64
 post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
-  update_aur_repo()
 update_on:
 - source: github
   github: pcingola/SnpEff
