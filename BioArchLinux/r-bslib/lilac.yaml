@@ -3,11 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-base64enc
 - r-cachem
 - r-htmltools
 - r-jquerylib
 - r-jsonlite
 - r-memoise
+- r-mime
 - r-rlang
 - r-sass
 update_on:

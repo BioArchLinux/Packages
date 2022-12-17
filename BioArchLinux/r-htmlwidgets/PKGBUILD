@@ -5,7 +5,7 @@ _pkgname=htmlwidgets
 _pkgver=1.5.4
 pkgname=r-${_pkgname,,}
 pkgver=1.5.4
-pkgrel=7
+pkgrel=8
 pkgdesc='HTML Widgets for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,11 +14,11 @@ depends=(
   r
   r-htmltools
   r-jsonlite
+  r-knitr
+  r-rmarkdown
   r-yaml
 )
 optdepends=(
-  r-knitr
-  r-rmarkdown
   r-shiny
   r-testthat
 )
