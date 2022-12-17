@@ -3,7 +3,7 @@
 pkgname=agat
 _pkgname=AGAT
 pkgver=1.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Another Gtf/Gff Analysis Toolkit is a suite of tools to handle gene annotations in GTF/GFF format. doi:10.5281/zenodo.3552717"
 arch=('any')
 url='https://github.com/NBISweden/AGAT'
