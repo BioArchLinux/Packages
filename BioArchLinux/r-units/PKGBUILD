@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=units
-_pkgver=0.8-0
+_pkgver=0.8-1
 pkgname=r-${_pkgname,,}
-pkgver=0.8.0
-pkgrel=7
+pkgver=0.8.1
+pkgrel=1
 pkgdesc='Measurement Units for R Vectors'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -30,7 +30,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9c46fe138e8c1c3d3a51268776412f02d09673656516148cccb71b1071beb21a')
+sha256sums=('d3e1ba246b4c97205bc3da3cf45d6b5bd5c196b8d421b84b4e94b2090985cd9a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

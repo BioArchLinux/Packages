@@ -9,6 +9,7 @@ repo_depends:
 - r-foreach
 - r-ggplot2
 - r-gridextra
+- r-lubridate
 - r-minpack.lm
 - r-msnbase
 - r-mzr

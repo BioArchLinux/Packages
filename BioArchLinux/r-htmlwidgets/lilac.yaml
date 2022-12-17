@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-htmltools
 - r-jsonlite
+- r-knitr
+- r-rmarkdown
 - r-yaml
 update_on:
 - regex: htmlwidgets_([\d._-]+).tar.gz

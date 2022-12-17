@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-igraph
+- r-memoise
 - r-rcpp
 - r-rcppeigen
 - r-snpstats

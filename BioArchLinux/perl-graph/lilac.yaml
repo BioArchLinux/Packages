@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: cmd
+    cmd: curl -sS https://fastapi.metacpan.org/source/ETJ/Graph-0.9725/Changes | head  -n 1 | awk '{print $1}'
+  - alias: perl
+repo_depends:
+  - perl-heap
+  - perl-set-object

@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=bslib
-_pkgver=0.4.1
+_pkgver=0.4.2
 pkgname=r-${_pkgname,,}
-pkgver=0.4.1
+pkgver=0.4.2
 pkgrel=1
 pkgdesc="Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'"
 arch=('any')
@@ -11,16 +11,20 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-base64enc
   r-cachem
   r-htmltools
   r-jquerylib
   r-jsonlite
   r-memoise
+  r-mime
   r-rlang
   r-sass
 )
 optdepends=(
+  r-bsicons
   r-curl
+  r-fontawesome
   r-knitr
   r-magrittr
   r-rappdirs
@@ -31,7 +35,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4ebd1fc84cd19b414e8f8c13fb95270fc28ede125b6e58b08c574ca8c9e0e62f')
+sha256sums=('9a40b7a1bbe409af273e1e940d921ab198ea576548f06f055f552f70ff822f19')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
