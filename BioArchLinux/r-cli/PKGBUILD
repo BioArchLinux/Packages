@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=cli
-_pkgver=3.4.1
+_pkgver=3.5.0
 pkgname=r-${_pkgname,,}
-pkgver=3.4.1
-pkgrel=3
+pkgver=3.5.0
+pkgrel=1
 pkgdesc='Helpers for Developing Command Line Interfaces'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -35,7 +35,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1c585efbfd8b8685c66fac34bcb60f28c351691bb4b9931df214e6e47fd9744e')
+sha256sums=('8ccb6cd7c714119acf96710e0005fea7789051f8a5142df6c8171e0706fe6fdc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
