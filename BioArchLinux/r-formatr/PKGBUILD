@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=formatR
-_pkgver=1.12
+_pkgver=1.13
 pkgname=r-${_pkgname,,}
-pkgver=1.12
-pkgrel=9
+pkgver=1.13
+pkgrel=1
 pkgdesc='Format R Code Automatically'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
   r-testit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8b52efbf43cbef25d837bb99a793a590c0958b753052c032b52304724e808c8b')
+sha256sums=('b207dc33bf2de3877fe3d8e5cf88bb266360e5febc339342135ae40cd7e6e527')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
