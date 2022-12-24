@@ -4,13 +4,14 @@
 
 pkgname=beast2
 pkgver=2.7.2
-pkgrel=3
+_pkgver=2.7.1
+pkgrel=4
 pkgdesc="Bayesian Evolutionary Analysis by Sampling Trees. https://doi.org/10.1371/journal.pcbi.1003537"
 arch=('any')
 url="http://www.beast2.org/"
 license=('LGPL')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/CompEvol/beast2/archive/refs/tags/v${pkgver}.tar.gz"
-"BeastFX-${pkgver}.tar.gz::https://github.com/CompEvol/BeastFX/archive/refs/tags/v2.7.2.tar.gz"
+"BeastFX-${pkgver}.tar.gz::https://github.com/CompEvol/BeastFX/archive/refs/tags/v${_pkgver}.tar.gz"
 # desktop
 {beauti,densitree,logcombiner,treeannotator,beast2,loganalyser,${pkgname}-applauncher}.desktop
 # excutables
@@ -39,11 +40,11 @@ makedepends=('ant' 'git')
 optdepends=('beagle-lib')
 prepare(){
     cd ${srcdir}/${pkgname}-${pkgver}
-    sed -i "s|2.7.1|2.7.2|" version.xml
+    sed -i "s|2.7.1|${pkgver}|" version.xml
     cd lib 
 }
 build(){
-    cd "$srcdir/BeastFX-${pkgver}"
+    cd "$srcdir/BeastFX-${_pkgver}"
     install -Dm755 $srcdir/${pkgname}-${pkgver}/release/Linux/jrebin/* \
         -t release2/Linux/jrebin
     ant linux -nouserlib -noinput \
