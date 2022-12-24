@@ -10,8 +10,9 @@ post_build_script: |
   git_commit()
   update_aur_repo()
 update_on:
-  - regex: freedelta_(\d+.\d+.\d+)_amd64.deb
-    source: regex
-    url: https://sourceforge.net/projects/freedelta/files/freedelta/
+  - source: github
+    github: maurobio/freedelta
+    use_max_tag: true
+    prefix: 'v'
 repo_depends:
   - classic-delta
