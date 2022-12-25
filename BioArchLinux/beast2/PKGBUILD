@@ -3,21 +3,21 @@
 # Contributor: sukanka <su975853527 at gmail dot com>
 
 pkgname=beast2
-pkgver=2.7.2
-_pkgver=2.7.1
-pkgrel=4
+pkgver=2.7.3
+_pkgver=2.7.2
+pkgrel=0
 pkgdesc="Bayesian Evolutionary Analysis by Sampling Trees. https://doi.org/10.1371/journal.pcbi.1003537"
 arch=('any')
 url="http://www.beast2.org/"
 license=('LGPL')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/CompEvol/beast2/archive/refs/tags/v${pkgver}.tar.gz"
-"BeastFX-${pkgver}.tar.gz::https://github.com/CompEvol/BeastFX/archive/refs/tags/v${_pkgver}.tar.gz"
+"BeastFX-${_pkgver}.tar.gz::https://github.com/CompEvol/BeastFX/archive/refs/tags/v${_pkgver}.tar.gz"
 # desktop
 {beauti,densitree,logcombiner,treeannotator,beast2,loganalyser,${pkgname}-applauncher}.desktop
 # excutables
 ${pkgname}-{beauti,densitree,logcombiner,treeannotator,beast2,loganalyser,applauncher,packagemanager,environment}
 )
-sha256sums=('02f561f593adf54e512d34a9366dd9e4ed0b940cb4540d97a2b4e9b705f327a3'
+sha256sums=('04e62e7d3dc108d15d1c01dc4693c7ba362ae7c2efd969c6ae706e69a2cf28b3'
             '1b4cca8ee299459469bfdf8a98b701ed5e47f0b015ef0e04964a195fd9fb74d5'
             'f35255c946a105a60e81fcf44ed3f5c28e6903f0e9cedc015b1ae9d08ab6eb42'
             '39d8fe84e7262a11fb49700254fd54a9823ad25069f6cb9539d830c708d8864e'
@@ -39,12 +39,12 @@ depends=('java-runtime' 'java-openjfx')
 makedepends=('ant' 'git')
 optdepends=('beagle-lib')
 prepare(){
-    cd ${srcdir}/${pkgname}-${pkgver}
-    sed -i "s|2.7.1|${pkgver}|" version.xml
-    cd lib 
+    cd ${srcdir}
+    test -d "BeastFX-${pkgver}" && rm -rf "BeastFX-${pkgver}"
+    mv "BeastFX-${_pkgver}" "BeastFX-${pkgver}"
 }
 build(){
-    cd "$srcdir/BeastFX-${_pkgver}"
+    cd "$srcdir/BeastFX-${pkgver}"
     install -Dm755 $srcdir/${pkgname}-${pkgver}/release/Linux/jrebin/* \
         -t release2/Linux/jrebin
     ant linux -nouserlib -noinput \
@@ -87,7 +87,7 @@ package() {
         ln -s /usr/share/beast2/bin/$bin ${pkgdir}/usr/bin/$bin
     done
     install -Dm 755 ${srcdir}/*.desktop -t ${pkgdir}/usr/share/applications
-    # Do NOT put link this file to /usr/bin
+    # Do NOT  link this file to /usr/bin
     install -Dm755 $srcdir/${pkgname}-environment -t $pkgdir/usr/share/beast2/bin/
 
     # clear files

@@ -3,8 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
+- r-lifecycle
 - r-magrittr
 - r-rlang
+- r-vctrs
 update_on:
 - regex: purrr_([\d._-]+).tar.gz
   source: regex
