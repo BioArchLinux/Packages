@@ -21,6 +21,8 @@ makedepends=(
             'python-setuptools'
             'python-setuptools-scm'
             )
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
+sha256sums=('ab0ac450baecc1576cc5ccbc06eab2685be9ee7676763938237d954a644237f1')
 
 build() {
     cd "$_name-$pkgver"
