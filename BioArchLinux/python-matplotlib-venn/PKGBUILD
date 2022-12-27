@@ -1,0 +1,27 @@
+# import from AUR: bipin kumar <bipin@ccmb.res.in>
+# Maintainer: Matthew McGinn <mamcgi@gmail.com>
+# Contributor: Stunts <f.pinamartins@gmail.com>
+
+pkgname=python-matplotlib-venn
+_module=${pkgname#python-}
+pkgver=0.11.7
+pkgrel=1
+pkgdesc="Venn diagram plotting routines for python-matplotlib"
+arch=('any')
+url="https://github.com/konstantint/matplotlib-venn"
+license=('MIT')
+depends=('python-numpy' 'python-matplotlib' 'python-scipy')
+makedepends=('python-setuptools')
+source=($_module-$pkgver::"https://github.com/konstantint/matplotlib-venn/archive/refs/tags/$pkgver.tar.gz")
+b2sums=('b7290ee015aa4bd3cff73e705730e334e52dd2b94fec47c7b9d4739f2ecd382d8d666b05ff9c438439fffb2783284b31d9c513c0c0d7ca8d4650a06f797fee68')
+
+build() {
+  cd "$_module-$pkgver"
+  python setup.py build
+}
+
+package() {
+  cd "$_module-$pkgver"
+  python setup.py install --root="${pkgdir}"
+  install -Dm644 "$srcdir/$_module-$pkgver/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname"
+}
