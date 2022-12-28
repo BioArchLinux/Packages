@@ -2,8 +2,8 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 pkgname=python-numba
 _module=${pkgname#python-}
-pkgver=0.56.4
-pkgrel=2
+pkgver=0.57.0dev0
+pkgrel=1
 pkgdesc="NumPy aware dynamic Python compiler using LLVM"
 url="https://numba.pydata.org/"
 arch=('i686' 'x86_64')
@@ -24,7 +24,7 @@ optdepends=(
             'python-cuda'
             )
 source=($_module-$pkgver.tar.gz::https://github.com/numba/numba/archive/refs/tags/$pkgver.tar.gz)
-sha256sums=('ab96b731fb9dee12b404b42b7c1fb82c119352648906a80526afa73658895b73')
+sha256sums=('cd7db507c8b57c1cf911f83f1199754cb25e4c3bf71985f72a5ab91ae3771cfa')
 
 build() {
   cd "$srcdir/$_module-$pkgver"
