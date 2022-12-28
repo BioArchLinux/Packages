@@ -3,7 +3,7 @@
 pkgname=python-numba
 _module=${pkgname#python-}
 pkgver=0.56.4
-pkgrel=1
+pkgrel=2
 pkgdesc="NumPy aware dynamic Python compiler using LLVM"
 url="https://numba.pydata.org/"
 arch=('i686' 'x86_64')
