@@ -10,7 +10,7 @@ post_build_script: |
   git_commit()
 update_on:
   - source: github
-    github: numba/numba/
+    github: numba/numba
     use_max_tag: true
     prefix: 'v'
   - alias: python
