@@ -14,5 +14,5 @@ repo_depends:
 update_on:
 - regex: spatstat.core_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=spatstat.core
+  url: https://cran.r-project.org/src/contrib/Archive/spatstat.core
 - alias: r

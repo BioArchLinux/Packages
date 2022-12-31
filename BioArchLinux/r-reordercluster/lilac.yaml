@@ -9,5 +9,5 @@ repo_depends:
 update_on:
 - regex: ReorderCluster_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=ReorderCluster
+  url: https://cran.r-project.org/src/contrib/Archive/ReorderCluster
 - alias: r
