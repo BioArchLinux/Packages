@@ -81,3 +81,4 @@ package(){
     do [ -f "$filename" ] || continue
     mv -n "$filename" "${filename//-orig/}"
   done
+}
