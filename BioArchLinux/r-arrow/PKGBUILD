@@ -5,14 +5,14 @@ _pkgname=arrow
 _pkgver=10.0.1
 pkgname=r-${_pkgname,,}
 pkgver=10.0.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Integration to 'Apache' 'Arrow'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('Apache')
 depends=(
-  gcc
   r
+  arrow
   r-assertthat
   r-bit64
   r-cpp11
