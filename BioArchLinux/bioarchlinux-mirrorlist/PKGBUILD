@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 
 pkgname=bioarchlinux-mirrorlist
-pkgver=20221223
+pkgver=20230106
 pkgrel=1
 pkgdesc="BioArchLinux mirror list for use by pacman"
 arch=('any')
@@ -9,7 +9,7 @@ url="https://github.com/BioArchLinux/mirror"
 license=('GPL')
 backup=(etc/pacman.d/mirrorlist.bio)
 source=(https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
-sha256sums=('1cf056eaf51102d38ee855d497e575a49dbaaeea13cd6045b611224c3ba2d1a1')
+sha256sums=('8a90984620549313c521f12b8b4dea49275af9056959d966973f97a97ce41c63')
 pkgver(){
   date +%Y%m%d
 }
