@@ -6,7 +6,7 @@ _pkgname=lava
 _pkgver=1.7.1
 pkgname=r-${_pkgname,,}
 pkgver=1.7.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Latent Variable Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
