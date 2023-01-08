@@ -3,9 +3,9 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-dplyr
 - r-generics
-- r-hunspell
 - r-janeaustenr
 - r-lifecycle
 - r-purrr

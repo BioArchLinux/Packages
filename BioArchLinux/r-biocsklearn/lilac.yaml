@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-basilisk
-- r-basilisk.utils
 - r-reticulate
 - r-summarizedexperiment
 update_on:

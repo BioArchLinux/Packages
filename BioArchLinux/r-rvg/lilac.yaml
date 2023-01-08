@@ -1,14 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-gdtools
-  - r-officer
-  - r-rcpp
-  - r-rlang
-  - r-xml2
+- r-gdtools
+- r-officer
+- r-rcpp
+- r-rlang
+- r-xml2
 update_on:
-  - regex: rvg_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=rvg
-  - alias: r
+- regex: rvg_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=rvg
+- alias: r

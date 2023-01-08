@@ -4,7 +4,7 @@ _pkgname=pkgbuild
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Find Tools Needed to Build R Packages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,6 +16,7 @@ depends=(
   r-crayon
   r-desc
   r-prettyunits
+  r-processx
   r-r6
   r-rprojroot
   r-withr
@@ -23,7 +24,10 @@ depends=(
 optdepends=(
   r-covr
   r-cpp11
+  r-knitr
+  r-mockery
   r-rcpp
+  r-rmarkdown
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

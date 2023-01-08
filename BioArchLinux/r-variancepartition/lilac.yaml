@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-aod
 - r-biobase
 - r-biocparallel
 - r-doparallel
@@ -15,12 +16,12 @@ repo_depends:
 - r-lmertest
 - r-pbkrtest
 - r-progress
+- r-rdpack
+- r-remacor
 - r-reshape2
+- r-rhpcblasctl
 - r-rlang
 - r-scales
-- r-rhpcblasctl
-- r-aod
-- r-rdpack
 update_on:
 - regex: variancePartition_([\d._-]+).tar.gz
   source: regex

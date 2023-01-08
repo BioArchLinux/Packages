@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-beeswarm
 - r-ggplot2
+- r-lifecycle
 - r-vipor
 update_on:
 - regex: ggbeeswarm_([\d._-]+).tar.gz

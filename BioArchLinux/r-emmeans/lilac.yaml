@@ -6,7 +6,6 @@ repo_depends:
 - r-estimability
 - r-mvtnorm
 - r-numderiv
-- r-xtable
 update_on:
 - regex: emmeans_([\d._-]+).tar.gz
   source: regex

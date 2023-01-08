@@ -4,7 +4,7 @@ _pkgname=progressr
 _pkgver=0.12.0
 pkgname=r-${_pkgname,,}
 pkgver=0.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc='An Inclusive, Unifying API for Progress Updates'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,6 +16,7 @@ depends=(
 optdepends=(
   r-base64enc
   r-beepr
+  r-cli
   r-commonmark
   r-crayon
   r-dofuture

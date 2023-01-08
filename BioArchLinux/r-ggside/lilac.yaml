@@ -9,6 +9,7 @@ repo_depends:
 - r-rlang
 - r-scales
 - r-tibble
+- r-vctrs
 update_on:
 - regex: ggside_([\d._-]+).tar.gz
   source: regex

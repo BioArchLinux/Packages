@@ -4,13 +4,14 @@ _pkgname=variancePartition
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
 pkgver=1.28.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Quantify and interpret divers of variation in multilevel gene expression experiments'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-aod
   r-biobase
   r-biocparallel
   r-doparallel
@@ -23,12 +24,12 @@ depends=(
   r-lmertest
   r-pbkrtest
   r-progress
+  r-rdpack
+  r-remacor
   r-reshape2
+  r-rhpcblasctl
   r-rlang
   r-scales
-  r-rhpcblasctl
-  r-aod
-  r-rdpack
 )
 optdepends=(
   r-ballgown

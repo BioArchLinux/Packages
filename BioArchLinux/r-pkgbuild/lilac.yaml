@@ -8,6 +8,7 @@ repo_depends:
 - r-crayon
 - r-desc
 - r-prettyunits
+- r-processx
 - r-r6
 - r-rprojroot
 - r-withr

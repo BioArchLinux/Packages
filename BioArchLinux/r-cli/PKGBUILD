@@ -4,7 +4,7 @@ _pkgname=cli
 _pkgver=3.5.0
 pkgname=r-${_pkgname,,}
 pkgver=3.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Helpers for Developing Command Line Interfaces'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,6 +15,7 @@ depends=(
 optdepends=(
   r-callr
   r-covr
+  r-crayon
   r-digest
   r-glue
   r-grdevices

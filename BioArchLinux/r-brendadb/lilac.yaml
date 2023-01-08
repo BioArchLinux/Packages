@@ -6,7 +6,6 @@ repo_depends:
 - r-biocfilecache
 - r-biocparallel
 - r-crayon
-- r-curl
 - r-dplyr
 - r-magrittr
 - r-purrr
@@ -16,7 +15,6 @@ repo_depends:
 - r-stringr
 - r-tibble
 - r-tidyr
-- r-xml2
 update_on:
 - regex: brendaDb_([\d._-]+).tar.gz
   source: regex

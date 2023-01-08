@@ -8,7 +8,6 @@ repo_depends:
 - r-commonmark
 - r-cpp11
 - r-desc
-- r-digest
 - r-knitr
 - r-pkgload
 - r-purrr
