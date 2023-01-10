@@ -1,0 +1,59 @@
+# Maintainer: Grey Christoforo <first name at last name dot net>
+# Co-Maintainer: Bert Peters <bert@bertptrs.nl>
+# imported from AUR: Bipin Kumar <bipin@ccmb.res.in>
+
+pkgname=python-plotly
+pkgver=5.11.0
+pkgrel=1
+pkgdesc="An open-source, interactive graphing library"
+url="https://github.com/plotly/plotly.py"
+depends=(
+         'python'
+         'python-tenacity'
+         'python-ipywidgets'
+         'python-requests'
+         'python-numpy'
+         'python-scipy'
+         'python-pillow'
+         'python-pandas'
+         'python-matplotlib'
+         'python-xarray'
+         'python-statsmodels'
+        )
+# optdepends based on optional_requirements.txt
+optdepends=(
+            'ipython'
+            'jupyterlab'
+            'python-colorcet'
+            )
+
+makedepends=(
+             'python-setuptools'
+             'python-jupyter_core'
+             'python-tornado'
+             'jupyterlab'
+             'jupyter-server'
+             'npm'
+             'python-wheel'
+             'python-build'
+            )
+license=('MIT')
+arch=('any')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/plotly/plotly.py/archive/v${pkgver}.tar.gz")
+options=(!strip) # strip isn't useful for python files and takes forever
+sha256sums=('fb85d1c6013cb91324bd610e02f820880e14aa7daa9bbc6c3572b7250764ee33')
+
+build() {
+  cd plotly.py-${pkgver}/packages/python/plotly
+  # workaround for issue 'https://github.com/webpack/webpack/issues/14532' from preventing build process
+  export NODE_OPTIONS=--openssl-legacy-provider
+  python setup.py build
+}
+
+package() {
+  cd plotly.py-${pkgver}/packages/python/plotly
+  python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+   # set config paths of package to standard archlinux '/etc' location instead of '/usr/etc'
+  mv "$pkgdir"/usr/etc "$pkgdir"
+  install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
