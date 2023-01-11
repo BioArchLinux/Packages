@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=stringi
-_pkgver=1.7.8
+_pkgver=1.7.12
 pkgname=r-${_pkgname,,}
-pkgver=1.7.8
-pkgrel=7
+pkgver=1.7.12
+pkgrel=1
 pkgdesc='Character String Processing Facilities'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('538918b1cd6ed1d8a2dd5ab146ba800a088e99f93c52dcd82615b6e127478b1c')
+sha256sums=('efe8ac2900001f986a75db5641fbb24587a6d23de274a6a85c39dfa58921e009')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
