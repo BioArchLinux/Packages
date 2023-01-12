@@ -3,8 +3,8 @@
 # imported from AUR: Bipin Kumar <bipin@ccmb.res.in>
 
 pkgname=python-plotly
-pkgver=5.11.0
-pkgrel=2
+pkgver=5.12.0
+pkgrel=1
 pkgdesc="An open-source, interactive graphing library"
 url="https://github.com/plotly/plotly.py"
 depends=(
@@ -41,7 +41,7 @@ license=('MIT')
 arch=('any')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/plotly/plotly.py/archive/v${pkgver}.tar.gz")
 options=(!strip) # strip isn't useful for python files and takes forever
-sha256sums=('fb85d1c6013cb91324bd610e02f820880e14aa7daa9bbc6c3572b7250764ee33')
+sha256sums=('daa4c9baeb637fdfcd93b605b9d5d588541db0beeca181bddca6834c79510d15')
 
 build() {
   cd plotly.py-${pkgver}/packages/python/plotly
