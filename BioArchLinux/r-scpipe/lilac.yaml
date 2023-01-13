@@ -4,31 +4,44 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-basilisk
 - r-biocgenerics
 - r-biomart
+- r-biostrings
+- r-data.table
 - r-dplyr
+- r-dropletutils
+- r-flexmix
+- r-genomicalignments
 - r-genomicranges
 - r-ggally
 - r-ggplot2
 - r-glue
 - r-hash
+- r-iranges
 - r-magrittr
 - r-mclust
+- r-multiassayexperiment
 - r-org.hs.eg.db
 - r-org.mm.eg.db
+- r-purrr
 - r-rcpp
 - r-reshape
+- r-reticulate
 - r-rhtslib
 - r-rlang
 - r-robustbase
+- r-rsamtools
+- r-rsubread
 - r-rtracklayer
 - r-s4vectors
 - r-scales
-- r-scater
 - r-singlecellexperiment
 - r-stringr
 - r-summarizedexperiment
 - r-testthat
+- r-tibble
+- r-tidyr
 - r-zlibbioc
 update_on:
 - regex: scPipe_([\d._-]+).tar.gz
