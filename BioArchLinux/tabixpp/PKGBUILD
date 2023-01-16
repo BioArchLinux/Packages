@@ -2,7 +2,7 @@
 pkgname=tabixpp
 _pkgver=1.1.1
 pkgver=1.1.1
-pkgrel=6
+pkgrel=7
 pkgdesc="C++ wrapper to tabix indexer"
 arch=('x86_64')
 url="https://github.com/ekg/tabixpp"
