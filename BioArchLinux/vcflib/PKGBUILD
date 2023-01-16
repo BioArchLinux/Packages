@@ -1,18 +1,18 @@
 # Maintainer: Guoyi
 pkgname=vcflib
-pkgver=1.0.3
-pkgrel=8
+pkgver=1.0.5
+pkgrel=0
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
 arch=('x86_64')
 url="https://github.com/vcflib/vcflib"
 license=('MIT')
 depends=('python' 'htslib')
-makedepends=('git' 'cmake' 'make' 'pybind11' 'tabixpp' 'pandoc' 'zig')
+makedepends=('git' 'cmake' 'pybind11' 'tabixpp' 'pandoc')
 optdepends=('r: running R scripts'
 'perl: running Perl scripts'
 )
 source=("git+https://github.com/vcflib/vcflib.git"
-"git+https://github.com/smarco/WFA2-lib.git#commit=6ff4fe95"
+"git+https://github.com/smarco/WFA2-lib.git#commit=622e6a0a"
 "fastahack.tar.gz::https://github.com/ekg/fastahack/archive/refs/tags/v1.0.0.tar.gz"
 "git+https://github.com/ekg/filevercmp.git"
 "git+https://github.com/ekg/fsom.git"
@@ -40,7 +40,7 @@ prepare(){
   cp -rf WFA2-lib/*  ${pkgname}/contrib/WFA2-lib
   cp -rf  fastahack-1.0.0 fastahack
   for module in {fastahack,filevercmp,fsom,intervaltree,libVCFH,multichoose,smithwaterman}; do
-    cp -rf ${module}/* ${pkgname}/${module}
+    cp -rf ${module}/* ${pkgname}/contrib/${module}
   done
   cd ${pkgname}
   sed -i 's| contrib/tabixpp/tabix.cpp|/usr/include/tabix/tabix.cpp|g' CMakeLists.txt
@@ -51,7 +51,7 @@ build() {
   cd $srcdir/${pkgname}
   install -d build
   cd build
-  cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DZIG=OFF -DCMAKE_BUILD_TYPE=None
   cmake --build . -- PREFIX=/usr HTS_HEADERS=/usr/include/htslib  HTS_LIB=/usr/lib/libhts.so
 
 }
