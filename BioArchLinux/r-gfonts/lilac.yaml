@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-crayon
+  - r-crul
+  - r-glue
+  - r-htmltools
+  - r-jsonlite
+  - r-shiny
+update_on:
+  - regex: gfonts_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=gfonts
+  - alias: r

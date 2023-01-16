@@ -8,23 +8,25 @@ _pkgname=gdtools
 _pkgver=0.2.4
 pkgname=r-${_pkgname,,}
 pkgver=0.2.4
-pkgrel=6
+pkgrel=7
 pkgdesc='Utilities for Graphical Rendering'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
+  cairo
+  fontconfig
+  freetype2
   r
+  r-gfonts
+  r-htmltools
+  r-memoise
   r-rcpp
   r-systemfonts
-  cairo
-  freetype2
-  fontconfig
 )
 optdepends=(
   r-curl
   r-fontquiver
-  r-htmltools
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
