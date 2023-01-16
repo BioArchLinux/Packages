@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=raster
-_pkgver=3.6-13
+_pkgver=3.6-14
 pkgname=r-${_pkgname,,}
-pkgver=3.6.13
+pkgver=3.6.14
 pkgrel=1
 pkgdesc='Geographic Data Analysis and Modeling'
 arch=('x86_64')
@@ -30,7 +30,7 @@ optdepends=(
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e1f6e6b53b74cf6eab8c709801a24442746563652caa42876634d3614058b00c')
+sha256sums=('031382b10a57ff88cfca8565b5195e192e2beb377c0833154de4d1db1a0d3b0a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
