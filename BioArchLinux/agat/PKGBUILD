@@ -26,10 +26,6 @@ source=($pkgname-$pkgver.tar.gz::https://github.com/NBISweden/AGAT/archive/refs/
 sha512sums=('937b03f5f76afe0a190760046ab05f3c91b7a4582d2cde0053479659e7da460221d7051bd307e06239e5b5786f050eb7492ca4cc8744f022254ab9e3eb49c45a')
 options=('!emptydirs' 'purge')
 
-prepare() {
-  cd $_pkgname-$pkgver
-  }
-
 build() {
    cd $_pkgname-$pkgver
    perl Makefile.PL INSTALLDIRS=vendor
