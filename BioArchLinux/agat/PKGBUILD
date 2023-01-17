@@ -28,8 +28,7 @@ options=('!emptydirs' 'purge')
 
 prepare() {
   cd $_pkgname-$pkgver
-  sed -i '51d' Makefile.PL #remove unneeded json dependency from makefile
-}
+  }
 
 build() {
    cd $_pkgname-$pkgver
