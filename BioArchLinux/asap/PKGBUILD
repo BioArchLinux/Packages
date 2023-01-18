@@ -2,7 +2,7 @@
 
 pkgname=asap
 pkgver=2022_10_31
-pkgrel=0
+pkgrel=1
 pkgdesc='Assemble Species by Automatic Partitioning https://doi.org/10.1111/1755-0998.13281'
 arch=('x86_64')
 url='https://bioinfo.mnhn.fr/abi/public/asap/'
