@@ -8,7 +8,6 @@ pre_build_script: |
 post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
-  update_aur_repo()
 update_on:
   - source: cmd
     cmd: curl -sSi https://bioinfo.mnhn.fr/abi/public/asap/ | grep 'Last-Modified' | sed 's/Jan/01/g;s/Feb/02/g;s/Mar/03/g;s/Apr/04/g;s/May/05/g;s/Jun/06/g;s/Jul/07/g;s/Aug/08/g;s/Sep/09/g;s/Oct/10/g;s/Nov/11/g;s/Dec/12/g' | awk '{print $5,$4,$3}' | sed 's/ /_/g'
