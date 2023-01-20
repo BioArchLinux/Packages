@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sp
-_pkgver=1.5-1
+_pkgver=1.6-0
 pkgname=r-${_pkgname,,}
-pkgver=1.5.1
-pkgrel=3
+pkgver=1.6.0
+pkgrel=1
 pkgdesc='Classes and Methods for Spatial Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-sf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('69b9eab481d389bbb736d2adcf50c180aca248c3ffc4ebda8ffe2accc5f229df')
+sha256sums=('f5977fbe80e7dee8e95d41fe0ef9d87c2c984422bb529ea5211fd38a13f9fcda')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
