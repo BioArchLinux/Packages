@@ -4,7 +4,7 @@ _pkgname=ggdist
 _pkgver=3.2.1
 pkgname=r-${_pkgname,,}
 pkgver=3.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Visualizations of Distributions and Uncertainty'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
