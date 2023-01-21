@@ -9,6 +9,7 @@ repo_depends:
 - r-glue
 - r-hdinterval
 - r-numderiv
+- r-quadprog
 - r-rlang
 - r-scales
 - r-tibble

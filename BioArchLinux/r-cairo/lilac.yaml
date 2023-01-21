@@ -7,3 +7,7 @@ update_on:
   source: regex
   url: https://cran.r-project.org/package=Cairo
 - alias: r
+- alias: alpm-lilac
+  alpm: libtiff
+  repo: extra
+  strip_release: true
