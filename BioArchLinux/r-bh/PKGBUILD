@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BH
-_pkgver=1.78.0-0
+_pkgver=1.81.0-1
 pkgname=r-${_pkgname,,}
-pkgver=1.78.0.0
-pkgrel=11
+pkgver=1.81.0.1
+pkgrel=1
 pkgdesc='Boost C++ Header Files'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3b9e9d07682013e0c06a396dda176b405eab99a7273eca6c40d1b4c4110e8cb3')
+sha256sums=('f51c8badd6f181e06353314e1d15a6ec1495cc498ee74b6fa4ea8aba6e97ff64')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
