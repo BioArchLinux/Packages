@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rcpp
-_pkgver=1.0.9
+_pkgver=1.0.10
 pkgname=r-${_pkgname,,}
-pkgver=1.0.9
-pkgrel=5
+pkgver=1.0.10
+pkgrel=1
 pkgdesc='Seamless R and C++ Integration'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,7 @@ optdepends=(
 )
 options=(staticlibs)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('807cec06dc4a96d54904360f6144466f084a7ed411ce5d2eea486a9b3c229176')
+sha256sums=('1e65e24a9981251ab5fc4f9fd65fe4eab4ba0255be3400a8c5abe20b62b5d546')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
