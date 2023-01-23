@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=colorspace
-_pkgver=2.0-3
+_pkgver=2.1-0
 pkgname=r-${_pkgname,,}
-pkgver=2.0.3
-pkgrel=7
+pkgver=2.1.0
+pkgrel=1
 pkgdesc='A Toolbox for Manipulating and Assessing Colors and Palettes'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -38,7 +38,7 @@ optdepends=(
   r-wesanderson
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e75681cc4dd6e4b70303fd96a6d4597065dc6bffcaa4ae4244b73ff19016857f')
+sha256sums=('04078abb6b54119c90dc7085d62916bf292ccb163e213f9ea70567d1be82614c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
