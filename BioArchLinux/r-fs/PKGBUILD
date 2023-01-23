@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=fs
-_pkgver=1.5.2
+_pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=1.5.2
-pkgrel=8
+pkgver=1.6.0
+pkgrel=1
 pkgdesc="Cross-Platform File System Operations Based on 'libuv'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,7 +27,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('35cad1781d6d17c1feb56adc4607079c6844b63794d0ce1e74bb18dbc11e1987')
+sha256sums=('9bec6e6177c845b0c012e30a3527fe0a7fcaef68539c64d65997b611ce15f6e6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
