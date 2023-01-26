@@ -3,14 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-cpp11
 - r-dplyr
-- r-ellipsis
 - r-glue
 - r-lifecycle
 - r-magrittr
 - r-purrr
 - r-rlang
+- r-stringr
 - r-tibble
 - r-tidyselect
 - r-vctrs
