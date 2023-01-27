@@ -4,6 +4,7 @@ maintainers:
 build_prefix: extra-x86_64
 repo_depends:
   - r-bootnet
+  - r-bdgraph
   - r-corpcor
   - r-dplyr
   - r-foreach
@@ -19,7 +20,9 @@ repo_depends:
   - r-snow
   - r-stringr
 pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+    git_pkgbuild_commit()
+    update_aur_repo()
 update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex

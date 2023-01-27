@@ -9,6 +9,7 @@ repo_depends:
   - r-jaspgraphs
   - r-metabma
   - r-metafor
+  - r-pema
   - r-psych
   - r-purrr
   - r-rstan
@@ -21,7 +22,9 @@ repo_depends:
   - r-metamisc
   - r-ggmcmc
 pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+    git_pkgbuild_commit()
+    update_aur_repo()
 update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex

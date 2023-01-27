@@ -15,14 +15,18 @@ repo_depends:
   - r-jaspgraphs
   - r-jaspttests
   - r-lmtest
+  - r-logistf
   - r-matrixstats
   - r-mdscore
   - r-ppcor
   - r-purrr
   - r-rcpp
+  - r-vgam
   - r-statmod
 pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+    git_pkgbuild_commit()
+    update_aur_repo()
 update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex

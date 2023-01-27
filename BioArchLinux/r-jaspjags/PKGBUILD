@@ -3,7 +3,7 @@ _pkgname=jaspJags
 _pkgver=0.17.0
 pkgname=r-${_pkgname,,}
 pkgver=0.17.0
-pkgrel=2
+pkgrel=3
 pkgdesc="JAGS Module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -11,6 +11,7 @@ license=('GPL')
 depends=(r
   r-coda
   r-ggplot2
+  r-ggtext
   r-hexbin
   r-jaspbase
   r-jaspgraphs

@@ -5,13 +5,16 @@ build_prefix: extra-x86_64
 repo_depends:
   - r-coda
   - r-ggplot2
+  - r-ggtext
   - r-hexbin
   - r-jaspbase
   - r-jaspgraphs
   - r-rjags
   - r-stringr
 pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+    git_pkgbuild_commit()
+    update_aur_repo()
 update_on:
   - regex: 'Version:\s*([\d._-]+)'
     source: regex
