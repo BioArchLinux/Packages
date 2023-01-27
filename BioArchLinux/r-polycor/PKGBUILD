@@ -4,7 +4,7 @@ _pkgname=polycor
 _pkgver=0.8-1
 pkgname=r-${_pkgname,,}
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Polychoric and Polyserial Correlations'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
