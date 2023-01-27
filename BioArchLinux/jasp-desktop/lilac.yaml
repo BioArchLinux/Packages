@@ -26,7 +26,6 @@ repo_depends:
   - "r-jaspmachinelearning"
   - "r-jaspmetaanalysis"
   - "r-jaspnetwork"
-  - "r-jaspprocesscontrol"
   - "r-jaspprophet"
   - "r-jaspreliability"
   - "r-jaspsem"
