@@ -32,6 +32,7 @@ repo_depends:
   - "r-jaspsem"
   - "r-jaspsummarystatistics"
   - "r-jaspvisualmodeling"
+  - "r-jaspacceptancesampling"
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
