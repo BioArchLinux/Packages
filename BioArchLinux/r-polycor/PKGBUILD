@@ -3,7 +3,7 @@
 _pkgname=polycor
 _pkgver=0.8-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.8.1
 pkgrel=1
 pkgdesc='Polychoric and Polyserial Correlations'
 arch=('any')
