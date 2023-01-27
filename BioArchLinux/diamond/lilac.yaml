@@ -9,6 +9,8 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
   update_aur_repo()
+repo_depends:
+  - blast+
 update_on:
   - source: github
     github: bbuchfink/diamond
