@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - r-ggplot2
+  - r-igraph
+  - r-proc
+update_on:
+  - regex: BDgraph_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=BDgraph
+  - alias: r
