@@ -30,10 +30,8 @@ depends=(r
   r-ggmcmc
 )
 groups=(r-jasp r-jaspextra)
-makedepends=('git')
-optdepends=()
-source=("git+https://github.com/jasp-stats/${_pkgname}.git")
-sha256sums=('SKIP')
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('4eb08dcd4f926443c98ac5b0f4eab9812da707b9cb0d7070059858bb00af76c2')
 
 
 build() {

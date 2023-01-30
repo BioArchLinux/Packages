@@ -1,30 +1,33 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-bootnet
-  - r-bdgraph
-  - r-corpcor
-  - r-dplyr
-  - r-foreach
-  - r-ggplot2
-  - r-gtools
-  - r-huge
-  - r-isingsampler
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-mvtnorm
-  - r-qgraph
-  - r-reshape2
-  - r-snow
-  - r-stringr
+- r-bootnet
+- r-bdgraph
+- r-corpcor
+- r-dplyr
+- r-foreach
+- r-ggplot2
+- r-gtools
+- r-huge
+- r-isingsampler
+- r-jaspbase
+- r-jaspgraphs
+- r-mvtnorm
+- r-qgraph
+- r-reshape2
+- r-snow
+- r-stringr
 pre_build: vcs_update
 post_build_script: |
-    git_pkgbuild_commit()
-    update_aur_repo()
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspNetwork/master/DESCRIPTION
-  - alias: r
+- regex: Version:\s*([\d._-]+)
+  source: github
+  url: https://raw.githubusercontent.com/jasp-stats/jaspNetwork/master/DESCRIPTION
+  github: jasp-stats/DESCRIPTION
+  use_max_tag: true
+  prefix: "v"
+- alias: r

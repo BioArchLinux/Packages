@@ -1,22 +1,23 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-bain
-  - r-lavaan
-  - r-ggplot2
-  - r-semplot
-  - r-stringr
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-jaspsem
+- r-bain
+- r-lavaan
+- r-ggplot2
+- r-semplot
+- r-stringr
+- r-jaspbase
+- r-jaspgraphs
+- r-jaspsem
 pre_build: vcs_update
 post_build_script: |
-    git_pkgbuild_commit()
-    update_aur_repo()
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspBain/master/DESCRIPTION
-  - alias: r
+- source: github
+  github: jasp-stats/jaspBain
+  use_max_tag: true
+  prefix: "v"
+- alias: r

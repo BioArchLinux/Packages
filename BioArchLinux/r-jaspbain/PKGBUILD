@@ -3,7 +3,7 @@ _pkgname=jaspBain
 _pkgver=0.17.0
 pkgname=r-${_pkgname,,}
 pkgver=0.17.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Bain Module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -20,10 +20,8 @@ depends=(r
   r-jaspsem
 )
 groups=(r-jasp r-jaspextra)
-makedepends=('git')
-optdepends=()
-source=("git+https://github.com/jasp-stats/${_pkgname}.git")
-sha256sums=('SKIP')
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('8f8c7529ccf89b9e901f176c14136aa11434998986f68d0f06f15c081b29b4b3')
 
 
 build() {

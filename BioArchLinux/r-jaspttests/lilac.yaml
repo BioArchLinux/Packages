@@ -1,20 +1,23 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-bayesfactor
-  - r-car
-  - r-ggplot2
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-logspline
-  - r-plotrix
-  - r-plyr
+- r-bayesfactor
+- r-car
+- r-ggplot2
+- r-jaspbase
+- r-jaspgraphs
+- r-logspline
+- r-plotrix
+- r-plyr
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspTTests/master/DESCRIPTION
-  - alias: r
+- regex: Version:\s*([\d._-]+)
+  source: github
+  url: https://raw.githubusercontent.com/jasp-stats/jaspTTests/master/DESCRIPTION
+  github: jasp-stats/DESCRIPTION
+  use_max_tag: true
+  prefix: "v"
+- alias: r

@@ -1,21 +1,24 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-car
-  - r-fitdistrplus
-  - r-ggplot2
-  - r-goftest
-  - r-gnorm
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-sgt
-  - r-sn
+- r-car
+- r-fitdistrplus
+- r-ggplot2
+- r-goftest
+- r-gnorm
+- r-jaspbase
+- r-jaspgraphs
+- r-sgt
+- r-sn
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspDistributions/master/DESCRIPTION
-  - alias: r
+- regex: Version:\s*([\d._-]+)
+  source: github
+  url: https://raw.githubusercontent.com/jasp-stats/jaspDistributions/master/DESCRIPTION
+  github: jasp-stats/DESCRIPTION
+  use_max_tag: true
+  prefix: "v"
+- alias: r

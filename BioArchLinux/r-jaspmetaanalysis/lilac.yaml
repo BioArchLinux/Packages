@@ -1,32 +1,35 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-dplyr
-  - r-ggplot2
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-metabma
-  - r-metafor
-  - r-pema
-  - r-psych
-  - r-purrr
-  - r-rstan
-  - r-stringr
-  - r-tibble
-  - r-tidyr
-  - r-weightr
-  - r-bayestools
-  - r-robma
-  - r-metamisc
-  - r-ggmcmc
+- r-dplyr
+- r-ggplot2
+- r-jaspbase
+- r-jaspgraphs
+- r-metabma
+- r-metafor
+- r-pema
+- r-psych
+- r-purrr
+- r-rstan
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-weightr
+- r-bayestools
+- r-robma
+- r-metamisc
+- r-ggmcmc
 pre_build: vcs_update
 post_build_script: |
-    git_pkgbuild_commit()
-    update_aur_repo()
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspMetaAnalysis/master/DESCRIPTION
-  - alias: r
+- regex: Version:\s*([\d._-]+)
+  source: github
+  url: https://raw.githubusercontent.com/jasp-stats/jaspMetaAnalysis/master/DESCRIPTION
+  github: jasp-stats/DESCRIPTION
+  use_max_tag: true
+  prefix: "v"
+- alias: r

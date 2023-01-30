@@ -1,25 +1,26 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-abtest
-  - r-bayesfactor
-  - r-conting
-  - r-ggplot2
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-plyr
-  - r-stringr
-  - r-vcd
-  - r-vcdextra
-  - r-acceptancesampling
+- r-abtest
+- r-bayesfactor
+- r-conting
+- r-ggplot2
+- r-jaspbase
+- r-jaspgraphs
+- r-plyr
+- r-stringr
+- r-vcd
+- r-vcdextra
+- r-acceptancesampling
 pre_build: vcs_update
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://github.com/jasp-stats/jaspAcceptanceSampling/blob/master/DESCRIPTION
-  - alias: r
+- source: github
+  github: jasp-stats/jaspAcceptanceSampling
+  use_max_tag: true
+  prefix: "v"
+- alias: r

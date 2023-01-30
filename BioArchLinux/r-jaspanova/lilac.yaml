@@ -1,29 +1,32 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-afex
-  - r-bayesfactor
-  - r-car
-  - r-colorspace
-  - r-emmeans
-  - r-ggplot2
-  - r-jaspbase
-  - r-jaspdescriptives
-  - r-jaspgraphs
-  - r-jaspttests
-  - r-matrixstats
-  - r-multcomp
-  - r-onewaytests
-  - r-plyr
-  - r-stringi
-  - r-stringr
-  - r-restriktor
+- r-afex
+- r-bayesfactor
+- r-car
+- r-colorspace
+- r-emmeans
+- r-ggplot2
+- r-jaspbase
+- r-jaspdescriptives
+- r-jaspgraphs
+- r-jaspttests
+- r-matrixstats
+- r-multcomp
+- r-onewaytests
+- r-plyr
+- r-stringi
+- r-stringr
+- r-restriktor
 pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspAnova/master/DESCRIPTION
-  - alias: r
+- source: github
+  github: jasp-stats/jaspAnova
+  use_max_tag: true
+  prefix: "v"
+- alias: r

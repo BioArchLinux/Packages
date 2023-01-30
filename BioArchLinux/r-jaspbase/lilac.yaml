@@ -1,39 +1,42 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - "r-ggplot2"
-  - "r-gridextra"
-  - "r-gridgraphics"
-  - "r-jsonlite"
-  - "r-kknn"
-  - "r-modules"
-  - "r-officer"
-  - "r-pkgbuild"
-  - "r-plyr"
-  - "r-qgraph"
-  - "r-ragg"
-  - "r-r6"
-  - "r-renv"
-  - "r-rjson"
-  - "r-rvg"
-  - "r-svglite"
-  - "r-systemfonts"
-  - "r-withr"
-  - "r-testthat"
-  - "r-data.table"
-  - "r-httr"
-  - "r-lifecycle"
-  - "r-pkgload"
-  - "r-remotes"
-  - "r-stringi"
-  - "r-stringr"
-  - "r-vdiffr"
+- r-ggplot2
+- r-gridextra
+- r-gridgraphics
+- r-jsonlite
+- r-kknn
+- r-modules
+- r-officer
+- r-pkgbuild
+- r-plyr
+- r-qgraph
+- r-ragg
+- r-r6
+- r-renv
+- r-rjson
+- r-rvg
+- r-svglite
+- r-systemfonts
+- r-withr
+- r-testthat
+- r-data.table
+- r-httr
+- r-lifecycle
+- r-pkgload
+- r-remotes
+- r-stringi
+- r-stringr
+- r-vdiffr
 pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspBase/master/DESCRIPTION
-  - alias: r
+- source: github
+  github: jasp-stats/jaspBase
+  use_max_tag: true
+  prefix: "v"
+- alias: r

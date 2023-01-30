@@ -1,37 +1,40 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-auc
-  - r-colorspace
-  - r-dbscan
-  - r-e1071
-  - r-fpc
-  - r-gbm
-  - r-gmedian
-  - r-ggparty
-  - r-ggdendro
-  - r-ggnetwork
-  - r-ggplot2
-  - r-ggrepel
-  - r-ggridges
-  - r-glmnet
-  - r-jaspbase
-  - r-jaspgraphs
-  - r-neuralnet
-  - r-network
-  - r-partykit
-  - r-plyr
-  - r-randomforest
-  - r-rocr
-  - r-rtsne
-  - r-signal
-  - r-kknn
+- r-auc
+- r-colorspace
+- r-dbscan
+- r-e1071
+- r-fpc
+- r-gbm
+- r-gmedian
+- r-ggparty
+- r-ggdendro
+- r-ggnetwork
+- r-ggplot2
+- r-ggrepel
+- r-ggridges
+- r-glmnet
+- r-jaspbase
+- r-jaspgraphs
+- r-neuralnet
+- r-network
+- r-partykit
+- r-plyr
+- r-randomforest
+- r-rocr
+- r-rtsne
+- r-signal
+- r-kknn
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://raw.githubusercontent.com/jasp-stats/jaspMachineLearning/master/DESCRIPTION
-  - alias: r
+- regex: Version:\s*([\d._-]+)
+  source: github
+  url: https://raw.githubusercontent.com/jasp-stats/jaspMachineLearning/master/DESCRIPTION
+  github: jasp-stats/DESCRIPTION
+  use_max_tag: true
+  prefix: "v"
+- alias: r

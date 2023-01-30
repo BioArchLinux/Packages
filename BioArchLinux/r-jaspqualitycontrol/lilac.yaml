@@ -1,38 +1,41 @@
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
-  - r-doe.base
-  - r-fitdistrplus
-  - r-frf2
-  - r-ggplot2
-  - r-ggrepel
-  - r-goftest
-  - r-irr
-  - r-jaspbase
-  - r-jaspdescriptives
-  - r-jaspgraphs
-  - r-mle.tools
-  - r-psych
-  - r-qcc
-  - r-rsm
-  - r-rspc
-  - r-tidyr
-  - r-cowplot
-  - r-vipor
-  - r-ggpp
-  - r-tibble
-  - r-envstats
-  - r-fadist
-  - r-daewr
-  - r-desirability
-  - r-weibullness
-  - r-car
+- r-doe.base
+- r-fitdistrplus
+- r-frf2
+- r-ggplot2
+- r-ggrepel
+- r-goftest
+- r-irr
+- r-jaspbase
+- r-jaspdescriptives
+- r-jaspgraphs
+- r-mle.tools
+- r-psych
+- r-qcc
+- r-rsm
+- r-rspc
+- r-tidyr
+- r-cowplot
+- r-vipor
+- r-ggpp
+- r-tibble
+- r-envstats
+- r-fadist
+- r-daewr
+- r-desirability
+- r-weibullness
+- r-car
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-  - regex: 'Version:\s*([\d._-]+)'
-    source: regex
-    url: https://github.com/jasp-stats/jaspQualityControl/blob/master/DESCRIPTION
-  - alias: r
+- regex: Version:\s*([\d._-]+)
+  source: github
+  url: https://github.com/jasp-stats/jaspQualityControl/blob/master/DESCRIPTION
+  github: jasp-stats/DESCRIPTION
+  use_max_tag: true
+  prefix: "v"
+- alias: r
