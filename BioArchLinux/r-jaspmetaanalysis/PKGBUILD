@@ -30,12 +30,12 @@ depends=(r
   r-ggmcmc
 )
 groups=(r-jasp r-jaspextra)
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
 sha256sums=('4eb08dcd4f926443c98ac5b0f4eab9812da707b9cb0d7070059858bb00af76c2')
 
 
 build() {
-  tar -cvf ${srcdir}/${_pkgname}_${_pkgver}.tar.gz ${_pkgname}
+
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 

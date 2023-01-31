@@ -19,12 +19,12 @@ depends=(r
   r-jfa
 )
 groups=(r-jasp r-jaspextra)
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
 sha256sums=('0d95836b810e2774aace74b69fb709acdb9d65dc5ac6e8087b291d4850b8fa4d')
 
 
 build() {
-  tar -cvf ${srcdir}/${_pkgname}_${_pkgver}.tar.gz ${_pkgname}
+
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 

@@ -22,12 +22,12 @@ depends=(r
   r-rcsdp
 )
 groups=(r-jasp r-jaspcommon)
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
 sha256sums=('ee71685e61bb794f69afd1b7719b286f1d3c8b02ba5fc4e56c5ecdd034605df8')
 
 
 build() {
-  tar -cvf ${srcdir}/${_pkgname}_${_pkgver}.tar.gz ${_pkgname}
+
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
