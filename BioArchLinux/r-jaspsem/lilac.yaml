@@ -20,10 +20,8 @@ post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-- regex: Version:\s*([\d._-]+)
-  source: github
-  url: https://raw.githubusercontent.com/jasp-stats/jaspSem/master/DESCRIPTION
-  github: jasp-stats/DESCRIPTION
+- source: github
+  github: jasp-stats/jaspSem
   use_max_tag: true
-  prefix: "v"
+  prefix: v
 - alias: r

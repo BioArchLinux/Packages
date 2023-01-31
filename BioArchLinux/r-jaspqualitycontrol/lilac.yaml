@@ -32,10 +32,8 @@ repo_depends:
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-- regex: Version:\s*([\d._-]+)
-  source: github
-  url: https://github.com/jasp-stats/jaspQualityControl/blob/master/DESCRIPTION
-  github: jasp-stats/DESCRIPTION
+- source: github
+  github: jasp-stats/jaspQualityControl
   use_max_tag: true
-  prefix: "v"
+  prefix: v
 - alias: r

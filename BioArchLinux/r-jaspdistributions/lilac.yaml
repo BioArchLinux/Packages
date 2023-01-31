@@ -15,10 +15,8 @@ repo_depends:
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
-- regex: Version:\s*([\d._-]+)
-  source: github
-  url: https://raw.githubusercontent.com/jasp-stats/jaspDistributions/master/DESCRIPTION
-  github: jasp-stats/DESCRIPTION
+- source: github
+  github: jasp-stats/jaspDistributions
   use_max_tag: true
-  prefix: "v"
+  prefix: v
 - alias: r
