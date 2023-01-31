@@ -1,0 +1,33 @@
+# Maintainer: Charles Vejnar <first name [dot] last name [at] gmail [dot] com>
+# import from AUR: bipin kumar <bipin@ccmb.res.in>
+
+pkgname=python-pyfaidx
+_name=pyfaidx
+pkgver=0.7.1
+pkgrel=1
+pkgdesc="Efficient pythonic random access to fasta subsequences."
+arch=("any")
+url="https://pypi.python.org/pypi/pyfaidx"
+license=("BSD")
+depends=(
+         'python'
+         'python-setuptools'
+         'python-six'
+         'python-pyvcf3'
+        )
+makedepends=('python-build'
+             'python-installer'
+             'python-wheel')
+source=("$pkgname-$pkgver.tar.gz::https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
+sha256sums=('3977632b7fd29049f8b11035d7e9dea0e2c5da9c235f982b4c3fae06ff1fa23f')
+
+build() {
+    cd "$_name-$pkgver"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "$_name-$pkgver"
+    python -m installer --destdir="$pkgdir" dist/*.whl
+    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
