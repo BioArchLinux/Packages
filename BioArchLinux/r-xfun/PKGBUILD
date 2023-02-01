@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=xfun
-_pkgver=0.36
+_pkgver=0.37
 pkgname=r-${_pkgname,,}
-pkgver=0.36
+pkgver=0.37
 pkgrel=1
 pkgdesc="Supporting Functions for Packages Maintained by 'Yihui Xie'"
 arch=('x86_64')
@@ -32,7 +32,7 @@ optdepends=(
   r-tinytex
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a8170de571d044eee8c852180b847b1984f8e868a9d5edd1c5e2e663171869ee')
+sha256sums=('3b619ff0b2aea36a1d422d1f7ca2e5cef0102e1d127c94c87acf5e6e8358e1f9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
