@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=e1071
-_pkgver=1.7-12
+_pkgver=1.7-13
 pkgname=r-${_pkgname,,}
-pkgver=1.7.12
+pkgver=1.7.13
 pkgrel=1
 pkgdesc='Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('91e052d0a521db74a66df90adb28db601f2a2cca38b03dcad030ac2fdc5c5dcf')
+sha256sums=('da94e191af6e69aa0f9e3250d4b823674cc869339d914f761ebf2824177b6b2f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
