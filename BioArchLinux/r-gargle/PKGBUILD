@@ -4,7 +4,7 @@ _pkgname=gargle
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Utilities for Working with Google APIs'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,6 +16,8 @@ depends=(
   r-glue
   r-httr
   r-jsonlite
+  r-lifecycle
+  r-openssl
   r-rappdirs
   r-rlang
   r-rstudioapi

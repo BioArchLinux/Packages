@@ -8,6 +8,8 @@ repo_depends:
 - r-glue
 - r-httr
 - r-jsonlite
+- r-lifecycle
+- r-openssl
 - r-rappdirs
 - r-rlang
 - r-rstudioapi
