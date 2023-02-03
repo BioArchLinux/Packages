@@ -1,24 +1,26 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-dplyr
-  - r-forcats
-  - r-ggplot2
-  - r-glue
-  - r-magrittr
-  - r-norm
-  - r-purrr
-  - r-rlang
-  - r-tibble
-  - r-tidyr
-  - r-upsetr
-  - r-viridis
-  - r-visdat
+- r-cli
+- r-dplyr
+- r-forcats
+- r-ggplot2
+- r-glue
+- r-magrittr
+- r-norm
+- r-purrr
+- r-rlang
+- r-tibble
+- r-tidyr
+- r-upsetr
+- r-vctrs
+- r-viridis
+- r-visdat
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-  - regex: naniar_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=naniar
+- regex: naniar_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=naniar

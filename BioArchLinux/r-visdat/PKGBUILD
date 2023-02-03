@@ -4,28 +4,32 @@ _pkgname=visdat
 _pkgver=0.5.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Preliminary Visualisation of Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-cli
   r-dplyr
+  r-forcats
   r-ggplot2
   r-glue
   r-magrittr
   r-purrr
   r-readr
+  r-scales
   r-tibble
   r-tidyr
 )
 optdepends=(
-  r-gdtools
+  r-covr
   r-knitr
   r-plotly
   r-rmarkdown
   r-spelling
+  r-stringr
   r-testthat
   r-vdiffr
 )

@@ -4,13 +4,14 @@ _pkgname=naniar
 _pkgver=0.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Data Structures, Summaries, and Visualisations for Missing Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-cli
   r-dplyr
   r-forcats
   r-ggplot2
@@ -22,12 +23,12 @@ depends=(
   r-tibble
   r-tidyr
   r-upsetr
+  r-vctrs
   r-viridis
   r-visdat
 )
 optdepends=(
   r-covr
-  r-gdtools
   r-gridextra
   r-here
   r-hmisc
