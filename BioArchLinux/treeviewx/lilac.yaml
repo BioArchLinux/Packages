@@ -11,6 +11,5 @@ post_build_script: |
   git_commit()
   update_aur_repo()
 update_on:
-  - source: regex
-    url: https://code.google.com/archive/p/treeviewx/downloads
-    regex: 'tv-(\d+.\d+).tar.gz'
+  - source: cmd
+    cmd: curl -sS https://raw.githubusercontent.com/rdmpage/treeviewx/master/tv.cpp | grep '#define TV_VERSION "' | sed 's/"//g' | awk '{print $3}'
