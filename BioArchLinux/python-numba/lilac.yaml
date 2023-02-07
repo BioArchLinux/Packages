@@ -12,5 +12,4 @@ update_on:
   - source: github
     github: numba/numba
     use_max_tag: true
-    prefix: 'v'
   - alias: python
