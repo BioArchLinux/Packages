@@ -1,6 +1,6 @@
 # Maintainer: Guoyi
 pkgname=vcflib
-pkgver=1.0.6
+pkgver=1.0.7
 pkgrel=1
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
 arch=('x86_64')
@@ -24,7 +24,7 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/vcflib/vcflib/archive/r
 "simde::git+https://github.com/simd-everywhere/simde-no-tests.git"
 )
 
-md5sums=('c02aecd8cb9187b4e252cb65725ec65a'
+md5sums=('43c605c4eb1d1079afa1b62bd6f3cdec'
          'eecf9264fb426067e3de5a5b9bb85451'
          'eeb7d046978d7633fe4d07def29f48c3'
          'SKIP'
