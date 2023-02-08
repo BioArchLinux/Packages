@@ -2,7 +2,7 @@
 
 pkgname=libxtend
 pkgver=0.1.7
-pkgrel=2
+pkgrel=3
 pkgdesc="A library of miscellaneous generic C functions"
 arch=('x86_64')
 url="https://github.com/outpaddling/libxtend"
