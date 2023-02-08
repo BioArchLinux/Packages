@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: bipin@ccmb.res.in
+update_on:
+  - source: regex
+    regex: 'infernal-(\d+.\d+.\d+).tar.gz'
+    url: "http://eddylab.org/infernal/"
+    
