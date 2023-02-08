@@ -2,7 +2,7 @@
 
 pkgname=ad2vcf
 pkgver=0.1.6
-pkgrel=4
+pkgrel=5
 pkgdesc="Tool to add allelic depth info from a SAM stream to a VCF file"
 arch=('x86_64')
 url="https://github.com/auerlab/ad2vcf"
