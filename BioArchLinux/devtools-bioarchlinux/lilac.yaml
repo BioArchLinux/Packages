@@ -9,7 +9,7 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_pkgbuild_commit()
   git_commit()
-supdate_on:
+update_on:
   - source: github
     github: archlinuxcn/devtools
 #managed: false
