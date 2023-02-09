@@ -11,7 +11,8 @@ license=('GPL')
 source=('git+https://github.com/BioArchLinux/keyring.git')
 sha256sums=('SKIP')
 pkgver(){
-  date +%Y%m%d
+  cd "${srcdir}"/keyring
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
 }
 package() {
   cd "${srcdir}"/keyring

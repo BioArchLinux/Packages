@@ -12,6 +12,10 @@ conflicts=("bioawk")
 makedepends=('bison' 'make' 'gcc' 'git')
 source=("git+https://github.com/lh3/bioawk.git")
 md5sums=('SKIP')
+pkgver(){
+  cd $srcdir/bioawk
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
 
 prepare() {
   cd "$srcdir/bioawk"

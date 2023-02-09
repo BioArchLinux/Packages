@@ -3,10 +3,12 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 pre_build_script: |
-    update_pkgrel()
-    vcs_update()
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
 post_build_script: |
-    git_pkgbuild_commit()
+  git_add_files('PKGBUILD')
+  git_commit()
+  update_aur_repo()
 update_on:
   - source: cmd
     cmd: curl -sS https://github.com/zwickl/garli/tree/master/garli/tags | grep 'href="/zwickl/garli/tree/master/garli/tags' | grep '\-release' | sed 's/<span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="/ /g' | sed 's/-release/ /g' | awk '{print $1}' | sort -r | head -n 1

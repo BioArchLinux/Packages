@@ -5,7 +5,6 @@ maintainers:
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
-  vcs_update()
 post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()

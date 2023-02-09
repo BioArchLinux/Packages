@@ -2,8 +2,11 @@ build_prefix: extra-x86_64
 maintainers:
   - github: sukanka
     email: su975853527@gmail.com
-pre_build: vcs_update
-post_build: git_pkgbuild_commit
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+  git_pkgbuild_commit()
+  update_aur_repo()
 repo_depends:
   - htslib
 update_on:

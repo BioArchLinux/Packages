@@ -11,7 +11,8 @@ backup=(etc/pacman.d/mirrorlist.bio)
 source=(https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
 sha256sums=('8a90984620549313c521f12b8b4dea49275af9056959d966973f97a97ce41c63')
 pkgver(){
-  date +%Y%m%d
+  cd $srcdir/mirror
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
 }
 package() {
   mkdir -p "$pkgdir/etc/pacman.d"

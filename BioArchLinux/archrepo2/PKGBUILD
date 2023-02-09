@@ -18,7 +18,7 @@ _gitroot=archrepo2
 
 pkgver() {
   cd "$srcdir/$_gitroot"
-  git describe | sed -E 's/([^-]*-g)/r\1/;s/-/./g;s/v//'
+  printf $(TZ=UTC git log --no-walk --tags --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
 }
 
 build() {
