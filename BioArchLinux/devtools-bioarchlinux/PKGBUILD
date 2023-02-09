@@ -2,10 +2,10 @@
 
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=20220621
+pkgver=20230105
 pkgrel=2
 # curl https://api.github.com/repos/archlinuxcn/devtools/git/ref/tags/$pkgver-archlinuxcn1 | jq -r .object.sha
-_tag=d00483e5374f9c5238eb52eb2f3f4087d6734b0e
+_tag=4240649fc796e1262ff4158bda127eb34225f8c8
 _upstream_pkgrel=1
 pkgdesc='Tools for Arch Linux package maintainers, archlinuxcn fork'
 arch=('any')
@@ -19,6 +19,9 @@ provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
 source=("$pkgname::git+https://github.com/archlinuxcn/devtools.git?signed#tag=$_tag")
 b2sums=('SKIP')
+validpgpkeys=(
+  'E62545315B012B69C8C94A1D56EC201BFC794362'  # https://github.com/yan12125
+)
 
 pkgver() {
   cd ${pkgname}
@@ -35,4 +38,3 @@ package() {
   make PREFIX=/usr DESTDIR="${pkgdir}" install
 }
 
-# vim: ts=2 sw=2 et:
