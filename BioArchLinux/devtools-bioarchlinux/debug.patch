@@ -1,0 +1,26 @@
+diff --git a/config/makepkg/x86_64.conf b/config/makepkg/x86_64.conf
+index 4d81d5f..aca5efb 100644
+--- a/config/makepkg/x86_64.conf
++++ b/config/makepkg/x86_64.conf
+@@ -94,7 +94,7 @@ BUILDENV=(!distcc color !ccache check !sign)
+ #-- debug:      Add debugging flags as specified in DEBUG_* variables
+ #-- lto:        Add compile flags for building with link time optimization
+ #
+-OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug lto)
++OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge !debug lto)
+ 
+ #-- File integrity checks to use. Valid: md5, sha1, sha224, sha256, sha384, sha512, b2
+ INTEGRITY_CHECK=(sha256)
+diff --git a/config/makepkg/x86_64_v3.conf b/config/makepkg/x86_64_v3.conf
+index 3c9d20d..e9fde35 100644
+--- a/config/makepkg/x86_64_v3.conf
++++ b/config/makepkg/x86_64_v3.conf
+@@ -94,7 +94,7 @@ BUILDENV=(!distcc color !ccache check !sign)
+ #-- debug:      Add debugging flags as specified in DEBUG_* variables
+ #-- lto:        Add compile flags for building with link time optimization
+ #
+-OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge debug lto)
++OPTIONS=(strip docs !libtool !staticlibs emptydirs zipman purge !debug lto)
+ 
+ #-- File integrity checks to use. Valid: md5, sha1, sha224, sha256, sha384, sha512, b2
+ INTEGRITY_CHECK=(sha256)

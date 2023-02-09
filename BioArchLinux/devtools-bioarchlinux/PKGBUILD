@@ -15,8 +15,10 @@ makedepends=('asciidoc')
 optdepends=('btrfs-progs: btrfs support')
 provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
-source=("$pkgname::git+https://github.com/archlinuxcn/devtools.git?signed#tag=$_tag")
-b2sums=('SKIP')
+source=("$pkgname::git+https://github.com/archlinuxcn/devtools.git?signed#tag=$_tag"
+	"debug.patch")
+b2sums=('SKIP'
+        '939be7dc77f06aa08aac552cba28cc5f6204f3aec2a6267f967da88aba10e936cb44c6d1b45a1947f07f643c6acd390ede421dbad557ed237b916478cfc1249c')
 validpgpkeys=(
   'E62545315B012B69C8C94A1D56EC201BFC794362'  # https://github.com/yan12125
 )
@@ -24,6 +26,11 @@ validpgpkeys=(
 pkgver() {
   cd ${pkgname}
   printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+
+prepare() {
+  cd $pkgname
+  patch -np1 < $srcdir/debug.patch
 }
 
 build() {
