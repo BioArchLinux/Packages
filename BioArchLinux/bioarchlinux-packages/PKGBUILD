@@ -1,7 +1,7 @@
 # Maintainer: guoyi
 pkgname=bioarchlinux-packages
 _pkgname=guoyi-packages
-pkgver=r307.04b2548
+pkgver=2023.01.27
 pkgrel=1
 pkgdesc="build status site"
 arch=('x86_64')
