@@ -29,7 +29,7 @@ optdepends=(
 
 makedepends=(
              'python-setuptools'
-             'python-jupyter_core'
+             'python-jupyter-core'
              'python-tornado'
              'jupyterlab'
              'jupyter-server'
