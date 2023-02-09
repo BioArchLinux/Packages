@@ -3,7 +3,7 @@
 
 pkgname=trnascan-se
 pkgver=2.0.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Program for improved detection of transfer RNA (tRNA) genes in genomic sequence."
 arch=('i686' 'x86_64')
 url="http://lowelab.ucsc.edu/tRNAscan-SE/"
