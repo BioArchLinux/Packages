@@ -2,10 +2,15 @@
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
-managed: false
-post_build: git_pkgbuild_commit
-#supdate_on:
-#  - source: gitlab
-#    gitlab: archlinux/devtools
-#    host: gitlab.archlinux.org
-#    use_max_tag: true
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+  vcs_update()
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_pkgbuild_commit()
+  git_commit()
+supdate_on:
+  - source: github
+    github: archlinuxcn/devtools
+#managed: false

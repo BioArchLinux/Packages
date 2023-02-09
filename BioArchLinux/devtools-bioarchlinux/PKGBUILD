@@ -1,5 +1,3 @@
-# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
-
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
 pkgver=20230105
@@ -19,6 +17,9 @@ provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
 source=("$pkgname::git+https://github.com/archlinuxcn/devtools.git?signed#tag=$_tag")
 b2sums=('SKIP')
+validpgpkeys=(
+  'E62545315B012B69C8C94A1D56EC201BFC794362'  # https://github.com/yan12125
+)
 
 pkgver() {
   cd ${pkgname}
