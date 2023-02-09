@@ -1,12 +1,17 @@
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
-
 build_prefix: extra-x86_64
-
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+  vcs_update()
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_pkgbuild_commit()
+  git_commit()
 repo_depends:
   - pid_children
-
 update_on:
   - source: github
     github: archlinuxcn/lilac
