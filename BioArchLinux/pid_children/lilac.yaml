@@ -1,11 +1,11 @@
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
-
 build_prefix: extra-x86_64
-
-post_build: git_pkgbuild_commit
-
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_pkgbuild_commit()
+  git_commit()
 update_on:
   - source: github
     github: lilydjwg/pid_children

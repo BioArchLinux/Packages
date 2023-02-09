@@ -23,7 +23,7 @@ validpgpkeys=(
 
 pkgver() {
   cd ${pkgname}
-  git describe --tags | sed -E 's/-archlinuxcn[0-9]+//'
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
 }
 
 build() {
