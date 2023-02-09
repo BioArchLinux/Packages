@@ -12,7 +12,6 @@ repo_depends:
 - r-penalized
 - r-preseqr
 - r-pscl
-- r-rmagic
 - r-rsvd
 - r-saver
 update_on:

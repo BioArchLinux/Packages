@@ -7,7 +7,6 @@ repo_depends:
 - r-data.table
 - r-datamods
 - r-dplyr
-- r-dt
 - r-forcats
 - r-fs
 - r-ggplot2

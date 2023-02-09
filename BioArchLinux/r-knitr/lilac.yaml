@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-evaluate
 - r-highr
-- r-stringr
 - r-xfun
 - r-yaml
 update_on:

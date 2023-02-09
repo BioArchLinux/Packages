@@ -8,7 +8,6 @@ repo_depends:
 - r-complexheatmap
 - r-deseq2
 - r-dplyr
-- r-genomictools
 - r-genomictools.filehandler
 - r-ggally
 - r-ggnetwork

@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bsgenome
+- r-genomeinfodb
 update_on:
 - regex: BSgenome.Hsapiens.UCSC.hg38_([\d._-]+).tar.gz
   source: regex

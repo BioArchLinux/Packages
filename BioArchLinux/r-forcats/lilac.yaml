@@ -4,13 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-cli
-- r-ellipsis
 - r-glue
 - r-lifecycle
 - r-magrittr
 - r-rlang
 - r-tibble
-- r-withr
 update_on:
 - regex: forcats_([\d._-]+).tar.gz
   source: regex

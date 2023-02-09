@@ -7,6 +7,7 @@ repo_depends:
 - r-rcpp
 - r-rlang
 - r-scales
+- r-withr
 update_on:
 - regex: ggrepel_([\d._-]+).tar.gz
   source: regex

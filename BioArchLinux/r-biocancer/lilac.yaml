@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-algdesign
 - r-annotationdbi
 - r-biobase
 - r-clusterprofiler
@@ -12,20 +11,15 @@ repo_depends:
 - r-dplyr
 - r-dt
 - r-genetclassifier
-- r-go.db
 - r-htmlwidgets
 - r-httr
-- r-import
-- r-org.bt.eg.db
 - r-org.hs.eg.db
 - r-plyr
-- r-r.methodss3
 - r-r.oo
 - r-radiant.data
 - r-reactome.db
 - r-reactomepa
 - r-shiny
-- r-shinythemes
 - r-tibble
 - r-visnetwork
 - r-xml

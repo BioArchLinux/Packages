@@ -8,6 +8,7 @@ repo_depends:
 - r-htmltools
 - r-labelled
 - r-miniui
+- r-rlang
 - r-rstudioapi
 - r-shiny
 - r-styler

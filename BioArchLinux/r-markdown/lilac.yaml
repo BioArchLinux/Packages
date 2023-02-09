@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-commonmark
-- r-mime
 - r-xfun
 update_on:
 - regex: markdown_([\d._-]+).tar.gz

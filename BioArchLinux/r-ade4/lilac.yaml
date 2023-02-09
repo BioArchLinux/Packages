@@ -4,6 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-pixmap
+- r-rcpp
+- r-rcpparmadillo
 - r-sp
 update_on:
 - regex: ade4_([\d._-]+).tar.gz

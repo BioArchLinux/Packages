@@ -5,20 +5,19 @@ _pkgname=knitr
 _pkgver=1.42
 pkgname=r-${_pkgname,,}
 pkgver=1.42
-pkgrel=1
+pkgrel=2
 pkgdesc='A General-Purpose Package for Dynamic Report Generation in R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
+  pandoc
   r
+  rst2pdf
   r-evaluate
   r-highr
-  r-stringr
   r-xfun
   r-yaml
-  rst2pdf
-  pandoc
 )
 optdepends=(
   r-bslib

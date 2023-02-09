@@ -4,7 +4,7 @@ _pkgname=readxl
 _pkgver=1.4.2
 pkgname=r-${_pkgname,,}
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Read Excel Files'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,9 +17,11 @@ depends=(
   r-tibble
 )
 optdepends=(
+  r-covr
   r-knitr
   r-rmarkdown
   r-testthat
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('387304e2c5be0dca4861ec0232f0d92cc1882b660ca917f8f2a8a4ae858aba11')

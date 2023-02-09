@@ -8,6 +8,7 @@ repo_depends:
 - r-ggplot2
 - r-gridextra
 - r-rcpp
+- r-rlang
 - r-withr
 update_on:
 - regex: precrec_([\d._-]+).tar.gz
