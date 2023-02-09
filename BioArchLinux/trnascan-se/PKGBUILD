@@ -1,0 +1,28 @@
+# import from AUR: bipin kumar <bipin@ccmb.res.in>
+# Maintainer: Fabio Heday <fheday@gmail.com>
+
+pkgname=trnascan-se
+pkgver=2.0.12
+pkgrel=1
+pkgdesc="Program for improved detection of transfer RNA (tRNA) genes in genomic sequence."
+arch=('i686' 'x86_64')
+url="http://lowelab.ucsc.edu/tRNAscan-SE/"
+license=(GPL)
+depends=('infernal' 'perl')
+source=("https://github.com/UCSC-LoweLab/tRNAscan-SE/archive/refs/tags/v${pkgver}.tar.gz")
+sha512sums=('808ba99c5d492b77a32f64c16c3400c2094cfb882fee03bbbd77d3cccb26f2184ff7e1872edccee854918019571a88c9b9e0b95f9738294ba18979d49ecef4d1')
+
+prepare() {
+  chmod -R o+xr tRNAscan-SE-${pkgver}/lib/tRNAscanSE/
+}
+
+build() {
+  cd tRNAscan-SE-${pkgver}
+  ./configure --prefix=/usr 
+  make
+}
+
+package() {
+  cd tRNAscan-SE-${pkgver}
+  make prefix=${pkgdir}/usr install
+}

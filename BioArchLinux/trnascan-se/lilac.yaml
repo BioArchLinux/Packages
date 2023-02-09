@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: bipin@ccmb.res.in
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_add_files('PKGBUILD')
+  git_commit()
+repo_depends:
+  - infernal
+update_on:
+  - source: github
+    github: UCSC-LoweLab/tRNAscan-SE
+    use_max_tag: true
+    prefix: 'v'
