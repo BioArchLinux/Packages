@@ -3,11 +3,15 @@ maintainers:
     email: kuoi@bioarchlinux.org
 build_prefix: extra-x86_64
 pre_build_script: |
-    update_pkgrel()
-    vcs_update()
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+  vcs_update()
 post_build_script: |
-    git_pkgbuild_commit()
-update_on:
-  - source: git
-    git: https://gitlab.gnome.org/Archive/gconf.git
-    use_commit: true
+  git_add_files('PKGBUILD')
+  git_pkgbuild_commit()
+  git_commit()
+supdate_on:
+  - source: gitlab
+    gitlab: Archive/gconf
+    host: gitlab.gnome.org
+#    use_commit: true
