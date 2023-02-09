@@ -1,6 +1,6 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: github.com/kbipinkumar
+  - github: kbipinkumar
     email: bipin@ccmb.res.in
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
