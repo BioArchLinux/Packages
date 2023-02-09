@@ -1,6 +1,6 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: github.com/kbipinkumar
+  - github: kbipinkumar
     email: bipin@ccmb.res.in
 post_build_script: |
   git_add_files('PKGBUILD')
