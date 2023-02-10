@@ -3,59 +3,6 @@ From: Kuoi <kuoi@bioarchlinux.org>
 Date: Fri, 10 Feb 2023 21:09:32 +0800
 Subject: [PATCH] generate patch (#3)
 
-* try to convert it to bioarchlinux
-
-* translate Chinese to English
-
-* change path based on own need
-
-* config
-
-* fix typo
-
-* fix the path
-
-* Update main.rs
-
-* change the location of repo
-
-* add index
-
-* feat: localized resource files
-
-* fix(deps): update rust crate actix-web to 4.1.0
-
-* fix(deps): update rust crate anyhow to 1.0.58
-
-* fix(deps): update rust crate sentry-actix to 0.27.0
-
-* fix(deps): update rust crate sentry to 0.27.0
-
-* chore(deps): update dependency rust to v1.62.0
-
-* fix(deps): update rust crate serde to 1.0.138
-
-* fix(deps): update rust crate cached to 0.35.0
-
-* fix(deps): update rust crate cached to 0.36.0
-
-* fix(deps): update rust crate openssl to 0.10.41
-
-* fix(deps): update rust crate serde to 1.0.139
-
-* fix(deps): update rust crate cached to 0.37.0
-
-* chore(deps): update dependency rust to v1.62.1
-
-* fix
-
-* fix
-
----------
-
-Co-authored-by: imlonghao <git@imlonghao.com>
-Co-authored-by: renovatebot <renovatebot@esd.cc>
----
  Cargo.toml        |  2 +-
  html/current.html | 25 ++++++++++++++-----------
  html/index.html   | 15 +++++++++++++++
