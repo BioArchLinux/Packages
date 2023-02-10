@@ -8,4 +8,4 @@ post_build_script: |
   git_commit()
 update_on:
   - source: github
-    github: BioArchLinux/bioarchlinux-packages
+    github: imlonghao/archlinuxcn-packages
