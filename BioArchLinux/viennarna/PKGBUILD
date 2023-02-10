@@ -4,7 +4,7 @@
 pkgbase=viennarna
 pkgname=('viennarna' 'python-rna' 'perl-rna')
 pkgver=2.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="RNA Secondary Structure Prediction and Comparison"
 arch=('x86_64' 'i686')
 license=('Custom')
@@ -15,14 +15,26 @@ makedepends=( 'perl'
               'libtool'
               'check'
               'mpfr'
-              'gsl')
-source=(http://www.tbi.univie.ac.at/RNA/packages/source/ViennaRNA-${pkgver}.tar.gz)
+              'gsl'
+              'gengetopt'
+              'help2man'
+              'flex'
+              'vim'
+              'swig'
+              'doxygen'
+              )
+source=(https://github.com/ViennaRNA/ViennaRNA/archive/refs/tags/v${pkgver}.tar.gz)
 
 options=('staticlibs' '!strip')
-sha256sums=('05400437cf15595e10b1a25df6c9c48856f356130f9d1e380fa8866b6d27f457')
+sha256sums=('9123418f141dff97e7549da9494f1b0122213a1ecba7d92706709f017966eb84')
 
 prepare() {
   cd "${srcdir}/ViennaRNA-${pkgver}"
+  cd src
+  tar -xzf libsvm-3.25.tar.gz
+  tar -xjf dlib-19.23.tar.bz2
+  cd ..
+  autoreconf -i
   ./configure \
       --with-cluster \
       --with-kinwalker \
@@ -102,9 +114,8 @@ package_viennarna() {
   for perlscript in "$pkgdir"/usr/share/ViennaRNA/bin/*.pl ; do
     mv "$perlscript" "$pkgdir/usr/bin/vendor_perl/"
   done
-
+  libtool --finish ${pkgdir}/usr/lib
   # no need for that file it is outdated anyway
-  rm $pkgdir/usr/share/info/dir
 }
 
 package_python-rna() {

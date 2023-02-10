@@ -9,6 +9,7 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
 update_on:
-  - source: regex
-    regex: 'ViennaRNA-(\d+.\d+.\d+).tar.gz'
-    url: "http://www.tbi.univie.ac.at/RNA/packages/source/"
+  - source: github
+    github: ViennaRNA/ViennaRNA
+    use_max_tag: true
+    prefix: v
