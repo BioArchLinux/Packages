@@ -4,7 +4,7 @@ _pkgname=lavaan
 _pkgver=0.6-13
 pkgname=r-${_pkgname,,}
 pkgver=0.6.13
-pkgrel=1
+pkgrel=2
 pkgdesc='Latent Variable Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,6 +14,7 @@ depends=(
   r-mnormt
   r-numderiv
   r-pbivnorm
+  r-quadprog
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('2af8428e3679ed9889f353015135500ba2b88bd44b5b74f7eea37ff442558c3e')
