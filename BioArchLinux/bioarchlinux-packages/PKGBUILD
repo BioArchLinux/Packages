@@ -32,7 +32,7 @@ build() {
 package() {
   install -Dm755 $pkgname.service $pkgdir/usr/lib/systemd/system/$pkgname.service
   cd "$_pkgname"
-  install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/$pkgname"
+  install -Dm755 "target/release/$_pkgname" $pkgdir/usr/bin/$pkgname
   install -dm755 "$pkgdir"/usr/share/webapps/${pkgname}
   cd html
   cp *.html $pkgdir/usr/share/webapps/$pkgname/
