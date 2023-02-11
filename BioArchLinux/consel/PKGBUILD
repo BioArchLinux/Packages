@@ -1,6 +1,6 @@
 pkgname=consel
 pkgver=2011.05.12
-pkgrel=0
+pkgrel=1
 pkgdesc="Assessing the confidence of phylogenetic tree selection https://doi.org/10.1093/bioinformatics/17.12.1246"
 arch=('x86_64')
 url="http://stat.sys.i.kyoto-u.ac.jp/prog/consel/"
