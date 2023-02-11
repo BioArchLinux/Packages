@@ -5,13 +5,13 @@
 
 pkgname=gri
 pkgver=2.12.27
-pkgrel=1
+pkgrel=2
 pkgdesc="A script-based language for scientific graphics programming"
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://gri.sourceforge.net/"
 depends=('perl' 'netcdf')
-makedepends=('ghostscript' 'netcdf' 'imagemagick' 'texlive-core' 'perl-perl4-corelibs')
+makedepends=('ghostscript' 'netcdf' 'imagemagick' 'texlive-core' 'perl-perl4-corelibs' 'git')
 source=('gri::git+https://github.com/dankelley/gri.git#commit=d9969d1')
 md5sums=('SKIP')
 options=('!makeflags')
