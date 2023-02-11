@@ -1,6 +1,6 @@
 pkgname=bayarea
 pkgver=1.0.3
-pkgrel=0
+pkgrel=1
 pkgdesc="Bayesian inference of historical biogeography for many discrete areas https://doi.org/10.1093/sysbio/syt040"
 arch=('x86_64')
 url="https://github.com/mlandis/bayarea"
