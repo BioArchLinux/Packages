@@ -9,13 +9,20 @@ url="https://ibs.renlab.org"
 license=('custom:commercial')
 depends=('java-runtime=8' 'bash')
 source=("${_pkgname}-${pkgver}.tar.gz::http://ibs.biocuckoo.org/download/IBS_1.0.3_unix_20170614.tar.gz"
-        "${_pkgname}.desktop")
+        "${_pkgname}.desktop"
+        "$pkgname")
 sha256sums=('2d8db720b5071f534cd49a1a29f6f5baa81966e436e5d19c492d08dfb42dcfbe'
-            'dc9211017bbdccf582b591201162faaddb4a09ea6185f06ac69f127f0471a51a')
+            '40f93f23012d471073948dd2b7ca26d444f407b02a93f92c57f734b5fda5a3fd'
+            '2f63e064f153d80f5700088aede92707c0c02353e166e991747f2b4fbd9f8927')
 package() {
-	mkdir -p ${pkgdir}/opt/${_pkgname}
-	cp -pvr ${srcdir}/${_pkgname} $pkgdir/opt
+	mkdir -p $pkgdir/usr/share/$pkgname
+	mkdir -p $pkgdir/usr/share/doc/$pkgname
+	cp -pvr ${srcdir}/${_pkgname}/* $pkgdir/usr/share/$pkgname
+	mv $pkgdir/usr/share/$pkgname/$_pkgname' '$pkgver $pkgdir/usr/share/$pkgname/$_pkgname
+	mv $pkgdir/usr/share/$pkgname/'IBS Manual.pdf' $pkgdir/usr/share/doc/$pkgname/'IBS Manual.pdf'
+	rm $pkgdir/usr/share/$pkgname/CurrentFilePath.txt
 	install -Dm 644 ${srcdir}/$_pkgname.desktop $pkgdir/usr/share/applications/$_pkgname.desktop
+	install -Dm 755 ${srcdir}/$pkgname $pkgdir/usr/bin/$pkgname
 	install -Dm 644 ${srcdir}/IBS/.install4j/i4j_extf_1_ocjbc0_vnx6hy.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
 	install -Dm 644 ${srcdir}/IBS/.install4j/i4j_extf_2_ocjbc0_c9fozv.png $pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png
 }
