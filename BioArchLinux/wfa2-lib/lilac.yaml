@@ -9,20 +9,8 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
   update_aur_repo()
-repo_depends:
-  - htslib
-  - tabixpp
-  - wfa2-lib
 update_on:
   - source: github
-    github: vcflib/vcflib
+    github: smarco/WFA2-lib
     use_max_tag: true
-  - alias: alpm-lilac
-    alpm: htslib
-    strip_release: true
-  - alias: alpm-lilac
-    alpm: tabixpp
-    strip_release: true
-  - alias: alpm-lilac
-    alpm: wfa2-lib
-    strip_release: true
+    prefix: v

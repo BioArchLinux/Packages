@@ -1,18 +1,17 @@
 # Maintainer: Guoyi
 pkgname=vcflib
 pkgver=1.0.7
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
 arch=('x86_64')
 url="https://github.com/vcflib/vcflib"
 license=('MIT')
 depends=('python' 'htslib')
-makedepends=('git' 'cmake' 'pybind11' 'tabixpp' 'pandoc')
+makedepends=('git' 'cmake' 'pybind11' 'tabixpp' 'pandoc' 'wfa2-lib')
 optdepends=('r: running R scripts'
 'perl: running Perl scripts'
 )
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/vcflib/vcflib/archive/refs/tags/v${pkgver}.tar.gz"
-"WFA2-lib-${pkgver}.tar.gz::https://github.com/smarco/WFA2-lib/archive/refs/tags/v2.3.2.tar.gz"
 "fastahack.tar.gz::https://github.com/ekg/fastahack/archive/refs/tags/v1.0.0.tar.gz"
 "git+https://github.com/ekg/filevercmp.git"
 "git+https://github.com/ekg/fsom.git"
@@ -24,8 +23,7 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/vcflib/vcflib/archive/r
 "simde::git+https://github.com/simd-everywhere/simde-no-tests.git"
 )
 
-md5sums=('43c605c4eb1d1079afa1b62bd6f3cdec'
-         'eecf9264fb426067e3de5a5b9bb85451'
+md5sums=('aebcbd457e326d7e555b22601ca197b7'
          'eeb7d046978d7633fe4d07def29f48c3'
          'SKIP'
          'SKIP'
@@ -37,7 +35,6 @@ md5sums=('43c605c4eb1d1079afa1b62bd6f3cdec'
 
 prepare(){
   cd ${srcdir}
-  cp -rf WFA2-lib-*/*  ${pkgname}-${pkgver}/contrib/WFA2-lib
   cp -rf  fastahack-1.0.0 fastahack
   for module in {fastahack,filevercmp,fsom,intervaltree,libVCFH,multichoose,smithwaterman}; do
     cp -rf ${module}/* ${pkgname}-${pkgver}/contrib/${module}
@@ -48,16 +45,15 @@ prepare(){
   sed -i 's|<tabix.hpp>|<tabix/tabix.hpp>|g' src/Variant.h
 }
 build() {
-  cd $srcdir/${pkgname}-${pkgver}
+  cd $srcdir
   install -d build
-  cd build
-  cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DZIG=OFF -DCMAKE_BUILD_TYPE=None
-  cmake --build . -- PREFIX=/usr HTS_HEADERS=/usr/include/htslib  HTS_LIB=/usr/lib/libhts.so
+  cmake -B build -S ${pkgname}-${pkgver} -DCMAKE_INSTALL_PREFIX=/usr -DZIG=OFF -DCMAKE_BUILD_TYPE=None -DWFA_GITMODULE=OFF
+  cmake --build build -- PREFIX=/usr HTS_HEADERS=/usr/include/htslib  HTS_LIB=/usr/lib/libhts.so
 
 }
 
 package() {
-  cd "${pkgname}-${pkgver}"/build
+  cd build
   make install DESTDIR="$pkgdir"
   mv ${pkgdir}/usr/lib/pyvcf*  ${pkgdir}/usr/lib/pyvcflib.so
   mkdir ${pkgdir}/usr/share
@@ -66,10 +62,4 @@ package() {
   # install -d ${pkgdir}/usr/include/vcflib
   # mv ${pkgdir}/usr/include/{*.h,*.hpp} ${pkgdir}/usr/include/vcflib
 
-  # another packages called wfa2lib
-  install -Dm644 $srcdir/${pkgname}-${pkgver}/contrib/WFA2-lib/bindings/cpp/*.hpp -t ${pkgdir}/usr/include/bindings/cpp
-  install -Dm644 $srcdir/${pkgname}-${pkgver}/contrib/WFA2-lib/wavefront/*.h  -t ${pkgdir}/usr/include/wavefront
-  install -Dm644 $srcdir/${pkgname}-${pkgver}/contrib/WFA2-lib/utils/*.h  -t ${pkgdir}/usr/include/utils
-  install -Dm644 $srcdir/${pkgname}-${pkgver}/contrib/WFA2-lib/system/*.h  -t ${pkgdir}/usr/include/system
-  install -Dm644 $srcdir/${pkgname}-${pkgver}/contrib/WFA2-lib/alignment/*.h  -t ${pkgdir}/usr/include/alignment
 }
