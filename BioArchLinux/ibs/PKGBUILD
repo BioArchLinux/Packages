@@ -3,19 +3,19 @@ pkgname=ibs
 _pkgname=IBS
 pkgver=1.0.3
 pkgrel=1
-pkgdesc="Illustrator for Biology"
+pkgdesc="Illustrator for biological sequences"
 arch=('any')
 url="https://ibs.renlab.org"
 license=('custom:commercial')
-depends=('java-environment=8' 'bash')
+depends=('java-runtime=8' 'bash')
 source=("${_pkgname}-${pkgver}.tar.gz::http://ibs.biocuckoo.org/download/IBS_1.0.3_unix_20170614.tar.gz"
         "${_pkgname}.desktop")
-noextract=("${_pkgname}.jar")
 sha256sums=('2d8db720b5071f534cd49a1a29f6f5baa81966e436e5d19c492d08dfb42dcfbe'
-            '6f447dd862c3a871a64a8241eaff0b1b88114dadb8ba8aca86c67dbaf351936d')
+            'dc9211017bbdccf582b591201162faaddb4a09ea6185f06ac69f127f0471a51a')
 package() {
 	mkdir -p ${pkgdir}/opt/${_pkgname}
-	tar -p -xvf ${_pkgname}-${pkgver}.tar.gz
 	cp -pvr ${srcdir}/${_pkgname} $pkgdir/opt
 	install -Dm 644 ${srcdir}/$_pkgname.desktop $pkgdir/usr/share/applications/$_pkgname.desktop
+	install -Dm 644 ${srcdir}/IBS/.install4j/i4j_extf_1_ocjbc0_vnx6hy.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
+	install -Dm 644 ${srcdir}/IBS/.install4j/i4j_extf_2_ocjbc0_c9fozv.png $pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png
 }
