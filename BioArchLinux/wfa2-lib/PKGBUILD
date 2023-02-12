@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <myname at malacology dot net>
 pkgname=wfa2-lib
 pkgver=2.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Wavefront alignment algorithm library v2"
 arch=('x86_64')
 url="https://github.com/smarco/WFA2-lib"
