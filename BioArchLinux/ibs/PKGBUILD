@@ -1,28 +1,27 @@
 # Maintainer: kiri <kiri@vern.cc>
 pkgname=ibs
-_pkgname=IBS
-pkgver=1.0.3
+pkgver=1.0.3_unix_20170614
 pkgrel=1
 pkgdesc="Illustrator for biological sequences"
 arch=('any')
 url="https://ibs.renlab.org"
 license=('custom:commercial')
 depends=('java-runtime=8' 'bash')
-source=("${_pkgname}-${pkgver}.tar.gz::http://ibs.biocuckoo.org/download/IBS_1.0.3_unix_20170614.tar.gz"
-        "${_pkgname}.desktop"
-        "$pkgname")
+source=("$pkgname-$pkgver.tar.gz::http://ibs.biocuckoo.org/download/IBS_$pkgver.tar.gz"
+        "$pkgname.desktop"
+        "$pkgname.sh")
 sha256sums=('2d8db720b5071f534cd49a1a29f6f5baa81966e436e5d19c492d08dfb42dcfbe'
-            '40f93f23012d471073948dd2b7ca26d444f407b02a93f92c57f734b5fda5a3fd'
-            '2f63e064f153d80f5700088aede92707c0c02353e166e991747f2b4fbd9f8927')
+            'fe44d735f00d2b7485079ce995907640f3cfe18008d21664f21a830e6aadcff7'
+            'bda84c612959d73e0438b0d8eb582c1d9b3795ac311fe369ee3554fbb16a5895')
 package() {
 	mkdir -p $pkgdir/usr/share/$pkgname
 	mkdir -p $pkgdir/usr/share/doc/$pkgname
-	cp -pvr ${srcdir}/${_pkgname}/* $pkgdir/usr/share/$pkgname
-	mv $pkgdir/usr/share/$pkgname/$_pkgname' '$pkgver $pkgdir/usr/share/$pkgname/$_pkgname
+	cp -pvr $srcdir/IBS/* $pkgdir/usr/share/$pkgname
+	mv $pkgdir/usr/share/$pkgname/'IBS 1.0.3' $pkgdir/usr/share/$pkgname/$pkgname
 	mv $pkgdir/usr/share/$pkgname/'IBS Manual.pdf' $pkgdir/usr/share/doc/$pkgname/'IBS Manual.pdf'
 	rm $pkgdir/usr/share/$pkgname/CurrentFilePath.txt
-	install -Dm 644 ${srcdir}/$_pkgname.desktop $pkgdir/usr/share/applications/$_pkgname.desktop
-	install -Dm 755 ${srcdir}/$pkgname $pkgdir/usr/bin/$pkgname
-	install -Dm 644 ${srcdir}/IBS/.install4j/i4j_extf_1_ocjbc0_vnx6hy.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
-	install -Dm 644 ${srcdir}/IBS/.install4j/i4j_extf_2_ocjbc0_c9fozv.png $pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png
+	install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
+	install -Dm 644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
+	install -Dm 644 $srcdir/IBS/.install4j/i4j_extf_1_ocjbc0_vnx6hy.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
+	install -Dm 644 $srcdir/IBS/.install4j/i4j_extf_2_ocjbc0_c9fozv.png $pkgdir/usr/share/icons/hicolor/48x48/apps/$pkgname.png
 }
