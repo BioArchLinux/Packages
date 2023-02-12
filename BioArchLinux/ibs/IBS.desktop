@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=IBS
+Exec=env PATH=/usr/lib/jvm/java-8-openjdk/jre/bin/:$PATH /bin/sh /opt/IBS/"IBS 1.0.3"
+Icon=/opt/IBS/.install4j/i4j_extf_2_ocjbc0_c9fozv.png
+Categories=Application

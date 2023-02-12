@@ -1,0 +1,21 @@
+# Maintainer: kiri <kiri@vern.cc>
+pkgname=ibs
+_pkgname=IBS
+pkgver=1.0.3
+pkgrel=1
+pkgdesc="Illustrator for Biology"
+arch=('any')
+url="https://ibs.renlab.org"
+license=('custom:commercial')
+depends=('java-environment=8' 'bash')
+source=("${_pkgname}-${pkgver}.tar.gz::http://ibs.biocuckoo.org/download/IBS_1.0.3_unix_20170614.tar.gz"
+        "${_pkgname}.desktop")
+noextract=("${_pkgname}.jar")
+sha256sums=('2d8db720b5071f534cd49a1a29f6f5baa81966e436e5d19c492d08dfb42dcfbe'
+            '6f447dd862c3a871a64a8241eaff0b1b88114dadb8ba8aca86c67dbaf351936d')
+package() {
+	mkdir -p ${pkgdir}/opt/${_pkgname}
+	tar -p -xvf ${_pkgname}-${pkgver}.tar.gz
+	cp -pvr ${srcdir}/${_pkgname} $pkgdir/opt
+	install -Dm 644 ${srcdir}/$_pkgname.desktop $pkgdir/usr/share/applications/$_pkgname.desktop
+}
