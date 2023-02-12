@@ -13,3 +13,6 @@ update_on:
     source: regex
     url: https://cran.r-project.org/package=fUnitRoots
   - alias: r
+  - alias: alpm-lilac
+    alpm: openblas
+    strip_release: true
