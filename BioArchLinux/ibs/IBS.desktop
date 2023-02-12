@@ -2,6 +2,6 @@
 [Desktop Entry]
 Type=Application
 Name=IBS
-Exec=env PATH=/usr/lib/jvm/java-8-openjdk/jre/bin/:$PATH /bin/sh ibs
+Exec=ibs
 Icon=ibs
 Categories=Application
