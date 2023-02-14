@@ -9,6 +9,6 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_commit()
 update_on:
-- regex: IBS_([.]*_unix_[0-9]{8}).tar.gz
+- regex: IBS_(.*_unix_[0-9]{8}).tar.gz
   source: regex
   url: http://ibs.biocuckoo.org/download.php
