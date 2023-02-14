@@ -13,6 +13,9 @@ update_on:
     source: regex
     url: https://cran.r-project.org/package=fUnitRoots
   - alias: r
-  - alias: alpm-lilac
+  - alias: alpm
     alpm: openblas
+    repo: community
+    from_pattern: '^(\d+\.\d+)\..*'
+    to_pattern: '\1'
     strip_release: true
