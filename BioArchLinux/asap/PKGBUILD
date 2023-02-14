@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <myname at malacology dot net>
 
 pkgname=asap
-pkgver=2022_10_31
+pkgver=2023_02_14
 pkgrel=1
 pkgdesc='Assemble Species by Automatic Partitioning https://doi.org/10.1111/1755-0998.13281'
 arch=('x86_64')
