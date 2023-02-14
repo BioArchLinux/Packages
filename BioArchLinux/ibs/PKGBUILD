@@ -17,7 +17,7 @@ package() {
 	mkdir -p $pkgdir/usr/share/$pkgname
 	mkdir -p $pkgdir/usr/share/doc/$pkgname
 	cp -pvr $srcdir/IBS/* $pkgdir/usr/share/$pkgname
-	mv $pkgdir/usr/share/$pkgname/'IBS 1.0.3' $pkgdir/usr/share/$pkgname/$pkgname
+	mv $pkgdir/usr/share/$pkgname/IBS\ *.*[1-9] $pkgdir/usr/share/$pkgname/$pkgname
 	mv $pkgdir/usr/share/$pkgname/'IBS Manual.pdf' $pkgdir/usr/share/doc/$pkgname/'IBS Manual.pdf'
 	rm $pkgdir/usr/share/$pkgname/CurrentFilePath.txt
 	install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
