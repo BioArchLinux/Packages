@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. '
 arch=('x86_64')
 url='https://github.com/CJ-Chen/TBtools'
-license=('custom:commercial')
+license=('custom')
 depends=('java-runtime>=1.8' 'bash')
 source=("$pkgname-$pkgver.zip::https://github.com/CJ-Chen/TBtools/archive/refs/tags/$pkgver.zip"
         "$pkgname.desktop"
