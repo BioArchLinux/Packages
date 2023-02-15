@@ -11,3 +11,6 @@ update_on:
   - source: regex
     regex: 'transterm_hp_v(\d.\d\d).zip'
     url: "http://transterm.cbcb.umd.edu/"
+  - source: manual
+    manual: 1
+time_limit_hours: 12    
