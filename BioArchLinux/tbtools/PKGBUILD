@@ -1,6 +1,8 @@
-#  Maintainer: kiri <kiri@vern.cc>
-#Previous maintainer: wangzhichao <wangzhichao1990@126.com>
+# Maintainer: kiri <kiri@vern.cc>
+# Contributor: wangzhichao <wangzhichao1990@126.com>
+
 pkgname=tbtools
+_pkgname=TBtools
 pkgver=1.113
 pkgrel=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
@@ -8,19 +10,27 @@ arch=('x86_64')
 url='https://github.com/CJ-Chen/TBtools'
 license=('custom')
 depends=('java-runtime' 'bash')
-source=("$pkgname-$pkgver.zip::https://github.com/CJ-Chen/TBtools/archive/refs/tags/$pkgver.zip"
+makedepends=('git' 'unzip')
+source=("git+https://github.com/CJ-Chen/TBtools.git"
         "$pkgname.desktop"
         "$pkgname.sh")
-sha256sums=('ada79591eefbe55da6999dda51b73bb9b60027b1afaf27df5d43592ae6f5a95e'
+sha256sums=('SKIP'
             'def05ccbd4a3ea9b8937444803ae7a9f33a158e7da74129a34ddec5af599e065'
             '04367e92b51a3717a38c76f07892282458ed9aaa7c3f47ca47ef62de1c30c90f')
-
+pkgver() {
+  cd "$_pkgname"
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
 package() {
     mkdir -p $pkgdir/usr/share/$pkgname
-    unzip $srcdir/TBtools-${pkgver}/TBtools_JRE1.6.jar
+    # unzip
+    unzip $srcdir/TBtools/TBtools_JRE1.6.jar
+    # install source
     install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
     install -Dm 644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
-    install -Dm 755 $srcdir/TBtools-$pkgver/TBtools*.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
+    # install jar
+    install -Dm 755 $srcdir/TBtools/TBtools*.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
+    # intall icon
     install -Dm 644 $srcdir/Icons/TBtoolsLogo.png $pkgdir/usr/share/icons/hicolor/720x720/apps/$pkgname.png
     install -Dm 644 $srcdir/Icons/TBtoolsLogo16x16.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
 }
