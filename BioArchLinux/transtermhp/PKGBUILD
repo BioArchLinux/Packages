@@ -17,6 +17,7 @@ source=("http://transterm.cbcb.umd.edu/transterm_hp_v${pkgver}.zip"
         "0003-Don-t-overwrite-CXXFLAGS.patch"
         "hardening.patch"
         )
+        
 b2sums=('c4553c96dac3c3b06a050d540fca15ad0688cb10e905b3b63c33734e398521a692c759b9d79476acf9241cebb0534b40b96d8a015ccb50edbc59f1888769f470'
         'f17b2afc1ae28d37d1b09de546b992e7064f8aff3400c251242b24bf51fc3ac7eb9abad9043b066655490c0ccab9939320e30d38115c81c2819e0d10f608ad6e'
         'eb798aa12ac2ecc129675cc40c08d0db09a9e66b693aaf04f9ab6b71b6e87eb111187af548b28a6d51068611565c056699e7531d909774e74eaf3f1c696b7ed1'
@@ -25,10 +26,12 @@ b2sums=('c4553c96dac3c3b06a050d540fca15ad0688cb10e905b3b63c33734e398521a692c759b
         '013afe630df1ef74dc569f938619ff5b7174f8aabd20cb2362b308ab3684462a9c65f03e78fb29430626b4ca6760f7a99afe1b37e22f5fe3edae83cc9e85bf24')
 
 prepare (){
-    # Copy patches (courtesy debian med project https://launchpad.net/ubuntu/+source/transtermhp/2.09-5)
+    # Copy patches to source folder
+    # (courtesy debian med project https://launchpad.net/ubuntu/+source/transtermhp/2.09-5)
     mkdir -p transterm_hp_v${pkgver}/patches
     cp *.patch transterm_hp_v${pkgver}/patches
     cp series transterm_hp_v${pkgver}/patches
+    # Apply Patches
     cd transterm_hp_v${pkgver}
     quilt push -a
 
@@ -36,11 +39,22 @@ prepare (){
 
 build() {
   cd transterm_hp_v${pkgver}
-  make clean transterm 2ndscore
+  make clean distribution
+}
+
+test(){
+  cd transterm_hp_v${pkgver}
+  make test
 }
 
 package() {
-  cd transterm_hp_v${pkgver}
+  cd transterm_hp_v${pkgver}/transterm_hp_v${pkgver}
     install -D -m755 transterm "$pkgdir"/usr/bin/transterm
     install -D -m755 2ndscore "$pkgdir"/usr/bin/2ndscore
+    install -d "$pkgdir"/usr/share/doc/${pkgname}/examples/
+    install -d "$pkgdir"/usr/share/${pkgname}/examples/
+    install -D -m755 *.sh "$pkgdir"/usr/share/doc/${pkgname}/examples/
+    install -D -m755 *.py "$pkgdir"/usr/share/doc/${pkgname}/examples/
+    install -D -m644 *.dat "$pkgdir"/usr/share/${pkgname}/examples/
+    install -D -m644 USAGE.txt "$pkgdir"/usr/share/doc/${pkgname}/USAGE.txt 
 }
