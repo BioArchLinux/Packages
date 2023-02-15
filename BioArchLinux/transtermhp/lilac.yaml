@@ -6,10 +6,9 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+  git_add_files('PKGBUILD')
+  git_commit()
 update_on:
-  - source: github
-    github: UCSC-LoweLab/tRNAscan-SE
-    use_max_tag: true
-    prefix: 'v'
+  - source: regex
+    regex: 'transterm_hp_v(\d.\d\d).zip'
+    url: "http://transterm.cbcb.umd.edu/"
