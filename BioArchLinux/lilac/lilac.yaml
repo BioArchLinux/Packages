@@ -7,7 +7,6 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
-  git_pkgbuild_commit()
 repo_depends:
   - pid_children
 update_on:

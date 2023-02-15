@@ -4,7 +4,6 @@ maintainers:
     email: starsareintherose@outlook.com
 post_build_script: |
   git_pkgbuild_commit()
-  git_pkgbuild_commit()
 update_on:
   - source: github
     github: lh3/bioawk
