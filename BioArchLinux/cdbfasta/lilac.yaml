@@ -3,9 +3,8 @@ maintainers:
   - github: kbipinkumar
     email: bipin@ccmb.res.in
 post_build_script: |
-  git_add_files('PKGBUILD')
   git_pkgbuild_commit()
-  git_commit() 
+  git_pkgbuild_commit() 
 update_on:
   - source: github
     github: gpertea/cdbfasta

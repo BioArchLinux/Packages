@@ -6,8 +6,7 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
-  git_add_files('PKGBUILD')
-  git_commit()
+  git_pkgbuild_commit()
 update_on:
   - source: cmd
     cmd: curl -sS https://www.python.org/downloads/ | grep 'class="release-number"' | sed 's/</ /g' | awk '{print$5}' | grep '2\.[0-9]' | head -n 1
