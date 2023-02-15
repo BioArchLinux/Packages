@@ -6,9 +6,7 @@ maintainers:
 #  update_pkgrel()
 #  vcs_update()
 post_build_script: |
-  git_add_files('PKGBUILD')
   git_pkgbuild_commit()
-  git_commit()
 update_on:
   - source: github
     github: archlinuxcn/devtools
