@@ -24,7 +24,7 @@ pkgver() {
 package() {
     mkdir -p $pkgdir/usr/share/$pkgname
     # unzip
-    unzip $srcdir/TBtools-${pkgver}/TBtools_JRE1.6.jar
+    unzip $srcdir/TBtools/TBtools_JRE1.6.jar
     # install source
     install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
     install -Dm 644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
