@@ -2,12 +2,12 @@
 
 pkgname=transtermhp
 pkgver=2.09
-pkgrel=1
+pkgrel=2
 pkgdesc="Find rho-independent transcription terminators in bacterial genomes"
 arch=('i686' 'x86_64')
 url="http://transterm.cbcb.umd.edu/index.php"
 license=('GPL')
-depends=('gcc-libs')
+depends=('gcc-libs' 'python' 'bash')
 makedepends=('quilt')
 provides=('2ndscore')
 source=("http://transterm.cbcb.umd.edu/transterm_hp_v${pkgver}.zip"
@@ -39,7 +39,7 @@ prepare (){
 
 build() {
   cd transterm_hp_v${pkgver}
-  make clean distribution
+  make -j1 distribution
 }
 
 test(){
