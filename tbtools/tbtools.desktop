@@ -1,9 +1,0 @@
-#!/usr/bin/env
-[Desktop Entry]
-Name=TBtools
-Comment=GUI/CommandLine Tool Box for biologistists to utilize NGS data.
-Terminal=false
-Icon=tbtools
-Type=Application
-Exec=tbtools
-Categories=Education;Science;
