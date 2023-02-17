@@ -3,7 +3,7 @@
 
 pkgname=velvet
 pkgver=1.2.10
-pkgrel=4
+pkgrel=5
 pkgdesc="Sequence assembler for very short reads https://doi.org/10.1101/gr.074492.107"
 arch=("i686" "x86_64")
 url="https://github.com/dzerbino/velvet"
