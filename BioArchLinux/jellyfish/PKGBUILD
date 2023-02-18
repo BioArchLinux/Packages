@@ -3,7 +3,7 @@
 
 pkgname=jellyfish
 pkgver=2.3.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast multi-threaded k-mer counter. https://doi.org/10.1093/bioinformatics/btr011"
 
 # Note: according to the README, "Support for 32-bits platform has not been
@@ -23,8 +23,8 @@ makedepends=(
         'samtools'
         'yaggo')
 
-source=("https://github.com/gmarcais/Jellyfish/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('23819da9edb579a0cfb8baac9eff473a9477f4f749930cdb754dce1d117495cd')
+source=("https://github.com/gmarcais/Jellyfish/releases/download/v${pkgver}/jellyfish-${pkgver}.tar.gz")
+sha256sums=('e195b7cf7ba42a90e5e112c0ed27894cd7ac864476dc5fb45ab169f5b930ea5a')
 
 build() {
     cd "${pkgname}-${pkgver}"
