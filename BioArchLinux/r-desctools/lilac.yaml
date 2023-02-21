@@ -8,11 +8,11 @@ repo_depends:
 - r-exact
 - r-expm
 - r-gld
+- r-httr
 - r-mvtnorm
 - r-rcpp
-- r-rstudioapi
 - r-readxl
-- r-httr
+- r-rstudioapi
 update_on:
 - regex: DescTools_([\d._-]+).tar.gz
   source: regex

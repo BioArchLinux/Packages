@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-baseline
 - r-biocparallel
+- r-cli
 - r-dplyr
 - r-fs
 - r-future

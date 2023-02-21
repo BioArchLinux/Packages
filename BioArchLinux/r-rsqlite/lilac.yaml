@@ -5,11 +5,11 @@ maintainers:
 repo_depends:
 - r-bit64
 - r-blob
+- r-cpp11
 - r-dbi
 - r-memoise
 - r-pkgconfig
 - r-plogr
-- r-rcpp
 update_on:
 - regex: RSQLite_([\d._-]+).tar.gz
   source: regex
