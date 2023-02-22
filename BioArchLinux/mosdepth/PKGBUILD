@@ -3,7 +3,7 @@
 
 pkgname=mosdepth
 pkgver=0.3.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Fast BAM/CRAM depth calculation for WGS, exome, or targeted sequencing'
 arch=('x86_64')
 url="https://github.com/brentp/${pkgname}"
