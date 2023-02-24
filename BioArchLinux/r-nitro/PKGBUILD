@@ -1,8 +1,8 @@
 # Maintainer: guoyi zhang <myname at malacology dot net>
 pkgname=r-nitro
 _pkgname=nitro
-pkgver=0.17.0
-pkgrel=0
+pkgver=2021.02.18
+pkgrel=1
 pkgdesc="Integration of TNT in R"
 arch=('any')
 url="https://github.com/paravian/${_pkgname}"
