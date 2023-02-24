@@ -4,19 +4,19 @@ _pkgname=flextable
 _pkgver=0.8.5
 pkgname=r-${_pkgname,,}
 pkgver=0.8.5
-pkgrel=3
+pkgrel=4
 pkgdesc='Functions for Tabular Reporting'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-base64enc
   r-data.table
   r-gdtools
   r-htmltools
   r-knitr
   r-officer
+  r-ragg
   r-rlang
   r-rmarkdown
   r-uuid
@@ -38,8 +38,8 @@ optdepends=(
   r-officedown
   r-pdftools
   r-pkgdown
-  r-ragg
   r-scales
+  r-tables
   r-testthat
   r-webshot2
   r-xtable

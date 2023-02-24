@@ -5,9 +5,10 @@ maintainers:
 repo_depends:
 - r-cli
 - r-gitcreds
-- r-httr
+- r-httr2
 - r-ini
 - r-jsonlite
+- r-rlang
 update_on:
 - regex: gh_([\d._-]+).tar.gz
   source: regex
