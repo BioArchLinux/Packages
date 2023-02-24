@@ -3,7 +3,7 @@
 _pkgname=fontBitstreamVera
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.1.1
 pkgrel=1
 pkgdesc="Fonts with 'Bitstream Vera Fonts' License"
 arch=('any')
