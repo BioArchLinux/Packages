@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=httr
-_pkgver=1.4.4
+_pkgver=1.4.5
 pkgname=r-${_pkgname,,}
-pkgver=1.4.4
+pkgver=1.4.5
 pkgrel=1
 pkgdesc='Tools for Working with URLs and HTTP'
 arch=('any')
@@ -29,7 +29,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('41d82523f3ee260d409a7b5ae4136190cbc5aecbc270b40ed7064f83e7f5435d')
+sha256sums=('f93bac7f882b0df099abca47dd5aae3686fb3cd2d3e9926fcd639bcddff76f6c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
