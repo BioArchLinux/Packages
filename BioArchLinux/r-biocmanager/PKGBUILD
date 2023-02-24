@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BiocManager
-_pkgver=1.30.19
+_pkgver=1.30.20
 pkgname=r-${_pkgname,,}
-pkgver=1.30.19
+pkgver=1.30.20
 pkgrel=1
 pkgdesc='Access the Bioconductor Project Package Repository'
 arch=('any')
@@ -22,7 +22,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6897ab1c58ab2fa3108e22d70bc4150c683bb4ac29355ba7886b88acc30c18e2')
+sha256sums=('b9e72d7687abbd785a69fecb530ec86ad92257a6be95b8e15953b193a516d5ea')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
