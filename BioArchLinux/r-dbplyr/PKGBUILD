@@ -4,14 +4,13 @@ _pkgname=dbplyr
 _pkgver=2.3.0
 pkgname=r-${_pkgname,,}
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A 'dplyr' Back End for Databases"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
-  r-assertthat
   r-blob
   r-cli
   r-dbi
@@ -24,6 +23,7 @@ depends=(
   r-r6
   r-rlang
   r-tibble
+  r-tidyr
   r-tidyselect
   r-vctrs
   r-withr
@@ -41,7 +41,6 @@ optdepends=(
   r-rpostgresql
   r-rsqlite
   r-testthat
-  r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('070d456e7f2926b4b787b79008c7e00452c94ead9dbaf2631d29be4b68151fff')

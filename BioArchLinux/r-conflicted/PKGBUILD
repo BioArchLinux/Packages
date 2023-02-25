@@ -1,36 +1,32 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
-# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Maintainer: sukanka <su975853527@gmail.com>
 
-_pkgname=gh
-_pkgver=1.3.1
+_pkgname=conflicted
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=1.3.1
-pkgrel=5
-pkgdesc="'GitHub' 'API'"
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='An Alternative Conflict Resolution Strategy'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
   r-cli
-  r-gitcreds
-  r-httr2
-  r-ini
-  r-jsonlite
+  r-memoise
   r-rlang
 )
 optdepends=(
+  r-callr
   r-covr
-  r-knitr
-  r-mockery
-  r-rmarkdown
-  r-rprojroot
-  r-spelling
+  r-dplyr
+  r-matrix
+  r-methods
+  r-pkgload
   r-testthat
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('fbaea2abdeceb03d28839fd0e58c2eea01092f9ef92dcc044718ef0d298612ef')
+sha256sums=('c99b86bb52da3e7d1f4d96d70c77304d0434db5bd906edd8d743e89ac9223088')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
