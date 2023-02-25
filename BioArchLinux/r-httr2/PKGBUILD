@@ -3,7 +3,7 @@
 _pkgname=httr2
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=0.2.2
 pkgrel=1
 pkgdesc='Perform HTTP Requests and Process the Responses'
 arch=('any')
