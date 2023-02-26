@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='Splicing-aware transcript (cDNA/EST or protein sequences) alignment to genomic DNA'
 arch=('x86_64')
 url='https://github.com/ogotoh/spaln'
-license=('GPL3')
+license=('GPL2')
 depends=('zlib' 'perl')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/ogotoh/spaln/archive/refs/tags/ver.${pkgver}.tar.gz"
         "spaln.sh"
