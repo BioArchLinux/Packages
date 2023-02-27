@@ -1,8 +1,8 @@
 # Maintainer: Bipin Kumar <bipin@ccmb.res.in>
 
 pkgname=spaln
-pkgver=2.4.13.f
-pkgrel=3
+pkgver=2.4.13f
+pkgrel=1
 pkgdesc='Splicing-aware transcript (cDNA/EST or protein sequences) alignment to genomic DNA'
 arch=('x86_64')
 url='https://github.com/ogotoh/spaln'
