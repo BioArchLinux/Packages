@@ -4,7 +4,7 @@
 pkgname=bedops
 pkgver=2.4.41
 pkgrel=1
-pkgdesc="Highly scalable genomic feature operations."
+pkgdesc="Highly scalable genomic feature operations. 10.1093/bioinformatics/bts277"
 arch=('x86_64')
 url="http://github.com/bedops/bedops/"
 license=('GPL')
