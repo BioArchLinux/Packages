@@ -9,13 +9,9 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
-  git_add_files('PKGBUILD')
-  git_commit()
+  git_pkgbuild_commit()
   update_aur_repo()
 update_on:
   - source: github
     github: auerlab/ad2vcf
     use_max_tag: true
-  - source: manual
-    manual: 1
-time_limit_hours: 12

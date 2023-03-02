@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+  - source: github
+    github: paravian/nitro
+repo_depends:
+  - tnt
+  - r-ape
+  - r-checkmate
+  - r-data.table
+  - r-magrittr
+  - r-processx
+  - r-progress
+  - r-r6
+  - r-treetools

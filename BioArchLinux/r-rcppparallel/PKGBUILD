@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RcppParallel
-_pkgver=5.1.6
+_pkgver=5.1.7
 pkgname=r-${_pkgname,,}
-pkgver=5.1.6
+pkgver=5.1.7
 pkgrel=1
 pkgdesc="Parallel Programming Tools for 'Rcpp'"
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('ac560d868e9757a93ddbf176dfd851fc753f67919476f88e248fe94cba4f0f15')
+sha256sums=('f9c30eb9ce1abffc590825d513d6d28dcbe970e36032dd7521febf04e905b29c')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

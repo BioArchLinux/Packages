@@ -4,8 +4,8 @@
 
 pkgname=python-matplotlib-venn
 _module=${pkgname#python-}
-pkgver=0.11.7
-pkgrel=2
+pkgver=0.11.9
+pkgrel=1
 pkgdesc="Venn diagram plotting routines for python-matplotlib"
 arch=('any')
 url="https://github.com/konstantint/matplotlib-venn"
@@ -13,7 +13,7 @@ license=('MIT')
 depends=('python-numpy' 'python-matplotlib' 'python-scipy')
 makedepends=('python-setuptools')
 source=($_module-$pkgver::"https://github.com/konstantint/matplotlib-venn/archive/refs/tags/$pkgver.tar.gz")
-b2sums=('b7290ee015aa4bd3cff73e705730e334e52dd2b94fec47c7b9d4739f2ecd382d8d666b05ff9c438439fffb2783284b31d9c513c0c0d7ca8d4650a06f797fee68')
+b2sums=('43b891ca36bf9ed830005113bf86753e7409f191e00e9172dff17b030a768b079a0310de5bd6f4d62dd936c9e9b5f3904e4c4b45102fc5f2334166e35628ca95')
 
 build() {
   cd "$_module-$pkgver"

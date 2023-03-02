@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-ape
+- r-bit64
+- r-colorspace
+- r-fastmatch
+- r-lifecycle
+- r-r.cache
+- r-rcpp
+- r-rdpack
+update_on:
+- regex: TreeTools_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=TreeTools
+- alias: r
+

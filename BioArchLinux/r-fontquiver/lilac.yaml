@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - r-fontbitstreamvera
+  - r-fontliberation
+update_on:
+  - regex: fontquiver_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=fontquiver
+  - alias: r

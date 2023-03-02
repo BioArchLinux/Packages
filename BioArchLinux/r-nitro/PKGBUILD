@@ -1,0 +1,40 @@
+# Maintainer: guoyi zhang <myname at malacology dot net>
+pkgname=r-nitro
+_pkgname=nitro
+pkgver=2021.02.18
+pkgrel=1
+pkgdesc="Integration of TNT in R"
+arch=('any')
+url="https://github.com/paravian/${_pkgname}"
+license=('GPL')
+depends=(r
+	tnt
+	r-ape
+	r-checkmate
+	r-data.table
+	r-magrittr
+	r-processx
+	r-progress
+	r-r6
+	r-treetools
+)
+makedepends=(git)
+source=("git+$url.git")
+sha256sums=('SKIP')
+pkgver() {
+  cd "$_pkgname"
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+
+prepare() {
+  tar -zcvf ${_pkgname}.tar.gz  ${_pkgname}
+}
+
+build() {
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}

@@ -1,0 +1,46 @@
+# system requirements: C++14
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=TreeTools
+_pkgver=1.9.0
+pkgname=r-${_pkgname,,}
+pkgver=1.9.0
+pkgrel=1
+pkgdesc='Create, Modify and Analyse Phylogenetic Trees'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-ape
+  r-bit64
+  r-colorspace
+  r-fastmatch
+  r-lifecycle
+  r-r.cache
+  r-rcpp
+  r-rdpack
+)
+optdepends=(
+  r-knitr
+  r-phangorn
+  r-purrr
+  r-rcpp
+  r-rlang
+  r-rmarkdown
+  r-spelling
+  r-testthat
+  r-vdiffr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('073a56919689528f95b133030dcdcda93f352a2e42d3c449e7698557c3a10916')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

@@ -3,10 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-crayon
 - r-data.table
 - r-dplyr
-- r-ellipsis
 - r-glue
 - r-lifecycle
 - r-rlang

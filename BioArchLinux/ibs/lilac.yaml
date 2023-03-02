@@ -6,9 +6,8 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
-  git_add_files('PKGBUILD')
-  git_commit()
+  git_pkgbuild_commit()
 update_on:
-- regex: IBS_(.*_unix_[0-9]{8}).tar.gz
+- regex: IBS_([0-9|\.]*_unix_[0-9]{8}).tar.gz
   source: regex
   url: http://ibs.biocuckoo.org/download.php

@@ -3,12 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-base64enc
 - r-data.table
 - r-gdtools
 - r-htmltools
 - r-knitr
 - r-officer
+- r-ragg
 - r-rlang
 - r-rmarkdown
 - r-uuid

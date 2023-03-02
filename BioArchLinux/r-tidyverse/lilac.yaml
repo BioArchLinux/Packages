@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-broom
 - r-cli
-- r-crayon
+- r-conflicted
 - r-dbplyr
 - r-dplyr
 - r-dtplyr
@@ -22,6 +22,7 @@ repo_depends:
 - r-modelr
 - r-pillar
 - r-purrr
+- r-ragg
 - r-readr
 - r-readxl
 - r-reprex

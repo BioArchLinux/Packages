@@ -1,0 +1,38 @@
+# Maintainer:  Eric Biggers <ebiggers3 at gmail dot com>
+# Import from AUR: bipin kumar <bipin@ccmb.res.in>
+
+pkgname=jellyfish
+pkgver=2.3.0
+pkgrel=4
+pkgdesc="A fast multi-threaded k-mer counter. https://doi.org/10.1093/bioinformatics/btr011"
+
+# Note: according to the README, "Support for 32-bits platform has not been
+# tested."
+arch=("x86_64")
+url="http://www.genome.umd.edu/jellyfish.html"
+license=("GPL3")
+depends=(
+        'python'
+        'htslib'
+        )
+makedepends=(
+        'perl'
+        'python'
+        'python-setuptools'
+        'htslib'
+        'samtools'
+        'yaggo')
+
+source=("https://github.com/gmarcais/Jellyfish/releases/download/v${pkgver}/jellyfish-${pkgver}.tar.gz")
+sha256sums=('e195b7cf7ba42a90e5e112c0ed27894cd7ac864476dc5fb45ab169f5b930ea5a')
+
+build() {
+    cd "${pkgname}-${pkgver}"
+    ./configure --prefix=/usr --enable-htslib --enable-python-binding --enable-perl-binding
+    make
+}
+
+package() {
+    cd "${pkgname}-${pkgver}"
+    make DESTDIR=${pkgdir} install
+}

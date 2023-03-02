@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-ape
 - r-biostrings
+- r-cli
 - r-coin
 - r-data.table
 - r-dplyr

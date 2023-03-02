@@ -2,9 +2,9 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=bspm
-_pkgver=0.4.2
+_pkgver=0.5.0
 pkgname=r-${_pkgname,,}
-pkgver=0.4.2
+pkgver=0.5.0
 pkgrel=1
 pkgdesc='Bridge to System Package Manager'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5bf198b1e2194a66d1e0e41eac8a3e3cf78d9e23c9bf20791ef861c5595e15e4')
+sha256sums=('9dbe36a4f75b015158b5099af63492913e3002c1a90c1e9604ec95e90fddeb6a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

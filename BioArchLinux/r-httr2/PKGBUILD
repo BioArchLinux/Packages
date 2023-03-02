@@ -1,0 +1,53 @@
+# Maintainer: Alexander Bocken <alexander@bocken.org>
+
+_pkgname=httr2
+_pkgver=0.2.2
+pkgname=r-${_pkgname,,}
+pkgver=0.2.2
+pkgrel=1
+pkgdesc='Perform HTTP Requests and Process the Responses'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r
+  r-cli
+  r-curl
+  r-glue
+  r-magrittr
+  r-openssl
+  r-r6
+  r-rappdirs
+  r-rlang
+  r-withr
+)
+optdepends=(
+  r-askpass
+  r-bench
+  r-clipr
+  r-covr
+  r-docopt
+  r-httpuv
+  r-jose
+  r-jsonlite
+  r-knitr
+  r-purrr
+  r-rmarkdown
+  r-testthat
+  r-tibble
+  r-webfakes
+  r-xml2
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('5d1ab62541f7817112519f0f9d00d6a2555bab5b2da7f5c6d579b0c307d7f2bf')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
+# vim:set ts=2 sw=2 et:

@@ -3,6 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-curl
+- r-fontquiver
 - r-gfonts
 - r-htmltools
 - r-memoise

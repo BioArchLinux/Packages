@@ -1,0 +1,36 @@
+# Maintainer: kiri <kiri@vern.cc>
+# Contributor: wangzhichao <wangzhichao1990@126.com>
+
+pkgname=tbtools
+_pkgname=TBtools
+pkgver=2023.02.01
+pkgrel=1
+pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
+arch=('x86_64')
+url='https://github.com/CJ-Chen/TBtools'
+license=('custom')
+depends=('java-runtime' 'bash')
+makedepends=('git' 'unzip')
+source=("git+https://github.com/CJ-Chen/TBtools.git"
+        "$pkgname.desktop"
+        "$pkgname.sh")
+sha256sums=('SKIP'
+            'def05ccbd4a3ea9b8937444803ae7a9f33a158e7da74129a34ddec5af599e065'
+            '04367e92b51a3717a38c76f07892282458ed9aaa7c3f47ca47ef62de1c30c90f')
+pkgver() {
+  cd "$_pkgname"
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+package() {
+    mkdir -p $pkgdir/usr/share/$pkgname
+    # unzip
+    unzip $srcdir/TBtools/TBtools_JRE1.6.jar
+    # install source
+    install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
+    install -Dm 644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
+    # install jar
+    install -Dm 755 $srcdir/TBtools/TBtools*.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
+    # intall icon
+    install -Dm 644 $srcdir/Icons/TBtoolsLogo.png $pkgdir/usr/share/icons/hicolor/720x720/apps/$pkgname.png
+    install -Dm 644 $srcdir/Icons/TBtoolsLogo16x16.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
+}

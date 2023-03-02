@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - r-cli
+  - r-curl
+  - r-glue
+  - r-magrittr
+  - r-openssl
+  - r-r6
+  - r-rappdirs
+  - r-rlang
+  - r-withr
+update_on:
+  - regex: httr2_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=httr2
+  - alias: r

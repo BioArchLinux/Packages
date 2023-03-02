@@ -3,9 +3,7 @@ maintainers:
   - github: starsareintherose
     email: starsareintherose@outlook.com
 post_build_script: |
-  git_add_files('PKGBUILD')
   git_pkgbuild_commit()
-  git_commit()
 update_on:
   - source: github
     github: lh3/bioawk
