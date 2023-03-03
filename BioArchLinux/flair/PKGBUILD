@@ -38,6 +38,7 @@ makedepends=(
              'cython'
              'python-build'
              'python-installer'
+             'python-wheel'
             )
 
 options=(!emptydirs)
