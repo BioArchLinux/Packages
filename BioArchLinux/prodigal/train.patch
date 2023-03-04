@@ -1,0 +1,17 @@
+--- a/training.h	2023-03-04 23:47:07.874789328 +0530
++++ b/training.h	2023-03-04 23:48:51.997550628 +0530
+@@ -25,6 +25,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
++
+ struct _training {
+   double gc;                    /* GC Content */
+   int trans_table;              /* 11 = Standard Microbial, NCBI Trans Table to
+@@ -103,4 +104,4 @@
+ void initialize_metagenome_48(struct _training *);
+ void initialize_metagenome_49(struct _training *);
+ 
+-#endif
++#endif
+\ No newline at end of file

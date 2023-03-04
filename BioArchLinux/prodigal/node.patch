@@ -1,0 +1,55 @@
+--- a/node.c	2023-03-04 23:49:45.572592174 +0530
++++ b/node.c	2023-03-04 23:50:32.358726933 +0530
+@@ -487,7 +487,7 @@
+     /* genes are also penalized.                                  */
+     /**************************************************************/
+     if(is_meta == 1 && slen < 3000 && edge_gene == 0 && 
+-       (nod[i].cscore < 5.0 || abs(nod[i].ndx-nod[i].stop_val < 120))) {
++       (nod[i].cscore < 5.0 || abs(nod[i].ndx-nod[i].stop_val) < 120)) {
+       nod[i].cscore -= META_PEN*dmax(0, (3000-slen)/2700.0);
+     }
+  
+@@ -515,7 +515,7 @@
+       else nod[i].sscore -= 0.5;
+     }
+     else if(nod[i].cscore < 5.0 && is_meta == 1 && abs(nod[i].ndx-
+-            nod[i].stop_val < 120) && nod[i].sscore < 0.0)
++            nod[i].stop_val) < 120 && nod[i].sscore < 0.0)
+       nod[i].sscore -= tinf->st_wt; 
+   }
+ }
+@@ -1412,6 +1412,7 @@
+   char sd_string[28][100], sd_spacer[28][20], qt[10];
+   char type_string[4][5] = { "ATG", "GTG", "TTG" , "Edge" };
+   char seq_data[MAX_LINE*2], run_data[MAX_LINE];
++  char buffer[MAX_LINE] = {0};
+ 
+   /* Initialize sequence data */
+   sprintf(seq_data, "seqnum=%d;seqlen=%d;seqhdr=\"%s\"", sctr, slen, header);
+@@ -1419,14 +1420,16 @@
+   /* Initialize run data string */
+   if(is_meta == 0) {
+     sprintf(run_data, "version=Prodigal.v%s;run_type=Single;", version);
+-    sprintf(run_data, "%smodel=\"Ab initio\";", run_data);
++    strcat(run_data, "model=\"Ab initio\";");
+   }
+   else {
+     sprintf(run_data, "version=Prodigal.v%s;run_type=Metagenomic;", version);
+-    sprintf(run_data, "%smodel=\"%s\";", run_data, mdesc);
++    sprintf(buffer, "model=\"%s\";", mdesc);
++    strcat(run_data, buffer);
+   }
+-  sprintf(run_data, "%sgc_cont=%.2f;transl_table=%d;uses_sd=%d", run_data,
++  sprintf(buffer, "gc_cont=%.2f;transl_table=%d;uses_sd=%d",
+           tinf->gc*100.0, tinf->trans_table, tinf->uses_sd);
++  strcat(run_data, buffer);
+  
+   strcpy(sd_string[0], "None");
+   strcpy(sd_spacer[0], "None");
+@@ -1596,4 +1599,4 @@
+   if(n1->ndx < n2->ndx) return -1;
+   if(n1->ndx > n2->ndx) return 1;
+   return 0;
+-}
++}
+\ No newline at end of file

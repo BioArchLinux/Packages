@@ -1,0 +1,36 @@
+--- a/Makefile	2016-02-12 05:58:35.000000000 +0530
++++ b/Makefile	2023-03-04 23:26:39.790649459 +0530
+@@ -21,15 +21,17 @@
+ SHELL   = /bin/sh
+ CC      = gcc
+ 
+-CFLAGS  += -pedantic -Wall -O3
+-LFLAGS = -lm $(LDFLAGS)
++CFLAGS  += -pedantic -Wall -DSUPPORT_GZIP_COMPRESSED
++LFLAGS = -lm $(LDFLAGS) -lz
+ 
+ TARGET  = prodigal
++ZTARGET  = zprodigal
+ SOURCES = $(shell echo *.c)
+ HEADERS = $(shell echo *.h)
+ OBJECTS = $(SOURCES:.c=.o)
++ZOBJECTS = $(SOURCES:.c=.oz)
+ 
+-INSTALLDIR  = /usr/local/bin
++INSTALLDIR  = /usr/bin
+ 
+ all: $(TARGET)
+ 
+@@ -47,9 +49,9 @@
+ 	-rm $(INSTALLDIR)/$(TARGET)
+ 
+ clean:
+-	-rm -f $(OBJECTS)
++	-rm -f $(OBJECTS) $(ZOBJECTS)
+  
+ distclean: clean
+ 	-rm -f $(TARGET)
+ 
+-.PHONY: all install uninstall clean distclean
++.PHONY: all install uninstall clean distclean
+\ No newline at end of file

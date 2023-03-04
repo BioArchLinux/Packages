@@ -1,0 +1,52 @@
+# Maintainer : bipin kumar <bipin@ccmb.res.in>
+
+pkgname=prodigal
+_pkgname=Prodigal
+pkgver=2.6.3
+pkgrel=1
+pkgdesc='Fast, reliable protein-coding gene prediction for prokaryotic genomes.'
+arch=('i686' 'x86_64')
+url="https://github.com/hyattpd/Prodigal"
+license=('GPL3')
+depends=('glibc' 'zlib')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/hyattpd/Prodigal/archive/refs/tags/v${pkgver}.tar.gz"
+        "makefile.patch"
+        "fptr.h"
+        "main.patch"
+        "node.patch"
+        "seqc.patch"
+        "seqh.patch"
+        "train.patch")
+sha256sums=('89094ad4bff5a8a8732d899f31cec350f5a4c27bcbdd12663f87c9d1f0ec599f'
+            'a2a8b04e2102d9283d7df749d85ec0b0fb7d192e7461bb4ec1ec4b21a5a0300a'
+            'f854ea44d77ccbd4d078507019e4091776d09971af931f6c0ec904ce3e8e6448'
+            'afcf19b7af5de9f909c5c42d7dbcce76b545774cf22d4b8cfa2df3d7af932951'
+            '527634cd5960207b4f14c467df119791e9089b0b84a42fc2e045e079d91d8a68'
+            '755ef320d70ed4e165486d9b37b7114608495740b91ed1acccc1ee95632e5641'
+            '56c7923a74f7ef04b67699878e351ec851e1823ce2b6c6f56153417201ad468c'
+            '6d07da01ccd7f34d491a599c1df9949d5c5727fc5e07ac43e0d5e35ee1131d9b')
+
+prepare (){
+  cp *.patch ${_pkgname}-${pkgver}
+  cp *.h ${_pkgname}-${pkgver}
+  cd ${_pkgname}-${pkgver}
+  # Stop overwriting the optimization with -O3
+  patch -p1 <  makefile.patch
+  # backport zlib compression support.
+  patch -p1 <  main.patch
+  patch -p1 <  node.patch
+  patch -p1 <  seqc.patch
+  patch -p1 <  seqh.patch
+  patch -p1 <  train.patch
+
+}
+
+build() {
+  cd ${_pkgname}-${pkgver}
+  make -j1
+}
+
+package() {
+  cd ${_pkgname}-${pkgver}
+    make install INSTALLDIR=${pkgdir}/usr/bin
+}
