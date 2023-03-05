@@ -3,7 +3,7 @@
 pkgname=prodigal
 _pkgname=Prodigal
 pkgver=2.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast, reliable protein-coding gene prediction for prokaryotic genomes.'
 arch=('i686' 'x86_64')
 url="https://github.com/hyattpd/Prodigal"
