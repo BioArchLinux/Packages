@@ -6,5 +6,5 @@ repo_depends:
 update_on:
   - regex: Rpdb_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=Rpdb
+    url: https://cran.r-project.org/src/contrib/Archive/Rpdb
   - alias: r
