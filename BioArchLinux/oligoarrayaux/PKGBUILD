@@ -2,7 +2,7 @@
 
 pkgname=oligoarrayaux
 pkgver=3.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A subset of the UNAFold package for use with OligoArray"
 arch=('i686' 'x86_64')
 url="http://www.unafold.org/Dinamelt/software/oligoarrayaux.php"
