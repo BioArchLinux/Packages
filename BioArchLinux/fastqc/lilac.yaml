@@ -8,7 +8,7 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: regex
-    url: "https://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
-    regex: 'Version (\d+.\d+.\d+) released'
+  - source: github
+    github: s-andrews/FastQC
+    use_max_tag: true
 time_limit_hours: 4
