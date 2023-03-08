@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-openssl
 - r-r6
+- r-ragg
 - r-uuid
 - r-xml2
 - r-zip

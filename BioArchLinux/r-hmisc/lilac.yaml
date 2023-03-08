@@ -12,7 +12,9 @@ repo_depends:
 - r-gtable
 - r-htmltable
 - r-htmltools
+- r-knitr
 - r-latticeextra
+- r-rmarkdown
 - r-viridis
 update_on:
 - regex: Hmisc_([\d._-]+).tar.gz

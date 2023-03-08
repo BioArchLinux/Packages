@@ -4,7 +4,7 @@ _pkgname=vcdExtra
 _pkgver=0.8-2
 pkgname=r-${_pkgname,,}
 pkgver=0.8.2
-pkgrel=3
+pkgrel=4
 pkgdesc="'vcd' Extensions and Additions"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,7 +12,14 @@ license=('GPL')
 depends=(
   r
   r-ca
+  r-dplyr
+  r-glue
   r-gnm
+  r-here
+  r-purrr
+  r-readxl
+  r-stringr
+  r-tidyr
   r-vcd
 )
 optdepends=(
