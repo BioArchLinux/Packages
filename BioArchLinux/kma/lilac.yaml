@@ -6,5 +6,5 @@ post_build_script: |
   git_pkgbuild_commit() 
 update_on:
   - source: bitbucket
-    bitbucket: cdbfastagenomicepidemiology/kma
+    bitbucket: genomicepidemiology/kma
     use_max_tag: true
