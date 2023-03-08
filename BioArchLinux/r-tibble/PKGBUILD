@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=tibble
-_pkgver=3.1.8
+_pkgver=3.2.0
 pkgname=r-${_pkgname,,}
-pkgver=3.1.8
-pkgrel=4
+pkgver=3.2.0
+pkgrel=1
 pkgdesc='Simple Data Frames'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -49,7 +49,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('acf30e075d18d2f61de53ca20a13c502bb32abb8083089b0bb9172a0cb5cedea')
+sha256sums=('8f2ff14bca39e342f36d026776351f21b7627fe0f20f009b7a9e0a69a166298a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
