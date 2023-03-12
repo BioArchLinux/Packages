@@ -1,6 +1,6 @@
 pkgname=seqlib
 pkgver=1.2.0
-pkgrel=7
+pkgrel=8
 pkgdesc="C++ htslib/bwa-mem/fermi interface for interrogating sequence data"
 arch=('i686' 'x86_64')
 url="https://github.com/walaj/SeqLib"
@@ -19,7 +19,7 @@ prepare(){
 }
 build() {
   cd $srcdir/${pkgname}-${pkgver}/src
-  gcc *.c *.cpp -I/usr/include -I.. -fPIC -O2 -o libseqlib.so -shared  -lhts -ljsoncpp
+  gcc *.c *.cpp -I/usr/include -I.. -fPIC -O2 -o libseqlib.so -shared  -lhts -lbwa -lfml -ljsoncpp
   cd seqtools
   gcc seqtools.cpp -I/usr/include  -I../.. -L../ -O2 -o seqtools -lbwa -lhts -lseqlib -lfml -lz  -lstdc++
 

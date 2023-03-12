@@ -8,6 +8,8 @@ post_build_script: |
   update_aur_repo()
 repo_depends:
   - htslib
+  - bwa
+  - fermi-lite
 update_on:
   - source: github
     github: walaj/SeqLib

@@ -6,8 +6,9 @@ repo_depends:
   - htslib
   - tabixpp
   - vcflib
-  - vcftools 
-  - samtools 
+  - vcftools
+  - samtools
+  - seqlib
 update_on:
   - source: github
     github: freebayes/freebayes
@@ -22,4 +23,3 @@ update_on:
   - alias: alpm-lilac
     alpm: vcflib
     strip_release: true
-
