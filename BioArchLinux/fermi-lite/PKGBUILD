@@ -1,0 +1,41 @@
+# Maintainer: PumpkinCheshire <sollyonzou at gmail dot com>
+
+pkgname=fermi-lite
+pkgver=0.1.r15.g5bc90f8
+pkgrel=1
+pkgdesc="Standalone C library for assembling Illumina short reads in small regions"
+arch=('x86_64')
+url="https://github.com/walaj/fermi-lite"
+license=('MIT')
+depends=('zlib')
+makedepends=('git' 'make')
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver() {
+    git -C ${pkgname} describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+prepare(){
+    cd ${pkgname}
+    sed -i "s|CFLAGS=|CFLAGS=-fPIC |" Makefile
+    sed -i "s|^const|extern const|" rle.h
+}
+build() {
+    cd "$srcdir/${pkgname}"
+    make
+    mkdir lib
+    cp libfml.a lib
+    cd lib
+    ar -x libfml.a
+    gcc -shared  -o libfml.so *.o
+}
+
+package() {
+    install -Dm755 -t "${pkgdir}/usr/bin" ${srcdir}/${pkgname}/fml-asm
+    install -Dm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" ${pkgname}/LICENSE.txt
+    cd $srcdir/${pkgname}
+    install -Dm644 *.h -t "${pkgdir}/usr/include/${pkgname}"
+    install -Dm755 lib/libfml.so -t "${pkgdir}/usr/lib"
+    ln -s /usr/lib/libfml.so "${pkgdir}/usr/lib/libfermi-lite.so"
+}
