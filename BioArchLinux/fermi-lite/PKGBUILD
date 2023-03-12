@@ -2,7 +2,7 @@
 
 pkgname=fermi-lite
 pkgver=0.1.r13.g85f159e
-pkgrel=1
+pkgrel=2
 pkgdesc="Standalone C library for assembling Illumina short reads in small regions"
 arch=('x86_64')
 url="https://github.com/lh3/fermi-lite"
