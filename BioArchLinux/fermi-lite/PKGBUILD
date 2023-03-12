@@ -13,7 +13,8 @@ source=("git+${url}.git")
 sha256sums=('SKIP')
 
 pkgver() {
-    git -C ${pkgname} describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+    cd "$pkgname"
+    printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
 }
 
 prepare(){
@@ -21,6 +22,7 @@ prepare(){
     sed -i "s|CFLAGS=|CFLAGS=-fPIC |" Makefile
     sed -i "s|^const|extern const|" rle.h
 }
+
 build() {
     cd "$srcdir/${pkgname}"
     make
