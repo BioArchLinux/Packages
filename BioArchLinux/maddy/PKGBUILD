@@ -12,8 +12,8 @@ depends=('glibc')
 makedepends=('go' 'git' 'scdoc')
 optdepends=()
 source=(
-    "${pkgname}-${pkgver}.tar.zst::https://maddy.email/builds/${pkgver}/maddy-${pkgver}-src.tar.zst"
-    "${pkgname}-${pkgver}.tar.zst.sig::https://maddy.email/builds/${pkgver}/maddy-${pkgver}-src.tar.zst.sig"
+    "${pkgname}-${pkgver}.tar.zst::https://github.com/foxcpp/maddy/releases/download/v${pkgver}/maddy-${pkgver}-src.tar.zst"
+    "${pkgname}-${pkgver}.tar.zst.sig::https://github.com/foxcpp/maddy/releases/download/v${pkgver}/maddy-${pkgver}-src.tar.zst.sig"
     'maddy.sysusers'
     'maddy.tmpfiles'
     '516.patch'
@@ -30,8 +30,8 @@ validpgpkeys=('3197BBD95137E682A59717B434BB2007081396F4')
 
 prepare() {
     cd "${srcdir}/maddy-${pkgver}-src"
-    patch -p1 < "${srcdir}/516.patch" # https://github.com/foxcpp/maddy/pull/516
-    patch -p1 < "${srcdir}/0001-test-Fix-Dovecot-interop-tests.patch" # https://github.com/foxcpp/maddy/commit/90f88c89cdb0330ca9840ee518d17a153b6edb0c
+    #patch -p1 < "${srcdir}/516.patch" # https://github.com/foxcpp/maddy/pull/516
+    #patch -p1 < "${srcdir}/0001-test-Fix-Dovecot-interop-tests.patch" # https://github.com/foxcpp/maddy/commit/90f88c89cdb0330ca9840ee518d17a153b6edb0c
 }
 
 build() {
