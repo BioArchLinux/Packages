@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=vctrs
-_pkgver=0.5.2
+_pkgver=0.6.0
 pkgname=r-${_pkgname,,}
-pkgver=0.5.2
+pkgver=0.6.0
 pkgrel=1
 pkgdesc='Vector Helpers'
 arch=('x86_64')
@@ -34,7 +34,7 @@ optdepends=(
   r-zeallot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('76bf10243b9b31e23f56ffdaa1677a01767699e2098487f86bd42cb801d8c047')
+sha256sums=('be0b712c4e6aae353120a60ded6a4301eb9631c8d256927b79b9ad83b4299757')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
