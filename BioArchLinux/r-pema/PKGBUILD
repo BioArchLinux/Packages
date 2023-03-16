@@ -33,6 +33,7 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('0d3c2098dfd713cb0e6c198a8c18ce5b62fc576cae337bda8f92060a7a459c8f')
 
 build() {
+  export MAKE="make -j2"
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
