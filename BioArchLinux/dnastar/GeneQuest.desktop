@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=GeneQuest
-Exec=wine /usr/share/dnastar/GeneQuest.exe
-Type=Application
-StartupNotify=true
-Icon=/usr/share/dnastar/GeneQuest.png

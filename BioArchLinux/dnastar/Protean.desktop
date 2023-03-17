@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Protean
-Exec=wine /usr/share/dnastar/Protean.exe
-Type=Application
-StartupNotify=true
-Icon=/usr/share/dnastar/Protean.png

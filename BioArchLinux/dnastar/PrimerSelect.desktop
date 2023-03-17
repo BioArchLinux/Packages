@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=PrimerSelect
-Exec=wine /usr/share/dnastar/PrimerSelect.exe
-Type=Application
-StartupNotify=true
-Icon=/usr/share/dnastar/PrimerSelect.png
