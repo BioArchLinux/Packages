@@ -8,7 +8,7 @@ def pre_build():
         if line.startswith('_pkgver='):
             line = f'_pkgver={_G.newver}'
         elif line.startswith('build()'):
-            line += '\n' + 'export MAKE="make -j5"'
+            line += '\n' + 'export MAKE="make -j2"'
         print(line)
     update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 
