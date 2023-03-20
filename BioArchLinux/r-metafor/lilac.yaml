@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-mathjaxr
 - r-metadat
+- r-numderiv
 - r-pbapply
 update_on:
 - regex: metafor_([\d._-]+).tar.gz

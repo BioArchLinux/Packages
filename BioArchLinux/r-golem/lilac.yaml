@@ -4,18 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-attempt
-- r-cli
 - r-config
-- r-crayon
-- r-desc
-- r-fs
 - r-here
 - r-htmltools
-- r-pkgload
-- r-roxygen2
-- r-rstudioapi
+- r-rlang
 - r-shiny
-- r-usethis
 - r-yaml
 update_on:
 - regex: golem_([\d._-]+).tar.gz

@@ -4,7 +4,7 @@ _pkgname=metafor
 _pkgver=3.8-1
 pkgname=r-${_pkgname,,}
 pkgver=3.8.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Meta-Analysis Package for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,8 +12,9 @@ license=('GPL')
 depends=(
   r
   r-mathjaxr
-  r-pbapply
   r-metadat
+  r-numderiv
+  r-pbapply
 )
 optdepends=(
   r-alabama
@@ -25,22 +26,26 @@ optdepends=(
   r-compquadform
   r-crayon
   r-dfoptim
+  r-emmeans
   r-epi
+  r-estmeansd
   r-glmmadaptive
   r-glmmtmb
   r-gsl
   r-lbfgsb3c
   r-lme4
+  r-metablue
   r-minqa
   r-multcomp
   r-mvtnorm
   r-nloptr
-  r-numderiv
   r-optimparallel
   r-pracma
   r-r.rsp
+  r-rcgmin
   r-rmarkdown
   r-rsolnp
+  r-rvmmin
   r-sp
   r-subplex
   r-survival

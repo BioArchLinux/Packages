@@ -13,7 +13,6 @@ repo_depends:
 - r-htmltable
 - r-htmltools
 - r-knitr
-- r-latticeextra
 - r-rmarkdown
 - r-viridis
 update_on:

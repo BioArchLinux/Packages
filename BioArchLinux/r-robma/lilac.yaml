@@ -4,14 +4,12 @@ maintainers:
 repo_depends:
 - jags
 - r-bayestools
-- r-bridgesampling
 - r-coda
-- r-extradistr
 - r-ggplot2
 - r-mvtnorm
-- r-psych
 - r-rdpack
 - r-rjags
+- r-rlang
 - r-runjags
 - r-scales
 update_on:
