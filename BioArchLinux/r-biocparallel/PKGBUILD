@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BiocParallel
-_pkgver=1.32.5
+_pkgver=1.32.6
 pkgname=r-${_pkgname,,}
-pkgver=1.32.5
+pkgver=1.32.6
 pkgrel=1
 pkgdesc='Bioconductor facilities for parallel evaluation'
 arch=('x86_64')
@@ -39,7 +39,7 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('395ed5c19fb706ca73c841c843c3a89f8a88f774a26415bfdbac0dca92a5a6f9')
+sha256sums=('40d26698c2fa5e33418d41e6b95657b5ee6f9f5122a5e1ac6940222d5d5903ab')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
