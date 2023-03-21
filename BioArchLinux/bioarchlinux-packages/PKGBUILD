@@ -1,7 +1,7 @@
 # Maintainer: guoyi
 pkgname=bioarchlinux-packages
 _pkgname=archlinuxcn-packages
-pkgver=2023.03.20
+pkgver=2023.03.21
 pkgrel=1
 pkgdesc="build status site"
 arch=('x86_64')
