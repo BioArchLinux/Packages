@@ -2,7 +2,7 @@
 
 pkgname=bioarchlinux-pacmanconf
 pkgver=2023.03.22
-pkgrel=0
+pkgrel=1
 pkgdesc="BioArchLinux pacman conf for use by pacman"
 arch=('any')
 url="https://github.com/BioArchLinux/iso"
