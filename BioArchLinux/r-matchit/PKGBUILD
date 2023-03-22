@@ -2,9 +2,9 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=MatchIt
-_pkgver=4.5.1
+_pkgver=4.5.2
 pkgname=r-${_pkgname,,}
-pkgver=4.5.1
+pkgver=4.5.2
 pkgrel=1
 pkgdesc='Nonparametric Preprocessing for Parametric Causal Inference'
 arch=('x86_64')
@@ -42,7 +42,7 @@ optdepends=(
   r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('961e6debea443179fb196581e0783ce05215faa4115e3f5e1cff89eb82b0c7e0')
+sha256sums=('ef6e3084cbc66e570147e6e34b33047a1349b7f20a2d8c4cfa732516cb2df30a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
