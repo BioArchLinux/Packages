@@ -1,0 +1,14 @@
+pkgname=base
+pkgver=1
+pkgrel=0
+pkgdesc='Minimal package set to define a basic BioArchLinux installation'
+url='https://www.bioarchlinux.org'
+arch=('any')
+license=('GPL')
+depends=(
+  # very very base
+  'base'
+
+  # BioArchLinux related
+  'bioarchlinux-pacmanconf' 'bioarchlinux-mirrorlist' 'bioarchlinux-keyring'
+)
