@@ -8,7 +8,6 @@ license=('GPL')
 depends=(
   # very very base
   'base'
-
   # BioArchLinux related
-  'bioarchlinux-pacmanconf' 'bioarchlinux-mirrorlist' 'bioarchlinux-keyring'
+  'bioarchlinux-mirrorlist' 'bioarchlinux-keyring'
 )
