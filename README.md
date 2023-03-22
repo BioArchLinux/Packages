@@ -48,6 +48,9 @@ You can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) to use o
 ### Docker 
 You can use [docker](https://hub.docker.com/r/bioarchlinux/bioarchlinux) to use our repo, see [here](https://github.com/BioArchLinux/docker)
 
+### ISO
+You can use ISO image via virtual machine software to use our repo, see [here](https://github.com/BioArchLinux/iso)
+
 ## Citation
 
 > Zhang G. Hu Y. Drobot V. Staal J. Yi Y. Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux. F1000Research 11: 809. https://doi.org/10.7490/f1000research.1119039.1
