@@ -9,10 +9,8 @@ url="https://github.com/BioArchLinux/iso"
 license=('GPL')
 backup=(etc/pacman.conf)
 source=(https://raw.githubusercontent.com/BioArchLinux/iso/master/bio/pacman.conf)
-sha256sums=('bf34baf5b9b662e63a714946c9de8548c85daab14e4f10ba570234bb8a723228')
-pkgver(){
-  curl -sSi https://raw.githubusercontent.com/BioArchLinux/iso/master/bio/pacman.conf | grep 'date' | sed 's/Jan/01/g;s/Feb/02/g;s/Mar/03/g;s/Apr/04/g;s/May/05/g;s/Jun/06/g;s/Jul/07/g;s/Aug/08/g;s/Sep/09/g;s/Oct/10/g;s/Nov/11/g;s/Dec/12/g' | awk '{print $5,$4,$3}' | sed 's/ /./g'
-}
+sha256sums=('2ffe6868027f645c41d31742c6cfc5191efe10cf9e8f0d11ab77a96050890553')
+
 package() {
   mkdir -p "$pkgdir/etc/"
   install -m644 "$srcdir/pacman.conf" "$pkgdir/etc/pacman.conf"
