@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=hexbin
-_pkgver=1.28.2
+_pkgver=1.28.3
 pkgname=r-${_pkgname,,}
-pkgver=1.28.2
-pkgrel=7
+pkgver=1.28.3
+pkgrel=1
 pkgdesc='Hexagonal Binning Routines'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,7 +23,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('6241f8d3a6c6be2c1c693c3ddb99554bc103e3c6cf602d0c2787c0ce6fd1702d')
+sha256sums=('0eb33511c1a4ff29dda8b89fee420ea7041033f981c7f16484c9f504d749de5f')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
