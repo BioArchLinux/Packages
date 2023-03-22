@@ -1,6 +1,6 @@
 pkgname=base-bio
 pkgver=1
-pkgrel=1
+pkgrel=0
 pkgdesc='Minimal package set to define a basic BioArchLinux installation'
 url='https://www.bioarchlinux.org'
 arch=('any')
