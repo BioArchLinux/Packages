@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=googlesheets4
-_pkgver=1.0.1
+_pkgver=1.1.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.1
-pkgrel=2
+pkgver=1.1.0
+pkgrel=1
 pkgdesc='Access Google Sheets using the Sheets API V4'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -36,7 +36,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('284ecbce98944093cb065c1b0b32074eae7b45fd74b87d7815c7ca6deca76591')
+sha256sums=('50e15543bef5b8d8cda36f6ea8a1d59b256d889cd3cedddc91f00ae30c8c8ec9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
