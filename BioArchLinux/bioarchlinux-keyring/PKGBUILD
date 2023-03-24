@@ -1,6 +1,7 @@
 # Maintainer: Guoyi
 pkgname=bioarchlinux-keyring
 pkgver=2022.04.16
+epoch=2
 pkgrel=1
 pkgdesc='BioArchLinux PGP keyring'
 arch=('any')
