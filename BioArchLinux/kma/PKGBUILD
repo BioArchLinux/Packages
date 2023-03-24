@@ -1,7 +1,7 @@
 # Maintainer: Bipin Kumar <kbipinkumar@pm.me>
 pkgname=kma 
-pkgver=1.4.11
-pkgrel=3
+pkgver=1.4.12a
+pkgrel=1
 pkgdesc="An ultra-fast mapping method designed to map raw reads directly against redundant databases using seed and extend. "
 arch=(x86_64)
 url="https://bitbucket.org/genomicepidemiology/kma/src/master/"
