@@ -1,9 +1,10 @@
 # Maintainer: Guoyi ("malcology") <guoyizhang@malacology.net>
 # Contributor: Guoyi ("malcology") <guoyizhang@malacology.net>
 
-pkgname=raxml-ng
+pkgname=raxml-ng-portable
+_pkgname=raxml-ng
 pkgver=1.1.0
-pkgrel=21
+pkgrel=0
 pkgdesc="A phylogenetic tree inference tool which uses maximum-likelihood (ML) optimality criterion. https://doi.org/10.1093/bioinformatics/btz305"
 url='https://github.com/amkozlov/raxml-ng'
 arch=('x86_64')
@@ -23,10 +24,10 @@ build(){
   cd "${srcdir}"/raxml-ng
   mkdir -p build
   cd build
-  cmake ..
+  cmake -DENABLE_AVX=false -DENABLE_AVX2=false ..
   make
 }
 package() {
   cd ${srcdir}/raxml-ng/bin
-  install -Dm755 $pkgname "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm755 $_pkgname "${pkgdir}/usr/bin/${_pkgname}"
 }

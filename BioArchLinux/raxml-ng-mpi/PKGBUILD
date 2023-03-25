@@ -17,6 +17,7 @@ conflicts=('raxml-ng')
 prepare(){
   cd ${srcdir}/raxml-ng
   git submodule update --init --recursive
+  sed -i "s@-std=c++11@-std=c++14@g" CMakeLists.txt
 }
 build(){
   cd "${srcdir}"/raxml-ng
