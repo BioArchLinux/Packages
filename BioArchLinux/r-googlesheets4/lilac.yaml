@@ -11,12 +11,14 @@ repo_depends:
 - r-googledrive
 - r-httr
 - r-ids
+- r-lifecycle
 - r-magrittr
 - r-purrr
 - r-rematch2
 - r-rlang
 - r-tibble
 - r-vctrs
+- r-withr
 update_on:
 - regex: googlesheets4_([\d._-]+).tar.gz
   source: regex

@@ -16,7 +16,7 @@ repo_depends:
 - r-plyr
 - r-purrr
 - r-scales
-- r-sp
+- r-sf
 - r-stringr
 update_on:
 - regex: metR_([\d._-]+).tar.gz

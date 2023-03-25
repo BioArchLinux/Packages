@@ -8,7 +8,6 @@ repo_depends:
 - r-rcolorbrewer
 - r-rcpp
 - r-rcpparmadillo
-- r-speedglm
 update_on:
 - regex: smurf_([\d._-]+).tar.gz
   source: regex

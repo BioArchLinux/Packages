@@ -2,9 +2,11 @@ build_prefix: extra-x86_64
 maintainers:
   - github: sukanka
 repo_depends:
+  - r-ggplot2
   - r-ic.infer
   - r-lavaan
   - r-mvtnorm
+  - r-norm2
   - r-quadprog
 update_on:
   - regex: restriktor_([\d._-]+).tar.gz

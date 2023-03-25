@@ -4,7 +4,7 @@ _pkgname=googlesheets4
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Access Google Sheets using the Sheets API V4'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,12 +19,14 @@ depends=(
   r-googledrive
   r-httr
   r-ids
+  r-lifecycle
   r-magrittr
   r-purrr
   r-rematch2
   r-rlang
   r-tibble
   r-vctrs
+  r-withr
 )
 optdepends=(
   r-covr
@@ -33,7 +35,6 @@ optdepends=(
   r-sodium
   r-spelling
   r-testthat
-  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('50e15543bef5b8d8cda36f6ea8a1d59b256d889cd3cedddc91f00ae30c8c8ec9')

@@ -4,16 +4,18 @@ _pkgname=restriktor
 _pkgver=0.3-500
 pkgname=r-${_pkgname,,}
 pkgver=0.3.500
-pkgrel=2
+pkgrel=3
 pkgdesc='Restricted Statistical Estimation and Inference for Linear Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-ggplot2
   r-ic.infer
   r-lavaan
   r-mvtnorm
+  r-norm2
   r-quadprog
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

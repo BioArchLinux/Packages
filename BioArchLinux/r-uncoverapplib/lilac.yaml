@@ -4,8 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocfilecache
-- r-bsgenome.hsapiens.ucsc.hg19
-- r-bsgenome.hsapiens.ucsc.hg38
 - r-condformat
 - r-dt
 - r-ensdb.hsapiens.v75
