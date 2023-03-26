@@ -24,7 +24,7 @@ build(){
   cd "${srcdir}"/raxml-ng
   mkdir -p build
   cd build
-  cmake -DENABLE_AVX=false -DENABLE_AVX2=false ..
+  cmake -DENABLE_SSE=false -DENABLE_AVX=false -DENABLE_AVX2=false ..
   make
 }
 package() {
