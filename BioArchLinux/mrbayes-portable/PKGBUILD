@@ -16,7 +16,7 @@ sha256sums=('64da39c01f606d0413ce90a1dd3c1ce2cbdef4cbad99aee8a4b2391a2e8db244')
 
 build() {
   cd ${srcdir}/${_up_pkgname}-${pkgver}
-  ./configure --with-beagle=no --enable-avx=no --enable-sse=no --prefix=${pkgdir}/usr
+  ./configure --with-beagle=no --enable-avx=no --enable-sse=no --enable-fma=no --prefix=${pkgdir}/usr
   make
 }
 package() {
