@@ -27,5 +27,5 @@ build(){
 
 package() {
   install -dm755 "${pkgdir}"/usr/bin
-  install -Dm755 "${srcdir}/modeltest/bin/${_pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm755 "${srcdir}/modeltest/bin/${_pkgname}-static" "${pkgdir}/usr/bin/${_pkgname}"
 }
