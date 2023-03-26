@@ -21,7 +21,7 @@ prepare(){
 build(){
   cd ${srcdir}/modeltest/
   mkdir -p build && cd build
-  cmake -DENABLE_SSE=false -DENABLE_AVX2=false -DENABLE_AVX=false ..
+  cmake -DSTATIC_BUILD=ON -DENABLE_MODELTEST_SIMD=OFF -DENABLE_PLLMOD_SIMD=OF ..
   make
 }
 
