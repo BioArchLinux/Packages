@@ -3,7 +3,7 @@
 pkgname=mrbayes-portable
 _up_pkgname=MrBayes
 pkgver=3.2.7
-pkgrel=14
+pkgrel=15
 provides=("mrbayes")
 conflicts=('mrbayes-mpi' 'mrbayes-beagle' 'mrbayes-mpi-beagle' 'mrbayes')
 pkgdesc="A program for the Bayesian estimation of phylogeny. https://doi.org/10.1093/sysbio/sys029"
