@@ -16,7 +16,10 @@ sha256sums=('64da39c01f606d0413ce90a1dd3c1ce2cbdef4cbad99aee8a4b2391a2e8db244')
 
 build() {
   cd ${srcdir}/${_up_pkgname}-${pkgver}
-  ./configure --with-beagle=no --enable-avx=no --enable-sse=no --enable-fma=no --disable-{sse,avx,fma} --prefix=${pkgdir}/usr
+  sed -i "s@;SIMD_FLAGS@@g" configure
+  ./configure --disable-{sse,avx,fma} --with-beagle=no --enable-sse=no --enable-avx=no --enable-fma=no --prefix=$pkgdir/usr
+  sed -i "s@-mrdrnd -mbmi -mbmi2 -madx -mmpx -mabm@@g" Makefile
+  sed -i "s@-mrdrnd -mbmi -mbmi2 -madx -mmpx -mabm@@g" src/Makefile 
   make
 }
 package() {
