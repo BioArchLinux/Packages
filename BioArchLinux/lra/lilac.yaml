@@ -2,10 +2,16 @@ build_prefix: extra-x86_64
 maintainers:
   - github: michaelgelliot
     email: m.g.elliot@rug.nl
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - source: github
     github: ChaissonLab/LRA
-    use_latest_release: true
+    use_max_tag: true
+    prefix: 'v'
   - alias: alpm-lilac
     alpm: htslib
     strip_release: true

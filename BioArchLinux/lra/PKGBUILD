@@ -10,7 +10,7 @@ url="https://github.com/ChaissonLab/${pkgname^^}"
 license=('USC-RL v1.0')
 depends=('zlib' 'htslib')
 provides=()
-source=("${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('12684cdab086a766acba6eea0c6f2f86f37d218d94b2e93edf96381f13ae14db')
 
 build() {
