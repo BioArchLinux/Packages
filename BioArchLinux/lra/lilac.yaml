@@ -10,7 +10,7 @@ post_build_script: |
 update_on:
   - source: github
     github: ChaissonLab/LRA
-    use_max_tag: true
+    use_latest_release: true
     prefix: 'v'
   - alias: alpm-lilac
     alpm: htslib
