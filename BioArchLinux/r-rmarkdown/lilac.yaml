@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-bslib
 - r-evaluate
+- r-fontawesome
 - r-htmltools
 - r-jquerylib
 - r-jsonlite

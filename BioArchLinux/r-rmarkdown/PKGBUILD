@@ -5,14 +5,16 @@ _pkgname=rmarkdown
 _pkgver=2.20
 pkgname=r-${_pkgname,,}
 pkgver=2.20
-pkgrel=3
+pkgrel=4
 pkgdesc='Dynamic Documents for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-bslib
   r-evaluate
+  r-fontawesome
   r-htmltools
   r-jquerylib
   r-jsonlite
@@ -21,7 +23,6 @@ depends=(
   r-tinytex
   r-xfun
   r-yaml
-  r-bslib
 )
 optdepends=(
   r-digest
