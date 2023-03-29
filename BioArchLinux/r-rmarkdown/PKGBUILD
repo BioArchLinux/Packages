@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rmarkdown
-_pkgver=2.20
+_pkgver=2.21
 pkgname=r-${_pkgname,,}
-pkgver=2.20
-pkgrel=4
+pkgver=2.21
+pkgrel=1
 pkgdesc='Dynamic Documents for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -39,7 +39,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d7f7059bfcb43e4b92432d69ba0e0c74ad10a20f153689262a3e848adb60159d')
+sha256sums=('c25b20a422d11a115c93460f41c488874002154abb349b14e0d6518682fdac28')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
