@@ -8,8 +8,8 @@ pkgdesc="Efficient phylogenomic software by maximum likelihood; multicore versio
 arch=(x86_64)
 url="https://github.com/iqtree/iqtree2"
 license=('GPL2')
-depends=('boost-libs' 'eigen' 'gcc-libs' 'zlib' 'openmpi' 'nvidia-utils')
-makedepends=('cmake' 'make' 'gcc' 'git' 'boost')
+depends=('boost-libs' 'gcc-libs' 'zlib' 'openmpi' 'nvidia-utils')
+makedepends=('cmake' 'make' 'gcc' 'git' 'boost' 'eigen')
 source=("git+$url.git#tag=v${pkgver}")
 md5sums=('SKIP')
 
