@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=robustbase
-_pkgver=0.95-0
+_pkgver=0.95-1
 pkgname=r-${_pkgname,,}
-pkgver=0.95.0
-pkgrel=4
+pkgver=0.95.1
+pkgrel=1
 pkgdesc='Basic Robust Statistics'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -43,7 +43,7 @@ makedepends=(
   gcc-fortran
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5cfaea1c46df6d45086614fea5f152c8da8ebfcadf33bb8df5b82e742eef9724')
+sha256sums=('862cd26db3ecdf34ab47c52d355fd65ffebbff448aea17999a9b95a1f13ba3ea')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
