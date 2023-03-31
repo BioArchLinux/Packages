@@ -3,14 +3,16 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-basilisk
 - r-biocfilecache
+- r-delayedmatrixstats
 - r-hdf5array
 - r-minfi
 - r-r.utils
 - r-rcurl
+- r-reticulate
 - r-rhdf5
 - r-s4vectors
-- r-illuminahumanmethylation450kmanifest
 update_on:
 - regex: recountmethylation_([\d._-]+).tar.gz
   source: regex

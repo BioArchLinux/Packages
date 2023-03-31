@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocparallel
-- r-clustercrit
 - r-coro
 - r-glmnet
 - r-igraph

@@ -4,21 +4,23 @@ _pkgname=recountmethylation
 _pkgver=1.8.3
 pkgname=r-${_pkgname,,}
 pkgver=1.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Access and analyze DNA methylation database compilations'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-basilisk
   r-biocfilecache
+  r-delayedmatrixstats
   r-hdf5array
   r-minfi
   r-r.utils
   r-rcurl
+  r-reticulate
   r-rhdf5
   r-s4vectors
-  r-illuminahumanmethylation450kmanifest
 )
 optdepends=(
   r-annotationhub
@@ -29,6 +31,7 @@ optdepends=(
   r-gridextra
   r-knitr
   r-limma
+  r-minfidata
   r-rmarkdown
   r-testthat
 )

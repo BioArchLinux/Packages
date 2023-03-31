@@ -15,6 +15,7 @@ repo_depends:
 - r-preprocesscore
 - r-rcpp
 - r-rcpparmadillo
+- r-statmod
 update_on:
 - regex: MSstats_([\d._-]+).tar.gz
   source: regex
