@@ -1,6 +1,6 @@
 # Maintainer: Grey Christoforo <first name at last name dot net>
 # Co-Maintainer: Bert Peters <bert@bertptrs.nl>
-# imported from AUR: Bipin Kumar <bipin@ccmb.res.in>
+# imported from AUR: Bipin Kumar <kbipinkumar@pm.me>
 
 pkgname=python-plotly
 pkgver=5.14.0

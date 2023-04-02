@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: kbipinkumar
-    email: bipin@ccmb.res.in
+    email: kbipinkumar@pm.me
 repo_depends:
   - htslib
   - yaggo

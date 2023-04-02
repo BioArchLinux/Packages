@@ -1,5 +1,5 @@
 # Maintainer: Charles Vejnar <first name [dot] last name [at] gmail [dot] com>
-# import from AUR: bipin kumar <bipin@ccmb.res.in>
+# import from AUR: bipin kumar <kbipinkumar@pm.me>
 
 pkgname=python-pyfaidx
 _name=pyfaidx

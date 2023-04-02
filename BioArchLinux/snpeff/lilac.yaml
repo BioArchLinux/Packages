@@ -1,6 +1,6 @@
 maintainers:
   - github: kbipinkumar
-    email: bipin@ccmb.res.in
+    email: kbipinkumar@pm.me
 build_prefix: extra-x86_64
 post_build_script: |
   git_pkgbuild_commit()
