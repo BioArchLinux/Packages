@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ggplot2
-_pkgver=3.4.1
+_pkgver=3.4.2
 pkgname=r-${_pkgname,,}
-pkgver=3.4.1
+pkgver=3.4.2
 pkgrel=1
 pkgdesc='Create Elegant Data Visualisations Using the Grammar of Graphics'
 arch=('any')
@@ -51,7 +51,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('041bc333f90d6026702c8bd5140a1c8ddd270b15742badf8ca5c53f0e02c6d84')
+sha256sums=('70230aa70a2c6f844fc41dd93e5f62af6859dfed390026ae58f223637e5283ca')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
