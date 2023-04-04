@@ -5,5 +5,5 @@ maintainers:
 update_on:
 - regex: speedglm_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=speedglm
+  url: https://cran.r-project.org/src/contrib/Archive/speedglm
 - alias: r

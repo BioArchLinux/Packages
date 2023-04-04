@@ -12,6 +12,7 @@ repo_depends:
 - r-plyr
 - r-readr
 - r-shiny
+- r-shinydisconnect
 - r-shinyjs
 - r-tibble
 update_on:
