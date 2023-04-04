@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gap4
+Comment=Staden gap4 assembly editor
+Exec=gap4
+Icon=/usr/share/icons/icon4bl.svg
+Terminal=false
+Type=Application
+Categories=Biology;Science
+#Help out Unity:
+#WM_CLASS(STRING) = "gap.tcl", "Gap.tcl"
+StartupWMClass=gap.tcl

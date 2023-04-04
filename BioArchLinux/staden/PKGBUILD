@@ -13,9 +13,16 @@ depends=('staden-io_lib' 'tklib>=0.7' 'tklib<0.8')
 optdepends=('iwidgets: gap5 prefinish'
             'xz: better gap5 compression'
             'libpng: gap5 Report Mutations')
-source=(http://downloads.sourceforge.net/staden/$_pkgname.tar.gz)
+source=(http://downloads.sourceforge.net/staden/$_pkgname.tar.gz
+	gap4.desktop gap5.desktop pregap4.desktop spin.desktop trev.desktop icon4bl.svg)
 options=('!emptydirs')
-sha256sums=('cd7ee17626c25bc845ebd3f6311b5a538815fb73a0dfef2393001bf579ac9649')
+sha256sums=('cd7ee17626c25bc845ebd3f6311b5a538815fb73a0dfef2393001bf579ac9649'
+            '9a2f76c39b3c9a2b41fc57e50f8ef049eef9f8004e997e84d926169331e0b4c1'
+            '38f4a07764f2152e60fd1d4eb7ad3900de1fae9e53cf455d23a738f61276e2fc'
+            '2a25fa231761e4dd8e03112eb0d4f5eab871aa068eebc21e2e4e011905c30a63'
+            '468b38fef620ab2f6ce1b5567656cf24baa25685bde8fb4b881c198abc1bbbfb'
+            '867b1935523544775acbebe6fe635d521f4d7c3ed8821e110afaaba3685597f2'
+            'f15cf251d73ebb30fa6d2a1ea73fa5bdfa19e49165364720c30fd6e23d2d665a')
 
 build() {
   cd $_pkgname
@@ -26,4 +33,9 @@ build() {
 package() {
   cd $_pkgname
   make DESTDIR="$pkgdir" install
+  for gui in gap4 gap5 pregap4 spin trev
+  do
+     install -Dm 755 $srcdir/$gui.desktop $pkgdir/usr/share/applications/$gui.desktop
+  done
+  install -Dm 644 $srcdir/icon4bl.svg $pkgdir/usr/share/icons/icon4bl.svg
 }

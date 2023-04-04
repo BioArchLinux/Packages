@@ -9,14 +9,18 @@ pkgdesc="Tree analysis using New Technology. https://doi.org/10.1111/cla.12160"
 arch=('x86_64')
 url="http://www.lillo.org.ar/phylogeny/tnt/"
 license=('custom')
-makedepends=('unzip')
+makedepends=('unzip' 'gzip')
 depends=('ncurses5-compat-libs')
-source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip")
-sha256sums=('88f818da01b425c0ac03fdbe5ce521d9e33c163b37546ab29042b613383ac708')
+source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip"
+	"gTNT.desktop")
+sha256sums=('9bdc47aa9753057700cd57f0a1a4f92fe155fe41a20c5a7f1e4594ab5e1c9e74'
+            '9ce723f975e9b9a99ad45a4b2f929e7ed198b51499325b1a4c4df38d90b030e0')
 prepare () {
 	cd $srcdir/TNT-Docs_n_Datasets
 	chmod a+r $srcdir/TNT-Docs_n_Datasets -R
 	unzip tnt_scripts.zip -d ./tnt_scripts
+	cd $srcdir/TNT-files
+	gzip TNT.1
 }
 package_tnt () {
   depends=('ncurses5-compat-libs' 'glibc')
@@ -36,6 +40,9 @@ package_tnt-gui () {
 	cd ${srcdir}/TNT-bin
 	chmod +x gTNT
 	install -Dm 755 gTNT ${pkgdir}/usr/bin/gTNT
+	cd ${srcdir}/TNT-files
+	install -Dm 755 TNT-icon-linux.png $pkgdir/usr/share/icons/gTNT.png
+	install -Dm 755 $srcdir/gTNT.desktop $pkgdir/usr/share/applications/gTNT.desktop
 }
 package_tnt-extra () {
 	install -dm755 $pkgdir/usr/share/tnt/
@@ -43,7 +50,11 @@ package_tnt-extra () {
 	cd $srcdir/
 	# PDF
 	install -Dm 755 README_FIRST.pdf $pkgdir/usr/share/tnt/
-
+	
+	# manual
+	cd $srcdir/TNT-files
+	install -Dm 755 TNT.1.gz $pkgdir/usr/share/man/man1/TNT.1.gz
+	
 	cd $srcdir/TNT-Docs_n_Datasets
 	# script
 	mv $srcdir/TNT-Docs_n_Datasets/tnt_scripts $pkgdir/usr/share/tnt/

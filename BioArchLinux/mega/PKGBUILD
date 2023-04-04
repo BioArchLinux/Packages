@@ -23,4 +23,5 @@ package() {
 	chmod 755 -R ../pkg/${pkgname}/usr
 	cp -r ../pkg/${pkgname}/usr/local/* ../pkg/${pkgname}/usr/
 	rm -r ../pkg/${pkgname}/usr/local
+	sed -i '/^Exec/ s/$/ %U/' $pkgdir/usr/share/applicaions/mega.desktop
 }

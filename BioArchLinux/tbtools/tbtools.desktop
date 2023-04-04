@@ -5,5 +5,5 @@ Comment=GUI/CommandLine Tool Box for biologistists to utilize NGS data.
 Terminal=false
 Icon=tbtools
 Type=Application
-Exec=tbtools
+Exec=tbtools %U
 Categories=Education;Science;

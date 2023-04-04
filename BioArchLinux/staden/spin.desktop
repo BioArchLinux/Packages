@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=spin
+Comment=Staden editing and analysis tools
+Exec=spin %U
+Icon=/usr/share/icons/icon4bl.svg
+Terminal=false
+Type=Application
+Categories=Biology;Science
+#Help out Unity:
+#WM_CLASS(STRING) = "gap.tcl", "Gap.tcl"
+StartupWMClass=spin.tcl

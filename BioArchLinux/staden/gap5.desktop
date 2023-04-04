@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=gap5
+Comment=Staden gap5 assembly editor
+Exec=gap5
+Icon=/usr/share/icons/icon4bl.svg
+Terminal=false
+Type=Application
+Categories=Biology;Science
+#Help out Unity:
+#WM_CLASS(STRING) = "Gap5", "Gap5.tcl"
+StartupWMClass=Gap5

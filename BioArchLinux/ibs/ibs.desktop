@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=IBS
-Exec=ibs
+Exec=ibs %U
 Icon=ibs
 Categories=Science

@@ -1,0 +1,8 @@
+[Desktop Entry]
+X-Desktop-File-Install-Version=0.26
+Name=gTNT
+Comment=TNT with GUI
+Icon=/usr/share/icons/gTNT.png
+Categories=Science
+Exec=gTNT %f
+Type=Application
