@@ -1,7 +1,7 @@
 # Maintainer: kiri <kiri@vern.cc>
 pkgname=ibs
 pkgver=1.0.3_unix_20170614
-pkgrel=2
+pkgrel=3
 pkgdesc="Illustrator for biological sequences"
 arch=('any')
 url="https://ibs.renlab.org"
@@ -11,7 +11,7 @@ source=("$pkgname-$pkgver.tar.gz::http://ibs.biocuckoo.org/download/IBS_$pkgver.
         "$pkgname.desktop"
         "$pkgname.sh")
 sha256sums=('2d8db720b5071f534cd49a1a29f6f5baa81966e436e5d19c492d08dfb42dcfbe'
-            'bdd702ecf3b5453db5ff87aab9e480d1a5d8894435e5ef71c05d91f1dfcc61c5'
+            'e52846602f3ca0a4ea3bfa53e323eee24245caf319b56f0a44cafbdab38054e6'
             'bda84c612959d73e0438b0d8eb582c1d9b3795ac311fe369ee3554fbb16a5895')
 package() {
 	mkdir -p $pkgdir/usr/share/$pkgname
