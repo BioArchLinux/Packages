@@ -4,7 +4,7 @@
 
 _pkgname=lilac
 pkgname=$_pkgname
-pkgver=2023.04.02
+pkgver=2023.04.04
 pkgrel=1
 pkgdesc='The build bot for archlinuxcn'
 arch=(any)
