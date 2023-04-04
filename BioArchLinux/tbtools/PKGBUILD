@@ -15,7 +15,7 @@ source=("git+https://github.com/CJ-Chen/TBtools.git"
         "$pkgname.desktop"
         "$pkgname.sh")
 sha256sums=('SKIP'
-            'def05ccbd4a3ea9b8937444803ae7a9f33a158e7da74129a34ddec5af599e065'
+            '6fbce89df42435fc2d618a7f0600077e872c751d70547041dad639e68447fb7d'
             '04367e92b51a3717a38c76f07892282458ed9aaa7c3f47ca47ef62de1c30c90f')
 pkgver() {
   cd "$_pkgname"
