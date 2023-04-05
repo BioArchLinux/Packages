@@ -45,15 +45,17 @@ sha256sums=('7d3f86d373c6d4e203390777902a2ac1f506b3c488c307dc2293f63ad054111c')
 
 build() {
   cd plotly.py-${pkgver}/packages/python/plotly
-  # workaround for issue 'https://github.com/webpack/webpack/issues/14532' from preventing build process
-  export NODE_OPTIONS=--openssl-legacy-provider
-  python setup.py build
+  SKIP_NPM=1 python setup.py build
+}
+
+check() {
+  cd plotly.py-${pkgver}/packages/python/plotly
+  pytest plotly/tests/test_core
 }
 
 package() {
   cd plotly.py-${pkgver}/packages/python/plotly
-  python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
-   # set config paths of package to standard archlinux '/etc' location instead of '/usr/etc'
-  mv "$pkgdir"/usr/etc "$pkgdir"
+  SKIP_NPM=1 python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+  mv ${pkgdir}/usr/etc ${pkgdir}
   install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
