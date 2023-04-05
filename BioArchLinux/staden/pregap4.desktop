@@ -2,7 +2,7 @@
 Name=pregap4
 Comment=Staden pregap4 DNA preprocessor
 Exec=pregap4
-Icon=/usr/share/icons/icon4bl.svg
+Icon=/usr/share/icons/staden.png
 Terminal=false
 Type=Application
 Categories=Biology;Science

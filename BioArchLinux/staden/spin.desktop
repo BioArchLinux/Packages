@@ -2,7 +2,7 @@
 Name=spin
 Comment=Staden editing and analysis tools
 Exec=spin %U
-Icon=/usr/share/icons/icon4bl.svg
+Icon=/usr/share/icons/staden.png
 Terminal=false
 Type=Application
 Categories=Biology;Science

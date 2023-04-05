@@ -2,7 +2,7 @@
 Name=gap4
 Comment=Staden gap4 assembly editor
 Exec=gap4
-Icon=/usr/share/icons/icon4bl.svg
+Icon=/usr/share/icons/staden.png
 Terminal=false
 Type=Application
 Categories=Biology;Science
