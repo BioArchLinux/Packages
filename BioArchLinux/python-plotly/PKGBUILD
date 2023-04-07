@@ -36,6 +36,7 @@ makedepends=(
              'npm'
              'python-wheel'
              'python-build'
+             'python-pytest'
             )
 license=('MIT')
 arch=('any')
