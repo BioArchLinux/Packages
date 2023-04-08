@@ -2,7 +2,7 @@
 # Contributor: Clint Valentine <valentine.clint@gmail.com>
 pkgname=python-pybigwig
 _pkgname=pyBigWig
-pkgver=0.3.21
+pkgver=0.3.22
 pkgrel=1
 pkgdesc="A Python extension for quick access to bigWig and bigBed files"
 arch=('any')
@@ -12,7 +12,7 @@ depends=('curl' 'python-numpy')
 makedepends=('python-setuptools')
 options=(!emptydirs)
 source=($_pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz)
-sha256sums=('897dedfe659caa532fe766f5eebe8dd5f46fa63056e837354dc6d611fb6954b4')
+sha256sums=('3b8d62b2bedcee0545a586884466c97a64b64283a309b211300b670f41dd2046')
 
 build(){
   cd "$srcdir"/$_pkgname-$pkgver
