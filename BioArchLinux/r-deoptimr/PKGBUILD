@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=DEoptimR
-_pkgver=1.0-11
+_pkgver=1.0-12
 pkgname=r-${_pkgname,,}
-pkgver=1.0.11
-pkgrel=7
+pkgver=1.0.12
+pkgrel=1
 pkgdesc='Differential Evolution Optimization in Pure R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,7 @@ optdepends=(
   r-robustbase
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('1874b30f4b75f9bfa891986598f1ebe1fce27fdced14f8f417d3535cac08165b')
+sha256sums=('6136f98031bceaa691c5725222eca2d0f750a7b7fb60216480633635a9613d79')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
