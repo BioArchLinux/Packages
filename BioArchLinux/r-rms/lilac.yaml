@@ -9,6 +9,8 @@ repo_depends:
 - r-hmisc
 - r-htmltable
 - r-htmltools
+- r-kableextra
+- r-knitr
 - r-multcomp
 - r-polspline
 - r-quantreg

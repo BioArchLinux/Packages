@@ -6,8 +6,6 @@ repo_depends:
 - r-bh
 - r-extradistr
 - r-ggplot2
-- r-moments
-- r-philentropy
 - r-rcpp
 - r-rcppeigen
 - r-rcppparallel

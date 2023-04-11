@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cpp11
 - r-magrittr
 - r-pkgconfig
 - r-rlang

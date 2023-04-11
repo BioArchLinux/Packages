@@ -4,7 +4,7 @@ _pkgname=quantreg
 _pkgver=5.95
 pkgname=r-${_pkgname,,}
 pkgver=5.95
-pkgrel=1
+pkgrel=2
 pkgdesc='Quantile Regression'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,7 +22,6 @@ optdepends=(
   r-nor1mix
   r-r.rsp
   r-rgl
-  r-tripack
   r-zoo
 )
 makedepends=(

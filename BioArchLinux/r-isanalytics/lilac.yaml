@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bslib
-- r-data.table
 - r-datamods
 - r-dplyr
 - r-dt
@@ -15,10 +14,7 @@ repo_depends:
 - r-glue
 - r-lifecycle
 - r-lubridate
-- r-magrittr
-- r-psych
 - r-purrr
-- r-rcapture
 - r-readr
 - r-readxl
 - r-rlang

@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-fastmatch
+- r-jsonlite
 - r-magrittr
 - r-rcpp
 - r-rcpparmadillo

@@ -6,5 +6,5 @@ repo_depends:
 update_on:
   - regex: bayesplay_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=bayesplay
+    url: https://cran.r-project.org/src/contrib/Archive/bayesplay
   - alias: r

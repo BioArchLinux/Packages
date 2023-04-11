@@ -5,7 +5,7 @@ _pkgname=quanteda
 _pkgver=3.2.4
 pkgname=r-${_pkgname,,}
 pkgver=3.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Quantitative Analysis of Textual Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,6 +13,7 @@ license=('GPL')
 depends=(
   r
   r-fastmatch
+  r-jsonlite
   r-magrittr
   r-rcpp
   r-rcpparmadillo
@@ -27,12 +28,10 @@ optdepends=(
   r-dplyr
   r-formatr
   r-ggplot2
-  r-jsonlite
   r-knitr
   r-lda
   r-lsa
   r-purrr
-  r-quanteda
   r-quanteda.textmodels
   r-quanteda.textplots
   r-quanteda.textstats

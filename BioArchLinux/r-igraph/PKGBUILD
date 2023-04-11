@@ -5,13 +5,14 @@ _pkgname=igraph
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=1.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Network Analysis and Visualization'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-cpp11
   r-magrittr
   r-pkgconfig
   r-rlang
@@ -21,6 +22,7 @@ optdepends=(
   gmp
   libxml2
   r-ape
+  r-decor
   r-digest
   r-graph
   r-igraphdata

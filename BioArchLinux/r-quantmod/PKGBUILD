@@ -4,7 +4,7 @@ _pkgname=quantmod
 _pkgver=0.4.21
 pkgname=r-${_pkgname,,}
 pkgver=0.4.21
-pkgrel=1
+pkgrel=2
 pkgdesc='Quantitative Financial Modelling Framework'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,6 +12,7 @@ license=('GPL')
 depends=(
   r
   r-curl
+  r-jsonlite
   r-ttr
   r-xts
   r-zoo
@@ -19,7 +20,6 @@ depends=(
 optdepends=(
   r-dbi
   r-downloader
-  r-jsonlite
   r-rmysql
   r-rsqlite
   r-timeseries
