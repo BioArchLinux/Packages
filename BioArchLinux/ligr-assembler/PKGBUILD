@@ -1,0 +1,23 @@
+pkgname=ligr-assembler
+_pkgname=LIGR-Assembler
+pkgver=2.05
+pkgrel=0
+pkgdesc='sequence assembly program'
+arch=('x86_64')
+url='https://sourceforge.net/projects/ligr-assembler/'
+license=('Artistic')
+depends=(gcc-libs)
+source=("${pkgname}-${pkgver}.tar.gz::https://sourceforge.net/projects/ligr-assembler/files/ligr-assembler/LIGR-Assembler-${pkgver}.tar.gz/download")
+sha1sums=('4259cce4c5e24ca1d41d0406acc5b7d05638762b')
+
+build() {
+  cd $srcdir/$_pkgname-$pkgver/src
+  make 
+}
+
+package() {
+  cd $srcdir/$_pkgname-$pkgver/bin
+  install -Dm755 LIGR_Assembler $pkgdir/usr/bin/$_pkgname
+  cd $srcdir/$_pkgname-$pkgver
+  install -Dm644 $srcdir/$_pkgname-$pkgver/LICENSE $pkgdir/usr/share/licenses/${pkgname}/LICENSE
+}
