@@ -1,0 +1,22 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=mimi
+_pkgname=MiMi
+pkgver=0.0.2
+pkgrel=0
+pkgdesc="Tool for converting sequence formats"
+arch=('x86_64')
+url="https://github.com/starsareintherose/MiMi"
+license=('GPL')
+makedepends=('gcc')
+source=(https://github.com/starsareintherose/MiMi/archive/refs/tags/${pkgver}.tar.gz)
+sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
+build() {
+  cd "$_pkgname-$pkgver"
+  g++ main.cpp -o $pkgname
+}
+
+
+package(){
+  cd "$_pkgname-$pkgver"
+  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+}
