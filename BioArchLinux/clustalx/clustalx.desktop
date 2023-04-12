@@ -1,0 +1,8 @@
+[Desktop Entry]
+X-Desktop-File-Install-Version=0.26
+Name=clustalx
+Comment=Multiple alignment of nucleic acid and protein sequences
+Icon=/usr/share/pixmaps/clustalx.png
+Categories=Science
+Exec=clustalx %f
+Type=Application

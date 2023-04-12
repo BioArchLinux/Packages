@@ -12,31 +12,23 @@ license=('LGPL3')
 depends=(
   qt5-base
 )
-makedepends=(
-  gendesk
-)
 source=("${pkgname}-${pkgver}.tar.gz::http://www.clustal.org/download/current/clustalx-${pkgver}.tar.gz"
   "0001-fix-qt.patch"
   "0002-fix-qt.patch"
   "${pkgname}.png::http://www.clustal.org/images/clustalw_title.png"
+  "$pkgname.desktop"
 )
 sha256sums=('e10adb728c320598a165ca529f1aa3d2560061de0236e0a0926eaca9554afa05'
             '5c070a5cd2e7ba5eddf984b6d5ad2bdbb1dc5fd1c50edaefd109e094ed33431c'
             '8a5bd0329015d70e2e649c33c13aaabbb88999305f83f4c0fa0c01fe1af3db72'
-            '6444ab0c22ecbefba05b968558eb543dda4c7e0ad140b485832d763e9f8c2dbd')
+            '6444ab0c22ecbefba05b968558eb543dda4c7e0ad140b485832d763e9f8c2dbd'
+            '5bbe8821e058ea59032f417f62f590eae2bef048988c0b87ba5b0d936df60bff')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
   patch -p1 -i "${srcdir}/0001-fix-qt.patch"
   patch -p1 -i "${srcdir}/0002-fix-qt.patch"
   sed -i 's/static//g' clustalx.pro
-
-  echo "Creating desktop file"
-  gendesk -f -n --pkgname ${pkgname} \
-    --pkgdesc "${pkgdesc}" \
-    --categories "Graphics;MedicalSoftware;Science;" \
-    --icon "${pkgname}" \
-    --exec "${pkgname}"
 }
 
 build() {
@@ -53,5 +45,6 @@ package() {
   install -Dm644 coldna.xml "${pkgdir}/usr/share/${pkgname}/colprint.xml"
   install -Dm644 clustalx.hlp "${pkgdir}/usr/share/${pkgname}/clustalx.hlp"
   install -Dm644 "${srcdir}/${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+  install -Dm755 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
 }
 # vim:set ts=2 sw=2 et:

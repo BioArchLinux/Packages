@@ -1,0 +1,21 @@
+pkgname=clustalv
+pkgver=1991
+pkgrel=0
+pkgdesc='improved software for multiple sequence alignment\
+        https://doi.org/10.1093/bioinformatics/8.2.189'
+arch=('x86_64')
+url='http://www.clustal.org/clustal2'
+license=('custom')
+depends=(gcc-libs)
+makedepends=(gcc)
+source=("${pkgname}-${pkgver}.tar.Z::http://www.clustal.org/download/1.X/ftp.bio.indiana.edu/molbio/align/clustal/old/clustalv.tar.Z")
+sha256sums=('2afc041afe2908af939c02102f0866c1a0c00ae1b46c19917e546e481445e8d9')
+
+build() {
+  make -f makefile.sun
+}
+
+package() {
+  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+}
+
