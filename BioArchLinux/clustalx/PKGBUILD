@@ -4,7 +4,7 @@
 
 pkgname=clustalx
 pkgver=2.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Multiple alignment of nucleic acid and protein sequences (command line tool). https://doi.org/10.1093/bioinformatics/btm404'
 arch=('x86_64')
 url='http://www.clustal.org/clustal2'
