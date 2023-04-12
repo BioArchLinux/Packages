@@ -7,8 +7,7 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
-  update_aur_repo()
 update_on:
   - source: github
-    github: MalacoLab/SeqCombGo
-    use_latest_release: true
+    github: starsareintherose/TNT_Script
+    use_max_tag: true

@@ -1,0 +1,26 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+basename=tnt2winclada
+pkgname=('tnt2winclada' 'tnt-guoyi-script')
+_pkgname=TNT_Script
+pkgver=0.0.3
+pkgrel=2
+pkgdesc="Sequence Combination tool written in Golang"
+arch=('x86_64')
+url="https://github.com/starsareintherose/TNT_Script"
+license=('GPL')
+makedepends=('gcc')
+source=(https://github.com/starsareintherose/TNT_Script/archive/refs/tags/${pkgver}.tar.gz)
+sha256sums=('4ca80793b51ae271a85f5ab3ad8523d32ea7cca5d9b5b0299660297c72e0dff1')
+build() {
+  cd "$_pkgname-$pkgver"
+  g++ tnt2winclada.cpp -o tnt2winclada
+}
+package_tnt-guoyi-script(){
+  cd $_pkgname-$pkgver
+  install -Dm755 guoyi.run $pkgdir/usr/share/tnt/tnt_scripts/guoyi.run
+}
+
+package_tnt2winclada(){
+  cd "$_pkgname-$pkgver"
+  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+}
