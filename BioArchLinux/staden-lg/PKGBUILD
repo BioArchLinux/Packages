@@ -1,6 +1,6 @@
 pkgname=staden-lg
 pkgver=12.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="STADEN Last Generation"
 arch=('x86_64')
 url="https://github.com/starsareintherose/$pkgname"
