@@ -1,0 +1,87 @@
+pkgname=staden-lg
+pkgver=12.1.1
+pkgrel=1
+pkgdesc="STADEN Last Generation"
+arch=('x86_64')
+url="https://github.com/starsareintherose/$pkgname"
+license=('GPL')
+depends=('libxt' 'libxaw' 'gcc-libs' 'bash')
+makedepends=('fsplit' 'make' 'gcc-fortran' 'gcc' 'git')
+source=($pkgname::git+$url#tag=${pkgver})
+sha256sums=('SKIP')
+build(){
+# build easy
+for pkgalone in ted newted abi alf Misc cop convert expGetSeq frog getMCH indexseqlibs bap/osp-bits
+do
+cd $srcdir/$pkgname/src/$pkgalone
+make
+done
+
+# compile x related
+cd $srcdir/$pkgname/src/staden
+bash gen_a.sh
+make mep dap sap splitp1 splitp2 splitp3 gip sethelp convert_project sapf nipf xmep xdap xsap
+cd $srcdir/$pkgname/src/bap
+make bap xbap
+for pkgalone in vepe update_subclones scf
+do
+cd $srcdir/$pkgname/src/$pkgalone
+make
+done
+}
+package(){
+
+## binary
+# install binary without requirements
+cd $srcdir/$pkgname/src
+for pkg in abi/2rs cop/{cop,cop-bap} expGetSeq/expGetSeq frog/{frog,toad} getMCH/{trace2seq,getMCH} indexseqlibs/{access2,access4,addnl,division,emblaccess1,emblauthor,emblentryname1,emblfreetext,embltitle1,entryname2,excludewords,freetext2,freetext4,genbaccess1,genbauthor,genbentryname1,genbfreetext,genbtitle1,hitNtrg,piraccess1,piraccess2,pirauthor,pirentryname1,pirfreetext,pirtitle1,pirtitle2,title2} staden/{convert_project,gip,sapf,sethelp,splitp1,splitp2,splitp3} update_subclones/update_subclones vepe/vepe newted/ted
+do
+  install -Dm 755 $pkg $pkgdir/usr/bin/${pkg##*/}
+done
+
+for pkg in alf/alfsplit abi/getABISampleName scf/makeSCF 
+do
+  install -Dm 755 $pkg $pkgdir/usr/bin/${pkg##*/}-lg
+done
+
+# install binary need env
+for pkg in bap/{bap,xbap} staden/{dap,mep,nipf,sap,xdap,xmep,xsap}
+do
+  install -Dm 755 $pkg $pkgdir/usr/share/$pkgname/bin/${pkg##*/}
+done
+
+# rename to avoid conflicts
+install -Dm 755 $srcdir/$pkgname/src/convert/convert $pkgdir/usr/bin/staden-convert
+
+## shell
+cd $srcdir/$pkgname/shell
+for spkg in $(ls *)
+do
+install -Dm755 $spkg $pkgdir/usr/bin/$spkg
+done
+
+## depends
+cd $srcdir/$pkgname
+for dir in help doc manl tables userdata
+do
+cp -r $dir $pkgdir/usr/share/$pkgname/
+done
+
+## doc
+for doc in staden.profile staden.login ReleaseNotes README1993.txt README.md
+do
+install -Dm 644 $doc $pkgdir/usr/share/$pkgname/$doc
+done
+
+## desktop
+cd $srcdir/$pkgname/desktop
+for pkg in Xbap Xdap Xmep Xsap Xted
+do
+install -Dm644 $pkg.png $pkgdir/usr/share/icons/$pkg.png
+done
+for pkg in ted xbap xdap xmep xsap
+do
+install -Dm755 $pkg.desktop $pkgdir/usr/share/applications/$pkg.desktop
+done
+}
+
