@@ -34,7 +34,7 @@ package(){
 ## binary
 # install binary without requirements
 cd $srcdir/$pkgname/src
-for pkg in abi/2rs cop/{cop,cop-bap} expGetSeq/expGetSeq frog/{frog,toad} getMCH/{trace2seq,getMCH} indexseqlibs/{access2,access4,addnl,division,emblaccess1,emblauthor,emblentryname1,emblfreetext,embltitle1,entryname2,excludewords,freetext2,freetext4,genbaccess1,genbauthor,genbentryname1,genbfreetext,genbtitle1,hitNtrg,piraccess1,piraccess2,pirauthor,pirentryname1,pirfreetext,pirtitle1,pirtitle2,title2} staden/{convert_project,gip,sapf,sethelp,splitp1,splitp2,splitp3} update_subclones/update_subclones vepe/vepe newted/ted
+for pkg in abi/2rs cop/{cop,cop-bap} expGetSeq/expGetSeq frog/{frog,toad} getMCH/{trace2seq,getMCH} indexseqlibs/{access2,access4,addnl,division,emblaccess1,emblauthor,emblentryname1,emblfreetext,embltitle1,entryname2,excludewords,freetext2,freetext4,genbaccess1,genbauthor,genbentryname1,genbfreetext,genbtitle1,hitNtrg,piraccess1,piraccess2,pirauthor,pirentryname1,pirfreetext,pirtitle1,pirtitle2,title2} staden/{convert_project,gip,sapf,sethelp,splitp1,splitp2,splitp3} update_subclones/update_subclones vepe/vepe ted/ted
 do
   install -Dm 755 $pkg $pkgdir/usr/bin/${pkg##*/}
 done
