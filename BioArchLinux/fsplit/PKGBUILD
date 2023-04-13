@@ -1,0 +1,27 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=fsplit
+pkgver=2016.08.23
+pkgrel=0
+pkgdesc="fsplit.c code to split fortran files"
+arch=('x86_64')
+url="https://github.com/g2boojum/fsplit"
+license=('MIT')
+makedepends=('git')
+source=("git+$url.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$pkgname"
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+
+build() {
+  cd $pkgname
+  make
+}
+
+
+package(){
+  cd $pkgname
+  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+}
