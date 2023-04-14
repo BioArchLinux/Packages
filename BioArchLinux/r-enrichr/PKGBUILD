@@ -4,7 +4,7 @@ _pkgname=enrichR
 _pkgver=3.1
 pkgname=r-${_pkgname,,}
 pkgver=3.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Provides an R Interface to 'Enrichr'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,6 +15,7 @@ depends=(
   r-ggplot2
   r-httr
   r-rjson
+  r-writexls
 )
 optdepends=(
   r-knitr

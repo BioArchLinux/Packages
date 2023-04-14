@@ -3,8 +3,10 @@ maintainers:
 - github: sukanka
 repo_depends:
 - r-backports
+- r-chk
 - r-rcpp
 - r-rcppprogress
+- r-rlang
 update_on:
 - regex: MatchIt_([\d._-]+).tar.gz
   source: regex
