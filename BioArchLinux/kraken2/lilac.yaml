@@ -14,3 +14,4 @@ update_on:
   - source: github
     github: DerrickWood/kraken2
     use_latest_release: true
+    prefix: 'v'
