@@ -16,4 +16,5 @@ update_on:
     use_max_tag: true
   - alias: boost
   - alias: r
-  - alias: htslib
+update_on_build:
+  - pkgbase: htslib
