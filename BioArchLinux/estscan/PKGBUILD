@@ -42,6 +42,7 @@ depends=('glibc' 'perl' 'gcc-fortran' 'gcc-libs')
 
 package_estscan-doc() {
 arch=(any)
+pkgdesc="Documentation for estscan"
     install -d  "$pkgdir"/usr/share/doc/${pkgname}/
     cd ${pkgbase}-${pkgver}
     install -Dm755 Manual.pdf "$pkgdir"/usr/share/doc/${pkgname}/
