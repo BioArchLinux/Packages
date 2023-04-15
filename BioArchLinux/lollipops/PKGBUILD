@@ -3,7 +3,7 @@
 
 pkgname=lollipops
 pkgver=1.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Lollipop-style mutation diagrams for annotating genetic variations. https://doi.org/10.1371/journal.pone.0160519"
 arch=('x86_64')
 url="https://github.com/joiningdata/lollipops"
