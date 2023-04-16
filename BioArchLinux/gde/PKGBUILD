@@ -1,0 +1,66 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgbase=gde
+_pkgbase=GDE
+pkgname=('gde' 'cap2' 'zuker-gde')
+pkgver=2.2.1
+pkgrel=0
+pkgdesc="Genetic Data Environment"
+arch=('i686' 'x86_64')
+url="https://github.com/starsareintherose/$_pkgbase"
+license=('custom')
+install=gde.install
+makedepends=('gcc' 'make' 'gcc-fortran')
+source=($url/archive/refs/tags/${pkgver}.tar.gz)
+sha256sums=('70fd4a214a36156b493d45402b40897dfdd37655b379eb7b3d7f106c8cb6fea2')
+build() {
+  cd $srcdir/$_pkgbase-$pkgver
+for dir in CORE HGL_SRC SUPPORT ZUKER
+do
+  cd $srcdir/$_pkgbase-$pkgver/$dir
+  make
+done
+}
+
+package_gde(){
+  depends=('gcc-libs' 'lucida-fonts' 'xorg-fonts-misc' 'readseq' 'lib32-libxview')
+  optdepends=('clustalv' 'cap2' 'phylip' 'zuker-gde')
+	  
+  # install GDE	  
+  cd $srcdir/$_pkgbase-$pkgver/CORE
+  install -Dm755 $pkgbase $pkgdir/usr/share/$pkgbase/$pkgbase
+  install -Dm755 .GDEmenus $pkgdir/usr/share/$pkgbase/.GDEmenus
+  mkdir -p $pkgdir/usr/bin
+  echo "env GDE_HELP_DIR=/usr/share/gde/ /usr/share/gde/gde" >> $pkgdir/usr/bin/gde
+  chmod +x $pkgdir/usr/bin/gde
+  # install desktop
+  cd $srcdir/$_pkgbase-$pkgver/
+  install -Dm755 GDE.desktop $pkgdir/usr/share/applications/GDE.desktop
+  install -Dm644 LinuxGDE.svg $pkgdir/usr/share/icons/Gde.svg
+  # install extra binary
+  cd $srcdir/$_pkgbase-$pkgver/HGL_SRC
+  for pkg in Consto01mask DotPlotTool heapsortHGL MakeCons mapview PrintStrat Translate
+do
+  install -Dm755 $pkg $pkgdir/usr/bin/$pkg
+done
+  cd $srcdir/$_pkgbase-$pkgver/SUPPORT
+  for pkg in count findall lsadt Restriction sho_helix varpos Zuk_to_gen
+do
+  install -Dm755 $pkg $pkgdir/usr/bin/$pkg
+done
+
+}
+
+package_cap2(){
+  depends=('gcc-libs')
+  cd $srcdir/$_pkgbase-$pkgver/SUPPORT
+  install -Dm755 CAP2 $pkgdir/usr/bin/CAP2
+}
+
+package_zuker-gde(){
+  depends=('gcc-libs')
+  cd $srcdir/$_pkgbase-$pkgver/ZUKER
+for pkg in crna lrna
+do
+  install -Dm755 $pkg $pkgdir/usr/bin/$pkg
+done
+}
