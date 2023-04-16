@@ -1,6 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=lucida-fonts
-pkgver=0.0.1
+pkgver=2009.03.09
 pkgrel=1
 pkgdesc="GDE fonts"
 arch=('any')
