@@ -1,0 +1,24 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=lucida-fonts
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="GDE fonts"
+arch=('any')
+url="https://github.com/starsareintherose/GDE"
+license=('custom')
+source=(https://archive.physionet.org/physiotools/xview/lucida-fonts.tar.gz)
+sha256sums=('32806b950308fa11a78686d24833678d4008080dab0da91e761639a2e3d16d3e')
+package(){
+  cd $srcdir/75dpi	  
+for fonts in $(ls)
+do
+  install -Dm755 $fonts $pkgdir/usr/share/fonts/75dpi/$fonts
+done
+  cd $srcdir/100dpi
+for fonts in $(ls)
+do
+  install -Dm755 $fonts $pkgdir/usr/share/fonts/100dpi/$fonts
+done
+
+
+}
