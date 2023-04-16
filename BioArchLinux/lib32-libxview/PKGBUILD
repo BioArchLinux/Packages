@@ -9,7 +9,7 @@ pkgdesc="an OPEN LOOK Toolkit for X Window Files"
 arch=('x86_64' 'i686')
 url="https://sourceforge.net/projects/xview"
 license=('BSD')
-depends=('boost-libs' 'libtirpc' 'lib32-flex' 'lib32-libxpm')
+depends=('boost-libs' 'lib32-libtirpc' 'lib32-flex' 'lib32-libxpm')
 makedepends=('boost' 'unzip' 'imake')
 provides=('libxview' 'libxview.so.3')
 source=("xview-${_pkgver}.src.rpm::https://sourceforge.net/projects/xview/files/xview/RHEL8/xview-${_pkgver}/xview-${_pkgver}.el8.src.rpm/download"
@@ -23,7 +23,6 @@ prepare() {
   cd  $srcdir/$pkg-$_ver/$_pkgname
   # patch build
   patch -p1 < $srcdir/2023-04-16.diff
-  sed -i "s@make World@make -j1 World@g" Build-LinuxXView.bash.amd64
   # patch lib
   sed -i -e 's|extern int|extern ssize_t|' -e 's|char *\*buf;|void *buf;|' -e 's|int *nbytes;|size_t nbytes;|' lib/libxview/notify/ndet_read.c
   sed -i "s@union wait@int@g" lib/libxview/notify/ndisd_wait.c lib/libxview/notify/notify.h lib/libxview/notify/nintn_wait.c  lib/libxview/ttysw/tty.c # clients/olvwm-4.1/olwm.c clients/olvwm-4.5/olwm.c clients/olwm/olwm.c contrib/examples/notifier/ntfy_pipe.c
