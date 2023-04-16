@@ -1,0 +1,25 @@
+# Maintainer:Bipin Kumar <kbipinkumar@pm.me>
+
+pkgname=mcl
+pkgver=22.282
+_pkgver=${pkgver//./-}
+pkgrel=1
+pkgdesc='Markov clustering algorithm for weighted or simple networks' 
+arch=(x86_64)
+url="http://micans.org/mcl/"
+license=('GPL2')
+depends=('glibc' 'cimfomfa' 'perl' 'bash')
+source=("${pkgname}-${_pkgver}.tar.gz::http://micans.org/mcl/src/${pkgname}-${_pkgver}.tar.gz")
+b2sums=('5886cf3a2118510de7a9b7c0e5923a7c2874e3e14eeca5dd6e5fcf7d4a618305006d965ac7443b85ba1c7c7dfca7ff237f4770b5e8640cbf7d98d902fd91c7d0')
+
+build() {
+  cd ${pkgname}-${_pkgver}
+  ./configure --prefix=/usr
+  make 
+}
+
+package() {
+  cd ${pkgname}-${_pkgver}
+  install -d 755 ${pkgdir}/usr
+  make DESTDIR=${pkgdir}/ install
+}
