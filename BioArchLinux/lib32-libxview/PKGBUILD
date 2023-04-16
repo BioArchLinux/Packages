@@ -1,5 +1,5 @@
 pkgname=lib32-libxview
-_pkg=xview
+pkg=xview
 _pkgname=XView
 pkgver=3.2p1.4_25.22
 _pkgver=${pkgver//_/-}
