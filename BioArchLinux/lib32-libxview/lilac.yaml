@@ -1,0 +1,14 @@
+build_prefix: multilib
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+  - cmd: curl -sS https://sourceforge.net/projects/xview/files/xview/RHEL8/ | grep 'href="/projects/xview/files/xview/RHEL8/xview-3.2p1.4' | grep 'row' | sed "s@/projects/xview/files/xview/RHEL8/xview-@ @g;s@/\"@ @g;s@-@_@g" |awk '{print $5}' | tail -n 1
+    source: cmd
+repo_depends:
+  - lib32-libxpm 
