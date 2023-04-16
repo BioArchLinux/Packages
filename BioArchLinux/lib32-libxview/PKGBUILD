@@ -23,6 +23,7 @@ prepare() {
   cd  $srcdir/$pkg-$_ver/$_pkgname
   # patch build
   patch -p1 < $srcdir/2023-04-16.diff
+  sed -i "s@make World@make -j1 World@g" Build-LinuxXView.bash.amd64
   # patch lib
   sed -i -e 's|extern int|extern ssize_t|' -e 's|char *\*buf;|void *buf;|' -e 's|int *nbytes;|size_t nbytes;|' lib/libxview/notify/ndet_read.c
   sed -i "s@union wait@int@g" lib/libxview/notify/ndisd_wait.c lib/libxview/notify/notify.h lib/libxview/notify/nintn_wait.c  lib/libxview/ttysw/tty.c # clients/olvwm-4.1/olwm.c clients/olvwm-4.5/olwm.c clients/olwm/olwm.c contrib/examples/notifier/ntfy_pipe.c
@@ -39,7 +40,6 @@ build() {
 
 package() {
   cd "$pkg-$_ver"/$_pkgname
-  export MAKE="make -j1" 
   X11DIR=$srcdir/$pkgname OPENWINHOME=$pkgdir/usr  bash Build-LinuxXView.bash.amd64 instlibs # instclients  instcontrib instolvwm
   mv $pkgdir/usr/lib $pkgdir/usr/lib32 
 for pkgsub in xgettext msgfmt
