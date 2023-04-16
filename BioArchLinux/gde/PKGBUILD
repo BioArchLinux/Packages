@@ -17,7 +17,7 @@ build() {
 for dir in CORE HGL_SRC SUPPORT ZUKER
 do
   cd $srcdir/$_pkgbase-$pkgver/$dir
-  make
+  make -j1
 done
 }
 
