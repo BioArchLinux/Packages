@@ -38,7 +38,8 @@ build() {
 }
 
 package() {
-  cd "$pkg-$_ver"/$_pkgname 
+  cd "$pkg-$_ver"/$_pkgname
+  export MAKE="make -j1" 
   X11DIR=$srcdir/$pkgname OPENWINHOME=$pkgdir/usr  bash Build-LinuxXView.bash.amd64 instlibs # instclients  instcontrib instolvwm
   mv $pkgdir/usr/lib $pkgdir/usr/lib32 
 for pkgsub in xgettext msgfmt
