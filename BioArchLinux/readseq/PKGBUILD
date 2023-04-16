@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=readseq
 pkgver=2023.4.16
-pkgrel=0
+pkgrel=1
 pkgdesc="multi-format molbio sequence reader"
 arch=('x86_64')
 url="https://github.com/starsareintherose/$pkgname"
