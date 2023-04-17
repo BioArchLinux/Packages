@@ -10,4 +10,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: "http://micans.org/mcl/src/" 
-    regex: 'cimfomfa-(\d\d)-(\d\d\d).tar.gz'
+    regex: 'cimfomfa-(\d+-\b[\d]+).tar.gz'
