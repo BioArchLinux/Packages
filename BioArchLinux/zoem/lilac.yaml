@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v').replace('-', '.'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - cimfomfa
+update_on:
+  - source: regex
+    url: "https://micans.org/zoem/src/" 
+    regex: 'zoem-(\d\d)-(\d\d\d).tar.gz'

@@ -1,0 +1,47 @@
+# Contributor: Alexander F. Rødseth <xyproto@archlinux.org>
+# Maintainer: Stefan Husmann <stefan-husmann@t-online.de>
+# import from AUR: Bipin Kumar <kbipinkumar@pm.me>
+pkgbase=zoem
+pkgname=('zoem' 'zoem-docs')
+pkgver=21.341
+_pkgver=${pkgver//./-}
+pkgrel=1
+pkgdesc='An interpretive macro/programming language'
+arch=(x86_64)
+url='https://micans.org/zoem/'
+license=(GPL2)
+makedepends=('cimfomfa')
+options=('makeflags')
+source=("https://micans.org/zoem/src/${pkgbase}-${pkgver/./-}.tar.gz")
+sha256sums=('370efc7f999572888f4e722cbff40efba395a5435f192e734e7ff87810a68768')
+
+prepare() {
+  cd "$pkgbase-${pkgver/./-}/src"
+  sed -i '3s/^char/extern char/' "version.h"
+}
+
+build() {
+  cd "$pkgbase-${pkgver/./-}"
+  export LDFLAGS="$LDFLAGS -Wl,--allow-multiple-definition"
+  export CFLAGS="$CFLAGS -march=x86-64 -std=c11 -w"
+  export CXXFLAGS="$CXXFLAGS -march=x86-64 -std=c++14 -w"
+  autoreconf -i
+  ./configure --prefix=/usr --enable-maintainer-mode
+  make
+}
+
+package_zoem() {
+  arch=(x86_64)
+  depends=('glibc' 'cimfomfa' 'readline')
+  pkgdesc='An interpretive macro/programming language'
+  install -d 755 ${pkgdir}/usr
+  make -C "$pkgbase-${pkgver/./-}" DESTDIR="$pkgdir" install-exec 
+}
+
+package_zoem-docs() {
+  arch=(any)
+  pkgdesc='Documentation and examples for zoem language'
+  optdepends=('man-db: Read man pages from terminal')
+  install -d 755 ${pkgdir}/usr
+  make -C "$pkgbase-${pkgver/./-}" DESTDIR="$pkgdir" install-data install-am
+}
