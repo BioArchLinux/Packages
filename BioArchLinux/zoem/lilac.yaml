@@ -12,4 +12,4 @@ repo_depends:
 update_on:
   - source: regex
     url: "https://micans.org/zoem/src/" 
-    regex: 'zoem-(\d\d)-(\d\d\d).tar.gz'
+    regex: 'zoem-(\d+-\b[\d]+).tar.gz'
