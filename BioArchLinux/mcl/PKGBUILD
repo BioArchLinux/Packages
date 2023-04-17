@@ -3,7 +3,7 @@
 pkgname=mcl
 pkgver=22.282
 _pkgver=${pkgver//./-}
-pkgrel=1
+pkgrel=2
 pkgdesc='Markov clustering algorithm for weighted or simple networks' 
 arch=(x86_64)
 url="http://micans.org/mcl/"
