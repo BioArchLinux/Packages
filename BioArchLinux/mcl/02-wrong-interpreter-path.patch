@@ -1,0 +1,19 @@
+Description: wrong interpreter path
+Purpose: Fix wrong path of perl interpreter
+Author: Philipp Benner <philipp@debian.org>
+--- a/testing/stream/abc-pairs.pl
++++ b/testing/stream/abc-pairs.pl
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/perl
+ 
+ use strict;
+ use Getopt::Long;
+--- a/testing/stream/abc.pl
++++ b/testing/stream/abc.pl
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ use strict;
+ my ($N, $k, $sd) = @ARGV;

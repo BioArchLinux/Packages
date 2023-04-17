@@ -1,0 +1,403 @@
+Author: Andreas Tille <tille@debian.org>
+Last-Update: Tue, 20 May 2014 17:20:10 +0200
+Description: Fix spelling
+
+--- a/ChangeLog
++++ b/ChangeLog
+@@ -1622,7 +1622,7 @@ Tue, 03 Jun 2003
+ 
+       Nodes can be relabeled by specifying a map file.  This makes it
+       easy and fast e.g. to do a one-pass Blast file parse, write the
+-      cooccurrence data and a prefered node labeling, and then construct
++      cooccurrence data and a preferred node labeling, and then construct
+       the final matrix.  The setup for transforming application-specific
+       data into raw data is this:
+ 
+--- a/doc/clmmate.azm
++++ b/doc/clmmate.azm
+@@ -70,7 +70,7 @@
+    the total number of nodes in clusters\~\v{i} and\~\v{j}
+    for example can be obtained as the sum of entries in row\~\v{i}
+    and column\~\v{j} respectively, and the difference counts
+-   can then be obtained by substracting the intersection count.
++   can then be obtained by subtracting the intersection count.
+    The contingency matrix can easily be computed using \mcx;
+    e.g.}
+ 
+--- a/doc/clmprotocols.5
++++ b/doc/clmprotocols.5
+@@ -287,7 +287,7 @@ undirected, as recommended when using \f
+ result in a directed network as BLAST E-values generally differ between two
+ sequences\&. The default course of action for \fBmcxload(1)\fP is to use the
+ best value found between a pair of labels\&. The next option,
+-\fC--abc-neg-log10\fP tranforms the numerical values in the input (the BLAST
++\fC--abc-neg-log10\fP transforms the numerical values in the input (the BLAST
+ E-values) by taking the logarithm in base\ \&10 and subsequently negating the
+ sign\&. Finally, the transformed values are capped so that any E-value below
+ 1e-200 is set to a maximum allowed edge weight of\ \&200\&.
+--- a/doc/clmprotocols.azm
++++ b/doc/clmprotocols.azm
+@@ -237,7 +237,7 @@
+    result in a directed network as BLAST E-values generally differ between two
+    sequences. The default course of action for \mysib{mcxload} is to use the
+    best value found between a pair of labels.  The next option,
+-   \v{--abc-neg-log10} tranforms the numerical values in the input (the BLAST
++   \v{--abc-neg-log10} transforms the numerical values in the input (the BLAST
+    E-values) by taking the logarithm in base\~10 and subsequently negating the
+    sign. Finally, the transformed values are capped so that any E-value below
+    1e-200 is set to a maximum allowed edge weight of\~200.
+--- a/doc/clmprotocols2.5
++++ b/doc/clmprotocols2.5
+@@ -306,7 +306,7 @@ undirected, as recommended when using \f
+ result in a directed network as BLAST E-values generally differ between two
+ sequences\&. The default course of action for \fBmcxload(1)\fP is to use the
+ best value found between a pair of labels\&. The next option,
+-\fC--abc-neg-log10\fP tranforms the numerical values in the input (the BLAST
++\fC--abc-neg-log10\fP transforms the numerical values in the input (the BLAST
+ E-values) by taking the logarithm in base\ \&10 and subsequently negating the
+ sign\&. Finally, the transformed values are capped so that any E-value below
+ 1e-200 is set to a maximum allowed edge weight of\ \&200\&.
+--- a/doc/clmprotocols2.azm
++++ b/doc/clmprotocols2.azm
+@@ -222,7 +222,7 @@
+    result in a directed network as BLAST E-values generally differ between two
+    sequences. The default course of action for \mysib{mcxload} is to use the
+    best value found between a pair of labels.  The next option,
+-   \v{--abc-neg-log10} tranforms the numerical values in the input (the BLAST
++   \v{--abc-neg-log10} transforms the numerical values in the input (the BLAST
+    E-values) by taking the logarithm in base\~10 and subsequently negating the
+    sign. Finally, the transformed values are capped so that any E-value below
+    1e-200 is set to a maximum allowed edge weight of\~200.
+--- a/doc/index.in.azm
++++ b/doc/index.in.azm
+@@ -130,7 +130,7 @@
+ \utsection{Dealing with matrices}
+ \mkentry{mcxio}{5}{the mcl matrix format specification}
+ \mkentry{mcx}{1}{interface to basic matrix operations}
+-\mkentry{mcxsubs}{1}{extract submatrices by specifiying sets of nodes and clusters}
++\mkentry{mcxsubs}{1}{extract submatrices by specifying sets of nodes and clusters}
+ \mkentry{mcxmap}{1}{remap matrix indices / relabel graph nodes}
+ \utend
+ 
+--- a/doc/mcl.azm
++++ b/doc/mcl.azm
+@@ -91,7 +91,7 @@ by white space.  The most basic example
+    The reason for this is that native mode is understood
+    by all programs in the mcl suite. It is a more stringent
+    and unambiguous format, and hence more suitable for data exchange.
+-   The reader is refered to \mysib{clmprotocols} for more information.
++   The reader is referred to \mysib{clmprotocols} for more information.
+    }
+ 
+ 
+@@ -547,7 +547,7 @@ option.}
+    {\defopt{--write-limit}{write mcl process limit}}
+ }
+ \car{
+-   The first two options are somewhat outdated, in that the prefered way of
++   The first two options are somewhat outdated, in that the preferred way of
+    loading networks is by using \mysib{mcxload}. The option
+    \genopt{-write-expanded} can be useful for exploring more complicated input
+    transformations that incorporate an expansion step, but is not really
+@@ -900,7 +900,7 @@ option.}
+    although this almost never happens in practice, as it requires some
+    particular type of symmetry to be present in the input graph (not just any
+    symmetry will do).  Mathematically speaking, this is a conjecture and not a
+-   theorem, but the present author wil eat his shoe if it fails to be true (for
++   theorem, but the present author will eat his shoe if it fails to be true (for
+    marzipan values of shoe).  It is easy though to construct an input graph for
+    which certain mcl settings result in overlap - for example a line graph on
+    an odd number of nodes.  The default is to excise overlapping parts and
+@@ -1347,7 +1347,7 @@ with value 0.8.}
+    Euclidean data. So mcl in its canonical form is certainly not fit for
+    boundary detection or image segmentation. I experimented with a modified
+    mcl and boundary detection in the thesis pointed to below (see
+-   \secref{references}).  This was fun and not entirely unsuccesful, but not
++   \secref{references}).  This was fun and not entirely unsuccessful, but not
+    something to be pursued further.
+ }
+ \par{
+--- a/doc/mcl.txt
++++ b/doc/mcl.txt
+@@ -58,7 +58,7 @@ mcl(1)                          USER COM
+       to use native mode rather than ABC mode.  The reason for  this  is  that
+       native mode is understood by all programs in the mcl suite. It is a more
+       stringent and unambiguous format, and hence more suitable for  data  ex-
+-      change.  The reader is refered to clmprotocols(5) for more information.
++      change.  The reader is referred to clmprotocols(5) for more information.
+ 
+   SYNOPSIS
+       The  example  invocation  below assumes matrix input, as explained above
+@@ -372,7 +372,7 @@ mcl(1)                          USER COM
+       -write-graphx <fname> (write transformed graph)
+       -write-expanded <fname> (write expanded graph)
+       --write-limit (write mcl process limit)
+-        The  first two options are somewhat outdated, in that the prefered way
++        The  first two options are somewhat outdated, in that the preferred way
+         of loading networks is by using mcxload(1). The option -write-expanded
+         can  be  useful  for  exploring more complicated input transformations
+         that incorporate an expansion step, but is  not  really  relevant  for
+@@ -876,7 +876,7 @@ mcl(1)                          USER COM
+       from  Euclidean  data. So mcl in its canonical form is certainly not fit
+       for boundary detection or image segmentation. I experimented with a mod-
+       ified  mcl  and  boundary  detection in the thesis pointed to below (see
+-      REFERENCES). This was fun and not entirely unsuccesful,  but  not  some-
++      REFERENCES). This was fun and not entirely unsuccessful, but  not  some-
+       thing to be pursued further.
+ 
+       mcl  likes  undirected  input graphs best, and it really dislikes graphs
+--- a/doc/mclfaq.7
++++ b/doc/mclfaq.7
+@@ -63,7 +63,7 @@ and mathematics behind the MCL algorithm
+ explained\&. A broad view is given in faq\ \&1\&.2,
+ and see also faq\ \&1\&.5 and section \fBREFERENCES\fP\&.
+ 
+-Some additional sections preceed the actual faq entries\&.
++Some additional sections precede the actual faq entries\&.
+ The TOC section contains a listing of all questions\&.
+ .SH RESOURCES
+ 
+@@ -532,7 +532,7 @@ Somehow, directionality thwarts the noti
+ .ZB 1m \fB3\&.11\fP
+ \s+1\fBHow do I check that my graph/matrix is symmetric/undirected?\fP\s-1
+ 
+-Whether your graph is created by third-party software or by custom sofware
++Whether your graph is created by third-party software or by custom software
+ written by someone you know (e\&.g\&. yourself), it is advisable to test whether
+ the software generates symmetric matrices\&. This can be done as follows
+ using the \fBmcxi utility\fP, assuming that you want to test the
+@@ -805,7 +805,7 @@ The latter two are listed when using the
+ .ZB 1m \fB6\&.2\fP
+ \s+1\fBHow do I compute the maximum amount of RAM needed by mcl?\fP\s-1
+ 
+-It is rougly equal to
++It is roughly equal to
+ 
+ .di ZV
+ .in 0
+--- a/doc/mclfaq.azm
++++ b/doc/mclfaq.azm
+@@ -36,7 +36,7 @@
+    and see also faq\~\fnum{innards} and section \secref{references}.}
+ 
+ \par{
+-   Some additional sections preceed the actual faq entries.
++   Some additional sections precede the actual faq entries.
+    The TOC section contains a listing of all questions.
+ \${html}{
+    \bf{Clicking on the number of a question}
+@@ -374,7 +374,7 @@ dislike uni-directed graphs so much?}
+ 
+ \faq{checksymmetry}{How do I check that my graph/matrix is symmetric/undirected?}
+ \car{
+-   Whether your graph is created by third-party software or by custom sofware
++   Whether your graph is created by third-party software or by custom software
+    written by someone you know (e.g. yourself), it is advisable to test whether
+    the software generates symmetric matrices.  This can be done as follows
+    using the \sibref{mcxi}{mcxi utility}, assuming that you want to test the
+@@ -663,7 +663,7 @@ begin
+ 
+ \faq{}{How do I compute the maximum amount of RAM needed by mcl?}
+ \car{
+-   It is rougly equal to}
++   It is roughly equal to}
+ 
+ \verbatim{2 * s * K * N}
+ 
+--- a/doc/mclfaq.txt
++++ b/doc/mclfaq.txt
+@@ -17,7 +17,7 @@ MCL FAQ(7)                      MISCELLA
+           plained. A broad view is given in faq 1.2, and see also faq 1.5  and
+           section REFERENCES.
+ 
+-          Some  additional  sections  preceed the actual faq entries.  The TOC
++          Some  additional  sections  precede the actual faq entries.  The TOC
+           section contains a listing of all questions.
+ 
+   RESOURCES
+@@ -366,7 +366,7 @@ MCL FAQ(7)                      MISCELLA
+    3.11   How do I check that my graph/matrix is symmetric/undirected?
+ 
+           Whether your graph is created by third-party software or  by  custom
+-          sofware written by someone you know (e.g. yourself), it is advisable
++          software written by someone you know (e.g. yourself), it is advisable
+           to test whether the software generates symmetric matrices. This  can
+           be done as follows using the mcxi utility, assuming that you want to
+           test the matrix stored in file matrix.mci. The mcxi  utility  should
+@@ -599,7 +599,7 @@ MCL FAQ(7)                      MISCELLA
+ 
+    6.2    How do I compute the maximum amount of RAM needed by mcl?
+ 
+-          It is rougly equal to
++          It is roughly equal to
+ 
+           2 * s * K * N
+ 
+--- a/doc/mclindex.7
++++ b/doc/mclindex.7
+@@ -128,7 +128,7 @@ interface to basic matrix operations
+ .ZI 2m "\fBmcxsubs(1)\fP"
+ \&
+ .br
+-extract submatrices by specifiying sets of nodes and clusters
++extract submatrices by specifying sets of nodes and clusters
+ .in -2m
+ .ZI 2m "\fBmcxmap(1)\fP"
+ \&
+--- a/doc/mcxio.5
++++ b/doc/mcxio.5
+@@ -34,7 +34,7 @@ mcxio \- the format specifications for i
+ The easiest format to create graphs from is a line-based format where each lines
+ represents an edge or arc\&. This format is known as the \fILarge Graph Layout\fP, as
+ \fIncol\fP format (in \fIigraph\fP), and as \fIpairwise\fP format in BioLayout\&.
+-In \fBmcl-edge\fP it is additionally refered to
++In \fBmcl-edge\fP it is additionally referred to
+ as \fIlabel\fP format or \fIabc\fP format\&.
+ In this format each line has two or three fields\&. The first two fields
+ define the source and destination node of an arc\&. Such an arc may be
+@@ -96,7 +96,7 @@ Their relative merits are described furt
+ \&
+ .br
+ This always pertains to matrices in native format concatenated in a single
+-file, refered to as a \fIcat file\fP\&. It is used for example to encode
++file, referred to as a \fIcat file\fP\&. It is used for example to encode
+ hierarchical clusterings as generated by \fBmclcm\fP\&. A cat file either
+ consists of matrices in interchange format or of matrices in binary format\&.
+ .in -2m
+@@ -154,7 +154,7 @@ utilities may be in order here\&. The pr
+ matrix functionality, the prefix \fBclm\fP is used for generic cluster
+ functionaliy\&. The \fIutility\fP \fBmcx\fP is a general purpose interpreter for
+ manipulating matrices (and grahps, sets, and clusterings)\&. The set of all
+-\fBmcl\fP siblings (cf\&. \fBmclfamily(7)\fP) is loosely refered to as the mcl
++\fBmcl\fP siblings (cf\&. \fBmclfamily(7)\fP) is loosely referred to as the mcl
+ family, which makes use of the mcl libraries (rather than the mcx
+ libraries)\&. The full truth is even more horrible, as the mcl/mcx prefix
+ conventions used in the C source code follow still other rules\&.
+--- a/doc/mcxio.azm
++++ b/doc/mcxio.azm
+@@ -28,7 +28,7 @@
+    The easiest format to create graphs from is a line-based format where each lines
+    represents an edge or arc. This format is known as the \it{Large Graph Layout}, as
+    \it{ncol} format (in \it{igraph}), and as \it{pairwise} format in BioLayout.
+-   In \mcle it is additionally refered to
++   In \mcle it is additionally referred to
+    as \it{label} format or \it{abc} format.
+    In this format each line has two or three fields. The first two fields
+    define the source and destination node of an arc. Such an arc may be
+@@ -98,7 +98,7 @@
+ \item{\it{concatenated native matrix format}}
+ \car{
+    This always pertains to matrices in native format concatenated in a single
+-   file, refered to as a \it{cat file}.  It is used for example to encode
++   file, referred to as a \it{cat file}.  It is used for example to encode
+    hierarchical clusterings as generated by \mclcm.  A cat file either
+    consists of matrices in interchange format or of matrices in binary format.}
+ 
+@@ -166,7 +166,7 @@
+    matrix functionality, the prefix \bf{clm} is used for generic cluster
+    functionaliy.  The \it{utility} \mcx is a general purpose interpreter for
+    manipulating matrices (and grahps, sets, and clusterings).  The set of all
+-   \mcl siblings (cf. \mysib{mclfamily}) is loosely refered to as the mcl
++   \mcl siblings (cf. \mysib{mclfamily}) is loosely referred to as the mcl
+    family, which makes use of the mcl libraries (rather than the mcx
+    libraries). The full truth is even more horrible, as the mcl/mcx prefix
+    conventions used in the C source code follow still other rules.}
+--- a/doc/mcxquery.azm
++++ b/doc/mcxquery.azm
+@@ -279,7 +279,7 @@
+ \item{\defopt{--node-attr}{output node degree and weight attributes}}
+ \car{
+    Output is in the form of a tab separated file.
+-   The option \genopt{-icl} can be used in conjuction.
++   The option \genopt{-icl} can be used in conjunction.
+    }
+ 
+ 
+--- a/doc/tingea.log.7
++++ b/doc/tingea.log.7
+@@ -142,7 +142,7 @@ for the other units are given below\&.
+ .fi \fR
+ 
+ The leading tag can be used to set levels for all categories at once\&.
+-Subsequent units may then alter this intial setting\&.
++Subsequent units may then alter this initial setting\&.
+ The lead tag settings and their meaning are these:
+ 
+ .di ZV
+--- a/doc/tingea.log.azm
++++ b/doc/tingea.log.azm
+@@ -130,7 +130,7 @@
+ 
+ \car{
+    The leading tag can be used to set levels for all categories at once.
+-   Subsequent units may then alter this intial setting.
++   Subsequent units may then alter this initial setting.
+    The lead tag settings and their meaning are these:}
+ 
+ \verbatim{\:/
+--- a/src/clew/clm.c
++++ b/src/clew/clm.c
+@@ -259,7 +259,7 @@ mclx* clmMeet
+       }
+ 
+       if (i_clmeet != n_clmeet)
+-      mcxErr(mepanic, "internal math does not substract")
++      mcxErr(mepanic, "internal math does not subtract")
+ 
+    ;  mclxFree(&abmeet)
+    ;  return clmeet
+--- a/src/impala/vector.h
++++ b/src/impala/vector.h
+@@ -544,7 +544,7 @@ mclVector* mcldMinus
+ mclVector* mcldMerge
+ (  const mclVector*  lft
+ ,  const mclVector*  rgt
+-,  mclVector*        dst      /* values in lft prefered over rgt */
++,  mclVector*        dst      /* values in lft preferred over rgt */
+ )  ;
+ 
+ 
+--- a/src/mcl/procinit.c
++++ b/src/mcl/procinit.c
+@@ -209,7 +209,7 @@ mcxOptAnchor mclProcOptions[] =
+    ,  MCX_OPT_HASARG | MCX_OPT_HIDDEN
+    ,  PROC_OPT_RPRUNE
+    ,  "<int>"
+-   ,  "use inital pruning cutoff <MAX>/<int>"
++   ,  "use initial pruning cutoff <MAX>/<int>"
+    }
+ ,  {  "-skid"
+    ,  MCX_OPT_HASARG | MCX_OPT_HIDDEN
+--- a/src/shmx/mcxdiameter.c
++++ b/src/shmx/mcxdiameter.c
+@@ -917,7 +917,7 @@ static void compute_scores_up_vc
+ )
+    {  dim j
+    ;  for (j=0;j<N_COLS(up);j++)
+-      up->cols[j].val = 1.0            /* accumulator; initalised */
++      up->cols[j].val = 1.0            /* accumulator; initialised */
+                                        /* question: initialise everywhere? */
+ 
+    ;  for (j=0;j<n_order;j++)
+--- a/doc/clmorder.azm
++++ b/doc/clmorder.azm
+@@ -66,7 +66,7 @@
+ {\defopt{-o}{<fname>}}
+ }
+ \car{
+-   As decribed above.
++   As described above.
+    }
+ 
+ \'end{itemize}
+--- a/doc/mcxload.azm
++++ b/doc/mcxload.azm
+@@ -467,7 +467,7 @@
+    {\defopt{-pack-rnum}{<num>}{set row range}}
+ }
+ \car{
+-   The \genopt{-packed} option allows to read machine-readable data
++   The \genopt{-packed} option allows one to read machine-readable data
+    directly. The data has to correspond to the data types for indexes
+    and values with with MCL was compiled. The use of \genopt{-pack-cnum}
+    and \genopt{-pack-rnum} is required to set the limits of

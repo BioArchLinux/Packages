@@ -1,0 +1,189 @@
+Author: Philipp Benner
+Last-Update: Mon, 22 Jan 2018 12:48:19 +0100
+Description: Fix whatis entry in manpages
+
+--- a/doc/clmclose.azm
++++ b/doc/clmclose.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm close}{Fetch connected components from graphs or subgraphs}
++\NAME{clm_close}{Fetch connected components from graphs or subgraphs}
+ 
+ \disclaim_clm{close}
+ 
+--- a/doc/clmdist.azm
++++ b/doc/clmdist.azm
+@@ -23,7 +23,7 @@
+ \def{sjd}{\bf{sjd}}
+ 
+ \sec{name}{NAME}
+-\NAME{clm dist}{compute the distance between two or more partitions\
++\NAME{clm_dist}{compute the distance between two or more partitions\
+  (clusterings).}
+ 
+ \par{
+--- a/doc/clmimac.azm
++++ b/doc/clmimac.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm imac}{Interpret Matrices (c.q. MCL iterands output by \mcl)\
++\NAME{clm_imac}{Interpret Matrices (c.q. MCL iterands output by \mcl)\
+  As Clusterings.}
+ \disclaim_clm{imac}
+ 
+--- a/doc/clminfo.azm
++++ b/doc/clminfo.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm info}{compute performance measures for graphs and clusterings.}
++\NAME{clm_info}{compute performance measures for graphs and clusterings.}
+ 
+ \disclaim_clm{info}
+ 
+--- a/doc/clmmate.azm
++++ b/doc/clmmate.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm mate}{compute best matches between two clusterings}
++\NAME{clm_mate}{compute best matches between two clusterings}
+ 
+ \disclaim_clm{mate}
+ 
+--- a/doc/clmmeet.azm
++++ b/doc/clmmeet.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm meet}{compute the intersection of a set of clusterings.}
++\NAME{clm_meet}{compute the intersection of a set of clusterings.}
+ 
+ \disclaim_clm{meet}
+ 
+--- a/doc/clmorder.azm
++++ b/doc/clmorder.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm order}{reorder clusterings conformal to inclusion structure}
++\NAME{clm_order}{reorder clusterings conformal to inclusion structure}
+ 
+ \disclaim_clm{order}
+ 
+--- a/doc/clmresidue.azm
++++ b/doc/clmresidue.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm residue}{extend clustering of subgraph to clustering of graph.}
++\NAME{clm_residue}{extend clustering of subgraph to clustering of graph.}
+ 
+ \disclaim_clm{residue}
+ 
+--- a/doc/clmvol.azm
++++ b/doc/clmvol.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm vol}{compute volatile nodes from a set of clusterings}
++\NAME{clm_vol}{compute volatile nodes from a set of clusterings}
+ 
+ \disclaim_clm{vol}
+ 
+--- a/doc/mcxclcf.azm
++++ b/doc/mcxclcf.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{mcx clcf}{compute the clustering coefficient of a graph}
++\NAME{mcx_clcf}{compute the clustering coefficient of a graph}
+ 
+ \sec{synopsis}{SYNOPSIS}
+ \par{
+--- a/doc/mcxconvert.azm
++++ b/doc/mcxconvert.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{mcx convert}{convert between mcx storage types}
++\NAME{mcx_convert}{convert between mcx storage types}
+ 
+ \sec{synopsis}{SYNOPSIS}
+ \par{
+--- a/doc/mcxdiameter.azm
++++ b/doc/mcxdiameter.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{mcx diameter}{compute the diameter of a graph}
++\NAME{mcx_diameter}{compute the diameter of a graph}
+ 
+ \sec{synopsis}{SYNOPSIS}
+ \par{
+--- a/doc/mcxerdos.azm
++++ b/doc/mcxerdos.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{mcx erdos}{compute shortest paths in a graph}
++\NAME{mcx_erdos}{compute shortest paths in a graph}
+ 
+ \sec{synopsis}{SYNOPSIS}
+ \par{
+--- a/doc/clmoptics.azm
++++ b/doc/clmoptics.azm
+@@ -2,7 +2,7 @@
+ 
+ \begin{pud::man}{
+ 
+-   {name}{clm optics}
++   {name}{clm_optics}
+    {html_title}{The clm optics manual}
+    {author}{Stijn van Dongen}
+    {section}{1}
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm optics}{implementation of the OPTICS reachability ordering}
++\NAME{clm_optics}{implementation of the OPTICS reachability ordering}
+ \disclaim_clm{optics}
+ 
+ \sec{synopsis}{SYNOPSIS}
+--- a/doc/mcxctty.azm
++++ b/doc/mcxctty.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{mcx ctty}{compute betweenness centrality for network nodes or network edges}
++\NAME{mcx_ctty}{compute betweenness centrality for network nodes or network edges}
+ 
+ \sec{synopsis}{SYNOPSIS}
+ \par{
+--- a/doc/clminfo2.azm
++++ b/doc/clminfo2.azm
+@@ -15,7 +15,7 @@
+ \${html}{\"pud::man::maketoc"}
+ 
+ \sec{name}{NAME}
+-\NAME{clm info2}{compute performance measures for graphs and clusterings.}
++\NAME{clm_info2}{compute performance measures for graphs and clusterings.}
+ 
+ \disclaim_clm{info2}
+ 
