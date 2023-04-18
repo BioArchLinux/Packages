@@ -1,6 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=readseq
-pkgver=2023.4.16
+pkgver=2023.04.16
 epoch=1
 pkgrel=1
 pkgdesc="multi-format molbio sequence reader"
@@ -9,7 +9,7 @@ url="https://github.com/starsareintherose/$pkgname"
 license=('custom:Public')
 makedepends=('gcc' 'make')
 source=($url/archive/refs/tags/${pkgver}.tar.gz)
-sha256sums=('56ed0a1ca2800ccc54c269b785d9b9d01b154f6c161b019da84bfdfedc31f69e')
+sha256sums=('a18c78bd8ea0d6787556ae51bf57d73c0d7ab4b0e3eea409388f18a5e257790c')
 build() {
   cd "$pkgname-$pkgver"
   make build
