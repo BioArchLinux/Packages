@@ -1,6 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=readseq
 pkgver=2023.4.16
+epoch=1
 pkgrel=1
 pkgdesc="multi-format molbio sequence reader"
 arch=('x86_64')
@@ -13,8 +14,6 @@ build() {
   cd "$pkgname-$pkgver"
   make build
 }
-
-
 package(){
   cd "$pkgname-$pkgver"
   install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
