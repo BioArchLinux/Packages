@@ -7,9 +7,8 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
-  update_aur_repo()
 repo_depends:
-  - cimfoma
+  - cimfomfa
   - zoem
 update_on:
   - source: regex
