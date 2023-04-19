@@ -14,3 +14,6 @@ update_on:
   - source: regex
     url: "http://micans.org/mcl/src/" 
     regex: 'mcl-(\d+-\b[\d]+).tar.gz'
+  - source: manual
+    manual: 1
+    time_limit_hours: 3
