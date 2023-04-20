@@ -1,9 +1,9 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=pak
-_pkgver=0.4.0
+_pkgver=0.5.0
 pkgname=r-${_pkgname,,}
-pkgver=0.4.0
+pkgver=0.5.0
 pkgrel=1
 pkgdesc='Another Approach to Package Installation'
 arch=('any')
@@ -38,7 +38,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('24216cc4a33607fac8bceefb7d3ede250768feb902e21611a37ae307ba758cca')
+sha256sums=('c13433d43fad3e29a745a9847e3e53010610f90c7d4b1facc4d3624254f81d47')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
