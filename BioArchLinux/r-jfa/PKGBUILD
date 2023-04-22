@@ -4,7 +4,7 @@ _pkgname=jfa
 _pkgver=0.6.6
 pkgname=r-${_pkgname,,}
 pkgver=0.6.6
-pkgrel=3
+pkgrel=4
 pkgdesc='Bayesian and Classical Audit Sampling'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
