@@ -5,7 +5,7 @@ _pkgname=texreg
 _pkgver=1.38.6
 pkgname=r-${_pkgname,,}
 pkgver=1.38.6
-pkgrel=4
+pkgrel=5
 pkgdesc='Conversion of R Regression Output to LaTeX or HTML Tables'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
