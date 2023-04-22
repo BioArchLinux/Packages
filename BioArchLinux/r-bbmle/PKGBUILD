@@ -4,7 +4,7 @@ _pkgname=bbmle
 _pkgver=1.0.25
 pkgname=r-${_pkgname,,}
 pkgver=1.0.25
-pkgrel=2
+pkgrel=3
 pkgdesc='Tools for General Maximum Likelihood Estimation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
