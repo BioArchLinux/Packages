@@ -5,7 +5,7 @@ _pkgname=scs
 _pkgver=3.2.4
 pkgname=r-${_pkgname,,}
 pkgver=3.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Splitting Conic Solver'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
