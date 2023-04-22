@@ -5,7 +5,7 @@ _pkgname=httpuv
 _pkgver=1.6.9
 pkgname=r-${_pkgname,,}
 pkgver=1.6.9
-pkgrel=1
+pkgrel=2
 pkgdesc='HTTP and WebSocket Server Library'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
