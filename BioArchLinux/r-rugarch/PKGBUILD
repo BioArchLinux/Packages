@@ -4,7 +4,7 @@ _pkgname=rugarch
 _pkgver=1.4-9
 pkgname=r-${_pkgname,,}
 pkgver=1.4.9
-pkgrel=1
+pkgrel=2
 pkgdesc='Univariate GARCH Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
