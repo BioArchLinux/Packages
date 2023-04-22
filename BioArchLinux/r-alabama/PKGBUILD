@@ -4,7 +4,7 @@ _pkgname=alabama
 _pkgver=2022.4-1
 pkgname=r-${_pkgname,,}
 pkgver=2022.4.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Constrained Nonlinear Optimization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
