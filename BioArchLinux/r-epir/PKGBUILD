@@ -4,7 +4,7 @@ _pkgname=epiR
 _pkgver=2.0.60
 pkgname=r-${_pkgname,,}
 pkgver=2.0.60
-pkgrel=3
+pkgrel=4
 pkgdesc='Tools for the Analysis of Epidemiological Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
