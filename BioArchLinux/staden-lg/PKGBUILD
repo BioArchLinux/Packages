@@ -9,6 +9,11 @@ depends=('libxt' 'libxaw' 'gcc-libs' 'bash')
 makedepends=('fsplit' 'make' 'gcc-fortran' 'gcc' 'git')
 source=($pkgname::git+$url#tag=${pkgver})
 sha256sums=('SKIP')
+prepare(){
+cd $srcdir/$pkgname/desktop
+sed -i "s@xmep.png@Xmep.png@g" xmep.desktop
+sed -i "s@xsap.png@Xsap.png@g" xsap.desktop
+}
 build(){
 # build easy
 for pkgalone in ted newted abi alf Misc cop convert expGetSeq frog getMCH indexseqlibs bap/osp-bits
