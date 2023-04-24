@@ -6,6 +6,7 @@ repo_depends:
 - r-assertthat
 - r-bit64
 - r-brio
+- r-cli
 - r-curl
 - r-dbi
 - r-gargle
@@ -19,6 +20,7 @@ repo_depends:
 - r-rcpp
 - r-rlang
 - r-tibble
+- r-withr
 update_on:
 - regex: bigrquery_([\d._-]+).tar.gz
   source: regex

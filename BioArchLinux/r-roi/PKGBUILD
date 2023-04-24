@@ -4,13 +4,14 @@ _pkgname=ROI
 _pkgver=1.0-0
 pkgname=r-${_pkgname,,}
 pkgver=1.0.0
-pkgrel=5
+pkgrel=6
 pkgdesc='R Optimization Infrastructure'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-checkmate
   r-registry
   r-slam
 )
