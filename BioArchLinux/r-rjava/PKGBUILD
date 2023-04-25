@@ -13,11 +13,12 @@ license=(LGPL)
 depends=(
   r
   openmp
-  java-environment
+  java-runtime
 )
 makedepends=(
   make
   clang
+  java-environment
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('e290d0493317a5d6c452793e92baa914e37ef03faef19b2e436329b4ec8658c6')
