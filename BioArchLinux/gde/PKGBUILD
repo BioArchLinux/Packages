@@ -23,7 +23,7 @@ done
 }
 
 package_gde(){
-  depends=('gcc-libs' 'lucida-fonts' 'xorg-fonts-misc' 'readseq' 'lib32-libxview')
+  depends=('gcc-libs' 'lucida-fonts' 'xorg-fonts-misc' 'readseq' 'lib32-libxview' 'xorg-xhost')
   optdepends=('clustalv' 'cap2' 'phylip' 'zuker-gde')
 	  
   # install GDE	  
