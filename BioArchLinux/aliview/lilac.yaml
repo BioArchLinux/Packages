@@ -2,6 +2,13 @@ build_prefix: multilib
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
-  - source: cmd
-    cmd: curl -sS http://www.ormbunkar.se/aliview/downloads/linux/linux-versions-all/ | grep 'linux-version' | sed 's/linux-version-/ /g' | sed 's/\/"/ /g' | awk '{print $6}' | tail -n 1
+  - source: github
+    github: AliView/AliView
+    use_max_tag: true
+    prefix: 'v'
