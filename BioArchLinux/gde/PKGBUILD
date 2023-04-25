@@ -10,6 +10,7 @@ url="https://github.com/starsareintherose/$_pkgbase"
 license=('custom')
 install=gde.install
 makedepends=('gcc' 'make' 'gcc-fortran')
+optdepends=('xorg-mkfontdir' 'xorg-xset')
 source=($url/archive/refs/tags/${pkgver}.tar.gz)
 sha256sums=('70fd4a214a36156b493d45402b40897dfdd37655b379eb7b3d7f106c8cb6fea2')
 build() {
