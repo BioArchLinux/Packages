@@ -1,3 +1,6 @@
+#Maintainer: Guoyi Zhang <myname at malacology dot net>
+#Contributor: Fabio Zanini <fabio DOOT zanini AAT fastmail DOOT fm>
+
 pkgname=aliview
 _pkgname=AliView
 pkgver=1.28
