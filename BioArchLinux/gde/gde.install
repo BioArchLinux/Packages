@@ -1,7 +1,7 @@
 post_install() {
 
 echo ""
-echo "You should have xorg-xset installed"
+echo "You should type following command"
 echo ""
 
 echo ""
@@ -11,6 +11,7 @@ echo "xset +fp /usr/share/fonts/100dpi"
 echo "xset +fp /usr/share/fonts/75dpi"
 echo "xset +fp /usr/share/fonts/misc"
 echo "xset fp rehash"
+echo "xhost + your_localhost_name"
 echo ""
 
 }
