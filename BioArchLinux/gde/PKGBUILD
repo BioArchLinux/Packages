@@ -4,7 +4,6 @@ _pkgbase=GDE
 pkgname=('gde' 'cap2' 'zuker-gde')
 pkgver=2.2.1
 pkgrel=4
-pkgdesc="Genetic Data Environment"
 arch=('i686' 'x86_64')
 url="https://github.com/starsareintherose/$_pkgbase"
 license=('custom')
@@ -23,6 +22,7 @@ done
 }
 
 package_gde(){
+  pkgdesc="Genetic Data Environment"
   depends=('gcc-libs' 'lucida-fonts' 'xorg-fonts-misc' 'readseq' 'lib32-libxview' 'xorg-xhost' 'xorg-mkfontscale' 'xorg-xset')
   optdepends=('clustalv' 'cap2' 'phylip' 'zuker-gde')
 	  
@@ -52,12 +52,14 @@ done
 }
 
 package_cap2(){
+  pkgdesc="Contig Assembly Program"
   depends=('gcc-libs')
   cd $srcdir/$_pkgbase-$pkgver/SUPPORT
   install -Dm755 CAP2 $pkgdir/usr/bin/CAP2
 }
 
 package_zuker-gde(){
+  pkgdesc="Zuker's crna and lrna"
   depends=('gcc-libs')
   cd $srcdir/$_pkgbase-$pkgver/ZUKER
 for pkg in crna lrna
