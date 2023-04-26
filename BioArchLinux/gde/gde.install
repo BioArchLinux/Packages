@@ -6,11 +6,12 @@ xset +fp /usr/share/fonts/75dpi
 xset +fp /usr/share/fonts/100dpi
 xset +fp /usr/share/fonts/misc
 xset fp rehash
+xhost + $(hostnamectl | grep 'Static hostname' | awk '{print $3}')
 
 echo ""
-echo "You should type following command"
+echo "You should check using type following command"
 echo ""
-echo "xhost + your_localhost_name"
+echo "xhost"
 echo ""
 
 }
