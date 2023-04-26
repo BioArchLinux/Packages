@@ -1,16 +1,15 @@
 post_install() {
 
+mkfontscale
+mkfontdir
+xset +fp /usr/share/fonts/75dpi
+xset +fp /usr/share/fonts/100dpi
+xset +fp /usr/share/fonts/misc
+xset fp rehash
+
 echo ""
 echo "You should type following command"
 echo ""
-
-echo ""
-echo "mkfontscale"
-echo "mkfontdir"
-echo "xset +fp /usr/share/fonts/100dpi"
-echo "xset +fp /usr/share/fonts/75dpi"
-echo "xset +fp /usr/share/fonts/misc"
-echo "xset fp rehash"
 echo "xhost + your_localhost_name"
 echo ""
 
