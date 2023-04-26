@@ -28,10 +28,18 @@ package() {
   export CC=clang
   export CXX=clang++
   export LD=clang
+  export JAVA_HOME=/usr/lib/jvm/default
+  export JAR=$JAVA_HOME/bin/jar
+  export JAVA=$JAVA_HOME/bin/java
+  export JAVAC=$JAVA_HOME/bin/javac
+  export JAVA_CPPFLAGS="-I$JAVA_HOME/include -I$JAVA_HOME/include/linux"
+  export JAVA_LD_LIBRARY_PATH=$JAVA_HOME/lib/server
+  export JAVA_LIBS="-L$JAVA_HOME/lib/server -ljvm"
+  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$JAVA_HOME/lib/server"
+
   archlinux-java fix
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
   install -dm0755 "${pkgdir}/usr/lib/R/library"
 
   cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
