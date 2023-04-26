@@ -10,8 +10,8 @@ url="https://github.com/lh3/${pkgname}"
 license=('MIT')
 depends=(zlib)
 provides=()
-source=("${pkgver}.tar.gz::${url}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.bz2")
-sha256sums=('9dd4c31ff082182948944bcdad6d328f64f09295d10547d72eba24189880a615')
+source=("${pkgver}.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
+sha256sums=('2e3264300661cf1fce6adabffe6970ec59d46f3e8150dd40fa4501ff4f6c0dbc')
 build() {
   cd "${pkgname}-${pkgver}"
   make

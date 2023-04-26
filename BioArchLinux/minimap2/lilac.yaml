@@ -2,9 +2,13 @@ build_prefix: extra-x86_64
 maintainers:
   - github: michaelgelliot
     email: m.g.elliot@rug.nl
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - source: github
     github: lh3/minimap2
     use_max_tag: true
-
-
+    prefix: 'v'
