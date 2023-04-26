@@ -14,7 +14,7 @@ source=("$pkgname-$pkgver::${url}/archive/refs/tags/${pkgver//_/-}.tar.gz"
 sha256sums=('794915ca4beb42298ff5d42031b015a6ee2cdb8746a697a24a552abbe5103e0c'
             'c5b3974cb7fe1abd54457ff95558d072aa5e6d646c22c7b73843bdf113149e41')
 depends=( 'java-runtime>=8')
-makedepends=('java-environment>=8' 'maven' 'gendesk' 'icedtea-web')
+makedepends=('java-environment=8' 'maven' 'gendesk' 'icedtea-web')
 prepare(){
   cd $srcdir/$pkgname-${pkgver//_/-}
   patch -p1 < $srcdir/$pkgname.patch
