@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Biobase
-_pkgver=2.58.0
+_pkgver=2.60.0
 pkgname=r-${_pkgname,,}
-pkgver=2.58.0
-pkgrel=4
+pkgver=2.60.0
+pkgrel=1
 pkgdesc='Biobase: Base functions for Bioconductor'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -23,7 +23,7 @@ optdepends=(
   r-tools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('db798af54eb18d83242b1ffbb1fa35b5bc0256cedf86b9a6519e2d786d20e566')
+sha256sums=('05a4153b9b06fc6cae16f21f072bfe4ca8703a030ea6542ea5ceb591bb2d5af6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
