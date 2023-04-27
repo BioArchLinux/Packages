@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BiocGenerics
-_pkgver=0.44.0
+_pkgver=0.46.0
 pkgname=r-${_pkgname,,}
-pkgver=0.44.0
-pkgrel=2
+pkgver=0.46.0
+pkgrel=1
 pkgdesc='S4 generic functions used in Bioconductor'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -30,7 +30,7 @@ optdepends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8518e462c1ef103ab059d059d871afc444e48f56fe6b3afdb60dc1abf6c9b09d')
+sha256sums=('ffb06070f5c8510671aefcf4cbc71dc2ee6dfe601641dac3e8280a2474bc7ca6')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
