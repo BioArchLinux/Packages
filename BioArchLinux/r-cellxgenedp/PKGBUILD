@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=cellxgenedp
-_pkgver=1.2.2
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.2
-pkgrel=2
+pkgver=1.4.0
+pkgrel=1
 pkgdesc='Discover and Access Single Cell Data Sets in the cellxgene Data Portal'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -31,7 +31,7 @@ optdepends=(
   r-zellkonverter
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f78eea4b93bceebd84dd962268c55961abd23744c5640cc6a2beb71d8a4bc30e')
+sha256sums=('52d0fc7319bea0eb61baee8a10240cf18108d0e207a0857d976b3767bf542b3b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
