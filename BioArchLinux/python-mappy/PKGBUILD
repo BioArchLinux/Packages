@@ -3,7 +3,7 @@
 pkgname=python-mappy
 _module=minimap2
 pkgver=2.25
-pkgrel=1
+pkgrel=2
 pkgdesc="Python interface to minimap2, a fast and accurate C program to align genomic and transcribe nucleotide sequences"
 arch=('x86_64')
 url="https://github.com/lh3/minimap2"
