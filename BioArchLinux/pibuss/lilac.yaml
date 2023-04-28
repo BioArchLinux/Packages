@@ -1,8 +1,0 @@
-build_prefix: extra-x86_64
-maintainers:
-  - github: starsareintherose
-    email: kuoi@bioarchlinux.org
-update_on:
-  - source: regex
-    url: https://rega.kuleuven.be/cev/ecv/software/pibuss
-    regex: pibuss_v(\d+.\d+).jar
