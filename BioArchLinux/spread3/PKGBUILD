@@ -7,7 +7,7 @@ _pkg=spreaD3
 pkgver=0.9.5
 epoch=1
 _pkgver=${pkgver//./-}
-pkgrel=0
+pkgrel=1
 depends=('java-runtime=8')
 makedepends=('java-environment=8' 'ant')
 pkgdesc="a user-friendly application to analyze and visualize pathogen phylodynamic reconstructions resulting from Bayesian inference of sequence and trait evolutionary processes. https://doi.org/10.1093/molbev/msw082"
