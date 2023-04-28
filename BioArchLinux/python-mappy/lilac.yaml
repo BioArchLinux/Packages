@@ -11,6 +11,7 @@ post_build_script: |
 repo_depends:
   - minimap2
 update_on:
-  - source: pypi
-    pypi: mappy
-  - alias: python
+  - source: github
+    github: lh3/minimap2
+    use_latest_release: true
+    prefix: 'v'
