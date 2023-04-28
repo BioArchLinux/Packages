@@ -3,7 +3,7 @@
 basename=beast
 pkgname=('beast' 'beastgen' 'pibuss' 'coalgen' 'phylogeography' 'tempest' )
 pkgver=1.10.4
-pkgrel=0
+pkgrel=1
 arch=('x86_64')
 url="http://beast.community/"
 license=('LGPL')
