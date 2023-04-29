@@ -2,7 +2,7 @@
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
 pkgname=minimap2
-pkgver=2.25
+pkgver=2.26
 pkgrel=1
 pkgdesc='A versatile pairwise aligner for genomic and spliced nucleotide sequences. https://doi.org/10.1093/bioinformatics/bty191'
 arch=('x86_64')
@@ -11,7 +11,7 @@ license=('MIT')
 depends=(zlib)
 provides=()
 source=("${pkgver}.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('9742ff0be01e51ea7d65f70c01d1344eee6f0d7b135359e0c00aec30fb74ac38')
+sha256sums=('f4c8c3459c7b87e9de6cbed7de019b48d9337c2e46b87ba81b9f72d889420b3c')
 build() {
   cd "${pkgname}-${pkgver}"
   make
