@@ -1,11 +1,10 @@
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=2023.01.13
-pkgrel=4
+pkgver=2023.03.08
+pkgrel=1
 # curl https://api.github.com/repos/archlinuxcn/devtools/git/ref/tags/$pkgver-archlinuxcn1 | jq -r .object.sha
-_tag=4240649fc796e1262ff4158bda127eb34225f8c8
 _upstream_pkgrel=1
-pkgdesc='Tools for Arch Linux package maintainers, archlinuxcn fork'
+pkgdesc='Tools for Arch Linux package maintainers, bioarchlinux fork'
 arch=('any')
 license=('GPL')
 url='https://gitlab.archlinux.org/archlinux/devtools'
@@ -15,31 +14,19 @@ makedepends=('asciidoc')
 optdepends=('btrfs-progs: btrfs support')
 provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
-source=("$pkgname::git+https://github.com/archlinuxcn/devtools.git?signed#tag=$_tag"
-	"debug.patch")
-b2sums=('SKIP'
-        '939be7dc77f06aa08aac552cba28cc5f6204f3aec2a6267f967da88aba10e936cb44c6d1b45a1947f07f643c6acd390ede421dbad557ed237b916478cfc1249c')
-validpgpkeys=(
-  'E62545315B012B69C8C94A1D56EC201BFC794362'  # https://github.com/yan12125
-)
-
+source=("$pkgname::git+https://github.com/archlinuxcn/devtools.git")
+b2sums=('SKIP')
 pkgver() {
   cd ${pkgname}
   printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
-}
-
-prepare() {
-  cd $pkgname
-  patch -np1 < $srcdir/debug.patch
 }
 
 build() {
   cd ${pkgname}
   make BUILDTOOLVER="${pkgver}-${_upstream_pkgrel}-${arch}" PREFIX=/usr
 }
-
 package() {
   cd ${pkgname}
   make PREFIX=/usr DESTDIR="${pkgdir}" install
+  sed -i "/^OPTION/s/ debug/ !debug/" $pkgdir/usr/share/devtools/makepkg-*.conf
 }
-
