@@ -48,5 +48,7 @@ package() {
 
     install -Dm 0644 "${srcdir}/maddy.sysusers" "${pkgdir}/usr/lib/sysusers.d/maddy.conf"
     install -Dm 0644 "${srcdir}/maddy.tmpfiles" "${pkgdir}/usr/lib/tmpfiles.d/maddy.conf"
+    # fix path
+    sed -i "s@/usr/local/bin@/usr/bin@g" $pkgdir/usr/lib/systemd/system/*.service
 }
 
