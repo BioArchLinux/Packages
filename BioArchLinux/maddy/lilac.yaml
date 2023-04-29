@@ -2,12 +2,13 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - source: github
     github: foxcpp/maddy
     use_max_tag: true
     prefix: 'v'
-#  - source: aur
-#    aur: maddy
-#pre_build: aur_pre_build
-#post_build: aur_post_build
