@@ -11,7 +11,7 @@ arch=('any')
 url="http://mesquiteproject.org"
 license=('LGPL')
 depends=('java-runtime=8')
-source=($pkgname-${pkgver: 0: 4}::https://github.com/MesquiteProject/MesquiteCore/releases/download/v${pkgver//_/-}/Mesquite.${pkgver: 0: 4}-Linux.tgz
+source=($pkgname-${pkgver: 0: 4}::https://github.com/MesquiteProject/MesquiteCore/releases/download/v${pkgver//_/-}/Mesquite_${pkgver: 0: 4}_Linux.tgz
         $pkgname.png
         $pkgname.desktop
 	$pkgname.sh
