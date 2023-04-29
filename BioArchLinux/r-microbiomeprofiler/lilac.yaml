@@ -9,6 +9,7 @@ repo_depends:
 - r-enrichplot
 - r-ggplot2
 - r-golem
+- r-gson
 - r-htmltools
 - r-magrittr
 - r-shiny

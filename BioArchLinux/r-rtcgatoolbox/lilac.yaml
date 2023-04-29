@@ -9,7 +9,6 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-httr
-- r-limma
 - r-raggedexperiment
 - r-rcircos
 - r-rcurl
@@ -19,7 +18,6 @@ repo_depends:
 - r-stringr
 - r-summarizedexperiment
 - r-tcgautils
-- r-xml
 update_on:
 - regex: RTCGAToolbox_([\d._-]+).tar.gz
   source: regex

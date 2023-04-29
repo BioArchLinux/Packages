@@ -5,5 +5,5 @@ maintainers:
 update_on:
 - regex: rama_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/rama
+  url: https://bioconductor.org/packages/3.16/rama
 - alias: r

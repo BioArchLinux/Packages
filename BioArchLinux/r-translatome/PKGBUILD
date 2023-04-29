@@ -4,7 +4,7 @@ _pkgname=tRanslatome
 _pkgver=1.36.0
 pkgname=r-${_pkgname,,}
 pkgver=1.36.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Comparison between multiple levels of gene expression'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -22,7 +22,6 @@ depends=(
   r-org.hs.eg.db
   r-plotrix
   r-rankprod
-  r-sigpathway
   r-topgo
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

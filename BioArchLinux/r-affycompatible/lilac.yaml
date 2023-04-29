@@ -9,5 +9,5 @@ repo_depends:
 update_on:
 - regex: AffyCompatible_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/AffyCompatible
+  url: https://bioconductor.org/packages/3.16/AffyCompatible
 - alias: r

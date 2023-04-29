@@ -4,7 +4,7 @@ _pkgname=LACE
 _pkgver=2.2.0
 pkgname=r-${_pkgname,,}
 pkgver=2.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Longitudinal Analysis of Cancer Evolution (LACE)'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,8 +21,10 @@ depends=(
   r-doparallel
   r-dplyr
   r-dt
+  r-forcats
   r-foreach
   r-fs
+  r-ggplot2
   r-htmltools
   r-htmlwidgets
   r-igraph
@@ -43,6 +45,7 @@ depends=(
   r-stringi
   r-stringr
   r-summarizedexperiment
+  r-svglite
   r-tidyr
 )
 optdepends=(

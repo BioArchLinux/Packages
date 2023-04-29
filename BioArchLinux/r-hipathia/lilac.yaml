@@ -6,14 +6,21 @@ repo_depends:
 - r-annotationhub
 - r-coin
 - r-delayedarray
+- r-dplyr
+- r-ggplot2
+- r-ggpubr
 - r-igraph
 - r-limma
 - r-matrixstats
+- r-metbrewer
 - r-multiassayexperiment
 - r-preprocesscore
+- r-reshape2
 - r-s4vectors
 - r-servr
 - r-summarizedexperiment
+- r-tibble
+- r-visnetwork
 update_on:
 - regex: hipathia_([\d._-]+).tar.gz
   source: regex

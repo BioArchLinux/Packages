@@ -5,7 +5,7 @@ _pkgname=esATAC
 _pkgver=1.20.0
 pkgname=r-${_pkgname,,}
 pkgver=1.20.0
-pkgrel=1
+pkgrel=2
 pkgdesc='An Easy-to-use Systematic pipeline for ATACseq data analysis'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -49,6 +49,7 @@ depends=(
 optdepends=(
   r-bsgenome.hsapiens.ucsc.hg19
   r-org.hs.eg.db
+  r-prettydoc
   r-testthat
   r-txdb.hsapiens.ucsc.hg19.knowngene
   r-webshot

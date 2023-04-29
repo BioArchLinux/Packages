@@ -6,6 +6,7 @@ repo_depends:
 - r-annotationhub
 - r-curl
 - r-experimenthub
+- r-genomicranges
 update_on:
 - regex: biscuiteerData_([\d._-]+).tar.gz
   source: regex

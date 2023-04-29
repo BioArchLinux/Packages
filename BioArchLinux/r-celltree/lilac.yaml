@@ -13,5 +13,5 @@ repo_depends:
 update_on:
 - regex: cellTree_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/cellTree
+  url: https://bioconductor.org/packages/3.16/cellTree
 - alias: r

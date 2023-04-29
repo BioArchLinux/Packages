@@ -20,7 +20,6 @@ repo_depends:
 - r-ggrepel
 - r-iranges
 - r-mclust
-- r-reordercluster
 - r-reshape2
 - r-rsamtools
 - r-s4vectors

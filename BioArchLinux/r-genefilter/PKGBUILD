@@ -4,7 +4,7 @@ _pkgname=genefilter
 _pkgver=1.80.3
 pkgname=r-${_pkgname,,}
 pkgver=1.80.3
-pkgrel=2
+pkgrel=3
 pkgdesc='genefilter: methods for filtering genes from high-throughput experiments'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,7 +14,7 @@ depends=(
   r-annotate
   r-annotationdbi
   r-biobase
-  r-biocgenerics
+  r-matrixgenerics
 )
 optdepends=(
   r-all

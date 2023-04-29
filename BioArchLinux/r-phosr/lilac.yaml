@@ -24,6 +24,7 @@ repo_depends:
 - r-rlang
 - r-ruv
 - r-s4vectors
+- r-stringi
 - r-summarizedexperiment
 - r-tidyr
 update_on:

@@ -3,8 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biocfilecache
-- r-biocparallel
 - r-data.table
 - r-dplyr
 - r-dynamictreecut
@@ -19,9 +17,7 @@ repo_depends:
 - r-grimport
 - r-htmlwidgets
 - r-igraph
-- r-limma
 - r-plotly
-- r-rappdirs
 - r-reshape2
 - r-rsvg
 - r-s4vectors

@@ -6,7 +6,7 @@ repo_depends:
 - r-annotate
 - r-annotationdbi
 - r-biobase
-- r-biocgenerics
+- r-matrixgenerics
 update_on:
 - regex: genefilter_([\d._-]+).tar.gz
   source: regex

@@ -6,7 +6,6 @@ repo_depends:
 - r-biocsingular
 - r-delayedarray
 - r-glmpca
-- r-hdf5array
 - r-singlecellexperiment
 - r-summarizedexperiment
 update_on:

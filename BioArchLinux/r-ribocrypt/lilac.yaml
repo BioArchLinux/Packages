@@ -6,16 +6,29 @@ repo_depends:
 - r-biocgenerics
 - r-biocparallel
 - r-biostrings
+- r-bslib
 - r-data.table
 - r-dplyr
 - r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
+- r-htmlwidgets
+- r-httr
 - r-iranges
+- r-jsonlite
+- r-knitr
+- r-markdown
+- r-nglviewer
 - r-orfik
 - r-plotly
+- r-rcurl
 - r-rlang
+- r-shiny
+- r-shinycssloaders
+- r-shinyhelper
+- r-shinyjqui
+- r-stringr
 update_on:
 - regex: RiboCrypt_([\d._-]+).tar.gz
   source: regex

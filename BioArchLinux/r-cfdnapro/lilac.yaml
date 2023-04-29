@@ -4,6 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
+- r-bsgenome.hsapiens.ncbi.grch38
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.hsapiens.ucsc.hg38
 - r-dplyr
 - r-genomeinfodb
 - r-genomicalignments

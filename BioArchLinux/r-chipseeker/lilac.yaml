@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-aplot
 - r-biocgenerics
 - r-dplyr
 - r-enrichplot
@@ -16,10 +17,11 @@ repo_depends:
 - r-iranges
 - r-magrittr
 - r-plotrix
-- r-rcolorbrewer
 - r-rtracklayer
 - r-s4vectors
+- r-tibble
 - r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-yulab.utils
 update_on:
 - regex: ChIPseeker_([\d._-]+).tar.gz
   source: regex

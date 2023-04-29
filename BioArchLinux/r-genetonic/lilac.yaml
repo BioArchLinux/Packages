@@ -10,6 +10,7 @@ repo_depends:
 - r-colorspace
 - r-colourpicker
 - r-complexheatmap
+- r-complexupset
 - r-dendextend
 - r-deseq2
 - r-dplyr
@@ -19,6 +20,7 @@ repo_depends:
 - r-ggforce
 - r-ggplot2
 - r-ggrepel
+- r-ggridges
 - r-go.db
 - r-igraph
 - r-matrixstats
@@ -38,7 +40,6 @@ repo_depends:
 - r-tippy
 - r-viridis
 - r-visnetwork
-- r-complexupset
 update_on:
 - regex: GeneTonic_([\d._-]+).tar.gz
   source: regex

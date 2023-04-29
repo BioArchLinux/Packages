@@ -29,5 +29,5 @@ repo_depends:
 update_on:
 - regex: TCGAbiolinksGUI_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/TCGAbiolinksGUI
+  url: https://bioconductor.org/packages/3.16/TCGAbiolinksGUI
 - alias: r

@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biostrings
 - r-shiny
+- r-stringr
 update_on:
 - regex: sangerseqR_([\d._-]+).tar.gz
   source: regex

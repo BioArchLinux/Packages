@@ -4,9 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bcellviper
+- r-decoupler
 - r-dplyr
 - r-magrittr
-- r-viper
 update_on:
 - regex: dorothea_([\d._-]+).tar.gz
   source: regex

@@ -3,11 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biocgenerics
+- r-biocparallel
+- r-biocsingular
 - r-delayedarray
 - r-delayedmatrixstats
 - r-gdsfmt
-- r-iranges
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment

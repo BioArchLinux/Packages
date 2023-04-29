@@ -14,6 +14,7 @@ repo_depends:
 - r-msstatsconvert
 - r-msstatstmt
 - r-rcpp
+- r-stringi
 - r-stringr
 update_on:
 - regex: MSstatsPTM_([\d._-]+).tar.gz

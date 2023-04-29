@@ -8,7 +8,6 @@ repo_depends:
 - r-rcpparmadillo
 - r-rcppparallel
 - r-seqarray
-- r-spatest
 update_on:
 - regex: SAIGEgds_([\d._-]+).tar.gz
   source: regex

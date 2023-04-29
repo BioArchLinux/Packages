@@ -4,7 +4,7 @@ _pkgname=singleCellTK
 _pkgver=2.8.0
 pkgname=r-${_pkgname,,}
 pkgver=2.8.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Comprehensive and Interactive Analysis of Single Cell RNA-Seq Data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -30,11 +30,11 @@ depends=(
   r-dplyr
   r-dropletutils
   r-dt
+  r-eds
   r-enrichr
   r-ensembldb
   r-experimenthub
   r-fields
-  r-fishpond
   r-ggplot2
   r-ggplotify
   r-ggrepel
@@ -86,6 +86,7 @@ depends=(
   r-vam
   r-withr
   r-yaml
+  r-zellkonverter
   r-zinbwave
 )
 optdepends=(

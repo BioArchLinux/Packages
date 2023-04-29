@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-go.db
 - r-gseabase
 - r-multtest
 update_on:

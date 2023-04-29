@@ -7,8 +7,11 @@ repo_depends:
 - r-dplyr
 - r-genefilter
 - r-generics
+- r-ggplot2
+- r-ggpubr
 - r-multiassayexperiment
 - r-ranger
+- r-reshape2
 - r-rlang
 - r-s4vectors
 - r-tidyr

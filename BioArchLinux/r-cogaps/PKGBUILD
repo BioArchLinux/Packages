@@ -4,7 +4,7 @@ _pkgname=CoGAPS
 _pkgver=3.18.0
 pkgname=r-${_pkgname,,}
 pkgver=3.18.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Coordinated Gene Activity in Pattern Sets'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,13 @@ depends=(
   r
   r-bh
   r-biocparallel
+  r-biomart
+  r-dplyr
+  r-fgsea
+  r-forcats
+  r-ggplot2
   r-gplots
+  r-msigdbr
   r-rcolorbrewer
   r-rcpp
   r-rhdf5

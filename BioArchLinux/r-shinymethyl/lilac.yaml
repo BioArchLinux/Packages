@@ -3,9 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biobase
 - r-biocgenerics
-- r-illuminahumanmethylation450kmanifest
-- r-matrixstats
+- r-htmltools
+- r-matrixgenerics
 - r-minfi
 - r-rcolorbrewer
 - r-shiny

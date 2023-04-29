@@ -9,5 +9,5 @@ repo_depends:
 update_on:
 - regex: flowCL_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/flowCL
+  url: https://bioconductor.org/packages/3.16/flowCL
 - alias: r

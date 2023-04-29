@@ -7,5 +7,5 @@ repo_depends:
 update_on:
 - regex: bridge_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/bridge
+  url: https://bioconductor.org/packages/3.16/bridge
 - alias: r

@@ -11,6 +11,7 @@ repo_depends:
 - r-crayon
 - r-digest
 - r-doparallel
+- r-dorng
 - r-eulerr
 - r-foreach
 - r-getoptlong

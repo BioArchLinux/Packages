@@ -10,7 +10,6 @@ repo_depends:
 - r-magrittr
 - r-mixomics
 - r-plyr
-- r-propr
 - r-purrr
 - r-stringr
 - r-tibble

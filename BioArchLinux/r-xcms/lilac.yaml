@@ -11,6 +11,7 @@ repo_depends:
 - r-mscoreutils
 - r-msfeatures
 - r-msnbase
+- r-multtest
 - r-mzr
 - r-plyr
 - r-protgenerics

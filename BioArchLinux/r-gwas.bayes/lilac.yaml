@@ -4,13 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-caret
-- r-doparallel
 - r-ga
-- r-ggplot2
+- r-limma
 - r-memoise
-- r-rcpp
-- r-rcppeigen
-- r-reshape2
 update_on:
 - regex: GWAS.BAYES_([\d._-]+).tar.gz
   source: regex

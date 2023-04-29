@@ -4,7 +4,7 @@ _pkgname=multiGSEA
 _pkgver=1.8.2
 pkgname=r-${_pkgname,,}
 pkgver=1.8.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Combining GSEA-based pathway enrichment with multi omics data integration'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -16,6 +16,7 @@ depends=(
   r-fgsea
   r-graphite
   r-magrittr
+  r-metaboliteidmapping
   r-metap
   r-rappdirs
   r-rlang
@@ -23,7 +24,6 @@ depends=(
 optdepends=(
   r-biocstyle
   r-knitr
-  r-metaboliteidmapping
   r-org.bt.eg.db
   r-org.ce.eg.db
   r-org.cf.eg.db

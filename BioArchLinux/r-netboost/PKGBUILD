@@ -5,13 +5,18 @@ _pkgname=netboost
 _pkgver=2.6.1
 pkgname=r-${_pkgname,,}
 pkgver=2.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Network Analysis Supported by Boosting'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
+  bash
+  gzip
+  make
+  perl
   r
+  r-biocstyle
   r-colorspace
   r-dynamictreecut
   r-impute
@@ -19,10 +24,6 @@ depends=(
   r-rcpp
   r-rcppparallel
   r-wgcna
-  make
-  bash
-  perl
-  gzip
 )
 optdepends=(
   r-knitr

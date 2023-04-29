@@ -4,9 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-httr
+- r-jsonlite
 - r-limma
 - r-oligo
-- r-xml
+- r-rlang
 update_on:
 - regex: ArrayExpress_([\d._-]+).tar.gz
   source: regex

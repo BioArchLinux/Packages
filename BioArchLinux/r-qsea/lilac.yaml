@@ -15,6 +15,7 @@ repo_depends:
 - r-limma
 - r-rsamtools
 - r-rtracklayer
+- r-s4vectors
 - r-zoo
 update_on:
 - regex: qsea_([\d._-]+).tar.gz

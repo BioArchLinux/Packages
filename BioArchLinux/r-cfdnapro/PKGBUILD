@@ -4,7 +4,7 @@ _pkgname=cfDNAPro
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='cfDNAPro Helps Characterise and Visualise Whole Genome Sequencing Data from Liquid Biopsy'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -12,6 +12,9 @@ license=('GPL')
 depends=(
   r
   r-biocgenerics
+  r-bsgenome.hsapiens.ncbi.grch38
+  r-bsgenome.hsapiens.ucsc.hg19
+  r-bsgenome.hsapiens.ucsc.hg38
   r-dplyr
   r-genomeinfodb
   r-genomicalignments
@@ -28,8 +31,6 @@ depends=(
 )
 optdepends=(
   r-biocstyle
-  r-bsgenome.hsapiens.ucsc.hg19
-  r-bsgenome.hsapiens.ucsc.hg38
   r-devtools
   r-ggpubr
   r-knitr

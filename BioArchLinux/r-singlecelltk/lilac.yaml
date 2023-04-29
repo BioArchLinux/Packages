@@ -22,11 +22,11 @@ repo_depends:
 - r-dplyr
 - r-dropletutils
 - r-dt
+- r-eds
 - r-enrichr
 - r-ensembldb
 - r-experimenthub
 - r-fields
-- r-fishpond
 - r-ggplot2
 - r-ggplotify
 - r-ggrepel
@@ -78,6 +78,7 @@ repo_depends:
 - r-vam
 - r-withr
 - r-yaml
+- r-zellkonverter
 - r-zinbwave
 update_on:
 - regex: singleCellTK_([\d._-]+).tar.gz

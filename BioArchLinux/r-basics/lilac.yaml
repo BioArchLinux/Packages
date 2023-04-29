@@ -13,6 +13,7 @@ repo_depends:
 - r-ggplot2
 - r-hexbin
 - r-matrixstats
+- r-posterior
 - r-rcpp
 - r-rcpparmadillo
 - r-reshape2

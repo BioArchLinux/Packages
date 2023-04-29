@@ -28,5 +28,5 @@ repo_depends:
 update_on:
 - regex: sojourner_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/sojourner
+  url: https://bioconductor.org/packages/3.16/sojourner
 - alias: r

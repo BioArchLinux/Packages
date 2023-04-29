@@ -4,7 +4,7 @@ _pkgname=ideal
 _pkgver=1.22.0
 pkgname=r-${_pkgname,,}
 pkgver=1.22.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Interactive Differential Expression AnaLysis'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -51,6 +51,7 @@ optdepends=(
   r-biocstyle
   r-deformats
   r-edger
+  r-markdown
   r-org.hs.eg.db
   r-testthat
   r-txdb.hsapiens.ucsc.hg38.knowngene

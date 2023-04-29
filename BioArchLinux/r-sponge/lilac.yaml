@@ -4,32 +4,32 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-biomart
+- r-caret
+- r-complexheatmap
+- r-cvms
 - r-data.table
 - r-dorng
+- r-dplyr
 - r-expm
 - r-foreach
+- r-ggplot2
+- r-ggpubr
+- r-ggridges
 - r-glmnet
 - r-grbase
 - r-igraph
 - r-iterators
 - r-logging
-- r-ppcor
-- r-tidyverse
-- r-caret
-- r-dplyr
-- r-biomart
-- r-randomforest
-- r-ggridges
-- r-cvms
-- r-mirbaseconverter
-- r-complexheatmap
-- r-ggplot2
 - r-metbrewer
+- r-mirbaseconverter
+- r-ppcor
+- r-randomforest
 - r-rlang
-- r-tnet
-- r-ggpubr
 - r-stringr
 - r-tidyr
+- r-tidyverse
+- r-tnet
 update_on:
 - regex: SPONGE_([\d._-]+).tar.gz
   source: regex

@@ -3,11 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-data.table
 - r-delayedarray
 - r-httr
-- r-r6
 - r-rjson
-- r-s4vectors
 update_on:
 - regex: rhdf5client_(\d.+\d+.\d+).tar.gz
   source: regex

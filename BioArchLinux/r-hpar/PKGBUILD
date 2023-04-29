@@ -4,16 +4,20 @@ _pkgname=hpar
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
 pkgver=1.40.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Human Protein Atlas in R'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-experimenthub
 )
 optdepends=(
+  r-annotationdbi
   r-biocstyle
+  r-dplyr
+  r-dt
   r-go.db
   r-knitr
   r-org.hs.eg.db

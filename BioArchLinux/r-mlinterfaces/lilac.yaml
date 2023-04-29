@@ -6,7 +6,6 @@ repo_depends:
 - r-annotate
 - r-biobase
 - r-biocgenerics
-- r-summarizedexperiment
 - r-fpc
 - r-gbm
 - r-gdata
@@ -20,6 +19,7 @@ repo_depends:
 - r-rcpp
 - r-sfsmisc
 - r-shiny
+- r-summarizedexperiment
 - r-threejs
 update_on:
 - regex: MLInterfaces_([\d._-]+).tar.gz

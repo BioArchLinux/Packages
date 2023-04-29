@@ -14,5 +14,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/XCIR
+  url: https://bioconductor.org/packages/3.16/XCIR
 - alias: r

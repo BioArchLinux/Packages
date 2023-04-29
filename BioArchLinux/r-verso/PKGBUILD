@@ -4,7 +4,7 @@ _pkgname=VERSO
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
 pkgver=1.8.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Viral Evolution ReconStructiOn (VERSO)'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -12,6 +12,7 @@ license=('custom')
 depends=(
   r
   r-ape
+  r-data.tree
   r-rfast
 )
 optdepends=(

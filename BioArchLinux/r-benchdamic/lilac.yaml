@@ -15,6 +15,7 @@ repo_depends:
 - r-ggplot2
 - r-ggridges
 - r-limma
+- r-lme4
 - r-mast
 - r-metagenomeseq
 - r-mglm

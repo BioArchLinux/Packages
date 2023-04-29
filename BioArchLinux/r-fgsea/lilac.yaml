@@ -10,6 +10,7 @@ repo_depends:
 - r-fastmatch
 - r-ggplot2
 - r-rcpp
+- r-scales
 update_on:
 - regex: fgsea_([\d._-]+).tar.gz
   source: regex

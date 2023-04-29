@@ -8,6 +8,7 @@ repo_depends:
 - r-fgsea
 - r-graphite
 - r-magrittr
+- r-metaboliteidmapping
 - r-metap
 - r-rappdirs
 - r-rlang

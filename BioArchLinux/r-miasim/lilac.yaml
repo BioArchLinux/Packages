@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-desolve
-- r-gtools
 - r-matrixgenerics
 - r-powerlaw
 - r-s4vectors

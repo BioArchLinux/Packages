@@ -8,5 +8,5 @@ repo_depends:
 update_on:
 - regex: scMAGeCK_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/scMAGeCK
+  url: https://bioconductor.org/packages/3.16/scMAGeCK
 - alias: r

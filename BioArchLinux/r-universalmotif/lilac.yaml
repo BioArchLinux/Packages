@@ -7,6 +7,7 @@ repo_depends:
 - r-biostrings
 - r-ggplot2
 - r-iranges
+- r-matrixgenerics
 - r-rcpp
 - r-rcppthread
 - r-rlang

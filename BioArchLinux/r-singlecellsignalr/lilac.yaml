@@ -15,7 +15,6 @@ repo_depends:
 - r-pheatmap
 - r-rtsne
 - r-scran
-- r-simlr
 - r-stringr
 update_on:
 - regex: SingleCellSignalR_([\d._-]+).tar.gz

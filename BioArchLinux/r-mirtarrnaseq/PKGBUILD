@@ -4,7 +4,7 @@ _pkgname=mirTarRnaSeq
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=1.6.0
-pkgrel=4
+pkgrel=5
 pkgdesc='mirTarRnaSeq'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -16,12 +16,13 @@ depends=(
   r-corrplot
   r-data.table
   r-dplyr
+  r-ggplot2
   r-pheatmap
   r-pscl
   r-purrr
   r-r.utils
   r-reshape2
-  r-ggplot2
+  r-viridis
 )
 optdepends=(
   r-biocstyle

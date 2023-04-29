@@ -16,7 +16,6 @@ repo_depends:
 - r-rlang
 - r-s4vectors
 - r-scales
-- r-speedglm
 update_on:
 - regex: nullranges_([\d._-]+).tar.gz
   source: regex

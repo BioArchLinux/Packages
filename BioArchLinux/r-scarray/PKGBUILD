@@ -4,31 +4,32 @@ _pkgname=SCArray
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=1.6.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Large-scale single-cell RNA-seq data manipulation with GDS files'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-biocgenerics
+  r-biocparallel
+  r-biocsingular
   r-delayedarray
   r-delayedmatrixstats
   r-gdsfmt
-  r-iranges
   r-s4vectors
   r-singlecellexperiment
   r-summarizedexperiment
 )
 optdepends=(
+  r-biocgenerics
   r-hdf5array
   r-knitr
   r-markdown
-  r-matrix
   r-rhdf5
   r-rmarkdown
   r-runit
   r-scater
+  r-scuttle
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

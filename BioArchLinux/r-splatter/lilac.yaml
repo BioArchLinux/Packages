@@ -9,14 +9,14 @@ repo_depends:
 - r-crayon
 - r-edger
 - r-fitdistrplus
-- r-ggplot2
 - r-locfit
 - r-matrixstats
+- r-rlang
 - r-s4vectors
-- r-scales
-- r-scater
+- r-scuttle
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-withr
 update_on:
 - regex: splatter_([\d._-]+).tar.gz
   source: regex

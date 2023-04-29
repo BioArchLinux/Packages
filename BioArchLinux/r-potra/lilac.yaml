@@ -11,5 +11,5 @@ repo_depends:
 update_on:
 - regex: PoTRA_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/PoTRA
+  url: https://bioconductor.org/packages/3.16/PoTRA
 - alias: r

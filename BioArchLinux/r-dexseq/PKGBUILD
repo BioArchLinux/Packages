@@ -4,7 +4,7 @@ _pkgname=DEXSeq
 _pkgver=1.44.0
 pkgname=r-${_pkgname,,}
 pkgver=1.44.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Inference of differential exon usage in RNA-Seq'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -31,11 +31,14 @@ depends=(
 )
 optdepends=(
   r-biocstyle
+  r-genomicalignments
   r-genomicfeatures
   r-knitr
   r-parathyroidse
   r-pasilla
+  r-pasillabamsubset
   r-rmarkdown
+  r-roxygen2
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

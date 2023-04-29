@@ -4,13 +4,14 @@ _pkgname=BiocCheck
 _pkgver=1.34.3
 pkgname=r-${_pkgname,,}
 pkgver=1.34.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Bioconductor-specific package checks'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-biocfilecache
   r-biocmanager
   r-biocviews
   r-graph
@@ -23,7 +24,6 @@ optdepends=(
   r-biocgenerics
   r-biocstyle
   r-callr
-  r-codetoolsbioc
   r-devtools
   r-downloader
   r-jsonlite

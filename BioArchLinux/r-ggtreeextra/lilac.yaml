@@ -7,6 +7,7 @@ repo_depends:
 - r-ggnewscale
 - r-ggplot2
 - r-ggtree
+- r-magrittr
 - r-rlang
 - r-tidytree
 update_on:

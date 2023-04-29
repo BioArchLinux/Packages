@@ -12,6 +12,7 @@ repo_depends:
 - r-edger
 - r-genomicalignments
 - r-genomicfeatures
+- r-genomicfiles
 - r-genomicranges
 - r-iranges
 - r-rmysql

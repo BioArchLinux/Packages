@@ -5,12 +5,13 @@ _pkgname=BASiCS
 _pkgver=2.10.5
 pkgname=r-${_pkgname,,}
 pkgver=2.10.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Bayesian Analysis of Single-Cell Sequencing data'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
+  gcc
   r
   r-assertthat
   r-biobase
@@ -22,6 +23,7 @@ depends=(
   r-ggplot2
   r-hexbin
   r-matrixstats
+  r-posterior
   r-rcpp
   r-rcpparmadillo
   r-reshape2
@@ -31,13 +33,13 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-viridis
-  gcc
 )
 optdepends=(
   r-biocstyle
   r-knitr
   r-magick
   r-rmarkdown
+  r-scrnaseq
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

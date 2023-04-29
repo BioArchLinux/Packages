@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
+- r-data.tree
 - r-rfast
 update_on:
 - regex: VERSO_([\d._-]+).tar.gz

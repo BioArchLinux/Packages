@@ -5,7 +5,13 @@ maintainers:
 repo_depends:
 - r-bh
 - r-biocparallel
+- r-biomart
+- r-dplyr
+- r-fgsea
+- r-forcats
+- r-ggplot2
 - r-gplots
+- r-msigdbr
 - r-rcolorbrewer
 - r-rcpp
 - r-rhdf5

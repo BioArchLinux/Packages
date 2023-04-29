@@ -9,6 +9,7 @@ repo_depends:
 - r-ggplot2
 - r-gplots
 - r-gridextra
+- r-kableextra
 - r-knitr
 - r-plyr
 - r-reshape2

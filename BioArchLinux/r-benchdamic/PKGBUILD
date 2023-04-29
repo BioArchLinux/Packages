@@ -4,7 +4,7 @@ _pkgname=benchdamic
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Benchmark of differential abundance methods on microbiome data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -23,6 +23,7 @@ depends=(
   r-ggplot2
   r-ggridges
   r-limma
+  r-lme4
   r-mast
   r-metagenomeseq
   r-mglm

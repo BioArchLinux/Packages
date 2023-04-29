@@ -13,7 +13,6 @@ repo_depends:
 - r-matrixstats
 - r-rsamtools
 - r-s4vectors
-- r-scales
 - r-sparsematrixstats
 - r-squarem
 - r-summarizedexperiment

@@ -3,17 +3,21 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-batchelor
+- r-biocneighbors
 - r-biocparallel
 - r-biocsingular
+- r-cvtools
 - r-delayedarray
 - r-delayedmatrixstats
 - r-distr
 - r-igraph
 - r-m3drop
-- r-pdist
-- r-proxy
+- r-proxyc
 - r-ruv
 - r-s4vectors
+- r-scater
+- r-scran
 - r-singlecellexperiment
 - r-summarizedexperiment
 update_on:

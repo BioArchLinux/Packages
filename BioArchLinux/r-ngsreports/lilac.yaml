@@ -11,6 +11,7 @@ repo_depends:
 - r-forcats
 - r-ggdendro
 - r-ggplot2
+- r-jsonlite
 - r-lifecycle
 - r-lubridate
 - r-pander

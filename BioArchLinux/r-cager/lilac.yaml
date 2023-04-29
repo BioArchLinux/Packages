@@ -6,6 +6,7 @@ repo_depends:
 - r-biocgenerics
 - r-biocparallel
 - r-bsgenome
+- r-cagefightr
 - r-data.table
 - r-delayedarray
 - r-delayedmatrixstats

@@ -13,8 +13,10 @@ repo_depends:
 - r-doparallel
 - r-dplyr
 - r-dt
+- r-forcats
 - r-foreach
 - r-fs
+- r-ggplot2
 - r-htmltools
 - r-htmlwidgets
 - r-igraph
@@ -35,6 +37,7 @@ repo_depends:
 - r-stringi
 - r-stringr
 - r-summarizedexperiment
+- r-svglite
 - r-tidyr
 update_on:
 - regex: LACE_([\d._-]+).tar.gz

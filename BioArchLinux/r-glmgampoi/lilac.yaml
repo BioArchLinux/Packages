@@ -15,6 +15,7 @@ repo_depends:
 - r-rlang
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-vctrs
 update_on:
 - regex: glmGamPoi_([\d._-]+).tar.gz
   source: regex

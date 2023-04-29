@@ -4,24 +4,28 @@ _pkgname=scMerge
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=1.14.0
-pkgrel=2
+pkgrel=3
 pkgdesc='scMerge: Merging multiple batches of scRNA-seq data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-batchelor
+  r-biocneighbors
   r-biocparallel
   r-biocsingular
+  r-cvtools
   r-delayedarray
   r-delayedmatrixstats
   r-distr
   r-igraph
   r-m3drop
-  r-pdist
-  r-proxy
+  r-proxyc
   r-ruv
   r-s4vectors
+  r-scater
+  r-scran
   r-singlecellexperiment
   r-summarizedexperiment
 )
@@ -32,9 +36,9 @@ optdepends=(
   r-hdf5array
   r-knitr
   r-matrix
+  r-proxy
   r-rmarkdown
   r-scales
-  r-scater
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

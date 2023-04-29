@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-compositions
 - r-cowplot
 - r-dbscan
 - r-ggplot2
@@ -12,8 +13,8 @@ repo_depends:
 - r-igraph
 - r-mixtools
 - r-pheatmap
-- r-propr
 - r-randomforest
+- r-rcpp
 - r-reshape2
 - r-rhdf5
 - r-rlang

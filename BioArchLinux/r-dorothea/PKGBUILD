@@ -4,7 +4,7 @@ _pkgname=dorothea
 _pkgver=1.11.0
 pkgname=r-${_pkgname,,}
 pkgver=1.11.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Collection Of Human And Mouse TF Regulons'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -12,14 +12,15 @@ license=('GPL')
 depends=(
   r
   r-bcellviper
+  r-decoupler
   r-dplyr
   r-magrittr
-  r-viper
 )
 optdepends=(
   r-biobase
   r-biocstyle
   r-knitr
+  r-omnipathr
   r-pheatmap
   r-pkgdown
   r-rmarkdown
@@ -30,6 +31,7 @@ optdepends=(
   r-tibble
   r-tidyr
   r-utils
+  r-viper
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('9637ea3048e6d1768586e58f80a3ea926fe85cc3982878cb15cbd5a836a831b6')

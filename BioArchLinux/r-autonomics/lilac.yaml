@@ -7,8 +7,10 @@ repo_depends:
 - r-assertive
 - r-biocfilecache
 - r-biocgenerics
+- r-bit64
 - r-colorspace
 - r-data.table
+- r-dplyr
 - r-edger
 - r-ggplot2
 - r-ggrepel

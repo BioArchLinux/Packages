@@ -4,22 +4,22 @@ _pkgname=synlet
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
 pkgver=1.28.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Hits Selection for Synthetic Lethal RNAi Screen Data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-doby
-  r-dplyr
+  r-data.table
   r-ggplot2
   r-magrittr
+  r-patchwork
   r-rankprod
   r-rcolorbrewer
-  r-reshape2
 )
 optdepends=(
+  r-biocstyle
   r-knitr
   r-rmarkdown
   r-testthat

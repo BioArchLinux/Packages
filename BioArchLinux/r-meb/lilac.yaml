@@ -4,7 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-e1071
+- r-edger
+- r-scater
+- r-singlecellexperiment
 - r-summarizedexperiment
+- r-wrswor
 update_on:
 - regex: MEB_([\d._-]+).tar.gz
   source: regex

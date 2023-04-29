@@ -14,7 +14,6 @@ repo_depends:
 - r-org.hs.eg.db
 - r-plotrix
 - r-rankprod
-- r-sigpathway
 - r-topgo
 update_on:
 - regex: tRanslatome_([\d._-]+).tar.gz
