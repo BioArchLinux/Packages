@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=spatialHeatmap
-_pkgver=2.4.0
+_pkgver=2.6.0
 pkgname=r-${_pkgname,,}
-pkgver=2.4.0
-pkgrel=3
+pkgver=2.6.0
+pkgrel=1
 pkgdesc='spatialHeatmap'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -85,7 +85,7 @@ optdepends=(
   r-uwot
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f7e9eb606f654d75e701bbfa1295be2958fa8d92aa1892736d3b64b8adaf986b')
+sha256sums=('d38e32fce0bed54036e0c42fff0a67824846ef9bf198942e6dd3d177fee4970d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
