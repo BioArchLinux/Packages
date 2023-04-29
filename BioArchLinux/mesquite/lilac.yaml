@@ -13,4 +13,4 @@ update_on:
     github: MesquiteProject/MesquiteCore
     use_latest_release: true
     from_pattern: v(\d+)\.(\d+)-(\w+)(\d+)
-    to_pattern: \1\.\2_\3_\4
+    to_pattern: \1\.\2_\3\4
