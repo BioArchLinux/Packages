@@ -7,6 +7,7 @@ pkgdesc="build status site"
 arch=('x86_64')
 url="https://github.com/BioArchLinux/bioarchlinux-packages"
 depends=()
+epoch=1
 makedepends=('rust' 'git')
 optdepends=()
 provides=()
