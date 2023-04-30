@@ -9,7 +9,7 @@ arch=('x86_64')
 url="https://github.com/wikimedia/${_pkgname}"
 license=('WTFPL')
 depends=('mediawiki')
-makedepends=('git' 'make' 'php7')
+makedepends=('git' 'make' 'php')
 source=(git+https://github.com/wikimedia/${_pkgname}.git#branch=REL${pkgver})
 noextract=()
 sha256sums=('SKIP')

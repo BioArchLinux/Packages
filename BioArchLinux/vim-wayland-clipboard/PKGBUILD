@@ -1,0 +1,17 @@
+pkgname=vim-wayland-clipboard
+pkgver=0.2.1
+pkgrel=0
+pkgdesc="Integrate Vim's '+' register with the Wayland system clipboard"
+arch=('any')
+url='https://github.com/jasonccox/vim-wayland-clipboard'
+license=('MIT')
+depends=('vim' 'wl-clipboard')
+source=("https://github.com/jasonccox/vim-wayland-clipboard/archive/refs/tags/v${pkgver}.tar.gz")
+sha512sums=('28e979cf1aca5da6b2b31e15eecbd17883de291e7a2949b8bd2bfe7a18df953e4c52700d8de7131569ddff5983d1b2d0d854426632783a10fbe6c5b98842c2e5')
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  install -dm755 "$pkgdir/usr/share/vim/vimfiles"
+  find * -maxdepth 0 -type d -exec cp -R -t "$pkgdir/usr/share/vim/vimfiles" '{}' \+
+}
+
