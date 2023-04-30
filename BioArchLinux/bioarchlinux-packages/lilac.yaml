@@ -7,3 +7,5 @@ post_build_script: |
 update_on:
   - source: github
     github: imlonghao/archlinuxcn-packages
+    use_max_tag: true
+    prefix: 'v'
