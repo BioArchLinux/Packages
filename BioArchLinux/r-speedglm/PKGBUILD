@@ -3,7 +3,7 @@
 _pkgname=speedglm
 pkgname=r-${_pkgname,,}
 pkgver=0.3_4
-pkgrel=8
+pkgrel=9
 pkgdesc='Fitting Linear and Generalized Linear Models to Large Data Sets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

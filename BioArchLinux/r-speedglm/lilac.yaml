@@ -12,6 +12,6 @@ update_on:
   - source: github
     github: cran/speedglm
     use_max_tag: true
-    from_patter: '([\d.]+)-(\d+)'
-    to_patter: '\1_\2'
+    from_pattern: '([\d.]+)-(\d+)'
+    to_pattern: '\1_\2'
   - alias: r
