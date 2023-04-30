@@ -30,11 +30,11 @@ optdepends=(
   r-mapkldata
   r-runit
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tgz")
 sha256sums=('1aed8e328ff76451d5ff58f95e526871da121b5ce66a91154d415fd948c9425a')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tgz -l "${srcdir}"
 }
 
 package() {
