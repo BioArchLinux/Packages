@@ -1,0 +1,44 @@
+# Maintainer: Adrian Perez de Castro <aperez@igalia.com>
+pkgname=wayfire
+pkgver=0.8.0.20230421.164628
+pkgrel=0
+pkgdesc="3D wayland compositor"
+arch=(x86_64)
+url=https://wayfire.org
+license=(custom:MIT)
+depends=(cairo pango wf-config libjpeg libinput wlroots lsof nlohmann-json seatd)
+makedepends=(meson ninja wayland-protocols glm cmake doctest pango git)
+conflicts=("${pkgname}-git")
+source=("git+https://github.com/WayfireWM/${pkgname}.git")
+sha256sums=('SKIP')
+
+pkgver () {
+    cd "$srcdir/wayfire"
+    printf "$(cat meson.build | grep '^\sversion:' | sed "s/'/ /g" | awk '{print $2}').%s" "$(TZ=UTC git log -1 --pretty='%cd' --date=format-local:%Y%m%d.%H%M%S)"
+}
+
+prepare(){
+	sed -i 's/{0.5, 0.5, 1, 0.5}/{0.35, 0.75, 1.00, 0.50}/g' $srcdir/$pkgname/plugins/common/wayfire/plugins/common/preview-indication.hpp #change base color
+	sed -i 's/{0.25, 0.25, 0.5, 0.8}/{0.40, 0.80, 1.00, 0.80}/g' $srcdir/$pkgname/plugins/common/wayfire/plugins/common/preview-indication.hpp #change bordor color
+}
+
+build() {
+	cd "$srcdir/wayfire"
+	arch-meson \
+        --buildtype=debug \
+        -Duse_system_wlroots=enabled \
+        -Duse_system_wfconfig=enabled \
+        -Dtests=disabled \
+        -Ddebug_ipc=false \
+        . \
+        build
+	ninja -C build
+}
+
+package() {
+        cd "$srcdir/wayfire"
+	DESTDIR="${pkgdir}/" ninja -C build install
+	install -Dm644 wayfire.desktop "${pkgdir}/usr/share/wayland-sessions/wayfire.desktop"
+	install -Dm644 wayfire.ini "${pkgdir}/usr/share/doc/${pkgname}/wayfire.ini"
+	install -Dm645 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

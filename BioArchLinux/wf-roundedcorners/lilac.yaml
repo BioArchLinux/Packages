@@ -1,0 +1,15 @@
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+build_prefix: extra-x86_64
+pre_build_script: |
+    update_pkgrel()
+    vcs_update()
+post_build_script: |
+    git_pkgbuild_commit()
+repo_depends:
+  - wayfire 
+update_on:
+  - source: git
+    git: https://git.malacology.net/malacology/wf-roundedcorners.git
+    use_commit: true

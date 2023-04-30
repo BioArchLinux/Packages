@@ -1,0 +1,33 @@
+pkgname=wf-roundedcorners
+pkgver=0.1.20220822.194228
+pkgrel=0
+pkgdesc="wayfire extension: roundedcorners"
+arch=(x86_64)
+url=https://git.malacology.net/malacology/wf-roundedcorners
+license=(MIT)
+depends=(wayfire)
+makedepends=(meson ninja pkg-config git cmake wayland-protocols glm)
+conflicts=("${pkgname}-git")
+provides=("${pkgname}")
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
+pkgver () {
+    cd "$srcdir/$pkgname"
+    printf "$(cat meson.build | grep '^\sversion:' | sed "s/'/ /g" | awk '{print $2}').%s" "$(TZ=UTC git log -1 --pretty='%cd' --date=format-local:%Y%m%d.%H%M%S)"
+}
+
+build() {
+	rm -rf build
+	arch-meson "${pkgname}" build
+	ninja -C build
+}
+
+check () {
+	meson test -C build
+}
+
+package() {
+	DESTDIR="${pkgdir}" ninja -C build install
+}
+

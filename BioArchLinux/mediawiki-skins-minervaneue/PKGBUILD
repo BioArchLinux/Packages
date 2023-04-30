@@ -1,0 +1,21 @@
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=mediawiki-skins-minervaneue
+_pkgname=mediawiki-skins-MinervaNeue
+_pkg=MinervaNeue
+pkgver=1_39
+pkgrel=0
+pkgdesc="a responsive mobile-first skin for your mediawiki instance"
+arch=('x86_64')
+url="https://github.com/wikimedia/mediawiki-skins-MinervaNeue"
+license=('GPL')
+depends=('mediawiki')
+makedepends=('git')
+optdepends=()
+source=(git+https://github.com/wikimedia/${_pkgname}.git#branch=REL${pkgver})
+noextract=()
+sha256sums=('SKIP')
+
+package() {
+  install -dm755 "$pkgdir"/usr/share/webapps/mediawiki/skins/MinervaNeue
+  mv "$srcdir"/"$_pkgname"/* "$pkgdir"/usr/share/webapps/mediawiki/skins/MinervaNeue
+}

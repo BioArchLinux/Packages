@@ -1,0 +1,32 @@
+# Maintainer: Adrian Perez de Castro <aperez@igalia.com>
+pkgname=wf-config
+pkgver=0.8.0.20221114.142343
+pkgrel=0
+pkgdesc="A library for managing configuration files, written for wayfire"
+arch=(x86_64)
+url=https://wayfire.org
+license=(custom:MIT)
+depends=(libevdev libxml2)
+makedepends=(meson ninja pkg-config wayland-protocols glm doctest cmake git)
+conflicts=("${pkgname}-git")
+source=("git+https://github.com/WayfireWM/${pkgname}.git")
+sha256sums=('SKIP')
+pkgver () {
+    cd "$srcdir/wf-config"
+    printf "$(cat meson.build | grep '^\sversion:' | sed "s/'/ /g" | awk '{print $2}').%s" "$(TZ=UTC git log -1 --pretty='%cd' --date=format-local:%Y%m%d.%H%M%S)"
+}
+build() {
+	rm -rf build
+	arch-meson "${pkgname}" build
+	ninja -C build
+}
+
+check () {
+	meson test -C build
+}
+
+package() {
+	DESTDIR="${pkgdir}" ninja -C build install
+	install -Dm644 "${pkgname}/LICENSE" \
+		"${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

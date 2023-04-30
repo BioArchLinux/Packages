@@ -1,0 +1,21 @@
+# Maintainer: Your Name <youremail@domain.com>
+pkgname=mediawiki-extensions-templatestyles
+_pkgname=mediawiki-extensions-TemplateStyles
+_pkg=TemplateStyles
+pkgver=1_39
+pkgrel=0
+pkgdesc="introduces a templatestyles tag mediawiki"
+arch=('x86_64')
+url="https://github.com/wikimedia/${_pkgname}"
+license=('GPL')
+depends=('mediawiki')
+makedepends=('git')
+optdepends=()
+source=(git+https://github.com/wikimedia/${_pkgname}.git#branch=REL${pkgver})
+noextract=()
+sha256sums=('SKIP')
+
+package() {
+  install -dm755 "$pkgdir"/usr/share/webapps/mediawiki/extensions/${_pkg}
+  mv "$srcdir"/"$_pkgname"/* "$pkgdir"/usr/share/webapps/mediawiki/extensions/${_pkg}/
+}
