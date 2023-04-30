@@ -1,6 +1,6 @@
 pkgname=vim-wayland-clipboard
 pkgver=0.2.1
-pkgrel=0
+pkgrel=1
 pkgdesc="Integrate Vim's '+' register with the Wayland system clipboard"
 arch=('any')
 url='https://github.com/jasonccox/vim-wayland-clipboard'
