@@ -1,7 +1,7 @@
 # Maintainer: Adrian Perez de Castro <aperez@igalia.com>
 pkgname=wayfire
 pkgver=0.8.0.20230421.164628
-pkgrel=0
+pkgrel=1
 pkgdesc="3D wayland compositor"
 arch=(x86_64)
 url=https://wayfire.org
