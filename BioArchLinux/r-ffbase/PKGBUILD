@@ -4,7 +4,7 @@ _pkgname=ffbase
 _pkgver=0.13.3
 pkgname=r-${_pkgname,,}
 pkgver=0.13.3
-pkgrel=5
+pkgrel=6
 pkgdesc="Basic Statistical Functions for Package 'ff'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,25 +15,25 @@ depends=(
   r-fastmatch
   r-ff
 )
-makedepends=(
-    tar
-    gzip
-)
+# makedepends=(
+#     tar
+#     gzip
+# )
 optdepends=(
   r-biglm
   r-laf
   r-parallel
   r-testthat
 )
-source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz"
-        "$pkgname.patch::https://patch-diff.githubusercontent.com/raw/edwindj/ffbase/pull/63.patch")
-sha256sums=('b3f61f80ba6851130247779786903d42a24ee5219aa24556c8470aece8a2e6b6'
-            '76012530bc00087701f3a3a4be592cc691cb05f494c0da3f11505abc9a23c251')
+source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('b3f61f80ba6851130247779786903d42a24ee5219aa24556c8470aece8a2e6b6')
 
 build() {
-  cd $srcdir/${_pkgname}_${_pkgver}
-  patch -Np1 < $srcdir/$pkgname.patch
-  tar -czf $_pkgname-$_pkgver.tar.gz *
+  cd $srcdir/${_pkgname}/src
+  # see https://github.com/edwindj/ffbase/pull/63
+  sed -i 's|Sint|int|g' grouprunningcumsum.c grouprunningcumsumindex.c
+  cd $srcdir
+  tar -czf $_pkgname-$_pkgver.tar.gz ${_pkgname}
   R CMD INSTALL ${_pkgname}-${_pkgver}.tar.gz -l "${srcdir}"
 }
 
