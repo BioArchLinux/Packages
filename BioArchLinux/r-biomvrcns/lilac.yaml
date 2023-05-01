@@ -8,7 +8,7 @@ repo_depends:
 - r-iranges
 - r-mvtnorm
 update_on:
-- regex: biomvRCNS_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/biomvRCNS
 - alias: r
