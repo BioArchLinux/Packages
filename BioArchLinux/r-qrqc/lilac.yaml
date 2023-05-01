@@ -13,7 +13,7 @@ repo_depends:
 - r-testthat
 - r-xtable
 update_on:
-- regex: qrqc_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/qrqc
 - alias: r
