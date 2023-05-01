@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-corpcor
 update_on:
-- regex: lfa_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/lfa
 - alias: r
