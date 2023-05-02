@@ -1,7 +1,7 @@
 # Maintainer: Mark Wagie <mark dot wagie at tutanota dot com>
 pkgname=tela-icon-theme
 pkgver=2023.02.03
-pkgrel=1
+pkgrel=0
 pkgdesc="A flat colorful design icon theme."
 arch=('any')
 url="https://github.com/vinceliuice/Tela-icon-theme"
