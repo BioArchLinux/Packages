@@ -2,7 +2,7 @@
 pkgname=tela-icon-theme
 pkgver=2023.02.03
 _pkgver=${pkgver//./-}
-pkgrel=0
+pkgrel=1
 pkgdesc="A flat colorful design icon theme."
 arch=('any')
 url="https://github.com/vinceliuice/Tela-icon-theme"
