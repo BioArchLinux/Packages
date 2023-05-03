@@ -21,5 +21,5 @@ prepare() {
 package() {
   cd "Tela-icon-theme-$_pkgver"
   install -d "$pkgdir/usr/share/icons"
-  ./install.sh -a -d "$pkgdir/usr/share/icons"
+  ./install.sh -a -d "$pkgdir/usr/share/icons" standard
 }
