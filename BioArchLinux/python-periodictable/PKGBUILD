@@ -2,7 +2,7 @@
 pkgname='python-periodictable'
 _pkgname='periodictable'
 pkgver=1.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Extensible periodic table of the elements"
 url="http://periodictable.readthedocs.org"
 arch=("any")
