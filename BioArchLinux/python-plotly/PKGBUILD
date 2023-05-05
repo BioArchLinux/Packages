@@ -40,9 +40,16 @@ makedepends=(
             )
 license=('MIT')
 arch=('any')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/plotly/plotly.py/archive/v${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/plotly/plotly.py/archive/v${pkgver}.tar.gz"
+	"compat-py3.11.patch")
 options=(!strip) # strip isn't useful for python files and takes forever
-sha256sums=('e1b58deb79a278e6ea7329c0dbcd0988d01688c101ec0d13b64f62e2ca2a8ad1')
+sha256sums=('e1b58deb79a278e6ea7329c0dbcd0988d01688c101ec0d13b64f62e2ca2a8ad1'
+            'cbe96a6ef3753d044740109b22062e9ae591f5d3b4f5994756db546072c92994')
+
+prepare() {
+    cd plotly.py-${pkgver}/
+    patch --forward --strip=0 --input="${srcdir}/compat-py3.11.patch"
+}
 
 build() {
   cd plotly.py-${pkgver}/packages/python/plotly
