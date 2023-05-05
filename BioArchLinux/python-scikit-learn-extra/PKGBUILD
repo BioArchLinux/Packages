@@ -20,6 +20,7 @@ makedepends=(
             'python-wheel'
             'python-setuptools-scm'
             'python-oldest-supported-numpy'
+            'cython'
             )
 options=(!emptydirs)
 source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
