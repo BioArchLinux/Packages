@@ -21,9 +21,9 @@ build() {
 }
 package() {
     cd $gitname-$pkgver
-    install -m 755 $pkgname.desktop ${pkgdir}/usr/share/applications/$pkgname.desktop
+    install -Dm 755 $pkgname.desktop ${pkgdir}/usr/share/applications/$pkgname.desktop
     sed -i "s@\$SPREAD/lib@/usr/share/spread@g" release/Linux/scripts/$pkgname
-    install -m 755 release/Linux/scripts/$pkgname $pkgdir/usr/bin/$pkgname
-    install -m 755 release/Linux/icons/$pkgname.png ${pkgdir}/usr/share/${pkgname}
-    install -m 755 dist/$pkgname.jar ${pkgdir}/usr/share/${pkgname}/${pkgname}.jar
+    install -Dm 755 release/Linux/scripts/$pkgname $pkgdir/usr/bin/$pkgname
+    install -Dm 755 release/Linux/icons/$pkgname.png ${pkgdir}/usr/share/${pkgname}/$pkgname.png
+    install -Dm 755 dist/$pkgname.jar ${pkgdir}/usr/share/${pkgname}/${pkgname}.jar
 }
