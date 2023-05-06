@@ -5,7 +5,7 @@ pkgname=spread
 gitname=SPREADv1
 pkgver=1.0.7
 _pkgver=${pkgver//./-}
-pkgrel=5
+pkgrel=6
 depends=('java-runtime=8')
 makedepends=('java-environment=8' 'ant' 'gendesk')
 pkgdesc="a user-friendly application to analyze and visualize phylogeographic reconstructions resulting from Bayesian inference of spatio-temporal diffusion. https://doi.org/10.1093/bioinformatics/btr481"
