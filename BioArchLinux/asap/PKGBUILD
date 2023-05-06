@@ -17,5 +17,5 @@ build() {
 
 package() {
   cd ASAP
-  install -Dm 755 $pkgname $pkgdir/bin/$pkgname 
+  install -Dm 755 $pkgname $pkgdir/usr/bin/$pkgname 
 }
