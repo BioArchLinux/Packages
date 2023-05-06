@@ -17,7 +17,7 @@ sha256sums=('bc59b28d645379b39e7f750ae1105c8e517284c85ddf591cde5eef9f1b1b4882')
 build() {
     cd $gitname-$pkgver
     ant jar
-    gendesk --pkgname "$bin" --pkgdesc "$pkgdesc" --exec="$pkgname" --icon="/usr/share/$pkgname/$pkgname.png"
+    gendesk --pkgname "$pkgname" --pkgdesc "$pkgdesc" --exec="$pkgname" --icon="/usr/share/$pkgname/$pkgname.png"
 }
 package() {
     cd $gitname-$pkgver
