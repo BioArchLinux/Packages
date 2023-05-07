@@ -1,13 +1,13 @@
 pkgname=groot
 pkgver=1.0.2
-pkgrel=0
+pkgrel=1
 arch=('any')
 url="https://github.com/fsquillace/groot"
 license=('GPL')
 groups=('junest-extra')
 depends=('coreutils')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
-md5sums=('SKIP')
+md5sums=('2b2efbab97d818cd120fc4d03d14a417')
 package() {
     cd "$srcdir/${pkgname}-${pkgver}"
     install -d -m 755 "${pkgdir}/usr/bin"
