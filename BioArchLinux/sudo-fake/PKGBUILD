@@ -5,6 +5,7 @@ pkgdesc="Simple script that bypasses sudo and execute the actual command. Useful
 arch=('any')
 url="https://github.com/fsquillace/junest-aur-repo/blob/master/pkgs/sudo-fake/"
 license=('GPL')
+conflicts=('sudo')
 groups=('junest-extra')
 depends=('fakeroot' 'fakechroot')
 package() {

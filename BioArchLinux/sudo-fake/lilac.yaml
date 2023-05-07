@@ -10,4 +10,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: "https://raw.githubusercontent.com/fsquillace/junest-aur-repo/master/pkgs/sudo-fake/PKGBUILD"
-    regex: 'versioin=([\d.]+\d+)'
+    regex: 'versioin=(\d+.\d+.\d+)'

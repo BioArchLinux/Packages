@@ -10,9 +10,8 @@ pkgdesc="chroot, mount --bind, and binfmt_misc without privilege/setup"
 arch=('i686' 'x86_64')
 url="https://proot-me.github.io/"
 license=('GPL')
-provides=('proot')
-depends=('talloc')
-makedepends=('python-docutils' 'libxslt')
+depends=('talloc' 'gcc-libs')
+makedepends=('python-docutils' 'libxslt' 'git')
 source=(${pkgname}-v${pkgver}.tar.gz::https://github.com/cedric-vincent/${_pkgname}/archive/v${pkgver}.tar.gz)
 sha256sums=('966afe32bf9a9d0e80836a8874d4dd829c51750060d9e0f30d330b1ed7eec8c2')
 
