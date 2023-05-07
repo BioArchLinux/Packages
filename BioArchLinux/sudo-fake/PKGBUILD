@@ -1,0 +1,42 @@
+pkgname=sudo-fake
+pkgver=0.1.3
+pkgrel=0
+pkgdesc="Simple script that bypasses sudo and execute the actual command. Useful for fakeroot environments."
+arch=('any')
+url="https://github.com/fsquillace/junest-aur-repo/blob/master/pkgs/sudo-fake/"
+license=('GPL')
+groups=('junest-extra')
+depends=('fakeroot' 'fakechroot')
+package() {
+    install -d -m 755 "${pkgdir}/usr/bin/"
+    cat <<EOF > "${pkgdir}/usr/bin/sudo"
+#!/bin/bash
+for opt in "\$@"
+do
+    case "\$1" in
+        --) shift ; break ;;
+        -*) shift ;;
+        *) break ;;
+    esac
+done
+export FAKEROOTDONTTRYCHOWN=true
+if [[ -n "\${@}" ]]
+then
+  if [[ \$FAKECHROOT == true ]]
+  then
+      fakechrootcmd=""
+  else
+      fakechrootcmd="fakechroot"
+  fi
+  if [[ -n \$FAKED_MODE ]]
+  then
+      fakerootcmd=""
+  else
+      fakerootcmd="fakeroot"
+  fi
+  \$fakechrootcmd \$fakerootcmd "\${@}"
+fi
+EOF
+    chmod 755 "${pkgdir}/usr/bin/sudo"
+}
+

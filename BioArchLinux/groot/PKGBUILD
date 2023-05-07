@@ -1,0 +1,16 @@
+pkgname=groot
+pkgver=1.0.2
+pkgrel=0
+arch=('any')
+url="https://github.com/fsquillace/groot"
+license=('GPL')
+groups=('junest-extra')
+depends=('coreutils')
+source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
+md5sums=('SKIP')
+package() {
+    cd "$srcdir/${pkgname}-${pkgver}"
+    install -d -m 755 "${pkgdir}/usr/bin"
+    install -m 755 "${srcdir}/${pkgname}-${pkgver}/bin/groot" ${pkgdir}/usr/bin/groot
+}
+
