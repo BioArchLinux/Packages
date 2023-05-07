@@ -7,6 +7,6 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
-update_on:
-  - source: cmd
-    cmd: curl -sS https://raw.githubusercontent.com/fsquillace/junest-aur-repo/master/pkgs/sudo-fake/PKGBUILD | grep 'version=' | sed 's@version=@@g'
+  - source: regex
+    url: "https://raw.githubusercontent.com/fsquillace/junest-aur-repo/master/pkgs/sudo-fake/PKGBUILD"
+    regex: 'pkgver=([\d.]+\d+)'
