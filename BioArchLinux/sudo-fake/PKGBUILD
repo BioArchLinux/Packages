@@ -11,6 +11,6 @@ depends=('fakeroot' 'fakechroot')
 source=('sudo-fake')
 sha256sums=('69cb8b290ca4849de2f6f20eb63e7c8a844c7d6e764e32e1d81bfc768c68958e')
 package() {
-    install -Dm 755 $srcdir/$pkgname "${pkgdir}/opt/$pkgname/bin/sudo"
+    install -Dm 755 $srcdir/$pkgname "${pkgdir}/usr/bin/sudo"
 }
 
