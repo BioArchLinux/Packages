@@ -7,14 +7,14 @@ groups=('junest-extra')
 pkgver=5.3.1
 pkgrel=2
 pkgdesc="chroot, mount --bind, and binfmt_misc without privilege/setup"
-arch=('i686' 'x86_64' 'aarch64')
+arch=('x86_64')
 url="https://proot-me.github.io/"
 license=('GPL')
 depends=('gcc-libs')
-source=("proot-x86_64"::"https://github.com/proot-me/proot/releases/download/v${pkgver}/proot-v${pkgver}-x86_64-static" "proot-arm"::"https://github.com/proot-me/proot/releases/download/v${pkgver}/proot-v${pkgver}-arm-static")
-md5sums=('857cff9536bf6491d5e05158fcc1b3f3' '60b7d7a0f9b32fe829dad3287c9497b5')
+source=("${_pkgname}"::'https://proot.gitlab.io/proot/bin/proot')
+sha1sums=('aa10c69e4c03240c5fcbc18f8a646a14090c6f73')
+
 package() {
-    echo "Installing proot static binaries"
-    install -d -m 755 "${pkgdir}/usr/bin/"
-    install -m 755 "${srcdir}/"${_pkgname}-* ${pkgdir}/usr/bin/
+	install -dm755 "${pkgdir}"/usr/bin
+	install -m755 ${srcdir}/${_pkgname} "${pkgdir}"/usr/bin
 }
