@@ -27,5 +27,3 @@ then
 
   $fakechrootcmd $fakerootcmd "${@}"
 fi
-
-

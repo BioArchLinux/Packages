@@ -16,5 +16,6 @@ sha1sums=('aa10c69e4c03240c5fcbc18f8a646a14090c6f73')
 
 package() {
 	install -dm755 "${pkgdir}"/usr/bin
-	install -m755 ${srcdir}/${_pkgname} "${pkgdir}"/usr/bin
+	install -m755 ${srcdir}/${_pkgname} "${pkgdir}"/usr/bin/$pkgname-x86_64
+	ln -s /usr/bin/$pkgname-x86_64 $pkgdir/usr/bin/$pkgname
 }
