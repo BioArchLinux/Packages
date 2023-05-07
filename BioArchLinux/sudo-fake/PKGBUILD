@@ -8,36 +8,8 @@ license=('GPL')
 conflicts=('sudo')
 groups=('junest-extra')
 depends=('fakeroot' 'fakechroot')
+source=("$pkganme")
 package() {
-    install -d -m 755 "${pkgdir}/opt/$pkgname/bin/"
-    cat <<EOF > "${pkgdir}/opt/$pkgname/bin/sudo"
-#!/bin/bash
-for opt in "\$@"
-do
-    case "\$1" in
-        --) shift ; break ;;
-        -*) shift ;;
-        *) break ;;
-    esac
-done
-export FAKEROOTDONTTRYCHOWN=true
-if [[ -n "\${@}" ]]
-then
-  if [[ \$FAKECHROOT == true ]]
-  then
-      fakechrootcmd=""
-  else
-      fakechrootcmd="fakechroot"
-  fi
-  if [[ -n \$FAKED_MODE ]]
-  then
-      fakerootcmd=""
-  else
-      fakerootcmd="fakeroot"
-  fi
-  \$fakechrootcmd \$fakerootcmd "\${@}"
-fi
-EOF
-    chmod 755 "${pkgdir}/opt/$pkgname/bin/sudo"
+    install -Dm 755 $srcdir/$pkgname "${pkgdir}/opt/$pkgname/bin/sudo"
 }
 
