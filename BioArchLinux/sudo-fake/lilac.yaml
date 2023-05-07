@@ -8,6 +8,5 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: regex
-    url: "https://raw.githubusercontent.com/fsquillace/junest-aur-repo/master/pkgs/sudo-fake/PKGBUILD"
-    regex: versioin=(\d+.\d+.\d+)
+  - source: cmd
+    cmd: curl -sS https://raw.githubusercontent.com/fsquillace/junest-aur-repo/master/pkgs/sudo-fake/PKGBUILD | grep 'version=' | sed 's@version=@@g'

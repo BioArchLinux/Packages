@@ -9,8 +9,8 @@ conflicts=('sudo')
 groups=('junest-extra')
 depends=('fakeroot' 'fakechroot')
 package() {
-    install -d -m 755 "${pkgdir}/usr/bin/"
-    cat <<EOF > "${pkgdir}/usr/bin/sudo"
+    install -d -m 755 "${pkgdir}/opt/$pkgname/bin/"
+    cat <<EOF > "${pkgdir}/opt/$pkgname/bin/sudo"
 #!/bin/bash
 for opt in "\$@"
 do
@@ -38,6 +38,6 @@ then
   \$fakechrootcmd \$fakerootcmd "\${@}"
 fi
 EOF
-    chmod 755 "${pkgdir}/usr/bin/sudo"
+    chmod 755 "${pkgdir}/opt/$pkgname/bin/sudo"
 }
 
