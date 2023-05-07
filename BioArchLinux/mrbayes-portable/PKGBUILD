@@ -10,7 +10,7 @@ pkgdesc="A program for the Bayesian estimation of phylogeny. https://doi.org/10.
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://nbisweden.github.io/MrBayes/"
-depends=('readline' 'gcc')
+depends=('readline' 'gcc-libs')
 source=(https://github.com/NBISweden/MrBayes/archive/v${pkgver}.tar.gz)
 sha256sums=('64da39c01f606d0413ce90a1dd3c1ce2cbdef4cbad99aee8a4b2391a2e8db244')
 
