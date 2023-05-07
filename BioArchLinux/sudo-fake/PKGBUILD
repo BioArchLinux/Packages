@@ -1,6 +1,6 @@
 pkgname=sudo-fake
 pkgver=0.1.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple script that bypasses sudo and execute the actual command. Useful for fakeroot environments."
 arch=('any')
 url="https://github.com/fsquillace/junest-aur-repo/blob/master/pkgs/sudo-fake/"
