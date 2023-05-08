@@ -2,7 +2,7 @@
 
 pkgname=any2fasta
 pkgver=0.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc="convert various sequence formats to FASTA"
 arch=('any')
 url="https://github.com/tseemann/any2fasta"
