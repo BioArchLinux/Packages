@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=httpuv
-_pkgver=1.6.9
+_pkgver=1.6.10
 pkgname=r-${_pkgname,,}
-pkgver=1.6.9
-pkgrel=2
+pkgver=1.6.10
+pkgrel=1
 pkgdesc='HTTP and WebSocket Server Library'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,7 +27,7 @@ optdepends=(
   r-websocket
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8d77f25b22fa7473b45007c2048e9a38d3792d59b2716e1fcdf9e99bd585d95d')
+sha256sums=('cd290fa9565a8a791d1ed4f4f08f0060e9fb5250bba9512646e7fd57224febf0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
