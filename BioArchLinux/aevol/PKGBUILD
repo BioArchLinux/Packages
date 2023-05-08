@@ -7,7 +7,7 @@ pkgdesc="an open-source digital genetics platform that captures the evolutionary
 arch=('x86_64')
 url="https://www.aevol.fr/"
 license=('GPL3')
-depends=('boost' 'glibc' 'gcc-libs' 'zlib' 'libx11')
+depends=('boost' 'boost-libs' 'glibc' 'gcc-libs' 'zlib' 'libx11' 'openblas' 'onetbb')
 makedepends=('cmake')
 source=("${pkgname}-${pkgver}.tar.gz::https://gitlab.inria.fr/aevol/aevol/-/archive/v5.0/aevol-v${pkgver}.tar.gz"
         'automake.patch')
@@ -24,7 +24,7 @@ prepare(){
 
 build() {
   cd "$pkgname-v$pkgver"
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr --with-blas --with-tbb --with-x
   make
   
 }
@@ -32,5 +32,4 @@ build() {
 package() {
   cd "$pkgname-v$pkgver"
   make DESTDIR="${pkgdir}"/ install
-
 }
