@@ -3,13 +3,14 @@
 _pkgname=speedglm
 pkgname=r-${_pkgname,,}
 pkgver=0.3_4
-pkgrel=10
+pkgrel=11
 pkgdesc='Fitting Linear and Generalized Linear Models to Large Data Sets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-biglm
 )
 source=("${_pkgname}-${pkgver}.tar.gz::https://github.com/cran/${_pkgname}/archive/refs/tags/${pkgver//_/-}.tar.gz")
 sha256sums=('f1f38689d562babbd9d701631608509476c0ff2a34384478c6512b29f00fa767')

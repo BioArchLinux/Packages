@@ -1,44 +1,32 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: sukanka <su975853527@gmail.com>
 
-_pkgname=amplican
-_pkgver=1.21.0
+_pkgname=S4Arrays
+_pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=1.21.0
-pkgrel=2
-pkgdesc='Automated analysis of CRISPR experiments'
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Foundation of array-like containers in Bioconductor'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('GPL')
+license=('Artistic2.0')
 depends=(
   r
   r-biocgenerics
-  r-biocparallel
-  r-biostrings
-  r-data.table
-  r-dplyr
-  r-genomeinfodb
-  r-genomicranges
-  r-ggplot2
-  r-ggthemes
-  r-gridextra
-  r-gtable
+  r-crayon
   r-iranges
-  r-knitr
-  r-matrixstats
-  r-rcpp
-  r-rmarkdown
   r-s4vectors
-  r-shortread
-  r-stringr
-  r-waffle
 )
 optdepends=(
+  r-biocparallel
   r-biocstyle
-  r-genomicalignments
+  r-delayedarray
+  r-knitr
+  r-rmarkdown
+  r-sparsearray
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0a622cba7517e899c563e0de641dfdc58578a371c38bb6d4076308a5dd1e1d79')
+sha256sums=('5a0e9d7bdf9fecc2408c8a2c3b90cc40acb617714c15bba85bd361c1d06fcb16')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

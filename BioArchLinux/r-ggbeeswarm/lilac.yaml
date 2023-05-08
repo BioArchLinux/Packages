@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-beeswarm
+- r-cli
 - r-ggplot2
 - r-lifecycle
 - r-vipor

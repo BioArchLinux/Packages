@@ -4,7 +4,7 @@ _pkgname=profvis
 _pkgver=0.3.7
 pkgname=r-${_pkgname,,}
 pkgver=0.3.7
-pkgrel=3
+pkgrel=4
 pkgdesc='Interactive Visualizations for Profiling R Code'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,7 +12,10 @@ license=('GPL')
 depends=(
   r
   r-htmlwidgets
+  r-purrr
+  r-rlang
   r-stringr
+  r-vctrs
 )
 optdepends=(
   r-devtools

@@ -6,6 +6,7 @@ repo_depends:
 - r-biocgenerics
 - r-iranges
 - r-matrixgenerics
+- r-s4arrays
 - r-s4vectors
 update_on:
 - regex: DelayedArray_([\d._-]+).tar.gz

@@ -4,7 +4,7 @@ _pkgname=evaluate
 _pkgver=0.21
 pkgname=r-${_pkgname,,}
 pkgver=0.21
-pkgrel=1
+pkgrel=2
 pkgdesc='Parsing and Evaluation Tools that Provide More Details than the Default'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,9 @@ optdepends=(
   r-covr
   r-ggplot2
   r-lattice
+  r-rlang
   r-testthat
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('3178c99cee8917d7d128806d064d4fecce7845ed07f42e759dcc0adda89c22b9')
