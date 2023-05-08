@@ -51,6 +51,9 @@ You can use [docker](https://hub.docker.com/r/bioarchlinux/bioarchlinux) to use 
 ### ISO
 You can use ISO image via virtual machine software to use our repo, see [here](https://github.com/BioArchLinux/iso)
 
+### non-root Linux users
+You can use [junest](https://github.com/fsquillace/junest) BioArchLinux image to use our repo, see [here](https://github.com/BioArchLinux/junest-img)
+
 ## Citation
 
 > Zhang G. Hu Y. Drobot V. Staal J. Yi Y. Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux. F1000Research 11: 809. https://doi.org/10.7490/f1000research.1119039.1
