@@ -28,4 +28,6 @@ update_on:
 - regex: chromVAR_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/chromVAR
+- source: manual
+  manual: 1
 - alias: r

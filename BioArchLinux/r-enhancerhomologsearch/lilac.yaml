@@ -21,4 +21,6 @@ update_on:
 - regex: enhancerHomologSearch_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/enhancerHomologSearch
+- source: manual
+  manual: 1
 - alias: r

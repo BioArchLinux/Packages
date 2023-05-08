@@ -10,4 +10,9 @@ update_on:
 - regex: DirichletMultinomial_([\d._-]+).tar.gz
   source: regex
   url: https://bioconductor.org/packages/DirichletMultinomial
+- source: manual
+  manual: 1
 - alias: r
+- alias: alpm-lilac
+  alpm: gsl
+  strip_release: true
