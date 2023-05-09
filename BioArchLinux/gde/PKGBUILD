@@ -44,10 +44,11 @@ do
   install -Dm755 $pkg $pkgdir/usr/bin/$pkg
 done
   cd $srcdir/$_pkgbase-$pkgver/SUPPORT
-  for pkg in count findall lsadt Restriction sho_helix varpos Zuk_to_gen
+  for pkg in findall lsadt Restriction sho_helix varpos Zuk_to_gen
 do
   install -Dm755 $pkg $pkgdir/usr/bin/$pkg
 done
+  install -Dm755 count count-$pkgname
 
 }
 
