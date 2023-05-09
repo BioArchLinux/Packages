@@ -9,4 +9,4 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: cmd
-    cmd: curl -sS https://raw.githubusercontent.com/wrpearson/fasta36/v36.3.8/README.md | grep 'Changes in' | sed 's/-/ /g' | sed 's/\*\* /_/g' | sed 's/, /_/g' | head -n 1 | awk '{print $4}'
+    cmd: curl -sS https://raw.githubusercontent.com/wrpearson/fasta36/v36.3.8/README.md | grep 'Changes in' | head -n 1 | sed 's@-@ @g;s@\*\*@ @g;s/Jan/01/g;s/Feb/02/g;s/Mar/03/g;s/Apr/04/g;s/May/05/g;s/Jun/06/g;s/Jul/07/g;s/Aug/08/g;s/Sep/09/g;s/Oct/10/g;s/Nov/11/g;s/Dec/12/g;s@,@@g' | awk '{print $4,$6,$5}' | sed 's/ /./g'
