@@ -3,7 +3,7 @@
 
 pkgname=andi
 pkgver=0.14
-pkgrel=1
+pkgrel=2
 pkgdesc="program for estimating the evolutionary distance between closely related genomes"
 arch=('x86_64')
 url="https://github.com/EvolBioInf/andi"
