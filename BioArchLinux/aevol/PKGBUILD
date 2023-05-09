@@ -7,8 +7,8 @@ pkgdesc="an open-source digital genetics platform that captures the evolutionary
 arch=('x86_64')
 url="https://www.aevol.fr/"
 license=('GPL3')
-depends=('boost' 'boost-libs' 'glibc' 'gcc-libs' 'zlib' 'libx11')
-makedepends=('cmake')
+depends=('boost-libs' 'glibc' 'gcc-libs' 'zlib' 'libx11')
+makedepends=('boost' 'cmake')
 source=("${pkgname}-${pkgver}.tar.gz::https://gitlab.inria.fr/aevol/aevol/-/archive/v5.0/aevol-v${pkgver}.tar.gz"
         'automake.patch')
 b2sums=('fd056e9bfe272236ba3912584d5428fb2f08e34f89e57476297720c595910d24db4656d8bf0cecf1ba1aab58a3c9b1110eb35a7ff50c0c32e62c1f79873d799d'
