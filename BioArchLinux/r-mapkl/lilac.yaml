@@ -14,7 +14,7 @@ repo_depends:
 - r-parmigene
 - r-reactome.db
 update_on:
-- regex: mAPKL_([\d._-]+).tgz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/mAPKL
 - alias: r
