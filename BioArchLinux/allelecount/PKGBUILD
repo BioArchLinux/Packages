@@ -29,7 +29,7 @@ prepare(){
 build() {
 	cd ${_pkgname}-${pkgver}/c
 	export HTSLIB=/usr/lib
-	make prefix=/usr
+	make -j1 prefix=/usr
 }
 
 package() {
