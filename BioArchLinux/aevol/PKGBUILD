@@ -2,7 +2,7 @@
 
 pkgname=aevol
 pkgver=5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="an open-source digital genetics platform that captures the evolutionary process"
 arch=('x86_64')
 url="https://www.aevol.fr/"
