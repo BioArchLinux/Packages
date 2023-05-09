@@ -1,4 +1,5 @@
-# Maintainer:Bipin Kumar <kbipinkumar@pm.me>
+# Maintainer: Fabian Klötzl <fabian-aur@kloetzl.info>
+# Contributor:Bipin Kumar <kbipinkumar@pm.me>
 
 pkgname=andi
 pkgver=0.14
@@ -12,19 +13,22 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/EvolBioInf/andi/archive
 b2sums=('b866f0bf520ecec05e07c40b33c4937affd0b7ea354ea005fbf423cb5f4849772df117cb64d58eaeaca6cb4c57335c041cad90dc90ac58fca57cfe0b9af17cb8')
 
 prepare(){
-    cd "$pkgname-$pkgver"
+  cd "$pkgname-$pkgver"
   autoreconf -fi -Im4 
 }
 
 build() {
-  cd "$pkgname-$pkgver"
-  ./configure --prefix=/usr
+	cd "${pkgname}-${pkgver}"
+	# ./configure --prefix=/usr
+	./configure --prefix=/usr --enable-unit-tests --with-seed=123
   make
-  
 }
 
+check() {
+	cd "${pkgname}-${pkgver}"
+	make check
+}
 package() {
-  cd "$pkgname-$pkgver"
-  make DESTDIR="${pkgdir}"/ install
-
+	cd "${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install
 }
