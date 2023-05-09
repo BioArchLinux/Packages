@@ -6,8 +6,8 @@ repo_depends:
 - r-biocfilecache
 - r-data.table
 - r-genomicranges
+- r-httr
 - r-r.utils
-- r-rcurl
 - r-rtracklayer
 - r-s4vectors
 - r-sessioninfo
