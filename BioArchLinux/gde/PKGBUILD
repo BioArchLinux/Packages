@@ -48,7 +48,7 @@ done
 do
   install -Dm755 $pkg $pkgdir/usr/bin/$pkg
 done
-  install -Dm755 count count-$pkgname
+  install -Dm755 count $pkgdir/usr/bin/count-$pkgname
 
 }
 
