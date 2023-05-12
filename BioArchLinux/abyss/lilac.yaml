@@ -7,8 +7,10 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
+  update_aur_repo()
 repo_depends:
   - btllib
+  - samtools
 update_on:
   - source: github
     github: bcgsc/abyss
