@@ -21,7 +21,7 @@ build() {
   cd "${pkgname}-${pkgver}"
   ./autogen.sh
   ./configure --prefix=/usr --with-boost=/usr/lib --with-mpi=/usr/lib/openmpi --with-sparsehash=/usr/lib --without-sqlite --disable-werror
-  make 
+  make -j1
 }
 
 package() {
