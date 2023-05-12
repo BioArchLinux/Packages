@@ -58,6 +58,7 @@ depends=('r'
 "r-jaspmachinelearning"
 "r-jaspmetaanalysis"
 "r-jaspnetwork"
+"r-jasppower"
 "r-jaspprophet"
 "r-jaspreliability"
 "r-jaspsem"

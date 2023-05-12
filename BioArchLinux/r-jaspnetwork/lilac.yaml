@@ -10,6 +10,7 @@ repo_depends:
 - r-foreach
 - r-ggplot2
 - r-gtools
+- r-hdinterval
 - r-huge
 - r-isingsampler
 - r-jaspbase

@@ -9,6 +9,7 @@ repo_depends:
 - r-ggplot2
 - r-jaspbase
 - r-jaspgraphs
+- r-multibridge
 - r-plyr
 - r-stringr
 - r-vcd
