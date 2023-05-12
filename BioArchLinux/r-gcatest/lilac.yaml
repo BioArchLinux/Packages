@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-lfa
 update_on:
-- regex: gcatest_([\d._-]+).tar.gz
+- regex: <td>(\d+.\d+.\d+)</td>
   source: regex
   url: https://bioconductor.org/packages/gcatest
 - alias: r
