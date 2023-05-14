@@ -3,7 +3,7 @@
 pkgname=python-ncls
 _module=${pkgname#python-}
 pkgver=0.0.67
-pkgrel=2
+pkgrel=3
 pkgdesc="A wrapper for the nested containment list data structure"
 arch=('x86_64')
 url="https://github.com/biocore-ntnu/ncls"
@@ -23,13 +23,20 @@ makedepends=(
 
 options=(!emptydirs)
 source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz"
-        "LICENSE")
+        "LICENSE"
+        "cython3.patch")
 sha256sums=('fa3e673d60e97bb021a516287d74bb959870cf9d910ec82403b99c443d8f447e'
-            '48186409eb1721726d28884f40346a8380a893e95a50bef75584e2e9c2d4fcd5')
+            '48186409eb1721726d28884f40346a8380a893e95a50bef75584e2e9c2d4fcd5'
+            '174a620d7dce0952e9e657ff40f25e73f0f5a9e38c96fffc91ccbc20805a7ee4')
 
 prepare() {
     cp LICENSE "$_module-$pkgver"
+    cp cython3.patch "$_module-$pkgver"
     rm "$_module-$pkgver"/ncls/src/{fncls.c,ncls.c,ncls32.c}
+    # Set cython language_level to 3
+    cd "$_module-$pkgver"
+    patch -p1 < cython3.patch
+    
 }
 
 build() {
