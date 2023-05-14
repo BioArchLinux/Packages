@@ -4,7 +4,7 @@
 pkgname=artemis
 _pkgname=Artemis
 pkgver=18.2.0
-pkgrel=5
+pkgrel=6
 pkgdesc='A genome viewer and annotation tool that visualizes biological sequence features'
 arch=('x86_64')
 url=https://www.sanger.ac.uk/science/tools/"${pkgname}"
