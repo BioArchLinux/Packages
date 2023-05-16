@@ -13,4 +13,5 @@ update_on:
   - source: github
     github: SeleniumHQ/selenium
     use_latest_release: true
+    prefix: 'selenium-'
   - alias: python
