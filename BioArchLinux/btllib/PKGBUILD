@@ -15,15 +15,14 @@ prepare() {
   git submodule update --init --recursive
 }
 
-#build() {
-#  cd $srcdir/$pkgname
-#  arch-meson build \
-#  --buildtype      release
-#  ninja -C build
-#}
+build() {
+  cd $srcdir/$pkgname
+  arch-meson build \
+  --buildtype      release
+  ninja -C build
+}
 
 package() {
   cd $srcdir/$pkgname
-  ./compile --prefix=$pkgdir/usr
-#  DESTDIR="${pkgdir}" ninja -C build install
+  DESTDIR="${pkgdir}" ninja -C build install
 }
