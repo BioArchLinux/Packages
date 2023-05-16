@@ -15,3 +15,5 @@ update_on:
     github: WestHealth/pyvis
     use_latest_release: true
     prefix: 'v'
+  - alias: python
+  
