@@ -9,7 +9,7 @@ pkgdesc="Assembly By Short Sequences - a de novo, parallel, paired-end sequence 
 arch=("i686" "x86_64")
 url="https://github.com/bcgsc/abyss"
 license=("GPL3")
-depends=("openmpi" "make")
+depends=("openmpi" "make" "perl")
 makedepends=("boost" "sparsehash" "make" "btllib")
 optdepends=(
   'pigz: for parallel gzip'
@@ -21,7 +21,7 @@ sha512sums=('1853e2d4d577abf7d0e8ce70e944846e5ad67afcd1f0a1a4b9944047c7e8ebc1dbd
 build() {
   cd "${pkgname}-${pkgver}"
   ./autogen.sh
-  ./configure --prefix=/usr --with-boost=/usr/lib --with-mpi=/usr/lib/openmpi --with-sparsehash=/usr/lib --with-btllib=/usr/lib --without-sqlite --disable-werror
+  ./configure --prefix=/usr --with-boost=/usr/lib --with-mpi=/usr/lib/openmpi --with-sparsehash=/usr/lib --with-btllib=/usr --without-sqlite --disable-werror
   make
 }
 
