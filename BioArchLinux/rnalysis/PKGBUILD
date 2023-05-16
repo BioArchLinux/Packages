@@ -71,13 +71,12 @@ makedepends=(
              )
 
 source=(${_name}-${pkgver}.tar.gz::https://github.com/GuyTeichman/RNAlysis/archive/refs/tags/V"${pkgver}".tar.gz
-        'RNAlysis.svg')
+        )
 
 sha256sums=('7a6eae706ba43b0468241ef40fc77a1b7adf05e30a946290a65c86982387ce0d'
-            '4c2fbbcaeb012c14e12b4aa2d8c9c9b2f50107b3255c2f448aa8577e96fc754c')
+           )
 
 prepare() {
-    cp RNAlysis.svg "$_name-$pkgver"/
     cd "$_name-$pkgver"
     gendesk --exec='/usr/bin/rnalysis-gui' --pkgname "$_name" --pkgdesc "$_pkgdesc" -n --icon=RNAlysis --categories=Science
 }
@@ -100,6 +99,5 @@ package() {
     python -m installer --destdir="$pkgdir" dist/*.whl
     install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
     install -Dm644 RNAlysis.desktop -t "$pkgdir"/usr/share/applications/
-    install -Dm644 RNAlysis.svg -t "$pkgdir"/usr/share/pixmaps/
+    install -Dm644 docs/source/RNAlysis.svg -t "$pkgdir"/usr/share/pixmaps/
 }
-
