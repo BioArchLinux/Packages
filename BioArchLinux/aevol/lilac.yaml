@@ -14,5 +14,5 @@ update_on:
      host: gitlab.inria.fr
      use_max_tag: true
      include_regex: v\d\.\d(\.\d)?
-
-
+     prefix: 'v'
+     
