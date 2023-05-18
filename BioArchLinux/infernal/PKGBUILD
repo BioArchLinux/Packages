@@ -1,4 +1,5 @@
-# Maintainer: Bipin Kumar <kbipinkumar@pm.me>
+# Contributor: Bipin Kumar <kbipinkumar@pm.me>
+# Maintainer: Ronny Lorenz <ronny at tbi dot univie dot ac dot at>
 
 pkgname=infernal
 pkgver=1.1.4
@@ -7,21 +8,27 @@ pkgdesc="Tool for searching DNA sequence databases for RNA structure and sequenc
 arch=('x86_64')
 url="http://eddylab.org/infernal/"
 license=('BSD')
-depends=('glibc')
+depends=('glibc' 'gsl' 'openmpi')
+makedepends=('python')
 provides=('easel')
 source=("$pkgname-$pkgver.tar.gz::http://eddylab.org/infernal/infernal-$pkgver.tar.gz")
 sha256sums=('f9493c7dee9fbf25f6405706818883d24b9f5e455121a0662c96c8f0307f95fc')
 
 build() {
   cd "$pkgname-$pkgver"
-  ./configure --prefix="/usr"
+  ./configure --prefix="/usr" --with-gsl --enable-mpi --pdfdir=/usr/share/doc/${pkgname}
   make
 }
 
+check() {
+  cd "$pkgname-$pkgver"
+  make check
+
+}
 package() {
   cd "$pkgname-$pkgver"
   make DESTDIR="$pkgdir/" install
-  install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
+  install -Dm644 LICENSE -t ${pkgdir}/usr/share/licenses/${pkgname}
   cp Userguide.pdf "$pkgdir"/usr/share/doc/infernal
   cd easel
   make DESTDIR="$pkgdir/" install
