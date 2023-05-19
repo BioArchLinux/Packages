@@ -1,18 +1,16 @@
---- a/setup.py	2023-05-14 00:15:53.983680836 +0530
-+++ b/setup.py	2023-05-14 00:17:57.185420794 +0530
-@@ -63,12 +63,14 @@
-         "ncls.src.fncls", ["ncls/src/fncls.pyx", "ncls/src/fintervaldb.c"],
-         # define_macros=macros,
-         include_dirs=include_dirs)]
+--- a/setup.py	2023-05-19 08:59:27.619223728 +0530
++++ b/setup.py	2023-05-19 09:03:12.750132242 +0530
+@@ -28,10 +28,12 @@
+         include_dirs=include_dirs,
+     ),
+ ]
 +for e in extensions:
 +    e.cython_directives = {'language_level': "3"}
  
- # using setuptools to cythonize if cython not found
- # not recommended by cython docs, but still
- try:
-     from Cython.Build import cythonize
--    ext_modules = cythonize(extensions, language_level=2)
-+    ext_modules = cythonize(extensions, compiler_directives={'language_level' : "3"})
- except ImportError:
-     print()
-     print("Warning: Cannot compile with Cython. Using legacy build.")
+ from Cython.Build import cythonize
+ 
+-ext_modules = cythonize(extensions, language_level=2)
++ext_modules = cythonize(extensions, compiler_directives={'language_level' : "3"})
+ 
+ 
+ setup(ext_modules=ext_modules)
