@@ -1,7 +1,7 @@
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=2023.03.08
-pkgrel=2
+pkgver=2023.05.20
+pkgrel=0
 # curl https://api.github.com/repos/archlinuxcn/devtools/git/ref/tags/$pkgver-archlinuxcn1 | jq -r .object.sha
 _upstream_pkgrel=1
 pkgdesc='Tools for Arch Linux package maintainers, bioarchlinux fork'
@@ -28,5 +28,5 @@ build() {
 package() {
   cd ${pkgname}
   make PREFIX=/usr DESTDIR="${pkgdir}" install
-  sed -i "/^OPTION/s/ debug/ !debug/" $pkgdir/usr/share/devtools/makepkg-*.conf
+  sed -i "/^OPTION/s/ debug/ !debug/" $pkgdir/usr/share/devtools/makepkg.conf.d/*.conf
 }
