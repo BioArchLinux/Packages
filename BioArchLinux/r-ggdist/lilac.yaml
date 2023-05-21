@@ -3,11 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-distributional
 - r-dplyr
 - r-ggplot2
 - r-glue
-- r-hdinterval
 - r-numderiv
 - r-quadprog
 - r-rlang

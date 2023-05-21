@@ -16,13 +16,13 @@ repo_depends:
 - r-interactionset
 - r-iranges
 - r-plotrix
-- r-rcpp
 - r-rgraphviz
 - r-rhdf5
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
 - r-scales
+- r-strawr
 update_on:
 - regex: trackViewer_([\d._-]+).tar.gz
   source: regex

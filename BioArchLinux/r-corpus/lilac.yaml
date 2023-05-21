@@ -6,5 +6,5 @@ repo_depends:
 update_on:
   - regex: corpus_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=corpus
+    url: https://cran.r-project.org/src/contrib/Archive/corpus
   - alias: r

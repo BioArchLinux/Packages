@@ -9,7 +9,6 @@ repo_depends:
 - r-htmltools
 - r-htmlwidgets
 - r-igraph
-- r-influencer
 - r-magrittr
 - r-purrr
 - r-rcolorbrewer

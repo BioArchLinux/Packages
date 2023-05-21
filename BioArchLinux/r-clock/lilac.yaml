@@ -2,7 +2,9 @@ build_prefix: extra-x86_64
 maintainers:
   - github: sukanka
 repo_depends:
+  - r-cli
   - r-cpp11
+  - r-lifecycle
   - r-rlang
   - r-tzdb
   - r-vctrs

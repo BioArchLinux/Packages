@@ -5,14 +5,16 @@ _pkgname=clock
 _pkgver=0.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Date-Time Types and Tools'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-cli
   r-cpp11
+  r-lifecycle
   r-rlang
   r-tzdb
   r-vctrs
@@ -23,6 +25,7 @@ optdepends=(
   r-magrittr
   r-pillar
   r-rmarkdown
+  r-slider
   r-testthat
   r-withr
 )

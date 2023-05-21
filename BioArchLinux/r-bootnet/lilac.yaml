@@ -20,6 +20,7 @@ repo_depends:
   - r-snow
   - r-tibble
   - r-tidyr
+  - r-tidyselect
 update_on:
   - regex: bootnet_([\d._-]+).tar.gz
     source: regex

@@ -4,9 +4,9 @@ _pkgname=trackViewer
 _pkgver=1.36.1
 pkgname=r-${_pkgname,,}
 pkgver=1.36.1
-pkgrel=1
+pkgrel=2
 pkgdesc='A R/Bioconductor package with web interface for drawing elegant interactive tracks or lollipop plot to facilitate integrated analysis of multi-omics data'
-arch=('x86_64')
+arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
@@ -24,13 +24,13 @@ depends=(
   r-interactionset
   r-iranges
   r-plotrix
-  r-rcpp
   r-rgraphviz
   r-rhdf5
   r-rsamtools
   r-rtracklayer
   r-s4vectors
   r-scales
+  r-strawr
 )
 optdepends=(
   r-biocstyle
