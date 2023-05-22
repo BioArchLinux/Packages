@@ -18,5 +18,8 @@ build(){
   ./gradlew shadowJar
 }
 package() {
+  echo "java -jar /usr/share/$pkgname/picard.jar" >> $pkgname
+  chmod +x $pkgname
+  install -Dm 755 $pkgname $pkgdir/usr/bin/$pkgname
   install -Dm 755 $srcdir/$_pkgname/build/libs/picard.jar $pkgdir/usr/share/$pkgname/picard.jar
 }
