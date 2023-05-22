@@ -2,7 +2,7 @@
 
 pkgname=fastahack
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="utilities for indexing and sequence extraction from FASTA files"
 arch=('x86_64')
 url='https://github.com/ekg/fastahack'
