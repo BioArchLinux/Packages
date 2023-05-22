@@ -1,14 +1,14 @@
 # Maintainer: Guoyi Zhang <myname at malacology dot net>
 
 pkgname=asap
-pkgver=2023_02_14
-pkgrel=2
+pkgver=2023_05_22
+pkgrel=1
 pkgdesc='Assemble Species by Automatic Partitioning https://doi.org/10.1111/1755-0998.13281'
 arch=('x86_64')
 url='https://bioinfo.mnhn.fr/abi/public/asap/'
 license=('LGPL')
 source=("$url/last.tgz")
-sha1sums=('098766e0e44a0ba6d551bc584d2dd4742eb716ec')
+sha1sums=('40299215d80678949bfb54b7416f8f0468918762')
 
 build() {
   cd ASAP
