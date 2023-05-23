@@ -1,6 +1,6 @@
 pkgname=devtools-bio
-pkgver=2023.05.22
-pkgrel=2
+pkgver=2023.05.23
+pkgrel=1
 pkgdesc='Tools for BioArchLinux Community package maintainers'
 arch=('any')
 url='https://github.com/BioArchLinux/devtools-bio'
