@@ -1,5 +1,6 @@
 # Maintainer: Benjamin A. Shelton <zancarius at gmail _ com>
 # Submitter: Tusooa Zhu <tusooa at gmail _ com>
+# Contributor: Bipin Kumar <kbipinkumar@pm.me>
 # Source: https://github.com/zancarius/archlinux-pkgbuilds
 
 pkgname=bsdmainutils
@@ -13,42 +14,40 @@ source=(
     "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/${pkgname}/${pkgver}/bsdmainutils_${pkgver}.tar.xz"
     'archlinux-ncal.patch'
 )
-depends=('bash' 'libbsd' 'ncurses' 'glibc')
-makedepends=(gcc make patch quilt)
-sha256sums=(
-    '4d3d01e1793a35b1122d0dd00933002c383532d5708916d55594a3a1e9ea0723'
-    '42cb05d09b0cde67d3e1cfc9bd77885107d517b55969fc252671994ebaca1d8b'
-)
+depends=('libbsd' 'ncurses' 'glibc')
+makedepends=('gcc' 'make' 'patch' 'quilt')
+sha256sums=('4d3d01e1793a35b1122d0dd00933002c383532d5708916d55594a3a1e9ea0723'
+            '42cb05d09b0cde67d3e1cfc9bd77885107d517b55969fc252671994ebaca1d8b')
 
-build() {
-
-    # Make a fresh copy of the files we'll be mangling in case you need to rebuild the
-    # package.
-
-    if [ -d "${srcdir}/${pkgname}-work" ]
-    then
-        rm -r "${srcdir}/${pkgname}-work"
+prepare() {
+    # depending upon source deb archive two types of srcdir name can be generated. following script checks for either 
+    # and export approprate folder name as custom  variable  
+    if [ -d ${srcdir}/"${pkgname}-${pkgver}" ]; then
+        export _dir=${pkgname}-${pkgver}
+    else
+        export _dir=${pkgname}
     fi
 
-    cp -a "${srcdir}/${pkgname}" "${srcdir}/${pkgname}-work"
+    # Apply patches
 
-    cd "${srcdir}/${pkgname}-work"
+    cd ${_dir}
 
     QUILT_PATCHES='debian/patches' quilt push -a
     patch -Np1 -i ../archlinux-ncal.patch
 
     for i in col colcrt colrm column hexdump look ul ; do rm -rf "usr.bin/$i" ; done
 
-    # Remove the above line and uncomment this one if you wish to install the hd binary but
-    # read the warning below first.
-    #for i in col colcrt colrm column look ul ; do rm -rf usr.bin/"$i" ; done
+}
 
+build() {
+
+    cd ${_dir}
     make
 }
 
 package() {
 
-    cd "${srcdir}/${pkgname}-work"
+    cd ${_dir}
     make DESTDIR="${pkgdir}" install
 
     # If you *really* want the hd binary, you can uncomment the following to
@@ -61,8 +60,8 @@ package() {
     # /usr/share/calendar/debian.
     install -d "${pkgdir}/etc/calendar"
     # install -d "${pkgdir}/etc/calendar/debian"
-    install -Dm0644 "${srcdir}/${pkgname}-work/debian/calendars/default" "${pkgdir}/etc/calendar"
-    cp -a "${srcdir}/${pkgname}-work/usr.bin/calendar/calendars/"* "${pkgdir}/etc/calendar/"
+    install -Dm0644 "${srcdir}/${_dir}/debian/calendars/default" "${pkgdir}/etc/calendar"
+    cp -a "${srcdir}/${_dir}/usr.bin/calendar/calendars/"* "${pkgdir}/etc/calendar/"
 
     # Generate symlinks to language-specific calendars. If you don't want
     # these, simply remove the entries below.
