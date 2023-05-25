@@ -3,7 +3,7 @@
 
 pkgname=armadillo
 sfname=arma
-pkgver=12.2.0
+pkgver=12.4.0
 pkgrel=1
 pkgdesc="C++ library for linear algebra & scientific computing"
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(openblas lapack)
 makedepends=(cmake)
 source=("http://sourceforge.net/projects/${sfname}/files/${pkgname}-${pkgver}.tar.xz")
 
-sha256sums=('b0dce042297e865add3351dad77f78c2c7638d6632f58357b015e50edcbd2186')
+sha256sums=('9905282781ced3f99769b0e45a705ecb50192ca1622300707b3302ea167dc883')
 
 build() {
   cd "${pkgname}-${pkgver}"
