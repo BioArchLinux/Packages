@@ -10,4 +10,6 @@ post_build_script: |
 update_on:
 - source: github
   github: veusz/veusz
+  use_max_tag: true
+  prefix: 'veusz-'
 - alias: python
