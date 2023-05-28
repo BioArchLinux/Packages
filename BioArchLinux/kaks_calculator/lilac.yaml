@@ -6,5 +6,5 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: regex
-    url: https://ngdc.cncb.ac.cn/biocode/tools/1/releases/3.0
+    url: https://ngdc.cncb.ac.cn/biocode/tools/1/releases
     regex: <option value=\".*?\">(.*?)</option>
