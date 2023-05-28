@@ -7,4 +7,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: https://ngdc.cncb.ac.cn/biocode/tools/1/releases/3.0
-    regex: href=\"/biocode/tools/1/releases/(.*?)\"><strong>
+    regex: <option value=\".*?\">(.*?)</option>
