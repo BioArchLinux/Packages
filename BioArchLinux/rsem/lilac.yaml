@@ -1,0 +1,28 @@
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - samtools
+  - htslib
+  - bowtie2
+  - star
+  - hisat2
+  - r-ebseq
+  - r-catools
+  - r-blockmodeling
+  - r-gdata
+  - r-gplots
+  - r-gtools
+update_on:
+  - source: github
+    github: deweylab/RSEM
+    use_latest_release: true
+    prefix: 'v'
+  - alias: r
+

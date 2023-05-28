@@ -1,0 +1,180 @@
+Description: Use 2to3 to port to Python3
+Bug-Debian: https://bugs.debian.org/938415
+Author: Andreas Tille <tille@debian.org>
+Last-Update: Thu, 12 Sep 2019 11:26:11 +0200
+
+--- a/pRSEM/Gene.py
++++ b/pRSEM/Gene.py
+@@ -124,7 +124,7 @@ def constructGenesFromTranscripts(transc
+   genes = []
+   gene_dict_id = {}
+   for tr in transcripts:
+-    if gene_dict_id.has_key(tr.gene_id):
++    if tr.gene_id in gene_dict_id:
+       gene_dict_id[tr.gene_id].transcripts.append(tr)
+       tr.gene = gene_dict_id[tr.gene_id]
+     else:
+@@ -137,7 +137,7 @@ def constructGenesFromTranscripts(transc
+       gene_dict_id[tr.gene_id] = gene
+       tr.gene = gene
+ 
+-  map(lambda gene: gene.getStartEndTSSTESFromTranscripts(), genes);
++  list(map(lambda gene: gene.getStartEndTSSTESFromTranscripts(), genes));
+ 
+   return genes;
+ 
+--- a/pRSEM/Param.py
++++ b/pRSEM/Param.py
+@@ -98,7 +98,7 @@ class Param:
+ 
+ 
+   def __str__(self):
+-    ss = [ "%-33s %s\n" % (key, val) for (key, val) in self.argdict.items()] + \
++    ss = [ "%-33s %s\n" % (key, val) for (key, val) in list(self.argdict.items())] + \
+          [ "%-33s %s\n" % ('RSEM_temp_dir', self.temp_dir ) ] + \
+          [ "%-33s %s\n" % ('pRSEM_scr_dir', self.prsem_scr_dir) ]
+     return ''.join(ss)
+@@ -109,7 +109,7 @@ class Param:
+     import os
+     prm = cls()
+     prm.argdict = argdict
+-    for (key, val) in argdict.items():
++    for (key, val) in list(argdict.items()):
+       setattr(prm, key, val)
+ 
+     if prm.imd_name is not None:
+--- a/pRSEM/Prsem.py
++++ b/pRSEM/Prsem.py
+@@ -1,4 +1,4 @@
+-#!/bin/env python
++#!/usr/bin/python3
+ 
+ __doc__="""
+ 
+@@ -65,9 +65,9 @@ def buildTrainingSet(prm):
+   The order is required by rsem-run-gibbs so that prior can be assigned to
+   transcript correctly
+   """
+-  ogot_genes = filter(lambda g: len(g.transcripts) == 1 and
++  ogot_genes = [g for g in prm.genes if len(g.transcripts) == 1 and
+                                 (g.end - g.start + 1) >=
+-                                prm.TRAINING_GENE_MIN_LEN, prm.genes)
++                                prm.TRAINING_GENE_MIN_LEN]
+ 
+   trs = [tr for g in ogot_genes for tr in g.transcripts]
+ 
+@@ -127,7 +127,7 @@ def genPriorByCombinedTSSSignals(prm):
+   """
+   f_fout = open(prm.finfo_multi_targets, 'w')
+   f_fout.write("targetid\tfaln\tfftrs\n")
+-  for (tgtid, faln) in prm.targetid2fchipseq_alignment.items():
++  for (tgtid, faln) in list(prm.targetid2fchipseq_alignment.items()):
+     fftrs = prm.imd_name + '_prsem.' + tgtid + '.all_tr_features'
+     f_fout.write("%s\t%s\t%s\n" % (tgtid, faln, fftrs))
+   f_fout.close()
+--- a/pRSEM/Transcript.py
++++ b/pRSEM/Transcript.py
+@@ -41,7 +41,7 @@ class Transcript:
+     for (start, end) in self.exon_ranges:
+       s += " %d %d" % (start, end);
+     s += "\n";
+-    for key in self.gtf_attr.keys():
++    for key in list(self.gtf_attr.keys()):
+       for val in self.gtf_attr[key]:
+         s += '%s "%s"; ' % (key, val);
+     s = s.rstrip();
+@@ -58,7 +58,7 @@ class Transcript:
+     for feature_word in feature_words:
+       feature_word.lstrip();
+       (key, val) = feature_word.split();
+-      if not self.gtf_attr.has_key(key):
++      if key not in self.gtf_attr:
+         self.gtf_attr[key] = [];
+       self.gtf_attr[key].append(val.strip('"'));
+ 
+@@ -160,7 +160,7 @@ def readRSEMTI(fin):
+     tr.constructFromRSEMTI(lines[i*6+1:i*6+7]);
+     transcripts.append(tr);
+     if (i > 0) and (i % 20000 == 0):
+-      print "processed %d transcripts" % i;
++      print("processed %d transcripts" % i);
+ 
+   return transcripts;
+ 
+@@ -183,7 +183,7 @@ def quicklyReadRSEMTI(fin):
+     tr.quicklyConstructFromRSEMTI(lines[i*6+1:i*6+7]);
+     transcripts.append(tr);
+     if (i > 0) and (i % 20000 == 0):
+-      print "processed %d transcripts" % i;
++      print("processed %d transcripts" % i);
+ 
+   return transcripts;
+ 
+--- a/pRSEM/Util.py
++++ b/pRSEM/Util.py
+@@ -60,7 +60,7 @@ def runCommandAndGetOutput(*args, **kwar
+ 
+   try:
+     output = subprocess.check_output(str_args)
+-  except subprocess.CalledProcessError, e:
++  except subprocess.CalledProcessError as e:
+     sys.exit("\nExecution failed: %s\n" % e.output)
+ 
+   return output
+@@ -123,14 +123,14 @@ def runMPOverAList(nprocs, func, args):
+   if len(args[0]) > nprocs:
+     chunksize = len(args[0])/nprocs + 1
+   procs = []
+-  for i in xrange(nprocs):
++  for i in range(nprocs):
+     list_args = [args[0][chunksize*i:chunksize*(i+1)]] + args[1:] + [out_q]
+     p = mp.Process(target = func, args = tuple(list_args))
+     procs.append(p)
+     p.start()
+ 
+   dict_to_return = {}
+-  for i in xrange(nprocs):
++  for i in range(nprocs):
+     dict_to_return.update(out_q.get())
+ 
+   for p in procs:
+--- a/pRSEM/prsem-calculate-expression
++++ b/pRSEM/prsem-calculate-expression
+@@ -1,4 +1,4 @@
+-#!/bin/env python
++#!/usr/bin/python3
+ 
+ __doc__="""
+ 
+--- a/pRSEM/prsem-prepare-reference
++++ b/pRSEM/prsem-prepare-reference
+@@ -1,4 +1,4 @@
+-#!/bin/env python
++#!/usr/bin/python3
+ 
+ __doc__="""
+ 
+--- a/pRSEM/prsem-testing-procedure
++++ b/pRSEM/prsem-testing-procedure
+@@ -1,4 +1,4 @@
+-#!/bin/env python
++#!/usr/bin/python3
+ 
+ __doc__="""
+ 
+--- a/rsem-gff3-to-gtf
++++ b/rsem-gff3-to-gtf
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python3
+ 
+ # Copyright (c) 2016
+ # Bo Li (University of California, Berkeley)
+--- a/rsem-refseq-extract-primary-assembly
++++ b/rsem-refseq-extract-primary-assembly
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python3
+ 
+ from sys import argv, exit
+ 

@@ -1,0 +1,20 @@
+Author: Michael R. Crusoe <michael.crusoe@gmail.com>
+Description: accept the hardening flags
+--- rsem.orig/Makefile
++++ rsem/Makefile
+@@ -12,11 +12,11 @@
+ 
+ # Compilation variables
+ CXX = g++
+-CXXFLAGS = -std=gnu++98 -Wall -I. -I$(BOOST) -I$(SAMTOOLS)/$(HTSLIB)
+-CPPFLAGS =
++CXXFLAGS += -std=gnu++98 -Wall -I. -I$(BOOST) -I$(SAMTOOLS)/$(HTSLIB)
++CPPFLAGS ?=
+ 
+-LDFLAGS =
+-LDLIBS =
++LDFLAGS ?=
++LDLIBS ?=
+ 
+ # Installation variables
+ INSTALL = install

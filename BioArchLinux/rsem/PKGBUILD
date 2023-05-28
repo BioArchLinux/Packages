@@ -1,0 +1,57 @@
+# Maintainer:Bipin Kumar <kbipinkumar@pm.me>
+
+pkgname=rsem
+_pkgname=${pkgname^^}
+pkgver=1.3.3
+pkgrel=1
+pkgdesc="Accurate quantification of gene and isoform expression from RNA-Seq data by Expectation-Maximization"
+arch=('x86_64')
+url="http://deweylab.github.io/RSEM/"
+license=('GPL3')
+depends=('glibc' 'gcc-libs' 'perl' 'python' 'r' 'samtools' 'htslib' 'bowtie2' 'star' 'hisat2' 'r-ebseq')
+makedepends=('quilt' 'r-catools' 'r-blockmodeling' 'r-gdata' 'r-gplots' 'r-gtools')
+
+source=("${_pkgname}-${pkgver}.tar.gz::https://github.com/deweylab/RSEM/archive/refs/tags/v${pkgver}.tar.gz"
+        'use_packaged_samtools.patch'
+        '2to3.patch'
+        'series'
+        )
+
+b2sums=('86e3afb95e7c3c1bcc67e1a4050d5dd16665cc36dc5b7868977195e896414f8481762df23ace98835fc3412949b8f9a490d5b6d7de205fcfcf1c09a1c897e00b'
+        '471cdb20233ccb55d6806a607cbecc123f39cba810c2dbbae17e29c4ef7861364a646ff3a0f3154c160b7e07ddb2927116a1f1f277c128a3eafb226d4f72f80c'
+        '3a6be4eddd009c2f67d239971be31027028d76b03d9e2ad68898d2e82140c809609354f4a7ef09b0b126afdda07aa64249f6f9f9400e96b832cf5b4442a78503'
+        '2971f68f04f9721a84b31051104f68da17daa66d723e135805313d8152a6892dc9f20f818009000e60f3f3efbf18a8472ace23d2c44c0f28b4fab7b62893b2db')
+
+prepare(){
+
+    mkdir -p ${_pkgname}-${pkgver}/patches
+    cp *.patch ${_pkgname}-${pkgver}/patches
+    cp series ${_pkgname}-${pkgver}/patches
+    cd ${_pkgname}-${pkgver}
+    quilt push -a
+    sed -i 's/\/usr\/local/\/usr/g' Makefile
+    sed -i '4i LDFLAGS ?=' EBSeq/Makefile
+    sed -i 's|-O3|$(LDFLAGS) -O3|g' EBSeq/Makefile
+
+}
+
+build() {
+  cd ${_pkgname}-${pkgver}
+  export LDFLAGS="-Wl,-O2,--sort-common,--as-needed,-z,relro,-z,now"
+  make prefix="/usr"
+  make ebseq LDFLAGS="$LDFLAGS"
+}
+
+package() {
+  cd ${_pkgname}-${pkgver}
+  install -d 755 ${pkgdir}/usr/bin/
+  make DESTDIR="$pkgdir/" install
+  for bin in EBSeq/*
+    do [ -f "$bin" ] || continue
+    install -Dm755 "$bin" "$pkgdir"/usr/bin/${bin}
+  done
+  install -Dm755 rsem-control-fdr "$pkgdir"/usr/bin/rsem-control-fdr
+  install -Dm755 rsem-run-ebseq "$pkgdir"/usr/bin/rsem-run-ebseq
+  install -Dm755 rsem-generate-ngvector "$pkgdir"/usr/bin/rsem-generate-ngvector
+
+}
