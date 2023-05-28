@@ -1,0 +1,13 @@
+Description: Use d3.min.js from nodejs-d3
+
+--- a/lib/structure_tree.cpp.cmake	2023-05-27 21:06:55.545684100 +0530
++++ b/lib/structure_tree.cpp.cmake	2023-05-27 21:14:52.420258448 +0530
+@@ -45,7 +45,7 @@
+             << "   <head>\n"
+             << "    <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\">\n"
+             << "    <title>" << file_name << "</title>\n"
+-            << "    <script src=\"file://@PROJECT_SOURCE_DIR@/external/d3/d3.min.js\"></script>"
++            << "    <script src=\"file:///usr/lib/node_modules/d3/dist/d3.min.js\"></script>"
+             << "    <script src=\"http://d3js.org/d3.v2.js\"></script>\n"
+             << "    <style type=\"text/css\">\n"
+             << "      path { stroke: #000; stroke-width: 0.8; cursor: pointer; }\n"

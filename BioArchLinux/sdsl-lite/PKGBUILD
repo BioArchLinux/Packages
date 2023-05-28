@@ -1,0 +1,60 @@
+# Maintainer: Bipin Kumar <kbipinkumar@pm.me>
+# Contributor: alienzj <lovelornpig@gmail.com>
+
+pkgname=sdsl-lite
+_packager=vgteam
+pkgver=2.3.1
+pkgrel=1
+pkgdesc="Succinct Data Structure Library"
+arch=('i686' 'x86_64')
+url="https://github.com/vgteam/sdsl-lite"
+license=('GPL')
+depends=(
+        'libdivsufsort'
+        'nodejs-d3'
+        'glibc'
+        'gcc-libs'
+)
+makedepends=('cmake' 'quilt' 'doxygen')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/vgteam/sdsl-lite/archive/refs/tags/v${pkgver}-vgteam.tar.gz"
+        'CMakeLists.patch'
+        'sdsl.CMakeLists.patch'
+        'lib.CMakeLists.patch'
+        'use_packaged_d3.patch'
+        'series'
+)
+
+sha256sums=('1c41164a3c59ee3061e0b96cbc30dd43c55d45a03124ab4eac68bacd85c0a2c4'
+            '20aa5f3270afc1a0fa3bc65fdfa044927a6501e4e10e49341cf3cb1ed2103680'
+            'f7fa43df06965e9979e182c8a2784cf8efa288563ab794459a952a2614d606db'
+            '363104f6a8f908d0ba1cbbe7f0cd66d4134f54e08e661aef936745341fcef98a'
+            'b2707f3256e886cffb29ed67e54f9b8d9c8a0882617b377d07b011a2ff043b74'
+            'ffa04f5862ec24eed43d5b39f4f5f793420b0e0587e3847de5351e656c376c0b')
+
+
+prepare() {
+  mkdir -p "$pkgname-$pkgver-${_packager}"/patches
+  cp *.patch "$pkgname-$pkgver-${_packager}"/patches
+  cp series "$pkgname-$pkgver-${_packager}"/patches
+  cd "$pkgname-$pkgver-${_packager}"
+  if [[ -d build ]]; then
+      rm -rf build
+  fi
+  quilt push -a
+}
+
+build() {
+
+  cmake -B build -S "$pkgname-$pkgver-${_packager}" \
+        -DCMAKE_BUILD_TYPE='None' \
+        -DCMAKE_INSTALL_PREFIX='/usr' \
+        -DBUILD_DIVSUFSORT64='OFF' \
+        -Wno-dev
+    cmake --build build
+}
+
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+
+}

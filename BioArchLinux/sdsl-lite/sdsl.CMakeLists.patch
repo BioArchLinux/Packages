@@ -1,0 +1,11 @@
+--- a/include/sdsl/CMakeLists.txt	2023-05-27 21:01:34.624907551 +0530
++++ b/include/sdsl/CMakeLists.txt	2023-05-27 21:03:45.869781987 +0530
+@@ -11,7 +11,7 @@
+ 
+ foreach(hppFile ${hppFiles}) # copy each file
+ 	configure_file( "${CMAKE_CURRENT_SOURCE_DIR}/${hppFile}" "${CMAKE_CURRENT_BINARY_DIR}/${hppFile}" COPYONLY ) 
+-	install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${hppFile}" DESTINATION include/sdsl)
++	install(FILES "${CMAKE_CURRENT_BINARY_DIR}/${hppFile}" DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/sdsl")
+ #	MESSAGE(${hppFile})
+ endforeach(hppFile)
+ 

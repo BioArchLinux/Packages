@@ -1,0 +1,5 @@
+CMakeLists.patch
+sdsl.CMakeLists.patch
+lib.CMakeLists.patch
+use_packaged_d3.patch
+

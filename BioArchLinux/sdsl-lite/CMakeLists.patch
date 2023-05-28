@@ -1,0 +1,30 @@
+--- a/CMakeLists.txt	2023-05-27 20:49:20.443054336 +0530
++++ b/CMakeLists.txt	2023-05-27 20:54:26.158151939 +0530
+@@ -79,18 +79,7 @@
+   endif()
+ endif()
+ 
+-include(CheckSSE4_2)
+-if( BUILTIN_POPCNT )
+-  if( CMAKE_COMPILER_IS_GNUCXX )
+-    append_cxx_compiler_flags("-msse4.2 -march=native" "GCC" CMAKE_CXX_OPT_FLAGS)
+-  endif()
+-  if( CMAKE_COMPILER_IS_GNUCXX )
+-    append_cxx_compiler_flags("-msse4.2 -march=native" "CLANG" CMAKE_CXX_OPT_FLAGS)
+-  endif()
+-  if( CMAKE_COMPILER_IS_INTEL )
+-    append_cxx_compiler_flags("-msse4.2 -march=native" "INTEL" CMAKE_CXX_FLAGS)
+-  endif()
+-endif()
++include(GNUInstallDirs)
+ 
+ # check for demangle support to get pretty C++ class names
+ include(FindCxaDemangle)
+@@ -115,7 +104,6 @@
+     message(WARNING "git not found. Cloning of submodules will not work.")
+ endif()
+ 
+-add_subdirectory(external)
+ add_subdirectory(include)
+ add_subdirectory(lib)
+ 

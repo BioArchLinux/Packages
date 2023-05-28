@@ -1,0 +1,26 @@
+--- a/lib/CMakeLists.txt	2023-05-27 21:06:55.542350897 +0530
++++ b/lib/CMakeLists.txt	2023-05-27 21:09:37.299330628 +0530
+@@ -1,6 +1,5 @@
+ include_directories(#"${CMAKE_CURRENT_SOURCE_DIR}/../include"
+         "${CMAKE_CURRENT_BINARY_DIR}/../include"
+-        "${CMAKE_CURRENT_BINARY_DIR}/../external/libdivsufsort/include"
+         )
+ 
+ 
+@@ -11,12 +10,13 @@
+ 
+ set( sdsl_SRCS ${libFiles} ${headerFiles})
+ 
+-add_library( sdsl ${sdsl_SRCS} )
++add_library( sdsl_static ${sdsl_SRCS} )
++add_library( sdsl SHARED ${sdsl_SRCS} )
+ 
+ install(TARGETS sdsl
+         RUNTIME DESTINATION bin
+-        LIBRARY DESTINATION lib
+-        ARCHIVE DESTINATION lib)
++        LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
++        ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}")
+         
+ math(EXPR SOVERSION "${LIBRARY_VERSION_MAJOR}+1")
+ 
