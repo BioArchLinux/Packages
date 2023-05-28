@@ -5,5 +5,6 @@ build_prefix: extra-x86_64
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-- source: manual
-  manual: 3.0
+  - source: regex
+    url: https://ngdc.cncb.ac.cn/biocode/tools/1/releases/3.0
+    regex: href=\"/biocode/tools/1/releases/(.*?)\"><strong>
