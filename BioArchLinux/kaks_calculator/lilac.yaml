@@ -6,4 +6,4 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
 - source: manual
-  manual: 版本号
+  manual: 3.0
