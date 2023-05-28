@@ -8,8 +8,7 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-- source: github
-  github: veusz/veusz
-  use_max_tag: true
-  prefix: 'veusz-'
+- regex: class=\"Link--primary\">veusz-(.*?)</a></h2>
+  source: regex
+  url: https://github.com/veusz/veusz/tags
 - alias: python
