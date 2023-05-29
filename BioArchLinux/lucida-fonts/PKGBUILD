@@ -5,6 +5,7 @@ pkgrel=1
 pkgdesc="GDE fonts"
 arch=('any')
 url="https://github.com/starsareintherose/GDE"
+conflicts=('xorg-fonts-75dpi' 'xorg-fonts-100dpi')
 license=('custom')
 source=(https://archive.physionet.org/physiotools/xview/lucida-fonts.tar.gz)
 sha256sums=('32806b950308fa11a78686d24833678d4008080dab0da91e761639a2e3d16d3e')

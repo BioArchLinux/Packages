@@ -23,7 +23,7 @@ done
 
 package_gde(){
   pkgdesc="Genetic Data Environment"
-  depends=('gcc-libs' 'xorg-fonts-75dpi' 'xorg-fonts-100dpi' 'xorg-fonts-misc' 'readseq' 'lib32-libxview' 'xorg-xhost' 'xorg-mkfontscale' 'xorg-xset')
+  depends=('gcc-libs' 'lucida-fonts' 'xorg-fonts-misc' 'readseq' 'lib32-libxview' 'xorg-xhost' 'xorg-mkfontscale' 'xorg-xset')
   optdepends=('clustalv' 'cap2' 'phylip' 'zuker-gde')
 	  
   # install GDE	  
