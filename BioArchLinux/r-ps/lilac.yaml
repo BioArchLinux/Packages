@@ -1,9 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
 update_on:
-- regex: ps_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ps
+- source: cran
+  cran: ps
 - alias: r
+- source: manual
+  manual: 1
