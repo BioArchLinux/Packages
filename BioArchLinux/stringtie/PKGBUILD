@@ -9,7 +9,7 @@ pkgdesc="A fast and highly efficient assembler of RNA-Seq\
 url='https://ccb.jhu.edu/software/stringtie/index.shtml'
 arch=('x86_64')
 
-license=('Artistic2.0')
+license=('MIT')
 makedepends=('gcc' 'make' 'git')
 depends=('gcc-libs' 'zlib')
 
