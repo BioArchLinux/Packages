@@ -1,4 +1,5 @@
-# Maintainer: Roberto Rossini ("robymetallo") <roberto.rossini.9533@student.uu.se>
+# Maintainer: Guoyi Zhang <myname at malacology dot net>
+# Contributor: Roberto Rossini ("robymetallo") <roberto.rossini.9533@student.uu.se>
 
 pkgname=stringtie
 pkgver=2.2.1
