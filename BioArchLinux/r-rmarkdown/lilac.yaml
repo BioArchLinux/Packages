@@ -1,7 +1,6 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
 repo_depends:
 - r-bslib
 - r-evaluate
@@ -14,8 +13,12 @@ repo_depends:
 - r-tinytex
 - r-xfun
 - r-yaml
+- r-curl
+- r-shiny
+- r-testthat
 update_on:
-- regex: rmarkdown_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rmarkdown
+- source: cran
+  cran: rmarkdown
 - alias: r
+- source: manual
+  manual: 1
