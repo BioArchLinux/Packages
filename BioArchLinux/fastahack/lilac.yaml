@@ -13,3 +13,6 @@ update_on:
     github: ekg/fastahack
     use_latest_release: true
     prefix: 'v'
+  - source: manual
+    manual: 1
+    time_limit_hours: 3
