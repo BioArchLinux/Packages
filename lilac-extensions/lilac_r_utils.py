@@ -120,7 +120,8 @@ class Pkgbuild:
     ]
 
     def __init__(self):
-        output = run_protected(["/bin/bash", "-c", "source PKGBUILD && declare -p"])
+        cmd = ["/bin/bash", "-c", "source PKGBUILD && declare -p"]
+        output = run_protected(cmd, silent = True)
         # assume that variable values never contain newlines
         for line in output.splitlines():
             self._parse_line(line)
@@ -198,7 +199,7 @@ license_map = {
 
 def get_default_r_pkgs() -> set:
     """Get the set of R packages included in the R distribution itself"""
-    provides = pyalpm.Handle("/", PACMAN_DB_DIR).register_syncdb("extra", 0).get_pkg("r").provides
+    provides = pyalpm.Handle("/", str(PACMAN_DB_DIR)).register_syncdb("extra", 0).get_pkg("r").provides
     return { pr.split("=", 1)[0] for pr in provides }
 
 class CheckFailed(Exception):
