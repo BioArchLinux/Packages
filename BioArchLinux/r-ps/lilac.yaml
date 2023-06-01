@@ -6,4 +6,4 @@ update_on:
   cran: ps
 - alias: r
 - source: manual
-  manual: 1
+  manual: 2

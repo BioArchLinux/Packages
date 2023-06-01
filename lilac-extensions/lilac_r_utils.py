@@ -1,9 +1,10 @@
 from lilac2.const import PACMAN_DB_DIR
-from lilaclib import _G, edit_file, run_protected
+from lilaclib import edit_file, run_protected
 import pyalpm
 import tarfile
+from types import SimpleNamespace
 
-def r_update_pkgver_and_pkgrel():
+def r_update_pkgver_and_pkgrel(_G: SimpleNamespace):
     """
     Update _pkgver and pkgrel used in R packages.
 
@@ -320,7 +321,7 @@ all_checks = [
     check_arch,
 ]
 
-def r_check_pkgbuild(cfg: CheckConfig):
+def r_check_pkgbuild(_G: SimpleNamespace, cfg: CheckConfig):
     pkgbuild = Pkgbuild()
     cfg.default_r_pkgs = get_default_r_pkgs()
     errors = []
@@ -337,8 +338,8 @@ def r_check_pkgbuild(cfg: CheckConfig):
         errors = '\n'.join(errors)
         raise CheckFailed(f"Check failed:\n{errors}")
 
-def r_pre_build(**kwargs):
+def r_pre_build(_G: SimpleNamespace, **kwargs):
     cfg = CheckConfig(**kwargs)
-    r_update_pkgver_and_pkgrel()
+    r_update_pkgver_and_pkgrel(_G)
     run_protected(["updpkgsums"])
-    r_check_pkgbuild(cfg)
+    r_check_pkgbuild(_G, cfg)
