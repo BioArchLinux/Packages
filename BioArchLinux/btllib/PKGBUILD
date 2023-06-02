@@ -3,7 +3,7 @@
 
 pkgname=btllib
 pkgver=1.6.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Bioinformatics Technology Lab common code library https://doi.org/10.21105/joss.04720"
 arch=('x86_64')
 url="https://github.com/bcgsc/btllib"
