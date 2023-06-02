@@ -3,33 +3,30 @@
 # Contributor:  Eric Biggers <ebiggers3 at gmail dot com>
 
 pkgname=abyss
-pkgver=2.3.5
+pkgver=2.3.7
 pkgrel=1
 pkgdesc="Assembly By Short Sequences - a de novo, parallel, paired-end sequence assembler"
 arch=("i686" "x86_64")
 url="https://github.com/bcgsc/abyss"
 license=("GPL3")
-depends=("openmpi" "make" "perl")
-makedepends=("boost" "sparsehash" "make" "btllib")
+depends=("openmpi" "make" "sqlite" "perl")
+makedepends=("boost" "sparsehash" "btllib")
 optdepends=(
   'pigz: for parallel gzip'
   'samtools: for reading SAM files'
 )
 source=("$pkgname-$pkgver.tar.gz::https://github.com/bcgsc/abyss/archive/$pkgver.tar.gz")
-sha512sums=('1853e2d4d577abf7d0e8ce70e944846e5ad67afcd1f0a1a4b9944047c7e8ebc1dbdd8639b9d99d4b8ce5c84c8fa42638bb16bf02825e9c660bcac133662ec553')
+sha512sums=('71fe616724e61174d5034b91de9b0495b7c3d8cd2c3c88981048089003041bab6cad4ff608aac10bcb0846aaac047d73b9d6c2e1f52c0681ac351c5ef5a0831d')
 
 build() {
   cd "${pkgname}-${pkgver}"
   ./autogen.sh
-  ./configure --prefix=/usr --with-boost=/usr/lib --with-mpi=/usr/lib/openmpi --with-sparsehash=/usr/lib --with-btllib=/usr --without-sqlite --disable-werror
+  ./configure --prefix=/usr --with-mpi=/usr/lib/openmpi --disable-werror
   make
 }
 
 package() {
   cd "${pkgname}-${pkgver}"
-
   make DESTDIR="${pkgdir}" install
   install -Dm644 "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
-
-
