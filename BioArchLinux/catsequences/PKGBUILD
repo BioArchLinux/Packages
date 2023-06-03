@@ -1,8 +1,8 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=catsequences
 pkgver=1.4
-pkgrel=1
-pkgdesc="Tool for converting sequence formats"
+pkgrel=0
+pkgdesc="tool for concatenating multiple fasta alignments for supermatrix phylogenetic analyses"
 arch=('x86_64')
 url="https://github.com/ChrisCreevey/catsequences"
 license=('GPL')
