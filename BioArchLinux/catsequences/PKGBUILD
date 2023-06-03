@@ -1,0 +1,21 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=catsequences
+pkgver=1.4
+pkgrel=1
+pkgdesc="Tool for converting sequence formats"
+arch=('x86_64')
+url="https://github.com/ChrisCreevey/catsequences"
+license=('GPL')
+makedepends=('gcc')
+source=($url/archive/refs/tags/v${pkgver}.tar.gz)
+sha256sums=('b05b0914aaa5471b81cc7aa8920e8bad4b9516feff5bf1f511597d66a2779a16')
+build() {
+  cd "$pkgname-$pkgver"
+  gcc $pkgname.c -o $pkgname
+}
+
+
+package(){
+  cd "$pkgname-$pkgver"
+  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+}
