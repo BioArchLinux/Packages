@@ -1,0 +1,32 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname=python-pyexcel-ezodf
+_module=${pkgname#python-}
+pkgver=0.3.4
+pkgrel=1
+pkgdesc='A Python package to create/manipulate OpenDocumentFormat files'
+arch=(any)
+url="https://github.com/pyexcel/pyexcel-ezodf"
+license=('MIT')
+depends=(
+         'python'
+         'python-lxml'
+         'python-weakrefset'
+        )
+makedepends=(
+             'python-setuptools'
+             'python-installer'
+             'python-pytest-runner'
+            )
+source=("https://github.com/pyexcel/${_module}/archive/refs/tags/v${pkgver}.tar.gz")
+md5sums=('792949bc5b8abba9209f22ec9af15a41')
+
+build() {
+    cd "$_module-$pkgver"
+    python setup.py build
+}
+
+package() {
+    cd "$_module-$pkgver"
+    python setup.py install --root="$pkgdir/" --optimize=1 --skip-build
+}
