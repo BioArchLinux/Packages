@@ -1,0 +1,31 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname=python-weakrefset
+_module=${pkgname#python-}
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='A WeakSet class for storing objects using weak references'
+arch=(any)
+url="http://pypi.python.org/pypi/weakrefset"
+license=('BSD')
+depends=(
+         'python'
+        )
+makedepends=(
+             'python-setuptools'
+             'python-installer'
+             'python-pytest-runner'
+            )
+source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
+sha256sums=('1199c768153c2f4ac123f2a57e93a28185d843b09864ea3f4219d383d1cc16aa')
+
+build() {
+    cd "$_module-$pkgver"
+    sed -i 's/force_manifest/force-manifest/' setup.cfg
+    python setup.py build
+}
+
+package() {
+    cd "$_module-$pkgver"
+    python setup.py install --root="$pkgdir/" --optimize=1 --skip-build
+}
