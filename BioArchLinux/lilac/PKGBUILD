@@ -13,12 +13,12 @@ license=(GPL3)
 depends=(python git devtools nvchecker gnupg pid_children fakeroot bubblewrap pacman-contrib
          python-requests python-lxml python-yaml python-tomli python-tomli-w pyalpm
          python-structlog python-prctl)
+checkdepends=(python-pytest python-pytest-asyncio)
 makedepends=(python-setuptools-scm)
 optdepends=(
   'smtp-forwarder: for sending error reports'
   'python-sqlalchemy: for recording build results in a database'
 )
-checkdepends=(python-pytest)
 provides=("$_pkgname=$pkgver")
 conflicts=("$_pkgname")
 source=('git+https://github.com/archlinuxcn/lilac.git'
