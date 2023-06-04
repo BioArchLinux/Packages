@@ -4,7 +4,7 @@ import pyalpm
 import tarfile
 from types import SimpleNamespace
 
-def r_update_pkgver_and_pkgrel(_G: SimpleNamespace):
+def r_update_pkgver_and_pkgrel(newver: str):
     """
     Update _pkgver and pkgrel used in R packages.
 
@@ -19,14 +19,14 @@ def r_update_pkgver_and_pkgrel(_G: SimpleNamespace):
             if oldver is not None:
                 raise Exception("_pkgver is defined twice")
             oldver = line[len(ver_prefix):]
-            line = f"{ver_prefix}{_G.newver}"
+            line = f"{ver_prefix}{newver}"
         elif line.startswith(rel_prefix):
             if oldver is None:
                 raise Exception("pkgrel is defined before _pkgver")
             if oldrel is not None:
                 raise Exception("pkgrel is defined twice")
             oldrel = int(line[len(rel_prefix):])
-            newrel = oldrel + 1 if oldver == _G.newver else 1
+            newrel = oldrel + 1 if oldver == newver else 1
             line = f"{rel_prefix}{newrel}"
         print(line)
     if oldrel is None:
@@ -117,6 +117,7 @@ class Pkgbuild:
         "makedepends",
         "checkdepends",
         "optdepends",
+        "md5sums",
     ]
 
     def __init__(self):
@@ -310,6 +311,10 @@ def check_arch(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if pkg.arch != [expected]:
         raise CheckFailed(f"Wrong arch, expected {expected}")
 
+def check_md5sum(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
+    if pkg.md5sums[0] != cfg.md5sum:
+        raise CheckFailed(f"Wrong md5sum, expected {cfg.md5sum}")
+
 all_checks = [
     check_default_pkgs,
     check_depends,
@@ -320,13 +325,14 @@ all_checks = [
     check_license,
     check_pkgdesc,
     check_arch,
+    check_md5sum,
 ]
 
-def r_check_pkgbuild(_G: SimpleNamespace, cfg: CheckConfig):
+def r_check_pkgbuild(newver: str, cfg: CheckConfig):
     pkgbuild = Pkgbuild()
     cfg.default_r_pkgs = get_default_r_pkgs()
     errors = []
-    with tarfile.open(f"{pkgbuild._pkgname}_{_G.newver}.tar.gz", "r") as tar:
+    with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r") as tar:
         description = Description(tar, pkgbuild._pkgname)
         cfg.tar = tar
 
@@ -341,6 +347,9 @@ def r_check_pkgbuild(_G: SimpleNamespace, cfg: CheckConfig):
 
 def r_pre_build(_G: SimpleNamespace, **kwargs):
     cfg = CheckConfig(**kwargs)
-    r_update_pkgver_and_pkgrel(_G)
+    newver, md5sum = _G.newver.rsplit("#", 1)
+    cfg.md5sum = md5sum
+
+    r_update_pkgver_and_pkgrel(newver)
     run_protected(["updpkgsums"])
-    r_check_pkgbuild(_G, cfg)
+    r_check_pkgbuild(newver, cfg)
