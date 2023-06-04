@@ -11,3 +11,8 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: alpm
+  alpm: libxml2
+  repo: core
+  provided: libxml2.so
+  strip_release: true
