@@ -2,7 +2,7 @@
 # Contributors: https://aur.archlinux.org/account/f4bio
 pkgname=mkinitcpio-openswap
 pkgver=0.1.0
-pkgrel=3
+pkgrel=5
 pkgdesc="mkinitcpio hook to open swap at boot time"
 arch=(any)
 license=('unknown')
