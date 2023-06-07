@@ -1,12 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-commonmark
 - r-xfun
 update_on:
-- regex: markdown_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=markdown
+- source: rpkgs
+  pkgname: markdown
+  repo: cran
+  md5: true
 - alias: r
