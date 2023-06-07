@@ -1,11 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-xfun
+- r-testit
 update_on:
-- regex: highr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=highr
+- source: rpkgs
+  pkgname: highr
+  repo: cran
+  md5: true
 - alias: r
