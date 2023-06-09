@@ -5,6 +5,7 @@ repo_depends:
 - r-exactci
 - r-ssanv
 update_on:
-- regex: exact2x2_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=exact2x2
+- source: rpkgs
+  pkgname: exact2x2
+  repo: cran
+- alias: r
