@@ -4,7 +4,10 @@ maintainers:
 repo_depends:
 - r-ssanv
 - r-testthat
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
-- regex: exactci_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=exactci
+- source: rpkgs
+  pkgname: exactci
+  repo: cran
+- alias: r
