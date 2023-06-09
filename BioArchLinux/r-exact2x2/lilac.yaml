@@ -4,6 +4,8 @@ maintainers:
 repo_depends:
 - r-exactci
 - r-ssanv
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
 - source: rpkgs
   pkgname: exact2x2
