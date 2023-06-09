@@ -3,7 +3,21 @@ maintainers:
 - github: kiri2002
 repo_depends:
 - r-rcpp
+pre_build_script: |
+  for line in edit_file('PKGBUILD'):
+    if line.startswith('_pkgver='):
+      line = f'_pkgver={_G.newver}'
+    print(line)
+  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
-- regex: RProtoBuf_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=RProtoBuf
+- source: rpkgs
+  pkgname: rprotobuf
+  repo: cran
+- alias: r
+- source: alpm
+  alpm: protobuf
+  repo: extra
+  provided: libprotobuf.so
+  strip_release: true
