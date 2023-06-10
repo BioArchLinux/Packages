@@ -15,9 +15,6 @@ md5sums=('SKIP'
 
 prepare() {
   cd $srcdir/$pkgname
-  # fix lib issue
-  patch -p1 < $srcdir/rb.patch  
-
   git submodule update --init --recursive
   ./projects/meson/generate.sh
 }
