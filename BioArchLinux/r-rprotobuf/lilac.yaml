@@ -13,7 +13,7 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
 - source: rpkgs
-  pkgname: rprotobuf
+  pkgname: RProtoBuf
   repo: cran
 - alias: r
 - source: alpm
