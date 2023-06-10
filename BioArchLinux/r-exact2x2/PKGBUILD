@@ -1,0 +1,35 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+_pkgname=exact2x2
+_pkgver=1.6.8
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Exact Tests and Confidence Intervals for 2x2 Tables'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-exactci
+  r-ssanv
+)
+optdepends=(
+  r-exact
+  r-ggplot2
+  r-grid
+  r-gridextra
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('9717933a5baa86b242e1a611860f984f660c089c7b3f765fe14ca582a07b98f1')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

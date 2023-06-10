@@ -1,0 +1,32 @@
+# system requirements: ProtoBuf libraries and compiler version 3.3.0 orlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed.A C++17 compiler is required as well.
+# Maintainer: Kiri <kiri@vern.cc>
+
+_pkgname=RProtoBuf
+_pkgver=0.4.20
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="R Interface to the 'Protocol Buffers' 'API' (Version 2 or 3)"
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  protobuf
+  r
+  r-rcpp
+)
+optdepends=(
+  r-tinytest
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('e6608210d8077253cd0b09d16499f79ef8ce2de42365828a38848c615069bce0')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
