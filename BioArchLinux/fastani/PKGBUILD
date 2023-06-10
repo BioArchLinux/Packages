@@ -25,7 +25,7 @@ prepare() {
 build() {
   cd ${_pkgname}-${pkgver}
   ./configure --prefix=/usr --with-gsl=/usr
-  make
+  make -j1
 }
 
 package() {
