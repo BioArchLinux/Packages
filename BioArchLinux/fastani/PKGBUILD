@@ -3,7 +3,7 @@
 pkgname=fastani
 _pkgname=FastANI
 pkgver=1.33
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast alignment-free computation of whole-genome Average Nucleotide Identity (ANI).' 
 arch=(x86_64)
 url="https://github.com/ParBLiSS/FastANI"
