@@ -3,7 +3,7 @@
 pkgname=mashmap
 _pkgname=MashMap
 pkgver=3.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast approximate aligner for long DNA sequences' 
 arch=(x86_64)
 url="https://github.com/marbl/MashMap"
