@@ -11,6 +11,6 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
 - source: rpkgs
-  pkgname: pmcmr
+  pkgname: PMCMR
   repo: cran
 - alias: r
