@@ -10,8 +10,9 @@ post_build_script: |
   update_aur_repo()
 repo_depends:
   - htslib
-  - tabixpp
   - wfa2-lib
+repo_makedepends:
+  - tabixpp
 update_on:
   - source: github
     github: vcflib/vcflib
