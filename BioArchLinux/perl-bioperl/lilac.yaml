@@ -11,5 +11,6 @@ repo_depends:
   - perl-graph
   - perl-perlio-gzip
   - perl-set-scalar
-  - perl-test-weaken
   - perl-xml-dom
+repo_makedepends:
+  - perl-test-weaken
