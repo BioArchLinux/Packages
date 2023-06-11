@@ -13,8 +13,6 @@ depends=(
         )
 makedepends=(
              'python-setuptools'
-             'python-installer'
-             'python-pytest-runner'
             )
 source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
 sha256sums=('1199c768153c2f4ac123f2a57e93a28185d843b09864ea3f4219d383d1cc16aa')
