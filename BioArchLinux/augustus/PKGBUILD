@@ -8,8 +8,8 @@ pkgdesc="A eukaryotic gene prediction program"
 arch=('i686' 'x86_64')
 url="http://augustus.gobics.de/"
 license=('custom:Artistic-2.0')
-#depends=('bamtools'  'boost-libs' 'gsl' 'mysql++' 'sqlite' 'python' 'lpsolve' 'perl' 'htslib')
-#makedepends=('boost' 'suitesparse' 'samtools' )
+depends=('bamtools'  'boost-libs' 'gsl' 'mysql++' 'sqlite' 'python' 'lpsolve' 'perl' 'htslib')
+makedepends=('boost' 'suitesparse' 'samtools' )
 source=($pkgname-$pkgver.tar.gz::https://github.com/Gaius-Augustus/Augustus/archive/v$pkgver.tar.gz
 	"$pkgname.patch::https://github.com/Gaius-Augustus/Augustus/pull/395.patch")
 sha256sums=('5ed6ce6106303b800c5e91d37a250baff43b20824657b853ae04d11ad8bdd686'
@@ -18,6 +18,7 @@ sha256sums=('5ed6ce6106303b800c5e91d37a250baff43b20824657b853ae04d11ad8bdd686'
 prepare() {
   cd $_pkgname-$pkgver
   patch -p1 < $srcdir/$pkgname.patch
+  cat include/sqliteDB.hh | head -n 20
 }
 
 build() {
