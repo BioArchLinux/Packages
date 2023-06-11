@@ -7,8 +7,9 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
-repo_makedepends:
+repo_depends:
   - cimfomfa
+repo_makedepends:
   - zoem
 update_on:
   - source: regex
