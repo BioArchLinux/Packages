@@ -2,8 +2,8 @@
 # Maintainer: Ronny Lorenz <ronny at tbi dot univie dot ac dot at>
 
 pkgbase=viennarna
-pkgver=2.5.1
-pkgrel=3
+pkgver=2.6.0
+pkgrel=1
 pkgname=('viennarna' 'python-rna' 'perl-rna')
 pkgdesc="RNA Secondary Structure Prediction and Comparison"
 arch=('x86_64' 'i686')
@@ -26,7 +26,7 @@ source=(http://www.tbi.univie.ac.at/RNA/packages/source/ViennaRNA-${pkgver}.tar.
 
 options=('staticlibs')
 
-sha256sums=('05400437cf15595e10b1a25df6c9c48856f356130f9d1e380fa8866b6d27f457')
+sha256sums=('c239596ac63ff30d98c7629f3cfeaa6a066dc3b577e1b920eb704381bb6c3f85')
 
 prepare() {
   cd "${srcdir}/ViennaRNA-${pkgver}"
