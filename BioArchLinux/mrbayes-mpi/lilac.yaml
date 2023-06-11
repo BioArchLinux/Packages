@@ -12,5 +12,3 @@ update_on:
     github: NBISweden/MrBayes
     use_max_tag: true
     prefix: 'v'
-repo_depends:
-  - beagle-lib

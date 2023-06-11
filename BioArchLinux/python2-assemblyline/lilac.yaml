@@ -9,5 +9,6 @@ update_on:
     prefix: 'assemblyline-v'
 repo_depends:
   - python2
+repo_makedepends:
   - python2-setuptools
   - cython2
