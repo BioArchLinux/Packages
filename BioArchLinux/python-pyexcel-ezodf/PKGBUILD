@@ -11,15 +11,12 @@ license=('MIT')
 depends=(
          'python'
          'python-lxml'
-         'python-weakrefset'
         )
 makedepends=(
              'python-setuptools'
-             'python-installer'
-             'python-pytest-runner'
             )
 source=("https://github.com/pyexcel/${_module}/archive/refs/tags/v${pkgver}.tar.gz")
-md5sums=('792949bc5b8abba9209f22ec9af15a41')
+sha256sums=('0419c5b94a5d02d7fcefe5af4b4f91b3b07da157e62053aea48da2fe0364178e')
 
 build() {
     cd "$_module-$pkgver"
@@ -29,4 +26,5 @@ build() {
 package() {
     cd "$_module-$pkgver"
     python setup.py install --root="$pkgdir/" --optimize=1 --skip-build
+    install -Dm644 "$srcdir/${_module}-${pkgver}/LICENSE.txt"  "${pkgdir}/usr/share/licenses/${pkgname}"/LICENSE
 }
