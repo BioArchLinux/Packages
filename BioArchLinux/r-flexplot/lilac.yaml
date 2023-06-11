@@ -18,6 +18,7 @@ repo_depends:
   - r-lme4
   - r-party
   - r-rlang
+repo_makedepends:
   - r-jmvcore
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
