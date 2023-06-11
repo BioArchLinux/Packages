@@ -6,6 +6,8 @@ post_build_script: |
   git_add_files('PKGBUILD')
   git_pkgbuild_commit()
   git_commit() 
+repo_makedepends:
+  - wayfire
 repo_depends:
   - wayfire 
 update_on:
