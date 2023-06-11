@@ -6,8 +6,9 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 repo_depends:
-  - python-selenium
   - python-trio-websocket
+repo_makedepends:
+  - python-selenium
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
@@ -16,4 +17,3 @@ update_on:
     use_latest_release: true
     prefix: 'v'
   - alias: python
-  
