@@ -13,7 +13,7 @@ depends=('glibc'
 makedepends=('make'
              'wget')
 # source=(${pkgname}-${pkgver}.tar.gz::${url}/dl/${_pkgname}-${pkgver}.tar.gz)
-# sha256sums=('43e321792b9f49a3d78154cbe8ddd1fb747774dccb9e5c62fbcc37c6d0650727')
+sha256sums=('43e321792b9f49a3d78154cbe8ddd1fb747774dccb9e5c62fbcc37c6d0650727')
 
 build() {
   wget -O ${pkgname}-${pkgver}.tar.gz ${url}/dl/${_pkgname}-${pkgver}.tar.gz
