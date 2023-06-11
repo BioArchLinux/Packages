@@ -17,5 +17,7 @@ update_on:
     alpm: htslib
     strip_release: true
 repo_depends:
+  - htslib
+repo_makedepends:
   - samtools
   - htslib

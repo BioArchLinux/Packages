@@ -17,7 +17,7 @@ depends=(
          'jellyfish'
          'hisat2'
         )
-makedepends=('git' 'inetutils' 'pandoc-cli')
+makedepends=('git' 'inetutils' 'pandoc')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/DaehwanKimLab/centrifuge/archive/refs/tags/v${pkgver}.tar.gz"
         'alphabet.cpp.patch'
         'alphabet.h.patch'

@@ -11,6 +11,7 @@ post_build_script: |
 repo_depends:
 - htslib
 - bamtools
+repo_makedepends:
 - samtools
 update_on:
 - source: github

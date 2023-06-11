@@ -6,9 +6,10 @@ repo_depends:
   - htslib
   - tabixpp
   - vcflib
+  - seqlib
+repo_makedepends:
   - vcftools
   - samtools
-  - seqlib
 update_on:
   - source: github
     github: freebayes/freebayes

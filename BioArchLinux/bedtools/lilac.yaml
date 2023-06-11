@@ -13,5 +13,5 @@ update_on:
     github: arq5x/bedtools2
     use_max_tag: true
     prefix: 'v'
-repo_depends:
+repo_makedepends:
   - samtools

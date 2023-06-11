@@ -7,5 +7,5 @@ update_on:
     github: OpenGene/fastp
     use_max_tag: true
     prefix: 'v'
-repo_depends:
+repo_makedepends:
   - isa-l

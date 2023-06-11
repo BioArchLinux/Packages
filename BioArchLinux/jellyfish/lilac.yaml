@@ -4,6 +4,8 @@ maintainers:
     email: kbipinkumar@pm.me
 repo_depends:
   - htslib
+repo_makedepends:
+  - htslib
   - yaggo
   - samtools
 pre_build_script: |
