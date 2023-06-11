@@ -1,11 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-xfun
+repo_makedepends:
+- r-testit
 update_on:
-- regex: tinytex_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=tinytex
+- source: rpkgs
+  pkgname: tinytex
+  repo: cran
+  md5: true
 - alias: r
