@@ -1,9 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- hopscotch-map
+- r-testthat
 update_on:
-- regex: fastmap_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=fastmap
+- source: rpkgs
+  pkgname: fastmap
+  repo: cran
+  md5: true
 - alias: r
+update_on_build:
+- pkgbase: hopscotch-map
