@@ -10,34 +10,22 @@ url="https://github.com/calamares/calamares"
 depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore>=4.2.0' 'mkinitcpio-openswap'
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
          'qt5-xmlpatterns' 'squashfs-tools' 'libpwquality' 'efibootmgr' 'icu'
-	 'python' 'parted' 'python-pyqt5')
+	 'python' 'parted' 'appstream-qt' 'calamares')
 conflicts=()
-makedepends=('python' 'python-jsonschema' 'appstream-qt' 'python-yaml'  'extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost' 'git')
-backup=('usr/share/calamares/modules/bootloader.conf'
-        'usr/share/calamares/modules/displaymanager.conf'
-        'usr/share/calamares/modules/initcpio.conf'
-        'usr/share/calamares/modules/unpackfs.conf')
+makedepends=('python' 'python-jsonschema' 'python-pyqt5' 'python-yaml'  'extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost' 'git')
 
 source=("$pkgname-$pkgver::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz"
-	"49-nopasswd-calamares.rules"
-	"calamares_polkit")
+	"49-nopasswd-calamares.rules")
 
 sha256sums=('a0fbcec2a438693753fc174220356119ad7adb8a2b19c317518aa1cb025d6dd0'
-            '56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176'
             'c176b28007bd1c1f23d8dbb2c936fa54d0c01bacfb67290ddad597606c129df3')
-
-pkgver() {
-	cd ${srcdir}/$pkgname-$pkgver
-	_ver="$(cat CMakeLists.txt | grep -m3 -e "  VERSION" | grep -o "[[:digit:]]*" | xargs | sed s'/ /./g')"
-#	_git=".r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
-	printf '%s%s' "${_ver}" #"${_git}"
-}
 
 prepare() {
 
 	sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' "$srcdir/${pkgname}-$pkgver/CMakeLists.txt"
 	sed -i -e 's/# DEBUG_FILESYSTEMS/DEBUG_FILESYSTEMS/' "$srcdir/${pkgname}-$pkgver/CMakeLists.txt"
-#	sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "$srcdir/${pkgname}/src/modules/fstab/main.py"
+
+	sed -i -e 's#Exec=sh.*#Exec=sh -c "/usr/bin/calamares-bio"#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
 
 	# add pkgrelease to patch-version
 	cd ${pkgname}-$pkgver
@@ -71,5 +59,8 @@ package() {
 	cd ${pkgname}-$pkgver/build
 	make DESTDIR="$pkgdir" install
 	install -Dm644 "${srcdir}/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
+	echo "pkexec calamares -d -style kvantum" > calamares-bio
+	chmod +x calamares-bio
+	install -Dm 755 calamares-bio $pkgdir/usr/bin/calamares
 	chmod 750 "$pkgdir"/etc/polkit-1/rules.d
 }
