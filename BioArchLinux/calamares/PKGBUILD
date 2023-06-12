@@ -1,8 +1,8 @@
 #https://github.com/calamares/calamares/releases
 
 pkgname=calamares
-pkgver=3.2.62
-pkgrel=1
+pkgver=3.2.61
+pkgrel=0
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL2.1' 'LGPL3' 'BSD' 'MIT' 'CCPL')
@@ -11,17 +11,19 @@ depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
          'qt5-xmlpatterns' 'squashfs-tools' 'libpwquality' 'efibootmgr' 'icu')
 conflicts=()
-makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost')
+makedepends=('extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost' 'git')
 backup=('usr/share/calamares/modules/bootloader.conf'
         'usr/share/calamares/modules/displaymanager.conf'
         'usr/share/calamares/modules/initcpio.conf'
         'usr/share/calamares/modules/unpackfs.conf')
 
 source=("$pkgname-$pkgver::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz"
-	"49-nopasswd-calamares.rules")
+	"49-nopasswd-calamares.rules"
+	"calamares_polkit")
 
-sha256sums=('a0fbcec2a438693753fc174220356119ad7adb8a2b19c317518aa1cb025d6dd0'
-            '56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176')
+sha256sums=('7591b9b60738bdba7b9de2b8da5462ab21006db06a006f0dd21ac5b832711dd2'
+            '56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176'
+            'c176b28007bd1c1f23d8dbb2c936fa54d0c01bacfb67290ddad597606c129df3')
 
 pkgver() {
 	cd ${srcdir}/$pkgname-$pkgver
@@ -32,19 +34,12 @@ pkgver() {
 
 prepare() {
 
-	sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' "$srcdir/${pkgname}-${pkgver}/CMakeLists.txt"
-	sed -i -e 's/# DEBUG_FILESYSTEMS/DEBUG_FILESYSTEMS/' "$srcdir/${pkgname}-${pkgver}/CMakeLists.txt"
-	sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "$srcdir/${pkgname}-${pkgver}/src/modules/fstab/main.py"
-
-	# modify desktop file
-	sed -i -e 's#Exec=sh.*#Exec=sh -c "/etc/calamares/launch.sh"#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
-	sed -i -e 's#Name=.*#Name=Install BioArchLinux#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
-	sed -i -e 's#GenericName=.*#GenericName=System Installer#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
-	sed -i -e 's#Icon=.*#Icon=bioarchlinux#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
-	sed -i -e 's#Comment=.*#Comment=BioArchLinux System Installer#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
+	sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' "$srcdir/${pkgname}-$pkgver/CMakeLists.txt"
+	sed -i -e 's/# DEBUG_FILESYSTEMS/DEBUG_FILESYSTEMS/' "$srcdir/${pkgname}-$pkgver/CMakeLists.txt"
+#	sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "$srcdir/${pkgname}/src/modules/fstab/main.py"
 
 	# add pkgrelease to patch-version
-	cd ${pkgname}-${pkgver}
+	cd ${pkgname}-$pkgver
 	_patchver="$(cat CMakeLists.txt | grep -m3 -e CALAMARES_VERSION_PATCH | grep -o "[[:digit:]]*" | xargs)"
 	sed -i -e "s|CALAMARES_VERSION_PATCH $_patchver|CALAMARES_VERSION_PATCH $_patchver-$pkgrel|g" CMakeLists.txt
 
@@ -72,7 +67,7 @@ build() {
 }
 
 package() {
-	cd ${pkgname}-${pkgver}/build
+	cd ${pkgname}-$pkgver/build
 	make DESTDIR="$pkgdir" install
 	install -Dm644 "${srcdir}/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
 	chmod 750 "$pkgdir"/etc/polkit-1/rules.d
