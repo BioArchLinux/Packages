@@ -61,6 +61,6 @@ package() {
 	install -Dm644 "${srcdir}/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
 	echo "pkexec calamares -d -style kvantum" > calamares-bio
 	chmod +x calamares-bio
-	install -Dm 755 calamares-bio $pkgdir/usr/bin/calamares
+	install -Dm 755 calamares-bio $pkgdir/usr/bin/calamares-bio
 	chmod 750 "$pkgdir"/etc/polkit-1/rules.d
 }
