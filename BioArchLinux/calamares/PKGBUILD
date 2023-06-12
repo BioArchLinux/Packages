@@ -10,7 +10,7 @@ url="https://github.com/calamares/calamares"
 depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore>=4.2.0' 'mkinitcpio-openswap'
          'boost-libs' 'ckbcomp' 'hwinfo' 'qt5-svg' 'polkit-qt5' 'gtk-update-icon-cache' 'plasma-framework'
          'qt5-xmlpatterns' 'squashfs-tools' 'libpwquality' 'efibootmgr' 'icu'
-	 'python' 'parted' 'appstream-qt' 'calamares')
+	 'python' 'parted' 'appstream-qt')
 conflicts=()
 makedepends=('python' 'python-jsonschema' 'python-pyqt5' 'python-yaml'  'extra-cmake-modules' 'qt5-tools' 'qt5-translations' 'git' 'boost' 'git')
 
