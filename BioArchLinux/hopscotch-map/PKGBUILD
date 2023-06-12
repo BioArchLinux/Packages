@@ -3,7 +3,7 @@
 
 pkgname=hopscotch-map
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ implementation of a fast hash map and hash set using hopscotch hashing"
 arch=(any)
 url="https://github.com/Tessil/hopscotch-map"
