@@ -12,6 +12,7 @@ update_on:
     github: calamares/calamares
     use_latest_release: true
     prefix: 'v'
+  - alias: python
 staging: true
 repo_depends:
   - mkinitcpio-openswap
