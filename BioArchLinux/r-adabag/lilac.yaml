@@ -1,13 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-caret
+- r-consrank
 - r-doparallel
+- r-dplyr
 - r-foreach
+- r-tidyr
 update_on:
-- regex: adabag_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=adabag
+- source: rpkgs
+  pkgname: adabag
+  repo: cran
+  md5: true
 - alias: r
