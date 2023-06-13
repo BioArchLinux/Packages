@@ -1,0 +1,33 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-plotnine'
+_module=${pkgname#python-}
+pkgver=0.12.1
+pkgrel=1
+pkgdesc="A Grammar of Graphics for Python"
+arch=('x86_64')
+url="https://plotnine.readthedocs.io/en/stable"
+license=('MIT')
+depends=(python
+         python-matplotlib
+         python-mizani
+         python-numpy
+         python-pandas
+         python-patsy
+         python-scipy
+         python-statsmodels)
+makedepends=(python-build
+             python-installer)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module/-/_}-$pkgver.tar.gz")
+sha256sums=('be852c6e50e331ad250151dc4120f269ee9ae5e795f67030f7794718b502592a')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-plotnine/LICENSE"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+}
