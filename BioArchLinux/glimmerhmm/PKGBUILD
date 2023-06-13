@@ -6,7 +6,7 @@ pkgver=3.0.4
 pkgrel=1
 pkgdesc="A new gene finder based on a Generalized Hidden Markov Model (GHMM)."
 arch=('x86_64')
-url="https://ccb.jhu.edu/software/${pkgname}"
+url="https://ccb.jhu.edu/software/glimmerhmm"
 license=('custom')
 depends=('glibc'
          'gcc-libs')
