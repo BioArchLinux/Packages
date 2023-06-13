@@ -1,6 +1,6 @@
 pkgname=calamares-config
 pkgver=2023.06.13
-pkgrel=1
+pkgrel=2
 pkgdesc="Calamares configuration for BioArchLinux"
 url="https://github.com/BioArchLinux/calamares-config"
 arch=('any')
