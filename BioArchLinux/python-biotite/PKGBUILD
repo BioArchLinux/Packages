@@ -1,0 +1,30 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-biotite'
+_module=${pkgname#python-}
+pkgver=0.37.0
+pkgrel=1
+pkgdesc="A comprehensive library for computational molecular biology"
+arch=('x86_64')
+url="https://www.biotite-python.org"
+license=('BSD')
+depends=(python
+         python-msgpack
+         python-networkx
+         python-numpy
+         python-requests)
+makedepends=(python-build
+             python-installer)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module/-/_}-$pkgver.tar.gz")
+sha256sums=('07442d02e1de16c3c350e2a808d43f67e0f2f61dd92e7281f000974dc63de09f')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE.rst "${pkgdir}/usr/share/licenses/python-biotite/LICENSE"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+}
