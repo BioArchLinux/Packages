@@ -1,0 +1,21 @@
+pkgname=calamares-config
+pkgver=2023.06.13
+pkgrel=1
+pkgdesc="Calamares configuration for BioArchLinux"
+url="https://github.com/BioArchLinux/calamares-config"
+arch=('any')
+license=('GPL')
+source=("git+$url.git")
+makedepends=('git')
+sha256sums=('SKIP')
+pkgver(){
+  cd "${srcdir}"/calamares-config
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+
+package() {
+  # copy all files recursively in /etc/calamares
+  cd $srcdir/calamares-config
+  rm -rf .git
+  (find . -type f -exec install -Dm 644 "{}" "$pkgdir/etc/calamares/{}" \;)
+}
