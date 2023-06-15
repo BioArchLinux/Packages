@@ -14,7 +14,10 @@ depends=(python
          python-numpy
          python-requests)
 makedepends=(python-build
-             python-installer)
+             python-installer
+             python-wheel
+             python-oldest-supported-numpy
+             cython))
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module/-/_}-$pkgver.tar.gz")
 sha256sums=('07442d02e1de16c3c350e2a808d43f67e0f2f61dd92e7281f000974dc63de09f')
 
