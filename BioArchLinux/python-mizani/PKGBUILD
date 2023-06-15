@@ -1,0 +1,30 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-mizani'
+_module=${pkgname#python-}
+pkgver=0.9.2
+pkgrel=1
+pkgdesc="Scales for Python"
+arch=('x86_64')
+url="https://mizani.readthedocs.io/en/stable"
+license=('BSD')
+depends=(python
+         python-matplotlib
+         python-numpy
+         python-pandas
+         python-scipy)
+makedepends=(python-build
+             python-installer)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module/-/_}-$pkgver.tar.gz")
+sha256sums=('1d481a4dc673caa9b7cfdc6505b9401f0e9a9f43434d748df0678a1a4017b0e2')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-mizani/LICENSE"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+}
