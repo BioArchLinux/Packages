@@ -1,9 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- coin-or-symphony
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: lpsymphony_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/lpsymphony
+- source: rpkgs
+  pkgname: lpsymphony
+  repo: bioc
+  md5: true
 - alias: r

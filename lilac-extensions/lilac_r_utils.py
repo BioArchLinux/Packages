@@ -187,6 +187,7 @@ license_map = {
     "BSD_2_clause + file LICENSE": "BSD",
     "BSD_3_clause + file LICENSE": "BSD",
     "BSL-1.0": "Boost",
+    "EPL": "EPL",
     "GPL": "GPL",
     "GPL (>= 2)": "GPL",
     "GPL (>= 3)": "GPL3",
