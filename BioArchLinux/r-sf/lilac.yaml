@@ -16,7 +16,6 @@ update_on:
 - alias: r
 - alias: alpm-lilac
   alpm: gdal
-  repo: extra
   strip_release: true
 - source: manual
   manual: 1

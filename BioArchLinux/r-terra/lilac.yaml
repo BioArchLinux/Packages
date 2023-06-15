@@ -11,5 +11,4 @@ update_on:
 - alias: r
 - alias: alpm-lilac
   alpm: gdal
-  repo: community
   strip_release: true

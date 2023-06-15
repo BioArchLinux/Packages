@@ -9,5 +9,4 @@ update_on:
 - alias: r
 - alias: alpm-lilac
   alpm: libtiff
-  repo: extra
   strip_release: true

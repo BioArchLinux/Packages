@@ -14,5 +14,4 @@ update_on:
     regex: 'Version (\d+.\d+.\d+)'
   - alias: alpm-lilac
     alpm: fltk
-    repo: community
     strip_release: true

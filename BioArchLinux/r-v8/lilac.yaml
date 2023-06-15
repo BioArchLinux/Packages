@@ -14,11 +14,9 @@ update_on:
     from_pattern: ^(\d+)\..*
     to_pattern: \1
     alpm: nodejs
-    repo: community
   - source: manual
     manual: 1
   - alias: r
   - alias: alpm-lilac
     alpm: nodejs
-    repo: community
     strip_release: true

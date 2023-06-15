@@ -16,5 +16,8 @@ update_on:
     use_max_tag: true
   - alias: boost
   - alias: r
+  - alias: alpm-lilac
+    alpm: openblas
+    strip_release: true
 update_on_build:
   - pkgbase: htslib

@@ -2,8 +2,15 @@ build_prefix: extra-x86_64
 maintainers:
   - github: michaelgelliot
     email: m.g.elliot@rug.nl
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - regex: armadillo-(\d+.\d+.\d+).tar.xz
     source: regex
     url: https://sourceforge.net/projects/arma/files/
-
+  - alias: alpm-lilac
+    alpm: openblas
+    strip_release: true
