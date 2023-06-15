@@ -1,11 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-corpcor
+- r-rspectra
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: <td>(\d+.\d+.\d+)</td>
-  source: regex
-  url: https://bioconductor.org/packages/lfa
+- source: rpkgs
+  pkgname: lfa
+  repo: bioc
+  md5: true
 - alias: r
