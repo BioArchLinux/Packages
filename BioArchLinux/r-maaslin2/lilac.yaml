@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biglm
 - r-car
@@ -16,7 +16,6 @@ repo_depends:
 - r-lme4
 - r-lmertest
 - r-logging
-- r-lpsymphony
 - r-metagenomeseq
 - r-optparse
 - r-pbapply
@@ -24,9 +23,13 @@ repo_depends:
 - r-pheatmap
 - r-pscl
 - r-robustbase
+- r-tibble
 - r-vegan
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: Maaslin2_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Maaslin2
+- source: rpkgs
+  pkgname: Maaslin2
+  repo: bioc
+  md5: true
 - alias: r
