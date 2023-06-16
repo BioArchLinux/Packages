@@ -17,7 +17,7 @@ makedepends=(python-build
              python-installer
              python-setuptools-scm
              python-wheel)
-source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module/-/_}-$pkgver.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
 sha256sums=('1d481a4dc673caa9b7cfdc6505b9401f0e9a9f43434d748df0678a1a4017b0e2')
 
 build() {
