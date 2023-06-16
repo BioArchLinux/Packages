@@ -1,0 +1,25 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-biosequences'
+_module=BioSequences
+pkgver=1.1.5
+pkgrel=1
+pkgdesc="Tools to analysis biology sequence"
+arch=('x86_64')
+url="https://github.com/Dragon-GCS/BioSequence"
+license=('GPL')
+depends=(python)
+makedepends=(python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
+sha256sums=('288283bb56860871648fda6c7557acd34ce95cb6f4bb362ab4bf60da916a21f2')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-biosequences/LICENSE"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+}
