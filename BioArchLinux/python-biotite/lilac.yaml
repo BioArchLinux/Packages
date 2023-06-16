@@ -8,7 +8,7 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 repo_depends:
-  python-oldest-supported-numpy
+  - python-oldest-supported-numpy
 update_on:
   - source: pypi
     pypi: biotite
