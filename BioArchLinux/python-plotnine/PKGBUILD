@@ -20,7 +20,7 @@ depends=(python
          python-wheel)
 makedepends=(python-build
              python-installer)
-source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module/-/_}-$pkgver.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
 sha256sums=('be852c6e50e331ad250151dc4120f269ee9ae5e795f67030f7794718b502592a')
 
 build() {
