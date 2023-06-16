@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gcatest
-_pkgver=1.28.2
+_pkgver=2.0.6
 pkgname=r-${_pkgname,,}
-pkgver=1.28.2
+pkgver=2.0.6
 pkgrel=1
 pkgdesc='Genotype Conditional Association TEST'
 arch=('x86_64')
