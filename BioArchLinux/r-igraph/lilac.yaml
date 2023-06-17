@@ -1,14 +1,30 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-cpp11
+- r-cli
 - r-magrittr
 - r-pkgconfig
 - r-rlang
+repo_makedepends:
+- r-cpp11
+- r-graph
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: igraph_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=igraph
+- source: rpkgs
+  pkgname: igraph
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: libxml2
+  repo: core
+  provided: libxml2.so
+  strip_release: true
+- source: alpm
+  alpm: util-linux-libs
+  repo: core
+  provided: libuuid.so
+  strip_release: true
