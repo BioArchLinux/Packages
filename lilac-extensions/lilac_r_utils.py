@@ -295,7 +295,7 @@ def check_fortran(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     elif not fortran_files and fortran_dep:
         raise CheckFailed("Unnecessary make dependency: gcc-fortran")
     elif cfg.ignore_fortran_files and not fortran_files:
-        raise CheckFailed("Unnecessary config 'ignore_fortran_files'");
+        raise CheckFailed("Unnecessary config 'ignore_fortran_files'")
 
 def check_systemrequirements(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if cfg.expect_systemrequirements != desc.systemrequirements:
