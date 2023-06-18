@@ -7,7 +7,7 @@ _pkgname=BH
 _pkgver=1.81.0-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Boost C++ Header Files"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
