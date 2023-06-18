@@ -1,15 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-fs
 - r-htmltools
 - r-r6
 - r-rappdirs
 - r-rlang
+repo_makedepends:
+- r-curl
+- r-testthat
+- r-withr
 update_on:
-- regex: sass_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=sass
+- source: rpkgs
+  pkgname: sass
+  repo: cran
+  md5: true
 - alias: r
