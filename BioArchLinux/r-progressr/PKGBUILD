@@ -1,16 +1,17 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=progressr
 _pkgver=0.13.0
 pkgname=r-${_pkgname,,}
-pkgver=0.13.0
+pkgver=${_pkgver//[:-]/.}
 pkgrel=4
-pkgdesc='An Inclusive, Unifying API for Progress Updates'
-arch=('any')
+pkgdesc="An Inclusive, Unifying API for Progress Updates"
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL3)
 depends=(
-  r
   r-digest
 )
 optdepends=(
@@ -24,7 +25,6 @@ optdepends=(
   r-furrr
   r-future
   r-future.apply
-  r-graphics
   r-pbmcapply
   r-plyr
   r-progress
@@ -32,18 +32,17 @@ optdepends=(
   r-rpushbullet
   r-rstudioapi
   r-shiny
-  r-tcltk
-  r-tools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('48826c14b381db8d640665bf5bfb1135')
 sha256sums=('0ffb3dcadde0cc191bad0ff9e05d000aa65e2fc339cfc94ebbb263088df5a4e1')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
