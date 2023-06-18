@@ -1,9 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-tinytest
 update_on:
-- regex: gower_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gower
+- source: rpkgs
+  pkgname: gower
+  repo: cran
+  md5: true
 - alias: r
