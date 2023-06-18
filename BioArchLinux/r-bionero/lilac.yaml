@@ -1,14 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biocparallel
 - r-complexheatmap
 - r-dynamictreecut
 - r-genie3
+- r-ggdendro
 - r-ggnetwork
-- r-ggnewscale
 - r-ggplot2
 - r-ggrepel
 - r-igraph
@@ -16,15 +16,19 @@ repo_depends:
 - r-matrixstats
 - r-minet
 - r-netrep
-- r-networkd3
 - r-patchwork
 - r-rcolorbrewer
 - r-reshape2
+- r-rlang
 - r-summarizedexperiment
 - r-sva
 - r-wgcna
+repo_makedepends:
+- r-networkd3
+- r-testthat
 update_on:
-- regex: BioNERO_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BioNERO
+- source: rpkgs
+  pkgname: BioNERO
+  repo: bioc
+  md5: true
 - alias: r
