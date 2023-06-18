@@ -1,10 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
-- r-cpp11
 - r-dplyr
 - r-glue
 - r-lifecycle
@@ -15,8 +14,13 @@ repo_depends:
 - r-tibble
 - r-tidyselect
 - r-vctrs
+repo_makedepends:
+- r-cpp11
+- r-data.table
+- r-testthat
 update_on:
-- regex: tidyr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=tidyr
+- source: rpkgs
+  pkgname: tidyr
+  repo: cran
+  md5: true
 - alias: r
