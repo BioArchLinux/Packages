@@ -33,7 +33,8 @@ checkdepends=(
   r-curl
   r-shiny
   r-testthat
-  texlive-core
+  texlive-basic
+  texlive-fontsrecommended
   texlive-latexextra
 )
 optdepends=(
