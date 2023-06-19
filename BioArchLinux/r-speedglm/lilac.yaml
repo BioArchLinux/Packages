@@ -1,19 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: starsareintherose
-    email: kuoi@bioarchlinux.org
-pre_build_script: |
-  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
-  run_cmd(['updpkgsums'])
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
-update_on:
-  - source: github
-    github: cran/speedglm
-    use_max_tag: true
-    from_pattern: ([\d.]+)-(\d+)
-    to_pattern: \1_\2
-  - alias: r
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-biglm
+- r-biglm
+update_on:
+- source: rpkgs
+  pkgname: speedglm
+  repo: cran
+  md5: true
+- alias: r
