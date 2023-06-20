@@ -11,6 +11,6 @@ update_on:
   - regex: armadillo-(\d+.\d+.\d+).tar.xz
     source: regex
     url: https://sourceforge.net/projects/arma/files/
-  - alias: alpm
+  - source: alpm
     alpm: openblas
     strip_release: true
