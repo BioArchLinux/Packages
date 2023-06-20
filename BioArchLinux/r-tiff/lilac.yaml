@@ -7,6 +7,6 @@ update_on:
   source: regex
   url: https://cran.r-project.org/package=tiff
 - alias: r
-- alias: alpm-lilac
+- alias: alpm
   alpm: libtiff
   strip_release: true

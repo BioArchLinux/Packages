@@ -12,6 +12,6 @@ update_on:
   - source: regex
     url: http://doua.prabi.fr/software/seaview
     regex: 'Version (\d+.\d+.\d+)'
-  - alias: alpm-lilac
+  - alias: alpm
     alpm: fltk
     strip_release: true
