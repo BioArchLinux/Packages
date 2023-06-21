@@ -9,8 +9,7 @@ post_build_script: |
   git_pkgbuild_commit()
 repo_depends:
   - python-isal
-repo_makedepends:
-  - python-archspec
+  - python-archspec  
 update_on:
   - source: pypi
     pypi: pyrodigal
