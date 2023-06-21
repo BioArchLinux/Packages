@@ -2,13 +2,12 @@
 pkgname=kma 
 pkgver=1.4.12a
 pkgrel=2
-pkgdesc="An ultra-fast mapping method designed to map raw reads directly against redundant databases using seed and extend. "
+pkgdesc="An ultra-fast mapping method designed to map raw reads directly against redundant databases using seed and extend."
 arch=(x86_64)
 url="https://bitbucket.org/genomicepidemiology/kma/src/master/"
 license=('Apache')
 makedepends=('git')
-depends=('zlib')
-provides=(""${pkgname}"")
+depends=('zlib' 'glibc')
 source=(''kma::git+https://bitbucket.org/genomicepidemiology/kma.git'')
 md5sums=('SKIP')
 
@@ -23,10 +22,12 @@ build() {
 }
 
 package() {
-	cd "$srcdir/${pkgname}"
+	cd ${srcdir}/${pkgname}
 	install -dm 755 "${pkgdir}"/usr/bin
-    install -Dm 755 kma "${pkgdir}"/usr/bin
+	for bin in {kma,kma_index,kma_shm}
+    do [ -f "$bin" ] || continue
+	install -Dm 755 "$bin" "${pkgdir}"/usr/bin/"$bin"
+    done
     install -dm 755 "${pkgdir}"/usr/share/doc/${pkgname}
     install -Dm 755 KMAspecification.pdf "${pkgdir}"/usr/share/doc/${pkgname}/
-
 }
