@@ -1,0 +1,30 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-orange-widget-base'
+_module=orange-widget-base
+pkgver=4.21.0
+pkgrel=1
+pkgdesc="Base Widget for Orange Canvas"
+arch=('x86_64')
+url="http://orange.biolab.si/"
+license=('GPL')
+depends=(python
+         python-anyqt
+         python-matplotlib
+         python-orange-canvas-core
+         python-pyqtgraph
+         python-typing_extensions)
+makedepends=(python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+sha256sums=('e3725e11d8046fa592ecfc925b5c74f1f9f4db297d43f1f0c0aa3aa236aa887d')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-orange-widget-base/LICENSE"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+}
