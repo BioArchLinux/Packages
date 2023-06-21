@@ -10,7 +10,8 @@ url="https://github.com/althonos/pyrodigal"
 arch=('i686' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
 license=("LGPL3")
 makedepends=('python-setuptools' 'cython' 'python-build' 'python-installer' 'python-wheel')
-depends=('python')
+checkdepends=('python-archspec')
+depends=('python' 'glibc' 'python-isal')
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
 noextract=()
 sha256sums=('a4c07baa2ceebb052d8b65749c30b41fec998bb7f3600da1979fb0b5f328a34e')
@@ -21,7 +22,7 @@ build() {
 }
 
 check() {
-    local pyver=$(python -c 'import sys; print("{}{}".format(*sys.version_info[:2]))')
+    local pyver=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local impl=$(python -c 'import platform; print(platform.python_implementation().lower())')
     local machine=$(python -c 'import platform; print(platform.machine())')
     cd "${srcdir}/${_name}-${pkgver}/build/lib.linux-${machine}-${impl}-${pyver}"
