@@ -3,7 +3,7 @@
 pkgname='python-orange-widget-base'
 _module=orange-widget-base
 pkgver=4.21.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Base Widget for Orange Canvas"
 arch=('x86_64')
 url="http://orange.biolab.si/"
