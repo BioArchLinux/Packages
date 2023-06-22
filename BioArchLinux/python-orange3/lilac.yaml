@@ -13,7 +13,6 @@ update_on:
   - alias: python
 repo_depends:
   - python-orange-canvas-core
-  - python-pyyaml
   - python-baycomp
   - python-python-louvain
   - python-serverfiles
