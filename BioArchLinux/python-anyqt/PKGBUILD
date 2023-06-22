@@ -1,0 +1,25 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-anyqt'
+_module=AnyQt
+pkgver=0.2.0
+pkgrel=1
+pkgdesc="PyQt5/PyQt6 compatibility layer."
+arch=('x86_64')
+url="https://github.com/ales-erjavec/anyqt"
+license=('GPL')
+depends=(python)
+makedepends=(python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+sha256sums=('4b9228b918a26df2fdcc61f135db548ad3c3036e5bc7e67ba8147e0b6683763b')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE.txt "${pkgdir}/usr/share/licenses/python-anyqt/LICENSE"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+}

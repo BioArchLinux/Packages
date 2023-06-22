@@ -1,0 +1,69 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-orange3'
+_module=Orange3
+_pkgname=orange
+pkgver=3.35.0
+pkgrel=1
+pkgdesc="Orange, a component-based data mining framework."
+arch=('x86_64')
+url="https://orangedatamining.com/"
+license=('GPL')
+depends=(python
+         python-anyqt
+         python-baycomp
+         python-bottleneck
+         python-chardet
+         python-httpx
+         python-joblib
+         python-keyring
+         python-keyrings.alt
+         python-matplotlib
+         python-networkx
+         python-numpy
+         python-openpyxl
+         python-opentsne
+         python-orange-canvas-core
+         python-orange-widget-base
+         python-pandas
+         python-pip
+         python-pygments
+         python-pyqtgraph
+         python-python-louvain
+         python-pyyaml
+         python-qtconsole
+         python-requests
+         python-scikit-learn
+         python-scipy
+         python-serverfiles
+         python-setuptools
+         python-xlrd
+         python-xlsxwriter)
+makedepends=(cython
+             python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz"
+        "${_pkgname}.ico.tar.gz"
+        "${_pkgname}.desktop"
+        "${_pkgname}.sh")
+sha256sums=('61728d5fe0601f0f4df20d8b456c4244ea119feccfb25ee08837edd2bab0e9a0'
+            'e82c5af66de8524c1e85cd47ec3708d03813284537b2e630167b632d96419cdc'
+            'cce35bfe5d04119c076d8d28d51491c31f6c2fb257eac897cc9d486b99a6cf01'
+            '29f3d0c4a4204115ff4a8c0eafbffb259c682da32c71beab847e8dc44f2da89f')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-orange3/LICENSE"
+    python setup.py install --root="$pkgdir" --optimize=1
+    install -Dm 755 ${srcdir}/${_pkgname}.sh $pkgdir/usr/bin/${_pkgname}
+    install -Dm 644 ${srcdir}/${_pkgname}.desktop $pkgdir/usr/share/applications/${_pkgname}.desktop
+    for s in 16 24 32 48 64 96 128 256 512; do
+        install -Dm 644 ${srcdir}/ico/${_pkgname}${s}x${s}.png $pkgdir/usr/share/icons/hicolor/${s}x${s}/apps/${_pkgname}.png
+    done
+}
+
+

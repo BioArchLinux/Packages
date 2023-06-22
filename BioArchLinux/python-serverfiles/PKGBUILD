@@ -1,0 +1,26 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-serverfiles'
+_module=serverfiles
+pkgver=0.3.1
+pkgrel=1
+pkgdesc="An utility that accesses files on a HTTP server and stores them locally for reuse."
+arch=('x86_64')
+url="https://github.com/biolab/serverfiles"
+license=('unknown')
+depends=(python
+         python-requests)
+makedepends=(python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+sha256sums=('5e10fc32e758791e3735bc08bce2ed4702a83b1e45ab96c5d59cc8aeecfbebe1')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE.txt "${pkgdir}/usr/share/licenses/python-serverfiles/LICENSE"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+}

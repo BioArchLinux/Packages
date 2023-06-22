@@ -1,0 +1,33 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-opentsne'
+_module=openTSNE
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Extensible, parallel implementations of t-SNE"
+arch=('x86_64')
+url="https://github.com/pavlin-policar/openTSNE"
+license=('custom:OSI Approved')
+depends=(python
+         python-numpy
+         python-scikit-learn
+         python-scipy)
+makedepends=(python-build
+             python-installer
+             cython
+             python-oldest-supported-numpy
+             python-wheel
+             python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+sha256sums=('03dafa41632ece9e9217d78769ed2d65e6086bdcab8bc8631d115b7d0ad06763')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-opentsne/LICENSE"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+}

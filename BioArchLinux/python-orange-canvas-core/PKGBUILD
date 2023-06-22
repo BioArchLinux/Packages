@@ -1,0 +1,34 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-orange-canvas-core'
+_module=orange-canvas-core
+pkgver=0.1.31
+pkgrel=1
+pkgdesc="Core component of Orange Canvas"
+arch=('x86_64')
+url="http://orange.biolab.si/"
+license=('unknown')
+depends=(python
+         python-anyqt
+         python-cachecontrol
+         python-commonmark
+         python-dictdiffer
+         python-docutils
+         python-pip
+         python-qasync
+         python-requests
+         python-setuptools)
+makedepends=(python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+sha256sums=('92a87f734a445852ea7f504c0fbf658b532a2e91ffe31add4c7f7effb60efed8')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE.txt "${pkgdir}/usr/share/licenses/python-orange-canvas-core/LICENSE"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+}

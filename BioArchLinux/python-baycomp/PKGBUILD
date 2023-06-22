@@ -1,0 +1,28 @@
+# Maintainer: Kiri <kiri@vern.cc>
+
+pkgname='python-baycomp'
+_module=baycomp
+pkgver=1.0.2
+pkgrel=1
+pkgdesc="Bayesian tests for comparison of classifiers"
+arch=('x86_64')
+url="https://github.com/janezd/baycomp.git"
+license=('MIT')
+depends=(python
+         python-matplotlib
+         python-numpy
+         python-scipy)
+makedepends=(python-setuptools)
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+sha256sums=('c43472c16bd7cdf4884dd4c73dd307e4a3da7097fe49c83cd5e88d75142923b0')
+
+build() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    python setup.py build
+}
+
+package() {
+    cd "${srcdir}/${_module}-${pkgver}"
+    install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/python-baycomp/LICENSE"
+    python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
+}

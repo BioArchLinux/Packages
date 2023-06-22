@@ -1,0 +1,23 @@
+maintainers:
+  - github: kiri2002
+    email: kiri@vern.cc
+build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+  - source: pypi
+    pypi: Orange3
+  - alias: python
+repo_depends:
+  - python-orange-canvas-core
+  - python-pyyaml
+  - python-baycomp
+  - python-python-louvain
+  - python-serverfiles
+  - python-opentsne
+  - python-orange-widget-base
+  - python-anyqt
+  - python-keyrings.alt
