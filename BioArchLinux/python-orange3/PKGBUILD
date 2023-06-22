@@ -30,7 +30,7 @@ depends=(python
          python-pygments
          python-pyqtgraph
          python-python-louvain
-         python-pyyaml
+         python-yaml
          python-qtconsole
          python-requests
          python-scikit-learn
