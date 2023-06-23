@@ -12,4 +12,6 @@ update_on:
   - source: github
     github: s-andrews/FastQC
     use_max_tag: true
+  - source: manual
+    manual: 1
 time_limit_hours: 4
