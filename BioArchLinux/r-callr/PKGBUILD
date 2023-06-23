@@ -7,7 +7,7 @@
 _pkgname=callr
 _pkgver=3.7.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=5
 pkgdesc="Call R from R"
 arch=(any)

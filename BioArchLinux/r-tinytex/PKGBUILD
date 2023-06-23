@@ -8,7 +8,7 @@
 _pkgname=tinytex
 _pkgver=0.45
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents"
 arch=(any)

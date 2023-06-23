@@ -4,7 +4,7 @@
 _pkgname=hexbin
 _pkgver=1.28.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Hexagonal Binning Routines"
 arch=(x86_64)

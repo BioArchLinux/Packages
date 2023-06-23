@@ -4,7 +4,7 @@
 _pkgname=Maaslin2
 _pkgver=1.14.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='"Multivariable Association Discovery in Population-scale Meta-omics Studies"'
 arch=(any)

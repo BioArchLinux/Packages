@@ -8,7 +8,7 @@
 _pkgname=MatrixModels
 _pkgver=0.5-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Modelling with Sparse and Dense Matrices"
 arch=(any)

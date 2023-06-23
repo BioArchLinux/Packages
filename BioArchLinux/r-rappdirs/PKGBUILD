@@ -5,7 +5,7 @@
 _pkgname=rappdirs
 _pkgver=0.3.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=12
 pkgdesc="Application Directories: Determine Where to Save Data, Caches, and Logs"
 arch=(x86_64)

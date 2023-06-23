@@ -7,7 +7,7 @@
 _pkgname=htmltools
 _pkgver=0.5.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Tools for HTML"
 arch=(x86_64)

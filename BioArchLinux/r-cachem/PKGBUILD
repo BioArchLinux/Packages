@@ -5,7 +5,7 @@
 _pkgname=cachem
 _pkgver=1.0.8
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Cache R Objects with Automatic Pruning"
 arch=(x86_64)

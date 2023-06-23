@@ -3,7 +3,7 @@
 _pkgname=ordinal
 _pkgver=2022.11-16
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Regression Models for Ordinal Data"
 arch=(x86_64)

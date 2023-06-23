@@ -6,7 +6,7 @@
 _pkgname=gower
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Gower's Distance"
 arch=(x86_64)

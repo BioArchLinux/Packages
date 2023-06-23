@@ -4,7 +4,7 @@
 _pkgname=adabag
 _pkgver=5.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Applies Multiclass AdaBoost.M1, SAMME and Bagging"
 arch=(any)

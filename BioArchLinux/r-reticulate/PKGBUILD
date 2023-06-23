@@ -5,7 +5,7 @@
 _pkgname=reticulate
 _pkgver=1.30
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Interface to 'Python'"
 arch=(x86_64)

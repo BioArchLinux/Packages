@@ -4,7 +4,7 @@
 _pkgname=RUnit
 _pkgver=0.4.32
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="R Unit Test Framework"
 arch=(any)

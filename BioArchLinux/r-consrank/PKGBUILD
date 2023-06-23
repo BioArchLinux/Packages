@@ -3,7 +3,7 @@
 _pkgname=ConsRank
 _pkgver=2.1.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Compute the Median Ranking(s) According to the Kemeny's Axiomatic Approach"
 arch=(any)

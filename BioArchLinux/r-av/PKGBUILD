@@ -4,7 +4,7 @@
 _pkgname=av
 _pkgver=0.8.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Working with Audio and Video in R"
 arch=(x86_64)

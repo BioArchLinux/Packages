@@ -9,7 +9,7 @@
 _pkgname=rmarkdown
 _pkgver=2.22
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=5
 pkgdesc="Dynamic Documents for R"
 arch=(any)

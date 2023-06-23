@@ -4,7 +4,7 @@
 _pkgname=methylscaper
 _pkgver=1.8.4
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Visualization of Methylation Data"
 arch=(any)

@@ -8,7 +8,7 @@
 _pkgname=memoise
 _pkgver=2.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=8
 pkgdesc="'Memoisation' of Functions"
 arch=(any)

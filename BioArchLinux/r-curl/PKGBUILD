@@ -8,7 +8,7 @@
 _pkgname=curl
 _pkgver=5.0.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Modern and Flexible Web Client for R"
 arch=(x86_64)

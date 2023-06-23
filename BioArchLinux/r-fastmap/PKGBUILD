@@ -5,7 +5,7 @@
 _pkgname=fastmap
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Fast Data Structures"
 arch=(x86_64)

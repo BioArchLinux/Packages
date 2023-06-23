@@ -6,7 +6,7 @@
 _pkgname=ps
 _pkgver=1.7.5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="List, Query, Manipulate System Processes"
 arch=(x86_64)

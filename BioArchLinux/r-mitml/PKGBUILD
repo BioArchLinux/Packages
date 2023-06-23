@@ -3,7 +3,7 @@
 _pkgname=mitml
 _pkgver=0.4-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tools for Multiple Imputation in Multilevel Modeling"
 arch=(any)

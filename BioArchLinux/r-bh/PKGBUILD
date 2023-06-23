@@ -6,7 +6,7 @@
 _pkgname=BH
 _pkgver=1.81.0-1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Boost C++ Header Files"
 arch=(any)

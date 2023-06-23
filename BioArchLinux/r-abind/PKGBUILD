@@ -7,7 +7,7 @@
 _pkgname=abind
 _pkgver=1.4-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="Combine Multidimensional Arrays"
 arch=(any)

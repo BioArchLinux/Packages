@@ -4,7 +4,7 @@
 _pkgname=mice
 _pkgver=3.16.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Multivariate Imputation by Chained Equations"
 arch=(x86_64)

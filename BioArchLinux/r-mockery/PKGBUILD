@@ -3,7 +3,7 @@
 _pkgname=mockery
 _pkgver=0.4.3
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Mocking Library for R"
 arch=(any)

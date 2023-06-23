@@ -4,7 +4,7 @@
 _pkgname=lfa
 _pkgver=2.0.10
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Logistic Factor Analysis for Categorical Data"
 arch=(x86_64)

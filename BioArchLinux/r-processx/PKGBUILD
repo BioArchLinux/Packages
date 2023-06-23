@@ -6,7 +6,7 @@
 _pkgname=processx
 _pkgver=3.8.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=6
 pkgdesc="Execute and Control System Processes"
 arch=(x86_64)

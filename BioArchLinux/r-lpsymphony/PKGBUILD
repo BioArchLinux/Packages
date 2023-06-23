@@ -4,7 +4,7 @@
 _pkgname=lpsymphony
 _pkgver=1.28.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Symphony integer linear programming solver in R"
 arch=(x86_64)

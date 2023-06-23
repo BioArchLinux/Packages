@@ -4,7 +4,7 @@
 _pkgname=speedglm
 _pkgver=0.3-5
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Fitting Linear and Generalized Linear Models to Large Data Sets"
 arch=(any)

@@ -7,7 +7,7 @@
 _pkgname=markdown
 _pkgver=1.7
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Render Markdown with 'commonmark'"
 arch=(any)
