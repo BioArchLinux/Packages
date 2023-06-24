@@ -1,14 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-r.huge
 - r-r.methodss3
 - r-r.oo
 - r-r.utils
 update_on:
-- regex: aroma.apd_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=aroma.apd
+- source: rpkgs
+  pkgname: aroma.apd
+  repo: cran
+  md5: true
 - alias: r
