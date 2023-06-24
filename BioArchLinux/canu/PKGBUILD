@@ -1,33 +1,56 @@
 # Maintainer: Chocobo1 <chocobo1 AT archlinux DOT net>
 # Previous maintainer: Roberto Rossini ("robymetallo") <roberto.rossini.9533@student.uu.se>
-
-pkgname=canu
+# Contributor: Bipin Kumar <kbipinkumar@pm.me>
+pkgname=canu 
 pkgver=2.2
 pkgrel=4
-pkgdesc="A fork of the Celera Assembler designed for high-noise single-molecule sequencing"
+pkgdesc="A single molecule sequence assembler for large and small genomes. https://doi.org/10.1101/gr.215087.116"
 arch=('i686' 'x86_64')
-url="https://canu.readthedocs.io/"
+url="https://canu.readthedocs.io/en/latest/"
 license=('custom')
-depends=('glibc' 'java-runtime' 'perl')
+makedepends=('git')
+depends=('gcc-libs' 'glibc' 'perl' 'mhap')
 optdepends=('gnuplot')
 options=('staticlibs')
-source=("$pkgname-$pkgver-src.tar.xz::https://github.com/marbl/canu/releases/download/v$pkgver/canu-$pkgver.tar.xz")
-sha256sums=('e4d0c7b82149114f442ccd39e18f7fe2061c63b28d53700ad896e022b73b7404')
+source=("${pkgname}.${pkgver}.tar.xz::https://github.com/marbl/canu/releases/download/v${pkgver}/canu-${pkgver}.tar.xz"
+        'use-arch-mhap-at-runtime.patch'
+'external-mhap.patch'
+'canu_version.patch'
+)
+provides=('meryl')
+sha256sums=('e4d0c7b82149114f442ccd39e18f7fe2061c63b28d53700ad896e022b73b7404'
+            'd94a1f933d34448a94d43b300bf7ac9294898a6a7dac4b47fb4f6c6e76762e4d'
+            'efcfa7aab0752eba85c7c9a56048b838e44076221bc6f4b37377ca16f347788f'
+            '04f84c399232d5433fcec2e62294f0d767608ae39a0bff937a50356bd44b2660')
 
+prepare() {
+  cp *.patch ${pkgname}-${pkgver}/
+  cd ${pkgname}-${pkgver}
+  patch -p1 < use-arch-mhap-at-runtime.patch
+  patch -p1 < external-mhap.patch
+  patch -p1 < canu_version.patch
+}
 
 build() {
-  cd "$pkgname-$pkgver"
-
-  make -C "src"
+  cd ${pkgname}-${pkgver}/src
+  make
 }
 
 package() {
-  cd "$pkgname-$pkgver"
-
-  install -Dm755 "build/bin"/* -t "$pkgdir/usr/bin"
-  install -Dm644 "build/lib/site_perl/canu"/*.pm -t "$pkgdir/usr/lib/site_perl/canu"
-  install -Dm644 "build/share/java/classes"/*.jar -t "$pkgdir/usr/share/java/classes"
-  install -Dm644 "build/lib"/*.a -t "$pkgdir/usr/lib"
-
-  install -Dm644 "README.licenses" -t "$pkgdir/usr/share/licenses/canu"
+  cd ${pkgname}-${pkgver}/build  
+  install -d $pkgdir/usr/bin
+  for bin in bin/*
+  do [ -f "$bin" ] || continue
+  install -Dm755 ${bin} $pkgdir/usr/${bin}
+  done
+  install -d $pkgdir/usr/lib
+  for file in lib/*
+  do [ -f "$file" ] || continue
+  install -Dm644 ${file} $pkgdir/usr/${file}
+  done
+  for file in lib/site_perl/canu/*
+  do [ -f "$file" ] || continue
+  install -Dm644 ${file} $pkgdir/usr/${file}
+  done
+  install -Dm644 ../README.licenses -t "$pkgdir/usr/share/licenses/canu"
 }

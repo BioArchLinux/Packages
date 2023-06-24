@@ -1,0 +1,12 @@
+--- canu-2.2.orig/scripts/version_update.pl	2021-08-27 01:27:04.000000000 +0530
++++ canu-2.2.new/scripts/version_update.pl	2023-06-24 11:43:58.925026735 +0530
+@@ -61,7 +61,8 @@
+ 
+ #  If in a git repo, we can get the actual values.
+ 
+-if (-d "../.git") {
++#if (-d "../.git") {
++if (0) {
+     $label = "snapshot";
+ 
+     #  Count the number of changes since the last release.
