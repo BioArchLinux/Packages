@@ -18,3 +18,7 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: libsass
+  filename: usr/lib/libsass\.so\.([^.]+)
+  repo: extra

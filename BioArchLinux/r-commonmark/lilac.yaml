@@ -11,3 +11,11 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: cmark-gfm
+  filename: usr/lib/libcmark-gfm-extensions\.so\.(.+)
+  repo: extra
+- source: alpmfiles
+  pkgname: cmark-gfm
+  filename: usr/lib/libcmark-gfm\.so\.(.+)
+  repo: extra

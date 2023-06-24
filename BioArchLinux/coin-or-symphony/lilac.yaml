@@ -12,3 +12,23 @@ update_on:
   github: coin-or/SYMPHONY
   use_latest_release: true
   prefix: releases/
+- source: alpmfiles
+  pkgname: coin-or-cgl
+  filename: usr/lib/libCgl\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: coin-or-clp
+  filename: usr/lib/libClp\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: coin-or-clp
+  filename: usr/lib/libOsiClp\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: coin-or-coinutils
+  filename: usr/lib/libCoinUtils\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: coin-or-osi
+  filename: usr/lib/libOsi\.so\.([^.]+)
+  repo: extra
