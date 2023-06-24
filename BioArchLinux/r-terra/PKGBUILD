@@ -1,39 +1,49 @@
-# system requirements: C++11, GDAL (>= 2.2.3), GEOS (>= 3.4.0), PROJ (>=4.9.3), sqlite3
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=terra
 _pkgver=1.7-39
 pkgname=r-${_pkgname,,}
-pkgver=1.7.39
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Spatial Data Analysis'
-arch=('x86_64')
+pkgdesc="Spatial Data Analysis"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL3)
 depends=(
-  r
-  r-rcpp
   gdal
+  geos
+  proj
+  r-rcpp
+)
+checkdepends=(
+  r-tinytest
+  systemd
 )
 optdepends=(
   r-deldir
   r-htmlwidgets
   r-leaflet
   r-ncdf4
-  r-parallel
   r-sf
   r-tinytest
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('31eaf4c8c42c4b4e64379f6bd47145f8')
 sha256sums=('b43859be4bad5e094d07e872f9606bc610ed03088176874181d80c9150156c0e')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla tinytest.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
