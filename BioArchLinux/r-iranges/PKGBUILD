@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=IRanges
-_pkgver=2.34.0
+_pkgver=2.34.1
 pkgname=r-${_pkgname,,}
-pkgver=2.34.0
+pkgver=2.34.1
 pkgrel=1
 pkgdesc='Foundation of integer range manipulation in Bioconductor'
 arch=('x86_64')
@@ -26,7 +26,7 @@ optdepends=(
   r-xvector
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8d9ef6480da0a3819336a7d3c2147325a45df768df1803bf24fc8d197f81758e')
+sha256sums=('3f6154e626d9029f4e66e8f64de34404323d5be62c35f134b0bbecc0d91e6a04')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
