@@ -1,0 +1,22 @@
+Description: Use mhap jar from mhap package provided by Bioarchlinux repo
+===================================================================
+--- canu-2.2.orig/src/pipelines/canu/OverlapMhap.pm	2021-08-27 01:27:04.000000000 +0530
++++ canu-2.2.new/src/pipelines/canu/OverlapMhap.pm	2023-06-24 11:58:23.382864802 +0530
+@@ -345,7 +345,7 @@
+     print F "cd ./blocks\n";
+     print F "\n";
+     print F "$javaPath $javaOpt -XX:ParallelGCThreads=",  getGlobal("${tag}mhapThreads"), " -server -Xms", $javaMemory, "m -Xmx", $javaMemory, "m \\\n";
+-    print F "  -jar $cygA \$bin/../share/java/classes/mhap-" . getGlobal("${tag}MhapVersion") . ".jar $cygB \\\n";
++    print F "  -jar $cygA /usr/share/mhap/mhap.jar $cygB \\\n";
+     print F "  --repeat-weight 0.9 --repeat-idf-scale 10 -k $merSize \\\n";
+     print F "  --supress-noise 2 \\\n"  if (defined(getGlobal("${tag}MhapFilterUnique")) && getGlobal("${tag}MhapFilterUnique") == 1);
+     print F "  --no-tf \\\n"            if (defined(getGlobal("${tag}MhapNoTf")) && getGlobal("${tag}MhapNoTf") == 1);
+@@ -464,7 +464,7 @@
+ 
+     print F "  #  Start up the producer.\n";
+     print F "  $javaPath $javaOpt -XX:ParallelGCThreads=",  getGlobal("${tag}mhapThreads"), " -server -Xms", $javaMemory, "m -Xmx", $javaMemory, "m \\\n";
+-    print F "    -jar $cygA \$bin/../share/java/classes/mhap-" . getGlobal("${tag}MhapVersion") . ".jar $cygB \\\n";
++    print F "    -jar $cygA /usr/share/mhap/mhap.jar $cygB \\\n";
+     print F "    --repeat-weight 0.9 --repeat-idf-scale 10 -k $merSize \\\n";
+     print F "    --supress-noise 2 \\\n"  if (defined(getGlobal("${tag}MhapFilterUnique")) && getGlobal("${tag}MhapFilterUnique") == 1);
+     print F "    --no-tf \\\n"            if (defined(getGlobal("${tag}MhapNoTf")) && getGlobal("${tag}MhapNoTf") == 1);
