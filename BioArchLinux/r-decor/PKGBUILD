@@ -1,0 +1,44 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: peippo <christoph+aur@christophfink.com>
+
+_pkgname=decor
+_pkgver=1.0.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=2
+pkgdesc="Retrieve Code Decorations"
+arch=(x86_64)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=(MIT)
+depends=(
+  r-tibble
+  r-vctrs
+)
+checkdepends=(
+  r-testthat
+)
+optdepends=(
+  r-covr
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('dbf160125d53938d333c7dfa571d2722')
+sha256sums=('f1159ef4d622709ecfc063c2d04ac1d7b8ff9b0930bc71dad2b20eeb9db26372')
+
+build() {
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
