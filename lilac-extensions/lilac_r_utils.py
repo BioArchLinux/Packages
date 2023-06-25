@@ -185,6 +185,7 @@ class Pkgbuild:
 license_map = {
     "Apache License (== 2.0)": "Apache",
     "Apache License 2.0": "Apache",
+    "Artistic-2.0": "Artistic2.0",
     "BSD_2_clause + file LICENSE": "BSD",
     "BSD_3_clause + file LICENSE": "BSD",
     "BSL-1.0": "Boost",
