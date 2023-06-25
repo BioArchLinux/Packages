@@ -1,9 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-decor
+- r-knitr
+- r-mockery
+- r-progress
+- r-testthat
 update_on:
-- regex: cpp11_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=cpp11
+- source: rpkgs
+  pkgname: cpp11
+  repo: cran
+  md5: true
 - alias: r
