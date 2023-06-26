@@ -1,14 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-cli
-  - r-cpp11
-  - r-lifecycle
-  - r-rlang
-  - r-tzdb
-  - r-vctrs
+- r-cli
+- r-lifecycle
+- r-rlang
+- r-tzdb
+- r-vctrs
+repo_makedepends:
+- r-cpp11
+- r-slider
+- r-testthat
 update_on:
-  - regex: clock_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=clock
+- source: rpkgs
+  pkgname: clock
+  repo: cran
+  md5: true
+- alias: r
