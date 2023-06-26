@@ -1,16 +1,16 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomeInfoDb
 _pkgver=1.36.1
 pkgname=r-${_pkgname,,}
-pkgver=1.36.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Utilities for manipulating chromosome names, including modifying them to follow a particular naming style'
-arch=('any')
+pkgdesc="Utilities for manipulating chromosome names, including modifying them to follow a particular naming style"
+arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=(Artistic2.0)
 depends=(
-  r
   r-biocgenerics
   r-genomeinfodbdata
   r-iranges
@@ -32,14 +32,15 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('635ff12af224e0f7902c35e3dc9166a8')
 sha256sums=('0f976b50b6e0c4b898502604cef3e092673ed1a253912a4ae0721b82a27d6eb0')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
