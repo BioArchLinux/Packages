@@ -1,18 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-clustergeneration
-  - r-ggplot2
-  - r-mvtnorm
-  - r-rdpack
-  - r-reshape2
-  - r-runit
+- r-envstats
+- r-ggplot2
+- r-mvtnorm
+- r-rcpp
+- r-rdpack
+- r-reshape2
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-  - regex: remaCor_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=remaCor
-  - alias: r
+- source: rpkgs
+  pkgname: remaCor
+  repo: cran
+  md5: true
+- alias: r
