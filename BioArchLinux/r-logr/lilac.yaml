@@ -1,13 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-this.path
-  - r-withr
+- r-common
+- r-withr
+repo_makedepends:
+- r-dplyr
+- r-testthat
+- r-tidylog
 update_on:
-  - regex: logr_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=logr
+- source: rpkgs
+  pkgname: logr
+  repo: cran
+  md5: true
+- alias: r
