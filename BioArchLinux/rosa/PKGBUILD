@@ -1,0 +1,42 @@
+# Maintainer: Guoyi
+
+pkgname=rosa
+pkg=Rosa
+pkgver=2022.04.16
+pkgrel=0
+pkgdesc='BioArchLinux Packages Search Web'
+arch=('any')
+url='https://github.com/BioArchLinux/Rosa'
+makedepends=('git' 'npm')
+license=('GPL')
+source=("git+$url.git")
+sha256sums=('SKIP')
+pkgver(){
+  cd "${srcdir}"/$pkg
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+
+build(){
+  cd "${srcdir}"/$pkg
+  cd frontend
+  npm install vite
+  npm run build
+}
+
+package() {
+  mkdir -p $pkgdir/usr/share/webapps/Rosa
+  mkdir -p $pkgdir/usr/share/lilac/Rosa
+
+  cd "${srcdir}"/$pkg
+
+  # systemd service
+  install -Dm 755 rosa.service $pkgdir/usr/lib/systemd/system/rosa.service
+
+  # lua part
+  install -Dm 755 rosa.lua $pkgdir/usr/share/lilac/Rosa/rosa.lua
+  install -Dm 755 rosa.watch.lua $pkgdir/usr/share/lilac/Rosa/rosa.watch.lua
+
+  # frontend vue part
+  cd frontend/disk
+  cp -r * $pkgdir/usr/share/webapps/Rosa
+}
