@@ -2,8 +2,8 @@
 
 pkgname=rosa
 pkg=Rosa
-pkgver=2022.04.16
-pkgrel=0
+pkgver=2023.06.27
+pkgrel=1
 pkgdesc='BioArchLinux Packages Search Web'
 arch=('any')
 url='https://github.com/BioArchLinux/Rosa'
