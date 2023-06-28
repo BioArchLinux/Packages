@@ -1,10 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
-- r-cpp11
 - r-forcats
 - r-hms
 - r-lifecycle
@@ -13,8 +12,16 @@ repo_depends:
 - r-tibble
 - r-tidyselect
 - r-vctrs
+repo_makedepends:
+- r-cpp11
+- r-testthat
 update_on:
-- regex: haven_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=haven
+- source: rpkgs
+  pkgname: haven
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: readstat
+  filename: usr/lib/libreadstat\.so\.([^.]+)
+  repo: extra
