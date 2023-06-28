@@ -40,7 +40,7 @@ build() {
 		-DUSE_HDF5=ON \
 		-DUSE_BAM=ON \
         -Wno-dev
-    cmake --build build
+    MAKEFLAGS=-j1 cmake --build build
 }
 
 package() {
