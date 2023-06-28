@@ -19,7 +19,7 @@ pkgver(){
 build(){
   cd "${srcdir}"/$pkg
   cd frontend
-  npm install vite
+  npm install
   npm run build
 }
 
