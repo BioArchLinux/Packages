@@ -37,6 +37,6 @@ package() {
   install -Dm 755 rosa.watch.lua $pkgdir/usr/share/lilac/Rosa/rosa.watch.lua
 
   # frontend vue part
-  cd frontend/disk
+  cd frontend/dist
   cp -r * $pkgdir/usr/share/webapps/Rosa
 }
