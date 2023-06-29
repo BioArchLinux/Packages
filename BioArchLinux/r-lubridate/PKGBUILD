@@ -1,42 +1,53 @@
-# system requirements: C++11, A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Clint Valentine <valentine.clint@gmail.com>
+# Contributor: wagnerflo <florian@wagner-flo.net>
 
 _pkgname=lubridate
 _pkgver=1.9.2
 pkgname=r-${_pkgname,,}
-pkgver=1.9.2
+pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc='Make Dealing with Dates a Little Easier'
-arch=('x86_64')
+pkgdesc="Make Dealing with Dates a Little Easier"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL)
 depends=(
-  gcc
-  r
   r-generics
   r-timechange
 )
+checkdepends=(
+  r-testthat
+)
 optdepends=(
-  r-chron
   r-covr
-  r-data.table
   r-knitr
   r-rmarkdown
   r-testthat
-  r-timedate
-  r-tis
   r-vctrs
-  r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('625d6478985cfeb135546b1321e046d5')
 sha256sums=('8976431a4affe989261cbaa5e09cd44bb42a3b16eed59a42c1698da34c6544a7')
 
+prepare() {
+  # skip test that requires a French locale
+  sed -i '/"parsing months with dots works in French linux locale"/a\ \ skip("Requires a French locale")' \
+      "$_pkgname/tests/testthat/test-parsers.R"
+}
+
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
