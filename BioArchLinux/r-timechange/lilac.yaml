@@ -1,11 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - cctz
-  - r-cpp11
-  - r-testthat
+- cctz
+repo_makedepends:
+- r-cpp11
+- r-testthat
 update_on:
-  - regex: timechange_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=timechange
+- source: rpkgs
+  pkgname: timechange
+  repo: cran
+  md5: true
+- alias: r
