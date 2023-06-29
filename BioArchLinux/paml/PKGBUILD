@@ -9,7 +9,7 @@ license=('GPL3')
 depends=('glibc')
 makedepends=('make')
 provides=('paml')
-source=("https://github.com/abacus-gene/paml/archive/refs/tags/v${pkgver}.zip")
+source=("https://github.com/abacus-gene/paml/archive/refs/tags/${pkgver}.zip")
 sha256sums=('95af68480066e22499a90c6d32613e98689d8b8ddb69358180b4dc7e2a599bed')
 prepare(){
 	cd "$pkgname-$pkgver"/
