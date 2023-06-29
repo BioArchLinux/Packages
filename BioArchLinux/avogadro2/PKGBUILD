@@ -26,7 +26,7 @@ build() {
       -DCMAKE_INSTALL_LIBDIR=lib \
       -DBUILD_SHARED_LIBS=ON \
       -DENABLE_TESTING=OFF \
-      -DUSE_VTK=OFF \
+      -DUSE_VTK=ON \
       "${srcdir}/${_pkgname}-$pkgver"
   make
 }
