@@ -1,11 +1,23 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
-repo_depends:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
 - r-cpp11
+- r-testthat
 update_on:
-- regex: systemfonts_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=systemfonts
+- source: rpkgs
+  pkgname: systemfonts
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: fontconfig
+  repo: extra
+  provided: libfontconfig.so
+  strip_release: true
+- source: alpm
+  alpm: freetype2
+  repo: extra
+  provided: libfreetype.so
+  strip_release: true
