@@ -200,6 +200,7 @@ license_map = {
     "LGPL (>= 2)": "LGPL",
     "LGPL (>= 2.1)": "LGPL",
     "LGPL-2": "LGPL2.1",
+    "Lucent Public License": "custom:LPL",
     "MIT + file LICENSE": "MIT",
 }
 
