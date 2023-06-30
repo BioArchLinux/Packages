@@ -1,7 +1,7 @@
 # Maintainer: bipin kumar <kbipinkumar@pm.me>
 pkgname=alevin-fry
 pkgver=0.8.2
-pkgrel=0
+pkgrel=1
 pkgdesc='A suite of tools for the rapid, accurate and memory-frugal processing single-cell and single-nucleus sequencing data'
 arch=(x86_64)
 depends=('gcc-libs' 'glibc' 'bzip2')
