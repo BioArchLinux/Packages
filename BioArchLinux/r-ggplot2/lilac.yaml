@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-glue
@@ -13,8 +13,18 @@ repo_depends:
 - r-tibble
 - r-vctrs
 - r-withr
+repo_makedepends:
+- r-hexbin
+- r-mapproj
+- r-quantreg
+- r-sf
+- r-sp
+- r-svglite
+- r-testthat
+- r-xml2
 update_on:
-- regex: ggplot2_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggplot2
+- source: rpkgs
+  pkgname: ggplot2
+  repo: cran
+  md5: true
 - alias: r
