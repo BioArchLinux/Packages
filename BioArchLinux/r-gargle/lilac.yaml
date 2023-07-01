@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-fs
@@ -13,8 +13,13 @@ repo_depends:
 - r-rappdirs
 - r-rlang
 - r-withr
+repo_makedepends:
+- r-httpuv
+- r-sodium
+- r-testthat
 update_on:
-- regex: gargle_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gargle
+- source: rpkgs
+  pkgname: gargle
+  repo: cran
+  md5: true
 - alias: r
