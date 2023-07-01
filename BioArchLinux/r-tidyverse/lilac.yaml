@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-broom
 - r-cli
@@ -33,8 +33,12 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-xml2
+repo_makedepends:
+- r-mockr
+- r-testthat
 update_on:
-- regex: tidyverse_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=tidyverse
+- source: rpkgs
+  pkgname: tidyverse
+  repo: cran
+  md5: true
 - alias: r
