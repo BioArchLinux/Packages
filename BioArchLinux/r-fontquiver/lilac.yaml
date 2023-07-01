@@ -1,13 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-fontbitstreamvera
-  - r-fontliberation
+- r-fontbitstreamvera
+- r-fontliberation
+repo_makedepends:
+- r-htmltools
+- r-testthat
 update_on:
-  - regex: fontquiver_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=fontquiver
-  - alias: r
+- source: rpkgs
+  pkgname: fontquiver
+  repo: cran
+  md5: true
+- alias: r
