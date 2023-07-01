@@ -1,0 +1,36 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: peippo <christoph+aur@christophfink.com>
+
+_pkgname=sodium
+_pkgver=1.2.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="A Modern and Easy-to-Use Crypto Library"
+arch=(x86_64)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=(MIT)
+depends=(
+  libsodium
+  r
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('114f6c561eaa88633704d4886ac295bf')
+sha256sums=('f76e98969710af8b6c7c7decf63706d91185eebf8a266475b554d5ad95f803a8')
+
+build() {
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}

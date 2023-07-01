@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+update_on:
+- source: rpkgs
+  pkgname: sodium
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: libsodium
+  filename: usr/lib/libsodium\.so\.([^.]+)
+  repo: extra
