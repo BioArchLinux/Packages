@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-broom
 - r-magrittr
@@ -11,8 +11,11 @@ repo_depends:
 - r-tidyr
 - r-tidyselect
 - r-vctrs
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: modelr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=modelr
+- source: rpkgs
+  pkgname: modelr
+  repo: cran
+  md5: true
 - alias: r
