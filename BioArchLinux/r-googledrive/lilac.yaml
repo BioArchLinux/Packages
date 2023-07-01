@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-gargle
@@ -17,8 +17,13 @@ repo_depends:
 - r-uuid
 - r-vctrs
 - r-withr
+repo_makedepends:
+- r-dplyr
+- r-mockr
+- r-testthat
 update_on:
-- regex: googledrive_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=googledrive
+- source: rpkgs
+  pkgname: googledrive
+  repo: cran
+  md5: true
 - alias: r
