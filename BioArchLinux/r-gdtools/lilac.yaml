@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-curl
 - r-fontquiver
@@ -9,8 +9,21 @@ repo_depends:
 - r-htmltools
 - r-rcpp
 - r-systemfonts
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: gdtools_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gdtools
+- source: rpkgs
+  pkgname: gdtools
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: cairo
+  repo: extra
+  provided: libcairo.so
+  strip_release: true
+- source: alpm
+  alpm: freetype2
+  repo: extra
+  provided: libfreetype.so
+  strip_release: true
