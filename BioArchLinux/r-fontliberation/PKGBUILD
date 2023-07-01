@@ -3,25 +3,36 @@
 _pkgname=fontLiberation
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
-pkgver=0.1.0
+pkgver=${_pkgver//-/.}
 pkgrel=3
-pkgdesc='Liberation Fonts'
-arch=('any')
+pkgdesc="Liberation Fonts"
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('custom')
+license=(custom:OFL)
 depends=(
   r
+  ttf-liberation
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('7a317aca78d58fc0b2417380cc702864')
 sha256sums=('acdea423e005873aa509e280074a3cef4796e4f7e9d77b3945d77b451ea039f0')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+
+  # symlink TTF fonts to ttf-liberation package
+  cd "$pkgdir/usr/lib/R/library/$_pkgname/fonts/liberation-fonts"
+  local _font
+  for _font in *.ttf; do
+    ln -sf "/usr/share/fonts/liberation/$_font"
+  done
 }
-# vim:set ts=2 sw=2 et:
