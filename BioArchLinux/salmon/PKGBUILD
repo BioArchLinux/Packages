@@ -8,7 +8,7 @@ pkgdesc="Highly-accurate & wicked fast transcript-level quantification from RNA-
 arch=('x86_64')
 url="https://combine-lab.github.io/$pkgname/"
 license=('GPL3')
-depends=('intel-tbb'  'jemalloc' 'boost-libs' 'gcc-libs' 'xz' 'zlib' 'glibc')
+depends=('intel-tbb' 'bzip2' 'jemalloc' 'boost-libs' 'gcc-libs' 'xz' 'zlib' 'glibc')
 makedepends=('boost>=1.55' 'cmake' 'unzip' 'cereal' 'curl' 'bzip2' 'python-sphinx')
 options=('!emptydirs')
 source=("$pkgname-$pkgver.tar.gz"::"https://github.com/COMBINE-lab/$pkgname/archive/v$pkgver.tar.gz")
