@@ -193,6 +193,7 @@ license_map = {
     "EPL": "EPL",
     "GPL": "GPL",
     "GPL (>= 2)": "GPL",
+    "GPL (>= 2.0)": "GPL",
     "GPL (>= 3)": "GPL3",
     "GPL-2": "GPL2",
     "GPL-2 | GPL-3": "GPL",
