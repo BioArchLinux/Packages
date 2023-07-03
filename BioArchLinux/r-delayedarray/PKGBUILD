@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=DelayedArray
-_pkgver=0.26.5
+_pkgver=0.26.6
 pkgname=r-${_pkgname,,}
-pkgver=0.26.5
+pkgver=0.26.6
 pkgrel=1
 pkgdesc='A unified framework for working transparently with on-disk and in-memory array-like datasets'
 arch=('x86_64')
@@ -31,7 +31,7 @@ optdepends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('73c81bc6c748edfc31bddb4b47f8fa0542d1aea485e6ed31742f66878d3d5767')
+sha256sums=('13fcb70b366b58eac46438f04c09c103d2dad69221af49900ebd28edf1d5c24b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
