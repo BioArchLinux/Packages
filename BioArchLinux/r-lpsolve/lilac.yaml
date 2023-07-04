@@ -12,3 +12,5 @@ update_on:
   pkgname: lpsolve
   filename: usr/lib/liblpsolve([^.]+)\.so
   repo: extra
+- source: manual
+  manual: 1
