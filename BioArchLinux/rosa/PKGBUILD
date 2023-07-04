@@ -2,7 +2,7 @@
 
 pkgname=rosa
 pkg=Rosa
-pkgver=2023.07.03
+pkgver=2023.07.04
 pkgrel=1
 pkgdesc='BioArchLinux Packages Search Web'
 arch=('any')
