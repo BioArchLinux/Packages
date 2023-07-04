@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-chandwich
+- r-rcpp
+- r-rcpproll
+repo_makedepends:
+- r-rcpparmadillo
+- r-testthat
+- r-zoo
+update_on:
+- source: rpkgs
+  pkgname: exdex
+  repo: cran
+  md5: true
+- alias: r
