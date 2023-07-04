@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ellipsis
+- r-ggplot2
+- r-glue
+repo_makedepends:
+- r-revdbayes
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: distributions3
+  repo: cran
+  md5: true
+- alias: r
