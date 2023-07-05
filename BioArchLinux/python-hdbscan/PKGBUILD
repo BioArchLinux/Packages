@@ -6,8 +6,8 @@ _name=${pkgname#python-}
 pkgdesc="Hierarchical Density-Based Spatial Clustering of Applications with Noise"
 url="http://github.com/scikit-learn-contrib/hdbscan"
 
-pkgver=0.8.29
-pkgrel=2
+pkgver=0.8.30
+pkgrel=1
 
 arch=("x86_64")
 license=("BSD")
@@ -28,7 +28,7 @@ depends=(
 source=(
     "https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz"
 )
-sha256sums=('7e9d7351610eaadddb281e3149a74e22e329bc0b5325f631031d4b63a6a770ae')
+sha256sums=('2743f0ffd85d5c2c1071509596fba02f0c1a4d6c74c0008fbd5b6aa427831570')
 
 build() {
     cd "${srcdir}"/${_name}-${pkgver}
