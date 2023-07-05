@@ -1,13 +1,22 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-curl
 - r-magrittr
 - r-rcpp
 update_on:
-- regex: magick_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=magick
+- source: rpkgs
+  pkgname: magick
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: imagemagick
+  filename: usr/lib/libMagick\+\+-7\.Q16HDRI\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: imagemagick
+  filename: usr/lib/libMagickCore-7\.Q16HDRI\.so\.([^.]+)
+  repo: extra
