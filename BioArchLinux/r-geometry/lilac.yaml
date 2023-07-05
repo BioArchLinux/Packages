@@ -1,15 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-linprog
 - r-lpsolve
 - r-magic
 - r-rcpp
+repo_makedepends:
 - r-rcppprogress
+- r-testthat
 update_on:
-- regex: geometry_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=geometry
+- source: rpkgs
+  pkgname: geometry
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: qhull
+  filename: usr/lib/libqhull_r\.so\.([^.]+\.[^.]+)
+  repo: extra
+update_on_build:
+- pkgbase: r-rcppprogress
