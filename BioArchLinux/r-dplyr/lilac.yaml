@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-generics
@@ -14,8 +14,15 @@ repo_depends:
 - r-tibble
 - r-tidyselect
 - r-vctrs
+repo_makedepends:
+- r-lobstr
+- r-purrr
+- r-rsqlite
+- r-stringi
+- r-testthat
 update_on:
-- regex: dplyr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=dplyr
+- source: rpkgs
+  pkgname: dplyr
+  repo: cran
+  md5: true
 - alias: r
