@@ -1,17 +1,26 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-cpp11
-  - r-diffobj
-  - r-glue
-  - r-htmltools
-  - r-lifecycle
-  - r-rlang
-  - r-testthat
-  - r-xml2
+- r-diffobj
+- r-glue
+- r-htmltools
+- r-lifecycle
+- r-rlang
+- r-testthat
+- r-xml2
+repo_makedepends:
+- r-cpp11
+- r-ggplot2
 update_on:
-  - regex: vdiffr_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=vdiffr
-  - alias: r
+- source: rpkgs
+  pkgname: vdiffr
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: libpng
+  repo: extra
+  provided: libpng16.so
+  strip_release: true
