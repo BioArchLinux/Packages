@@ -1,33 +1,32 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cvxr
 - r-desctools
 - r-doparallel
 - r-dorng
-- r-dplyr
-- r-emmeans
 - r-energy
 - r-foreach
+- r-gtools
 - r-hmisc
 - r-lme4
 - r-lmertest
-- r-magrittr
 - r-mia
+- r-multcomp
 - r-nloptr
 - r-rdpack
-- r-rlang
-- r-rngtools
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment
-- r-tibble
-- r-tidyr
 - r-treesummarizedexperiment
+repo_makedepends:
+- r-microbiome
+- r-testthat
 update_on:
-- regex: ANCOMBC_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ANCOMBC
+- source: rpkgs
+  pkgname: ANCOMBC
+  repo: bioc
+  md5: true
 - alias: r
