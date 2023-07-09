@@ -39,6 +39,4 @@ for i in $(find bin -type f | xargs file | awk -F: '/ELF/ { print $1 }' | grep -
 do
     install -Dm755 $i $pkgdir/usr/bin/$(basename $i)
 done
-
-  mv $pkgdir/usr/bin/{,idba_}test
 }
