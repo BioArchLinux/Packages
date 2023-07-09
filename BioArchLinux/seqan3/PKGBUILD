@@ -4,12 +4,33 @@ pkgrel=1
 pkgdesc="The modern C++ library for sequence analysis. Contains version 3 of the library and API docs. https://doi.org/10.1016/j.jbiotec.2017.07.017"
 arch=("any")
 url="http://www.seqan.de"
-license=('custom')
-source=("https://github.com/seqan/seqan3/releases/download/${pkgver}/seqan3-${pkgver}-Linux.tar.xz")
-sha256sums=('1ec1ac3c354a249fd6ade1a06ae5ccb32dac0dac14f75196234f689be9ede513')
+depends=()
+makedepends=('cmake' 'git' 'bzip2' 'zlib' 'glibc' 'gcc-libs' 'cereal')
+license=('CCPL' 'CC0' 'BSD')
+source=("git+https://github.com/seqan/seqan3.git#tag=${pkgver}")
+sha256sums=('SKIP')
+
+prepare (){
+    cd  ${pkgname}
+    git submodule update --init --recursive
+}
+build() {
+    cd ${pkgname}
+    cmake -B build  \
+        -DCMAKE_BUILD_TYPE='None' \
+        -DCMAKE_INSTALL_PREFIX='/usr' \
+        -DCMAKE_SKIP_RPATH=true \
+        -Wno-dev
+    cmake --build build
+}
+
+check() {
+    cd ${pkgname}
+    ctest --test-dir build --output-on-failure
+}
+
 package() {
-    mkdir -p ${pkgdir}/usr/share/doc/${pkgname}
-    mkdir -p ${pkgdir}/usr/include/${pkgname}
-    cp -rf "${srcdir}/${pkgname}-${pkgver}-Linux/include/${pkgname}/" ${pkgdir}/usr/include/
-    cp -rf "${srcdir}/${pkgname}-${pkgver}-Linux/share/doc/${pkgname}/" ${pkgdir}/usr/share/doc/
+    cd ${pkgname}
+    DESTDIR="$pkgdir" cmake --install build
+    install -Dm644 LICENSE.md ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE
 }
