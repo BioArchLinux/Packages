@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <myname at malacology dot net>
 pkgname=idba
 pkgver=1.1.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Basic iterative de Bruijn graph assembler for second-generation sequencing reads \
 	https://doi.org/10.1007/978-3-642-12683-3_28 \
 	https://doi.org/10.1093/bioinformatics/bts174
