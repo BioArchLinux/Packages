@@ -1,22 +1,21 @@
 pkgname=seqan3
 pkgver=3.2.0
-pkgrel=2
+pkgrel=1
 pkgdesc="The modern C++ library for sequence analysis. Contains version 3 of the library and API docs. https://doi.org/10.1016/j.jbiotec.2017.07.017"
 arch=("any")
 url="http://www.seqan.de"
 depends=()
 makedepends=('cmake' 'git' 'bzip2' 'zlib' 'glibc' 'gcc-libs' 'cereal')
-license=('custom')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/seqan/seqan3/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('80d41dd035407cfec83eb3a4466d0421adc27129af684290c0c4da31421e7276')
+license=('CCPL' 'CC0' 'BSD')
+source=("git+https://github.com/seqan/seqan3.git#tag=${pkgver}")
+sha256sums=('SKIP')
 
 prepare (){
-    cd  ${pkgname}-${pkgver}/submodules
-    git clone --recurse-submodules https://github.com/xxsds/sdsl-lite.git
-
+    cd  ${pkgname}
+    git submodule update --init --recursive
 }
 build() {
-    cd ${pkgname}-${pkgver}
+    cd ${pkgname}
     cmake -B build  \
         -DCMAKE_BUILD_TYPE='None' \
         -DCMAKE_INSTALL_PREFIX='/usr' \
@@ -26,13 +25,12 @@ build() {
 }
 
 check() {
-    cd ${pkgname}-${pkgver}
+    cd ${pkgname}
     ctest --test-dir build --output-on-failure
 }
 
 package() {
-
-    cd ${pkgname}-${pkgver}
+    cd ${pkgname}
     DESTDIR="$pkgdir" cmake --install build
     install -Dm644 LICENSE.md ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE
 }
