@@ -2,7 +2,7 @@
 pkgname=soapnuke
 pkgver=2.1.7
 _pkgname=SOAPnuke
-pkgrel=0
+pkgrel=1
 pkgdesc="A Tool for integrated Quality Control and Preprocessing on FASTQ or BAM/CRAM files \
 	 http://dx.doi.org/10.5524/100361"
 url="https://github.com/BGI-flexlab/SOAPnuke"
