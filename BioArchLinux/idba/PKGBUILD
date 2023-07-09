@@ -30,13 +30,15 @@ check() {
   make unittest
 }
 
-
 package() {
   cd "$srcdir/${pkgname}-$pkgver"
   make DESTDIR="$pkgdir" install
 
-for i in $(find bin -type f | xargs file | awk -F: '/ELF/ { print $1 }' | grep -vE '\.o$')
-do
-    install -Dm755 $i $pkgdir/usr/bin/$(basename $i)
+for file in bin/*; do
+  if [[ -f "$file" && -x "$file" ]]; then
+    install -Dm755 "$file" "$pkgdir/usr/bin/$(basename "$file")"
+  fi
 done
+
+  mv $pkgdir/usr/bin/{,idba_}test
 }
