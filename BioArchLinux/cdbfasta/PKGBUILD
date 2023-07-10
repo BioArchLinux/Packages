@@ -1,6 +1,6 @@
 # Maintainer: Bipin Kumar <kbipinkumar@pm.me>
 pkgname=cdbfasta 
-pkgver=2018.10.05
+pkgver=2023.07.10
 pkgrel=1
 pkgdesc="CDB (Constant DataBase) indexing and retrieval tools for FASTA files"
 arch=(x86_64)
