@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-clock
@@ -23,8 +23,26 @@ repo_depends:
 - r-timedate
 - r-vctrs
 - r-withr
+repo_makedepends:
+- r-ddalpha
+- r-dials
+- r-dimred
+- r-fastica
+- r-igraph
+- r-kernlab
+- r-mixomics
+- r-modeldata
+- r-rann
+- r-rcppml
+- r-rcpproll
+- r-rsample
+- r-rspectra
+- r-splines2
+- r-testthat
+- r-workflows
 update_on:
-- regex: recipes_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=recipes
+- source: rpkgs
+  pkgname: recipes
+  repo: cran
+  md5: true
 - alias: r
