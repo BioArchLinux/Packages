@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-purrr
+- r-rlang
+- r-tibble
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: modeldata
+  repo: cran
+  md5: true
+- alias: r
