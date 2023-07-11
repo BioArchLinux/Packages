@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-desolve
+- r-dplyr
+- r-generics
+- r-ggplot2
+- r-magrittr
+- r-mstate
+- r-muhaz
+- r-mvtnorm
+- r-numderiv
+- r-purrr
+- r-quadprog
+- r-rcpp
+- r-rlang
+- r-rstpm2
+- r-statmod
+- r-tibble
+- r-tidyr
+- r-tidyselect
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: flexsurv
+  repo: cran
+  md5: true
+- alias: r
