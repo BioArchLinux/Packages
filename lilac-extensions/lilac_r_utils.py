@@ -65,15 +65,16 @@ class Description:
                 if c == space or c == tab:
                     if value is None:
                         raise Exception("Invalid DESCRIPTION")
-                    value.append(space)
+                    if len(value) > 0:
+                        value.append(space)
                     value.extend(line.strip())
                 else:
-                    i = line.find(b": ")
+                    i = line.find(b":")
                     if i == -1:
                         error = line.decode(errors = "replace")
-                        raise Exception("Invalid line in DESCRIPTION: '{error}'")
+                        raise Exception(f"Invalid line in DESCRIPTION: '{error}'")
                     field = line[:i]
-                    value = bytearray(line[i+2:-1])
+                    value = bytearray(line[i+1:-1].strip())
                     rawdata[field] = value
 
         enc_key = b"Encoding"
@@ -95,10 +96,11 @@ class Description:
         if field not in self.desc:
             return []
         ret = []
-        for dep in self.desc[field].split(", "):
-            i = dep.find(" (")
+        for dep in self.desc[field].split(","):
+            i = dep.find("(")
             if i != -1:
                 dep = dep[:i]
+            dep = dep.strip()
             if dep != "R":
                 ret.append(self._r_name_to_arch(dep))
         return ret
@@ -218,10 +220,12 @@ class CheckFailed(Exception):
 class CheckConfig:
     def __init__(self,
         expect_license: str = None,
+        expect_needscompilation: bool = None,
         expect_systemrequirements: str = None,
         ignore_fortran_files: bool = False,
     ):
         self.expect_license = expect_license
+        self.expect_needscompilation = expect_needscompilation
         self.expect_systemrequirements = expect_systemrequirements
         self.ignore_fortran_files = ignore_fortran_files
 
@@ -322,9 +326,13 @@ def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
         raise CheckFailed(f"Wrong pkgdesc, expected '{desc.title}'")
 
 def check_arch(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
-    expected = "x86_64" if desc.needscompilation else "any"
-    if pkg.arch != [expected]:
-        raise CheckFailed(f"Wrong arch, expected {expected}")
+    if cfg.expect_needscompilation is not None:
+        if desc.needscompilation != cfg.expect_needscompilation:
+            raise CheckFailed(f"NeedsCompilation value has changed: {desc.needscompilation}")
+    else:
+        expected = "x86_64" if desc.needscompilation else "any"
+        if pkg.arch != [expected]:
+            raise CheckFailed(f"Wrong arch, expected {expected}")
 
 def check_md5sum(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if pkg.md5sums[0] != cfg.md5sum:
