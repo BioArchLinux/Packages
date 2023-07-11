@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-generics
+- r-glue
+- r-hardhat
+- r-lifecycle
+- r-modelenv
+- r-parsnip
+- r-rlang
+- r-tidyselect
+- r-vctrs
+update_on:
+- source: rpkgs
+  pkgname: workflows
+  repo: cran
+  md5: true
+- alias: r
