@@ -1,7 +1,7 @@
 # Maintainer: Bipin Kumar <kbipinkumar@pm.me>
 pkgname=cdbfasta 
 pkgver=2023.07.10
-pkgrel=1
+pkgrel=2
 pkgdesc="CDB (Constant DataBase) indexing and retrieval tools for FASTA files"
 arch=(x86_64)
 url="https://github.com/gpertea/cdbfasta"
