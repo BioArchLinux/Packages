@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-drr
+- r-magrittr
+repo_makedepends:
+- r-coranking
+- r-diffusionmap
+- r-fastica
+- r-igraph
+- r-keras
+- r-nmf
+- r-pcal1
+- r-rann
+- r-reticulate
+- r-rspectra
+- r-rtsne
+- r-tensorflow
+- r-testthat
+- r-umap
+- r-vegan
+update_on:
+- source: rpkgs
+  pkgname: dimRed
+  repo: cran
+  md5: true
+- alias: r
