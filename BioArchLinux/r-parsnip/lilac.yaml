@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-generics
+- r-ggplot2
+- r-globals
+- r-glue
+- r-hardhat
+- r-lifecycle
+- r-magrittr
+- r-pillar
+- r-prettyunits
+- r-purrr
+- r-rlang
+- r-tibble
+- r-tidyr
+- r-vctrs
+- r-withr
+repo_makedepends:
+- r-c50
+- r-dials
+- r-earth
+- r-flexsurv
+- r-keras
+- r-kernlab
+- r-kknn
+- r-liblinear
+- r-modeldata
+- r-partykit
+- r-ranger
+- r-tensorflow
+- r-testthat
+- r-xgboost
+update_on:
+- source: rpkgs
+  pkgname: parsnip
+  repo: cran
+  md5: true
+- alias: r
