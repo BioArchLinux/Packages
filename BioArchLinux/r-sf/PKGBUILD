@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=sf
-_pkgver=1.0-13
+_pkgver=1.0-14
 pkgname=r-${_pkgname,,}
-pkgver=1.0.13
-pkgrel=3
+pkgver=1.0.14
+pkgrel=1
 pkgdesc='Simple Features for R'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -62,7 +62,7 @@ optdepends=(
   r-wk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('79251044ec5e35510e95062cd379c738ca4475b435810891fce146bc4f618c86')
+sha256sums=('8b535648d537a1a95920c938e43692c1dfaac8d293ff3f506334001352c339f7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
