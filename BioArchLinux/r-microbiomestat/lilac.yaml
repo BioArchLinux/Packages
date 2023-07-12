@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-foreach
+- r-ggplot2
+- r-ggrepel
+- r-lmertest
+- r-matrixstats
+- r-modeest
+- r-phyloseq
+- r-statmod
+update_on:
+- source: rpkgs
+  pkgname: MicrobiomeStat
+  repo: cran
+  md5: true
+- alias: r
