@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-e1071
 - r-foreach
@@ -12,8 +12,19 @@ repo_depends:
 - r-recipes
 - r-reshape2
 - r-withr
+repo_makedepends:
+- r-earth
+- r-fastica
+- r-glmnet
+- r-kernlab
+- r-mda
+- r-mlmetrics
+- r-randomforest
+- r-testthat
+- r-themis
 update_on:
-- regex: caret_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=caret
+- source: rpkgs
+  pkgname: caret
+  repo: cran
+  md5: true
 - alias: r
