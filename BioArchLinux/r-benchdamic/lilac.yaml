@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-aldex2
 - r-ancombc
@@ -14,11 +14,14 @@ repo_depends:
 - r-ggdendro
 - r-ggplot2
 - r-ggridges
+- r-gunifrac
 - r-limma
 - r-lme4
+- r-maaslin2
 - r-mast
 - r-metagenomeseq
 - r-mglm
+- r-microbiomestat
 - r-noiseq
 - r-phyloseq
 - r-plyr
@@ -29,8 +32,11 @@ repo_depends:
 - r-tidytext
 - r-treesummarizedexperiment
 - r-zinbwave
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: benchdamic_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/benchdamic
+- source: rpkgs
+  pkgname: benchdamic
+  repo: bioc
+  md5: true
 - alias: r
