@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-generics
+- r-glue
+- r-gower
+- r-hardhat
+- r-lifecycle
+- r-purrr
+- r-rann
+- r-recipes
+- r-rlang
+- r-rose
+- r-tibble
+- r-withr
+repo_makedepends:
+- r-dials
+- r-modeldata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: themis
+  repo: cran
+  md5: true
+- alias: r
