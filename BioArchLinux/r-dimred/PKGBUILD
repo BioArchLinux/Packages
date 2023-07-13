@@ -21,7 +21,6 @@ checkdepends=(
   r-fastica
   r-igraph
   r-keras
-  r-nmf
   r-pcal1
   r-rann
   r-reticulate
