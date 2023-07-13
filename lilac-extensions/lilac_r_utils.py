@@ -101,7 +101,7 @@ class Description:
             if i != -1:
                 dep = dep[:i]
             dep = dep.strip()
-            if dep != "R":
+            if dep != "R" and len(dep) > 0:
                 ret.append(self._r_name_to_arch(dep))
         return ret
 
