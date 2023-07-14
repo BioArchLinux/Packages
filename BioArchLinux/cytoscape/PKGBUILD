@@ -9,7 +9,7 @@ pkgdesc="Network Data Integration, Analysis, and Visualization in a Box"
 arch=('any')
 url=https://www.cytoscape.org
 license=('LGPL')
-depends=('java-runtime=11' 'bash')
+depends=('java-runtime=17' 'bash')
 source=("https://github.com/cytoscape/cytoscape/releases/download/${pkgver}/cytoscape-unix-${pkgver}.tar.gz"
         "${pkgname}.desktop"
         "${pkgname}.png"
