@@ -1,27 +1,29 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Grey Christoforo <first name at last name dot net>
+# Contributor: Alex Branham <branham@utexas.edu>
+# Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 _pkgname=colorspace
 _pkgver=2.1-0
 pkgname=r-${_pkgname,,}
-pkgver=2.1.0
+pkgver=${_pkgver//-/.}
 pkgrel=3
-pkgdesc='A Toolbox for Manipulating and Assessing Colors and Palettes'
-arch=('x86_64')
+pkgdesc="A Toolbox for Manipulating and Assessing Colors and Palettes"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('BSD')
+license=(BSD)
 depends=(
   r
 )
 optdepends=(
-  r-datasets
   r-dplyr
   r-ggplot2
-  r-grid
   r-jpeg
   r-kernlab
-  r-kernsmooth
   r-knitr
-  r-mass
   r-mvtnorm
   r-png
   r-rcartocolor
@@ -31,22 +33,23 @@ optdepends=(
   r-scico
   r-shiny
   r-shinyjs
-  r-tcltk
-  r-utils
   r-vcd
   r-viridis
   r-wesanderson
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('e386fecdf186c037558e2e73b1f151e8')
 sha256sums=('04078abb6b54119c90dc7085d62916bf292ccb163e213f9ea70567d1be82614c')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:
