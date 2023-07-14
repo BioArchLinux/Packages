@@ -1,5 +1,10 @@
 #!/bin/sh
+JAVA_MAJOR_VERSION=$(java -version 2>&1 | sed -E -n 's/.* version "([^.-]*).*"/\1/p' | cut -d' ' -f1)
 
-unset JAVA_HOME
-export PATH="/usr/lib/jvm/java-11-openjdk/bin:$PATH"
-exec /opt/cytoscape/cytoscape.sh $@
+if [[ "$JAVA_MAJOR_VERSION" == "17" ]]; then
+  exec /opt/cytoscape/cytoscape.sh $@
+else
+  echo "Error: cytoscape runs on Java 17, but you have JAVA $JAVA_MAJOR_VERSION"
+  echo "Please switch to Java 17 by command: 'archlinux-java set'."
+  exit 1
+fi
