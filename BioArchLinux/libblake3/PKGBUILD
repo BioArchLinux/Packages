@@ -3,7 +3,7 @@
 
 pkgname=libblake3
 pkgver=1.4.1
-pkgrel=2
+pkgrel=3
 pkgdesc="the C implementation of the BLAKE3 cryptographic hash function"
 arch=(x86_64)
 url="https://github.com/BLAKE3-team/BLAKE3"
