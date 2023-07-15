@@ -1,12 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-catools
 - r-gtools
 update_on:
-- regex: gplots_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gplots
+- source: rpkgs
+  pkgname: gplots
+  repo: cran
+  md5: true
 - alias: r
