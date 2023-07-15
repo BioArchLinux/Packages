@@ -1,0 +1,32 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: rpkak <rpkak@users.noreply.github.com>
+
+pkgname=libblake3
+pkgver=1.4.1
+pkgrel=2
+pkgdesc="the C implementation of the BLAKE3 cryptographic hash function"
+arch=(x86_64)
+url="https://github.com/BLAKE3-team/BLAKE3"
+license=(custom:CC0 Apache)
+depends=(
+  glibc
+)
+makedepends=(
+  cmake
+)
+source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
+sha256sums=('33020ac83a8169b2e847cc6fb1dd38806ffab6efe79fe6c320e322154a3bea2c')
+
+build() {
+  cmake -B build -S "BLAKE3-$pkgver/c" \
+      -DCMAKE_BUILD_TYPE=None \
+      -DCMAKE_INSTALL_PREFIX=/usr \
+      -DBUILD_SHARED_LIBS=ON \
+      -Wno-dev
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" "BLAKE3-$pkgver/LICENSE"
+}
