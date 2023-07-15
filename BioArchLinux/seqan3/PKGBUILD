@@ -14,7 +14,7 @@ sha256sums=('SKIP'
             'e690a0f2b27a608edb683c871ba87e387d5cd5e323bc39944302131b988eda13')
 
 prepare (){
-    cd $srcdi/${pkgname}
+    cd $srcdir/${pkgname}
     git submodule update --init --recursive
     
     cd $srcdir/$pkgname/submodules/sdsl-lite
