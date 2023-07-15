@@ -1,9 +1,25 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- google-crc32c
+- libblake3
+repo_makedepends:
+- r-tinytest
 update_on:
-- regex: digest_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=digest
+- source: rpkgs
+  pkgname: digest
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: xxhash
+  repo: extra
+  provided: libxxhash.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
