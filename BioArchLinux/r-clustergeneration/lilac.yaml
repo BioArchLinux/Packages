@@ -1,11 +1,10 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-  - regex: clusterGeneration_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=clusterGeneration
-  - alias: r
+- source: rpkgs
+  pkgname: clusterGeneration
+  repo: cran
+  md5: true
+- alias: r
