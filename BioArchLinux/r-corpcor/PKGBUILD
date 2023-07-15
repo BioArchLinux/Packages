@@ -6,7 +6,7 @@ _pkgname=corpcor
 _pkgver=1.6.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Efficient Estimation of Covariance and (Partial) Correlation"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
