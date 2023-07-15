@@ -1,32 +1,42 @@
-# system requirements: perl (>= 5.10.0)
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: dhn <neilson+aur@sent.com>
+# Contributor: Robert Greener <me@r0bert.dev>
 
 _pkgname=gdata
 _pkgver=2.19.0
 pkgname=r-${_pkgname,,}
-pkgver=2.19.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Various R Programming Tools for Data Manipulation'
-arch=('any')
+pkgdesc="Various R Programming Tools for Data Manipulation"
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL2)
 depends=(
-  r
-  r-gtools
   perl
+  r-gtools
+)
+checkdepends=(
+  r-runit
 )
 optdepends=(
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('f238223e79decdcd86dd23220b176386')
 sha256sums=('d145be8665b583e6ea590644969917ed9bcf4d954e18c7dc12f53890d26763d3')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla runRUnitTests.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
