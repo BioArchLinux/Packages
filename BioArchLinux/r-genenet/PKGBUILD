@@ -6,7 +6,7 @@ _pkgname=GeneNet
 _pkgver=1.2.16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Modeling and Inferring Gene Networks"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
