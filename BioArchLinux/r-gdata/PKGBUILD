@@ -1,6 +1,6 @@
+# Maintainer: dhn <neilson+aur@sent.com>
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
-# Contributor: dhn <neilson+aur@sent.com>
 # Contributor: Robert Greener <me@r0bert.dev>
 
 _pkgname=gdata
@@ -20,6 +20,7 @@ checkdepends=(
   r-runit
 )
 optdepends=(
+  perl-spreadsheet-parsexlsx
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
