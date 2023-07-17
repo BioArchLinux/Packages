@@ -1,15 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
 - r-purrr
 - r-scales
 - r-stringr
 - r-tibble
+repo_makedepends:
+- r-dplyr
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: ggthemes_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggthemes
+- source: rpkgs
+  pkgname: ggthemes
+  repo: cran
+  md5: true
 - alias: r
