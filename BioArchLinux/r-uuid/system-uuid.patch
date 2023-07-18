@@ -1,0 +1,10 @@
+diff --git a/Makevars.in b/Makevars.in
+index dcc3697..02c7209 100644
+--- a/Makevars.in
++++ b/Makevars.in
+@@ -1,2 +1,3 @@
+-PKG_CPPFLAGS=-include config.h @CPPFLAGS@
+-PKG_LIBS=@LIBS@
++PKG_CPPFLAGS = -I/usr/include/uuid -I../inst/include -include config.h @CPPFLAGS@
++PKG_LIBS = -luuid @LIBS@
++OBJECTS = R.o Ruuid.o

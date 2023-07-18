@@ -1,27 +1,46 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Pranav K Anupam <pranavanupam@yahoo.com>
 
 _pkgname=uuid
 _pkgver=1.1-0
 pkgname=r-${_pkgname,,}
-pkgver=1.1.0
+pkgver=${_pkgver//-/.}
 pkgrel=9
-pkgdesc='Tools for Generating and Handling of UUIDs'
-arch=('x86_64')
+pkgdesc="Tools for Generating and Handling of UUIDs"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+license=(MIT)
 depends=(
   r
+  util-linux-libs
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e75b50ee7dc8c4c8e7083023e954ffd1c6a004431bf5e9094463e46aa760f42f')
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "system-uuid.patch")
+md5sums=('35a52b617712f0c3241a0e070f4a20f9'
+         'fc5b61316f82d529e10881188302d532')
+sha256sums=('e75b50ee7dc8c4c8e7083023e954ffd1c6a004431bf5e9094463e46aa760f42f'
+            '3cac969fc2d4b8b64bbb21c9967d9f97c57e086341fd29495d6d99d7f139a7c5')
+
+prepare() {
+  # build with system libuuid
+  cd "$_pkgname/src"
+  rm *.h
+  patch -Np1 -i ../../system-uuid.patch
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+
+  # use system uuid.h
+  ln -sf /usr/include/uuid/uuid.h "$pkgdir/usr/lib/R/library/$_pkgname/include"
 }
-# vim:set ts=2 sw=2 et:
