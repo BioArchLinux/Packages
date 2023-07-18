@@ -8,12 +8,15 @@ pkgdesc="TNT Script for Maximum Parsimony Analysis"
 arch=('x86_64')
 url="https://github.com/starsareintherose/TNT_Script"
 license=('MIT')
-makedepends=('gcc')
+makedepends=('gcc' 'cmake' 'make')
 source=(https://github.com/starsareintherose/TNT_Script/archive/refs/tags/${pkgver}.tar.gz)
 sha256sums=('3a6d8df2b70f1da33bbb982fc1a8cba46ff59c01897874e1ca40652d1cfea9c8')
 build() {
   cd "$_pkgname-$pkgver"
-  g++ tnt2winclada.cpp -o tnt2winclada
+  mkdir -p build
+  cd build
+  cmake ..
+  make
 }
 package_tnt-guoyi-script(){
   cd $_pkgname-$pkgver
@@ -22,5 +25,7 @@ package_tnt-guoyi-script(){
 
 package_tnt2winclada(){
   cd "$_pkgname-$pkgver"
-  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+  cd build
+  make DESTDIR=$pkgdir install
+  rm $pkgdir/usr/share/tnt/tnt_scripts/guoyi.run
 }
