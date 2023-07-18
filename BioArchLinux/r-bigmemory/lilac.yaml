@@ -1,14 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-bigmemory.sri
 - r-rcpp
 - r-uuid
+repo_makedepends:
+- r-bh
+- r-testthat
 update_on:
-- regex: bigmemory_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bigmemory
+- source: rpkgs
+  pkgname: bigmemory
+  repo: cran
+  md5: true
 - alias: r
