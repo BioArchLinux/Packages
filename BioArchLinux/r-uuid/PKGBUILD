@@ -6,7 +6,7 @@ _pkgname=uuid
 _pkgver=1.1-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Tools for Generating and Handling of UUIDs"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
