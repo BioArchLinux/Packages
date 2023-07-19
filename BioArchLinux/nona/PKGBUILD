@@ -11,12 +11,16 @@ depends=('lib32-glibc')
 license=('custom')
 source=("http://www.lillo.org.ar/phylogeny/Nona-PeeWee/nona-linux.tar.gz")
 sha256sums=('40698b797a3d58707521dd3cea0ebdf3f80ff5c1075382f98b81860fc426de69')
-
-package() {
-	
-	install -dm755 "$pkgdir"/usr/{bin,share/doc/$pkgname}
-	install -Dm755 ${srcdir}/piwe.doc ${pkgdir}/usr/share/doc/$pkgname/piwe.doc
+prepare() {
 	chmod +x $srcdir/nona
-	install -Dm755 $srcdir/nona $pkgdir/usr/bin/Nona-PeeWee 
-	
+}
+package() {
+	# install dir 
+	install -dm755 "$pkgdir"/usr/{bin,share/{$pkgname,doc/$pkgname}}
+	# install them
+	install -Dm755 $srcdir/piwe.doc $pkgdir/usr/share/$pkgname/piwe.doc
+	install -Dm755 $srcdir/$pkgname $pkgdir/usr/bin/$pkgname
+	# link
+	ln -s /usr/share/$pkgname/piwe.doc $pkgdir/usr/share/doc/$pkgname/piwe.doc
+	ln -s /usr/share/$pkgname/$pkgname $pkgdir/usr/bin/$pkgname	
 }
