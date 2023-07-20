@@ -30,6 +30,7 @@ repo_depends:
 - r-stringi
 - r-stringr
 - r-vdiffr
+- r-jaspgraphs
 pre_build: vcs_update
 post_build_script: |
   git_pkgbuild_commit()
