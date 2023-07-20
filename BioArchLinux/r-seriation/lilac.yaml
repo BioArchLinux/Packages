@@ -1,16 +1,26 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ca
 - r-colorspace
+- r-foreach
 - r-gclus
 - r-qap
 - r-registry
 - r-tsp
+- r-vegan
+repo_makedepends:
+- r-dbscan
+- r-dendextend
+- r-ga
+- r-rtsne
+- r-testthat
+- r-umap
 update_on:
-- regex: seriation_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=seriation
+- source: rpkgs
+  pkgname: seriation
+  repo: cran
+  md5: true
 - alias: r
