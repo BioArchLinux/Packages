@@ -14,12 +14,6 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/marbl/MashMap/archive/r
         )
 b2sums=('6dd996bf75435f85dff4782e945e69c529ab8c749511fa8a8a5464f8285e910c7fb09a986763489c85bd38d4c6872782d269d16327dab6bd36fe43b776ab26b0')
 
-prepare() {
-  cd ${_pkgname}-${pkgver}
-  sed -i '4i #include <stdint.h>' src/common/utils.cpp
-  
-}
-
 build() {
   cd ${_pkgname}-${pkgver}
   cmake -B build \
