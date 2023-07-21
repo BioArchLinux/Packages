@@ -1,9 +1,8 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-biostrings
 - r-ckmeans.1d.dp
 - r-data.table
@@ -17,8 +16,12 @@ repo_depends:
 - r-shortread
 - r-stringr
 - r-zlibbioc
+repo_makedepends:
+- r-bh
+- r-testthat
 update_on:
-- regex: CellBarcode_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CellBarcode
+- source: rpkgs
+  pkgname: CellBarcode
+  repo: bioc
+  md5: true
 - alias: r
