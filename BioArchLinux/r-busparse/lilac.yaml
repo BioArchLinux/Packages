@@ -1,11 +1,10 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
 - r-annotationfilter
-- r-bh
 - r-biocgenerics
 - r-biomart
 - r-biostrings
@@ -20,15 +19,19 @@ repo_depends:
 - r-magrittr
 - r-plyranges
 - r-rcpp
-- r-rcpparmadillo
-- r-rcppprogress
 - r-s4vectors
 - r-stringr
 - r-tibble
 - r-tidyr
 - r-zeallot
+repo_makedepends:
+- r-bh
+- r-rcpparmadillo
+- r-rcppprogress
+- r-testthat
 update_on:
-- regex: BUSpaRse_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BUSpaRse
+- source: rpkgs
+  pkgname: BUSpaRse
+  repo: bioc
+  md5: true
 - alias: r
