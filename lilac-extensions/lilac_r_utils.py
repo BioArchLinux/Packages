@@ -8,7 +8,7 @@ def r_update_pkgver_and_pkgrel(newver: str):
     """
     Update _pkgver and pkgrel used in R packages.
 
-    The pkgver variable (without underscore) should be defined as `${_pkgver//[:-]/.}`.
+    The pkgver variable (without underscore) should be defined as `${_pkgver//-/.}`.
     """
     ver_prefix = "_pkgver="
     rel_prefix = "pkgrel="
@@ -285,7 +285,7 @@ def check_optdepends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
             errors.append(f"Unnecessary optional dependency: {dep}")
 
     for dep in desc.suggests:
-        if (dep not in cfg.default_r_pkgs) and (dep not in pkg.optdepends):
+        if (dep not in cfg.default_r_pkgs) and (dep not in pkg.optdepends) and (dep not in pkg.depends):
             errors.append(f"Missing optional dependency: {dep}")
 
     if len(errors) > 0:

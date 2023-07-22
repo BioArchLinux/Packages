@@ -1,10 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-base64enc
-- r-bh
 - r-biocgenerics
 - r-dbi
 - r-digest
@@ -18,8 +17,14 @@ repo_depends:
 - r-rjson
 - r-rsvg
 - r-stringi
+repo_makedepends:
+- r-bh
+- r-rsqlite
+- r-runit
+- r-snow
 update_on:
-- regex: ChemmineR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ChemmineR
+- source: rpkgs
+  pkgname: ChemmineR
+  repo: bioc
+  md5: true
 - alias: r
