@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=viridis
-_pkgver=0.6.3
+_pkgver=0.6.4
 pkgname=r-${_pkgname,,}
-pkgver=0.6.3
-pkgrel=3
+pkgver=0.6.4
+pkgrel=1
 pkgdesc='Colorblind-Friendly Color Maps for R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -33,7 +33,7 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4a60b79745997219601a0cd1d85bc5eb8a9840ed732b06ef539dd33e1c7f1ffc')
+sha256sums=('0ba2a88bc38ff8be4d074ed2bc17fd9d746e96ed4dec03fa079d96a06541d6dc')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
