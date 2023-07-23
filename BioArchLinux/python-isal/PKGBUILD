@@ -16,7 +16,7 @@ makedepends=(
              'python-installer'
              'python-wheel'
              'python-nose'
-             'yasm'
+             'nasm'
              'python-sphinx'
              'python-sphinx_rtd_theme'
              'python-sphinx-argparse'
