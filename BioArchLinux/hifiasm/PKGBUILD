@@ -2,7 +2,7 @@
 
 pkgname=hifiasm
 pkgver=0.19.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Haplotype-resolved de novo assembler for PacBio Hifi reads. https://doi.org/10.1038/s41592-020-01056-5"
 arch=(x86_64)
 url="https://github.com/chhylp123/hifiasm"
