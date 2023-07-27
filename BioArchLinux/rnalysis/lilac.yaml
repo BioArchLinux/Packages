@@ -16,7 +16,7 @@ repo_depends:
   - python-scikit-learn-extra
   - python-grid-strategy
   - python-upsetplot
-  - python-xlmhg 
+  - python-xlmhglite 
   - python-plotly
   - python-pairwisedist
   - python-aiolimiter
