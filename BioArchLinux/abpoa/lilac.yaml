@@ -12,3 +12,5 @@ update_on:
   - source: github
     github: yangao07/abPOA
     use_latest_release: true
+  - alias: python
+  
