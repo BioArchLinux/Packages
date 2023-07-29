@@ -2,7 +2,7 @@
 
 pkgname=lvb
 pkgver=4.2
-pkgrel=0
+pkgrel=1
 pkgdesc="parsimony and simulated annealing in the search for phylogenetic trees \
 	 https://doi.org/10.1093/bioinformatics/btg402"
 arch=('x86_64')
