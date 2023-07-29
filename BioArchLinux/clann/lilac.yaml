@@ -11,4 +11,4 @@ post_build_script: |
 update_on:
   - source: github
     github: ChrisCreevey/clann
-    use_latest_relase: true
+    use_latest_release: true
