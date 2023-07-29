@@ -2,7 +2,7 @@
 pkgbase=pars-win
 pkgname=('nona-win' 'pee-wee' 'xpiwe' 'slf-wt' 'spa' 'phast' 'pars-win-extra')
 pkgver=2014.03.10
-pkgrel=0
+pkgrel=1
 pkgdesc="free parsimony programs"
 arch=('x86_64')
 url="https://www.lillo.org.ar/phylogeny/Nona-PeeWee/readme.htm"
