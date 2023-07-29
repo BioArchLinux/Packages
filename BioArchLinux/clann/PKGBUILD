@@ -2,7 +2,7 @@
 
 pkgname=clann
 pkgver=194f8aa
-pkgrel=0
+pkgrel=1
 pkgdesc="constructing consensus trees and supertrees from multiple source trees \
 	 https://doi.org/10.1093/bioinformatics/bti020"
 arch=('x86_64')
