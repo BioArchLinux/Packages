@@ -1,14 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-delayedarray
 - r-dqrng
 - r-rcpp
+repo_makedepends:
+- r-bh
+- r-testthat
 update_on:
-- regex: DelayedRandomArray_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DelayedRandomArray
+- source: rpkgs
+  pkgname: DelayedRandomArray
+  repo: bioc
+  md5: true
 - alias: r
