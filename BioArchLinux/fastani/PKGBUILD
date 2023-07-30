@@ -16,9 +16,9 @@ b2sums=('7475b14a12aadf6a9c6796f2f9fea23e89fecb7334fce7783f81150e775925372abdb7d
         '71ee77debce516c56eb959463c5a47016bbc37760444ac7e615608c663cbc90a30f228bfbd2bb8907f4d4985bcce41471de439d70465f8c4744a4c9462ced9eb')
 
 prepare() {
-  cp drop-memcpy-wrapper.patch ${_pkgname}-${pkgver}
+  #cp drop-memcpy-wrapper.patch ${_pkgname}-${pkgver}
   cd ${_pkgname}-${pkgver}
-  patch -p1 < drop-memcpy-wrapper.patch
+  #patch -p1 < drop-memcpy-wrapper.patch
   sed -i 's/-O3/-O2/g' Makefile.in
   sed -i 's/$(CXXFLAGS)/$(CXXFLAGS) $(LDFLAGS)/g' Makefile.in
   sed -i 's/@prefix@/$(DESTDIR)@prefix@/g' Makefile.in
