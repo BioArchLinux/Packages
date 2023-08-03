@@ -1,18 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-rcpp
+- r-rstan
+- r-rstantools
+repo_makedepends:
+- r-bh
 - r-rcpparmadillo
 - r-rcppeigen
 - r-rcppparallel
-- r-rstan
 - r-stanheaders
-- r-rstantools
 update_on:
-- regex: densEstBayes_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=densEstBayes
+- source: rpkgs
+  pkgname: densEstBayes
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
