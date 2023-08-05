@@ -1,22 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: starsareintherose
-    email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-curl
-  - r-jsonlite
-  - r-rcpp
+- r-curl
+- r-jsonlite
+- r-rcpp
+repo_makedepends:
+- r-testthat
 update_on:
-  - source: regex
-    regex: V8_([\d._-]+).tar.gz
-    url: https://cran.r-project.org/package=V8
-  - source: alpm
-    from_pattern: ^(\d+)\..*
-    to_pattern: \1
-    alpm: nodejs
-  - source: manual
-    manual: 1
-  - alias: r
-  - source: alpm
-    alpm: nodejs
-    strip_release: true
+- source: rpkgs
+  pkgname: V8
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: nodejs
+  filename: usr/lib/libnode\.so\.([^.]+)
+  repo: extra
