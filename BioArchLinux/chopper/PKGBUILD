@@ -1,7 +1,7 @@
 # Maintainer: bipin kumar <kbipinkumar@pm.me>
 pkgname=chopper
 pkgver=0.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Rust implementation of NanoFilt+NanoLyse intended for long read sequencing'
 arch=(x86_64)
 depends=('gcc-libs' 'glibc' 'zlib')
