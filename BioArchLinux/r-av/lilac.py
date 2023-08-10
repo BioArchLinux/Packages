@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "FFmpeg (>= 3.2); with at least libx264 and lame (mp3) drivers. Debian/Ubuntu: libavfilter-dev, Fedora/CentOS: ffmpeg-devel (via https://rpmfusion.org), MacOS Homebrew: ffmpeg.",
+        expect_systemrequirements = "FFmpeg (>= 3.2); with at least libx264 and lame (mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu: libavfilter-dev. Fedora/CentOS: either ffmpeg-free-devel or (via https://rpmfusion.org) ffmpeg-devel.",
     )
 
 def post_build():
