@@ -1,15 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-fastmap
 - r-later
 - r-magrittr
 - r-r6
 - r-rcpp
 - r-rlang
+repo_makedepends:
+- r-future
+- r-testthat
 update_on:
-- regex: promises_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=promises
+- source: rpkgs
+  pkgname: promises
+  repo: cran
+  md5: true
 - alias: r
