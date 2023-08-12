@@ -1,10 +1,11 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biocgenerics
 - r-biocparallel
+- r-classifyr
 - r-concaveman
 - r-data.table
 - r-dplyr
@@ -24,7 +25,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 update_on:
-- regex: spicyR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/spicyR
+- source: rpkgs
+  pkgname: spicyR
+  repo: bioc
+  md5: true
 - alias: r
