@@ -1,11 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-nloptr
 - r-numderiv
+- r-pracma
 update_on:
-- regex: optimx_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=optimx
+- source: rpkgs
+  pkgname: optimx
+  repo: cran
+  md5: true
 - alias: r
