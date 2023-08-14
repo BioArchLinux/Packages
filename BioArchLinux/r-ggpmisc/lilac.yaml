@@ -1,14 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-confintr
 - r-dplyr
 - r-generics
 - r-ggplot2
 - r-ggpp
 - r-lmodel2
 - r-lubridate
+- r-multcomp
+- r-multcompview
 - r-plyr
 - r-polynom
 - r-quantreg
@@ -16,9 +19,14 @@ repo_depends:
 - r-scales
 - r-splus2r
 - r-tibble
-- r-confintr
+repo_makedepends:
+- r-broom
+- r-broom.mixed
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: ggpmisc_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggpmisc
+- source: rpkgs
+  pkgname: ggpmisc
+  repo: cran
+  md5: true
 - alias: r
