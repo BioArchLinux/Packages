@@ -8,9 +8,21 @@ pkgrel=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
 arch=('x86_64')
 url='https://github.com/CJ-Chen/TBtools'
-license=('custom')
-depends=('java-runtime' 'bash')
-makedepends=('git' 'unzip')
+license=('unknown')
+depends=('java-runtime' 
+         'bash')
+makedepends=('git' 
+             'unzip')
+optdepends=('blast+: BLAST support'
+            'diamond: quick blast(needed in quick MCScanx scan) support'
+            'mcscanx: collinear scan support'
+            'hmmer: HMM Search support'
+            'muscle: align support'
+            'trimal: large scale align support'
+            'iqtree: maximum likelihood phylogenomic tree support'
+            'kaks_calculator: kaks calculate support'
+            )
+            
 source=("git+https://github.com/CJ-Chen/TBtools.git"
         "$pkgname.desktop"
         "$pkgname.sh")
