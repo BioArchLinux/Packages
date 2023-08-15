@@ -1,0 +1,27 @@
+# Maintainer: Kiri <kiri@vern.cc>
+# Contributor: Michael Schubert <mschu.dev at gmail>
+# Contributor: Mick Elliot <micke at sfu dot ca>
+# Contributor: Damir Perisa <damir.perisa@bluewin.ch>
+pkgname=tcoffee
+pkgver=13.46.0.919e8c6b
+pkgrel=1
+arch=('i686' 'x86_64')
+license=('GPL2')
+pkgdesc="An alignment tool for Protein, DNA and RNA sequences. https://doi.org/10.1006/jmbi.2000.4042"
+url="http://www.tcoffee.org"
+makedepends=('gcc-fortran')
+depends=('gcc-libs')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/cbcrg/tcoffee/releases/tag/Version_${pkgver}")
+sha256sums=('f35f8b2239b52d494f581500c70e20dd064f0da30b94a7224b818ea96266e378')
+
+build() {
+  cd "$srcdir/T-COFFEE_distribution_Version_$pkgver/t_coffee_source"
+  make CC="g++ -fpermissive" FCC=gfortran all
+}
+
+package() {
+  cd "$srcdir/T-COFFEE_distribution_Version_$pkgver/t_coffee_source"
+  install -Dm755 t_coffee "$pkgdir/usr/bin/t_coffee"
+  install -Dm755 TMalign "$pkgdir/usr/bin/TMalign"
+}
+
