@@ -15,6 +15,7 @@ repo_depends:
 - r-rlang
 - r-rose
 - r-tibble
+- r-vctrs
 - r-withr
 repo_makedepends:
 - r-dials
