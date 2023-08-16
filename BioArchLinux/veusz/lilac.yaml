@@ -1,14 +1,13 @@
-build_prefix: extra-x86_64
 maintainers:
-- github: kiri2002
-  email: kiri@vern.cc
+  - github: kiri2002
+    email: kiri@vern.cc
+build_prefix: extra-x86_64
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-- regex: class=\"Link--primary\">veusz-(.*?)</a></h2>
-  source: regex
-  url: https://github.com/veusz/veusz/tags
-- alias: python
+  - source: pypi
+    pypi: veusz
+  - alias: python
