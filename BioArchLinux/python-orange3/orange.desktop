@@ -1,9 +1,0 @@
-#!/usr/bin/env
-[Desktop Entry]
-Name=Orange
-Comment=Component-based data mining framework.
-Terminal=false
-Icon=orange
-Type=Application
-Exec=orange %U
-Categories=Education;Science;
