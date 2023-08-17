@@ -1,13 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: kiri2002
-  email: kiri@vern.cc
+  - github: kiri2002
+    email: kiri@vern.cc
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
+repo_depends:
+  - python2
 update_on:
-- regex: meme-(.*?).tar.gz
-  source: regex
-  url: https://meme-suite.org/meme/meme-software/index.html
+  - regex: meme-(.*?).tar.gz
+    source: regex
+    url: https://meme-suite.org/meme/meme-software/index.html
