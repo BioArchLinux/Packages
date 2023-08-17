@@ -11,11 +11,12 @@ url="http://meme-suite.org/"
 license=("custom")
 depends=("perl-html-template"
          "tcsh"
-         "python2"
          "perl-xml-parser"
          "openmpi"
          "imagemagick"
-         "perl-xml-simple")
+         "perl-xml-simple"
+         "libxslt"
+         "python2")
 source=("http://meme-suite.org/meme-software/${pkgver}/meme-${pkgver}${_minor}.tar.gz")
 sha256sums=('203abf6d89da15f346e6cbf25795fb0659020755df54e8b4b69cb0d4e636e8a1')
 
