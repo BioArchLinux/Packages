@@ -9,5 +9,5 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: github
-    github: Kiri2002/TBtools
+    github: CJ-Chen/TBtools
     use_max_tag: true
