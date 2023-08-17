@@ -1,4 +1,4 @@
-# Maintainer: kiri <kiri@vern.cc>
+# Maintainer: Kiri <kiri@vern.cc>
 # Contributor: wangzhichao <wangzhichao1990@126.com>
 
 pkgname=tbtools
@@ -11,8 +11,7 @@ url='https://github.com/CJ-Chen/TBtools'
 license=('unknown')
 depends=('java-runtime'
          'bash')
-makedepends=('git'
-             'unzip')
+makedepends=('unzip')
 optdepends=('blast+: BLAST support'
             'diamond: quick blast(needed in quick MCScanx scan) support'
             'mcscanx: collinear scan support'
@@ -20,27 +19,23 @@ optdepends=('blast+: BLAST support'
             'muscle: align support'
             'trimal: large scale align support'
             'iqtree: maximum likelihood phylogenomic tree support'
-            'kaks_calculator: kaks calculate support'
-            )
-source=("git+https://github.com/Kiri2002/TBtools.git"
+            'kaks_calculator: kaks calculate support')
+source=("${pkgname}-${pkgver}.exe::https://github.com/CJ-Chen/TBtools/releases/download/${pkgver}/TBtools_windows-x64_2_0.exe"
         "$pkgname.desktop"
         "$pkgname.sh")
-sha256sums=('4ae4527d62953d48794e9b7855f92891051c041cfd18b1cb3a5c2bb4ea561277'
+sha256sums=('SKIP'
             '6fbce89df42435fc2d618a7f0600077e872c751d70547041dad639e68447fb7d'
             '04367e92b51a3717a38c76f07892282458ed9aaa7c3f47ca47ef62de1c30c90f')
-pkgver() {
-  cd "$_pkgname"
-  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
-}
+
 package() {
-    mkdir -p $pkgdir/usr/share/$pkgname
+    cd $srcdir
     # unzip
-    unzip $srcdir/TBtools/TBtools_JRE1.6.jar
+    unzip TBtools_JRE*.jar Icons/TBtools*.png
     # install source
     install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
     install -Dm 644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
     # install jar
-    install -Dm 755 $srcdir/TBtools/TBtools*.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
+    install -Dm 755 $srcdir/TBtools*.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
     # intall icon
     install -Dm 644 $srcdir/Icons/TBtoolsLogo.png $pkgdir/usr/share/icons/hicolor/720x720/apps/$pkgname.png
     install -Dm 644 $srcdir/Icons/TBtoolsLogo16x16.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
