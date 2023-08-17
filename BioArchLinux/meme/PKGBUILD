@@ -16,10 +16,8 @@ depends=("perl-html-template"
          "openmpi"
          "imagemagick"
          "perl-xml-simple")
-source=("http://meme-suite.org/meme-software/${pkgver}/meme-${pkgver}${_minor}.tar.gz"
-        "LICENSE")
-sha256sums=('203abf6d89da15f346e6cbf25795fb0659020755df54e8b4b69cb0d4e636e8a1'
-            '8569fc5ae37eef341bc300cb3b62ec22f583a51841e656dd3b39dd8884e44aab')
+source=("http://meme-suite.org/meme-software/${pkgver}/meme-${pkgver}${_minor}.tar.gz")
+sha256sums=('203abf6d89da15f346e6cbf25795fb0659020755df54e8b4b69cb0d4e636e8a1')
 
 build() {
     cd $srcdir/${pkgname}-${pkgver%_*}
@@ -35,9 +33,8 @@ build() {
 }
 
 package() {
-  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
   cd "${srcdir}/${pkgname}-${pkgver%_*}"
-
+  install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
   make prefix="${pkgdir}/usr" install
 
   # Rename Perl modules
