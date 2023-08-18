@@ -2,8 +2,8 @@
 
 _name="cclib"
 pkgname="python-${_name}"
-pkgver=1.7.2
-pkgrel=3
+pkgver=1.8
+pkgrel=1
 pkgdesc="A library for parsing and interpreting the results of computational chemistry packages."
 arch=("any")
 url="http://cclib.github.io"
@@ -15,7 +15,7 @@ optdepends=('python-openbabel: for generating `OBMol`s of results'
             'python-pandas: for generating DataFrames of parsed results'
             'python-scipy: for calculating properties of nuclear configurations')
 source=("https://github.com/${_name}/${_name}/archive/v${pkgver}.tar.gz")
-sha256sums=('ca83ef666424d861eb3501d955da23db45793b0fd10b2cbff9f4dbbbf770e0d1')
+sha256sums=('e77af29ff437a0376d67fa6b3998a3cbd653a8513b5d6b33e8dd8c3c00f87664')
 
 package() {
   cd "${srcdir}/${_name}-${pkgver}"
