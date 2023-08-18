@@ -19,7 +19,7 @@ optdepends=('python-h5py:  HDF5 support'
             'python-iminuit: improved fitting'
             'python-astropy: VO table import and FITS import'
             'ghostscript: for EPS/PS output')
-source=("https://github.com/veusz/veusz/releases/download/veusz-${pkgver}/veusz-${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${pkgname::1}/${pkgname}/${pkgname}-$pkgver.tar.gz")
 sha256sums=('c2171ac45e4b30424d8fc35261e2e99dbe6e25ba1197ebc24355b106b26395d1')
 
 build() {
