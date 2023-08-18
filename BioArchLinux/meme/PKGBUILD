@@ -4,10 +4,10 @@
 pkgname=meme
 pkgver=5.5.3
 pkgrel=1
-pkgdesc="The MEME suite provides tools for discovering and using protein and DNA sequence motifs. https://doi.org/10.1093/nar/gkv416"
+pkgdesc="Motif-based sequence analysis tools. https://doi.org/10.1093/nar/gkv416"
 arch=("i686"
       "x86_64")
-url="http://meme-suite.org/"
+url="http://meme-suite.org"
 license=("custom")
 depends=("perl-html-template"
          "tcsh"
@@ -17,11 +17,11 @@ depends=("perl-html-template"
          "perl-xml-simple"
          "libxslt"
          "python2")
-source=("http://meme-suite.org/meme-software/${pkgver}/meme-${pkgver}${_minor}.tar.gz")
+source=("http://meme-suite.org/meme-software/${pkgver}/meme-${pkgver}.tar.gz")
 sha256sums=('203abf6d89da15f346e6cbf25795fb0659020755df54e8b4b69cb0d4e636e8a1')
 
 build() {
-    cd $srcdir/${pkgname}-${pkgver%_*}
+    cd $srcdir/${pkgname}-${pkgver}
 
     export MEME_ETC_DIR="/etc/meme"
     LDFLAGS="-Wl,--allow-multiple-definition" \
@@ -34,7 +34,7 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${pkgname}-${pkgver%_*}"
+  cd "${srcdir}/${pkgname}-${pkgver}"
   install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
   make prefix="${pkgdir}/usr" install
 
@@ -43,17 +43,17 @@ package() {
   perl_minor=$(perl -e '$^V =~ /\.(\d+)\./ and print $1; print "\n"')
 
   mkdir -p "${pkgdir}/usr/lib/perl${perl_major}/${perl_major}.${perl_minor}/vendor_perl"
-  for fname in $(ls -1 "${pkgdir}/usr/lib/meme-${pkgver}${_minor}/perl"); do
-    if [[ $fname = meme-*.pm ]]; then
-      mv "${pkgdir}/usr/lib/meme-${pkgver}${_minor}/perl/${fname}" "${pkgdir}/usr/lib/perl${perl_major}/${perl_major}.${perl_minor}/vendor_perl/${fname#meme-}"
+  for fname in $(ls -1 "${pkgdir}/usr/lib/meme-${pkgver}/perl"); do
+    if [[ ${fname} = meme-*.pm ]]; then
+      mv "${pkgdir}/usr/lib/meme-${pkgver}/perl/${fname}" "${pkgdir}/usr/lib/perl${perl_major}/${perl_major}.${perl_minor}/vendor_perl/${fname#meme-}"
     fi
   done
-  rmdir "${pkgdir}/usr/lib/meme-${pkgver}${_minor}/perl"
+  rmdir "${pkgdir}/usr/lib/meme-${pkgver}/perl"
 
   # Rename Python
-  for fname in $(ls -1 "${pkgdir}/usr/lib/meme-${pkgver}${_minor}/python"); do
-    if [[ $fname = meme-* ]]; then
-      mv "${pkgdir}/usr/lib/meme-${pkgver}${_minor}/python/${fname}" "${pkgdir}/usr/lib/meme-${pkgver}${_minor}/python/${fname#meme-}"
+  for fname in $(ls -1 "${pkgdir}/usr/lib/meme-${pkgver}/python"); do
+    if [[ ${fname} = meme-* ]]; then
+      mv "${pkgdir}/usr/lib/meme-${pkgver}/python/${fname}" "${pkgdir}/usr/lib/meme-${pkgver}/python/${fname#meme-}"
     fi
   done
 
@@ -66,7 +66,7 @@ package() {
   ln -s "meme-mast_xml_to_html" "${pkgdir}/usr/bin/mast_xml_to_html"
   ln -s "meme-mast_xml_to_txt" "${pkgdir}/usr/bin/mast_xml_to_txt"
 
-  for fname in $(ls -1 "${pkgdir}/usr/libexec/${pkgname}-${pkgver%_*}/"); do
-    ln -s "/usr/libexec/${pkgname}-${pkgver%_*}/${fname}" "${pkgdir}/usr/bin/${fname}"
+  for fname in $(ls -1 "${pkgdir}/usr/libexec/${pkgname}-${pkgver}/"); do
+    ln -s "/usr/libexec/${pkgname}-${pkgver}/${fname}" "${pkgdir}/usr/bin/${fname}"
   done
 }
