@@ -9,7 +9,7 @@ depends=()
 makedepends=('cmake' 'git' 'bzip2' 'zlib' 'glibc' 'gcc-libs' 'cereal')
 license=('CCPL' 'BSD')
 source=("git+https://github.com/seqan/seqan3.git#tag=${pkgver}"
-sha256sums=('SKIP'
+sha256sums=('SKIP')
 
 prepare (){
     cd $srcdir/${pkgname}
