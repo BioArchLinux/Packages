@@ -1,36 +1,43 @@
-# Maintainer: kiri <kiri@vern.cc>
+# Maintainer: Kiri <kiri@vern.cc>
 # Contributor: wangzhichao <wangzhichao1990@126.com>
 
 pkgname=tbtools
 _pkgname=TBtools
-pkgver=2023.07.14
+pkgver=2.001
 pkgrel=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
 arch=('x86_64')
 url='https://github.com/CJ-Chen/TBtools'
-license=('custom')
-depends=('java-runtime' 'bash')
-makedepends=('git' 'unzip')
-source=("git+https://github.com/CJ-Chen/TBtools.git"
-        "$pkgname.desktop"
-        "$pkgname.sh")
-sha256sums=('SKIP'
-            '6fbce89df42435fc2d618a7f0600077e872c751d70547041dad639e68447fb7d'
-            '04367e92b51a3717a38c76f07892282458ed9aaa7c3f47ca47ef62de1c30c90f')
-pkgver() {
-  cd "$_pkgname"
-  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+license=('unknown')
+depends=('java-runtime'
+         'bash')
+makedepends=('unzip'
+             'gendesk')
+optdepends=('blast+: BLAST support'
+            'diamond: quick blast(needed in quick MCScanx scan) support'
+            'mcscanx: collinear scan support'
+            'hmmer: HMM Search support'
+            'muscle: align support'
+            'trimal: large scale align support'
+            'iqtree: maximum likelihood phylogenomic tree support'
+            'kaks_calculator: kaks calculate support')
+source=("https://github.com/CJ-Chen/TBtools/releases/download/${pkgver}/TBtools_JRE1.6.jar"
+        "LICENSE")
+sha256sums=('79bb52b7e99a9d550721256830462c03bd22b56a249f0458d9ea0543512b3cef'
+            'ea019d305df02a42515d8fdd378158503fb49349e3c10aa94569e7f301f72c1f')
+
+prepare() {
+    # generate /usr/bin file
+    printf '#!/usr/bin/sh\nexec java -jar /usr/share/tbtools/tbtools*.jar "$@"\n'>${srcdir}/${pkgname}
+    # generate desk entry
+    gendesk -f -n --pkgname "${pkgname}" --pkgdesc "${pkgdesc}" --exec="${pkgname}" --name="Tool Box for biologistists" --categories="Science"
 }
+
 package() {
-    mkdir -p $pkgdir/usr/share/$pkgname
-    # unzip
-    unzip $srcdir/TBtools/TBtools_JRE1.6.jar
-    # install source
-    install -Dm 755 $srcdir/$pkgname.sh $pkgdir/usr/bin/$pkgname
-    install -Dm 644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
-    # install jar
-    install -Dm 755 $srcdir/TBtools/TBtools*.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
-    # intall icon
-    install -Dm 644 $srcdir/Icons/TBtoolsLogo.png $pkgdir/usr/share/icons/hicolor/720x720/apps/$pkgname.png
-    install -Dm 644 $srcdir/Icons/TBtoolsLogo16x16.png $pkgdir/usr/share/icons/hicolor/16x16/apps/$pkgname.png
+    install -Dm644 ${srcdir}/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    install -Dm 755 ${srcdir}/${pkgname} ${pkgdir}/usr/bin/${pkgname}
+    install -Dm 644 ${srcdir}/${pkgname}.desktop ${pkgdir}/usr/share/applications/${pkgname}.desktop
+    install -Dm 755 ${srcdir}/TBtools*.jar ${pkgdir}/usr/share/${pkgname}/${pkgname}.jar
+    install -Dm 644 ${srcdir}/Icons/TBtoolsLogo.png ${pkgdir}/usr/share/icons/hicolor/720x720/apps/${pkgname}.png
+    install -Dm 644 ${srcdir}/Icons/TBtoolsLogo16x16.png ${pkgdir}/usr/share/icons/hicolor/16x16/apps/${pkgname}.png
 }
