@@ -3,7 +3,7 @@
 
 pkgname=tbtools
 _pkgname=TBtools
-pkgver=2.000
+pkgver=2.001
 pkgrel=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
 arch=('x86_64')
@@ -21,9 +21,9 @@ optdepends=('blast+: BLAST support'
             'trimal: large scale align support'
             'iqtree: maximum likelihood phylogenomic tree support'
             'kaks_calculator: kaks calculate support')
-source=("${pkgname}-${pkgver}.exe::https://github.com/CJ-Chen/TBtools/releases/download/${pkgver}/TBtools_windows-x64_2_0.exe"
+source=("https://github.com/CJ-Chen/TBtools/releases/download/${pkgver}/TBtools_JRE1.6.jar"
         "LICENSE")
-sha256sums=('SKIP'
+sha256sums=('79bb52b7e99a9d550721256830462c03bd22b56a249f0458d9ea0543512b3cef'
             'ea019d305df02a42515d8fdd378158503fb49349e3c10aa94569e7f301f72c1f')
 
 prepare() {
@@ -31,8 +31,6 @@ prepare() {
     printf '#!/usr/bin/sh\nexec java -jar /usr/share/tbtools/tbtools*.jar "$@"\n'>${srcdir}/${pkgname}
     # generate desk entry
     gendesk -f -n --pkgname "${pkgname}" --pkgdesc "${pkgdesc}" --exec="${pkgname}" --name="Tool Box for biologistists" --categories="Science"
-    # extract icons
-    unzip ${srcdir}/TBtools_JRE*.jar Icons/TBtools*.png
 }
 
 package() {
