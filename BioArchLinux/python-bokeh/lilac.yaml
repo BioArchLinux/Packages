@@ -10,8 +10,6 @@ post_build_script: |
 repo_depends:
   - python-xyzservices
 update_on:
-  - source: github
-    github: bokeh/bokeh
-    use_max_tag: true
-    prefix: 'v'
+  - source: pypi
+    pypi: bokeh
   - alias: python
