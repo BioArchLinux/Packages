@@ -11,17 +11,15 @@ pkgdesc="An alignment tool for Protein, DNA and RNA sequences. https://doi.org/1
 url="http://www.tcoffee.org"
 makedepends=('gcc-fortran')
 depends=('gcc-libs')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/cbcrg/tcoffee/releases/tag/Version_${pkgver}")
-sha256sums=('f35f8b2239b52d494f581500c70e20dd064f0da30b94a7224b818ea96266e378')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/cbcrg/tcoffee/archive/refs/tags/Version_${pkgver}.tar.gz")
+sha256sums=('e134f5c075eaa95dd6bc2b4da01696150ea78185d34399d465709bd9cf743d08')
 
 build() {
-  cd "$srcdir/T-COFFEE_distribution_Version_$pkgver/t_coffee_source"
+  cd "$srcdir/tcoffee-Version_${pkgver}/t_coffee/src"
   make CC="g++ -fpermissive" FCC=gfortran all
 }
 
 package() {
-  cd "$srcdir/T-COFFEE_distribution_Version_$pkgver/t_coffee_source"
+  cd "$srcdir/tcoffee-Version_${pkgver}/t_coffee/src"
   install -Dm755 t_coffee "$pkgdir/usr/bin/t_coffee"
-  install -Dm755 TMalign "$pkgdir/usr/bin/TMalign"
 }
-
