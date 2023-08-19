@@ -2,23 +2,25 @@
 # Contributor: Excitable Snowball <excitablesnowball@gmail.com>
 
 pkgname=python-bokeh
-_name=bokeh
-pkgver=3.2.1
+_module=bokeh
+pkgver=3.2.2
 pkgrel=1
 pkgdesc='Interactive Web Plotting for Python'
 arch=('any')
 url='http://bokeh.pydata.org/'
 license=('BSD')
-source=("$_name-$pkgver.tar.gz::https://github.com/bokeh/bokeh/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('2371e9a08fd60766879ee8607a4ae54267acfed1e5dee0cc6a20d8348e02e814')
+source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
+sha256sums=('b2959b8524d69ec4e7886bc36407445f0a92e1f19530d3bfc4045236a1b7a6ff')
 depends=('python-jinja'
          'python-contourpy'
+         'python'
          'python-numpy'
          'python-packaging'
          'python-pandas'
          'python-pillow'
          'python-yaml'
          'python-tornado'
+         'python-typing_extensions'
          'python-xyzservices')
 optdepends=('python-selenium: svg export'
             'geckodriver: svg export'
@@ -27,7 +29,7 @@ optdepends=('python-selenium: svg export'
             'python-psutil: detailed memory logging'
             'python-networkx: plot directly from NetworkX data'
             'python-sphinx: support sphinx documentation')
-makedepends=('python-build' 'python-installer' 'nodejs' 'git' 'node-gyp')
+makedepends=('python-build' 'python-installer' 'nodejs' 'git' 'node-gyp' 'python-virtualenv')
 
 build() {
   cd "$srcdir/bokeh-$pkgver"
