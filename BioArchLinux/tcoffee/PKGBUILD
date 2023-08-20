@@ -4,7 +4,7 @@
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=tcoffee
 pkgver=13.46.0.919e8c6b
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL2')
 pkgdesc="An alignment tool for Protein, DNA and RNA sequences. https://doi.org/10.1006/jmbi.2000.4042"
