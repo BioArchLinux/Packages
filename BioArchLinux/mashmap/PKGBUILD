@@ -8,7 +8,7 @@ pkgdesc='Fast approximate aligner for long DNA sequences'
 arch=(x86_64)
 url="https://github.com/marbl/MashMap"
 license=('custom: Public Domain')
-depends=('glibc' 'gsl' 'zlib' 'gcc-libs' 'perl' 'python')
+depends=('glibc' 'gsl' 'zlib' 'gcc-libs' 'perl' 'python' 'htslib')
 makedepends=('cmake' 'git')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/marbl/MashMap/archive/refs/tags/v${pkgver}.tar.gz"
         )
