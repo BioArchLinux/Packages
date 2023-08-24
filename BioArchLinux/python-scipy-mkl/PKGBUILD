@@ -1,0 +1,48 @@
+# Maintainer: Jingbei Li <i@jingbei.li>
+# Contributor: Thomas Dziedzic < gostrc at gmail >
+# Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
+# Contributor: Ray Rashif <schiv@archlinux.org>
+# Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
+# Contributor: Bodor Dávid Gábor <david.gabor.bodor@gmail.com>
+# Contributor: Andrzej Giniewicz <gginiu@gmail.com>
+
+pkgname=python-scipy-mkl
+_module=scipy
+pkgver=1.11.2
+pkgrel=1
+pkgdesc="SciPy is open-source software for mathematics, science, and engineering."
+arch=('x86_64')
+url="http://www.scipy.org/"
+license=('BSD')
+depends=('intel-oneapi-mkl' 'python-numpy' 'python-pooch' 'python-yaml' 'python-platformdirs' 'python' 'gcc-libs' 'glibc')
+provides=("python-scipy")
+conflicts=('python-scipy')
+makedepends=('cython' 'gcc-fortran' 'meson-python' 'procps-ng' 'pybind11' 'python-build' 'python-installer' 'python-pythran')
+checkdepends=('python-pytest')
+optdepends=('python-pillow: for image saving module')
+source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
+sha256sums=('b29318a5e39bd200ca4381d80b065cdf3076c7d7281c5e36569e99273867f61d')
+
+build() {
+	source /opt/intel/oneapi/setvars.sh
+	cd ${_module}-${pkgver}
+
+	# https://github.com/scipy/scipy/issues/16200#issuecomment-1615094519
+	python -m build --wheel --no-isolation --skip-dependency-check \
+		-C setup-args=-Dblas=mkl-dynamic-lp64-seq \
+		-C setup-args=-Dlapack=mkl-dynamic-lp64-seq
+}
+
+check() {
+	cd ${_module}-${pkgver}
+	python -m venv --system-site-packages test-env
+	test-env/bin/python -m installer dist/*.whl
+	cd test-env
+	bin/python -c "from scipy import test; test('full')"
+}
+
+package() {
+	cd scipy-${pkgver}
+	python -m installer --destdir="$pkgdir" dist/*.whl
+	install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
