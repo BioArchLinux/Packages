@@ -41,7 +41,7 @@ check() {
 
 package() {
   cd numpy-$pkgver
-  python -m installer --destdir="$pkgdir" dist/*.whl
+  python setup.py install --prefix=/usr --root="${pkgdir}" --optimize=1
   install -m755 -d "${pkgdir}/usr/share/licenses/python-numpy"
   install -m644 LICENSE.txt "${pkgdir}/usr/share/licenses/python-numpy/"
   install -Dm644 LICENSE.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
