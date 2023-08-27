@@ -6,11 +6,6 @@ pkgname=rstudio-desktop
 pkgver=2023.06.2+561
 _pkgver=${pkgver//+/.}
 _srcname=rstudio-${pkgver//+/-}
-_gitcommit=${_get_commit_from_tag}
-_gitname=rstudio-rstudio-${_gitcommit}
-_gwtver=2.8.2
-_ginver=2.1.2
-_nodever=16.14.0
 _pandocver="current"
 _quarto="FALSE"
 pkgrel=1
@@ -23,28 +18,14 @@ makedepends=('git' 'cmake>=3.1.0' 'boost' 'desktop-file-utils' 'jdk8-openjdk' 'a
 optdepends=('git: for git support'
             'subversion: for subversion support'
             'openssh-askpass: for a git ssh access'
-            'quarto: for Quarto projects support')
-
-provides=('rstudio-desktop')
-conflicts=('rstudio-desktop' 'rstudio-desktop-bin' 'rstudio-desktop-preview' 'rstudio-desktop-git')
-source=("rstudio-$_pkgver.tar.gz::https://github.com/rstudio/rstudio/archive/refs/tags/v2023.06.2+561.tar.gz"
-        "https://github.com/quarto-dev/quarto/archive/refs/heads/release/rstudio-cherry-blossom.zip"
-        "https://nodejs.org/dist/v${_nodever}/node-v${_nodever}-linux-x64.tar.gz"
+            )
+source=("rstudio-$_pkgver.tar.gz::https://github.com/rstudio/rstudio/archive/refs/tags/v${pkgver}.tar.gz"
         "qt.conf"
         "pandoc_version.patch")
 
 sha256sums=('83469a4b7311d745c24d7d9e55c44aa4325dda3bdde50a903e2f9ead47d75cc7'
-            'df3a040f0cf4ce1892519082dd6822a8ca433e9e4f02d9394ab2931733f7e5a6'
-            '2c69e7b040c208b61ebf9735c63d2e5bcabfed32ef05a9b8dd5823489ea50d6b'
             '723626bfe05dafa545e135e8e61a482df111f488583fef155301acc5ecbbf921'
             '286925c442c1818979714feeec1577f03ae8a3527d2478b0f55238e2272a0b9e')
-
-noextract=("gin-${_ginver}.zip")
-
-# Retrives commit id of git tag associated with release  
-_get_commit_from_tag() {
-  git ls-remote https://github.com/rstudio/rstudio.git | grep v${pkgver} | sed 's/^\(.\{7\}\).*/\1/'
-}
 
 prepare() {
     cd ${srcdir}/${_srcname}
@@ -58,47 +39,17 @@ prepare() {
     ln -sfT /usr/share/mathjax2 mathjax-27
     ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/pandoc
 
-    # Nodejs
-    install -d node/${_nodever}
-    cp -r "${srcdir}/node-v${_nodever}-linux-x64/"* node/${_nodever}
-    #cd "${srcdir}/${_srcname}/src/gwt/panmirror/src/editor"
-    # yarn config set ignore-engines true
-    #yarn install
-
     # Fix links for src/cpp/session/CMakeLists.txt
     cd "${srcdir}/${_srcname}/dependencies"
     ln -sfT /usr/share/myspell/dicts dictionaries
     ln -sfT /usr/share/mathjax2 mathjax-27
     #ln -sfT /usr/bin/pandoc pandoc
-
-    # Panmirror is picked up now from Quarto repo
-    # Ideally: git clone --branch release/rstudio-cherry-blossom https://github.com/quarto-dev/quarto.git "${srcdir}/${_srcname}/src/gwt/lib/quarto"
-    mkdir -p "${srcdir}/${_srcname}/src/gwt/lib/quarto"
-    cp -r "${srcdir}/quarto-release-rstudio-cherry-blossom/"* "${srcdir}/${_srcname}/src/gwt/lib/quarto"
 }
 
 build() {
 
-    # Quarto
-    msg "Checking if Quarto is installed..."
-
-    if (pacman -Q quarto >/dev/null) ; then
-        msg "Enabling Quarto support..."
-        _quarto="TRUE"
-        cd "${srcdir}/${_srcname}/dependencies"
-        install -d quarto/bin/tools
-        ln -sfT /usr/bin/quarto quarto/bin/quarto
-        ln -sfT /usr/bin/pandoc quarto/bin/tools/pandoc
-    else
-        msg "Use pandoc, because Quarto is not used..."
-        cd "${srcdir}/${_srcname}/dependencies"
-        install -d pandoc/${_pandocver}/bin/tools
-        ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/bin/tools/pandoc
-    fi
-
     cd ${srcdir}
 
-    
     # Use path of system provided R packages
     export R_LIBS_USER=/usr/lib/R/library/
 
@@ -108,7 +59,7 @@ build() {
     export RSTUDIO_VERSION_MINOR=${_pkgver#*.}
     export RSTUDIO_VERSION_PATCH=${_pkgver#*.*.}
     export RSTUDIO_VERSION_SUFFIX="+${_pkgver##*+}"
-    export GIT_COMMIT=${_gitcommit}
+    export GIT_COMMIT=${git ls-remote https://github.com/rstudio/rstudio.git | grep v${pkgver} | sed 's/^\(.\{7\}\).*/\1/'}
     export PACKAGE_OS=$(uname -om)
     
     cmake -S "${srcdir}/${_srcname}" -B build \
@@ -121,15 +72,14 @@ build() {
           -DBoost_NO_BOOST_CMAKE=ON \
           -DQUARTO_ENABLED=${_quarto} \
           -DRSTUDIO_USE_SYSTEM_SOCI=yes \
-          -DRSTUDIO_BUNDLE_QT=FALSE
+          -DRSTUDIO_BUNDLE_QT=FALSE 
+
      cmake --build build
 }
 
 package() {
     # Install the program
      DESTDIR="$pkgdir" cmake --install build
-    # Install the license
-    install -Dm 644 "${srcdir}/${_srcname}/COPYING" "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
     # Symlink main binary to /usr/bin
     install -d "${pkgdir}/usr/bin"
     ln -s "/usr/lib/rstudio/bin/rstudio" "${pkgdir}/usr/bin/rstudio"
