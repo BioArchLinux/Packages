@@ -1,14 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-dplyr
 - r-gap.datasets
 - r-ggplot2
 - r-plotly
+- r-rdpack
 update_on:
-- regex: gap_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gap
+- source: rpkgs
+  pkgname: gap
+  repo: cran
+  md5: true
 - alias: r
