@@ -3,7 +3,7 @@
 pkgname=orange
 _module=Orange3
 pkgver=3.35.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Component-based data mining framework."
 arch=('x86_64')
 url="https://orangedatamining.com"
