@@ -66,16 +66,16 @@ build() {
 
     export PATH=/usr/lib/jvm/java-8-openjdk/jre/bin/:${PATH}
     # These variables are used to create contents of Help > About dialog 
-    export RSTUDIO_VERSION_MAJOR=${_pkgver%%.*}
-    export RSTUDIO_VERSION_MINOR=${_pkgver#*.}
-    export RSTUDIO_VERSION_PATCH=${_pkgver#*.*.}
-    export RSTUDIO_VERSION_SUFFIX="+${_pkgver##*+}"
+    export RSTUDIO_VERSION_MAJOR=$(echo "$_pkgver" | cut -d "." -f1)
+    export RSTUDIO_VERSION_MINOR=$(echo "$_pkgver" | cut -d "." -f2)
+    export RSTUDIO_VERSION_PATCH=$(echo "$_pkgver" | cut -d "." -f3)
+    export RSTUDIO_VERSION_SUFFIX="+$(echo "$_pkgver" | cut -d "." -f4)"
     export GIT_COMMIT=$(git ls-remote https://github.com/rstudio/rstudio.git | grep v${pkgver} | sed 's/^\(.\{7\}\).*/\1/')
     export PACKAGE_OS=$(uname -om)
     
     cmake -S "${srcdir}/${_srcname}" -B build \
           -DRSTUDIO_TARGET=Desktop \
-          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_BUILD_TYPE=None \
           -DCMAKE_INSTALL_PREFIX=/usr/lib/rstudio \
           -DRSTUDIO_USE_SYSTEM_BOOST=yes \
           -DRSTUDIO_USE_SYSTEM_YAML_CPP=yes \
