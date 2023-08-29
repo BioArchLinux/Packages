@@ -75,7 +75,7 @@ build() {
     
     cmake -S "${srcdir}/${_srcname}" -B build \
           -DRSTUDIO_TARGET=Desktop \
-          -DCMAKE_BUILD_TYPE=None \
+          -DCMAKE_BUILD_TYPE=Release \
           -DCMAKE_INSTALL_PREFIX=/usr/lib/rstudio \
           -DRSTUDIO_USE_SYSTEM_BOOST=yes \
           -DRSTUDIO_USE_SYSTEM_YAML_CPP=yes \
