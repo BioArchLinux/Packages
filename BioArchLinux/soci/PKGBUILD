@@ -9,13 +9,11 @@ pkgdesc="Database access library for C++"
 arch=('i686' 'x86_64')
 url="http://soci.sf.net"
 license=('custom:boost')
-depends=('gcc-libs')
-makedepends=('cmake' 'postgresql-libs' 'sqlite3' 'unixodbc' 'boost')
+depends=('gcc-libs' 'glibc' 'sqlite3' 'unixodbc')
+makedepends=('cmake' 'postgresql-libs' 'boost')
 optdepends=('oracle-instantclient-basic: support for oracle databases'
             'libmysqlclient: support for mysql databases'
             'postgresql-libs: support for postgresql databases'
-            'sqlite3: support for sqlite databases'
-            'unixodbc: support for ODBC databases'
             'libmysqlclient'
             'boost-libs')
 #options=('staticlibs')
