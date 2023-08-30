@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=labeling
-_pkgver=0.4.2
+_pkgver=0.4.3
 pkgname=r-${_pkgname,,}
-pkgver=0.4.2
-pkgrel=9
+pkgver=0.4.3
+pkgrel=1
 pkgdesc='Axis Labeling'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,7 +13,7 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e022d79276173e0d62bf9e37d7574db65ab439eb2ae1833e460b1cff529bd165')
+sha256sums=('c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
