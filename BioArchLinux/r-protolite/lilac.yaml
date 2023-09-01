@@ -1,12 +1,21 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-jsonlite
 - r-rcpp
+repo_makedepends:
+- r-sf
+- r-testthat
 update_on:
-- regex: protolite_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=protolite
+- source: rpkgs
+  pkgname: protolite
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: protobuf
+  repo: extra
+  provided: libprotobuf.so
+  strip_release: true
