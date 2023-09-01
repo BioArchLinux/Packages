@@ -1,22 +1,27 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: kiri2002
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-rcpp
-pre_build_script: |
-  for line in edit_file('PKGBUILD'):
-    if line.startswith('_pkgver='):
-      line = f'_pkgver={_G.newver}'
-    print(line)
-  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
-post_build_script: |
-  git_pkgbuild_commit()
+repo_makedepends:
+- r-tinytest
 update_on:
 - source: rpkgs
   pkgname: RProtoBuf
   repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: abseil-cpp
+  filename: usr/lib/libabsl_spinlock_wait\.so\.(.+)
+  repo: extra
+- source: alpmfiles
+  pkgname: abseil-cpp
+  filename: usr/lib/libabsl_status\.so\.(.+)
+  repo: extra
 - source: alpm
   alpm: protobuf
+  repo: extra
   provided: libprotobuf.so
   strip_release: true
