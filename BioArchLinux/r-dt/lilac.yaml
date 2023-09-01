@@ -1,17 +1,21 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-crosstalk
 - r-htmltools
 - r-htmlwidgets
+- r-httpuv
 - r-jquerylib
 - r-jsonlite
 - r-magrittr
 - r-promises
+repo_makedepends:
+- r-testit
 update_on:
-- regex: DT_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=DT
+- source: rpkgs
+  pkgname: DT
+  repo: cran
+  md5: true
 - alias: r
