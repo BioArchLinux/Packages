@@ -1,13 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-isingfit
-  - r-isingsampler
-  - r-qgraph
-  - r-reshape2
+- r-isingfit
+- r-networktools
+- r-qgraph
+- r-reshape2
+repo_makedepends:
+- r-bootnet
+- r-isingsampler
+- r-testthat
 update_on:
-  - regex: NetworkComparisonTest_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=NetworkComparisonTest
-  - alias: r
+- source: rpkgs
+  pkgname: NetworkComparisonTest
+  repo: cran
+  md5: true
+- alias: r
