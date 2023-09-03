@@ -1,9 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: png_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=png
+- source: rpkgs
+  pkgname: png
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: libpng
+  repo: extra
+  provided: libpng16.so
+  strip_release: true
