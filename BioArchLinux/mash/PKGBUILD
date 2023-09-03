@@ -1,0 +1,45 @@
+# Maintainer: Fabian Klötzl <fabian-aur@kloetzl.info>
+# Contributor: Bipin Kumar <kbipinkumar@pm.me>
+
+pkgname=mash
+pkgver=2.3
+pkgrel=1
+pkgdesc="Fast genome and metagenome distance estimation using MinHash"
+url="https://github.com/marbl/Mash/"
+license=("BSD")
+arch=("x86_64")
+depends=('gsl' 'glibc' 'zlib' 'gcc-libs')
+makedepends=("capnproto")
+source=("https://github.com/marbl/Mash/archive/v${pkgver}.tar.gz"
+		"dynamic-capnp.patch")
+sha256sums=('f96cf7305e010012c3debed966ac83ceecac0351dbbfeaa6cd7ad7f068d87fe1'
+            '61cd860e66e57f6cc3dac317cb19665263aaa1de9b8c487cb9133ccde2388d92')
+
+prepare() {
+	cd "Mash-${pkgver}"
+	patch -R -p1 -i ${srcdir}/dynamic-capnp.patch
+    sed -i 's|@prefix@|$(DESTDIR)@prefix@|g' Makefile.in
+    sed -i 's|-O3|-O2|g' Makefile.in
+    sed -i '41s/$(CXXFLAGS)/$(CXXFLAGS) $(LDFLAGS)/' Makefile.in
+    sed -i '11i#include <stdint.h>' src/mash/Command.cpp
+    sed -i '40i#include <limits>' src/mash/robin_hood.h
+}
+
+build() {
+	cd "Mash-${pkgver}"
+	autoconf
+	./configure --prefix="/usr" --with-capnp=/usr --with-gsl=/usr
+	make
+}
+
+check() {
+	cd "Mash-${pkgver}"
+	make test
+}
+
+package() {
+	cd "Mash-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+    make DESTDIR="${pkgdir}" install-man
+    install -Dm0644 LICENSE.txt  "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+}
