@@ -23,6 +23,7 @@ prepare() {
     sed -i '41s/$(CXXFLAGS)/$(CXXFLAGS) $(LDFLAGS)/' Makefile.in
     sed -i '11i#include <stdint.h>' src/mash/Command.cpp
     sed -i '40i#include <limits>' src/mash/robin_hood.h
+    autoupdate
 }
 
 build() {
