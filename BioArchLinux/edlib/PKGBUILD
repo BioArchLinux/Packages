@@ -1,0 +1,65 @@
+# Maintainer: Bao Trinh <qubidt at gmail dot com>
+
+pkgbase=edlib
+pkgname=('edlib' 'python-edlib')
+pkgver=1.2.7
+pkgrel=4
+pkgdesc='Lightweight, super fast C/C++ (& Python) library for sequence alignment using edit (Levenshtein) distance'
+arch=(x86_64)
+url=https://github.com/Martinsos/edlib
+license=('MIT')
+depends=()
+makedepends=(
+	'git'
+	'cmake'
+	'meson'
+	'cython'
+	'python-setuptools'
+	'python-build'
+	'python-installer'
+	'python-wheel'
+	'python-cogapp'
+)
+source=("https://github.com/Martinsos/edlib/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('8767bc1b04a1a67282d57662e5702c4908996e96b1753b5520921ff189974621')
+
+prepare() {
+    # patch Makefile to use recommended meson options as stated in Archwiki 
+    sed -i 's|meson setup|arch-meson --prefix=/usr|g' "${srcdir}/${pkgname}-${pkgver}"/Makefile
+
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	make configure
+	sed -Ei '/pip install (cython|cogapp)/d' "${srcdir}/${pkgbase}-${pkgver}/bindings/python/Makefile"
+}
+
+build() {
+	cd "${srcdir}/${pkgbase}-${pkgver}"
+	make build
+	cd "${srcdir}/${pkgbase}-${pkgver}/bindings/python"
+	cp -rf ../../edlib .
+	make pyedlib.bycython.cpp README.rst
+	python -m build --wheel --no-isolation
+}
+
+check() {
+	cd "${srcdir}/${pkgbase}-${pkgver}"
+	make test
+}
+
+package_edlib() {
+    depends=('glibc' 'gcc-libs')
+    pkgdesc='Lightweight, super fast C/C++ library for sequence alignment using edit (Levenshtein) distance'
+	cd "${srcdir}/${pkgbase}-${pkgver}"
+	install -vDm 644 README.md -t "${pkgdir}/usr/share/doc/${pkgbase}"
+	DESTDIR="${pkgdir}" make install
+    install -Dm644 ${srcdir}/${pkgbase}-${pkgver}/LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
+}
+
+package_python-edlib() {
+	pkgdesc="Python bindings for edlib"
+    depends=('python' 'glibc' 'gcc-libs' 'edlib')
+
+	cd "${srcdir}/${pkgbase}-${pkgver}/bindings/python"
+	python -m installer --destdir="${pkgdir}" dist/*.whl
+    install -Dm644 ${srcdir}/${pkgbase}-${pkgver}/LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
+}
