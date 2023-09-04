@@ -1,17 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-bootstrap
 - r-doparallel
 - r-foreach
 - r-kinship2
 - r-quadprog
 - r-rcpp
+repo_makedepends:
+- r-bh
 update_on:
-- regex: GENLIB_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=GENLIB
+- source: rpkgs
+  pkgname: GENLIB
+  repo: cran
+  md5: true
 - alias: r
