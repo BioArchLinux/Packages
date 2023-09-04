@@ -47,7 +47,9 @@ prepare() {
   # create execute file for /ure/bin
   printf '#!/usr/bin/sh\nexec python -m Orange.canvas' > ${pkgname}
   # fix desktop.entry
-  sed -i 's/orange-canvas/orange/g' ${srcdir}/${_module}-${pkgver}/distribute/orange-canvas.desktop
+  sed -e 's/Exec=orange-canvas/Exec=orange/' \
+      -e 's|Icon=orange-canvas|Icon=/usr/share/icons/'"$pkgname"'.ico|' \
+      -i "$_module-$pkgver/distribute/orange-canvas.desktop"
 }
 
 build() {

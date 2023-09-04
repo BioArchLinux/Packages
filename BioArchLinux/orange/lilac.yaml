@@ -11,6 +11,8 @@ update_on:
   - source: pypi
     pypi: Orange3
   - alias: python
+  - source: manual
+    manual: 1
 repo_depends:
   - python-orange-canvas-core
   - python-baycomp
