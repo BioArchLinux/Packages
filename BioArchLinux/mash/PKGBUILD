@@ -3,7 +3,7 @@
 
 pkgname=mash
 pkgver=2.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Fast genome and metagenome distance estimation using MinHash"
 url="https://github.com/marbl/Mash/"
 license=("BSD")
