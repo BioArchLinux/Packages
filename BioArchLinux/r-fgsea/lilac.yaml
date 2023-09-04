@@ -1,9 +1,8 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-biocparallel
 - r-cowplot
 - r-data.table
@@ -11,8 +10,15 @@ repo_depends:
 - r-ggplot2
 - r-rcpp
 - r-scales
+repo_makedepends:
+- r-bh
+- r-geoquery
+- r-limma
+- r-reactome.db
+- r-testthat
 update_on:
-- regex: fgsea_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/fgsea
+- source: rpkgs
+  pkgname: fgsea
+  repo: bioc
+  md5: true
 - alias: r
