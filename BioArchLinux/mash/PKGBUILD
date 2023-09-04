@@ -3,7 +3,7 @@
 
 pkgname=mash
 pkgver=2.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Fast genome and metagenome distance estimation using MinHash"
 url="https://github.com/marbl/Mash/"
 license=("BSD")
@@ -21,6 +21,7 @@ prepare() {
     sed -i 's|@prefix@|$(DESTDIR)@prefix@|g' Makefile.in
     sed -i 's|-O3|-O2|g' Makefile.in
     sed -i '41s/$(CXXFLAGS)/$(CXXFLAGS) $(LDFLAGS)/' Makefile.in
+    sed -i '3iLDFLAGS += -Wl,-O1,--sort-common,--as-needed,-plugin-opt=strip-lto-object,-z,relro,-z,now' Makefile.in
     sed -i '11i#include <stdint.h>' src/mash/Command.cpp
     sed -i '40i#include <limits>' src/mash/robin_hood.h
     autoupdate
