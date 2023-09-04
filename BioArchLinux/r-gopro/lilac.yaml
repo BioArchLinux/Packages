@@ -1,10 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
-- r-bh
 - r-dendextend
 - r-doparallel
 - r-foreach
@@ -14,8 +13,12 @@ repo_depends:
 - r-org.hs.eg.db
 - r-rcpp
 - r-s4vectors
+repo_makedepends:
+- r-bh
+- r-testthat
 update_on:
-- regex: GOpro_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GOpro
+- source: rpkgs
+  pkgname: GOpro
+  repo: bioc
+  md5: true
 - alias: r
