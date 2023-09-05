@@ -1,9 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: pbdZMQ_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=pbdZMQ
+- source: rpkgs
+  pkgname: pbdZMQ
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zeromq
+  repo: extra
+  provided: libzmq.so
+  strip_release: true

@@ -1,28 +1,30 @@
-# system requirements: Linux, Mac OSX, and Windows, or 'ZeroMQ' library >=4.0.4. Solaris 10 needs 'ZeroMQ' library 4.0.7 and 'OpenCSW'.
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: portaloffreedom
 
 _pkgname=pbdZMQ
 _pkgver=0.3-10
 pkgname=r-${_pkgname,,}
-pkgver=0.3.10
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Programming with Big Data -- Interface to 'ZeroMQ'"
-arch=('x86_64')
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL3)
 depends=(
   r
   zeromq
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('40ea05a124a334615da446e17343d40f')
 sha256sums=('39a20058e4027fab6f4a4cf0f557fef4e77409c9656d00252ef31cb6d90ad191')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
