@@ -1,14 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-broom
 - r-car
 - r-magrittr
 - r-purrr
+- r-rgl
 - r-tibble
 update_on:
-- regex: heplots_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=heplots
+- source: rpkgs
+  pkgname: heplots
+  repo: cran
+  md5: true
 - alias: r
