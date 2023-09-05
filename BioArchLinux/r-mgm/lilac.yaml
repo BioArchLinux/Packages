@@ -1,14 +1,18 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-glmnet
-  - r-gtools
-  - r-hmisc
-  - r-qgraph
-  - r-stringr
+- r-glmnet
+- r-gtools
+- r-hmisc
+- r-qgraph
+- r-stringr
+repo_makedepends:
+- r-testthat
 update_on:
-  - regex: mgm_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=mgm
-  - alias: r
+- source: rpkgs
+  pkgname: mgm
+  repo: cran
+  md5: true
+- alias: r
