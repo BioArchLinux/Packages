@@ -1,6 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=catsequences
-pkgver=1.4
+pkgver=1.5
 pkgrel=1
 pkgdesc="tool for concatenating multiple fasta alignments for supermatrix phylogenetic analyses"
 arch=('x86_64')
@@ -8,7 +8,7 @@ url="https://github.com/ChrisCreevey/catsequences"
 license=('GPL')
 makedepends=('gcc')
 source=($url/archive/refs/tags/V${pkgver}.tar.gz)
-sha256sums=('b05b0914aaa5471b81cc7aa8920e8bad4b9516feff5bf1f511597d66a2779a16')
+sha256sums=('ffad52a51274700cc17d4c1b5b6115552f9048399fec4e92731f89895308ef38')
 build() {
   cd "$pkgname-$pkgver"
   gcc $pkgname.c -o $pkgname
