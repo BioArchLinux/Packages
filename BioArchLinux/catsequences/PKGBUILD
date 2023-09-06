@@ -7,7 +7,7 @@ arch=('x86_64')
 url="https://github.com/ChrisCreevey/catsequences"
 license=('GPL')
 makedepends=('gcc')
-source=($url/archive/refs/tags/v${pkgver}.tar.gz)
+source=($url/archive/refs/tags/V${pkgver}.tar.gz)
 sha256sums=('b05b0914aaa5471b81cc7aa8920e8bad4b9516feff5bf1f511597d66a2779a16')
 build() {
   cd "$pkgname-$pkgver"
