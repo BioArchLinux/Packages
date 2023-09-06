@@ -4,8 +4,6 @@ maintainers:
 build_prefix: extra-x86_64
 post_build_script: |
   git_pkgbuild_commit()
-repo_depends:
-  - wayfire
 update_on:
   - source: github
-    github: WayfireWM/wf-shell
+    github: WayfireWM/wf-touch

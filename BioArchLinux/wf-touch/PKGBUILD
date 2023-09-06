@@ -1,0 +1,30 @@
+pkgname=wf-touch
+pkgver=.20210319.145639
+pkgrel=1
+pkgdesc="Touchscreen gesture library"
+arch=(x86_64)
+url=https://github.com/WayfireWM/wf-touch
+license=(MIT)
+makedepends=(meson ninja pkg-config git cmake wayland-protocols glm doctest)
+conflicts=("${pkgname}-git")
+source=("git+$url.git")
+sha256sums=('SKIP')
+
+pkgver () {
+    cd "$srcdir/$pkgname"
+    printf "$(cat meson.build | grep '^\sversion:' | sed "s/'/ /g" | awk '{print $2}').%s" "$(TZ=UTC git log -1 --pretty='%cd' --date=format-local:%Y%m%d.%H%M%S)"
+}
+
+build() {
+	arch-meson "${pkgname}" build
+	ninja -C build
+}
+
+check () {
+	meson test -C build
+}
+
+package() {
+	DESTDIR="${pkgdir}" ninja -C build install
+}
+

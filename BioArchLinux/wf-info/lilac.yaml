@@ -3,9 +3,7 @@ maintainers:
     email: kuoi@bioarchlinux.org
 build_prefix: extra-x86_64
 post_build_script: |
-  git_add_files('PKGBUILD')
   git_pkgbuild_commit()
-  git_commit() 
 repo_makedepends:
   - wayfire
 repo_depends:
