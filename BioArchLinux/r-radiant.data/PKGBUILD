@@ -5,7 +5,7 @@ _pkgname=radiant.data
 _pkgver=1.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Data Menu for Radiant: Business Analytics using R and Shiny"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
