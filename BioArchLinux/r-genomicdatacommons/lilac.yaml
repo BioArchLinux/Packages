@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-dplyr
 - r-genomicranges
@@ -13,9 +13,13 @@ repo_depends:
 - r-readr
 - r-rlang
 - r-tibble
+- r-tidyr
 - r-xml2
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: GenomicDataCommons_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GenomicDataCommons
+- source: rpkgs
+  pkgname: GenomicDataCommons
+  repo: bioc
+  md5: true
 - alias: r
