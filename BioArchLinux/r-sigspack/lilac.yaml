@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biobase
 - r-biostrings
@@ -13,7 +13,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-variantannotation
 update_on:
-- regex: <td>(\d+.\d+.\d+)</td>
-  source: regex
-  url: https://bioconductor.org/packages/SigsPack
+- source: rpkgs
+  pkgname: SigsPack
+  repo: bioc
+  md5: true
 - alias: r
