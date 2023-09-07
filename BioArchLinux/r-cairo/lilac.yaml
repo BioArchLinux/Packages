@@ -1,12 +1,49 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: Cairo_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Cairo
+- source: rpkgs
+  pkgname: Cairo
+  repo: cran
+  md5: true
 - alias: r
 - source: alpm
-  alpm: libtiff
+  alpm: cairo
+  repo: extra
+  provided: libcairo.so
   strip_release: true
+- source: alpm
+  alpm: freetype2
+  repo: extra
+  provided: libfreetype.so
+  strip_release: true
+- source: alpm
+  alpm: harfbuzz-icu
+  repo: extra
+  provided: libharfbuzz-icu.so
+  strip_release: true
+- source: alpm
+  alpm: harfbuzz
+  repo: extra
+  provided: libharfbuzz.so
+  strip_release: true
+- source: alpm
+  alpm: icu
+  repo: core
+  provided: libicuuc.so
+  strip_release: true
+- source: alpm
+  alpm: libjpeg-turbo
+  repo: extra
+  provided: libjpeg.so
+  strip_release: true
+- source: alpm
+  alpm: libtiff
+  repo: extra
+  provided: libtiff.so
+  strip_release: true
+- source: alpmfiles
+  pkgname: libx11
+  filename: usr/lib/libX11\.so\.([^.]+)
+  repo: extra
