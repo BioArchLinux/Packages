@@ -14,6 +14,7 @@ repo_depends:
   - "r-jaspanova"
   - "r-jaspmixedmodels"
   - "r-jaspregression"
+  - "r-jasprobustttests"
   - "r-jaspfrequencies"
   - "r-jaspfactor"
   - "r-jaspaudit"
