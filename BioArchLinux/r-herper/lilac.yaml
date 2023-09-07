@@ -1,12 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-reticulate
 - r-rjson
 - r-withr
+repo_makedepends:
+- r-testthat
 update_on:
-- source: cmd
-  cmd: curl -sS https://raw.githubusercontent.com/RockefellerUniversity/Herper/master/DESCRIPTION | grep 'Version' | awk '{print $2}'
+- source: rpkgs
+  pkgname: Herper
+  repo: bioc
+  md5: true
 - alias: r
