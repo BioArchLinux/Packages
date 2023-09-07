@@ -61,6 +61,7 @@ depends=('r'
 "r-jasppower"
 "r-jaspprophet"
 "r-jaspreliability"
+"r-jasprobustttests"
 "r-jaspsem"
 "r-jaspsummarystatistics"
 "r-jasptimeseries"
