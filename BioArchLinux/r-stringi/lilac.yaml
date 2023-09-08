@@ -1,10 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: stringi_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=stringi
+- source: rpkgs
+  pkgname: stringi
+  repo: cran
+  md5: true
 - alias: r
-- alias: icu
+- source: alpm
+  alpm: icu
+  repo: core
+  provided: libicui18n.so
+  strip_release: true
+- source: alpm
+  alpm: icu
+  repo: core
+  provided: libicuuc.so
+  strip_release: true
