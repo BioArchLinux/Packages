@@ -1,20 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-ggplot2
 - r-gridextra
 - r-inline
 - r-loo
 - r-pkgbuild
+- r-quickjsr
 - r-rcpp
-- r-rcppeigen
 - r-rcppparallel
 - r-stanheaders
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-testthat
 update_on:
-- regex: rstan_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rstan
+- source: rpkgs
+  pkgname: rstan
+  repo: cran
+  md5: true
 - alias: r
