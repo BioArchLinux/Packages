@@ -2,8 +2,8 @@
 
 pkgname=orange
 _module=Orange3
-pkgver=3.35.0
-pkgrel=4
+pkgver=3.36.0
+pkgrel=1
 pkgdesc="Component-based data mining framework."
 arch=('x86_64')
 url="https://orangedatamining.com"
@@ -42,7 +42,7 @@ makedepends=(cython
              python-setuptools
              python-sphinx)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
-sha256sums=('61728d5fe0601f0f4df20d8b456c4244ea119feccfb25ee08837edd2bab0e9a0')
+sha256sums=('5add451c1cc4b08a68611628812346f770f97ba1879783e0ad6d09c2ca5bdf39')
 prepare() {
   # create execute file for /ure/bin
   printf '#!/usr/bin/sh\nexec python -m Orange.canvas' > ${pkgname}
