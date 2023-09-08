@@ -1,29 +1,25 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
-pre_build_script: |
-  for line in edit_file('PKGBUILD'):
-    if line.startswith('_pkgver='):
-      line = f'_pkgver={_G.newver}'
-    print(line)
-  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-bayestools
-- r-bh
 - r-bridgesampling
 - r-ggplot2
 - r-rcpp
-- r-rcppeigen
 - r-rcppparallel
 - r-rdpack
 - r-rstan
 - r-rstantools
+repo_makedepends:
+- r-bh
+- r-rcppeigen
 - r-stanheaders
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: RoBTT_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=RoBTT
+- source: rpkgs
+  pkgname: RoBTT
+  repo: cran
+  md5: true
 - alias: r
