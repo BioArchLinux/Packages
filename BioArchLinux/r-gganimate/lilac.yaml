@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
 - r-glue
@@ -10,8 +10,14 @@ repo_depends:
 - r-scales
 - r-stringi
 - r-tweenr
+repo_makedepends:
+- r-gifski
+- r-magick
+- r-testthat
+- r-transformr
 update_on:
-- regex: gganimate_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gganimate
+- source: rpkgs
+  pkgname: gganimate
+  repo: cran
+  md5: true
 - alias: r
