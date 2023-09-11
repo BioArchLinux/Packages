@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-classint
 - r-dbi
@@ -9,13 +9,30 @@ repo_depends:
 - r-rcpp
 - r-s2
 - r-units
+repo_makedepends:
+- r-blob
+- r-dplyr
+- r-raster
+- r-rpostgres
+- r-rpostgresql
+- r-sp
+- r-testthat
+- r-tidyr
 update_on:
-- regex: sf_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=sf
+- source: rpkgs
+  pkgname: sf
+  repo: cran
+  md5: true
 - alias: r
-- source: alpm
-  alpm: gdal
-  strip_release: true
-- source: manual
-  manual: 1
+- source: alpmfiles
+  pkgname: gdal
+  filename: usr/lib/libgdal\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: geos
+  filename: usr/lib/libgeos_c\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: proj
+  filename: usr/lib/libproj\.so\.([^.]+)
+  repo: extra

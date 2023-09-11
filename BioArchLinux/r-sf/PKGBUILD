@@ -1,28 +1,37 @@
-# system requirements: C++11, GDAL (>= 2.0.1), GEOS (>= 3.4.0), PROJ (>=4.8.0), sqlite3
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=sf
 _pkgver=1.0-14
 pkgname=r-${_pkgname,,}
-pkgver=1.0.14
+pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc='Simple Features for R'
-arch=('x86_64')
+pkgdesc="Simple Features for R"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL2)
 depends=(
-  r
+  gdal
+  geos
+  proj
   r-classint
   r-dbi
   r-magrittr
   r-rcpp
   r-s2
   r-units
-  gcc
-  gdal
-  geos
-  proj
-  sqlite3
+)
+checkdepends=(
+  postgis
+  r-blob
+  r-dplyr
+  r-raster
+  r-rpostgres
+  r-rpostgresql
+  r-sp
+  r-testthat
+  r-tidyr
 )
 optdepends=(
   r-blob
@@ -33,7 +42,6 @@ optdepends=(
   r-lwgeom
   r-maps
   r-mapview
-  r-matrix
   r-microbenchmark
   r-odbc
   r-pbapply
@@ -62,14 +70,34 @@ optdepends=(
   r-wk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b5fad47df3d9107e378420809efab869')
 sha256sums=('8b535648d537a1a95920c938e43692c1dfaac8d293ff3f506334001352c339f7')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+
+  # create database for tests
+  export PGDATA=db
+  export PGHOST="$(pwd)/host"
+  mkdir host
+  initdb
+  pg_ctl -l postgres.log -o "-k ${PGHOST@Q}" start
+  createdb postgis
+  psql postgis -c "CREATE EXTENSION postgis;"
+  createdb empty
+
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+
+  # shut down test database
+  pg_ctl stop
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
