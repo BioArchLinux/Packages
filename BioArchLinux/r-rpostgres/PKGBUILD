@@ -1,0 +1,77 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: peippo <christoph+aur@christophfink.com>
+
+_pkgname=RPostgres
+_pkgver=1.4.5
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Rcpp Interface to PostgreSQL"
+arch=(x86_64)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=(GPL3)
+depends=(
+  postgresql-libs
+  r-bit64
+  r-blob
+  r-dbi
+  r-hms
+  r-lubridate
+  r-rcpp
+  r-withr
+)
+makedepends=(
+  boost
+  r-plogr
+)
+checkdepends=(
+  postgresql
+  r-dbitest
+  r-testthat
+)
+optdepends=(
+  r-callr
+  r-covr
+  r-dbitest
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "system-boost.patch")
+md5sums=('5b2cf8d6695f79f5bb0f365fdd63f825'
+         '77a2948b75606cdf00a4e6fa280c6ce9')
+sha256sums=('70ff848cba51ddad4642a20e01cda1033e6f218b015a13380c30604bbd18c797'
+            '760e6260eb765bb3414759a6aa56871457fdc73480c40419d6c01ae8d086bfb5')
+
+prepare() {
+  # use system boost library
+  patch -Np1 -i system-boost.patch
+}
+
+build() {
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+
+  # create database for tests
+  export PGDATA=db
+  export PGHOST="$(pwd)/host"
+  mkdir host
+  initdb
+  pg_ctl -l postgres.log -o "-k ${PGHOST@Q}" start
+  createdb
+
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+
+  # shut down test database
+  pg_ctl stop
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

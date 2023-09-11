@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bit64
+- r-blob
+- r-dbi
+- r-hms
+- r-lubridate
+- r-rcpp
+- r-withr
+repo_makedepends:
+- r-plogr
+- r-dbitest
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: RPostgres
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: postgresql-libs
+  repo: extra
+  provided: libpq.so
+  strip_release: true
