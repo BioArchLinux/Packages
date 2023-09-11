@@ -62,7 +62,7 @@ check() {
   export PGHOST="$(pwd)/host"
   mkdir host
   initdb
-  pg_ctl -l postgres.log -o "-k ${PGHOST@Q}" start
+  pg_ctl -o "-h '' -k ${PGHOST@Q}" start
   createdb
 
   R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
