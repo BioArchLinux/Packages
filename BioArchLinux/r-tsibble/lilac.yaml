@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-anytime
+- r-dplyr
+- r-ellipsis
+- r-generics
+- r-lifecycle
+- r-lubridate
+- r-rlang
+- r-tibble
+- r-tidyselect
+- r-vctrs
+repo_makedepends:
+- r-ggplot2
+- r-hms
+- r-nanotime
+- r-testthat
+- r-tidyr
+- r-timedate
+update_on:
+- source: rpkgs
+  pkgname: tsibble
+  repo: cran
+  md5: true
+- alias: r
