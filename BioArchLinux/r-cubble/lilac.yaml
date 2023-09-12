@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-ggplot2
+- r-glue
+- r-lubridate
+- r-ncdf4
+- r-rlang
+- r-sf
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-tsibble
+- r-vctrs
+repo_makedepends:
+- r-ggally
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: cubble
+  repo: cran
+  md5: true
+- alias: r
