@@ -73,6 +73,13 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b5fad47df3d9107e378420809efab869')
 sha256sums=('8b535648d537a1a95920c938e43692c1dfaac8d293ff3f506334001352c339f7')
 
+prepare() {
+  # use PGHOST variable in tests
+  sed -e 's/host = "localhost",//' \
+      -e 's/host=localhost //' \
+      -i "$_pkgname/tests/testthat/test_postgis_RPostgres.R"
+}
+
 build() {
   mkdir -p build
   R CMD INSTALL "$_pkgname" -l build
@@ -86,7 +93,7 @@ check() {
   export PGHOST="$(pwd)/host"
   mkdir host
   initdb
-  pg_ctl -l postgres.log -o "-k ${PGHOST@Q}" start
+  pg_ctl -o "-h '' -k ${PGHOST@Q}" start
   createdb postgis
   psql postgis -c "CREATE EXTENSION postgis;"
   createdb empty
