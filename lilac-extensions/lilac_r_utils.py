@@ -185,6 +185,7 @@ class Pkgbuild:
 
 # maps the license field in the DESCRIPTION file to a PKGBUILD license value
 license_map = {
+    "Apache License": "Apache",
     "Apache License (== 2.0)": "Apache",
     "Apache License 2.0": "Apache",
     "Artistic-2.0": "Artistic2.0",
