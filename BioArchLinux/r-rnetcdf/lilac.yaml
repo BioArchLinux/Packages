@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- udunits
+repo_makedepends:
+- r-bit64
+update_on:
+- source: rpkgs
+  pkgname: RNetCDF
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: netcdf
+  filename: usr/lib/libnetcdf\.so\.([^.]+)
+  repo: extra
