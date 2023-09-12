@@ -1,10 +1,13 @@
-maintainers:
-  - github: starsareintherose
-    email: kuoi@bioarchlinux.org
 build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-  - source: regex
-    url: "https://artifacts.unidata.ucar.edu/service/rest/repository/browse/downloads-udunits/"
-    regex: href="(\d+.\d+.\d+)/"
-# vim:set ts=2 sw=2 et:
-
+- source: regex
+  url: "https://artifacts.unidata.ucar.edu/service/rest/repository/browse/downloads-udunits/"
+  regex: href="(\d+.\d+.\d+)/"
+- source: alpm
+  alpm: expat
+  repo: core
+  provided: libexpat.so
+  strip_release: true
