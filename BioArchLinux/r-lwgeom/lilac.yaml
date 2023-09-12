@@ -1,11 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-rcpp
-  - r-sf
-  - r-units
+- r-rcpp
+- r-sf
+- r-units
+repo_makedepends:
+- r-testthat
 update_on:
-  - regex: lwgeom_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=lwgeom
+- source: rpkgs
+  pkgname: lwgeom
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: geos
+  filename: usr/lib/libgeos_c\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: proj
+  filename: usr/lib/libproj\.so\.([^.]+)
+  repo: extra
