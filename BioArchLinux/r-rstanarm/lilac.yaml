@@ -1,22 +1,30 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-bayesplot
-  - r-bh
-  - r-ggplot2
-  - r-lme4
-  - r-loo
-  - r-rcpp
-  - r-rcppeigen
-  - r-rcppparallel
-  - r-rstan
-  - r-rstantools
-  - r-shinystan
-  - r-stanheaders
+- r-bayesplot
+- r-ggplot2
+- r-lme4
+- r-loo
+- r-posterior
+- r-rcpp
+- r-rcppparallel
+- r-rstan
+- r-rstantools
+- r-shinystan
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-stanheaders
+- r-betareg
+- r-biglm
+- r-data.table
+- r-hsaur3
+- r-testthat
 update_on:
-  - regex: rstanarm_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=rstanarm
-  - alias: r
-time_limit_hours: 10
+- source: rpkgs
+  pkgname: rstanarm
+  repo: cran
+  md5: true
+- alias: r
