@@ -1,13 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ape
 - r-dirmult
 - r-foreach
 - r-ggplot2
 - r-ggrepel
+- r-inline
 - r-matrixstats
 - r-modeest
 - r-rcpp
@@ -15,7 +16,8 @@ repo_depends:
 - r-statmod
 - r-vegan
 update_on:
-- regex: GUniFrac_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=GUniFrac
+- source: rpkgs
+  pkgname: GUniFrac
+  repo: cran
+  md5: true
 - alias: r
