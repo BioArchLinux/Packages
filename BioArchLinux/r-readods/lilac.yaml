@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cellranger
+- r-readr
+- r-stringi
+- r-tibble
+- r-vctrs
+- r-zip
+repo_makedepends:
+- r-cpp11
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: readODS
+  repo: cran
+  md5: true
+- alias: r
