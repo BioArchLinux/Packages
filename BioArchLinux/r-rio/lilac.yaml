@@ -1,16 +1,30 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-arrow
 - r-curl
 - r-data.table
 - r-haven
-- r-openxlsx
+- r-lifecycle
+- r-r.utils
 - r-readxl
+- r-stringi
 - r-tibble
+- r-writexl
+repo_makedepends:
+- r-fst
+- r-hexview
+- r-pzfx
+- r-qs
+- r-readods
+- r-testthat
+- r-xml2
+- r-yaml
 update_on:
-- regex: rio_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rio
+- source: rpkgs
+  pkgname: rio
+  repo: cran
+  md5: true
 - alias: r
