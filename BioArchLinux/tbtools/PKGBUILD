@@ -3,7 +3,7 @@
 
 pkgname=tbtools
 _pkgname=TBtools
-pkgver=2.003
+pkgver=2.005
 pkgrel=1
 epoch=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
@@ -24,7 +24,7 @@ optdepends=('blast+: BLAST support'
             'kaks_calculator: kaks calculate support')
 source=("https://github.com/CJ-Chen/TBtools/releases/download/${pkgver}/TBtools_JRE1.6.jar"
         "LICENSE")
-sha256sums=('fcb075b851ca6e408ebf2b39dac299f01389496eed21e5a4e1b12ba31c2885b7'
+sha256sums=('773660edb7de09dee7967486ed539617650ad30cc5232a74ed2c8f130ab733af'
             'ea019d305df02a42515d8fdd378158503fb49349e3c10aa94569e7f301f72c1f')
 
 prepare() {
