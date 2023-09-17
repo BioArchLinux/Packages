@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cardata
+- r-colorspace
+- r-estimability
+- r-insight
+- r-lme4
+- r-survey
+update_on:
+- source: rpkgs
+  pkgname: effects
+  repo: cran
+  md5: true
+- alias: r
