@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-rcpp
+- r-statmod
+- r-tweedie
+repo_makedepends:
+- r-rcppgsl
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: mvabund
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: gsl
+  filename: usr/lib/libgsl\.so\.([^.]+)
+  repo: extra
