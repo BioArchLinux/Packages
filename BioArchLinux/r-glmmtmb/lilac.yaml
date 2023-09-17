@@ -1,14 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-lme4
 - r-numderiv
-- r-rcppeigen
 - r-tmb
+repo_makedepends:
+- r-rcppeigen
+- r-car
+- r-effects
+- r-emmeans
+- r-mvabund
+- r-pscl
+- r-testthat
 update_on:
-- regex: glmmTMB_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=glmmTMB
+- source: rpkgs
+  pkgname: glmmTMB
+  repo: cran
+  md5: true
 - alias: r
+update_on_build:
+- pkgbase: r-tmb
