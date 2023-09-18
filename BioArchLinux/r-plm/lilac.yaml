@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bdsmatrix
+- r-collapse
+- r-formula
+- r-lmtest
+- r-maxlik
+- r-rdpack
+- r-sandwich
+- r-zoo
+update_on:
+- source: rpkgs
+  pkgname: plm
+  repo: cran
+  md5: true
+- alias: r
