@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-formula
+- r-generics
+- r-rcpp
+- r-rlang
+repo_makedepends:
+- r-rcppeigen
+- r-aer
+- r-car
+- r-clubsandwich
+- r-emmeans
+- r-fabricatr
+- r-margins
+- r-randomizr
+- r-sandwich
+- r-stargazer
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: estimatr
+  repo: cran
+  md5: true
+- alias: r
