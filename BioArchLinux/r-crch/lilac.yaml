@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-formula
+- r-ordinal
+- r-sandwich
+- r-scoringrules
+update_on:
+- source: rpkgs
+  pkgname: crch
+  repo: cran
+  md5: true
+- alias: r
