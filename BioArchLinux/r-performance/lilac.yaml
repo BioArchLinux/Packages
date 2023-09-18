@@ -1,12 +1,41 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: hubutui
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-bayestestr
 - r-datawizard
 - r-insight
+repo_makedepends:
+- r-aer
+- r-afex
+- r-bayesfactor
+- r-betareg
+- r-bigutilsr
+- r-curl
+- r-dbscan
+- r-estimatr
+- r-fixest
+- r-glmmtmb
+- r-httr
+- r-ics
+- r-icsoutlier
+- r-islr
+- r-ivreg
+- r-lavaan
+- r-lme4
+- r-mclogit
+- r-metafor
+- r-nonnest2
+- r-ordinal
+- r-parameters
+- r-pscl
+- r-rstanarm
+- r-rstantools
+- r-testthat
 update_on:
-- regex: performance_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=performance
+- source: rpkgs
+  pkgname: performance
+  repo: cran
+  md5: true
 - alias: r
