@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-sandwich
+repo_makedepends:
+- r-aer
+- r-cardata
+- r-geepack
+- r-ivreg
+- r-lme4
+- r-metadat
+- r-metafor
+- r-mlmrev
+- r-plm
+- r-robumeta
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: clubSandwich
+  repo: cran
+  md5: true
+- alias: r
