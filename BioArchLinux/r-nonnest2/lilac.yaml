@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-compquadform
+- r-lavaan
+- r-mvtnorm
+- r-sandwich
+repo_makedepends:
+- r-aer
+- r-faraway
+- r-mlogit
+- r-openmx
+- r-ordinal
+- r-pscl
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: nonnest2
+  repo: cran
+  md5: true
+- alias: r
