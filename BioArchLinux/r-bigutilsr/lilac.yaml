@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bigassertr
+- r-bigparallelr
+- r-nabor
+- r-rcpp
+- r-robustbase
+- r-rspectra
+repo_makedepends:
+- r-gmedian
+- r-mvtnorm
+- r-rrcov
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: bigutilsr
+  repo: cran
+  md5: true
+- alias: r
