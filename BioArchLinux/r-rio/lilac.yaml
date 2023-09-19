@@ -3,7 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-arrow
 - r-curl
 - r-data.table
 - r-haven
@@ -14,6 +13,7 @@ repo_depends:
 - r-tibble
 - r-writexl
 repo_makedepends:
+- r-arrow
 - r-fst
 - r-hexview
 - r-pzfx
