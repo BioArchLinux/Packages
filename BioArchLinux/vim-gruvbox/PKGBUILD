@@ -1,7 +1,7 @@
 # Maintainer: Vlad Petrov <ejiek at mail dot ru>
 _pkgname=gruvbox
 pkgname=vim-${_pkgname}
-pkgver=3.4.0
+pkgver=3.5.0
 pkgrel=1
 pkgdesc="gruvbox color scheme for vim"
 arch=('any')
@@ -11,7 +11,7 @@ depends=('vim')
 provides=('vim-gruvbox')
 conflicts=('vim-gruvbox')
 source=("${_pkgname}-${pkgver}.tar.gz::https://github.com/gruvbox-community/gruvbox/archive/v${pkgver}.tar.gz")
-sha256sums=('b5e70d0378e650705a4115f8fdf7cecea8ec049bb87ac0a98bad0622c45b4fe9')
+sha256sums=('4d9224372a177e4e33dcc7a5d311779ffb5f2b588b66d4d1dfdcc65ad59eddd3')
 
 package() {
     cd ${_pkgname}-${pkgver}
