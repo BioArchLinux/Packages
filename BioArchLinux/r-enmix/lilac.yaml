@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationhub
 - r-biobase
@@ -16,15 +16,20 @@ repo_depends:
 - r-illuminaio
 - r-impute
 - r-iranges
+- r-irlba
 - r-matrixstats
 - r-minfi
-- r-preprocesscore
 - r-quadprog
 - r-rpmm
 - r-s4vectors
 - r-summarizedexperiment
+repo_makedepends:
+- r-biocgenerics
+- r-minfidata
+- r-runit
 update_on:
-- regex: ENmix_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ENmix
+- source: rpkgs
+  pkgname: ENmix
+  repo: bioc
+  md5: true
 - alias: r
