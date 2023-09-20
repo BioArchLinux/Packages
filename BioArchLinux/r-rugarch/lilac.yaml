@@ -1,22 +1,23 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-chron
-  - r-ks
-  - r-numderiv
-  - r-rcpp
-  - r-rcpparmadillo
-  - r-rsolnp
-  - r-skewhyperbolic
-  - r-spd
-  - r-xts
-  - r-zoo
+- r-chron
+- r-ks
+- r-nloptr
+- r-numderiv
+- r-rcpp
+- r-rsolnp
+- r-skewhyperbolic
+- r-spd
+- r-xts
+- r-zoo
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-  - regex: rugarch_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=rugarch
-  - alias: r
+- source: rpkgs
+  pkgname: rugarch
+  repo: cran
+  md5: true
+- alias: r
