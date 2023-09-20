@@ -1,11 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-biocstyle
+- r-graph
 - r-msnbase
 update_on:
-- regex: DAPARdata_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DAPARdata
+- source: rpkgs
+  pkgname: DAPARdata
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
