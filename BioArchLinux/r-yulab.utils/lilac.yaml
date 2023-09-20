@@ -3,6 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-cli
+- r-digest
+- r-fs
 - r-memoise
 - r-rlang
 update_on:
