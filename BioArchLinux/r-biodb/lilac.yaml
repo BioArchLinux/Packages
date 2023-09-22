@@ -1,10 +1,11 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biocfilecache
 - r-chk
+- r-git2r
 - r-jsonlite
 - r-lgr
 - r-lifecycle
@@ -17,12 +18,15 @@ repo_depends:
 - r-rcurl
 - r-rsqlite
 - r-stringr
-- r-testthat
 - r-withr
 - r-xml
 - r-yaml
+repo_makedepends:
+- r-testthat
+- r-xml2
 update_on:
-- regex: biodb_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/biodb
+- source: rpkgs
+  pkgname: biodb
+  repo: bioc
+  md5: true
 - alias: r
