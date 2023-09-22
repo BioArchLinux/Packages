@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "libpng",
+        expect_systemrequirements = "C++11, libpng",
     )
 
 def post_build():
