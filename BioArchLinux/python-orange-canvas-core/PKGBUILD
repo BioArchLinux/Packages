@@ -2,7 +2,7 @@
 
 pkgname='python-orange-canvas-core'
 _module=orange-canvas-core
-pkgver=0.1.32
+pkgver=0.1.33
 pkgrel=1
 pkgdesc="Core component of Orange Canvas"
 arch=('x86_64')
@@ -20,7 +20,7 @@ depends=(python
          python-setuptools)
 makedepends=(python-setuptools)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
-sha256sums=('504e4b1ec1bb06b26a0b4acd46d514aa65d23ec61156aa1d894e43b01ffa102a')
+sha256sums=('c3792b8a3efe0ad265d57a09cf7451000a7668aa8c09083f3c18797ab7ff3e1b')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
