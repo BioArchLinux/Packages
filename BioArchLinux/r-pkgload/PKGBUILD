@@ -1,21 +1,25 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=pkgload
-_pkgver=1.3.2.1
+_pkgver=1.3.3
 pkgname=r-${_pkgname,,}
-pkgver=1.3.2.1
-pkgrel=1
-pkgdesc='Simulate Package Installation and Attach'
-arch=('any')
+pkgver=${_pkgver//-/.}
+pkgrel=0
+pkgdesc="Simulate Package Installation and Attach"
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL3)
 depends=(
-  r
   r-cli
   r-crayon
   r-desc
   r-fs
   r-glue
+  r-pkgbuild
   r-rlang
   r-rprojroot
   r-withr
@@ -26,21 +30,21 @@ optdepends=(
   r-mathjaxr
   r-mockr
   r-pak
-  r-pkgbuild
   r-rcpp
   r-remotes
   r-rstudioapi
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a1987b123fcbdb9d908b6dc55a04d3cf47d68cfa5090186e4876a429313374b2')
+md5sums=('02c0f0f913ea0f17fee989c3ecd1bdc6')
+sha256sums=('b0898122876479cc4a35cd566654b3a7b50f8ac105565dbf3f8b9d4283816959')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
