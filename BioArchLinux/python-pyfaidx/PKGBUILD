@@ -3,8 +3,8 @@
 
 pkgname=python-pyfaidx
 _name=pyfaidx
-pkgver=0.7.2.1
-pkgrel=2
+pkgver=0.7.2.2
+pkgrel=1
 pkgdesc="Efficient pythonic random access to fasta subsequences."
 arch=("any")
 url="https://pypi.python.org/pypi/pyfaidx"
@@ -20,7 +20,7 @@ makedepends=('python-build'
              'python-installer'
              'python-wheel')
 source=("$pkgname-$pkgver.tar.gz::https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
-sha256sums=('30f0d20a9e3d53353fb20eb69b7e22e6f01a53ed4f21b3e17dd408f0be5051a0')
+sha256sums=('3b7693c052c82691000fe4a92475db82ffc3b5a721a12b10dfbc87119c4b4d30')
 
 build() {
     cd "$_name-$pkgver"
