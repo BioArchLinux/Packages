@@ -1,14 +1,19 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Grey Christoforo <first name at last name dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=withr
 _pkgver=2.5.1
 pkgname=r-${_pkgname,,}
-pkgver=2.5.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Run Code 'With' Temporarily Modified Global State"
-arch=('any')
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+license=(MIT)
 depends=(
   r
 )
@@ -17,23 +22,24 @@ optdepends=(
   r-covr
   r-dbi
   r-knitr
-  r-lattice
-  r-methods
   r-rlang
   r-rmarkdown
   r-rsqlite
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('9a33ee02e6ec0bac98c41342a506e073')
 sha256sums=('a95ae0981565d91bdefac6c9c5fda87e44ab68a42f82eed306c476076887cdce')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:
