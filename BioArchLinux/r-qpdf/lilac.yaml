@@ -18,3 +18,5 @@ update_on:
   pkgname: qpdf
   filename: usr/lib/libqpdf\.so\.([^.]+)
   repo: extra
+- source: manual
+  manual: 1
