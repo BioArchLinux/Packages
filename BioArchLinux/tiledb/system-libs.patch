@@ -1,0 +1,69 @@
+diff --git a/cmake/Modules/FindCapnp_EP.cmake b/cmake/Modules/FindCapnp_EP.cmake
+index 317c385..f529c27 100644
+--- a/cmake/Modules/FindCapnp_EP.cmake
++++ b/cmake/Modules/FindCapnp_EP.cmake
+@@ -57,7 +57,7 @@ if (NOT TILEDB_FORCE_ALL_DEPS OR TILEDB_CAPNP_EP_BUILT)
+   endif()
+ 
+   find_package(CapnProto
+-    ${TILEDB_CAPNPROTO_VERSION} EXACT
++    ${TILEDB_CAPNPROTO_VERSION}
+     PATHS ${TILEDB_EP_INSTALL_PREFIX}
+     ${TILEDB_CAPNP_NO_DEFAULT_PATH}
+     )
+diff --git a/cmake/Modules/FindMagic_EP.cmake b/cmake/Modules/FindMagic_EP.cmake
+index 868c3a4..fee0843 100644
+--- a/cmake/Modules/FindMagic_EP.cmake
++++ b/cmake/Modules/FindMagic_EP.cmake
+@@ -47,6 +47,12 @@ endif()
+ # Search the path set during the superbuild for the EP.
+ set(LIBMAGIC_PATHS ${TILEDB_EP_INSTALL_PREFIX})
+ 
++find_library(libmagic_LIBRARIES magic)
++find_path(libmagic_INCLUDE_DIR magic.h)
++
++include(FindPackageHandleStandardArgs)
++FIND_PACKAGE_HANDLE_STANDARD_ARGS(libmagic REQUIRED_VARS libmagic_LIBRARIES libmagic_INCLUDE_DIR)
++
+ if(TILEDB_LIBMAGIC_EP_BUILT)
+   find_package(libmagic PATHS ${TILEDB_EP_INSTALL_PREFIX} ${TILEDB_DEPS_NO_DEFAULT_PATH})
+ endif()
+@@ -84,7 +90,7 @@ if (TILEDB_LIBMAGIC_EP_BUILT)
+ endif()
+ 
+ # if not yet built add it as an external project
+-if(NOT TILEDB_LIBMAGIC_EP_BUILT)
++if(false)
+   if (TILEDB_SUPERBUILD)
+     message(STATUS "Adding Magic as an external project")
+ 
+diff --git a/tiledb/CMakeLists.txt b/tiledb/CMakeLists.txt
+index 8992fc8..dc92290 100644
+--- a/tiledb/CMakeLists.txt
++++ b/tiledb/CMakeLists.txt
+@@ -415,7 +415,7 @@ set(MGC_GZIPPED_BIN_INPUT_FILE "${MGC_GZIPPED_BIN_INPUT_DIRECTORY}/magic_mgc_gzi
+ 
+ add_custom_command(
+   OUTPUT "${MGC_GZIPPED_BIN_OUTPUT_FILE}"
+-  DEPENDS "${MGC_GZIPPED_BIN_INPUT_FILE}"
++  DEPENDS "${MGC_GZIPPED_BIN_INPUT_FILE}" update-embedded-magic-data
+   COMMAND ${CMAKE_COMMAND} -E tar x "${MGC_GZIPPED_BIN_INPUT_FILE}"
+   WORKING_DIRECTORY "${MGC_GZIPPED_BIN_OUTPUT_DIRECTORY}"
+ )
+@@ -426,7 +426,7 @@ add_dependencies(TILEDB_CORE_OBJECTS gen_mgc_unarch)
+ 
+ add_custom_target(
+   update-embedded-magic-data
+-  COMMAND "$<TARGET_FILE:tdb_gzip_embedded_data>" < "${libmagic_DICTIONARY}" "${MGC_GZIPPED_BIN_OUTPUT_FILE}"
++  COMMAND "$<TARGET_FILE:tdb_gzip_embedded_data>" < /usr/share/file/misc/magic.mgc "${MGC_GZIPPED_BIN_OUTPUT_FILE}"
+   # need to work in 'local' directory with no prefix paths so no paths are included in archive
+   WORKING_DIRECTORY "${MGC_GZIPPED_BIN_OUTPUT_DIRECTORY}"
+   COMMAND ${CMAKE_COMMAND} -E tar cvj "magic_mgc_gzipped.bin.tar.bz2" "magic_mgc_gzipped.bin"
+@@ -939,6 +939,7 @@ if(TILEDB_SERIALIZATION)
+     COMMAND_EXPAND_LISTS
+     COMMENT "Re-generate tiledb-rest.capnp.<h,c++> files for serialization support"
+     )
++  add_dependencies(TILEDB_CORE_OBJECTS update-serialization)
+ 
+ endif()
+ 
