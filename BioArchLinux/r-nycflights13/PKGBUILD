@@ -1,0 +1,36 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: peippo <christoph+aur@christophfink.com>
+
+_pkgname=nycflights13
+_pkgver=1.0.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Flights that Departed NYC in 2013"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=(custom:CC0)
+depends=(
+  r-tibble
+)
+optdepends=(
+  r-dplyr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "$pkgname-CC0.txt::https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt")
+md5sums=('3d483829c9d11c675044cbe7cdf79f3a'
+         '65d3616852dbf7b1a6d4b53b00626032')
+sha256sums=('0e87c5a4e285f16750e91c75aeba33b1e4682cdabf4a3effe5a1de7398394a1d'
+            'a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499')
+
+build() {
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -Dm644 "$pkgname-CC0.txt" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
