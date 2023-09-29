@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-rcpp
+repo_makedepends:
+- r-bit64
+- r-nanotime
+- r-tinytest
+update_on:
+- source: rpkgs
+  pkgname: RcppInt64
+  repo: cran
+  md5: true
+- alias: r
