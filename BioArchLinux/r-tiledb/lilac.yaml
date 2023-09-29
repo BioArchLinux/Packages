@@ -1,13 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-nanotime
 - r-rcpp
 - r-spdl
+- tiledb
+repo_makedepends:
+- r-rcppint64
+- r-arrow
+- r-data.table
+- r-nycflights13
+- r-palmerpenguins
+- r-tinytest
 update_on:
-- regex: tiledb_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=tiledb
+- source: rpkgs
+  pkgname: tiledb
+  repo: cran
+  md5: true
 - alias: r
+update_on_build:
+- pkgbase: tiledb
