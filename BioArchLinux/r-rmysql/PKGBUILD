@@ -35,6 +35,7 @@ check() {
   cd "$_pkgname/tests"
 
   # create database for tests
+  export HOME="$srcdir" # make sure mariadb doesn't read ~/.my.cnf
   export MARIADB_HOME="$srcdir/mariadb"
   mkdir -p "$MARIADB_HOME/data"
   cat > "$MARIADB_HOME/my.cnf" << EOF
