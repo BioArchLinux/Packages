@@ -1,15 +1,22 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-curl
+- r-dt
 - r-extrafont
 - r-ggplot2
 - r-gridextra
 - r-gtable
+- r-htmlwidgets
+- r-plyr
 - r-rcolorbrewer
+- r-rlang
+- r-stringr
 update_on:
-- regex: waffle_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=waffle
+- source: rpkgs
+  pkgname: waffle
+  repo: cran
+  md5: true
 - alias: r
