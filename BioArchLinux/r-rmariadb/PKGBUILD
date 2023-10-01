@@ -1,0 +1,91 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: peippo <christoph+aur@christophfink.com>
+
+_pkgname=RMariaDB
+_pkgver=1.2.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Database Interface and MariaDB Driver"
+arch=(x86_64)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=(MIT)
+depends=(
+  mariadb-libs
+  r-bit64
+  r-blob
+  r-dbi
+  r-hms
+  r-lubridate
+  r-rcpp
+  r-rlang
+)
+makedepends=(
+  boost
+  r-plogr
+)
+checkdepends=(
+  mariadb
+  r-dbitest
+  r-testthat
+)
+optdepends=(
+  r-dbitest
+  r-readr
+  r-rprojroot
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "system-boost.patch")
+md5sums=('c26fd227165f1d70cbdffd4e1bc0fea2'
+         '526899beb04d123d0c7acefe13ffed79')
+sha256sums=('c97c61ace584f9ad9929d3e3f366556e0eecad12bc98ea2979563a01475f468e'
+            '6b9efa241455f6f526ee7ec1535e147f0f4471e3da134af50c3fe79bab4973af')
+
+prepare() {
+  # use system boost headers
+  patch -Np1 -i system-boost.patch
+}
+
+build() {
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+
+  # create database for tests
+  export HOME="$srcdir" # make sure mariadb doesn't read ~/.my.cnf
+  export MARIADB_HOME="$srcdir/mariadb"
+  mkdir -p "$MARIADB_HOME/data"
+  cat > "$MARIADB_HOME/my.cnf" << EOF
+[client-server]
+socket="$MARIADB_HOME/mariadb.sock"
+
+[server]
+skip_networking=1
+datadir="$MARIADB_HOME/data"
+EOF
+  mariadb-install-db
+  mariadbd &
+  sleep 1 # wait for the server to start up
+  # populate time zone data needed in tests
+  mariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb mysql
+  mariadb -e "SET GLOBAL time_zone = 'UTC';" mysql
+  mariadb -e "ALTER DATABASE test CHARACTER SET = 'utf8mb4';" test
+
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+
+  # shut down test database
+  mariadb-admin shutdown
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}

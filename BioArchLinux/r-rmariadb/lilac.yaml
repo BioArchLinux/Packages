@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bit64
+- r-blob
+- r-dbi
+- r-hms
+- r-lubridate
+- r-rcpp
+- r-rlang
+repo_makedepends:
+- r-plogr
+- r-dbitest
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: RMariaDB
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: mariadb-libs
+  repo: extra
+  provided: libmariadb.so
+  strip_release: true

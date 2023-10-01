@@ -1,0 +1,8 @@
+diff --git a/RMariaDB/src/Makevars.in b/RMariaDB/src/Makevars.in
+index b5f54c8..6573e7c 100644
+--- a/RMariaDB/src/Makevars.in
++++ b/RMariaDB/src/Makevars.in
+@@ -1,2 +1,2 @@
+-PKG_CPPFLAGS=@cflags@ -Ivendor -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR @plogr@
++PKG_CPPFLAGS=@cflags@ -DRCPP_DEFAULT_INCLUDE_CALL=false -DRCPP_USING_UTF8_ERROR_STRING -DBOOST_NO_AUTO_PTR @plogr@
+ PKG_LIBS=@libs@
