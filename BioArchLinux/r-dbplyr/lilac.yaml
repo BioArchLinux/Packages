@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-blob
 - r-cli
@@ -19,8 +19,15 @@ repo_depends:
 - r-tidyselect
 - r-vctrs
 - r-withr
+repo_makedepends:
+- r-bit64
+- r-rmariadb
+- r-rpostgres
+- r-rsqlite
+- r-testthat
 update_on:
-- regex: dbplyr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=dbplyr
+- source: rpkgs
+  pkgname: dbplyr
+  repo: cran
+  md5: true
 - alias: r

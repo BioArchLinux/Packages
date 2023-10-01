@@ -1,16 +1,21 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Robert Greener <me@r0bert.dev>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Matt Frichtl <frichtlm@gmail.com>
+# Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=dbplyr
 _pkgver=2.3.4
 pkgname=r-${_pkgname,,}
-pkgver=2.3.4
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A 'dplyr' Back End for Databases"
-arch=('any')
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+license=(MIT)
 depends=(
-  r
   r-blob
   r-cli
   r-dbi
@@ -28,6 +33,15 @@ depends=(
   r-vctrs
   r-withr
 )
+checkdepends=(
+  mariadb
+  postgresql
+  r-bit64
+  r-rmariadb
+  r-rpostgres
+  r-rsqlite
+  r-testthat
+)
 optdepends=(
   r-bit64
   r-covr
@@ -43,15 +57,56 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('18834d5eb6161c75766e422a50be77f4')
 sha256sums=('69be9dce90d3edc19599aaef60704a0d546c4b8b7c17137cdea4c7e2a00cdeac')
 
+prepare() {
+  # connect to database using sockets in tests
+  sed -i '/host = "localhost",/d' "$_pkgname/tests/testthat/helper-src.R"
+}
+
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+
+  # create mariadb database for tests
+  export HOME="$srcdir" # make sure mariadb doesn't read ~/.my.cnf
+  export MARIADB_HOME="$srcdir/mariadb"
+  mkdir -p "$MARIADB_HOME/data"
+  cat > "$MARIADB_HOME/my.cnf" << EOF
+[client-server]
+socket="$MARIADB_HOME/mariadb.sock"
+
+[server]
+skip_networking=1
+datadir="$MARIADB_HOME/data"
+EOF
+  mariadb-install-db
+  mariadbd &
+
+  # create postgres database for tests
+  export PGDATA="$srcdir/postgres-db"
+  export PGHOST="$srcdir/postgres-host"
+  mkdir "$PGHOST"
+  initdb
+  pg_ctl -o "-h '' -k ${PGHOST@Q}" start
+  createdb test
+
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+
+  # shut down test databases
+  mariadb-admin shutdown
+  pg_ctl stop
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:
