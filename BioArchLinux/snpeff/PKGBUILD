@@ -57,7 +57,7 @@ build() {
 
 package() {
     install -Dm644 ${srcdir}/$_pkgname-$pkgver/target/SnpEff-$pkgver-jar-with-dependencies.jar  "${pkgdir}"/usr/share/java/snpEff/snpEff.jar
-    install -Dm644 ${srcdir}/$_pkg2-$_siftver/target/SnpSift-${_pkgver2}-jar-with-dependencies.jar  "${pkgdir}"/usr/share/java/snpEff/snpSift.jar
+    install -Dm644 ${srcdir}/$_pkg2-${_pkgver2}/target/SnpSift-${_pkgver2}-jar-with-dependencies.jar  "${pkgdir}"/usr/share/java/snpEff/snpSift.jar
     install -Dm644 ${srcdir}/$_pkgname-$pkgver/config/snpEff.config "${pkgdir}"/usr/share/java/snpEff/snpEff.config
     install -Dm644 ${srcdir}/$_pkgname-$pkgver/LICENSE.md "${pkgdir}"/usr/share/licenses/$pkgname/LICENSE
     install -Dm755 snpEff.sh "${pkgdir}"/usr/bin/snpeff
