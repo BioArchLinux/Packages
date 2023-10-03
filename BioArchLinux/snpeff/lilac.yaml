@@ -2,8 +2,6 @@ maintainers:
   - github: kbipinkumar
     email: kbipinkumar@pm.me
 build_prefix: extra-x86_64
-pre_build_script: |
-  run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
@@ -11,4 +9,8 @@ update_on:
 - source: github
   github: pcingola/SnpEff
   use_max_tag: true
-  prefix: 'v'
+  prefix: v
+- source: github
+  github: pcingola/SnpSift
+  use_max_tag: true
+  prefix: v
