@@ -2,8 +2,8 @@
 # Maintainer: Stefan Husmann <stefan-husmann@t-online.de>
 
 pkgname=raxml-mpi
-pkgver=8.2.12
-pkgrel=5
+pkgver=8.2.13
+pkgrel=1
 pkgdesc="Randomized Axelerated Maximum Likelihood. https://doi.org/10.1093/bioinformatics/btu033"
 arch=('x86_64')
 url="http://sco.h-its.org/exelixis/web/software/raxml/"
@@ -14,7 +14,7 @@ provides=(raxml)
 install='raxml.install'
 source=("raxml-$pkgver.tar.gz::https://github.com/stamatak/standard-RAxML/archive/v$pkgver.tar.gz"
         'raxml.install')
-sha256sums=('338f81b52b54e16090e193daf36c1d4baa9b902705cfdc7f4497e3e09718533b'
+sha256sums=('28e500793324bd7d330b396ef27ea49c9186fa5e1edb3d5439036dc6c33e6067'
             '05283dec7f44c560590555b4f901e0c1ed422892471bddf651d90c94b41716ea')
 
 build() {
