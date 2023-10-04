@@ -1,8 +1,8 @@
 # Maintainer: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
 
 pkgname=raxml
-pkgver=8.2.12
-pkgrel=5
+pkgver=8.2.13
+pkgrel=1
 pkgdesc="Randomized Axelerated Maximum Likelihood. https://doi.org/10.1093/bioinformatics/btu033"
 arch=('x86_64')
 url="http://sco.h-its.org/exelixis/web/software/raxml/"
@@ -12,7 +12,7 @@ conflicts=(raxml-mpi)
 install='raxml.install'
 source=("$pkgname-$pkgver.tar.gz::https://github.com/stamatak/standard-RAxML/archive/v$pkgver.tar.gz"
         'raxml.install')
-sha256sums=('338f81b52b54e16090e193daf36c1d4baa9b902705cfdc7f4497e3e09718533b'
+sha256sums=('28e500793324bd7d330b396ef27ea49c9186fa5e1edb3d5439036dc6c33e6067'
             'c908ecbcfd6323e0b05a19037f96904a9b379ae0a9934ade839210095bb49caf')
 
 build() {
