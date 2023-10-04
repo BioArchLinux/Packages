@@ -1,15 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-ggplot2
-  - r-ic.infer
-  - r-lavaan
-  - r-mvtnorm
-  - r-norm2
-  - r-quadprog
+- r-ggplot2
+- r-ic.infer
+- r-lavaan
+- r-mvtnorm
+- r-norm
+- r-quadprog
 update_on:
-  - regex: restriktor_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=restriktor
-  - alias: r
+- source: rpkgs
+  pkgname: restriktor
+  repo: cran
+  md5: true
+- alias: r
