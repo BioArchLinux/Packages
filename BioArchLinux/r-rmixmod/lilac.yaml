@@ -1,12 +1,24 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-rcpp
+repo_makedepends:
 - r-rcppeigen
 update_on:
-- regex: Rmixmod_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Rmixmod
+- source: rpkgs
+  pkgname: Rmixmod
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: glibmm
+  repo: extra
+  provided: libglibmm-2.4.so
+  strip_release: true
+- source: alpm
+  alpm: libxml++2.6
+  repo: extra
+  provided: libxml++-2.6.so
+  strip_release: true
