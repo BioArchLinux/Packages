@@ -1,16 +1,20 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Grey Christoforo <first name at last name dot net>
+# Contributor: Sauliusl <luksaulius at gmail>
 
 _pkgname=S4Vectors
 _pkgver=0.38.2
 pkgname=r-${_pkgname,,}
-pkgver=0.38.2
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Foundation of vector-like and list-like containers in Bioconductor'
-arch=('x86_64')
+pkgdesc="Foundation of vector-like and list-like containers in Bioconductor"
+arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=(Artistic2.0)
 depends=(
-  r
   r-biocgenerics
 )
 optdepends=(
@@ -21,20 +25,20 @@ optdepends=(
   r-graph
   r-iranges
   r-knitr
-  r-matrix
   r-runit
   r-shortread
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('3cee7175a7e117e524e2a04cd979f177')
 sha256sums=('68633bf61a432675e6d16b7eb6226f389b9f62dbabe78c4d8cfd1e6242213c58')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
