@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=testthat
-_pkgver=3.1.10
+_pkgver=3.2.0
 pkgname=r-${_pkgname,,}
-pkgver=3.1.10
+pkgver=3.2.0
 pkgrel=1
 pkgdesc='Unit Testing for R'
 arch=('x86_64')
@@ -43,7 +43,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3135085d04ef76d2e000dddb7100a9708b27c1fbf4f33b51301f72b07b0608f6')
+sha256sums=('5b0be53295fe509042e48711df091f7021e23512d1339a4f6f6d9f36d145650e')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
