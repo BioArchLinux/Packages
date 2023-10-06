@@ -1,6 +1,6 @@
 pkgname=seqan3
-pkgver=3.2.0
-pkgrel=2
+pkgver=3.3.0
+pkgrel=1
 pkgdesc="The modern C++ library for sequence analysis \
 	 https://doi.org/10.1016/j.jbiotec.2017.07.017"
 arch=("any")
