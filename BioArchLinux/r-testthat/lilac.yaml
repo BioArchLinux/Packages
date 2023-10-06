@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-brio
 - r-callr
@@ -22,7 +22,8 @@ repo_depends:
 - r-waldo
 - r-withr
 update_on:
-- regex: testthat_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=testthat
+- source: rpkgs
+  pkgname: testthat
+  repo: cran
+  md5: true
 - alias: r
