@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-curl
 - r-dplyr
@@ -10,8 +10,12 @@ repo_depends:
 - r-jsonlite
 - r-rjsoncons
 - r-shiny
+repo_makedepends:
+- r-mockery
+- r-testthat
 update_on:
-- regex: cellxgenedp_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/cellxgenedp
+- source: rpkgs
+  pkgname: cellxgenedp
+  repo: bioc
+  md5: true
 - alias: r
