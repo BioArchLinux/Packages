@@ -21,6 +21,7 @@ depends=(
   r-rlang
 )
 checkdepends=(
+  r-knitr
   r-markdown
   r-testthat
 )

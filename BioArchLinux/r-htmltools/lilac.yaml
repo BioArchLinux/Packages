@@ -9,6 +9,7 @@ repo_depends:
 - r-fastmap
 - r-rlang
 repo_makedepends:
+- r-knitr
 - r-markdown
 - r-testthat
 update_on:
@@ -17,3 +18,5 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: manual
+  manual: 1
