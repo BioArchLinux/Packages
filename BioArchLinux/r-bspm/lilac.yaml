@@ -1,8 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-tinytest
 update_on:
-  - regex: bspm_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=bspm
-  - alias: r
+- source: rpkgs
+  pkgname: bspm
+  repo: cran
+  md5: true
+- alias: r
