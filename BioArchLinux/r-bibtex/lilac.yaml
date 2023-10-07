@@ -1,10 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-backports
+- r-backports
+repo_makedepends:
+- r-devtools
+- r-testthat
 update_on:
-  - regex: bibtex_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=bibtex
-  - alias: r
+- source: rpkgs
+  pkgname: bibtex
+  repo: cran
+  md5: true
+- alias: r
