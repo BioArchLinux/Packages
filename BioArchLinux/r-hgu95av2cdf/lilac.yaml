@@ -1,10 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-annotationdbi
+- r-annotationdbi
 update_on:
-  - regex: hgu95av2cdf_([\d._-]+).tar.gz
-    source: regex
-    url: https://bioconductor.org/packages/hgu95av2cdf
-  - alias: r
+- source: rpkgs
+  pkgname: hgu95av2cdf
+  repo: bioc-data-annotation
+  md5: true
+- alias: r
