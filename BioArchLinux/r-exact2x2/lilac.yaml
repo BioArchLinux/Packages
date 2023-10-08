@@ -1,19 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: kiri2002
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-exactci
 - r-ssanv
-pre_build_script: |
-  for line in edit_file('PKGBUILD'):
-    if line.startswith('_pkgver='):
-      line = f'_pkgver={_G.newver}'
-    print(line)
-  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
-post_build_script: |
-  git_pkgbuild_commit()
+repo_makedepends:
+- r-exact
+- r-testthat
 update_on:
 - source: rpkgs
   pkgname: exact2x2
   repo: cran
+  md5: true
 - alias: r
