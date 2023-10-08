@@ -1,13 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-delayedarray
-  - r-experimenthub
-  - r-hdf5array
-  - r-summarizedexperiment
+- r-delayedarray
+- r-experimenthub
+- r-hdf5array
+- r-summarizedexperiment
 update_on:
-  - regex: restfulSEData_([\d._-]+).tar.gz
-    source: regex
-    url: https://bioconductor.org/packages/restfulSEData
-  - alias: r
+- source: rpkgs
+  pkgname: restfulSEData
+  repo: bioc-data-experiment
+  md5: true
+- alias: r
