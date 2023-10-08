@@ -1,16 +1,16 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=interactiveDisplay
 _pkgver=1.38.0
 pkgname=r-${_pkgname,,}
-pkgver=1.38.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Package for enabling powerful shiny web displays of Bioconductor objects'
-arch=('any')
+pkgdesc="Package for enabling powerful shiny web displays of Bioconductor objects"
+arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=(Artistic2.0)
 depends=(
-  r
   r-annotationdbi
   r-biocgenerics
   r-category
@@ -34,26 +34,29 @@ optdepends=(
   r-hgu95av2.db
   r-knitr
   r-metagenomeseq
-  r-rstudio
   r-rtracklayer
   r-runit
   r-summarizedexperiment
   r-vegan
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f4eba334421b210ddcf9852222c9f1a9b982c59d5122e921cf4fadf0af6d2ef9')
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-install.patch")
+md5sums=('32075538ec509a9743bb5e6baf5b0655'
+         'f3e9aa31acfa87ff679676bd8e433bf8')
+sha256sums=('f4eba334421b210ddcf9852222c9f1a9b982c59d5122e921cf4fadf0af6d2ef9'
+            'b97b524b191dca4ee18526716d5c5c9c0798558718835c7758a23eb5c547caac')
 
 prepare() {
-  echo 'options(repos = list(CRAN = "http://cran.r-project.org"))' > "${srcdir}/.Rprofile"
+  # prevent unintended installing of BiocManager
+  patch -Np1 -i fix-install.patch
 }
 
 build() {
-  R_PROFILE="${srcdir}/.Rprofile" \
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: starsareintherose@outlook.com
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
 - r-biocgenerics
@@ -15,7 +15,8 @@ repo_depends:
 - r-shiny
 - r-xml
 update_on:
-- regex: interactiveDisplay_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/interactiveDisplay
+- source: rpkgs
+  pkgname: interactiveDisplay
+  repo: bioc
+  md5: true
 - alias: r
