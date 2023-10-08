@@ -45,10 +45,10 @@ class Description:
         self.suggests = self._parse_deps("Suggests")
         self.systemrequirements = self.desc.get("SystemRequirements", None)
         self.license = self.desc["License"]
-        nc = self.desc["NeedsCompilation"]
-        if nc != "yes" and nc != "no":
+        nc = self.desc.get("NeedsCompilation", None)
+        if nc is not None and nc != "yes" and nc != "no":
             raise Exception(f"Invalid DESCRIPTION file: NeedsCompilation: {nc}")
-        self.needscompilation = nc == "yes"
+        self.needscompilation = "" if nc is None else nc == "yes"
 
     def _parse_description(self, tar: tarfile.TarFile, name: str) -> dict:
         """Parse the DESCRIPTION file from the source archive and return it as a dict."""
@@ -333,6 +333,8 @@ def check_arch(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
         if desc.needscompilation != cfg.expect_needscompilation:
             raise CheckFailed(f"NeedsCompilation value has changed: {desc.needscompilation}")
     else:
+        if desc.needscompilation == "":
+            raise CheckFailed("No NeedsCompilation value")
         expected = "x86_64" if desc.needscompilation else "any"
         if pkg.arch != [expected]:
             raise CheckFailed(f"Wrong arch, expected {expected}")
