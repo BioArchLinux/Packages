@@ -1,14 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-backports
 - r-chk
 - r-rcpp
-- r-rcppprogress
 - r-rlang
+repo_makedepends:
+- r-rcppprogress
 update_on:
-- regex: MatchIt_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=MatchIt
+- source: rpkgs
+  pkgname: MatchIt
+  repo: cran
+  md5: true
 - alias: r
