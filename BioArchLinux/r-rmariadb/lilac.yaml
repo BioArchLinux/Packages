@@ -8,9 +8,9 @@ repo_depends:
 - r-dbi
 - r-hms
 - r-lubridate
-- r-rcpp
 - r-rlang
 repo_makedepends:
+- r-cpp11
 - r-plogr
 - r-dbitest
 - r-testthat

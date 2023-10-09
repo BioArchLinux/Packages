@@ -2,10 +2,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=RMariaDB
-_pkgver=1.2.2
+_pkgver=1.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Database Interface and MariaDB Driver"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -17,11 +17,11 @@ depends=(
   r-dbi
   r-hms
   r-lubridate
-  r-rcpp
   r-rlang
 )
 makedepends=(
   boost
+  r-cpp11
   r-plogr
 )
 checkdepends=(
@@ -31,21 +31,27 @@ checkdepends=(
 )
 optdepends=(
   r-dbitest
+  r-decor
   r-readr
   r-rprojroot
   r-testthat
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "$_pkgname-fix-connection.patch::https://github.com/r-dbi/RMariaDB/pull/306.patch"
         "system-boost.patch")
-md5sums=('c26fd227165f1d70cbdffd4e1bc0fea2'
-         '526899beb04d123d0c7acefe13ffed79')
-sha256sums=('c97c61ace584f9ad9929d3e3f366556e0eecad12bc98ea2979563a01475f468e'
-            '6b9efa241455f6f526ee7ec1535e147f0f4471e3da134af50c3fe79bab4973af')
+md5sums=('9219c32690d6e53882ba6a616976c6ad'
+         '87535a335087362a4180932f6bd2c018'
+         'b53149b42ab18105619bbbcb568de1b7')
+sha256sums=('30e6fb03aa60b9e93c6ef203f2b3d582314e796de54a64872ad5259c04ed1720'
+            'a6ad2947eea291e6ac18fc2a8433bdb05841a5d75a68874e15cf841913e45e81'
+            'eacc28eff677214d42c9b2199e9bd1d5d1a35a47d622047b01353e0d4b282e49')
 
 prepare() {
   # use system boost headers
   patch -Np1 -i system-boost.patch
+  # fix handling of connection option groups
+  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-connection.patch"
 }
 
 build() {
