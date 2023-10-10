@@ -1,11 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-rcppparallel
+repo_makedepends:
+- r-gdsfmt
+- r-ggplot2
+- r-reshape2
+- r-snprelate
 update_on:
-- regex: HIBAG_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/HIBAG
+- source: rpkgs
+  pkgname: HIBAG
+  repo: bioc
+  md5: true
 - alias: r
