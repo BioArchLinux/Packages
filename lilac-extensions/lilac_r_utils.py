@@ -208,6 +208,7 @@ license_map = {
     "LGPL-3": "LGPL3",
     "Lucent Public License": "custom:LPL",
     "MIT + file LICENSE": "MIT",
+    "Mozilla Public License 2.0": "MPL2",
 }
 
 def get_default_r_pkgs() -> set:
