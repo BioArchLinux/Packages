@@ -6,6 +6,8 @@ repo_depends:
 - udunits
 repo_makedepends:
 - r-bit64
+- r-pbdmpi
+- r-rmpi
 update_on:
 - source: rpkgs
   pkgname: RNetCDF
@@ -13,6 +15,11 @@ update_on:
   md5: true
 - alias: r
 - source: alpmfiles
-  pkgname: netcdf
+  pkgname: netcdf-openmpi
   filename: usr/lib/libnetcdf\.so\.([^.]+)
   repo: extra
+- source: alpm
+  alpm: openmpi
+  repo: extra
+  provided: libmpi.so
+  strip_release: true

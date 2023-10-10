@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "GPL (>= 2) | file LICENSE",
-        expect_systemrequirements = "netcdf udunits-2",
+        expect_systemrequirements = "netcdf (>=4.1.3), udunits-2 (>=2.0.4)",
     )
 
 def post_build():
