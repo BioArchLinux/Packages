@@ -1,9 +1,28 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-biocgenerics
+- r-digest
+- r-runit
 update_on:
-- regex: gdsfmt_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/gdsfmt
+- source: rpkgs
+  pkgname: gdsfmt
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lz4
+  filename: usr/lib/liblz4\.so\.([^.]+)
+  repo: core
+- source: alpm
+  alpm: xz
+  repo: core
+  provided: liblzma.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
