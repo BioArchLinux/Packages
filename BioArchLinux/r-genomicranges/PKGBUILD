@@ -1,21 +1,27 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomicRanges
 _pkgver=1.52.1
 pkgname=r-${_pkgname,,}
-pkgver=1.52.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Representation and manipulation of genomic intervals'
-arch=('x86_64')
+pkgdesc="Representation and manipulation of genomic intervals"
+arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=(Artistic2.0)
 depends=(
-  r
   r-biocgenerics
   r-genomeinfodb
   r-iranges
   r-s4vectors
   r-xvector
+)
+checkdepends=(
+  r-runit
 )
 optdepends=(
   r-annotate
@@ -40,7 +46,6 @@ optdepends=(
   r-kegggraph
   r-keggrest
   r-knitr
-  r-matrix
   r-pasillabamsubset
   r-rmarkdown
   r-rnaseqdata.hnrnpc.bam.chr14
@@ -55,14 +60,20 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('f3b1930db83f7e56893c20ee37cf1d65')
 sha256sums=('20e7fff1f0fd54300cc6d5edf75267bee412a4e88262b5ff541b72edff24cb58')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla run_unitTests.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

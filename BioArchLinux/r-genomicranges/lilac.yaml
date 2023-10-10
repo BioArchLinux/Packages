@@ -1,15 +1,18 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biocgenerics
 - r-genomeinfodb
 - r-iranges
 - r-s4vectors
 - r-xvector
+repo_makedepends:
+- r-runit
 update_on:
-- regex: GenomicRanges_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GenomicRanges
+- source: rpkgs
+  pkgname: GenomicRanges
+  repo: bioc
+  md5: true
 - alias: r
