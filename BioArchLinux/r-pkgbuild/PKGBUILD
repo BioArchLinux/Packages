@@ -1,16 +1,19 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=pkgbuild
 _pkgver=1.4.2
 pkgname=r-${_pkgname,,}
-pkgver=1.4.2
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Find Tools Needed to Build R Packages'
-arch=('any')
+pkgdesc="Find Tools Needed to Build R Packages"
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+license=(MIT)
 depends=(
-  r
   r-callr
   r-cli
   r-crayon
@@ -19,7 +22,6 @@ depends=(
   r-processx
   r-r6
   r-rprojroot
-  r-withr
 )
 optdepends=(
   r-covr
@@ -29,17 +31,26 @@ optdepends=(
   r-rcpp
   r-rmarkdown
   r-testthat
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b4a62e531fc8970dc28721d6d87cb036')
 sha256sums=('2334a245d75420b2adf9f217a6bc4a5f7faaa4244a6aac2b774b26f199fc82c5')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla build-tools.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:
