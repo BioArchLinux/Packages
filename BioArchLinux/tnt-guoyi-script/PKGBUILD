@@ -1,10 +1,11 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
-basename=tnt2winclada
+basename=tnt-guoyi-script
 pkgname=('tnt2winclada' 'tnt-guoyi-script')
 _pkgname=TNT_Script
 pkgver=0.1.0
 pkgrel=1
-pkgdesc="TNT Script for Maximum Parsimony Analysis"
+pkgdesc="TNT Script for Maximum Parsimony Analysis \
+	 https://doi.org/10.5281/zenodo.8428198"
 arch=('x86_64')
 url="https://github.com/starsareintherose/TNT_Script"
 license=('MIT')
