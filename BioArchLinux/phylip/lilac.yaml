@@ -2,7 +2,12 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - source: regex
-    url: "https://evolution.gs.washington.edu/phylip/download/"
+    url: "https://github.com/phylipweb/phylip/tree/main/download"
     regex: phylip-(\d+.\d+).zip
