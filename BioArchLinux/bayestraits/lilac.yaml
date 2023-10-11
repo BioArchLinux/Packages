@@ -8,6 +8,5 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: regex
-    url: "http://www.evolution.reading.ac.uk/BayesTraits.html"
-    regex: 'BayesTraits V(\d+[.\d+]*) - Source Code'
+  - source: cmd
+    cmd: curl -sS http://www.evolution.reading.ac.uk/BayesTraits.html | head -n 1 | sed "s@V@ @g;s@/@ @g" | awk '{print $7}'
