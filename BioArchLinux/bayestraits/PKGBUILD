@@ -4,7 +4,7 @@ pkgbase=bayestraits
 _pkg=BayesTraits
 pkgname=('bayestraits' 'bayestraits-mpi')
 pkgver=4.0.1
-pkgrel=0
+pkgrel=1
 arch=('x86_64')
 pkgdesc="A computer package for performing analyses of trait evolution among groups of species \
 	 for which a phylogeny or sample of phylogenies is available"
