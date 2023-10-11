@@ -1,16 +1,25 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Grey Christoforo <first name at last name dot net>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Matt Frichtl <frichtlm@gmail.com>
+# Contributor: wagnerflo <florian@wagner-flo.net>
 
 _pkgname=lazyeval
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
-pkgver=0.2.2
+pkgver=${_pkgver//-/.}
 pkgrel=9
-pkgdesc='Lazy (Non-Standard) Evaluation'
-arch=('x86_64')
+pkgdesc="Lazy (Non-Standard) Evaluation"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL3)
 depends=(
   r
+)
+checkdepends=(
+  r-testthat
 )
 optdepends=(
   r-covr
@@ -19,14 +28,20 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1de725fe0cd496a2535020867458641a')
 sha256sums=('d6904112a21056222cfcd5eb8175a78aa063afe648a562d9c42c6b960a8820d4')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
