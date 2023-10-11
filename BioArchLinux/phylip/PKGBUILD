@@ -39,4 +39,6 @@ package() {
   mv exe/*.so "$pkgdir"/usr/lib/
   mv exe/font* "$pkgdir"/usr/share/phylip/
   mv exe/* "$pkgdir"/usr/bin
+
+  rm $pkgdir/usr/bin/*.exe
 }
