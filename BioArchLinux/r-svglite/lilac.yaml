@@ -15,7 +15,8 @@ update_on:
   repo: cran
   md5: true
 - alias: r
-- source: alpmfiles
-  pkgname: libpng
-  filename: usr/lib/libpng16\.so\.([^.]+)
+- source: alpm
+  alpm: libpng
   repo: extra
+  provided: libpng16.so
+  strip_release: true
