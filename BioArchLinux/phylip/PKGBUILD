@@ -3,7 +3,7 @@
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=phylip
 pkgver=3.698
-pkgrel=5
+pkgrel=6
 pkgdesc="A collection of programmes for evolutive genetics and inferring phylogenies. https://doi.org/10.1111/j.1096-0031.1989.tb00562.x"
 arch=('i686' 'x86_64')
 url="https://github.com/felsenst/phylip"
