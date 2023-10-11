@@ -10,4 +10,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: "http://www.evolution.reading.ac.uk/BayesTraits.html"
-    regex: 'BayesTraits V([\d+.]+\d+) - Source Code'
+    regex: 'BayesTraits V([\d+\.]+\d+) - Source Code'
