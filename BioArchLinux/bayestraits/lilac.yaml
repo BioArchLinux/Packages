@@ -7,6 +7,7 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
   - source: cmd
     cmd: curl -sS http://www.evolution.reading.ac.uk/BayesTraits.html | head -n 1 | sed "s@V@ @g;s@/@ @g" | awk '{print $7}'
