@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-crayon
 - r-digest
@@ -10,8 +10,17 @@ repo_depends:
 - r-rex
 - r-withr
 - r-yaml
+repo_makedepends:
+- r-dt
+- r-htmltools
+- r-memoise
+- r-mockery
+- r-rstudioapi
+- r-testthat
+- r-xml2
 update_on:
-- regex: covr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=covr
+- source: rpkgs
+  pkgname: covr
+  repo: cran
+  md5: true
 - alias: r
