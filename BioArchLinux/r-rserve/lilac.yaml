@@ -1,9 +1,25 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: Rserve_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Rserve
+- source: rpkgs
+  pkgname: Rserve
+  repo: cran
+  md5: true
 - alias: r
-- alias: libssl
+- source: alpm
+  alpm: libxcrypt
+  repo: core
+  provided: libcrypt.so
+  strip_release: true
+- source: alpm
+  alpm: openssl
+  repo: core
+  provided: libcrypto.so
+  strip_release: true
+- source: alpm
+  alpm: openssl
+  repo: core
+  provided: libssl.so
+  strip_release: true
