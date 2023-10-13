@@ -6,9 +6,10 @@ _pkgname=TBtools
 pkgver=2.010
 pkgrel=1
 epoch=1
-pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. https://doi.org/10.1016/j.molp.2020.06.009'
+pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. \
+	https://doi.org/10.1016/j.molp.2020.06.009'
 arch=('x86_64')
-url='https://github.com/CJ-Chen/TBtools'
+url='https://github.com/CJ-Chen/TBtools-II'
 license=('unknown')
 depends=('java-runtime'
          'bash')
@@ -22,7 +23,7 @@ optdepends=('blast+: BLAST support'
             'trimal: large scale align support'
             'iqtree: maximum likelihood phylogenomic tree support'
             'kaks_calculator: kaks calculate support')
-source=("https://github.com/CJ-Chen/TBtools/releases/download/${pkgver}/TBtools_JRE1.6.jar"
+source=("https://github.com/CJ-Chen/TBtools-II/releases/download/${pkgver}/TBtools_JRE1.6.jar"
         "LICENSE")
 sha256sums=('e02638c873448c82433d4f86619edb8022320de672e5b1139a75f48339bcbc8d'
             'ea019d305df02a42515d8fdd378158503fb49349e3c10aa94569e7f301f72c1f')
