@@ -2,6 +2,11 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
-- source: cmd
-  cmd: curl -sS http://www.bork.embl.de/Docu/AQUA/latest/ | grep norMD | sed 's/"/ /g' | awk '{print $10}' | sed 's/norMD//g' | sed 's/.tar.gz//g'
+  - source: cmd
+    cmd: curl -sS https://www.bork.embl.de/Docu/AQUA/latest/ | grep norMD | sed 's/"/ /g;s/.tar.gz//g;s/norMD/ /g' | awk '{print $ 12}'
