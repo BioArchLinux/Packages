@@ -1,14 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-glue
 - r-lifecycle
 - r-rlang
 update_on:
-- regex: vctrs_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=vctrs
+- source: rpkgs
+  pkgname: vctrs
+  repo: cran
+  md5: true
 - alias: r
