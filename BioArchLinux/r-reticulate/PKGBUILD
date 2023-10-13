@@ -38,6 +38,8 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
+  "ipython: IPython console app"
+  "python-numpy: translation between R matrices and NumPy arrays"
   r-callr
   r-cli
   r-glue
@@ -53,6 +55,9 @@ sha256sums=('8d0d8922cd811153836e95354357615968b005a4d0d4c5734441953c526e4206')
 build() {
   mkdir -p build
   R CMD INSTALL "$_pkgname" -l build
+
+  # compile python bytecode
+  python -m compileall -o 0 -o 1 -s build -p /usr/lib/R/library "build/$_pkgname/python/rpytools"
 }
 
 check() {
