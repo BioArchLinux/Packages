@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-bslib
 - r-cachem
@@ -23,8 +23,13 @@ repo_depends:
 - r-sourcetools
 - r-withr
 - r-xtable
+repo_makedepends:
+- r-future
+- r-ggplot2
+- r-testthat
 update_on:
-- regex: shiny_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=shiny
+- source: rpkgs
+  pkgname: shiny
+  repo: cran
+  md5: true
 - alias: r
