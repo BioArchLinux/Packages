@@ -8,6 +8,7 @@ repo_makedepends:
 - r-data.table
 - r-dplyr
 - r-fixest
+- r-kit
 - r-magrittr
 - r-testthat
 update_on:
