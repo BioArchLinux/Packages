@@ -5,10 +5,10 @@
 # Contributor: Jooa <aur at (name) dot xyz>
 
 _pkgname=raster
-_pkgver=3.6-23
+_pkgver=3.6-26
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Geographic Data Analysis and Modeling"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -32,8 +32,8 @@ optdepends=(
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('aab208d1605b05b3379a41e6400c00e5')
-sha256sums=('bf456874a15de14da631b6c52f222f6e532fe0fbab2c241189b0cec49d46e159')
+md5sums=('ad7c711017003e97af9828e1547d14ab')
+sha256sums=('c65777225a46ada699e70098f54c60cf191d15e454fac9440aca439a4dbd5592')
 
 build() {
   mkdir -p build
