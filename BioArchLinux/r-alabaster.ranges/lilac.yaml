@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-alabaster.base
+- r-biocgenerics
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-s4vectors
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: alabaster.ranges
+  repo: bioc
+  md5: true
+- alias: r
