@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-alabaster.base
+- r-alabaster.bumpy
+- r-alabaster.mae
+- r-alabaster.matrix
+- r-alabaster.ranges
+- r-alabaster.sce
+- r-alabaster.se
+- r-alabaster.spatial
+- r-alabaster.string
+- r-alabaster.vcf
+update_on:
+- source: rpkgs
+  pkgname: alabaster
+  repo: bioc
+  md5: true
+- alias: r
