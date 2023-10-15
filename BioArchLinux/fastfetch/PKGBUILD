@@ -1,6 +1,6 @@
 # Maintainer: Linus Dierheimer <Linus@Dierheimer.de>
 pkgname=fastfetch
-pkgver=2.1.1
+pkgver=2.1.2
 pkgrel=1
 pkgdesc="Like Neofetch, but much faster because written in C"
 arch=('x86_64')
@@ -23,7 +23,7 @@ optdepends=(
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz"
 	"bioarchlinux.logo"
 	"bioarchlinux-color.logo")
-sha256sums=('f5f1343b934d7a01db0d2f491b49ba82a03a4041dd2939ed81e0f8eb5ac0724b'
+sha256sums=('62b02c7e48cb328c4381e7d4af4b23a7c74a2879eeea53525b8c45cc0e79e65f'
             '3d3135fe5a58600b9a13772654413aaaa973a97eea306e1dc46628ff5d955534'
             '4216ddaa863c4eba67f971661bbbba96efa8991cf8b936481858048222a5c657')
 
