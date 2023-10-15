@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-delayedarray
+- r-hdf5array
+- r-rcpp
+- r-rhdf5
+repo_makedepends:
+- r-rhdf5lib
+- r-biocsingular
+- r-residualmatrix
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: chihaya
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
