@@ -1,12 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-delayedarray
 - r-s4vectors
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: ResidualMatrix_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ResidualMatrix
+- source: rpkgs
+  pkgname: ResidualMatrix
+  repo: bioc
+  md5: true
 - alias: r
