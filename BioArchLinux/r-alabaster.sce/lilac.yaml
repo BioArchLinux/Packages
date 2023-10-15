@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-alabaster.base
+- r-alabaster.se
+- r-singlecellexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: alabaster.sce
+  repo: bioc
+  md5: true
+- alias: r
