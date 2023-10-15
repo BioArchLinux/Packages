@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-alabaster.base
+- r-alabaster.se
+- r-alabaster.string
+- r-rsamtools
+- r-s4vectors
+- r-variantannotation
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: alabaster.vcf
+  repo: bioc
+  md5: true
+- alias: r
