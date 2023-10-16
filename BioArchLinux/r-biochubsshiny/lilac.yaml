@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-dt
+- r-experimenthub
+- r-htmlwidgets
+- r-s4vectors
+- r-shiny
+- r-shinyace
+- r-shinyjs
+- r-shinythemes
+- r-shinytoastr
+update_on:
+- source: rpkgs
+  pkgname: BiocHubsShiny
+  repo: bioc
+  md5: true
+- alias: r
