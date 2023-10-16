@@ -1,15 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
 - r-rcpp
 - r-rlang
 - r-scales
 - r-withr
+repo_makedepends:
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: ggrepel_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggrepel
+- source: rpkgs
+  pkgname: ggrepel
+  repo: cran
+  md5: true
 - alias: r
