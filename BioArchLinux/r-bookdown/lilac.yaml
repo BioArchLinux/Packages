@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-htmltools
 - r-jquerylib
@@ -10,8 +10,13 @@ repo_depends:
 - r-tinytex
 - r-xfun
 - r-yaml
+repo_makedepends:
+- r-downlit
+- r-testthat
+- r-xml2
 update_on:
-- regex: bookdown_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bookdown
+- source: rpkgs
+  pkgname: bookdown
+  repo: cran
+  md5: true
 - alias: r
