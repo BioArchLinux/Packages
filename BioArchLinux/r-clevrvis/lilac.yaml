@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-colorspace
+- r-colourpicker
+- r-cowplot
+- r-dplyr
+- r-dt
+- r-ggiraph
+- r-ggnewscale
+- r-ggplot2
+- r-ggraph
+- r-htmlwidgets
+- r-igraph
+- r-magrittr
+- r-patchwork
+- r-purrr
+- r-r.utils
+- r-readr
+- r-readxl
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-shinyhelper
+- r-shinywidgets
+- r-tibble
+update_on:
+- source: rpkgs
+  pkgname: clevRvis
+  repo: bioc
+  md5: true
+- alias: r
