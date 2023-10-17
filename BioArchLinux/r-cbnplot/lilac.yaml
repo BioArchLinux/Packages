@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocfilecache
+- r-bnlearn
+- r-clusterprofiler
+- r-depmap
+- r-dplyr
+- r-enrichplot
+- r-experimenthub
+- r-ggdist
+- r-ggforce
+- r-ggplot2
+- r-ggraph
+- r-graphite
+- r-graphlayouts
+- r-igraph
+- r-magrittr
+- r-oaqc
+- r-org.hs.eg.db
+- r-patchwork
+- r-purrr
+- r-pvclust
+- r-reshape2
+- r-rlang
+- r-rmpfr
+- r-stringr
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: CBNplot
+  repo: bioc
+  md5: true
+- alias: r
