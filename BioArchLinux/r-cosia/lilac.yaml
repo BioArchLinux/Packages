@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-annotationtools
+- r-biomart
+- r-dplyr
+- r-experimenthub
+- r-ggplot2
+- r-homologene
+- r-magrittr
+- r-org.ce.eg.db
+- r-org.dm.eg.db
+- r-org.dr.eg.db
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-org.rn.eg.db
+- r-plotly
+- r-rcolorbrewer
+- r-readr
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+update_on:
+- source: rpkgs
+  pkgname: CoSIA
+  repo: bioc
+  md5: true
+- alias: r
