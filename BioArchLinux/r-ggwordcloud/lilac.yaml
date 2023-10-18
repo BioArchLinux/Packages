@@ -1,15 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-colorspace
 - r-ggplot2
+- r-gridtext
 - r-png
 - r-rcpp
 - r-scales
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: ggwordcloud_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggwordcloud
+- source: rpkgs
+  pkgname: ggwordcloud
+  repo: cran
+  md5: true
 - alias: r
