@@ -1,11 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-biobase
-- r-cpp11
 - r-cytolib
 - r-data.table
 - r-dplyr
@@ -17,13 +15,31 @@ repo_depends:
 - r-opencyto
 - r-rbgl
 - r-rgraphviz
-- r-rhdf5lib
-- r-rprotobuflib
 - r-tibble
 - r-xml
 - r-yaml
+repo_makedepends:
+- r-bh
+- r-cpp11
+- r-rhdf5lib
+- r-rprotobuflib
+- r-flowworkspacedata
+- r-testthat
 update_on:
-- regex: CytoML_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CytoML
+- source: rpkgs
+  pkgname: CytoML
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: boost-libs
+  repo: extra
+  provided: libboost_filesystem.so
+  strip_release: true
+- source: alpm
+  alpm: libxml2
+  repo: core
+  provided: libxml2.so
+  strip_release: true
+update_on_build:
+- pkgbase: r-cytolib
