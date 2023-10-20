@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-catalyst
+- r-e1071
+- r-eztune
+- r-flowcore
+- r-gbm
+- r-ggplot2
+- r-hrbrthemes
+- r-matrixstats
+- r-randomforest
+- r-rmarkdown
+- r-s4vectors
+- r-singlecellexperiment
+- r-ssc
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: cytofQC
+  repo: bioc
+  md5: true
+- alias: r
