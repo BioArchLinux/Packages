@@ -1,12 +1,10 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-biobase
 - r-biocgenerics
-- r-cpp11
 - r-cytolib
 - r-data.table
 - r-delayedarray
@@ -18,13 +16,30 @@ repo_depends:
 - r-ncdfflow
 - r-rbgl
 - r-rgraphviz
-- r-rhdf5lib
 - r-rprotobuflib
 - r-s4vectors
 - r-scales
 - r-xml
+repo_makedepends:
+- r-bh
+- r-cpp11
+- r-rhdf5lib
+- r-flowworkspacedata
+- r-testthat
 update_on:
-- regex: flowWorkspace_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/flowWorkspace
+- source: rpkgs
+  pkgname: flowWorkspace
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: boost-libs
+  repo: extra
+  provided: libboost_filesystem.so
+  strip_release: true
+- source: alpmfiles
+  pkgname: hdf5
+  filename: usr/lib/libhdf5\.so\.([^.]+)
+  repo: extra
+update_on_build:
+- pkgbase: r-cytolib
