@@ -1,9 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: RProtoBufLib_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RProtoBufLib
+- source: rpkgs
+  pkgname: RProtoBufLib
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: protobuf
+  repo: extra
+  provided: libprotobuf.so
+  strip_release: true
