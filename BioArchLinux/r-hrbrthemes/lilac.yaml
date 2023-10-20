@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-extrafont
+- r-gdtools
+- r-ggplot2
+- r-htmltools
+- r-knitr
+- r-magrittr
+- r-rmarkdown
+- r-scales
+repo_makedepends:
+- r-hunspell
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: hrbrthemes
+  repo: cran
+  md5: true
+- alias: r
