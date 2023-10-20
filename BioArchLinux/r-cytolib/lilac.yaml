@@ -1,13 +1,39 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-rprotobuflib
+repo_makedepends:
 - r-bh
 - r-rhdf5lib
-- r-rprotobuflib
 update_on:
-- regex: cytolib_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/cytolib
+- source: rpkgs
+  pkgname: cytolib
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: boost-libs
+  repo: extra
+  provided: libboost_filesystem.so
+  strip_release: true
+- source: alpmfiles
+  pkgname: hdf5
+  filename: usr/lib/libhdf5\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: hdf5
+  filename: usr/lib/libhdf5_cpp\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
+- source: alpm
+  alpm: protobuf
+  repo: extra
+  provided: libprotobuf.so
+  strip_release: true
+update_on_build:
+- pkgbase: r-rprotobuflib
