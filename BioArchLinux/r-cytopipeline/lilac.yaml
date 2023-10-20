@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocfilecache
+- r-biocparallel
+- r-diagram
+- r-flowai
+- r-flowcore
+- r-ggcyto
+- r-ggplot2
+- r-jsonlite
+- r-peacoqc
+- r-rlang
+- r-scales
+- r-withr
+repo_makedepends:
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: CytoPipeline
+  repo: bioc
+  md5: true
+- alias: r
