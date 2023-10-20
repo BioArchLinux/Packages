@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-proxy
+repo_makedepends:
+- r-caret
+- r-kernlab
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ssc
+  repo: cran
+  md5: true
+- alias: r
