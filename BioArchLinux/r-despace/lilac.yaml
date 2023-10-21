@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-biocgenerics
+- r-biocparallel
+- r-cowplot
+- r-data.table
+- r-dplyr
+- r-edger
+- r-ggforce
+- r-ggnewscale
+- r-ggplot2
+- r-ggpubr
+- r-limma
+- r-patchwork
+- r-s4vectors
+- r-scales
+- r-spatialexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-statmod
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: DESpace
+  repo: bioc
+  md5: true
+- alias: r
