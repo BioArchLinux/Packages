@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-archive
+- r-colourpicker
+- r-cytomapper
+- r-ebimage
+- r-rcolorbrewer
+- r-s4vectors
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-svglite
+- r-svgpanzoom
+- r-viridis
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: cytoviewer
+  repo: bioc
+  md5: true
+- alias: r
