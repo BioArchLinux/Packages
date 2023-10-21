@@ -12,3 +12,8 @@ update_on:
     github: lh3/minimap2
     use_max_tag: true
     prefix: 'v'
+  - source: alpm
+    alpm: zlib
+    repo: core
+    provided: libz.so
+    strip_release: true
