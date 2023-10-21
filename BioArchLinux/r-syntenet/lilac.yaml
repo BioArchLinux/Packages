@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-biostrings
+- r-genomicranges
+- r-ggnetwork
+- r-ggplot2
+- r-igraph
+- r-intergraph
+- r-networkd3
+- r-pheatmap
+- r-rcolorbrewer
+- r-rcpp
+- r-rlang
+- r-rtracklayer
+repo_makedepends:
+- r-testthat
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: syntenet
+  repo: bioc
+  md5: true
+- alias: r
