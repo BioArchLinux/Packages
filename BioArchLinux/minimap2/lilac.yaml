@@ -17,13 +17,3 @@ update_on:
     repo: core
     provided: libz.so
     strip_release: true
-  - source: alpm
-    alpm: glibc
-    repo: core
-    provided: libm.so
-    strip_release: true
-  - source: alpm
-    alpm: glibc
-    repo: core
-    provided: libc.so
-    strip_release: true
