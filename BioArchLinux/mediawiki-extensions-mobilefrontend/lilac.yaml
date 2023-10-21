@@ -9,4 +9,4 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: cmd
-    cmd: curl -sS https://raw.githubusercontent.com/archlinux/svntogit-community/packages/mediawiki/trunk/PKGBUILD | grep 'pkgver=' | sed 's/=/ /g' | awk '{print $2}' | cut -f 1,2 -d"." | sed 's/\./_/g'
+    cmd: curl -sS https://gitlab.archlinux.org/archlinux/packaging/packages/mediawiki/-/raw/main/PKGBUILD  | grep 'pkgver=' | sed 's/=/ /g' | awk '{print $2}' | cut -f 1,2 -d"." | sed 's/\./_/g'
