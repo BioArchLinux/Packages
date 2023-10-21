@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-glue
+- r-rlang
+- r-tibble
+repo_makedepends:
+- r-cpp11
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: archive
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: libarchive
+  repo: core
+  provided: libarchive.so
+  strip_release: true
