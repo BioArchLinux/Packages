@@ -2,8 +2,8 @@
 pkgname=mediawiki-skins-minervaneue
 _pkgname=mediawiki-skins-MinervaNeue
 _pkg=MinervaNeue
-pkgver=1_39
-pkgrel=3
+pkgver=1_40
+pkgrel=1
 pkgdesc="a responsive mobile-first skin for your mediawiki instance"
 arch=('x86_64')
 url="https://github.com/wikimedia/mediawiki-skins-MinervaNeue"
