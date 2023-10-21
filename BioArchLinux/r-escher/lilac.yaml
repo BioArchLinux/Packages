@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-rlang
+- r-spatialexperiment
+- r-spatiallibd
+- r-summarizedexperiment
+update_on:
+- source: rpkgs
+  pkgname: escheR
+  repo: bioc
+  md5: true
+- alias: r
