@@ -1,11 +1,11 @@
 --- minimap2-2.26.orig/Makefile	2023-04-29 21:51:09.000000000 +0530
-+++ minimap2-2.26.new/Makefile	2023-10-21 13:31:34.438714294 +0530
++++ minimap2-2.26.new/Makefile	2023-10-21 16:56:41.816040016 +0530
 @@ -1,5 +1,6 @@
 -CFLAGS=		-g -Wall -O2 -Wc++-compat #-Wextra
 -CPPFLAGS=	-DHAVE_KALLOC
 +CFLAGS+=		-g -Wall -fPIC -pie -O2 -Wc++-compat #-Wextra
 +CPPFLAGS+=	-DHAVE_KALLOC
-+LDFLAGS += -shared -pie
++LDFLAGS += -pie
  INCLUDES=
  OBJS=		kthread.o kalloc.o misc.o bseq.o sketch.o sdust.o options.o index.o \
  			lchain.o align.o hit.o seed.o map.o format.o pe.o esterr.o splitidx.o \
@@ -25,21 +25,21 @@
 -minimap2:main.o libminimap2.a
 -		$(CC) $(CFLAGS) main.o -o $@ -L. -lminimap2 $(LIBS)
 +$(LIBRARY): $(OBJS)
-+		$(CC) $(CFLAGS) $(LDFLAGS) -shared -Wl,-soname,lib$(NAME).so -lm -lz $^ -o $@
++		$(CC) $(LDFLAGS) -shared -Wl,-soname,lib$(NAME).so $^ -lm -lz -o $@
  
 -minimap2-lite:example.o libminimap2.a
 -		$(CC) $(CFLAGS) $< -o $@ -L. -lminimap2 $(LIBS)
 +minimap2:main.o libminimap2.so
-+		$(CC) $(CFLAGS) main.o -o $@ -L. -lminimap2 $(LIBS) $(LDFLAGS)
++		$(CC) $(LDFLAGS) main.o -o $@ -L. -lminimap2 $(LIBS)
  
 -libminimap2.a:$(OBJS)
 -		$(AR) -csru $@ $(OBJS)
 +minimap2-lite:example.o libminimap2.so
-+		$(CC) $(CFLAGS) $< -o $@ -L. -lminimap2 $(LIBS) $(LDFLAGS)
++		$(CC) $(LDFLAGS) $< -o $@ -L. -lminimap2 $(LIBS)
  
  sdust:sdust.c kalloc.o kalloc.h kdq.h kvec.h kseq.h ketopt.h sdust.h
 -		$(CC) -D_SDUST_MAIN $(CFLAGS) $< kalloc.o -o $@ -lz
-+		$(CC) -D_SDUST_MAIN $(CFLAGS) $< kalloc.o -o $@ -lz $(LDFLAGS)
++		$(CC) $(LDFLAGS) -D_SDUST_MAIN $(CFLAGS) $< kalloc.o -o $@ -lz
  
  # SSE-specific targets on x86/x86_64
  

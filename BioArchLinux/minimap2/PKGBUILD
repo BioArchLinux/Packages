@@ -13,11 +13,11 @@ provides=('minimap2-lite' 'sdust' 'libminimap2.so')
 source=("${pkgname}-${pkgver}.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz"
         "hardening.patch")
 sha256sums=('f4c8c3459c7b87e9de6cbed7de019b48d9337c2e46b87ba81b9f72d889420b3c'
-            '792146de76e9003cccb429623eae715ab0349396eafda3001bdec940323e9356')
+            'ff10a6b715db2e08add52b371842778f855cb4edc9f7fc373c6e1b670ef1415f')
 
 prepare() {
-  # Add hardening flags for binaries
   cd "${pkgname}-${pkgver}"
+  # Add hardening flags for binaries
   patch -p1 < "${srcdir}"/hardening.patch
 }
 
@@ -31,14 +31,14 @@ build() {
 package() {
   cd "${pkgname}-${pkgver}"
   install -Dm644 LICENSE.txt "${pkgdir}"/usr/share/licenses/${pkgname}/LICENSE
-  install -Dm644 libminimap2.so "${pkgdir}"/usr/lib/libminimap2.so
+  install -Dm755 libminimap2.so "${pkgdir}"/usr/lib/libminimap2.so
   install -Dm755 ${pkgname} "${pkgdir}"/usr/bin/${pkgname}
   install -Dm755 minimap2-lite "${pkgdir}"/usr/bin/minimap2-lite
   install -Dm755 sdust "${pkgdir}"/usr/bin/sdust
   # install Manpages
   install -Dm644 -t "$pkgdir/usr/share/man/man1" minimap2.1
   # install test Data
-  install -d ${pkgdir}/usr/share/${pkgname}/test
+  install -d "${pkgdir}"/usr/share/${pkgname}/test
   cd test
   for file in *; do
     install -Dm644 "$file" "${pkgdir}"/usr/share/${pkgname}/test/"${file}"
