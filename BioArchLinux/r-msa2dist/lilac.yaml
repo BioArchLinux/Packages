@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ape
+- r-biostrings
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-genomicranges
+- r-iranges
+- r-rcpp
+- r-rlang
+- r-seqinr
+- r-stringi
+- r-stringr
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-rcppthread
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MSA2dist
+  repo: bioc
+  md5: true
+- alias: r
