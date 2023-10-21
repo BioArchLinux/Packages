@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-prismatic
+- r-rematch2
+- r-rlang
+- r-rstudioapi
+repo_makedepends:
+- r-ggplot2
+- r-ggthemes
+- r-harrypotter
+- r-oompabase
+- r-palr
+- r-pals
+- r-scico
+- r-testthat
+- r-vdiffr
+- r-viridislite
+update_on:
+- source: rpkgs
+  pkgname: paletteer
+  repo: cran
+  md5: true
+- alias: r
