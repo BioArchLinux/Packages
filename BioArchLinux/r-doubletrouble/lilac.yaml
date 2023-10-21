@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biostrings
+- r-genomicranges
+- r-ggplot2
+- r-mclust
+- r-msa2dist
+- r-syntenet
+update_on:
+- source: rpkgs
+  pkgname: doubletrouble
+  repo: bioc
+  md5: true
+- alias: r
