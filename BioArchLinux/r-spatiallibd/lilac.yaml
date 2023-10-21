@@ -1,0 +1,46 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-benchmarkme
+- r-biocfilecache
+- r-biocgenerics
+- r-cowplot
+- r-dt
+- r-edger
+- r-experimenthub
+- r-fields
+- r-genomicranges
+- r-ggplot2
+- r-golem
+- r-iranges
+- r-jsonlite
+- r-limma
+- r-magick
+- r-paletteer
+- r-plotly
+- r-png
+- r-rcolorbrewer
+- r-rtracklayer
+- r-s4vectors
+- r-scater
+- r-scuttle
+- r-sessioninfo
+- r-shiny
+- r-shinywidgets
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-statmod
+- r-summarizedexperiment
+- r-tibble
+- r-viridislite
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: spatialLIBD
+  repo: bioc-data-experiment
+  md5: true
+- alias: r
