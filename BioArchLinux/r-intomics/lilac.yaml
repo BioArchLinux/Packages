@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bestnormalize
+- r-bnlearn
+- r-bnstruct
+- r-cowplot
+- r-ggplot2
+- r-ggraph
+- r-gplots
+- r-igraph
+- r-matrixstats
+- r-numbers
+- r-rcolorbrewer
+- r-rlang
+- r-summarizedexperiment
+repo_makedepends:
+- r-multiassayexperiment
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: IntOMICS
+  repo: bioc
+  md5: true
+- alias: r
