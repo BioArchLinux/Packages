@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cqn
+- r-data.table
+- r-plyr
+- r-summarizedexperiment
+- r-topconfects
+repo_makedepends:
+- r-clusterprofiler
+- r-edger
+- r-limma
+- r-org.hs.eg.db
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: GeoTcgaData
+  repo: bioc
+  md5: true
+- alias: r
