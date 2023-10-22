@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-basilisk
+- r-biocio
+- r-dplyr
+- r-genomicranges
+- r-hicexperiment
+- r-interactionset
+- r-iranges
+- r-plotly
+- r-reticulate
+- r-rmarkdown
+- r-rmdformats
+- r-s4vectors
+- r-sessioninfo
+- r-stringr
+- r-vroom
+update_on:
+- source: rpkgs
+  pkgname: HiCool
+  repo: bioc
+  md5: true
+- alias: r
