@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocio
+- r-biocparallel
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-interactionset
+- r-iranges
+- r-rhdf5
+- r-s4vectors
+- r-strawr
+- r-vroom
+repo_makedepends:
+- r-hicontactsdata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: HiCExperiment
+  repo: bioc
+  md5: true
+- alias: r
