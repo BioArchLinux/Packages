@@ -9,4 +9,4 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
 - source: cmd
-  cmd: curl -sS https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux/fastfetch/PKGBUILD | grep 'pkgver=' | sed 's/pkgver=//g'
+  cmd: curl -sS https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux/fastfetch-logo/PKGBUILD | grep 'pkgver=' | sed 's/pkgver=//g'
