@@ -8,6 +8,5 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-- source: github
-  github: LinusDierheimer/fastfetch
-  use_max_tag: true
+- source: cmd
+  cmd: curl -sS https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux/fastfetch/PKGBUILD | grep 'pkgver=' | sed 's/pkgver=//g'
