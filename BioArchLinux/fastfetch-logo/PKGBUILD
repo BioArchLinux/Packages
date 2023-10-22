@@ -1,6 +1,6 @@
 pkgname=fastfetch-logo
 pkgver=0.0.1
-pkgrel=0
+pkgrel=1
 pkgdesc="fastfetch Logo for BioArchLinux"
 arch=('any')
 url="https://github.com/BioArchLinux"
@@ -9,8 +9,7 @@ depends=('fastfetch')
 source=(
 	"bioarchlinux.logo"
 	"bioarchlinux-color.logo")
-sha256sums=(
-            '3d3135fe5a58600b9a13772654413aaaa973a97eea306e1dc46628ff5d955534'
+sha256sums=('3d3135fe5a58600b9a13772654413aaaa973a97eea306e1dc46628ff5d955534'
             '4216ddaa863c4eba67f971661bbbba96efa8991cf8b936481858048222a5c657')
 
 package() {
