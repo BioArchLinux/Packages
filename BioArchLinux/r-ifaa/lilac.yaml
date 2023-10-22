@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-desctools
+- r-doparallel
+- r-dorng
+- r-foreach
+- r-glmnet
+- r-hdci
+- r-mathjaxr
+- r-matrixextra
+- r-parallelly
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+repo_makedepends:
+- r-biocgenerics
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: IFAA
+  repo: bioc
+  md5: true
+- alias: r
