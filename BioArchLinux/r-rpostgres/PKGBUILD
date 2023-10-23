@@ -2,14 +2,14 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=RPostgres
-_pkgver=1.4.5
+_pkgver=1.4.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
-pkgdesc="Rcpp Interface to PostgreSQL"
+pkgrel=0
+pkgdesc="C++ Interface to PostgreSQL"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=(GPL3)
+license=(MIT)
 depends=(
   postgresql-libs
   r-bit64
@@ -17,11 +17,11 @@ depends=(
   r-dbi
   r-hms
   r-lubridate
-  r-rcpp
   r-withr
 )
 makedepends=(
   boost
+  r-cpp11
   r-plogr
 )
 checkdepends=(
@@ -39,9 +39,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-boost.patch")
-md5sums=('5b2cf8d6695f79f5bb0f365fdd63f825'
+md5sums=('e0ddd002a7cf6c06b753c8f04e201528'
          '77a2948b75606cdf00a4e6fa280c6ce9')
-sha256sums=('70ff848cba51ddad4642a20e01cda1033e6f218b015a13380c30604bbd18c797'
+sha256sums=('d9ee4b67e35dbe574afafd36cf53c3e2ea743f94c8fae1ff33bdbb9f531ea0d1'
             '760e6260eb765bb3414759a6aa56871457fdc73480c40419d6c01ae8d086bfb5')
 
 prepare() {
@@ -74,4 +74,7 @@ check() {
 package() {
   install -d "$pkgdir/usr/lib/R/library"
   cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
