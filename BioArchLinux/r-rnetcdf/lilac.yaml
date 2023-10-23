@@ -23,3 +23,5 @@ update_on:
   repo: extra
   provided: libmpi.so
   strip_release: true
+update_on_build:
+- pkgbase: udunits
