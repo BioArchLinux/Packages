@@ -1,14 +1,19 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Grey Christoforo <first name at last name dot net>
+# Contributor: Clint Valentine <valentine.clint@gmail.com>
 
 _pkgname=utf8
 _pkgver=1.2.4
 pkgname=r-${_pkgname,,}
-pkgver=1.2.4
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Unicode Text Processing'
-arch=('x86_64')
+pkgdesc="Unicode Text Processing"
+arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('Apache')
+license=(Apache)
 depends=(
   r
 )
@@ -22,14 +27,15 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b12b4a8b7c9fc8429a0c0633c59c7c18')
 sha256sums=('418f824bbd9cd868d2d8a0d4345545c62151d321224cdffca8b1ffd98a167b7d')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
