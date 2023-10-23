@@ -23,7 +23,7 @@ build() {
         -DCMAKE_BUILD_TYPE='None' \
         -DCMAKE_INSTALL_PREFIX='/usr' \
         -Wno-dev
-    cmake --build build
+    MAKEFLAGS=-j1 cmake --build build
 }
 
 check() {
