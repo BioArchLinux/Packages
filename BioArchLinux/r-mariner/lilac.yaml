@@ -1,0 +1,40 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-abind
+- r-assertthat
+- r-biocgenerics
+- r-biocmanager
+- r-biocparallel
+- r-colourvalues
+- r-data.table
+- r-dbscan
+- r-delayedarray
+- r-genomeinfodb
+- r-genomicranges
+- r-glue
+- r-hdf5array
+- r-interactionset
+- r-iranges
+- r-magrittr
+- r-plotgardener
+- r-plyranges
+- r-progress
+- r-purrr
+- r-rcolorbrewer
+- r-rhdf5
+- r-rlang
+- r-s4vectors
+- r-strawr
+- r-summarizedexperiment
+repo_makedepends:
+- r-marinerdata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: mariner
+  repo: bioc
+  md5: true
+- alias: r
