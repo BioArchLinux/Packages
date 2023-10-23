@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-aod
+- r-biocparallel
+- r-deseq2
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-matrixstats
+- r-openxlsx
+- r-rcolorbrewer
+- r-reshape2
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-tress
+repo_makedepends:
+- r-biocgenerics
+- r-runit
+- r-tbx20bamsubset
+update_on:
+- source: rpkgs
+  pkgname: magpie
+  repo: bioc
+  md5: true
+- alias: r
