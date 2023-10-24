@@ -2,8 +2,8 @@
 
 pkgname=graphite-gtk-theme
 _reponame='Graphite-gtk-theme'
-pkgver=2023.10.17
-pkgrel=3
+pkgver=2023.10.24
+pkgrel=1
 pkgdesc='Graphite gtk theme'
 arch=("any")
 provides=("graphite-gtk-theme")
