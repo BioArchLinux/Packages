@@ -1,13 +1,18 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-blockmodeling
 - r-gplots
+- r-rcpp
+- r-rcppeigen
 - r-testthat
+repo_makedepends:
+- r-bh
 update_on:
-- regex: EBSeq_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/EBSeq
+- source: rpkgs
+  pkgname: EBSeq
+  repo: bioc
+  md5: true
 - alias: r
