@@ -6,10 +6,10 @@
 # Contributor: Sauliusl <luksaulius at gmail>
 
 _pkgname=S4Vectors
-_pkgver=0.38.2
+_pkgver=0.40.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Foundation of vector-like and list-like containers in Bioconductor"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -30,8 +30,8 @@ optdepends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3cee7175a7e117e524e2a04cd979f177')
-sha256sums=('68633bf61a432675e6d16b7eb6226f389b9f62dbabe78c4d8cfd1e6242213c58')
+md5sums=('18f10482215a144cb55c30e54adf2574')
+sha256sums=('d7ff6cade33a14975c34710a5bf46f60e1b8ee308e5907bada301b0884649456')
 
 build() {
   mkdir -p build
