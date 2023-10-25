@@ -2,7 +2,7 @@
 
 pkgname=graphite-kde-theme
 _reponame='Graphite-kde-theme'
-pkgver=2023.08.23
+pkgver=2023.10.25
 pkgrel=1
 pkgdesc='Graphite kde theme'
 arch=("any")
