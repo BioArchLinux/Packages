@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=XVector
-_pkgver=0.40.0
+_pkgver=0.42.0
 pkgname=r-${_pkgname,,}
-pkgver=0.40.0
+pkgver=0.42.0
 pkgrel=1
 pkgdesc='Foundation of external vector representation and manipulation in Bioconductor'
 arch=('x86_64')
@@ -22,7 +22,7 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('42d60ded7fce1234e26e2082d37948fb7abf2412b4fd7bae59f6a162be8320ec')
+sha256sums=('a163561e54c8a3f013e629c275f2446d25b3b56dbab53a4938de5f405b8d0340')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
