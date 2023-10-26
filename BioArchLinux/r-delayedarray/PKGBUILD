@@ -1,16 +1,19 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=DelayedArray
-_pkgver=0.26.7
+_pkgver=0.28.0
 pkgname=r-${_pkgname,,}
-pkgver=0.26.7
-pkgrel=2
-pkgdesc='A unified framework for working transparently with on-disk and in-memory array-like datasets'
-arch=('x86_64')
+pkgver=${_pkgver//-/.}
+pkgrel=0
+pkgdesc="A unified framework for working transparently with on-disk and in-memory array-like datasets"
+arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=(Artistic2.0)
 depends=(
-  r
   r-biocgenerics
   r-iranges
   r-matrixgenerics
@@ -32,14 +35,15 @@ optdepends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0a02c989ee6882350ca536586ef667131c7ea7f7fa5ec3eb1965be506d4158f7')
+md5sums=('812e7575d6eaa61f5b68364cdf1da3d9')
+sha256sums=('c705055e2caf8b8ddbc9956d99a7c99415684dc7e9b31f42bd95186ddb06c355')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
