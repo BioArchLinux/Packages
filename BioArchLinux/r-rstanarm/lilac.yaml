@@ -4,18 +4,15 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-bayesplot
-- r-bh
 - r-ggplot2
 - r-lme4
 - r-loo
 - r-posterior
 - r-rcpp
-- r-rcppeigen
 - r-rcppparallel
 - r-rstan
 - r-rstantools
 - r-shinystan
-- r-stanheaders
 repo_makedepends:
 - r-bh
 - r-rcppeigen

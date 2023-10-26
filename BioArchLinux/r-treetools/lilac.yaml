@@ -10,7 +10,6 @@ repo_depends:
 - r-lifecycle
 - r-plottools
 - r-r.cache
-- r-rcpp
 - r-rcurl
 - r-rdpack
 repo_makedepends:

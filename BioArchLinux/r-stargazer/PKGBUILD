@@ -5,47 +5,13 @@ _pkgname=stargazer
 _pkgver=5.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Well-Formatted Regression and Summary Statistics Tables"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
   r
-)
-optdepends=(
-  r-aer
-  r-betareg
-  r-brglm
-  r-censreg
-  r-dynlm
-  r-eha
-  r-erer
-  r-ergm
-  r-fgarch
-  r-gee
-  r-glmx
-  r-gmm
-  r-lfe
-  r-lme4
-  r-lmtest
-  r-mass
-  r-mclogit
-  r-mgcv
-  r-mlogit
-  r-nlme
-  r-nnet
-  r-ordinal
-  r-plm
-  r-pscl
-  r-quantreg
-  r-relevent
-  r-rms
-  r-robustbase
-  r-sampleselection
-  r-spdep
-  r-survey
-  r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('4693401f69789744f3db458dd277563c')

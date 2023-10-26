@@ -5,14 +5,13 @@ _pkgname=ChemmineOB
 _pkgver=1.40.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="R interface to a subset of OpenBabel functionalities"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(Artistic2.0 GPL3)
 depends=(
   openbabel
-  r-bh
   r-biocgenerics
   r-rcpp
   r-zlibbioc
@@ -28,7 +27,6 @@ checkdepends=(
 optdepends=(
   r-biocmanager
   r-biocstyle
-  r-chemminer
   r-chemminer
   r-knitr
   r-knitrbootstrap

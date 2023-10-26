@@ -9,7 +9,7 @@ _pkgname=withr
 _pkgver=2.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Run Code 'With' Temporarily Modified Global State"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,8 +22,6 @@ optdepends=(
   r-covr
   r-dbi
   r-knitr
-  r-lattice
-  r-methods
   r-rlang
   r-rmarkdown
   r-rsqlite

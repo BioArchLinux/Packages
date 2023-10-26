@@ -6,7 +6,6 @@ repo_depends:
 - r-backports
 - r-chk
 - r-rcpp
-- r-rcppprogress
 - r-rlang
 repo_makedepends:
 - r-rcppprogress

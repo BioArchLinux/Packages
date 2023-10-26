@@ -5,7 +5,7 @@ _pkgname=BUSpaRse
 _pkgver=1.14.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="kallisto | bustools R utilities"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,7 +13,6 @@ license=(BSD)
 depends=(
   r-annotationdbi
   r-annotationfilter
-  r-bh
   r-biocgenerics
   r-biomart
   r-biostrings
@@ -28,8 +27,6 @@ depends=(
   r-magrittr
   r-plyranges
   r-rcpp
-  r-rcpparmadillo
-  r-rcppprogress
   r-s4vectors
   r-stringr
   r-tibble

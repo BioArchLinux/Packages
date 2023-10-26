@@ -5,11 +5,9 @@ maintainers:
 repo_depends:
 - r-bit64
 - r-blob
-- r-cpp11
 - r-dbi
 - r-memoise
 - r-pkgconfig
-- r-plogr
 repo_makedepends:
 - r-cpp11
 - r-plogr

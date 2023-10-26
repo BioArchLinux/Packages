@@ -5,13 +5,12 @@ _pkgname=CoGAPS
 _pkgver=3.20.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Coordinated Gene Activity in Pattern Sets"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(BSD)
 depends=(
-  r-bh
   r-biocparallel
   r-biomart
   r-dplyr
@@ -37,7 +36,6 @@ optdepends=(
   r-biocstyle
   r-knitr
   r-rmarkdown
-  r-seuratobject
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

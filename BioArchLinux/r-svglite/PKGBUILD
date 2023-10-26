@@ -5,14 +5,13 @@ _pkgname=svglite
 _pkgver=2.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="An 'SVG' Graphics Device"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
   libpng
-  r-cpp11
   r-systemfonts
 )
 makedepends=(

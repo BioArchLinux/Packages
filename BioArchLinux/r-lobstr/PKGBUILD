@@ -5,13 +5,12 @@ _pkgname=lobstr
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=9
 pkgdesc="Visualize R Data Structures with Trees"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(MIT)
 depends=(
-  r-cpp11
   r-crayon
   r-prettyunits
   r-rlang

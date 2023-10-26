@@ -7,7 +7,7 @@ _pkgname=spam
 _pkgver=2.10-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="SPArse Matrix"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,7 +27,6 @@ checkdepends=(
 optdepends=(
   r-fields
   r-knitr
-  r-matrix
   r-r.rsp
   r-rmarkdown
   r-spam64

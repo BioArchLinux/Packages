@@ -8,7 +8,7 @@ _pkgname=xfun
 _pkgver=0.40
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Supporting Functions for Packages Maintained by 'Yihui Xie'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,7 +20,6 @@ checkdepends=(
   r-testit
 )
 optdepends=(
-  r-codetools
   r-curl
   r-htmltools
   r-jsonlite
@@ -29,7 +28,6 @@ optdepends=(
   r-markdown
   r-mime
   r-pak
-  r-parallel
   r-remotes
   r-renv
   r-rhub

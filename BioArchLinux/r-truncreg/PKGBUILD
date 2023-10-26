@@ -4,16 +4,13 @@ _pkgname=truncreg
 _pkgver=0.2-5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Truncated Gaussian Regression Models"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
   r-maxlik
-)
-optdepends=(
-  r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('6ddc73494a349da69b23f859ffe89a54')

@@ -4,7 +4,7 @@ _pkgname=mvabund
 _pkgver=4.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Statistical Methods for Analysing Multivariate Abundance Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,7 +12,6 @@ license=(LGPL)
 depends=(
   gsl
   r-rcpp
-  r-rcppgsl
   r-statmod
   r-tweedie
 )

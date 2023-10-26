@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-knitr
 - r-rcpp
-- r-rcpparmadillo
 repo_makedepends:
 - r-rcpparmadillo
 - r-gsl

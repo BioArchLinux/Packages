@@ -7,7 +7,7 @@ _pkgname=recipes
 _pkgver=1.0.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Preprocessing and Feature Engineering Steps for Modeling"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -65,7 +65,6 @@ optdepends=(
   r-rann
   r-rcpproll
   r-rmarkdown
-  r-rpart
   r-rsample
   r-rspectra
   r-splines2

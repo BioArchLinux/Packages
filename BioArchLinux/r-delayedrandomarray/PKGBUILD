@@ -5,13 +5,12 @@ _pkgname=DelayedRandomArray
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Delayed Arrays of Random Values"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(GPL3)
 depends=(
-  r-bh
   r-delayedarray
   r-dqrng
   r-rcpp
@@ -25,7 +24,6 @@ checkdepends=(
 optdepends=(
   r-biocstyle
   r-knitr
-  r-matrix
   r-rmarkdown
   r-testthat
 )

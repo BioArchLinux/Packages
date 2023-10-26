@@ -5,7 +5,7 @@ _pkgname=remaCor
 _pkgver=0.0.16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Random Effects Meta-Analysis for Correlated Test Statistics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,7 +15,6 @@ depends=(
   r-ggplot2
   r-mvtnorm
   r-rcpp
-  r-rcpparmadillo
   r-rdpack
   r-reshape2
 )

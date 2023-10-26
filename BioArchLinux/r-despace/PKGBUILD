@@ -4,7 +4,7 @@ _pkgname=DESpace
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="DESpace: a framework to discover spatially variable genes"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -42,7 +42,6 @@ optdepends=(
   r-scuttle
   r-spatiallibd
   r-testthat
-  r-utils
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('ebe4a43a2479a091a19a012ae6db464c')

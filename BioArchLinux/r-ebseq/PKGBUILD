@@ -5,13 +5,12 @@ _pkgname=EBSeq
 _pkgver=2.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="An R package for gene and isoform differential expression analysis of RNA-seq data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(Artistic2.0)
 depends=(
-  r-bh
   r-blockmodeling
   r-gplots
   r-rcpp

@@ -4,14 +4,13 @@ _pkgname=readODS
 _pkgver=2.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Read and Write ODS Files"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL3)
 depends=(
   r-cellranger
-  r-cpp11
   r-readr
   r-stringi
   r-tibble
@@ -26,7 +25,6 @@ checkdepends=(
 )
 optdepends=(
   r-covr
-  r-datasets
   r-knitr
   r-rmarkdown
   r-spelling

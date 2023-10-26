@@ -5,7 +5,7 @@ _pkgname=rstanarm
 _pkgver=2.26.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Bayesian Applied Regression Modeling via Stan"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,18 +13,15 @@ license=(GPL3)
 depends=(
   pandoc
   r-bayesplot
-  r-bh
   r-ggplot2
   r-lme4
   r-loo
   r-posterior
   r-rcpp
-  r-rcppeigen
   r-rcppparallel
   r-rstan
   r-rstantools
   r-shinystan
-  r-stanheaders
 )
 makedepends=(
   r-bh
@@ -47,8 +44,6 @@ optdepends=(
   r-gridextra
   r-hsaur3
   r-knitr
-  r-mass
-  r-mgcv
   r-rmarkdown
   r-roxygen2
   r-shiny

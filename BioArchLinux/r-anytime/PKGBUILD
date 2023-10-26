@@ -6,13 +6,12 @@ _pkgname=anytime
 _pkgver=0.3.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=4
 pkgdesc="Anything to 'POSIXct' or 'Date' Converter"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
-  r-bh
   r-rcpp
 )
 makedepends=(

@@ -7,7 +7,6 @@ repo_depends:
 - r-hdf5array
 - r-rcpp
 - r-rhdf5
-- r-rhdf5lib
 repo_makedepends:
 - r-rhdf5lib
 - r-biocsingular

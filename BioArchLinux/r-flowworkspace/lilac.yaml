@@ -3,10 +3,8 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-biobase
 - r-biocgenerics
-- r-cpp11
 - r-cytolib
 - r-data.table
 - r-delayedarray
@@ -18,7 +16,6 @@ repo_depends:
 - r-ncdfflow
 - r-rbgl
 - r-rgraphviz
-- r-rhdf5lib
 - r-rprotobuflib
 - r-s4vectors
 - r-scales

@@ -4,18 +4,13 @@ _pkgname=mclogit
 _pkgver=0.9.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Multinomial Logit Models, with or without Random Effects or Overdispersion"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL2)
 depends=(
   r-memisc
-)
-optdepends=(
-  r-emmeans
-  r-mass
-  r-nnet
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('fde8195c54f7096ebf8071b67b44ddab')

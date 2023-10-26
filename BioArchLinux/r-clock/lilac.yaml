@@ -4,7 +4,6 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
-- r-cpp11
 - r-lifecycle
 - r-rlang
 - r-tzdb

@@ -3,11 +3,10 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- tiledb
 - r-nanotime
 - r-rcpp
-- r-rcppint64
 - r-spdl
+- tiledb
 repo_makedepends:
 - r-rcppint64
 - r-arrow

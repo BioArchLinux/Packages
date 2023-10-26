@@ -4,13 +4,12 @@ _pkgname=colourvalues
 _pkgver=0.3.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Assigns Colours to Values"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL3)
 depends=(
-  r-bh
   r-rcpp
 )
 makedepends=(

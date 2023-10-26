@@ -3,7 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-geometry
 - r-rcpp
 - r-robustbase

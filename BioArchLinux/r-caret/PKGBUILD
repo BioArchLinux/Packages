@@ -9,7 +9,7 @@ _pkgname=caret
 _pkgver=6.0-94
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=3
 pkgdesc="Classification and Regression Training"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -49,13 +49,9 @@ optdepends=(
   r-kernlab
   r-klar
   r-knitr
-  r-mass
-  r-matrix
   r-mda
-  r-mgcv
   r-mlbench
   r-mlmetrics
-  r-nnet
   r-pamr
   r-party
   r-pls
@@ -63,7 +59,6 @@ optdepends=(
   r-randomforest
   r-rann
   r-rmarkdown
-  r-rpart
   r-spls
   r-subselect
   r-superpc

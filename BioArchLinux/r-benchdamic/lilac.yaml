@@ -22,7 +22,6 @@ repo_depends:
 - r-metagenomeseq
 - r-mglm
 - r-microbiomestat
-- r-mixomics
 - r-noiseq
 - r-phyloseq
 - r-plyr

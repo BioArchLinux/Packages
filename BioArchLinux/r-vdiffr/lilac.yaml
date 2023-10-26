@@ -3,7 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-cpp11
 - r-diffobj
 - r-glue
 - r-htmltools

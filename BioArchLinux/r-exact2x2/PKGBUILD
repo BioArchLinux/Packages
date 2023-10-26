@@ -5,7 +5,7 @@ _pkgname=exact2x2
 _pkgver=1.6.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=3
 pkgdesc="Exact Tests and Confidence Intervals for 2x2 Tables"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,6 @@ checkdepends=(
 optdepends=(
   r-exact
   r-ggplot2
-  r-grid
   r-gridextra
   r-testthat
 )

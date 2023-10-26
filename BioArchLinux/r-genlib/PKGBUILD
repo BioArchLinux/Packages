@@ -5,13 +5,12 @@ _pkgname=GENLIB
 _pkgver=1.1.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=3
 pkgdesc="Genealogical Data Analysis"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
-  r-bh
   r-bootstrap
   r-doparallel
   r-foreach

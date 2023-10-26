@@ -5,13 +5,12 @@ _pkgname=fgsea
 _pkgver=1.28.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Fast Gene Set Enrichment Analysis"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(MIT)
 depends=(
-  r-bh
   r-biocparallel
   r-cowplot
   r-data.table
@@ -37,7 +36,6 @@ optdepends=(
   r-limma
   r-msigdbr
   r-org.mm.eg.db
-  r-parallel
   r-reactome.db
   r-rmarkdown
   r-seurat

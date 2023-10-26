@@ -5,9 +5,9 @@ _pkgname=dimRed
 _pkgver=0.2.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=3
 pkgdesc="A Framework for Dimensionality Reduction"
-arch=(x86_64)
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL3)
 depends=(
@@ -38,14 +38,11 @@ optdepends=(
   r-energy
   r-fastica
   r-ggplot2
-  r-graphics
   r-igraph
   r-keras
   r-kernlab
   r-knitr
   r-loe
-  r-mass
-  r-matrix
   r-nmf
   r-optimx
   r-pcal1
@@ -57,7 +54,6 @@ optdepends=(
   r-rtsne
   r-scales
   r-scatterplot3d
-  r-stats
   r-tensorflow
   r-testthat
   r-tidyr

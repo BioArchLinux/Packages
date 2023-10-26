@@ -21,5 +21,3 @@ update_on:
   repo: extra
   provided: libfreetype.so
   strip_release: true
-repo_depends:
-- r-cpp11

@@ -4,7 +4,7 @@ _pkgname=parsnip
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="A Common API to Modeling and Analysis Functions"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -56,18 +56,12 @@ optdepends=(
   r-kknn
   r-knitr
   r-liblinear
-  r-mass
-  r-matrix
-  r-mgcv
   r-modeldata
-  r-nlme
   r-prodlim
   r-ranger
   r-remotes
   r-rmarkdown
-  r-rpart
   r-sparklyr
-  r-survival
   r-tensorflow
   r-testthat
   r-xgboost

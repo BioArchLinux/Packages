@@ -4,15 +4,13 @@ _pkgname=websocket
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=4
 pkgdesc="'WebSocket' Client Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL2)
 depends=(
   openssl
-  r-asioheaders
-  r-cpp11
   r-later
   r-r6
 )

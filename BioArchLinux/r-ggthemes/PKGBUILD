@@ -6,7 +6,7 @@ _pkgname=ggthemes
 _pkgver=4.2.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=7
 pkgdesc="Extra Themes, Scales and Geoms for 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -29,7 +29,6 @@ optdepends=(
   r-extrafont
   r-glue
   r-knitr
-  r-lattice
   r-lintr
   r-mapproj
   r-maps

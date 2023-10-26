@@ -5,13 +5,12 @@ _pkgname=CellBarcode
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Cellular DNA Barcode Analysis toolkit"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(MIT)
 depends=(
-  r-bh
   r-biostrings
   r-ckmeans.1d.dp
   r-data.table

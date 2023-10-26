@@ -4,7 +4,6 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - cctz
-- r-cpp11
 repo_makedepends:
 - r-cpp11
 - r-testthat

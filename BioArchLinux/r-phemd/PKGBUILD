@@ -5,7 +5,7 @@ _pkgname=phemd
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Phenotypic EMD for comparison of single-cell samples"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -35,7 +35,6 @@ depends=(
   r-vgam
 )
 optdepends=(
-  r-biocstyle
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

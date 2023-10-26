@@ -5,8 +5,8 @@ maintainers:
 repo_depends:
 - r-ggplot2
 - r-rlang
-- r-singlecellexperiment
 - r-spatialexperiment
+- r-spatiallibd
 - r-summarizedexperiment
 update_on:
 - source: rpkgs

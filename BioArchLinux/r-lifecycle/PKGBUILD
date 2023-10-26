@@ -7,7 +7,7 @@ _pkgname=lifecycle
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=7
 pkgdesc="Manage the Life Cycle of your Package Functions"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -26,7 +26,6 @@ optdepends=(
   r-testthat
   r-tibble
   r-tidyverse
-  r-tools
   r-vctrs
   r-withr
 )

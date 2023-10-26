@@ -6,16 +6,13 @@ _pkgname=ISLR
 _pkgver=1.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Data for an Introduction to Statistical Learning with Applications in R"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL2)
 depends=(
   r
-)
-optdepends=(
-  r-mass
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b0cdfa5fa7e5c79cab653c728a2900fb')

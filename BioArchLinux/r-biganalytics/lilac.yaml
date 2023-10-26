@@ -3,11 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-biglm
 - r-bigmemory
 - r-foreach
-- r-rcpp
 repo_makedepends:
 - r-bh
 - r-rcpp

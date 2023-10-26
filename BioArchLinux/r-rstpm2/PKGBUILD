@@ -4,7 +4,7 @@ _pkgname=rstpm2
 _pkgver=1.6.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Smooth Survival Models, Including Generalized Survival Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -13,11 +13,9 @@ depends=(
   blas
   lapack
   r-bbmle
-  r-bh
   r-desolve
   r-fastghquad
   r-rcpp
-  r-rcpparmadillo
 )
 makedepends=(
   gcc-fortran
@@ -31,7 +29,6 @@ optdepends=(
   r-eha
   r-flexsurv
   r-ggplot2
-  r-lattice
   r-mstate
   r-readstata13
   r-scales

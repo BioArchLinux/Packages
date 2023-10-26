@@ -4,7 +4,7 @@ _pkgname=ordinal
 _pkgver=2022.11-16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Regression Models for Ordinal Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,9 +18,7 @@ checkdepends=(
 )
 optdepends=(
   r-lme4
-  r-nnet
   r-testthat
-  r-tools
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

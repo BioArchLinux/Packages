@@ -10,7 +10,7 @@ _pkgname=colorspace
 _pkgver=2.1-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=4
 pkgdesc="A Toolbox for Manipulating and Assessing Colors and Palettes"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,15 +19,11 @@ depends=(
   r
 )
 optdepends=(
-  r-datasets
   r-dplyr
   r-ggplot2
-  r-grid
   r-jpeg
   r-kernlab
-  r-kernsmooth
   r-knitr
-  r-mass
   r-mvtnorm
   r-png
   r-rcartocolor
@@ -37,8 +33,6 @@ optdepends=(
   r-scico
   r-shiny
   r-shinyjs
-  r-tcltk
-  r-utils
   r-vcd
   r-viridis
   r-wesanderson

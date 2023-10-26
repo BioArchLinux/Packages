@@ -3,8 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
-- r-cpp11
 - r-futile.logger
 - r-snow
 repo_makedepends:

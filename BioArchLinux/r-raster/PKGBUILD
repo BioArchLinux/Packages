@@ -8,7 +8,7 @@ _pkgname=raster
 _pkgver=3.6-26
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Geographic Data Analysis and Modeling"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -26,12 +26,9 @@ optdepends=(
   r-fields
   r-gstat
   r-igraph
-  r-mass
   r-ncdf4
-  r-parallel
   r-rastervis
   r-sf
-  r-tcltk
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

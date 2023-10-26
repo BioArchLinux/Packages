@@ -4,28 +4,27 @@ _pkgname=alabaster.matrix
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=2
 pkgdesc="Load and Save Artifacts from File"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(MIT)
 depends=(
   r-alabaster.base
-  r-biocgenerics
   r-delayedarray
   r-hdf5array
   r-rhdf5
-  r-s4vectors
-  r-sparsearray
 )
 checkdepends=(
   r-chihaya
   r-testthat
 )
 optdepends=(
+  r-biocgenerics
   r-biocstyle
   r-chihaya
   r-knitr
+  r-s4vectors
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

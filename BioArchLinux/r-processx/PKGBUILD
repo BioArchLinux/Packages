@@ -7,7 +7,7 @@ _pkgname=processx
 _pkgver=3.8.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Execute and Control System Processes"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,11 +19,9 @@ depends=(
 optdepends=(
   r-callr
   r-cli
-  r-codetools
   r-covr
   r-curl
   r-debugme
-  r-parallel
   r-rlang
   r-testthat
   r-webfakes

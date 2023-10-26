@@ -10,7 +10,7 @@ _pkgname=ggplot2
 _pkgver=3.4.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Create Elegant Data Visualisations Using the Grammar of Graphics"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -45,20 +45,16 @@ optdepends=(
   r-hexbin
   r-hmisc
   r-knitr
-  r-lattice
   r-mapproj
   r-maps
   r-multcomp
   r-munsell
-  r-nlme
   r-profvis
   r-quantreg
   r-ragg
   r-rcolorbrewer
   r-rmarkdown
-  r-rpart
   r-sf
-  r-sp
   r-svglite
   r-testthat
   r-vdiffr

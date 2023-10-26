@@ -10,7 +10,7 @@ _pkgname=xtable
 _pkgver=1.8-4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=10
 pkgdesc="Export Tables to LaTeX or HTML"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,7 +21,6 @@ depends=(
 optdepends=(
   r-knitr
   r-plm
-  r-survival
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

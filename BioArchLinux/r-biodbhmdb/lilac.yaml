@@ -6,7 +6,6 @@ repo_depends:
 - r-biodb
 - r-r6
 - r-rcpp
-- r-testthat
 - r-zip
 repo_makedepends:
 - r-testthat

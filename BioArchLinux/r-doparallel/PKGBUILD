@@ -5,7 +5,7 @@ _pkgname=doParallel
 _pkgver=1.0.17
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=7
 pkgdesc="Foreach Parallel Adaptor for the 'parallel' Package"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,9 +21,7 @@ checkdepends=(
 )
 optdepends=(
   r-caret
-  r-compiler
   r-mlbench
-  r-rpart
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

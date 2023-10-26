@@ -18,7 +18,6 @@ repo_depends:
 - r-rcurl
 - r-rsqlite
 - r-stringr
-- r-testthat
 - r-withr
 - r-xml
 - r-yaml

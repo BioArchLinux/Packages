@@ -5,7 +5,7 @@ _pkgname=cytolib
 _pkgver=2.14.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="C++ infrastructure for representing and interacting with the gated cytometry data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -15,8 +15,6 @@ depends=(
   hdf5
   lapack
   protobuf
-  r-bh
-  r-rhdf5lib
   r-rprotobuflib
 )
 makedepends=(

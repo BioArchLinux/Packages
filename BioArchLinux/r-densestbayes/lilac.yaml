@@ -3,14 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-rcpp
-- r-rcpparmadillo
-- r-rcppeigen
-- r-rcppparallel
 - r-rstan
 - r-rstantools
-- r-stanheaders
 repo_makedepends:
 - r-bh
 - r-rcpparmadillo

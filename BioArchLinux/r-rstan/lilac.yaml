@@ -3,7 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-bh
 - r-ggplot2
 - r-gridextra
 - r-inline
@@ -11,7 +10,6 @@ repo_depends:
 - r-pkgbuild
 - r-quickjsr
 - r-rcpp
-- r-rcppeigen
 - r-rcppparallel
 - r-stanheaders
 repo_makedepends:
