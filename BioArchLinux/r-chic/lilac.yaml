@@ -18,5 +18,5 @@ repo_depends:
 update_on:
 - regex: ChIC_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/ChIC
+  url: https://bioconductor.org/packages/3.17/ChIC
 - alias: r

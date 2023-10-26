@@ -19,5 +19,5 @@ repo_depends:
 update_on:
 - regex: chromswitch_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/chromswitch
+  url: https://bioconductor.org/packages/3.17/chromswitch
 - alias: r

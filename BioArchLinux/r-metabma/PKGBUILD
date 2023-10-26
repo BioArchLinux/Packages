@@ -5,21 +5,24 @@ _pkgname=metaBMA
 _pkgver=0.6.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian Model Averaging for Random and Fixed Effects Meta-Analysis"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL3)
 depends=(
+  r-bh
   r-bridgesampling
   r-coda
   r-laplacesdemon
   r-logspline
   r-mvtnorm
   r-rcpp
+  r-rcppeigen
   r-rcppparallel
   r-rstan
   r-rstantools
+  r-stanheaders
 )
 makedepends=(
   r-bh

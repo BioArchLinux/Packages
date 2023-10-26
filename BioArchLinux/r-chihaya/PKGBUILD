@@ -4,17 +4,18 @@ _pkgname=chihaya
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Save Delayed Operations to a HDF5 File"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(GPL3)
 depends=(
+  zlib
   r-delayedarray
   r-hdf5array
   r-rcpp
   r-rhdf5
-  zlib
+  r-rhdf5lib
 )
 makedepends=(
   r-rhdf5lib

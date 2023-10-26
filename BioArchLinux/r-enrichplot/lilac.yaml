@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-aplot
 - r-dose
+- r-ggfun
 - r-ggnewscale
 - r-ggplot2
 - r-ggraph

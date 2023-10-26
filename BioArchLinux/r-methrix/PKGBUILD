@@ -4,7 +4,7 @@ _pkgname=methrix
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=1.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast and efficient summarization of generic bedGraph files from Bisufite sequencing'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,10 +21,12 @@ depends=(
   r-iranges
   r-matrixstats
   r-rtracklayer
+  r-s4vectors
   r-summarizedexperiment
 )
 optdepends=(
   r-biostrings
+  r-bsgenome.hsapiens.ucsc.hg19
   r-bsgenome.mmusculus.ucsc.mm9
   r-bsseq
   r-dss

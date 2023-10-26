@@ -15,6 +15,7 @@ repo_depends:
 - r-ggbio
 - r-ggplot2
 - r-ggthemes
+- r-parallelly
 - r-plyr
 - r-rsamtools
 - r-rsubread

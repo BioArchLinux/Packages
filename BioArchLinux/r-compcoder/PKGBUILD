@@ -4,13 +4,15 @@ _pkgname=compcodeR
 _pkgver=1.36.2
 pkgname=r-${_pkgname,,}
 pkgver=1.36.2
-pkgrel=1
+pkgrel=2
 pkgdesc='RNAseq data simulation, differential expression analysis and performance comparison of differential expression methods'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  tk
+  r-ape
   r-catools
   r-edger
   r-ggplot2
@@ -19,18 +21,18 @@ depends=(
   r-knitr
   r-limma
   r-markdown
+  r-matrixstats
   r-modeest
+  r-phylolm
+  r-rmarkdown
   r-rocr
+  r-shiny
+  r-shinydashboard
   r-sm
   r-stringr
   r-vioplot
-  tk
-  r-matrixstats
-  r-ape
-  r-phylolm
 )
 optdepends=(
-  r-bayseq
   r-biocstyle
   r-covr
   r-deseq2
@@ -42,11 +44,11 @@ optdepends=(
   r-noiseq
   r-phangorn
   r-phytools
-  r-rmarkdown
   r-rpanel
   r-statmod
   r-sva
   r-tcc
+  r-tcltk
   r-testthat
   r-tidytree
 )

@@ -11,8 +11,10 @@ repo_depends:
 - r-biostrings
 - r-bsgenome
 - r-cowplot
+- r-curl
 - r-data.table
 - r-deseq2
+- r-downloader
 - r-fst
 - r-genomeinfodb
 - r-genomicalignments
@@ -25,10 +27,13 @@ repo_depends:
 - r-jsonlite
 - r-r.utils
 - r-rcpp
+- r-rcurl
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
 - r-summarizedexperiment
+- r-withr
+- r-xml
 - r-xml2
 update_on:
 - regex: ORFik_([\d._-]+).tar.gz

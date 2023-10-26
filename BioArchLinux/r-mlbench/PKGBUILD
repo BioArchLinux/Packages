@@ -5,13 +5,16 @@ _pkgname=mlbench
 _pkgver=2.1-3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Machine Learning Benchmark Problems"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL2)
 depends=(
   r
+)
+optdepends=(
+  r-lattice
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('052333f1f00cee5907e8621abc047799')

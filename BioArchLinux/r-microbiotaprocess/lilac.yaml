@@ -11,6 +11,7 @@ repo_depends:
 - r-dplyr
 - r-dtplyr
 - r-foreach
+- r-ggfun
 - r-ggplot2
 - r-ggrepel
 - r-ggsignif

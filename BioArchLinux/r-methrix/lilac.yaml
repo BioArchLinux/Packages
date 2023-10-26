@@ -13,6 +13,7 @@ repo_depends:
 - r-iranges
 - r-matrixstats
 - r-rtracklayer
+- r-s4vectors
 - r-summarizedexperiment
 update_on:
 - regex: methrix_([\d._-]+).tar.gz

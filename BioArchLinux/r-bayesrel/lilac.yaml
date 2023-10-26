@@ -1,15 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-coda
-  - r-laplacesdemon
-  - r-lavaan
-  - r-rcpp
-  - r-rcpparmadillo
-  - r-rdpack
+- r-coda
+- r-laplacesdemon
+- r-lavaan
+- r-rcpp
+- r-rcpparmadillo
+- r-rdpack
 update_on:
-  - regex: Bayesrel_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=Bayesrel/
-  - alias: r
+- regex: Bayesrel_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=Bayesrel
+- alias: r

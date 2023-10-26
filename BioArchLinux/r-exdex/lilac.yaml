@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-chandwich
 - r-rcpp
+- r-rcpparmadillo
 - r-rcpproll
 repo_makedepends:
 - r-rcpparmadillo

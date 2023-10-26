@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-carnival
+- r-decoupler
 - r-dorothea
 - r-dplyr
 - r-gseabase

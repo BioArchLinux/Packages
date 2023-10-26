@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-coin
 - r-ggplot2
+- r-s4vectors
 - r-summarizedexperiment
 update_on:
 - regex: lefser_([\d._-]+).tar.gz

@@ -6,6 +6,7 @@ repo_depends:
 - r-biocgenerics
 - r-delayedarray
 - r-rcpp
+- r-sparsearray
 update_on:
 - regex: beachmat_([\d._-]+).tar.gz
   source: regex

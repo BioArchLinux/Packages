@@ -4,7 +4,6 @@ maintainers:
 repo_depends:
 - jags
 - r-bayestools
-- r-coda
 - r-ggplot2
 - r-mvtnorm
 - r-rdpack

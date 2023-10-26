@@ -5,14 +5,16 @@ _pkgname=DDRTree
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Learning Principal Graphs with DDRTree"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(Artistic2.0)
 depends=(
+  r-bh
   r-irlba
   r-rcpp
+  r-rcppeigen
 )
 makedepends=(
   r-bh

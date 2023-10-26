@@ -3,8 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-ggplot2
 - r-gtable
+- r-rlang
 update_on:
 - regex: patchwork_([\d._-]+).tar.gz
   source: regex

@@ -3,8 +3,10 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bh
 - r-irlba
 - r-rcpp
+- r-rcppeigen
 repo_makedepends:
 - r-bh
 - r-rcppeigen

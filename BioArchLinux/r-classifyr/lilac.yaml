@@ -9,6 +9,7 @@ repo_depends:
 - r-generics
 - r-ggplot2
 - r-ggpubr
+- r-ggupset
 - r-multiassayexperiment
 - r-ranger
 - r-reshape2

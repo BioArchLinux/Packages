@@ -4,7 +4,7 @@ _pkgname=HTSeqGenie
 _pkgver=4.30.0
 pkgname=r-${_pkgname,,}
 pkgver=4.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A NGS analysis pipeline.'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -34,6 +34,7 @@ depends=(
 optdepends=(
   r-lungcancerlines
   r-org.hs.eg.db
+  r-runit
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

@@ -9,13 +9,14 @@ _pkgname=rstan
 _pkgver=2.32.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="R Interface to Stan"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL3)
 depends=(
   pandoc
+  r-bh
   r-ggplot2
   r-gridextra
   r-inline
@@ -23,6 +24,7 @@ depends=(
   r-pkgbuild
   r-quickjsr
   r-rcpp
+  r-rcppeigen
   r-rcppparallel
   r-stanheaders
 )
@@ -36,7 +38,10 @@ checkdepends=(
 optdepends=(
   r-bayesplot
   r-coda
+  r-kernsmooth
   r-knitr
+  r-matrix
+  r-parallel
   r-rmarkdown
   r-rstantools
   r-rstudioapi

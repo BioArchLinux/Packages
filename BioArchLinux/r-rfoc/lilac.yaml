@@ -3,10 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-fields
 - r-geomap
 - r-rpmg
 - r-rseis
-- r-splancs
 update_on:
 - regex: RFOC_([\d._-]+).tar.gz
   source: regex

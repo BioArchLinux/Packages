@@ -28,5 +28,5 @@ repo_depends:
 update_on:
 - regex: MIGSA_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/MIGSA
+  url: https://bioconductor.org/packages/3.17/MIGSA
 - alias: r

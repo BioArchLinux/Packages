@@ -28,5 +28,5 @@ repo_depends:
 update_on:
 - regex: dasper_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/dasper
+  url: https://bioconductor.org/packages/3.17/dasper
 - alias: r

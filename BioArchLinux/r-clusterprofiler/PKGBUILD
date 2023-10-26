@@ -4,7 +4,7 @@ _pkgname=clusterProfiler
 _pkgver=4.8.3
 pkgname=r-${_pkgname,,}
 pkgver=4.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A universal enrichment tool for interpreting omics data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -19,6 +19,8 @@ depends=(
   r-go.db
   r-gosemsim
   r-gson
+  r-httr
+  r-igraph
   r-magrittr
   r-plyr
   r-qvalue
@@ -28,10 +30,12 @@ depends=(
 )
 optdepends=(
   r-annotationhub
+  r-biocmanager
+  r-jsonlite
   r-knitr
   r-org.hs.eg.db
   r-prettydoc
-  r-reactomepa
+  r-readr
   r-rmarkdown
   r-testthat
 )

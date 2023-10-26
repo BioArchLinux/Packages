@@ -4,7 +4,7 @@ _pkgname=prediction
 _pkgver=0.3.14
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tidy, Type-Safe 'prediction()' Methods"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -42,7 +42,44 @@ checkdepends=(
   r-truncreg
 )
 optdepends=(
+  r-aer
+  r-aod
+  r-betareg
+  r-biglm
+  r-brglm
+  r-caret
+  r-crch
+  r-datasets
+  r-e1071
+  r-earth
+  r-ff
+  r-ffbase
+  r-gam
+  r-gee
+  r-glmnet
+  r-glmx
+  r-kernlab
+  r-lme4
+  r-mass
+  r-mclogit
+  r-mda
+  r-methods
+  r-mlogit
+  r-mnp
+  r-nlme
+  r-nnet
+  r-ordinal
+  r-plm
+  r-pscl
+  r-quantreg
+  r-rpart
+  r-sampleselection
+  r-speedglm
+  r-survey
+  r-survival
   r-testthat
+  r-truncreg
+  r-vgam
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f27a713e1265ac86ab47b06a32154e44')

@@ -4,7 +4,7 @@ _pkgname=mlogit
 _pkgver=1.1-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Multinomial Logit Models"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,6 +22,8 @@ optdepends=(
   r-car
   r-ggplot2
   r-knitr
+  r-lattice
+  r-nnet
   r-rmarkdown
   r-texreg
 )

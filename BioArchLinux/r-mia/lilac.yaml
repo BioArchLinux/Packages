@@ -7,6 +7,7 @@ repo_depends:
 - r-biocgenerics
 - r-biocparallel
 - r-biostrings
+- r-bluster
 - r-decipher
 - r-decontam
 - r-delayedarray
@@ -14,6 +15,7 @@ repo_depends:
 - r-dirichletmultinomial
 - r-dplyr
 - r-iranges
+- r-matrixgenerics
 - r-multiassayexperiment
 - r-rlang
 - r-s4vectors

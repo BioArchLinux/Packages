@@ -16,6 +16,7 @@ repo_depends:
 - r-rcpp
 - r-rlang
 - r-rtracklayer
+- r-testthat
 repo_makedepends:
 - r-testthat
 - r-xml2

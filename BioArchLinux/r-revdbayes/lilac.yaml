@@ -6,6 +6,7 @@ repo_depends:
 - r-bayesplot
 - r-exdex
 - r-rcpp
+- r-rcpparmadillo
 - r-rust
 repo_makedepends:
 - r-rcpparmadillo

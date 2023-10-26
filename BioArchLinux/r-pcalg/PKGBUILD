@@ -5,7 +5,7 @@ _pkgname=pcalg
 _pkgver=2.7-9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Methods for Graphical Models and Causal Inference"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,6 +15,7 @@ depends=(
   lapack
   r-abind
   r-bdsmatrix
+  r-bh
   r-clue
   r-corpcor
   r-fastica
@@ -23,6 +24,7 @@ depends=(
   r-igraph
   r-rbgl
   r-rcpp
+  r-rcpparmadillo
   r-robustbase
   r-sfsmisc
   r-vcd
@@ -35,6 +37,8 @@ optdepends=(
   r-dagitty
   r-ggplot2
   r-huge
+  r-mass
+  r-matrix
   r-mvtnorm
   r-rgraphviz
 )

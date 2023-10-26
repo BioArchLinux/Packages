@@ -4,14 +4,12 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-broom
-- r-graph
 - r-grbase
 - r-igraph
 - r-magrittr
 - r-rcpp
 - r-rcpparmadillo
 - r-rcppeigen
-- r-rgraphviz
 update_on:
 - regex: gRain_([\d._-]+).tar.gz
   source: regex

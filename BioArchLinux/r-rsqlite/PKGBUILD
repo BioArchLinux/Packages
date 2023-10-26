@@ -5,18 +5,20 @@ _pkgname=RSQLite
 _pkgver=2.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="SQLite Interface for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(LGPL)
 depends=(
+  sqlite
   r-bit64
   r-blob
+  r-cpp11
   r-dbi
   r-memoise
   r-pkgconfig
-  sqlite
+  r-plogr
 )
 makedepends=(
   boost

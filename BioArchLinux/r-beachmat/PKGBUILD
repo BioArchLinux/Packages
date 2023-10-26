@@ -5,17 +5,18 @@ _pkgname=beachmat
 _pkgver=2.16.0
 pkgname=r-${_pkgname,,}
 pkgver=2.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Compiling Bioconductor to Handle Each Matrix Type'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
+  gcc
   r
   r-biocgenerics
   r-delayedarray
   r-rcpp
-  gcc
+  r-sparsearray
 )
 optdepends=(
   r-biocparallel

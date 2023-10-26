@@ -8,6 +8,7 @@ repo_depends:
 - r-matrixgenerics
 - r-s4arrays
 - r-s4vectors
+- r-sparsearray
 update_on:
 - regex: DelayedArray_([\d._-]+).tar.gz
   source: regex

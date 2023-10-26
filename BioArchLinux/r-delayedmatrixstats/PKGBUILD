@@ -4,7 +4,7 @@ _pkgname=DelayedMatrixStats
 _pkgver=1.22.6
 pkgname=r-${_pkgname,,}
 pkgver=1.22.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Functions that Apply to Rows and Columns of 'DelayedMatrix' Objects"
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -14,15 +14,14 @@ depends=(
   r-delayedarray
   r-iranges
   r-matrixgenerics
-  r-matrixstats
   r-s4vectors
   r-sparsematrixstats
 )
 optdepends=(
   r-biocstyle
-  r-covr
   r-hdf5array
   r-knitr
+  r-matrixstats
   r-microbenchmark
   r-profmem
   r-rmarkdown

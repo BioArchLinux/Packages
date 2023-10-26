@@ -9,7 +9,7 @@ _pkgname=car
 _pkgver=3.1-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Companion to Applied Regression"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,11 +24,13 @@ depends=(
 )
 optdepends=(
   r-alr4
+  r-boot
   r-coxme
   r-effects
   r-knitr
   r-leaps
   r-lmtest
+  r-matrix
   r-matrixmodels
   r-mvtnorm
   r-rgl
@@ -36,6 +38,7 @@ optdepends=(
   r-sandwich
   r-sparsem
   r-survey
+  r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f8be85a665aa367951aacf80d89eb5e9')

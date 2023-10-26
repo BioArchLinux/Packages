@@ -22,5 +22,5 @@ repo_depends:
 update_on:
 - regex: assertive_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=assertive
+  url: https://cran.r-project.org/src/contrib/Archive/assertive
 - alias: r

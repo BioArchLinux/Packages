@@ -4,7 +4,7 @@ _pkgname=renv
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Project Environments'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,7 +16,9 @@ optdepends=(
   r-biocmanager
   r-cli
   r-covr
+  r-cpp11
   r-devtools
+  r-gitcreds
   r-jsonlite
   r-knitr
   r-miniui
@@ -30,6 +32,8 @@ optdepends=(
   r-shiny
   r-testthat
   r-uuid
+  r-waldo
+  r-webfakes
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

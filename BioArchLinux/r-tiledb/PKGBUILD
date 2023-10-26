@@ -5,16 +5,17 @@ _pkgname=tiledb
 _pkgver=0.21.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Universal Storage Engine for Sparse and Dense Multidimensional Arrays"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(MIT)
 depends=(
+  tiledb
   r-nanotime
   r-rcpp
+  r-rcppint64
   r-spdl
-  tiledb
 )
 makedepends=(
   r-rcppint64
@@ -31,6 +32,7 @@ optdepends=(
   r-bit64
   r-curl
   r-data.table
+  r-matrix
   r-nycflights13
   r-palmerpenguins
   r-simplermarkdown

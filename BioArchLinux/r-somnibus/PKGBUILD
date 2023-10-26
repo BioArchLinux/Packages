@@ -4,14 +4,27 @@ _pkgname=SOMNiBUS
 _pkgver=1.7.0
 pkgname=r-${_pkgname,,}
 pkgver=1.7.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Smooth modeling of bisulfite sequencing'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-annotatr
+  r-biocmanager
+  r-bsseq
+  r-data.table
+  r-genomeinfodb
+  r-genomicranges
+  r-ggplot2
+  r-iranges
+  r-reshape2
+  r-rtracklayer
+  r-s4vectors
+  r-tidyr
   r-vgam
+  r-yaml
 )
 optdepends=(
   r-biocstyle
@@ -20,8 +33,11 @@ optdepends=(
   r-dplyr
   r-knitr
   r-magick
+  r-org.hs.eg.db
   r-rmarkdown
   r-testthat
+  r-txdb.hsapiens.ucsc.hg19.knowngene
+  r-txdb.hsapiens.ucsc.hg38.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('1baf115a020f2ae781493ec36f0696a72c24ee8e5aaeb0ce7a01609881abaaa5')

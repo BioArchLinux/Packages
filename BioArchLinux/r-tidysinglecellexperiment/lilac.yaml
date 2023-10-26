@@ -11,6 +11,7 @@ repo_depends:
 - r-lifecycle
 - r-magrittr
 - r-pillar
+- r-pkgconfig
 - r-plotly
 - r-purrr
 - r-rlang

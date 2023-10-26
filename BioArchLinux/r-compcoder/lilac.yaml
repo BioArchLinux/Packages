@@ -15,7 +15,10 @@ repo_depends:
 - r-matrixstats
 - r-modeest
 - r-phylolm
+- r-rmarkdown
 - r-rocr
+- r-shiny
+- r-shinydashboard
 - r-sm
 - r-stringr
 - r-vioplot

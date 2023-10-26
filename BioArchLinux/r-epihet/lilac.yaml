@@ -20,5 +20,5 @@ repo_depends:
 update_on:
 - regex: epihet_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/epihet
+  url: https://bioconductor.org/packages/3.17/epihet
 - alias: r

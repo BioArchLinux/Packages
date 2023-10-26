@@ -4,7 +4,7 @@ _pkgname=broom
 _pkgver=1.0.5
 pkgname=r-${_pkgname,,}
 pkgver=1.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Convert Statistical Objects into Tidy Tibbles'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -69,7 +69,6 @@ optdepends=(
   r-lmtest
   r-lsmeans
   r-maps
-  r-maptools
   r-margins
   r-mass
   r-mclust
@@ -90,7 +89,6 @@ optdepends=(
   r-polca
   r-psych
   r-quantreg
-  r-rgeos
   r-rmarkdown
   r-robust
   r-robustbase

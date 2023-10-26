@@ -4,13 +4,14 @@ _pkgname=singleCellTK
 _pkgver=2.10.0
 pkgname=r-${_pkgname,,}
 pkgver=2.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Comprehensive and Interactive Analysis of Single Cell RNA-Seq Data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
   r
+  r-anndata
   r-annotationhub
   r-ape
   r-batchelor

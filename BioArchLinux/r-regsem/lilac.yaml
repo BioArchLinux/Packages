@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-lavaan
 - r-rcpp
+- r-rcpparmadillo
 - r-rsolnp
 repo_makedepends:
 - r-rcpparmadillo

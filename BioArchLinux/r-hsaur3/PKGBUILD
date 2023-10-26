@@ -4,7 +4,7 @@ _pkgname=HSAUR3
 _pkgver=1.0-14
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="A Handbook of Statistical Analyses Using R (3rd Edition)"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,6 +14,7 @@ depends=(
 )
 optdepends=(
   r-ape
+  r-boot
   r-coin
   r-flexmix
   r-formula
@@ -21,10 +22,14 @@ optdepends=(
   r-gamlss.data
   r-gee
   r-hsaur2
+  r-kernsmooth
+  r-lattice
   r-lme4
   r-maps
+  r-mass
   r-mboost
   r-mclust
+  r-mgcv
   r-mice
   r-mlbench
   r-multcomp
@@ -33,10 +38,12 @@ optdepends=(
   r-quantreg
   r-randomforest
   r-rmeta
+  r-rpart
   r-sandwich
   r-scatterplot3d
   r-sf
   r-sp
+  r-survival
   r-th.data
   r-vcd
   r-wordcloud

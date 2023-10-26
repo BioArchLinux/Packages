@@ -4,7 +4,7 @@ _pkgname=GEOexplorer
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=1.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc='GEOexplorer: an R/Bioconductor package for gene expression analysis and visualisation'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -12,27 +12,37 @@ license=('GPL')
 depends=(
   r
   r-biobase
+  r-car
   r-dt
+  r-edger
+  r-enrichr
   r-factoextra
   r-geoquery
   r-ggplot2
   r-heatmaply
   r-htmltools
+  r-httr
   r-impute
+  r-knitr
   r-limma
-  r-maptools
+  r-markdown
   r-pheatmap
   r-plotly
+  r-r.utils
+  r-readxl
   r-scales
   r-shiny
-  r-shinybs
   r-shinybusy
+  r-shinycssloaders
   r-shinyheatmaply
   r-stringr
+  r-sva
   r-umap
+  r-xfun
+  r-xml
+  r-xml2
 )
 optdepends=(
-  r-knitr
   r-rmarkdown
   r-testthat
   r-usethis

@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bh
 - r-blockmodeling
 - r-gplots
 - r-rcpp

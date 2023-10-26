@@ -8,6 +8,7 @@ repo_depends:
 - r-jsonvalidate
 - r-rcpp
 - r-rhdf5
+- r-rhdf5lib
 - r-s4vectors
 repo_makedepends:
 - r-rhdf5lib

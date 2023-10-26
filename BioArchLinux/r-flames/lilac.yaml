@@ -12,7 +12,9 @@ repo_depends:
 - r-cowplot
 - r-dplyr
 - r-dropletutils
+- r-future
 - r-genomeinfodb
+- r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
 - r-ggbio

@@ -4,7 +4,7 @@ _pkgname=exdex
 _pkgver=1.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Estimation of the Extremal Index"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,6 +12,7 @@ license=(GPL)
 depends=(
   r-chandwich
   r-rcpp
+  r-rcpparmadillo
   r-rcpproll
 )
 makedepends=(

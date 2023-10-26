@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-base64enc
+- r-bh
 - r-biocgenerics
 - r-dbi
 - r-digest

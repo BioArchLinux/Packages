@@ -8,6 +8,7 @@ repo_depends:
 - r-nloptr
 - r-numderiv
 - r-rcpp
+- r-rcpparmadillo
 - r-rsolnp
 - r-skewhyperbolic
 - r-spd

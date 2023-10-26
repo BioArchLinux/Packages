@@ -6,6 +6,7 @@ repo_depends:
 - r-formula
 - r-generics
 - r-rcpp
+- r-rcppeigen
 - r-rlang
 repo_makedepends:
 - r-rcppeigen

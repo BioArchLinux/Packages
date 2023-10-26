@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-lme4
 - r-numderiv
+- r-rcppeigen
 - r-tmb
 repo_makedepends:
 - r-rcppeigen

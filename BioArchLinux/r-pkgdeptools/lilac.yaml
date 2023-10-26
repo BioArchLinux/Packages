@@ -8,5 +8,5 @@ repo_depends:
 update_on:
 - regex: pkgDepTools_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/pkgDepTools
+  url: https://bioconductor.org/packages/3.17/pkgDepTools
 - alias: r

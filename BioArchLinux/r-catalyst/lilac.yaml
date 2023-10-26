@@ -16,7 +16,6 @@ repo_depends:
 - r-ggrepel
 - r-ggridges
 - r-gridextra
-- r-magrittr
 - r-matrixstats
 - r-nnls
 - r-purrr

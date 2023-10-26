@@ -12,12 +12,14 @@ repo_depends:
 - r-ggnewscale
 - r-ggplot2
 - r-ggraph
+- r-ggrepel
 - r-ggtree
 - r-mia
 - r-purrr
 - r-rlang
 - r-s4vectors
 - r-scater
+- r-singlecellexperiment
 - r-summarizedexperiment
 - r-tibble
 - r-tidygraph

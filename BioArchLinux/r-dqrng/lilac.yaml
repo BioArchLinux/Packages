@@ -3,7 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bh
 - r-rcpp
+- r-sitmo
 repo_makedepends:
 - r-bh
 - r-sitmo

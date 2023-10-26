@@ -4,7 +4,7 @@ _pkgname=lefser
 _pkgver=1.10.1
 pkgname=r-${_pkgname,,}
 pkgver=1.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc='R implementation of the LEfSE method for microbiome biomarker discovery'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,6 +13,7 @@ depends=(
   r
   r-coin
   r-ggplot2
+  r-s4vectors
   r-summarizedexperiment
 )
 optdepends=(
@@ -20,6 +21,7 @@ optdepends=(
   r-covr
   r-curatedmetagenomicdata
   r-knitr
+  r-phyloseq
   r-pkgdown
   r-rmarkdown
   r-testthat

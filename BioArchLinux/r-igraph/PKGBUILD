@@ -8,7 +8,7 @@ _pkgname=igraph
 _pkgver=1.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Network Analysis and Visualization"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -21,13 +21,14 @@ depends=(
   lapack
   libxml2
   plfit
+  suitesparse
+  util-linux-libs
   r-cli
+  r-cpp11
   r-lifecycle
   r-magrittr
   r-pkgconfig
   r-rlang
-  suitesparse
-  util-linux-libs
 )
 makedepends=(
   r-cpp11
@@ -48,6 +49,8 @@ optdepends=(
   r-rgl
   r-rmarkdown
   r-scales
+  r-stats4
+  r-tcltk
   r-testthat
   r-vdiffr
   r-withr

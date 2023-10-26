@@ -4,9 +4,14 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-data.table
+- r-dplyr
 - r-httr
+- r-lubridate
+- r-purrr
 - r-rcurl
+- r-readr
 - r-rjson
+- r-stringr
 - r-tidyr
 - r-xml
 update_on:

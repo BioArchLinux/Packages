@@ -11,7 +11,6 @@ repo_depends:
 - r-httr
 - r-matrixstats
 - r-proxy
-- r-readr
 - r-rlang
 - r-s4vectors
 - r-scales

@@ -10,6 +10,7 @@ repo_depends:
 - r-data.table
 - r-digest
 - r-envipat
+- r-glue
 - r-httr
 - r-logger
 - r-msnbase
@@ -17,7 +18,6 @@ repo_depends:
 - r-r.utils
 - r-rcdk
 - r-rcpp
-- r-rcurl
 - r-readjdx
 - r-rjson
 - r-s4vectors

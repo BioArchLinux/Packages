@@ -4,7 +4,7 @@ _pkgname=CNVRanger
 _pkgver=1.16.5
 pkgname=r-${_pkgname,,}
 pkgver=1.16.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Summarization and expression/phenotype association of CNV ranges'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -41,9 +41,12 @@ optdepends=(
   r-gviz
   r-knitr
   r-multiassayexperiment
+  r-org.hs.eg.db
   r-regioner
   r-rmarkdown
+  r-statmod
   r-tcgautils
+  r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('9be2f3f77280a5040f32e1ff5aaa70cc2dfb9f7a3c67b0f1db3ee0626d439791')

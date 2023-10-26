@@ -8,6 +8,7 @@ repo_depends:
 - r-lsa
 - r-rcolorbrewer
 - r-squash
+- r-summarizedexperiment
 update_on:
 - regex: CellScore_([\d._-]+).tar.gz
   source: regex

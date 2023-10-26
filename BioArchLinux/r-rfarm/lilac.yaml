@@ -7,6 +7,7 @@ repo_depends:
 - r-data.table
 - r-httr
 - r-iranges
+- r-jsonlite
 - r-magick
 - r-rsvg
 - r-rvest

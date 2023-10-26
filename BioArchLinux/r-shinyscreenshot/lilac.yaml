@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-base64enc
+- r-htmltools
 - r-jsonlite
 - r-shiny
 - r-uuid

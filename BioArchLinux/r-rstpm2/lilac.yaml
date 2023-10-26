@@ -4,9 +4,11 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-bbmle
+- r-bh
 - r-desolve
 - r-fastghquad
 - r-rcpp
+- r-rcpparmadillo
 repo_makedepends:
 - r-bh
 - r-rcpparmadillo

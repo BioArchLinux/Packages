@@ -9,7 +9,7 @@ _pkgname=knitr
 _pkgver=1.44
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A General-Purpose Package for Dynamic Report Generation in R"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,6 +24,7 @@ optdepends=(
   'pandoc: R Markdown v2 and reStructuredText support'
   'rst2pdf: rst2pdf() support'
   r-bslib
+  r-codetools
   r-curl
   r-dbi
   r-digest

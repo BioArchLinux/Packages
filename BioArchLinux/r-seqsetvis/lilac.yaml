@@ -20,6 +20,7 @@ repo_depends:
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
+- r-scales
 - r-upsetr
 update_on:
 - regex: seqsetvis_([\d._-]+).tar.gz

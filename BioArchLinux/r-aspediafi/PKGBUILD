@@ -4,10 +4,10 @@ _pkgname=ASpediaFI
 _pkgver=1.11.0
 pkgname=r-${_pkgname,,}
 pkgver=1.11.0
-pkgrel=2
+pkgrel=3
 pkgdesc='ASpedia-FI: Functional Interaction Analysis of Alternative Splicing Events'
 arch=('any')
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/3.17/${_pkgname}"
 license=('GPL')
 depends=(
   r
@@ -39,7 +39,7 @@ depends=(
 optdepends=(
   r-knitr
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://bioconductor.org/packages/3.17/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('bada73c70b81c82b88bd2a014b01d05a1eedde536a9df19311ae41a498f1568e')
 
 build() {

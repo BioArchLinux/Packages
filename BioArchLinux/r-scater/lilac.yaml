@@ -9,12 +9,11 @@ repo_depends:
 - r-biocparallel
 - r-biocsingular
 - r-delayedarray
-- r-delayedmatrixstats
-- r-densvis
 - r-ggbeeswarm
 - r-ggplot2
 - r-ggrastr
 - r-ggrepel
+- r-matrixgenerics
 - r-pheatmap
 - r-rcolorbrewer
 - r-rcppml

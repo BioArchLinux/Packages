@@ -7,5 +7,5 @@ repo_depends:
 update_on:
 - regex: rgeos_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=rgeos
+  url: https://cran.r-project.org/src/contrib/Archive/rgeos
 - alias: r

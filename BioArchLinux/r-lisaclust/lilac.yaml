@@ -16,6 +16,7 @@ repo_depends:
 - r-spatialexperiment
 - r-spatstat.explore
 - r-spatstat.geom
+- r-spatstat.random
 - r-spicyr
 - r-summarizedexperiment
 - r-tidyr

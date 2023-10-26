@@ -4,7 +4,7 @@ _pkgname=margins
 _pkgver=0.3.26
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Marginal Effects for Model Objects"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,13 +22,19 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
+  r-aer
+  r-betareg
   r-gapminder
   r-ggplot2
   r-knitr
   r-lme4
+  r-methods
+  r-nnet
+  r-ordinal
   r-rmarkdown
   r-sandwich
   r-stargazer
+  r-survey
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

@@ -8,5 +8,5 @@ repo_depends:
 update_on:
 - regex: assertive.types_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=assertive.types
+  url: https://cran.r-project.org/src/contrib/Archive/assertive.types
 - alias: r

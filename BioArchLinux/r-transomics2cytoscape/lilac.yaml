@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-dplyr
 - r-keggrest
+- r-pbapply
 - r-purrr
 - r-rcy3
 - r-tibble

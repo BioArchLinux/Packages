@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-rcpp
+- r-rcpparmadillo
 repo_makedepends:
 - r-rcpparmadillo
 update_on:

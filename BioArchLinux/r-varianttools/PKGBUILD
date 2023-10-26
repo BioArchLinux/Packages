@@ -4,7 +4,7 @@ _pkgname=VariantTools
 _pkgver=1.42.0
 pkgname=r-${_pkgname,,}
 pkgver=1.42.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools for Exploratory Analysis of Variant Calls'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -31,6 +31,7 @@ optdepends=(
   r-lungcancerlines
   r-rbgl
   r-runit
+  r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('8764731513203ae5da703fddfc795a7ed21143831c1b9fb76ece856c84e16dee')

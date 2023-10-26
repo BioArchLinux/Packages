@@ -11,6 +11,7 @@ repo_depends:
 - r-ggtext
 - r-iranges
 - r-reshape2
+- r-rlang
 update_on:
 - regex: cageminer_([\d._-]+).tar.gz
   source: regex

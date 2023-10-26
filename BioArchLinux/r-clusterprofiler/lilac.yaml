@@ -11,6 +11,8 @@ repo_depends:
 - r-go.db
 - r-gosemsim
 - r-gson
+- r-httr
+- r-igraph
 - r-magrittr
 - r-plyr
 - r-qvalue

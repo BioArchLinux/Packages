@@ -29,5 +29,5 @@ repo_depends:
 update_on:
 - regex: proBatch_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/proBatch
+  url: https://bioconductor.org/packages/3.17/proBatch
 - alias: r

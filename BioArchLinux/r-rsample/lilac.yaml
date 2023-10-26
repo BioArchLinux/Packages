@@ -3,10 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-dplyr
 - r-furrr
 - r-generics
 - r-glue
+- r-lifecycle
 - r-pillar
 - r-purrr
 - r-rlang

@@ -10,7 +10,6 @@ repo_depends:
 - r-genomicranges
 - r-rcpp
 - r-rhtslib
-- r-stringi
 - r-summarizedexperiment
 - r-variantannotation
 - r-zlibbioc

@@ -9,6 +9,7 @@ repo_depends:
 - r-ggplot2
 - r-mvtnorm
 - r-rdpack
+- r-rlang
 update_on:
 - regex: BayesTools_([\d._-]+).tar.gz
   source: regex

@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocstyle
 - r-dplyr
 - r-ggforce
 - r-ggplot2

@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-clipr
 - r-geem
 - r-geepack
 - r-ggformula

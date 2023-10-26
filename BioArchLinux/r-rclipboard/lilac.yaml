@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bslib
 - r-shiny
 update_on:
 - regex: rclipboard_([\d._-]+).tar.gz

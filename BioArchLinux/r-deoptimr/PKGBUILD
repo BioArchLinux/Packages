@@ -6,13 +6,16 @@ _pkgname=DEoptimR
 _pkgver=1.1-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Differential Evolution Optimization in Pure R"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
   r
+)
+optdepends=(
+  r-robustbase
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('945667c3199760a35837e0a1b72f3648')

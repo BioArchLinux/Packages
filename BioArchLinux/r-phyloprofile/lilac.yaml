@@ -21,11 +21,13 @@ repo_depends:
 - r-rcurl
 - r-shiny
 - r-shinybs
+- r-shinycssloaders
+- r-shinyfiles
 - r-shinyjs
+- r-stringr
 - r-xml2
 - r-yaml
 - r-zoo
-- r-shinyfiles
 update_on:
 - regex: PhyloProfile_([\d._-]+).tar.gz
   source: regex

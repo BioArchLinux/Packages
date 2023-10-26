@@ -5,7 +5,7 @@ _pkgname=heplots
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Visualizing Hypothesis Tests in Multivariate Linear Models"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -29,7 +29,9 @@ optdepends=(
   r-ggplot2
   r-gplots
   r-knitr
+  r-lattice
   r-mvinfluence
+  r-nlme
   r-reshape
   r-reshape2
   r-rmarkdown

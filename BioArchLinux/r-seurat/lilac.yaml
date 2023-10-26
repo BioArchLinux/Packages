@@ -24,6 +24,7 @@ repo_depends:
 - r-plotly
 - r-png
 - r-progressr
+- r-purrr
 - r-rann
 - r-rcolorbrewer
 - r-rcpp

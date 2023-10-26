@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-rhdf5filters
 - r-rhdf5lib
+- r-s4vectors
 update_on:
 - regex: rhdf5_([\d._-]+).tar.gz
   source: regex

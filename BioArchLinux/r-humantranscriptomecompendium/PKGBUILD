@@ -5,13 +5,12 @@ _pkgname=HumanTranscriptomeCompendium
 _pkgver=1.16.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Tools to work with a Compendium of 181000 human transcriptome sequencing studies"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(Artistic2.0)
 depends=(
-  r-biocmanager
   r-s4vectors
   r-shiny
   r-ssrch

@@ -42,6 +42,7 @@ repo_depends:
 - r-testthat
 - r-tibble
 - r-tidyr
+- r-vctrs
 - r-zlibbioc
 update_on:
 - regex: scPipe_([\d._-]+).tar.gz

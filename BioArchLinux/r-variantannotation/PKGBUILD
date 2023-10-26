@@ -5,7 +5,7 @@ _pkgname=VariantAnnotation
 _pkgver=1.46.0
 pkgname=r-${_pkgname,,}
 pkgver=1.46.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Annotation of Genetic Variants'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -36,6 +36,7 @@ optdepends=(
   r-biocstyle
   r-bsgenome.hsapiens.ucsc.hg19
   r-ggplot2
+  r-knitr
   r-polyphen.hsapiens.dbsnp131
   r-runit
   r-sift.hsapiens.dbsnp132

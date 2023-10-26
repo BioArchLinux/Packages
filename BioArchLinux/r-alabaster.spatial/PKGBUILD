@@ -4,7 +4,7 @@ _pkgname=alabaster.spatial
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Save and Load Spatial 'Omics Data to/from File"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,6 +24,7 @@ checkdepends=(
 optdepends=(
   r-biocstyle
   r-digest
+  r-dropletutils
   r-knitr
   r-magick
   r-png

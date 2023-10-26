@@ -7,7 +7,7 @@ _pkgname=distr
 _pkgver=2.9.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Object Oriented Implementation of Distributions"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,6 +20,7 @@ optdepends=(
   r-distrex
   r-distrmod
   r-knitr
+  r-robastbase
   r-roptest
   r-svunit
 )

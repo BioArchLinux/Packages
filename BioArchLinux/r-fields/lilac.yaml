@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-maps
 - r-spam
-- r-viridis
+- r-viridislite
 update_on:
 - regex: fields_([\d._-]+).tar.gz
   source: regex

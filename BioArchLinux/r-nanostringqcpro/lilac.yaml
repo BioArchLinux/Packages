@@ -13,5 +13,5 @@ repo_depends:
 update_on:
 - regex: NanoStringQCPro_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/NanoStringQCPro
+  url: https://bioconductor.org/packages/3.17/NanoStringQCPro
 - alias: r

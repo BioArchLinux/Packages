@@ -6,6 +6,8 @@ repo_depends:
 - r-curl
 - r-data.table
 - r-dplyr
+- r-genomeinfodb
+- r-genomicranges
 - r-ggplotify
 - r-iranges
 - r-plyranges
@@ -14,6 +16,7 @@ repo_depends:
 - r-rcpp
 - r-rlang
 - r-strawr
+- r-withr
 update_on:
 - regex: plotgardener_([\d._-]+).tar.gz
   source: regex

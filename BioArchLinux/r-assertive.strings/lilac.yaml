@@ -9,5 +9,5 @@ repo_depends:
 update_on:
 - regex: assertive.strings_([\d._-]+).tar.gz
   source: regex
-  url: https://cran.r-project.org/package=assertive.strings
+  url: https://cran.r-project.org/src/contrib/Archive/assertive.strings
 - alias: r

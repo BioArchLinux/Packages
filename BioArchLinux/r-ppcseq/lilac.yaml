@@ -8,14 +8,13 @@ repo_depends:
 - r-dplyr
 - r-edger
 - r-foreach
-- r-furrr
-- r-future
 - r-ggplot2
 - r-lifecycle
 - r-magrittr
 - r-purrr
 - r-rcpp
 - r-rcppeigen
+- r-rcppparallel
 - r-rlang
 - r-rstan
 - r-rstantools

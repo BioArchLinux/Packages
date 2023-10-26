@@ -4,7 +4,7 @@ _pkgname=DelayedDataFrame
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
 pkgver=1.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Delayed operation on DataFrame using standard DataFrame metaphor'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -16,6 +16,7 @@ depends=(
   r-s4vectors
 )
 optdepends=(
+  r-biocstyle
   r-gdsarray
   r-knitr
   r-rmarkdown

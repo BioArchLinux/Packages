@@ -4,7 +4,7 @@ _pkgname=mitml
 _pkgver=0.4-5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools for Multiple Imputation in Multilevel Modeling"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,7 +23,9 @@ optdepends=(
   r-lme4
   r-mice
   r-miceadds
+  r-nlme
   r-rmarkdown
+  r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b241fc0514024cf248ab9dbd2914f880')

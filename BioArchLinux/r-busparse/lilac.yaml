@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 - r-annotationfilter
+- r-bh
 - r-biocgenerics
 - r-biomart
 - r-biostrings
@@ -19,6 +20,8 @@ repo_depends:
 - r-magrittr
 - r-plyranges
 - r-rcpp
+- r-rcpparmadillo
+- r-rcppprogress
 - r-s4vectors
 - r-stringr
 - r-tibble

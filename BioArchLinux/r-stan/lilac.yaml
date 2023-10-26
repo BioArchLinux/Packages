@@ -14,5 +14,5 @@ repo_depends:
 update_on:
 - regex: STAN_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/STAN
+  url: https://bioconductor.org/packages/3.17/STAN
 - alias: r

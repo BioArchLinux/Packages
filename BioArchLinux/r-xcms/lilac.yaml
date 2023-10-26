@@ -9,16 +9,19 @@ repo_depends:
 - r-iranges
 - r-massspecwavelet
 - r-mscoreutils
+- r-msexperiment
 - r-msfeatures
 - r-msnbase
 - r-multtest
 - r-mzr
 - r-plyr
+- r-progress
 - r-protgenerics
 - r-rann
 - r-rcolorbrewer
 - r-robustbase
 - r-s4vectors
+- r-spectra
 - r-summarizedexperiment
 update_on:
 - regex: xcms_([\d._-]+).tar.gz

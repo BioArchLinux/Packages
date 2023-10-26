@@ -9,6 +9,8 @@ repo_depends:
 - r-ggplot2
 - r-gosemsim
 - r-hdo.db
+- r-hpo.db
+- r-mpo.db
 - r-qvalue
 - r-reshape2
 update_on:

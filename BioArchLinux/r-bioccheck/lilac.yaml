@@ -3,9 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocbaseutils
 - r-biocfilecache
 - r-biocmanager
 - r-biocviews
+- r-callr
 - r-graph
 - r-httr
 - r-knitr

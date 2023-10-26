@@ -5,7 +5,7 @@ _pkgname=gap
 _pkgver=1.5-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Genetic Analysis Package"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -31,18 +31,24 @@ optdepends=(
   r-coxme
   r-diagrammer
   r-dot
+  r-foreign
   r-genetics
+  r-grid
   r-haplo.stats
   r-htmlwidgets
   r-jsonlite
   r-kinship2
   r-knitr
+  r-lattice
   r-magic
   r-manhattanly
+  r-mass
+  r-matrix
   r-matrixstats
   r-mcmcglmm
   r-meta
   r-metafor
+  r-nlme
   r-pedigree
   r-pedigreemm
   r-plotrix
@@ -51,6 +57,8 @@ optdepends=(
   r-reshape
   r-rmarkdown
   r-rms
+  r-shiny
+  r-survival
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('69266dcc6a164090d5c0c9a22b3b839e')

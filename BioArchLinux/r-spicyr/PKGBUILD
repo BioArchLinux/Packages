@@ -5,7 +5,7 @@ _pkgname=spicyR
 _pkgver=1.12.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Spatial analysis of in situ cytometry data"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,7 +20,6 @@ depends=(
   r-ggforce
   r-ggplot2
   r-iranges
-  r-lme4
   r-lmertest
   r-pheatmap
   r-rlang
@@ -35,6 +34,7 @@ depends=(
 )
 optdepends=(
   r-biocstyle
+  r-imcrtools
   r-knitr
   r-pkgdown
   r-rmarkdown

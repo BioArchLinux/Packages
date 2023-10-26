@@ -11,5 +11,5 @@ repo_depends:
 update_on:
 - regex: savR_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/savR
+  url: https://bioconductor.org/packages/3.17/savR
 - alias: r

@@ -4,7 +4,7 @@ _pkgname=Biostrings
 _pkgver=2.70.0
 pkgname=r-${_pkgname,,}
 pkgver=2.70.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Efficient manipulation of biological strings'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -21,6 +21,7 @@ depends=(
 optdepends=(
   r-affy
   r-affydata
+  r-biocstyle
   r-bsgenome
   r-bsgenome.celegans.ucsc.ce2
   r-bsgenome.dmelanogaster.ucsc.dm3
@@ -30,6 +31,7 @@ optdepends=(
   r-hgu133aprobe
   r-hgu95av2cdf
   r-hgu95av2probe
+  r-knitr
   r-rmpi
   r-runit
 )

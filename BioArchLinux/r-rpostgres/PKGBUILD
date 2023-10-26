@@ -5,7 +5,7 @@ _pkgname=RPostgres
 _pkgver=1.4.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ Interface to PostgreSQL"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -14,9 +14,11 @@ depends=(
   postgresql-libs
   r-bit64
   r-blob
+  r-cpp11
   r-dbi
   r-hms
   r-lubridate
+  r-plogr
   r-withr
 )
 makedepends=(

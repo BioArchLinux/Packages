@@ -6,6 +6,7 @@ repo_depends:
 - r-cqn
 - r-edger
 - r-limma
+- r-rcpp
 update_on:
 - regex: tweeDEseq_([\d._-]+).tar.gz
   source: regex

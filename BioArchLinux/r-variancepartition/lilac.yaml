@@ -6,8 +6,8 @@ repo_depends:
 - r-aod
 - r-biobase
 - r-biocparallel
-- r-doparallel
-- r-foreach
+- r-corpcor
+- r-fancova
 - r-ggplot2
 - r-gplots
 - r-iterators
@@ -15,7 +15,6 @@ repo_depends:
 - r-lme4
 - r-lmertest
 - r-pbkrtest
-- r-progress
 - r-rdpack
 - r-remacor
 - r-reshape2

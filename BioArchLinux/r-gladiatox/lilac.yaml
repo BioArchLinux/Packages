@@ -12,7 +12,7 @@ repo_depends:
 - r-rcolorbrewer
 - r-rcurl
 - r-rjsonio
-- r-rmysql
+- r-rmariadb
 - r-rsqlite
 - r-stringr
 - r-tidyr

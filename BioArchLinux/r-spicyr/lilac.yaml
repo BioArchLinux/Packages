@@ -12,7 +12,6 @@ repo_depends:
 - r-ggforce
 - r-ggplot2
 - r-iranges
-- r-lme4
 - r-lmertest
 - r-pheatmap
 - r-rlang

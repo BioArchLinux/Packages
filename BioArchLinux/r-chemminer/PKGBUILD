@@ -5,13 +5,14 @@ _pkgname=ChemmineR
 _pkgver=3.54.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Cheminformatics Toolkit for R"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(Artistic2.0)
 depends=(
   r-base64enc
+  r-bh
   r-biocgenerics
   r-dbi
   r-digest
@@ -40,11 +41,13 @@ optdepends=(
   r-biocmanager
   r-biocstyle
   r-chemminedrugs
+  r-chemmineob
   r-fmcsr
   r-gplots
   r-knitcitations
   r-knitr
   r-knitrbootstrap
+  r-png
   r-rmarkdown
   r-rpostgresql
   r-rsqlite

@@ -6,6 +6,7 @@ repo_depends:
 - r-annotationdbi
 - r-go.db
 - r-rcpp
+- r-rlang
 update_on:
 - regex: GOSemSim_([\d._-]+).tar.gz
   source: regex

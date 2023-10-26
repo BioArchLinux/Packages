@@ -10,7 +10,6 @@ repo_depends:
 - r-ggridges
 - r-interactionset
 - r-iranges
-- r-ks
 - r-plyranges
 - r-progress
 - r-rlang

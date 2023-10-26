@@ -4,7 +4,7 @@ _pkgname=EZtune
 _pkgver=3.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tunes AdaBoost, Elastic Net, Support Vector Machines, and Gradient Boosting Machines"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,6 +24,7 @@ optdepends=(
   r-dplyr
   r-knitr
   r-mlbench
+  r-parallel
   r-rmarkdown
   r-rsample
   r-yardstick

@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-beanplot
+- r-collapse
 - r-dosnow
 - r-dplyr
 - r-fnn

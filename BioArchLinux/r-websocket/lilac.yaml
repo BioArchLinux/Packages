@@ -3,6 +3,8 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-asioheaders
+- r-cpp11
 - r-later
 - r-r6
 repo_makedepends:

@@ -4,7 +4,7 @@ _pkgname=maptools
 _pkgver=1.1-8
 pkgname=r-${_pkgname,,}
 pkgver=1.1.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools for Handling Spatial Objects'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,7 +27,7 @@ optdepends=(
   r-spatstat.linnet
   r-spatstat.utils
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('5e8579e3f559161935f1dde622ece703eefa2a28a677ce553d7f27611e66e0f7')
 
 build() {

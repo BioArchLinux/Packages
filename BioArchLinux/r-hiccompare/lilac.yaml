@@ -13,7 +13,6 @@ repo_depends:
 - r-interactionset
 - r-iranges
 - r-pheatmap
-- r-qdnaseq
 - r-rhdf5
 - r-s4vectors
 update_on:

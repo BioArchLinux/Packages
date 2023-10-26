@@ -6,7 +6,7 @@ _pkgname=robustbase
 _pkgver=0.99-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Basic Robust Statistics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,16 +20,27 @@ makedepends=(
   gcc-fortran
 )
 optdepends=(
+  r-boot
   r-catdata
+  r-cluster
   r-doparallel
   r-fit.models
   r-foreach
   r-ggally
   r-ggplot2
+  r-grid
+  r-hmisc
+  r-lattice
+  r-mass
+  r-matrix
+  r-matrixstats
   r-mpv
+  r-quantreg
   r-rcolorbrewer
   r-reshape2
   r-robust
+  r-robustx
+  r-rrcov
   r-sfsmisc
   r-skewt
   r-xtable

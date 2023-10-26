@@ -4,7 +4,7 @@ _pkgname=miaSim
 _pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=1.6.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Microbiome Data Simulation'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -23,7 +23,9 @@ optdepends=(
   r-biocstyle
   r-cluster
   r-colourvalues
+  r-doparallel
   r-dplyr
+  r-foreach
   r-ggally
   r-ggplot2
   r-igraph

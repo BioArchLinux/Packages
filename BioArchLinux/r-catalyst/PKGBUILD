@@ -4,7 +4,7 @@ _pkgname=CATALYST
 _pkgver=1.24.0
 pkgname=r-${_pkgname,,}
 pkgver=1.24.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Cytometry dATa anALYSis Tools'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -24,7 +24,6 @@ depends=(
   r-ggrepel
   r-ggridges
   r-gridextra
-  r-magrittr
   r-matrixstats
   r-nnls
   r-purrr

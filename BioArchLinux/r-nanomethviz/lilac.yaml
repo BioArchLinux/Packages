@@ -6,9 +6,12 @@ repo_depends:
 - r-annotationdbi
 - r-assertthat
 - r-biocsingular
+- r-biostrings
 - r-bsseq
+- r-cli
 - r-cpp11
 - r-data.table
+- r-dbscan
 - r-dplyr
 - r-e1071
 - r-forcats
@@ -17,6 +20,7 @@ repo_depends:
 - r-ggplot2
 - r-ggrastr
 - r-glue
+- r-iranges
 - r-limma
 - r-patchwork
 - r-purrr
@@ -25,7 +29,6 @@ repo_depends:
 - r-readr
 - r-rlang
 - r-rsamtools
-- r-rsqlite
 - r-s4vectors
 - r-scales
 - r-scico

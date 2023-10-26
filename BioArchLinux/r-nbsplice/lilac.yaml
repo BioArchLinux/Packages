@@ -12,5 +12,5 @@ repo_depends:
 update_on:
 - regex: NBSplice_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/NBSplice
+  url: https://bioconductor.org/packages/3.17/NBSplice
 - alias: r

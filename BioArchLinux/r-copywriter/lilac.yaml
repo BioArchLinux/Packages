@@ -20,5 +20,5 @@ repo_depends:
 update_on:
 - regex: CopywriteR_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/CopywriteR
+  url: https://bioconductor.org/packages/3.17/CopywriteR
 - alias: r

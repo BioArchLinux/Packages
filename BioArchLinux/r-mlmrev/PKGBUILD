@@ -4,13 +4,16 @@ _pkgname=mlmRev
 _pkgver=1.0-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Examples from Multilevel Modelling Software Review"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL)
 depends=(
   r-lme4
+)
+optdepends=(
+  r-lattice
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f4d61472c9dd70d0cfc7f31b8a046aa0')

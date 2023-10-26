@@ -3,16 +3,20 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-cogaps
+- r-cowplot
 - r-dplyr
 - r-ggalluvial
 - r-ggplot2
+- r-ggrepel
 - r-limma
+- r-matrixmodels
 - r-nmf
 - r-rcolorbrewer
 - r-reshape2
 - r-rocr
 - r-scales
+- r-tsne
+- r-umap
 - r-viridis
 update_on:
 - regex: projectR_([\d._-]+).tar.gz

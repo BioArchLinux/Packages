@@ -4,13 +4,14 @@ _pkgname=hypeR
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=1.14.0
-pkgrel=2
+pkgrel=3
 pkgdesc='An R Package For Geneset Enrichment Workflows'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-biocstyle
   r-dplyr
   r-ggforce
   r-ggplot2

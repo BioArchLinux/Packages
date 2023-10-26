@@ -1,13 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 repo_depends:
-  - r-rcpp
-  - r-rcppparallel
+- r-rcpp
+- r-rcppparallel
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-  - regex: lamW_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=lamW
+- regex: lamW_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=lamW

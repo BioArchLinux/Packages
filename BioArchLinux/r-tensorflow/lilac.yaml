@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-config
+- r-lifecycle
 - r-processx
 - r-reticulate
 - r-rstudioapi

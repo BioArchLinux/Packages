@@ -5,20 +5,23 @@ _pkgname=RoBTT
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Robust Bayesian T-Test"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(GPL3)
 depends=(
   r-bayestools
+  r-bh
   r-bridgesampling
   r-ggplot2
   r-rcpp
+  r-rcppeigen
   r-rcppparallel
   r-rdpack
   r-rstan
   r-rstantools
+  r-stanheaders
 )
 makedepends=(
   r-bh
@@ -32,6 +35,7 @@ checkdepends=(
 optdepends=(
   r-covr
   r-knitr
+  r-parallel
   r-rmarkdown
   r-testthat
   r-vdiffr

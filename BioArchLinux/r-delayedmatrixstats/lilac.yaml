@@ -6,7 +6,6 @@ repo_depends:
 - r-delayedarray
 - r-iranges
 - r-matrixgenerics
-- r-matrixstats
 - r-s4vectors
 - r-sparsematrixstats
 update_on:

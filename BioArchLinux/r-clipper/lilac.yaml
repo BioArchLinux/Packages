@@ -10,7 +10,6 @@ repo_depends:
 - r-igraph
 - r-kegggraph
 - r-qpgraph
-- r-rbgl
 - r-rcpp
 update_on:
 - regex: clipper_([\d._-]+).tar.gz

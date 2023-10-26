@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-abind
 - r-bdsmatrix
+- r-bh
 - r-clue
 - r-corpcor
 - r-fastica
@@ -13,6 +14,7 @@ repo_depends:
 - r-igraph
 - r-rbgl
 - r-rcpp
+- r-rcpparmadillo
 - r-robustbase
 - r-sfsmisc
 - r-vcd

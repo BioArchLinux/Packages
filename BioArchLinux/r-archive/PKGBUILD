@@ -4,7 +4,7 @@ _pkgname=archive
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Multi-Format Archive and Compression Support"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -12,6 +12,7 @@ license=(MIT)
 depends=(
   libarchive
   r-cli
+  r-cpp11
   r-glue
   r-rlang
   r-tibble

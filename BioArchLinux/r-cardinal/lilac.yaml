@@ -6,6 +6,7 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 - r-biocparallel
+- r-cardinalio
 - r-ebimage
 - r-irlba
 - r-magrittr
@@ -14,7 +15,6 @@ repo_depends:
 - r-protgenerics
 - r-s4vectors
 - r-signal
-- r-sp
 - r-viridislite
 update_on:
 - regex: Cardinal_([\d._-]+).tar.gz

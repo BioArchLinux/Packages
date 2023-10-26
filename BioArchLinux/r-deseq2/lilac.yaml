@@ -10,6 +10,7 @@ repo_depends:
 - r-ggplot2
 - r-iranges
 - r-locfit
+- r-matrixgenerics
 - r-matrixstats
 - r-rcpp
 - r-rcpparmadillo

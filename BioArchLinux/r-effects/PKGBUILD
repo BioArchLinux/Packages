@@ -5,7 +5,7 @@ _pkgname=effects
 _pkgver=4.2-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Effect Displays for Linear, Generalized Linear, and Other Models"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,10 +24,13 @@ optdepends=(
   r-car
   r-heplots
   r-knitr
+  r-mass
+  r-nlme
   r-ordinal
   r-pbkrtest
   r-polca
   r-robustlmm
+  r-splines
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('cdcae07573da34746bfa4c246a6c4502')

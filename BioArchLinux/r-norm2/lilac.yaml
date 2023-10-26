@@ -1,11 +1,11 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
+- github: sukanka
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-  - regex: norm2_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=norm2
-  - alias: r
+- regex: norm2_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/src/contrib/Archive/norm2
+- alias: r

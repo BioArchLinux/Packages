@@ -4,7 +4,7 @@ _pkgname=densvis
 _pkgver=1.10.3
 pkgname=r-${_pkgname,,}
 pkgver=1.10.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Density-Preserving Data Visualization via Non-Linear Dimensionality Reduction'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -13,16 +13,16 @@ depends=(
   r
   r-assertthat
   r-basilisk
+  r-irlba
   r-rcpp
   r-reticulate
-  r-irlba
+  r-rtsne
 )
 optdepends=(
   r-biocstyle
   r-ggplot2
   r-knitr
   r-rmarkdown
-  r-rtsne
   r-testthat
   r-uwot
 )

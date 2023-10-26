@@ -15,5 +15,5 @@ repo_depends:
 update_on:
 - regex: <td>(\d+.\d+.\d+)</td>
   source: regex
-  url: https://bioconductor.org/packages/MethCP
+  url: https://bioconductor.org/packages/3.17/MethCP
 - alias: r

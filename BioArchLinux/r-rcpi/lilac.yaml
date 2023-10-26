@@ -7,9 +7,9 @@ repo_depends:
 - r-doparallel
 - r-foreach
 - r-gosemsim
-- r-rcdk
 - r-rcurl
 - r-rjson
+- r-rlang
 update_on:
 - regex: Rcpi_([\d._-]+).tar.gz
   source: regex

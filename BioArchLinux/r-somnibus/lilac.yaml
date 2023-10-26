@@ -3,7 +3,20 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-annotatr
+- r-biocmanager
+- r-bsseq
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-reshape2
+- r-rtracklayer
+- r-s4vectors
+- r-tidyr
 - r-vgam
+- r-yaml
 update_on:
 - regex: SOMNiBUS_([\d._-]+).tar.gz
   source: regex

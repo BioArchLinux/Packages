@@ -3,8 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-biocstyle
-- r-graph
 - r-msnbase
 update_on:
 - source: rpkgs

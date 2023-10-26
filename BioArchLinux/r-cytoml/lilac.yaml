@@ -3,7 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bh
 - r-biobase
+- r-cpp11
 - r-cytolib
 - r-data.table
 - r-dplyr
@@ -15,6 +17,8 @@ repo_depends:
 - r-opencyto
 - r-rbgl
 - r-rgraphviz
+- r-rhdf5lib
+- r-rprotobuflib
 - r-tibble
 - r-xml
 - r-yaml

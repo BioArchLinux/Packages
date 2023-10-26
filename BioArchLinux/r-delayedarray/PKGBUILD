@@ -4,7 +4,7 @@ _pkgname=DelayedArray
 _pkgver=0.26.7
 pkgname=r-${_pkgname,,}
 pkgver=0.26.7
-pkgrel=1
+pkgrel=2
 pkgdesc='A unified framework for working transparently with on-disk and in-memory array-like datasets'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -16,6 +16,7 @@ depends=(
   r-matrixgenerics
   r-s4arrays
   r-s4vectors
+  r-sparsearray
 )
 optdepends=(
   r-airway

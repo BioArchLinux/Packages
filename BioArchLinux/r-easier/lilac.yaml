@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-coin
+- r-decoupler
 - r-deseq2
 - r-dorothea
 - r-dplyr
@@ -12,6 +13,7 @@ repo_depends:
 - r-ggplot2
 - r-ggpubr
 - r-ggrepel
+- r-magrittr
 - r-matrixstats
 - r-progeny
 - r-quantiseqr
@@ -19,6 +21,8 @@ repo_depends:
 - r-rlang
 - r-rocr
 - r-rstatix
+- r-tibble
+- r-tidyr
 update_on:
 - regex: easier_([\d._-]+).tar.gz
   source: regex

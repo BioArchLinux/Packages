@@ -4,10 +4,10 @@ _pkgname=proFIA
 _pkgver=1.23.0
 pkgname=r-${_pkgname,,}
 pkgver=1.23.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Preprocessing of FIA-HRMS data'
 arch=('x86_64')
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/3.17/${_pkgname}"
 license=('CeCILL')
 depends=(
   r
@@ -24,7 +24,7 @@ optdepends=(
   r-knitr
   r-plasfia
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://bioconductor.org/packages/3.17/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('723bb21f11cfa9366f8ec1a229290f3383b621495d72d9df6e85b80088dc0878')
 
 build() {

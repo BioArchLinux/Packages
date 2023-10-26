@@ -11,6 +11,7 @@ repo_depends:
 - r-lifecycle
 - r-magrittr
 - r-pillar
+- r-pkgconfig
 - r-plotly
 - r-purrr
 - r-rlang
@@ -20,6 +21,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyselect
+- r-ttservice
 - r-vctrs
 update_on:
 - regex: tidySummarizedExperiment_([\d._-]+).tar.gz

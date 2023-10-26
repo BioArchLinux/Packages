@@ -5,16 +5,17 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-biocgenerics
+- r-clue
+- r-corpcor
 - r-fda
 - r-flowcore
 - r-flowviz
 - r-flowworkspace
 - r-ks
+- r-mnormt
 - r-ncdfflow
 - r-rcolorbrewer
 - r-rrcov
-- r-mnormt
-- r-corpcor
 update_on:
 - regex: flowStats_([\d._-]+).tar.gz
   source: regex

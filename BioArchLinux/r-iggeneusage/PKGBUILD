@@ -4,7 +4,7 @@ _pkgname=IgGeneUsage
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=1.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Differential gene usage in immune repertoires'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,6 +20,7 @@ depends=(
   r-rstantools
   r-stanheaders
   r-summarizedexperiment
+  r-tidyr
 )
 optdepends=(
   r-biocstyle

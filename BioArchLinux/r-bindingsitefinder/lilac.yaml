@@ -3,14 +3,22 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-complexheatmap
 - r-dplyr
+- r-forcats
 - r-genomeinfodb
+- r-genomicfeatures
 - r-genomicranges
+- r-ggdist
 - r-ggforce
 - r-ggplot2
-- r-gviz
+- r-iranges
+- r-kableextra
+- r-lifecycle
 - r-matrixstats
 - r-plyr
+- r-rcolorbrewer
+- r-rlang
 - r-rtracklayer
 - r-s4vectors
 - r-tibble

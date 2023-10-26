@@ -4,8 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocparallel
+- r-directlabels
 - r-genomicranges
 - r-iranges
+- r-latticeextra
 - r-multtest
 - r-rfast
 - r-s4vectors

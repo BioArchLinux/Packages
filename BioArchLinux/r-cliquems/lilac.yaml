@@ -3,11 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bh
 - r-igraph
 - r-matrixstats
 - r-msnbase
 - r-qlcmatrix
 - r-rcpp
+- r-rcpparmadillo
 - r-xcms
 repo_makedepends:
 - r-bh

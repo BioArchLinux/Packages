@@ -4,7 +4,7 @@ _pkgname=osqp
 _pkgver=0.6.3.1
 pkgname=r-${_pkgname,,}
 pkgver=0.6.3.1
-pkgrel=0
+pkgrel=1
 pkgdesc="Quadratic Programming Solver using the 'OSQP' Library"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -15,6 +15,7 @@ depends=(
   r-rcpp
 )
 optdepends=(
+  r-slam
   r-testthat
 )
 makedepends=(cmake)

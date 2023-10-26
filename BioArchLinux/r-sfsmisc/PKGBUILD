@@ -9,7 +9,7 @@ _pkgname=sfsmisc
 _pkgver=1.1-16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Utilities from 'Seminar fuer Statistik' ETH Zurich"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,9 +18,27 @@ depends=(
   r
 )
 optdepends=(
+  r-cluster
+  r-datasets
+  r-e1071
   r-gmp
+  r-hmisc
+  r-lattice
   r-lokern
+  r-mass
+  r-matrix
+  r-mgcv
+  r-nlme
+  r-nor1mix
+  r-pastecs
+  r-polycor
+  r-polynom
   r-rmpfr
+  r-robustbase
+  r-rpart
+  r-sm
+  r-tcltk
+  r-tikzdevice
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9826b78f9d6debb71a6bec0f51fb1e77')

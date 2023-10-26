@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-rcpp
+- r-rcppgsl
 - r-statmod
 - r-tweedie
 repo_makedepends:

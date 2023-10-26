@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
-- r-cli
 - r-dplyr
 - r-jsonlite
 - r-magrittr

@@ -4,7 +4,7 @@ _pkgname=RNetCDF
 _pkgver=2.8-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Interface to 'NetCDF' Datasets"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,6 +22,9 @@ checkdepends=(
 )
 optdepends=(
   r-bit64
+  r-pbdmpi
+  r-rmpi
+  r-tools
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('43e3fbb2fb1f0e90adf31c246fa0fccf')

@@ -5,13 +5,14 @@ _pkgname=GOpro
 _pkgver=1.26.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Find the most characteristic gene ontology terms for groups of human genes"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
 license=(GPL3)
 depends=(
   r-annotationdbi
+  r-bh
   r-dendextend
   r-doparallel
   r-foreach

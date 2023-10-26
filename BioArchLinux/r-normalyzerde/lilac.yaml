@@ -11,8 +11,6 @@ repo_depends:
 - r-limma
 - r-matrixstats
 - r-preprocesscore
-- r-raster
-- r-rcmdrmisc
 - r-summarizedexperiment
 - r-vsn
 update_on:

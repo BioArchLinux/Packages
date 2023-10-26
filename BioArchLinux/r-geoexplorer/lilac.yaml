@@ -4,24 +4,35 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-car
 - r-dt
+- r-edger
+- r-enrichr
 - r-factoextra
 - r-geoquery
 - r-ggplot2
 - r-heatmaply
 - r-htmltools
+- r-httr
 - r-impute
+- r-knitr
 - r-limma
-- r-maptools
+- r-markdown
 - r-pheatmap
 - r-plotly
+- r-r.utils
+- r-readxl
 - r-scales
 - r-shiny
-- r-shinybs
 - r-shinybusy
+- r-shinycssloaders
 - r-shinyheatmaply
 - r-stringr
+- r-sva
 - r-umap
+- r-xfun
+- r-xml
+- r-xml2
 update_on:
 - regex: GEOexplorer_([\d._-]+).tar.gz
   source: regex

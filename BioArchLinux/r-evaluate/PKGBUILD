@@ -9,7 +9,7 @@ _pkgname=evaluate
 _pkgver=0.22
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Parsing and Evaluation Tools that Provide More Details than the Default"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,6 +20,7 @@ depends=(
 optdepends=(
   r-covr
   r-ggplot2
+  r-lattice
   r-rlang
   r-testthat
   r-withr

@@ -4,7 +4,7 @@ _pkgname=CTdata
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Data companion to CTexploreR"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -20,6 +20,7 @@ optdepends=(
   r-dt
   r-knitr
   r-rmarkdown
+  r-singlecellexperiment
   r-summarizedexperiment
   r-testthat
 )

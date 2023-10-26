@@ -5,9 +5,10 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-basilisk
+- r-irlba
 - r-rcpp
 - r-reticulate
-- r-irlba
+- r-rtsne
 update_on:
 - regex: densvis_([\d._-]+).tar.gz
   source: regex

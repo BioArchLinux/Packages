@@ -4,7 +4,7 @@ _pkgname=xcms
 _pkgver=3.22.0
 pkgname=r-${_pkgname,,}
 pkgver=3.22.0
-pkgrel=1
+pkgrel=2
 pkgdesc='LC-MS and GC-MS Data Analysis'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -17,16 +17,19 @@ depends=(
   r-iranges
   r-massspecwavelet
   r-mscoreutils
+  r-msexperiment
   r-msfeatures
   r-msnbase
   r-multtest
   r-mzr
   r-plyr
+  r-progress
   r-protgenerics
   r-rann
   r-rcolorbrewer
   r-robustbase
   r-s4vectors
+  r-spectra
   r-summarizedexperiment
 )
 optdepends=(
@@ -34,19 +37,17 @@ optdepends=(
   r-catools
   r-faahko
   r-knitr
-  r-magrittr
   r-maldiquant
+  r-metabocoreutils
   r-msbackendmgf
   r-msdata
   r-ncdf4
   r-pander
   r-pheatmap
-  r-progress
   r-rgl
   r-rgraphviz
   r-rmarkdown
   r-signal
-  r-spectra
   r-testthat
   r-xml
 )
