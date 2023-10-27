@@ -4,7 +4,7 @@ _pkgname=AER
 _pkgver=1.2-10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Applied Econometrics with R"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
