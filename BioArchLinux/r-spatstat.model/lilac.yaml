@@ -1,20 +1,21 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 repo_depends:
-- r-abind
-- r-goftest
-- r-spatstat.data
-- r-spatstat.explore
-- r-spatstat.geom
-- r-spatstat.random
-- r-spatstat.sparse
-- r-spatstat.utils
-- r-tensor
+  - r-abind
+  - r-goftest
+  - r-spatstat.data
+  - r-spatstat.explore
+  - r-spatstat.geom
+  - r-spatstat.random
+  - r-spatstat.sparse
+  - r-spatstat.utils
+  - r-tensor
 update_on:
-- regex: spatstat.model_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=spatstat.model
+  - regex: spatstat.model_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=spatstat.model

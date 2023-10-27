@@ -1,21 +1,22 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- r-dplyr
-- r-hms
-- r-lifecycle
-- r-lubridate
-- r-magrittr
-- r-purrr
-- r-rlang
-- r-snakecase
-- r-stringi
-- r-stringr
-- r-tidyr
-- r-tidyselect
+  - r-dplyr
+  - r-hms
+  - r-lifecycle
+  - r-lubridate
+  - r-magrittr
+  - r-purrr
+  - r-rlang
+  - r-snakecase
+  - r-stringi
+  - r-stringr
+  - r-tidyr
+  - r-tidyselect
 update_on:
-- regex: janitor_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=janitor
-- alias: r
+  - regex: janitor_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=janitor
+  - alias: r

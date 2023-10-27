@@ -1,13 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- r-doe.base
-- r-igraph
-- r-scatterplot3d
-- r-sfsmisc
+  - r-doe.base
+  - r-igraph
+  - r-scatterplot3d
+  - r-sfsmisc
 update_on:
-- regex: FrF2_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=FrF2
-- alias: r
+  - regex: FrF2_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=FrF2
+  - alias: r

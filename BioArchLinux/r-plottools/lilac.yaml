@@ -1,6 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
@@ -11,7 +12,7 @@ pre_build_script: |
     print(line)
   update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 update_on:
-- regex: PlotTools_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=PlotTools
-- alias: r
+  - regex: PlotTools_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=PlotTools
+  - alias: r

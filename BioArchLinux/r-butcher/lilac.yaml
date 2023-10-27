@@ -1,17 +1,18 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- r-cli
-- r-lobstr
-- r-purrr
-- r-rlang
-- r-tibble
-- r-vctrs
+  - r-cli
+  - r-lobstr
+  - r-purrr
+  - r-rlang
+  - r-tibble
+  - r-vctrs
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-- regex: butcher_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=butcher
+  - regex: butcher_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=butcher

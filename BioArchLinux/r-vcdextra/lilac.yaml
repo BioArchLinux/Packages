@@ -1,19 +1,20 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- r-ca
-- r-dplyr
-- r-glue
-- r-gnm
-- r-here
-- r-purrr
-- r-readxl
-- r-stringr
-- r-tidyr
-- r-vcd
+  - r-ca
+  - r-dplyr
+  - r-glue
+  - r-gnm
+  - r-here
+  - r-purrr
+  - r-readxl
+  - r-stringr
+  - r-tidyr
+  - r-vcd
 update_on:
-- regex: vcdExtra_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=vcdExtra
-- alias: r
+  - regex: vcdExtra_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=vcdExtra
+  - alias: r

@@ -1,13 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- r-mnormt
-- r-numderiv
-- r-pbivnorm
-- r-quadprog
+  - r-mnormt
+  - r-numderiv
+  - r-pbivnorm
+  - r-quadprog
 update_on:
-- regex: lavaan_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lavaan
-- alias: r
+  - regex: lavaan_([\d._-]+).tar.gz
+    source: regex
+    url: https://cran.r-project.org/package=lavaan
+  - alias: r
