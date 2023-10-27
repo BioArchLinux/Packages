@@ -4,7 +4,7 @@ _pkgname=margins
 _pkgver=0.3.26
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Marginal Effects for Model Objects"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
