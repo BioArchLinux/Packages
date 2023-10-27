@@ -4,7 +4,7 @@ _pkgname=assertive
 _pkgver=0.3-6
 pkgname=r-${_pkgname,,}
 pkgver=0.3.6
-pkgrel=7
+pkgrel=8
 pkgdesc='Readable Check Functions to Ensure Code Integrity'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
