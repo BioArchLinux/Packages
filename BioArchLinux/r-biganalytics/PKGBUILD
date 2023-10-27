@@ -5,7 +5,7 @@ _pkgname=biganalytics
 _pkgver=1.1.21
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Utilities for 'big.matrix' Objects from Package 'bigmemory'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
