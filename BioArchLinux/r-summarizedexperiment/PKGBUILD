@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SummarizedExperiment
-_pkgver=1.30.2
+_pkgver=1.32.0
 pkgname=r-${_pkgname,,}
-pkgver=1.30.2
+pkgver=1.32.0
 pkgrel=1
 pkgdesc='SummarizedExperiment container'
 arch=('any')
@@ -39,7 +39,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('459010105355e611f7ba280182724a717661d45584e90557c2370f12dd29be15')
+sha256sums=('9f801c16adb503d7252890019b46f5583c401622c7ec9373663537548c9889a4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
