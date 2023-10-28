@@ -4,7 +4,7 @@ _pkgname=intergraph
 _pkgver=2.0-3
 pkgname=r-${_pkgname,,}
 pkgver=2.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Coercion Routines for Network Data Objects'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
