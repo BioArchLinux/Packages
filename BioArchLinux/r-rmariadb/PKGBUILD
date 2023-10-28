@@ -2,10 +2,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=RMariaDB
-_pkgver=1.3.0
+_pkgver=1.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Database Interface and MariaDB Driver"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -38,20 +38,15 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "$_pkgname-fix-connection.patch::https://github.com/r-dbi/RMariaDB/pull/306.patch"
         "system-boost.patch")
-md5sums=('9219c32690d6e53882ba6a616976c6ad'
-         '87535a335087362a4180932f6bd2c018'
+md5sums=('b8dc2132b67846e8c16d73d221f2acbf'
          'b53149b42ab18105619bbbcb568de1b7')
-sha256sums=('30e6fb03aa60b9e93c6ef203f2b3d582314e796de54a64872ad5259c04ed1720'
-            'a6ad2947eea291e6ac18fc2a8433bdb05841a5d75a68874e15cf841913e45e81'
+sha256sums=('6d1b2af4461ab098430bd5f7eb61f17b239355770999bf4a0218f6fb6eb06928'
             'eacc28eff677214d42c9b2199e9bd1d5d1a35a47d622047b01353e0d4b282e49')
 
 prepare() {
   # use system boost headers
   patch -Np1 -i system-boost.patch
-  # fix handling of connection option groups
-  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-connection.patch"
 }
 
 build() {
