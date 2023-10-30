@@ -30,6 +30,7 @@ repo_makedepends:
 - r-ordinal
 - r-parameters
 - r-pscl
+- r-randomforest
 - r-rstanarm
 - r-rstantools
 - r-testthat
