@@ -1,17 +1,22 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-future
 - r-future.apply
+- r-generics
+- r-lifecycle
 - r-progressr
 - r-rcpp
-- r-rcppeigen
 - r-rlang
 - r-sp
+- r-spam
+repo_makedepends:
+- r-rcppeigen
 update_on:
-- regex: SeuratObject_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=SeuratObject
+- source: rpkgs
+  pkgname: SeuratObject
+  repo: cran
+  md5: true
 - alias: r
