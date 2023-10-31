@@ -3,8 +3,8 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 update_on:
-- source: manual
-  manual: 0.5-1#c23f5e0bcac869616edebab2d282102b
+- source: rpkgs
+  pkgname: MatrixModels
+  repo: cran
+  md5: true
 - alias: r
-- source: manual
-  manual: 1
