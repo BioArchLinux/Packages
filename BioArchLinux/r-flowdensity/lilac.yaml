@@ -1,18 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-car
 - r-flowcore
 - r-flowviz
-- r-flowworkspace
 - r-gplots
-- r-rfoc
-- r-rgeos
-- r-sp
+- r-polyclip
 update_on:
-- regex: flowDensity_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/flowDensity
+- source: rpkgs
+  pkgname: flowDensity
+  repo: bioc
+  md5: true
 - alias: r
