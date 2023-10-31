@@ -10,6 +10,7 @@ repo_depends:
 - r-spatialexperiment
 - r-summarizedexperiment
 repo_makedepends:
+- r-dropletutils
 - r-png
 - r-testthat
 update_on:
