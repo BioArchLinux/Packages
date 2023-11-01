@@ -1,12 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-r6
-  - r-rcpp
+- r-r6
+- r-rcpp
+repo_makedepends:
+- r-slam
+- r-testthat
 update_on:
-  - regex: osqp_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=osqp
-  - alias: r
+- source: rpkgs
+  pkgname: osqp
+  repo: cran
+  md5: true
+- alias: r
