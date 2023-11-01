@@ -50,12 +50,6 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
 md5sums=('0716a73291fb80cc3d1f0909549cbaa8')
 sha256sums=('73a5965ebaa6831b752ccc46abe4e8a200028d8de9a8a40cd5b1710eb43080a3')
 
-prepare() {
-  # skip failing tests
-  sed -i '/run_tests <-/a\ \ \ \ skip("fails")' \
-      "$_pkgname/tests/testthat/test_025_persistent_cache.R"
-}
-
 build() {
   mkdir -p build
   R CMD INSTALL "$_pkgname" -l build
