@@ -1,13 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationhub
 - r-dplyr
 - r-experimenthub
 update_on:
-- regex: depmap_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/depmap
+- source: rpkgs
+  pkgname: depmap
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
