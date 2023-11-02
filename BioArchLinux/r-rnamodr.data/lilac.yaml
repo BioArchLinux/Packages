@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-experimenthub
+- r-experimenthubdata
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: RNAmodR.Data
+  repo: bioc-data-experiment
+  md5: true
+- alias: r
