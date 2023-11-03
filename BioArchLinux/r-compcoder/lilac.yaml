@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ape
 - r-catools
@@ -22,8 +22,15 @@ repo_depends:
 - r-sm
 - r-stringr
 - r-vioplot
+repo_makedepends:
+- r-ggtree
+- r-phangorn
+- r-phytools
+- r-testthat
+- r-tidytree
 update_on:
-- regex: compcodeR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/compcodeR
+- source: rpkgs
+  pkgname: compcodeR
+  repo: bioc
+  md5: true
 - alias: r
