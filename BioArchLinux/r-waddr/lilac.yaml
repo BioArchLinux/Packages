@@ -1,17 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-arm
 - r-biocfilecache
 - r-biocparallel
 - r-eva
 - r-rcpp
-- r-rcpparmadillo
 - r-singlecellexperiment
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-- regex: waddR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/waddR
+- source: rpkgs
+  pkgname: waddR
+  repo: bioc
+  md5: true
 - alias: r
