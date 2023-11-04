@@ -1,14 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-coin
 - r-ggplot2
 - r-s4vectors
 - r-summarizedexperiment
 update_on:
-- regex: lefser_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/lefser
+- source: rpkgs
+  pkgname: lefser
+  repo: bioc
+  md5: true
 - alias: r
