@@ -1,12 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cowplot
+- r-fastdummies
 - r-fitdistrplus
 - r-future
 - r-future.apply
+- r-generics
 - r-ggplot2
 - r-ggrepel
 - r-ggridges
@@ -16,6 +18,7 @@ repo_depends:
 - r-irlba
 - r-jsonlite
 - r-leiden
+- r-lifecycle
 - r-lmtest
 - r-matrixstats
 - r-miniui
@@ -29,11 +32,11 @@ repo_depends:
 - r-rcolorbrewer
 - r-rcpp
 - r-rcppannoy
-- r-rcppeigen
-- r-rcppprogress
+- r-rcpphnsw
 - r-reticulate
 - r-rlang
 - r-rocr
+- r-rspectra
 - r-rtsne
 - r-scales
 - r-scattermore
@@ -44,8 +47,17 @@ repo_depends:
 - r-spatstat.geom
 - r-tibble
 - r-uwot
+repo_makedepends:
+- r-rcppeigen
+- r-rcppprogress
+- r-glmgampoi
+- r-harmony
+- r-limma
+- r-singlecellexperiment
+- r-testthat
 update_on:
-- regex: Seurat_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Seurat
+- source: rpkgs
+  pkgname: Seurat
+  repo: cran
+  md5: true
 - alias: r
