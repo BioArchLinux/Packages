@@ -30,3 +30,5 @@ update_on:
   source: regex
   url: https://bioconductor.org/packages/3.17/MIGSA
 - alias: r
+- source: manual
+  manual: 1
