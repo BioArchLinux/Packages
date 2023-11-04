@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biobase
 - r-circlize
@@ -9,6 +9,7 @@ repo_depends:
 - r-factominer
 - r-ggplot2
 - r-ggrepel
+- r-ggridges
 - r-glmnet
 - r-gplots
 - r-gridextra
@@ -25,7 +26,8 @@ repo_depends:
 - r-scatterplot3d
 - r-stringr
 update_on:
-- regex: rexposome_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rexposome
+- source: rpkgs
+  pkgname: rexposome
+  repo: bioc
+  md5: true
 - alias: r
