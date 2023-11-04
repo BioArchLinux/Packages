@@ -1,8 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-biocfilecache
 - r-biocgenerics
 - r-cli
 - r-edger
@@ -10,9 +11,12 @@ repo_depends:
 - r-iranges
 - r-s4vectors
 - r-summarizedexperiment
-- r-biocfilecache
+repo_makedepends:
+- r-readr
+- r-testthat
 update_on:
-- regex: PhIPData_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PhIPData
+- source: rpkgs
+  pkgname: PhIPData
+  repo: bioc
+  md5: true
 - alias: r
