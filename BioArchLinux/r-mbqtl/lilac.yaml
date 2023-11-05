@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-broom
+- r-dplyr
+- r-ggplot2
+- r-matrixeqtl
+- r-metagenomeseq
+- r-pheatmap
+- r-readxl
+- r-stringr
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: mbQTL
+  repo: bioc
+  md5: true
+- alias: r
