@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-biobase
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-ggpubr
+- r-gseabase
+- r-limma
+- r-msigdb
+- r-org.hs.eg.db
+- r-patchwork
+- r-seuratobject
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tidyr
+repo_makedepends:
+- r-clusterprofiler
+- r-complexheatmap
+- r-depmap
+- r-rvest
+- r-singscore
+- r-testthat
+- r-upsetr
+update_on:
+- source: rpkgs
+  pkgname: mastR
+  repo: bioc
+  md5: true
+- alias: r
