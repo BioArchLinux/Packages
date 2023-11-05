@@ -1,12 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-alabama
 - r-bb
 - r-biobase
 - r-cobs
+- r-dbi
 - r-ggplot2
 - r-limma
 - r-nleqslv
@@ -15,9 +16,11 @@ repo_depends:
 - r-summarizedexperiment
 - r-tensor
 - r-vegan
-- r-dbi
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: combi_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/combi
+- source: rpkgs
+  pkgname: combi
+  repo: bioc
+  md5: true
 - alias: r
