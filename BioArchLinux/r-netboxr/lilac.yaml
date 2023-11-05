@@ -14,5 +14,5 @@ repo_depends:
 update_on:
 - regex: netboxr_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/3.17/netboxr
+  url: https://bioconductor.org/packages/3.16/netboxr
 - alias: r
