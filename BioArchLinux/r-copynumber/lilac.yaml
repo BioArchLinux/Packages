@@ -10,7 +10,5 @@ repo_depends:
 update_on:
 - regex: copynumber_([\d._-]+).tar.gz
   source: regex
-  url: https://bioconductor.org/packages/3.17/copynumber
+  url: https://bioconductor.org/packages/3.16/copynumber
 - alias: r
-- source: manual
-  manual: 1
