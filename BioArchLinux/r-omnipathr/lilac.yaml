@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-checkmate
 - r-crayon
@@ -13,6 +13,7 @@ repo_depends:
 - r-jsonlite
 - r-later
 - r-logger
+- r-lubridate
 - r-magrittr
 - r-progress
 - r-purrr
@@ -22,6 +23,7 @@ repo_depends:
 - r-rlang
 - r-rmarkdown
 - r-rvest
+- r-stringi
 - r-stringr
 - r-tibble
 - r-tidyr
@@ -29,8 +31,11 @@ repo_depends:
 - r-withr
 - r-xml2
 - r-yaml
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: OmnipathR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/OmnipathR
+- source: rpkgs
+  pkgname: OmnipathR
+  repo: bioc
+  md5: true
 - alias: r
