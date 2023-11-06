@@ -6,7 +6,6 @@ repo_depends:
 - r-aldex2
 - r-ancombc
 - r-biocparallel
-- r-corncob
 - r-cowplot
 - r-dearseq
 - r-deseq2
