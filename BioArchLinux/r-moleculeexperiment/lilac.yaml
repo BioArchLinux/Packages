@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-cli
+- r-data.table
+- r-dplyr
+- r-ebimage
+- r-ggplot2
+- r-magrittr
+- r-purrr
+- r-rhdf5
+- r-rjson
+- r-rlang
+- r-s4vectors
+- r-spatialexperiment
+- r-terra
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MoleculeExperiment
+  repo: bioc
+  md5: true
+- alias: r
