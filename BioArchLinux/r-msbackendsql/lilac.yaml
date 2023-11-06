@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-data.table
+- r-dbi
+- r-iranges
+- r-mscoreutils
+- r-progress
+- r-protgenerics
+- r-s4vectors
+- r-spectra
+repo_makedepends:
+- r-msdata
+- r-mzr
+- r-rsqlite
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MsBackendSql
+  repo: bioc
+  md5: true
+- alias: r
