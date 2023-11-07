@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-jsonlite
+- r-jsonvalidate
+- r-knitr
+- r-ontologyindex
+- r-r6
+- r-r6p
+- r-rmarkdown
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: rmzqc
+  repo: cran
+  md5: true
+- alias: r
