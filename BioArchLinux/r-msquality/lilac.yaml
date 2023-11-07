@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-ggplot2
+- r-htmlwidgets
+- r-msdata
+- r-msexperiment
+- r-plotly
+- r-protgenerics
+- r-rmzqc
+- r-shiny
+- r-shinydashboard
+- r-spectra
+- r-stringr
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-mzr
+- r-s4vectors
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MsQuality
+  repo: bioc
+  md5: true
+- alias: r
