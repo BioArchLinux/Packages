@@ -2,7 +2,7 @@
 pkgname=bedtools
 pkgver=2.31.0
 epoch=1
-pkgrel=2
+pkgrel=3
 pkgdesc='powerful toolset for genome arithmetic'
 arch=('i686' 'x86_64')
 url="https://github.com/arq5x/bedtools2"
