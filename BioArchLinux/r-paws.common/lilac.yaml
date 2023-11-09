@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-base64enc
+- r-curl
+- r-digest
+- r-httr
+- r-jsonlite
+- r-rcpp
+- r-xml2
+repo_makedepends:
+- r-mockery
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: paws.common
+  repo: cran
+  md5: true
+- alias: r

@@ -188,6 +188,7 @@ license_map = {
     "AGPL-3": "AGPL3",
     "Apache License": "Apache",
     "Apache License (== 2.0)": "Apache",
+    "Apache License (>= 2.0)": "Apache",
     "Apache License 2.0": "Apache",
     "Artistic-2.0": "Artistic2.0",
     "BSD_2_clause + file LICENSE": "BSD",
