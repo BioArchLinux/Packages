@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-httr
+- r-jsonlite
+- r-paws.storage
+- r-r.utils
+- r-stringr
+repo_makedepends:
+- r-mockery
+- r-tinytest
+update_on:
+- source: rpkgs
+  pkgname: Rarr
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blosc
+  filename: usr/lib/libblosc\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lz4
+  filename: usr/lib/liblz4\.so\.([^.]+)
+  repo: core
