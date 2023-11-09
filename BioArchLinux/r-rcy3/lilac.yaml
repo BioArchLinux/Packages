@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-base64enc
 - r-base64url
@@ -16,11 +16,12 @@ repo_depends:
 - r-rcolorbrewer
 - r-rcurl
 - r-rjsonio
-- r-uchardet
+- r-stringi
 - r-uuid
 - r-xml
 update_on:
-- regex: RCy3_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RCy3
+- source: rpkgs
+  pkgname: RCy3
+  repo: bioc
+  md5: true
 - alias: r
