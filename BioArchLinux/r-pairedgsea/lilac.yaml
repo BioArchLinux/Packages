@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-aggregation
+- r-biocparallel
+- r-deseq2
+- r-dexseq
+- r-fgsea
+- r-ggplot2
+- r-limma
+- r-s4vectors
+- r-summarizedexperiment
+- r-sva
+repo_makedepends:
+- r-msigdbr
+- r-plotly
+- r-readr
+- r-testthat
+- r-writexl
+update_on:
+- source: rpkgs
+  pkgname: pairedGSEA
+  repo: bioc
+  md5: true
+- alias: r
