@@ -15,7 +15,6 @@ repo_depends:
 - r-numderiv
 - r-optimparallel
 - r-phangorn
-- r-plotrix
 - r-scatterplot3d
 update_on:
 - source: rpkgs
