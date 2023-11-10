@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ape
+- r-aucell
+- r-biocparallel
+- r-cli
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dplyr
+- r-dt
+- r-ensdb.hsapiens.v79
+- r-ensdb.mmusculus.v79
+- r-ensembldb
+- r-glue
+- r-gsva
+- r-gtools
+- r-matrixgenerics
+- r-msigdbr
+- r-proxyc
+- r-reshape2
+- r-rmarkdown
+- r-seurat
+- r-singlecellsignalr
+- r-spatialexperiment
+- r-spatstat.explore
+- r-spatstat.geom
+- r-summarizedexperiment
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: scFeatures
+  repo: bioc
+  md5: true
+- alias: r
