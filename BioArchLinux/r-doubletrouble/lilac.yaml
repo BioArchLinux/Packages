@@ -3,11 +3,14 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-annotationdbi
 - r-biostrings
+- r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
 - r-mclust
 - r-msa2dist
+- r-rlang
 - r-syntenet
 update_on:
 - source: rpkgs
