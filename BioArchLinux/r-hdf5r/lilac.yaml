@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bit64
+- r-r6
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: hdf5r
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: hdf5
+  filename: usr/lib/libhdf5\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: hdf5
+  filename: usr/lib/libhdf5_hl\.so\.([^.]+)
+  repo: extra
