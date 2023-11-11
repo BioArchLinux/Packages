@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-htmltools
+- r-htmlwidgets
+- r-jsonlite
+- r-magrittr
+- r-rlang
+- r-scales
+- r-shiny
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: billboarder
+  repo: cran
+  md5: true
+- alias: r
