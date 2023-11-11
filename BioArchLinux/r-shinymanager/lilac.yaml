@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-billboarder
+- r-dbi
+- r-dt
+- r-htmltools
+- r-openssl
+- r-r.utils
+- r-r6
+- r-rsqlite
+- r-scrypt
+- r-shiny
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: shinymanager
+  repo: cran
+  md5: true
+- alias: r
