@@ -1,0 +1,51 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bibtex
+- r-bslib
+- r-circlize
+- r-complexheatmap
+- r-data.table
+- r-dt
+- r-genomeinfodb
+- r-genomicranges
+- r-ggdendro
+- r-ggforce
+- r-ggplot2
+- r-ggrepel
+- r-ggridges
+- r-gridextra
+- r-hdf5r
+- r-htmltools
+- r-iranges
+- r-jsonlite
+- r-magrittr
+- r-patchwork
+- r-plotly
+- r-rcolorbrewer
+- r-refmanager
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-scales
+- r-scrypt
+- r-seurat
+- r-seuratobject
+- r-shiny
+- r-shinyhelper
+- r-shinymanager
+- r-singlecellexperiment
+- r-slingshot
+- r-sortable
+- r-xfun
+- r-xml2
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scRNAseqApp
+  repo: bioc
+  md5: true
+- alias: r
