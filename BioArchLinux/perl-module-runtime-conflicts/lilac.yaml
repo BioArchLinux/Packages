@@ -3,7 +3,7 @@ maintainers:
   - github: kbipinkumar
     email: kbipinkumar@pm.me
 update_on:
-  - regex: Module-Runtime-Conflicts-(\d+.\d+)
-    source: regex
-    url: https://metacpan.org/dist/Module-Runtime-Conflicts
+  - source: "cpan"
+    cpan: Module-Runtime-Conflicts
   - alias: perl
+  
