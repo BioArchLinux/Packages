@@ -22,6 +22,10 @@ checkdepends=(
               'perl-padwalker'
               'perl-super'
               'perl-datetime'
+              'perl-algorithm-c3'
+              'perl-datetime-format-mysql'
+              'perl-declare-constraints-simple'
+              'perl-module-refresh'
               )
 url='https://metacpan.org/dist/Moose'
 source=("http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/Moose-${pkgver}.tar.gz")
