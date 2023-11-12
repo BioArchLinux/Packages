@@ -3,11 +3,15 @@ maintainers:
   - github: kbipinkumar
     email: kbipinkumar@pm.me
 update_on:
-  - regex: Moose-(\d+.\d+)
-    source: regex
-    url: https://metacpan.org/dist/Moose
+  - source: "cpan"
+    cpan: Moose
   - alias: perl
 repo_depends:
   - perl-test-cleannamespaces
   - perl-module-runtime-conflicts
   - perl-devel-overloadinfo
+repo_makedepends:
+  - perl-algorithm-c3
+  - perl-datetime-format-mysql
+  - perl-declare-constraints-simple
+  - perl-module-refresh

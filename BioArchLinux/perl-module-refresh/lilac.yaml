@@ -1,0 +1,8 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+update_on:
+  - source: "cpan"
+    cpan: Module-Refresh
+  - alias: perl

@@ -1,0 +1,43 @@
+# CPAN Name  : Module::Refresh
+# Contributor: Daenyth
+# Contributor: Anton Leontiev <scileont /at/ gmail.com>
+# Generator  : CPANPLUS::Dist::Arch 1.32
+
+pkgname=perl-module-refresh
+pkgver=0.18
+pkgrel=1
+pkgdesc="Perl module to refresh %INC files when updated on disk"
+arch=("any")
+license=("GPL" "PerlArtistic")
+url="https://metacpan.org/release/Module-Refresh"
+options=(!emptydirs)
+depends=("perl")
+checkdepends=("perl-path-class") # 'perl' provides 'perl-test-simple' and 'perl-file-temp'
+source=(http://search.cpan.org/CPAN/authors/id/B/BP/BPS/Module-Refresh-${pkgver}.tar.gz)
+b2sums=('1cf627b14b163071a49a4a45ef99c40ea8e5afabdae683bbdef9b053262cadf2411c28bb31031cba334b1e4f22ab3f7e89191d6f1b02c799f64db5e491681e0d')
+
+sanitize() {
+	unset PERL5LIB PERL_MM_OPT PERL_MB_OPT PERL_LOCAL_LIB_ROOT
+	export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL="--skipdeps"
+	export PERL_USE_UNSAFE_INC=1
+}
+
+build() {
+	cd Module-Refresh-0.18
+	sanitize
+	perl Makefile.PL INSTALLDIRS=vendor
+	make
+}
+
+check() {
+	cd Module-Refresh-0.18
+	sanitize
+	make test
+}
+
+package() {
+	cd Module-Refresh-0.18
+	sanitize
+	make install DESTDIR="$pkgdir"
+	find "$pkgdir" \( -name .packlist -o -name perllocal.pod \) -delete
+}
