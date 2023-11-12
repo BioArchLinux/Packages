@@ -3,7 +3,6 @@ maintainers:
   - github: kbipinkumar
     email: kbipinkumar@pm.me
 update_on:
-  - regex: LWP-UserAgent-Determined-(\d+.\d+)
-    source: regex
-    url: https://metacpan.org/dist/LWP-UserAgent-Determined
+  - source: "cpan"
+    cpan: LWP-UserAgent-Determined
   - alias: perl
