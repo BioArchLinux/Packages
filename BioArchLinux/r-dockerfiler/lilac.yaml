@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-attempt
 - r-cli
@@ -9,14 +9,17 @@ repo_depends:
 - r-fs
 - r-glue
 - r-jsonlite
+- r-memoise
 - r-pak
 - r-pkgbuild
 - r-r6
 - r-remotes
-- r-renv
 - r-usethis
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: dockerfiler_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=dockerfiler
+- source: rpkgs
+  pkgname: dockerfiler
+  repo: cran
+  md5: true
 - alias: r
