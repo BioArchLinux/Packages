@@ -14,8 +14,6 @@ repo_depends:
 - r-shiny
 - r-singlecellexperiment
 - r-summarizedexperiment
-repo_makedepends:
-- r-testthat
 update_on:
 - source: rpkgs
   pkgname: scviR
