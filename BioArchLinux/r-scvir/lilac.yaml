@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-basilisk
+- r-biocfilecache
+- r-limma
+- r-matrixgenerics
+- r-pheatmap
+- r-reticulate
+- r-s4vectors
+- r-scater
+- r-shiny
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scviR
+  repo: bioc
+  md5: true
+- alias: r
