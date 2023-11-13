@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "file LICENSE",
-        expect_systemrequirements = "C++11, ICU4C (>= 55, optional)",
+        expect_systemrequirements = "ICU4C (>= 61, optional)",
     )
 
 def post_build():
