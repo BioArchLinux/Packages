@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-biostrings
+- r-cli
+- r-cvtools
+- r-fpc
+- r-ggplot2
+- r-ggseqlogo
+- r-matrixstats
+- r-prettyunits
+- r-reshape2
+- r-reticulate
+repo_makedepends:
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: seqArchR
+  repo: bioc
+  md5: true
+- alias: r
