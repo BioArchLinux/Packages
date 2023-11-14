@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-chipseeker
+- r-cli
+- r-clusterprofiler
+- r-cowplot
+- r-factoextra
+- r-genomeinfodb
+- r-genomicranges
+- r-ggimage
+- r-ggplot2
+- r-gridextra
+- r-heatmaps
+- r-iranges
+- r-magick
+- r-rcolorbrewer
+- r-s4vectors
+- r-scales
+- r-seqarchr
+- r-seqpattern
+update_on:
+- source: rpkgs
+  pkgname: seqArchRplus
+  repo: bioc
+  md5: true
+- alias: r
