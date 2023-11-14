@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggfun
+- r-ggplot2
+- r-ggplotify
+- r-jsonlite
+- r-magick
+- r-scales
+- r-tibble
+- r-withr
+update_on:
+- source: rpkgs
+  pkgname: ggimage
+  repo: cran
+  md5: true
+- alias: r
