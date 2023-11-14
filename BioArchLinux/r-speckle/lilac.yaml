@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-edger
+- r-ggplot2
+- r-limma
+- r-seurat
+- r-singlecellexperiment
+repo_makedepends:
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: speckle
+  repo: bioc
+  md5: true
+- alias: r
