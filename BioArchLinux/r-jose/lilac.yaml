@@ -3,28 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-cli
-- r-curl
-- r-glue
-- r-lifecycle
-- r-magrittr
+- r-jsonlite
 - r-openssl
-- r-r6
-- r-rappdirs
-- r-rlang
-- r-vctrs
-- r-withr
 repo_makedepends:
-- r-bench
-- r-docopt
-- r-httpuv
-- r-jose
 - r-testthat
-- r-webfakes
-- r-xml2
 update_on:
 - source: rpkgs
-  pkgname: httr2
+  pkgname: jose
   repo: cran
   md5: true
 - alias: r

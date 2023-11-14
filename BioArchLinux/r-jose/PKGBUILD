@@ -1,56 +1,31 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
-# Contributor: Alexander Bocken <alexander@bocken.org>
+# Contributor: peippo <christoph+aur@christophfink.com>
 
-_pkgname=httr2
-_pkgver=1.0.0
+_pkgname=jose
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
-pkgdesc="Perform HTTP Requests and Process the Responses"
+pkgrel=3
+pkgdesc="JavaScript Object Signing and Encryption"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=(MIT)
 depends=(
-  r-cli
-  r-curl
-  r-glue
-  r-lifecycle
-  r-magrittr
+  r-jsonlite
   r-openssl
-  r-r6
-  r-rappdirs
-  r-rlang
-  r-vctrs
-  r-withr
 )
 checkdepends=(
-  r-bench
-  r-docopt
-  r-httpuv
-  r-jose
   r-testthat
-  r-webfakes
-  r-xml2
 )
 optdepends=(
-  r-askpass
-  r-bench
-  r-clipr
-  r-covr
-  r-docopt
-  r-httpuv
-  r-jose
-  r-jsonlite
   r-knitr
   r-rmarkdown
+  r-spelling
   r-testthat
-  r-tibble
-  r-webfakes
-  r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f9dede77d366a4e7b1bbec53a4e101de')
-sha256sums=('cb852d6f560c329a7dc17aa760f09a0950413513dc8abfc3facb6418b2934a49')
+md5sums=('977518b8c7369d6cac8507a86038df67')
+sha256sums=('7bd098edbcafebd066ea6a3e85f31305deadac66d994409ea275698aade56626')
 
 build() {
   mkdir -p build
