@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotate
+- r-caret
+- r-desctools
+- r-dplyr
+- r-expm
+- r-genefilter
+- r-ggplot2
+- r-ggridges
+- r-go.db
+- r-gostats
+- r-graph
+- r-openxlsx
+- r-org.hs.eg.db
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-rgraphviz
+- r-rspectra
+- r-summarizedexperiment
+- r-xtable
+update_on:
+- source: rpkgs
+  pkgname: SGCP
+  repo: bioc
+  md5: true
+- alias: r
