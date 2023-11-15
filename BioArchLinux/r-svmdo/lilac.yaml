@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-bsda
+- r-caret
+- r-catools
+- r-data.table
+- r-dose
+- r-dplyr
+- r-e1071
+- r-golem
+- r-klar
+- r-nortest
+- r-org.hs.eg.db
+- r-shiny
+- r-shinyfiles
+- r-shinytitle
+- r-sjmisc
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: SVMDO
+  repo: bioc
+  md5: true
+- alias: r
