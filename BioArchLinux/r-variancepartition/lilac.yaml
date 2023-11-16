@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-aod
 - r-biobase
@@ -14,6 +14,7 @@ repo_depends:
 - r-limma
 - r-lme4
 - r-lmertest
+- r-matrixstats
 - r-pbkrtest
 - r-rdpack
 - r-remacor
@@ -21,8 +22,14 @@ repo_depends:
 - r-rhpcblasctl
 - r-rlang
 - r-scales
+repo_makedepends:
+- r-biocgenerics
+- r-edger
+- r-rfast
+- r-runit
 update_on:
-- regex: variancePartition_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/variancePartition
+- source: rpkgs
+  pkgname: variancePartition
+  repo: bioc
+  md5: true
 - alias: r
