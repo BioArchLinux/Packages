@@ -10,5 +10,5 @@ post_build_script: |
   update_aur_repo()
 update_on:
   - source: manual
-    manual: 2.4.13f
+    manual: 3.0.2
 time_limit_hours: 1
