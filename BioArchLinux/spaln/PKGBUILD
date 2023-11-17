@@ -2,7 +2,7 @@
 
 pkgname=spaln
 pkgver=3.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Splicing-aware transcript (cDNA/EST or protein sequences) alignment to genomic DNA'
 arch=('x86_64')
 url='https://github.com/ogotoh/spaln'
