@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-caret
+- r-classifyr
+- r-directpa
+- r-doparallel
+- r-dplyr
+- r-ggnewscale
+- r-ggplot2
+- r-ggraph
+- r-ggrepel
+- r-ggthemes
+- r-glmnet
+- r-hmisc
+- r-igraph
+- r-latex2exp
+- r-limma
+- r-magrittr
+- r-plotly
+- r-proc
+- r-purrr
+- r-reshape2
+- r-statmod
+- r-stringr
+- r-tibble
+- r-tidygraph
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: TOP
+  repo: bioc
+  md5: true
+- alias: r
