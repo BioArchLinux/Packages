@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-delayedarray
+- r-dplyr
+- r-genomicalignments
+- r-genomicranges
+- r-igraph
+- r-iranges
+- r-purrr
+- r-rsamtools
+- r-stringr
+- r-tibble
+- r-variantannotation
+update_on:
+- source: rpkgs
+  pkgname: ZygosityPredictor
+  repo: bioc
+  md5: true
+- alias: r
