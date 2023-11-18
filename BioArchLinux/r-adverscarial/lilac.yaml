@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-delayedarray
+- r-gtools
+- r-s4vectors
+repo_makedepends:
+- r-biocgenerics
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: adverSCarial
+  repo: bioc
+  md5: true
+- alias: r
