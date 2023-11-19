@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-ggplot2
+- r-gtable
+- r-lifecycle
+- r-rlang
+- r-scales
+- r-vctrs
+repo_makedepends:
+- r-fitdistrplus
+- r-ggdendro
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: ggh4x
+  repo: cran
+  md5: true
+- alias: r

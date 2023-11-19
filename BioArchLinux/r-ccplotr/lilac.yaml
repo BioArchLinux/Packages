@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-dplyr
+- r-forcats
+- r-ggbump
+- r-ggh4x
+- r-ggplot2
+- r-ggraph
+- r-ggtext
+- r-igraph
+- r-patchwork
+- r-plyr
+- r-rcolorbrewer
+- r-scales
+- r-scatterpie
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-viridis
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: CCPlotR
+  repo: bioc
+  md5: true
+- alias: r
