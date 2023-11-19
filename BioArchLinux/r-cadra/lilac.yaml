@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-doparallel
+- r-ggplot2
+- r-gplots
+- r-gtable
+- r-misc3d
+- r-plyr
+- r-ppcor
+- r-r.cache
+- r-reshape2
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: CaDrA
+  repo: bioc
+  md5: true
+- alias: r
