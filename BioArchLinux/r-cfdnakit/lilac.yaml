@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-magrittr
+- r-pscbs
+- r-qdnaseq
+- r-rlang
+- r-rsamtools
+- r-s4vectors
+update_on:
+- source: rpkgs
+  pkgname: cfdnakit
+  repo: bioc
+  md5: true
+- alias: r
