@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-future
+- r-future.apply
+- r-igraph
+- r-stringdist
+- r-visnetwork
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ClustIRR
+  repo: bioc
+  md5: true
+- alias: r
