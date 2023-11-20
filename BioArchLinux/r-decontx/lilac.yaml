@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-celda
+- r-dbscan
+- r-delayedarray
+- r-ggplot2
+- r-mcmcprecision
+- r-patchwork
+- r-plyr
+- r-rcpp
+- r-rcppparallel
+- r-reshape2
+- r-rstan
+- r-rstantools
+- r-s4vectors
+- r-scater
+- r-seurat
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-withr
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-stanheaders
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: decontX
+  repo: bioc
+  md5: true
+- alias: r
