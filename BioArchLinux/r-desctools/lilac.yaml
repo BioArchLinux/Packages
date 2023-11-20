@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-cli
 - r-data.table
 - r-exact
 - r-expm
@@ -13,8 +14,6 @@ repo_depends:
 - r-readxl
 - r-rstudioapi
 - r-withr
-repo_makedepends:
-- r-bh
 update_on:
 - source: rpkgs
   pkgname: DescTools
