@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cytopipeline
+- r-flowcore
+- r-ggplot2
+- r-plotly
+- r-shiny
+repo_makedepends:
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: CytoPipelineGUI
+  repo: bioc
+  md5: true
+- alias: r
