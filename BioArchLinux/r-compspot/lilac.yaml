@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-ggplot2
+- r-ggpubr
+- r-gridextra
+- r-magrittr
+- r-plotly
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: compSPOT
+  repo: bioc
+  md5: true
+- alias: r
