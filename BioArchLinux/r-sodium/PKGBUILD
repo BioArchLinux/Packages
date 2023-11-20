@@ -2,10 +2,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=sodium
-_pkgver=1.3.0
+_pkgver=1.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="A Modern and Easy-to-Use Crypto Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,8 +19,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('47515533c83716220b35251d63a2951d')
-sha256sums=('881a8d75f05f94366c367d8ca2f27f6cac879e6c54f4b632e4722d7fff62202c')
+md5sums=('05f45dd77035afe37af4b2726d048453')
+sha256sums=('fd811a49fc4927d4f352eb033a6cb26cd223b52282b9004dcc8244c85e3d7231')
 
 build() {
   mkdir -p build
