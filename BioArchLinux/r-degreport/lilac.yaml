@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biobase
 - r-biocgenerics
@@ -10,6 +10,7 @@ repo_depends:
 - r-complexheatmap
 - r-consensusclusterplus
 - r-cowplot
+- r-dendextend
 - r-deseq2
 - r-dplyr
 - r-edger
@@ -25,12 +26,16 @@ repo_depends:
 - r-rlang
 - r-s4vectors
 - r-scales
+- r-stringi
 - r-stringr
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: DEGreport_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DEGreport
+- source: rpkgs
+  pkgname: DEGreport
+  repo: bioc
+  md5: true
 - alias: r
