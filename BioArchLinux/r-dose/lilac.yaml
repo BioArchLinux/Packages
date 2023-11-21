@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
 - r-biocparallel
@@ -9,12 +9,14 @@ repo_depends:
 - r-ggplot2
 - r-gosemsim
 - r-hdo.db
-- r-hpo.db
-- r-mpo.db
 - r-qvalue
 - r-reshape2
+- r-yulab.utils
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: DOSE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DOSE
+- source: rpkgs
+  pkgname: DOSE
+  repo: bioc
+  md5: true
 - alias: r
