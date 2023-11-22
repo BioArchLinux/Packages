@@ -8,6 +8,7 @@ repo_depends:
 - r-htmltools
 - r-jquerylib
 - r-jsonlite
+- r-lifecycle
 - r-memoise
 - r-mime
 - r-rlang
