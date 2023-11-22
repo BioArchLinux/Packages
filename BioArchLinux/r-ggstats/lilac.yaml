@@ -3,34 +3,31 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-broom.helpers
+- r-cli
 - r-dplyr
+- r-forcats
 - r-ggplot2
-- r-ggstats
-- r-gtable
 - r-lifecycle
 - r-magrittr
-- r-plyr
-- r-progress
-- r-rcolorbrewer
+- r-patchwork
+- r-purrr
 - r-rlang
 - r-scales
+- r-stringr
 - r-tidyr
 repo_makedepends:
-- r-chemometrics
-- r-crosstalk
-- r-geosphere
-- r-ggforce
-- r-hmisc
-- r-intergraph
-- r-mapproj
-- r-maps
-- r-network
-- r-sna
+- r-betareg
+- r-emmeans
+- r-parameters
+- r-pscl
+- r-reshape
+- r-survey
 - r-testthat
 - r-vdiffr
 update_on:
 - source: rpkgs
-  pkgname: GGally
+  pkgname: ggstats
   repo: cran
   md5: true
 - alias: r

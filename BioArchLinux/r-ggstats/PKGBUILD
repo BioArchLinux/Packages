@@ -1,70 +1,58 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
-# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=GGally
-_pkgver=2.2.0
+_pkgname=ggstats
+_pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
-pkgdesc="Extension to 'ggplot2'"
+pkgrel=1
+pkgdesc="Extension to 'ggplot2' for Plotting Stats"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=(GPL)
+license=(GPL3)
 depends=(
+  r-broom.helpers
+  r-cli
   r-dplyr
+  r-forcats
   r-ggplot2
-  r-ggstats
-  r-gtable
   r-lifecycle
   r-magrittr
-  r-plyr
-  r-progress
-  r-rcolorbrewer
+  r-patchwork
+  r-purrr
   r-rlang
   r-scales
+  r-stringr
   r-tidyr
 )
 checkdepends=(
-  r-chemometrics
-  r-crosstalk
-  r-geosphere
-  r-ggforce
-  r-hmisc
-  r-intergraph
-  r-mapproj
-  r-maps
-  r-network
-  r-sna
+  r-betareg
+  r-emmeans
+  r-parameters
+  r-pscl
+  r-reshape
+  r-survey
   r-testthat
   r-vdiffr
 )
 optdepends=(
+  r-betareg
   r-broom
-  r-broom.helpers
-  r-chemometrics
-  r-crosstalk
   r-emmeans
-  r-geosphere
-  r-ggforce
-  r-hmisc
-  r-igraph
-  r-intergraph
+  r-glue
   r-knitr
   r-labelled
-  r-mapproj
-  r-maps
-  r-network
+  r-parameters
+  r-pscl
+  r-reshape
   r-rmarkdown
-  r-roxygen2
-  r-scagnostics
-  r-sna
   r-spelling
+  r-survey
   r-testthat
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ba770293c7c59d282359e9425e0c3f7b')
-sha256sums=('dce20b47d639aa1ad63d9f14aae48c554d1e787758876c9842bf0e093bab80dd')
+md5sums=('d615412a8c42e91abadd45f5d88c49a0')
+sha256sums=('2c6a563fb7072e820837d052855aa475a3486b9519a06a63678166c5af6a9ec9')
 
 build() {
   mkdir -p build

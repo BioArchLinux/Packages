@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-broom
+- r-cli
+- r-dplyr
+- r-labelled
+- r-lifecycle
+- r-purrr
+- r-rlang
+- r-stringr
+- r-tibble
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: broom.helpers
+  repo: cran
+  md5: true
+- alias: r
