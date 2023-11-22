@@ -1,19 +1,27 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
+- r-colourpicker
 - r-dapar
 - r-dapardata
 - r-data.table
+- r-dt
 - r-future
 - r-ggplot2
 - r-gplots
+- r-gtools
 - r-highcharter
 - r-htmlwidgets
+- r-knitr
 - r-later
 - r-promises
+- r-r.utils
+- r-rclipboard
+- r-rcolorbrewer
 - r-rhandsontable
+- r-sass
 - r-shiny
 - r-shinyace
 - r-shinybs
@@ -21,11 +29,15 @@ repo_depends:
 - r-shinyjqui
 - r-shinyjs
 - r-shinythemes
+- r-shinytree
+- r-shinywidgets
 - r-tibble
 - r-vioplot
 - r-webshot
+- r-xml
 update_on:
-- regex: Prostar_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Prostar
+- source: rpkgs
+  pkgname: Prostar
+  repo: bioc
+  md5: true
 - alias: r
