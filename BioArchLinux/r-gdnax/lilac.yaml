@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bitops
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicfiles
+- r-genomicranges
+- r-iranges
+- r-plotrix
+- r-rcolorbrewer
+- r-rsamtools
+- r-s4vectors
+- r-summarizedexperiment
+repo_makedepends:
+- r-gdnainrnaseqdata
+- r-runit
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+update_on:
+- source: rpkgs
+  pkgname: gDNAx
+  repo: bioc
+  md5: true
+- alias: r
