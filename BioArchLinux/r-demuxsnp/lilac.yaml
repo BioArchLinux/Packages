@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-combinat
+- r-demuxmix
+- r-ensembldb
+- r-genomeinfodb
+- r-iranges
+- r-matrixgenerics
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-variantannotation
+repo_makedepends:
+- r-ensdb.hsapiens.v86
+- r-seurat
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: demuxSNP
+  repo: bioc
+  md5: true
+- alias: r
