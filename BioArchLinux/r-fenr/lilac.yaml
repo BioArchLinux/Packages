@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-biocfilecache
+- r-biomart
+- r-dplyr
+- r-ggplot2
+- r-httr
+- r-jsonlite
+- r-progress
+- r-purrr
+- r-readr
+- r-rlang
+- r-shiny
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-xml
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: fenr
+  repo: bioc
+  md5: true
+- alias: r
