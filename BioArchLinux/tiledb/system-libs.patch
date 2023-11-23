@@ -1,21 +1,30 @@
 diff --git a/cmake/Modules/FindCapnp_EP.cmake b/cmake/Modules/FindCapnp_EP.cmake
-index 317c385..f529c27 100644
+index 9a1ddbb..497252b 100644
 --- a/cmake/Modules/FindCapnp_EP.cmake
 +++ b/cmake/Modules/FindCapnp_EP.cmake
+@@ -42,7 +42,7 @@ endif()
+ # If the EP was built, it will install the CapnProtoConfig.cmake file, which we
+ # can use with find_package.
+ 
+-set(TILEDB_CAPNPROTO_VERSION 1.0.1)
++set(TILEDB_CAPNPROTO_VERSION 0.10.4)
+ set(TILEDB_CAPNPROTO_GITTAG "v1.0.1")
+ set(TILEDB_CAPNPROTO_HASH_SPEC "SHA1=a1ae37ec1731eef93d2ce1ffa959259e26d25874")
+ set(TILEDB_CAPNPROTO_URL "https://github.com/capnproto/capnproto/archive/v1.0.1.tar.gz")
 @@ -57,7 +57,7 @@ if (NOT TILEDB_FORCE_ALL_DEPS OR TILEDB_CAPNP_EP_BUILT)
    endif()
  
    find_package(CapnProto
 -    ${TILEDB_CAPNPROTO_VERSION} EXACT
-+    ${TILEDB_CAPNPROTO_VERSION}
++    ${TILEDB_CAPNPROTO_VERSION} REQUIRED
      PATHS ${TILEDB_EP_INSTALL_PREFIX}
      ${TILEDB_CAPNP_NO_DEFAULT_PATH}
      )
 diff --git a/cmake/Modules/FindMagic_EP.cmake b/cmake/Modules/FindMagic_EP.cmake
-index 868c3a4..fee0843 100644
+index 418dbcf..2523047 100644
 --- a/cmake/Modules/FindMagic_EP.cmake
 +++ b/cmake/Modules/FindMagic_EP.cmake
-@@ -47,6 +47,12 @@ endif()
+@@ -74,6 +74,12 @@ endif()
  # Search the path set during the superbuild for the EP.
  set(LIBMAGIC_PATHS ${TILEDB_EP_INSTALL_PREFIX})
  
@@ -28,7 +37,7 @@ index 868c3a4..fee0843 100644
  if(TILEDB_LIBMAGIC_EP_BUILT)
    find_package(libmagic PATHS ${TILEDB_EP_INSTALL_PREFIX} ${TILEDB_DEPS_NO_DEFAULT_PATH})
  endif()
-@@ -84,7 +90,7 @@ if (TILEDB_LIBMAGIC_EP_BUILT)
+@@ -111,7 +117,7 @@ if (TILEDB_LIBMAGIC_EP_BUILT)
  endif()
  
  # if not yet built add it as an external project
@@ -38,10 +47,10 @@ index 868c3a4..fee0843 100644
      message(STATUS "Adding Magic as an external project")
  
 diff --git a/tiledb/CMakeLists.txt b/tiledb/CMakeLists.txt
-index 8992fc8..dc92290 100644
+index 19aed81..5079596 100644
 --- a/tiledb/CMakeLists.txt
 +++ b/tiledb/CMakeLists.txt
-@@ -415,7 +415,7 @@ set(MGC_GZIPPED_BIN_INPUT_FILE "${MGC_GZIPPED_BIN_INPUT_DIRECTORY}/magic_mgc_gzi
+@@ -426,7 +426,7 @@ set(MGC_GZIPPED_BIN_INPUT_FILE "${MGC_GZIPPED_BIN_INPUT_DIRECTORY}/magic_mgc_gzi
  
  add_custom_command(
    OUTPUT "${MGC_GZIPPED_BIN_OUTPUT_FILE}"
@@ -50,7 +59,7 @@ index 8992fc8..dc92290 100644
    COMMAND ${CMAKE_COMMAND} -E tar x "${MGC_GZIPPED_BIN_INPUT_FILE}"
    WORKING_DIRECTORY "${MGC_GZIPPED_BIN_OUTPUT_DIRECTORY}"
  )
-@@ -426,7 +426,7 @@ add_dependencies(TILEDB_CORE_OBJECTS gen_mgc_unarch)
+@@ -437,7 +437,7 @@ add_dependencies(TILEDB_CORE_OBJECTS gen_mgc_unarch)
  
  add_custom_target(
    update-embedded-magic-data
@@ -59,7 +68,7 @@ index 8992fc8..dc92290 100644
    # need to work in 'local' directory with no prefix paths so no paths are included in archive
    WORKING_DIRECTORY "${MGC_GZIPPED_BIN_OUTPUT_DIRECTORY}"
    COMMAND ${CMAKE_COMMAND} -E tar cvj "magic_mgc_gzipped.bin.tar.bz2" "magic_mgc_gzipped.bin"
-@@ -939,6 +939,7 @@ if(TILEDB_SERIALIZATION)
+@@ -928,6 +928,7 @@ if(TILEDB_SERIALIZATION)
      COMMAND_EXPAND_LISTS
      COMMENT "Re-generate tiledb-rest.capnp.<h,c++> files for serialization support"
      )
