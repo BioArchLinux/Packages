@@ -1,0 +1,44 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ashr
+- r-biocgenerics
+- r-biocparallel
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-ggrepel
+- r-gseabase
+- r-gtools
+- r-iranges
+- r-limma
+- r-lme4
+- r-mashr
+- r-matrixgenerics
+- r-purrr
+- r-rcpp
+- r-rdpack
+- r-reshape2
+- r-s4vectors
+- r-scattermore
+- r-singlecellexperiment
+- r-sparsematrixstats
+- r-summarizedexperiment
+- r-tidyr
+- r-variancepartition
+- r-zenith
+repo_makedepends:
+- r-beachmat
+- r-muscat
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: dreamlet
+  repo: bioc
+  md5: true
+- alias: r

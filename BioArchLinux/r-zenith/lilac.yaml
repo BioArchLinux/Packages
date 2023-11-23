@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-enrichmentbrowser
+- r-ggplot2
+- r-gseabase
+- r-limma
+- r-msigdbr
+- r-progress
+- r-rdpack
+- r-reshape2
+- r-rfast
+- r-tidyr
+- r-variancepartition
+repo_makedepends:
+- r-biocgenerics
+- r-runit
+- r-tweedeseqcountdata
+update_on:
+- source: rpkgs
+  pkgname: zenith
+  repo: bioc
+  md5: true
+- alias: r
