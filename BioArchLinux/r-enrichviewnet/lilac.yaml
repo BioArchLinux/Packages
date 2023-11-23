@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-enrichplot
+- r-gprofiler2
+- r-jsonlite
+- r-rcy3
+- r-strex
+- r-stringr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: enrichViewNet
+  repo: bioc
+  md5: true
+- alias: r
