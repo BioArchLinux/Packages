@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-deseq2
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-ggrepel
+- r-glue
+- r-janitor
+- r-limma
+- r-magrittr
+- r-purrr
+- r-rlang
+- r-scales
+- r-stringr
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gg4way
+  repo: bioc
+  md5: true
+- alias: r
