@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bioccheck
+- r-biocmanager
+- r-desc
+- r-git2r
+- r-lintr
+- r-pkgbuild
+- r-rcmdcheck
+- r-remotes
+- r-rjson
+- r-withr
+- r-yaml
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gDRstyle
+  repo: bioc
+  md5: true
+- alias: r
