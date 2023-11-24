@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-gdrcore
+- r-gdrimport
+- r-gdrutils
+repo_makedepends:
+- r-gdrtestdata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gDR
+  repo: bioc
+  md5: true
+- alias: r

@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-bumpymatrix
+- r-checkmate
+- r-data.table
+- r-drc
+- r-jsonlite
+- r-jsonvalidate
+- r-magrittr
+- r-multiassayexperiment
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+repo_makedepends:
+- r-gdrtestdata
+- r-qs
+- r-testthat
+- r-yaml
+update_on:
+- source: rpkgs
+  pkgname: gDRutils
+  repo: bioc
+  md5: true
+- alias: r

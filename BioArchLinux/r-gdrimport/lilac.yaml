@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-bumpymatrix
+- r-checkmate
+- r-coregx
+- r-data.table
+- r-futile.logger
+- r-gdrutils
+- r-magrittr
+- r-multiassayexperiment
+- r-openxlsx
+- r-pharmacogx
+- r-readxl
+- r-rio
+- r-s4vectors
+- r-stringi
+- r-summarizedexperiment
+- r-tibble
+- r-xml
+- r-yaml
+repo_makedepends:
+- r-qs
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gDRimport
+  repo: bioc
+  md5: true
+- alias: r

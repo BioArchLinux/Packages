@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-bumpymatrix
+- r-checkmate
+- r-data.table
+- r-futile.logger
+- r-gdrutils
+- r-multiassayexperiment
+- r-purrr
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+repo_makedepends:
+- r-gdrimport
+- r-gdrtestdata
+- r-qs
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gDRcore
+  repo: bioc
+  md5: true
+- alias: r
