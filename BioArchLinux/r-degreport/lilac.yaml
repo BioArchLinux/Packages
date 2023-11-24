@@ -31,8 +31,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
-repo_makedepends:
-- r-testthat
 update_on:
 - source: rpkgs
   pkgname: DEGreport
