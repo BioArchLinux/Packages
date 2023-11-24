@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-biocfilecache
+- r-cairo
+- r-data.table
+- r-dplyr
+- r-getoptlong
+- r-ggplot2
+- r-ggraph
+- r-igraph
+- r-magick
+- r-org.hs.eg.db
+- r-patchwork
+- r-shadowtext
+- r-stringr
+- r-tibble
+- r-tidygraph
+- r-xml
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ggkegg
+  repo: bioc
+  md5: true
+- alias: r
