@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-ggplot2
+- r-rcpp
+- r-rcppparallel
+- r-rlang
+- r-scattermore
+- r-seurat
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tibble
+- r-tidydr
+- r-tidyr
+- r-yulab.utils
+repo_makedepends:
+- r-rcpparmadillo
+- r-scuttle
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ggsc
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
