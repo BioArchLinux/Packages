@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-magick
+repo_makedepends:
+- r-testit
+update_on:
+- source: rpkgs
+  pkgname: animation
+  repo: cran
+  md5: true
+- alias: r
