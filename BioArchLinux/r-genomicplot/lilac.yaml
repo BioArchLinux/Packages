@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-circlize
+- r-complexheatmap
+- r-cowplot
+- r-dplyr
+- r-edger
+- r-genomation
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggplotify
+- r-ggpubr
+- r-ggsci
+- r-ggsignif
+- r-iranges
+- r-plyranges
+- r-rcas
+- r-rsamtools
+- r-rtracklayer
+- r-scales
+- r-tidyr
+- r-venndiagram
+- r-viridis
+update_on:
+- source: rpkgs
+  pkgname: GenomicPlot
+  repo: bioc
+  md5: true
+- alias: r
