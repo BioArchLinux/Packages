@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocstyle
+- r-caret
+- r-genomicranges
+- r-glmnet
+- r-gplots
+- r-homo.sapiens
+- r-igraph
+- r-matrixstats
+- r-minfi
+- r-pigengene
+- r-rfast
+- r-summarizedexperiment
+- r-tidyr
+- r-tidyselect
+- r-wgcna
+update_on:
+- source: rpkgs
+  pkgname: iNETgrate
+  repo: bioc
+  md5: true
+- alias: r
