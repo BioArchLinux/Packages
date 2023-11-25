@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-doparallel
+- r-foreach
+- r-janitor
+- r-limma
+- r-plyr
+- r-seriation
+- r-summarizedexperiment
+- r-sva
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: HarmonizR
+  repo: bioc
+  md5: true
+- alias: r
