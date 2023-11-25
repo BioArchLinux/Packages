@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-doparallel
+- r-dorng
+- r-foreach
+- r-ggplot2
+- r-glue
+- r-hdinterval
+- r-iterators
+- r-rcpp
+- r-s4vectors
+- r-summarizedexperiment
+repo_makedepends:
+- r-rcpparmadillo
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: IsoBayes
+  repo: bioc
+  md5: true
+- alias: r
