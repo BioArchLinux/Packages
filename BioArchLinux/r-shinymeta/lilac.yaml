@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-callr
+- r-fastmap
+- r-fs
+- r-htmltools
+- r-rlang
+- r-shiny
+- r-sourcetools
+- r-styler
+repo_makedepends:
+- r-knitr
+- r-rmarkdown
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: shinymeta
+  repo: cran
+  md5: true
+- alias: r

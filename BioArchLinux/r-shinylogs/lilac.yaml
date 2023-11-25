@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-anytime
+- r-bit64
+- r-data.table
+- r-digest
+- r-htmltools
+- r-jsonlite
+- r-nanotime
+- r-shiny
+repo_makedepends:
+- r-dbi
+- r-rsqlite
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: shinylogs
+  repo: cran
+  md5: true
+- alias: r

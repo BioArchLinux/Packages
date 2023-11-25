@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-chron
+- r-flextable
+- r-hardyweinberg
+- r-kableextra
+- r-knitr
+- r-officer
+- r-rmarkdown
+- r-writexl
+update_on:
+- source: rpkgs
+  pkgname: compareGroups
+  repo: cran
+  md5: true
+- alias: r

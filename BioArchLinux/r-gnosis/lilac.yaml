@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-car
+- r-cbioportaldata
+- r-comparegroups
+- r-dashboardthemes
+- r-desctools
+- r-dt
+- r-fabricatr
+- r-fontawesome
+- r-maftools
+- r-magrittr
+- r-operator.tools
+- r-partykit
+- r-rcolorbrewer
+- r-reshape2
+- r-rstatix
+- r-shiny
+- r-shinycssloaders
+- r-shinydashboard
+- r-shinydashboardplus
+- r-shinyjs
+- r-shinylogs
+- r-shinymeta
+- r-shinywidgets
+- r-survminer
+- r-tidyverse
+update_on:
+- source: rpkgs
+  pkgname: GNOSIS
+  repo: bioc
+  md5: true
+- alias: r
