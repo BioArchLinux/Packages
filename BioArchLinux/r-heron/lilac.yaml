@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-genomicranges
+- r-harmonicmeanp
+- r-iranges
+- r-limma
+- r-matrixstats
+- r-metap
+- r-s4vectors
+- r-spdep
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: HERON
+  repo: bioc
+  md5: true
+- alias: r
