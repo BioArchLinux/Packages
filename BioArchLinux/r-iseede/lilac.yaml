@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-deseq2
+- r-edger
+- r-isee
+- r-s4vectors
+- r-shiny
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: iSEEde
+  repo: bioc
+  md5: true
+- alias: r
