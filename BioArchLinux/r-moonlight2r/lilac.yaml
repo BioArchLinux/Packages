@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biobase
+- r-circlize
+- r-clusterprofiler
+- r-complexheatmap
+- r-doparallel
+- r-dose
+- r-dplyr
+- r-easypubmed
+- r-foreach
+- r-fuzzyjoin
+- r-genomicranges
+- r-geoquery
+- r-gplots
+- r-hiver
+- r-magrittr
+- r-org.hs.eg.db
+- r-parmigene
+- r-purrr
+- r-qpdf
+- r-randomforest
+- r-rcolorbrewer
+- r-readr
+- r-rismed
+- r-rtracklayer
+- r-seqminer
+- r-stringr
+- r-tibble
+- r-tidyheatmap
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: Moonlight2R
+  repo: bioc
+  md5: true
+- alias: r

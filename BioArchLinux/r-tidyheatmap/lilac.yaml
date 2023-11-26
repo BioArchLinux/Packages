@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-dendextend
+- r-dplyr
+- r-lifecycle
+- r-magrittr
+- r-patchwork
+- r-purrr
+- r-rcolorbrewer
+- r-rlang
+- r-tibble
+- r-tidyr
+- r-viridis
+repo_makedepends:
+- r-spelling
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: tidyHeatmap
+  repo: cran
+  md5: true
+- alias: r
