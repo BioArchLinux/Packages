@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-config
+- r-data.table
+- r-futile.logger
+- r-gmodels
+- r-matrixcalc
+- r-matrixstats
+- r-nloptr
+- r-pbapply
+- r-pracma
+- r-quadprog
+- r-rsvd
+update_on:
+- source: rpkgs
+  pkgname: TCA
+  repo: cran
+  md5: true
+- alias: r

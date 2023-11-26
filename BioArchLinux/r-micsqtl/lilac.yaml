@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-dirmult
+- r-ggplot2
+- r-ggpubr
+- r-ggridges
+- r-glue
+- r-magrittr
+- r-nnls
+- r-purrr
+- r-s4vectors
+- r-summarizedexperiment
+- r-tca
+- r-toast
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MICSQTL
+  repo: bioc
+  md5: true
+- alias: r
