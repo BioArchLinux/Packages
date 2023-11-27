@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-data.table
+- r-depmixs4
+- r-genomicranges
+- r-magrittr
+- r-seurat
+- r-singlecellexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: partCNV
+  repo: bioc
+  md5: true
+- alias: r
