@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-complexheatmap
+- r-dplyr
+- r-fgsea
+- r-ggplot2
+- r-multiassayexperiment
+- r-pracma
+- r-rlang
+- r-rspectra
+- r-scales
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: nipalsMCIA
+  repo: bioc
+  md5: true
+- alias: r
