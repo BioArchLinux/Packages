@@ -1,9 +1,32 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: seqminer_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=seqminer
+- source: rpkgs
+  pkgname: seqminer
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: bzip2
+  repo: core
+  provided: libbz2.so
+  strip_release: true
+- source: alpm
+  alpm: sqlite
+  repo: core
+  provided: libsqlite3.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
+- source: alpm
+  alpm: zstd
+  repo: core
+  provided: libzstd.so
+  strip_release: true
