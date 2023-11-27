@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-plot3d
+- r-rgl
+update_on:
+- source: rpkgs
+  pkgname: plot3Drgl
+  repo: cran
+  md5: true
+- alias: r

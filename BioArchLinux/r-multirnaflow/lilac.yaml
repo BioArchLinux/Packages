@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-complexheatmap
+- r-deseq2
+- r-factoextra
+- r-factominer
+- r-ggalluvial
+- r-ggplot2
+- r-ggrepel
+- r-ggsci
+- r-gprofiler2
+- r-mfuzz
+- r-plot3d
+- r-plot3drgl
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-upsetr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MultiRNAflow
+  repo: bioc
+  md5: true
+- alias: r
