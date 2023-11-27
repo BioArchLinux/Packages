@@ -4,10 +4,10 @@
 # Contributor: Jooa <aur at (name) dot xyz>
 
 _pkgname=sp
-_pkgver=2.1-1
+_pkgver=2.1-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Classes and Methods for Spatial Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -26,8 +26,8 @@ optdepends=(
   r-terra
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('15ae0ca6fd6730312d3ac40c6aa55858')
-sha256sums=('2d34cde2a8d5c7876425f99d9d3b24ae192430d316bd2a397a62b52412b1405b')
+md5sums=('b06218c0fc28bc70fafcd40fd60cfd08')
+sha256sums=('bfdbb4a62f9fe0c554f88c75af6f214dc9a550da09bd3aefe1115ac6963e0dc5')
 
 build() {
   mkdir -p build
