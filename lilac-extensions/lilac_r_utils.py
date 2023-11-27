@@ -181,7 +181,7 @@ class Pkgbuild:
     def _parse_value(self, value: str) -> str:
         if value[0] != '"' or value[-1] != '"':
             raise Exception("Fatal error")
-        return value[1:-1].replace('\\"', '"').replace('\\\\', '\\')
+        return value[1:-1].replace('\\$', '$').replace('\\`', '`').replace('\\"', '"').replace('\\\\', '\\')
 
 # maps the license field in the DESCRIPTION file to a PKGBUILD license value
 license_map = {

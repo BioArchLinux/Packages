@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-basilisk
+- r-biocparallel
+- r-colorspace
+- r-cowplot
+- r-delayedarray
+- r-dplyr
+- r-experimenthub
+- r-ggplot2
+- r-ggpubr
+- r-ggrepel
+- r-ggsci
+- r-hdf5array
+- r-keras
+- r-orthosdata
+- r-plyr
+- r-reticulate
+- r-rlang
+- r-s4vectors
+- r-summarizedexperiment
+- r-tensorflow
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: orthos
+  repo: bioc
+  md5: true
+- alias: r
