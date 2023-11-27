@@ -2,7 +2,8 @@
 
 pkgname=bioawk
 pkgver=2017.09.11
-pkgrel=1
+epoch=0
+pkgrel=0
 pkgdesc="BWK awk modified for biological data"
 arch=('i686' 'x86_64')
 url="https://github.com/lh3/bioawk"
