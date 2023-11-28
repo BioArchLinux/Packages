@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-interactionset
+- r-iranges
+- r-plyranges
+- r-rlang
+- r-s4vectors
+- r-tibble
+- r-tidyselect
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: plyinteractions
+  repo: bioc
+  md5: true
+- alias: r
