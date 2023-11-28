@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-cli
+- r-data.table
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-r.utils
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-rhtslib
+- r-edger
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: raer
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true
