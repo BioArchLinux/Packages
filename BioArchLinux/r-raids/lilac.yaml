@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-annotationfilter
+- r-bsgenome
+- r-ensembldb
+- r-gdsfmt
+- r-genesis
+- r-genomicranges
+- r-iranges
+- r-matrixgenerics
+- r-proc
+- r-rlang
+- r-s4vectors
+- r-snprelate
+- r-variantannotation
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: RAIDS
+  repo: bioc
+  md5: true
+- alias: r
