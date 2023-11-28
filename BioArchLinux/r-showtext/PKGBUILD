@@ -1,0 +1,37 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Alexander Bocken <alexander@bocken.org>
+
+_pkgname=showtext
+_pkgver=0.9-6
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Using Fonts More Easily in R Graphs"
+arch=(x86_64)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=(Apache)
+depends=(
+  freetype2
+  r-showtextdb
+  r-sysfonts
+)
+optdepends=(
+  r-curl
+  r-jsonlite
+  r-knitr
+  r-prettydoc
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('efe23338db65e778dc579533bf51d588')
+sha256sums=('0eca59cb519bc4b9e64f7d1d79d5e78a78f84f8ad19de55dbf476832b1d68c30')
+
+build() {
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

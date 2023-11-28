@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
 - r-distributional
@@ -10,14 +10,30 @@ repo_depends:
 - r-glue
 - r-numderiv
 - r-quadprog
+- r-rcpp
 - r-rlang
 - r-scales
 - r-tibble
 - r-tidyselect
 - r-vctrs
 - r-withr
+repo_makedepends:
+- r-beeswarm
+- r-fda
+- r-fontquiver
+- r-forcats
+- r-mvtnorm
+- r-posterior
+- r-purrr
+- r-showtext
+- r-svglite
+- r-sysfonts
+- r-testthat
+- r-tidyr
+- r-vdiffr
 update_on:
-- regex: ggdist_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggdist
+- source: rpkgs
+  pkgname: ggdist
+  repo: cran
+  md5: true
 - alias: r

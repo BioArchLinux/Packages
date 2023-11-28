@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+update_on:
+- source: rpkgs
+  pkgname: sysfonts
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: freetype2
+  repo: extra
+  provided: libfreetype.so
+  strip_release: true
