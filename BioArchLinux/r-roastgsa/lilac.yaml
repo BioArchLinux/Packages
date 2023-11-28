@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-ggplot2
+- r-gplots
+- r-limma
+- r-rcolorbrewer
+update_on:
+- source: rpkgs
+  pkgname: roastgsa
+  repo: bioc
+  md5: true
+- alias: r
