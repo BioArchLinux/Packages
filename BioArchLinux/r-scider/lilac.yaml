@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-igraph
+- r-isoband
+- r-janitor
+- r-knitr
+- r-lwgeom
+- r-pheatmap
+- r-plotly
+- r-rlang
+- r-s4vectors
+- r-sf
+- r-shiny
+- r-spatialexperiment
+- r-spatstat.explore
+- r-spatstat.geom
+- r-summarizedexperiment
+repo_makedepends:
+- r-edger
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scider
+  repo: bioc
+  md5: true
+- alias: r
