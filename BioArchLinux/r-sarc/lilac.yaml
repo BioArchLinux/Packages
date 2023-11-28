@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-desctools
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-gtable
+- r-iranges
+- r-metap
+- r-multtest
+- r-plotly
+- r-plyranges
+- r-raggedexperiment
+- r-rcolorbrewer
+- r-reshape2
+- r-scales
+- r-tidyverse
+repo_makedepends:
+- r-homo.sapiens
+- r-testthat
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+update_on:
+- source: rpkgs
+  pkgname: SARC
+  repo: bioc
+  md5: true
+- alias: r
