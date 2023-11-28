@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-ggpubr
+- r-jsonlite
+- r-magrittr
+- r-minpack.lm
+- r-openxlsx
+- r-plotly
+- r-readxl
+- r-rhandsontable
+- r-shiny
+- r-shinyjs
+- r-shinywidgets
+- r-stringr
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: TSAR
+  repo: bioc
+  md5: true
+- alias: r
