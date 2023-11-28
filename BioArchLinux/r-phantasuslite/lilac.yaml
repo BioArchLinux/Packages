@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-data.table
+- r-httr
+- r-rhdf5client
+- r-stringr
+repo_makedepends:
+- r-geoquery
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: phantasusLite
+  repo: bioc
+  md5: true
+- alias: r
