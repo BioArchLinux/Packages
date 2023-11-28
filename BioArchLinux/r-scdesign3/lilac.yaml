@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-dplyr
+- r-gamlss
+- r-gamlss.dist
+- r-ggplot2
+- r-irlba
+- r-matrixstats
+- r-mclust
+- r-mvtnorm
+- r-pbmcapply
+- r-rvinecopulib
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tibble
+- r-umap
+- r-viridis
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scDesign3
+  repo: bioc
+  md5: true
+- alias: r

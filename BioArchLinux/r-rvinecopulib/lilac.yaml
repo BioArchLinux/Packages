@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-kde1d
+- r-rcpp
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-rcppthread
+- r-wdm
+- r-ggraph
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: rvinecopulib
+  repo: cran
+  md5: true
+- alias: r

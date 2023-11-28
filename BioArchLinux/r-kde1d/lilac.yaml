@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-randtoolbox
+- r-rcpp
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: kde1d
+  repo: cran
+  md5: true
+- alias: r
