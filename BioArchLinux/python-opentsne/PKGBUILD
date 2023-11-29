@@ -2,8 +2,8 @@
 
 pkgname='python-opentsne'
 _module=openTSNE
-pkgver=1.0.0
-pkgrel=2
+pkgver=1.0.1
+pkgrel=1
 pkgdesc="Extensible, parallel implementations of t-SNE"
 arch=('x86_64')
 url="https://github.com/pavlin-policar/openTSNE"
@@ -19,7 +19,7 @@ makedepends=(python-build
              python-wheel
              python-setuptools)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
-sha256sums=('03dafa41632ece9e9217d78769ed2d65e6086bdcab8bc8631d115b7d0ad06763')
+sha256sums=('51f4dffaa3366ee4a480dd21d5f64eb0fa677248a0c99490aeb8bf311124368c')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
