@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-basics
+- r-glmgampoi
+- r-rcpp
+- r-rcppparallel
+- r-rstan
+- r-rstantools
+- r-scran
+- r-scuttle
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-stanheaders
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: BASiCStan
+  repo: bioc
+  md5: true
+- alias: r
