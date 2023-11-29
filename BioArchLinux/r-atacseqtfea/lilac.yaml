@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-dplyr
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-iranges
+- r-limma
+- r-motifmatchr
+- r-pracma
+- r-rsamtools
+- r-s4vectors
+- r-summarizedexperiment
+- r-tfbstools
+update_on:
+- source: rpkgs
+  pkgname: ATACseqTFEA
+  repo: bioc
+  md5: true
+- alias: r
