@@ -5,10 +5,10 @@
 # Contributor: fordprefect <fordprefect@dukun.de>
 
 _pkgname=expm
-_pkgver=0.999-7
+_pkgver=0.999-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Matrix Exponential, Log, 'etc'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -27,8 +27,8 @@ optdepends=(
   r-sfsmisc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('bb76e7c8a301d5c0bf7d549001ccdc89')
-sha256sums=('28f249b914b8dd33eee16663fc793e57afd0e301e16067bf9f27fa8e591ba0f1')
+md5sums=('bca6fae94f270b8ec63c210519079a0c')
+sha256sums=('79e22a9fd17392c360b21d4d42c17d968a11e3c073cb8c50f4691f4bef700552')
 
 build() {
   mkdir -p build
