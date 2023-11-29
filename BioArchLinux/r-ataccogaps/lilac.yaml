@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.mmusculus.ucsc.mm10
+- r-chromvar
+- r-cogaps
+- r-dplyr
+- r-fgsea
+- r-geneoverlap
+- r-genomicfeatures
+- r-genomicranges
+- r-gplots
+- r-gtools
+- r-homo.sapiens
+- r-iranges
+- r-jaspar2016
+- r-motifmatchr
+- r-msigdbr
+- r-mus.musculus
+- r-projectr
+- r-rgreat
+- r-stringr
+- r-tfbstools
+- r-tidyverse
+update_on:
+- source: rpkgs
+  pkgname: ATACCoGAPS
+  repo: bioc
+  md5: true
+- alias: r
