@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-fastica
+- r-ggplot2
+- r-go.db
+- r-graph
+- r-org.hs.eg.db
+- r-pheatmap
+- r-rfast
+- r-sm
+- r-summarizedexperiment
+- r-topgo
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: consICA
+  repo: bioc
+  md5: true
+- alias: r
