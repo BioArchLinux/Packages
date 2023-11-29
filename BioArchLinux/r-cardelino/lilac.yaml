@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-combinat
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggtree
+- r-matrixstats
+- r-pheatmap
+- r-s4vectors
+- r-snpstats
+- r-variantannotation
+- r-vcfr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: cardelino
+  repo: bioc
+  md5: true
+- alias: r
