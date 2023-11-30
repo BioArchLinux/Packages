@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-cowplot
+- r-data.table
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-gtools
+- r-interactionset
+- r-multihiccompare
+- r-pbapply
+- r-rcpp
+- r-s4vectors
+- r-summarizedexperiment
+- r-zlibbioc
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: HiCDOC
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
