@@ -1,21 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-- r-ggforce
 - r-ggplot2
 - r-ggridges
-- r-ggstance
 - r-labelled
-- r-magrittr
 - r-mosaiccore
 - r-rlang
 - r-scales
 - r-stringr
 - r-tibble
 update_on:
-- regex: ggformula_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggformula
+- source: rpkgs
+  pkgname: ggformula
+  repo: cran
+  md5: true
 - alias: r
