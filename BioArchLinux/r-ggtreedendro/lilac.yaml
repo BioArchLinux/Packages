@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-ggtree
+- r-tidytree
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ggtreeDendro
+  repo: bioc
+  md5: true
+- alias: r
