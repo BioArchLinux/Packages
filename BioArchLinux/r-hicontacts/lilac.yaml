@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocio
+- r-biocparallel
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggrastr
+- r-hicexperiment
+- r-interactionset
+- r-iranges
+- r-readr
+- r-rspectra
+- r-s4vectors
+- r-scales
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-bsgenome.scerevisiae.ucsc.saccer3
+- r-hicontactsdata
+- r-rfast
+- r-testthat
+- r-wgcna
+update_on:
+- source: rpkgs
+  pkgname: HiContacts
+  repo: bioc
+  md5: true
+- alias: r
