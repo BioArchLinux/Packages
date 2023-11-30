@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-analogue
+- r-coop
+- r-diptest
+- r-fastcluster
+- r-fcps
+- r-fpc
+- r-ggplot2
+- r-ggplotify
+- r-ggpubr
+- r-pheatmap
+- r-proxy
+- r-psych
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+repo_makedepends:
+- r-rcpp
+update_on:
+- source: rpkgs
+  pkgname: FuseSOM
+  repo: bioc
+  md5: true
+- alias: r

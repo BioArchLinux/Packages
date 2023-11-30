@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-datavisualizations
+- r-ggplot2
+- r-mclust
+update_on:
+- source: rpkgs
+  pkgname: FCPS
+  repo: cran
+  md5: true
+- alias: r
