@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bamsignals
+- r-biocbaseutils
+- r-biocgenerics
+- r-genomicalignments
+- r-genomicfeatures
+- r-genomicranges
+- r-iranges
+- r-rsamtools
+- r-s4vectors
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: DNAfusion
+  repo: bioc
+  md5: true
+- alias: r
