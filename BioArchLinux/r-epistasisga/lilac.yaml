@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-batchtools
+- r-bigmemory
+- r-biocparallel
+- r-data.table
+- r-ggplot2
+- r-igraph
+- r-matrixstats
+- r-qgraph
+repo_makedepends:
+- r-bh
+- r-rcpp
+- r-rcpparmadillo
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: epistasisGA
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
