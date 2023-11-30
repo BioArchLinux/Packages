@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-data.table
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-iranges
+- r-numbers
+- r-s4vectors
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: GenomAutomorphism
+  repo: bioc
+  md5: true
+- alias: r
