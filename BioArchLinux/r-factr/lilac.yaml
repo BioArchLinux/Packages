@@ -1,0 +1,38 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-crayon
+- r-data.table
+- r-dplyr
+- r-drawproteins
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-pbapply
+- r-purrr
+- r-rcurl
+- r-rlang
+- r-rtracklayer
+- r-s4vectors
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-wiggleplotr
+- r-xml
+repo_makedepends:
+- r-annotationhub
+- r-bsgenome.mmusculus.ucsc.mm10
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: factR
+  repo: bioc
+  md5: true
+- alias: r
