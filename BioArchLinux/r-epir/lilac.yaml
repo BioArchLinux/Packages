@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biasedurn
 - r-flextable
@@ -11,7 +11,8 @@ repo_depends:
 - r-sf
 - r-zoo
 update_on:
-- regex: epiR_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=epiR
+- source: rpkgs
+  pkgname: epiR
+  repo: cran
+  md5: true
 - alias: r
