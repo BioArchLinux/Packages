@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-biobase
+- r-bit64
+- r-data.table
+- r-digest
+- r-glue
+- r-httr
+- r-jsonlite
+- r-lubridate
+- r-magrittr
+- r-memoise
+- r-rappdirs
+- r-rlang
+- r-s4vectors
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-microbenchmark
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gemma.R
+  repo: bioc
+  md5: true
+- alias: r
