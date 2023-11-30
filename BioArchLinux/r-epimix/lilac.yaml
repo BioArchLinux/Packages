@@ -1,0 +1,46 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biobase
+- r-biomart
+- r-data.table
+- r-doparallel
+- r-dosnow
+- r-downloader
+- r-dplyr
+- r-elmer.data
+- r-epimix.data
+- r-experimenthub
+- r-foreach
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-impute
+- r-iranges
+- r-limma
+- r-plyr
+- r-progress
+- r-r.matlab
+- r-rcolorbrewer
+- r-rcurl
+- r-rlang
+- r-rpmm
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-biocgenerics
+- r-runit
+- r-sesamedata
+update_on:
+- source: rpkgs
+  pkgname: EpiMix
+  repo: bioc
+  md5: true
+- alias: r
