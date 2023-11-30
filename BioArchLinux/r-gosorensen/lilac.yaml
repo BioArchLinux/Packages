@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-clusterprofiler
+- r-go.db
+- r-goprofiles
+- r-org.hs.eg.db
+- r-stringr
+update_on:
+- source: rpkgs
+  pkgname: goSorensen
+  repo: bioc
+  md5: true
+- alias: r
