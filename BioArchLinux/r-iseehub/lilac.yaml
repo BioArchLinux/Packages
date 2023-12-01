@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biocmanager
+- r-dt
+- r-experimenthub
+- r-isee
+- r-rintrojs
+- r-s4vectors
+- r-shiny
+- r-shinydashboard
+- r-shinyjs
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-nullrangesdata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: iSEEhub
+  repo: bioc
+  md5: true
+- alias: r
