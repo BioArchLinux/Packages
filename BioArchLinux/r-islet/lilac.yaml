@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-abind
+- r-biocgenerics
+- r-biocparallel
+- r-lme4
+- r-nnls
+- r-purrr
+- r-summarizedexperiment
+repo_makedepends:
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: ISLET
+  repo: bioc
+  md5: true
+- alias: r
