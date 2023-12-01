@@ -1,0 +1,35 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-bsgenome
+- r-bsgenome.hsapiens.ucsc.hg19
+- r-bsgenome.hsapiens.ucsc.hg38
+- r-changepoint
+- r-changepoint.np
+- r-checkmate
+- r-dplyr
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-ggtext
+- r-iranges
+- r-maftools
+- r-plyranges
+- r-rdpack
+- r-rlang
+- r-s4vectors
+- r-tibble
+- r-tidyr
+- r-variantannotation
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: katdetectr
+  repo: bioc
+  md5: true
+- alias: r

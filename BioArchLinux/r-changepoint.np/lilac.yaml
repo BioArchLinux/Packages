@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-changepoint
+- r-rdpack
+- r-zoo
+update_on:
+- source: rpkgs
+  pkgname: changepoint.np
+  repo: cran
+  md5: true
+- alias: r
