@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-dplyr
+- r-dt
+- r-ggplot2
+- r-ggrepel
+- r-gplots
+- r-hmisc
+- r-htmltools
+- r-marray
+- r-msstats
+- r-msstatsconvert
+- r-msstatsptm
+- r-msstatstmt
+- r-readxl
+- r-shiny
+- r-shinybs
+- r-shinybusy
+- r-shinyjs
+- r-tidyr
+- r-uuid
+update_on:
+- source: rpkgs
+  pkgname: MSstatsShiny
+  repo: bioc
+  md5: true
+- alias: r
