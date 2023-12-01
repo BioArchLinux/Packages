@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-clusterprofiler
+- r-ggplot2
+- r-ggrepel
+- r-pheatmap
+- r-rcy3
+- r-recordlinkage
+- r-stringr
+update_on:
+- source: rpkgs
+  pkgname: MetaPhOR
+  repo: bioc
+  md5: true
+- alias: r
