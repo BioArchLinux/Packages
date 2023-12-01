@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biobase
+- r-data.table
+- r-deseq2
+- r-dplyr
+- r-edaseq
+- r-edger
+- r-experimenthub
+- r-foreach
+- r-ggplot2
+- r-gsva
+- r-htmlwidgets
+- r-httr
+- r-limma
+- r-magrittr
+- r-octad.db
+- r-plotly
+- r-reshape2
+- r-rfast
+- r-rhdf5
+- r-ruvseq
+- r-s4vectors
+update_on:
+- source: rpkgs
+  pkgname: octad
+  repo: bioc
+  md5: true
+- alias: r
