@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-airway
+- r-delayedarray
+- r-delayedmatrixstats
+- r-deseq2
+- r-netactivitydata
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: NetActivity
+  repo: bioc
+  md5: true
+- alias: r
