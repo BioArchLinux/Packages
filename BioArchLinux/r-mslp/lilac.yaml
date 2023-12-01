@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-dorng
+- r-fmsb
+- r-foreach
+- r-magrittr
+- r-org.hs.eg.db
+- r-proc
+- r-randomforest
+- r-rankprod
+repo_makedepends:
+- r-tinytest
+update_on:
+- source: rpkgs
+  pkgname: mslp
+  repo: bioc
+  md5: true
+- alias: r
