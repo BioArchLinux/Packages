@@ -2,10 +2,10 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=rJava
-_pkgver=1.0-6
+_pkgver=1.0-10
 pkgname=r-${_pkgname,,}
-pkgver=1.0.6
-pkgrel=17
+pkgver=1.0.10
+pkgrel=1
 pkgdesc='Low-Level R to Java Interface'
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,7 +22,7 @@ makedepends=(
   patchelf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e290d0493317a5d6c452793e92baa914e37ef03faef19b2e436329b4ec8658c6')
+sha256sums=('b5826818e5c5819d8117f692073e5bd3cc93320a6d6c2ccc34eb5c96b193396b')
 
 
 package() {
