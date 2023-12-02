@@ -1,35 +1,28 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=R2HTML
 _pkgver=2.3.3
 pkgname=r-${_pkgname,,}
-pkgver=2.3.3
+pkgver=${_pkgver//-/.}
 pkgrel=7
-pkgdesc='HTML Exportation for R Objects'
-arch=('any')
+pkgdesc="HTML Exportation for R Objects"
+arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=(GPL)
 depends=(
   r
 )
-optdepends=(
-  r-boot
-  r-cluster
-  r-nlme
-  r-nnet
-  r-rpart
-  r-splines
-  r-survival
-)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('0c5bf024dcf198df199aea7135f325dd')
 sha256sums=('4a7e181a1c444f83ccac7eb8b19962de08dd649ae5b9868813d008196e4e0f8b')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p build
+  R CMD INSTALL "$_pkgname" -l build
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
