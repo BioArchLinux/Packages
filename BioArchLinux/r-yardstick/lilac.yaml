@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-generics
+- r-hardhat
+- r-lifecycle
+- r-rlang
+- r-tibble
+- r-tidyselect
+- r-vctrs
+repo_makedepends:
+- r-ggplot2
+- r-testthat
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: yardstick
+  repo: cran
+  md5: true
+- alias: r

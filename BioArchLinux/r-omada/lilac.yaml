@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-clvalid
+- r-dicer
+- r-dplyr
+- r-fpc
+- r-genieclust
+- r-ggplot2
+- r-glmnet
+- r-kernlab
+- r-pdfcluster
+- r-rcpp
+- r-reshape
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: omada
+  repo: bioc
+  md5: true
+- alias: r

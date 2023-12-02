@@ -1,0 +1,42 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-abind
+- r-assertthat
+- r-clue
+- r-clustersim
+- r-clv
+- r-clvalid
+- r-dplyr
+- r-ggplot2
+- r-infotheo
+- r-klar
+- r-magrittr
+- r-mclust
+- r-nmf
+- r-purrr
+- r-rankaggreg
+- r-rcpp
+- r-stringr
+- r-tidyr
+- r-yardstick
+repo_makedepends:
+- r-apcluster
+- r-blockcluster
+- r-dbscan
+- r-e1071
+- r-kernlab
+- r-kohonen
+- r-mixedclust
+- r-polca
+- r-rtsne
+- r-sigclust
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: diceR
+  repo: cran
+  md5: true
+- alias: r
