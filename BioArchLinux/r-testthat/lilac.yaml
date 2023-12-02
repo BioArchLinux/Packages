@@ -8,7 +8,6 @@ repo_depends:
 - r-cli
 - r-desc
 - r-digest
-- r-ellipsis
 - r-evaluate
 - r-jsonlite
 - r-lifecycle

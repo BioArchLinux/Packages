@@ -8,10 +8,10 @@
 # Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=testthat
-_pkgver=3.2.0
+_pkgver=3.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Unit Testing for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,7 +22,6 @@ depends=(
   r-cli
   r-desc
   r-digest
-  r-ellipsis
   r-evaluate
   r-jsonlite
   r-lifecycle
@@ -49,8 +48,8 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('27df4556adf7bc288e1b93f853a2fc58')
-sha256sums=('5b0be53295fe509042e48711df091f7021e23512d1339a4f6f6d9f36d145650e')
+md5sums=('cb9ddcf70c6b030743c9685e0f104f67')
+sha256sums=('1d980e611b01c194007639a100c3ddaeaab77786d32f81680f497f99e60748ad')
 
 build() {
   mkdir -p build
