@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Propagating Uncertainty in Microarray Analysis(including Affymetrix tranditional 3' arrays and exon arrays and Human Transcriptome Array 2.0)"
 arch=(x86_64)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=(LGPL)
+license=('LGPL-2.0-or-later')
 depends=(
   r-affy
   r-affyio

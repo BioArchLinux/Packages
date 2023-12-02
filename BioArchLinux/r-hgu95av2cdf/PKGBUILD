@@ -9,7 +9,7 @@ pkgrel=4
 pkgdesc="hgu95av2cdf"
 arch=(any)
 url="https://bioconductor.org/packages/${_pkgname}"
-license=(LGPL)
+license=('LGPL-2.0-or-later')
 depends=(
   r-annotationdbi
 )

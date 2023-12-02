@@ -204,6 +204,7 @@ license_map = {
     "GPL-2": "GPL2",
     "GPL-2 | GPL-3": "GPL",
     "GPL-3": "GPL3",
+    "LGPL": "LGPL-2.0-or-later",
     "LGPL (>= 2)": "LGPL",
     "LGPL (>= 2.1)": "LGPL",
     "LGPL-2": "LGPL2.1",
