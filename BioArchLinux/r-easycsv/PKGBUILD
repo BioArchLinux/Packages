@@ -4,7 +4,7 @@ _pkgname=easycsv
 _pkgver=1.0.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Load Multiple 'csv' and 'txt' Tables"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
