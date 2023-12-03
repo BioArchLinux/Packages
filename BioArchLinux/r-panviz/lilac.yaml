@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-colorspace
+- r-data.table
+- r-dplyr
+- r-easycsv
+- r-futile.logger
+- r-igraph
+- r-magrittr
+- r-rcolorbrewer
+- r-rentrez
+- r-rlang
+- r-stringr
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: PanViz
+  repo: bioc
+  md5: true
+- alias: r
