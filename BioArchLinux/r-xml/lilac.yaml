@@ -13,3 +13,5 @@ update_on:
   repo: core
   provided: libxml2.so
   strip_release: true
+- source: manual
+  manual: 1
