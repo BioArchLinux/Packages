@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-biodb
+- r-biodbchebi
+- r-data.table
+- r-futile.logger
+- r-ggplot2
+- r-ggrepel
+- r-htmlwidgets
+- r-igraph
+- r-limma
+- r-multiassayexperiment
+- r-multidataset
+- r-plotly
+- r-pmcmrplus
+- r-ranger
+- r-rcolorbrewer
+- r-ropls
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-venndiagram
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: phenomis
+  repo: bioc
+  md5: true
+- alias: r

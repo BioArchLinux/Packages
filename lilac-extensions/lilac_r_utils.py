@@ -195,6 +195,7 @@ license_map = {
     "BSD_3_clause + file LICENSE": "BSD",
     "BSL-1.0": "Boost",
     "CC0": "CC0-1.0",
+    "CeCILL": "CECILL-2.0",
     "EPL": "EPL",
     "GPL": "GPL",
     "GPL (>= 2)": "GPL",
