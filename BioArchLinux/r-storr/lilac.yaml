@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-digest
+- r-r6
+repo_makedepends:
+- r-dbi
+- r-mockr
+- r-rpostgres
+- r-rsqlite
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: storr
+  repo: cran
+  md5: true
+- alias: r
