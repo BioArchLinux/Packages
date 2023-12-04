@@ -15,6 +15,9 @@ license=(MIT)
 depends=(
   r-rlang
 )
+checkdepends=(
+  r-testthat
+)
 optdepends=(
   r-covr
   r-testthat
@@ -26,6 +29,11 @@ sha256sums=('a90266e5eb59c7f419774d5c6d6bd5e09701a26c9218c5933c9bce6765aa1558')
 build() {
   mkdir -p build
   R CMD INSTALL "$_pkgname" -l build
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
 
 package() {
