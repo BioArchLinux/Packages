@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ape
+- r-future
+- r-future.apply
+- r-ggplot2
+- r-ggtree
+- r-patchwork
+- r-proxy
+- r-reshape2
+- r-scales
+- r-seurat
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scBubbletree
+  repo: bioc
+  md5: true
+- alias: r
