@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-ebseq
+- r-ggplot2
+- r-mclust
+- r-oscope
+- r-rcpp
+- r-rcppeigen
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-bh
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scDDboost
+  repo: bioc
+  md5: true
+- alias: r
