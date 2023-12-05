@@ -6,6 +6,7 @@ repo_depends:
 - r-bbmle
 - r-desolve
 - r-fastghquad
+- r-mvtnorm
 - r-rcpp
 repo_makedepends:
 - r-bh
