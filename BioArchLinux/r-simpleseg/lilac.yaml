@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-cytomapper
+- r-ebimage
+- r-s4vectors
+- r-spatstat.geom
+- r-summarizedexperiment
+- r-terra
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: simpleSeg
+  repo: bioc
+  md5: true
+- alias: r
