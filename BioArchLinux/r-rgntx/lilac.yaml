@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-regioner
+- r-s4vectors
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: RgnTX
+  repo: bioc
+  md5: true
+- alias: r
