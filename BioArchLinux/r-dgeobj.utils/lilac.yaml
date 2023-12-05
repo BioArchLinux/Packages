@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-dgeobj
+- r-dplyr
+- r-stringr
+repo_makedepends:
+- r-biomart
+- r-canvasxpress
+- r-edger
+- r-ggplot2
+- r-ihw
+- r-limma
+- r-qvalue
+- r-rnaseqpower
+- r-statmod
+- r-sva
+- r-testthat
+- r-zfpkm
+update_on:
+- source: rpkgs
+  pkgname: DGEobj.utils
+  repo: cran
+  md5: true
+- alias: r

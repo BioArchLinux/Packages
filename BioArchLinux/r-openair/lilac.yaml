@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-hexbin
+- r-latticeextra
+- r-lubridate
+- r-mapproj
+- r-purrr
+- r-rcpp
+- r-readr
+- r-rlang
+- r-tibble
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: openair
+  repo: cran
+  md5: true
+- alias: r

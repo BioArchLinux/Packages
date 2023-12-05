@@ -1,0 +1,39 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-biocgenerics
+- r-complexheatmap
+- r-consensusov
+- r-cowplot
+- r-dgeobj.utils
+- r-dplyr
+- r-ensembldb
+- r-ggplot2
+- r-ggridges
+- r-gsva
+- r-iranges
+- r-magrittr
+- r-matrixstats
+- r-maxstat
+- r-openair
+- r-org.hs.eg.db
+- r-patchwork
+- r-rcolorbrewer
+- r-spatialexperiment
+- r-summarizedexperiment
+- r-survminer
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+- r-viridis
+repo_makedepends:
+- r-edger
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: signifinder
+  repo: bioc
+  md5: true
+- alias: r

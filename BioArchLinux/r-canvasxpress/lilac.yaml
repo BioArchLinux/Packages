@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-htmltools
+- r-htmlwidgets
+- r-httr
+- r-jsonlite
+repo_makedepends:
+- r-canvasxpress.data
+- r-dplyr
+- r-ggplot2
+- r-readr
+- r-shiny
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: canvasXpress
+  repo: cran
+  md5: true
+- alias: r
