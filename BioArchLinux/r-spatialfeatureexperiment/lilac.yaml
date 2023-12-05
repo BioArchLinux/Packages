@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocneighbors
+- r-biocparallel
+- r-rjson
+- r-rlang
+- r-s4vectors
+- r-sf
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-spdep
+- r-summarizedexperiment
+- r-terra
+repo_makedepends:
+- r-dropletutils
+- r-sfarrow
+- r-sfedata
+- r-testthat
+- r-vroom
+update_on:
+- source: rpkgs
+  pkgname: SpatialFeatureExperiment
+  repo: bioc
+  md5: true
+- alias: r

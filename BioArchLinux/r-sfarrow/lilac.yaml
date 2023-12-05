@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-arrow
+- r-dplyr
+- r-jsonlite
+- r-sf
+update_on:
+- source: rpkgs
+  pkgname: sfarrow
+  repo: cran
+  md5: true
+- alias: r
