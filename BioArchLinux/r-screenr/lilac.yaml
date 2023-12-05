@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-edger
+- r-ggplot2
+- r-ggvenn
+- r-limma
+- r-magrittr
+- r-patchwork
+- r-purrr
+- r-rlang
+- r-scales
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ScreenR
+  repo: bioc
+  md5: true
+- alias: r
