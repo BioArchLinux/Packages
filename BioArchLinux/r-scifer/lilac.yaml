@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biostrings
+- r-data.table
+- r-decipher
+- r-dplyr
+- r-flowcore
+- r-ggplot2
+- r-gridextra
+- r-kableextra
+- r-knitr
+- r-plyr
+- r-rlang
+- r-rmarkdown
+- r-sangerseqr
+- r-scales
+- r-stringr
+- r-tibble
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scifer
+  repo: bioc
+  md5: true
+- alias: r
