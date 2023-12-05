@@ -1,0 +1,34 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-biocstyle
+- r-coda
+- r-cowplot
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-logitnorm
+- r-matrixstats
+- r-rcpp
+- r-rcppparallel
+- r-rstan
+- r-rstantools
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-vgam
+- r-viridis
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-stanheaders
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: scMET
+  repo: bioc
+  md5: true
+- alias: r
