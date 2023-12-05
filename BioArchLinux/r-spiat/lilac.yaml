@@ -1,0 +1,38 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-apcluster
+- r-dbscan
+- r-dittoseq
+- r-dplyr
+- r-ggplot2
+- r-gridextra
+- r-gtools
+- r-mmand
+- r-pracma
+- r-rann
+- r-raster
+- r-reshape2
+- r-rlang
+- r-sp
+- r-spatialexperiment
+- r-spatstat.explore
+- r-spatstat.geom
+- r-summarizedexperiment
+- r-tibble
+- r-vroom
+repo_makedepends:
+- r-alphahull
+- r-complexheatmap
+- r-elsa
+- r-plotly
+- r-rtsne
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: SPIAT
+  repo: bioc
+  md5: true
+- alias: r
