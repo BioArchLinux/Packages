@@ -1,0 +1,33 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-concaveman
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-limma
+- r-magrittr
+- r-plotly
+- r-purrr
+- r-ranger
+- r-s4vectors
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-spatstat.explore
+- r-spatstat.geom
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: Statial
+  repo: bioc
+  md5: true
+- alias: r
