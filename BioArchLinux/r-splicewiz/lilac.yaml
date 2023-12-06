@@ -1,0 +1,63 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biocfilecache
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-data.table
+- r-delayedarray
+- r-delayedmatrixstats
+- r-dt
+- r-fst
+- r-genefilter
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-hdf5array
+- r-heatmaply
+- r-htmltools
+- r-iranges
+- r-magrittr
+- r-matrixstats
+- r-nxtirfdata
+- r-ompbam
+- r-patchwork
+- r-pheatmap
+- r-plotly
+- r-progress
+- r-r.utils
+- r-rcolorbrewer
+- r-rcpp
+- r-rhandsontable
+- r-rhdf5
+- r-rtracklayer
+- r-rvest
+- r-s4vectors
+- r-scales
+- r-shiny
+- r-shinydashboard
+- r-shinyfiles
+- r-shinywidgets
+- r-stringi
+- r-summarizedexperiment
+repo_makedepends:
+- r-rcppprogress
+- r-zlibbioc
+- r-rsubread
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: SpliceWiz
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
