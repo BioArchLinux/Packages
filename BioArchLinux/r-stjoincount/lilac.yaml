@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-magrittr
+- r-pheatmap
+- r-raster
+- r-seurat
+- r-sp
+- r-spatialexperiment
+- r-spdep
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: stJoincount
+  repo: bioc
+  md5: true
+- alias: r
