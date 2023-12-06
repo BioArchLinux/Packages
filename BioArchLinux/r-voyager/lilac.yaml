@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-bluster
+- r-ggnewscale
+- r-ggplot2
+- r-lifecycle
+- r-matrixstats
+- r-patchwork
+- r-rlang
+- r-rspectra
+- r-s4vectors
+- r-scales
+- r-scico
+- r-sf
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-spatialfeatureexperiment
+- r-spdep
+- r-summarizedexperiment
+- r-terra
+repo_makedepends:
+- r-automap
+- r-dropletutils
+- r-ggh4x
+- r-gstat
+- r-hexbin
+- r-scater
+- r-scattermore
+- r-scran
+- r-sfedata
+- r-testthat
+- r-vdiffr
+- r-vroom
+update_on:
+- source: rpkgs
+  pkgname: Voyager
+  repo: bioc
+  md5: true
+- alias: r
