@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocbaseutils
+- r-biocgenerics
+- r-biocio
+- r-genomeinfodb
+- r-genomicranges
+- r-matrixgenerics
+- r-r.utils
+- r-rcurl
+- r-readr
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-hdf5array
+- r-raggedexperiment
+- r-rhdf5
+- r-rsamtools
+- r-tinytest
+update_on:
+- source: rpkgs
+  pkgname: TENxIO
+  repo: bioc
+  md5: true
+- alias: r
