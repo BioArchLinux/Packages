@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-cowplot
+- r-ggplot2
+- r-gridextra
+- r-iranges
+- r-rcolorbrewer
+- r-rcpp
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-breakaway
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: VDJdive
+  repo: bioc
+  md5: true
+- alias: r
