@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-plot3d
+- r-rcpp
+- r-s4vectors
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: ASURAT
+  repo: bioc
+  md5: true
+- alias: r
