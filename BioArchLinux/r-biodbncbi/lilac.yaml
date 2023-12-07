@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biodb
+- r-chk
+- r-r6
+- r-xml
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: biodbNcbi
+  repo: bioc
+  md5: true
+- alias: r
