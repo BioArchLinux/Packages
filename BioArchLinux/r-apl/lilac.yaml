@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-ggrepel
+- r-magrittr
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-plotly
+- r-reticulate
+- r-rlang
+- r-seurat
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-topgo
+- r-viridislite
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: APL
+  repo: bioc
+  md5: true
+- alias: r
