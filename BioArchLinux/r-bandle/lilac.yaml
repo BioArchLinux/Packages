@@ -1,0 +1,42 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-biocparallel
+- r-biocstyle
+- r-circlize
+- r-dplyr
+- r-ggalluvial
+- r-ggplot2
+- r-ggrepel
+- r-knitr
+- r-lbfgs
+- r-msnbase
+- r-plyr
+- r-proloc
+- r-prolocdata
+- r-rcpp
+- r-rlang
+- r-robustbase
+- r-s4vectors
+- r-tidyr
+repo_makedepends:
+- r-bh
+- r-rcpparmadillo
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: bandle
+  repo: bioc
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

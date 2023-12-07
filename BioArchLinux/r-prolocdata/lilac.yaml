@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-msnbase
+repo_makedepends:
+- r-summarizedexperiment
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: pRolocdata
+  repo: bioc-data-experiment
+  md5: true
+- alias: r
