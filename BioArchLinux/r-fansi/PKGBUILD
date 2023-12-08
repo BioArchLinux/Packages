@@ -6,10 +6,10 @@
 # Contributor: Ilja Kocken <i.j.kocken@uu.nl>
 
 _pkgname=fansi
-_pkgver=1.0.5
+_pkgver=1.0.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="ANSI Control Sequence Aware String Functions"
 arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -26,8 +26,8 @@ optdepends=(
   r-unitizer
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d1a4e4d70abf0bc079c2a20763b765bf')
-sha256sums=('c616ce357fbfd43253c366da578549a38066459058c22fb99c82fc05992e23f6')
+md5sums=('27eb3b066918811ce7080f45b18eda04')
+sha256sums=('ea9dc690dfe50a7fad7c5eb863c157d70385512173574c56f4253b6dfe431863')
 
 build() {
   mkdir -p build
