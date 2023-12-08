@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-genomicranges
+- r-iranges
+- r-s4vectors
+- r-stringr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: crisprBase
+  repo: bioc
+  md5: true
+- alias: r
