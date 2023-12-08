@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-circlize
+- r-dplyr
+- r-foreach
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-gviz
+- r-iranges
+- r-plotly
+- r-plyr
+- r-rcolorbrewer
+- r-reshape2
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: comapr
+  repo: bioc
+  md5: true
+- alias: r
