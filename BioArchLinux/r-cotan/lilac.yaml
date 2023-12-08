@@ -1,0 +1,38 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-circlize
+- r-complexheatmap
+- r-dendextend
+- r-dplyr
+- r-factoextra
+- r-ggplot2
+- r-ggrepel
+- r-ggthemes
+- r-irlba
+- r-paralleldist
+- r-parallelly
+- r-plyr
+- r-rcolorbrewer
+- r-rfast
+- r-rlang
+- r-scales
+- r-seurat
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-umap
+- r-withr
+- r-zeallot
+repo_makedepends:
+- r-r.utils
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: COTAN
+  repo: bioc
+  md5: true
+- alias: r
