@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-genomicranges
+- r-ggbio
+- r-ggforce
+- r-ggplot2
+- r-magrittr
+- r-nbclust
+- r-plyranges
+- r-stringr
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: BOBaFIT
+  repo: bioc
+  md5: true
+- alias: r
