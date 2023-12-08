@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biocparallel
+- r-bumphunter
+- r-experimenthub
+- r-genomicranges
+- r-iranges
+- r-lmertest
+repo_makedepends:
+- r-illuminahumanmethylation450kanno.ilmn12.hg19
+- r-sesamedata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: coMethDMR
+  repo: bioc
+  md5: true
+- alias: r
