@@ -8,6 +8,7 @@ repo_depends:
 - r-dbi
 - r-memoise
 - r-pkgconfig
+- r-rlang
 repo_makedepends:
 - r-cpp11
 - r-plogr
