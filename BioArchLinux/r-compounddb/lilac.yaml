@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationfilter
+- r-biobase
+- r-biocgenerics
+- r-biocparallel
+- r-chemminer
+- r-dbi
+- r-dbplyr
+- r-dplyr
+- r-iranges
+- r-jsonlite
+- r-metabocoreutils
+- r-mscoreutils
+- r-protgenerics
+- r-rsqlite
+- r-s4vectors
+- r-spectra
+- r-tibble
+- r-xml2
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: CompoundDb
+  repo: bioc
+  md5: true
+- alias: r
