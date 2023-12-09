@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-flowcore
+- r-gplots
+- r-matrixstats
+update_on:
+- source: rpkgs
+  pkgname: cytoMEM
+  repo: bioc
+  md5: true
+- alias: r
