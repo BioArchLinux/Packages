@@ -3,7 +3,7 @@
 
 pkgname=jellyfish
 pkgver=2.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast multi-threaded k-mer counter. https://doi.org/10.1093/bioinformatics/btr011"
 
 # Note: according to the README, "Support for 32-bits platform has not been
@@ -14,6 +14,8 @@ license=("GPL3")
 depends=(
         'python'
         'htslib'
+        'glibc'
+        'gcc-libs'
         )
 makedepends=(
         'perl'
@@ -28,11 +30,17 @@ sha256sums=('ee032b57257948ca0f0610883099267572c91a635eecbd88ae5d8974c2430fcd')
 
 build() {
     cd "${pkgname}-${pkgver}"
-    ./configure --prefix=/usr --enable-htslib --enable-python-binding --enable-perl-binding
+    unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
+    export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL=--skipdeps
+    autoupdate
+    autoreconf -i
+    export PERL_EXT_LIB=$(perl -V:vendorarch | cut -d"'" -f2 )
+    ./configure --prefix=/usr --enable-htslib --enable-python-binding=sys --enable-perl-binding
     make
 }
 
 package() {
     cd "${pkgname}-${pkgver}"
-    make DESTDIR=${pkgdir} install
+    unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
+  make  DESTDIR=$pkgdir install
 }
