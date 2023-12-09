@@ -1,0 +1,50 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocio
+- r-biocparallel
+- r-broom
+- r-complexupset
+- r-csaw
+- r-dplyr
+- r-edger
+- r-enrichedheatmap
+- r-forcats
+- r-genomeinfodb
+- r-genomicinteractions
+- r-genomicranges
+- r-ggforce
+- r-ggplot2
+- r-ggrepel
+- r-ggside
+- r-glue
+- r-gviz
+- r-interactionset
+- r-iranges
+- r-limma
+- r-matrixstats
+- r-patchwork
+- r-rcolorbrewer
+- r-rlang
+- r-rsamtools
+- r-rtracklayer
+- r-s4vectors
+- r-scales
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-vctrs
+- r-venndiagram
+repo_makedepends:
+- r-harmonicmeanp
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: extraChIPs
+  repo: bioc
+  md5: true
+- alias: r
