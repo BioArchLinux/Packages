@@ -1,0 +1,48 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-annotationhub
+- r-biocgenerics
+- r-biocparallel
+- r-biomart
+- r-bumphunter
+- r-ensembldb
+- r-epimutacionsdata
+- r-experimenthub
+- r-genomeinfodb
+- r-genomicfeatures
+- r-genomicranges
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-gviz
+- r-homo.sapiens
+- r-illuminahumanmethylation450kanno.ilmn12.hg19
+- r-illuminahumanmethylation450kmanifest
+- r-illuminahumanmethylationepicanno.ilm10b2.hg19
+- r-illuminahumanmethylationepicmanifest
+- r-iranges
+- r-isotree
+- r-matrixstats
+- r-minfi
+- r-purrr
+- r-reshape2
+- r-robustbase
+- r-rtracklayer
+- r-s4vectors
+- r-summarizedexperiment
+- r-tibble
+- r-txdb.hsapiens.ucsc.hg18.knowngene
+- r-txdb.hsapiens.ucsc.hg19.knowngene
+- r-txdb.hsapiens.ucsc.hg38.knowngene
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: epimutacions
+  repo: bioc
+  md5: true
+- alias: r
