@@ -1,0 +1,8 @@
+--- jellyfish-2.3.1/tests/small_mers.sh	2019-08-23 23:17:31.000000000 +0530
++++ jellyfish-2.3.1.new/tests/small_mers.sh	2023-12-10 17:16:12.697358874 +0530
+@@ -1,4 +1,4 @@
+-#! /bin/sh
++#! /bin/bash
+ 
+ mkdir -p tests-data; cd tests-data
+ . ../compat.sh
