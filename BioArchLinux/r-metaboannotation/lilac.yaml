@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biocgenerics
+- r-biocparallel
+- r-compounddb
+- r-metabocoreutils
+- r-mscoreutils
+- r-protgenerics
+- r-qfeatures
+- r-s4vectors
+- r-spectra
+- r-summarizedexperiment
+repo_makedepends:
+- r-msdata
+- r-mzr
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MetaboAnnotation
+  repo: bioc
+  md5: true
+- alias: r
