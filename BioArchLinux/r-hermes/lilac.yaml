@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-biobase
+- r-biocgenerics
+- r-biomart
+- r-checkmate
+- r-circlize
+- r-complexheatmap
+- r-deseq2
+- r-dplyr
+- r-edger
+- r-envstats
+- r-forcats
+- r-genomicranges
+- r-ggfortify
+- r-ggplot2
+- r-ggrepel
+- r-iranges
+- r-lifecycle
+- r-limma
+- r-magrittr
+- r-matrixstats
+- r-multiassayexperiment
+- r-purrr
+- r-r6
+- r-rdpack
+- r-rlang
+- r-s4vectors
+- r-summarizedexperiment
+- r-tidyr
+repo_makedepends:
+- r-testthat
+- r-vdiffr
+update_on:
+- source: rpkgs
+  pkgname: hermes
+  repo: bioc
+  md5: true
+- alias: r
