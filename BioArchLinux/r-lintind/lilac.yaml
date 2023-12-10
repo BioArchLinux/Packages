@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ape
+- r-biocgenerics
+- r-biostrings
+- r-cowplot
+- r-data.tree
+- r-dplyr
+- r-ggnewscale
+- r-ggplot2
+- r-ggtree
+- r-iranges
+- r-networkd3
+- r-pheatmap
+- r-purrr
+- r-reshape2
+- r-rlist
+- r-s4vectors
+- r-stringdist
+- r-stringr
+update_on:
+- source: rpkgs
+  pkgname: LinTInd
+  repo: bioc
+  md5: true
+- alias: r
