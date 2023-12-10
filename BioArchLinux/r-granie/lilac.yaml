@@ -1,0 +1,47 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-biomart
+- r-biostrings
+- r-checkmate
+- r-circlize
+- r-colorspace
+- r-complexheatmap
+- r-data.table
+- r-deseq2
+- r-dplyr
+- r-ensembldb
+- r-forcats
+- r-futile.logger
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gridextra
+- r-igraph
+- r-limma
+- r-magrittr
+- r-matrixstats
+- r-patchwork
+- r-progress
+- r-rcolorbrewer
+- r-readr
+- r-reshape2
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-topgo
+- r-viridis
+update_on:
+- source: rpkgs
+  pkgname: GRaNIE
+  repo: bioc
+  md5: true
+- alias: r
