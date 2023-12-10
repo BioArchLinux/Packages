@@ -5,12 +5,9 @@ maintainers:
 repo_depends:
 - r-callr
 - r-cli
-- r-crayon
 - r-desc
-- r-prettyunits
 - r-processx
 - r-r6
-- r-rprojroot
 update_on:
 - source: rpkgs
   pkgname: pkgbuild

@@ -5,10 +5,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=pkgbuild
-_pkgver=1.4.2
+_pkgver=1.4.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Find Tools Needed to Build R Packages"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -16,12 +16,9 @@ license=(MIT)
 depends=(
   r-callr
   r-cli
-  r-crayon
   r-desc
-  r-prettyunits
   r-processx
   r-r6
-  r-rprojroot
 )
 optdepends=(
   r-covr
@@ -34,8 +31,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b4a62e531fc8970dc28721d6d87cb036')
-sha256sums=('2334a245d75420b2adf9f217a6bc4a5f7faaa4244a6aac2b774b26f199fc82c5')
+md5sums=('1d992f117d74ace31716be49f6867c9a')
+sha256sums=('1583edb56c0afab6f99d0dd2235fd45999461f89e8ca50bc7c0b74211f109165')
 
 build() {
   mkdir -p build
