@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-data.table
+- r-delayedarray
+- r-dynamictreecut
+- r-ff
+- r-logging
+- r-maaslin2
+- r-plyr
+- r-psych
+- r-rcurl
+- r-rjsonio
+- r-summarizedexperiment
+- r-wgcna
+- r-xml2
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: Macarron
+  repo: bioc
+  md5: true
+- alias: r
