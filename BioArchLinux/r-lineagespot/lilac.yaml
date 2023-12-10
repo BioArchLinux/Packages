@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-data.table
+- r-httr
+- r-matrixgenerics
+- r-stringr
+- r-summarizedexperiment
+- r-variantannotation
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: lineagespot
+  repo: bioc
+  md5: true
+- alias: r
