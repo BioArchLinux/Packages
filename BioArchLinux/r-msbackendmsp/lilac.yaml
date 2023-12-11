@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-iranges
+- r-mscoreutils
+- r-s4vectors
+- r-spectra
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MsBackendMsp
+  repo: bioc
+  md5: true
+- alias: r
