@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationhub
+- r-assertthat
+- r-data.table
+- r-dt
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-gviz
+- r-iranges
+- r-rtracklayer
+- r-s4vectors
+- r-shiny
+- r-shinybs
+- r-shinydashboard
+- r-shinyfiles
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: OGRE
+  repo: bioc
+  md5: true
+- alias: r
