@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-summarizedexperiment
+- r-sva
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: qsvaR
+  repo: bioc
+  md5: true
+- alias: r
