@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-metabocoreutils
+- r-msnbase
+- r-spectra
+- r-xcms
+repo_makedepends:
+- r-msdata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: MobilityTransformR
+  repo: bioc
+  md5: true
+- alias: r
