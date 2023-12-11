@@ -1,0 +1,40 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-assertthat
+- r-biobase
+- r-data.table
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-ggdendro
+- r-ggplot2
+- r-go.db
+- r-gostats
+- r-gplots
+- r-igraph
+- r-matrixcalc
+- r-matrixstats
+- r-org.hs.eg.db
+- r-pandar
+- r-penalized
+- r-rcy3
+- r-reshape
+- r-reshape2
+- r-reticulate
+- r-stringdb
+- r-tidyr
+- r-vegan
+- r-viridislite
+- r-yarn
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: netZooR
+  repo: bioc
+  md5: true
+- alias: r
