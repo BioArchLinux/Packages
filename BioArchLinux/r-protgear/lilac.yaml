@@ -1,0 +1,41 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-data.table
+- r-dplyr
+- r-factoextra
+- r-factominer
+- r-flexdashboard
+- r-genefilter
+- r-ggally
+- r-ggplot2
+- r-ggpubr
+- r-gtools
+- r-htmltools
+- r-kendall
+- r-knitr
+- r-limma
+- r-magrittr
+- r-pheatmap
+- r-plotly
+- r-plyr
+- r-purrr
+- r-readr
+- r-remotes
+- r-rlang
+- r-rmarkdown
+- r-shiny
+- r-shinydashboard
+- r-styler
+- r-tibble
+- r-tidyr
+- r-vsn
+update_on:
+- source: rpkgs
+  pkgname: protGear
+  repo: bioc
+  md5: true
+- alias: r
