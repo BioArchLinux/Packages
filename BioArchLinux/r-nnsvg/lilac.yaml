@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-brisc
+- r-matrixstats
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-scran
+- r-stexampledata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: nnSVG
+  repo: bioc
+  md5: true
+- alias: r
