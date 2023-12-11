@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-crayon
+- r-httr
+- r-rcurl
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: flatxml
+  repo: cran
+  md5: true
+- alias: r

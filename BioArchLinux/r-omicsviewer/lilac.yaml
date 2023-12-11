@@ -1,0 +1,41 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-beeswarm
+- r-biobase
+- r-curl
+- r-dt
+- r-fastmatch
+- r-fgsea
+- r-flatxml
+- r-ggplot2
+- r-ggseqlogo
+- r-htmlwidgets
+- r-httr
+- r-matrixstats
+- r-networkd3
+- r-openxlsx
+- r-plotly
+- r-psych
+- r-rcolorbrewer
+- r-reshape2
+- r-rocr
+- r-rsqlite
+- r-s4vectors
+- r-shiny
+- r-shinybusy
+- r-shinycssloaders
+- r-shinyjs
+- r-shinythemes
+- r-shinywidgets
+- r-stringr
+- r-summarizedexperiment
+- r-survminer
+update_on:
+- source: rpkgs
+  pkgname: omicsViewer
+  repo: bioc
+  md5: true
+- alias: r
