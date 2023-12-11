@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-clusterprofiler
+- r-dplyr
+- r-forcats
+- r-gseabase
+- r-igraph
+- r-limma
+- r-metap
+- r-org.hs.eg.db
+- r-preprocesscore
+- r-rcolorbrewer
+- r-rlang
+- r-tibble
+- r-withr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: PanomiR
+  repo: bioc
+  md5: true
+- alias: r
