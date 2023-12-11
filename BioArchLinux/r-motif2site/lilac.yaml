@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-bsgenome
+- r-edger
+- r-genomeinfodb
+- r-genomicalignments
+- r-genomicranges
+- r-iranges
+- r-mixtools
+- r-s4vectors
+update_on:
+- source: rpkgs
+  pkgname: Motif2Site
+  repo: bioc
+  md5: true
+- alias: r
