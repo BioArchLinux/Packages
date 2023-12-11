@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-heatmaply
+- r-igraph
+- r-limma
+- r-mscoreutils
+- r-patchwork
+- r-rlang
+- r-scales
+- r-summarizedexperiment
+- r-vim
+repo_makedepends:
+- r-impute
+- r-imputelcmd
+- r-missforest
+- r-msfeatures
+- r-pcamethods
+- r-pls
+- r-rtsne
+- r-testthat
+- r-vsn
+update_on:
+- source: rpkgs
+  pkgname: qmtools
+  repo: bioc
+  md5: true
+- alias: r
