@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-doparallel
+- r-dorng
+- r-foreach
+- r-matrixstats
+- r-qvalue
+- r-rngtools
+- r-rots
+- r-summarizedexperiment
+update_on:
+- source: rpkgs
+  pkgname: RolDE
+  repo: bioc
+  md5: true
+- alias: r
