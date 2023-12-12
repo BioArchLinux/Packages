@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-ellipsis
+- r-fansi
+- r-ggplot2
+- r-lifecycle
+- r-magrittr
+- r-pillar
+- r-plotly
+- r-purrr
+- r-rlang
+- r-seurat
+- r-seuratobject
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-ttservice
+- r-vctrs
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: tidyseurat
+  repo: cran
+  md5: true
+- alias: r

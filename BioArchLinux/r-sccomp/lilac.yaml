@@ -1,0 +1,39 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-forcats
+- r-ggplot2
+- r-ggrepel
+- r-glue
+- r-lifecycle
+- r-magrittr
+- r-patchwork
+- r-purrr
+- r-rcpp
+- r-rcppparallel
+- r-readr
+- r-rlang
+- r-rstan
+- r-rstantools
+- r-scales
+- r-seuratobject
+- r-singlecellexperiment
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-stanheaders
+- r-testthat
+- r-tidyseurat
+update_on:
+- source: rpkgs
+  pkgname: sccomp
+  repo: bioc
+  md5: true
+- alias: r
