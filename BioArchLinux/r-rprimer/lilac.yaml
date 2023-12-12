@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biostrings
+- r-bslib
+- r-dt
+- r-ggplot2
+- r-iranges
+- r-mathjaxr
+- r-patchwork
+- r-reshape2
+- r-s4vectors
+- r-shiny
+- r-shinycssloaders
+- r-shinyfeedback
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: rprimer
+  repo: bioc
+  md5: true
+- alias: r
