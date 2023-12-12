@@ -6,7 +6,7 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=stringi
-_pkgver=1.8.2
+_pkgver=1.8.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -19,8 +19,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('7122eca2a0e655d338e581be20969479')
-sha256sums=('6ad0223037ab7c540c0046b6f53e7bba0bde1221eac814db9d1766405feaa72d')
+md5sums=('ebc7252eb0269ff7aae2966e4a85b4d6')
+sha256sums=('1602be8edd1dd8ac5a836f4077cbc9d6a312ca4b2c594a0486370e8c1e314925')
 
 build() {
   mkdir -p build
