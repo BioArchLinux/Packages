@@ -33,7 +33,7 @@ install GPG keyring to use bioarchlinux
 
 update the database
 ```
-# pacman -Syy
+# pacman -Syu
 ```
 
 install any package
