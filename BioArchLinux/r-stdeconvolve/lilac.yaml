@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-clue
+- r-ggplot2
+- r-liger
+- r-reshape2
+- r-scatterpie
+- r-slam
+- r-topicmodels
+- r-viridis
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: STdeconvolve
+  repo: bioc
+  md5: true
+- alias: r
