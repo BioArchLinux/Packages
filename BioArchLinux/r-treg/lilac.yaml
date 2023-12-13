@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-purrr
+- r-rafalib
+- r-summarizedexperiment
+repo_makedepends:
+- r-dplyr
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: TREG
+  repo: bioc
+  md5: true
+- alias: r
