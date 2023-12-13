@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-anvil
+- r-biocfilecache
+- r-dplyr
+- r-genomicranges
+- r-multiassayexperiment
+- r-raggedexperiment
+- r-readr
+- r-s4vectors
+- r-tcgautils
+- r-tidyr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: terraTCGAdata
+  repo: bioc
+  md5: true
+- alias: r
