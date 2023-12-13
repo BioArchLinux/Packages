@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-edger
+- r-ggforce
+- r-ggplot2
+- r-ggraph
+- r-graphite
+- r-gtools
+- r-igraph
+- r-magrittr
+- r-org.hs.eg.db
+- r-pheatmap
+- r-reshape2
+- r-rlang
+- r-stringr
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-cowplot
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: sSNAPPY
+  repo: bioc
+  md5: true
+- alias: r
