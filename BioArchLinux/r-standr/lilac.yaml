@@ -1,0 +1,36 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-biocgenerics
+- r-dplyr
+- r-edger
+- r-ggalluvial
+- r-ggplot2
+- r-limma
+- r-mclustcomp
+- r-patchwork
+- r-readr
+- r-rlang
+- r-ruv
+- r-ruvseq
+- r-s4vectors
+- r-singlecellexperiment
+- r-spatialexperiment
+- r-summarizedexperiment
+- r-tibble
+- r-tidyr
+repo_makedepends:
+- r-experimenthub
+- r-ggpubr
+- r-ggrepel
+- r-scater
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: standR
+  repo: bioc
+  md5: true
+- alias: r

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-rcpp
+- r-rdpack
+repo_makedepends:
+- r-rcpparmadillo
+update_on:
+- source: rpkgs
+  pkgname: mclustcomp
+  repo: cran
+  md5: true
+- alias: r
