@@ -1,9 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: ridge_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ridge
+- source: rpkgs
+  pkgname: ridge
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: gsl
+  filename: usr/lib/libgsl\.so\.([^.]+)
+  repo: extra
