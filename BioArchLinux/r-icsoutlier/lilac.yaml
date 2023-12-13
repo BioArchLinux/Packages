@@ -6,6 +6,8 @@ repo_depends:
 - r-ics
 - r-moments
 - r-mvtnorm
+repo_makedepends:
+- r-testthat
 update_on:
 - source: rpkgs
   pkgname: ICSOutlier
