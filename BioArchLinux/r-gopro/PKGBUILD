@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Find the most characteristic gene ontology terms for groups of human genes"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-annotationdbi
@@ -40,8 +40,8 @@ md5sums=('c92dbcab08a7cdac3ee8ee6c28c6dc78')
 sha256sums=('33ab41e3f553b231298cb287a27503a487a7e31d2ed47e910372961ec9b10fea')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Provide a 'redis' back-end for BiocParallel"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocparallel
@@ -29,8 +29,8 @@ md5sums=('cf24018f96bc9de6286d2806dfd7bfaa')
 sha256sums=('5ec7a73f0109edf45a41a8922246a6ff183f0fce305156101b56725ab4132041')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

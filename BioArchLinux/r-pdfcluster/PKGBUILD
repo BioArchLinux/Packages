@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Cluster Analysis via Nonparametric Density Estimation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-geometry
@@ -17,8 +17,8 @@ md5sums=('44977c813b151392cc3c91c8403e048e')
 sha256sums=('d510c63ce1825d0acd0204613f880969402c731267b4ff800c8549fd73eda234')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE')"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -29,8 +29,8 @@ md5sums=('50361fb9eef3e96c00387476509dfe5d')
 sha256sums=('8c09ae6bb6875b569b9844eede30b790f39fc227f5c9d045fa63ce1b22f500ef')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

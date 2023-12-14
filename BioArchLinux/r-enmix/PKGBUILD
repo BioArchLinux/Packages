@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Quality control and analysis tools for Illumina DNA methylation BeadChip"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationhub
@@ -50,8 +50,8 @@ md5sums=('3ac8861e8c3ad067b1baa266958227cd')
 sha256sums=('03b0aaba5716e78f7a8da53c555b1a1dbf74cf17a6182b180169dc9662a609f2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

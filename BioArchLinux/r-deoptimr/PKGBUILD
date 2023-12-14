@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Differential Evolution Optimization in Pure R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -19,8 +19,8 @@ md5sums=('945667c3199760a35837e0a1b72f3648')
 sha256sums=('8dd8a61b07b02022493d7021dc62ef2c4dc2d596cff897846713c5f8dd784694')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Genealogical Data Analysis"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-bootstrap
@@ -26,8 +26,8 @@ md5sums=('e3eaea81d1ef60d4e3e48a45007d4d29')
 sha256sums=('eed03324362afbe81138144342256ea036f8201cb1ec923d9bc63f508221b09b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

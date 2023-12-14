@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Classification and Regression Training"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-e1071
@@ -70,8 +70,8 @@ md5sums=('5f4c1945b20e632187f5534a59a12c8c')
 sha256sums=('2715e83ca260bb739cd926a55b0d2da1e3f6308b17b56862466e738d930d29a8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

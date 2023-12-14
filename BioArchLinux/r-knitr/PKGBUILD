@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A General-Purpose Package for Dynamic Report Generation in R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-evaluate
@@ -59,8 +59,8 @@ md5sums=('334f8f963b3d8e9e0ce5c278775cb7ec')
 sha256sums=('ee2edea53bc53efa51d131ab5a0b0c829c0f950b79d3c6ee34705354bf7584fb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

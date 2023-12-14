@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Data Sets Useful for Modeling Examples"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-dplyr
@@ -28,8 +28,8 @@ md5sums=('0661010070805ff99c74b395c81dbdd0')
 sha256sums=('4c0901a8c1e1612374494198c7c08edb310d092a8face8f15859ad751249a295')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

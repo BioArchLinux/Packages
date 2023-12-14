@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="A Collection of Network Data Sets for the 'igraph' Package"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=('CC-BY-SA-4.0')
 depends=(
   r
@@ -20,8 +20,8 @@ md5sums=('1098306b9386113ce33ad00212828663')
 sha256sums=('7466426fdc1fdda90dd26d495409864e3c08ab3d997692362980a145d4b585a7')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

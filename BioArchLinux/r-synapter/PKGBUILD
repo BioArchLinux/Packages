@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Label-free data analysis pipeline for optimal identification and quantitation"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-biobase
@@ -37,8 +37,8 @@ md5sums=('a6c9ade32fbe35d5cb85adc0e9a5322c')
 sha256sums=('03cd1fb5c89df4c1bcb5f6937086fa07a76d04a89023854bf42344ab95379f31')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

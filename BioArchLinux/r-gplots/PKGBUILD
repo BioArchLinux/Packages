@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Various R Programming Tools for Plotting Data"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-catools
@@ -23,8 +23,8 @@ md5sums=('00da75ab2e323f138ee297b78394af36')
 sha256sums=('9f853b9e205264d087e61e8825f797ce36c9eb585b187dab794563613a526716')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

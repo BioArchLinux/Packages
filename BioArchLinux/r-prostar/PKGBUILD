@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Provides a GUI for DAPAR"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-colourpicker
@@ -54,8 +54,8 @@ md5sums=('ab3095af56a61bfe4fe81279dffcae21')
 sha256sums=('fbd6b410007bda8fb86038bbdf17da42e97f5a0dec948c1642ae039e1023c4f0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

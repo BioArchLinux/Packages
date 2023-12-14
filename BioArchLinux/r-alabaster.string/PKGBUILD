@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Save and Load Biostrings to/from File"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -27,8 +27,8 @@ md5sums=('b7add7aa52b8835471b04038842da095')
 sha256sums=('b53e974b288b2a924bfa636ff1287cbe2a38405b4a9da11ff22bb85f4da9f7be')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

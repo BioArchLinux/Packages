@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="HiContacts companion data package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationhub
@@ -28,8 +28,8 @@ md5sums=('bcd518f48342168f7a814a442cf9564c')
 sha256sums=('f1f4acf52f10be3093fad7a8d674a648d656c7648f67b9f811cfd8757e0e291e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

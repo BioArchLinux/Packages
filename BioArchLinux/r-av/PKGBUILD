@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Working with Audio and Video in R"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   ffmpeg
@@ -28,8 +28,8 @@ md5sums=('3a990a185d9fee9b5d520d0598fefc2f')
 sha256sums=('37c7d55b62877484228c21509c098183c8a2bc5f2790880c3fe1d0496033d77f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

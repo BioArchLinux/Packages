@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Umbrella package for R packages in the gDR suite"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-gdrcore
@@ -38,8 +38,8 @@ md5sums=('abefb906e5c9ec014a443b0367844ac9')
 sha256sums=('a9d1ebab30108c72a544a933c49264aad4435ae79e01f478ee6dd8d07c93e57d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

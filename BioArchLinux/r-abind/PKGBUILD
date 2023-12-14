@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="Combine Multidimensional Arrays"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(LGPL)
 depends=(
   r
@@ -21,8 +21,8 @@ md5sums=('136f981e1c4f618b64a87faaa7797c97')
 sha256sums=('3a3ace5afbcb86e56889efcebf3bf5c3bb042a282ba7cc4412d450bb246a3f2c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

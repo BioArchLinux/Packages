@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Simple Key Value Stores"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-digest
@@ -37,8 +37,8 @@ md5sums=('0bec8b9e53ad575bd9a20b68a798f853')
 sha256sums=('4224c3991d9c043a45ce530d0698d7f2cdca231b26fe31b45e0db865026e5f63')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

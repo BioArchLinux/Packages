@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Foundation of array-like containers in Bioconductor"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-abind
@@ -31,8 +31,8 @@ md5sums=('c77474b839251d19d31708831de3c1bf')
 sha256sums=('1e41035e72416e3f327cca34f358d3155ca1652c58b68c470661198712058274')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

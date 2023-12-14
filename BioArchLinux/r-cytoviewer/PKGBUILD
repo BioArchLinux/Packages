@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="An interactive multi-channel image viewer for R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-archive
@@ -40,8 +40,8 @@ md5sums=('dc34f69f53490911e6f621d76db69f4c')
 sha256sums=('a82429120643e00d49ca9897b1eb3ecf477ae0c7cb0244d1a2fa828a8774676e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Hacks for 'ggplot2'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -38,8 +38,8 @@ md5sums=('450be3fd3d39699ae65648f7b2880240')
 sha256sums=('eb7929b4c3167dce644b13d655144b2893e320072e7a998f07c37c4f7d9b2b3b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

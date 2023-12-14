@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="An R package to perform genomic liftover"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biocfilecache
@@ -31,8 +31,8 @@ md5sums=('86d8c0188c35ab56732fd5cc55475e8c')
 sha256sums=('364089242d0087631ba2fc1226a3fbce8af84f876c7c6176051e0e876e47abf5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

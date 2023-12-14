@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="scFeatures: Multi-view representations of single-cell and spatial data for disease outcome prediction"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-ape
@@ -51,8 +51,8 @@ md5sums=('00b3e1296507cdf60879fd6d112c1e53')
 sha256sums=('9777d663977588c4848c595f053f6859f09cef67a1a1d2d9fd5c06bdb47faf24')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

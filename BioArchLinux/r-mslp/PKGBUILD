@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Predict synthetic lethal partners of tumour mutations"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-data.table
@@ -37,8 +37,8 @@ md5sums=('8d78607401143e315c9ad75923a0c9c5')
 sha256sums=('d3647c9e496698ca1f287e9d24d112c833622bc40dca683bb997af3d43768ac4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

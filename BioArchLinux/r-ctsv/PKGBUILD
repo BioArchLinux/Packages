@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Identification of cell-type-specific spatially variable genes accounting for excess zeros"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocparallel
@@ -29,8 +29,8 @@ md5sums=('4a3f8c7b5398449ea01b312ed7da1f43')
 sha256sums=('c9ab303473fa093de52c3a25dc2e46413399cef5284aa2c177299c03e61fcc02')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

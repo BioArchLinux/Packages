@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Fast Multivariate Normal and Student's t Methods"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -32,8 +32,8 @@ md5sums=('7f86b01f428f34145a2fd143b441e9bf')
 sha256sums=('8871e0ce54b87afc556fd94ca77c3db72dcbb8c245558287e0fe342e30eec9a0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

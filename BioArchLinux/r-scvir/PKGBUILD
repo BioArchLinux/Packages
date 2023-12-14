@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="experimental inferface from R to scvi-tools"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-basilisk
@@ -35,8 +35,8 @@ md5sums=('71d6c427fcc042ac8b011a31935641df')
 sha256sums=('0a15def9dcf1483c867cf45a795b14da37ac97aa686a29e50d2fda5b55475fd9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

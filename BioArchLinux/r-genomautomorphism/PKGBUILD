@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Compute the automorphisms between DNA's Abelian group representations"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -38,8 +38,8 @@ md5sums=('36ebcd90b454dc7450e875730537811b')
 sha256sums=('98f116ad3fb31d5d7216407585a0b0db7eebd28d01d79f2f5eefd24f2b67f142')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

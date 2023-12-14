@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Cluster-Robust (Sandwich) Variance Estimators with Small-Sample Corrections"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-sandwich
@@ -48,8 +48,8 @@ md5sums=('e1902cb9a93ccf46f1eedf96396280d9')
 sha256sums=('daf0b372f0e6aae141d45b78b69c6f680c774f201691a1333400073001c6a463')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

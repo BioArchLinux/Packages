@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Statistical methods for analysing single cell RNA-seq data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-edger
@@ -37,8 +37,8 @@ md5sums=('4603cad300c83d6e6374e5989b5fe32a')
 sha256sums=('7ab4b4cc704042e0f505c3545bc1add88aabec7a63abd947350fd896f593b7df')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

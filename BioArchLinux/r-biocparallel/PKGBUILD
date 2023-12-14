@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Bioconductor facilities for parallel evaluation"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL)
 depends=(
   r-futile.logger
@@ -44,8 +44,8 @@ md5sums=('a6a331ac453920e713836ddd0de38e25')
 sha256sums=('cbf8af552c7c30c26d8d17876245dad583f712e49e7336ef78aeb70f1c0608a6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

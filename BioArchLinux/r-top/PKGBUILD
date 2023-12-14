@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="TOP Constructs Transferable Model Across Gene Expression Platforms"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-assertthat
@@ -53,8 +53,8 @@ md5sums=('af6712369d58630bdcc2b05d7dc06b52')
 sha256sums=('f0733004b9f9dedff886394a5767da9a78c07f6f88abc6e1f7ac2a87b5ecdb36')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

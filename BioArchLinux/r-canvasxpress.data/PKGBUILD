@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Datasets for the 'canvasXpress' Package"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r
@@ -23,8 +23,8 @@ md5sums=('0df166053851e54ba49dca573d21080a')
 sha256sums=('7af8d537f7f2f39b80001169953ebbbfd39c1db3b5aa26c728a997ebc3a2cd81')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

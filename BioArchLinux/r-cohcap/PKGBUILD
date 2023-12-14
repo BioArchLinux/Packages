@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="CpG Island Analysis Pipeline for Illumina Methylation Array and Targeted BS-Seq Data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   perl
@@ -25,8 +25,8 @@ md5sums=('6c7c601f8c8aee626d2fa1a6dd306dca')
 sha256sums=('cdde22c9ed7ff8e2a433e1f8b917194fbedeb112a4c42b1cefe4369aabacebb3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

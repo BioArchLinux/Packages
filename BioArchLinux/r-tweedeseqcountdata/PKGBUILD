@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="RNA-seq count data employed in the vignette of the tweeDEseq package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biobase
@@ -25,8 +25,8 @@ sha256sums=('db14f527829f488876baed853758cb299462bf4a6d66ea8929b8518c4e0907e8'
             'f82bc75278eb264d7bcb42674251c46d7c2283113e34ff85d98cc5c1d01a407f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

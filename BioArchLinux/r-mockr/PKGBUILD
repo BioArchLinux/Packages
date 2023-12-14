@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Mocking in R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-rlang
@@ -31,8 +31,8 @@ md5sums=('64562ef53ff44054bec118181cd72e65')
 sha256sums=('23ef5941eeed6a20b7670e78ef54a406ecd1eb9b57da2d4ca92ae03696f27a58')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

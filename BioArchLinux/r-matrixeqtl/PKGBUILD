@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Matrix eQTL: Ultra Fast eQTL Analysis via Large Matrix Operations"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(LGPL3)
 depends=(
   r
@@ -17,8 +17,8 @@ md5sums=('a0fef869db8c28dc36a72fe62afd1309')
 sha256sums=('881acaba080a836e71302f06b11cbc78c6a5fdbc89d6c8979b84c81657812683')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

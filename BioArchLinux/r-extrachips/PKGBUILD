@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Additional functions for working with ChIP-Seq data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocio
@@ -70,8 +70,8 @@ md5sums=('462672c12f16f912b7e3d4b30a07162f')
 sha256sums=('92031cff96880e0e7c1cfa46084ec580991c01a7e23c0734f1802778a1e0c47e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

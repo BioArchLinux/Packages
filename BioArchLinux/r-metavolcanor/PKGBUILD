@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Gene Expression Meta-analysis Visualization Tool"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-cowplot
@@ -36,8 +36,8 @@ md5sums=('697e849a45f3ceae9ff730fc7717d6ca')
 sha256sums=('d25e4304b5f8ae7c405c29004d9afe638b23011903e6338460bc9835c196dd85')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

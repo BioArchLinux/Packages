@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Motif Analysis In Gene Regulatory Networks"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocparallel
@@ -29,8 +29,8 @@ md5sums=('7d02392d3081830451c4fae90ed50177')
 sha256sums=('ee31dbd6c43aad68d5996c9f90923c85bee592a31157e601d0365cb6db2d7878')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

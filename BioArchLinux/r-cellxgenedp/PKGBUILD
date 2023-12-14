@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Discover and Access Single Cell Data Sets in the cellxgene Data Portal"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-curl
@@ -38,8 +38,8 @@ md5sums=('dc1730a545f49b0b8c14991289f29a6b')
 sha256sums=('b2ed70fd60dac6fb562298744836764c2fea43b2880cdc2b6466bf0a38fd2d39')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

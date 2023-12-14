@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Easy Dockerfile Creation from R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-attempt
@@ -38,8 +38,8 @@ md5sums=('036c7fa0312dc7282d019e6cdd9d1d41')
 sha256sums=('f1bbd7f9a64e8a7420949abb90a8c007753b8544b3d1a698c6893dbce048b248')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

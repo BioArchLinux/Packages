@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Quantitative Metabolomics Data Processing Tools"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-ggplot2
@@ -51,8 +51,8 @@ md5sums=('941d7cbf1dc8c2622fe97bda18a2bf49')
 sha256sums=('05e034d0f53c71d3e6681d5b712ff1722847b98b62fffd65168a21aa7929245c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

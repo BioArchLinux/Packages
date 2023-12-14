@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Calculate, visualize and analyse overlap between genomic regions"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationhub
@@ -40,8 +40,8 @@ md5sums=('cff18fd2eda3eb1e67e9f7739fb9e773')
 sha256sums=('7124b0ba410224f0602ed7775daabc97b80a91ebb2bdbcd67b4a2ac78fc0f6d4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

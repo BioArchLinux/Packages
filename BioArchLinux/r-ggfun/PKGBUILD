@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Miscellaneous Functions for 'ggplot2'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-cli
@@ -28,8 +28,8 @@ md5sums=('e4f9b170524457f12082835281af2990')
 sha256sums=('89232ea73b7bcf3262ce4f66c7f6d05b00c5c79927c9c16d3ba8f816332669ca')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Direction Analysis for Pathways and Kinases"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-calibrate
@@ -18,8 +18,8 @@ md5sums=('fb97e41fc733cfdff3e40661804e649e')
 sha256sums=('ff1dbd1dafd681c8f68008aef88493845d05aefb9490e0c6796e95cf330acf60')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

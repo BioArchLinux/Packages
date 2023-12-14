@@ -13,7 +13,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Tools for Working with URLs and HTTP"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-curl
@@ -42,8 +42,8 @@ md5sums=('8965ffef86aea39922f435c019daf9fb')
 sha256sums=('1555e6c2fb67bd38ff11b479f74aa287b2d93f4add487aec53b836ff07de3a3a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

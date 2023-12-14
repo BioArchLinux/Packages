@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Serialization for MultiAssayExperiment Objects"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-delayedarray
@@ -38,8 +38,8 @@ md5sums=('10ef702e87a5f0517e59c1ccb96b08dc')
 sha256sums=('5d43b15ec405c0bc3cc1a328773fd76fda63f51555ec57ca10bafaec79dc2e3a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Load and Save SummarizedExperiments from File"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -34,8 +34,8 @@ md5sums=('25133d88cc71ec6029229772a1eee0e8')
 sha256sums=('9d37f71146259c376c7d080c99e18cf7c9daf3d6cea26007189385459a6f3b93')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

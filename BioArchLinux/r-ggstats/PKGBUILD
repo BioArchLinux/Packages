@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Extension to 'ggplot2' for Plotting Stats"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-broom.helpers
@@ -55,8 +55,8 @@ md5sums=('d615412a8c42e91abadd45f5d88c49a0')
 sha256sums=('2c6a563fb7072e820837d052855aa475a3486b9519a06a63678166c5af6a9ec9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="A package with helper functions for processing drug response data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocparallel
@@ -50,8 +50,8 @@ md5sums=('fdf71802bbd5967b163447eda2fe37ef')
 sha256sums=('b06bd1bb0843ff8bc2137f207a1d07e30ebb477c8e9957acc912f689bf19f4f3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A tool for creating and analysing DNA barcodes used in Next Generation Sequencing multiplexing experiments"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-bh
@@ -24,8 +24,8 @@ md5sums=('6047e393e89e644fbf9aa4aa5a9faa64')
 sha256sums=('09263a219f974c60eeb384fc391a47d967eac19d6ffe81e8f77c433d4b99a48b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

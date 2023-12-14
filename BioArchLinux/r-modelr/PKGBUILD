@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Modelling Functions that Work with the Pipe"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-broom
@@ -35,8 +35,8 @@ md5sums=('ddfa4fdf1446004a7b75289eb81e8548')
 sha256sums=('94ebd506e9ccf3bf25318be6a182f8f89c3669a77b41864a0b9dbcc1d4337bd3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

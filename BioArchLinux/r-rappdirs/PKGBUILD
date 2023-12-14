@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=12
 pkgdesc="Application Directories: Determine Where to Save Data, Caches, and Logs"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -34,8 +34,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

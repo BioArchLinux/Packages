@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Render Markdown with 'commonmark'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-commonmark
@@ -28,8 +28,8 @@ md5sums=('cb7221fdb4efa85cdcd15fc871c69889')
 sha256sums=('7ddce3e8f08ce2e5feaa9fab30b50671ea200a8cfe2be230a98601d940124ba0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

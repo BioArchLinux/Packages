@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="From functional enrichment results to biological networks"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-enrichplot
@@ -31,8 +31,8 @@ md5sums=('5b2eb51ee4f57abd3b77da182e7e5d1a')
 sha256sums=('9b7bdd6591da9e94251ed4599287814b53ccae5eeace8c5fd689e9818160e510')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

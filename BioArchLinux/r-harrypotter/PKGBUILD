@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Palettes Generated from All \"Harry Potter\" Movies"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-ggplot2
@@ -25,8 +25,8 @@ md5sums=('f032c91d396ce69e965431316883473d')
 sha256sums=('192d1256ba770a66a6136647147ee822f249895543119980cb8c927b33d87ac8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Compositional omics model based visual integration"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-alabama
@@ -38,8 +38,8 @@ md5sums=('6fe16559db40b31126eb543abf6819fa')
 sha256sums=('7a81c89d88bc1a12b8fb778353ebf2ef367c4fef26480e2b99c2440d9b7215e2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

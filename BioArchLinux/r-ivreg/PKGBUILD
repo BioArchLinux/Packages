@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Instrumental-Variables Regression by '2SLS', '2SM', or '2SMM', with Diagnostics"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-car
@@ -33,8 +33,8 @@ md5sums=('9221729c0eb7b31dd7dd6bc8f373931d')
 sha256sums=('b4a7fa876efedf951e9ace1ef3d6d997481dc4d806226ef7f230acfa33923896')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

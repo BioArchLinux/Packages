@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="A unified framework of realistic in silico data generation and statistical model inference for single-cell and spatial omics"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biocparallel
@@ -45,8 +45,8 @@ md5sums=('84c2f07635607b2167f24750f952745a')
 sha256sums=('229a556fd77e2ec861d1b4e1f915b0fe4e1095095cad380319680a32a1b4d5dc')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

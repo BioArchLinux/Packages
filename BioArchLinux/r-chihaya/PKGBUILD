@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Save Delayed Operations to a HDF5 File"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-delayedarray
@@ -39,8 +39,8 @@ md5sums=('fc8e24fa8ec373d01c938fbfe12c3b9a')
 sha256sums=('f193f2c53109a931b6a44f8931e6ba6dc463ae180c452d1b6d137d32e13de255')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

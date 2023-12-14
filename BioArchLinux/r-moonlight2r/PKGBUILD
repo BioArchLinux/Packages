@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Identify oncogenes and tumor suppressor genes from omics data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-annotationhub
@@ -58,8 +58,8 @@ md5sums=('45af1bc580f9231cb2a83eae7517d3b8')
 sha256sums=('e306a3aa11700652a2f1ada4cec3eed4112ec43d3392da550538b8c4bf6ee909')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

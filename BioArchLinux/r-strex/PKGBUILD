@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Extra String Manipulation Functions"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-checkmate
@@ -33,8 +33,8 @@ md5sums=('0637b9abacf65f22add7a9cf9efb5039')
 sha256sums=('38fa8de9a7c55bffe8b47bdd57b8df7646064964737b44bc784b14e076fee5ef')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

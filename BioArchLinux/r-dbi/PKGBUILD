@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="R Database Interface"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(LGPL)
 depends=(
   r
@@ -42,8 +42,8 @@ md5sums=('39053945cef7f76c45c8bc6f5733033f')
 sha256sums=('38bb33753da5bddb78893a5228a5d269dae3bf16f21dc5d9853ac9c24d31428d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

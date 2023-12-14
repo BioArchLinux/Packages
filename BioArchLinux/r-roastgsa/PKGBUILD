@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Rotation based gene set analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -30,8 +30,8 @@ md5sums=('83d20d90ed18c719222042ae3d9f46d3')
 sha256sums=('705d83610754235e57d8eddd828caa1eb7296029d963507a68d0d2073b5861b6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

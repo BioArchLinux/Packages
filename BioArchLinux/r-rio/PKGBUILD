@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="A Swiss-Army Knife for Data I/O"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-curl
@@ -58,8 +58,8 @@ md5sums=('10999152910a11bcccc2b85e78cfda4f')
 sha256sums=('754c137c5588870f75665d0acc149f0ef28250edc057d5d4ac6fa25ba9547bee')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

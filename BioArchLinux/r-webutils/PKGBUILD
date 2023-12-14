@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Utility Functions for Developing Web Applications"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-curl
@@ -27,8 +27,8 @@ md5sums=('b22bccdb361730d8aa1d7cf2cbd3e9fa')
 sha256sums=('51243a1d7843dbb3968e7725c2266e1d68dcec43b919c320033f611ff9ca7f3c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

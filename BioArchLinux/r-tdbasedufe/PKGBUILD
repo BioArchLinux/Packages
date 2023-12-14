@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tensor Decomposition Based Unsupervised Feature Extraction"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-genomicranges
@@ -32,8 +32,8 @@ md5sums=('5557e1128d1d6ffab09670bf90b8947c')
 sha256sums=('66ed99fd2677d840b52079fd72eaaea8c67e0be06a87e8eba26848e6629514d8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

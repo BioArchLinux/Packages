@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Forge BSgenome data packages"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biobase
@@ -36,8 +36,8 @@ md5sums=('ed03f4628533403765aae28991855bca')
 sha256sums=('fa0fc3076e4e7f769d3295aba9735a10f8cac62d2f504ee44a0a1a19cb2ebafc')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

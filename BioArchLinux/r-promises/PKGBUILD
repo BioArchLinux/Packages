@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Abstractions for Promise-Based Asynchronous Programming"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-fastmap
@@ -37,8 +37,8 @@ md5sums=('0332949e499adeb8ede2d583d813b6c5')
 sha256sums=('3ce0a26df39ea27536877ec6db13083b2952108245024baa8b40ae856d2ce5be')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

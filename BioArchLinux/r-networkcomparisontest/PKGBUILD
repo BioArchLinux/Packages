@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Statistical Comparison of Two Networks Based on Several Invariance Measures"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-isingfit
@@ -31,8 +31,8 @@ md5sums=('c699e7be5bafd726a02a5721f625b4cc')
 sha256sums=('11f61db9031c54ed28dce0310f51270b0bbd60bbdbf0ec565beb79a80f4e6223')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

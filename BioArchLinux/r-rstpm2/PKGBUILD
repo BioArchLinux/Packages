@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Smooth Survival Models, Including Generalized Survival Models"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -42,8 +42,8 @@ md5sums=('2fb292e291b311986d90f7783f4e1ea2')
 sha256sums=('5e6079a876a43473768ee54e4b34081ea3b5e1f466f9f76e8cfc2bb461b2031f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

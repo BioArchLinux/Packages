@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="basilisk and hail"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-basilisk
@@ -28,8 +28,8 @@ md5sums=('4707c299d0bb3b41001065a753d89f33')
 sha256sums=('d56801f227b645e29814530e326c1820e35d5c78aaf6e4afa181f6bc3ad0ba09')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

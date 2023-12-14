@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Data package for mCSEA package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-genomicranges
@@ -23,8 +23,8 @@ md5sums=('11f8150e223a0e8d8fa5b9b8dedaa374')
 sha256sums=('710ab0282a8cc131dee739d5471f9d5287be86005619f82acac0a549d0304851')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

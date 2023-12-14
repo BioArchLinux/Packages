@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Random Over-Sampling Examples"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r
@@ -20,8 +20,8 @@ md5sums=('73db406449aae225ad8580e309fb433b')
 sha256sums=('7750b764f30e2a1cd9bd8768897e83e5e1395f505908fb8923fb76f5e64f7b78')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

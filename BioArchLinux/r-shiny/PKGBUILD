@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Web Application Framework for R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-bslib
@@ -60,8 +60,8 @@ md5sums=('cde8fa9cf462ecf2aabb7947826eea52')
 sha256sums=('f28740ba28707e8b3dabb2ad27b002dae555317010660702163bb0daefe04641')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Umbrella for the Alabaster Framework"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -31,8 +31,8 @@ md5sums=('359d26d34b8867dd418d0d277b0228c9')
 sha256sums=('6d08f588c49200b514395245055d4628fabdd044aceabff0b4dd6b2e0b858050')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

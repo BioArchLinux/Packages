@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Viewing Binary Files"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r
@@ -17,8 +17,8 @@ md5sums=('bef9f732bb59add40345f76ded0af94c')
 sha256sums=('cccdedb26a5f926f82ddc1945703198a8a406f02efd3c9e4d18a34bda2c71106')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

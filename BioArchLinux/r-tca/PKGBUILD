@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tensor Composition Analysis"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-config
@@ -32,8 +32,8 @@ md5sums=('cfd6fc03ef50d2b7685ee902f44d8ef6')
 sha256sums=('8bd3ab276b966802b0022cccefead65d2c3f85ef43e775ff629b907c2ad0d7bf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Interactive Cytometry Gating in R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biocmanager
@@ -36,8 +36,8 @@ md5sums=('d5b19dee6139d26306d14563f445a64f')
 sha256sums=('3519876952d4b09dfd4231d7d0114b055cb15758a48ad4744c1d34adbd433c52')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

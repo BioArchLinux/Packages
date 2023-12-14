@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Pre-trained models for the crisprScore package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationhub
@@ -24,8 +24,8 @@ md5sums=('1f4d86404f045ec36cf7d1b1c64373fe')
 sha256sums=('d1c2eaf4fb4361738ea092da8b7e144ab9f327379aa2ec7c42e3a38aaed33c67')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

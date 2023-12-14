@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Fundamental Clustering Problems Suite"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   pandoc
@@ -78,8 +78,8 @@ md5sums=('749ba6fd6322916b39cfcbc8843280a8')
 sha256sums=('d1e5e06700a81fe529f52ef1f65977d3c786f33df262f4f89238d2622dc7ba97')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

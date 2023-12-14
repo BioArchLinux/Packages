@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Calculate Pairwise Distances"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -27,8 +27,8 @@ md5sums=('394847a1782d753eaa4fd196ba2b569e')
 sha256sums=('1c40401d9fe285de58911e70946444e0bb3e6f9717886d123c600c17ee6b66c9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

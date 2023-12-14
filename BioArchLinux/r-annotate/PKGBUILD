@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Annotation for microarrays"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationdbi
@@ -44,8 +44,8 @@ md5sums=('04d25cadc03401556364f8ca9c3b2a61')
 sha256sums=('4dab9615498f6c58d1e6ecc1ecd0052187e46bdf971b18d73149b6bddea2ad82')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

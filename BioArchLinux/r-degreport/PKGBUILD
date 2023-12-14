@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Report of DEG analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biobase
@@ -54,8 +54,8 @@ md5sums=('c244b736c180d78d142dd00938f7d40f')
 sha256sums=('bf88efb88eb0f49ae2d34e65b7b560443fc838108b9a240f1f47b5c014200d68')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Visualizing Hypothesis Tests in Multivariate Linear Models"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-broom
@@ -40,8 +40,8 @@ md5sums=('a426647892c067aa64f60ffffdd48a08')
 sha256sums=('b085c00fe14801647e6c239d46ea68dae7158183ec35fb1b2b38287996708405')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

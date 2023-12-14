@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="'rifiComparative' compares the output of rifi from two different conditions."
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-cowplot
@@ -41,8 +41,8 @@ md5sums=('d371dc0f2b156f4565b09b7cfa5406e0')
 sha256sums=('3175cb710dd786c8c2d3d9f2067c86f253d8023548c6e2664393a656308e7e99')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

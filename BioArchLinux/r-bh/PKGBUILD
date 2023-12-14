@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Boost C++ Header Files"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Boost)
 depends=(
   boost
@@ -21,8 +21,8 @@ md5sums=('897f0d1cd97ba1047eff09acf68c07a8')
 sha256sums=('f51c8badd6f181e06353314e1d15a6ec1495cc498ee74b6fa4ea8aba6e97ff64')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

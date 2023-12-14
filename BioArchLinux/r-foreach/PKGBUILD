@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Provides Foreach Looping Construct"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache)
 depends=(
   r-iterators
@@ -40,8 +40,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

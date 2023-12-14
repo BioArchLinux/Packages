@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Demultiplexing oligo-barcoded scRNA-seq data using regression mixture models"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-ggplot2
@@ -30,8 +30,8 @@ md5sums=('9bbdcc634e542fe151a50a2511206140')
 sha256sums=('7c75413797bcd86cb1c83372f02c3361666d47930ba3a52da5498e0bb52d8a83')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

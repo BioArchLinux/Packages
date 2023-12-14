@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Statistical Analysis of Regions with CNVs"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-data.table
@@ -48,8 +48,8 @@ md5sums=('b3ccd1bbc820bc93c4b13ec4e3ec9705')
 sha256sums=('5f032cedb91ca13f975da592479c83ff79c87c3ba5dd4472c1c7df0b9cec7a10')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

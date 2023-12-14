@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Targeted sequencing panel design based on mutation hotspots"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-hash
@@ -27,8 +27,8 @@ md5sums=('37e04dc7e1bb05af58c50cb7701388c7')
 sha256sums=('c2d8d16107c19421edc26bda43b97e5862d19a4689421e5ded9df9834fd76167')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

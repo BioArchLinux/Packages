@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Split, Combine and Compress PDF Files"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache)
 depends=(
   qpdf
@@ -27,8 +27,8 @@ md5sums=('683a7a73e5bd530b377987ea646f31db')
 sha256sums=('d9c905a4879274d72de0c638f2e14737ec0a59895cbba9814e05c62b43e8e976')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build \
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname" \
       --configure-vars=EXTERNAL_QPDF=yes
 }
 

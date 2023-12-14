@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Supporting Functions for Packages Maintained by 'Yihui Xie'"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -42,8 +42,8 @@ md5sums=('762d90da1dec41f701e35cd9450df7ef')
 sha256sums=('2374c3b8f141f1e5ff01b291d8aa5c3dc807dd8e99ab4dc7a048c9534a7e3b02')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

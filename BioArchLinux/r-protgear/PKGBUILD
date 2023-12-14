@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Protein Micro Array Data Management and Interactive Visualization"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -60,8 +60,8 @@ md5sums=('db63dca71894a3ebbf3b8b78512bccb4')
 sha256sums=('bb5b47b1b5d12faba813f71e962a7e9fe80ae6807aa7dca8cceacbbec5681565')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

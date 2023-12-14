@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Cellular DNA Barcode Analysis toolkit"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biostrings
@@ -42,8 +42,8 @@ md5sums=('d219d9d5c998fda5f5c02f817361c56a')
 sha256sums=('97b7ac8b8a031d17f58cd4c96f4e67ade0741784a515b5f1b75252b5dd569ab5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

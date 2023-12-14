@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Syntax Highlighting for R Source Code"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-xfun
@@ -29,8 +29,8 @@ md5sums=('75ac8d38e8c9b56e40220daebb00c4ea')
 sha256sums=('ec55bc1ff66390ed66806dc2a7b6c17dbfd089b3d73fe2e369017f8cb4bc347b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

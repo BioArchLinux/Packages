@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Modern and Easy-to-Use Crypto Library"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   libsodium
@@ -23,8 +23,8 @@ md5sums=('05f45dd77035afe37af4b2726d048453')
 sha256sums=('fd811a49fc4927d4f352eb033a6cb26cd223b52282b9004dcc8244c85e3d7231')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

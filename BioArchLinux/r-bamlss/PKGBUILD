@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Bayesian Additive Models for Location, Scale, and Shape (and Beyond)"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -52,8 +52,8 @@ md5sums=('3730ed71f5d1c06b53112ad2909fa372')
 sha256sums=('ed43c51e56529e8f797c17b8c2e7d9a3b147f955e4324c3d5b218be635177b4d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

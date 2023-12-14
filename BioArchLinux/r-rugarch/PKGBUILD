@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Univariate GARCH Models"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-chron
@@ -35,8 +35,8 @@ md5sums=('98d9cb00c50db386ca21f716656df2b6')
 sha256sums=('9ffe510807ebafaa689a357c10df3523e3231b473b3eae18783f528c1577de1e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

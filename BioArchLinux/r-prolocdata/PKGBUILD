@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Data accompanying the pRoloc package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-biobase
@@ -27,8 +27,8 @@ md5sums=('8aafd04221b21588077788ec79272e1a')
 sha256sums=('f1c405105a5ea16a4343112d710842065722c6a773db904d6bbea789ced15e7e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

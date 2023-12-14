@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Interface for the 'QuickJS' Lightweight 'JavaScript' Engine"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-jsonlite
@@ -25,8 +25,8 @@ md5sums=('adf26df0b395c0193bba7f1d6a9a9468')
 sha256sums=('7697faa26d7c67b7d218ae6be74c86e7249842d6f0ea8a3932920825398a9e81')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

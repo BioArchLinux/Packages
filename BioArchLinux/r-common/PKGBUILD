@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Solutions for Common Problems in Base R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=('CC0-1.0')
 depends=(
   r
@@ -28,8 +28,8 @@ md5sums=('92231535ce9cf7327dd33aff8449d463')
 sha256sums=('183e5f937823ff6b8ef1b22679177c3e25ffbb256784879ece0cefdba78e9978')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

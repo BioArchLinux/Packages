@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=5
 pkgdesc="Call R from R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-processx
@@ -33,8 +33,8 @@ md5sums=('12151339c31433137a1534c2f5656206')
 sha256sums=('567bfedf073a1d4c5785f0553341608a214938110567b9a6495ff20ebb2fd04e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

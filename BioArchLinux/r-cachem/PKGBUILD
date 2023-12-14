@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Cache R Objects with Automatic Pruning"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-fastmap
@@ -26,8 +26,8 @@ md5sums=('f7b8c1dae009101e6785febca66bb659')
 sha256sums=('ea9ca919fe615dce8770758ecc2fc88ac99074f66ff1cde3a0b95d40007f45c2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

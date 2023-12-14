@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Straightforward 'NetCDF' Metadata"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-dplyr
@@ -28,8 +28,8 @@ md5sums=('e38fff220a5ed49a5304684562b56ac9')
 sha256sums=('82d580d2045967f19356dcd0e7869a738a5c2f7cb19bd4df0ab6b80a81e5655e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

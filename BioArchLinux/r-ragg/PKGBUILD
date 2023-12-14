@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Graphic Devices Based on AGG"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   freetype2
@@ -31,8 +31,8 @@ md5sums=('b3552306bc07a827415f7c6fd1f9fc23')
 sha256sums=('d77a18662d127881dcb5046033eb809293ad9ad439fa4b217202b8cef4280c9f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

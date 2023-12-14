@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Imagine Your Data Before You Collect It"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-rlang
@@ -26,8 +26,8 @@ md5sums=('9a30e41e08bd0098b6183dcbfafaeed8')
 sha256sums=('fbcce8c191bcc2bb80c9824d261e10684c243971c547fcded2188ebdf1fbb5f8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Load and Save MultiAssayExperiments"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -32,8 +32,8 @@ md5sums=('43abcdda61fc9d69dbc24dbd1c91664d')
 sha256sums=('319236c02b188c5e5e9b4b3828bac63f474932c25f4b1c91fbf03f738078e8a9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

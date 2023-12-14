@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Integration of multiple microRNA-target databases with their disease and drug associations"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationdbi
@@ -34,8 +34,8 @@ md5sums=('7102f312557b010d184bac5dea6e5009')
 sha256sums=('2574a7991c9552c84c8cd9c39ba4f5508d6e21870a0126da1ff855e96c82b157')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

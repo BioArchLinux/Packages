@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Statistical Methods for Microbiome Compositional Data"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-foreach
@@ -24,8 +24,8 @@ md5sums=('e463de42620bebe5a007bad035b20792')
 sha256sums=('a486ccbe72f86578b3fac9804e5f87fc30b078bf9eb03b10d3f305555056bac8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

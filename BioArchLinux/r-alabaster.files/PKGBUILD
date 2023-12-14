@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Wrappers to Save Common File Formats"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -33,8 +33,8 @@ md5sums=('ea12d81dadbad7340c5f2d6be276a697')
 sha256sums=('52c451b6c1a5f827a791ee99f3367596569f39a117f4cd368536247b52c98a80')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

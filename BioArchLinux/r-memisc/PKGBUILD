@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Management of Survey Data and Presentation of Analysis Results"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-data.table
@@ -24,8 +24,8 @@ md5sums=('29549169c78c37545bb79bb7ac4753c9')
 sha256sums=('b403185850520db18ebd608df85c76df80e6c64af428cdc4e49c2fe487483637')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

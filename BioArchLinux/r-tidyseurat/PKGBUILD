@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Brings Seurat to the Tidyverse"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-cli
@@ -45,8 +45,8 @@ md5sums=('e112239c72797c4e3a81852c6f3bb555')
 sha256sums=('ba3600f067cd5c57ec95ac6ee43912230cc5558097196073f035765ad288df7b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

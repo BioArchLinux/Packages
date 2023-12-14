@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Mathematical Morphology in Any Number of Dimensions"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-rcpp
@@ -26,8 +26,8 @@ md5sums=('9716940ae9f4a9e9ad3a8c4e889728a7')
 sha256sums=('fc375da6b879fd1991880fd358ceeb762e61b3a1b02af9cff3a366d0811e74a1')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

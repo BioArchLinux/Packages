@@ -14,7 +14,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Create Compact Hash Digests of R Objects"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   google-crc32c
@@ -46,8 +46,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

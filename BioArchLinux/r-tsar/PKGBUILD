@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Thermal Shift Analysis in R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(AGPL3)
 depends=(
   r-dplyr
@@ -39,8 +39,8 @@ md5sums=('7cc8589151c5b03e247590bbd7dc04dd')
 sha256sums=('bc75e3ad29377425c1da1b43cef760445d71ea47d8fc0a0390705d3778b9f0cd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

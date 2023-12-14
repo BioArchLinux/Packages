@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Handling and Managing Peptide Spectrum Matches"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -43,8 +43,8 @@ md5sums=('4c63ca3d541af4e5925bcc2bde7d67ea')
 sha256sums=('d2776c4c3fa21073b8f444d8f581fcfadc1ef3832ea74bf948478500e2fa2350')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

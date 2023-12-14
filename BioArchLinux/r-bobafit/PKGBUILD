@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Refitting diploid region profiles using a clustering procedure"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-dplyr
@@ -36,8 +36,8 @@ md5sums=('48b9cc5c35adf6469bd1dc2ca566bed1')
 sha256sums=('111aff16b4d9615fca6db51253ebb997ec54c98e5edec2ab5a8bbe309c033ac1')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

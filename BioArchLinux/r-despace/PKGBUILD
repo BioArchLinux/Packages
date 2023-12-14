@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="DESpace: a framework to discover spatially variable genes"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-assertthat
@@ -48,8 +48,8 @@ md5sums=('436915bded5ec94da6e412ccdff80e8e')
 sha256sums=('0a50ce9a81bcc3108da8b92cefe9c22b93903129be8faf8529653eefce832998')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

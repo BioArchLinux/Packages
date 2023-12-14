@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="High Performance Algorithms for Vine Copula Modeling"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-assertthat
@@ -35,8 +35,8 @@ md5sums=('a4b38ea99d4a5a6dc167a34b84028b15')
 sha256sums=('df95d007552e7fa30aefad90a86acf5e14f6fe1e363ed4c71a74d501a08cbf32')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

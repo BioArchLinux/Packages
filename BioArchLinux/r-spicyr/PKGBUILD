@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Spatial analysis of in situ cytometry data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL)
 depends=(
   r-biocgenerics
@@ -45,8 +45,8 @@ md5sums=('36cba4820e1206ad3a7220e0430b245f')
 sha256sums=('29e3a8bad60bd1165ac6bea4a4d9a05bfaf3c5308034c678a9478b1a5491e462')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

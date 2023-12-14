@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Basic R Input Output"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -24,8 +24,8 @@ md5sums=('e18151323dcddd193fac454f70f138f1')
 sha256sums=('0cbbf38948682b2435eea69b04be59187b149183dc7562df71dc0d3e260e18e8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

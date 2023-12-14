@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Calculate Pathway Scores for Each Cell in scRNA-Seq Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-singlecellexperiment
@@ -22,8 +22,8 @@ md5sums=('84be416108d1b90a06e83acaa8d2f208')
 sha256sums=('5d1cf5b46caa3145e02904d15473352dbb0d82845878e1cb5da8e67497eea55f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

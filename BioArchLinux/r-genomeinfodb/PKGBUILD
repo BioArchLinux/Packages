@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Utilities for manipulating chromosome names, including modifying them to follow a particular naming style"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -36,8 +36,8 @@ md5sums=('4bb1aef4ea2a6422141e3024e11b85e1')
 sha256sums=('7794e6f8b96e226009f45fed57cbbb776852022278cd9baf0357a1019356bb3a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

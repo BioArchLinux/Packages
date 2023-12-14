@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="kallisto | bustools R utilities"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(BSD)
 depends=(
   r-annotationdbi
@@ -56,8 +56,8 @@ md5sums=('7d2decd570fd518ad9a06c10a5ecffb3')
 sha256sums=('e8c249061153745821dc85e2a2c3b7971146a870cbc68f80ae451d56de02893b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

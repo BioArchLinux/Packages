@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Tools to work with a Compendium of 181000 human transcriptome sequencing studies"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-s4vectors
@@ -41,8 +41,8 @@ md5sums=('00689fd704a35eea4e0ba38516603b49')
 sha256sums=('5ba92aca4d359d78bd5252836a979503080e45163549d0abee23c409c1ef7404')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Query the EDIR Database For Specific Gene"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-genomicranges
@@ -29,8 +29,8 @@ md5sums=('ff19937af17cf0a7a874b986192d6b1c')
 sha256sums=('a7621845519e6496d83f3914aa6a3f388e7ccf9078ed8dfb4a2b152532ab5be1')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

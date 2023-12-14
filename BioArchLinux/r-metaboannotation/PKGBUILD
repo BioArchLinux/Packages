@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Utilities for Annotation of Metabolomics Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationhub
@@ -45,8 +45,8 @@ md5sums=('fee181fc1795a1e2bde1d1e551f1a45e')
 sha256sums=('7ba37b6a82c6725fc79de69ab7f37ab6af7e17b4dee4973c9ed5fc073eaa54bd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

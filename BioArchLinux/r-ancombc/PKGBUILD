@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Microbiome differential abudance and correlation analyses with bias correction"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-cvxr
@@ -50,8 +50,8 @@ md5sums=('42059f62faa03e818d0cd15b7bcf0094')
 sha256sums=('874699e6662d2624d174fe877e0e81024ecc5aa636d5b23ed9b5c09e5698c3d4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

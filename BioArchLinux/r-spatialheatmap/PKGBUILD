@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="spatialHeatmap"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-data.table
@@ -101,8 +101,8 @@ md5sums=('fbcec5f2045c7b503bd0bd26e0ff0738')
 sha256sums=('0e9aa1f5101ca9402a4b0396d7730f2f7bf890ab5fba2fe67fa936a36fb07e89')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

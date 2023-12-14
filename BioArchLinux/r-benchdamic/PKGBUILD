@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Benchmark of differential abundance methods on microbiome data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-aldex2
@@ -58,8 +58,8 @@ md5sums=('ca158383ebf87138c91438c7946fe567')
 sha256sums=('ceff84a598cf1158721982693d9b02346dbaa6a94362862124269acd64a939df')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=5
 pkgdesc="Data Table Back-End for 'dplyr'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -46,8 +46,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

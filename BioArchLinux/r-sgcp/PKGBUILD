@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="SGCP: A semi-supervised pipeline for gene clustering using self-training approach in gene co-expression networks"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-annotate
@@ -40,8 +40,8 @@ md5sums=('46986c7dd18ef80a29c389500ed5023b')
 sha256sums=('4a6a5196e9cd4bba67b5488740cfacb2c1b8e013762c96a31d679dc3615e80b1')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

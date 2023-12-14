@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Run Code 'With' Temporarily Modified Global State"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -32,8 +32,8 @@ md5sums=('7a391ba52581b520002a054a890ab08c')
 sha256sums=('d5b6fa6d728fda5201310d6ad5921a43aae1c23029c25334bfc1e54cb13d4205')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

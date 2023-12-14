@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Linear Models for Microarray Data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL)
 depends=(
   r-statmod
@@ -33,8 +33,8 @@ md5sums=('f52a816d0d34b01f721654f90a1fb5f5')
 sha256sums=('3539e1645808dd7fe16d0b53df8c0a775283f15b68e670504fb37b09a1957e05')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

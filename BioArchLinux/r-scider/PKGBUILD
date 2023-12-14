@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Spatial cell-type inter-correlation by density in R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-ggplot2
@@ -40,8 +40,8 @@ md5sums=('d20e0e846be7368da2613650b3834957')
 sha256sums=('0b54660caa2f18fa624319f51f8971d29e067b56546f4bfd50cfb4dd5f8187e6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

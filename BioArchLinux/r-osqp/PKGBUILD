@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Quadratic Programming Solver using the 'OSQP' Library"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache)
 depends=(
   r-r6
@@ -30,8 +30,8 @@ md5sums=('d6b45409799ce483514cada5818fa47a')
 sha256sums=('18543b329a42be0f419dff4aa42f4401c2afb18f46276ce359853494dd803244')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

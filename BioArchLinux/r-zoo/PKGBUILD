@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -37,8 +37,8 @@ md5sums=('9bf826a22610f5a3f8ebd063404e7183')
 sha256sums=('e6c3862668f9e3422bced3b6fba485c76a1e91b48f5d6153822d6a61863b2fb8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

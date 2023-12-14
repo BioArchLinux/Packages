@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Spatial Dependence: Weighting Schemes, Statistics"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-deldir
@@ -42,8 +42,8 @@ md5sums=('2c7725eb1821524d26b5811e082c45bd')
 sha256sums=('36062ccd094f9110a43cd51902c794242311fd23b861dde22c450446dce85396')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

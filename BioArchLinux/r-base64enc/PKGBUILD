@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=11
 pkgdesc="Tools for base64 encoding"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -21,8 +21,8 @@ md5sums=('0f476dacdd11a3e0ad56d13f5bc2f190')
 sha256sums=('6d856d8a364bcdc499a0bf38bfd283b7c743d08f0b288174fba7dbf0a04b688d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

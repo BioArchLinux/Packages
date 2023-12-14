@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Chandler-Bate Sandwich Loglikelihood Adjustment"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-numderiv
@@ -26,8 +26,8 @@ md5sums=('7fe64112018a8c718178ac2f36490c33')
 sha256sums=('8d6a277a05434c2876abac5eb0b52efc3515a8a97e50593d3cbca2de13c70c0f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

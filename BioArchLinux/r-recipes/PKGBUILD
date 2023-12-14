@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Preprocessing and Feature Engineering Steps for Modeling"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -77,8 +77,8 @@ md5sums=('f3f30f40a1b9b65aa5ad80b887a32786')
 sha256sums=('111ab7f1d3fd60a088c32cc54316e685ab88fea9d49c5d94fa359328644cd790')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Quantitative visual exploration of scRNA-seq data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-ape
@@ -35,8 +35,8 @@ md5sums=('d64f38622d8aec6ebb23e81231710134')
 sha256sums=('52ec5264b10e4b8df9e56a31f654adc102e99c66455fb9bbce4c3ab51ae79533')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

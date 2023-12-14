@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Tidy, Type-Safe 'prediction()' Methods"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-data.table
@@ -49,8 +49,8 @@ md5sums=('f27a713e1265ac86ab47b06a32154e44')
 sha256sums=('3daf9f03c12f932817376361fecae62b8f74f5cce3f09096a84645d769c1942b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

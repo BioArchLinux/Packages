@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   lapack
@@ -34,8 +34,8 @@ md5sums=('f19c7af715a6a845ca9a615276bc4603')
 sha256sums=('506919cdbe1c415f906d4dab1611a9027d271c580781a7a6ff3bdeb77e029fdd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Paws Low-Level Amazon Web Services API"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache)
 depends=(
   pandoc
@@ -36,8 +36,8 @@ md5sums=('8a1afe269d2fcd82ed34d090baa5f1e6')
 sha256sums=('7d5fe8e72eb3f093f1fd3339049912cc5419198b7ef85817ebaa8e9925e5efdf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

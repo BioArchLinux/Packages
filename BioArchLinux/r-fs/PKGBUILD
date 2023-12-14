@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Cross-Platform File System Operations Based on 'libuv'"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   libuv
@@ -41,8 +41,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

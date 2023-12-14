@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Miscellaneous Extensions to 'ggplot2'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-confintr
@@ -51,8 +51,8 @@ md5sums=('a6b7e07140e0899730b072b37dccc180')
 sha256sums=('2acac1488df05284371b537e17dfa3438610d4f31c535a70c9b1c3b85cc089c8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

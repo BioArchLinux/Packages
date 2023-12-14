@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="System Native Font Finding"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   fontconfig
@@ -34,8 +34,8 @@ md5sums=('92edbeac47df03bf8015ac2d97c2a739')
 sha256sums=('840ffb1d8293739c79cbc868101d9f9a84f4a9de4c7b3625e30af2fb63e15823')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

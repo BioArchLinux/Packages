@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Open Cancer TherApeutic Discovery (OCTAD)"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationhub
@@ -42,8 +42,8 @@ md5sums=('65dcd54e4646d61afcfb9afc90108ba4')
 sha256sums=('7739df34d37584ae3e68a706fb05845da06dfd172925d383b4195e50fe47d505')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

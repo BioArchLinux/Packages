@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Utilities for Graphical Rendering and Fonts Management"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   cairo
@@ -34,8 +34,8 @@ md5sums=('b778af979e49476c8b4c45acb6d1b667')
 sha256sums=('8cb46da05b87440aadf6958baa37dd9b62d526c558622285146ea7cc4b51b894')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

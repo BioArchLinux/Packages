@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Detection, Characterization and Visualization of Kataegis in Sequencing Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -48,8 +48,8 @@ md5sums=('7ae9895a26f752a9e8502913ef8ce410')
 sha256sums=('3f5d04a60a2d8ff0d9db9ebcbc52347dc046ac25f2327eed5c98421bd7c12a44')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

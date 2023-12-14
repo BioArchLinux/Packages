@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Regression Models for Ordinal Data"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-numderiv
@@ -26,8 +26,8 @@ md5sums=('a14e655e739d633b0d4e19220509f638')
 sha256sums=('f5582ad983dfd2ffbaf1e90b49af6f2cc319953d1fcb33f31c6c6f335cbd9fa2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

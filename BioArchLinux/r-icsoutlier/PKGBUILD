@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Outlier Detection Using Invariant Coordinate Selection"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-ics
@@ -27,8 +27,8 @@ md5sums=('5f3a2b02876603f8cd642c593295a7bf')
 sha256sums=('6605c7c217d0211a2ae35be9f6c01a8b76e111ff51632b1d48144481d5d7cf1e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

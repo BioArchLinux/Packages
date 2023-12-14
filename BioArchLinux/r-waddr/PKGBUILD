@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Statistical tests for detecting differential distributions based on the 2-Wasserstein distance"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-arm
@@ -35,8 +35,8 @@ md5sums=('97a692c918d531e3d872dc17141cd112')
 sha256sums=('675e24e4135651c3b0618452334769d5388f21a45979acd82fd1f6b84bbf451d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="COexpression Tables ANalysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-assertthat
@@ -63,8 +63,8 @@ md5sums=('ec3bbfe10c1ede4ae12398534ab5395b')
 sha256sums=('c1cf78c924b2566204cddce43fe15ea0d935688bc48d6bff81478134e0548d46')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

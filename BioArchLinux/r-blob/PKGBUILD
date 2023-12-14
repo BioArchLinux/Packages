@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="A Simple S3 Class for Representing Vectors of Binary Data ('BLOBS')"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-rlang
@@ -29,8 +29,8 @@ md5sums=('3133f827ee7c1e4ca99c16659984627e')
 sha256sums=('d08922ebc4147d930fe4762b1b289935217308c6d3fcaa5ae028ce3f5cf2728f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

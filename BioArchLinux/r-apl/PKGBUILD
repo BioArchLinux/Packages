@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Association Plots"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-ggplot2
@@ -43,8 +43,8 @@ md5sums=('725b38bc042e6b6fd349aac0ff3d471c')
 sha256sums=('700572f8633421a466702378e5996b7e69f0c508ce8fa5f27bcee03742393a5d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

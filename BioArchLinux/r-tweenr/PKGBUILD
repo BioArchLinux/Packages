@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Interpolate Data for Smooth Animations"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-farver
@@ -31,8 +31,8 @@ md5sums=('df4d4c8b2934f45fd8a838b14716744a')
 sha256sums=('64bbfded418d4880e3636f434571c20303d2f66be6950d64583a864fbb661ff3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

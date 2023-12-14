@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="An R package estimates the correlations of orthologs and transposable elements between two species"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(LGPL3)
 depends=(
   r-apeglm
@@ -37,8 +37,8 @@ md5sums=('145026d8a5e02ec94f8a2a1f5405851e')
 sha256sums=('7495840995103b2303fb7d0f12440aa43e5d6d2e6e72e8fb9983c9f3da891950')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

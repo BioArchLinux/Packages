@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Effective mobility scale transformation of CE-MS(/MS) data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-metabocoreutils
@@ -32,8 +32,8 @@ md5sums=('1d0f7904be49e25235092248b757df19')
 sha256sums=('3091172dc69b9eaa26befeafba4dc836c1b45ffbdb14d920703fc48fc0742289')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

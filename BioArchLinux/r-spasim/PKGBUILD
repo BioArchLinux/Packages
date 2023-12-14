@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Spatial point data simulator for tissue images"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-dplyr
@@ -35,8 +35,8 @@ md5sums=('d69e70975aaaa9bffc5e52f95885e59c')
 sha256sums=('73fd96426fae25af657f6585746132fcf83798b59c8fd9ff620d9b852ace4638')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Hexagonal Binning Routines"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r
@@ -28,8 +28,8 @@ md5sums=('d0035d06e66b9229586590b03d258288')
 sha256sums=('0eb33511c1a4ff29dda8b89fee420ea7041033f981c7f16484c9f504d749de5f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

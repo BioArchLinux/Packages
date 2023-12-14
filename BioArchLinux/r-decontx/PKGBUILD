@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Decontamination of single cell genomics data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-celda
@@ -52,8 +52,8 @@ md5sums=('1e2f4af9204397b8104543dd954bb390')
 sha256sums=('688151c203ef4607d02c2fd27e1dccae5204128cbc98c1ba9ef087082d9fe598')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

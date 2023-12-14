@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=9
 pkgdesc="Interpreted String Literals"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -40,8 +40,8 @@ md5sums=('4a92a6b8f8015a2ac8b0bfeac7f163fc')
 sha256sums=('9da518f12be584c90e75fe8e07f711ee3f6fc0d03d817f72c25dc0f66499fdbf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

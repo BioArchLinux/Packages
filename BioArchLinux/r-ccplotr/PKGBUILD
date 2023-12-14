@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Plots For Visualising Cell-Cell Interactions"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-circlize
@@ -44,8 +44,8 @@ md5sums=('913896518f29cd88d7ac9d57298f44de')
 sha256sums=('577e586adf51f7b6265b9fc877880ed0749a9c9d15ac7bd2c4800b10941a69b0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

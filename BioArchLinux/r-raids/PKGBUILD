@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Accurate Inference of Genetic Ancestry from Cancer Sequences"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Apache)
 depends=(
   r-annotationdbi
@@ -43,8 +43,8 @@ md5sums=('768d047b002bb44e1178d69233878818')
 sha256sums=('0208eb91f74930bbcebbec4844b708878391831b9097c0080d36cce9c78c5799')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

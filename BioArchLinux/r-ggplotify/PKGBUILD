@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Convert Plot to 'grob' or 'ggplot' Object"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-ggplot2
@@ -30,8 +30,8 @@ md5sums=('3bd4a51a0406a4b44f456aa75a8093df')
 sha256sums=('01bae5759e14e211bddb04413e094ba31399b513989894ea08602d202f990e87')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

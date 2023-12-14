@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Modelling with Sparse and Dense Matrices"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -22,8 +22,8 @@ md5sums=('5ad7c5222f8f8322a307de4445ab9985')
 sha256sums=('c2db5406c6b0b9d348b44eea215a39c64fc087099fea1342a04d50326577f20f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

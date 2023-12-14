@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Foreach Parallel Adaptor for 'parallel'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-foreach
@@ -21,8 +21,8 @@ md5sums=('f4b5a3b66e1b1d6f216c290e552fe4a7')
 sha256sums=('b2186f851448251ae6af5d14b9e3e7f9221f90887e5f8de6a68c91caf16619a3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

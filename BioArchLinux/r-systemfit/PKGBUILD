@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Estimating Systems of Simultaneous Equations"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-car
@@ -24,8 +24,8 @@ md5sums=('ce0cf8a69c9c3c0f916c2d32770803c1')
 sha256sums=('5994fbb81f1678325862414f58328cdc2c46d47efa1f23218e9416a4da431ce2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

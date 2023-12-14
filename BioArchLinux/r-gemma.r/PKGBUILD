@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="A wrapper for Gemma's Restful API to access curated gene expression data and differential expression analyses"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Apache)
 depends=(
   r-assertthat
@@ -54,8 +54,8 @@ md5sums=('404ce4fa50032ebf727cfdccece32ba2')
 sha256sums=('0524f520b5b6f63438b35157be3eb35b981d4c431e54081070d3cdfd57d095cd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="The Herper package is a simple toolset to install and manage conda packages and environments from R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-reticulate
@@ -30,8 +30,8 @@ md5sums=('dad437a472cae186246d3cf0f6b44964')
 sha256sums=('04db137ebec9c03d9d196fc56943e96a04be91bbfb31313a6d18abbf84bb5e0a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

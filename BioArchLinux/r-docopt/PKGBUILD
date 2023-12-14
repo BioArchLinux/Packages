@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Command-Line Interface Specification Language"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -25,8 +25,8 @@ md5sums=('97952edaf3093ed9801bd2eb1c557923')
 sha256sums=('9f473887e4607e9b21fd4ab02e802858d0ac2ca6dad9e357a9d884a47fe4b0ff')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

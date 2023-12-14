@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Population-level Representation on scRNA-Seq data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocparallel
@@ -34,8 +34,8 @@ md5sums=('00ab18ecdd0a5768690b841f2f2448e5')
 sha256sums=('029f7f57db10e1f0fa33ce37227a6ed2f21b1a0cd6cf02fa8e868128e60552fe')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

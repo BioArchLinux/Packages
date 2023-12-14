@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-base64enc
@@ -42,8 +42,8 @@ md5sums=('688035c1317d99324ef73bb5100664b1')
 sha256sums=('642735afd7d3895f1ac8c5a5f7f5e08001bfabcf62a56d2d85904655a2e931db')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

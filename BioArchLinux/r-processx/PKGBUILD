@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Execute and Control System Processes"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-ps
@@ -32,8 +32,8 @@ md5sums=('ad4eef6b9a21f570f8686c0157712ddf')
 sha256sums=('1ad8c51482b89702fbbb6621b1a179c1ae67b78388b8fd9c841bbc8cf035d831')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

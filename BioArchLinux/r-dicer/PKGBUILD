@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Diverse Cluster Ensemble in R"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-abind
@@ -67,8 +67,8 @@ md5sums=('0caa6615fcf2f12cb8675c6e4ba52c62')
 sha256sums=('a91e07119ceda74cd9de317354c838a2decb880d42f293afe74af010d2533432')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

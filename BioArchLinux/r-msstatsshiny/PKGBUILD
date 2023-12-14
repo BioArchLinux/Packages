@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="MSstats GUI for Statistical Anaylsis of Proteomics Experiments"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-data.table
@@ -45,8 +45,8 @@ md5sums=('4eb74ec920d96afc15079226261224f9')
 sha256sums=('54d19cba1eb7757b4c0add839d4c143704fd54989215e7680b37735b07b3da84')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

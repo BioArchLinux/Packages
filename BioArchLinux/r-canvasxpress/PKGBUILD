@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Visualization Package for CanvasXpress in R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-htmltools
@@ -46,8 +46,8 @@ md5sums=('f25e77795fcb5dc87488793b343c60e0')
 sha256sums=('a6e382b05f6d4f7c29c3a1bfc1a49b30c69f404f7c2ff5652122b5dfef63667d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Design Degenerate Oligos from a Multiple DNA Sequence Alignment"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biostrings
@@ -40,8 +40,8 @@ md5sums=('f866266895669cd0e898d1ffb0df86fa')
 sha256sums=('6326c6c1e9f2eec7725781d170151289802bdda4eb237372c480c46f546787c0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

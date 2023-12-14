@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Visualization of Methylation Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-biocparallel
@@ -34,8 +34,8 @@ md5sums=('0fae72e2aac98ec4a55d8aa4343039ba')
 sha256sums=('9c36f81e61918bdf02a6cf7c807d5e50d76d93793805010eb6ad83393a7f71aa')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

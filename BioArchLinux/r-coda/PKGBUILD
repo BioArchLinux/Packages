@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=12
 pkgdesc="Output Analysis and Diagnostics for MCMC"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -22,8 +22,8 @@ md5sums=('23122681735275c7178481d819440039')
 sha256sums=('422d3cfd34797a3631e9c4812431940599c0ca4bb9937797bed07b7b1d6fe58f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

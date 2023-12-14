@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Machine learning tools for automated transcriptome clustering analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-clvalid
@@ -35,8 +35,8 @@ md5sums=('d214fdb20c51cbce86bf1d34c59cb84b')
 sha256sums=('dd15848708994f18842116b7ffaa47d0be82f7419f3775081183938aa6ce665a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="'Asio' C++ Header Files"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Boost)
 depends=(
   asio
@@ -18,8 +18,8 @@ md5sums=('7e7f8f45115ba4e62334b225ee859cb0')
 sha256sums=('1629c0ea78b8c63231ca62fcc39fce5d29919864050a8c331720ee9bbdea58a4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

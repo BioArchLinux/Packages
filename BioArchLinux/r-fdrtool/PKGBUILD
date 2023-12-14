@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="Estimation of (Local) False Discovery Rates and Higher Criticism"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r
@@ -19,8 +19,8 @@ md5sums=('7e4ee6e67266b8828cc9d893a171545e')
 sha256sums=('3452601adbead9be4820794e3af2666f710fdf9b801186df565b80b43629c5dd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

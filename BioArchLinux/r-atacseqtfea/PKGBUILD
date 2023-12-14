@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Transcription Factor Enrichment Analysis for ATAC-seq"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocgenerics
@@ -39,8 +39,8 @@ md5sums=('30284cc31687d97f23d2a7c023e8561d')
 sha256sums=('5c7e8e3079bb9b1aa8b836d3824cd93d26b77fe310eb43f7585d181e1edce2b3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Powerful and Reliable Tools for Running System Commands in R"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -29,8 +29,8 @@ md5sums=('79b75f8ec16557df22600458b6044ebe')
 sha256sums=('b7bdce66f0fb681830ea6fb77b5a2c6babb43920abb1eddc733f95c0a63ce5b3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

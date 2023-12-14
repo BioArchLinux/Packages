@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Update Browser Window Title in 'shiny' Session"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-shiny
@@ -23,8 +23,8 @@ md5sums=('1e89d52a34f6c511c475002a05a08074')
 sha256sums=('5d2f9d4f5a8918c34a27f1bc1d71d351035bf7ee97f5896d6ee36f5c9dd005cc')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

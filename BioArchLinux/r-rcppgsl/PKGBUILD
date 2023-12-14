@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="'Rcpp' Integration for 'GNU GSL' Vectors and Matrices"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   gsl
@@ -25,8 +25,8 @@ md5sums=('d03bf65ffa004822e2169c382ee1033c')
 sha256sums=('fe5e73bc119c6424e1a40b6fea17417a7bba93e81dbe9b7cf86dde9b8e8d93e7')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

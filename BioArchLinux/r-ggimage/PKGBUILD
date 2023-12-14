@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Use Image in 'ggplot2'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-ggfun
@@ -31,8 +31,8 @@ md5sums=('8885f142e42910a64e8b8906cb8dd3a9')
 sha256sums=('7a85a5500e982478f21de1e87394fa0ab7037417d8c0c9b38bda5a8b9b09a34a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Candidate Driver Analysis"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-doparallel
@@ -39,8 +39,8 @@ md5sums=('9ac2bc6afe6632e5fbd00c687ca19bba')
 sha256sums=('b44a53457c33a926b8909ecf3cfadb3d99fef978eb3241dcdcaa0117135dd0b0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

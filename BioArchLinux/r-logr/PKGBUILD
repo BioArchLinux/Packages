@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Creates Log Files"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=('CC0-1.0')
 depends=(
   r-common
@@ -32,8 +32,8 @@ md5sums=('6b216952470eee98af6641ad8a816f97')
 sha256sums=('9566dcb34d56ad742d3ac4832b5d8b93f4d374182ea877b1a022ab19ee15ea40')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

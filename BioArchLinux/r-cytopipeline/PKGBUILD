@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Automation and visualization of flow cytometry data analysis pipelines"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocfilecache
@@ -40,8 +40,8 @@ md5sums=('a4ed3b88553c7115d7dce368a0fda5a5')
 sha256sums=('80c2f67b5629c4f8049346f324308d20707e65f5db189a73d3a5e9c4e8a35692')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

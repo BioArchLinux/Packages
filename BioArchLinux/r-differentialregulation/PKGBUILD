@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Differentially regulated genes from scRNA-seq data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   blas
@@ -41,8 +41,8 @@ md5sums=('875793d502c3e521b4faa3eba0d1c2e7')
 sha256sums=('087b222c3418d45082991a93f3fe3ec2f0794de2d79376f923b6864dd531c849')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="iSEE extension for a landing page to a custom collection of data sets"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocfilecache
@@ -41,8 +41,8 @@ md5sums=('98a9141431a3206fd242b5b0b4056c41')
 sha256sums=('2ddc239f24412bd695a254396c007da20143db112374f988cb0e0860bbb5e3e2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

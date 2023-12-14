@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Find Tools Needed to Build R Packages"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-callr
@@ -35,8 +35,8 @@ md5sums=('1d992f117d74ace31716be49f6867c9a')
 sha256sums=('1583edb56c0afab6f99d0dd2235fd45999461f89e8ca50bc7c0b74211f109165')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

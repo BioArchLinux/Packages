@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Expanded Replacement and Extension of the 'optim' Function"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-nloptr
@@ -35,8 +35,8 @@ md5sums=('6bf0366c13fec66c2c89c848ad3fd9b2')
 sha256sums=('0d732d5604c26af59cfb95b80ed4e226c9c10422e2d82a6cc06b92f9ba6a44b5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

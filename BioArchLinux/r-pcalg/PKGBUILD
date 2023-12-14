@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Methods for Graphical Models and Causal Inference"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -43,8 +43,8 @@ md5sums=('a04f0500d81148d2265f1f76d7f220e9')
 sha256sums=('b8b1d292e79a9bb495d195b730f99e1dc5a6686c39fb98fc1574982e882c1116')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

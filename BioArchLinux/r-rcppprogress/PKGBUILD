@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="An Interruptible Progress Bar with OpenMP Support for C++ in R Packages"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r
@@ -29,8 +29,8 @@ md5sums=('29ecb32d5c739805ced912e4bedf26f2')
 sha256sums=('b1624b21b7aeb1dafb30f092b2a4bef4c3504efd2d6b00b2cdf55dc9df194b48')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Error Handling Made Easy"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-formula
@@ -21,8 +21,8 @@ md5sums=('76ea20c0b3ae718983374e2df3e94db5')
 sha256sums=('ee01dcaf3fa745b540980e4109616f0db4b4c15274641e7af8a223ba0f62eef2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

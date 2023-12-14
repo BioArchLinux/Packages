@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Easily Work with 'Font Awesome' Icons"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-htmltools
@@ -32,8 +32,8 @@ md5sums=('d5e7d3d788f1145dd8cb5b74c85045b9')
 sha256sums=('da3de2a9717084d1400d48edd783f06c66b8c910ce9c8d753d1b7d99be1c5cc9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Tools for Multiple Imputation in Multilevel Modeling"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-haven
@@ -30,8 +30,8 @@ md5sums=('b241fc0514024cf248ab9dbd2914f880')
 sha256sums=('056aec823187cc3793640d8a5e74d74093bae74260a975ceb098a83a52e2eeeb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Check if a Remote Computer is Up"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   iputils
@@ -26,8 +26,8 @@ md5sums=('1fa6ce8bcbbeda3df39c59180a3ad149')
 sha256sums=('3c29c0be588c3fee267a2c0f60faa08e37682ba001db6c0249b065abc6aed863')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

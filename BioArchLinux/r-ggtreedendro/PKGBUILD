@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Drawing 'dendrogram' using 'ggtree'"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-ggplot2
@@ -33,8 +33,8 @@ md5sums=('e5839d466e08665eb2475a99fb74e833')
 sha256sums=('ace77cc34d998168e516ef377b563d49d9d8895135fdc6cdb9359544f6b2df3e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

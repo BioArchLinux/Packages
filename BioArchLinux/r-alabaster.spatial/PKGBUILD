@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Save and Load Spatial 'Omics Data to/from File"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -37,8 +37,8 @@ md5sums=('906d73c492ba97e8eda563055c51bbfc')
 sha256sums=('dd98cfef50b21f37f6f6874c26ab89e65f18fca9dad0648cbaff297d3d8eb0c9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

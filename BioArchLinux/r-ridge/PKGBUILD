@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=6
 pkgdesc="Ridge Regression with Automatic Selection of the Penalty Parameter"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   gsl
@@ -26,8 +26,8 @@ md5sums=('053bb22425561b8ff6e91bf4e8ad50d5')
 sha256sums=('5c2daecf6f97aa099ef5fa54f8448518c4f2ed6e44dd29fc60621a70721c60f5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

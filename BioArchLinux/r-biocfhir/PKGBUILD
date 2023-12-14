@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Illustration of FHIR ingestion and transformation using R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocbaseutils
@@ -34,8 +34,8 @@ md5sums=('788951417cde10ad9434dd443db47f80')
 sha256sums=('7c181c170fc085c884ec4b1bc4a53cd402e18c2a99691a2ce5feb7799827d7eb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

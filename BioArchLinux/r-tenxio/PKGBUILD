@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Import methods for 10X Genomics files"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocbaseutils
@@ -47,8 +47,8 @@ md5sums=('98a845f55877d89b82b9a153fe54a41f')
 sha256sums=('beece47e217747bf8279d3665963df727e2b685c6912414dbd1f639b0ceb2185')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

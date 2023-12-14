@@ -13,7 +13,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=5
 pkgdesc="A Toolbox for Manipulating and Assessing Colors and Palettes"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(BSD)
 depends=(
   r
@@ -42,8 +42,8 @@ md5sums=('e386fecdf186c037558e2e73b1f151e8')
 sha256sums=('04078abb6b54119c90dc7085d62916bf292ccb163e213f9ea70567d1be82614c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

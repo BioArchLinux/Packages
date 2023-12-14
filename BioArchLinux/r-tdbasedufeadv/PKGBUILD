@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Advanced package of tensor decomposition based unsupervised feature extraction"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -36,8 +36,8 @@ md5sums=('6f873403b62f756c6b8424cfeb2409c9')
 sha256sums=('a184d00fcc29ccd64252b72a789837e89e412ac873c3cc195495e631f62f241f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

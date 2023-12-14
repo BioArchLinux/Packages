@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Labels normalized cells for CyTOF data and assigns probabilities for each label"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-catalyst
@@ -40,8 +40,8 @@ md5sums=('7a4e866c0e57f639b41828c211aff31f')
 sha256sums=('3df2b2baa68bfa6e27c985136842475c458041f11a2a5e831ce99d1c2ebdb087')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

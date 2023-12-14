@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Grammar of Data Manipulation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -60,8 +60,8 @@ md5sums=('29bdf98592722336f0d07484baf2a959')
 sha256sums=('cf730414d5d4ab387b4e9890a4b1df9d17a3903488e8da8df1cf2e11e44558cb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

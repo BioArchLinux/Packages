@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Extra Themes, Scales and Geoms for 'ggplot2'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r-ggplot2
@@ -49,8 +49,8 @@ md5sums=('eebc703683b4536514197ec246b4fbd5')
 sha256sums=('56a913c9018afdff34f05031e0d79f4422dcf72b50c24529c0b7c8d519edadc5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

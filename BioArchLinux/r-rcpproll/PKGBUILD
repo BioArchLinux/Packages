@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Efficient Rolling / Windowed Operations"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-rcpp
@@ -27,8 +27,8 @@ md5sums=('20b1dca034a1d18f63c07201736943c7')
 sha256sums=('cbff2096443a8a38a6f1dabf8c90b9e14a43d2196b412b5bfe5390393f743f6b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

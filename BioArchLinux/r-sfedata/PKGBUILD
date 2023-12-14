@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Example SpatialFeatureExperiment datasets"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationhub
@@ -26,8 +26,8 @@ md5sums=('7f3376870c972cba309b26d52d24fcbb')
 sha256sums=('1f374b0e109d35998935c8ce83f0e83574792cea548bf928837b7fa2d9116b72')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

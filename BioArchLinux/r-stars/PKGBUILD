@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Spatiotemporal Arrays, Raster and Vector Data Cubes"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache)
 depends=(
   r-abind
@@ -74,8 +74,8 @@ md5sums=('396cf91eb8e8d9c10ffeddd0cb85e1da')
 sha256sums=('424a4cfde4c3524f8bd44a1090c8d725662af8cc636f785d951d4aa45c130d57')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

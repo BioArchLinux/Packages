@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Wrapper of the JavaScript Library 'DataTables'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-crosstalk
@@ -39,8 +39,8 @@ md5sums=('81c595d562de4f585dd8da8a80317086')
 sha256sums=('956f42a784d1c426ddc75ebfb22a854886e2d6ae8b7014b95669aed0cd699c87')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

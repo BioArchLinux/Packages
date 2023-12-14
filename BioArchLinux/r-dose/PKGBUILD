@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Disease Ontology Semantic and Enrichment analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationdbi
@@ -40,8 +40,8 @@ md5sums=('db9c95935ce192a915b1246380f625d5')
 sha256sums=('ee22b726664304643116a88c40eb8b2032e2a4faa92c2b2523986ddf19a2644e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

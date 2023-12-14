@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="R interface to a subset of OpenBabel functionalities"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0 GPL3)
 depends=(
   openbabel
@@ -38,8 +38,8 @@ md5sums=('5bd759ca398ffb70214a8076028bf0b2')
 sha256sums=('b147d9e00df464d13b1c6d876b0a49e158510ff725da599e51b936faf997ca55')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

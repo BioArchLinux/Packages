@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Indexed Data Frames"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-dplyr
@@ -25,8 +25,8 @@ md5sums=('26d1468f30c4c3d98a1251f427937c63')
 sha256sums=('37521940b35d62773a4d127c94148aadf207f400a686f2212a22d96e53086a0a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

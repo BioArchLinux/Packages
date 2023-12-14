@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Representation and manipulation of genomic intervals"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -64,8 +64,8 @@ md5sums=('19fe37133cae70c1c3a1a164e6c8eaed')
 sha256sums=('1cecb68c906b0a565c0fef5a0a8284a513a4910979f33d34901c42df501e3aef')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

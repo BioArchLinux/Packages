@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="An Inclusive, Unifying API for Progress Updates"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-digest
@@ -38,8 +38,8 @@ md5sums=('553ed3dd68689ea70694f2672fa3766a')
 sha256sums=('9a2899f879a5577f043be99c18d52bfe4d655cc52a96cae834e8a301b36258af')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

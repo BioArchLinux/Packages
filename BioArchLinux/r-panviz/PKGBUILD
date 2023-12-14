@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Integrating Multi-Omic Network Data With Summay-Level GWAS Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-colorspace
@@ -39,8 +39,8 @@ md5sums=('5d5ced4ee7d68f57367aed30633f29e0')
 sha256sums=('a05161ea6299e1426430c604c4e6ce050aa4b528b8d32c32f5fe43d8522b52a5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

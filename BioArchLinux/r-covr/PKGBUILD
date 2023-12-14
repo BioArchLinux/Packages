@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Test Coverage for Packages"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-crayon
@@ -51,8 +51,8 @@ md5sums=('8fadf3538ed1edfefb3a20bd5c5e887d')
 sha256sums=('2b6204036510c629d0b1d58daaee34d4e38baf54164f8d4c9afd6d6b1fb1862a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

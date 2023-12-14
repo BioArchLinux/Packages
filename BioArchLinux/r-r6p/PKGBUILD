@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Design Patterns in R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-collections
@@ -32,8 +32,8 @@ md5sums=('4700d4fc492e9bf7a0f86e9ed5f1f50e')
 sha256sums=('55ab7ae2b25d129895cad359d892bda2910100948c5e8aa33be27ecf7f321ea3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

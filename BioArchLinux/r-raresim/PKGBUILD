@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Simulation of Rare Variant Genetic Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-nloptr
@@ -28,8 +28,8 @@ md5sums=('6ec5b86f348e2d4ffb365da80651041e')
 sha256sums=('8fb2a823bf1b18ea70eb886ed8726c47896ac240156499e90943fd36f1de213f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

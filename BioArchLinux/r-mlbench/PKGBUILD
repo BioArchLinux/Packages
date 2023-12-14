@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Machine Learning Benchmark Problems"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r
@@ -18,8 +18,8 @@ md5sums=('052333f1f00cee5907e8621abc047799')
 sha256sums=('7afec6d58968ab526ea642e1df39bead2f479c14486b0a62032c999ba73d5cf0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

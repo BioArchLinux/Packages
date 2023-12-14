@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Companion to Applied Regression"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-abind
@@ -42,8 +42,8 @@ md5sums=('f8be85a665aa367951aacf80d89eb5e9')
 sha256sums=('89263491977ac8e9406b2f4b1638bf06c7ddd1b0e0e3ecda4be61420474674c8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Simulate Package Installation and Attach"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-cli
@@ -40,8 +40,8 @@ md5sums=('02c0f0f913ea0f17fee989c3ecd1bdc6')
 sha256sums=('b0898122876479cc4a35cd566654b3a7b50f8ac105565dbf3f8b9d4283816959')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

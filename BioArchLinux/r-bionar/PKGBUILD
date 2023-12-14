@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Biological Network Analysis in R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationdbi
@@ -55,8 +55,8 @@ md5sums=('4cbc1fe5bd753444b3470a317029a885')
 sha256sums=('dacd5ee2b304b30fc882ff29336e603bce098c07d62a81d24d76ff1e4bb77c22')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Validate 'JSON' Schema"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-v8
@@ -27,8 +27,8 @@ md5sums=('aeb5c0cc44825e0a9a8a5678e7eb5fe2')
 sha256sums=('2b6c08bfa9ba043151a41d914b24b776583a140ee93a448191d5d0af46aadb57')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

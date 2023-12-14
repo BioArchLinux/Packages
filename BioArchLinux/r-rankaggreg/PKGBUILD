@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Weighted Rank Aggregation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=('LGPL-2.0-or-later')
 depends=(
   r-gtools
@@ -23,8 +23,8 @@ md5sums=('2b54df8fd2b0097ec6aa80d607fd53a8')
 sha256sums=('bde95b55e052ad3777a9720ca970a438f5f3ba37798a12c77dd89cb39db4e0bc')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

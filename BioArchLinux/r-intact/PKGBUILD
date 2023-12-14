@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Integrate TWAS and Colocalization Analysis for Gene Set Enrichment Analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-bdsmatrix
@@ -28,8 +28,8 @@ md5sums=('d8646f4acb0cbb31ccf53a672818be40')
 sha256sums=('80b1dec3b9af56241eb28e453ea0a0057716f264cc4a35611ef1cb5fa03ff52b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

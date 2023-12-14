@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Comparison of Splicing Events between Tumor and Normal Samples"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-annotationdbi
@@ -34,8 +34,8 @@ md5sums=('7a55735983a79681a2bbcd567c9f0c53')
 sha256sums=('04a0e39ab46157dc360a56ed4177595b7bd30eb3ace1a1e5adf5d41785804aeb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

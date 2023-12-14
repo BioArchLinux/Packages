@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Join Tables Together on Inexact Matching"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-dplyr
@@ -40,8 +40,8 @@ md5sums=('d472d77dec7889760a9323a90aacc89e')
 sha256sums=('47eaefb73ce8553301e15359bc0e071222fc463c334ca486fa04c68d3e86b968')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Exposome exploration and outcome data analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-biobase
@@ -48,8 +48,8 @@ md5sums=('5dec247e3db216fed87e97cbfbf254cc')
 sha256sums=('44a21ed78978bf201f9152611730bde7fe5529f628afc83a00451fa024837a99')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

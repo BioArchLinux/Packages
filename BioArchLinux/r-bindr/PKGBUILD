@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Parametrized Active Bindings"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -25,8 +25,8 @@ md5sums=('cfa02c563196a79bf8bb4db2e66585fd')
 sha256sums=('7c785ca77ceb3ab9282148bcecf64d1857d35f5b800531d49483622fe67505d0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

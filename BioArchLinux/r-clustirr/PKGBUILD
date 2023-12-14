@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Clustering of immune receptor repertoires"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-future
@@ -32,8 +32,8 @@ md5sums=('ffd1884844b297c2e593e465a776fb6d')
 sha256sums=('f54c2788eed171e691476b2113665749eb5880c10c138aec71f07577f135b8e7')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=11
 pkgdesc="The 'plog' C++ Logging Library"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -23,8 +23,8 @@ md5sums=('655c301276dac0098568248e47602851')
 sha256sums=('0e63ba2e1f624005fe25c67cdd403636a912e063d682eca07f2f1d65e9870d29')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

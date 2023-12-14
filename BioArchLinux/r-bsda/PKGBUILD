@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Basic Statistics and Data Analysis"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-e1071
@@ -24,8 +24,8 @@ md5sums=('64d541438a5b355bc58630270bcfa6ae')
 sha256sums=('8bbe79a6b596c964c82a6fb53ec5d7aab6c0d353231ef1fe5f2adba244c7f244')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

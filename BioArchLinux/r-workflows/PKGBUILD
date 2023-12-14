@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Modeling Workflows"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -37,8 +37,8 @@ md5sums=('d646ec2abe7014fa31ccf569139dbf4c')
 sha256sums=('baa26a876b56e61bd3339a44297e3c5b719a92c9316495fb17836dfa8caf4181')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

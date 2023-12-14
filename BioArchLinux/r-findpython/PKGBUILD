@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Functions to Find an Acceptable Python Binary"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -27,8 +27,8 @@ md5sums=('5ca1c2cb21b5e747182c14d92691912b')
 sha256sums=('0f8a90cbafd4949c0333a86808383a358fb7ec3268953d8a4887d5d22264cdb7')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

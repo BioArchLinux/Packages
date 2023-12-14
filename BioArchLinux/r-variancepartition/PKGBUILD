@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Quantify and interpret drivers of variation in multilevel gene expression experiments"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-aod
@@ -62,8 +62,8 @@ md5sums=('75a8e840769ba62b9f175c73aba9c99a')
 sha256sums=('bd6c96ec3d8eebcb0ab387e0754df79fbb00b1557cc37d42f169a4a2d278ac32')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

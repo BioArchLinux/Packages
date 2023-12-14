@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Robust outlier identification for DNA methylation data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationdbi
@@ -62,8 +62,8 @@ md5sums=('73fdaf9db5e5d035601282d6e5d832fd')
 sha256sums=('ea5dafb2dd4141bb1ba7ab35a8c2e209932dc47d77afe6eb6ccc0032a12378be')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

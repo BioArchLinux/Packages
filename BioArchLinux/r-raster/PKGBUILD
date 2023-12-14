@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Geographic Data Analysis and Modeling"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-rcpp
@@ -36,8 +36,8 @@ md5sums=('ad7c711017003e97af9828e1547d14ab')
 sha256sums=('c65777225a46ada699e70098f54c60cf191d15e454fac9440aca439a4dbd5592')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

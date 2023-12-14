@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Spatial Image Analysis of Tissues"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-apcluster
@@ -57,8 +57,8 @@ md5sums=('45342ea9b5cbfbc01e38d6c7b7866852')
 sha256sums=('2f583d8f85a5bb2c5c681c43b23eb7177c9df82b41317a2d0f76464eff2e9d90')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

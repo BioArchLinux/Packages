@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=6
 pkgdesc="Construct Modeling Packages"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -34,8 +34,8 @@ md5sums=('c653ec4116ee0ceddaa28d55e75f62dd')
 sha256sums=('fe9ff009e2ba6dd4d70cbb541430f88d85c0a28d6a1c2772e4910c79b81fe82e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

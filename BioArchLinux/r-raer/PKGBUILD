@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="RNA editing tools in R"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   curl
@@ -60,8 +60,8 @@ md5sums=('0b5c050626ce21756f90b4f9c967465b')
 sha256sums=('4607eee1ad03f81724d7feae469236b6f7646831309eff928a6bbd9e7e7d8ce9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

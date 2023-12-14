@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Simple and Robust JSON Parser and Generator for R"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -31,8 +31,8 @@ md5sums=('d1ec8467abf43d41aabeec24d5a9096a')
 sha256sums=('7de21316984c3ba3d7423d12f43d1c30c716007c5e39bf07e11885e0ceb0caa4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

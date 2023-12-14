@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Manage Massive Matrices with Shared Memory and Memory-Mapped Files"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache LGPL3)
 depends=(
   r-bigmemory.sri
@@ -30,8 +30,8 @@ md5sums=('a0d62857fdeb5244b2c69e98a4a4bf72')
 sha256sums=('b56e157c87ed6c4fc69d4cb9c697ae9a2001726e776e41aa7c48b35327b65141')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

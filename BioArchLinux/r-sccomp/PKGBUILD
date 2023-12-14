@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Robust Outlier-aware Estimation of Composition and Heterogeneity for Single-cell Data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-dplyr
@@ -56,10 +56,10 @@ md5sums=('8a24adb07d155b94645a5f684e1455f6')
 sha256sums=('d1f4216eb85d47ff8a2f6403ab7a483b09cade88df5387ed5e9fca7f5c7c97a5')
 
 build() {
-  mkdir -p build
+  mkdir build
   # compilation needs a lot of memory
   MAKEFLAGS+=" -j1"
-  R CMD INSTALL "$_pkgname" -l build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

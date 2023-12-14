@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Customise the Appearance of 'shinydashboard' Applications using Themes"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-htmltools
@@ -28,8 +28,8 @@ md5sums=('0412aef1b3d96fb04a725bfeb02938d2')
 sha256sums=('cc80bcd4b66d2418fe08636a25425083574d406e4bd9dfa8d170663aeb23717a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

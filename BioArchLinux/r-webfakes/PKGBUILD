@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Fake Web Apps for HTTP Testing"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -34,8 +34,8 @@ md5sums=('0d5a6f8dff6c26606b48f267063974a5')
 sha256sums=('26ea0e0e7c6bef082b2838f224636e9710fe9d516a96731b2767df54cbd27ef0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

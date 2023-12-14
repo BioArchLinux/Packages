@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Multiple Co-Inertia Analysis via the NIPALS Method"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-complexheatmap
@@ -43,8 +43,8 @@ md5sums=('0558d05ea61523c6fcaed9d8ed9b0ded')
 sha256sums=('83696b0eb3a198168152a8cb7a85b894480adde9d288ad1ae4c007da7fca6bcb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

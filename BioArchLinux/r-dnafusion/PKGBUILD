@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Identification of gene fusions using paired-end sequencing"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-bamsignals
@@ -36,8 +36,8 @@ md5sums=('b7ef2bb10bea5334d6d159208c284c16')
 sha256sums=('687e11a620c606ac02e5732f83ebdeb1c8edee1818d9ec38a84431b9d00c221d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

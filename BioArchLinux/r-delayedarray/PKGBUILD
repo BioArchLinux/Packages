@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A unified framework for working transparently with on-disk and in-memory array-like datasets"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -39,8 +39,8 @@ md5sums=('812e7575d6eaa61f5b68364cdf1da3d9')
 sha256sums=('c705055e2caf8b8ddbc9956d99a7c99415684dc7e9b31f42bd95186ddb06c355')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

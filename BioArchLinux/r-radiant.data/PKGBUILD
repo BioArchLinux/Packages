@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Data Menu for Radiant: Business Analytics using R and Shiny"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(AGPL3)
 depends=(
   r-arrow
@@ -63,8 +63,8 @@ md5sums=('0d588a51961f5ddccf0295201e7b9371')
 sha256sums=('1708ebca50962720de64cfb0f648427449d023acd26fa2f4ac336d6386cf4708')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

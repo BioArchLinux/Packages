@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Fitting the Multinomial Probit Model"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   lapack
@@ -24,8 +24,8 @@ md5sums=('7613e5396a2a420162e9bb0959985498')
 sha256sums=('4913450e88ed1ed2d048b4fdbc92e31100eb906a87f1f6ad5c45773656e2aed7')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

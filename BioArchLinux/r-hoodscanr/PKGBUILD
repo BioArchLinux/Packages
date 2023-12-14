@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Spatial cellular neighbourhood scanning in R"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-circlize
@@ -34,8 +34,8 @@ md5sums=('c5ac598990d1f80bfa526c576abc8d84')
 sha256sums=('cde7b3938f36850be64055e44aa6a0ca4cbfde55e517c00ff325bdefb659dfbf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="RNAseq data simulation, differential expression analysis and performance comparison of differential expression methods"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL)
 depends=(
   r-ape
@@ -60,8 +60,8 @@ md5sums=('b1ec77496e614cf3399843b8c34e6ab2')
 sha256sums=('43ed456bf52146b00d9a4b83a84f86d15630b669048d0019bae230e3e9293e04')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

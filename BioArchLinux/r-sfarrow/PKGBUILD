@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Read/Write Simple Feature Objects ('sf') with 'Apache' 'Arrow'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-arrow
@@ -24,8 +24,8 @@ md5sums=('a2e14236864928f98ae8c27590b7c3be')
 sha256sums=('0f5db73f8c3058b0aad6343d2376186028cc443a7df1c515b3a1171e14f454c3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

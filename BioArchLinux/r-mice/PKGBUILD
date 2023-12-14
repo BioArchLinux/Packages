@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Multivariate Imputation by Chained Equations"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-broom
@@ -48,8 +48,8 @@ md5sums=('0e44a4e8e2f690d7393e90568b5b6e08')
 sha256sums=('29f0285185a540337e9dde2357690c82d174f115be701ee2f0a7083173a44040')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

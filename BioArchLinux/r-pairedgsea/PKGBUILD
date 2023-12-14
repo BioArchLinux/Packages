@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Paired DGE and DGS analysis for gene set enrichment analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-aggregation
@@ -46,8 +46,8 @@ md5sums=('591cbbc31b4eab5064ef39c4b8133fa5')
 sha256sums=('bead1ecc8d1cc2f4e370ec6062bc0a873a5b2cce3818937c5c6a1bb7e02b97d1')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=5
 pkgdesc="Anything to 'POSIXct' or 'Date' Converter"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-rcpp
@@ -29,8 +29,8 @@ md5sums=('227a392363d0b874772a474940170670')
 sha256sums=('1096c15249ac70997a8a41c37eeb2a6d38530621abeae05d3dcd96a8acc7574a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

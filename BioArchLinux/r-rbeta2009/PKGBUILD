@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="The Beta Random Number and Dirichlet Random Vector Generating Functions"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r
@@ -17,8 +17,8 @@ md5sums=('38000662ab8b2318b24447ca0bfa984b')
 sha256sums=('d8be1df85ff880a2849013b0c4ab80138b1ae32273e803a9196a25db2ced5f52')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

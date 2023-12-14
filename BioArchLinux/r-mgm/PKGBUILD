@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Estimating Time-Varying k-Order Mixed Graphical Models"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-glmnet
@@ -28,8 +28,8 @@ md5sums=('153028b85da8ceafb4bfaaf3c7fa410f')
 sha256sums=('fcdf895a6d782217e8705394a21f5803cbaccaefb94c5618b4ea6f6482dbb0c8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

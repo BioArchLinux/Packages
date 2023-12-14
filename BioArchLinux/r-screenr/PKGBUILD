@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Package to Perform High Throughput Biological Screening"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-dplyr
@@ -40,8 +40,8 @@ md5sums=('bb8bd3276b17f7e0d63de9c19e64473d')
 sha256sums=('a1b28353c9292d6760fa60e1f1bdd9a884619332c5f69ab6c5ea2ef3b9fa5b88')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="xcore expression regulators inference"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-delayedarray
@@ -49,8 +49,8 @@ md5sums=('4dd79b63bd7ff46aaa1b84dade889db2')
 sha256sums=('a76393504e53465ec243c02997f8aeb8c40dc9293738064012f1aeaf57362754')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=13
 pkgdesc="Private Configuration for 'R' Packages"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -25,8 +25,8 @@ md5sums=('7b9ca1d45d941238381cb55d13ff4d68')
 sha256sums=('330fef440ffeb842a7dcfffc8303743f1feae83e8d6131078b5a44ff11bc3850')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

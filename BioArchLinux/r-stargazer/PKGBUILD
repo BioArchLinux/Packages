@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Well-Formatted Regression and Summary Statistics Tables"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -18,8 +18,8 @@ md5sums=('4693401f69789744f3db458dd277563c')
 sha256sums=('208e9b48a11cf56ce142731c204f3d2bcb5b68719f84309a36362cd925414265')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

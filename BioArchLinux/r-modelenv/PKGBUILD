@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Provide Tools to Register Models for Use in 'tidymodels'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-glue
@@ -27,8 +27,8 @@ md5sums=('3ea3e9365c8c36752036b20aec780a6f')
 sha256sums=('b119754ab9b338e7e2be8849c634e715226dbc3f0a79b1e5c7567d27f41accde')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

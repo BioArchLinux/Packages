@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Reference-free Cell-Type Deconvolution of Multi-Cellular Spatially Resolved Transcriptomics Data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocparallel
@@ -39,8 +39,8 @@ md5sums=('2908e0d59713b2c3ef6c7bc549d0d123')
 sha256sums=('172c5e0ed57d279eaebc7496e7be51af4d460aa2902495abbc5a6aee91077c9b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

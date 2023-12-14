@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Tests of Non-Nested Models"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-compquadform
@@ -42,8 +42,8 @@ md5sums=('404b9edab7bb21841bd359fdfc2c5c82')
 sha256sums=('b59144f50fb264fd0d40ee770bf25047bf0f37fa154620d8fe0a91c0065061e8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

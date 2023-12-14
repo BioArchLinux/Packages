@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Classes and Methods for Spatial Data"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -30,8 +30,8 @@ md5sums=('b06218c0fc28bc70fafcd40fd60cfd08')
 sha256sums=('bfdbb4a62f9fe0c554f88c75af6f214dc9a550da09bd3aefe1115ac6963e0dc5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

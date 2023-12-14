@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="gDRtestData - R data package with testing dose reponse data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-checkmate
@@ -31,8 +31,8 @@ md5sums=('8de3dea2673f0e7dc9412e36da2c4f9d')
 sha256sums=('19b06102d2720e5d2b423a98b7075fecf22b7769314ed64c6379c3c0f6f5995f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

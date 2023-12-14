@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Create Interactive Chart with the JavaScript 'Billboard' Library"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-ggplot2
@@ -34,8 +34,8 @@ md5sums=('46c766c3238792e3bc6b3e59bd9c7bf6')
 sha256sums=('766201c8a09b56d7c35ff69862ae2315fe8bf209d26aae5fb20957cb690cd22f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

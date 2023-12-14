@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Record Everything that Happens in a 'Shiny' Application"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-anytime
@@ -38,8 +38,8 @@ md5sums=('25ffc5c472d557ee69e2d18aa4ae352d')
 sha256sums=('527e362c0f00571d2463187c90486563922e813c988037d989764cc13ff829f0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

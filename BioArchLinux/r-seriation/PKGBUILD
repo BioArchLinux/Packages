@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Infrastructure for Ordering Objects Using Seriation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-ca
@@ -51,8 +51,8 @@ md5sums=('e44c7b7bfe1340609df38646cbdccf3c')
 sha256sums=('d2339c52f581d1970ecf57c874a0d95810e9cd5f2fcde8f17376964c8e21339f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

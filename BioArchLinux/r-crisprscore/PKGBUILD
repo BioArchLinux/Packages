@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="On-Target and Off-Target Scoring Algorithms for CRISPR gRNAs"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-basilisk
@@ -35,8 +35,8 @@ md5sums=('c83f7928b03ce0308175835556dfcb54')
 sha256sums=('dea74cc8cc0cbe2ac8d0280230b114e426356694b5845764a1adc8e49f6c3828')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="RolDE: Robust longitudinal Differential Expression"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-doparallel
@@ -30,8 +30,8 @@ md5sums=('12c19e976fa6e9be2e9fa9a433690355')
 sha256sums=('08b694f03c455a1a7e78612ac69b9a806cdc214145f3b434b3943375c793dc3c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

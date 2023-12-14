@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Foundation of vector-like and list-like containers in Bioconductor"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -34,8 +34,8 @@ md5sums=('ee94f4f6c25dcaf7a50f5814495310e3')
 sha256sums=('4cd9a63b3b41b08fca8121dc5b8f43d6f7d580842b1b000055dee90b68f49982')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Analysis Tools for 10X V(D)J Data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocparallel
@@ -38,8 +38,8 @@ md5sums=('938051376344953e02e510f65d156939')
 sha256sums=('6ebac64d0ec90c9042d47637f18e24749bfb75c0fd3564b0d3ff1c096e7ca6e9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

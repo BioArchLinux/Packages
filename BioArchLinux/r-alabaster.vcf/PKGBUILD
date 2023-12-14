@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Save and Load Variant Data to/from File"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -31,8 +31,8 @@ md5sums=('e0873ba68051843f6a35b01fef673423')
 sha256sums=('29326985006669d777daaf9e2134149754a9e99cb6f2f0d0afe32e118265fc77')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

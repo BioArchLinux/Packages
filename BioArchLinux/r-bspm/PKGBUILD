@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Bridge to System Package Manager"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   gobject-introspection-runtime
@@ -36,8 +36,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build dbus
-  R CMD INSTALL "$_pkgname" -l build \
+  mkdir build dbus
+  R CMD INSTALL -l build "$_pkgname" \
       --configure-vars="BUILD_ROOT=$srcdir/dbus"
 }
 

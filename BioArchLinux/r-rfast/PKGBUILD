@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Collection of Efficient and Extremely Fast R Functions"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -28,8 +28,8 @@ md5sums=('ba455888bd71d3cbce27d29be5f1948c')
 sha256sums=('f9e46cac99db756cd49c9cd83be8adc0d381e6c03102389bfdcb8258d02418ff')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="POSIX System Utilities"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   apparmor
@@ -26,8 +26,8 @@ md5sums=('ea966ea9fb4f59ef99cb6cfa09432fa7')
 sha256sums=('576172d667598245413374121bdcefe6445773aedbb6ce3baf0be2ad5a9a19b9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build \
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname" \
       --configure-vars=FORCE_APPARMOR=1
 }
 

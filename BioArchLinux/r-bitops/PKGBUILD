@@ -13,7 +13,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=11
 pkgdesc="Bitwise Operations"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -23,8 +23,8 @@ md5sums=('b5294b9769a5a9de1e5dc869fdac2bad')
 sha256sums=('e9b5fc92c39f94a10cd0e13f3d6e2a9c17b75ea01467077a51d47a5f708517c4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

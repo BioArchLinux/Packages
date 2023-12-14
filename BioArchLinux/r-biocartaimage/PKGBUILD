@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="BioCarta Pathway Images"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-magick
@@ -26,8 +26,8 @@ md5sums=('8190c93a49f3d53085b3e6e44d482ffa')
 sha256sums=('69b3c5c40dd8d896714b644630bb8b579ec08c61f2114bfc7049c047b7fde076')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Authoring Books and Technical Documents with R Markdown"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   pandoc
@@ -50,8 +50,8 @@ md5sums=('f4bb797613b2e89435e211f2d55b0912')
 sha256sums=('b3c11156d873ea892b548344d02e01bbfa3505002ab948010bdcf28215f548a2')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

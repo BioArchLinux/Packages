@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Authentication Management for 'Shiny' Applications"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-billboarder
@@ -35,8 +35,8 @@ md5sums=('d5c4711312e295b09dcdd35cdac7ba88')
 sha256sums=('b6cd31149aaffd81d181a0c2f19eee8963b32912b3df1149e56448fe9a38865a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Fitting Linear and Generalized Linear Models to Large Data Sets"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-biglm
@@ -18,8 +18,8 @@ md5sums=('48a7f9d2722b0142fc0372a6d8769acf')
 sha256sums=('f8663677c10ff324c5639402060ddd2b1a1e917445cb0f8f84e146b85e82bb4b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

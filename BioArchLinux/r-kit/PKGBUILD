@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Data Manipulation Functions Implemented in C"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r
@@ -17,8 +17,8 @@ md5sums=('29b1c1c591f4e3649153c81045e173a3')
 sha256sums=('557eee17077157120a129294c10eeaa18ae97d897d460cc3c69a2b3390ebfabf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

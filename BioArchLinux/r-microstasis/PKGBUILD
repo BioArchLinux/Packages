@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Microbiota STability ASsessment via Iterative cluStering"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocparallel
@@ -36,8 +36,8 @@ md5sums=('7b9b67613eb5e6b69918dffc9d4060d8')
 sha256sums=('9ca497654f2e36d340ea7efad8792b625c30dde10400ae83284464d9ba00a266')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tools for finding Total RNA Expression Genes in single nucleus RNA-seq data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-purrr
@@ -38,8 +38,8 @@ md5sums=('d76ba3f3707e1810e6491d04013d6e7b')
 sha256sums=('e56b07ec0a89fd774846e4c5f600efc221bec508f60905f6694909cab9c5ab7f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Confidence Intervals"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -26,8 +26,8 @@ md5sums=('628fd405c1c04154e90bfd7eca2bfb44')
 sha256sums=('7a104a2e7ef43405e70013bc99529a28bfe4cc4b61cdcc7dddc73426a665293e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

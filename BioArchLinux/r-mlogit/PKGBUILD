@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Multinomial Logit Models"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-dfidx
@@ -30,8 +30,8 @@ md5sums=('08c4273d0762bd0044cf6677c927df9b')
 sha256sums=('6f3ea97db410be929a3078422f3d354d2f17855a21bbdc7c2c09d901e233d143')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

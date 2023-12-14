@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Embedded JavaScript and WebAssembly Engine for R"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   nodejs
@@ -31,8 +31,8 @@ md5sums=('3060d1c091396baabfe5d52789058e09')
 sha256sums=('5b6dd6133d83f3cc7297d0369706070f26c376d6ce6fb4cfcf2ad5308abd3a89')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build \
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname" \
       --configure-vars="V8_PKG_LIBS=-lnode V8_PKG_CFLAGS=-I/usr/include/node"
 }
 

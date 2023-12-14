@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Visualizations of Distributions and Uncertainty"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-cli
@@ -70,8 +70,8 @@ md5sums=('1dd3ff51bdfffa5fc48032ace31a2470')
 sha256sums=('6705e8a252701bc162bbbe26f7cbb3e95e93a11af6288456ab711f5d0c0df929')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

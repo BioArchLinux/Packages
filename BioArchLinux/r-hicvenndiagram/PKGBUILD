@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Venn Diagram for genomic interaction data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-complexupset
@@ -37,8 +37,8 @@ md5sums=('11577b64cc67b69e4b9d712a76cd3310')
 sha256sums=('0b172ec2b21d62be894deb7a67794d6f954b900f0eadbbcd03b0f2fbb506dc75')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

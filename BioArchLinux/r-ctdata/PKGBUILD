@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Data companion to CTexploreR"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-experimenthub
@@ -29,8 +29,8 @@ md5sums=('d130308cf078329f4cc6a1cc8055475d')
 sha256sums=('86ffadabf93b0537448d214c61db5e10ca6f24b258016685b42debb40ab2c5bd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

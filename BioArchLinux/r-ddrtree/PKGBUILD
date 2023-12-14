@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=8
 pkgdesc="Learning Principal Graphs with DDRTree"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-irlba
@@ -23,8 +23,8 @@ md5sums=('b9970fe30d198db164d071f87abd17a5')
 sha256sums=('d351ec029461b43c0dcc7c30d9f378753b31ba16c6dbf667869df279b874459b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="An 'SVG' Graphics Device"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   libpng
@@ -37,8 +37,8 @@ md5sums=('46154cf187ad6ec377269b6307de16f4')
 sha256sums=('f0a8564e6f9127f4d1e05cf5a5f36b4e244aee0008e27473e504c63873ef0a54')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

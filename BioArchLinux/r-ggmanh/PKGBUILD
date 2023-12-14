@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Visualization Tool for GWAS Result"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-gdsfmt
@@ -34,8 +34,8 @@ md5sums=('dbbd8130e9ef70cb69c7e305af0c37d7')
 sha256sums=('10842e9355ca1984a5204eeb6d2972bb922fb9462964a1b720647c73738958c8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

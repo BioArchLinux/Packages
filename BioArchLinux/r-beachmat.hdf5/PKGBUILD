@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="beachmat bindings for HDF5-backed matrices"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-beachmat
@@ -34,8 +34,8 @@ md5sums=('b2ca9b6358fb05895101e6a911ca0e39')
 sha256sums=('055de00d362f1a45c7991dd2917a73a37a9b378f2760e30a61a2cc200f0b1dc6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

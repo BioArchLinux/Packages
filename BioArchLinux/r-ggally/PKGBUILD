@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Extension to 'ggplot2'"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-dplyr
@@ -67,8 +67,8 @@ md5sums=('ba770293c7c59d282359e9425e0c3f7b')
 sha256sums=('dce20b47d639aa1ad63d9f14aae48c554d1e787758876c9842bf0e093bab80dd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

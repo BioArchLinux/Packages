@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Statistical Methods for Analysing Multivariate Abundance Data"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(LGPL)
 depends=(
   gsl
@@ -29,8 +29,8 @@ md5sums=('5ff7cf64b64e2d8ca4df9c3d198d3cf4')
 sha256sums=('ed6946c95609443584081100cd38624d2309f7f5d210fd4b8ec12ad25bd27a06')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

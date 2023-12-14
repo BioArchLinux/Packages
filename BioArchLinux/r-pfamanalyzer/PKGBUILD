@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Identification of domain isotypes in pfam data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-dplyr
@@ -26,8 +26,8 @@ md5sums=('20159a7f365760efda4827ae6fff80d3')
 sha256sums=('c7f89b30e3613df2a814fcfbd64c69d1d786da228cbf1a0ec1692deee6b9bd63')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

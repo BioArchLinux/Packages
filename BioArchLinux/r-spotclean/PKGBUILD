@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="SpotClean adjusts for spot swapping in spatial transcriptomics data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-dplyr
@@ -41,8 +41,8 @@ md5sums=('b6e7be89394d959837993f3fd385ad55')
 sha256sums=('64b09ee1226b18db386581e2a73b7557780711583f2d83f03b4ea7f51734ca1a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

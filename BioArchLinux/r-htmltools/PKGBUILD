@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Tools for HTML"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-base64enc
@@ -38,8 +38,8 @@ md5sums=('3c644008d5b8c8dd01bedfda0d8a6527')
 sha256sums=('ecb0d82619063f49e4d001c44fcc1b811a06928fd66c2bb8c86632798d98b386')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

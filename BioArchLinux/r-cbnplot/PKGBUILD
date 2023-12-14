@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="plot bayesian network inferred from gene expression data based on enrichment analysis results"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocfilecache
@@ -54,8 +54,8 @@ md5sums=('d589e9361caf3409d65345cc48e5ccee')
 sha256sums=('bf7db675851fc03082cf25320cd261c40635687249871cd185533764b637f012')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

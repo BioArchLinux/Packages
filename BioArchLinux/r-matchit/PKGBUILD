@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Nonparametric Preprocessing for Parametric Causal Inference"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-backports
@@ -46,8 +46,8 @@ md5sums=('868543cc83c7567510e676e52daf3819')
 sha256sums=('ae39cafdd3a52487e3ebff1b49642f516cf64321fea90fa57ce3d545a259859e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Data required for getting the gene set scores with NetActivity package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -21,8 +21,8 @@ md5sums=('a3805046d14d13afc30a0f082952f200')
 sha256sums=('d4ce5ff252b9773d73edf218ab271ddeea9574d2af7957661fad5099bc8071c0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

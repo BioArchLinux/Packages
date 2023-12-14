@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Spatial Data Analysis"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   gdal
@@ -34,8 +34,8 @@ md5sums=('42c214df7dbbd496c6a705063a992582')
 sha256sums=('7000bdfd8591be64921cf841ef29b2aad74661781865f29e1540e57a7d7231ec')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

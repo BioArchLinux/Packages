@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Data for epimutacions package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -24,8 +24,8 @@ md5sums=('e2681ab8096fd0f2b7e5d8ed68928280')
 sha256sums=('d013481954019fd8d7e089af8a9f08783b45fba285e75d6df6b5e1099a0a70bd')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

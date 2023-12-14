@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Bayesian hierarchical mixture of factor analyzers for modelling genomic bifurcations"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL)
 depends=(
   r-biobase
@@ -36,8 +36,8 @@ md5sums=('37fa2e82d83636458e9a20cc72069dcd')
 sha256sums=('4e98fbf604696392ae4fe31a4755415eb906a721c2e2ceab68c0e22f0cd51841')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

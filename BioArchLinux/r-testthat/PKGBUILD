@@ -14,7 +14,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Unit Testing for R"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-brio
@@ -52,8 +52,8 @@ md5sums=('cb9ddcf70c6b030743c9685e0f104f67')
 sha256sums=('1d980e611b01c194007639a100c3ddaeaab77786d32f81680f497f99e60748ad')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

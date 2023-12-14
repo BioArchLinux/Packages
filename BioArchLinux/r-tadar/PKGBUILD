@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Transcriptome Analysis of Differential Allelic Representation"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocgenerics
@@ -39,8 +39,8 @@ md5sums=('88c91583a351bef3f3d8ca38b51c0c04')
 sha256sums=('e5ca296ed8db6cae9aa93322f2b3f77fac41c0caa56ec90efe540011077f69ec')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

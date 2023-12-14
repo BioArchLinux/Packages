@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Adaptive Multivariate Integration over Hypercubes"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-rcpp
@@ -28,9 +28,9 @@ md5sums=('2ba4be5bef4581b51748b04105ec4c8b')
 sha256sums=('5d82785609611200d5bea069b93b0bf75bafec808f7eeef7b052eb516f273665')
 
 build() {
-  mkdir -p build
+  mkdir build
   # parallel build results in undefined behavior
-  MAKEFLAGS="-j1" R CMD INSTALL "$_pkgname" -l build
+  MAKEFLAGS="-j1" R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

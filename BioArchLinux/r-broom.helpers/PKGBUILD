@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Helpers for Model Coefficients Tibbles"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-broom
@@ -72,8 +72,8 @@ md5sums=('1f788779512992613da0c5619f0e0d33')
 sha256sums=('cdc12f35bfed5d3da55ac7c7e09974584c8e4cb7a2147429c53b7b1176c76a93')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

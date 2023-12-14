@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Interface to 'NetCDF' Datasets"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   netcdf-openmpi
@@ -28,8 +28,8 @@ md5sums=('43e3fbb2fb1f0e90adf31c246fa0fccf')
 sha256sums=('660148cb7e272859145de4da64f57ec959110bd6863af67f44ebf36fc5a7513e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build \
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname" \
       --configure-args="--with-mpicc=/usr/bin/mpicc --with-mpiexec=mpiexec"
 }
 

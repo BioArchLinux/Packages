@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Handles missing values and makes more data available"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-doparallel
@@ -32,8 +32,8 @@ md5sums=('6e81c009fe8678273d8091378ae2f8e3')
 sha256sums=('9226855ffafdcbdedb160b454e31faa2d368646d90b6c8975ae19ac973c44fbf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

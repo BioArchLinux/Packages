@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Creating and Using (Chemical) Compound Annotation Databases"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationfilter
@@ -44,8 +44,8 @@ md5sums=('7863bdbb64d2068c22225ece8ed5844c')
 sha256sums=('a3bc52352f715319129225eefbb2581ba1426a7ec8c057582a276a983b0f70b9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

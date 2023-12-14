@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Assigns Colours to Values"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-rcpp
@@ -30,8 +30,8 @@ md5sums=('6fafd9e1e0234875b6744ef786f62160')
 sha256sums=('36261277a88f8f9e759f69277ea73ba4ea8ab715a1e9f4e57209c43ee4dc395f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

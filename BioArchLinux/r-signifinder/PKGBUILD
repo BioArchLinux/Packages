@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Implementations of transcriptional cancer signatures"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(AGPL3)
 depends=(
   r-annotationdbi
@@ -53,8 +53,8 @@ md5sums=('f24a46dbbbc9b688450e9f2a0e2e221e')
 sha256sums=('330b2ae04fd1b4d02053dfecc4698efe3543c7ea42e430e0df2598915c2464fa')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

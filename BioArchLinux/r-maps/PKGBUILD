@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Draw Geographical Maps"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   r
@@ -25,8 +25,8 @@ md5sums=('8b90d63023e7d3357b3e8f6a99eed590')
 sha256sums=('d39d467537c336d20c4b501d36a421dd3e8309c9d1bdcf9b4a7abe994242851a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

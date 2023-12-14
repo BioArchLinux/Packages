@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="A Common API to Modeling and Analysis Functions"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -71,8 +71,8 @@ md5sums=('4bd785c12a9ef091a3a69db37b29f463')
 sha256sums=('2241336c3cd1fed7c882228d524388aa4bc6645110e781afad3d932a769d0bc8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

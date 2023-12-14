@@ -12,7 +12,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="Sparse Linear Algebra"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -25,8 +25,8 @@ md5sums=('482572eed65ae53bb988a2753ce09718')
 sha256sums=('bd838f381ace680fa38508ff70b3d83cb9ffa28ac1ab568509249bca53c34b33')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

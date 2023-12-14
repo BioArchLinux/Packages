@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -53,8 +53,8 @@ md5sums=('f9dede77d366a4e7b1bbec53a4e101de')
 sha256sums=('cb852d6f560c329a7dc17aa760f09a0950413513dc8abfc3facb6418b2934a49')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="An R packaged zlib-1.2.5"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r
@@ -24,8 +24,8 @@ md5sums=('babdaf77bc9e9e8218fa07d643f31730')
 sha256sums=('fb0d05dfe549f6676dc764ec86f797ca1d878fe3cd1dea68b79d323ff8e37d10')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

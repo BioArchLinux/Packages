@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Extending tidy verbs to genomic interactions"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocgenerics
@@ -46,8 +46,8 @@ md5sums=('e072613b18768f43d832eaa32354bbc9')
 sha256sums=('26c741611517bc92e1a09cacf650b64b5beef28ee3e4eabf9d21efe995ad21b8')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="An R package for gene and isoform differential expression analysis of RNA-seq data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-blockmodeling
@@ -25,8 +25,8 @@ md5sums=('e64aabb38197aba0ee5985a1558cce60')
 sha256sums=('9c5818ed988a1b3e416f3300ad56d4ae778485deb3b51eb6ee31bea91074a91f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A Word Cloud Geom for 'ggplot2'"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-colorspace
@@ -38,8 +38,8 @@ md5sums=('7ba9894b559065f9141fac1dc964eceb')
 sha256sums=('b7bbbc02eff4f6519edc0e854b3bd4d9f9fc34e61ebc4e540869814ffdbe7db9')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

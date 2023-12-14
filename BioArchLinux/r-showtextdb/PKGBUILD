@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Font Files for the 'showtext' Package"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(Apache)
 depends=(
   r-sysfonts
@@ -21,8 +21,8 @@ md5sums=('f70b8177f5cd2805148bf01822ed2c19')
 sha256sums=('027f5d0ab91eb27c72b6e918a2915b6087f7408b66c1630d69b3e507dd609642')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

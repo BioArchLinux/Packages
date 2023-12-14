@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Genomics explorer using statistical and survival analysis in R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-car
@@ -46,8 +46,8 @@ md5sums=('e3cbf07a76da1ae0aa6e669bad2cb778')
 sha256sums=('ae75596cfc64be63f8c782b447c35bd8d1977c646374c861a4e32d65ff8c6037')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

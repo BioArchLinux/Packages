@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="GEOexplorer: a webserver for gene expression analysis and visualisation"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -55,8 +55,8 @@ md5sums=('213a1b499ce1d0640b267c8fb41e3204')
 sha256sums=('fce2f86eb58a9ba5892e33f9d4c31d6b05a129c16096e2ba021d8ab6b0d412ca')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

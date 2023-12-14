@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Ensembl based annotation package"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-ensembldb
@@ -17,8 +17,8 @@ md5sums=('16b5629805c07649b2aa501d34fcc588')
 sha256sums=('eff1ae8d7f4ed5c6bed335de63a758be593750fb0b3483c01cf50402688d244d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

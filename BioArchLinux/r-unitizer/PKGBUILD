@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Interactive R Unit Tests"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-crayon
@@ -22,8 +22,8 @@ md5sums=('a0e2e77bc73d40eff1e07cd684a16e80')
 sha256sums=('5afb6d3aebd17689c277a69970b6c7e4f81c0b359ed7f1dbf4257ddafa7e5268')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

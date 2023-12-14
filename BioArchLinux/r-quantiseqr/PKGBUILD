@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Quantification of the Tumor Immune contexture from RNA-seq data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -41,8 +41,8 @@ md5sums=('34cd21d2e59e1f8f58001fdcc49eaf44')
 sha256sums=('9e50016461c1fda327e55aa2f9849bc0f0b25554c8935aaa997cd137b5d75e05')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

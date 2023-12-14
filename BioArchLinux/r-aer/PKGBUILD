@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Applied Econometrics with R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-car
@@ -45,8 +45,8 @@ md5sums=('b421c70f87a06b6ffa2478944aabdd9c')
 sha256sums=('650a5fb54a8addf8c86f1e0f88f4fac5349731bc5bf34762a991022140eedbdc')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

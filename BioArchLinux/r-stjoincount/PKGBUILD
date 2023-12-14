@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="stJoincount - Join count statistic for quantifying spatial correlation between clusters"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-dplyr
@@ -35,8 +35,8 @@ md5sums=('85dd3f81a773ede72a70185cb4132d2b')
 sha256sums=('9f29095aaf05ac1d2f4bd293ef0e415a947ed4d6f88190c589ca2ea43aaec747')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

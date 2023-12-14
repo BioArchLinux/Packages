@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Gene set analysis following differential expression using linear (mixed) modeling with dream"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-enrichmentbrowser
@@ -43,8 +43,8 @@ md5sums=('60c9729fb2407d62a1ea15b1aa5ee0eb')
 sha256sums=('e4125d970e64108ee099b916fa4013b9f732ba4198d9ad838c50a27b93d9c373')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

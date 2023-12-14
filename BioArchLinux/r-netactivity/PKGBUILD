@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Compute gene set scores from a deep learning framework"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-airway
@@ -35,8 +35,8 @@ md5sums=('3493b441d888adf6d3a089936bbeafd6')
 sha256sums=('93e4b6bfe258f29d9d6123dfc0f0aaf332e537211025a4d6c975ee624032324a')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Testing DBI Backends"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(LGPL)
 depends=(
   r-blob
@@ -38,8 +38,8 @@ md5sums=('a43445d47911fa2d62ec63c653522354')
 sha256sums=('30b7026378fedaec7e730fa4e242968dd70642f496457d7bf47d35e5c7ab891c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

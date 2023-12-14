@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Generalized Linear Models Extended"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-formula
@@ -25,8 +25,8 @@ md5sums=('809eac8845e282100ce327852a725682')
 sha256sums=('fd95fdadc61924a1463d9417161edf62469ba58bcb5e2af4249749f09defcf1d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

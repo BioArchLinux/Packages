@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Single Sample directioNAl Pathway Perturbation analYsis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-dplyr
@@ -52,8 +52,8 @@ md5sums=('15f7a550e110c069710c3f6572a06e83')
 sha256sums=('43943cb2cef095915ec8ea68818be9953f51322def8fb50a1b1c407887a62a72')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

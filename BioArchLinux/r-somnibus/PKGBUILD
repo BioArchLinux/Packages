@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Smooth modeling of bisulfite sequencing"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotatr
@@ -44,8 +44,8 @@ md5sums=('0865c015122f915127302bf751a10812')
 sha256sums=('4f464b57f1b26664210e3b43072969ec4eb77f6f1c7b0b15149692994318ba89')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

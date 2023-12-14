@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Detection of SARS-CoV-2 lineages in wastewater samples using next-generation sequencing"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-data.table
@@ -32,8 +32,8 @@ md5sums=('7a06bfea8fdf81ea88ebe7f4478607f6')
 sha256sums=('2606c8052dc41b4d9fe8c1b6c6ae075c8b06d2f2b395c822f73abca4e0217c7b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

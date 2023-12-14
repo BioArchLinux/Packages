@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tools for the Analysis of Air Pollution Data"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-cli
@@ -34,8 +34,8 @@ md5sums=('301c3df8314138c6193499cff523c396')
 sha256sums=('e06febbe421a6493dff0a3c05b894bb1fffdfb1c4fed576288974f5dae597cc3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Summarizing Regional Methylation with Regional Principal Components Analysis"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-dplyr
@@ -35,8 +35,8 @@ md5sums=('37f0fc1370efacc719f72b419455096a')
 sha256sums=('e16add6355dc7e8f0abf1e64ebf7d630353fbe344029064834c5504ae6e9403d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

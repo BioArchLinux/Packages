@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="compSPOT: Tool for identifying and comparing significantly mutated genomic hotspots"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-data.table
@@ -31,8 +31,8 @@ md5sums=('7aa69c9c3ec0c008ad0fdfb4dbbcac57')
 sha256sums=('6b11254933cfd20fc3aae611e9d38d7c6ef10e0a7251f06847b9cb48e4c61a8f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

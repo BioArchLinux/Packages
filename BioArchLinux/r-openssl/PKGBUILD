@@ -13,7 +13,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Toolkit for Encryption, Signatures and Certificates Based on OpenSSL"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   openssl
@@ -39,8 +39,8 @@ md5sums=('638ba0b9ff6d9376e21a9063ce4dd20a')
 sha256sums=('faa726f9af2a97d5fa1e1044f4a38ee2edd4c81f0beb5830f6a36ff249b64bdc')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

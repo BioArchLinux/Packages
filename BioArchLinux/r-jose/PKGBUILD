@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="JavaScript Object Signing and Encryption"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-jsonlite
@@ -28,8 +28,8 @@ md5sums=('977518b8c7369d6cac8507a86038df67')
 sha256sums=('7bd098edbcafebd066ea6a3e85f31305deadac66d994409ea275698aade56626')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

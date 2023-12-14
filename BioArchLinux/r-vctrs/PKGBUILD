@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Vector Helpers"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-cli
@@ -41,8 +41,8 @@ md5sums=('191f3037d9b6f3f8640661f61e2aeb93')
 sha256sums=('43167d2248fd699594044b5c8f1dbb7ed163f2d64761e08ba805b04e7ec8e402')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

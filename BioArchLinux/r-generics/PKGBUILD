@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Common S3 Generics not Provided by Base R Methods Related to Model Fitting"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r
@@ -30,8 +30,8 @@ md5sums=('655261e97ea23c9193b047a27eee5d0e')
 sha256sums=('75046163bfa8b8a4f4214c1b689e796207f6447182f2e5062cf570302387d053')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

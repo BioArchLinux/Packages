@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="An Investigation Across Different Species and Tissues"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationdbi
@@ -45,8 +45,8 @@ md5sums=('217ff53ed0aac2ca3c2d91ce5237c111')
 sha256sums=('11cdc5e047708b2c2a37cea00fcce76a61c73d158ef8241d81931b3210a2a791')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

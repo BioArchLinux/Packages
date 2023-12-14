@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Dependency-Free Access to PNG Image Files"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(BSD)
 depends=(
   r
@@ -24,8 +24,8 @@ md5sums=('07ee60b41a730f551f95da3865d23760')
 sha256sums=('7e1b977a8e62b29717866a61c98245860fa32ae5ab3d8362096d8e296acc83a6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

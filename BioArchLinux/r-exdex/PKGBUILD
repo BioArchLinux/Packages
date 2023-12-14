@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Estimation of the Extremal Index"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-chandwich
@@ -33,8 +33,8 @@ md5sums=('a30891a6c53ec03fa527562dedba2b2f')
 sha256sums=('e6668c37c5c3762f550373f4e24a0fdd3af74b7d38562c0930c0abfe4499abee')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

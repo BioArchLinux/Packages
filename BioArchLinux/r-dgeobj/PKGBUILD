@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Differential Gene Expression (DGE) Analysis Results Data Object"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-assertthat
@@ -36,8 +36,8 @@ md5sums=('8d84369964ade6ee4707681568feb390')
 sha256sums=('c3deabb98e90085373a4a438f40e7b481e7cc37e9ebd9ade356ee43599a1cd02')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

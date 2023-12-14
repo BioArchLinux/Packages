@@ -13,7 +13,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=10
 pkgdesc="Lazy (Non-Standard) Evaluation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r
@@ -32,8 +32,8 @@ md5sums=('1de725fe0cd496a2535020867458641a')
 sha256sums=('d6904112a21056222cfcd5eb8175a78aa063afe648a562d9c42c6b960a8820d4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

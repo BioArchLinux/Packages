@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Load and Save SingleCellExperiment from File"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.base
@@ -28,8 +28,8 @@ md5sums=('e508f30fb84947c7246b093b63a5aea3')
 sha256sums=('7f335edf1edac01869d5d2790390af327b409acc7c5644750376cfe48e8f64be')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Hierarchical Epitope pROtein biNding"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-data.table
@@ -34,8 +34,8 @@ md5sums=('9c146a8d99bada338098732e1de5a5e2')
 sha256sums=('b1a365540c32dac743dc87e5428e26692fd7174ec8a76f014d19e727ab60e34b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

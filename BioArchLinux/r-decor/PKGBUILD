@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Retrieve Code Decorations"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-tibble
@@ -26,8 +26,8 @@ md5sums=('b804d7c8cd20cfffc84e4c0bcb194e58')
 sha256sums=('2e6c0cf3804253298c43c7cc64e389cf0ef2bebdca18753a487b9861e54671f6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

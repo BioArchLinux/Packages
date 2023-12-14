@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Calculate the concordex coefficient"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocparallel
@@ -41,8 +41,8 @@ md5sums=('5ffab81582264ccb300c9f937c698adf')
 sha256sums=('bc69c64f07d6813f337c65ce8edf8db066c3eaeb4c9a89b75cf9523a0926d71b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

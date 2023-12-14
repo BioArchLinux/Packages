@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Identification and classification of duplicated genes"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-annotationdbi
@@ -34,8 +34,8 @@ md5sums=('e494ee8650e6c8a13c7149c68683bea8')
 sha256sums=('907a504886fc6f1b6c1a33dec6326a9f118296f66db969d0fbec6a76888c0376')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

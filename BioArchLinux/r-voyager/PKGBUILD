@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="From geospatial to spatial omics"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biocparallel
@@ -71,8 +71,8 @@ md5sums=('1cc32e63cf1c410d82c2cd1a26f9f929')
 sha256sums=('e04a6570a1b15319841d68946f59a9f9296b52c0776200a68663313ff447f538')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

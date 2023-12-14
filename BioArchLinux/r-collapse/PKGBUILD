@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Advanced and Fast Data Transformation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-rcpp
@@ -47,8 +47,8 @@ md5sums=('a382c337ac260818787d060daad1c08e')
 sha256sums=('6c854941a96822d28f2a25d5c205483b86b547b364df1c2e83d17febc8bbfb6b')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

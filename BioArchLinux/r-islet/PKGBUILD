@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Individual-Specific ceLl typE referencing Tool"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-abind
@@ -34,8 +34,8 @@ md5sums=('5cf5ae7df60062c1822ca64c3989a4e0')
 sha256sums=('7c6063f16c2ee43f03651bdacc4b0b578896ee65d474e184330d93954ac0f235')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

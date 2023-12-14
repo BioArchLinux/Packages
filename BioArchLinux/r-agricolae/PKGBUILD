@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Statistical Procedures for Agricultural Research"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-algdesign
@@ -18,8 +18,8 @@ md5sums=('27cdffab9bd7cf428cb005d41db13c00')
 sha256sums=('c5ade90ee23299de1d20e93406d9f4cb39bd92c51094e29306ec74baa1b34a7d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

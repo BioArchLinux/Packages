@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Ratio-of-Uniforms Simulation with Transformation"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -33,8 +33,8 @@ md5sums=('50a94d316fe586446812ab92a4a3e9cc')
 sha256sums=('7f24a6609a1ade47b7d373e005d104dda89a1fadce7fb514675ffa7b043ce3de')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

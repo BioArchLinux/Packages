@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tools for Parsing and Generating XML Within R and S-Plus"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(BSD)
 depends=(
   libxml2
@@ -34,8 +34,8 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

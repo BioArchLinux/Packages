@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Functions to Access and Control Cytoscape"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-base64enc
@@ -39,8 +39,8 @@ md5sums=('d4f51eaf382ede111f69aefd2660e383')
 sha256sums=('f5a89f42adf224a83c4e77195ed43fe19a760fa2612b60d49081982b5cbe7262')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

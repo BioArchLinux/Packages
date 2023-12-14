@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Easily Improve the User Experience of Your Shiny Apps in Seconds"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-digest
@@ -31,8 +31,8 @@ md5sums=('23479086c139ba2d7d00c557f1e8895d')
 sha256sums=('7ec20cbf1b1fd7a32d85a56dfc0df8b5f67c828d241da400a21d893cb37ea9c5')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Genome wide annotation for Worm"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationdbi
@@ -22,8 +22,8 @@ md5sums=('441a5efb4649a1201b5552b14c1f1cef')
 sha256sums=('b8b06a6ebac8ea36f643d6dfb3f6a486a7d4a20561a1bb74eb424de3d7ca4bbb')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

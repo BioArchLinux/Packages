@@ -10,7 +10,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="High-Performance Stemmer, Tokenizer, and Spell Checker"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(LGPL)
 depends=(
   r-digest
@@ -34,8 +34,8 @@ md5sums=('8bd560b5bc128d9307a3d0e344a6a9b4')
 sha256sums=('fdaa1473a62dff2a5923b9bd958d87e546069ca22ce113f44e88c761338442f3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

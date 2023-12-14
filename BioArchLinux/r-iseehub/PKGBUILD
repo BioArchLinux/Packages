@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="iSEE for the Bioconductor ExperimentHub"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationhub
@@ -42,8 +42,8 @@ md5sums=('6ebb32da66242f608b83522fca1d9a62')
 sha256sums=('fcdfb6869261ce9571414904286a4b46f4a0be6df3770c75d7a22dd9d84e0899')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

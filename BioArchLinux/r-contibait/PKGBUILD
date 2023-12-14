@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Improves Early Build Genome Assemblies using Strand-Seq Data"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(BSD)
 depends=(
   r-bh
@@ -42,8 +42,8 @@ md5sums=('8297fd66bbfcd997be0f23cf31fcd644')
 sha256sums=('13c01ca0868c4465b3cbc26de283031a70772fad7d8cf244a417bc5541775eab')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

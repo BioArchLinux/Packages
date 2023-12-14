@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Unified methods for the inference and analysis of gene regulatory networks"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-annotationdbi
@@ -56,8 +56,8 @@ md5sums=('2f4adb3763df2df201212073e34bab10')
 sha256sums=('7079477eb6f06b23cbd52441254ce3441f3b7e39e3923af01e9152d7f20e78ba')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Tools for the Differential Analysis of Proteins Abundance with R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationdbi
@@ -67,8 +67,8 @@ md5sums=('98c2672a3b694f6d1989cdd4f00cd8e0')
 sha256sums=('c4913baf12a068824362c8f41c9372a437c8f2a80eb9a4bf557524593f894ddf')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

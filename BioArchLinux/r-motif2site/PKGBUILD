@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Detect binding sites from motifs and ChIP-seq experiments, and compare binding sites across conditions"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL2)
 depends=(
   r-biocgenerics
@@ -35,8 +35,8 @@ md5sums=('e8228f1deb42f2d4b3867a90a6eba14c')
 sha256sums=('04c6adcdc516e572a34c2842cb61b3929b1e9b97458cbd39260d047f874bc568')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

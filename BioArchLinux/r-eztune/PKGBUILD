@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Tunes AdaBoost, Elastic Net, Support Vector Machines, and Gradient Boosting Machines"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-ada
@@ -33,8 +33,8 @@ md5sums=('53c7837a42f53ac7def3dd6eb750d5e3')
 sha256sums=('d3d57b42cb436b805fc066ea7e0eb25c164f51795c250eb23eaaf2b5dea29a69')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

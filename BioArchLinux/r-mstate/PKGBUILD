@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Data Preparation, Estimation and Prediction in Multi-State Models"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-data.table
@@ -27,8 +27,8 @@ md5sums=('14aab86d42cc542dd73c96e279119ca9')
 sha256sums=('3c473dff6854e31cdbdaf79f8fe7eaf97119b01a581874a894b283555afe8d14')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

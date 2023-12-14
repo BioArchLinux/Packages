@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Package for handling the import of dose-response data"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-assertthat
@@ -48,8 +48,8 @@ md5sums=('0390ee6a16f21624044bc509ebdbabd1')
 sha256sums=('469a7e74c8478d9f5d7a79ca0365f3554d9a784d09b4e6ca73e3a9c10cb29ed3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

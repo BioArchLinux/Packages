@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Cohort-scale differential expression analysis of single cell data using linear (mixed) models"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-ashr
@@ -63,8 +63,8 @@ md5sums=('34ea1ec9e44c635699ed9cf8deed29cd')
 sha256sums=('eefbfcf96915cdfc80f5a5b9eca92a6dd391d768eaa26feb1ef7cd873007ab0c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Fast Fixed-Effects Estimations"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-dreamerr
@@ -34,8 +34,8 @@ md5sums=('9d2027d25c8a0081b878554544caf58b')
 sha256sums=('2dee113a0689e5c4dd842c451d35c9a94a5b37536f9484611a877c1ea10e2b65')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

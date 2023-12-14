@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Impute Covariate Data in RNA Sequencing Studies"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biobase
@@ -36,8 +36,8 @@ md5sums=('17d14273ae359562d3f0cbf1c45b10a7')
 sha256sums=('f163be9e6155e9d27b2f06c8326b3c0691ad05525d2598ad1187e6925310d65e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

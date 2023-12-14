@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Tools for Spell Checking in R"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-commonmark
@@ -25,8 +25,8 @@ md5sums=('47128c93e6cace1644edddfbb127de7b')
 sha256sums=('4fd4afcb5caa010630372c2dd32c34e8fc02ae385425c1f4b7dae697f8ab256f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

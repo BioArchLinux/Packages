@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Markers Automated Screening Tool in R"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationdbi
@@ -62,8 +62,8 @@ md5sums=('be4cab3fb29097cb5dd34ee7ba1ce228')
 sha256sums=('737aa6ecdc654d033c058c0c963ad640748fece20ba6ffe1afc53cb31b9e4b8f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

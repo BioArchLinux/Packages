@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Robust Bayesian T-Test"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-bayestools
@@ -47,10 +47,10 @@ prepare() {
 }
 
 build() {
-  mkdir -p build
+  mkdir build
   # compilation needs a lot of memory
   MAKEFLAGS+=" -j1"
-  R CMD INSTALL "$_pkgname" -l build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

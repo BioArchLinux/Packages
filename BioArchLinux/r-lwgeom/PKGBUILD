@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Bindings to Selected 'liblwgeom' Functions for Simple Features"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL2)
 depends=(
   geos
@@ -31,8 +31,8 @@ md5sums=('9bf0d8b96f4e19f2a042d50cb66d7989')
 sha256sums=('f0822888c029af48bf0238e3d20d82d3c75018e7e63728765a6220a6a0151c67')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

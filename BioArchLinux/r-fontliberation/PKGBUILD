@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Liberation Fonts"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(custom:OFL)
 depends=(
   r
@@ -18,8 +18,8 @@ md5sums=('7a317aca78d58fc0b2417380cc702864')
 sha256sums=('acdea423e005873aa509e280074a3cef4796e4f7e9d77b3945d77b451ea039f0')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

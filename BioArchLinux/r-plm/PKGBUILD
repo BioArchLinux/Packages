@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Linear Models for Panel Data"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-bdsmatrix
@@ -36,8 +36,8 @@ md5sums=('d79cf0f7deb647e93921ebc699a26b4d')
 sha256sums=('daab0b875becc2cc84af2fe748261d5f8a994fbbfac5a169413a718566e74c03')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

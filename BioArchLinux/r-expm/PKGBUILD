@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Matrix Exponential, Log, 'etc'"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -31,8 +31,8 @@ md5sums=('bca6fae94f270b8ec63c210519079a0c')
 sha256sums=('79e22a9fd17392c360b21d4d42c17d968a11e3c073cb8c50f4691f4bef700552')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

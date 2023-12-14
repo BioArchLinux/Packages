@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="MeRIP-Seq data Analysis for Genomic Power Investigation and Evaluation"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-annotationdbi
@@ -45,8 +45,8 @@ md5sums=('019cf9b038353b96851fe65fa55f3d08')
 sha256sums=('71b1fe8436fa3bd8037f002969f304b9588400cabcefafa3b851344ee914c662')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

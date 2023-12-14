@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Topographic and Geologic Mapping"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   r-fields
@@ -25,8 +25,8 @@ md5sums=('f24aae5a7eb4f18d67db573e5472db09')
 sha256sums=('8a17a78926cda3f885584f797db6765d218f89b39eda512ff8af379651fb483f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

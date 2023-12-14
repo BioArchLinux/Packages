@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Save Bioconductor Objects To File"
 arch=(x86_64)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-alabaster.schemas
@@ -36,8 +36,8 @@ md5sums=('2d6215dfe9b8412438f9b05b54be2331')
 sha256sums=('a300d1c7476257b52b5d9b6a8b5d47a4e0b03c178a3de965223ba182e061ffee')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

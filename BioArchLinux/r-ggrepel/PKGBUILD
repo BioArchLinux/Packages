@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Automatically Position Non-Overlapping Text Labels with 'ggplot2'"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-ggplot2
@@ -43,8 +43,8 @@ md5sums=('80614592620fcaa8a11f99995ecec94b')
 sha256sums=('81abb47270593709587480ffbc88dce3d3f695bd6f1164729311b37c50d7cf3e')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="NIH / NCI Genomic Data Commons Access"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-dplyr
@@ -49,8 +49,8 @@ md5sums=('6c945795f62ce3e0b470b07b892d3357')
 sha256sums=('bc54fdafd609f40a2b2cd598e332b2611d377b4c3d1aa20c345bc1f9199bd1c6')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

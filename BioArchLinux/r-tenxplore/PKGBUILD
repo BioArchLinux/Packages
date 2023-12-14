@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-annotationdbi
@@ -34,8 +34,8 @@ md5sums=('13e1778f8b644661a521bb832af6e7d6')
 sha256sums=('95b76b3e0c0e54d261395aa9f50c78a807273504811b0ccfa778f69a77ef68ea')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

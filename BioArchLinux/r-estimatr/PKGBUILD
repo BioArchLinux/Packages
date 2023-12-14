@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Fast Estimators for Design-Based Inference"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-formula
@@ -51,8 +51,8 @@ md5sums=('c8e716d7894d9febfca19b2e8fdfea36')
 sha256sums=('a9c8ce7a7f77d4e030052cced599e41376a91de8179e12dd79a5bf4eed91a9df')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

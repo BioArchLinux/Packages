@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Detection of miRNAs that regulate interacting groups of pathways"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(MIT)
 depends=(
   r-clusterprofiler
@@ -38,8 +38,8 @@ md5sums=('a8f96cdc267551107e69e8cb260a05c0')
 sha256sums=('683caee92d63498c49b5edcc84ec95490cd5f42a6b9d846b1113bb174cc57575')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

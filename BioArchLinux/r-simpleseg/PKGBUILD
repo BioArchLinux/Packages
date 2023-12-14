@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A package to perform simple cell segmentation"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL3)
 depends=(
   r-biocparallel
@@ -32,8 +32,8 @@ md5sums=('bd0a780ed7dfde71db7ecdf2cee30b0c')
 sha256sums=('8c1c1a13b62eee2b6f68717e9319dfdf1e92753c441745995ce29db29f3939f4')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

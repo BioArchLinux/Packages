@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=7
 pkgdesc="Obtain 'jQuery' as an HTML Dependency Object"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-htmltools
@@ -25,8 +25,8 @@ md5sums=('3607a34ac45ff420bc325d84eab4b0cb')
 sha256sums=('f0bcc11dcde3a6ff180277e45c24642d3da3c8690900e38f44495efbc9064411')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

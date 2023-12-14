@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Tidy Temporal Data Frames and Tools"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-anytime
@@ -48,8 +48,8 @@ md5sums=('1ba30f678a5b2040bae0b41819efc97c')
 sha256sums=('1f4213eef8f6f2d6c82ac9f680b0e8f432ab2e3bf8ca09f328821a33a49e6561')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

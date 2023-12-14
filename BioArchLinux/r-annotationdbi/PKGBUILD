@@ -9,7 +9,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Manipulation of SQLite-based annotations in Bioconductor"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-biobase
@@ -40,8 +40,8 @@ md5sums=('965300db0b7a8b527ed3eb00fdd6d10f')
 sha256sums=('03bff46268ad797466f445c51ab72929224514512561c43662037ca10618b9ad')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

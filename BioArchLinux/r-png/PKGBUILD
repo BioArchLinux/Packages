@@ -11,7 +11,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Read and write PNG images"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   libpng
@@ -22,8 +22,8 @@ md5sums=('5667528b7bbdd8c058018ea7ac6573a7')
 sha256sums=('5a36fabb6d62ba2533d3fc4cececd07891942cfb76fe689ec0d550d08762f61c')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

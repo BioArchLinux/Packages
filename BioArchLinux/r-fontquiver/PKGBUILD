@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=4
 pkgdesc="Set of Installed Fonts"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL3)
 depends=(
   r-fontbitstreamvera
@@ -26,8 +26,8 @@ md5sums=('eddbde07ef14475acfbdc9e82d45385a')
 sha256sums=('95871814c2d55c03ee15a54e29aadfb840c791e1430f94127d9e1dc8608a6363')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Flights that Departed NYC in 2013"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=('CC0-1.0')
 depends=(
   r-tibble
@@ -21,8 +21,8 @@ md5sums=('3d483829c9d11c675044cbe7cdf79f3a')
 sha256sums=('0e87c5a4e285f16750e91c75aeba33b1e4682cdabf4a3effe5a1de7398394a1d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

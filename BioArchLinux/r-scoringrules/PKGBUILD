@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="Scoring Rules for Parametric and Simulated Distribution Forecasts"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(GPL)
 depends=(
   blas
@@ -36,8 +36,8 @@ md5sums=('be9a9c10613e5ff981b72b32b8da30d9')
 sha256sums=('393ff96e17e70c31ede7c30fff36cea2d1f7863be2339b523ab2960c6510c5e3')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

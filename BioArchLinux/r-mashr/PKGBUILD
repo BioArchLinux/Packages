@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Multivariate Adaptive Shrinkage"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(BSD)
 depends=(
   blas
@@ -45,8 +45,8 @@ md5sums=('3ddec828c72b1d1b594f35a3934e7f88')
 sha256sums=('158b3670277523fa3168a46a9d80a1f6dd7063091b54584cd170eb70bf85f886')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Analysis Tools for scATACseq Data with CoGAPS"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-bsgenome.hsapiens.ucsc.hg19
@@ -42,8 +42,8 @@ md5sums=('f8cf8dd559b05caf23934090510297de')
 sha256sums=('caaeb2de0ecf051edce19095d387547617d7d500ed606205293b029d364c2aed')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

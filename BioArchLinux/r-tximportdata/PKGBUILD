@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="tximportData"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(GPL)
 depends=(
   r
@@ -21,8 +21,8 @@ md5sums=('4494d764fc087333e5c04ee7977c85c8')
 sha256sums=('0f8218398e976c5930ecebf45663feba4af8b8f165d47f01f91f4fbade78554f')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

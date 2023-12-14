@@ -8,7 +8,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Formula Interface to the Grammar of Graphics"
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cran.r-project.org/package=$_pkgname"
 license=(MIT)
 depends=(
   r-ggplot2
@@ -46,8 +46,8 @@ md5sums=('8eee6fba1dc5081b680ecd4ae73c42b4')
 sha256sums=('d569f83e059f9e4836bd513f92706fb8a614300f744dcc47bf86e8dafd8e776d')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {

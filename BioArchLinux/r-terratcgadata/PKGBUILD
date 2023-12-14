@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="OpenAccess TCGA Data on Terra as MultiAssayExperiment"
 arch=(any)
-url="https://bioconductor.org/packages/${_pkgname}"
+url="https://bioconductor.org/packages/$_pkgname"
 license=(Artistic2.0)
 depends=(
   r-anvil
@@ -36,8 +36,8 @@ md5sums=('b5803a78627bbe874b8cd8ae0a147979')
 sha256sums=('0ea975f5dc017c484aacfaad03a22a155989b2eff441b76acab9367654b05731')
 
 build() {
-  mkdir -p build
-  R CMD INSTALL "$_pkgname" -l build
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {
