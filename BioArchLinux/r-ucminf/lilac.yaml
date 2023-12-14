@@ -12,3 +12,5 @@ update_on:
   pkgname: blas
   filename: usr/lib/libblas\.so\.([^.]+)
   repo: extra
+- source: manual
+  manual: 1
