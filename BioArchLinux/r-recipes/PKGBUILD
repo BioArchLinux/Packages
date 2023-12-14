@@ -76,11 +76,6 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f3f30f40a1b9b65aa5ad80b887a32786')
 sha256sums=('111ab7f1d3fd60a088c32cc54316e685ab88fea9d49c5d94fa359328644cd790')
 
-prepare() {
-  # skip failing snapshot test
-  sed -i '/"ISOmap fails gracefully"/a\ \ skip("Outdated snapshot")' "$_pkgname/tests/testthat/test-isomap.R"
-}
-
 build() {
   mkdir -p build
   R CMD INSTALL "$_pkgname" -l build
