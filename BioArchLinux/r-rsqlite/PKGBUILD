@@ -46,8 +46,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libs.patch")
 md5sums=('790c93e203a4698bb4c0e21f2667b327'
          '29102318ffe7e673c7106be0041c7811')
-sha256sums=('73cdc81bb3cfce6f680a8ee384927867520a883e6d0705f6d6c79dccd4fbc4eb'
-            '744c6d1ba721cc0dcde85d0e861257bc3687aa066764c3b898750b3436799084')
+b2sums=('2331e7e7b80c12b22c2dac5f56a68599dca75bc5e8e3679523b373730f1dfc2a40ea005792760b0a829b0ca646fd2a0107bdba34246896e6e79d2275d01f8639'
+        '8a6c00d199a0a7940c4bca7cd4d162badbdb290c8754552f3a888fd1a6eeabfd2bf8a065d952bae11034071b0a7eb72e39f0786af820ab19908aa9b67bdbfa4f')
 
 prepare() {
   cd "$_pkgname"

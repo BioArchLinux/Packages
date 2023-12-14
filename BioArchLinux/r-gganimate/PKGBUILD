@@ -42,7 +42,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('2ec08a5316dfd4d845238dfb296e2b91')
-sha256sums=('a12d865ddecea761e8f12bdc3bfdb78642f7ab2d53b78940e1290c9071d24bc9')
+b2sums=('fc9f5cccca22e11b9d191d527cffaf09979778841b06705b417f17232dba02011477557ed09c4d39770be6b7f3293419ed729e09cfdf935f8145aae68952f021')
 
 prepare() {
   # Skip test until upstream fixes the bug

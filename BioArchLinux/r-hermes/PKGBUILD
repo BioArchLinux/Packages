@@ -60,8 +60,8 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
         "skip-tests.patch")
 md5sums=('af1e1dd4bab597cfb7b0bd12a1e9e7dd'
          '584674ff858d3b36bd221e71a3feabae')
-sha256sums=('7948b722f701e86f968a9e0a3f89a6a002c5bc22932912e50f86693ed17fc8d0'
-            'fdef7997f73aa7ddaa4d8307fde896adf051a2dc60d6d7f83871df252a10dd37')
+b2sums=('5231e38c5d482ff1be9322802ca7b6c5e711e02ba42131a63b905965da4eec089621f775a9ed7b3b49c370b6224e859d74f1efe6a11a208e336d434e8a9e2e17'
+        '3ba39b388be737c6121ecf02e96f7946f477eb17f398693abe15532995c3c62402228eab43bbb007576a0e8d37caa156c467996e4a0d7be1f26c7b70eb9d1233')
 
 prepare() {
   # skip failing tests

@@ -37,7 +37,7 @@ optdepends=(
 # temporarily use old version until r-matrix is updated to >=1.6.3
 source=("https://cran.r-project.org/src/contrib/Archive/$_pkgname/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('2fb91d97b91d012a7a234954a8b9b995')
-sha256sums=('2dd95f3b2698ca598c582381ef94683977e2a3402eceffff3fea60aed9289972')
+b2sums=('d407e9aac1c21a4c8ce44097329987cc61ce1cb56780f432083ab08b94656c57845f15179ce2cd77106bc3b54b0dab13aab1b7883a45e3cadf41ded8b6feec3d')
 
 build() {
   mkdir build

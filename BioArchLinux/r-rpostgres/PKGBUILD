@@ -41,8 +41,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-boost.patch")
 md5sums=('e0ddd002a7cf6c06b753c8f04e201528'
          '77a2948b75606cdf00a4e6fa280c6ce9')
-sha256sums=('d9ee4b67e35dbe574afafd36cf53c3e2ea743f94c8fae1ff33bdbb9f531ea0d1'
-            '760e6260eb765bb3414759a6aa56871457fdc73480c40419d6c01ae8d086bfb5')
+b2sums=('acd6f9b62940f4c2671e4bd7a7aefe0ad6e7ea388ae630c11f03ede942431f15c29f9faa1bd94761b0591a9e426b1302c2fe73b90ba93c2d51f7fb60fa8e1a8b'
+        '6f013b9a2d207e4254eae54459db66ae2e3576c8e9d62fd0cec8c403ec6253d67ef85e316240c8d8e60703cad07201bbb50797edf12a7ca2ddb727e5685c4b9a')
 
 prepare() {
   # use system boost library

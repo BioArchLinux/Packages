@@ -54,7 +54,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c30424fc39406007031cf4e62ea572a8')
-sha256sums=('06e4662666fe018fbe3bef3531280a461c7bc24bb00f34b9d4c7b08d52210155')
+b2sums=('b8cc6a96992738b1878304a38814ab2e774646f4c84515bc26fc58005d3215b107dad7f04d877e0914a5ff81af7f5609df443ab6243b02f10d7bf8e7e53ff2b6')
 
 prepare() {
   # Skip a test that might fail depending on environment

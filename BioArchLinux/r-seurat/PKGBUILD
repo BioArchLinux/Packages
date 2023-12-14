@@ -100,7 +100,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('3965b1ee0bdc7f005d250a3dd429bcc3')
-sha256sums=('0713b434be5bf14fcea068fbfc632ba15bebdec1007f1f48effd0dbb95c5150d')
+b2sums=('f2087e476bd965b365fb99eacfd2b87beeed784f5032a4e3890f2f2ad87cd794af54448fd40d608b30cc96933f044929761d02ae2a1ba7134553cde389a20385')
 
 prepare() {
   # skip test that requires BPCells

@@ -27,8 +27,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-dbus.patch")
 md5sums=('86d4bc20c4b90d6d61873e554e0a20f4'
          '36f5173c5c892c7c525ff320f99952ab')
-sha256sums=('d49d91ec3e0caaf698596a17ce391dafc146b9cfa0f8ce5183b1ef41d142a61d'
-            '7a80496e502ddab4f4682e791b626b0a2ccb405ee2c138a0932cd112b86987c0')
+b2sums=('4a4b9ba7d5f6a4b3880496af346e5bfdd448b50d567ad342f1e50085a435dfd664d1dcdcc9031724c496737493cd90261621aa63cfc42d8bd43f22294d62ba85'
+        '82a8ebbdd7806619c4e03ec9c5f27515bc8589d75588a3e3fe45318bd6df4f549547b19ba5d69a6ebb0f8bcfe7cb9b2679738057dbbe7c4c2617271ef1548946')
 
 prepare() {
   # fix dbus configuration

@@ -46,8 +46,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-readstat.patch")
 md5sums=('ef0337da48b61ae98b03413e02177822'
          '73da7cc2ff7f7c1a5d4ffbaa45e359df')
-sha256sums=('9e1531bb37aa474abd91db5e0ed9e3a355c03faa65f4e653b3ea68b7c61ea835'
-            '8986ddaefd714bd4d2a42364863437116b14f38275196720d88d247794b94bf8')
+b2sums=('d78328297778232f316972def5ddaf6e25cac721c84b3e9d4b30167a0484ad4c71a8d4f2798d2869b4350fd222aeeeb9a508092c85f860264d4bec20228147db'
+        'a0bb3a653cc0140c9f345b1b4918c483348f03c0e0a903fb963b39592c55bf5a3c5d3d59dd808fbe9a997fa3682eec5153a67bf90f207032a4491eee3eaf9bfe')
 
 prepare() {
   # build with system readstat

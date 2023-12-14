@@ -30,8 +30,8 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
         "shared-cytolib.patch")
 md5sums=('f06a976c84ae2adf3c08d07cd90af7f4'
          '0447368b51efaea7ab68b056b4c2b602')
-sha256sums=('f155729d40d24620c05df94b2f7a06f77cb9877cd8ce576621ee8d9b3fa45ae4'
-            '3fd80ac3109153df3619d0b481aa5797b9393300b6f82babb721dea8a2c55b45')
+b2sums=('0314e9ae9fc742cc5c7c795b8f5fa7b66a2be9bee2d0c2ae46e6363230e11f3c600f0257b22f65e6e4a088a521a3d8bab92c7a387f118b763c6182e5ed993c89'
+        'bd9258e3941e6b7378b66633566245a8c31f4c81973f5f1b25e924eac165ff95a592d56e14f8e19bf94df9b28cb97f87e8bd69894a5dd96965fff2b1d9622839')
 
 prepare() {
   # build cytolib as a shared library

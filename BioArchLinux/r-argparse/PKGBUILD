@@ -27,7 +27,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('fe22b79b423ac686d072694fe30b8617')
-sha256sums=('b62c9bf5e6ca35fb7a2e614a916815c04cbf6c6db3f89f99b4df76470a4a856d')
+b2sums=('c9d6f2fa2ad5e498ed375e5ad5157ad0af4475b74e8b1137ba0cf7917a27697b058d09e6ff0baa6e7ec5ae683fa9198ab3577ce28150019d631174b2dc01cad2')
 
 prepare() {
   # fix tests

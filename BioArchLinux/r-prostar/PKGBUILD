@@ -51,7 +51,7 @@ optdepends=(
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('ab3095af56a61bfe4fe81279dffcae21')
-sha256sums=('fbd6b410007bda8fb86038bbdf17da42e97f5a0dec948c1642ae039e1023c4f0')
+b2sums=('1104a0195d73eafa2fc2ab8d640421f6252ca9e8309970681a8ef19e58587abd60c6255174dc88b574c79b7eecefe392becd237d3e8924e4388aeda6c36ad170')
 
 build() {
   mkdir build

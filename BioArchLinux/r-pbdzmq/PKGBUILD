@@ -17,7 +17,7 @@ depends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('40ea05a124a334615da446e17343d40f')
-sha256sums=('39a20058e4027fab6f4a4cf0f557fef4e77409c9656d00252ef31cb6d90ad191')
+b2sums=('05acaf98d07bf1dc22ed249cd32441c6b5d3e9034edb2db04845767f02c0f55659b771038f94c1a3c5ebf85aa4c6b708db3e67044ca4314046a6e1915ea9aea1')
 
 build() {
   mkdir build

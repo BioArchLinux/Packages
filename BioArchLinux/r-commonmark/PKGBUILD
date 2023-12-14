@@ -30,8 +30,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-cmark-gfm.patch")
 md5sums=('a6c6a1c1bf0ee0cc0cde65ce2d577cfc'
          '31357c9e94c77a617485e752ead93868')
-sha256sums=('6dd01a5a26c8d436486abf69c2f6ad0f8dd1c811f575c31983aeb4dbd376548f'
-            'd2360beb79eeee5fcb34e468704aa9af1c98c6effbe2cadafde4f32a6d6fab86')
+b2sums=('01de88c4a023ad75bfa377b33ff8dc7757a9232a8044959e801ca927cf859d473077976c4edd91c6bdff4440fa2ae2fde12ce9b60d2e516487db61e5bd5206fc'
+        '02fda554b3d786bab69b214e1281da56968dc943cd1ebda829576b6858e2c6167b2415f878c66bb7f6091d3581636d0135e8cd2f5afba99f9141c07aacbba686')
 
 prepare() {
   # build against system cmark-gfm

@@ -36,8 +36,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libsass.patch")
 md5sums=('1b541e8a0ce9ec67ade93869740db4b8'
          '6a430d63f1fdeced20c3117763d2cb7c')
-sha256sums=('42ba2930cd22ad9f5e0022b9ac53bdbc4c9250f00e0646e6502f635a6db3c40c'
-            '5149aa34e5ab5ce03370495705e4162bbf1a3e7c7389be3ebe318c46d394eb10')
+b2sums=('2cc5fa1b3e3d4039425803154e18c3a56863f619a168c83be8c42ba8b6fe8c6299de8e91d57967dadd80167ef1a160e486e4140111e449354655d71c31a51797'
+        '8dce8f0d0eeff57916129505b0651115a1616431d0e4214a34b605ab89cefaee0d1e121e9a7db7709a880cd388f4c3305ade34e084938a413e32cffff46035e6')
 
 prepare() {
   # build against system libsass

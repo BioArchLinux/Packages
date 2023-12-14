@@ -26,7 +26,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('5b9b45cde810d8b9762dd58c5d80da3a')
-sha256sums=('df757c3068599c6c05367900bcad93547ba3422d59802dbaca20fd74d4d2fa5f')
+b2sums=('39b0fed861d698449cd385ee5036dd80f686293b69c0a8515d79c3078e63b481c918d9cbfec3793ff80ec2d089ba2b274235543c72a818828131b55a7067d04f')
 
 prepare() {
   # upstream issue https://github.com/RcppCore/Rcpp/issues/1251

@@ -71,7 +71,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b5fad47df3d9107e378420809efab869')
-sha256sums=('8b535648d537a1a95920c938e43692c1dfaac8d293ff3f506334001352c339f7')
+b2sums=('0d501b4cee1a457cf1e1eeb3f498077bc54503b854fab4088ea439db961724ceb0f96e921819631c3c37acc7da5978f2b5a3247c9a34b047fe04d33f5d45d27a')
 
 prepare() {
   # use PGHOST variable in tests

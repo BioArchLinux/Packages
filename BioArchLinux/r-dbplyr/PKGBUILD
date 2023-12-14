@@ -58,7 +58,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('55d0e3258599d069e8d995b5d99b9a23')
-sha256sums=('9154f35771fa818456c6c6ec566699f2e1e7569aaa48209de80b44274240f1e7')
+b2sums=('c0a4c4f90544b32bed9f3582741f9870fe19c6f3b7c0c9468073dcb7c947f44e18b8c31ccb256627c79f84714707a0ad54bed91d64f4924b889b18c1d51f35e1')
 
 prepare() {
   # connect to database using sockets in tests

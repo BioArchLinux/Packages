@@ -22,8 +22,8 @@ source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_
         "system-protobuf.patch")
 md5sums=('e7351127e6b19daaae94fcecc970292b'
          'b86808f8853c60a736e5d47f89c7dddc')
-sha256sums=('d8c0c6ced9ea9bb661288697fbbdb1ffb754dd8d2af85132b039fbe666242ac4'
-            '950a768ca57887b7045ce8de1839bab67771b97c06b8007c09c9b50e8c8848b8')
+b2sums=('dce88cc98211cdc44dfd3cd5767528ed26ce60673f2f82cea854bca44fb19c4a0d45c0abd0fd815e7a3d16d3ca646993de53289bbf140bf00301b7b217f83361'
+        '573c657def792c4441dd6c3d8adc507489598a9fe79ad4ae1f6727a47fba061d287d859910b56caa64d96381d018403861a7f7769d7b232ac8c0fbbf0ce1798e')
 
 prepare() {
   # use system protobuf

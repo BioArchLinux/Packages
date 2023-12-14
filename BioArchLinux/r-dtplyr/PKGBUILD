@@ -37,7 +37,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('d1cc10d74af58ac44a99392237aca50e')
-sha256sums=('a5a9689a640b8bd1274519af220c33deaa3919654acac4ebdff1ff365cc8d6e5')
+b2sums=('886ea73df057735d35a40e95043a07bb8de8abf866ed77ea5a966a45329e780e34a51d96ee177e05138c05e01735244325bf64ec946132348e4107a65819424f')
 
 prepare() {
   # fix snapshot test

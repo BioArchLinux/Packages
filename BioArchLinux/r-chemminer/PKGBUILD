@@ -53,7 +53,7 @@ optdepends=(
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8dd1886811bdc4ac23c24fad60a9b238')
-sha256sums=('01297549b77098b794d22158253a30989b8111a6998d1872dc993af82aaf488c')
+b2sums=('ff0535357fe4fbb4578e5ab8b7d5211b7ec98afc6e95df83e857ff91bfa6ca22ea3161d4b8f680537f8334c2f05ef041f913f25fb0272073e3a0f4a1c0f08e27')
 
 build() {
   # generate R bindings

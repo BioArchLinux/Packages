@@ -49,7 +49,7 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('cb9ddcf70c6b030743c9685e0f104f67')
-sha256sums=('1d980e611b01c194007639a100c3ddaeaab77786d32f81680f497f99e60748ad')
+b2sums=('83be91814b5b4606a0581fd30153cd7c0189abf7634396243f5a639fde023de65a0ba742da4259bbd5062585638203fa61a2a92b13a007db3c1349c1f3585730')
 
 build() {
   mkdir build

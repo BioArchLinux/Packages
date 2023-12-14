@@ -42,7 +42,7 @@ optdepends=(
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('ab56b637f74d79cfba3dd6aab80b7ac9')
-sha256sums=('023956e4272163608eea70636a88815e86ef214692fe3b3df37988e20d3b2f9c')
+b2sums=('d6919d558c34aba6641260331219f2e562a51b1b81c5291b05d85ca9cf4e03e720483c73bd058ed16d600b578676d027e7e873ada62a083a6d6cc96a9b973de7')
 
 prepare() {
   # skip tests that cause a coredump

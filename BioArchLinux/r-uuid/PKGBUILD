@@ -19,8 +19,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-uuid.patch")
 md5sums=('51555df70ad6c99fd966f78f45abebaa'
          'fc5b61316f82d529e10881188302d532')
-sha256sums=('1611240eb706e6f53400b25c9cf792ad90f151b72ed0918a1e756997f7abb716'
-            '3cac969fc2d4b8b64bbb21c9967d9f97c57e086341fd29495d6d99d7f139a7c5')
+b2sums=('615ea05133d5bcc562c748a3df1abafb5d87149f9b092ff6c8c32037629c0b8714714e0b9205c6f2b2f98009f584df27bb7068933d8f216580c0f24fb1fdad27'
+        '7c0911a64fed42baec57ec5fccf8861c735e31da6b94b80f2f2c2b14e7fdd4843c6aad5c4e6b85dd1008bd83f523a47869a70ffdfa5259719f9d8277890d6e52')
 
 prepare() {
   # build with system libuuid

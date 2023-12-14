@@ -27,8 +27,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-cctz.patch")
 md5sums=('9e8dea7a23e233cccec70f7838381582'
          'a573af9ccae2bad5627178a50de35e5b')
-sha256sums=('3d602008052123daef94a5c3f5154c5461b4ec0432ab70c37273d7ddd252f7f1'
-            '77d128c19ede66d6f0a27d3751c15da2ac322bdf2ca0914d047ac36396156001')
+b2sums=('02501ac599f480549a3b2b351f82a04937ece87832ae39258f02ae980b6c115c7d79efa4f21739c580aa736c2dc7279ce1cf123b56193f20a894226f2b1123d9'
+        'a49706ea47fa79a44d09ee646e27d4b03fb820346b3c80b43e85b43c59c75457f24fe748d95f4ae4f7ab6433d94cec1a9f94a8520fa2179af35e8e9a50b7c2df')
 
 prepare() {
   # build against system cctz

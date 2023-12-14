@@ -56,8 +56,8 @@ source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "igraph-system-libs.patch")
 md5sums=('7fda567ea719475a17929dd3de6d0808'
          '3863e3b0e1f9356f607103096c0b011c')
-sha256sums=('410ecc37fb38e72079dc72f839bde19093100a422729c343e0b2523df6453bb8'
-            '4a910e3248983dc27f3306eb3b260988cb592d4dd806f73e0a77aa8aca2a5068')
+b2sums=('8f375dca16b07f1a14a146e86019f8472ff134ccc56b455811ecbd30f571a29bb8fa58b1bbc51fb2147964ebb04c9ceccf07b5d32d41481a83f20721b79bb773'
+        'c59255d9c21e66923b722eb41149269600025bde6c980ede9113e0177479c23461fb2d963a062dd5f2670d1316aafd2658204f23031fd01df9da4285739920ad')
 
 prepare() {
   cd "$_pkgname"
