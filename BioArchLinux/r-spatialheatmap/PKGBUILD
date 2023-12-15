@@ -2,7 +2,7 @@
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=spatialHeatmap
-_pkgver=2.8.1
+_pkgver=2.8.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -97,8 +97,8 @@ optdepends=(
   r-yaml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('fbcec5f2045c7b503bd0bd26e0ff0738')
-b2sums=('403fc6935a2227693a2c9831c35578f718066881725f623631a125a1cf04335fbf1e1bc2e1f9f6ca8c0b0f6f27a8987def21fb70a3e4f5624072beffe2bdfe19')
+md5sums=('9bc0c45c674b5271f388f3c2579dacc1')
+b2sums=('2fa9d026a2c54aecf53619e6f14586362bb763db089009bb2c4d56a5c45ecf8c61542906f8a246799bdfff6b63ddeb13e68e6a7e6512ef60a87b70b03c0612e4')
 
 build() {
   mkdir build
