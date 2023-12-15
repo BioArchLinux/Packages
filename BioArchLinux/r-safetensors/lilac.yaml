@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-jsonlite
+- r-r6
+- r-rlang
+update_on:
+- source: rpkgs
+  pkgname: safetensors
+  repo: cran
+  md5: true
+- alias: r
