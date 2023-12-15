@@ -2,7 +2,7 @@
 
 pkgname='python-orange-widget-base'
 _module=orange-widget-base
-pkgver=4.22.0
+pkgver=4.23.0
 pkgrel=1
 pkgdesc="Base Widget for Orange Canvas"
 arch=('x86_64')
@@ -16,7 +16,7 @@ depends=(python
          python-typing_extensions)
 makedepends=(python-setuptools)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
-sha256sums=('9d5d9a04f6739fb2be4040ad095a0b2e1e6c986df5cc4d86f631532a5c61f6a3')
+sha256sums=('9b3f8171911d835a7d5747b0611af0de328158b31b2fd451ea8e21504531f430')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
