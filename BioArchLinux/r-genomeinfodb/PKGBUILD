@@ -2,7 +2,7 @@
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomeInfoDb
-_pkgver=1.38.1
+_pkgver=1.38.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -32,8 +32,8 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4bb1aef4ea2a6422141e3024e11b85e1')
-b2sums=('0ea23eef0de55ff1e0a3673f16743224106a1d33776972ae758296f1568e869c7e6c6c3fcfc408a6dd3a795d77a7cfb925944659d05f880b6cf5e4ed89dfb93e')
+md5sums=('0ef685415298c332c70766566073403b')
+b2sums=('6d2bdc24a2f0a6ee4637186b907e043ace9836755cb296515fb81c2e3d12bbbcf2ff356af8c7fdad71dea98cd08abcc13a5ed071df9eee38a482c683a1eb6fea')
 
 build() {
   mkdir build
