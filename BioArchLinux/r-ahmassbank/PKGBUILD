@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=AHMassBank
-_pkgver=1.2.0
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -20,8 +20,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b9ddc7dff0cabd4b170bc750cc3c47d3')
-b2sums=('8676b9d9247f99c3dea5c68594ad5485ed4d4f96fca0b978d213d0b05f1d6404dc24af1e692a8c75074e70d883f21a4770017922facbb2849ad7f7ee4259b9c3')
+md5sums=('71a167eaf9e590b5ec3574dff9658df6')
+b2sums=('f89301735828663975bd9031ed3409ff421878ee51431b91c46588386d801d6c31a3524ac8d96d80e884f166962e00a2dbbf0ce948793f4cface18384873f39a')
 
 build() {
   mkdir build
