@@ -3,12 +3,12 @@
 _pkgname=BiocGenerics
 _pkgver=0.48.1
 pkgname=r-${_pkgname,,}
-pkgver=0.48.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='S4 generic functions used in Bioconductor'
-arch=('any')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="S4 generic functions used in Bioconductor"
+arch=(any)
+url="https://bioconductor.org/packages/$_pkgname"
+license=(Artistic2.0)
 depends=(
   r
 )
@@ -30,14 +30,15 @@ optdepends=(
   r-s4vectors
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('13e126709da888420f320353d6ea52da12a8cbd086f2e29b9cc3039a6411652b')
+md5sums=('77629e64c2a9a0324eb11bb59b53b126')
+b2sums=('e69382abdf5e3699c49f0538b3345d2dd3a88c7d8485bc638603a96ed0be59cc403c8049fcae3cecac3793bacb8e7023da46bd48b8a5ccb509c7e84b59717837')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

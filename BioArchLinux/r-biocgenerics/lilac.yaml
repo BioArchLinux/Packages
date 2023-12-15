@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: BiocGenerics_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BiocGenerics
+- source: rpkgs
+  pkgname: BiocGenerics
+  repo: bioc
+  md5: true
 - alias: r
