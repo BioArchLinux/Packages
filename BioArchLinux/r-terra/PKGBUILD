@@ -2,10 +2,10 @@
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=terra
-_pkgver=1.7-55
+_pkgver=1.7-65
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Spatial Data Analysis"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -30,8 +30,8 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('42c214df7dbbd496c6a705063a992582')
-b2sums=('6e222d105f205dfc46f7ae3b3eaf8f292f0339bd0f03170078516da8e8c310623cec350df8ecbbe9fb69cdeb3726300e57047e4cf5aebd4a8f7c189e09c75dd9')
+md5sums=('f00cf0bd72f12e57a5a22e70b4b47a1c')
+b2sums=('f9628d3952def35b6f242f1a428468e09dbdc81d3205e8e53346e53b2ed3824dee9abafc0e2ce4cd6fa44e0a3436e78eaaaad21bc2b9b9b8f59f1f90e46b8667')
 
 build() {
   mkdir build
