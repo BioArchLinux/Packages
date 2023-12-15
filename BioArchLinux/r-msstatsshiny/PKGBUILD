@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=MSstatsShiny
-_pkgver=1.4.1
+_pkgver=1.4.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="MSstats GUI for Statistical Anaylsis of Proteomics Experiments"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -41,8 +41,8 @@ optdepends=(
   r-tinytest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4eb74ec920d96afc15079226261224f9')
-b2sums=('88fdf8339d466d65a6f90fc2d33f1b9da747a1c1fcd51a5fa7e6326e1a84bd9c79dc300027ea93852b4962aab982a0041ae4c6400acff0c520bd471dc60cbc77')
+md5sums=('2a58cf6ab9674a13b96e66974d6b15a0')
+b2sums=('9edbfb5a0a49d437b7aa4bdce41e54f1881f8e2f9a0bf23106fff13c769c58fc69ce4c280cbe0387cb0f6f5400a347284bbcc454bdb743adf1deda4fdd7ac525')
 
 build() {
   mkdir build
