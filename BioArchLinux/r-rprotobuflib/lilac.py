@@ -10,7 +10,6 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "BSD_3_clause",
-        expect_systemrequirements = "GNU make",
     )
 
 def post_build():

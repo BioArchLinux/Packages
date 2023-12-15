@@ -315,8 +315,16 @@ def check_fortran(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
         raise CheckFailed("Unnecessary config 'ignore_fortran_files'")
 
 def check_systemrequirements(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
-    if cfg.expect_systemrequirements != desc.systemrequirements:
-        raise CheckFailed(f"SystemRequirements have changed: {desc.systemrequirements}")
+    ignored = [
+        "C++11",
+        "C++17",
+        "GNU make",
+    ]
+    sysrq = desc.systemrequirements
+    if sysrq in ignored:
+        sysrq = None
+    if cfg.expect_systemrequirements != sysrq:
+        raise CheckFailed(f"SystemRequirements have changed: {sysrq}")
 
 def check_license(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if cfg.expect_license is not None:

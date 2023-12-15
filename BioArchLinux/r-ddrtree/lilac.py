@@ -10,7 +10,6 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "Artistic License 2.0",
-        expect_systemrequirements = "C++11",
     )
 
 def post_build():

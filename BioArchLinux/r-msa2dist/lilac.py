@@ -10,7 +10,6 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "GPL-3 + file LICENSE",
-        expect_systemrequirements = "C++11",
     )
 
 def post_build():
