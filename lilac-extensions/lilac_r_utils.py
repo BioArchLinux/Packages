@@ -349,6 +349,9 @@ def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
         if title_lower.startswith(prefix):
             title = title[len(prefix):]
             break
+    # detect and remove trailing dot from the title
+    if len(title) > 1 and title[-1] == "." and title[-2] != ".":
+        title = title[:-1]
 
     if cfg.expect_title is not None:
         if pkg.pkgdesc == title:
