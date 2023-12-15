@@ -230,11 +230,13 @@ class CheckConfig:
         expect_license: str = None,
         expect_needscompilation: bool = None,
         expect_systemrequirements: str = None,
+        expect_title: str = None,
         ignore_fortran_files: bool = False,
     ):
         self.expect_license = expect_license
         self.expect_needscompilation = expect_needscompilation
         self.expect_systemrequirements = expect_systemrequirements
+        self.expect_title = expect_title
         self.ignore_fortran_files = ignore_fortran_files
 
 def check_default_pkgs(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
@@ -338,8 +340,23 @@ def check_license(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
         raise CheckFailed(f"Unknown license: {desc.license}. Consider setting CheckConfig.expect_license")
 
 def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
-    if pkg.pkgdesc != desc.title:
-        raise CheckFailed(f"Wrong pkgdesc, expected '{desc.title}'")
+    title = desc.title
+    title_lower = title.lower()
+    name_lower = pkg._pkgname.lower()
+    # detect and remove package name from the title
+    for sep in [",", ":", " -"]:
+        prefix = f"{name_lower}{sep} "
+        if title_lower.startswith(prefix):
+            title = title[len(prefix):]
+            break
+
+    if cfg.expect_title is not None:
+        if pkg.pkgdesc == title:
+            raise CheckFailed("Unnecessary expect_title")
+        elif cfg.expect_title != desc.title:
+            raise CheckFailed(f"Title has changed: {desc.title}")
+    elif pkg.pkgdesc != title:
+        raise CheckFailed(f"Wrong pkgdesc, expected '{title}'")
 
 def check_arch(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if cfg.expect_needscompilation is not None:

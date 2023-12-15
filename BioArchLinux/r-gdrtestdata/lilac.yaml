@@ -12,3 +12,5 @@ update_on:
   repo: bioc-data-experiment
   md5: true
 - alias: r
+- source: manual
+  manual: 1

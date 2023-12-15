@@ -21,5 +21,7 @@ update_on:
   repo: bioc
   md5: true
 - alias: r
+- source: manual
+  manual: 1
 update_on_build:
 - pkgbase: r-cytolib
