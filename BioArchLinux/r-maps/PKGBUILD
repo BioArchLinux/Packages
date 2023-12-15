@@ -3,7 +3,7 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=maps
-_pkgver=3.4.1.1
+_pkgver=3.4.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -21,8 +21,8 @@ optdepends=(
   r-sp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8b90d63023e7d3357b3e8f6a99eed590')
-b2sums=('5dd3a89d98a83a0a6da0ec4d948630f9bdfa3510f1a025ae418cf515da0693b4cf234157a0be76de82bbb0143aed808205298fcc3118f6ed2f27dbf45b8d1464')
+md5sums=('78e2f51ccf17274313305b0916edee7b')
+b2sums=('d2716b0f9a2ca7d7ef30fc88f00e724ca0a5bf08ac10c26a42a866699709fec7aafb9637a84a6f3c8bae23f7f81078b1017b0743279fee66d92d380d971c61e0')
 
 build() {
   mkdir build
