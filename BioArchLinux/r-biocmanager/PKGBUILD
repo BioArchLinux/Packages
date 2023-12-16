@@ -3,12 +3,12 @@
 _pkgname=BiocManager
 _pkgver=1.30.22
 pkgname=r-${_pkgname,,}
-pkgver=1.30.22
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Access the Bioconductor Project Package Repository'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="Access the Bioconductor Project Package Repository"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(Artistic2.0)
 depends=(
   r
 )
@@ -22,14 +22,15 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5389c9c0d6562b0757659fb8262ab51b48225c4ba7e9acd4f5e7c0049735e835')
+md5sums=('06077db0d01e97eedf0c96333a5506d7')
+b2sums=('8b9244eab5977598a70f2578b2915b3db884ba84927b25a7689b9467cb52136f5c79381190ec6eb76562f0db518c037a2c6b28c69d12248608b7c35befd33a6e')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
