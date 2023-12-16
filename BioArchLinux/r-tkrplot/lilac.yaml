@@ -3,7 +3,20 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: tkrplot_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=tkrplot
+- source: rpkgs
+  pkgname: tkrplot
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: libx11
+  filename: usr/lib/libX11\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: tcl
+  filename: usr/lib/libtcl(\d\.\d)\.so
+  repo: extra
+- source: alpmfiles
+  pkgname: tk
+  filename: usr/lib/libtk(\d\.\d)\.so
+  repo: extra
