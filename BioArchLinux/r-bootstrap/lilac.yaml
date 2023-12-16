@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: bootstrap_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bootstrap
+- source: rpkgs
+  pkgname: bootstrap
+  repo: cran
+  md5: true
 - alias: r
