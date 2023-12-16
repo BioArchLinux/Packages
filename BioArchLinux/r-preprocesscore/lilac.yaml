@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: preprocessCore_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/preprocessCore
+- source: rpkgs
+  pkgname: preprocessCore
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
