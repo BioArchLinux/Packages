@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: R6_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=R6
+- source: rpkgs
+  pkgname: R6
+  repo: cran
+  md5: true
 - alias: r
