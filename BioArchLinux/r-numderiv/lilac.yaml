@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: numDeriv_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=numDeriv
+- source: rpkgs
+  pkgname: numDeriv
+  repo: cran
+  md5: true
 - alias: r
