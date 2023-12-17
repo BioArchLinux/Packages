@@ -3,12 +3,12 @@
 _pkgname=rlang
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
-pkgver=1.1.2
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Functions for Base Types and Core R and 'Tidyverse' Features"
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(MIT)
 depends=(
   r
 )
@@ -20,27 +20,27 @@ optdepends=(
   r-glue
   r-knitr
   r-magrittr
-  r-methods
   r-pillar
   r-rmarkdown
-  r-stats
   r-testthat
   r-tibble
   r-usethis
   r-vctrs
-  r-winch
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2a0ee1dc6e5c59b283c32db5e74e869922a336197cb406fe92622b6ec66f8092')
+md5sums=('ae2e1e4d5cee429b6871e6e9d3e3280e')
+b2sums=('f4137660dddc6106661898ec5200364fa87c392dd27bd9c1b5883563b86029c67972c12989b4ab68c3e56ba8727ad18386f29b62a75eded43170da6144d2b772')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:
