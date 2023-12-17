@@ -21,17 +21,9 @@ optdepends=(
   r-bitops
   r-rcurl
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "fix-build.patch")
-md5sums=('afa1fd1496595b5aa4f6cb758bad0122'
-         'fe644b51ff4b55a2b594a6c7dda5bc25')
-b2sums=('90a917aa23ce6c617e9136af62f699703a59d2732a86c81c12e77456b046c93efebebf790618de6fb2b6ae807bb6cc4fdc31a60d63120e99f45444a46c8fbb7a'
-        '5e110653765f6f6c52af69e9cbbbb59a0927596f4b43ce116f268aaa0e32cfeffd8e4fbeacae9d6bb7a6d930bb87c5e9e7ba2796a8bf2d75095c769feeb2c99b')
-
-prepare() {
-  # fix build
-  patch -Np1 -i fix-build.patch
-}
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('afa1fd1496595b5aa4f6cb758bad0122')
+b2sums=('90a917aa23ce6c617e9136af62f699703a59d2732a86c81c12e77456b046c93efebebf790618de6fb2b6ae807bb6cc4fdc31a60d63120e99f45444a46c8fbb7a')
 
 build() {
   mkdir build

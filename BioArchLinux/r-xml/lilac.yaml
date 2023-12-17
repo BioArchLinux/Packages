@@ -14,4 +14,4 @@ update_on:
   provided: libxml2.so
   strip_release: true
 - source: manual
-  manual: 1
+  manual: 2
