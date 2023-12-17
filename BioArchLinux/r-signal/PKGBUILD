@@ -3,31 +3,31 @@
 _pkgname=signal
 _pkgver=1.8-0
 pkgname=r-${_pkgname,,}
-pkgver=1.8.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Signal Processing'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Signal Processing"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(GPL2)
 depends=(
   r
-)
-optdepends=(
-  r-matlab
-  r-pracma
 )
 makedepends=(
   gcc-fortran
 )
+optdepends=(
+  r-pracma
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('89cba854167a2b051a58cf3b73ccbf74eeb47c890ac39720611cd41f86b94684')
+md5sums=('b0d6578018b3f5bae98df615f997d70b')
+b2sums=('0beb0b32fc5952df7915d59410a9ecc4233d50d1c8e8e82424af215c7c918e151833e095e05961c7d4168942cc910be4f6aa905f78035d2a7f37f9805f666b8a')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
