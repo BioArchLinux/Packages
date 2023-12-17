@@ -3,12 +3,12 @@
 _pkgname=matrixStats
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
-pkgver=1.2.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Functions that Apply to Rows and Columns of Matrices (and to Vectors)'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="Functions that Apply to Rows and Columns of Matrices (and to Vectors)"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(Artistic2.0)
 depends=(
   r
 )
@@ -22,14 +22,15 @@ optdepends=(
   r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('e403c12e597283f80097092d133be8e8d002f20f8286748acd5b908a7fa54573')
+md5sums=('2b68a4df8f1d2199ad9feb9b5a73d219')
+b2sums=('847f435794c8e78d6cc82ae0079bd61fd6d52a82102b792ea22b19e2945afd7c8691388a866ce0c456a5b7e16e119298fa153067106a88e410b85b91ef537748')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
