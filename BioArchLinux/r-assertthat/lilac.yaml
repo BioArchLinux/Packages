@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: starsareintherose@outlook.co
 update_on:
-- regex: assertthat_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=assertthat
+- source: rpkgs
+  pkgname: assertthat
+  repo: cran
+  md5: true
 - alias: r
