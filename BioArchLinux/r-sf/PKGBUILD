@@ -3,10 +3,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=sf
-_pkgver=1.0-14
+_pkgver=1.0-15
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=0
 pkgdesc="Simple Features for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -43,6 +43,7 @@ optdepends=(
   r-maps
   r-mapview
   r-microbenchmark
+  r-nanoarrow
   r-odbc
   r-pbapply
   r-pillar
@@ -70,8 +71,8 @@ optdepends=(
   r-wk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b5fad47df3d9107e378420809efab869')
-b2sums=('0d501b4cee1a457cf1e1eeb3f498077bc54503b854fab4088ea439db961724ceb0f96e921819631c3c37acc7da5978f2b5a3247c9a34b047fe04d33f5d45d27a')
+md5sums=('b3c5d978da86e8da20f577b65c4eaaff')
+b2sums=('e310735fe1e746f2a47d363c486f1a05a2479dbdd0cc68e351165016ddbce108b6ce70a456a19c98162a53eed1c2f6630abef1c46323d302b083d5cd22209842')
 
 prepare() {
   # use PGHOST variable in tests
