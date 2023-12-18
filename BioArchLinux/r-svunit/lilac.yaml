@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: svUnit_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=svUnit
+- source: rpkgs
+  pkgname: svUnit
+  repo: cran
+  md5: true
 - alias: r
