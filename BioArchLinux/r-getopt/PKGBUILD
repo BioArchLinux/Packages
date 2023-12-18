@@ -3,12 +3,12 @@
 _pkgname=getopt
 _pkgver=1.20.4
 pkgname=r-${_pkgname,,}
-pkgver=1.20.4
+pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="C-Like 'getopt' Behavior"
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(GPL)
 depends=(
   r
 )
@@ -16,14 +16,15 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('87d36cbe6dba41dbc1d78d845210266cdd08c7440d977d738a6e45db14221e8b')
+md5sums=('78783a3b9aa4c05177b71cf992ff89c6')
+b2sums=('ecad06d59d200042b4ce12b587eb5be7c78ecead801b49051b5b4a48e1d7287607d8260fe2e6d2a831c53adb9dd69a6941244db9c9d1b48d7320f9438036dbc9')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
