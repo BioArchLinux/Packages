@@ -26,19 +26,19 @@ You can replace the `https://repo.bioarchlinux.org/$arch` with any mirror in [mi
 
 install GPG keyring to use bioarchlinux
 ```
-# pacman-key --recv-keys B1F96021DB62254D
-# pacman-key --finger B1F96021DB62254D
-# pacman-key --lsign-key B1F96021DB62254D
+pacman-key --recv-keys B1F96021DB62254D
+pacman-key --finger B1F96021DB62254D
+pacman-key --lsign-key B1F96021DB62254D
 ```
 
 update the database
 ```
-# pacman -Syu
+pacman -Syu
 ```
 
 install any package
 ```
-# pacman -S foo
+pacman -S foo
 ```
 
 ### Windows
