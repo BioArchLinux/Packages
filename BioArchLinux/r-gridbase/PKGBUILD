@@ -4,7 +4,7 @@ _pkgname=gridBase
 _pkgver=0.4-7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="Integration of base and grid graphics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
