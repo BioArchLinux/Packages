@@ -4,7 +4,7 @@
 # Contributor: Igor Scabini <furester @ gmail.com>
 pkgname=cython2
 _name="${pkgname%2}"
-pkgver=3.0.6
+pkgver=3.0.7
 pkgrel=1
 pkgdesc='C-Extensions for Python 2'
 arch=('x86_64')
@@ -14,7 +14,7 @@ license=('APACHE')
 makedepends=('python2-setuptools')
 depends=('python2')
 source=("$pkgname-$pkgver.tar.gz::$_github/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('79d1b2f9e4d94c9d1e306d2d8ddef6759fa933363f8a90fa3be7b500db0287d9')
+sha256sums=('50e72ac8e32f5cca8242ad319df4cbd1f76545f2b66bc5d7b17ce45d5cbc415e')
 
 prepare() {
   cd "$srcdir/$_name-$pkgver"
