@@ -1,25 +1,25 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
-_pkgname=dreamerr
-_pkgver=1.4.0
+_pkgname=stringmagic
+_pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
-pkgdesc="Error Handling Made Easy"
-arch=(any)
+pkgrel=1
+pkgdesc="Character String Operations and Interpolation, Magic Edition"
+arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=(GPL)
 depends=(
-  r-formula
-  r-stringmagic
+  r-rcpp
 )
 optdepends=(
+  r-data.table
   r-knitr
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('df2e0c5e9378f06e81f48a71389bb692')
-b2sums=('80a031156c03db98cb76cdab2d962f6a3da0268a86bf0887519299c31c509fa33612e2ed06516b340f3279305063a3e460e416432a9122be6f3587dcf81cbc80')
+md5sums=('fb2a47a42735f26602831e0ac3bf0997')
+b2sums=('555816100b3c954a5792c13b659deb74b3567c480f15710b666217e3556ad086afcb1f8db020da406ba407a540ac74c0dcad269617553ecca91ead3c74371862')
 
 build() {
   mkdir build
@@ -28,7 +28,7 @@ build() {
 
 check() {
   cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" Rscript --vanilla tests_dreamerr.R
+  R_LIBS="$srcdir/build" Rscript --vanilla stringmagick_tests.R
 }
 
 package() {

@@ -3,11 +3,10 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-formula
-- r-stringmagic
+- r-rcpp
 update_on:
 - source: rpkgs
-  pkgname: dreamerr
+  pkgname: stringmagic
   repo: cran
   md5: true
 - alias: r
