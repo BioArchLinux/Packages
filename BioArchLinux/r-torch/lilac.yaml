@@ -1,24 +1,25 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-bit64
-  - r-callr
-  - r-cli
-  - r-coro
-  - r-desc
-  - r-ellipsis
-  - r-glue
-  - r-magrittr
-  - r-r6
-  - r-rcpp
-  - r-rlang
-  - r-withr
+- r-bit64
+- r-callr
+- r-cli
+- r-coro
+- r-desc
+- r-ellipsis
+- r-glue
+- r-jsonlite
+- r-magrittr
+- r-r6
+- r-rcpp
+- r-rlang
+- r-safetensors
+- r-withr
 update_on:
-  - regex: torch_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=torch
+- source: rpkgs
+  pkgname: torch
+  repo: cran
+  md5: true
+- alias: r
