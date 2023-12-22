@@ -2,23 +2,14 @@ build_prefix: extra-x86_64
 maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
-repo_depends:
+repo_makedepends:
+- r-bit64
 - r-blob
-- r-callr
-- r-dbi
-- r-desc
 - r-hms
-- r-lubridate
-- r-magrittr
-- r-nanoarrow
-- r-palmerpenguins
-- r-rlang
 - r-testthat
-- r-vctrs
-- r-withr
 update_on:
 - source: rpkgs
-  pkgname: DBItest
+  pkgname: nanoarrow
   repo: cran
   md5: true
 - alias: r

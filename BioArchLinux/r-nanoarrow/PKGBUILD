@@ -1,44 +1,37 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
-_pkgname=DBItest
-_pkgver=1.8.0
+_pkgname=nanoarrow
+_pkgver=0.3.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
-pkgdesc="Testing DBI Backends"
-arch=(any)
+pkgrel=1
+pkgdesc="Interface to the 'nanoarrow' 'C' Library"
+arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=(Apache)
 depends=(
+  r
+)
+checkdepends=(
+  r-bit64
   r-blob
-  r-callr
-  r-dbi
-  r-desc
   r-hms
-  r-lubridate
-  r-magrittr
-  r-nanoarrow
-  r-palmerpenguins
+  r-testthat
+)
+optdepends=(
+  r-arrow
+  r-bit64
+  r-blob
+  r-hms
   r-rlang
   r-testthat
+  r-tibble
   r-vctrs
   r-withr
 )
-optdepends=(
-  r-clipr
-  r-constructive
-  r-debugme
-  r-devtools
-  r-dplyr
-  r-knitr
-  r-lintr
-  r-pkgload
-  r-rmarkdown
-  r-rsqlite
-)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c30ed34e11c4e2e44ecb051fad564b66')
-b2sums=('06bf87c55f921fa832f96968334932c59dcdd810eeeadeb1837ff4258cecd6c7b921053e84eb31356ea1ec7186a7b31f6e27a55da961b147f3fad352cfc68730')
+md5sums=('7937fd861a963d997d34119d1debb469')
+b2sums=('0810244661fa50e44f1fbca77bef733f52f4b841d7dfc04b1e1604ae05d35ac4d7702980f8e5ca776128c243acff5dac99dbc328d4d8b8d1f4ceae7723b9cfda')
 
 build() {
   mkdir build
