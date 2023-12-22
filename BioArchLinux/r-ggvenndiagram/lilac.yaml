@@ -1,19 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-dplyr
-  - r-ggplot2
-  - r-magrittr
-  - r-plotly
-  - r-purrr
-  - r-rvenn
-  - r-sf
-  - r-tibble
-  - r-yulab.utils
+- r-aplot
+- r-dplyr
+- r-forcats
+- r-ggplot2
+- r-tibble
+- r-tidyr
 update_on:
-  - regex: ggVennDiagram_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=ggVennDiagram
-  - alias: r
+- source: rpkgs
+  pkgname: ggVennDiagram
+  repo: cran
+  md5: true
+- alias: r
