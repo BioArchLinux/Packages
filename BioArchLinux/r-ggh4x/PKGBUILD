@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=ggh4x
-_pkgver=0.2.6
+_pkgver=0.2.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Hacks for 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -34,8 +34,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('450be3fd3d39699ae65648f7b2880240')
-b2sums=('6cc36d7c31cb02e503f230b419f429ec4034eea9c6e0f965985de5ea54fb2bfef89858145cbf5e70e68ddd001a963a09ab706af3c7132016ef904d2d29ddf1cf')
+md5sums=('1a646ec43543f9e1a846b67739a72b64')
+b2sums=('ae61a36231364b406416498dfb389207d1fbb9444c4abec846215ffff37aec824ad688b5ccfe88bbf6781ecbe3fc7af6fc997f9e74147147b95b0cc7947df4a7')
 
 build() {
   mkdir build
