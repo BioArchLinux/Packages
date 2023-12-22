@@ -17,9 +17,11 @@ repo_depends:
 - r-paradox
 - r-parallelly
 - r-r6
+- r-rhpcblasctl
 - r-uuid
 update_on:
-- regex: mlr3_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mlr3
+- source: rpkgs
+  pkgname: mlr3
+  repo: cran
+  md5: true
 - alias: r
