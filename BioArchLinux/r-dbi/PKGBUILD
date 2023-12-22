@@ -9,7 +9,7 @@ _pkgname=DBI
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="R Database Interface"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
