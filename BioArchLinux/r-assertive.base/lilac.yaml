@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: assertive.base_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=assertive.base
+- source: rpkgs
+  pkgname: assertive.base
+  repo: cran
+  md5: true
 - alias: r
