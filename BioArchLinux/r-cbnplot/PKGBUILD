@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=CBNplot
-_pkgver=1.2.0
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -50,8 +50,8 @@ optdepends=(
   r-withr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d589e9361caf3409d65345cc48e5ccee')
-b2sums=('9a2a23b942667742c9612c3bba96bc461800534ca17e792ecaea92ad7f9244b1d24d743b7a8ffa4573e851d5d77fdbfd650de3bc365b49535482e5d2537ae10a')
+md5sums=('e87c0c410d247fa34a6ab9e9d3863976')
+b2sums=('9b20898c1e9feac5e247388c0346bb5deacdcdcb6ee9d97629a2e705be6f0201c8e0be52d23ab1157e0f4d90387353542cb7cc769de3c715f1b60db8615841dc')
 
 build() {
   mkdir build
