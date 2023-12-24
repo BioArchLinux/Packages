@@ -4,7 +4,7 @@ _pkgname=proxy
 _pkgver=0.4-27
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Distance and Similarity Measures"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
