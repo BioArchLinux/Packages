@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: bdsmatrix_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bdsmatrix
+- source: rpkgs
+  pkgname: bdsmatrix
+  repo: cran
+  md5: true
 - alias: r
