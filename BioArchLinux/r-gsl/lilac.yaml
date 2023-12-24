@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: gsl_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gsl
+- source: rpkgs
+  pkgname: gsl
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: gsl
+  filename: usr/lib/libgsl\.so\.([^.]+)
+  repo: extra
