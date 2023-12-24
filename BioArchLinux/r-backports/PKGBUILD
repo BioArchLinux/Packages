@@ -3,24 +3,25 @@
 _pkgname=backports
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
-pkgver=1.4.1
+pkgver=${_pkgver//-/.}
 pkgrel=9
-pkgdesc='Reimplementations of Functions Introduced Since R-3.0.0'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Reimplementations of Functions Introduced Since R-3.0.0"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(GPL)
 depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('845c3c59fbb05e5a892c4231b955a0afdd331d82b7cc815bcff0672023242474')
+md5sums=('1cc19c4a800a38f30b4d48eccd2478c4')
+b2sums=('7073469ce4c1af82c763e55ac1cf7498e52c229ec67a3fd0914036bf6f70a992c0811e65b4093466b1f21ba0f39489f16f46c7e44bbf9ff741b7e475e905a9db')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
