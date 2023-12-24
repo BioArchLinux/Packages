@@ -4,7 +4,7 @@ _pkgname=stringdist
 _pkgver=0.9.12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Approximate String Matching, Fuzzy Text Search, and String Distance Functions"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
