@@ -3,12 +3,12 @@
 _pkgname=proxy
 _pkgver=0.4-27
 pkgname=r-${_pkgname,,}
-pkgver=0.4.27
+pkgver=${_pkgver//-/.}
 pkgrel=6
-pkgdesc='Distance and Similarity Measures'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Distance and Similarity Measures"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(GPL2)
 depends=(
   r
 )
@@ -16,14 +16,15 @@ optdepends=(
   r-cba
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('249991a4c4d70ad139e93f3a24e17f161ad1ec854951813ea192daf79478563f')
+md5sums=('3e202df039c271d439193557645a54ba')
+b2sums=('4750aab8e94501c5763e2c480dc81fa21fd3a5ef94c9807d4f9aed738cd985964e217a7e1d88f407c5a89abc29dd0d147d9b78eae5f8235fbe62c38e46c14fa8')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
