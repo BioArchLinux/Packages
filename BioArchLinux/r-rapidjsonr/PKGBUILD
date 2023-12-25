@@ -5,7 +5,7 @@ _pkgname=rapidjsonr
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="'Rapidjson' C++ Header Files"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
