@@ -4,7 +4,7 @@ _pkgname=GSA
 _pkgver=1.03.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Gene Set Analysis"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
