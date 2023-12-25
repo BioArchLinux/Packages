@@ -30,6 +30,7 @@ repo_depends:
   - "r-jaspmetaanalysis"
   - "r-jaspnetwork"
   - "r-jasppower"
+  - "r-jaspprocess"
   - "r-jaspprophet"
   - "r-jaspreliability"
   - "r-jaspsem"
