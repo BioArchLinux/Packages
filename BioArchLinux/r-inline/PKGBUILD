@@ -6,7 +6,7 @@ _pkgname=inline
 _pkgver=0.3.19
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Functions to Inline C, C++, Fortran Function Calls from R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
