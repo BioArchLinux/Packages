@@ -34,6 +34,7 @@ repo_depends:
   - "r-jaspreliability"
   - "r-jaspsem"
   - "r-jaspsummarystatistics"
+  - "r-jaspsurvival"
   - "r-jasptimeseries"
   - "r-jaspvisualmodeling"
   - "r-jaspacceptancesampling"
