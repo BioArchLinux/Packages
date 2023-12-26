@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: ProtGenerics_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ProtGenerics
+- source: rpkgs
+  pkgname: ProtGenerics
+  repo: bioc
+  md5: true
 - alias: r

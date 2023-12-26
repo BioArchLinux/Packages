@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: viridisLite_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=viridisLite
+- source: rpkgs
+  pkgname: viridisLite
+  repo: cran
+  md5: true
 - alias: r

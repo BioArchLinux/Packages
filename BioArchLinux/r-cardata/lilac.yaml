@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: carData_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=carData
+- source: rpkgs
+  pkgname: carData
+  repo: cran
+  md5: true
 - alias: r
