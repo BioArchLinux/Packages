@@ -1,9 +1,10 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 update_on:
-- regex: WriteXLS_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=WriteXLS
+- source: rpkgs
+  pkgname: WriteXLS
+  repo: cran
+  md5: true
 - alias: r
