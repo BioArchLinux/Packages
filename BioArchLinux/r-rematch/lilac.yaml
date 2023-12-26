@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: rematch_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rematch
+- source: rpkgs
+  pkgname: rematch
+  repo: cran
+  md5: true
 - alias: r
