@@ -3,7 +3,7 @@
 
 pkgname=tpsdig
 pkgver=2021.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Digitize landmarks & outlines from image files, scanner, or video"
 arch=('any')
 url="http://sbmorphometrics.org/soft-dataacq.html"
