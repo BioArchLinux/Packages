@@ -3,7 +3,7 @@
 
 pkgname=tpsutil
 pkgver=2023.03.04
-pkgrel=1
+pkgrel=2
 pkgdesc="tps file utility program"
 arch=('any')
 url="http://sbmorphometrics.org/soft-utility.html"
