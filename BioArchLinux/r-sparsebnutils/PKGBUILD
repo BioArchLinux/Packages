@@ -4,7 +4,7 @@ _pkgname=sparsebnUtils
 _pkgver=0.0.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Utilities for Learning Sparse Bayesian Networks"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
