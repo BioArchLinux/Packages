@@ -2,7 +2,7 @@
 pkgname=fasta
 pkgver=36.3.8i.2023.09t
 epoch=1
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast protein or a fast nucleotide comparison"
 arch=('x86_64')
 url="https://fasta.bioch.virginia.edu/wrpearson/fasta/"
