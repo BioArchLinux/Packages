@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: flowPeaks_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/flowPeaks
+- source: rpkgs
+  pkgname: flowPeaks
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: gsl
+  filename: usr/lib/libgsl\.so\.([^.]+)
+  repo: extra
