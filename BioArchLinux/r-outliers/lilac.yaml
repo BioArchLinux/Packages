@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: outliers_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=outliers
+- source: rpkgs
+  pkgname: outliers
+  repo: cran
+  md5: true
 - alias: r

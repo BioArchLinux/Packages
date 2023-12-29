@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: gmp_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gmp
+- source: rpkgs
+  pkgname: gmp
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: gmp
+  filename: usr/lib/libgmp\.so\.([^.]+)
+  repo: core

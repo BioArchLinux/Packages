@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: genalg_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=genalg
+- source: rpkgs
+  pkgname: genalg
+  repo: cran
+  md5: true
 - alias: r
