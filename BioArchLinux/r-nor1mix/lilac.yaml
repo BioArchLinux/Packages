@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: nor1mix_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=nor1mix
+- source: rpkgs
+  pkgname: nor1mix
+  repo: cran
+  md5: true
 - alias: r

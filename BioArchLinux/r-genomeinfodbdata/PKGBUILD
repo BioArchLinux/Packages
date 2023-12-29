@@ -3,24 +3,25 @@
 _pkgname=GenomeInfoDbData
 _pkgver=1.2.11
 pkgname=r-${_pkgname,,}
-pkgver=1.2.11
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Species and taxonomy ID look up tables used by GenomeInfoDb'
-arch=('any')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="Species and taxonomy ID look up tables used by GenomeInfoDb"
+arch=(any)
+url="https://bioconductor.org/packages/$_pkgname"
+license=(Artistic2.0)
 depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('311fe287842e6161f24fc1faaa824a6d5ce88afcbf4c0203f5e309456e667bc2')
+md5sums=('2a4cbfc2031992fed3c9445f450890a2')
+b2sums=('d9235a5eb959bfbb8a22f68352b58f5d69def64d19606f88871ae398dbc7bebeda7e543c557c1eb48dc90c61a18eb3e503621943b119b2291b220d7e97a3f865')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
