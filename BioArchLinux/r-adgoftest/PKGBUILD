@@ -4,7 +4,7 @@ _pkgname=ADGofTest
 _pkgver=0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Anderson-Darling GoF test"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
