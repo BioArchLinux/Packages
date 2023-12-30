@@ -3,7 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: Rhdf5lib_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Rhdf5lib
+- source: rpkgs
+  pkgname: Rhdf5lib
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

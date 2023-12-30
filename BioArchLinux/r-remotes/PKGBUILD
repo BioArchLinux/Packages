@@ -1,22 +1,22 @@
-# system requirements: Subversion for install_svn, git for install_git
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=remotes
 _pkgver=2.4.2.1
 pkgname=r-${_pkgname,,}
-pkgver=2.4.2.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="R Package Installation from Remote Repositories, Including 'GitHub'"
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('MIT')
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=(MIT)
 depends=(
   r
 )
 optdepends=(
+  "git: alternative install_git backend"
+  "subversion: install_svn"
   r-brew
   r-callr
-  r-codetools
   r-covr
   r-curl
   r-git2r
@@ -31,15 +31,18 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('7ba8ca9a652d60bcdea25dbd43bd1e055e97b031c05e0bc3fac43bf245c1209d')
+md5sums=('65b224c78cbc0a1d80499af5a5152f58')
+b2sums=('155498643e6d96185ccde1a38a6be48367cc2f2d05fd731a9be689f7095e5b87f6dd3d2bc3f5d1345115f5a8195bb77f8ed3ee3e68568b513c956dd1f04ad3e7')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:
