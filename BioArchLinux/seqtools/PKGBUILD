@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyi zhang at malacology dot net>
 pkgname=seqtools
 pkgver=4.44.1
-pkgrel=56
+pkgrel=57
 pkgdesc="A suite of tools for visualising sequence alignments"
 arch=('x86_64')
 url="https://www.sanger.ac.uk/tool/seqtools/"
