@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-ibreakdown
+- r-ingredients
+repo_makedepends:
+- r-caret
+- r-gower
+- r-kernlab
+- r-parsnip
+- r-randomforest
+- r-ranger
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: DALEX
+  repo: cran
+  md5: true
+- alias: r

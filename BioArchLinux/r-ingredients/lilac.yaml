@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-gridextra
+- r-scales
+update_on:
+- source: rpkgs
+  pkgname: ingredients
+  repo: cran
+  md5: true
+- alias: r
