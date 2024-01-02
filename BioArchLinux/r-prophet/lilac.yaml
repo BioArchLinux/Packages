@@ -1,26 +1,29 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-bh
-  - r-dplyr
-  - r-dygraphs
-  - r-extradistr
-  - r-ggplot2
-  - r-lubridate
-  - r-rcpp
-  - r-rcppeigen
-  - r-rcppparallel
-  - r-rlang
-  - r-rstan
-  - r-rstantools
-  - r-scales
-  - r-stanheaders
-  - r-tidyr
-  - r-xts
+- r-dplyr
+- r-dygraphs
+- r-extradistr
+- r-ggplot2
+- r-lubridate
+- r-rcpp
+- r-rcppparallel
+- r-rlang
+- r-rstan
+- r-rstantools
+- r-scales
+- r-stanheaders
+- r-tidyr
+- r-xts
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-testthat
 update_on:
-  - regex: prophet_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=prophet
-  - alias: r
+- source: rpkgs
+  pkgname: prophet
+  repo: cran
+  md5: true
+- alias: r
