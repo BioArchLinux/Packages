@@ -1,18 +1,22 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
-  - r-bh
-  - r-digest
-  - r-lifecycle
-  - r-rcpp
-  - r-rcppeigen
-  - r-rcppparallel
-  - r-rpf
-  - r-stanheaders
+- r-digest
+- r-lifecycle
+- r-rcpp
+- r-rcppparallel
+repo_makedepends:
+- r-bh
+- r-rcppeigen
+- r-rpf
+- r-stanheaders
+- r-numderiv
+- r-testthat
 update_on:
-  - regex: OpenMx_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=OpenMx
-  - alias: r
+- source: rpkgs
+  pkgname: OpenMx
+  repo: cran
+  md5: true
+- alias: r
