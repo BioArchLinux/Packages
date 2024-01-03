@@ -13,6 +13,8 @@ repo_depends:
 - r-scales
 - r-ggalluvial
 - r-ragg
+- r-runjags
+- r-posterior
 - r-ggdist
 - r-png
 pre_build: vcs_update

@@ -16,6 +16,7 @@ repo_depends:
 - r-stringi
 - r-stringr
 - r-vdiffr
+- r-archive
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

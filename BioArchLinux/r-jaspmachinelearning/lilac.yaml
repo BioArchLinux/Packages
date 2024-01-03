@@ -5,6 +5,7 @@ build_prefix: extra-x86_64
 repo_depends:
 - r-auc
 - r-colorspace
+- r-dalex
 - r-dbscan
 - r-e1071
 - r-fpc
@@ -19,6 +20,7 @@ repo_depends:
 - r-glmnet
 - r-jaspbase
 - r-jaspgraphs
+- r-mvnormaltest
 - r-neuralnet
 - r-network
 - r-partykit

@@ -1,8 +1,8 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspLearnBayes
-_pkgver=0.18.1
+_pkgver=0.18.2
 pkgname=r-${_pkgname,,}
-pkgver=0.18.1
+pkgver=0.18.2
 pkgrel=1
 pkgdesc="Learn Bayes Module for JASP"
 arch=('any')
@@ -19,6 +19,8 @@ depends=(r
   r-scales
   r-ggalluvial
   r-ragg
+  r-runjags
+  r-posterior
   r-ggdist
   r-grid
   r-grdevices
