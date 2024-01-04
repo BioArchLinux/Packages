@@ -3,7 +3,7 @@
 pkgname=cimfomfa
 pkgver=22.273
 _pkgver=${pkgver//./-}
-pkgrel=2
+pkgrel=3
 pkgdesc='C utility library for zoem programming language' 
 arch=(x86_64)
 url="http://micans.org/mcl/"
