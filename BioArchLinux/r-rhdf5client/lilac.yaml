@@ -8,7 +8,8 @@ repo_depends:
 - r-httr
 - r-rjson
 update_on:
-- regex: rhdf5client_(\d.+\d+.\d+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rhdf5client
+- source: rpkgs
+  pkgname: rhdf5client
+  repo: bioc
+  md5: true
 - alias: r
