@@ -4,17 +4,17 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-assertthat
+- r-biocsingular
 - r-circlize
 - r-complexheatmap
 - r-dendextend
 - r-dplyr
-- r-factoextra
 - r-ggplot2
 - r-ggrepel
 - r-ggthemes
-- r-irlba
 - r-paralleldist
 - r-parallelly
+- r-pcatools
 - r-plyr
 - r-rcolorbrewer
 - r-rfast
