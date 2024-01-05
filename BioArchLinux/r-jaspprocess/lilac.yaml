@@ -1,0 +1,26 @@
+maintainers:
+  - github: sukanka
+    email: su975853527@gmail.com
+build_prefix: extra-x86_64
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+pre_build_script: |
+  for line in edit_file('PKGBUILD'):
+    if line.startswith('_pkgver='):
+      line = f'_pkgver={_G.newver}'
+    print(line)
+  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
+repo_depends:
+  - r-dagitty
+  - r-ggplot2
+  - r-ggraph
+  - r-grid
+  - r-jaspbase
+  - r-jaspgraphs
+update_on:
+  - source: github
+    github: jasp-stats/jaspProcess
+    use_max_tag: true
+    prefix: v
+  - alias: r
