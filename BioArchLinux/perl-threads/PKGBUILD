@@ -3,7 +3,7 @@
 
 pkgname='perl-threads'
 pkgver=2.22_01
-pkgrel=2
+pkgrel=3
 pkgdesc="Perl interpreter-based threads"
 arch=('i686' 'x86_64')
 license=('PerlArtistic' 'GPL')
