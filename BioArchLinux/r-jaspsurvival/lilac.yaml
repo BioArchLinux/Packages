@@ -12,7 +12,6 @@ pre_build_script: |
     print(line)
   update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 repo_depends:
-  - r-survival
   - r-survminer
   - r-jaspbase
   - r-jaspgraphs
