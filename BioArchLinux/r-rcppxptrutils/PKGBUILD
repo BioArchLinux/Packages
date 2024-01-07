@@ -1,41 +1,27 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
-# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
-_pkgname=parallelDist
-_pkgver=0.2.6
+_pkgname=RcppXPtrUtils
+_pkgver=0.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
-pkgdesc="Parallel Distance Matrix Computation using Multiple Threads"
-arch=(x86_64)
+pkgrel=1
+pkgdesc="XPtr Add-Ons for 'Rcpp'"
+arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=(MIT)
 depends=(
-  blas
-  lapack
   r-rcpp
-  r-rcppparallel
-)
-makedepends=(
-  r-rcpparmadillo
 )
 checkdepends=(
-  r-dtw
-  r-proxy
-  r-rcppxptrutils
   r-testthat
 )
 optdepends=(
-  r-dtw
-  r-ggplot2
-  r-proxy
-  r-rcpparmadillo
-  r-rcppxptrutils
+  r-inline
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c825739a2da14d2c90b7a4064639fcbc')
-b2sums=('b41497d7e4adcee2b40216f76f46921cb14999e6592a74edfb866741972569d8dfd0a55212de925899ee5591b0cc58ea757035f2e03c16100b7cca953b4dc570')
+md5sums=('3f646f0d2c93a5bfec9636a7e9b63c26')
+b2sums=('2d9371d20acef699663b94243f8e22a8b087c2ff1be37ae75b0c68f248dcd14ff4c3213223f900cd102ee5c58a41d9a62e0c0542f69e3e95592c157a7c8418d2')
 
 build() {
   mkdir build
@@ -50,4 +36,7 @@ check() {
 package() {
   install -d "$pkgdir/usr/lib/R/library"
   cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }

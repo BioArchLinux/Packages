@@ -1,13 +1,27 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-rcpp
-- r-rcpparmadillo
 - r-rcppparallel
+repo_makedepends:
+- r-rcpparmadillo
+- r-dtw
+- r-proxy
+- r-rcppxptrutils
+- r-testthat
 update_on:
-- regex: parallelDist_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=parallelDist
+- source: rpkgs
+  pkgname: parallelDist
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
