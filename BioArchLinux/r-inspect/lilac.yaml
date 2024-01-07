@@ -8,7 +8,6 @@ repo_depends:
 - r-biocparallel
 - r-deseq2
 - r-desolve
-- r-gdata
 - r-genomeinfodb
 - r-genomicalignments
 - r-genomicfeatures
@@ -16,6 +15,7 @@ repo_depends:
 - r-iranges
 - r-plgem
 - r-proc
+- r-readxl
 - r-rootsolve
 - r-rsamtools
 - r-rtracklayer
@@ -24,7 +24,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-txdb.mmusculus.ucsc.mm9.knowngene
 update_on:
-- regex: INSPEcT_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/INSPEcT
+- source: rpkgs
+  pkgname: INSPEcT
+  repo: bioc
+  md5: true
 - alias: r
