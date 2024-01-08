@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-akmbiclust
 - r-bh
@@ -14,8 +14,11 @@ repo_depends:
 - r-rcpp
 - r-rcppparallel
 - r-xml2
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: mosbi_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/mosbi
+- source: rpkgs
+  pkgname: mosbi
+  repo: bioc
+  md5: true
 - alias: r
