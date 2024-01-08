@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-apcluster
 - r-biganalytics
@@ -13,13 +13,15 @@ repo_depends:
 - r-paralleldist
 - r-plyr
 - r-rcpp
-- r-rcpparmadillo
-- r-rcppparallel
 - r-reshape2
 - r-rspectra
 - r-stringr
+repo_makedepends:
+- r-rcpparmadillo
+- r-rcppparallel
 update_on:
-- regex: mina_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/mina
+- source: rpkgs
+  pkgname: mina
+  repo: bioc
+  md5: true
 - alias: r
