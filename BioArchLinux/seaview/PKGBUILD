@@ -4,7 +4,7 @@
 
 pkgname=seaview
 pkgver=5.0.5
-pkgrel=10
+pkgrel=11
 pkgdesc="GUI for multiple sequence alignment and molecular phylogeny. https://doi.org/10.1093/molbev/msp259"
 arch=('x86_64')
 url="http://doua.prabi.fr/software/seaview"
