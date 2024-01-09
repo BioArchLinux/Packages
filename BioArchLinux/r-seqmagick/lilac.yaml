@@ -5,8 +5,10 @@ maintainers:
 repo_depends:
 - r-biostrings
 - r-magrittr
+- r-yulab.utils
 update_on:
-- regex: seqmagick_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=seqmagick
+- source: rpkgs
+  pkgname: seqmagick
+  repo: cran
+  md5: true
 - alias: r
