@@ -1,5 +1,5 @@
 pkgname=junest
-pkgver=7.4.7
+pkgver=7.4.8
 pkgrel=1
 pkgdesc="The Arch Linux based distro that runs upon any Linux distros without root access"
 arch=('any')
@@ -10,7 +10,7 @@ makedepends=('git')
 install=junest.install
 
 source=("$pkgname-$pkgver.tar.gz::https://github.com/fsquillace/junest/archive/refs/tags/${pkgver}.tar.gz")
-md5sums=('585a5f3e790e2e039828f990012a51a9')
+md5sums=('e36f727d1e1b90012ec20f8eba716cdb')
 
 noextract=()
 
