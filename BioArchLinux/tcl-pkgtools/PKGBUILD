@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=tcl-pkgtools
 pkgver=0.9.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A number of commands in pkgtools is used in the initializing of an extension"
 arch=('any')
 url="https://sourceforge.net/projects/tcl-dbi/files/"
