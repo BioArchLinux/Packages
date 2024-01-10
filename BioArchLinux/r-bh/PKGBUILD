@@ -4,10 +4,10 @@
 # Contributor: frichtlm <frichtlm@gmail.com>
 
 _pkgname=BH
-_pkgver=1.81.0-1
+_pkgver=1.84.0-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Boost C++ Header Files"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -17,8 +17,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('897f0d1cd97ba1047eff09acf68c07a8')
-b2sums=('1363976eba7a14fff36cacfc8d2e3fe2206318257a90c5976a3e39bba58180a92adebcda9083a21652331787a8afa1725bfc2db0c86547b480dfef2044acc407')
+md5sums=('34c6a9cf6213e6e93417b3168c4c84b4')
+b2sums=('3747e6ad5c8534abf9ca54159002628fbfdd9adec9ed28cee4e38a5e6a96e2605ce1ed63928c26e04abcd81d3df592b5fcde4281762407aad98ecdca350ac873')
 
 build() {
   mkdir build
