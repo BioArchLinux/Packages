@@ -2,7 +2,7 @@
 
 pkgname=sfa-spa
 pkgver=0.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A short peptide assembler for metagenomic data https://doi.org/10.1093/nar/gkt118"
 arch=('x86_64')
 url="https://sourceforge.net/projects/spa-assembler/"
