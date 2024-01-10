@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-biocstyle
 - r-colorspace
@@ -12,7 +12,8 @@ repo_depends:
 - r-rcppparallel
 - r-wgcna
 update_on:
-- regex: netboost_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/netboost
+- source: rpkgs
+  pkgname: netboost
+  repo: bioc
+  md5: true
 - alias: r
