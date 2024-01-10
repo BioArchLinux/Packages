@@ -4,7 +4,7 @@
 pkgname=emboss
 _pkgname=EMBOSS
 pkgver=6.6.0
-pkgrel=7
+pkgrel=8
 pkgdesc="A collection of molecular biology applications. https://doi.org/10.1016/s0168-9525(00)02024-2"
 arch=('x86_64' 'i686')
 url="http://emboss.sourceforge.net/"
