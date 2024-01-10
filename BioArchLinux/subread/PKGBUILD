@@ -1,7 +1,7 @@
 # Maintainer: bipin Kumar <kbipinkumar@pm.me>
 pkgname=subread
 pkgver=2.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="a general-purpose read aligner which can align both genomic DNA-seq and RNA-seq reads, https://doi.org/10.1093/nar/gkt214"
 arch=(x86_64)
 url="https://subread.sourceforge.net/"
