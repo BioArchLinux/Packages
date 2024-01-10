@@ -1,6 +1,6 @@
 pkgname=clustalv
 pkgver=1991
-pkgrel=1
+pkgrel=2
 pkgdesc='improved software for multiple sequence alignment\
         https://doi.org/10.1093/bioinformatics/8.2.189'
 arch=('x86_64')
