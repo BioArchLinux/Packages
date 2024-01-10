@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=extral
 pkgver=2.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Extra commands for Tcl"
 arch=('x86_64')
 url="http://rnaviz.sourceforge.net/index.html"
