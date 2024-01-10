@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=rnaviz
 pkgver=2.0.0
-pkgrel=4
+pkgrel=5
 pkgdesc="GUI program for producing publication-quality secondary structure drawings of RNA molecules"
 arch=('x86_64')
 url="http://rnaviz.sourceforge.net/index.html"
