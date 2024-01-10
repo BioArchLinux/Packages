@@ -2,7 +2,7 @@
 pkgbase="classytk"
 pkgname=(classytk classytcl)
 pkgver=1.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="widget set and GUI builder based on ClassyTcl object system"
 arch=('x86_64')
 url="https://wiki.tcl-lang.org/page/ClassyTk"
