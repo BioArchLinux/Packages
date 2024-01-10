@@ -3,7 +3,7 @@
 pkgbase=estscan
 pkgname=('estscan' 'estscan-doc')
 pkgver=3.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="ORF-independent detector of coding DNA sequences"
 arch=(x86_64)
 url="https://estscan.sourceforge.net/"
