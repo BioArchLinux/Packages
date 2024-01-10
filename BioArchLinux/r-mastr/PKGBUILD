@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=mastR
-_pkgver=1.2.0
+_pkgver=1.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Markers Automated Screening Tool in R"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -58,8 +58,8 @@ optdepends=(
   r-upsetr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('be4cab3fb29097cb5dd34ee7ba1ce228')
-b2sums=('edffa8476c46946b644b308658d6bf2b4db94e5899f49a97489c5a3fc58273fc980e2ef7de04a848ab7ace8b95b1f56899b80be0c4008a71863cf64d3af06a38')
+md5sums=('5bb69f6e700b3f8438f9ec52ee693fff')
+b2sums=('ff4503acac565625cba8cdd7eb5abef9afd365f8636190d95f503098f2c285dfa2d905760e007d599152e9ccab4b6db99910f490345c5711a1f973d5d19474ab')
 
 build() {
   mkdir build
