@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=GenomicPlot
-_pkgver=1.0.0
+_pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Plot profiles of next generation sequencing data in genomic features"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -38,20 +38,16 @@ depends=(
 )
 optdepends=(
   r-annotationdbi
-  r-annotationhub
   r-biobase
-  r-biocfilecache
   r-biocstyle
-  r-bsgenome.hsapiens.ucsc.hg19
   r-knitr
   r-r.utils
   r-rmarkdown
   r-testthat
-  r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ff0cee9d866f4cea69ee355bdac1f574')
-b2sums=('c6e7f702b1b92577b2bc96ca9abf1a234a95d8e2fd738d4250328d4b799ec5a20d8af82883644ccd3f1c97d54828b30b693bc8b7e90d5504127e271b2a21e158')
+md5sums=('bcc9e662f63c7b11abdeeb1c42397fca')
+b2sums=('a33075353f3ff8c7f8eae3c8239365cbdc69399079a31324924844e1c8a2d229bf9abc9c2664d1b44b58f90b544032a130b92f3592d93c270fcfc0e29b6a061f')
 
 build() {
   mkdir build
