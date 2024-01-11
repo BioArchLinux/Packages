@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-ape
 - r-assertthat
-- r-biomformat
 - r-caret
 - r-covr
 - r-deseq2
@@ -13,15 +12,14 @@ repo_depends:
 - r-dt
 - r-forcats
 - r-ggplot2
-- r-glmnet
 - r-gunifrac
 - r-limma
 - r-magrittr
 - r-multiassayexperiment
 - r-plotly
-- r-plotroc
 - r-rentrez
 - r-reshape2
+- r-rocit
 - r-s4vectors
 - r-scales
 - r-shiny
@@ -33,7 +31,8 @@ repo_depends:
 - r-vegan
 - r-xml
 update_on:
-- regex: animalcules_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/animalcules
+- source: rpkgs
+  pkgname: animalcules
+  repo: bioc
+  md5: true
 - alias: r
