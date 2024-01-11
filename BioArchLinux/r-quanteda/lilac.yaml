@@ -1,21 +1,32 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-fastmatch
 - r-jsonlite
 - r-magrittr
 - r-rcpp
-- r-rcpparmadillo
 - r-rcppparallel
 - r-snowballc
 - r-stopwords
 - r-stringi
 - r-xml2
 - r-yaml
+repo_makedepends:
+- r-rcpparmadillo
+- r-dplyr
+- r-lda
+- r-lsa
+- r-purrr
+- r-testthat
+- r-text2vec
+- r-tidytext
+- r-tm
+- r-topicmodels
 update_on:
-- regex: quanteda_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=quanteda
+- source: rpkgs
+  pkgname: quanteda
+  repo: cran
+  md5: true
 - alias: r
