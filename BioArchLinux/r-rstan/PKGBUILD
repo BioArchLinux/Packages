@@ -6,10 +6,10 @@
 # Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=rstan
-_pkgver=2.32.3
+_pkgver=2.32.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="R Interface to Stan"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -45,8 +45,8 @@ optdepends=(
   r-v8
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('6414d45665fbc9aa1fd0e7d4ef3e8d0b')
-b2sums=('205339486dd5f90d566f28cb70940c7408d39705cddffe6941c9a658a4e735367e9e73ef79545fe737c55e88597875e690dec07cac2217be3309343ce94d2fb9')
+md5sums=('0d7ea5114187f589f6a2255cf1eeb397')
+b2sums=('509272c2b88ad2d1949620fc5ad7a32ab894005a829226ec9ccf39af0cd7bbbcfc4faee798f75ba4f4a984a827bae491cbdc52b7ea1c9292054382dae02bc3d9')
 
 build() {
   mkdir build
