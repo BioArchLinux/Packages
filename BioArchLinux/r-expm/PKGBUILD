@@ -5,7 +5,7 @@
 # Contributor: fordprefect <fordprefect@dukun.de>
 
 _pkgname=expm
-_pkgver=0.999-8
+_pkgver=0.999-9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -27,8 +27,8 @@ optdepends=(
   r-sfsmisc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('bca6fae94f270b8ec63c210519079a0c')
-b2sums=('c990fd081cd22536b14e5df6f66c376f9572e45fb6da11d320cfd7cf07cc8717dd7712bbe83b4e11e20f3cb5766a9976fb85fe697b2d47cafafdba353d2f6c85')
+md5sums=('6ae969bc1a952491529805f79477a056')
+b2sums=('76fc4cab2d4166c77d7e005e0ce125b7065305fd1f5ef86dbec03db0e0cc2622c0d5fcd776366fdcd1945aef57697b9cc74471879a33b2a11b28704b3ad5187b')
 
 build() {
   mkdir build
