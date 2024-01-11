@@ -15,7 +15,6 @@ repo_depends:
 - r-rstudioapi
 - r-withr
 repo_makedepends:
-- r-mockr
 - r-styler
 - r-testthat
 update_on:
