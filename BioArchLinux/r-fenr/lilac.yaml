@@ -8,18 +8,17 @@ repo_depends:
 - r-biomart
 - r-dplyr
 - r-ggplot2
-- r-httr
-- r-jsonlite
+- r-httr2
 - r-progress
 - r-purrr
 - r-readr
 - r-rlang
+- r-rvest
 - r-shiny
 - r-stringr
 - r-tibble
 - r-tidyr
 - r-tidyselect
-- r-xml
 repo_makedepends:
 - r-testthat
 update_on:
