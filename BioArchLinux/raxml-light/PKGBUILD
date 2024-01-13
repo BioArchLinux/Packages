@@ -1,7 +1,7 @@
 pkgname=raxml-light
 _pkgname=RAxML-Light
 pkgver=1.0.9
-pkgrel=2
+pkgrel=3
 pkgdesc="A tool for computing terabyte phylogenies https://doi.org/10.1093/bioinformatics/bts309"
 arch=('x86_64')
 url="https://cme.h-its.org/exelixis/web/software/raxml-light/index.html"
