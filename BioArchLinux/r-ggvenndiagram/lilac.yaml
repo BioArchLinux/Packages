@@ -8,7 +8,8 @@ repo_depends:
 - r-forcats
 - r-ggplot2
 - r-tibble
-- r-tidyr
+- r-venn
+- r-yulab.utils
 update_on:
 - source: rpkgs
   pkgname: ggVennDiagram
