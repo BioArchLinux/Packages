@@ -1,6 +1,5 @@
-diff -uN abPOA-1.4.2.orig/CMakeLists.txt abPOA-1.4.2.new/CMakeLists.txt
---- abPOA-1.4.2.orig/CMakeLists.txt	2023-12-13 09:36:16.000000000 +0530
-+++ abPOA-1.4.2.new/CMakeLists.txt	2023-12-18 13:27:02.539837753 +0530
+--- abPOA-1.5.0/CMakeLists.txt	2024-01-11 20:53:54.000000000 +0530
++++ abPOA-1.5.0.new/CMakeLists.txt	2024-01-13 20:40:00.587485226 +0530
 @@ -10,7 +10,7 @@
  
  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
@@ -10,52 +9,3 @@ diff -uN abPOA-1.4.2.orig/CMakeLists.txt abPOA-1.4.2.new/CMakeLists.txt
  
  # build abPOA as a static library by default
  set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build all libraries as shared")
-Common subdirectories: abPOA-1.4.2.orig/include and abPOA-1.4.2.new/include
-diff -uN abPOA-1.4.2.orig/Makefile abPOA-1.4.2.new/Makefile
---- abPOA-1.4.2.orig/Makefile	2023-12-13 09:36:16.000000000 +0530
-+++ abPOA-1.4.2.new/Makefile	2023-12-18 13:27:02.543170925 +0530
-@@ -2,19 +2,19 @@
- EXTRA_FLAGS = -Wno-unused-function -Wno-misleading-indentation -DUSE_SIMDE -DSIMDE_ENABLE_NATIVE_ALIASES
- CFLAGS      = -Wall -O3 $(EXTRA_FLAGS)
- 
--SIMD_FLAG   = -march=native
-+#SIMD_FLAG   = -march=native
- 
--ifneq ($(armv7),) # for ARMv7
--	SIMD_FLAG   =  -march=armv7-a -mfpu=neon -D__AVX2__
--else
--ifneq ($(armv8),) # for ARMv8
--ifneq ($(aarch64),) # for Aarch64 
--	SIMD_FLAG   =  -march=armv8-a+simd -D__AVX2__
--else # for Aarch32
--	SIMD_FLAG   =  -march=armv8-a+simd -mfpu=auto -D__AVX2__
--endif
--endif
--endif
-+#ifneq ($(armv7),) # for ARMv7
-+#	SIMD_FLAG   =  -march=armv7-a -mfpu=neon -D__AVX2__
-+#else
-+#ifneq ($(armv8),) # for ARMv8
-+#ifneq ($(aarch64),) # for Aarch64 
-+#	SIMD_FLAG   =  -march=armv8-a+simd -D__AVX2__
-+#else # for Aarch32
-+#	SIMD_FLAG   =  -march=armv8-a+simd -mfpu=auto -D__AVX2__
-+#endif
-+#endif
-+#endif
- 
- # for debug
- ifneq ($(debug),)
-Common subdirectories: abPOA-1.4.2.orig/python and abPOA-1.4.2.new/python
-diff -uN abPOA-1.4.2.orig/setup.py abPOA-1.4.2.new/setup.py
---- abPOA-1.4.2.orig/setup.py	2023-12-13 09:36:16.000000000 +0530
-+++ abPOA-1.4.2.new/setup.py	2023-12-18 13:27:11.766172742 +0530
-@@ -63,5 +63,5 @@
-                     include_dirs=[inc_dir],
-                     depends=[src_dir+'abpoa.h', src_dir+'abpoa_align.h', src_dir+'abpoa_graph.h', src_dir+'abpoa_output.h', src_dir+'abpoa_seed.h', src_dir+'abpoa_seq.h', src_dir+'kalloc.h', src_dir+'khash.h', src_dir+'kdq.h', src_dir+'kseq.h', src_dir+'ksort.h', src_dir+'kstring.h', src_dir+'kvec.h', src_dir+'simd_abpoa_align.h', src_dir+'simd_instruction.h', src_dir+'utils.h', 'python/cabpoa.pxd'],
-                     libraries = ['z', 'm', 'pthread'],
--                    extra_compile_args=['-O3', '-Wno-error=declaration-after-statement', simde, simd_flag])]
-+                    extra_compile_args=['-O3', '-Wno-error=declaration-after-statement', simde])],
- )
-Common subdirectories: abPOA-1.4.2.orig/src and abPOA-1.4.2.new/src
-Common subdirectories: abPOA-1.4.2.orig/test_data and abPOA-1.4.2.new/test_data
