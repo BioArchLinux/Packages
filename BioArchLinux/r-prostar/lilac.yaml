@@ -16,6 +16,7 @@ repo_depends:
 - r-htmlwidgets
 - r-knitr
 - r-later
+- r-markdown
 - r-promises
 - r-r.utils
 - r-rclipboard
