@@ -3,7 +3,7 @@
 # Contributor: Pranav K Anupam <pranavanupam@yahoo.com>
 
 _pkgname=uuid
-_pkgver=1.1-1
+_pkgver=1.2-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -17,9 +17,9 @@ depends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-uuid.patch")
-md5sums=('51555df70ad6c99fd966f78f45abebaa'
+md5sums=('e2888f2648528022ab731b3683bb7ea6'
          'fc5b61316f82d529e10881188302d532')
-b2sums=('615ea05133d5bcc562c748a3df1abafb5d87149f9b092ff6c8c32037629c0b8714714e0b9205c6f2b2f98009f584df27bb7068933d8f216580c0f24fb1fdad27'
+b2sums=('b46dad29c4d3e2c6e593eecaf330ff2dde255ed26d47d387a455d2032eed47e47249472d65190ff7d511ee2389a6cf94ddd728cf1be737f9abcfb189e66615cf'
         '7c0911a64fed42baec57ec5fccf8861c735e31da6b94b80f2f2c2b14e7fdd4843c6aad5c4e6b85dd1008bd83f523a47869a70ffdfa5259719f9d8277890d6e52')
 
 prepare() {
