@@ -3,7 +3,7 @@
 
 pkgname=tbtools
 _pkgname=TBtools
-pkgver=2.041
+pkgver=2.042
 pkgrel=1
 epoch=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. \
