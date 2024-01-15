@@ -8,7 +8,7 @@ pkgrel=4
 pkgdesc="a library for connecting to the National Cancer Institute (USA) CACTUS Database"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(AGPL3)
+license=('AGPL-3.0-only')
 depends=(
   r-biodb
   r-chk
