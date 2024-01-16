@@ -9,7 +9,7 @@ arch=('x86_64')
 depends=('java-runtime=17' 'alsa-lib' 'glibc' 'zlib' 'freetype2' 'hicolor-icon-theme')
 makedepends=('tar')
 url="https://morphometrics.uk/MorphoJ_page.html"
-license=('Apache')
+license=('Apache-2.0')
 source=("https://morphometrics.uk/MorphoJ_stuff/download.php?get=MorphoJ-${pkgver}_amd64.deb")
 sha256sums=('bf262f01be579295eeb00f49438a93d82c6dd000bc4bb6899a2febba0a900735')
 build() {

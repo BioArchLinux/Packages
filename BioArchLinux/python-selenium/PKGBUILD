@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(any)
 url="https://www.selenium.dev"
-license=(Apache)
+license=('Apache-2.0')
 depends=('python-urllib3' 'python-certifi' 'python-debugpy' 'python-multidict'
          'python-importlib-metadata' 'python-trio-websocket'
          'python-inflection' 'geckodriver' 'python-typing_extensions')
