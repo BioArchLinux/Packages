@@ -8,6 +8,7 @@ arch=('i686' 'x86_64')
 url="https://github.com/arq5x/bedtools2"
 license=('GPL2')
 depends=('bash' 'zlib')
+makedepends=('python')
 checkdepends=('samtools')
 source=("https://github.com/arq5x/bedtools2/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
 sha1sums=('c45dcdd7af1d6ef3ec0d6dc6a3f3714e7221c2ff')
