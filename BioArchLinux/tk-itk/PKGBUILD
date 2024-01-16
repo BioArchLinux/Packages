@@ -2,7 +2,7 @@
 
 pkgname=tk-itk
 pkgver=4.1.0
-pkgrel=6
+pkgrel=7
 pkgdesc="OOP extension for Tk"
 arch=('x86_64')
 url="http://incrtcl.sourceforge.net/"
