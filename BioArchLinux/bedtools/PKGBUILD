@@ -12,6 +12,11 @@ checkdepends=('samtools')
 source=("https://github.com/arq5x/bedtools2/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
 sha1sums=('c45dcdd7af1d6ef3ec0d6dc6a3f3714e7221c2ff')
 
+prepare(){
+	cd $srcdir/${pkgname}2
+	sed -i "s@python3@python@g" Makefile
+}
+
 build()
 {
 	cd $srcdir/${pkgname}2
