@@ -1,7 +1,7 @@
 pkgname=generax
 _pkgname=GeneRax
-pkgver=2.0.4
-pkgrel=4
+pkgver=2.1.3
+pkgrel=1
 arch=('x86_64')
 url="https://github.com/BenoitMorel/GeneRax"
 pkgdesc="A Tool for Species-Tree-Aware Maximum Likelihood-Based Gene  Family Tree Inference under Gene Duplication, Transfer, and Loss https://doi.org/10.1093/molbev/msaa141"
