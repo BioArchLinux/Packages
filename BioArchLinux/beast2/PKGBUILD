@@ -4,7 +4,7 @@
 
 pkgname=beast2
 pkgver=2.7.5
-_pkgver=2.7.2
+_pkgver=2.7.6
 pkgrel=1
 pkgdesc="Bayesian Evolutionary Analysis by Sampling Trees. https://doi.org/10.1371/journal.pcbi.1003537"
 arch=('any')
