@@ -195,7 +195,7 @@ license_map = {
     "Artistic-2.0": "Artistic-2.0",
     "BSD_2_clause + file LICENSE": "BSD-2-Clause",
     "BSD_3_clause + file LICENSE": "BSD-3-Clause",
-    "BSL-1.0": "Boost",
+    "BSL-1.0": "BSL-1.0",
     "CC0": "CC0-1.0",
     "CeCILL": "CECILL-2.0",
     "EPL": "EPL",
