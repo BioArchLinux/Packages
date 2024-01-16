@@ -2,7 +2,7 @@
 
 pkgname=classic-delta
 pkgver=2.25g
-pkgrel=1
+pkgrel=2
 pkgdesc="An Open Source System for Processing Taxonomic Descriptions https://doi.org/10.2307/1219595"
 arch=('x86_64')
 url="http://freedelta.sourceforge.net/"
