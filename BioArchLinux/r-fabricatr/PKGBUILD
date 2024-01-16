@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=fabricatr
-_pkgver=1.0.0
+_pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Imagine Your Data Before You Collect It"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -22,8 +22,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9a30e41e08bd0098b6183dcbfafaeed8')
-b2sums=('3beac1ea9f5ce30e0018e23c0f5d2a3de8e1eebf8eaf162942fb07466263771c3aa81bac6796fc9f7ba9336e9077a9c969f0183306a8622ac689373d61627057')
+md5sums=('d0e4c325160f22c0b8697a66906b35ea')
+b2sums=('8a48540da7b0fcf167263436cfa3ed7681b6a83a82eed2a583224d63f78603ecbd5fe9b97032eb5c05808fa0bd3b942117e73942e6ac719b8c515c045b2bed85')
 
 build() {
   mkdir build
