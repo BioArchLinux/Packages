@@ -190,7 +190,7 @@ license_map = {
     "Apache License (== 2.0)": "Apache-2.0",
     "Apache License (>= 2)": "Apache",
     "Apache License (>= 2.0)": "Apache",
-    "Apache License 2.0": "Apache",
+    "Apache License 2.0": "Apache-2.0",
     "Artistic-1.0": "Artistic-1.0-Perl",
     "Artistic-2.0": "Artistic2.0",
     "BSD_2_clause + file LICENSE": "BSD",
