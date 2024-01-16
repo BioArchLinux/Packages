@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="kallisto | bustools R utilities"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(BSD)
+license=('BSD-2-Clause')
 depends=(
   r-annotationdbi
   r-annotationfilter

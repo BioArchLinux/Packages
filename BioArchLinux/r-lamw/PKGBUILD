@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="Lambert-W Function"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(BSD)
+license=('BSD-2-Clause')
 depends=(
   r-rcpp
   r-rcppparallel

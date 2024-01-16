@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Improves Early Build Genome Assemblies using Strand-Seq Data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(BSD)
+license=('BSD-2-Clause')
 depends=(
   r-bh
   r-biocgenerics
