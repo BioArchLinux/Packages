@@ -1,7 +1,7 @@
 # Maintainer: Geballin - Guillaume Ballin <macniaque at free dot fr>
 pkgname=iwidgets
 pkgver=4.1.1
-pkgrel=6
+pkgrel=7
 pkgdesc="A megawidget set based on [incr Tcl] and [incr Tk]"
 url="https://sourceforge.net/projects/incrtcl/"
 arch=('x86_64' 'i686')
