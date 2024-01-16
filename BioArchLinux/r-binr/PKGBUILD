@@ -8,7 +8,7 @@ pkgrel=4
 pkgdesc="Cut Numeric Values into Evenly Distributed Groups"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(Apache)
+license=('Apache-2.0')
 depends=(
   r
 )
