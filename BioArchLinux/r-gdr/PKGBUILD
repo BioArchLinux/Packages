@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Umbrella package for R packages in the gDR suite"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-gdrcore
   r-gdrimport

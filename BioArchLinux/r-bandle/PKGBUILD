@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="An R package for the Bayesian analysis of differential subcellular localisation experiments"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   blas
   lapack

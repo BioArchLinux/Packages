@@ -13,7 +13,7 @@ pkgrel=1
 pkgdesc="Foundation of vector-like and list-like containers in Bioconductor"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-biocgenerics
 )

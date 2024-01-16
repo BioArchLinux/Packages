@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Disease Ontology Semantic and Enrichment analysis"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-annotationdbi
   r-biocparallel

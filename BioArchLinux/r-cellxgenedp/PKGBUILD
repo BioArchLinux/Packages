@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Discover and Access Single Cell Data Sets in the cellxgene Data Portal"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-curl
   r-dplyr

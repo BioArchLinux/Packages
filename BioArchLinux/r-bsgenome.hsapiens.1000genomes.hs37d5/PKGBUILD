@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="1000genomes Reference Genome Sequence (hs37d5)"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-bsgenome
 )

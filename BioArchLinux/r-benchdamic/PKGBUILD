@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Benchmark of differential abundance methods on microbiome data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-aldex2
   r-ancombc

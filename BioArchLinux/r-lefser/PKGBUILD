@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="R implementation of the LEfSE method for microbiome biomarker discovery"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-coin
   r-ggplot2

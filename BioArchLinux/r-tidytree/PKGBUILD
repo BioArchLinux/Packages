@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="A Tidy Tool for Phylogenetic Tree Data Manipulation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-ape
   r-cli

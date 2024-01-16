@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Find/fix old serialized S4 instances"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   git
   r-biocgenerics

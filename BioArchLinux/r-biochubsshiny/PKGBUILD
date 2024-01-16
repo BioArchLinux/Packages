@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="View AnnotationHub and ExperimentHub Resources Interactively"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-annotationhub
   r-dt

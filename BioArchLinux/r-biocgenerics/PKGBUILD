@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="S4 generic functions used in Bioconductor"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r
 )

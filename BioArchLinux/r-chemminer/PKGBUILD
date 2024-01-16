@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="Cheminformatics Toolkit for R"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-base64enc
   r-biocgenerics

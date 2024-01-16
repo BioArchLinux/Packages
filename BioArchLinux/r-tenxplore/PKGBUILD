@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-annotationdbi
   r-matrixstats

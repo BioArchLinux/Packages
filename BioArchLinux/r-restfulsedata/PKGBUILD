@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Example metadata for the \"restfulSE\" R package"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-delayedarray
   r-experimenthub

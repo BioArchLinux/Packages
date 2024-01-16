@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Analysis Tools for scATACseq Data with CoGAPS"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-bsgenome.hsapiens.ucsc.hg19
   r-bsgenome.mmusculus.ucsc.mm10

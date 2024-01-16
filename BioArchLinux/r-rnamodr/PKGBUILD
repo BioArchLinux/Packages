@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Detection of post-transcriptional modifications in high throughput sequencing data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-biocgenerics
   r-biocparallel

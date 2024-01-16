@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Cancer Dependency Map Data Package"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-annotationhub
   r-dplyr

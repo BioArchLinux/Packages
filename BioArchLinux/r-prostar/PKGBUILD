@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Provides a GUI for DAPAR"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-colourpicker
   r-dapar

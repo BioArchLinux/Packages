@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Species and taxonomy ID look up tables used by GenomeInfoDb"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r
 )

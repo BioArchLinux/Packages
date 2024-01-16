@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Cohort-scale differential expression analysis of single cell data using linear (mixed) models"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-ashr
   r-biocgenerics

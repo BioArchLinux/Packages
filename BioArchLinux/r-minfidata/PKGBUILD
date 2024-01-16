@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Example data for the Illumina Methylation 450k array"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-illuminahumanmethylation450kanno.ilmn12.hg19
   r-illuminahumanmethylation450kmanifest

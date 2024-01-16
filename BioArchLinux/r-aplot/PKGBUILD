@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Decorate a 'ggplot' with Associated Information"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-ggfun
   r-ggplot2

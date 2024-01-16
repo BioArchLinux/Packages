@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="Annotation for microarrays"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-annotationdbi
   r-biobase

@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Use Image in 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-ggfun
   r-ggplot2

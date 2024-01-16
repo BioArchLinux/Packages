@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Tools to work with a Compendium of 181000 human transcriptome sequencing studies"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-s4vectors
   r-shiny

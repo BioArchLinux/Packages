@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="A package with helper functions for processing drug response data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0)
+license=('Artistic-2.0')
 depends=(
   r-biocparallel
   r-bumpymatrix
