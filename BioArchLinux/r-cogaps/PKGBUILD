@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Coordinated Gene Activity in Pattern Sets"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(BSD)
+license=('BSD-3-Clause')
 depends=(
   r-biocparallel
   r-biomart

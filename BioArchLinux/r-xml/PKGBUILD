@@ -12,7 +12,7 @@ pkgrel=3
 pkgdesc="Tools for Parsing and Generating XML Within R and S-Plus"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(BSD)
+license=('BSD-3-Clause')
 depends=(
   libxml2
   r

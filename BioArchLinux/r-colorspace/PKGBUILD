@@ -14,7 +14,7 @@ pkgrel=5
 pkgdesc="A Toolbox for Manipulating and Assessing Colors and Palettes"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(BSD)
+license=('BSD-3-Clause')
 depends=(
   r
 )

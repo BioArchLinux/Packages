@@ -12,7 +12,7 @@ pkgrel=1
 pkgdesc="Methods to Convert R Data to YAML and Back"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(BSD)
+license=('BSD-3-Clause')
 depends=(
   r
 )

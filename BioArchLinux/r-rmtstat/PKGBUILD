@@ -8,7 +8,7 @@ pkgrel=8
 pkgdesc="Distributions, Statistics and Tests Derived from Random Matrix Theory"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(BSD)
+license=('BSD-3-Clause')
 depends=(
   r
 )
