@@ -1,6 +1,6 @@
 pkgname=exabayes
 pkgver=1.5.1
-pkgrel=5
+pkgrel=6
 pkgdesc="software package for Bayesian tree inference https://doi.org/10.1093/molbev/msu236"
 arch=('x86_64')
 url="https://cme.h-its.org/exelixis/web/software/exabayes/"
@@ -10,7 +10,7 @@ license=('GPL')
 source=("https://cme.h-its.org/exelixis/resource/download/software/exabayes-${pkgver}.tar.gz"
 	"gcc13.patch")
 md5sums=('d7382116cd38cd094a8484f05f7fdcf6'
-	 '6fa6e754b50c96e612312c1b6e70eb81')
+         'de9fd294cb24d7030ba6b35a3a4ecb76')
 
 prepare(){
   cd $pkgname-$pkgver
