@@ -2,26 +2,22 @@
 # Contributor: malacology
 
 pkgname=tiger
-pkgver=1.04
-pkgrel=5
+pkgver=1.02a
+pkgrel=0
 pkgdesc="Identifying rapidly-evolving characters in evolutionary data. https://doi.org/10.1093/sysbio/syr064"
 arch=('x86_64')
-url="http://mcinerneylab.com/software/tiger/",""
+url="http://mcinerneylab.com/software/tiger/"
 license=('GPL3')
+epoch=0
 depends=(
 	'python'
 )
-source=("https://github.com/starsareintherose/tiger/releases/download/${pkgver}/tiger_unix_${pkgver}.zip")
+source=("https://github.com/starsareintherose/tiger/archive/refs/tags/${pkgver}.tar.gz")
 md5sums=('5c4aebdd3e0357f0f41f5f93d4e17bd0')
 
 package() {
   install -dm755 "$pkgdir"/usr/{bin,share/tiger}
   chmod +x *
-  install -Dm755 "$srcdir"/tiger_unix_${pkgver}/tiger_unix_${pkgver}/tiger "$pkgdir"/usr/bin
-  install -Dm755 "$srcdir"/tiger_unix_${pkgver}/tiger_unix_${pkgver}/tiger_fns_102.py "$pkgdir"/usr/bin
-  mv "$srcdir"/tiger_unix_${pkgver}/tiger_unix_${pkgver}/* "$pkgdir"/usr/share/tiger
+  install -Dm755 "$srcdir"/tiger-${pkgver}/tiger_unix_${pkgver}/tiger "$pkgdir"/usr/bin
+  install -Dm755 "$srcdir"/tiger-${pkgver}/tiger_fns_102.py "$pkgdir"/usr/bin
 }
-# For using Python2
-# cd /usr/bin
-# sudo rm python
-# sudo ln -s python2 python
