@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="Estimating Time-Varying k-Order Mixed Graphical Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-glmnet
   r-gtools

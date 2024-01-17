@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Applies Multiclass AdaBoost.M1, SAMME and Bagging"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-caret
   r-consrank

@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Fast Inference for Large Spatial Datasets using BRISC"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   blas
   lapack

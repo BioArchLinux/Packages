@@ -8,7 +8,7 @@ pkgrel=3
 pkgdesc="provides the output of running various transcript abundance quantifiers on a set of 6 RNA-seq samples from the GEUVADIS project"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r
 )

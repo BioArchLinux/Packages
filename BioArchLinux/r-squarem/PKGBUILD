@@ -10,7 +10,7 @@ pkgrel=12
 pkgdesc="Squared Extrapolation Methods for Accelerating EM-Like Monotone Algorithms"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r
 )

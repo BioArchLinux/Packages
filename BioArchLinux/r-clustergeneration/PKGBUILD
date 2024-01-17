@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="Random Cluster Generation (with Specified Degree of Separation)"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r
 )

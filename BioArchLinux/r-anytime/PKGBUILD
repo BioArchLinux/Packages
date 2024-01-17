@@ -10,7 +10,7 @@ pkgrel=5
 pkgdesc="Anything to 'POSIXct' or 'Date' Converter"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-rcpp
 )

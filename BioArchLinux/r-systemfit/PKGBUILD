@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Estimating Systems of Simultaneous Equations"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-car
   r-lmtest

@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="R-Squared and Related Measures"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-deming
   r-deriv

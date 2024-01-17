@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Create Waffle Chart Visualizations"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-curl
   r-dt

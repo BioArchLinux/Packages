@@ -10,7 +10,7 @@ pkgrel=3
 pkgdesc="Command Line Optional and Positional Argument Parser"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   python
   r-findpython
