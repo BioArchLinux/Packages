@@ -10,7 +10,7 @@ pkgrel=7
 pkgdesc="Modeling and Inferring Gene Networks"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r-corpcor
   r-fdrtool

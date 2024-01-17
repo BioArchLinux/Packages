@@ -9,7 +9,7 @@ pkgrel=3
 pkgdesc="Calculate Pairwise Multiple Comparisons of Mean Rank Sums"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r
 )

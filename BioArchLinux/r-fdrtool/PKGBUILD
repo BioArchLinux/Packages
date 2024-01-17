@@ -10,7 +10,7 @@ pkgrel=10
 pkgdesc="Estimation of (Local) False Discovery Rates and Higher Criticism"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r
 )

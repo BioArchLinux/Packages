@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Logistic Factor Analysis for Categorical Data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   blas
   lapack

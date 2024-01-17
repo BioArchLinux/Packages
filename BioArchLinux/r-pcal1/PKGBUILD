@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="L1-Norm PCA Methods"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   blas
   coin-or-clp

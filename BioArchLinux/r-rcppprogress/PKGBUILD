@@ -9,7 +9,7 @@ pkgrel=10
 pkgdesc="An Interruptible Progress Bar with OpenMP Support for C++ in R Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r
 )

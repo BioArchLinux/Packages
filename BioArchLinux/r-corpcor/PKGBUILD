@@ -10,7 +10,7 @@ pkgrel=10
 pkgdesc="Efficient Estimation of Covariance and (Partial) Correlation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r
 )

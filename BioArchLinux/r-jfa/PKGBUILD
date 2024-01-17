@@ -9,7 +9,7 @@ pkgrel=4
 pkgdesc="Statistical Methods for Auditing"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r-bde
   r-extradistr
