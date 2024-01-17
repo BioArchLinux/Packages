@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="Fast Cross-Validation via Sequential Testing"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-kernlab
 )
