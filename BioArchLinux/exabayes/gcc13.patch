@@ -1,0 +1,13 @@
+diff --git a/src/config/BlockRunParameters.hpp b/src/config/BlockRunParameters.hpp
+index 1b4fbfc..8c0a79f 100644
+--- a/src/config/BlockRunParameters.hpp
++++ b/src/config/BlockRunParameters.hpp
+@@ -5,7 +5,7 @@
+ #include <cassert>
+ #include "ExaBlock.hpp"
+ #include "common.h"
+-
++#include <cstdint>
+ 
+ class BlockRunParameters : public ExaBlock
+ {
