@@ -13,7 +13,7 @@ pkgrel=1
 pkgdesc="A General-Purpose Package for Dynamic Report Generation in R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-evaluate
   r-highr

@@ -199,7 +199,7 @@ license_map = {
     "CC0": "CC0-1.0",
     "CeCILL": "CECILL-2.0",
     "EPL": "EPL",
-    "GPL": "GPL",
+    "GPL": "GPL-2.0-or-later",
     "GPL (>= 2)": "GPL",
     "GPL (>= 2.0)": "GPL",
     "GPL (>= 3)": "GPL3",

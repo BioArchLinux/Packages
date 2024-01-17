@@ -12,7 +12,7 @@ pkgrel=4
 pkgdesc="Syntax Highlighting for R Source Code"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL)
+license=('GPL-2.0-or-later')
 depends=(
   r-xfun
 )
