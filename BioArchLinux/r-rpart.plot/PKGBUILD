@@ -8,7 +8,7 @@ pkgrel=6
 pkgdesc="Plot 'rpart' Models: An Enhanced Version of 'plot.rpart'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r
 )

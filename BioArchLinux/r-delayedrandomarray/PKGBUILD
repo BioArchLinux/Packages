@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Delayed Arrays of Random Values"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-delayedarray
   r-dqrng

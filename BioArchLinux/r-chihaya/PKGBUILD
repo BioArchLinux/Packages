@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Save Delayed Operations to a HDF5 File"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-delayedarray
   r-hdf5array

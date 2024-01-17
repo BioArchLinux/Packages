@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Statistical Analysis of Regions with CNVs"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-data.table
   r-desctools

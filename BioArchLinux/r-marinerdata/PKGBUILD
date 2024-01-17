@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="ExperimentHub data for the mariner package"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-experimenthub
 )

@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Find the most characteristic gene ontology terms for groups of human genes"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-annotationdbi
   r-dendextend

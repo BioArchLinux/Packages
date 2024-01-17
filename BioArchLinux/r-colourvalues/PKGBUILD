@@ -8,7 +8,7 @@ pkgrel=3
 pkgdesc="Assigns Colours to Values"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-rcpp
 )

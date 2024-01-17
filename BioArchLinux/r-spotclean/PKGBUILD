@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="SpotClean adjusts for spot swapping in spatial transcriptomics data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-dplyr
   r-ggplot2

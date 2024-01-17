@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="An R package to identify multi-snp effects in nuclear family studies using the GADGETS method"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   blas
   lapack

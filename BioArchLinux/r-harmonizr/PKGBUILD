@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Handles missing values and makes more data available"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-doparallel
   r-foreach

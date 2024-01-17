@@ -8,7 +8,7 @@ pkgrel=3
 pkgdesc="Tunes AdaBoost, Elastic Net, Support Vector Machines, and Gradient Boosting Machines"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-ada
   r-biocstyle
