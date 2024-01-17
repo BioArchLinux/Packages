@@ -12,7 +12,7 @@ pkgrel=2
 pkgdesc="Bioconductor facilities for parallel evaluation"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL)
+license=('GPL-2.0-only OR GPL-3.0-only')
 depends=(
   r-futile.logger
   r-snow
