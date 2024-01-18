@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="A collection of pre-processing functions"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(LGPL)
+license=('LGPL-2.0-or-later')
 depends=(
   lapack
   r

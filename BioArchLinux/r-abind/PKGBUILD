@@ -12,7 +12,7 @@ pkgrel=10
 pkgdesc="Combine Multidimensional Arrays"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=('LGPL-2.0-or-later')
 depends=(
   r
 )

@@ -209,7 +209,7 @@ license_map = {
     "GPL-2 | GPL-3": "GPL-2.0-only OR GPL-3.0-only",
     "GPL-3": "GPL-3.0-only",
     "LGPL": "LGPL-2.0-or-later",
-    "LGPL (>= 2)": "LGPL",
+    "LGPL (>= 2)": "LGPL-2.0-or-later",
     "LGPL (>= 2.1)": "LGPL",
     "LGPL-2": "LGPL2.1",
     "LGPL-3": "LGPL3",
