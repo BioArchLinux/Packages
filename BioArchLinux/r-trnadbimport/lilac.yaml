@@ -3,10 +3,9 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biocgenerics
 - r-biostrings
 - r-genomicranges
-- r-httr
+- r-httr2
 - r-iranges
 - r-modstrings
 - r-s4vectors
@@ -15,7 +14,8 @@ repo_depends:
 - r-trna
 - r-xml2
 update_on:
-- regex: tRNAdbImport_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/tRNAdbImport
+- source: rpkgs
+  pkgname: tRNAdbImport
+  repo: bioc
+  md5: true
 - alias: r
