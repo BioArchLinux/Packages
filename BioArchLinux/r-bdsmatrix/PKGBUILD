@@ -8,7 +8,7 @@ pkgrel=7
 pkgdesc="Routines for Block Diagonal Symmetric Matrices"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL2.1)
+license=('LGPL-2.0-only')
 depends=(
   r
 )

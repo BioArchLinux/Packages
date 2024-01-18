@@ -12,7 +12,7 @@ pkgrel=2
 pkgdesc="Accurate, high-resolution sample inference from amplicon sequencing data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(LGPL2.1)
+license=('LGPL-2.0-only')
 depends=(
   r-biocgenerics
   r-biostrings
