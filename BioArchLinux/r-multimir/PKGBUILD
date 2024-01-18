@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Integration of multiple microRNA-target databases with their disease and drug associations"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-annotationdbi
   r-biocgenerics

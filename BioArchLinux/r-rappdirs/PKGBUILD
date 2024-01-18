@@ -10,7 +10,7 @@ pkgrel=12
 pkgdesc="Application Directories: Determine Where to Save Data, Caches, and Logs"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

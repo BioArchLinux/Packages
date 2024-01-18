@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="POSIX System Utilities"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   apparmor
   r

@@ -9,7 +9,7 @@ pkgrel=12
 pkgdesc="Visualization of a Correlation Matrix"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

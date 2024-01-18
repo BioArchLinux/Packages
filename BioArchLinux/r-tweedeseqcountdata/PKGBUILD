@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="RNA-seq count data employed in the vignette of the tweeDEseq package"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biobase
 )

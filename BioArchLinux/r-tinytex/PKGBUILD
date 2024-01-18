@@ -13,7 +13,7 @@ pkgrel=1
 pkgdesc="Helper Functions to Install and Maintain TeX Live, and Compile LaTeX Documents"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-xfun
 )

@@ -15,7 +15,7 @@ pkgrel=1
 pkgdesc="Unit Testing for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-brio
   r-callr

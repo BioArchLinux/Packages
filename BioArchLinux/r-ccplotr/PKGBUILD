@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Plots For Visualising Cell-Cell Interactions"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-circlize
   r-complexheatmap

@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="Highly Optimized Protocol Buffer Serializers"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   protobuf
   r-jsonlite

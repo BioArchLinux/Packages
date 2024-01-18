@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="OmniPath web service client and more"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-checkmate
   r-crayon

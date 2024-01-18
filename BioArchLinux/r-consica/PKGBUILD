@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="consensus Independent Component Analysis"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocparallel
   r-fastica

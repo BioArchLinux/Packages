@@ -12,7 +12,7 @@ pkgrel=1
 pkgdesc="Test Coverage for Packages"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-crayon
   r-digest

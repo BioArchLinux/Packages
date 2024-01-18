@@ -8,7 +8,7 @@ pkgrel=3
 pkgdesc="Polygon and Path Transformations"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-lpsolve
   r-rlang

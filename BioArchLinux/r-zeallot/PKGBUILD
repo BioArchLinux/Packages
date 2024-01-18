@@ -8,7 +8,7 @@ pkgrel=9
 pkgdesc="Multiple, Unpacking, and Destructuring Assignment"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

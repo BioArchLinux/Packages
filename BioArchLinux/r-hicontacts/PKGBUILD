@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Analysing cool files in R with HiContacts"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocgenerics
   r-biocio

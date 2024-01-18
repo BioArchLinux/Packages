@@ -10,7 +10,7 @@ pkgrel=7
 pkgdesc="Obtain 'jQuery' as an HTML Dependency Object"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-htmltools
 )

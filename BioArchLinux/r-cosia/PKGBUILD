@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="An Investigation Across Different Species and Tissues"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-annotationdbi
   r-annotationtools

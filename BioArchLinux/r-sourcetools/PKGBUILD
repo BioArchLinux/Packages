@@ -10,7 +10,7 @@ pkgrel=3
 pkgdesc="Tools for Reading, Tokenizing and Parsing R Code"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

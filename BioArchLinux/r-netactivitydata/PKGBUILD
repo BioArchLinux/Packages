@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Data required for getting the gene set scores with NetActivity package"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

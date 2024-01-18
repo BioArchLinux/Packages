@@ -14,7 +14,7 @@ pkgrel=1
 pkgdesc="A 'dplyr' Back End for Databases"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-blob
   r-cli

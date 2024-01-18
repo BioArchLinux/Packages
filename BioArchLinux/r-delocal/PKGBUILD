@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Identifies differentially expressed genes with respect to other local genes"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-deseq2
   r-dplyr

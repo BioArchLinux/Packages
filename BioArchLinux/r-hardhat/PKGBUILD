@@ -9,7 +9,7 @@ pkgrel=6
 pkgdesc="Construct Modeling Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-glue

@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Crossover analysis and genetic map construction"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocparallel
   r-circlize

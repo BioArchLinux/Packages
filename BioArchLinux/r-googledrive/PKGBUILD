@@ -10,7 +10,7 @@ pkgrel=2
 pkgdesc="An Interface to Google Drive"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-gargle

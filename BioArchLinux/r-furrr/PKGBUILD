@@ -9,7 +9,7 @@ pkgrel=6
 pkgdesc="Apply Mapping Functions in Parallel using Futures"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-future
   r-globals

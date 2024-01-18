@@ -10,7 +10,7 @@ pkgrel=5
 pkgdesc="Data Table Back-End for 'dplyr'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-data.table

@@ -10,7 +10,7 @@ pkgrel=3
 pkgdesc="Functions to Find an Acceptable Python Binary"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

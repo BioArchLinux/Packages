@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Cellular DNA Barcode Analysis toolkit"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biostrings
   r-ckmeans.1d.dp

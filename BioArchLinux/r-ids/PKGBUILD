@@ -10,7 +10,7 @@ pkgrel=7
 pkgdesc="Generate Random Identifiers"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-openssl
   r-uuid

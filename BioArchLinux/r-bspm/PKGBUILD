@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="Bridge to System Package Manager"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   gobject-introspection-runtime
   pyalpm

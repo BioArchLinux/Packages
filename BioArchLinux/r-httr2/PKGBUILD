@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-curl

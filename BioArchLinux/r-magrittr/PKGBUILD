@@ -8,7 +8,7 @@ pkgrel=9
 pkgdesc="A Forward-Pipe Operator for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

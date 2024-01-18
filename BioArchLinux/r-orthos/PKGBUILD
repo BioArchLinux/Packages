@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="\`orthos\` is an R package for variance decomposition using conditional variational auto-encoders"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-annotationhub
   r-basilisk

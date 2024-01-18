@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Advanced Graphics and Image-Processing in R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   imagemagick
   r-curl

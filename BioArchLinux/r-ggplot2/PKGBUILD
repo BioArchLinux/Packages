@@ -14,7 +14,7 @@ pkgrel=2
 pkgdesc="Create Elegant Data Visualisations Using the Grammar of Graphics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-glue

@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="A Modern and Easy-to-Use Crypto Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   libsodium
   r

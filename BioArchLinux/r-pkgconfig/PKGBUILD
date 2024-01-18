@@ -11,7 +11,7 @@ pkgrel=13
 pkgdesc="Private Configuration for 'R' Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Interactive Cytometry Gating in R"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocmanager
   r-dplyr

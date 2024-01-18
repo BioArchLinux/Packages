@@ -10,7 +10,7 @@ pkgrel=7
 pkgdesc="Command-Line Interface Specification Language"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

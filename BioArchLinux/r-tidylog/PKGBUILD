@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Logging for 'dplyr' and 'tidyr' Functions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-clisymbols
   r-dplyr

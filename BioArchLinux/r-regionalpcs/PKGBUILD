@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Summarizing Regional Methylation with Regional Principal Components Analysis"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-dplyr
   r-genomicranges

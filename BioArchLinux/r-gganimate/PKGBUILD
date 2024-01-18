@@ -9,7 +9,7 @@ pkgrel=5
 pkgdesc="A Grammar of Animated Graphics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-ggplot2
   r-glue

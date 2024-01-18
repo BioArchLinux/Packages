@@ -12,7 +12,7 @@ pkgrel=5
 pkgdesc="Simple Data Frames"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-fansi
   r-lifecycle

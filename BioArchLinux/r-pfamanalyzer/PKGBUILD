@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Identification of domain isotypes in pfam data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-dplyr
   r-magrittr

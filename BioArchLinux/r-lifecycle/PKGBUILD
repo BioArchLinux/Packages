@@ -11,7 +11,7 @@ pkgrel=1
 pkgdesc="Manage the Life Cycle of your Package Functions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-glue

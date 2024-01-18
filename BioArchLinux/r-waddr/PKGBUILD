@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Statistical tests for detecting differential distributions based on the 2-Wasserstein distance"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-arm
   r-biocfilecache

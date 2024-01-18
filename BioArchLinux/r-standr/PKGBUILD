@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Spatial transcriptome analyses of Nanostring's DSP data in R"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biobase
   r-biocgenerics

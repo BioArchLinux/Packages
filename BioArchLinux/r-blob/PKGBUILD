@@ -10,7 +10,7 @@ pkgrel=3
 pkgdesc="A Simple S3 Class for Representing Vectors of Binary Data ('BLOBS')"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-rlang
   r-vctrs

@@ -10,7 +10,7 @@ pkgrel=3
 pkgdesc="Generate Isolines and Isobands from Regularly Spaced Elevation Grids"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

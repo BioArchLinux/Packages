@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="\"Multivariable Association Discovery in Population-scale Meta-omics Studies\""
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biglm
   r-car

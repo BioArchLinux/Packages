@@ -11,7 +11,7 @@ pkgrel=7
 pkgdesc="Common S3 Generics not Provided by Base R Methods Related to Model Fitting"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

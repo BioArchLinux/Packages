@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Collection of spatially-resolved transcriptomics datasets in SpatialExperiment Bioconductor format"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-experimenthub
   r-spatialexperiment

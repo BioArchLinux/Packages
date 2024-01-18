@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Wrappers to Save Common File Formats"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-alabaster.base
   r-biocgenerics

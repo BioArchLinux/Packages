@@ -11,7 +11,7 @@ pkgrel=2
 pkgdesc="Preprocessing and Feature Engineering Steps for Modeling"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cli
   r-clock

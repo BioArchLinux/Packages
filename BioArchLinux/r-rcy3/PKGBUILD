@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Functions to Access and Control Cytoscape"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-base64enc
   r-base64url

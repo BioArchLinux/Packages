@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="RNA editing tools in R"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   curl
   r-biocgenerics

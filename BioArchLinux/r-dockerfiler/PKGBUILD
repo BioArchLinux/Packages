@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Easy Dockerfile Creation from R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-attempt
   r-cli

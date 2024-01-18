@@ -11,7 +11,7 @@ pkgrel=2
 pkgdesc="Password Entry Utilities for R, Git, and SSH"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-sys
 )

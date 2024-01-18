@@ -10,7 +10,7 @@ pkgrel=2
 pkgdesc="Parametrized Active Bindings"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

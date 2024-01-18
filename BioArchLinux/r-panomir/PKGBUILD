@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Detection of miRNAs that regulate interacting groups of pathways"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-clusterprofiler
   r-dplyr

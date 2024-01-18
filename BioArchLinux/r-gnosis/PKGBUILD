@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Genomics explorer using statistical and survival analysis in R"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-car
   r-cbioportaldata

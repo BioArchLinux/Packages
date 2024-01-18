@@ -8,7 +8,7 @@ pkgrel=7
 pkgdesc="Complete Environment for Bayesian Inference"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

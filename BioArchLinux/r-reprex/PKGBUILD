@@ -11,7 +11,7 @@ pkgrel=1
 pkgdesc="Prepare Reproducible Example Code via the Clipboard"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   pandoc
   r-callr

@@ -13,7 +13,7 @@ pkgrel=8
 pkgdesc="'Memoisation' of Functions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-cachem
   r-rlang

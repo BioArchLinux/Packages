@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Save and Load Variant Data to/from File"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-alabaster.base
   r-alabaster.se

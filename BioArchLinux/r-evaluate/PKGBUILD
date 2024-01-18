@@ -13,7 +13,7 @@ pkgrel=1
 pkgdesc="Parsing and Evaluation Tools that Provide More Details than the Default"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

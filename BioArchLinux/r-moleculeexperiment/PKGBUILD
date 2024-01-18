@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Prioritising a molecule-level storage of Spatial Transcriptomics Data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocparallel
   r-cli

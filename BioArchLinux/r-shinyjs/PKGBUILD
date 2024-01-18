@@ -9,7 +9,7 @@ pkgrel=7
 pkgdesc="Easily Improve the User Experience of Your Shiny Apps in Seconds"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-digest
   r-jsonlite

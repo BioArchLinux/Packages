@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Exposome exploration and outcome data analysis"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biobase
   r-circlize

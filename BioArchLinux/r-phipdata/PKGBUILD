@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Container for PhIP-Seq Experiments"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocfilecache
   r-biocgenerics

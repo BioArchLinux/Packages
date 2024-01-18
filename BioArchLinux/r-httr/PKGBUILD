@@ -14,7 +14,7 @@ pkgrel=1
 pkgdesc="Tools for Working with URLs and HTTP"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-curl
   r-jsonlite

@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Retrieve Code Decorations"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-tibble
   r-vctrs

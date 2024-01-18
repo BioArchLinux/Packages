@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Imagine Your Data Before You Collect It"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-rlang
 )

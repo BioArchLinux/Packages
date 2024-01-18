@@ -12,7 +12,7 @@ pkgrel=5
 pkgdesc="Call R from R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-processx
   r-r6

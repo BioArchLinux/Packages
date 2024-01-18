@@ -8,7 +8,7 @@ pkgrel=3
 pkgdesc="Single-Cell Immunoglobulin Filtering of Sanger Sequences"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biostrings
   r-data.table

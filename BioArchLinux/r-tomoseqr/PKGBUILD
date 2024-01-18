@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="R Package for Analyzing Tomo-seq Data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-animation
   r-biocfilecache

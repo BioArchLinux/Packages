@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Decontamination of single cell genomics data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-celda
   r-dbscan

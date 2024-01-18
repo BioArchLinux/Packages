@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Bioconductor class for interacting with Hi-C files in R"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r-biocgenerics
   r-biocio

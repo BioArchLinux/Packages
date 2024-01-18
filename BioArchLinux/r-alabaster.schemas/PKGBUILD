@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Schemas for the Alabaster Framework"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   r
 )

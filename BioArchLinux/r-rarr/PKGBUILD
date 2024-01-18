@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Read Zarr Files in R"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(MIT)
+license=('MIT')
 depends=(
   blosc
   lz4
