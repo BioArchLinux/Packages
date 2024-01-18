@@ -216,7 +216,7 @@ license_map = {
     "LGPL-3 | Apache License 2.0": "LGPL-3.0-only OR Apache-2.0",
     "Lucent Public License": "custom:LPL",
     "MIT + file LICENSE": "MIT",
-    "Mozilla Public License 2.0": "MPL2",
+    "Mozilla Public License 2.0": "MPL-2.0",
     "Unlimited": "LicenseRef-Unlimited",
 }
 
