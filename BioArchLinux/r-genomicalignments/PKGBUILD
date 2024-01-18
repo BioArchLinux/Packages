@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomicAlignments
-_pkgver=1.38.1
+_pkgver=1.38.2
 pkgname=r-${_pkgname,,}
-pkgver=1.38.1
+pkgver=1.38.2
 pkgrel=1
 pkgdesc='Representation and manipulation of short genomic alignments'
 arch=('x86_64')
@@ -38,7 +38,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b2537e46f5592c6ed07c065fe6ba92424d2dfc0acebd6b48b4b89fb35e9ba478')
+sha256sums=('816f078886e0b2054392f1432702372be9621e0da379c1cfa3b02dd5cb389644')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
