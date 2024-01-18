@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Machine Learning in R - Next Generation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL3)
+license=('LGPL-3.0-only')
 depends=(
   r-backports
   r-checkmate
