@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="A Probe-Level Data File Format Used by 'aroma.affymetrix' [deprecated]"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=('LGPL-2.1-or-later')
 depends=(
   r-r.huge
   r-r.methodss3

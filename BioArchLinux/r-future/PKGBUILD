@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="Unified Parallel and Distributed Processing in R for Everyone"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=('LGPL-2.1-or-later')
 depends=(
   r-digest
   r-globals

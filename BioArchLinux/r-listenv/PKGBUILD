@@ -9,7 +9,7 @@ pkgrel=3
 pkgdesc="Environments Behaving (Almost) as Lists"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=('LGPL-2.1-or-later')
 depends=(
   r
 )

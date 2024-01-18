@@ -8,7 +8,7 @@ pkgrel=3
 pkgdesc="Statistical Methods for Analysing Multivariate Abundance Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=('LGPL-2.1-or-later')
 depends=(
   gsl
   r-rcpp
