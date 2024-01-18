@@ -3,7 +3,7 @@
 
 pkgname=gconf
 pkgver=2013.01.22
-pkgrel=2
+pkgrel=3
 pkgdesc="An obsolete configuration database system"
 url="https://projects-old.gnome.org/gconf/"
 arch=($CARCH)
