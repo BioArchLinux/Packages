@@ -5,10 +5,13 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 - r-go.db
-- r-rcpp
 - r-rlang
+- r-yulab.utils
+repo_makedepends:
+- r-rcpp
 update_on:
-- regex: GOSemSim_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GOSemSim
+- source: rpkgs
+  pkgname: GOSemSim
+  repo: bioc
+  md5: true
 - alias: r
