@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="R interface to a subset of OpenBabel functionalities"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Artistic2.0 GPL3)
+license=('Artistic-2.0')
 depends=(
   openbabel
   r-biocgenerics
