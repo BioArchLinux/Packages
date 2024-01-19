@@ -1,6 +1,6 @@
 pkgname=phyde
 pkgver=0.9971
-pkgrel=2
+pkgrel=3
 pkgdesc="a system-independent editor for DNA and amino acid sequence alignments, designed to assist anybody interested in phylogenetic or other comparative analyses of sequence data"
 arch=('any')
 url="http://www.phyde.de/"
