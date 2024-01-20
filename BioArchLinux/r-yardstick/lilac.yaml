@@ -12,6 +12,7 @@ repo_depends:
 - r-tibble
 - r-tidyselect
 - r-vctrs
+- r-withr
 repo_makedepends:
 - r-ggplot2
 - r-testthat
