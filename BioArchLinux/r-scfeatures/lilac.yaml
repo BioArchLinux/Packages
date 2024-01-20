@@ -24,10 +24,8 @@ repo_depends:
 - r-rmarkdown
 - r-seurat
 - r-singlecellsignalr
-- r-spatialexperiment
 - r-spatstat.explore
 - r-spatstat.geom
-- r-summarizedexperiment
 - r-tidyr
 update_on:
 - source: rpkgs
