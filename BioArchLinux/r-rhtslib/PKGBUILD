@@ -2,9 +2,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rhtslib
-_pkgver=2.4.0
+_pkgver=2.4.1
 pkgname=r-${_pkgname,,}
-pkgver=2.4.0
+pkgver=2.4.1
 pkgrel=1
 pkgdesc='HTSlib high-throughput sequencing library as an R package'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('02ab30480aa4b54ad8f15a7b3fed674ad2a9685af1353348bcb656e288fe10c0')
+sha256sums=('0c34b951a0f15c26222a3dfd96700a0905c16c4cbe59db36374cf1ceab2a2b21')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
