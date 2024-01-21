@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="GUI's for visualization of flow cytometry data analysis pipelines"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later AND CC-BY-SA-4.0')
 depends=(
   r-cytopipeline
   r-flowcore

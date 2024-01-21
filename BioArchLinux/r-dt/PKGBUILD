@@ -11,7 +11,7 @@ pkgrel=1
 pkgdesc="A Wrapper of the JavaScript Library 'DataTables'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only AND MIT AND Apache-2.0')
 depends=(
   r-crosstalk
   r-htmltools
@@ -51,4 +51,7 @@ check() {
 package() {
   install -d "$pkgdir/usr/lib/R/library"
   cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
