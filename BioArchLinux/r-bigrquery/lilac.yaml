@@ -3,24 +3,21 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-assertthat
 - r-bit64
 - r-brio
 - r-cli
+- r-clock
 - r-curl
 - r-dbi
 - r-gargle
-- r-glue
 - r-httr
 - r-jsonlite
 - r-lifecycle
 - r-prettyunits
-- r-progress
-- r-rcpp
 - r-rlang
 - r-tibble
-- r-withr
 repo_makedepends:
+- r-cpp11
 - r-rapidjsonr
 - r-blob
 - r-dbplyr
