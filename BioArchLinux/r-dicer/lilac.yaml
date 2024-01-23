@@ -29,7 +29,6 @@ repo_makedepends:
 - r-e1071
 - r-kernlab
 - r-kohonen
-- r-mixedclust
 - r-polca
 - r-rtsne
 - r-sigclust
