@@ -4,7 +4,7 @@
 pkgname=cufflinks
 _realname=cufflinks
 pkgver=2.2.2.20190706.162801
-pkgrel=5
+pkgrel=6
 pkgdesc="Transcriptome assembly and differential expression analysis for RNA-Seq."
 url="http://cole-trapnell-lab.github.io/cufflinks/"
 arch=("x86_64")
