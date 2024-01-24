@@ -1,7 +1,7 @@
 # Maintainer: Max Mazurov <fox.cpp at disroot dot org>
 # Contributor: Jonas Heinrich <onny@project-insantiy.org>
 pkgname='maddy'
-pkgver=0.7.0
+pkgver=0.7.1
 pkgrel=1
 pkgdesc='Composable all-in-one mail server (Development version)'
 arch=('x86_64')
