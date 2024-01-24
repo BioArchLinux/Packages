@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=logitnorm
-_pkgver=0.8.38
+_pkgver=0.8.39
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Functions for the Logitnormal Distribution"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -13,18 +13,17 @@ depends=(
   r
 )
 checkdepends=(
-  r-runit
+  r-testthat
 )
 optdepends=(
   r-ggplot2
   r-knitr
   r-markdown
-  r-reshape2
-  r-runit
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4a1f49249dcd7a212287a1ac6b4e1921')
-b2sums=('f29fb662aa2eff0e7238be054fbd0179135746d55b167a92d95b5b91939ee0581a805bd1c4a664b05f9a007dcd8bfba4455be32bbd78e3a2c305a5a936cd8bcb')
+md5sums=('1d08b2f259ce83e21ab7542212518eb9')
+b2sums=('e6cea7549d18d26b0afeaa0cf6e3bc23ac8bf515e73aca03e41f2bc4e79f128f591e13855c223edb48340eb65b5bac15c344c516ac8564721fb18a103ce5022e')
 
 build() {
   mkdir build
@@ -33,7 +32,7 @@ build() {
 
 check() {
   cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" Rscript --vanilla doRUnit.R
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
 
 package() {

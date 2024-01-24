@@ -3,7 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_makedepends:
-- r-runit
+- r-testthat
 update_on:
 - source: rpkgs
   pkgname: logitnorm
