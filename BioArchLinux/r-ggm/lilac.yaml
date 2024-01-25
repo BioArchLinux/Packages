@@ -3,10 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocmanager
 - r-graph
 - r-igraph
 update_on:
-- regex: ggm_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggm
+- source: rpkgs
+  pkgname: ggm
+  repo: cran
+  md5: true
 - alias: r
