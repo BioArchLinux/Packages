@@ -11,7 +11,7 @@ pkgrel=2
 pkgdesc="High-Performance Stemmer, Tokenizer, and Spell Checker"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(LGPL)
+license=('GPL-2.0-only OR LGPL-2.1-only OR MPL-1.1')
 depends=(
   r-digest
   r-rcpp

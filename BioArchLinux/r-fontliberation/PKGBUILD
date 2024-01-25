@@ -8,7 +8,7 @@ pkgrel=4
 pkgdesc="Liberation Fonts"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(custom:OFL)
+license=('OFL-1.1-RFN')
 depends=(
   r
   ttf-liberation

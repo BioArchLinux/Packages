@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="An R package for analysing RNA-seq raw counts with several biological conditions and different time points"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-biobase
   r-complexheatmap

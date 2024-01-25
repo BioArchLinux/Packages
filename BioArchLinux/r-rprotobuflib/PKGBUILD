@@ -9,7 +9,7 @@ pkgrel=2
 pkgdesc="C++ headers and static libraries of Protocol buffers"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(BSD)
+license=('LicenseRef-RProtoBufLib')
 depends=(
   protobuf
   r

@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="A R/Bioconductor package to detect the interaction nodes from HiC/HiChIP/HiCAR data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(Apache)
+license=('Apache-2.0')
 depends=(
   r-annotationdbi
   r-genomeinfodb

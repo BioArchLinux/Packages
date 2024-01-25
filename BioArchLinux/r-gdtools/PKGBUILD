@@ -12,7 +12,7 @@ pkgrel=1
 pkgdesc="Utilities for Graphical Rendering and Fonts Management"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   cairo
   freetype2

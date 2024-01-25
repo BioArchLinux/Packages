@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Peak-based selection of high quality cytometry data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-or-later')
 depends=(
   r-circlize
   r-complexheatmap

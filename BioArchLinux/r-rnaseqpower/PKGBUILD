@@ -9,7 +9,7 @@ pkgrel=1
 pkgdesc="Sample size for RNAseq studies"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(LGPL)
+license=('LGPL-2.0-or-later')
 depends=(
   r
 )
