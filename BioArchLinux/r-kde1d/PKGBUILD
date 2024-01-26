@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=kde1d
-_pkgver=1.0.5
+_pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Univariate Kernel Density Estimation"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -24,8 +24,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('72ac5e9cd260b9f2792ec2ae9186dfe8')
-b2sums=('9e1f669670057313b26ceb1d4047799032bed5a648b7e87feb7717c508d26a8b5d34df03fcc8b92d7964bc64ee1a799bf0aa7a417cfdc3a68b621347ddbb442d')
+md5sums=('e8b33f9c810c0c2c66ce1a2be853e302')
+b2sums=('8fff149ce1496f294ebde7689ea6747ac917b22eda95b2a3e0211e61ac23f86dd98e76eab63d2ddcaf08c01ee7044563c69158e0ba7a2449684c6ee901e54070')
 
 build() {
   mkdir build
