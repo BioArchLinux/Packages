@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="Spatial cell-type inter-correlation by density in R"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=(GPL3)
+license=('GPL-3.0-only')
 depends=(
   r-ggplot2
   r-igraph

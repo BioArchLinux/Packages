@@ -10,7 +10,7 @@ pkgrel=3
 pkgdesc="'ttf2pt1' Program"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(custom)
+license=('LicenseRef-Rttf2pt1')
 depends=(
   r
 )
