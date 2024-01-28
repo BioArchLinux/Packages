@@ -3,15 +3,17 @@
 # Contributor: Thomas Dziedzic <gostrc at gmail>
 # Contributor: Josh Marshall <jrmarsha@mtu.edu>
 # Contributor: Martin Larralde <martin.larralde@embl.de>
+
 pkgname=hmmer
 pkgver=3.4
 pkgrel=1
 pkgdesc="Profile hidden Markov models (HMMs) for database searching using consensus sequences. https://doi.org/10.1093/bioinformatics/14.9.755"
 arch=('i686' 'x86_64' 'aarch64')
-checkdepends=('python')
-license=('BSD-3')
 url="http://hmmer.org/"
-source=(http://eddylab.org/software/hmmer/hmmer-$pkgver.tar.gz)
+license=('BSD-3-Clause')
+depends=('glibc')
+checkdepends=('python')
+source=("http://eddylab.org/software/hmmer/hmmer-$pkgver.tar.gz")
 sha256sums=('ca70d94fd0cf271bd7063423aabb116d42de533117343a9b27a65c17ff06fbf3')
 
 build() {
@@ -27,5 +29,6 @@ check() {
 
 package() {
   cd "$pkgname-$pkgver"
-  make prefix="$pkgdir/usr" install
+  make DESTDIR="$pkgdir" install
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE
 }

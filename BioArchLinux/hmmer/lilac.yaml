@@ -5,4 +5,4 @@ build_prefix: extra-x86_64
 update_on:
   - source: regex
     url: "http://eddylab.org/software/hmmer/"
-    regex: 'hmmer-(\d+.\d+.\d+).tar.gz'
+    regex: 'hmmer-([\d.]+).tar.gz'
