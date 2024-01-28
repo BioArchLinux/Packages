@@ -9,11 +9,13 @@ repo_depends:
 - r-biocviews
 - r-callr
 - r-graph
-- r-httr
+- r-httr2
 - r-knitr
+- r-rvest
 - r-stringdist
 update_on:
-- regex: BiocCheck_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BiocCheck
+- source: rpkgs
+  pkgname: BiocCheck
+  repo: bioc
+  md5: true
 - alias: r
