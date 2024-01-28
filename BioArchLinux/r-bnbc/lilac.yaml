@@ -8,6 +8,7 @@ repo_depends:
 - r-ebimage
 - r-genomeinfodb
 - r-genomicranges
+- r-hicbricks
 - r-iranges
 - r-matrixstats
 - r-preprocesscore
@@ -17,7 +18,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-sva
 update_on:
-- regex: bnbc_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/bnbc
+- source: rpkgs
+  pkgname: bnbc
+  repo: bioc
+  md5: true
 - alias: r
