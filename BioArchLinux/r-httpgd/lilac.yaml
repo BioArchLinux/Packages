@@ -10,5 +10,5 @@ repo_depends:
 update_on:
   - regex: httpgd_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=httpgd
+    url: https://cran.r-project.org/src/contrib/Archive/httpgd
   - alias: r
