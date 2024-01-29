@@ -6,7 +6,7 @@
 
 pkgname=hmmer
 pkgver=3.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Profile hidden Markov models (HMMs) for database searching using consensus sequences. https://doi.org/10.1093/bioinformatics/14.9.755"
 arch=('i686' 'x86_64' 'aarch64')
 url="http://hmmer.org/"
