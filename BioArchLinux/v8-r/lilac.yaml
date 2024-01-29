@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+update_on:
+- source: aur
+  aur: v8-r
+  strip_release: true
+- source: alpm
+  alpm: icu
+  repo: core
+  provided: libicui18n.so
+  strip_release: true
+- source: alpm
+  alpm: icu
+  repo: core
+  provided: libicuuc.so
+  strip_release: true

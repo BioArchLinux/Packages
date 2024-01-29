@@ -13,10 +13,10 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  nodejs
   r-curl
   r-jsonlite
   r-rcpp
+  v8-r
 )
 checkdepends=(
   r-testthat
@@ -32,8 +32,7 @@ b2sums=('38939d2188bba7d7ae3b536cd88330ffe51d914f2339c0a495bd3f4b34857b333176e58
 
 build() {
   mkdir build
-  R CMD INSTALL -l build "$_pkgname" \
-      --configure-vars="V8_PKG_LIBS=-lnode V8_PKG_CFLAGS=-I/usr/include/node"
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 check() {

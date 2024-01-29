@@ -6,6 +6,7 @@ repo_depends:
 - r-curl
 - r-jsonlite
 - r-rcpp
+- v8-r
 repo_makedepends:
 - r-testthat
 update_on:
@@ -14,7 +15,3 @@ update_on:
   repo: cran
   md5: true
 - alias: r
-- source: alpmfiles
-  pkgname: nodejs
-  filename: usr/lib/libnode\.so\.([^.]+)
-  repo: extra

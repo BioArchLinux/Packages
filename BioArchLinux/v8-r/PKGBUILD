@@ -1,0 +1,109 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Jan Marvin Garbuszus <jan.garbuszus@rub.de>
+# Contributor: Marco Pompili <aur (at) mg.odd.red>
+# Contributor: Anatol Pomozov <anatol.pomozov@gmail.com>
+# Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Kaiting Chen <kaitocracy@gmail.com>
+# Contributor: tocer <tocer.deng@gmail.com>
+# Contributor: David Flemström <david.flemstrom@gmail.com>
+
+pkgname=v8-r
+pkgver=12.3.40
+pkgrel=1
+pkgdesc="Google's open source JavaScript and WebAssembly engine"
+arch=(x86_64)
+url="https://v8.dev"
+license=('BSD-3-Clause')
+depends=(
+  icu
+)
+makedepends=(
+  git
+  lld
+  procps-ng
+  python
+)
+provides=(v8)
+conflicts=(v8)
+source=("git+https://chromium.googlesource.com/chromium/tools/depot_tools.git"
+        "v8.pc"
+        "v8_libbase.pc"
+        "v8_libplatform.pc"
+        "include_ifdef.patch")
+b2sums=('SKIP'
+        'f6c629b5d68914bad9cb81b7e50171211401dc52b29e2a71fd87ea2162032b3fa993cad101cd2a0907d421068c19875f5aff7cbf24b9a7cb14d4f6063cfa4200'
+        '889b6660f804cada7871dc208f47daa76e86618b659103f1c3098945324f623d1b37bd5f8ced85e20c73e3ab854c09305c893927703e5443876e88be99ffab86'
+        '47facc47ac965573215bcfe55e6ba5e8ab9688c4da136c3f191970ca04679d605f3512d95427d31b2bf8b441315accc59477e6e4275e53b70c3805aab22e1c91'
+        '79e905bea036b553e862ac043df3cf7bff20aa6ccabccd3a3b35dda09813373d924426b3e2ba355b3e4ea4553fd1653867b6860af921ebee228b94dbb76d4cc7')
+
+prepare() {
+  export PATH="$PATH:$srcdir/depot_tools"
+  touch depot_tools/.disable_auto_update
+  fetch v8
+  cd v8
+
+  gclient sync --revision "$pkgver"
+
+  ./build/linux/unbundle/replace_gn_files.py --system-libraries icu
+
+  # fix build
+  git apply "$srcdir/include_ifdef.patch"
+
+  gn gen x64.release \
+    -vv --fail-on-unused-args \
+    --args='dcheck_always_on=false
+            is_asan=false
+            is_clang=false
+            is_component_build=true
+            is_debug=false
+            is_official_build=false
+            treat_warnings_as_errors=false
+            use_custom_libcxx=false
+            use_goma=false
+            use_lld=true
+            use_sysroot=false
+            v8_enable_backtrace=true
+            v8_enable_disassembler=true
+            v8_enable_i18n_support=true
+            v8_enable_object_print=true
+            v8_enable_sandbox=true
+            v8_enable_static_roots=false
+            v8_enable_verify_heap=true
+            v8_use_external_startup_data=false'
+
+  # Fixes bug in generate_shim_headers.py that fails to create these dirs
+  mkdir -p "x64.release/gen/shim_headers/icuuc_shim/third_party/icu/source/common/unicode/"
+  mkdir -p "x64.release/gen/shim_headers/icui18n_shim/third_party/icu/source/i18n/unicode/"
+
+}
+
+build() {
+  export PATH="$PATH:$srcdir/depot_tools"
+  cd v8
+  ninja -C x64.release
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/pkgconfig"
+  local _pc
+  for _pc in v8{,_lib{base,platform}}.pc; do
+    sed "s/@VERSION@/$pkgver/g" "$_pc" > "$pkgdir/usr/lib/pkgconfig/$_pc"
+  done
+
+  cd v8
+
+  install -d "$pkgdir/usr/bin"
+  ln -s /usr/lib/v8/d8 "$pkgdir/usr/bin/d8"
+
+  install -Dm755 -t "$pkgdir/usr/lib/v8" x64.release/d8
+  local _lib
+  for _lib in lib{v8{,_lib{base,platform}},chrome_zlib,third_party_abseil-cpp_absl}.so; do
+    install -Dm755 -t "$pkgdir/usr/lib" "x64.release/$_lib"
+  done
+
+  install -Dm644 -t "$pkgdir/usr/include" include/*.h
+  install -Dm644 -t "$pkgdir/usr/include/cppgc" include/cppgc/*.h
+  install -Dm644 -t "$pkgdir/usr/include/libplatform" include/libplatform/*.h
+
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE*
+}
