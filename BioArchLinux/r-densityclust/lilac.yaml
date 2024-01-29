@@ -8,10 +8,12 @@ repo_depends:
 - r-ggrepel
 - r-gridextra
 - r-rcolorbrewer
-- r-rcpp
 - r-rtsne
+repo_makedepends:
+- r-cpp11
 update_on:
-- regex: densityClust_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=densityClust
+- source: rpkgs
+  pkgname: densityClust
+  repo: cran
+  md5: true
 - alias: r
