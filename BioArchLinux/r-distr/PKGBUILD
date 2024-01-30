@@ -4,10 +4,10 @@
 # Contributor: fordprefect <fordprefect@dukun.de>
 
 _pkgname=distr
-_pkgver=2.9.2
+_pkgver=2.9.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Object Oriented Implementation of Distributions"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -24,8 +24,8 @@ optdepends=(
   r-svunit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('434704907b6994db505b19a50564b007')
-b2sums=('d3490a3e6f8617b05966a69a4f19baf91e50a18ae2388f560e7ae56529d3542196e6ef4f23732cc703a51708506ceaff7ca8c6cf47507b0db10fd0d19f41a701')
+md5sums=('516d41cdd753fb0a200d0122332ed9b8')
+b2sums=('f505a8da163f8bf76a9b42614911e132e94f21caf3a9359d87e008fe7ad5f5e9934ceb70b114dd85fa3149322e9824b9c891c7aa2b8d0c6b102c5641595f86e6')
 
 build() {
   mkdir build
