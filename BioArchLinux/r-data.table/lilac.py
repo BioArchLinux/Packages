@@ -10,7 +10,6 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "MPL-2.0 | file LICENSE",
-        expect_systemrequirements = "zlib",
     )
 
 def post_build():
