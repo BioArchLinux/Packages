@@ -9,8 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "gmp (optional), libxml2 (optional), glpk (>= 4.57, optional)",
-        ignore_fortran_files = True,
+        expect_systemrequirements = "gmp, libxml2, glpk (>= 4.57)",
     )
 
 def post_build():

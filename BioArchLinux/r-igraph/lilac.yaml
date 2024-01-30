@@ -20,10 +20,6 @@ update_on:
   md5: true
 - alias: r
 - source: alpmfiles
-  pkgname: arpack
-  filename: usr/lib/libarpack\.so\.([^.]+)
-  repo: extra
-- source: alpmfiles
   pkgname: blas
   filename: usr/lib/libblas\.so\.([^.]+)
   repo: extra
@@ -47,10 +43,6 @@ update_on:
 - source: alpmfiles
   pkgname: plfit
   filename: usr/lib/libplfit\.so\.([^.]+)
-  repo: extra
-- source: alpmfiles
-  pkgname: suitesparse
-  filename: usr/lib/libcxsparse\.so\.([^.]+)
   repo: extra
 - source: alpm
   alpm: util-linux-libs
