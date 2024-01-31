@@ -13,7 +13,7 @@ pkgrel=2
 pkgdesc="Fast and Portable Character String Processing Facilities"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(custom)
+license=('BSD-3-Clause AND GPL-2.0-or-later')
 depends=(
   icu
   r
@@ -24,7 +24,8 @@ b2sums=('e77b5a0c57f18620266797174fbc710af6edd9ba72bce0da70768b4cabd88e758f0ab85
 
 build() {
   mkdir build
-  R CMD INSTALL -l build "$_pkgname"
+  R CMD INSTALL -l build "$_pkgname" \
+      --configure-args=--disable-icu-bundle
 }
 
 package() {
