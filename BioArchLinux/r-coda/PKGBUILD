@@ -6,10 +6,10 @@
 # Contributor: fordprefect <fordprefect@dukun.de>
 
 _pkgname=coda
-_pkgver=0.19-4
+_pkgver=0.19-4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=12
+pkgrel=1
 pkgdesc="Output Analysis and Diagnostics for MCMC"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -18,8 +18,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('23122681735275c7178481d819440039')
-b2sums=('faad106bff07897e20f96b11200e0e0491530bd7dc0b4bd50aa3b65bea050c9c4d0fb8e4011105d5c03f9e56ce5780aa6af717c9ce049e9da26dab16df089e91')
+md5sums=('ad15d9b971ee8593ddfeb74430775c81')
+b2sums=('c21d75b903b2194f1f17f09e079bbbd3f1c6b0d2c54f5e436dae5c836d8cb9f764d07678008570e07ea1fd37ab73fe2a2751e0097c5f4a6cbfea2beff6a7032b')
 
 build() {
   mkdir build
