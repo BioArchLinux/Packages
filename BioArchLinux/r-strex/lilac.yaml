@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-checkmate
+- r-lifecycle
 - r-magrittr
 - r-rlang
 - r-stringi
