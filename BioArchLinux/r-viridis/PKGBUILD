@@ -1,19 +1,25 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Carlos Aznarán <caznaranl@uni.pe>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=viridis
 _pkgver=0.6.5
 pkgname=r-${_pkgname,,}
-pkgver=0.6.5
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Colorblind-Friendly Color Maps for R'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Colorblind-Friendly Color Maps for R"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r
   r-ggplot2
   r-gridextra
   r-viridislite
+)
+checkdepends=(
+  r-testthat
+  r-vdiffr
 )
 optdepends=(
   r-colorspace
@@ -24,7 +30,6 @@ optdepends=(
   r-knitr
   r-mapproj
   r-maps
-  r-mass
   r-rmarkdown
   r-scales
   r-svglite
@@ -33,15 +38,23 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('862b5cb6be115deea0207cdd3c8bb33de28552cfdc29900777512fd488d0005c')
+md5sums=('d3379572b7c9e31148c52c8e85417d9e')
+b2sums=('bdd0c26a476cc8e9c04de789ca732ca0aedaa6aca34ce1cabb9ba7b8dc24cfa8a056474bc186f5896bd2838a3d3210141be148d37b7a7664c1baf1c0bea952e0')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

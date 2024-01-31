@@ -1,13 +1,17 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
 - r-gridextra
 - r-viridislite
+repo_makedepends:
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: viridis_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=viridis
+- source: rpkgs
+  pkgname: viridis
+  repo: cran
+  md5: true
 - alias: r
