@@ -2,6 +2,7 @@ build_prefix: extra-x86_64
 maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
+time_limit_hours: 4
 update_on:
 - source: aur
   aur: v8-r
