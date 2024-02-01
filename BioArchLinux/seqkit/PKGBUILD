@@ -1,5 +1,5 @@
 pkgname=seqkit
-pkgver=2.6.1
+pkgver=2.7.0
 pkgrel=1
 pkgdesc="A cross-platform and ultrafast toolkit for FASTA/Q file manipulation in Golang"
 arch=('x86_64')
@@ -11,7 +11,7 @@ source=(
   https://github.com/shenwei356/seqkit/archive/refs/tags/v${pkgver}.tar.gz
   https://raw.githubusercontent.com/shenwei356/seqkit/v"${pkgver}"/LICENSE
 )
-sha256sums=('d88249bd3b630c908ebd308abaa9cd7acb7a781c12bab877d3daaab56f43c443'
+sha256sums=('b5c723ffd4640659860fc70a71c218d8f53bea0eae571cecc98eff04c7291e02'
             'ffa76e8a163f7a8785ccf4f517d601d562d2a68fbd019de9b2eccf49c9b89730')
 build(){
   cd $srcdir/$pkgname-$pkgver/$pkgname
