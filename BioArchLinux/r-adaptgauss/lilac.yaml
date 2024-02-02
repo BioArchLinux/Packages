@@ -4,11 +4,13 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-datavisualizations
+- r-plotly
 - r-pracma
 - r-rcpp
 - r-shiny
 update_on:
-- regex: AdaptGauss_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=AdaptGauss
+- source: rpkgs
+  pkgname: AdaptGauss
+  repo: cran
+  md5: true
 - alias: r
