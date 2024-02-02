@@ -1,4 +1,4 @@
-build_prefix: multilib
+build_prefix: extra-x86_64
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
@@ -12,3 +12,5 @@ update_on:
   - source: github
     github: CompEvol/beast2
     use_latest_release: true
+repo_depends:
+  - java-openjfx
