@@ -4,14 +4,14 @@
 
 pkgname=beast2
 pkgver=2.7.5
-_pkgver=2.7.6
+#_pkgver=2.7.6
 pkgrel=1
 pkgdesc="Bayesian Evolutionary Analysis by Sampling Trees. https://doi.org/10.1371/journal.pcbi.1003537"
 arch=('any')
 url="http://www.beast2.org/"
-license=('LGPL')
+license=('LGPL-2.1-only')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/CompEvol/beast2/archive/refs/tags/v${pkgver}.tar.gz"
-"BeastFX-${_pkgver}.tar.gz::https://github.com/CompEvol/BeastFX/archive/refs/tags/v${_pkgver}.tar.gz"
+"BeastFX-${pkgver}.tar.gz::https://github.com/CompEvol/BeastFX/archive/refs/tags/v${pkgver}.tar.gz"
 # desktop
 {beauti,densitree,logcombiner,treeannotator,beast2,loganalyser,${pkgname}-applauncher}.desktop
 # excutables
@@ -38,11 +38,11 @@ sha256sums=('9368790d222fdef201968e3419e86c7198fd1b7174f7f088ec2da0738d7e581a'
 depends=('java-runtime' 'java-openjfx')
 makedepends=('ant' 'java-environment')
 optdepends=('beagle-lib')
-prepare(){
-    cd ${srcdir}
-    test -d "BeastFX-${pkgver}" && rm -rf "BeastFX-${pkgver}"
-    mv "BeastFX-${_pkgver}" "BeastFX-${pkgver}"
-}
+#prepare(){
+#    cd ${srcdir}
+#    test -d "BeastFX-${pkgver}" && rm -rf "BeastFX-${pkgver}"
+#    mv "BeastFX-${_pkgver}" "BeastFX-${pkgver}"
+#}
 build(){
     cd "$srcdir/BeastFX-${pkgver}"
     install -Dm755 $srcdir/${pkgname}-${pkgver}/release/Linux/jrebin/* \
@@ -75,9 +75,9 @@ package() {
     install -Dm644 ${srcdir}/${pkgname}-${pkgver}/lib/*.jar -t  "${pkgdir}/usr/share/${pkgname}/lib"
 
     # for 2.7.4+
-    install -d "${pkgdir}/usr/share/${pkgname}/lib/packages"
-    mv ${pkgdir}/usr/share/${pkgname}/lib/BEAST.app.* "${pkgdir}/usr/share/${pkgname}/lib/packages"
-    mv ${pkgdir}/usr/share/${pkgname}/lib/BEAST.base.* "${pkgdir}/usr/share/${pkgname}/lib/packages"
+#    install -d "${pkgdir}/usr/share/${pkgname}/lib/packages"
+#    mv ${pkgdir}/usr/share/${pkgname}/lib/BEAST.app.* "${pkgdir}/usr/share/${pkgname}/lib/packages"
+#    mv ${pkgdir}/usr/share/${pkgname}/lib/BEAST.base.* "${pkgdir}/usr/share/${pkgname}/lib/packages"
 
     # correct excutable
     rm -rf $pkgdir/usr/share/beast2/bin/*
