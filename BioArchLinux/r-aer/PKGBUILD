@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=AER
-_pkgver=1.2-10
+_pkgver=1.2-12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Applied Econometrics with R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -41,8 +41,8 @@ optdepends=(
   r-vars
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b421c70f87a06b6ffa2478944aabdd9c')
-b2sums=('d075d3fb6393c4fb711b21036ae9d89c171c06643050b3ded94876e8c4d7495227978507740c2b38413a9bc4e7f3f9a8ed16a41b2d175458359fc545692079a3')
+md5sums=('89bb4ea783447c20c9b2c37ed2ed9cdb')
+b2sums=('d80077cbb7ac17c4d1c8d6f639956811c717bb5711111783f831d65879bcae3b7b855ce18b6935a1776178b0dc8dcd76a6727dec411c177e83b3bd940db39642')
 
 build() {
   mkdir build
