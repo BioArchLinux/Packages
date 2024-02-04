@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+update_on:
+  - source: regex
+    url: "http://www.tree-puzzle.de/"
+    regex: 'tree-puzzle-(\d+.\d+.\w+).tar.gz'
