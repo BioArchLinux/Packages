@@ -6,6 +6,7 @@ repo_depends:
 - r-algdesign
 - r-annotationdbi
 - r-biobase
+- r-cbioportaldata
 - r-clusterprofiler
 - r-diagrammer
 - r-dose
@@ -14,7 +15,6 @@ repo_depends:
 - r-genetclassifier
 - r-go.db
 - r-htmlwidgets
-- r-httr
 - r-import
 - r-org.bt.eg.db
 - r-org.hs.eg.db
@@ -30,7 +30,8 @@ repo_depends:
 - r-visnetwork
 - r-xml
 update_on:
-- regex: bioCancer_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/bioCancer
+- source: rpkgs
+  pkgname: bioCancer
+  repo: bioc
+  md5: true
 - alias: r
