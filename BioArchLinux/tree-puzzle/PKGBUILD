@@ -24,7 +24,7 @@ build() {
   autoupdate
   autoreconf -i
   ./configure --prefix=/usr
-  make
+  make -j1
 }
 
 package() {
