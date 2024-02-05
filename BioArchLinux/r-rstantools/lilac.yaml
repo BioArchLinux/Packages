@@ -1,13 +1,18 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-desc
 - r-rcpp
 - r-rcppparallel
+repo_makedepends:
+- r-rstan
+- r-testthat
+- r-usethis
 update_on:
-- regex: rstantools_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rstantools
+- source: rpkgs
+  pkgname: rstantools
+  repo: cran
+  md5: true
 - alias: r
