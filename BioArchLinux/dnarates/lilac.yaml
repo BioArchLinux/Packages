@@ -10,4 +10,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: "https://www.life.illinois.edu/gary/programs/DNArates/"
-    regex: '	DNArates_(\d+.\d+.\d+).tar.gz'
+    regex: 'DNArates_(\d+.\d+.\d+).tar.gz'
