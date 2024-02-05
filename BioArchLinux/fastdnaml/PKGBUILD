@@ -3,7 +3,7 @@
 pkgname=fastdnaml
 _pkg=fastDNAml
 pkgver=1.2.2
-pkgrel=0
+pkgrel=1
 arch=('x86_64')
 pkgdesc="A tool for construction of phylogenetic trees of DNA sequences \
 	 using maximum likelihood \
