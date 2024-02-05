@@ -3,7 +3,7 @@
 pkgname=dnarates
 _pkg=DNArates
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 pkgdesc="estimating site-specific nucleotide substitution rates by maximum likelihood \
 	 https://doi.org/10.1093/nar/22.17.3485"
