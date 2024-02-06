@@ -11,6 +11,7 @@ repo_depends:
 - r-getoptlong
 - r-ggplot2
 - r-ggraph
+- r-gtable
 - r-igraph
 - r-magick
 - r-org.hs.eg.db
