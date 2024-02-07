@@ -15,7 +15,6 @@ repo_depends:
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
-- r-ggseqlogo
 - r-gprofiler2
 - r-iranges
 - r-knitr
@@ -29,8 +28,10 @@ repo_depends:
 - r-rsqlite
 - r-rtracklayer
 - r-s4vectors
+- r-seqlogo
 update_on:
-- regex: RCAS_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RCAS
+- source: rpkgs
+  pkgname: RCAS
+  repo: bioc
+  md5: true
 - alias: r
