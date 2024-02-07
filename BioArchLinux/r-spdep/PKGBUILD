@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=spdep
-_pkgver=1.3-1
+_pkgver=1.3-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Spatial Dependence: Weighting Schemes, Statistics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -38,8 +38,8 @@ optdepends=(
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('2c7725eb1821524d26b5811e082c45bd')
-b2sums=('bda87bf0b01c3864024ddd56ce8162d17b3853c1e908133406189aae6c14ca93f9ed7ef61e8636fe201050ef0c11eeb3f7673efb7bbe0b8e1c94e39787de1b1e')
+md5sums=('cff3e87a727adbd95b588455bba53a38')
+b2sums=('4145814470dfcbb556e8ea2cfe90476587823f1038da442db96a52d28cc9c0f613d5671468ab0477fc30acb5184ea424779ae7152a9d4963f93f7060d3e50d1c')
 
 build() {
   mkdir build
