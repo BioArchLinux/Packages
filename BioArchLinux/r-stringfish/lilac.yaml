@@ -1,12 +1,23 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-rcpp
 - r-rcppparallel
 update_on:
-- regex: stringfish_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=stringfish
+- source: rpkgs
+  pkgname: stringfish
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: pcre2
+  repo: core
+  provided: libpcre2-8.so
+  strip_release: true
+- source: alpm
+  alpm: xxhash
+  repo: extra
+  provided: libxxhash.so
+  strip_release: true
