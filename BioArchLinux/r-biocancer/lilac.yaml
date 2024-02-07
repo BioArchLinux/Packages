@@ -27,6 +27,7 @@ repo_depends:
 - r-shiny
 - r-shinythemes
 - r-tibble
+- r-tidyr
 - r-visnetwork
 - r-xml
 update_on:
