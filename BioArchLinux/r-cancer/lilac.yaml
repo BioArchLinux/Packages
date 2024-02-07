@@ -4,11 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-cbioportaldata
 - r-circlize
 - r-formula
 - r-genetclassifier
 - r-gseabase
-- r-httr
 - r-phenotest
 - r-plyr
 - r-r.methodss3
@@ -16,8 +16,8 @@ repo_depends:
 - r-runit
 - r-tkrplot
 update_on:
-- regex: canceR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/canceR
+- source: rpkgs
+  pkgname: canceR
+  repo: bioc
+  md5: true
 - alias: r
-time_limit_hours: 6
