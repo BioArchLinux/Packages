@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: settings_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=settings
+- source: rpkgs
+  pkgname: settings
+  repo: cran
+  md5: true
 - alias: r

@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: ineq_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ineq
+- source: rpkgs
+  pkgname: ineq
+  repo: cran
+  md5: true
 - alias: r

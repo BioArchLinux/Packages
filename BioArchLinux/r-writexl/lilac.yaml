@@ -3,7 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: writexl_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=writexl
+- source: rpkgs
+  pkgname: writexl
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
