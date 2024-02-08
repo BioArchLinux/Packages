@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 - r-biocfilecache
-- r-cairo
 - r-data.table
 - r-dplyr
 - r-getoptlong
