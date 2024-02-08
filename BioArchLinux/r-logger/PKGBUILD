@@ -4,7 +4,7 @@ _pkgname=logger
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="A Lightweight, Modern and Flexible Logging Utility"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
