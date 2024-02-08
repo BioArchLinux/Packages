@@ -2,10 +2,10 @@
 # Contributor: sukanka <su975853527@gmail.com>
 
 _pkgname=remaCor
-_pkgver=0.0.16
+_pkgver=0.0.18
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Random Effects Meta-Analysis for Correlated Test Statistics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -28,8 +28,8 @@ optdepends=(
   r-runit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f7e15c9dc1c0064126189c151fcc8f9d')
-b2sums=('70a84d60a4b6ab68a3e7ca9151e24bc1c0a4ccc06c97fd4daca90745f7c5e480a576a118620241c53e770ef93301ca269b85184bd9377fae96a1720a90128731')
+md5sums=('cc6ca79d2f7319e40e2ffe27a19ff598')
+b2sums=('fa4ed0c63ff0264831826a1841fca82bcc9e26f11baef613c42d4d49d70e784efde6fdf0c144585dca354d4318d0c72aaf89dbcfcc093e914a49d981d3898af2')
 
 build() {
   mkdir build
