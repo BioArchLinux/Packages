@@ -3,10 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-rcppeigen
 - r-rcppparallel
+repo_makedepends:
+- r-rcppeigen
 update_on:
-- regex: StanHeaders_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=StanHeaders
+- source: rpkgs
+  pkgname: StanHeaders
+  repo: cran
+  md5: true
 - alias: r

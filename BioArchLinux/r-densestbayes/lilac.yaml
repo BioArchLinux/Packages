@@ -22,3 +22,7 @@ update_on:
   pkgname: blas
   filename: usr/lib/libblas\.so\.([^.]+)
   repo: extra
+- source: alpmfiles
+  pkgname: onetbb
+  filename: usr/lib/libtbb\.so\.([^.]+)
+  repo: extra

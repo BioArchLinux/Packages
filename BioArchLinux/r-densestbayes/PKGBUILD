@@ -12,6 +12,7 @@ url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
   blas
+  onetbb
   r-rcpp
   r-rstan
   r-rstantools

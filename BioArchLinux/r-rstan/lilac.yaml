@@ -22,5 +22,7 @@ update_on:
   repo: cran
   md5: true
 - alias: r
-- source: manual
-  manual: 1
+- source: alpmfiles
+  pkgname: onetbb
+  filename: usr/lib/libtbb\.so\.([^.]+)
+  repo: extra

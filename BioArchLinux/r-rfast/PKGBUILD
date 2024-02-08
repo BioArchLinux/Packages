@@ -13,6 +13,7 @@ license=('GPL-2.0-or-later')
 depends=(
   blas
   lapack
+  onetbb
   r-rcpp
   r-rcppparallel
   r-rcppziggurat

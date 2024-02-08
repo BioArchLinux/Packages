@@ -1,17 +1,25 @@
-# system requirements: GNU make, Intel TBB, Windows: cmd.exe andcscript.exe, Solaris: g++ is required
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
+# Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
+# Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=RcppParallel
 _pkgver=5.1.7
 pkgname=r-${_pkgname,,}
-pkgver=5.1.7
+pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Parallel Programming Tools for 'Rcpp'"
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-or-later')
 depends=(
+  onetbb
   r
+)
+checkdepends=(
+  r-rcpp
+  r-runit
 )
 optdepends=(
   r-knitr
@@ -19,15 +27,30 @@ optdepends=(
   r-rmarkdown
   r-runit
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f9c30eb9ce1abffc590825d513d6d28dcbe970e36032dd7521febf04e905b29c')
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-build.patch")
+md5sums=('3eedbd5476fd033c472824996b339b73'
+         '3701cff37d47dbd29a5ec880cd9c70c8')
+b2sums=('3fc0b3ad01d1124c01f832e57bcafe984285a75203548edecc7aa9a33a6346b67f2351b60686fab43308694f26d67cd909ce5b9ec38e0e946c169b3af8aa5cae'
+        '81622e93219483d64e6404da47199378032c22024c8f7bdda9567027f20519f547dc6204ff90fc07adf2f69f1b1cf1b1cdf3e060fa759bf2dfccb1208bcad336')
+
+prepare() {
+  # fix build with system onetbb
+  patch -Np1 -i fix-build.patch
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname" \
+      --configure-vars=TBB_ROOT=/usr
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla doRUnit.R
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

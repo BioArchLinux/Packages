@@ -22,3 +22,7 @@ update_on:
   pkgname: lapack
   filename: usr/lib/liblapack\.so\.([^.]+)
   repo: extra
+- source: alpmfiles
+  pkgname: onetbb
+  filename: usr/lib/libtbb\.so\.([^.]+)
+  repo: extra

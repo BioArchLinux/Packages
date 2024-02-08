@@ -1,0 +1,115 @@
+diff --git a/RcppParallel/R/tbb.R b/RcppParallel/R/tbb.R
+index 0cd1c41..f48755e 100644
+--- a/RcppParallel/R/tbb.R
++++ b/RcppParallel/R/tbb.R
+@@ -75,22 +75,13 @@ tbbCxxFlags <- function() {
+ tbbLdFlags <- function() {
+    
+    # shortcut if TBB_LIB defined
+-   tbbLib <- Sys.getenv("TBB_LIB", unset = TBB_LIB)
++   tbbLib <- Sys.getenv("TBB_LIB", unset = "")
+    if (nzchar(tbbLib)) {
+       fmt <- "-L%1$s -Wl,-rpath,%1$s -ltbb -ltbbmalloc"
+       return(sprintf(fmt, asBuildPath(tbbLib)))
+    }
+    
+-   # on Windows and Solaris, we need to explicitly link
+-   needsExplicitFlags <- is_windows() || (is_solaris() && !is_sparc())
+-   if (needsExplicitFlags) {
+-      libPath <- asBuildPath(tbbLibraryPath())
+-      libFlag <- paste0("-L", libPath)
+-      return(paste(libFlag, "-ltbb", "-ltbbmalloc"))
+-   }
+-   
+-   # nothing required on other platforms
+-   ""
++   "-ltbb -ltbbmalloc"
+    
+ }
+ 
+diff --git a/RcppParallel/src/Makevars.in b/RcppParallel/src/Makevars.in
+index f213d87..fb4278f 100644
+--- a/RcppParallel/src/Makevars.in
++++ b/RcppParallel/src/Makevars.in
+@@ -13,7 +13,7 @@ endif
+ 
+ # If TBB_LIB is defined, link to that explicitly.
+ ifdef TBB_LIB
+-	PKG_LIBS = -Wl,-L,"$(TBB_LIB)" -Wl,-rpath,"$(TBB_LIB)" -ltbb -ltbbmalloc
++	PKG_LIBS = -ltbb -ltbbmalloc
+ endif
+ 
+ ifeq ($(OS), Windows_NT)
+@@ -126,10 +126,6 @@ ifdef TBB_LIB
+ 	@echo "(tbb) Using system (Intel / OneAPI) TBB library."
+ 	@echo "(tbb) TBB_LIB = $(TBB_LIB)"
+ 	@echo "(tbb) TBB_INC = $(TBB_INC)"
+-	@mkdir -p ../inst/include
+-	@cp -R $(TBB_INC)/oneapi ../inst/include/ 2> /dev/null || :
+-	@cp -R $(TBB_INC)/serial ../inst/include/ 2> /dev/null || :
+-	@cp -R $(TBB_INC)/tbb    ../inst/include/ 2> /dev/null || :
+ else
+ 	@echo "(tbb) Building TBB using bundled sources ..."
+ 	@mkdir -p ../inst/include
+diff --git a/RcppParallel/src/install.libs.R.in b/RcppParallel/src/install.libs.R.in
+index 20a3d45..4f359d3 100644
+--- a/RcppParallel/src/install.libs.R.in
++++ b/RcppParallel/src/install.libs.R.in
+@@ -19,57 +19,6 @@
+    libsDest <- paste0("../libs", R_ARCH)
+    dir.create(libsDest, recursive = TRUE, showWarnings = FALSE)
+    file.copy(files, libsDest, overwrite = TRUE)
+-   
+-   # copy tbb (NOTE: do not use inst/ folder as R will resolve symlinks,
+-   # behavior which we do _not_ want here!)
+-   tbbDest <- file.path(R_PACKAGE_DIR, paste0("lib", R_ARCH))
+-   dir.create(tbbDest, recursive = TRUE, showWarnings = FALSE)
+-   
+-   # note: on Linux, TBB gets compiled with extensions like
+-   # '.so.2', so be ready to handle those
+-   shlibPattern <- switch(
+-      Sys.info()[["sysname"]],
+-      Windows = "^tbb.*\\.dll$",
+-      Darwin  = "^libtbb.*\\.dylib$",
+-      "^libtbb.*\\.so.*$"
+-   )
+-   
+-   if (!nzchar(tbbLib)) {
+-      
+-      # using bundled TBB
+-      tbbLibs <- list.files(
+-         path       = "tbb/build/lib_release",
+-         pattern    = shlibPattern,
+-         full.names = TRUE
+-      )
+-      
+-      # don't copy symlinks
+-      tbbLibs <- tbbLibs[!nzchar(Sys.readlink(tbbLibs))]
+-      
+-      # perform the copy
+-      file.copy(tbbLibs, tbbDest)
+-      
+-   } else {
+-      
+-      # using system tbb
+-      tbbLibs <- list.files(
+-         path       = tbbLib,
+-         pattern    = shlibPattern,
+-         full.names = TRUE
+-      )
+-      
+-      # don't copy symlinks
+-      tbbLibs <- tbbLibs[!nzchar(Sys.readlink(tbbLibs))]
+-      
+-      # copy / link the libraries
+-      useSymlinks <- Sys.getenv("TBB_USE_SYMLINKS", unset = "TRUE")
+-      if (useSymlinks) 
+-         file.symlink(tbbLibs, tbbDest)
+-      else
+-         file.copy(tbbLibs, tbbDest)
+-      
+-   }
+-   
+ }
+ 
+ .install.libs()
