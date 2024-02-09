@@ -3,11 +3,11 @@
 _pkgname=rprojroot
 _pkgver=2.0.4
 pkgname=r-${_pkgname,,}
-pkgver=2.0.4
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Finding Files in Project Subdirectories'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Finding Files in Project Subdirectories"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
@@ -17,20 +17,24 @@ optdepends=(
   r-knitr
   r-lifecycle
   r-mockr
+  r-rlang
   r-rmarkdown
   r-testthat
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b5f463fb25a24dac7a4ca916be57dbe22b5262e1f41e53871ca83e57d4336e99')
+md5sums=('4cbcf2cb74cbb76a6065182adf01b051')
+b2sums=('44b81761a084c49834288ff903e5bbddd76d0dad436f80c5515bcb98520c0d02a874e961554d73bd04170e8a96404ac4879439c6e524c82ce8cced5c38e5197d')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

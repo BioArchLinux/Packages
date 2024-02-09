@@ -1,33 +1,34 @@
-# system requirements: C++11
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=farver
 _pkgver=2.1.1
 pkgname=r-${_pkgname,,}
-pkgver=2.1.1
+pkgver=${_pkgver//-/.}
 pkgrel=6
-pkgdesc='High Performance Colour Space Manipulation'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="High Performance Colour Space Manipulation"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
-  gcc
 )
 optdepends=(
   r-covr
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0dcfda6ca743f465372790bcff1bcbc6a7145fdac1c682b021f654e8c6c996ce')
+md5sums=('8a6b2956ba4d30911c3f2e8593eac362')
+b2sums=('8aae9b293163faaefa87227286e8c49fc7432689338120a07ec00f6337828eaf5bcee2ef1ab2ceadfe1846546fe1397647d324c69a43735f3e595d3361bcc3b5')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

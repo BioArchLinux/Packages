@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: Deriv_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Deriv
+- source: rpkgs
+  pkgname: Deriv
+  repo: cran
+  md5: true
 - alias: r
