@@ -5,7 +5,10 @@ maintainers:
 repo_depends:
 - r-rcpp
 update_on:
-- regex: Travel_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Travel
+- source: manual
+  manual: 1.6.0#da652100a57515f0dbaf7084fb35525e
 - alias: r
+- source: alpmfiles
+  pkgname: fuse2
+  filename: usr/lib/libfuse\.so\.([^.]+)
+  repo: extra

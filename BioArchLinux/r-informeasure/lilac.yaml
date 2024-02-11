@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-entropy
 update_on:
-- regex: Informeasure_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Informeasure
+- source: manual
+  manual: 1.10.0#45288bfbafcd9e2087662f7cb9c57c0e
 - alias: r

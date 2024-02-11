@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: FScanR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/FScanR
+- source: manual
+  manual: 1.10.0#493abc70911c8ecce2e574a7f8b2366a
 - alias: r

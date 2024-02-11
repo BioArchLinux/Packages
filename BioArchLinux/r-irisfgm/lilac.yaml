@@ -28,7 +28,6 @@ repo_depends:
 - r-seurat
 - r-singlecellexperiment
 update_on:
-- regex: IRISFGM_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/IRISFGM
+- source: manual
+  manual: 1.8.0#b42559d7909b71e4f258ceb0a759d6e5
 - alias: r

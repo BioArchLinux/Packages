@@ -12,7 +12,10 @@ repo_depends:
 - r-summarizedexperiment
 - r-vegan
 update_on:
-- regex: BDMMAcorrect_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BDMMAcorrect
+- source: manual
+  manual: 1.18.1#7dae9023d884c07857b4378154d8912b
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra

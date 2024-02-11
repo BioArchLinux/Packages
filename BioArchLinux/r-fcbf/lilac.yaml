@@ -9,7 +9,6 @@ repo_depends:
 - r-pbapply
 - r-summarizedexperiment
 update_on:
-- regex: FCBF_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/FCBF
+- source: manual
+  manual: 2.8.0#ade7d75e811d9e4177e3e5f21dea6504
 - alias: r

@@ -19,7 +19,6 @@ repo_depends:
 - r-sna
 - r-stringr
 update_on:
-- regex: fcoex_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/fcoex
+- source: manual
+  manual: 1.13.0#51dd0d01307faed7bae46f54e5fb7fa5
 - alias: r

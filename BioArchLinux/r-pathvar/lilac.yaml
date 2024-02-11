@@ -10,7 +10,6 @@ repo_depends:
 - r-matching
 - r-mclust
 update_on:
-- regex: pathVar_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/pathVar
+- source: manual
+  manual: 1.30.0#9583d61a6f6492567626bfac2baf9ced
 - alias: r
