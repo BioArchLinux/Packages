@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=gDNAx
-_pkgver=1.0.0
+_pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Diagnostics for assessing genomic DNA contamination in RNA-seq data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -42,8 +42,8 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg38.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ca3a7370388bf64ba5ccae7161c64ebd')
-b2sums=('dcde42487805551162b096e17411f8d9be3dabaafca8990ed1dd79339dc50c8d760e9ec637d5db8caf773111319c89403e2ed42fb624f9d94fe07100e43bd9d9')
+md5sums=('4f51a23263fff85c936d0319a2c0e1de')
+b2sums=('9563776d06f41efe8bd315cd2b3a16d451010e6a33f2f4dee3670c91d1f0ffdb8ecae228a4b6851d03431d1ed1930808f0899ce8dd4889ac32ef027cc5ec9bc1')
 
 build() {
   mkdir build
