@@ -7,7 +7,6 @@ repo_depends:
 - r-gviz
 - r-r2html
 update_on:
-- regex: DMRforPairs_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DMRforPairs
+- source: manual
+  manual: 1.35.0#692e267e169e89a0bc8df8f91e433bbb
 - alias: r

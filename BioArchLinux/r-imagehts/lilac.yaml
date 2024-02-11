@@ -10,7 +10,6 @@ repo_depends:
 - r-hwriter
 - r-vsn
 update_on:
-- regex: imageHTS_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/imageHTS
+- source: manual
+  manual: 1.48.0#59a274d156e657c237e0ceaff50e0da9
 - alias: r

@@ -7,7 +7,6 @@ repo_depends:
 - r-genomicalignments
 - r-genomicranges
 update_on:
-- regex: SCATEData_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SCATEData
+- source: manual
+  manual: 1.10.0#dd2241d946202b696c0a706b906425f4
 - alias: r

@@ -14,7 +14,6 @@ repo_depends:
 - r-s4vectors
 - r-variantannotation
 update_on:
-- regex: genbankr_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/genbankr
+- source: manual
+  manual: 1.27.0#4aa7435552e5594fedc06c9f58165bab
 - alias: r

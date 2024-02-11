@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: BGmix_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BGmix
+- source: manual
+  manual: 1.59.0#73514c333f1b07a5fe589f993a8c77e2
 - alias: r

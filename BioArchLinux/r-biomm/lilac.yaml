@@ -17,7 +17,6 @@ repo_depends:
 - r-vioplot
 - r-xlsx
 update_on:
-- regex: BioMM_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BioMM
+- source: manual
+  manual: 1.15.0#b028b78baf757c1254986fc0e659119a
 - alias: r

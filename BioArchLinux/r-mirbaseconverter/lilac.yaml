@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: miRBaseConverter_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/miRBaseConverter
+- source: manual
+  manual: 1.24.0#0164410dd1aea8865c0b1f6821572c14
 - alias: r

@@ -7,7 +7,6 @@ repo_depends:
 - r-optparse
 - r-tmvtnorm
 update_on:
-- regex: sparseDOSSA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/sparseDOSSA
+- source: manual
+  manual: 1.24.0#cb988cd435f5c6da0b103632ef1deb50
 - alias: r

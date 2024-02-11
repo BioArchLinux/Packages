@@ -8,7 +8,6 @@ repo_depends:
 - r-limma
 - r-marray
 update_on:
-- regex: maigesPack_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/maigesPack
+- source: manual
+  manual: 1.64.0#118a586912fcef7e97526e4b2d142729
 - alias: r

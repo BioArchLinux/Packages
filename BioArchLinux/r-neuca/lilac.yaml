@@ -8,7 +8,6 @@ repo_depends:
 - r-limma
 - r-singlecellexperiment
 update_on:
-- regex: NeuCA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/NeuCA
+- source: manual
+  manual: 1.6.0#2b4589fd7129485bbfbe2e64d25f295e
 - alias: r

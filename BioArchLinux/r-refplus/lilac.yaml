@@ -8,7 +8,6 @@ repo_depends:
 - r-biobase
 - r-preprocesscore
 update_on:
-- regex: RefPlus_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RefPlus
+- source: manual
+  manual: 1.70.0#3735f75d63aa99ff38a34baef353836d
 - alias: r

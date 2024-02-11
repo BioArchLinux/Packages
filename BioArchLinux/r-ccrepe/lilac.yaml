@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-infotheo
 update_on:
-- regex: ccrepe_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ccrepe
+- source: manual
+  manual: 1.36.0#e7eede47c35843ca92b83c8069a1d606
 - alias: r

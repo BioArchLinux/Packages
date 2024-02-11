@@ -11,7 +11,6 @@ repo_depends:
 - r-tibble
 - r-tidyr
 update_on:
-- regex: HPAStainR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/HPAStainR
+- source: manual
+  manual: 1.9.0#1f5a4a3cb194bcbb4474410821cb381e
 - alias: r

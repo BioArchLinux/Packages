@@ -14,7 +14,6 @@ repo_depends:
 - r-rtracklayer
 - r-stringr
 update_on:
-- regex: RIPAT_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RIPAT
+- source: manual
+  manual: 1.10.0#bd4406d3915176597b1b15ed47fc7e8a
 - alias: r

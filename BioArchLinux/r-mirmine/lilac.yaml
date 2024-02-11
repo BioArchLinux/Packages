@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-summarizedexperiment
 update_on:
-- regex: miRmine_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/miRmine
+- source: manual
+  manual: 1.22.0#4f2bfc5c74548b15515c808c2994a5f9
 - alias: r
