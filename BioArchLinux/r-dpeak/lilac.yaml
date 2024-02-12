@@ -7,7 +7,6 @@ repo_depends:
 - r-iranges
 - r-rcpp
 update_on:
-- regex: dpeak_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/dpeak
+- source: manual
+  manual: 1.12.0#7295c2b08b272b157f9345ef6c5a86d3
 - alias: r

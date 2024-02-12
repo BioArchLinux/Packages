@@ -9,7 +9,6 @@ repo_depends:
 - r-mvtnorm
 - r-penalized
 update_on:
-- regex: GRridge_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GRridge
+- source: manual
+  manual: 1.22.0#5c7da0baf7039c0cf766a9b0f904c1dd
 - alias: r

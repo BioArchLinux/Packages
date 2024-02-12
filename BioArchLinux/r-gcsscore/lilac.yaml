@@ -12,7 +12,6 @@ repo_depends:
 - r-rsqlite
 - r-stringr
 update_on:
-- regex: GCSscore_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GCSscore
+- source: manual
+  manual: 1.14.0#80b3d2f6dfd1ff31fc433b40443e13b0
 - alias: r

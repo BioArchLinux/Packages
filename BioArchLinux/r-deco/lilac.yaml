@@ -21,7 +21,6 @@ repo_depends:
 - r-sfsmisc
 - r-summarizedexperiment
 update_on:
-- regex: deco_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/deco
+- source: manual
+  manual: 1.13.0#2a6fcb887712cc6591e2800ed5b6f953
 - alias: r

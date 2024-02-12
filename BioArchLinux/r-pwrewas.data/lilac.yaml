@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-experimenthub
 update_on:
-- regex: pwrEWAS.data_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/pwrEWAS.data
+- source: manual
+  manual: 1.14.0#4bc800d4a20edec551cbbcbbffd3d107
 - alias: r

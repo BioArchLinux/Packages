@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-graph
 update_on:
-- regex: NeighborNet_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/NeighborNet
+- source: manual
+  manual: 1.18.0#d39375ac39ea34b0bd06ffd019eac6ee
 - alias: r

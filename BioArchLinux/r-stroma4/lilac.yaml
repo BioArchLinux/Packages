@@ -7,7 +7,6 @@ repo_depends:
 - r-biocparallel
 - r-matrixstats
 update_on:
-- regex: STROMA4_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/STROMA4
+- source: manual
+  manual: 1.24.0#c171d3ed28b97a1bfa044b8d360bf1f7
 - alias: r

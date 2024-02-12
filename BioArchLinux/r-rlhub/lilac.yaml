@@ -6,7 +6,6 @@ repo_depends:
 - r-annotationhub
 - r-experimenthub
 update_on:
-- regex: RLHub_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RLHub
+- source: manual
+  manual: 1.6.0#9072a588ef09512493ea389c50984153
 - alias: r
