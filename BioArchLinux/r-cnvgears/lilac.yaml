@@ -6,7 +6,6 @@ repo_depends:
 - r-data.table
 - r-ggplot2
 update_on:
-- regex: CNVgears_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CNVgears
+- source: manual
+  manual: 1.8.0#b1a4be3f56d83bfa3e3c7c67208641b2
 - alias: r

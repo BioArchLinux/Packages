@@ -10,7 +10,6 @@ repo_depends:
 - r-sn
 - r-zoo
 update_on:
-- regex: PERFect_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PERFect
+- source: manual
+  manual: 1.14.0#04293e236ab353679d23cf30fa18b49f
 - alias: r

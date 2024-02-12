@@ -16,7 +16,6 @@ repo_depends:
 - r-scales
 - r-summarizedexperiment
 update_on:
-- regex: compartmap_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/compartmap
+- source: manual
+  manual: 1.18.0#99ff3e58dff338f71c08fae6f058852c
 - alias: r

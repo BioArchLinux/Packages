@@ -10,7 +10,6 @@ repo_depends:
 - r-msstats
 - r-reshape2
 update_on:
-- regex: MSstatsSampleSize_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MSstatsSampleSize
+- source: manual
+  manual: 1.13.0#d0e79aa072b3fd5a7c5aa71e95a9462c
 - alias: r

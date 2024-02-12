@@ -12,7 +12,6 @@ repo_depends:
 - r-splines2
 - r-xgboost
 update_on:
-- regex: SCATE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SCATE
+- source: manual
+  manual: 1.10.0#1336788dfbcdb94defd8b4d36b7b13ec
 - alias: r

@@ -24,7 +24,6 @@ repo_depends:
 - r-wgcna
 - r-xgboost
 update_on:
-- regex: trena_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/trena
+- source: manual
+  manual: 1.22.2#ee87f22b3b43424a5b517596008b90a0
 - alias: r

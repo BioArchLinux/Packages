@@ -15,7 +15,6 @@ repo_depends:
 - r-s4vectors
 - r-streamer
 update_on:
-- regex: plethy_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/plethy
+- source: manual
+  manual: 1.36.0#449d5f82b30430a259505be9cecae231
 - alias: r

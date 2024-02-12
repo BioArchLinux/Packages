@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-dnacopy
 update_on:
-- regex: Clonality_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Clonality
+- source: manual
+  manual: 1.47.0#5ed37ef997cb1af4c83a20890e526281
 - alias: r

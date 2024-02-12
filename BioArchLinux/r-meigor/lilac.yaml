@@ -8,7 +8,6 @@ repo_depends:
 - r-rsolnp
 - r-snowfall
 update_on:
-- regex: MEIGOR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MEIGOR
+- source: manual
+  manual: 1.33.0#a8c4d636efa888a0984f7e385aa5acf5
 - alias: r

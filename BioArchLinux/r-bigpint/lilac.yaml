@@ -22,7 +22,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 update_on:
-- regex: bigPint_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/bigPint
+- source: manual
+  manual: 1.15.0#e7f90f98dd155967a4c4afb250886d8f
 - alias: r

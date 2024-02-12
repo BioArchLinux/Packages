@@ -7,7 +7,6 @@ repo_depends:
 - r-igraph
 - r-shiny
 update_on:
-- regex: CoRegNet_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CoRegNet
+- source: manual
+  manual: 1.38.0#57d4b5f625123f9637aa4d696a2eb859
 - alias: r
