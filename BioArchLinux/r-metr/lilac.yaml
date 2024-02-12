@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-checkmate
 - r-data.table
@@ -18,8 +18,19 @@ repo_depends:
 - r-scales
 - r-sf
 - r-stringr
+repo_makedepends:
+- r-curl
+- r-gsignal
+- r-maps
+- r-ncdf4
+- r-pcict
+- r-reshape2
+- r-terra
+- r-testthat
+- r-vdiffr
 update_on:
-- regex: metR_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=metR
+- source: rpkgs
+  pkgname: metR
+  repo: cran
+  md5: true
 - alias: r
