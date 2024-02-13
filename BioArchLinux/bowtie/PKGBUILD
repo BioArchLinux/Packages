@@ -3,21 +3,24 @@
 pkgname=bowtie
 pkgver=1.3.1
 pkgrel=4
-pkgdesc="Bowtie is an alignment tool for short nucleotide sequences against long templates. https://doi.org/10.1186/gb-2009-10-3-r25"
+pkgdesc="An alignment tool for short nucleotide sequences against long templates \
+	 https://doi.org/10.1186/gb-2009-10-3-r25"
 url="http://bowtie-bio.sf.net"
 arch=('x86_64' 'aarch64')
-license=('PerlArtistic')
-depends=()
-source=("https://github.com/BenLangmead/bowtie/releases/download/v${pkgver}/bowtie-${pkgver}-linux-aarch64.zip" "https://github.com/BenLangmead/bowtie/releases/download/v${pkgver}/bowtie-${pkgver}-linux-x86_64.zip")
-sha256sums=('acdab7e7bf6aff4303748d62760448461377ef3b7cd876d04316d08517e15628'
-            'e538cf41bc1661981ea19dd187d5feea50a48664e6c879bd0fd2bcde80aa91ca')
+license=('Artistic-2.0')
+depends=('gcc-libs' 'bash' 'perl' 'glibc')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/BenLangmead/bowtie/archive/v${pkgver}.tar.gz")
+sha256sums=('147d9fe9652f7c5f351bfc0eb012e06981986fb43bd6bdfe88a95c02eabc6573')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make
+}
 
 package() {
-  cd "bowtie-$pkgver-linux-$CARCH"
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make prefix=/usr DESTDIR="${pkgdir}" install
 
-  install -Dm755 bowtie{,-*} -t "$pkgdir/usr/bin"
-  rm "$pkgdir/usr/bin"/*-debug
-
-  install -Dm644 {MANUAL,MANUAL.markdown,TUTORIAL} -t "$pkgdir/usr/share/doc/bowtie"
-  install -Dm644 "doc"/* -t "$pkgdir/usr/share/doc/bowtie/doc"
+  install -Dm755 -t "${pkgdir}/usr/share/${pkgname}/scripts/" scripts/*.{pl,sh}
+  install -Dm644 -t "${pkgdir}/usr/share/doc/$pkgname/" MANUAL{,.markdown} TUTORIAL AUTHORS NEWS
 }
