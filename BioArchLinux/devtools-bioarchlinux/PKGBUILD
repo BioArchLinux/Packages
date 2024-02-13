@@ -1,7 +1,7 @@
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=2023.09.29
-pkgrel=2
+pkgver=2024.02.13
+pkgrel=1
 # curl https://api.github.com/repos/archlinuxcn/devtools/git/ref/tags/$pkgver-archlinuxcn1 | jq -r .object.sha
 _upstream_pkgrel=1
 pkgdesc='Tools for Arch Linux package maintainers, bioarchlinux fork'
