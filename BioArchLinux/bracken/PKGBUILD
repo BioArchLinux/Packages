@@ -2,7 +2,7 @@
 pkgname=bracken
 _pkgname=Bracken
 pkgver=2.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian Reestimation of Abundance with KrakEN. https://doi.org/10.7717/peerj-cs.104"
 arch=('i686' 'x86_64')
 url="https://ccb.jhu.edu/software/bracken/"
