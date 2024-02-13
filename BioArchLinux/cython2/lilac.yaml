@@ -3,14 +3,13 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 pre_build_script: |
-  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: github
     github: cython/cython
-    use_latest_release: true
+    use_max_tag: true
 repo_makedepends:
   - python2-setuptools
 repo_depends:

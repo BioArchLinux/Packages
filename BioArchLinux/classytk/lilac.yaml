@@ -1,11 +1,15 @@
 build_prefix: extra-x86_64
+pre_build_script: |
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 maintainers:
-- github: sukanka
-  email: su975853527@gmail.com
+  - github: sukanka
+    email: su975853527@gmail.com
 repo_depends:
-- extral
-- tcl-pkgtools
+  - extral
+  - tcl-pkgtools
 update_on:
-- regex: 'ClassyTk-(\d+.\d+.\d+)-src.tar.gz'
-  source: regex
-  url: https://sourceforge.net/projects/classytcl/files/
+  - regex: 'ClassyTk-(\d+.\d+.\d+)-src.tar.gz'
+    source: regex
+    url: https://sourceforge.net/projects/classytcl/files/

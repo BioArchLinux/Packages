@@ -2,6 +2,10 @@ build_prefix: multilib
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+pre_build_script: |
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - source: cmd
     cmd: curl -sS https://gitlab.com/dust_group/dust/-/tags | grep 'ref-name' | sed 's/>/ /g' | sed 's/</ /g'  | awk '{print $5}' | sed 's/-//g' | head -n 1
