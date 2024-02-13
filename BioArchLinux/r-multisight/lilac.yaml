@@ -30,7 +30,6 @@ repo_depends:
 - r-shinydashboard
 - r-stringr
 update_on:
-- regex: multiSight_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/multiSight
+- source: manual
+  manual: 1.7.0#441d8e6ab1b689928f6f623551fe1459
 - alias: r

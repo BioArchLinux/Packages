@@ -27,7 +27,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-umap
 update_on:
-- regex: ILoReg_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ILoReg
+- source: manual
+  manual: 1.10.0#5b4425d7d9a6bc0201dcd9c1d0b1c98c
 - alias: r

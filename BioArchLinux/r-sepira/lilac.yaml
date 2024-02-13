@@ -6,7 +6,6 @@ repo_depends:
 - r-corpcor
 - r-limma
 update_on:
-- regex: SEPIRA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SEPIRA
+- source: manual
+  manual: 1.20.0#c7ed46a5810d2e91210561758428a7fb
 - alias: r

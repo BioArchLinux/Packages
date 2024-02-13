@@ -10,7 +10,6 @@ repo_depends:
 - r-gsva
 - r-plyr
 update_on:
-- regex: SISPA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SISPA
+- source: manual
+  manual: 1.30.0#390f6b86b0a21440799868d3a554c834
 - alias: r

@@ -11,7 +11,6 @@ repo_depends:
 - r-reshape2
 - r-stringr
 update_on:
-- regex: cellscape_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/cellscape
+- source: manual
+  manual: 1.24.0#7df865c4752c43a3745b01f93654a00a
 - alias: r

@@ -31,7 +31,6 @@ repo_depends:
 - r-tidyverse
 - r-tnet
 update_on:
-- regex: SPONGE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SPONGE
+- source: manual
+  manual: 1.22.0#4ec8bdffb258be839e469d1baa50c4e9
 - alias: r

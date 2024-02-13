@@ -8,7 +8,6 @@ repo_depends:
 - r-nloptr
 - r-summarizedexperiment
 update_on:
-- regex: gscreend_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/gscreend
+- source: manual
+  manual: 1.14.0#6d79483ce0c766b1779a2dab5614e249
 - alias: r

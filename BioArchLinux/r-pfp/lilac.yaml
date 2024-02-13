@@ -12,7 +12,6 @@ repo_depends:
 - r-plyr
 - r-tidyr
 update_on:
-- regex: PFP_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PFP
+- source: manual
+  manual: 1.7.0#c360bbdb9e54a148f40c161c5691eceb
 - alias: r

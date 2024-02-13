@@ -18,7 +18,6 @@ repo_depends:
 - r-shinywidgets
 - r-truncnorm
 update_on:
-- regex: pwrEWAS_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/pwrEWAS
+- source: manual
+  manual: 1.14.0#72989b16264534ad1fa6fdadda1ff618
 - alias: r

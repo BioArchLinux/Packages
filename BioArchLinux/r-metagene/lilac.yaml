@@ -22,7 +22,6 @@ repo_depends:
 - r-rtracklayer
 - r-stringr
 update_on:
-- regex: metagene_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/metagene
+- source: manual
+  manual: 2.31.0#4709f553e306643ec3d37860f4092ddc
 - alias: r
