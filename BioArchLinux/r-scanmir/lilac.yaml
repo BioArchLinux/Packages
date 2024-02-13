@@ -10,12 +10,13 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-ggplot2
-- r-ggseqlogo
 - r-iranges
 - r-s4vectors
+- r-seqlogo
 - r-stringi
 update_on:
-- regex: scanMiR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/scanMiR
+- source: rpkgs
+  pkgname: scanMiR
+  repo: bioc
+  md5: true
 - alias: r
