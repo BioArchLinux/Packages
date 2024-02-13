@@ -10,7 +10,6 @@ repo_depends:
   - trimmomatic
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
-  run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
