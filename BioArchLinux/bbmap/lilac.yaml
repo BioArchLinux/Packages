@@ -2,6 +2,11 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 build_prefix: extra-x86_64
+pre_build_script: |
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
   - source: cmd
     cmd:  curl -sS "https://sourceforge.net/projects/bbmap/rss?path=/" | grep '<link>' | grep 'tar.gz' | head -n 1 | sed 's/_/ /g' | sed 's/.tar.gz/ /g' | awk '{print $2}'

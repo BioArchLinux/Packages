@@ -2,6 +2,11 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+pre_build_script: |
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
 update_on:
   - source: cmd
     cmd: curl -sS https://gitlab.com/german.tischler/biobambam2/-/tags | grep '\-release-' | head -n 1 | sed 's/</ /g' | sed 's/>/ /g' | awk '{print $5}' | sed 's/-/_/g'
