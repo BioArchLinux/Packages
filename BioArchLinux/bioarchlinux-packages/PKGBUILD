@@ -2,7 +2,7 @@
 pkgname=bioarchlinux-packages
 _pkgname=archlinuxcn-packages
 pkgver=0.2.7
-pkgrel=1
+pkgrel=2
 pkgdesc="build status site"
 arch=('x86_64')
 url="https://github.com/BioArchLinux/bioarchlinux-packages"
