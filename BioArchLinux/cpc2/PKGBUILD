@@ -1,7 +1,7 @@
 pkgname=cpc2
 pkgver=1.0.1
 _pkgname=CPC2_standalone
-pkgrel=1
+pkgrel=2
 pkgdesc="Official repo for the standalone package of Coding Potential Calculator (CPC) 2 https://doi.org/10.1093/nar/gkx428"
 arch=(x86_64)
 url="https://github.com/gao-lab/CPC2_standalone"
