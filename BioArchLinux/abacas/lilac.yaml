@@ -3,7 +3,7 @@ maintainers:
   - github: sukanka
     email: su975853527@gmail.com
 pre_build_script: |
-  run_cmd(['updpkgsums'])
+  update_pkgver_and_pkgrel(_G.newver)
 post_build_script: |
   git_pkgbuild_commit()
 repo_depends:
