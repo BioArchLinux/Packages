@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-infotheo
 update_on:
-- source: manual
-  manual: 1.36.0#e7eede47c35843ca92b83c8069a1d606
+- source: rpkgs
+  pkgname: ccrepe
+  repo: bioc
+  md5: true
 - alias: r
