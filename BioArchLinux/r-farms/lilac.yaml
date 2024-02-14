@@ -6,7 +6,6 @@ repo_depends:
 - r-affy
 - r-biobase
 update_on:
-- regex: farms_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/farms
+- source: manual
+  manual: 1.52.0#47741e71448e6a0b2b47309b31572a2d
 - alias: r

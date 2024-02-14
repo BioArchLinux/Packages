@@ -34,7 +34,6 @@ repo_depends:
 - r-summarizedexperiment
 - r-wgcna
 update_on:
-- regex: miRSM_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/miRSM
+- source: manual
+  manual: 1.18.0#2c9037736a60c1bbcd546542c1d70f41
 - alias: r

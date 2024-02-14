@@ -20,7 +20,6 @@ repo_depends:
 - r-sna
 - r-wordcloud
 update_on:
-- regex: eegc_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/eegc
+- source: manual
+  manual: 1.26.0#898230d2d6431f622202416e172d64e2
 - alias: r

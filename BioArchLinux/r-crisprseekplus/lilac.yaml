@@ -15,7 +15,6 @@ repo_depends:
 - r-shiny
 - r-shinyjs
 update_on:
-- regex: crisprseekplus_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/crisprseekplus
+- source: manual
+  manual: 1.26.0#2a26cd0c67eb1679895c3cbc4573e502
 - alias: r
