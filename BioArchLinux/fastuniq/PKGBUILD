@@ -2,7 +2,7 @@
 pkgname=fastuniq
 _pkgname=FastUniq
 pkgver=1.1
-pkgrel=0
+pkgrel=1
 pkgdesc="ultrafast de novo tool for removal of duplicates in paired
 short DNA sequence reads in FASTQ format \
 	 https://doi.org/10.1371/journal.pone.0052249"
