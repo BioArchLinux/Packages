@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('any')
 url="http://rseqc.sourceforge.net/"
-license=('UNKNOWN')
+license=('GPL-3.0-only')
 depends=('python' 'python-bx' 'python-pysam' 'python-numpy' 'python-pybigwig' 'cython')
 makedepends=('python-setuptools' 'python-pip')
 source=("https://sourceforge.net/projects/rseqc/files/RSeQC-${pkgver}.tar.gz")
@@ -22,8 +22,7 @@ build() {
 package() {
 	cd "$srcdir/RSeQC-${pkgver}"
 	python setup.py install --root="$pkgdir" --optimize=1
-
 	# these files owned by python-bx.
-	cd  ${pkgdir}/usr/lib/python3.10/site-packages/
-	rm -rf __pycache__ psyco_full.py
+	# cd  ${pkgdir}/usr/lib/python3.10/site-packages/
+	# rm -rf __pycache__ psyco_full.py
 }
