@@ -5,11 +5,11 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-biocgenerics
-- r-httr
+- r-httr2
 - r-jsonlite
-- r-progress
 update_on:
-- regex: rols_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rols
+- source: rpkgs
+  pkgname: rols
+  repo: bioc
+  md5: true
 - alias: r
