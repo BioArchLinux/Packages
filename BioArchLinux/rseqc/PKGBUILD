@@ -2,7 +2,7 @@
 
 pkgname=rseqc
 pkgver=5.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('any')
 url="http://rseqc.sourceforge.net/"
