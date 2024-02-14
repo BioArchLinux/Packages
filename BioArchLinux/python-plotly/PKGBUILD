@@ -48,7 +48,7 @@ sha256sums=('a8ad150640528e28b9bcac7cc5fc98befebc51c9b105d274f121433ba113e31d'
 
 prepare() {
     cd plotly.py-${pkgver}/
-    patch --forward --strip=0 --input="${srcdir}/compat-py3.11.patch"
+#    patch --forward --strip=0 --input="${srcdir}/compat-py3.11.patch"
 }
 
 build() {
