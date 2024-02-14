@@ -1,19 +1,49 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-assertthat
 - r-bit64
-- r-cpp11
 - r-glue
 - r-purrr
 - r-r6
 - r-rlang
 - r-tidyselect
 - r-vctrs
+repo_makedepends:
+- r-cpp11
+- r-blob
+- r-curl
+- r-dplyr
+- r-hms
+- r-lubridate
+- r-reticulate
+- r-stringr
+- r-testthat
 update_on:
-- regex: arrow_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=arrow
+- source: rpkgs
+  pkgname: arrow
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: arrow
+  filename: usr/lib/libarrow\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: arrow
+  filename: usr/lib/libarrow_acero\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: arrow
+  filename: usr/lib/libarrow_dataset\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: arrow
+  filename: usr/lib/libarrow_substrait\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: arrow
+  filename: usr/lib/libparquet\.so\.([^.]+)
+  repo: extra
