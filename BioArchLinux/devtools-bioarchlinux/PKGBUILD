@@ -1,6 +1,6 @@
 _pkgname=devtools
 pkgname=devtools-bioarchlinux
-pkgver=2024.02.13
+pkgver=2024.02.14
 pkgrel=1
 # curl https://api.github.com/repos/archlinuxcn/devtools/git/ref/tags/$pkgver-archlinuxcn1 | jq -r .object.sha
 _upstream_pkgrel=1
