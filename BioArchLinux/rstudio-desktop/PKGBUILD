@@ -9,7 +9,8 @@ _srcname=rstudio-${pkgver//+/-}
 _pandocver="current"
 _quarto="FALSE"
 pkgrel=1
-pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
+pkgdesc="A powerful and productive integrated development environment \
+	 (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
 license=('AGPL3')
@@ -19,7 +20,7 @@ optdepends=('git: for git support'
             'subversion: for subversion support'
             'openssh-askpass: for a git ssh access'
             )
-source=("rstudio-$_pkgver.tar.gz::https://github.com/rstudio/rstudio/archive/refs/tags/v${pkgver}.tar.gz"
+source=("rstudio-$_pkgver.tar.gz::https://github.com/rstudio/rstudio/archive/refs/tags/${pkgver}.tar.gz"
         "https://github.com/quarto-dev/quarto/archive/refs/heads/release/rstudio-cherry-blossom.zip"
         "qt.conf"
         "pandoc_version.patch")
