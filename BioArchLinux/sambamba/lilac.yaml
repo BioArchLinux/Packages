@@ -10,3 +10,4 @@ update_on:
   - source: github
     github: biod/sambamba
     use_max_tag: true
+    prefix: 'v'
