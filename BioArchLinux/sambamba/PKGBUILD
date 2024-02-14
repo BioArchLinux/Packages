@@ -8,7 +8,7 @@ arch=('i686' 'x86_64')
 url="http://lomereiter.github.io/sambamba"
 license=('GPL-2.0-only')
 depends=(lz4 liblphobos)
-makedepends=(ldc)
+makedepends=(ldc python)
 source=(https://github.com/biod/sambamba/archive/refs/tags/v${pkgver}.tar.gz)
 sha256sums=(10f7160db5a1c50296b32e94f7d7570739aa7d90c93fe0981246fe89eab6dd98)
 
