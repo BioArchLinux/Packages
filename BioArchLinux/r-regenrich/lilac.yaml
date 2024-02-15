@@ -19,7 +19,6 @@ repo_depends:
 - r-tibble
 - r-wgcna
 update_on:
-- regex: RegEnrich_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RegEnrich
+- source: manual
+  manual: 1.10.0#afbd8028754ca907215ba26c3eae83f8
 - alias: r

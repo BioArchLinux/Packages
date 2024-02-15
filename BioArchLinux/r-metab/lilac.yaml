@@ -7,7 +7,6 @@ repo_depends:
 - r-svdialogs
 - r-xcms
 update_on:
-- regex: Metab_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Metab
+- source: manual
+  manual: 1.33.0#8b19a02165b42e95410fbcf5c44ee352
 - alias: r

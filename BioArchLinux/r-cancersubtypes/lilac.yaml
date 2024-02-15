@@ -9,7 +9,6 @@ repo_depends:
 - r-nmf
 - r-sigclust
 update_on:
-- regex: CancerSubtypes_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CancerSubtypes
+- source: manual
+  manual: 1.26.0#60441ccfd99126a3727c0621d087d526
 - alias: r

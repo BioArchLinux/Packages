@@ -12,7 +12,6 @@ repo_depends:
 - r-shinyfiles
 - r-webshot
 update_on:
-- regex: oneSENSE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/oneSENSE
+- source: manual
+  manual: 1.20.0#c89540d29c09f4cb0e00a650ca5a7f20
 - alias: r

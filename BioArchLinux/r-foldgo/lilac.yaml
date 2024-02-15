@@ -7,7 +7,6 @@ repo_depends:
 - r-tidyr
 - r-topgo
 update_on:
-- regex: FoldGO_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/FoldGO
+- source: manual
+  manual: 1.18.0#230ddc55d983a828d401eac9e44590d4
 - alias: r

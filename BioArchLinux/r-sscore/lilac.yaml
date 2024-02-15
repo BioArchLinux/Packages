@@ -6,7 +6,6 @@ repo_depends:
 - r-affy
 - r-affyio
 update_on:
-- regex: sscore_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/sscore
+- source: manual
+  manual: 1.72.0#3f61e0bf6176b6ee7f4b29b0af6e2091
 - alias: r

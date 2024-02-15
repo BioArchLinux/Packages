@@ -17,7 +17,6 @@ repo_depends:
 - r-reshape2
 - r-stringr
 update_on:
-- regex: LowMACA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/LowMACA
+- source: manual
+  manual: 1.28.0#00d852771a79338dfdd5f41318672af1
 - alias: r

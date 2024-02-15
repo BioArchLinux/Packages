@@ -7,7 +7,6 @@ repo_depends:
 - r-foreach
 - r-summarizedexperiment
 update_on:
-- regex: multiOmicsViz_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/multiOmicsViz
+- source: manual
+  manual: 1.24.0#a051b5e32c72385f4463cbe1751c1484
 - alias: r

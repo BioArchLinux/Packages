@@ -3,10 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-bh
 - r-rcpp
+repo_makedepends:
+- r-bh
 update_on:
-- regex: CancerInSilico_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CancerInSilico
+- source: manual
+  manual: 2.18.0#716dc250caa885da7b8b0783f0871e16
 - alias: r
