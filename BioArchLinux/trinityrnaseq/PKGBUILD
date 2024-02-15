@@ -39,7 +39,7 @@ package_trinityrnaseq() {
 for dir in Analysis PerlLib PyLib
 do
   mkdir -p $pkgdir/usr/share/$basename/$dir
-  find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$dir/ \;
+  find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$dir \;
 done
 
   # Bin
@@ -72,7 +72,7 @@ done
 
   # Util
   mkdir -p $pkdir/usr/share/$basename/util
-  find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/util/ \;
+  find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/util \;
 }
 
 package_trinityrnaseq-doc(){
