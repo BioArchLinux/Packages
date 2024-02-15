@@ -38,7 +38,8 @@ package_trinityrnaseq() {
   # Dir 
 for dir in Analysis PerlLib PyLib
 do
-  find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$dir \;
+  mkdir -p $pkgdir/usr/share/$dir
+  find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$dir/ \;
 done
 
   # Bin
@@ -47,7 +48,8 @@ do
   find $binadir -type f -exec install -D -m 755 {} $pkgdir/usr/bin/ \;
 done
 
-  install -Dm755 Trinity $pkgdir/usr/bin/Trinity
+  install -Dm755 Trinity $pkgdir/usr/share/$basename/Trinity
+  ln -s /usr/share/$basename/Trinity $pkgdir/usr/bin/Trinity 
   install -Dm755 trinity-plugins/BIN/seqtk-trinity $pkgdir/usr/bin/seqtk-trinity
   
   # Java
@@ -69,7 +71,8 @@ done
   done
 
   # Util
-  find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/util \;
+  mkdir -p $pkdir/usr/share/$basename/util
+  find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/util/ \;
 }
 
 package_trinityrnaseq-doc(){
