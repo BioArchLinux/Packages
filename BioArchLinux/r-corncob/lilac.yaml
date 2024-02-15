@@ -8,13 +8,13 @@ repo_depends:
 - r-ggplot2
 - r-magrittr
 - r-numderiv
-- r-optimr
-- r-phyloseq
+- r-rlang
 - r-scales
 - r-trust
 - r-vgam
 update_on:
-- regex: corncob_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=corncob
+- source: rpkgs
+  pkgname: corncob
+  repo: cran
+  md5: true
 - alias: r
