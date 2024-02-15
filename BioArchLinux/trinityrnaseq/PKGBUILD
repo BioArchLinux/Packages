@@ -33,12 +33,12 @@ package_trinityrnaseq() {
   # 'xz' 'bzip2' 'curl'
 
   cd $srcdir/$basename
-  mkdir -p $pkgdir/usr/{share/{$pkgname,java},bin}
+  mkdir -p $pkgdir/usr/{share/{$basename,java},bin}
 
   # Dir 
 for dir in Analysis PerlLib PyLib
 do
-  mkdir -p $pkgdir/usr/share/$dir
+  mkdir -p $pkgdir/usr/share/$basename/$dir
   find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$dir/ \;
 done
 
@@ -53,7 +53,7 @@ done
   install -Dm755 trinity-plugins/BIN/seqtk-trinity $pkgdir/usr/bin/seqtk-trinity
   
   # Java
-  install -Dm755 Butterfly/Butterfly.jar $pkgdir/usr/share/Butterfly.jar
+  install -Dm755 Butterfly/Butterfly.jar $pkgdir/usr/share/java/Butterfly.jar
 
   # Plugin
   # Todo: check trinity-plugins/scaffold_iworm_contigs/scaffold_iworm_contigs
