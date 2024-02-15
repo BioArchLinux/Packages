@@ -12,3 +12,4 @@ update_on:
     github: trinityrnaseq/trinityrnaseq
     use_max_tag: true
     include_regex: Trinity-v(\d+.\d+.\d+)
+    prefix: 'Trinity-v'
