@@ -35,8 +35,6 @@ package_trinityrnaseq() {
   cd $srcdir/$basename
   mkdir -p $pkgdir/usr/{share/{$pkgname,java},bin}
 
-  ls 
-
   # Dir 
 for dir in Analysis PerlLib PyLib
 do
@@ -67,7 +65,6 @@ done
   )
   for plugin in "${plugins[@]}"
   do
-    ls $srcdir/$basename/$plugin 
     install -Dm755 $srcdir/$basename/$plugin $pkgdir/usr/share/$pkgname/$plugin
   done
 
