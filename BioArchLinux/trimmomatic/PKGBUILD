@@ -4,7 +4,7 @@
 pkgname=trimmomatic
 _pkgname=Trimmomatic
 pkgver=0.39
-pkgrel=8
+pkgrel=9
 pkgdesc='A flexible read trimming tool for Illumina NGS data'
 arch=('any')
 url="http://www.usadellab.org/cms/?page=trimmomatic"
