@@ -16,4 +16,10 @@ build() {
 package() {
   cd $srcdir/$pkgname-$pkgver
   make install prefix=$pkgdir/usr
+
+  cd doc
+  for docu in $(ls)
+do
+  install -Dm644 $docu $pkgdir/usr/share/$docy
+done
 }
