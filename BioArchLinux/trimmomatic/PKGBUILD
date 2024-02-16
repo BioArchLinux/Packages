@@ -29,4 +29,7 @@ build() {
 package() {
   install -Dm 755 $srcdir/$_pkgname-$pkgver/dist/jar/$pkgname-$pkgver.jar $pkgdir/usr/share/java/$pkgname/$pkgname.jar
   install -Dm 755 $srcdir/$pkgname -t  $pkgdir/usr/bin
+
+  mkdir -p $pkgdir/usr/share/java/$pkgname/adapters
+  install -Dm 755 -t $pkgdir/usr/share/java/$pkgname/adapters $srcdir/$_pkgname-$pkgver/adapters/*
 }
