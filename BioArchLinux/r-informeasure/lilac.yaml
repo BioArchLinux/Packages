@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-entropy
 update_on:
-- source: manual
-  manual: 1.10.0#45288bfbafcd9e2087662f7cb9c57c0e
+- source: rpkgs
+  pkgname: Informeasure
+  repo: bioc
+  md5: true
 - alias: r
