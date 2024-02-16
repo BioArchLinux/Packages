@@ -14,7 +14,6 @@ repo_depends:
 - r-pryr
 - r-scales
 update_on:
-- regex: rbokeh_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rbokeh
+- source: manual
+  manual: 0.5.2#08b834ae99835c679c717c7c8537e196
 - alias: r

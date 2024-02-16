@@ -8,7 +8,6 @@ repo_depends:
 - r-rgraphviz
 - r-suprahex
 update_on:
-- regex: dnet_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=dnet
+- source: manual
+  manual: 1.1.7#0a42f86fab2e9288eb4ebfcaa0e94d13
 - alias: r
