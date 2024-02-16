@@ -1,6 +1,6 @@
 pkgname=last
 pkgver=1541
-pkgrel=1
+pkgrel=2
 pkgdesc=" Genomic aligner for short reads \
 	 https://doi.org/10.1093/nar/gkq010"
 arch=('x86_64')
