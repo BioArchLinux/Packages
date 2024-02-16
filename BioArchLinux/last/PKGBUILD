@@ -20,6 +20,6 @@ package() {
   cd doc
   for docu in $(ls)
 do
-  install -Dm644 $docu $pkgdir/usr/share/$docy
+  install -Dm644 $docu $pkgdir/usr/share/doc/$pkgname/$docu
 done
 }
