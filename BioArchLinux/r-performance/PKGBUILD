@@ -2,10 +2,10 @@
 # Contributor: Hu Butui <hot123tea123@gmail.com>
 
 _pkgname=performance
-_pkgver=0.10.8
+_pkgver=0.10.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Assessment of Regression Models Performance"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -91,6 +91,7 @@ optdepends=(
   r-pscl
   r-psych
   r-qqplotr
+  r-quantreg
   r-randomforest
   r-rempsyc
   r-rmarkdown
@@ -105,8 +106,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c6ef5ecfa32d0aa3026f0096f8747a35')
-b2sums=('c755e2451755461fb3a8b3b3fb0b03c538d7a843493571ff83232280fd2661b5fda4d7ff15f46dfa00c5f6c2b0be1cb3b2fc066bc02a510fca6dc9b15fb787e5')
+md5sums=('07a07184ab81c70c92646ab990e0fd5f')
+b2sums=('029a8b72203e719ac7520d903f3eb510de573fd16a3efc2249a16b22dd11223f25a5e0680a4a114cd87fff4dd0e08504a4f7449e031cea683873059ac7823933')
 
 prepare() {
   # skip failing tests
