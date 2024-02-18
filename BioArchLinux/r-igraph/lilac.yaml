@@ -8,6 +8,7 @@ repo_depends:
 - r-magrittr
 - r-pkgconfig
 - r-rlang
+- r-vctrs
 repo_makedepends:
 - r-cpp11
 - r-graph
@@ -19,6 +20,10 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: arpack
+  filename: usr/lib/libarpack\.so\.([^.]+)
+  repo: extra
 - source: alpmfiles
   pkgname: blas
   filename: usr/lib/libblas\.so\.([^.]+)
