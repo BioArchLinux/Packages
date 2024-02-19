@@ -32,6 +32,10 @@ def r_update_pkgver_and_pkgrel(newver: str):
     if oldrel is None:
         raise Exception("pkgrel is not defined")
 
+def _r_name_to_arch(r_pkg_name: str) -> str:
+    """Converts R package name to the corresponding Arch package"""
+    return f"r-{r_pkg_name.lower()}"
+
 class Description:
     """Metadata from the DESCRIPTION file, package names are converted to Arch format"""
 
@@ -87,10 +91,6 @@ class Description:
 
         return {field.decode(encoding): value.decode(encoding) for field, value in rawdata.items()}
 
-    def _r_name_to_arch(self, r_pkg_name: str) -> str:
-        """Converts R package name to the corresponding Arch package"""
-        return f"r-{r_pkg_name.lower()}"
-
     def _parse_deps(self, field: str) -> list:
         """Parse a field that contains a list of dependencies"""
         if field not in self.desc:
@@ -102,7 +102,7 @@ class Description:
                 dep = dep[:i]
             dep = dep.strip()
             if dep != "R" and len(dep) > 0:
-                ret.append(self._r_name_to_arch(dep))
+                ret.append(_r_name_to_arch(dep))
         return ret
 
 class Pkgbuild:
@@ -236,12 +236,14 @@ class CheckConfig:
         expect_needscompilation: bool = None,
         expect_systemrequirements: str = None,
         expect_title: str = None,
+        extra_r_depends: list = [],
         ignore_fortran_files: bool = False,
     ):
         self.expect_license = expect_license
         self.expect_needscompilation = expect_needscompilation
         self.expect_systemrequirements = expect_systemrequirements
         self.expect_title = expect_title
+        self.extra_r_depends = extra_r_depends
         self.ignore_fortran_files = ignore_fortran_files
 
 def check_default_pkgs(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
@@ -255,10 +257,12 @@ def check_default_pkgs(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
 
 def check_depends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     implicit_r_dep = explicit_r_dep = False
+    expected_depends = set(desc.depends + desc.imports)
+    expected_depends.update((_r_name_to_arch(dep) for dep in cfg.extra_r_depends))
     errors = []
     for dep in pkg.depends:
         if dep.startswith("r-"):
-            if (dep not in desc.depends) and (dep not in desc.imports):
+            if dep not in expected_depends:
                 errors.append(f"Unnecessary dependency: {dep}")
             else:
                 implicit_r_dep = True
@@ -266,7 +270,7 @@ def check_depends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
             explicit_r_dep = True
 
     not_missing = True
-    for dep in desc.depends + desc.imports:
+    for dep in expected_depends:
         if (dep not in cfg.default_r_pkgs) and (dep not in pkg.depends):
             not_missing = False
             errors.append(f"Missing dependency: {dep}")
@@ -398,7 +402,7 @@ def r_check_pkgbuild(newver: str, cfg: CheckConfig):
     pkgbuild = Pkgbuild()
     cfg.default_r_pkgs = get_default_r_pkgs()
     errors = []
-    with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r") as tar:
+    with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r:gz") as tar:
         description = Description(tar, pkgbuild._pkgname)
         cfg.tar = tar
 

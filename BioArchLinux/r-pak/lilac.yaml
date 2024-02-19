@@ -1,9 +1,29 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-callr
+- r-cli
+- r-curl
+- r-desc
+- r-filelock
+- r-jsonlite
+- r-lpsolve
+- r-pkgbuild
+- r-pkgcache
+- r-pkgdepends
+- r-pkgsearch
+- r-processx
+- r-ps
+- r-r6
+- r-zip
+repo_makedepends:
+- r-mockery
+- r-testthat
 update_on:
-  - regex: pak_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=pak
-  - alias: r
+- source: rpkgs
+  pkgname: pak
+  repo: cran
+  md5: true
+- alias: r
