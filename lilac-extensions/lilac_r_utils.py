@@ -236,14 +236,14 @@ class CheckConfig:
         expect_needscompilation: bool = None,
         expect_systemrequirements: str = None,
         expect_title: str = None,
-        extra_r_depends: list = [],
+        extra_r_depends_cb = None,
         ignore_fortran_files: bool = False,
     ):
         self.expect_license = expect_license
         self.expect_needscompilation = expect_needscompilation
         self.expect_systemrequirements = expect_systemrequirements
         self.expect_title = expect_title
-        self.extra_r_depends = extra_r_depends
+        self.extra_r_depends_cb = extra_r_depends_cb
         self.ignore_fortran_files = ignore_fortran_files
 
 def check_default_pkgs(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
@@ -258,7 +258,9 @@ def check_default_pkgs(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
 def check_depends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     implicit_r_dep = explicit_r_dep = False
     expected_depends = set(desc.depends + desc.imports)
-    expected_depends.update((_r_name_to_arch(dep) for dep in cfg.extra_r_depends))
+    cb = cfg.extra_r_depends_cb
+    if cb is not None:
+        expected_depends.update((_r_name_to_arch(dep) for dep in cb(cfg.tar)))
     errors = []
     for dep in pkg.depends:
         if dep.startswith("r-"):
