@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-curl
+- r-jsonlite
+repo_makedepends:
+- r-mockery
+- r-pingr
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: pkgsearch
+  repo: cran
+  md5: true
+- alias: r
