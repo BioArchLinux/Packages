@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-cli
+- r-curl
+- r-jsonlite
+- r-magick
+- r-processx
+- r-tibble
+- r-v8
+- r-withr
+repo_makedepends:
+- r-cpp11
+- r-decor
+- r-htmlwidgets
+- r-mockery
+- r-rmarkdown
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: asciicast
+  repo: cran
+  md5: true
+- alias: r
