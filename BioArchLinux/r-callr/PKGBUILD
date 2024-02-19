@@ -5,10 +5,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=callr
-_pkgver=3.7.3
+_pkgver=3.7.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=1
 pkgdesc="Call R from R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -29,8 +29,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('12151339c31433137a1534c2f5656206')
-b2sums=('30c59f352e0a7f144c61af17894c31495663676eda1fc31537807f41ae63ac62452f98213f7865becfda7e7e8f28b0fa6ffd0c39ee784ed8bfea911616789326')
+md5sums=('097ed5fd9d9981a2f38348cba75737a5')
+b2sums=('661bced1802e58e120a7878634fc449b5cdce521e27b28ed26bbd73b5db37716ff52cd3b9051742e84c08bceb7baf41f1f1601747ecb1631c646ec9b16f93313')
 
 build() {
   mkdir build
