@@ -4,7 +4,7 @@ _pkgname=fftwtools
 _pkgver=0.9-11
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Wrapper for 'FFTW3' Includes: One-Dimensional, Two-Dimensional, Three-Dimensional, and Multivariate Transforms"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
