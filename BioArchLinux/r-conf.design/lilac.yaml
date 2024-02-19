@@ -1,9 +1,10 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 update_on:
-  - regex: conf.design_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=conf.design
-  - alias: r
+- source: rpkgs
+  pkgname: conf.design
+  repo: cran
+  md5: true
+- alias: r

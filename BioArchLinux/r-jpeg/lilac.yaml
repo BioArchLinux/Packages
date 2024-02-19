@@ -3,7 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: jpeg_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=jpeg
+- source: rpkgs
+  pkgname: jpeg
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: libjpeg-turbo
+  repo: extra
+  provided: libjpeg.so
+  strip_release: true

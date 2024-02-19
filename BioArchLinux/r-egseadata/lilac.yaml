@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: EGSEAdata_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/EGSEAdata
+- source: rpkgs
+  pkgname: EGSEAdata
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

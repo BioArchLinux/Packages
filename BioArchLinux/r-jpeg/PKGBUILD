@@ -1,28 +1,28 @@
-# system requirements: libjpeg
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=jpeg
 _pkgver=0.1-10
 pkgname=r-${_pkgname,,}
-pkgver=0.1.10
+pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc='Read and write JPEG images'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Read and write JPEG images"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-only OR GPL-3.0-only')
 depends=(
+  libjpeg-turbo
   r
-  libjpeg
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c8d9f609c3088f91ec4853d6cc0e66511038a465811dea79ca6a0c09519178ca')
+md5sums=('a8b2893917c1766343f0876459784435')
+b2sums=('8414ead6cfb51821fb129cf0d150bce257cde9dda3d3cc696ed2bbf17f0cf94a8b566619f171e3596b527d8f62378a323df026745c2ddf4c9b95b4391bdeb0e1')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

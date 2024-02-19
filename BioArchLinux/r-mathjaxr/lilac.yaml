@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: mathjaxr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mathjaxr
+- source: rpkgs
+  pkgname: mathjaxr
+  repo: cran
+  md5: true
 - alias: r
