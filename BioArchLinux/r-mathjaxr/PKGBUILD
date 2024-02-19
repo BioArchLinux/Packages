@@ -6,7 +6,7 @@ _pkgname=mathjaxr
 _pkgver=1.6-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Using 'Mathjax' in Rd Files"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
