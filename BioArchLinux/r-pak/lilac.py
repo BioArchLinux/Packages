@@ -6,8 +6,7 @@ import sys
 sys.path.append(os.path.normpath(f'{__file__}/../../../lilac-extensions'))
 from lilac_r_utils import r_pre_build
 
-import shutil, tarfile
-from tempfile import NamedTemporaryFile
+import tarfile
 
 def pre_build():
     # Get the names of dependencies in embedded library
