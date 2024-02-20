@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: JASPAR2018_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/JASPAR2018
+- source: rpkgs
+  pkgname: JASPAR2018
+  repo: bioc-data-annotation
+  md5: true
 - alias: r
