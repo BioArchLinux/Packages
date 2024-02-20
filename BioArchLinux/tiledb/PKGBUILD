@@ -3,7 +3,7 @@
 # Contributor: Morteza NourelahiAlamdari <m@0t1.me>
 
 pkgname=tiledb
-pkgver=2.20.0
+pkgver=2.20.1
 pkgrel=1
 pkgdesc="The Universal Storage Engine"
 arch=(x86_64)
@@ -26,7 +26,7 @@ makedepends=(
 )
 source=("$pkgname-$pkgver.tar.gz::https://github.com/TileDB-Inc/TileDB/archive/$pkgver.tar.gz"
         "system-libs.patch")
-sha256sums=('d6d2285a75d482f2279e6cd7c3e270ed16312220605cb7f28a7400af407d1b5c'
+sha256sums=('d9d52de7eef25c9e358f0dd6e696dc11a08d5b4d6c4ede88f11afffd32ec31c2'
             'f1507699a21b988876310aa9232f959a9e0311806344752aca0d41fd518fedc3')
 
 prepare() {
