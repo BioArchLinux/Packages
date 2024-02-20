@@ -7,6 +7,8 @@ repo_depends:
 - r-igraph
 - r-rcolorbrewer
 update_on:
-- source: manual
-  manual: 1.22.0#8d075ac90f30a9d8b2d98ed483ae8012
+- source: rpkgs
+  pkgname: ANF
+  repo: bioc
+  md5: true
 - alias: r
