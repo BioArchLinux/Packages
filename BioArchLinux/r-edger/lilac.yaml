@@ -7,7 +7,16 @@ repo_depends:
 - r-locfit
 - r-rcpp
 update_on:
-- regex: edgeR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/edgeR
+- source: rpkgs
+  pkgname: edgeR
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
