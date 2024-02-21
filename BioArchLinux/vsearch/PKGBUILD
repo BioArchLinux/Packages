@@ -8,6 +8,7 @@ arch=('x86_64' 'aarch64' 'ppc64le')
 url="https://github.com/torognes/vsearch"
 license=('BSD-2-Clause OR GPL-3.0')
 depends=('glibc')
+makedepends=('ghostscript')
 checkdepends=()
 source=("https://github.com/torognes/vsearch/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('b7e25638924e56591d7c6ac3a959795000439937f5b566be7f06457bb31f91a9')
