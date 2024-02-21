@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: althonos
+    email: martin.larralde@embl.de
+update_on:
+  - source: github
+    github: torognes/vsearch
+    use_latest_release: true
+    prefix: 'v'
