@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-plottools
+- r-rcpphungarian
+- r-shiny
+- r-sp
+- r-viridislite
+update_on:
+- source: rpkgs
+  repo: cran
+  md5: true
+  pkgname: Ternary
+- alias: r  
