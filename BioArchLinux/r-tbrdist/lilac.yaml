@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-ape
+- r-bh
+- r-rcpp
+- r-rdpack
+- r-treedist
+- r-treetools
+update_on:
+- source: rpkgs
+  repo: cran
+  md5: true
+  pkgname: TBRDist
+- alias: r  
