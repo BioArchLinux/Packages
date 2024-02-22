@@ -11,6 +11,7 @@ repo_depends:
 - r-magrittr
 - r-plyr
 - r-rcpp
+- r-rsamtools
 - r-s4vectors
 - r-seqinr
 - r-shortread
