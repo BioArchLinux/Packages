@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-ape
+- r-rcpp
+- r-rdpack
+- r-ternary
+- r-treetools
+- r-viridislite
+update_on:
+- source: rpkgs
+  repo: cran
+  md5: true
+  pkgname: Quartet
+- alias: r  
