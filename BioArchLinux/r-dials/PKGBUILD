@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=dials
-_pkgver=1.2.0
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Tools for Creating Tuning Parameter Values"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -38,8 +38,8 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('07b785283bd9d6d8c491acbea8db484f')
-b2sums=('59e4489fb93e3b286d25605763b747a4d8f075f29d4c5c38b977fea8b2b0294402cbf99e37105ec25a9b4dbd2ccdfd13357bd47ba9f14788ab048201092d2423')
+md5sums=('71af0aae8351ff80de1e3d8c55f5c135')
+b2sums=('2763d0e81b810fc632f7396fd6b41324553e11180cf8293743201652f8915b0fdedca3c657bde6bff7cbeb0b93f5299990de431b32eeddecbc66b92491bc9d41')
 
 build() {
   mkdir build
