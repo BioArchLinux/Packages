@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "A C++17 compiler is required, and on macOS compilation for version 10.14 is required. Optionally cmake (only when TileDB source build selected), curl (only when TileDB source build selected)), and git (only when TileDB source build selected); on x86_64 and M1 platforms pre-built TileDB Embedded libraries are available at GitHub and are used if no TileDB installation is detected, and no other option to build or download was specified by the user.",
+        expect_systemrequirements = "A C++17 compiler is required, and for macOS compilation version 11.0 or later is required. Optionally cmake (only when TileDB source build selected), curl (only when TileDB source build selected)), and git (only when TileDB source build selected); on x86_64 and M1 platforms pre-built TileDB Embedded libraries are available at GitHub and are used if no TileDB installation is detected, and no other option to build or download was specified by the user.",
     )
 
 def post_build():
