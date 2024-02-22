@@ -24,7 +24,6 @@ repo_depends:
 - r-yardstick
 repo_makedepends:
 - r-apcluster
-- r-blockcluster
 - r-dbscan
 - r-e1071
 - r-kernlab
@@ -39,3 +38,5 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: manual
+  manual: 1
