@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+update_on:
+- source: rpkgs
+  repo: cran
+  md5: true
+  pkgname: protoclust
+- alias: r
