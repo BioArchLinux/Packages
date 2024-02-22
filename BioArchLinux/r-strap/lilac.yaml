@@ -8,7 +8,7 @@ repo_depends:
 - r-pbapply
 update_on:
 - source: rpkgs
+  pkgname: strap
   repo: cran
   md5: true
-  pkgname: strap
-- alias: r  
+- alias: r

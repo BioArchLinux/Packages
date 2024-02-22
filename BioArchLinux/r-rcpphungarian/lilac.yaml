@@ -6,7 +6,7 @@ repo_depends:
 - r-rcpp
 update_on:
 - source: rpkgs
+  pkgname: RcppHungarian
   repo: cran
   md5: true
-  pkgname: RcppHungarian
-- alias: r  
+- alias: r

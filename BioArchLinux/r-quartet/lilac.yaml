@@ -4,14 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
-- r-rcpp
 - r-rdpack
 - r-ternary
 - r-treetools
 - r-viridislite
+repo_makedepends:
+- r-rcpp
 update_on:
 - source: rpkgs
+  pkgname: Quartet
   repo: cran
   md5: true
-  pkgname: Quartet
-- alias: r  
+- alias: r

@@ -10,7 +10,7 @@ repo_depends:
 - r-viridislite
 update_on:
 - source: rpkgs
+  pkgname: Ternary
   repo: cran
   md5: true
-  pkgname: Ternary
-- alias: r  
+- alias: r

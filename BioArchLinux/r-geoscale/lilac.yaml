@@ -4,7 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 update_on:
 - source: rpkgs
-  repo: cran
   pkgname: geoscale
+  repo: cran
   md5: true
 - alias: r

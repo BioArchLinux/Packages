@@ -4,14 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
-- r-bh
-- r-rcpp
 - r-rdpack
 - r-treedist
 - r-treetools
+repo_makedepends:
+- r-bh
+- r-rcpp
 update_on:
 - source: rpkgs
+  pkgname: TBRDist
   repo: cran
   md5: true
-  pkgname: TBRDist
-- alias: r  
+- alias: r

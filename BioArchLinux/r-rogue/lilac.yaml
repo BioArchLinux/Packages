@@ -13,7 +13,7 @@ repo_depends:
 - r-treetools
 update_on:
 - source: rpkgs
+  pkgname: Rogue
   repo: cran
   md5: true
-  pkgname: Rogue
 - alias: r

@@ -8,14 +8,15 @@ repo_depends:
 - r-colorspace
 - r-memoise
 - r-phangorn
-- r-rcpp
 - r-rdpack
 - r-shiny
 - r-shinyjs
 - r-treetools
+repo_makedepends:
+- r-rcpp
 update_on:
 - source: rpkgs
+  pkgname: TreeDist
   repo: cran
   md5: true
-  pkgname: TreeDist
-- alias: r  
+- alias: r
