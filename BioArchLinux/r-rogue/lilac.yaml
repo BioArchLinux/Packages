@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-ape
+- r-cli
+- r-fastmatch
+- r-matrixstats
+- r-rdpack
+- r-rfast
+- r-treedist
+- r-treetools
+update_on:
+- source: rpkgs
+  repo: cran
+  md5: true
+  pkgname: Rogue
+- alias: r
