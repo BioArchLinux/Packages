@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-ape
+- r-geoscale
+- r-pbapply
+update_on:
+- source: rpkgs
+  repo: cran
+  md5: true
+  pkgname: strap
+- alias: r  
