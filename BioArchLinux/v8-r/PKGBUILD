@@ -29,11 +29,13 @@ source=("git+https://chromium.googlesource.com/chromium/tools/depot_tools.git"
         "v8.pc"
         "v8_libbase.pc"
         "v8_libplatform.pc"
+        "fuzzer_include.patch"
         "include_ifdef.patch")
 b2sums=('SKIP'
         'f6c629b5d68914bad9cb81b7e50171211401dc52b29e2a71fd87ea2162032b3fa993cad101cd2a0907d421068c19875f5aff7cbf24b9a7cb14d4f6063cfa4200'
         '889b6660f804cada7871dc208f47daa76e86618b659103f1c3098945324f623d1b37bd5f8ced85e20c73e3ab854c09305c893927703e5443876e88be99ffab86'
         '47facc47ac965573215bcfe55e6ba5e8ab9688c4da136c3f191970ca04679d605f3512d95427d31b2bf8b441315accc59477e6e4275e53b70c3805aab22e1c91'
+        'c601dcb8685fa4885fc38bb84b33e4723416b449f96e6bb3c5569c1b000d22fa606028c1662449395cb2a72a9e59b370e15f71f018066c33adefcbb04abce9d3'
         '79e905bea036b553e862ac043df3cf7bff20aa6ccabccd3a3b35dda09813373d924426b3e2ba355b3e4ea4553fd1653867b6860af921ebee228b94dbb76d4cc7')
 
 prepare() {
@@ -47,6 +49,7 @@ prepare() {
   ./build/linux/unbundle/replace_gn_files.py --system-libraries icu
 
   # fix build
+  git apply "$srcdir/fuzzer_include.patch"
   git apply "$srcdir/include_ifdef.patch"
 
   gn gen x64.release \
