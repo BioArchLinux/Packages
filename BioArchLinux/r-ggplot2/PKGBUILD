@@ -7,10 +7,10 @@
 # Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 _pkgname=ggplot2
-_pkgver=3.4.4
+_pkgver=3.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Create Elegant Data Visualisations Using the Grammar of Graphics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -61,8 +61,8 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('13e7ad92c109bb07993373317e428415')
-b2sums=('21ab8aab716756cb0ae6daa614afd345a3b900e0686ba2be2323751d247d2b151967c60633876a132101e64c57b9b8f9350cf89fa6ff77e75b9d69e671fbdea6')
+md5sums=('81c1b4d3661e2b7d2420f1b01235ed60')
+b2sums=('44e1e46bd3327e953f77431a0a625b06ba7f0ac772f96104935a0978df5115661309e07a12d2439940d8ada429cd06a9d8f5ed6a9119fdd8fd7f83d04d7836de')
 
 build() {
   mkdir build
