@@ -1,6 +1,6 @@
 pkgname=garli
 pkgver=2.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Phylogenetic analysis of molecular sequence data using the maximum-likelihood criterion"
 arch=('x86_64')
 url="https://github.com/zwickl/garli"
