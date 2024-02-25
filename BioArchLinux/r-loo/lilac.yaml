@@ -5,8 +5,10 @@ maintainers:
 repo_depends:
 - r-checkmate
 - r-matrixstats
+- r-posterior
 update_on:
-- regex: loo_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=loo
+- source: rpkgs
+  pkgname: loo
+  repo: cran
+  md5: true
 - alias: r
