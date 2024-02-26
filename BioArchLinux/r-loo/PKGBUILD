@@ -6,7 +6,7 @@ _pkgname=loo
 _pkgver=2.7.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Efficient Leave-One-Out Cross-Validation and WAIC for Bayesian Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
