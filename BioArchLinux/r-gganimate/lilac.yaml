@@ -3,18 +3,21 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-cli
 - r-ggplot2
 - r-glue
+- r-lifecycle
 - r-progress
 - r-rlang
 - r-scales
 - r-stringi
+- r-transformr
 - r-tweenr
+- r-vctrs
 repo_makedepends:
 - r-gifski
 - r-magick
 - r-testthat
-- r-transformr
 update_on:
 - source: rpkgs
   pkgname: gganimate
