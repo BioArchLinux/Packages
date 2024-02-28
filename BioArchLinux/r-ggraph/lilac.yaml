@@ -4,24 +4,25 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-cli
-- r-digest
 - r-dplyr
 - r-ggforce
 - r-ggplot2
 - r-ggrepel
 - r-graphlayouts
-- r-gtable
 - r-igraph
 - r-lifecycle
-- r-rcpp
+- r-memoise
 - r-rlang
 - r-scales
 - r-tidygraph
 - r-vctrs
 - r-viridis
 - r-withr
+repo_makedepends:
+- r-cpp11
 update_on:
-- regex: ggraph_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggraph
+- source: rpkgs
+  pkgname: ggraph
+  repo: cran
+  md5: true
 - alias: r
