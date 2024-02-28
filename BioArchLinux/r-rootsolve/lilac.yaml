@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: rootSolve_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rootSolve
+- source: rpkgs
+  pkgname: rootSolve
+  repo: cran
+  md5: true
 - alias: r

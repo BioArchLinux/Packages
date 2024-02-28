@@ -3,24 +3,25 @@
 _pkgname=extrafontdb
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0
+pkgver=${_pkgver//-/.}
 pkgrel=8
-pkgdesc='Package for holding the database for the extrafont package'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Package for holding the database for the extrafont package"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-only')
 depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('faa1bafee5d4fbc24d03ed237f29f1179964ebac6e3a46ac25b0eceda020b684')
+md5sums=('69f3ce30cdd568e31369bdea7583943c')
+b2sums=('fb1d85422f36f4e2e5d1bee07951a1e77e91031664f9ac85e40f9a8318a9bd223baa5fd182da49f10d63863efb2c7f594e545b066ae55eb2645ad55c4da24734')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
