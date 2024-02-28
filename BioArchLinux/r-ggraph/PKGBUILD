@@ -4,7 +4,7 @@ _pkgname=ggraph
 _pkgver=2.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="An Implementation of Grammar of Graphics for Graphs and Networks"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
