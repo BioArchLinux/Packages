@@ -4,7 +4,7 @@ _pkgname=distillery
 _pkgver=1.2-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Method Functions for Confidence Intervals and to Distill Information from an Object"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
