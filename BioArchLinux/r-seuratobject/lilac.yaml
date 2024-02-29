@@ -15,6 +15,8 @@ repo_depends:
 repo_makedepends:
 - r-rcppeigen
 update_on:
-- source: manual
-  manual: 5.0.0#2fb91d97b91d012a7a234954a8b9b995
+- source: rpkgs
+  pkgname: SeuratObject
+  repo: cran
+  md5: true
 - alias: r
