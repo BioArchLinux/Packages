@@ -3,24 +3,25 @@
 _pkgname=futile.options
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
-pkgver=1.0.1
+pkgver=${_pkgver//-/.}
 pkgrel=10
-pkgdesc='Futile Options Management'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('LGPL')
+pkgdesc="Futile Options Management"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LGPL-3.0-only')
 depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('7a9cc974e09598077b242a1069f7fbf4fa7f85ffe25067f6c4c32314ef532570')
+md5sums=('040daac5089839c104ffd0e0fbedb98d')
+b2sums=('aeedc67181efa3b6b8abb4708ce15fe81dadd96784ba2c99cea2577882a7e2a4cec070e174897d165f3fb79b60b8659c3887164c48adf1d0264fa15297d243c6')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
