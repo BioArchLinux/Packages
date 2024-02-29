@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=extraChIPs
-_pkgver=1.6.0
+_pkgver=1.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Additional functions for working with ChIP-Seq data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -66,8 +66,8 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('462672c12f16f912b7e3d4b30a07162f')
-b2sums=('517afca5f7e813339d4be7df665c73e5f1c0458b8ee3c521b168b9f1d3dc235f72258ca061c912ec6ded09e0936e9766f2afac010bb6558577f8564bb049825b')
+md5sums=('1dd6dd8771e0dfa2ba6d612e53456eda')
+b2sums=('3acaec2c02ecb50d10d394dc7e129ea8830a5a66b5ab5d8244830e13c4b31ce43ecce13c97210a45c692d83decb10027a08024dc9cfd5c68cac47492313f2310')
 
 build() {
   mkdir build
