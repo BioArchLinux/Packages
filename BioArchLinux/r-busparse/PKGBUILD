@@ -2,7 +2,7 @@
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BUSpaRse
-_pkgver=1.16.0
+_pkgver=1.16.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -52,8 +52,8 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg38.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('7d2decd570fd518ad9a06c10a5ecffb3')
-b2sums=('e7b84b79c671e3f50704d8f16530c6c2459f1f776f46dcd5bfc885ee254b715db19b302dfa16b3dad1fd218c3d95cb7092c3f154b7a10fd73eb3496f61ccf4cd')
+md5sums=('9c38c2c97db1985eedfc656beaf5e07e')
+b2sums=('1c3b6cf32e86b622f31cedca4d4ca1b4e41d42fae01817e93b66627cffb3cf06baa5e9a73c2e35857664b4b90fbfdb053028ab084e69a6609b2ad68fc3b9b336')
 
 build() {
   mkdir build
