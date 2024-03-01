@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: splus2R_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=splus2R
+- source: rpkgs
+  pkgname: splus2R
+  repo: cran
+  md5: true
 - alias: r
