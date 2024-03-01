@@ -5,7 +5,7 @@ _pkgname=lmodel2
 _pkgver=1.7-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Model II Regression"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
