@@ -6,6 +6,7 @@ repo_depends:
 - r-biobase
 - r-cbioportaldata
 - r-circlize
+- r-dplyr
 - r-formula
 - r-genetclassifier
 - r-gseabase
