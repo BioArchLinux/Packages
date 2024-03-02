@@ -8,16 +8,24 @@ repo_depends:
 - r-ggplot2
 - r-ggrepel
 - r-gplots
+- r-htmltools
 - r-limma
 - r-lme4
 - r-marray
 - r-msstatsconvert
+- r-plotly
 - r-preprocesscore
 - r-rcpp
-- r-rcpparmadillo
 - r-statmod
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-- regex: MSstats_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MSstats
+- source: rpkgs
+  pkgname: MSstats
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
