@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=showtext
-_pkgver=0.9-6
+_pkgver=0.9-7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Using Fonts More Easily in R Graphs"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -23,8 +23,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('efe23338db65e778dc579533bf51d588')
-b2sums=('72fe9773d5bee6a70a5a71c478d22e84c5cd92aebfe0f3969a10125cdfbd8f19f1a01ec5cf07dba788ccd10e9ca991b0958faa6feff65375061cc59c25392181')
+md5sums=('b0ace7cd37d2fda8abeba7055be73c39')
+b2sums=('8b2daf5997041a3744460582a0709c6ab72fc1ea9ad624e7784e430088630a9ffcfd3f25c386fa02a43850294fad98b1e9410e42c7f8482f48afa449592edfac')
 
 build() {
   mkdir build
