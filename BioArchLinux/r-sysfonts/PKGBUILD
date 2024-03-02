@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=sysfonts
-_pkgver=0.8.8
+_pkgver=0.8.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Loading Fonts into R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -19,8 +19,8 @@ optdepends=(
   r-jsonlite
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('331e85ccd9e605b66a9509630bb93465')
-b2sums=('40eac3d39864759fee49a42e3379133ee9d84ff7af525d0b0bc867a8193b4428078751cdafa429e8af218f99cd82448f7f75889671f76701759a0af57deb7236')
+md5sums=('c5a568cf3ee93e7050592369d5f32165')
+b2sums=('a4f44224e18b69a93759682c4dcef3a18802f3190ea93737ce64f495a7f43f82d344b129e06a8fd805dfab01f5188fcc325d519bfa434649058ac6f06c880e79')
 
 build() {
   mkdir build
