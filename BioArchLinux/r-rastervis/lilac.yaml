@@ -12,7 +12,8 @@ repo_depends:
 - r-viridislite
 - r-zoo
 update_on:
-- regex: rasterVis_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rasterVis
+- source: rpkgs
+  pkgname: rasterVis
+  repo: cran
+  md5: true
 - alias: r
