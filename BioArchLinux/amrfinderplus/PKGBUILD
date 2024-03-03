@@ -3,7 +3,7 @@
 
 pkgname=amrfinderplus
 pkgver=3.12.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Identify Antimicrobial resistance genes in assembled bacterial nucleotide and protein sequence. https://doi.org/10.1038/s41598-021-91456-0"
 arch=('x86_64' 'i686')
 url="https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/AMRFinder/"
