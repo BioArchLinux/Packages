@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=hicVennDiagram
-_pkgver=1.0.0
+_pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Venn Diagram for genomic interaction data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -33,8 +33,8 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('11577b64cc67b69e4b9d712a76cd3310')
-b2sums=('e1dbcddeb18af4d4893febfe61a2131717891503fc073e668be328661a00768dfe6e0f6bb0178a53c86640c22fa5443b482843a2d5bfe8e71de3d86eb531bcf1')
+md5sums=('6c8f208d9ee46b9dd61e112e9c9b725e')
+b2sums=('1afbe0ad3938b70817bc55e50d5ab3d25fab2e8bec7ef4dce6931b9f7dbb625db2f3aebb81430cf5dc7670de99c239c87deb6e03763ee89a9e0b26f0a3c2ffe6')
 
 build() {
   mkdir build
