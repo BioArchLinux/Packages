@@ -7,7 +7,7 @@ _pkgname=lme4
 _pkgver=1.1-35.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Linear Mixed-Effects Models using 'Eigen' and S4"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
