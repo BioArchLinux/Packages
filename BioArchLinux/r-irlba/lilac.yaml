@@ -16,3 +16,5 @@ update_on:
   pkgname: lapack
   filename: usr/lib/liblapack\.so\.([^.]+)
   repo: extra
+- source: manual
+  manual: 1
