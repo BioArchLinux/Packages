@@ -16,6 +16,7 @@ repo_depends:
 - perl-module-runtime-conflicts 
 - perl-devel-overloadinfo
 - perl-bioperl
+- perl-term-progressbar
 update_on:
 - source: github
   github: NBISweden/AGAT
