@@ -1,6 +1,6 @@
 pkgname=wf-info
 _pkgname=wf-info
-pkgver=0.7.0.20230114.203034
+pkgver=0.7.0.20240109.145558
 pkgrel=1
 pkgdesc="A simple wayfire plugin and program to get information from wayfire"
 arch=(x86_64)
