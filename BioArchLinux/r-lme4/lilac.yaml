@@ -5,10 +5,12 @@ maintainers:
 repo_depends:
 - r-minqa
 - r-nloptr
+repo_makedepends:
 - r-rcpp
 - r-rcppeigen
 update_on:
-- regex: lme4_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lme4
+- source: rpkgs
+  pkgname: lme4
+  repo: cran
+  md5: true
 - alias: r
