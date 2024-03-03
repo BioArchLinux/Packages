@@ -20,5 +20,7 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: manual
+  manual: 1
 update_on_build:
 - pkgbase: r-tmb
