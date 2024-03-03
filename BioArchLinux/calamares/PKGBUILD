@@ -1,8 +1,8 @@
 #https://github.com/calamares/calamares/releases
 
 pkgname=calamares
-pkgver=3.2.62
-pkgrel=6
+pkgver=3.3.4
+pkgrel=1
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL2.1' 'LGPL3' 'BSD' 'MIT' 'CCPL')
@@ -17,7 +17,7 @@ makedepends=('python' 'python-jsonschema' 'python-pyqt5' 'python-yaml'  'extra-c
 source=("$pkgname-$pkgver::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz"
 	"49-nopasswd-calamares.rules")
 
-sha256sums=('a0fbcec2a438693753fc174220356119ad7adb8a2b19c317518aa1cb025d6dd0'
+sha256sums=('c2a2f175b1dbc3179beb18a4c7c0a698066f8563c21d5280c974d0083c0fd4db'
             '56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176')
 
 prepare() {
