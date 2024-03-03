@@ -24,3 +24,5 @@ update_on:
   pkgname: onetbb
   filename: usr/lib/libtbb\.so\.([^.]+)
   repo: extra
+- source: manual
+  manual: 1
