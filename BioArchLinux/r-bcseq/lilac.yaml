@@ -6,7 +6,8 @@ repo_depends:
 - r-biostrings
 - r-rcpp
 update_on:
-- regex: bcSeq_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/bcSeq
+- source: rpkgs
+  pkgname: bcSeq
+  repo: bioc
+  md5: true
 - alias: r
