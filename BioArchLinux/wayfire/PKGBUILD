@@ -6,8 +6,15 @@ pkgdesc="3D wayland compositor"
 arch=(x86_64)
 url=https://wayfire.org
 license=(custom:MIT)
-depends=(cairo pango wf-config libjpeg libinput wlroots lsof nlohmann-json seatd glm)
-makedepends=(meson ninja wayland-protocols glm cmake doctest pango git)
+depends=('cairo' 'pango' 'libdrm' 'libevdev'
+         'libglvnd' 'libinput' 'libjpeg'
+         'libpng' 'libxkbcommon' 'pixman' 'polkit'
+         'seatd' 'xcb-util-errors' 'xcb-util-renderutil'
+         'xcb-util-wm' 'xorg-xwayland' 'wayland'
+         'libdisplay-info' 'libliftoff' 'wf-config')
+makedepends=('git' 'glslang' 'meson' 'ninja' 'cmake' 'vulkan-headers' 'doctest' 'pkgconf' 'wayland-protocols'
+             'nlohmann-json' 'libxml2' 'glm'
+           )
 conflicts=("${pkgname}-git")
 source=("git+https://github.com/WayfireWM/${pkgname}.git")
 sha256sums=('SKIP')
@@ -24,15 +31,16 @@ prepare(){
 
 build() {
 	cd "$srcdir/wayfire"
-	arch-meson \
-        --buildtype=debug \
-        -Duse_system_wlroots=enabled \
-        -Duse_system_wfconfig=enabled \
-        -Dtests=disabled \
-        -Ddebug_ipc=false \
-        . \
+    	arch-meson \
+        	--buildtype=release \
+        	-Dxwayland=auto \
+        	-Duse_system_wlroots=disabled \
+        	-Duse_system_wfconfig=enabled \
+        	-Db_lto=true \
+        	-Db_pie=true \
         build
 	ninja -C build
+	sed "/WF_SRC_DIR/d" -i build/config.h
 }
 
 package() {
