@@ -4,7 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-abind
-- r-assertive
+- r-assertive.base
+- r-assertive.files
+- r-assertive.numbers
+- r-assertive.sets
 - r-biocfilecache
 - r-biocgenerics
 - r-bit64
@@ -30,7 +33,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 update_on:
-- regex: autonomics_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/autonomics
+- source: rpkgs
+  pkgname: autonomics
+  repo: bioc
+  md5: true
 - alias: r
