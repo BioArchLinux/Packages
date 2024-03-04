@@ -4,8 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-rcpp
-- r-rcppprogress
 - r-stringr
+repo_makedepends:
+- r-rcppprogress
 update_on:
 - source: rpkgs
   pkgname: genepop
