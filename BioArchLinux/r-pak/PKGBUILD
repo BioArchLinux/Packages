@@ -6,7 +6,7 @@ _pkgname=pak
 _pkgver=0.7.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Another Approach to Package Installation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -44,9 +44,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libs.patch")
-md5sums=('9eddae8f9345c4e5ad3a9692be09e6f8'
+md5sums=('bc95a3a8966b8042d0201729e7ab186f'
          '29b1470e2d25f82ebeafc02fe3b2594a')
-b2sums=('2b5daa9c7c8e97907030933ede18e37a0f879dccfeebab7825b8475639663f757571a37d918e8ba4e724c0e34b8399b51e7ba8ca708acae87eef2291f279ed38'
+b2sums=('6792e3a9be1be2480a737dd0744ff2defb9444e3ee9cdadd1b8319a52dba9db4e37a8fa2f488a58d0e060bcd1485292d8448ad71bd33924b659bbdaef7cf97d9'
         'b422c6a23d6850831433fdcf3e81684189bdaea1735fcc85edeff3202fe084f4167876949ff9ddfd5654cb2ce202ed005800a217dfe9bb12fb8240456880b4f1')
 
 prepare() {

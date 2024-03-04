@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-assertive.base
 update_on:
-- regex: assertive.reflection_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=assertive.reflection
+- source: manual
+  manual: 0.0-5#e5b52b04481fe2b713a668262fb1c642
 - alias: r

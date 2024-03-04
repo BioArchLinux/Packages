@@ -3,7 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-assertive
+- r-assertive.base
+- r-assertive.files
+- r-assertive.numbers
+- r-assertive.reflection
+- r-assertive.sets
 - r-biocgenerics
 - r-biostrings
 - r-bsgenome
@@ -23,7 +27,8 @@ repo_depends:
 - r-tidyr
 - r-tidyselect
 update_on:
-- regex: multicrispr_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/multicrispr
+- source: rpkgs
+  pkgname: multicrispr
+  repo: bioc
+  md5: true
 - alias: r

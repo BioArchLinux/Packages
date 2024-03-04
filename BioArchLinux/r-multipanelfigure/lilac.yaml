@@ -6,8 +6,6 @@ repo_depends:
 - r-assertive.base
 - r-assertive.files
 - r-assertive.numbers
-- r-assertive.properties
-- r-assertive.types
 - r-ggplot2
 - r-gridgraphics
 - r-gtable
@@ -15,7 +13,8 @@ repo_depends:
 - r-magrittr
 - r-stringi
 update_on:
-- regex: multipanelfigure_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/src/contrib/Archive/multipanelfigure
+- source: rpkgs
+  pkgname: multipanelfigure
+  repo: cran
+  md5: true
 - alias: r
