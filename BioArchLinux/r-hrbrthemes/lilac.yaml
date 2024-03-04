@@ -6,13 +6,11 @@ repo_depends:
 - r-extrafont
 - r-gdtools
 - r-ggplot2
-- r-htmltools
-- r-knitr
 - r-magrittr
-- r-rmarkdown
 - r-scales
 repo_makedepends:
 - r-hunspell
+- r-stringi
 - r-testthat
 - r-vdiffr
 update_on:

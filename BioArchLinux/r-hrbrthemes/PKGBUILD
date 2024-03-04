@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=hrbrthemes
-_pkgver=0.8.0
+_pkgver=0.8.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Additional Themes, Theme Components and Utilities for 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -13,14 +13,12 @@ depends=(
   r-extrafont
   r-gdtools
   r-ggplot2
-  r-htmltools
-  r-knitr
   r-magrittr
-  r-rmarkdown
   r-scales
 )
 checkdepends=(
   r-hunspell
+  r-stringi
   r-testthat
   r-vdiffr
 )
@@ -36,8 +34,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('164d952f9627188cff499edd1cce9c5c')
-b2sums=('d07c2258a5672b4a9d56e18ae177de919c8dae8a35ecc16d4f9ff629f1c89d185bde8be77e0e6ddf82754bca88b2f8df35d114883b52808dc3f06298b2402668')
+md5sums=('2c239ee48ed2bf410b7e99f8c746c7ef')
+b2sums=('375f8330c487c7cc7099519f725ef6f8c5f7c1bda3fc089c05147f1d0b68524ca1219a327a0a217e638c7c8a0e3a6d7ba10604305b85bce9a55c47a930a17eeb')
 
 prepare() {
   # skip test since importing fonts with r-extrafont doesn't work
