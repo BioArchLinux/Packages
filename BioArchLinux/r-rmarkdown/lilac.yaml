@@ -10,7 +10,6 @@ repo_depends:
 - r-jquerylib
 - r-jsonlite
 - r-knitr
-- r-stringr
 - r-tinytex
 - r-xfun
 - r-yaml
