@@ -3,12 +3,14 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-future.apply
 - r-numderiv
 - r-progressr
 - r-squarem
 update_on:
-- regex: lava_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lava
+- source: rpkgs
+  pkgname: lava
+  repo: cran
+  md5: true
 - alias: r
