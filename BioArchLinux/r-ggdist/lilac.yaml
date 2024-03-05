@@ -5,26 +5,23 @@ maintainers:
 repo_depends:
 - r-cli
 - r-distributional
-- r-dplyr
 - r-ggplot2
 - r-glue
+- r-gtable
 - r-numderiv
 - r-quadprog
 - r-rcpp
 - r-rlang
 - r-scales
 - r-tibble
-- r-tidyselect
 - r-vctrs
 - r-withr
 repo_makedepends:
 - r-beeswarm
 - r-fda
 - r-fontquiver
-- r-forcats
 - r-mvtnorm
 - r-posterior
-- r-purrr
 - r-showtext
 - r-svglite
 - r-sysfonts
