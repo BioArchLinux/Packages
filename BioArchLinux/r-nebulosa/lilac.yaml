@@ -4,13 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ggplot2
+- r-ggrastr
 - r-ks
 - r-patchwork
-- r-seurat
+- r-seuratobject
 - r-singlecellexperiment
 - r-summarizedexperiment
 update_on:
-- regex: Nebulosa_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Nebulosa
+- source: rpkgs
+  pkgname: Nebulosa
+  repo: bioc
+  md5: true
 - alias: r
