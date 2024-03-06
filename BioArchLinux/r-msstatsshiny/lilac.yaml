@@ -12,10 +12,12 @@ repo_depends:
 - r-hmisc
 - r-htmltools
 - r-marray
+- r-mockery
 - r-msstats
 - r-msstatsconvert
 - r-msstatsptm
 - r-msstatstmt
+- r-plotly
 - r-readxl
 - r-shiny
 - r-shinybs
