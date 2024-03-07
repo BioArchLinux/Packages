@@ -4,7 +4,7 @@ _pkgname=proto
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="Prototype Object-Based Programming"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
