@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: renv_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=renv
+- source: rpkgs
+  pkgname: renv
+  repo: cran
+  md5: true
 - alias: r
