@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: KOdata_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/KOdata
+- source: rpkgs
+  pkgname: KOdata
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
