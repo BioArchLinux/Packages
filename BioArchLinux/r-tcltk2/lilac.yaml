@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: tcltk2_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=tcltk2
+- source: rpkgs
+  pkgname: tcltk2
+  repo: cran
+  md5: true
 - alias: r

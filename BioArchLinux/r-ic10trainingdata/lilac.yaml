@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: iC10TrainingData_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=iC10TrainingData
+- source: rpkgs
+  pkgname: iC10TrainingData
+  repo: cran
+  md5: true
 - alias: r
