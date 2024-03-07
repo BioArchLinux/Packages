@@ -6,7 +6,6 @@ repo_depends:
 - r-biocgenerics
 - r-genomeinfodbdata
 - r-iranges
-- r-rcurl
 - r-s4vectors
 update_on:
 - source: rpkgs
