@@ -4,7 +4,7 @@ _pkgname=stringmagic
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Character String Operations and Interpolation, Magic Edition"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
