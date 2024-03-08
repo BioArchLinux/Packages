@@ -5,7 +5,7 @@ _pkgname=misc3d
 _pkgver=0.9-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Miscellaneous 3D Plots"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
