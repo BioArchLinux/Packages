@@ -4,7 +4,7 @@ _pkgname=formatR
 _pkgver=1.14
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Format R Code Automatically"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
