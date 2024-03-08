@@ -4,7 +4,7 @@ _pkgname=mcbiopi
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Matrix Computation Based Identification of Prime Implicants"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
