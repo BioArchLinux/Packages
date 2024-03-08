@@ -3,12 +3,12 @@
 _pkgname=formatR
 _pkgver=1.14
 pkgname=r-${_pkgname,,}
-pkgver=1.14
+pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc='Format R Code Automatically'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Format R Code Automatically"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
 depends=(
   r
 )
@@ -20,14 +20,15 @@ optdepends=(
   r-testit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4ebaab2c3f8527871655246b62abd060bc75dae1cec7f962ca4752b8080f474c')
+md5sums=('8af25a6fd3fcd575a70800921362e63b')
+b2sums=('3a232a3bb0cb1f1b3c587761d5f0992f2de3047a78181b285b52d9acaf5b5c448c91dc84da53c109a9dbdf302ec8da183997f7ef027927f852f8e68504637962')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: LymphoSeqDB_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/LymphoSeqDB
+- source: rpkgs
+  pkgname: LymphoSeqDB
+  repo: bioc-data-annotation
+  md5: true
 - alias: r

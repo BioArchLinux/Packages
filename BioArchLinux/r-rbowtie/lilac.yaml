@@ -3,7 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: Rbowtie_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Rbowtie
+- source: rpkgs
+  pkgname: Rbowtie
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

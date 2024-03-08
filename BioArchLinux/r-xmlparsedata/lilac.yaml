@@ -1,9 +1,9 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: hubutui
+- github: hubutui
 update_on:
-  - source: github
-    github: r-lib/xmlparsedata
-    use_latest_release: true
-  - alias: r
-# vim:set ts=2 sw=2 et:
+- source: rpkgs
+  pkgname: xmlparsedata
+  repo: cran
+  md5: true
+- alias: r
