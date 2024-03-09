@@ -6,8 +6,12 @@ repo_depends:
 - r-minqa
 - r-mitools
 - r-numderiv
+- r-rcpp
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-- regex: survey_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=survey
+- source: rpkgs
+  pkgname: survey
+  repo: cran
+  md5: true
 - alias: r
