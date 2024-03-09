@@ -16,7 +16,8 @@ repo_depends:
 - r-stringr
 - r-summarizedexperiment
 update_on:
-- regex: MAST_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MAST
+- source: rpkgs
+  pkgname: MAST
+  repo: bioc
+  md5: true
 - alias: r
