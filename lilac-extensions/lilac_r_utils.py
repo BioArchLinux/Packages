@@ -197,6 +197,7 @@ license_map = {
     "BSD_2_clause + file LICENSE": "BSD-2-Clause",
     "BSD_3_clause + file LICENSE": "BSD-3-Clause",
     "BSL-1.0": "BSL-1.0",
+    "CC BY-NC-SA 4.0": "CC-BY-NC-SA-4.0",
     "CC0": "CC0-1.0",
     "CeCILL": "CECILL-2.0",
     "EPL": "EPL",
