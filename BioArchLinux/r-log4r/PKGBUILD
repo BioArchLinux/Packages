@@ -4,7 +4,7 @@ _pkgname=log4r
 _pkgver=0.4.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="A Fast and Lightweight Logging System for R, Based on 'log4j'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
