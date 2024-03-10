@@ -6,8 +6,20 @@ repo_depends:
 - r-rapiserialize
 - r-rcpp
 - r-stringfish
+repo_makedepends:
+- r-bh
 update_on:
-- regex: qs_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=qs
+- source: rpkgs
+  pkgname: qs
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lz4
+  filename: usr/lib/liblz4\.so\.([^.]+)
+  repo: core
+- source: alpm
+  alpm: zstd
+  repo: core
+  provided: libzstd.so
+  strip_release: true
