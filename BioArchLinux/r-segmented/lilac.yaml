@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: segmented_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=segmented
+- source: rpkgs
+  pkgname: segmented
+  repo: cran
+  md5: true
 - alias: r
