@@ -4,7 +4,7 @@ _pkgname=segmented
 _pkgver=2.0-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Regression Models with Break-Points / Change-Points Estimation (with Possibly Random Effects)"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
