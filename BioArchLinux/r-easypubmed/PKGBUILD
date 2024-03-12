@@ -4,7 +4,7 @@ _pkgname=easyPubMed
 _pkgver=2.13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Search and Retrieve Scientific Publication Records from PubMed"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
