@@ -4,7 +4,7 @@ _pkgname=smatr
 _pkgver=3.4-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="(Standardised) Major Axis Estimation and Testing Routines"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
