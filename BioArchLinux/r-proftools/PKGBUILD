@@ -4,7 +4,7 @@ _pkgname=proftools
 _pkgver=0.99-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="Profile Output Processing Tools for R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
