@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: MALDIquant_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=MALDIquant
+- source: rpkgs
+  pkgname: MALDIquant
+  repo: cran
+  md5: true
 - alias: r

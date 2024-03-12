@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: TH.data_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=TH.data
+- source: rpkgs
+  pkgname: TH.data
+  repo: cran
+  md5: true
 - alias: r

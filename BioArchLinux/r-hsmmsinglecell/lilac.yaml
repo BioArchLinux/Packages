@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: HSMMSingleCell_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/HSMMSingleCell
+- source: rpkgs
+  pkgname: HSMMSingleCell
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

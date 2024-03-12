@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: ncdf4_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ncdf4
+- source: rpkgs
+  pkgname: ncdf4
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: netcdf
+  filename: usr/lib/libnetcdf\.so\.([^.]+)
+  repo: extra
