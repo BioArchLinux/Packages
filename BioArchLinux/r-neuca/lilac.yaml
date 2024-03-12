@@ -4,10 +4,13 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-e1071
+- r-kableextra
 - r-keras
 - r-limma
 - r-singlecellexperiment
 update_on:
-- source: manual
-  manual: 1.6.0#2b4589fd7129485bbfbe2e64d25f295e
+- source: rpkgs
+  pkgname: NeuCA
+  repo: bioc
+  md5: true
 - alias: r
