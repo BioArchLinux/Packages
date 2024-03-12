@@ -4,7 +4,7 @@ _pkgname=aggregation
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="p-Value Aggregation Methods"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
