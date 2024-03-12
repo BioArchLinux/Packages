@@ -4,7 +4,7 @@ _pkgname=akmbiclust
 _pkgver=0.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Alternating K-Means Biclustering"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
