@@ -2,8 +2,8 @@
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
 pkgname=minimap2
-pkgver=2.26
-pkgrel=3
+pkgver=2.27
+pkgrel=1
 pkgdesc='A versatile pairwise aligner for genomic and spliced nucleotide sequences. https://doi.org/10.1093/bioinformatics/bty191'
 arch=('x86_64')
 url="https://github.com/lh3/${pkgname}"
@@ -12,7 +12,7 @@ depends=('zlib' 'glibc')
 provides=('minimap2-lite' 'sdust' 'libminimap2.so')
 source=("${pkgname}-${pkgver}.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz"
         "hardening.patch")
-sha256sums=('f4c8c3459c7b87e9de6cbed7de019b48d9337c2e46b87ba81b9f72d889420b3c'
+sha256sums=('ca9ceb07e3b388858ebc2d7d91a6c74e996659402d16aa759ecedd63588b1ef7'
             'ff10a6b715db2e08add52b371842778f855cb4edc9f7fc373c6e1b670ef1415f')
 
 prepare() {
