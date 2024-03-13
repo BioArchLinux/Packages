@@ -12,6 +12,7 @@ repo_depends:
 repo_makedepends:
 - r-cpp11
 - r-graph
+- r-rgl
 - r-testthat
 - r-vdiffr
 update_on:
