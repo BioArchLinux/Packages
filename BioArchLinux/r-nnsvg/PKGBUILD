@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=nnSVG
-_pkgver=1.6.0
+_pkgver=1.6.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Scalable identification of spatially variable genes in spatially-resolved transcriptomics data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -33,8 +33,8 @@ optdepends=(
   r-weberdivechalcdata
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4af169b12d944eff8ee9d9e3063ff5ea')
-b2sums=('35b6e5aa573f437272ed4f02a9ff3f9ef7301c456cee93190f1b38c25859b9a2f78e579c85eecddd7982c4608ed4be7e4fd66b640277c0f1b11fbb5536f3b7f3')
+md5sums=('49d0a36bf0af2e733dc383e6b2dbe333')
+b2sums=('817e60e9f92183f1a4695eff5f9c4469d0bd5b31222e1ea05622fe6ef13df0a48eaaaa52f0a00b8854e35c22518a86517331b5778871892a6c63d9515f62e7fb')
 
 build() {
   mkdir build
