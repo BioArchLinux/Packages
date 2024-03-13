@@ -4,7 +4,7 @@
 _pkgbase=d3
 pkgname=nodejs-$_pkgbase
 pkgdesc='Bring data to life with SVG, Canvas and HTML'
-pkgver=7.8.5
+pkgver=7.9.0
 pkgrel=1
 arch=('any')
 url='https://github.com/d3/d3'
@@ -13,7 +13,7 @@ depends=('nodejs' 'bash')
 makedepends=('npm')
 source=("http://registry.npmjs.org/$_pkgbase/-/$_pkgbase-$pkgver.tgz"
         'LICENSE')
-sha512sums=('260a1a8431b9d677147c9bbac17ff5bd6404a8e7e5817ca5e0c687aa5712aee4decfbca1691291f62f158e371019e4b67a7fe39c58af5ee688327b1e30cb745c'
+sha512sums=('7b5538ea354ffb0ec8badf09b7cae2d58b0f3af169838ea4f8af13a426f43fece30a48e43e757b5b37c3273307cb52e703ec23e692d3d708cef74d602d778484'
             '4f26a005ba15bf0dd1b9087992a21cfcccb1c21de872df42d98dbb81542ed0c14bf7f04b80554169efc5ec689ee7da89402dfd3031482238b1ef9cda6ec1b070')
 noextract=($_pkgbase-$pkgver.tgz)
 
