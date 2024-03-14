@@ -4,7 +4,7 @@ _pkgname=CpGassoc
 _pkgver=2.60
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="Association Between Methylation and a Phenotype of Interest"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
