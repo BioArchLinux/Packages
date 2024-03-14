@@ -4,7 +4,7 @@ _pkgname=clusterRepro
 _pkgver=0.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Reproducibility of Gene Expression Clusters"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
