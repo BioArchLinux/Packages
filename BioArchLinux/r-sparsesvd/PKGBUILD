@@ -4,7 +4,7 @@ _pkgname=sparsesvd
 _pkgver=0.2-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Sparse Truncated Singular Value Decomposition (from 'SVDLIBC')"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
