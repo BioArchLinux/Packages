@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: paintmap_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=paintmap
+- source: rpkgs
+  pkgname: paintmap
+  repo: cran
+  md5: true
 - alias: r

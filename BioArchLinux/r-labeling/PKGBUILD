@@ -3,25 +3,28 @@
 _pkgname=labeling
 _pkgver=0.4.3
 pkgname=r-${_pkgname,,}
-pkgver=0.4.3
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Axis Labeling'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Axis Labeling"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('c62f4fc2cc74377d7055903c5f1913b7295f7587456fe468592738a483e264f2')
+md5sums=('915e6c823c1d8243641ce97253389f14')
+b2sums=('f33ac346a00ea3839bd0d7a7fd1917f10c55a676d756903b7de9d39af2632a988ffe82ea0bd4b3edd3c7bfb3bfd0a28c68a51f56f92d510d59e9a6f0e3581712')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

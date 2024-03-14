@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: CpGassoc_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=CpGassoc
+- source: rpkgs
+  pkgname: CpGassoc
+  repo: cran
+  md5: true
 - alias: r

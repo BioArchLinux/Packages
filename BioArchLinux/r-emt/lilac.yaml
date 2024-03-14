@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: EMT_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=EMT
+- source: rpkgs
+  pkgname: EMT
+  repo: cran
+  md5: true
 - alias: r

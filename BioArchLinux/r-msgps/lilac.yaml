@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: msgps_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=msgps
+- source: rpkgs
+  pkgname: msgps
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
