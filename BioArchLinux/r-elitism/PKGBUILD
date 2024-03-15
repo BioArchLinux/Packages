@@ -4,7 +4,7 @@ _pkgname=elitism
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Equipment for Logarithmic and Linear Time Stepwise Multiple Hypothesis Testing"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
