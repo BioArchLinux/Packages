@@ -4,7 +4,7 @@ _pkgname=qap
 _pkgver=0.1-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Heuristics for the Quadratic Assignment Problem (QAP)"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
