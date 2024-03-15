@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: scrime_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=scrime
+- source: rpkgs
+  pkgname: scrime
+  repo: cran
+  md5: true
 - alias: r

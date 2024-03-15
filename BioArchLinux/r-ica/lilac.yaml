@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: ica_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ica
+- source: rpkgs
+  pkgname: ica
+  repo: cran
+  md5: true
 - alias: r

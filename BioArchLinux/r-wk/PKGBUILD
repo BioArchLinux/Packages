@@ -1,14 +1,13 @@
-# system requirements: C++11
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=wk
 _pkgver=0.9.1
 pkgname=r-${_pkgname,,}
-pkgver=0.9.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Lightweight Well-Known Geometry Parsing'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Lightweight Well-Known Geometry Parsing"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
@@ -21,15 +20,18 @@ optdepends=(
   r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b7a0af51c0e04175dc359d1fb0e852ac55097b4105d876b58d3cf995c0f2bf7b')
+md5sums=('347bbbd47d5c419d0238f034a942ec22')
+b2sums=('d0dca10832b6da9b2bd2eebf096e11424e90feae14e22567823d95c18f2184ede063bf83a74049cd639b403da1fba5c0a9cbbe7217d3990dfd41f215f1ca807f')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

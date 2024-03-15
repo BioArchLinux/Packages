@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: randomizr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=randomizr
+- source: rpkgs
+  pkgname: randomizr
+  repo: cran
+  md5: true
 - alias: r

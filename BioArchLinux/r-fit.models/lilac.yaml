@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: fit.models_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=fit.models
+- source: rpkgs
+  pkgname: fit.models
+  repo: cran
+  md5: true
 - alias: r
