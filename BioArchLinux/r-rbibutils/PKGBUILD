@@ -6,7 +6,7 @@ _pkgname=rbibutils
 _pkgver=2.2.16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Read 'Bibtex' Files and Convert Between Bibliography Formats"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
