@@ -8,6 +8,8 @@ repo_depends:
 - r-rsolnp
 - r-snowfall
 update_on:
-- source: manual
-  manual: 1.33.0#a8c4d636efa888a0984f7e385aa5acf5
+- source: rpkgs
+  pkgname: MEIGOR
+  repo: bioc
+  md5: true
 - alias: r
