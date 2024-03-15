@@ -4,7 +4,7 @@ _pkgname=filematrix
 _pkgver=1.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="File-Backed Matrix Class with Convenient Read and Write Access"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
