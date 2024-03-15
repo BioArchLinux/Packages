@@ -4,7 +4,7 @@ _pkgname=fit.models
 _pkgver=0.64
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Compare Fitted Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
