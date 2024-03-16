@@ -5,15 +5,16 @@ maintainers:
 repo_depends:
 - r-gplots
 - r-hash
+- r-httr
 - r-igraph
 - r-plotrix
 - r-plyr
 - r-png
 - r-rcolorbrewer
-- r-rcurl
 - r-sqldf
 update_on:
-- regex: STRINGdb_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/STRINGdb
+- source: rpkgs
+  pkgname: STRINGdb
+  repo: bioc
+  md5: true
 - alias: r
