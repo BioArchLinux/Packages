@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-randomforest
 update_on:
-- regex: varSelRF_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=varSelRF
+- source: rpkgs
+  pkgname: varSelRF
+  repo: cran
+  md5: true
 - alias: r
