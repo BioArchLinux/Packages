@@ -4,7 +4,7 @@ _pkgname=english
 _pkgver=1.2-6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Translate Integers into English"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
