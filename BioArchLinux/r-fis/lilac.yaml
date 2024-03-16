@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: FIs_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/FIs
+- source: rpkgs
+  pkgname: FIs
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

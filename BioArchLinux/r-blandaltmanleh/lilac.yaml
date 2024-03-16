@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: BlandAltmanLeh_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=BlandAltmanLeh
+- source: rpkgs
+  pkgname: BlandAltmanLeh
+  repo: cran
+  md5: true
 - alias: r
