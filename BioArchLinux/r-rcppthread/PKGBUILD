@@ -4,7 +4,7 @@ _pkgname=RcppThread
 _pkgver=2.1.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="R-Friendly Threading in C++"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
