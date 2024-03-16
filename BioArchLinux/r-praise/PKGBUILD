@@ -3,11 +3,11 @@
 _pkgname=praise
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
-pkgver=1.0.0
+pkgver=${_pkgver//-/.}
 pkgrel=10
-pkgdesc='Praise Users'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Praise Users"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
@@ -16,15 +16,18 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5c035e74fd05dfa59b03afe0d5f4c53fbf34144e175e90c53d09c6baedf5debd')
+md5sums=('9318724cec0454884b5f762bee2da6a1')
+b2sums=('4f1450811b1bd99aae8e72daccba12612798e8ac521e059b74c02b7589c85842feec4ef49969b516d1a4c91a2d68a5a6fed627da5f07a26bffc39e2168e12afb')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

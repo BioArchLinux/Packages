@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: TCGAbiolinksGUI.data_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/TCGAbiolinksGUI.data
+- source: rpkgs
+  pkgname: TCGAbiolinksGUI.data
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

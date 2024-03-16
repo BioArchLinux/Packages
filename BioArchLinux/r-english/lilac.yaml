@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: english_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=english
+- source: rpkgs
+  pkgname: english
+  repo: cran
+  md5: true
 - alias: r
