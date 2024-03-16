@@ -3,7 +3,7 @@
 
 pkgname=migrate-n
 _pkgname=migrate
-pkgver=5.0.4
+pkgver=5.0.5
 pkgrel=1
 pkgdesc="Bayesian estimation of effective population sizes, migration rates, and population divergences or admixture, single CPU version"
 arch=('x86_64')
@@ -15,7 +15,7 @@ optdepends=(zlib)
 provides=(migrate-n)
 source=("${url}/download_version4/${_pkgname}-${pkgver}.src.tar.gz")
 
-sha256sums=('d25ba8ed112b81ee5fdc77759a5886b0f50ece834fd8db445b9c833742c3a1b9')
+sha256sums=('43d456f2432c0ec77ad33877f184d3b4b36f61e416f8fffa51077768df91ea51')
 
 build() {
   cd "${_pkgname}-${pkgver}/src"
