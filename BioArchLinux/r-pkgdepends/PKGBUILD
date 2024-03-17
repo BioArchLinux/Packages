@@ -2,10 +2,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=pkgdepends
-_pkgver=0.7.1
+_pkgver=0.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Package Dependency Resolution and Downloads"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -58,8 +58,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0768d59a31fe96bf44b7dabc662c0fcc')
-b2sums=('ad078222e18e9c61c3b22a9cfc54794c010e2552212930232f80c9c8054e8a52064755312df26bfb5f30bad5a232899e38e707fe1881f7cd82f63b9ed4d30b2a')
+md5sums=('1d9de1e65eb7d941095c46854aba60ed')
+b2sums=('8aa4f5e911648cec77c20df0f9c98348ff26c49ba534e80bf94b6a2d50bab26eaa368450cb64d36e2d5e07bb63fdc6f4a01555db7b25f38d862dbe59df0e7278')
 
 build() {
   mkdir build
