@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: ASAFE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ASAFE
+- source: rpkgs
+  pkgname: ASAFE
+  repo: bioc
+  md5: true
 - alias: r
