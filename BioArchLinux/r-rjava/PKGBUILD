@@ -4,25 +4,25 @@
 _pkgname=rJava
 _pkgver=1.0-11
 pkgname=r-${_pkgname,,}
-pkgver=1.0.11
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Low-Level R to Java Interface'
+pkgdesc="Low-Level R to Java Interface"
 arch=(x86_64)
-url="https://cran.r-project.org/package=${_pkgname}"
-license=(LGPL)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LGPL-2.1-only')
 depends=(
-  r
-  openmp
   java-runtime
+  openmp
+  r
 )
 makedepends=(
-  make
   clang
   java-environment
   patchelf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9ea0ccf5553d86f7de8649a8324766c4f0810f35b7be561640dd87fd37986417')
+md5sums=('4d8eff03a23cb797f01e710ea7528dd2')
+b2sums=('13ecb4a3c545505f047474027d586e0bf7ca02676bbe0bcd142bba786b3380714937f71efa2ca324fcf6efa0c20112f9ef8bc01d8093d3eea17e63176048d6b4')
 
 
 package() {
@@ -39,10 +39,11 @@ package() {
   export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$JAVA_HOME/lib/server"
 
   archlinux-java fix
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 
   patchelf --set-rpath "${JAVA_LD_LIBRARY_PATH}" ${pkgdir}/usr/lib/R/library/rJava/libs/rJava.so
 }
