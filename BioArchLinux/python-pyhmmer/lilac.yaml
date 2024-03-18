@@ -1,0 +1,15 @@
+maintainers:
+  - github: althonos
+    email: althonosdev@gmail.com
+build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  run_cmd(['updpkgsums'])
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - python-psutil
+update_on:
+  - source: pypi
+    pypi: pyhmmer
+  - alias: python
