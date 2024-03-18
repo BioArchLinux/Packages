@@ -3,10 +3,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=pak
-_pkgver=0.7.1
+_pkgver=0.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Another Approach to Package Installation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -44,9 +44,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libs.patch")
-md5sums=('bc95a3a8966b8042d0201729e7ab186f'
+md5sums=('b90bf9353c390d36f8d0ff9a58188a3c'
          '29b1470e2d25f82ebeafc02fe3b2594a')
-b2sums=('6792e3a9be1be2480a737dd0744ff2defb9444e3ee9cdadd1b8319a52dba9db4e37a8fa2f488a58d0e060bcd1485292d8448ad71bd33924b659bbdaef7cf97d9'
+b2sums=('d69e47b7e8cec0296b29fff4c688b89e77ad64df87aea49d81fb96145c17ec0832f4909b2e83ba313856bea13a08ee51b66a70791147e590c1ec598051f81602'
         'b422c6a23d6850831433fdcf3e81684189bdaea1735fcc85edeff3202fe084f4167876949ff9ddfd5654cb2ce202ed005800a217dfe9bb12fb8240456880b4f1')
 
 prepare() {
