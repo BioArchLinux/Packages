@@ -6,7 +6,8 @@ repo_depends:
 - r-datawizard
 - r-insight
 update_on:
-- regex: parameters_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=parameters
+- source: rpkgs
+  pkgname: parameters
+  repo: cran
+  md5: true
 - alias: r
