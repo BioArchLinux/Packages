@@ -7,10 +7,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=dbplyr
-_pkgver=2.4.0
+_pkgver=2.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="A 'dplyr' Back End for Databases"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -57,12 +57,16 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('55d0e3258599d069e8d995b5d99b9a23')
-b2sums=('c0a4c4f90544b32bed9f3582741f9870fe19c6f3b7c0c9468073dcb7c947f44e18b8c31ccb256627c79f84714707a0ad54bed91d64f4924b889b18c1d51f35e1')
+md5sums=('e72abd281aaaeeabe1a88e9c1877c0fe')
+b2sums=('1902d757641cac63ede87695a1919493d41eff63a8455317b19ee1f1025d5fd2b36fd8ee143973736ae55ebef701556b5978363ffd0bfd11c711fbed9740742b')
 
 prepare() {
+  cd "$_pkgname/tests/testthat"
   # connect to database using sockets in tests
-  sed -i '/host = "localhost",/d' "$_pkgname/tests/testthat/helper-src.R"
+  sed -i '/host = "localhost",/d' helper-src.R
+  # skip snapshot test that records sqlite version
+  sed -e '/"check_from is deprecated"/a\ \ skip("records sqlite version")' \
+      -i test-tbl-sql.R
 }
 
 build() {
