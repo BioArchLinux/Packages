@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomeInfoDb
-_pkgver=1.38.7
+_pkgver=1.38.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Utilities for manipulating chromosome names, including modifying them to follow a particular naming style"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -17,6 +17,7 @@ depends=(
   r-biocgenerics
   r-genomeinfodbdata
   r-iranges
+  r-rcurl
   r-s4vectors
 )
 optdepends=(
@@ -36,8 +37,8 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d4d0c8904237e17415858f2a223087ce')
-b2sums=('2b015fdde7dacc64987a771ee031410b635cf917bd820abdc3a0d1d08b9fd4a8a6fc800b8e932478dd30e7f3247d910dbacebe741e427a3c38378b10a217edb1')
+md5sums=('af0949e2aa2f19dbb1eed4d8487d9928')
+b2sums=('25fc978b257f74375504a1639fe2a1c15dcbf089134472fe33e1add1399c4f0b80e497ba898816db6fe2846f81186bbeb1e0ea62f8baa9b806f27db1de70d7c6')
 
 build() {
   mkdir build
