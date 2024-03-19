@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=CaDrA
-_pkgver=1.0.1
+_pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Candidate Driver Analysis"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -26,17 +26,15 @@ checkdepends=(
 )
 optdepends=(
   r-biocmanager
-  r-biocstyle
   r-devtools
   r-knitr
-  r-magick
   r-pheatmap
   r-rmarkdown
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9ac2bc6afe6632e5fbd00c687ca19bba')
-b2sums=('6e4f6a5fec1a6355a2eabf2ec92764867b235865d3b05d6fff8def58a06863790ac9ba40452f1d41275418ba83e5a1c0a970873a7dfa0e2839f51527b104608f')
+md5sums=('bd3e1dfd9f62c695b59a02999e648c3e')
+b2sums=('dd906e28d7ddb254a3b7eedc1016977e23cfa79c6acea3f5e6ad947e99921a3275b11ebbc0fafb9e6591a6d3f33be329e64e5644a601156bec6fab974fbe2b12')
 
 build() {
   mkdir build
