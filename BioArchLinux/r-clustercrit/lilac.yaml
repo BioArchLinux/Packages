@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: clusterCrit_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/src/contrib/Archive/clusterCrit
+- source: rpkgs
+  pkgname: clusterCrit
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
