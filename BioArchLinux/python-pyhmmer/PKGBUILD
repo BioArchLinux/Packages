@@ -29,5 +29,5 @@ package() {
     local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
     python -m installer --destdir="$pkgdir" "${srcdir}/${_name}-${pkgver}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
-    install -Dm644  ${srcdir}/${_name}-${pkgver}/COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+    install -Dm644  "${srcdir}/${_name}-${pkgver}/COPYING" "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 }
