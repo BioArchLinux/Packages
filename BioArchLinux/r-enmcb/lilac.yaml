@@ -13,7 +13,8 @@ repo_depends:
 - r-survivalroc
 - r-survivalsvm
 update_on:
-- regex: EnMCB_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/3.15/EnMCB
+- source: rpkgs
+  pkgname: EnMCB
+  repo: bioc
+  md5: true
 - alias: r
