@@ -317,8 +317,11 @@ def check_optdepends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
 
 def check_fortran(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     fortran_files = False
+    prefix = f"{pkg._pkgname}/src/"
+    # accepted Fortran file suffixes are listed in `/etc/R/Makeconf`
+    suffixes = (".f", ".f90", ".f95")
     for name in cfg.tar.getnames():
-        if name.endswith(".f") or name.endswith(".f90") or name.endswith(".for"):
+        if name.startswith(prefix) and name.endswith(suffixes):
             fortran_files = True
             break
     fortran_dep = "gcc-fortran" in pkg.makedepends
