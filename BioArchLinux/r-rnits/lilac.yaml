@@ -11,7 +11,8 @@ repo_depends:
 - r-qvalue
 - r-reshape2
 update_on:
-- regex: Rnits_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/3.15/Rnits
+- source: rpkgs
+  pkgname: Rnits
+  repo: bioc
+  md5: true
 - alias: r
