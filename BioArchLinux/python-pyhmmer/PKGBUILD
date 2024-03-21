@@ -9,9 +9,9 @@ arch=('i686' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
 url="https://github.com/althonos/pyhmmer"
 license=("MIT")
 depends=('python' 'glibc' 'python-psutil')
-makedepends=('python-setuptools' 'cython' 'python-build' 'python-installer' 'python-wheel')
+makedepends=('git' 'python-setuptools' 'cython' 'python-build' 'python-installer' 'python-wheel')
 source=("git+https://github.com/althonos/pyhmmer.git#tag=v$pkgver")
-sha256sums=('SKIP')
+sha256sums=('a7e29677cf87c57fecb245ad87ec332d72d155e1b29b3a76ea00da134ba207c9')
 
 prepare() {
     cd "${srcdir}/${_name}"
