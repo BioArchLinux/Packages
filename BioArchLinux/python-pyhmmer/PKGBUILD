@@ -1,0 +1,38 @@
+# Maintainer: Martin Larralde <martin.larralde@embl.de>
+
+_name=pyhmmer
+pkgname=python-${_name}
+pkgver=0.10.10
+pkgrel=1
+pkgdesc="Cython bindings to HMMER3. https://doi.org/10.1093/bioinformatics/btad214"
+arch=('i686' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
+url="https://github.com/althonos/pyhmmer"
+license=("MIT")
+depends=('python' 'glibc' 'python-psutil')
+makedepends=('python-setuptools' 'cython' 'python-build' 'python-installer' 'python-wheel')
+source=("git+https://github.com/althonos/pyhmmer.git#tag=v$pkgver")
+sha256sums=('SKIP')
+
+prepare() {
+    cd "${srcdir}/${_name}"
+    git submodule update --init --recursive --remote
+}
+
+build() {
+    cd "${srcdir}/${_name}"
+    python -m build --wheel --no-isolation
+}
+
+check() {
+    local pyver=$(python -c 'import sys; print(sys.implementation.cache_tag)')
+    local machine=$(python -c 'import platform; print(platform.machine())')
+    cd "${srcdir}/${_name}/build/lib.linux-${machine}-${pyver}"
+    python -m unittest ${_name}.tests
+}
+
+package() {
+    local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
+    local machine=$(python -c 'import platform; print(platform.machine())')
+    python -m installer --destdir="$pkgdir" "${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+    install -Dm644  "${srcdir}/${_name}/COPYING" "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
