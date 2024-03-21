@@ -11,7 +11,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-variantannotation
 update_on:
-- regex: ensemblVEP_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/3.15/ensemblVEP
+- source: rpkgs
+  pkgname: ensemblVEP
+  repo: bioc
+  md5: true
 - alias: r
