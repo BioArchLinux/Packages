@@ -32,7 +32,7 @@ prepare() {
     # generate /usr/bin file
     printf '#!/usr/bin/sh\nexec java -jar /usr/share/tbtools/tbtools*.jar "$@"\n'>${srcdir}/${pkgname}
     # generate desk entry
-    gendesk -f -n --pkgname "${pkgname}" --pkgdesc "${pkgdesc}" --exec="${pkgname}" --name="Tool Box for biologistists" --categories="Science"
+    gendesk -f -n --pkgname "${pkgname}" --pkgdesc "${pkgdesc}" --exec="${pkgname}" --name="${pkgname}" --categories="Science"
 }
 
 package() {
