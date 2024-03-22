@@ -5,7 +5,7 @@ _pkgname=RProtoBuf
 _pkgver=0.4.22
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="R Interface to the 'Protocol Buffers' 'API' (Version 2 or 3)"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
