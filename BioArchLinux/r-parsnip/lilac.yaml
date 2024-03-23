@@ -21,6 +21,7 @@ repo_depends:
 - r-vctrs
 - r-withr
 repo_makedepends:
+- r-bench
 - r-c50
 - r-dials
 - r-earth
