@@ -200,6 +200,7 @@ license_map = {
     "CC BY-NC-SA 4.0": "CC-BY-NC-SA-4.0",
     "CC0": "CC0-1.0",
     "CeCILL": "CECILL-2.0",
+    "CeCILL-2": "CECILL-2.0",
     "EPL": "EPL",
     "GNU General Public License version 2": "GPL-2.0-only",
     "GPL": "GPL-2.0-or-later",

@@ -14,6 +14,7 @@ repo_makedepends:
 - r-bigutilsr
 - r-curl
 - r-dbscan
+- r-dharma
 - r-estimatr
 - r-fixest
 - r-glmmtmb

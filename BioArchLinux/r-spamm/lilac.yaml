@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-backports
+- r-crayon
+- r-geometry
+- r-gmp
+- r-minqa
+- r-nloptr
+- r-numderiv
+- r-pbapply
+- r-proxy
+- r-rcpp
+- r-roi
+repo_makedepends:
+- r-rcppeigen
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: spaMM
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: gsl
+  filename: usr/lib/libgsl\.so\.([^.]+)
+  repo: extra
