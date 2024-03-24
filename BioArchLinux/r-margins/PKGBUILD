@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=margins
-_pkgver=0.3.26
+_pkgver=0.3.26.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Marginal Effects for Model Objects"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -32,8 +32,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('089978cd9b7fd9b0ba75525c9efe4641')
-b2sums=('302271f7597f8c98852571935a1ad921026b0cf65ca31e798b0e613d9046837af80bf60256a8763d59a06fc464609cda00435b11e4a0c4adf5d975bd5c729bad')
+md5sums=('dd589d282b4de60a78614e3d0cabac3b')
+b2sums=('d2e66d91b7b4af64f54c36938788af7160ede1c324756d60c1d6b53cbcc86b1da598372c3d09cbac983ba739adc36c68585e7b3d481475c39615503fd9207516')
 
 build() {
   mkdir build
