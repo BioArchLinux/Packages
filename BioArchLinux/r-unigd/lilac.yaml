@@ -1,0 +1,42 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-systemfonts
+repo_makedepends:
+- r-cpp11
+- r-fontquiver
+- r-testthat
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: unigd
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: cairo
+  repo: extra
+  provided: libcairo.so
+  strip_release: true
+- source: alpm
+  alpm: libpng
+  repo: extra
+  provided: libpng16.so
+  strip_release: true
+- source: alpm
+  alpm: libtiff
+  repo: extra
+  provided: libtiff.so
+  strip_release: true
+- source: alpm
+  alpm: libtiff
+  repo: extra
+  provided: libtiffxx.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

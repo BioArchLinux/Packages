@@ -1,14 +1,15 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-bh
-  - r-cpp11
-  - r-later
-  - r-systemfonts
+- r-unigd
+repo_makedepends:
+- r-asioheaders
+- r-cpp11
 update_on:
-  - regex: httpgd_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/src/contrib/Archive/httpgd
-  - alias: r
+- source: rpkgs
+  pkgname: httpgd
+  repo: cran
+  md5: true
+- alias: r
