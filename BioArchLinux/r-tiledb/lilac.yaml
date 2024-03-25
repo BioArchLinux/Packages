@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-nanoarrow
 - r-nanotime
 - r-rcpp
 - r-spdl
