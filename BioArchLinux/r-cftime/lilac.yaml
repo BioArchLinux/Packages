@@ -2,18 +2,12 @@ build_prefix: extra-x86_64
 maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
-repo_depends:
-- r-cftime
-- r-dplyr
-- r-rlang
-- r-rnetcdf
-- r-tibble
-- r-tidyr
 repo_makedepends:
+- r-ncdf4
 - r-testthat
 update_on:
 - source: rpkgs
-  pkgname: ncmeta
+  pkgname: CFtime
   repo: cran
   md5: true
 - alias: r
