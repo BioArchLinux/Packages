@@ -3,10 +3,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=sf
-_pkgver=1.0-15
+_pkgver=1.0-16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Simple Features for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -71,14 +71,14 @@ optdepends=(
   r-wk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b3c5d978da86e8da20f577b65c4eaaff')
-b2sums=('e310735fe1e746f2a47d363c486f1a05a2479dbdd0cc68e351165016ddbce108b6ce70a456a19c98162a53eed1c2f6630abef1c46323d302b083d5cd22209842')
+md5sums=('23f6a4017327db84e4f5b28807ccf962')
+b2sums=('07601b1235b5cc2c7f9fcb0785d8388a2bc6acf1abc95de05a31d6c59b14863d28579936a06a6b80ccda1ca8bcbf90b10541e52c6d087f094a69821fdf4f1333')
 
 prepare() {
   # use PGHOST variable in tests
   sed -e 's/host = "localhost",//' \
       -e 's/host=localhost //' \
-      -i "$_pkgname/tests/testthat/test_postgis_RPostgres.R"
+      -i "$_pkgname/tests/testthat/test-postgis_RPostgres.R"
 }
 
 build() {
