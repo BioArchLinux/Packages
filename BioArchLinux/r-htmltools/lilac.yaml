@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-base64enc
 - r-digest
-- r-ellipsis
 - r-fastmap
 - r-rlang
 repo_makedepends:
