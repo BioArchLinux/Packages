@@ -2,11 +2,11 @@
 # Contributor: Kiri <kiri@vern.cc>
 
 _pkgname=mvnormtest
-_pkgver=0.1-9
+_pkgver=0.1-9-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
-pkgdesc="Normality test for multivariate variables"
+pkgrel=0
+pkgdesc="Normality Test for Multivariate Variables"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
@@ -14,8 +14,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e5960fbfc0e69797eec01c16fe74ecb7')
-b2sums=('f3d74495580eefadef13f2540627aea93d925814d8a5c8d98687128125a751b3106ce96f596518bc77f2ed53265bb9e774cd0724fdbe5635e6b26393678f639d')
+md5sums=('5040046e51bee05b6191e1abff06875d')
+b2sums=('2418137c4524291761ddb14a92f2fdab325663a034af5578210ec29e83d23583e378c19969b224cb1a1849a70755bba95b295a44cd078079938d6f149960c7c7')
 
 build() {
   mkdir build
