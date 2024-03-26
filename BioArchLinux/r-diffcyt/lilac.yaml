@@ -18,7 +18,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-tidyr
 update_on:
-- regex: diffcyt_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/diffcyt
+- source: rpkgs
+  pkgname: diffcyt
+  repo: bioc
+  md5: true
 - alias: r
