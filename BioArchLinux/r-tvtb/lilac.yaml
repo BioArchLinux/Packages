@@ -22,7 +22,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-variantannotation
 update_on:
-- regex: TVTB_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/3.15/TVTB
+- source: rpkgs
+  pkgname: TVTB
+  repo: bioc
+  md5: true
 - alias: r
