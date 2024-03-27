@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex:  curry_(\d+.\d+.\d+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=curry
+- source: rpkgs
+  pkgname: curry
+  repo: cran
+  md5: true
 - alias: r

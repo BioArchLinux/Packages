@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: DeMAND_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DeMAND
+- source: rpkgs
+  pkgname: DeMAND
+  repo: bioc
+  md5: true
 - alias: r

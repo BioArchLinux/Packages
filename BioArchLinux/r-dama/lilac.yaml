@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: daMA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/daMA
+- source: rpkgs
+  pkgname: daMA
+  repo: bioc
+  md5: true
 - alias: r
