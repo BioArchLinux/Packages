@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: fmrs_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/fmrs
+- source: rpkgs
+  pkgname: fmrs
+  repo: bioc
+  md5: true
 - alias: r
