@@ -3,11 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-assertive.base
-- r-assertive.files
-- r-assertive.numbers
-- r-assertive.reflection
-- r-assertive.sets
 - r-biocgenerics
 - r-biostrings
 - r-bsgenome
