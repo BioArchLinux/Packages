@@ -3,7 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: LEA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/LEA
+- source: rpkgs
+  pkgname: LEA
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

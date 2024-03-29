@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: MeasurementError.cor_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MeasurementError.cor
+- source: rpkgs
+  pkgname: MeasurementError.cor
+  repo: bioc
+  md5: true
 - alias: r
