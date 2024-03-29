@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-base64enc
 - r-cachem
+- r-fastmap
 - r-htmltools
 - r-jquerylib
 - r-jsonlite
