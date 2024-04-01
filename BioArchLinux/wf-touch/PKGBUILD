@@ -1,6 +1,6 @@
 pkgname=wf-touch
-pkgver=.20210319.145639
-pkgrel=2
+pkgver=.20240401.121512
+pkgrel=1
 pkgdesc="Touchscreen gesture library"
 arch=(x86_64)
 url=https://github.com/WayfireWM/wf-touch
