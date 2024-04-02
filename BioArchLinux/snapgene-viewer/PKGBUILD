@@ -65,7 +65,7 @@ package() {
     install -Dm 755 "$srcdir/snapgene-viewer.sh" "$pkgdir/usr/bin/snapgene-viewer"
     install -Dm 664 "$pkgdir/opt/gslbiotech/snapgene-viewer/resources/licenseAgreement.html" "$pkgdir/usr/share/licenses/$pkgname/LICENSE.html"
 
-    sed -i 's`${INSTALLED_DIR}/snapgene-viewer "$@"`QT_QPA_PLATFORM="xcb" ${INSTALLED_DIR}/snapgene-viewer "$@"`' "$pkgdir/opt/gslbiotech/snapgene-viewer/snapgene-viewer.sh"
+    sed -i 's|${INSTALLED_DIR}/snapgene-viewer "$@"|QT_QPA_PLATFORM="xcb" ${INSTALLED_DIR}/snapgene-viewer "$@"|' "$pkgdir/opt/gslbiotech/snapgene-viewer/snapgene-viewer.sh"
 
     cd "${pkgdir}"
     rm -rf usr/lib
