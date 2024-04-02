@@ -2,7 +2,7 @@
 
 pkgname='python-keyrings.alt'
 _module=keyrings.alt
-pkgver=5.0.0
+pkgver=5.0.1
 pkgrel=1
 pkgdesc="Alternate keyring implementations"
 arch=('x86_64')
@@ -16,7 +16,7 @@ makedepends=(python-build
              python-setuptools-scm
              python-wheel)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
-sha256sums=('9d446cb47bbcea90ffa2ecc3e8003acf41573fc201bf44b4bf13bd0e11484828')
+sha256sums=('cd372a1ec446a1bc5a90624a52c88e83b9330218e39047a6c9a48ae37d116745')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
