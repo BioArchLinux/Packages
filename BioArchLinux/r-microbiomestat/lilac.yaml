@@ -9,7 +9,6 @@ repo_depends:
 - r-lmertest
 - r-matrixstats
 - r-modeest
-- r-phyloseq
 - r-statmod
 update_on:
 - source: rpkgs

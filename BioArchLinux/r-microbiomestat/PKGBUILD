@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=MicrobiomeStat
-_pkgver=1.1
+_pkgver=1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Statistical Methods for Microbiome Compositional Data"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,12 +16,11 @@ depends=(
   r-lmertest
   r-matrixstats
   r-modeest
-  r-phyloseq
   r-statmod
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e463de42620bebe5a007bad035b20792')
-b2sums=('f3f6df00482d06bfb13389ba090ad2860f8c1a1936b233e98e4bab1b29e37c6dd37cf9073c19a396dc6e5d9ad3a0d4fc095f32191ef004d3a245fbf2b1c91098')
+md5sums=('5af3b2fd4cbb44471678703b43193d84')
+b2sums=('9638e1727c3833e49d589f86b81927bc1810f2c406671240a82ccab478b68462f1b6ef0929a88397833383048c577338cd244542b79acea866e719af488a41f2')
 
 build() {
   mkdir build
