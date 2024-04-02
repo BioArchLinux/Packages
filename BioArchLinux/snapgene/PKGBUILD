@@ -61,10 +61,10 @@ package() {
     cd "$pkgdir"
     cp -r "$srcdir/opt" "$pkgdir"
     cp -r "$srcdir/usr" "$pkgdir"
-    install -Dm 755 "${srcdir}/snapgene.sh" "${pkgdir/}usr/bin/snapgene"
+    install -Dm 755 "${srcdir}/snapgene.sh" "${pkgdir}/usr/bin/snapgene"
     install -Dm 644 "${pkgdir}/opt/gslbiotech/snapgene/resources/licenseAgreement.html" "$pkgdir/usr/share/licenses/${pkgname}/LICENSE.html"
 
-    sed -i 's`${INSTALLED_DIR}/snapgene "$@"`QT_QPA_PLATFORM="xcb" ${INSTALLED_DIR}/snapgene "$@"`' "$pkgdir/opt/gslbiotech/snapgene/snapgene.sh"
+    sed -i 's|${INSTALLED_DIR}/snapgene "$@"|QT_QPA_PLATFORM="xcb" ${INSTALLED_DIR}/snapgene "$@"|' "$pkgdir/opt/gslbiotech/snapgene/snapgene.sh"
 
     # Fix rpath which cause "Insecure RUNPATH" or "outside of a valid path"
     # Fix .so files using patchelf
