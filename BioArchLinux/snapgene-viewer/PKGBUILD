@@ -5,7 +5,8 @@
 pkgname=snapgene-viewer
 pkgver=7.2.0
 _pkgver_major=${pkgver%%.*}
-_pkgver_major_middle=$(cut -d '.' -f 1-2 <<<"$pkgver")
+_pkgver_major_middle=${pkgver%.*}
+_pkgver_major_middle=${_pkgver_major_middle#*.}
 pkgrel=1
 pkgdesc='View plasmid maps, annotate features and share sequences (snapgene freeware edition)'
 arch=('x86_64')
