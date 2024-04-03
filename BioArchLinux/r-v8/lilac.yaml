@@ -3,10 +3,10 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- libnode
 - r-curl
 - r-jsonlite
 - r-rcpp
-- v8-r
 repo_makedepends:
 - r-testthat
 update_on:
