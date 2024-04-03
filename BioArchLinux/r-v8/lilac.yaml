@@ -16,4 +16,4 @@ update_on:
   md5: true
 - alias: r
 - source: manual
-  manual: 2
+  manual: 3
