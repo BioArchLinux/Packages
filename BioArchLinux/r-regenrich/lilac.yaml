@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-biocset
+- r-biocstyle
 - r-deseq2
 - r-dose
 - r-dplyr
@@ -19,6 +20,8 @@ repo_depends:
 - r-tibble
 - r-wgcna
 update_on:
-- source: manual
-  manual: 1.10.0#afbd8028754ca907215ba26c3eae83f8
+- source: rpkgs
+  pkgname: RegEnrich
+  repo: bioc
+  md5: true
 - alias: r
