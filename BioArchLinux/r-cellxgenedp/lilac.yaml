@@ -7,7 +7,6 @@ repo_depends:
 - r-dplyr
 - r-dt
 - r-httr
-- r-jsonlite
 - r-rjsoncons
 - r-shiny
 repo_makedepends:
