@@ -5,9 +5,9 @@ maintainers:
 repo_depends:
 - r-fastmatch
 - r-jsonlite
+- r-lifecycle
 - r-magrittr
 - r-rcpp
-- r-rcppparallel
 - r-snowballc
 - r-stopwords
 - r-stringi
