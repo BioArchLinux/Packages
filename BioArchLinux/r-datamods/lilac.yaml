@@ -3,9 +3,9 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-classint
 - r-data.table
 - r-htmltools
-- r-htmlwidgets
 - r-phosphoricons
 - r-reactable
 - r-readxl
@@ -15,9 +15,11 @@ repo_depends:
 - r-shinybusy
 - r-shinywidgets
 - r-tibble
+- r-toastui
 - r-writexl
 update_on:
-- regex: datamods_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=datamods
+- source: rpkgs
+  pkgname: datamods
+  repo: cran
+  md5: true
 - alias: r
