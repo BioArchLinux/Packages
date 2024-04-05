@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: proteinProfiles_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/proteinProfiles
+- source: rpkgs
+  pkgname: proteinProfiles
+  repo: bioc
+  md5: true
 - alias: r

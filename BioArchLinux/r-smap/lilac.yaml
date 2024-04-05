@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: SMAP_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SMAP
+- source: rpkgs
+  pkgname: SMAP
+  repo: bioc
+  md5: true
 - alias: r
