@@ -3,7 +3,7 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=promises
-_pkgver=1.2.1
+_pkgver=1.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -33,8 +33,8 @@ optdepends=(
   r-vembedr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0332949e499adeb8ede2d583d813b6c5')
-b2sums=('a195b83163d562cd5812478003774507fa9d5e1cacc8bdbba529318f7c309b846ca168ea73e841efc19dcf3167e4e1940ad8eaa86e03f8f98b2bec81f8b22579')
+md5sums=('1b1184329736b045e11ba2dff81ce6ea')
+b2sums=('28c1c66e1ffa72e2ae6f577589a6d413046329aac5c582adf7157c8855b69e80542465c5596d7dbaef6c85eca040b37dead16ddea7495e4c9e0bc01a85c43864')
 
 build() {
   mkdir build
