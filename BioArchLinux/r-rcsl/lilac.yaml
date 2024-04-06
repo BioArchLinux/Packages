@@ -5,12 +5,17 @@ maintainers:
 repo_depends:
 - r-ggplot2
 - r-igraph
+- r-matrixgenerics
 - r-nbclust
 - r-pracma
+- r-rcpp
 - r-rcppannoy
 - r-rtsne
+- r-singlecellexperiment
 - r-umap
 update_on:
-- source: manual
-  manual: 1.8.0#014987c88b4b2941c8badfc38c37db2c
+- source: rpkgs
+  pkgname: RCSL
+  repo: bioc
+  md5: true
 - alias: r
