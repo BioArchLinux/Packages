@@ -11,9 +11,11 @@ repo_depends:
 - r-numderiv
 - r-rcolorbrewer
 - r-reldist
+- r-scater
 - r-statmod
 update_on:
-- regex: M3Drop_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/M3Drop
+- source: rpkgs
+  pkgname: M3Drop
+  repo: bioc
+  md5: true
 - alias: r
