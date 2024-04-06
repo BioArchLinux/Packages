@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 update_on:
-- regex: Biobase_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Biobase
+- source: rpkgs
+  pkgname: Biobase
+  repo: bioc
+  md5: true
 - alias: r

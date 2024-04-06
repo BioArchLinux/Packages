@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 update_on:
-- regex: graph_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/graph
+- source: rpkgs
+  pkgname: graph
+  repo: bioc
+  md5: true
 - alias: r

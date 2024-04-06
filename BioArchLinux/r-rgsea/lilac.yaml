@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 update_on:
-- regex: RGSEA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RGSEA
+- source: rpkgs
+  pkgname: RGSEA
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-data.table
 update_on:
-- regex: HMMcopy_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/HMMcopy
+- source: rpkgs
+  pkgname: HMMcopy
+  repo: bioc
+  md5: true
 - alias: r

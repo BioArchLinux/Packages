@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-data.table
 update_on:
-- regex: GSALightning_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GSALightning
+- source: rpkgs
+  pkgname: GSALightning
+  repo: bioc
+  md5: true
 - alias: r
