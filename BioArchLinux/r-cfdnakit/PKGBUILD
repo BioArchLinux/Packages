@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=cfdnakit
-_pkgver=1.0.0
+_pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Fragmen-length analysis package from high-throughput sequencing of cell-free DNA (cfDNA)"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -30,8 +30,8 @@ optdepends=(
   r-roxygen2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('967a84e96d20af4a0256e117afe272b7')
-b2sums=('1b4bcd8bed6b4cc34ddc3a44c71bae1f3f5ce9061b2524b36e420df72bdf9033522c512468a0514018f691b31858be1269bb887758ddaad0f79e7f2b527db1df')
+md5sums=('b9b2a138a119bec5fc65f6a7475520c4')
+b2sums=('75731ad8a9492b348489cd06a205eeef4319394530dab6a43c939c9e34c03a76b84e582067637f095b29f5689a38ccacc7c2c78dbfdb971a37b63de02442105e')
 
 build() {
   mkdir build
