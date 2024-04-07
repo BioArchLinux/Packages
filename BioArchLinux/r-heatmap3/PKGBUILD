@@ -4,7 +4,7 @@ _pkgname=heatmap3
 _pkgver=1.1.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="An Improved Heatmap Package"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
