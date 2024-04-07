@@ -5,7 +5,12 @@ maintainers:
 repo_depends:
 - r-mvtnorm
 update_on:
-- regex: libcoin_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=libcoin
+- source: rpkgs
+  pkgname: libcoin
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

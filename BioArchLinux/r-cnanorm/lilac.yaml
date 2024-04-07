@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-dnacopy
 update_on:
-- regex: CNAnorm_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CNAnorm
+- source: rpkgs
+  pkgname: CNAnorm
+  repo: bioc
+  md5: true
 - alias: r

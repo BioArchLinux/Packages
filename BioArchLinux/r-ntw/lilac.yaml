@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-mvtnorm
 update_on:
-- regex: NTW_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/NTW
+- source: rpkgs
+  pkgname: NTW
+  repo: bioc
+  md5: true
 - alias: r

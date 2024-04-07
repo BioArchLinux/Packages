@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-pracma
 update_on:
-- regex: rSWeeP_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rSWeeP
+- source: rpkgs
+  pkgname: rSWeeP
+  repo: bioc
+  md5: true
 - alias: r

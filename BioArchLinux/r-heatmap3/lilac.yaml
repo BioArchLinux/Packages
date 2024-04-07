@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-fastcluster
 update_on:
-- regex: heatmap3_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=heatmap3
+- source: rpkgs
+  pkgname: heatmap3
+  repo: cran
+  md5: true
 - alias: r

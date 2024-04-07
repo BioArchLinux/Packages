@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-mvtnorm
 update_on:
-- regex: clinfun_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=clinfun
+- source: rpkgs
+  pkgname: clinfun
+  repo: cran
+  md5: true
 - alias: r

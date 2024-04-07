@@ -2,10 +2,9 @@ build_prefix: extra-x86_64
 maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
-repo_depends:
-- r-waveslim
 update_on:
-- regex: MassSpecWavelet_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MassSpecWavelet
+- source: rpkgs
+  pkgname: MassSpecWavelet
+  repo: bioc
+  md5: true
 - alias: r

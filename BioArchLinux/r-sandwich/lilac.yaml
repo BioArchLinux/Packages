@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-zoo
 update_on:
-- regex: sandwich_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=sandwich
+- source: rpkgs
+  pkgname: sandwich
+  repo: cran
+  md5: true
 - alias: r

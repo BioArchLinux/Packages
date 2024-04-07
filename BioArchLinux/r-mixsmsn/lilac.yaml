@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-mvtnorm
 update_on:
-- regex: mixsmsn_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mixsmsn
+- source: rpkgs
+  pkgname: mixsmsn
+  repo: cran
+  md5: true
 - alias: r

@@ -1,11 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-stringi
+- r-stringi
 update_on:
-  - regex: daewr_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=daewr
-  - alias: r
+- source: rpkgs
+  pkgname: daewr
+  repo: cran
+  md5: true
+- alias: r

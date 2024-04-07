@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-mvtnorm
 update_on:
-- regex: circular_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=circular
+- source: rpkgs
+  pkgname: circular
+  repo: cran
+  md5: true
 - alias: r

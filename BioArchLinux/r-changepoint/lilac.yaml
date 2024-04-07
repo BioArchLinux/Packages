@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-zoo
 update_on:
-- regex: changepoint_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=changepoint
+- source: rpkgs
+  pkgname: changepoint
+  repo: cran
+  md5: true
 - alias: r

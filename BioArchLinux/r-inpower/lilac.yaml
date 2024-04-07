@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-mvtnorm
 update_on:
-- regex: INPower_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/INPower
+- source: rpkgs
+  pkgname: INPower
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-pracma
 update_on:
-- regex: poweRlaw_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=poweRlaw
+- source: rpkgs
+  pkgname: poweRlaw
+  repo: cran
+  md5: true
 - alias: r

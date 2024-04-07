@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-stringi
 update_on:
-- regex: qdapRegex_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=qdapRegex
+- source: rpkgs
+  pkgname: qdapRegex
+  repo: cran
+  md5: true
 - alias: r

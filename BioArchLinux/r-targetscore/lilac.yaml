@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-pracma
 update_on:
-- regex: TargetScore_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/TargetScore
+- source: rpkgs
+  pkgname: TargetScore
+  repo: bioc
+  md5: true
 - alias: r
