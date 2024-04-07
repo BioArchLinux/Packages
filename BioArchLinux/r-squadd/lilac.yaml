@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rcolorbrewer
 update_on:
-- regex: SQUADD_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SQUADD
+- source: rpkgs
+  pkgname: SQUADD
+  repo: bioc
+  md5: true
 - alias: r

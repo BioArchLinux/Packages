@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rcolorbrewer
 update_on:
-- regex: Heatplus_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Heatplus
+- source: rpkgs
+  pkgname: Heatplus
+  repo: bioc
+  md5: true
 - alias: r

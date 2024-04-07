@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-truncnorm
 update_on:
-- regex: Rsolnp_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Rsolnp
+- source: rpkgs
+  pkgname: Rsolnp
+  repo: cran
+  md5: true
 - alias: r

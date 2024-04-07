@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-data.table
 update_on:
-- regex: ModCon_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ModCon
+- source: rpkgs
+  pkgname: ModCon
+  repo: bioc
+  md5: true
 - alias: r

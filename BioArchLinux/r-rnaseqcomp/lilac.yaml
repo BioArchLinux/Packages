@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rcolorbrewer
 update_on:
-- regex: rnaseqcomp_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rnaseqcomp
+- source: rpkgs
+  pkgname: rnaseqcomp
+  repo: bioc
+  md5: true
 - alias: r

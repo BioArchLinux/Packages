@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-data.table
 update_on:
-- regex: splitstackshape_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=splitstackshape
+- source: rpkgs
+  pkgname: splitstackshape
+  repo: cran
+  md5: true
 - alias: r

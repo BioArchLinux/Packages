@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rcolorbrewer
 update_on:
-- regex: splots_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/splots
+- source: rpkgs
+  pkgname: splots
+  repo: bioc
+  md5: true
 - alias: r
