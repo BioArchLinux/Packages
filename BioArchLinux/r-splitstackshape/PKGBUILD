@@ -4,7 +4,7 @@ _pkgname=splitstackshape
 _pkgver=1.4.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Stack and Reshape Datasets After Splitting Concatenated Values"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
