@@ -7,6 +7,14 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
+
 update_on:
   - source: github
     github: dankelley/gri
+    use_max_tag: true
+    prefix: 'v'
+
+update_on:
+  - source: manual
+    manual: 2.12.27
+time_limit_hours: 1
