@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-lpsolve
 update_on:
-- regex: irr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=irr
+- source: rpkgs
+  pkgname: irr
+  repo: cran
+  md5: true
 - alias: r

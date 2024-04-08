@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-vgam
 update_on:
-- regex: semisup_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/semisup
+- source: rpkgs
+  pkgname: semisup
+  repo: bioc
+  md5: true
 - alias: r

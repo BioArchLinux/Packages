@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-snow
 update_on:
-- regex: snowfall_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=snowfall
+- source: rpkgs
+  pkgname: snowfall
+  repo: cran
+  md5: true
 - alias: r

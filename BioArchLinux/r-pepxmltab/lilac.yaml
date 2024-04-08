@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-xml
 update_on:
-- regex: pepXMLTab_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/pepXMLTab
+- source: rpkgs
+  pkgname: pepXMLTab
+  repo: bioc
+  md5: true
 - alias: r

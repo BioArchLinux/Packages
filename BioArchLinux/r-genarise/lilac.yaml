@@ -7,7 +7,8 @@ repo_depends:
 - r-tkrplot
 - r-xtable
 update_on:
-- regex: genArise_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/genArise
+- source: rpkgs
+  pkgname: genArise
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-admisc
 update_on:
-- regex: venn_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=venn
+- source: rpkgs
+  pkgname: venn
+  repo: cran
+  md5: true
 - alias: r

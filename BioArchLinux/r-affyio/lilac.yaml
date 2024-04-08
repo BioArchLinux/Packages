@@ -5,7 +5,13 @@ maintainers:
 repo_depends:
 - r-zlibbioc
 update_on:
-- regex: affyio_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/affyio
+- source: rpkgs
+  pkgname: affyio
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

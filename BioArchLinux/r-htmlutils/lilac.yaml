@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-r2html
 update_on:
-- regex: HTMLUtils_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=HTMLUtils
+- source: rpkgs
+  pkgname: HTMLUtils
+  repo: cran
+  md5: true
 - alias: r

@@ -1,22 +1,20 @@
-# system requirements: libbz2 & liblzma & libcurl (with header files), GNUmake
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rhtslib
 _pkgver=2.4.1
 pkgname=r-${_pkgname,,}
-pkgver=2.4.1
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='HTSlib high-throughput sequencing library as an R package'
-arch=('x86_64')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('LGPL')
-options=(!lto staticlibs)
+pkgdesc="HTSlib high-throughput sequencing library as an R package"
+arch=(x86_64)
+url="https://bioconductor.org/packages/$_pkgname"
+license=('LGPL-2.0-or-later')
 depends=(
-  r
-  r-zlibbioc
   bzip2
-  xz
   curl
+  r-zlibbioc
+  xz
+  zlib
 )
 optdepends=(
   r-biocstyle
@@ -24,14 +22,15 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0c34b951a0f15c26222a3dfd96700a0905c16c4cbe59db36374cf1ceab2a2b21')
+md5sums=('b7d295a694e865f4f4060c94c4bca446')
+b2sums=('003d61f9455981794724ab4e65eaf7f557d2bd394b58ba4e61eb895fbceb8117cb8a8fc6b99f7be71f2ec1b1641ea71867c6a083deba29991c630716de48e82c')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

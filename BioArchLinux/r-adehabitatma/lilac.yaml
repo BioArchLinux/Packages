@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-sp
 update_on:
-- regex: adehabitatMA_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=adehabitatMA
+- source: rpkgs
+  pkgname: adehabitatMA
+  repo: cran
+  md5: true
 - alias: r

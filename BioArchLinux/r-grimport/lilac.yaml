@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-xml
 update_on:
-- regex: grImport_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=grImport
+- source: rpkgs
+  pkgname: grImport
+  repo: cran
+  md5: true
 - alias: r

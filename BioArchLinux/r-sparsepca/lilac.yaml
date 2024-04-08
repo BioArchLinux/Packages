@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rsvd
 update_on:
-- regex: sparsepca_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=sparsepca
+- source: rpkgs
+  pkgname: sparsepca
+  repo: cran
+  md5: true
 - alias: r

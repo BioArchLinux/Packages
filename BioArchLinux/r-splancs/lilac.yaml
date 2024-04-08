@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-sp
 update_on:
-- regex: splancs_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=splancs
+- source: rpkgs
+  pkgname: splancs
+  repo: cran
+  md5: true
 - alias: r

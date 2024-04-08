@@ -1,15 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-admisc
-  - r-mvtnorm
+- r-admisc
+- r-mvtnorm
 update_on:
-  - regex: polycor_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=polycor
-  - alias: r
+- source: rpkgs
+  pkgname: polycor
+  repo: cran
+  md5: true
+- alias: r

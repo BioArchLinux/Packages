@@ -5,7 +5,13 @@ maintainers:
 repo_depends:
 - r-zlibbioc
 update_on:
-- regex: seqTools_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/seqTools
+- source: rpkgs
+  pkgname: seqTools
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

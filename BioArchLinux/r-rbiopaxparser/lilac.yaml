@@ -6,7 +6,8 @@ repo_depends:
 - r-data.table
 - r-xml
 update_on:
-- regex: rBiopaxParser_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rBiopaxParser
+- source: rpkgs
+  pkgname: rBiopaxParser
+  repo: bioc
+  md5: true
 - alias: r

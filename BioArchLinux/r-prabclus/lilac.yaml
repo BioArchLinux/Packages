@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-mclust
 update_on:
-- regex: prabclus_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=prabclus
+- source: rpkgs
+  pkgname: prabclus
+  repo: cran
+  md5: true
 - alias: r
