@@ -30,3 +30,5 @@ update_on:
   repo: core
   provided: libz.so
   strip_release: true
+- source: manual
+  manual: 1

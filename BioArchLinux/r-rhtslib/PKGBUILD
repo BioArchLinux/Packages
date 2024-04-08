@@ -21,6 +21,7 @@ optdepends=(
   r-knitr
   r-rmarkdown
 )
+options=(staticlibs)
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b7d295a694e865f4f4060c94c4bca446')
 b2sums=('003d61f9455981794724ab4e65eaf7f557d2bd394b58ba4e61eb895fbceb8117cb8a8fc6b99f7be71f2ec1b1641ea71867c6a083deba29991c630716de48e82c')
