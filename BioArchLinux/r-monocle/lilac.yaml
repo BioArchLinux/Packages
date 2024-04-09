@@ -20,7 +20,6 @@ repo_depends:
 - r-pheatmap
 - r-plyr
 - r-proxy
-- r-qlcmatrix
 - r-rann
 - r-rcpp
 - r-reshape2
@@ -31,7 +30,8 @@ repo_depends:
 - r-vgam
 - r-viridis
 update_on:
-- regex: monocle_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/monocle
+- source: rpkgs
+  pkgname: monocle
+  repo: bioc
+  md5: true
 - alias: r
