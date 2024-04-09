@@ -3,9 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-assertive.base
-- r-assertive.files
-- r-assertive.numbers
 - r-ggplot2
 - r-gridgraphics
 - r-gtable
