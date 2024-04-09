@@ -4,7 +4,7 @@ _pkgname=matrixTests
 _pkgver=0.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast Statistical Hypothesis Tests on Rows and Columns of Matrices"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
