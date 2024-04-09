@@ -10,3 +10,4 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- alias: python
