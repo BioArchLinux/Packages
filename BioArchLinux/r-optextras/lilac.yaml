@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-numderiv
 update_on:
-- regex: optextras_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=optextras
+- source: rpkgs
+  pkgname: optextras
+  repo: cran
+  md5: true
 - alias: r

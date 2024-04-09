@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-matrixstats
 update_on:
-- regex: MatrixGenerics_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MatrixGenerics
+- source: rpkgs
+  pkgname: MatrixGenerics
+  repo: bioc
+  md5: true
 - alias: r

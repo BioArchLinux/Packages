@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-numderiv
 update_on:
-- regex: alabama_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=alabama
+- source: rpkgs
+  pkgname: alabama
+  repo: cran
+  md5: true
 - alias: r

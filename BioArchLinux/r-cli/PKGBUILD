@@ -3,11 +3,11 @@
 _pkgname=cli
 _pkgver=3.6.2
 pkgname=r-${_pkgname,,}
-pkgver=3.6.2
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Helpers for Developing Command Line Interfaces'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Helpers for Developing Command Line Interfaces"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
@@ -18,11 +18,9 @@ optdepends=(
   r-crayon
   r-digest
   r-glue
-  r-grdevices
   r-htmltools
   r-htmlwidgets
   r-knitr
-  r-methods
   r-mockery
   r-processx
   r-ps
@@ -36,15 +34,18 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4c0749e3711b2b6ae90fd992784303bc8d98039599cac1deb397239a7018e151')
+md5sums=('36e2b58e8de26def5fcf17b6dd71dad7')
+b2sums=('5e297757ffecbe6b9b8f62096fa9a58a9c301ad5ace99cd82cb7e7f9c11719b4963cc35441d5104d5e1e772cecbc275756f11f0372770c4beeccb32a3c67219d')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

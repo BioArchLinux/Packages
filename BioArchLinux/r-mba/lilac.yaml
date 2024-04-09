@@ -2,10 +2,11 @@ build_prefix: extra-x86_64
 maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
-repo_depends:
+repo_makedepends:
 - r-bh
 update_on:
-- regex: MBA_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=MBA
+- source: rpkgs
+  pkgname: MBA
+  repo: cran
+  md5: true
 - alias: r

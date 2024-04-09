@@ -6,7 +6,8 @@ repo_depends:
 - r-data.table
 - r-jsonlite
 update_on:
-- regex: xgboost_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=xgboost
+- source: rpkgs
+  pkgname: xgboost
+  repo: cran
+  md5: true
 - alias: r

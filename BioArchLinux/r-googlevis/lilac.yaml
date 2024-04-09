@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-jsonlite
 update_on:
-- regex: googleVis_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=googleVis
+- source: rpkgs
+  pkgname: googleVis
+  repo: cran
+  md5: true
 - alias: r

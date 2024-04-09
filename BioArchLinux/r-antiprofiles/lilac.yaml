@@ -6,7 +6,8 @@ repo_depends:
 - r-locfit
 - r-matrixstats
 update_on:
-- regex: antiProfiles_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/antiProfiles
+- source: rpkgs
+  pkgname: antiProfiles
+  repo: bioc
+  md5: true
 - alias: r

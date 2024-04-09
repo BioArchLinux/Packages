@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-amap
 update_on:
-- regex: ctc_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ctc
+- source: rpkgs
+  pkgname: ctc
+  repo: bioc
+  md5: true
 - alias: r

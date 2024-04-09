@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-clue
 update_on:
-- regex: JADE_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=JADE
+- source: rpkgs
+  pkgname: JADE
+  repo: cran
+  md5: true
 - alias: r

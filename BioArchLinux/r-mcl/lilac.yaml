@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-expm
 update_on:
-- regex: MCL_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=MCL
+- source: rpkgs
+  pkgname: MCL
+  repo: cran
+  md5: true
 - alias: r

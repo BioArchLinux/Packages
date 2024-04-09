@@ -6,7 +6,16 @@ repo_depends:
 - r-expm
 - r-mvtnorm
 update_on:
-- regex: msm_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=msm
+- source: rpkgs
+  pkgname: msm
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

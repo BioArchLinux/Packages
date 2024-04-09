@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rjson
 update_on:
-- regex: IMPCdata_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/IMPCdata
+- source: rpkgs
+  pkgname: IMPCdata
+  repo: bioc
+  md5: true
 - alias: r

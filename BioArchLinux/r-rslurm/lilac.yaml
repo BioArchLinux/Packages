@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-whisker
 update_on:
-- regex: rslurm_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rslurm
+- source: rpkgs
+  pkgname: rslurm
+  repo: cran
+  md5: true
 - alias: r

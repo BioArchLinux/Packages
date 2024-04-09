@@ -6,7 +6,8 @@ repo_depends:
 - r-jsonlite
 - r-xml
 update_on:
-- regex: gridSVG_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gridSVG
+- source: rpkgs
+  pkgname: gridSVG
+  repo: cran
+  md5: true
 - alias: r

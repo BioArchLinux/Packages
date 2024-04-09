@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-iso
 update_on:
-- regex: ORCME_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ORCME
+- source: rpkgs
+  pkgname: ORCME
+  repo: cran
+  md5: true
 - alias: r
