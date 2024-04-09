@@ -7,10 +7,7 @@ sys.path.append(os.path.normpath(f'{__file__}/../../../lilac-extensions'))
 from lilac_r_utils import r_pre_build
 
 def pre_build():
-    r_pre_build(
-        _G,
-        expect_systemrequirements = "Intel TBB: tbb-devel (Fedora, CentOS, RHEL), libtbb-dev (Debian, Ubuntu, etc) or tbb (Mac).",
-    )
+    r_pre_build(_G)
 
 def post_build():
     git_pkgbuild_commit()
