@@ -4,7 +4,7 @@ _pkgname=statip
 _pkgver=0.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Statistical Functions for Probability Distributions and Regression"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
