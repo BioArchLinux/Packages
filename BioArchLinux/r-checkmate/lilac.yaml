@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-backports
 update_on:
-- regex: checkmate_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=checkmate
+- source: rpkgs
+  pkgname: checkmate
+  repo: cran
+  md5: true
 - alias: r

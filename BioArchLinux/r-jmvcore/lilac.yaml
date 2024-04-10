@@ -1,15 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-base64enc
-  - r-jsonlite
-  - r-r6
-  - r-rlang
-  - r-stringi
+- r-base64enc
+- r-jsonlite
+- r-r6
+- r-rlang
+- r-stringi
 update_on:
-  - regex: jmvcore_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=jmvcore
-  - alias: r
+- source: rpkgs
+  pkgname: jmvcore
+  repo: cran
+  md5: true
+- alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-assertive.base
 update_on:
-- regex: assertive.matrices_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=assertive.matrices
+- source: rpkgs
+  pkgname: assertive.matrices
+  repo: cran
+  md5: true
 - alias: r

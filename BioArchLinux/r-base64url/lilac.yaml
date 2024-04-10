@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-backports
 update_on:
-- regex: base64url_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=base64url
+- source: rpkgs
+  pkgname: base64url
+  repo: cran
+  md5: true
 - alias: r

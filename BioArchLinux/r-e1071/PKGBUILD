@@ -3,37 +3,32 @@
 _pkgname=e1071
 _pkgver=1.7-14
 pkgname=r-${_pkgname,,}
-pkgver=1.7.14
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-only OR GPL-3.0-only')
 depends=(
-  r
   r-proxy
 )
 optdepends=(
-  r-cluster
-  r-mass
-  r-matrix
   r-mlbench
-  r-nnet
   r-randomforest
-  r-rpart
   r-slam
   r-sparsem
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('754d97ab073acc07b909a190f87f021e31e07269c8632c53166a6c2843e65195')
+md5sums=('03776052baef3f5e7cf8ccc1e493cfb2')
+b2sums=('189b2e9f6b14d6dd261d08f9e6b71a705df3ebdaa8e99fc0a6f2788a01f7bf5cc9e302d44377a77616c4746102fcd624fff528ac9814f56b6af978f4f59ba922')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

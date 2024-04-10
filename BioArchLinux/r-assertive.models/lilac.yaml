@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-assertive.base
 update_on:
-- regex: assertive.models_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=assertive.models
+- source: rpkgs
+  pkgname: assertive.models
+  repo: cran
+  md5: true
 - alias: r

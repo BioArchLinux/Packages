@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-proxy
 update_on:
-- regex: dtw_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=dtw
+- source: rpkgs
+  pkgname: dtw
+  repo: cran
+  md5: true
 - alias: r

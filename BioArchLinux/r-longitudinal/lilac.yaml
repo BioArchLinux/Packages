@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-corpcor
 update_on:
-- regex: longitudinal_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=longitudinal
+- source: rpkgs
+  pkgname: longitudinal
+  repo: cran
+  md5: true
 - alias: r

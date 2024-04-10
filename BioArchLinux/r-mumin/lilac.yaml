@@ -2,10 +2,11 @@ build_prefix: extra-x86_64
 maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
-update_on:
-- regex: MuMIn_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=MuMIn
-- alias: r
 repo_depends:
 - r-insight
+update_on:
+- source: rpkgs
+  pkgname: MuMIn
+  repo: cran
+  md5: true
+- alias: r

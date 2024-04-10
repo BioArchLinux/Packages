@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-brew
 update_on:
-- regex: Rook_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Rook
+- source: rpkgs
+  pkgname: Rook
+  repo: cran
+  md5: true
 - alias: r

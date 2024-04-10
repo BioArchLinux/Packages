@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-insight
 update_on:
-- regex: datawizard_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=datawizard
+- source: rpkgs
+  pkgname: datawizard
+  repo: cran
+  md5: true
 - alias: r

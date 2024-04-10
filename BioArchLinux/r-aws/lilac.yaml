@@ -6,7 +6,16 @@ repo_depends:
 - r-awsmethods
 - r-gsl
 update_on:
-- regex: aws_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=aws
+- source: rpkgs
+  pkgname: aws
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

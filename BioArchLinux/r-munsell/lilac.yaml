@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-colorspace
 update_on:
-- regex: munsell_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=munsell
+- source: rpkgs
+  pkgname: munsell
+  repo: cran
+  md5: true
 - alias: r

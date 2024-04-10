@@ -6,7 +6,8 @@ repo_depends:
 - r-colorspace
 - r-rcolorbrewer
 update_on:
-- regex: wheatmap_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=wheatmap
+- source: rpkgs
+  pkgname: wheatmap
+  repo: cran
+  md5: true
 - alias: r
