@@ -4,7 +4,7 @@ _pkgname=statnet.common
 _pkgver=4.9.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Common R Scripts and Utilities Used by the Statnet Project Software"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
