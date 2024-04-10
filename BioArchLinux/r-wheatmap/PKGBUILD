@@ -4,7 +4,7 @@ _pkgname=wheatmap
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Incrementally Build Complex Plots using Natural Semantics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
