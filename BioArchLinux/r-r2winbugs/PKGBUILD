@@ -4,7 +4,7 @@ _pkgname=R2WinBUGS
 _pkgver=2.1-22.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Running 'WinBUGS' and 'OpenBUGS' from 'R' / 'S-PLUS'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
