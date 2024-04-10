@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-r.methodss3
 update_on:
-- regex: R.oo_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=R.oo
+- source: rpkgs
+  pkgname: R.oo
+  repo: cran
+  md5: true
 - alias: r

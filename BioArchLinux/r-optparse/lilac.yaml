@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-getopt
 update_on:
-- regex: optparse_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=optparse
+- source: rpkgs
+  pkgname: optparse
+  repo: cran
+  md5: true
 - alias: r

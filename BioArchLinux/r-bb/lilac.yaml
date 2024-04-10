@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-quadprog
 update_on:
-- regex: BB_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=BB
+- source: rpkgs
+  pkgname: BB
+  repo: cran
+  md5: true
 - alias: r

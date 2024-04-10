@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-r6
 update_on:
-- regex: similaRpeak_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/similaRpeak
+- source: rpkgs
+  pkgname: similaRpeak
+  repo: bioc
+  md5: true
 - alias: r

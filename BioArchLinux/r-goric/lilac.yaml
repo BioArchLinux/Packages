@@ -6,7 +6,8 @@ repo_depends:
 - r-mvtnorm
 - r-quadprog
 update_on:
-- regex: goric_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=goric
+- source: rpkgs
+  pkgname: goric
+  repo: cran
+  md5: true
 - alias: r

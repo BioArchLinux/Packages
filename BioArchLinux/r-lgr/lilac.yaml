@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-r6
 update_on:
-- regex: lgr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lgr
+- source: rpkgs
+  pkgname: lgr
+  repo: cran
+  md5: true
 - alias: r

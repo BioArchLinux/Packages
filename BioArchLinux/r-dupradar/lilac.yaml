@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rsubread
 update_on:
-- regex: dupRadar_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/dupRadar
+- source: rpkgs
+  pkgname: dupRadar
+  repo: bioc
+  md5: true
 - alias: r

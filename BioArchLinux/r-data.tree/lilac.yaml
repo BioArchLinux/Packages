@@ -6,7 +6,8 @@ repo_depends:
 - r-r6
 - r-stringi
 update_on:
-- regex: data.tree_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=data.tree
+- source: rpkgs
+  pkgname: data.tree
+  repo: cran
+  md5: true
 - alias: r

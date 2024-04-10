@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-coda
 update_on:
-- regex: statnet.common_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=statnet.common
+- source: rpkgs
+  pkgname: statnet.common
+  repo: cran
+  md5: true
 - alias: r

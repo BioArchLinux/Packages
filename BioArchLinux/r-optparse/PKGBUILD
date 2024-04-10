@@ -3,14 +3,13 @@
 _pkgname=optparse
 _pkgver=1.7.4
 pkgname=r-${_pkgname,,}
-pkgver=1.7.4
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Command Line Option Parser'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+pkgdesc="Command Line Option Parser"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
 depends=(
-  r
   r-getopt
 )
 optdepends=(
@@ -19,14 +18,15 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('93a2d66594fa72d4e67e4cc2863306e5537f5b10a0d57aa819c8051340225d88')
+md5sums=('f47ae53b0e8096cc86de608d868fb303')
+b2sums=('83be2c62b80943d1e1e833a927390cfa64108bf1d944b069f52679d2a486165f439fad0f5138157613d921b93c09cd8bd47cd79bb3c9ea7d01ddff41bd86614c')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

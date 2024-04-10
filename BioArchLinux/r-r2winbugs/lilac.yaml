@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-coda
 update_on:
-- regex: R2WinBUGS_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=R2WinBUGS
+- source: rpkgs
+  pkgname: R2WinBUGS
+  repo: cran
+  md5: true
 - alias: r

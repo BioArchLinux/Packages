@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-arrmdata
 update_on:
-- regex: ARRmNormalization_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ARRmNormalization
+- source: rpkgs
+  pkgname: ARRmNormalization
+  repo: bioc
+  md5: true
 - alias: r

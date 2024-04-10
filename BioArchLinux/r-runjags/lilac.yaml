@@ -1,12 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-coda
-  - jags
+- jags
+- r-coda
 update_on:
-  - regex: runjags_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=runjags
-  - alias: r
+- source: rpkgs
+  pkgname: runjags
+  repo: cran
+  md5: true
+- alias: r
