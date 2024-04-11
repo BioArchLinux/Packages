@@ -4,7 +4,7 @@ _pkgname=flexclust
 _pkgver=1.4-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Flexible Cluster Algorithms"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
