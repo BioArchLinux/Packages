@@ -1,13 +1,16 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-crayon
 - r-globaloptions
 - r-rjson
+repo_makedepends:
+- r-testthat
 update_on:
-- regex: GetoptLong_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=GetoptLong
+- source: rpkgs
+  pkgname: GetoptLong
+  repo: cran
+  md5: true
 - alias: r
