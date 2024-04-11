@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-infotheo
 update_on:
-- regex: minet_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/minet
+- source: rpkgs
+  pkgname: minet
+  repo: bioc
+  md5: true
 - alias: r

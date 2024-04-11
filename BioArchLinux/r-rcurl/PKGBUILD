@@ -1,32 +1,34 @@
-# system requirements: GNU make, libcurl
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RCurl
 _pkgver=1.98-1.14
 pkgname=r-${_pkgname,,}
-pkgver=1.98.1.14
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='General Network (HTTP/FTP/...) Client Interface for R'
-arch=('x86_64')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('BSD')
+pkgdesc="General Network (HTTP/FTP/...) Client Interface for R"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('BSD-3-Clause')
 depends=(
-  r
+  curl
   r-bitops
 )
 optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('eead278694471dfa9bd2f256d229eebed782e71dc1c734fb457ec35377f303cf')
+md5sums=('db488a574c244647e793082ede268cc1')
+b2sums=('df989200536571d9b8a369fa053135158c5f9a96cda1035d5801721f2b9242c96b80490ddb2c32f2486ce13ea6bd2b99a09e5e2fa2204dbac9f6c1d84618393b')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

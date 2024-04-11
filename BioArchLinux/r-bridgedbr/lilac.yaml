@@ -6,7 +6,8 @@ repo_depends:
 - r-curl
 - r-rjava
 update_on:
-- regex: BridgeDbR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BridgeDbR
+- source: rpkgs
+  pkgname: BridgeDbR
+  repo: bioc
+  md5: true
 - alias: r

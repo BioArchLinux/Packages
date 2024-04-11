@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-lars
 update_on:
-- regex: elasticnet_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=elasticnet
+- source: rpkgs
+  pkgname: elasticnet
+  repo: cran
+  md5: true
 - alias: r

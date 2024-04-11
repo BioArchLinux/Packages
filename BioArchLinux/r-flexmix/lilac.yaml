@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-modeltools
 update_on:
-- regex: flexmix_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=flexmix
+- source: rpkgs
+  pkgname: flexmix
+  repo: cran
+  md5: true
 - alias: r

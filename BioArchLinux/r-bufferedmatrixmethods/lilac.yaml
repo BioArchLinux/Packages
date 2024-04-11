@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-bufferedmatrix
 update_on:
-- regex: BufferedMatrixMethods_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BufferedMatrixMethods
+- source: rpkgs
+  pkgname: BufferedMatrixMethods
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-calibrate
 update_on:
-- regex: qqman_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=qqman
+- source: rpkgs
+  pkgname: qqman
+  repo: cran
+  md5: true
 - alias: r

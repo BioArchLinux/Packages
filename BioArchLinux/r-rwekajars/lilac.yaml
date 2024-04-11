@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rjava
 update_on:
-- regex: RWekajars_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=RWekajars
+- source: rpkgs
+  pkgname: RWekajars
+  repo: cran
+  md5: true
 - alias: r

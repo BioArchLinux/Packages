@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-combinat
 update_on:
-- regex: RMallow_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=RMallow
+- source: rpkgs
+  pkgname: RMallow
+  repo: cran
+  md5: true
 - alias: r

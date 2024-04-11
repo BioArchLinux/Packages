@@ -5,7 +5,13 @@ maintainers:
 repo_depends:
 - r-bitops
 update_on:
-- regex: RCurl_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=RCurl
+- source: rpkgs
+  pkgname: RCurl
+  repo: cran
+  md5: true
 - alias: r
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true

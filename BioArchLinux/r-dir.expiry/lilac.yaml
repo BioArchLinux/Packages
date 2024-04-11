@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-filelock
 update_on:
-- regex: dir.expiry_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/dir.expiry
+- source: rpkgs
+  pkgname: dir.expiry
+  repo: bioc
+  md5: true
 - alias: r

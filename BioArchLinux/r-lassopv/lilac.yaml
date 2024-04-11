@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-lars
 update_on:
-- regex: lassopv_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lassopv
+- source: rpkgs
+  pkgname: lassopv
+  repo: cran
+  md5: true
 - alias: r

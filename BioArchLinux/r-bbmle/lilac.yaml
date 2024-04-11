@@ -7,7 +7,8 @@ repo_depends:
 - r-mvtnorm
 - r-numderiv
 update_on:
-- regex: bbmle_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bbmle
+- source: rpkgs
+  pkgname: bbmle
+  repo: cran
+  md5: true
 - alias: r

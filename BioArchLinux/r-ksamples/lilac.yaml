@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-suppdists
 update_on:
-- regex: kSamples_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=kSamples
+- source: rpkgs
+  pkgname: kSamples
+  repo: cran
+  md5: true
 - alias: r

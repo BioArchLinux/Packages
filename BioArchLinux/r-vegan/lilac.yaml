@@ -5,7 +5,12 @@ maintainers:
 repo_depends:
 - r-permute
 update_on:
-- regex: vegan_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=vegan
+- source: rpkgs
+  pkgname: vegan
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

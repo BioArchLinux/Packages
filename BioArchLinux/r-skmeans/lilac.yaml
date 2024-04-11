@@ -6,7 +6,8 @@ repo_depends:
 - r-clue
 - r-slam
 update_on:
-- regex: skmeans_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=skmeans
+- source: rpkgs
+  pkgname: skmeans
+  repo: cran
+  md5: true
 - alias: r

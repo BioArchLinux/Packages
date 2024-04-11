@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-lars
 update_on:
-- regex: pathwayPCA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/pathwayPCA
+- source: rpkgs
+  pkgname: pathwayPCA
+  repo: bioc
+  md5: true
 - alias: r

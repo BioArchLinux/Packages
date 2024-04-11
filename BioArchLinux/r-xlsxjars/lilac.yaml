@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rjava
 update_on:
-- regex: xlsxjars_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=xlsxjars
+- source: rpkgs
+  pkgname: xlsxjars
+  repo: cran
+  md5: true
 - alias: r

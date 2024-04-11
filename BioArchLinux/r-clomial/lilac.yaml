@@ -6,7 +6,8 @@ repo_depends:
 - r-matrixstats
 - r-permute
 update_on:
-- regex: Clomial_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Clomial
+- source: rpkgs
+  pkgname: Clomial
+  repo: bioc
+  md5: true
 - alias: r
