@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=prismatic
-_pkgver=1.1.1
+_pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Color Manipulation Tools"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,13 +16,13 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
+  r-cli
   r-covr
-  r-crayon
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9b1eb9811f9c3a938f854e5a41c5f60b')
-b2sums=('3021e29f9ac38003cdb6eba8d3ce46b497d5283a534dbbf8e76e48a82b6da7a4767f1ed31ca918e3c90b4addba57663da5cafdf3b1b93060b45bb6e424bae06f')
+md5sums=('6b429cc6f779cd2bbbbdda70b74f3022')
+b2sums=('3d8e16620cfa85b330e167cc562fb1a5eeaa574c81237649d348079c767b68eb6e6404e0b14c805dc63c2fead4dbd21b72107969f75ac58f6f0c622fdeda1df4')
 
 build() {
   mkdir build
