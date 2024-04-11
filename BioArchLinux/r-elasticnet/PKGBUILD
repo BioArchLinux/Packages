@@ -4,7 +4,7 @@ _pkgname=elasticnet
 _pkgver=1.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Elastic-Net for Sparse Estimation and Sparse PCA"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
