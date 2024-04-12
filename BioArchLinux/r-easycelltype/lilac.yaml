@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-annotationdbi
+- r-clusterprofiler
+- r-dplyr
+- r-forcats
+- r-ggplot2
+- r-magrittr
+- r-org.hs.eg.db
+- r-org.mm.eg.db
+- r-rlang
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: EasyCellType
+  repo: bioc
+  md5: true
+- alias: r

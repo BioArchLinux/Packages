@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- jags
+- r-biocparallel
+- r-cli
+- r-edger
+- r-phipdata
+- r-progressr
+- r-rjags
+- r-summarizedexperiment
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: beer
+  repo: bioc
+  md5: true
+- alias: r

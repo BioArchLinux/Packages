@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocparallel
+- r-ggplot2
+- r-ggsci
+- r-matrixstats
+- r-reshape2
+- r-seurat
+- r-seuratobject
+- r-singlecellexperiment
+- r-summarizedexperiment
+repo_makedepends:
+- r-biocgenerics
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: CDI
+  repo: bioc
+  md5: true
+- alias: r

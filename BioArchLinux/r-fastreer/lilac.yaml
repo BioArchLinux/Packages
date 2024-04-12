@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ape
+- r-data.table
+- r-dynamictreecut
+- r-r.utils
+- r-rjava
+- r-stringr
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: fastreeR
+  repo: bioc
+  md5: true
+- alias: r
