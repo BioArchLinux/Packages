@@ -6,7 +6,8 @@ repo_depends:
 - r-geigen
 - r-pracma
 update_on:
-- regex: conicfit_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=conicfit
+- source: rpkgs
+  pkgname: conicfit
+  repo: cran
+  md5: true
 - alias: r

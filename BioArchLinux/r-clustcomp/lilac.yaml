@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-sm
 update_on:
-- regex: clustComp_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/clustComp
+- source: rpkgs
+  pkgname: clustComp
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-sfsmisc
 update_on:
-- regex: lokern_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lokern
+- source: rpkgs
+  pkgname: lokern
+  repo: cran
+  md5: true
 - alias: r

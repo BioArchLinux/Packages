@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-deoptimr
 update_on:
-- regex: dtangle_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=dtangle
+- source: rpkgs
+  pkgname: dtangle
+  repo: cran
+  md5: true
 - alias: r

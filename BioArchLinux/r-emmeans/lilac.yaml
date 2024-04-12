@@ -7,7 +7,8 @@ repo_depends:
 - r-mvtnorm
 - r-numderiv
 update_on:
-- regex: emmeans_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=emmeans
+- source: rpkgs
+  pkgname: emmeans
+  repo: cran
+  md5: true
 - alias: r

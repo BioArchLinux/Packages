@@ -6,7 +6,8 @@ repo_depends:
 - r-desolve
 - r-xml
 update_on:
-- regex: SBMLR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SBMLR
+- source: rpkgs
+  pkgname: SBMLR
+  repo: bioc
+  md5: true
 - alias: r

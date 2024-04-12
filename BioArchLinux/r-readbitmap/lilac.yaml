@@ -8,7 +8,8 @@ repo_depends:
 - r-png
 - r-tiff
 update_on:
-- regex: readbitmap_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=readbitmap
+- source: rpkgs
+  pkgname: readbitmap
+  repo: cran
+  md5: true
 - alias: r

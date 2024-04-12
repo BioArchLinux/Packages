@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-minpack.lm
 update_on:
-- regex: diffGeneAnalysis_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/diffGeneAnalysis
+- source: rpkgs
+  pkgname: diffGeneAnalysis
+  repo: bioc
+  md5: true
 - alias: r

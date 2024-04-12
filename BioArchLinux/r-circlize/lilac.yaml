@@ -7,7 +7,8 @@ repo_depends:
 - r-globaloptions
 - r-shape
 update_on:
-- regex: circlize_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=circlize
+- source: rpkgs
+  pkgname: circlize
+  repo: cran
+  md5: true
 - alias: r

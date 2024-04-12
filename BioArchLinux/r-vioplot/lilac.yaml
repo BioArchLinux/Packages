@@ -6,7 +6,8 @@ repo_depends:
 - r-sm
 - r-zoo
 update_on:
-- regex: vioplot_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=vioplot
+- source: rpkgs
+  pkgname: vioplot
+  repo: cran
+  md5: true
 - alias: r

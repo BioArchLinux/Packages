@@ -1,11 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-deriv
+- r-deriv
 update_on:
-  - regex: neuralnet_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=neuralnet
-  - alias: r
+- source: rpkgs
+  pkgname: neuralnet
+  repo: cran
+  md5: true
+- alias: r

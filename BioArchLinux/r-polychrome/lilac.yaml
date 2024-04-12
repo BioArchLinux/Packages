@@ -6,7 +6,8 @@ repo_depends:
 - r-colorspace
 - r-scatterplot3d
 update_on:
-- regex: Polychrome_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Polychrome
+- source: rpkgs
+  pkgname: Polychrome
+  repo: cran
+  md5: true
 - alias: r

@@ -5,7 +5,17 @@ maintainers:
 repo_depends:
 - r-gmp
 update_on:
-- regex: Rmpfr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Rmpfr
+- source: rpkgs
+  pkgname: Rmpfr
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: gmp
+  filename: usr/lib/libgmp\.so\.([^.]+)
+  repo: core
+- source: alpm
+  alpm: mpfr
+  repo: core
+  provided: libmpfr.so
+  strip_release: true

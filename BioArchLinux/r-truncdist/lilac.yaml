@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-evd
 update_on:
-- regex: truncdist_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=truncdist
+- source: rpkgs
+  pkgname: truncdist
+  repo: cran
+  md5: true
 - alias: r

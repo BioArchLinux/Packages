@@ -5,9 +5,9 @@ maintainers:
 repo_depends:
 - r-formula
 - r-plotrix
-- r-teachingdemos
 update_on:
-- regex: plotmo_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=plotmo
+- source: rpkgs
+  pkgname: plotmo
+  repo: cran
+  md5: true
 - alias: r

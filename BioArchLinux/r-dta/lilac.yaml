@@ -6,7 +6,8 @@ repo_depends:
 - r-lsd
 - r-scatterplot3d
 update_on:
-- regex: DTA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DTA
+- source: rpkgs
+  pkgname: DTA
+  repo: bioc
+  md5: true
 - alias: r

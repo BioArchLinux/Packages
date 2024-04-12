@@ -2,10 +2,26 @@ build_prefix: extra-x86_64
 maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
-repo_depends:
+repo_makedepends:
 - r-rhdf5lib
 update_on:
-- regex: rhdf5filters_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rhdf5filters
+- source: rpkgs
+  pkgname: rhdf5filters
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: bzip2
+  repo: core
+  provided: libbz2.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
+- source: alpm
+  alpm: zstd
+  repo: core
+  provided: libzstd.so
+  strip_release: true

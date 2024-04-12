@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-shape
 update_on:
-- regex: diagram_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=diagram
+- source: rpkgs
+  pkgname: diagram
+  repo: cran
+  md5: true
 - alias: r

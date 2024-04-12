@@ -1,13 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-contfrac
-  - r-desolve
-  - r-elliptic
+- r-contfrac
+- r-desolve
+- r-elliptic
 update_on:
-  - regex: hypergeo_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=hypergeo
-  - alias: r
+- source: rpkgs
+  pkgname: hypergeo
+  repo: cran
+  md5: true
+- alias: r
