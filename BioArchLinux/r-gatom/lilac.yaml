@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-bionet
+- r-data.table
+- r-ggally
+- r-ggplot2
+- r-htmltools
+- r-htmlwidgets
+- r-igraph
+- r-intergraph
+- r-mwcsr
+- r-network
+- r-plyr
+- r-pryr
+- r-shinycyjs
+- r-sna
+- r-xml
+repo_makedepends:
+- r-org.mm.eg.db
+- r-reactome.db
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gatom
+  repo: bioc
+  md5: true
+- alias: r
