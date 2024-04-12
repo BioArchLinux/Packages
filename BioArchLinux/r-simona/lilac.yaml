@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-getoptlong
+- r-globaloptions
+- r-igraph
+- r-matrixstats
+- r-polychrome
+- r-rcpp
+- r-s4vectors
+- r-shiny
+- r-xml2
+repo_makedepends:
+- r-go.db
+- r-org.hs.eg.db
+- r-proxyc
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: simona
+  repo: bioc
+  md5: true
+- alias: r

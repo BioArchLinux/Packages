@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biocsingular
+- r-delayedarray
+- r-gdsfmt
+- r-s4vectors
+- r-scarray
+- r-seurat
+- r-seuratobject
+- r-summarizedexperiment
+repo_makedepends:
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: SCArray.sat
+  repo: bioc
+  md5: true
+- alias: r

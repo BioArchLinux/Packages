@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-assertthat
+- r-bayesspace
+- r-colorspace
+- r-dplyr
+- r-fgsea
+- r-ggplot2
+- r-gridextra
+- r-magrittr
+- r-rcolorbrewer
+- r-s4vectors
+- r-scater
+- r-seurat
+- r-shiny
+- r-singlecellexperiment
+- r-summarizedexperiment
+- r-tibble
+- r-toast
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: RegionalST
+  repo: bioc
+  md5: true
+- alias: r
