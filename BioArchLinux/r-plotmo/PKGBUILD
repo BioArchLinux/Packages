@@ -4,7 +4,7 @@ _pkgname=plotmo
 _pkgver=3.6.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Plot a Model's Residuals, Response, and Partial Dependence Plots"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
