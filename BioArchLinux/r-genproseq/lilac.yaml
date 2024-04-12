@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-catencoders
+- r-deeppincs
+- r-keras
+- r-mclust
+- r-reticulate
+- r-tensorflow
+- r-ttgsea
+- r-word2vec
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: GenProSeq
+  repo: bioc
+  md5: true
+- alias: r
