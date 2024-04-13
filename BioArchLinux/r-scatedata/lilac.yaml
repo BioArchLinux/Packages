@@ -7,6 +7,8 @@ repo_depends:
 - r-genomicalignments
 - r-genomicranges
 update_on:
-- source: manual
-  manual: 1.10.0#dd2241d946202b696c0a706b906425f4
+- source: rpkgs
+  pkgname: SCATEData
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
