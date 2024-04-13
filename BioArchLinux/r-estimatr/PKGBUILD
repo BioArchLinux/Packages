@@ -24,7 +24,6 @@ checkdepends=(
   r-clubsandwich
   r-emmeans
   r-fabricatr
-  r-margins
   r-randomizr
   r-sandwich
   r-stargazer

@@ -14,7 +14,6 @@ repo_makedepends:
 - r-clubsandwich
 - r-emmeans
 - r-fabricatr
-- r-margins
 - r-randomizr
 - r-sandwich
 - r-stargazer
@@ -25,3 +24,5 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: manual
+  manual: 1
