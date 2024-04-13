@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-matrixstats
+- r-nmf
+- r-nnls
+- r-singlecellexperiment
+- r-sparsematrixstats
+repo_makedepends:
+- r-dropletutils
+- r-experimenthub
+- r-ggcorrplot
+- r-igraph
+- r-jpeg
+- r-png
+- r-scatterpie
+- r-seuratobject
+- r-spatialexperiment
+- r-tenxvisiumdata
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: SPOTlight
+  repo: bioc
+  md5: true
+- alias: r
