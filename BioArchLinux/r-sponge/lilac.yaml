@@ -31,6 +31,8 @@ repo_depends:
 - r-tidyverse
 - r-tnet
 update_on:
-- source: manual
-  manual: 1.22.0#4ec8bdffb258be839e469d1baa50c4e9
+- source: rpkgs
+  pkgname: SPONGE
+  repo: bioc
+  md5: true
 - alias: r

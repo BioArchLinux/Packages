@@ -9,6 +9,8 @@ repo_depends:
 - r-reshape2
 - r-scales
 update_on:
-- source: manual
-  manual: 1.38.0#1c8039dc003c35a4c0dbb45e03f7c8aa
+- source: rpkgs
+  pkgname: flowMap
+  repo: bioc
+  md5: true
 - alias: r

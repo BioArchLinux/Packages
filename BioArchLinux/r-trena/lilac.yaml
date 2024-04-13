@@ -24,6 +24,8 @@ repo_depends:
 - r-wgcna
 - r-xgboost
 update_on:
-- source: manual
-  manual: 1.22.2#ee87f22b3b43424a5b517596008b90a0
+- source: rpkgs
+  pkgname: trena
+  repo: bioc
+  md5: true
 - alias: r

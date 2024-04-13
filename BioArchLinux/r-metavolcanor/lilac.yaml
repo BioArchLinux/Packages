@@ -17,8 +17,10 @@ repo_depends:
 repo_makedepends:
 - r-testthat
 update_on:
-- source: manual
-  manual: 1.14.0#697e849a45f3ceae9ff730fc7717d6ca
+- source: rpkgs
+  pkgname: MetaVolcanoR
+  repo: bioc
+  md5: true
 - alias: r
 - source: manual
   manual: 1

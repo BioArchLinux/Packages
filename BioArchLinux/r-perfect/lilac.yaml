@@ -10,6 +10,8 @@ repo_depends:
 - r-sn
 - r-zoo
 update_on:
-- source: manual
-  manual: 1.14.0#04293e236ab353679d23cf30fa18b49f
+- source: rpkgs
+  pkgname: PERFect
+  repo: bioc
+  md5: true
 - alias: r

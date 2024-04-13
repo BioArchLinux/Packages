@@ -3,6 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- source: manual
-  manual: 1.10.0#493abc70911c8ecce2e574a7f8b2366a
+- source: rpkgs
+  pkgname: FScanR
+  repo: bioc
+  md5: true
 - alias: r

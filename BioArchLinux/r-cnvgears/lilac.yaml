@@ -6,6 +6,8 @@ repo_depends:
 - r-data.table
 - r-ggplot2
 update_on:
-- source: manual
-  manual: 1.8.0#b1a4be3f56d83bfa3e3c7c67208641b2
+- source: rpkgs
+  pkgname: CNVgears
+  repo: bioc
+  md5: true
 - alias: r

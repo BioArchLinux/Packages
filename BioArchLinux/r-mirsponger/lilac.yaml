@@ -16,6 +16,8 @@ repo_depends:
 - r-reactomepa
 - r-sponge
 update_on:
-- source: manual
-  manual: 2.4.0#52c6fe3ed5a289fd16c2e8c549402eb8
+- source: rpkgs
+  pkgname: miRspongeR
+  repo: bioc
+  md5: true
 - alias: r

@@ -34,6 +34,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-wgcna
 update_on:
-- source: manual
-  manual: 1.18.0#2c9037736a60c1bbcd546542c1d70f41
+- source: rpkgs
+  pkgname: miRSM
+  repo: bioc
+  md5: true
 - alias: r

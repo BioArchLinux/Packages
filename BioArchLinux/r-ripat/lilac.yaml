@@ -14,6 +14,8 @@ repo_depends:
 - r-rtracklayer
 - r-stringr
 update_on:
-- source: manual
-  manual: 1.10.0#bd4406d3915176597b1b15ed47fc7e8a
+- source: rpkgs
+  pkgname: RIPAT
+  repo: bioc
+  md5: true
 - alias: r

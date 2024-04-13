@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-summarizedexperiment
 update_on:
-- source: manual
-  manual: 1.22.0#4f2bfc5c74548b15515c808c2994a5f9
+- source: rpkgs
+  pkgname: miRmine
+  repo: bioc
+  md5: true
 - alias: r

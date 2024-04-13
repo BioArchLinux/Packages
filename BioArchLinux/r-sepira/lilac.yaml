@@ -6,6 +6,8 @@ repo_depends:
 - r-corpcor
 - r-limma
 update_on:
-- source: manual
-  manual: 1.20.0#c7ed46a5810d2e91210561758428a7fb
+- source: rpkgs
+  pkgname: SEPIRA
+  repo: bioc
+  md5: true
 - alias: r

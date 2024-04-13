@@ -7,10 +7,11 @@ repo_depends:
 - r-gtools
 - r-htmlwidgets
 - r-jsonlite
-- r-plyr
 - r-reshape2
 - r-stringr
 update_on:
-- source: manual
-  manual: 1.24.0#7df865c4752c43a3745b01f93654a00a
+- source: rpkgs
+  pkgname: cellscape
+  repo: bioc
+  md5: true
 - alias: r

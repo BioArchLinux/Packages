@@ -20,6 +20,8 @@ repo_depends:
 - r-sna
 - r-wordcloud
 update_on:
-- source: manual
-  manual: 1.26.0#898230d2d6431f622202416e172d64e2
+- source: rpkgs
+  pkgname: eegc
+  repo: bioc
+  md5: true
 - alias: r

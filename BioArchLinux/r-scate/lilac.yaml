@@ -12,6 +12,8 @@ repo_depends:
 - r-splines2
 - r-xgboost
 update_on:
-- source: manual
-  manual: 1.10.0#1336788dfbcdb94defd8b4d36b7b13ec
+- source: rpkgs
+  pkgname: SCATE
+  repo: bioc
+  md5: true
 - alias: r
