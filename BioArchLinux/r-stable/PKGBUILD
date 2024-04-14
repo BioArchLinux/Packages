@@ -4,7 +4,7 @@ _pkgname=stable
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Probability Functions and Generalized Regression Models for Stable Distributions"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
