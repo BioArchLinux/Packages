@@ -5,7 +5,7 @@ _pkgname=plot3D
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Plotting Multi-Dimensional Data"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
