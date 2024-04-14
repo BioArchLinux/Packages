@@ -4,7 +4,7 @@ _pkgname=rebus.numbers
 _pkgver=0.0-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Numeric Extensions for the 'rebus' Package"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
