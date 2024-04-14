@@ -4,7 +4,7 @@ _pkgname=rebus.unicode
 _pkgver=0.0-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Unicode Extensions for the 'rebus' Package"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
