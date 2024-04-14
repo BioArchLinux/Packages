@@ -4,7 +4,7 @@ _pkgname=nsga2R
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Elitist Non-Dominated Sorting Genetic Algorithm"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
