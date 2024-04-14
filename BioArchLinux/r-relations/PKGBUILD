@@ -4,7 +4,7 @@ _pkgname=relations
 _pkgver=0.6-13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Data Structures and Algorithms for Relations"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
