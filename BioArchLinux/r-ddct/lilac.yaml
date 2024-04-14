@@ -8,7 +8,8 @@ repo_depends:
 - r-rcolorbrewer
 - r-xtable
 update_on:
-- regex: ddCt_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ddCt
+- source: rpkgs
+  pkgname: ddCt
+  repo: bioc
+  md5: true
 - alias: r

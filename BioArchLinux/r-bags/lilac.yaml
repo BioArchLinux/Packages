@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-breastcancervdx
 update_on:
-- regex: BAGS_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BAGS
+- source: rpkgs
+  pkgname: BAGS
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: bioDist_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/bioDist
+- source: rpkgs
+  pkgname: bioDist
+  repo: bioc
+  md5: true
 - alias: r

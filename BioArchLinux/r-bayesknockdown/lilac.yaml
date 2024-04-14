@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: BayesKnockdown_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BayesKnockdown
+- source: rpkgs
+  pkgname: BayesKnockdown
+  repo: bioc
+  md5: true
 - alias: r

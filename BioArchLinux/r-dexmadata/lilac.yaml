@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: DExMAdata_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DExMAdata
+- source: rpkgs
+  pkgname: DExMAdata
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

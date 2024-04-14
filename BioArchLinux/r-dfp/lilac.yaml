@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: DFP_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DFP
+- source: rpkgs
+  pkgname: DFP
+  repo: bioc
+  md5: true
 - alias: r

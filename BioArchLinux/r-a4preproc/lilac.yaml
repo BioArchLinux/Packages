@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 update_on:
-- regex: a4Preproc_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/a4Preproc
+- source: rpkgs
+  pkgname: a4Preproc
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: ALL_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ALL
+- source: rpkgs
+  pkgname: ALL
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

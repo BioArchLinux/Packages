@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: copa_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/copa
+- source: rpkgs
+  pkgname: copa
+  repo: bioc
+  md5: true
 - alias: r

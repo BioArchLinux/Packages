@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: factDesign_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/factDesign
+- source: rpkgs
+  pkgname: factDesign
+  repo: bioc
+  md5: true
 - alias: r

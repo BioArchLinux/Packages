@@ -6,7 +6,8 @@ repo_depends:
 - r-binom
 - r-biobase
 update_on:
-- regex: cancerclass_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/cancerclass
+- source: rpkgs
+  pkgname: cancerclass
+  repo: bioc
+  md5: true
 - alias: r
