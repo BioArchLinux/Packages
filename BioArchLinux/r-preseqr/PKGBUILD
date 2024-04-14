@@ -4,7 +4,7 @@ _pkgname=preseqR
 _pkgver=4.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Predicting Species Accumulation Curves"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
