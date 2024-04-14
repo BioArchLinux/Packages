@@ -4,7 +4,7 @@ _pkgname=rebus.datetimes
 _pkgver=0.0-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Date and Time Extensions for the 'rebus' Package"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
