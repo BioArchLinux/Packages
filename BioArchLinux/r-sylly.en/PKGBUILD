@@ -4,7 +4,7 @@ _pkgname=sylly.en
 _pkgver=0.1-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Language Support for 'sylly' Package: English"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
