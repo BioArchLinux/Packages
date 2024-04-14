@@ -6,7 +6,8 @@ repo_depends:
 - r-nada
 - r-truncnorm
 update_on:
-- regex: zCompositions_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=zCompositions
+- source: rpkgs
+  pkgname: zCompositions
+  repo: cran
+  md5: true
 - alias: r

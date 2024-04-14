@@ -1,14 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-rngwell
+- r-rngwell
 update_on:
-  - regex: randtoolbox_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=randtoolbox
-  - alias: r
+- source: rpkgs
+  pkgname: randtoolbox
+  repo: cran
+  md5: true
+- alias: r

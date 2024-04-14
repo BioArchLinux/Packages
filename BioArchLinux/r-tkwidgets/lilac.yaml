@@ -6,7 +6,8 @@ repo_depends:
 - r-dyndoc
 - r-widgettools
 update_on:
-- regex: tkWidgets_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/tkWidgets
+- source: rpkgs
+  pkgname: tkWidgets
+  repo: bioc
+  md5: true
 - alias: r

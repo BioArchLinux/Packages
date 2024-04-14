@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-simpintlists
 update_on:
-- regex: ibh_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ibh
+- source: rpkgs
+  pkgname: ibh
+  repo: bioc
+  md5: true
 - alias: r

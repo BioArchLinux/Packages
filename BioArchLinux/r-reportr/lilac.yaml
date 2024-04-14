@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-ore
 update_on:
-- regex: reportr_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=reportr
+- source: rpkgs
+  pkgname: reportr
+  repo: cran
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-spatstat.utils
 update_on:
-- regex: spatstat.data_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=spatstat.data
+- source: rpkgs
+  pkgname: spatstat.data
+  repo: cran
+  md5: true
 - alias: r

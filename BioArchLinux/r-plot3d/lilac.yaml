@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-misc3d
 update_on:
-- regex: plot3D_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=plot3D
+- source: rpkgs
+  pkgname: plot3D
+  repo: cran
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-polynom
 update_on:
-- regex: preseqR_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=preseqR
+- source: rpkgs
+  pkgname: preseqR
+  repo: cran
+  md5: true
 - alias: r

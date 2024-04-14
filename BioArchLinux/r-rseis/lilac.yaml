@@ -6,7 +6,8 @@ repo_depends:
 - r-rpmg
 - r-rwave
 update_on:
-- regex: RSEIS_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=RSEIS
+- source: rpkgs
+  pkgname: RSEIS
+  repo: cran
+  md5: true
 - alias: r

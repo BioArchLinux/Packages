@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-fmstable
 update_on:
-- regex: harmonicmeanp_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=harmonicmeanp
+- source: rpkgs
+  pkgname: harmonicmeanp
+  repo: cran
+  md5: true
 - alias: r

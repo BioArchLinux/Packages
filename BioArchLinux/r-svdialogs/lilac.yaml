@@ -6,7 +6,8 @@ repo_depends:
 - r-rstudioapi
 - r-svgui
 update_on:
-- regex: svDialogs_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=svDialogs
+- source: rpkgs
+  pkgname: svDialogs
+  repo: cran
+  md5: true
 - alias: r

@@ -6,7 +6,8 @@ repo_depends:
 - r-preprocesscore
 - r-tcltk2
 update_on:
-- regex: MBCB_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MBCB
+- source: rpkgs
+  pkgname: MBCB
+  repo: bioc
+  md5: true
 - alias: r

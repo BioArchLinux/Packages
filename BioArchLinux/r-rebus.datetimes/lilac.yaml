@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rebus.base
 update_on:
-- regex: rebus.datetimes_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=rebus.datetimes
+- source: rpkgs
+  pkgname: rebus.datetimes
+  repo: cran
+  md5: true
 - alias: r

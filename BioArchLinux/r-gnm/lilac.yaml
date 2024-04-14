@@ -6,7 +6,12 @@ repo_depends:
 - r-qvcalc
 - r-relimp
 update_on:
-- regex: gnm_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gnm
+- source: rpkgs
+  pkgname: gnm
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra

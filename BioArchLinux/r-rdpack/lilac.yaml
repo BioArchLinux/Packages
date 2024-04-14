@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rbibutils
 update_on:
-- regex: Rdpack_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Rdpack
+- source: rpkgs
+  pkgname: Rdpack
+  repo: cran
+  md5: true
 - alias: r

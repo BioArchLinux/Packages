@@ -6,7 +6,8 @@ repo_depends:
 - r-sets
 - r-slam
 update_on:
-- regex: relations_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=relations
+- source: rpkgs
+  pkgname: relations
+  repo: cran
+  md5: true
 - alias: r

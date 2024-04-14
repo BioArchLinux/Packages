@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rmutil
 update_on:
-- regex: stable_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=stable
+- source: rpkgs
+  pkgname: stable
+  repo: cran
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rootsolve
 update_on:
-- regex: Exact_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Exact
+- source: rpkgs
+  pkgname: Exact
+  repo: cran
+  md5: true
 - alias: r

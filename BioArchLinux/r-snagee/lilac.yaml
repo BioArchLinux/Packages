@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-snageedata
 update_on:
-- regex: SNAGEE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SNAGEE
+- source: rpkgs
+  pkgname: SNAGEE
+  repo: bioc
+  md5: true
 - alias: r

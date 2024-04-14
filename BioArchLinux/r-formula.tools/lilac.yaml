@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-operator.tools
 update_on:
-- regex: formula.tools_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=formula.tools
+- source: rpkgs
+  pkgname: formula.tools
+  repo: cran
+  md5: true
 - alias: r

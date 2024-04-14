@@ -6,7 +6,8 @@ repo_depends:
 - r-assertthat
 - r-ncdf4
 update_on:
-- regex: TargetSearch_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/TargetSearch
+- source: rpkgs
+  pkgname: TargetSearch
+  repo: bioc
+  md5: true
 - alias: r

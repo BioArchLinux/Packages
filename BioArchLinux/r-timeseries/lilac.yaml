@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-timedate
 update_on:
-- regex: timeSeries_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=timeSeries
+- source: rpkgs
+  pkgname: timeSeries
+  repo: cran
+  md5: true
 - alias: r

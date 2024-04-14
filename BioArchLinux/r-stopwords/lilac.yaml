@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-isocodes
 update_on:
-- regex: stopwords_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=stopwords
+- source: rpkgs
+  pkgname: stopwords
+  repo: cran
+  md5: true
 - alias: r

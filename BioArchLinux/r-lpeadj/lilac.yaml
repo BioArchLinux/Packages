@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-lpe
 update_on:
-- regex: LPEadj_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/LPEadj
+- source: rpkgs
+  pkgname: LPEadj
+  repo: bioc
+  md5: true
 - alias: r

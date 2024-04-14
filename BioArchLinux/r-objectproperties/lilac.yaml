@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-objectsignals
 update_on:
-- regex: objectProperties_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=objectProperties
+- source: rpkgs
+  pkgname: objectProperties
+  repo: cran
+  md5: true
 - alias: r

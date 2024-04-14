@@ -6,7 +6,8 @@ repo_depends:
 - r-data.table
 - r-sylly
 update_on:
-- regex: koRpus_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=koRpus
+- source: rpkgs
+  pkgname: koRpus
+  repo: cran
+  md5: true
 - alias: r

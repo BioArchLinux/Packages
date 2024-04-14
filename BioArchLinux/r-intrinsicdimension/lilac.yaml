@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-yaimpute
 update_on:
-- regex: intrinsicDimension_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=intrinsicDimension
+- source: rpkgs
+  pkgname: intrinsicDimension
+  repo: cran
+  md5: true
 - alias: r

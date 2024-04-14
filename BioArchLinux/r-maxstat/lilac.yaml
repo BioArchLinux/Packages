@@ -6,7 +6,8 @@ repo_depends:
 - r-exactranktests
 - r-mvtnorm
 update_on:
-- regex: maxstat_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=maxstat
+- source: rpkgs
+  pkgname: maxstat
+  repo: cran
+  md5: true
 - alias: r

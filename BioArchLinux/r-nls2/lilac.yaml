@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-proto
 update_on:
-- regex: nls2_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=nls2
+- source: rpkgs
+  pkgname: nls2
+  repo: cran
+  md5: true
 - alias: r

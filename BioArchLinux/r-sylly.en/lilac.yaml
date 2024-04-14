@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-sylly
 update_on:
-- regex: sylly.en_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=sylly.en
+- source: rpkgs
+  pkgname: sylly.en
+  repo: cran
+  md5: true
 - alias: r

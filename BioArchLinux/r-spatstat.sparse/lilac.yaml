@@ -7,7 +7,8 @@ repo_depends:
 - r-spatstat.utils
 - r-tensor
 update_on:
-- regex: spatstat.sparse_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=spatstat.sparse
+- source: rpkgs
+  pkgname: spatstat.sparse
+  repo: cran
+  md5: true
 - alias: r

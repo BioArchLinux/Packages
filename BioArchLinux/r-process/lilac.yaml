@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-icens
 update_on:
-- regex: PROcess_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PROcess
+- source: rpkgs
+  pkgname: PROcess
+  repo: bioc
+  md5: true
 - alias: r

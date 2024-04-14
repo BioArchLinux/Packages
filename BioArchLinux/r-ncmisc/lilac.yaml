@@ -2,10 +2,9 @@ build_prefix: extra-x86_64
 maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
-repo_depends:
-- r-proftools
 update_on:
-- regex: NCmisc_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=NCmisc
+- source: rpkgs
+  pkgname: NCmisc
+  repo: cran
+  md5: true
 - alias: r
