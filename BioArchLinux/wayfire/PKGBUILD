@@ -38,6 +38,7 @@ build() {
         	-Duse_system_wfconfig=enabled \
         	-Db_lto=true \
         	-Db_pie=true \
+		-Dvulkan=disabled \
         build
 	ninja -C build
 	sed "/WF_SRC_DIR/d" -i build/config.h
