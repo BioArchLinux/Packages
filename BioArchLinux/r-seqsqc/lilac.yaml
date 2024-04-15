@@ -17,7 +17,8 @@ repo_depends:
 - r-s4vectors
 - r-snprelate
 update_on:
-- regex: SeqSQC_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SeqSQC
+- source: rpkgs
+  pkgname: SeqSQC
+  repo: bioc
+  md5: true
 - alias: r
