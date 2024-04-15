@@ -5,8 +5,8 @@ maintainers:
 repo_depends:
 - r-assertive.base
 update_on:
-- source: rpkgs
-  pkgname: assertive.numbers
-  repo: cran
-  md5: true
+- source: manual
+  manual: 0.0-2#94eead383227d15353b9629305c7269a
 - alias: r
+- source: manual
+  manual: 1

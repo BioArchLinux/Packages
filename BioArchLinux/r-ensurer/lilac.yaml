@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- source: rpkgs
-  pkgname: ensurer
-  repo: cran
-  md5: true
+- source: manual
+  manual: 1.1#0f3ea28ed5b5276143f126737fb116fa
 - alias: r
+- source: manual
+  manual: 1

@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- source: rpkgs
-  pkgname: assertive.base
-  repo: cran
-  md5: true
+- source: manual
+  manual: 0.0-9#a2ee821abdf770469319622fc5508ce4
 - alias: r
+- source: manual
+  manual: 1

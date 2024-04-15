@@ -7,7 +7,6 @@ repo_depends:
 - r-rcurl
 - r-xml
 update_on:
-- regex: XML2R_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=XML2R
+- source: manual
+  manual: 0.0.6#2c9f9d3870f9b54c7d89fe9212aee921
 - alias: r

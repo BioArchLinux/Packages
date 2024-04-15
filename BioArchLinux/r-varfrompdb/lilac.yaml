@@ -10,7 +10,6 @@ repo_depends:
 - r-xml
 - r-xml2r
 update_on:
-- regex: VarfromPDB_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=VarfromPDB
+- source: manual
+  manual: 2.2.10#b7c92586fba4a698d4b488ba35eb2fbe
 - alias: r

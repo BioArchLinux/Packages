@@ -6,7 +6,6 @@ repo_depends:
 - r-assertive.base
 - r-assertive.numbers
 update_on:
-- regex: assertive.files_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=assertive.files
+- source: manual
+  manual: 0.0-2#6ec546e99c6466feffca3ab09a670c76
 - alias: r

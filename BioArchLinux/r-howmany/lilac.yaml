@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- source: rpkgs
-  pkgname: howmany
-  repo: cran
-  md5: true
+- source: manual
+  manual: 0.3-1#2a734431375a7214f6dc831ca004dc38
 - alias: r
+- source: manual
+  manual: 1
