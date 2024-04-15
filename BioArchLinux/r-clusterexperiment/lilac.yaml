@@ -27,7 +27,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-zinbwave
 update_on:
-- regex: clusterExperiment_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/clusterExperiment
+- source: rpkgs
+  pkgname: clusterExperiment
+  repo: bioc
+  md5: true
 - alias: r
