@@ -27,7 +27,8 @@ repo_depends:
 - r-tibble
 - r-tidyr
 update_on:
-- regex: Pi_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Pi
+- source: rpkgs
+  pkgname: Pi
+  repo: bioc
+  md5: true
 - alias: r
