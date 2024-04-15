@@ -6,7 +6,8 @@ repo_depends:
 - r-dnet
 - r-igraph
 update_on:
-- regex: RandomWalkRestartMH_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RandomWalkRestartMH
+- source: rpkgs
+  pkgname: RandomWalkRestartMH
+  repo: bioc
+  md5: true
 - alias: r
