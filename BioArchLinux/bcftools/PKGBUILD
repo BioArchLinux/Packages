@@ -9,7 +9,7 @@ arch=('x86_64')
 url='https://samtools.github.io/bcftools'
 license=('GPL')
 depends=('gsl' 'htslib' 'python-matplotlib' 'python')
-source=("https://github.com/samtools/bcftools/archive/refs/tags/${pkgver}.tar.gz")
+source=("https://github.com/samtools/${pkgname}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.bz2")
 sha256sums=('782b5f1bc690415192231e82213b3493b047f45e630dc8ef6f154d6126ab3e68')
 
 build() {

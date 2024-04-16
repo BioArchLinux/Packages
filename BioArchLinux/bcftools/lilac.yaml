@@ -9,7 +9,7 @@ post_build_script: |
 update_on:
   - source: github
     github: samtools/bcftools
-    use_max_tag: true
+    use_latest_release: true
   - alias: alpm-lilac
     alpm: htslib
     strip_release: true
