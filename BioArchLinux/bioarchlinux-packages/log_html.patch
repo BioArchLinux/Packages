@@ -1,0 +1,140 @@
+diff --git a/html/logs.html b/html/logs.html
+index ea93419..9f2d4c4 100644
+--- a/html/logs.html
++++ b/html/logs.html
+@@ -3,8 +3,9 @@
+ 
+ <head>
+     <meta charset="UTF-8">
+-    <title>Archlinuxcn Packages</title>
+-    <link rel="stylesheet" href="https://build.archlinuxcn.org/~imlonghao/static/1.10.20-jquery.dataTables.min.css">
++    <title>bioarchlinux Packages</title>
++    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"
++        integrity="sha256-YY1izqyhIj4W3iyJOaGWOpXDSwrHWFL4Nfk+W0LyCHE=" crossorigin="anonymous">
+     <style>
+         a {
+             white-space: nowrap;
+@@ -15,8 +16,10 @@
+ <body>
+     <table id="l" class="stripe cell-border" style="text-align:center">
+     </table>
+-    <script src="https://build.archlinuxcn.org/~imlonghao/static/3.4.1-jquery.min.js"></script>
+-    <script src="https://build.archlinuxcn.org/~imlonghao/static/1.10.20-jquery.dataTables.min.js"></script>
++    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
++        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
++    <script src="https://cdn.jsdelivr.net/npm/datatables.net@1.10.20/js/jquery.dataTables.min.js"
++        integrity="sha256-LXQzPhL1IRyKkA7HpCOBi8I+OC8HqzHUYkjK8S+LKTs=" crossorigin="anonymous"></script>
+     <script>
+         const DATE_FORMATTER = new Intl.DateTimeFormat(undefined, {
+             timeStyle: "medium",
+@@ -24,7 +27,7 @@
+             hour12: false,
+         });
+         $(window).on('hashchange', function () {
+-            url = window.location.hash.includes("#") ? "/imlonghao-api/pkg/" + window.location.hash.slice(1) : "/imlonghao-api/logs"
++            url = window.location.hash.includes("#") ? "/api/pkg/" + window.location.hash.slice(1) : "/api/logs"
+             $.get(url, function (newDataArray) {
+                 let datatable = $('#l').DataTable()
+                 datatable.clear()
+@@ -33,7 +36,7 @@
+             });
+         });
+         $(document).ready(function () {
+-            url = window.location.hash.includes("#") ? "/imlonghao-api/pkg/" + window.location.hash.slice(1) : "/imlonghao-api/logs"
++            url = window.location.hash.includes("#") ? "/api/pkg/" + window.location.hash.slice(1) : "/api/logs"
+             $('#l').DataTable({
+                 "searchDelay": 100,
+                 "iDisplayLength": 100,
+@@ -46,22 +49,22 @@
+                 "columnDefs": [
+                     {
+                         targets: 0,
+-                        title: "包名",
++                        title: "Package Name",
+                         data: "pkgbase"
+                     },
+                     {
+                         targets: 1,
+-                        title: "打包者",
++                        title: "Maintainer",
+                         data: "maintainer"
+                     },
+                     {
+                         targets: 2,
+-                        title: "版本号",
++                        title: "Package Version",
+                         data: "pkg_version"
+                     },
+                     {
+                         targets: 3,
+-                        title: "状态",
++                        title: "Status",
+                         data: "result",
+                         render: function (data, type, row, meta) {
+                             switch (data) {
+@@ -74,17 +77,17 @@
+                     },
+                     {
+                         targets: 4,
+-                        title: "持续时间（秒）",
++                        title: "Last Time (s)",
+                         data: "elapsed"
+                     },
+                     {
+                         targets: 5,
+-                        title: "CPU 使用率（%）",
++                        title: "CPU Usage Percentage (%)",
+                         data: "cpu"
+                     },
+                     {
+                         targets: 6,
+-                        title: "内存使用（GiB）",
++                        title: "RAM Usage (GiB)",
+                         data: "memory",
+                         render: function (data, type, row, meta) {
+                             return data.toFixed(3)
+@@ -92,7 +95,7 @@
+                     },
+                     {
+                         targets: 7,
+-                        title: "打包时间",
++                        title: "Last Packaging Time",
+                         data: "ts",
+                         render: function (data, type, row, meta) {
+                             if (type == 'display') {
+@@ -107,23 +110,23 @@
+                         title: "GitHub",
+                         data: "pkgbase",
+                         render: function (data, type, row, meta) {
+-                            return `<a href=https://github.com/archlinuxcn/repo/blob/master/archlinuxcn/${data}/ target=_blank rel=noopener>GitHub</a>`
++                            return `<a href=https://github.com/BioArchLinux/Packages/blob/master/BioArchLinux/${data}/ target=_blank rel=noopener>GitHub</a>`
+                         }
+                     },
+                     {
+                         targets: 9,
+-                        title: "日志",
++                        title: "Log",
+                         data: "ts",
+                         render: function (data, type, row, meta) {
+-                            return `<a href=https://build.archlinuxcn.org/imlonghao-api/pkg/${row.pkgbase}/log/${Math.floor(data / 1000)} target=_blank rel=noopener>日志</a>`
++                            return `<a href=https://build.bioarchlinux.org/api/pkg/${row.pkgbase}/log/${Math.floor(data / 1000)} target=_blank rel=noopener>Log</a>`
+                         }
+                     },
+                     {
+                         targets: 10,
+-                        title: "更多",
++                        title: "More",
+                         data: "pkgbase",
+                         render: function (data, type, row, meta) {
+-                            return `<a href=#${data}>更多</a>`
++                            return `<a href=#${data}>More</a>`
+                         }
+                     }
+                 ]
+@@ -132,4 +135,4 @@
+     </script>
+ </body>
+ 
+-</html>
+\ No newline at end of file
++</html>

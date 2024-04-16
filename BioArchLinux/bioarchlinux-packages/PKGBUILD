@@ -13,15 +13,27 @@ optdepends=()
 provides=()
 source=(git+https://github.com/imlonghao/archlinuxcn-packages.git#tag=v$pkgver
 		$pkgname.service
-		bio.patch)
-sha256sums=('SKIP'
+		cargo.patch
+		current_html.patch
+		index_html.patch
+		log_html.patch
+		rust.patch)
+sha256sums=('5224059ffb7cedb1b6372df2c5431dd3c9a720a7b2774d50dffbe15456a30b05'
             'dd2a46ad3b1e7d532b53f10ced77fbd74924c8635ff3778d62a42f0606295d2c'
-            'b8473645a9c9979e458434ec39721f4cb18cacde2b1a3e6fbe34e915b49ec8e0')
+            '970b365af5f1185f35a77a83e8d2923d68fbba8944b98537bcf961bf51d3ed7e'
+            '53fff749bc1918b4606cd22c8227c9f184dec0f129c52bd2a2a444a899a926f3'
+            '3e9cad1eecc70b66acc72aeb4886e0ed6df55aa66e60031807946652a8e0a01a'
+            'cf8dd25936b59daceea24f867fdf0c3fe5681ce84f7248ed867c245385211576'
+            '9e610a2eea82854413685027c4fee3eac8e0a2593d825577e005789c205e8b45')
 
 prepare() {
   cd $_pkgname
-  patch -np1 < $srcdir/bio.patch
+for pat in cargo  current_html  index_html  log_html  rust 
+do
+  patch -p1 < $srcdir/$pat.patch
+done
 }
+
 build() {
   cd "$_pkgname"/src
   cargo build --release --all-features

@@ -1,0 +1,95 @@
+diff --git a/src/main.rs b/src/main.rs
+index eec0dde..73d9460 100644
+--- a/src/main.rs
++++ b/src/main.rs
+@@ -82,7 +82,7 @@ struct LogsResponse {
+ #[cached(time = 86400, result = true)]
+ fn get_maintainer(pkg: String) -> Result<String> {
+     let contents = std::fs::read_to_string(format!(
+-        "/data/archgitrepo-webhook/archlinuxcn/{}/lilac.yaml",
++        "/usr/share/lilac/Packages/BioArchLinux/{}/lilac.yaml",
+         pkg
+     ))?;
+     let docs = YamlLoader::load_from_str(&contents)?;
+@@ -97,7 +97,7 @@ fn get_maintainer(pkg: String) -> Result<String> {
+     Ok(maintainers.join(", "))
+ }
+ 
+-#[get("/imlonghao-api/status")]
++#[get("/api/status")]
+ async fn status(db: web::Data<deadpool_postgres::Pool>) -> impl Responder {
+     let conn = db.get().await.unwrap();
+     let rows = conn
+@@ -113,7 +113,7 @@ async fn status(db: web::Data<deadpool_postgres::Pool>) -> impl Responder {
+     HttpResponse::Ok().json(result)
+ }
+ 
+-#[get("/imlonghao-api/current")]
++#[get("/api/current")]
+ async fn current(db: web::Data<deadpool_postgres::Pool>) -> impl Responder {
+     let conn = db.get().await.unwrap();
+     let rows = conn
+@@ -144,7 +144,7 @@ async fn current(db: web::Data<deadpool_postgres::Pool>) -> impl Responder {
+     HttpResponse::Ok().json(result)
+ }
+ 
+-#[get("/imlonghao-api/logs")]
++#[get("/api/logs")]
+ async fn logs(db: web::Data<deadpool_postgres::Pool>) -> impl Responder {
+     let conn = db.get().await.unwrap();
+     let rows = conn
+@@ -182,7 +182,7 @@ async fn logs(db: web::Data<deadpool_postgres::Pool>) -> impl Responder {
+     HttpResponse::Ok().json(results)
+ }
+ 
+-#[get("/imlonghao-api/pkg/{name}")]
++#[get("/api/pkg/{name}")]
+ async fn get_pkg(
+     name: web::Path<String>,
+     db: web::Data<deadpool_postgres::Pool>,
+@@ -220,7 +220,7 @@ async fn get_pkg(
+     HttpResponse::Ok().json(results)
+ }
+ 
+-#[get("/imlonghao-api/pkg/{name}/log/{ts}")]
++#[get("/api/pkg/{name}/log/{ts}")]
+ async fn get_pkg_log(
+     path: web::Path<(String, i64)>,
+     db: web::Data<deadpool_postgres::Pool>,
+@@ -242,7 +242,7 @@ async fn get_pkg_log(
+         return HttpResponse::BadRequest().body("ts is too old");
+     }
+     let logdir: String = rows[0].get("logdir");
+-    let filename = format!("/home/lilydjwg/.lilac/log/{}/{}.log", logdir, name);
++    let filename = format!("/home/bio/.lilac/log/{}/{}.log", logdir, name);
+     let contents = match std::fs::read_to_string(&filename) {
+         Ok(x) => x,
+         Err(_) => return HttpResponse::NotFound().body(format!("Log {} not exist", &filename)),
+@@ -256,18 +256,18 @@ async fn get_pkg_log(
+ 
+ #[actix_web::main]
+ async fn main() -> std::io::Result<()> {
+-    let _guard = sentry::init((
+-        std::env::var("SENTRY").unwrap(),
+-        sentry::ClientOptions {
+-            release: sentry::release_name!(),
+-            ..Default::default()
+-        },
+-    ));
++    //let _guard = sentry::init((
++    //    std::env::var("SENTRY").unwrap(),
++    //    sentry::ClientOptions {
++    //        release: sentry::release_name!(),
++    //        ..Default::default()
++    //    },
++    //));
+     std::env::set_var("RUST_BACKTRACE", "1");
+ 
+     let mut cfg = deadpool_postgres::Config::new();
+-    cfg.user = Some("imlonghao".to_string());
+-    cfg.dbname = Some("lilydjwg".to_string());
++    cfg.user = Some("bio".to_string());
++    cfg.dbname = Some("lilac".to_string());
+     cfg.host = Some("/run/postgresql".to_string());
+     cfg.manager = Some(deadpool_postgres::ManagerConfig {
+         recycling_method: deadpool_postgres::RecyclingMethod::Fast,

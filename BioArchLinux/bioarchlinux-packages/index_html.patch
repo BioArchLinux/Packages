@@ -1,0 +1,21 @@
+diff --git a/html/index.html b/html/index.html
+new file mode 100644
+index 0000000..bb0477c
+--- /dev/null
++++ b/html/index.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<!-- saved from url=(0030)https://build.bioarchlinux.org/ -->
++<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
++<meta name="viewport" content="width=device-width, initial-scale=1">
++<title>BioArchLinux Packages Satsus</title>
++</head><body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
++  <h1>Welcome to BioArchLinux Packages Status Page！</h1>
++  <ul>
++    <li><a href="https://build.bioarchlinux.org/current.html">Building Packages logs</a></li>
++    <li><a href="https://build.bioarchlinux.org/logs.html">Built Packages logs</a></li>
++  </ul>
++
++
++<!-- vim: set fdm=marker: -->
++</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

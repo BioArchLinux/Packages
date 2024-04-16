@@ -1,0 +1,79 @@
+diff --git a/html/current.html b/html/current.html
+index 652386b..8f900af 100644
+--- a/html/current.html
++++ b/html/current.html
+@@ -3,15 +3,18 @@
+ 
+ <head>
+     <meta charset="UTF-8">
+-    <title>Archlinuxcn Currently Building Package</title>
+-    <link rel="stylesheet" href="https://build.archlinuxcn.org/~imlonghao/static/1.10.20-jquery.dataTables.min.css">
++    <title>bioarchlinux Currently Building Package</title>
++    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"
++        integrity="sha256-YY1izqyhIj4W3iyJOaGWOpXDSwrHWFL4Nfk+W0LyCHE=" crossorigin="anonymous">
+ </head>
+ 
+ <body>
+     <table id="l" class="stripe cell-border" style="text-align:center">
+     </table>
+-    <script src="https://build.archlinuxcn.org/~imlonghao/static/3.4.1-jquery.min.js"></script>
+-    <script src="https://build.archlinuxcn.org/~imlonghao/static/1.10.20-jquery.dataTables.min.js"></script>
++    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
++        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
++    <script src="https://cdn.jsdelivr.net/npm/datatables.net@1.10.20/js/jquery.dataTables.min.js"
++        integrity="sha256-LXQzPhL1IRyKkA7HpCOBi8I+OC8HqzHUYkjK8S+LKTs=" crossorigin="anonymous"></script>
+     <script>
+         const DATE_FORMATTER = new Intl.DateTimeFormat(undefined, {
+             timeStyle: "medium",
+@@ -21,7 +24,7 @@
+         $(document).ready(function () {
+             $('#l').DataTable({
+                 "ajax": {
+-                    url: "/imlonghao-api/current",
++                    url: "/api/current",
+                     dataSrc: ""
+                 },
+                 "order": [[0, "desc"]],
+@@ -29,7 +32,7 @@
+                 "columnDefs": [
+                     {
+                         targets: 0,
+-                        title: "更新时间",
++                        title: "Update Time",
+                         data: "updated_at",
+                         render: function (data, type, row, meta) {
+                             if (type == 'display') {
+@@ -41,22 +44,22 @@
+                     },
+                     {
+                         targets: 1,
+-                        title: "包名",
++                        title: "Package Name",
+                         data: "pkgbase"
+                     },
+                     {
+                         targets: 2,
+-                        title: "状态",
++                        title: "Status",
+                         data: "status"
+                     },
+                     {
+                         targets: 3,
+-                        title: "上次打包时间",
++                        title: "Last Packaging Time",
+                         data: "elapsed"
+                     },
+                     {
+                         targets: 4,
+-                        title: "打包原因",
++                        title: "Packaging Reason",
+                         data: "reasons",
+                         render: function (data, type, row, meta) {
+                             return JSON.parse(data)
+@@ -68,4 +71,4 @@
+     </script>
+ </body>
+ 
+-</html>
+\ No newline at end of file
++</html>

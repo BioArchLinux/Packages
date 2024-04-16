@@ -1,0 +1,10 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index 02108c9..5941d6e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -1,5 +1,5 @@
+ [package]
+-name = "archlinuxcn-packages"
++name = "bioarchlinux-packages"
+ version = "0.2.6"
+ edition = "2021"
