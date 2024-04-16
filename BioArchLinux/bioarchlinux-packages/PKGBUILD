@@ -9,15 +9,13 @@ url="https://github.com/BioArchLinux/bioarchlinux-packages"
 depends=()
 epoch=1
 makedepends=('rust' 'git')
-optdepends=()
-provides=()
 source=(git+https://github.com/imlonghao/archlinuxcn-packages.git#tag=v$pkgver
-		$pkgname.service
-		cargo.patch
-		current_html.patch
-		index_html.patch
-		log_html.patch
-		rust.patch)
+	$pkgname.service
+	cargo.patch
+	current_html.patch
+	index_html.patch
+	log_html.patch
+	rust.patch)
 sha256sums=('SKIP'
             'dd2a46ad3b1e7d532b53f10ced77fbd74924c8635ff3778d62a42f0606295d2c'
             '06336c1294cea451281abe8965767d369b6d36738cabea29e490f100740548f3'
@@ -42,7 +40,7 @@ build() {
 package() {
   install -Dm755 $pkgname.service $pkgdir/usr/lib/systemd/system/$pkgname.service
   cd "$_pkgname"
-  install -Dm755 "target/release/$_pkgname" $pkgdir/usr/bin/$pkgname
+  install -Dm755 "target/release/$pkgname" $pkgdir/usr/bin/$pkgname
   install -dm755 "$pkgdir"/usr/share/webapps/${pkgname}
   cd html
   cp *.html $pkgdir/usr/share/webapps/$pkgname/
