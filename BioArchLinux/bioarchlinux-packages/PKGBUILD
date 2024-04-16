@@ -20,7 +20,7 @@ source=(git+https://github.com/imlonghao/archlinuxcn-packages.git#tag=v$pkgver
 		rust.patch)
 sha256sums=('5224059ffb7cedb1b6372df2c5431dd3c9a720a7b2774d50dffbe15456a30b05'
             'dd2a46ad3b1e7d532b53f10ced77fbd74924c8635ff3778d62a42f0606295d2c'
-            '970b365af5f1185f35a77a83e8d2923d68fbba8944b98537bcf961bf51d3ed7e'
+            '06336c1294cea451281abe8965767d369b6d36738cabea29e490f100740548f3'
             '53fff749bc1918b4606cd22c8227c9f184dec0f129c52bd2a2a444a899a926f3'
             '3e9cad1eecc70b66acc72aeb4886e0ed6df55aa66e60031807946652a8e0a01a'
             'cf8dd25936b59daceea24f867fdf0c3fe5681ce84f7248ed867c245385211576'
