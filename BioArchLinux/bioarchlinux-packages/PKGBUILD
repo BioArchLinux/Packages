@@ -1,8 +1,8 @@
 # Maintainer: guoyi
 pkgname=bioarchlinux-packages
 _pkgname=archlinuxcn-packages
-pkgver=0.2.7
-pkgrel=2
+pkgver=0.2.8
+pkgrel=1
 pkgdesc="build status site"
 arch=('x86_64')
 url="https://github.com/BioArchLinux/bioarchlinux-packages"
@@ -16,7 +16,7 @@ source=(git+https://github.com/imlonghao/archlinuxcn-packages.git#tag=v$pkgver
 	index_html.patch
 	log_html.patch
 	rust.patch)
-sha256sums=('SKIP'
+sha256sums=('83144e98e64706d3dbbd0701556aacf85efe4bb9fb84bb599e7a64c57f64e62e'
             'dd2a46ad3b1e7d532b53f10ced77fbd74924c8635ff3778d62a42f0606295d2c'
             '06336c1294cea451281abe8965767d369b6d36738cabea29e490f100740548f3'
             '9688e901488b8c42a71153374c2e8b8dfbc2fb6333df1bb0962f880a98ac3b4f'
