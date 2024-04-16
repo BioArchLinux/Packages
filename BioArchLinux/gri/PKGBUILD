@@ -6,6 +6,7 @@
 pkgname=gri
 pkgver=2.12.27
 pkgrel=1
+epoch=0
 pkgdesc="A script-based language for scientific graphics programming"
 arch=('i686' 'x86_64')
 license=('GPL-3.0-or-later')
