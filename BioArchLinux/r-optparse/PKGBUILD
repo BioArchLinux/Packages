@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=optparse
-_pkgver=1.7.4
+_pkgver=1.7.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Command Line Option Parser"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -18,8 +18,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f47ae53b0e8096cc86de608d868fb303')
-b2sums=('83be2c62b80943d1e1e833a927390cfa64108bf1d944b069f52679d2a486165f439fad0f5138157613d921b93c09cd8bd47cd79bb3c9ea7d01ddff41bd86614c')
+md5sums=('8c943a4299157ea22967309e8c7158c2')
+b2sums=('4379ce2a3947934ca2e6c83a34fddd77ca49313ea77d91908a13b8ef583259af0c31f1d6c9f1cf15405fb5068165aed56395edcce52c3d2843b8691ed2bb000a')
 
 build() {
   mkdir build
