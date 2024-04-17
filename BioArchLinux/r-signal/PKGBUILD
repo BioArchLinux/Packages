@@ -4,7 +4,7 @@ _pkgname=signal
 _pkgver=1.8-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Signal Processing"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -19,8 +19,8 @@ optdepends=(
   r-pracma
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b0d6578018b3f5bae98df615f997d70b')
-b2sums=('0beb0b32fc5952df7915d59410a9ecc4233d50d1c8e8e82424af215c7c918e151833e095e05961c7d4168942cc910be4f6aa905f78035d2a7f37f9805f666b8a')
+md5sums=('b10a342e277ff7642dd90c70e87e579a')
+b2sums=('647e6cc61fe37152db6baecae06c01802420adc9cd3753798c5918d5c9ba5b7cc1ee195f0605741f7aaa8818df209e9b4e8f39d175c3e2341f3e367f753c62cc')
 
 build() {
   mkdir build
