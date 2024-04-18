@@ -10,7 +10,7 @@ repo_depends:
 - r-ggally
 - r-ggplot2
 - r-iranges
-- r-rbokeh
+- r-plotly
 - r-rcolorbrewer
 - r-reshape2
 - r-rmarkdown
