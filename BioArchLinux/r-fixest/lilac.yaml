@@ -7,6 +7,7 @@ repo_depends:
 - r-numderiv
 - r-rcpp
 - r-sandwich
+- r-stringmagic
 repo_makedepends:
 - r-data.table
 update_on:
