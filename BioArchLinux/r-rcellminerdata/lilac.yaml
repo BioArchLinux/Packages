@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: rcellminerData_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rcellminerData
+- source: rpkgs
+  pkgname: rcellminerData
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

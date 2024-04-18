@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 update_on:
-- regex: multtest_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/multtest
+- source: rpkgs
+  pkgname: multtest
+  repo: bioc
+  md5: true
 - alias: r

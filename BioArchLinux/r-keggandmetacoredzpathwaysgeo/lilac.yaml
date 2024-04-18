@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 update_on:
-- regex: KEGGandMetacoreDzPathwaysGEO_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/KEGGandMetacoreDzPathwaysGEO
+- source: rpkgs
+  pkgname: KEGGandMetacoreDzPathwaysGEO
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

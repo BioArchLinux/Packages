@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: twilight_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/twilight
+- source: rpkgs
+  pkgname: twilight
+  repo: bioc
+  md5: true
 - alias: r

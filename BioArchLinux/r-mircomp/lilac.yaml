@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-mircompdata
 update_on:
-- regex: miRcomp_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/miRcomp
+- source: rpkgs
+  pkgname: miRcomp
+  repo: bioc
+  md5: true
 - alias: r

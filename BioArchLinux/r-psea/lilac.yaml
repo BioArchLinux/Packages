@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: PSEA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PSEA
+- source: rpkgs
+  pkgname: PSEA
+  repo: bioc
+  md5: true
 - alias: r

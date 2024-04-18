@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: geneRecommender_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/geneRecommender
+- source: rpkgs
+  pkgname: geneRecommender
+  repo: bioc
+  md5: true
 - alias: r

@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-fdrtool
 update_on:
-- regex: HybridMTest_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/HybridMTest
+- source: rpkgs
+  pkgname: HybridMTest
+  repo: bioc
+  md5: true
 - alias: r

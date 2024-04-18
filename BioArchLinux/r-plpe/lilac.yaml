@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-lpe
 update_on:
-- regex: PLPE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PLPE
+- source: rpkgs
+  pkgname: PLPE
+  repo: bioc
+  md5: true
 - alias: r

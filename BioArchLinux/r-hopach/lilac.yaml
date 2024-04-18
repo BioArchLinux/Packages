@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 update_on:
-- regex: hopach_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/hopach
+- source: rpkgs
+  pkgname: hopach
+  repo: bioc
+  md5: true
 - alias: r

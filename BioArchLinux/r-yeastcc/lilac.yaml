@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: yeastCC_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/yeastCC
+- source: rpkgs
+  pkgname: yeastCC
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

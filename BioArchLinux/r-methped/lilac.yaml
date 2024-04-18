@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-randomforest
 update_on:
-- regex: MethPed_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MethPed
+- source: rpkgs
+  pkgname: MethPed
+  repo: bioc
+  md5: true
 - alias: r

@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-biobase
 update_on:
-- regex: multiscan_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/multiscan
+- source: rpkgs
+  pkgname: multiscan
+  repo: bioc
+  md5: true
 - alias: r

@@ -7,7 +7,8 @@ repo_depends:
 - r-biocgenerics
 - r-nnls
 update_on:
-- regex: UNDO_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/UNDO
+- source: rpkgs
+  pkgname: UNDO
+  repo: bioc
+  md5: true
 - alias: r

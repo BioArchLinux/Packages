@@ -7,7 +7,8 @@ repo_depends:
 - r-gtools
 - r-rcolorbrewer
 update_on:
-- regex: RTCA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RTCA
+- source: rpkgs
+  pkgname: RTCA
+  repo: bioc
+  md5: true
 - alias: r
