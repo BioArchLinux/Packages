@@ -1,14 +1,14 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-cpp11
-  - r-jsonlite
+- r-cli
+repo_makedepends:
+- r-cpp11
 update_on:
-  - regex: rjsoncons_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=rjsoncons
+- source: rpkgs
+  pkgname: rjsoncons
+  repo: cran
+  md5: true
+- alias: r
