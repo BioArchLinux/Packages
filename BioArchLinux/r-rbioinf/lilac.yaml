@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-graph
 update_on:
-- regex: RBioinf_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RBioinf
+- source: rpkgs
+  pkgname: RBioinf
+  repo: bioc
+  md5: true
 - alias: r

@@ -6,7 +6,8 @@ repo_depends:
 - r-graph
 - r-xml
 update_on:
-- regex: CodeDepends_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=CodeDepends
+- source: rpkgs
+  pkgname: CodeDepends
+  repo: cran
+  md5: true
 - alias: r

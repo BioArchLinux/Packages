@@ -7,7 +7,8 @@ repo_depends:
 - r-rjava
 - r-runit
 update_on:
-- regex: gaggle_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/gaggle
+- source: rpkgs
+  pkgname: gaggle
+  repo: bioc
+  md5: true
 - alias: r

@@ -6,7 +6,8 @@ repo_depends:
 - r-biobase
 - r-graph
 update_on:
-- regex: RbcBook1_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RbcBook1
+- source: rpkgs
+  pkgname: RbcBook1
+  repo: bioc
+  md5: true
 - alias: r

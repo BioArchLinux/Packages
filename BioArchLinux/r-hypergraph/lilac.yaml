@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-graph
 update_on:
-- regex: hypergraph_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/hypergraph
+- source: rpkgs
+  pkgname: hypergraph
+  repo: bioc
+  md5: true
 - alias: r
