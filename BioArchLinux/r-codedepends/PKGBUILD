@@ -4,7 +4,7 @@ _pkgname=CodeDepends
 _pkgver=0.6.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Analysis of R Code for Reproducible Research and Code Comprehension"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
