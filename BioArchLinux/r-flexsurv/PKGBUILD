@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=flexsurv
-_pkgver=2.2.2
+_pkgver=2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Flexible Parametric Survival and Multi-State Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -31,23 +31,29 @@ depends=(
   r-tidyselect
 )
 checkdepends=(
+  r-broom
+  r-covr
+  r-splines2
   r-testthat
 )
 optdepends=(
+  r-broom
   r-colorspace
+  r-covr
   r-eha
   r-flexsurvcure
   r-knitr
   r-lubridate
   r-msm
   r-rmarkdown
+  r-splines2
   r-survminer
   r-testthat
   r-th.data
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a86c5647062c60b2bebb5ffb8165604f')
-b2sums=('f866caeba0cb39bf8ef40dbb0c7d3df6589a2e449d8bd1abaf5da1d3804a621b44cb275f68d0b274fb1f4e28a469a7f5994e449b0d857028bbec42e369eb823d')
+md5sums=('3c075b4b560da1f6092d0311f44ad3c6')
+b2sums=('adee84ffe15d37bdbd6aeb7099f827711c6faa3832d387eff99355a27c99f49ef99824f22a7033883624bb974a74a7aafca61ca8704d79943b396d5353733a7d')
 
 build() {
   mkdir build

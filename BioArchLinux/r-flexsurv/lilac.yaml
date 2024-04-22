@@ -23,6 +23,9 @@ repo_depends:
 - r-tidyr
 - r-tidyselect
 repo_makedepends:
+- r-broom
+- r-covr
+- r-splines2
 - r-testthat
 update_on:
 - source: rpkgs
