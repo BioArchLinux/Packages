@@ -3,14 +3,17 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-dqrng
 - r-fnn
 - r-irlba
 - r-rcpp
 - r-rcppannoy
+- r-rspectra
+repo_makedepends:
+- r-dqrng
 - r-rcppprogress
 update_on:
-- regex: uwot_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=uwot
+- source: rpkgs
+  pkgname: uwot
+  repo: cran
+  md5: true
 - alias: r
