@@ -5,7 +5,13 @@ maintainers:
 repo_depends:
 - r-graph
 update_on:
-- regex: Rgraphviz_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Rgraphviz
+- source: rpkgs
+  pkgname: Rgraphviz
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
