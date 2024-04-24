@@ -7,7 +7,7 @@ _pkgname=plogr
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=12
 pkgdesc="The 'plog' C++ Logging Library"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
