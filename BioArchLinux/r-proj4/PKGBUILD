@@ -4,7 +4,7 @@ _pkgname=proj4
 _pkgver=1.0-14
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="A simple interface to the PROJ.4 cartographic projections library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
