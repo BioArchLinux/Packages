@@ -4,7 +4,7 @@ _pkgname=bigmemory.sri
 _pkgver=0.1.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A Shared Resource Interface for Bigmemory Project Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
