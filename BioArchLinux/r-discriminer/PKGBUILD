@@ -4,7 +4,7 @@ _pkgname=DiscriMiner
 _pkgver=0.1-29
 pkgname=r-${_pkgname,,}
 pkgver=0.1.29
-pkgrel=8
+pkgrel=9
 pkgdesc='Tools of the Trade for Discriminant Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
