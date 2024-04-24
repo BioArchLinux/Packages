@@ -4,7 +4,7 @@ _pkgname=mppa
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.0
-pkgrel=10
+pkgrel=11
 pkgdesc='Statistics for analysing multiple simultaneous point processes on the real line'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
