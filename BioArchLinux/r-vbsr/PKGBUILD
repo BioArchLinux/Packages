@@ -4,7 +4,7 @@ _pkgname=vbsr
 _pkgver=0.0.5
 pkgname=r-${_pkgname,,}
 pkgver=0.0.5
-pkgrel=6
+pkgrel=7
 pkgdesc='Variational Bayes Spike Regression Regularized Linear Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
