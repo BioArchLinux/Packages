@@ -4,7 +4,7 @@ _pkgname=deming
 _pkgver=1.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Deming, Theil-Sen, Passing-Bablock and Total Least Squares Regression"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
