@@ -4,7 +4,7 @@ _pkgname=Deriv
 _pkgver=4.1.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Symbolic Differentiation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
