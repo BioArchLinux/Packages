@@ -4,7 +4,7 @@ _pkgname=oompaBase
 _pkgver=3.2.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Class Unions, Matrix Operations, and Color Schemes for OOMPA"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
