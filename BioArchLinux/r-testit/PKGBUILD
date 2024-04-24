@@ -7,7 +7,7 @@ _pkgname=testit
 _pkgver=0.13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="A Simple Package for Testing R Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
