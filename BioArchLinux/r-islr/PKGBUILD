@@ -6,7 +6,7 @@ _pkgname=ISLR
 _pkgver=1.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Data for an Introduction to Statistical Learning with Applications in R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
