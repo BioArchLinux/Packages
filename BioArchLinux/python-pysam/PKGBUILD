@@ -5,9 +5,9 @@
 
 pkgname=python-pysam
 _name=pysam
-pkgver=0.22.0
+pkgver=0.22.1
 _pkgver=0.19.1
-pkgrel=4
+pkgrel=1
 pkgdesc='Python interface for the SAM/BAM sequence alignment and mapping format'
 arch=('x86_64')
 url="https://github.com/pysam-developers/pysam"
@@ -21,7 +21,7 @@ makedepends=(
 provides=('python-pysam')
 options=(!emptydirs)
 source=("https://github.com/pysam-developers/${_name}/archive/v${pkgver}.tar.gz")
-b2sums=('74bf14655f10c39ec048e61a68334a054a5f2cae4c7f90bebfdaf611e1cea3393a6ffb79df12d6fb47d554a6565f5c1cc4c73b51d8886468f51bd25ba10f41ab')
+b2sums=('6f83c445c7e63e28823f443b0f106726303b0609f4040e9dca930c820d48c2adfe13d33ecffb514ce75c3b03968af050652689a0be39aaabca1af546e9188480')
 
 build() {
   cd "$srcdir/$_name-$pkgver"
