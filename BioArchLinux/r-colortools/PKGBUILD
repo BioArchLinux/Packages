@@ -4,7 +4,7 @@ _pkgname=colortools
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5
-pkgrel=8
+pkgrel=9
 pkgdesc='Tools for colors in a Hue-Saturation-Value (HSV) color model'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
