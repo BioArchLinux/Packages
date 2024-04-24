@@ -8,7 +8,7 @@ _pkgname=mime
 _pkgver=0.12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=13
+pkgrel=14
 pkgdesc="Map Filenames to MIME Types"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
