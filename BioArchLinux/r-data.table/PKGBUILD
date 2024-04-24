@@ -4,7 +4,7 @@ _pkgname=data.table
 _pkgver=1.15.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Extension of \`data.frame\`"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
