@@ -4,7 +4,7 @@ _pkgname=stabs
 _pkgver=0.6-4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Stability Selection with Error Control"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
