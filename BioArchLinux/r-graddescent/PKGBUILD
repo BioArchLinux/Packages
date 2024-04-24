@@ -4,7 +4,7 @@ _pkgname=gradDescent
 _pkgver=3.0
 pkgname=r-${_pkgname,,}
 pkgver=3.0
-pkgrel=8
+pkgrel=9
 pkgdesc='Gradient Descent for Regression Tasks'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
