@@ -4,7 +4,7 @@ _pkgname=dmt
 _pkgver=0.8.20
 pkgname=r-${_pkgname,,}
 pkgver=0.8.20
-pkgrel=8
+pkgrel=9
 pkgdesc='Dependency Modeling Toolkit'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
