@@ -4,7 +4,7 @@ _pkgname=mgsub
 _pkgver=1.7.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Safe, Multiple, Simultaneous String Substitution"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
