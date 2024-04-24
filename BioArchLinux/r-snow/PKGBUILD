@@ -4,7 +4,7 @@ _pkgname=snow
 _pkgver=0.4-4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=12
 pkgdesc="Simple Network of Workstations"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
