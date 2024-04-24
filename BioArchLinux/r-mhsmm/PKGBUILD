@@ -4,7 +4,7 @@ _pkgname=mhsmm
 _pkgver=0.4.21
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Inference for Hidden Markov and Semi-Markov Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
