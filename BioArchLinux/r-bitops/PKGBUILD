@@ -10,7 +10,7 @@ _pkgname=bitops
 _pkgver=1.0-7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=12
 pkgdesc="Bitwise Operations"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
