@@ -4,7 +4,7 @@ _pkgname=Rarity
 _pkgver=1.3-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Calculation of Rarity Indices for Species and Assemblages of Species"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
