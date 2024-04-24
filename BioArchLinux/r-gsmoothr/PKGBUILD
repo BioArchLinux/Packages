@@ -4,7 +4,7 @@ _pkgname=gsmoothr
 _pkgver=0.1.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Smoothing tools"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
