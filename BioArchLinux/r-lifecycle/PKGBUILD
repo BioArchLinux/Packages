@@ -7,7 +7,7 @@ _pkgname=lifecycle
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Manage the Life Cycle of your Package Functions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
