@@ -4,7 +4,7 @@ _pkgname=poilog
 _pkgver=0.4.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Poisson Lognormal and Bivariate Poisson Lognormal Distribution"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
