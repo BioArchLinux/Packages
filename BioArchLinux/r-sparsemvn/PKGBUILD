@@ -4,7 +4,7 @@ _pkgname=sparseMVN
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=0.2.2
-pkgrel=8
+pkgrel=9
 pkgdesc='Multivariate Normal Functions for Sparse Covariance and Precision Matrices'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
