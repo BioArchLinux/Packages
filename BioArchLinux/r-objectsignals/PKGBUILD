@@ -4,7 +4,7 @@ _pkgname=objectSignals
 _pkgver=0.10.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Observer Pattern for S4"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
