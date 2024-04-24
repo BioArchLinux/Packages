@@ -6,7 +6,7 @@ _pkgname=globals
 _pkgver=0.16.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Identify Global Objects in R Expressions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
