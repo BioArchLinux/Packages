@@ -4,7 +4,7 @@ _pkgname=pvclust
 _pkgver=2.2-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Hierarchical Clustering with P-Values via Multiscale Bootstrap Resampling"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
