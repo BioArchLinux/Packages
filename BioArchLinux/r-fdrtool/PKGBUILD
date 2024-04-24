@@ -6,7 +6,7 @@ _pkgname=fdrtool
 _pkgver=1.2.17
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Estimation of (Local) False Discovery Rates and Higher Criticism"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
