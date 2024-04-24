@@ -4,7 +4,7 @@ _pkgname=NbClust
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Determining the Best Number of Clusters in a Data Set"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
