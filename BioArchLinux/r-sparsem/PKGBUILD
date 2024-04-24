@@ -9,7 +9,7 @@ _pkgname=SparseM
 _pkgver=1.81
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Sparse Linear Algebra"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
