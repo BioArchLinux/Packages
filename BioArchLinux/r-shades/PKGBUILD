@@ -4,7 +4,7 @@ _pkgname=shades
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Simple Colour Manipulation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
