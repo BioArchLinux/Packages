@@ -4,7 +4,7 @@ _pkgname=csSAM
 _pkgver=1.2.4
 pkgname=r-${_pkgname,,}
 pkgver=1.2.4
-pkgrel=5
+pkgrel=6
 pkgdesc='csSAM - cell-specific Significance Analysis of Microarrays'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
