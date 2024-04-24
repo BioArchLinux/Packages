@@ -5,7 +5,7 @@ _pkgname=rootSolve
 _pkgver=1.8.2.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Nonlinear Root Finding, Equilibrium and Steady-State Analysis of Ordinary Differential Equations"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
