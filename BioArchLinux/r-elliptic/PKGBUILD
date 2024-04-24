@@ -4,7 +4,7 @@ _pkgname=elliptic
 _pkgver=1.4-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Weierstrass and Jacobi Elliptic Functions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
