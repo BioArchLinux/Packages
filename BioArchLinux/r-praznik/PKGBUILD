@@ -4,7 +4,7 @@ _pkgname=praznik
 _pkgver=11.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="Tools for Information-Based Feature Selection and Scoring"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
