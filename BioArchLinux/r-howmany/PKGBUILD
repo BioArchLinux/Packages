@@ -4,7 +4,7 @@ _pkgname=howmany
 _pkgver=0.3-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=9
 pkgdesc="A lower bound for the number of correct rejections"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
