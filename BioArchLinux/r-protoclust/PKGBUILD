@@ -4,7 +4,7 @@ _pkgname=protoclust
 _pkgver=1.6.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Hierarchical Clustering with Prototypes"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
