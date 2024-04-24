@@ -4,7 +4,7 @@ _pkgname=PCICt
 _pkgver=0.5-4.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Implementation of POSIXct Work-Alike for 365 and 360 Day Calendars"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
