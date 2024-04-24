@@ -4,7 +4,7 @@ _pkgname=clipr
 _pkgver=0.8.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Read and Write from the System Clipboard"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
