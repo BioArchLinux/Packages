@@ -5,7 +5,7 @@ _pkgname=R2HTML
 _pkgver=2.3.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="HTML Exportation for R Objects"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
