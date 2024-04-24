@@ -4,7 +4,7 @@ _pkgname=R6
 _pkgver=2.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=12
 pkgdesc="Encapsulated Classes with Reference Semantics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
