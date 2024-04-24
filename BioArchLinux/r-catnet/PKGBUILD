@@ -4,7 +4,7 @@ _pkgname=catnet
 _pkgver=1.16.1
 pkgname=r-${_pkgname,,}
 pkgver=1.16.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Categorical Bayesian Network Inference'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
