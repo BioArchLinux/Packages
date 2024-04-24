@@ -4,7 +4,7 @@ _pkgname=nnlasso
 _pkgver=0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=10
 pkgdesc="Non-Negative Lasso and Elastic Net Penalized Generalized Linear Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
