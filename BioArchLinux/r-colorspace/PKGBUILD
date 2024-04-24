@@ -10,7 +10,7 @@ _pkgname=colorspace
 _pkgver=2.1-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="A Toolbox for Manipulating and Assessing Colors and Palettes"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
