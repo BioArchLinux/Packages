@@ -4,7 +4,7 @@ _pkgname=bezier
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Toolkit for Bezier Curves and Splines"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
