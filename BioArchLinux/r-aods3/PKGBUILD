@@ -4,7 +4,7 @@ _pkgname=aods3
 _pkgver=0.4-1.2
 pkgname=r-${_pkgname,,}
 pkgver=0.4.1.2
-pkgrel=5
+pkgrel=6
 pkgdesc='Analysis of Overdispersed Data using S3 Methods'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
