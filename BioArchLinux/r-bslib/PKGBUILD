@@ -6,7 +6,7 @@ _pkgname=bslib
 _pkgver=0.7.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
