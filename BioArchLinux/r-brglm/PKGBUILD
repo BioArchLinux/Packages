@@ -4,7 +4,7 @@ _pkgname=brglm
 _pkgver=0.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Bias Reduction in Binomial-Response Generalized Linear Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
