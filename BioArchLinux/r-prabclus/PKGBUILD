@@ -4,7 +4,7 @@ _pkgname=prabclus
 _pkgver=2.3-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=5
 pkgdesc="Functions for Clustering and Testing of Presence-Absence, Abundance and Multilocus Genetic Data"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
