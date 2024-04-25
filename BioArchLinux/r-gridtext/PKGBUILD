@@ -5,7 +5,7 @@ _pkgname=gridtext
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5
-pkgrel=2
+pkgrel=3
 pkgdesc="Improved Text Rendering Support for 'Grid' Graphics"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
