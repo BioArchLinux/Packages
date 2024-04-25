@@ -4,7 +4,7 @@ _pkgname=RNeXML
 _pkgver=2.4.11
 pkgname=r-${_pkgname,,}
 pkgver=2.4.11
-pkgrel=2
+pkgrel=3
 pkgdesc="Semantically Rich I/O for the 'NeXML' Format"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
