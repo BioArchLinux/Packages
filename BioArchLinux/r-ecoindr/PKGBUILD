@@ -4,7 +4,7 @@ _pkgname=EcoIndR
 _pkgver=2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Ecological Indicators"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
