@@ -4,7 +4,7 @@ _pkgname=sampleSelection
 _pkgver=1.2-12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Sample Selection Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
