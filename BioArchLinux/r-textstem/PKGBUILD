@@ -4,7 +4,7 @@ _pkgname=textstem
 _pkgver=0.1.4
 pkgname=r-${_pkgname,,}
 pkgver=0.1.4
-pkgrel=5
+pkgrel=6
 pkgdesc='Tools for Stemming and Lemmatizing Text'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
