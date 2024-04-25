@@ -4,7 +4,7 @@ _pkgname=reportROC
 _pkgver=3.6
 pkgname=r-${_pkgname,,}
 pkgver=3.6
-pkgrel=3
+pkgrel=4
 pkgdesc='An Easy Way to Report ROC Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
