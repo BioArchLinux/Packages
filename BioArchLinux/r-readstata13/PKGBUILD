@@ -4,7 +4,7 @@ _pkgname=readstata13
 _pkgver=0.10.1
 pkgname=r-${_pkgname,,}
 pkgver=0.10.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Import 'Stata' Data Files"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
