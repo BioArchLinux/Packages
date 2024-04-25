@@ -4,7 +4,7 @@ _pkgname=assertive.data.us
 _pkgver=0.0-2
 pkgname=r-${_pkgname,,}
 pkgver=0.0.2
-pkgrel=8
+pkgrel=9
 pkgdesc='Assertions to Check Properties of Strings'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
