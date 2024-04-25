@@ -4,7 +4,7 @@ _pkgname=BMA
 _pkgver=3.18.17
 pkgname=r-${_pkgname,,}
 pkgver=3.18.17
-pkgrel=3
+pkgrel=4
 pkgdesc='Bayesian Model Averaging'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
