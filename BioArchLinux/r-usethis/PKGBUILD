@@ -6,7 +6,7 @@ _pkgname=usethis
 _pkgver=2.2.3
 pkgname=r-${_pkgname,,}
 pkgver=2.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Automate Package and Project Setup'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
