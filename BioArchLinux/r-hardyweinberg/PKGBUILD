@@ -4,7 +4,7 @@ _pkgname=HardyWeinberg
 _pkgver=1.7.8
 pkgname=r-${_pkgname,,}
 pkgver=1.7.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Statistical Tests and Graphics for Hardy-Weinberg Equilibrium'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
