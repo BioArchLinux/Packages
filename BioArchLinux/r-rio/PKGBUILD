@@ -7,7 +7,7 @@ _pkgname=rio
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="A Swiss-Army Knife for Data I/O"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
