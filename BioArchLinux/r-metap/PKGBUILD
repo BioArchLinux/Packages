@@ -4,7 +4,7 @@ _pkgname=metap
 _pkgver=1.10
 pkgname=r-${_pkgname,,}
 pkgver=1.10
-pkgrel=1
+pkgrel=2
 pkgdesc='Meta-Analysis of Significance Values'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
