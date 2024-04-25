@@ -4,7 +4,7 @@ _pkgname=bsplus
 _pkgver=0.1.4
 pkgname=r-${_pkgname,,}
 pkgver=0.1.4
-pkgrel=2
+pkgrel=3
 pkgdesc='Adds Functionality to the R Markdown + Shiny Bootstrap Framework'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
