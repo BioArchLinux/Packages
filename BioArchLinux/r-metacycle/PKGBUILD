@@ -4,7 +4,7 @@ _pkgname=MetaCycle
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=1.2.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Evaluate Periodicity in Large Scale Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
