@@ -29,9 +29,17 @@ optdepends=(
   r-shortread
   r-summarizedexperiment
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ee94f4f6c25dcaf7a50f5814495310e3')
-b2sums=('51b67bb4d3832fecb2d5eaee90baa93c5f13fe1ecc4eea5416db9c8735deeb53bf9d33f677943e25cc2b337fc184b335c274d08863f30e2d7057429034214a9c')
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-build.patch")
+md5sums=('ee94f4f6c25dcaf7a50f5814495310e3'
+         'b6cc67f691578425ff3b839f72a2ad39')
+b2sums=('51b67bb4d3832fecb2d5eaee90baa93c5f13fe1ecc4eea5416db9c8735deeb53bf9d33f677943e25cc2b337fc184b335c274d08863f30e2d7057429034214a9c'
+        'e8af4a57c5a4fba1f2598e77df05156bc0231a142bcedb4b6480404e552fbb65cf8d99731145ddb705345b7041918d0b5862a4ce35e5c88114a7bdaebfc608a7')
+
+prepare() {
+  # fix format string errors
+  patch -Np1 -i fix-build.patch
+}
 
 build() {
   mkdir build

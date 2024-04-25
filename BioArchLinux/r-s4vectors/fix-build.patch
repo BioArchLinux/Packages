@@ -1,0 +1,53 @@
+diff --git a/S4Vectors/src/Rle_class.c b/S4Vectors/src/Rle_class.c
+index ba33736..92a0331 100644
+--- a/S4Vectors/src/Rle_class.c
++++ b/S4Vectors/src/Rle_class.c
+@@ -1133,7 +1133,7 @@ SEXP _subset_Rle_by_ranges(SEXP x,
+ 			mapped_range_Rtrim,
+ 			method);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	for (i = 0; i < nranges; i++)
+ 		mapped_range_start[i]++;  /* add 1 to get the starts */
+ 	return subset_Rle_by_mapped_ranges(x,
+@@ -1158,7 +1158,7 @@ SEXP _subset_Rle_by_positions(SEXP x, const int *pos, int npos, int method)
+ 			mapped_pos,
+ 			method);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	return subset_Rle_by_mapped_pos(x, mapped_pos, npos);
+ }
+ 
+@@ -1187,7 +1187,7 @@ SEXP Rle_extract_range(SEXP x, SEXP start, SEXP end)
+ 				&mapped_range_Ltrim,
+ 				&mapped_range_Rtrim);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	mapped_range_offset++;  /* add 1 to get the start */
+ 	return extract_Rle_mapped_range(x_values, INTEGER(x_lengths),
+ 				mapped_range_offset,
+diff --git a/S4Vectors/src/map_ranges_to_runs.c b/S4Vectors/src/map_ranges_to_runs.c
+index 8fb616c..d87ab47 100644
+--- a/S4Vectors/src/map_ranges_to_runs.c
++++ b/S4Vectors/src/map_ranges_to_runs.c
+@@ -679,7 +679,7 @@ SEXP map_ranges(SEXP run_lengths, SEXP start, SEXP width, SEXP method)
+ 			INTEGER(method)[0]);
+ 	if (errmsg != NULL) {
+ 		UNPROTECT(4);
+-		error(errmsg);
++		error("%s", errmsg);
+ 	}
+ 	PROTECT(ans = NEW_LIST(4));
+ 	SET_VECTOR_ELT(ans, 0, mapped_range_offset);
+@@ -706,7 +706,7 @@ SEXP map_positions(SEXP run_lengths, SEXP pos, SEXP method)
+ 			INTEGER(method)[0]);
+ 	if (errmsg != NULL) {
+ 		UNPROTECT(1);
+-		error(errmsg);
++		error("%s", errmsg);
+ 	}
+ 	UNPROTECT(1);
+ 	return mapped_pos;
