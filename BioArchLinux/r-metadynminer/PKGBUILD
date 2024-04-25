@@ -6,7 +6,7 @@ _pkgname=metadynminer
 _pkgver=0.1.7
 pkgname=r-${_pkgname,,}
 pkgver=0.1.7
-pkgrel=5
+pkgrel=6
 pkgdesc="Tools to Read, Analyze and Visualize Metadynamics HILLS Files from 'Plumed'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
