@@ -4,7 +4,7 @@ _pkgname=spatstat.linnet
 _pkgver=3.1-5
 pkgname=r-${_pkgname,,}
 pkgver=3.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Linear Networks Functionality of the 'spatstat' Family"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
