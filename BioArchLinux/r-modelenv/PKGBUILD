@@ -4,7 +4,7 @@ _pkgname=modelenv
 _pkgver=0.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Provide Tools to Register Models for Use in 'tidymodels'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
