@@ -7,7 +7,7 @@ _pkgname=psych
 _pkgver=2.4.3
 pkgname=r-${_pkgname,,}
 pkgver=2.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Procedures for Psychological, Psychometric, and Personality Research'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
