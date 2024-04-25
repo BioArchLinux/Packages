@@ -4,7 +4,7 @@ _pkgname=base64
 _pkgver=2.0.1
 pkgname=r-${_pkgname,,}
 pkgver=2.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Base64 Encoder and Decoder'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
