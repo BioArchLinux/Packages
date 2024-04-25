@@ -5,7 +5,7 @@ _pkgname=vdiffr
 _pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Visual Regression Testing and Graphical Diffing"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
