@@ -5,7 +5,7 @@ _pkgname=FSA
 _pkgver=0.9.5
 pkgname=r-${_pkgname,,}
 pkgver=0.9.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple Fisheries Stock Assessment Methods'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
