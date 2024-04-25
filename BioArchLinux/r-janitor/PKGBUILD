@@ -4,7 +4,7 @@ _pkgname=janitor
 _pkgver=2.2.0
 pkgname=r-${_pkgname,,}
 pkgver=2.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Simple Tools for Examining and Cleaning Dirty Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
