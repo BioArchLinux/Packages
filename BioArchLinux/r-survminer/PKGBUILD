@@ -4,7 +4,7 @@ _pkgname=survminer
 _pkgver=0.4.9
 pkgname=r-${_pkgname,,}
 pkgver=0.4.9
-pkgrel=5
+pkgrel=6
 pkgdesc="Drawing Survival Curves using 'ggplot2'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
