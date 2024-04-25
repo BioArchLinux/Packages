@@ -5,7 +5,7 @@ _pkgname=bayesplot
 _pkgver=1.11.1
 pkgname=r-${_pkgname,,}
 pkgver=1.11.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Plotting for Bayesian Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
