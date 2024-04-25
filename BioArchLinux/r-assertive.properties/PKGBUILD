@@ -4,7 +4,7 @@ _pkgname=assertive.properties
 _pkgver=0.0-5
 pkgname=r-${_pkgname,,}
 pkgver=0.0.5
-pkgrel=7
+pkgrel=8
 pkgdesc='Assertions to Check Properties of Variables'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
