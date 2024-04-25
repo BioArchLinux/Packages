@@ -4,7 +4,7 @@ _pkgname=RcppHungarian
 _pkgver=0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Solves Minimum Cost Bipartite Matching Problems"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
