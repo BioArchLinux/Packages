@@ -4,7 +4,7 @@ _pkgname=MetBrewer
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=0.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Color Palettes Inspired by Works at the Metropolitan Museum of Art'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
