@@ -4,7 +4,7 @@ _pkgname=LIM
 _pkgver=1.4.7.1
 pkgname=r-${_pkgname,,}
 pkgver=1.4.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linear Inverse Model examples and solution methods.'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
