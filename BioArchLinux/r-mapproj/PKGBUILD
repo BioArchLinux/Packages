@@ -5,7 +5,7 @@ _pkgname=mapproj
 _pkgver=1.2.11
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Map Projections"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
