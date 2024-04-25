@@ -4,7 +4,7 @@ _pkgname=gggenes
 _pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Draw Gene Arrow Maps in 'ggplot2'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
