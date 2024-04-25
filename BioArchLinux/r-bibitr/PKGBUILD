@@ -5,7 +5,7 @@ _pkgname=BiBitR
 _pkgver=0.3.1
 pkgname=r-${_pkgname,,}
 pkgver=0.3.1
-pkgrel=3
+pkgrel=4
 pkgdesc='R Wrapper for Java Implementation of BiBit'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
