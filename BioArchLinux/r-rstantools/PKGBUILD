@@ -5,7 +5,7 @@ _pkgname=rstantools
 _pkgver=2.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools for Developing R Packages Interfacing with 'Stan'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
