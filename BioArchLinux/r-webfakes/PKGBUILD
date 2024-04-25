@@ -2,10 +2,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=webfakes
-_pkgver=1.3.0
+_pkgver=1.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Fake Web Apps for HTTP Testing"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -30,8 +30,8 @@ optdepends=(
   r-zip
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0d5a6f8dff6c26606b48f267063974a5')
-b2sums=('a356ea5e963643b4b1fa63a950a09736af6f5c6337b8c2b9672ea33439fe9f32e940e7c71427560060682dbd316a6c1dda814ed5f79938d96b3ba01825e7104b')
+md5sums=('6b692947fd7d1b7bbf748411955659d4')
+b2sums=('0664d742b38849bb8703c2ffe994d4c9cd4d45d012636e3d4f3c8825a241ba1895ce06f81ba024dcc0cf9f2a6525113f2d457767e437874d0b14e66835df2b86')
 
 build() {
   mkdir build
