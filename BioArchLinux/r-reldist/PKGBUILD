@@ -4,7 +4,7 @@ _pkgname=reldist
 _pkgver=1.7-2
 pkgname=r-${_pkgname,,}
 pkgver=1.7.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Relative Distribution Methods'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
