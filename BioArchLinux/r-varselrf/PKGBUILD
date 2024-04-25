@@ -4,7 +4,7 @@ _pkgname=varSelRF
 _pkgver=0.7-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Variable Selection using Random Forests"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
