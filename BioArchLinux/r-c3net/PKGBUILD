@@ -4,7 +4,7 @@ _pkgname=c3net
 _pkgver=1.1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=1.1.1.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Infering large-scale gene networks with C3NET'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
