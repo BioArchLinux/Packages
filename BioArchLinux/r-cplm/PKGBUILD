@@ -4,7 +4,7 @@ _pkgname=cplm
 _pkgver=0.7-12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Compound Poisson Linear Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
