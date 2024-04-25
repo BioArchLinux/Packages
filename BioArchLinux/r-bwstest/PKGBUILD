@@ -4,7 +4,7 @@ _pkgname=BWStest
 _pkgver=0.2.3
 pkgname=r-${_pkgname,,}
 pkgver=0.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Baumgartner Weiss Schindler Test of Equal Distributions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
