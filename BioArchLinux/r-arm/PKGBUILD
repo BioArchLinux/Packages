@@ -4,7 +4,7 @@ _pkgname=arm
 _pkgver=1.14-4
 pkgname=r-${_pkgname,,}
 pkgver=1.14.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Data Analysis Using Regression and Multilevel/Hierarchical Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
