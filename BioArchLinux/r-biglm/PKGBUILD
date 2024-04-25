@@ -5,7 +5,7 @@ _pkgname=biglm
 _pkgver=0.9-2.1
 pkgname=r-${_pkgname,,}
 pkgver=0.9.2.1
-pkgrel=8
+pkgrel=9
 pkgdesc='Bounded Memory Linear and Generalized Linear Models'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
