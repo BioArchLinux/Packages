@@ -4,7 +4,7 @@ _pkgname=inaparc
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=1.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Initialization Algorithms for Partitioning Cluster Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
