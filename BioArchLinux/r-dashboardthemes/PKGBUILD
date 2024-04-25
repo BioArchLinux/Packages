@@ -4,7 +4,7 @@ _pkgname=dashboardthemes
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Customise the Appearance of 'shinydashboard' Applications using Themes"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
