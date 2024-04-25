@@ -5,7 +5,7 @@ _pkgname=showtextdb
 _pkgver=3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Font Files for the 'showtext' Package"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
