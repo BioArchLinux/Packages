@@ -7,7 +7,7 @@ _pkgname=ipred
 _pkgver=0.9-14
 pkgname=r-${_pkgname,,}
 pkgver=0.9.14
-pkgrel=2
+pkgrel=3
 pkgdesc='Improved Predictors'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
