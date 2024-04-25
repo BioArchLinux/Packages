@@ -4,7 +4,7 @@ _pkgname=mixsqp
 _pkgver=0.3-54
 pkgname=r-${_pkgname,,}
 pkgver=0.3.54
-pkgrel=1
+pkgrel=2
 pkgdesc='Sequential Quadratic Programming for Fast Maximum-Likelihood Estimation of Mixture Proportions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
