@@ -7,7 +7,7 @@ _pkgname=miniUI
 _pkgver=0.1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=0.1.1.1
-pkgrel=8
+pkgrel=9
 pkgdesc='Shiny UI Widgets for Small Screens'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
