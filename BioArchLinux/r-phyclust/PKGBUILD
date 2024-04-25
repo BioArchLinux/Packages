@@ -4,7 +4,7 @@ _pkgname=phyclust
 _pkgver=0.1-34
 pkgname=r-${_pkgname,,}
 pkgver=0.1.34
-pkgrel=1
+pkgrel=2
 pkgdesc='Phylogenetic Clustering (Phyloclustering)'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
