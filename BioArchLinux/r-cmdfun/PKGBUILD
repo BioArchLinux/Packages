@@ -4,7 +4,7 @@ _pkgname=cmdfun
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=1.0.2
-pkgrel=5
+pkgrel=6
 pkgdesc='Framework for Building Interfaces to Shell Commands'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
