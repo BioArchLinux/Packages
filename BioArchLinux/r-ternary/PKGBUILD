@@ -4,7 +4,7 @@ _pkgname=Ternary
 _pkgver=2.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Create Ternary and Holdridge Plots"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
