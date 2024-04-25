@@ -4,7 +4,7 @@ _pkgname=koRpus.lang.en
 _pkgver=0.1-4
 pkgname=r-${_pkgname,,}
 pkgver=0.1.4
-pkgrel=6
+pkgrel=7
 pkgdesc="Language Support for 'koRpus' Package: English"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
