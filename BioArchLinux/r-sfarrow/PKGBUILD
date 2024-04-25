@@ -4,7 +4,7 @@ _pkgname=sfarrow
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Read/Write Simple Feature Objects ('sf') with 'Apache' 'Arrow'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
