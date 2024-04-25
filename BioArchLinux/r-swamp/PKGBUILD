@@ -4,7 +4,7 @@ _pkgname=swamp
 _pkgver=1.5.1
 pkgname=r-${_pkgname,,}
 pkgver=1.5.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Visualization, Analysis and Adjustment of High-Dimensional Data in Respect to Sample Annotations'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
