@@ -4,7 +4,7 @@ _pkgname=optextras
 _pkgver=2019-12.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Tools to Support Optimization Possibly with Bounds and Masks"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
