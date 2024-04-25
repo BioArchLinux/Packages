@@ -4,7 +4,7 @@ _pkgname=conicfit
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Algorithms for Fitting Circles, Ellipses and Conics Based on the Work by Prof. Nikolai Chernov"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
