@@ -4,7 +4,7 @@ _pkgname=sqldf
 _pkgver=0.4-11
 pkgname=r-${_pkgname,,}
 pkgver=0.4.11
-pkgrel=6
+pkgrel=7
 pkgdesc='Manipulate R Data Frames Using SQL'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
