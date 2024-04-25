@@ -9,7 +9,7 @@ _pkgname=car
 _pkgver=3.1-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=5
 pkgdesc="Companion to Applied Regression"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
