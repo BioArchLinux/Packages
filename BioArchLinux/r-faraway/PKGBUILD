@@ -4,7 +4,7 @@ _pkgname=faraway
 _pkgver=1.0.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Functions and Datasets for Books by Julian Faraway"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
