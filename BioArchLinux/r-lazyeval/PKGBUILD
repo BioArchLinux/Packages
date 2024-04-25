@@ -10,7 +10,7 @@ _pkgname=lazyeval
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=10
+pkgrel=11
 pkgdesc="Lazy (Non-Standard) Evaluation"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
