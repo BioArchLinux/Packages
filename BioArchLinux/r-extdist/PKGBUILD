@@ -4,7 +4,7 @@ _pkgname=ExtDist
 _pkgver=0.7-2
 pkgname=r-${_pkgname,,}
 pkgver=0.7.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Extending the Range of Functions for Probability Distributions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
