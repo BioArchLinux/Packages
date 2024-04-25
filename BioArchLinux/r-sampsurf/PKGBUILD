@@ -4,7 +4,7 @@ _pkgname=sampSurf
 _pkgver=0.7-6
 pkgname=r-${_pkgname,,}
 pkgver=0.7.6
-pkgrel=5
+pkgrel=6
 pkgdesc='Sampling Surface Simulation for Areal Sampling Methods'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
