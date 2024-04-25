@@ -4,7 +4,7 @@ _pkgname=httpcache
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=1.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Query Cache for HTTP Clients'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
