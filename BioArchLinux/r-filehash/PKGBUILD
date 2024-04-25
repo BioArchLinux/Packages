@@ -7,7 +7,7 @@ _pkgname=filehash
 _pkgver=2.4-5
 pkgname=r-${_pkgname,,}
 pkgver=2.4.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Simple Key-Value Database'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
