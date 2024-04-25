@@ -7,7 +7,7 @@ _pkgname=reshape2
 _pkgver=1.4.4
 pkgname=r-${_pkgname,,}
 pkgver=1.4.4
-pkgrel=8
+pkgrel=9
 pkgdesc='Flexibly Reshape Data: A Reboot of the Reshape Package'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
