@@ -4,7 +4,7 @@ _pkgname=GenomicTools.fileHandler
 _pkgver=0.1.5.9
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5.9
-pkgrel=6
+pkgrel=7
 pkgdesc='File Handlers for Genomic Data Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
