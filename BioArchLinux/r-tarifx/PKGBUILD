@@ -4,7 +4,7 @@ _pkgname=taRifx
 _pkgver=1.0.6.2
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6.2
-pkgrel=6
+pkgrel=7
 pkgdesc='Collection of Utility and Convenience Functions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
