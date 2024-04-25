@@ -4,7 +4,7 @@ _pkgname=sn
 _pkgver=2.1.1
 pkgname=r-${_pkgname,,}
 pkgver=2.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc='The Skew-Normal and Related Distributions Such as the Skew-t and the SUN'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
