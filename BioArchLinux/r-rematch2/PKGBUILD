@@ -4,7 +4,7 @@ _pkgname=rematch2
 _pkgver=2.1.2
 pkgname=r-${_pkgname,,}
 pkgver=2.1.2
-pkgrel=6
+pkgrel=7
 pkgdesc='Tidy Output from Regular Expression Matching'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
