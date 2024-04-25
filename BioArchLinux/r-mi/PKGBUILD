@@ -4,7 +4,7 @@ _pkgname=mi
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
 pkgver=1.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Missing Data Imputation and Model Checking'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
