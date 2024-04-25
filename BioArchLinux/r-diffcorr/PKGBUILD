@@ -4,7 +4,7 @@ _pkgname=DiffCorr
 _pkgver=0.4.3
 pkgname=r-${_pkgname,,}
 pkgver=0.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Analyzing and Visualizing Differential Correlation Networks in Biological Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
