@@ -4,7 +4,7 @@ _pkgname=ivreg
 _pkgver=0.6-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Instrumental-Variables Regression by '2SLS', '2SM', or '2SMM', with Diagnostics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
