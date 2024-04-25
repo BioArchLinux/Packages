@@ -4,7 +4,7 @@ _pkgname=fastDummies
 _pkgver=1.7.3
 pkgname=r-${_pkgname,,}
 pkgver=1.7.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast Creation of Dummy (Binary) Columns and Rows from Categorical Variables'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
