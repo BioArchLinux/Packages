@@ -4,7 +4,7 @@ _pkgname=harmonicmeanp
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Harmonic Mean p-Values and Model Averaging by Mean Maximum Likelihood"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
