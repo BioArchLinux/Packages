@@ -4,7 +4,7 @@ _pkgname=kableExtra
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Construct Complex Table with 'kable' and Pipe Syntax"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
