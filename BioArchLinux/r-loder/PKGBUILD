@@ -4,7 +4,7 @@ _pkgname=loder
 _pkgver=0.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Dependency-Free Access to PNG Image Files"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
