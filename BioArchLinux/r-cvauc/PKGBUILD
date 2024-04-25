@@ -4,7 +4,7 @@ _pkgname=cvAUC
 _pkgver=1.1.4
 pkgname=r-${_pkgname,,}
 pkgver=1.1.4
-pkgrel=5
+pkgrel=6
 pkgdesc='Cross-Validated Area Under the ROC Curve Confidence Intervals'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
