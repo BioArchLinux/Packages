@@ -5,7 +5,7 @@ _pkgname=crosstalk
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Inter-Widget Interactivity for HTML Widgets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
