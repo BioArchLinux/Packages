@@ -6,7 +6,7 @@ _pkgname=gld
 _pkgver=2.6.6
 pkgname=r-${_pkgname,,}
 pkgver=2.6.6
-pkgrel=2
+pkgrel=3
 pkgdesc='Estimation and Use of the Generalised (Tukey) Lambda Distribution'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
