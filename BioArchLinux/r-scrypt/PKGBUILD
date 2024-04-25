@@ -4,7 +4,7 @@ _pkgname=scrypt
 _pkgver=0.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Key Derivation Functions for R Based on Scrypt"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
