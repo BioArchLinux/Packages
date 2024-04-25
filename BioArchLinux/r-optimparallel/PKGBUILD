@@ -4,7 +4,7 @@ _pkgname=optimParallel
 _pkgver=1.0-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Parallel Version of the L-BFGS-B Optimization Method"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
