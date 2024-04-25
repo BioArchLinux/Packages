@@ -4,7 +4,7 @@ _pkgname=SAVER
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=1.1.2
-pkgrel=6
+pkgrel=7
 pkgdesc='Single-Cell RNA-Seq Gene Expression Recovery'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
