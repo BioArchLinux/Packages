@@ -4,7 +4,7 @@ _pkgname=mRMRe
 _pkgver=2.1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=2.1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Parallelized Minimum Redundancy, Maximum Relevance (mRMR)'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
