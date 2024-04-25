@@ -4,7 +4,7 @@ _pkgname=gistr
 _pkgver=0.9.0
 pkgname=r-${_pkgname,,}
 pkgver=0.9.0
-pkgrel=6
+pkgrel=7
 pkgdesc="Work with 'GitHub' 'Gists'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
