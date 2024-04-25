@@ -8,7 +8,7 @@ _pkgname=tibble
 _pkgver=3.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Simple Data Frames"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
