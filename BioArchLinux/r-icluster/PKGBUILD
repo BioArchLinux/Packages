@@ -4,7 +4,7 @@ _pkgname=iCluster
 _pkgver=2.1.0
 pkgname=r-${_pkgname,,}
 pkgver=2.1.0
-pkgrel=8
+pkgrel=9
 pkgdesc='Integrative clustering of multiple genomic data types'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
