@@ -4,7 +4,7 @@ _pkgname=rslurm
 _pkgver=0.6.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Submit R Calculations to a 'Slurm' Cluster"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
