@@ -4,7 +4,7 @@ _pkgname=spatstat.random
 _pkgver=3.2-3
 pkgname=r-${_pkgname,,}
 pkgver=3.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Random Generation Functionality for the 'spatstat' Family"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
