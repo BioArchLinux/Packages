@@ -4,7 +4,7 @@ _pkgname=rvest
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
 pkgver=1.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Easily Harvest (Scrape) Web Pages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
