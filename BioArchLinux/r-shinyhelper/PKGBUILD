@@ -4,7 +4,7 @@ _pkgname=shinyhelper
 _pkgver=0.3.2
 pkgname=r-${_pkgname,,}
 pkgver=0.3.2
-pkgrel=6
+pkgrel=7
 pkgdesc="Easily Add Markdown Help Files to 'shiny' App Elements"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
