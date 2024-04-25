@@ -4,7 +4,7 @@ _pkgname=FactoMineR
 _pkgver=2.11
 pkgname=r-${_pkgname,,}
 pkgver=2.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Multivariate Exploratory Data Analysis and Data Mining'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
