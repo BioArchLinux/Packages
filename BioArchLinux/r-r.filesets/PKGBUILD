@@ -4,7 +4,7 @@ _pkgname=R.filesets
 _pkgver=2.15.1
 pkgname=r-${_pkgname,,}
 pkgver=2.15.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Easy Handling of and Access to Files Organized in Structured Directories'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
