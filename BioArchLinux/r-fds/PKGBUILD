@@ -4,7 +4,7 @@ _pkgname=fds
 _pkgver=1.8
 pkgname=r-${_pkgname,,}
 pkgver=1.8
-pkgrel=5
+pkgrel=6
 pkgdesc='Functional Data Sets'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
