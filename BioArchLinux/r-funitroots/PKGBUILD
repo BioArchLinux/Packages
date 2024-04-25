@@ -4,7 +4,7 @@ _pkgname=fUnitRoots
 _pkgver=4021.80
 pkgname=r-${_pkgname,,}
 pkgver=4021.80
-pkgrel=6
+pkgrel=7
 pkgdesc='Rmetrics - Modelling Trends and Unit Roots'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
