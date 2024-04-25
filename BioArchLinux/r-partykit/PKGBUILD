@@ -4,7 +4,7 @@ _pkgname=partykit
 _pkgver=1.2-20
 pkgname=r-${_pkgname,,}
 pkgver=1.2.20
-pkgrel=2
+pkgrel=3
 pkgdesc='A Toolkit for Recursive Partytioning'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
