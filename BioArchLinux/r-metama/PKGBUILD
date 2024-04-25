@@ -4,7 +4,7 @@ _pkgname=metaMA
 _pkgver=3.1.3
 pkgname=r-${_pkgname,,}
 pkgver=3.1.3
-pkgrel=5
+pkgrel=6
 pkgdesc='Meta-analysis for MicroArrays'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
