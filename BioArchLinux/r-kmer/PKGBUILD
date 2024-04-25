@@ -4,7 +4,7 @@ _pkgname=kmer
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=1.1.2
-pkgrel=6
+pkgrel=7
 pkgdesc='Fast K-Mer Counting and Clustering for Biological Sequence Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
