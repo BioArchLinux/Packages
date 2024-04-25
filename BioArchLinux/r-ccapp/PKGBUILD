@@ -4,7 +4,7 @@ _pkgname=ccaPP
 _pkgver=0.3.3
 pkgname=r-${_pkgname,,}
 pkgver=0.3.3
-pkgrel=6
+pkgrel=7
 pkgdesc='(Robust) Canonical Correlation Analysis via Projection Pursuit'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
