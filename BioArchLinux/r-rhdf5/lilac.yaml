@@ -7,8 +7,23 @@ repo_depends:
 - r-rhdf5lib
 - r-s4vectors
 update_on:
-- regex: rhdf5_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rhdf5
+- source: rpkgs
+  pkgname: rhdf5
+  repo: bioc
+  md5: true
 - alias: r
-- alias: libcrypto
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true
+- source: alpm
+  alpm: openssl
+  repo: core
+  provided: libcrypto.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
