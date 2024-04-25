@@ -4,7 +4,7 @@ _pkgname=polylabelr
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=0.2.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Find the Pole of Inaccessibility (Visual Center) of a Polygon'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
