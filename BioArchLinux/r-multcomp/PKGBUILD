@@ -6,7 +6,7 @@ _pkgname=multcomp
 _pkgver=1.4-25
 pkgname=r-${_pkgname,,}
 pkgver=1.4.25
-pkgrel=1
+pkgrel=2
 pkgdesc='Simultaneous Inference in General Parametric Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
