@@ -4,7 +4,7 @@ _pkgname=gdm
 _pkgver=1.5.0-9.1
 pkgname=r-${_pkgname,,}
 pkgver=1.5.0.9.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Generalized Dissimilarity Modeling'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
