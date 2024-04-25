@@ -4,7 +4,7 @@ _pkgname=shinycssloaders
 _pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=1.0.0
-pkgrel=6
+pkgrel=7
 pkgdesc="Add Loading Animations to a 'shiny' Output While It's Recalculating"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
