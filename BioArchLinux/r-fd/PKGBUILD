@@ -4,7 +4,7 @@ _pkgname=FD
 _pkgver=1.0-12.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Measuring Functional Diversity (FD) from Multiple Traits, and Other Tools for Functional Ecology"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
