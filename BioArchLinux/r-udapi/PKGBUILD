@@ -4,7 +4,7 @@ _pkgname=udapi
 _pkgver=0.1.3
 pkgname=r-${_pkgname,,}
 pkgver=0.1.3
-pkgrel=6
+pkgrel=7
 pkgdesc='Urban Dictionary API Client'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
