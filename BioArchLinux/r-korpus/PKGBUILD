@@ -4,7 +4,7 @@ _pkgname=koRpus
 _pkgver=0.13-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Text Analysis with Emphasis on POS Tagging, Readability, and Lexical Diversity"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
