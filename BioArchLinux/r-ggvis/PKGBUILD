@@ -4,7 +4,7 @@ _pkgname=ggvis
 _pkgver=0.4.9
 pkgname=r-${_pkgname,,}
 pkgver=0.4.9
-pkgrel=1
+pkgrel=2
 pkgdesc='Interactive Grammar of Graphics'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
