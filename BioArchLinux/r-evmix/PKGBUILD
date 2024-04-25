@@ -4,7 +4,7 @@ _pkgname=evmix
 _pkgver=2.12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=7
 pkgdesc="Extreme Value Mixture Modelling, Threshold Estimation and Boundary Corrected Kernel Density Estimation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
