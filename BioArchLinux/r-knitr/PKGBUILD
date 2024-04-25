@@ -9,7 +9,7 @@ _pkgname=knitr
 _pkgver=1.46
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A General-Purpose Package for Dynamic Report Generation in R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
