@@ -7,7 +7,7 @@ _pkgname=tidyselect
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Select from a Set of Strings"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
