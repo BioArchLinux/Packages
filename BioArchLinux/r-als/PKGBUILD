@@ -4,7 +4,7 @@ _pkgname=ALS
 _pkgver=0.0.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Multivariate Curve Resolution Alternating Least Squares (MCR-ALS)"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
