@@ -4,7 +4,7 @@ _pkgname=qpcR
 _pkgver=1.4-1
 pkgname=r-${_pkgname,,}
 pkgver=1.4.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Modelling and Analysis of Real-Time PCR Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
