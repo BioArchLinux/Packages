@@ -4,7 +4,7 @@ _pkgname=datawizard
 _pkgver=0.10.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Easy Data Wrangling and Statistical Transformations"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
