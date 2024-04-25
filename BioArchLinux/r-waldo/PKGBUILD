@@ -4,7 +4,7 @@ _pkgname=waldo
 _pkgver=0.5.2
 pkgname=r-${_pkgname,,}
 pkgver=0.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Find Differences Between R Objects'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
