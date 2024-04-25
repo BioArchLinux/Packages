@@ -4,7 +4,7 @@ _pkgname=FCPS
 _pkgver=1.3.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Fundamental Clustering Problems Suite"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
