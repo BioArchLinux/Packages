@@ -4,7 +4,7 @@ _pkgname=svgPanZoom
 _pkgver=0.3.4
 pkgname=r-${_pkgname,,}
 pkgver=0.3.4
-pkgrel=6
+pkgrel=7
 pkgdesc="R 'Htmlwidget' to Add Pan and Zoom to Almost any R Graphic"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
