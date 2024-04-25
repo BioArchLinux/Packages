@@ -4,7 +4,7 @@ _pkgname=influenceR
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Software Tools to Quantify Structural Importance of Nodes in a Network'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
