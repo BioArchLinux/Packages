@@ -4,7 +4,7 @@ _pkgname=RISmed
 _pkgver=2.3.0
 pkgname=r-${_pkgname,,}
 pkgver=2.3.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Download Content from NCBI Databases'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
