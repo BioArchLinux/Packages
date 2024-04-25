@@ -4,7 +4,7 @@ _pkgname=smoother
 _pkgver=1.3
 pkgname=r-${_pkgname,,}
 pkgver=1.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Functions Relating to the Smoothing of Numerical Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
