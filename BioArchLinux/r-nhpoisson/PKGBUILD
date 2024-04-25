@@ -4,7 +4,7 @@ _pkgname=NHPoisson
 _pkgver=3.3
 pkgname=r-${_pkgname,,}
 pkgver=3.3
-pkgrel=5
+pkgrel=6
 pkgdesc='Modelling and Validation of Non Homogeneous Poisson Processes'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
