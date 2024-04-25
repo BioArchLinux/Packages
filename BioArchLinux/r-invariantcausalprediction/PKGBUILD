@@ -4,7 +4,7 @@ _pkgname=InvariantCausalPrediction
 _pkgver=0.8
 pkgname=r-${_pkgname,,}
 pkgver=0.8
-pkgrel=6
+pkgrel=7
 pkgdesc='Invariant Causal Prediction'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
