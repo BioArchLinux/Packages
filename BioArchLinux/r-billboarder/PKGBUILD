@@ -4,7 +4,7 @@ _pkgname=billboarder
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Create Interactive Chart with the JavaScript 'Billboard' Library"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
