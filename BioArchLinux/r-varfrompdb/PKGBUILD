@@ -4,7 +4,7 @@ _pkgname=VarfromPDB
 _pkgver=2.2.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Disease-Gene-Variant Relations Mining from the Public Databases and Literature"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
