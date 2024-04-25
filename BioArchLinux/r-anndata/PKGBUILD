@@ -4,7 +4,7 @@ _pkgname=anndata
 _pkgver=0.7.5.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="'anndata' for R"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
