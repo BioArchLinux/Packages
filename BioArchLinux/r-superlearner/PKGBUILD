@@ -4,7 +4,7 @@ _pkgname=SuperLearner
 _pkgver=2.0-29
 pkgname=r-${_pkgname,,}
 pkgver=2.0.29
-pkgrel=1
+pkgrel=2
 pkgdesc='Super Learner Prediction'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
