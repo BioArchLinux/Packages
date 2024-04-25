@@ -4,7 +4,7 @@ _pkgname=distributions3
 _pkgver=0.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Probability Distributions as S3 Objects"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
