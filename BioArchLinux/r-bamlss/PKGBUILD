@@ -5,7 +5,7 @@ _pkgname=bamlss
 _pkgver=1.2-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian Additive Models for Location, Scale, and Shape (and Beyond)"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
