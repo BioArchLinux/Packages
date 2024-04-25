@@ -5,7 +5,7 @@ _pkgname=knn.covertree
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.0
-pkgrel=6
+pkgrel=7
 pkgdesc='An Accurate kNN Implementation with Multiple Distance Measures'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
