@@ -4,7 +4,7 @@ _pkgname=betareg
 _pkgver=3.1-4
 pkgname=r-${_pkgname,,}
 pkgver=3.1.4
-pkgrel=6
+pkgrel=7
 pkgdesc='Beta Regression'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
