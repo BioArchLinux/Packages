@@ -4,7 +4,7 @@ _pkgname=rncl
 _pkgver=0.8.7
 pkgname=r-${_pkgname,,}
 pkgver=0.8.7
-pkgrel=2
+pkgrel=3
 pkgdesc='An Interface to the Nexus Class Library'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
