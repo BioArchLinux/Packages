@@ -4,7 +4,7 @@ _pkgname=munsell
 _pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Utilities for Using Munsell Colours"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
