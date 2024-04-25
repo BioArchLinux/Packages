@@ -4,7 +4,7 @@ _pkgname=reactable
 _pkgver=0.4.4
 pkgname=r-${_pkgname,,}
 pkgver=0.4.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Interactive Data Tables Based on 'React Table'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
