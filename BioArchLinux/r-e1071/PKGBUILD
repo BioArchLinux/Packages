@@ -4,7 +4,7 @@ _pkgname=e1071
 _pkgver=1.7-14
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
