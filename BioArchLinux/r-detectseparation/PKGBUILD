@@ -4,7 +4,7 @@ _pkgname=detectseparation
 _pkgver=0.3
 pkgname=r-${_pkgname,,}
 pkgver=0.3
-pkgrel=4
+pkgrel=5
 pkgdesc='Detect and Check for Separation and Infinite Maximum Likelihood Estimates'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
