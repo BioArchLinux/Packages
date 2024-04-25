@@ -6,7 +6,7 @@ _pkgname=prodlim
 _pkgver=2023.08.28
 pkgname=r-${_pkgname,,}
 pkgver=2023.08.28
-pkgrel=1
+pkgrel=2
 pkgdesc='Product-Limit Estimation for Censored Event History Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
