@@ -4,7 +4,7 @@ _pkgname=clusterSim
 _pkgver=0.51-3
 pkgname=r-${_pkgname,,}
 pkgver=0.51.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Searching for Optimal Clustering Procedure for a Data Set'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
