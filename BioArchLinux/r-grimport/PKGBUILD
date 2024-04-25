@@ -4,7 +4,7 @@ _pkgname=grImport
 _pkgver=0.9-7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Importing Vector Graphics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
