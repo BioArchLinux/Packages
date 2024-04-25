@@ -4,7 +4,7 @@ _pkgname=aws.signature
 _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
 pkgver=0.6.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Amazon Web Services Request Signatures'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
