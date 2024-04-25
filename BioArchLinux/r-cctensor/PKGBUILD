@@ -4,7 +4,7 @@ _pkgname=ccTensor
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=1.0.2
-pkgrel=5
+pkgrel=6
 pkgdesc='CUR/CX Tensor Decomposition'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
