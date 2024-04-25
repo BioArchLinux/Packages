@@ -4,7 +4,7 @@ _pkgname=HDCI
 _pkgver=1.0-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="High Dimensional Confidence Interval Based on Lasso and Bootstrap"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
