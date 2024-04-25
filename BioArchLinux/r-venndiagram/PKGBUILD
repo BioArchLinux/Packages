@@ -4,7 +4,7 @@ _pkgname=VennDiagram
 _pkgver=1.7.3
 pkgname=r-${_pkgname,,}
 pkgver=1.7.3
-pkgrel=5
+pkgrel=6
 pkgdesc='Generate High-Resolution Venn and Euler Plots'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
