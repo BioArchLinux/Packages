@@ -4,7 +4,7 @@ _pkgname=basicTrendline
 _pkgver=2.0.5
 pkgname=r-${_pkgname,,}
 pkgver=2.0.5
-pkgrel=6
+pkgrel=7
 pkgdesc='Add Trendline and Confidence Interval of Basic Regression Models to Plot'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
