@@ -4,7 +4,7 @@ _pkgname=textshape
 _pkgver=1.7.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools for Reshaping Text"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
