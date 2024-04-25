@@ -5,7 +5,7 @@ _pkgname=s2
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=1.1.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Spherical Geometry Operators Using the S2 Geometry Library'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
