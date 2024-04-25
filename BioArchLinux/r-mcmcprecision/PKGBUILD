@@ -4,7 +4,7 @@ _pkgname=MCMCprecision
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=0.4.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Precision of Discrete Parameters in Transdimensional MCMC'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
