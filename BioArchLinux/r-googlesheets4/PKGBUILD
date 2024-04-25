@@ -6,7 +6,7 @@ _pkgname=googlesheets4
 _pkgver=1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Access Google Sheets using the Sheets API V4"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
