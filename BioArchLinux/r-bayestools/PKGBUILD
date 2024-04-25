@@ -5,7 +5,7 @@ _pkgname=BayesTools
 _pkgver=0.2.17
 pkgname=r-${_pkgname,,}
 pkgver=0.2.17
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools for Bayesian Analyses'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
