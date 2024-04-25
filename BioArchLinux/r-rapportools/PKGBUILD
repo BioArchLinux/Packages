@@ -4,7 +4,7 @@ _pkgname=rapportools
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
 pkgver=1.1
-pkgrel=7
+pkgrel=8
 pkgdesc='Miscellaneous (stats) helper functions with sane defaults for reporting'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
