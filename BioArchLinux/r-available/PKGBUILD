@@ -4,7 +4,7 @@ _pkgname=available
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.1.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Check if the Title of a Package is Available, Appropriate and Interesting'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
