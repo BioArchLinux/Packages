@@ -6,7 +6,7 @@ _pkgname=findpython
 _pkgver=1.0.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Functions to Find an Acceptable Python Binary"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
