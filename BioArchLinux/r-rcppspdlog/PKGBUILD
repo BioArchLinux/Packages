@@ -4,7 +4,7 @@ _pkgname=RcppSpdlog
 _pkgver=0.0.16
 pkgname=r-${_pkgname,,}
 pkgver=0.0.16
-pkgrel=1
+pkgrel=2
 pkgdesc="R and C++ Interfaces to 'spdlog' C++ Header Library for Logging"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
