@@ -4,7 +4,7 @@ _pkgname=ggvenn
 _pkgver=0.1.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Draw Venn Diagram by 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
