@@ -4,7 +4,7 @@ _pkgname=htmlTable
 _pkgver=2.4.2
 pkgname=r-${_pkgname,,}
 pkgver=2.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Advanced Tables for Markdown/HTML'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
