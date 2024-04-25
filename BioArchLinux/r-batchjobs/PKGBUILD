@@ -4,7 +4,7 @@ _pkgname=BatchJobs
 _pkgver=1.9
 pkgname=r-${_pkgname,,}
 pkgver=1.9
-pkgrel=5
+pkgrel=6
 pkgdesc='Batch Computing with R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
