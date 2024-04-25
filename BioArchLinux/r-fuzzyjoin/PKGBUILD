@@ -4,7 +4,7 @@ _pkgname=fuzzyjoin
 _pkgver=0.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Join Tables Together on Inexact Matching"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
