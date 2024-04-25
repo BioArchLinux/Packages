@@ -8,7 +8,7 @@ _pkgver=${pkgver//+/.}
 _srcname=rstudio-${pkgver//+/-}
 _pandocver="current"
 _quarto="FALSE"
-pkgrel=1
+pkgrel=2
 pkgdesc="A powerful and productive integrated development environment \
 	 (IDE) for R programming language"
 arch=('x86_64')
