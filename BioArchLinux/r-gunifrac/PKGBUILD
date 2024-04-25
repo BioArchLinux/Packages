@@ -5,7 +5,7 @@ _pkgname=GUniFrac
 _pkgver=1.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Generalized UniFrac Distances, Distance-Based Multivariate Methods and Feature-Based Univariate Methods for Microbiome Data Analysis"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
