@@ -5,7 +5,7 @@ _pkgname=styler
 _pkgver=1.10.3
 pkgname=r-${_pkgname,,}
 pkgver=1.10.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Non-Invasive Pretty Printing of R Code'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
