@@ -4,7 +4,7 @@ _pkgname=bc3net
 _pkgver=1.0.4
 pkgname=r-${_pkgname,,}
 pkgver=1.0.4
-pkgrel=6
+pkgrel=7
 pkgdesc='Gene Regulatory Network Inference with Bc3net'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
