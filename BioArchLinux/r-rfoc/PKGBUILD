@@ -4,7 +4,7 @@ _pkgname=RFOC
 _pkgver=3.4-10
 pkgname=r-${_pkgname,,}
 pkgver=3.4.10
-pkgrel=3
+pkgrel=4
 pkgdesc='Graphics for Spherical Distributions and Earthquake Focal Mechanisms'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
