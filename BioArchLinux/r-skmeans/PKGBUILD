@@ -4,7 +4,7 @@ _pkgname=skmeans
 _pkgver=0.2-16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Spherical k-Means Clustering"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
