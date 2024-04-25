@@ -4,7 +4,7 @@ _pkgname=lfda
 _pkgver=1.1.3
 pkgname=r-${_pkgname,,}
 pkgver=1.1.3
-pkgrel=6
+pkgrel=7
 pkgdesc='Local Fisher Discriminant Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
