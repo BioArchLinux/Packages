@@ -4,7 +4,7 @@ _pkgname=miscTools
 _pkgver=0.6-28
 pkgname=r-${_pkgname,,}
 pkgver=0.6.28
-pkgrel=1
+pkgrel=2
 pkgdesc='Miscellaneous Tools and Utilities'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
