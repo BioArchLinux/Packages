@@ -4,7 +4,7 @@ _pkgname=phateR
 _pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=1.0.7
-pkgrel=5
+pkgrel=6
 pkgdesc='PHATE - Potential of Heat-Diffusion for Affinity-Based Transition Embedding'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
