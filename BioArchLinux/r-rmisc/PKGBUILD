@@ -4,7 +4,7 @@ _pkgname=Rmisc
 _pkgver=1.5.1
 pkgname=r-${_pkgname,,}
 pkgver=1.5.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Rmisc: Ryan Miscellaneous'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
