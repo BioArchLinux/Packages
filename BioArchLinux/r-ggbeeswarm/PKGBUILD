@@ -4,7 +4,7 @@ _pkgname=ggbeeswarm
 _pkgver=0.7.2
 pkgname=r-${_pkgname,,}
 pkgver=0.7.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Categorical Scatter (Violin Point) Plots'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
