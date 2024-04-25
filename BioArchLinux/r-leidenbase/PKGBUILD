@@ -4,7 +4,7 @@ _pkgname=leidenbase
 _pkgver=0.1.27
 pkgname=r-${_pkgname,,}
 pkgver=0.1.27
-pkgrel=1
+pkgrel=2
 pkgdesc='R and C/C++ Wrappers to Run the Leiden find_partition() Function'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
