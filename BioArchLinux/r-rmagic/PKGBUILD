@@ -4,7 +4,7 @@ _pkgname=Rmagic
 _pkgver=2.0.3
 pkgname=r-${_pkgname,,}
 pkgver=2.0.3
-pkgrel=5
+pkgrel=6
 pkgdesc='MAGIC - Markov Affinity-Based Graph Imputation of Cells'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
