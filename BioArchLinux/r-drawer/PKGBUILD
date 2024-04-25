@@ -4,7 +4,7 @@ _pkgname=drawer
 _pkgver=0.2.0.1
 pkgname=r-${_pkgname,,}
 pkgver=0.2.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='An Interactive HTML Image Editing Tool'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
