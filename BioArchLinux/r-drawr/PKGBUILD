@@ -4,7 +4,7 @@ _pkgname=DRaWR
 _pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=1.0.3
-pkgrel=5
+pkgrel=6
 pkgdesc='Discriminative Random Walk with Restart'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
