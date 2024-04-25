@@ -4,7 +4,7 @@ _pkgname=fda
 _pkgver=6.1.8
 pkgname=r-${_pkgname,,}
 pkgver=6.1.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Functional Data Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
