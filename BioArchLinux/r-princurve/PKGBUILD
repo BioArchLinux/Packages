@@ -4,7 +4,7 @@ _pkgname=princurve
 _pkgver=2.1.6
 pkgname=r-${_pkgname,,}
 pkgver=2.1.6
-pkgrel=6
+pkgrel=7
 pkgdesc='Fit a Principal Curve in Arbitrary Dimension'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
