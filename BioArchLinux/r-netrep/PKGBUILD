@@ -5,7 +5,7 @@ _pkgname=NetRep
 _pkgver=1.2.7
 pkgname=r-${_pkgname,,}
 pkgver=1.2.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Permutation Testing Network Module Preservation Across Datasets'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
