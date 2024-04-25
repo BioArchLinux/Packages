@@ -4,7 +4,7 @@ _pkgname=osfr
 _pkgver=0.2.9
 pkgname=r-${_pkgname,,}
 pkgver=0.2.9
-pkgrel=4
+pkgrel=5
 pkgdesc="Interface to the 'Open Science Framework' ('OSF')"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
