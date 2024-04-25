@@ -4,7 +4,7 @@ _pkgname=excelR
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=0.4.0
-pkgrel=6
+pkgrel=7
 pkgdesc="A Wrapper of the 'JavaScript' Library 'jExcel'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
