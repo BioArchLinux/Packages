@@ -5,7 +5,7 @@ _pkgname=BayesFM
 _pkgver=0.1.5
 pkgname=r-${_pkgname,,}
 pkgver=0.1.5
-pkgrel=3
+pkgrel=4
 pkgdesc='Bayesian Inference for Factor Modeling'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
