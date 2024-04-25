@@ -4,7 +4,7 @@ _pkgname=feature
 _pkgver=1.2.15
 pkgname=r-${_pkgname,,}
 pkgver=1.2.15
-pkgrel=5
+pkgrel=6
 pkgdesc='Local Inferential Feature Significance for Multivariate Kernel Density Estimation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
