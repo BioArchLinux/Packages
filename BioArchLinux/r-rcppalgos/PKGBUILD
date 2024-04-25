@@ -5,7 +5,7 @@ _pkgname=RcppAlgos
 _pkgver=2.8.3
 pkgname=r-${_pkgname,,}
 pkgver=2.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc='High Performance Tools for Combinatorics and Computational Mathematics'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
