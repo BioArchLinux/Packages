@@ -4,7 +4,7 @@ _pkgname=visNetwork
 _pkgver=2.1.2
 pkgname=r-${_pkgname,,}
 pkgver=2.1.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Network Visualization using 'vis.js' Library"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
