@@ -4,7 +4,7 @@ _pkgname=mQTL
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.0
-pkgrel=7
+pkgrel=8
 pkgdesc='Metabolomic Quantitative Trait Locus Mapping'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
