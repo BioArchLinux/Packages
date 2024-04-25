@@ -4,7 +4,7 @@ _pkgname=gamlss
 _pkgver=5.4-22
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Generalized Additive Models for Location Scale and Shape"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
