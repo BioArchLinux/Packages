@@ -4,7 +4,7 @@ _pkgname=spsUtil
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=0.2.2
-pkgrel=6
+pkgrel=7
 pkgdesc="'systemPipeShiny' Utility Functions"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
