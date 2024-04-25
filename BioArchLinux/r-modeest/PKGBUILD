@@ -4,7 +4,7 @@ _pkgname=modeest
 _pkgver=2.4.0
 pkgname=r-${_pkgname,,}
 pkgver=2.4.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Mode Estimation'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
