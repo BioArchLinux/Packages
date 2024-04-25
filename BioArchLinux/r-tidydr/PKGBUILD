@@ -4,7 +4,7 @@ _pkgname=tidydr
 _pkgver=0.0.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Unify Dimensionality Reduction Results"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
