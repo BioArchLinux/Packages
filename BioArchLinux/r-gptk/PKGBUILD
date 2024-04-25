@@ -4,7 +4,7 @@ _pkgname=gptk
 _pkgver=1.08
 pkgname=r-${_pkgname,,}
 pkgver=1.08
-pkgrel=7
+pkgrel=8
 pkgdesc='Gaussian Processes Tool-Kit'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
