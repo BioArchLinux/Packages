@@ -4,7 +4,7 @@ _pkgname=ffbase
 _pkgver=0.13.3
 pkgname=r-${_pkgname,,}
 pkgver=0.13.3
-pkgrel=7
+pkgrel=8
 pkgdesc="Basic Statistical Functions for Package 'ff'"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
