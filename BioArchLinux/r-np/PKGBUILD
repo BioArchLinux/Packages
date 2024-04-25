@@ -4,7 +4,7 @@ _pkgname=np
 _pkgver=0.60-17
 pkgname=r-${_pkgname,,}
 pkgver=0.60.17
-pkgrel=2
+pkgrel=3
 pkgdesc='Nonparametric Kernel Smoothing Methods for Mixed Data Types'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
