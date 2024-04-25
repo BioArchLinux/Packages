@@ -5,7 +5,7 @@ _pkgname=extraDistr
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
 pkgver=1.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Additional Univariate and Multivariate Distributions'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
