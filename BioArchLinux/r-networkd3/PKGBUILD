@@ -4,7 +4,7 @@ _pkgname=networkD3
 _pkgver=0.4
 pkgname=r-${_pkgname,,}
 pkgver=0.4
-pkgrel=6
+pkgrel=7
 pkgdesc='D3 JavaScript Network Graphs from R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
