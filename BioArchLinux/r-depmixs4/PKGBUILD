@@ -4,7 +4,7 @@ _pkgname=depmixS4
 _pkgver=1.5-0
 pkgname=r-${_pkgname,,}
 pkgver=1.5.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Dependent Mixture Models - Hidden Markov Models of GLMs and Other Distributions in S4'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
