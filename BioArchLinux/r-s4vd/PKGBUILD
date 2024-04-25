@@ -4,7 +4,7 @@ _pkgname=s4vd
 _pkgver=1.1-1
 pkgname=r-${_pkgname,,}
 pkgver=1.1.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Biclustering via Sparse Singular Value Decomposition Incorporating Stability Selection'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
