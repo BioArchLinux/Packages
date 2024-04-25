@@ -4,7 +4,7 @@ _pkgname=shinymanager
 _pkgver=1.0.410
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Authentication Management for 'Shiny' Applications"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
