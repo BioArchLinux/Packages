@@ -4,7 +4,7 @@ _pkgname=websocket
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="'WebSocket' Client Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
