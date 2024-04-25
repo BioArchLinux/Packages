@@ -4,7 +4,7 @@ _pkgname=msigdbr
 _pkgver=7.5.1
 pkgname=r-${_pkgname,,}
 pkgver=7.5.1
-pkgrel=7
+pkgrel=8
 pkgdesc='MSigDB Gene Sets for Multiple Organisms in a Tidy Data Format'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
