@@ -4,7 +4,7 @@ _pkgname=mutoss
 _pkgver=0.1-13
 pkgname=r-${_pkgname,,}
 pkgver=0.1.13
-pkgrel=2
+pkgrel=3
 pkgdesc='Unified Multiple Testing Procedures'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
