@@ -4,7 +4,7 @@ _pkgname=waiter
 _pkgver=0.2.5
 pkgname=r-${_pkgname,,}
 pkgver=0.2.5
-pkgrel=6
+pkgrel=7
 pkgdesc="Loading Screen for 'Shiny'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
