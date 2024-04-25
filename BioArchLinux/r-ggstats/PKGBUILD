@@ -4,7 +4,7 @@ _pkgname=ggstats
 _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Extension to 'ggplot2' for Plotting Stats"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
