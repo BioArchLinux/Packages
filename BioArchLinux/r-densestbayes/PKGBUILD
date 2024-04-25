@@ -5,7 +5,7 @@ _pkgname=densEstBayes
 _pkgver=1.0-2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Density Estimation via Bayesian Inference Engines"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
