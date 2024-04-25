@@ -4,7 +4,7 @@ _pkgname=mGSZ
 _pkgver=1.0
 pkgname=r-${_pkgname,,}
 pkgver=1.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Gene set analysis based on GSZ-scoring function and asymptotic p-value'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
