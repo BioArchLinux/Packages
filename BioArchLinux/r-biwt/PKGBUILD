@@ -4,7 +4,7 @@ _pkgname=biwt
 _pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=1.0.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Functions to compute the biweight mean vector and covariance & correlation matrices'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
