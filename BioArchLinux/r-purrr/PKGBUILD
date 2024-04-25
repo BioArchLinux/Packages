@@ -6,7 +6,7 @@ _pkgname=purrr
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Functional Programming Tools'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
