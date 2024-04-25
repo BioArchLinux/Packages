@@ -4,7 +4,7 @@ _pkgname=R.rsp
 _pkgver=0.46.0
 pkgname=r-${_pkgname,,}
 pkgver=0.46.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Dynamic Generation of Scientific Reports'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
