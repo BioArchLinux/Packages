@@ -4,7 +4,7 @@ _pkgname=ncmeta
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Straightforward 'NetCDF' Metadata"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
