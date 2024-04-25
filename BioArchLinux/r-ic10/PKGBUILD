@@ -4,7 +4,7 @@ _pkgname=iC10
 _pkgver=1.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="A Copy Number and Expression-Based Classifier for Breast Tumours"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
