@@ -4,7 +4,7 @@ _pkgname=emdbook
 _pkgver=1.3.13
 pkgname=r-${_pkgname,,}
 pkgver=1.3.13
-pkgrel=1
+pkgrel=2
 pkgdesc='Support Functions and Data for "Ecological Models and Data"'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
