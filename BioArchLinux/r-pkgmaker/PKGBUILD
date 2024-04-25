@@ -4,7 +4,7 @@ _pkgname=pkgmaker
 _pkgver=0.32.10
 pkgname=r-${_pkgname,,}
 pkgver=0.32.10
-pkgrel=1
+pkgrel=2
 pkgdesc='Development Utilities for R Packages'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
