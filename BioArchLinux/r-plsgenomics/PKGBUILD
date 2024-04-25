@@ -4,7 +4,7 @@ _pkgname=plsgenomics
 _pkgver=1.5-3
 pkgname=r-${_pkgname,,}
 pkgver=1.5.3
-pkgrel=1
+pkgrel=2
 pkgdesc='PLS Analyses for Genomics'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
