@@ -5,7 +5,7 @@ _pkgname=FrF2
 _pkgver=2.3-3
 pkgname=r-${_pkgname,,}
 pkgver=2.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Fractional Factorial Designs with 2-Level Factors"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
