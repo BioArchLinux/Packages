@@ -5,7 +5,7 @@ _pkgname=fst
 _pkgver=0.9.8
 pkgname=r-${_pkgname,,}
 pkgver=0.9.8
-pkgrel=5
+pkgrel=6
 pkgdesc='Lightning Fast Serialization of Data Frames'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
