@@ -5,7 +5,7 @@ _pkgname=remaCor
 _pkgver=0.0.18
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Random Effects Meta-Analysis for Correlated Test Statistics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
