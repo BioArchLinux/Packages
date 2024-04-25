@@ -4,7 +4,7 @@ _pkgname=mwcsr
 _pkgver=0.1.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Solvers for Maximum Weight Connected Subgraph Problem and Its Variants"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
