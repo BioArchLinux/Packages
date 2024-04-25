@@ -4,7 +4,7 @@ _pkgname=rngtools
 _pkgver=1.5.2
 pkgname=r-${_pkgname,,}
 pkgver=1.5.2
-pkgrel=6
+pkgrel=7
 pkgdesc='Utility Functions for Working with Random Number Generators'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
