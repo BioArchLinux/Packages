@@ -4,7 +4,7 @@ _pkgname=aws.s3
 _pkgver=0.3.21
 pkgname=r-${_pkgname,,}
 pkgver=0.3.21
-pkgrel=6
+pkgrel=7
 pkgdesc="'AWS S3' Client Package"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
