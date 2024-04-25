@@ -4,7 +4,7 @@ _pkgname=penalized
 _pkgver=0.9-52
 pkgname=r-${_pkgname,,}
 pkgver=0.9.52
-pkgrel=3
+pkgrel=4
 pkgdesc='L1 (Lasso and Fused Lasso) and L2 (Ridge) Penalized Estimation in GLMs and in the Cox Model'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
