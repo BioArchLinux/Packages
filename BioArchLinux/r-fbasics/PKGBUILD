@@ -4,7 +4,7 @@ _pkgname=fBasics
 _pkgver=4032.96
 pkgname=r-${_pkgname,,}
 pkgver=4032.96
-pkgrel=1
+pkgrel=2
 pkgdesc='Rmetrics - Markets and Basic Statistics'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
