@@ -4,7 +4,7 @@ _pkgname=SmoothWin
 _pkgver=3.0.0
 pkgname=r-${_pkgname,,}
 pkgver=3.0.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Soft Windowing on Linear Regression'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
