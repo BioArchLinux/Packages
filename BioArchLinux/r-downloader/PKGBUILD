@@ -4,7 +4,7 @@ _pkgname=downloader
 _pkgver=0.4
 pkgname=r-${_pkgname,,}
 pkgver=0.4
-pkgrel=6
+pkgrel=7
 pkgdesc='Download Files over HTTP and HTTPS'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
