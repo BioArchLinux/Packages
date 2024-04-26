@@ -4,7 +4,7 @@ _pkgname=BALCONY
 _pkgver=0.2.10
 pkgname=r-${_pkgname,,}
 pkgver=0.2.10
-pkgrel=4
+pkgrel=5
 pkgdesc='Better ALignment CONsensus analYsis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
