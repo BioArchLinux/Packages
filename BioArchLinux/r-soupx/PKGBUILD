@@ -4,7 +4,7 @@ _pkgname=SoupX
 _pkgver=1.6.2
 pkgname=r-${_pkgname,,}
 pkgver=1.6.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Single Cell mRNA Soup eXterminator'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
