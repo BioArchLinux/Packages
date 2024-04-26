@@ -4,7 +4,7 @@ _pkgname=tidyHeatmap
 _pkgver=1.8.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="A Tidy Implementation of Heatmap"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
