@@ -4,7 +4,7 @@ _pkgname=haplo.stats
 _pkgver=1.9.5.1
 pkgname=r-${_pkgname,,}
 pkgver=1.9.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Statistical Analysis of Haplotypes with Traits and Covariates when Linkage Phase is Ambiguous'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
