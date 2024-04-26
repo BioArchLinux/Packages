@@ -4,7 +4,7 @@ _pkgname=rvinecopulib
 _pkgver=0.6.3.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="High Performance Algorithms for Vine Copula Modeling"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
