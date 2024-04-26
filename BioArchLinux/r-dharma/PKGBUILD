@@ -4,7 +4,7 @@ _pkgname=DHARMa
 _pkgver=0.4.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Residual Diagnostics for Hierarchical (Multi-Level / Mixed) Regression Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
