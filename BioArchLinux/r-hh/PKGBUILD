@@ -4,7 +4,7 @@ _pkgname=HH
 _pkgver=3.1-52
 pkgname=r-${_pkgname,,}
 pkgver=3.1.52
-pkgrel=1
+pkgrel=2
 pkgdesc='Statistical Analysis and Data Display: Heiberger and Holland'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
