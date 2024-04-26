@@ -5,7 +5,7 @@ _pkgname=dimRed
 _pkgver=0.2.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=5
 pkgdesc="A Framework for Dimensionality Reduction"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
