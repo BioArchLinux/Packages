@@ -5,7 +5,7 @@ _pkgname=NetworkComparisonTest
 _pkgver=2.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Statistical Comparison of Two Networks Based on Several Invariance Measures"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
