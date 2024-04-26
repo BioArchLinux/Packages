@@ -3,33 +3,42 @@
 _pkgname=XVector
 _pkgver=0.42.0
 pkgname=r-${_pkgname,,}
-pkgver=0.42.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Foundation of external vector representation and manipulation in Bioconductor'
-arch=('x86_64')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="Foundation of external vector representation and manipulation in Bioconductor"
+arch=(x86_64)
+url="https://bioconductor.org/packages/$_pkgname"
+license=('Artistic-2.0')
 depends=(
-  r
   r-biocgenerics
   r-iranges
   r-s4vectors
   r-zlibbioc
+  zlib
 )
 optdepends=(
   r-biostrings
   r-drosophila2probe
   r-runit
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a163561e54c8a3f013e629c275f2446d25b3b56dbab53a4938de5f405b8d0340')
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-build.patch")
+md5sums=('f126998c6b563132e51ea31c3995c6b9'
+         'b101cdcd52b80aff5bc441b2d2d2d3ba')
+b2sums=('e16210b019f53226cbfc68cda2883cf70765ee84f656b36aca4b17d6ef69b0c4fbcd8577ad10f7cca9c2d172376e48306c3d987e69798b8d8d42f7033a5648b3'
+        '923decb0492e5459d5aa4e0fc30415fb53dcd3220e7f26ce879848771d02acc40ee6fc3739f9864076774f0e165edd4dc5b7fb609035ce0c09761e42a0544b14')
+
+prepare() {
+  # fix format string errors
+  patch -Np1 -i fix-build.patch
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

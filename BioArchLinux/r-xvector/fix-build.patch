@@ -1,0 +1,128 @@
+diff --git a/XVector/src/RDS_random_access.c b/XVector/src/RDS_random_access.c
+index 982ccc5..932c8e6 100644
+--- a/XVector/src/RDS_random_access.c
++++ b/XVector/src/RDS_random_access.c
+@@ -133,7 +133,7 @@ static void RDS_read_chars(SEXP filexp, size_t n, int parse_only,
+ 	errmsg = RDS_read_bytes(filexp, n, parse_only,
+ 				(unsigned char *) string_buf->elts);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (!parse_only)
+ 		CharAE_set_nelt(string_buf, n);
+ 	return;
+@@ -215,7 +215,7 @@ static R_xlen_t RDS_read_vector_length(SEXP filexp)
+ 
+ 	errmsg = RDS_read_bytes(filexp, 4, 0, buf);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (memcmp(buf, LONG_LENGTH_bytes, 4) != 0) {
+ 		swap_4_bytes(buf);
+ 		length = (int *) buf;
+@@ -223,7 +223,7 @@ static R_xlen_t RDS_read_vector_length(SEXP filexp)
+ 	}
+ 	errmsg = RDS_read_bytes(filexp, 8, 0, buf);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	swap_8_bytes(buf);
+ 	long_length = (long long int *) buf;
+ 	return (R_xlen_t) *long_length;
+@@ -274,13 +274,13 @@ static int RDS_read_string(SEXP filexp, int parse_only, CharAE *string_buf)
+ 
+ 	errmsg = RDS_read_bytes(filexp, sizeof(buf), 0, buf);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (buf[0] != 0 || buf[2] != 0 || buf[3] != 0x09)
+ 		error("unsupported RDS file");
+ 	if (buf[1] == 0) {
+ 		errmsg = RDS_read_bytes(filexp, sizeof(buf), 0, buf);
+ 		if (errmsg != NULL)
+-			error(errmsg);
++			error("%s", errmsg);
+ 		if (memcmp(buf, NA_STRING_bytes, sizeof(buf)) != 0)
+ 			error("unsupported RDS file");
+ 		return 1;
+@@ -357,7 +357,7 @@ static SEXP RDS_read_atomic_vector(SEXP filexp, SEXPTYPE type,
+ 		      "unexpected type: %s", CHAR(type2str(type)));
+ 	}
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (!parse_only)
+ 		UNPROTECT(1);
+ 	PRINTIFVERBOSE2("done reading %s vector", CHAR(type2str(type)));
+@@ -403,7 +403,7 @@ static int RDS_read_attrib_separator(SEXP filexp)
+ 
+ 	errmsg = RDS_read_bytes(filexp, sizeof(buf), 0, buf);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (memcmp(buf, EOA_bytes, sizeof(buf)) == 0)
+ 		return 0;
+ 	if (memcmp(buf, ATTRIB_SEP_bytes, sizeof(buf)) != 0)
+@@ -425,7 +425,7 @@ static unsigned int RDS_read_symbol(SEXP filexp, CharAEAE *symbols_buf,
+ 	PRINTIFVERBOSE1("start reading symbol");
+ 	errmsg = RDS_read_bytes(filexp, sizeof(buf), 0, buf);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (memcmp(buf, NEW_SYMBOL_bytes, sizeof(buf)) == 0) {
+ 		/* New symbol. */
+ 		namebuf = new_CharAE(0);
+@@ -494,7 +494,7 @@ static SEXP RDS_read_object(SEXP filexp, int mode, SEXP attribs_dump,
+ 	PRINTIFVERBOSE1("start reading object header");
+ 	errmsg = RDS_read_bytes(filexp, sizeof(obj_header), 0, obj_header);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (obj_header[0] != 0 || obj_header[1] != 0)
+ 		error("unsupported RDS file");
+ 	PRINTIFVERBOSE1("done reading object header");
+@@ -556,7 +556,7 @@ static void RDS_read_file_header(SEXP filexp)
+ 	PRINTIFVERBOSE1("start reading file header");
+ 	errmsg = RDS_read_bytes(filexp, sizeof(file_header), 0, file_header);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	if (memcmp(file_header, RDS_header, sizeof(file_header)) != 0)
+ 		error("does not look like an RDS file");
+ 	PRINTIFVERBOSE1("done reading file header");
+@@ -615,7 +615,7 @@ static SEXPTYPE extract_top_level_object_type(SEXP filexp)
+ 	RDS_read_file_header(filexp);
+ 	errmsg = RDS_read_bytes(filexp, sizeof(obj_header), 0, obj_header);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	x_type = RDStype2Rtype(obj_header[3]);
+ 	if (!IS_ATOMIC_TYPE(x_type) || x_type == STRSXP)
+ 		error("extracting elements from a serialized object of "
+@@ -672,7 +672,7 @@ static void RDS_read_atom_at_offset(SEXP filexp,
+ 	n = offset * type2atomsize(TYPEOF(ans));
+ 	errmsg = RDS_read_bytes(filexp, n, 1, NULL);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	switch (TYPEOF(ans)) {
+ 	    case LGLSXP:
+ 		errmsg = RDS_read_ints(filexp, 1, 0, LOGICAL(ans) + i);
+@@ -695,7 +695,7 @@ static void RDS_read_atom_at_offset(SEXP filexp,
+ 		      "unexpected type: %s", CHAR(type2str(TYPEOF(ans))));
+ 	}
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	return;
+ }
+ 
+@@ -769,7 +769,7 @@ SEXP RDS_extract_subvector(SEXP filexp, SEXP pos)
+ 					     pos_type, pos_dataptr, ans);
+ 	UNPROTECT(1);
+ 	if (errmsg != NULL)
+-		error(errmsg);
++		error("%s", errmsg);
+ 	return ans;
+ }
+ 

@@ -8,7 +8,13 @@ repo_depends:
 - r-s4vectors
 - r-zlibbioc
 update_on:
-- regex: XVector_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/XVector
+- source: rpkgs
+  pkgname: XVector
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
