@@ -4,7 +4,7 @@ _pkgname=Quartet
 _pkgver=1.2.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Comparison of Phylogenetic Trees Using Quartet and Split Measures"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
