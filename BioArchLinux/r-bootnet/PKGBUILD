@@ -4,7 +4,7 @@ _pkgname=bootnet
 _pkgver=1.6
 pkgname=r-${_pkgname,,}
 pkgver=1.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Bootstrap Methods for Various Network Estimation Routines'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
