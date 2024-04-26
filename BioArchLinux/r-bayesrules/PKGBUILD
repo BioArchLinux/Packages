@@ -4,7 +4,7 @@ _pkgname=bayesrules
 _pkgver=0.0.2
 pkgname=r-${_pkgname,,}
 pkgver=0.0.2
-pkgrel=4
+pkgrel=5
 pkgdesc='Datasets and Supplemental Functions from Bayes Rules! Book'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
