@@ -4,7 +4,7 @@ _pkgname=imp4p
 _pkgver=1.2
 pkgname=r-${_pkgname,,}
 pkgver=1.2
-pkgrel=5
+pkgrel=6
 pkgdesc='Imputation for Proteomics'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
