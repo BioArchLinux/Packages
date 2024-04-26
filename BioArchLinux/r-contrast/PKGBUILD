@@ -4,7 +4,7 @@ _pkgname=contrast
 _pkgver=0.24.2
 pkgname=r-${_pkgname,,}
 pkgver=0.24.2
-pkgrel=2
+pkgrel=3
 pkgdesc='A Collection of Contrast Methods'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
