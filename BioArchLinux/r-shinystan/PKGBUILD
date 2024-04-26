@@ -4,7 +4,7 @@ _pkgname=shinystan
 _pkgver=2.6.0
 pkgname=r-${_pkgname,,}
 pkgver=2.6.0
-pkgrel=7
+pkgrel=8
 pkgdesc='Interactive Visual and Numerical Diagnostics and Posterior Analysis for Bayesian Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
