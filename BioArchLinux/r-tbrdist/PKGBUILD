@@ -4,7 +4,7 @@ _pkgname=TBRDist
 _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Rearrangement Distances Between Unrooted Phylogenetic Trees"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
