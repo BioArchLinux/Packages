@@ -4,7 +4,7 @@ _pkgname=cvms
 _pkgver=1.6.1
 pkgname=r-${_pkgname,,}
 pkgver=1.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Cross-Validation for Model Selection'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
