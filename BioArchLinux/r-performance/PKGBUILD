@@ -5,7 +5,7 @@ _pkgname=performance
 _pkgver=0.11.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Assessment of Regression Models Performance"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
