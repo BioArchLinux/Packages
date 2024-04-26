@@ -4,7 +4,7 @@ _pkgname=missMDA
 _pkgver=1.19
 pkgname=r-${_pkgname,,}
 pkgver=1.19
-pkgrel=1
+pkgrel=2
 pkgdesc='Handling Missing Values with Multivariate Data Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
