@@ -4,7 +4,7 @@ _pkgname=semPlot
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=1.1.6
-pkgrel=4
+pkgrel=5
 pkgdesc="Path Diagrams and Visual Analysis of Various SEM Packages' Output"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
