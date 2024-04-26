@@ -4,7 +4,7 @@ _pkgname=factoextra
 _pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=1.0.7
-pkgrel=5
+pkgrel=6
 pkgdesc='Extract and Visualize the Results of Multivariate Data Analyses'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
