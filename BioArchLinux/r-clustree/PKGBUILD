@@ -4,7 +4,7 @@ _pkgname=clustree
 _pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Visualise Clusterings at Different Resolutions'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
