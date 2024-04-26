@@ -4,7 +4,7 @@ _pkgname=shinyHeatmaply
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=0.2.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Deploy 'heatmaply' using 'shiny'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
