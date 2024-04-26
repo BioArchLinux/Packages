@@ -38,13 +38,19 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "$_pkgname-fix-id-quote.patch::https://github.com/r-dbi/RMariaDB/pull/323.patch"
         "system-boost.patch")
 md5sums=('b8dc2132b67846e8c16d73d221f2acbf'
+         '0aefc673683414e07b27516014128edb'
          'b53149b42ab18105619bbbcb568de1b7')
 b2sums=('32abe9160950e9a46ec17b2d0de29c0c7a689612dbaa275ea02e519291c0ada4e5d9c6c6ffbb7eb6f48a9c0facbcc67b80f285bf4dd35156882fdb206f1db731'
+        '2c8ce3c04069fcfd0b476a7565137652f2edb148e1e996ed9748a8ddc682feb7aafef62c7243417784d08c663aa2f75b2eb37a4621d7da51893fcb2b838408ec'
         'c2db9ab7fa0c73547a80cc15dc7a51a62cfb25a840b7d901bc4b0d4da3c99eb987faaa73cbeac1529fb219a29e3963f9fe3c956f7283f18c53ad1a7208d07636')
 
 prepare() {
+  # fix dbQuoteIdentifier for Id objects
+  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-id-quote.patch"
+
   # use system boost headers
   patch -Np1 -i system-boost.patch
 }
