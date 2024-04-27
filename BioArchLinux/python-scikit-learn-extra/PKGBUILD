@@ -3,7 +3,7 @@
 pkgname=python-scikit-learn-extra
 _module=${pkgname#python-}
 pkgver=0.3.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Python module for machine learning that extends scikit-learn'
 arch=('x86_64')
 url="https://github.com/scikit-learn-contrib/scikit-learn-extra"
