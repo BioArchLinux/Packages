@@ -3,7 +3,7 @@
 pkgname=rnalysis
 _name=RNAlysis
 pkgver=3.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Python-based software for analyzing RNA sequencing data. https://doi.org/10.1101/2022.11.25.517851'
 _pkgdesc='Python-based software with GUI for analyzing RNA sequencing data'
 arch=(any)
