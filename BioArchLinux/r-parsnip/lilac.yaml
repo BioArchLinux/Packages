@@ -33,7 +33,6 @@ repo_makedepends:
 - r-modeldata
 - r-partykit
 - r-ranger
-- r-tensorflow
 - r-testthat
 - r-xgboost
 update_on:
