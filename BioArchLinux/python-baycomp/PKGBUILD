@@ -3,7 +3,7 @@
 pkgname='python-baycomp'
 _module=baycomp
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian tests for comparison of classifiers"
 arch=('x86_64')
 url="https://github.com/janezd/baycomp.git"
