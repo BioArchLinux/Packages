@@ -1,0 +1,28 @@
+diff --git a/Rsamtools/src/samtools_patch.c b/Rsamtools/src/samtools_patch.c
+index c6d083c..21a8c83 100644
+--- a/Rsamtools/src/samtools_patch.c
++++ b/Rsamtools/src/samtools_patch.c
+@@ -34,8 +34,8 @@ int _samtools_fprintf(FILE * file, const char *fmt, ...)
+         n = vsnprintf(buf, bufsize, fmt, argp);
+         va_end(argp);
+         if (0 == strncmp("[khttp_connect_file] fail to open file", fmt, 38))
+-            Rf_error(buf);
+-        Rf_warning(buf);
++            Rf_error("%s", buf);
++        Rf_warning("%s", buf);
+     }
+     return n;
+ }
+diff --git a/Rsamtools/src/zip_compression.c b/Rsamtools/src/zip_compression.c
+index 63a026c..e99105c 100644
+--- a/Rsamtools/src/zip_compression.c
++++ b/Rsamtools/src/zip_compression.c
+@@ -9,7 +9,7 @@ void _zip_error(const char *txt, const char *err, int infd, int outfd)
+ {
+     close(infd);
+     close(outfd);
+-    err ? Rf_error(txt, err) : Rf_error(txt);
++    err ? Rf_error(txt, err) : Rf_error("%s", txt);
+ }
+ 
+ void _zip_open(SEXP file, SEXP dest, int *infd, int *outfd)

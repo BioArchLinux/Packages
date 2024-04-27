@@ -1,17 +1,17 @@
-# system requirements: GNU make
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rsamtools
 _pkgver=2.18.0
 pkgname=r-${_pkgname,,}
-pkgver=2.18.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import'
-arch=('x86_64')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import"
+arch=(x86_64)
+url="https://bioconductor.org/packages/$_pkgname"
+license=('Artistic-2.0 AND MIT')
 depends=(
-  r
+  bzip2
+  curl
   r-biocgenerics
   r-biocparallel
   r-biostrings
@@ -19,10 +19,14 @@ depends=(
   r-genomeinfodb
   r-genomicranges
   r-iranges
-  r-rhtslib
   r-s4vectors
   r-xvector
   r-zlibbioc
+  xz
+  zlib
+)
+makedepends=(
+  r-rhtslib
 )
 optdepends=(
   r-biocstyle
@@ -36,15 +40,27 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
   r-txdb.hsapiens.ucsc.hg18.knowngene
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('2f283b105ede839655bf8a3cb877f97764900486875748f4c3f9ecdf78bc8a2d')
-options=(!lto !buildflags staticlibs)
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-build.patch")
+md5sums=('63af2a7dd2513e992fd78b26ca2b3775'
+         '5d9b3488422007e6d9875ea7f68cb5c2')
+b2sums=('9c880a2869e87a9a24ac5afcb2c191dd58308da3f08fe456e30ff93f84693dc5f86754a390ecbeaa87426a8a23f32bcc8ab3b7495ac0ed0c762be6232f004763'
+        '7513e65c63be77f5b9c4af9b6a0e88a870f40ea4fcc035c68e96284d53d65a4697e23299b95fb14eb68138f22bd5781f0775a784d17a69368a6bcbd6c46f5724')
+
+prepare() {
+  # fix format string errors
+  patch -Np1 -i fix-build.patch
+}
+
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

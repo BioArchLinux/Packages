@@ -10,12 +10,34 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-iranges
-- r-rhtslib
 - r-s4vectors
 - r-xvector
 - r-zlibbioc
+repo_makedepends:
+- r-rhtslib
 update_on:
-- regex: Rsamtools_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Rsamtools
+- source: rpkgs
+  pkgname: Rsamtools
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: bzip2
+  repo: core
+  provided: libbz2.so
+  strip_release: true
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true
+- source: alpm
+  alpm: xz
+  repo: core
+  provided: liblzma.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
