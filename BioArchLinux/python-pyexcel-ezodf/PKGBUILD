@@ -3,7 +3,7 @@
 pkgname=python-pyexcel-ezodf
 _module=${pkgname#python-}
 pkgver=0.3.4
-pkgrel=2
+pkgrel=3
 pkgdesc='A Python package to create/manipulate OpenDocumentFormat files'
 arch=(any)
 url="https://github.com/pyexcel/pyexcel-ezodf"
