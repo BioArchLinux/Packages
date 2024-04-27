@@ -3,7 +3,7 @@
 pkgname='python-python-louvain'
 _module=python-louvain
 pkgver=0.16
-pkgrel=2
+pkgrel=3
 pkgdesc="Louvain algorithm for community detection"
 arch=('x86_64')
 url="https://github.com/taynaud/python-louvain"
