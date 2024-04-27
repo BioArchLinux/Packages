@@ -3,7 +3,7 @@
 _name=pyhmmer
 pkgname=python-${_name}
 pkgver=0.10.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Cython bindings to HMMER3. https://doi.org/10.1093/bioinformatics/btad214"
 arch=('i686' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
 url="https://github.com/althonos/pyhmmer"
