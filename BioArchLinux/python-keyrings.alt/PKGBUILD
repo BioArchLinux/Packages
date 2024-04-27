@@ -3,7 +3,7 @@
 pkgname='python-keyrings.alt'
 _module=keyrings.alt
 pkgver=5.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Alternate keyring implementations"
 arch=('x86_64')
 url="https://github.com/jaraco/keyrings.alt"
