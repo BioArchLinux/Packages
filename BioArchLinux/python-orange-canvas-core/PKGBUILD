@@ -3,7 +3,7 @@
 pkgname='python-orange-canvas-core'
 _module=orange-canvas-core
 pkgver=0.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Core component of Orange Canvas"
 arch=('x86_64')
 url="http://orange.biolab.si/"
