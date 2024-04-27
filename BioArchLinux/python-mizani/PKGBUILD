@@ -3,7 +3,7 @@
 pkgname='python-mizani'
 _module=${pkgname#python-}
 pkgver=0.11.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Scales for Python"
 arch=('x86_64')
 url="https://mizani.readthedocs.io/en/stable"
