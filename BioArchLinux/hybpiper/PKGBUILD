@@ -2,7 +2,7 @@
 _pkgname=HybPiper
 pkgname=${_pkgname,,}
 pkgver=2.1.6
-pkgrel=1
+pkgrel=2
 url="https://github.com/mossmatters/$_pkgname"
 pkgdesc="Recovering genes from targeted sequence capture data \
 	 https://doi.org/10.3732/apps.1600016"
