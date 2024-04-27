@@ -4,7 +4,7 @@ _pkgname=deconstructSigs
 _pkgver=1.8.0
 pkgname=r-${_pkgname,,}
 pkgver=1.8.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Identifies Signatures Present in a Tumor Sample'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
