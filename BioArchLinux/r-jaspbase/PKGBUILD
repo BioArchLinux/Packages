@@ -3,7 +3,7 @@ _pkgname=jaspBase
 _pkgver=0.18.3
 pkgname=r-${_pkgname,,}
 pkgver=0.18.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Package contains the JASP Bayesian and Frequentist analyses."
 arch=('x86_64' 'aarch64')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -49,7 +49,8 @@ sha256sums=('183defcd7a89cc3b133799358b51396cbfd1862ef227b0c29b278dd273978cfc'
 
 build() {
   export INCLUDE_DIR=${srcdir}/jaspColumnEncoder-0.18.0
-
+  mkdir ~/.R
+  echo 'CFLAGS=-Wno-error=format-security' >~/.R/Makevars
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
