@@ -5,7 +5,7 @@
 pkgname=python-matplotlib-venn
 _module=${pkgname#python-}
 pkgver=0.11.10
-pkgrel=2
+pkgrel=3
 pkgdesc="Venn diagram plotting routines for python-matplotlib"
 arch=('any')
 url="https://github.com/konstantint/matplotlib-venn"
