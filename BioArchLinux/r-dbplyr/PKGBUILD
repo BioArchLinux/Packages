@@ -10,7 +10,7 @@ _pkgname=dbplyr
 _pkgver=2.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A 'dplyr' Back End for Databases"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
