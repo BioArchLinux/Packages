@@ -3,7 +3,7 @@
 _name=pyfastani
 pkgname=python-${_name}
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Cython bindings and Python interface to FastANI, a method for fast whole-genome similarity estimation"
 url="https://github.com/althonos/${_name}"
 arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
