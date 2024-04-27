@@ -18,8 +18,23 @@ repo_depends:
 - r-xvector
 - r-zlibbioc
 update_on:
-- regex: rtracklayer_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rtracklayer
+- source: rpkgs
+  pkgname: rtracklayer
+  repo: bioc
+  md5: true
 - alias: r
-- alias: libssl
+- source: alpm
+  alpm: openssl
+  repo: core
+  provided: libcrypto.so
+  strip_release: true
+- source: alpm
+  alpm: openssl
+  repo: core
+  provided: libssl.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
