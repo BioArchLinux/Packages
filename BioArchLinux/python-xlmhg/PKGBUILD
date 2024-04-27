@@ -3,7 +3,7 @@
 pkgname=python-xlmhg
 _name=xlmhg
 pkgver=2.5.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Efficient Python implementation of the semiparametric XL-mHG test for enrichment'
 arch=(x86_64)
 url=https://github.com/flo-compbio/xlmhg
