@@ -3,7 +3,7 @@
 pkgname='python-opentsne'
 _module=openTSNE
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Extensible, parallel implementations of t-SNE"
 arch=('x86_64')
 url="https://github.com/pavlin-policar/openTSNE"
