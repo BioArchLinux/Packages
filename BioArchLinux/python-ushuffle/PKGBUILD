@@ -3,7 +3,7 @@
 pkgname=python-ushuffle
 _pkgname=ushuffle
 pkgver=1.1.2
-pkgrel=4
+pkgrel=5
 pkgdesc="A useful tool for shuffling biological sequences while preserving the k-let counts"
 arch=('x86_64')
 url="https://github.com/guma44/ushuffle/"
