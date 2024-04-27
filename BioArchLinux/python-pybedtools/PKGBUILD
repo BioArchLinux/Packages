@@ -3,7 +3,7 @@
 pkgname=python-pybedtools
 _base=${pkgname#python-}
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="python wrapper for BEDTools bioinformatics suite"
 arch=('x86_64')
 url="https://github.com/daler/pybedtools"
