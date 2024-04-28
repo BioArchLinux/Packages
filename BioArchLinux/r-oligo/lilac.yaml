@@ -15,7 +15,13 @@ repo_depends:
 - r-rsqlite
 - r-zlibbioc
 update_on:
-- regex: oligo_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/oligo
+- source: rpkgs
+  pkgname: oligo
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
