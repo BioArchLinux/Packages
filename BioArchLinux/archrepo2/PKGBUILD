@@ -3,7 +3,7 @@
 pkgname=archrepo2
 epoch=2
 pkgver=2020.04.18
-pkgrel=5
+pkgrel=6
 pkgdesc="Arch Linux repository manager"
 arch=('any')
 url="https://github.com/lilydjwg/archrepo2"
