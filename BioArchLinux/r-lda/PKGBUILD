@@ -4,7 +4,7 @@ _pkgname=lda
 _pkgver=1.5.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Collapsed Gibbs Sampling Methods for Topic Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
