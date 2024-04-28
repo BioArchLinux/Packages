@@ -8,7 +8,6 @@ repo_depends:
 - r-rlang
 - r-tibble
 repo_makedepends:
-- r-cpp11
 - r-testthat
 update_on:
 - source: rpkgs
