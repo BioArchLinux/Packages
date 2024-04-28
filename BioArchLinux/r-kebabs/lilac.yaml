@@ -6,14 +6,16 @@ repo_depends:
 - r-apcluster
 - r-biostrings
 - r-e1071
-- r-iranges
 - r-kernlab
 - r-liblinear
 - r-rcpp
 - r-s4vectors
 - r-xvector
+repo_makedepends:
+- r-iranges
 update_on:
-- regex: kebabs_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/kebabs
+- source: rpkgs
+  pkgname: kebabs
+  repo: bioc
+  md5: true
 - alias: r
