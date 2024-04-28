@@ -2,7 +2,7 @@
 pkgname=yaggo
 _pkgver=1.5.10
 pkgver=1.5.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Yet Another GenGetOpt"
 arch=("any")
 url='https://github.com/gmarcais/yaggo'
