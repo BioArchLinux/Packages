@@ -13,13 +13,20 @@ repo_depends:
 - r-hwriter
 - r-iranges
 - r-latticeextra
-- r-rhtslib
 - r-rsamtools
 - r-s4vectors
-- r-xvector
 - r-zlibbioc
+repo_makedepends:
+- r-rhtslib
+- r-xvector
 update_on:
-- regex: ShortRead_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ShortRead
+- source: rpkgs
+  pkgname: ShortRead
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

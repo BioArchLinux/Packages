@@ -3,14 +3,13 @@
 _pkgname=ShortRead
 _pkgver=1.60.0
 pkgname=r-${_pkgname,,}
-pkgver=1.60.0
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='FASTQ input and manipulation'
-arch=('x86_64')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+pkgdesc="FASTQ input and manipulation"
+arch=(x86_64)
+url="https://bioconductor.org/packages/$_pkgname"
+license=('Artistic-2.0')
 depends=(
-  r
   r-biobase
   r-biocgenerics
   r-biocparallel
@@ -21,11 +20,14 @@ depends=(
   r-hwriter
   r-iranges
   r-latticeextra
-  r-rhtslib
   r-rsamtools
   r-s4vectors
-  r-xvector
   r-zlibbioc
+  zlib
+)
+makedepends=(
+  r-rhtslib
+  r-xvector
 )
 optdepends=(
   r-biocstyle
@@ -34,15 +36,24 @@ optdepends=(
   r-runit
   r-yeastnagalakshmi
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3594b9a975879a355418d634d874714e98aec7d024de67ddbdf4425cd6d7f139')
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "$_pkgname-fix-format.patch::https://github.com/Bioconductor/ShortRead/pull/16.patch")
+md5sums=('480786b1db8f8138a7a4e8c36f9bdfc4'
+         'f627a5a0cb37167b7f60d98fe6381045')
+b2sums=('7b20c86f1092be6cc5f0d4e1becfe257def06e3e958def1a235fd982238a62ed3ff605677a48fd50e3f73b90b3ffb676885d3a1efe5e0e7f9ea1acd56107d291'
+        'b35a65671c15a8df40bac51e1985025a33d37a119534501c8f41ae50097a94dcdd73c6d631d34c58abefcc45c63a5e329d12ee02ceeeb28aa7757a1ae3a94fb2')
+
+prepare() {
+  # fix format string errors
+  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-format.patch"
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
