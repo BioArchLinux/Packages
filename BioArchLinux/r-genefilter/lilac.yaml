@@ -8,7 +8,8 @@ repo_depends:
 - r-biobase
 - r-matrixgenerics
 update_on:
-- regex: genefilter_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/genefilter
+- source: rpkgs
+  pkgname: genefilter
+  repo: bioc
+  md5: true
 - alias: r
