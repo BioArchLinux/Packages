@@ -8,12 +8,28 @@ repo_depends:
 - r-iranges
 - r-rhdf5
 - r-rhdf5filters
-- r-rhdf5lib
 - r-s4arrays
 - r-s4vectors
+repo_makedepends:
+- r-rhdf5lib
 update_on:
-- regex: HDF5Array_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/HDF5Array
+- source: rpkgs
+  pkgname: HDF5Array
+  repo: bioc
+  md5: true
 - alias: r
-- alias: libcrypto
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true
+- source: alpm
+  alpm: openssl
+  repo: core
+  provided: libcrypto.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
