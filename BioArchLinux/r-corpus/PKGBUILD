@@ -6,7 +6,7 @@ _pkgname=corpus
 _pkgver=0.10.2
 pkgname=r-${_pkgname,,}
 pkgver=0.10.2
-pkgrel=9
+pkgrel=10
 pkgdesc='Text Corpus Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
