@@ -11,3 +11,4 @@ update_on:
     github: veusz/veusz
     use_latest_release: true
     prefix: 'veusz-'
+  - alias: python
