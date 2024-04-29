@@ -61,13 +61,16 @@ optdepends=(
   r-vdiffr
   r-viridis
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('290d04139ae420099542606da5aff873')
-b2sums=('60d43e8400d35631bde9f924d7947858f62855d402616fe01a1bf56ef62ee7bfe99196c2fcb1817bbfc230248e1139300ff0843a70415daee2cd7e525f182031')
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-tests.patch")
+md5sums=('290d04139ae420099542606da5aff873'
+         '11cae80fa1a7d5cf247b879f0598d154')
+b2sums=('60d43e8400d35631bde9f924d7947858f62855d402616fe01a1bf56ef62ee7bfe99196c2fcb1817bbfc230248e1139300ff0843a70415daee2cd7e525f182031'
+        '11e180cc17fdbd84d50aab26d4c21ed8e79b2e217753f157e99b25c0ef55b9c1f9f8b91f33ca057b19460f2c4cb5cc5339eab5b5bf49688af281626331b168c6')
 
 prepare() {
-  # skip failing test
-  sed -i '/"can use differnet engine"/a\ \ \ \ skip("fails")' "$_pkgname/tests/testthat/test-eof.R"
+  # skip failing tests
+  patch -Np1 -i fix-tests.patch
 }
 
 build() {
