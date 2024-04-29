@@ -41,11 +41,11 @@ prepare() {
 
   echo 'Creating launcher file'
   cat > "${pkgname}.sh" << EOF
-#!/bin/bash
+#!/usr/bin/env sh
 if [ -d /usr/lib/jvm/java-8-jdk/bin ]; then
-  PATH=/usr/lib/jvm/java-8-jdk/bin:${PATH} /opt/${pkgname}/ImageJ-linux64
+  PATH=/usr/lib/jvm/java-8-jdk/bin:${PATH} /usr/share/${pkgname}/ImageJ-linux64
 elif [ -d /usr/lib/jvm/java-8-openjdk/bin ]; then
-  PATH=/usr/lib/jvm/java-8-openjdk/bin:${PATH} /opt/${pkgname}/ImageJ-linux64
+  PATH=/usr/lib/jvm/java-8-openjdk/bin:${PATH} /usr/share/${pkgname}/ImageJ-linux64
 else
   echo "Error, no compatiable java found! ${pkgname} depends on java 8"
 fi
