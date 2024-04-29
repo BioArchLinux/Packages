@@ -16,6 +16,7 @@ depends=(python
 makedepends=(python-build
              python-installer
              python-wheel
+             python-setuptools
              python-oldest-supported-numpy
              cython)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
