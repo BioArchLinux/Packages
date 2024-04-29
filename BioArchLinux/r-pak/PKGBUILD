@@ -6,7 +6,7 @@ _pkgname=pak
 _pkgver=0.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Another Approach to Package Installation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
