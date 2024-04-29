@@ -3,7 +3,7 @@
 pkgname='python-biotite'
 _module=${pkgname#python-}
 pkgver=0.40.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A comprehensive library for computational molecular biology"
 arch=('x86_64')
 url="https://www.biotite-python.org"
