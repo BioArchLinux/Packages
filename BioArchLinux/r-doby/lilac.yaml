@@ -4,15 +4,19 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-broom
+- r-cowplot
 - r-deriv
 - r-dplyr
 - r-ggplot2
-- r-magrittr
 - r-microbenchmark
+- r-modelr
 - r-pbkrtest
+- r-rlang
 - r-tibble
+- r-tidyr
 update_on:
-- regex: doBy_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=doBy
+- source: rpkgs
+  pkgname: doBy
+  repo: cran
+  md5: true
 - alias: r
