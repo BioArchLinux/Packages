@@ -7,7 +7,7 @@ _pkgname=metR
 _pkgver=0.15.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools for Easier Analysis of Meteorological Fields"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
