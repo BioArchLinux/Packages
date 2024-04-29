@@ -11,7 +11,7 @@ pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. \
 arch=('x86_64')
 url='https://github.com/CJ-Chen/TBtools-II'
 license=('unknown')
-depends=('java-runtime'
+depends=('java-runtime>=11'
          'bash')
 makedepends=('unzip'
              'gendesk')
