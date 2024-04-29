@@ -4,7 +4,7 @@ _pkgname=SOMbrero
 _pkgver=1.4-2
 pkgname=r-${_pkgname,,}
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc='SOM Bound to Realize Euclidean and Relational Outputs'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
