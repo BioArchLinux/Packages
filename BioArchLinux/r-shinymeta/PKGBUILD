@@ -22,6 +22,7 @@ depends=(
 checkdepends=(
   r-knitr
   r-rmarkdown
+  r-stringr
   r-testthat
 )
 optdepends=(

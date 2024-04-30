@@ -14,6 +14,7 @@ repo_depends:
 repo_makedepends:
 - r-knitr
 - r-rmarkdown
+- r-stringr
 - r-testthat
 update_on:
 - source: rpkgs
