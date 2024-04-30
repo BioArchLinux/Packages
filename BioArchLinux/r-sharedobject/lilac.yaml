@@ -3,11 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-bh
 - r-biocgenerics
 - r-rcpp
+repo_makedepends:
+- r-bh
 update_on:
-- regex: SharedObject_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SharedObject
+- source: rpkgs
+  pkgname: SharedObject
+  repo: bioc
+  md5: true
 - alias: r
