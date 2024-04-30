@@ -13,6 +13,7 @@ repo_makedepends:
 - r-ggplot2
 - r-readr
 - r-shiny
+- r-stringr
 - r-testthat
 update_on:
 - source: rpkgs
