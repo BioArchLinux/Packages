@@ -4,7 +4,7 @@ _pkgname=doBy
 _pkgver=4.6.21
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Groupwise Statistics, LSmeans, Linear Estimates, Utilities"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
