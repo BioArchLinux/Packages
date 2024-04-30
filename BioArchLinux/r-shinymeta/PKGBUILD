@@ -4,7 +4,7 @@ _pkgname=shinymeta
 _pkgver=0.2.0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Export Domain Logic from Shiny using Meta-Programming"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
