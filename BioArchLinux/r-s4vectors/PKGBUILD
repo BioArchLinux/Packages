@@ -6,10 +6,10 @@
 # Contributor: Sauliusl <luksaulius at gmail>
 
 _pkgname=S4Vectors
-_pkgver=0.40.2
+_pkgver=0.42.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Foundation of vector-like and list-like containers in Bioconductor"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -29,17 +29,9 @@ optdepends=(
   r-shortread
   r-summarizedexperiment
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "fix-build.patch")
-md5sums=('ee94f4f6c25dcaf7a50f5814495310e3'
-         'b6cc67f691578425ff3b839f72a2ad39')
-b2sums=('51b67bb4d3832fecb2d5eaee90baa93c5f13fe1ecc4eea5416db9c8735deeb53bf9d33f677943e25cc2b337fc184b335c274d08863f30e2d7057429034214a9c'
-        'e8af4a57c5a4fba1f2598e77df05156bc0231a142bcedb4b6480404e552fbb65cf8d99731145ddb705345b7041918d0b5862a4ce35e5c88114a7bdaebfc608a7')
-
-prepare() {
-  # fix format string errors
-  patch -Np1 -i fix-build.patch
-}
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a04ba594f88e1308cc389cf2cde3315c')
+b2sums=('9bb28162ea7be412ab8e180ee7593d5f9d7f53730666645285a0da6c0fcddc369e02776c0d5af47bfa596ff853dea24e5d19507fce8819bee4d914500aee85ef')
 
 build() {
   mkdir build
