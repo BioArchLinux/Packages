@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rsamtools
-_pkgver=2.18.0
+_pkgver=2.20.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Binary alignment (BAM), FASTA, variant call (BCF), and tabix file import"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -40,17 +40,9 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
   r-txdb.hsapiens.ucsc.hg18.knowngene
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "fix-build.patch")
-md5sums=('63af2a7dd2513e992fd78b26ca2b3775'
-         '5d9b3488422007e6d9875ea7f68cb5c2')
-b2sums=('9c880a2869e87a9a24ac5afcb2c191dd58308da3f08fe456e30ff93f84693dc5f86754a390ecbeaa87426a8a23f32bcc8ab3b7495ac0ed0c762be6232f004763'
-        '7513e65c63be77f5b9c4af9b6a0e88a870f40ea4fcc035c68e96284d53d65a4697e23299b95fb14eb68138f22bd5781f0775a784d17a69368a6bcbd6c46f5724')
-
-prepare() {
-  # fix format string errors
-  patch -Np1 -i fix-build.patch
-}
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a36dd03dffa3e6a830adafaeef5429ab')
+b2sums=('4176ccfc113368565de874a223fc9b8fb1fb91dbe67963a03743137f3715a5e70e8f9aebae207b7af54a4c772b662df2f9dac5d715838afbe672741103417fd7')
 
 build() {
   mkdir build
