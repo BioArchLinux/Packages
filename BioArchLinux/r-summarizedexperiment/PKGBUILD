@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SummarizedExperiment
-_pkgver=1.33.3
+_pkgver=1.34.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="SummarizedExperiment container"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -38,8 +38,8 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a18ad7510d889f08f45ef90eee0bb4ec')
-b2sums=('0db252e1ea288c7a22ed7f3345dd92b22ac3957fcffc4ab7d778514e10a9c530393a0717aaa3257f91142318a88c59165b36949849c36a1bb8f56a2f5689af97')
+md5sums=('fc10d4f9637df08027e0ad3efa1d4716')
+b2sums=('77370628f58464f135d643c8b79444181e20fb7294020097657c959d72e55d8e399dd421240e83515fdda6015348e3f991032c2f414b7169d25f286e0468b50f')
 
 build() {
   mkdir build
