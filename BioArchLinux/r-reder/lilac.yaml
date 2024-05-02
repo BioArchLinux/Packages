@@ -4,8 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-igraph
+- r-scales
 update_on:
-- regex: RedeR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RedeR
+- source: rpkgs
+  pkgname: RedeR
+  repo: bioc
+  md5: true
 - alias: r
