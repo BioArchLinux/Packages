@@ -9,7 +9,8 @@ repo_depends:
 - r-s4vectors
 - r-sparsematrixstats
 update_on:
-- regex: DelayedMatrixStats_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DelayedMatrixStats
+- source: rpkgs
+  pkgname: DelayedMatrixStats
+  repo: bioc
+  md5: true
 - alias: r
