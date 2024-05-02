@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 update_on:
-- regex: org.Sc.sgd.db_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/org.Sc.sgd.db
+- source: rpkgs
+  pkgname: org.Sc.sgd.db
+  repo: bioc-data-annotation
+  md5: true
 - alias: r
