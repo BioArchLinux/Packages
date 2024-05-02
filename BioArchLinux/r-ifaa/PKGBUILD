@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=IFAA
-_pkgver=1.4.0
+_pkgver=1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -35,8 +35,8 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('393ac86513ddc9adf474c654b5127394')
-b2sums=('41e634903e1957ff26229e3e8b1a546183ac9f16a5e895e367e309815aecd8eac5d213fb30c5fb01cd3634cd364d2e9071af2bde8402f102274c73dc02668693')
+md5sums=('4028d5eb956b2c5694824d41e07739c6')
+b2sums=('527f51d9e6b01ebfd658ff52b122d70d72210f6d19aee75cfee3abc16c3bf5a791bccd279c69176a1e1970fa246bc019611f2ac64c0ebf7efcb3f05ce948d3f5')
 
 build() {
   mkdir build
