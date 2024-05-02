@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=zlibbioc
-_pkgver=1.48.2
+_pkgver=1.50.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="An R packaged zlib-1.2.5"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -21,8 +21,8 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d592dec9dd60f8c4f7a21de511d4f039')
-b2sums=('62a861a8b518a88de969b9c57ac158a3793930af8471517300320b62746ca03ad168eb226cbc9b4e12590e34a8a289f161dd58e66bb09fb73355388bbcd12877')
+md5sums=('89333faad136c59c77bcee69e228e843')
+b2sums=('545d386f781b9504f79a94a6eef90294d6f6dc2141c3c73ead0282146582f24426f618da0c9801c1e8c8a27119ab5f2dc35a8035946fa3aeeef085ac313744f0')
 
 build() {
   mkdir build
