@@ -6,14 +6,14 @@ repo_depends:
 - r-annotationdbi
 - r-biocfilecache
 - r-digest
-- r-httr
+- r-httr2
 - r-progress
 - r-rappdirs
 - r-stringr
-- r-xml
 - r-xml2
 update_on:
-- regex: biomaRt_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/biomaRt
+- source: rpkgs
+  pkgname: biomaRt
+  repo: bioc
+  md5: true
 - alias: r
