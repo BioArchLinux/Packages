@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ShortRead
-_pkgver=1.60.0
+_pkgver=1.62.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="FASTQ input and manipulation"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -20,6 +20,7 @@ depends=(
   r-hwriter
   r-iranges
   r-latticeextra
+  r-pwalign
   r-rsamtools
   r-s4vectors
   r-zlibbioc
@@ -33,20 +34,13 @@ optdepends=(
   r-biocstyle
   r-biomart
   r-genomicfeatures
+  r-knitr
   r-runit
   r-yeastnagalakshmi
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "$_pkgname-fix-format.patch::https://github.com/Bioconductor/ShortRead/pull/16.patch")
-md5sums=('480786b1db8f8138a7a4e8c36f9bdfc4'
-         'f627a5a0cb37167b7f60d98fe6381045')
-b2sums=('7b20c86f1092be6cc5f0d4e1becfe257def06e3e958def1a235fd982238a62ed3ff605677a48fd50e3f73b90b3ffb676885d3a1efe5e0e7f9ea1acd56107d291'
-        'b35a65671c15a8df40bac51e1985025a33d37a119534501c8f41ae50097a94dcdd73c6d631d34c58abefcc45c63a5e329d12ee02ceeeb28aa7757a1ae3a94fb2')
-
-prepare() {
-  # fix format string errors
-  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-format.patch"
-}
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('718f2e03aaa516c0e4824e8894804e40')
+b2sums=('5d48d5ca51854273965488229fdb326ddf8644dcd2f4b94852f36da23de38725358c3d23bf2422822a23b5e1220b1611bbb609a6d50048b0c1b573de96c385db')
 
 build() {
   mkdir build
