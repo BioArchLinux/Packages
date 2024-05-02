@@ -6,8 +6,8 @@ repo_depends:
 - r-biocgenerics
 - r-genomeinfodbdata
 - r-iranges
-- r-rcurl
 - r-s4vectors
+- r-ucsc.utils
 update_on:
 - source: rpkgs
   pkgname: GenomeInfoDb
