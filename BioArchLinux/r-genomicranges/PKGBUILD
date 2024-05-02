@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomicRanges
-_pkgver=1.55.4
+_pkgver=1.56.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Representation and manipulation of genomic intervals"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -61,8 +61,8 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ac09e809d76d026312593715e88443a5')
-b2sums=('ecafb9bbe0746756d9727aa543a7a38a91f599934c818bd0f751178ef3c2354840551f9e3f8d17a47710e174966da817c05a9ed53c40e52e60604f39d17f3bc4')
+md5sums=('57d9a9090895eea7ffef72e254dda5f1')
+b2sums=('8b1698b55da750dc1c4cd5d4b3b8228379ac25dff269f55921b2f2653966a9b26c87792c0b59038e395cb613c5cc8246fd6e8053346760213b74aa91227cbc00')
 
 build() {
   mkdir build
