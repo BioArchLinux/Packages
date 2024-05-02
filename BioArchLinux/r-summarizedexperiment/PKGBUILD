@@ -1,16 +1,15 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SummarizedExperiment
-_pkgver=1.32.0
+_pkgver=1.33.3
 pkgname=r-${_pkgname,,}
-pkgver=1.32.0
-pkgrel=2
-pkgdesc='SummarizedExperiment container'
-arch=('any')
-url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+pkgver=${_pkgver//-/.}
+pkgrel=0
+pkgdesc="SummarizedExperiment container"
+arch=(any)
+url="https://bioconductor.org/packages/$_pkgname"
+license=('Artistic-2.0')
 depends=(
-  r
   r-biobase
   r-biocgenerics
   r-delayedarray
@@ -39,14 +38,15 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('9f801c16adb503d7252890019b46f5583c401622c7ec9373663537548c9889a4')
+md5sums=('a18ad7510d889f08f45ef90eee0bb4ec')
+b2sums=('0db252e1ea288c7a22ed7f3345dd92b22ac3957fcffc4ab7d778514e10a9c530393a0717aaa3257f91142318a88c59165b36949849c36a1bb8f56a2f5689af97')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:

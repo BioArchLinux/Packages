@@ -13,7 +13,8 @@ repo_depends:
 - r-s4arrays
 - r-s4vectors
 update_on:
-- regex: SummarizedExperiment_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SummarizedExperiment
+- source: rpkgs
+  pkgname: SummarizedExperiment
+  repo: bioc
+  md5: true
 - alias: r
