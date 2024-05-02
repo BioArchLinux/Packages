@@ -7,11 +7,15 @@ repo_depends:
 - r-biocgenerics
 - r-delayedarray
 - r-hdf5array
+- r-rcpp
 - r-rhdf5
+- r-s4arrays
 - r-s4vectors
 - r-sparsearray
 repo_makedepends:
+- r-biocsingular
 - r-chihaya
+- r-residualmatrix
 - r-testthat
 update_on:
 - source: rpkgs
