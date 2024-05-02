@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-biostrings
+- r-iranges
+- r-s4vectors
+repo_makedepends:
+- r-xvector
+- r-runit
+update_on:
+- source: rpkgs
+  pkgname: pwalign
+  repo: bioc
+  md5: true
+- alias: r
