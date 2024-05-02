@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomicRanges
-_pkgver=1.54.1
+_pkgver=1.55.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Representation and manipulation of genomic intervals"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -57,11 +57,12 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
   r-txdb.hsapiens.ucsc.hg19.knowngene
   r-txdb.mmusculus.ucsc.mm10.knowngene
+  r-txdbmaker
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('19fe37133cae70c1c3a1a164e6c8eaed')
-b2sums=('d08b113f0f0afbcf154f91f582d4d91f8c97c79567ecd8993cc4ff2b1a3f63d62026b9c6c457b17f6fd470c82b73431a1a2a46508ed7062d5332c7146e881cb9')
+md5sums=('ac09e809d76d026312593715e88443a5')
+b2sums=('ecafb9bbe0746756d9727aa543a7a38a91f599934c818bd0f751178ef3c2354840551f9e3f8d17a47710e174966da817c05a9ed53c40e52e60604f39d17f3bc4')
 
 build() {
   mkdir build
