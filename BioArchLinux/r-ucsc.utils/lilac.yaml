@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-httr
+- r-jsonlite
+- r-s4vectors
+repo_makedepends:
+- r-dbi
+- r-rmariadb
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: UCSC.utils
+  repo: bioc
+  md5: true
+- alias: r
