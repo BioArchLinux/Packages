@@ -3,9 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocparallel
 - r-mscoreutils
 update_on:
-- regex: MetaboCoreUtils_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MetaboCoreUtils
+- source: rpkgs
+  pkgname: MetaboCoreUtils
+  repo: bioc
+  md5: true
 - alias: r
