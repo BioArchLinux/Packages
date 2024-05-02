@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=DelayedArray
-_pkgver=0.28.0
+_pkgver=0.30.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="A unified framework for working transparently with on-disk and in-memory array-like datasets"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -35,8 +35,8 @@ optdepends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('812e7575d6eaa61f5b68364cdf1da3d9')
-b2sums=('09f14849b69bb27be6e3a99f9e466ecb65b70f6de2732c70a6b18ed24d6f9f6366b17e0131b0a1af91b9069c86671fcfdd4590940880a78fe6ff68ef333b15ec')
+md5sums=('bced73ec9d8dabb5b14a3fa236b9a402')
+b2sums=('a32e00e9e56d26f94a470d06bbc74960f658f13e61653e8e2886fb1a5e4d8e4e28425154b869f1ae1bbaea3efb9a1c3bc6a33ea32921a93a0c6c3d766a55cc77')
 
 build() {
   mkdir build
