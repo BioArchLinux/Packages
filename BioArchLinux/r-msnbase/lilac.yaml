@@ -18,13 +18,14 @@ repo_depends:
 - r-pcamethods
 - r-plyr
 - r-protgenerics
+- r-psmatch
 - r-rcpp
 - r-s4vectors
 - r-scales
 - r-vsn
-- r-xml
 update_on:
-- regex: MSnbase_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MSnbase
+- source: rpkgs
+  pkgname: MSnbase
+  repo: bioc
+  md5: true
 - alias: r
