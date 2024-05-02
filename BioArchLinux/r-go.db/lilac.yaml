@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 update_on:
-- regex: GO.db_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GO.db
+- source: rpkgs
+  pkgname: GO.db
+  repo: bioc-data-annotation
+  md5: true
 - alias: r
