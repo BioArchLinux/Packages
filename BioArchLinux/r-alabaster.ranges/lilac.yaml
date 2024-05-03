@@ -8,6 +8,7 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-iranges
+- r-rhdf5
 - r-s4vectors
 repo_makedepends:
 - r-testthat
