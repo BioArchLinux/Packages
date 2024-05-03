@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=biomvRCNS
-_pkgver=1.42.2
+_pkgver=1.44.0
 pkgname=r-${_pkgname,,}
-pkgver=1.42.2
-pkgrel=2
+pkgver=1.44.0
+pkgrel=1
 pkgdesc='Copy Number study and Segmentation for multivariate biological data'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
