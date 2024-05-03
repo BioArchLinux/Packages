@@ -6,9 +6,11 @@ repo_depends:
 - r-biostrings
 - r-gdata
 - r-multtest
+- r-pwalign
 - r-scatterplot3d
 update_on:
-- regex: iPAC_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/iPAC
+- source: rpkgs
+  pkgname: iPAC
+  repo: bioc
+  md5: true
 - alias: r
