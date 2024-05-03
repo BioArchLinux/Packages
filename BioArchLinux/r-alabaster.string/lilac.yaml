@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-alabaster.base
 - r-biostrings
+- r-s4vectors
 repo_makedepends:
 - r-testthat
 update_on:
