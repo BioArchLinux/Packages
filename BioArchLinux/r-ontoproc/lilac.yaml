@@ -9,16 +9,20 @@ repo_depends:
 - r-dplyr
 - r-dt
 - r-graph
+- r-httr
 - r-igraph
 - r-magrittr
 - r-ontologyindex
 - r-ontologyplot
+- r-r.utils
+- r-reticulate
 - r-rgraphviz
 - r-s4vectors
 - r-shiny
 - r-summarizedexperiment
 update_on:
-- regex: ontoProc_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ontoProc
+- source: rpkgs
+  pkgname: ontoProc
+  repo: bioc
+  md5: true
 - alias: r
