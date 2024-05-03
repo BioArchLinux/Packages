@@ -11,6 +11,7 @@ repo_depends:
 - r-genomicranges
 - r-ggplot2
 - r-iranges
+- r-pwalign
 - r-s4vectors
 - r-seqlogo
 - r-stringi
