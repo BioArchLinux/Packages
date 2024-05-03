@@ -1,25 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
-pre_build_script: |
-  for line in edit_file('PKGBUILD'):
-    if line.startswith('_pkgver='):
-      line = f'_pkgver={_G.newver}'
-    print(line)
-  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-iranges
-  - r-protgenerics
-  - r-qfeatures
-  - r-s4vectors
-  - r-spectra
-  - r-summarizedexperiment
+- r-biocgenerics
+- r-dbi
+- r-iranges
+- r-protgenerics
+- r-qfeatures
+- r-s4vectors
+- r-spectra
+- r-summarizedexperiment
 update_on:
-  - regex: MsExperiment_([\d._-]+).tar.gz
-    source: regex
-    url: https://bioconductor.org/packages/MsExperiment
-  - alias: r
+- source: rpkgs
+  pkgname: MsExperiment
+  repo: bioc
+  md5: true
+- alias: r
