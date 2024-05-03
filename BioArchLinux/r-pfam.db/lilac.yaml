@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 update_on:
-- regex: PFAM.db_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/PFAM.db
+- source: rpkgs
+  pkgname: PFAM.db
+  repo: bioc-data-annotation
+  md5: true
 - alias: r
