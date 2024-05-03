@@ -11,6 +11,7 @@ repo_depends:
 - r-genomicfeatures
 - r-genomicranges
 - r-iranges
+- r-pwalign
 - r-rlang
 - r-rtracklayer
 - r-s4vectors
@@ -18,7 +19,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-variantannotation
 update_on:
-- regex: StructuralVariantAnnotation_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/StructuralVariantAnnotation
+- source: rpkgs
+  pkgname: StructuralVariantAnnotation
+  repo: bioc
+  md5: true
 - alias: r
