@@ -9,7 +9,6 @@ repo_depends:
 - r-delayedarray
 - r-edger
 - r-hdf5array
-- r-howmany
 - r-kernlab
 - r-limma
 - r-locfdr
