@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-checkmate
+- r-data.table
 repo_makedepends:
 - r-testthat
 update_on:
