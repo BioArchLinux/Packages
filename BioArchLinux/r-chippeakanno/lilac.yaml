@@ -7,6 +7,7 @@ repo_depends:
 - r-biocgenerics
 - r-biomart
 - r-biostrings
+- r-data.table
 - r-dbi
 - r-dplyr
 - r-ensembldb
@@ -21,15 +22,22 @@ repo_depends:
 - r-keggrest
 - r-matrixstats
 - r-multtest
+- r-pwalign
 - r-rbgl
 - r-regioner
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
+- r-scales
+- r-stringr
 - r-summarizedexperiment
+- r-tibble
+- r-tidyr
+- r-universalmotif
 - r-venndiagram
 update_on:
-- regex: ChIPpeakAnno_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ChIPpeakAnno
+- source: rpkgs
+  pkgname: ChIPpeakAnno
+  repo: bioc
+  md5: true
 - alias: r
