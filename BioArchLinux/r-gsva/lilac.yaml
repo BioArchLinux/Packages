@@ -14,9 +14,11 @@ repo_depends:
 - r-s4vectors
 - r-singlecellexperiment
 - r-sparsematrixstats
+- r-spatialexperiment
 - r-summarizedexperiment
 update_on:
-- regex: GSVA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/GSVA
+- source: rpkgs
+  pkgname: GSVA
+  repo: bioc
+  md5: true
 - alias: r
