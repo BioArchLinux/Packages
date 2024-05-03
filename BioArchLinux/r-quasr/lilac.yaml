@@ -15,13 +15,36 @@ repo_depends:
 - r-genomicranges
 - r-iranges
 - r-rbowtie
-- r-rhtslib
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
 - r-shortread
+- r-txdbmaker
+repo_makedepends:
+- r-rhtslib
 update_on:
-- regex: QuasR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/QuasR
+- source: rpkgs
+  pkgname: QuasR
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: bzip2
+  repo: core
+  provided: libbz2.so
+  strip_release: true
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true
+- source: alpm
+  alpm: xz
+  repo: core
+  provided: liblzma.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true
