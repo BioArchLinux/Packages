@@ -9,6 +9,7 @@ repo_depends:
 - r-biocgenerics
 - r-genomicranges
 - r-iranges
+- r-jsonlite
 - r-s4vectors
 - r-summarizedexperiment
 repo_makedepends:
