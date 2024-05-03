@@ -16,9 +16,11 @@ repo_depends:
 - r-s4vectors
 - r-summarizedexperiment
 - r-tibble
+- r-txdbmaker
 - r-tximport
 update_on:
-- regex: tximeta_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/tximeta
+- source: rpkgs
+  pkgname: tximeta
+  repo: bioc
+  md5: true
 - alias: r
