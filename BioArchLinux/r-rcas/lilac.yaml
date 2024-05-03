@@ -29,6 +29,7 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-seqlogo
+- r-txdbmaker
 update_on:
 - source: rpkgs
   pkgname: RCAS
