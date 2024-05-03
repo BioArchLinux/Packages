@@ -11,6 +11,7 @@ repo_depends:
 - r-ggplot2
 - r-ggrepel
 - r-igraph
+- r-listviewer
 - r-rintrojs
 - r-s4vectors
 - r-shiny
@@ -23,7 +24,8 @@ repo_depends:
 - r-vipor
 - r-viridislite
 update_on:
-- regex: iSEE_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/iSEE
+- source: rpkgs
+  pkgname: iSEE
+  repo: bioc
+  md5: true
 - alias: r
