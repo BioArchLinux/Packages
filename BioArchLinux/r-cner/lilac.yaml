@@ -15,6 +15,7 @@ repo_depends:
 - r-iranges
 - r-keggrest
 - r-powerlaw
+- r-pwalign
 - r-r.utils
 - r-readr
 - r-reshape2
@@ -23,7 +24,8 @@ repo_depends:
 - r-s4vectors
 - r-xvector
 update_on:
-- regex: CNEr_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/CNEr
+- source: rpkgs
+  pkgname: CNEr
+  repo: bioc
+  md5: true
 - alias: r
