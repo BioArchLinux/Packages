@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-biocfilecache
 - r-biocgenerics
 - r-biocparallel
 - r-biomart
@@ -32,11 +33,13 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-summarizedexperiment
+- r-txdbmaker
 - r-withr
 - r-xml
 - r-xml2
 update_on:
-- regex: ORFik_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ORFik
+- source: rpkgs
+  pkgname: ORFik
+  repo: bioc
+  md5: true
 - alias: r
