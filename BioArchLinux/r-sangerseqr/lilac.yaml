@@ -4,10 +4,12 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biostrings
+- r-pwalign
 - r-shiny
 - r-stringr
 update_on:
-- regex: sangerseqR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/sangerseqR
+- source: rpkgs
+  pkgname: sangerseqR
+  repo: bioc
+  md5: true
 - alias: r
