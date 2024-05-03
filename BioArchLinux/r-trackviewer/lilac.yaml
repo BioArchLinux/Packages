@@ -9,22 +9,23 @@ repo_depends:
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
-- r-graph
 - r-grimport
 - r-gviz
 - r-htmlwidgets
+- r-igraph
 - r-interactionset
 - r-iranges
 - r-plotrix
-- r-rgraphviz
 - r-rhdf5
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
 - r-scales
 - r-strawr
+- r-txdbmaker
 update_on:
-- regex: trackViewer_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/trackViewer
+- source: rpkgs
+  pkgname: trackViewer
+  repo: bioc
+  md5: true
 - alias: r
