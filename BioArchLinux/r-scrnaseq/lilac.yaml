@@ -3,18 +3,28 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-alabaster.base
+- r-alabaster.matrix
+- r-alabaster.sce
 - r-annotationdbi
 - r-annotationhub
 - r-biocgenerics
+- r-dbi
+- r-delayedarray
 - r-ensembldb
 - r-experimenthub
 - r-genomicfeatures
 - r-genomicranges
+- r-gypsum
+- r-jsonlite
+- r-rsqlite
 - r-s4vectors
 - r-singlecellexperiment
+- r-sparsearray
 - r-summarizedexperiment
 update_on:
-- regex: scRNAseq_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/scRNAseq
+- source: rpkgs
+  pkgname: scRNAseq
+  repo: bioc-data-experiment
+  md5: true
 - alias: r

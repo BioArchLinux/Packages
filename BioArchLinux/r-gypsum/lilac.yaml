@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-filelock
+- r-httr2
+- r-jsonlite
+- r-paws.storage
+repo_makedepends:
+- r-dbi
+- r-jsonvalidate
+- r-rsqlite
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: gypsum
+  repo: bioc
+  md5: true
+- alias: r
