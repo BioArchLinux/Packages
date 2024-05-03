@@ -1,23 +1,30 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
+- github: pekkarr
+  email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
 - r-biobase
 - r-biocgenerics
-- r-biocmanager
+- r-biocio
+- r-biomart
 - r-dbi
+- r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges
-- r-graph
+- r-httr
 - r-iranges
-- r-rbgl
+- r-rjson
+- r-rsqlite
+- r-rtracklayer
 - r-s4vectors
-- r-txdbmaker
+- r-ucsc.utils
+repo_makedepends:
+- r-rmariadb
+- r-runit
 update_on:
 - source: rpkgs
-  pkgname: OrganismDbi
+  pkgname: txdbmaker
   repo: bioc
   md5: true
 - alias: r

@@ -1,11 +1,11 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
-_pkgname=OrganismDbi
-_pkgver=1.46.0
+_pkgname=txdbmaker
+_pkgver=1.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
-pkgdesc="Software to enable the smooth interfacing of different database packages"
+pkgrel=1
+pkgdesc="Tools for making TxDb objects from genomic annotations"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
@@ -13,37 +13,44 @@ depends=(
   r-annotationdbi
   r-biobase
   r-biocgenerics
-  r-biocmanager
+  r-biocio
+  r-biomart
   r-dbi
+  r-genomeinfodb
   r-genomicfeatures
   r-genomicranges
-  r-graph
+  r-httr
   r-iranges
-  r-rbgl
+  r-rjson
+  r-rsqlite
+  r-rtracklayer
   r-s4vectors
-  r-txdbmaker
+  r-ucsc.utils
+)
+checkdepends=(
+  r-rmariadb
+  r-runit
 )
 optdepends=(
-  r-annotationhub
   r-biocstyle
-  r-biomart
-  r-bsgenome.hsapiens.ucsc.hg19
-  r-fdb.ucsc.trnas
-  r-homo.sapiens
+  r-ensembldb
   r-knitr
   r-mirbase.db
-  r-rattus.norvegicus
   r-rmariadb
-  r-rtracklayer
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a81aa484401a0794b889eb66ba462cdc')
-b2sums=('6b5a48844b244700a81531091902eaac87ec5504eb90852b84e407ec213442ef97e6e3eff5786e27ab994cb245a87e30f51d402af15755158375896af95fdf10')
+md5sums=('d2145305fc78518240d1d9cace6478b1')
+b2sums=('72f341676a93374d1f77c09a6cef707e54b102b5aea58e097e89144ef1389e3f15d8e051176e9a88a75645079e0da4704da354e5a7b3b7f49cd3b79053769263')
 
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla run_unitTests.R
 }
 
 package() {
