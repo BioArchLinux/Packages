@@ -5,10 +5,9 @@ maintainers:
 repo_depends:
 - r-alabaster.base
 - r-alabaster.sce
-- r-jsonlite
+- r-rhdf5
 - r-s4vectors
 - r-spatialexperiment
-- r-summarizedexperiment
 repo_makedepends:
 - r-dropletutils
 - r-png
