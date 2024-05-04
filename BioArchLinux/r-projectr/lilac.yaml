@@ -5,11 +5,13 @@ maintainers:
 repo_depends:
 - r-cowplot
 - r-dplyr
+- r-fgsea
 - r-ggalluvial
 - r-ggplot2
 - r-ggrepel
 - r-limma
 - r-matrixmodels
+- r-msigdbr
 - r-nmf
 - r-rcolorbrewer
 - r-reshape2
@@ -19,7 +21,8 @@ repo_depends:
 - r-umap
 - r-viridis
 update_on:
-- regex: projectR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/projectR
+- source: rpkgs
+  pkgname: projectR
+  repo: bioc
+  md5: true
 - alias: r
