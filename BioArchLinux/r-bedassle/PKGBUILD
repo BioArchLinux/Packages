@@ -4,7 +4,7 @@ _pkgname=BEDASSLE
 _pkgver=1.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Quantifies Effects of Geo/Eco Distance on Genetic Differentiation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
