@@ -4,8 +4,12 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationhub
+- r-biocfilecache
+- r-curl
 - r-dplyr
 - r-experimenthub
+- r-httr2
+- r-tibble
 update_on:
 - source: rpkgs
   pkgname: depmap
