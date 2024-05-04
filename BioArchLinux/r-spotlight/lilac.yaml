@@ -17,7 +17,6 @@ repo_makedepends:
 - r-jpeg
 - r-png
 - r-scatterpie
-- r-seuratobject
 - r-spatialexperiment
 - r-tenxvisiumdata
 - r-testthat
