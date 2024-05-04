@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-checkmate
 - r-dplyr
 - r-ggplot2
 - r-ggrepel
@@ -15,7 +16,8 @@ repo_depends:
 - r-tibble
 - r-tidyr
 update_on:
-- regex: timeOmics_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/timeOmics
+- source: rpkgs
+  pkgname: timeOmics
+  repo: bioc
+  md5: true
 - alias: r
