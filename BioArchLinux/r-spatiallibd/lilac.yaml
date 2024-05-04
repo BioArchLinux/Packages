@@ -19,10 +19,12 @@ repo_depends:
 - r-jsonlite
 - r-limma
 - r-magick
+- r-matrixgenerics
 - r-paletteer
 - r-plotly
 - r-png
 - r-rcolorbrewer
+- r-rlang
 - r-rtracklayer
 - r-s4vectors
 - r-scater
