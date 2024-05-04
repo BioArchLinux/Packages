@@ -3,50 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-annotationdbi
-- r-apcluster
 - r-biobase
-- r-clusterprofiler
-- r-cp4p
 - r-dapardata
-- r-dendextend
-- r-diptest
-- r-doparallel
-- r-dplyr
-- r-factoextra
-- r-factominer
-- r-forcats
 - r-foreach
-- r-ggplot2
-- r-gplots
-- r-graph
 - r-highcharter
-- r-igraph
-- r-imp4p
-- r-impute
-- r-knitr
-- r-limma
-- r-lme4
-- r-mfuzz
 - r-msnbase
-- r-multcomp
-- r-norm
-- r-openxlsx
-- r-org.sc.sgd.db
-- r-preprocesscore
-- r-purrr
-- r-rcolorbrewer
-- r-readxl
-- r-reshape2
-- r-scales
-- r-stringr
-- r-tibble
-- r-tidyr
-- r-tidyverse
-- r-vioplot
-- r-visnetwork
-- r-vsn
 repo_makedepends:
+- r-imp4p
 - r-testthat
 update_on:
 - source: rpkgs
