@@ -9,7 +9,6 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_license = "file LICENSE",
         expect_systemrequirements = "OpenBabel (>= 3.0.0) with headers (http://openbabel.org). Eigen3 with headers.",
     )
 
