@@ -23,6 +23,7 @@ repo_depends:
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
+- r-txdbmaker
 repo_makedepends:
 - r-rnamodr.data
 - r-testthat
