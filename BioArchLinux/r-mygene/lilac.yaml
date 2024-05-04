@@ -10,8 +10,10 @@ repo_depends:
 - r-plyr
 - r-s4vectors
 - r-sqldf
+- r-txdbmaker
 update_on:
-- regex: mygene_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/mygene
+- source: rpkgs
+  pkgname: mygene
+  repo: bioc
+  md5: true
 - alias: r
