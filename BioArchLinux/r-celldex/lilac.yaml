@@ -3,15 +3,23 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-alabaster.base
+- r-alabaster.matrix
+- r-alabaster.se
 - r-annotationdbi
 - r-annotationhub
+- r-dbi
 - r-delayedarray
 - r-delayedmatrixstats
 - r-experimenthub
+- r-gypsum
+- r-jsonlite
+- r-rsqlite
 - r-s4vectors
 - r-summarizedexperiment
 update_on:
-- regex: celldex_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/celldex
+- source: rpkgs
+  pkgname: celldex
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
