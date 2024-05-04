@@ -10,7 +10,6 @@ repo_depends:
 - r-drc
 - r-jsonlite
 - r-jsonvalidate
-- r-magrittr
 - r-multiassayexperiment
 - r-s4vectors
 - r-stringr
