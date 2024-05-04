@@ -8,10 +8,7 @@ repo_depends:
 - r-biostrings
 - r-decipher
 - r-digest
-- r-distr
-- r-distrex
 - r-dplyr
-- r-fitdistrplus
 - r-foreach
 - r-genomicranges
 - r-ggplot2
@@ -21,6 +18,7 @@ repo_depends:
 - r-magrittr
 - r-openxlsx
 - r-plyr
+- r-pwalign
 - r-rcolorbrewer
 - r-reshape2
 - r-s4vectors
@@ -31,7 +29,8 @@ repo_depends:
 - r-uniqtag
 - r-xml
 update_on:
-- regex: openPrimeR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/openPrimeR
+- source: rpkgs
+  pkgname: openPrimeR
+  repo: bioc
+  md5: true
 - alias: r
