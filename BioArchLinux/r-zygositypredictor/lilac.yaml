@@ -9,7 +9,11 @@ repo_depends:
 - r-genomicranges
 - r-igraph
 - r-iranges
+- r-knitr
+- r-magrittr
 - r-purrr
+- r-readr
+- r-rlang
 - r-rsamtools
 - r-stringr
 - r-tibble
