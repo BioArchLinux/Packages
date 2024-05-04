@@ -12,6 +12,7 @@ repo_depends:
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
+- r-ggrepel
 - r-heatmaply
 - r-iranges
 - r-matrixstats
@@ -21,14 +22,21 @@ repo_depends:
 - r-plyr
 - r-prroc
 - r-rcolorbrewer
-- r-rcpp
-- r-rcpparmadillo
 - r-reshape2
 - r-s4vectors
 - r-scales
 - r-summarizedexperiment
+- r-txdbmaker
+repo_makedepends:
+- r-rcpp
+- r-rcpparmadillo
 update_on:
-- regex: OUTRIDER_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/OUTRIDER
+- source: rpkgs
+  pkgname: OUTRIDER
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
