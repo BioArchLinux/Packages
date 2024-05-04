@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 update_on:
-- regex: org.Bt.eg.db_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/org.Bt.eg.db
+- source: rpkgs
+  pkgname: org.Bt.eg.db
+  repo: bioc-data-annotation
+  md5: true
 - alias: r
