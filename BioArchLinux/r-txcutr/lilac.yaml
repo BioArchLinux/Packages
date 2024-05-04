@@ -12,8 +12,10 @@ repo_depends:
 - r-iranges
 - r-rtracklayer
 - r-s4vectors
+- r-txdbmaker
 update_on:
-- regex: txcutr_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/txcutr
+- source: rpkgs
+  pkgname: txcutr
+  repo: bioc
+  md5: true
 - alias: r
