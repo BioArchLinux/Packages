@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-alabaster.base
 - r-alabaster.se
+- r-jsonlite
 - r-singlecellexperiment
 repo_makedepends:
 - r-testthat
