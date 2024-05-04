@@ -15,11 +15,13 @@ repo_depends:
 - r-gviz
 - r-iranges
 - r-plyr
+- r-pwalign
 - r-s4vectors
 - r-seqlogo
 - r-stringr
 update_on:
-- regex: SPLINTER_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SPLINTER
+- source: rpkgs
+  pkgname: SPLINTER
+  repo: bioc
+  md5: true
 - alias: r
