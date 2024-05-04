@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=CytoPipeline
-_pkgver=1.2.0
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Automation and visualization of flow cytometry data analysis pipelines"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -30,14 +30,16 @@ checkdepends=(
 optdepends=(
   r-biocstyle
   r-diffviewer
+  r-dplyr
   r-knitr
+  r-reshape2
   r-rmarkdown
   r-testthat
   r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a4ed3b88553c7115d7dce368a0fda5a5')
-b2sums=('4622fffe670a477d9a4b5144b842d89622b8c46eb2623cbcdfa3f85bf3f26cbdbe3893bceb51c79082bcbd7da031bc0187e19736a862ed5d492c0814506db2ee')
+md5sums=('72f1c9750d747024d3815e7d14d9213d')
+b2sums=('675b54fd1a8fdabf57631b5bc50625b04105b5a3bba52a045efd79e22aa20985f77ebfdf87912da9fcd205a2b54a251e0844238ed8835d89d17bf886f1e532e8')
 
 build() {
   mkdir build
