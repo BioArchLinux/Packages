@@ -10,12 +10,14 @@ repo_depends:
 - r-future.apply
 - r-genomicranges
 - r-iranges
+- r-pwalign
 - r-rcpp
 - r-s4vectors
 - r-stringi
 - r-stringr
 update_on:
-- regex: XNAString_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/XNAString
+- source: rpkgs
+  pkgname: XNAString
+  repo: bioc
+  md5: true
 - alias: r
