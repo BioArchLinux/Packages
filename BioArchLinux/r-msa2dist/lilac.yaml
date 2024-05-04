@@ -10,6 +10,7 @@ repo_depends:
 - r-foreach
 - r-genomicranges
 - r-iranges
+- r-pwalign
 - r-rcpp
 - r-rlang
 - r-seqinr
