@@ -5,7 +5,9 @@ maintainers:
 repo_depends:
 - r-alabaster.base
 - r-alabaster.se
+- r-jsonlite
 - r-multiassayexperiment
+- r-rhdf5
 - r-s4vectors
 repo_makedepends:
 - r-biocparallel
