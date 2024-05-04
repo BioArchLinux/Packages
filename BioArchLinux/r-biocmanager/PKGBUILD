@@ -4,7 +4,7 @@ _pkgname=BiocManager
 _pkgver=1.30.23
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Access the Bioconductor Project Package Repository"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
