@@ -3,9 +3,18 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bedassle
+- r-dplyr
+- r-magrittr
 - r-nloptr
+- r-randomcolor
+- r-scales
+- r-tibble
+- r-tidyselect
+- r-visnetwork
 update_on:
-- regex: Summix_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Summix
+- source: rpkgs
+  pkgname: Summix
+  repo: bioc
+  md5: true
 - alias: r
