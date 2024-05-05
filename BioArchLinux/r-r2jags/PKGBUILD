@@ -4,7 +4,7 @@ _pkgname=R2jags
 _pkgver=0.8-5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Using R to Run 'JAGS'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
