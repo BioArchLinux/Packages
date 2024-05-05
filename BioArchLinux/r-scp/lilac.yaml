@@ -4,16 +4,22 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-dplyr
-- r-magrittr
+- r-ggplot2
+- r-ggrepel
+- r-ihw
 - r-matrixstats
+- r-metapod
 - r-mscoreutils
 - r-multiassayexperiment
+- r-nipals
 - r-qfeatures
+- r-rcolorbrewer
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment
 update_on:
-- regex: scp_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/scp
+- source: rpkgs
+  pkgname: scp
+  repo: bioc
+  md5: true
 - alias: r
