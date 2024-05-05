@@ -1,14 +1,14 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=CytoPipelineGUI
-_pkgver=1.0.0
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="GUI's for visualization of flow cytometry data analysis pipelines"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=('GPL-3.0-or-later AND CC-BY-SA-4.0')
+license=('GPL-3.0-only')
 depends=(
   r-cytopipeline
   r-flowcore
@@ -30,8 +30,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('fb6a6a7aad638be11919a144f3d9907a')
-b2sums=('28aa658557d38910b1d94131057b88c6578a3347c364a91be085059e0a6c83fafc7fe2e999a5a23f9e04c76eb6324b887413e72ad765acb587bfa68929f99719')
+md5sums=('5f1354914d98b1aa62359681d3e4d76c')
+b2sums=('5a042778a2059e22f592a1b06af3f9ae122170aca02e1f737a514f2ed98432704e4a1eed44c436feac852bd4bbf827a632d2be7a2262d6ee427027a8a1f39d08')
 
 build() {
   mkdir build
