@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocparallel
+- r-coop
 - r-dplyr
 - r-gamlss
 - r-gamlss.dist
@@ -15,6 +16,7 @@ repo_depends:
 - r-pbmcapply
 - r-rvinecopulib
 - r-singlecellexperiment
+- r-sparsemvn
 - r-summarizedexperiment
 - r-tibble
 - r-umap
