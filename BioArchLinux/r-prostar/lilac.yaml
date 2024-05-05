@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-biobase
 - r-colourpicker
 - r-dapar
 - r-dapardata
@@ -14,7 +15,6 @@ repo_depends:
 - r-gtools
 - r-highcharter
 - r-htmlwidgets
-- r-knitr
 - r-later
 - r-markdown
 - r-promises
