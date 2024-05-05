@@ -7,8 +7,10 @@ repo_depends:
 - r-coda
 - r-r2winbugs
 - r-rjags
+- r-stringr
 update_on:
-- regex: R2jags_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=R2jags
+- source: rpkgs
+  pkgname: R2jags
+  repo: cran
+  md5: true
 - alias: r
