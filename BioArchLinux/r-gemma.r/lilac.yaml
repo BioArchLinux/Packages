@@ -23,6 +23,7 @@ repo_depends:
 - r-tidyr
 repo_makedepends:
 - r-microbenchmark
+- r-shiny
 - r-testthat
 update_on:
 - source: rpkgs
