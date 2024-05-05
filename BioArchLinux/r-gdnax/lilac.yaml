@@ -9,12 +9,14 @@ repo_depends:
 - r-biocparallel
 - r-biostrings
 - r-bitops
+- r-cli
 - r-genomeinfodb
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicfiles
 - r-genomicranges
 - r-iranges
+- r-matrixstats
 - r-plotrix
 - r-rcolorbrewer
 - r-rsamtools
