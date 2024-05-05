@@ -26,6 +26,7 @@ repo_depends:
 - r-rtracklayer
 - r-scales
 - r-tidyr
+- r-txdbmaker
 - r-venndiagram
 - r-viridis
 update_on:
