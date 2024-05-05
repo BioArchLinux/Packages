@@ -4,7 +4,7 @@ _pkgname=nipals
 _pkgver=0.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Principal Components Analysis using NIPALS or Weighted EMPCA, with Gram-Schmidt Orthogonalization"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
