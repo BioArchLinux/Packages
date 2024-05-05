@@ -3,25 +3,34 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-doparallel
+- r-cubature
 - r-dplyr
+- r-evmix
 - r-ggalluvial
+- r-ggdendro
 - r-ggplot2
 - r-ggraph
+- r-hash
 - r-igraph
+- r-inext
 - r-plyr
-- r-powertcr
+- r-quantreg
+- r-rcpp
 - r-reshape2
+- r-rjson
 - r-rlang
+- r-s4vectors
 - r-seuratobject
 - r-singlecellexperiment
 - r-stringdist
 - r-stringr
 - r-summarizedexperiment
 - r-tidygraph
-- r-vegan
+- r-truncdist
+- r-vgam
 update_on:
-- regex: scRepertoire_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/scRepertoire
+- source: rpkgs
+  pkgname: scRepertoire
+  repo: bioc
+  md5: true
 - alias: r

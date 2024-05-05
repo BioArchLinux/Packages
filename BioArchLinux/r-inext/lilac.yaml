@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ggplot2
+- r-rcpp
+- r-reshape2
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: iNEXT
+  repo: cran
+  md5: true
+- alias: r
