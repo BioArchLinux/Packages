@@ -29,6 +29,7 @@ repo_makedepends:
 - r-rcpparmadillo
 - r-rcppprogress
 - r-testthat
+- r-txdbmaker
 update_on:
 - source: rpkgs
   pkgname: BUSpaRse
