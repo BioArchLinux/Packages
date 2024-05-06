@@ -7,7 +7,9 @@ repo_depends:
 - r-bicare
 - r-biclust
 - r-biobase
+- r-clusterprofiler
 - r-dbscan
+- r-dose
 - r-dynamictreecut
 - r-energy
 - r-fabia
@@ -21,12 +23,12 @@ repo_depends:
 - r-matrixcorrelation
 - r-mcl
 - r-mclust
-- r-mirsponger
 - r-nmf
 - r-org.hs.eg.db
 - r-pma
 - r-ppclust
 - r-rcpp
+- r-reactomepa
 - r-rqubic
 - r-s4vd
 - r-sombrero
