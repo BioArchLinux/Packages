@@ -4,11 +4,12 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocgenerics
-- r-combinat
 - r-demuxmix
+- r-dplyr
 - r-ensembldb
 - r-genomeinfodb
 - r-iranges
+- r-kernelknn
 - r-matrixgenerics
 - r-singlecellexperiment
 - r-summarizedexperiment
