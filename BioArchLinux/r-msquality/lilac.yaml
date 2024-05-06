@@ -10,6 +10,7 @@ repo_depends:
 - r-msexperiment
 - r-plotly
 - r-protgenerics
+- r-rlang
 - r-rmzqc
 - r-shiny
 - r-shinydashboard
