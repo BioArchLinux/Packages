@@ -22,6 +22,7 @@ repo_depends:
 - r-rdpack
 - r-rlang
 - r-s4vectors
+- r-scales
 - r-tibble
 - r-tidyr
 - r-variantannotation
