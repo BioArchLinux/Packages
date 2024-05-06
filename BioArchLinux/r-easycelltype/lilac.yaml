@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
+- r-biocstyle
 - r-clusterprofiler
 - r-dplyr
 - r-forcats
@@ -12,6 +13,7 @@ repo_depends:
 - r-org.hs.eg.db
 - r-org.mm.eg.db
 - r-rlang
+- r-vctrs
 repo_makedepends:
 - r-testthat
 update_on:
