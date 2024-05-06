@@ -10,7 +10,6 @@ repo_depends:
 - r-csaw
 - r-dplyr
 - r-edger
-- r-enrichedheatmap
 - r-forcats
 - r-genomeinfodb
 - r-genomicinteractions
@@ -20,10 +19,8 @@ repo_depends:
 - r-ggrepel
 - r-ggside
 - r-glue
-- r-gviz
 - r-interactionset
 - r-iranges
-- r-limma
 - r-matrixstats
 - r-patchwork
 - r-rcolorbrewer
@@ -40,6 +37,8 @@ repo_depends:
 - r-vctrs
 - r-venndiagram
 repo_makedepends:
+- r-deseq2
+- r-enrichedheatmap
 - r-harmonicmeanp
 - r-testthat
 update_on:
