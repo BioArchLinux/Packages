@@ -15,6 +15,7 @@ repo_depends:
 - r-motifmatchr
 - r-pracma
 - r-rsamtools
+- r-rtracklayer
 - r-s4vectors
 - r-summarizedexperiment
 - r-tfbstools
