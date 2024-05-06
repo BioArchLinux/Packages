@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-annotationhub
 - r-biobase
+- r-biocgenerics
 - r-circlize
 - r-clusterprofiler
 - r-complexheatmap
@@ -12,10 +13,13 @@ repo_depends:
 - r-dose
 - r-dplyr
 - r-easypubmed
+- r-epimix
+- r-experimenthub
 - r-foreach
 - r-fuzzyjoin
 - r-genomicranges
 - r-geoquery
+- r-ggplot2
 - r-gplots
 - r-hiver
 - r-magrittr
