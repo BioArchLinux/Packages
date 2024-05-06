@@ -6,10 +6,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=stringi
-_pkgver=1.8.3
+_pkgver=1.8.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Fast and Portable Character String Processing Facilities"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -19,8 +19,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ebc7252eb0269ff7aae2966e4a85b4d6')
-b2sums=('e77b5a0c57f18620266797174fbc710af6edd9ba72bce0da70768b4cabd88e758f0ab856f2bee76754de431e4102d1aff66ae2d2b3d554d152081f84a4e0b75d')
+md5sums=('e3696c0a666f2f2dc8e280f2298cba0d')
+b2sums=('7c29c7a6fda45e5550dd8012f61cf7903b74bdb5103b95ac4b971741bfb86219d7344f77764da5fc3a4754fffebde99cf0cb59143a24d484679e69d2b1c670d7')
 
 build() {
   mkdir build
