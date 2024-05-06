@@ -22,6 +22,7 @@ repo_depends:
 - r-magrittr
 - r-pfamanalyzer
 - r-plyr
+- r-pwalign
 - r-rcolorbrewer
 - r-rcurl
 - r-readr
