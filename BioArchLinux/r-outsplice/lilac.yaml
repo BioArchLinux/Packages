@@ -8,7 +8,6 @@ repo_depends:
 - r-genomicranges
 - r-iranges
 - r-org.hs.eg.db
-- r-repitools
 - r-s4vectors
 - r-txdb.hsapiens.ucsc.hg19.knowngene
 - r-txdb.hsapiens.ucsc.hg38.knowngene
