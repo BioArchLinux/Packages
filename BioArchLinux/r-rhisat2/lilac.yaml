@@ -3,11 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-genomicfeatures
 - r-genomicranges
 - r-sgseq
+- r-txdbmaker
 update_on:
-- regex: Rhisat2_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Rhisat2
+- source: rpkgs
+  pkgname: Rhisat2
+  repo: bioc
+  md5: true
 - alias: r
