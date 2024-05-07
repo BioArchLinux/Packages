@@ -1,4 +1,5 @@
-# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=optparse
 _pkgver=1.7.5
@@ -12,6 +13,10 @@ license=('GPL-2.0-or-later')
 depends=(
   r-getopt
 )
+checkdepends=(
+  r-stringr
+  r-testthat
+)
 optdepends=(
   r-knitr
   r-stringr
@@ -24,6 +29,11 @@ b2sums=('4379ce2a3947934ca2e6c83a34fddd77ca49313ea77d91908a13b8ef583259af0c31f1d
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla run-all.R
 }
 
 package() {
