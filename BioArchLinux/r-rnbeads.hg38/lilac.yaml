@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-genomicranges
+update_on:
+- source: rpkgs
+  pkgname: RnBeads.hg38
+  repo: bioc-data-experiment
+  md5: true
+- alias: r

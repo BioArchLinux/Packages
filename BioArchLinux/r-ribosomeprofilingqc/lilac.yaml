@@ -12,6 +12,7 @@ repo_depends:
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
+- r-ggextra
 - r-ggfittext
 - r-ggplot2
 - r-ggrepel
@@ -23,9 +24,11 @@ repo_depends:
 - r-ruvseq
 - r-s4vectors
 - r-scales
+- r-txdbmaker
 - r-xvector
 update_on:
-- regex: ribosomeProfilingQC_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ribosomeProfilingQC
+- source: rpkgs
+  pkgname: ribosomeProfilingQC
+  repo: bioc
+  md5: true
 - alias: r

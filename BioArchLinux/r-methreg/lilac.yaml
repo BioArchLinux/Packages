@@ -11,21 +11,26 @@ repo_depends:
 - r-ggplot2
 - r-ggpubr
 - r-iranges
+- r-jaspar2024
+- r-openxlsx
 - r-plyr
 - r-progress
 - r-pscl
 - r-readr
 - r-rlang
+- r-rsqlite
 - r-s4vectors
 - r-sesame
 - r-sesamedata
 - r-sfsmisc
 - r-stringr
 - r-summarizedexperiment
+- r-tfbstools
 - r-tibble
 - r-tidyr
 update_on:
-- regex: MethReg_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MethReg
+- source: rpkgs
+  pkgname: MethReg
+  repo: bioc
+  md5: true
 - alias: r

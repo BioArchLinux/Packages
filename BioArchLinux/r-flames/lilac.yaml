@@ -21,13 +21,12 @@ repo_depends:
 - r-ggplot2
 - r-gridextra
 - r-igraph
+- r-iranges
 - r-jsonlite
 - r-magrittr
 - r-multiassayexperiment
 - r-rcolorbrewer
-- r-rcpp
 - r-reticulate
-- r-rhtslib
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
@@ -37,11 +36,39 @@ repo_depends:
 - r-singlecellexperiment
 - r-stringr
 - r-summarizedexperiment
+- r-tibble
 - r-tidyr
+- r-tidyselect
+- r-txdbmaker
 - r-withr
 - r-zlibbioc
+repo_makedepends:
+- r-rcpp
+- r-rhtslib
+- r-testthat
 update_on:
-- regex: FLAMES_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/FLAMES
+- source: rpkgs
+  pkgname: FLAMES
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpm
+  alpm: bzip2
+  repo: core
+  provided: libbz2.so
+  strip_release: true
+- source: alpm
+  alpm: curl
+  repo: core
+  provided: libcurl.so
+  strip_release: true
+- source: alpm
+  alpm: xz
+  repo: core
+  provided: liblzma.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

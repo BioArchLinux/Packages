@@ -28,10 +28,12 @@ repo_depends:
 - r-shiny
 - r-shinycssloaders
 - r-shinydashboard
-- r-waiter
 - r-shinyjqui
+- r-txdbmaker
+- r-waiter
 update_on:
-- regex: scanMiRApp_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/scanMiRApp
+- source: rpkgs
+  pkgname: scanMiRApp
+  repo: bioc
+  md5: true
 - alias: r

@@ -10,10 +10,12 @@ repo_depends:
 - r-genomicalignments
 - r-genomicranges
 - r-hiannotator
+- r-pwalign
 - r-readxl
 - r-soniclength
 update_on:
-- regex: hiReadsProcessor_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/hiReadsProcessor
+- source: rpkgs
+  pkgname: hiReadsProcessor
+  repo: bioc
+  md5: true
 - alias: r

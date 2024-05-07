@@ -4,12 +4,16 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ggplot2
+- r-ggrepel
 - r-ggside
+- r-rcolorbrewer
+- r-scales
 - r-singlecellexperiment
 - r-spatialexperiment
 - r-summarizedexperiment
 update_on:
-- regex: ggspavis_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ggspavis
+- source: rpkgs
+  pkgname: ggspavis
+  repo: bioc
+  md5: true
 - alias: r

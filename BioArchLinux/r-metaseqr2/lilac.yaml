@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-absseq
-- r-bayseq
 - r-biobase
 - r-biocgenerics
 - r-biocparallel
@@ -44,12 +43,14 @@ repo_depends:
 - r-stringr
 - r-summarizedexperiment
 - r-survcomp
+- r-txdbmaker
 - r-venndiagram
 - r-vsn
 - r-yaml
 - r-zoo
 update_on:
-- regex: metaseqR2_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/metaseqR2
+- source: rpkgs
+  pkgname: metaseqR2
+  repo: bioc
+  md5: true
 - alias: r

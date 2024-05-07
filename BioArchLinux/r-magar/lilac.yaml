@@ -18,10 +18,12 @@ repo_depends:
 - r-rjson
 - r-rnbeads
 - r-rnbeads.hg19
+- r-rnbeads.hg38
 - r-snpstats
 - r-upsetr
 update_on:
-- regex: MAGAR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MAGAR
+- source: rpkgs
+  pkgname: MAGAR
+  repo: bioc
+  md5: true
 - alias: r

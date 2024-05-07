@@ -21,8 +21,10 @@ repo_depends:
 - r-seqinr
 - r-seqlogo
 - r-summarizedexperiment
+- r-txdbmaker
 update_on:
-- regex: IntEREst_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/IntEREst
+- source: rpkgs
+  pkgname: IntEREst
+  repo: bioc
+  md5: true
 - alias: r

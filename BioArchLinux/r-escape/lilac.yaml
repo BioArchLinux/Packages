@@ -3,11 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-aucell
 - r-biocparallel
-- r-broom
-- r-data.table
 - r-dplyr
+- r-ggdist
 - r-ggplot2
+- r-ggpointdensity
 - r-ggridges
 - r-gseabase
 - r-gsva
@@ -15,13 +16,14 @@ repo_depends:
 - r-msigdbr
 - r-patchwork
 - r-reshape2
-- r-rlang
+- r-seuratobject
 - r-singlecellexperiment
 - r-stringr
 - r-summarizedexperiment
 - r-ucell
 update_on:
-- regex: escape_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/escape
+- source: rpkgs
+  pkgname: escape
+  repo: bioc
+  md5: true
 - alias: r

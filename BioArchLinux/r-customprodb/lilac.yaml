@@ -20,9 +20,11 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-stringr
+- r-txdbmaker
 - r-variantannotation
 update_on:
-- regex: customProDB_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/customProDB
+- source: rpkgs
+  pkgname: customProDB
+  repo: bioc
+  md5: true
 - alias: r

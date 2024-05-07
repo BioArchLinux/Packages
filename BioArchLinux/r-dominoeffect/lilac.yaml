@@ -10,10 +10,12 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-iranges
+- r-pwalign
 - r-summarizedexperiment
 - r-variantannotation
 update_on:
-- regex: DominoEffect_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DominoEffect
+- source: rpkgs
+  pkgname: DominoEffect
+  repo: bioc
+  md5: true
 - alias: r

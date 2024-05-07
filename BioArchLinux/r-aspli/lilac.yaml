@@ -21,9 +21,11 @@ repo_depends:
 - r-rsamtools
 - r-s4vectors
 - r-tidyr
+- r-txdbmaker
 - r-upsetr
 update_on:
-- regex: ASpli_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ASpli
+- source: rpkgs
+  pkgname: ASpli
+  repo: bioc
+  md5: true
 - alias: r
