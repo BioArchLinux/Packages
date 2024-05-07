@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
-- r-assertive.sets
 - r-biobase
 - r-biocgenerics
 - r-broom
