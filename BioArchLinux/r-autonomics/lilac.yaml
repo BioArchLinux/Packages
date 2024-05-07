@@ -4,17 +4,15 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-abind
-- r-assertive.base
-- r-assertive.files
-- r-assertive.numbers
-- r-assertive.sets
 - r-biocfilecache
 - r-biocgenerics
 - r-bit64
+- r-codingmatrices
 - r-colorspace
 - r-data.table
 - r-dplyr
 - r-edger
+- r-ggforce
 - r-ggplot2
 - r-ggrepel
 - r-gridextra
@@ -22,9 +20,8 @@ repo_depends:
 - r-magrittr
 - r-matrixstats
 - r-multiassayexperiment
-- r-pcamethods
 - r-r.utils
-- r-rappdirs
+- r-rcolorbrewer
 - r-readxl
 - r-rlang
 - r-s4vectors
@@ -32,6 +29,8 @@ repo_depends:
 - r-stringi
 - r-summarizedexperiment
 - r-tidyr
+- r-tidyselect
+- r-vsn
 update_on:
 - source: rpkgs
   pkgname: autonomics
