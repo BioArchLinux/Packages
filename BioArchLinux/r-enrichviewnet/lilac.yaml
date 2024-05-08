@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-dose
 - r-enrichplot
 - r-gprofiler2
 - r-jsonlite
