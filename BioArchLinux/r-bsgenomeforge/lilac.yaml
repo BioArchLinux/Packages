@@ -5,9 +5,11 @@ maintainers:
 repo_depends:
 - r-biobase
 - r-biocgenerics
+- r-biocio
 - r-biostrings
 - r-bsgenome
 - r-genomeinfodb
+- r-genomicranges
 - r-iranges
 - r-rtracklayer
 - r-s4vectors
