@@ -15,12 +15,15 @@ repo_depends:
 - r-httr
 - r-iranges
 - r-modstrings
+- r-rex
 - r-rsqlite
 - r-s4vectors
 - r-trnadbimport
+- r-txdbmaker
 - r-xml2
 update_on:
-- regex: EpiTxDb_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/EpiTxDb
+- source: rpkgs
+  pkgname: EpiTxDb
+  repo: bioc
+  md5: true
 - alias: r

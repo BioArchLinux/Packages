@@ -7,11 +7,13 @@ repo_depends:
 - r-doparallel
 - r-foreach
 - r-gosemsim
+- r-pwalign
 - r-rcurl
 - r-rjson
 - r-rlang
 update_on:
-- regex: Rcpi_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Rcpi
+- source: rpkgs
+  pkgname: Rcpi
+  repo: bioc
+  md5: true
 - alias: r

@@ -20,8 +20,10 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-stringr
+- r-txdbmaker
 update_on:
-- regex: recoup_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/recoup
+- source: rpkgs
+  pkgname: recoup
+  repo: bioc
+  md5: true
 - alias: r

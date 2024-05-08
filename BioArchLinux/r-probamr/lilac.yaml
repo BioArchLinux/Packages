@@ -9,8 +9,10 @@ repo_depends:
 - r-genomicranges
 - r-iranges
 - r-rtracklayer
+- r-txdbmaker
 update_on:
-- regex: proBAMr_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/proBAMr
+- source: rpkgs
+  pkgname: proBAMr
+  repo: bioc
+  md5: true
 - alias: r

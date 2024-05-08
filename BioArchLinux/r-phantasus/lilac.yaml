@@ -7,11 +7,13 @@ repo_depends:
 - r-assertthat
 - r-biobase
 - r-ccapp
+- r-config
 - r-curl
 - r-data.table
 - r-deseq2
 - r-edger
 - r-fgsea
+- r-fs
 - r-geoquery
 - r-ggplot2
 - r-gtable
@@ -21,15 +23,20 @@ repo_depends:
 - r-jsonlite
 - r-limma
 - r-opencpu
+- r-phantasuslite
 - r-pheatmap
 - r-protolite
 - r-rhdf5
+- r-rhdf5client
 - r-rook
 - r-scales
 - r-stringr
 - r-svglite
+- r-xml
+- r-yaml
 update_on:
-- regex: phantasus_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/phantasus
+- source: rpkgs
+  pkgname: phantasus
+  repo: bioc
+  md5: true
 - alias: r

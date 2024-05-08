@@ -15,12 +15,19 @@ repo_depends:
 - r-plotly
 - r-plyr
 - r-rcpp
-- r-rcpparmadillo
 - r-rsamtools
 - r-s4vectors
+- r-txdbmaker
 - r-viridis
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-- regex: DegNorm_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DegNorm
+- source: rpkgs
+  pkgname: DegNorm
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra

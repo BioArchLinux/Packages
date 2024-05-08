@@ -18,9 +18,11 @@ repo_depends:
 - r-shiny
 - r-shinycssloaders
 - r-stringr
+- r-svglite
 - r-xml
 update_on:
-- regex: peakPantheR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/peakPantheR
+- source: rpkgs
+  pkgname: peakPantheR
+  repo: bioc
+  md5: true
 - alias: r

@@ -14,13 +14,15 @@ repo_depends:
 - r-rlang
 - r-s4vectors
 - r-scales
+- r-seuratobject
 - r-singlecellexperiment
 - r-stringr
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
 update_on:
-- regex: clustifyr_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/clustifyr
+- source: rpkgs
+  pkgname: clustifyr
+  repo: bioc
+  md5: true
 - alias: r

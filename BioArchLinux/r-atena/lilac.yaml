@@ -6,10 +6,13 @@ repo_depends:
 - r-annotationhub
 - r-biocgenerics
 - r-biocparallel
+- r-cli
 - r-genomeinfodb
 - r-genomicalignments
+- r-genomicfeatures
 - r-genomicranges
 - r-iranges
+- r-matrixgenerics
 - r-matrixstats
 - r-rsamtools
 - r-s4vectors
@@ -17,7 +20,8 @@ repo_depends:
 - r-squarem
 - r-summarizedexperiment
 update_on:
-- regex: atena_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/atena
+- source: rpkgs
+  pkgname: atena
+  repo: bioc
+  md5: true
 - alias: r
