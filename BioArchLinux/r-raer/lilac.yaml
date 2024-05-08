@@ -8,13 +8,11 @@ repo_depends:
 - r-biostrings
 - r-bsgenome
 - r-cli
-- r-data.table
 - r-genomeinfodb
 - r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
 - r-iranges
-- r-r.utils
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
@@ -31,7 +29,22 @@ update_on:
   md5: true
 - alias: r
 - source: alpm
+  alpm: bzip2
+  repo: core
+  provided: libbz2.so
+  strip_release: true
+- source: alpm
   alpm: curl
   repo: core
   provided: libcurl.so
+  strip_release: true
+- source: alpm
+  alpm: xz
+  repo: core
+  provided: liblzma.so
+  strip_release: true
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
   strip_release: true
