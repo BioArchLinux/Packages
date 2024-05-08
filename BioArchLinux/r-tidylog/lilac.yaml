@@ -6,10 +6,13 @@ repo_depends:
 - r-clisymbols
 - r-dplyr
 - r-glue
+- r-rlang
 - r-tidyr
 repo_makedepends:
 - r-forcats
+- r-nycflights13
 - r-testthat
+- r-units
 update_on:
 - source: rpkgs
   pkgname: tidylog
