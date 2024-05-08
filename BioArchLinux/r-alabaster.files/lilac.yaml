@@ -5,9 +5,7 @@ maintainers:
 repo_depends:
 - r-alabaster.base
 - r-biocgenerics
-- r-biostrings
 - r-rsamtools
-- r-rtracklayer
 - r-s4vectors
 repo_makedepends:
 - r-testthat
