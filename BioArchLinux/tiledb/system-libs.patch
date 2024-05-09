@@ -1,17 +1,8 @@
 diff --git a/cmake/Modules/FindCapnp_EP.cmake b/cmake/Modules/FindCapnp_EP.cmake
-index 9a1ddbb..497252b 100644
+index d177cb0f3..08cf46fdd 100644
 --- a/cmake/Modules/FindCapnp_EP.cmake
 +++ b/cmake/Modules/FindCapnp_EP.cmake
-@@ -42,7 +42,7 @@ endif()
- # If the EP was built, it will install the CapnProtoConfig.cmake file, which we
- # can use with find_package.
- 
--set(TILEDB_CAPNPROTO_VERSION 1.0.1)
-+set(TILEDB_CAPNPROTO_VERSION 0.10.4)
- set(TILEDB_CAPNPROTO_GITTAG "v1.0.1")
- set(TILEDB_CAPNPROTO_HASH_SPEC "SHA1=a1ae37ec1731eef93d2ce1ffa959259e26d25874")
- set(TILEDB_CAPNPROTO_URL "https://github.com/capnproto/capnproto/archive/v1.0.1.tar.gz")
-@@ -57,7 +57,7 @@ if (NOT TILEDB_FORCE_ALL_DEPS OR TILEDB_CAPNP_EP_BUILT)
+@@ -56,7 +56,7 @@ if (NOT TILEDB_FORCE_ALL_DEPS OR TILEDB_CAPNP_EP_BUILT)
    endif()
  
    find_package(CapnProto
@@ -21,23 +12,18 @@ index 9a1ddbb..497252b 100644
      ${TILEDB_CAPNP_NO_DEFAULT_PATH}
      )
 diff --git a/cmake/Modules/FindMagic_EP.cmake b/cmake/Modules/FindMagic_EP.cmake
-index 418dbcf..2523047 100644
+index efc039d39..98724a686 100644
 --- a/cmake/Modules/FindMagic_EP.cmake
 +++ b/cmake/Modules/FindMagic_EP.cmake
-@@ -74,6 +74,12 @@ endif()
- # Search the path set during the superbuild for the EP.
- set(LIBMAGIC_PATHS ${TILEDB_EP_INSTALL_PREFIX})
+@@ -42,6 +42,7 @@ if(TILEDB_VCPKG)
+     find_path(libmagic_INCLUDE_DIR NAMES magic.h)
+     find_library(libmagic_LIBRARIES magic)
+     find_file(libmagic_DICTIONARY magic.mgc
++      PATHS /usr/share/file/misc
+       PATH_SUFFIXES share/libmagic/misc share/misc
+     )
  
-+find_library(libmagic_LIBRARIES magic)
-+find_path(libmagic_INCLUDE_DIR magic.h)
-+
-+include(FindPackageHandleStandardArgs)
-+FIND_PACKAGE_HANDLE_STANDARD_ARGS(libmagic REQUIRED_VARS libmagic_LIBRARIES libmagic_INCLUDE_DIR)
-+
- if(TILEDB_LIBMAGIC_EP_BUILT)
-   find_package(libmagic PATHS ${TILEDB_EP_INSTALL_PREFIX} ${TILEDB_DEPS_NO_DEFAULT_PATH})
- endif()
-@@ -111,7 +117,7 @@ if (TILEDB_LIBMAGIC_EP_BUILT)
+@@ -107,7 +108,7 @@ if (TILEDB_LIBMAGIC_EP_BUILT)
  endif()
  
  # if not yet built add it as an external project
@@ -47,10 +33,10 @@ index 418dbcf..2523047 100644
      message(STATUS "Adding Magic as an external project")
  
 diff --git a/tiledb/CMakeLists.txt b/tiledb/CMakeLists.txt
-index 19aed81..5079596 100644
+index 01db9d78d..edcf7227d 100644
 --- a/tiledb/CMakeLists.txt
 +++ b/tiledb/CMakeLists.txt
-@@ -426,7 +426,7 @@ set(MGC_GZIPPED_BIN_INPUT_FILE "${MGC_GZIPPED_BIN_INPUT_DIRECTORY}/magic_mgc_gzi
+@@ -440,7 +440,7 @@ set(MGC_GZIPPED_BIN_INPUT_FILE "${MGC_GZIPPED_BIN_INPUT_DIRECTORY}/magic_mgc_gzi
  
  add_custom_command(
    OUTPUT "${MGC_GZIPPED_BIN_OUTPUT_FILE}"
@@ -59,7 +45,7 @@ index 19aed81..5079596 100644
    COMMAND ${CMAKE_COMMAND} -E tar x "${MGC_GZIPPED_BIN_INPUT_FILE}"
    WORKING_DIRECTORY "${MGC_GZIPPED_BIN_OUTPUT_DIRECTORY}"
  )
-@@ -437,7 +437,7 @@ add_dependencies(TILEDB_CORE_OBJECTS gen_mgc_unarch)
+@@ -451,7 +451,7 @@ add_dependencies(TILEDB_CORE_OBJECTS gen_mgc_unarch)
  
  add_custom_target(
    update-embedded-magic-data
@@ -68,7 +54,16 @@ index 19aed81..5079596 100644
    # need to work in 'local' directory with no prefix paths so no paths are included in archive
    WORKING_DIRECTORY "${MGC_GZIPPED_BIN_OUTPUT_DIRECTORY}"
    COMMAND ${CMAKE_COMMAND} -E tar cvj "magic_mgc_gzipped.bin.tar.bz2" "magic_mgc_gzipped.bin"
-@@ -928,6 +928,7 @@ if(TILEDB_SERIALIZATION)
+@@ -605,7 +605,7 @@ find_package(Magic_EP REQUIRED)
+ target_link_libraries(TILEDB_CORE_OBJECTS_ILIB
+   INTERFACE
+     BZip2::BZip2
+-    lz4::lz4
++    LZ4::lz4_shared
+     spdlog::spdlog
+     ZLIB::ZLIB
+     ${ZSTD_TARGET}
+@@ -806,6 +806,7 @@ if(TILEDB_SERIALIZATION)
      COMMAND_EXPAND_LISTS
      COMMENT "Re-generate tiledb-rest.capnp.<h,c++> files for serialization support"
      )
@@ -76,3 +71,28 @@ index 19aed81..5079596 100644
  
  endif()
  
+diff --git a/tiledb/sm/compressors/CMakeLists.txt b/tiledb/sm/compressors/CMakeLists.txt
+index b2c694c3e..7dbf44074 100644
+--- a/tiledb/sm/compressors/CMakeLists.txt
++++ b/tiledb/sm/compressors/CMakeLists.txt
+@@ -40,7 +40,7 @@ commence(object_library compressors)
+     find_package(LZ4_EP REQUIRED)
+     find_package(Zlib_EP REQUIRED)
+     find_package(Zstd_EP REQUIRED)
+-    this_target_link_libraries(BZip2::BZip2 lz4::lz4 ZLIB::ZLIB ${ZSTD_TARGET})
++    this_target_link_libraries(BZip2::BZip2 LZ4::lz4_shared ZLIB::ZLIB ${ZSTD_TARGET})
+ conclude(object_library)
+ 
+ #
+diff --git a/tiledb/sm/filesystem/posix.cc b/tiledb/sm/filesystem/posix.cc
+index 58b4f0ab1..d576cc6e0 100644
+--- a/tiledb/sm/filesystem/posix.cc
++++ b/tiledb/sm/filesystem/posix.cc
+@@ -47,6 +47,7 @@
+ #include <sys/stat.h>
+ #include <unistd.h>
+ 
++#include <algorithm>
+ #include <fstream>
+ #include <future>
+ #include <iostream>

@@ -3,12 +3,12 @@
 # Contributor: Morteza NourelahiAlamdari <m@0t1.me>
 
 pkgname=tiledb
-pkgver=2.22.0
-pkgrel=2
+pkgver=2.23.0
+pkgrel=0
 pkgdesc="The Universal Storage Engine"
 arch=(x86_64)
 url="https://tiledb.com"
-license=(MIT)
+license=('MIT')
 depends=(
   bzip2
   capnproto
@@ -22,26 +22,26 @@ depends=(
   zstd
 )
 makedepends=(
+  git
   cmake
 )
-source=("$pkgname-$pkgver.tar.gz::https://github.com/TileDB-Inc/TileDB/archive/$pkgver.tar.gz"
+source=("git+https://github.com/TileDB-Inc/TileDB.git#tag=$pkgver"
         "system-libs.patch")
-sha256sums=('55848552a169a029d2b73e14f4efc846117f41e42f742402f774290d12f410be'
-            'f1507699a21b988876310aa9232f959a9e0311806344752aca0d41fd518fedc3')
+b2sums=('1423e7562ecace0f8b45d0b574b68532f6beed8cb257820d4f3fa08b14e8eab77bc7e9afee51e1d69512c340f7a95929aae82631548739a29c53d079531b43e3'
+        '4c99b48a72cc921caa071d25f37380ea09878924d5b00c403bf00ca065e28a2d4e4304d85a2da4b6dc924532fa16f178fc8f3ec7c3b0c37f831f203b977c4117')
 
 prepare() {
-  cd "TileDB-$pkgver"
-  # use system libmagic and capnproto
-  patch -Np1 -i ../system-libs.patch
+  # fix build with system libraries
+  patch -Np1 -d TileDB < system-libs.patch
 }
 
 build() {
-  cmake -B build -S "TileDB-$pkgver" \
+  TILEDB_DISABLE_AUTO_VCPKG=y \
+      cmake -B build -S TileDB \
       -DCMAKE_BUILD_TYPE=None \
       -DCMAKE_INSTALL_PREFIX=/usr \
       -DTILEDB_SERIALIZATION=ON \
       -DTILEDB_TESTS=OFF \
-      -DTILEDB_VCPKG=OFF \
       -DTILEDB_WEBP=OFF \
       -Wno-dev
   cmake --build build
@@ -49,5 +49,5 @@ build() {
 
 package() {
   DESTDIR="$pkgdir" cmake --install build/tiledb
-  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" "TileDB-$pkgver/LICENSE"
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" TileDB/LICENSE
 }
