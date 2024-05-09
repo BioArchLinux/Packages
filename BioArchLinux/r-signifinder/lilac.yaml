@@ -22,6 +22,7 @@ repo_depends:
 - r-org.hs.eg.db
 - r-patchwork
 - r-rcolorbrewer
+- r-sparrow
 - r-spatialexperiment
 - r-summarizedexperiment
 - r-survminer
