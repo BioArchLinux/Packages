@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-bioccheck
 - r-biocmanager
+- r-checkmate
 - r-desc
 - r-git2r
 - r-lintr

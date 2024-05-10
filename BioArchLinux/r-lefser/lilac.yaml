@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-coin
+- r-dplyr
 - r-ggplot2
 - r-s4vectors
 - r-summarizedexperiment

@@ -3,13 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-biocmanager
 - r-s4vectors
 - r-shiny
 - r-ssrch
 - r-summarizedexperiment
 repo_makedepends:
 - r-biocfilecache
-- r-biocmanager
 - r-rhdf5client
 - r-testthat
 update_on:

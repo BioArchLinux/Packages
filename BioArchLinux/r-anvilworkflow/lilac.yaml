@@ -4,8 +4,10 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-anvil
+- r-dplyr
 - r-httr
 - r-jsonlite
+- r-tibble
 update_on:
 - source: rpkgs
   pkgname: AnVILWorkflow

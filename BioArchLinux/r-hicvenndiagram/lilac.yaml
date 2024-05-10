@@ -5,15 +5,17 @@ maintainers:
 repo_depends:
 - r-complexupset
 - r-eulerr
+- r-genomeinfodb
+- r-genomicranges
 - r-ggplot2
 - r-htmlwidgets
 - r-interactionset
+- r-iranges
 - r-reshape2
 - r-rtracklayer
 - r-s4vectors
 - r-svglite
 repo_makedepends:
-- r-genomicranges
 - r-testthat
 update_on:
 - source: rpkgs

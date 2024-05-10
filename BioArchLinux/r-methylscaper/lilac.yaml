@@ -6,6 +6,7 @@ repo_depends:
 - r-biocparallel
 - r-biostrings
 - r-data.table
+- r-pwalign
 - r-rfast
 - r-seqinr
 - r-seriation

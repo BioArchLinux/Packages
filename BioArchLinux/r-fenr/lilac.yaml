@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-assertthat
 - r-biocfilecache
-- r-biomart
 - r-dplyr
 - r-ggplot2
 - r-httr2

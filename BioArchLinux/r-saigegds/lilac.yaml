@@ -3,10 +3,12 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-compquadform
 - r-gdsfmt
 - r-rcpp
 - r-rcppparallel
 - r-seqarray
+- r-survey
 repo_makedepends:
 - r-rcpparmadillo
 update_on:

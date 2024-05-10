@@ -6,6 +6,7 @@ repo_depends:
 - r-biocparallel
 - r-iranges
 - r-mscoreutils
+- r-protgenerics
 - r-s4vectors
 - r-spectra
 repo_makedepends:

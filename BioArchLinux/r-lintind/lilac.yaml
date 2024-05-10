@@ -16,6 +16,7 @@ repo_depends:
 - r-networkd3
 - r-pheatmap
 - r-purrr
+- r-pwalign
 - r-reshape2
 - r-rlist
 - r-s4vectors

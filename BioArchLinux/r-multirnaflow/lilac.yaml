@@ -10,18 +10,14 @@ repo_depends:
 - r-factominer
 - r-ggalluvial
 - r-ggplot2
+- r-ggplotify
 - r-ggrepel
-- r-ggsci
 - r-gprofiler2
 - r-mfuzz
 - r-plot3d
 - r-plot3drgl
-- r-plyr
-- r-rcolorbrewer
 - r-reshape2
-- r-rlang
 - r-s4vectors
-- r-scales
 - r-summarizedexperiment
 - r-upsetr
 repo_makedepends:

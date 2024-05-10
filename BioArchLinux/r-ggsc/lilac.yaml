@@ -5,10 +5,13 @@ maintainers:
 repo_depends:
 - r-cli
 - r-dplyr
+- r-ggfun
 - r-ggplot2
+- r-rcolorbrewer
 - r-rcpp
 - r-rcppparallel
 - r-rlang
+- r-scales
 - r-scattermore
 - r-seurat
 - r-singlecellexperiment
@@ -30,4 +33,8 @@ update_on:
 - source: alpmfiles
   pkgname: blas
   filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: onetbb
+  filename: usr/lib/libtbb\.so\.([^.]+)
   repo: extra

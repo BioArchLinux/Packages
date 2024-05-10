@@ -11,6 +11,7 @@ repo_depends:
 - r-dplyr
 - r-dt
 - r-forcats
+- r-ggforce
 - r-ggplot2
 - r-gunifrac
 - r-limma
@@ -26,6 +27,7 @@ repo_depends:
 - r-shinyjs
 - r-summarizedexperiment
 - r-tibble
+- r-tidyr
 - r-tsne
 - r-umap
 - r-vegan

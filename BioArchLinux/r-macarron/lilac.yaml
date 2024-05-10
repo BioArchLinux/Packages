@@ -8,11 +8,11 @@ repo_depends:
 - r-delayedarray
 - r-dynamictreecut
 - r-ff
+- r-httr
 - r-logging
 - r-maaslin2
 - r-plyr
 - r-psych
-- r-rcurl
 - r-rjsonio
 - r-summarizedexperiment
 - r-wgcna

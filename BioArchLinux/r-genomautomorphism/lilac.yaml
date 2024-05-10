@@ -13,8 +13,10 @@ repo_depends:
 - r-genomeinfodb
 - r-genomicranges
 - r-iranges
+- r-matrixstats
 - r-numbers
 - r-s4vectors
+- r-xvector
 repo_makedepends:
 - r-testthat
 update_on:

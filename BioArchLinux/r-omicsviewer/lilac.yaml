@@ -6,6 +6,7 @@ repo_depends:
 - r-beeswarm
 - r-biobase
 - r-curl
+- r-drc
 - r-dt
 - r-fastmatch
 - r-fgsea

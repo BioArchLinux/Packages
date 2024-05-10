@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biobase
+- r-biocgenerics
 - r-biocparallel
 - r-dplyr
 - r-edger
