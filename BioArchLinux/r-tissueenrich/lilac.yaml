@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-dplyr
-- r-ensurer
 - r-ggplot2
 - r-gseabase
 - r-summarizedexperiment
