@@ -6,6 +6,7 @@ repo_depends:
 - r-bdsmatrix
 - r-numderiv
 - r-squarem
+- r-tidyr
 repo_makedepends:
 - r-testthat
 update_on:

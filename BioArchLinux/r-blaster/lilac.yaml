@@ -3,16 +3,10 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-blaster
-- r-igraph
-- r-pwalign
-- r-stringdist
-- r-visnetwork
-repo_makedepends:
-- r-testthat
+- r-rcpp
 update_on:
 - source: rpkgs
-  pkgname: ClustIRR
-  repo: bioc
+  pkgname: blaster
+  repo: cran
   md5: true
 - alias: r

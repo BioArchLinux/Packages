@@ -24,3 +24,4 @@ update_on:
   repo: bioc
   md5: true
 - alias: r
+- alias: python
