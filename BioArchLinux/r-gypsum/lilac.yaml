@@ -6,7 +6,6 @@ repo_depends:
 - r-filelock
 - r-httr2
 - r-jsonlite
-- r-paws.storage
 repo_makedepends:
 - r-dbi
 - r-jsonvalidate
