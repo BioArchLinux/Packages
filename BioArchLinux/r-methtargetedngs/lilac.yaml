@@ -3,13 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- hmmer
 - r-biostrings
 - r-gplots
+- r-pwalign
 - r-seqinr
 - r-stringr
-- hmmer
 update_on:
-- regex: MethTargetedNGS_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MethTargetedNGS
+- source: rpkgs
+  pkgname: MethTargetedNGS
+  repo: bioc
+  md5: true
 - alias: r

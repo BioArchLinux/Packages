@@ -4,8 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biostrings
+- r-rjava
 update_on:
-- regex: rRDP_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rRDP
+- source: rpkgs
+  pkgname: rRDP
+  repo: bioc
+  md5: true
 - alias: r

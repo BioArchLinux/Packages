@@ -18,17 +18,31 @@ repo_depends:
 - r-igraph
 - r-irlba
 - r-limma
+- r-matrixgenerics
 - r-matrixstats
+- r-numderiv
 - r-patchwork
 - r-rcolorbrewer
+- r-rcpp
 - r-s4vectors
 - r-singlecellexperiment
 - r-stringr
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-- regex: miloR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/miloR
+- source: rpkgs
+  pkgname: miloR
+  repo: bioc
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

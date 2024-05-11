@@ -4,23 +4,24 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biomart
-- r-digest
+- r-checkmate
 - r-dplyr
 - r-forcats
 - r-futile.logger
-- r-futile.options
 - r-ggplot2
 - r-glmnet
 - r-glue
 - r-httr
+- r-lifecycle
 - r-multiassayexperiment
 - r-readr
-- r-reshape2
-- r-stringr
+- r-rlang
 - r-summarizedexperiment
 - r-survminer
+- r-tcgautils
 update_on:
-- regex: glmSparseNet_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/glmSparseNet
+- source: rpkgs
+  pkgname: glmSparseNet
+  repo: bioc
+  md5: true
 - alias: r

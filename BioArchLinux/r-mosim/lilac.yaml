@@ -3,24 +3,27 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biobase
 - r-dplyr
+- r-edger
 - r-ggplot2
 - r-hiddenmarkov
 - r-iranges
 - r-lazyeval
 - r-matrixstats
-- r-purrr
+- r-rcpp
 - r-rlang
 - r-s4vectors
-- r-scales
+- r-scran
+- r-seurat
+- r-signac
 - r-stringi
 - r-stringr
-- r-tibble
-- r-tidyr
 - r-zoo
+repo_makedepends:
+- r-cpp11
 update_on:
-- regex: MOSim_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MOSim
+- source: rpkgs
+  pkgname: MOSim
+  repo: bioc
+  md5: true
 - alias: r

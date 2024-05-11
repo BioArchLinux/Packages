@@ -13,10 +13,14 @@ repo_depends:
 - r-multiassayexperiment
 - r-plotly
 - r-protgenerics
+- r-reshape2
 - r-s4vectors
 - r-summarizedexperiment
+- r-tidyr
+- r-tidyselect
 update_on:
-- regex: QFeatures_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/QFeatures
+- source: rpkgs
+  pkgname: QFeatures
+  repo: bioc
+  md5: true
 - alias: r

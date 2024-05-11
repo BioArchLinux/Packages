@@ -3,12 +3,13 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biostrings
 - r-igraph
+- r-pwalign
 - r-seqinr
 - r-stringdb
 update_on:
-- regex: IMMAN_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/IMMAN
+- source: rpkgs
+  pkgname: IMMAN
+  repo: bioc
+  md5: true
 - alias: r

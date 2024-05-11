@@ -6,9 +6,11 @@ repo_depends:
 - r-genlib
 - r-grain
 - r-kinship2
+- r-r.utils
 - r-snpstats
 update_on:
-- regex: RVS_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RVS
+- source: rpkgs
+  pkgname: RVS
+  repo: bioc
+  md5: true
 - alias: r

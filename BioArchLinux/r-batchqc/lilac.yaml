@@ -3,22 +3,29 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-corpcor
-- r-ggvis
-- r-gplots
-- r-heatmaply
-- r-knitr
+- r-data.table
+- r-deseq2
+- r-dplyr
+- r-ebseq
+- r-ggdendro
+- r-ggnewscale
+- r-ggplot2
 - r-limma
 - r-matrixstats
-- r-mcmcpack
-- r-moments
-- r-pander
+- r-pheatmap
+- r-rcolorbrewer
+- r-reader
 - r-reshape2
-- r-rmarkdown
+- r-scran
 - r-shiny
+- r-summarizedexperiment
 - r-sva
+- r-tibble
+- r-tidyr
+- r-tidyverse
 update_on:
-- regex: BatchQC_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BatchQC
+- source: rpkgs
+  pkgname: BatchQC
+  repo: bioc
+  md5: true
 - alias: r

@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-data.table
+- r-dplyr
+- r-fastmatch
+- r-future
+- r-future.apply
+- r-genomeinfodb
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-irlba
+- r-lifecycle
+- r-patchwork
+- r-pbapply
+- r-rcpp
+- r-rcpproll
+- r-rlang
+- r-rsamtools
+- r-s4vectors
+- r-scales
+- r-seuratobject
+- r-stringi
+- r-tidyr
+- r-tidyselect
+- r-vctrs
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: Signac
+  repo: cran
+  md5: true
+- alias: r
+- source: alpm
+  alpm: zlib
+  repo: core
+  provided: libz.so
+  strip_release: true

@@ -7,17 +7,14 @@ repo_depends:
 - r-biostrings
 - r-checkmate
 - r-dplyr
-- r-dt
 - r-forcats
 - r-ggdendro
 - r-ggplot2
 - r-jsonlite
 - r-lifecycle
 - r-lubridate
-- r-pander
 - r-patchwork
 - r-plotly
-- r-readr
 - r-reshape2
 - r-rlang
 - r-rmarkdown
@@ -28,7 +25,8 @@ repo_depends:
 - r-tidyselect
 - r-zoo
 update_on:
-- regex: ngsReports_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ngsReports
+- source: rpkgs
+  pkgname: ngsReports
+  repo: bioc
+  md5: true
 - alias: r

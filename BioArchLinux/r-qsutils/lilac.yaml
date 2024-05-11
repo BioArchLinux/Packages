@@ -7,8 +7,10 @@ repo_depends:
 - r-biocgenerics
 - r-biostrings
 - r-psych
+- r-pwalign
 update_on:
-- regex: QSutils_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/QSutils
+- source: rpkgs
+  pkgname: QSutils
+  repo: bioc
+  md5: true
 - alias: r

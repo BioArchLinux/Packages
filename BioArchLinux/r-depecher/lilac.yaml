@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-beanplot
+- r-clusterr
 - r-collapse
 - r-dosnow
 - r-dplyr
@@ -16,12 +17,14 @@ repo_depends:
 - r-mixomics
 - r-moments
 - r-rcpp
-- r-rcppeigen
 - r-reshape2
 - r-robustbase
 - r-viridis
+repo_makedepends:
+- r-rcppeigen
 update_on:
-- regex: DepecheR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/DepecheR
+- source: rpkgs
+  pkgname: DepecheR
+  repo: bioc
+  md5: true
 - alias: r

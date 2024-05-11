@@ -9,24 +9,28 @@ repo_depends:
 - r-dbscan
 - r-deseq2
 - r-dplyr
+- r-fsa
 - r-ggplot2
 - r-ggrepel
-- r-glasso
 - r-glmnet
 - r-impute
+- r-janitor
 - r-limma
+- r-lme4
 - r-magrittr
 - r-mixomics
 - r-randomforest
 - r-rankprod
-- r-rmarkdown
+- r-rlang
 - r-summarizedexperiment
+- r-sva
 - r-tibble
 - r-tidyr
 - r-uwot
 - r-vegan
 update_on:
-- regex: POMA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/POMA
+- source: rpkgs
+  pkgname: POMA
+  repo: bioc
+  md5: true
 - alias: r
