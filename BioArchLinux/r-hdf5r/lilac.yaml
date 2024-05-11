@@ -21,3 +21,5 @@ update_on:
   pkgname: hdf5
   filename: usr/lib/libhdf5_hl\.so\.([^.]+)
   repo: extra
+- source: manual
+  manual: 1
