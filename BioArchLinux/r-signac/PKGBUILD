@@ -4,7 +4,7 @@ _pkgname=Signac
 _pkgver=1.13.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Analysis of Single-Cell Chromatin Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
