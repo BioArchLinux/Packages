@@ -50,9 +50,14 @@ repo_depends:
 repo_makedepends:
 - r-rcppeigen
 - r-rcppprogress
+- r-ape
+- r-arrow
 - r-glmgampoi
 - r-harmony
+- r-hdf5r
 - r-limma
+- r-metap
+- r-sf
 - r-singlecellexperiment
 - r-testthat
 update_on:
