@@ -21,7 +21,8 @@ update_on:
   pkgname: blosc
   filename: usr/lib/libblosc\.so\.([^.]+)
   repo: extra
-- source: alpmfiles
-  pkgname: lz4
-  filename: usr/lib/liblz4\.so\.([^.]+)
+- source: alpm
+  alpm: zstd
   repo: core
+  provided: libzstd.so
+  strip_release: true

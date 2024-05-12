@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-glad
 update_on:
-- regex: MANOR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/MANOR
+- source: rpkgs
+  pkgname: MANOR
+  repo: bioc
+  md5: true
 - alias: r

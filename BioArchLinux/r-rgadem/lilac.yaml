@@ -9,7 +9,8 @@ repo_depends:
 - r-iranges
 - r-seqlogo
 update_on:
-- regex: rGADEM_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/rGADEM
+- source: rpkgs
+  pkgname: rGADEM
+  repo: bioc
+  md5: true
 - alias: r
