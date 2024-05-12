@@ -5,14 +5,13 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-dbi
-- r-dbplyr
-- r-dplyr
-- r-lazyeval
+- r-delayedarray
+- r-duckdb
 - r-rsqlite
 - r-s4vectors
-- r-tibble
 update_on:
-- regex: SQLDataFrame_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/SQLDataFrame
+- source: rpkgs
+  pkgname: SQLDataFrame
+  repo: bioc
+  md5: true
 - alias: r

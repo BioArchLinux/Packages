@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dbi
+repo_makedepends:
+- r-adbcdrivermanager
+- r-arrow
+- r-dbplyr
+- r-dplyr
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: duckdb
+  repo: cran
+  md5: true
+- alias: r

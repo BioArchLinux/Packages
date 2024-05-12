@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-nanoarrow
+repo_makedepends:
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: adbcdrivermanager
+  repo: cran
+  md5: true
+- alias: r
