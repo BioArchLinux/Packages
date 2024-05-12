@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biobase
 - r-dplyr
 - r-ggplot2
 - r-gplots
@@ -12,7 +13,8 @@ repo_depends:
 - r-rcolorbrewer
 - r-tidyr
 update_on:
-- regex: ReactomeGSA_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/ReactomeGSA
+- source: rpkgs
+  pkgname: ReactomeGSA
+  repo: bioc
+  md5: true
 - alias: r
