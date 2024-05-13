@@ -8,8 +8,11 @@ repo_depends:
 - r-nloptr
 - r-scales
 - r-tmb
+repo_makedepends:
+- r-rcppeigen
 update_on:
-- regex: RNAdecay_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/RNAdecay
+- source: rpkgs
+  pkgname: RNAdecay
+  repo: bioc
+  md5: true
 - alias: r

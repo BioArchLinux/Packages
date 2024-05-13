@@ -243,6 +243,7 @@ class CheckConfig:
         expect_systemrequirements: str = None,
         expect_title: str = None,
         extra_r_depends_cb = None,
+        extra_r_makedepends = [],
         ignore_fortran_files: bool = False,
     ):
         self.expect_license = expect_license
@@ -250,6 +251,7 @@ class CheckConfig:
         self.expect_systemrequirements = expect_systemrequirements
         self.expect_title = expect_title
         self.extra_r_depends_cb = extra_r_depends_cb
+        self.extra_r_makedepends = extra_r_makedepends
         self.ignore_fortran_files = ignore_fortran_files
 
 def check_default_pkgs(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
@@ -294,10 +296,10 @@ def check_depends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
 def check_makedepends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     errors = []
     for dep in pkg.makedepends:
-        if dep in pkg.depends or (dep.startswith("r-") and dep not in desc.linkingto):
+        if dep in pkg.depends or (dep.startswith("r-") and (dep not in desc.linkingto and dep not in cfg.extra_r_makedepends)):
             errors.append(f"Unnecessary make dependency: {dep}")
 
-    for dep in desc.linkingto:
+    for dep in desc.linkingto + cfg.extra_r_makedepends:
         if (dep not in cfg.default_r_pkgs) and (dep not in desc.depends) and (dep not in desc.imports) and (dep not in pkg.makedepends):
             errors.append(f"Missing make dependency: {dep}")
 
