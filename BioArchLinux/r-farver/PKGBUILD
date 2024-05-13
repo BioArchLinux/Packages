@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=farver
-_pkgver=2.1.1
+_pkgver=2.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=8
+pkgrel=1
 pkgdesc="High Performance Colour Space Manipulation"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -17,8 +17,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8a6b2956ba4d30911c3f2e8593eac362')
-b2sums=('8aae9b293163faaefa87227286e8c49fc7432689338120a07ec00f6337828eaf5bcee2ef1ab2ceadfe1846546fe1397647d324c69a43735f3e595d3361bcc3b5')
+md5sums=('1fa98878bb985e28d968630c7e7597b6')
+b2sums=('a596176653bb794c182035f5596f75d332ff6a48b014cc9b08ff7dcff70f1ed775e7328396c8b9d79d96e58487bf2723330a15bc8b0adc2d28c94575c4e60675')
 
 build() {
   mkdir build
