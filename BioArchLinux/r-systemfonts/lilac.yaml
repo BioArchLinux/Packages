@@ -2,6 +2,8 @@ build_prefix: extra-x86_64
 maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
+repo_depends:
+- r-lifecycle
 repo_makedepends:
 - r-cpp11
 - r-testthat
