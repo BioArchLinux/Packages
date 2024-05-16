@@ -3,8 +3,8 @@
 # Contributor: Christian Krause ("wookietreiber") <christian.krause@mailbox.org>
 
 pkgname=mothur
-pkgver=1.48.0
-pkgrel=2
+pkgver=1.48.1
+pkgrel=1
 pkgdesc='A bioinformatics program for analyzing microbial communities.'
 arch=('x86_64')
 url='https://www.mothur.org/'
@@ -21,7 +21,7 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/${pkgname}/${pkgname}/a
         "gcc-11.patch"
         "series"
         )
-sha256sums=('9494406abd8d14b821782ab9db811f045ded9424f28f01234ee6764d4e78941d'
+sha256sums=('03a26d12719b8658051b0c2aefe791017d9bdcc6d50ba539f85ed232daafc0ac'
             'e29761b0e466da9b16ea06057b0443d93b5364a0f61653af922fbd89c6ae53bd'
             'eef923efb4102f8c252eb9fbc9829bcdc9d40827d38f5019682132c7b5a87f72'
             '24a355ff52029c0f86e8a410f0a8a94e68a9b282e14b35e61081c181cddb211e'
