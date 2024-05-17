@@ -10,7 +10,7 @@ _pkgname=rmarkdown
 _pkgver=2.27
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Dynamic Documents for R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
