@@ -17,6 +17,7 @@ repo_makedepends:
 - r-curl
 - r-shiny
 - r-testthat
+- r-xml2
 update_on:
 - source: rpkgs
   pkgname: rmarkdown
