@@ -3,24 +3,31 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-biobase
 - r-biocgenerics
 - r-biocneighbors
 - r-biocparallel
+- r-data.table
+- r-dropletutils
+- r-ebimage
+- r-lifecycle
 - r-rjson
 - r-rlang
 - r-s4vectors
 - r-sf
+- r-sfheaders
 - r-singlecellexperiment
 - r-spatialexperiment
 - r-spdep
 - r-summarizedexperiment
 - r-terra
+- r-zeallot
 repo_makedepends:
-- r-dropletutils
+- r-rbioformats
 - r-sfarrow
 - r-sfedata
 - r-testthat
-- r-vroom
+- r-xml2
 update_on:
 - source: rpkgs
   pkgname: SpatialFeatureExperiment
