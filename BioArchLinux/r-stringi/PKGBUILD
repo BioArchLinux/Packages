@@ -9,7 +9,7 @@ _pkgname=stringi
 _pkgver=1.8.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast and Portable Character String Processing Facilities"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
