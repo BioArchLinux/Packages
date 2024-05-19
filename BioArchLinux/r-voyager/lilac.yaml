@@ -9,6 +9,7 @@ repo_depends:
 - r-ggplot2
 - r-lifecycle
 - r-matrixstats
+- r-memuse
 - r-patchwork
 - r-rlang
 - r-rspectra
@@ -24,17 +25,17 @@ repo_depends:
 - r-terra
 repo_makedepends:
 - r-automap
-- r-dropletutils
 - r-ggh4x
 - r-gstat
 - r-hexbin
+- r-rbioformats
 - r-scater
 - r-scattermore
 - r-scran
+- r-sfarrow
 - r-sfedata
 - r-testthat
 - r-vdiffr
-- r-vroom
 update_on:
 - source: rpkgs
   pkgname: Voyager
