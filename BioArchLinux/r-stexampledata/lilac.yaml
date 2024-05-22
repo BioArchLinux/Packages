@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-experimenthub
+- r-singlecellexperiment
 - r-spatialexperiment
 update_on:
 - source: rpkgs
