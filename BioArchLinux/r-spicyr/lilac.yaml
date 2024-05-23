@@ -3,16 +3,16 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-biocgenerics
 - r-biocparallel
 - r-classifyr
+- r-cli
 - r-concaveman
 - r-data.table
 - r-dplyr
 - r-ggforce
 - r-ggplot2
-- r-iranges
 - r-lmertest
+- r-magrittr
 - r-pheatmap
 - r-rlang
 - r-s4vectors
