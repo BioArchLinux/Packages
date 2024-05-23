@@ -8,8 +8,8 @@ repo_depends:
 - r-haven
 - r-lifecycle
 - r-r.utils
+- r-readr
 - r-readxl
-- r-stringi
 - r-tibble
 - r-writexl
 repo_makedepends:
