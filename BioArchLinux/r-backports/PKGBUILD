@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=backports
-_pkgver=1.4.1
+_pkgver=1.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=1
 pkgdesc="Reimplementations of Functions Introduced Since R-3.0.0"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -13,8 +13,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1cc19c4a800a38f30b4d48eccd2478c4')
-b2sums=('7073469ce4c1af82c763e55ac1cf7498e52c229ec67a3fd0914036bf6f70a992c0811e65b4093466b1f21ba0f39489f16f46c7e44bbf9ff741b7e475e905a9db')
+md5sums=('f8b5a18e90e7baa72ae9824238245777')
+b2sums=('682625e314e7574a9eff14601ef70793c2916639c6a28443472be172d3099c03f63b550353546e7dc88667ad9605e38f195ca97e68e6d21bad399993488c25ce')
 
 build() {
   mkdir build
