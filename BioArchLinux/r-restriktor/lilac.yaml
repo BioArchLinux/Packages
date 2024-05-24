@@ -4,11 +4,14 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
+- r-glue
 - r-ic.infer
 - r-lavaan
 - r-mvtnorm
 - r-norm
+- r-pbapply
 - r-quadprog
+- r-tmvtnorm
 update_on:
 - source: rpkgs
   pkgname: restriktor
