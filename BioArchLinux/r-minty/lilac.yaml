@@ -3,18 +3,14 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-cellranger
-- r-minty
-- r-stringi
-- r-tibble
-- r-vctrs
-- r-zip
+- r-tzdb
 repo_makedepends:
-- r-readr
+- r-cpp11
+- r-hms
 - r-testthat
 update_on:
 - source: rpkgs
-  pkgname: readODS
+  pkgname: minty
   repo: cran
   md5: true
 - alias: r
