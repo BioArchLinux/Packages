@@ -2,10 +2,10 @@
 # Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=RPostgres
-_pkgver=1.4.6
+_pkgver=1.4.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=0
 pkgdesc="C++ Interface to PostgreSQL"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -34,23 +34,18 @@ optdepends=(
   r-covr
   r-dbitest
   r-knitr
+  r-rlang
   r-rmarkdown
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "$_pkgname-fix-id-quote.patch::https://github.com/r-dbi/RPostgres/pull/460.patch"
         "system-boost.patch")
-md5sums=('e0ddd002a7cf6c06b753c8f04e201528'
-         'fafbed4502b92744e999bdd098f941c2'
+md5sums=('1a7eb8600a0ee26082723a516bbd16d5'
          '77a2948b75606cdf00a4e6fa280c6ce9')
-b2sums=('acd6f9b62940f4c2671e4bd7a7aefe0ad6e7ea388ae630c11f03ede942431f15c29f9faa1bd94761b0591a9e426b1302c2fe73b90ba93c2d51f7fb60fa8e1a8b'
-        '20060b67006a82de69e3d3c17b1fcd2a2f723a0971e7fc04d9fa29752901479b28b75de268138667dff1441799efb8a6ccd42a3e2edb31a5d649b2f471b8137a'
+b2sums=('45a98d058d5b8699b5c82e696fe6f8b1e92b4bf5129d8893befe92b3d08fadc661fce8466df145ca2e835212d267da6a8b5681d9892255adf9c4ce4b450b9c87'
         '6f013b9a2d207e4254eae54459db66ae2e3576c8e9d62fd0cec8c403ec6253d67ef85e316240c8d8e60703cad07201bbb50797edf12a7ca2ddb727e5685c4b9a')
 
 prepare() {
-  # fix dbQuoteIdentifier for Id objects
-  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-id-quote.patch"
-
   # use system boost library
   patch -Np1 -i system-boost.patch
 }
