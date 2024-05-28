@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
+- r-dplyr
 - r-ggplot2
 - r-rlang
 update_on:
