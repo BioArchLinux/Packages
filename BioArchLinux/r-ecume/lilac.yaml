@@ -9,11 +9,11 @@ repo_depends:
 - r-kernlab
 - r-magrittr
 - r-pbapply
-- r-spatstat
-- r-spatstat.geom
+- r-spatstat.univar
 - r-transport
 update_on:
-- regex: Ecume_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=Ecume
+- source: rpkgs
+  pkgname: Ecume
+  repo: cran
+  md5: true
 - alias: r
