@@ -4,7 +4,7 @@ _pkgname=spatstat.univar
 _pkgver=2.0-3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="One-Dimensional Probability Distribution Support for the 'spatstat' Family"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
