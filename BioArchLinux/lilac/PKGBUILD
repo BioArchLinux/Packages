@@ -19,9 +19,10 @@ optdepends=(
   'smtp-forwarder: for sending error reports'
   'python-sqlalchemy: for recording build results in a database'
 )
+cmt=dd15e22fb1cebda571bc3972247e72f1b74dc15b
 provides=("$_pkgname=$pkgver")
 conflicts=("$_pkgname")
-source=('git+https://github.com/archlinuxcn/lilac.git'
+source=("git+https://github.com/archlinuxcn/lilac.git#commit=#$cmt"
 	"$pkgname.patch::https://patch-diff.githubusercontent.com/raw/archlinuxcn/lilac/pull/198.patch")
 sha256sums=('SKIP'
             '9bda1a1ae3b241bebf772896c37410b8c6b3afde85f95f5c9ad621a2897804a7')
