@@ -2,7 +2,7 @@
 
 pkgname=edirect
 pkgver=22.1.20240517
-pkgrel=1
+pkgrel=2
 pkgdesc='E-utilities on the Unix Command Line'
 url="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect"
 source=("$pkgname-$pkgver.tar.gz::$url/versions/$pkgver/edirect-$pkgver.tar.gz")
