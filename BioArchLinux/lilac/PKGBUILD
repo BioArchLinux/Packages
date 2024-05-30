@@ -5,7 +5,7 @@
 _pkgname=lilac
 pkgname=$_pkgname
 pkgver=2024.03.29
-pkgrel=2
+pkgrel=3
 pkgdesc='The build bot for bioarchlinux, English version'
 arch=(any)
 url='https://github.com/archlinuxcn/lilac'
@@ -24,7 +24,7 @@ provides=("$_pkgname=$pkgver")
 conflicts=("$_pkgname")
 source=("git+https://github.com/archlinuxcn/lilac.git#commit=$cmt"
 	"$pkgname.patch::https://patch-diff.githubusercontent.com/raw/archlinuxcn/lilac/pull/198.patch")
-sha256sums=('SKIP'
+sha256sums=('7c3f2ac8760fa44e38c628039e02767556b018398a75f7356274a28b15649f82'
             '9bda1a1ae3b241bebf772896c37410b8c6b3afde85f95f5c9ad621a2897804a7')
 
 pkgver() {
