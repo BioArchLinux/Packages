@@ -19,7 +19,7 @@ optdepends=(
   'smtp-forwarder: for sending error reports'
   'python-sqlalchemy: for recording build results in a database'
 )
-cmt=dd15e22fb1cebda571bc3972247e72f1b74dc15b
+cmt=0454bb9a771e0b979ab2997d383bfe41338d6d7b
 provides=("$_pkgname=$pkgver")
 conflicts=("$_pkgname")
 source=("git+https://github.com/archlinuxcn/lilac.git#commit=$cmt"
