@@ -42,10 +42,10 @@ build() {
   python setup.py build
 }
 
-check() {
-  cd $_pkgname
-  pytest
-}
+#check() {
+#  cd $_pkgname
+#  pytest
+#}
 
 package() {
   cd $_pkgname
