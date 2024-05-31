@@ -4,7 +4,7 @@ _pkgname=QuickJSR
 _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Interface for the 'QuickJS' Lightweight 'JavaScript' Engine"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
