@@ -15,7 +15,10 @@ repo_depends:
 - r-s4vectors
 - r-summarizedexperiment
 - r-tibble
+- r-zoo
 update_on:
-- source: manual
-  manual: 1.20.0#0f7605c0a9396d116b777b4954011027
+- source: rpkgs
+  pkgname: RcisTarget
+  repo: bioc
+  md5: true
 - alias: r
