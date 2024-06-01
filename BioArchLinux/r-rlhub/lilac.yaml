@@ -6,6 +6,8 @@ repo_depends:
 - r-annotationhub
 - r-experimenthub
 update_on:
-- source: manual
-  manual: 1.6.0#9072a588ef09512493ea389c50984153
+- source: rpkgs
+  pkgname: RLHub
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
