@@ -32,18 +32,18 @@ package_trinityrnaseq() {
   depends=('perl' 'bash' 'glibc' 'java-runtime' 'python' 'zlib')
   # 'xz' 'bzip2' 'curl'
 
-  cd $srcdir/$basename
-  # mkdir -p $pkgdir/usr/{share/{$basename,java},bin}
+  cd $srcdir/trinityrnaseq
+  # mkdir -p $pkgdir/usr/{share/{trinityrnaseq,java},bin}
 
-  mkdir $pkgdir/usr/share/$basename
-  mkdir $pkgdir/usr/share/java
-  mkdir $pkgdir/usr/bin
+  mkdir "${pkgdir}"/usr/share/trinityrnaseq
+  mkdir "${pkgdir}"/usr/share/java
+  mkdir "${pkgdir}"/usr/bin
 
   # Dir 
 for dir in Analysis PerlLib PyLib
 do
-  mkdir -p $pkgdir/usr/share/$basename/$dir
-  find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$dir \;
+  mkdir -p $pkgdir/usr/share/trinityrnaseq/$dir
+  find $dir -type f -exec install -D -m 755 {} $pkgdir/usr/share/trinityrnaseq/$dir \;
 done
 
   # Bin
@@ -52,8 +52,8 @@ do
   find $binadir -type f -exec install -D -m 755 {} $pkgdir/usr/bin/ \;
 done
 
-  install -Dm755 Trinity $pkgdir/usr/share/$basename/Trinity
-  ln -s /usr/share/$basename/Trinity $pkgdir/usr/bin/Trinity 
+  install -Dm755 Trinity $pkgdir/usr/share/trinityrnaseq/Trinity
+  ln -s /usr/share/trinityrnaseq/Trinity $pkgdir/usr/bin/Trinity 
   install -Dm755 trinity-plugins/BIN/seqtk-trinity $pkgdir/usr/bin/seqtk-trinity
   
   # Java
@@ -71,35 +71,34 @@ done
   )
   for plugin in "${plugins[@]}"
   do
-    install -Dm755 $srcdir/$basename/$plugin $pkgdir/usr/share/$pkgname/$plugin
+    install -Dm755 $srcdir/trinityrnaseq/$plugin $pkgdir/usr/share/$pkgname/$plugin
   done
-
   # Util
-  mkdir -p $pkdir/usr/share/$basename/util
-  find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/util \;
+  mkdir -p $pkdir/usr/share/trinityrnaseq/util
+  find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/trinityrnaseq/util \;
 }
 
 package_trinityrnaseq-doc(){
-  cd $srcdir/$basename
-  mkdir -p $pkgdir/usr/share/doc/$basename/wiki
+  cd $srcdir/trinityrnaseq
+  mkdir -p $pkgdir/usr/share/doc/trinityrnaseq/wiki
 
 for note in developer.notes Changelog.txt README README.md
 do
-  install -Dm644 $note $pkgdir/usr/share/doc/$basename/$note
+  install -Dm644 $note $pkgdir/usr/share/doc/trinityrnaseq/$note
 done
 
-  find trinityrnaseq.wiki -type f -exec install -D -m 644 {} $pkgdir/usr/share/doc/$basename/wiki \;
+  find trinityrnaseq.wiki -type f -exec install -D -m 644 {} $pkgdir/usr/share/doc/trinityrnaseq/wiki \;
 
 }
 
 package_trinityrnaseq-extra(){
   depends=('bash' 'perl')
 
-  cd $srcdir/$basename
-  mkdir -p $pkgdir/usr/share/$basename/{trinity_ext_sample_data,sample_data}
+  cd $srcdir/trinityrnaseq
+  mkdir -p $pkgdir/usr/share/trinityrnaseq/{trinity_ext_sample_data,sample_data}
 
 for datadir in trinity_ext_sample_data sample_data 
 do
-  find $datadir -type f -exec install -D -m 755 {} $pkgdir/usr/share/$basename/$datadir/ \;
+  find $datadir -type f -exec install -D -m 755 {} $pkgdir/usr/share/trinityrnaseq/$datadir/ \;
 done
 }
