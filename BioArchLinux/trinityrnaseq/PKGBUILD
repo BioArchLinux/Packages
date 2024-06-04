@@ -35,6 +35,10 @@ package_trinityrnaseq() {
   cd $srcdir/$basename
   # mkdir -p $pkgdir/usr/{share/{$basename,java},bin}
 
+  mkdir $pkgdir/usr/share/$basename
+  mkdir $pkgdir/usr/share/java
+  mkdir $pkgdir/usr/bin
+
   # Dir 
 for dir in Analysis PerlLib PyLib
 do
