@@ -33,7 +33,7 @@ package_trinityrnaseq() {
   # 'xz' 'bzip2' 'curl'
 
   cd $srcdir/$basename
-  mkdir -p $pkgdir/usr/{share/{$basename,java},bin}
+  # mkdir -p $pkgdir/usr/{share/{$basename,java},bin}
 
   # Dir 
 for dir in Analysis PerlLib PyLib
