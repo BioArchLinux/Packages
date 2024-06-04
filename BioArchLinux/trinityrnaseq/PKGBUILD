@@ -34,7 +34,7 @@ package_trinityrnaseq() {
 
   cd $srcdir/trinityrnaseq
   # mkdir -p $pkgdir/usr/{share/{trinityrnaseq,java},bin}
-
+  set -x 
   mkdir "${pkgdir}"/usr/share/trinityrnaseq
   mkdir "${pkgdir}"/usr/share/java
   mkdir "${pkgdir}"/usr/bin
