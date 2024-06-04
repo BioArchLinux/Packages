@@ -15,7 +15,7 @@ repo_makedepends:
 update_on:
   - source: github
     github: vcflib/vcflib
-    use_max_tag: true
+    use_latest_release: true
   - alias: alpm-lilac
     alpm: htslib
     strip_release: true
