@@ -70,7 +70,7 @@ done
     install -Dm755 $srcdir/trinityrnaseq/$plugin $pkgdir/usr/share/$pkgname/$plugin
   done
   # Util
-  mkdir -p $pkdir/usr/share/trinityrnaseq/util
+  mkdir -p $pkgdir/usr/share/trinityrnaseq/util
   find util -type f -exec install -D -m 755 {} $pkgdir/usr/share/trinityrnaseq/util \;
 }
 
