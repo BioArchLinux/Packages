@@ -3,10 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-httr
 - r-plyr
-- r-rcurl
 - r-xml
 update_on:
-- source: manual
-  manual: 0.0.6#2c9f9d3870f9b54c7d89fe9212aee921
+- source: rpkgs
+  pkgname: XML2R
+  repo: cran
+  md5: true
 - alias: r
