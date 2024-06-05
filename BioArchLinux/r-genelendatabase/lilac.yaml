@@ -5,8 +5,10 @@ maintainers:
 repo_depends:
 - r-genomicfeatures
 - r-rtracklayer
+- r-txdbmaker
 update_on:
-- regex: geneLenDataBase_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/geneLenDataBase
+- source: rpkgs
+  pkgname: geneLenDataBase
+  repo: bioc-data-experiment
+  md5: true
 - alias: r
