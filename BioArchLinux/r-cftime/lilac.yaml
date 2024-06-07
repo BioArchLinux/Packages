@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_makedepends:
 - r-ncdf4
+- r-stringr
 - r-testthat
 update_on:
 - source: rpkgs
