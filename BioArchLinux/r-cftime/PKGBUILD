@@ -4,7 +4,7 @@ _pkgname=CFtime
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Using CF-Compliant Calendars with Climate Projection Data"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
