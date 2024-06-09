@@ -5,7 +5,7 @@ _pkgname=ridge
 _pkgver=3.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=7
+pkgrel=8
 pkgdesc="Ridge Regression with Automatic Selection of the Penalty Parameter"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
