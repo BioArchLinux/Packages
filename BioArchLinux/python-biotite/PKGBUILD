@@ -2,8 +2,8 @@
 
 pkgname='python-biotite'
 _module=${pkgname#python-}
-pkgver=0.40.0
-pkgrel=2
+pkgver=0.41.0
+pkgrel=1
 pkgdesc="A comprehensive library for computational molecular biology"
 arch=('x86_64')
 url="https://www.biotite-python.org"
@@ -20,7 +20,7 @@ makedepends=(python-build
              python-oldest-supported-numpy
              cython)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
-sha256sums=('7c24f4efcc315299ad36f5deacef0c65bb61cc59a6b642387b6210988b557261')
+sha256sums=('a5fddb4d738291772735cf04dfa8b642e0bdd6b4c2c0c71e2db727c0a66bd106')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
