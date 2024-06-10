@@ -4,7 +4,7 @@ _pkgname=rsm
 _pkgver=2.10.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Response-Surface Analysis"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
