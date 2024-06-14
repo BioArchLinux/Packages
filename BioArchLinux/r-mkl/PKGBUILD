@@ -5,7 +5,7 @@
 
 pkgname=r-mkl
 _name=R
-pkgver=4.4.0
+pkgver=4.4.1
 pkgrel=1
 pkgdesc="Language and environment for statistical computing and graphics, linked to the Intel(R) MKL."
 _pkgdesc="Language and environment for statistical computing and graphics"
@@ -62,7 +62,7 @@ source=("http://cran.r-project.org/src/base/R-${pkgver%%.*}/R-${pkgver}.tar.gz"
         'R.conf'
         'vars.sh')
 
-sha256sums=('ace4125f9b976d2c53bcc5fca30c75e30d4edc401584859cbadb080e72b5f030'
+sha256sums=('b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d'
             'b7833166041b06f716b6a79095d27d4abd83549816dc53193213827139eae6ef'
             'f14c5efb017f970363ddc7509960b7f04f9942074d82ef7567ecd41313bf0aeb')
 
