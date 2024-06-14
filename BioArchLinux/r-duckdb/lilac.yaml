@@ -7,6 +7,7 @@ repo_depends:
 repo_makedepends:
 - r-adbcdrivermanager
 - r-arrow
+- r-clock
 - r-dbplyr
 - r-dplyr
 - r-testthat
