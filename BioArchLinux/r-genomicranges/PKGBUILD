@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomicRanges
-_pkgver=1.56.0
+_pkgver=1.56.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Representation and manipulation of genomic intervals"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -31,7 +31,7 @@ optdepends=(
   r-biocstyle
   r-biostrings
   r-bsgenome
-  r-bsgenome.hsapiens.ucsc.hg19
+  r-bsgenome.hsapiens.ucsc.hg38
   r-bsgenome.mmusculus.ucsc.mm10
   r-bsgenome.scerevisiae.ucsc.saccer2
   r-deseq2
@@ -55,14 +55,14 @@ optdepends=(
   r-summarizedexperiment
   r-txdb.athaliana.biomart.plantsmart22
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
-  r-txdb.hsapiens.ucsc.hg19.knowngene
+  r-txdb.hsapiens.ucsc.hg38.knowngene
   r-txdb.mmusculus.ucsc.mm10.knowngene
   r-txdbmaker
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('57d9a9090895eea7ffef72e254dda5f1')
-b2sums=('8b1698b55da750dc1c4cd5d4b3b8228379ac25dff269f55921b2f2653966a9b26c87792c0b59038e395cb613c5cc8246fd6e8053346760213b74aa91227cbc00')
+md5sums=('3c29605802fea7d4e591cef9348aae87')
+b2sums=('3f3c0ba3bf58901c256aae5f319fc33b6ee37ab55cc9188cc283be5b3551353b84bfb5d3ed772b029ca67b54119bf5b9121c6b3671e5665028879d3713ecd138')
 
 build() {
   mkdir build
