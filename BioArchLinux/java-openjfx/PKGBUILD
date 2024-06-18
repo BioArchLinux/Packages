@@ -77,6 +77,12 @@ prepare() {
 build() {
   cd $_jfxdir
 
+  _FIXWERROR="-Wno-error=incompatible-pointer-types"
+  CFLAGS+=" ${_FIXWERROR}"
+  CXXFLAGS+=" ${_FIXWERROR}"
+  export CFLAGS
+  export CXXFLAGS
+
   # Build with openjdk-(current version minus 1)
   export PATH="/usr/lib/jvm/java-$((${pkgver%%.*}-1))-openjdk/bin/:$PATH"
 
