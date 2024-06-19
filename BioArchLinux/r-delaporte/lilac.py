@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "A version of Fortran supporting the LOG_GAMMA Intrinsic",
+        expect_systemrequirements = "A version of Fortran supporting the LOG_GAMMA Intrinsic and the ieee_arithmetic module.",
     )
 
 def post_build():
