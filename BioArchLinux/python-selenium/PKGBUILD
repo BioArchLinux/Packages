@@ -1,3 +1,8 @@
+# Maintainer: Carl Smedstad <carsme@archlinux.org>
+# Maintainer:  Anton Kudelin <kudelin at proton dot me>
+# Contributor: Jelle van der Waa <jelle@vdwaa.nl>
+# Contributor: Aaron DeVore <aaron.devore@gmail.com>
+
 pkgname=python-selenium
 _pkgname=${pkgname#python-}
 pkgver=4.22.0
