@@ -1,50 +1,54 @@
-# Maintainer:  Anton Kudelin <kudelin at proton dot me>
-# Contributor: Jelle van der Waa <jelle@vdwaa.nl>
-# Contributor: Aaron DeVore <aaron.devore@gmail.com>
-
-_pyname=selenium
-_suffix=''
-pkgname=python-$_pyname
-pkgver=4.20.0
-pkgrel=2
+pkgname=python-selenium
+_pkgname=${pkgname#python-}
+pkgver=4.22.0
+pkgrel=1
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(any)
-url="https://www.selenium.dev"
-license=('Apache-2.0')
-depends=('python-urllib3' 'python-certifi' 'python-debugpy' 'python-multidict'
-         'python-importlib-metadata' 'python-trio-websocket'
-         'python-inflection' 'geckodriver' 'python-typing_extensions')
-makedepends=(python-build python-installer python-setuptools python-wheel)
-checkdepends=('python-pytest' 'python-colorama')
-source=(https://github.com/SeleniumHQ/${_pyname}/archive/refs/tags/${_pyname}-${pkgver}${suffix}.tar.gz)
-sha256sums=('8e06c1dc0de53cbd13edd613579542ae8d66d907befcda8b8025421dc914212e')
-options=(!makeflags)
+url="https://github.com/SeleniumHQ/selenium"
+license=(Apache-2.0)
+depends=(
+  python
+  python-certifi
+  python-trio
+  python-trio-websocket
+  python-typing_extensions
+  python-urllib3
+  python-websocket-client
+)
+makedepends=(
+  python-build
+  python-installer
+  python-setuptools
+  python-wheel
+)
+checkdepends=(python-pytest)
+source=("$pkgname-$pkgver.tar.gz::$url/archive/selenium-$pkgver.tar.gz")
+sha256sums=('196c7080449c48a46fab64dce0fb0085f7c2276d359d49ef1fad51203c853152')
+
+_archive="$_pkgname-selenium-$pkgver/py"
 
 prepare() {
-  cd "${srcdir}/${_pyname}-${_pyname}-${pkgver}/py"
-  cp ../rb/lib/$_pyname/webdriver/atoms/* $_pyname/webdriver/remote
+  cd "$_archive"
+
+  cp ../rb/lib/selenium/webdriver/atoms/* selenium/webdriver/remote
   echo '{"frozen":{},"mutable":{}}' > \
-    $_pyname/webdriver/firefox/webdriver_prefs.json
+    selenium/webdriver/firefox/webdriver_prefs.json
 }
 
 build() {
-  cd "${srcdir}/${_pyname}-${_pyname}-${pkgver}/py"
-  python -m build \
-    --wheel \
-    --no-isolation \
-    --skip-dependency-check
+  cd "$_archive"
+
+  python -m build --wheel --no-isolation
 }
 
 check() {
-  cd "${srcdir}/${_pyname}-${_pyname}-${pkgver}/py"
+  cd "$_archive"
 
-  python -m pytest
+  pytest
 }
 
 package() {
-  cd "${srcdir}/${_pyname}-${_pyname}-${pkgver}/py"
-  python -m installer \
-    --destdir="$pkgdir" \
-    --compile-bytecode=2 \
-    dist/*.whl
+  cd "$_archive"
+
+  python -m installer --destdir="$pkgdir" dist/*.whl
 }
