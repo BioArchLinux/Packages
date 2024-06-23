@@ -1,6 +1,12 @@
-# $Id: PKGBUILD 164237 2012-07-28 03:14:33Z stephane $
-# Maintainer: Vladimir Khodygo <khodygo == at == gmail.com>
+# Maintainer: Jingbei Li <i@jingbei.li>
+# Maintainer: Carlos Aznarán <caznaranl@uni.pe>
+# Maintainer: Auto update bot <auto-update-bot@arch4edu.org>
+# Contributor: davidalb97 <davidalb97@hotmail.com>
+# Contributor: Xuanrui Qi <me@xuanruiqi.com>
+# Contributor: Monson Shao <holymonson@gmail.com>
+# Contributor: Vladimir Khodygo <khodygo == at == gmail.com>
 # Contributor: Ilya Elenskiy <elenskiy.ilya@gmail.com>
+# Contributor: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
@@ -8,20 +14,22 @@
 
 pkgname=python-numpy-mkl
 pkgver=2.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Scientific tools for Python, compiled with Intel MKL"
-arch=('x86_64' 'i686')
-license=('custom')
-url="http://numpy.scipy.org/"
+arch=(x86_64)
+license=(BSD-3-Clause)
+url="https://numpy.org"
 provides=("python-numpy=$pkgver")
-conflicts=('python-numpy')
-depends=('python' 'intel-oneapi-mkl' 'python-yaml' 'glibc' 'gcc-libs')
-optdepends=('python-nose: testsuite')
-makedepends=('git' 'cython' 'gcc-fortran' 'procps-ng' 'python-nose' 'python-setuptools' 'python-build' 'python-installer' 'python-wheel' 'meson-python')
-checkdepends=('python-pytest' 'python-hypothesis')
-options=('staticlibs')
+conflicts=(python-numpy)
+depends=(python intel-oneapi-mkl)
+makedepends=(python-build python-installer meson-python python-setuptools cython gcc-fortran procps-ng)
+checkdepends=(python-pytest python-hypothesis)
 source=("https://github.com/numpy/numpy/releases/download/v$pkgver/numpy-$pkgver.tar.gz")
-sha256sums=('cf5d1c9e6837f8af9f92b6bd3e86d513cdc11f60fd62185cc49ec7d1aba34864')
+sha512sums=('cd5612ce2db4be87afa8479c508c256c9ff7f1b15a6b010eb06ba962759cc26552b512ec82711680bab1ebedeb06dfc8d7bff9cec63c94efacaadd719448b287')
+
+prepare() {
+  sed -i 's/meson-python>=0.15.0,<0.16.0/meson-python>=0.15.0/' numpy-$pkgver/pyproject.toml
+}
 
 build() {
   source /opt/intel/oneapi/setvars.sh
@@ -43,7 +51,5 @@ check() {
 package() {
   cd numpy-$pkgver
   python -m installer --destdir="$pkgdir" dist/*.whl
-  install -m755 -d "${pkgdir}/usr/share/licenses/python-numpy"
-  install -m644 LICENSE.txt "${pkgdir}/usr/share/licenses/python-numpy/"
-  install -Dm644 LICENSE.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -D -m644 LICENSE.txt -t "${pkgdir}/usr/share/licenses/python-numpy/"
 }
