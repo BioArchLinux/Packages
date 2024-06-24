@@ -10,7 +10,6 @@ repo_depends:
 - r-ggplot2
 - r-microbenchmark
 - r-modelr
-- r-pbkrtest
 - r-rlang
 - r-tibble
 - r-tidyr
