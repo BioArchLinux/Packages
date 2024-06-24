@@ -5,8 +5,6 @@ maintainers:
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
   run_cmd(['updpkgsums'])
-repo_depends:
-  - python-trio-websocket
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
