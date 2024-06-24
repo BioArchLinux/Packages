@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-lifecycle
 - r-sandwich
 repo_makedepends:
 - r-aer
