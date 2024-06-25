@@ -2,9 +2,9 @@
 
 # https://github.com/pytest-dev/pytest-runner#deprecation-notice
 pkgname=python-pytest-runner
-pkgver=6.0.1
+pkgver=6.0.0
 _commit=9d13da8bd36ecd9634629b492315cb28eff44183
-pkgrel=2
+pkgrel=1
 pkgdesc="Invoke py.test as distutils command with dependency resolution"
 arch=('any')
 license=('MIT')
@@ -13,7 +13,7 @@ depends=('python-pytest' 'python-setuptools')
 makedepends=('git' 'python-build' 'python-installer' 'python-setuptools-scm' 'python-wheel')
 #checkdepends=('python-pytest-virtualenv' 'python-pytest-enabler')
 source=("git+https://github.com/pytest-dev/pytest-runner.git#commit=$_commit")
-sha512sums=('SKIP')
+sha512sums=('0b9667312f40c826eb3015563f08875a75cd14e68cdd069816fc25791b51ee76bddc5928e94e801a30b8a0ec4ab9c267fb9a7dac1fd137ed774769d7934624e2')
 
 build() {
   cd pytest-runner
