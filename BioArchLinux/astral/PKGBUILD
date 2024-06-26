@@ -38,5 +38,5 @@ package(){
   # pkg bin
   echo "java -jar /usr/share/$pkgname/$pkgname.jar \$@" > ${pkgname}-bin
   chmod +x ${pkgname}-bin
-  install -Dm755 ${pkgname}-bin $pkgdir/usr/bin/$pkgname
+  install -Dm755 ${pkgname}-bin $pkgdir/usr/bin/$pkgname-java
 }
