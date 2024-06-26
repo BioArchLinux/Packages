@@ -12,14 +12,14 @@ depends=('gcc-libs')
 source=($url/archive/refs/tags/v${pkgver}.tar.gz)
 sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
 build() {
-  cd "$_pkgname-v$pkgver"
+  cd "$_pkgname-$pkgver"
   cd src
   make
 }
 
 
 package(){
-  cd "$_pkgname-v$pkgver"
+  cd "$_pkgname-$pkgver"
   # binary
   cd bin
   for bina in $(ls)
