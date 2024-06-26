@@ -2,7 +2,7 @@
 pkgname=astral
 _pkgname=ASTRAL
 pkgver=5.7.1
-pkgrel=1
+pkgrel=2
 java_ver=1.8
 pkgdesc="Tool for converting sequence formatis"
 arch=('x86_64')
