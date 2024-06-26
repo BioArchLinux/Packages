@@ -10,7 +10,7 @@ url="https://github.com/smirarab/ASTRAL"
 license=('Apache-2.0')
 depends=('java-runtime=8' 'bash')
 makedepends=('java-environment=8')
-source=(https://github.com/starsareintherose/MiMi/archive/refs/tags/${pkgver}.tar.gz)
+source=($url/archive/refs/tags/v${pkgver}.tar.gz)
 sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
 
 build() {
