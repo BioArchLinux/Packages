@@ -2,7 +2,7 @@
 pkgname=aster
 _pkgname=ASTER
 pkgver=1.16
-pkgrel=1
+pkgrel=2
 pkgdesc="Accurate Species Tree EstimatoR"
 arch=('x86_64')
 url="https://github.com/chaoszhang/ASTER"
