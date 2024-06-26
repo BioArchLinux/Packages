@@ -17,7 +17,7 @@ build() {
   cd "$_pkgname-$pkgver"
   cd main
   rm -f phylonet/coalescent/*.class phylonet/util/BitSet.class phylonet/tree/model/sti/STITreeCluster*.class phylonet/tree/io/NewickWriter.class
-  jar cvfm ../astral.$version.jar ../manifest.text phylonet/util/BitSet.* phylonet/coalescent/*.* phylonet/tree/model/sti/STITreeCluster*.* phylonet/tree/io/NewickWriter.*
+  jar cvfm ../astral.jar ../manifest.text phylonet/util/BitSet.* phylonet/coalescent/*.* phylonet/tree/model/sti/STITreeCluster*.* phylonet/tree/io/NewickWriter.*
   javac -source $java_ver  -target $java_ver -classpath ../lib/main.jar:../lib/colt.jar:../lib/JSAP-2.1.jar phylonet/util/BitSet.java phylonet/coalescent/*java phylonet/tree/model/sti/STITreeCluster.java phylonet/tree/io/NewickWriter.java
 }
 
@@ -25,7 +25,7 @@ build() {
 package(){
   # pkg main
   cd "$_pkgname-$pkgver"
-  install -Dm755 $pkgname.$pkgver.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
+  install -Dm755 $pkgname.jar $pkgdir/usr/share/$pkgname/$pkgname.jar
   cd lib
   # pkg lib
   for javlib in $(ls)
