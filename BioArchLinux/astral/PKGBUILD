@@ -30,7 +30,7 @@ package(){
   # pkg lib
   for javlib in $(ls)
   do
-    instal -Dm755 $javlib $pkgdir/usr/share/$pkgname/lib/$javlib
+    install -Dm755 $javlib $pkgdir/usr/share/$pkgname/lib/$javlib
   done
   cd ..
   # pkg doc
