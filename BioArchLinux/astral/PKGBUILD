@@ -2,7 +2,7 @@
 pkgname=astral
 _pkgname=ASTRAL
 pkgver=5.7.1
-pkgrel=0
+pkgrel=1
 java_ver=1.8
 pkgdesc="Tool for converting sequence formatis"
 arch=('x86_64')
@@ -11,7 +11,7 @@ license=('Apache-2.0')
 depends=('java-runtime=8' 'bash')
 makedepends=('java-environment=8')
 source=($url/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
+sha256sums=('c7c1738a7e104586747962bde082acc2f7b23dbd672efb1d85d9ca380bb1a98c')
 
 build() {
   cd "$_pkgname-$pkgver"
