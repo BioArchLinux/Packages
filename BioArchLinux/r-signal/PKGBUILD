@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=signal
-_pkgver=1.8-0
+_pkgver=1.8-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Signal Processing"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -19,8 +19,8 @@ optdepends=(
   r-pracma
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b10a342e277ff7642dd90c70e87e579a')
-b2sums=('647e6cc61fe37152db6baecae06c01802420adc9cd3753798c5918d5c9ba5b7cc1ee195f0605741f7aaa8818df209e9b4e8f39d175c3e2341f3e367f753c62cc')
+md5sums=('02fbe007f51ff7ce3b03d7ea5d5ca924')
+b2sums=('541ffc19d939ba91c10812fb009666328c248fe93c839eb8aa704554afa577f4e67980d77d9ba0702dcafad70d5f6877c879f89ba6b42e3de46f85ede0168da2')
 
 build() {
   mkdir build
