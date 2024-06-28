@@ -1,19 +1,22 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-bit64
-  - r-ecosolver
-  - r-gmp
-  - r-osqp
-  - r-r6
-  - r-rcpp
-  - r-rcppeigen
-  - r-rmpfr
-  - r-scs
+- r-bit64
+- r-clarabel
+- r-ecosolver
+- r-gmp
+- r-osqp
+- r-r6
+- r-rcpp
+- r-rmpfr
+- r-scs
+repo_makedepends:
+- r-rcppeigen
 update_on:
-  - regex: CVXR_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=CVXR
-  - alias: r
+- source: rpkgs
+  pkgname: CVXR
+  repo: cran
+  md5: true
+- alias: r

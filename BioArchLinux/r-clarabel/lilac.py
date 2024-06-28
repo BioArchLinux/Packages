@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_license = "Apache License 2.0 | file LICENSE",
+        expect_systemrequirements = "Cargo (Rust package manager), rustc and GNU Make",
     )
 
 def post_build():
