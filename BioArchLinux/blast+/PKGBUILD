@@ -27,7 +27,7 @@ depends=('glibc'
 	 'sqlite')
 makedepends=('cpio' 'make')
 # conflicts with proj on libproj.so
-conflicts=('blast' 'blast+-bin' 'ncbi-blast' 'proj')
+conflicts=('blast' 'blast+-bin' 'ncbi-blast')
 provides=('blast')
 replaces=('ncbi-blast')
 source=("https://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/ncbi-blast-$pkgver+-src.tar.gz")
@@ -52,4 +52,6 @@ package() {
     chmod +x "$pkgdir"/usr/lib/*.so
     install -d "$pkgdir"/usr/share/licenses/"$pkgname"
     echo 'public domain' >"$pkgdir"/usr/share/licenses/"$pkgname"/LICENSE
+
+    rm $pkgdir/usr/lib/libproj.so
 }
