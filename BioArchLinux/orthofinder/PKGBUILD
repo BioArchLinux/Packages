@@ -7,7 +7,9 @@ pkgdesc="Phylogenetic orthology inference for comparative genomics"
 arch=('any')
 url="https://github.com/davidemms/OrthoFinder"
 license=('GPL-3.0-only')
-depends=('python' 'python-scipy' 'diamond' 'mcl' 'fastme' 'mafft' 'fasttree' 'muscle' 'raxml' 'raxml-ng' 'iqtree' 'bzip2')
+depends=('python' 'python-scipy' 
+	 'bzip2'
+	 'diamond' 'mcl' 'fastme' 'mafft' 'fasttree' 'muscle' 'raxml' 'raxml-ng' 'iqtree')
 optdepends=('mmseqs2'
 	    'blast+')
 source=($url/archive/refs/tags/$pkgver.tar.gz)
@@ -27,7 +29,8 @@ done
 
   sed -i 's/raxmlHPC-AVX/raxmlHPC-AVX2/g' scripts_of/config.json
   install -Dm755 scripts_of/config.json $pkgdir/usr/share/$pkgname/scripts_of/config.json
- 
+
+  mkdir -p $pkgdir/usr/bin/ 
   ln -s /usr/share/$pkgname/$pkgname ${pkgdir}/usr/bin/$pkgname
 
 }
