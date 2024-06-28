@@ -5,7 +5,7 @@ _pkgname=glmmTMB
 _pkgver=1.1.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=5
 pkgdesc="Generalized Linear Mixed Models using Template Model Builder"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
