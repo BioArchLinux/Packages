@@ -3,9 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-gparotation
 - r-mnormt
 update_on:
-- regex: psych_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=psych
+- source: rpkgs
+  pkgname: psych
+  repo: cran
+  md5: true
 - alias: r
