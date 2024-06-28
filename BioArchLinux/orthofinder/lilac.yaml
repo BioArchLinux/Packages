@@ -11,7 +11,6 @@ update_on:
     github: davidemms/OrthoFinder
     use_max_tag: true
 repo_depends:
-  - blast
   - diamond
   - mcl
   - fastme
@@ -22,4 +21,3 @@ repo_depends:
   - raxml-ng
   - iqtree
   - bzip2
-  - mmseqs2
