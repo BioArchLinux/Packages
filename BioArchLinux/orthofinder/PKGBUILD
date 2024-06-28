@@ -12,7 +12,7 @@ optdepends=('mmseqs2'
 	    'blast+')
 source=($url/archive/refs/tags/$pkgver.tar.gz)
 sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
-build() {
+package() {
 
   cp orthofinder.py $pkgdir/usr/share/$pkgname/$pkgname
 
