@@ -2,7 +2,7 @@
 pkgname=orthofinder
 _pkgname=OrthoFinder
 pkgver=2.5.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Phylogenetic orthology inference for comparative genomics"
 arch=('any')
 url="https://github.com/davidemms/OrthoFinder"
@@ -13,7 +13,7 @@ depends=('python' 'python-scipy'
 optdepends=('mmseqs2'
 	    'blast+')
 source=($url/archive/refs/tags/$pkgver.tar.gz)
-sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
+sha256sums=('56cc3dd196e88cb67cce9f34e459f44d52b8b1e0f339b6380b9e6a7c0104f6ff')
 package() {
 
   cd $_pkgname-$pkgver
