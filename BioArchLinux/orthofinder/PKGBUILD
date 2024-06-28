@@ -14,13 +14,18 @@ source=($url/archive/refs/tags/$pkgver.tar.gz)
 sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
 package() {
 
-  cp orthofinder.py $pkgdir/usr/share/$pkgname/$pkgname
+  cd $_pkgname-$pkgver
 
-  mkdir -p $pkgdir/usr/share/$pkgname/scripts_of
-  cp -r scripts_of/*py $pkgdir/usr/share/$pkgname/scripts_of/
+  install -Dm755 orthofinder.py $pkgdir/usr/share/$pkgname/$pkgname
+
+  cd scripts_of
+for pyf in $(ls *.py)
+do
+  install -Dm755 $pyf $pkgdir/usr/share/$pkgname/scripts_of/$pyf
+done
 
   sed -i 's/raxmlHPC-AVX/raxmlHPC-AVX2/g' scripts_of/config.json
-  cp scripts_of/config.json $pkgdir/usr/share/$pkgname/scripts_of/config.json
+  install -Dm755 scripts_of/config.json $pkgdir/usr/share/$pkgname/scripts_of/config.json
  
   ln -s /usr/share/$pkgname/$pkgname ${pkgdir}/usr/bin/$pkgname
 
