@@ -23,6 +23,7 @@ for pyf in $(ls *.py)
 do
   install -Dm755 $pyf $pkgdir/usr/share/$pkgname/scripts_of/$pyf
 done
+  cd ..
 
   sed -i 's/raxmlHPC-AVX/raxmlHPC-AVX2/g' scripts_of/config.json
   install -Dm755 scripts_of/config.json $pkgdir/usr/share/$pkgname/scripts_of/config.json
