@@ -4,11 +4,12 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
-- r-crayon
 - r-desc
 - r-fs
 - r-glue
+- r-lifecycle
 - r-pkgbuild
+- r-processx
 - r-rlang
 - r-rprojroot
 - r-withr

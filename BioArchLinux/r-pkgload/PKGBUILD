@@ -5,39 +5,40 @@
 # Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=pkgload
-_pkgver=1.3.4
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Simulate Package Installation and Attach"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-cli
-  r-crayon
   r-desc
   r-fs
   r-glue
+  r-lifecycle
   r-pkgbuild
+  r-processx
   r-rlang
   r-rprojroot
   r-withr
 )
 optdepends=(
   r-bitops
-  r-covr
+  r-jsonlite
   r-mathjaxr
-  r-mockr
   r-pak
   r-rcpp
   r-remotes
   r-rstudioapi
   r-testthat
+  r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('6c18699c2b2798da5f4e201b44eecc2c')
-b2sums=('ac2fdc0d429ef5be97b24b984646acad2dc9def5447713ee9689070f2a54228dd3f353a24a307d24c12ec72021e91db0bc033ca1ee8c15b0d5ef7c1fa4aa8900')
+md5sums=('264e54f059ddbface95d0627f272a47b')
+b2sums=('620aaefc9dd10573d941d78a8fcb93b87c3e455c9e58a86a492ca5e56bc5adb4f4cf65ac0311891fb564d433ae4dd776d38ef3d98050ae33f7dc56fc9547aada')
 
 build() {
   mkdir build
