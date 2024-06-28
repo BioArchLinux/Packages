@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-assertthat
+- r-base64enc
 - r-biobase
 - r-bit64
 - r-data.table
@@ -14,6 +15,7 @@ repo_depends:
 - r-lubridate
 - r-magrittr
 - r-memoise
+- r-r.utils
 - r-rappdirs
 - r-rlang
 - r-s4vectors
