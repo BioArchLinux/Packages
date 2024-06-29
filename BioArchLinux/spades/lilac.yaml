@@ -2,6 +2,10 @@ build_prefix: extra-x86_64
 maintainers:
   - github: alienzj
     email: alienchuj@gmail.com
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
   - source: github
     github: ablab/spades
