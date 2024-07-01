@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=virulign
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="fast codon-correct alignment and annotation of viral genomes"
 arch=('x86_64')
 url="https://github.com/rega-cev/virulign"
