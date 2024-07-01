@@ -6,6 +6,7 @@ pkgdesc="fast codon-correct alignment and annotation of viral genomes"
 arch=('x86_64')
 url="https://github.com/rega-cev/virulign"
 license=('GPL-2.0-only')
+depends=('gcc-libs' 'glibc')
 makedepends=('gcc' 'cmake' 'make')
 source=($url/archive/refs/tags/v${pkgver}.tar.gz)
 sha256sums=('3e6934d5b5f37ff60b3aed94472b8076a6e79ea870f7e0ad5c4208a4d13d3c09')
