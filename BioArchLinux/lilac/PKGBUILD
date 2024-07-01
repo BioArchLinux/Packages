@@ -4,8 +4,8 @@
 
 _pkgname=lilac
 pkgname=$_pkgname
-pkgver=2024.03.29
-pkgrel=11
+pkgver=2024.07.01
+pkgrel=1
 pkgdesc='The build bot for bioarchlinux, English version'
 arch=(any)
 url='https://github.com/archlinuxcn/lilac'
@@ -22,10 +22,8 @@ optdepends=(
 cmt=ce8f610005bec5dd8fd6836025229765ed19504c
 provides=("$_pkgname=$pkgver")
 conflicts=("$_pkgname")
-source=("git+https://github.com/archlinuxcn/lilac.git#commit=$cmt"
-	"$pkgname.patch::https://patch-diff.githubusercontent.com/raw/archlinuxcn/lilac/pull/198.patch")
-sha256sums=('7c3f2ac8760fa44e38c628039e02767556b018398a75f7356274a28b15649f82'
-            'c08bda4fd9e41eaf2f3f2616bdf55211be46a1029a6b6f2b05a1ce550ce9403a')
+source=("git+https://github.com/starsareintherose/lilac.git#branch=upstream")
+sha256sums=('SKIP')
 
 pkgver() {
   cd $_pkgname
@@ -34,7 +32,7 @@ pkgver() {
 
 prepare(){
   cd $_pkgname
-  patch -p1 < $srcdir/$pkgname.patch
+  #patch -p1 < $srcdir/$pkgname.patch
 }
 
 build() {
@@ -54,5 +52,4 @@ package() {
   install -Dm755 scripts/cleanup-dblck "$pkgdir"/usr/bin/cleanup-dblck
   install -Dm644 scripts/cleanup-dblck.service "$pkgdir"/usr/lib/systemd/system/cleanup-dblck.service
 }
-
 
