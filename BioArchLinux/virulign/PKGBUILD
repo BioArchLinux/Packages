@@ -1,14 +1,14 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=virulign
 pkgver=1.0.2
-pkgrel=0
+pkgrel=1
 pkgdesc="fast codon-correct alignment and annotation of viral genomes"
 arch=('x86_64')
 url="https://github.com/rega-cev/virulign"
 license=('GPL-2.0-only')
 makedepends=('gcc' 'cmake' 'make')
 source=($url/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
+sha256sums=('3e6934d5b5f37ff60b3aed94472b8076a6e79ea870f7e0ad5c4208a4d13d3c09')
 build() {
   cd "$pkgname-$pkgver"
   mkdir -p build && cd build
