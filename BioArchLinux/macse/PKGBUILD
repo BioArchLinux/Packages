@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=macse
 pkgver=2.07
-pkgrel=0
+pkgrel=1
 pkgdesc="Multiple Alignment of Coding SEquences Accounting for Frameshifts and Stop Codons"
 arch=('any')
 url="https://www.agap-ge2pop.org/macse/"
