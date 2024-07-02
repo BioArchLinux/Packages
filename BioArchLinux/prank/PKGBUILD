@@ -2,7 +2,7 @@
 pkgname=prank
 _pkgname=$pkgname-msa
 pkgver=170427
-pkgrel=0
+pkgrel=1
 pkgdesc="probabilistic multiple alignment program for DNA, codon and amino-acid sequences"
 arch=('x86_64')
 url="https://ariloytynoja.github.io/prank-msa/"
