@@ -5,7 +5,8 @@ maintainers:
 repo_depends:
 - r-rcpp
 update_on:
-- regex: lhs_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=lhs
+- source: rpkgs
+  pkgname: lhs
+  repo: cran
+  md5: true
 - alias: r
