@@ -4,7 +4,7 @@ _pkgname=dbscan
 _pkgver=1.2-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Density-Based Spatial Clustering of Applications with Noise (DBSCAN) and Related Algorithms"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
