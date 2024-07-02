@@ -12,7 +12,8 @@ repo_depends:
 - r-paradox
 - r-r6
 update_on:
-- regex: mlr3tuning_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mlr3tuning
+- source: rpkgs
+  pkgname: mlr3tuning
+  repo: cran
+  md5: true
 - alias: r
