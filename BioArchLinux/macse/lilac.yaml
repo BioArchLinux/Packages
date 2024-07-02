@@ -9,4 +9,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: "https://www.agap-ge2pop.org/macsee-pipelines/"
-    regex: 'MACSE release (\d+.\d+)'
+    regex: href="https://www.agap-ge2pop.org/wp-content/uploads/macse/releases/macse_v(\d+.\d+).jar"
