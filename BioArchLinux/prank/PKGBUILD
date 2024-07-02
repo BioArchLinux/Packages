@@ -1,0 +1,30 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=prank
+_pkgname=$pkgname-msa
+pkgver=170427
+pkgrel=0
+pkgdesc="probabilistic multiple alignment program for DNA, codon and amino-acid sequences"
+arch=('x86_64')
+url="https://ariloytynoja.github.io/prank-msa/"
+_url="http://wasabiapp.org/download/prank"
+license=('GPL')
+depends=('gcc-libs' 'glibc')
+makedepends=('gcc' 'make')
+optdepends=('mafft: fast guide tree estimation, alignment anchoring and ancestral reconstruction to work'
+	    'exonerate: fast guide tree estimation, alignment anchoring and ancestral reconstruction to work'
+	    'bppsuite: fast guide tree estimation, alignment anchoring and ancestral reconstruction to work'
+	    )
+source=(${_url}/prank.source.${pkgver}.tgz)
+sha256sums=('623eb5e9b5cb0be1f49c3bf715e5fabceb1059b21168437264bdcd5c587a8859')
+build() {
+  cd "$_pkgname"
+  cd src
+  make
+}
+
+
+package(){
+  cd "$_pkgname"
+  cd src
+  install -Dm755 $pkgname $pkgdir/usr/bin/$pkgname
+}
