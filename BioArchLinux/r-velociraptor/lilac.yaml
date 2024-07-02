@@ -15,7 +15,8 @@ repo_depends:
 - r-summarizedexperiment
 - r-zellkonverter
 update_on:
-- regex: velociraptor_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/velociraptor
+- source: rpkgs
+  pkgname: velociraptor
+  repo: bioc
+  md5: true
 - alias: r
