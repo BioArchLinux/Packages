@@ -9,4 +9,4 @@ update_on:
   md5: true
 - alias: r
 - source: manual
-  manual: 3
+  manual: 4
