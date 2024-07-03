@@ -1,8 +1,8 @@
 # Maintainer: sukanka <su975853527  at gmail>
 pkgname=python-bx
 _pkgname=bx-python
-pkgver=0.11.0
-pkgrel=2
+pkgver=0.12.0
+pkgrel=1
 pkgdesc="Tools for manipulating biological data, particularly multiple sequence alignments"
 arch=('x86_64')
 url="https://github.com/bxlab/bx-python"
@@ -12,7 +12,7 @@ makedepends=('python-setuptools' 'cython' )
 provides=('bx-python')
 options=(!emptydirs)
 source=($_pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz)
-sha256sums=('0cfc82f756e0c0d76c050969609d3825706012e48a4010d1353de67acfff0c15')
+sha256sums=('0033ef742fd966421226cef843937f3c6cdf548c4fc7439930b583a25fc70a2a')
 
 build(){
   cd "$srcdir"/$_pkgname-$pkgver
