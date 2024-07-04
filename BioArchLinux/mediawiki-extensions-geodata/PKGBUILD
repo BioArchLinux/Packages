@@ -2,7 +2,7 @@
 pkgname=mediawiki-extensions-geodata
 _pkgname=mediawiki-extensions-GeoData
 _pkg=GeoData
-pkgver=1_41
+pkgver=1_42
 pkgrel=1
 pkgdesc="allows articles to specify their geographical coordinates and publishes these coordinates"
 arch=('x86_64')
