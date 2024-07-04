@@ -2,7 +2,7 @@
 pkgname=mimi
 _pkgname=MiMi
 pkgver=0.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Tool for converting sequence formats"
 arch=('x86_64')
 url="https://github.com/starsareintherose/MiMi"
