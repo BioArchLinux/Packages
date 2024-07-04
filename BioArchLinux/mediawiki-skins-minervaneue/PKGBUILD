@@ -2,7 +2,7 @@
 pkgname=mediawiki-skins-minervaneue
 _pkgname=mediawiki-skins-MinervaNeue
 _pkg=MinervaNeue
-pkgver=1_41
+pkgver=1_42
 pkgrel=1
 pkgdesc="a responsive mobile-first skin for your mediawiki instance"
 arch=('x86_64')
