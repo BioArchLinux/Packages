@@ -10,7 +10,7 @@ post_build_script: |
 
 update_on:
 - source: pypi
-  pypi: fluent.syntax
+  pypi: fluent.runtime
 - alias: python
 
 repo_depends:
