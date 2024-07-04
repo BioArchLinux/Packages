@@ -2,7 +2,7 @@
 pkgname=mediawiki-extensions-templatestyles
 _pkgname=mediawiki-extensions-TemplateStyles
 _pkg=TemplateStyles
-pkgver=1_41
+pkgver=1_42
 pkgrel=1
 pkgdesc="introduces a templatestyles tag mediawiki"
 arch=('x86_64')
