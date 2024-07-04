@@ -6,15 +6,15 @@ _pkgname=lilac
 pkgname=$_pkgname
 pkgver=2024.07.01
 pkgrel=3
-pkgdesc='The build bot for bioarchlinux, English version'
+pkgdesc='The build bot for bioarchlinux'
 arch=(any)
 url='https://github.com/archlinuxcn/lilac'
 license=(GPL-3.0-or-later)
 depends=(python git devtools nvchecker gnupg pid_children fakeroot bubblewrap pacman-contrib
          python-requests python-lxml python-yaml python-tomli python-tomli-w pyalpm
-         python-structlog python-prctl)
+         python-structlog python-prctl python-fluent.runtime)
 checkdepends=(python-pytest python-pytest-asyncio)
-makedepends=(python-setuptools-scm)
+makedepends=(python-setuptools-scm python-sqlalchemy)
 optdepends=(
   'smtp-forwarder: for sending error reports'
   'python-sqlalchemy: for recording build results in a database'
@@ -22,7 +22,7 @@ optdepends=(
 cmt=ce8f610005bec5dd8fd6836025229765ed19504c
 provides=("$_pkgname=$pkgver")
 conflicts=("$_pkgname")
-source=("git+https://github.com/starsareintherose/lilac.git#branch=upstream")
+source=("git+https://github.com/archlinuxcn/lilac.git")
 sha256sums=('SKIP')
 
 pkgver() {
@@ -30,10 +30,6 @@ pkgver() {
   printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
 }
 
-prepare(){
-  cd $_pkgname
-  #patch -p1 < $srcdir/$pkgname.patch
-}
 
 build() {
   cd $_pkgname
