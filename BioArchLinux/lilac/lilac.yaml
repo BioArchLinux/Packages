@@ -14,3 +14,4 @@ update_on:
   - alias: python
 repo_depends:
   - python-fluent.runtime
+  - pid_children
