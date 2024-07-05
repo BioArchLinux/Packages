@@ -25,7 +25,7 @@ source=(
 sha512sums=('30aed03cc6047b10657a850897fc43058c0e2deef5402081278b91442820d0829c02505357c84c3dd809ae41adf315c7da195027c5a58fdd9ce9a343e0049879')
 
 build() {
-  cmake -B build -S ${pkgname}-${pkgver}/assembler/src \
+  cmake -B build -S ${pkgname}-${pkgver}/src \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_SKIP_INSTALL_RPATH=ON \
     -DCMAKE_BUILD_TYPE=None
