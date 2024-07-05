@@ -9,7 +9,7 @@ url="https://github.com/starsareintherose/$_pkgname"
 license=('GPL-2.0-only')
 depends=('fastp' 'diamond' 'spades' 'java-runtime' 'macse' 'parallel' 'findutils' 'bash')
 makedepends=('gcc' 'cmake' 'make')
-source=(https://github.com/starsareintherose/MiMi/archive/refs/tags/${pkgver}.tar.gz)
+source=(https://github.com/starsareintherose/${_pkgname}/archive/refs/tags/${pkgver}.tar.gz)
 sha256sums=('88fef1fc80b546752463c5130083251d3f868077f06ba9f27870c7911cfbd6de')
 build() {
   cd "$_pkgname-$pkgver"
