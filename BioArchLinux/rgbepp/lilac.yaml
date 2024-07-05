@@ -16,3 +16,4 @@ repo_depends:
   - spades
   - diamond
   - macse
+  - isa-l
