@@ -5,7 +5,7 @@ _pkgname=tiledb
 _pkgver=0.28.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Modern Database Engine for Complex Data Based on Multi-Dimensional Arrays"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
