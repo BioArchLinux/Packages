@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=betareg
-_pkgver=3.1-4
+_pkgver=3.2-0
 pkgname=r-${_pkgname,,}
-pkgver=3.1.4
-pkgrel=7
+pkgver=3.2.0
+pkgrel=1
 pkgdesc='Beta Regression'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
   r-strucchange
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5106986096a68b2b516215968158589b71969ce7912879253d6e930355a18101')
+sha256sums=('10b49ebfb1dafbe890df41decb4ec82d38deb240c817273f5fcf674f8d07b3e4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
