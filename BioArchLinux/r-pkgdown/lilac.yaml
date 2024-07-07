@@ -9,11 +9,11 @@ repo_depends:
   - r-desc
   - r-digest
   - r-downlit
+  - r-fontawesome
   - r-fs
-  - r-httr
+  - r-httr2
   - r-jsonlite
-  - r-magrittr
-  - r-memoise
+  - r-openssl
   - r-purrr
   - r-ragg
   - r-rlang
