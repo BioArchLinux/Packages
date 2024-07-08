@@ -4,7 +4,6 @@ maintainers:
   email: su975853527@gmail.com
 repo_depends:
 - r-cli
-- r-cpp11
 - r-tibble
 repo_makedepends:
 - r-cpp11
