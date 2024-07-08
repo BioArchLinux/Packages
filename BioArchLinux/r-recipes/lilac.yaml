@@ -6,7 +6,6 @@ repo_depends:
 - r-cli
 - r-clock
 - r-dplyr
-- r-ellipsis
 - r-generics
 - r-glue
 - r-gower
