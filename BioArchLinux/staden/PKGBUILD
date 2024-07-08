@@ -5,11 +5,12 @@ pkgname=staden
 pkgver=2.0.0b11
 _pkgname=$pkgname-$pkgver-2016-src
 pkgrel=8
+_tklib=0.8
 pkgdesc="Tools for DNA sequence assembly (Gap4/5), editing and analysis (Spin)"
 arch=('i686' 'x86_64')
 url="http://staden.sourceforge.net/"
 license=('BSD')
-depends=('staden-io_lib' 'tklib>=0.7')
+depends=('staden-io_lib' 'tklib')
 optdepends=('iwidgets: gap5 prefinish'
             'xz: better gap5 compression'
             'libpng: gap5 Report Mutations')
@@ -26,7 +27,7 @@ sha256sums=('cd7ee17626c25bc845ebd3f6311b5a538815fb73a0dfef2393001bf579ac9649'
 
 build() {
   cd $_pkgname
-  ./configure --prefix=/usr --with-tklib=/usr/lib/tklib0.7
+  ./configure --prefix=/usr --with-tklib=/usr/lib/tklib${_tklib}
   make
 }
 
