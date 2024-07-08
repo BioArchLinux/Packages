@@ -9,7 +9,7 @@ pkgdesc="Tools for DNA sequence assembly (Gap4/5), editing and analysis (Spin)"
 arch=('i686' 'x86_64')
 url="http://staden.sourceforge.net/"
 license=('BSD')
-depends=('staden-io_lib' 'tklib>=0.7' 'tklib<0.8')
+depends=('staden-io_lib' 'tklib>=0.7')
 optdepends=('iwidgets: gap5 prefinish'
             'xz: better gap5 compression'
             'libpng: gap5 Report Mutations')
