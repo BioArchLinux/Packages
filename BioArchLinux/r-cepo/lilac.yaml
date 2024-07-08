@@ -6,18 +6,20 @@ repo_depends:
 - r-biocparallel
 - r-delayedarray
 - r-delayedmatrixstats
+- r-dplyr
 - r-ggplot2
 - r-gseabase
 - r-hdf5array
 - r-patchwork
+- r-purrr
 - r-reshape2
 - r-rlang
 - r-s4vectors
 - r-singlecellexperiment
 - r-summarizedexperiment
-- r-dplyr
 update_on:
-- regex: Cepo_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Cepo
+- source: rpkgs
+  pkgname: Cepo
+  repo: bioc
+  md5: true
 - alias: r
