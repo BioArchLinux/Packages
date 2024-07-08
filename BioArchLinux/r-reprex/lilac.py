@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "pandoc (>= 2.0) - http://pandoc.org",
+        expect_systemrequirements = "pandoc (>= 2.0) - https://pandoc.org/",
     )
 
 def post_build():
