@@ -12,10 +12,11 @@ depends=(
   python
 )
 makedepends=(
-  bzip2
+  gcc
   cmake
   openmp
   zlib
+  bzip2
 )
 options=("!lto")
 
@@ -25,7 +26,9 @@ source=(
 sha512sums=('088db53c914326ca91add745f804f905632588716a90bf1e9cd208e1354a5e72d46daa25dc7877299edd8dc29d072fad749b569208e1f3a32c89c8eaa935e0db')
 
 build() {
-  cmake -B build -S ${pkgname}-${pkgver}/src \
+  cmake -B build \
+    -G "Unix Makefiles" \
+    -S ${pkgname}-${pkgver}/src \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_SKIP_INSTALL_RPATH=ON \
     -DCMAKE_BUILD_TYPE=None
