@@ -9,7 +9,8 @@ repo_depends:
 - r-modeltools
 - r-sandwich
 update_on:
-- regex: betareg_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=betareg
+- source: rpkgs
+  pkgname: betareg
+  repo: cran
+  md5: true
 - alias: r
