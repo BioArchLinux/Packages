@@ -1,18 +1,26 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-alabama
-  - r-nleqslv
-  - r-randtoolbox
-  - r-rcpp
-  - r-rcpparmadillo
+- r-alabama
+- r-nleqslv
+- r-qrng
+- r-rcpp
+- r-spacefillr
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
-  - regex: TruncatedNormal_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=TruncatedNormal
-  - alias: r
+- source: rpkgs
+  pkgname: TruncatedNormal
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
