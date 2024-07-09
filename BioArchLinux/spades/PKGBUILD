@@ -3,16 +3,16 @@
 
 pkgname=spades
 pkgver=4.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='SPAdes Genome Assembler'
-url='http://cab.spbu.ru/software/spades/'
+url='http://ablab.github.io/spades'
 arch=('x86_64')
 license=('GPL2')
 depends=(
   python
+  bwa
 )
 makedepends=(
-  gcc
   cmake
   openmp
   zlib
@@ -25,6 +25,12 @@ source=(
 )
 sha512sums=('088db53c914326ca91add745f804f905632588716a90bf1e9cd208e1354a5e72d46daa25dc7877299edd8dc29d072fad749b569208e1f3a32c89c8eaa935e0db')
 
+prepare() {
+  cd ${pkgname}-${pkgver}
+  sed -i 's/add_subdirectory(bwa)/#add_subdirectory(bwa)/g' ext/src/CMakeLists.txt
+  sed -i 's#mem_align1_bin(#mem_align1(#g' src/common/alignment/bwa_index.cpp
+}
+
 build() {
   cmake -B build \
     -G "Unix Makefiles" \
@@ -32,11 +38,11 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_SKIP_INSTALL_RPATH=ON \
     -DCMAKE_BUILD_TYPE=None
-  make -C build
+  make -C build -j 8
 }
 
 package() {
   make DESTDIR="${pkgdir}" -C build install
   ln -s "/usr/bin/spades.py" "${pkgdir}/usr/bin/${pkgname}"
+  ln -s "/usr/bin/bwa" "${pkgdir}/usr/bin/${pkgname}-bwa"
 }
-# vim:set ts=2 sw=2 et:
