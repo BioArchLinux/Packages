@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RCurl
-_pkgver=1.98-1.14
+_pkgver=1.98-1.16
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="General Network (HTTP/FTP/...) Client Interface for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -17,8 +17,8 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('db488a574c244647e793082ede268cc1')
-b2sums=('df989200536571d9b8a369fa053135158c5f9a96cda1035d5801721f2b9242c96b80490ddb2c32f2486ce13ea6bd2b99a09e5e2fa2204dbac9f6c1d84618393b')
+md5sums=('3727edecf0189d460661535b6e7b1a46')
+b2sums=('9c49e78be4ee2a3e20bddd77409a1c966e9b36d7b78f093b1794d1cd86289c8d0a2be60d669327a730af98397d7f49fed747d4e6ebc1492ff146c5f2d96475d7')
 
 build() {
   mkdir build
