@@ -12,6 +12,7 @@ repo_depends:
 - r-memoise
 - r-pak
 - r-pkgbuild
+- r-purrr
 - r-r6
 - r-remotes
 - r-usethis
