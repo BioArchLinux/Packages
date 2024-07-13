@@ -8,7 +8,6 @@ repo_depends:
 - r-biocparallel
 - r-biostrings
 - r-ensembldb
-- r-ensemblvep
 - r-genomeinfodb
 - r-genomicranges
 - r-ggally
