@@ -2,12 +2,12 @@
 # Contributor: rpkak <rpkak@users.noreply.github.com>
 
 pkgname=libblake3
-pkgver=1.5.1
-pkgrel=1
+pkgver=1.5.2
+pkgrel=0
 pkgdesc="the C implementation of the BLAKE3 cryptographic hash function"
 arch=(x86_64)
 url="https://github.com/BLAKE3-team/BLAKE3"
-license=(custom:CC0 Apache)
+license=('CC0-1.0 OR Apache-2.0 OR Apache-2.0 WITH LLVM-exception')
 depends=(
   glibc
 )
@@ -15,7 +15,7 @@ makedepends=(
   cmake
 )
 source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
-sha256sums=('822cd37f70152e5985433d2c50c8f6b2ec83aaf11aa31be9fe71486a91744f37')
+sha256sums=('1bc38cd3cc501458054c3bb473e5e00338d6175121424040079025ea305ddef3')
 
 build() {
   cmake -B build -S "BLAKE3-$pkgver/c" \
@@ -28,5 +28,5 @@ build() {
 
 package() {
   DESTDIR="$pkgdir" cmake --install build
-  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" "BLAKE3-$pkgver/LICENSE"
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" "BLAKE3-$pkgver/LICENSE_A2LLVM"
 }
