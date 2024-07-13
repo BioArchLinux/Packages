@@ -4,7 +4,7 @@ _pkgname=fitdistrplus
 _pkgver=1.2-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Help to Fit of a Parametric Distribution to Non-Censored or Censored Data"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
