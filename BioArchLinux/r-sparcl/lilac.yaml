@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+update_on:
+- source: rpkgs
+  pkgname: sparcl
+  repo: cran
+  md5: true
+- alias: r

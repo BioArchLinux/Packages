@@ -4,6 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-corrplot
+- r-dendextend
+- r-dplyr
 - r-flexmix
 - r-fpc
 - r-ggdendro
@@ -17,9 +19,12 @@ repo_depends:
 - r-randomforest
 - r-rdpack
 - r-reshape2
+- r-rskc
+- r-sparcl
 - r-summarizedexperiment
 update_on:
-- regex: evaluomeR_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/evaluomeR
+- source: rpkgs
+  pkgname: evaluomeR
+  repo: bioc
+  md5: true
 - alias: r
