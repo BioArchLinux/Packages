@@ -7,7 +7,7 @@ pkgver=2.106
 pkgrel=1
 epoch=1
 pkgdesc='GUI/CommandLine Tool Box for biologistists to utilize NGS data. \
-	https://doi.org/10.1016/j.molp.2020.06.009'
+	https://doi.org/10.1016/j.molp.2023.09.010'
 arch=('x86_64')
 url='https://github.com/CJ-Chen/TBtools-II'
 license=('unknown')
