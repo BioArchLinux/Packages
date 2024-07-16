@@ -6,9 +6,11 @@ repo_depends:
 - r-deldir
 - r-polyclip
 - r-spatstat.data
+- r-spatstat.univar
 - r-spatstat.utils
 update_on:
-- regex: spatstat.geom_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=spatstat.geom
+- source: rpkgs
+  pkgname: spatstat.geom
+  repo: cran
+  md5: true
 - alias: r
