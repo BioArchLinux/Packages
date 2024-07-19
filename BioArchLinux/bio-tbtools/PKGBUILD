@@ -23,10 +23,8 @@ optdepends=('blast+: BLAST support'
             'trimal: large scale align support'
             'iqtree: maximum likelihood phylogenomic tree support'
             'kaks_calculator: kaks calculate support')
-source=("https://github.com/CJ-Chen/TBtools-II/releases/download/${pkgver}/TBtools_JRE1.6.jar"
-        "LICENSE")
-sha256sums=('62047368b209763ed91c31910217c4292ed603e2dfdbc23f5949bfbda8003195'
-            'ea019d305df02a42515d8fdd378158503fb49349e3c10aa94569e7f301f72c1f')
+source=("https://github.com/CJ-Chen/TBtools-II/releases/download/${pkgver}/TBtools_JRE1.6.jar")
+sha256sums=('62047368b209763ed91c31910217c4292ed603e2dfdbc23f5949bfbda8003195')
 
 prepare() {
     # generate /usr/bin file
@@ -36,7 +34,6 @@ prepare() {
 }
 
 package() {
-    install -Dm644 ${srcdir}/LICENSE "${pkgdir}/usr/share/licenses/${_pkgname}/LICENSE"
     install -Dm 755 ${srcdir}/${_pkgname} ${pkgdir}/usr/bin/${_pkgname}
     install -Dm 644 ${srcdir}/${_pkgname}.desktop ${pkgdir}/usr/share/applications/${_pkgname}.desktop
     install -Dm 755 ${srcdir}/TBtools*.jar ${pkgdir}/usr/share/${pkgname}/${_pkgname}.jar
