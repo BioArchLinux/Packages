@@ -15,7 +15,8 @@ optdepends=('iwidgets: gap5 prefinish'
             'xz: better gap5 compression'
             'libpng: gap5 Report Mutations')
 source=(http://downloads.sourceforge.net/staden/$_pkgname.tar.gz
-	gap4.desktop gap5.desktop pregap4.desktop spin.desktop trev.desktop staden.png)
+	gap4.desktop gap5.desktop pregap4.desktop spin.desktop trev.desktop staden.png
+	x_change.patch)
 options=('!emptydirs')
 sha256sums=('cd7ee17626c25bc845ebd3f6311b5a538815fb73a0dfef2393001bf579ac9649'
             '5ba8c8d03500703ece0fe89ea36c5cd583a83ff6052e57e6b069d63f9b473e73'
@@ -23,7 +24,13 @@ sha256sums=('cd7ee17626c25bc845ebd3f6311b5a538815fb73a0dfef2393001bf579ac9649'
             '8156dad5771659203245afe517286efb420292fc3dd0dc9e1b8ad98ae695cd93'
             'dae7ddfae3c060369107faf3d4d4d4414222f41d27d12148d26a7226775743fc'
             'f7ffa06fd9529cd6abfe9b9c7353263953e081bfe26bfa3f4c1b1bee9e30f1a8'
-            '820226dbc30063c92262397d0fa480a4e03efe4ae2df336a00b2b13c8d7e635d')
+            '820226dbc30063c92262397d0fa480a4e03efe4ae2df336a00b2b13c8d7e635d'
+            '8d97b2592cabb2e9eba3c5a61104efa41363664a88aa940509309912326fd3ba')
+
+prepare(){
+  cd $_pkgname
+  patch -p1 < $srcdir/x_change.patch
+}
 
 build() {
   cd $_pkgname

@@ -1,0 +1,22 @@
+diff --git a/stops/stops.c b/stops/stops.c
+index bc670fb..586698b 100644
+--- a/stops/stops.c
++++ b/stops/stops.c
+@@ -232,7 +232,7 @@ int *create_peaks(params *p, Read *r) {
+     int i;
+     int *peaks;
+ 
+-    if (!(peaks = (int *)xcalloc(r->NBases, sizeof(int))))
++    if (!(peaks = (int *)calloc(r->NBases, sizeof(int))))
+ 	return NULL;
+ 
+     for (i = 0; i < r->NBases; i++) {
+@@ -273,7 +273,7 @@ static int find_stops(Read *r, params *p) {
+     pos = scan_right(r->trace_name, p, peaks, r->base, pos,
+ 		     maxheight, r->NBases, 0);
+ 
+-    xfree(peaks);
++    free(peaks);
+ 
+     return pos;
+ }
