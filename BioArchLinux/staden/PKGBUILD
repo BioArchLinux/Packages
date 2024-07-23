@@ -4,7 +4,7 @@
 pkgname=staden
 pkgver=2.0.0b11
 _pkgname=$pkgname-$pkgver-2016-src
-pkgrel=8
+pkgrel=9
 _tklib=0.8
 pkgdesc="Tools for DNA sequence assembly (Gap4/5), editing and analysis (Spin)"
 arch=('i686' 'x86_64')
