@@ -4,6 +4,10 @@ pkgname=graphite-gtk-theme
 _reponame='Graphite-gtk-theme'
 pkgver=2024.07.08
 pkgrel=1
+pkgname=graphite-gtk-theme
+_reponame='Graphite-gtk-theme'
+pkgver=2024.07.08
+pkgrel=1
 pkgdesc='Graphite gtk theme'
 arch=("any")
 provides=("graphite-gtk-theme")
@@ -13,10 +17,10 @@ license=("GPL-2.0-only")
 depends=("gnome-themes-extra")
 optdepends=("gtk-engine-murrine")
 makedepends=("git" "sassc")
-_cmt=e2e8d0b51d3f4fc073d8f32ff4d9988d28176d0f
-source=("git+${url}.git#commit=$_cmt")
+source=("git+${url}.git")
 sha256sums=('SKIP')
 options=(!strip)
+dist="${pkgdir}/usr/share/themes"
 
 pkgver(){
     cd "${srcdir}/${_reponame}"
@@ -24,9 +28,9 @@ pkgver(){
 }
 
 package() {
-    dist="${pkgdir}/usr/share/themes"
     mkdir -p "${dist}"
     cd "${srcdir}/${_reponame}"
-    ./install.sh -t all -d "${dist}"
-    ./install.sh -t all -d "${dist}" -s compact
+    ./install.sh -t all -d "${dist}" -s standard -l
+    ./install.sh -t all -d "${dist}" -s compact -l
 }
+
