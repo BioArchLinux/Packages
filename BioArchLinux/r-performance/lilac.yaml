@@ -18,7 +18,7 @@ repo_makedepends:
 - r-estimatr
 - r-fixest
 - r-glmmtmb
-- r-httr
+- r-httr2
 - r-ics
 - r-icsoutlier
 - r-islr
