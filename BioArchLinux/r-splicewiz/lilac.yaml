@@ -47,7 +47,6 @@ repo_depends:
 - r-summarizedexperiment
 repo_makedepends:
 - r-rcppprogress
-- r-zlibbioc
 - r-rsubread
 - r-testthat
 update_on:
