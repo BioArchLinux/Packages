@@ -1,6 +1,6 @@
 post_install() {
 
-THEME_DIR=/usr/share/themes/Graphite-Dark-compact/gtk-4.0 
+THEME_DIR=/usr/share/themes/Graphite-Dark-compact 
 
 mkdir -p "${HOME}/.config/gtk-4.0"
 ln -sf "${THEME_DIR}/gtk-4.0/assets" "${HOME}/.config/gtk-4.0/assets"
