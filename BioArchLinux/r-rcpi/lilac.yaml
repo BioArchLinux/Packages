@@ -4,11 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biostrings
+- r-curl
 - r-doparallel
 - r-foreach
 - r-gosemsim
-- r-pwalign
-- r-rcurl
+- r-httr2
 - r-rjson
 - r-rlang
 update_on:
