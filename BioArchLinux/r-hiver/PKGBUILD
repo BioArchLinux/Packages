@@ -4,7 +4,7 @@ _pkgname=HiveR
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="2D and 3D Hive Plots for R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
