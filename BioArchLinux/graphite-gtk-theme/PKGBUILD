@@ -31,7 +31,6 @@ package() {
     dist="${pkgdir}/usr/share/themes"
     mkdir -p "${dist}"
     cd "${srcdir}/${_reponame}"
-    ./install.sh -t all -d "${dist}" -s standard -l
     ./install.sh -t all -d "${dist}" -s compact -l
 }
 
