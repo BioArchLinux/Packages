@@ -2,6 +2,7 @@
 
 pkgname=graphite-gtk-theme
 _reponame='Graphite-gtk-theme'
+epoch=2
 pkgver=2024.07.25
 pkgrel=1
 pkgname=graphite-gtk-theme
@@ -18,19 +19,14 @@ depends=("gnome-themes-extra")
 optdepends=("gtk-engine-murrine")
 makedepends=("git" "sassc" "gnome-shell")
 install=graphite-gtk-theme.install
-source=("git+${url}.git")
+source=("git+${url}.git#tag=${pkgver//./-}")
 sha256sums=('SKIP')
 options=(!strip)
-
-pkgver(){
-    cd "${srcdir}/${_reponame}"
-    printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
-}
 
 package() {
     dist="${pkgdir}/usr/share/themes"
     mkdir -p "${dist}"
     cd "${srcdir}/${_reponame}"
-    ./install.sh -t all -d "${dist}" -s compact -l
+    ./install.sh -t all -d "${dist}"
 }
 
