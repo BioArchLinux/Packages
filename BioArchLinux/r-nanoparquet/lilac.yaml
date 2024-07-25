@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_makedepends:
+- r-arrow
+- r-bit64
+- r-duckdb
+- r-hms
+- r-mockery
+- r-spelling
+- r-testthat
+update_on:
+- source: rpkgs
+  pkgname: nanoparquet
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: snappy
+  filename: usr/lib/libsnappy\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: thrift
+  filename: usr/lib/libthrift-([\d.]+)\.so
+  repo: extra
+- source: alpm
+  alpm: zstd
+  repo: core
+  provided: libzstd.so
+  strip_release: true
