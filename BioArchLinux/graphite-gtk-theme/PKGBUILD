@@ -17,6 +17,7 @@ license=("GPL-2.0-only")
 depends=("gnome-themes-extra")
 optdepends=("gtk-engine-murrine")
 makedepends=("git" "sassc" "gnome-shell")
+install=graphite-gtk-theme.install
 source=("git+${url}.git")
 sha256sums=('SKIP')
 options=(!strip)

@@ -1,0 +1,19 @@
+post_install() {
+
+THEME_DIR=/usr/share/themes/Graphite-Dark-compact/gtk-4.0 "$HOME"
+
+mkdir -p "${HOME}/.config/gtk-4.0"
+ln -sf "${THEME_DIR}/gtk-4.0/assets" "${HOME}/.config/gtk-4.0/assets"
+ln -sf "${THEME_DIR}/gtk-4.0/gtk.css" "${HOME}/.config/gtk-4.0/gtk.css"
+ln -sf "${THEME_DIR}/gtk-4.0/gtk-dark.css" "${HOME}/.config/gtk-4.0/gtk-dark.css"
+
+echo ""
+echo "The default is Graphite-Dark-compat theme, you can check it to others by modify the following commands"
+echo ""
+echo "mkdir -p '${HOME}/.config/gtk-4.0'"
+echo "ln -sf '${THEME_DIR}/gtk-4.0/assets' '${HOME}/.config/gtk-4.0/assets'"
+echo "ln -sf '${THEME_DIR}/gtk-4.0/gtk.css' '${HOME}/.config/gtk-4.0/gtk.css'"
+echo "ln -sf '${THEME_DIR}/gtk-4.0/gtk-dark.css' '${HOME}/.config/gtk-4.0/gtk-dark.css'"
+echo ""
+
+}
