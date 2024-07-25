@@ -8,8 +8,10 @@ repo_depends:
 - r-png
 - r-rcolorbrewer
 - r-rgl
+- r-xtable
 update_on:
-- regex: HiveR_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=HiveR
+- source: rpkgs
+  pkgname: HiveR
+  repo: cran
+  md5: true
 - alias: r
