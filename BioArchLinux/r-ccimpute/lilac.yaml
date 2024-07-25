@@ -4,9 +4,11 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocparallel
-- r-matrixstats
+- r-irlba
 - r-rcpp
-- r-simlr
+- r-singlecellexperiment
+- r-sparsematrixstats
+- r-summarizedexperiment
 repo_makedepends:
 - r-rcppeigen
 - r-testthat
@@ -16,5 +18,7 @@ update_on:
   repo: bioc
   md5: true
 - alias: r
-- source: manual
-  manual: 1
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
