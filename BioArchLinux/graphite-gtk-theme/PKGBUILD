@@ -2,11 +2,11 @@
 
 pkgname=graphite-gtk-theme
 _reponame='Graphite-gtk-theme'
-pkgver=2024.07.14
-pkgrel=2
+pkgver=2024.07.25
+pkgrel=1
 pkgname=graphite-gtk-theme
 _reponame='Graphite-gtk-theme'
-pkgver=2024.07.14
+pkgver=2024.07.25
 pkgrel=1
 pkgdesc='Graphite gtk theme'
 arch=("any")
