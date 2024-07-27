@@ -1,7 +1,7 @@
 # Maintainer: flying-sheep <flying-sheep@web.de>
 # Contributor: bipin kumar <kbipinkumar@pm.me>
 pkgname=kallisto
-pkgver=0.50.1
+pkgver=0.51.0
 pkgrel=1
 pkgdesc='Quantify abundances of transcripts from RNA-Seq data. doi:10.1038/nbt.3519'
 url="http://pachterlab.github.io/$pkgname/"
@@ -11,7 +11,7 @@ depends=('hdf5' 'zlib' 'glibc' 'gcc-libs')
 makedepends=('cmake' 'git')
 optdepends=('bustools')
 source=($pkgname-$pkgver.tar.gz::"https://github.com/pachterlab/$pkgname/archive/v$pkgver.tar.gz")
-sha256sums=('030752bab3b0e33cd3f23f6d8feddd74194e5513532ffbf23519e84db2a86d34')
+sha256sums=('efeb0191c1a6a0d6de69111fb66f4bda51ff31fb40c513280f072bd44556f80d')
 
 prepare() {
 	cd "$srcdir/$pkgname-$pkgver"
