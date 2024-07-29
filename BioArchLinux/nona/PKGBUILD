@@ -22,7 +22,7 @@ package() {
 	# install them
 	install -Dm755 $srcdir/piwe.doc $pkgdir/usr/share/$pkgname/piwe.doc
 	install -Dm755 $srcdir/$pkgname $pkgdir/usr/share/$pkgname/$pkgname
-	install -Dm755 $srcdir/shell-$pkgname $pkgdir/usr/bin/$pkgname 
+	install -Dm755 $srcdir/shell-$pkgname $pkgdir/usr/bin/$pkgname-linux 
 	# link
 	ln -s /usr/share/$pkgname/piwe.doc $pkgdir/usr/share/doc/$pkgname/piwe.doc
 }
