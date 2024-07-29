@@ -3,10 +3,10 @@
 # Contributor: Pranav K Anupam <pranavanupam@yahoo.com>
 
 _pkgname=uuid
-_pkgver=1.2-0
+_pkgver=1.2-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Tools for Generating and Handling of UUIDs"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -17,9 +17,9 @@ depends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-uuid.patch")
-md5sums=('e2888f2648528022ab731b3683bb7ea6'
+md5sums=('33baac9b2bfbc4406d4d806875a91747'
          'fc5b61316f82d529e10881188302d532')
-b2sums=('b46dad29c4d3e2c6e593eecaf330ff2dde255ed26d47d387a455d2032eed47e47249472d65190ff7d511ee2389a6cf94ddd728cf1be737f9abcfb189e66615cf'
+b2sums=('3ca34558bdda7846cb44b49468aa902132655e4ea11a0a414aaf3f7406acd91cf8de4fda2680153f9631e537f1e0c27406e7dfefe232397114cc044571ebe29b'
         '7c0911a64fed42baec57ec5fccf8861c735e31da6b94b80f2f2c2b14e7fdd4843c6aad5c4e6b85dd1008bd83f523a47869a70ffdfa5259719f9d8277890d6e52')
 
 prepare() {
