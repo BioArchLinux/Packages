@@ -7,7 +7,6 @@ repo_depends:
 - r-cli
 - r-colorspace
 - r-memoise
-- r-phangorn
 - r-rdpack
 - r-shiny
 - r-shinyjs
