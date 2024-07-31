@@ -4,7 +4,7 @@ _pkgname=mlr3
 _pkgver=0.20.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Machine Learning in R - Next Generation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
