@@ -9,7 +9,7 @@ _pkgname=withr
 _pkgver=3.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Run Code 'With' Temporarily Modified Global State"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
