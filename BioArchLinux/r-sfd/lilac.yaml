@@ -4,26 +4,13 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
-- r-dicedesign
-- r-dplyr
-- r-glue
-- r-hardhat
-- r-lifecycle
-- r-pillar
-- r-purrr
 - r-rlang
-- r-scales
-- r-sfd
 - r-tibble
-- r-vctrs
-- r-withr
 repo_makedepends:
-- r-kernlab
 - r-testthat
-- r-xml2
 update_on:
 - source: rpkgs
-  pkgname: dials
+  pkgname: sfd
   repo: cran
   md5: true
 - alias: r
