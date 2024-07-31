@@ -17,7 +17,6 @@ repo_depends:
 - r-paradox
 - r-parallelly
 - r-r6
-- r-rhpcblasctl
 - r-uuid
 update_on:
 - source: rpkgs
