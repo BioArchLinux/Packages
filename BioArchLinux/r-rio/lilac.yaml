@@ -7,7 +7,6 @@ repo_depends:
 - r-data.table
 - r-haven
 - r-lifecycle
-- r-nanoparquet
 - r-r.utils
 - r-readr
 - r-readxl
@@ -17,6 +16,7 @@ repo_makedepends:
 - r-arrow
 - r-fst
 - r-hexview
+- r-nanoparquet
 - r-pzfx
 - r-qs
 - r-readods
