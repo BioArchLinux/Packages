@@ -10,5 +10,4 @@ post_build_script: |
 update_on:
   - source: github
     github: AtlasOfLivingAustralia/open-delta
-    use_max_tag: true
-    prefix: 'v'
+    use_lastest_tag: true
