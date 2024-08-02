@@ -35,7 +35,7 @@ makedepends=(
   'gradle<9'
   gtk2
   gtk3
-  java-environment-openjdk=$((${pkgver%%.*}-1))
+  "java-environment-openjdk=$((${pkgver%%.*}-1))"
   libgl
   libx11
   libxtst
@@ -82,6 +82,13 @@ build() {
   CXXFLAGS+=" ${_FIXWERROR}"
   export CFLAGS
   export CXXFLAGS
+
+  # Suppress errors with lld >= 17 due to undefined symbols.
+  _FIXLDERROR="-Wl,--undefined-version"
+  LDFLAGS+=" ${_FIXLDERROR}"
+  export LDFLAGS
+
+  cd "${_jfxdir}"
 
   # Build with openjdk-(current version minus 1)
   export PATH="/usr/lib/jvm/java-$((${pkgver%%.*}-1))-openjdk/bin/:$PATH"
