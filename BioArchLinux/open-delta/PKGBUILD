@@ -8,13 +8,13 @@ epoch=1
 pkgdesc="DEscription Language of TAxonomy"
 arch=('x86_64')
 url="https://github.com/AtlasOfLivingAustralia/open-delta"
-license=('unknown')
+license=('MPL-1.1')
 source=("$pkgname-$pkgver::${url}/archive/refs/tags/v${pkgver//_/-}.tar.gz")
 sha256sums=('794915ca4beb42298ff5d42031b015a6ee2cdb8746a697a24a552abbe5103e0c')
-depends=( 'java-runtime')
+depends=( 'java-runtime=8')
 makedepends=('java-environment=8' 'maven' 'gendesk' 'icedtea-web')
 build(){
-  cd $srcdir/$pkgname-v${pkgver//_/-}
+  cd $srcdir/$pkgname-${pkgver//_/-}
   mvn package -Dmaven.test.skip=true
   gendesk --pkgname "$pkgname" --pkgdesc "$pkgdesc" --exec="$pkgname" --icon="/usr/share/$pkgname/icons/Delta_blue.png"
   echo "java -jar /usr/share/$pkgname/delta-editor-${pkgver: 0: 5}-SNAPSHOT.jar" > $pkgname
