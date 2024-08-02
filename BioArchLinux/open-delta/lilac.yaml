@@ -10,4 +10,4 @@ post_build_script: |
 update_on:
   - source: github
     github: AtlasOfLivingAustralia/open-delta
-    use_lastest_tag: true
+    use_lastest_release: true
