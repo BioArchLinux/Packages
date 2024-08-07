@@ -7,9 +7,10 @@ repo_depends:
 - r-fishmod
 - r-mvabund
 - r-nloptr
-- r-rcppeigen
 - r-statmod
 - r-tmb
+repo_makedepends:
+- r-rcppeigen
 update_on:
 - source: rpkgs
   pkgname: gllvm
