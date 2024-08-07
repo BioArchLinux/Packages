@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-alabama
+- r-fishmod
+- r-mvabund
+- r-nloptr
+- r-rcppeigen
+- r-statmod
+- r-tmb
+update_on:
+- source: rpkgs
+  pkgname: gllvm
+  repo: cran
+  md5: true
+- alias: r
