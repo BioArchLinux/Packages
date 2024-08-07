@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-r.oo
 - r-r.methodss3
+- r-r.oo
 update_on:
 - source: rpkgs
   pkgname: rtf

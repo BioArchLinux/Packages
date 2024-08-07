@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-psych
-- r-foreign
 - r-rtf
 update_on:
 - source: rpkgs
