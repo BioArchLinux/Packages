@@ -1,0 +1,9 @@
+post_install() {
+
+echo ""
+echo "You should write config file using type following command"
+echo ""
+echo "echo \"bspm::enable()\" | sudo tee -a /usr/lib/R/etc/Rprofile.site"
+echo ""
+
+}
