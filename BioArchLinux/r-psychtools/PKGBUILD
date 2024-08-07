@@ -4,7 +4,7 @@ _pkgname=psychTools
 _pkgver=2.4.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Tools to Accompany the 'psych' Package for Psychological Research"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
