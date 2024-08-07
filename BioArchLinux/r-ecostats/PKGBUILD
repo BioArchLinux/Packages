@@ -1,0 +1,68 @@
+# Maintainer: None <None>
+
+_pkgname=ecostats
+_pkgver=1.2.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Code and Data Accompanying the Eco-Stats Text (Warton 2022)'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('LGPL')
+depends=(
+  r
+  r-ecocopula
+  r-get
+  r-mvabund
+  r-mvtnorm
+)
+optdepends=(
+  r-ade4
+  r-caper
+  r-car
+  r-corrplot
+  r-covr
+  r-daag
+  r-dharma
+  r-dplyr
+  r-gclus
+  r-ggally
+  r-ggplot2
+  r-ggthemes
+  r-gllvm
+  r-glmmtmb
+  r-glmnet
+  r-gparotation
+  r-grplasso
+  r-knitr
+  r-lattice
+  r-leaps
+  r-lme4
+  r-mcmcglmm
+  r-multcomp
+  r-nlme
+  r-ordinal
+  r-permute
+  r-pgirmess
+  r-phylobase
+  r-phylosignal
+  r-psych
+  r-reshape2
+  r-rmarkdown
+  r-smatr
+  r-testthat
+  r-vegan
+  r-vgam
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('a')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

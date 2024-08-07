@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-v8
+update_on:
+- regex: juicyjuice_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=juicyjuice

@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-betareg
+- r-doparallel
+- r-foreach
+- r-glasso
+- r-glm2
+- r-igraph
+- r-mvabund
+- r-ordinal
+- r-plyr
+- r-sna
+- r-tweedie
+update_on:
+- regex: ecoCopula_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ecoCopula

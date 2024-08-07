@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ecocopula
+- r-get
+- r-mvabund
+- r-mvtnorm
+update_on:
+- regex: ecostats_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ecostats

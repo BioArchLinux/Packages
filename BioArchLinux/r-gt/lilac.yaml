@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-base64enc
+- r-bigd
+- r-bitops
+- r-cli
+- r-commonmark
+- r-dplyr
+- r-fs
+- r-glue
+- r-htmltools
+- r-htmlwidgets
+- r-juicyjuice
+- r-magrittr
+- r-markdown
+- r-reactable
+- r-rlang
+- r-sass
+- r-scales
+- r-tidyselect
+- r-vctrs
+- r-xml2
+update_on:
+- regex: gt_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=gt
