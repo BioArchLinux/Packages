@@ -4,7 +4,7 @@ _pkgname=ecostats
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Code and Data Accompanying the Eco-Stats Text (Warton 2022)"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
