@@ -1,16 +1,15 @@
-# Maintainer: None <None>
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=gt
 _pkgver=0.11.0
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Easily Create Presentation-Ready Display Tables'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
+pkgdesc="Easily Create Presentation-Ready Display Tables"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r
   r-base64enc
   r-bigd
   r-bitops
@@ -36,7 +35,6 @@ optdepends=(
   r-digest
   r-fontawesome
   r-ggplot2
-  r-grid
   r-gtable
   r-katex
   r-knitr
@@ -54,15 +52,18 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+md5sums=('6f3b6950a4aaeae6a91fa6323b8354ca')
+b2sums=('7d68aa541ee73b0c8205807c811b462d3c90d2655a4d6e654dc3888cf076ee92c68ea1fedacb30495e1eab558e6b50d61ef3f342dc9cdd779002cc08e1aecde3')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
-  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
 }
-# vim:set ts=2 sw=2 et:

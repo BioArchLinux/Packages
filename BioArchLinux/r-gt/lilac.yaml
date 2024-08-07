@@ -24,6 +24,8 @@ repo_depends:
 - r-vctrs
 - r-xml2
 update_on:
-- regex: gt_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=gt
+- source: rpkgs
+  pkgname: gt
+  repo: cran
+  md5: true
+- alias: r

@@ -8,6 +8,8 @@ repo_depends:
 - r-mvabund
 - r-mvtnorm
 update_on:
-- regex: ecostats_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ecostats
+- source: rpkgs
+  pkgname: ecostats
+  repo: cran
+  md5: true
+- alias: r

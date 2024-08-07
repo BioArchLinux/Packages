@@ -3,6 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 update_on:
-- regex: bigD_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bigD
+- source: rpkgs
+  pkgname: bigD
+  repo: cran
+  md5: true
+- alias: r

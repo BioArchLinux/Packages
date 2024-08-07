@@ -7,6 +7,8 @@ repo_depends:
 - r-gridextra
 - r-viridislite
 update_on:
-- regex: GET_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=GET
+- source: rpkgs
+  pkgname: GET
+  repo: cran
+  md5: true
+- alias: r

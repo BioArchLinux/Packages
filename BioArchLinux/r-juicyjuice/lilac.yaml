@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-v8
 update_on:
-- regex: juicyjuice_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=juicyjuice
+- source: rpkgs
+  pkgname: juicyjuice
+  repo: cran
+  md5: true
+- alias: r

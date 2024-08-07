@@ -1,16 +1,15 @@
-# Maintainer: None <None>
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ecostats
 _pkgver=1.2.1
 pkgname=r-${_pkgname,,}
-pkgver=${_pkgver//[:-]/.}
+pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Code and Data Accompanying the Eco-Stats Text (Warton 2022)'
-arch=('any')
-url="https://cran.r-project.org/package=${_pkgname}"
-license=('LGPL')
+pkgdesc="Code and Data Accompanying the Eco-Stats Text (Warton 2022)"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LGPL-2.1-or-later')
 depends=(
-  r
   r-ecocopula
   r-get
   r-mvabund
@@ -35,12 +34,10 @@ optdepends=(
   r-gparotation
   r-grplasso
   r-knitr
-  r-lattice
   r-leaps
   r-lme4
   r-mcmcglmm
   r-multcomp
-  r-nlme
   r-ordinal
   r-permute
   r-pgirmess
@@ -55,14 +52,15 @@ optdepends=(
   r-vgam
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+md5sums=('89bd47d789ac907fe69fde7ccf302514')
+b2sums=('f9554835788c9ede1650727e5d67ae4103ec87d2667ad58c5c855b20240d42a5fc704210b861f3d0d70f3eab523b9d3409763f669bf060647123a86f6f78a344')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
