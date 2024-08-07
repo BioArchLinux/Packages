@@ -11,3 +11,5 @@ update_on:
   md5: true
 - alias: r
 - alias: python
+- source: manual
+  manual: 1
