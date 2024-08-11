@@ -4,7 +4,6 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
-- r-biocparallel
 - r-biostrings
 - r-genomicfeatures
 - r-genomicranges
