@@ -12,10 +12,6 @@ license=('GPL-3.0-only')
 depends=(
   r
 )
-optdepends=(
-  r-graphics
-  r-stats
-)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9716c4c61a593a257824b4096ec9c2f9')
 sha256sums=('137c114ed62df7bc4909705d3ad8f91c5cbc7723d2dfc9932a21f533c91af7ba')
