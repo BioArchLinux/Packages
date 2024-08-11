@@ -35,6 +35,7 @@ repo_depends:
 - r-rcpp
 - r-rhandsontable
 - r-rhdf5
+- r-rsqlite
 - r-rtracklayer
 - r-rvest
 - r-s4vectors
