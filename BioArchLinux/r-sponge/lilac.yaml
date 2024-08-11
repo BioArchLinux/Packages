@@ -22,7 +22,6 @@ repo_depends:
 - r-iterators
 - r-logging
 - r-metbrewer
-- r-mirbaseconverter
 - r-ppcor
 - r-randomforest
 - r-rlang
