@@ -4,7 +4,7 @@ _pkgname=MindOnStats
 _pkgver=0.11
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Data sets included in Utts and Heckard's Mind on Statistics"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
