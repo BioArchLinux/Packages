@@ -13,9 +13,11 @@ repo_depends:
 - r-rslurm
 - r-rtracklayer
 - r-sjmisc
+- r-txdbmaker
 - r-tximport
 update_on:
-- regex: BgeeCall_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/BgeeCall
+- source: rpkgs
+  pkgname: BgeeCall
+  repo: bioc
+  md5: true
 - alias: r
