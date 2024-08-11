@@ -37,6 +37,7 @@ repo_depends:
 - r-vctrs
 - r-venndiagram
 repo_makedepends:
+- r-apeglm
 - r-deseq2
 - r-enrichedheatmap
 - r-harmonicmeanp
