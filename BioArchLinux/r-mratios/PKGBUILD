@@ -10,7 +10,6 @@ arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-2.0-only')
 depends=(
-  r
   r-multcomp
   r-mvtnorm
   r-survpresmooth
