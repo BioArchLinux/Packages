@@ -10,16 +10,12 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-2.0-or-later')
 depends=(
-  r
   r-glmnet
   r-grpreg
   r-leaps
   r-pls
 )
-optdepends=(
-  r-caret
-  r-mass
-)
+
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('914b9c33e4b2a76b778d53935565ba4f')
 b2sums=('64b65bf1c077bed4f87c8062d2a57c1f87fd276bc97d1472a30ba677f7ffd88615dc20de2210c5862b65b49829c1e56747019a85de3a139b1f355a1b2df9e55d')
