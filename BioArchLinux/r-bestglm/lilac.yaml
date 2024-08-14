@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+repo_depends:
+- r-glmnet
+- r-grpreg
+- r-leaps
+- r-pls
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+update_on:
+- source: rpkgs
+  pkgname: bestglm
+  repo: cran
+  md5: true
+- alias: r

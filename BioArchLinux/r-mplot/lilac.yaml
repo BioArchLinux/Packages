@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+repo_depends:
+- r-bestglm
+- r-doparallel
+- r-dorng
+- r-dplyr
+- r-foreach
+- r-ggplot2
+- r-glmnet
+- r-googlevis
+- r-leaps
+- r-magrittr
+- r-plyr
+- r-reshape2
+- r-scales
+- r-shiny
+- r-shinydashboard
+- r-tidyr
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+update_on:
+- source: rpkgs
+  pkgname: mplot
+  repo: cran
+  md5: true
+- alias: r
