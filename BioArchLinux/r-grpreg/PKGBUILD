@@ -15,8 +15,6 @@ depends=(
 optdepends=(
   r-knitr
   r-rmarkdown
-  r-splines
-  r-survival
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
