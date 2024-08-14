@@ -31,7 +31,6 @@ optdepends=(
   r-dt
   r-glmulti
   r-knitr
-  r-mass
   r-mvoutlier
   r-rmarkdown
 )
