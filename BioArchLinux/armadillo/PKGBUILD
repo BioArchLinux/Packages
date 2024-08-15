@@ -4,7 +4,7 @@
 pkgname=armadillo
 sfname=arma
 pkgver=14.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ library for linear algebra & scientific computing"
 arch=('x86_64')
 url="http://${sfname}.sourceforge.net/"
