@@ -16,9 +16,9 @@ pkgname=(
   java-openjfx-doc
   java-openjfx-src
 )
-pkgver=22.0.1.u7
-pkgrel=1
-pkgdesc="Java OpenJFX client application platform (open-source implementation of JavaFX) - latest version"
+pkgver=22.0.2.u4
+pkgrel=0
+pkgdesc="Java OpenJFX client application platform (open-source implementation of JavaFX)"
 arch=(x86_64 x86_64_v3)
 url=https://wiki.openjdk.java.net/display/OpenJFX/Main
 license=('GPL-2.0-only WITH Classpath-exception-2.0')
@@ -46,7 +46,7 @@ makedepends=(
   qt5-base
   ruby
   unzip
-  webkit2gtk
+  #webkit2gtk
   zip
 )
 options=(!lto)
@@ -70,13 +70,12 @@ prepare() {
   #gradle clean
 
   ln -sf ../gradle.properties .
-  patch -Np1 -i ../java-openjfx-flags.patch
+  patch -Np1 --follow-symlinks -i ../java-openjfx-flags.patch
   sed 's|, "-Werror"||g' -i buildSrc/linux.gradle
 }
 
 build() {
-  cd $_jfxdir
-
+  # Work around build failure due to warnings treated as error.
   _FIXWERROR="-Wno-error=incompatible-pointer-types"
   CFLAGS+=" ${_FIXWERROR}"
   CXXFLAGS+=" ${_FIXWERROR}"
@@ -104,25 +103,35 @@ build() {
 
 package_java-openjfx() {
   depends=(
-    java-runtime-openjdk=${pkgver%%.*}
-    libgl
-    libx11
-    libxtst
+    "freetype2"
+    "glib2"
+    "glibc"
+    "java-runtime-openjdk=${pkgver%%.*}"
+    "libgl"
+    "libx11"
+    "libxtst"
   )
   optdepends=(
-    'ffmpeg4.4: Media support',
-    'gtk2: GTK2 support',
-    'gtk3: GTK3 support',
-    'webkit2gtk: Web support'
+    'ffmpeg4.4: Media support'
+    'gtk2: GTK2 support'
+    'gtk3: GTK3 support'
+    #'webkit2gtk: Web support'
+    'java-openjfx-doc: For documentation of this software.'
+    'java-openjfx-src: For the source code of this software.'
   )
-  provides=(java-openjfx=${pkgver%%.*})
+  provides=(
+    "java-openjfx=${pkgver%%.*}"
+    "java-openjfx=${pkgver}"
+  )
 
-  cd $_jfxdir
+  cd "${_jfxdir}"
 
-  install -dm 755  "${pkgdir}"/usr/{lib/jvm/java-${pkgver%%.*}-openjdk,share/licenses}
-  cp -dr --no-preserve=ownership build/sdk/lib "${pkgdir}"/usr/lib/jvm/java-${pkgver%%.*}-openjdk/
-  cp -dr --no-preserve=ownership build/jmods "${pkgdir}"/usr/lib/jvm/java-${pkgver%%.*}-openjdk/
-  cp -dr --no-preserve=ownership build/sdk/legal "${pkgdir}"/usr/share/licenses/java-openjfx
+  install -dvm 755  "${pkgdir}"/usr/{lib/jvm/java-${pkgver%%.*}-openjdk,share/licenses}
+  cp -dvr --no-preserve=ownership build/sdk/lib "${pkgdir}/usr/lib/jvm/java-${pkgver%%.*}-openjdk"/
+  cp -dvr --no-preserve=ownership build/jmods "${pkgdir}/usr/lib/jvm/java-${pkgver%%.*}-openjdk"/
+
+  ln -sv java-openjfx "${pkgdir}/usr/share/licenses/${pkgname}"
+
 }
 
 package_java-openjfx-doc() {
