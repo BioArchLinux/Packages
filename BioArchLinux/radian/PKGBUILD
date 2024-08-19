@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 pkgname=radian
-pkgver=0.6.12
-pkgrel=2
+pkgver=0.6.13
+pkgrel=1
 pkgdesc="A 21 century R console"
 url="https://github.com/randy3k/radian"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ makedepends=('python-setuptools' 'python-pip' 'python-wheel')
 checkdepends=('python-pytest' 'python-pyte' 'python-pexpect' 'python-ptyprocess')
 replaces=('rtichoke')
 source=($pkgname-$pkgver.tar.gz::https://github.com/randy3k/radian/archive/v$pkgver.tar.gz)
-sha256sums=('811e87f4ce1d799699e4fbaa48187a3b704bb2a5bf037e5b349d8e23646adec0')
+sha256sums=('869173a954e085e2a829e31fe30f23d41910df33c7e49ae548c27d1f1c572ae3')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
