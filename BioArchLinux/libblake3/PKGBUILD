@@ -2,7 +2,7 @@
 # Contributor: rpkak <rpkak@users.noreply.github.com>
 
 pkgname=libblake3
-pkgver=1.5.3
+pkgver=1.5.4
 pkgrel=1
 pkgdesc="the C implementation of the BLAKE3 cryptographic hash function"
 arch=(x86_64)
@@ -15,7 +15,7 @@ makedepends=(
   cmake
 )
 source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
-sha256sums=('ec9114480857334858e73b727199c573bfdbed6138a83be573f076d37e671fc1')
+sha256sums=('ddd24f26a31d23373e63d9be2e723263ac46c8b6d49902ab08024b573fd2a416')
 
 build() {
   cmake -B build -S "BLAKE3-$pkgver/c" \
