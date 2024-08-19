@@ -7,8 +7,13 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
+repo_depends:
+  - blast+
+  - bowtie2
+  - spades 
 update_on:
   - source: github
     github: Kinggerm/GetOrganelle
     use_max_tag: true
     prefix: 'v'
+  - alias: python
