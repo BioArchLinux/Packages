@@ -1,14 +1,16 @@
 build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
 repo_depends:
 - r-multcomp
 - r-mvtnorm
 - r-survpresmooth
-maintainers:
-- github: starsareintherose
-  email: kuoi@bioarchlinux.org
 update_on:
 - source: rpkgs
   pkgname: mratios
   repo: cran
   md5: true
 - alias: r
+- source: manual
+  manual: 1
