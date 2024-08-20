@@ -4,7 +4,7 @@ _pkgname=bestglm
 _pkgver=0.37.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Best Subset GLM and Regression Utilities"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
