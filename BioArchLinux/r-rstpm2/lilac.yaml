@@ -4,13 +4,13 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-bbmle
-- r-desolve
 - r-fastghquad
 - r-mvtnorm
 - r-rcpp
 repo_makedepends:
 - r-bh
 - r-rcpparmadillo
+- r-desolve
 - r-testthat
 update_on:
 - source: rpkgs
