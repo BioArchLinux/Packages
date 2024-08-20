@@ -4,7 +4,7 @@ _pkgname=rstpm2
 _pkgver=1.6.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Smooth Survival Models, Including Generalized Survival Models"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
