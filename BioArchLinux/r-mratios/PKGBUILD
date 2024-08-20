@@ -4,7 +4,7 @@ _pkgname=mratios
 _pkgver=1.4.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Ratios of Coefficients in the General Linear Model"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
