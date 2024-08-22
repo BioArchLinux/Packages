@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.0.2
+_pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -42,6 +42,8 @@ optdepends=(
   r-jose
   r-jsonlite
   r-knitr
+  r-later
+  r-promises
   r-rmarkdown
   r-testthat
   r-tibble
@@ -49,8 +51,8 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f4751d2a3e020d04d5561b88d6ab4f99')
-b2sums=('70be4c63525c2ebb159aaf057ae54a650bfbedeb269cf0af550c39c9216a0184c11ede076b56d9918d661d785b5603ab1d003ca48dd5be39a180041bfdf83d6b')
+md5sums=('1b780986d5dcad82ad374b3786a28229')
+b2sums=('708e81843e25ca5cd30911853f5128e6cef1d4200a619a5f5f66992340b0422e2472b07cab99c6b4562dc3ea150616e7765d2a427779b97a3bd959934c76804e')
 
 build() {
   mkdir build
