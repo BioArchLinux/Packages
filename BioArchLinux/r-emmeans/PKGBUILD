@@ -4,7 +4,7 @@ _pkgname=emmeans
 _pkgver=1.10.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Estimated Marginal Means, aka Least-Squares Means"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
