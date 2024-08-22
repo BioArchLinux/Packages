@@ -1,15 +1,16 @@
 diff --git a/RcppParallel/R/tbb.R b/RcppParallel/R/tbb.R
-index 49b4259..2eeee0e 100644
+index 4c8fc14..ccb9db1 100644
 --- a/RcppParallel/R/tbb.R
 +++ b/RcppParallel/R/tbb.R
-@@ -81,22 +81,13 @@ tbbCxxFlags <- function() {
+@@ -81,23 +81,14 @@ tbbCxxFlags <- function() {
  tbbLdFlags <- function() {
     
     # shortcut if TBB_LIB defined
 -   tbbLib <- Sys.getenv("TBB_LINK_LIB", Sys.getenv("TBB_LIB", unset = TBB_LIB))
 +   tbbLib <- Sys.getenv("TBB_LINK_LIB", Sys.getenv("TBB_LIB", unset = ""))
     if (nzchar(tbbLib)) {
-       fmt <- "-L%1$s -Wl,-rpath,%1$s -ltbb -ltbbmalloc"
+       fmt <- if (is_windows()) "-L%1$s -ltbb -ltbbmalloc"
+              else "-L%1$s -Wl,-rpath,%1$s -ltbb -ltbbmalloc"
        return(sprintf(fmt, asBuildPath(tbbLib)))
     }
     
@@ -28,19 +29,19 @@ index 49b4259..2eeee0e 100644
  }
  
 diff --git a/RcppParallel/src/Makevars.in b/RcppParallel/src/Makevars.in
-index 5740c20..96f3f3b 100644
+index c317123..8bfc953 100644
 --- a/RcppParallel/src/Makevars.in
 +++ b/RcppParallel/src/Makevars.in
-@@ -13,7 +13,7 @@ endif
- 
- # If TBB_LIB is defined, link to that explicitly.
- ifdef TBB_LIB
--	PKG_LIBS = -Wl,-L"$(TBB_LIB)" -Wl,-rpath,"$(TBB_LIB)" -ltbb -ltbbmalloc
-+	PKG_LIBS = -ltbb -ltbbmalloc
+@@ -16,7 +16,7 @@ ifdef TBB_LIB
+ 	ifeq ($(OS), Windows_NT)
+ 		PKG_LIBS = -Wl,-L"$(TBB_LIB)" -ltbb -ltbbmalloc
+ 	else
+-		PKG_LIBS = -Wl,-L"$(TBB_LIB)" -Wl,-rpath,"$(TBB_LIB)" -ltbb -ltbbmalloc
++		PKG_LIBS = -ltbb -ltbbmalloc
+ 	endif
  endif
  
- ifeq ($(OS), Windows_NT)
-@@ -147,10 +147,6 @@ ifdef TBB_LIB
+@@ -151,10 +151,6 @@ ifdef TBB_LIB
  	@echo "(tbb) Using system (Intel / OneAPI) TBB library."
  	@echo "(tbb) TBB_LIB = $(TBB_LIB)"
  	@echo "(tbb) TBB_INC = $(TBB_INC)"
