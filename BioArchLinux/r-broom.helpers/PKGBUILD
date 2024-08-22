@@ -4,7 +4,7 @@ _pkgname=broom.helpers
 _pkgver=1.16.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Helpers for Model Coefficients Tibbles"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
