@@ -1,12 +1,13 @@
 build_prefix: extra-x86_64
 maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
+- github: sukanka
+  email: su975853527@gmail.com
 repo_depends:
-  - r-latticeextra
-  - r-leaps
+- r-ggplot2
+- r-leaps
 update_on:
-  - regex: cNORM_([\d._-]+).tar.gz
-    source: regex
-    url: https://cran.r-project.org/package=cNORM
-  - alias: r
+- source: rpkgs
+  pkgname: cNORM
+  repo: cran
+  md5: true
+- alias: r
