@@ -4,7 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-dbi
+- r-digest
 - r-go.db
+- r-httr2
 - r-rlang
 - r-yulab.utils
 repo_makedepends:
