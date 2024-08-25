@@ -12,5 +12,5 @@ post_build_script: |
 update_on:
   - source: github
     github: MikkelSchubert/adapterremoval
-    use_max_tag: true
-    include_regex: v(\d+.\d+.\d+)
+    use_latest_release: true
+    prefix: 'v'
