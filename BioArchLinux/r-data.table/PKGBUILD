@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=data.table
-_pkgver=1.15.4
+_pkgver=1.16.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Extension of \`data.frame\`"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -24,8 +24,8 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c3826bb214e777df145c0570cf597847')
-b2sums=('3a4372d548711d6b00a9204e97848c413505620775771317d62e6b52ec449bd8331c9c565a3e19c967473f999f053bae0d05aacc3696d104c7e25bfffc70c03f')
+md5sums=('555dc26a0fee9baeb6d927b74763e7fb')
+b2sums=('26e258f828c86cf54b24c21a26a8e4e86a23fb5381fca92540133ada9568a9fc49a406559039968269b45f1240e89284a1320d6789d52697057d6bb14d1a4908')
 
 build() {
   mkdir build
