@@ -1,16 +1,18 @@
 # Maintainer: Ilya Elenskiy 
 
 pkgname=paup
-pkgver=4a169
-_execname=paup${pkgver//.0/}_ubuntu64
-pkgrel=1
+epoch=1
+pkgver=4a168
+_execname=paup${pkgver//.0/}_centos64
+pkgrel=0
 pkgdesc="Phylogenetic Analysis Using PAUP. https://doi.org/10.1002/0471250953.bi0604s00"
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url="http://phylosolutions.com/paup-test/"
 license=('custom')
-depends=('python2')
-source=("http://phylosolutions.com/paup-test/paup${pkgver}_ubuntu64.gz")
-md5sums=('c7c41d7c84fc7be7f05c91e03121d972')
+depends=('curl' 'glibc')
+optdepends=('python2')
+source=("http://phylosolutions.com/paup-test/paup${pkgver}_centos64.gz")
+md5sums=('1738668908df6160aeeafcde81cd292d')
 
 package() {
 	install -Dm755 "$srcdir/$_execname" "$pkgdir/usr/bin/paup"
