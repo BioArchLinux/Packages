@@ -5,6 +5,11 @@ maintainers:
 repo_depends:
 - r-dplyr
 - r-formula
+- r-glue
+- r-pillar
+- r-rdpack
+- r-tidyselect
+- r-vctrs
 update_on:
 - source: rpkgs
   pkgname: dfidx
