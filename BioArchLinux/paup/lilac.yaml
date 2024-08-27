@@ -9,6 +9,6 @@ post_build_script: |
 update_on:
   - source: regex
     url: "http://phylosolutions.com/paup-test/"
-    regex: paup(\w+)_ubuntu64.gz
+    regex: paup(\w+)_centos64.gz
 repo_depends:
   - python2
