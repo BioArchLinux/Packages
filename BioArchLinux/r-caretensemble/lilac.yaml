@@ -5,13 +5,13 @@ maintainers:
 repo_depends:
 - r-caret
 - r-data.table
-- r-digest
 - r-ggplot2
-- r-gridextra
+- r-patchwork
 - r-pbapply
-- r-plyr
+- r-rlang
 update_on:
-- regex: caretEnsemble_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=caretEnsemble
+- source: rpkgs
+  pkgname: caretEnsemble
+  repo: cran
+  md5: true
 - alias: r
