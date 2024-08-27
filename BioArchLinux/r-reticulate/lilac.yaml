@@ -12,7 +12,6 @@ repo_depends:
 - r-rlang
 - r-withr
 repo_makedepends:
-- python-plotly
 - r-rmarkdown
 - r-testthat
 update_on:

@@ -18,7 +18,6 @@ repo_depends:
   - python-grid-strategy
   - python-upsetplot
   - python-xlmhglite 
-  - python-plotly
   - python-pairwisedist
   - python-aiolimiter
   - python-pyvis
