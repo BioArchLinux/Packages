@@ -6,7 +6,6 @@ repo_depends:
 - r-cli
 - r-digest
 - r-fs
-- r-httr2
 - r-rlang
 update_on:
 - source: rpkgs
