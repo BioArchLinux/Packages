@@ -83,8 +83,8 @@ prepare() {
 build() {
   # Work around build failure due to warnings treated as error.
   _FIXWERROR="-Wno-error=incompatible-pointer-types"
-  CFLAGS+=" ${_FIXWERROR}"
-  CXXFLAGS+=" ${_FIXWERROR}"
+  CFLAGS=" ${_FIXWERROR}"
+  CXXFLAGS=" ${_FIXWERROR}"
   export CFLAGS
   export CXXFLAGS
 
