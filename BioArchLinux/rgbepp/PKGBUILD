@@ -2,7 +2,7 @@
 pkgname=rgbepp
 _pkgname=RGBEPP
 pkgver=0.0.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Reference Genome based Exon Phylogeny Pipeline"
 arch=('x86_64')
 url="https://github.com/starsareintherose/$_pkgname"
