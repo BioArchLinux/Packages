@@ -1,8 +1,8 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=mitogeneextractor
 _pkgname=MitoGeneExtractor
-pkgver=0.0.2
-pkgrel=2
+pkgver=1.9.5
+pkgrel=1
 pkgdesc="extract protein coding mitochondrial genes https://doi.org/10.1111/2041-210X.14075"
 arch=('x86_64')
 url="https://github.com/cmayer/MitoGeneExtractor"
@@ -10,7 +10,7 @@ license=('GPL-3.0-or-later')
 depends=('exonerate')
 makedepends=('make')
 source=($url/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('66d179a7c82110f094cc414d4860601b8c28434875a30c05ec3841df52e086d1')
+sha256sums=('19536a464e95ab66756ce0a7252455ad76a68c6b8c385fe2b462935b226949da')
 build() {
   cd "$_pkgname-$pkgver"
   make
