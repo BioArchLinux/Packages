@@ -9,7 +9,7 @@ post_build_script: |
   update_aur_repo()
 update_on:
   - source: gitlab
-    github: Bernt/MITOS
+    gitlab: Bernt/MITOS
     use_max_tag: true
     prefix: 'v'
   - alias: python
