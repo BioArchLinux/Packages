@@ -16,6 +16,7 @@ update_on:
 repo_depends:
   - r-ggplot2
   - r-reshape2
+  - python-ete3
   - viennarna
   - blast+
-  - hmmer'
+  - hmmer
