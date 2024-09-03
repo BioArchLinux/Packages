@@ -8,7 +8,7 @@ pkgdesc="Improved de novo metazoan mitochondrial genome annotation \
 arch=('any')
 url="https://gitlab.com/Bernt/MITOS"
 license=('MIT')
-depends=('r-ggplot' 'r-reshape2' 'viennarna' 'blast+' 'hmmer'
+depends=('r-ggplot2' 'r-reshape2' 'viennarna' 'blast+' 'hmmer'
 	  'python-reportlab' 'python-pillow' 'libtiff' 'java-environment' 'python-biopython')
 makedepends=('python-setuptools')
 source=("$pkgname-$pkgver.tar.gz::$url/-/archive/$pkgver/MITOS-$pkgver.tar.gz")

@@ -14,7 +14,7 @@ update_on:
     prefix: 'v'
   - alias: python
 repo_depends:
-  - r-ggplot
+  - r-ggplot2
   - r-reshape2
   - viennarna
   - blast+
