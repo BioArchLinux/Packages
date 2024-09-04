@@ -15,7 +15,7 @@ pkgdesc="A powerful and productive integrated development environment \
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
 license=('AGPL-3.0-only')
-depends=('r>=3.3.0' 'boost-libs' 'qt5-sensors' 'qt5-svg' 'qt5-webengine' 'qt5-xmlpatterns' 'postgresql-libs' 'sqlite3' 'clang' 'hunspell-en_US' 'mathjax2' 'pandoc' 'yaml-cpp' 'r-rmarkdown' 'r-renv' 'r-testthat' 'r-xml2' 'r-yaml')
+depends=('r>=3.3.0' 'boost-libs' 'qt5-sensors' 'qt5-svg' 'qt5-webengine' 'qt5-xmlpatterns' 'postgresql-libs' 'sqlite3' 'clang' 'hunspell-en_US' 'mathjax2' 'pandoc' 'yaml-cpp' 'r-rmarkdown' 'r-renv' 'r-testthat' 'r-xml2' 'r-yaml' 'r-purrr' 'r-digest')
 makedepends=('git' 'cmake>=3.29' 'boost' 'ninja' 'desktop-file-utils' 'jdk8-openjdk' 'apache-ant' 'unzip' 'openssl' 'libcups' 'pam' 'patchelf' 'wget' 'yarn')
 optdepends=('git: for git support'
             'subversion: for subversion support'
@@ -26,13 +26,15 @@ source=("rstudio-$_pkgver.tar.gz::https://github.com/rstudio/rstudio/archive/ref
         "git+https://github.com/quarto-dev/quarto.git#branch=release/rstudio-cherry-blossom"
         "https://github.com/SOCI/soci/archive/refs/tags/v${_sociver}.tar.gz"
         "qt.conf"
-        "0002-allow_system_node.patch")
+        "0002-allow_system_node.patch"
+        "0003-fix_boost_186.patch")
 
 sha256sums=('89b0d6741b6bd4dac52fd8bd9372d4f1919c97dd41056a03c975d0570eaf439e'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             '723626bfe05dafa545e135e8e61a482df111f488583fef155301acc5ecbbf921'
-            'ad4bd3076ff2bff7d075e3928a7e55c618fa744e3bf5d3d387bf70e01ff96c2f')
+            'ad4bd3076ff2bff7d075e3928a7e55c618fa744e3bf5d3d387bf70e01ff96c2f'
+            'a30066b6aeaae1ad0ec2dcc561eb3043b91a431570002a5b9535306864cc2ae3')
 options=('!emptydirs' '!debug')
 
 prepare() {
@@ -46,9 +48,12 @@ prepare() {
     # Add option to use system node
     patch -p3 < ${srcdir}/0002-allow_system_node.patch
 
+    # fix boost 1.86 incompatibility
+    patch -p1 < ${srcdir}/0003-fix_boost_186.patch
+
     cd "${srcdir}/${_srcname}/dependencies/common"
     install -d pandoc/${_pandocver}
- 
+
     ln -sfT /usr/share/myspell/dicts dictionaries
     ln -sfT /usr/share/mathjax2 mathjax-27
     ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/pandoc
@@ -70,7 +75,7 @@ build() {
     cd "${srcdir}/${_srcname}/dependencies"
         install -d pandoc/${_pandocver}/bin/tools
         ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/bin/tools/pandoc
-    
+
     cd "${srcdir}/${_srcname}/dependencies/soci-${_sociver}"
     msg "Building SOCI libs..."
 
@@ -103,7 +108,7 @@ build() {
     export RSTUDIO_TOOLS_ROOT="${srcdir}/${_srcname}/dependencies"
 
     export PATH=/usr/lib/jvm/java-8-openjdk/jre/bin/:${PATH}
-    # These variables are used to create contents of Help > About dialog 
+    # These variables are used to create contents of Help > About dialog
     export osarch=$(uname -m)
     export distro=$(grep -E '^NAME=' /etc/os-release | cut -d= -f2- | tr -d '"')
     export RSTUDIO_VERSION_MAJOR=$(echo "$_pkgver" | cut -d "." -f1)
@@ -123,11 +128,11 @@ build() {
     # https://github.com/nodejs/node/issues/48444
     export UV_USE_IO_URING=0
 
-    # -DCMAKE_INSTALL_PREFIX seems ignored for sub-dependencies, 
+    # -DCMAKE_INSTALL_PREFIX seems ignored for sub-dependencies,
     # which results as empty '/usr/local/bin' in package
     # Following override works for cmake >3.29
     export CMAKE_INSTALL_PREFIX=/usr/lib/rstudio
-    
+
      local _CMAKE_RSTUDIO_OPTIONS=(
       -DRSTUDIO_TARGET=Desktop
       -DCMAKE_BUILD_TYPE=None

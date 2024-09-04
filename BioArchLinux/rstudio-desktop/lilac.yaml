@@ -1,17 +1,19 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: kbipinkumar
-    email: kbipinkumar@pm.me  
+    email: kbipinkumar@pm.me
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver)
 post_build_script: |
   git_pkgbuild_commit()
 repo_depends:
   - soci
+  - r-digest
+  - r-purrr
   - r-rmarkdown
   - r-renv
   - r-testthat
-  - r-xml2 
+  - r-xml2
   - r-yaml
 update_on:
   - source: github
