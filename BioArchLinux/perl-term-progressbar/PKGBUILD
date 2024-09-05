@@ -3,7 +3,7 @@
 
 pkgname='perl-term-progressbar'
 pkgver='2.23'
-pkgrel=2
+pkgrel=3
 pkgdesc="provide a progress meter on a standard terminal"
 arch=('any')
 license=('PerlArtistic' 'GPL')
