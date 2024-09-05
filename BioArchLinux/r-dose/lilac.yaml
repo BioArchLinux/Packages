@@ -8,12 +8,8 @@ repo_depends:
 - r-fgsea
 - r-ggplot2
 - r-gosemsim
-- r-hdo.db
 - r-qvalue
 - r-reshape2
-- r-yulab.utils
-repo_makedepends:
-- r-testthat
 update_on:
 - source: rpkgs
   pkgname: DOSE
