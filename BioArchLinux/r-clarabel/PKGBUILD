@@ -4,7 +4,7 @@ _pkgname=clarabel
 _pkgver=0.9.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Interior Point Conic Optimization Solver"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
