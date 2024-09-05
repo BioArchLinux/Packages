@@ -3,7 +3,7 @@
 
 pkgname='perl-bio-db-seqfeature'
 pkgver='1.7.4'
-pkgrel=4
+pkgrel=5
 pkgdesc="Normalized feature for use with Bio::DB::SeqFeature::Store"
 arch=('any')
 license=('PerlArtistic' 'GPL')
