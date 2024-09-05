@@ -3,7 +3,7 @@
 
 pkgname='perl-heap'
 pkgver='0.80'
-pkgrel=4
+pkgrel=5
 pkgdesc="Perl extensions for keeping data partially sorted"
 arch=('any')
 license=('PerlArtistic' 'GPL')
