@@ -14,7 +14,6 @@ repo_depends:
 - r-xml2
 - r-yaml
 repo_makedepends:
-- r-rcpparmadillo
 - r-dplyr
 - r-lda
 - r-lsa
