@@ -3,7 +3,7 @@
 
 pkgname='perl-mce'
 pkgver=1.898
-pkgrel=1
+pkgrel=2
 pkgdesc="Many-Core Engine for Perl providing parallel processing capabilities"
 arch=('any')
 license=('PerlArtistic' 'GPL')
