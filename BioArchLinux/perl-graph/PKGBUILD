@@ -6,7 +6,7 @@
 pkgname='perl-graph'
 _dist='Graph'
 pkgver='0.9725'
-pkgrel=4
+pkgrel=5
 pkgdesc='graph data structures and algorithms'
 url='https://metacpan.org/release/Graph'
 arch=('any')
