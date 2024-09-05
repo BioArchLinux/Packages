@@ -3,7 +3,7 @@
 
 pkgname='perl-bio-db-gff'
 pkgver='1.7.4'
-pkgrel=4
+pkgrel=5
 pkgdesc="Storage and retrieval of sequence annotation data"
 arch=('any')
 license=('PerlArtistic' 'GPL')
