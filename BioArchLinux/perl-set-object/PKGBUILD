@@ -3,7 +3,7 @@
 
 pkgname=perl-set-object
 pkgver=1.42
-pkgrel=3
+pkgrel=4
 pkgdesc="Set of Objects (smalltalkish: IdentitySet)"
 arch=('i686' 'x86_64')
 url="https://metacpan.org/dist/Set-Object"
