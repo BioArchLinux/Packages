@@ -3,7 +3,7 @@
 
 pkgname='perl-bioperl'
 pkgver='1.7.8'
-pkgrel=5
+pkgrel=6
 pkgdesc="Perl modules for biology"
 arch=('any')
 license=('PerlArtistic' 'GPL')
