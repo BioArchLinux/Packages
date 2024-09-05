@@ -4,7 +4,7 @@
 
 pkgname='perl-set-scalar'
 pkgver='1.29'
-pkgrel=4
+pkgrel=5
 pkgdesc="basic set operations"
 arch=('any')
 license=('PerlArtistic' 'GPL')
