@@ -3,20 +3,18 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-broom
-- r-cards
 - r-cli
 - r-dplyr
-- r-labelled
-- r-lifecycle
-- r-purrr
+- r-glue
 - r-rlang
-- r-stringr
-- r-tibble
 - r-tidyr
+- r-tidyselect
+repo_makedepends:
+- r-hms
+- r-testthat
 update_on:
 - source: rpkgs
-  pkgname: broom.helpers
+  pkgname: cards
   repo: cran
   md5: true
 - alias: r
