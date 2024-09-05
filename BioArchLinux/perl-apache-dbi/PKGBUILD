@@ -3,7 +3,7 @@
 
 pkgname='perl-apache-dbi'
 pkgver='1.12'
-pkgrel=3
+pkgrel=4
 pkgdesc="Initiate a persistent database connection"
 arch=('any')
 license=('PerlArtistic' 'GPL')
