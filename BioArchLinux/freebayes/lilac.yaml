@@ -24,3 +24,6 @@ update_on:
   - alias: alpm-lilac
     alpm: vcflib
     strip_release: true
+  - alias: alpm-lilac
+    alpm: seqlib
+    strip_release: true
