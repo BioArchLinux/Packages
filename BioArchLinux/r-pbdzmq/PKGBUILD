@@ -3,10 +3,10 @@
 # Contributor: portaloffreedom
 
 _pkgname=pbdZMQ
-_pkgver=0.3-11
+_pkgver=0.3-12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Programming with Big Data -- Interface to 'ZeroMQ'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,8 +16,8 @@ depends=(
   zeromq
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('01d91cffe8b6ac672a1aa1c71ca76121')
-b2sums=('95a3cb026e9adcd78c976707b1ae28b34c9d9f2bfda4d5ce7b6399d6cfedf4a75d0d691abde1ad1c85c5255ccc759c34df674a8292df50d750c819e1238c5cd4')
+md5sums=('30c2f343a26426d88c11469075312566')
+b2sums=('13dcdbea21cad6343a10373ca0b1f00a6ccb21e2e11768797df1f0a5e9d0697d14edc444257a13dd83dcd0ce57d2b0dd0a524d240e42d74b69c6ca02b94859ef')
 
 build() {
   mkdir build
