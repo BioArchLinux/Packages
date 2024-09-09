@@ -14,10 +14,10 @@ depends=(python git devtools nvchecker gnupg pid_children fakeroot bubblewrap pa
          python-requests python-lxml python-yaml python-tomli python-tomli-w pyalpm
          python-structlog python-prctl python-fluent.runtime)
 checkdepends=(python-pytest python-pytest-asyncio)
-makedepends=(python-setuptools-scm python-sqlalchemy)
+makedepends=(python-setuptools-scm python-psycopg2)
 optdepends=(
   'smtp-forwarder: for sending error reports'
-  'python-sqlalchemy: for recording build results in a database'
+  'python-psycopg2: for recording build results in a database'
 )
 cmt=ce8f610005bec5dd8fd6836025229765ed19504c
 provides=("$_pkgname=$pkgver")
