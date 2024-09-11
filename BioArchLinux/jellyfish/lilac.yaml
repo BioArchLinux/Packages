@@ -15,4 +15,4 @@ update_on:
   - source: github
     github: gmarcais/Jellyfish
     use_latest_release: true
-
+  - alias: perl
