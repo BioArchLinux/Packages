@@ -13,7 +13,7 @@ arch=('any')
 url="https://igv.org"
 license=('MIT')
 makedepends=('gendesk' 'gradle' 'java-environment=17')
-depends=('java-runtime>=17' 'sh')
+depends=('java-runtime=17' 'sh')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/igvteam/igv/archive/v${pkgver}.tar.gz")
 sha256sums=('5c1c71bb73216e930e0d17a77aa1529ad54e437a0fbf5d4c729f649df9b05f71')
 
@@ -21,13 +21,13 @@ prepare() {
     # generate /usr/bin entry
     cat <<'EOF' > igv
 #!/usr/bin/sh
-export PATH=/usr/lib/jvm/java-11-openjdk/bin/:$PATH
+export PATH=/usr/lib/jvm/java-17-openjdk/bin/:$PATH
 exec /usr/share/igv/igv.sh
 EOF
 
     cat <<'EOF' > igvtools
 #!/usr/bin/sh
-export PATH=/usr/lib/jvm/java-11-openjdk/bin/:$PATH
+export PATH=/usr/lib/jvm/java-17-openjdk/bin/:$PATH
 exec /usr/share/igv/igvtools
 EOF
 
