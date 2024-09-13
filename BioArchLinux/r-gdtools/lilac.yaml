@@ -3,13 +3,12 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-curl
 - r-fontquiver
-- r-gfonts
 - r-htmltools
 - r-rcpp
 - r-systemfonts
 repo_makedepends:
+- r-gfonts
 - r-testthat
 update_on:
 - source: rpkgs
