@@ -1,6 +1,6 @@
 pkgname=seqlib
 pkgver=1.2.0
-pkgrel=13
+pkgrel=14
 pkgdesc="C++ htslib/bwa-mem/fermi interface for interrogating sequence data"
 arch=('i686' 'x86_64')
 url="https://github.com/walaj/SeqLib"
