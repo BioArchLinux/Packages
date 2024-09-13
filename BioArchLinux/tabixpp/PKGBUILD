@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=tabixpp
 pkgver=1.1.2
-pkgrel=6
+pkgrel=7
 pkgdesc="C++ wrapper to tabix indexer"
 arch=('x86_64')
 url="https://github.com/ekg/tabixpp"
