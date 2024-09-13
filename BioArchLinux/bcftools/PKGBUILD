@@ -3,7 +3,7 @@
 
 pkgname=bcftools
 pkgver=1.21
-pkgrel=1
+pkgrel=2
 pkgdesc='A program for variant calling and manipulating files in the Variant Call Format (VCF) and its binary counterpart BCF'
 arch=('x86_64')
 url='https://samtools.github.io/bcftools'
