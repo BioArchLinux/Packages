@@ -2,7 +2,7 @@
 
 pkgname=nanopolish
 pkgver=0.14.0
-pkgrel=7
+pkgrel=8
 pkgdesc="Provide signal-level analysis of Oxford Nanopore sequencing data"
 arch=('x86_64')
 url="https://github.com/jts/nanopolish"
