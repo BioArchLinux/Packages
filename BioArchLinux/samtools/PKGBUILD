@@ -6,7 +6,7 @@
 
 pkgname=samtools
 pkgver=1.21
-pkgrel=1
+pkgrel=2
 pkgdesc="tools for manipulating next-generation sequencing data. https://doi.org/10.1093/bioinformatics/btp352"
 arch=('i686' 'x86_64')
 url="http://www.htslib.org/"
