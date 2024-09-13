@@ -6,10 +6,10 @@ repo_depends:
 - r-classint
 - r-dbi
 - r-magrittr
-- r-rcpp
 - r-s2
 - r-units
 repo_makedepends:
+- r-rcpp
 - r-blob
 - r-dplyr
 - r-raster
