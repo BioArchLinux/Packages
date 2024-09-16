@@ -13,6 +13,7 @@ repo_depends:
 - r-scales
 - r-ggalluvial
 - r-ragg
+- r-rjags
 - r-runjags
 - r-posterior
 - r-ggdist

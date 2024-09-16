@@ -3,11 +3,18 @@ maintainers:
   email: su975853527@gmail.com
 build_prefix: extra-x86_64
 repo_depends:
+- r-dplyr
+- r-forecast
+- r-flexplot
+- r-ggpp
 - r-ggplot2
+- r-ggrain
 - r-ggrepel
+- r-ggtext
 - r-stringr
 - r-jaspbase
 - r-jaspgraphs
+- r-jaspttests
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

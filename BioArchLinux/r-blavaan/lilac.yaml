@@ -1,7 +1,6 @@
-maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
 build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
@@ -12,13 +11,23 @@ pre_build_script: |
     print(line)
   update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 repo_depends:
-  - r-forecast
-  - r-jaspbase
-  - r-jaspdescriptives
-  - r-jaspgraphs
+- r-bayesplot
+- r-bh
+- r-coda
+- r-future.apply
+- r-lavaan
+- r-loo
+- r-mnormt
+- r-nonnest2
+- r-rcpp
+- r-rcppeigen
+- r-rcppparallel
+- r-rstan
+- r-rstantools
+- r-stanheaders
+- r-tmvnsim
 update_on:
-  - source: github
-    github: jasp-stats/jaspTimeSeries
-    use_max_tag: true
-    prefix: v
-  - alias: r
+- regex: blavaan_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=blavaan
+- alias: r

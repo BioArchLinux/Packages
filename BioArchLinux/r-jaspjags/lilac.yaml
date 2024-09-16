@@ -10,6 +10,7 @@ repo_depends:
 - r-jaspbase
 - r-jaspgraphs
 - r-rjags
+- r-runjags
 - r-stringr
 pre_build: vcs_update
 post_build_script: |

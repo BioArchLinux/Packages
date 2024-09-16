@@ -1,7 +1,6 @@
-maintainers:
-  - github: sukanka
-    email: su975853527@gmail.com
 build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
 post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
@@ -12,13 +11,14 @@ pre_build_script: |
     print(line)
   update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 repo_depends:
-  - r-forecast
-  - r-jaspbase
-  - r-jaspdescriptives
-  - r-jaspgraphs
+- r-cli
+- r-gghalves
+- r-ggplot2
+- r-ggpp
+- r-rlang
+- r-vctrs
 update_on:
-  - source: github
-    github: jasp-stats/jaspTimeSeries
-    use_max_tag: true
-    prefix: v
-  - alias: r
+- regex: ggrain_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggrain
+- alias: r

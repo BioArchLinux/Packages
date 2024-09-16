@@ -4,6 +4,7 @@ maintainers:
 build_prefix: extra-x86_64
 repo_depends:
 - r-flexplot
+- r-jaspdescriptives
 - r-jaspbase
 - r-jaspgraphs
 pre_build: vcs_update

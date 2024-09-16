@@ -12,11 +12,14 @@ pre_build_script: |
     print(line)
   update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 repo_depends:
+  - r-blavaan
   - r-dagitty
   - r-ggplot2
   - r-ggraph
   - r-jaspbase
   - r-jaspgraphs
+  - r-jaspjags
+  - r-runjags
 update_on:
   - source: github
     github: jasp-stats/jaspProcess
