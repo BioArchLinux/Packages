@@ -3,14 +3,14 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-future
+- r-future.apply
 - r-ggplot2
-- r-glue
 - r-gridextra
-- r-ic.infer
 - r-lavaan
 - r-mvtnorm
 - r-norm
-- r-pbapply
+- r-progressr
 - r-quadprog
 - r-scales
 - r-tmvtnorm
