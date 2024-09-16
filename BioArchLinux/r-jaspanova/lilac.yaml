@@ -8,6 +8,7 @@ repo_depends:
 - r-car
 - r-colorspace
 - r-emmeans
+- r-effectsize
 - r-ggplot2
 - r-jaspbase
 - r-jaspdescriptives
@@ -15,6 +16,8 @@ repo_depends:
 - r-jaspttests
 - r-matrixstats
 - r-multcomp
+- r-multcompview
+- r-mvshapirotest
 - r-onewaytests
 - r-plyr
 - r-stringi
