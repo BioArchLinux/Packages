@@ -5,7 +5,7 @@ _pkgname=restriktor
 _pkgver=0.5-90
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Restricted Statistical Estimation and Inference for Linear Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
