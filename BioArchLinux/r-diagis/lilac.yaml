@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- email: su975853527@gmail.com
+  github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+- r-coda
+- r-ggplot2
+- r-gridextra
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- regex: diagis_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=diagis
+- alias: r

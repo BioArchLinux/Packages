@@ -1,0 +1,27 @@
+maintainers:
+- github: sukanka
+  email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+- r-jaspbase
+- r-jaspgraphs
+- r-bsts
+- r-bssm
+- r-precrec
+- r-reshape2
+- r-boom
+- r-lubridate
+- r-prophet
+- r-bart
+- r-ebmaforecast
+- r-imputets
+pre_build: vcs_update
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+update_on:
+- source: github
+  github: jasp-stats/jaspPredictiveAnalytics
+  use_max_tag: true
+  prefix: "v"
+- alias: r
