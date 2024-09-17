@@ -2,15 +2,6 @@ build_prefix: extra-x86_64
 maintainers:
 - github: sukanka
   email: su975853527@gmail.com
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
-pre_build_script: |
-  for line in edit_file('PKGBUILD'):
-    if line.startswith('_pkgver='):
-      line = f'_pkgver={_G.newver}'
-    print(line)
-  update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 repo_depends:
 - r-cli
 - r-gghalves
@@ -19,7 +10,8 @@ repo_depends:
 - r-rlang
 - r-vctrs
 update_on:
-- regex: ggrain_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ggrain
+- source: rpkgs
+  pkgname: ggrain
+  repo: cran
+  md5: true
 - alias: r
