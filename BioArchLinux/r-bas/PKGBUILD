@@ -1,10 +1,10 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=BAS
-_pkgver=1.7.1
+_pkgver=1.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Bayesian Variable Selection and Model Averaging using Bayesian Adaptive Sampling"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -28,8 +28,8 @@ optdepends=(
 )
 makedepends=(gcc-fortran)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1c325a61bcf14763745821d716cc844d')
-b2sums=('cfbe2f86f741dd71ac2ec200c77c212373f62948cf818598d8d4ba0406ded1d737294fc2dc8e45e208af09f68064b8bc7165e7c8d3264dde99bbc3495ccbbac8')
+md5sums=('de9e60a4534536ed6a1fda7b838f2938')
+b2sums=('d20dbc4943c3af26de8bd7a0e4dd8262493b4207ad46b675797fb477fe3a064447942d536fb460f6d39609d038bb9d2327be0c63507f0245103d6676ba8752fd')
 
 build() {
   mkdir build
