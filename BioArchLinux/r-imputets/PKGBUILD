@@ -4,7 +4,7 @@ _pkgname=imputeTS
 _pkgver=3.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Time Series Missing Value Imputation"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
