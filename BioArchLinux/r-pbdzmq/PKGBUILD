@@ -3,7 +3,7 @@
 # Contributor: portaloffreedom
 
 _pkgname=pbdZMQ
-_pkgver=0.3-12
+_pkgver=0.3-13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -16,8 +16,8 @@ depends=(
   zeromq
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('30c2f343a26426d88c11469075312566')
-b2sums=('13dcdbea21cad6343a10373ca0b1f00a6ccb21e2e11768797df1f0a5e9d0697d14edc444257a13dd83dcd0ce57d2b0dd0a524d240e42d74b69c6ca02b94859ef')
+md5sums=('55d1c6bd40d0d037bcb6537d2550be81')
+b2sums=('48522eba4fc94c013710ca98213c274d5cb9d0ae6ad37cc5d51682ec5e3c75b0db5b7ec8e5bc8f995d40689a19ecde03d3e0f0a145bc256d4ef864ced38d5f88')
 
 build() {
   mkdir build
