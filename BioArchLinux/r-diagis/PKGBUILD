@@ -10,6 +10,7 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  blas
   r-coda
   r-ggplot2
   r-gridextra
