@@ -34,6 +34,7 @@ optdepends=(
   r-cgam
   r-classdiscovery
   r-clubsandwich
+  r-cobalt
   r-coda
   r-coxme
   r-cplm
@@ -60,11 +61,12 @@ optdepends=(
   r-ggplot2
   r-glmmadaptive
   r-glmmtmb
+  r-glmtoolbox
   r-gparotation
   r-gt
   r-haven
   r-hmisc
-  r-httr
+  r-httr2
   r-ivreg
   r-knitr
   r-lavaan
@@ -127,6 +129,7 @@ optdepends=(
   r-vdiffr
   r-vgam
   r-withr
+  r-weightit
   r-wrs2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
