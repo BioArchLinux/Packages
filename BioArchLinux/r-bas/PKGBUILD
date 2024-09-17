@@ -14,6 +14,9 @@ depends=(
   lapack
   r
 )
+makedepends=(
+  gcc-fortran
+)
 optdepends=(
   r-covr
   r-dplyr
@@ -26,7 +29,6 @@ optdepends=(
   r-roxygen2
   r-testthat
 )
-makedepends=(gcc-fortran)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('de9e60a4534536ed6a1fda7b838f2938')
 b2sums=('d20dbc4943c3af26de8bd7a0e4dd8262493b4207ad46b675797fb477fe3a064447942d536fb460f6d39609d038bb9d2327be0c63507f0245103d6676ba8752fd')
