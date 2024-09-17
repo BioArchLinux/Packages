@@ -2,9 +2,6 @@ build_prefix: extra-x86_64
 maintainers:
 - email: su975853527@gmail.com
   github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
 repo_depends:
 - r-forecast
 - r-ggplot2
@@ -13,7 +10,8 @@ repo_depends:
 - r-rcpp
 - r-stinepack
 update_on:
-- regex: imputeTS_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=imputeTS
+- source: rpkgs
+  pkgname: imputeTS
+  repo: cran
+  md5: true
 - alias: r
