@@ -2,9 +2,6 @@ build_prefix: extra-x86_64
 maintainers:
 - email: su975853527@gmail.com
   github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
 repo_depends:
 - r-bayesplot
 - r-checkmate
@@ -12,14 +9,24 @@ repo_depends:
 - r-diagis
 - r-dplyr
 - r-posterior
-- r-ramcmc
 - r-rcpp
-- r-rcpparmadillo
 - r-rlang
-- r-sitmo
 - r-tidyr
+repo_makedepends:
+- r-ramcmc
+- r-rcpparmadillo
+- r-sitmo
 update_on:
-- regex: bssm_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=bssm
+- source: rpkgs
+  pkgname: bssm
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
