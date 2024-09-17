@@ -128,8 +128,8 @@ optdepends=(
   r-truncreg
   r-vdiffr
   r-vgam
-  r-withr
   r-weightit
+  r-withr
   r-wrs2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
