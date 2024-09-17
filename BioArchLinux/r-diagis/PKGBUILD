@@ -4,7 +4,7 @@ _pkgname=diagis
 _pkgver=0.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Diagnostic Plot and Multivariate Summary Statistics of Weighted Samples from Importance Sampling"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
