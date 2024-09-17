@@ -3,7 +3,8 @@ maintainers:
 - github: sukanka
   email: su975853527@gmail.com
 update_on:
-- regex: mvShapiroTest_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mvShapiroTest
+- source: rpkgs
+  pkgname: mvShapiroTest
+  repo: cran
+  md5: true
 - alias: r
