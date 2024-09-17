@@ -2,14 +2,17 @@ build_prefix: extra-x86_64
 maintainers:
 - email: su975853527@gmail.com
   github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
 repo_depends:
 - r-rcpp
+repo_makedepends:
 - r-rcpparmadillo
 update_on:
-- regex: ramcmc_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=ramcmc
+- source: rpkgs
+  pkgname: ramcmc
+  repo: cran
+  md5: true
 - alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
