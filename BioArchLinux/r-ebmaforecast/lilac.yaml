@@ -2,9 +2,6 @@ build_prefix: extra-x86_64
 maintainers:
 - email: su975853527@gmail.com
   github: sukanka
-post_build_script: |
-  git_pkgbuild_commit()
-  update_aur_repo()
 repo_depends:
 - r-abind
 - r-glue
@@ -14,7 +11,8 @@ repo_depends:
 - r-rcpp
 - r-separationplot
 update_on:
-- regex: EBMAforecast_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=EBMAforecast
+- source: rpkgs
+  pkgname: EBMAforecast
+  repo: cran
+  md5: true
 - alias: r
