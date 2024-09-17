@@ -15,6 +15,7 @@ depends=(
   r-rcolorbrewer
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('4485e15bd560d1b981ec28077ffd28fa')
 sha256sums=('1f3d2a2abc10001e522c7d0422ee68286bfa10a36c3be3fcacc64e56c70175b7')
 
 build() {

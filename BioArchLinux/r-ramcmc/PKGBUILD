@@ -20,6 +20,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('30fee64ea786fecf9a8cd9446f5c8a89')
 sha256sums=('bf5fb880c5e4bde3a738505cead52cc3c528fb542657fbefa7e5eb05024099a8')
 
 build() {

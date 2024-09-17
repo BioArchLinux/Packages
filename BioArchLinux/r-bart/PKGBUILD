@@ -19,6 +19,7 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('184a2651755daa64bb9ff13a07389443')
 sha256sums=('5b087a321427f077bf595c075b4f7538e125a9ea580fffe5b2135873853da1ca')
 
 build() {
