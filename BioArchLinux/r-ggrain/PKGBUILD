@@ -4,7 +4,7 @@ _pkgname=ggrain
 _pkgver=0.0.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="A Rainclouds Geom for 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
