@@ -4,7 +4,7 @@ _pkgname=stinepack
 _pkgver=1.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Stineman, a Consistently Well Behaved Method of Interpolation"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
