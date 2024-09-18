@@ -5,7 +5,7 @@ _pkgver=0.19.1
 pkgname=jasp-desktop
 pkgver=0.19.1
 _ColumnEncoder_ver=0.19.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A complete statistical package for both Bayesian and Frequentist statistical methods"
 arch=('x86_64' 'aarch64')
 url="https://github.com/jasp-stats/jasp-desktop"
@@ -80,8 +80,8 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jasp-stats/jasp-desktop
     "jaspColumnEncoder-${_pkgver}.tar.gz::https://github.com/jasp-stats/jaspColumnEncoder/archive/refs/tags/v${_ColumnEncoder_ver}.tar.gz"
 )
 sha256sums=('c6395a4327f94346c61822ee8647d061972d52b2bf1dadad1c8c38a11f396cba'
-    'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
-    'd9e74e0ff2b7c6d15c109717c212480f9021f86fdd0c326088143476ba051033')
+            'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
+            'd9e74e0ff2b7c6d15c109717c212480f9021f86fdd0c326088143476ba051033')
 
 prepare() {
     cp -ar jaspColumnEncoder-${_ColumnEncoder_ver}/* ${pkgname}-${pkgver}/Common/jaspColumnEncoder
