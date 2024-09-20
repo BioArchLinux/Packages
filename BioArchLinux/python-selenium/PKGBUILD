@@ -4,8 +4,8 @@
 # Contributor: Aaron DeVore <aaron.devore@gmail.com>
 
 pkgname=python-selenium
-pkgver=4.24.0
-pkgrel=2
+pkgver=4.25.0
+pkgrel=1
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(x86_64)
 url="https://github.com/SeleniumHQ/selenium"
@@ -36,7 +36,7 @@ source=(
   "$pkgname-$pkgver.tar.gz::$url/archive/selenium-$pkgver.tar.gz"
   "fix-selenium-manager-build.patch"
 )
-sha256sums=('981015b21a120072c20f87f2a0bd8a677d65cf98464657cb0cf96094b1dd44a4'
+sha256sums=('6a6b1b78acaf195c4505099e8e6eb40e677b7f66a46eb86dc0bf2ad9ea00e5d7'
             'af031d7fd32bb4b8216d8b16957e2102b4f319ae22d94460636db90947d2d6ba')
 
 _archive="selenium-selenium-$pkgver"
