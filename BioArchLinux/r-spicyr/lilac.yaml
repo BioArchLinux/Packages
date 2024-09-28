@@ -9,6 +9,7 @@ repo_depends:
 - r-concaveman
 - r-data.table
 - r-dplyr
+- r-extrafont
 - r-ggforce
 - r-ggplot2
 - r-lmertest
