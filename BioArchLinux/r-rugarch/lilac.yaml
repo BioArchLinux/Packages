@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-chron
+- r-fracdiff
 - r-ks
 - r-nloptr
 - r-numderiv
