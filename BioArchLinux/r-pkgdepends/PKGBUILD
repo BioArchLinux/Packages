@@ -5,7 +5,7 @@ _pkgname=pkgdepends
 _pkgver=0.8.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Package Dependency Resolution and Downloads"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
