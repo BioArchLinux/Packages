@@ -3,13 +3,15 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-bedmatrix
 - r-clusterr
 - r-corpcor
+- r-genio
 - r-irlba
-- r-qvalue
 - r-rsvd
 update_on:
-- regex: jackstraw_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=jackstraw
+- source: rpkgs
+  pkgname: jackstraw
+  repo: cran
+  md5: true
 - alias: r

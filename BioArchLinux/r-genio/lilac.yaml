@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-rcpp
+- r-readr
+- r-tibble
+update_on:
+- source: rpkgs
+  pkgname: genio
+  repo: cran
+  md5: true
+- alias: r
