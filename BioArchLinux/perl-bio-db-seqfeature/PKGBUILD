@@ -2,8 +2,8 @@
 # Generator  : CPANPLUS::Dist::Arch 1.32
 
 pkgname='perl-bio-db-seqfeature'
-pkgver='1.7.4'
-pkgrel=5
+pkgver=1.7.5
+pkgrel=1
 pkgdesc="Normalized feature for use with Bio::DB::SeqFeature::Store"
 arch=('any')
 license=('PerlArtistic' 'GPL')
@@ -13,8 +13,8 @@ checkdepends=('perl-test-most')
 makedepends=()
 url='https://metacpan.org/release/Bio-DB-SeqFeature'
 source=("http://search.cpan.org/CPAN/authors/id/C/CJ/CJFIELDS/Bio-DB-SeqFeature-${pkgver}.tar.gz")
-md5sums=('05a289d46d45f8d3932a4a3f8ed16f6b')
-sha512sums=('8faa8a4a85d15d9e9256edf950b163252f19ff0e1a1ca08df6fdbd57888e782dee325c23c52d878f4174bad67def8c80877da913ca308a6699982debdd91300b')
+md5sums=('521c760af1b2e8f095c7a9c5ff0f8381')
+sha512sums=('1e1e0fc3dbddacf26136268bd2a31721e9e40ab09c341aeccda330b751b735934414cfc1b93edc786a90abdaf93e31ef2f4c2f5dfaf143883dca348d90b34812')
 _distdir="Bio-DB-SeqFeature-${pkgver}"
 
 build() {
