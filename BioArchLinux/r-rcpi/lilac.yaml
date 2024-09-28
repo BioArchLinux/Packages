@@ -9,7 +9,7 @@ repo_depends:
 - r-foreach
 - r-gosemsim
 - r-httr2
-- r-rjson
+- r-jsonlite
 - r-rlang
 update_on:
 - source: rpkgs
