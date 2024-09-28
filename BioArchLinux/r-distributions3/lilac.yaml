@@ -3,10 +3,11 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-ellipsis
 - r-ggplot2
 - r-glue
+- r-rlang
 repo_makedepends:
+- r-poissonbinomial
 - r-revdbayes
 - r-testthat
 update_on:
