@@ -4,9 +4,11 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-checkmate
+- r-mlr3misc
 - r-prroc
 update_on:
-- regex: mlr3measures_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mlr3measures
+- source: rpkgs
+  pkgname: mlr3measures
+  repo: cran
+  md5: true
 - alias: r
