@@ -21,8 +21,10 @@ repo_depends:
 - r-s4vectors
 - r-speedglm
 - r-summarizedexperiment
+- r-txdbmaker
 update_on:
-- regex: exomePeak2_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/exomePeak2
+- source: rpkgs
+  pkgname: exomePeak2
+  repo: bioc
+  md5: true
 - alias: r
