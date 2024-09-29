@@ -7,7 +7,6 @@ repo_depends:
 - r-rcpphungarian
 - r-shiny
 - r-sp
-- r-viridislite
 update_on:
 - source: rpkgs
   pkgname: Ternary
