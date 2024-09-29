@@ -9,6 +9,7 @@ repo_depends:
 - r-kableextra
 - r-knitr
 - r-officer
+- r-pmcmrplus
 - r-rmarkdown
 - r-writexl
 update_on:
