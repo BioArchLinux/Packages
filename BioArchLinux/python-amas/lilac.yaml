@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  pypi_pre_build(makedepends = ['python-setuptools'], depends_setuptools = False, license = 'GPL-3.0-or-later', pep517 = false)
+post_build_script: |
+  pypi_post_build()
+update_on:
+  - source: pypi
+    pypi: amas
+  - alias: python

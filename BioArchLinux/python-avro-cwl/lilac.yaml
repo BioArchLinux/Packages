@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  pypi_pre_build(depends = ['python-future'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'Apache-2.0', pep517 = false)
+post_build_script: |
+  pypi_post_build()
+update_on:
+  - source: pypi
+    pypi: avro-cwl
+  - alias: python
