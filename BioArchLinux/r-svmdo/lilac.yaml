@@ -10,6 +10,7 @@ repo_depends:
 - r-data.table
 - r-dose
 - r-dplyr
+- r-dt
 - r-e1071
 - r-golem
 - r-klar
