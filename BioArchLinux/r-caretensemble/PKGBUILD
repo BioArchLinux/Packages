@@ -4,7 +4,7 @@ _pkgname=caretEnsemble
 _pkgver=4.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Ensembles of Caret Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
