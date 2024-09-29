@@ -4,7 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-expm
+- r-generics
 - r-mvtnorm
+- r-tibble
 update_on:
 - source: rpkgs
   pkgname: msm
