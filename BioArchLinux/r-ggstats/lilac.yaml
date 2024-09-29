@@ -3,13 +3,11 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-broom.helpers
 - r-cli
 - r-dplyr
 - r-forcats
 - r-ggplot2
 - r-lifecycle
-- r-magrittr
 - r-patchwork
 - r-purrr
 - r-rlang
@@ -18,6 +16,8 @@ repo_depends:
 - r-tidyr
 repo_makedepends:
 - r-betareg
+- r-broom
+- r-broom.helpers
 - r-emmeans
 - r-parameters
 - r-pscl
