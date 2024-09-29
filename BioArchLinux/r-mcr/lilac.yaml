@@ -3,13 +3,10 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-deming
-- r-deriv
-- r-lme4
-- r-mcr
+- r-robslopes
 update_on:
 - source: rpkgs
-  pkgname: rsq
+  pkgname: mcr
   repo: cran
   md5: true
 - alias: r
