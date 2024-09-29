@@ -5,7 +5,7 @@ _pkgname=rsq
 _pkgver=2.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="R-Squared and Related Measures"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
