@@ -4,7 +4,7 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 pre_build_script: |
-  pypi_pre_build(depends = ['python-requests', 'python-gitpython'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'Apache-2.0', pep517 = false)
+  pypi_pre_build(depends = ['python-requests', 'python-gitpython'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'Apache-2.0', pep517 = False)
 post_build_script: |
   pypi_post_build()
 

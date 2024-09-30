@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 pre_build_script: |
-  pypi_pre_build(depends = ['python-wheel'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'MIT', pep517 = false)
+  pypi_pre_build(depends = ['python-wheel'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'MIT', pep517 = False)
 post_build_script: |
   pypi_post_build()
 update_on:
