@@ -1,0 +1,32 @@
+_name=airr
+pkgname=python-airr
+pkgver=1.5.1
+pkgrel=1
+pkgdesc="AIRR Community Data Representation Standard reference library for antibody and TCR sequencing data."
+arch=(any)
+url="http://docs.airr-community.org"
+license=(CC-BY-4.0)
+depends=('python')
+makedepends=('python-setuptools' 'python-setuptools')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/airr-1.5.1.tar.gz")
+sha256sums=('71f89eaf0c2fb4fe038a6e8aad9c58e1712cb06b92021e73d97d08c59b7b7149')
+
+build() {
+  cd "$srcdir/airr-1.5.1"
+  python3 setup.py build
+}
+
+package() {
+  cd "$srcdir/airr-1.5.1"
+  python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
+
+  # make sure we don't install any world-writable or root-readable-only files
+  # we shouldn't need to fix ownership as we extract tarballs as a non-root user
+  # https://github.com/pypa/setuptools/issues/1328
+  # https://github.com/LonamiWebs/Telethon/issues/1605
+  chmod u=rwX,go=rX -R "$pkgdir"
+  # make sure we don't install annoying files
+  local _site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
+  rm -rf "$pkgdir/$_site_packages/tests/"
+}
+
