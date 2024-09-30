@@ -1,0 +1,32 @@
+_name=aci
+pkgname=python-aci
+pkgver=1.3
+pkgrel=1
+pkgdesc="Analyzer of CRISPR Indel"
+arch=(any)
+url="www.calyx.biz"
+license=(GPL-3.0-or-later)
+depends=('python')
+makedepends=('python-setuptools' 'python-setuptools')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/aci-1.3.tar.gz")
+sha256sums=('3ab169393ede1bcaaf3d84bd3261d6922f363e18c057ce11cddaf78476dabae8')
+
+build() {
+  cd "$srcdir/aci-1.3"
+  python3 setup.py build
+}
+
+package() {
+  cd "$srcdir/aci-1.3"
+  python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
+
+  # make sure we don't install any world-writable or root-readable-only files
+  # we shouldn't need to fix ownership as we extract tarballs as a non-root user
+  # https://github.com/pypa/setuptools/issues/1328
+  # https://github.com/LonamiWebs/Telethon/issues/1605
+  chmod u=rwX,go=rX -R "$pkgdir"
+  # make sure we don't install annoying files
+  local _site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
+  rm -rf "$pkgdir/$_site_packages/tests/"
+}
+
