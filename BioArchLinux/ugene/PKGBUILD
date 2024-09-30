@@ -16,6 +16,7 @@ depends=(
   libxtst
   qt5-script
   qt5-svg
+  qt5-websockets
 )
 makedepends=(
   cuda
