@@ -17,6 +17,7 @@ depends=(
   qt5-script
   qt5-svg
   qt5-websockets
+  qt5-networkauth
 )
 makedepends=(
   cuda
