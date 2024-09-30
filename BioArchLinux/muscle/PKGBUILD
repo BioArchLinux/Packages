@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 url="https://github.com/rcedgar/muscle"
 license=('GPL-3.0-or-later')
 depends=('gcc-libs' 'glibc')
-makedepends=('python' 'bash')
+makedepends=('python' 'bash' 'wget')
 source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
 sha256sums=('7aff1473241a36da94a88f37920a343fae91d2b6faae22e15c06591d1d0339b6')
 
