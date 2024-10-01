@@ -1,0 +1,43 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-circlize
+- r-complexheatmap
+- r-deseq2
+- r-dplyr
+- r-dt
+- r-edger
+- r-genie3
+- r-ggforce
+- r-ggnewscale
+- r-ggplot2
+- r-ggrastr
+- r-ggrepel
+- r-ggvenndiagram
+- r-glue
+- r-gprofiler2
+- r-magrittr
+- r-matrixstats
+- r-noisyr
+- r-preprocesscore
+- r-rcolorbrewer
+- r-rlang
+- r-scales
+- r-shiny
+- r-shinyjqui
+- r-shinyjs
+- r-shinylp
+- r-shinywidgets
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-upsetr
+- r-visnetwork
+update_on:
+- source: rpkgs
+  pkgname: bulkAnalyseR
+  repo: cran
+  md5: true
+- alias: r

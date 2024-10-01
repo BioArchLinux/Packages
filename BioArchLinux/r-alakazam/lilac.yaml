@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-airr
+- r-ape
+- r-biostrings
+- r-dplyr
+- r-genomicalignments
+- r-ggplot2
+- r-igraph
+- r-iranges
+- r-progress
+- r-rcpp
+- r-readr
+- r-rlang
+- r-scales
+- r-seqinr
+- r-stringi
+- r-tibble
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: alakazam
+  repo: cran
+  md5: true
+- alias: r

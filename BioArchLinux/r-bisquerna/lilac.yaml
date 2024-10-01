@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biobase
+- r-limsolve
+update_on:
+- source: rpkgs
+  pkgname: BisqueRNA
+  repo: cran
+  md5: true
+- alias: r

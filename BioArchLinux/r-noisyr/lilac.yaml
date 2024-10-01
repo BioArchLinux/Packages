@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-doparallel
+- r-dplyr
+- r-foreach
+- r-genomicranges
+- r-ggplot2
+- r-iranges
+- r-magrittr
+- r-philentropy
+- r-preprocesscore
+- r-rsamtools
+- r-tibble
+update_on:
+- source: rpkgs
+  pkgname: noisyr
+  repo: cran
+  md5: true
+- alias: r

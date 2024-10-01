@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-jsonlite
+- r-readr
+- r-stringi
+- r-yaml
+update_on:
+- source: rpkgs
+  pkgname: airr
+  repo: cran
+  md5: true
+- alias: r
