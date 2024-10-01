@@ -4,7 +4,7 @@ _pkgname=gdistance
 _pkgver=1.6.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Distances and Routes on Geographical Grids"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
