@@ -4,7 +4,7 @@ _pkgname=abdiv
 _pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Alpha and Beta Diversity Measures"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
