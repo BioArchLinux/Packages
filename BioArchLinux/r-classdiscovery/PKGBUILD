@@ -4,7 +4,7 @@ _pkgname=ClassDiscovery
 _pkgver=3.4.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Classes and Methods for \"Class Discovery\" with Microarrays or Proteomics"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
