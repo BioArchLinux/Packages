@@ -4,7 +4,7 @@ _pkgname=BisqueRNA
 _pkgver=1.0.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Decomposition of Bulk Expression with Single-Cell Sequencing"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
