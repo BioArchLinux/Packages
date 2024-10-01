@@ -1,0 +1,42 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-abind
+- r-complexheatmap
+- r-cowplot
+- r-dendextend
+- r-dplyr
+- r-ggplot2
+- r-ggrepel
+- r-gridextra
+- r-igraph
+- r-irlba
+- r-leidenalg
+- r-magrittr
+- r-n2r
+- r-r6
+- r-reshape2
+- r-rlang
+- r-rtsne
+- r-sccore
+repo_makedepends:
+- r-rcpp
+- r-rcpparmadillo
+- r-rcppeigen
+- r-rcppprogress
+update_on:
+- source: rpkgs
+  pkgname: conos
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra

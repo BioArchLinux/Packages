@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ade4
+- r-adegenet
+- r-calibrate
+- r-dismo
+- r-gap
+- r-gdistance
+- r-genetics
+- r-ggally
+- r-ggplot2
+- r-knitr
+- r-mmod
+- r-pegas
+- r-plyr
+- r-r.utils
+- r-raster
+- r-reshape2
+- r-rgooglemaps
+- r-sp
+- r-vegan
+- r-xtable
+update_on:
+- source: rpkgs
+  pkgname: PopGenReport
+  repo: cran
+  md5: true
+- alias: r

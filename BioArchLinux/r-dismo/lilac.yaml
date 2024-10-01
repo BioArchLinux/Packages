@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-raster
+- r-rcpp
+- r-sp
+- r-terra
+update_on:
+- source: rpkgs
+  pkgname: dismo
+  repo: cran
+  md5: true
+- alias: r

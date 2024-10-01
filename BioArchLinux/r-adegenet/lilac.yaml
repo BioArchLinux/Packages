@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ade4
+- r-ape
+- r-dplyr
+- r-ggplot2
+- r-igraph
+- r-reshape2
+- r-seqinr
+- r-shiny
+- r-vegan
+update_on:
+- source: rpkgs
+  pkgname: adegenet
+  repo: cran
+  md5: true
+- alias: r

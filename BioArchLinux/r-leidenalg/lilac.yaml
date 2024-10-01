@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-igraph
+- r-rcpp
+- r-sccore
+repo_makedepends:
+- r-rcpparmadillo
+- r-rcppeigen
+update_on:
+- source: rpkgs
+  pkgname: leidenAlg
+  repo: cran
+  md5: true
+- alias: r

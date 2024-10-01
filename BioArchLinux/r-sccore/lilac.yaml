@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-irlba
+- r-magrittr
+- r-pbmcapply
+- r-proc
+- r-rcpp
+- r-rlang
+- r-scales
+- r-tibble
+- r-uwot
+- r-withr
+repo_makedepends:
+- r-rcpparmadillo
+- r-rcppeigen
+- r-rcppprogress
+update_on:
+- source: rpkgs
+  pkgname: sccore
+  repo: cran
+  md5: true
+- alias: r
