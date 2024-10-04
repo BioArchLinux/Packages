@@ -7,7 +7,7 @@
 # Contributor: fordprefect <fordprefect@dukun.de>
 
 _pkgname=bitops
-_pkgver=1.0-8
+_pkgver=1.0-9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -19,8 +19,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d6b21c1b112ee5021959514d4ee9d729')
-b2sums=('19dcd4a33880d6c2628e41cadcd541e99fb10ea0a2a7ac296b355181cd757aa4632c418e8a6af3d4487e6b05d51b0f32d71a33aeb0b31ffe27f8bb55b9e77f50')
+md5sums=('2214ea9a069223af2bdc9e7528876025')
+b2sums=('6fd3b6768c2a814b59b1288e3b1db669e05e01ac3aaf1e0f5fb3471e826d2055f21a8980c1342c954fe2ca1f5ec513f2b5ff67e0fee3354cd24f13e95da0dc81')
 
 build() {
   mkdir build
