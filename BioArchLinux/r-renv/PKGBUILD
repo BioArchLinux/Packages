@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=renv
-_pkgver=1.0.9
+_pkgver=1.0.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Project Environments"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -23,6 +23,7 @@ optdepends=(
   r-jsonvalidate
   r-knitr
   r-miniui
+  r-modules
   r-packrat
   r-pak
   r-r6
@@ -38,8 +39,8 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d0f6b796bbc17d5b304e372ca0dd965a')
-b2sums=('be5bb3313e3220eabafe052a4a6b06102b5dc90d75648448834c222870ccdd72756b694fef736b4794897d4cd85210c12f5525f5ff47015d93953e39a9f74e1c')
+md5sums=('0750343207c52680b07b12550e113e8c')
+b2sums=('a652ec769b22f98154981660868d22e022af6a146eb13686bf33ab5b10e9d1dfaaa5098f10a9324738418d577392816197bd51743c760fd3c13e51ea0ba5b5da')
 
 build() {
   mkdir build
