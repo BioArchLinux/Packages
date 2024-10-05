@@ -8,7 +8,7 @@ _pkgname=xfun
 _pkgver=0.48
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Supporting Functions for Packages Maintained by 'Yihui Xie'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
