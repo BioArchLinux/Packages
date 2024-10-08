@@ -12,5 +12,8 @@ update_on:
     github: kcleal/gw
     use_latest_release: true
     include_regex: ^v
+  - alias: alpm-lilac
+    alpm: htslib
+    strip_release: true
 repo_depends:
   - htslib
