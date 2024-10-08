@@ -18,7 +18,6 @@ repo_depends:
 - r-graphlayouts
 - r-igraph
 - r-magrittr
-- r-oaqc
 - r-org.hs.eg.db
 - r-patchwork
 - r-purrr
