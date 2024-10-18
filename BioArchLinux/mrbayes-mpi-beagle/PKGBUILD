@@ -21,10 +21,10 @@ build() {
   if [ -f /usr/lib/libhmsbeagle.so ]
   then
     msg "beagle-lib found! Building with CUDA support."
-    ./configure --with-beagle=/usr --prefix=${pkgdir}/usr --enable-mpi=yes
+    ./configure --with-beagle=/usr --prefix=${pkgdir}/usr --with-mpi
   else
     msg "beagle-lib not found! Building without CUDA support."
-    ./configure --with-beagle=no --prefix=${pkgdir}/usr --enable-mpi=yes
+    ./configure --with-beagle=no --prefix=${pkgdir}/usr --with-mpi
   fi
   make
 }
