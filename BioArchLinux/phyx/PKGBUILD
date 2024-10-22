@@ -2,7 +2,7 @@
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
 pkgname=phyx
-pkgver=1.3.1
+pkgver=1.3.2
 pkgrel=1
 pkgdesc="Command-line phylogenetic tools for unix. https://doi.org/10.1093/bioinformatics/btx063"
 arch=('x86_64')
@@ -13,7 +13,7 @@ makedepends=(curl python)
 testdepends=(python)
 source=("https://github.com/FePhyFoFum/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 
-sha256sums=('04e7005b3885e78a98abc6df3ccabf7575a4de2d9c0cbf535f1fab6253ea3549')
+sha256sums=('2c4a80c73b8bbf2117c4a4686655c19f9e0a1f81921cd1ad201b1933e1c6ad14')
 
 build() {
   cd "${pkgname}-${pkgver}/src"
