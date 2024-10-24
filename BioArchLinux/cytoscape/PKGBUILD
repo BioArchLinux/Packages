@@ -3,7 +3,7 @@
 # Contributor: florianbw <florian.bw gmail.com>
 
 pkgname=cytoscape
-pkgver=3.10.2
+pkgver=3.10.3
 pkgrel=1
 pkgdesc="Network Data Integration, Analysis, and Visualization in a Box"
 arch=('any')
@@ -15,7 +15,7 @@ source=("https://github.com/cytoscape/cytoscape/releases/download/${pkgver}/cyto
         "${pkgname}.png"
         "${pkgname}")
 
-sha256sums=('02b4fe83719bb52c6adc5bd18b51f8cff929b267050a62a1cc4248e1b08ae381'
+sha256sums=('eb68b717ab863680bccf9e625086100c08a659c42872c679d9449da6bb9944b4'
             '8fc345f601f7a14f6e790e825dc4d683dc4f13c8e9d1dfe9111c8d9c8faad1d0'
             '135faa3f0beb8ecc1b704cf376408e8bd5f62f32ba50a84002c14321d0bb0b68'
             'e81cc6c95029112657553cd665a1f48940e61b857bc8f1f8cde1733ce76a7b04')
