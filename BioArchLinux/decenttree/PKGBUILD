@@ -2,7 +2,7 @@
 
 pkgname=decenttree
 pkgver=1.0.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Fast Neighbor-Joining and other distance-based methods for phylogenetics \
 	https://doi.org/10.1093/bioinformatics/btad536"
 arch=(x86_64)
@@ -12,7 +12,8 @@ depends=('gcc-libs' 'glibc')
 makedepends=('cmake' 'make' 'gcc' 'git' )
 source=("git+$url.git#tag=v${pkgver}"
 	"https://github.com/iqtree/decenttree/pull/9.patch")
-md5sums=('edf69e616ea84c9d78c9493b64731e81')
+md5sums=('565562021c41b102a7703d5b9610634a'
+         '74c55f08c44a20038a6b5466f10768e6')
 
 prepare(){
   cd $pkgname
