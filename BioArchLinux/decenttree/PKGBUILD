@@ -1,0 +1,32 @@
+# Maintainer: Guoyi Zhang <myname at malacology dot net>
+
+pkgname=decenttree
+pkgver=1.0.0
+pkgrel=0
+pkgdesc="Fast Neighbor-Joining and other distance-based methods for phylogenetics \
+	https://doi.org/10.1093/bioinformatics/btad536"
+arch=(x86_64)
+url="https://github.com/iqtree/decenttree"
+license=('GPL-2.0-or-later')
+depends=('zlib')
+makedepends=('cmake' 'make' 'gcc' 'git' )
+source=("git+$url.git#tag=v${pkgver}"
+	"https://github.com/iqtree/decenttree/pull/9.patch")
+md5sums=('edf69e616ea84c9d78c9493b64731e81')
+
+prepare(){
+  cd $pkgname
+  patch -np1 < $srcdir/9.patch
+}
+
+build() {
+  cd $pkgname
+  mkdir -p build && cd build
+  cmake ..
+  make
+}
+
+package() {
+  cd $pkgname/build 
+  make DESTDIR="${pkgdir}" install
+}
