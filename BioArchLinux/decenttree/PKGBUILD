@@ -8,7 +8,7 @@ pkgdesc="Fast Neighbor-Joining and other distance-based methods for phylogenetic
 arch=(x86_64)
 url="https://github.com/iqtree/decenttree"
 license=('GPL-2.0-or-later')
-depends=('zlib')
+depends=('gcc-libs' 'glibc')
 makedepends=('cmake' 'make' 'gcc' 'git' )
 source=("git+$url.git#tag=v${pkgver}"
 	"https://github.com/iqtree/decenttree/pull/9.patch")
@@ -22,7 +22,7 @@ prepare(){
 build() {
   cd $pkgname
   mkdir -p build && cd build
-  cmake ..
+  cmake -DCMAKE_INSTALL_PREFIX=/usr ..
   make
 }
 
