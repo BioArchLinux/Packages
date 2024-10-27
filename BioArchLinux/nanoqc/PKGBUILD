@@ -3,7 +3,7 @@
 pkgname=nanoqc
 _module=nanoQC
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Create fastQC-like plots for Oxford Nanopore sequencing data"
 url="https://github.com/wdecoster/nanoQC"
 depends=(
