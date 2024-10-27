@@ -6,6 +6,8 @@ pre_build_script: |
   pypi_pre_build(depends = ['python-pandas', 'python-biopython', 'python-requests'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'MIT', pep517 = False)
 post_build_script: |
   pypi_post_build()
+repo_depends:
+  - python-biopython
 update_on:
   - source: pypi
     pypi: ampcombi
