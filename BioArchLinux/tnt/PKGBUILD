@@ -12,7 +12,7 @@ url="http://www.lillo.org.ar/phylogeny/tnt/"
 license=('custom')
 makedepends=('unzip' 'gzip')
 depends=('ncurses5-compat-libs')
-source=("http://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip"
+source=("https://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip"
 	"gTNT.desktop")
 sha256sums=('2489e020dd97f7becf1b095c2474003c58218c9f6e16f03b0ada40a463520927'
             '9ce723f975e9b9a99ad45a4b2f929e7ed198b51499325b1a4c4df38d90b030e0')
