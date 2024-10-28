@@ -22,10 +22,6 @@ update_on:
   md5: true
 - alias: r
 - source: alpmfiles
-  pkgname: arpack
-  filename: usr/lib/libarpack\.so\.([^.]+)
-  repo: extra
-- source: alpmfiles
   pkgname: blas
   filename: usr/lib/libblas\.so\.([^.]+)
   repo: extra
@@ -46,10 +42,6 @@ update_on:
   repo: core
   provided: libxml2.so
   strip_release: true
-- source: alpmfiles
-  pkgname: plfit
-  filename: usr/lib/libplfit\.so\.([^.]+)
-  repo: extra
 - source: alpm
   alpm: util-linux-libs
   repo: core

@@ -10,7 +10,6 @@ def pre_build():
     r_pre_build(
         _G,
         expect_systemrequirements = "libxml2 (optional), glpk (>= 4.57, optional)",
-        ignore_fortran_files = True,
     )
 
 def post_build():
