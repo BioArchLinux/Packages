@@ -4,4 +4,4 @@ maintainers:
     email: kuoi@bioarchlinux.org
 update_on:
   - source: cmd
-    cmd: curl -sS https://www.lillo.org.ar/phylogeny/oblong/ | grep 'oblong.zip' | awk '{print $7}' | sed 's/-/./g'
+    cmd: curl -sS -k https://www.lillo.org.ar/phylogeny/oblong/ | grep 'oblong.zip' | awk '{print $7}' | sed 's/-/./g'

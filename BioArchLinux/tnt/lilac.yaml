@@ -8,7 +8,8 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: cmd
-    cmd: curl -sS https://www.lillo.org.ar/phylogeny/ | grep 'tnt' | sed 's@-@.@g' | awk '{print $6}'
+    cmd: curl -sS -k https://www.lillo.org.ar/phylogeny/ | grep 'tnt' | sed 's@-@.@g' | awk '{print $6}'
 repo_depends:
   - ncurses5-compat-libs
   - pvm
+  - mpich

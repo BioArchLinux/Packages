@@ -61,6 +61,8 @@ package() {
   make DESTDIR="${pkgdir}" install
 
   ln -sf mpiexec.hydra "${pkgdir}/opt/mpich/bin/mpirun.hydra"
+  # for mpitnt
+  ln -s  /opt/mpich/lib/libmpich.so "$pkgdir"/usr/lib/libmpich.so.0
 
   install -D -m644 "${srcdir}/${pkgname}-${pkgver}/COPYRIGHT" "${pkgdir}/usr/share/licenses/mpich/license.txt"
   install -D -m755 "${srcdir}/${pkgname}.profile" "${pkgdir}/etc/profile.d/mpich.sh"
