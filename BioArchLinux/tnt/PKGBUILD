@@ -30,13 +30,13 @@ package_tnt () {
 	install -Dm 755 tnt ${pkgdir}/usr/bin/tnt
 }
 package_tnt-mpi () {
-  depends=('ncurses5-compat-libs' 'pvm' 'openmpi' 'glibc')
+  depends=('ncurses5-compat-libs' 'pvm' 'openmpi' 'glibc' 'mpich')
 	cd ${srcdir}/TNT-bin
 	chmod +x mpitnt
 	install -Dm 755 mpitnt ${pkgdir}/usr/bin/mpitnt
 }
 package_tnt-gui () {
-  depends=('ncurses5-compat-libs' 'gtk3' 'glibc' 'mpich')
+  depends=('ncurses5-compat-libs' 'gtk3' 'glibc')
   optdepends=('pvm')
 	cd ${srcdir}/TNT-bin
 	chmod +x gTNT
