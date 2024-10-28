@@ -9,4 +9,4 @@ post_build_script: |
 update_on:
   - source: regex
     url: "https://www.mpich.org/static/downloads/"
-    regex: '(\d+.\d+.\d+)/'
+    regex: href="(\d+.\d+.\d+)/"
