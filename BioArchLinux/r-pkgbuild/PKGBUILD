@@ -5,10 +5,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=pkgbuild
-_pkgver=1.4.4
+_pkgver=1.4.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=0
 pkgdesc="Find Tools Needed to Build R Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -24,15 +24,14 @@ optdepends=(
   r-covr
   r-cpp11
   r-knitr
-  r-mockery
   r-rcpp
   r-rmarkdown
   r-testthat
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('736ff24115553c3f4035cfc97f1fbc1b')
-b2sums=('aff689582b5f1a3a4ea0fade29a1c0d442abc2c3935f5b84e56bfac3df5aac3dbac41ee025c98a7d94af33c9b69746121a1ad237d75ed37744a73252ddcc4afb')
+md5sums=('6989d884d31b977b71999abffebc00f3')
+b2sums=('1835d6e58a47fcb23f687dac1ddad797d40ac2ba4a9d227c183c2f2e09f7970d6f5bd487b1250195d5858d1096a8ba44e7910ae2837bf71f20feadd338cde3e5')
 
 build() {
   mkdir build
