@@ -3,7 +3,7 @@
 
 pkgname=amrfinderplus
 pkgver=4.0.3
-pkgrel=1
+pkgrel=2
 _tag=amrfinder_v${pkgver}
 pkgdesc="Identify Antimicrobial resistance genes in assembled bacterial nucleotide and protein sequence. https://doi.org/10.1038/s41598-021-91456-0"
 arch=('x86_64' 'i686')
