@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=MatrixGenerics
-_pkgver=1.16.0
+_pkgver=1.18.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -21,8 +21,8 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9bf517b6f4c15ad61bb18267244aefe1')
-b2sums=('be3c1bfd7e46cdb301bddd6f4e105fbaba110d7ff27d02107b481bef8449d0bea7dfbd4a886374f8a8549734ac5293511d52e685f6cfa43f7cbcf6f05f7fafd8')
+md5sums=('be0b5a464be94a86963f7c1c30c8c3da')
+b2sums=('faa963f2471bbb7a0d274246de9a667d8648f08d7921b3d236ffedfb9936ff601feeba5e5ac988d6ef7d115bd9a97aeac49849514762c7fc546383bf168a1991')
 
 build() {
   mkdir build
