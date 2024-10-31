@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=zlibbioc
-_pkgver=1.50.0
+_pkgver=1.52.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -21,8 +21,8 @@ optdepends=(
   r-knitr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('89333faad136c59c77bcee69e228e843')
-b2sums=('545d386f781b9504f79a94a6eef90294d6f6dc2141c3c73ead0282146582f24426f618da0c9801c1e8c8a27119ab5f2dc35a8035946fa3aeeef085ac313744f0')
+md5sums=('a8a1ac34bfefde2d1ec682600be874a1')
+b2sums=('8447845b3a9149afc4e21fb51ddc25f83534c930dafbafa831ff0ec83ad61f42f9ed6bef5b9b3b8e1938995893741d5a76b7f9839ab2880ba3efdec73e129998')
 
 build() {
   mkdir build
