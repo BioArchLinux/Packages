@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BiocGenerics
-_pkgver=0.50.0
+_pkgver=0.52.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="S4 generic functions used in Bioconductor"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -18,20 +18,23 @@ optdepends=(
   r-annotate
   r-annotationdbi
   r-biobase
-  r-biostrings
   r-delayedarray
   r-deseq2
   r-flowclust
   r-genomicranges
+  r-hdf5array
   r-iranges
   r-msnbase
+  r-pwalign
   r-rsamtools
   r-runit
+  r-s4arrays
   r-s4vectors
+  r-sparsearray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c5fbe764c2f30673733148d50de8b1f7')
-b2sums=('ee41de46686cf1abf1857507a258c2bc2939d3bd0ee952ec9b5b09556cbeb863148818aedbe22c9cb2adef1fa8477071f12cca398538efb295163c6fd382c012')
+md5sums=('17433e48365e2cb89bc5e59de7ead46b')
+b2sums=('e4e4058fba273d8eec71fd58cd8dc8982e0c54684cecbd207a00808fd27d04e24ee5f24eacd4a87fed3a1374ee69b68754d95570bd960bfdd1d43a9bf6bac0fd')
 
 build() {
   mkdir build
