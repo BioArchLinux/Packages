@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GenomeInfoDbData
-_pkgver=1.2.12
+_pkgver=1.2.13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -13,8 +13,8 @@ depends=(
   r
 )
 source=("https://bioconductor.org/packages/release/data/annotation/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('741b4a7d201ea20496fd3a0f76e83e27')
-b2sums=('44c8d7787b942e3e8f812c718993355b8ff8e27ac1686d3e2aaa368a688f43962254dd840a21bda269702752d592eae96c7dd2865e9a16b8ea6e9cd921b85a98')
+md5sums=('8798e58b89d84d9fa6a85f2191704668')
+b2sums=('7be940d1132a7744067ebc5ec662d169e19d56eea8459736568985d90add1ec894a39b5ecb68215716bccf9ac50ed0916137e09e4d45034fd9448981672179f7')
 
 build() {
   mkdir build
