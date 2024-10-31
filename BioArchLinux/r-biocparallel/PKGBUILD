@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=BiocParallel
-_pkgver=1.38.0
+_pkgver=1.40.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -40,8 +40,8 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1871c9e248d8da68b52166de0026fd2c')
-b2sums=('1a1d2dc9a8769156e16001ff3a353d007a3c0b6e0e4d5c64424ff7920735611dcafbb9f4fa1d7014655ca007afbf9742d7b0d90cce483d4b309b8e3b7aca6a3c')
+md5sums=('f2801ca5ef796a79de667cab673a4603')
+b2sums=('540890b2819dad150b41abb03e2cdb401fb9a66d7d15c6831aa1b478580f5a1960d2a9c9231e5041a4c79962d7025324562e63cbec66dd5052b77d533a43bcc8')
 
 build() {
   mkdir build
