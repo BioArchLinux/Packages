@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=XVector
-_pkgver=0.44.0
+_pkgver=0.46.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -22,8 +22,8 @@ optdepends=(
   r-runit
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('67da9cf6f48c5fbdeb762231ba3f90a0')
-b2sums=('39aa611e28259719ce2161df5022e52e85a791f1cd45cb0021796e5d593d74fa89d3dee87452b79006269d13b1c6874c1ddc0413f0d54719cd0058ef2bdc86df')
+md5sums=('038527773e20903db8e40a7cfa44ab27')
+b2sums=('2213876efe04755c9c2f1b9adb7a1d6a74856f7c798b0ae7a642128e8fa1cb7e1d374c74cbc4432d2e0f8a8ace0c8d0253be814b1725cf605bed9793aaf29512')
 
 build() {
   mkdir build
