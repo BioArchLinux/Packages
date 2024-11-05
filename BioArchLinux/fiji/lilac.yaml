@@ -8,7 +8,7 @@ post_build_script: |
   git_pkgbuild_commit()
 update_on:
   - source: regex
-    url: "http://www.clustal.org/download/current"
+    url: "https://downloads.imagej.net/fiji/archive/"
     regex: '\+d-\d+/'
     from_pattern: (\d+)-(\d+)/
     to_pattern: \1\.\2
