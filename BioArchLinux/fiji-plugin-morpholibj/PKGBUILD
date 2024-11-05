@@ -2,7 +2,7 @@
 
 pkgname=fiji-plugin-morpholibj
 pkgver=1.6.4
-pkgrel=0
+pkgrel=1
 pkgdesc="Collection of mathematical morphology methods and plugins for ImageJ (Fiji version)"
 url="https://imagej.net/MorphoLibJ"
 arch=("any")
