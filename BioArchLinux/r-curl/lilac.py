@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "libcurl: libcurl-devel (rpm) or libcurl4-openssl-dev (deb).",
+        expect_systemrequirements = "libcurl (>= 7.62): libcurl-devel (rpm) or libcurl4-openssl-dev (deb)",
     )
 
 def post_build():
