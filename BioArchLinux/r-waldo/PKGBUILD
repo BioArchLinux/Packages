@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=waldo
-_pkgver=0.6.0
+_pkgver=0.6.1
 pkgname=r-${_pkgname,,}
-pkgver=0.6.0
+pkgver=0.6.1
 pkgrel=1
 pkgdesc='Find Differences Between R Objects'
 arch=('any')
@@ -27,7 +27,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('3b4da128dad765298fd4144e517ba2a84a8d3f9cba4e486a34dab686d4e620e1')
+sha256sums=('c9c3f3732a2fe7008735c8bff7b0139489132a5a8b1b8df96768fbe9dd1e76c9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
