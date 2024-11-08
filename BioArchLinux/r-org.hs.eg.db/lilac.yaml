@@ -10,3 +10,5 @@ update_on:
   repo: bioc-data-annotation
   md5: true
 - alias: r
+- source: manual
+  manual: 1
