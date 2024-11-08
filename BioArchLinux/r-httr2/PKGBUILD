@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.0.5
+_pkgver=1.0.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -43,6 +43,7 @@ optdepends=(
   r-jsonlite
   r-knitr
   r-later
+  r-paws.common
   r-promises
   r-rmarkdown
   r-testthat
@@ -52,9 +53,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")
-md5sums=('9d59e54a47096fa573753c14e85e7457'
+md5sums=('3ea8cdbb6800ea3000a81871fda041c4'
          '7cd23279cf53ca0a0197ee2fad503067')
-b2sums=('ce6a973de1cab4c3eba39d4b5d83d52c7dccaa09dfd0b32cefaff530a6a643597caed25c7be2324b2595281c575b69881d52961176cf95a416e4339868e304ae'
+b2sums=('9c90500ed4d2571b4a17d3e2efe2102a30ca747c21b45019ddfe0b03bf34867f903a285fc76930ecc65f00f7d25141855188a40c32ece93079ec02a72c6ad522'
         'b639d73e84ce55c6c056edb97c5f684a7bb5c7269d53d55f49b8507f74af7148019a56db413c17daac41b37f86cce51f4b3ba4be358247ad716bf4b22ef68b48')
 
 prepare() {
