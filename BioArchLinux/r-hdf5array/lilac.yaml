@@ -10,6 +10,7 @@ repo_depends:
 - r-rhdf5filters
 - r-s4arrays
 - r-s4vectors
+- r-sparsearray
 repo_makedepends:
 - r-rhdf5lib
 update_on:
