@@ -6,6 +6,7 @@ repo_depends:
 - r-delayedarray
 - r-dqrng
 - r-rcpp
+- r-sparsearray
 repo_makedepends:
 - r-bh
 - r-testthat
