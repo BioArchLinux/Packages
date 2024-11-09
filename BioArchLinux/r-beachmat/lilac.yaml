@@ -7,8 +7,11 @@ repo_depends:
 - r-delayedarray
 - r-rcpp
 - r-sparsearray
+repo_makedepends:
+- r-assorthead
 update_on:
-- regex: beachmat_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/beachmat
+- source: rpkgs
+  pkgname: beachmat
+  repo: bioc
+  md5: true
 - alias: r
