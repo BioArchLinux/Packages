@@ -7,6 +7,7 @@ repo_depends:
 - r-iranges
 - r-matrixgenerics
 - r-s4vectors
+- r-sparsearray
 - r-sparsematrixstats
 update_on:
 - source: rpkgs
