@@ -1,11 +1,11 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=SummarizedExperiment
-_pkgver=1.34.0
+_pkgver=1.36.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
-pkgdesc="SummarizedExperiment container"
+pkgrel=0
+pkgdesc="A container (S4 class) for matrix-like assays"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
@@ -34,12 +34,14 @@ optdepends=(
   r-rhdf5
   r-rmarkdown
   r-runit
+  r-singlecellexperiment
+  r-sparsearray
   r-testthat
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('fc10d4f9637df08027e0ad3efa1d4716')
-b2sums=('77370628f58464f135d643c8b79444181e20fb7294020097657c959d72e55d8e399dd421240e83515fdda6015348e3f991032c2f414b7169d25f286e0468b50f')
+md5sums=('c1925961cb5cec2af5f5ed843128b5cc')
+b2sums=('937d6b58c4d98ab7f5144c61403ac7d1ac819ab5cb816ae217bce4ae1dd73d62044b8dfc9c58a073362d4b4972e4f43c5db98ce065ec1b6cbe748fed33bacd93')
 
 build() {
   mkdir build
