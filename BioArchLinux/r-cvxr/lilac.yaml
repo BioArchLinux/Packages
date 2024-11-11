@@ -4,11 +4,10 @@ maintainers:
   email: su975853527@gmail.com
 repo_depends:
 - r-bit64
-- r-clarabel
+- r-cli
 - r-ecosolver
 - r-gmp
 - r-osqp
-- r-r6
 - r-rcpp
 - r-rmpfr
 - r-scs
