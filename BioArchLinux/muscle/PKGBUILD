@@ -2,7 +2,7 @@
 # Contributor: Mick Elliot <micke@sfu.ca>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 pkgname=muscle
-pkgver=5.2
+pkgver=5.3
 pkgrel=1
 pkgdesc="Multiple sequence alignment software enabling improved estimates of phylogenetic tree confidence by ensemble bootstrapping. https://doi.org/10.1101/2021.06.20.449169"
 arch=('i686' 'x86_64')
@@ -11,7 +11,7 @@ license=('GPL-3.0-or-later')
 depends=('gcc-libs' 'glibc')
 makedepends=('python' 'bash' 'wget')
 source=($pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
-sha256sums=('7aff1473241a36da94a88f37920a343fae91d2b6faae22e15c06591d1d0339b6')
+sha256sums=('74b22a94e630b16015c2bd9ae83aa2be2c2048d3e41f560b2d4a954725c81968')
 
 build() {
   cd "$srcdir"/$pkgname-$pkgver
