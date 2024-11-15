@@ -1,6 +1,6 @@
 _name=AMPcombi
 pkgname=python-ampcombi
-pkgver=0.2.2
+pkgver=2.0.0
 pkgrel=1
 pkgdesc="A parsing tool for AMP tools."
 arch=(any)
@@ -8,16 +8,16 @@ url="http://pypi.python.org/pypi/AMPcombi/"
 license=(MIT)
 depends=('python-pandas' 'python-biopython' 'python-requests')
 makedepends=('python-setuptools' 'python-setuptools')
-source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/AMPcombi-0.2.2.tar.gz")
-sha256sums=('da9a179851a8f2041d05ccd10dd45b58099e84059e2e66a9ee405d1913471b58')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/ampcombi-2.0.0.tar.gz")
+sha256sums=('ed1127936b4ad328469c6aee3c76a0c1a6e3881a8d5029cbc40943500a3a345d')
 
 build() {
-  cd "$srcdir/AMPcombi-0.2.2"
+  cd "$srcdir/ampcombi-2.0.0"
   python3 setup.py build
 }
 
 package() {
-  cd "$srcdir/AMPcombi-0.2.2"
+  cd "$srcdir/ampcombi-2.0.0"
   python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
 
   # make sure we don't install any world-writable or root-readable-only files
