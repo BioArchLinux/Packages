@@ -1,6 +1,6 @@
 # Maintainer: sukanka <su975853527 at gmail dot com>
 pkgname=ucsc-genome-browser
-pkgver=473
+pkgver=474
 pkgrel=1
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('x86_64')
