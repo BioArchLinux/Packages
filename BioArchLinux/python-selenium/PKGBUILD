@@ -1,10 +1,13 @@
+# Maintainer: txtsd <aur.archlinux@ihavea.quest>
 # Maintainer: Carl Smedstad <carsme@archlinux.org>
-# Maintainer:  Anton Kudelin <kudelin at proton dot me>
+# Contributor: bpierre <benoit.pierre@gmail.com>
+# Contributor: Anton Kudelin <kudelin at proton dot me>
 # Contributor: Jelle van der Waa <jelle@vdwaa.nl>
 # Contributor: Aaron DeVore <aaron.devore@gmail.com>
 
 pkgname=python-selenium
-pkgver=4.26.0
+_pkgname="${pkgname#python-}"
+pkgver=4.27.1
 pkgrel=1
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(x86_64)
@@ -30,37 +33,30 @@ makedepends=(
   python-setuptools-rust
   python-wheel
 )
-checkdepends=(python-pytest)
 options=(!lto)
-source=(
-  "$pkgname-$pkgver.tar.gz::$url/archive/selenium-$pkgver.tar.gz"
-  "fix-selenium-manager-build.patch"
-)
-sha256sums=('593af8abafbdf98fcac4dc35938a9cddae148b5096b584b69b97a7ca190c8fdf'
-            'af031d7fd32bb4b8216d8b16957e2102b4f319ae22d94460636db90947d2d6ba')
+source=("https://files.pythonhosted.org/packages/source/${_pkgname::1}/${_pkgname}/${_pkgname}-${pkgver}.tar.gz")
+sha256sums=('5296c425a75ff1b44d0d5199042b36a6d1ef76c04fb775b97b40be739a9caae2')
 
-_archive="selenium-selenium-$pkgver"
+_archive="${_pkgname}-${pkgver}"
 
 prepare() {
-  cd "$srcdir/$_archive"
-  patch -Np1 -i "$srcdir/fix-selenium-manager-build.patch"
+  cd "${_archive}"
 
-  cd "$srcdir/$_archive/rust"
+  # Ensure `selenium.webdriver.common.fedcm` gets packaged
+  touch ./selenium/webdriver/common/fedcm/__init__.py
+
+  cd src
+  export RUSTUP_TOOLCHAIN=stable
   cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
 }
 
 build() {
-  cd "$srcdir/$_archive/py"
+  cd "${_archive}"
   export RUSTUP_TOOLCHAIN=stable
   python -m build --wheel --no-isolation
 }
 
-check() {
-  cd "$srcdir/$_archive/py"
-  pytest
-}
-
 package() {
-  cd "$srcdir/$_archive/py"
-  python -m installer --destdir="$pkgdir" dist/*.whl
+  cd "${_archive}"
+  python -m installer --destdir="${pkgdir}" dist/*.whl
 }
