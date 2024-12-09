@@ -6,7 +6,7 @@ _pkgname=later
 _pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Utilities for Scheduling Functions to Execute Later with Event Loops"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
