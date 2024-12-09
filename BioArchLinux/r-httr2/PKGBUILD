@@ -2,7 +2,7 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.0.6
+_pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -53,9 +53,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")
-md5sums=('3ea8cdbb6800ea3000a81871fda041c4'
+md5sums=('8a61f250aa292da398ea2e89167e8434'
          '7cd23279cf53ca0a0197ee2fad503067')
-b2sums=('9c90500ed4d2571b4a17d3e2efe2102a30ca747c21b45019ddfe0b03bf34867f903a285fc76930ecc65f00f7d25141855188a40c32ece93079ec02a72c6ad522'
+b2sums=('cbae038ddb404fb9428bad5920bb46221b2ece7d88b52196d5214e88bcaf0987aca762567a35e7ce9eb4d931d665a88373f2c0efa3ca4c1cec1f646c3fc497d7'
         'b639d73e84ce55c6c056edb97c5f684a7bb5c7269d53d55f49b8507f74af7148019a56db413c17daac41b37f86cce51f4b3ba4be358247ad716bf4b22ef68b48')
 
 prepare() {
