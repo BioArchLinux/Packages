@@ -11,7 +11,7 @@ _quarto="FALSE"
 _sociver="4.0.3"
 _nodeversion="22"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
-pkgrel=1
+pkgrel=2
 pkgdesc="A powerful and productive integrated development environment \
 	 (IDE) for R programming language"
 arch=('x86_64')
