@@ -73,6 +73,8 @@ depends=('r'
     "r-jaspvisualmodeling"
     "r-jaspacceptancesampling"
     "r-jaspqualitycontrol"
+    "r-jaspbff"
+    "r-jaspbfpack"
 )
 provides=($_pkgname)
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jasp-stats/jasp-desktop/archive/refs/tags/v${pkgver}.tar.gz"

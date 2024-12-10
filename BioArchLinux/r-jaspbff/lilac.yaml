@@ -1,0 +1,18 @@
+maintainers:
+- github: sukanka
+  email: su975853527@gmail.com
+build_prefix: extra-x86_64
+repo_depends:
+- r-jaspbase
+- r-jaspgraphs
+- r-bff
+pre_build: vcs_update
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+update_on:
+- source: github
+  github: jasp-stats/jaspBFF
+  use_max_tag: true
+  prefix: "v"
+- alias: r
