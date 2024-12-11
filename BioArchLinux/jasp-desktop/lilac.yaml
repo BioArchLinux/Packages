@@ -42,6 +42,8 @@ repo_depends:
   - "r-jaspvisualmodeling"
   - "r-jaspacceptancesampling"
   - "r-jaspqualitycontrol"
+  - "r-jaspbff"
+  - "r-jaspbfpack"
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

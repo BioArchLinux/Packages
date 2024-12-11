@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: su975853527@gmail.com
+repo_depends:
+- r-grdevices
+- r-ggplot2
+- r-matrix
+- r-gsl
+- r-stats
+- r-rlang
+update_on:
+- regex: bff_([\d._-]+).tar.gz
+  source: regex
+  url: https://www.github.com/rshudde/BFF
+- alias: r
