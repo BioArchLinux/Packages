@@ -1,7 +1,7 @@
 # Maintainer: Hu Butui <hot123tea123@gmail.com>
 
 _pkgname=vscDebugger
-_pkgver=0.4.7
+_pkgver=${pkgver}
 pkgname=r-${_pkgname,,}
 pkgver=0.5.3
 pkgrel=1
