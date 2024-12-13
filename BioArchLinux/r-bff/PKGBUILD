@@ -5,7 +5,7 @@ pkgver=4.3.0
 pkgrel=1
 pkgdesc='Bayes Factor Functions'
 arch=('any')
-url="https://www.github.com/rshudde/${_pkgname}"
+url="https://github.com/rshudde/${_pkgname}"
 license=('LGPL')
 depends=(
   r

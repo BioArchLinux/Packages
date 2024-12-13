@@ -10,7 +10,7 @@ repo_depends:
 - r-stats
 - r-rlang
 update_on:
-- regex: bff_([\d._-]+).tar.gz
+- regex: 'Version:\s*([\d._-]+)'
   source: regex
-  url: https://www.github.com/rshudde/BFF
+  url: https://raw.githubusercontent.com/rshudde/BFF/master/DESCRIPTION
 - alias: r
