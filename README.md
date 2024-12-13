@@ -59,5 +59,6 @@ You can use [junest](https://github.com/fsquillace/junest) BioArchLinux image to
 > Zhang G. Hu Y. Drobot V. Staal J. Yi Y. Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux. F1000Research 11: 809. https://doi.org/10.7490/f1000research.1119039.1
 
 [Get Bibtex Here](https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux.bibtex)
+
 ## Submitting packages
 Those wishing to submit 'PKGBUILD' for packages to repo please refer to [adding packages](/Documentation/adding%20packages.md) document 
