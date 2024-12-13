@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc='Bayes Factor Functions'
 arch=('any')
 url="https://github.com/rshudde/${_pkgname}"
-license=('LGPL')
+license=('GPL2')
 depends=(
   r
   r-grdevices
@@ -23,15 +23,17 @@ optdepends=(
   r-bsda
   r-vdiffr
 )
-source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
-sha256sums=('030e140d592e3ad533e880b46d2e894e578de9c326a9b090dcb192c957e1116f')
+makedepends=('git')
+source=("git+https://github.com/rshudde/${_pkgname}.git")
+sha256sums=('SKIP')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir -p ${srcdir}/usr/lib/R/library
+  R -e "install.packages('${srcdir}/${_pkgname}',\
+     type='source', repos=NULL,lib='${srcdir}/usr/lib/R/library', INSTALL_opts='--no-multiarch --no-docs --no-test-load')"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+
+  cp -a --no-preserve=ownership "${srcdir}/usr" "${pkgdir}"
 }
-# vim:set ts=2 sw=2 et:
