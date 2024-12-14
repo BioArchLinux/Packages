@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-bench
+- r-callr
+- r-covr
+- r-knitr
+- r-methods
+- r-rmarkdown
+- r-testthat
+- r-tibble
+update_on:
+- regex: S7_([\d._-]+).tar.gz
+  source: regex
+  url: https://CRAN.R-project.org/package=S7
+- alias: r
