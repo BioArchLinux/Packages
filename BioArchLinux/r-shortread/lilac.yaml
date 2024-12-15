@@ -16,7 +16,6 @@ repo_depends:
 - r-pwalign
 - r-rsamtools
 - r-s4vectors
-- r-zlibbioc
 repo_makedepends:
 - r-rhtslib
 - r-xvector
