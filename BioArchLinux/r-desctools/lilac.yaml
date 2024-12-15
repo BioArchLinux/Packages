@@ -8,6 +8,7 @@ repo_depends:
 - r-exact
 - r-expm
 - r-gld
+- r-haven
 - r-httr
 - r-mvtnorm
 - r-rcpp
