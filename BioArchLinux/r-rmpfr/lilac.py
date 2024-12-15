@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "gmp (>= 4.2.3), mpfr (>= 3.0.0), pdfcrop (part of TexLive) is required to rebuild the vignettes.",
+        expect_systemrequirements = "gmp (>= 4.2.3), mpfr (>= 3.1.0), pdfcrop (part of TexLive) is required to rebuild the vignettes.",
     )
 
 def post_build():
