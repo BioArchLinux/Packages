@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-limma
 - r-locfit
-- r-rcpp
 update_on:
 - source: rpkgs
   pkgname: edgeR
