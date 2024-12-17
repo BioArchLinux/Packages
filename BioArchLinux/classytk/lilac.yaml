@@ -5,7 +5,7 @@ post_build_script: |
   git_pkgbuild_commit()
 maintainers:
   - github: sukanka
-    email: su975853527@gmail.com
+    email: sukanka@askk.cc
 repo_depends:
   - extral
   - tcl-pkgtools

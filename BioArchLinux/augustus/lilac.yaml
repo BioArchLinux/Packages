@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: sukanka
-    email: su975853527@gmail.com
+    email: sukanka@askk.cc
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver)
 post_build_script: |
