@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
   - github: sukanka
-    email: su975853527@gmail.com
+    email: sukanka@askk.cc
 repo_depends:
   - r-dplyr
   - r-magrittr

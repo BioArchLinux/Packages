@@ -1,11 +1,11 @@
 maintainers:
   - github: sukanka
-    email: su975853527@gmail.com
+    email: sukanka@askk.cc
 build_prefix: extra-x86_64
 repo_depends:
-- r-hypergeo 
+- r-hypergeo
 - r-purrr
-- r-suppdists 
+- r-suppdists
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

@@ -1,6 +1,6 @@
 maintainers:
   - github: sukanka
-    email: su975853527@gmail.com
+    email: sukanka@askk.cc
 build_prefix: extra-x86_64
 repo_depends:
   - r-mvtnorm
