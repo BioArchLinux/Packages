@@ -4,7 +4,7 @@ _pkgname=bigD
 _pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Flexibly Format Dates and Times to a Given Locale"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
