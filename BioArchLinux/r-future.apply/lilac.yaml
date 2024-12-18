@@ -6,7 +6,8 @@ repo_depends:
 - r-future
 - r-globals
 update_on:
-- regex: future.apply_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=future.apply
+- source: rpkgs
+  pkgname: future.apply
+  repo: cran
+  md5: true
 - alias: r
