@@ -10,14 +10,17 @@ repo_depends:
 - r-ggplot2
 - r-ggrepel
 - r-gridextra
+- r-gsignal
 - r-igraph
 - r-matrixstats
 - r-rarpack
 - r-rcolorbrewer
 - r-reshape2
+- r-rgl
 - r-tidyr
 update_on:
-- regex: mixOmics_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/mixOmics
+- source: rpkgs
+  pkgname: mixOmics
+  repo: bioc
+  md5: true
 - alias: r
