@@ -23,6 +23,7 @@ repo_depends:
 - r-withr
 - r-xtable
 repo_makedepends:
+- r-coro
 - r-future
 - r-ggplot2
 - r-testthat
