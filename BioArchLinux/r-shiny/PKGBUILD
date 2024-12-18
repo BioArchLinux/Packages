@@ -6,7 +6,7 @@ _pkgname=shiny
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="Web Application Framework for R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
