@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 - r-biocfilecache
+- r-curl
 - r-digest
 - r-httr2
 - r-progress
