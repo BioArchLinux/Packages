@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=pillar
-_pkgver=1.9.0
+_pkgver=1.10.0
 pkgname=r-${_pkgname,,}
-pkgver=1.9.0
-pkgrel=5
+pkgver=1.10.0
+pkgrel=1
 pkgdesc='Coloured Formatting for Columns'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -43,7 +43,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('f23eb486c087f864c2b4072d5cba01d5bebf2f554118bcba6886d8dbceb87acc')
+sha256sums=('97f6bb5d54388e9fbc2d6e5d3c883374105fadbc9c9aad38e7b4e1389970eadb')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
