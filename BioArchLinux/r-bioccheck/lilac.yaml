@@ -8,6 +8,7 @@ repo_depends:
 - r-biocmanager
 - r-biocviews
 - r-callr
+- r-cli
 - r-graph
 - r-httr2
 - r-knitr
