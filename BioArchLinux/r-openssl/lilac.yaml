@@ -24,3 +24,5 @@ update_on:
   repo: core
   provided: libssl.so
   strip_release: true
+- source: manual
+  manual: 1

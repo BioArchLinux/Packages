@@ -41,9 +41,17 @@ optdepends=(
   r-withr
   r-zip
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b6a52802450513035b0ede73b6826d58')
-b2sums=('4358b57aeadd2897f9d311b78ffb5cfc2be34e47feee5018e7b2bfd762014e80c807e13fb6d9a2b0777d953c78ec8a78831bfb278dfc7462ed6925156cb5429b')
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "$_pkgname-bioc-fix.patch::https://github.com/r-lib/pkgcache/commit/8cefb54e030524bbcbb5885b2f0fe663f7932142.patch")
+md5sums=('b6a52802450513035b0ede73b6826d58'
+         '801412426716bb8e4c548a9917fd0de7')
+b2sums=('4358b57aeadd2897f9d311b78ffb5cfc2be34e47feee5018e7b2bfd762014e80c807e13fb6d9a2b0777d953c78ec8a78831bfb278dfc7462ed6925156cb5429b'
+        '6ff1ec3c31f06cde3145eec6693087877197d72f04521135c70037b1a2e72c62eeed9900841bab377eb000620c04a182016c41e81b4168a6dc2c1abe97dca78a')
+
+prepare() {
+  # fix bioc version mapping for tests
+  patch -Np1 -d "$_pkgname" < "$_pkgname-bioc-fix.patch"
+}
 
 build() {
   mkdir build

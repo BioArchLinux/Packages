@@ -1,4 +1,5 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+# Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=geometries
 _pkgver=0.2.4

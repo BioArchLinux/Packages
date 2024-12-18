@@ -24,3 +24,5 @@ update_on:
   pkgname: proj
   filename: usr/lib/libproj\.so\.([^.]+)
   repo: extra
+- source: manual
+  manual: 1

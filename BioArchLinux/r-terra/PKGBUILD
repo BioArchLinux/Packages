@@ -1,5 +1,6 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: peippo <christoph+aur@christophfink.com>
 
 _pkgname=terra
 _pkgver=1.8-5
@@ -18,7 +19,6 @@ depends=(
 )
 checkdepends=(
   r-tinytest
-  systemd
 )
 optdepends=(
   r-deldir

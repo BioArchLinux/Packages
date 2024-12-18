@@ -25,3 +25,5 @@ update_on:
   repo: extra
   provided: libmariadb.so
   strip_release: true
+- source: manual
+  manual: 1

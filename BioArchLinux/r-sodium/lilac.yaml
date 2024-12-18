@@ -8,7 +8,10 @@ update_on:
   repo: cran
   md5: true
 - alias: r
-- source: alpmfiles
-  pkgname: libsodium
-  filename: usr/lib/libsodium\.so\.([^.]+)
+- source: alpm
+  alpm: libsodium
   repo: extra
+  provided: libsodium.so
+  strip_release: true
+- source: manual
+  manual: 1
