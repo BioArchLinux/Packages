@@ -4,7 +4,7 @@ _pkgname=duckdb
 _pkgver=1.1.3-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="DBI Package for the DuckDB Database Management System"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
