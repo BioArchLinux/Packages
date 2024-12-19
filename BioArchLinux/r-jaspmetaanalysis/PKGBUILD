@@ -28,6 +28,12 @@ depends=(r
   r-robma
   r-metamisc
   r-ggmcmc
+  r-clubsandwich
+  r-compquadform
+  r-sp
+  r-dfoptim
+  r-nleqslv
+  r-patchwork
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
