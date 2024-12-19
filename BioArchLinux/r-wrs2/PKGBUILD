@@ -4,7 +4,7 @@ _pkgname=WRS2
 _pkgver=1.1-6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A Collection of Robust Statistical Methods"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
