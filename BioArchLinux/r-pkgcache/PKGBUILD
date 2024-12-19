@@ -5,7 +5,7 @@ _pkgname=pkgcache
 _pkgver=2.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Cache 'CRAN'-Like Metadata and R Packages"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -44,9 +44,9 @@ optdepends=(
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "$_pkgname-bioc-fix.patch::https://github.com/r-lib/pkgcache/commit/8cefb54e030524bbcbb5885b2f0fe663f7932142.patch")
 md5sums=('b6a52802450513035b0ede73b6826d58'
-         '801412426716bb8e4c548a9917fd0de7')
+         'c31f9db16e6cc73b72672e739c549bdb')
 b2sums=('4358b57aeadd2897f9d311b78ffb5cfc2be34e47feee5018e7b2bfd762014e80c807e13fb6d9a2b0777d953c78ec8a78831bfb278dfc7462ed6925156cb5429b'
-        '6ff1ec3c31f06cde3145eec6693087877197d72f04521135c70037b1a2e72c62eeed9900841bab377eb000620c04a182016c41e81b4168a6dc2c1abe97dca78a')
+        '2b5deb4abc4cd55f355720a409397040b3d9191e5ab31f4b4367655f24d28afdd2f0235c43a6ac7f8b1d7a0973af8e8d35e415f061b959d1b75d2ee28cccad49')
 
 prepare() {
   # fix bioc version mapping for tests
