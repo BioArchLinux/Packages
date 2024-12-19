@@ -13,6 +13,7 @@ repo_depends:
 - r-s4vectors
 - r-scaledmatrix
 repo_makedepends:
+- r-assorthead
 - r-testthat
 update_on:
 - source: rpkgs
