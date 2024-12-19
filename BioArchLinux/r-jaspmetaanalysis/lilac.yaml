@@ -21,6 +21,12 @@ repo_depends:
 - r-robma
 - r-metamisc
 - r-ggmcmc
+- r-clubSandwich
+- r-CompQuadForm
+- r-sp
+- r-dfoptim
+- r-nleqslv
+- r-patchwork
 pre_build: vcs_update
 post_build_script: |
   git_pkgbuild_commit()
