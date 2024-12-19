@@ -30,6 +30,7 @@ repo_depends:
 - r-rtsne
 - r-signal
 - r-kknn
+- r-vgam
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
