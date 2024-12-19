@@ -7,7 +7,7 @@ _pkgname=future.apply
 _pkgver=1.11.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Apply Function to Elements in Parallel using Futures"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
