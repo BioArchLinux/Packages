@@ -8,6 +8,7 @@ repo_depends:
 - r-bridgesampling
 - r-conting
 - r-ggplot2
+- r-interp
 - r-jaspbase
 - r-jaspgraphs
 - r-multibridge
