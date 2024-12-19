@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-afex
+- r-bayesfactor
+- r-bayestestr
+- r-correlation
+- r-datawizard
+- r-dplyr
+- r-effectsize
+- r-glue
+- r-insight
+- r-magrittr
+- r-parameters
+- r-performance
+- r-pmcmrplus
+- r-purrr
+- r-rlang
+- r-rstantools
+- r-tidyr
+- r-withr
+- r-wrs2
+- r-zeallot
+update_on:
+- source: rpkgs
+  pkgname: statsExpressions
+  repo: cran
+  md5: true
+- alias: r

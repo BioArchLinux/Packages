@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-correlation
+- r-datawizard
+- r-dplyr
+- r-ggcorrplot
+- r-ggplot2
+- r-ggrepel
+- r-ggside
+- r-ggsignif
+- r-glue
+- r-insight
+- r-paletteer
+- r-parameters
+- r-patchwork
+- r-performance
+- r-purrr
+- r-rlang
+- r-statsexpressions
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: ggstatsplot
+  repo: cran
+  md5: true
+- alias: r
