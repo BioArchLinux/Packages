@@ -21,8 +21,8 @@ repo_depends:
 - r-robma
 - r-metamisc
 - r-ggmcmc
-- r-clubSandwich
-- r-CompQuadForm
+- r-clubsandwich
+- r-compquadform
 - r-sp
 - r-dfoptim
 - r-nleqslv
