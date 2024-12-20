@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: sukanka@askk.cc
+update_on:
+- regex: dfoptim_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/dfoptim
+- alias: r
