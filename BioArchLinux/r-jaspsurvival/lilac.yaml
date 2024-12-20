@@ -15,6 +15,7 @@ repo_depends:
   - r-survminer
   - r-jaspbase
   - r-jaspgraphs
+  - r-ggsurvfit
 update_on:
   - source: github
     github: jasp-stats/jaspSurvival
