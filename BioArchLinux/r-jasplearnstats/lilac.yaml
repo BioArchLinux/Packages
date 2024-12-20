@@ -13,6 +13,8 @@ repo_depends:
 - r-ggforce
 - r-tidyr
 - r-igraph
+- r-hdinterval
+- r-metafor
 pre_build: vcs_update
 post_build_script: |
   git_pkgbuild_commit()

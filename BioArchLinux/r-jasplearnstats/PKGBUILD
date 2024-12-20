@@ -19,6 +19,8 @@ depends=(r
   r-ggforce
   r-tidyr
   r-igraph
+  r-hdinterval
+  r-metafor
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
