@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-broom
+- r-cli
+- r-dplyr
+- r-ggplot2
+- r-glue
+- r-gtable
+- r-patchwork
+- r-survival
+- r-tidyr
+update_on:
+- regex: ggsurvfit_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=ggsurvfit
+- alias: r
