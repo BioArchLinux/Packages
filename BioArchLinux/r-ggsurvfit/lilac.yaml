@@ -10,7 +10,6 @@ repo_depends:
 - r-glue
 - r-gtable
 - r-patchwork
-- r-survival
 - r-tidyr
 update_on:
 - regex: ggsurvfit_([\d._-]+).tar.gz
