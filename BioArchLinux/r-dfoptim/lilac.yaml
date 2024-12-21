@@ -3,7 +3,8 @@ maintainers:
 - github: sukanka
   email: sukanka@askk.cc
 update_on:
-- regex: dfoptim_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/dfoptim
+- source: rpkgs
+  pkgname: knitr
+  repo: cran
+  md5: true
 - alias: r
