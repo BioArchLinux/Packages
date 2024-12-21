@@ -4,7 +4,7 @@ maintainers:
   email: sukanka@askk.cc
 update_on:
 - source: rpkgs
-  pkgname: knitr
+  pkgname: dfoptim
   repo: cran
   md5: true
 - alias: r
