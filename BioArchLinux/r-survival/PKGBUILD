@@ -1,0 +1,35 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang@gmail.com>
+
+_pkgname=survival
+_pkgver=3.8-3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Contains the core survival analysis routines, including definition of Surv objects, Kaplan-Meier and Aalen-Johansen (multi-state) curves, Cox models, and parametric accelerated failure time models."
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LGPL')
+depends=(
+  r-graphics
+  r-matrix
+  r-methods
+  r-splines
+  r-stats
+  r-utils
+)
+optdepends=(
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('41e0d3c63232bace9062357050c2aba4')
+b2sums=('2932b01d9434690075ba40afc549c9625f9cd4a3f6b97a08fb1c52e59de2ed8a8611f8f35e9b6b5c1a81e9a1461d9ad067f16afc54817dd272ac8bf971b96e88')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
