@@ -3,7 +3,7 @@
 pkgname=flair
 _module=flair-brookslab
 pkgver=2.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Tool for correction, isoform definition, and alternative splicing analysis of nanopore cDNA, native RNA, and PacBio sequencing reads"
 arch=('any')
 url="https://github.com/BrooksLabUCSC/flair"
