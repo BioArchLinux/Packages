@@ -1,7 +1,7 @@
 _name=aligncov
 pkgname=python-aligncov
 pkgver=0.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Obtain tidy alignment coverage info from sorted BAM files"
 arch=(any)
 url="https://github.com/pcrxn/aligncov"
