@@ -1,7 +1,7 @@
 _name=abritamr
 pkgname=python-abritamr
 pkgver=1.0.19
-pkgrel=1
+pkgrel=2
 pkgdesc="Running AMRFinderPlus for MDU"
 arch=(any)
 url="https://github.com/MDU-PHL/abritamr"
