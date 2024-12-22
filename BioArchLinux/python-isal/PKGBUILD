@@ -3,7 +3,7 @@
 pkgname=python-isal
 _module=${pkgname#python-}
 pkgver=1.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Faster zlib and gzip compatible compression and decompression by providing python bindings for the ISA-L library'
 arch=('x86_64')
 url="https://github.com/pycompression/python-isal"
