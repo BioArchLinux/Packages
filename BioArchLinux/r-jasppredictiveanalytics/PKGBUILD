@@ -21,6 +21,8 @@ depends=(r
   r-bart
   r-ebmaforecast
   r-imputets
+  r-scoringrules
+  r-scoringutils
 )
 optdepends=(r-testthat)
 groups=(r-jasp r-jaspextra)
