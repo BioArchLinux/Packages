@@ -1,7 +1,7 @@
 _name=arvados-python-client
 pkgname=python-arvados-python-client
 pkgver=3.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Arvados client library"
 arch=(any)
 url="https://arvados.org"
