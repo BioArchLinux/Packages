@@ -3,7 +3,7 @@
 pkgname=nanostat
 _module=NanoStat
 pkgver=1.6.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Create statistic summary of an Oxford Nanopore read dataset"
 url="https://github.com/wdecoster/nanostat"
 depends=(
