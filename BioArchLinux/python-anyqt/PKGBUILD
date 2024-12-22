@@ -3,7 +3,7 @@
 pkgname='python-anyqt'
 _module=AnyQt
 pkgver=0.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc="PyQt5/PyQt6 compatibility layer."
 arch=('x86_64')
 url="https://github.com/ales-erjavec/anyqt"
