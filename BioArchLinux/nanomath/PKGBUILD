@@ -3,7 +3,7 @@
 pkgname=nanomath
 _module=nanomath
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="simple math function for other Oxford Nanopore processing scripts"
 url="https://github.com/wdecoster/nanomath/"
 depends=(
