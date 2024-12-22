@@ -3,7 +3,7 @@
 pkgname=python-xopen
 _module=${pkgname#python-}
 pkgver=2.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Python library to pen compressed files transparently'
 arch=('any')
 url="https://github.com/pycompression/xopen/"
