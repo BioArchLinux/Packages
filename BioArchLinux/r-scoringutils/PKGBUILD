@@ -14,11 +14,9 @@ depends=(
   r-cli
   r-data.table
   r-ggplot2
-  r-methods
   r-metrics
   r-purrr
   r-scoringrules
-  r-stats
 )
 optdepends=(
   r-ggdist
