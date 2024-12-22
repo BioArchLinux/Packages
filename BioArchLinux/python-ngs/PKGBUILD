@@ -3,7 +3,7 @@
 pkgname=python-ngs
 _source=sra-tools
 pkgver=3.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="python module for NCBI NGS Language Bindings"
 url="https://github.com/ncbi/sra-tools"
 depends=(
