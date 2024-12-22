@@ -7,11 +7,9 @@ repo_depends:
 - r-cli
 - r-data.table
 - r-ggplot2
-- r-methods
 - r-metrics
 - r-purrr
 - r-scoringrules
-- r-stats
 update_on:
 - source: rpkgs
   pkgname: scoringutils
