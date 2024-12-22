@@ -6,6 +6,7 @@ repo_depends:
 - r-biobase
 - r-biocparallel
 - r-biocsingular
+- r-cli
 - r-delayedarray
 - r-delayedmatrixstats
 - r-gseabase
