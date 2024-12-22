@@ -1,7 +1,7 @@
 _name=airr
 pkgname=python-airr
 pkgver=1.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="AIRR Community Data Representation Standard reference library for antibody and TCR sequencing data."
 arch=(any)
 url="http://docs.airr-community.org"
