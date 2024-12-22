@@ -3,7 +3,7 @@
 pkgname=nanoget
 _module=nanoget
 pkgver=1.19.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Functions to extract useful metrics from Oxford Nanopore sequencing reads and alignments"
 url="https://github.com/wdecoster/nanoget/"
 depends=(
