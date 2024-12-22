@@ -1,7 +1,7 @@
 _name=alignment
 pkgname=python-alignment
 pkgver=1.0.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Native Python library for generic sequence alignment."
 arch=(any)
 url="https://github.com/eseraygun/python-alignment"
