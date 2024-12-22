@@ -1,0 +1,33 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=semsens
+_pkgver=1.5.5
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="A Tool for Sensitivity Analysis in Structural Equation Modeling"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-only')
+depends=(
+  r
+  r-lavaan
+  r-stats
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('7bd194fcca739c3f43b98e625f9c3582')
+b2sums=('808663ec01b6ae3ac7b35a37de3b61288f0050a293f146867341b0b9cf1fa9236fb32e45d2ef249b53d06e41817f0847a4fb256243531995d1dda60117d0eef1')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
