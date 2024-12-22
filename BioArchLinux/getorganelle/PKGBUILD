@@ -1,7 +1,7 @@
 # Maintainer: <Guoyi Zhang> <myname at malacology dot net>
 pkgname=getorganelle
 pkgver=1.7.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Get organelle genomes from genome skimming data \
 	 https://doi.org/10.1186/s13059-020-02154-5"
 arch=('any')
