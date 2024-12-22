@@ -1,7 +1,7 @@
 _name=anadama2
 pkgname=python-anadama2
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="AnADAMA2: Another Automated Data Analysis Management Application 2"
 arch=(any)
 url="http://huttenhower.sph.harvard.edu/anadama2"
