@@ -1,7 +1,7 @@
 _name=atlas-metadata-validator
 pkgname=python-atlas-metadata-validator
 pkgver=1.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A MAGE-TAB validator for Expression Atlas and Single Cell Expression Atlas"
 arch=(any)
 url="https://github.com/ebi-gene-expression-group/atlas-metadata-validator"
