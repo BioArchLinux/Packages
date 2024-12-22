@@ -1,7 +1,7 @@
 _name=alfa
 pkgname=python-alfa
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple software to get a quick overview of features composing NGS dataset(s)."
 arch=(any)
 url="https://github.com/biocompibens/ALFA"
