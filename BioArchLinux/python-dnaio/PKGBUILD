@@ -3,7 +3,7 @@
 pkgname=python-dnaio
 _module=${pkgname#python-}
 pkgver=1.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Python library for very efficient parsing and writing of FASTQ and FASTA files'
 arch=('x86_64')
 url="https://github.com/marcelm/dnaio/"
