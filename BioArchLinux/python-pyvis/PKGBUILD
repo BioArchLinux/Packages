@@ -3,7 +3,7 @@
 pkgname=python-pyvis
 _name=${pkgname#python-}
 pkgver=0.3.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Python package for creating and visualizing interactive network graphs"
 arch=(any)
 url="https://github.com/WestHealth/pyvis"
