@@ -10,6 +10,7 @@ repo_depends:
 - r-gosemsim
 - r-qvalue
 - r-reshape2
+- r-yulab.utils
 update_on:
 - source: rpkgs
   pkgname: DOSE
