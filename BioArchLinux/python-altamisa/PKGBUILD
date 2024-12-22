@@ -1,7 +1,7 @@
 _name=altamisa
 pkgname=python-altamisa
 pkgver=0.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Implementation of ISA-tools data model and ISA-TAB"
 arch=(any)
 url="https://github.com/bihealth/altamisa"
