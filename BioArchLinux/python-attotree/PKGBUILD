@@ -1,7 +1,7 @@
 _name=attotree
 pkgname=python-attotree
 pkgver=0.1.6
-pkgrel=1
+pkgrel=2
 pkgdesc="description"
 arch=(any)
 url="https://github.com/karel-brinda/attotree"
