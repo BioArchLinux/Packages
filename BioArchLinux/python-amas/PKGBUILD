@@ -1,7 +1,7 @@
 _name=amas
 pkgname=python-amas
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Calculate various summary statistics on a multiple sequence alignment"
 arch=(any)
 url="https://github.com/marekborowiec/AMAS"
