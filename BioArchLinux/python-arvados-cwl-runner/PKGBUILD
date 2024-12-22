@@ -1,7 +1,7 @@
 _name=arvados-cwl-runner
 pkgname=python-arvados-cwl-runner
 pkgver=3.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Arvados Common Workflow Language runner"
 arch=(any)
 url="https://arvados.org"
