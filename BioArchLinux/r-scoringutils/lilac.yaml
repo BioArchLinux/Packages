@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-checkmate
+- r-cli
+- r-data.table
+- r-ggplot2
+- r-methods
+- r-metrics
+- r-purrr
+- r-scoringrules
+- r-stats
+update_on:
+- source: rpkgs
+  pkgname: scoringutils
+  repo: cran
+  md5: true
+- alias: r

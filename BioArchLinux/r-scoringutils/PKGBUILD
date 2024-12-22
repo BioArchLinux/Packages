@@ -1,0 +1,44 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=scoringutils
+_pkgver=2.0.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Utilities for Scoring and Assessing Predictions"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-checkmate
+  r-cli
+  r-data.table
+  r-ggplot2
+  r-methods
+  r-metrics
+  r-purrr
+  r-scoringrules
+  r-stats
+)
+optdepends=(
+  r-ggdist
+  r-kableextra
+  r-knitr
+  r-magrittr
+  r-rmarkdown
+  r-testthat
+  r-vdiffr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('ca6a268549daf6e599d1792721855eb3')
+b2sums=('62873c7bf56ef631a89f458f2c29b9e4242349e93f9041af54d709fbc4046c829e6040805d2171ade53c453cf0af2a6132c37d9b68d48c835f9e3cfe649e3703')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
