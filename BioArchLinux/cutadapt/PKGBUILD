@@ -3,7 +3,7 @@
 pkgname=cutadapt
 _name=cutadapt
 pkgver=5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Remove adapter sequences from high-throughput sequencing reads. doi:10.14806/ej.17.1.200'
 arch=('x86_64')
 url="https://github.com/marcelm/cutadapt"
