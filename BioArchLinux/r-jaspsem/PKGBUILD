@@ -21,6 +21,7 @@ depends=(r
   r-stringr
   r-tibble
   r-tidyr
+  r-semsens
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
