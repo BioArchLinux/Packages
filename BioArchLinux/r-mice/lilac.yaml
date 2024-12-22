@@ -5,11 +5,9 @@ maintainers:
 repo_depends:
 - r-broom
 - r-dplyr
-- r-generics
 - r-glmnet
 - r-mitml
 - r-rcpp
-- r-rlang
 - r-tidyr
 repo_makedepends:
 - r-cpp11
