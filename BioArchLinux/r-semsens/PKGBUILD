@@ -4,7 +4,7 @@ _pkgname=SEMsens
 _pkgver=1.5.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A Tool for Sensitivity Analysis in Structural Equation Modeling"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
