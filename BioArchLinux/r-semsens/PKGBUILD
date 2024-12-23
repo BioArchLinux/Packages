@@ -10,9 +10,7 @@ arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
-  r
   r-lavaan
-  r-stats
 )
 optdepends=(
   r-knitr
