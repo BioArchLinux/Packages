@@ -1,0 +1,28 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=metrics
+_pkgver=0.1.4
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Evaluation Metrics for Machine Learning"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('BSD-3-Clause')
+depends=(
+  r
+)
+optdepends=(
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b2202269b66cd891b834d742cfd937ba')
+b2sums=('74f5b769cdef2a1120b505901c039632eaf0c6fbb961141c3a58e45bafa0de584f4f2fe2a522d1d11a6c9c7ee8225a999662d3d2c9ada8bd39e7f45872216404')
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
