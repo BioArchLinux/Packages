@@ -2,9 +2,12 @@ build_prefix: extra-x86_64
 maintainers:
 - github: shun2wang
   email: shuonwang@gmail.com
+repo_depends:
+- r-lavaan
+- r-stats
 update_on:
 - source: rpkgs
-  pkgname: semsens
+  pkgname: SEMsens
   repo: cran
   md5: true
 - alias: r

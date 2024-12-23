@@ -1,6 +1,6 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
-_pkgname=semsens
+_pkgname=SEMsens
 _pkgver=1.5.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
