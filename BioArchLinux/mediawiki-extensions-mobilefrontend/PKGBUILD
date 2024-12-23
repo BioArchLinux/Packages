@@ -2,7 +2,7 @@
 pkgname=mediawiki-extensions-mobilefrontend
 _pkgname=mediawiki-extensions-MobileFrontend
 _pkg=MobileFrontend
-pkgver=1_42
+pkgver=1_43
 pkgrel=1
 pkgdesc="add a mobile view to your mediawiki instance"
 arch=('x86_64')
