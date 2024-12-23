@@ -4,7 +4,6 @@ maintainers:
   email: shuonwang@gmail.com
 repo_depends:
 - r-lavaan
-- r-stats
 update_on:
 - source: rpkgs
   pkgname: SEMsens
