@@ -4,7 +4,7 @@ maintainers:
   email: shuonwang@gmail.com
 update_on:
 - source: rpkgs
-  pkgname: metrics
+  pkgname: Metrics
   repo: cran
   md5: true
 - alias: r

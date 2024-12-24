@@ -1,6 +1,6 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
-_pkgname=metrics
+_pkgname=Metrics
 _pkgver=0.1.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
