@@ -1,0 +1,54 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=SimDesign
+_pkgver=1.43
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Multidimensional Item Response Theory"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-or-later')
+depends=(
+  r-testthat
+  r-parallel
+  r-parallelly
+  r-snow
+  r-dplyr
+  r-sessioninfo
+  r-beepr
+  r-pbapply
+  r-rpushbullet
+  r-future
+  r-future.apply
+  r-progressr
+  r-r.utils
+)
+optdepends=(
+  r-knitr
+  r-ggplot2
+  r-tidyr
+  r-purrr
+  r-shiny
+  r-copula
+  r-extradistr
+  r-renv
+  r-cli
+  r-job
+  r-future.batchtools
+  r-frf2
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a0ebc1732254ac79706c11f7e9b89f10')
+b2sums=('a72437ef19c2206b959c67c48c2fcdf0484e936e71a0d697e1883a2670a1aec886b8c635cb4ba956b6bf2dd713563add849cb17c68a8aec38714c1aae3d281ab')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
