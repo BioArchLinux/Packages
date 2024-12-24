@@ -4,7 +4,7 @@ _pkgname=scoringutils
 _pkgver=2.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Utilities for Scoring and Assessing Predictions"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
