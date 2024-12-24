@@ -1,0 +1,51 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=mirt
+_pkgver=1.43
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Multidimensional Item Response Theory"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-or-later')
+depends=(
+  r-gparotation
+  r-gridextra
+  r-matrix
+  r-rcpp
+  r-mgcv
+  r-vegan
+  r-deriv
+  r-splines
+  r-pbapply
+  r-dcurver
+  r-simdesign
+)
+optdepends=(
+  r-boot
+  r-latticeextra
+  r-directlabels
+  r-shiny
+  r-knitr
+  r-markdown
+  r-rsolnp
+  r-nloptr
+  r-sirt
+  r-plink
+  r-mirtcat
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a8bc44dbc3effaa5e87c8c0155bf6f96')
+b2sums=('e5aade6a4c1c3a3fcefa2e715ffb8b6dd8aa1178069e341a85428f88ed2ba44397d5441ff13c787c31347676b4d74d5d0824a61e09cec01bdf0a8a8606f78525')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

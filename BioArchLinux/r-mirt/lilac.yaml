@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-gparotation
+- r-gridextra
+- r-matrix
+- r-rcpp
+- r-mgcv
+- r-vegan
+- r-deriv
+- r-splines
+- r-pbapply
+- r-dcurver
+- r-simdesign
+update_on:
+- source: rpkgs
+  pkgname: mirt
+  repo: cran
+  md5: true
+- alias: r
