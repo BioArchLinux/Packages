@@ -3,7 +3,7 @@
 pkgname=python-pyvcf3
 _name=PyVCF3
 pkgver=1.0.3
-pkgrel=8
+pkgrel=9
 pkgdesc="Variant Call Format (VCF) parser for Python3"
 arch=('x86_64')
 url=https://github.com/dridk/PyVCF3
