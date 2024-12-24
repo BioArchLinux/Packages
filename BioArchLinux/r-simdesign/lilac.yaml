@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-testthat
+- r-parallel
+- r-parallelly
+- r-snow
+- r-dplyr
+- r-sessioninfo
+- r-beepr
+- r-pbapply
+- r-rpushbullet
+- r-future
+- r-future.apply
+- r-progressr
+- r-r.utils
+update_on:
+- source: rpkgs
+  pkgname: SimDesign
+  repo: cran
+  md5: true
+- alias: r
