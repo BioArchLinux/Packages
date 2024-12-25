@@ -5,13 +5,12 @@ _pkgver=1.43
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Multidimensional Item Response Theory"
+pkgdesc="Structure for Organizing Monte Carlo Simulation Designs"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-or-later')
+license=('GPL-2.0-or-later')
 depends=(
   r-testthat
-  r-parallel
   r-parallelly
   r-snow
   r-dplyr

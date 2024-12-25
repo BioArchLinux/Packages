@@ -4,7 +4,6 @@ maintainers:
   email: shuonwang@gmail.com
 repo_depends:
 - r-testthat
-- r-parallel
 - r-parallelly
 - r-snow
 - r-dplyr
