@@ -1,0 +1,30 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=beepr
+_pkgver=2.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Easily Play Notification Sounds on any Platform"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-only')
+depends=(
+  r-audio
+)
+optdepends=(
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('8779d44b2ea7ffd7e73915f0d9c7a8bc')
+b2sums=('9568a1b577aa03f8a99ad13a7c00e228a4d23cfd24b47944d01c70374e37714ebea6cc406bc9baab6dca70c905a12b4134146db1caa5a3429dbe3241074b3517')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
