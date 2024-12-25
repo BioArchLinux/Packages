@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+update_on:
+- source: rpkgs
+  pkgname: audio
+  repo: cran
+  md5: true
+- alias: r
