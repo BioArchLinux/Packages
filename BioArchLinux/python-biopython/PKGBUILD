@@ -24,7 +24,7 @@ options=(!debug)
 prepare() {
   cd "${srcdir}/${_pkgname}-${pkgver}"
   # python 3.13 compability patch until biopython 1.85 is released
-  patch -1 < $srcdir/compat.patch
+  patch -p1 < $srcdir/compat.patch
 }
 
 build() {
