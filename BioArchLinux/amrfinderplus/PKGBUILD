@@ -9,7 +9,7 @@ pkgdesc="Identify Antimicrobial resistance genes in assembled bacterial nucleoti
 arch=('x86_64' 'i686')
 provides=('stxtyper')
 url="https://www.ncbi.nlm.nih.gov/pathogens/antimicrobial-resistance/AMRFinder/"
-license=('LicenseRef-Public Domain')
+license=('NCBI-PD')
 depends=(
         'glibc'
         'gcc-libs'
