@@ -13,3 +13,4 @@ update_on:
   - source: regex
     regex: 'biopython-(\d+.\d+).tar.gz'
     url: "https://github.com/biopython/DIST"
+  - alias: python
