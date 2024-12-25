@@ -1,0 +1,30 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=RPushbullet
+_pkgver=0.3.4
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="R Interface to the Pushbullet Messaging Service"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-jsonlite
+  r-curl
+)
+optdepends=(
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('7c7ca0162cc0444be64150bade019b4d')
+b2sums=('34a6dc0bdef2ad0f37473d31b788c23dafc2daa473cd0621ab82f02d62a23ffd1a9ea934399621f185854e0b50a280229aa83e4a1afb1e5c0dec3500c591d92c')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
