@@ -4,7 +4,7 @@ _pkgname=RPushbullet
 _pkgver=0.3.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="R Interface to the Pushbullet Messaging Service"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
