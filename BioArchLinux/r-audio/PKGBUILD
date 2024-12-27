@@ -4,7 +4,7 @@ _pkgname=audio
 _pkgver=0.1-11
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Audio Interface for R"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
