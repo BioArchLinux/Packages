@@ -1,7 +1,7 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=SimDesign
-_pkgver=1.43
+_pkgver=2.18
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
