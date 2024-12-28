@@ -12,7 +12,7 @@ license=(MIT)
 depends=(
          'python'
          'cython'
-         'python-numpy' 
+         'python-numpy'
          'python-pandas'
          'python-scipy'
          'python-matplotlib'
@@ -24,9 +24,9 @@ depends=(
          'python-tqdm'
          'python-appdirs'
          'python-yaml'
-         'python-pyqt5'
+         'python-pyqt6'
          'python-qdarkstyle'
-         'qt5-imageformats'
+         'qt6-imageformats'
          'python-aiodns'
          'python-defusedxml'
          'python-aiohttp'
@@ -50,6 +50,10 @@ depends=(
          'python-aiolimiter'
          'python-pyvis'
          'python-nest-asyncio'
+         'python-polars'
+         'python-kmedoids'
+         'picard-tools'
+         'python-mslex'
         )
 
 makedepends=(
@@ -72,13 +76,9 @@ makedepends=(
             'python-coverage'
              )
 
-#source=(${_name}-${pkgver}.tar.gz::https://github.com/GuyTeichman/RNAlysis/archive/refs/tags/V"${pkgver}".tar.gz
-       # )
 source=("git+https://github.com/GuyTeichman/RNAlysis.git#tag=V$pkgver"
 	)
-
-#sha256sums=('03eb4e19a306e746e6f7d42bb2f77b72ec07b2cafbf54a941ff0038f72b57b16')
-sha256sums=('c4d9353100c45473af731479001f9d4b91a2ced250328fccf12854d85b98257d')
+sha256sums=('1ba3b06b7b5beae5ad72b8e006aa5115dd9da2558b073243017a75515a78eae3')
 
 
 prepare() {

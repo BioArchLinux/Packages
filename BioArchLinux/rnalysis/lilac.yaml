@@ -9,6 +9,7 @@ post_build_script: |
   update_aur_repo()
 repo_makedepends:
   - python-pytest-runner
+  - python-pytest-xvfb
 repo_depends:
   - python-hdbscan
   - python-matplotlib-venn
@@ -17,13 +18,16 @@ repo_depends:
   - python-scikit-learn-extra
   - python-grid-strategy
   - python-upsetplot
-  - python-xlmhglite 
+  - python-xlmhglite
   - python-pairwisedist
   - python-aiolimiter
   - python-pyvis
+  - python-polars
+  - python-kmedoids
+  - python-mslex
 update_on:
   - source: github
     github: GuyTeichman/RNAlysis
     use_latest_release: true
-    prefix: 'V'
+    prefix: "V"
   - alias: python
