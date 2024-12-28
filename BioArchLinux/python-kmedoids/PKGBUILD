@@ -3,7 +3,7 @@
 _pkg=kmedoids
 pkgname=python-${_pkg}
 pkgver=0.5.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast K-Medoids clustering in Python with FasterPAM"
 arch=("x86_64")
 url="https://github.com/kno10/python-kmedoids"
