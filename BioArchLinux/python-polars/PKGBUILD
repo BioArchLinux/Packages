@@ -1,0 +1,41 @@
+# Maintainer: Alexandre Bury <alexandre.bury@gmail.com>
+
+pkgname=python-polars
+pkgver=1.17.1
+pkgrel=1
+pkgdesc="Blazingly fast DataFrames library using Apache Arrow Columnar Format as memory model"
+arch=("x86_64")
+url="https://www.pola.rs/"
+license=('MIT')
+depends=('python' 'glibc' 'python-numpy' 'gcc-libs')
+options=('!lto')
+optdepends=('python-pandas: for interoperability with pandas frames'
+            'python-pyarrow: for interoperability with arrow types'
+            'python-pytz: to enable conversion to python datetimes with timezones'
+            'python-fsspec: to transparently open files locally or remotely'
+            'ipython'
+            'python-typing_extensions'
+            'python-packaging'
+            'python-matplotlib'
+            )
+makedepends=('maturin' 'rustup' 'cmake' 'python-installer')
+_name=${pkgname#python-}
+_tag="py-$pkgver"
+source=("https://github.com/pola-rs/polars/archive/refs/tags/$_tag.tar.gz")
+b2sums=("b2f46c182f4c522625b20c4891f5697782356f1586eb309d2317794e19b7e85a5dc528f248533b3e78f60935cc409b1a1657e4eadaf2d9df1f8e6c2209d7d71c")
+
+prepare() {
+    cd polars-$_tag/py-polars
+    cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
+build() {
+    rm wheels -rf
+    cd polars-$_tag/py-polars
+    maturin build -o ../../wheels --release
+}
+
+package() {
+    python -m installer -d "$pkgdir" ./wheels/*.whl
+    install -Dm0644 -t "$pkgdir/usr/share/licenses/$pkgname/" polars-$_tag/LICENSE
+}

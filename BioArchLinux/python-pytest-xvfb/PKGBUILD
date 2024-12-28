@@ -1,0 +1,32 @@
+# Maintainer: Bruno Pagani <archange@archlinux.org>
+
+_pkg=pytest-xvfb
+pkgname=python-${_pkg}
+pkgver=3.0.0
+pkgrel=1
+pkgdesc="pytest plugin to run Xvfb for tests"
+arch=(any)
+url="https://github.com/The-Compiler/pytest-xvfb"
+license=(MIT)
+depends=('python-pytest' 'python-pyvirtualdisplay' 'xorg-server-xvfb' 'python')
+makedepends=('python-setuptools' 'git')
+_tag=v${pkgver}
+source=("${_pkg}::git+https://github.com/The-Compiler/pytest-xvfb.git#tag=${_tag}")
+sha256sums=('b452baf132b08a2301e6c204d8d258e6a873f1f59c45581c7e21006cc14c96b8')
+
+build() {
+  cd ${_pkg}
+  python setup.py build
+}
+
+check() {
+  cd ${_pkg}
+  rm tests/test_xvfb_windows.py
+  PYTHONPATH="${PWD}/build/lib/" PYTEST_PLUGINS=pytest_xvfb pytest
+}
+
+package() {
+  cd ${_pkg}
+  python setup.py install --prefix=/usr --root="${pkgdir}" --skip-build --optimize=1
+  install -Dm644 LICENSE -t "${pkgdir}"/usr/share/licenses/${pkgname}
+}

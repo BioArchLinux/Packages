@@ -1,0 +1,17 @@
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - python-types-setuptools
+update_on:
+  - source: github
+    github: smoofra/mslex
+    use_max_tag: true
+    prefix: "v"
+  - alias: python

@@ -1,0 +1,14 @@
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('py-'))
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+  - source: github
+    github: pola-rs/polars
+    use_max_tag: true
+    prefix: "py-"
+  - alias: python
