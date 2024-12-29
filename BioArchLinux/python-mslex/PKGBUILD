@@ -3,7 +3,7 @@
 _pkg=mslex
 pkgname=python-${_pkg}
 pkgver=1.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="shlex package for windows shell quoting"
 arch=("any")
 url="https://github.com/smoofra/mslex"
