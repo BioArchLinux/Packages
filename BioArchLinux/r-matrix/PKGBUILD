@@ -1,0 +1,36 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=Matrix
+_pkgver=1.7-1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Sparse and Dense Matrix Classes and Methods"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-lattice
+)
+optdepends=(
+  r-mass
+  r-datasets
+  r-sfsmisc
+  r-tools
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('955a3ca647ba402353b78636b689947c')
+b2sums=('ff96ed61765f8c547f1d08af064bb99c683a8ea1c1ddf96c8f78a15aba0d13a2515918df5883c5147d775b83da6fb251912d7051b4c6413b41fcefaa9ba51e9e')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENCE" "$pkgdir/usr/share/licenses/$pkgname"
+}
