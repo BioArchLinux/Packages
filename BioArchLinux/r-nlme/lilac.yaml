@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-lattice
+repo_makedepends:
+- r-mass
+- r-sasmixed
+update_on:
+- source: rpkgs
+  pkgname: nlme
+  repo: cran
+  md5: true
+- alias: r
