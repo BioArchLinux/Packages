@@ -15,7 +15,6 @@ depends=(
 )
 optdepends=(
   r-kernsmooth
-  r-mass
   r-latticeextra
   r-colorspace
 )
