@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_makedepends:
+- r-lattice
+- r-nlme
+- r-nnet
+- r-survival
+update_on:
+- source: rpkgs
+  pkgname: MASS
+  repo: cran
+  md5: true
+- alias: r
