@@ -14,7 +14,6 @@ depends=(
   r
 )
 optdepends=(
-  r-mass
   r-cardata
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"

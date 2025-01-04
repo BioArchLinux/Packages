@@ -3,7 +3,6 @@ maintainers:
 - github: shun2wang
   email: shuonwang@gmail.com
 repo_makedepends:
-- r-mass
 - r-cardata
 update_on:
 - source: rpkgs
