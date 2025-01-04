@@ -1,0 +1,35 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=KernSmooth
+_pkgver=2.23-26
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Functions for Kernel Smoothing Supporting Wand & Jones (1995)"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LicenseRef-Unlimited')
+depends=(
+  r
+)
+optdepends=(
+  r-mass
+  r-cardata
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "Unlimited")
+md5sums=('6bc46cc96d87d37de73050f49b2b1bc2')
+b2sums=('a28342c54c6cbb9399b4f7424554d1456c0f2135da964e0e1e91efba1f3bd2129ac1cf62b9fab389b9e95f5293496b59bcfd4767d86db867a71303723c2516c1')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -Dm644 -t "$pkgdir/usr/share/licenses/$pkgname" Unlimited
+}
