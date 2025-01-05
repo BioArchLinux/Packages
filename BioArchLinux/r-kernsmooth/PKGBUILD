@@ -7,11 +7,14 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Functions for Kernel Smoothing Supporting Wand & Jones (1995)"
-arch=('any')
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('LicenseRef-Unlimited')
 depends=(
   r
+)
+makedepends=(
+  gcc-fortran
 )
 optdepends=(
   r-cardata
