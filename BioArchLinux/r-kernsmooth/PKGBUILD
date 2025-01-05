@@ -5,7 +5,7 @@ _pkgname=KernSmooth
 _pkgver=2.23-26
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Functions for Kernel Smoothing Supporting Wand & Jones (1995)"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -21,8 +21,10 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "Unlimited")
-md5sums=('6bc46cc96d87d37de73050f49b2b1bc2')
-b2sums=('a28342c54c6cbb9399b4f7424554d1456c0f2135da964e0e1e91efba1f3bd2129ac1cf62b9fab389b9e95f5293496b59bcfd4767d86db867a71303723c2516c1')
+md5sums=('6bc46cc96d87d37de73050f49b2b1bc2'
+         'd5a357f0c20cfc67aa3d7321a7f25668')
+b2sums=('a28342c54c6cbb9399b4f7424554d1456c0f2135da964e0e1e91efba1f3bd2129ac1cf62b9fab389b9e95f5293496b59bcfd4767d86db867a71303723c2516c1'
+        '76d707bdc00cd0ba4a6f5f889db74d5857938783d7a94fd8d605a5eaf6108501bc17198366109faa7ebc52cc934fb0ef6af4a9aa217b625a8dd22ed84dab9eec')
 
 build() {
   mkdir build
