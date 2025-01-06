@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-bain
+- r-mvtnorm
+- r-pracma
+- r-lme4
+- r-extradistr
+- r-ergm
+- r-bergm
+- r-sandwich
+- r-orm
+- r-coda
+- r-metabma
+update_on:
+- source: rpkgs
+  pkgname: BFpack
+  repo: cran
+  md5: true
+- alias: r
