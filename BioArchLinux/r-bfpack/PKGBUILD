@@ -23,9 +23,6 @@ depends=(
   r-coda
   r-metabma
 )
-makedepends=(
-  r-bain
-)
 optdepends=(
   r-testthat
   r-polycor
