@@ -11,7 +11,7 @@ repo_depends:
 - r-ergm
 - r-bergm
 - r-sandwich
-- r-orm
+- r-qrm
 - r-coda
 - r-metabma
 update_on:

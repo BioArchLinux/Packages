@@ -7,7 +7,7 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Flexible Bayes Factor Testing of Scientific Expectations"
-arch=('any')
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
 depends=(
@@ -19,9 +19,12 @@ depends=(
   r-ergm
   r-bergm
   r-sandwich
-  r-orm
+  r-qrm
   r-coda
   r-metabma
+)
+makedepends=(
+  gcc-fortran
 )
 optdepends=(
   r-testthat
