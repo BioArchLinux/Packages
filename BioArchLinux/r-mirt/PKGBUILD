@@ -12,18 +12,17 @@ license=('GPL-3.0-or-later')
 depends=(
   r-gparotation
   r-gridextra
-  r-matrix
   r-rcpp
-  r-mgcv
   r-vegan
   r-deriv
-  r-splines
   r-pbapply
   r-dcurver
   r-simdesign
 )
+makedepends=(
+  r-rcpparmadillo
+)
 optdepends=(
-  r-boot
   r-latticeextra
   r-directlabels
   r-shiny
