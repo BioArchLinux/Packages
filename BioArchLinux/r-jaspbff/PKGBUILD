@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspBFF
-_pkgver=0.19.2
+_pkgver=0.19.3
 pkgname=r-${_pkgname,,}
-pkgver=0.19.2
-pkgrel=2
+pkgver=0.19.3
+pkgrel=1
 pkgdesc="A Bayes factor function module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -15,7 +15,7 @@ depends=(r
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
-sha256sums=('9d4823b62f6866bf48397a5f99817dbe912a83db65bec61bd4287050b3dab0fc')
+sha256sums=('0747e1591ee120d48af77980de84794580016e29be1fbff5fdb97a9d0eca0053')
 
 build() {
 
