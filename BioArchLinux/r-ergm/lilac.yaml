@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-network
+- r-robustbase
+- r-coda
+- r-trust
+- r-lpsolveapi
+- r-statnet.common
+- r-rle
+- r-purrr
+- r-rlang
+- r-memoise
+- r-tibble
+- r-magrittr
+- r-rdpack
+update_on:
+- source: rpkgs
+  pkgname: ergm
+  repo: cran
+  md5: true
+- alias: r
