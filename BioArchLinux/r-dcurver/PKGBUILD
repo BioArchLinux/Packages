@@ -1,41 +1,24 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
-_pkgname=mirt
-_pkgver=1.43
+_pkgname=dcurver
+_pkgver=0.9.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Multidimensional Item Response Theory"
+pkgdesc="Utility Functions for Davidian Curves"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-or-later')
+license=('GPL-3.0-only')
 depends=(
-  r-gparotation
-  r-gridextra
   r-rcpp
   r-rcpparmadillo
-  r-vegan
-  r-deriv
-  r-pbapply
-  r-dcurver
-  r-simdesign
 )
 optdepends=(
-  r-latticeextra
-  r-directlabels
-  r-shiny
-  r-knitr
-  r-markdown
-  r-rsolnp
-  r-nloptr
-  r-sirt
-  r-plink
-  r-mirtcat
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a8bc44dbc3effaa5e87c8c0155bf6f96')
-b2sums=('e5aade6a4c1c3a3fcefa2e715ffb8b6dd8aa1178069e341a85428f88ed2ba44397d5441ff13c787c31347676b4d74d5d0824a61e09cec01bdf0a8a8606f78525')
+md5sums=('3398f1d3189b8ce16d00beec94e56336')
+b2sums=('3d13a22a817df8eb9e591a493fde4ba9d7afa3295b8328cfac4ae81feb6a526c8d4cdca06ffcfa77c0b1247338ceaaca071d97410b71a4462cc5bf9c271423ea')
 
 build() {
   mkdir build
