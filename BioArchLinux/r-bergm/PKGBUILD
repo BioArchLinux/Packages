@@ -1,0 +1,38 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=Bergm
+_pkgver=5.0.7
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Bayesian Exponential Random Graph Models"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-ergm
+  r-coda
+  r-matrixcalc
+  r-mcmcpack
+  r-mvtnorm
+  r-network
+  r-gglpk
+  r-statnet.common
+)
+optdepends=(
+  r-spelling
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('5c72aacf9a396fab6611733ce10409ca')
+b2sums=('40703eb4fd5d3dd365776f265ccdcf133d3c86832b50cffe02019cd08c1b83e50bdc0370e12864f3531caa1a6f77afc498a541f9637e252043003eab4c7e2b5f')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

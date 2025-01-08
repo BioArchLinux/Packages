@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-ergm
+- r-coda
+- r-matrixcalc
+- r-mcmcpack
+- r-mvtnorm
+- r-network
+- r-gglpk
+- r-statnet.common
+update_on:
+- source: rpkgs
+  pkgname: Bergm
+  repo: cran
+  md5: true
+- alias: r
