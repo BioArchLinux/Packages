@@ -16,6 +16,8 @@ repo_depends:
 - r-tibble
 - r-magrittr
 - r-rdpack
+- r-knitr
+- r-stringr
 update_on:
 - source: rpkgs
   pkgname: ergm
