@@ -1,14 +1,14 @@
 # Maintainer: Roy Oursler <roy.j.oursler@intel.com>
 pkgname=isa-l
 pkgver=2.31.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of optimized low-level functions targeting storage applications"
 arch=(x86_64)
 url="https://github.com/intel/$pkgname"
 license=('BSD')
 makedepends=('nasm' 'patchelf')
 source=("$url/archive/v$pkgver.tar.gz")
-sha1sums=('ea28aac92b95802f8680a91cc1c2e6c0158e3861')
+sha1sums=('6ff9da63837cab5233925b63461d85c91c3c66f8')
 
 build() {
     cd "${srcdir}/$pkgname-$pkgver"
