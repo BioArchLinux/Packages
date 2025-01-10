@@ -10,7 +10,9 @@ pkgdesc="Common Functions for Run-Length Encoded Vectors"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
-depends=()
+depends=(
+  r
+)
 optdepends=(
   r-covr
 )
