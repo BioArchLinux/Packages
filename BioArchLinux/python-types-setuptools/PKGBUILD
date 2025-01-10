@@ -1,8 +1,8 @@
 # Maintainer: Mark Wagie <mark dot wagie at proton dot me>
 pkgname=python-types-setuptools
 _name=${pkgname#python-}
-pkgver=75.6.0.20241223
-pkgrel=2
+pkgver=75.8.0.20250110
+pkgrel=1
 pkgdesc="Typing stubs for setuptools"
 arch=('any')
 url="https://github.com/python/typeshed"
@@ -10,7 +10,7 @@ license=('Apache-2.0')
 depends=('python' 'python-types-docutils')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name//-/_}/${_name//-/_}-$pkgver.tar.gz")
-sha256sums=('d9478a985057ed48a994c707f548e55aababa85fe1c9b212f43ab5a1fffd3211')
+sha256sums=('96f7ec8bbd6e0a54ea180d66ad68ad7a1d7954e7281a710ea2de75e355545271')
 
 build() {
   cd "${_name//-/_}-${pkgver}"
