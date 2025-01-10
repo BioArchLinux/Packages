@@ -71,12 +71,9 @@ package_mmseqs2-sse4() {
   cd $_pkgbase-$_pkgver
   DESTDIR="$pkgdir" cmake --install build1
   install -Dm644 LICENSE.md -t "$pkgdir/usr/share/licenses/${pkgname}"
-  #install -Dm644 "${srcdir}"/mmseqs2.sh "${pkgdir}"/etc/profile.d/mmseqs2.sh
   cd util
-  #install -Dm644 bash-completion.sh "${pkgdir}"/etc/profile.d/mmseqs2-completion.sh
   install -Dm755 bash-completion.sh "${pkgdir}"/usr/share/${pkgbase}/bash-completion.sh
   install -Dm644 format_substitution_matrix.R "${pkgdir}"/usr/share/${pkgbase}/format_substitution_matrix.R
-  #rm -rf "${pkgdir}"/usr/util
 }
 
 package_mmseqs2-avx2() {
@@ -89,10 +86,7 @@ package_mmseqs2-avx2() {
   cd $_pkgbase-$_pkgver
   DESTDIR="$pkgdir" cmake --install build2
   install -Dm644 LICENSE.md -t "$pkgdir/usr/share/licenses/${pkgname}"
-  #install -Dm644 "${srcdir}"/mmseqs2.sh "${pkgdir}"/etc/profile.d/mmseqs2.sh
   cd util
-  #install -Dm644 bash-completion.sh "${pkgdir}"/etc/profile.d/mmseqs2-completion.sh
   install -Dm755 bash-completion.sh "${pkgdir}"/usr/share/${pkgbase}/bash-completion.sh
   install -Dm644 format_substitution_matrix.R "${pkgdir}"/usr/share/${pkgbase}/format_substitution_matrix.R
-  #rm -rf "${pkgdir}"/usr/util
 }
