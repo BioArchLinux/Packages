@@ -9,7 +9,7 @@ arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
 url="https://github.com/althonos/pyhmmer"
 license=("MIT")
 depends=('python' 'gcc-libs' 'glibc' 'python-psutil')
-makedepends=('cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core')
+makedepends=('git' 'cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core')
 source=("git+https://github.com/althonos/pyhmmer.git#tag=v$pkgver")
 sha256sums=('a078632dd48d06486c20b1c15883db184fdaa67f9fadef9deac974cfa1c0b68c')
 
@@ -26,7 +26,7 @@ build() {
 check() {
     local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
-    whl="${srcdir}/${_name}-${pkgver}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
 
     rm -rf "${srcdir}/env"
     python -m venv --symlinks --system-site-packages "${srcdir}/env"
@@ -39,7 +39,7 @@ check() {
 package() {
     local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
-    whl="${srcdir}/${_name}-${pkgver}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
 
     python -m installer --prefix="${pkgdir}/usr" "$whl"
     install -Dm644  ${srcdir}/${_name}-${pkgver}/COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
