@@ -23,6 +23,9 @@ optdepends=(
   r-rlang
   r-testthat
   r-withr
+  r-callr
+  r-pkgload
+  r-knitr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a57f0d289e7fda95bfaa4ebe8836af05')
