@@ -1,0 +1,29 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=Rglpk
+_pkgver=0.6-5.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="R/GNU Linear Programming Kit Interface"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-slam
+)
+optdepends=()
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('6531cfc1b0c249fe14524e4fd043bbb1')
+b2sums=('0b00f03b4d9db18bf048fc2afbe3947207a4473f2cee57885fdbee4ac78d6ac1e76a63d851a9369b1ccecce5f2923bfc3f86c8ddbd3eaa7ac378a8b9bc1a7f5b')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
