@@ -17,9 +17,8 @@ depends=(
   r-mcmcpack
   r-mvtnorm
   r-network
-  r-gglpk
+  r-rglpk
   r-statnet.common
-  r-evaluate
 )
 optdepends=(
   r-spelling
