@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-minqa
 - r-nloptr
+- r-reformulas
 repo_makedepends:
 - r-rcpp
 - r-rcppeigen
