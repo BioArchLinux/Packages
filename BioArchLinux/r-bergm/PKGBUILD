@@ -11,6 +11,7 @@ arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  glpk
   r-ergm
   r-coda
   r-matrixcalc
