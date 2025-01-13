@@ -13,12 +13,14 @@ depends=(
   r-gparotation
   r-gridextra
   r-rcpp
-  r-rcpparmadillo
   r-vegan
   r-deriv
   r-pbapply
   r-dcurver
   r-simdesign
+)
+makedepends=(
+  r-rcpparmadillo
 )
 optdepends=(
   r-latticeextra
