@@ -8,7 +8,7 @@
 # Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=testthat
-_pkgver=3.2.2
+_pkgver=3.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -49,8 +49,8 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8259f5323867d86b628580bfe70ab924')
-b2sums=('10ec4de0db26f16aa99885b47ec27ca0bbc4535b073179e34c88388bbdeb261c167575b3792906239df116367dec2ec7cdd1a5c764f6f1c428653563e523fe3c')
+md5sums=('19f81521b3bb056cc22df8585379a007')
+b2sums=('cef0fc0a94972ab3cd419ed1ad3e95ee4fae9564cea41aac40ebc33ff2c50133d0bd94057170f460b3b17320d51ed23c67c47ccc9a7c6756631b1157ff6b855f')
 
 build() {
   mkdir build
