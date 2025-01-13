@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-gparotation
 - r-gridextra
-- r-matrix
 - r-rcpp
 - r-vegan
 - r-deriv
