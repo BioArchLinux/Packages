@@ -42,6 +42,9 @@ optdepends=(
   r-sleuth2
   r-tidyr
   r-tinytable
+  r-markdown
+  r-vcdextra
+  r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('68b160b063d5e2090ad89903e460631a')
