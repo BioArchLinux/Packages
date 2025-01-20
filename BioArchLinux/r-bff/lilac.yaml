@@ -3,11 +3,8 @@ maintainers:
 - github: sukanka
   email: sukanka@askk.cc
 repo_depends:
-- r-grdevices
 - r-ggplot2
-- r-matrix
 - r-gsl
-- r-stats
 - r-rlang
 update_on:
 - regex: 'Version:\s*([\d._-]+)'
