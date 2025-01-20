@@ -2,16 +2,16 @@
 
 _name=pyhmmer
 pkgname=python-${_name}
-pkgver=0.10.15
-pkgrel=2
+pkgver=0.11.0
+pkgrel=1
 pkgdesc="Cython bindings to HMMER3. https://doi.org/10.1093/bioinformatics/btad214"
-arch=('i686' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
+arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
 url="https://github.com/althonos/pyhmmer"
 license=("MIT")
-depends=('python' 'glibc' 'python-psutil')
-makedepends=('git' 'python-setuptools' 'cython' 'python-build' 'python-installer' 'python-wheel')
+depends=('python' 'gcc-libs' 'glibc' 'python-psutil')
+makedepends=('git' 'cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core')
 source=("git+https://github.com/althonos/pyhmmer.git#tag=v$pkgver")
-sha256sums=('1c296dfc6c59f230d10a8e68143a39ae9abf7362b70dd9ced876269137ca6fea')
+sha256sums=('a078632dd48d06486c20b1c15883db184fdaa67f9fadef9deac974cfa1c0b68c')
 
 prepare() {
     cd "${srcdir}/${_name}"
@@ -20,19 +20,27 @@ prepare() {
 
 build() {
     cd "${srcdir}/${_name}"
-    python -m build --wheel --no-isolation
+    python -m build --wheel --no-isolation --skip-dependency-check
 }
 
 check() {
-    local pyver=$(python -c 'import sys; print(sys.implementation.cache_tag)')
+    local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
-    cd "${srcdir}/${_name}/build/lib.linux-${machine}-${pyver}"
+    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+
+    rm -rf "${srcdir}/env"
+    python -m venv --symlinks --system-site-packages "${srcdir}/env"
+    source "${srcdir}/env/bin/activate"
+    python -m installer "$whl"
+
     python -m unittest ${_name}.tests
 }
 
 package() {
     local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
-    python -m installer --destdir="$pkgdir" "${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
-    install -Dm644  "${srcdir}/${_name}/COPYING" "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+
+    python -m installer --prefix="${pkgdir}/usr" "$whl"
+    install -Dm644  ${srcdir}/${_name}/COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 }
