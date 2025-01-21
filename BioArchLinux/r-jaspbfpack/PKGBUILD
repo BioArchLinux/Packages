@@ -1,8 +1,8 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspBfpack
-_pkgver=0.19.0
+_pkgver=0.19.2
 pkgname=r-${_pkgname,,}
-pkgver=0.19.0
+pkgver=0.19.2
 pkgrel=1
 pkgdesc="BFpack Module for JASP"
 arch=('any')
@@ -11,7 +11,6 @@ license=('GPL')
 depends=(r
   r-bfpack
   r-bain
-  r-stats
   r-ggplot2
   r-stringr
   r-jaspbase
