@@ -8,7 +8,7 @@
 pkgname=python-selenium
 _pkgname="${pkgname#python-}"
 pkgver=4.28.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(x86_64)
 url="https://github.com/SeleniumHQ/selenium"
@@ -59,4 +59,8 @@ build() {
 package() {
   cd "${_archive}"
   python -m installer --destdir="${pkgdir}" dist/*.whl
+
+  local site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
+  cp selenium/webdriver/remote/*.js "${pkgdir}/${site_packages}/selenium/webdriver/remote"
+  cp selenium/webdriver/common/*.js "${pkgdir}/${site_packages}/selenium/webdriver/common"
 }
