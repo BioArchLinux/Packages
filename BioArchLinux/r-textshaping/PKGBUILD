@@ -14,6 +14,7 @@ depends=(
   freetype2
   fribidi
   harfbuzz
+  r-stringi
   r-lifecycle
   r-systemfonts
 )
@@ -21,6 +22,7 @@ makedepends=(
   r-cpp11
 )
 optdepends=(
+  r-testthat
   r-covr
   r-knitr
   r-rmarkdown

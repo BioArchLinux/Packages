@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-stringi
 - r-lifecycle
 - r-systemfonts
 repo_makedepends:
