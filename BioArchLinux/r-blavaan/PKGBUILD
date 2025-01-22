@@ -30,6 +30,7 @@ makedepends=(
   r-stanheaders
 )
 optdepends=(
+  r-blavsam
   r-cmdstanr
   r-modeest
   r-rjags
