@@ -1,7 +1,7 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mirt
-_pkgver=1.43
+_pkgver=1.44.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -36,8 +36,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a8bc44dbc3effaa5e87c8c0155bf6f96')
-b2sums=('e5aade6a4c1c3a3fcefa2e715ffb8b6dd8aa1178069e341a85428f88ed2ba44397d5441ff13c787c31347676b4d74d5d0824a61e09cec01bdf0a8a8606f78525')
+md5sums=('a756a0f4f6686bee961a72cccf76e76a')
+b2sums=('397c8cda30137e22f8450be00522ad92d365fe9923824cd7d9f434499e9d504f14f77a6d66b2d1b0ac38ea8289b2d1f6fac7e219ae24c9bc141a0645e4a70417')
 
 build() {
   mkdir build
