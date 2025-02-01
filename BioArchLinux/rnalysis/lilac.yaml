@@ -25,6 +25,7 @@ repo_depends:
   - python-polars
   - python-kmedoids
   - python-mslex
+  - picard-tools
 update_on:
   - source: github
     github: GuyTeichman/RNAlysis
