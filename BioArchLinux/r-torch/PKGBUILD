@@ -1,7 +1,7 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=torch
-_pkgver=0.13.0
+_pkgver=0.14.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -15,7 +15,6 @@ depends=(
   r-cli
   r-coro
   r-desc
-  r-ellipsis
   r-glue
   r-jsonlite
   r-magrittr
@@ -23,6 +22,7 @@ depends=(
   r-rcpp
   r-rlang
   r-safetensors
+  r-scales
   r-withr
 )
 optdepends=(

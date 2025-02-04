@@ -8,7 +8,6 @@ repo_depends:
 - r-cli
 - r-coro
 - r-desc
-- r-ellipsis
 - r-glue
 - r-jsonlite
 - r-magrittr
@@ -16,6 +15,7 @@ repo_depends:
 - r-rcpp
 - r-rlang
 - r-safetensors
+- r-scales
 - r-withr
 update_on:
 - source: rpkgs
