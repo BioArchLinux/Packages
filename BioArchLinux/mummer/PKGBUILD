@@ -5,7 +5,7 @@
 
 pkgname=mummer
 _pkgver=4.0.0rc1
-pkgver=4.0.0
+pkgver=4.0.1
 pkgrel=1
 pkgdesc="MUMmer is a program for rapidly aligning large genomes"
 arch=('i686' 'x86_64')
@@ -33,4 +33,4 @@ package() {
   mv ${pkgdir}/usr/include/${pkgname}-${pkgver}/include/* ${pkgdir}/usr/include
   rm -rf ${pkgdir}/usr/include/${pkgname}-${pkgver}
 }
-sha512sums=('c0d86bb5a69dc44438151f14f9bfef95e2dda1baf2af9bb0509d2d1c1e1fbcf702936d0b45d245de726a855cbc84299b140da6a2fbdfa5d8f921b80c1fd0b9eb')
+sha512sums=('5f21569bfcb9f41e04723ffe13957b65df9c4f02472f5b86184f25a29392058cbba0531d197f8ea8bb9946572826a94114851b439fb237ee562de9c1ba7afe88')
