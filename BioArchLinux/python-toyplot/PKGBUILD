@@ -1,7 +1,7 @@
 pkgname='python-toyplot'
 name=toyplot
 pkgver='2.0.0'
-pkgrel=1
+pkgrel=2
 pkgdesc="A modern plotting toolkit supporting electronic publishing and reproducibility."
 url="https://github.com/sandialabs/toyplot"
 depends=('python' 'python-arrow' 'python-custom_inherit' 'python-multipledispatch' 'python-numpy' 'python-pypng' 'python-reportlab' 'python-six' 'python-pandas' 'ipython')
