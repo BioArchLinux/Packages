@@ -24,6 +24,5 @@ build() {
 package() {
   cd "$srcdir"
   install -D -m755 muscle "$pkgdir/usr/bin/muscle"
-  install -D -m644 "$srcdir/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
  
