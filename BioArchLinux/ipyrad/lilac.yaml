@@ -15,8 +15,11 @@ repo_depends:
   - bwa
   - samtools
   - python-toyplot
+  - python-toytree
+  - muscle3
 update_on:
   - source: github
     github: dereneaton/ipyrad
     use_latest_release: true
   - alias: python
+
