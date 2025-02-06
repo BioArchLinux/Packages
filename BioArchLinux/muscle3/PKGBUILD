@@ -8,9 +8,8 @@ pkgdesc="multiple sequence comparison by log-expectation"
 arch=('i686' 'x86_64')
 url="http://www.drive5.com/muscle/"
 license=('custom')
-source=(http://www.drive5.com/muscle/muscle_src_$pkgver.tar.gz LICENSE)
-sha256sums=('c70c552231cd3289f1bad51c9bd174804c18bb3adcf47f501afec7a68f9c482e'
-            '2ee887dede5d3ddb6fa65690e0afd8d1083d835522d9271450752df0cc2f6658')
+source=(http://www.drive5.com/muscle/muscle_src_$pkgver.tar.gz)
+sha256sums=('c70c552231cd3289f1bad51c9bd174804c18bb3adcf47f501afec7a68f9c482e')
 provides=('muscle')
 conflicts=('muscle')
 build() {
