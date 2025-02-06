@@ -1,0 +1,35 @@
+pkgname=ipyrad
+pkgver=0.9.104
+pkgrel=1
+pkgdesc="Interactive assembly and analysis of RAD-seq data sets."
+arch=('any')
+url="https://github.com/dereneaton/ipyrad"
+license=('GPL-3.0-or-later')
+depends=('python' 'python-pandas' 'python-scipy' 'python-numpy' 'python-numba' 'python-future' 'python-h5py' 'python-ipyparallel' 'python-requests' 'python-mpi4py' 
+		'cutadapt' 'python-pysam'  'bedtools' 'vsearch' 'bwa' 'samtools' 'python-toyplot')
+optdepends=('jupyter-notebook: for interactive')
+makedepends=('python-build' 'python-installer' 'python-wheel' 'gcc' 'make')
+source=("https://github.com/dereneaton/ipyrad/archive/${pkgver}.tar.gz"
+	"https://drive5.com/muscle/muscle_src_3.8.1551.tar.gz")
+sha256sums=('8da9e03569ee1bc0e84bafefd1204249091602a9caa732a79511f67ba81d96b1'
+            'c70c552231cd3289f1bad51c9bd174804c18bb3adcf47f501afec7a68f9c482e')
+provides=('muscle<5')
+conflicts=('muscle')
+build() {
+    # muscle v3
+    cd $srcdir
+    make CFLAGS=" -march=x86-64 -mtune=generic -O2 -pipe" LDLIBS=" -lm"
+
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    #muscle v3
+    cd "$srcdir"
+    install -D -m755 muscle "$pkgdir/usr/bin/muscle"
+
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+}
+
