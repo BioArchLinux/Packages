@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+update_on:
+  - source: github
+    github: rsokl/custom_inherit
+    use_latest_release: true
+    prefix: 'v'
+  - alias: python

@@ -1,0 +1,22 @@
+pkgname='python-toyplot'
+name=toyplot
+pkgver='2.0.0'
+pkgrel=1
+pkgdesc="A modern plotting toolkit supporting electronic publishing and reproducibility."
+url="https://github.com/sandialabs/toyplot"
+depends=('python' 'python-arrow' 'python-custom_inherit' 'python-multipledispatch' 'python-numpy' 'python-pypng' 'python-reportlab' 'python-six')
+makedepends=('python-build' 'python-installer' 'python-wheel')
+license=('BSD-3-Clause')
+arch=('any')
+source=("https://pypi.io/packages/source/${name::1}/${name}/${name}-${version}.tar.gz")
+sha256sums=('abdecb0c264e3f695cf560eea16076eee8ef79c900f69edebac7fb0b27fc0c0b')
+
+build() {
+    cd "${srcdir}/${name}-${pkgver}"
+    python -m build --wheel --no-isolation
+}
+
+package() {
+    cd "${srcdir}/${name}-${pkgver}"
+    python -m installer --destdir="${pkgdir}" dist/*.whl
+}
