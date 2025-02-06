@@ -11,7 +11,7 @@ depends=('python')
 makedepends=('python-setuptools')
 #source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/${_name}-${pkgver}.tar.gz")
 source=("https://github.com/rsokl/custom_inherit/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('7052eb337bcce83551815264391cc4efc2bf70b295a3c52aba64f1ab57c3a8a2')
+sha256sums=('ee1968bf4b1d22310e6a76a58ad9b0c99876d9bf9239b3b99c7e2aff857e9e68')
 
 build() {
   cd "$srcdir/$_name-$pkgver"
