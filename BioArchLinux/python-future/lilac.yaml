@@ -7,17 +7,8 @@ pre_build_script: |
   run_cmd(['updpkgsums'])
 post_build_script: |
   git_pkgbuild_commit()
-repo_depends:
-  - cutadapt
-  - python-pysam
-  - bedtools
-  - vsearch
-  - bwa
-  - samtools
-  - python-toyplot
-  - python-future
 update_on:
-  - source: github
-    github: dereneaton/ipyrad
-    use_latest_release: true
+  - source: pypi
+    pypi: future
+    prefix: 'v'
   - alias: python

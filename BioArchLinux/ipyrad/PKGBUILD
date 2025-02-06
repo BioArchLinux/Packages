@@ -5,8 +5,8 @@ pkgdesc="Interactive assembly and analysis of RAD-seq data sets."
 arch=('any')
 url="https://github.com/dereneaton/ipyrad"
 license=('GPL-3.0-or-later')
-depends=('python' 'python-pandas' 'python-scipy' 'python-numpy' 'python-numba' 'python-future' 'python-h5py' 'python-ipyparallel' 'python-requests' 'python-mpi4py' 
-		'cutadapt' 'python-pysam'  'bedtools' 'vsearch' 'bwa' 'samtools' 'python-toyplot')
+depends=('python' 'python-pandas' 'python-scipy' 'python-numpy' 'python-numba' 'python-h5py' 'python-ipyparallel' 'python-requests' 'python-mpi4py' 
+	'python-future' 'cutadapt' 'python-pysam'  'bedtools' 'vsearch' 'bwa' 'samtools' 'python-toyplot')
 optdepends=('jupyter-notebook: for interactive')
 makedepends=('python-build' 'python-installer' 'python-wheel' 'gcc' 'make')
 source=("https://github.com/dereneaton/ipyrad/archive/${pkgver}.tar.gz"
