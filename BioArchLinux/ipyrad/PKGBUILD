@@ -6,7 +6,7 @@ arch=('any')
 url="https://github.com/dereneaton/ipyrad"
 license=('GPL-3.0-or-later')
 depends=('python' 'python-pandas' 'python-scipy' 'python-numpy' 'python-numba' 'python-h5py' 'python-ipyparallel' 'python-requests' 'python-mpi4py' 
-	'python-future' 'cutadapt' 'python-pysam'  'bedtools' 'vsearch' 'bwa' 'samtools' 'python-toyplot')
+	'cutadapt' 'python-pysam'  'bedtools' 'vsearch' 'bwa' 'samtools' 'python-toyplot')
 optdepends=('jupyter-notebook: for interactive')
 makedepends=('python-build' 'python-installer' 'python-wheel' 'gcc' 'make')
 source=("https://github.com/dereneaton/ipyrad/archive/${pkgver}.tar.gz"
@@ -15,6 +15,14 @@ sha256sums=('8da9e03569ee1bc0e84bafefd1204249091602a9caa732a79511f67ba81d96b1'
             'c70c552231cd3289f1bad51c9bd174804c18bb3adcf47f501afec7a68f9c482e')
 provides=('muscle<5')
 conflicts=('muscle')
+
+prepare() {
+    # fix future
+    cd "${srcdir}/${pkgname}-${pkgver}" 
+    find . -name "*.py" -exec sed -i '/from __future__/d' {} +
+    sed -i '/"future",/d' setup.py
+}
+
 build() {
     # muscle v3
     cd $srcdir

@@ -15,7 +15,6 @@ repo_depends:
   - bwa
   - samtools
   - python-toyplot
-  - python-future
 update_on:
   - source: github
     github: dereneaton/ipyrad
