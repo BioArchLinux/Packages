@@ -3,7 +3,7 @@
 pkgname=java-openjfx
 _majorver=23.0.1
 pkgver=23
-pkgrel=0
+pkgrel=1
 pkgdesc="Java OpenJFX ${_majorver} client application platform (Gluon build)."
 arch=('x86_64')
 url='https://openjfx.io/'
