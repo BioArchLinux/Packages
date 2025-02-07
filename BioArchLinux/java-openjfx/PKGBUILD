@@ -114,7 +114,6 @@ package_java-openjfx() {
     "glib2"
     "glibc"
     "java-runtime-openjdk=${pkgver%%.*}"
-    "java-openjfx-license=${pkgver%%.*}"
     "libgl"
     "libx11"
     "libxtst"
@@ -168,9 +167,6 @@ package_java-openjfx-doc() {
   arch=(
     "any"
   )
-  depends=(
-    "java-openjfx-license=${pkgver%%.*}"
-  )
   optdepends=(
     "java-openjfx=${pkgver%%.*}: The software this documentation is for."
   )
@@ -190,9 +186,6 @@ package_java-openjfx-doc() {
 package_java-openjfx-src() {
   pkgdesc="Source code for Java OpenJFX client application platform (open-source implementation of JavaFX) - version following latest major Arch Linux OpenJDK java release."
   arch=(any)
-  depends=(
-    "java-openjfx-license=${pkgver%%.*}"
-  )
   optdepends=(
     "java-openjfx=${pkgver%%.*}: The software this source code is for."
   )
