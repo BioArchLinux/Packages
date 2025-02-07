@@ -24,6 +24,7 @@ optdepends=(
   r-r6
   r-testthat
   r-withr
+  r-pillar
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "libr-zip.patch")
