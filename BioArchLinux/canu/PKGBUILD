@@ -3,7 +3,7 @@
 # Contributor: Bipin Kumar <kbipinkumar@pm.me>
 pkgname=canu
 pkgver=2.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A single molecule sequence assembler for large and small genomes. https://doi.org/10.1101/gr.215087.116"
 arch=('i686' 'x86_64')
 url="https://canu.readthedocs.io/en/latest/"
