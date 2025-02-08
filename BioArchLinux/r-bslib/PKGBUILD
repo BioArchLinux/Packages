@@ -38,6 +38,7 @@ optdepends=(
   r-testthat
   r-thematic
   r-withr
+  r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('bb7b56a88b3a8cb1901dfcec51d58364')
