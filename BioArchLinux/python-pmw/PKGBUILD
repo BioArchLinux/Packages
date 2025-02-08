@@ -10,12 +10,9 @@ pkgdesc="A toolkit for high-level compound widgets in Python using the Tkinter m
 arch=('any')
 url="http://pmw.sourceforge.net/"
 license=('MIT')
-depends=('python' 'tk')
-source=(${pkgname}-${pkgver}.tar.gz::https://pypi.python.org/packages/source/P/Pmw/Pmw-${pkgver}.tar.gz
-        "LICENSE.txt")
-md5sums=('8b816709e4f1d486ba47f1dc787066ee'
-         '28b047a148c1780eddcf4bed6b150123')
-changelog="ChangeLog"
+depends=('python' 'tk' 'python-distutils-extra')
+source=(${pkgname}-${pkgver}.tar.gz::https://pypi.python.org/packages/source/P/Pmw/Pmw-${pkgver}.tar.gz)
+md5sums=('8b816709e4f1d486ba47f1dc787066ee')
 
 build() {
   cd "Pmw-${pkgver}"
@@ -25,5 +22,4 @@ build() {
 package() {
   cd "Pmw-${pkgver}"
   python setup.py install --prefix=/usr --root="${pkgdir}"
-  install -Dm644 "${srcdir}/LICENSE.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
