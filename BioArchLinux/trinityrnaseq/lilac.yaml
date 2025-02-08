@@ -13,3 +13,9 @@ update_on:
     use_max_tag: true
     include_regex: Trinity-v(\d+.\d+.\d+)
     prefix: 'Trinity-v'
+repo_depends:
+  - parafly
+  - samtools
+  - jellyfish
+  - bowtie2
+  - salmon
