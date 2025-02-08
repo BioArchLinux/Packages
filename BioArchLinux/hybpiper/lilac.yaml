@@ -15,6 +15,7 @@ update_on:
   - alias: python
 repo_depends:
   - python-pebble
+  - python-biopython
   - diamond
   - exonerate
   - blast+
