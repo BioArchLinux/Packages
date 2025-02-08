@@ -12,8 +12,8 @@ pkgdesc="High-performance visualization tool for interactive exploration of larg
 arch=('any')
 url="https://igv.org"
 license=('MIT')
-makedepends=('gendesk' 'gradle' 'java-environment=17')
-depends=('java-runtime=17' 'sh')
+makedepends=('gendesk' 'gradle' 'java-environment=23')
+depends=('java-runtime=23' 'sh')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/igvteam/igv/archive/v${pkgver}.tar.gz")
 sha256sums=('e4e1ef6a2c08dc481ecd9dc26e7c03a7f8076a9abb94c43e0adc99fee1737358')
 
@@ -21,13 +21,13 @@ prepare() {
     # generate /usr/bin entry
     cat <<'EOF' > igv
 #!/usr/bin/sh
-export PATH=/usr/lib/jvm/java-17-openjdk/bin/:$PATH
+export PATH=/usr/lib/jvm/java-23-openjdk/bin/:$PATH
 exec /usr/share/igv/igv.sh
 EOF
 
     cat <<'EOF' > igvtools
 #!/usr/bin/sh
-export PATH=/usr/lib/jvm/java-17-openjdk/bin/:$PATH
+export PATH=/usr/lib/jvm/java-23-openjdk/bin/:$PATH
 exec /usr/share/igv/igvtools
 EOF
 
