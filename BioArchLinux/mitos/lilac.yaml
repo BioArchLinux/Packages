@@ -17,6 +17,7 @@ repo_depends:
   - r-ggplot2
   - r-reshape2
   - python-ete3
+  - python-biopython
   - viennarna
   - blast+
   - hmmer
