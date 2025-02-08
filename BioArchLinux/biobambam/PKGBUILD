@@ -14,7 +14,7 @@ sha256sums=('e405421e869ac7220c3a7e5da0d24a3c7b4c7b1807e044a439fe68efc88a1f2a'
             '4945978c194807b149f9c82f709db1fce62340867f87ede5a587ef2247c39827')
 
 prepare() {
-  cd "${srcdir}"/libmaus2-"${pkgver//_/-}"
+  cd "${srcdir}"/"${pkgname}2"-"${pkgver//_/-}"
   patch -p1 < $srcdir/gcc13.patch
 }
 
