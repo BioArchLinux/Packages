@@ -14,8 +14,8 @@ license=('MIT')
 depends=(
   fontconfig
   freetype2
-  r-lifecycle
   r-jsonlite
+  r-lifecycle
 )
 makedepends=(
   r-cpp11
@@ -26,10 +26,10 @@ checkdepends=(
 )
 optdepends=(
   r-covr
+  r-farver
   r-knitr
   r-rmarkdown
   r-testthat
-  r-farver
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('55e5fbed422030307b1fa21e07cde12c')
