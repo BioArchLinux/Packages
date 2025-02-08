@@ -2,7 +2,7 @@
 pkgname=mitos
 _pkgname=MITOS
 pkgver=2.1.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Improved de novo metazoan mitochondrial genome annotation \
 	 https://doi.org/10.1016/j.ympev.2012.08.023"
 arch=('any')
