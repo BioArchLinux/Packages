@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.0.7
+_pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=0
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -51,17 +51,9 @@ optdepends=(
   r-webfakes
   r-xml2
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
-        "fix-tests.patch")
-md5sums=('8a61f250aa292da398ea2e89167e8434'
-         '7cd23279cf53ca0a0197ee2fad503067')
-b2sums=('cbae038ddb404fb9428bad5920bb46221b2ece7d88b52196d5214e88bcaf0987aca762567a35e7ce9eb4d931d665a88373f2c0efa3ca4c1cec1f646c3fc497d7'
-        'b639d73e84ce55c6c056edb97c5f684a7bb5c7269d53d55f49b8507f74af7148019a56db413c17daac41b37f86cce51f4b3ba4be358247ad716bf4b22ef68b48')
-
-prepare() {
-  # skip failing tests
-  patch -Np1 -i fix-tests.patch
-}
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('64b1aa8915b84a1cb2ad4eaca4e19c45')
+b2sums=('e621ad819ff20c7768ba0796980381bc2823fc4b02311447b2bcf3dc1f2a765fd803fd8553942c57e52fbaffdb5236ac153382dd18da354170ccc62f803a2780')
 
 build() {
   mkdir build
