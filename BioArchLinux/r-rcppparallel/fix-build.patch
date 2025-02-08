@@ -1,19 +1,20 @@
 diff --git a/RcppParallel/R/tbb.R b/RcppParallel/R/tbb.R
-index 4c8fc14..ccb9db1 100644
+index 87362db..71995a4 100644
 --- a/RcppParallel/R/tbb.R
 +++ b/RcppParallel/R/tbb.R
-@@ -81,23 +81,14 @@ tbbCxxFlags <- function() {
- tbbLdFlags <- function() {
-    
+@@ -96,7 +96,7 @@ tbbLdFlags <- function() {
+ tbbLdFlagsImpl <- function() {
+ 
     # shortcut if TBB_LIB defined
 -   tbbLib <- Sys.getenv("TBB_LINK_LIB", Sys.getenv("TBB_LIB", unset = TBB_LIB))
 +   tbbLib <- Sys.getenv("TBB_LINK_LIB", Sys.getenv("TBB_LIB", unset = ""))
     if (nzchar(tbbLib)) {
-       fmt <- if (is_windows()) "-L%1$s -ltbb -ltbbmalloc"
-              else "-L%1$s -Wl,-rpath,%1$s -ltbb -ltbbmalloc"
+ 
+       fmt <- if (is_windows()) {
+@@ -108,16 +108,7 @@ tbbLdFlagsImpl <- function() {
        return(sprintf(fmt, asBuildPath(tbbLib)))
     }
-    
+ 
 -   # on Mac, Windows and Solaris, we need to explicitly link (#206)
 -   needsExplicitFlags <- is_mac() || is_windows() || (is_solaris() && !is_sparc())
 -   if (needsExplicitFlags) {
@@ -21,15 +22,15 @@ index 4c8fc14..ccb9db1 100644
 -      libFlag <- paste0("-L", libPath)
 -      return(paste(libFlag, "-ltbb", "-ltbbmalloc"))
 -   }
--   
+-
 -   # nothing required on other platforms
 -   ""
 +   "-ltbb -ltbbmalloc"
-    
+ 
  }
  
 diff --git a/RcppParallel/src/Makevars.in b/RcppParallel/src/Makevars.in
-index c317123..8bfc953 100644
+index be8445f..5e77b04 100644
 --- a/RcppParallel/src/Makevars.in
 +++ b/RcppParallel/src/Makevars.in
 @@ -16,7 +16,7 @@ ifdef TBB_LIB
@@ -41,7 +42,7 @@ index c317123..8bfc953 100644
  	endif
  endif
  
-@@ -151,10 +151,6 @@ ifdef TBB_LIB
+@@ -152,10 +152,6 @@ ifdef TBB_LIB
  	@echo "(tbb) Using system (Intel / OneAPI) TBB library."
  	@echo "(tbb) TBB_LIB = $(TBB_LIB)"
  	@echo "(tbb) TBB_INC = $(TBB_INC)"
