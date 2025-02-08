@@ -1,35 +1,49 @@
 # Maintainer: Chocobo1 <chocobo1 AT archlinux DOT net>
 # Previous maintainer: Roberto Rossini ("robymetallo") <roberto.rossini.9533@student.uu.se>
-
+# Contributor: Bipin Kumar <kbipinkumar@pm.me>
 pkgname=canu
 pkgver=2.3
-pkgrel=0
+pkgrel=1
 pkgdesc="A single molecule sequence assembler for large and small genomes. https://doi.org/10.1101/gr.215087.116"
 arch=('i686' 'x86_64')
-url="https://canu.readthedocs.io/"
-license=('LicenseRef-canu')
-depends=('gcc-libs' 'java-runtime' 'perl')
+url="https://canu.readthedocs.io/en/latest/"
+license=('GPL-2.0-only AND BSD-3-Clause AND LicenseRef-Public Domain')
+makedepends=('git')
+depends=('gcc-libs' 'glibc' 'perl' 'mhap' 'zlib' 'xz' 'curl' 'bzip2')
 optdepends=('gnuplot')
 options=('staticlibs')
-source=("$pkgname-$pkgver-src.tar.xz::https://github.com/marbl/canu/releases/download/v$pkgver/canu-$pkgver.tar.xz")
-sha256sums=('ecb071943cde722152deb861d4ab897090f00b227fd0b261592e1e3fdd3e3e1a')
+source=("${pkgname}.${pkgver}.tar.xz::https://github.com/marbl/canu/releases/download/v${pkgver}/canu-${pkgver}.tar.xz"
+        'use-arch-mhap-at-runtime.patch'
+        'external-mhap.patch'
+)
+provides=('meryl')
+sha256sums=('ecb071943cde722152deb861d4ab897090f00b227fd0b261592e1e3fdd3e3e1a'
+            '0c84b28d99a933d04f57726f691d0057b911131b37c008d36670c0c05e1ca2ff'
+            'dfcb991b8b57fa138f5ecabbc60bdf119de2a5f2484882424f5835e0928e8421')
 
+prepare() {
+  cp *.patch ${pkgname}-${pkgver}/
+  cd ${pkgname}-${pkgver}
+  # create separate file for public domain license to match SPDX license and namcap guidelines
+  sed -n '80,96p' README.licenses > license-PD
+  # use mhap provided by Bioarchlinux repo
+  patch -p1 < use-arch-mhap-at-runtime.patch
+  patch -p1 < external-mhap.patch
+}
 
 build() {
-  cd "$pkgname-$pkgver"
-
+  cd ${pkgname}-${pkgver}/src
   CFLAGS="$CFLAGS -ffat-lto-objects" \
   CXXFLAGS="$CXXFLAGS -ffat-lto-objects" \
-  make -C "src"
+  make
 }
 
 package() {
   cd "$pkgname-$pkgver"
-
+  export perl=$(perl -V:vendorarch | awk -F'/' '{print $4}')
   install -Dm755 "build/bin"/* -t "$pkgdir/usr/bin"
-  install -Dm644 "build/lib/site_perl/canu"/*.pm -t "$pkgdir/usr/lib/site_perl/canu"
-  install -Dm644 "build/share/java/classes"/*.jar -t "$pkgdir/usr/share/java/classes"
+  install -Dm644 "build/lib/perl5/site_perl/canu"/*.pm -t "$pkgdir"/usr/share/${perl}/vendor_perl/canu
   install -Dm644 "build/lib"/*.a -t "$pkgdir/usr/lib"
-
-  install -Dm644 "README.licenses" -t "$pkgdir/usr/share/licenses/canu"
+  install -Dm644 README.licenses  "$pkgdir"/usr/share/licenses/$pkgname/license
+  install -Dm644 license-PD  "$pkgdir"/usr/share/licenses/$pkgname/license-PD
 }
