@@ -12,5 +12,5 @@ repo_depends:
   - python-pysam
 update_on:
   - source: regex
-    regex: 'RSeQC v(\d+.\d+.\d+)'
+    regex: 'RSeQC \(v(\d+.\d+.\d+)\)'
     url: http://rseqc.sourceforge.net/
