@@ -10,7 +10,7 @@ license=('GPL')
 url='https://gitlab.archlinux.org/archlinux/devtools'
 depends=('bash' 'openssh' 'subversion' 'rsync' 'arch-install-scripts'
          'git' 'bzr' 'mercurial' 'diffutils' 'util-linux' 'awk')
-makedepends=('asciidoc')
+makedepends=('asciidoc' 'asciidoctor')
 optdepends=('btrfs-progs: btrfs support')
 provides=("devtools=$pkgver-$pkgrel")
 conflicts=("devtools")
