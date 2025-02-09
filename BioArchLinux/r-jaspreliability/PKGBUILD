@@ -20,6 +20,7 @@ depends=(r
   r-psych
   r-lme4
   r-irr
+  r-mirt
 )
 groups=(r-jasp r-jaspextra)
 optdepends=()

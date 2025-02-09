@@ -13,6 +13,7 @@ repo_depends:
 - r-psych
 - r-lme4
 - r-irr
+- r-mirt
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:
