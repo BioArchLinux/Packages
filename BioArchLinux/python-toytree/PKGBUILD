@@ -1,6 +1,6 @@
 pkgname='python-toytree'
 name=toytree
-pkgver='3.0.8'
+pkgver=3.0.9
 pkgrel=1
 pkgdesc="A minimalist tree plotting library using toyplot graphs."
 url="https://github.com/eaton-lab/toytree"
@@ -10,7 +10,7 @@ makedepends=('python-build' 'python-setuptools' 'python-installer' 'python-wheel
 license=('BSD-3-Clause')
 arch=('any')
 source=("https://pypi.io/packages/source/${name::1}/${name}/${name}-${pkgver}.tar.gz")
-sha256sums=('2770663f79faae176d0f1bb9ad047bc0ddd1baf3333a76cab2307d9a30b9da55')
+sha256sums=('0b2865b87a2038795b9817bd02c42ca02ac0e0bb2613a60f22321d35af8a55f5')
 
 build() {
     cd "${srcdir}/${name}-${pkgver}"
