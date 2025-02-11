@@ -19,7 +19,6 @@ optdepends=(
   r-igraph
   r-knitr
   r-microbenchmark
-  r-rlang
   r-rmarkdown
   r-testthat
   r-tibble
