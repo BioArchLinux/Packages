@@ -14,6 +14,7 @@ depends=(
 )
 optdepends=(
   r-relimp
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('2494a818e5a13b2d8b4b7f6c7e3fe8bb')
