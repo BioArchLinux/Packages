@@ -28,6 +28,8 @@ optdepends=(
   r-numderiv
   r-rms
   r-testthat
+  r-bayesmeta
+  r-ellipse
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('4303e4a28efd69147f6f95fc939ea5db')
