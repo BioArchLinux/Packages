@@ -21,7 +21,6 @@ optdepends=(
   r-htmltools
   r-htmlwidgets
   r-knitr
-  r-mockery
   r-processx
   r-ps
   r-rlang
