@@ -7,6 +7,7 @@ repo_depends:
 - r-metafor
 - r-mvtnorm
 - r-numDeriv
+update_on:
 - source: rpkgs
   pkgname: bayesmeta
   repo: cran
