@@ -5,7 +5,7 @@ _pkgname=bayesmeta
 _pkgver=3.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Bayesian Random-Effects Meta-Analysis and Meta-Regression"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
