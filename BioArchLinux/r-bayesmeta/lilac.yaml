@@ -6,7 +6,7 @@ repo_depends:
 - r-forestplot
 - r-metafor
 - r-mvtnorm
-- r-numDeriv
+- r-numderiv
 update_on:
 - source: rpkgs
   pkgname: bayesmeta
