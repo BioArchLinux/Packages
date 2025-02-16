@@ -7,7 +7,7 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Bayesian Random-Effects Meta-Analysis and Meta-Regression"
-arch=('x86_64')
+arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
