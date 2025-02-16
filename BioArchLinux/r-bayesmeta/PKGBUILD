@@ -14,7 +14,7 @@ depends=(
   r-forestplot
   r-metafor
   r-mvtnorm
-  r-numDeriv
+  r-numderiv
 )
 optdepends=(
   r-compute.es
