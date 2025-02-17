@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-collections
 - r-dplyr
-- r-purrr
 - r-r6
 - r-stringr
 - r-tibble
