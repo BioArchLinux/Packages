@@ -6,6 +6,7 @@ repo_makedepends:
 - r-ncdf4
 - r-stringr
 - r-testthat
+- r-r6
 update_on:
 - source: rpkgs
   pkgname: CFtime
