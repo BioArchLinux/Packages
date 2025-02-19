@@ -11,12 +11,12 @@ url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r
+  r-r6
 )
 checkdepends=(
   r-ncdf4
   r-stringr
   r-testthat
-  r-r6
 )
 optdepends=(
   r-knitr
