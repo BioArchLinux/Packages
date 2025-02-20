@@ -25,7 +25,7 @@ package() {
 
   for pl_bin in ref_map.pl denovo_map.pl
   do
-    sed -i "s@/build/stacks/pkg/stacks/usr/bin/@/usr/bin/" $pkgdir/usr/bin/$pl_bin
+    sed -i "s@/build/stacks/pkg/stacks/usr/bin/@/usr/bin/@" $pkgdir/usr/bin/$pl_bin
   done
 
 }
