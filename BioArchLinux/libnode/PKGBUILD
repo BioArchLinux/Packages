@@ -10,7 +10,7 @@
 
 pkgname=libnode
 pkgver=23.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Evented I/O for V8 javascript - shared library"
 arch=('x86_64')
 url='https://nodejs.org/'
