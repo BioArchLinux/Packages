@@ -2,7 +2,7 @@
 # Maintainer: alienzj <alienchuj at gmail dot com>
 
 pkgname=spades
-pkgver=4.0.0
+pkgver=4.1.0
 pkgrel=1
 pkgdesc='SPAdes Genome Assembler'
 url='http://cab.spbu.ru/software/spades/'
@@ -22,7 +22,7 @@ options=("!lto")
 source=(
   "${pkgname}-${pkgver}.tar.gz::https://github.com/ablab/spades/archive/refs/tags/v${pkgver}.tar.gz"
 )
-sha512sums=('088db53c914326ca91add745f804f905632588716a90bf1e9cd208e1354a5e72d46daa25dc7877299edd8dc29d072fad749b569208e1f3a32c89c8eaa935e0db')
+sha512sums=('2b515d06e5fe1dc6ea1a2ce23302a3c97a344d7f3302710de7f9c7c3a6448b7460cd1d587fba7f32a88bb6a10828a8a4c22bbda9e3aca4da4a43b3b4dba9c1ed')
 
 build() {
   cmake -B build -S ${pkgname}-${pkgver}/src \
