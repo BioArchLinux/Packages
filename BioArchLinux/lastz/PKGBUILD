@@ -2,7 +2,7 @@
 # Contributor: Mick Elliot <m.g.elliot@rug.nl>
 
 pkgname=lastz
-pkgver=1.04.41
+pkgver=1.04.45
 pkgrel=1
 pkgdesc="Pairwise DNA sequence aligner"
 arch=('x86_64')
@@ -12,7 +12,7 @@ depends=(glibc)
 makedepends=()
 provides=(lastz)
 source=("https://github.com/${pkgname}/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('ade7c8619e1f83aae1b1e6e16a9bc74d283756565f0bb9f6a6ca28f8d862227e')
+sha256sums=('cb7d971915f59089341e7916139a98a5da94d724de21c7eea8baa0a0bdbaa7e8')
 
 build() {
   cd "${pkgname}-${pkgver}"
