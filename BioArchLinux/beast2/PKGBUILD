@@ -5,7 +5,7 @@
 pkgname=beast2
 pkgver=2.7.7
 _pkgver=2.7.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian Evolutionary Analysis by Sampling Trees. https://doi.org/10.1371/journal.pcbi.1003537"
 arch=('any')
 url="http://www.beast2.org/"
@@ -19,10 +19,9 @@ source=(
 ${pkgname}-{beauti,densitree,logcombiner,treeannotator,beast2,loganalyser,applauncher,packagemanager,environment}
 )
 
-sha256sums=(
-	    '7c27e4669566c2e8958cb55f2ccf98cc621c0bfbe707b58d0ca15f31ec03e6ba'
-	    '4d746821fd2b1da10e2b616ea33c4484f994faee65667c4c7445d2c95f163edb'
-	    '7f2a6633e5c2ee1ffde58191ae4403ee5b4f4323cea4d6db8fc8c1516294ddf5'
+sha256sums=('7c27e4669566c2e8958cb55f2ccf98cc621c0bfbe707b58d0ca15f31ec03e6ba'
+            '4d746821fd2b1da10e2b616ea33c4484f994faee65667c4c7445d2c95f163edb'
+            '7f2a6633e5c2ee1ffde58191ae4403ee5b4f4323cea4d6db8fc8c1516294ddf5'
             'a4c2ae027db8ee3ed687591b25e10581380cb4a3f76f60399018da280276bdfd'
             '473657ec9975de6f5e604767ee2ee5cbb6a5c22603624fbf7a94af36d9ccf5db'
             '53de8b25293b6f3f85b0abec0678f47dc999aa009e94b863ef5ae28a53c5deb4'
