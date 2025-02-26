@@ -31,6 +31,7 @@ optdepends=(
   r-tis
   r-tseries
   r-xts
+  r-tinyplot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9bf826a22610f5a3f8ebd063404e7183')

@@ -1,0 +1,37 @@
+# Maintainer: Shun Wang <shuonwang [at] gmail [dot] com>
+
+_pkgname=tinyplot
+_pkgver=0.3.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Lightweight Extension of the Base R Graphics System)"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('Apache License 2.0')
+depends=(
+  r
+)
+optdepends=(
+  r-altdoc
+  r-fontquiver
+  r-png
+  r-rsvg
+  r-svglite
+  r-tinytest
+  r-tinysnapshot
+  r-knitr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('9791c84c9922d4957d24f5c318b98444')
+b2sums=('69a54de34c14d08edc506ad06cc850178ce6a473fc97e2e803aaae7442394959c2b6baf871e78a6181c5f0fd0d955cb0c0f1177d811b3b13ae74d8e83c03af43')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
