@@ -5,10 +5,10 @@ _pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Lightweight Extension of the Base R Graphics System)"
-arch=(x86_64)
+pkgdesc="Lightweight Extension of the Base R Graphics System"
+arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('Apache License 2.0')
+license=('Apache')
 depends=(
   r
 )
