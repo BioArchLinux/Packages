@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=scoringutils
-_pkgver=2.0.0
+_pkgver=2.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Utilities for Scoring and Assessing Predictions"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -28,8 +28,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ca6a268549daf6e599d1792721855eb3')
-b2sums=('62873c7bf56ef631a89f458f2c29b9e4242349e93f9041af54d709fbc4046c829e6040805d2171ade53c453cf0af2a6132c37d9b68d48c835f9e3cfe649e3703')
+md5sums=('63059c0f49e412ae1edf21cb7668401e')
+b2sums=('a6e06f933e1a3fcf1793aa05034363791023d46f0f861f41fde550d4652682062dcb08a8aae6569aaf78921399df6f5136f522160045d7618abad741bd4f57f1')
 
 build() {
   mkdir build
