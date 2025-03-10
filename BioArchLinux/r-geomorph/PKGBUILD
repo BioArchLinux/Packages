@@ -1,0 +1,37 @@
+# Maintainer: Guoyi <kuoi@malacology.net>
+
+_pkgname=geomorph
+_pkgver=4.0.10
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Geometric Morphometric Analyses of 2D and 3D Landmark Data'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+  r-ape
+  r-ggplot2
+  r-jpeg
+  r-rgl
+  r-rrpp
+)
+optdepends=(
+  r-dplyr
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('cb7b064667bad039fb7497d09b04e2db61e298688079498391bce59a94fdf679')
+b2sums=('6663dcc02754f2685aebca656975eda1bdee79f8e630f37c9488deaa60f02f30ed2aea217ee5aedcad272c90f5b6435ab905aee8a2e84c36ac06932660e0c22d')
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

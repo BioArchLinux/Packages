@@ -1,0 +1,16 @@
+repo_depends:
+- r-ape
+- r-ggplot2
+- r-jpeg
+- r-rgl
+- r-rrpp
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+- email: kuoi@bioarchlinux.org
+update_on:
+- source: rpkgs
+  pkgname: geomorph
+  repo: cran
+  md5: true
+- alias: r

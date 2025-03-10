@@ -1,0 +1,35 @@
+# Maintainer: Guoyi <kuoi@malacology.net>
+
+_pkgname=RRPP
+_pkgver=2.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Linear Model Evaluation with Randomized Residuals in a Permutation Procedure'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-ape
+  r-ggplot2
+)
+optdepends=(
+  r-dplyr
+  r-knitr
+  r-rmarkdown
+  r-testthat
+  r-tibble
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('5872acd5f6bacc019832a635c50f64ea2b484be5d3939a55eaea0a7d12a0e3f5')
+b2sums=('5f1c615daa99547fb6c2d9c16a67dc70a443032fa3475ae117a6e4547c85fd609bda9f452dedd3937b20fbb88982f114ee1da020876d9bd4d60c04ebe262c9ef')
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
