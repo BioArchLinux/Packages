@@ -30,6 +30,7 @@ optdepends=(
   r-mockery
   r-rmarkdown
   r-testthat
+  r-xslt
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('fc6679028dca1f3047c8c745fb724524')
