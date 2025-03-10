@@ -32,6 +32,7 @@ optdepends=(
   r-sfsmisc
   r-spamm
   r-testthat
+  r-phylolm
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('1bc0e3ce3b7761689efc8ad828b55e5d')
