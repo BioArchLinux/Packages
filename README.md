@@ -57,6 +57,7 @@ You can use [junest](https://github.com/fsquillace/junest) BioArchLinux image to
 ## Citation
 
 > Zhang G, Ristola P, Su H, Kumar B, Zhang B, Hu Y, Elliot MG, Drobot V, Zhu J, Staal J, Larralde M, Wang S, Yi Y, Yu H. 2025. BioArchLinux: community-driven fresh reproducible software repository for life science. Bioinformatics: btaf106. https://doi.org/10.1093/bioinformatics/btaf106
+> 
 > Zhang G, Hu Y, Drobot V, Staal J, Yi Y, Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux. F1000Research 11: 809. https://doi.org/10.7490/f1000research.1119039.1
 
 [Get Bibtex Here](https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux.bibtex)
