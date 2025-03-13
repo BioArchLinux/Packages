@@ -39,6 +39,7 @@ optdepends=(
   r-spelling
   r-testthat
   r-withr
+  r-tzdb
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libs.patch")
