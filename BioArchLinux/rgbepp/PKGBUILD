@@ -15,7 +15,7 @@ build() {
   cd "$_pkgname-$pkgver"
 for dfile in splitfasta.d delstop.d countTaxa.d RGBEPP.d RGBEPP_refmix.d
 do
-  ldc -O2 --static 
+  ldc -O2 --static $dfile
 done
   g++ -O2 -o sortdiamond sortdiamond.cpp
 }
