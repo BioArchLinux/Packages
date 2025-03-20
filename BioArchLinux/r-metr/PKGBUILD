@@ -4,10 +4,10 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=metR
-_pkgver=0.15.0
+_pkgver=0.18.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Tools for Easier Analysis of Meteorological Fields"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -63,9 +63,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")
-md5sums=('290d04139ae420099542606da5aff873'
+md5sums=('ccf029d40f8a36c1f272ec9d566a0797'
          '11cae80fa1a7d5cf247b879f0598d154')
-b2sums=('60d43e8400d35631bde9f924d7947858f62855d402616fe01a1bf56ef62ee7bfe99196c2fcb1817bbfc230248e1139300ff0843a70415daee2cd7e525f182031'
+b2sums=('a8a410cb400b70286df2a8ee85117b1a4f666e34ade6e8803a56021da1329e0bc4b27bb2239ca075661563bc08a9436525225053742afec211d327e6ae518594'
         '11e180cc17fdbd84d50aab26d4c21ed8e79b2e217753f157e99b25c0ef55b9c1f9f8b91f33ca057b19460f2c4cb5cc5339eab5b5bf49688af281626331b168c6')
 
 
