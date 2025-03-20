@@ -2,7 +2,7 @@
 pkgname=rgbepp
 _pkgname=RGBEPP
 pkgver=0.0.3
-pkgrel=0
+pkgrel=1
 pkgdesc="Reference Genome based Exon Phylogeny Pipeline"
 arch=('x86_64')
 url="https://github.com/starsareintherose/$_pkgname"
@@ -11,7 +11,7 @@ depends=('fastp' 'spades' 'diamond' 'bowtie2' 'macse' 'samtools' 'bcftools' 'tri
 optdepends=('exonerate: for extract exon')
 makedepends=('gcc' 'ldc')
 source=(https://github.com/starsareintherose/${_pkgname}/archive/refs/tags/${pkgver}.tar.gz)
-sha256sums=('eb493da89ccba95d43b1f99e36fc793b787340fc203fc99a7eb3111bd2de2d65')
+sha256sums=('c1bbc6758c3fc800c9268d5295f16b637b494d43e931c02652d1a3c748546ae4')
 build() {
   cd "$_pkgname-$pkgver"
 for dfile in splitfasta.d delstop.d countTaxa.d RGBEPP.d RGBEPP_refmix.d
