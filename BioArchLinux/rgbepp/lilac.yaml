@@ -17,3 +17,7 @@ repo_depends:
   - diamond
   - macse
   - isa-l
+  - bowtie2
+  - samtools
+  - bcftools
+  - trimal
