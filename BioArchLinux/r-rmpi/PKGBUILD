@@ -23,7 +23,7 @@ b2sums=('7724186da6f81bf5cd04c5be96a93fd8da83eec59395000d57c4ad93738a33909b41593
 prepare() {
   cd "$_pkgname"
   # remove unnecessary check for orted
-  patch -Np1 -i ../fix-build.patch
+  # patch -Np1 -i ../fix-build.patch
   autoconf
 }
 
