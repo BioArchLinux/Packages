@@ -16,9 +16,10 @@ depends=(
   r-rcolorbrewer
   r-rhtslib
   r-zlibbioc
-  make
   r-dnacopy
+  r-pheatmap
 )
+makedepends=(make)
 optdepends=(
   r-berryfunctions
   r-biostrings

@@ -8,6 +8,7 @@ repo_depends:
 - r-rhtslib
 - r-zlibbioc
 - r-dnacopy
+- r-pheatmap
 update_on:
 - regex: maftools_([\d._-]+).tar.gz
   source: regex
