@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-adegenet
+- r-ape
+- r-crayon
+- r-dartr.data
+- r-data.table
+- r-dplyr
+- r-foreach
+- r-ggplot2
+- r-gridextra
+- r-patchwork
+- r-plyr
+- r-raster
+- r-reshape2
+- r-snpassoc
+- r-snprelate
+- r-snpstats
+- r-stampp
+- r-stringr
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: dartR.base
+  repo: cran
+  md5: true
+- alias: r
