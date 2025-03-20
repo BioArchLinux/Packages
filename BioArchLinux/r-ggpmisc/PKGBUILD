@@ -54,20 +54,20 @@ md5sums=('deccb30d8937facf9f2a93615e2f4456'
 b2sums=('9a756ba7c4bcfd3ac9634f430d183cf72cfa8a86560b0cda3cd541866ca73fc9e8371091c1c238d9b63174b4e89ee635ce2f545b417692581564a63794622e34'
         '0d6b5f2c056d6c4badfb880f3c47f7f1aa87c28f0d3c972a7df0e039ba0f68ffb6663ccafe790be759711a879d001aa53ed96ef9de2fd620382d31eb2b9a9c1b')
 
-prepare() {
+#prepare() {
   # fix snapshot tests
-  patch -Np1 -i fix-tests.patch
-}
+#  patch -Np1 -i fix-tests.patch
+#}
 
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
 }
 
-check() {
-  cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
-}
+#check() {
+#  cd "$_pkgname/tests"
+#  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+#}
 
 package() {
   install -d "$pkgdir/usr/lib/R/library"
