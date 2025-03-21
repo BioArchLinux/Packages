@@ -11,15 +11,33 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-clusterprofiler
-  r-go.db
   r-goprofiles
   r-org.hs.eg.db
   r-stringr
 )
+
 optdepends=(
   r-biocstyle
   r-knitr
   r-rmarkdown
+  r-biocmanager
+  r-org.at.tair.db
+  r-org.ag.eg.db
+  r-org.bt.eg.db
+  r-org.ce.eg.db
+  r-org.cf.eg.db
+  r-org.dm.eg.db
+  r-org.dr.eg.db
+  r-org.ecsakai.eg.db
+  r-org.eck12.eg.db
+  r-org.gg.eg.db
+  r-org.mm.eg.db
+  r-org.mmu.eg.db
+  r-org.rn.eg.db
+  r-org.sc.sgd.db
+  r-org.ss.eg.db
+  r-org.pt.eg.db
+  r-org.xl.eg.db
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('03a006142bb604e84817524b9b1e5206')
