@@ -33,6 +33,11 @@ depends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-xgboost
+  r-arrow
+  r-rjson
+  r-microbenchmark
+  )
+makedepends=(
   gcc
 )
 optdepends=(
