@@ -21,6 +21,11 @@ depends=(
   r-readr
   r-tidyr
   r-xml2
+  r-rentrez
+  r-summarizedexperiment
+  r-s4vectors
+  r-rvest
+  r-httr2
 )
 optdepends=(
   r-biocgenerics
