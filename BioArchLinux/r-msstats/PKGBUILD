@@ -36,6 +36,8 @@ optdepends=(
   r-markdown
   r-rmarkdown
   r-tinytest
+  r-mockery
+  r-kableextra
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('fbe700c866603b1cc838da249c6aa835')
