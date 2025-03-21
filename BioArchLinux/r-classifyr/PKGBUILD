@@ -24,6 +24,7 @@ depends=(
   r-rlang
   r-s4vectors
   r-tidyr
+  r-dcanr
 )
 optdepends=(
   r-biocstyle
