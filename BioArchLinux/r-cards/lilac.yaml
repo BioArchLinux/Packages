@@ -9,6 +9,7 @@ repo_depends:
 - r-rlang
 - r-tidyr
 - r-tidyselect
+- r-lifecycle
 repo_makedepends:
 - r-hms
 - r-testthat
