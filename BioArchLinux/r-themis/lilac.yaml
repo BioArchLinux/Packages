@@ -17,6 +17,7 @@ repo_depends:
 - r-tibble
 - r-vctrs
 - r-withr
+- r-cli
 repo_makedepends:
 - r-dials
 - r-modeldata
