@@ -24,8 +24,9 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('cb7b064667bad039fb7497d09b04e2db61e298688079498391bce59a94fdf679')
+md5sums=('8d2858f7f489bc652a2f89677ba33335')
 b2sums=('6663dcc02754f2685aebca656975eda1bdee79f8e630f37c9488deaa60f02f30ed2aea217ee5aedcad272c90f5b6435ab905aee8a2e84c36ac06932660e0c22d')
+
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
