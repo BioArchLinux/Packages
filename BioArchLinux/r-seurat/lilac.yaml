@@ -17,7 +17,7 @@ repo_depends:
 - r-igraph
 - r-irlba
 - r-jsonlite
-- r-leiden
+- r-leidenbase
 - r-lifecycle
 - r-lmtest
 - r-matrixstats
@@ -27,7 +27,6 @@ repo_depends:
 - r-plotly
 - r-png
 - r-progressr
-- r-purrr
 - r-rann
 - r-rcolorbrewer
 - r-rcpp
