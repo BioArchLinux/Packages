@@ -22,7 +22,7 @@ depends=(
   r-genomicfiles
   r-genomicranges
   r-iranges
-  r-rmysql
+  r-rmariadb
   r-rsamtools
   r-s4vectors
   r-seqinr
