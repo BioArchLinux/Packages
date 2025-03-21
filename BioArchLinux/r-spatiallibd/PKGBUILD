@@ -45,6 +45,7 @@ depends=(
   r-summarizedexperiment
   r-tibble
   r-viridislite
+  r-dplyr
 )
 checkdepends=(
   r-testthat
