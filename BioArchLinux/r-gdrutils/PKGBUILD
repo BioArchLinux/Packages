@@ -43,6 +43,7 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-yaml
+  r-scales
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('6fd781aed5ab1373abdd3824f7fd56be')
