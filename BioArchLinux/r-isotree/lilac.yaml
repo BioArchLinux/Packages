@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-jsonlite
 - r-rcpp
+- r-rhpcblasctl
 update_on:
 - source: rpkgs
   pkgname: isotree
