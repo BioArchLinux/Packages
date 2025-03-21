@@ -10,7 +10,6 @@ repo_depends:
 - r-ggplot2
 - r-igraph
 - r-intergraph
-- r-networkd3
 - r-pheatmap
 - r-rcolorbrewer
 - r-rcpp
