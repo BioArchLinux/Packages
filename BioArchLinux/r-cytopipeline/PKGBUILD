@@ -36,6 +36,7 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-vdiffr
+  r-cytopipelinegui
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('72f1c9750d747024d3815e7d14d9213d')
