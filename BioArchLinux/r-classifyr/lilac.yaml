@@ -16,6 +16,7 @@ repo_depends:
 - r-rlang
 - r-s4vectors
 - r-tidyr
+- r-dcanr
 update_on:
 - regex: ClassifyR_([\d._-]+).tar.gz
   source: regex
