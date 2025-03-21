@@ -129,6 +129,7 @@ optdepends=(
   r-vgam
   r-weightit
   r-withr
+  r-tune
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('22982d70e0d7de7542817c729dfe2e51')
