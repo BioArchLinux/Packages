@@ -10,80 +10,18 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
 depends=(
-  r-adegenet
-  r-ape
-  r-crayon
-  r-dartr.data
-  r-data.table
-  r-dplyr
-  r-fields
-  r-foreach
-  r-ggplot2
-  r-gridextra
-  r-patchwork
-  r-plyr
-  r-popgenreport
-  r-raster
-  r-reshape2
-  r-shiny
-  r-snprelate
-  r-sp
-  r-stampp
-  r-stringr
-  r-tidyr
-  r-vegan
+  r-httr
+  r-devtools
+  r-rcurl
+  r-cli
+  r-rlang
 )
 optdepends=(
-  r-devtools
-  r-directlabels
-  r-dismo
-  r-doparallel
-  r-expm
-  r-gdistance
-  r-gganimate
-  r-ggrepel
-  r-ggtern
-  r-ggthemes
-  r-gplots
-  r-gtable
-  r-hardyweinberg
-  r-hierfstat
-  r-igraph
-  r-iterpc
-  r-knitr
-  r-label.switching
-  r-leaflet
-  r-leaflet.minicharts
-  r-markdown
-  r-mmod
-  r-networkd3
-  r-pegas
-  r-pheatmap
-  r-plotly
-  r-poppr
-  r-proxy
-  r-purrr
-  r-qvalue
-  r-rcolorbrewer
-  r-rcpp
-  r-rgl
-  r-rmarkdown
-  r-rrblup
-  r-scales
-  r-seqinr
-  r-shinybs
-  r-shinyjs
-  r-shinythemes
-  r-shinywidgets
-  r-siber
-  r-snpstats
-  r-stringi
-  r-terra
-  r-testthat
-  r-tibble
-  r-vcfr
-  r-viridis
-  r-zoo
+  r-dartr.base
+  r-dartr.sim
+  r-dartr.captive
+  r-dartr.popgen
+  r-dartr.spatial
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('234e3e944fdaba9f592038a1391df15c')
