@@ -33,7 +33,6 @@ depends=(
   r-iranges
   r-jsonlite
   r-magrittr
-  r-multiassayexperiment
   r-rcolorbrewer
   r-reticulate
   r-rsamtools
@@ -50,7 +49,11 @@ depends=(
   r-tidyselect
   r-txdbmaker
   r-withr
-  r-zlibbioc
+  r-spatialexperiment
+  r-biocparallel
+  r-scatterpie
+  r-readr
+  r-matrixgenerics
   xz
   zlib
 )
@@ -64,7 +67,6 @@ optdepends=(
   r-biocstyle
   r-geoquery
   r-knitr
-  r-markdown
   r-r.utils
   r-rmarkdown
   r-shortread
