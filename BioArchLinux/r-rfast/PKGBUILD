@@ -16,7 +16,7 @@ depends=(
   onetbb
   r-rcpp
   r-rcppparallel
-  r-rcppziggurat
+  r-zigg
 )
 makedepends=(
   r-rcpparmadillo
