@@ -44,9 +44,14 @@ optdepends=(
   r-rcurl
   r-runit
 )
-source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('7596c63194f0bf3e58feaa2a854c2061')
-b2sums=('862daeda207dbe4b388cbffd373bed268a120a16e9a33694e7c1c54fb12db835322ae8178631c6813ede645d6cb9e7f9b01c38c4f23d4cdfc46fac37572b0d1e')
+source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "20250321.patch::https://github.com/benilton/oligo/compare/RELEASE_3_20...e073acb.patch")
+md5sums=('7596c63194f0bf3e58feaa2a854c2061' 'SKIP')
+b2sums=('862daeda207dbe4b388cbffd373bed268a120a16e9a33694e7c1c54fb12db835322ae8178631c6813ede645d6cb9e7f9b01c38c4f23d4cdfc46fac37572b0d1e' 'SKIP')
+
+preapre(){
+  patch -np 1 < $srcdir/20250321.patch
+}
 
 build() {
   mkdir build
