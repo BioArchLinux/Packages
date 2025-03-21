@@ -24,6 +24,7 @@ depends=(
   r-tibble
   r-vctrs
   r-withr
+  r-cli
 )
 checkdepends=(
   r-dials
