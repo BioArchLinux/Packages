@@ -38,6 +38,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-viridislite
+- r-dplyr
 repo_makedepends:
 - r-testthat
 update_on:
