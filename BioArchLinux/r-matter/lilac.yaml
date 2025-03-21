@@ -9,6 +9,7 @@ repo_depends:
 - r-digest
 - r-irlba
 - r-protgenerics
+- r-bh
 update_on:
 - regex: matter_([\d._-]+).tar.gz
   source: regex
