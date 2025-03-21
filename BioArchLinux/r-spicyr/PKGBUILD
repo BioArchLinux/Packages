@@ -17,7 +17,6 @@ depends=(
   r-concaveman
   r-data.table
   r-dplyr
-  r-extrafont
   r-ggforce
   r-ggplot2
   r-lmertest
@@ -33,6 +32,12 @@ depends=(
   r-summarizedexperiment
   r-tibble
   r-tidyr
+  r-ggthemes
+  r-coxme
+  r-lifecycle
+  r-ggh4x
+  r-ggnewscale
+  r-simpleseg
 )
 optdepends=(
   r-biocstyle
