@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+repo_depends:
+- r-ggfun
+- r-ggplot2
+- r-ggrepel
+- r-igraph
+- r-rlang
+- r-yulab.utils
+update_on:
+- source: rpkgs
+  pkgname: ggtangle
+  repo: cran
+  md5: true
+- alias: r

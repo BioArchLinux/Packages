@@ -21,6 +21,7 @@ repo_depends:
 - r-scatterpie
 - r-shadowtext
 - r-yulab.utils
+- r-ggtangle
 update_on:
 - regex: enrichplot_([\d._-]+).tar.gz
   source: regex

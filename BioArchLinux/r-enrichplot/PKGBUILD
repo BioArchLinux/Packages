@@ -29,6 +29,7 @@ depends=(
   r-scatterpie
   r-shadowtext
   r-yulab.utils
+  r-ggtangle
 )
 optdepends=(
   r-annotationdbi
