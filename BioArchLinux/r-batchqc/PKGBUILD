@@ -30,18 +30,19 @@ depends=(
   r-tibble
   r-tidyr
   r-tidyverse
+  r-shinythemes
+  r-s4vectors
+  r-shinyjs
 )
 optdepends=(
   r-biocmanager
   r-biocstyle
   r-bladderbatch
-  r-dendextend
   r-devtools
   r-knitr
   r-lintr
   r-plotly
   r-rmarkdown
-  r-shinythemes
   r-spelling
   r-testthat
 )
