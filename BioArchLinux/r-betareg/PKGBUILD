@@ -25,6 +25,7 @@ optdepends=(
   r-quarto
   r-statmod
   r-strucchange
+  r-bamlss
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('482ba7a2a6ae8968dcd3de03f84581d2')
