@@ -24,7 +24,6 @@ repo_depends:
 - r-iranges
 - r-jsonlite
 - r-magrittr
-- r-multiassayexperiment
 - r-rcolorbrewer
 - r-reticulate
 - r-rsamtools
@@ -41,7 +40,11 @@ repo_depends:
 - r-tidyselect
 - r-txdbmaker
 - r-withr
-- r-zlibbioc
+- r-spatialexperiment
+- r-biocparallel
+- r-scatterpie
+- r-readr
+- r-matrixgenerics
 repo_makedepends:
 - r-rcpp
 - r-rhtslib
