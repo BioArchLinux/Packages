@@ -4,7 +4,6 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-clusterprofiler
-- r-go.db
 - r-goprofiles
 - r-org.hs.eg.db
 - r-stringr
