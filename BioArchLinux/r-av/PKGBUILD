@@ -22,6 +22,7 @@ optdepends=(
   r-ggplot2
   r-ps
   r-testthat
+  r-curl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('992cf007ee4275e606ddd8d8e6a63234')
