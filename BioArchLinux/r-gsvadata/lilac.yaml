@@ -6,6 +6,7 @@ repo_depends:
 - r-biobase
 - r-gseabase
 - r-hgu95a.db
+- r-summarizedexperiment
 update_on:
 - regex: GSVAdata_([\d._-]+).tar.gz
   source: regex
