@@ -19,9 +19,7 @@ checkdepends=(
 )
 optdepends=(
   r-knitr
-  r-ncdf4
   r-rmarkdown
-  r-rnetcdf
   r-stringr
   r-testthat
   r-ncdfcf
