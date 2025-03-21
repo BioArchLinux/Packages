@@ -42,6 +42,7 @@ optdepends=(
   r-withr
   r-xts
   r-zoo
+  r-bit64
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('aaecd9e5d3038cba160783d10af5c501')
