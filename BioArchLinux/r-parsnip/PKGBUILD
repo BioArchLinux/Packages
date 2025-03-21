@@ -27,6 +27,7 @@ depends=(
   r-tidyr
   r-vctrs
   r-withr
+  r-sparsevctrs
 )
 checkdepends=(
   r-bench
