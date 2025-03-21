@@ -16,6 +16,9 @@ depends=(
   r-rcpp
   r-rcpphnsw
   r-s4vectors
+  r-assorthead
+)
+makedepends=(
   gcc
 )
 optdepends=(
