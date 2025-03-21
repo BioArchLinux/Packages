@@ -6,7 +6,7 @@ _pkgver=2.10.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Creating spatial heatmaps from R and Shiny"
+pkgdesc='Visualizing Spatial Assays in Anatomical Images and Large-Scale Data Extensions'
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
@@ -17,16 +17,12 @@ depends=(
   r-genefilter
   r-ggplot2
   r-ggplotify
-  r-gplots
   r-gridextra
   r-grimport
   r-igraph
   r-reshape2
   r-rsvg
   r-s4vectors
-  r-scater
-  r-scran
-  r-scuttle
   r-shiny
   r-shinydashboard
   r-singlecellexperiment
