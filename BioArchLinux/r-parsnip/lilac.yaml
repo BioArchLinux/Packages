@@ -20,6 +20,7 @@ repo_depends:
 - r-tidyr
 - r-vctrs
 - r-withr
+- r-sparsevctrs
 repo_makedepends:
 - r-bench
 - r-c50
