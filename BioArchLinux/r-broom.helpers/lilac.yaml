@@ -14,6 +14,7 @@ repo_depends:
 - r-stringr
 - r-tibble
 - r-tidyr
+- r-tidyselect
 update_on:
 - source: rpkgs
   pkgname: broom.helpers
