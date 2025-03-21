@@ -24,6 +24,9 @@ repo_depends:
 - r-singlecellexperiment
 - r-summarizedexperiment
 - r-xgboost
+- r-arrow
+- r-rjson
+- r-microbenchmark
 update_on:
 - regex: BayesSpace_([\d._-]+).tar.gz
   source: regex
