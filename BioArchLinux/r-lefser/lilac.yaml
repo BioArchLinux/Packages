@@ -8,6 +8,12 @@ repo_depends:
 - r-ggplot2
 - r-s4vectors
 - r-summarizedexperiment
+- r-ggtree
+- r-stringr
+- r-testthat
+- r-forcats
+- r-tibble
+- r-tidyr
 update_on:
 - source: rpkgs
   pkgname: lefser
