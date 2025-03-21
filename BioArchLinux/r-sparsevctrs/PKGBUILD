@@ -16,8 +16,6 @@ depends=(
 )
 optdepends=(
   r-knitr
-  r-matrix
-  r-methods
   r-rmarkdown
   r-testthat
   r-tibble
