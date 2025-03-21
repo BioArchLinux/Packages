@@ -25,7 +25,7 @@ depends=(
   r-igraph
   r-irlba
   r-jsonlite
-  r-leiden
+  r-leidenbase
   r-lifecycle
   r-lmtest
   r-matrixstats
@@ -35,7 +35,6 @@ depends=(
   r-plotly
   r-png
   r-progressr
-  r-purrr
   r-rann
   r-rcolorbrewer
   r-rcpp
@@ -56,6 +55,7 @@ depends=(
   r-tibble
   r-uwot
 )
+
 makedepends=(
   r-rcppeigen
   r-rcppprogress
@@ -103,6 +103,8 @@ optdepends=(
   r-summarizedexperiment
   r-testthat
   r-vgam
+  r-glmgampoi
+  r-sf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f0f8ead2778e97d7c06bac7eb6276115')
