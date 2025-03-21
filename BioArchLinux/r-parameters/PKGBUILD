@@ -136,6 +136,7 @@ optdepends=(
   r-withr
   r-wrs2
   r-logitr
+  r-modelbased
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('386fdff521faba5b53b4189154d70a53')
