@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r
+  r-assorthead
 )
 optdepends=(
   r-affy
