@@ -17,6 +17,7 @@ repo_depends:
 - r-rlang
 - r-strawr
 - r-withr
+- r-rhdf5
 update_on:
 - regex: plotgardener_([\d._-]+).tar.gz
   source: regex
