@@ -25,6 +25,7 @@ depends=(
   r-rlang
   r-strawr
   r-withr
+  r-rhdf5
 )
 optdepends=(
   r-annotationdbi
