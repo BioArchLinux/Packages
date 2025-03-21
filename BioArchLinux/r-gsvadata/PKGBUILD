@@ -14,6 +14,7 @@ depends=(
   r-biobase
   r-gseabase
   r-hgu95a.db
+  r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('5e62cfa29769ae00018414bc063a5e84ce0199144651aaf2e21095f8a37c3d34')
