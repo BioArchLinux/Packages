@@ -92,6 +92,10 @@ optdepends=(
   r-wgcna
   r-xlsx
   r-yaml
+  r-gplots
+  r-scater
+  r-scuttle
+  r-scran
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('4b23dab35de4ffbebd99e27b327de846')
