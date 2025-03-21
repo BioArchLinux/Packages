@@ -16,13 +16,13 @@ depends=(
   r-rlang
   r-tidyr
   r-tidyselect
+  r-lifecycle
 )
 checkdepends=(
   r-hms
   r-testthat
 )
 optdepends=(
-  r-spelling
   r-testthat
   r-withr
 )
