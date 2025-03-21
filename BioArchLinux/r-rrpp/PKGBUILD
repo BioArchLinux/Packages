@@ -8,9 +8,8 @@ pkgrel=1
 pkgdesc='Linear Model Evaluation with Randomized Residuals in a Permutation Procedure'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=('GPL-3.0-or-later')
 depends=(
-  r
   r-ape
   r-ggplot2
 )
@@ -22,8 +21,9 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('5872acd5f6bacc019832a635c50f64ea2b484be5d3939a55eaea0a7d12a0e3f5')
-b2sums=('5f1c615daa99547fb6c2d9c16a67dc70a443032fa3475ae117a6e4547c85fd609bda9f452dedd3937b20fbb88982f114ee1da020876d9bd4d60c04ebe262c9ef')
+md5sums=('8d2858f7f489bc652a2f89677ba33335')
+b2sums=('6663dcc02754f2685aebca656975eda1bdee79f8e630f37c9488deaa60f02f30ed2aea217ee5aedcad272c90f5b6435ab905aee8a2e84c36ac06932660e0c22d')
+
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
