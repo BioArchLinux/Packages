@@ -9,7 +9,6 @@ repo_depends:
 - r-concaveman
 - r-data.table
 - r-dplyr
-- r-extrafont
 - r-ggforce
 - r-ggplot2
 - r-lmertest
@@ -25,6 +24,12 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-tidyr
+- r-ggthemes
+- r-coxme
+- r-lifecycle
+- r-ggh4x
+- r-ggnewscale
+- r-simpleseg
 update_on:
 - source: rpkgs
   pkgname: spicyR
