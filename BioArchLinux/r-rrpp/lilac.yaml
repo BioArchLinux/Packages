@@ -9,5 +9,5 @@ update_on:
 - source: rpkgs
   pkgname: RRPP
   repo: cran
-  md5: false
+  md5: true
 - alias: r
