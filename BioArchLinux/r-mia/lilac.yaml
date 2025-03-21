@@ -27,6 +27,8 @@ repo_depends:
 - r-tidyr
 - r-treesummarizedexperiment
 - r-vegan
+- r-mediation
+- r-rbiom 
 update_on:
 - regex: mia_([\d._-]+).tar.gz
   source: regex
