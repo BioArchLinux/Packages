@@ -12,6 +12,7 @@ license=('BSD-2-Clause')
 depends=(
   r-jsonlite
   r-rcpp
+  r-rhpcblasctl
 )
 makedepends=(
   robin-map
