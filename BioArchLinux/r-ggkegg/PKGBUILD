@@ -10,17 +10,14 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
-  r-annotationdbi
   r-biocfilecache
   r-data.table
   r-dplyr
-  r-getoptlong
   r-ggplot2
   r-ggraph
   r-gtable
   r-igraph
   r-magick
-  r-org.hs.eg.db
   r-patchwork
   r-shadowtext
   r-stringr
