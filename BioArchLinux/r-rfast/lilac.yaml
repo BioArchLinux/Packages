@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-rcpp
 - r-rcppparallel
-- r-rcppziggurat
+- r-zigg
 repo_makedepends:
 - r-rcpparmadillo
 update_on:
