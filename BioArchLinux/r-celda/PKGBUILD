@@ -41,6 +41,9 @@ depends=(
   r-summarizedexperiment
   r-uwot
   r-withr
+  r-dendextend
+  r-ggdendro
+  r-proc
 )
 optdepends=(
   r-biocmanager
