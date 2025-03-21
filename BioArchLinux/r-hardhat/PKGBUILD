@@ -16,6 +16,7 @@ depends=(
   r-rlang
   r-tibble
   r-vctrs
+  r-sparsevctrs
 )
 optdepends=(
   r-covr
