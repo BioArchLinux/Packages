@@ -17,6 +17,9 @@ depends=(
   r-vctrs
   r-zip
 )
+makdepends=(
+  r-cpp11
+)
 checkdepends=(
   r-readr
   r-testthat
