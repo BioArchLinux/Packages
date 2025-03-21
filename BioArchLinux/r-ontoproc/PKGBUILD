@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-annotationhub
+  r-basilisk
   r-biobase
   r-biocfilecache
   r-dplyr
@@ -38,6 +39,7 @@ optdepends=(
   r-rmarkdown
   r-singlecellexperiment
   r-testthat
+  r-magick
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('3b97b2891024222d839bce78e279df49')
