@@ -13,6 +13,11 @@ repo_depends:
 - r-readr
 - r-tidyr
 - r-xml2
+- r-rentrez
+- r-summarizedexperiment
+- r-s4vectors
+- r-rvest
+- r-httr2
 update_on:
 - regex: GEOquery_([\d._-]+).tar.gz
   source: regex
