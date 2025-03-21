@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-e1071
+- r-gridextra
+- r-gtable
+- r-hexbin
+- r-latticeextra
+update_on:
+- source: rpkgs
+  pkgname: BoutrosLab.plotting.general
+  repo: cran
+  md5: true
+- alias: r

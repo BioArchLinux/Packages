@@ -14,6 +14,7 @@ repo_depends:
 - r-mnem
 - r-pcalg
 - r-rcolorbrewer
+- r-boutroslab.plotting.general
 update_on:
 - regex: epiNEM_([\d._-]+).tar.gz
   source: regex
