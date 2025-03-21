@@ -21,7 +21,9 @@ depends=(
   r-stringr
   r-tibble
   r-tidyr
+  r-tidyselect
 )
+
 optdepends=(
   r-betareg
   r-biglm
@@ -67,6 +69,7 @@ optdepends=(
   r-testthat
   r-tidycmprsk
   r-vgam
+  r-glmtoolbox
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8a845058b6d93685dad4c41e506661fe')
