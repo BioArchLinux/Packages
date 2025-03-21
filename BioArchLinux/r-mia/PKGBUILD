@@ -35,6 +35,8 @@ depends=(
   r-tidyr
   r-treesummarizedexperiment
   r-vegan
+  r-mediation
+  r-rbiom 
 )
 optdepends=(
   r-ade4
