@@ -12,6 +12,7 @@ repo_depends:
 repo_makedepends:
 - r-readr
 - r-testthat
+- r-cpp11
 update_on:
 - source: rpkgs
   pkgname: readODS
