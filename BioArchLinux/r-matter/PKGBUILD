@@ -17,6 +17,7 @@ depends=(
   r-digest
   r-irlba
   r-protgenerics
+  r-bh
 )
 optdepends=(
   r-biocstyle
