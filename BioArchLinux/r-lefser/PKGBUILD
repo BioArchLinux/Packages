@@ -16,7 +16,14 @@ depends=(
   r-ggplot2
   r-s4vectors
   r-summarizedexperiment
+  r-ggtree
+  r-stringr
+  r-testthat
+  r-forcats
+  r-tibble
+  r-tidyr
 )
+
 optdepends=(
   r-biocstyle
   r-covr
@@ -25,7 +32,6 @@ optdepends=(
   r-phyloseq
   r-pkgdown
   r-rmarkdown
-  r-testthat
   r-withr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
