@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Paws Low-Level Amazon Web Services API"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('Apache-2.0')
+license=('Apache')
 depends=(
   pandoc
   r-base64enc
