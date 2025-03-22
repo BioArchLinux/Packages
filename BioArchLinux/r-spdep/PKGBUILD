@@ -35,6 +35,7 @@ optdepends=(
   r-tinytest
   r-tmap
   r-xtable
+  r-rgeoda
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b713a73d1998c26c2769000dcd399148')
