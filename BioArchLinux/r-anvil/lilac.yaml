@@ -19,6 +19,7 @@ repo_depends:
 - r-tidyr
 - r-tidyselect
 - r-yaml
+- r-anvilbase
 update_on:
 - source: rpkgs
   pkgname: AnVIL
