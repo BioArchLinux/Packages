@@ -13,6 +13,7 @@ depends=(
   r-filelock
   r-httr2
   r-jsonlite
+  r-rappdirs
 )
 checkdepends=(
   r-dbi

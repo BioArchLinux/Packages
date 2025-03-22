@@ -6,6 +6,7 @@ repo_depends:
 - r-filelock
 - r-httr2
 - r-jsonlite
+- r-rappdirs
 repo_makedepends:
 - r-dbi
 - r-jsonvalidate
