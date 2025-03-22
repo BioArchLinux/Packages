@@ -26,6 +26,7 @@ depends=(
   r-tidyr
   r-tidyselect
   r-yaml
+  r-anvilbase
 )
 optdepends=(
   r-biocstyle
@@ -35,6 +36,9 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-withr
+  r-anvilaz
+  r-anvilgcp
+  r-lifecycle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f11ff7172e354bf05e4f3650493ec41e')
