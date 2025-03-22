@@ -14,6 +14,9 @@ repo_depends:
 - r-rsqlite
 - r-tidyr
 - r-topgo
+- r-zellkonverter
+- r-anndata
+- r-hdf5array
 update_on:
 - regex: BgeeDB_([\d._-]+).tar.gz
   source: regex
