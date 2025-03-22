@@ -22,6 +22,9 @@ depends=(
   r-rsqlite
   r-tidyr
   r-topgo
+  r-zellkonverter
+  r-anndata
+  r-hdf5array
 )
 optdepends=(
   r-biocstyle
