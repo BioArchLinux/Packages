@@ -5,12 +5,10 @@ maintainers:
 repo_depends:
 - r-testthat
 - r-parallelly
-- r-snow
 - r-dplyr
 - r-sessioninfo
 - r-beepr
 - r-pbapply
-- r-rpushbullet
 - r-future
 - r-future.apply
 - r-progressr

@@ -13,12 +13,10 @@ license=('GPL-2.0-or-later')
 depends=(
   r-testthat
   r-parallelly
-  r-snow
   r-dplyr
   r-sessioninfo
   r-beepr
   r-pbapply
-  r-rpushbullet
   r-future
   r-future.apply
   r-progressr
@@ -38,6 +36,7 @@ optdepends=(
   r-future.batchtools
   r-frf2
   r-rmarkdown
+  r-httr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a0ebc1732254ac79706c11f7e9b89f10')
