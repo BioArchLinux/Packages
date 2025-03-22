@@ -9,6 +9,7 @@ repo_depends:
 - r-genomicranges
 - r-iranges
 - r-s4vectors
+- r-digest
 update_on:
 - regex: SeqArray_([\d._-]+).tar.gz
   source: regex
