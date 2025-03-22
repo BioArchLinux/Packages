@@ -8,7 +8,6 @@ repo_depends:
 - r-httr
 - r-iranges
 - r-jsonlite
-- r-magrittr
 - r-rappdirs
 - r-readr
 - r-rlang
