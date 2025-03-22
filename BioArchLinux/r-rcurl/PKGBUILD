@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=RCurl
-_pkgver=1.98-1.16
+_pkgver=1.98-1.17
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -17,8 +17,8 @@ optdepends=(
   r-xml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3727edecf0189d460661535b6e7b1a46')
-b2sums=('9c49e78be4ee2a3e20bddd77409a1c966e9b36d7b78f093b1794d1cd86289c8d0a2be60d669327a730af98397d7f49fed747d4e6ebc1492ff146c5f2d96475d7')
+md5sums=('19402758e52be28de7caeb2ac4df25da')
+b2sums=('c000a00de93ec1f726e4ba854fe5b166d00b20499c0f481152a24cf1e4c76190ab897c0c09bdd83298ca16e06eab2f7d9087724475ea9e137c69e22763d3d910')
 
 build() {
   mkdir build
