@@ -37,6 +37,7 @@ optdepends=(
   r-frf2
   r-rmarkdown
   r-httr
+  r-rpushbullet
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a0ebc1732254ac79706c11f7e9b89f10')
