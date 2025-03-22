@@ -8,22 +8,21 @@ pkgrel=1
 pkgdesc='Data management of large-scale whole-genome sequence variant calls'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('GPL')
+license=('GPL-3.0-only')
 depends=(
-  r
   r-biostrings
   r-gdsfmt
   r-genomeinfodb
   r-genomicranges
   r-iranges
   r-s4vectors
+  r-digest
 )
 optdepends=(
   r-biobase
   r-biocgenerics
   r-biocparallel
   r-crayon
-  r-digest
   r-knitr
   r-markdown
   r-rcpp
