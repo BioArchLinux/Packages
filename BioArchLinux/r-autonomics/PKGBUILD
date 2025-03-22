@@ -5,7 +5,7 @@ _pkgver=1.12.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Unified statistal Modeling of Omics Data"
+pkgdesc='Unified Statistical Modeling of Omics Data'
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
@@ -39,7 +39,11 @@ depends=(
   r-tidyselect
   r-vsn
 )
+
 optdepends=(
+  r-biobase
+  r-e1071
+  r-patchwork
   r-affy
   r-annotationdbi
   r-annotationhub
@@ -50,7 +54,6 @@ optdepends=(
   r-dbi
   r-diagram
   r-ensembldb
-  r-fpc
   r-genomicdatacommons
   r-genomicranges
   r-geoquery
