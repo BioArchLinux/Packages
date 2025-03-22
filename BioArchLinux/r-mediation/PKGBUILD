@@ -17,8 +17,6 @@ depends=(
   r-sandwich
 )
 optdepends=(
-  r-mgcv
-  r-parallel
   r-quantreg
   r-speedglm
   r-suppdists
