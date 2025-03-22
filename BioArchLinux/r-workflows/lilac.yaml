@@ -13,6 +13,9 @@ repo_depends:
 - r-rlang
 - r-tidyselect
 - r-vctrs
+- r-withr
+- r-recipes
+- r-sparsevctrs
 update_on:
 - source: rpkgs
   pkgname: workflows

@@ -20,6 +20,9 @@ depends=(
   r-rlang
   r-tidyselect
   r-vctrs
+  r-withr
+  r-recipes
+  r-sparsevctrs
 )
 optdepends=(
   r-butcher
@@ -28,9 +31,11 @@ optdepends=(
   r-knitr
   r-magrittr
   r-modeldata
-  r-recipes
   r-rmarkdown
   r-testthat
+  r-glmnet
+  r-probably
+  r-rsample
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('6e78b96d1969bfd9f87c841a8a36464d')
