@@ -6,7 +6,7 @@ repo_depends:
 - r-base64enc
 - r-curl
 - r-digest
-- r-httr
+- r-httr2
 - r-jsonlite
 - r-rcpp
 - r-xml2
