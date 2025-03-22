@@ -38,6 +38,7 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-xml2
+  r-networkd3
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c163717eec18f17589d6f47ddcb3221e')
