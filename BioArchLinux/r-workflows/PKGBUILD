@@ -21,7 +21,6 @@ depends=(
   r-tidyselect
   r-vctrs
   r-withr
-  r-recipes
   r-sparsevctrs
 )
 optdepends=(
