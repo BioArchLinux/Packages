@@ -50,6 +50,7 @@ depends=(
   r-sortable
   r-xfun
   r-xml2
+  r-colourpicker
 )
 checkdepends=(
   r-testthat

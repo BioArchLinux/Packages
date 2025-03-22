@@ -43,6 +43,7 @@ repo_depends:
 - r-sortable
 - r-xfun
 - r-xml2
+- r-colourpicker
 repo_makedepends:
 - r-testthat
 update_on:
