@@ -14,7 +14,6 @@ repo_depends:
 - r-tidyselect
 - r-vctrs
 - r-withr
-- r-recipes
 - r-sparsevctrs
 update_on:
 - source: rpkgs
