@@ -54,6 +54,7 @@ depends=(
   r-stringi
   r-summarizedexperiment
   zlib
+  r-httr
 )
 makedepends=(
   r-rcppprogress

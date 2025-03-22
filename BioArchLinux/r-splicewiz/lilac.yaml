@@ -46,6 +46,7 @@ repo_depends:
 - r-shinywidgets
 - r-stringi
 - r-summarizedexperiment
+- r-httr
 repo_makedepends:
 - r-rcppprogress
 - r-rsubread
