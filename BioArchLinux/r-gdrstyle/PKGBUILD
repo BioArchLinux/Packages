@@ -22,12 +22,12 @@ depends=(
   r-rjson
   r-withr
   r-yaml
+  r-biocstyle
 )
 checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-biocstyle
   r-knitr
   r-testthat
 )

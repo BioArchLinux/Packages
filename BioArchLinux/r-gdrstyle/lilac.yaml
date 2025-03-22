@@ -15,6 +15,7 @@ repo_depends:
 - r-rjson
 - r-withr
 - r-yaml
+- r-biocstyle
 repo_makedepends:
 - r-testthat
 update_on:
