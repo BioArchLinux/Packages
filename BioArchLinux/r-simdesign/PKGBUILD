@@ -5,7 +5,7 @@ _pkgname=SimDesign
 _pkgver=2.19.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Structure for Organizing Monte Carlo Simulation Designs"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
