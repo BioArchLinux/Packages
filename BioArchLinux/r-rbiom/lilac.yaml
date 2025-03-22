@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-ape
+- r-dplyr
+- r-emmeans
+- r-fillpattern
+- r-ggbeeswarm
+- r-ggnewscale
+- r-ggplot2
+- r-ggrepel
+- r-ggtext
+- r-jsonlite
+- r-magrittr
+- r-parallelly
+- r-patchwork
+- r-pillar
+- r-plyr
+- r-readr
+- r-readxl
+- r-slam
+- r-vegan
+update_on:
+- source: rpkgs
+  pkgname: rbiom
+  repo: cran
+  md5: true
+- alias: r
