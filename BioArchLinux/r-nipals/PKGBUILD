@@ -9,7 +9,6 @@ pkgdesc="Principal Components Analysis using NIPALS or Weighted EMPCA, with Gram
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 licesen=('MIT')
-license=('GPL-3.0-only')
 depends=(
   r
 )
