@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-alabama
 - r-fishmod
-- r-mvabund
 - r-nloptr
 - r-statmod
 - r-tmb
