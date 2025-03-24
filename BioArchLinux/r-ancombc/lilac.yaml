@@ -13,14 +13,9 @@ repo_depends:
 - r-hmisc
 - r-lme4
 - r-lmertest
-- r-mia
 - r-multcomp
 - r-nloptr
 - r-rdpack
-- r-s4vectors
-- r-singlecellexperiment
-- r-summarizedexperiment
-- r-treesummarizedexperiment
 repo_makedepends:
 - r-microbiome
 - r-testthat
