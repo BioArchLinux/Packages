@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-dplyr
 - r-ggplot2
 - r-ggrepel
 - r-ihw
