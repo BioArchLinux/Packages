@@ -10,7 +10,6 @@ arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('MIT')
 depends=(
-  r
   r-annotationdbi
   r-biocgenerics
   r-circlize
@@ -26,6 +25,7 @@ depends=(
   r-proxyc
   r-slam
   r-tm
+  r-simona
 )
 optdepends=(
   r-apcluster
