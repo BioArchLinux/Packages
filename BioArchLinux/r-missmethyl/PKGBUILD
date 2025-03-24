@@ -31,6 +31,8 @@ depends=(
   r-statmod
   r-stringr
   r-summarizedexperiment
+  r-illuminahumanmethylationepicv2anno.20a1.hg38
+  r-illuminahumanmethylationepicv2manifest
 )
 optdepends=(
   r-biocstyle
