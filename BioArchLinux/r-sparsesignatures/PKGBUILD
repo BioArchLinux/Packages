@@ -10,7 +10,6 @@ arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('custom')
 depends=(
-  r
   r-biostrings
   r-bsgenome
   r-data.table
@@ -23,6 +22,7 @@ depends=(
   r-nnlasso
   r-nnls
   r-reshape2
+  r-rhpcblasctl
 )
 optdepends=(
   r-biocgenerics
