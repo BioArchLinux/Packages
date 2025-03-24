@@ -18,6 +18,7 @@ repo_depends:
 - r-proxyc
 - r-slam
 - r-tm
+- r-simona
 update_on:
 - regex: simplifyEnrichment_([\d._-]+).tar.gz
   source: regex
