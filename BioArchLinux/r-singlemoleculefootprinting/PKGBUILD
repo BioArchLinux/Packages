@@ -21,6 +21,13 @@ depends=(
   r-plyr
   r-quasr
   r-rcolorbrewer
+  r-ggpointdensity
+  r-ggplot2
+  r-ggrepel
+  r-patchwork
+  r-plyranges
+  r-tidyverse
+  r-viridis
 )
 optdepends=(
   r-bsgenome.mmusculus.ucsc.mm10
