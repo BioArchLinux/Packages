@@ -28,6 +28,7 @@ repo_depends:
 - r-umap
 - r-upsetr
 - r-vsn
+- r-sva
 update_on:
 - regex: MatrixQCvis_([\d._-]+).tar.gz
   source: regex
