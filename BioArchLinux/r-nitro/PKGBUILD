@@ -17,6 +17,10 @@ depends=(r
 	r-progress
 	r-r6
 	r-treetools
+ 	r-dplyr
+  	r-lubridate
+   	r-stringr
+    	r-treeio
 )
 makedepends=(git)
 source=("git+$url.git")
