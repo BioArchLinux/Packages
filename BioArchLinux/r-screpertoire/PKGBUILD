@@ -35,6 +35,9 @@ depends=(
   r-tidygraph
   r-truncdist
   r-vgam
+  r-lifecycle
+  r-purrr
+  r-assertthat
 )
 optdepends=(
   r-biocmanager
