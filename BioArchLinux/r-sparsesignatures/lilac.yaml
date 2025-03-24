@@ -15,6 +15,7 @@ repo_depends:
 - r-nnlasso
 - r-nnls
 - r-reshape2
+- r-rhpcblasctl
 update_on:
 - regex: SparseSignatures_([\d._-]+).tar.gz
   source: regex
