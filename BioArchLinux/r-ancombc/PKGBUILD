@@ -21,14 +21,9 @@ depends=(
   r-hmisc
   r-lme4
   r-lmertest
-  r-mia
   r-multcomp
   r-nloptr
   r-rdpack
-  r-s4vectors
-  r-singlecellexperiment
-  r-summarizedexperiment
-  r-treesummarizedexperiment
 )
 checkdepends=(
   r-microbiome
@@ -44,6 +39,7 @@ optdepends=(
   r-testthat
   r-tidyr
   r-tidyverse
+  r-phyloseq
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9ea99b22eb426a256081e63a7d6049f1')
