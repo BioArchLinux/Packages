@@ -20,6 +20,9 @@ repo_depends:
 - r-summarizedexperiment
 - r-tfmpvalue
 - r-variantannotation
+- r-dt
+- r-bsicons
+- r-shiny
 update_on:
 - regex: motifbreakR_([\d._-]+).tar.gz
   source: regex
