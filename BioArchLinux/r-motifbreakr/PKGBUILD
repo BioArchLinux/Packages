@@ -28,6 +28,9 @@ depends=(
   r-summarizedexperiment
   r-tfmpvalue
   r-variantannotation
+  r-dt
+  r-bsicons
+  r-shiny
 )
 optdepends=(
   r-biocstyle
