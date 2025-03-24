@@ -28,6 +28,9 @@ repo_depends:
 - r-tidygraph
 - r-truncdist
 - r-vgam
+- r-lifecycle
+- r-purrr
+- r-assertthat
 update_on:
 - source: rpkgs
   pkgname: scRepertoire
