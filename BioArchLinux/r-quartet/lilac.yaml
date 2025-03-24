@@ -8,6 +8,7 @@ repo_depends:
 - r-ternary
 - r-treetools
 - r-viridislite
+- r-plottools
 repo_makedepends:
 - r-rcpp
 update_on:
