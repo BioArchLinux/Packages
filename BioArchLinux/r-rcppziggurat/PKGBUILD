@@ -23,6 +23,7 @@ optdepends=(
   r-pinp
   r-rbenchmark
   r-rmarkdown
+  r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('53115de66376aafe087e90ff166d6de1')
