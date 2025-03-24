@@ -14,7 +14,6 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r-commonmark
   r-xfun
 )
 optdepends=(
@@ -22,6 +21,7 @@ optdepends=(
   r-rcurl
   r-rmarkdown
   r-yaml
+  r-litedown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9ac2acb8a5631e219ffa3322aa5f3d5c')
