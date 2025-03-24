@@ -29,6 +29,8 @@ depends=(
   r-ruvseq
   r-singlecellexperiment
   r-summarizedexperiment
+  r-delayedmatrixstats
+  r-sparsematrixstats
 )
 optdepends=(
   r-batchtools
