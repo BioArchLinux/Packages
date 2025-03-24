@@ -10,7 +10,6 @@ arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
-  r
   r-complexheatmap
   r-dplyr
   r-experimenthub
@@ -36,6 +35,7 @@ depends=(
   r-umap
   r-upsetr
   r-vsn
+  r-sva
 )
 optdepends=(
   r-biocgenerics
