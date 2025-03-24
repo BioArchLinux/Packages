@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-minfi
+update_on:
+- regex: IlluminaHumanMethylationEPICv2anno.20a1.hg38_([\d._-]+).tar.gz
+  source: regex
+  url: https://bioconductor.org/packages/IlluminaHumanMethylationEPICv2anno.20a1.hg38
+- alias: r
+update_on:
+- source: rpkgs
+  pkgname: IlluminaHumanMethylationEPICv2anno.20a1.hg38
+  repo: bioc
+  md5: true
+- alias: r
