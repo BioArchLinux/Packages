@@ -10,7 +10,6 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
-  r-dplyr
   r-ggplot2
   r-ggrepel
   r-ihw
@@ -26,6 +25,8 @@ depends=(
   r-summarizedexperiment
 )
 optdepends=(
+  r-biocgenerics
+  r-vdiffr
   r-biocstyle
   r-impute
   r-knitr
