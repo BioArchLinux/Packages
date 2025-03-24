@@ -21,6 +21,8 @@ repo_depends:
 - r-ruvseq
 - r-singlecellexperiment
 - r-summarizedexperiment
+- r-delayedmatrixstats
+- r-sparsematrixstats
 update_on:
 - regex: scone_([\d._-]+).tar.gz
   source: regex
