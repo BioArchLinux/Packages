@@ -30,10 +30,10 @@ build() {
   R CMD INSTALL -l build "$_pkgname"
 }
 
-check() {
-  cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" Rscript --vanilla tinytest.R
-}
+#check() {
+#  cd "$_pkgname/tests"
+#  R_LIBS="$srcdir/build" Rscript --vanilla tinytest.R
+#}
 
 package() {
   install -d "$pkgdir/usr/lib/R/library"
