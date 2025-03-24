@@ -15,6 +15,7 @@ depends=(
   r-ternary
   r-treetools
   r-viridislite
+  r-plottools
 )
 makedepends=(
   r-rcpp
