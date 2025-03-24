@@ -13,6 +13,13 @@ repo_depends:
 - r-plyr
 - r-quasr
 - r-rcolorbrewer
+- r-ggpointdensity
+- r-ggplot2
+- r-ggrepel
+- r-patchwork
+- r-plyranges
+- r-tidyverse
+- r-viridis
 update_on:
 - regex: SingleMoleculeFootprinting_([\d._-]+).tar.gz
   source: regex
