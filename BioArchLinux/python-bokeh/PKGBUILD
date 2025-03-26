@@ -3,14 +3,14 @@
 
 pkgname=python-bokeh
 _module=bokeh
-pkgver=3.7.0
+pkgver=3.7.1
 pkgrel=1
 pkgdesc='Interactive Web Plotting for Python'
 arch=('any')
 url='http://bokeh.pydata.org/'
 license=('BSD')
 source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
-sha256sums=('f19d74e40066a8c237ced80c181fd1329c3b28a9cf347126ea1409f90a9c7874')
+sha256sums=('4a96b08d88a3dc648bcfc209a9dee216cff6931eb787d84aa90298c8e06a5efe')
 depends=('python-jinja'
          'python-contourpy'
          'python'
