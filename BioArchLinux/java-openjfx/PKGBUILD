@@ -18,11 +18,11 @@ pkgname=(
   # "java-openjfx-doc"
   # "java-openjfx-src"
 )
-pkgver=24.u36
+pkgver=23.0.2.u3
 _jdk_buildversion="21"              # Which openjdk version used for building.  # ${pkgver%%.*}  # $(("${pkgver%%.*}"-1))
 _jre_dependversion="${pkgver%%.*}"  # Which java version the installed package should depend on.
 _ffmpegversion=""                   # Which ffmpeg version to use. Leave empty string for up to date version. Other possibilities e.g.: '4.4', '5.1', '6.1'.
-pkgrel=3
+pkgrel=1
 pkgdesc="Java OpenJFX client application platform (open-source implementation of JavaFX) - version following latest major Arch Linux OpenJDK java release. Build without WebKit support."
 arch=(
   "x86_64"
