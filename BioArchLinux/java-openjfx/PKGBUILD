@@ -55,7 +55,7 @@ makedepends=(
 )
 options=(!lto)
 source=(
-  "https://github.com/openjdk/jfx/archive/refs/tags/jfx-${_jfxver}-${_jfxtag}.tar.gz"
+  "https://github.com/openjdk/jfx/archive/refs/tags/${_jfxver}+${_jfxtag}.tar.gz"
   gradle.properties
   java-openjfx-flags.patch
 )
