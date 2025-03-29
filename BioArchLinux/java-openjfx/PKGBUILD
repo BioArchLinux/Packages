@@ -32,7 +32,7 @@ makedepends=(
   gdk-pixbuf2
   glib2
   gperf
-  gradle7
+  gradle=8
   gtk2
   gtk3
   java-environment-openjdk=17
