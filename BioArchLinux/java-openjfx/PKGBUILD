@@ -1,7 +1,5 @@
-# Maintainer:  dreieck (https://aur.archlinux.org/account/dreieck)
-# Maintainer:  Frederik “Freso” S. Olesen <archlinux@freso.dk> (https://aur.archlinux.org/account/Freso)
-# Contributor: Levente Polyak <anthraxx[at]archlinux[dot]org>
-# Contributor: Frederik Schwan <freswa at archlinux dot org> (https://aur.archlinux.org/account/freswa)
+# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
+# Maintainer: Frederik Schwan <freswa at archlinux dot org>
 # Contributor: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Guillaume Alaux <guillaume@archlinux.org>
 # Contributor: William Gathoye <william + archlinux at gathoye dot be>
@@ -11,145 +9,118 @@
 # Contributor: Jens Kapitza <j dot kapitza at schwarze-allianz dot de>
 # Contributor: Olli <olli at coderkun dot de>
 
-pkgbase="java-openjfx"
+pkgbase=java-openjfx
 pkgname=(
-  "java-openjfx"
-  "java-openjfx-doc"
-  "java-openjfx-src"
+  java-openjfx
+  java-openjfx-doc
+  java-openjfx-src
 )
-_jfxver=24
-_jfxtag=29
-# I cannot for the life of me figure out their wacky versioning system so this is pure guesswork:
-pkgver=${_jfxver}.0.0.u${_jfxtag}
-pkgrel=0.1
-pkgdesc="Java OpenJFX client application platform built without WebKit support."
+pkgver=21.0.2.u5
+epoch=1
+pkgrel=3
+pkgdesc="Java OpenJFX client application platform (open-source implementation of JavaFX) - latest version"
 arch=(x86_64 x86_64_v3)
-url="https://wiki.openjdk.java.net/display/OpenJFX/Main"
+url=https://wiki.openjdk.java.net/display/OpenJFX/Main
 license=('GPL-2.0-only WITH Classpath-exception-2.0')
 makedepends=(
-  "alsa-lib"
-  "ant"
-  "cairo"
-  "cmake"
-  "ffmpeg4.4"
-  "freetype2"
-  "gdk-pixbuf2"
-  "glib2"
-  "gperf"
-  "gradle"
-  "gtk2"
-  "gtk3"
-  "java-environment-openjdk=21"
-  "libgl"
-  "libx11"
-  "libxtst"
-  "libxxf86vm"
-  "pango"
-  "perl"
-  "python"
-  "qt5-base"
-  "ruby"
-  "unzip"
-  # "webkit2gtk"
-  "zip"
+  alsa-lib
+  ant
+  cairo
+  cmake
+  ffmpeg4.4
+  freetype2
+  gdk-pixbuf2
+  glib2
+  gperf
+  gradle7
+  gtk2
+  gtk3
+  java-environment-openjdk=17
+  libgl
+  libx11
+  libxtst
+  pango
+  perl
+  python
+  qt5-base
+  ruby
+  unzip
+  webkit2gtk
+  zip
 )
-options=(!lto)
 source=(
-  "https://github.com/openjdk/jfx/archive/refs/tags/${_jfxver}+${_jfxtag}.tar.gz"
+  "${pkgbase}-${pkgver//.u/+}.tar.gz::https://github.com/openjdk/jfx${pkgver%%.*}u/archive/refs/tags/${pkgver//.u/+}.tar.gz"
   gradle.properties
   java-openjfx-flags.patch
+  java-openjfx-no-xlocale.patch
 )
-b2sums=('c4f6ff072943702f7431933c2755da0457788d389a90a00c0ab63ede5cc05bdcc5067e7a7bb1ca473543abdc36e12fcf672fd90c74f88bc8673e81793d8f3b91'
-        '0c023ef99e7ee600710c54dad0ad59070620595109ca42c5057fa2ab74ef6d244631745f5cd4c1bea9c0321ee69f1e1efaab820ff124ad1d4f453121e77fd14f'
-        '5b6dafc22995b57564fda89aaedeb2b6ee58b2c635336ac43a123ea4ac6ced3a20eba39d99cc4eb7ec7b29fc7541f5c3bee454ee55ca79fd2d7ce5ef4ed65cd3')
+b2sums=('ed5870478bacf5d2d6289118e764a316f2ed44c5abe799dfef97290477824060a7af15bde915aaf86186111eee49df5e3614ecd8aceccfca005aa79bb2663cc8'
+        'a77fd8814a5978827de01a652f7b945f3439df04606434ced8998c8d77a82985292490e6965299aeb52f9da3d8069b4091d75519bd4ec8a15f70bc6d28b13498'
+        '609ffbc0938922f00ccebab6d1e9ab0d54b84f088f75c10c0eb4211ff1b33438481d76092eae8811a5e9f53dfc3ff422f7aa4e98abd8fc27fb73f1c3d4661c41'
+        '13216615c01b8d48d17889ffa22668c38568870d83ab30c542eb5b5620db305f02efb1acb99d9b5e89eb0a73a134bb336cb301f4de4e8855cae50efb099e384e')
 
-_jfxdir=jfx-${_jfxver}-${_jfxtag}
+_jfxdir=jfx${pkgver%%.*}u-${pkgver//.u/-}
 
 prepare() {
-  cd "${_jfxdir}"
+  cd $_jfxdir
 
-  # Clean from potential previous runs
-  gradle --stop
-  rm -rf build
-  gradle clean || true
-
-  ln -svf ../gradle.properties .
-  patch -Np1 --follow-symlinks -i ../java-openjfx-flags.patch
+  ln -sf ../gradle.properties .
+  patch -Np1 -i ../java-openjfx-flags.patch
+  patch -Np1 -i ../java-openjfx-no-xlocale.patch
   sed 's|, "-Werror"||g' -i buildSrc/linux.gradle
 }
 
 build() {
-# Workaround for GCC 14?  See https://aur.archlinux.org/packages/java21-openjfx#comment-993098
-  _FIXWERROR_GCC14="-Wno-error=incompatible-pointer-types -Wno-error=sign-compare -Wno-error=int-conversion"
-  _SILENCEWARNINGS="-Wno-incompatible-pointer-types -Wno-sign-compare -Wno-int-conversion -Wno-missing-field-initializers -Wno-cast-function-type -Wno-discarded-qualifiers -Wno-deprecated-copy -Wno-missing-field-initializers -Wno-stringop-truncation -Wno-return-local-addr -Wno-dangling-pointer -Wno-address -Wno-switch -Wno-deprecated-declarations -Wno-stringop-overread -Wno-expansion-to-defined -Wno-array-bounds"
-  _CFLAGSADDITIONS=" ${_FIXWERROR_GCC14} ${_SILENCEWARNINGS}"
-  CFLAGS+="${_CFLAGSADDITIONS}"
-  CXXFLAGS+="${_CFLAGSADDITIONS}"
-  export CFLAGS
-  export CXXFLAGS
+  cd $_jfxdir
 
-  # Suppress errors with lld >= 17 due to undefined symbols, see https://aur.archlinux.org/packages/java-openjfx#comment-980178
-  _FIXLDERROR="-Wl,--undefined-version"
-  LDFLAGS+=" ${_FIXLDERROR}"
-  export LDFLAGS
-
-  cd "${_jfxdir}"
-
-  # Build with openjdk-(current version minus 1)
-  export PATH="/usr/lib/jvm/java-$((${_jfxver}-1))-openjdk/bin/:$PATH"
+  # Build with openjdk-17
+  export PATH="/usr/lib/jvm/java-17-openjdk/bin/:$PATH"
 
   # build against ffmpeg4.4
   export PKG_CONFIG_PATH='/usr/lib/ffmpeg4.4/pkgconfig'
-
-  # Workaround for situation where the linker treats whitespace as arguments
-  export LDFLAGS="${LDFLAGS//+([[:space:]]|[[:blank:]])/ }"
 
   gradle zips
 }
 
 package_java-openjfx() {
-  pkgdesc="Java OpenJFX client application platform without WebKit support."
   depends=(
-    "freetype2"
-    "glib2"
-    "glibc"
-    "java-runtime-openjdk=${_jfxver}"
-    "libgl"
-    "libx11"
-    "libxtst"
+    java-runtime-openjdk=${pkgver%%.*}
+    libgl
+    libx11
+    libxtst
   )
   optdepends=(
-    "ffmpeg4.4: Media support"
-    'gtk2: GTK2 support'
-    'gtk3: GTK3 support'
+    'ffmpeg4.4: Media support',
+    'gtk2: GTK2 support',
+    'gtk3: GTK3 support',
+    'webkit2gtk: Web support'
   )
-  provides=(java-openjfx=${_jfxver})
+  provides=(java-openjfx=${pkgver%%.*})
 
-  cd "${_jfxdir}"
+  cd $_jfxdir
 
-  install -dvm 755  "${pkgdir}"/usr/{lib/jvm/java-${_jfxver}-openjfx,share/licenses}
-  cp -dvr --no-preserve=ownership build/sdk/lib "${pkgdir}"/usr/lib/jvm/java-${_jfxver}-openjfx/
-  cp -dvr --no-preserve=ownership build/jmods "${pkgdir}"/usr/lib/jvm/java-${_jfxver}-openjfx/
+  install -dm 755  "${pkgdir}"/usr/{lib/jvm/java-${pkgver%%.*}-openjdk,share/licenses}
+  cp -dr --no-preserve=ownership build/sdk/lib "${pkgdir}"/usr/lib/jvm/java-${pkgver%%.*}-openjdk/
+  cp -dr --no-preserve=ownership build/jmods "${pkgdir}"/usr/lib/jvm/java-${pkgver%%.*}-openjdk/
   cp -dr --no-preserve=ownership build/sdk/legal "${pkgdir}"/usr/share/licenses/java-openjfx
 }
 
 package_java-openjfx-doc() {
-  pkgdesc="Documentation for Java OpenJFX client application platform"
   arch=(any)
-  cd "${_jfxdir}"
+  cd $_jfxdir
 
-  install -dvm 755 "${pkgdir}"/usr/share/{doc,licenses}
-  cp -dvr --no-preserve=ownership build/javadoc "${pkgdir}"/usr/share/doc/java-openjfx
-  install -vm 644 -t "${pkgdir}"/usr/share/doc/java-openjfx  README.md UPDATING-VERSION.md WEBKIT-MEDIA-STUBS.md CONTRIBUTING.md
-  ln -sv java-openjfx "${pkgdir}"/usr/share/licenses/java-openjfx-doc
+  install -dm 755 "${pkgdir}"/usr/share/{doc,licenses}
+  cp -dr --no-preserve=ownership build/javadoc "${pkgdir}"/usr/share/doc/java-openjfx
+  ln -s java-openjfx "${pkgdir}"/usr/share/licenses/java-openjfx-doc
 }
 
 package_java-openjfx-src() {
-  pkgdesc="Source code for Java OpenJFX client application platform"
   arch=(any)
-  cd "${_jfxdir}"
+  cd $_jfxdir
 
-  install -dvm 755  "${pkgdir}"/usr/{lib/jvm/java-${_jfxver}-openjfx,share/licenses}
-  install -vm 644 build/sdk/src.zip "${pkgdir}"/usr/lib/jvm/java-${_jfxver}-openjfx/javafx-src.zip
-  ln -sv java-openjfx "${pkgdir}"/usr/share/licenses/java-openjfx-src
+  install -dm 755  "${pkgdir}"/usr/{lib/jvm/java-${pkgver%%.*}-openjdk,share/licenses}
+  install -m 644 build/sdk/src.zip "${pkgdir}"/usr/lib/jvm/java-${pkgver%%.*}-openjdk/javafx-src.zip
+  ln -s java-openjfx "${pkgdir}"/usr/share/licenses/java-openjfx-src
 }
+
+# vim: ts=2 sw=2 et:
