@@ -39,7 +39,7 @@ makedepends=(
   "gradle"
   "gtk2"
   "gtk3"
-  "java-environment-openjdk"
+  "java-environment-openjdk=21"
   "libgl"
   "libx11"
   "libxtst"
