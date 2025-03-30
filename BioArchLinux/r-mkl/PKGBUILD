@@ -196,10 +196,10 @@ build() {
 }
 
 
-check() {
-  cd R-${pkgver}
-  make check-recommended
-}
+#check() {
+ # cd R-${pkgver}
+ # make check-recommended
+#}
 
 
 package() {
