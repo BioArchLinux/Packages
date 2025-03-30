@@ -46,8 +46,8 @@ _archive="${_pkgname}-${pkgver}"
 prepare() {
   cd "${_archive}"
   # fixes for build failures mentioned in upstream repo (https://github.com/SeleniumHQ/selenium/pull/15128#issuecomment-2609736932)
-  patch -p1 < ${srcdir}/pyo3.patch
-  patch -p1 < ${srcdir}/cargo.patch
+  #patch -p1 < ${srcdir}/pyo3.patch
+  #patch -p1 < ${srcdir}/cargo.patch
 
   # Ensure `selenium.webdriver.common.fedcm` gets packaged
   touch ./selenium/webdriver/common/fedcm/__init__.py
