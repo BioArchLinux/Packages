@@ -3,7 +3,7 @@
 
 pkgname=lastz_backtobackgaps
 _pkgname=lastz
-pkgver=1.04.45
+pkgver=1.04.52
 pkgrel=1
 pkgdesc="Pairwise DNA sequence aligner. This version allows back to back gaps (adjacent indels) but might break backward compatibility with lastZ and BLASTZ."
 arch=('x86_64')
@@ -13,7 +13,7 @@ depends=(glibc)
 makedepends=()
 provides=(lastz)
 source=("https://github.com/${_pkgname}/${_pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('cb7d971915f59089341e7916139a98a5da94d724de21c7eea8baa0a0bdbaa7e8')
+sha256sums=('274bf0d774e3f4da87c23ca0b5cc4269f3dcaecf71a1c6289d426e24fbccf4c8')
 
 build() {
   cd "${_pkgname}-${pkgver}"
