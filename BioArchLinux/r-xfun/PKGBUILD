@@ -30,9 +30,6 @@ optdepends=(
   r-pak
   r-qs
   r-remotes
-  r-renv
-  r-rhub
-  r-rmarkdown
   r-rstudioapi
   r-testit
   r-tinytex
