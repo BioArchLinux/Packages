@@ -1,0 +1,31 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=nanonext
+_pkgver=1.5.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="NNG (Nanomsg Next Gen) Lightweight Messaging Library"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+)
+optdepends=(
+  r-later
+  r-litedown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('3d7fc7b1c809d69987b95dd6b7240dda')
+b2sums=('b9fe986baa71ed42cd74cf9bf8e441add3d8d60c49a284b9a1c87211b08b4cc50496ff913abab1e16a7dc8832b2c9576831a44a2b7a1ec60477cad4aaf503a76')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
