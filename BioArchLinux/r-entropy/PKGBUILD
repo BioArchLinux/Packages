@@ -4,7 +4,7 @@ _pkgname=entropy
 _pkgver=1.3.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Estimation of Entropy, Mutual Information and Related Quantities"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
