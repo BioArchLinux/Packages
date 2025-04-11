@@ -4,7 +4,7 @@ _pkgname=DEoptim
 _pkgver=2.2-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Global Optimization by Differential Evolution"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
