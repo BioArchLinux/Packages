@@ -4,7 +4,7 @@ _pkgname=RcppDate
 _pkgver=0.0.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="'date' C++ Header Library for Date and Time Functionality"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
