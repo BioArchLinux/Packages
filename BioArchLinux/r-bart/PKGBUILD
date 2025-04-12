@@ -4,7 +4,7 @@ _pkgname=BART
 _pkgver=2.9.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Bayesian Additive Regression Trees"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
