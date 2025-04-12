@@ -4,7 +4,7 @@ _pkgname=smurf
 _pkgver=1.1.7
 pkgname=r-${_pkgname,,}
 pkgver=1.1.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Sparse Multi-Type Regularized Feature Modeling'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
