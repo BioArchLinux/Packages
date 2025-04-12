@@ -4,7 +4,7 @@ _pkgname=HGNChelper
 _pkgver=0.8.15
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Identify and Correct Invalid HGNC Human Gene Symbols and MGI Mouse Gene Symbols"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
