@@ -5,7 +5,7 @@ _pkgname=optparse
 _pkgver=1.7.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=4
 pkgdesc="Command Line Option Parser"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
