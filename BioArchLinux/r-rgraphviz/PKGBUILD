@@ -12,6 +12,7 @@ license=(EPL)
 depends=(
   r-graph
   zlib
+  graphviz
 )
 optdepends=(
   r-biocgenerics
