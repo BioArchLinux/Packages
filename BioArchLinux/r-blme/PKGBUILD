@@ -4,7 +4,7 @@ _pkgname=blme
 _pkgver=1.0-6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Bayesian Linear Mixed-Effects Models'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
