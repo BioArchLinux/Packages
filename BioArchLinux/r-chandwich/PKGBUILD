@@ -4,7 +4,7 @@ _pkgname=chandwich
 _pkgver=1.1.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Chandler-Bate Sandwich Loglikelihood Adjustment"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
