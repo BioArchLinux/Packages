@@ -13,7 +13,6 @@ depends=(
   r-alabama
   r-fishmod
   r-nloptr
-  r-statmod
   r-tmb
 )
 makedepends=(
@@ -26,6 +25,7 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-ape
+  r-mvabund
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('e07eb19b36dcc3af0525648d6492d150')
