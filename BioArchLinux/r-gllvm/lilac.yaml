@@ -6,7 +6,6 @@ repo_depends:
 - r-alabama
 - r-fishmod
 - r-nloptr
-- r-statmod
 - r-tmb
 repo_makedepends:
 - r-rcppeigen
