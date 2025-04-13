@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-xfun
+- r-litedown
 update_on:
 - source: rpkgs
   pkgname: markdown
