@@ -4,7 +4,7 @@ _pkgname=ggupset
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=5
+pkgrel=6
 pkgdesc="Combination Matrix Axis for 'ggplot2' to Create 'UpSet' Plots"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
