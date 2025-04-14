@@ -4,7 +4,7 @@ _pkgname=RRPP
 _pkgver=2.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc='Linear Model Evaluation with Randomized Residuals in a Permutation Procedure'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
