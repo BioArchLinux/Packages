@@ -12,6 +12,9 @@ license=('GPL-3.0-or-later')
 depends=(
   r
 )
+makdepends=(
+  cmake
+)
 optdepends=(
   r-later
   r-litedown
