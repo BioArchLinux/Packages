@@ -6,9 +6,15 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.lstrip('v').replace('-', '.'))
 post_build_script: |
   git_pkgbuild_commit()
+  update_aur_repo()
 repo_depends:
   - cimfomfa
 update_on:
   - source: regex
-    url: "https://micans.org/zoem/src/" 
+    url: "https://micans.org/zoem/src/"
     regex: 'zoem-(\d+-\b[\d]+).tar.gz'
+  - source: manual
+    manual: 1
+    time_limit_hours: 3
+
+
