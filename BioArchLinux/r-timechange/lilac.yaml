@@ -13,3 +13,4 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+time_limit_hours: 3
