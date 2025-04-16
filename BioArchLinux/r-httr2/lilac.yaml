@@ -14,6 +14,7 @@ repo_depends:
 - r-rlang
 - r-vctrs
 - r-withr
+- r-nanonext
 repo_makedepends:
 - r-bench
 - r-docopt
