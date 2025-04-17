@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=BiocParallel
-_pkgver=1.40.2
+_pkgver=1.42.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Bioconductor facilities for parallel evaluation"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -40,8 +40,8 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a2eaf19fb0602e8e78efecff991c4a2b')
-b2sums=('44d07a5b5ae2eb5b697722e1f822d1eda8fce89a3ff7ec25b23ebf873eeeb15afbd68e093254a104509415a8e6f9e9ae95ea5bb1b97a419ef1bedf931737c75a')
+md5sums=('6da5559a32c0f0fc82a8fd46962b5465')
+b2sums=('61b2aae3b0a339a44cb9b3c49e9795b6fca8b9b670b09999c055fef72f04fdb4724fe72117a09b376fc6f614754dc51dd0a680fe9098ac64dd9d1da93253c5f8')
 
 build() {
   mkdir build
