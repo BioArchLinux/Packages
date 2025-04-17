@@ -10,7 +10,7 @@ arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('LGPL-2.0-or-later')
 depends=(
-  r-zlibbioc
+  r
   zlib
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
