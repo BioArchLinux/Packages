@@ -12,7 +12,7 @@ license=('LGPL-2.0-or-later')
 depends=(
   bzip2
   curl
-  r-zlibbioc
+  r
   xz
   zlib
 )
