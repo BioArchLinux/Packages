@@ -4,7 +4,7 @@ _pkgname=survivalsvm
 _pkgver=0.0.6
 pkgname=r-${_pkgname,,}
 pkgver=0.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Survival Support Vector Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
