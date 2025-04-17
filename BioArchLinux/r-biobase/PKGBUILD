@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Biobase
-_pkgver=2.66.0
+_pkgver=2.68.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Base functions for Bioconductor"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -22,8 +22,8 @@ optdepends=(
   r-tkwidgets
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3782a10ac7f920542aa3265b8253746b')
-b2sums=('26d51d4449652f7488824841e9fb6f5bc0b22b5ad1292f9b964cfaeb866164cce65ebb73bc01be169a7a8ee9062e29224cb4ccae3bfb2f3c017e0d34a631c3bc')
+md5sums=('c603923db636ec685fc9056227909b4c')
+b2sums=('1f3833bab2a48d1349aee55096d8731ec02abe99c5e2ea82a37f38b33cafae57fd5c759ab853251c52304d086a5ee957918767d85b82d8ae105378e760a54b2a')
 
 build() {
   mkdir build
