@@ -4,7 +4,7 @@ _pkgname=papeR
 _pkgver=1.0-6
 pkgname=r-${_pkgname,,}
 pkgver=1.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc='A Toolbox for Writing Pretty Papers and Reports'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
