@@ -25,6 +25,8 @@ depends=(
   r-readxl
   r-rstudioapi
   r-withr
+  r-readr
+  r-fs
 )
 makedepends=(
   gcc-fortran
