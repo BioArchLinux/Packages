@@ -4,7 +4,7 @@ _pkgname=geomorph
 _pkgver=4.0.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc='Geometric Morphometric Analyses of 2D and 3D Landmark Data'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
