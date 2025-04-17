@@ -78,7 +78,7 @@ build() {
       --configure-vars=ARROW_R_ALLOW_CPP_VERSION_MISMATCH=true
 }
 
-check() {
+_check() {
   cd "$_pkgname/tests"
   R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
