@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rhtslib
-_pkgver=3.2.0
+_pkgver=3.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="HTSlib high-throughput sequencing library as an R package"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
@@ -23,8 +23,8 @@ optdepends=(
 )
 options=(staticlibs)
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1d8eabf0934373b61aca2dc20cab712b')
-b2sums=('c3dac27122de6be55135fbcf550bb13acfc6dc1c78a05d753548569627eb1adda7ea1902922440ad9cc44b8d55267b4dff692e94ac4c4c81eca97ebd13967b33')
+md5sums=('5f9e5b7a15bb67e60351b5896254cfec')
+b2sums=('6f5288c03064e9e711136fcbeffac3db2253b88ae0f2f71ec89aa32f8c3a8da56a6b29abf55be2edaf35565d1211ac7a78424f4bb4ecb3c6d3582bbb16e01d74')
 
 build() {
   mkdir build
