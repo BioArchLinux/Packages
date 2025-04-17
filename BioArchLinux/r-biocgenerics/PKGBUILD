@@ -10,7 +10,7 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
-  r
+  r-generics
 )
 optdepends=(
   r-affy
@@ -31,6 +31,7 @@ optdepends=(
   r-s4arrays
   r-s4vectors
   r-sparsearray
+  r-multiassayexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('17433e48365e2cb89bc5e59de7ead46b')
