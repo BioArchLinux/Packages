@@ -4,7 +4,7 @@ _pkgname=nonnest2
 _pkgver=0.5-8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Tests of Non-Nested Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
