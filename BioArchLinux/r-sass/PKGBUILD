@@ -3,10 +3,10 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=sass
-_pkgver=0.4.9
+_pkgver=0.4.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Syntactically Awesome Style Sheets ('Sass')"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -34,9 +34,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libsass.patch")
-md5sums=('7d4e8b37ce87b4307b6661b9fe62e393'
+md5sums=('16054a7117a81ba75893fec17da62209'
          'e10e29d8d704275081d06953467928d5')
-b2sums=('5d18e9430645ce11e0c19a6002538b96583493a12d4b7547b659855ff046505a8b71649ea68279017a0de94152037d6caaa65503e4df37d614ec5b2fe6377953'
+b2sums=('ffa2a4ffabea503c45d99cda26b62f75a5107e18caae6b40962901c090ac7031079b766f5556ca7815ca48438b7907cf537febe662be6682de39b9b55dd56805'
         '8c0b765fefe74d1e93abcc3d0249044431ec75ad26a9df83548720c07fd795f70e2117867032e05a742fd2ff7e844606aa210456968080052e9815d025a81f69')
 
 prepare() {
