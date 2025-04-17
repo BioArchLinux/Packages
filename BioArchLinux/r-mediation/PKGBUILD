@@ -4,7 +4,7 @@ _pkgname=mediation
 _pkgver=4.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=3
 pkgdesc='Causal Mediation Analysis'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
