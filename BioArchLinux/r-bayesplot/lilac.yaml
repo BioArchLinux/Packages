@@ -11,6 +11,7 @@ repo_depends:
   - r-reshape2
   - r-rlang
   - r-tibble
+  - r-tidyr
   - r-tidyselect
 update_on:
   - regex: bayesplot_([\d._-]+).tar.gz
