@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "optionally Graphviz (>= 2.16)",
+        expect_systemrequirements = "optionally Graphviz (>= 2.16), USE_C17",
     )
 
 def post_build():
