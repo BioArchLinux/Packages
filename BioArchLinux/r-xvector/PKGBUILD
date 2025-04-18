@@ -13,7 +13,6 @@ depends=(
   r-biocgenerics
   r-iranges
   r-s4vectors
-  r-zlibbioc
   zlib
 )
 optdepends=(
