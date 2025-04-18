@@ -25,6 +25,7 @@ optdepends=(
   r-rmarkdown
   r-sparsearray
   r-testthat
+  r-hdf5array
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('0bdfca3df96ee46fa23a4913cbeccf9b')
