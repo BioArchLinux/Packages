@@ -6,7 +6,6 @@ repo_depends:
 - r-biocgenerics
 - r-iranges
 - r-s4vectors
-- r-zlibbioc
 update_on:
 - source: rpkgs
   pkgname: XVector
