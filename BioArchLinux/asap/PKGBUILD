@@ -1,8 +1,8 @@
 # Maintainer: Guoyi Zhang <myname at malacology dot net>
 
 pkgname=asap
-pkgver=2023_05_22
-pkgrel=2
+pkgver=2025_04_03
+pkgrel=1
 pkgdesc='Assemble Species by Automatic Partitioning https://doi.org/10.1111/1755-0998.13281'
 arch=('x86_64')
 url='https://bioinfo.mnhn.fr/abi/public/asap/'
