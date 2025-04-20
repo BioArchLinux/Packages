@@ -1,7 +1,7 @@
 # Maintainer: Guoyi
 pkgname=vcflib
 pkgver=1.0.13
-pkgrel=0
+pkgrel=1
 pkgdesc="C++ library and cmdline tools for parsing and manipulating VCF files doi: 10.1101/2021.05.21.445151"
 arch=('x86_64')
 url="https://github.com/vcflib/vcflib"
@@ -24,14 +24,14 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/vcflib/vcflib/archive/r
 )
 
 md5sums=('b3f0535c1658ef0cf50de026aa6d31ec'
-  'eeb7d046978d7633fe4d07def29f48c3'
-  'SKIP'
-  'SKIP'
-  'SKIP'
-  'SKIP'
-  'SKIP'
-  'SKIP'
-  'SKIP')
+         'eeb7d046978d7633fe4d07def29f48c3'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP')
 
 prepare() {
   cd ${srcdir}
