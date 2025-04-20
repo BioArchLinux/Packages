@@ -1,24 +1,23 @@
 # Maintainer: Clemens Brunner <clemens dot brunner at gmail dot com>
 pkgname=python-pebble
 _name=${pkgname#python-}
-pkgver=5.1.0
-pkgrel=2
+pkgver=5.1.1
+pkgrel=0
 pkgdesc="Pebble provides a neat API to manage threads and processes within an application"
 arch=('any')
 url="https://github.com/noxdafox/pebble"
 license=('LGPL')
 depends=('python')
 makedepends=('python-setuptools')
-source=(https://files.pythonhosted.org/packages/source/${_name:0:1}/$_name/${_name^}-$pkgver.tar.gz)
-noextract=()
-sha1sums=('b45bbf29488756525349a1f3c22600d8c98dc647')
+source=(${url}/archive/refs/tags/${pkgver}.tar.gz)
+b2sums=('86045fd2946a7d80ac19463d03f2582b179e6cf4b7193ad374fde906d333bd187f050c92a1575ecf25221e3954478fd9b03ddec9a1f7c0ef6757843a3bd47ccc')
 
 build() {
-    cd "$srcdir/${_name^}-$pkgver"
+    cd "$srcdir/${_name}-$pkgver"
     python setup.py build
 }
 
 package() {
-    cd "$srcdir/${_name^}-$pkgver"
+    cd "$srcdir/${_name}-$pkgver"
     python setup.py install --root="$pkgdir/" --optimize=1 --skip-build
 }
