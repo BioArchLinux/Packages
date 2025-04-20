@@ -2,7 +2,7 @@
 
 pkgname=calamares
 pkgver=3.3.14
-pkgrel=1
+pkgrel=2
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL2.1' 'LGPL3' 'BSD' 'MIT' 'CCPL')
@@ -20,7 +20,7 @@ source=("$pkgname-$pkgver::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.
 	"49-nopasswd-calamares.rules")
 
 sha256sums=('5547f80db067dea923ae693ba6bb88eb2b2eeac1da3ebec42fce453e31c290c0'
-	'56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176')
+            '56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176')
 
 prepare() {
 
