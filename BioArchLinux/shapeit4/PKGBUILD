@@ -1,7 +1,7 @@
 # Maintainer: Ramiro Magno <ramiro dot magno at gmail.com>
 pkgname=shapeit4
 pkgver=4.2.2
-pkgrel=6
+pkgrel=7
 pkgdesc="Segmented HAPlotype Estimation and Imputation Tools"
 arch=('i686' 'x86_64')
 url="https://odelaneau.github.io/shapeit4/"
@@ -11,11 +11,11 @@ makedepends=('boost' 'htslib' 'gcc')
 source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/odelaneau/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz" "shapeit4.patch")
 noextract=()
 sha256sums=('9f109e307b5cc22ab68e7bf77de2429a9bbb2212d66303386e6a3dd81a5bc556'
-            'b380dfeac4a28af4877d5f3f534864bd4c5090ed59f27c4da36c40bd18448457')
+	'3d881c6478250a642ed134fbce8b6c56626c501f1b02f2c318cf90f364c85d46')
 validpgpkeys=()
 
 prepare() {
-  patch -p0 -i "shapeit4.patch"
+	patch -p0 -i "shapeit4.patch"
 }
 
 build() {

@@ -3,13 +3,13 @@ diff '--color=auto' -ur shapeit4-4.2.2/makefile shapeit4-4.2.2-1/makefile
 +++ shapeit4-4.2.2-1/makefile	2022-05-23 10:02:02.950631934 +0100
 @@ -2,22 +2,13 @@
  CXX=g++ -std=c++11
- 
+
  #HTSLIB LIBRARY [SPECIFY YOUR OWN PATHS]
 -HTSLIB_INC=$(HOME)/Tools/htslib-1.11
 -HTSLIB_LIB=$(HOME)/Tools/htslib-1.11/libhts.a
 +HTSLIB_INC=/usr/include/htslib
 +HTSLIB_LIB=/usr/lib/libhts.a
- 
+
  #BOOST IOSTREAM & PROGRAM_OPTION LIBRARIES [SPECIFY YOUR OWN PATHS]
 -BOOST_INC=/usr/include
 -BOOST_LIB_IO=/usr/lib/x86_64-linux-gnu/libboost_iostreams.a
@@ -26,18 +26,18 @@ diff '--color=auto' -ur shapeit4-4.2.2/makefile shapeit4-4.2.2-1/makefile
 +BOOST_INC=/usr/include/boost
 +BOOST_LIB_IO=/usr/lib/libboost_iostreams.a
 +BOOST_LIB_PO=/usr/lib/libboost_program_options.a
- 
+
  #COMPILER & LINKER FLAGS
- 
+
 @@ -32,9 +23,8 @@
- 
+
  LDFLAG=-O3
- 
+
 -
  #DYNAMIC LIBRARIES
 -DYN_LIBS=-lz -lbz2 -lm -lpthread -llzma -lcurl -lssl -lcrypto
-+DYN_LIBS=-lz -lbz2 -lm -lpthread -llzma -lcurl -lssl -lcrypto -ldl
- 
++DYN_LIBS=-lz -lbz2 -lm -lpthread -llzma -lcurl -lssl -lcrypto -ldl -lhts
+
  #SHAPEIT SOURCES & BINARY
  BFILE=bin/shapeit4.2
 Binary files shapeit4-4.2.2/tools/bingraphsample/bin/bingraphsample and shapeit4-4.2.2-1/tools/bingraphsample/bin/bingraphsample differ
@@ -46,13 +46,13 @@ diff '--color=auto' -ur shapeit4-4.2.2/tools/bingraphsample/makefile shapeit4-4.
 +++ shapeit4-4.2.2-1/tools/bingraphsample/makefile	2022-05-23 10:08:28.457309881 +0100
 @@ -2,22 +2,13 @@
  CXX=g++ -std=c++11
- 
+
  #HTSLIB LIBRARY [SPECIFY YOUR OWN PATHS]
 -HTSLIB_INC=$(HOME)/Tools/htslib-1.9
 -HTSLIB_LIB=$(HOME)/Tools/htslib-1.9/libhts.a
 +HTSLIB_INC=/usr/include/htslib
 +HTSLIB_LIB=/usr/lib/libhts.a
- 
+
  #BOOST IOSTREAM & PROGRAM_OPTION LIBRARIES [SPECIFY YOUR OWN PATHS]
 -BOOST_INC=/usr/include
 -BOOST_LIB_IO=/usr/lib/x86_64-linux-gnu/libboost_iostreams.a
@@ -69,16 +69,16 @@ diff '--color=auto' -ur shapeit4-4.2.2/tools/bingraphsample/makefile shapeit4-4.
 +BOOST_INC=/usr/include/boost
 +BOOST_LIB_IO=/usr/lib/libboost_iostreams.a
 +BOOST_LIB_PO=/usr/lib/libboost_program_options.a
- 
+
  #COMPILER & LINKER FLAGS
  #Best performance is achieved with this. Use it if running on the same plateform you're compiling, it's definitely worth it!
 @@ -29,7 +20,7 @@
  LDFLAG=-O3
- 
+
  #DYNAMIC LIBRARIES
 -DYN_LIBS=-lz -lbz2 -lm -lpthread -llzma
-+DYN_LIBS=-lz -lbz2 -lm -lpthread -llzma -ldl
- 
++DYN_LIBS=-lz -lbz2 -lm -lpthread -llzma -ldl -lhts
+
  #SHAPEIT SOURCES & BINARY
  BFILE=bin/bingraphsample
 Binary files shapeit4-4.2.2/tools/bingraphsample/obj/genotype_managment.o and shapeit4-4.2.2-1/tools/bingraphsample/obj/genotype_managment.o differ
