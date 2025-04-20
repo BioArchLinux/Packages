@@ -12,7 +12,6 @@ repo_depends:
 - r-iranges
 - r-s4vectors
 - r-xvector
-- r-zlibbioc
 repo_makedepends:
 - r-rhtslib
 update_on:

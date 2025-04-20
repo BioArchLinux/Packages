@@ -21,7 +21,6 @@ depends=(
   r-iranges
   r-s4vectors
   r-xvector
-  r-zlibbioc
   xz
   zlib
 )
