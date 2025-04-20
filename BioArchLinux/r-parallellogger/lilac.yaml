@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-jsonlite
+- r-rstudioapi
 - r-snow
 - r-xml2
 update_on:
