@@ -2,20 +2,24 @@
 
 pkgname=asap
 pkgver=2023_05_22
-pkgrel=1
+pkgrel=2
 pkgdesc='Assemble Species by Automatic Partitioning https://doi.org/10.1111/1755-0998.13281'
 arch=('x86_64')
 url='https://bioinfo.mnhn.fr/abi/public/asap/'
 license=('LGPL')
 source=("$url/last.tgz")
-sha1sums=('40299215d80678949bfb54b7416f8f0468918762')
+sha1sums=('689b5001210beab318889bd39f19987a74e21079')
 
+prepare() {
+  cd ASAP
+  sed -i '/CFLAGS/ s/=/?=/' Makefile
+}
 build() {
   cd ASAP
-  make
+  CFLAGS="-Wno-error -Wno-error=implicit-function-declaration" make
 }
 
 package() {
   cd ASAP
-  install -Dm 755 $pkgname $pkgdir/usr/bin/$pkgname 
+  install -Dm 755 $pkgname $pkgdir/usr/bin/$pkgname
 }
