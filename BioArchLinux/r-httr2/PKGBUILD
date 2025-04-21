@@ -22,7 +22,6 @@ depends=(
   r-rlang
   r-vctrs
   r-withr
-  r-nanonext
 )
 checkdepends=(
   r-bench
