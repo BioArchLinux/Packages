@@ -50,6 +50,7 @@ optdepends=(
   r-tibble
   r-webfakes
   r-xml2
+  r-nanonext
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('02abcabfa12d721475bf31822384b254')
