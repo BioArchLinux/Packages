@@ -4,7 +4,7 @@ _pkgname=shinyalert
 _pkgver=3.1.0
 pkgname=r-${_pkgname,,}
 pkgver=3.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Easily Create Pretty Popup Messages (Modals) in 'Shiny'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
