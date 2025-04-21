@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-data.tree
 - r-htmlwidgets
 - r-igraph
 - r-magrittr
