@@ -8,7 +8,7 @@ _pkgname=devtools
 _pkgver=2.4.5
 pkgname=r-${_pkgname,,}
 pkgver=2.4.5
-pkgrel=7
+pkgrel=8
 pkgdesc='Tools to Make Developing R Packages Easier'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
