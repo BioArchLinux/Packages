@@ -4,7 +4,7 @@ _pkgname=lasso2
 _pkgver=1.2-22
 pkgname=r-${_pkgname,,}
 pkgver=1.2.22
-pkgrel=9
+pkgrel=10
 pkgdesc="L1 Constrained Estimation aka lasso"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
