@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
+- r-data.table
 - r-doparallel
 - r-dorng
 - r-envstats

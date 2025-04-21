@@ -4,7 +4,7 @@ _pkgname=ramr
 _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=1.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Detection of Rare Aberrantly Methylated Regions in Array and NGS Data'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
@@ -12,6 +12,7 @@ license=('Artistic2.0')
 depends=(
   r
   r-biocgenerics
+  r-data.table
   r-doparallel
   r-dorng
   r-envstats
