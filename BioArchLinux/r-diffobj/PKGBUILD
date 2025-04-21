@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=diffobj
-_pkgver=0.3.5
+_pkgver=0.3.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=1
 pkgdesc="Diffs for R Objects"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -17,8 +17,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('dffa0a111b1f8766d0b64a2cd7138d09')
-b2sums=('c593f790c121d53c540fc52fcf25aded44d0f56c696a7c2d222afed4f337c2b61331c5dd6058f0ee48959a1feb5d9cd11f6b81cf296244eb89ce116183b41e10')
+md5sums=('731771be1e2cde1e710e0d650edcea22')
+b2sums=('f1dd3138845bf8617e98a07fe567f0a40e814113ccd2788f13af190423b809c751f3dc613854da78a4d151d4dc591bc1c1166f0d2a2f7eb06fdeaae9e76147da')
 
 build() {
   mkdir build
