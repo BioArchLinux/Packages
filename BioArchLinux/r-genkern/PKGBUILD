@@ -4,7 +4,7 @@ _pkgname=GenKern
 _pkgver=1.2-60
 pkgname=r-${_pkgname,,}
 pkgver=1.2.60
-pkgrel=8
+pkgrel=9
 pkgdesc='Functions for generating and manipulating binned kernel density estimates'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
