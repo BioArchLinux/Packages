@@ -26,6 +26,9 @@ optdepends=(
   r-testthat
   r-titanic
   r-vcd
+  r-cplm
+  r-e1071
+  r-caret
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('dc402b64a631deba6398bfc5633bebce')
