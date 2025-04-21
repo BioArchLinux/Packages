@@ -4,7 +4,7 @@ _pkgname=bulkAnalyseR
 _pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Interactive Shiny App for Bulk Sequencing Data"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
