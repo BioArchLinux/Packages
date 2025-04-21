@@ -4,7 +4,7 @@ _pkgname=maptools
 _pkgver=1.1-8
 pkgname=r-${_pkgname,,}
 pkgver=1.1.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Tools for Handling Spatial Objects'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -30,8 +30,21 @@ optdepends=(
 source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('5e8579e3f559161935f1dde622ece703eefa2a28a677ce553d7f27611e66e0f7')
 
+prepare() {
+  cd $srcdir/${_pkgname}
+  # For  R 4.5.0+
+  sed -i src/pip.c \
+    -e 's|Calloc|R_Calloc|g' \
+    -e 's|Realloc|R_Realloc|g' \
+    -e 's|Free|R_Free|g'
+  sed -i src/Rgshhs.c -e 's|error(msg)|error("%s",msg)|g'
+
+  cd $srcdir
+  tar -czf $_pkgname-$_pkgver.tar.gz ${_pkgname}
+}
+
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  R CMD INSTALL ${_pkgname}-${_pkgver}.tar.gz -l "${srcdir}"
 }
 
 package() {
