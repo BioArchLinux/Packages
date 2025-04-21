@@ -19,6 +19,7 @@ repo_depends:
 - r-shinyjs
 - r-stringdist
 - r-stringr
+- r-vegan
 update_on:
 - regex: tripr_([\d._-]+).tar.gz
   source: regex
