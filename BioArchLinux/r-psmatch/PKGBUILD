@@ -17,6 +17,8 @@ depends=(
   r-protgenerics
   r-qfeatures
   r-s4vectors
+  r-spectra
+  r-iranges
 )
 checkdepends=(
   r-msdata
@@ -34,7 +36,7 @@ optdepends=(
   r-mzr
   r-rmarkdown
   r-rpx
-  r-spectra
+  r-vdiffr
   r-summarizedexperiment
   r-testthat
 )
