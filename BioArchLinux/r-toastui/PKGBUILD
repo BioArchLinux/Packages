@@ -4,7 +4,7 @@ _pkgname=toastui
 _pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Interactive Tables, Calendars and Charts for the Web"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
