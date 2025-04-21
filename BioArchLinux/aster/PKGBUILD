@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=aster
 _pkgname=ASTER
-pkgver=1.19
+pkgver=1.22
 pkgrel=1
 pkgdesc="Accurate Species Tree EstimatoR"
 arch=('x86_64')
@@ -10,7 +10,7 @@ license=('AGPL-3.0-only')
 makedepends=('gcc' 'make')
 depends=('gcc-libs')
 source=($url/archive/refs/tags/v${pkgver}.tar.gz)
-sha256sums=('f6d7fd58297ab854a6c869ba5d6715d056a82df8254c0d6cba6d9a6db355f054')
+sha256sums=('df0fae65d32fd87b7c3f53b0889478e1c9ab2b85261ec9507267018f01a69385')
 build() {
   cd "$_pkgname-$pkgver"
   make
