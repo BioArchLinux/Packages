@@ -4,7 +4,7 @@ _pkgname=fresh
 _pkgver=0.2.1
 pkgname=r-${_pkgname,,}
 pkgver=0.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Create Custom 'Bootstrap' Themes to Use in 'Shiny'"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
