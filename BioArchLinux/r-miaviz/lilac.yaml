@@ -25,6 +25,7 @@ repo_depends:
 - r-tidygraph
 - r-tidyr
 - r-tidytree
+- r-tidytext
 - r-treesummarizedexperiment
 - r-viridis
 update_on:
