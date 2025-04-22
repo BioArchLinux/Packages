@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-biocgenerics
+- r-iranges
+- r-rhdf5
+- r-rhdf5filters
+- r-rhdf5lib
+- r-s4arrays
+- r-s4vectors
+- r-sparsearray
+update_on:
+- source: rpkgs
+  pkgname: h5mread
+  repo: bioc
+  md5: true
+- alias: r
