@@ -6,7 +6,7 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="HDF5 datasets as array-like objects in R"
-arch=(x86_64)
+arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
@@ -16,14 +16,11 @@ depends=(
   r-delayedarray
   r-iranges
   r-rhdf5
-  r-rhdf5filters
+  r-h5mread
   r-s4arrays
   r-s4vectors
   r-sparsearray
   zlib
-)
-makedepends=(
-  r-rhdf5lib
 )
 optdepends=(
   r-biocparallel
@@ -38,6 +35,10 @@ optdepends=(
   r-summarizedexperiment
   r-tenxbraindata
   r-zellkonverter
+  r-rspectra
+  r-knitr
+  r-rmarkdown
+  r-biocstyle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('82321c8a1bad0392f898462a6d8a1d60')
