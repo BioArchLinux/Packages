@@ -7,10 +7,11 @@ repo_depends:
 - r-iranges
 - r-rhdf5
 - r-rhdf5filters
-- r-rhdf5lib
 - r-s4arrays
 - r-s4vectors
 - r-sparsearray
+repo_makedepends:
+- r-rhdf5lib
 update_on:
 - source: rpkgs
   pkgname: h5mread

@@ -15,13 +15,13 @@ depends=(
   r-iranges
   r-rhdf5
   r-rhdf5filters
-  r-rhdf5lib
   r-s4arrays
   r-s4vectors
   r-sparsearray
 )
 makedepends=(
   make
+  r-rhdf5lib
 )
 optdepends=(
   r-biocparallel
