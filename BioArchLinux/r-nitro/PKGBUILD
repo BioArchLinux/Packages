@@ -1,7 +1,7 @@
 # Maintainer: guoyi zhang <myname at malacology dot net>
 pkgname=r-nitro
 _pkgname=nitro
-pkgver=2021.02.18
+pkgver=2024.09.04
 pkgrel=1
 pkgdesc="Integration of TNT in R"
 arch=('any')
