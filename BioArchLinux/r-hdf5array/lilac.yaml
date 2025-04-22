@@ -7,6 +7,7 @@ repo_depends:
 - r-delayedarray
 - r-iranges
 - r-rhdf5
+- r-h5mread
 - r-rhdf5filters
 - r-s4arrays
 - r-s4vectors
