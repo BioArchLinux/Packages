@@ -17,7 +17,7 @@ repo_depends:
   - r-progress
   - r-r6
   - r-treetools
- 	- r-dplyr
+  - r-dplyr
   - r-lubridate
   - r-stringr
   - r-treeio
