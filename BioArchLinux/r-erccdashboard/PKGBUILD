@@ -16,6 +16,7 @@ depends=(
   r-gplots
   r-gridextra
   r-gtools
+  r-knitr
   r-limma
   r-locfit
   r-plyr
