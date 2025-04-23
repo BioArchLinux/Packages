@@ -7,6 +7,7 @@ repo_depends:
 - r-htmlwidgets
 - r-plyr
 - r-rcpp
+- r-rcy3
 - r-rgraphviz
 - r-rjson
 - r-xml
