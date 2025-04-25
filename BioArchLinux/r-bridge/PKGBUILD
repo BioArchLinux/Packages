@@ -13,15 +13,23 @@ depends=(
   r
   r-rama
 )
+makedepends=(gcc-fortran)
 source=("https://bioconductor.org/packages/3.16/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('e8e5370271c568c093b7e7ad9b5dd3f4bdfe43ac6956446bff6a863c5c092e0b')
 
+prepare() {
+  sed -i $_pkgname/src/*.c \
+    -e 's|Calloc|R_Calloc|g' \
+    -e 's|Realloc|R_Realloc|g' \
+    -e 's|Free|R_Free|g'
+}
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
 # vim:set ts=2 sw=2 et:
