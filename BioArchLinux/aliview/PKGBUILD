@@ -4,7 +4,7 @@
 pkgname=aliview
 _pkgname=AliView
 pkgver=1.30
-pkgrel=0
+pkgrel=1
 pkgdesc="Software for aligning viewing and editing dna/aminoacid sequences https://doi.org/10.1093/bioinformatics/btu531"
 arch=('any')
 url="http://www.ormbunkar.se/aliview/"
