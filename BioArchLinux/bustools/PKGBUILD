@@ -2,7 +2,7 @@
 
 pkgname=bustools
 pkgver=0.45.0
-pkgrel=0
+pkgrel=1
 pkgdesc='Program for manipulating BUS files for single cell RNA-Seq datasets. doi:10.1038/s41587-021-00870-2'
 url="https://github.com/BUStools/$pkgname/"
 license=(BSD)
