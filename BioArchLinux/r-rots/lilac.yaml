@@ -4,7 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-biocparallel
 - r-rcpp
+- r-lme4
 update_on:
 - regex: ROTS_([\d._-]+).tar.gz
   source: regex
