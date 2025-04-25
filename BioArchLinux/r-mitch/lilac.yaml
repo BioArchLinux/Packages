@@ -11,6 +11,7 @@ repo_depends:
 - r-gridextra
 - r-kableextra
 - r-knitr
+- r-network
 - r-plyr
 - r-reshape2
 - r-rmarkdown
