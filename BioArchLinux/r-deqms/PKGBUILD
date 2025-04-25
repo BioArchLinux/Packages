@@ -1,16 +1,17 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=DEqMS
-_pkgver=1.25.0
+_pkgver=1.26.0
 pkgname=r-${_pkgname,,}
-pkgver=1.25.0
-pkgrel=1
+pkgver=1.26.0
+pkgrel=0
 pkgdesc='a tool to perform statistical analysis of differential protein expression for quantitative proteomics data.'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('LGPL')
 depends=(
   r
+  r-dplyr
   r-ggplot2
   r-limma
   r-matrixstats
