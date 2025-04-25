@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-assorthead
 - r-beachmat
 - r-biocgenerics
 - r-delayedarray
