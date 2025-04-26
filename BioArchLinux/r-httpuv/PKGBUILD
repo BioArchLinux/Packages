@@ -29,6 +29,7 @@ optdepends=(
   r-curl
   r-testthat
   r-websocket
+  r-jsonlite
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "link-zlib.patch")
