@@ -8,7 +8,7 @@ pkgdesc="Dictdiffer is a library that helps you to diff and patch dictionaries."
 arch=('any')
 url="https://github.com/inveniosoftware/dictdiffer"
 license=('MIT')
-depends=(python 'pyton-numpy')
+depends=(python 'python-numpy')
 makedepends=(python-setuptools
     python-setuptools-scm
     python-wheel
