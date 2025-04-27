@@ -15,6 +15,7 @@ repo_depends:
 - r-vctrs
 - r-withr
 - r-sparsevctrs
+- r-recipes
 update_on:
 - source: rpkgs
   pkgname: workflows
