@@ -26,7 +26,6 @@ depends=(
   r-s4vectors
   r-xml
   r-xvector
-  r-zlibbioc
   zlib
 )
 optdepends=(
