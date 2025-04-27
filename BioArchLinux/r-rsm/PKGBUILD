@@ -19,7 +19,7 @@ optdepends=(
   r-frf2
   r-knitr
   r-rmarkdown
-  r-vdgraph
+  r-vdg
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c26179c5a99162725a61d331087ace45')
