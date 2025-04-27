@@ -42,7 +42,6 @@ optdepends=(
   r-keras
   r-kernlab
   r-knitr
-  r-loe
   r-nmf
   r-optimx
   r-pcal1
