@@ -33,6 +33,10 @@ optdepends=(
   r-microbenchmark
   r-rmarkdown
   r-testthat
+  r-mime
+  r-vdiffr
+  r-kableextra
+  r-devtools
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('bc07fef3c1ce86dbad92753050c4742e')
