@@ -27,6 +27,7 @@ depends=(
   r-tsne
   r-umap
   r-viridis
+  r-singlecellexperiment
 )
 optdepends=(
   r-biocstyle
