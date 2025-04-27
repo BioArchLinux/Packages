@@ -22,6 +22,7 @@ depends=(
   r-vctrs
   r-withr
   r-sparsevctrs
+  r-recipes
 )
 optdepends=(
   r-butcher
