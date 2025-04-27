@@ -20,6 +20,7 @@ repo_depends:
 - r-tsne
 - r-umap
 - r-viridis
+- r-singlecellexperiment
 update_on:
 - source: rpkgs
   pkgname: projectR
