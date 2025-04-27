@@ -17,7 +17,6 @@ repo_depends:
 - r-s4vectors
 - r-xml
 - r-xvector
-- r-zlibbioc
 update_on:
 - source: rpkgs
   pkgname: rtracklayer
