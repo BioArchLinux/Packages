@@ -7,8 +7,8 @@ pkgdesc="Aligns short reads using dynamic seed size with strobemers. https://doi
 arch=('x86_64' 'aarch64' 'ppc64le')
 url="https://github.com/ksahlin/strobealign"
 license=('MIT')
-depends=('glibc' 'openmp' 'zlib')
-makedepends=('cmake' 'isa-l')
+depends=('glibc' 'openmp' 'zlib' 'isa-l')
+makedepends=('cmake')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
 sha256sums=('3fd4c95991a149b7edcafc91949a827d74f65e031ea08a73a878bef4ed123afa')
 
