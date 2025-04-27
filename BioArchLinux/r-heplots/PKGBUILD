@@ -45,6 +45,8 @@ optdepends=(
   r-markdown
   r-vcdextra
   r-r.rsp
+  r-litedown
+  r-aplpack
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8b0c9db6ab03e7725fd261deefe5e1bc')
