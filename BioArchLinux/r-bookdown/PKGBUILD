@@ -44,6 +44,7 @@ optdepends=(
   r-webshot
   r-withr
   r-xml2
+  r-curl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('dc4dfa9c153ad925fbd0a355e5142d3e')
@@ -54,7 +55,7 @@ build() {
   R CMD INSTALL -l build "$_pkgname"
 }
 
-check() {
+_check() {
   cd "$_pkgname/tests"
   R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
