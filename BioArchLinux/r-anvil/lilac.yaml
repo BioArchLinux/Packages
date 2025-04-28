@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocbaseutils
-- r-biocmanager
 - r-dplyr
 - r-dt
 - r-futile.logger
