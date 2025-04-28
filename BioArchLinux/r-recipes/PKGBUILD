@@ -32,6 +32,7 @@ depends=(
   r-timedate
   r-vctrs
   r-withr
+  r-sparsevctrs
 )
 checkdepends=(
   r-ddalpha
