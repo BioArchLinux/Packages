@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-dplyr
+- r-httr
+- r-httr2
+- r-jsonlite
+- r-tibble
+update_on:
+- source: rpkgs
+  pkgname: AnVILBase
+  repo: bioc
+  md5: true
+- alias: r
