@@ -22,6 +22,7 @@ repo_depends:
 - r-timedate
 - r-vctrs
 - r-withr
+- r-sparsevctrs
 repo_makedepends:
 - r-ddalpha
 - r-dials
