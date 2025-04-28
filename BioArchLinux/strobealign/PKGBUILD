@@ -2,7 +2,7 @@
 
 pkgname=strobealign
 pkgver=0.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Aligns short reads using dynamic seed size with strobemers. https://doi.org/10.1186/s13059-022-02831-7"
 arch=('x86_64' 'aarch64' 'ppc64le')
 url="https://github.com/ksahlin/strobealign"
