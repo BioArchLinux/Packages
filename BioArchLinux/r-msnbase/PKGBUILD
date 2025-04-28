@@ -57,6 +57,7 @@ optdepends=(
   r-xml
   r-zoo
   r-magick
+  r-spectra
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c9ddc0c7d42dbfa22cff5683a41a27de')
