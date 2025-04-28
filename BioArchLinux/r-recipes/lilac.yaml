@@ -38,7 +38,6 @@ repo_makedepends:
 - r-rspectra
 - r-splines2
 - r-testthat
-- r-workflows
 update_on:
 - source: rpkgs
   pkgname: recipes
