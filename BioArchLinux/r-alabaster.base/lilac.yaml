@@ -9,7 +9,6 @@ repo_depends:
 - r-rcpp
 - r-rhdf5
 - r-s4vectors
-- r-testthat
 repo_makedepends:
 - r-rhdf5lib
 - r-assorthead

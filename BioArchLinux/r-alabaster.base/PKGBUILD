@@ -16,14 +16,13 @@ depends=(
   r-rcpp
   r-rhdf5
   r-s4vectors
-  r-testthat
   zlib
 )
 makedepends=(
   r-rhdf5lib
   r-assorthead
 )
-checkdepends=(
+_checkdepends=(
   r-testthat
 )
 optdepends=(
@@ -31,6 +30,7 @@ optdepends=(
   r-digest
   r-knitr
   r-rmarkdown
+  r-testthat
   r-alabaster.matrix
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
@@ -42,7 +42,7 @@ build() {
   R CMD INSTALL -l build "$_pkgname"
 }
 
-check() {
+_check() {
   cd "$_pkgname/tests"
   R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
