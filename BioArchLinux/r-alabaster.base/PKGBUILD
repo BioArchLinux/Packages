@@ -20,6 +20,7 @@ depends=(
 )
 makedepends=(
   r-rhdf5lib
+  r-assorthead
 )
 checkdepends=(
   r-testthat
