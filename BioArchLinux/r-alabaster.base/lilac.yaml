@@ -11,7 +11,7 @@ repo_depends:
 - r-s4vectors
 repo_makedepends:
 - r-rhdf5lib
-- r-testthat
+- r-assorthead
 update_on:
 - source: rpkgs
   pkgname: alabaster.base
