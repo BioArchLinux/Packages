@@ -16,6 +16,7 @@ depends=(
   r-rcpp
   r-rhdf5
   r-s4vectors
+  r-testthat
   zlib
 )
 makedepends=(
@@ -30,7 +31,6 @@ optdepends=(
   r-digest
   r-knitr
   r-rmarkdown
-  r-testthat
   r-alabaster.matrix
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
