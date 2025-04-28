@@ -49,7 +49,6 @@ checkdepends=(
   r-rspectra
   r-splines2
   r-testthat
-  r-workflows
 )
 optdepends=(
   r-covr
