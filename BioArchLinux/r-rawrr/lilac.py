@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "mono-runtime 4.x or higher (including System.Data library) on Linux/macOS, .Net Framework (>= 4.5.1) on Microsoft Windows.",
+        expect_systemrequirements = ".NET 8.0 (optional; required only if you want to compile and link the C# code)",
     )
 
 def post_build():
