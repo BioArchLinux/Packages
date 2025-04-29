@@ -2,7 +2,7 @@
 # Contributor: bmpvieira <mail AT bmpvieira DOT com>
 pkgname=structure
 pkgver=2.3.4
-pkgrel=4
+pkgrel=5
 pkgdesc="Program for using multi-locus genotype data to investigate population structure."
 arch=('i686' 'x86_64')
 url="http://web.stanford.edu/group/pritchardlab/structure.html"
