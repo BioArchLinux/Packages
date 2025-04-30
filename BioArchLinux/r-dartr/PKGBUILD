@@ -32,6 +32,8 @@ depends=(
   r-stringr
   r-tidyr
   r-vegan
+  r-gsubfn
+  r-purrr
 )
 optdepends=(
   r-devtools
@@ -62,7 +64,6 @@ optdepends=(
   r-plotly
   r-poppr
   r-proxy
-  r-purrr
   r-qvalue
   r-rcolorbrewer
   r-rcpp
@@ -79,7 +80,6 @@ optdepends=(
   r-snpstats
   r-stringi
   r-terra
-  r-testthat
   r-tibble
   r-vcfr
   r-viridis
