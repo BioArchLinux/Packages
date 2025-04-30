@@ -89,7 +89,8 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a')
+md5sums=('5bf9a9a98080c55e1de812c2bce9a082')
+b2sums=('9295823ce7473fb96331f3d89c2b03cf1b4077c1af478f615be6cbf6088a748b3b5592d8194a2dd4fa9f5bba1bba7593619c006318454fea111dc8cef13d0b15')
 
 build() {
   mkdir build
