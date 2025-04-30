@@ -83,6 +83,7 @@ optdepends=(
   r-vcfr
   r-viridis
   r-zoo
+  r-vegan
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f76ad45d41f4c304d19d3f7258362549')
