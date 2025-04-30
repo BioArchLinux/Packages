@@ -70,6 +70,7 @@ optdepends=(
   r-tidycmprsk
   r-vgam
   r-glmtoolbox
+  r-svyvgam
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('35765a7529de9eed8db66f495f9aa344')
