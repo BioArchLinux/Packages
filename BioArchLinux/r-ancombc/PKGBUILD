@@ -40,6 +40,11 @@ optdepends=(
   r-tidyr
   r-tidyverse
   r-phyloseq
+  r-mia
+  r-s4vectors
+  r-singlecellexperiment
+  r-summarizedexperiment
+  r-treesummarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9ea99b22eb426a256081e63a7d6049f1')
