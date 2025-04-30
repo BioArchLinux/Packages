@@ -25,6 +25,8 @@ repo_depends:
 - r-stringr
 - r-tidyr
 - r-vegan
+- r-gsubfn
+- r-purrr
 update_on:
 - source: rpkgs
   pkgname: dartR
