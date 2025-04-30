@@ -44,6 +44,7 @@ optdepends=(
   r-testthat
   r-yaml
   r-scales
+  r-mockery
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('3abd7ba8500d0bafce0bce5330f5b6fc')
