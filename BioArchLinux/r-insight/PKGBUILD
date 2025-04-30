@@ -56,7 +56,6 @@ optdepends=(
   r-gee
   r-geepack
   r-geor
-  r-ggeffects
   r-glmmadaptive
   r-glmmtmb
   r-glmtoolbox
@@ -130,6 +129,7 @@ optdepends=(
   r-weightit
   r-withr
   r-tune
+  r-rwiener
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b2be66d0d69a4e285f4911d98fd12043')
