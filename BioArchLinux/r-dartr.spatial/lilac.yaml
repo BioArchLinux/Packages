@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-adegenet
+- r-crayon
+- r-dartr.base
+- r-dartr.data
+- r-data.table
+- r-ggplot2
+- r-raster
+- r-sp
+- r-stampp
+- r-tidyr
+- r-vegan
+update_on:
+- source: rpkgs
+  pkgname: dartR.spatial
+  repo: cran
+  md5: true
+- alias: r
