@@ -10,6 +10,7 @@ repo_depends:
 - r-rstantools
 - r-shiny
 - r-sn
+- r-cli
 repo_makedepends:
 - r-bh
 - r-rcppeigen

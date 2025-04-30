@@ -19,6 +19,7 @@ depends=(
   r-rstantools
   r-shiny
   r-sn
+  r-cli
 )
 makedepends=(
   r-bh
@@ -34,6 +35,10 @@ optdepends=(
   r-mice
   r-rmarkdown
   r-testthat
+  r-webexercises
+  r-bain
+  r-metaforest
+  r-metafor
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('d1fa3f8e2a111ba6676879539a07780a')
