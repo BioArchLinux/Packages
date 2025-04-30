@@ -17,6 +17,7 @@ makedepends=(
   r-rcppeigen
 )
 optdepends=(
+  r-rcppeigen
   r-knitr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
