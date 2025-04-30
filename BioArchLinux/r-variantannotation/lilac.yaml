@@ -19,7 +19,6 @@ repo_depends:
 - r-s4vectors
 - r-summarizedexperiment
 - r-xvector
-- r-zlibbioc
 repo_makedepends:
 - r-rhtslib
 update_on:
