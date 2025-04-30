@@ -11,12 +11,13 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-3.0-only')
 depends=(
   r-rcpp
-  r-rcppeigen
   r-rcppparallel
+)
+makedepends=(
+  r-rcppeigen
 )
 optdepends=(
   r-knitr
-  r-rcppeigen
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('862c863da43091a675b77de347cc1507')

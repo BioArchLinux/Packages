@@ -4,8 +4,9 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-rcpp
-- r-rcppeigen
 - r-rcppparallel
+repo_makedepends:
+- r-rcppeigen
 update_on:
 - source: rpkgs
   pkgname: gaston
