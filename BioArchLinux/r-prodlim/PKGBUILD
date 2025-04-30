@@ -10,23 +10,25 @@ pkgrel=2
 pkgdesc='Product-Limit Estimation for Censored Event History Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=('GPL-2.0-or-later')
 depends=(
-  r
   r-data.table
   r-diagram
   r-lava
   r-rcpp
+  r-rlang
+  r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('46961f654171aa7ef0ff94b23508ed59f6a438c3a3ba0d338cc3730224406764')
+md5sums=('cf4cc7858664ad00a4e227aa544b6f0e')
+b2sums=('0150c51a7a2fa96e506d06b82fa92b9b5dd14ad904663dced0a60b799402dbab2c32191465036910bdda2b98ecb748fb5421ca4e3eaec3ca8ef97647ab9a5651')
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
 }
 
 package() {
-  install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
 }
-# vim:set ts=2 sw=2 et:
