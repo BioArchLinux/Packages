@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-adegenet
+- r-dartr.base
+- r-dartr.data
+- r-data.table
+- r-fields
+- r-ggplot2
+- r-hierfstat
+- r-rcpp
+- r-reshape2
+- r-shiny
+- r-shinybs
+- r-shinyjs
+- r-shinythemes
+- r-shinywidgets
+- r-stringi
+- r-stringr
+update_on:
+- source: rpkgs
+  pkgname: dartR.sim
+  repo: cran
+  md5: true
+- alias: r
