@@ -17,6 +17,7 @@ repo_depends:
 - r-tibble
 - r-uwot
 - r-withr
+- r-seurat
 repo_makedepends:
 - r-rcpparmadillo
 - r-rcppeigen
