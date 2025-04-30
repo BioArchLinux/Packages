@@ -16,6 +16,7 @@ depends=(
   r-rcpp
   r-rcppeigen
   r-testthat
+  r-bh
 )
 makedepends=(
   r-bh

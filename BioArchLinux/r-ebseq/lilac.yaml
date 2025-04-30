@@ -8,6 +8,7 @@ repo_depends:
 - r-rcpp
 - r-rcppeigen
 - r-testthat
+- r-bh
 repo_makedepends:
 - r-bh
 update_on:
