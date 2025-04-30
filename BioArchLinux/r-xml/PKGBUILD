@@ -8,7 +8,7 @@ _pkgname=XML
 _pkgver=3.99-0.18
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools for Parsing and Generating XML Within R and S-Plus"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
