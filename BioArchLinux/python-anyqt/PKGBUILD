@@ -7,10 +7,10 @@ pkgrel=4
 pkgdesc="PyQt5/PyQt6 compatibility layer."
 arch=('x86_64')
 url="https://github.com/ales-erjavec/anyqt"
-license=('GPL')
+license=('GPL-3.0-only')
 depends=(python)
 makedepends=(python-setuptools)
-source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::https://pypi.org/packages/source/${_module::1}/$_module/${_module}-${pkgver}.tar.gz")
 sha256sums=('4b9228b918a26df2fdcc61f135db548ad3c3036e5bc7e67ba8147e0b6683763b')
 
 build() {
