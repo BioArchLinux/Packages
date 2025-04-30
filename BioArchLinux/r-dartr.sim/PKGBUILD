@@ -4,7 +4,7 @@ _pkgname=dartR.sim
 _pkgver=0.70
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Computer Simulations of 'SNP' Data"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
