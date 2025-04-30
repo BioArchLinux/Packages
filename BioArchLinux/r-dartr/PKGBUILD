@@ -31,7 +31,6 @@ depends=(
   r-stampp
   r-stringr
   r-tidyr
-  r-vegan
   r-gsubfn
   r-purrr
 )
