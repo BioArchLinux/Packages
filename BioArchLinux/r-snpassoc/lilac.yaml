@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ggplot2
+- r-haplo.stats
+- r-mvtnorm
+- r-plyr
+- r-poisbinom
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: SNPassoc
+  repo: cran
+  md5: true
+- alias: r
