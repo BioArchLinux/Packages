@@ -32,7 +32,6 @@ depends=(
   r-tidyr
 )
 optdepends=(
-  r-boot
   r-devtools
   r-directlabels
   r-dismo
@@ -45,7 +44,6 @@ optdepends=(
   r-ggtern
   r-ggthemes
   r-gplots
-  r-grid
   r-gtable
   r-hardyweinberg
   r-hierfstat
@@ -53,13 +51,11 @@ optdepends=(
   r-iterpc
   r-knitr
   r-label.switching
-  r-lattice
   r-leaflet
   r-leaflet.minicharts
   r-markdown
   r-mmod
   r-networkd3
-  r-parallel
   r-pegas
   r-pheatmap
   r-plotly
