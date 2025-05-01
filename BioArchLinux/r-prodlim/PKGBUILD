@@ -3,10 +3,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=prodlim
-_pkgver=2024.06.25
+_pkgver=2025.04.28
 pkgname=r-${_pkgname,,}
-pkgver=2024.06.25
-pkgrel=2
+pkgver=2025.04.28
+pkgrel=1
 pkgdesc='Product-Limit Estimation for Censored Event History Analysis'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -20,8 +20,8 @@ depends=(
   r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('cf4cc7858664ad00a4e227aa544b6f0e')
-b2sums=('0150c51a7a2fa96e506d06b82fa92b9b5dd14ad904663dced0a60b799402dbab2c32191465036910bdda2b98ecb748fb5421ca4e3eaec3ca8ef97647ab9a5651')
+md5sums=('eca7064bb5d9fc2a36a792ab99b4ec69')
+b2sums=('bf2125a47a1827cd77dea7a409a87fb2f44fda6ff1419a61d59dd10d5c444cf1e5d7fecd9646476e84a231fe9561f24879b250571acadcd2449edeadac0d1505')
 
 build() {
   mkdir build
