@@ -6,10 +6,10 @@
 # Contributor: Clint Valentine <valentine.clint@gmail.com>
 
 _pkgname=utf8
-_pkgver=1.2.4
+_pkgver=1.2.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Unicode Text Processing"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -27,8 +27,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b12b4a8b7c9fc8429a0c0633c59c7c18')
-b2sums=('5a2ba55901aebc5e22ecce51bc388d556207ec9ada521f6cddb03f58215de875cd5d9d767a28979b227c8fdfba22b473d5ed76a4113ed22bf46616fc5c15b7c8')
+md5sums=('eacf2aaa6664b875dc6612dd13b1e451')
+b2sums=('7b65a5c96331f0d9be1199c0238c55d0865f348e2cceed7a204e1f9e229fe049d9f796426cb957bcb56750445d02badffc99621d168b2eaa621d0f5e5ca62985')
 
 build() {
   mkdir build
