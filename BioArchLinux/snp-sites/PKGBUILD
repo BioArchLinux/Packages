@@ -2,7 +2,7 @@
 
 pkgname=snp-sites
 pkgver=2.5.1
-pkgrel=0
+pkgrel=1
 pkgdesc="Finds SNP sites from a multi-FASTA alignment file"
 arch=('x86_64')
 url="https://github.com/sanger-pathogens/snp-sites"
