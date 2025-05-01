@@ -10,7 +10,7 @@ repo_depends:
 - r-rlang
 - r-ggplot2
 update_on:
-- regex: prodlim_([\d._-]+).tar.gz
+- regex: 'prodlim_([\d._-]+).tar.gz'
   source: regex
   url: https://cran.r-project.org/package=prodlim
 - alias: r
