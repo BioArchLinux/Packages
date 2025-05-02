@@ -4,7 +4,7 @@ _pkgname=adegenet
 _pkgver=2.1.11
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Exploratory Analysis of Genetic and Genomic Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
