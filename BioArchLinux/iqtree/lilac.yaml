@@ -9,6 +9,6 @@ post_build_script: |
   update_aur_repo()
 update_on:
   - source: github
-    github: iqtree/iqtree2
+    github: iqtree/iqtree3
     use_latest_release: true
     prefix: 'v'
