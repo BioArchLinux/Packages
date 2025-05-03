@@ -15,7 +15,7 @@ b2sums=('ad90dbf3c43ac775d9b4cdcca03782c74227e95c9fc6df6702415e6497ce0a16ca650a3
 prepare() {
     cd ${pkgname}-${pkgver}
     export RUSTUP_TOOLCHAIN=stable
-    cargo fetch  --target "$CARCH-unknown-linux-gnu"
+    cargo fetch  --target "$(rustc -vV | sed -n 's/host: //p')"
 }
 
 build() {
