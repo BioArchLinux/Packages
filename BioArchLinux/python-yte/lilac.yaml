@@ -1,5 +1,6 @@
 maintainers:
 - github: kashyapchhatbar
+  email: kashyap.cc@gmail.com
 
 repo_depends:
 - python-dpath
@@ -7,7 +8,7 @@ repo_depends:
 
 pre_build_script: update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
 
-post_build: git_pkgbuild_commit
+post_build: git_pkgbuild_commit()
 
 update_on:
 - source: github
@@ -16,3 +17,4 @@ update_on:
   prefix: v
 - source: manual
   manual: 1
+- alias: python

@@ -1,9 +1,10 @@
 maintainers:
 - github: kashyapchhatbar
+  email: kashyap.cc@gmail.com
 
 pre_build_script: update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
 
-post_build: git_pkgbuild_commit
+post_build: git_pkgbuild_commit()
 
 repo_depends:
 - python-conda-inject
@@ -28,4 +29,4 @@ update_on:
   prefix: v
 - source: manual
   manual: 1
-
+- alias: python
