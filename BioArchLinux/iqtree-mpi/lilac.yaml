@@ -10,5 +10,5 @@ post_build_script: |
 update_on:
   - source: github
     github: iqtree/iqtree3
-    use_latest_release: true
+    use_max_tag: true
     prefix: 'v'
