@@ -1,0 +1,16 @@
+pkgbase = python-dpath
+	pkgdesc = Filesystem-like pathing and searching for dictionaries
+	pkgver = 2.2.0
+	pkgrel = 1
+	url = https://pypi.org/project/dpath
+	arch = any
+	license = MIT
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	depends = python
+	source = https://files.pythonhosted.org/packages/source/d/dpath/dpath-2.2.0.tar.gz
+	sha256sums = 34f7e630dc55ea3f219e555726f5da4b4b25f2200319c8e6902c394258dd6a3e
+
+pkgname = python-dpath

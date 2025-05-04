@@ -1,0 +1,31 @@
+maintainers:
+- github: kashyapchhatbar
+
+pre_build_script: update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+
+post_build: git_pkgbuild_commit
+
+repo_depends:
+- python-conda-inject
+- python-connection_pool
+- python-dpath
+- python-immutables
+- python-pulp
+- python-snakemake-interface-common
+- python-snakemake-interface-executor-plugins
+- python-snakemake-interface-logger-plugins
+- python-snakemake-interface-report-plugins
+- python-snakemake-interface-storage-plugins
+- python-throttler
+- python-yte
+- python-biopython
+- python-smart_open
+
+update_on:
+- source: github
+  github: snakemake/snakemake
+  use_max_tag: true
+  prefix: v
+- source: manual
+  manual: 1
+

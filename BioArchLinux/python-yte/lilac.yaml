@@ -1,0 +1,18 @@
+maintainers:
+- github: kashyapchhatbar
+
+repo_depends:
+- python-dpath
+- python-plac
+
+pre_build_script: update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+
+post_build: git_pkgbuild_commit
+
+update_on:
+- source: github
+  github: koesterlab/yte
+  use_max_tag: true
+  prefix: v
+- source: manual
+  manual: 1
