@@ -2,7 +2,7 @@
 # Maintainer: Yuuta Liang <yuuta@yuuta.moe>
 pkgname=python-immutables
 pkgver=0.21
-pkgrel=2
+pkgrel=3
 epoch=
 pkgdesc="A high-performance immutable mapping type for Python"
 arch=(x86_64)
