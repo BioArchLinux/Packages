@@ -2,7 +2,7 @@
 _name=connection_pool
 pkgname=python-$_name
 pkgver=0.0.3
-pkgrel=3
+pkgrel=4
 pkgdesc='Thread-safe connection pool for Python'
 arch=(any)
 url='https://github.com/zhouyl/ConnectionPool'
