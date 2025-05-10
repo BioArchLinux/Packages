@@ -8,60 +8,54 @@ arch=('i686' 'x86_64')
 license=('GPL' 'LGPL2.1' 'LGPL3' 'BSD' 'MIT' 'CCPL')
 url="https://github.com/calamares/calamares"
 depends=('kconfig' 'kcoreaddons' 'kiconthemes' 'ki18n' 'kio' 'solid' 'yaml-cpp' 'kpmcore>=4.2.0'
-	'boost-libs' 'hwinfo' 'qt6-svg' 'polkit-qt6' 'gtk-update-icon-cache' 'plasma-framework5'
-	'squashfs-tools' 'libpwquality' 'efibootmgr' 'icu'
-	'python' 'parted' 'appstream-qt' 'xorg-xhost')
+        'boost-libs' 'hwinfo' 'qt6-svg' 'polkit-qt6' 'gtk-update-icon-cache' 'mkinitcpio'
+        'squashfs-tools' 'libpwquality' 'efibootmgr' 'icu'
+        'python' 'parted' 'appstream-qt' 'xorg-xhost')
 makedepends=(
-	'ninja'
-	'python' 'python-jsonschema' 'python-pyqt6' 'python-yaml'
-	'extra-cmake-modules' 'qt6-tools' 'qt6-translations' 'boost' 'git')
+        'ninja'
+        'python' 'python-jsonschema' 'python-pyqt6' 'python-yaml'
+        'extra-cmake-modules' 'qt6-tools' 'qt6-translations' 'boost' 'git')
 
 source=("$pkgname-$pkgver::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz"
-	"49-nopasswd-calamares.rules")
+        "49-nopasswd-calamares.rules")
 
 sha256sums=('5547f80db067dea923ae693ba6bb88eb2b2eeac1da3ebec42fce453e31c290c0'
             '56d85ff6bf860b9559b8c9f997ad9b1002f3fccc782073760eca505e3bddd176')
 
 prepare() {
 
-	sed -i -e 's#Exec=sh.*#Exec=sh -c "/usr/bin/calamares-bio"#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
+        sed -i -e 's#Exec=sh.*#Exec=sh -c "/usr/bin/calamares-bio"#g' "$srcdir/${pkgname}-${pkgver}/calamares.desktop"
 
-	# add pkgrelease to patch-version
-	cd ${pkgname}-$pkgver
-	_patchver="$(cat CMakeLists.txt | grep -m3 -e CALAMARES_VERSION_PATCH | grep -o "[[:digit:]]*" | xargs)"
-	sed -i -e "s|CALAMARES_VERSION_PATCH $_patchver|CALAMARES_VERSION_PATCH $_patchver-$pkgrel|g" CMakeLists.txt
+        # add pkgrelease to patch-version
+        cd ${pkgname}-$pkgver
+        _patchver="$(cat CMakeLists.txt | grep -m3 -e CALAMARES_VERSION_PATCH | grep -o "[[:digit:]]*" | xargs)"
+        sed -i -e "s|CALAMARES_VERSION_PATCH $_patchver|CALAMARES_VERSION_PATCH $_patchver-$pkgrel|g" CMakeLists.txt
 }
 
 build() {
-	local cmake_args skip_modules
-	skip_modules=(
-		webview tracking interactiveterminal initramfs
-		initramfscfg dracut dracutlukscfg
-		dummyprocess dummypython dummycpp
-		dummypythonqt services-openrc
-		keyboardq localeq welcomeq
-	)
+        local cmake_args skip_modules
+        skip_modules=()
 
-	local cmake_args=(
-		-G Ninja
-		-DINSTALL_CONFIG=ON
-		-DCMAKE_BUILD_TYPE=Release
-		-DCMAKE_INSTALL_PREFIX=/usr
-		-DCMAKE_INSTALL_LIBDIR=lib
-		-DWITH_QT6=ON
-		-DSKIP_MODULES="${skip_modules[*]}"
-	)
-	install -d build
-	cmake -B build -S $pkgname-$pkgver "${cmake_args[@]}"
-	ninja -C build
+        local cmake_args=(
+                -G Ninja
+                -DINSTALL_CONFIG=ON
+                -DCMAKE_BUILD_TYPE=Release
+                -DCMAKE_INSTALL_PREFIX=/usr
+                -DCMAKE_INSTALL_LIBDIR=lib
+                -DWITH_QT6=ON
+                -DSKIP_MODULES="${skip_modules[*]}"
+        )
+        install -d build
+        cmake -B build -S $pkgname-$pkgver "${cmake_args[@]}"
+        ninja -C build
 }
 
 package() {
-	DESTDIR="$pkgdir" ninja install -C build
-	cd build
+        DESTDIR="$pkgdir" ninja install -C build
+        cd build
 
-	install -Dm644 "${srcdir}/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
-	echo -e "xhost + \npkexec calamares -d -style kvantum" >calamares-bio
-	install -Dm 755 calamares-bio $pkgdir/usr/bin/calamares-bio
-	chmod 750 "$pkgdir"/etc/polkit-1/rules.d
+        install -Dm644 "${srcdir}/49-nopasswd-calamares.rules" "$pkgdir/etc/polkit-1/rules.d/49-nopasswd-calamares.rules"
+        echo -e "xhost + \npkexec calamares -d -style kvantum" >calamares-bio
+        install -Dm 755 calamares-bio $pkgdir/usr/bin/calamares-bio
+        chmod 750 "$pkgdir"/etc/polkit-1/rules.d
 }
