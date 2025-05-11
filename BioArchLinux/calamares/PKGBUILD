@@ -34,9 +34,7 @@ prepare() {
 
 build() {
         local cmake_args skip_modules
-        skip_modules=(
-                plasma-framework plasma-framework5
-        )
+        skip_modules=()
 
         local cmake_args=(
                 -G Ninja
@@ -47,10 +45,11 @@ build() {
                 -DWITH_QT6=ON
                 -DSKIP_MODULES="${skip_modules[*]}"
         )
-        install -d build
+
         cmake -B build -S $pkgname-$pkgver "${cmake_args[@]}"
         ninja -C build
 }
+
 
 package() {
         DESTDIR="$pkgdir" ninja install -C build
