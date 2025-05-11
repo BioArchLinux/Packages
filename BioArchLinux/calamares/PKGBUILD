@@ -34,7 +34,9 @@ prepare() {
 
 build() {
         local cmake_args skip_modules
-        skip_modules=()
+        skip_modules=(
+                plasma-framework plasma-framework5
+        )
 
         local cmake_args=(
                 -G Ninja
