@@ -14,8 +14,8 @@ sha256sums=('7f71fb83fe57532e96e00dba3f7e3b5c746e170337ac0f91566de77163923f48'
             'bbd4f1ad72beb315e17616eef19599fd238f35a5da1caf3fac149efec285fb29')
 prepare(){
 	cd "$pkgname-$pkgver"/
-	patch -np1 < $srcdir/mcmctree78.patch
-	mkdir bin
+	patch -p1 < $srcdir/mcmctree78.patch
+	mkdir -p bin
 }
 build() {
 	cd "$pkgname-$pkgver"/src
@@ -27,7 +27,7 @@ build() {
 #	gcc -O3 -o evolver evolver.c tools.c
 #	gcc -O3 -o yn00 yn00.c tools.c 
 #	gcc -O3 -o chi2 chi2.c 
-	make -f Makefile
+	make -f Makefile -j1
 	ls -lF
 	rm *.o
 	mv baseml basemlg codeml pamp mcmctree evolver yn00 chi2 ../bin
