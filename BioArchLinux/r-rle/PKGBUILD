@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=rle
-_pkgver=0.9.2
+_pkgver=0.10.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Common Functions for Run-Length Encoded Vectors"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -17,8 +17,8 @@ optdepends=(
   r-covr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ff69a29a64e3a987278522e100c8b27a')
-b2sums=('601563122f08b5a4b05839e748a3393a05f62d524609b8f1cf22c0fe07b019f1c668c26ff38eb8e3d2d8705417b5cbdfc9c5957ad485086a384c4f9232372caa')
+md5sums=('738640893af3f49a19096baf6ad11342')
+b2sums=('8b9420dadfc832d7c82443718565afd26056ad46293b3d2ab4434be41ca21b37379a0555bd5563d68667aa8e9d2a1ec967f6fb0de66f05080e08b6e95b736179')
 
 build() {
   mkdir build
