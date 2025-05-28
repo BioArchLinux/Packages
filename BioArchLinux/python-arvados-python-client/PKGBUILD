@@ -1,6 +1,6 @@
 _name=arvados-python-client
 pkgname=python-arvados-python-client
-pkgver=3.1.1
+pkgver=3.1.2
 pkgrel=1
 pkgdesc="Arvados client library"
 arch=(any)
@@ -8,16 +8,16 @@ url="https://arvados.org"
 license=(Apache-2.0)
 depends=('python')
 makedepends=('python-setuptools' 'python-setuptools')
-source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/arvados-python-client-3.1.1.tar.gz")
-sha256sums=('eed1cfc688961a52b3259a243e41ef9b0d10e80c2c3fbb86e1a03e5084c37296')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/arvados-python-client-3.1.2.tar.gz")
+sha256sums=('9538e70073e489043e2c2ebd2e01c96215a90ee12e07678960cc3ef2f731534a')
 
 build() {
-  cd "$srcdir/arvados-python-client-3.1.1"
+  cd "$srcdir/arvados-python-client-3.1.2"
   python3 setup.py build
 }
 
 package() {
-  cd "$srcdir/arvados-python-client-3.1.1"
+  cd "$srcdir/arvados-python-client-3.1.2"
   python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
 
   # make sure we don't install any world-writable or root-readable-only files
