@@ -9,37 +9,64 @@ BioArchLinux</h3>
 
 ## Special sponsor
 
-<div>
-<a href="https://v.ps/" target="_blank"><img height="70px" src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logo/xtom.png"></a>
-</div>
+<a href="https://v.ps/" target="_blank">
+  <img align="middle" height="70px" src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logo/xtom.png" alt="Logo 1">
+</a>
+<a href="https://maibloom.github.io/" target="_blank">
+  <img align="middle" height="155px" src="https://github.com/user-attachments/assets/e7cdc81c-4328-4780-9bb7-f59ab1ae12c7" alt="Logo 2">
+</a>
 
 ## Usage
 
+### OmniPkg package manager
+
+OmniPkg lets you add the BioArchLinux mirror to your system quickly.
+
+- Run the following command to install OmniPkg:
+```
+curl -fsSL https://raw.githubusercontent.com/maibloom/omnipkg-app/main/indep-build.sh | bash
+```
+
+- After installing OmniPkg, add the BioArchLinux mirror with this command:
+```
+sudo omnipkg put install bioarchlinux-mirror
+```
+
+- **Alternatively**, you can combine both steps into a single command:
+```
+curl -fsSL https://raw.githubusercontent.com/maibloom/omnipkg-app/main/indep-build.sh | bash && sudo omnipkg put install bioarchlinux-mirror
+```
+
 ### ArchLinux and ArchLinux based distributions
 
-Add the following content to the `/etc/pacman.conf`
+- Add the following content to the `/etc/pacman.conf`
 ```
 [bioarchlinux]
 Server = https://repo.bioarchlinux.org/$arch
 ```
-You can replace the `https://repo.bioarchlinux.org/$arch` with any mirror in [mirrorlist](https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
+> [!NOTE]
+> You can replace the `https://repo.bioarchlinux.org/$arch` with any mirror in [mirrorlist](https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
 
-install GPG keyring to use bioarchlinux
+- install GPG keyring to use bioarchlinux
 ```
 # pacman-key --recv-keys B1F96021DB62254D
 # pacman-key --finger B1F96021DB62254D
 # pacman-key --lsign-key B1F96021DB62254D
 ```
 
-update the database
+- update the database
 ```
 # pacman -Syu
 ```
 
-install any package
+- install any package
 ```
 # pacman -S foo
 ```
+
+### Mai Bloom OS
+
+Mai Bloom OS comes with the BioArchLinux mirror preinstalled.
 
 ### Windows
 
