@@ -6,10 +6,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=haven
-_pkgver=2.5.4
+_pkgver=2.5.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Import and Export 'SPSS', 'Stata' and 'SAS' Files"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -44,9 +44,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-readstat.patch")
-md5sums=('ef0337da48b61ae98b03413e02177822'
+md5sums=('facac99e920be087ad5d1d65e5f74110'
          '73da7cc2ff7f7c1a5d4ffbaa45e359df')
-b2sums=('d78328297778232f316972def5ddaf6e25cac721c84b3e9d4b30167a0484ad4c71a8d4f2798d2869b4350fd222aeeeb9a508092c85f860264d4bec20228147db'
+b2sums=('b0ed3c942eb6647a55fed59e9ff872ef76dd91d30c03a92229bec4fafc327793a5a5b5e146451976da81fac1c94a1934147a235035d7ef4bf1cf2486da4d959f'
         'a0bb3a653cc0140c9f345b1b4918c483348f03c0e0a903fb963b39592c55bf5a3c5d3d59dd808fbe9a997fa3682eec5153a67bf90f207032a4491eee3eaf9bfe')
 
 prepare() {
