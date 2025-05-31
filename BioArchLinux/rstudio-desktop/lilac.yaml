@@ -6,10 +6,7 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver)
 post_build_script: |
   git_pkgbuild_commit()
-repo_makedepends:
-  - nvm
 repo_depends:
-  - soci
   - r-digest
   - r-purrr
   - r-rmarkdown
