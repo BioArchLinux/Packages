@@ -10,7 +10,6 @@ post_build_script: |
   update_aur_repo()
 repo_depends:
   - python-xopen
-  - python-isal
 update_on:
   - source: pypi
     pypi: dnaio
