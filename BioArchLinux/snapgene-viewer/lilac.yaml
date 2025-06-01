@@ -11,6 +11,5 @@ post_build_script: |
   git_pkgbuild_commit()
 
 update_on:
-  - source: regex
-    url: "https://www.snapgene.com/updates"
-    regex: '\"version\"\:\"(.*?)\"'
+  - source: manual
+    manual: 7.2.1
