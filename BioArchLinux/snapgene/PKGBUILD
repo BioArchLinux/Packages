@@ -6,7 +6,7 @@ pkgname=snapgene
 pkgver=8.1.0
 _pkgver_major=${pkgver%%.*}
 _pkgver_major_middle=${pkgver%.*}
-pkgrel=1
+pkgrel=2
 pkgdesc='Software for plasmid mapping, primer design, and restriction site analysis (includes free Viewer mode)'
 arch=('x86_64')
 url='https://www.snapgene.com/about'
@@ -55,7 +55,7 @@ source=("${pkgname}-${pkgver}.deb::https://cdn.snapgene.com/downloads/SnapGene/"
         "LICENSE.html::https://cdn.snapgene.com/downloads/licenseAgreement.html"
         "snapgene.sh")
 sha512sums=('0edaa65a2e78d66aec706556a5626e41b23ba76a0d5a5320ccc58b7e3df9c5342bf168b2e78cc4a2778f06ab9d70d39c75e75b884285204e6e6ed2ba378fa92a'
-	    '394bd5cbc1d5088e7c3ff0ce2675abea2cd7aa62d89e5a116fe869fb7ceaea8affd29d17275a47f8327bb6b3965af17afb1eadb9abe85d0210537fa0099ad8df'
+            '394bd5cbc1d5088e7c3ff0ce2675abea2cd7aa62d89e5a116fe869fb7ceaea8affd29d17275a47f8327bb6b3965af17afb1eadb9abe85d0210537fa0099ad8df'
             'b6e85e1a3e1ed9d07159b58abf6fecfb76bfd19752b67fbf156baaab696df83aa8b0fcfc49c93263dd56ea2f47926ddc4dac0b4b011f53112426e8545d1197be')
 
 package() {
