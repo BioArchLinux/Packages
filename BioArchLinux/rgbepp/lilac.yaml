@@ -16,7 +16,6 @@ repo_depends:
   - spades
   - diamond
   - macse
-  - isa-l
   - bowtie2
   - samtools
   - bcftools
