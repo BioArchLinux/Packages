@@ -12,4 +12,4 @@ post_build_script: |
 
 update_on:
     - source: cmd
-    - cmd: curl -sI "https://www.snapgene.com/local/targets/download.php?variant=viewer&os=linux_deb&release=latest" | grep -i "location"|sed -n 's/.*snapgene_\([0-9.]*\)_linux\.deb.*/\1/p'
+      cmd: curl -sI "https://www.snapgene.com/local/targets/download.php?variant=viewer&os=linux_deb&release=latest" | grep -i "location"|sed -n 's/.*snapgene_\([0-9.]*\)_linux\.deb.*/\1/p'
