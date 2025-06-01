@@ -7,8 +7,8 @@
 
 pkgname=python-selenium
 _pkgname="${pkgname#python-}"
-pkgver=4.30.0
-pkgrel=1
+pkgver=4.33.0
+pkgrel=0
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(x86_64)
 url="https://github.com/SeleniumHQ/selenium"
@@ -34,20 +34,13 @@ makedepends=(
   python-wheel
 )
 options=(!lto)
-source=("https://files.pythonhosted.org/packages/source/${_pkgname::1}/${_pkgname}/${_pkgname}-${pkgver}.tar.gz"
-        "pyo3.patch"
-        "cargo.patch")
-sha256sums=('16ab890fc7cb21a01e1b1e9a0fbaa9445fe30837eabc66e90b3bacf12138126a'
-            'b9e16158ca6f7fcd97901cf9b3f907c0543c49a4f1441a3013bd3771ec37dcf0'
-            'b18dade8dc66092d050f5e336109f9d3f40f414ba3e4c163ab91ba834123d386')
+source=("https://files.pythonhosted.org/packages/source/${_pkgname::1}/${_pkgname}/${_pkgname}-${pkgver}.tar.gz")
+sha256sums=('d90974db95d2cdeb34d2fb1b13f03dc904f53e6c5d228745b0635ada10cd625d')
 
 _archive="${_pkgname}-${pkgver}"
 
 prepare() {
   cd "${_archive}"
-  # fixes for build failures mentioned in upstream repo (https://github.com/SeleniumHQ/selenium/pull/15128#issuecomment-2609736932)
-  #patch -p1 < ${srcdir}/pyo3.patch
-  #patch -p1 < ${srcdir}/cargo.patch
 
   # Ensure `selenium.webdriver.common.fedcm` gets packaged
   touch ./selenium/webdriver/common/fedcm/__init__.py
