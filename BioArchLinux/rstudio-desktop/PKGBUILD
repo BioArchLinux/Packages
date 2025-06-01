@@ -16,7 +16,7 @@ _nodeversion="23"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
 : ${_copilot_version:=1.300.0}
 
-pkgrel=0
+pkgrel=1
 pkgdesc="A powerful and productive integrated development environment \
 	 (IDE) for R programming language"
 arch=('x86_64')
