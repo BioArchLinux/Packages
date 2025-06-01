@@ -8,7 +8,7 @@
 pkgname=python-selenium
 _pkgname="${pkgname#python-}"
 pkgver=4.33.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(x86_64)
 url="https://github.com/SeleniumHQ/selenium"
