@@ -6,6 +6,10 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver)
 post_build_script: |
   git_pkgbuild_commit()
+irepo_depends:
+  - java23-openjdk: jdk23-openjdk
+repo_makedepends:
+  - java23-openjdk: jdk23-openjdk
 update_on:
   - source: manual
     manual: 23.0.1.u4
