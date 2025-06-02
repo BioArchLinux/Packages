@@ -127,8 +127,8 @@ package_java23-openjfx() {
     'java23-openjfx-src: For the source code of this software.'
   )
   provides=(
-    "java23-openjfx=${pkgver%%.*}"
-    "java23-openjfx=${pkgver}"
+    "java-openjfx=${pkgver%%.*}"
+    "java-openjfx=${pkgver}"
   )
 
   cd "${_jfxdir}"
@@ -150,7 +150,7 @@ package_java23-openjfx-license() {
     "java23-openjfx=${pkgver%%.*}: The software this license is for."
   )
   provides=(
-    "${pkgname}=${pkgver%%.*}"
+    "java-openjfx-license=${pkgver%%.*}"
   )
 
   cd "${_jfxdir}"
@@ -171,7 +171,7 @@ package_java23-openjfx-doc() {
     "java23-openjfx=${pkgver%%.*}: The software this documentation is for."
   )
   provides=(
-    "${pkgname}=${pkgver%%.*}"
+    "java-openjfx-doc=${pkgver%%.*}"
   )
 
   cd "${_jfxdir}"
@@ -190,7 +190,7 @@ package_java23-openjfx-src() {
     "java23-openjfx=${pkgver%%.*}: The software this source code is for."
   )
   provides=(
-    "${pkgname}=${pkgver%%.*}"
+    "java-openjfx-src=${pkgver%%.*}"
   )
 
   cd "${_jfxdir}"
