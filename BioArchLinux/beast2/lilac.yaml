@@ -15,5 +15,6 @@ update_on:
 repo_depends:
   - java-openjfx
   - java23-openjdk: jre23-openjdk
+  - java23-openjdk: jdk23-openjdk
 repo_makedepends:
   - java23-openjdk: jdk23-openjdk
