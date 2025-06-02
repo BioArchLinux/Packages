@@ -19,7 +19,7 @@ pkgname=(
   # "java-openjfx-src"
 )
 pkgver=23.0.1.u4
-pkgrel=2
+pkgrel=3
 pkgdesc="Java OpenJFX client application platform (open-source implementation of JavaFX) - version following latest major Arch Linux OpenJDK java release. Build without WebKit support."
 arch=(
   "x86_64"
