@@ -10,10 +10,8 @@ update_on:
   - source: aur
 #   - source: archpkg
 #    git: "https://github.com/openjdk/jfx22u.git"
-    aur: java23-openjfx 
+    aur: java22-openjfx 
     strip_release: true
 #    include_regex: '^((?:\d|\.)+)\+\d+'
 #    from_pattern: '\+'
 #    to_pattern: '.u'
-repo_makedepends:
-  - jdk22-openjdk
