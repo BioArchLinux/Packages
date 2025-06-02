@@ -14,3 +14,6 @@ update_on:
     prefix: 'v'
 repo_depends:
   - java-openjfx
+  - java23-openjdk: jre23-openjdk
+repo_makedepends:
+  - java23-openjdk: jdk23-openjdk
