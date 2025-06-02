@@ -16,6 +16,6 @@ update_on:
 #    from_pattern: '\+'
 #    to_pattern: '.u'
 repo_depends:
-  - jdk22-openjdk
+  - java22-openjdk: jdk22-openjdk
 repo_makedepends:
-  - jdk22-openjdk
+  - java22-openjdk: jdk22-openjdk
