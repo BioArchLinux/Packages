@@ -17,3 +17,7 @@ update_on:
 #    include_regex: '^((?:\d|\.)+)\+\d+'
 #    from_pattern: '\+'
 #    to_pattern: '.u'
+repo_makedepends:
+  - java23-openjdk: jdk23-openjdk 
+repo_depends:
+  - java23-openjdk: jdk23-openjdk 
