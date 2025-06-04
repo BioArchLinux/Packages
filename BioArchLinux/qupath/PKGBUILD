@@ -3,7 +3,7 @@
 _pkgname=QuPath
 pkgname=qupath
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Bioimage analysis & digital pathology 
          https://doi.org/10.1038/s41598-017-17204-5'
 arch=('x86_64')
