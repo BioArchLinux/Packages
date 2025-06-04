@@ -3,7 +3,7 @@
 
 pkgbase=tnt
 pkgname=('tnt' 'tnt-mpi' 'tnt-gui' 'tnt-extra')
-pkgver=2025.05.29
+pkgver=2025.06.04
 pkgrel=1
 pkgdesc="Tree analysis using New Technology \
 	 https://doi.org/10.1111/cla.12524"
@@ -15,7 +15,7 @@ depends=('ncurses5-compat-libs')
 source=("https://www.lillo.org.ar/phylogeny/tnt/tnt-linux.zip"
 	"gTNT.desktop")
 DLAGENTS=("https::/usr/bin/curl -k -o %o %u")
-sha256sums=('3a37870b45711e6af5f253d3055b296a4ff9d01ca25151f335003744540e9d11'
+sha256sums=('c6f11430c3c6c283577c63023f853008111f0d66af2a60e9ef4a2e5454291138'
             '9ce723f975e9b9a99ad45a4b2f929e7ed198b51499325b1a4c4df38d90b030e0')
 prepare () {
 	cd $srcdir/TNT-Docs_n_Datasets
