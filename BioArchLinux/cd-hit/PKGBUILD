@@ -1,0 +1,72 @@
+# Maintainer: Kiri <kiri@vern.cc>
+# Contributor: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
+pkgname=(cd-hit cd-hit-auxtools psi-cd-hit cd-hit-docs)
+pkgver=4.8.1
+pkgrel=1
+url="http://cd-hit.org"
+license=('GPL-2.0-only')
+source=("cd-hit-${pkgver}.tar.gz"::"https://github.com/weizhongli/cdhit/archive/refs/tags/V${pkgver}.tar.gz"
+        "perl-shebangs.patch::https://patch-diff.githubusercontent.com/raw/weizhongli/cdhit/pull/25.patch")
+sha512sums=('28f350c67079f000b4102126a29d2eed110c636fb32a8a53699b60e6f3447348ea3838fe87a4dd952895d62491298394a314254e91036f6a23b1956b1e237a64'
+            'f9a918ebe2865d84c31fbd5ab4b0b2f58bf3faee879cb304e1fa44969e01db3786f12b3699a712094f9ee261efd306188aff548b1a88f57daae5d02205551236')
+
+prepare() {
+  cd ${srcdir}/cdhit-${pkgver}
+  patch -Np1 -i ${srcdir}/perl-shebangs.patch
+}
+
+build() {
+  cd ${srcdir}/cdhit-${pkgver}
+  make
+  cd cd-hit-auxtools
+  make
+}
+
+package_cd-hit() {
+  pkgdesc="clustering DNA/protein sequence database at high identity with tolerance 
+           https://doi.org/10.1093/bioinformatics/bts565"
+  depends=('perl'
+           'zlib'
+           'glibc'
+           'gcc-libs')
+  cd ${srcdir}/cdhit-${pkgver}
+
+  for file in cd-hit cd-hit-est cd-hit-2d cd-hit-est-2d cd-hit-div cd-hit-454 *.pl ; do
+    install -Dm 755 -t ${pkgdir}/usr/bin/ $file
+  done
+}
+
+package_cd-hit-auxtools() {
+  pkgdesc="identifing duplicates and overlapping reads 
+           https://doi.org/10.1093/bioinformatics/bts565"
+  depends=('perl'
+           'glibc'
+           'gcc-libs')
+  cd ${srcdir}/cdhit-${pkgver}/cd-hit-auxtools
+  
+  install -Dm 755 -t ${pkgdir}/usr/bin/ cd-hit-dup
+  install -Dm 755 -t ${pkgdir}/usr/bin/ cd-hit-lap
+  install -Dm 755 -t ${pkgdir}/usr/bin/ cd-hit-dup-PE-out.pl
+  install -Dm 755 -t ${pkgdir}/usr/bin/ read-linker
+}
+
+package_psi-cd-hit() {
+  pkgdesc="clustering DNA/protein sequence database at very low threshold using BLAST
+           https://doi.org/10.1093/bioinformatics/bts565"
+  depends=('perl'
+           'blast+')
+  cd ${srcdir}/cdhit-${pkgver}/psi-cd-hit
+
+  for file in *.pl ; do
+    install -Dm 755 -t ${pkgdir}/usr/bin/ $file
+  done
+  install -Dm 644 README.psi-cd-hit ${pkgdir}/usr/share/doc/${pkgname}/README
+}
+
+package_cd-hit-docs() {
+  pkgdesc="documentation for cd-hit
+         https://doi.org/10.1093/bioinformatics/bts565"
+  depends=()
+  cd ${srcdir}/cdhit-${pkgver}/doc
+  install -Dm 644 -t "${pkgdir}/usr/share/doc/${pkgname}/" "cdhit-user-guide.pdf"
+}
