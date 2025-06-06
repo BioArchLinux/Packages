@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2025.05.0+496
+pkgver=2025.05.1+513
 _pkgver=${pkgver//+/.}
 _srcname=rstudio-${pkgver//+/-}
 _pkgsrc=rstudio-${pkgver//+/-}
@@ -76,7 +76,7 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         "https://github.com/SOCI/soci/archive/refs/tags/v${_soci_version}.tar.gz"
         "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-linux-x64-${_copilot_version}.zip")
 
-sha256sums=('44d9a1864f4e84bc9c86cc0a012bbe7885a897bd14c3cd60251bea2941ac9bb6'
+sha256sums=('7ae955cd0b1e3dc29284a5578ebd406c6ba28b817c7b65cf6804cc05e40a6073'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             '21f030b4a9b189818ebe73c9065dc140ad64308169b7cb323c9002018ffba074')
