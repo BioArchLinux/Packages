@@ -2,7 +2,7 @@
 
 pkgname=outils
 pkgver=0.14
-pkgrel=2
+pkgrel=3
 pkgdesc="A port of some non-standard OpenBSD tools to Linux"
 arch=('x86_64')
 url="https://github.com/leahneukirchen/outils"
