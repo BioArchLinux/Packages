@@ -16,7 +16,7 @@ makedepends=('java-environment=8' 'maven' 'gendesk' 'icedtea-web')
 build(){
   cd $srcdir/$pkgname-${pkgver//_/-}
   mvn package -Dmaven.test.skip=true
-  gendesk --pkgname "$pkgname" --pkgdesc "$pkgdesc" --exec="$pkgname" --icon="/usr/share/$pkgname/icons/Delta_blue.png"
+  gendesk --pkgname "$pkgname" --pkgdesc "$pkgdesc" --exec="$pkgname" --icon="/usr/share/$pkgname/icons/Delta_blue.png" --custom="StartupWMClass=au-org-ala-delta-editor-DeltaEditor"
   echo "java -jar /usr/share/$pkgname/delta-editor-*.jar" > $pkgname
   chmod +x $pkgname 
 }
