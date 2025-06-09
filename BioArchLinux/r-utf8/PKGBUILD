@@ -6,7 +6,7 @@
 # Contributor: Clint Valentine <valentine.clint@gmail.com>
 
 _pkgname=utf8
-_pkgver=1.2.5
+_pkgver=1.2.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -27,8 +27,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('eacf2aaa6664b875dc6612dd13b1e451')
-b2sums=('7b65a5c96331f0d9be1199c0238c55d0865f348e2cceed7a204e1f9e229fe049d9f796426cb957bcb56750445d02badffc99621d168b2eaa621d0f5e5ca62985')
+md5sums=('12037c186ddded4d9b289762b69fc435')
+b2sums=('a25246c7881602d5543400fe0db17200a82e93dd19a30d6ff18e52790490915bfc30f5f490de0c6af139aaf8fbd5624e1fcbe4beab47c4fb99f6ca1db37a34bc')
 
 build() {
   mkdir build
