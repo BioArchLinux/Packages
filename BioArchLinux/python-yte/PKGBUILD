@@ -3,7 +3,7 @@
 
 _name=yte
 pkgname=python-$_name
-pkgver=1.8.0
+pkgver=1.8.1
 pkgrel=1
 pkgdesc='YAML template engine with Python expressions'
 arch=(any)
@@ -12,7 +12,7 @@ license=(MIT)
 depends=(python-dpath python-plac python-pyyaml)
 makedepends=(python-poetry-core python-build python-installer python-wheel)
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
-sha256sums=('244c53265c9a95b11f8d45c5a1663ba4f3af77a6a16d024d6e7a25c20dd7592f')
+sha256sums=('6eefbdceae56e156ba9881ecb63f3c9217cfe5d5cc6f85fdb061c266a8eff112')
 
 build() {
 	cd "$_name-$pkgver"
