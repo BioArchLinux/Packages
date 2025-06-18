@@ -1,8 +1,8 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 _name=snakemake-interface-executor-plugins
 pkgname=python-$_name
-pkgver=9.3.5
-pkgrel=2
+pkgver=9.3.6
+pkgrel=1
 pkgdesc="Common functions and classes for Snakemake and its plugins"
 arch=('any')
 url="https://github.com/snakemake/snakemake-interface-executor-plugins"
@@ -10,7 +10,7 @@ license=('MIT')
 depends=(python-snakemake-interface-common python-throttler python-argparse_dataclass python-setuptools)
 makedepends=(python-build python-installer python-wheel python-poetry-core)
 source=($_name-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
-sha256sums=('98f7db4409f878b82f01fff9709fba11121f7d84a791ce7680926a010ce223e7')
+sha256sums=('a179086c055682df39d17aa37bafbb11e9e7e818dd075f4ffb436cc4c4541aec')
 
 build() {
     cd "$_name-$pkgver"
