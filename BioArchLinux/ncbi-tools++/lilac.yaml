@@ -2,6 +2,12 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
-- source: cmd
-  cmd: curl -sS https://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools++/CURRENT/ | grep 'tar.gz' |sed 's/--/ /g' | sed 's/\./ /g' | sed 's/_/./g' | awk '{print $3}'
+  - source: github
+    github: ncbi/ncbi-cxx-toolkit-public
+    use_latest_release: true
+    prefix: 'release/'
