@@ -19,7 +19,7 @@ pkgver(){
 }
 prepare() {
   cd $srcdir/${pkgname}-current
-  patch -np1 < $srcdir/5to6.patch
+  patch -p1 < $srcdir/5to6.patch
 }
 build() {
   cd $srcdir/${pkgname}-current
