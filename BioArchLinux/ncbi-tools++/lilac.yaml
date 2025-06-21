@@ -11,3 +11,4 @@ update_on:
     github: ncbi/ncbi-cxx-toolkit-public
     use_latest_release: true
     prefix: 'release/'
+    time_limit_hours: 4
