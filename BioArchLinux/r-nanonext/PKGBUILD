@@ -8,7 +8,7 @@ pkgrel=2
 pkgdesc="NNG (Nanomsg Next Gen) Lightweight Messaging Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-or-later')
+license=('MIT')
 depends=(
   r
 )
