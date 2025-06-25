@@ -5,7 +5,7 @@ _pkgver=1.7.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc="Interface for the 'QuickJS' Lightweight 'JavaScript' Engine"
+pkgdesc="Interface for the 'QuickJS-NG' Lightweight 'JavaScript' Engine"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
