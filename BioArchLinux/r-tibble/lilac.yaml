@@ -3,7 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-fansi
+- r-cli
 - r-lifecycle
 - r-magrittr
 - r-pillar

@@ -14,7 +14,7 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r-fansi
+  r-cli
   r-lifecycle
   r-magrittr
   r-pillar
@@ -28,9 +28,6 @@ optdepends=(
   r-blob
   r-brio
   r-callr
-  r-cli
-  r-covr
-  r-crayon
   r-diagrammer
   r-dplyr
   r-evaluate
@@ -41,9 +38,7 @@ optdepends=(
   r-htmltools
   r-knitr
   r-lubridate
-  r-mockr
   r-nycflights13
-  r-pkgbuild
   r-pkgload
   r-purrr
   r-rmarkdown
