@@ -15,6 +15,7 @@ depends=(
 optdepends=(
   r-lme4
   r-tinytest
+  r-glmmtmb
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c10349669436c9cf55f8dd851c8247f7')
