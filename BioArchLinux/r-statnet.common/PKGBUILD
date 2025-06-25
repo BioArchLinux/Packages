@@ -15,6 +15,8 @@ depends=(
 optdepends=(
   r-covr
   r-rlang
+  r-roxygen2
+  r-purrr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('69d37cc27d33b8d3bc1c7d9b2672fce5')
