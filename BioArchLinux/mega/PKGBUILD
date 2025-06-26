@@ -15,7 +15,7 @@ depends=(
 	'gtk2'
 	'hicolor-icon-theme'
 )
-source=("https://www.megasoftware.net/releases/mega_$pkgver-1_amd64.deb")
+source=("https://www.megasoftware.net/releases/mega_$pkgver-1_amd64_beta.deb")
 sha256sums=('c86684c5fc24bfdc69c7f8cc84e9a9fc5d1e82465356e7e041eb939ebd28ecdd')
 
 package() {
