@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=ergm
-_pkgver=4.8.1
+_pkgver=4.9.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Fit, Simulate and Diagnose Exponential-Family Models for Networks"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -40,8 +40,8 @@ optdepends=(
   r-networklite
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('68ce26398ced389ee6b0fd3af92b65f1')
-b2sums=('3ee7d0750b2b1b95f2b28f2616d72b9bda641977d0002cf02d1360c55f4468672921020114da7538fa365435e57951a87b243fa666f8b81ed39ded0cf2a591ef')
+md5sums=('b0fba8ffdbeaa1418579ae1a9406662d')
+b2sums=('f10086ab2a4db87c1d6c42e395f0506273768af8b55883e2575688c6fa45334ce39664d1a40837d22e420162c1c4fd82be2d8cd4b5136a37720c47d875b0acf5')
 
 build() {
   mkdir build
