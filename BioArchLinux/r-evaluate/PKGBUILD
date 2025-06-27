@@ -26,6 +26,7 @@ optdepends=(
   r-callr
   r-pkgload
   r-knitr
+  r-ragg
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('bb6f78106640f1e1b35010385524ed21')
