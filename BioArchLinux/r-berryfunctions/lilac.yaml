@@ -4,7 +4,7 @@ maintainers:
   email: shuonwang@gmail.com
 update_on:
 - source: rpkgs
-  pkgname: berryfunctions
+  pkgname: berryFunctions
   repo: cran
   md5: true
 - alias: r
