@@ -13,6 +13,8 @@ pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver.replace(':', '.').replace('-', '.'))
 repo_depends:
   - r-assertthat
+  - r-cli
+  - r-lifecycle
   - r-r6
   - r-reticulate
 update_on:
