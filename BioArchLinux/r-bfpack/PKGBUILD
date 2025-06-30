@@ -22,6 +22,7 @@ depends=(
   r-qrm
   r-coda
   r-metabma
+  r-berryfunctions
 )
 makedepends=(
   gcc-fortran

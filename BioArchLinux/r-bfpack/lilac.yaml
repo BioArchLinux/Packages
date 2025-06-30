@@ -14,6 +14,7 @@ repo_depends:
 - r-qrm
 - r-coda
 - r-metabma
+- r-berryfunctions
 update_on:
 - source: rpkgs
   pkgname: BFpack
