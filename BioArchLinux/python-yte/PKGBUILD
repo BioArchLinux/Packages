@@ -10,7 +10,7 @@ arch=(any)
 url="https://github.com/koesterlab/$_name"
 license=(MIT)
 depends=(python-dpath python-plac python-pyyaml)
-makedepends=(python-poetry-core python-build python-installer python-wheel)
+makedepends=(python-poetry-core python-build python-installer python-wheel python-uv-build)
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
 sha256sums=('6eefbdceae56e156ba9881ecb63f3c9217cfe5d5cc6f85fdb061c266a8eff112')
 
