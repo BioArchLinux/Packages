@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=BFpack
-_pkgver=1.4.2
+_pkgver=1.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Flexible Bayes Factor Testing of Scientific Expectations"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -37,8 +37,8 @@ optdepends=(
   r-lmtest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('cf05d6b82867376c3da3e74cd495afde')
-b2sums=('12e152c27ed5b4973d95aebeeca50df863699a411148e25b700448b47f918b8f47b3eed3a3190defbc0a7cb88226eb070bdc780d29f0b71fb3a6b4c675ad364f')
+md5sums=('96e5af1a1e600f2ff34dc20e6f783962')
+b2sums=('b47ca8cc18db7979b8a904e57b440ec9902d8a17c21ea15b93f7c1b9e6445b901a29cd1e6582d8231eeb2781a16a0022c5c678fc8ffb67fa466b4e6fb3e0872d')
 
 build() {
   mkdir build
