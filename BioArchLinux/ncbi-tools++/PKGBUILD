@@ -64,4 +64,6 @@ package() {
   find "$pkgdir"/usr/bin -name "*test*" -delete
   # Remove all empty symlnks to static libs
   find ${pkgdir}/usr/lib/ -type l ! -exec test -e {} \; -delete
+  # avoid conflict with proj
+  rm ${pkgdir}/usr/lib/libproj.so
 }
