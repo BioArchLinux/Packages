@@ -9,7 +9,7 @@ pkgdesc="High performance sequence aligner for protein and translated DNA search
 arch=('x86_64')
 url="https://github.com/bbuchfink/diamond"
 license=('GPL-3.0-only')
-depends=('gcc-libs' 'zlib' 'zstd' 'glibc' 'ncbi-tools++')
+depends=('gcc-libs' 'zlib' 'zstd' 'glibc' 'blast+')
 #'blast+' causes build to fail (https://github.com/bbuchfink/diamond/issues/879),
 # Hence 'ncbi-tools++' being used in place as suggested by upstream
 makedepends=('cmake' 'mold')
