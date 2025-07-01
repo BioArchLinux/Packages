@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 pkgname=python-snakemake-interface-common
 _name=${pkgname#python-}
-pkgver=1.19.4
+pkgver=1.20.0
 pkgrel=1
 pkgdesc="Common functions and classes for Snakemake and its plugins"
 arch=('any')
@@ -10,7 +10,7 @@ license=('MIT')
 makedepends=(python-build python-installer python-wheel python-poetry-core python-setuptools)
 depends=(python)
 source=($_name-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
-sha256sums=('3292aa24a6278d1591a05654f4030bdab3e8a83aa579d697318a49d7d5b8faed')
+sha256sums=('49b74a8a7a5d2089e6313757663f9fd1fec87d6ef5faa32e2da41cfaa9e6df90')
 
 build() {
     cd "$_name-$pkgver"
