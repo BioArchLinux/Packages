@@ -1,13 +1,14 @@
+build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
-build_prefix: extra-x86_64
 pre_build_script: |
   update_pkgver_and_pkgrel(_G.newver)
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: regex
-    url: "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST"
-    regex: '(\d+.\d+.\d+)'
+  - source: github
+    github: ncbi/ncbi-cxx-toolkit-public
+    use_latest_release: true
+    prefix: "release/"
 time_limit_hours: 4
