@@ -2,56 +2,89 @@
 # Maintainer: Nathaniel Stickney <nstickney@gmail.com>
 # Contributor: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
 # shellcheck disable=SC2034,SC2148,SC2154
-
 pkgname=blast+
-pkgver=2.16.0
-pkgrel=1
-pkgdesc="BLAST tool suite from NCBI (blastn, blastp, blastx, psiblast, etc)"
+pkgver=29.2.0
+_pkgver=${pkgver//./_}
+pkgrel=0
+pkgdesc="BLAST tool suite (blastn, blastp, blastx, psiblast) built from NCBI C++ toolkit sources"
 arch=('i686' 'x86_64')
 url="http://blast.ncbi.nlm.nih.gov/"
-license=('custom')
-depends=('glibc'
-         'gcc-libs'
-         'libelf'
-         'zlib'
-	 'bzip2'
-	 'lzo'
-	 'zstd'
-	 'db'
-	 'pcre'
-	 'perl'
-	 'python'
-	 'lmdb'
-	 'libuv'
-	 'libnghttp2'
-	 'sqlite')
-makedepends=('cpio' 'make')
-# conflicts with proj on libproj.so
-conflicts=('blast' 'blast+-bin' 'ncbi-blast')
-provides=('blast')
+license=('NCBI-PD')
+depends=('python' 'pcre2' 'sqlite' 'lzo' 'libtiff' 'giflib' 'libxpm' 'glibc' 'gcc-libs' 'curl'
+         'mariadb-libs' 'libpng' 'gnutls' 'libxml2' 'libxslt' 'lmdb' 'gnutls' 'openssl' 'krb5' 'hdf5' 'bzip2' 'zlib' 'lzo' 'zstd' 'bash' 'libjpeg-turbo' 'e2fsprogs' 'perl' 'db')
+makedepends=('autoconf' 'cpio')
+conflicts=('blast' 'blast+-bin' 'ncbi-blast' 'ncbi-tools++')
+provides=('blast' 'igblast')
 replaces=('ncbi-blast')
-source=("https://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/ncbi-blast-$pkgver+-src.tar.gz")
-sha256sums=('17c93cf009721023e5aecf5753f9c6a255d157561638b91b3ad7276fd6950c2b')
-
-prepare() {
-    cd "$srcdir"/ncbi-blast-"$pkgver"+-src/c++ || exit
-    ./configure \
-        --prefix=/usr \
-        --with-dll \
-        --with-mt
-}
+source=(${pkgname}-${pkgver}.tar.gz::https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release/${pkgver}.tar.gz
+        LICENSE)
+sha256sums=('4bb2701b2cc8b4b29b5cde10088142d3c71c0ffd59e5f3402a1a6eec3d07db7e'
+            '78bbf3f310ff43f1b5f711e7221d51da1e6f055831bd6c6941e0650bf1261df2')
 
 build() {
-    cd "$srcdir"/ncbi-blast-"$pkgver"+-src/c++ || exit
-    make
+  # Adapted from debian packaging
+  # refer https://ncbi.github.io/cxx-toolkit/pages/ch_config.html#ch_config.Configuring_with_UNI for details about build FLAGS
+  cd "$srcdir/ncbi-cxx-toolkit-public-release-${pkgver}"
+  rm -f "$srcdir"/build/inc/ncbiconf_unix.h # in case of previous build
+  #---------Prebuild project_tree_builder binary separately--------------------------------
+  export CONFIGURE_COMMON_FLAGS="\
+                          --without-autodep \
+                          --without-makefile-auto-update \
+                          --with-flat-makefile \
+                          --without-caution \
+                          --without-lzo \
+                          --without-debug \
+                          --without-downloaded-vdb \
+                          --without-sse42"
+  export NATIVE=".native"
+  export NATIVE_BINDIR="${srcdir}/BUILD${NATIVE}/bin"
+
+  export PREBUILT_DATATOOL_EXE=${NATIVE_BINDIR}/datatool
+  export PREBUILT_PTB_EXE=${NATIVE_BINDIR}/project_tree_builder
+  #export PREBUILT_DATATOOL_EXE PREBUILT_PTB_EXE
+  PREBUILT_PTB_EXE=bootstrap \
+            ./configure ${CONFIGURE_COMMON_FLAGS} --without-app \
+             --with-build-root=${srcdir}/BUILD${NATIVE}  ||  \
+            (tail -v -n +0 config.log BUILD.native/status/config.log; exit 1)
+	make -C ${srcdir}/BUILD${NATIVE}/build -f Makefile.flat \
+	    datatool.exe
+
+  #-----------build only blast binaries and dependencies------------------------------------
+    export proj="algo/blast/ app/ objmgr/ objtools/align_format/ objtools/blast/"
+    ./configure --without-autodep \
+      --without-makefile-auto-update \
+      --with-flat-makefile\
+      --without-caution\
+      --without-debug \
+      --without-downloaded-vdb \
+      --prefix=/usr \
+      --libdir=/lib/blast+ \
+      --with-bin-release \
+      --with-dll \
+      --with-mt \
+      --with-lmdb=/usr/lib \
+      --with-hdf5=/usr/lib \
+      --with-libxslt=/usr/lib \
+      --with-z=/usr/lib \
+      --with-bz2=/usr/lib \
+      --with-lzo=/usr/lib \
+      --with-zstd=/usr/lib \
+      --with-pcre2=/usr/lib \
+      --with-gnutls=/usr/lib \
+      --with-openssl=/usr/lib \
+      --with-krb5=/usr/lib/ \
+      --with-bdb=/usr/lib/ \
+      --with-curl=/usr/lib/ \
+      --without-boost \
+      --with-64 \
+      --with-build-root=${srcdir}/build_blast
+
+    cd $srcdir/build_blast/build
+    make -f Makefile.flat all_projects="${proj}"
 }
 
 package() {
-    cd "$srcdir"/ncbi-blast-"$pkgver"+-src/c++ || exit
-    make prefix="$pkgdir"/usr install
-    chmod +x "$pkgdir"/usr/lib/*.so
-    install -d "$pkgdir"/usr/share/licenses/"$pkgname"
-    echo 'public domain' >"$pkgdir"/usr/share/licenses/"$pkgname"/LICENSE
-
-    rm $pkgdir/usr/lib/libproj.so
+  cd "${srcdir}/ncbi-cxx-toolkit-public-release-${pkgver}"
+  make prefix="${pkgdir}"/usr libdir="${pkgdir}"/usr/lib/blast+ install
+  install -Dm644 "${srcdir}"/LICENSE "${pkgdir}"/usr/share/licenses/${pkgname}/license
 }
