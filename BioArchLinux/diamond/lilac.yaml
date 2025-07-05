@@ -8,9 +8,9 @@ post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 repo_depends:
-  - ncbi-tools++
+  - blast+
 update_on:
   - source: github
     github: bbuchfink/diamond
     use_max_tag: true
-    prefix: 'v'
+    prefix: "v"
