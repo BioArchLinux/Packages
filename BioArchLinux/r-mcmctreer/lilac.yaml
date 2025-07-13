@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+update_on:
+- source: rpkgs
+  pkgname: MCMCtreeR
+  repo: cran
+  md5: true
+- alias: r
+repo_depends:
+- r-ape
+- r-coda
+- r-sn
