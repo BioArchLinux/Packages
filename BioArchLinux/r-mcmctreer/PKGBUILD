@@ -4,7 +4,7 @@ _pkgname=MCMCtreeR
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Prepare MCMCtree Analyses and Plot Bayesian Divergence Time Analyses Estimates on Trees"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,8 +19,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('429599a7f24105629c41dd7c9f36b992')
-b2sums=('d804249a6244e3104687497c83472ec69411e05f3ce580d11b79b3a0278ed2c27d8b902ca6aa3d87f8da3ec169249ffb135ac99e4db17dc688e144e6b95912d7')
+md5sums=('194f6fef6aafde0a51250b25ad189783')
+b2sums=('b20c2590a0f47b0b1e19631dcc612fb853b26455d3b377252ad124367cd3d9407d97887d70b1f43e987ddf042536b62cab25389d4da30a99fbf57d4d9b435cc6')
 
 build() {
   mkdir build
