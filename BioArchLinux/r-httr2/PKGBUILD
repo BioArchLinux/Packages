@@ -2,7 +2,7 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.1.2
+_pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -53,8 +53,8 @@ optdepends=(
   r-nanonext
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('feb978af6edce15661bc08cf05087fac')
-b2sums=('a725eae4507b2db17cb88c31e3b1ce69be0ec475de054372b2a2e84ce3c9c4e8a2c71c77442995cb6c26ba0a6c49565130d89144179ed08a578aa912feadc543')
+md5sums=('4a73e380d75e987aaa18467b320fbff2')
+b2sums=('3b3d79ea424e8f6138bf9f2750e9a844dae18ad014e1b698a2b9d9e3d3b4c8817c7b901bc846151a361de09b113318c1055fca7bec5ec6caa69a9bae2391e158')
 
 build() {
   mkdir build
