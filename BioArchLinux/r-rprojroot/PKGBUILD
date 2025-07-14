@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rprojroot
-_pkgver=2.0.4
+_pkgver=2.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Finding Files in Project Subdirectories"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -22,8 +22,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4cbcf2cb74cbb76a6065182adf01b051')
-b2sums=('44b81761a084c49834288ff903e5bbddd76d0dad436f80c5515bcb98520c0d02a874e961554d73bd04170e8a96404ac4879439c6e524c82ce8cced5c38e5197d')
+md5sums=('eb1371af6b7dbce9f5d446dbc83c0b4e')
+b2sums=('f0b245fdfde594c2623e7162b6c85dfe27314d2264b3dda9d071454b5d01854b6e2ca295ce37db482523e19315d4265e5700870bc47c04e8915a456459f086ba')
 
 build() {
   mkdir build
