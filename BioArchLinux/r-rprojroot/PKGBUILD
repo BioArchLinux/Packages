@@ -16,7 +16,6 @@ optdepends=(
   r-covr
   r-knitr
   r-lifecycle
-  r-mockr
   r-rlang
   r-rmarkdown
   r-testthat
