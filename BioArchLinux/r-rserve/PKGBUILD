@@ -6,7 +6,7 @@ _pkgver=1.8-13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=3
-pkgdesc="Binary R server"
+pkgdesc="Versatile R Server"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-only WITH openvpn-openssl-exception')
