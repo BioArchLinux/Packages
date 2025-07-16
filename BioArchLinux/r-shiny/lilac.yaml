@@ -6,7 +6,6 @@ repo_depends:
 - r-bslib
 - r-cachem
 - r-commonmark
-- r-crayon
 - r-fastmap
 - r-fontawesome
 - r-glue
@@ -22,6 +21,7 @@ repo_depends:
 - r-sourcetools
 - r-withr
 - r-xtable
+- r-cli
 repo_makedepends:
 - r-coro
 - r-future

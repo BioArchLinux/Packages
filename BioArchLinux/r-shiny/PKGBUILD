@@ -15,7 +15,6 @@ depends=(
   r-bslib
   r-cachem
   r-commonmark
-  r-crayon
   r-fastmap
   r-fontawesome
   r-glue
@@ -31,12 +30,15 @@ depends=(
   r-sourcetools
   r-withr
   r-xtable
+  r-cli
 )
 checkdepends=(
   r-coro
   r-future
   r-ggplot2
   r-testthat
+  r-mirai
+  r-watcher
   ttf-font
 )
 optdepends=(
