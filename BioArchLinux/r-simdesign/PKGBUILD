@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=SimDesign
-_pkgver=2.19.2
+_pkgver=2.20.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Structure for Organizing Monte Carlo Simulation Designs"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -41,8 +41,8 @@ optdepends=(
   r-snow
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b59c830c0c36580475cab04d6a8003c1')
-b2sums=('82539eca81cb552a3ff18faa5b57fbc0ce5d9ecca35de786ab0532e8518d7d713001155afd2168770ac8787f7b8be9528bfefa808a13917a892dbda15f41d0f2')
+md5sums=('cd47645442294ab956622e59cb8f5ac9')
+b2sums=('90f99d5b631e7f43b643728014a1417754e51e7dc98bd5dbb2705abd56c06e6b88316967b6dc37651d2aa77789ee29eab4bb208afeb887b59e3923344e66a2b8')
 
 build() {
   mkdir build
