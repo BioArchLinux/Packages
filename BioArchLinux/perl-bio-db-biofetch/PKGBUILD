@@ -3,7 +3,7 @@
 
 pkgname='perl-bio-db-biofetch'
 pkgver='1.7.3'
-pkgrel=4
+pkgrel=5
 pkgdesc=""
 arch=('any')
 license=('PerlArtistic' 'GPL')
