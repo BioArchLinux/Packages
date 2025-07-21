@@ -37,8 +37,6 @@ checkdepends=(
   r-future
   r-ggplot2
   r-testthat
-  r-mirai
-  r-watcher
   ttf-font
 )
 optdepends=(
@@ -58,6 +56,8 @@ optdepends=(
   r-showtext
   r-testthat
   r-yaml
+  r-mirai
+  r-watcher
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b8a598f6d1289a4cbd338088f119ce75')
