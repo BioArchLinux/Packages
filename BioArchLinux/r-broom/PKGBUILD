@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=broom
-_pkgver=1.0.8
+_pkgver=1.0.9
 pkgname=r-${_pkgname,,}
-pkgver=1.0.8
-pkgrel=2
+pkgver=1.0.9
+pkgrel=1
 pkgdesc='Convert Statistical Objects into Tidy Tibbles'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -108,7 +108,7 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d4698542f6cadba9adbe2013b767226af479bb8374633012316025a137408b44')
+sha256sums=('c39a9bcbce010615d8a2285360bf158def2d9ffda46f7415d12409bf899b6e66')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
