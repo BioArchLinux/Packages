@@ -29,6 +29,7 @@ optdepends=(
   r-leaflet
   r-leaflet.extras
   r-zoo
+  r-r.utils
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('92ba44152b782881848df66f56e86396')
