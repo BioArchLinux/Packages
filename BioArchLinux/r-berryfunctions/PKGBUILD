@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=berryFunctions
-_pkgver=1.22.5
+_pkgver=1.22.13
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Function Collection Related to Plotting and Hydrology"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -32,8 +32,8 @@ optdepends=(
   r-r.utils
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('92ba44152b782881848df66f56e86396')
-b2sums=('a6149ee84eddcc0f1dfc23dfeb5cda154405bd2ede8e6ad04bf223befd4f99ea897ef70f5169747a9e5927d26c55577463655d508e99d9d65a5c4a810474f29f')
+md5sums=('26b1ac0a4f2d65d5d33fa5cd71c75c35')
+b2sums=('83766e5f278c7c56e2c90ef2ec9687570a64e1020acf056d3b39d17e6a2f9d10262677f5ee70ad924a2df54bbc103b1ccc9796df28f067700e31121bb85f08ef')
 
 build() {
   mkdir build
