@@ -16,6 +16,7 @@ depends=(
   freetype2
   r-jsonlite
   r-lifecycle
+  r-base64enc
 )
 makedepends=(
   r-cpp11

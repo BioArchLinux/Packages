@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-jsonlite
 - r-lifecycle
+- r-base64enc
 repo_makedepends:
 - r-cpp11
 - r-testthat
