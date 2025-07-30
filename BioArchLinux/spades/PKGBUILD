@@ -2,33 +2,42 @@
 # Maintainer: alienzj <alienchuj at gmail dot com>
 
 pkgname=spades
-pkgver=4.1.0
+pkgver=4.2.0
 pkgrel=1
 pkgdesc='SPAdes Genome Assembler'
 url='http://cab.spbu.ru/software/spades/'
 arch=('x86_64')
 license=('GPL2')
 depends=(
-  python
+  python3
 )
 makedepends=(
   bzip2
   cmake
   openmp
   zlib
+  ncurses
+  readline
 )
 options=("!lto")
 
 source=(
   "${pkgname}-${pkgver}.tar.gz::https://github.com/ablab/spades/archive/refs/tags/v${pkgver}.tar.gz"
 )
-sha512sums=('2b515d06e5fe1dc6ea1a2ce23302a3c97a344d7f3302710de7f9c7c3a6448b7460cd1d587fba7f32a88bb6a10828a8a4c22bbda9e3aca4da4a43b3b4dba9c1ed')
+sha512sums=('4aef3b113e9033fae857546166d420250ff5c5ca7400c82adfcea9488bfc0256a68448547b2225b9d66f51e27f71853e8e6e9f2c71af38aaee654ad813132ec9')
 
 build() {
+  # ad-hoc fix for spades-4.2.0
+  sed -i "19i#include <cstdint>" ${pkgname}-${pkgver}/src/common/io/binary/binary.hpp
+  sed -i "17i#include <cstdint>" ${pkgname}-${pkgver}/src/common/io/reads/read_stream.hpp
+  sed -i "14i#include <cstdint>" ${pkgname}-${pkgver}/src/common/hmm/hmmmatcher.hpp
+
   cmake -B build -S ${pkgname}-${pkgver}/src \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_SKIP_INSTALL_RPATH=ON \
-    -DCMAKE_BUILD_TYPE=None
+    -DCMAKE_BUILD_TYPE=None \
+    -DZLIB_ENABLE_TESTS=OFF \
+    -DSPADES_BUILD_INTERNAL=OFF
   make -C build
 }
 
