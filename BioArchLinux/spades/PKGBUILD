@@ -3,7 +3,7 @@
 
 pkgname=spades
 pkgver=4.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='SPAdes Genome Assembler'
 url='http://cab.spbu.ru/software/spades/'
 arch=('x86_64')
