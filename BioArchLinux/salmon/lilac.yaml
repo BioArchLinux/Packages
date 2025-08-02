@@ -1,8 +1,11 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: sukanka
-  email: sukanka@askk.cc
-
+  - github: sukanka
+    email: sukanka@askk.cc
+repo_makedepends:
+  - libdivide
+repo_depends:
+  - libgff
 update_on:
   - source: github
     github: COMBINE-lab/salmon
