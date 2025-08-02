@@ -1,7 +1,7 @@
 # maintainer: bipin <kbipinkumar@pm.me>
 pkgname=libdivide
 pkgver=5.2.0
-pkgrel=0
+pkgrel=1
 pkgdesc="A header-only C/C++ library for optimizing integer division."
 arch=('any')
 url="https://libdivide.com/"
