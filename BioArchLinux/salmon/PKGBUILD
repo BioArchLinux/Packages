@@ -26,39 +26,13 @@ sha256sums=('a053fba63598efc4ade3684aa2c8e8e2294186927d4fcdf1041c36edc2aa0871'
 
 prepare() {
   cd "$pkgname-$pkgver"
-  ## retrieve pufferfish sources before build process for patching.
+  ## Fetch and set up pufferfish source for patching prior to build.
   mkdir -p ${srcdir}/"$pkgname-$pkgver"/external
   mv ${srcdir}/pufferfish-salmon-v${pkgver} ${srcdir}/"$pkgname-$pkgver"/external/pufferfish
   export EXTERNAL_DIR=${srcdir}/"$pkgname-$pkgver"/external
   export INSTALL_DIR=${srcdir}/"$pkgname-$pkgver"/external/install
   mkdir -p ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/ProgOpts.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/BooPHF.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/SpinLock.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/Kmer.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/CanonicalKmer.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/string_view.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/CanonicalKmerIterator.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PufferfishBaseIndex.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PufferfishIndex.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PufferfishSparseIndex.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PufferfishLossyIndex.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PufferfishTypes.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/rank9b.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/rank9sel.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/macros.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/select.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/Util.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PairedAlignmentFormatter.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/SelectiveAlignmentUtils.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PuffAligner.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/MemCollector.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/MemChainer.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/CommonTypes.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/SAMWriter.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/PufferfishConfig.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/BulkChunk.hpp ${INSTALL_DIR}/include/pufferfish
-  cp ${EXTERNAL_DIR}/pufferfish/include/BinWriter.hpp ${INSTALL_DIR}/include/pufferfish
+  cp ${EXTERNAL_DIR}/pufferfish/include/*.hpp ${INSTALL_DIR}/include/pufferfish/
   cp -r ${EXTERNAL_DIR}/pufferfish/include/ksw2pp ${INSTALL_DIR}/include/pufferfish
   cp -r ${EXTERNAL_DIR}/pufferfish/include/metro ${INSTALL_DIR}/include/pufferfish
   cp -r ${EXTERNAL_DIR}/pufferfish/include/itlib ${INSTALL_DIR}/include/pufferfish
@@ -68,8 +42,7 @@ prepare() {
   mkdir -p ${INSTALL_DIR}/src/pufferfish
   cp -r ${EXTERNAL_DIR}/pufferfish/src/metro ${INSTALL_DIR}/src/pufferfish
   cp ${EXTERNAL_DIR}/pufferfish/src/rank9b.cpp ${INSTALL_DIR}/src/pufferfish
-  # patch pufferfish sources to be built with gcc>= 15
-  # Source: https://github.com/COMBINE-lab/salmon/issues/988
+  # patch pufferfish sources to be built with gcc>= 15. Source: https://github.com/COMBINE-lab/salmon/issues/988
   patch -p0 < ${srcdir}/patch-external_pufferfish_src_PuffAligner.patch
   patch -p0 < ${srcdir}/patch-external_pufferfish_external_twopaco_graphconstructor_candidateoccurence.patch
   patch -p0 < ${srcdir}/patch-external_pufferfish_external_twopaco_graphconstructor_assemblyedgeconstructor.patch
@@ -87,7 +60,6 @@ build() {
   #        Otherwise it is segfaulting...
 
   cmake -B build \
-    -DNO_IPO:BOOL='TRUE' \
     -DCMAKE_COLOR_MAKEFILE:BOOL='ON' \
     -DCMAKE_INSTALL_PREFIX:PATH='/usr' \
     -DCMAKE_SKIP_RPATH=YES \
