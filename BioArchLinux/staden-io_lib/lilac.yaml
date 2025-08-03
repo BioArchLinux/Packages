@@ -2,7 +2,8 @@ build_prefix: extra-x86_64
 maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
+repo_depends:
+  - htscodecs
 update_on:
   - source: cmd
     cmd: curl -sS https://raw.githubusercontent.com/jkbonfield/io_lib/master/CHANGES | grep 'Version ' | head -n 1 | awk '{print $2}'
-

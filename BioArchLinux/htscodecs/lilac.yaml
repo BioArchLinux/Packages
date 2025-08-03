@@ -1,0 +1,9 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+update_on:
+  - source: github
+    github: samtools/htscodecs
+    use_latest_release: true
+    prefix: v
