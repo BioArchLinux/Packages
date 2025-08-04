@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 pkgname=htscodecs
 pkgver=1.6.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Custom compression for sequencing formats, e.g. CRAM"
 arch=('x86_64')
 url=https://github.com/samtools/htscodecs
