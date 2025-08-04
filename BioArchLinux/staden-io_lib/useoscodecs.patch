@@ -1,0 +1,27 @@
+Description: Use the packaged htscodecs library
+Author: Steffen Moeller <moeller@debian.org>
+Forwarded: not-needed
+Last-Updated: 2020-05-20
+
+--- staden-io-lib.orig/Makefile.am
++++ staden-io-lib/Makefile.am
+@@ -32,7 +32,7 @@
+ AUTOMAKE_OPTIONS = foreign no-dependencies
+ ACLOCAL_AMFLAGS = -I m4
+ 
+-SUBDIRS = htscodecs io_lib progs tests
++SUBDIRS = io_lib progs tests
+ 
+ man_MANS = \
+ 	man/man1/srf_index_hash.1 \
+--- staden-io-lib.orig/io_lib/Makefile.am
++++ staden-io-lib/io_lib/Makefile.am
+@@ -136,6 +136,6 @@
+ 	cram_block_compression.h \
+ 	version.h
+ 
+-libstaden_read_la_CPPFLAGS = -I${top_srcdir} -I${top_srcdir}/htscodecs @LIBCURL_CPPFLAGS@
++libstaden_read_la_CPPFLAGS = -I${top_srcdir} -I/usr/include/htscodecs @LIBCURL_CPPFLAGS@
+ libstaden_read_la_LDFLAGS = -version-info @VERS_CURRENT@:@VERS_REVISION@:@VERS_AGE@ 
+-libstaden_read_la_LIBADD = @LIBZ@ @LIBCURL@ ${top_builddir}/htscodecs/htscodecs/libhtscodecs.la
++libstaden_read_la_LIBADD = @LIBZ@ @LIBCURL@ -lhtscodecs

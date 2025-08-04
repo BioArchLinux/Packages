@@ -4,29 +4,31 @@ pkgname=staden-io_lib
 _pkgname=io_lib
 pkgver=1.15.1
 _pkgver=${pkgver//./-}
-pkgrel=1
+pkgrel=2
 pkgdesc="DNA sequence assembly (Gap4) and editing and analysis tools (Spin)"
 arch=('i686' 'x86_64')
 url="https://github.com/jkbonfield/io_lib"
-license=('BSD')
-depends=('curl')
-conflicts=('htscodecs')
-provides=('htscodecs')
-source=($pkgname-$pkgver.tar.gz::$url/releases/download/io_lib-$_pkgver/io_lib-$pkgver.tar.gz)
-sha256sums=('4e6f08265bee63211bb20feb4dc03993e57b447b90dc84a4c272cf1aed954e4f')
+license=('BSD-3-Clause')
+depends=('curl' 'htscodecs' 'zlib' 'libdeflate' 'bzip2' 'xz' 'glibc' 'bash')
+source=($pkgname-$pkgver.tar.gz::$url/releases/download/io_lib-$_pkgver/io_lib-$pkgver.tar.gz
+    'useoscodecs.patch')
+sha256sums=('4e6f08265bee63211bb20feb4dc03993e57b447b90dc84a4c272cf1aed954e4f'
+            '94127b4019ed6b0c3c4ad16464b82abde7e52faa5b49915a216a76c37b0be786')
+
+prepare() {
+  cd "$srcdir/$_pkgname-$pkgver"
+  patch -p1 < ${srcdir}/useoscodecs.patch
+}
 
 build() {
-  cd "$srcdir/$_pkgname-$pkgver/htscodecs"
-  autoreconf --force --install -v
-  ./configure --prefix=/usr
-
   cd "$srcdir/$_pkgname-$pkgver"
   autoreconf --force --install -v
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr --with-libdeflate=/usr/lib
   make CFLAGS=-g
 }
 
 package() {
   cd "$srcdir/$_pkgname-$pkgver"
   make DESTDIR="$pkgdir" install
+  install -Dm644 COPYRIGHT "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
