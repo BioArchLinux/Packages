@@ -6,6 +6,8 @@ repo_makedepends:
   - libdivide
 repo_depends:
   - libgff
+  - staden-io_lib
+  - htscodecs
 update_on:
   - source: github
     github: COMBINE-lab/salmon
