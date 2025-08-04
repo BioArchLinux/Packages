@@ -14,3 +14,4 @@ repo_depends:
   - staden-io_lib
   - tklib
   - iwidgets
+  - htscodecs
