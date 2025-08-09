@@ -3,9 +3,8 @@
 
 pkgname=jellyfish
 pkgver=2.3.1
-pkgrel=4
+pkgrel=5
 pkgdesc="A fast multi-threaded k-mer counter. https://doi.org/10.1093/bioinformatics/btr011"
-
 # Note: according to the README, "Support for 32-bits platform has not been
 # tested."
 arch=("x86_64")
@@ -22,22 +21,29 @@ makedepends=(
         'bash'
         'python-setuptools'
         'samtools'
-        'yaggo')
+        'yaggo'
+        'gettext'
+        'autoconf-archive'
+        'automake'
+        'autoconf'
+        'libtool')
 
 source=("https://github.com/gmarcais/Jellyfish/releases/download/v${pkgver}/jellyfish-${pkgver}.tar.gz"
         "python3.patch"
-        "fix_tests.patch")
+        "fix_tests.patch"
+        "autoconf_combined_fix.patch")
 sha256sums=('ee032b57257948ca0f0610883099267572c91a635eecbd88ae5d8974c2430fcd'
             'e5c2ee91cb1cc82055471198da4f01fea2f16f04ce735f364875fc58b36381da'
-            '997945c89044702f88caa6aa2b215108dc28217d2c4c59d1b59b959b2b46bcc6')
+            '997945c89044702f88caa6aa2b215108dc28217d2c4c59d1b59b959b2b46bcc6'
+            '5597ebeea7c3741e22dc8a4bd78fff3edd116a73ff633684ae2792119cba29a1')
 
 prepare() {
     cp *.patch "${pkgname}-${pkgver}"
     cd "${pkgname}-${pkgver}"
     patch -p1 < python3.patch
     patch -p1 < fix_tests.patch
-    autoreconf -i
-    autoupdate
+    patch -p1 < autoconf_combined_fix.patch
+    autoreconf -fiv
 }
 
 build() {
@@ -45,7 +51,7 @@ build() {
     unset PERL5LIB PERL_MM_OPT PERL_LOCAL_LIB_ROOT
     export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL=--skipdeps
     export PERL_EXT_LIB=$(perl -V:vendorarch | cut -d"'" -f2 )
-    ./configure --prefix=/usr --sysconfdir=/etc --enable-htslib --enable-python-binding=sys --enable-perl-binding
+    ./configure --prefix=/usr --sysconfdir=/etc --enable-htslib --enable-python-binding=sys --enable-perl-binding --enable-shared=yes
     make
 }
 
