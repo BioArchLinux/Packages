@@ -1,7 +1,7 @@
 # maintainer: bipin <kbipinkumar@pm.me>
 pkgname=libgff
 pkgver=2.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="GFF/GTF parsing from gffread as a library"
 arch=(x86_64)
 url="https://github.com/COMBINE-lab/libgff"
