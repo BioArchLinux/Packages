@@ -8,10 +8,8 @@ repo_depends:
 - r-ggplot2
 - r-gridextra
 - r-matrixstats
-- r-miniui
 - r-plyr
 - r-qgam
-- r-shiny
 - r-viridis
 repo_makedepends:
 - r-hexbin
