@@ -29,6 +29,8 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-webshot2
+  r-shiny
+  r-miniui
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8b1f6454bc0d2d2a91f638ed6a25cfa6')
