@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=AnVIL
-_pkgver=1.20.2
+_pkgver=1.20.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -40,8 +40,8 @@ optdepends=(
   r-lifecycle
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('47ccdd01ab9574ef73f4b7b5ba364642')
-b2sums=('e0fb864d09e53af51b206361eeb6d767c3802ed23935fa88a29a278ccf338f5ce616e111f6ca35844d5d381ee56eb31d45d3f8d899bf17f0305c483cd215cb9c')
+md5sums=('3a80eae20292242f4f8609b3b5009a1e')
+b2sums=('b768cb192f7dacc6aed39c06fc2df60dbff1166f2c17fb06aff568e5199bd6d1c16e64d309476565dddc1dfa2d7e876b3237c5b6506fd35bd9e45043d0c29d21')
 
 build() {
   mkdir build
