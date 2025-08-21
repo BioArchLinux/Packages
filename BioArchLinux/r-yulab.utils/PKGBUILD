@@ -14,13 +14,13 @@ depends=(
   r-cli
   r-digest
   r-fs
+  r-rappdirs
   r-rlang
 )
 optdepends=(
   r-httr2
   r-jsonlite
   r-openssl
-  r-rappdirs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('14a3b22a16fbe3c822ec2d14d9535254')
