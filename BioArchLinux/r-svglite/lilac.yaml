@@ -4,6 +4,11 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-systemfonts
+- r-base64enc
+- r-lifecycle
+- r-rlang
+- r-textshaping
+- r-cli
 repo_makedepends:
 - r-cpp11
 - r-fontquiver

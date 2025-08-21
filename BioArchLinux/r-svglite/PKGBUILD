@@ -13,6 +13,11 @@ license=('GPL-2.0-or-later')
 depends=(
   libpng
   r-systemfonts
+  r-base64enc
+  r-lifecycle
+  r-rlang
+  r-textshaping
+  r-cli
 )
 makedepends=(
   r-cpp11
