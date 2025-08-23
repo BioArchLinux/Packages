@@ -3,7 +3,7 @@
 pkgname=allelecount
 _pkgname=alleleCount
 pkgver=4.3.0
-pkgrel=3
+pkgrel=4
 pkgdesc="program for estimating the NGS copy number" 
 arch=('x86_64')
 url="http://cancerit.github.io/alleleCount/"
