@@ -6,6 +6,7 @@ repo_depends:
 - r-ggplot2
 - r-ibreakdown
 - r-ingredients
+- r-kernelshap
 repo_makedepends:
 - r-caret
 - r-gower
