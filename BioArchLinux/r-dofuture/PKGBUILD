@@ -1,6 +1,6 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
-_pkgname=dofuture
+_pkgname=doFuture
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
