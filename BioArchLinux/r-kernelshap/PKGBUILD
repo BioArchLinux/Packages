@@ -1,0 +1,38 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+
+_pkgname=kernelshap
+_pkgver=0.9.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Kernel SHAP"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-dofuture
+  r-foreach
+)
+checkdepends=(
+)
+optdepends=(
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('4fa31d0a1e4efd2451d8e5ac9329f8c6')
+b2sums=('7bbccbbacac7140bb26d889779e55c9fe24667d8687f0c9b5308fbdea4c4295cf83a01cdedd0010b3077b6287c2dadfff2119bdc0eb9bbe76902de177b287aaa')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
