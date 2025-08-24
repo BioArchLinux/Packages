@@ -1,0 +1,43 @@
+# Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
+
+_pkgname=dofuture
+_pkgver=1.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Use Foreach to Parallelize via the Future Framework"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LGPL-2.0-or-later')
+depends=(
+  r-future.apply
+  r-globals
+  r-iterators
+)
+checkdepends=(
+  r-foreach
+  r-future
+)
+optdepends=(
+  r-dorng
+  r-markdown
+  r-r.rsp
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('57d79b95af825a7221e2a02146bdacd6')
+b2sums=('aad04af2fced8401a44896892d599c8054a416fcd82f5055868ea9669bf9dd3cd5114c5fa240b5d303d4bb6e40be80a04b61976771bea507a3cb3b8325bcae19')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

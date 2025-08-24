@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+repo_depends:
+- r-future.apply
+- r-globals
+- r-iterators
+repo_makedepends:
+- r-foreach
+- r-future
+- r-dorng
+- r-markdown
+- r-r.rsp
+update_on:
+- source: rpkgs
+  pkgname: doFuture
+  repo: cran
+  md5: true
+- alias: r
