@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=scoringutils
-_pkgver=2.1.1
+_pkgver=2.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -28,8 +28,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('2bd4913c2002d7f4abae1fa49ad36215')
-b2sums=('587401a4dc8ef6b002fffebe811e43f3cf9271e3b741e616b3efbecc9a0fbacba45657063448bea8a9b177d9f7e94bf4ee2c6d768591f6643ae2e0a74a1ee539')
+md5sums=('b473cd8362f2ce4c63a4cf0f02e4038a')
+b2sums=('16ee2db67c37d373bb72f2e1dc1d5942f00b40fc580d61891909d25f68045d42846ddf090fdbdb0038a2e229c2283ed4adc3bc4eca0e6555ae6e8f357d79dfdb')
 
 build() {
   mkdir build
