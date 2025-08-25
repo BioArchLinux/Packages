@@ -4,8 +4,8 @@
 
 _pkgname=lilac
 pkgname=$_pkgname
-pkgver=2025.08.13
-pkgrel=3
+pkgver=2025.08.25
+pkgrel=1
 pkgdesc='The build bot for bioarchlinux'
 arch=(any)
 url='https://github.com/archlinuxcn/lilac'
