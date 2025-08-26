@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rprojroot
-_pkgver=2.1.0
+_pkgver=2.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -22,8 +22,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('eb1371af6b7dbce9f5d446dbc83c0b4e')
-b2sums=('f0b245fdfde594c2623e7162b6c85dfe27314d2264b3dda9d071454b5d01854b6e2ca295ce37db482523e19315d4265e5700870bc47c04e8915a456459f086ba')
+md5sums=('307fef4f932acc1d8660a857e44d5fb7')
+b2sums=('b725a4825729f00fb6e0ca9bb7998f43360d8ccf3a9547389f209a122b83800578f32c758c50d0c27a9eb87e0bf64b130a6f36f71c543f15bd7aee53d76e37b3')
 
 build() {
   mkdir build
