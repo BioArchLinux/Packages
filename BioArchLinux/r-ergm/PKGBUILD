@@ -2,7 +2,7 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=ergm
-_pkgver=4.9.0
+_pkgver=4.9.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -40,8 +40,8 @@ optdepends=(
   r-networklite
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b0fba8ffdbeaa1418579ae1a9406662d')
-b2sums=('f10086ab2a4db87c1d6c42e395f0506273768af8b55883e2575688c6fa45334ce39664d1a40837d22e420162c1c4fd82be2d8cd4b5136a37720c47d875b0acf5')
+md5sums=('9a7f20e9897f9e78abcd52a1bbcd374c')
+b2sums=('2251724b573eac4fb1b968690619d1ff14f68ea12ad3163e0d48515485efe2ab6687971a539118f2a906fa5981191be98e8f262641fd6249ebaaee681785a92b')
 
 build() {
   mkdir build
