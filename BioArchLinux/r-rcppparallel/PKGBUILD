@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=RcppParallel
-_pkgver=5.1.10
+_pkgver=5.1.11
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Parallel Programming Tools for 'Rcpp'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -29,9 +29,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-build.patch")
-md5sums=('1e24c7f7cf5830a2c55eea9efd6a261f'
+md5sums=('3aba6e09c5ce6192fd4ff760174235dd'
          '9894f7e5be3b502da1e300eba480a3d3')
-b2sums=('afc49153954d09928cbbc2cb36650515d4c97e8e7f3b17c1c454edde08de9caffbaf41ddcdba8328d0817a2fb79f7e6b3f6e8d06107f07c0c44408f4051b3c07'
+b2sums=('76f084a2732db190ee6ac9abcb88451d57c4afeca5d4bc65d7aae3c29017103d04529f56d866e37e45b2b6ee1da28c8c3ebd7f57ef2213a59b32fc2db46c5294'
         '25098be76c1f497064a7ad783ab97ea9048b5434120af96be3694a1bc586e7592c1f2f7e8ad3b25907fcba78e31f8d131b4d0464a3219c11382375993eb84957')
 
 prepare() {
