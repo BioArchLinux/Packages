@@ -6,9 +6,9 @@ repo_depends:
 - r-future.apply
 - r-globals
 - r-iterators
-repo_makedepends:
-- r-foreach
 - r-future
+- r-foreach
+repo_makedepends:
 - r-dorng
 - r-markdown
 - r-r.rsp

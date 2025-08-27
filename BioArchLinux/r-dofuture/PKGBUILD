@@ -8,15 +8,15 @@ pkgrel=1
 pkgdesc="Use Foreach to Parallelize via the Future Framework"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('LGPL-2.0-or-later')
+license=('LGPL-2.1-or-later')
 depends=(
+  r-foreach
+  r-future
   r-future.apply
   r-globals
   r-iterators
 )
 checkdepends=(
-  r-foreach
-  r-future
 )
 optdepends=(
   r-dorng
