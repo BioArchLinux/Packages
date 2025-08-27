@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=RcppParallel
-_pkgver=5.1.11
+_pkgver=5.1.11-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -29,9 +29,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-build.patch")
-md5sums=('3aba6e09c5ce6192fd4ff760174235dd'
+md5sums=('82cb606990daa31219471526f307336f'
          '9894f7e5be3b502da1e300eba480a3d3')
-b2sums=('76f084a2732db190ee6ac9abcb88451d57c4afeca5d4bc65d7aae3c29017103d04529f56d866e37e45b2b6ee1da28c8c3ebd7f57ef2213a59b32fc2db46c5294'
+b2sums=('6ddd9d362328e0ba0c0206d7c469aa7792ab8e49f99e4da4bf5eef3bac4caec03dca9173a281e713d35b0622ee1ed44c3072507b438f7699cbae0d5790c26ee2'
         '25098be76c1f497064a7ad783ab97ea9048b5434120af96be3694a1bc586e7592c1f2f7e8ad3b25907fcba78e31f8d131b4d0464a3219c11382375993eb84957')
 
 prepare() {
