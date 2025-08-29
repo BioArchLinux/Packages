@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=DESeq2
-_pkgver=1.48.1
+_pkgver=1.48.2
 pkgname=r-${_pkgname,,}
-pkgver=1.48.1
+pkgver=1.48.2
 pkgrel=1
 pkgdesc='Differential gene expression analysis based on the negative binomial distribution'
 arch=('x86_64')
@@ -45,7 +45,7 @@ optdepends=(
   r-vsn
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('38e8c5bae3d6a1f29c7e9f7d98d73b8908192cb28c571515158a4be9d39c65be')
+sha256sums=('53d55c0dd10618a289525526a5eb91c507ffd863906713e048f1fc9ab2ed4fc8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
