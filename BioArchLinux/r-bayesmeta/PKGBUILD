@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=bayesmeta
-_pkgver=3.4
+_pkgver=3.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Bayesian Random-Effects Meta-Analysis and Meta-Regression"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -23,8 +23,8 @@ optdepends=(
   r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9b3352a1d31cbe5feaf87267232d0d28')
-b2sums=('a8963d075d2cbf78823aadd3b6610d66fe8a49863ed0bf6927865b35456e0282f7f7db275da3194a6af479b6c3b89819fe520c3e4d06cb788a1e3d98f23b409b')
+md5sums=('99a335d418cec9acf6ff0e42250f8257')
+b2sums=('7d2748e470955f0ac9a01faff9dfd15082a62d94aca74c83dac66138bb46c6b210739fd52ce8de58293c271ab6247ae388e37257438e85809b33897b89cb7c17')
 
 build() {
   mkdir build
