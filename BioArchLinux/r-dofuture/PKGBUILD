@@ -32,7 +32,7 @@ build() {
   R CMD INSTALL -l build "$_pkgname"
 }
 
-check() {
+_check() {
   cd "$_pkgname/tests"
   R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
