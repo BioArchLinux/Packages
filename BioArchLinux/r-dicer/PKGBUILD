@@ -13,8 +13,7 @@ depends=(
   r-abind
   r-assertthat
   r-clue
-  r-clustersim
-  r-clv
+  r-clustercrit
   r-clvalid
   r-dplyr
   r-ggplot2
@@ -22,7 +21,7 @@ depends=(
   r-klar
   r-magrittr
   r-mclust
-  r-nmf
+  r-pheatmap
   r-purrr
   r-rankaggreg
   r-rcpp
