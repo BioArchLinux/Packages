@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-dofuture
 - r-foreach
+repo_makedepends:
+- r-testthat
 update_on:
 - source: rpkgs
   pkgname: kernelshap
