@@ -50,6 +50,7 @@ optdepends=(
   r-kernlab
   r-knitr
   r-kohonen
+  r-nmf
   r-pander
   r-polca
   r-progress
