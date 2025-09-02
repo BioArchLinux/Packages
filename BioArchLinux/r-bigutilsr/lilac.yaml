@@ -7,11 +7,13 @@ repo_depends:
 - r-bigparallelr
 - r-nabor
 - r-rcpp
+- r-rcpparmadillo
 - r-robustbase
 - r-rspectra
 repo_makedepends:
 - r-gmedian
 - r-mvtnorm
+- r-rcppeigen
 - r-rrcov
 - r-testthat
 update_on:
