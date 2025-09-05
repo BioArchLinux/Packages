@@ -11,12 +11,11 @@ pkgrel=3
 pkgdesc="A Wrapper of the JavaScript Library 'DataTables'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only AND MIT AND Apache-2.0')
+license=('MIT')
 depends=(
   r-crosstalk
   r-htmltools
   r-htmlwidgets
-  r-httpuv
   r-jquerylib
   r-jsonlite
   r-magrittr

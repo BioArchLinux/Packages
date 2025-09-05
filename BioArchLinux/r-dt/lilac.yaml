@@ -6,7 +6,6 @@ repo_depends:
 - r-crosstalk
 - r-htmltools
 - r-htmlwidgets
-- r-httpuv
 - r-jquerylib
 - r-jsonlite
 - r-magrittr
