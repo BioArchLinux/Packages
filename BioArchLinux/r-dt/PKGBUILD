@@ -27,6 +27,7 @@ checkdepends=(
 optdepends=(
   r-bslib
   r-future
+  r-httpuv
   r-knitr
   r-rmarkdown
   r-shiny
