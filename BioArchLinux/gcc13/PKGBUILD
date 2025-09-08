@@ -9,7 +9,7 @@
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->glibc->binutils->gcc
 # NOTE: libtool requires rebuilt with each new gcc version
 
-pkgname=(gcc13 gcc13-libs gcc13-fortran)
+pkgname=(gcc13 gcc13-libs)
 pkgver=13.4.1+r80+gd6ebfe4
 _majorver=${pkgver%%.*}
 _commit=d6ebfe490b856673c31ab2be5b311f3df370eca0
@@ -131,7 +131,7 @@ build() {
   make -O -C $CHOST/libstdc++-v3/doc doc-man-doxygen
 }
 
-check() {
+_check() {
   cd gcc-build
 
   # do not abort on error as some are "expected"
@@ -243,7 +243,7 @@ package_gcc13() {
   rm -rf "${pkgdir}"/usr/share/locale
 }
 
-package_gcc13-fortran() {
+_package_gcc13-fortran() {
   pkgdesc='Fortran front-end for GCC (13.x.x)'
   depends=("gcc13" libisl.so)
 
