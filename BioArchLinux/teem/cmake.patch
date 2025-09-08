@@ -12,7 +12,7 @@ index 348845b..04862d9 100644
  # CMake files required to build client applications that use Teem.
  SET(Teem_BUILD_SETTINGS_FILE "@Teem_CV_BUILD_SETTINGS_FILE@")
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index cba73d0..f60399f 100644
+index cba73d0..7c532f8 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -448,8 +448,8 @@ ENDIF(BUILD_TESTING)
@@ -42,10 +42,14 @@ index cba73d0..f60399f 100644
  SET(Teem_CV_BUILT_LIBRARIES teem) # The libraries built by teem.  Currently we only build the mega library.
  
  CONFIGURE_FILE("${Teem_SOURCE_DIR}/CMake/TeemConfig.cmake.in"
-@@ -513,5 +513,5 @@ INSTALL(FILES
+@@ -511,7 +511,7 @@ INSTALL(FILES ${Teem_INSTALLED_HEADER_FILES}
+ INSTALL(FILES
+   "${Teem_BINARY_DIR}/CMake/TeemConfig.cmake"
    "${Teem_SOURCE_DIR}/CMake/TeemUse.cmake"
-   "${Teem_BINARY_DIR}/TeemBuildSettings.cmake"
-   "${Teem_BINARY_DIR}/TeemLibraryDepends.cmake"
+-  "${Teem_BINARY_DIR}/TeemBuildSettings.cmake"
+-  "${Teem_BINARY_DIR}/TeemLibraryDepends.cmake"
 -  DESTINATION lib${EXTRA_INSTALL_PATH}
++#  "${Teem_BINARY_DIR}/TeemBuildSettings.cmake"
++#  "${Teem_BINARY_DIR}/TeemLibraryDepends.cmake"
 +  DESTINATION lib${EXTRA_INSTALL_PATH}/cmake/teem
    )

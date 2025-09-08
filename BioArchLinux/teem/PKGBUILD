@@ -14,7 +14,7 @@ source=(
     "cmake.patch"
 )
 sha256sums=('a01386021dfa802b3e7b4defced2f3c8235860d500c1fa2f347483775d4c8def'
-            'a3a337a2b9f854be8740d7b50ba338202b8089954001dc7ca04d4cc66edc7094')
+            '166c625480bd6356def2777d7b4ad88d19760888561d48f20b37f1694cd42973')
 
 prepare() {
     cd "$srcdir/$pkgname-$pkgver-src"
