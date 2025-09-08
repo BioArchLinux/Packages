@@ -11,6 +11,7 @@ update_on:
     github: Slicer/Slicer
     use_max_tag: true
     prefix: 'v'
+time_limit_hours: 6
 repo_makedepends:
   - gcc13: gcc13
 repo_depends:
