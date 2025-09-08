@@ -10,3 +10,4 @@ update_on:
   - source: aur
     aur: gcc13
     strip_release: true
+time_limit_hours: 6
