@@ -72,7 +72,8 @@ prepare() {
     --categories "Graphics;MedicalSoftware;Science;" \
     --exec "Slicer" \
     --icon "${_pkgname}" \
-    --pkgdesc "${pkgdesc}"
+    --pkgdesc "${pkgdesc}" \
+    --custom="StartupWMClass=Slicer"
 }
 
 build() {
