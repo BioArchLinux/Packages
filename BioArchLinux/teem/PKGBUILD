@@ -2,7 +2,7 @@
 # Contributor: bartus <szczepaniak.bartek+github@gmail.com>
 pkgname=teem
 pkgver=1.11.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Group of libraries for processing scientific raster data.'
 arch=('x86_64')
 url='http://teem.sourceforge.net/index.html'
