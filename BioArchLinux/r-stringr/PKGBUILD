@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=stringr
-_pkgver=1.5.1
+_pkgver=1.5.2
 pkgname=r-${_pkgname,,}
-pkgver=1.5.1
-pkgrel=3
+pkgver=1.5.2
+pkgrel=1
 pkgdesc='Simple, Consistent Wrappers for Common String Operations'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -28,7 +28,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('a4adec51bb3f04214b1d8ef40d3a58949f21b1497cbeaf2ba552e0891eef45de')
+sha256sums=('d410ecb4f19c3fd07bb32142d5d0286e2f19f1533ba86243776326a4e73837a3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
