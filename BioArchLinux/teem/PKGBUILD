@@ -7,6 +7,7 @@ pkgdesc='Group of libraries for processing scientific raster data.'
 arch=('x86_64')
 url='http://teem.sourceforge.net/index.html'
 license=('LGPL-2.1-or-later')
+depends=('libpng')
 makedepends=('cmake' 'make')
 source=(
     "https://sourceforge.net/projects/teem/files/teem/${pkgver}/teem-${pkgver}-src.tar.gz/download"
