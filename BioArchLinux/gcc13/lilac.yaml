@@ -13,4 +13,3 @@ update_on:
 time_limit_hours: 6
 repo_depends:
   - gcc13-libs
-  - gcc13
