@@ -11,3 +11,5 @@ update_on:
     aur: gcc13
     strip_release: true
 time_limit_hours: 6
+repo_depends:
+  - gcc13-lib
