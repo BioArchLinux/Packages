@@ -11,6 +11,8 @@ update_on:
     github: Slicer/Slicer
     use_max_tag: true
     prefix: 'v'
-repo_depends:
+repo_makedepends:
   - gcc13: gcc13
+repo_depends:
   - gcc13: gcc13-libs
+  - teem
