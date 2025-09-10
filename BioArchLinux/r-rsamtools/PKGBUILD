@@ -38,6 +38,7 @@ optdepends=(
   r-shortread
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
   r-txdb.hsapiens.ucsc.hg18.knowngene
+  r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a32cb270809cd4e3dc81c1b233508943')
