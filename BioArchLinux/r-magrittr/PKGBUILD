@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=magrittr
-_pkgver=2.0.3
+_pkgver=2.0.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=1
 pkgdesc="A Forward-Pipe Operator for R"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -20,8 +20,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('86a110ed23536ebe26c51ff90f2a1435')
-b2sums=('f4ebee352cc6e3de831d7a596d7f44b94bc77a19ad110fe53d6cb7d872bd71c0c83da7b6fad8063823fef6e42a12827b01cd2c5ce77b4e274a3abbcf68a0e772')
+md5sums=('8c3aa6cd19f9edd5d144a7e54fe1b359')
+b2sums=('3324d54f49929d4a8b20ebacbed04042e24bc5c7916bd09aa52257b826e333645c8df8f70fb3631d184993c486f0d67523c29412861208fbe42f3ebb9f6d909d')
 
 build() {
   mkdir build
