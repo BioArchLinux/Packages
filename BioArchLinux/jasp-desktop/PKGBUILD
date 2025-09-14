@@ -55,10 +55,6 @@ sha256sums=('7c0e0fdd6a28ddd484ccd39069da6cb20e03547d2d8ec14b69df5f05cabfa0b2'
 _add_libs() {
     local JASP_LIBS lib
     JASP_LIBS=(
-        # base
-        "jaspBase"
-        "jaspGraphs"
-        "jaspTools"
         # common
         "jaspDescriptives"
         "jaspTTests"
@@ -124,7 +120,7 @@ prepare() {
     sed -i 's|set(R_CPP_INCLUDES_LIBRARY.*|set(R_CPP_INCLUDES_LIBRARY /usr/lib/R/library)|g' Tools/CMake/R.cmake R-Interface/CMakeLists.txt
 
     # Do NOT install modules here, they are listed in dependencies
-    # find Modules/ -name '*.in' -print0 | xargs -0 sed -i '1,$d;1a print("I am OK!")'
+    find Modules/ -name '*.in' -print0 | xargs -0 sed -i '1,$d;1a TRUE'
 }
 
 build() {
