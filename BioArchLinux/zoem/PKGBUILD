@@ -14,9 +14,9 @@ license=('GPL-2.0-only')
 makedepends=('cimfomfa')
 options=('makeflags')
 source=("https://micans.org/zoem/src/${pkgbase}-${pkgver/./-}.tar.gz"
-    "zoem-gcc15-posix-v2.patch")
+    "zoem-gcc15-posix-v2.patch::https://github.com/micans/zoem/pull/7.diff")
 sha256sums=('370efc7f999572888f4e722cbff40efba395a5435f192e734e7ff87810a68768'
-            'c9417239c2881c29e3567cef36ea1a20f48fcda206b0f69306bbd2b1452139f6')
+            '6a6a7275cdc0873703ef99d18ee6edb11fdb1c1beb31b4cd99e7206bd4c38202')
 
 prepare() {
   cd "$srcdir"
