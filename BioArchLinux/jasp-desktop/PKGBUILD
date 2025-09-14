@@ -161,6 +161,9 @@ package() {
         ${pkgdir}/usr/lib/jasp-desktop/bin/JASPEngine
     sed -i "s|^Exec.*|Exec=jasp %f|g" \
         ${pkgdir}/usr/share/applications/org.jaspstats.JASP.desktop
+    pushd ${pkgdir}/usr/share/applications/
+    mv org.jaspstats.JASP.desktop org.jasp-stats.JASP.desktop
+    popd
 
     _add_libs
     rm -rf ${pkgdir}/usr/lib/jasp-desktop/{renv-root,renv-cache,bin/org.jaspstats.JASP}
