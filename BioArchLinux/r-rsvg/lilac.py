@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "librsvg2",
+        expect_systemrequirements = "librsvg2 (at least version 2.52)",
     )
 
 def post_build():
