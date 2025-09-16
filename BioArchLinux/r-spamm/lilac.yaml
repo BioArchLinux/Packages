@@ -4,7 +4,8 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-backports
-- r-crayon
+- r-cli
+- r-fmesher
 - r-geometry
 - r-gmp
 - r-minqa
@@ -13,6 +14,7 @@ repo_depends:
 - r-pbapply
 - r-proxy
 - r-rcpp
+- r-reformulas
 - r-roi
 repo_makedepends:
 - r-rcppeigen

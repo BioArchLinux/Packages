@@ -12,7 +12,8 @@ license=('CECILL-2.0')
 depends=(
   gsl
   r-backports
-  r-crayon
+  r-cli
+  r-fmesher
   r-geometry
   r-gmp
   r-minqa
@@ -21,6 +22,7 @@ depends=(
   r-pbapply
   r-proxy
   r-rcpp
+  r-reformulas
   r-roi
 )
 makedepends=(
