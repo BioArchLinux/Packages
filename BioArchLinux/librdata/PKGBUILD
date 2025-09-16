@@ -1,26 +1,26 @@
 # Maintainer: sukanka <su975853527 [AT] gmail.com>
 
-pkgname=librdata
+pkgname=librdata-git
+_pkgname=librdata
 pkgver=0.1.0.r125.33bd276
-_commit=33bd276ec
 pkgrel=1
 pkgdesc="Read and write R data frames from C"
 arch=("x86_64" "aarch64")
 url="https://github.com/WizardMac/librdata"
 license=("MIT")
 depends=('bzip2' 'zlib' 'glibc' 'xz')
+provides=($_pkgname)
 makedepends=(make autoconf git gettext)
-source=("git+${url}.git#commit=${_commit}"
-)
-sha512sums=('e167d81e9304b6609c881787539ff790a0943eed123b407bc43453e9da6923acc7c383c49a1fe4e64ea053ef97cf58d54e90431cab77a2791d95003a88757276')
+source=("git+${url}.git")
+sha512sums=('SKIP')
 
 
 pkgver() {
-    cd ${srcdir}/${pkgname}
+    cd ${srcdir}/${_pkgname}
     printf "0.1.0.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
 }
 build() {
-    cd ${srcdir}/${pkgname}
+    cd ${srcdir}/${_pkgname}
     autoreconf -fvi -I /usr/share/gettext/m4
     ./configure --prefix=/usr
     make
@@ -28,7 +28,7 @@ build() {
 }
 
 package() {
-    cd ${srcdir}/${pkgname}
+    cd ${srcdir}/${_pkgname}
     make install DESTDIR="${pkgdir}"
-    install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${_pkgname}/LICENSE"
 }
