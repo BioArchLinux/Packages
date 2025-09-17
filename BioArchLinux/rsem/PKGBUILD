@@ -3,7 +3,7 @@
 pkgname=rsem
 _pkgname=${pkgname^^}
 pkgver=1.3.3
-pkgrel=5
+pkgrel=6
 pkgdesc="Accurate quantification of gene and isoform expression from RNA-Seq data by Expectation-Maximization"
 arch=('x86_64')
 url="http://deweylab.github.io/RSEM/"
