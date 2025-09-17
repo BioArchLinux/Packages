@@ -9,8 +9,6 @@ repo_depends:
 - r-rcppeigen
 - r-testthat
 - r-bh
-repo_makedepends:
-- r-bh
 update_on:
 - source: rpkgs
   pkgname: EBSeq

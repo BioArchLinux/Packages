@@ -18,9 +18,6 @@ depends=(
   r-testthat
   r-bh
 )
-makedepends=(
-  r-bh
-)
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('31e2325303d52aadc8a034eec7cab8cd')
 b2sums=('d913d31bff9b7037fc65f1d4a2bcae6d3755b87cbe78f18d48fea23302e602e850285cdda1c33004ef397631ad5f0ec79248ccccef9e576f53ffcb25c6d4df70')
