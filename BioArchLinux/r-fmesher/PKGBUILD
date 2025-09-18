@@ -1,0 +1,49 @@
+# system requirements: C++17
+# Maintainer: sukanka <su975853527@gmail.com>
+
+_pkgname=fmesher
+_pkgver=0.5.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Triangle Meshes and Related Geometry Tools'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MPL2')
+depends=(
+  r
+  r-dplyr
+  r-lifecycle
+  r-rcpp
+  r-rlang
+  r-sf
+  r-splancs
+  r-tibble
+  r-withr
+)
+optdepends=(
+  r-geometry
+  r-ggplot2
+  r-gsl
+  r-knitr
+  r-patchwork
+  r-rgl
+  r-rmarkdown
+  r-sp
+  r-terra
+  r-testthat
+  r-tidyterra
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('e00e8e905c68c9a017e4a343ae8d0f73')
+sha256sums=('7c1bcb1191cd807a9fdfa15d1a2c25548e32caec5c6a458a840607bfa667ebe7')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
