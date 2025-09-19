@@ -16,6 +16,8 @@ depends=(
 optdepends=(
   r-calibrator
   r-emulator
+  r-testthat
+  r-hypergeo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('eb083f4e62ee749a5eec9febb353a49f')
