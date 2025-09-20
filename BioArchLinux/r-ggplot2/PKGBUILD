@@ -17,13 +17,12 @@ url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r-cli
-  r-glue
   r-gtable
   r-isoband
   r-lifecycle
   r-rlang
+  r-s7
   r-scales
-  r-tibble
   r-vctrs
   r-withr
 )
@@ -39,6 +38,7 @@ checkdepends=(
   ttf-font
 )
 optdepends=(
+  r-broom
   r-covr
   r-dplyr
   r-ggplot2movies
@@ -54,6 +54,7 @@ optdepends=(
   r-ragg
   r-rcolorbrewer
   r-rmarkdown
+  r-roxygen2
   r-sf
   r-svglite
   r-testthat

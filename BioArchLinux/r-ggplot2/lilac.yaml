@@ -4,13 +4,12 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
-- r-glue
 - r-gtable
 - r-isoband
 - r-lifecycle
 - r-rlang
+- r-s7
 - r-scales
-- r-tibble
 - r-vctrs
 - r-withr
 repo_makedepends:
