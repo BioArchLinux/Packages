@@ -58,6 +58,7 @@ optdepends=(
   r-sf
   r-svglite
   r-testthat
+  r-tibble
   r-vdiffr
   r-xml2
 )
