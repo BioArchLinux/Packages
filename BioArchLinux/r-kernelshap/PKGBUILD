@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=kernelshap
-_pkgver=0.9.0
+_pkgver=0.9.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Kernel SHAP"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -20,8 +20,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4fa31d0a1e4efd2451d8e5ac9329f8c6')
-b2sums=('7bbccbbacac7140bb26d889779e55c9fe24667d8687f0c9b5308fbdea4c4295cf83a01cdedd0010b3077b6287c2dadfff2119bdc0eb9bbe76902de177b287aaa')
+md5sums=('805975be03245dd6b3d8f00537640f99')
+b2sums=('88aa8529145e5d80268cd7559bba6d02f2c51c56b0fbc5aafbe9de1330cf3c5df492984261f31c54951c8e56685756c0972d9a9f2908f0657e77f0f3ca177666')
 
 build() {
   mkdir build
