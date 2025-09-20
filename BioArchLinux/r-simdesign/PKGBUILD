@@ -11,6 +11,7 @@ arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  r-clipr
   r-testthat
   r-parallelly
   r-dplyr

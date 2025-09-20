@@ -3,6 +3,7 @@ maintainers:
 - github: shun2wang
   email: shuonwang@gmail.com
 repo_depends:
+- r-clipr
 - r-testthat
 - r-parallelly
 - r-dplyr
