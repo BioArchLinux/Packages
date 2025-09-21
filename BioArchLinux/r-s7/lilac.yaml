@@ -4,7 +4,6 @@ maintainers:
   github: sukanka
 post_build_script: |
   git_pkgbuild_commit()
-  update_aur_repo()
 update_on:
 - regex: S7_([\d._-]+).tar.gz
   source: regex
