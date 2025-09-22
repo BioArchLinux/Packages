@@ -13,7 +13,6 @@ depends=(
   r
 )
 optdepends=(
-  r-altdoc
   r-fontquiver
   r-png
   r-rsvg
