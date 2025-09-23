@@ -24,6 +24,7 @@ optdepends=(
   r-rlang
   r-rmarkdown
   r-stringr
+  r-qs2
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
