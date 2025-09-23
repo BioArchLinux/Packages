@@ -13,7 +13,8 @@ depends=(
   r-ore
 )
 optdepends=(
-  r-testthat
+  r-tinytest
+  r-covr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('3c6c8d1d2d67492808f1c6327c20e109')
