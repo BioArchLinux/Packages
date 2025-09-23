@@ -22,6 +22,7 @@ optdepends=(
   r-arrow
   r-bit64
   r-blob
+  r-dplyr
   r-hms
   r-jsonlite
   r-rlang
