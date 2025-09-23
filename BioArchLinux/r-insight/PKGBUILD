@@ -86,6 +86,7 @@ optdepends=(
   r-metafor
   r-metaplus
   r-mice
+  r-mhurdle
   r-mlogit
   r-mmrm
   r-modelbased
