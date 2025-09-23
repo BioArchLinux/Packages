@@ -12,7 +12,7 @@ pkgrel=2
 pkgdesc="Simulate Package Installation and Attach"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only')
+license=('MIT')
 depends=(
   r-cli
   r-desc
@@ -23,7 +23,6 @@ depends=(
   r-processx
   r-rlang
   r-rprojroot
-  r-withr
 )
 optdepends=(
   r-bitops

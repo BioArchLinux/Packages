@@ -12,7 +12,6 @@ repo_depends:
 - r-processx
 - r-rlang
 - r-rprojroot
-- r-withr
 update_on:
 - source: rpkgs
   pkgname: pkgload
