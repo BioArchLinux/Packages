@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspRobustTTests
-_pkgver=0.19.3
+_pkgver=0.95.0
 pkgname=r-${_pkgname,,}
-pkgver=0.19.3
-pkgrel=2
+pkgver=0.95.0
+pkgrel=1
 pkgdesc="A robust T-Test module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -17,7 +17,7 @@ depends=(
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
-sha256sums=('bebd09bf4c29ee109ad3cddc0c546e59c26eeb8c89b098214730d70641537490')
+sha256sums=('f48e11243a26bde15cf025f59d2294a462f52e9e566622dc279509be9c538a92')
 
 
 build() {
