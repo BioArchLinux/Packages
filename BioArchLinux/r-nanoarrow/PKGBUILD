@@ -8,9 +8,9 @@ pkgrel=1
 pkgdesc="Interface to the 'nanoarrow' 'C' Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=(Apache)
+license=('Apache-2.0')
 depends=(
-  r
+  r-pkgload
 )
 checkdepends=(
   r-bit64
