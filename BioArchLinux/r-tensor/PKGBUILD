@@ -5,8 +5,8 @@ _pkgver=1.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=11
-pkgdesc='Tensor Product of Arrays'
-arch=(any)
+pkgdesc="Tensor Product of Arrays"
+arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
