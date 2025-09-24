@@ -1,0 +1,47 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=graph4lg
+_pkgver=1.8.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Build Graphs for Landscape Genetics Analysis"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-only')
+depends=(
+  r-adegenet
+  r-ecodist
+  r-gdistance
+  r-ggplot2
+  r-hierfstat
+  r-igraph
+  r-pegas
+  r-rappdirs
+  r-raster
+  r-rdpack
+  r-sf
+  r-sp
+  r-spatstat.geom
+  r-spatstat.linnet
+  r-stringr
+  r-tidyr
+  r-vegan
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1c5317841db3e8de616e4fe01f7eeb84')
+b2sums=('fef7c4b11dfeda96c8068de93d315bd0d97e9a46d1baea54b7f013492e38fe365f688e7a5ed41c5e9c68e891fd37817cad782044eaf7c3729d9e83bb37c1f45a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

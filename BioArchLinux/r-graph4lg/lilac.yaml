@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-adegenet
+- r-ecodist
+- r-gdistance
+- r-ggplot2
+- r-hierfstat
+- r-igraph
+- r-pegas
+- r-rappdirs
+- r-raster
+- r-rdpack
+- r-sf
+- r-sp
+- r-spatstat.geom
+- r-spatstat.linnet
+- r-stringr
+- r-tidyr
+- r-vegan
+update_on:
+- source: rpkgs
+  pkgname: graph4lg
+  repo: cran
+  md5: true
+- alias: r
