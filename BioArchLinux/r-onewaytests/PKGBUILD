@@ -19,6 +19,7 @@ depends=(
 )
 optdepends=(
   r-aid
+  r-testthat
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
