@@ -7,7 +7,6 @@ repo_makedepends:
 - r-blob
 - r-hms
 - r-testthat
-- r-pkgload
 update_on:
 - source: rpkgs
   pkgname: nanoarrow
