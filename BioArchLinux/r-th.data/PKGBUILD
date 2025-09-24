@@ -18,9 +18,12 @@ optdepends=(
   r-atr
   r-coin
   r-colorspace
+  r-dplyr
   r-gridextra
   r-knitr
   r-multcomp
+  r-openxlsx
+  r-plyr
   r-rms
   r-tram
   r-trtf
