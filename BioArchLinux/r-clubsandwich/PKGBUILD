@@ -30,6 +30,8 @@ optdepends=(
   r-aer
   r-cardata
   r-covr
+  r-estimatr
+  r-fixest
   r-formula
   r-geepack
   r-ivreg
