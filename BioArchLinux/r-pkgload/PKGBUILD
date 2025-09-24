@@ -5,10 +5,10 @@
 # Contributor: Alex Branham <alex.branham@gmail.com>
 
 _pkgname=pkgload
-_pkgver=1.4.0
+_pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Simulate Package Installation and Attach"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -37,8 +37,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('264e54f059ddbface95d0627f272a47b')
-b2sums=('620aaefc9dd10573d941d78a8fcb93b87c3e455c9e58a86a492ca5e56bc5adb4f4cf65ac0311891fb564d433ae4dd776d38ef3d98050ae33f7dc56fc9547aada')
+md5sums=('dfb39a50fdd6c3ddf15b51726920c693')
+b2sums=('420c80559a16a9feeced024a9e34dd175968a31d90bafd80522a86c03a65db617b7ee7a72df279e86dd4010765a1a1dde1dfb5cd4e91f826751684ef45e19bf9')
 
 build() {
   mkdir build
