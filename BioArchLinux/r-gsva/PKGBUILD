@@ -46,6 +46,7 @@ optdepends=(
   r-shinybusy
   r-shinydashboard
   r-shinyjs
+  r-sva
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('cea42d1a52c16a99b865cfedf38430ac')
