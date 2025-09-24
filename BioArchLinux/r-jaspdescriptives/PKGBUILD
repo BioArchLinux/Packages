@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspDescriptives
-_pkgver=0.19.3
+_pkgver=1.0
 pkgname=r-${_pkgname,,}
-pkgver=0.19.3
-pkgrel=2
+pkgver=1.0
+pkgrel=1
 pkgdesc="Descriptives Module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -24,7 +24,7 @@ depends=(r
 )
 groups=(r-jasp r-jaspcommon)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
-sha256sums=('664cf7fc801486acfbbed248f5fd41e8fe4421d74f7b026bead1b696251e6705')
+sha256sums=('e82328f81c3e920308f72bec93555432cf45f93619cc991763babb565941e2dd')
 
 
 build() {
