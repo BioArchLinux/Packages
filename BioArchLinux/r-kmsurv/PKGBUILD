@@ -5,7 +5,7 @@ _pkgver=0.1-5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=11
-pkgdesc="Data sets from Klein and Moeschberger (1997), Survival Analysis"
+pkgdesc="KMsurv: Datasets from Klein and Moeschberger (1997), Survival Analysis"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
