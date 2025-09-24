@@ -34,6 +34,7 @@ optdepends=(
   r-rstudioapi
   r-testthat
   r-usethis
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('264e54f059ddbface95d0627f272a47b')
