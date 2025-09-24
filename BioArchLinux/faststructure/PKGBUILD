@@ -2,7 +2,7 @@
 pkgname=faststructure
 _pkgname=fastStructure3
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A variational framework for inferring population structure from SNP genotype data"
 arch=('x86_64')
 url="https://github.com/starsareintherose/fastStructure3"
@@ -11,7 +11,7 @@ depends=('gsl' 'python-scipy' 'python-numpy')
 makedepends=('python-setuptools' 'cython' )
 options=(!emptydirs)
 source=("$url/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('f74374d422e9541c74ab8222c7a4b89d8f2cdcf4a366634fbf5c4eb8b564aa49')
 
 build(){
   cd "$srcdir"/$_pkgname-$pkgver
