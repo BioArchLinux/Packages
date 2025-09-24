@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-backports
 - r-cli
-- r-fmesher
 - r-geometry
 - r-gmp
 - r-minqa

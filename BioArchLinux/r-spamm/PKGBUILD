@@ -13,7 +13,6 @@ depends=(
   gsl
   r-backports
   r-cli
-  r-fmesher
   r-geometry
   r-gmp
   r-minqa
