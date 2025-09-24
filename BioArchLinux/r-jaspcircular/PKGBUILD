@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspCircular
-_pkgver=0.19.3
+_pkgver=0.95.0
 pkgname=r-${_pkgname,,}
-pkgver=0.19.3
-pkgrel=2
+pkgver=0.95.0
+pkgrel=1
 pkgdesc="CircularStatistics Module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -16,7 +16,7 @@ depends=(r
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
-sha256sums=('af1bcf8fd5ef6399162e45e55614a403e17fcaf9578b5773c6d4e3630d2d5d20')
+sha256sums=('61fc218430121b6e84b8f7d07c1b918ba9de65488b43068ccae0bf7746d08768')
 
 
 build() {
