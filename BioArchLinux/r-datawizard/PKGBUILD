@@ -14,6 +14,7 @@ depends=(
 )
 optdepends=(
   r-bayestestr
+  r-bh
   r-brms
   r-curl
   r-data.table
@@ -29,7 +30,9 @@ optdepends=(
   r-lme4
   r-mediation
   r-modelbased
+  r-nanoparquet
   r-parameters
+  r-performance
   r-poorman
   r-psych
   r-readr
