@@ -38,6 +38,7 @@ optdepends=(
   r-reshape
   r-reshape2
   r-rmarkdown
+  r-robustbase
   r-rrcov
   r-sleuth2
   r-tidyr
