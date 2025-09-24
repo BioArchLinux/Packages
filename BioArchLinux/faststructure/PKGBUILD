@@ -1,0 +1,34 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+pkgname=faststructure
+_pkgname=fastStructure3
+pkgver=1.0
+pkgrel=1
+pkgdesc="A variational framework for inferring population structure from SNP genotype data"
+arch=('x86_64')
+url="https://github.com/starsareintherose/fastStructure3"
+license=('MIT')
+depends=('gsl' 'python-scipy' 'python-numpy')
+makedepends=('python-setuptools' 'cython' )
+options=(!emptydirs)
+source=("$url/archive/refs/tags/$pkgver.tar.gz")
+sha256sums=('SKIP')
+
+build(){
+  cd "$srcdir"/$_pkgname-$pkgver
+  echo "BUILDING VARS ..."
+  python setup.py build_ext --inplace
+}
+
+package() {
+  cd $_pkgname-$pkgver
+
+  mkdir -p $pkgdir/usr/bin
+  python setup.py install --root="$pkgdir" --skip-build
+  for pyscript in chooseK.py  distruct.py structure.py
+  do
+    echo "python /usr/bin/$pyscript \$@" > "$pkgdir"/usr/bin/"${pyscript%.py}"
+    chmod +x "$pkgdir"/usr/bin/"${pyscript%.py}"
+    install -Dm755 "$pyscript" "$pkgdir"/usr/bin/"${pyscript%.py}"
+  done
+  install -Dm644 LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+}
