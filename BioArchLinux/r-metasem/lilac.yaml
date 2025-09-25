@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-mass
+- r-ellipse
+- r-mvtnorm
+- r-numderiv
+- r-lavaan
+update_on:
+- source: metaSEM
+  pkgname: bgms
+  repo: cran
+  md5: true
+- alias: r

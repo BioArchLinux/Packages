@@ -1,0 +1,38 @@
+# Maintainer: shun2wang <shuonwang@gmail.com>
+
+_pkgname=metaSEM
+_pkgver=1.5.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Meta-Analysis using Structural Equation Modeling"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-mass
+  r-ellipse
+  r-mvtnorm
+  r-numderiv
+  r-lavaan
+)
+optdepends=(
+  r-metafor
+  r-semplot
+  r-r.rsp
+  r-testthat
+  r-matrixcalc
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('956b8446c8580710f07dc0e6f688aa8b')
+b2sums=('bd0ab832e00178a40e648e1c1b5e249c36464e1f7c77b85425e05015c7c17f2bfa0c7ba9ef72b765df82156c32d7b5a1ab2ca405e0fb1ef9497d5e3ce38b22fc')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
