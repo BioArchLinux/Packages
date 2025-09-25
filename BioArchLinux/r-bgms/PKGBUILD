@@ -1,0 +1,34 @@
+# Maintainer: shun2wang <shuonwang@gmail.com>
+
+_pkgname=bgms
+_pkgver=0.1.4.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Extracting and Visualizing Bayesian Graphical Models"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-rcpp
+  r-rdpack
+)
+optdepends=(
+  r-knitr
+  r-qgraph
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('f61f7a0af52fcbdefe822d81ef5c4d3e')
+b2sums=('4f4661d0451abd1e2fd7cba051f29402e2f4a69c9589bf4745cc39744a881039dfb7344f84614ff23b0b7adecdd5b4da84916577bab76b7ade738da9b3a456b1')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
