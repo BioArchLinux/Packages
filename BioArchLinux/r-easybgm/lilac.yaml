@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-bdgraph
+- r-bggm
+- r-bgms
+- r-dplyr
+- r-ggplot2
+- r-hdinterval
+- r-igraph
+- r-qgraph
+update_on:
+- source: rpkgs
+  pkgname: easybgm
+  repo: cran
+  md5: true
+- alias: r

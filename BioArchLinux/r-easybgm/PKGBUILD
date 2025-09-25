@@ -1,0 +1,38 @@
+# Maintainer: shun2wang <shuonwang@gmail.com>
+
+_pkgname=easybgm
+_pkgver=0.2.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Extracting and Visualizing Bayesian Graphical Models"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-bdgraph
+  r-bggm
+  r-bgms
+  r-dplyr
+  r-ggplot2
+  r-hdinterval
+  r-igraph
+  r-qgraph
+)
+optdepends=(
+  r-testthat
+  r-vdiffr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('91f37bd9b32c4c4da5893d07d3210c71')
+b2sums=('a1e894f7524c8cfd00acf92ffbd14d1b8eca2eb7de27b0693a0e0ef0c2f42a4cd1786fe94d9091dcc29968c37ffa5d355b35cb7533222a56adcd6f192acf2581')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
