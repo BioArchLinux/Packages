@@ -15,6 +15,7 @@ depends=(
   r-jaspbase
   r-jaspgraphs
   r-ggsurvfit
+  r-flexsurv
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
