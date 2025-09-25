@@ -7,6 +7,8 @@ repo_depends:
 - r-ggplot2
 - r-jaspbase
 - r-jaspgraphs
+- r-jaspsem
+- r-metasem
 - r-metabma
 - r-metafor
 - r-pema

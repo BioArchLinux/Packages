@@ -13,6 +13,8 @@ depends=(r
   r-ggplot2
   r-jaspbase
   r-jaspgraphs
+  r-jaspsem
+  r-metasem
   r-mass
   r-metabma
   r-metafor
