@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: shun2wang
+  email: shuonwang@gmail.com
+repo_depends:
+- r-bfpack
+- r-ggally
+- r-ggplot2
+- r-ggridges
+- r-mvnfast
+- r-network
+- r-reshape
+- r-rcpp
+- r-rdpack
+- r-sna
+repo_makedepends:
+- r-rcpparmadillo
+- r-rcppdist
+- r-rcppprogress
+update_on:
+- source: rpkgs
+  pkgname: BGGM
+  repo: cran
+  md5: true
+- alias: r

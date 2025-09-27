@@ -1,0 +1,51 @@
+# Maintainer: shun2wang <shuonwang@gmail.com>
+
+_pkgname=BGGM
+_pkgver=2.1.5
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Bayesian Gaussian Graphical Models"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0')
+depends=(
+  r-bfpack
+  r-ggally
+  r-ggplot2
+  r-ggridges
+  r-mvnfast
+  r-network
+  r-reshape
+  r-rcpp
+  r-rdpack
+  r-sna
+)
+makedepends=(
+  r-rcpparmadillo
+  r-rcppdist
+  r-rcppprogress
+)
+optdepends=(
+  r-abind
+  r-assortnet
+  r-networktools
+  r-mice
+  r-psych
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('c5f52144b0badf09d3edfff2169ad5ef')
+b2sums=('9536ab85fae123bb11645dac6335e3bfb3fb6957f1602fc25b5f13f9bcec81467984428f029d7886b8db869869b9b9fddca01187205f05a0d53de32b01b772a2')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
