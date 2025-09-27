@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-rcpp
 - r-rdpack
+repo_makedepends:
+- r-rcppprogress
 update_on:
 - source: rpkgs
   pkgname: bgms

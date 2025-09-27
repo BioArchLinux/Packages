@@ -5,13 +5,16 @@ _pkgver=0.1.4.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Extracting and Visualizing Bayesian Graphical Models"
-arch=(any)
+pkgdesc="Bayesian Analysis of Networks of Binary and/or Ordinal Variables"
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
   r-rcpp
   r-rdpack
+)
+makedepends=(
+  r-rcppprogress
 )
 optdepends=(
   r-knitr
