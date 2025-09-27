@@ -10,11 +10,11 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-mass
   r-ellipse
   r-mvtnorm
   r-numderiv
   r-lavaan
+  r-openmx
 )
 optdepends=(
   r-metafor

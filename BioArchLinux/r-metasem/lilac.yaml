@@ -3,11 +3,11 @@ maintainers:
 - github: shun2wang
   email: shuonwang@gmail.com
 repo_depends:
-- r-mass
 - r-ellipse
 - r-mvtnorm
 - r-numderiv
 - r-lavaan
+- r-openmx
 update_on:
 - source: rpkgs
   pkgname: metaSEM
