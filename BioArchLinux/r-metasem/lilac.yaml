@@ -9,8 +9,8 @@ repo_depends:
 - r-numderiv
 - r-lavaan
 update_on:
-- source: metaSEM
-  pkgname: bgms
+- source: rpkgs
+  pkgname: metaSEM
   repo: cran
   md5: true
 - alias: r
