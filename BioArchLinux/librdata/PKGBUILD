@@ -3,7 +3,7 @@
 pkgname=librdata-git
 _pkgname=librdata
 pkgver=0.1.0.r125.33bd276
-pkgrel=32
+pkgrel=33
 pkgdesc="Read and write R data frames from C"
 arch=("x86_64" "aarch64")
 url="https://github.com/WizardMac/librdata"
