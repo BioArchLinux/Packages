@@ -6,9 +6,9 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Bayesian Gaussian Graphical Models"
-arch=(any)
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-2.0')
+license=('GPL-2.0-only')
 depends=(
   r-bfpack
   r-ggally
