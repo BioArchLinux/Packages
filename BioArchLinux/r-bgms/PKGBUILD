@@ -12,15 +12,21 @@ license=('GPL-2.0-or-later')
 depends=(
   r-rcpp
   r-rdpack
+  r-rcppparallel
+  r-coda
+  r-lifecycle
 )
 makedepends=(
-  r-rcppprogress
+  r-rcpparmadillo
+  r-dqrng
+  r-bh
 )
 optdepends=(
   r-knitr
   r-qgraph
   r-rmarkdown
   r-testthat
+  r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f61f7a0af52fcbdefe822d81ef5c4d3e')

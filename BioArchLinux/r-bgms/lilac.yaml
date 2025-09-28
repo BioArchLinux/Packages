@@ -5,8 +5,13 @@ maintainers:
 repo_depends:
 - r-rcpp
 - r-rdpack
+- r-rcppparallel
+- r-coda
+- r-lifecycle
 repo_makedepends:
-- r-rcppprogress
+- r-rcpparmadillo
+- r-dqrng
+- r-bh
 update_on:
 - source: rpkgs
   pkgname: bgms
