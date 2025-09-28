@@ -1,10 +1,10 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=bgms
-_pkgver=0.1.4.2
+_pkgver=0.1.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Bayesian Analysis of Networks of Binary and/or Ordinal Variables"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -29,8 +29,8 @@ optdepends=(
   r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f61f7a0af52fcbdefe822d81ef5c4d3e')
-b2sums=('4f4661d0451abd1e2fd7cba051f29402e2f4a69c9589bf4745cc39744a881039dfb7344f84614ff23b0b7adecdd5b4da84916577bab76b7ade738da9b3a456b1')
+md5sums=('72d3cf4dc3ebcaa96e7ef9fc9ba08737')
+b2sums=('d2072902b28b51091ca8bfdc4fa2cef730422ad5ba0b5e356f9a85d35fb98d163fd8c5f8efcb1cb3ef00abb164e61b3671bad376fbb43ce557cce68934edc3ff')
 
 build() {
   mkdir build
