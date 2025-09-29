@@ -15,11 +15,11 @@ depends=(
   r-bbmle
   r-fastghquad
   r-mvtnorm
+  r-numderiv
   r-rcpp
 )
 makedepends=(
   gcc-fortran
-  r-bh
   r-rcpparmadillo
 )
 checkdepends=(
