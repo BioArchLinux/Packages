@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspLearnStats
-_pkgver=0.19.3
+_pkgver=0.95.0
 pkgname=r-${_pkgname,,}
-pkgver=0.19.3
-pkgrel=2
+pkgver=0.95.0
+pkgrel=1
 pkgdesc="Learn Classical statistics with simple examples and supporting text"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
