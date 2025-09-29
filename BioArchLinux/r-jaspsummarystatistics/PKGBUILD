@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspSummaryStatistics
-_pkgver=0.19.3
+_pkgver=jaspregression
 pkgname=r-${_pkgname,,}
-pkgver=0.19.3
-pkgrel=2
+pkgver=jaspregression
+pkgrel=1
 pkgdesc="Summary Statistics Module for JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
