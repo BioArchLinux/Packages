@@ -26,6 +26,9 @@ depends=(
   r-vctrs
   r-withr
 )
+makedepends=(
+  r-rcpp11
+)
 optdepends=(
   r-concaveman
   r-covr
