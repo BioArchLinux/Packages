@@ -1,6 +1,6 @@
 # Maintainer: sukanka <su975853527 [AT] gmail.com>
 
-pkgname=librdata-git
+pkgname=librdata
 _pkgname=librdata
 pkgver=0.1.0.r125.33bd276
 pkgrel=34
