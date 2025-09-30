@@ -1,0 +1,40 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=cubelyr
+_pkgver=1.0.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="A Data Cube 'dplyr' Backend"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r-dplyr
+  r-glue
+  r-pillar
+  r-purrr
+  r-rlang
+  r-tibble
+  r-tidyselect
+)
+optdepends=(
+  r-covr
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('18a51db2bee1d3dd92a64f9ac16b84cc')
+b2sums=('c9a61cc94b45f93bb3791da436ece11a1118220dfef76feaf5938c2dfac9b3e511ea6ca99da616ff9c1a91659dc262573d258292c00d8db98f0f35949d46e77a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}

@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-dplyr
+- r-glue
+- r-pillar
+- r-purrr
+- r-rlang
+- r-tibble
+- r-tidyselect
+update_on:
+- source: rpkgs
+  pkgname: cubelyr
+  repo: cran
+  md5: true
+- alias: r
