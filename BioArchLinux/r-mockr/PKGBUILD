@@ -9,7 +9,7 @@ pkgrel=4
 pkgdesc="Mocking in R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only')
+license=('MIT')
 depends=(
   r-rlang
   r-withr
