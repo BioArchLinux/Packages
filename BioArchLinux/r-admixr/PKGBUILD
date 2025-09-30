@@ -4,7 +4,7 @@ _pkgname=admixr
 _pkgver=0.9.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=0
+pkgrel=1
 pkgdesc="An Interface for Running 'ADMIXTOOLS' Analyses"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"

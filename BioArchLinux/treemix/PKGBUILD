@@ -2,7 +2,7 @@
 
 pkgname=treemix
 pkgver=1.13
-pkgrel=0
+pkgrel=1
 arch=('x86_64')
 license=('GPL-3.0-or-later')
 pkgdesc="a method for inferring the patterns of population splits \
