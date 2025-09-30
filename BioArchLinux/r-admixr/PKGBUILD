@@ -1,0 +1,45 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=admixr
+_pkgver=0.9.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=0
+pkgdesc="An Interface for Running 'ADMIXTOOLS' Analyses"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r-dplyr
+  r-magrittr
+  r-readr
+  r-rlang
+  r-stringr
+  r-tibble
+  admixtools
+)
+optdepends=(
+  r-covr
+  r-glue
+  r-knitr
+  r-rmarkdown
+  r-testthat
+  r-tidyr
+  r-tidyverse
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('4d93e5c867a34ffec51d421d40e68aa8')
+b2sums=('2f86b30c708429f25799f7b31cef8a1416ee594cd4a020248ea5161390b4328f09cc8507c6c7d5fd14e0e037f12170e392ab40eca357ba919c093ab10c095934')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
