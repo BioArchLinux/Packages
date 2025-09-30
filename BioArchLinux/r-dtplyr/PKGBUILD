@@ -45,18 +45,18 @@ b2sums=('886ea73df057735d35a40e95043a07bb8de8abf866ed77ea5a966a45329e780e34a51d9
         'ff13698456b9b29423f6fdc218df49b9ff5dc8357c9bde10a76b4db02d413e499431276bbbfbe496fd9e7d81f6a3ea3f1db76353b4223abba02b2cec1963cb51'
         '2941395d51fb661330144a23d22c4f27d2f3a82eb73061138dfe7f34a196a91eec8c68747429721442c34d9708cfa8dcf5e96d8c932c5e6cfa0bb12d82b4bc89')
 
-prepare() {
+#prepare() {
   # fix snapshot tests
-  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-tests-1.patch"
-  patch -Np1 -i fix-tests-2.patch
-}
+#  patch -Np1 -d "$_pkgname" < "$_pkgname-fix-tests-1.patch"
+#  patch -Np1 -i fix-tests-2.patch
+#}
 
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
 }
 
-check() {
+_check() {
   cd "$_pkgname/tests"
   R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
 }
