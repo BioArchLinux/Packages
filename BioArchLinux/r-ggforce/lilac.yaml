@@ -18,7 +18,7 @@ repo_depends:
 - r-vctrs
 - r-withr
 repo_makedepends:
-- r-rcpp11
+- r-cpp11
 update_on:
 - regex: ggforce_([\d._-]+).tar.gz
   source: regex
