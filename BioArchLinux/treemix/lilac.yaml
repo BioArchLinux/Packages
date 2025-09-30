@@ -7,5 +7,6 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: cmd
-    cmd: curl -sS https://dalexander.github.io/admixture/download.html | grep '.tar.gz' | grep 'linux' | sed "s@-@ @g;s@.tar.gz@ @g" | awk '{print $3}'
+  - source: regex
+    url: https://api.bitbucket.org/2.0/repositories/nygcresearch/treemix/downloads
+    regex: 'https://api.bitbucket.org/2.0/repositories/nygcresearch/treemix/downloads/treemix-(\d+.\d+).tar.gz'
