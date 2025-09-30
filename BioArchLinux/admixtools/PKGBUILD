@@ -9,6 +9,7 @@ license=('custom-admixtools')
 pkgdesc="Tools test whether admixture occurred and more \
 	 https://doi.org/10.1534/genetics.112.145037"
 url="https://github.com/DReichLab/AdmixTools"
+depends=('gsl')
 source=("${url}/archive/refs/tags/v${pkgver}.tar.gz"
 	"header_cmake.patch"
 	)
