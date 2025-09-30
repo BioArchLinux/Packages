@@ -7,7 +7,15 @@ url="https://github.com/uqrmaie1/admixtools"
 arch=('x86_64')
 license=('GPL-3.0-or-later')
 source=("${_pkgname}_${pkgver}.tar.gz::$url/archive/refs/tags/v${pkgver}.tar.gz")
-depends=('r-rcpp' 'r-tidyverse' 'r-igraph' 'r-plotly' 'r-cubelyr' 'r-data.tree' 'r-lobstr')
+depends=('r-rcpp' 'r-tidyverse' 'r-igraph' 'r-plotly' 'r-cubelyr' 'r-data.tree' 'r-lobstr'
+'r-abind'
+'r-doparallel'
+'r-foreach'
+'r-furrr'
+'r-future'
+'r-quadprog'
+'r-rcpparmadillo'
+ )
 optdepends=(r-dt
 r-genio
 r-gridextra

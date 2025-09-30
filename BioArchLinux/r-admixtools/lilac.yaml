@@ -19,3 +19,10 @@ repo_depends:
  - r-cubelyr
  - r-data.tree
  - r-lobstr
+ - r-abind
+ - r-doparallel
+ - r-foreach
+ - r-furrr
+ - r-future
+ - r-quadprog
+ - r-rcpparmadillo
