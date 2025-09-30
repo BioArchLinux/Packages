@@ -14,6 +14,7 @@ depends=(
   r-purrr
   r-rlang
   r-tibble
+  r-cli
 )
 checkdepends=(
   r-testthat

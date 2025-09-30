@@ -7,6 +7,7 @@ repo_depends:
 - r-purrr
 - r-rlang
 - r-tibble
+- r-cli
 repo_makedepends:
 - r-testthat
 update_on:
