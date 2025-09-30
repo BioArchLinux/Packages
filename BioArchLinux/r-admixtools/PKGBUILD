@@ -1,0 +1,36 @@
+pkgname=r-admixtools
+_pkgname=admixtools
+pkgdesc="A new, lightning fast implementation of ADMIXTOOLS"
+pkgver=2.0.10
+pkgrel=0
+url="https://github.com/uqrmaie1/admixtools"
+arch=('x86_64')
+license=('GPL-3.0-or-later')
+source=("${_pkgname}_${pkgver}.tar.gz::$url/archive/refs/tags/v${pkgver}.tar.gz")
+depends=('r-rcpp' 'r-tidyverse' 'r-igraph' 'r-plotly' 'r-cubelyr' 'r-data.tree' 'r-lobstr')
+optdepends=(r-dt
+r-genio
+r-gridextra
+r-htmlwidgets
+r-knitr
+r-plotly
+r-rmarkdown
+r-shiny
+r-shinyjs
+r-shinybs
+r-shinyfiles
+r-shinyalert
+r-shinythemes
+r-shinyWidgets
+r-shinydashboard)
+md5sums=('2a70d704cb84216a48015db6df49738c')
+b2sums=('4423c50cacc9dc34a1ec1c309f137c6a1008b049b139ad2e5f015af07b243fa3d8c22b10681615d74e6cabb453a881695c398f8da605e8f1133a5ad59be3901b')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}

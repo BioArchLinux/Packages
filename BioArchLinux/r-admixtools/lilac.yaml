@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+update_on:
+  - source: github
+    github: uqrmaie1/admixtools
+    use_latest_tag: true
+    prefix: 'v'
+repo_depends:
+ - r-rcpp
+ - r-tidyverse
+ - r-igraph
+ - r-plotly
+ - r-cubelyr
+ - r-data.tree
+ - r-lobstr
