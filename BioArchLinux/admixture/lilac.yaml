@@ -7,6 +7,5 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: regex
-    url: "https://dalexander.github.io/admixture/download.html"
-    regex: ' admixture_linux-(\d+.\d+.\d+).tar.gz'
+  - source: cmd
+    cmd: curl -sS https://dalexander.github.io/admixture/download.html | grep '.tar.gz' | grep 'linux' | sed "s@-@ @g;s@.tar.gz@ @g" | awk '{print $3}'
