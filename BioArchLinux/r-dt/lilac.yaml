@@ -10,7 +10,6 @@ repo_depends:
 - r-jsonlite
 - r-magrittr
 - r-promises
-- r-httpuv
 repo_makedepends:
 - r-testit
 update_on:

@@ -20,7 +20,6 @@ depends=(
   r-jsonlite
   r-magrittr
   r-promises
-  r-httpuv
 )
 checkdepends=(
   r-httpuv
@@ -29,7 +28,6 @@ checkdepends=(
 optdepends=(
   r-bslib
   r-future
-  r-httpuv
   r-knitr
   r-rmarkdown
   r-shiny
