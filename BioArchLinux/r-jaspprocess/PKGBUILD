@@ -3,7 +3,7 @@ _pkgname=jaspProcess
 _pkgver=0.95.0
 pkgname=r-${_pkgname,,}
 pkgver=0.95.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Process Module required by JASP"
 arch=('any')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -21,7 +21,7 @@ depends=(
 )
 groups=(r-jasp r-jaspextra)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
-sha256sums=('38b4abedecc3d5816fbbb82d66b67d7bca54d1f1fa98b202239fbaacd271cf04')
+sha256sums=('3594791b3d5107e48ef7ff379423de8a0a33e5fe45d611d34c97b35ad795b5b9')
 
 
 build() {
