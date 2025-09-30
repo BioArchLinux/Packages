@@ -1,0 +1,39 @@
+# Maintainer: Guoyi Zhang <myname at malacology dot net>
+
+pkgname=admixtools
+pkg=AdmixTools
+pkgver=8.0.2
+pkgrel=0
+arch=('x86_64')
+license=('custom-admixtools')
+pkgdesc="Tools test whether admixture occurred and more \
+	 https://doi.org/10.1534/genetics.112.145037"
+url="https://github.com/DReichLab/AdmixTools"
+source=("${url}/archive/refs/tags/v${pkgver}.tar.gz"
+	"header_cmake.patch"
+	)
+sha1sums=('d1f703b29589758789f84947f4c750a9f3febfbe'
+          'e8769c318f4828245a5a16f2a16901542a10b301')
+
+prepare(){
+  cd "${pkg}-${pkgver}"
+  patch -p1 < $srcdir/header_cmake.patch
+  sed -i '0,/cp \$\(PROGS3\) \$\(TOP\)/s//cp $(PROGS3) $(TOP)\n\tcp $(PROGS4) $(TOP)/' src/Makefile
+}
+
+build() {
+  cd "${pkg}-${pkgver}"
+  cd src
+  make
+}
+
+package() {
+  cd "${pkg}-${pkgver}"
+  cd src
+  make DESTDIR="${pkgdir}" install
+  cd ../bin
+  mkdir -p $pkgdir/usr/bin
+  mkdir -p $pkgdir/usr/share/admixtools
+  mv script $pkgdir/usr/share/admixtools
+  mv * $pkgdir/usr/bin
+}
