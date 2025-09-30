@@ -20,6 +20,7 @@ depends=(
   r-jsonlite
   r-magrittr
   r-promises
+  r-httpuv
 )
 checkdepends=(
   r-httpuv
