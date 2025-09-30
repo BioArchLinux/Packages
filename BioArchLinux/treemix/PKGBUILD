@@ -9,7 +9,7 @@ pkgdesc="a method for inferring the patterns of population splits \
 	 and mixtures in the history of a set of populations \
 	 https://doi.org/10.1371/journal.pgen.1002967"
 url="https://bitbucket.org/nygcresearch/treemix"
-depends=('gsl' 'openblas')
+depends=('gsl' 'openblas' 'boost-libs')
 source=("${url}/downloads/${pkgname}-${pkgver}.tar.gz")
 sha1sums=('69046717cae7df2cada981fb0f3400608ba91e99')
 
