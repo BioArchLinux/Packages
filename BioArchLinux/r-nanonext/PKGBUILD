@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=nanonext
-_pkgver=1.7.0
+_pkgver=1.7.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="NNG (Nanomsg Next Gen) Lightweight Messaging Library"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -20,8 +20,8 @@ optdepends=(
   r-litedown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('7df1c307949b78970fd726f4a5e53414')
-b2sums=('08ab394ad4300774a603ba442cbc8cd9bd592ebbc935d0426291121c5e02ca64b097a413723b6c3c0ea3ac15d0f1d72c70fff95114f7b5efaa0572c2e89e96ec')
+md5sums=('2aec24a40347a07f937ec62033b0ccae')
+b2sums=('2079a68c635958612344cfd0a12f33ef2c30b9a8ef19133d80c98c8be72b57ae3af745e1cf1accbf733eac3ebe28cd64c2efe27dd2546053510b25399d2038e4')
 
 build() {
   mkdir build
