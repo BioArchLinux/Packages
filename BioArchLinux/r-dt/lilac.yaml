@@ -12,6 +12,7 @@ repo_depends:
 - r-promises
 repo_makedepends:
 - r-testit
+- r-httpuv
 update_on:
 - source: rpkgs
   pkgname: DT
