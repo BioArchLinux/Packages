@@ -26,6 +26,7 @@ optdepends=(
   r-rhdf5
   r-seuratobject
   r-summarizedexperiment
+  r-arrow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('52d894d6e400e732e559e6a691f2a404')
