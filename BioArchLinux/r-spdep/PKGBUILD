@@ -36,6 +36,9 @@ optdepends=(
   r-tmap
   r-xtable
   r-rgeoda
+  r-mipfp
+  r-guerry
+  r-codingmatrices
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('1b66718a71e81fd54260cbad899378ee')
