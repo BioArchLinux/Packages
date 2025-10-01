@@ -20,6 +20,7 @@ depends=(
   r-posterior
   r-rcpp
   r-rcppparallel
+  r-reformulas
   r-rstan
   r-rstantools
   r-shinystan
