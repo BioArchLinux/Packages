@@ -31,6 +31,10 @@ optdepends=(
   r-knitr
   r-rmarkdown
   r-testthat
+  r-ggplot2
+  r-ragg
+  r-svglite
+
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('d106198eb1265eb1ab6114e080667e43')
