@@ -11,16 +11,17 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  r-cli
   r-dplyr
   r-ggplot2
   r-ggstats
   r-gtable
   r-lifecycle
   r-magrittr
-  r-plyr
   r-progress
   r-rcolorbrewer
   r-rlang
+  r-s7
   r-scales
   r-tidyr
 )
@@ -39,6 +40,7 @@ checkdepends=(
   r-vdiffr
 )
 optdepends=(
+  r-airports
   r-broom
   r-broom.helpers
   r-chemometrics
@@ -55,7 +57,6 @@ optdepends=(
   r-maps
   r-network
   r-rmarkdown
-  r-roxygen2
   r-scagnostics
   r-sna
   r-spelling
