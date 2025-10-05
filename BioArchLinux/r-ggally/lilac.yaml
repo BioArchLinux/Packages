@@ -3,16 +3,17 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-cli
 - r-dplyr
 - r-ggplot2
 - r-ggstats
 - r-gtable
 - r-lifecycle
 - r-magrittr
-- r-plyr
 - r-progress
 - r-rcolorbrewer
 - r-rlang
+- r-s7
 - r-scales
 - r-tidyr
 repo_makedepends:
