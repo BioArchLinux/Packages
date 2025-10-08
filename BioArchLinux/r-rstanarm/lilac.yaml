@@ -33,3 +33,4 @@ update_on:
   pkgname: onetbb
   filename: usr/lib/libtbb\.so\.([^.]+)
   repo: extra
+time_limit_hours: 4
