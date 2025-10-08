@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-ggplot2
 - r-gridgraphics
+- r-rlang
 - r-yulab.utils
 update_on:
 - source: rpkgs

@@ -13,6 +13,7 @@ license=('Artistic-2.0')
 depends=(
   r-ggplot2
   r-gridgraphics
+  r-rlang
   r-yulab.utils
 )
 optdepends=(
