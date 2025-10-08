@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=RPushbullet
-_pkgver=0.3.4
+_pkgver=0.3.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="R Interface to the Pushbullet Messaging Service"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,8 +16,8 @@ depends=(
 optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('7c7ca0162cc0444be64150bade019b4d')
-b2sums=('34a6dc0bdef2ad0f37473d31b788c23dafc2daa473cd0621ab82f02d62a23ffd1a9ea934399621f185854e0b50a280229aa83e4a1afb1e5c0dec3500c591d92c')
+md5sums=('795d7bb6808941d31838edef35b987e5')
+b2sums=('c30d79284a3fe6aadca8f39903e67f043fcae684cf4300ee6e89874daa78864298f4db2dca068a6c42f6a2608a46a3568775fc4b630b7ad26421ae943d9466c8')
 
 build() {
   mkdir build
