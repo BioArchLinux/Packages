@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=BiocGenerics
-_pkgver=0.54.0
+_pkgver=0.54.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -34,8 +34,8 @@ optdepends=(
   r-multiassayexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('43d1e10d0c205a8140d1d75881952a67')
-b2sums=('a047e539c4043173407fa4b67c9f7ebdad059ffbaa8b7fa991c1aab19bdb212a0f226356d1ba811b4b279867d483051f75b9f105264a7ac22fa0496b1464cf7b')
+md5sums=('76b2dc23aa27f92693340b01594a97c2')
+b2sums=('bcbf275d44b2aefd9ae8f4df952a6da780d67620cc6dba47dd6e28073a6d0b91898fd390748a4612bbf88d9877a74fc16a184c4a429c621a0422497c1bb362b5')
 
 build() {
   mkdir build
