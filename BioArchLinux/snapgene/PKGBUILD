@@ -3,7 +3,7 @@
 # Contributor: Matthijs Tadema <M dot J dot Tadema at gmail dot com>
 # Contributor: Lorenzo Gaifas <brisvag at gmail dot com>
 pkgname=snapgene
-pkgver=8.2.0
+pkgver=8.2.1
 _pkgver_major=${pkgver%%.*}
 _pkgver_major_middle=${pkgver%.*}
 pkgrel=1
@@ -54,8 +54,8 @@ makedepends=('patchelf')
 source=("${pkgname}-${pkgver}.deb::https://cdn.snapgene.com/downloads/SnapGene/"$_pkgver_major".x/"$_pkgver_major_middle"/"$pkgver"/"$pkgname"_"$pkgver"_linux.deb"
         "LICENSE.html::https://cdn.snapgene.com/downloads/licenseAgreement.html"
         "snapgene.sh")
-sha512sums=('b2924c8604b7626e7a8e0f3e8b8a8c7e70f0ca1c7bfbf964046e519cb3c8b5182adea6a7f5c93a71087d7fd679a1c86651ba0d46502fab4a957202dc5d56402c'
-            '4668a677b66f7394aa21fdab2d808512a4baf5e0f7bd19ae610c113a4a4887869875964ab6dc7bbec08ef16b994d15f0254cdabd5d72fc33683c1c129961636b'
+sha512sums=('960c3f524caa5314243bfaf6796f61ee452379693f974a8fc122669632946914eed5fcf2f1850ebaa395e759af29b924d30bacbc64c78954e00242a5c5f639ac'
+            'b3827223e1db019466dc40b888795b953be7e3d8f3ea1cc30fd9b7eab13fa33aa666244223c64ada38cf54e1165165c045844b2c7645d40add8a804a9f420801'
             'b6e85e1a3e1ed9d07159b58abf6fecfb76bfd19752b67fbf156baaab696df83aa8b0fcfc49c93263dd56ea2f47926ddc4dac0b4b011f53112426e8545d1197be')
 
 package() {
