@@ -14,6 +14,7 @@ depends=(
   r-bayesplot
   r-coda
   r-future.apply
+  r-igraph
   r-lavaan
   r-loo
   r-mnormt
