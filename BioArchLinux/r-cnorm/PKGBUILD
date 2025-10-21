@@ -16,9 +16,11 @@ depends=(
 )
 optdepends=(
   r-knitr
+  r-markdown
   r-readxl
   r-rmarkdown
   r-shiny
+  r-shinycssloaders
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
