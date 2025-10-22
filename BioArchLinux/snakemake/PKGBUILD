@@ -2,7 +2,7 @@
 # Contributor: Philipp A. <flying-sheep@web.de>
 # Contributor: Kyle Meyer <kyle@kyleam.com>
 pkgname=snakemake
-pkgver=9.13.3
+pkgver=9.13.4
 pkgrel=1
 pkgdesc='Python-based language and execution environment for GNU Make-like workflows'
 arch=(any)
@@ -52,7 +52,7 @@ optdepends=(
 )
 license=(MIT)
 source=("https://files.pythonhosted.org/packages/source/${pkgname::1}/$pkgname/$pkgname-$pkgver.tar.gz")
-sha256sums=('6d9e7adb8e3e58cfdfebc89c1b6feb536d1e33615aa5dd987a3f45b20d7ba525')
+sha256sums=('5e88682f3e55670950483bc76cfb1bedff32e368177a0a02891efd00da9af923')
 
 build() {
     cd "$srcdir/$pkgname-$pkgver"
