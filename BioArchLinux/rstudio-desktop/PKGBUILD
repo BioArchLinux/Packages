@@ -55,7 +55,7 @@ makedepends=(
   'boost'
   'cmake'
   'git'
-  'java-environment${_java_version:+=$_java_version}'
+  java-environment${_java_version:+=$_java_version}
   'libcups'
   'ninja'
   'nvm'
