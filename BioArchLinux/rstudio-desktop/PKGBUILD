@@ -5,18 +5,20 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2025.05.1+513
+pkgver=2025.09.1+401
 _pkgver=${pkgver//+/.}
 _srcname=rstudio-${pkgver//+/-}
 _pkgsrc=rstudio-${pkgver//+/-}
 _pandocver="current"
 _quarto="FALSE"
+_gwt_version=2.12.2
+_java_version=17
 _soci_version="4.0.3"
 _nodeversion="23"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
 : ${_copilot_version:=1.300.0}
 
-pkgrel=1
+pkgrel=0
 pkgdesc="A powerful and productive integrated development environment \
 	 (IDE) for R programming language"
 arch=('x86_64')
@@ -53,7 +55,7 @@ makedepends=(
   'boost'
   'cmake'
   'git'
-  'jdk11-openjdk'
+  'java-environment${_java_version:+=$_java_version}'
   'libcups'
   'ninja'
   'nvm'
@@ -63,6 +65,7 @@ makedepends=(
   'python-setuptools'
   'wget'
   'yarn'
+  'mold'
 )
 optdepends=(
   'git: for git support'
@@ -73,24 +76,27 @@ optdepends=(
 
 source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver}"
         "quarto"::"git+https://github.com/quarto-dev/quarto.git#branch=${_quarto_branch}"
-        "https://github.com/SOCI/soci/archive/refs/tags/v${_soci_version}.tar.gz"
-        "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-linux-x64-${_copilot_version}.zip")
-
-sha256sums=('7ae955cd0b1e3dc29284a5578ebd406c6ba28b817c7b65cf6804cc05e40a6073'
+        "soci-$_soci_version.tar.gz::https://github.com/SOCI/soci/archive/refs/tags/v${_soci_version}.tar.gz"
+        "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-linux-x64-${_copilot_version}.zip"
+        "https://rstudio-buildtools.s3.us-east-1.amazonaws.com/gwt/gwt-${_gwt_version}.tar.gz"
+        '0001-steady_timer.patch::https://patch-diff.githubusercontent.com/raw/rstudio/rstudio/pull/16608.diff'
+        )
+noextract+=("gwt-${_gwt_version}.tar.gz")
+sha256sums=('bb075535bdf678e030e89acd147841fa9af2b9eb6bd44f586ff6e390e9423575'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
-            '21f030b4a9b189818ebe73c9065dc140ad64308169b7cb323c9002018ffba074')
+            '21f030b4a9b189818ebe73c9065dc140ad64308169b7cb323c9002018ffba074'
+            '27284accdad05ff8919a7ac6dc5f939a511a90842a35f6393517506d74809e76'
+            '4c7ec83ffc5a73ed361464372f31c5078a9f42c06f571737c1dae491d2fdfaa2')
 options=('!emptydirs' '!debug')
 
 _nvm_env() {
   export HOME="$SRCDEST/node-home"
   export NVM_DIR="$SRCDEST/node-nvm"
-
   # set up nvm
   source /usr/share/nvm/init-nvm.sh || [[ $? != 1 ]]
-  nvm install ${_nodeversion}
-  nvm use ${_nodeversion}
-
+  nvm install $_nodeversion
+  nvm use $_nodeversion
   _npm_path="$(which npm | sed -E 's&/[^/]+$&&')"
   export RSTUDIO_NODE_VERSION=$(echo "$_npm_path" | sed -E 's&^\S+/v([0-9\.]+)/\S+$&\1&')
 }
@@ -100,50 +106,65 @@ prepare() {
 
     cd ${srcdir}/${_srcname}
     # Do not use outdated version name of pandoc
-    sed -E -e '/PANDOC_VERSION/s/"[0-9\.]+"/"'${_pandocver}'"/' -i "cmake/globals.cmake"
+    sed -E -e '/PANDOC_VERSION/s/"[0-9\.]+"/"'${_pandocver}'"/' -i cmake/globals.cmake
 
     # Suppress _FORTIFY_SOURCE mismatch warnings
-    sed -i 's/D_FORTIFY_SOURCE=2/D_FORTIFY_SOURCE=3/' "src/cpp/CMakeLists.txt"
+    sed -e 's/D_FORTIFY_SOURCE=2/D_FORTIFY_SOURCE=3/' -i src/cpp/CMakeLists.txt
+
+    # fix for Boost 1.89
+    sed -e 's/^\s*system$//' -i src/cpp/CMakeLists.txt
+
+    patch -Np1 -F100 -i ../0001-steady_timer.patch
 
     # fix npm/node paths
     sed -E -e 's&set\(RSTUDIO_NODE_PATH .*\)&set(RSTUDIO_NODE_PATH "/usr/bin")&' \
-    -i cmake/globals.cmake
-    install -dm755 "$srcdir/${_srcname}/dependencies/common/node"
-    ln -sfT "$NVM_DIR/versions/node/v$RSTUDIO_NODE_VERSION" "$srcdir/${_srcname}/dependencies/common/node/${RSTUDIO_NODE_VERSION}-patched"
+      -i cmake/globals.cmake
+
+    install -dm755 dependencies/common/node
+    ln -sfT "$NVM_DIR/versions/node/v$RSTUDIO_NODE_VERSION" \
+      dependencies/common/node/"${RSTUDIO_NODE_VERSION}-patched"
 
     sed -E -e 's&^external-node-path=.*$&external-node-path=/usr/bin/node&' \
-    -i src/cpp/conf/rsession-dev.conf
+      -i src/cpp/conf/rsession-dev.conf
 
     sed -E -e 's&"\S+/common/node/\S+"&"/usr"&' \
-    -i src/cpp/session/SessionOptions.cpp
+      -i src/cpp/session/SessionOptions.cpp
 
     sed -E -e '/"node\.version"/s&value="[0-9\.]+"&value="Current"&' \
-    -e '/"node\.dir"/s&value="\S+"&value="/usr"&' \
-    -e 's&"\S+/common/node/\S+/bin/yarn"&"/usr/bin/yarn"&' \
-    -i src/gwt/build.xml
+      -e '/"node\.dir"/s&value="\S+"&value="/usr"&' \
+      -e 's&"\S+/common/node/\S+/bin/yarn"&"/usr/bin/yarn"&' \
+      -i src/gwt/build.xml
 
     sed -E -e 's&PATHS "/opt/rstudio-tools/dependencies/common/node/\$\{RSTUDIO_NODE_VERSION\}"&PATHS "'"${_npm_path}"'"&' \
-    -e 's&"\S+CMAKE_CURRENT_LIST_DIR\S+/dependencies/common/node/\S+"&"'"${_npm_path}"'"&g' \
-    -e 's&set\(RSTUDIO_NODE_VERSION "[0-9\.]+"\)&set(RSTUDIO_NODE_VERSION "Current")&' \
-    -i src/node/CMakeNodeTools.txt
+      -e 's&"\S+CMAKE_CURRENT_LIST_DIR\S+/dependencies/common/node/\S+"&"'"${_npm_path}"'"&g' \
+      -e 's&set\(RSTUDIO_NODE_VERSION "[0-9\.]+"\)&set(RSTUDIO_NODE_VERSION "Current")&' \
+      -i src/node/CMakeNodeTools.txt
 
     # needed for system yaml-cpp
     sed '/add_subdirectory(src)/i find_package(yaml-cpp REQUIRED)' -i CMakeLists.txt
 
     # fix os-release path
     sed -E 's&(STRINGS) "/etc/os-release" (OS_RELEASE)&\1 "/usr/lib/os-release" \2&' \
-    -i cmake/modules/OsRelease.cmake
+      -i cmake/modules/OsRelease.cmake
 
     # bundled deps
-    cd "$srcdir/${_srcname}/dependencies"
-      install -d pandoc/${_pandocver}
-      ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/pandoc
-      ln -sfT /usr/share/myspell/dicts dictionaries
-      ln -sfT /usr/share/mathjax2 mathjax-27
-      install -Dm755 "$srcdir/copilot-language-server" -t "copilot-language-server"
-      ln -sfT "$srcdir/soci-$_soci_version" "soci-$_soci_version"
+    cd "$srcdir/$_pkgsrc/dependencies"
+    install -d pandoc/${_pandocver}
+    ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/pandoc
+
+    ln -sfT /usr/share/myspell/dicts dictionaries
+    ln -sfT /usr/share/mathjax2 mathjax-27
+
+    install -Dm755 "$srcdir/copilot-language-server" -t "copilot-language-server"
+    ln -sfT "$srcdir/soci-$_soci_version" "soci-$_soci_version"
+
     # Panmirror is picked up now from Quarto repo
-      ln -sfT "$srcdir/quarto" "$srcdir/${_srcname}/src/gwt/lib/quarto"
+    ln -sfT "$srcdir/quarto" "$srcdir/$_pkgsrc/src/gwt/lib/quarto"
+
+    # GWT
+    mkdir -p common/gwtproject
+    cd common/gwtproject
+    bsdtar -xf "$srcdir/gwt-$_gwt_version.tar.gz"
 }
 
 _build_soci() {
@@ -174,11 +195,19 @@ _build_soci() {
   cmake --build "soci-$_soci_version/build"
 }
 
+_run_if_exists() {
+  if declare -F "$1" > /dev/null; then
+    eval "$1"
+  fi
+}
+
 build() {
 
+   export JAVA_HOME=/usr/lib/jvm/java-${_java_version:?}-openjdk
+   export PATH="$JAVA_HOME/bin:$PATH"
    export CMAKE_POLICY_VERSION_MINIMUM=3.5
-    _nvm_env
-    _build_soci
+   _nvm_env
+   _run_if_exists _build_soci
 
    cd "${srcdir}/${_srcname}/dependencies"
         install -d pandoc/${_pandocver}/bin/tools
@@ -188,7 +217,7 @@ build() {
     export R_LIBS_USER=/usr/lib/R/library/
     export RSTUDIO_TOOLS_ROOT="${srcdir}/${_srcname}/dependencies"
     export RSTUDIO_NODE_PATH=/usr/
-    export PATH="/usr/lib/jvm/java-11-openjdk/jre/bin/:${PATH}"
+   ## export PATH="/usr/lib/jvm/java-11-openjdk/jre/bin/:${PATH}"
 
     cd "${srcdir}"/${_srcname}
     # These variables are used to create contents of Help > About dialog
@@ -233,6 +262,8 @@ build() {
       -DRSTUDIO_UNIT_TESTS_ENABLED=OFF
       -DBUILD_TESTING=OFF
       -Wno-dev
+      -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
+      -DCMAKE_EXE_LINKER_FLAGS="-Wl,-z,relro -Wl,-z,now,-fuse-ld=mold"
     )
 
     cmake "${_opts_rstudio[@]}"
