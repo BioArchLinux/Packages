@@ -22,7 +22,6 @@ repo_depends:
   - python-pairwisedist
   - python-aiolimiter
   - python-pyvis
-  - python-polars
   - python-kmedoids
   - python-mslex
   - picard-tools
