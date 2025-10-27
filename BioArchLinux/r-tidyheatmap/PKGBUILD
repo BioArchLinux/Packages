@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=tidyHeatmap
-_pkgver=1.12.2
+_pkgver=1.12.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -43,8 +43,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('caaa60d4bf0d8117b97aa1f6d131ea7e')
-b2sums=('3d716797ff01314351ac2744ab487d6b6807dc3f49cd046d84ea9e2f89648aef6294da245f18123a01f218e11c9e7e8ef9bf45b33c7e91c676124e480ad02dcb')
+md5sums=('b495cbd95e7f5279bc543601c888cac8')
+b2sums=('97cd2744cec310709a2eb4923f99e0f471db116a9fb914533139d94c7f7ac5c61a10b325807e044b10174a3d9f371308c4504e20c7ed742f22b5f6616e750175')
 
 prepare() {
   # skip failing snapshot tests
