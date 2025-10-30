@@ -5,7 +5,7 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=xml2
-_pkgver=1.4.0
+_pkgver=1.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -32,8 +32,8 @@ optdepends=(
   r-xslt
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('600d56c3da21eebac91416ef0f5e51ff')
-b2sums=('49ac61c3ed3d85668990f07484a42a2aef58ef588af70ae1c60a38509df04b0d342e7aac67c9a920c019911a76622b37f72105781a4fbe9e343bccf2cea0f4bd')
+md5sums=('72615e3ac78acae253ce195d0045a800')
+b2sums=('bc74a20569bf417feb96ba95b5a59b05406681a4e402eb56359b54349ed698835c9ff002387f98f5ad48e0c0d8f7381bf73f07b283ead8ab91d9970e59ff1f9c')
 
 build() {
   mkdir build
