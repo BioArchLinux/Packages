@@ -26,7 +26,6 @@ optdepends=(
   r-curl
   r-httr
   r-knitr
-  r-magrittr
   r-mockery
   r-rmarkdown
   r-testthat
