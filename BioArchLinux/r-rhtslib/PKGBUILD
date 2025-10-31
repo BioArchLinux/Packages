@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rhtslib
-_pkgver=3.4.0
+_pkgver=3.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -23,8 +23,8 @@ optdepends=(
 )
 options=(staticlibs)
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('5f9e5b7a15bb67e60351b5896254cfec')
-b2sums=('6f5288c03064e9e711136fcbeffac3db2253b88ae0f2f71ec89aa32f8c3a8da56a6b29abf55be2edaf35565d1211ac7a78424f4bb4ecb3c6d3582bbb16e01d74')
+md5sums=('e832528219ddfe8adb8c0f0ac4ba29bc')
+b2sums=('ecbeb765a258e93e269f513884a2b47633221427ad61f8e06d57aeff207c12c2d04a9b2c87e328056aca5c479cc6bd4a64bb56080e4fd70e17d5cb5c54a97594')
 
 build() {
   mkdir build
