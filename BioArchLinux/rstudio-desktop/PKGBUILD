@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2025.09.1+401
+pkgver=2025.09.2+418
 _pkgver=${pkgver//+/.}
 _srcname=rstudio-${pkgver//+/-}
 _pkgsrc=rstudio-${pkgver//+/-}
@@ -82,7 +82,7 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         '0001-steady_timer.patch::https://patch-diff.githubusercontent.com/raw/rstudio/rstudio/pull/16608.diff'
         )
 noextract+=("gwt-${_gwt_version}.tar.gz")
-sha256sums=('bb075535bdf678e030e89acd147841fa9af2b9eb6bd44f586ff6e390e9423575'
+sha256sums=('dc43de6a03f06a1b67496eee550b7947ad79ccd746f12852eab5feff14c41918'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             '21f030b4a9b189818ebe73c9065dc140ad64308169b7cb323c9002018ffba074'
