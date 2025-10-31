@@ -2,7 +2,7 @@
 
 pkgname='python-plotnine'
 _module=${pkgname#python-}
-pkgver=0.15.0
+pkgver=0.15.1
 pkgrel=1
 pkgdesc="A Grammar of Graphics for Python"
 arch=('x86_64')
@@ -21,7 +21,7 @@ depends=(python
 makedepends=(python-build
              python-installer)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
-sha256sums=('8dc491f5000062f6af7cf29429ee78b617daa8b2c22a1dd4e8b593f08bb51c20')
+sha256sums=('d52801561bb403a89fa8716f4b63b1468ee7cedb50991406ae2feb373a745c1f')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
