@@ -8,15 +8,16 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Abstractions for Promise-Based Asynchronous Programming"
-arch=(x86_64)
+arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r-fastmap
   r-later
+  r-lifecycle
   r-magrittr
+  r-otel
   r-r6
-  r-rcpp
   r-rlang
 )
 checkdepends=(
@@ -26,6 +27,8 @@ checkdepends=(
 optdepends=(
   r-future
   r-knitr
+  r-mirai
+  r-otelsdk
   r-purrr
   r-rmarkdown
   r-spelling

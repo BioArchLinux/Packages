@@ -5,9 +5,10 @@ maintainers:
 repo_depends:
 - r-fastmap
 - r-later
+- r-lifecycle
 - r-magrittr
+- r-otel
 - r-r6
-- r-rcpp
 - r-rlang
 repo_makedepends:
 - r-future
