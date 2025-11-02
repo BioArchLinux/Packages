@@ -30,6 +30,7 @@ optdepends=(
   r-mirai
   r-otelsdk
   r-purrr
+  r-rcpp
   r-rmarkdown
   r-spelling
   r-testthat
