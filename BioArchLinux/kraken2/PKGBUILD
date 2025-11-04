@@ -1,7 +1,7 @@
 pkgname=kraken2
 pkgver=2.1.6
 # _pkgver=$(echo "$pkgver" | sed 's/\.//2')
-pkgrel=0
+pkgrel=1
 pkgdesc="Improved vesion of kraken ultrafast metagenomic sequence classification tool. https://doi.org/10.1186/s13059-019-1891-0"
 arch=('i686' 'x86_64')
 url="https://github.com/DerrickWood/kraken2"
