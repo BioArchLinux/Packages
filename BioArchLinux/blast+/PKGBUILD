@@ -3,7 +3,7 @@
 # Contributor: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
 # shellcheck disable=SC2034,SC2148,SC2154
 pkgname=blast+
-pkgver=29.6.0
+pkgver=29.7.0
 _pkgver=${pkgver//./_}
 pkgrel=1
 pkgdesc="BLAST tool suite (blastn, blastp, blastx, psiblast) built from NCBI C++ toolkit sources"
@@ -18,7 +18,7 @@ provides=('blast' 'igblast')
 replaces=('ncbi-blast')
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release/${pkgver}.tar.gz
         LICENSE)
-sha256sums=('c370ede357471dfb8872c13b128ea9c16040511ad90d6bce700880a463351792'
+sha256sums=('44ea47f5f725568dadc5a149134d7e6be47a4b86f0c2a7ba5a9bc2a21bcc68a7'
             '78bbf3f310ff43f1b5f711e7221d51da1e6f055831bd6c6941e0650bf1261df2')
 
 build() {
