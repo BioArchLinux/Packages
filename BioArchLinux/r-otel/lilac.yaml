@@ -1,7 +1,7 @@
 build_prefix: extra-x86_64
 maintainers:
-- github: shun2wang
-  email: shuonwang@gmail.com
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
 update_on:
 - source: rpkgs
   pkgname: otel
