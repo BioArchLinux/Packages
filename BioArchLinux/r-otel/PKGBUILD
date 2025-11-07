@@ -22,7 +22,6 @@ optdepends=(
   r-shiny
   r-spelling
   r-testthat
-  r-utils
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
