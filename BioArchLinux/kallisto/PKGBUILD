@@ -2,7 +2,7 @@
 # Contributor: bipin kumar <kbipinkumar@pm.me>
 pkgname=kallisto
 pkgver=0.51.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Quantify abundances of transcripts from RNA-Seq data. doi:10.1038/nbt.3519'
 url="http://pachterlab.github.io/$pkgname/"
 license=('BSD-2-Clause')
