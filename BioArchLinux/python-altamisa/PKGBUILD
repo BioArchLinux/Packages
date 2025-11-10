@@ -1,23 +1,23 @@
 _name=altamisa
 pkgname=python-altamisa
-pkgver=0.3.0
-pkgrel=2
+pkgver=0.3.1
+pkgrel=1
 pkgdesc="Implementation of ISA-tools data model and ISA-TAB"
 arch=(any)
 url="https://github.com/bihealth/altamisa"
 license=(MIT)
 depends=('python')
 makedepends=('python-setuptools' 'python-setuptools')
-source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/altamisa-0.3.0.tar.gz")
-sha256sums=('d92eb1017b26b6feb4c376456a789e584a53d569010d6a71dbb4aa8dde62c7d9')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/altamisa-0.3.1.tar.gz")
+sha256sums=('66395f5fea922bcdd9d180c61d13e9979a7afcbf325751b3cdafe24b4ab0bde8')
 
 build() {
-  cd "$srcdir/altamisa-0.3.0"
+  cd "$srcdir/altamisa-0.3.1"
   python3 setup.py build
 }
 
 package() {
-  cd "$srcdir/altamisa-0.3.0"
+  cd "$srcdir/altamisa-0.3.1"
   python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
 
   # make sure we don't install any world-writable or root-readable-only files
