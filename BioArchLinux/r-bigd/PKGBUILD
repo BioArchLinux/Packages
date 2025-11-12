@@ -13,9 +13,8 @@ depends=(
   r
 )
 optdepends=(
-  r-covr
   r-testthat
-  r-tibble
+  r-vctrs
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f293b1d3701b1db0650355ed9bea2e0c')
