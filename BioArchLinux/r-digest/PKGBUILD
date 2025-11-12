@@ -29,6 +29,7 @@ checkdepends=(
 optdepends=(
   r-simplermarkdown
   r-tinytest
+  r-rbenchmark
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f1772a9a1587e99f25f6d640b1a9e1fd')
