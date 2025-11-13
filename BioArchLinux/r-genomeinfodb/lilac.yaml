@@ -4,7 +4,6 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocgenerics
-- r-genomeinfodbdata
 - r-iranges
 - r-s4vectors
 - r-ucsc.utils
