@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "C++17; for AWS S3 support on Linux, libcurl and openssl (optional); cmake >= 3.25 (build-time only, and only for full source build)",
+        expect_systemrequirements = "C++17; for AWS S3 support on Linux, libcurl and openssl (optional); cmake >= 3.26 (build-time only, and only for full source build)",
     )
 
 def post_build():
