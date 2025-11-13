@@ -13,7 +13,6 @@ license=('Artistic-2.0')
 depends=(
   r-abind
   r-biocgenerics
-  r-crayon
   r-iranges
   r-s4vectors
 )
