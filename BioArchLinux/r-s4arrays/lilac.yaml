@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-abind
 - r-biocgenerics
-- r-crayon
 - r-iranges
 - r-s4vectors
 update_on:
