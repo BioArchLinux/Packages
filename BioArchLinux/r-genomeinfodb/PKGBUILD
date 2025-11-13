@@ -15,7 +15,6 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-biocgenerics
-  r-genomeinfodbdata
   r-iranges
   r-s4vectors
   r-ucsc.utils
