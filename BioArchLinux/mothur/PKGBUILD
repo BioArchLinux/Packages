@@ -4,7 +4,7 @@
 
 pkgname=mothur
 pkgver=1.48.4
-pkgrel=0
+pkgrel=1
 pkgdesc='A bioinformatics program for analyzing microbial communities.'
 arch=('x86_64')
 url='https://www.mothur.org/'
