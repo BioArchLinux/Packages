@@ -1,0 +1,177 @@
+--- mothur-1.48.4/Makefile	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.4.new/Makefile	2025-11-13 23:35:11.540603923 +0530
+@@ -24,17 +24,17 @@
+ 
+ OPTIMIZE ?= yes
+ USEREADLINE ?= yes
+-USEBOOST ?= no
+-USEHDF5 ?= no
+-USEGSL ?= no
++USEBOOST ?= yes
++USEHDF5 ?= yes
++USEGSL ?= yes
+ LOGFILE_NAME ?= no
+ 
+-BOOST_LIBRARY_DIR ?= "\"Enter_your_boost_library_path_here\""
+-BOOST_INCLUDE_DIR ?= "\"Enter_your_boost_include_path_here\""
+-HDF5_LIBRARY_DIR ?= "\"Enter_your_HDF5_library_path_here\""
+-HDF5_INCLUDE_DIR ?= "\"Enter_your_HDF5_include_path_here\""
+-GSL_LIBRARY_DIR ?= "\"Enter_your_GSL_library_path_here\""
+-GSL_INCLUDE_DIR ?= "\"Enter_your_GSL_include_path_here\""
++BOOST_LIBRARY_DIR ?= /usr/lib
++BOOST_INCLUDE_DIR ?= /usr/include
++HDF5_LIBRARY_DIR ?= /usr/lib
++HDF5_INCLUDE_DIR ?= /usr/include
++GSL_LIBRARY_DIR ?= /usr/lib
++GSL_INCLUDE_DIR ?= /usr/include
+ MOTHUR_FILES="\"Enter_your_default_path_here\""
+ MOTHUR_TOOLS="\"Enter_your_mothur_tools_path_here\""
+ VERSION = "\"1.48.4\""
+@@ -76,28 +76,52 @@
+ #User specified boost library
+ ifeq  ($(strip $(USEBOOST)),yes)
+ 
+-    LDFLAGS += -L ${BOOST_LIBRARY_DIR}
+-
+-    LIBS += -lboost_iostreams -lboost_system -lboost_filesystem -lz
+-    CXXFLAGS += -DUSE_BOOST -I ${BOOST_INCLUDE_DIR}
++    # Try pkg-config first, fallback to user-specified paths
++    BOOST_PKG_CFLAGS := $(shell pkg-config --cflags libboost_iostreams 2>/dev/null)
++    BOOST_PKG_LIBS := $(shell pkg-config --libs libboost_iostreams libboost_filesystem 2>/dev/null)
++    
++    ifneq ($(BOOST_PKG_CFLAGS),)
++        CXXFLAGS += -DUSE_BOOST $(BOOST_PKG_CFLAGS)
++        LIBS += $(BOOST_PKG_LIBS) -lz
++    else
++        LDFLAGS += -L ${BOOST_LIBRARY_DIR}
++        LIBS += -lboost_iostreams -lboost_filesystem -lz
++        CXXFLAGS += -DUSE_BOOST -I ${BOOST_INCLUDE_DIR}
++    endif
+ endif
+ 
+ #User specified HDF5 library
+ ifeq  ($(strip $(USEHDF5)),yes)
+ 
+-LDFLAGS += -L ${HDF5_LIBRARY_DIR}
+-LIBS += -lhdf5 -lhdf5_cpp
+-CXXFLAGS += -DUSE_HDF5 -I ${HDF5_INCLUDE_DIR}
+-
++    # Try pkg-config first, fallback to user-specified paths
++    HDF5_PKG_CFLAGS := $(shell pkg-config --cflags hdf5 2>/dev/null)
++    HDF5_PKG_LIBS := $(shell pkg-config --libs hdf5 hdf5_cpp 2>/dev/null)
++    
++    ifneq ($(HDF5_PKG_CFLAGS),)
++        CXXFLAGS += -DUSE_HDF5 $(HDF5_PKG_CFLAGS)
++        LIBS += $(HDF5_PKG_LIBS)
++    else
++        LDFLAGS += -L ${HDF5_LIBRARY_DIR}
++        LIBS += -lhdf5 -lhdf5_cpp
++        CXXFLAGS += -DUSE_HDF5 -I ${HDF5_INCLUDE_DIR}
++    endif
+ endif
+ 
+ #User specified GSL library
+ ifeq  ($(strip $(USEGSL)),yes)
+ 
+-LDFLAGS += -L ${GSL_LIBRARY_DIR}
+-LIBS += -lgsl -lgslcblas -lm
+-CXXFLAGS += -DUSE_GSL -I ${GSL_INCLUDE_DIR}
+-
++    # Try pkg-config first, fallback to user-specified paths
++    GSL_PKG_CFLAGS := $(shell pkg-config --cflags gsl 2>/dev/null)
++    GSL_PKG_LIBS := $(shell pkg-config --libs gsl 2>/dev/null)
++    
++    ifneq ($(GSL_PKG_CFLAGS),)
++        CXXFLAGS += -DUSE_GSL $(GSL_PKG_CFLAGS)
++        LIBS += $(GSL_PKG_LIBS) -lm
++    else
++        LDFLAGS += -L ${GSL_LIBRARY_DIR}
++        LIBS += -lgsl -lgslcblas -lm
++        CXXFLAGS += -DUSE_GSL -I ${GSL_INCLUDE_DIR}
++    endif
+ endif
+ 
+ #
+@@ -107,21 +131,21 @@
+ 	VPATH=source/calculators:source/chimera:source/classifier:source/clearcut:source/commands:source/communitytype:source/datastructures:source/engines:source/metastats:source/read:source/svm:source/
+     skipUchime := source/uchime_src/
+     subdirs :=  $(sort $(dir $(filter-out  $(skipUchime), $(wildcard source/*/)))) source/
+-    subDirIncludes = $(patsubst %, -I %, $(subdirs))
+-    subDirLinking =  $(patsubst %, -L%, $(subdirs))
+-    CXXFLAGS += -I. -Isource $(subDirIncludes)
++    # include/linking flags for subdirectories (single definition)
++    subDirIncludes := $(patsubst %, -I %, $(subdirs))
++    subDirLinking := $(patsubst %, -L%, $(subdirs))
++    CXXFLAGS += -Isource $(subDirIncludes)
+     LDFLAGS += -Lsource $(subDirLinking)
+ 
+ 
+ #
+-# Get the list of all .cpp files, rename to .o files
+-#
+-    OBJECTS=$(patsubst %.cpp,%.o,$(wildcard $(addsuffix *.cpp,$(subdirs))))
+-    OBJECTS+=$(patsubst %.c,%.o,$(wildcard $(addsuffix *.c,$(subdirs))))
+-    OBJECTS+=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+-    OBJECTS+=$(patsubst %.c,%.o,$(wildcard *.c))
+-    OBJECTS+=$(patsubst %.cpp,%.o,$(wildcard source/*.cpp))
+-    OBJECTS+=$(patsubst %.cpp,%.o,$(wildcard source/*.c))
++# Get the list of all .cpp/.c files (from all subdirs and source/) and rename to .o files.
++# Use sort to remove accidental duplicates so objects aren't linked more than once.
++    OBJECTS := $(patsubst %.cpp,%.o,$(wildcard $(addsuffix *.cpp,$(subdirs)))) \
++               $(patsubst %.c,%.o,$(wildcard $(addsuffix *.c,$(subdirs)))) \
++               $(patsubst %.cpp,%.o,$(wildcard source/*.cpp)) \
++               $(patsubst %.c,%.o,$(wildcard source/*.c))
++    OBJECTS := $(sort $(OBJECTS))
+ 
+ mothur : $(OBJECTS) uchime
+ 	$(CXX) $(LDFLAGS) $(TARGET_ARCH) -o $@ $(OBJECTS) $(LIBS)
+--- mothur-1.48.4/TestMothur/catch.hpp	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.4.new/TestMothur/catch.hpp	2025-11-13 13:26:55.991951952 +0530
+@@ -7992,7 +7992,6 @@
+     #include <stdbool.h>
+     #include <sys/types.h>
+     #include <unistd.h>
+-    #include <sys/sysctl.h>
+ 
+     namespace Catch{
+ 
+--- mothur-1.48.4/source/uchime_src/myutils.cpp	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.4.new/source/uchime_src/myutils.cpp	2025-11-13 13:10:27.836484118 +0530
+@@ -672,7 +672,6 @@
+ #include <stdio.h>
+ #include <unistd.h>
+ #include <sys/types.h>
+-#include <sys/sysctl.h>
+ #include <sys/socket.h>
+ #include <sys/gmon.h>
+ #include <mach/vm_param.h>
+--- mothur-1.48.4/source/uchime_src/makefile	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.4.new/source/uchime_src/makefile	2025-11-13 13:14:50.086812711 +0530
+@@ -1,6 +1,7 @@
+ CXXFLAGS = -O3 -std=c++11 -D_FILE_OFFSET_BITS=64 -DNDEBUG=1 -DUCHIMES=1 -std=c++11
+ LDFLAGS = -g
+-
++CXXFLAGS += -g -fstack-protector-strong -Wformat -Werror=format-security
++LDFLAGS += -Wl,-z,relro -Wl,-z,now
+ #
+ # Get the list of all .cpp files, rename to .o files
+ #
+@@ -10,7 +11,7 @@
+     OBJECTS+=$(patsubst %.c,%.o,$(wildcard *.c))
+ 
+ uchime : $(OBJECTS)
+-	$(CXX) $(LDFLAGS) $(TARGET_ARCH) -o $@ $(OBJECTS) $(LIBS)
++	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(TARGET_ARCH) -o $@ $(OBJECTS) $(LIBS)
+ 
+ install : uchime
+ 
+--- mothur-1.48.4/source/writer.h	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.4.new/source/writer.h	2025-11-13 13:11:47.118309264 +0530
+@@ -10,6 +10,7 @@
+ #define writer_h
+ 
+ #include "sharedwriter.hpp"
++#include <memory>
+ 
+ /***********************************************************************/
+ 

@@ -11,3 +11,5 @@ update_on:
     github: mothur/mothur
     use_max_tag: true
     prefix: 'v'
+  - alias: boost
+  

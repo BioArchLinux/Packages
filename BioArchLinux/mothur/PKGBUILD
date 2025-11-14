@@ -3,54 +3,31 @@
 # Contributor: Christian Krause ("wookietreiber") <christian.krause@mailbox.org>
 
 pkgname=mothur
-pkgver=1.48.3
-pkgrel=1
+pkgver=1.48.4
+pkgrel=0
 pkgdesc='A bioinformatics program for analyzing microbial communities.'
 arch=('x86_64')
 url='https://www.mothur.org/'
-license=('GPL3')
+license=('GPL-3.0-only')
 provides=('uchime')
-depends=('readline')
-makedepends=('boost' 'hdf5' 'gsl' 'quilt' 'boost-libs')
+depends=('readline' 'glibc' 'gcc-libs' 'boost-libs' 'hdf5' 'gsl')
+makedepends=('boost')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/${pkgname}/${pkgname}/archive/v${pkgver}.tar.gz"
-        "0002-Fix-include.patch"
-        "c++14.patch"
-        "add-hardening-opts.patch"
-        "drop_sys_sysctl.h.patch"
-        "fix_linking.patch"
-        "gcc-11.patch"
-        "series"
+        "boost-gcc-fixes.patch"
         )
-sha256sums=('70129ef4f7cae5840aece54a1f4097a5044b824c9e62b9fcc7460ad70d4de3c0'
-            'e29761b0e466da9b16ea06057b0443d93b5364a0f61653af922fbd89c6ae53bd'
-            'eef923efb4102f8c252eb9fbc9829bcdc9d40827d38f5019682132c7b5a87f72'
-            '24a355ff52029c0f86e8a410f0a8a94e68a9b282e14b35e61081c181cddb211e'
-            '8c24a2a1bac5f592e3058e545ce26a5f0b2df7a06f4e1818922c43613bea4673'
-            '1ef6216196a0b60624a4a856f76c0f770a66673f22dd4ee4e44e0eca1585e015'
-            '845d293a02f84d30c06722729fd306f94c7dee0e85f3540bb1332bcacab169fb'
-            '1727c2c5e79d41964c6790b10467f25c696d9649438d09746a24827745a6934f')
+sha256sums=('aa0de1133fa554f91f861ba01bc63212236d66a7b414b7edea5729987350eca2'
+            '88237da25ddc2bdb867fcd30523f94e63cfd4e1b194e50c3f094126dbc8f43fe')
 
 prepare() {
-  mkdir -p ${pkgname}-${pkgver}/patches
-  cp *.patch ${pkgname}-${pkgver}/patches
-  cp series ${pkgname}-${pkgver}/patches
+  # Use system Boost/HDF5/GSL; fix Makefile for modern GCC
   cd "${pkgname}-${pkgver}"
-  quilt push -a
+  patch -p1 < ${srcdir}/boost-gcc-fixes.patch
 }
 
 build() {
   cd "${pkgname}-${pkgver}"
 
-  make \
-    DUSEBOOST=yes \
-    DUSEHDF5=yes \
-    DUSEGSL=yes \
-    DBOOST_LIBRARY_DIR=/usr/lib \
-    DBOOST_INCLUDE_DIR=/usr/include \
-    DHDF5_LIBRARY_DIR=/usr/lib \
-    DHDF5_INCLUDE_DIR=/usr/include \
-    DGSL_LIBRARY_DIR=/usr/lib \
-    DGSL_INCLUDE_DIR=/usr/include
+  make USEBOOST=yes USEHDF5=yes USEGSL=yes
 }
 
 package() {

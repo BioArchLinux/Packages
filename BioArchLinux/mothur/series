@@ -1,6 +1,0 @@
-add-hardening-opts.patch
-0002-Fix-include.patch
-drop_sys_sysctl.h.patch
-gcc-11.patch
-c++14.patch
-fix_linking.patch
