@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=readr
-_pkgver=2.1.5
+_pkgver=2.1.6
 pkgname=r-${_pkgname,,}
-pkgver=2.1.5
-pkgrel=3
+pkgver=2.1.6
+pkgrel=1
 pkgdesc='Read Rectangular Text Data'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -39,7 +39,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('0fa65a5fe0a46cffe221b7696b52adb82dd4d7a692a895484e438e439594e10a')
+sha256sums=('9d743ba3b0453448ae5dea0582d5d7e5a2ef0489308d04cff7672865540546d9')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
