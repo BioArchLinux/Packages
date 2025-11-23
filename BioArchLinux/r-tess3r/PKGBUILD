@@ -2,7 +2,7 @@
 _pkgname=tess3r
 pkgname=r-${_pkgname,,}
 pkgver=1.1.0
-pkgrel=0
+pkgrel=1
 pkgdesc="Audit Module for JASP"
 arch=('any')
 url="https://github.com/bcm-uga/TESS3_encho_sen"
