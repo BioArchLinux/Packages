@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - r-rcppeigen
+  - r-rcpp
+update_on:
+  - source: github
+    github: bcm-uga/TESS3_encho_sen
+    use_max_tag: true
+    prefix: 'v'
+  - alias: r

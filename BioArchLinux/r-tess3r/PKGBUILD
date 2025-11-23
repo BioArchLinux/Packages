@@ -1,0 +1,24 @@
+#Maintainer: sukanka <su975853527 AT gmail.com>
+_pkgname=tess3r
+pkgname=r-${_pkgname,,}
+pkgver=1.1.0
+pkgrel=0
+pkgdesc="Audit Module for JASP"
+arch=('any')
+url="https://github.com/bcm-uga/TESS3_encho_sen"
+license=('GPL-3.0-or-later')
+depends=(
+    r-rcppeigen
+    r-rcpp
+)
+source=("${_pkgname}_${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('b024e6241f4a638e34b3508e32ff6a1efd39dd5da74b41761ef6f640598515fe')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
