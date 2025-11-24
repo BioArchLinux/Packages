@@ -21,7 +21,6 @@ depends=(
   r-callr
   r-cli
   r-desc
-  r-digest
   r-evaluate
   r-jsonlite
   r-lifecycle
@@ -47,6 +46,7 @@ optdepends=(
   r-usethis
   r-vctrs
   r-xml2
+  r-gh
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('19f81521b3bb056cc22df8585379a007')

@@ -7,7 +7,6 @@ repo_depends:
 - r-callr
 - r-cli
 - r-desc
-- r-digest
 - r-evaluate
 - r-jsonlite
 - r-lifecycle
