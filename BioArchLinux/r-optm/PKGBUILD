@@ -4,7 +4,7 @@ _pkgname=OptM
 _pkgver=0.1.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Estimating the Optimal Number of Migration Edges from 'Treemix'"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
