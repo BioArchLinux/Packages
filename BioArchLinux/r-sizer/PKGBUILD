@@ -1,0 +1,30 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=SiZer
+_pkgver=0.1-8
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Significant Zero Crossings"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r-dplyr
+  r-ggplot2
+  r-rlang
+  r-tidyr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('2e9a95bb6100b6386c65086e2ef0c9c7')
+b2sums=('e9cd9cc0dba299797d644a45ba7a788c97598f821fb42f2125ba1438f2df1a0d4c2a426570afec4b66e38aec4389073827f1b38768406d0ea16c7087899dd1e0')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
