@@ -52,6 +52,7 @@ build() {
 
 package() {
   cd node-${pkgver}
+  tree
   make DESTDIR="$pkgdir" install
   install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname/"
 
@@ -60,5 +61,5 @@ package() {
 
   mv "$pkgdir"/usr/include/node "$pkgdir/usr/include/$pkgname"
 
-  rm -r "$pkgdir"/usr/{bin,lib/node_modules,share/doc,share/man}
+  rm -rf "$pkgdir"/usr/{bin,lib/node_modules,share/doc,share/man}
 }
