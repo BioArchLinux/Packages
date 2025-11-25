@@ -32,7 +32,7 @@ depends=(
   r-xml2
 )
 optdepends=(
-  r-digest
+  r-farver
   r-fontawesome
   r-ggplot2
   r-gtable
