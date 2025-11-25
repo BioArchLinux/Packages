@@ -1,0 +1,36 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=rworldmap
+_pkgver=1.3-8
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Mapping Global Data"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r-fields
+  r-raster
+  r-sp
+  r-terra
+)
+optdepends=(
+  r-classint
+  r-rcolorbrewer
+  r-rworldxtra
+  r-sf
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('c9c1708704266d4671fe5ec00a8aa0dd')
+b2sums=('0a02b71db08f3534363e98d802504bfea465da2f0c7c22f7df15257b1e7a554bc686aafc196267cdb706f1346e5712a229efcb06a7413e7aa51f741943d315bc')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-fields
+- r-raster
+- r-sp
+- r-terra
+update_on:
+- source: rpkgs
+  pkgname: rworldmap
+  repo: cran
+  md5: true
+- alias: r
