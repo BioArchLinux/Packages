@@ -6,8 +6,10 @@ repo_depends:
 - r-maps
 - r-spam
 - r-viridislite
+- r-rcolorbrewer
 update_on:
-- regex: fields_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=fields
+- source: rpkgs
+  pkgname: fields
+  repo: cran
+  md5: true
 - alias: r
