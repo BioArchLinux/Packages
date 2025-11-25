@@ -52,7 +52,6 @@ build() {
 
 package() {
   cd node-${pkgver}
-  tree
   make DESTDIR="$pkgdir" install
   install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname/"
 
