@@ -1,0 +1,47 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=rnaturalearth
+_pkgver=1.1.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="World Map Data from Natural Earth"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r-cli
+  r-httr
+  r-jsonlite
+  r-sf
+  r-terra
+)
+optdepends=(
+  r-devtools
+  r-dplyr
+  r-ggplot2
+  r-ggrepel
+  r-knitr
+  r-lifecycle
+  r-pbapply
+  r-purrr
+  r-rlang
+  r-rmarkdown
+  r-rnaturalearthdata
+  r-rnaturalearthhires
+  r-testthat
+  r-tmap
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('75c05bb5ae777bc0cb4716083c113de3')
+b2sums=('8f03cee9f1e5b2ca957d39b6e1d7d59bfb176534a329410b0bdeff869572a87305feb44ec72d4209de39debfe36d9faf106b166bb208f3a36783bea107db15e0')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
