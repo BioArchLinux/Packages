@@ -47,6 +47,7 @@ optdepends=(
   r-vctrs
   r-xml2
   r-gh
+  r-digest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('19f81521b3bb056cc22df8585379a007')
