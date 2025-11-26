@@ -2,7 +2,7 @@
 
 pkgname=pplacer
 pkgver=1.1.alpha20
-pkgrel=0
+pkgrel=1
 pkgdesc="Phylogenetic placement and downstream analysis "
 arch=("x86_64")
 url="https://matsen.fredhutch.org/pplacer/"
