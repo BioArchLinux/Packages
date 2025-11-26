@@ -3,7 +3,7 @@
 pkgname=python-taxtastic
 _name=taxtastic
 pkgver=0.12.0
-pkgrel=0
+pkgrel=1
 pkgdesc='Build and maintain reference trees, reference alignments, profiles, and associated taxonomic information'
 arch=('any')
 url="https://fhcrc.github.io/taxtastic/index.html"
