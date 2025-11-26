@@ -1,6 +1,6 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 pkgname=trimal
-pkgver=1.5.0
+pkgver=1.5.1
 pkgrel=1
 pkgdesc="A tool for automated alignment trimming in large-scale phylogenetic analyses. https://doi.org/10.1093/bioinformatics/btp348"
 arch=('x86_64')
@@ -9,7 +9,7 @@ license=('GPL')
 depends=()
 makedepends=('make')
 source=(https://github.com/inab/trimal/archive/refs/tags/v${pkgver}.zip)
-sha256sums=('ea7145d08314a8ae5b1c04d39b72fd97add3a0a36f76bf4fe9a930941a0189f1')
+sha256sums=('57d5dd3d5edc36dede3a42102a138af92d51b3a122f271b8db9ce91a1abccb55')
 build() {
   cd "$pkgname-$pkgver"/source
   make
