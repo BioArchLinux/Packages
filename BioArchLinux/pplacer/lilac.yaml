@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: kbipinkumar
+    email: kbipinkumar@pm.me
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+post_build_script: |
+  git_pkgbuild_commit()
+  update_aur_repo()
+repo_depends:
+  - python-fastalite
+  - python-biopython
+  - python-taxtastic
+  - python-dendropy
+update_on:
+  - source: github
+    github: matsen/pplacer
+    use_max_tag: true
+    prefix: 'v'
