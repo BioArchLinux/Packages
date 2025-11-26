@@ -3,7 +3,7 @@
 pkgname=python-fastalite
 _name=fastalite
 pkgver=0.4.1
-pkgrel=0
+pkgrel=1
 pkgdesc='lightweight Python library designed for simple parsing and manipulation of FASTA/FASTQ sequence files'
 arch=('any')
 url="https://github.com/nhoffman/fastalite"
