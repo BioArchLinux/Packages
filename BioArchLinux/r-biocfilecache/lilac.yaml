@@ -8,7 +8,7 @@ repo_depends:
 - r-dbplyr
 - r-dplyr
 - r-filelock
-- r-httr
+- r-httr2
 - r-rsqlite
 update_on:
 - regex: BiocFileCache_([\d._-]+).tar.gz
