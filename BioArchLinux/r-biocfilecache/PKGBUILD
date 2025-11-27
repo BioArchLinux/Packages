@@ -10,13 +10,12 @@ arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
-  r
   r-curl
   r-dbi
   r-dbplyr
   r-dplyr
   r-filelock
-  r-httr
+  r-httr2
   r-rsqlite
 )
 optdepends=(
