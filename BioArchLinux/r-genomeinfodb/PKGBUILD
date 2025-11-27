@@ -17,6 +17,7 @@ depends=(
   r-biocgenerics
   r-iranges
   r-s4vectors
+  r-seqinfo
   r-ucsc.utils
 )
 optdepends=(
@@ -29,6 +30,7 @@ optdepends=(
   r-genomicalignments
   r-genomicfeatures
   r-genomicranges
+  r-genomeinfodbdata
   r-knitr
   r-r.utils
   r-rsamtools

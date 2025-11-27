@@ -6,6 +6,7 @@ repo_depends:
 - r-biocgenerics
 - r-iranges
 - r-s4vectors
+- r-seqinfo
 - r-ucsc.utils
 update_on:
 - source: rpkgs
