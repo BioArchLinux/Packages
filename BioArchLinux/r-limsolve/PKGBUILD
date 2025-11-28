@@ -14,6 +14,10 @@ depends=(
   r-lpsolve
   r-quadprog
 )
+optdepends=(
+  r-knitr
+  r-rmarkdown
+)
 makedepends=(
   gcc-fortran
 )
