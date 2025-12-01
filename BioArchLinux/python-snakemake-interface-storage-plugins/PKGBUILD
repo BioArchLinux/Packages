@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 _name=snakemake-interface-storage-plugins
 pkgname=python-$_name
-pkgver=4.3.1
+pkgver=4.3.2
 pkgrel=1
 pkgdesc="Common functions and classes for Snakemake and its plugins"
 arch=('any')
@@ -10,7 +10,7 @@ license=('MIT')
 depends=(python-snakemake-interface-common python-wrapt python-reretry python-throttler)
 makedepends=(python-build python-installer python-wheel python-poetry-core)
 source=($_name-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz)
-sha256sums=('c425cc1e9df078ab47f4aa724e8ebf353f71f6362d618788fe14feac15568933')
+sha256sums=('16b4e9e253a6463b34655d95f4ae032dab1c51097e85db604fc8c7073aea184a')
 
 build() {
     cd "$_name-$pkgver"
