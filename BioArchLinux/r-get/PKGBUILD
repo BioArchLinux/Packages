@@ -25,11 +25,14 @@ optdepends=(
   r-patchwork
   r-quantreg
   r-r.rsp
+  r-sf
   r-sp
   r-spatstat.explore
   r-spatstat.geom
+  r-spatstat.knet
   r-spatstat.linnet
   r-spatstat.model
+  r-spatstat.random
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
