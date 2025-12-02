@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 # Contributor: Mick Elliot <micke at sfu dot ca>
 pkgname=ncbi-tools++
-pkgver=29.7.0
+pkgver=29.8.0
 _pkgver=${pkgver//./_}
 pkgrel=1
 pkgdesc="Applications, scripts and C++ libraries for the analysis of biological data"
@@ -16,7 +16,7 @@ provides=('blast+-bin' 'blast+')
 conflicts=('blast+-bin' 'blast+')
 source=(https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release/${pkgver}.tar.gz
         LICENSE)
-sha256sums=('44ea47f5f725568dadc5a149134d7e6be47a4b86f0c2a7ba5a9bc2a21bcc68a7'
+sha256sums=('a5e5a08f6028b68fd61b0fe28ecff8d55e4398a1156913b53efeef5bce848b0a'
             '78bbf3f310ff43f1b5f711e7221d51da1e6f055831bd6c6941e0650bf1261df2')
 
 build() {
