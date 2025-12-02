@@ -60,7 +60,7 @@ b2sums=('d63c12872675eaa729e6d058b163ddf7e557ee1ee22566f8b6221c7a52a0543decb37b8
 
 prepare() {
   # Build using system libraries
-  patch -Np1 -i igraph-system-libs.patch
+  patch -Np1 -i igraph-system-libs20251202.patch
 }
 
 build() {
