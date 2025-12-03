@@ -3,7 +3,7 @@
 pkgname=eems
 _pkgname=rEEMSplots
 pkgver=2023.10.28
-pkgrel=0
+pkgrel=1
 pkgdesc="Estimating Effective Migration Surfaces"
 arch=(x86_64)
 url="https://github.com/dipetkov/eems"
