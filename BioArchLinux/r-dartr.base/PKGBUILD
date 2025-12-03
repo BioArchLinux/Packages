@@ -1,10 +1,10 @@
 # Maintainer: guoyi <kuoi@malacology.net>
 
 _pkgname=dartR.base
-_pkgver=1.0.5
+_pkgver=1.0.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Analysing 'SNP' and 'Silicodart' Data - Basic Functions"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -84,8 +84,8 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('5bf9a9a98080c55e1de812c2bce9a082')
-b2sums=('9295823ce7473fb96331f3d89c2b03cf1b4077c1af478f615be6cbf6088a748b3b5592d8194a2dd4fa9f5bba1bba7593619c006318454fea111dc8cef13d0b15')
+md5sums=('4a89c935d84e80c3ab92954b900bc83e')
+b2sums=('e649e1530fe87ea6f43947e30ae3f432de3abcb35d895ff5a521e90525e69081d95007db71229dac31eeedf2be56efd12786b136d4ce8793553cc9b1ecc7820a')
 
 build() {
   mkdir build
