@@ -1,0 +1,41 @@
+# Maintainer: Guoyi Zhang <myname at malacology dot net>
+
+pkgname=libplinkio
+pkgver=0.9.8
+pkgrel=0
+pkgdesc="A small C and Python library for reading PLINK genotype files"
+arch=(x86_64)
+url="https://github.com/mfranberg/libplinkio"
+license=('BSD-3-Clause' 'Apache-2.0')
+depends=('glibc' 'boost-libs' 'python')
+makedepends=('cmake' 'make' 'gcc' 'boost' 'eigen' 'python-setuptools')
+source=("$url/archive/refs/tags/v${pkgver}.tar.gz"
+	"unsafe2025a.patch::https://github.com/mfranberg/libplinkio/pull/49.patch")
+md5sums=('2dbf79e46917940fea563e6386bfa878'
+         '3029e277b87543a1dd3264af707808d5')
+
+prepare() {
+  cd $pkgname-$pkgver
+  patch -p1 < ../unsafe2025a.patch
+}
+
+build() {
+  cd $pkgname-$pkgver
+
+  # Python
+  python setup.py build
+
+  # C++
+  mkdir -p build && cd build
+  cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_POLICY_VERSION_MINIMUM=3.5 ..
+  make -j1
+}
+
+package() {
+  cd $pkgname-$pkgver
+  # Python
+  python setup.py install --root="$pkgdir" --optimize=1
+  # C++
+  cd build 
+  make DESTDIR="${pkgdir}" install
+}
