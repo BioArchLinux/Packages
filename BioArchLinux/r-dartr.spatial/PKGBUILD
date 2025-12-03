@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=dartR.spatial
-_pkgver=0.78
+_pkgver=1.0.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Applying Landscape Genomic Methods on 'SNP' and 'Silicodart' Data"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -33,8 +33,8 @@ optdepends=(
   r-terra
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('2cb915401d840fe7cf69111edbae202d')
-b2sums=('c74197ef59d7413b5ab72daf90984e0426eb5202d7b01d75654a72ec499b47d6125374e17f681ddcc3de6a83bfb34b97a552af6dd8a53334760d8c4c46775101')
+md5sums=('c5ed5617ea1dfd53dee195147c435727')
+b2sums=('61e2f0f7af9fb7b3febe4517cd883b5a4082ac8195b2abadb3d80a196048352dbaad69a22d2d784313d3afd34511025d79a4b5a1782ffb9487550ae8a75868fd')
 
 build() {
   mkdir build
