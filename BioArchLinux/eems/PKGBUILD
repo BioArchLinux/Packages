@@ -1,0 +1,61 @@
+# Maintainer: Guoyi Zhang <myname at malacology dot net>
+
+pkgname=eems
+_pkgname=rEEMSplots
+pkgver=2023.10.28
+pkgrel=0
+pkgdesc="Estimating Effective Migration Surfaces"
+arch=(x86_64)
+url="https://github.com/dipetkov/eems"
+license=('GPL-2.0-or-later')
+depends=('glibc' 'r' 'libplinkio'
+	'r-rcppeigen' 'r-rcpp' 'r-raster' 'r-sp' 'r-sf')
+makedepends=('make' 'gcc' 'eigen' 'git' 'tar')
+optdepends=(
+    'r-rcolorbrewer'
+    'r-deldir'
+    'r-dichromat'
+    'r-rworldmap')
+source=("git+$url.git")
+md5sums=('SKIP')
+pkgver(){
+  cd $pkgname
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+build() {
+  cd $pkgname
+
+  echo "Building EEMS"
+  cd bed2diffs/src
+  make linux PLINKIO=/usr
+  cd -
+  
+  for dir in runeems_snps/src runeems_sats/src Pairwise_FSTs/runeems_Fsts/src
+  do
+  echo "Building EEMS component in $dir"
+  cd $dir
+  make linux BOOST_INC=/usr/include BOOST_LIB=/usr/lib EIGEN_INC=/usr/include/eigen3 LDFLAGS="-lboost_program_options -lboost_filesystem"
+  cd -
+  done
+
+  echo "Building R package rEEMSplots"
+  cd plotting
+  tar -zcvf ${_pkgname}.tar.gz  ${_pkgname}
+  R CMD INSTALL ${_pkgname}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  cd $pkgname
+
+  install -Dm755 bed2diffs/src/bed2diffs_v1 "$pkgdir/usr/bin/bed2diffs"
+  install -Dm755 runeems_snps/src/runeems_snps "$pkgdir/usr/bin/runeems_snps"
+  install -Dm755 runeems_sats/src/runeems_sats "$pkgdir/usr/bin/runeems_sats"
+  install -Dm755 Pairwise_FSTs/runeems_Fsts/src/runeems_Fsts "$pkgdir/usr/bin/runeems_Fsts"
+  
+  cd $srcdir/$_pkgname
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "$srcdir/$_pkgname" "$pkgdir/usr/lib/R/library"
+  
+}
+
+
