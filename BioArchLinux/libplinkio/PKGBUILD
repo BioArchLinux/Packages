@@ -2,7 +2,7 @@
 
 pkgname=libplinkio
 pkgver=0.9.8
-pkgrel=0
+pkgrel=1
 pkgdesc="A small C and Python library for reading PLINK genotype files"
 arch=(x86_64)
 url="https://github.com/mfranberg/libplinkio"
