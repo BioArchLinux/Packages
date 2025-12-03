@@ -10,7 +10,7 @@ arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
-  r
+  r-rhpcblasctl
   r-gdsfmt
 )
 optdepends=(

@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-gdsfmt
+- r-rhpcblasctl
 update_on:
 - regex: SNPRelate_([\d._-]+).tar.gz
   source: regex
