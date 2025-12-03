@@ -11,7 +11,6 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-biocgenerics
-  r-zlibbioc
   zlib
 )
 optdepends=(

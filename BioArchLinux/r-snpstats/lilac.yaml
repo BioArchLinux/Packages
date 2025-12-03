@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
-- r-zlibbioc
 update_on:
 - source: rpkgs
   pkgname: snpStats
