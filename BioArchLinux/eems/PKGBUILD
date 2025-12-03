@@ -8,9 +8,9 @@ pkgdesc="Estimating Effective Migration Surfaces"
 arch=(x86_64)
 url="https://github.com/dipetkov/eems"
 license=('GPL-2.0-or-later')
-depends=('glibc' 'r' 'libplinkio'
+depends=('glibc' 'boost-libs' 'r' 'libplinkio'
 	'r-rcppeigen' 'r-rcpp' 'r-raster' 'r-sp' 'r-sf')
-makedepends=('make' 'gcc' 'eigen' 'git' 'tar')
+makedepends=('make' 'gcc' 'eigen' 'git' 'tar' 'boost')
 optdepends=(
     'r-rcolorbrewer'
     'r-deldir'
