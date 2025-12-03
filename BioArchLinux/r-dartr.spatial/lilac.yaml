@@ -8,6 +8,7 @@ repo_depends:
 - r-dartr.base
 - r-dartr.data
 - r-data.table
+- r-dismo
 - r-ggplot2
 - r-raster
 - r-sp

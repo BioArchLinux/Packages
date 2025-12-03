@@ -21,9 +21,9 @@ depends=(
   r-stampp
   r-tidyr
   r-vegan
+  r-dismo
 )
 optdepends=(
-  r-dismo
   r-gdistance
   r-gplots
   r-mmod
