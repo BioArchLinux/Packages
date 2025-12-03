@@ -3,9 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-rdpack
 - r-minqa
 - r-nloptr
 - r-reformulas
+- r-rlang
 repo_makedepends:
 - r-rcpp
 - r-rcppeigen

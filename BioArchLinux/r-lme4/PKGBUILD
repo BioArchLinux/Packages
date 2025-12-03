@@ -13,9 +13,11 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  r-rdpack
   r-minqa
   r-nloptr
   r-reformulas
+  r-rlang
 )
 makedepends=(
   r-rcpp
