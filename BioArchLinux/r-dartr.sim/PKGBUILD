@@ -26,6 +26,11 @@ depends=(
   r-shinywidgets
   r-stringi
   r-stringr
+  r-doparallel
+  r-ggrepel
+  r-foreach
+  r-dplyr
+  r-dartr.popgen
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('265e9c8cb527b121b24ca20da2ae46b8')

@@ -19,6 +19,11 @@ repo_depends:
 - r-shinywidgets
 - r-stringi
 - r-stringr
+- r-doparallel
+- r-ggrepel
+- r-foreach
+- r-dplyr
+- r-dartr.popgen
 update_on:
 - source: rpkgs
   pkgname: dartR.sim
