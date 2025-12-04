@@ -15,6 +15,7 @@ repo_depends:
 - r-later
 - r-lifecycle
 - r-mime
+- r-otel
 - r-promises
 - r-r6
 - r-rlang

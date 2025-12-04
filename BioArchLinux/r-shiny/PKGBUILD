@@ -24,6 +24,7 @@ depends=(
   r-later
   r-lifecycle
   r-mime
+  r-otel
   r-promises
   r-r6
   r-rlang
@@ -36,6 +37,7 @@ checkdepends=(
   r-coro
   r-future
   r-ggplot2
+  r-otelsdk
   r-testthat
   ttf-font
 )
