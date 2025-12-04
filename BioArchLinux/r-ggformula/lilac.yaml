@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
+- r-ggiraph
 - r-ggridges
 - r-labelled
 - r-mosaiccore

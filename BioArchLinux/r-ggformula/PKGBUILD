@@ -12,6 +12,7 @@ url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
   r-ggplot2
+  r-ggiraph
   r-ggridges
   r-labelled
   r-mosaiccore
@@ -24,8 +25,11 @@ optdepends=(
   r-broom
   r-covr
   r-dplyr
+  r-ggforce
   r-ggplot2movies
   r-ggthemes
+  r-glue
+  r-hexbin
   r-interp
   r-knitr
   r-lubridate
@@ -33,7 +37,9 @@ optdepends=(
   r-mosaic
   r-mosaicdata
   r-palmerpenguins
+  r-patchwork
   r-purrr
+  r-quarto
   r-quantreg
   r-rmarkdown
   r-sf
