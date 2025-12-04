@@ -9,6 +9,7 @@ arch=(x86_64)
 url="https://github.com/dipetkov/reemsplots2"
 license=('GPL-2.0-or-later')
 depends=('r-rcppeigen' 'r-rcpp' 'r-dplyr' 'r-ggplot2' 'r-scales' 'r-sp' 'r-tidyr')
+makedepends=('git')
 optdepends=(
     'r-rcolorbrewer'
     'r-deldir'
