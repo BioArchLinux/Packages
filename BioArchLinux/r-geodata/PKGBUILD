@@ -1,0 +1,34 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=geodata
+_pkgver=0.6-6
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=0
+pkgdesc="Access Geographic Data"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-rappdirs
+  r-terra
+)
+optdepends=(
+  r-archive
+  r-httr
+  r-jsonlite
+  r-r.utils
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('672f87b0892ab31e8acebcb6663a4f6a')
+b2sums=('118a45b34f0d2bb761953e58576ae1dc99098e22aa596419346cd0028eb7dc7dfe08cf3966d57ba8c44fa52abd946c550b424f44e0b121f50f19b74ffd5e7072')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

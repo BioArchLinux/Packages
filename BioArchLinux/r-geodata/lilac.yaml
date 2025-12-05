@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: pekkarr
+  email: pekkarr@protonmail.com
+update_on:
+- source: rpkgs
+  pkgname: geodata
+  repo: cran
+  md5: true
+- alias: r
+repo_depends:
+- r-rappdirs
+- r-terra
