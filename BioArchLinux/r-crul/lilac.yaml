@@ -6,8 +6,10 @@ repo_depends:
 - r-curl
 - r-httpcode
 - r-jsonlite
+- r-lifecycle
 - r-mime
 - r-r6
+- r-rlang
 - r-urltools
 update_on:
 - regex: crul_([\d._-]+).tar.gz
