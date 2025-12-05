@@ -18,14 +18,14 @@ provides=('ncbi-vdb')
 arch=(x86_64)
 depends=('python' 'glibc' 'gcc-libs' 'java-runtime')
 optdepends=('python-ngs: python module for ncbi sra-tools')
-makedepends=('cmake'  'doxygen' 'hdf5' 'mbedtls' 'libxml2')
+makedepends=('cmake'  'doxygen' 'hdf5' 'mbedtls' 'libxml2' 'java-environment')
 sha256sums=('c8c1332747c913791914f4092bfba578d61131d3f742cd55d29f6ed7f8df5c92'
             '36b3467affd53bea794e3eeb5598619d820bc726dc68751a189181ac7973047d'
             'b7bf289f0d52824d7871d35add266838524f7cea919c9e9424842f9291d3df2a')
 options=(!lto)
 prepare(){
-  cd ${srcdir}/"$pkgname-$pkgver"
-  patch -p1 < ${srcdir}/fix_xml_attribute_unused.patch
+  cd "${srcdir}/$pkgname-$pkgver"
+  patch -p1 < "${srcdir}/fix_xml_attribute_unused.patch"
   # fix permission denied in make install,
   # and we manually install them.
   sed -i 's|/etc/ncbi|${CMAKE_CURRENT_SOURCE_DIR}/etc/ncbi|g' build/env.cmake
@@ -69,7 +69,7 @@ build(){
         -DCMAKE_CXX_FLAGS="${CXXFLAGS} -fno-strict-aliasing -fno-aggressive-loop-optimizations"
   make
 
-  cd ${srcdir}/"$pkgname-$pkgver"
+  cd "${srcdir}/$pkgname-$pkgver"
   install -d  build1
   cd build1
   cmake .. -DCMAKE_BUILD_TYPE='None' \
@@ -84,18 +84,18 @@ build(){
 }
 
 package(){
-  install -d  $srcdir/$_dep-$pkgver/interfaces/kfg/ncbi/etc/profile.d/
+  install -d  "$srcdir/$_dep-$pkgver/interfaces/kfg/ncbi/etc/profile.d/"
 
   cd "$_dep-$pkgver"/build1
   make DESTDIR="$pkgdir" install
 
-  cd ${srcdir}/"$pkgname-$pkgver"/build1
+  cd "${srcdir}/$pkgname-$pkgver/build1"
   make DESTDIR="$pkgdir" install
-  cp -rf ${srcdir}/"$pkgname-$pkgver"/etc "$pkgdir"
-  cp -rf $srcdir/$_dep-$pkgver/interfaces/kfg/ncbi/etc "$pkgdir"
+  cp -rf "${srcdir}/$pkgname-$pkgver/etc" "$pkgdir"
+  cp -rf "$srcdir/$_dep-$pkgver/interfaces/kfg/ncbi/etc" "$pkgdir"
 
   # install LICENSE file
-  install -Dm644 ${srcdir}/"$pkgname-$pkgver"/LICENSE  -t "$pkgdir"/usr/share/licenses/sra-tools/
+  install -Dm644 "${srcdir}/$pkgname-$pkgver/LICENSE"  -t "$pkgdir"/usr/share/licenses/sra-tools/
 
   # remove empty folder
   rm -Rf "$pkgdir"/usr/include/kfg/ncbi/etc/
