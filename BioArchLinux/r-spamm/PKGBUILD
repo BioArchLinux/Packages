@@ -33,6 +33,7 @@ checkdepends=(
 optdepends=(
   r-agridat
   r-blackbox
+  r-fmesher
   r-foreach
   r-future
   r-future.apply
