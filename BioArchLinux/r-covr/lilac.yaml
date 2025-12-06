@@ -3,7 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-crayon
+- r-cli
 - r-digest
 - r-httr
 - r-jsonlite
@@ -11,11 +11,12 @@ repo_depends:
 - r-withr
 - r-yaml
 repo_makedepends:
+- r-box
 - r-dt
 - r-htmltools
 - r-memoise
-- r-mockery
 - r-rstudioapi
+- r-s7
 - r-testthat
 - r-xml2
 update_on:

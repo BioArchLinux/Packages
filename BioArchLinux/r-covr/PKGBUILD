@@ -14,7 +14,7 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r-crayon
+  r-cli
   r-digest
   r-httr
   r-jsonlite
@@ -23,11 +23,12 @@ depends=(
   r-yaml
 )
 checkdepends=(
+  r-box
   r-dt
   r-htmltools
   r-memoise
-  r-mockery
   r-rstudioapi
+  r-s7
   r-testthat
   r-xml2
 )
