@@ -7,9 +7,11 @@ repo_depends:
 - r-cowplot
 - r-deriv
 - r-dplyr
+- r-forecast
 - r-ggplot2
 - r-microbenchmark
 - r-modelr
+- r-purrr
 - r-rlang
 - r-tibble
 - r-tidyr
