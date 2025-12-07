@@ -4,7 +4,6 @@ maintainers:
   email: sukanka@askk.cc
 repo_depends:
 - r-cli
-- r-gghalves
 - r-ggplot2
 - r-ggpp
 - r-rlang
