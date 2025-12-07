@@ -11,6 +11,7 @@ repo_depends:
   - r-generics
   - r-lambertw
   - r-nortest
+  - r-progress
   - r-purrr
   - r-recipes
   - r-tibble
