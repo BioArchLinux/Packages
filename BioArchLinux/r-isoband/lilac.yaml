@@ -4,6 +4,10 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_makedepends:
 - r-testthat
+- r-cpp11
+repo_depends:
+- r-cli
+- r-rlang
 update_on:
 - source: rpkgs
   pkgname: isoband
