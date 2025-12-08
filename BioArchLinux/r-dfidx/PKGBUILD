@@ -10,17 +10,13 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-dplyr
   r-formula
-  r-glue
-  r-pillar
   r-rdpack
-  r-tidyselect
-  r-vctrs
 )
 optdepends=(
   r-knitr
   r-quarto
+  r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c6a7f74c8ea9d86c5ba078e73bc98cf3')
