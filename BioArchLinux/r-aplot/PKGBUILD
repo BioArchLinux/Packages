@@ -16,6 +16,7 @@ depends=(
   r-ggplotify
   r-magrittr
   r-patchwork
+  r-pillar
   r-yulab.utils
 )
 optdepends=(
