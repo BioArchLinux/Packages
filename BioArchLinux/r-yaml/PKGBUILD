@@ -23,7 +23,9 @@ checkdepends=(
   r-runit
 )
 optdepends=(
-  r-runit
+  r-knitr
+  r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('9eba6403924a7ac6d190fa742044245f')
