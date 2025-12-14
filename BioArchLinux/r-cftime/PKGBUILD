@@ -18,11 +18,9 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-knitr
   r-rmarkdown
   r-stringr
   r-testthat
-  r-ncdfcf
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('4e64d34fe636771922cfc370f5f16e16')
