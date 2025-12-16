@@ -16,7 +16,7 @@ makedepends=(git python-setuptools)
 source=(git+$url.git#branch=dev
 	fix_py3.13.patch::https://github.com/theia-dev/Qiber3D/pull/4.patch)
 sha512sums=('SKIP'
-	    'SKIP')
+            '01d63ece5153044ef22ac9ed6cb648e920e0acefe98f7d53a39688cc458b49c00c2ba74bbce0357010608d41884114440de80b5fbcb7b40e6ab0d37b8ac89f97')
 
 pkgver() {
   git -C ${_base} describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
