@@ -6,6 +6,8 @@ pre_build_script: |
   pypi_pre_build(depends = ['python-numpy', 'python-xmltodict', 'python-pims'], makedepends = ['python-setuptools'], depends_setuptools = False, license = 'GPL-3.0-or-later', pep517 = False)
 post_build_script: |
   pypi_post_build()
+repo_depends:
+  - python-pims
 update_on:
   - source: pypi
     pypi: nd2reader
