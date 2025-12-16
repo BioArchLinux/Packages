@@ -1,0 +1,31 @@
+_base=Qiber3D
+pkgname=python-qiber3d
+pkgver=2025.5.4
+pkgrel=1
+pkgdesc="Automated quantification of fibrous networks \
+	 https://doi.org/10.1093/gigascience/giab091"
+arch=(any)
+url="https://github.com/theia-dev/Qiber3D"
+license=(MIT)
+depends=(python-pillow python-numpy python-scikit-image python-tqdm python-scipy
+	vtk python-openpyxl python-blosc python-matplotlib python-networkx python-tifffile
+	python-pims python-vedo python-nd2reader)
+makedepends=(git python-setuptools)
+source=(git+$url.git#branch=dev)
+sha512sums=('SKIP')
+
+pkgver() {
+  git -C ${_base} describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+build() {
+  cd ${_base}
+  python3 setup.py build
+}
+
+
+package() {
+  cd ${_base}
+  python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
+}
+

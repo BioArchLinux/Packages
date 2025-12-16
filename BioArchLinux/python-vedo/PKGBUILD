@@ -1,0 +1,25 @@
+# Maintainer: Christian Holme (Nordwin) <hcmh [at] mailbox [dot] org>
+_base=vedo
+pkgname=python-${_base}
+pkgver=2025.5.4
+pkgrel=1
+pkgdesc="Python module for scientific analysis and visualization of 3d objects"
+arch=(any)
+url="https://github.com/marcomusy/vedo"
+license=(MIT)
+depends=(python-numpy vtk python-typing_extensions python-pygments)
+makedepends=(python-build python-installer python-wheel python-setuptools)
+source=(${_base}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz)
+sha512sums=('14c8a59f212c856c83165722da3cdce3fba30880fa555389690598de6ca815b3615fea428e8f757b03cc7a62bc86cae962fae9fec3a80301227dec30e220d3e1')
+
+build() {
+  cd ${_base}-${pkgver}
+  python -m build --wheel --no-isolation
+}
+
+
+package() {
+  cd ${_base}-${pkgver}
+  python -m installer --destdir="$pkgdir" dist/*.whl
+  install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
