@@ -9,13 +9,22 @@ url="https://github.com/theia-dev/Qiber3D"
 license=(MIT)
 depends=(python-pillow python-numpy python-scikit-image python-tqdm python-scipy
 	vtk python-openpyxl python-blosc python-matplotlib python-networkx python-tifffile
-	python-pims python-vedo python-nd2reader)
+	python-pims python-vedo python-nd2reader
+	ospray openvr anari-sdk opencascade liblas cgns paraview-catalyst viskores adios2 gl2ps
+	)
 makedepends=(git python-setuptools)
-source=(git+$url.git#branch=dev)
-sha512sums=('SKIP')
+source=(git+$url.git#branch=dev
+	fix_py3.13.patch::https://github.com/theia-dev/Qiber3D/pull/4.patch)
+sha512sums=('SKIP'
+	    'SKIP')
 
 pkgver() {
   git -C ${_base} describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+prepare(){
+  cd ${_base}
+  patch -p1 < ../fix_py3.13.patch
 }
 
 build() {
