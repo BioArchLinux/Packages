@@ -1,6 +1,6 @@
 _base=Qiber3D
 pkgname=python-qiber3d
-pkgver=2025.5.4
+pkgver=0.7.0.r8.gb126aea
 pkgrel=1
 pkgdesc="Automated quantification of fibrous networks \
 	 https://doi.org/10.1093/gigascience/giab091"
