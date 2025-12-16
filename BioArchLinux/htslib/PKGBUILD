@@ -2,8 +2,8 @@
 # Contributor: Christopher Vittal ("viralstitch") <chris@vittal.dev>
 
 pkgname=htslib
-pkgver=1.22.1
-pkgrel=2
+pkgver=1.23
+pkgrel=1
 pkgdesc='A C library for high-throughput sequencing data formats. https://doi.org/10.1093/gigascience/giab007'
 arch=('x86_64')
 url="https://github.com/samtools/${pkgname}"
@@ -14,7 +14,7 @@ replaces=('tabix')
 conflicts=('tabix')
 options=('staticlibs')
 source=("${pkgname}-${pkgver}.tar.bz2::${url}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.bz2")
-sha256sums=('3dfa6eeb71db719907fe3ef7c72cb2ec9965b20b58036547c858c89b58c342f7')
+sha256sums=('63927199ef9cea03096345b95d96cb600ae10385248b2ef670b0496c2ab7e4cd')
 
 build() {
   cd "${pkgname}-${pkgver}"
