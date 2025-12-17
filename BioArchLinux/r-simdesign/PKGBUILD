@@ -2,7 +2,7 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=SimDesign
-_pkgver=2.21
+_pkgver=2.22
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -42,8 +42,8 @@ optdepends=(
   r-snow
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1456be5949f3fe3bd0f507bd7a767c65')
-b2sums=('79fc5384502fb82da6ce5423bebed5a31c46b4faf7237928a889b489e93aa1337ec00c4f4465e84df6a655d37a7ca5bef7d286149cc5a21b685fcea79ec6e5d1')
+md5sums=('70134dd6d98e5bab9593957c8f555de2')
+b2sums=('59689b0c5947de78f837dc9ec52efc57d4a3a7d5f8a3b80548c7fa3b57af6dc2ac6a57fea446fb78ed745fb1abdd36fe88f6c8ea036f9bd9c32e3cf98d05bbf6')
 
 build() {
   mkdir build
