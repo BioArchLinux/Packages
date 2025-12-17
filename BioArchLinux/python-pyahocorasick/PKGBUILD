@@ -2,7 +2,7 @@
 
 pkgname=python-pyahocorasick
 _module=${pkgname#python-}
-pkgver=2.2.0
+pkgver=2.3.0
 pkgrel=1
 pkgdesc="Fast and memory efficient library for exact or approximate multi-pattern string search"
 arch=('x86_64')
@@ -19,7 +19,7 @@ makedepends=(
 options=(!emptydirs)
 source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz"
         )
-sha256sums=('817f302088400a1402bf2f8631fdb21cf5a2666888e0d6a7d5a3ad556212e9da')
+sha256sums=('2960f5838bbcca4d7765c40478ec56f938e3f161946ff84f00c06d2b3a0ba9dd')
 
 build() {
     cd "$_module-$pkgver"
