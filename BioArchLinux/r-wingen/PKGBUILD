@@ -1,0 +1,58 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=wingen
+_pkgver=2.2.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=0
+pkgdesc="Continuous Mapping of Genetic Diversity"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r-crayon
+  r-dplyr
+  r-furrr
+  r-gdistance
+  r-ggplot2
+  r-gstat
+  r-hierfstat
+  r-lifecycle
+  r-magrittr
+  r-pegas
+  r-purrr
+  r-raster
+  r-rlang
+  r-sf
+  r-terra
+  r-tidyr
+  r-tidyselect
+  r-vcfr
+  r-viridis
+)
+optdepends=(
+  r-adegenet
+  r-automap
+  r-covr
+  r-devtools
+  r-future
+  r-knitr
+  r-mass
+  r-rmarkdown
+  r-spatialkde
+  r-stringr
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('e835882e989d565941180aa0fc4b4591')
+b2sums=('e1e6dcb1db500571a509d45cc4973527d5f8e49f72ef841161f0359612ecb16bf8aa8638475cef67520f7775cbc80ada6e949f901fa3aa3093d643fd444b3288')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

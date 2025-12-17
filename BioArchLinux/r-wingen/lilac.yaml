@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-crayon
+- r-dplyr
+- r-furrr
+- r-gdistance
+- r-ggplot2
+- r-gstat
+- r-hierfstat
+- r-lifecycle
+- r-magrittr
+- r-pegas
+- r-purrr
+- r-raster
+- r-rlang
+- r-sf
+- r-terra
+- r-tidyr
+- r-tidyselect
+- r-vcfr
+- r-viridis
+update_on:
+- source: rpkgs
+  pkgname: wingen
+  repo: cran
+  md5: true
+- alias: r
