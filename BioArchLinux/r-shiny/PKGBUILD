@@ -60,6 +60,7 @@ optdepends=(
   r-yaml
   r-mirai
   r-watcher
+  r-otelsdk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('57f4e39ae3b46a6ba66d328c121e62b9')
