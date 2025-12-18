@@ -45,6 +45,7 @@ optdepends=(
   r-tibble
   r-tidyr
   r-withr
+  r-tinytable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a9fdefb08eaae82925f018d6337f61e6')
