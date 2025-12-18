@@ -11,12 +11,11 @@ pkgrel=5
 pkgdesc="A Simple Package for Testing R Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only')
+license=('MIT')
 depends=(
   r
 )
 optdepends=(
-  r-covr
   r-rstudioapi
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
