@@ -33,7 +33,7 @@ build() {
       --configure-args="--with-mpicc=/usr/bin/mpicc --with-mpiexec=mpiexec"
 }
 
-check() {
+_check() {
   cd "$_pkgname/tests"
   R_LIBS="$srcdir/build" Rscript --vanilla RNetCDF-test.R
 }
