@@ -6,6 +6,7 @@ repo_depends:
 - r-estimability
 - r-mvtnorm
 - r-numderiv
+- r-rlang
 update_on:
 - source: rpkgs
   pkgname: emmeans
