@@ -16,9 +16,9 @@ license=('BSD-3-Clause')
 depends=(
   r
 )
-makedepends=(
-  re2c
-)
+#makedepends=(
+#  re2c
+#)
 checkdepends=(
   r-runit
 )
@@ -33,7 +33,7 @@ b2sums=('65ff9e7090822702a96e75a20d19bcfbbf9725e6b52e259485985e29231ad85bf08a58e
 
 build() {
   # generate implicit tag discovery code
-  re2c -o "$_pkgname/src/implicit.c" --no-generation-date "$_pkgname/inst/implicit.re"
+  #re2c   #re2c -o "$_pkgname/src/implicit.c" --no-generation-date "$_pkgname/inst/impl
 
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
