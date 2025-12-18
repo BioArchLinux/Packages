@@ -71,6 +71,7 @@ optdepends=(
   r-vgam
   r-glmtoolbox
   r-svyvgam
+  r-quantreg
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('450c12c4d0db7be693cb5c505a74c189')
