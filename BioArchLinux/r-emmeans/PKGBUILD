@@ -13,6 +13,7 @@ depends=(
   r-estimability
   r-mvtnorm
   r-numderiv
+  r-rlang
 )
 optdepends=(
   r-bayesplot
@@ -40,6 +41,7 @@ optdepends=(
   r-testthat
   r-tibble
   r-xtable
+  r-robmixglm
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('3e21c46575be3cb48f8c13c340294aed')
