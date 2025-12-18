@@ -5,8 +5,11 @@ maintainers:
 repo_makedepends:
 - r-tinytest
 update_on:
-- source: rpkgs
-  pkgname: Rcpp
-  repo: cran
-  md5: true
+- regex: Rcpp([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=Rcpp
 - alias: r
+#- source: rpkgs
+#  pkgname: Rcpp
+#  repo: cran
+#  md5: true
