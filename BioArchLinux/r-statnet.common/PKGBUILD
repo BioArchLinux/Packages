@@ -17,6 +17,7 @@ optdepends=(
   r-rlang
   r-roxygen2
   r-purrr
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('d74055cfddeadb4843750b746ba18af1')
