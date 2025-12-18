@@ -23,7 +23,7 @@ optdepends=(
   r-bdsmatrix
   r-betareg
   r-bh
-  r-bife
+  r-lcmm
   r-biglm
   r-blavaan
   r-blme
