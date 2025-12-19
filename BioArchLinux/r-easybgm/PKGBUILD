@@ -1,10 +1,10 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=easybgm
-_pkgver=0.2.1
+_pkgver=0.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Extracting and Visualizing Bayesian Graphical Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -25,8 +25,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('91f37bd9b32c4c4da5893d07d3210c71')
-b2sums=('a1e894f7524c8cfd00acf92ffbd14d1b8eca2eb7de27b0693a0e0ef0c2f42a4cd1786fe94d9091dcc29968c37ffa5d355b35cb7533222a56adcd6f192acf2581')
+md5sums=('e0757e846664654d37981113c7df43c3')
+b2sums=('241ee752976972c774cdccb3ee116c81f63f484bb0ad8c9d08f88a2f1c288e7f77b480ecb93942cea1cd2effe553b17254be926483426253237f5e57d00e06e9')
 
 build() {
   mkdir build
