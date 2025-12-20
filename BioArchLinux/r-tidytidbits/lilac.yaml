@@ -19,4 +19,4 @@ repo_depends:
 update_on:
   - regex: tidytidbits_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=tidytidbits
+    url: https://cran.r-project.org/src/contrib/Archive/tidytidbits
