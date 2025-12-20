@@ -13,5 +13,5 @@ repo_depends:
 update_on:
   - regex: ggpol_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=ggpol
+    url: https://cran.r-project.org/src/contrib/Archive/ggpol
   - alias: r
