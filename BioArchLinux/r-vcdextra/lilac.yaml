@@ -10,6 +10,7 @@ repo_depends:
   - r-here
   - r-purrr
   - r-readxl
+  - r-rgl
   - r-stringr
   - r-tidyr
   - r-vcd
