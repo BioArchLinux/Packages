@@ -12,4 +12,7 @@ update_on:
   pkgname: httpgd
   repo: cran
   md5: true
+- regex: httpgd_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/src/contrib/Archive/httpgd
 - alias: r
