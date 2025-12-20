@@ -23,4 +23,4 @@ repo_depends:
 update_on:
   - regex: survivalAnalysis_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=survivalAnalysis
+    url: https://cran.r-project.org/src/contrib/Archive/survivalAnalysis
