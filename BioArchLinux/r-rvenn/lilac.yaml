@@ -13,5 +13,5 @@ repo_depends:
 update_on:
   - regex: RVenn_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=RVenn
+    url: https://cran.r-project.org/src/contrib/Archive/RVenn/
   - alias: r
