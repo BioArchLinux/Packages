@@ -5,8 +5,6 @@ import os
 import sys
 
 
-def pre_build():
-    r_pre_build(_G)
 
 def post_build():
     git_pkgbuild_commit()
