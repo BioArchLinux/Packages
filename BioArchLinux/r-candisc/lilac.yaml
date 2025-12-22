@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
   - r-car
   - r-heplots
+  - r-insight
 update_on:
   - regex: candisc_([\d._-]+).tar.gz
     source: regex
