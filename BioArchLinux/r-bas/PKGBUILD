@@ -1,7 +1,7 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=BAS
-_pkgver=2.0.0
+_pkgver=2.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -30,8 +30,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('488a70de8cc83aada84a7be2a486e29b')
-b2sums=('8a71a0fec6517428f7ac15a9f4abd873bb446c81936eabeb0a5aeac38c0ae126986a0619fef90717f70b4a6b7df3edfc3189b1e5ac469bba678b31d449f0b2de')
+md5sums=('b20268df86072ec019ea23e83b052052')
+b2sums=('aa7f5a511e98f63bfe8233d959a717decf6ea69e6b96863a3fe5fed54666d93f376c21d201aff1bd83fa6c2e8289bad44e71150968c8e1e31d4c7c98e0d4857d')
 
 build() {
   mkdir build
