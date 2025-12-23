@@ -3,10 +3,6 @@ maintainers:
 - github: sukanka
   email: sukanka@askk.cc
 update_on:
-- source: rpkgs
-  pkgname: hmeasure
-  repo: cran
-  md5: true
 - regex: hmeasure_([\d._-]+).tar.gz
   source: regex
   url: https://cran.r-project.org/src/contrib/Archive/hmeasure
