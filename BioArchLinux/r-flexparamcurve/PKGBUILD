@@ -1,0 +1,27 @@
+# Maintainer: sukanka <su975853527@gmail.com>
+
+_pkgname=FlexParamCurve
+_pkgver=1.5-7
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Tools to Fit Flexible Parametric Curves'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1452a145a4428904db000bd239bf9048')
+sha256sums=('c2f6ceedd6a630f63ade8cd92356dace99c482cd62cfd2db97553887804d6e56')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

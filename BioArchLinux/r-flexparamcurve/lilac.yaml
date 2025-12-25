@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: sukanka@askk.cc
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+- source: rpkgs
+  pkgname: FlexParamCurve
+  repo: cran
+  md5: true
+- regex: FlexParamCurve_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=FlexParamCurve
+- alias: r
