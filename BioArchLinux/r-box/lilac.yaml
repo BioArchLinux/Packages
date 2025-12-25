@@ -1,12 +1,12 @@
 build_prefix: extra-x86_64
 maintainers:
-- email: su975853527@gmail.com
+- email: sukanka@askk.cc
   github: sukanka
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
 - source: rpkgs
-  pkgname: abdiv
+  pkgname: box
   repo: cran
   md5: true
 - regex: box_([\d._-]+).tar.gz
