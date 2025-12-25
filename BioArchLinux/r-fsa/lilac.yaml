@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
   - r-car
   - r-dunn.test
+  - r-flexparamcurve
   - r-lmtest
   - r-plotrix
   - r-withr
