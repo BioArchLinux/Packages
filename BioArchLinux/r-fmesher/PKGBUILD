@@ -2,10 +2,10 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=fmesher
-_pkgver=0.5.0
+_pkgver=0.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=3
+pkgrel=0
 pkgdesc='Triangle Meshes and Related Geometry Tools'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -35,8 +35,8 @@ optdepends=(
   r-tidyterra
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e00e8e905c68c9a017e4a343ae8d0f73')
-sha256sums=('7c1bcb1191cd807a9fdfa15d1a2c25548e32caec5c6a458a840607bfa667ebe7')
+md5sums=('97e502235f6921b645e4be98d6ed34e1')
+sha256sums=('96237ff0ddd30826f97aa6a3940def65fce31dbd4026282264d38a116298a3e3')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
