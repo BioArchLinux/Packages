@@ -4,7 +4,7 @@ _pkgname=FlexParamCurve
 _pkgver=1.5-7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Tools to Fit Flexible Parametric Curves'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
