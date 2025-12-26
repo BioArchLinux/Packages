@@ -19,7 +19,6 @@ optdepends=(
   r-rlang
   r-rmarkdown
   r-roxygen2
-  r-rstudioapi
   r-shiny
   r-stringr
   r-testthat
