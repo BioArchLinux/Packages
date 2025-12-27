@@ -1,9 +1,5 @@
 # Maintainer: Adityarup Laha <me@adityaruplaha.me>
-# Maintainer: Chris Vittal <chris@vittal.dev>
-_pkgname='plink1.9'
-pkgname="$_pkgname-git"
-# Upstream has changed tag formats, epoch is necessary
-epoch=1
+pkgname='plink1.9'
 _pkgver=1.9
 pkgver=1.9.b.7.11.r64.gacb45ef4
 pkgrel=1
