@@ -57,5 +57,5 @@ package() {
   install -Dm 755 build/bamleftalign -t $pkgdir/usr/bin/
   install -Dm644 LICENSE -t $pkgdir/usr/share/licenses/${pkgname}/
 
-  install -Dm755 libfreebayes_common.so -t $pkgdir/usr/lib/
+  install -Dm755 build/libfreebayes_common.a.p/libfreebayes_common.so -t $pkgdir/usr/lib/
 }
