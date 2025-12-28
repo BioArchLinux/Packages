@@ -8,5 +8,5 @@ update_on:
   - source: github
     github: chrchang/plink-ng
     use_max_tag: true
-    include_regex: '^v1.9'
+    include_regex: '^v1\.9\..*'
     prefix: 'v'
