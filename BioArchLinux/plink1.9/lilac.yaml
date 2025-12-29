@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: adityaruplaha
+    email: me@adityaruplaha.me
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+  - source: github
+    github: chrchang/plink-ng
+    use_max_tag: true
+    include_regex: '^v1\.9\..*'
+    prefix: 'v'
