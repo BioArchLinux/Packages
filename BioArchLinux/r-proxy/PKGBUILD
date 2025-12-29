@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=proxy
-_pkgver=0.4-28
+_pkgver=0.4-29
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -16,8 +16,8 @@ optdepends=(
   r-cba
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a85e0f1b142495b3195bbc0c12e9512f')
-b2sums=('e146f2c411a12df5e1c9c7b7f792da1e6279c3d2ec5264808bade626054847b82f569b22902fae36b1ab9a096ee305ed2f378ddcd7d5041f62d06809db64afb1')
+md5sums=('1180e4455fdadb2267aa62512a06b079')
+b2sums=('1dae8e08b98d4cc4ef82924685c1c366b48731f4842221855de1f91adee5ab3bb9f3db99d0228f3aea009fbcc20c29b9588ef137e4d7ed0f0a6485ea29988617')
 
 build() {
   mkdir build
