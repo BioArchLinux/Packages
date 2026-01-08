@@ -1,5 +1,5 @@
 pkgname=seqan
-pkgver=2.5.1
+pkgver=2.5.2
 pkgrel=1
 pkgdesc="SeqAn is an open source C++ library of efficient algorithms and data structures for the analysis of sequences with the focus on biological data. https://doi.org/10.1186/1471-2105-9-11"
 arch=("any")
@@ -7,7 +7,7 @@ url="http://www.seqan.de"
 license=('custom')
 #makedepends=('gcc' 'clang' 'cmake')
 source=("https://github.com/seqan/seqan/releases/download/seqan-v${pkgver}/seqan-library-${pkgver}.zip")
-sha256sums=('0a1d10e08bd4ab3183e51dd8393e1f06e5c24290088a571662909454c6b77077')
+sha256sums=('713b66e6676d0dc58057911e70db8c6f56e2d053dd2f74611608c0cbce01d572')
 package() {
     mkdir -p ${pkgdir}/usr/share/doc/${pkgname}
     mkdir -p ${pkgdir}/usr/include/${pkgname}
