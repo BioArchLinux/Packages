@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rlang
-_pkgver=1.1.6
+_pkgver=1.1.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Functions for Base Types and Core R and 'Tidyverse' Features"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -31,8 +31,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('cc7e437160aff8bfd052a527fecc5685')
-b2sums=('1bb41661fa0dc2407acac0aaf6862ae35f8c6e6b91200cdc67698212e3f1787d7cfb63636f511460b1b6303d1892ac7363f46ef689c7eb611b1ed6faa9c8f8f5')
+md5sums=('dbe374138ca1f56873bcb7681bb634e4')
+b2sums=('ea55e2c1d1fbe12e01c57fd2f8ba9c06980ba54c7d3353b05741deb47f44dabc123feee34d4a29017de816b0f4107b665a169909f8b4ba3080a47c4437d72579')
 
 build() {
   mkdir build
