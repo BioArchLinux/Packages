@@ -1,7 +1,7 @@
 _name=structure-threader
 pkgname=python-structure-threader
 pkgver=1.3.11
-pkgrel=1
+pkgrel=2
 pkgdesc="A program to parallelize runs of 'Structure', 'fastStructure' and 'MavericK'."
 arch=(any)
 url="https://gitlab.com/StuntsPT/Structure_threader"
