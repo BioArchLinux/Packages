@@ -2,7 +2,7 @@
 _name=custom_inherit
 pkgname="python-$_name"
 pkgver=2.4.1
-pkgrel=2
+pkgrel=3
 pkgdesc="convenient, light-weight tools for inheriting docstrings"
 arch=('any')
 url="https://github.com/rsokl/custom_inherit"
