@@ -4,7 +4,7 @@
 _name=yte
 pkgname=python-$_name
 pkgver=1.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc='YAML template engine with Python expressions'
 arch=(any)
 url="https://github.com/koesterlab/$_name"
