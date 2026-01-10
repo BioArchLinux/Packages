@@ -1,7 +1,7 @@
 _name=nd2reader
 pkgname=python-nd2reader
 pkgver=3.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A tool for reading ND2 files produced by NIS Elements"
 arch=(any)
 url="https://open-science-tools.github.io/nd2reader/"
