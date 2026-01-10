@@ -3,7 +3,7 @@
 
 pkgname=python-plac
 pkgver=1.4.5
-pkgrel=3
+pkgrel=4
 pkgdesc='parsing the command line the easy way'
 arch=(any)
 url="https://github.com/ialbert/plac"
