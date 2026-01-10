@@ -1,0 +1,31 @@
+_name=alv
+pkgname=python-alv
+pkgver=1.8.0
+pkgrel=1
+pkgdesc="A console-based sequence alignment viewer"
+arch=(any)
+url="https://github.com/arvestad/alv"
+license=(Unknown)
+depends=('python-biopython' 'python-colorama')
+makedepends=('python-setuptools' 'python-installer')
+source=("https://files.pythonhosted.org/packages/py3/${_name::1}/$_name/alv-1.8.0-py3-none-any.whl")
+sha256sums=('d19954dbd42b1d4444fd53a9b9192af69c848584510dcef7acb35f8c6ca2dcd8')
+
+build() {
+  true
+}
+
+package() {
+  cd "$srcdir"
+  python -m installer --destdir="$pkgdir" 'alv-1.8.0-py3-none-any.whl'
+
+  # make sure we don't install any world-writable or root-readable-only files
+  # we shouldn't need to fix ownership as we extract tarballs as a non-root user
+  # https://github.com/pypa/setuptools/issues/1328
+  # https://github.com/LonamiWebs/Telethon/issues/1605
+  chmod u=rwX,go=rX -R "$pkgdir"
+  # make sure we don't install annoying files
+  local _site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
+  rm -rf "$pkgdir/$_site_packages/tests/"
+}
+
