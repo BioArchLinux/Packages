@@ -1,7 +1,7 @@
 _name=colorlover
 pkgname=python-colorlover
 pkgver=0.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Color scales for IPython notebook"
 arch=(any)
 url="https://github.com/jackparmer/colorlover"
