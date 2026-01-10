@@ -2,7 +2,7 @@
 _base=vedo
 pkgname=python-${_base}
 pkgver=2025.5.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Python module for scientific analysis and visualization of 3d objects"
 arch=(any)
 url="https://github.com/marcomusy/vedo"
