@@ -8,7 +8,7 @@ _pyname=${pkgbase#python-}
 pkgname=("python-${_pyname}")
 #"python-${_pyname}"-doc)
 pkgver=0.7
-pkgrel=2
+pkgrel=3
 pkgdesc="Python Image Sequence: Load video and sequential images"
 url="https://soft-matter.github.io/pims"
 arch=('any')
