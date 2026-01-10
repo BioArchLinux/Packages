@@ -2,7 +2,7 @@
 pkgname=faststructure
 _pkgname=fastStructure3
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A variational framework for inferring population structure from SNP genotype data"
 arch=('x86_64')
 url="https://github.com/starsareintherose/fastStructure3"
