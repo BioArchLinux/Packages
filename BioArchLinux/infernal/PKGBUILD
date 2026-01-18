@@ -3,7 +3,7 @@
 
 pkgname=infernal
 pkgver=1.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Tool for searching DNA sequence databases for RNA structure and sequence similarities"
 arch=('x86_64')
 url="http://eddylab.org/infernal/"
