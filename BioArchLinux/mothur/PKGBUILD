@@ -3,8 +3,8 @@
 # Contributor: Christian Krause ("wookietreiber") <christian.krause@mailbox.org>
 
 pkgname=mothur
-pkgver=1.48.4
-pkgrel=1
+pkgver=1.48.5
+pkgrel=0
 pkgdesc='A bioinformatics program for analyzing microbial communities.'
 arch=('x86_64')
 url='https://www.mothur.org/'
@@ -15,12 +15,16 @@ makedepends=('boost')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/${pkgname}/${pkgname}/archive/v${pkgver}.tar.gz"
         "boost-gcc-fixes.patch"
         )
-sha256sums=('aa0de1133fa554f91f861ba01bc63212236d66a7b414b7edea5729987350eca2'
-            '88237da25ddc2bdb867fcd30523f94e63cfd4e1b194e50c3f094126dbc8f43fe')
+sha256sums=('d6bbd172cefdfe468d654532e620831e5e9a6814c751361034027aeb1cbccd27'
+            'ca8c76f397cd238702798a95b3cc6e286b8218c0b85ecf0989f568bb260b4bc8')
 
 prepare() {
   # Use system Boost/HDF5/GSL; fix Makefile for modern GCC
   cd "${pkgname}-${pkgver}"
+  
+  # Fix line endings
+  sed -i 's/\r$//' source/uchime_src/myutils.cpp
+
   patch -p1 < ${srcdir}/boost-gcc-fixes.patch
 }
 

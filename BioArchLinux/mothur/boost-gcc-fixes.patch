@@ -1,9 +1,9 @@
---- mothur-1.48.4/Makefile	2025-11-11 03:03:45.000000000 +0530
-+++ mothur-1.48.4.new/Makefile	2025-11-13 23:35:11.540603923 +0530
+--- mothur-1.48.5/Makefile	2026-01-13 23:27:53.000000000 +0530
++++ mothur-1.48.5/Makefile.new	2026-01-18 23:04:08.732963898 +0530
 @@ -24,17 +24,17 @@
  
  OPTIMIZE ?= yes
- USEREADLINE ?= yes
+ USEREADLINE ?= no
 -USEBOOST ?= no
 -USEHDF5 ?= no
 -USEGSL ?= no
@@ -26,7 +26,7 @@
 +GSL_INCLUDE_DIR ?= /usr/include
  MOTHUR_FILES="\"Enter_your_default_path_here\""
  MOTHUR_TOOLS="\"Enter_your_mothur_tools_path_here\""
- VERSION = "\"1.48.4\""
+ VERSION = "\"1.48.5\""
 @@ -76,28 +76,52 @@
  #User specified boost library
  ifeq  ($(strip $(USEBOOST)),yes)
@@ -92,41 +92,40 @@
  endif
  
  #
-@@ -107,21 +131,21 @@
+@@ -106,16 +130,21 @@
  	VPATH=source/calculators:source/chimera:source/classifier:source/clearcut:source/commands:source/communitytype:source/datastructures:source/engines:source/metastats:source/read:source/svm:source/
      skipUchime := source/uchime_src/
-     subdirs :=  $(sort $(dir $(filter-out  $(skipUchime), $(wildcard source/*/)))) source/
+     subdirs :=  $(sort $(dir $(filter-out  $(skipUchime), $(wildcard source/*/))))
 -    subDirIncludes = $(patsubst %, -I %, $(subdirs))
 -    subDirLinking =  $(patsubst %, -L%, $(subdirs))
--    CXXFLAGS += -I. -Isource $(subDirIncludes)
-+    # include/linking flags for subdirectories (single definition)
-+    subDirIncludes := $(patsubst %, -I %, $(subdirs))
-+    subDirLinking := $(patsubst %, -L%, $(subdirs))
-+    CXXFLAGS += -Isource $(subDirIncludes)
-     LDFLAGS += -Lsource $(subDirLinking)
- 
- 
- #
--# Get the list of all .cpp files, rename to .o files
--#
--    OBJECTS=$(patsubst %.cpp,%.o,$(wildcard $(addsuffix *.cpp,$(subdirs))))
+-    CXXFLAGS += -I. $(subDirIncludes)
+-    LDFLAGS += $(subDirLinking)
+-
+-		OBJECTS=$(patsubst %.cpp,%.o,$(wildcard $(addsuffix *.cpp,$(subdirs))))
 -    OBJECTS+=$(patsubst %.c,%.o,$(wildcard $(addsuffix *.c,$(subdirs))))
 -    OBJECTS+=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
 -    OBJECTS+=$(patsubst %.c,%.o,$(wildcard *.c))
--    OBJECTS+=$(patsubst %.cpp,%.o,$(wildcard source/*.cpp))
--    OBJECTS+=$(patsubst %.cpp,%.o,$(wildcard source/*.c))
+-
++    # include/linking flags for subdirectories (single definition)
++    subDirIncludes := $(patsubst %, -I %, $(subdirs))
++    subDirLinking := $(patsubst %, -L%, $(subdirs))
++    CXXFLAGS += -Isource -I. $(subDirIncludes)
++    LDFLAGS += -Lsource $(subDirLinking)
++
 +# Get the list of all .cpp/.c files (from all subdirs and source/) and rename to .o files.
 +# Use sort to remove accidental duplicates so objects aren't linked more than once.
 +    OBJECTS := $(patsubst %.cpp,%.o,$(wildcard $(addsuffix *.cpp,$(subdirs)))) \
 +               $(patsubst %.c,%.o,$(wildcard $(addsuffix *.c,$(subdirs)))) \
++               $(patsubst %.cpp,%.o,$(wildcard *.cpp)) \
++               $(patsubst %.c,%.o,$(wildcard *.c)) \
 +               $(patsubst %.cpp,%.o,$(wildcard source/*.cpp)) \
 +               $(patsubst %.c,%.o,$(wildcard source/*.c))
 +    OBJECTS := $(sort $(OBJECTS))
- 
  mothur : $(OBJECTS) uchime
  	$(CXX) $(LDFLAGS) $(TARGET_ARCH) -o $@ $(OBJECTS) $(LIBS)
---- mothur-1.48.4/TestMothur/catch.hpp	2025-11-11 03:03:45.000000000 +0530
-+++ mothur-1.48.4.new/TestMothur/catch.hpp	2025-11-13 13:26:55.991951952 +0530
+ 
+--- mothur-1.48.5/TestMothur/catch.hpp	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.5.new/TestMothur/catch.hpp	2025-11-13 13:26:55.991951952 +0530
 @@ -7992,7 +7992,6 @@
      #include <stdbool.h>
      #include <sys/types.h>
@@ -135,8 +134,8 @@
  
      namespace Catch{
  
---- mothur-1.48.4/source/uchime_src/myutils.cpp	2025-11-11 03:03:45.000000000 +0530
-+++ mothur-1.48.4.new/source/uchime_src/myutils.cpp	2025-11-13 13:10:27.836484118 +0530
+--- mothur-1.48.5/source/uchime_src/myutils.cpp	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.5.new/source/uchime_src/myutils.cpp	2025-11-13 13:10:27.836484118 +0530
 @@ -672,7 +672,6 @@
  #include <stdio.h>
  #include <unistd.h>
@@ -145,8 +144,8 @@
  #include <sys/socket.h>
  #include <sys/gmon.h>
  #include <mach/vm_param.h>
---- mothur-1.48.4/source/uchime_src/makefile	2025-11-11 03:03:45.000000000 +0530
-+++ mothur-1.48.4.new/source/uchime_src/makefile	2025-11-13 13:14:50.086812711 +0530
+--- mothur-1.48.5/source/uchime_src/makefile	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.5.new/source/uchime_src/makefile	2025-11-13 13:14:50.086812711 +0530
 @@ -1,6 +1,7 @@
  CXXFLAGS = -O3 -std=c++11 -D_FILE_OFFSET_BITS=64 -DNDEBUG=1 -DUCHIMES=1 -std=c++11
  LDFLAGS = -g
@@ -165,8 +164,8 @@
  
  install : uchime
  
---- mothur-1.48.4/source/writer.h	2025-11-11 03:03:45.000000000 +0530
-+++ mothur-1.48.4.new/source/writer.h	2025-11-13 13:11:47.118309264 +0530
+--- mothur-1.48.5/source/writer.h	2025-11-11 03:03:45.000000000 +0530
++++ mothur-1.48.5.new/source/writer.h	2025-11-13 13:11:47.118309264 +0530
 @@ -10,6 +10,7 @@
  #define writer_h
  
