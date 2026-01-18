@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2025.09.2+418
+pkgver=2026.01.0+392
 _pkgver=${pkgver//+/.}
 _srcname=rstudio-${pkgver//+/-}
 _pkgsrc=rstudio-${pkgver//+/-}
@@ -16,9 +16,9 @@ _java_version=17
 _soci_version="4.0.3"
 _nodeversion="23"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
-: ${_copilot_version:=1.300.0}
+: ${_copilot_version:=1.399.0}
 
-pkgrel=1
+pkgrel=0
 pkgdesc="A powerful and productive integrated development environment \
 	 (IDE) for R programming language"
 arch=('x86_64')
@@ -78,16 +78,18 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         "quarto"::"git+https://github.com/quarto-dev/quarto.git#branch=${_quarto_branch}"
         "soci-$_soci_version.tar.gz::https://github.com/SOCI/soci/archive/refs/tags/v${_soci_version}.tar.gz"
         "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-linux-x64-${_copilot_version}.zip"
+        "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-js-${_copilot_version}.zip"
         "https://rstudio-buildtools.s3.us-east-1.amazonaws.com/gwt/gwt-${_gwt_version}.tar.gz"
-        '0001-steady_timer.patch::https://patch-diff.githubusercontent.com/raw/rstudio/rstudio/pull/16608.diff'
+        '0001-steady_timer.patch'
         )
 noextract+=("gwt-${_gwt_version}.tar.gz")
-sha256sums=('dc43de6a03f06a1b67496eee550b7947ad79ccd746f12852eab5feff14c41918'
+sha256sums=('49d6bae2b66db99cd8de7df0c259ca4aacd0fb90fc83aea9eddb207d6b720f98'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
-            '21f030b4a9b189818ebe73c9065dc140ad64308169b7cb323c9002018ffba074'
+            'a595ebb7b4e3350293a4066782797476d9cca455e99e2b516775b06096910160'
+            '39047261f01d1b22f8dd0e66f6878e5ca1ca16107ed737a486e590c39b66600b'
             '27284accdad05ff8919a7ac6dc5f939a511a90842a35f6393517506d74809e76'
-            '4c7ec83ffc5a73ed361464372f31c5078a9f42c06f571737c1dae491d2fdfaa2')
+            'd192d1f7344fcf73bf7ffc404f0a385a1d4fbfd962b701689cd84099d97ab90a')
 options=('!emptydirs' '!debug')
 
 _nvm_env() {
@@ -98,7 +100,7 @@ _nvm_env() {
   nvm install $_nodeversion
   nvm use $_nodeversion
   _npm_path="$(which npm | sed -E 's&/[^/]+$&&')"
-  export RSTUDIO_NODE_VERSION=$(echo "$_npm_path" | sed -E 's&^\S+/v([0-9\.]+)/\S+$&\1&')
+  _node_version=$(echo "$_npm_path" | sed -E 's&^\S+/v([0-9\.]+)/\S+$&\1&')
 }
 
 prepare() {
@@ -118,11 +120,12 @@ prepare() {
 
     # fix npm/node paths
     sed -E -e 's&set\(RSTUDIO_NODE_PATH .*\)&set(RSTUDIO_NODE_PATH "/usr/bin")&' \
-      -i cmake/globals.cmake
+    -e 's&(set\((RSTUDIO_INSTALLED_NODE_VERSION|RSTUDIO_NODE_VERSION)) "\S+"&\1 "'${_node_version}'"&' \
+     -i cmake/globals.cmake
 
     install -dm755 dependencies/common/node
-    ln -sfT "$NVM_DIR/versions/node/v$RSTUDIO_NODE_VERSION" \
-      dependencies/common/node/"${RSTUDIO_NODE_VERSION}-patched"
+    ln -sfT "$NVM_DIR/versions/node/v$_node_version" \
+    dependencies/common/node/"${_node_version}-installed"
 
     sed -E -e 's&^external-node-path=.*$&external-node-path=/usr/bin/node&' \
       -i src/cpp/conf/rsession-dev.conf
@@ -155,8 +158,12 @@ prepare() {
     ln -sfT /usr/share/myspell/dicts dictionaries
     ln -sfT /usr/share/mathjax2 mathjax-27
 
-    install -Dm755 "$srcdir/copilot-language-server" -t "copilot-language-server"
     ln -sfT "$srcdir/soci-$_soci_version" "soci-$_soci_version"
+
+    # copilot
+    install -Dm755 "$srcdir/copilot-language-server" -t "copilot-language-server"
+    mkdir -p copilot-language-server-js
+    bsdtar -xf "$srcdir/copilot-language-server-js-${_copilot_version}.zip" -C copilot-language-server-js
 
     # Panmirror is picked up now from Quarto repo
     ln -sfT "$srcdir/quarto" "$srcdir/$_pkgsrc/src/gwt/lib/quarto"
