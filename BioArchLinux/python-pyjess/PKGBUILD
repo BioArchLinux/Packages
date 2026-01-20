@@ -19,7 +19,6 @@ build() {
 }
 
 check() {
-    local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
     whl="${srcdir}/${_name}-${pkgver}/dist/${_name}-${pkgver}-cp38-abi3-linux_${machine}.whl"
 
@@ -32,7 +31,6 @@ check() {
 }
 
 package() {
-    local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
     whl="${srcdir}/${_name}-${pkgver}/dist/${_name}-${pkgver}-cp38-abi3-linux_${machine}.whl"
 
