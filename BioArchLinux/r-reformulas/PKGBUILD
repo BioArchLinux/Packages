@@ -14,6 +14,7 @@ depends=(
 )
 optdepends=(
   r-lme4
+  r-testthat
   r-tinytest
   r-glmmtmb
 )
