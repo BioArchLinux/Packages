@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=vctrs
-_pkgver=0.6.5
+_pkgver=0.7.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Vector Helpers"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -37,8 +37,8 @@ optdepends=(
   r-zeallot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('191f3037d9b6f3f8640661f61e2aeb93')
-b2sums=('b48890fca0982b32c5d50c0d11221558fed8a2e50e4d3f5515d71f9eac4a79fd9823dbb866678d140a2c1e601f707daa0fbbf93f7e573d138d03e37850d77212')
+md5sums=('a443790e2d704549b113489b39caaff0')
+b2sums=('55bf9bc513c94eb1fb9dfdaf42c73087a531142276bee23760a55ed2298e6aa7df792fc8b63704db953f1746cadcc52adf237e139f825d43980d53c4ab75b098')
 
 build() {
   mkdir build
