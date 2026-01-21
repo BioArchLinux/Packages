@@ -2,7 +2,7 @@
 # Contributor: Robert Greener <me@r0bert.dev>
 
 _pkgname=collections
-_pkgver=0.3.9
+_pkgver=0.3.10
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -17,8 +17,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9fa03016f098a70c040517a035c806b7')
-b2sums=('fb13d9f5a7f22ed044fe578f7ceebfc62633199b55a8b50c4c45c03d38bfec6f85870a8abaa805f9fb2e2ae7857d487b27f25209ce14fc1bbf3eacce8a5409cd')
+md5sums=('e100eb5125489a657be3e6ee56339dad')
+b2sums=('246f284bb1fd756371aafbbba9e9e66968b48fcf878f530855323853715b53e6b30f87ecae068d351c57c9bf1c63491a7223382af31ed0bfbe4da9451b0e5835')
 
 build() {
   mkdir build
