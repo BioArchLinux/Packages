@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <myname at malacology dot net>
 
 pkgname=edirect
-pkgver=25.0.20260120
+pkgver=25.0.20260121
 pkgrel=1
 pkgdesc='E-utilities on the Unix Command Line'
 url="https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect"
@@ -9,7 +9,7 @@ source=("$pkgname-$pkgver.tar.gz::$url/versions/$pkgver/edirect-$pkgver.tar.gz")
 license=('custom: Public Domain')
 arch=(any)
 depends=('python' 'sh' 'perl' 'gzip')
-sha256sums=('96472fd3b75035ca7352836ee2fc1545efc2a6cec8e68970e18d0ed5c2b9ea19')
+sha256sums=('745dee729da3196230124ba1626cb2382fd8a9c63036d76ac413fca7d3a166ff')
 
 package(){
   cd $pkgname
