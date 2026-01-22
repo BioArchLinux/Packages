@@ -3,33 +3,28 @@
 
 pkgname=trimmomatic
 _pkgname=Trimmomatic
-pkgver=0.39
-pkgrel=9
+pkgver=0.40
+pkgrel=0
 pkgdesc='A flexible read trimming tool for Illumina NGS data'
 arch=('any')
 url="http://www.usadellab.org/cms/?page=trimmomatic"
 license=('GPL-3.0-or-later')
 depends=('java-runtime')
-makedepends=('java-environment=11' 'ant')
-source=("$pkgname-$pkgver.tar.gz::https://github.com/usadellab/Trimmomatic/archive/refs/tags/v${pkgver}.tar.gz"
-        "$pkgname"
-	"$pkgname.patch"
+makedepends=('java-environment>=11' 'maven')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/usadellab/Trimmomatic/archive/refs/tags/v${pkgver}.tar.gz"
+        "${pkgname}"
         )
-md5sums=('2f80c01dd0876f7761b33ed77768a76c'
-         '0716cd4695be3e8ea6d4a5aa78f7eb85'
-         '4612f0187c29f7be68433778f884a067')
-prepare() {
-  cd $_pkgname-$pkgver
-  patch -N -i $srcdir/$pkgname.patch
-}
+md5sums=('b8f3f9247d4304c213236c1b31762cca'
+         'ef9e5b089995f8c422c56c68aef731f4')
+
 build() {
-  cd $_pkgname-$pkgver
-  ant
+  cd ${_pkgname}-${pkgver}
+  mvn clean package
 }
 package() {
-  install -Dm 755 $srcdir/$_pkgname-$pkgver/dist/jar/$pkgname-$pkgver.jar $pkgdir/usr/share/java/$pkgname/$pkgname.jar
-  install -Dm 755 $srcdir/$pkgname -t  $pkgdir/usr/bin
+  install -Dm 755 ${srcdir}/${_pkgname}-${pkgver}/target/${pkgname}-${pkgver}.jar ${pkgdir}/usr/share/java/${pkgname}/${pkgname}.jar
+  install -Dm 755 ${srcdir}/${pkgname} -t  ${pkgdir}/usr/bin
 
-  mkdir -p $pkgdir/usr/share/java/$pkgname/adapters
-  install -Dm 755 -t $pkgdir/usr/share/java/$pkgname/adapters $srcdir/$_pkgname-$pkgver/adapters/*
+  mkdir -p ${pkgdir}/usr/share/${pkgname}/adapters
+  install -Dm 755 -t ${pkgdir}/usr/share/${pkgname}/adapters ${srcdir}/${_pkgname}-${pkgver}/adapters/*
 }
