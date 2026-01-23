@@ -2,7 +2,7 @@
 # Contributor: Baytars <feicuihuangfeng@qq.com>
 
 pkgname=fastp
-pkgver=1.0.1
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="a tool designed to provide fast all-in-one preprocessing for FastQ files, developed in C++ with multithreading supported to afford high performance"
 url="https://github.com/OpenGene/fastp"
@@ -11,7 +11,7 @@ arch=('x86_64')
 depends=('libdeflate' 'isa-l' 'gcc-libs')
 makedepends=('make')
 source=("https://github.com/OpenGene/fastp/archive/refs/tags/v${pkgver}.tar.gz")
-sha512sums=('f0f8151a4c4ec27061a09ee4fec039d8b3e594d466e2f5335277032280bb3b5b2a181d607cef9c602735b9ecaab47b24ce17da90f09e8b9ca18b608970b504ea')
+sha512sums=('36c33b329fb8b883c69838027b20a2ee22790db30ab2fb50922e8993b0dfeef4bec0af7d7e527d6ee1140c95f41fa7b9a452158da244c323c45a6f6be265682b')
 
 build() {
   cd "${srcdir}/${pkgname}-$pkgver"
