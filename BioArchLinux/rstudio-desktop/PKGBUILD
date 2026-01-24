@@ -7,8 +7,8 @@
 pkgname=rstudio-desktop
 pkgver=2026.01.0+392
 _pkgver=${pkgver//+/.}
-_srcname=rstudio-${pkgver//+/-}
-_pkgsrc=rstudio-${pkgver//+/-}
+_srcname=rstudio
+# _srcname=rstudio-${pkgver//+/-}
 _pandocver="current"
 _quarto="FALSE"
 _gwt_version=2.12.2
@@ -19,8 +19,7 @@ _quarto_branch="release/rstudio-cranberry-hibiscus"
 : ${_copilot_version:=1.399.0}
 
 pkgrel=0
-pkgdesc="A powerful and productive integrated development environment \
-	 (IDE) for R programming language"
+pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
 license=('AGPL-3.0-only')
@@ -48,6 +47,11 @@ depends=('r>=3.3.0'
         'r-yaml'
         'r-purrr'
         'r-digest'
+        'hicolor-icon-theme'
+        'libx11'
+        'libxext'
+        'libxcb'
+        'java-runtime'
         )
 
 makedepends=(
@@ -55,7 +59,7 @@ makedepends=(
   'boost'
   'cmake'
   'git'
-  java-environment${_java_version:+=$_java_version}
+  "java-environment${_java_version:+=$_java_version}"
   'libcups'
   'ninja'
   'nvm'
@@ -151,7 +155,7 @@ prepare() {
       -i cmake/modules/OsRelease.cmake
 
     # bundled deps
-    cd "$srcdir/$_pkgsrc/dependencies"
+    cd "$srcdir/${_srcname}/dependencies"
     install -d pandoc/${_pandocver}
     ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/pandoc
 
@@ -166,7 +170,7 @@ prepare() {
     bsdtar -xf "$srcdir/copilot-language-server-js-${_copilot_version}.zip" -C copilot-language-server-js
 
     # Panmirror is picked up now from Quarto repo
-    ln -sfT "$srcdir/quarto" "$srcdir/$_pkgsrc/src/gwt/lib/quarto"
+    ln -sfT "$srcdir/quarto" "$srcdir/${_srcname}/src/gwt/lib/quarto"
 
     # GWT
     mkdir -p common/gwtproject
@@ -210,71 +214,71 @@ _run_if_exists() {
 
 build() {
 
-   export JAVA_HOME=/usr/lib/jvm/java-${_java_version:?}-openjdk
-   export PATH="$JAVA_HOME/bin:$PATH"
-   export CMAKE_POLICY_VERSION_MINIMUM=3.5
-   _nvm_env
-   _run_if_exists _build_soci
+  export JAVA_HOME=/usr/lib/jvm/java-${_java_version:?}-openjdk
+  export PATH="$JAVA_HOME/bin:$PATH"
+  export CMAKE_POLICY_VERSION_MINIMUM=3.5
+  _nvm_env
+  _run_if_exists _build_soci
 
-   cd "${srcdir}/${_srcname}/dependencies"
-        install -d pandoc/${_pandocver}/bin/tools
-        ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/bin/tools/pandoc
+  cd "${srcdir}/${_srcname}/dependencies"
+  install -d pandoc/${_pandocver}/bin/tools
+  ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/bin/tools/pandoc
 
-    # Use path of system provided R packages
-    export R_LIBS_USER=/usr/lib/R/library/
-    export RSTUDIO_TOOLS_ROOT="${srcdir}/${_srcname}/dependencies"
-    export RSTUDIO_NODE_PATH=/usr/
-   ## export PATH="/usr/lib/jvm/java-11-openjdk/jre/bin/:${PATH}"
+  # Use path of system provided R packages
+  export R_LIBS_USER=/usr/lib/R/library/
+  export RSTUDIO_TOOLS_ROOT="${srcdir}/${_srcname}/dependencies"
+  export RSTUDIO_NODE_PATH=/usr/
+  ## export PATH="/usr/lib/jvm/java-11-openjdk/jre/bin/:${PATH}"
 
-    cd "${srcdir}"/${_srcname}
-    # These variables are used to create contents of Help > About dialog
-    export osarch=$(uname -m)
-    export distro=$(grep -E '^NAME=' /etc/os-release | cut -d= -f2- | tr -d '"')
-    export RSTUDIO_VERSION_MAJOR=$(echo "$_pkgver" | cut -d "." -f1)
-    export RSTUDIO_VERSION_MINOR=$(echo "$_pkgver" | cut -d "." -f2)
-    export RSTUDIO_VERSION_PATCH=$(echo "$_pkgver" | cut -d "." -f3)
-    export RSTUDIO_VERSION_SUFFIX="+$(echo "$_pkgver" | cut -d "." -f4)"
-    export GIT_COMMIT=$(git rev-parse v${pkgver} | sed 's/^\(.\{7\}\).*/\1/')
-    # export GIT_COMMIT=$(git ls-remote https://github.com/rstudio/rstudio.git | grep v${pkgver} | sed 's/^\(.\{7\}\).*/\1/')
-    export PACKAGE_OS="$distro $osarch"
-    # set rstudio node path
-    export RSTUDIO_NODE_PATH=/usr/
+  cd "${srcdir}"/${_srcname}
+  # These variables are used to create contents of Help > About dialog
+  export osarch=$(uname -m)
+  export distro=$(grep -E '^NAME=' /etc/os-release | cut -d= -f2- | tr -d '"')
+  export RSTUDIO_VERSION_MAJOR=$(echo "$_pkgver" | cut -d "." -f1)
+  export RSTUDIO_VERSION_MINOR=$(echo "$_pkgver" | cut -d "." -f2)
+  export RSTUDIO_VERSION_PATCH=$(echo "$_pkgver" | cut -d "." -f3)
+  export RSTUDIO_VERSION_SUFFIX="+$(echo "$_pkgver" | cut -d "." -f4)"
+  export GIT_COMMIT=$(git rev-parse v${pkgver} | sed 's/^\(.\{7\}\).*/\1/')
+  # export GIT_COMMIT=$(git ls-remote https://github.com/rstudio/rstudio.git | grep v${pkgver} | sed 's/^\(.\{7\}\).*/\1/')
+  export PACKAGE_OS="$distro $osarch"
+  # set rstudio node path
+  export RSTUDIO_NODE_PATH=/usr/
 
-    # node-gyp or node have a bug that prevents building with "text file busy"
-    # if the kernel is too fast, so we have to disable IO_URING support. This
-    # is cleary a hack and needs to be removed as soon as possible
-    # nodejs/node#48444 is the necro bumped thread
-    # originally from docker
-    # https://github.com/nodejs/node/issues/48444
-    export UV_USE_IO_URING=0
+  # node-gyp or node have a bug that prevents building with "text file busy"
+  # if the kernel is too fast, so we have to disable IO_URING support. This
+  # is cleary a hack and needs to be removed as soon as possible
+  # nodejs/node#48444 is the necro bumped thread
+  # originally from docker
+  # https://github.com/nodejs/node/issues/48444
+  export UV_USE_IO_URING=0
 
-    # -DCMAKE_INSTALL_PREFIX seems ignored for sub-dependencies,
-    # which results as empty '/usr/local/bin' in package
-    # Following override works for cmake >3.29
-    export CMAKE_INSTALL_PREFIX=/usr/lib/rstudio
+  # -DCMAKE_INSTALL_PREFIX seems ignored for sub-dependencies,
+  # which results as empty '/usr/local/bin' in package
+  # Following override works for cmake >3.29
+  export CMAKE_INSTALL_PREFIX=/usr/lib/rstudio
 
-    cd ${srcdir}/
+  cd ${srcdir}/
 
-      local _opts_rstudio=(
-      -B build
-      -S "${_srcname}"
-      -G Ninja
-      -DCMAKE_BUILD_TYPE=None
-      -DRSTUDIO_TARGET=Electron
-      -DRSTUDIO_USE_SYSTEM_BOOST=ON
-      -DRSTUDIO_USE_SYSTEM_SOCI=OFF
-      -DRSTUDIO_USE_SYSTEM_YAML_CPP=ON
-      -DRSTUDIO_NODE_VERSION="Current"
-      -DQUARTO_ENABLED=${_quarto}
-      -DRSTUDIO_UNIT_TESTS_ENABLED=OFF
-      -DBUILD_TESTING=OFF
-      -Wno-dev
-      -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
-      -DCMAKE_EXE_LINKER_FLAGS="-Wl,-z,relro -Wl,-z,now,-fuse-ld=mold"
-    )
+  local _opts_rstudio=(
+    -B build
+    -S "${_srcname}"
+    -G Ninja
+    -DCMAKE_BUILD_TYPE=None
+    -DRSTUDIO_TARGET=Electron
+    -DRSTUDIO_USE_SYSTEM_BOOST=ON
+    -DRSTUDIO_USE_SYSTEM_SOCI=OFF
+    -DRSTUDIO_USE_SYSTEM_YAML_CPP=ON
+    -DRSTUDIO_NODE_VERSION="Current"
+    -DQUARTO_ENABLED=${_quarto}
+    -DRSTUDIO_UNIT_TESTS_ENABLED=OFF
+    -DBUILD_TESTING=OFF
+    -Wno-dev
+    -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
+    -DCMAKE_EXE_LINKER_FLAGS="-Wl,-z,relro -Wl,-z,now,-fuse-ld=mold"
+  )
 
-    cmake "${_opts_rstudio[@]}"
-    cmake --build build
+  cmake "${_opts_rstudio[@]}"
+  cmake --build build
 }
 
 package() {
