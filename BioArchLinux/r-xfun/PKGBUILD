@@ -29,7 +29,6 @@ optdepends=(
   r-magick
   r-mime
   r-pak
-  r-qs
   r-qs2
   r-remotes
   r-rstudioapi
