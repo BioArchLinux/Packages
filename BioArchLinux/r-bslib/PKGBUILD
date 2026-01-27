@@ -25,6 +25,7 @@ depends=(
   r-sass
 )
 optdepends=(
+  r-brand.yml
   r-bsicons
   r-curl
   r-fontawesome
