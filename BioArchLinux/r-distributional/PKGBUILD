@@ -17,6 +17,7 @@ depends=(
   r-ggplot2
   r-lifecycle
   r-numderiv
+  r-pillar
   r-rlang
   r-scales
   r-vctrs
