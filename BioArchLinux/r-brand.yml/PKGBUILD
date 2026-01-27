@@ -11,7 +11,7 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r-cla
+  r-cli
   r-rlang
   r-yaml
 )
@@ -23,7 +23,7 @@ optdepends=(
   r-ggplot2
   r-gt
   r-htmltools
-  r-nitr
+  r-knitr
   r-mime
   r-palmerpenguins
   r-patchwork
