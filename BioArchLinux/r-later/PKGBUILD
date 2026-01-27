@@ -21,6 +21,7 @@ checkdepends=(
 optdepends=(
   r-knitr
   r-nanonext
+  r-promises
   r-rmarkdown
   r-testthat
 )
