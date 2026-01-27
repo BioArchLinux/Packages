@@ -1,0 +1,61 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=brand.yml
+_pkgver=0.1.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Unified Branding with a Simple YAML File"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-cla
+  r-rlang
+  r-yaml
+)
+optdepends=(
+  r-base64enc
+  r-dplyr
+  r-flextable
+  r-ggiraph
+  r-ggplot2
+  r-gt
+  r-htmltools
+  r-nitr
+  r-mime
+  r-palmerpenguins
+  r-patchwork
+  r-plotly
+  r-prismatic
+  r-rmarkdown
+  r-sass
+  r-stringr
+  r-testthat
+  r-thematic
+  r-tidyr
+  r-tidyverse
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1cad2c663a59c78baa1ea878b4e9d03f')
+b2sums=('31bf73fd02bc6cc225af5b3ce8798befa79886ae8190bf60cb60d6dddc8c82d101d29dc33ba4f78ebf9937453872060c31c318035a124cddefe42683a7cc0c50')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
