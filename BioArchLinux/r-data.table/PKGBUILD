@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=data.table
-_pkgver=1.18.0
+_pkgver=1.18.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -24,8 +24,8 @@ optdepends=(
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('251bf3bdab82168bb677bde9ae261dc8')
-b2sums=('dfcba124ef365da7f1edb74fe25a09c79ae5419b5d67198a966f08a54ae85f22f24d85c7f255ce12cecb04edbcd2333e66ea2db5f75f099605dc56357a79933c')
+md5sums=('c9984d2aaf34f5b285addd7995c61b85')
+b2sums=('cc8cb110752d699fea5d69ccbfccedc29dcae73e85801657f4a054bfc1d5dd9e5dae2291b38cfb6d370829cf0f559fb056871e2bf30bb4613643bf7937e9c221')
 
 build() {
   mkdir build
