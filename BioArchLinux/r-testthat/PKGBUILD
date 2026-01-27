@@ -39,6 +39,8 @@ optdepends=(
   r-curl
   r-diffviewer
   r-knitr
+  r-otel
+  r-otelsdk
   r-rmarkdown
   r-rstudioapi
   r-s7
