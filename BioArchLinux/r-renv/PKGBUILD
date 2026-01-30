@@ -15,6 +15,7 @@ depends=(
 optdepends=(
   r-biocmanager
   r-cli
+  r-curl
   r-covr
   r-cpp11
   r-devtools
