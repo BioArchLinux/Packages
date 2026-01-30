@@ -9,6 +9,8 @@ repo_depends:
 - r-uuid
 - r-xml2
 - r-zip
+- r-dplyr
+- r-tidyr
 update_on:
 - regex: officer_([\d._-]+).tar.gz
   source: regex
