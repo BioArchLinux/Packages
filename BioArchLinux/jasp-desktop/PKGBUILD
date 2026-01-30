@@ -1,10 +1,10 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 
 _pkgname=jasp
-_pkgver=0.95.1
+_pkgver=0.95.3
 pkgname=jasp-desktop
-pkgver=0.95.1
-_ColumnEncoder_ver=0.95.1
+pkgver=0.95.3
+_ColumnEncoder_ver=0.95.3
 pkgrel=1
 pkgdesc="A complete statistical package for both Bayesian and Frequentist statistical methods"
 arch=('x86_64' 'aarch64')
