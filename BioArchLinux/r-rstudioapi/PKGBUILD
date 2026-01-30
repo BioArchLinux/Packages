@@ -15,9 +15,12 @@ depends=(
 optdepends=(
   r-clipr
   r-covr
+  r-curl
+  r-jsonlite
   r-knitr
   r-rmarkdown
   r-testthat
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('e127b1fe52f148584b0ebd789e50b979')
