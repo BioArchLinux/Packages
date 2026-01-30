@@ -11,6 +11,8 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-dplyr
+  r-tidyr
   r-openssl
   r-r6
   r-ragg
