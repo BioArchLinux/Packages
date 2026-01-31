@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-rcpp
+- r-rcpparmadillo
 update_on:
 - regex: extraDistr_([\d._-]+).tar.gz
   source: regex
