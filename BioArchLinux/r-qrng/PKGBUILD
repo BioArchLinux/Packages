@@ -16,6 +16,7 @@ optdepends=(
   r-copula
   r-randtoolbox
   r-spacefillr
+  r-simsalapar
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('513e4f9ab2775a64941dd45b943deea5')
