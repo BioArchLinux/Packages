@@ -7,7 +7,6 @@ repo_depends:
 - r-mvtnorm
 - r-pracma
 - r-lme4
-- r-extradistr
 - r-ergm
 - r-bergm
 - r-sandwich
