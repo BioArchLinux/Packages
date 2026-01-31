@@ -14,6 +14,7 @@ depends=(
   lapack
   r-bbmle
   r-fastghquad
+  r-lsoda
   r-mvtnorm
   r-numderiv
   r-rcpp
@@ -27,7 +28,6 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-desolve
   r-eha
   r-flexsurv
   r-ggplot2
