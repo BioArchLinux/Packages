@@ -15,7 +15,6 @@ depends=(
   r
 )
 optdepends=(
-  r-js
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('1f9bd62b589c3cec8a7530fd449e205b')
