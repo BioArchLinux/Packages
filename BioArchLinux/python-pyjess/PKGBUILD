@@ -3,13 +3,13 @@
 _name=pyjess
 pkgname=python-${_name}
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Cython bindings and Python interface to Jess, a 3D template matching software."
 url="https://github.com/althonos/pyjess"
 arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
 license=("MIT")
 depends=('python')
-makedepends=('cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core')
+makedepends=('cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core' 'git')
 source=(
   "git+https://github.com/althonos/pyjess#tag=v$pkgver"
   "git+https://github.com/iriziotis/jess"
