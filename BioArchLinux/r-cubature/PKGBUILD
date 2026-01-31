@@ -17,7 +17,7 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-benchr
+  r-bench
   r-knitr
   r-mvtnorm
   r-rmarkdown
