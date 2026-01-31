@@ -15,6 +15,7 @@ depends=(
 optdepends=(
   r-knitr
   r-rmarkdown
+  r-rpart.plot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('184a2651755daa64bb9ff13a07389443')
