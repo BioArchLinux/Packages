@@ -75,6 +75,7 @@ optdepends=(
   r-ivreg
   r-knitr
   r-lavaan
+  r-lcmm
   r-lfe
   r-lm.beta
   r-lme4
