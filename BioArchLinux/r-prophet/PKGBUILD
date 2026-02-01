@@ -35,7 +35,9 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
+  r-cmdstanr
   r-knitr
+  r-posterior
   r-readr
   r-rmarkdown
   r-testthat
