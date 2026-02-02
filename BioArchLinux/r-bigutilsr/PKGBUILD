@@ -20,10 +20,12 @@ depends=(
 checkdepends=(
   r-gmedian
   r-mvtnorm
-  r-rcpparmadillo
-  r-rcppeigen
   r-rrcov
   r-testthat
+)
+makedepends=(
+  r-rcpparmadillo
+  r-rcppeigen
 )
 optdepends=(
   r-covr
