@@ -33,9 +33,7 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-bench
   r-broom
-  r-callr
   r-covr
   r-dbi
   r-dbplyr
@@ -43,12 +41,9 @@ optdepends=(
   r-knitr
   r-lahman
   r-lobstr
-  r-microbenchmark
   r-nycflights13
   r-purrr
   r-rmarkdown
-  r-rmysql
-  r-rpostgresql
   r-rsqlite
   r-stringi
   r-testthat
