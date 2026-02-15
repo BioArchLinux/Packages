@@ -2,15 +2,15 @@
 # Contributor:Bipin Kumar <kbipinkumar@pm.me>
 
 pkgname=andi
-pkgver=0.14
-pkgrel=2
+pkgver=1.15
+pkgrel=1
 pkgdesc="program for estimating the evolutionary distance between closely related genomes"
 arch=('x86_64')
 url="https://github.com/EvolBioInf/andi"
 license=('GPL3')
 depends=('glibc' 'gsl' 'libdivsufsort' 'gcc-libs')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/EvolBioInf/andi/archive/refs/tags/v${pkgver}.tar.gz")
-b2sums=('b866f0bf520ecec05e07c40b33c4937affd0b7ea354ea005fbf423cb5f4849772df117cb64d58eaeaca6cb4c57335c041cad90dc90ac58fca57cfe0b9af17cb8')
+b2sums=('f8b731c3b5233c8401a9eddbccea94f235efe942ce88f21a19ad21d8209991fcb25c6d03a879e86d6f89b1eb82b3434bb2ae0f580582a7bc9132373e4a247753')
 
 prepare(){
   cd "$pkgname-$pkgver"
