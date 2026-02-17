@@ -1,7 +1,7 @@
 # Maintainer: Chocobo1 <chocobo1 AT archlinux DOT net>
 
 pkgname=bowtie2
-pkgver=2.5.4
+pkgver=2.5.5
 pkgrel=1
 pkgdesc="Tool for aligning sequencing reads to long reference sequences \
 	 https://doi.org/10.1038/nmeth.1923"
@@ -10,7 +10,7 @@ url="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml"
 license=('GPL-3.0-only')
 depends=('glibc' 'zstd' 'gcc-libs' 'zlib' 'python' 'bash')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/BenLangmead/bowtie2/archive/v${pkgver}.tar.gz")
-sha256sums=('841a6a60111b690c11d1e123cb5c11560b4cd1502b5cee7e394fd50f83e74e13')
+sha256sums=('e38d1833ec235ca27fa57589d32d897c9addf87085b7cb7bc978662954662da2')
 
 prepare() {
     cd "${srcdir}/${pkgname}-${pkgver}"
