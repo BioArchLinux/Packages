@@ -1,0 +1,240 @@
+---
+title: "Getting Started with ankiR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with ankiR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+ankiR provides a tidy interface for reading Anki flashcard databases in R. This vignette shows common workflows for analyzing your Anki learning data.
+
+## Installation
+
+```{r install}
+# From CRAN
+install.packages("ankiR")
+
+# Or from GitHub for the development version
+remotes::install_github("chrislongros/ankiR")
+```
+
+## Opening a Collection
+
+ankiR can automatically detect your Anki installation:
+
+```{r open}
+library(ankiR)
+
+# Auto-detect (uses first profile found)
+col <- anki_collection()
+
+# Specify a profile
+col <- anki_collection(profile = "User 1")
+
+# Or provide a path directly
+col <- anki_collection(path = "/path/to/collection.anki2")
+```
+
+The collection object provides methods to access different data:
+
+```{r methods}
+notes <- col$notes()
+cards <- col$cards()
+reviews <- col$revlog()
+decks <- col$decks()
+models <- col$models()
+
+# Always close when done
+col$close()
+```
+
+## Convenience Functions
+
+For one-off queries, use the standalone functions. They handle connection cleanup automatically:
+
+```{r convenience}
+# These are equivalent to opening, querying, and closing
+notes <- anki_notes()
+cards <- anki_cards()
+reviews <- anki_revlog()
+decks <- anki_decks()
+models <- anki_models()
+```
+
+## Understanding the Data
+
+### Notes
+
+Notes contain the actual content of your flashcards:
+
+```{r notes}
+notes <- anki_notes()
+# nid: Note ID
+# mid: Model (note type) ID
+# tags: Space-separated tags
+# flds: Fields separated by \x1f character
+# sfld: Sort field (usually the front)
+```
+
+### Cards
+
+Cards are generated from notes. One note can produce multiple cards:
+```{r cards}
+cards <- anki_cards()
+# cid: Card ID
+# nid: Note ID (links to notes table)
+# did: Deck ID
+# type: 0=new, 1=learning, 2=review, 3=relearning
+# queue: -1=suspended, 0=new, 1=learning, 2=review
+# due: Due date/position
+# ivl: Current interval in days
+# reps: Number of reviews
+# lapses: Number of times forgotten
+```
+
+### Decks
+
+```{r decks}
+decks <- anki_decks()
+# did: Deck ID
+# name: Deck name (includes parent::child hierarchy)
+```
+
+### Review Log
+
+Every review is recorded:
+
+```{r revlog}
+reviews <- anki_revlog()
+# rid: Review ID (timestamp in milliseconds)
+# cid: Card ID
+# ease: Button pressed (1=Again, 2=Hard, 3=Good, 4=Easy)
+# ivl: Interval after review
+# time: Time taken in milliseconds
+# review_date: Date of review
+```
+
+## Working with FSRS
+
+If you use FSRS (Free Spaced Repetition Scheduler), ankiR can extract the memory state parameters:
+
+```{r fsrs}
+cards_fsrs <- anki_cards_fsrs()
+
+# Additional columns:
+# stability: Time in days for recall probability to drop to 90%
+# difficulty: How hard the card is (1-10)
+# desired_retention: Target recall probability
+# decay: FSRS-6 decay parameter (w20)
+```
+
+### Calculating Retrievability
+
+Retrievability is the probability you'll recall a card right now:
+
+```{r retrievability}
+# For a card with 30-day stability, reviewed 15 days ago
+fsrs_retrievability(stability = 30, days_elapsed = 15)
+#> 0.946
+
+# Using the per-card decay from FSRS-6
+fsrs_retrievability(stability = 30, days_elapsed = 15, decay = 0.3)
+```
+
+### Calculating Optimal Intervals
+
+```{r intervals}
+# When should I review for 90% retention?
+fsrs_interval(stability = 30, desired_retention = 0.9)
+#> 30
+
+# For 85% retention (more reviews, better memory)
+fsrs_interval(stability = 30, desired_retention = 0.85)
+#> 21.3
+```
+
+## Example Analysis: Review Patterns
+
+```{r analysis, message=FALSE}
+library(ankiR)
+library(dplyr)
+library(ggplot2)
+
+# Get data
+reviews <- anki_revlog()
+cards <- anki_cards()
+decks <- anki_decks()
+
+# Daily review count
+daily_reviews <- reviews |>
+  count(review_date, name = "reviews")
+
+ggplot(daily_reviews, aes(review_date, reviews)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Daily Reviews", x = NULL, y = "Reviews") +
+  theme_minimal()
+
+# Card maturity by deck
+cards |>
+  left_join(decks, by = "did") |>
+  filter(type == 2) |>  # Review cards only
+  group_by(name) |>
+  summarise(
+    cards = n(),
+    avg_interval = mean(ivl),
+    mature = sum(ivl >= 21),  # Cards with 21+ day interval
+    .groups = "drop"
+  ) |>
+  arrange(desc(cards))
+```
+
+## Example: FSRS Memory Analysis
+
+```{r fsrs-analysis}
+cards_fsrs <- anki_cards_fsrs()
+
+# Distribution of stability values
+cards_fsrs |>
+  filter(!is.na(stability), stability > 0) |>
+  ggplot(aes(stability)) +
+  geom_histogram(bins = 50, fill = "steelblue") +
+  scale_x_log10() +
+  labs(
+    title = "Distribution of Card Stability",
+    x = "Stability (days, log scale)",
+    y = "Count"
+  ) +
+  theme_minimal()
+
+# Difficulty vs Stability
+cards_fsrs |>
+  filter(!is.na(stability), !is.na(difficulty)) |>
+  ggplot(aes(difficulty, stability)) +
+  geom_point(alpha = 0.3) +
+  scale_y_log10() +
+  labs(
+    title = "Card Difficulty vs Stability",
+    x = "Difficulty (1-10)",
+    y = "Stability (days, log scale)"
+  ) +
+  theme_minimal()
+```
+
+## Tips
+
+1. **Close connections**: Always call `col$close()` when using `anki_collection()` directly, or use the convenience functions which handle this automatically.
+
+2. **Anki must be closed**: The database is locked while Anki is running. Close Anki before reading the database.
+
+3. **Backup first**: While ankiR only reads data (never writes), it's good practice to backup your collection before any analysis.
+
+4. **Large collections**: For very large collections, consider using SQL queries directly via `DBI::dbGetQuery(col$con, "SELECT ...")` for better performance.

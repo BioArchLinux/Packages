@@ -1,0 +1,175 @@
+analyze_addon_import    Analyze Imported Addon Data
+anki_ab_comparison      A/B Comparison
+anki_backlog_calculator
+                        Backlog Calculator
+anki_base_path          Get Anki base path
+anki_benchmark          Benchmark against FSRS averages
+anki_best_review_times
+                        Find optimal review times
+anki_buried             Get buried cards
+anki_burnout_detection
+                        Detect Burnout Warning Signs
+anki_card_complexity    Analyze card complexity
+anki_card_content       Card Content Analysis
+anki_card_recommendations
+                        Generate card recommendations
+anki_cards              Read cards from Anki collection
+anki_cards_fsrs         Read cards with FSRS-6 parameters
+anki_cards_full         Get cards with full joined data
+anki_cohort_analysis    Cohort Analysis (Vintage Analysis)
+anki_collection         Open an Anki collection
+anki_compare_by_age     Compare retention by card age
+anki_compare_deck_difficulty
+                        Compare performance by deck difficulty
+anki_compare_decks      Compare statistics between decks
+anki_compare_forecasts
+                        Compare Forecast Methods
+anki_compare_groups     Compare Two Specific Groups
+anki_compare_periods    Compare two time periods
+anki_consistency        Analyze study consistency
+anki_coverage_analysis
+                        Analyze topic coverage
+anki_dashboard          Launch interactive Anki dashboard
+anki_db_path            Get path to Anki database
+anki_decks              Read decks from Anki collection
+anki_due                Get cards due for review
+anki_empty_cards        Find cards with empty fields
+anki_exam_readiness     Track exam readiness
+anki_export_importable
+                        Export to Anki-importable format
+anki_export_revlog      Export review history
+anki_field_contents     Parse note fields into columns
+anki_find_similar       Search cards by content similarity
+anki_fit_forgetting_curve
+                        Fit forgetting curve from review data
+anki_forecast           Get forecast of upcoming reviews
+anki_forecast_enhanced
+                        Enhanced Time Series Forecasting
+anki_forecast_monte_carlo
+                        Monte Carlo Forecasting
+anki_gamification       Gamification Stats
+anki_health_check       Collection health check
+anki_heatmap_data       Get review data formatted for calendar heatmaps
+anki_interference_analysis
+                        Detect card interference
+anki_learning_curve     Track card learning progression over time
+anki_learning_efficiency
+                        Analyze learning efficiency
+anki_learning_velocity
+                        Learning Velocity Analysis
+anki_leeches            Find leech cards (high lapse count)
+anki_long_cards         Find cards with very long content
+anki_mature             Get mature cards (interval >= 21 days)
+anki_media_list         List media files in collection
+anki_media_missing      Find missing media references
+anki_media_path         Get media folder path
+anki_media_stats        Get media statistics
+anki_media_unused       Find unused media files
+anki_models             Read note types (models) from Anki collection
+anki_monthly_summary    Get monthly summary statistics
+anki_new                Get new cards (never reviewed)
+anki_notes              Read notes from Anki collection
+anki_plot_difficulty    Plot difficulty distribution
+anki_plot_forecast      Plot review forecast
+anki_plot_forgetting_curve
+                        Plot forgetting curve comparison
+anki_plot_heatmap       Plot review heatmap calendar
+anki_plot_hours         Plot reviews by hour of day
+anki_plot_intervals     Plot interval distribution
+anki_plot_monte_carlo   Plot Monte Carlo Forecast
+anki_plot_retention     Plot retention over time
+anki_plot_stability     Plot stability distribution
+anki_plot_weekdays      Plot reviews by day of week
+anki_profiles           List Anki profiles
+anki_progress_report    Generate progress report
+anki_quality_report     Analyze card quality metrics
+anki_quick_summary      Quick Collection Summary
+anki_report             Generate collection summary report
+anki_response_time      Analyze response time by card properties
+anki_response_time_outliers
+                        Analyze response time outliers
+anki_retention_by_type
+                        Calculate retention by content type
+anki_retention_rate     Calculate actual retention rate from review
+                        history
+anki_retention_stability
+                        Retention Stability Analysis
+anki_review_quality     Review Quality Score
+anki_revlog             Read review log from Anki collection
+anki_roi_analysis       Calculate spaced repetition ROI
+anki_schema_version     Anki Schema Version Detection
+anki_search             Search cards like Anki's browser
+anki_search_enhanced    Enhanced Search for Anki Cards
+anki_session_analysis   Analyze study sessions
+anki_session_stats      Analyze study sessions
+anki_sibling_analysis   Analyze sibling card effects
+anki_similar_cards      Find similar/duplicate cards
+anki_simulate_session   Simulate a study session
+anki_stats_daily        Calculate daily review statistics
+anki_stats_deck         Calculate per-deck statistics
+anki_streak             Calculate current review streak
+anki_streak_analytics   Advanced Streak Analytics
+anki_study_plan         Create study plan
+anki_study_priorities   Generate study priority list
+anki_summary            Quick collection summary
+anki_suspended          Get suspended cards
+anki_tag_analysis       Analyze tag usage
+anki_tags               Extract unique tags with counts
+anki_time_by_hour       Analyze reviews by hour of day
+anki_time_by_weekday    Analyze reviews by day of week
+anki_timestamp_to_date
+                        Convert Anki timestamp to date
+anki_timestamp_to_datetime
+                        Convert Anki timestamp to datetime
+anki_to_csv             Export deck to CSV
+anki_to_html            Export collection report to HTML
+anki_to_json            Export collection as JSON
+anki_to_markdown        Export deck to Markdown format
+anki_to_mochi           Export to Mochi format
+anki_to_obsidian_sr     Export to Obsidian Spaced Repetition plugin
+                        format
+anki_to_org             Export deck to Org-mode format
+anki_to_supermemo       Export deck to SuperMemo Q&A format
+anki_today              Today's activity summary
+anki_ts_anomalies       Detect anomalies in review patterns
+anki_ts_autocorrelation
+                        Calculate autocorrelation of review patterns
+anki_ts_decompose       Decompose time series into trend, seasonal, and
+                        residual
+anki_ts_forecast        Forecast future reviews using simple methods
+anki_ts_intervals       Analyze interval progression over time
+anki_ts_learning        Analyze learning rate (new cards learned)
+anki_ts_maturation      Analyze card maturation over time
+anki_ts_plot            Plot time series with trend line
+anki_ts_retention       Analyze retention over time
+anki_ts_stability       Analyze FSRS stability over time
+anki_ts_workload        Analyze workload trends
+anki_weak_areas         Find weak areas by tag or deck
+anki_workload_projection
+                        Workload Projection (Rough Estimate)
+date_to_anki_timestamp
+                        Convert date to Anki timestamp
+fsrs_compare_parameters
+                        Compare FSRS parameters
+fsrs_current_retrievability
+                        Calculate current retrievability for all cards
+fsrs_decay_distribution
+                        Analyze FSRS decay parameter distribution
+fsrs_difficulty_distribution
+                        Analyze FSRS difficulty distribution
+fsrs_export_reviews     Export reviews for external FSRS analysis
+fsrs_forgetting_index   Calculate forgetting index
+fsrs_from_csv           Import review data from CSV for analysis
+fsrs_get_parameters     Get FSRS parameters from Anki deck config
+fsrs_memory_states      Calculate memory state for cards
+fsrs_prepare_for_optimizer
+                        Prepare review data for r-fsrs optimizer
+fsrs_stability_distribution
+                        Analyze FSRS stability distribution
+import_addon_export     Import ankiR Stats Addon Export
+plot.anki_decomposition
+                        Plot time series decomposition
+print.anki_gamification
+                        Print Gamification Stats
+print.anki_mc_forecast
+                        Print Monte Carlo Forecast

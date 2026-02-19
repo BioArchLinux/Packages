@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Read and Analyze 'Anki' Flashcard Databases</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body><div class="container">
+<h1> Read and Analyze 'Anki' Flashcard Databases
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]">
+</h1>
+<hr>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]"></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]"></a>
+</div><h2>Documentation for package &lsquo;ankiR&rsquo; version 0.6.0</h2>
+
+<ul><li><a href="../DESCRIPTION" type="text/plain; charset=utf-8">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS.md">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="#A">A</a>
+<a href="#D">D</a>
+<a href="#F">F</a>
+<a href="#I">I</a>
+<a href="#P">P</a>
+</p>
+
+
+<h2><a id="A">-- A --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="analyze_addon_import.html">analyze_addon_import</a></td>
+<td>Analyze Imported Addon Data</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ab_comparison.html">anki_ab_comparison</a></td>
+<td>A/B Comparison</td></tr>
+<tr><td style="width: 25%;"><a href="anki_backlog_calculator.html">anki_backlog_calculator</a></td>
+<td>Backlog Calculator</td></tr>
+<tr><td style="width: 25%;"><a href="anki_base_path.html">anki_base_path</a></td>
+<td>Get Anki base path</td></tr>
+<tr><td style="width: 25%;"><a href="anki_benchmark.html">anki_benchmark</a></td>
+<td>Benchmark against FSRS averages</td></tr>
+<tr><td style="width: 25%;"><a href="anki_best_review_times.html">anki_best_review_times</a></td>
+<td>Find optimal review times</td></tr>
+<tr><td style="width: 25%;"><a href="anki_buried.html">anki_buried</a></td>
+<td>Get buried cards</td></tr>
+<tr><td style="width: 25%;"><a href="anki_burnout_detection.html">anki_burnout_detection</a></td>
+<td>Detect Burnout Warning Signs</td></tr>
+<tr><td style="width: 25%;"><a href="anki_cards.html">anki_cards</a></td>
+<td>Read cards from Anki collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_cards_fsrs.html">anki_cards_fsrs</a></td>
+<td>Read cards with FSRS-6 parameters</td></tr>
+<tr><td style="width: 25%;"><a href="anki_cards_full.html">anki_cards_full</a></td>
+<td>Get cards with full joined data</td></tr>
+<tr><td style="width: 25%;"><a href="anki_card_complexity.html">anki_card_complexity</a></td>
+<td>Analyze card complexity</td></tr>
+<tr><td style="width: 25%;"><a href="anki_card_content.html">anki_card_content</a></td>
+<td>Card Content Analysis</td></tr>
+<tr><td style="width: 25%;"><a href="anki_card_recommendations.html">anki_card_recommendations</a></td>
+<td>Generate card recommendations</td></tr>
+<tr><td style="width: 25%;"><a href="anki_cohort_analysis.html">anki_cohort_analysis</a></td>
+<td>Cohort Analysis (Vintage Analysis)</td></tr>
+<tr><td style="width: 25%;"><a href="anki_collection.html">anki_collection</a></td>
+<td>Open an Anki collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_compare_by_age.html">anki_compare_by_age</a></td>
+<td>Compare retention by card age</td></tr>
+<tr><td style="width: 25%;"><a href="anki_compare_decks.html">anki_compare_decks</a></td>
+<td>Compare statistics between decks</td></tr>
+<tr><td style="width: 25%;"><a href="anki_compare_deck_difficulty.html">anki_compare_deck_difficulty</a></td>
+<td>Compare performance by deck difficulty</td></tr>
+<tr><td style="width: 25%;"><a href="anki_compare_forecasts.html">anki_compare_forecasts</a></td>
+<td>Compare Forecast Methods</td></tr>
+<tr><td style="width: 25%;"><a href="anki_compare_groups.html">anki_compare_groups</a></td>
+<td>Compare Two Specific Groups</td></tr>
+<tr><td style="width: 25%;"><a href="anki_compare_periods.html">anki_compare_periods</a></td>
+<td>Compare two time periods</td></tr>
+<tr><td style="width: 25%;"><a href="anki_consistency.html">anki_consistency</a></td>
+<td>Analyze study consistency</td></tr>
+<tr><td style="width: 25%;"><a href="anki_coverage_analysis.html">anki_coverage_analysis</a></td>
+<td>Analyze topic coverage</td></tr>
+<tr><td style="width: 25%;"><a href="anki_dashboard.html">anki_dashboard</a></td>
+<td>Launch interactive Anki dashboard</td></tr>
+<tr><td style="width: 25%;"><a href="anki_db_path.html">anki_db_path</a></td>
+<td>Get path to Anki database</td></tr>
+<tr><td style="width: 25%;"><a href="anki_decks.html">anki_decks</a></td>
+<td>Read decks from Anki collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_due.html">anki_due</a></td>
+<td>Get cards due for review</td></tr>
+<tr><td style="width: 25%;"><a href="anki_empty_cards.html">anki_empty_cards</a></td>
+<td>Find cards with empty fields</td></tr>
+<tr><td style="width: 25%;"><a href="anki_exam_readiness.html">anki_exam_readiness</a></td>
+<td>Track exam readiness</td></tr>
+<tr><td style="width: 25%;"><a href="anki_export_importable.html">anki_export_importable</a></td>
+<td>Export to Anki-importable format</td></tr>
+<tr><td style="width: 25%;"><a href="anki_export_revlog.html">anki_export_revlog</a></td>
+<td>Export review history</td></tr>
+<tr><td style="width: 25%;"><a href="anki_field_contents.html">anki_field_contents</a></td>
+<td>Parse note fields into columns</td></tr>
+<tr><td style="width: 25%;"><a href="anki_find_similar.html">anki_find_similar</a></td>
+<td>Search cards by content similarity</td></tr>
+<tr><td style="width: 25%;"><a href="anki_fit_forgetting_curve.html">anki_fit_forgetting_curve</a></td>
+<td>Fit forgetting curve from review data</td></tr>
+<tr><td style="width: 25%;"><a href="anki_forecast.html">anki_forecast</a></td>
+<td>Get forecast of upcoming reviews</td></tr>
+<tr><td style="width: 25%;"><a href="anki_forecast_enhanced.html">anki_forecast_enhanced</a></td>
+<td>Enhanced Time Series Forecasting</td></tr>
+<tr><td style="width: 25%;"><a href="anki_forecast_monte_carlo.html">anki_forecast_monte_carlo</a></td>
+<td>Monte Carlo Forecasting</td></tr>
+<tr><td style="width: 25%;"><a href="anki_gamification.html">anki_gamification</a></td>
+<td>Gamification Stats</td></tr>
+<tr><td style="width: 25%;"><a href="anki_health_check.html">anki_health_check</a></td>
+<td>Collection health check</td></tr>
+<tr><td style="width: 25%;"><a href="anki_heatmap_data.html">anki_heatmap_data</a></td>
+<td>Get review data formatted for calendar heatmaps</td></tr>
+<tr><td style="width: 25%;"><a href="anki_interference_analysis.html">anki_interference_analysis</a></td>
+<td>Detect card interference</td></tr>
+<tr><td style="width: 25%;"><a href="anki_learning_curve.html">anki_learning_curve</a></td>
+<td>Track card learning progression over time</td></tr>
+<tr><td style="width: 25%;"><a href="anki_learning_efficiency.html">anki_learning_efficiency</a></td>
+<td>Analyze learning efficiency</td></tr>
+<tr><td style="width: 25%;"><a href="anki_learning_velocity.html">anki_learning_velocity</a></td>
+<td>Learning Velocity Analysis</td></tr>
+<tr><td style="width: 25%;"><a href="anki_leeches.html">anki_leeches</a></td>
+<td>Find leech cards (high lapse count)</td></tr>
+<tr><td style="width: 25%;"><a href="anki_long_cards.html">anki_long_cards</a></td>
+<td>Find cards with very long content</td></tr>
+<tr><td style="width: 25%;"><a href="anki_mature.html">anki_mature</a></td>
+<td>Get mature cards (interval &gt;= 21 days)</td></tr>
+<tr><td style="width: 25%;"><a href="anki_media_list.html">anki_media_list</a></td>
+<td>List media files in collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_media_missing.html">anki_media_missing</a></td>
+<td>Find missing media references</td></tr>
+<tr><td style="width: 25%;"><a href="anki_media_path.html">anki_media_path</a></td>
+<td>Get media folder path</td></tr>
+<tr><td style="width: 25%;"><a href="anki_media_stats.html">anki_media_stats</a></td>
+<td>Get media statistics</td></tr>
+<tr><td style="width: 25%;"><a href="anki_media_unused.html">anki_media_unused</a></td>
+<td>Find unused media files</td></tr>
+<tr><td style="width: 25%;"><a href="anki_models.html">anki_models</a></td>
+<td>Read note types (models) from Anki collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_monthly_summary.html">anki_monthly_summary</a></td>
+<td>Get monthly summary statistics</td></tr>
+<tr><td style="width: 25%;"><a href="anki_new.html">anki_new</a></td>
+<td>Get new cards (never reviewed)</td></tr>
+<tr><td style="width: 25%;"><a href="anki_notes.html">anki_notes</a></td>
+<td>Read notes from Anki collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_difficulty.html">anki_plot_difficulty</a></td>
+<td>Plot difficulty distribution</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_forecast.html">anki_plot_forecast</a></td>
+<td>Plot review forecast</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_forgetting_curve.html">anki_plot_forgetting_curve</a></td>
+<td>Plot forgetting curve comparison</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_heatmap.html">anki_plot_heatmap</a></td>
+<td>Plot review heatmap calendar</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_hours.html">anki_plot_hours</a></td>
+<td>Plot reviews by hour of day</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_intervals.html">anki_plot_intervals</a></td>
+<td>Plot interval distribution</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_monte_carlo.html">anki_plot_monte_carlo</a></td>
+<td>Plot Monte Carlo Forecast</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_retention.html">anki_plot_retention</a></td>
+<td>Plot retention over time</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_stability.html">anki_plot_stability</a></td>
+<td>Plot stability distribution</td></tr>
+<tr><td style="width: 25%;"><a href="anki_plot_weekdays.html">anki_plot_weekdays</a></td>
+<td>Plot reviews by day of week</td></tr>
+<tr><td style="width: 25%;"><a href="anki_profiles.html">anki_profiles</a></td>
+<td>List Anki profiles</td></tr>
+<tr><td style="width: 25%;"><a href="anki_progress_report.html">anki_progress_report</a></td>
+<td>Generate progress report</td></tr>
+<tr><td style="width: 25%;"><a href="anki_quality_report.html">anki_quality_report</a></td>
+<td>Analyze card quality metrics</td></tr>
+<tr><td style="width: 25%;"><a href="anki_quick_summary.html">anki_quick_summary</a></td>
+<td>Quick Collection Summary</td></tr>
+<tr><td style="width: 25%;"><a href="anki_report.html">anki_report</a></td>
+<td>Generate collection summary report</td></tr>
+<tr><td style="width: 25%;"><a href="anki_response_time.html">anki_response_time</a></td>
+<td>Analyze response time by card properties</td></tr>
+<tr><td style="width: 25%;"><a href="anki_response_time_outliers.html">anki_response_time_outliers</a></td>
+<td>Analyze response time outliers</td></tr>
+<tr><td style="width: 25%;"><a href="anki_retention_by_type.html">anki_retention_by_type</a></td>
+<td>Calculate retention by content type</td></tr>
+<tr><td style="width: 25%;"><a href="anki_retention_rate.html">anki_retention_rate</a></td>
+<td>Calculate actual retention rate from review history</td></tr>
+<tr><td style="width: 25%;"><a href="anki_retention_stability.html">anki_retention_stability</a></td>
+<td>Retention Stability Analysis</td></tr>
+<tr><td style="width: 25%;"><a href="anki_review_quality.html">anki_review_quality</a></td>
+<td>Review Quality Score</td></tr>
+<tr><td style="width: 25%;"><a href="anki_revlog.html">anki_revlog</a></td>
+<td>Read review log from Anki collection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_roi_analysis.html">anki_roi_analysis</a></td>
+<td>Calculate spaced repetition ROI</td></tr>
+<tr><td style="width: 25%;"><a href="anki_schema_version.html">anki_schema_version</a></td>
+<td>Anki Schema Version Detection</td></tr>
+<tr><td style="width: 25%;"><a href="anki_search.html">anki_search</a></td>
+<td>Search cards like Anki's browser</td></tr>
+<tr><td style="width: 25%;"><a href="anki_search_enhanced.html">anki_search_enhanced</a></td>
+<td>Enhanced Search for Anki Cards</td></tr>
+<tr><td style="width: 25%;"><a href="anki_session_analysis.html">anki_session_analysis</a></td>
+<td>Analyze study sessions</td></tr>
+<tr><td style="width: 25%;"><a href="anki_session_stats.html">anki_session_stats</a></td>
+<td>Analyze study sessions</td></tr>
+<tr><td style="width: 25%;"><a href="anki_sibling_analysis.html">anki_sibling_analysis</a></td>
+<td>Analyze sibling card effects</td></tr>
+<tr><td style="width: 25%;"><a href="anki_similar_cards.html">anki_similar_cards</a></td>
+<td>Find similar/duplicate cards</td></tr>
+<tr><td style="width: 25%;"><a href="anki_simulate_session.html">anki_simulate_session</a></td>
+<td>Simulate a study session</td></tr>
+<tr><td style="width: 25%;"><a href="anki_stats_daily.html">anki_stats_daily</a></td>
+<td>Calculate daily review statistics</td></tr>
+<tr><td style="width: 25%;"><a href="anki_stats_deck.html">anki_stats_deck</a></td>
+<td>Calculate per-deck statistics</td></tr>
+<tr><td style="width: 25%;"><a href="anki_streak.html">anki_streak</a></td>
+<td>Calculate current review streak</td></tr>
+<tr><td style="width: 25%;"><a href="anki_streak_analytics.html">anki_streak_analytics</a></td>
+<td>Advanced Streak Analytics</td></tr>
+<tr><td style="width: 25%;"><a href="anki_study_plan.html">anki_study_plan</a></td>
+<td>Create study plan</td></tr>
+<tr><td style="width: 25%;"><a href="anki_study_priorities.html">anki_study_priorities</a></td>
+<td>Generate study priority list</td></tr>
+<tr><td style="width: 25%;"><a href="anki_summary.html">anki_summary</a></td>
+<td>Quick collection summary</td></tr>
+<tr><td style="width: 25%;"><a href="anki_suspended.html">anki_suspended</a></td>
+<td>Get suspended cards</td></tr>
+<tr><td style="width: 25%;"><a href="anki_tags.html">anki_tags</a></td>
+<td>Extract unique tags with counts</td></tr>
+<tr><td style="width: 25%;"><a href="anki_tag_analysis.html">anki_tag_analysis</a></td>
+<td>Analyze tag usage</td></tr>
+<tr><td style="width: 25%;"><a href="anki_timestamp_to_date.html">anki_timestamp_to_date</a></td>
+<td>Convert Anki timestamp to date</td></tr>
+<tr><td style="width: 25%;"><a href="anki_timestamp_to_datetime.html">anki_timestamp_to_datetime</a></td>
+<td>Convert Anki timestamp to datetime</td></tr>
+<tr><td style="width: 25%;"><a href="anki_time_by_hour.html">anki_time_by_hour</a></td>
+<td>Analyze reviews by hour of day</td></tr>
+<tr><td style="width: 25%;"><a href="anki_time_by_weekday.html">anki_time_by_weekday</a></td>
+<td>Analyze reviews by day of week</td></tr>
+<tr><td style="width: 25%;"><a href="anki_today.html">anki_today</a></td>
+<td>Today's activity summary</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_csv.html">anki_to_csv</a></td>
+<td>Export deck to CSV</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_html.html">anki_to_html</a></td>
+<td>Export collection report to HTML</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_json.html">anki_to_json</a></td>
+<td>Export collection as JSON</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_markdown.html">anki_to_markdown</a></td>
+<td>Export deck to Markdown format</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_mochi.html">anki_to_mochi</a></td>
+<td>Export to Mochi format</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_obsidian_sr.html">anki_to_obsidian_sr</a></td>
+<td>Export to Obsidian Spaced Repetition plugin format</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_org.html">anki_to_org</a></td>
+<td>Export deck to Org-mode format</td></tr>
+<tr><td style="width: 25%;"><a href="anki_to_supermemo.html">anki_to_supermemo</a></td>
+<td>Export deck to SuperMemo Q&amp;A format</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_anomalies.html">anki_ts_anomalies</a></td>
+<td>Detect anomalies in review patterns</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_autocorrelation.html">anki_ts_autocorrelation</a></td>
+<td>Calculate autocorrelation of review patterns</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_decompose.html">anki_ts_decompose</a></td>
+<td>Decompose time series into trend, seasonal, and residual</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_forecast.html">anki_ts_forecast</a></td>
+<td>Forecast future reviews using simple methods</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_intervals.html">anki_ts_intervals</a></td>
+<td>Analyze interval progression over time</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_learning.html">anki_ts_learning</a></td>
+<td>Analyze learning rate (new cards learned)</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_maturation.html">anki_ts_maturation</a></td>
+<td>Analyze card maturation over time</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_plot.html">anki_ts_plot</a></td>
+<td>Plot time series with trend line</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_retention.html">anki_ts_retention</a></td>
+<td>Analyze retention over time</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_stability.html">anki_ts_stability</a></td>
+<td>Analyze FSRS stability over time</td></tr>
+<tr><td style="width: 25%;"><a href="anki_ts_workload.html">anki_ts_workload</a></td>
+<td>Analyze workload trends</td></tr>
+<tr><td style="width: 25%;"><a href="anki_weak_areas.html">anki_weak_areas</a></td>
+<td>Find weak areas by tag or deck</td></tr>
+<tr><td style="width: 25%;"><a href="anki_workload_projection.html">anki_workload_projection</a></td>
+<td>Workload Projection (Rough Estimate)</td></tr>
+</table>
+
+<h2><a id="D">-- D --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="date_to_anki_timestamp.html">date_to_anki_timestamp</a></td>
+<td>Convert date to Anki timestamp</td></tr>
+</table>
+
+<h2><a id="F">-- F --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="fsrs_compare_parameters.html">fsrs_compare_parameters</a></td>
+<td>Compare FSRS parameters</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_current_retrievability.html">fsrs_current_retrievability</a></td>
+<td>Calculate current retrievability for all cards</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_decay_distribution.html">fsrs_decay_distribution</a></td>
+<td>Analyze FSRS decay parameter distribution</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_difficulty_distribution.html">fsrs_difficulty_distribution</a></td>
+<td>Analyze FSRS difficulty distribution</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_export_reviews.html">fsrs_export_reviews</a></td>
+<td>Export reviews for external FSRS analysis</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_forgetting_index.html">fsrs_forgetting_index</a></td>
+<td>Calculate forgetting index</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_from_csv.html">fsrs_from_csv</a></td>
+<td>Import review data from CSV for analysis</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_get_parameters.html">fsrs_get_parameters</a></td>
+<td>Get FSRS parameters from Anki deck config</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_memory_states.html">fsrs_memory_states</a></td>
+<td>Calculate memory state for cards</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_prepare_for_optimizer.html">fsrs_prepare_for_optimizer</a></td>
+<td>Prepare review data for r-fsrs optimizer</td></tr>
+<tr><td style="width: 25%;"><a href="fsrs_stability_distribution.html">fsrs_stability_distribution</a></td>
+<td>Analyze FSRS stability distribution</td></tr>
+</table>
+
+<h2><a id="I">-- I --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="import_addon_export.html">import_addon_export</a></td>
+<td>Import ankiR Stats Addon Export</td></tr>
+</table>
+
+<h2><a id="P">-- P --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="plot.anki_decomposition.html">plot.anki_decomposition</a></td>
+<td>Plot time series decomposition</td></tr>
+<tr><td style="width: 25%;"><a href="print.anki_gamification.html">print.anki_gamification</a></td>
+<td>Print Gamification Stats</td></tr>
+<tr><td style="width: 25%;"><a href="print.anki_mc_forecast.html">print.anki_mc_forecast</a></td>
+<td>Print Monte Carlo Forecast</td></tr>
+</table>
+</div></body></html>
