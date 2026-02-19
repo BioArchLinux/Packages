@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2026.01.0+392
+pkgver=2026.01.1+403
 _pkgver=${pkgver//+/.}
 _srcname=rstudio
 # _srcname=rstudio-${pkgver//+/-}
@@ -87,7 +87,7 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         '0001-steady_timer.patch'
         )
 noextract+=("gwt-${_gwt_version}.tar.gz")
-sha256sums=('49d6bae2b66db99cd8de7df0c259ca4aacd0fb90fc83aea9eddb207d6b720f98'
+sha256sums=('916193927e5e5ad978066035026cd9127702883d5db5eeb1378a4a56178d9cb7'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             'a595ebb7b4e3350293a4066782797476d9cca455e99e2b516775b06096910160'
