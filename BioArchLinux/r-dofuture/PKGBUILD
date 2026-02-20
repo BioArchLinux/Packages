@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=doFuture
-_pkgver=1.2.0
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -24,8 +24,8 @@ optdepends=(
   r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('041101f9222874ce9700b035142cefc5')
-b2sums=('895b0aac84a956830d9843f94970bd5f1e064471f86b6839c9333e59d3bf4315bfc4f69ea8672518f4b857481676329ebdd8ae9633dd244c1c4bfce3bbe53832')
+md5sums=('8ad992008c847c4de3564801702d8dc3')
+b2sums=('61ea33448bfd6531b22b92b68338f0c2673d3ebf62f9ad23628143260cf12396f08d673e28e13291993f97adf298987466e2f2bed76609a95497c11ce0b568dc')
 
 build() {
   mkdir build
