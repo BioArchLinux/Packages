@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-rlang
+- r-jsonlite
+- r-dbi
+- r-rsqlite
+- r-tibble
+- r-scales
+update_on:
+- source: rpkgs
+  pkgname: ankiR
+  repo: cran
+  md5: true
+- alias: r
