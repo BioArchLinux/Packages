@@ -2,7 +2,7 @@
 
 _name=pyhmmer
 pkgname=python-${_name}
-pkgver=0.11.4
+pkgver=0.12.0
 pkgrel=2
 pkgdesc="Cython bindings to HMMER3. https://doi.org/10.1093/bioinformatics/btad214"
 arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
@@ -11,7 +11,7 @@ license=("MIT")
 depends=('python' 'gcc-libs' 'glibc' 'python-psutil')
 makedepends=('git' 'cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core')
 source=("git+https://github.com/althonos/pyhmmer.git#tag=v$pkgver")
-sha256sums=('27a340f31d80247563b7ea0c50a374020e3880313f22694e66e2eb06db6d0d22')
+sha256sums=('3e064faa001c2c75b2afde16960e3588c6284a8498553247a3ee7be16374cbe3')
 
 prepare() {
     cd "${srcdir}/${_name}"
@@ -24,9 +24,8 @@ build() {
 }
 
 check() {
-    local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
-    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp312-abi3-linux_${machine}.whl"
 
     rm -rf "${srcdir}/env"
     python -m venv --symlinks --system-site-packages "${srcdir}/env"
@@ -39,7 +38,7 @@ check() {
 package() {
     local abitag=$(python -c 'import sys; print(*sys.version_info[:2], sep="")')
     local machine=$(python -c 'import platform; print(platform.machine())')
-    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp${abitag}-cp${abitag}-linux_${machine}.whl"
+    whl="${srcdir}/${_name}/dist/${_name}-${pkgver}-cp312-abi3-linux_${machine}.whl"
 
     python -m installer --prefix="${pkgdir}/usr" "$whl"
     install -Dm644  ${srcdir}/${_name}/COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
