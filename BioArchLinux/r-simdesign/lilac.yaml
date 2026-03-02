@@ -4,6 +4,7 @@ maintainers:
   email: shuonwang@gmail.com
 repo_depends:
 - r-clipr
+- r-e1071
 - r-testthat
 - r-parallelly
 - r-dplyr
