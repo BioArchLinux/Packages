@@ -1,23 +1,23 @@
 _name=arvados-cwl-runner
 pkgname=python-arvados-cwl-runner
-pkgver=3.2.0
-pkgrel=2
+pkgver=3.2.1
+pkgrel=1
 pkgdesc="Arvados Common Workflow Language runner"
 arch=(any)
 url="https://arvados.org"
 license=(Apache-2.0)
 depends=('python')
 makedepends=('python-setuptools' 'python-setuptools')
-source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/arvados_cwl_runner-3.2.0.tar.gz")
-sha256sums=('e609375e24ed08aedce6aba6a1aa16ecb2fcaeedf72c52f081b14b4c100ac0ab')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/arvados_cwl_runner-3.2.1.tar.gz")
+sha256sums=('c36b558f3ccdc6ba0fd7cabd2f5244a769fa61aca3beab08e7e1b9c15bcab7b2')
 
 build() {
-  cd "$srcdir/arvados_cwl_runner-3.2.0"
+  cd "$srcdir/arvados_cwl_runner-3.2.1"
   python3 setup.py build
 }
 
 package() {
-  cd "$srcdir/arvados_cwl_runner-3.2.0"
+  cd "$srcdir/arvados_cwl_runner-3.2.1"
   python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
 
   # make sure we don't install any world-writable or root-readable-only files
