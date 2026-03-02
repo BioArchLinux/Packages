@@ -2,7 +2,7 @@
 
 _pkgname=QuPath
 pkgname=qupath
-pkgver=0.6.0
+pkgver=0.7.0
 pkgrel=1
 pkgdesc='Bioimage analysis & digital pathology 
          https://doi.org/10.1038/s41598-017-17204-5'
@@ -30,7 +30,7 @@ optdepends=(
 )
 options=(!strip)
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/qupath/qupath/archive/v${pkgver}.tar.gz")
-sha512sums=('2a0ddd87ce307a3c554592c0fdd56fc31f418a30187eaed654e9128adbecf0aedc1a568a208a00f8963b0f68adc2cb2aeb3861f3356abd07b002e0a9183f24de')
+sha512sums=('b12636444c64c44786f32d913471b993ec2a566fff678e46b4bd555025110ca6c0625c90321265fd94d2da05fefc895da280bcf523f7a30cc7284eb979a1f578')
 
 prepare() {
   echo "Creating desktop file"
