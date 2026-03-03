@@ -1,7 +1,7 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=bgms
-_pkgver=0.1.6.2
+_pkgver=0.1.6.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -30,8 +30,8 @@ optdepends=(
   r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('eff7e1c2c8408dd2ae599faa4f4d4f4b')
-b2sums=('53673acc0f7988672bc018541364f97c8ae65bf3d050f72fe8fbbfd0716a93c008169bf33f2a8eccd3acb5986de0c62895ffcbdcfb92d54ab6ba66dc08b9a3b7')
+md5sums=('8a075871cc702b9abca2260a056a64d0')
+b2sums=('a8dc822b4832e3d4bf390e037cd008ad91ddea3dc7892545bf56d1852cae99403ea6afa65eea757a3a92414f1bb1bdbabfe674ad3f32dcf138806573d40d3e6a')
 
 build() {
   mkdir build
