@@ -22,6 +22,7 @@ makedepends=(
   r-bh
 )
 optdepends=(
+  r-covr
   r-knitr
   r-qgraph
   r-rmarkdown
