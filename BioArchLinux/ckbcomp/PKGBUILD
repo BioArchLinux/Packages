@@ -2,7 +2,7 @@
 # Ex-Maintainer: 	Jeroen Bollen <jbinero at gmail dot comau>
 
 pkgname=ckbcomp
-pkgver=1.245
+pkgver=1.246
 pkgrel=1
 pkgdesc="Compile a XKB keyboard description to a keymap suitable for loadkeys or kbdcontrol"
 arch=(any)
@@ -10,7 +10,7 @@ url="https://salsa.debian.org/installer-team/console-setup"
 license=('GPL2')
 depends=('perl')
 source=("${url}/-/archive/${pkgver}/console-setup-${pkgver}.tar.gz")
-sha512sums=('50211a9e4082f21d6dbb30f7e31550a826d8fcd2d0e470dca94f5f37e54a81ce7f8dee7e80de88c2d9ea83e28cefe922fd1ea701e4342594301705375fb589cd')
+sha512sums=('b680ae7f2d8d720f7493f4ed40572c87c5d25567df3767b1f26c15055b8e18fd514d339bc14bd2a18a4cc281ff91abed6b8d90f4e0a7df8a2cad89342214365a')
 conflicts=(ckbcomp-bin)
 
 package() {
