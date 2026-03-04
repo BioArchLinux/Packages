@@ -96,6 +96,7 @@ optdepends=(
   r-nestedlogit
   r-nonnest2
   r-ordinal
+  r-panelr
   r-parameters
   r-parsnip
   r-pbkrtest
