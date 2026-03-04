@@ -20,7 +20,8 @@ depends=(
 )
 optdepends=(
   r-knitr
-  r-plm
+  r-glue
+  r-tinytex
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
