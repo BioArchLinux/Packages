@@ -16,6 +16,7 @@ depends=(
   r-ggplot2
   r-gridextra
   r-lavaan
+  r-metadat
   r-mvtnorm
   r-norm
   r-progressr
