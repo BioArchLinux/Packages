@@ -7,10 +7,12 @@ repo_depends:
   - r-dplyr
   - r-glue
   - r-gnm
+  - r-gt
   - r-here
   - r-purrr
   - r-readxl
   - r-rgl
+  - r-scales
   - r-stringr
   - r-tidyr
   - r-vcd
