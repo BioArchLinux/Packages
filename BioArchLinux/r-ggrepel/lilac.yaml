@@ -6,6 +6,7 @@ repo_depends:
 - r-ggplot2
 - r-rcpp
 - r-rlang
+- r-s7
 - r-scales
 - r-withr
 repo_makedepends:

@@ -15,6 +15,7 @@ depends=(
   r-ggplot2
   r-rcpp
   r-rlang
+  r-s7
   r-scales
   r-withr
 )
@@ -31,11 +32,14 @@ optdepends=(
   r-gridextra
   r-knitr
   r-magrittr
+  r-marquee
   r-patchwork
   r-prettydoc
   r-readr
   r-rmarkdown
+  r-sf
   r-stringr
+  r-rsvg
   r-svglite
   r-testthat
   r-vdiffr
