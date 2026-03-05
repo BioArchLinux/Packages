@@ -16,7 +16,6 @@ depends=(
   r-ggplot2
   r-gridextra
   r-lavaan
-  r-metadat
   r-mvtnorm
   r-norm
   r-progressr
@@ -27,6 +26,7 @@ depends=(
 optdepends=(
   r-bain
   r-knitr
+  r-metadat
   r-rmarkdown
   r-testthat
 )
