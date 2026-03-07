@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=renv
-_pkgver=1.1.7
+_pkgver=1.1.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -41,8 +41,8 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f911c8814c4a4fef280a5b3c09313072')
-b2sums=('4d3355b5d8f9fb0d277e2346b4cac6e4a325eb71a2d45f7fab918c8c51c855ee07d8bbeddd4c7a694e1f0b41cef8144180ec6a21143eb75159c92abf737407b6')
+md5sums=('9a441deea11c0caa139a1bdaaab5af3c')
+b2sums=('0847b82eee0f0105816969923eff4a23f4c8e7821970e22f63563cc34ba1625d31a03dbd7f26d81764521542eae60d937a9112a112e1a4fe332f866ef58bcae0')
 
 build() {
   mkdir build
