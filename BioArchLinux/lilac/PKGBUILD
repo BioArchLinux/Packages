@@ -4,7 +4,7 @@
 
 _pkgname=lilac
 pkgname=$_pkgname
-pkgver=2026.02.15
+pkgver=2026.03.07
 pkgrel=1
 pkgdesc='The build bot for bioarchlinux'
 arch=(any)
