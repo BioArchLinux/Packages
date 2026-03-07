@@ -35,10 +35,10 @@ md5sums=('61b8a3ee43759ed4718659cf7f499cc1'
 b2sums=('575d044f1bbd4a49a3c61b7b2bc136e945e08b3a8aaf18cf9d10f15f3ed8dbb2b9d998e75c1210443226e8b098a58650a3a0c093a845a6c78a174cf57a5af7e0'
         'ac55bda314e4a9c184b820a7194b421bcac65ff739cf14c5d9af9004ec717fc99db159e0c02ff7060f2ed2a8f0147bc8f0a29d0cb1d760af5c057feb08c9c33a')
 
-prepare() {
-  # build against system libuv
-  patch -Np1 -i system-libuv.patch
-}
+# prepare() {
+#   # build against system libuv
+#   patch -Np1 -i system-libuv.patch
+# }
 
 build() {
   mkdir build
