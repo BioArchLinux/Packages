@@ -11,6 +11,7 @@ repo_depends:
 - r-pbapply
 - r-dcurver
 - r-simdesign
+- r-splines2
 update_on:
 - source: rpkgs
   pkgname: mirt

@@ -18,6 +18,7 @@ depends=(
   r-pbapply
   r-dcurver
   r-simdesign
+  r-splines2
 )
 makedepends=(
   r-rcpparmadillo
@@ -32,6 +33,7 @@ optdepends=(
   r-nloptr
   r-sirt
   r-plink
+  r-mirai
   r-mirtcat
   r-testthat
 )
