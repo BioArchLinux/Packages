@@ -1,0 +1,35 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=mirai
+_pkgver=2.6.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Minimalist Async Evaluation Framework for R"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-nanonext
+)
+optdepends=(
+  r-cli
+  r-later
+  r-litedown
+  r-otel
+  r-otelsdk
+  r-secretbase
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('0bfa9ecff779c70a3df8425594217218')
+b2sums=('a39d2e107c4e0d9c49f5c68a8c1e2ee281d0f0ccdb0602c4b654f8786dfb4af16097e167656502a41db536854a575e58152e2b9be4a4dbbfe32284c471656a62')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
