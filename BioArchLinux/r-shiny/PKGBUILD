@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="Web Application Framework for R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only AND MIT AND BSD-3-Clause AND Apache-2.0 AND GPL-2.0-or-later')
+license=('MIT')
 depends=(
   r-bslib
   r-cachem
