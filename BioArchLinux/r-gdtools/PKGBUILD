@@ -9,7 +9,7 @@ _pkgver=0.4.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Utilities for Graphical Rendering and Fonts Management"
+pkgdesc="Font Metrics and Font Management Utilities for R Graphics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
