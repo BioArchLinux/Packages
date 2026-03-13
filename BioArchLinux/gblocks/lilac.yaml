@@ -8,7 +8,7 @@ post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 update_on:
-  - regex: Gblocks_Linux_(\d+.\w+).tar.Z
+  - regex: Gblocks_(\d\+.\d\+)_Linux.tar.gz
     source: regex
-    url: https://www.biologiaevolutiva.org/jcastresana/Gblocks.html
+    url: https://molevol-ibe.csic.es/Gblocks.html
 
