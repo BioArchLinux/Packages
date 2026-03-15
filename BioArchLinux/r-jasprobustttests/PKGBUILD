@@ -1,8 +1,8 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 _pkgname=jaspRobustTTests
-_pkgver=0.95.3
+_pkgver=0.96
 pkgname=r-${_pkgname,,}
-pkgver=0.95.3
+pkgver=0.96
 pkgrel=1
 pkgdesc="A robust T-Test module for JASP"
 arch=('any')
