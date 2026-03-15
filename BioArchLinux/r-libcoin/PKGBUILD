@@ -15,6 +15,7 @@ depends=(
   r-mvtnorm
 )
 optdepends=(
+  r-bibtex
   r-coin
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
