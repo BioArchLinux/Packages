@@ -5,10 +5,10 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=png
-_pkgver=0.1-8
+_pkgver=0.1-9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=6
+pkgrel=1
 pkgdesc="Read and write PNG images"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -18,8 +18,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('5667528b7bbdd8c058018ea7ac6573a7')
-b2sums=('c20d27526334f942a80a0e6c16b0e222d6a20dff70fd275aac9f6792f626e3f0d8de2199e310a2e5f0ef388456dfc8043cab159eddbe767a1c9a415de71e3b03')
+md5sums=('1410f91d9ac052c15c6eea3bc1c89672')
+b2sums=('9d57ba8e6f87b524f3948aca800833493a2fefaf66346b7c3db849c0c59dabfc9e963546b64c5f481c13114294451387fede6150a63a476f2e18bb18a339973e')
 
 build() {
   mkdir build
