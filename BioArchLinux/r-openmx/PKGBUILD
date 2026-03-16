@@ -43,7 +43,6 @@ optdepends=(
   r-rpf
   r-snowfall
   r-testthat
-  r-umx
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f7c4d85e242772d63cfeca8b5d462fed')
