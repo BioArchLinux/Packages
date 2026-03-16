@@ -29,6 +29,7 @@ repo_depends:
 - r-desirability
 - r-weibullness
 - r-car
+- r-flexsurv
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

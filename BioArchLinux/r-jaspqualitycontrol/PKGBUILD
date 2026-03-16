@@ -12,6 +12,7 @@ replaces=('r-jaspprocesscontrol')
 depends=(r
   r-doe.base
   r-fitdistrplus
+  r-flexsurv
   r-frf2
   r-ggplot2
   r-ggrepel
