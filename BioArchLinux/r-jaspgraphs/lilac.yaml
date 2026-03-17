@@ -11,6 +11,8 @@ repo_depends:
 - r-scales
 - r-viridislite
 - r-rcolorbrewer
+- r-plotly
+- r-htmlwidgets
 pre_build: vcs_update
 post_build: git_pkgbuild_commit
 update_on:

@@ -17,6 +17,8 @@ depends=(r
 'r-scales'
 'r-viridislite'
 'r-rcolorbrewer'
+'r-htmlwidgets'
+'r-plotly'
 )
 groups=(r-jasp r-jaspbase)
 optdepends=('r-testthat')
