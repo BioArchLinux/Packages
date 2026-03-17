@@ -43,10 +43,8 @@ groups=(r-jasp r-jaspbase)
 optdepends=()
 source=(
 "${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz"
-"jaspColumnEncoder-${_pkgver}.tar.gz::https://github.com/jasp-stats/jaspColumnEncoder/archive/refs/tags/v${_ColumnEncoder_ver}.tar.gz"
 )
-sha256sums=('41a9b79b0fd9adbac01a7d11b1e79370820f9eb3ac2fba48713858baea6d6851'
-            'd9e74e0ff2b7c6d15c109717c212480f9021f86fdd0c326088143476ba051033')
+sha256sums=('41a9b79b0fd9adbac01a7d11b1e79370820f9eb3ac2fba48713858baea6d6851')
 
 build() {
   export INCLUDE_DIR=${srcdir}/jaspColumnEncoder-${_ColumnEncoder_ver}
