@@ -7,7 +7,7 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=dbplyr
-_pkgver=2.5.1
+_pkgver=2.5.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -57,8 +57,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('20c5c29ba5db6a2c2e02b83f6cf9cce0')
-b2sums=('3a093ba509dc8ac3429311ae72aa8eef3d707f5b935b469599c285fd681cc7f3dd85f3305295a4e0ff644cf34b4cb04981620ba970e752e1213b5219fdb66444')
+md5sums=('1af809b36c39118fb02d9d08f61d21bf')
+b2sums=('12aa50f7fce45cc8fedd1054a5c9595a4c69fbc88a5717d99e83cca9e47791d36357c4e6c834e36ed2239c2db0ca84098ce69ad31048c8caec12719460196920')
 
 prepare() {
   cd "$_pkgname/tests/testthat"
