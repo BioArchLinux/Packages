@@ -24,6 +24,8 @@ depends=(r
 'r-stringr'
 'r-vdiffr'
 'r-archive'
+'r-dbi'
+'r-rsqlite'
 )
 groups=(r-jasp jaspbase)
 source=("${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz")
