@@ -23,6 +23,7 @@ checkdepends=(
 optdepends=(
   r-arrow
   r-blob
+  r-callr
   r-covr
   r-dbitest
   r-dbplyr
@@ -33,6 +34,8 @@ optdepends=(
   r-knitr
   r-magrittr
   r-nanoarrow
+  r-otel
+  r-otelsdk
   r-rmariadb
   r-rmarkdown
   r-rprojroot
