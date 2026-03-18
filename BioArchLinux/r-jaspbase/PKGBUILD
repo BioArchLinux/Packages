@@ -41,13 +41,18 @@ depends=(r
 )
 groups=(r-jasp r-jaspbase)
 optdepends=()
+
+_desktop_ver="0.96.0"
 source=(
-"${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz"
+  "${_pkgname}_${_pkgver}.tar.gz::${url}/archive/refs/tags/v${_pkgver}.tar.gz"
+  "jasp-desktop-${_desktop_ver}.tar.gz::https://github.com/jasp-stats/jasp-desktop/archive/refs/tags/v${_desktop_ver}.tar.gz"
 )
-sha256sums=('41a9b79b0fd9adbac01a7d11b1e79370820f9eb3ac2fba48713858baea6d6851')
+sha256sums=('41a9b79b0fd9adbac01a7d11b1e79370820f9eb3ac2fba48713858baea6d6851'
+'28927abcdf448d0797beb19b292a90069dd93bf9e8d70f93ae8c59c550b90d31'
+)
 
 build() {
-  export INCLUDE_DIR=${srcdir}/jaspColumnEncoder-${_ColumnEncoder_ver}
+  export INCLUDE_DIR="${srcdir}/jasp-desktop-${_desktop_ver}/Common"
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
 
