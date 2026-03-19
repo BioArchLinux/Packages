@@ -33,17 +33,18 @@ checkdepends=(
   r-xml2
 )
 optdepends=(
+  r-box
   r-covr
   r-curl
   r-dt
   r-htmltools
   r-knitr
   r-memoise
-  r-mockery
   r-r6
   r-rlang
   r-rmarkdown
   r-rstudioapi
+  r-s7
   r-testthat
   r-xml2
 )
