@@ -16,6 +16,8 @@ depends=(
   ttf-dejavu
   # or it will fail to be built, see https://github.com/davidgohel/ggiraph/blob/master/R/fonts.R
   r
+  r-dplyr
+  r-gdtools
   r-ggplot2
   r-htmltools
   r-htmlwidgets
@@ -27,8 +29,6 @@ depends=(
   r-vctrs
 )
 optdepends=(
-  r-dplyr
-  r-gdtools
   r-ggrepel
   r-hexbin
   r-knitr
