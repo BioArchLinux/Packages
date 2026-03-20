@@ -3,8 +3,8 @@
 
 pkgname=python-pyfaidx
 _name=pyfaidx
-pkgver=0.9.0.3
-pkgrel=2
+pkgver=0.9.0.4
+pkgrel=1
 pkgdesc="Efficient pythonic random access to fasta subsequences."
 arch=("any")
 url="https://pypi.python.org/pypi/pyfaidx"
@@ -31,7 +31,7 @@ makedepends=('python-build'
 
 source=("${_name}::git+https://github.com/mdshw5/pyfaidx.git#tag=v${pkgver}")
 
-sha256sums=('654b62106d44eb0f7f0ecfbedd84d188675ba730fb35c76ded6b5abf77c288e9')
+sha256sums=('6130631d3b2ecf60501f429a6fe794ee2f1333b9f8f3fed1960467ca45e3bdd4')
 
 prepare() {
     git -C "${srcdir}/${_name}" clean -dfx
