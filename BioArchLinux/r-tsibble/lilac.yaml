@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-anytime
 - r-dplyr
-- r-ellipsis
 - r-generics
 - r-lifecycle
 - r-lubridate

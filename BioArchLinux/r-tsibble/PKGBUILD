@@ -12,7 +12,6 @@ license=('GPL-3.0-only')
 depends=(
   r-anytime
   r-dplyr
-  r-ellipsis
   r-generics
   r-lifecycle
   r-lubridate
@@ -30,7 +29,6 @@ checkdepends=(
   r-timedate
 )
 optdepends=(
-  r-covr
   r-ggplot2
   r-hms
   r-knitr
