@@ -21,6 +21,7 @@ depends=(
   r-mvtnorm
   r-rcpp
   r-rcpparmadillo
+  r-rcppparallel
 )
 optdepends=(
   r-knitr

@@ -13,6 +13,7 @@ repo_depends:
 - r-mvtnorm
 - r-rcpp
 - r-rcpparmadillo
+- r-rcppparallel
 update_on:
 - regex: MESS_([\d._-]+).tar.gz
   source: regex
