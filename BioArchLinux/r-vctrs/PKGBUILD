@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=vctrs
-_pkgver=0.7.1
+_pkgver=0.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -37,8 +37,8 @@ optdepends=(
   r-zeallot
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a4a01544d69397983828543743d5e8f1')
-b2sums=('c6cd485cbe7fcb6a7f1fa4dff2d5c71807f5f48da7c3a976b4af0fe549c2bac38b05082993e1b529c856ae8818d1d905049a4d26f9dad40d61a3f3d27e0d8039')
+md5sums=('64c78fe32dad5f8692f8c775b22d402d')
+b2sums=('2cf39bf08b2419de3774c6dcd821e94c365ba1fb9900ff22d9dc68807421d2492baf4152242836f67b4b77a5f665191bbf5e8c1cdc7dd6980d8396f186efffa0')
 
 build() {
   mkdir build
