@@ -4,7 +4,7 @@ _pkgver=0.96.0
 pkgname=r-${_pkgname,,}
 pkgver=0.96.0
 _desktop_ver="0.96.0"
-pkgrel=1
+pkgrel=2
 pkgdesc="Package contains the JASP Bayesian and Frequentist analyses."
 arch=('x86_64' 'aarch64')
 url="https://github.com/jasp-stats/${_pkgname}"
@@ -47,7 +47,7 @@ source=(
   "jasp-desktop-${_desktop_ver}.tar.gz::https://github.com/jasp-stats/jasp-desktop/archive/refs/tags/v${_desktop_ver}.tar.gz"
 )
 sha256sums=('47500e57613c703256c4a9258d893b42c04cbd3ed0e4923589b04b64a69309b9'
-  'fa274cdb9f59379cbdae026e8c12de17fcd1db2a5f9c3b4d08929e848c4d4167')
+            'fa274cdb9f59379cbdae026e8c12de17fcd1db2a5f9c3b4d08929e848c4d4167')
 
 prepare() {
   install -d ${_pkgname}-${_pkgver}/inst/include
