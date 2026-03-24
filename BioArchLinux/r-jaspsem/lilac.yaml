@@ -16,6 +16,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-semsens
+- r-mxsem
 pre_build: vcs_update
 post_build_script: |
   git_pkgbuild_commit()
