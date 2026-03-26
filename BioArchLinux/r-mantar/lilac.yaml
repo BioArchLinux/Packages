@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-rdpack
 - r-mathjaxr
-- r-glassoFast
+- r-glassofast
 update_on:
 - source: rpkgs
   pkgname: mantar

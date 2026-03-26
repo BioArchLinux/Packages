@@ -13,7 +13,7 @@ license=('GPL-3.0-or-later')
 depends=(
   r-rdpack
   r-mathjaxr
-  r-glassoFast
+  r-glassofast
 )
 optdepends=(
   r-numderiv
@@ -22,7 +22,7 @@ optdepends=(
   r-qgraph
   r-testthat
   r-knitr
-  r-rmarkdow
+  r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f8c724b2805ab8f36f46d9e9dc6d6298')
