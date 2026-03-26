@@ -1,0 +1,36 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=webshot2
+_pkgver=0.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Take Screenshots of Web Pages"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-callr
+  r-chromote
+  r-magrittr
+  r-promises
+)
+optdepends=(
+  r-httpuv
+  r-rmarkdown
+  r-shiny
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('375268cec3bd0faf8c74883957b4aed7')
+b2sums=('e8bbe09e442a88ca06edd2daa0930978474b5800846af3b1fabe1cb2f730faeda54b4805cc0d4f3a58c0283dc140525d0635cf98799829164c40745a03dd272a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
