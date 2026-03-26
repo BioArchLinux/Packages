@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-callr
 - r-chromote
+- r-later
 - r-magrittr
 - r-promises
 update_on:

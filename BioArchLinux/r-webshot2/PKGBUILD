@@ -13,6 +13,7 @@ license=('MIT')
 depends=(
   r-callr
   r-chromote
+  r-later
   r-magrittr
   r-promises
 )
