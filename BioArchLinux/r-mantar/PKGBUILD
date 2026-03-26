@@ -1,0 +1,39 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=mantar
+_pkgver=0.2.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Missingness Alleviation for Network Analysis"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-or-later')
+depends=(
+  r-rdpack
+  r-mathjaxr
+  r-glassoFast
+)
+optdepends=(
+  r-numderiv
+  r-mice
+  r-lavaan
+  r-qgraph
+  r-testthat
+  r-knitr
+  r-rmarkdow
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('f8c724b2805ab8f36f46d9e9dc6d6298')
+b2sums=('95b28b4dbf422193f7681bb1f97bcb3acb0c0ea0c73a903aac36037a6b3bbaaba263eaba3763c7ee3b887177b3acc55f7d4ea2226311840af5a0c59b08fca74d')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
