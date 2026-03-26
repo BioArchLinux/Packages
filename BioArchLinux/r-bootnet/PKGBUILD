@@ -30,6 +30,7 @@ depends=(
   r-tibble
   r-tidyr
   r-tidyselect
+  r-mantar
 )
 optdepends=(
   r-bdgraph

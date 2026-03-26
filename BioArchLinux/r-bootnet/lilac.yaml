@@ -22,6 +22,7 @@ repo_depends:
   - r-tibble
   - r-tidyr
   - r-tidyselect
+  - r-mantar
 update_on:
   - regex: bootnet_([\d._-]+).tar.gz
     source: regex
