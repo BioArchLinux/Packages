@@ -24,6 +24,8 @@ depends=(
   r-stringr
   r-tidyr
   r-vcd
+  r-igraph
+  -r-webshot2
 )
 optdepends=(
   r-aer

@@ -16,6 +16,8 @@ repo_depends:
   - r-stringr
   - r-tidyr
   - r-vcd
+  - r-igraph
+  - r-webshot2
 update_on:
   - regex: vcdExtra_([\d._-]+).tar.gz
     source: regex
