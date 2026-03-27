@@ -6,7 +6,7 @@ _pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Missingness Alleviation for Network Analysis"
+pkgdesc="Headless Chrome Web Browser Interface"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
