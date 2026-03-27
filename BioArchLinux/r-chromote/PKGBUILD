@@ -5,7 +5,7 @@ _pkgname=chromote
 _pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Headless Chrome Web Browser Interface"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
