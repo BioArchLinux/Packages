@@ -1,0 +1,31 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=glassoFast
+_pkgver=1.0.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Fast Graphical LASSO"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-or-later')
+depends=(
+)
+optdepends=(
+  r-glasso
+  r-rbenchmark
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('fb6b3a5745350df1367fe57df8698e9e')
+b2sums=('073dedcd024c04c2c88bec261c1eb8f9847d8fa57683d93d5a37d20dbfeb4e278118d3db18463a91350f25c1746e66f27474b868d6567abc49e7d00077c549cb')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
