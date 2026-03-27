@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-cli
+- r-curl
+- r-fastmap
+- r-jsonlite
+- r-later
+- r-magrittr
+- r-processx
+- r-promises
+- r-r6
+- r-rlang
+- r-websocket
+- r-withr
+- r-zip
+update_on:
+- source: rpkgs
+  pkgname: chromote
+  repo: cran
+  md5: true
+- alias: r

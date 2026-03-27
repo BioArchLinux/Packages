@@ -1,0 +1,46 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=chromote
+_pkgver=0.5.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Missingness Alleviation for Network Analysis"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-cli
+  r-curl
+  r-fastmap
+  r-jsonlite
+  r-later
+  r-magrittr
+  r-processx
+  r-promises
+  r-r6
+  r-rlang
+  r-websocket
+  r-withr
+  r-zip
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-showimage
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('419e519ae89670acc158d0dc976ba21c')
+b2sums=('e892d85694283ba555eb2b81660dab27686408dc8a5511853ea626e8f9f4b8fe70233d7e9192f94eeea72d96e2d628a98a39ee73dcd6780e8a147fa86b4bde6a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
