@@ -1,7 +1,7 @@
 # Maintainer: Shun Wang <shuonwang [at] gmail [dot] com>
 
 _pkgname=tinyplot
-_pkgver=0.6.0
+_pkgver=0.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -22,8 +22,8 @@ optdepends=(
   r-knitr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9022b7e9d7c0f12f4c2b8a309a536e7b')
-b2sums=('94084553bd5f1c94b6548d1fc94cef5d9f1784dc9bd5d52eb41535f315e12436683c047fda14510935ced82a1f7a0d6b0a079fda3352a06a75c148809d8f4e55')
+md5sums=('3e6417704f904b5f8006e27c398e8397')
+b2sums=('5d3067aab552fc383ec58bfcd25a4eea59be7d826b6e50e5c3898a4113ebcf8379caf9f9d489dd930c4a7671bd028e854749690711d39fa92ad622e74058f83d')
 
 build() {
   mkdir build
