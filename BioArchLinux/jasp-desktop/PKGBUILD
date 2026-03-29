@@ -1,10 +1,10 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 
 _pkgname=jasp
-_pkgver=0.95.3
+_pkgver=0.96.0
 pkgname=jasp-desktop
-pkgver=0.95.3
-_ColumnEncoder_ver=0.95.3
+pkgver=0.96.0
+# _ColumnEncoder_ver=0.95.3
 pkgrel=1
 pkgdesc="A complete statistical package for both Bayesian and Frequentist statistical methods"
 arch=('x86_64' 'aarch64')
@@ -39,7 +39,7 @@ depends=('r'
 provides=($_pkgname)
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jasp-stats/jasp-desktop/archive/refs/tags/v${pkgver}.tar.gz"
     'jasp.sh'
-    "jaspColumnEncoder-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspColumnEncoder/archive/32c53153da95087feb109c0f5f69534ffa3f32b7.zip"
+    # "jaspColumnEncoder-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspColumnEncoder/archive/32c53153da95087feb109c0f5f69534ffa3f32b7.zip"
     "jaspBase-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspBase/archive/0f0f59e18f5524ea422cb3dc5ad76ace6f0518e4.zip"
     # "jaspGraphs-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspGraphs/archive/refs/tags/v${pkgver}.tar.gz"
     "jaspModuleBundleManager-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspModuleBundleManager/archive/466057fe2ca0602917be964ce032c4cb03a8619a.zip"
@@ -47,7 +47,7 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jasp-stats/jasp-desktop
 )
 sha256sums=('7c0e0fdd6a28ddd484ccd39069da6cb20e03547d2d8ec14b69df5f05cabfa0b2'
     'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
-    '8afdd494d59bc6812fb4d957070d7a92eb21eceecc954636abb264a37e1bcf86'
+    # '8afdd494d59bc6812fb4d957070d7a92eb21eceecc954636abb264a37e1bcf86'
     '6a6ed34ed5f2514fff7e9568c045ccf530586ed37ce08e409729c52ba1336c47'
     'c6e58ca68cc157b7ba56ed6ac83ad1340be5c9f2148c80fb9713562e2dbe6e3f'
     'f5c145c33cdcb4c254f7e9f0eb7639e8cdf6887e56e2f7c15074973504469889')
@@ -111,8 +111,8 @@ prepare() {
     for d in jaspBase jaspModuleBundleManager; do
         cp -ar ${d}-*/* ${pkgname}-${pkgver}/Engine/${d}
     done
-    cp -ar jaspColumnEncoder-*/* ${pkgname}-${pkgver}/Common/jaspColumnEncoder
-    cd $srcdir/${pkgname}-${pkgver}
+    # cp -ar jaspColumnEncoder-*/* ${pkgname}-${pkgver}/Common/jaspColumnEncoder
+    # cd $srcdir/${pkgname}-${pkgver}
     _apply_patch
 
     find Tools/CMake -name *.cmake -print0 | xargs -0 sed -i "s|/usr/local|/usr|g"
