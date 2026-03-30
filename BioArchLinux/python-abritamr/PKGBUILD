@@ -1,6 +1,6 @@
 _name=abritamr
 pkgname=python-abritamr
-pkgver=1.1.1
+pkgver=1.2.0
 pkgrel=1
 pkgdesc="Running AMRFinderPlus for MDU"
 arch=(any)
@@ -8,16 +8,16 @@ url="https://github.com/MDU-PHL/abritamr"
 license=(None)
 depends=('python-pandas' 'python-xlsxwriter')
 makedepends=('python-setuptools' 'python-setuptools')
-source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/abritamr-1.1.1.tar.gz")
-sha256sums=('de6a1d46954dfa04e6c5d64909b1369fbf8a35ec2f482bd33c9ce383a95b3e10')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/abritamr-1.2.0.tar.gz")
+sha256sums=('784cf71a2a58adea6263fea07a6810bb0fe701dda5e316f454f906f274ec7e8a')
 
 build() {
-  cd "$srcdir/abritamr-1.1.1"
+  cd "$srcdir/abritamr-1.2.0"
   python3 setup.py build
 }
 
 package() {
-  cd "$srcdir/abritamr-1.1.1"
+  cd "$srcdir/abritamr-1.2.0"
   python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
 
   # make sure we don't install any world-writable or root-readable-only files
