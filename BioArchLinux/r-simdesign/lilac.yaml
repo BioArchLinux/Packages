@@ -15,6 +15,8 @@ repo_depends:
 - r-future.apply
 - r-progressr
 - r-r.utils
+- r-mirai
+- r-qs2
 update_on:
 - source: rpkgs
   pkgname: SimDesign

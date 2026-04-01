@@ -23,6 +23,8 @@ depends=(
   r-future.apply
   r-progressr
   r-r.utils
+  r-mirai
+  r-qs2
 )
 optdepends=(
   r-knitr
