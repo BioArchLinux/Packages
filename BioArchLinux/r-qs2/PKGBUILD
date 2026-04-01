@@ -1,0 +1,37 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=qs2
+_pkgver=0.1.7
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Efficient Serialization of R Objects"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-3.0-only')
+depends=(
+  r-rcpp
+  r-stringfish
+  r-rcppparallel
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-dplyr
+  r-data.table
+  r-stringi
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('55804d36e726be82f30ba52787ce12b1')
+b2sums=('43c83860667f576a58d49caa6b79dfa335b7b4203e6e04b05ee46296428b36d30e86b538c879e9fb942931a0d52e7bf37376b156b4589f98ca25d70f7a771136')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
