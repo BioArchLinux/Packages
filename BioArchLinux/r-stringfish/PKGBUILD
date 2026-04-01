@@ -20,7 +20,6 @@ depends=(
 optdepends=(
   r-dplyr
   r-knitr
-  r-qs
   r-rlang
   r-rmarkdown
   r-stringr
