@@ -1,7 +1,7 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=easybgm
-_pkgver=0.3.1
+_pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -25,8 +25,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e0757e846664654d37981113c7df43c3')
-b2sums=('241ee752976972c774cdccb3ee116c81f63f484bb0ad8c9d08f88a2f1c288e7f77b480ecb93942cea1cd2effe553b17254be926483426253237f5e57d00e06e9')
+md5sums=('46b94149f3f67637118d933bb56840c5')
+b2sums=('eebb7c3f3f6609630186eace39e9cc3233723099eeb5f1e4b348afda65e507878dc9468ab1103a8c128a61c9e855a5612fa2a6a08e4b92c0e565088f458f4928')
 
 build() {
   mkdir build
