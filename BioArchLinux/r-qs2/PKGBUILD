@@ -7,12 +7,15 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Efficient Serialization of R Objects"
-arch=(any)
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-rcpp
   r-stringfish
+
+)
+checkdepends=(
   r-rcppparallel
 )
 optdepends=(

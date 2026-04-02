@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "GNU make",
+        expect_systemrequirements = "None",
     )
 
 def post_build():

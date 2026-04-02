@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 -  r-rcpp
 -  r-stringfish
+repo_makedepends:
 -  r-rcppparallel
 update_on:
 - source: rpkgs
