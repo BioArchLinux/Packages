@@ -33,10 +33,10 @@ md5sums=('5ca337ca8e7eeed112eb342165a93684'
 b2sums=('b754f12ae5887ae25fade0c049653f15c61c63ce7b8cdd21323a44a95d59a16baca33cb27ad0b9df9e7d4de15f26b52647621ef79b42ef4b172cb2fea2641621'
         'a56459ada70af48192f87952f0bf3c7badf8f9f0159a9ef1cef6d0c9bb9d1faaaa61d82c4a91b4538cd37b3cbca657ddd744ce910379500a8ed8fca7f7a4fd35')
 
-prepare() {
-  # use system xxhash
-  patch -Np1 -i system-libs.patch
-}
+# prepare() {
+#   # use system xxhash
+#   patch -Np1 -i system-libs.patch
+# }
 
 build() {
   mkdir build
