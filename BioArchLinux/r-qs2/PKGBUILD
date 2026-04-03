@@ -5,7 +5,7 @@ _pkgname=qs2
 _pkgver=0.1.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Efficient Serialization of R Objects"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
