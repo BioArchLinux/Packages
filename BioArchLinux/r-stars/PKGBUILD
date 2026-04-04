@@ -27,6 +27,7 @@ checkdepends=(
 optdepends=(
   r-cairo
   r-clue
+  r-cftime
   r-covr
   r-cubble
   r-cubelyr
@@ -45,11 +46,11 @@ optdepends=(
   r-lwgeom
   r-mapdata
   r-maps
+  r-ncdfcf
   r-ncdfgeom
   r-ncmeta
   r-openstreetmap
   r-pbapply
-  r-pcict
   r-plm
   r-randomforest
   r-raster
