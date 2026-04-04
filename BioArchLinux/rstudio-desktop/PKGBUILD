@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2026.01.1+403
+pkgver=2026.01.2+418
 _pkgver=${pkgver//+/.}
 _srcname=rstudio
 # _srcname=rstudio-${pkgver//+/-}
@@ -18,7 +18,7 @@ _nodeversion="23"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
 : ${_copilot_version:=1.399.0}
 
-pkgrel=1
+pkgrel=0
 pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
@@ -87,13 +87,13 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         '0001-steady_timer.patch'
         )
 noextract+=("gwt-${_gwt_version}.tar.gz")
-sha256sums=('916193927e5e5ad978066035026cd9127702883d5db5eeb1378a4a56178d9cb7'
+sha256sums=('9bf8433aca12675dc57dc2c90301263fa0bd178af9d7edbb6c4ca4156e2f4811'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             'a595ebb7b4e3350293a4066782797476d9cca455e99e2b516775b06096910160'
             '39047261f01d1b22f8dd0e66f6878e5ca1ca16107ed737a486e590c39b66600b'
             '27284accdad05ff8919a7ac6dc5f939a511a90842a35f6393517506d74809e76'
-            'd192d1f7344fcf73bf7ffc404f0a385a1d4fbfd962b701689cd84099d97ab90a')
+            '84473dc04afe7a78117930d6dda37874563cdcb69e1b69c3171d252f5ef75dce')
 options=('!emptydirs' '!debug')
 
 _nvm_env() {
