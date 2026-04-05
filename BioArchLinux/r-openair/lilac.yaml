@@ -5,15 +5,14 @@ maintainers:
 repo_depends:
 - r-cli
 - r-dplyr
-- r-hexbin
-- r-latticeextra
+- r-ggplot2
 - r-lubridate
-- r-mapproj
+- r-patchwork
 - r-purrr
 - r-rcpp
 - r-readr
 - r-rlang
-- r-tibble
+- r-scales
 - r-tidyr
 update_on:
 - source: rpkgs

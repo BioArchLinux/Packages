@@ -8,26 +8,30 @@ pkgrel=3
 pkgdesc="Tools for the Analysis of Air Pollution Data"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-2.0-or-later')
+license=('MIT')
 depends=(
   r-cli
   r-dplyr
-  r-hexbin
-  r-latticeextra
+  r-ggplot2
   r-lubridate
-  r-mapproj
+  r-patchwork
   r-purrr
   r-rcpp
   r-readr
   r-rlang
-  r-tibble
+  r-scales
   r-tidyr
 )
 optdepends=(
-  r-mapdata
-  r-maps
+  r-geomtextpath
+  r-knitr
+  r-legendry
   r-quantreg
+  r-rmarkdown
+  r-rnaturalearthdata
+  r-sf
   r-spelling
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('99eaa25bc99080a9e8dcd0e3bed44221')
