@@ -7,7 +7,6 @@ repo_depends:
 - r-cli
 - r-data.table
 - r-ggplot2
-- r-metrics
 - r-purrr
 - r-scoringrules
 update_on:

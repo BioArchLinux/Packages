@@ -14,7 +14,6 @@ depends=(
   r-cli
   r-data.table
   r-ggplot2
-  r-metrics
   r-purrr
   r-scoringrules
 )
@@ -22,7 +21,6 @@ optdepends=(
   r-ggdist
   r-kableextra
   r-knitr
-  r-magrittr
   r-rmarkdown
   r-testthat
   r-vdiffr
