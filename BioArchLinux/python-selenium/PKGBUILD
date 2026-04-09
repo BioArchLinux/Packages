@@ -7,7 +7,7 @@
 
 pkgname=python-selenium
 _pkgname="${pkgname#python-}"
-pkgver=4.41.0
+pkgver=4.42.0
 pkgrel=1
 pkgdesc="Python language bindings for Selenium WebDriver"
 arch=(x86_64)
@@ -35,7 +35,7 @@ makedepends=(
 )
 options=(!lto)
 source=("https://files.pythonhosted.org/packages/source/${_pkgname::1}/${_pkgname}/${_pkgname}-${pkgver}.tar.gz")
-sha256sums=('003e971f805231ad63e671783a2b91a299355d10cefb9de964c36ff3819115aa')
+sha256sums=('4c8ebd84ff96505db4277223648f12e2799e92e13169bc69633a6b24eb066c72')
 
 _archive="${_pkgname}-${pkgver}"
 
