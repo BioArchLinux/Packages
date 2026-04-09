@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=cli
-_pkgver=3.6.5
+_pkgver=3.6.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -33,8 +33,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('bb08a624eeaa431d766e15309fb59ee8')
-b2sums=('bdc1ad647b3e33d8e39be07458e2f5b2858a2035cca8d76351486b13ff4593241c97ebb5d8125abb1afbb707c94d8f1e61277d7745d39b51d04517d0c95dd221')
+md5sums=('eedc08ba864ae6cd640b05eff1a607ee')
+b2sums=('d42aeed1b9a6d390ce3ca56583f1833dd6365c184383954739ee452a40cd09012e5c3dea7df6eb731d105026a084db06d2fa3acbe4e01db9171eb227cdd8039c')
 
 build() {
   mkdir build
