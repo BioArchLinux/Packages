@@ -30,7 +30,7 @@ optdepends=(
   r-debugme
   r-desc
   r-fs
-  r-mockery
+  r-keyring
   r-pillar
   r-pingr
   r-rprojroot
