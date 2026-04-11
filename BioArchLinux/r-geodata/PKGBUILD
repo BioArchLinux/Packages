@@ -1,7 +1,7 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=geodata
-_pkgver=0.6-6
+_pkgver=0.6-9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
 pkgrel=1
@@ -20,8 +20,8 @@ optdepends=(
   r-r.utils
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('672f87b0892ab31e8acebcb6663a4f6a')
-b2sums=('118a45b34f0d2bb761953e58576ae1dc99098e22aa596419346cd0028eb7dc7dfe08cf3966d57ba8c44fa52abd946c550b424f44e0b121f50f19b74ffd5e7072')
+md5sums=('5ae770299bc3d4b83fdfc36e0a148056')
+b2sums=('2a22796d17664baeb127d3e93acd35b669f2e2be325734529b6a45880dc605b16afd47d1eae7a5782a87483b3c4028af7f208824b18102afdc0cb714a885e9a9')
 
 build() {
   mkdir build
