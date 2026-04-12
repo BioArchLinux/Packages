@@ -13,7 +13,6 @@ license=('MIT')
 depends=(
   r-future
   r-globals
-  r-lifecycle
   r-purrr
   r-rlang
   r-vctrs
@@ -27,12 +26,9 @@ optdepends=(
   r-covr
   r-dplyr
   r-knitr
-  r-listenv
-  r-magrittr
-  r-rmarkdown
   r-testthat
   r-tidyselect
-  r-withr
+  r-parallelly
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('813dfb60e455c5667be5117b3df2943b')
