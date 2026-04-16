@@ -9,7 +9,7 @@ post_build: git_pkgbuild_commit
 update_on:
 - source: github
   github: coin-or/pulp
-  use_max_tag: true
+  use_max_release: true
   prefix: v
 - source: manual
   manual: 1
