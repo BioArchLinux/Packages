@@ -4,12 +4,18 @@ _pkgver=0.2-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Data Sets and Code for 'Meta-Analysis with R'"
+pkgdesc="Data Sets and Code for "Meta-Analysis with R""
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
   r
+)
+optdepends=(
+  r-meta
+  r-netmeta
+  r-metasens
+  r-netdose
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('e973a5a526a578dbeafc22f3e1acae59')
