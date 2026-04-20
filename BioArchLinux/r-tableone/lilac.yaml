@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-e1071
+- r-gmodels
+- r-labelled
+- r-survey
+- r-zoo
+update_on:
+- source: rpkgs
+  pkgname: tableone
+  repo: cran
+  md5: true
+- alias: r

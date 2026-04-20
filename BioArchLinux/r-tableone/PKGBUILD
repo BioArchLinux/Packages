@@ -1,0 +1,42 @@
+# Maintainer: Christos Longros <chris.longros@gmail.com>
+
+_pkgname=tableone
+_pkgver=0.13.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Create 'Table 1' to Describe Baseline Characteristics with or without Propensity Score Weights"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-only')
+depends=(
+  r
+  r-e1071
+  r-gmodels
+  r-labelled
+  r-survey
+  r-zoo
+)
+optdepends=(
+  r-geepack
+  r-ggplot2
+  r-knitr
+  r-lme4
+  r-lmertest
+  r-matching
+  r-reshape2
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b46b9943bedcf516d8742ba3bd0d1743')
+b2sums=('c98362963c6add74cc75b3597dabb00095a72d9f41bea70554033c1d2908415975461973ef76bde9ff69e8807ae8ba5d394ddd79cc290e5e048eae72c4238518')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
