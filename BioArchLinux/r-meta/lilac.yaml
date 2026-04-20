@@ -1,0 +1,26 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-compquadform
+- r-dplyr
+- r-ggplot2
+- r-lme4
+- r-magrittr
+- r-metabook
+- r-metadat
+- r-metafor
+- r-purrr
+- r-readr
+- r-rlang
+- r-scales
+- r-stringr
+- r-tibble
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: meta
+  repo: cran
+  md5: true
+- alias: r
