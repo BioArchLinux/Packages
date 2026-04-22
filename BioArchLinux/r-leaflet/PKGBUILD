@@ -1,0 +1,49 @@
+# Maintainer: Christos Longros <chris.longros@gmail.com>
+_pkgname=leaflet
+_pkgver=2.2.3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Create Interactive Web Maps with the JavaScript 'Leaflet' Library"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-crosstalk
+  r-htmltools
+  r-htmlwidgets
+  r-jquerylib
+  r-leaflet.providers
+  r-magrittr
+  r-png
+  r-raster
+  r-rcolorbrewer
+  r-rlang
+  r-scales
+  r-sf
+  r-viridislite
+  r-xfun
+)
+optdepends=(
+  r-knitr
+  r-maps
+  r-purrr
+  r-r6
+  r-rjsonio
+  r-rmarkdown
+  r-s2
+  r-shiny
+  r-sp
+  r-terra
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('916c5eb105870df189cb04df996ac186')
+b2sums=('81bb0075a5199e231b9a034733f1dfab97b19dfa8ce1e629fc92948b310cd5f44f3bd535dc164cff70218071229ef11a2ae78f2ac4cab5fb7002ce060b164286')
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

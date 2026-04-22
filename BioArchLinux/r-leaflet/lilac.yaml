@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-crosstalk
+- r-htmltools
+- r-htmlwidgets
+- r-jquerylib
+- r-leaflet.providers
+- r-magrittr
+- r-png
+- r-raster
+- r-rcolorbrewer
+- r-rlang
+- r-scales
+- r-sf
+- r-viridislite
+- r-xfun
+update_on:
+- source: rpkgs
+  pkgname: leaflet
+  repo: cran
+  md5: true
+- alias: r
