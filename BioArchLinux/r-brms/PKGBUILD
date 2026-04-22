@@ -1,0 +1,72 @@
+# Maintainer: Christos Longros <chris.longros@gmail.com>
+_pkgname=brms
+_pkgver=2.23.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Bayesian Regression Models using 'Stan'"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-only')
+depends=(
+  r
+  r-abind
+  r-backports
+  r-bayesplot
+  r-bridgesampling
+  r-coda
+  r-future
+  r-future.apply
+  r-ggplot2
+  r-glue
+  r-loo
+  r-matrixstats
+  r-nleqslv
+  r-posterior
+  r-rcpp
+  r-rlang
+  r-rstan
+  r-rstantools
+)
+optdepends=(
+  r-emmeans
+  r-cmdstanr
+  r-projpred
+  r-priorsense
+  r-shinystan
+  r-splines2
+  r-rwiener
+  r-rtdists
+  r-extradistr
+  r-processx
+  r-mice
+  r-spdep
+  r-mnormt
+  r-lme4
+  r-mcmcglmm
+  r-ape
+  r-arm
+  r-statmod
+  r-digest
+  r-diffobj
+  r-betareg
+  r-r.rsp
+  r-gtable
+  r-shiny
+  r-knitr
+  r-rmarkdown
+  r-ragg
+  r-colorspace
+  r-mirai
+  r-future.mirai
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('e590eda39674cccda783081afb1c27b3')
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
