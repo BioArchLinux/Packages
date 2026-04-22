@@ -20,7 +20,6 @@ optdepends=(
   r-dbi
   r-dplyr
   r-knitr
-  r-magrittr
   r-rlang
   r-rmarkdown
   r-rsqlite
