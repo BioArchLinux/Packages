@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-cards
+- r-cardx
+- r-cli
+- r-dplyr
+- r-glue
+- r-gt
+- r-lifecycle
+- r-rlang
+- r-tidyr
+- r-vctrs
+update_on:
+- source: rpkgs
+  pkgname: gtsummary
+  repo: cran
+  md5: true
+- alias: r
