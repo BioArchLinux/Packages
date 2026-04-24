@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-abind
+- r-backports
+- r-bayesplot
+- r-bridgesampling
+- r-coda
+- r-future
+- r-future.apply
+- r-ggplot2
+- r-glue
+- r-loo
+- r-matrixstats
+- r-nleqslv
+- r-posterior
+- r-rcpp
+- r-rlang
+- r-rstan
+- r-rstantools
+update_on:
+- source: rpkgs
+  pkgname: brms
+  repo: cran
+  md5: true
+- alias: r
