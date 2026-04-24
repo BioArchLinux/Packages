@@ -1,0 +1,26 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=ncbit
+_pkgver=2013.03.29.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Retrieve and Build NBCI Taxonomic Data'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('c8eb863ff1b45902cb76354c1e51f9da')
+b2sums=('4d14bb41f8c68b1bc436d29f907d362cd7147e9b67201f15e9844821834e12a72b7a0c2cff2e86346bccccbe1bacd33fc0a6b24e6e7b2622c6be8c8d14b24c0b')
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,32 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=caper
+_pkgver=1.0.4
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Comparative Analyses of Phylogenetics and Evolution in R'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-ape
+  r-mvtnorm
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-xtable
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('8f3bafc9cb35684322cef236a52bbec0')
+b2sums=('2dea14b7e7a3e6b5061d1f325df19360cbf4b7c8822c8e6ec264a5a86892d5c33de5f1d6571cf4f998b6395ac9e82a453180f3d7d80ef5d23616b5fe402479a8')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}

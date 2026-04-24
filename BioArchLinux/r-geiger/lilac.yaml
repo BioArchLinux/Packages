@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-coda
+- r-colorspace
+- r-desolve
+- r-digest
+- r-mvtnorm
+- r-ncbit
+- r-phytools
+- r-rcpp
+- r-subplex
+update_on:
+- source: rpkgs
+  pkgname: geiger
+  repo: cran
+  md5: true
+- alias: r

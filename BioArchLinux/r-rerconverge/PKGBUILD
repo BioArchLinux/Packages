@@ -1,0 +1,35 @@
+#Maintainer: Guoyi Zhang <kuoi at bioarchlinux dot org>
+_pkgname=RERconverge
+pkgname=r-${_pkgname,,}
+pkgver=0.3.0
+pkgrel=1
+pkgdesc="Analysis of convergence between organismal traits and DNA or protein sequences"
+arch=('any')
+url="https://github.com/nclark-lab/RERconverge"
+license=('GPL-3.0-or-later')
+depends=(
+    r-rcolorbrewer
+    r-gplots
+    r-phytools
+    r-geiger
+    r-knitr
+    r-rcpp
+    r-rcpparmadillo
+    r-weights
+    r-phangorn
+    r-ggplot2
+    r-dplyr
+    r-ape
+)
+source=("${_pkgname}_${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+md5sums=('1a2bb667f216a2716efb25e277e68eee')
+b2sums=('2d77f256bb67ccf5be987c9b2269ded6cc0ce64cabd8406994f13297ea908a7e4fc435561b3b95c4913a99e203865e78a4faffc7312941adda97c63cd34b3a04')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}

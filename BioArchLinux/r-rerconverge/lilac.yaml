@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-rcolorbrewer
+- r-gplots
+- r-phytools
+- r-geiger
+- r-knitr
+- r-rcpp
+- r-rcpparmadillo
+- r-weights
+- r-phangorn
+- r-ggplot2
+- r-dplyr
+- r-ape
+update_on:
+- source: rpkgs
+  pkgname: RERconverge
+  repo: cran
+  md5: true
+- alias: r

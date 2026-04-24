@@ -1,0 +1,33 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=subplex
+_pkgver=1.9
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Unconstrained Optimization using the Subplex Algorithm'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+)
+optdepends=(
+  r-tinytest
+)
+makedepends=(
+  gcc-fortran
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('94908e8e752b409dc9bca8ccf14c7104')
+b2sums=('16f666737d8bddd221d425ff256eac0681556dfa2bfac0cb04de7efdfcb50275570355bc0d58d14d6b78ed1c7c18a1052c75eeb27fa532cf187ada51de4fd6e3')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

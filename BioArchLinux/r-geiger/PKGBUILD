@@ -1,0 +1,39 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=geiger
+_pkgver=2.0.11
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Analysis of Evolutionary Diversification'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-ape
+  r-coda
+  r-colorspace
+  r-desolve
+  r-digest
+  r-mvtnorm
+  r-ncbit
+  r-phytools
+  r-rcpp
+  r-subplex
+)
+optdepends=(
+  r-treesim
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('925b2f26920deb3a65dc6b8e7bc96f52')
+b2sums=('2304c213f35644efed55e191d18e7732a0773d9318366bacc9bc3040b6864f0757415df4b42aaf2f3c5033abdcada96ce03db99f7407f232d3d6b7a3e8474281')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
