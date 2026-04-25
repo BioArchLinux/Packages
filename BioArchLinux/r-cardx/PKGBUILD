@@ -30,6 +30,7 @@ optdepends=(
   r-ggsurvfit
   r-lme4
   r-parameters
+  r-smd
   r-survey
   r-testthat
   r-withr
