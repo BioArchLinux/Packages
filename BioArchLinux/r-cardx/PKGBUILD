@@ -10,7 +10,6 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('Apache-2.0')
 depends=(
-  r
   r-cards
   r-cli
   r-dplyr
