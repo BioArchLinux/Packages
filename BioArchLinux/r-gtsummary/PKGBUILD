@@ -27,11 +27,13 @@ optdepends=(
   r-broom.helpers
   r-broom.mixed
   r-car
+  r-cmprsk
   r-effectsize
   r-emmeans
   r-flextable
   r-geepack
   r-ggstats
+  r-huxtable
   r-insight
   r-kableextra
   r-knitr
@@ -42,6 +44,7 @@ optdepends=(
   r-parameters
   r-parsnip
   r-rmarkdown
+  r-smd
   r-spelling
   r-survey
   r-testthat
