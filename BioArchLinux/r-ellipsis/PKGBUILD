@@ -9,7 +9,7 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=13
 pkgdesc="Tools for Working with ..."
-arch=(x86_64)
+arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
