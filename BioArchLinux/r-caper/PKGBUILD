@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc='Comparative Analyses of Phylogenetics and Evolution in R'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL-3.0-or-later')
+license=('GPL-2.0-or-later')
 depends=(
   r-ape
   r-mvtnorm
