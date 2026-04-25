@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+repo_depends:
+- r-cards
+- r-cli
+- r-dplyr
+- r-glue
+- r-lifecycle
+- r-rlang
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: cardx
+  repo: cran
+  md5: true
+- alias: r
