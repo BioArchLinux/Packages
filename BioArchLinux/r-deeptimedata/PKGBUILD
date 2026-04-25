@@ -1,0 +1,32 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=deeptimedata
+_pkgver=1.0.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Geologic Pattern Data from FGDC Used in 'deeptime'"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+)
+optdepends=(
+  r-grimport2
+  r-rsvg
+  r-usethis
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('d76d8b54a76fe720d5bbf645586312e6')
+b2sums=('e29e86d8c5acc1aa6df14cc9d51320d313ae748a834c534165a1caa32dadcc9f2760f9a790ad75c210091c02aabfcd0435dab68fc631686b52fea70fefcb4cd6')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

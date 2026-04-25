@@ -1,0 +1,61 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=deeptime
+_pkgver=2.3.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Plotting Tools for Anyone Working in Deep Time'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-cli
+  r-curl
+  r-deeptimedata
+  r-ggfittext
+  r-ggforce
+  r-ggh4x
+  r-ggplot2
+  r-gridextra
+  r-grimport2
+  r-gtable
+  r-lifecycle
+  r-rlang
+  r-scales
+)
+optdepends=(
+  r-ape
+  r-disprity
+  r-divdyn
+  r-dplyr
+  r-geomtextpath
+  r-ggpattern
+  r-ggrepel
+  r-ggtree
+  r-gsloid
+  r-knitr
+  r-palaeoverse
+  r-paleotree
+  r-phytools
+  r-rmacrostrat
+  r-rmarkdown
+  r-svglite
+  r-testthat
+  r-vdiffr
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('3654eb732638e773a808e18fe5a81589')
+b2sums=('5d39f2ead297b455e63bf98986feef308dc6d18c90c56e3858fb5a93d6d3a592ab5bfeb874d06350fc9317e469b09c61194415b89d9a266fc9e925efb3d4466f')
+
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

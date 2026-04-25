@@ -1,0 +1,49 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=RevGadgets
+_pkgver=1.2.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Visualization and Post-Processing of 'RevBayes' Analyses"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-only')
+depends=(
+  r-ape
+  r-deeptime
+  r-dplyr
+  r-ggimage
+  r-gginnards
+  r-ggplot2
+  r-ggplotify
+  r-ggpp
+  r-ggtree
+  r-phytools
+  r-png
+  r-reshape
+  r-scales
+  r-tibble
+  r-tidyr
+  r-tidytree
+  r-treeio
+)
+optdepends=(
+  r-knitr
+  r-phangorn
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('70cedf691d84e7b158331e326242b136')
+b2sums=('0aa93e3c48a75a9ad9854f9f5d27979ca571736eb991a3b2a8d3888eca832bdd619631bd4f1e84e595e2b0b3d9024bcaba8e8c403e941c99a393e7c2036c1d16')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

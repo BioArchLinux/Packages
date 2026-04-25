@@ -1,0 +1,34 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=grImport2
+_pkgver=0.3-3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc="Importing 'SVG' Graphics"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r-base64enc
+  r-jpeg
+  r-png
+  r-xml
+)
+optdepends=(
+  r-gridsvg
+  r-rsvg
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('fbd603803cfcd7725bc9706c1406b7bf')
+b2sums=('9c815ac4e1e07259184fe400a35c84fd0842c7faf3c08d7cf31b0233d6eadba8fab9ff222b9c6768eeaa1b7f68c84e9b7b8f3bad05aca4c1fe382b5d8d8953ee')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

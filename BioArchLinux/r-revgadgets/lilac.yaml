@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-deeptime
+- r-dplyr
+- r-ggimage
+- r-gginnards
+- r-ggplot2
+- r-ggplotify
+- r-ggpp
+- r-ggtree
+- r-phytools
+- r-png
+- r-reshape
+- r-scales
+- r-tibble
+- r-tidyr
+- r-tidytree
+- r-treeio
+update_on:
+- source: rpkgs
+  pkgname: RevGadgets
+  repo: cran
+  md5: true
+- alias: r
