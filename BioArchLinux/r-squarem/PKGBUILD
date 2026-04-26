@@ -6,7 +6,7 @@ _pkgname=SQUAREM
 _pkgver=2026.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Squared Extrapolation Methods for Accelerating EM-Like Monotone Algorithms"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
