@@ -5,7 +5,8 @@ maintainers:
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-- regex: S7_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=S7
+- source: rpkgs
+  pkgname: S7
+  repo: cran
+  md5: true
 - alias: r

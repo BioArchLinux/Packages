@@ -1,10 +1,10 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=S7
-_pkgver=0.2.0
+_pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=3
+pkgrel=0
 pkgdesc='An Object Oriented System Meant to Become a Successor to S3 and S4'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -23,8 +23,8 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e8b7ad1e68703acb7932f0e56e959e34')
-sha256sums=('b8675a7fac7a396e524b21cd353ef0823d2acf76088b5f229d2a55a182a4d49b')
+md5sums=('6a40d3eae470be0f06a03737b9391269')
+sha256sums=('6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
