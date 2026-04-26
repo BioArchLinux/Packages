@@ -9,9 +9,6 @@ pkgdesc="Compute Standardized Mean Differences"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
-depends=(
-  r
-)
 optdepends=(
   r-dplyr
   r-knitr
