@@ -21,6 +21,8 @@ optdepends=(
   r-httr2
   r-jsonlite
   r-openssl
+  r-r.utils
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('cdd0ec8beaa0cdddc2a93139f3d3b59d')
