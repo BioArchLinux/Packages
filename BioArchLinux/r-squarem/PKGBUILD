@@ -16,6 +16,7 @@ depends=(
 )
 optdepends=(
   r-setrng
+  r-interval
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('529ce81903111315c68131f0452a939f')
