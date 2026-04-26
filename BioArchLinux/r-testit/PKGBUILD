@@ -15,9 +15,6 @@ license=('MIT')
 depends=(
   r
 )
-optdepends=(
-  r-rstudioapi
-)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('447543565bb8f1a60628e44b492cc612')
 b2sums=('e65ca93d190cb25085245286c84dcc43d31f3a99724d0395e8068f0a9087814f494e4cf7f2e7ea07478d4e9c412b2ce68eed687e14a097dc1ceed28b0624fead')
