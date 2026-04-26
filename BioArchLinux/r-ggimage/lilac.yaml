@@ -11,6 +11,11 @@ repo_depends:
 - r-scales
 - r-tibble
 - r-withr
+- r-yulab.utils
+- r-purrr
+- r-digest
+- r-ggiraph
+- r-rlang
 update_on:
 - source: rpkgs
   pkgname: ggimage

@@ -18,6 +18,12 @@ depends=(
   r-scales
   r-tibble
   r-withr
+  r-yulab.utils
+  r-purrr
+  r-digest
+  r-ggiraph
+  r-rlang
+
 )
 optdepends=(
   r-ape
