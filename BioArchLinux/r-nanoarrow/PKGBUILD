@@ -30,6 +30,7 @@ optdepends=(
   r-tibble
   r-vctrs
   r-withr
+  r-reticulate
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('96058b3c9d62653de154db68d06b880c')
