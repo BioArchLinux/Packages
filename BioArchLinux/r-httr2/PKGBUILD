@@ -2,7 +2,7 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.2.1
+_pkgver=1.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -55,8 +55,8 @@ optdepends=(
   r-otelsdk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('21baac439544b680a4f3f529e2a04e5b')
-b2sums=('d035fe8bdf636c87c9a1edc328978113b69ef74eb3634a56191f9b790b654e71d2192a6b7f9ed155b762be84f344061baac9557355f4a39658896289dc159e96')
+md5sums=('3f22f2ade05739a5d656cc982167f30a')
+b2sums=('82203b9d2dda008c6ab015d215a0ae7b2338e33dbb3b0b86ec899e888e7d33d7dda456acbebba5caa1ad2eb8b0dc875ff81e86a1381f49ebd098110ed1dfdf83')
 
 build() {
   mkdir build
