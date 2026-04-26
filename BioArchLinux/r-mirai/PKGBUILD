@@ -4,7 +4,7 @@ _pkgname=mirai
 _pkgver=2.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Minimalist Async Evaluation Framework for R"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
