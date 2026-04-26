@@ -4,7 +4,7 @@ _pkgname=deeptime
 _pkgver=2.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Plotting Tools for Anyone Working in Deep Time'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
