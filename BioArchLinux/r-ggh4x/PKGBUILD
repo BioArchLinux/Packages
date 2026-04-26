@@ -17,6 +17,7 @@ depends=(
   r-rlang
   r-scales
   r-vctrs
+  r-s7
 )
 checkdepends=(
   r-fitdistrplus

@@ -10,6 +10,7 @@ repo_depends:
 - r-rlang
 - r-scales
 - r-vctrs
+- r-s7
 repo_makedepends:
 - r-fitdistrplus
 - r-ggdendro
