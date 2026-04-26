@@ -17,7 +17,6 @@ optdepends=(
   r-callr
   r-covr
   r-knitr
-  r-methods
   r-rmarkdown
   r-testthat
   r-tibble
