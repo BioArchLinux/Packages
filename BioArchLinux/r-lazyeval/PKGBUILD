@@ -7,10 +7,10 @@
 # Contributor: wagnerflo <florian@wagner-flo.net>
 
 _pkgname=lazyeval
-_pkgver=0.2.2
+_pkgver=0.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=12
+pkgrel=1
 pkgdesc="Lazy (Non-Standard) Evaluation"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -28,8 +28,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1de725fe0cd496a2535020867458641a')
-b2sums=('94f69fe95a8ef8bf98421ae8570c6d381183f242e6f74334ed1886033b0ec3228e25b5412b89fe97fd4268f77b6be1c3fbe0113035b1afdee398898c732d67ff')
+md5sums=('4389f7decad5f4418c3288c7f6101adb')
+b2sums=('68fc5fee96f2aaf896f6e9e1c706aa36ba5313599a1c3d6feb75718e87ef45dd104c0d7df4c956a38d8235148a5f6f052f8b0b2e9691612f8231dbb5443398e3')
 
 build() {
   mkdir build
