@@ -4,7 +4,7 @@ _pkgname=MCMCtreeR
 _pkgver=1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Prepare MCMCtree Analyses and Plot Bayesian Divergence Time Analyses Estimates on Trees"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
