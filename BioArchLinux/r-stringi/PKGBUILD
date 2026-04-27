@@ -25,7 +25,7 @@ b2sums=('b798c4589e47dd6d768ff34f0dc57388ad40002589c57f4547995b2a4970d41c0355326
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname" \
-      --configure-args=--disable-icu-bundle
+#      --configure-args=--disable-icu-bundle
 }
 
 package() {
