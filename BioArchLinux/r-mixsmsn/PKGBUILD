@@ -4,7 +4,7 @@ _pkgname=mixsmsn
 _pkgver=1.1-12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Fitting Finite Mixture of Scale Mixture of Skew-Normal Distributions"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
