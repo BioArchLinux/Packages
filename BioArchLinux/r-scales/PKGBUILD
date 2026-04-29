@@ -4,7 +4,7 @@ _pkgname=scales
 _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Scale Functions for Visualization'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -30,8 +30,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4a89c935d84e80c3ab92954b900bc83e')
-b2sums=('e649e1530fe87ea6f43947e30ae3f432de3abcb35d895ff5a521e90525e69081d95007db71229dac31eeedf2be56efd12786b136d4ce8793553cc9b1ecc7820a')
+md5sums=('6dd61123ecc2be3e3777aa77c172261d')
+b2sums=('54f80ee76dcc35e25e30e6d963cebb3e367f11785c8cf3d54ac4720011da3d49e266b4f1afd3d0b7f548125cec9e5b400c9ccfefd6d55bdc357ae23cc9c3ff24')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
