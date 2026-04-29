@@ -10,11 +10,11 @@ arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
-  r
+  r-cli
   r-farver
+  r-glue
   r-labeling
   r-lifecycle
-  r-munsell
   r-r6
   r-rcolorbrewer
   r-rlang
@@ -28,10 +28,10 @@ optdepends=(
   r-hms
   r-stringi
   r-testthat
-  r-waldo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('d55ef5f08c92652d7a95cfa27584024723ab17873f1b2577dd488cb7c883ceee')
+md5sums=('4a89c935d84e80c3ab92954b900bc83e')
+b2sums=('e649e1530fe87ea6f43947e30ae3f432de3abcb35d895ff5a521e90525e69081d95007db71229dac31eeedf2be56efd12786b136d4ce8793553cc9b1ecc7820a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

@@ -3,16 +3,19 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-farver
+- r-glue
 - r-labeling
 - r-lifecycle
-- r-munsell
 - r-r6
 - r-rcolorbrewer
 - r-rlang
 - r-viridislite
+
 update_on:
-- regex: scales_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=scales
+- source: rpkgs
+  pkgname: scales
+  repo: cran
+  md5: true
 - alias: r
