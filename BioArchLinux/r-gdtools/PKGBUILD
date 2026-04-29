@@ -8,7 +8,7 @@ _pkgname=gdtools
 _pkgver=0.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Font Metrics and Font Management Utilities for R Graphics"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
