@@ -20,7 +20,6 @@ makedepends=(
   gcc-fortran
 )
 optdepends=(
-  r-bibtex
   r-numderiv
   r-qrng
 )
