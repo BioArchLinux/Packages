@@ -22,7 +22,6 @@ depends=(
 makedepends=(
   boost
   r-cpp11
-  r-plogr
 )
 _checkdepends=(
   r-dbitest
