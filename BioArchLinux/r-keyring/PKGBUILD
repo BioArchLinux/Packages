@@ -1,0 +1,38 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=keyring
+_pkgver=1.4.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Access the System Credential Store from R'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  libsecret
+  r-askpass
+  r-filelock
+  r-r6
+  r-yaml
+)
+optdepends=(
+  r-callr
+  r-covr
+  r-openssl
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('f4dae217666679b6b4a918996368e60f')
+b2sums=('44fad7a97515e09924db3fe73e4948c8d0671c48f07ce35067316ab4905a95bee15ad1a3b46919765838d0af4a11b0e79d4c09e5db5a36646c1a1fa95abfa12e')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
