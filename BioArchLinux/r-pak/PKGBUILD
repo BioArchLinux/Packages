@@ -43,9 +43,7 @@ optdepends=(
   r-rstudioapi
   r-testthat
   r-withr
-  r-keyring
   r-webfakes
-  r-yaml
 
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
