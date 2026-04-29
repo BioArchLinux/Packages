@@ -46,7 +46,8 @@ b2sums=('b86a70375bc5026e9d66fcda39bf590564a11240d4056b155ea1747abb9c0eeef2ce65d
 
 prepare() {
   # use system boost library
-  patch -Np1 -i system-boost.patch
+  #patch -Np1 -i system-boost.patch
+  sed -i 's| -Ivendor||' RPostgres/src/Makevars.in
 }
 
 build() {
