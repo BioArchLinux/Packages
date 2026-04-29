@@ -27,6 +27,8 @@ depends=(
   r-ps
   r-r6
   r-zip
+  r-keyring
+  r-yaml
 )
 checkdepends=(
   r-mockery
@@ -36,12 +38,15 @@ optdepends=(
   r-covr
   r-gitcreds
   r-glue
-  r-mockery
   r-pingr
   r-pkgload
   r-rstudioapi
   r-testthat
   r-withr
+  r-keyring
+  r-webfakes
+  r-yaml
+
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "system-libs.patch")

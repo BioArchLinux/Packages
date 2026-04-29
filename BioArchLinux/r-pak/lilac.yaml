@@ -18,6 +18,8 @@ repo_depends:
 - r-ps
 - r-r6
 - r-zip
+- r-keyring
+- r-yaml
 repo_makedepends:
 - r-mockery
 - r-testthat
