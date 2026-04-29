@@ -14,7 +14,7 @@ license=('GPL-2.0-only')
 depends=(
   blas
   lapack
-  r
+  r-bibtex
 )
 makedepends=(
   gcc-fortran
