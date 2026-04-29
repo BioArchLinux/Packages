@@ -10,22 +10,22 @@ repo_depends:
 - r-lifecycle
 - r-memoise
 - r-miniui
+- r-pak
 - r-pkgbuild
 - r-pkgdown
 - r-pkgload
 - r-profvis
 - r-rcmdcheck
-- r-remotes
 - r-rlang
 - r-roxygen2
 - r-rversions
 - r-sessioninfo
 - r-testthat
 - r-urlchecker
-- r-usethis
 - r-withr
 update_on:
-- regex: devtools_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=devtools
+- source: rpkgs
+  pkgname: devtools
+  repo: cran
+  md5: true
 - alias: r
