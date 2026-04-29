@@ -22,9 +22,8 @@ depends=(
 makedepends=(
   boost
   r-cpp11
-  r-plogr
 )
-checkdepends=(
+_checkdepends=(
   postgresql
   r-dbitest
   r-testthat

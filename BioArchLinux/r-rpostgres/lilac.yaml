@@ -11,9 +11,6 @@ repo_depends:
 - r-withr
 repo_makedepends:
 - r-cpp11
-- r-plogr
-- r-dbitest
-- r-testthat
 update_on:
 - source: rpkgs
   pkgname: RPostgres
