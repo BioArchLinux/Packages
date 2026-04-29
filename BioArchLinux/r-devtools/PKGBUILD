@@ -34,6 +34,7 @@ depends=(
   r-testthat
   r-urlchecker
   r-withr
+  r-usethis
 )
 optdepends=(
   r-biocmanager
@@ -44,17 +45,15 @@ optdepends=(
   r-dt
   r-foghorn
   r-gh
-  r-gmailr
-  r-httr
   r-knitr
   r-lintr
-  r-mass
-  r-mockery
-  r-pingr
-  r-rhub
   r-rmarkdown
   r-rstudioapi
   r-spelling
+  r-httr2
+  r-quarto
+  r-remotes
+  r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('aabda91d6dccd446803641f390ce9fc3')

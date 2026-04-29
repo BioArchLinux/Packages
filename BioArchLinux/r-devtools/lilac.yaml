@@ -23,6 +23,7 @@ repo_depends:
 - r-testthat
 - r-urlchecker
 - r-withr
+- r-usethis
 update_on:
 - source: rpkgs
   pkgname: devtools
