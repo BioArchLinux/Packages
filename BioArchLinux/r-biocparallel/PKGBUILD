@@ -44,6 +44,10 @@ md5sums=('75ab7c6895d7c10cbf15f4335adc6f08')
 b2sums=('331b492fff7820270e77566ec9d7277452ccc7ade2446ec468dd4a8b13306ef413847367380c2fb05b0aa44bed9cc09104bb9b98a49b35192de6a4603fd5511c')
 
 build() {
+  # try to avoid using system
+  export CPPFLAGS="-I/usr/lib/R/library/BH/include"
+  export CXXFLAGS="-O2 -march=x86-64"
+  
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
 }
