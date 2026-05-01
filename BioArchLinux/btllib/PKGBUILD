@@ -16,7 +16,7 @@ options=('!strip')
 
 build() {
     cd "$srcdir/$pkgname-$pkgver"
-    ./compile
+    CMAKE_POLICY_VERSION_MINIMUM=3.5 ./compile
 }
 
 package() {
