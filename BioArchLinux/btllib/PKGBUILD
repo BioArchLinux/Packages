@@ -16,6 +16,7 @@ options=('!strip')
 
 build() {
     cd "$srcdir/$pkgname-$pkgver"
+    export CXXFLAGS="${CXXFLAGS} -Wno-ignored-qualifiers"
     CMAKE_POLICY_VERSION_MINIMUM=3.5 ./compile
 }
 
