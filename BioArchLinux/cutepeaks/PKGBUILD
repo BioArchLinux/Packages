@@ -1,0 +1,36 @@
+# Maintainer: Stunts <f.pinamartins@gmail.com>
+# COntributor: kbipinkumar <kbipinkumar@pm.me>
+pkgname=cutepeaks
+pkgver=0.2.3
+pkgrel=0
+pkgdesc="A simple viewer for Sanger trace file made with Qt5"
+arch=('x86_64')
+url="https://github.com/labsquare/CutePeaks"
+license=('GPL-3.0-or-later')
+depends=('qt5-base' 'qt5-svg' 'hicolor-icon-theme' 'libstdc++' 'libgcc' 'glibc' 'qt5-wayland')
+makedepends=('qt5-tools')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/labsquare/CutePeaks/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('ad6feada0bf9df60b6582ae095c576256e6a0952bcbaf111fe4b77bd8af4e5d0')
+
+prepare() {
+  cd "CutePeaks-$pkgver"
+  # Fix Wayland icon association by setting DesktopFileName to match .desktop file name
+  sed -i '/app.setApplicationName/i \    app.setDesktopFileName("cutepeaks");' src/main.cpp
+}
+
+build() {
+  cd "CutePeaks-$pkgver"
+  # Generate translation files (.qm) from source (.ts)
+  lrelease translations/cutepeaks_fr.ts
+  qmake-qt5 PREFIX=/usr
+  make
+}
+
+package() {
+  cd "CutePeaks-$pkgver"
+  make INSTALL_ROOT="$pkgdir" install
+
+  # install translations
+  install -d "$pkgdir/usr/share/$pkgname/translations"
+  install -m644 translations/*.qm "$pkgdir/usr/share/$pkgname/translations/"
+}
