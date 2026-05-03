@@ -2,7 +2,7 @@
 # COntributor: kbipinkumar <kbipinkumar@pm.me>
 pkgname=cutepeaks
 pkgver=0.2.3
-pkgrel=0
+pkgrel=1
 pkgdesc="A simple viewer for Sanger trace file made with Qt5"
 arch=('x86_64')
 url="https://github.com/labsquare/CutePeaks"
