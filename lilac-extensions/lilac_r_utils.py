@@ -428,11 +428,288 @@ def r_check_pkgbuild(newver: str, cfg: CheckConfig):
         errors = '\n'.join(errors)
         raise CheckFailed(f"Check failed:\n{errors}")
 
-def r_pre_build(_G: SimpleNamespace, **kwargs):
+def r_fix_dependencies(pkg: Pkgbuild, desc: Description, cfg: CheckConfig, tar: tarfile.TarFile):
+    """
+    Automatically fix R package dependencies (r-*) in PKGBUILD file.
+    Only handles r-* dependencies, preserving all other dependencies as-is.
+    Returns a dict with the corrected dependencies.
+    
+    Args:
+        pkg: Parsed PKGBUILD
+        desc: Parsed DESCRIPTION from R package
+        cfg: CheckConfig with additional configuration
+        tar: Open tarfile for the R package (unused, kept for compatibility)
+    
+    Note: desc.depends and desc.imports are combined into a set, which
+    automatically handles any duplicates from the DESCRIPTION file.
+    """
+    fixes = {}
+    
+    # Calculate expected R dependencies (set automatically deduplicates)
+    expected_depends = set(desc.depends + desc.imports)
+    cb = cfg.extra_r_depends_cb
+    if cb is not None:
+        expected_depends.update((_r_name_to_arch(dep) for dep in cb(tar)))
+    
+    # Fix depends array - only modify r-* packages
+    new_depends = []
+    implicit_r_dep = False
+    
+    for dep in pkg.depends:
+        # Remove R dependencies that are in default R packages
+        if dep in cfg.default_r_pkgs:
+            continue
+        
+        if dep.startswith("r-"):
+            # Only keep r-* dependencies that are expected
+            if dep in expected_depends:
+                new_depends.append(dep)
+                implicit_r_dep = True
+            # else: skip unnecessary r- dependencies
+        elif dep == "r":
+            # We'll handle r dependency separately based on check_depends logic
+            pass
+        else:
+            # Keep all non-R dependencies as-is
+            new_depends.append(dep)
+    
+    # Add missing R dependencies
+    for dep in expected_depends:
+        if (dep not in cfg.default_r_pkgs) and (dep not in new_depends):
+            new_depends.append(dep)
+            implicit_r_dep = True
+    
+    # Handle r dependency correctly (matching check_depends logic)
+    # We need 'r' only if all dependencies are present and there's no implicit r dependency
+    all_deps_present = all(
+        (dep in cfg.default_r_pkgs or dep in new_depends) 
+        for dep in expected_depends
+    )
+    if all_deps_present and not implicit_r_dep:
+        new_depends.insert(0, 'r')
+    
+    # Sort dependencies for consistency
+    def sort_key(dep):
+        # Sort r first, then r-* packages, then others
+        if dep == 'r':
+            return (0, dep)
+        elif dep.startswith('r-'):
+            return (1, dep)
+        else:
+            return (2, dep)
+    
+    new_depends = sorted(new_depends, key=sort_key)
+    fixes['depends'] = new_depends
+    
+    # Fix makedepends array - only modify r-* packages
+    new_makedepends = []
+    for dep in pkg.makedepends:
+        if dep.startswith("r-"):
+            # Remove r-* dependencies that are already in depends
+            if dep in new_depends:
+                continue
+            # Remove r-* dependencies in default R packages
+            if dep in cfg.default_r_pkgs:
+                continue
+            # Keep if it's in LinkingTo or extra makedepends
+            if dep in desc.linkingto or dep in cfg.extra_r_makedepends:
+                new_makedepends.append(dep)
+        else:
+            # Keep all non-R makedepends as-is (e.g., gcc-fortran)
+            new_makedepends.append(dep)
+    
+    # Add missing R make dependencies
+    for dep in desc.linkingto + cfg.extra_r_makedepends:
+        if (dep not in cfg.default_r_pkgs) and (dep not in new_depends) and (dep not in new_makedepends):
+            new_makedepends.append(dep)
+    
+    new_makedepends = sorted(new_makedepends)
+    fixes['makedepends'] = new_makedepends
+    
+    # Fix optdepends array - only modify r-* packages
+    new_optdepends = []
+    for dep in pkg.optdepends:
+        if dep.startswith("r-"):
+            # Remove r-* dependencies that are already in depends
+            if dep in new_depends:
+                continue
+            # Remove r-* dependencies in default R packages  
+            if dep in cfg.default_r_pkgs:
+                continue
+            # Keep if it's in Suggests
+            if dep in desc.suggests:
+                new_optdepends.append(dep)
+        else:
+            # Keep all non-R optdepends as-is
+            new_optdepends.append(dep)
+    
+    # Add missing R optional dependencies
+    for dep in desc.suggests:
+        if (dep not in cfg.default_r_pkgs) and (dep not in new_optdepends) and (dep not in new_depends):
+            new_optdepends.append(dep)
+    
+    new_optdepends = sorted(new_optdepends)
+    fixes['optdepends'] = new_optdepends
+    
+    return fixes
+
+def r_apply_dependency_fixes(fixes: dict):
+    """
+    Apply dependency fixes to PKGBUILD file.
+    """
+    in_depends = False
+    in_makedepends = False
+    in_optdepends = False
+    indent = "  "
+    
+    for line in edit_file("PKGBUILD"):
+        stripped = line.strip()
+        
+        # Check if we're entering a dependency array
+        if stripped.startswith("depends=("):
+            in_depends = True
+            in_makedepends = False
+            in_optdepends = False
+            print("depends=(")
+            # Print all depends
+            for dep in fixes['depends']:
+                print(f"{indent}{dep}")
+            # Skip until we find the closing parenthesis
+            continue
+        elif stripped.startswith("makedepends=("):
+            in_depends = False
+            in_makedepends = True
+            in_optdepends = False
+            print("makedepends=(")
+            # Print all makedepends
+            for dep in fixes['makedepends']:
+                print(f"{indent}{dep}")
+            continue
+        elif stripped.startswith("optdepends=("):
+            in_depends = False
+            in_makedepends = False
+            in_optdepends = True
+            print("optdepends=(")
+            # Print all optdepends
+            for dep in fixes['optdepends']:
+                print(f"{indent}{dep}")
+            continue
+        
+        # Check if we're exiting a dependency array
+        if in_depends or in_makedepends or in_optdepends:
+            if stripped == ")":
+                in_depends = False
+                in_makedepends = False
+                in_optdepends = False
+                print(line)
+            # Skip lines within dependency arrays (we already printed them)
+            continue
+        
+        # Print all other lines as-is
+        print(line)
+
+def r_update_lilac_yaml(fixes: dict):
+    """
+    Update lilac.yaml file with corrected R package dependencies.
+    Only updates repo_depends with r-* packages from the fixed depends list.
+    """
+    import os
+    import yaml
+    
+    if not os.path.exists("lilac.yaml"):
+        return  # No lilac.yaml file to update
+    
+    try:
+        # Load existing lilac.yaml
+        with open("lilac.yaml", "r") as f:
+            data = yaml.safe_load(f)
+        
+        if data is None:
+            data = {}
+        
+        # Extract only r-* dependencies (excluding 'r' itself)
+        r_deps = [dep for dep in fixes['depends'] if dep.startswith('r-')]
+        
+        # Update repo_depends with r-* packages
+        if r_deps:
+            data['repo_depends'] = r_deps
+        elif 'repo_depends' in data:
+            # Remove repo_depends if no r-* dependencies
+            del data['repo_depends']
+        
+        # Extract only r-* makedepends
+        r_makedeps = [dep for dep in fixes['makedepends'] if dep.startswith('r-')]
+        
+        # Update repo_makedepends with r-* packages
+        if r_makedeps:
+            data['repo_makedepends'] = r_makedeps
+        elif 'repo_makedepends' in data:
+            # Remove repo_makedepends if no r-* makedepends
+            del data['repo_makedepends']
+        
+        # Write updated lilac.yaml
+        with open("lilac.yaml", "w") as f:
+            yaml.dump(data, f, default_flow_style=False, sort_keys=False)
+    
+    except (IOError, OSError, PermissionError) as e:
+        # Log error but don't fail the build - lilac.yaml update is optional
+        print(f"Warning: Failed to update lilac.yaml: {e}")
+    except yaml.YAMLError as e:
+        # Log YAML parsing/serialization errors
+        print(f"Warning: YAML error while updating lilac.yaml: {e}")
+
+def r_pre_build(_G: SimpleNamespace, auto_fix: bool = True, **kwargs):
     cfg = CheckConfig(**kwargs)
     newver, md5sum = _G.newver.rsplit("#", 1)
     cfg.md5sum = md5sum
 
     r_update_pkgver_and_pkgrel(newver)
     run_protected(["updpkgsums"])
-    r_check_pkgbuild(newver, cfg)
+    
+    if auto_fix:
+        # Try to automatically fix dependencies
+        pkgbuild = Pkgbuild()
+        cfg.default_r_pkgs = get_default_r_pkgs()
+        
+        # Track if we applied fixes
+        applied_fixes = False
+        
+        with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r:gz") as tar:
+            description = Description(tar, pkgbuild._pkgname)
+            
+            # Try to check first
+            try:
+                # Create a temporary config with tar for checking
+                cfg.tar = tar
+                r_check_pkgbuild(newver, cfg)
+            except CheckFailed as e:
+                # Check if the error is related to dependencies
+                error_msg = str(e.msg)
+                dependency_keywords = [
+                    "Unnecessary dependency",
+                    "Missing dependency", 
+                    "Unnecessary make dependency",
+                    "Missing make dependency",
+                    "Unnecessary optional dependency",
+                    "Missing optional dependency",
+                    "gcc-fortran"
+                ]
+                
+                if any(keyword in error_msg for keyword in dependency_keywords):
+                    # Apply automatic fixes - pass tar object explicitly
+                    fixes = r_fix_dependencies(pkgbuild, description, cfg, tar)
+                    r_apply_dependency_fixes(fixes)
+                    r_update_lilac_yaml(fixes)
+                    applied_fixes = True
+                else:
+                    # Re-raise if it's not a dependency issue
+                    raise
+        
+        # If we applied fixes, re-run updpkgsums and check again
+        if applied_fixes:
+            run_protected(["updpkgsums"])
+            with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r:gz") as tar:
+                cfg.tar = tar
+                r_check_pkgbuild(newver, cfg)
+    else:
+        r_check_pkgbuild(newver, cfg)
