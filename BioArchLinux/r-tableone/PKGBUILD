@@ -4,13 +4,12 @@ _pkgname=tableone
 _pkgver=0.13.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Create 'Table 1' to Describe Baseline Characteristics with or without Propensity Score Weights"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-only')
 depends=(
-  r
   r-e1071
   r-gmodels
   r-labelled
@@ -26,6 +25,7 @@ optdepends=(
   r-matching
   r-reshape2
   r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b46b9943bedcf516d8742ba3bd0d1743')
