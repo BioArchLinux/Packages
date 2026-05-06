@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=nanonext
-_pkgver=1.8.2
+_pkgver=1.9.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Lightweight Toolkit for Messaging, Concurrency and the Web"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -20,8 +20,8 @@ optdepends=(
   r-litedown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0311ac03b7398f88f711759adc301392')
-b2sums=('e6755b09d67331e0a6e2c16c729cf1202dac89a721de0fea8e07ed2d5ec92183a09370b71f2ba45b64161fe0e96ba670aa20c6143bb8ee166bcfcbf6496cc6f4')
+md5sums=('56d00244b6d52090e7cab10ddc7cc207')
+b2sums=('bb7ec41d19aaa0246e8958b3d222e2d931332451d666e6e0ca431635afae08d064f20f333302c4336a7dc41d527cc6a5602e5d1aa92f83f071fd10cd1d8aba20')
 
 build() {
   mkdir build
