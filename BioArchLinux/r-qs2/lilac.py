@@ -8,7 +8,8 @@ from lilac_r_utils import r_pre_build
 
 def pre_build():
     r_pre_build(
-        _G
+        _G,
+        expect_systemrequirements = "GNU make, C++17",
     )
 
 def post_build():
