@@ -2,31 +2,31 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=qs2
-_pkgver=0.1.7
+_pkgver=0.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Efficient Serialization of R Objects"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-rcpp
+  r-rcppparallel
   r-stringfish
 )
 makedepends=(
-  r-rcppparallel
 )
 optdepends=(
+  r-data.table
+  r-dplyr
   r-knitr
   r-rmarkdown
-  r-dplyr
-  r-data.table
   r-stringi
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('55804d36e726be82f30ba52787ce12b1')
-b2sums=('43c83860667f576a58d49caa6b79dfa335b7b4203e6e04b05ee46296428b36d30e86b538c879e9fb942931a0d52e7bf37376b156b4589f98ca25d70f7a771136')
+md5sums=('c311dbacafd682c4c7c0ccd0568ae4c0')
+b2sums=('31d061e3521a9de1d306a441f3e968dfd25bc5a15f500810d7710121cbb03557c92fc5c3396f51049847fb985d4eb62c3045bcd694e2e78953e31ec85ecec0bf')
 
 build() {
   mkdir build
