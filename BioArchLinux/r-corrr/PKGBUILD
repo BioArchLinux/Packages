@@ -1,0 +1,45 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=corrr
+_pkgver=0.4.5
+pkgname=r-${_pkgname,,}
+pkgver=0.4.5
+pkgrel=1
+pkgdesc='Correlations in R'
+arch=('any')
+url="https://github.com/tidymodels/corrr"
+license=('MIT')
+depends=(
+  r-dplyr
+  r-ggplot2
+  r-ggrepel
+  r-glue
+  r-purrr
+  r-rlang
+  r-seriation
+  r-tibble
+)
+optdepends=(
+  r-covr
+  r-dbi
+  r-dbplyr
+  r-knitr
+  r-rmarkdown
+  r-rsqlite
+  r-sparklyr
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('61e0c811a10eb6220e4eebdf9bcfbc39')
+b2sums=('33152ee6a97b4752aa6dd93fe76fc5043a63ce182c28697277bf7e8586e477ce860ca3cf624aba0ec25a6a41a265ec353c53de51cdd6bacd09490d68dbf7e27e')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
+# vim:set ts=2 sw=2 et:

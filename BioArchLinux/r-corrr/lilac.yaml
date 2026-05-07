@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-dplyr
+- r-ggplot2
+- r-ggrepel
+- r-glue
+- r-purrr
+- r-rlang
+- r-seriation
+- r-tibble
+update_on:
+- source: rpkgs
+  pkgname: corrr
+  repo: cran
+  md5: true
+- alias: r
