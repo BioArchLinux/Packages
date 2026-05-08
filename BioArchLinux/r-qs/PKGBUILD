@@ -26,7 +26,7 @@ optdepends=(
   r-rmarkdown
   r-testthat
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://cran.r-project.org/src/contrib/Archive/qs/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('fb62832108b6188215c612ad9fb94676')
 b2sums=('7c9e0e154f3b74d0cd059a2c30433ec4934a329f60f2fe5e8b42b08ecf01730c39ba256a8898286e442c454dba39dce67bfca80fb40ea03ce70b3edfbeb51910')
 
