@@ -3,7 +3,7 @@
 pkgname=adapterremoval3
 _pkgname=adapterremoval
 pkgver=3.0.0
-pkgrel=0
+pkgrel=1
 pkgdesc='Rapid adapter trimming, identification, and read merging of NGS sequence reads'
 arch=('x86_64')
 url='https://github.com/MikkelSchubert/adapterremoval'
