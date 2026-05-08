@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mirai
-_pkgver=2.6.1
+_pkgver=2.7.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Minimalist Async Evaluation Framework for R"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,13 +16,14 @@ optdepends=(
   r-cli
   r-later
   r-litedown
+  r-mori
   r-otel
   r-otelsdk
   r-secretbase
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0bfa9ecff779c70a3df8425594217218')
-b2sums=('a39d2e107c4e0d9c49f5c68a8c1e2ee281d0f0ccdb0602c4b654f8786dfb4af16097e167656502a41db536854a575e58152e2b9be4a4dbbfe32284c471656a62')
+md5sums=('4bcabd69fa218a5d7d5f7e62302e5d3a')
+b2sums=('50985899aded1b6ef6db676baed0f6196b18a4aa8264a0af3b2b192949dab78e6979939789073b19a83a2f983c5bd9db434f56e14cd2b932c9ea832db826d2af')
 
 build() {
   mkdir build
