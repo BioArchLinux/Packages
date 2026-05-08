@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-backports
+- r-checkmate
+- r-data.table
+- r-formula
+- r-generics
+- r-insight
+- r-rlang
+update_on:
+- source: rpkgs
+  pkgname: marginaleffects
+  repo: cran
+  md5: true
+- alias: r
