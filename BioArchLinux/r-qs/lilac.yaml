@@ -9,10 +9,9 @@ repo_depends:
 repo_makedepends:
 - r-bh
 update_on:
-- source: rpkgs
-  pkgname: qs
-  repo: cran
-  md5: true
+- regex: qs_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/src/contrib/Archive/qs
 - alias: r
 - source: alpmfiles
   pkgname: lz4
