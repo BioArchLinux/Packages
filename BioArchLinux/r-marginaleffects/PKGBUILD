@@ -4,7 +4,7 @@ _pkgname=marginaleffects
 _pkgver=0.32.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Predictions, Comparisons, Slopes, Marginal Means, and Hypothesis Tests'
 arch=(any)
 url="https://marginaleffects.com/"
@@ -39,18 +39,17 @@ optdepends=(
   r-car
   r-cardata
   r-causaldata
-  r-clarify
   r-cjoint
-  r-clubsandwich
+  r-clarify
   r-cobalt
   r-collapse
   r-conflicted
   r-countrycode
   r-covr
   r-crch
-  r-dalex
-  r-dcchoice
+  r-dalextra
   r-dbarts
+  r-dcchoice
   r-dfidx
   r-dirichletreg
   r-distributional
@@ -130,10 +129,10 @@ optdepends=(
   r-rendo
   r-reticulate
   r-rmarkdown
+  r-rms
   r-robust
   r-robustbase
   r-robustlmm
-  r-rms
   r-rsample
   r-rstanarm
   r-rstantools
@@ -143,8 +142,8 @@ optdepends=(
   r-sampleselection
   r-sandwich
   r-scam
-  r-spelling
   r-speedglm
+  r-spelling
   r-survey
   r-svglite
   r-systemfit
