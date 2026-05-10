@@ -6,6 +6,7 @@ repo_depends:
   - jags
   - r-bayestools
   - r-ggplot2
+  - r-loo
   - r-mvtnorm
   - r-rdpack
   - r-rjags

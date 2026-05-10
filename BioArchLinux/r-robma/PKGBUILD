@@ -5,7 +5,7 @@ _pkgname=RoBMA
 _pkgver=3.6.1
 pkgname=r-${_pkgname,,}
 pkgver=3.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Robust Bayesian Meta-Analyses'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,6 +22,7 @@ depends=(
   r-rlang
   r-runjags
   r-scales
+  r-loo
 )
 optdepends=(
   r-covr
