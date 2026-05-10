@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-checkmate
+- r-data.table
+- r-generics
+- r-glue
+- r-insight
+- r-parameters
+- r-performance
+- r-tables
+- r-tinytable
+update_on:
+- source: rpkgs
+  pkgname: modelsummary
+  repo: cran
+  md5: true
+- alias: r

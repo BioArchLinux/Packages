@@ -1,0 +1,38 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tables
+_pkgver=0.9.33
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Formula-Driven Table Generation'
+arch=(any)
+url="https://dmurdoch.github.io/tables/"
+license=('GPL-2.0-only')
+depends=(
+  r-htmltools
+  r-knitr
+)
+optdepends=(
+  r-bookdown
+  r-formatters
+  r-hmisc
+  r-kableextra
+  r-magrittr
+  r-pkgdown
+  r-rmarkdown
+  r-tinytable
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1205aece418c81b88a632eab3aeb2ec9')
+b2sums=('b09d041f9d355227a86c23f96f3b56139d50142748b4a5798acaa3fdfb6f6e3d9441b463687231ae3a3ab3cbfe6098fbbf827690b221ad172b47eac521efb331')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
