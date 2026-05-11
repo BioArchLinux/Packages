@@ -1,0 +1,35 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=usmapdata
+_pkgver=1.0.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Mapping Data for 'usmap' Package"
+arch=(any)
+url="https://usmap.dev"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+  r-rlang
+  r-sf
+)
+optdepends=(
+  r-covr
+  r-dplyr
+  r-spelling
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('548c9ca61ca6197148fce35c9c031320')
+b2sums=('0c00d9046aaa4296ee66f9e96cf3135b870b17b897e3f0bef383c0b475d43ebc75b892058d5cd136668ca845f613e0a851aecf24ab15b8aceff5a31cfca605c4')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
