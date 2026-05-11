@@ -10,7 +10,6 @@ arch=(any)
 url="https://usmap.dev"
 license=('GPL-3.0-or-later')
 depends=(
-  r
   r-rlang
   r-sf
 )
