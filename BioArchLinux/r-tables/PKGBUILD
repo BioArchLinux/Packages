@@ -12,6 +12,7 @@ license=('GPL-2.0-only')
 depends=(
   r-htmltools
   r-knitr
+  pandoc
 )
 optdepends=(
   r-bookdown
