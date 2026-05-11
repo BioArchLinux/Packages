@@ -1,0 +1,48 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=skimr
+_pkgver=2.2.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Compact and Flexible Summaries of Data'
+arch=(any)
+url="https://docs.ropensci.org/skimr/"
+license=('GPL-3.0-only')
+depends=(
+  r-cli
+  r-dplyr
+  r-knitr
+  r-pillar
+  r-purrr
+  r-repr
+  r-rlang
+  r-stringr
+  r-tibble
+  r-tidyr
+  r-tidyselect
+  r-vctrs
+)
+optdepends=(
+  r-data.table
+  r-dtplyr
+  r-extrafont
+  r-haven
+  r-lubridate
+  r-rmarkdown
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('52badf9ea532763836255f059686eaeb')
+b2sums=('2e0d3d6af761c59914a89e78de74bafa2f8b69797f4ecaa01fade20fe2937bb35302cadbd90f1fe56d5e036f8a29bc4b082e3355ee052012f924ef725ab8888b')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
