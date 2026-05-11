@@ -1,0 +1,102 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=modelsummary
+_pkgver=2.6.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Summary Tables and Plots for Statistical Models and Data: Beautiful, Customizable, and Publication-Ready'
+arch=(any)
+url="https://modelsummary.com"
+license=('GPL-3.0-only')
+depends=(
+  r-checkmate
+  r-data.table
+  r-generics
+  r-glue
+  r-insight
+  r-parameters
+  r-performance
+  r-tables
+  r-tinytable
+)
+optdepends=(
+  r-aer
+  r-altdoc
+  r-amelia
+  r-betareg
+  r-bookdown
+  r-brms
+  r-broom
+  r-broom.mixed
+  r-car
+  r-clubsandwich
+  r-correlation
+  r-covr
+  r-did
+  r-digest
+  r-dt
+  r-estimatr
+  r-fixest
+  r-flextable
+  r-future
+  r-future.apply
+  r-gamlss
+  r-ggdist
+  r-ggplot2
+  r-gh
+  r-glmmtmb
+  r-gt
+  r-gtextras
+  r-haven
+  r-huxtable
+  r-irdisplay
+  r-ivreg
+  r-kableextra
+  r-knitr
+  r-labelled
+  r-lavaan
+  r-lfe
+  r-lme4
+  r-lmtest
+  r-magick
+  r-magrittr
+  r-marginaleffects
+  r-mice
+  r-officer
+  r-openxlsx
+  r-pandoc
+  r-pscl
+  r-psych
+  r-randomizr
+  r-rdatasets
+  r-remotes
+  r-rmarkdown
+  r-rstanarm
+  r-rsvg
+  r-sandwich
+  r-spelling
+  r-survey
+  r-tibble
+  r-tictoc
+  r-tidyselect
+  r-tidyverse
+  r-tinysnapshot
+  r-tinytest
+  r-tinytex
+  r-webshot2
+  r-wesanderson
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('7014ea9552c414d9539b8f733cfd2aa6')
+b2sums=('d592bb90d6456daab6655c42d3f8c9caf3e24a7f29d5ff30d2df0a2881950e2f33d4aa0ae44381c64f62e3c83787bc95022fdf2e3831a6a074fd964b67cdcd65')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

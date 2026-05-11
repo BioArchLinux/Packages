@@ -1,0 +1,55 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tinytable
+_pkgver=0.16.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Simple and Configurable Tables in 'HTML', 'LaTeX', 'Markdown', 'Word', 'PNG', 'PDF', and 'Typst' Formats"
+arch=(any)
+url="https://vincentarelbundock.github.io/tinytable/"
+license=('GPL-3.0-or-later')
+depends=(
+  r
+)
+optdepends=(
+  r-base64enc
+  r-broom
+  r-data.table
+  r-estimatr
+  r-ggplot2
+  r-gh
+  r-glue
+  r-htmltools
+  r-litedown
+  r-magrittr
+  r-marginaleffects
+  r-modelsummary
+  r-pandoc
+  r-pkgdown
+  r-quarto
+  r-rdatasets
+  r-rmarkdown
+  r-rstudioapi
+  r-scales
+  r-stringi
+  r-tibble
+  r-tinysnapshot
+  r-tinytest
+  r-tinytex
+  r-webshot2
+  r-xfun
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('d6d2afee92702ee1cdd419783da755ce')
+b2sums=('a236d3647bcf2b2f4fb21d7fd8caeb6656015e971bb38af6dc686e8b7682cd1e62eb974cea2af598d8335e9b5dff31816a304b7f6250b7dd785a25d6e0869d25')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:

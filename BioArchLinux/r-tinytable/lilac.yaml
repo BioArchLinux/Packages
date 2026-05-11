@@ -1,0 +1,10 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+update_on:
+- source: rpkgs
+  pkgname: tinytable
+  repo: cran
+  md5: true
+- alias: r
