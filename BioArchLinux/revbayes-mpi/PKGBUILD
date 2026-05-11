@@ -10,6 +10,7 @@ depends=('gcc-libs' 'boost-libs' 'openlibm' 'openmpi')
 makedepends=('boost' 'meson' 'ninja' 'cmake' 'git')
 conflicts=('lrzsz' 'revbayes-mpi')
 provides=('revbayes')
+options=(!lto)
 source=("git+$url.git#tag=v$pkgver"
 	"rb.patch")
 md5sums=('ae15c82517eb9329bbc58fa6bf7df90f'
