@@ -1,0 +1,41 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=usmap
+_pkgver=1.0.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="US Maps Including Alaska and Hawaii"
+arch=(any)
+url="https://usmap.dev"
+license=('GPL-3.0-or-later')
+depends=(
+  r-rlang
+  r-usmapdata
+)
+optdepends=(
+  r-covr
+  r-ggplot2
+  r-ggrepel
+  r-knitr
+  r-proto
+  r-rmarkdown
+  r-scales
+  r-sf
+  r-spelling
+  r-testthat
+  r-vdiffr
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('414bfe0840e2b9f36f8f4e4ef6851b8c')
+b2sums=('867c0c1f6a9ffac121bddc1c22c9a1b49c2f503daa26f13d4bcb47da33faa2cd5b466258b3a743b85de1297b11e563c11df5612fb894c6d2e628c61187952462')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
