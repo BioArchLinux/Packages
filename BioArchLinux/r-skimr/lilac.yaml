@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-knitr
+- r-pillar
+- r-purrr
+- r-repr
+- r-rlang
+- r-stringr
+- r-tibble
+- r-tidyr
+- r-tidyselect
+- r-vctrs
+update_on:
+- source: rpkgs
+  pkgname: skimr
+  repo: cran
+  md5: true
+- alias: r
