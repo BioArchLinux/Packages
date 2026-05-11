@@ -9,6 +9,7 @@ depends=('gcc-libs' 'boost-libs' 'openlibm')
 makedepends=('boost' 'meson' 'ninja' 'cmake' 'git')
 source=("git+$url.git#tag=v$pkgver"
 	"rb.patch")
+options=(!lto)
 conflicts=('lrzsz' 'revbayes-mpi')
 md5sums=('ae15c82517eb9329bbc58fa6bf7df90f'
          'f5af0159704f049f8269584883bcaa80')
