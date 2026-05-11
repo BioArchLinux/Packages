@@ -1,0 +1,27 @@
+# Maintainer: Christos Longros <chris.longros@gmail.com>
+_pkgname=cmprsk
+_pkgver=2.2-12
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Subdistribution Analysis of Competing Risks"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r
+)
+makedepends=(
+  gcc-fortran
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('ae85888a4daf6417d48fc35cb306e909')
+b2sums=('e67727de09f735054c796ab1aebeff4781f43526b755478a7a1a6b8d37a1b45756dfe61b6b1b70e21cf047a4b7b93d3d521cf78bd6dd16a180d60cc458d5f80a')
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
