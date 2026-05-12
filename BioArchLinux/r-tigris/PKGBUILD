@@ -1,0 +1,41 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tigris
+_pkgver=2.2.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Load Census TIGER/Line Shapefiles"
+arch=(any)
+url="https://github.com/walkerke/tigris"
+license=('MIT')
+depends=(
+  r-dplyr
+  r-httr
+  r-magrittr
+  r-rappdirs
+  r-sf
+  r-stringr
+  r-uuid
+)
+optdepends=(
+  r-ggplot2
+  r-ggthemes
+  r-knitr
+  r-leaflet
+  r-sp
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('8a74612cc32d657429efcd6b40d5f087')
+b2sums=('3b9e92c0e3b719a51dd4286ca69ee0ec72114bc92113ee394d22fb917006bb9790fcc08a9722b05ac27f90884925c8cfd644db9f11f496ac2e46cc4074944c20')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
