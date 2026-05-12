@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-crayon
+- r-dplyr
+- r-httr
+- r-jsonlite
+- r-purrr
+- r-rappdirs
+- r-readr
+- r-rlang
+- r-rvest
+- r-sf
+- r-stringr
+- r-tidyr
+- r-tidyselect
+- r-tigris
+- r-units
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: tidycensus
+  repo: cran
+  md5: true
+- alias: r

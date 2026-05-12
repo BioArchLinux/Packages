@@ -1,0 +1,47 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tidycensus
+_pkgver=1.7.5
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Load US Census Boundary and Attribute Data as Tidyverse and sf-Ready Data Frames"
+arch=(any)
+url="https://walker-data.com/tidycensus/"
+license=('MIT')
+depends=(
+  r-crayon
+  r-dplyr
+  r-httr
+  r-jsonlite
+  r-purrr
+  r-rappdirs
+  r-readr
+  r-rlang
+  r-rvest
+  r-sf
+  r-stringr
+  r-tidyr
+  r-tidyselect
+  r-tigris
+  r-units
+  r-xml2
+)
+optdepends=(
+  r-ggplot2
+  r-survey
+  r-terra
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('3d9ddf56c71f221e50ac444963bdc391')
+b2sums=('3efc1d03de5e6227897dcc26a8952924119610454bfba16d9a6c2624376a323a96f688b41f84fe86bd9f1275b383aad21386ff0ae74123ba3ed99ec61a1aa492')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
