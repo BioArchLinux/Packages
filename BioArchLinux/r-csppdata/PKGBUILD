@@ -9,6 +9,7 @@ pkgdesc="Data Only: The Correlates of State Policy Project Dataset"
 arch=(any)
 url="https://github.com/correlatesstatepolicy/csppData"
 license=('GPL-3.0-only')
+depends=(r)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('077133704fb3cdce6bfa04f35e61fa27')
 b2sums=('bb240882e1c5008589b2922f7c27246437afb601c1d89f3b5b98f7bec5e12a537126b32ff5840071bc8da0671b8f725d7f8e67112a77560f39f03af54b6e6143')
