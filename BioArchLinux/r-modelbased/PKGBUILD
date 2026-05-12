@@ -4,7 +4,7 @@ _pkgname=modelbased
 _pkgver=0.15.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Estimation of Model-Based Predictions, Contrasts and Means"
 arch=(any)
 url="https://easystats.github.io/modelbased/"
@@ -19,6 +19,8 @@ optdepends=(
   r-afex
   r-betareg
   r-bh
+  r-bootes
+  r-brglm2
   r-brms
   r-broom
   r-car
@@ -28,6 +30,8 @@ optdepends=(
   r-correlation
   r-coxme
   r-curl
+  r-discovr
+  r-easystats
   r-effectsize
   r-emmeans
   r-formula
@@ -45,6 +49,7 @@ optdepends=(
   r-mice
   r-mvtnorm
   r-nanoparquet
+  r-nestedlogit
   r-ordinal
   r-palmerpenguins
   r-patchwork
@@ -53,11 +58,15 @@ optdepends=(
   r-poorman
   r-pscl
   r-rcppeigen
+  r-rdatasets
   r-report
   r-rmarkdown
   r-rstanarm
+  r-rtdists
+  r-rwiener
   r-sandwich
   r-scales
+  r-see
   r-testthat
   r-tinyplot
   r-tinytable
