@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-bayestestr
+- r-datawizard
+- r-insight
+- r-parameters
+update_on:
+- source: rpkgs
+  pkgname: modelbased
+  repo: cran
+  md5: true
+- alias: r

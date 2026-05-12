@@ -1,0 +1,78 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=modelbased
+_pkgver=0.15.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Estimation of Model-Based Predictions, Contrasts and Means"
+arch=(any)
+url="https://easystats.github.io/modelbased/"
+license=('GPL-3.0-only')
+depends=(
+  r-bayestestr
+  r-datawizard
+  r-insight
+  r-parameters
+)
+optdepends=(
+  r-afex
+  r-betareg
+  r-bh
+  r-brms
+  r-broom
+  r-car
+  r-cardata
+  r-coda
+  r-collapse
+  r-correlation
+  r-coxme
+  r-curl
+  r-effectsize
+  r-emmeans
+  r-formula
+  r-gamm4
+  r-gganimate
+  r-ggplot2
+  r-glmmtmb
+  r-httr2
+  r-knitr
+  r-lme4
+  r-lmertest
+  r-logspline
+  r-marginaleffects
+  r-matchit
+  r-mice
+  r-mvtnorm
+  r-nanoparquet
+  r-ordinal
+  r-palmerpenguins
+  r-patchwork
+  r-pbkrtest
+  r-performance
+  r-poorman
+  r-pscl
+  r-rcppeigen
+  r-report
+  r-rmarkdown
+  r-rstanarm
+  r-sandwich
+  r-scales
+  r-testthat
+  r-tinyplot
+  r-tinytable
+  r-vdiffr
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('d8ab161cdc43e7cff3d0a78e0b27a9ab')
+b2sums=('45c01a0b7f3967f1c3336846c3161f09e297e98bb51f8e9e83d7856010a005bdcae6adae40861e9688e72d6b03f2a1b07bf0e2ebafcd8b3adbccd495c7415ef8')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
