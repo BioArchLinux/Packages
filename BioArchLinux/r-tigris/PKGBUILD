@@ -4,7 +4,7 @@ _pkgname=tigris
 _pkgver=2.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Load Census TIGER/Line Shapefiles"
 arch=(any)
 url="https://github.com/walkerke/tigris"
@@ -25,6 +25,7 @@ optdepends=(
   r-leaflet
   r-sp
   r-testthat
+  r-tidycensus
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8a74612cc32d657429efcd6b40d5f087')
