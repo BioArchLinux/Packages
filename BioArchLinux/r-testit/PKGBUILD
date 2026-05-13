@@ -4,10 +4,10 @@
 # Contributor: Alex Branham <branham@utexas.edu>
 
 _pkgname=testit
-_pkgver=0.18
+_pkgver=1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="A Simple Package for Testing R Packages"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,8 +16,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('00780d40f30c43c961447875583f6f5f')
-b2sums=('259d6abf6d1b269ac1aff14c767d2838ca5655427d83f9a92857cd7f0835b4551935d7d3eb11f651df5b626dcc8cf10fa344debc543abbb038e306593f7e08a0')
+md5sums=('39cf1e7294cbc8efa22f4a0d688fecf2')
+b2sums=('c4e3d81af471faf2eea1131aca2fcdafb589fbbc087426367b00d7d2c565249449149b2473e053aee95b73c99f0a79d806537e88c48b33eabc6dfb65af6ecff5')
 
 build() {
   mkdir build
