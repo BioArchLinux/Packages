@@ -15,6 +15,7 @@ repo_makedepends:
 - r-effects
 - r-emmeans
 - r-pscl
+- r-sandwich
 - r-testthat
 update_on:
 - source: rpkgs
