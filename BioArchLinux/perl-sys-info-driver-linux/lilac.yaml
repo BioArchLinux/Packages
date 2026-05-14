@@ -14,5 +14,5 @@ repo_checkdepends:
   - perl-test-sys-info
 update_on:
   - source: cpan
-    cpan: Sys-Info
+    cpan: Sys-Info-Driver-Linux
   - alias: perl
