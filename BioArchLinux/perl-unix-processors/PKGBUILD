@@ -1,0 +1,41 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-unix-processors
+_cpanname=Unix-Processors
+pkgver=2.046
+pkgrel=0
+pkgdesc="Extracts and collects information from the host system"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/W/WS/WSNYDER/$_cpanname-$pkgver.tar.gz")
+sha256sums=('3973ebdc44682c9c15c776f66e8be242cb4ff1dd52caf43ff446b74d4dccca06')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
