@@ -2,7 +2,7 @@
 pkgname=perl-unix-processors
 _cpanname=Unix-Processors
 pkgver=2.046
-pkgrel=0
+pkgrel=1
 pkgdesc="Extracts and collects information from the host system"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
