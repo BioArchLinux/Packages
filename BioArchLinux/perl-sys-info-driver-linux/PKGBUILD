@@ -2,7 +2,7 @@
 pkgname=perl-sys-info-driver-linux
 _cpanname=Sys-Info-Driver-Linux
 pkgver=0.7911
-pkgrel=0
+pkgrel=1
 pkgdesc="This is the main module in the Linux driver collection."
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
