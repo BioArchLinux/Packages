@@ -1,0 +1,41 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-sys-info-base
+_cpanname=Sys-Info-Base
+pkgver=0.7810
+pkgrel=0
+pkgdesc="Includes some common methods"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/B/BU/BURAK/$_cpanname-$pkgver.tar.gz")
+sha256sums=('21bc494695d19282645b03c4819f31df25da4a510a364b0be08c6eb15d49c070')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
