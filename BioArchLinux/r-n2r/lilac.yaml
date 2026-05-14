@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-rcpp
 repo_makedepends:
+- r-bh
 - r-rcppeigen
 - r-rcppspdlog
 update_on:
