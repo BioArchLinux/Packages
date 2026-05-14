@@ -2,7 +2,7 @@
 pkgname=trimgalore
 _pkgname=trim_galore
 pkgver=2.2.0
-pkgrel=0
+pkgrel=1
 pkgdesc='A fast tool for BAM/CRAM quality evaluation of long reads. https://doi.org/10.1093/bioinformatics/btad311'
 arch=(x86_64)
 depends=('glibc' 'bzip2' 'libgcc' 'zlib' 'xz')
