@@ -2,7 +2,7 @@
 pkgname=perl-sys-info
 _cpanname=Sys-Info
 pkgver=0.7811
-pkgrel=0
+pkgrel=1
 pkgdesc="Extracts and collects information from the host system"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
