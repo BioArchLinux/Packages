@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "GPL | file LICENSE",
-        expect_systemrequirements = "C++17, zlib headers and libraries, GNU make, optionally also bzip2 and POSIX-compliant regex functions.",
+        expect_systemrequirements = "zlib headers and libraries, GNU make, optionally also bzip2 and POSIX-compliant regex functions.",
     )
 
 def post_build():
