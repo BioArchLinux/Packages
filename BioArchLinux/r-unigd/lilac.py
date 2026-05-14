@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "libpng, cairo, freetype2, fontconfig",
+        expect_systemrequirements = "Cairo (optional, for raster output), libtiff (optional, for TIFF output), libpng, zlib",
     )
 
 def post_build():
