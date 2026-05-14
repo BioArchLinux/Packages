@@ -1,0 +1,41 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-config-general
+_cpanname=Config-General
+pkgver=2.67
+pkgrel=0
+pkgdesc="Generic Config Module"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/T/TL/TLINDEN/$_cpanname-$pkgver.tar.gz")
+sha256sums=('473d65127b23dac0e8039c01e28bc4072cb9a6e93e81a1ea4893cea08c698db0')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
