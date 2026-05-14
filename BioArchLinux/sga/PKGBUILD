@@ -2,7 +2,7 @@
 
 pkgname=sga
 pkgver=0.10.15
-pkgrel=0
+pkgrel=1
 pkgdesc="de novo sequence assembler using string graphs https://doi.org/10.1101/gr.126953.111"
 arch=("x86_64")
 url="https://github.com/jts/sga"
