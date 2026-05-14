@@ -1,0 +1,24 @@
+# Maintainer: Guoyi Zhang <kuoi at bioarchlinux dot org>
+pkgname=illumiprocessor
+pkgver=2.10
+pkgrel=0
+pkgdesc="pre-process illumina reads"
+arch=('any')
+url="https://github.com/faircloth-lab/illumiprocessor"
+license=('BSD-3-Clause')
+depends=('python' 'trimmomatic')
+makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/faircloth-lab/${pkgname}/archive/v${pkgver}.tar.gz")
+sha256sums=('11694c25df15e0f75644a7d650476c2ddf3dbf83135b3ca5cd57a122804581a8')
+
+build() {
+  cd "${pkgname}-${pkgver}"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+  python -m installer --destdir="${pkgdir}" dist/*.whl
+
+  install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
