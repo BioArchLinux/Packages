@@ -2,7 +2,7 @@
 pkgname=assexon
 _pkgname=Assexon
 pkgver=2021.01.04
-pkgrel=0
+pkgrel=1
 pkgdesc="Assembling Exon Using Gene Capture Data https://doi.org/10.1177/1176934319874792"
 arch=('x86_64')
 url="https://github.com/yhadevol/Assexon"
