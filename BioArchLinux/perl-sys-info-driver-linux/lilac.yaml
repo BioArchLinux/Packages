@@ -11,6 +11,7 @@ repo_depends:
   - perl-config-general
   - perl-unix-processors
   - perl-test-sys-info
+  - perl-sys-hostip
 update_on:
   - source: cpan
     cpan: Sys-Info-Driver-Linux
