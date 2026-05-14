@@ -2,7 +2,7 @@
 pkgname=perl-sys-hostip
 _cpanname=Sys-HostIP
 pkgver=2.120
-pkgrel=1
+pkgrel=2
 pkgdesc="Try extra hard to get IP address related info"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
