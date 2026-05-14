@@ -1,0 +1,42 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-sys-info
+_cpanname=Sys-Info
+pkgver=0.7811
+pkgrel=0
+pkgdesc="Extracts and collects information from the host system"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl-sys-info-base' 'perl-sys-info-driver-linux')
+checkdepends=('perl-test-sys-info')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/B/BU/BURAK/$_cpanname-$pkgver.tar.gz")
+sha256sums=('566482bff3427c198d7955468ed945a8e736c4a2925151fdef96801ef8a401e1')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+

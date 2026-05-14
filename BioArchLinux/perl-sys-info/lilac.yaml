@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - perl-sys-info-base
+  - perl-sys-info-driver-linux
+checkdepends:
+  - perl-test-sys-info  
+update_on:
+  - source: cpan
+    cpan: Sys-Info
+  - alias: perl
