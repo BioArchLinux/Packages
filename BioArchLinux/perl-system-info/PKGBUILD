@@ -2,7 +2,7 @@
 pkgname=perl-system-info
 _cpanname=System-Info
 pkgver=0.067
-pkgrel=0
+pkgrel=1
 pkgdesc="Factory for system specific information objects"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
