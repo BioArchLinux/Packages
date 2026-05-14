@@ -14,6 +14,7 @@ repo_depends:
 - r-knitr
 - r-rvest
 - r-stringdist
+- r-commonmark
 update_on:
 - source: rpkgs
   pkgname: BiocCheck

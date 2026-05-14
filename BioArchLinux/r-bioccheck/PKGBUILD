@@ -21,6 +21,7 @@ depends=(
   r-knitr
   r-rvest
   r-stringdist
+  r-commonmark
 )
 optdepends=(
   r-biocstyle
