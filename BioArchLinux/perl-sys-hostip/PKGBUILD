@@ -1,0 +1,41 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-sys-hostip
+_cpanname=Sys-HostIP
+pkgver=2.120
+pkgrel=1
+pkgdesc="Try extra hard to get IP address related info"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl-capture-tiny')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/X/XS/XSAWYERX/$_cpanname-$pkgver.tar.gz")
+sha256sums=('dff394faa704e6f5e834df0a92e8b22645c1d027108c57dbd4a8bb1d3ab9894d')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
