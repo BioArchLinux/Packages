@@ -1,0 +1,31 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=assexon
+_pkgname=Assexon
+pkgver=2021.01.04
+pkgrel=0
+pkgdesc="Assembling Exon Using Gene Capture Data https://doi.org/10.1177/1176934319874792"
+arch=('x86_64')
+url="https://github.com/yhadevol/Assexon"
+license=('GPL-3.0-or-later')
+depends=('perl-bioperl' 'perl-sys-info' 'perl-parallel-forkmanager'
+	 'trimgalore' 'cutadapt' 'usearch' 'sga' 'exonerate')
+makedepends=('git')
+source=(git+$url.git)
+sha256sums=('SKIP')
+
+pkgver(){
+  cd $srcdir/${_pkgname}
+  printf $(TZ=UTC git log --no-walk --pretty="%cd" --decorate=full --date=format-local:%Y.%m.%d | head -n 1)
+}
+
+package(){
+  cd $srcdir/${_pkgname}
+  cd pipeline_scripts
+  for dir in assemble data_preparation postprocess; do
+    cd $dir
+	for file in $(ls); do
+	  install -Dm755 $file -t "$pkgdir/usr/bin/"
+	done
+    cd ..
+  done
+}
