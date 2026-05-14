@@ -7,7 +7,6 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: regex
-    regex: 'System-Info-([\d.]+)'
-    url: https://metacpan.org/release/System-Info
+  - source: cpan
+    cpan: System-Info
   - alias: perl
