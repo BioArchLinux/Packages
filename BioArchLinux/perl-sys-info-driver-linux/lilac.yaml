@@ -10,7 +10,6 @@ repo_depends:
   - perl-sys-info-base
   - perl-config-general
   - perl-unix-processors
-repo_checkdepends:
   - perl-test-sys-info
 update_on:
   - source: cpan
