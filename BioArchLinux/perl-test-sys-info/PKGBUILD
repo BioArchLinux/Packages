@@ -1,0 +1,41 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-test-sys-info
+_cpanname=Test-Sys-Info
+pkgver=0.23
+pkgrel=0
+pkgdesc="a centralized test suite for Sys::Info Drivers"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/B/BU/BURAK/$_cpanname-$pkgver.tar.gz")
+sha256sums=('30c5f2c4cfee8e1ae6d9fb6291f79addbff5739ba4efa5b1e034520f18fbc95a')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
