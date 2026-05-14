@@ -1,0 +1,42 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-system-info
+_cpanname=System-Info
+pkgver=0.067
+pkgrel=0
+pkgdesc="Factory for system specific information objects"
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('GPL-3.0-or-later' 'Artistic-1.0')
+depends=('perl')
+checkdepends=('perl-test-warnings')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/$_cpanname-$pkgver.tgz")
+sha256sums=('84268b8040254fb209779296a871ebde07d907b8acf3320bcb2f65f12c5a3d0f')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
