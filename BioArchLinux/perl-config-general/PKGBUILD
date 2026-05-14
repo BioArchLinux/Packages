@@ -2,7 +2,7 @@
 pkgname=perl-config-general
 _cpanname=Config-General
 pkgver=2.67
-pkgrel=0
+pkgrel=1
 pkgdesc="Generic Config Module"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
