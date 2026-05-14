@@ -1,0 +1,42 @@
+# Maintainer: Guoyi Zhang <kuoi at bioarchlinux dot org>
+pkgname=trimgalore
+_pkgname=trim_galore
+pkgver=2.2.0
+pkgrel=0
+pkgdesc='A fast tool for BAM/CRAM quality evaluation of long reads. https://doi.org/10.1093/bioinformatics/btad311'
+arch=(x86_64)
+depends=('glibc' 'bzip2' 'libgcc' 'zlib' 'xz')
+makedepends=('git' 'rust' 'cmake' 'clang')
+url='https://github.com/FelixKrueger/TrimGalore'
+license=('GPL-3.0-or-later')
+options=(!lto)
+_tag=v${pkgver}
+source=(${pkgname}-${pkgver}::git+${url}.git#tag=${_tag})
+sha256sums=('32caf575b4cbed744e7f8b7dfa917dca49631970c87b2e399657da045eb6b4d7')
+
+prepare() {
+    cd ${pkgname}-${pkgver}
+    export RUSTUP_TOOLCHAIN=stable
+    cargo fetch  --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
+build() {
+    cd ${pkgname}-${pkgver}
+    export RUSTUP_TOOLCHAIN=stable
+    export CARGO_TARGET_DIR=target
+    cargo build --frozen --release --all-features
+    tree
+}
+
+check() {
+    cd ${pkgname}-${pkgver}
+    export RUSTUP_TOOLCHAIN=stable
+    cargo test --frozen --all-features
+}
+
+package() {
+    cd ${pkgname}-${pkgver}
+    install -Dm0755 -t "$pkgdir/usr/bin/" "target/release/$_pkgname"
+    install -Dm644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
+}
+
