@@ -7,3 +7,12 @@ post_build_script: |
 update_on:
   - source: github
     github: yhadevol/Assexon
+repo_depends:
+  - perl-bioperl
+  - perl-sys-info
+  - perl-parallel-forkmanager
+  - trimgalore
+  - cutadapt
+  - usearch
+  - sga
+  - exonerate
