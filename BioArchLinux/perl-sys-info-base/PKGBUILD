@@ -2,7 +2,7 @@
 pkgname=perl-sys-info-base
 _cpanname=Sys-Info-Base
 pkgver=0.7810
-pkgrel=0
+pkgrel=1
 pkgdesc="Includes some common methods"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
