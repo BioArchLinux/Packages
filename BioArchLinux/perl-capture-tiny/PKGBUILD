@@ -2,7 +2,7 @@
 pkgname=perl-capture-tiny
 _cpanname=Capture-Tiny
 pkgver=0.50
-pkgrel=1
+pkgrel=2
 pkgdesc="Capture STDOUT and STDERR from Perl, XS or external programs"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
