@@ -1,0 +1,37 @@
+# Maintainer: Guoyi ZHang <myname at malacology dot net>
+
+pkgname=sga
+pkgver=0.10.15
+pkgrel=0
+pkgdesc="de novo sequence assembler using string graphs https://doi.org/10.1101/gr.126953.111"
+arch=("x86_64")
+url="https://github.com/jts/sga"
+license=("GPL-3.0-or-later")
+depends=("sparsehash" "zlib" "bamtools" "jemalloc" "glibc" "libgcc" "libstdc++" "perl")
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/v$pkgver.tar.gz"
+	"bool.patch::https://github.com/jts/sga/compare/master...starsareintherose:sga:master.patch"
+	"umamb.patch::https://github.com/starsareintherose/sga/commit/aa9d727a9a4924506fe3514af63daf3b07ce09ea.patch")
+sha512sums=('664ae3b7a8983ac43ddff1e54e3ab7b663e0b24ebaea88642993c1eefd6c6aae9c3f49673306a9d8697b03cc517afecf35016c00ea12d740928a2d096e9f2843'
+            'd623b4e47c53645be4c78bca3299a74d9a8c006cc9b7bde1d16d7bf79d199bc4c460bdd2cbe233ac31dd6ad44444393203ddf7c70c7c2a9787b24fb14eb9a264'
+            '04532e2cf5ff624a9ebca64a73969ab6c52d7f89ac444d91ecc30624870c596d282646e78ee7d25c13f297fe223d68cf0e7c5392245915cf1e2105866ea7351f')
+
+prepare() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  patch -p1 -i "${srcdir}/bool.patch"
+  patch -p1 -i "${srcdir}/umamb.patch"  
+  cd src
+  sed -i 's/-std=c++98/-std=c++11/g' configure.ac
+
+}
+
+build() {
+  cd "${pkgname}-${pkgver}"/src
+  ./autogen.sh
+  ./configure --prefix=/usr --with-sparsehash=/usr  --with-bamtools=/usr --with-jemalloc=/usr 
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"/src
+  make DESTDIR="${pkgdir}" install
+}
