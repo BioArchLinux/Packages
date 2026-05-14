@@ -2,7 +2,7 @@
 pkgname=perl-test-sys-info
 _cpanname=Test-Sys-Info
 pkgver=0.23
-pkgrel=0
+pkgrel=1
 pkgdesc="a centralized test suite for Sys::Info Drivers"
 arch=('any')
 url="https://metacpan.org/release/$_cpanname"
