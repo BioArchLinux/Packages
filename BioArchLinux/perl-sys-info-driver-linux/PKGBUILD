@@ -1,0 +1,42 @@
+# Maintainer: Your Name <your-email@address.com>
+pkgname=perl-sys-info-driver-linux
+_cpanname=Sys-Info-Driver-Linux
+pkgver=0.7911
+pkgrel=0
+pkgdesc="This is the main module in the Linux driver collection."
+arch=('any')
+url="https://metacpan.org/release/$_cpanname"
+license=('Artistic-1.0')
+depends=('perl-sys-info-base' 'perl-config-general' 'perl-unix-processors')
+checkdepends=('perl-test-sys-info')
+options=('!emptydirs')
+source=("https://cpan.metacpan.org/authors/id/B/BU/BURAK/$_cpanname-$pkgver.tar.gz")
+sha256sums=('d59f752307621e00e7e0b68b67968e387055bc99e3fbd805726f5e7ac4f3cc48')
+_distdir="${_cpanname}-${pkgver}"
+
+build() {
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor DESTDIR='$pkgdir'"     \
+      PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$srcdir/$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+  )
+}
+
+check() {
+  cd "$srcdir/$_distdir"
+  ( export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    make test
+  )
+}
+
+package() {
+  cd "$srcdir/$_distdir"
+  make install
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}
+
