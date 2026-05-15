@@ -2,7 +2,7 @@
 
 pkgname=phyluce
 pkgver=1.7.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Software for assembling and analyzing genomic data from ultraconserved elements (UCEs)"
 arch=('any')
 url="https://github.com/faircloth-lab/phyluce"
