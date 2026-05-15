@@ -31,8 +31,22 @@ b2sums=('1587346c216a6265a262944581bb7618c91027e1872d76b694f871c04b5c208c69c726f
         '4c99b48a72cc921caa071d25f37380ea09878924d5b00c403bf00ca065e28a2d4e4304d85a2da4b6dc924532fa16f178fc8f3ec7c3b0c37f831f203b977c4117')
 
 prepare() {
-  # fix build with system libraries
-  patch -Np1 -d TileDB < system-libs.patch
+  cd TileDB
+
+  sed -i 's/\${TILEDB_CAPNPROTO_VERSION} EXACT/\${TILEDB_CAPNPROTO_VERSION} REQUIRED/' cmake/Modules/FindCapnp_EP.cmake
+
+  sed -i 's|find_file(libmagic_DICTIONARY magic.mgc|find_file(libmagic_DICTIONARY magic.mgc PATHS /usr/share/file/misc|' cmake/Modules/FindMagic_EP.cmake
+  sed -i 's/if(NOT TILEDB_LIBMAGIC_EP_BUILT)/if(false)/' cmake/Modules/FindMagic_EP.cmake
+
+  sed -i 's/DEPENDS "${MGC_GZIPPED_BIN_INPUT_FILE}"/DEPENDS "${MGC_GZIPPED_BIN_INPUT_FILE}" update-embedded-magic-data/' tiledb/CMakeLists.txt
+  sed -i 's|< "${libmagic_DICTIONARY}"|< /usr/share/file/misc/magic.mgc|' tiledb/CMakeLists.txt
+  sed -i 's/lz4::lz4/LZ4::lz4_shared/g' tiledb/CMakeLists.txt
+  
+  sed -i '/Re-generate tiledb-rest.capnp/!b;n;a \  add_dependencies(TILEDB_CORE_OBJECTS update-serialization)' tiledb/CMakeLists.txt
+
+  sed -i 's/lz4::lz4/LZ4::lz4_shared/g' tiledb/sm/compressors/CMakeLists.txt
+
+  sed -i '1i #include <algorithm>' tiledb/sm/filesystem/posix.cc
 }
 
 build() {
