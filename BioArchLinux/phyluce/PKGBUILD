@@ -1,0 +1,52 @@
+# Maintainer: Guoyi Zhang <kuoi at archlinux dot org> 
+
+pkgname=phyluce
+pkgver=1.7.3
+pkgrel=1
+pkgdesc="Software for assembling and analyzing genomic data from ultraconserved elements (UCEs)"
+arch=('any')
+url="https://github.com/faircloth-lab/phyluce"
+license=('BSD-3-Clause')
+depends=(
+
+    #'perl'
+    #'zstd' 'zlib' 'xz' 'readline' 'gsl' 'ncurses' 'icu' 'lzo' 
+    # 'wget' # double check
+    # 'c-ares'
+    # 'sqlite' 'alsa-lib' 'openmpi' 'openmp' 'openssl' 'java-runtime'
+    # 'tk' 'cairo'
+
+#'python-zipp' 'python-yaml' 'python-wrapt' 'python-wheel' 'python-urllib3' 'python-typing_extensions' 'python-traitlets' 'python-toposort' 'python-toml' 'python-six' 'python-smmap' 'python-rich' 'python-requests''python-pytz' 'python-numpy' 'python-pandas' 'python-more-itertools' 'python-psutil' 'python-colorama' 'python-idna' 'python-jupyter-core' 'python-gitpython' 'python-pyopenssl' 'python-pyparsing' 'python-pysocks' 'python-dateutil' 'python-configargparse' 
+
+    'python-zipp' 'python-yaml' 'python-wrapt' 'python-wheel' 'python-toposort' 'python-toml' 'python-smmap' 'python-rich' 'python-requests' 'python-pandas' 'python-more-itertools' 'python-psutil' 'python-colorama' 'python-jupyter-core' 'python-gitpython' 'python-pyopenssl' 'python-pyparsing' 'python-pysocks' 'python-configargparse' 'python-biopython' 'python-bx' 'python-dendropy' 
+
+    'python-biopython' 'python-bx' 'python-dendropy' 'python-future'
+
+    'velvet' 'trimmomatic' 'trimal' 'spades' 'seqtk' 'samtools' 'raxml-ng' 'abyss' 'bcftools' 'bedtools' 'bwa' 'gblocks' 'htslib' 'lastz' 'mafft' 'muscle' 'pilon' 'illumiprocessor'
+
+    'snakemake'
+    
+)
+makedepends=('python-setuptools' 'make')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/faircloth-lab/phyluce/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=('SKIP') 
+
+build() {
+    cd "$srcdir/$pkgname-$pkgver"
+    python setup.py build
+}
+
+package() {
+    cd "$pkgname-$pkgver"
+    python setup.py install --root="$pkgdir" --optimize=1 --skip-build
+
+    if [ -d "$pkgdir/usr/phyluce" ]; then
+        install -dm755 "$pkgdir/usr/share"
+        mv "$pkgdir/usr/phyluce" "$pkgdir/usr/share/phyluce"
+    fi
+
+    rm -rf "$pkgdir/usr/share/phyluce/tests"
+    rm -rf "$pkgdir/usr/lib/python"*/site-packages/phyluce/tests
+
+    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
