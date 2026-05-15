@@ -1,0 +1,55 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=ellmer
+_pkgver=0.4.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Chat with Large Language Models'
+arch=(any)
+url="https://ellmer.tidyverse.org"
+license=('MIT')
+depends=(
+  r-cli
+  r-coro
+  r-glue
+  r-httr2
+  r-jsonlite
+  r-later
+  r-lifecycle
+  r-promises
+  r-r6
+  r-rlang
+  r-s7
+  r-tibble
+  r-vctrs
+)
+optdepends=(
+  r-curl
+  r-gargle
+  r-gitcreds
+  r-jose
+  r-knitr
+  r-magick
+  r-openssl
+  r-otel
+  r-paws.common
+  r-png
+  r-rmarkdown
+  r-shiny
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a11255f800934e0d34d4b0ea64f75350')
+b2sums=('912327f303eb93919968d62420f456cc090163905629bab3a5cc90edd8f2066581f36113fe2b63d7d058ad0d442d0d7be367f17e59241df01c678eea4c22499d')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
