@@ -13,7 +13,7 @@ url='https://www.biologiaevolutiva.org/jcastresana/Gblocks.html'
 arch=('x86_64')
 license=('unknown')
 depends=('glibc')
-source=("https://molevol-ibe.csic.es/${_pkgname}/${_pkgname}_${pkgver}_Linux.tar.hz")
+source=("https://molevol-ibe.csic.es/${_pkgname}/${_pkgname}_${pkgver}_Linux.tar.gz")
 sha256sums=('563658f03cc5e76234a8aa705bdc149398defec813d3a0c172b5f94c06c880dc')
 package() {
   install -Dm755 ${_pkgname}_$pkgver/$_pkgname "${pkgdir}/usr/bin/${_pkgname}"
