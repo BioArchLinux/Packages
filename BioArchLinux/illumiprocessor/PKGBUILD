@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <kuoi at bioarchlinux dot org>
 pkgname=illumiprocessor
 pkgver=2.10
-pkgrel=0
+pkgrel=1
 pkgdesc="pre-process illumina reads"
 arch=('any')
 url="https://github.com/faircloth-lab/illumiprocessor"
