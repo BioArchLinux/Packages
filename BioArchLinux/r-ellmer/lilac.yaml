@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+pre_build: lilac_r_utils.r_pre_build
+
+repo_depends:
+  - r-cli
+  - r-coro
+  - r-glue
+  - r-httr2
+  - r-jsonlite
+  - r-later
+  - r-lifecycle
+  - r-promises
+  - r-r6
+  - r-rlang
+  - r-s7
+  - r-tibble
+  - r-vctrs
+
+update_on:
+  - source: rpkgs
+    pkg: ellmer
+    md5: true
