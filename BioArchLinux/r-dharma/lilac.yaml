@@ -7,7 +7,9 @@ repo_depends:
 - r-gap
 - r-lme4
 - r-lmtest
+- r-pbkrtest
 - r-qgam
+- r-sandwich
 repo_makedepends:
 - r-glmmadaptive
 - r-glmmtmb

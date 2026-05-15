@@ -14,7 +14,9 @@ depends=(
   r-gap
   r-lme4
   r-lmtest
+  r-pbkrtest
   r-qgam
+  r-sandwich
 )
 checkdepends=(
   r-glmmadaptive
