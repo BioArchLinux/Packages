@@ -1,0 +1,23 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+pkgname=pilon
+pkgver=1.24
+pkgrel=0
+pkgdesc="an automated genome assembly improvement and variant detection tool"
+arch=('any')
+url="https://github.com/broadinstitute/pilon"
+license=('GPL-2.0-or-later')
+depends=('java-runtime=11')
+makedepends=('sbt' 'java-environment=11')
+source=(${url}/archive/refs/tags/v${pkgver}.tar.gz)
+sha256sums=('561775cd9fcc22faf3029a3885eedc147912d85e5eb9116de1a5ef2a41f9a027')
+build() {
+  cd "$pkgname-$pkgver"
+  sbt compile
+  sbt package 
+}
+
+
+package(){
+  cd "$pkgname-$pkgver"
+  install -Dm755 target/scala-*/$pkgname*.jar $pkgdir/usr/java/$pkgname.jar
+}
