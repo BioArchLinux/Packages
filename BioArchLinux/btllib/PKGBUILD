@@ -14,6 +14,14 @@ source=("${pkgname}-${pkgver}.tar.gz::${url}/releases/download/v${pkgver}/btllib
 sha256sums=('118a9f8d6445a618178bfbec40d121bbe03014e767261522148f642686090c76')
 options=('!strip')
 
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+  
+  # fix sdsl-lite 
+  sed -i 's/tree.m_select1/tree.m_bv_select1/g' subprojects/sdsl-lite/include/sdsl/louds_tree.hpp
+  sed -i 's/tree.m_select0/tree.m_bv_select0/g' subprojects/sdsl-lite/include/sdsl/louds_tree.hpp
+}
+
 build() {
     cd "$srcdir/$pkgname-$pkgver"
     export CXXFLAGS="${CXXFLAGS} -Wno-ignored-qualifiers"
