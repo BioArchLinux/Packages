@@ -28,11 +28,14 @@ depends=(
     
 )
 makedepends=('python-setuptools' 'make')
-source=("$pkgname-$pkgver.tar.gz::https://github.com/faircloth-lab/phyluce/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('931fd512730bb101266b27728576df00277858d256e1ab30d64b474588362e11')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/faircloth-lab/phyluce/archive/refs/tags/v${pkgver}.tar.gz"
+	"py134-half.patch::https://github.com/faircloth-lab/phyluce/pull/382.patch")
+sha256sums=('931fd512730bb101266b27728576df00277858d256e1ab30d64b474588362e11'
+            'e202f4b2bd512303d0ea4dc47996ed7c5e93573b65cfc894f7ff9c6e4b4ddb9e')
 
 prepare() {
     cd "$pkgname-$pkgver"
+    patch -p1 -i "$srcdir/py134-half.patch"
     # fix the rU problem 
     find . -type f -exec sed -i "s/'rU'/'r'/g; s/\"rU\"/\"r\"/g" {} +
 }
