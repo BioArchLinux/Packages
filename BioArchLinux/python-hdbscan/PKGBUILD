@@ -5,8 +5,8 @@ pkgname="python-hdbscan"
 pkgdesc="Hierarchical Density-Based Spatial Clustering of Applications with Noise"
 url="http://github.com/scikit-learn-contrib/hdbscan"
 
-pkgver=0.8.42
-pkgrel=1
+pkgver=0.8.43
+pkgrel=0
 
 arch=("x86_64")
 license=("BSD-3-Clause")
@@ -20,20 +20,27 @@ makedepends=(
     "git"
 )
 
+checkdepends=(
+    "python-pytest"
+)
+
 depends=(
+    "glibc"
     "python"
     "python-numpy"
     "python-scipy"
     "python-scikit-learn"
     "python-joblib"
     "python-six"
+    "python-matplotlib"
+    "python-pandas"
 )
 
 _name=${pkgname#python-}
 _tag=release-${pkgver}
 
 source=("${_name}::git+https://github.com/scikit-learn-contrib/hdbscan.git#tag=${_tag}")
-sha256sums=('4a18b309b4b82af86622a50ad2816f123fd2f69caacfb1d6e51317f30fc30b5d')
+sha256sums=('1d89b6e595bc9051c6dee85c37a83e3e3c87ed2926c7db7377d5b218226899c2')
 
 prepare() {
     git -C "${srcdir}/${_name}" clean -dfx
@@ -44,10 +51,17 @@ build() {
     python -m build --wheel --no-isolation
 }
 
+check() {
+    cd "${srcdir}/${_name}"
+    local _pyver=$(python -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')
+    cd build/lib.linux-*
+    pytest
+}
+
 package() {
     cd "${srcdir}"/${_name}
     python -m installer --destdir="$pkgdir" dist/*.whl
-    rm "$pkgdir"/usr/dist_metrics.pxd
+    rm -rf "$pkgdir"/usr/dist_metrics.pxd
 
     install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
