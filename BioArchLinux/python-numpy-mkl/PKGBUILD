@@ -13,7 +13,7 @@
 # Adapted to mkl by Simone Riva
 
 pkgname=python-numpy-mkl
-pkgver=2.4.4
+pkgver=2.4.5
 pkgrel=1
 pkgdesc="Scientific tools for Python, compiled with Intel MKL"
 arch=(x86_64)
@@ -25,7 +25,7 @@ depends=(python intel-oneapi-mkl)
 makedepends=(python-build python-installer meson-python python-setuptools cython gcc-fortran procps-ng)
 checkdepends=(python-pytest python-hypothesis)
 source=("https://github.com/numpy/numpy/releases/download/v$pkgver/numpy-$pkgver.tar.gz")
-sha512sums=('7abec48faf957449248194683aaf2d97c2424ab9ab22cfa6e6676e79185da4ad971839f24b73c8576e582f91e7d941a8fc2b1550ee84b26d8ee6273d1009deee')
+sha512sums=('f490da5549070afe74d729aef5dd9af5dfd2f0e40f40ae077aa67716ed6131116e82ef38a8153d78e6aff951bca3f0f519e02d53b796a8a20e886364c4156a58')
 
 prepare() {
   sed -i 's/meson-python>=0.15.0,<0.16.0/meson-python>=0.15.0/' numpy-$pkgver/pyproject.toml
