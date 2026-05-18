@@ -2,8 +2,10 @@ build_prefix: extra-x86_64
 maintainers:
   - github: bshor
     email: boris@bshor.com
-pre_build: lilac_r_utils.r_pre_build
-
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
 repo_depends:
   - r-cli
   - r-coro
@@ -18,8 +20,9 @@ repo_depends:
   - r-s7
   - r-tibble
   - r-vctrs
-
 update_on:
   - source: rpkgs
     pkg: ellmer
+    repo: cran
     md5: true
+  - alias: r
