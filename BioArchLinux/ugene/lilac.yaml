@@ -9,7 +9,7 @@ post_build_script: |
   git_pkgbuild_commit()
   update_aur_repo()
 repo_depends:
-  - qt5-networkauth
+  - qt5-websockets
 update_on:
   - source: github
     github: ugeneunipro/ugene
