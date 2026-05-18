@@ -4,7 +4,7 @@ _pkgname=tidycensus
 _pkgver=1.7.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Load US Census Boundary and Attribute Data as 'tidyverse' and 'sf'-Ready Data Frames"
 arch=(any)
 url="https://walker-data.com/tidycensus/"
@@ -29,6 +29,7 @@ depends=(
 )
 optdepends=(
   r-ggplot2
+  r-srvyr
   r-survey
   r-terra
 )
