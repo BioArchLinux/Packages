@@ -22,7 +22,7 @@ repo_depends:
   - r-vctrs
 update_on:
   - source: rpkgs
-    pkg: ellmer
+    pkgname: ellmer
     repo: cran
     md5: true
   - alias: r
