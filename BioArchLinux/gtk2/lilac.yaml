@@ -7,6 +7,6 @@ pre_build_script: |
 post_build_script: |
   git_pkgbuild_commit()
 update_on:
-  - source: git
-    git: "https://gitlab.gnome.org/GNOME/gtk.git
-    include_regex: '2\.24\.\d+'
+  - source: aur
+    aur: gtk2 
+    strip_release: true
