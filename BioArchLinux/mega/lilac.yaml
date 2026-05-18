@@ -13,3 +13,4 @@ update_on:
     regex: 'version (\d+.\d+.\d+)'
 repo_depends:
   - gconf
+  - gtk2
