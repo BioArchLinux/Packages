@@ -2,8 +2,8 @@
 
 pkgname=python-taxtastic
 _name=taxtastic
-pkgver=1.0.0
-pkgrel=0
+pkgver=1.0.1
+pkgrel=1
 pkgdesc='Build and maintain reference trees, reference alignments, profiles, and associated taxonomic information'
 arch=('any')
 url="https://fhcrc.github.io/taxtastic/index.html"
@@ -22,7 +22,7 @@ makedepends=(
 )
 options=(!emptydirs)
 source=("${_name}::git+https://github.com/fhcrc/taxtastic.git#tag=v${pkgver}")
-b2sums=('323060529da11e99def0d20c7e85f969502f809036817f25db4285092e87b2180b8364526662de5f2267e85caa596cb9b407f8aeaf38d466d0171a1b2ea4186d')
+b2sums=('aa0fd48e537266d9e34b7b98a27f79bb73669eb32cb48195459bab314feb7e94db79321e763992c8d57a9f3cc3ac521972c4d93f98221913bba80322c2642b04')
 
 build() {
   cd "$srcdir/$_name"
