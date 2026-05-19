@@ -3,7 +3,7 @@
 _pkgname=ellmer
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
-pkgver=None
+pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='Chat with Large Language Models'
 arch=(any)
