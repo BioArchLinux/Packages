@@ -3,7 +3,7 @@ _pkgname=leaflet.providers
 _pkgver=3.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Leaflet Providers"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -13,6 +13,7 @@ depends=(
 )
 optdepends=(
   r-jsonlite
+  r-testthat
   r-v8
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
