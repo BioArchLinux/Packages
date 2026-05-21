@@ -1,7 +1,7 @@
 # Maintainer: Sylvain POULAIN <sylvain.poulain at giscan dot com>
 pkgname=python-geojson-rewind
 _pkgname=geojson-rewind
-pkgver=1.1.0
+pkgver=1.2.1
 pkgrel=1
 pkgdesc="A Python library for enforcing polygon ring winding order in GeoJSON"
 arch=('any')
@@ -10,7 +10,7 @@ license=('MIT')
 depends=('python-geojson')
 makedepends=('git' 'python-setuptools' 'python-poetry')
 source=("$_pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('1058d1ab0d35ce4231d87a773b777ee7b817817ed21a33c69c686447043f2a0f')
+sha256sums=('0e77b62f1b6a4587a9bfc75d71db9b9a0fc986e76c40b0d856b27496ca384bae')
 
 build() {
   cd "$srcdir/$_pkgname-$pkgver"
