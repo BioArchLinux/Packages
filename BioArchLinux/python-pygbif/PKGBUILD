@@ -1,0 +1,37 @@
+_base=pygbif
+pkgname=python-${_base}
+pkgver=0.6.6
+pkgrel=0
+pkgdesc="Python client for the GBIF API"
+arch=('any')
+url="https://gbif.org"
+license=('MIT')
+depends=(
+python-geomet
+python-appdirs
+python-sphinx_issues
+python-requests-cache
+python-shapely
+python-urllib3
+python-vcrpy
+python-codecov
+python-sphinx_rtd_theme
+python-sphinx
+		)
+makedepends=(python-setuptools)
+
+# options=(!emptydirs)
+source=(https://pypi.org/packages/source/${_base::1}/${_base}/${_base}-${pkgver}.tar.gz)
+sha512sums=('77edc8092bc8900d56a95f813f0d66c1d894726bebfea91cc3edaf2fa62560e06b9ede6fe4c346d65cc01a53587b29cddb65b971a72ba3965514fae45374076d')
+
+build() {
+  cd "${_base}-${pkgver}"
+  python setup.py build
+}
+
+package() {
+  cd "${_base}-${pkgver}"
+  export PYTHONHASHSEED=0
+  PYTHONPYCACHEPREFIX="${PWD}/.cache/cpython/" python setup.py install --prefix=/usr --root="${pkgdir}" --optimize=1 --skip-build
+  install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}

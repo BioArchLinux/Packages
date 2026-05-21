@@ -1,0 +1,16 @@
+maintainers:
+  - github: starsareintherose
+    email: kuoi@bioarchlinux.org
+build_prefix: extra-x86_64
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+  - python-geomet
+  - python-codecov
+  - python-geojson-rewind
+update_on:
+  - source: pypi
+    pypi: pygbif 
+  - alias: python
