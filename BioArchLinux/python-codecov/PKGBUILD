@@ -8,7 +8,7 @@ _pyname=${pkgbase#python-}
 pkgname=("python-${_pyname}")
 #"python-${_pyname}-doc")
 pkgver=2.1.13
-pkgrel=1
+pkgrel=2
 pkgdesc='Report uploader for Codecov'
 arch=('any')
 url="https://codecov.io"
