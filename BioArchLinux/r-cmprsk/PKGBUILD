@@ -3,7 +3,7 @@ _pkgname=cmprsk
 _pkgver=2.2-12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Subdistribution Analysis of Competing Risks"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
