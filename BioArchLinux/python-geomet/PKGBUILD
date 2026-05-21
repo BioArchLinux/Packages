@@ -4,7 +4,7 @@
 _name=geomet
 pkgname=python-geomet
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="GeoMet - Convert GeoJSON to WKT/WKB, and vice versa."
 arch=('any')
 url="https://github.com/geomet/geomet"
