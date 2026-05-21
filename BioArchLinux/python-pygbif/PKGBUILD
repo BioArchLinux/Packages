@@ -8,6 +8,7 @@ url="https://gbif.org"
 license=('MIT')
 depends=(
 python-geomet
+python-geojson-rewind
 python-appdirs
 python-sphinx-issues
 python-requests-cache
