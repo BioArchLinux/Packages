@@ -9,7 +9,7 @@ license=('MIT')
 depends=(
 python-geomet
 python-appdirs
-python-sphinx_issues
+python-sphinx-issues
 python-requests-cache
 python-shapely
 python-urllib3
