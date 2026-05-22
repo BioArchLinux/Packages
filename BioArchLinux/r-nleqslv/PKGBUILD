@@ -14,6 +14,9 @@ depends=(
   lapack
   r
 )
+optdepends=(
+  r-testthat
+)
 makedepends=(
   gcc-fortran
 )
