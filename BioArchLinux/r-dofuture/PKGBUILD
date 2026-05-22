@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=doFuture
-_pkgver=1.2.1
+_pkgver=1.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Use Foreach to Parallelize via the Future Framework"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -24,8 +24,8 @@ optdepends=(
   r-r.rsp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8ad992008c847c4de3564801702d8dc3')
-b2sums=('61ea33448bfd6531b22b92b68338f0c2673d3ebf62f9ad23628143260cf12396f08d673e28e13291993f97adf298987466e2f2bed76609a95497c11ce0b568dc')
+md5sums=('1b3f70f07c9a92c15e141a5fda08b2c0')
+b2sums=('877d1738b970875f373b128ebee341fb18f61b9c56f0f1f7df4c011688b3377ce3a5155fbd40b379f5bb60d0bd4a23a2d67c3c77ee7de8e4192c49d51e128784')
 
 build() {
   mkdir build
