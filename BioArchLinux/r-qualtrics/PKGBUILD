@@ -1,0 +1,48 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=qualtRics
+_pkgver=3.2.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Download Qualtrics Survey Data'
+arch=(any)
+url="https://docs.ropensci.org/qualtRics/"
+license=('MIT')
+depends=(
+  r-archive
+  r-cli
+  r-dplyr
+  r-fs
+  r-glue
+  r-httr
+  r-jsonlite
+  r-lifecycle
+  r-lubridate
+  r-purrr
+  r-readr
+  r-rlang
+  r-sjlabelled
+  r-stringr
+  r-tibble
+  r-tidyr
+  r-withr
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('8ff3ba7d4c238ff2b2cf8dff1d2af59a')
+b2sums=('3e3e657cff778207824a3a3bdecea55b63885e80bde1e2567e99b96abdbb166958c14e89eb67df4c310db587f51ad2e16aa6c15f77dfe05dae683eeed17fad8d')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
