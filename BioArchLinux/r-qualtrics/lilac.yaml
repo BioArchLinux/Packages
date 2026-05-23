@@ -1,0 +1,28 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-archive
+  - r-cli
+  - r-dplyr
+  - r-fs
+  - r-glue
+  - r-httr
+  - r-jsonlite
+  - r-lifecycle
+  - r-lubridate
+  - r-purrr
+  - r-readr
+  - r-rlang
+  - r-sjlabelled
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+update_on:
+  - source: rpkgs
+    pkgname: qualtRics
+    repo: cran
+    md5: true
+  - alias: r
