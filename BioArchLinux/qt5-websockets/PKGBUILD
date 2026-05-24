@@ -4,7 +4,7 @@
 pkgname=qt5-websockets
 _basever=5.15.18
 pkgver=5.15.18+kde+r2
-pkgrel=2
+pkgrel=3
 _commit=0f910acb737cefc889ce1088fc60d15bc18efe9c
 arch=('x86_64')
 url='https://www.qt.io'
