@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='Colors for all'
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://cols4all.github.io/cols4all-R/"
 license=('GPL-3.0-only')
 depends=(
   r-abind

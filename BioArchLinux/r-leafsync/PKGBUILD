@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='Sync Multiple Leaflet Web Maps'
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://github.com/r-spatial/leafsync"
 license=('MIT')
 depends=(
   r-htmltools

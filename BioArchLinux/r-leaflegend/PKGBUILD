@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='Add Customized Legends to Leaflet Maps'
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://leaflegend.delveds.com"
 license=('MIT')
 depends=(
   r-base64enc

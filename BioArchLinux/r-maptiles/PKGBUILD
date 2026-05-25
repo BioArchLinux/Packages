@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='Download and Display Map Tiles'
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://github.com/riatelab/maptiles"
 license=('GPL-3.0-only')
 depends=(
   r-curl

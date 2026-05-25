@@ -7,7 +7,7 @@ pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='WebGl Rendering for Leaflet Maps'
 arch=(any)
-url="https://cran.r-project.org/package=${_pkgname}"
+url="https://github.com/r-spatial/leafgl"
 license=('MIT')
 depends=(
   r-htmltools
