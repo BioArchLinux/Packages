@@ -1,0 +1,31 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-classint
+  - r-cli
+  - r-cols4all
+  - r-data.table
+  - r-htmltools
+  - r-htmlwidgets
+  - r-base64enc
+  - r-leafem
+  - r-leafgl
+  - r-leaflegend
+  - r-leaflet
+  - r-leafsync
+  - r-maptiles
+  - r-rlang
+  - r-s2
+  - r-servr
+  - r-sf
+  - r-stars
+  - r-tmaptools
+  - r-units
+update_on:
+  - source: rpkgs
+    pkgname: tmap
+    repo: cran
+    md5: true
+  - alias: r

@@ -1,0 +1,25 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=yyjsonr
+_pkgver=0.1.22
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Fast JSON Parser and Generator'
+arch=('x86_64')
+url="https://github.com/coolbutuseless/yyjsonr"
+license=('MIT')
+depends=(r)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('caed9391d911cdc1368e0845545aa06a')
+b2sums=('07a5003a22c5241540bd42a95bb3a5be5279fa734e136237ff7acf91e0490cfeedd9efb793bd0bf4ae3a21c67cfbaf3a8cb180ef2ea5893f89c9d5c9f0a188e4')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}

@@ -1,0 +1,52 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tmap
+_pkgver=4.3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Thematic Maps'
+arch=(any)
+url="https://github.com/r-tmap/tmap"
+license=('GPL-3.0-only')
+depends=(
+  r-classint
+  r-cli
+  r-cols4all
+  r-data.table
+  r-htmltools
+  r-htmlwidgets
+  r-base64enc
+  r-leafem
+  r-leafgl
+  r-leaflegend
+  r-leaflet
+  r-leafsync
+  r-maptiles
+  r-rlang
+  r-s2
+  r-servr
+  r-sf
+  r-stars
+  r-tmaptools
+  r-units
+)
+optdepends=(
+  r-ggplot2
+  r-knitr
+  r-rmarkdown
+  r-shiny
+  r-terra
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('408db355e0ad26676a43d31eb96765d5')
+b2sums=('1b52c945e8e745939a0796fcc27a8c4bb864fe1cd2804a45234378bf4249f7d519c25f2ff802f673c70451aa84a44d6ef8a4692dcdd78401582fefa9378127ed')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
