@@ -1,0 +1,30 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-cli
+  - r-dplyr
+  - r-fastmap
+  - r-fs
+  - r-future.apply
+  - r-ggplot2
+  - r-ggrepel
+  - r-magrittr
+  - r-matrixnormal
+  - r-pgdraw
+  - r-purrr
+  - r-quanteda
+  - r-rcpp
+  - r-rcppeigen
+  - r-rlang
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+update_on:
+  - source: rpkgs
+    pkgname: keyATM
+    repo: cran
+    md5: true
+  - alias: r

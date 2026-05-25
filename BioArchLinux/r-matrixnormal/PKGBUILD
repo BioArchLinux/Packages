@@ -1,0 +1,26 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=matrixNormal
+_pkgver=0.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='The Matrix Normal Distribution'
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-only')
+depends=(
+  r-mvtnorm
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('004ff646354de6ef747f510127009e1e')
+b2sums=('0018d1a69b3c7ab04d2987fb6d3494a08fda4b97450f3ffbaf42d89ebb2016a81e02aa08a415ddae909b0f31ac54f0cf739ab76e07411fa561e96a6291749d78')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
