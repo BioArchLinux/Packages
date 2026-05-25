@@ -4,7 +4,7 @@ _pkgname=ellmer
 _pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 epoch=1
 pkgdesc='Chat with Large Language Models'
 arch=(any)
@@ -26,6 +26,7 @@ depends=(
   r-vctrs
 )
 optdepends=(
+  r-connectcreds
   r-curl
   r-gargle
   r-gitcreds
@@ -34,11 +35,14 @@ optdepends=(
   r-magick
   r-openssl
   r-otel
+  r-otelsdk
   r-paws.common
   r-png
   r-rmarkdown
   r-shiny
+  r-shinychat
   r-testthat
+  r-vcr
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
