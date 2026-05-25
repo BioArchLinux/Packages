@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=tidycensus
-_pkgver=1.8.0
+_pkgver=1.8.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -15,7 +15,6 @@ depends=(
   r-httr
   r-jsonlite
   r-purrr
-  r-rappdirs
   r-readr
   r-rlang
   r-rvest
@@ -36,8 +35,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('76b413b8fc297d126d757b8e7fe61226')
-b2sums=('b2510953159b3d4425f22ff63d3b5b7a1dd8f29ec8972d23bb0b5211ac424ff76aa7767e93778cc048429353ce9c1873a480cc899d0db7d4ba27f8e796bf06e0')
+md5sums=('246ffc7af94965a6689c3f0c49138345')
+b2sums=('6d6349340555f87bb93896232ca27c25b70c4b3541c2cff356b53a1224be1ada7927011aed4a165d01368f5344245c3b02091eeb320204f4579a2d8843d4ab04')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
