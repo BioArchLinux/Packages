@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=clipr
-_pkgver=0.8.0
+_pkgver=0.8.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=12
+pkgrel=1
 pkgdesc="Read and Write from the System Clipboard"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -23,8 +23,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('558ddf145114bbc0272e6aed05b8e5fe')
-b2sums=('6b489ff1b8353942a327a550eaf9f1f693d74809515990b4e9dc666d7829532d89f368aeb081413dfb7a1e4aeedbb247c570f3187310078ea8bbf264d9b0bb2d')
+md5sums=('e3618a0611ca2dfbc6475975a163ab6a')
+b2sums=('a9b57d173157cf0635e7101eae8afae341da30ab98176767ffd0093a3911a6b2099c54b3cf07df034b2031a7896795d5188c774f1a1510f0ccf9d3285937c5cb')
 
 build() {
   mkdir build
