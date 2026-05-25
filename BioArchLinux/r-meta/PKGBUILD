@@ -1,21 +1,21 @@
 # Maintainer: Christos Longros <chris.longros@gmail.com>
 _pkgname=meta
-_pkgver=8.3-0
+_pkgver=8.5-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="General Package for Meta-Analysis"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  r-cli
   r-compquadform
   r-dplyr
   r-ggplot2
   r-lme4
   r-magrittr
   r-metabook
-  r-metadat
   r-metafor
   r-purrr
   r-readr
@@ -33,14 +33,17 @@ optdepends=(
   r-ggpubr
   r-gridextra
   r-knitr
+  r-metadat
   r-netmeta
   r-pimeta
+  r-ragg
   r-rmarkdown
   r-robvis
+  r-svglite
   r-writexl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('44bbe9108ed231e5ca36b627b16d9751')
+md5sums=('9c4930d6b5130d035a8d9f83722be80c')
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
