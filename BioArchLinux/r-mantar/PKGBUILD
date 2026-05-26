@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mantar
-_pkgver=0.2.0
+_pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Missingness Alleviation for Network Analysis"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -25,8 +25,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f8c724b2805ab8f36f46d9e9dc6d6298')
-b2sums=('95b28b4dbf422193f7681bb1f97bcb3acb0c0ea0c73a903aac36037a6b3bbaaba263eaba3763c7ee3b887177b3acc55f7d4ea2226311840af5a0c59b08fca74d')
+md5sums=('c9fd768d26cf3bfe5206277143833210')
+b2sums=('d19e36f1a7fca23f5a4668dbb289b0f569afd749fd20a865e1411eb02ec49eab30dfc74a72299b433fd6f0425afcbba3593b124a9888ba8cbf898d5fd52393ec')
 
 build() {
   mkdir build
