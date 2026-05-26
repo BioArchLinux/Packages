@@ -4,7 +4,7 @@ _pkgname=qualtRics
 _pkgver=3.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Download 'Qualtrics' Survey Data"
 arch=(any)
 url="https://docs.ropensci.org/qualtRics/"
@@ -29,9 +29,12 @@ depends=(
   r-withr
 )
 optdepends=(
+  r-covr
   r-knitr
   r-rmarkdown
   r-testthat
+  r-vcr
+  r-webmockr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8ff3ba7d4c238ff2b2cf8dff1d2af59a')
