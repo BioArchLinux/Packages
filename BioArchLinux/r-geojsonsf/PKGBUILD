@@ -6,11 +6,23 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc='GeoJSON to Simple Feature Converter'
-arch=(any)
+arch=('x86_64')
 url="https://github.com/SymbolixAU/geojsonsf"
 license=('MIT')
 depends=(
   r-rcpp
+)
+makedepends=(
+  r-geometries
+  r-jsonify
+  r-rapidjsonr
+  r-sfheaders
+)
+optdepends=(
+  r-covr
+  r-knitr
+  r-rmarkdown
+  r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('47ac88f9ef8a3a99df362eba4d012c95')
