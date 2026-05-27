@@ -1,0 +1,30 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=leafgl
+_pkgver=0.2.4
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="High-Performance 'WebGl' Rendering for Package 'leaflet'"
+arch=(any)
+url="https://github.com/r-spatial/leafgl"
+license=('MIT')
+depends=(
+  r-htmltools
+  r-leaflet
+  r-sf
+  r-yyjsonr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('8b172ffd4f00c38fd6c0dfa5200b6f66')
+b2sums=('a0e9cce14e6cc7af0db9bd0f4b9e41c9bd5247e62c2add4cf72a564cd55965a40377968a043aedca156e873cd8ccea058312c6ba0c8561b492a0208696bfd744')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}

@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-lwgeom
+  - r-sf
+  - r-stars
+  - r-units
+  - r-xml
+update_on:
+  - source: rpkgs
+    pkgname: tmaptools
+    repo: cran
+    md5: true
+  - alias: r
