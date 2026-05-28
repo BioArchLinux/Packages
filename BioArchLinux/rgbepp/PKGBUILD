@@ -14,7 +14,7 @@ source=(https://github.com/starsareintherose/${_pkgname}/archive/refs/tags/${pkg
 sha256sums=('c1bbc6758c3fc800c9268d5295f16b637b494d43e931c02652d1a3c748546ae4')
 build() {
   cd "$_pkgname-$pkgver"
-for dfile in splitfasta.d sortdiamond.d delstop.d deltaxa.d countTaxa.d RGBEPP.d RGBEPP_refmix.d
+for dfile in splitfasta.d sortdiamond.d delstop.d deltaxa.d concataln.d countTaxa.d RGBEPP.d RGBEPP_refmix.d
 do
   ldc -O2 --static $dfile
 done
@@ -23,7 +23,7 @@ done
 
 package(){
   cd "$_pkgname-$pkgver"
-for bin in splitfasta sortdiamond delstop deltaxa countTaxa RGBEPP RGBEPP_refmix sortdiamond
+for bin in splitfasta sortdiamond delstop deltaxa concataln countTaxa RGBEPP RGBEPP_refmix sortdiamond
 do
   install -Dm755 $bin $pkgdir/usr/bin/$bin
 done
