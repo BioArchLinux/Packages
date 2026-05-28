@@ -20,6 +20,7 @@ makedepends=(
 )
 optdepends=(
   r-covr
+  r-jsonify
   r-knitr
   r-rmarkdown
   r-tinytest
