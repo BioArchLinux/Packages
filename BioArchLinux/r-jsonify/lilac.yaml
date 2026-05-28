@@ -3,14 +3,11 @@ maintainers:
   - github: bshor
     email: boris@bshor.com
 repo_depends:
-  - r-abind
-  - r-colorspace
-  - r-png
-  - r-spacesxyz
-  - r-stringdist
+  - r-rapidjsonr
+  - r-rcpp
 update_on:
   - source: rpkgs
-    pkgname: cols4all
+    pkgname: jsonify
     repo: cran
     md5: true
   - alias: r
