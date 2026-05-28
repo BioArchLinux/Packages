@@ -16,6 +16,10 @@ depends=(
   r-sf
   r-terra
 )
+optdepends=(
+  r-covr
+  r-tinytest
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('42f518b029a69dce5f296f2ac8094aca')
 b2sums=('28e9c2e839064e57b12331a30a1b349960fec470906a1a16df6671783a331fb7648708c3473a6f9892aa2d9ae0815e5a4a435d5dd7a16d421f4d9f168a254956')

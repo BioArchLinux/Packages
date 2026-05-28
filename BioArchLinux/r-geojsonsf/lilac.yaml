@@ -3,7 +3,11 @@ maintainers:
   - github: bshor
     email: boris@bshor.com
 repo_depends:
+  - r-geometries
+  - r-jsonify
+  - r-rapidjsonr
   - r-rcpp
+  - r-sfheaders
 update_on:
   - source: rpkgs
     pkgname: geojsonsf

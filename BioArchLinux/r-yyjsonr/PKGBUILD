@@ -9,7 +9,15 @@ pkgdesc='Fast JSON Parser and Generator'
 arch=('x86_64')
 url="https://github.com/coolbutuseless/yyjsonr"
 license=('MIT')
-depends=(r)
+depends=(
+  r
+)
+optdepends=(
+  r-jsonlite
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('caed9391d911cdc1368e0845545aa06a')
 b2sums=('07a5003a22c5241540bd42a95bb3a5be5279fa734e136237ff7acf91e0490cfeedd9efb793bd0bf4ae3a21c67cfbaf3a8cb180ef2ea5893f89c9d5c9f0a188e4')
