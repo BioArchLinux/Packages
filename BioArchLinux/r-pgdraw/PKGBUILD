@@ -1,0 +1,26 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=pgdraw
+_pkgver=1.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='Generate Random Samples from the Polya-Gamma Distribution'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-rcpp
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1e36c651849bf3ff87d8446bebfbe1b3')
+b2sums=('45893c9a316f99de58a014cfcf5697d04f3e8d1675270ee3007a3c7e1b18ecabf7254b7f2181ab9e88bbf93f69645c48d4ad72144ca889a5c814b8381cffc618')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
