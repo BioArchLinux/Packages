@@ -1,0 +1,31 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=spacesXYZ
+_pkgver=1.6-0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="CIE XYZ and some of Its Derived Color Spaces"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-logger
+)
+optdepends=(
+  r-knitr
+  r-microbenchmark
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('3631e6271b379577bcacba50fef33320')
+b2sums=('45bd08cae4fc76e8414f1e16c08ec78da9808bfa1c9cc181b4d227ef3e74971852ecb4ff7150aee02e4290a23d74e2f21c9d825e2645f761d82fe216d23834fa')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
