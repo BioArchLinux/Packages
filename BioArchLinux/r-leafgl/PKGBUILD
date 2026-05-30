@@ -15,6 +15,12 @@ depends=(
   r-sf
   r-yyjsonr
 )
+optdepends=(
+  r-colourvalues
+  r-sp
+  r-shiny
+  r-testthat
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('8b172ffd4f00c38fd6c0dfa5200b6f66')
 b2sums=('a0e9cce14e6cc7af0db9bd0f4b9e41c9bd5247e62c2add4cf72a564cd55965a40377968a043aedca156e873cd8ccea058312c6ba0c8561b492a0208696bfd744')
