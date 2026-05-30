@@ -4,7 +4,7 @@ _pkgname=leafem
 _pkgver=0.2.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="'leaflet' Extensions for 'mapview'"
 arch=(any)
 url="https://github.com/r-spatial/leafem"
@@ -19,6 +19,16 @@ depends=(
   r-png
   r-raster
   r-sf
+)
+optdepends=(
+  r-clipr
+  r-fontawesome
+  r-leafgl
+  r-lwgeom
+  r-mapdeck
+  r-plainview
+  r-stars
+  r-terra
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('57ddfccb5e950f5fc704daa883e8b73a')
