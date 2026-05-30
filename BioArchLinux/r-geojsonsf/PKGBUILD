@@ -4,7 +4,7 @@ _pkgname=geojsonsf
 _pkgver=2.0.5
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc='GeoJSON to Simple Feature Converter'
 arch=('x86_64')
 url="https://github.com/SymbolixAU/geojsonsf"
@@ -25,16 +25,24 @@ optdepends=(
   r-rmarkdown
   r-tinytest
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('47ac88f9ef8a3a99df362eba4d012c95')
-b2sums=('25b31673a1d0df7ba38edf027f67c96b8aa186568ae3a600a4396a697c63f1cd90680aa2026f2b6f154a34d51ca49379a9c46fbcc1f7a22da8e5dbddc6915233')
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+        "fix-rapidjson-value-reference.patch")
+md5sums=('47ac88f9ef8a3a99df362eba4d012c95'
+         '676e5d57df7aac17345a64305cf6a0f4')
+b2sums=('25b31673a1d0df7ba38edf027f67c96b8aa186568ae3a600a4396a697c63f1cd90680aa2026f2b6f154a34d51ca49379a9c46fbcc1f7a22da8e5dbddc6915233'
+        'a2228100466c0e62cc7c4ba43d36fc9487f5971639ff55f00f5ec2eeb74a79f44616573acaba10619b9c1342de1ffc084d45c81b478e3d8e737003a94f174d17')
+
+prepare() {
+  patch -Np1 -i fix-rapidjson-value-reference.patch
+}
 
 build() {
-  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+  mkdir build
+  R CMD INSTALL -l build ${_pkgname}
 }
 
 package() {
   install -dm0755 "${pkgdir}/usr/lib/R/library"
-  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
   install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }

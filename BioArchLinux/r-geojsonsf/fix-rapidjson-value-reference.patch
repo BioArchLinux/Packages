@@ -1,0 +1,10 @@
+diff --git a/geojsonsf/inst/include/geojsonsf/geojson/geojson_properties.hpp b/geojsonsf/inst/include/geojsonsf/geojson/geojson_properties.hpp
+index e83dc53..eab2ca2 100644
+--- a/geojsonsf/inst/include/geojsonsf/geojson/geojson_properties.hpp
++++ b/geojsonsf/inst/include/geojsonsf/geojson/geojson_properties.hpp
+@@ -270 +270 @@ namespace geojsonsf {
+-					Value& v = p.value.GetObject();
++					Value& v = p.value;
+@@ -275 +275 @@ namespace geojsonsf {
+-					Value& v = p.value.GetArray();
++					Value& v = p.value;
