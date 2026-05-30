@@ -4,7 +4,7 @@ _pkgname=yyjsonr
 _pkgver=0.1.22
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast 'JSON', 'NDJSON' and 'GeoJSON' Parser and Generator"
 arch=('x86_64')
 url="https://github.com/coolbutuseless/yyjsonr"
@@ -13,6 +13,7 @@ depends=(
   r
 )
 optdepends=(
+  r-bit64
   r-jsonlite
   r-knitr
   r-rmarkdown
