@@ -4,19 +4,19 @@ _pkgname=tmap
 _pkgver=4.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Thematic Maps'
 arch=(any)
 url="https://github.com/r-tmap/tmap"
 license=('GPL-3.0-only')
 depends=(
+  r-base64enc
   r-classint
   r-cli
   r-cols4all
   r-data.table
   r-htmltools
   r-htmlwidgets
-  r-base64enc
   r-leafem
   r-leafgl
   r-leaflegend
@@ -32,11 +32,19 @@ depends=(
   r-units
 )
 optdepends=(
+  r-av
+  r-colorspace
   r-ggplot2
+  r-gifski
   r-knitr
-  r-rmarkdown
+  r-lobstr
+  r-rstudioapi
+  r-rsvg
   r-shiny
   r-terra
+  r-testthat
+  r-transformr
+  r-widgetframe
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('408db355e0ad26676a43d31eb96765d5')
