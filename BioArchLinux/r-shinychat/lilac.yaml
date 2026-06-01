@@ -1,0 +1,24 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-base64enc
+  - r-bslib
+  - r-cli
+  - r-coro
+  - r-ellmer
+  - r-fastmap
+  - r-htmltools
+  - r-jsonlite
+  - r-lifecycle
+  - r-promises
+  - r-rlang
+  - r-s7
+  - r-shiny
+update_on:
+  - source: rpkgs
+    pkgname: shinychat
+    repo: cran
+    md5: true
+  - alias: r
