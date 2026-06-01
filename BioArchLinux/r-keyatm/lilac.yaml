@@ -16,12 +16,13 @@ repo_depends:
   - r-purrr
   - r-quanteda
   - r-rcpp
-  - r-rcppeigen
   - r-rlang
   - r-stringr
   - r-tibble
   - r-tidyr
   - r-tidyselect
+repo_makedepends:
+  - r-rcppeigen
 update_on:
   - source: rpkgs
     pkgname: keyATM

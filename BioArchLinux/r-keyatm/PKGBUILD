@@ -23,16 +23,17 @@ depends=(
   r-purrr
   r-quanteda
   r-rcpp
-  r-rcppeigen
   r-rlang
   r-stringr
   r-tibble
   r-tidyr
   r-tidyselect
 )
+makedepends=(
+  r-rcppeigen
+)
 optdepends=(
-  r-knitr
-  r-rmarkdown
+  r-readtext
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
