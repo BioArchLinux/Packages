@@ -2,10 +2,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=s2
-_pkgver=1.1.9
+_pkgver=1.1.11
 pkgname=r-${_pkgname,,}
-pkgver=1.1.9
-pkgrel=2
+pkgver=1.1.11
+pkgrel=1
 pkgdesc='Spherical Geometry Operators Using the S2 Geometry Library'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,7 +24,7 @@ optdepends=(
 )
 makedepends=('cmake')
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('4dcd2bff738be5a89b925fed29acb6e224e0f514b4530dc9987a0a72c5a99b55')
+sha256sums=('5fa4abaf21a8c4b34e811f75c0c5a13044afc5704f1b04af88a0e0bd541f9b5b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
