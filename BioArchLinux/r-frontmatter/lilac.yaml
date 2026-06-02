@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-cpp11
+  - r-rlang
+  - r-tomledit
+  - r-yaml12
+update_on:
+  - source: rpkgs
+    pkgname: frontmatter
+    repo: cran
+    md5: true
+  - alias: r

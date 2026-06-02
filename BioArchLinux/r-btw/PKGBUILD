@@ -1,0 +1,72 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=btw
+_pkgver=1.2.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc='A Toolkit for Connecting R and Large Language Models'
+arch=(any)
+url="https://github.com/posit-dev/btw"
+license=('MIT')
+depends=(
+  r-brio
+  r-cli
+  r-clipr
+  r-dplyr
+  r-ellmer
+  r-frontmatter
+  r-fs
+  r-jsonlite
+  r-lifecycle
+  r-mcptools
+  r-pkgsearch
+  r-rlang
+  r-rmarkdown
+  r-rstudioapi
+  r-s7
+  r-sessioninfo
+  r-skimr
+  r-withr
+  r-xml2
+)
+optdepends=(
+  r-bslib
+  r-callr
+  r-chromote
+  r-covr
+  r-dbi
+  r-devtools
+  r-diffviewer
+  r-duckdb
+  r-evaluate
+  r-fansi
+  r-gert
+  r-gh
+  r-htmltools
+  r-pandoc
+  r-pkgload
+  r-processx
+  r-ragg
+  r-rapp
+  r-roxygen2
+  r-shiny
+  r-shinychat
+  r-testthat
+  r-tibble
+  r-usethis
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('e611c3dcfaa9a8bd6918cb20f02f570a')
+b2sums=('fbe941ab27c96a504de5fd104e1740cf8115005a5782184e806428f59a22ced70e2c88b0f7785057c108b7d5451c378b809e3c346e9376b1cda1e05c2e1fe790')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
