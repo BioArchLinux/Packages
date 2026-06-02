@@ -1,0 +1,47 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=shinychat
+_pkgver=0.4.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Chat UI Component for 'shiny'"
+arch=(any)
+url="https://github.com/posit-dev/shinychat"
+license=('MIT')
+depends=(
+  r-base64enc
+  r-bslib
+  r-cli
+  r-coro
+  r-ellmer
+  r-fastmap
+  r-htmltools
+  r-jsonlite
+  r-lifecycle
+  r-promises
+  r-rlang
+  r-s7
+  r-shiny
+)
+optdepends=(
+  r-covr
+  r-knitr
+  r-later
+  r-r6
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('7879149128a3de496f25a98c251ab06c')
+b2sums=('fb1c0c5f420365a6a3ac2a89fe05a7f0dcb3a71067b398079a838ccf685d5ba6e7b6a06fc215f86aafd7b182ab08a2470ead678c24cb718fbbabf848b3f934f0')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
