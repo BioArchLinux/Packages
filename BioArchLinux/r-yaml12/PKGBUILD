@@ -1,0 +1,40 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=yaml12
+_pkgver=0.1.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Fast 'YAML' 1.2 Parser and Formatter"
+arch=('x86_64')
+url="https://github.com/posit-dev/r-yaml12"
+license=('MIT')
+depends=(
+  r
+)
+makedepends=(
+  rust
+  xz
+)
+optdepends=(
+  r-jsonlite
+  r-knitr
+  r-rmarkdown
+  r-testthat
+  r-waldo
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b8267aa53b360269fab732d8d2c04e90')
+b2sums=('93f7e8dbd66705de6afc8ba70f3b0f37b7d710d3267c42254efd7021689c6dcde7afb251459149a64fbb5673be7a9a74f2af91677e72f5118d9e40d3e5c6dd63')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}

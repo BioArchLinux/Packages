@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-cli
+  - r-ellmer
+  - r-httpuv
+  - r-httr2
+  - r-jsonlite
+  - r-nanonext
+  - r-processx
+  - r-promises
+  - r-rlang
+update_on:
+  - source: rpkgs
+    pkgname: mcptools
+    repo: cran
+    md5: true
+  - alias: r

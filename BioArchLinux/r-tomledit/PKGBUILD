@@ -1,0 +1,31 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tomledit
+_pkgver=0.1.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Parse, Read, and Edit 'TOML'"
+arch=('x86_64')
+url="https://github.com/extendr/tomledit"
+license=('MIT')
+depends=(
+  r-rlang
+)
+makedepends=(
+  rust
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('78a86fbb82d549d766ed2a727c01386d')
+b2sums=('4c8eeb08eea508c0edb494996a1ceadf7762fd332ce3865ee3d2503404aee97a7fe20abb3fa0efb160a3e91b8c06182e5c17306557672703bc08fa383dc4ac05')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
