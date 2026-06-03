@@ -2,7 +2,7 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=qs2
-_pkgver=0.2.1
+_pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -25,8 +25,8 @@ optdepends=(
   r-stringi
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c311dbacafd682c4c7c0ccd0568ae4c0')
-b2sums=('31d061e3521a9de1d306a441f3e968dfd25bc5a15f500810d7710121cbb03557c92fc5c3396f51049847fb985d4eb62c3045bcd694e2e78953e31ec85ecec0bf')
+md5sums=('ee82f2633108f37570128a214dcc3650')
+b2sums=('e8d9c6bad155539fefb76b4c3df7f2249abb3f779e96946bebbe7d3ebd73e944c95eb508e1479bf394595b5efb605d64200f6ab23399737550db71f681ead44d')
 
 build() {
   mkdir build
