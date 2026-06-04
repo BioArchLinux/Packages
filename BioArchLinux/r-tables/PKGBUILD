@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=tables
-_pkgver=0.9.33
+_pkgver=0.9.35
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='Formula-Driven Table Generation'
 arch=(any)
 url="https://dmurdoch.github.io/tables/"
@@ -25,8 +25,8 @@ optdepends=(
   r-tinytable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1205aece418c81b88a632eab3aeb2ec9')
-b2sums=('b09d041f9d355227a86c23f96f3b56139d50142748b4a5798acaa3fdfb6f6e3d9441b463687231ae3a3ab3cbfe6098fbbf827690b221ad172b47eac521efb331')
+md5sums=('f0f7f3abeac263c58a1c0e54b14f4f5f')
+b2sums=('1c8521a8a6cfb2aa655c9b89d5e4c90f9b0662ebdc88c25168736f395c2d1e7a990d6ecd17ce026a739f203a00725a437792b66d2e9969d26f85794a88b5193b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
