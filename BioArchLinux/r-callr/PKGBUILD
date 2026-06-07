@@ -14,6 +14,7 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
+  r-otel
   r-processx
   r-r6
 )
