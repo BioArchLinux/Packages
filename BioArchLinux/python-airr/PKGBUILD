@@ -1,6 +1,6 @@
 _name=airr
 pkgname=python-airr
-pkgver=1.6.1
+pkgver=2.0.0
 pkgrel=1
 pkgdesc="AIRR Community Data Representation Standard reference library for antibody and TCR sequencing data."
 arch=(any)
@@ -8,16 +8,16 @@ url="http://docs.airr-community.org"
 license=(CC-BY-4.0)
 depends=('python')
 makedepends=('python-setuptools' 'python-setuptools')
-source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/airr-1.6.1.tar.gz")
-sha256sums=('f701fde0440d5848e01374ce9026f6c6cf85cbbb412a148f95ffc53c9d1bdddb')
+source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name}/airr-2.0.0.tar.gz")
+sha256sums=('3443d95e3088356ec9c5dc99f4879addd1ea1ee13fd43eb0a7ad9cf917838af3')
 
 build() {
-  cd "$srcdir/airr-1.6.1"
+  cd "$srcdir/airr-2.0.0"
   python3 setup.py build
 }
 
 package() {
-  cd "$srcdir/airr-1.6.1"
+  cd "$srcdir/airr-2.0.0"
   python3 setup.py install --root=$pkgdir --optimize=1 --skip-build
 
   # make sure we don't install any world-writable or root-readable-only files
