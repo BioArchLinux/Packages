@@ -1,0 +1,33 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=DiceKriging
+_pkgver=1.6.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Kriging Methods for Computer Experiments"
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-only' 'GPL-3.0-only')
+depends=(
+  r
+)
+optdepends=(
+  r-doparallel
+  r-foreach
+  r-numderiv
+  r-rgenoud
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('43540ac986833443d68dba488598eafe')
+b2sums=('a608d27d445e857a881813628018e28a506786376d71eda586caee5c01295faf09c97f0ad8092bc7c43407b02219abe172bb2b5ae4349060ea49efcdc6980f1d')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
