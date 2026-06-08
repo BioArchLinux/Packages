@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-arm
+  - r-estimatr
+  - r-grf
+  - r-matrixcalc
+  - r-superlearner
+  - r-tidyverse
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
+update_on:
+  - source: manual
+    manual: '0.1.0'
+  - alias: r
