@@ -1,0 +1,32 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=dsl
+_commit=537664a54163dda52ee277071fdfd9e8df2572a6
+pkgname=r-${_pkgname}
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Design-based Supervised Learning"
+arch=(any)
+url="https://github.com/naoki-egami/dsl"
+license=('GPL-2.0-only')
+depends=(
+  r
+  r-arm
+  r-estimatr
+  r-grf
+  r-matrixcalc
+  r-superlearner
+  r-tidyverse
+)
+source=("${_pkgname}-${_commit}.tar.gz::${url}/archive/${_commit}.tar.gz")
+md5sums=('3d52bfb2175b65b7b2ca6a194d235737')
+b2sums=('70b1103ea3aa4720b5f9b5ccbc7621ce93872e330da942e478fd74c8f8633a3b300719df221f351f19090a4547c089d0ee453d66b681e967ef5cab97c3f018dc')
+
+build() {
+  R CMD INSTALL ${_pkgname}-${_commit} -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}

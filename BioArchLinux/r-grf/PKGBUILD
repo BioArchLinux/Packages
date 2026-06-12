@@ -1,0 +1,43 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=grf
+_pkgver=2.6.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Generalized Random Forests"
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-only')
+depends=(
+  r
+  r-dicekriging
+  r-lmtest
+  r-rcpp
+  r-sandwich
+)
+makedepends=(
+  r-rcppeigen
+)
+optdepends=(
+  r-diagrammer
+  r-knitr
+  r-mass
+  r-policytree
+  r-rdrobust
+  r-rmarkdown
+  r-survival
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('5695490194b2e49efafbfe7ce68bd28c')
+b2sums=('b1552a47fad1328e971719f1824a77d226169d1df05654b5786c3dc7703273ec731cd1cebc49a0c9f8d2a700edf3c408f875bf65bbd749fcf3c52a52a6cece35')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
