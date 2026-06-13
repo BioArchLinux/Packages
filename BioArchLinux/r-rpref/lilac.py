@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "C++11, GNU make, Windows: cmd.exe and cscript.exe",
+        expect_systemrequirements = "GNU make, Windows: cmd.exe and cscript.exe",
     )
 
 def post_build():
