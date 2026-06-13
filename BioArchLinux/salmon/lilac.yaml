@@ -8,8 +8,6 @@ repo_depends:
   - libgff
   - htslib
 update_on:
-  - source: github
-    github: COMBINE-lab/salmon
-    use_max_tag: true
-    prefix: v
+  - source: manual
+    manual: 1.12.0
   - alias: boost
