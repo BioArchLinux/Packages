@@ -4,13 +4,12 @@ _pkgname=grf
 _pkgver=2.6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Generalized Random Forests"
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-3.0-only')
 depends=(
-  r
   r-dicekriging
   r-lmtest
   r-rcpp
@@ -22,11 +21,9 @@ makedepends=(
 optdepends=(
   r-diagrammer
   r-knitr
-  r-mass
   r-policytree
   r-rdrobust
   r-rmarkdown
-  r-survival
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
