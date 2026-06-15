@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-cli
+  - r-curl
+  - r-digest
+  - r-httr2
+  - r-jsonlite
+  - r-lifecycle
+  - r-openssl
+  - r-packrat
+  - r-pki
+  - r-renv
+  - r-rlang
+  - r-rstudioapi
+  - r-snowflakeauth
+  - r-yaml
+update_on:
+  - source: rpkgs
+    pkgname: rsconnect
+    repo: cran
+    md5: true
+  - alias: r
