@@ -1,0 +1,26 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=packrat
+_pkgver=0.9.3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="A Dependency Management System for Projects and their R Package Dependencies"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-only')
+depends=(
+  r
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('0fb56511d2cb19a94ac0a5e2633550df')
+b2sums=('197d4d46e77e7c655cbab627c9babc738c02a2ed6d317b2f460e163cb58d91e06a69b9b154faab4426fe995beee6e32e5031a446c184cfdbd69f636c15ad730b')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
