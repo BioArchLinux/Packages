@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-cli
+  - r-curl
+  - r-jose
+  - r-jsonlite
+  - r-openssl
+  - r-rcpptoml
+  - r-rlang
+update_on:
+  - source: rpkgs
+    pkgname: snowflakeauth
+    repo: cran
+    md5: true
+  - alias: r
