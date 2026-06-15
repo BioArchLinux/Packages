@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_makedepends:
+- r-cli
 - r-testthat
 update_on:
 - source: rpkgs

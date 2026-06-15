@@ -15,6 +15,9 @@ license=('MIT')
 depends=(
   r
 )
+makedepends=(
+  r-cli
+)
 checkdepends=(
   r-testthat
 )
