@@ -10,8 +10,6 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r-extrafont
-  r-gdtools
   r-ggplot2
   r-magrittr
   r-scales
