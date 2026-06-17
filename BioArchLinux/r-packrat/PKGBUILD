@@ -12,6 +12,16 @@ license=('GPL-2.0-only')
 depends=(
   r
 )
+optdepends=(
+  r-devtools
+  r-httr
+  r-knitr
+  r-mockery
+  r-rmarkdown
+  r-testthat
+  r-webfakes
+  r-withr
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('0fb56511d2cb19a94ac0a5e2633550df')
 b2sums=('197d4d46e77e7c655cbab627c9babc738c02a2ed6d317b2f460e163cb58d91e06a69b9b154faab4426fe995beee6e32e5031a446c184cfdbd69f636c15ad730b')
