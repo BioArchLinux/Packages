@@ -1,0 +1,28 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=PKI
+_pkgver=0.1-15
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Public Key Infrastucture for R Based on the X.509 Standard"
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-only OR GPL-3.0-only')
+depends=(
+  openssl
+  r
+  r-base64enc
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('810291ef57ab2a2ca3237d0adb81a290')
+b2sums=('446cd53d30d5125f44f88a9005c7f13ecb41809c02bd28131a5395dd1e9b11d939d85231afcd837b6cbe782a2dd6fbe5809d402245fd53d7bd63bdd2f7a61770')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
