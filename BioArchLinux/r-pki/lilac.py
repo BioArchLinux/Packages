@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "GPL-2 | GPL-3 | file LICENSE",
-        expect_systemrequirements = "OpenSSL library and headers (openssl-dev or\nsimilar)",
+        expect_systemrequirements = "OpenSSL library and headers (openssl-dev or similar)",
     )
 
 def post_build():
