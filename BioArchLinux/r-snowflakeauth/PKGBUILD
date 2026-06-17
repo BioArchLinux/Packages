@@ -19,6 +19,12 @@ depends=(
   r-rcpptoml
   r-rlang
 )
+optdepends=(
+  r-httpuv
+  r-keyring
+  r-testthat
+  r-withr
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('85d42d3cfd537082a9ad65719b762349')
 b2sums=('b97c68bfaee0b08de1e313276b3060a5142d6687fa73b29bd806b0bf90043d6d686b8b2b201834b24f6a279e88bb5f5bd74b4873e8b99a52c4f766854fd67e97')
