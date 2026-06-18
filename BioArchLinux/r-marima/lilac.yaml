@@ -3,8 +3,7 @@ maintainers:
 - github: sukanka
   email: sukanka@askk.cc
 update_on:
-- source: rpkgs
-  pkgname: marima
-  repo: cran
-  md5: true
+- regex: marima_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/src/contrib/Archive/marima
 - alias: r
