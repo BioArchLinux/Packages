@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- email: sukanka@askk.cc
+  github: sukanka
+post_build_script: |
+  git_pkgbuild_commit()
+repo_depends:
+- r-polynom
+update_on:
+- regex: orthopolynom_([\d._-]+).tar.gz
+  source: regex
+  url: https://cran.r-project.org/package=orthopolynom
+- alias: r
