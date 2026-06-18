@@ -4,7 +4,7 @@ _pkgname=packrat
 _pkgver=0.9.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="A Dependency Management System for Projects and their R Package Dependencies"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
