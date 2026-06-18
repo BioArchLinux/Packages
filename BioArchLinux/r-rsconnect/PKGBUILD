@@ -4,13 +4,12 @@ _pkgname=rsconnect
 _pkgver=1.10.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Deploy Docs, Apps, and APIs to 'Posit Connect', 'shinyapps.io', and 'RPubs'"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-2.0-only')
 depends=(
-  r
   r-cli
   r-curl
   r-digest
@@ -29,9 +28,7 @@ depends=(
 optdepends=(
   r-biobase
   r-biocmanager
-  r-foreign
   r-knitr
-  r-mass
   r-plumber
   r-quarto
   r-reticulate
