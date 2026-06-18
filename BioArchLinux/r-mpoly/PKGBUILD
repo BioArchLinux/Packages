@@ -1,0 +1,41 @@
+# Maintainer: sukanka <sukanka@askk.cc>
+
+_pkgname=mpoly
+_pkgver=1.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Symbolic Computation and More with Multivariate Polynomials'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL')
+depends=(
+  r
+  r-ggplot2
+  r-orthopolynom
+  r-partitions
+  r-plyr
+  r-polynom
+  r-stringi
+  r-stringr
+  r-tidyr
+)
+optdepends=(
+  r-covr
+  r-dplyr
+  r-magrittr
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('014212ffd04a0b8c637a0b3d23ceeed5')
+sha256sums=('dbef5aff839d567c5a7e697dfb70f116832501aec79364779caf827796b50cca')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+# vim:set ts=2 sw=2 et:
