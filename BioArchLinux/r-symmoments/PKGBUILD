@@ -15,10 +15,12 @@ depends=(
   r-cubature
   r-multipol
   r-mvtnorm
+  r-mpoly
+  r-rdpack
 )
 optdepends=(
   r-ape
-  r-mpoly
+
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('00c9bca2585c2a1ef9b6cc45e2da27117c622f4dc27a3c0b90c91decedc94fc4')

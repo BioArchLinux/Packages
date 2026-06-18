@@ -10,6 +10,8 @@ repo_depends:
   - r-cubature
   - r-multipol
   - r-mvtnorm
+  - r-mpoly
+  - r-rdpack
 update_on:
   - regex: symmoments_([\d._-]+).tar.gz
     source: regex
