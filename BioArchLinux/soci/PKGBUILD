@@ -3,7 +3,7 @@
 # Contributor: Mika Fischer <mika.fischer@zoopnet.de>
 
 pkgname=soci
-pkgver=4.1.3
+pkgver=4.1.4
 pkgrel=1
 pkgdesc="Database access library for C++"
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ optdepends=('oracle-instantclient-basic: support for oracle databases'
             'boost-libs')
 #options=('staticlibs')
 source=("http://downloads.sourceforge.net/project/soci/soci/${pkgname}-${pkgver}/${pkgname}-${pkgver}.zip")
-sha1sums=('5bf2f863ba3263697480f646085ecccd0a68bfaf')
+sha1sums=('9208d5965d1b9e4f22ab06ff731e05516a262c09')
 
 build() {
     rm -rf "${srcdir}/${pkgname}-${pkgver}-build"
