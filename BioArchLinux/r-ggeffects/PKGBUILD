@@ -1,0 +1,103 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=ggeffects
+_pkgver=2.3.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r
+  r-datawizard
+  r-insight
+  r-reformulas
+)
+optdepends=(
+  r-aer
+  r-afex
+  r-aod
+  r-bayestestr
+  r-betareg
+  r-brglm
+  r-brglm2
+  r-brms
+  r-broom
+  r-car
+  r-cardata
+  r-clubsandwich
+  r-dfidx
+  r-effects
+  r-effectsize
+  r-emmeans
+  r-fixest
+  r-gam
+  r-gamlss
+  r-gamm4
+  r-gee
+  r-geepack
+  r-ggplot2
+  r-ggrepel
+  r-glmmadaptive
+  r-glmmtmb
+  r-gridextra
+  r-gt
+  r-haven
+  r-htmltools
+  r-httr2
+  r-jsonlite
+  r-knitr
+  r-lme4
+  r-logistf
+  r-logitr
+  r-marginaleffects
+  r-mclogit
+  r-mcmcglmm
+  r-mice
+  r-mlogit
+  r-modelbased
+  r-mumin
+  r-nestedlogit
+  r-ordinal
+  r-parameters
+  r-parsnip
+  r-patchwork
+  r-plm
+  r-pscl
+  r-quantreg
+  r-rmarkdown
+  r-rms
+  r-robustbase
+  r-rstanarm
+  r-rstantools
+  r-sandwich
+  r-sdmtmb
+  r-see
+  r-sjlabelled
+  r-sjstats
+  r-speedglm
+  r-survey
+  r-testthat
+  r-tibble
+  r-tinytable
+  r-vdiffr
+  r-vgam
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('8f532d73707e4827f07c50312e769bec')
+b2sums=('e08aef006871e7e36b1276fbcf3e43f86e39474f046bf78e044999b57fdf9025b675acdefbf4635a7e1a8e250757c29bdfb8b7ceae3bd9c5259f2b1376d6f885')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+
+  install -dm0755 "${pkgdir}/usr/share/licenses/${pkgname}"
+  ln -s "/usr/lib/R/library/${_pkgname}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}"
+}

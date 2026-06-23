@@ -1,0 +1,14 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-datawizard
+  - r-insight
+  - r-reformulas
+update_on:
+  - source: rpkgs
+    pkgname: ggeffects
+    repo: cran
+    md5: true
+  - alias: r
