@@ -1,0 +1,42 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=sjstats
+_pkgver=0.19.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Collection of Convenient Functions for Common Statistical Computations"
+arch=(any)
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-only')
+depends=(
+  r
+  r-datawizard
+  r-effectsize
+  r-insight
+  r-parameters
+  r-performance
+)
+optdepends=(
+  r-brms
+  r-car
+  r-coin
+  r-ggplot2
+  r-lme4
+  r-pscl
+  r-pwr
+  r-survey
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('de7f7afd46a99d8006fe3fb3310cdfec')
+b2sums=('e9b8f10ef871511b3c95724cb978cdbb2352376c59e5aa37910aa36709edaa217f496f12d89fa21d641e6dfbda45d9ca7156adcbbbc96242a617bc7d29f03eec')
+
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
