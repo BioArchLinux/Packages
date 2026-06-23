@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+  - github: bshor
+    email: boris@bshor.com
+repo_depends:
+  - r-bayestestr
+  - r-datawizard
+  - r-dplyr
+  - r-ggeffects
+  - r-ggplot2
+  - r-insight
+  - r-knitr
+  - r-parameters
+  - r-performance
+  - r-purrr
+  - r-rlang
+  - r-scales
+  - r-sjlabelled
+  - r-sjmisc
+  - r-sjstats
+  - r-tidyr
+update_on:
+  - source: rpkgs
+    pkgname: sjPlot
+    repo: cran
+    md5: true
+  - alias: r
