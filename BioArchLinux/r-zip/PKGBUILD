@@ -19,6 +19,7 @@ makedepends=(
   r-cli
 )
 checkdepends=(
+  7zip
   r-curl
   r-testthat
   r-webfakes
