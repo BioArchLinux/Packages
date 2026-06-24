@@ -4,7 +4,9 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_makedepends:
 - r-cli
+- r-curl
 - r-testthat
+- r-webfakes
 update_on:
 - source: rpkgs
   pkgname: zip
