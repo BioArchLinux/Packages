@@ -4,13 +4,12 @@ _pkgname=ggeffects
 _pkgver=2.3.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Create Tidy Data Frames of Marginal Effects for 'ggplot' from Model Outputs"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('MIT')
 depends=(
-  r
   r-datawizard
   r-insight
   r-reformulas
