@@ -4,13 +4,12 @@ _pkgname=sjstats
 _pkgver=0.19.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Collection of Convenient Functions for Common Statistical Computations"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-3.0-only')
 depends=(
-  r
   r-datawizard
   r-effectsize
   r-insight
