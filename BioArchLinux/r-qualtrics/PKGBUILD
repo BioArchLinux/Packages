@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=qualtRics
-_pkgver=3.2.2
+_pkgver=3.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Download 'Qualtrics' Survey Data"
 arch=(any)
 url="https://docs.ropensci.org/qualtRics/"
@@ -37,8 +37,8 @@ optdepends=(
   r-webmockr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8ff3ba7d4c238ff2b2cf8dff1d2af59a')
-b2sums=('3e3e657cff778207824a3a3bdecea55b63885e80bde1e2567e99b96abdbb166958c14e89eb67df4c310db587f51ad2e16aa6c15f77dfe05dae683eeed17fad8d')
+md5sums=('c5d817ccfdc5fa547f481fe8889c62a6')
+b2sums=('68f8b03a0db0c41e6366b7cadac6af99e1a1e31d49308da1afee6bb8e810284820c99bd45d4921c335b4c375d4e51baee64d90b563d759f3024745444d2c081a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
