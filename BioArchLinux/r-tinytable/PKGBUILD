@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=tinytable
-_pkgver=0.16.0
+_pkgver=0.17.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Simple and Configurable Tables in 'HTML', 'LaTeX', 'Markdown', 'Word', 'PNG', 'PDF', and 'Typst' Formats"
 arch=(any)
 url="https://vincentarelbundock.github.io/tinytable/"
@@ -27,6 +27,7 @@ optdepends=(
   r-modelsummary
   r-pandoc
   r-pkgdown
+  r-png
   r-quarto
   r-rdatasets
   r-rmarkdown
@@ -41,8 +42,8 @@ optdepends=(
   r-xfun
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d6d2afee92702ee1cdd419783da755ce')
-b2sums=('a236d3647bcf2b2f4fb21d7fd8caeb6656015e971bb38af6dc686e8b7682cd1e62eb974cea2af598d8335e9b5dff31816a304b7f6250b7dd785a25d6e0869d25')
+md5sums=('5b8739da5385a6ef732efd2397f51eb3')
+b2sums=('631d58db67d9a504ccf98d97e012c61f84ba1f6117973a3fb8c5e2831bd6a83f0b7f61b5dbf776c318d9808b63cf25c31aa495c919eeb81972e6cdab83fad375')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
