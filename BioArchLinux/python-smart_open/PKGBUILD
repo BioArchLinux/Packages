@@ -3,7 +3,7 @@
 
 pkgname=python-smart_open
 _pkgname=smart_open
-pkgver=7.6.1
+pkgver=7.7.0
 pkgrel=1
 pkgdesc="Library for efficient streaming of very large files from/to S3, HDFS, WebHDFS, HTTP, or local (compressed) files"
 arch=('any')
@@ -18,7 +18,7 @@ makedepends=('python-build' 'python-installer' 'python-wheel' 'python-setuptools
 provides=("python-smart-open")
 conflicts=("python-smart-open")
 source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/RaRe-Technologies/${_pkgname}/archive/v${pkgver}.tar.gz")
-sha512sums=('f65c1b4fe278ef3eba499543d0380ec88bb4a2429ed86f2c892d4af79578cd5bb7b10aa7b2adf8e34af354bfd0da6f702fddb290298523cb5a2ef98d283122c6')
+sha512sums=('9534a37bc58bb19f01964b6a04c5d3d419a79c7bd4ee8606346230412d9a1665f5b1c17a413c9405fad5e9a9ad2176a3fc5eeaac30969b005eb4a0114cfc289c')
 
 build() {
 	cd "${srcdir}/${_pkgname}-${pkgver}"
