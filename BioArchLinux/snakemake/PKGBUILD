@@ -23,7 +23,7 @@ depends=(
     'python-pulp>=2.3.1'
     python-yaml
     'python-requests>=2.8.1' 'python-requests<3.0'
-    python-reretry
+    python-tenacity
     'python-smart_open>=4.0' 'python-smart_open<8.0'
     'python-snakemake-interface-common>=1.17.0'
     'python-snakemake-interface-executor-plugins>=9.3.2'
