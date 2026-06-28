@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=tmap
-_pkgver=4.3
+_pkgver=4.4-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='Thematic Maps'
 arch=(any)
 url="https://github.com/r-tmap/tmap"
@@ -47,8 +47,8 @@ optdepends=(
   r-widgetframe
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('408db355e0ad26676a43d31eb96765d5')
-b2sums=('1b52c945e8e745939a0796fcc27a8c4bb864fe1cd2804a45234378bf4249f7d519c25f2ff802f673c70451aa84a44d6ef8a4692dcdd78401582fefa9378127ed')
+md5sums=('562a3af72e51d9e111fdabc797d05e90')
+b2sums=('46da20104a681ff58069493547ee0f549dcfd3b8db62a331040a1b04873d18dd81d777d25c8af42c1e3eb414d4e22cc25ffc3f9bd00d6dcaf2aead253b67dfb4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
