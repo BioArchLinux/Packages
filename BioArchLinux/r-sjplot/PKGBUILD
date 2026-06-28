@@ -4,13 +4,12 @@ _pkgname=sjPlot
 _pkgver=2.9.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Data Visualization for Statistics in Social Science"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-3.0-only')
 depends=(
-  r
   r-bayestestr
   r-datawizard
   r-dplyr
