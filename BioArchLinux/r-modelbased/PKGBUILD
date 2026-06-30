@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=modelbased
-_pkgver=0.15.0
+_pkgver=0.16.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Estimation of Model-Based Predictions, Contrasts and Means"
 arch=(any)
 url="https://easystats.github.io/modelbased/"
@@ -74,8 +74,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d8ab161cdc43e7cff3d0a78e0b27a9ab')
-b2sums=('45c01a0b7f3967f1c3336846c3161f09e297e98bb51f8e9e83d7856010a005bdcae6adae40861e9688e72d6b03f2a1b07bf0e2ebafcd8b3adbccd495c7415ef8')
+md5sums=('d4dabc43cc9c2d5937ad0fa2d93f8e54')
+b2sums=('4a2430fe548ea7fb3be0eb1b1ae1781ab5a654096bdce2e536680c400fa336cdb38296844471213cdcb392fdd4c6b6da4b5ae979cdcc36b8f93014050c09cfc0')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
