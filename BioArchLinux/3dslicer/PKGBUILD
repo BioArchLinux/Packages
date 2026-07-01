@@ -35,6 +35,7 @@ prepare() {
 
 package() {
   install -d "${pkgdir}/opt" "${pkgdir}/usr/bin"
+  ls ${srcdir}/
   cp -a "${srcdir}/${_name}-${pkgver}-linux-amd64" "${pkgdir}/opt/${_pkgname}"
   ln -s /opt/${_pkgname}/Slicer "${pkgdir}/usr/bin/Slicer"
   install -Dm644 "${srcdir}/${_pkgname}.desktop" "${pkgdir}/usr/share/applications/${_pkgname}.desktop"
