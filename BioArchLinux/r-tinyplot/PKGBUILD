@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang [at] gmail [dot] com>
 
 _pkgname=tinyplot
-_pkgver=0.6.1
+_pkgver=0.7.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Lightweight Extension of the Base R Graphics System"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -22,8 +22,8 @@ optdepends=(
   r-knitr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3e6417704f904b5f8006e27c398e8397')
-b2sums=('5d3067aab552fc383ec58bfcd25a4eea59be7d826b6e50e5c3898a4113ebcf8379caf9f9d489dd930c4a7671bd028e854749690711d39fa92ad622e74058f83d')
+md5sums=('230b17ced53bba960d3ad503281779b6')
+b2sums=('a245802ecfd3d99fa72d6ee05210df53971f3d9579d6e31f1e9c2dab194d570309a5f521e8e0f38340ba336e9dfe56e2b044aff9ab16fdb2c7b44d76dfb13e88')
 
 build() {
   mkdir build
