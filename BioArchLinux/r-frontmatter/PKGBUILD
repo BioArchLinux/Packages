@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=frontmatter
-_pkgver=0.2.0
+_pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='Parse Front Matter from Documents'
 arch=('x86_64')
 url="https://github.com/posit-dev/frontmatter"
@@ -21,8 +21,8 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e4d1c9d29c3d5914ac624465bb2305db')
-b2sums=('c03895771014a24e6bc7e4b4f5b506afe0099efbd43ffc1257052085210eaf96562b857b3d32665fdf3e4c5cfaae698d9a4586dfeac4982e1af3cb7967bcfb9f')
+md5sums=('521734d89d47790ca2de2e636760aa53')
+b2sums=('b4697ee95ef5e4759e20e371593a8fcdb3bca50293872d39ab05f6c750376f5194b767a0f45a9ef26584e13d1d646d79ec5c8237bf165acd76092cc559db3296')
 
 build() {
   mkdir build
