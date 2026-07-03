@@ -3,7 +3,7 @@
 
 pkgname=trimmomatic
 _pkgname=Trimmomatic
-pkgver=0.40
+pkgver=0.41
 pkgrel=1
 pkgdesc='A flexible read trimming tool for Illumina NGS data'
 arch=('any')
@@ -14,7 +14,7 @@ makedepends=('java-environment>=11' 'maven')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/usadellab/Trimmomatic/archive/refs/tags/v${pkgver}.tar.gz"
         "${pkgname}"
         )
-md5sums=('b8f3f9247d4304c213236c1b31762cca'
+md5sums=('eb313fc844243910a079726310906be0'
          'ef9e5b089995f8c422c56c68aef731f4')
 
 build() {
