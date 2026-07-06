@@ -16,6 +16,7 @@ repo_depends:
 - r-withr
 repo_makedepends:
 - r-bench
+- r-digest
 - r-docopt
 - r-httpuv
 - r-jose

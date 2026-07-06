@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.2.2
+_pkgver=1.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -25,6 +25,7 @@ depends=(
 )
 checkdepends=(
   r-bench
+  r-digest
   r-docopt
   r-httpuv
   r-jose
@@ -37,6 +38,7 @@ optdepends=(
   r-bench
   r-clipr
   r-covr
+  r-digest
   r-docopt
   r-httpuv
   r-jose
@@ -55,8 +57,8 @@ optdepends=(
   r-otelsdk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3f22f2ade05739a5d656cc982167f30a')
-b2sums=('82203b9d2dda008c6ab015d215a0ae7b2338e33dbb3b0b86ec899e888e7d33d7dda456acbebba5caa1ad2eb8b0dc875ff81e86a1381f49ebd098110ed1dfdf83')
+md5sums=('d37121d0c90a8cd1d15c30addb3d22c0')
+b2sums=('5393706f1e568decbb5e9f5648fcf8550dbee12aa59ec679cfa49717aa0a653d009ad895acb7554789acdd8d6d01dd257ac0f711616f75994defd4f85e5879dc')
 
 build() {
   mkdir build
@@ -65,7 +67,7 @@ build() {
 
 check() {
   cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+  R_LIBS="$srcdir/build" Rscript --vanilla testthat.R
 }
 
 package() {
