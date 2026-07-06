@@ -2,8 +2,8 @@
 # Contributor: Fabio Heday <fheday@gmail.com>
 
 pkgname=trnascan-se
-pkgver=2.0.12
-pkgrel=4
+pkgver=2.0.13
+pkgrel=1
 pkgdesc="Program for improved detection of transfer RNA (tRNA) genes in genomic sequence."
 arch=('i686' 'x86_64')
 url="http://lowelab.ucsc.edu/tRNAscan-SE/"
@@ -16,7 +16,7 @@ source=("https://github.com/UCSC-LoweLab/tRNAscan-SE/archive/refs/tags/v${pkgver
         'tRNAscan-SE.conf.src.patch'
         'tRNAscan-SE.src.patch')
 
-sha512sums=('808ba99c5d492b77a32f64c16c3400c2094cfb882fee03bbbd77d3cccb26f2184ff7e1872edccee854918019571a88c9b9e0b95f9738294ba18979d49ecef4d1'
+sha512sums=('21367151e50ed65e1323acf4b27609bc742365f9e66cd0066d270c4a8ebd8886427bd77bfc46c7cf8b0f44aa45d7d5b446b70cf2bb28ca9d537ed312218fcc7e'
             'db98b453090d3870e5f20941bad3f4462d31a77c293df959f4da242356b7a87684f1941e534a807e9ac5c1df28d493ae565d507bc21c0dd0bbfda42d7ef407e8'
             'a938790ec87967b3fd4688d19d9be08a55ac0f485ca5b8d2c2b641e745a85b0917ad70d9d2d6c301b0426ecf621c2e655b8c38b51fe6c603af79ebc4e978ca0c'
             'd8f956c4c8796c069e17b6fc3087ab6b6bf4a1b9ed381032e580e0296679aeb7947151ce08f97d3e92771e36521dbfb716b575fc60ca02f21dcae76435f2bc63'
