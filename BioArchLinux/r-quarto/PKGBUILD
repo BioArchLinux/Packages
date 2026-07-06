@@ -1,0 +1,64 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=quarto
+_pkgver=1.5.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="R Interface to 'Quarto' Markdown Publishing System"
+arch=(any)
+url="https://github.com/quarto-dev/quarto-r"
+license=('MIT')
+depends=(
+  r-cli
+  r-fs
+  r-htmltools
+  r-jsonlite
+  r-later
+  r-lifecycle
+  r-processx
+  r-rlang
+  r-rmarkdown
+  r-rstudioapi
+  r-xfun
+  r-yaml
+)
+optdepends=(
+  'quarto-cli-bin: Quarto command line tool'
+  r-bslib
+  r-callr
+  r-curl
+  r-dplyr
+  r-flextable
+  r-ggiraph
+  r-ggplot2
+  r-gt
+  r-heatmaply
+  r-kableextra
+  r-knitr
+  r-palmerpenguins
+  r-patchwork
+  r-pkgload
+  r-plotly
+  r-rsconnect
+  r-testthat
+  r-thematic
+  r-tidyverse
+  r-tinytable
+  r-whoami
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('399b5a595e22f090193a9169d5bd84db')
+b2sums=('a1819b98936662bc8cb8cf4f43032b3f251ac739cad28ae7cf65cb306d8bd1e4d5474efb992223d7518239aff3e7b078921c0c2a7a950fb2d9ffa0d881e393e9')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
