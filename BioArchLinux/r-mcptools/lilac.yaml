@@ -12,6 +12,7 @@ repo_depends:
   - r-processx
   - r-promises
   - r-rlang
+  - r-yaml
 update_on:
   - source: rpkgs
     pkgname: mcptools
