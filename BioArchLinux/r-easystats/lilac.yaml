@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-bayestestr
+- r-correlation
+- r-datawizard
+- r-effectsize
+- r-insight
+- r-modelbased
+- r-parameters
+- r-performance
+- r-report
+- r-see
+update_on:
+- source: rpkgs
+  pkgname: easystats
+  repo: cran
+  md5: true
+- alias: r
