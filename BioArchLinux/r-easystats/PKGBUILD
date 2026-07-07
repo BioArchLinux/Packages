@@ -1,0 +1,62 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=easystats
+_pkgver=0.7.6
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Framework for Easy Statistical Modeling, Visualization, and Reporting"
+arch=(any)
+url="https://easystats.github.io/easystats/"
+license=('MIT')
+depends=(
+  r-bayestestr
+  r-correlation
+  r-datawizard
+  r-effectsize
+  r-insight
+  r-modelbased
+  r-parameters
+  r-performance
+  r-report
+  r-see
+)
+optdepends=(
+  r-callr
+  r-collapse
+  r-cranlogs
+  r-dharma
+  r-dt
+  r-flexdashboard
+  r-formula
+  r-ggplot2
+  r-glmmtmb
+  r-httr
+  r-jsonlite
+  r-knitr
+  r-marginaleffects
+  r-mockery
+  r-pak
+  r-patchwork
+  r-rmarkdown
+  r-scholar
+  r-testthat
+  r-withr
+  r-xml2
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a4175a8ae25b8483b355ffd5faee6569')
+b2sums=('58edfeeb31d6d91c8976af0f034eb92f9971b0fb75b58709f40eb64732f64a113f5121c442f3db92730e9aeb5bafecb87bf1036395ec9a98bb42881f67458c3c')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
