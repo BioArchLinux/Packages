@@ -1,0 +1,36 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=tsitter
+_pkgver=0.1.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Tree-Sitter Parsing Tools"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r-cli
+)
+optdepends=(
+  r-magrittr
+  r-pillar
+  r-testthat
+  r-tsjsonc
+  r-tstoml
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('f4e81a8f59f0f1af9967d7fde01b0863')
+b2sums=('7ad322f7884b523cb8a2c650d770b30125409741a9a0b230da97567c06ced0e3f8af7706cb3e7745a680c450bc840e153ccd563bd814b66a8602b848e826733d')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
