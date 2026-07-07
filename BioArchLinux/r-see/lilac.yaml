@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-bayestestr
+- r-correlation
+- r-datawizard
+- r-effectsize
+- r-ggplot2
+- r-insight
+- r-modelbased
+- r-parameters
+- r-patchwork
+- r-performance
+update_on:
+- source: rpkgs
+  pkgname: see
+  repo: cran
+  md5: true
+- alias: r

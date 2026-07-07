@@ -1,0 +1,79 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=see
+_pkgver=0.14.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Model Visualisation Toolbox for 'easystats' and 'ggplot2'"
+arch=(any)
+url="https://easystats.github.io/see/"
+license=('MIT')
+depends=(
+  r-bayestestr
+  r-correlation
+  r-datawizard
+  r-effectsize
+  r-ggplot2
+  r-insight
+  r-modelbased
+  r-parameters
+  r-patchwork
+  r-performance
+)
+optdepends=(
+  r-bh
+  r-brms
+  r-collapse
+  r-curl
+  r-dharma
+  r-discovr
+  r-emmeans
+  r-factoextra
+  r-formula
+  r-ggdag
+  r-ggdist
+  r-ggraph
+  r-ggrepel
+  r-ggridges
+  r-ggside
+  r-glmmtmb
+  r-httr2
+  r-lavaan
+  r-lme4
+  r-logspline
+  r-marginaleffects
+  r-mclogit
+  r-mclust
+  r-merderiv
+  r-metafor
+  r-nbclust
+  r-nfactors
+  r-psych
+  r-qqplotr
+  r-randomforest
+  r-rcppeigen
+  r-rlang
+  r-rmarkdown
+  r-rstanarm
+  r-scales
+  r-testthat
+  r-tidygraph
+  r-vdiffr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('83d19fbc097f3bcf199bafb26f030705')
+b2sums=('c6e9c28ee85f5324dc21130621354a07ec0a79d34d787bc5cbad19e0be4f973dfd31c324eb39be6310f03a05bec8bfae9013d0602a85754515a19be581989620')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
