@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=btw
-_pkgver=1.2.1
+_pkgver=1.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='A Toolkit for Connecting R and Large Language Models'
 arch=(any)
 url="https://github.com/posit-dev/btw"
@@ -49,6 +49,7 @@ optdepends=(
   r-processx
   r-ragg
   r-rapp
+  r-renv
   r-roxygen2
   r-shiny
   r-shinychat
@@ -57,8 +58,8 @@ optdepends=(
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e611c3dcfaa9a8bd6918cb20f02f570a')
-b2sums=('fbe941ab27c96a504de5fd104e1740cf8115005a5782184e806428f59a22ced70e2c88b0f7785057c108b7d5451c378b809e3c346e9376b1cda1e05c2e1fe790')
+md5sums=('61b0e218c2c3e2975c02476ee86d468a')
+b2sums=('d6da2da71c33993d116e7f2911239e0f1f7d1662dc6bab171f2701ef019fb664355ad71da455b704d67088f314530669564ae6765c106a28bb2faf7d6680af6a')
 
 build() {
   mkdir build
