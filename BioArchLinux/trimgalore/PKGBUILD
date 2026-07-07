@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <kuoi at bioarchlinux dot org>
 pkgname=trimgalore
 _pkgname=trim_galore
-pkgver=2.2.0
+pkgver=2.3.0
 pkgrel=1
 pkgdesc='A fast tool for BAM/CRAM quality evaluation of long reads. https://doi.org/10.1093/bioinformatics/btad311'
 arch=(x86_64)
@@ -12,7 +12,7 @@ license=('GPL-3.0-or-later')
 options=(!lto)
 _tag=v${pkgver}
 source=(${pkgname}-${pkgver}::git+${url}.git#tag=${_tag})
-sha256sums=('32caf575b4cbed744e7f8b7dfa917dca49631970c87b2e399657da045eb6b4d7')
+sha256sums=('f4ddb62aecdd9df7dbd30917277201a408d97a7819b907ab776add66ab59ecc2')
 
 prepare() {
     cd ${pkgname}-${pkgver}
