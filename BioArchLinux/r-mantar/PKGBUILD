@@ -2,7 +2,7 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mantar
-_pkgver=0.3.0
+_pkgver=0.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -25,8 +25,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c9fd768d26cf3bfe5206277143833210')
-b2sums=('d19e36f1a7fca23f5a4668dbb289b0f569afd749fd20a865e1411eb02ec49eab30dfc74a72299b433fd6f0425afcbba3593b124a9888ba8cbf898d5fd52393ec')
+md5sums=('f94433d59a2b1b089ece2fde687e1839')
+b2sums=('dc48b670f48049282192b98d2294df22ae8de65025121460eb945999f5413b2bdb8e57e988720a47bfb50f649962ccc9b19836c5a4c4fc351d542705c087c4cf')
 
 build() {
   mkdir build
