@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@malacology.net>
 
 _pkgname=RRPP
-_pkgver=2.1.2
+_pkgver=2.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc='Linear Model Evaluation with Randomized Residuals in a Permutation Procedure'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -22,8 +22,8 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ac7fe1adf8b4e3e9b6cb18a87396c6c7')
-b2sums=('5f1c615daa99547fb6c2d9c16a67dc70a443032fa3475ae117a6e4547c85fd609bda9f452dedd3937b20fbb88982f114ee1da020876d9bd4d60c04ebe262c9ef')
+md5sums=('d991b2cdd32e85efe77896af1ed8592c')
+b2sums=('7575345e363d1a1c8beaefd42111df038112b5f08c4f8aeafb99428025ac58b14e631a06fe2e29f35b2ccd154f166f770ef52d3b956cac375882afbacf6862d3')
 
 build() {
   mkdir build
