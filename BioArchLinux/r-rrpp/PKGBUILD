@@ -12,6 +12,7 @@ license=('GPL-3.0-or-later')
 depends=(
   r-ape
   r-ggplot2
+  r-lme4
 )
 optdepends=(
   r-dplyr

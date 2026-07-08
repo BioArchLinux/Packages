@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
+- r-lme4
 - r-ggplot2
 update_on:
 - source: rpkgs
