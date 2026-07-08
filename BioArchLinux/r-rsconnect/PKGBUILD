@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=rsconnect
-_pkgver=1.10.0
+_pkgver=1.10.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Deploy Docs, Apps, and APIs to 'Posit Connect', 'shinyapps.io', and 'RPubs'"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -18,7 +18,6 @@ depends=(
   r-lifecycle
   r-openssl
   r-packrat
-  r-pki
   r-renv
   r-rlang
   r-rstudioapi
@@ -39,8 +38,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8a115a2342d9f41365f999af8211ce6e')
-b2sums=('c116b306c416069218a7accd605f7f42acd82ff4c91d9f0b701153cbaf7b8313251fbeb6937cc29e5155665d49c5baec996eb0081045181651f593a3b2cda8b4')
+md5sums=('20c24d1a60a796a00519e540af375c04')
+b2sums=('f62c81f468b42e47980b850af80dee5951dc6f6a957d40fbf846125127e8484910ef5bcdf0d04291f28a17cb0df2cc9b9af7e040f6e20bc74ca569ac6f5b7fde')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
