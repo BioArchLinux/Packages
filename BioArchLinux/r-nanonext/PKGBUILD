@@ -1,7 +1,7 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=nanonext
-_pkgver=1.10.0
+_pkgver=1.10.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -20,8 +20,8 @@ optdepends=(
   r-litedown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4eff7a9419f62454d769be24f50fa882')
-b2sums=('2af9a25173b601a67c2b18b67edf9b09bb9a407c9ae092541328d98d9cc2bc5f700e30df0b7f1b679b762e9294fa814c5334340fcaf2177c0297aab850113c60')
+md5sums=('4e2ce096d54edb3b54d519e4c6c8d904')
+b2sums=('81ae75126882d521f8119e453c3cddb269641c24088b9ddc4acdbb7a5f31f2df61bab7dffd0050a697edd87d8a189fa7fc7bea585b58825a660bc04de7960b1a')
 
 build() {
   mkdir build
