@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=deeptime
-_pkgver=2.3.1
+_pkgver=2.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=3
+pkgrel=1
 pkgdesc='Plotting Tools for Anyone Working in Deep Time'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -42,12 +42,13 @@ optdepends=(
   r-rmarkdown
   r-svglite
   r-testthat
+  r-tidytree
   r-vdiffr
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3654eb732638e773a808e18fe5a81589')
-b2sums=('5d39f2ead297b455e63bf98986feef308dc6d18c90c56e3858fb5a93d6d3a592ab5bfeb874d06350fc9317e469b09c61194415b89d9a266fc9e925efb3d4466f')
+md5sums=('1cc7b9332af67b0d694d149b9c7d8048')
+b2sums=('7ce868469f51e659a0c99a45330cea0bdfb4f00dbd030f8409ea16953afe446fe3617633854fe02c52a79a91ba3dc23614e5ca1816a18ca6de36b3afe03d4806')
 
 
 build() {
