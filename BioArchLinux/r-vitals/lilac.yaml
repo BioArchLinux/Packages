@@ -1,0 +1,25 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-cli
+- r-dplyr
+- r-ellmer
+- r-glue
+- r-httpuv
+- r-httr2
+- r-jsonlite
+- r-purrr
+- r-r6
+- r-rlang
+- r-s7
+- r-tibble
+- r-tidyr
+- r-withr
+update_on:
+- source: rpkgs
+  pkgname: vitals
+  repo: cran
+  md5: true
+- alias: r
