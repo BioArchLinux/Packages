@@ -1,0 +1,67 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=ragnar
+_pkgver=0.3.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Retrieval-Augmented Generation (RAG) Workflows"
+arch=(x86_64)
+url="https://ragnar.tidyverse.org/"
+license=('MIT')
+depends=(
+  r-blob
+  r-cli
+  r-commonmark
+  r-curl
+  r-dbi
+  r-dbplyr
+  r-dplyr
+  r-duckdb
+  r-glue
+  r-httr2
+  r-jsonlite
+  r-mirai
+  r-reticulate
+  r-rlang
+  r-rvest
+  r-s7
+  r-stringi
+  r-tidyr
+  r-vctrs
+  r-withr
+  r-xml2
+)
+optdepends=(
+  r-connectcreds
+  r-ellmer
+  r-gargle
+  r-jose
+  r-knitr
+  r-lifecycle
+  r-mcptools
+  r-openssl
+  r-pandoc
+  r-paws.common
+  r-rmarkdown
+  r-shiny
+  r-stringr
+  r-testthat
+  r-tibble
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('53df7d9518bdd2ab56d50f78a5e1bae8')
+b2sums=('713ad89609fcfccf7abc9b3b32270173cd3a192dbb7ed41737476d5fc8a34d25fde01a4884a98e388e15ef2fa0d2b8262526e454875a531f1b929767737a248e')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}

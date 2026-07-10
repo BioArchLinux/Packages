@@ -1,0 +1,32 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-blob
+- r-cli
+- r-commonmark
+- r-curl
+- r-dbi
+- r-dbplyr
+- r-dplyr
+- r-duckdb
+- r-glue
+- r-httr2
+- r-jsonlite
+- r-mirai
+- r-reticulate
+- r-rlang
+- r-rvest
+- r-s7
+- r-stringi
+- r-tidyr
+- r-vctrs
+- r-withr
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: ragnar
+  repo: cran
+  md5: true
+- alias: r
