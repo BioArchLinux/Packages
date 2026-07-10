@@ -1,0 +1,54 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=vitals
+_pkgver=0.3.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Large Language Model Evaluation"
+arch=(any)
+url="https://vitals.tidyverse.org/"
+license=('MIT')
+depends=(
+  r-cli
+  r-dplyr
+  r-ellmer
+  r-glue
+  r-httpuv
+  r-httr2
+  r-jsonlite
+  r-purrr
+  r-r6
+  r-rlang
+  r-s7
+  r-tibble
+  r-tidyr
+  r-withr
+)
+optdepends=(
+  r-ggplot2
+  r-here
+  r-htmltools
+  r-knitr
+  r-magick
+  r-ordinal
+  r-rmarkdown
+  r-testthat
+  r-vcr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('b7ab765940f6de11bb0f9df44f62c201')
+b2sums=('04dac0b3d7ede513fd572f894f3fe7b2760631a4deb64e13595b0df235e539f20f4b1628c904925f2e9a99b04a8df2c80c0f42e084142ecde22f1a65b3009edd')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
