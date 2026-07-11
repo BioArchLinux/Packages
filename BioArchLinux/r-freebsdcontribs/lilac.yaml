@@ -1,0 +1,11 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: chrislongros
+  email: chris.longros@gmail.com
+
+update_on:
+- source: rpkgs
+  pkgname: freebsdcontribs
+  repo: cran
+  md5: true
+- alias: r
