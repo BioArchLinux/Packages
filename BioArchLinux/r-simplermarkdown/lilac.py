@@ -8,7 +8,10 @@ from lilac_r_utils import r_pre_build
 
 
 def pre_build():
-    r_pre_build(_G)
+    r_pre_build(
+        _G,
+        expect_systemrequirements = "Pandoc (http://pandoc.org) needs to installed and available in the search path.",
+    )
 
 
 def post_build():
