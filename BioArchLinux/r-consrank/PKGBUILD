@@ -6,15 +6,18 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Compute the Median Ranking(s) According to the Kemeny's Axiomatic Approach"
-arch=(any)
+arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-gtools
   r-proxy
-  r-rgl
   r-rlist
   r-tidyr
+)
+optdepends=(
+  r-rgl
+  r-plotly
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('af460368b7d2d20aa088c11ece8ac97f')
