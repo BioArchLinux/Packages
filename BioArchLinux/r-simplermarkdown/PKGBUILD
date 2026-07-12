@@ -4,15 +4,14 @@ _pkgname=simplermarkdown
 _pkgver=0.0.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple Engine for Generating Reports using R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
 depends=(
-  pandoc
-  r
   r-rjson
+  pandoc
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a692f54b8cdb625a3472b8f82fe2bd42')
