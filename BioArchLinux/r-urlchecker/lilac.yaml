@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
   - r-cli
   - r-curl
+  - r-gitcreds
   - r-xml2
 update_on:
   - regex: urlchecker_([\d._-]+).tar.gz

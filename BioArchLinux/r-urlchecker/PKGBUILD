@@ -13,6 +13,7 @@ depends=(
   r
   r-cli
   r-curl
+  r-gitcreds
   r-xml2
 )
 optdepends=(
