@@ -14,6 +14,7 @@ depends=(
   r-jsonlite
   r-rlang
   r-tidyr
+  r-yulab.utils
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('14ddbee5be66d0b1dc178e41175a50ab6ed9ffed04d4361ecf5eef3548d9a381')

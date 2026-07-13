@@ -9,6 +9,7 @@ repo_depends:
   - r-jsonlite
   - r-rlang
   - r-tidyr
+  - r-yulab.utils
 update_on:
   - regex: gson_([\d._-]+).tar.gz
     source: regex
