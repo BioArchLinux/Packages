@@ -13,6 +13,7 @@ depends=(
   r
   r-ca
   r-dplyr
+  r-forcats
   r-glue
   r-gnm
   r-gt
