@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=ellmer
-_pkgver=0.4.1
+_pkgver=0.4.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 epoch=1
 pkgdesc='Chat with Large Language Models'
 arch=(any)
@@ -46,8 +46,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a11255f800934e0d34d4b0ea64f75350')
-b2sums=('912327f303eb93919968d62420f456cc090163905629bab3a5cc90edd8f2066581f36113fe2b63d7d058ad0d442d0d7be367f17e59241df01c678eea4c22499d')
+md5sums=('6ca047a3993d22ba00246797700b8d08')
+b2sums=('3175433e636a5d52ec7cd304f858cefa450e5224ee2e6834c1eb49572ee3a685a2da513dc228187abade9648c3b0958b89ff2c8f272f7115e37212869d97a8a5')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
