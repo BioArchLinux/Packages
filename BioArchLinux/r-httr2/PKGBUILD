@@ -2,10 +2,10 @@
 # Contributor: Alexander Bocken <alexander@bocken.org>
 
 _pkgname=httr2
-_pkgver=1.2.3
+_pkgver=1.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Perform HTTP Requests and Process the Responses"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -18,7 +18,6 @@ depends=(
   r-magrittr
   r-openssl
   r-r6
-  r-rappdirs
   r-rlang
   r-vctrs
   r-withr
@@ -45,20 +44,21 @@ optdepends=(
   r-jsonlite
   r-knitr
   r-later
+  r-nanonext
+  r-otel
+  r-otelsdk
   r-paws.common
   r-promises
+  r-rappdirs
   r-rmarkdown
   r-testthat
   r-tibble
   r-webfakes
   r-xml2
-  r-nanonext
-  r-otel
-  r-otelsdk
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d37121d0c90a8cd1d15c30addb3d22c0')
-b2sums=('5393706f1e568decbb5e9f5648fcf8550dbee12aa59ec679cfa49717aa0a653d009ad895acb7554789acdd8d6d01dd257ac0f711616f75994defd4f85e5879dc')
+md5sums=('790051880d410d91692fbd4cb3c29414')
+b2sums=('fb1f8ef1bb152d1fdcc77ac12a54a7de4935c0544f73c90a5fc4794afdc0446b2e8b29638f6bdbfeadf678b86516c40d086f04859f8ca6c40a73a877873d17e2')
 
 build() {
   mkdir build
