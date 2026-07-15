@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomicRanges
-_pkgver=1.60.0
+_pkgver=1.64.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -15,10 +15,9 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-biocgenerics
-  r-genomeinfodb
   r-iranges
   r-s4vectors
-  r-xvector
+  r-seqinfo
 )
 checkdepends=(
   r-runit
@@ -38,6 +37,7 @@ optdepends=(
   r-dexseq
   r-digest
   r-edger
+  r-genomeinfodb
   r-genomicalignments
   r-genomicfeatures
   r-gviz
@@ -50,19 +50,19 @@ optdepends=(
   r-rmarkdown
   r-rnaseqdata.hnrnpc.bam.chr14
   r-rsamtools
-  r-rtracklayer
   r-runit
   r-summarizedexperiment
-  r-txdb.athaliana.biomart.plantsmart22
+  r-txdb.athaliana.biomart.plantsmart51
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
   r-txdb.hsapiens.ucsc.hg38.knowngene
   r-txdb.mmusculus.ucsc.mm10.knowngene
   r-txdbmaker
+  r-ucsc.utils
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('2d23aae0eb9d1bacef038d3c07b6e547')
-b2sums=('1f7ef47dc01bcb2473fcbfeb790a6ee7faa53ef620852c685d6569cdc048ac27c6453bc6a7aea0eb070b3c0264c2211d0d2c8e35be636f14d672ebd8ea6d9996')
+md5sums=('16b687fa031d965176f4e50532fef0a1')
+b2sums=('4425132f1134a93ab5d1181c200a59efcfcff12b5603009a5adf96d5135e5b9251274f20a0f3340de9a5d2120bb83af55f92b0cdbe7ffd97fe6b4ac10bfeebdb')
 
 build() {
   mkdir build
