@@ -13,6 +13,7 @@ depends=(
   r
   zlib
 )
+makedepends=(r-biocmake)
 optdepends=(
   r-biocstyle
   r-knitr
