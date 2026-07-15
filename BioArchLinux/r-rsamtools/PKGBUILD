@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rsamtools
-_pkgver=2.24.1
+_pkgver=2.28.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -10,17 +10,17 @@ arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0 AND MIT')
 depends=(
-  bzip2
-  curl
   r-biocgenerics
   r-biocparallel
   r-biostrings
   r-bitops
-  r-genomeinfodb
   r-genomicranges
   r-iranges
   r-s4vectors
+  r-seqinfo
   r-xvector
+  bzip2
+  curl
   xz
   zlib
 )
@@ -41,8 +41,8 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0ed68b3325ece17f53f9362b50a5e172')
-b2sums=('a6d10b340a19b28258725771f992dfe7162ef89dfddaf58887f8fe5bf3bd43d76d69dccd74c6b97509820e789f1574d4380a21babfc41f065aa747dee665ed24')
+md5sums=('25f396ca7d0e44d30f6e46d70c7c1fc6')
+b2sums=('1e2318b93f65ee87cd87a85e2b8754589e1e33716768e0bd04b69e777bcbdda691705af537bcd26489b54ed759185c6c91e065f4f2dc994f6c3edabbf226d88e')
 
 build() {
   mkdir build
