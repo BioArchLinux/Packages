@@ -16,6 +16,7 @@ repo_depends:
 - r-rsqlite
 - r-s4vectors
 - r-yaml
+- r-biocbaseutils
 update_on:
 - regex: AnnotationHub_([\d._-]+).tar.gz
   source: regex

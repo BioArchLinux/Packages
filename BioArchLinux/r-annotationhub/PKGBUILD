@@ -10,8 +10,8 @@ arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
-  r
   r-annotationdbi
+  r-biocbaseutils
   r-biocfilecache
   r-biocgenerics
   r-biocmanager
