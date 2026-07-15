@@ -57,15 +57,19 @@ prepare() {
   sed -i '/"source code formatting"/a\ \ skip("Do not check code formatting")' \
     tests/testthat/test-astyle.R
 
-  # Build against system SQLite and use system Boost headers
+  # Build against system SQLite and system Boost headers
   sed -i \
     -e 's|^PKG_CPPFLAGS=-Ivendor \\|PKG_CPPFLAGS=-I. \\|' \
     -e 's|^PKG_LIBS = vendor/sqlite3/sqlite3\.o$|PKG_LIBS = -lsqlite3|' \
     src/Makevars
 
-  sed -i \
-    's|^#include "vendor/sqlite3/sqlite3\.h"$|#include <sqlite3.h>|' \
-    src/import-file.c
+  grep -rlZ \
+    -e '#include "vendor/sqlite3/sqlite3.h"' \
+    -e '#include "sqlite3/sqlite3.h"' \
+    src vendor |
+    xargs -0r sed -i \
+      -e 's|#include "vendor/sqlite3/sqlite3\.h"|#include <sqlite3.h>|' \
+      -e 's|#include "sqlite3/sqlite3\.h"|#include <sqlite3.h>|'
 }
 
 build() {
