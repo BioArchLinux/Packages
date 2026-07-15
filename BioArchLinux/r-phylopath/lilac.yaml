@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-future.apply
+- r-ggm
+- r-ggplot2
+- r-ggraph
+- r-igraph
+- r-phylolm
+- r-purrr
+- r-tibble
+update_on:
+- source: rpkgs
+  pkgname: phylopath
+  repo: cran
+  md5: true
+- alias: r

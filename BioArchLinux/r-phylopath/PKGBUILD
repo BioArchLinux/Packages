@@ -1,0 +1,40 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=phylopath
+_pkgver=1.3.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Perform Phylogenetic Path Analysis'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-ape
+  r-future.apply
+  r-ggm
+  r-ggplot2
+  r-ggraph
+  r-igraph
+  r-phylolm
+  r-purrr
+  r-tibble
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a3cef6f9aa729362e7734bd422830f41')
+b2sums=('fd7929b270edbdbf64b6d3036b9720df3e246d09355458369d11f5050139295d34dba5aa4228ece473c8d837fd03bca5620fd13a7dbea5cd1e16f5b2a3d5e20a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
