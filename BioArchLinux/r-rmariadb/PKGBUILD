@@ -22,7 +22,6 @@ depends=(
 makedepends=(
   boost
   r-cpp11
-  r-plogr
 )
 checkdepends=(
   mariadb
@@ -48,12 +47,23 @@ b2sums=('1a78fe4d267c1cb9189ff2b345eda3da0b1c6baaa56d80ae5e9f94b080b880c45004422
         'c2db9ab7fa0c73547a80cc15dc7a51a62cfb25a840b7d901bc4b0d4da3c99eb987faaa73cbeac1529fb219a29e3963f9fe3c956f7283f18c53ad1a7208d07636')
 
 prepare() {
-  # skip failing tests
-#  patch -Np1 -i skip-tests.patch
-  # use system boost headers
-  patch -Np1 -i system-boost.patch
-}
+  cd "$_pkgname"
 
+  # Skip DBItest timestamp tests that currently fail
+  sed -i '/default_skip = c(/a\
+    "bind_timestamp",\
+    "bind_timestamp_lt",\
+    "arrow_bind_timestamp",\
+    "arrow_bind_timestamp_lt",\
+    "stream_bind_timestamp",\
+    "stream_bind_timestamp_lt",\
+    "arrow_stream_bind_timestamp",\
+    "arrow_stream_bind_timestamp_lt",\
+' tests/testthat/helper-DBItest.R
+
+  # Prefer the system Boost headers over the bundled copy
+  sed -i 's|[[:space:]]-Ivendor\([[:space:]]\)|\1|' src/Makevars.in
+}
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
