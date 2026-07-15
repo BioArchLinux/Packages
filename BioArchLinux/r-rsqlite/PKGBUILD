@@ -57,19 +57,20 @@ prepare() {
   sed -i '/"source code formatting"/a\ \ skip("Do not check code formatting")' \
     tests/testthat/test-astyle.R
 
-  # Build against system SQLite and system Boost headers
+  # Link against the system SQLite library
   sed -i \
-    -e 's|^PKG_CPPFLAGS=-Ivendor \\|PKG_CPPFLAGS=-I. \\|' \
-    -e 's|^PKG_LIBS = vendor/sqlite3/sqlite3\.o$|PKG_LIBS = -lsqlite3|' \
+    's|^PKG_LIBS = vendor/sqlite3/sqlite3\.o$|PKG_LIBS = -lsqlite3|' \
     src/Makevars
 
-  grep -rlZ \
-    -e '#include "vendor/sqlite3/sqlite3.h"' \
-    -e '#include "sqlite3/sqlite3.h"' \
-    src vendor |
-    xargs -0r sed -i \
-      -e 's|#include "vendor/sqlite3/sqlite3\.h"|#include <sqlite3.h>|' \
-      -e 's|#include "sqlite3/sqlite3\.h"|#include <sqlite3.h>|'
+  # Use the system SQLite header in the RSQLite source
+  sed -i \
+    's|^#include "vendor/sqlite3/sqlite3\.h"$|#include <sqlite3.h>|' \
+    src/import-file.c
+
+  # Use the system SQLite header in the HTTP extension
+  sed -i \
+    's|^#include "sqlite3/sqlite3\.h"$|#include <sqlite3.h>|' \
+    src/vendor/extensions/http.c
 }
 
 build() {
