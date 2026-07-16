@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=dada2
-_pkgver=1.36.0
+_pkgver=1.40.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -31,8 +31,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8ee21bad729c9887277fffe5ac5cdd7a')
-b2sums=('98eaff9eac85a223b72d8a76f86f32b7b76f260c7f2cad31eccfd4692733d2a6c86a800f046345e2953de6a2fc4010c78aec1883fbe43c6a480cd69010cd2709')
+md5sums=('7b804276d0f5e33f11d07da065b5a716')
+b2sums=('f516cae3fce2fee3e24176cc5001cf192a639ac861eb89f6aa63ec8a2ec74f9c4dbe52910dc78b6009b62b6a7d215cb18b63d697a8589d11724abcb43e04a0c1')
 
 build() {
   mkdir build
