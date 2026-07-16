@@ -1,0 +1,45 @@
+# Maintainer: Guoyi Zhang
+
+_pkgname=cigarillo
+_pkgver=1.2.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Efficient manipulation of CIGAR strings"
+arch=('x86_64')
+url="https://bioconductor.org/packages/$_pkgname"
+license=('Artistic-2.0')
+
+depends=(
+  r
+  r-biocgenerics
+  'r-s4vectors>=0.47.2'
+  r-iranges
+  r-biostrings
+)
+
+optdepends=(
+  'r-rsamtools: BAM file support and examples'
+  'r-genomicalignments: genomic alignment integration and tests'
+  'r-rnaseqdata.hnrnpc.bam.chr14: example BAM dataset'
+  'r-bsgenome.hsapiens.ucsc.hg19: example human genome dataset'
+  'r-testthat: run package tests'
+  'r-knitr: build package vignettes'
+  'r-rmarkdown: build package vignettes'
+  'r-biocstyle: Bioconductor vignette formatting'
+)
+
+source=(
+  "https://bioconductor.posit.co/packages/3.23/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
+)
+
+sha256sums=('798eb16f09b3eb9436c5d4026d3478a6a3b8185eb7669ab7331ee7d33ed1427f')
+build() {
+  R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
+
