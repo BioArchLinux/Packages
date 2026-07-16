@@ -8,9 +8,9 @@ pkgrel=1
 pkgdesc='Representation and manipulation of short genomic alignments'
 arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=('Artistic-2.0')
 depends=(
-  r
+  r-cigarillo
   r-biocgenerics
   r-biocparallel
   r-biostrings
