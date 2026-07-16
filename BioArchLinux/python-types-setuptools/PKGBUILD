@@ -1,7 +1,7 @@
 # Maintainer: Mark Wagie <mark dot wagie at proton dot me>
 pkgname=python-types-setuptools
 _name=${pkgname#python-}
-pkgver=83.0.0.20260706
+pkgver=83.0.0.20260716
 pkgrel=1
 pkgdesc="Typing stubs for setuptools"
 arch=('any')
@@ -10,7 +10,7 @@ license=('Apache-2.0')
 depends=('python' 'python-types-docutils')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/${_name//-/_}/${_name//-/_}-$pkgver.tar.gz")
-sha256sums=('9e586ac6c1eb504d28b5f06aced1d705e0043839413219ee3c08d16625fbb4ff')
+sha256sums=('a36ad71a57919b80db314e6104478ee75376a34abea88ba0f3d28db4d10006d7')
 
 build() {
   cd "${_name//-/_}-${pkgver}"
