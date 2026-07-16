@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=ShortRead
-_pkgver=1.66.0
+_pkgver=1.70.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -14,7 +14,6 @@ depends=(
   r-biocgenerics
   r-biocparallel
   r-biostrings
-  r-genomeinfodb
   r-genomicalignments
   r-genomicranges
   r-hwriter
@@ -23,6 +22,7 @@ depends=(
   r-pwalign
   r-rsamtools
   r-s4vectors
+  r-seqinfo
   zlib
 )
 makedepends=(
@@ -38,8 +38,8 @@ optdepends=(
   r-yeastnagalakshmi
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a090dc033d7a89f3a3734f45e3c4b9af')
-b2sums=('9444afcbd7319f905828e0629d7f1629861ed16b11e47466380067420462642e6cb927432adc5001e841dccb4f0fd1a3fde2e8c89dfe1676e2e4f20455071fa3')
+md5sums=('856d3095a8ffbcfcbd0ac30436d46b90')
+b2sums=('4d5a3ee64f28cd198596017ed8fbcb04f815a65608a666ea194908a3ebfcbc2c06cb437cba92fc2a5d423f5ff0be31be29b896b841136802239218f9bd69217c')
 
 build() {
   mkdir build
