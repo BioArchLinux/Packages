@@ -10,6 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_needscompilation = True,
+        expect_systemrequirements = "NLopt library (optional, for high-performance BMDD mode)",
     )
 
 def post_build():

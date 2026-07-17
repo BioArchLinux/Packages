@@ -10,6 +10,8 @@ repo_depends:
 - r-matrixstats
 - r-modeest
 - r-statmod
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
 - source: rpkgs
   pkgname: MicrobiomeStat

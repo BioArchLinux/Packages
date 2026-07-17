@@ -18,6 +18,13 @@ depends=(
   r-modeest
   r-statmod
 )
+checkdepends=(
+  r-rcpparmadillo
+)
+optdepends=(
+  r-dicekriging
+  r-randomforest
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('5af3b2fd4cbb44471678703b43193d84')
 b2sums=('9638e1727c3833e49d589f86b81927bc1810f2c406671240a82ccab478b68462f1b6ef0929a88397833383048c577338cd244542b79acea866e719af488a41f2')
