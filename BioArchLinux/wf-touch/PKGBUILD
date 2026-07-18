@@ -1,5 +1,5 @@
 pkgname=wf-touch
-pkgver=.20250211.184857
+pkgver=.20260718.150312
 pkgrel=1
 pkgdesc="Touchscreen gesture library"
 arch=(x86_64)
