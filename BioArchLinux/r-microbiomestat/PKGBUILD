@@ -17,8 +17,6 @@ depends=(
   r-matrixstats
   r-modeest
   r-statmod
-)
-checkdepends=(
   r-rcpparmadillo
 )
 optdepends=(
