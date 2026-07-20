@@ -1,7 +1,7 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mirai
-_pkgver=2.7.1
+_pkgver=2.7.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -14,7 +14,6 @@ depends=(
 )
 optdepends=(
   r-cli
-  r-later
   r-litedown
   r-mori
   r-otel
@@ -22,8 +21,8 @@ optdepends=(
   r-secretbase
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('542923640632cdba7d58355ee8cba2e6')
-b2sums=('f360e32d7c6a12dfa10efbe3768da2abfc41526c1dcaabce78dade9b8b749f2f90b0e4a61460d90a59bbcbd03567611b44d1f641ab9e608911740b4ca9894fa0')
+md5sums=('102c286631f6580ce76016a5620b601a')
+b2sums=('283da8d254d816292ee4a0b5b964981029b0c04fc7b57b321889bfb011497cde06740b0c491c08139f5f38be2d0ca972dcac839d287392b37e78c19dae35bcd0')
 
 build() {
   mkdir build
