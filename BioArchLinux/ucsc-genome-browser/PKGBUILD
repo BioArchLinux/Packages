@@ -1,6 +1,6 @@
 # Maintainer: sukanka <su975853527 at gmail dot com>
 pkgname=ucsc-genome-browser
-pkgver=498
+pkgver=501
 pkgrel=1
 pkgdesc="An RNA-seq Quality Control Package"
 arch=('x86_64')
@@ -9,7 +9,7 @@ license=('custom' 'MIT')
 depends=('perl' 'python' 'curl')
 makedepends=('rsync')
 source=("https://raw.githubusercontent.com/ucscGenomeBrowser/kent/master/LICENSE")
-sha256sums=('167e2e578f1fa4c83304397dcb18d06d64c78d47773f363aee476a47731af3a9')
+sha256sums=('793d774ec3941d88d5f93611639230030ea3e167282be144b6e5604bc5ad29a4')
 prepare(){
 	rsync -aP hgdownload.soe.ucsc.edu::genome/admin/exe/linux.x86_64/ ${srcdir}/${pkgname}-${pkgver}
 	cd ${srcdir}/${pkgname}-${pkgver}
