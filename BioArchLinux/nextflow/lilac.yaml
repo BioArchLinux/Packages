@@ -10,3 +10,4 @@ update_on:
   - source: github
     github: nextflow-io/nextflow
     use_lastest_release: true
+    prefix: 'v'
