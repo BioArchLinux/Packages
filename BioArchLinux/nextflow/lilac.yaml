@@ -9,5 +9,5 @@ post_build_script: |
 update_on:
   - source: github
     github: nextflow-io/nextflow
-    use_lastest_release: true
+    use_latest_release: true
     prefix: 'v'
