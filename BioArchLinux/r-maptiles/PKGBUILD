@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=maptiles
-_pkgver=0.11.0
+_pkgver=0.12.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='Download and Display Map Tiles'
 arch=(any)
 url="https://github.com/riatelab/maptiles"
@@ -21,8 +21,8 @@ optdepends=(
   r-tinytest
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('42f518b029a69dce5f296f2ac8094aca')
-b2sums=('28e9c2e839064e57b12331a30a1b349960fec470906a1a16df6671783a331fb7648708c3473a6f9892aa2d9ae0815e5a4a435d5dd7a16d421f4d9f168a254956')
+md5sums=('a3d1810e75762fda1b86a9e50ab0430f')
+b2sums=('66658b9caf7099bafe3aaa70dcf1b1eda378e3ce8bec701d3a9454860a117c2d8c8de465dfb066b08d97cdec7d4d0ca972d5a399a6054e772f1d38c0333ab26d')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
