@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang
 
 _pkgname=cigarillo
-_pkgver=1.2.0
+_pkgver=1.2.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Efficient manipulation of CIGAR strings"
 arch=('x86_64')
 url="https://bioconductor.org/packages/$_pkgname"
@@ -33,7 +33,7 @@ source=(
   "https://bioconductor.posit.co/packages/3.23/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
 )
 
-sha256sums=('798eb16f09b3eb9436c5d4026d3478a6a3b8185eb7669ab7331ee7d33ed1427f')
+sha256sums=('38e618f95d321cc0b68b3aa65225384ee68ac8af51cc8cf3cf40bb878fd92c12')
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
