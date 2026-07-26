@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=usmapdata
-_pkgver=1.0.0
+_pkgver=1.1.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Mapping Data for 'usmap' Package"
 arch=(any)
 url="https://usmap.dev"
@@ -21,8 +21,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('548c9ca61ca6197148fce35c9c031320')
-b2sums=('0c00d9046aaa4296ee66f9e96cf3135b870b17b897e3f0bef383c0b475d43ebc75b892058d5cd136668ca845f613e0a851aecf24ab15b8aceff5a31cfca605c4')
+md5sums=('7e086d87f7f7306439c154821a915549')
+b2sums=('a9f5c77830c72c9df0a565aaa2aa584c3957efc7120163ffbe9b1e7d4996309b7ebf33d9f078dbd559f1d39f3aadd07ceecb0f913c13afed66d0d20d914a0640')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
