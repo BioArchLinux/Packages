@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=mcptools
-_pkgver=1.0.0
+_pkgver=1.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='Model Context Protocol Servers and Clients'
 arch=(any)
 url="https://github.com/posit-dev/mcptools"
@@ -16,20 +16,22 @@ depends=(
   r-httr2
   r-jsonlite
   r-nanonext
+  r-openssl
   r-processx
   r-promises
   r-rlang
   r-yaml
 )
 optdepends=(
+  r-callr
   r-knitr
   r-rmarkdown
   r-testthat
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b60b9134b399ff200a954524773689e0')
-b2sums=('45b7da0fa170746ff2777837b3bc7f12257757049626e77ac802715f8aa8a31e10cb11a7e572abbe5e789ec7f57452a9cae81b103d6abd3bf8353d9656da60a7')
+md5sums=('e2aa04b123e23c24b6ee418994371945')
+b2sums=('0ad70cc3d1ab0842b08a94ddab3d266fb708dd7f1996d6900474bad7f8d66a65f714f144543d62bc000aa05ce5f3388e1d12bdbfc23b7b84ffbfd5bd5e873d8e')
 
 build() {
   mkdir build
