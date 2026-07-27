@@ -30,6 +30,12 @@ optdepends=(
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('9286ac29c0de4af63e5f20af4cc422336693cedd9159eb5418fdb9281657ffab')
 
+prepare() {
+    cd ${pkgname}-${pkgver}
+    export RUSTUP_TOOLCHAIN=stable
+    cargo fetch  --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
 }
