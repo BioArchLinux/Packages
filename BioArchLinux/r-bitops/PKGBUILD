@@ -7,10 +7,10 @@
 # Contributor: fordprefect <fordprefect@dukun.de>
 
 _pkgname=bitops
-_pkgver=1.0-9
+_pkgver=1.1-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Bitwise Operations"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -19,8 +19,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('2214ea9a069223af2bdc9e7528876025')
-b2sums=('6fd3b6768c2a814b59b1288e3b1db669e05e01ac3aaf1e0f5fb3471e826d2055f21a8980c1342c954fe2ca1f5ec513f2b5ff67e0fee3354cd24f13e95da0dc81')
+md5sums=('6e2f8d461c60c5187313a4bce28dbf39')
+b2sums=('1929d233eeb2dcdad3c641969901f5b655bd5772517a4512cb4a21d169129f5146b202634716520264e6a2cd800aecabbca1e034c8978a4a8fef81cd99b16637')
 
 build() {
   mkdir build
