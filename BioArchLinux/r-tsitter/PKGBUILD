@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=tsitter
-_pkgver=0.1.0
+_pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Tree-Sitter Parsing Tools"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -22,8 +22,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f4e81a8f59f0f1af9967d7fde01b0863')
-b2sums=('7ad322f7884b523cb8a2c650d770b30125409741a9a0b230da97567c06ced0e3f8af7706cb3e7745a680c450bc840e153ccd563bd814b66a8602b848e826733d')
+md5sums=('ca1f2435caceb112ef0734284fe38437')
+b2sums=('a0b85cf5a26653bc409d00c8c4cc9fe318581964f9fb87a7f1a6d2f6724e33b1568b8ac508757ed2cbe8909e22a07dbef406aa002c40c89d62c848f72e70b47f')
 
 build() {
   mkdir build
