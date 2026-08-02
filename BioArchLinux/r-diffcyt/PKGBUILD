@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=diffcyt
-_pkgver=1.28.0
+_pkgver=1.32.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -34,8 +34,8 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a68f1e87d0f6cb5be325d081bde2898f')
-b2sums=('050893c7ba0693d874cf2677f7339588e9e1e25dca570c7989151b04b2ef14939ec3d7f518cc50f9c5b244581bcd32244c1702800519e8f6902eba312563fcfa')
+md5sums=('8c033efdf8109450dfa4eba1edfa8294')
+b2sums=('20bf8a0d71233caf74eae68e89fba234a825129660f0f3030ac8af41df806a8deeafab9ea4ac98bfdcd4b1c5ae5c782f49ad664a187052d00f66183ef5c5542f')
 
 build() {
   mkdir build
