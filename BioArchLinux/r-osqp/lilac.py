@@ -10,6 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "Apache License 2.0 | file LICENSE",
+        expect_systemrequirements = "C++17, GNU make",
     )
 
 def post_build():
