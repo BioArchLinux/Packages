@@ -6,7 +6,7 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
 pkgdesc="Symbolic Differentiation"
-arch=(any)
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
 depends=(
