@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=GRaNIE
-_pkgver=1.8.0
+_pkgver=1.16.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -56,6 +56,7 @@ optdepends=(
   r-bsgenome.hsapiens.ucsc.hg38
   r-bsgenome.mmulatta.ucsc.rhemac10
   r-bsgenome.mmusculus.ucsc.mm10
+  r-bsgenome.mmusculus.ucsc.mm39
   r-bsgenome.mmusculus.ucsc.mm9
   r-bsgenome.rnorvegicus.ucsc.rn6
   r-bsgenome.rnorvegicus.ucsc.rn7
@@ -78,6 +79,7 @@ optdepends=(
   r-purrr
   r-rbioapi
   r-reactomepa
+  r-rsqlite
   r-testthat
   r-tfbstools
   r-txdb.dmelanogaster.ucsc.dm6.ensgene
@@ -85,6 +87,7 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg38.knowngene
   r-txdb.mmulatta.ucsc.rhemac10.refgene
   r-txdb.mmusculus.ucsc.mm10.knowngene
+  r-txdb.mmusculus.ucsc.mm39.knowngene
   r-txdb.mmusculus.ucsc.mm9.knowngene
   r-txdb.rnorvegicus.ucsc.rn6.refgene
   r-txdb.rnorvegicus.ucsc.rn7.refgene
@@ -92,8 +95,8 @@ optdepends=(
   r-wgcna
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('eebd7994ef623c8636b4ea0d6ca91a55')
-b2sums=('d29cd13677278725a34d8b32daf75f2d65b47b7738bf453c1c643e43b352509d92cb4bf03219ad0519f83dfc0c5f4a8229dfe20cd028afa5ed1679728f683134')
+md5sums=('f17a2cd70cf95e0bffd9a98d53fa7565')
+b2sums=('18ae6c7a703b5165cbd90c5004d9049f0e74acb3c282f2b42e4a83199a1a1380c5acd42da15af76a3689816d9db4a20848d1571332aa06a8f00633a22cc8d8b8')
 
 build() {
   mkdir build
