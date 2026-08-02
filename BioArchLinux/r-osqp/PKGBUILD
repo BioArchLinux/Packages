@@ -13,6 +13,7 @@ license=('Apache-2.0')
 depends=(
   r-r6
   r-rcpp
+  r-s7
 )
 makedepends=(
   cmake

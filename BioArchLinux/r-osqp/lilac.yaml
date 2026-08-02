@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-r6
 - r-rcpp
+- r-s7
 repo_makedepends:
 - r-slam
 - r-testthat
