@@ -14,6 +14,10 @@ license=('LicenseRef-Rttf2pt1')
 depends=(
   r
 )
+optdepends=(
+  r-testthat
+  r-withr
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "$_pkgname-use-ldflags.patch::https://github.com/wch/Rttf2pt1/pull/23.patch")
 md5sums=('993029fbdbaeb22d5b20368d071a1dcd'
