@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=ASURAT
-_pkgver=1.12.0
+_pkgver=1.16.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -36,8 +36,8 @@ optdepends=(
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('803a87b7fcff2e81f622c5177bb8edb1')
-b2sums=('569a1a48f1786009352f3a8632131f4f9735eb9f033d128799032478e14876092d021c92f20c3e192289fa7e1433a11467339c565f114fab4bcce0d67b64d7ee')
+md5sums=('b71b6d51838aa580b47d0fda0f1fade0')
+b2sums=('bb33eb617e0c9a212aca76626aacd5fa4be37fc15b91e6902c0b1774f4ff30ae1699781b52cc9f8e1ef94b448b20ef880ea367808e50e1d2882d46fbe23124fe')
 
 build() {
   mkdir build
