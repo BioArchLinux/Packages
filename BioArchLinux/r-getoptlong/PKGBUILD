@@ -2,10 +2,10 @@
 # Contributor: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=GetoptLong
-_pkgver=1.0.5
+_pkgver=1.1.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=9
+pkgrel=1
 pkgdesc="Parsing Command-Line Arguments"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -29,9 +29,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")
-md5sums=('859f5b437ccf1eda9fe0e99eb80b2def'
+md5sums=('e0589fe8c02da2b90f15a7953bda8f84'
          '2973d9109d39fe8fb5f1d3b93b7cb481')
-b2sums=('e33d5c05f4a597144881cefdfcc1c96698136de1559797ac58a0e4f16cf92498e41407d3675fdebafef205379d17fba76f3354c25bbe509444c0afd0dc4e6b59'
+b2sums=('fb492ea8af0fcb578c41d4f956f4a1f7aa954dd553608900c16d3b98c55dbb2da8b5533e9be00b42113536944429ba119295634d60005abff53ece1a5fa2660c'
         'fa9093742756bbc717c4702230155ff18358d209aa04bdce99940f717e19acdfe64bbfd5a46c7f9bda6ca767a376d5b9388c8c6029352ed27e2c539a4387e22d')
 
 prepare() {
