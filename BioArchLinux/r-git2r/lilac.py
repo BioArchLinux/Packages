@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "libgit2 (>= 1.0): libgit2-devel (rpm) or libgit2-dev (deb)",
+        expect_systemrequirements = "libgit2 (>= 1.0) and its dependencies libssh2 and openssl header and libraries.",
     )
 
 def post_build():
