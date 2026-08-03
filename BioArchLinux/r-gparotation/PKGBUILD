@@ -1,7 +1,7 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=GPArotation
-_pkgver=2026.7-1
+_pkgver=2026.8-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -13,8 +13,8 @@ depends=(
   r
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('ecabbfeefb676bff2e995f6726d12d9b')
-b2sums=('8bd9e45840073fd9f5324e6137f1da7ae57f3ca7b2a0f9701eeeabe86abb62f7b47800847f7c6aee01686d17828a9404e20080c6873d817d10d299a6deb74875')
+md5sums=('666ec1680be4812ef1245c62556e141f')
+b2sums=('8af502ab68d61a24e79069c0d638f0a8974355c2374106d71897864a64303f7d5b56329f18ef5b5aeabe6959ddb97c868c1fba9931f10470caadb13cea935275')
 
 build() {
   mkdir build
