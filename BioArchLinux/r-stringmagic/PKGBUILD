@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=stringmagic
-_pkgver=1.2.0
+_pkgver=1.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Character String Operations and Interpolation, Magic Edition"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -18,8 +18,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('0f58ab4c2367d17ecb078080536cc7ce')
-b2sums=('daeceb94ef395ede0855ce2b0fd2e0cfb15bdc178d6982228e39878e6583ce4daeaee9a4615bb13674e3eed0cf978f5422ad79ef78d5c999ffc0c4ab4861ab21')
+md5sums=('0f2143f36f0fc634ed3da0b8b3e01a88')
+b2sums=('f05a6db2a7e4211da41b0c1e76a2a154727fd499acefc7f6ba49eb0e3999ef021d9918030c544b669445199c076c6a89961fb0580059bc28eb41f277337331db')
 
 build() {
   mkdir build
