@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=rncl
-_pkgver=0.8.9
+_pkgver=0.8.10
 pkgname=r-${_pkgname,,}
-pkgver=0.8.9
-pkgrel=2
+pkgver=0.8.10
+pkgrel=1
 pkgdesc='An Interface to the Nexus Class Library'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -19,7 +19,7 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('8e64a0cae60010498e3aa7a858f1b18143ae2e0eff0ed7db0a76bcda05012709')
+sha256sums=('8c80ee535786a0bb4b87e27a89dc77b7ef5a4ac1427b5d48e6e8f4652e16db85')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
