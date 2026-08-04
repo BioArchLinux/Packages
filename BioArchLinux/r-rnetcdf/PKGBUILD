@@ -1,10 +1,10 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=RNetCDF
-_pkgver=2.11-1
+_pkgver=2.11-2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Interface to 'NetCDF' Datasets"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -24,8 +24,8 @@ optdepends=(
   r-bit64
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9acc95ef2f172363ce3f88ae7c5632c3')
-b2sums=('558e7babf251dd322a42c866344998a713dcca380ac87ca0e10354f34f372c131197b55c22de48de43f9898e3636a9379dae4a9235bb082c1e7563c963aad9a9')
+md5sums=('b829ecd1291782336a82785e4b95cc73')
+b2sums=('050ed3a83c3669a1ef70d12d0b387f5805178c6c9400212535f0d6249bc140f3e32401e782beff3091a3a4dea4828d2199a63bc5d9eaab9a006f0448d7fd4555')
 
 build() {
   mkdir build
