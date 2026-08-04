@@ -3,7 +3,7 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=bslib
-_pkgver=0.11.0
+_pkgver=0.12.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -42,8 +42,8 @@ optdepends=(
   r-yaml
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('33ff4265fa9789b2b35945be75e61fd0')
-b2sums=('9566d1cf2f40985c3b31f864bf4ef0c9164dd05e4ab4de56d84c670bb3a5c44d5bf9f98895286ebe7b4d9ab4b160da399e99db68bbb4061e22d283e8de9a8822')
+md5sums=('4e10d130d9538a635ae123e52b1274bf')
+b2sums=('05a9a4c67f598c429e62c45e6dd029699747c9ecb5f440fc3d27e361f97d504869735486ae6cc61f2cdfb42f4b69bf550ef1ec6a139ab289c03856962687cfcd')
 
 build() {
   mkdir build
