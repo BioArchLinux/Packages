@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=strucchange
-_pkgver=1.5-4
+_pkgver=1.6-0
 pkgname=r-${_pkgname,,}
-pkgver=1.5.4
-pkgrel=3
+pkgver=1.6.0
+pkgrel=1
 pkgdesc='Testing, Monitoring, and Dating Structural Changes'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,7 +25,7 @@ optdepends=(
   r-tseries
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('789bc64d36a79539d17db5e3d50a3f32cf709a42177ffd336c10a8201b5dd718')
+sha256sums=('6f2ca684f0d78cc8d843da25ec03da05533073956f39c52c426fecb20ef66395')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
