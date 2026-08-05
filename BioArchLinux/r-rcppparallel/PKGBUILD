@@ -47,7 +47,7 @@ build() {
 
 check() {
   cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" Rscript --vanilla doRUnit.R
+  R_LIBS="$srcdir/build" Rscript --vanilla test-install-libs.R
 }
 
 package() {
