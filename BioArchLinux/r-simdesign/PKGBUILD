@@ -2,7 +2,7 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=SimDesign
-_pkgver=2.25
+_pkgver=2.26
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -11,42 +11,42 @@ arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-clipr
-  r-e1071
-  r-testthat
-  r-parallelly
-  r-dplyr
-  r-sessioninfo
   r-beepr
-  r-pbapply
+  r-clipr
+  r-dplyr
+  r-e1071
   r-future
   r-future.apply
+  r-parallelly
+  r-pbapply
   r-progressr
-  r-r.utils
-  r-mirai
   r-qs2
+  r-r.utils
+  r-sessioninfo
+  r-testthat
 )
 optdepends=(
-  r-knitr
-  r-ggplot2
-  r-tidyr
-  r-purrr
-  r-shiny
+  r-cli
   r-copula
   r-extradistr
-  r-renv
-  r-cli
-  r-job
-  r-future.batchtools
   r-frf2
-  r-rmarkdown
+  r-future.batchtools
+  r-ggplot2
   r-httr
+  r-job
+  r-knitr
+  r-mirai
+  r-purrr
+  r-renv
+  r-rmarkdown
   r-rpushbullet
+  r-shiny
   r-snow
+  r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1b77c49aef705df1968c8fdc5ce5bb13')
-b2sums=('ce6aab3e3dee3ace0fad97ecb6f86bdd5f08967b0ea77b0ee07cb285922bb7728be62b995592b69b60a731b5c018ae632ab02fd94b8ad1d5586589fbed25975a')
+md5sums=('c25a2513e24348bb718d9959b49daa67')
+b2sums=('62533c6699eda6d208d7167dae5e8413c1b6646a32e0b42c9253b01e408862a8ae9f17eb1df43cc986cb8d216deec1c81aa717cd4b25d66f8248ef6a102f65a4')
 
 build() {
   mkdir build
