@@ -15,6 +15,7 @@ depends=(
   r-rcppparallel
   r-coda
   r-lifecycle
+  r-s7
 )
 makedepends=(
   r-rcpparmadillo

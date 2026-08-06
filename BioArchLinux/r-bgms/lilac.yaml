@@ -8,6 +8,7 @@ repo_depends:
 - r-rcppparallel
 - r-coda
 - r-lifecycle
+- r-s7
 repo_makedepends:
 - r-rcpparmadillo
 - r-dqrng
