@@ -1,38 +1,38 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=bgms
-_pkgver=0.1.6.3
+_pkgver=0.2.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Bayesian Analysis of Graphical Models"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-rcpp
-  r-rdpack
-  r-rcppparallel
-  r-coda
   r-lifecycle
+  r-rcpp
+  r-rcppparallel
+  r-rdpack
   r-s7
 )
 makedepends=(
-  r-rcpparmadillo
-  r-dqrng
   r-bh
+  r-dqrng
+  r-rcpparmadillo
 )
 optdepends=(
+  r-coda
   r-covr
   r-knitr
   r-qgraph
   r-rmarkdown
   r-testthat
-  r-ggplot2
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8a075871cc702b9abca2260a056a64d0')
-b2sums=('a8dc822b4832e3d4bf390e037cd008ad91ddea3dc7892545bf56d1852cae99403ea6afa65eea757a3a92414f1bb1bdbabfe674ad3f32dcf138806573d40d3e6a')
+md5sums=('3994ef94f6e2a9110691179dac39c7cd')
+b2sums=('dc0434a8ce7ad921d3383ed32b9b9d7c8d961cad8ca1ab1a7d03e7045df772f773835b8242f4a697795977c719e58395ffbe62a943a72ee9ec591eb8f0f26a49')
 
 build() {
   mkdir build
