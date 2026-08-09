@@ -11,6 +11,9 @@ url="https://cran.r-project.org/package=$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r
+  r-cli
+  r-lifecycle
+  r-rlang
 )
 optdepends=(
   r-futile.logger
