@@ -1,16 +1,15 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=log4r
-_pkgver=0.4.4
+_pkgver=0.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="A Fast and Lightweight Logging System for R, Based on 'log4j'"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('Artistic-2.0')
 depends=(
-  r
   r-cli
   r-lifecycle
   r-rlang
@@ -23,16 +22,16 @@ optdepends=(
   r-lgr
   r-logger
   r-logging
-  r-loggit
   r-microbenchmark
   r-rlog
   r-rmarkdown
   r-rsyslog
   r-testthat
+  r-webfakes
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('6e9876924f52202a0e6437b1551b986d')
-b2sums=('ab8bf5b9217d471e13e16337ca09254e2d498d9d2f45b4da5782dbff639ca8463023c75a93fbe5d03bf7c5b05fb38359508db6ac79261cf83bbf79d62b3d46ea')
+md5sums=('9f9cab87435d4d91b456d9b4c9af5180')
+b2sums=('de7d4ef1cb6a464cd5ab695b23fe8c85e6ee6a128e206639196f72c6e77e4e8f88180d8b16044c704f863b0c20f268d962f2e1966784fb5a13ca81b04c079bb1')
 
 build() {
   mkdir build
