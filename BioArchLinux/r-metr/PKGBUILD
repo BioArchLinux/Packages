@@ -4,10 +4,10 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=metR
-_pkgver=0.18.0
+_pkgver=0.18.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Tools for Easier Analysis of Meteorological Fields"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -25,6 +25,7 @@ depends=(
   r-memoise
   r-plyr
   r-purrr
+  r-rlang
   r-scales
   r-sf
   r-stringr
@@ -41,31 +42,28 @@ checkdepends=(
   r-vdiffr
 )
 optdepends=(
-  r-covr
-  r-gridextra
+  r-cftime
+  r-furrr
   r-gsignal
-  r-here
   r-irlba
   r-knitr
   r-kriging
   r-maps
   r-markdown
   r-ncdf4
-  r-pcict
-  r-pkgdown
   r-proj4
+  r-rcdo
   r-reshape2
   r-rnaturalearth
   r-terra
   r-testthat
   r-vdiffr
-  r-viridis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")
-md5sums=('ccf029d40f8a36c1f272ec9d566a0797'
+md5sums=('74ae327fcd153953e7e28b027c53557a'
          '11cae80fa1a7d5cf247b879f0598d154')
-b2sums=('a8a410cb400b70286df2a8ee85117b1a4f666e34ade6e8803a56021da1329e0bc4b27bb2239ca075661563bc08a9436525225053742afec211d327e6ae518594'
+b2sums=('ed323b75c8e5c56c57af80caf9448e7c7b676d3bb9a90aac0484a3f3cab522d09a3600f7e2317e2e0e5afdd8f5c50af90678769ba4b8f5a1c6e8753df1953da3'
         '11e180cc17fdbd84d50aab26d4c21ed8e79b2e217753f157e99b25c0ef55b9c1f9f8b91f33ca057b19460f2c4cb5cc5339eab5b5bf49688af281626331b168c6')
 
 
