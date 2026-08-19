@@ -2,7 +2,7 @@
 
 _name=pyhmmer
 pkgname=python-${_name}
-pkgver=0.12.2
+pkgver=0.12.3
 pkgrel=1
 pkgdesc="Cython bindings to HMMER3. https://doi.org/10.1093/bioinformatics/btad214"
 arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
@@ -11,7 +11,7 @@ license=("MIT")
 depends=('python' 'gcc-libs' 'glibc' 'python-psutil')
 makedepends=('git' 'cython' 'python-build' 'python-installer' 'cmake' 'ninja' 'python-scikit-build-core')
 source=("git+https://github.com/althonos/pyhmmer.git#tag=v$pkgver")
-sha256sums=('10d17f8d1f35866adaed7d4078911784c3c109bcfb2fdc2f0d1f1739f186fed4')
+sha256sums=('2aabc2a021391d27a6f7df780ad421a4a8e802f40f5bae1628270c0429a3105d')
 
 prepare() {
     cd "${srcdir}/${_name}"
