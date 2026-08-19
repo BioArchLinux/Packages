@@ -3,8 +3,8 @@
 
 pkgname=sdsl-lite
 _packager=vgteam
-pkgver=2.3.1
-pkgrel=2
+pkgver=2.4
+pkgrel=1
 pkgdesc="Succinct Data Structure Library"
 arch=('i686' 'x86_64')
 url="https://github.com/vgteam/sdsl-lite"
@@ -24,7 +24,7 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/vgteam/sdsl-lite/archiv
         'series'
 )
 
-sha256sums=('1c41164a3c59ee3061e0b96cbc30dd43c55d45a03124ab4eac68bacd85c0a2c4'
+sha256sums=('a9a726e8281cc78e188cd4e1888edd8897dc10342eb7105feee29f7e64c143e3'
             '20aa5f3270afc1a0fa3bc65fdfa044927a6501e4e10e49341cf3cb1ed2103680'
             'f7fa43df06965e9979e182c8a2784cf8efa288563ab794459a952a2614d606db'
             '363104f6a8f908d0ba1cbbe7f0cd66d4134f54e08e661aef936745341fcef98a'
