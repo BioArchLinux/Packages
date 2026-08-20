@@ -1,10 +1,10 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=box
-_pkgver=1.2.2
+_pkgver=1.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='Write Reusable, Composable and Modular R Code'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -24,8 +24,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8fb3e3127ac730d1c29b3743eba242a2')
-sha256sums=('ae26ede63cf3977e1cc2a666e1af32c04de51b2981986b7341130406f0c43d7b')
+md5sums=('49bf0f6e39fb08189d528b48a6d0e0d0')
+sha256sums=('0c6514e244c73177b4057357dcb58526957943c88e80640cb3a2278b90598b00')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
