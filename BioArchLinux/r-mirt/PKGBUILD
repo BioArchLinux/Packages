@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mirt
-_pkgver=1.46.1
+_pkgver=1.47
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Multidimensional Item Response Theory"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -38,8 +38,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('76ca5556634112d1770f7f3f9370264d')
-b2sums=('9266e0e40dd9a65c41eedfb78b2cf21daf10912e5b5601b3fd9bb9e85038f8ebb587baca762717b9e4f5fb7362908187fcc25a3990d1de69c8d8c405400f6289')
+md5sums=('7bad5adb095d868cf5474736cf6d4531')
+b2sums=('9a7fe0b51304036f24e945fa33661bc19b08fa78934a6f2bb4a7e910d52530831ff9e96bab1d21a52646364a86627cea5069d0bfeb47a55c1c9b8da1dbbc8189')
 
 build() {
   mkdir build
