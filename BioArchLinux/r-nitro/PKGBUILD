@@ -2,7 +2,7 @@
 pkgname=r-nitro
 _pkgname=nitro
 pkgver=2026.08.21
-pkgrel=1
+pkgrel=2
 pkgdesc="Integration of TNT in R"
 arch=('any')
 url="https://github.com/paravian/${_pkgname}"
