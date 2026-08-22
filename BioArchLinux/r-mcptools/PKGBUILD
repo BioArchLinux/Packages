@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=mcptools
-_pkgver=1.0.1
+_pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -30,8 +30,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e2aa04b123e23c24b6ee418994371945')
-b2sums=('0ad70cc3d1ab0842b08a94ddab3d266fb708dd7f1996d6900474bad7f8d66a65f714f144543d62bc000aa05ce5f3388e1d12bdbfc23b7b84ffbfd5bd5e873d8e')
+md5sums=('601aa9728072b80d13b5c9c57b5cce23')
+b2sums=('4847c113d290a63e66f91cb1c3de813ce0a5611387b9d36fa413d5c3abcb5005193e30af54750442dd3f30e377119e8cc9c6e31b384b2d11f01bde84c073da00')
 
 build() {
   mkdir build
