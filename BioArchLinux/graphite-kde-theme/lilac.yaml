@@ -1,6 +1,6 @@
 maintainers:
 - github: starsareintherose
-  email: starsareintherose@outlook.com
+  email: kuoi@bioarchlinux.org
 post_build_script: |
   git_add_files('PKGBUILD')
   git_pkgbuild_commit()
