@@ -1,9 +1,9 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=survivalAnalysis
-_pkgver=0.3.0
+_pkgver=0.4.0
 pkgname=r-${_pkgname,,}
-pkgver=0.3.0
+pkgver=0.4.0
 pkgrel=1
 pkgdesc='High-Level Interface for Survival Analysis and Associated Plots'
 arch=('any')
