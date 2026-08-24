@@ -31,7 +31,7 @@ optdepends=(
   r-rmarkdown
   r-tidyverse
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=(""https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('eef98a2d2517c3367b89f6054ef1ba19302f5bbf819dbc17fb243d282b8c8c68')
 
 build() {
