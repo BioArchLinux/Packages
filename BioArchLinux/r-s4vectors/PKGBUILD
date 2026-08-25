@@ -6,7 +6,7 @@
 # Contributor: Sauliusl <luksaulius at gmail>
 
 _pkgname=S4Vectors
-_pkgver=0.50.1
+_pkgver=0.50.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -30,8 +30,8 @@ optdepends=(
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b65ef1a398c688677648a1595b524caf')
-b2sums=('4077347bc09ce0cda5323d390b10948efdb3f6dbc3bb359bc293df56ae20ce2fc8a1b71ed2d3cc1986f319fdfba1ae4ff2687e9fbf30279b4a4ed2af8a7b34f3')
+md5sums=('9bc7f87710636bf9637b41bcb3e3d621')
+b2sums=('c8c82f84081e641ef2b45cb643b8af07bfc1f683a690631c405c4b108ee10ecc563bcb79f1486a0e4819b450f14d7b1e22104f93fc052fa1e7cd36f1d6297474')
 
 build() {
   mkdir build
