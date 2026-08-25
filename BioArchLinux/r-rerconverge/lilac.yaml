@@ -16,8 +16,8 @@ repo_depends:
 - r-dplyr
 - r-ape
 update_on:
-- source: rpkgs
-  pkgname: RERconverge
-  repo: cran
-  md5: true
+- source: github
+  github: nclark-lab/RERconverge
+  use_max_tag: true
+  prefix: v
 - alias: r
