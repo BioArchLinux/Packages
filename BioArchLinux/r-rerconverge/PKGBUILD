@@ -2,7 +2,7 @@
 _pkgname=RERconverge
 pkgname=r-${_pkgname,,}
 pkgver=0.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Analysis of convergence between organismal traits and DNA or protein sequences"
 arch=('any')
 url="https://github.com/nclark-lab/RERconverge"
