@@ -11,6 +11,9 @@ repo_depends:
 - r-rcpp
 - r-rmpfr
 - r-scs
+- r-clarabel
+- r-highs
+- r-slam
 repo_makedepends:
 - r-rcppeigen
 update_on:

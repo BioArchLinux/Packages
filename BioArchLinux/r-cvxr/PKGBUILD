@@ -18,6 +18,9 @@ depends=(
   r-rcpp
   r-rmpfr
   r-scs
+  r-clarabel
+  r-highs
+  r-slam
 )
 makedepends=(
   r-rcppeigen
