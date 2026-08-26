@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "Cargo (Rust's package manager), rustc (>= 1.67.1), and GNU Make",
+        expect_systemrequirements = "Cargo (Rust's package manager), rustc (>= 1.70.0), and GNU Make",
     )
 
 def post_build():
