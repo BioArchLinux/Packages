@@ -9,7 +9,7 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=libnode
-pkgver=26.8.0
+pkgver=26.8.1
 pkgrel=1
 pkgdesc="Evented I/O for V8 javascript - shared library"
 arch=('x86_64')
@@ -20,7 +20,7 @@ depends=('icu' 'libuv' 'libnghttp2' 'libnghttp3' 'libngtcp2' 'openssl' 'zlib' 'b
 makedepends=('python' 'procps-ng')
 conflicts=('nodejs-shared')
 source=("nodejs-${pkgver}.tar.gz::https://github.com/nodejs/node/archive/refs/tags/v${pkgver}.tar.gz")
-sha512sums=('e3c42f8baba4f28f0f9693905d1043b789ce1c01100a1824bb1d05ae1f196eb253b77cc606ec1bd0fb31bd64eda86d8a0381d42c6525bddfe76c4d1718ce1417')
+sha512sums=('b098e67ac8e75e1943b859bc9ee5bce4904294f62d920df2bd7772e13bddc1f2b076d1b2cef5c808e7c431e8125697a72aaaabe3f285137d22b66459667f44e8')
 
 build() {
   cd node-${pkgver}
