@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=modelbased
-_pkgver=0.16.0
+_pkgver=0.17.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -51,7 +51,6 @@ optdepends=(
   r-nanoparquet
   r-nestedlogit
   r-ordinal
-  r-palmerpenguins
   r-patchwork
   r-pbkrtest
   r-performance
@@ -74,8 +73,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d4dabc43cc9c2d5937ad0fa2d93f8e54')
-b2sums=('4a2430fe548ea7fb3be0eb1b1ae1781ab5a654096bdce2e536680c400fa336cdb38296844471213cdcb392fdd4c6b6da4b5ae979cdcc36b8f93014050c09cfc0')
+md5sums=('a8f3a86dfa711fb9bcf8a65f7968e3c3')
+b2sums=('70449b94303a483a09492c57d72eb53173d709ffd8ac37e188f323b3f7fb7a7a630e6a5bbccc0b271c0c2f22ad6460636ea120b5cf4f00d30106ee6daf1ce934')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
