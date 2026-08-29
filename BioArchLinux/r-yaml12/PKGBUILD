@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=yaml12
-_pkgver=0.1.0
+_pkgver=0.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Fast 'YAML' 1.2 Parser and Formatter"
 arch=('x86_64')
 url="https://github.com/posit-dev/r-yaml12"
@@ -25,8 +25,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b8267aa53b360269fab732d8d2c04e90')
-b2sums=('93f7e8dbd66705de6afc8ba70f3b0f37b7d710d3267c42254efd7021689c6dcde7afb251459149a64fbb5673be7a9a74f2af91677e72f5118d9e40d3e5c6dd63')
+md5sums=('35a11225cf498f2751e99149d49c4d6f')
+b2sums=('5398d8367996bc8866186302a1daae7aafefb1cca63ff601cade4c43bc4837f6786865299b5b27fa06680220044d76c968ef1ce1822c85688f7ec7c61bce8ebf')
 
 build() {
   mkdir build
