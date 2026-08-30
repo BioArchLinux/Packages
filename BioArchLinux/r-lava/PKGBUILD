@@ -10,7 +10,7 @@ pkgrel=1
 pkgdesc="Latent Variable Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only')
+license=('Apache-2.0')
 depends=(
   r-cli
   r-future.apply
