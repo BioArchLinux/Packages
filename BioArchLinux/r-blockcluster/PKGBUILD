@@ -15,7 +15,7 @@ depends=(
 makedepends=(
   r-rcpp
 )
-source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+source=("https://cran.r-project.org/src/contrib/Archive/${_pkgname}/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('229a6a56d3653a9c8cdbb7837da8a561')
 b2sums=('5cc00e76666906771c730b3008533097fc9a40b3c1944735ad444ba93d01dcc819c32495bb4785ca9d1fe52c09ae542850ac1dcfc119a206b01c482e90a4372f')
 
