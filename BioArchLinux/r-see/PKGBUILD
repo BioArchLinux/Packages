@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=see
-_pkgver=0.14.1
+_pkgver=0.14.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Model Visualisation Toolbox for 'easystats' and 'ggplot2'"
 arch=(any)
 url="https://easystats.github.io/see/"
@@ -62,8 +62,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('83d19fbc097f3bcf199bafb26f030705')
-b2sums=('c6e9c28ee85f5324dc21130621354a07ec0a79d34d787bc5cbad19e0be4f973dfd31c324eb39be6310f03a05bec8bfae9013d0602a85754515a19be581989620')
+md5sums=('f8492d739db23e540a85151ac3195e56')
+b2sums=('8f3e13925341b98ffcc32dd22c68ae93807f70e06c9d8da18bfab55b283e50868a9eac37ca6ae92208ee88edcfbc5556ccf580bdbd6186b496b8bb7dd239594c')
 
 build() {
   mkdir build
