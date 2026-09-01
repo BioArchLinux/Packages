@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=snowflakeauth
-_pkgver=0.2.2
+_pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Authentication Helpers for 'Snowflake'"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,8 +25,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('85d42d3cfd537082a9ad65719b762349')
-b2sums=('b97c68bfaee0b08de1e313276b3060a5142d6687fa73b29bd806b0bf90043d6d686b8b2b201834b24f6a279e88bb5f5bd74b4873e8b99a52c4f766854fd67e97')
+md5sums=('ac23610f96cd194907a36842ed67c697')
+b2sums=('3e594ae7bd403a17dfade6af7762c02423ba7907329c4966c4a2ed0062eca4466be36b2c6bc3417ecf58706931f2e4293c309c9ca3a57462f31d54691e0bfd06')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
