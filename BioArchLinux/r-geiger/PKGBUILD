@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=geiger
-_pkgver=2.0.11
+_pkgver=2.0.12
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=3
+pkgrel=1
 pkgdesc='Analysis of Evolutionary Diversification'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,8 +25,8 @@ optdepends=(
   r-treesim
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('925b2f26920deb3a65dc6b8e7bc96f52')
-b2sums=('2304c213f35644efed55e191d18e7732a0773d9318366bacc9bc3040b6864f0757415df4b42aaf2f3c5033abdcada96ce03db99f7407f232d3d6b7a3e8474281')
+md5sums=('93ee909862abb0a728b69bb06e82b23a')
+b2sums=('728e86bfceeade9a59f979cb99240c789593f82fa4d34ee3b8b622f7b51c7db41340a29bd6940c47be2812a0291caf9ed0ac81c39a3d0a45661d2e265643f14b')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
