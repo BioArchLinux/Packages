@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=vitals
-_pkgver=0.3.0
+_pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Large Language Model Evaluation"
 arch=(any)
 url="https://vitals.tidyverse.org/"
@@ -15,7 +15,6 @@ depends=(
   r-ellmer
   r-glue
   r-httpuv
-  r-httr2
   r-jsonlite
   r-purrr
   r-r6
@@ -32,13 +31,14 @@ optdepends=(
   r-knitr
   r-magick
   r-ordinal
+  r-reticulate
   r-rmarkdown
   r-testthat
   r-vcr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b7ab765940f6de11bb0f9df44f62c201')
-b2sums=('04dac0b3d7ede513fd572f894f3fe7b2760631a4deb64e13595b0df235e539f20f4b1628c904925f2e9a99b04a8df2c80c0f42e084142ecde22f1a65b3009edd')
+md5sums=('a00ec59431cc0543e06f4188d0b10abe')
+b2sums=('3fd25adeeb29663597b917d3a918b94a3d7f6223934ee6bbc975523f02e8f735f818862e336d51e814587165392ca1ae4502ed32241d90b412e730c5b521a736')
 
 build() {
   mkdir build
