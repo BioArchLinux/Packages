@@ -1,7 +1,7 @@
 # Maintainer: Clemens Brunner <clemens dot brunner at gmail dot com>
 pkgname=python-pebble
 _name=${pkgname#python-}
-pkgver=5.2.1
+pkgver=5.2.2
 pkgrel=1
 pkgdesc="Pebble provides a neat API to manage threads and processes within an application"
 arch=('any')
@@ -10,7 +10,7 @@ license=('LGPL')
 depends=('python')
 makedepends=('python-setuptools')
 source=(${url}/archive/refs/tags/${pkgver}.tar.gz)
-b2sums=('b68cc04a3a1789d146b9fd4aa9e147dac018a689e0ae2ac1bbcffce9372fca94cd3bfbd94a19c4190600593085f793eb036d1788cc865c15b1f8568765d87a3c')
+b2sums=('0f37fa7f304e5009d81d8322105cfb694585cd9e74f4702f0c2abccfebf75946b91142e7855fc303b07b30328415cc90d06dfd9b14521402b22f9e0ada39cf1c')
 
 build() {
     cd "$srcdir/${_name}-$pkgver"
