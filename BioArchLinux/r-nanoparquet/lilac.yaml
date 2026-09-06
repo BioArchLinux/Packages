@@ -5,6 +5,7 @@ maintainers:
 repo_makedepends:
 - r-arrow
 - r-bit64
+- r-blob
 - r-duckdb
 - r-hms
 - r-mockery
