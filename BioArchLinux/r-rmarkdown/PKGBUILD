@@ -14,7 +14,7 @@ pkgrel=2
 pkgdesc="Dynamic Documents for R"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
-license=('GPL-3.0-only')
+license=('MIT')
 depends=(
   pandoc
   r-bslib
