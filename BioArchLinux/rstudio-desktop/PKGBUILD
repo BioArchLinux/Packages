@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2026.07.1+147
+pkgver=2026.08.2+200
 _pkgver=${pkgver//+/.}
 _srcname=rstudio
 # _srcname=rstudio-${pkgver//+/-}
@@ -16,9 +16,9 @@ _java_version=17
 _soci_version="4.0.3"
 _nodeversion="25"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
-: ${_copilot_version:=1.459.0}
+: ${_copilot_version:=1.520.0}
 
-pkgrel=1
+pkgrel=0
 pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
@@ -37,7 +37,7 @@ depends=('r>=3.3.0'
         'sqlite3'
         'clang'
         'hunspell-en_US'
-        'mathjax2'
+        'mathjax'
         'pandoc'
         'libyaml-cpp.so' # yaml-cpp
         'r-rmarkdown'
@@ -87,11 +87,11 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         )
 noextract+=("gwt-${_gwt_version}.tar.gz"
             "copilot-language-server-js-${_copilot_version}.zip")
-sha256sums=('f36c8e152a5f7fb52190f56b51f36fdc6c23c6576261ef391f89e68d13f67a27'
+sha256sums=('1c7a14c14555a7926d3071afe466cab418cecdb79d3ecc3c63ab35dfef48b898'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
-            'd309a478662927ede55d3b58b1e4b864c6c8e484e57d53cafeb1e070d5523007'
-            'b8a822ccba82099f017c41366fcd808ce63883fc0503a7ff5367d24b0f7003df'
+            'c838b311a49aa4fdcacf1c74c900b568faaff32fabfdcced0ae9c5adea552876'
+            '610830d36a453946a0314822820e78013a43c8e4299574bafc7a3588021a358c'
             '27284accdad05ff8919a7ac6dc5f939a511a90842a35f6393517506d74809e76')
 options=('!emptydirs' '!debug')
 
@@ -154,7 +154,8 @@ prepare() {
     ln -sfT /usr/bin/pandoc pandoc/${_pandocver}/pandoc
 
     ln -sfT /usr/share/myspell/dicts dictionaries
-    ln -sfT /usr/share/mathjax2 mathjax-27
+    ln -sfT /usr/share/mathjax mathjax-27
+    ln -sfT /usr/share/mathjax mathjax-4
 
     ln -sfT "$srcdir/soci-$_soci_version" "soci-$_soci_version"
 
@@ -181,6 +182,8 @@ _build_soci() {
       -G Ninja
       -DCMAKE_BUILD_TYPE=None
       -DCMAKE_INSTALL_PREFIX='/usr'
+      -DBUILD_SHARED_LIBS=OFF
+      -Wno-author
       -DSOCI_TESTS=OFF
       -DSOCI_CXX11=ON
       -DSOCI_EMPTY=OFF
@@ -192,8 +195,6 @@ _build_soci() {
       -DWITH_ORACLE=OFF
       -DWITH_FIREBIRD=OFF
       -DWITH_ODBC=OFF
-      -DBUILD_SHARED_LIBS=OFF
-      -Wno-dev
       -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
       -DCMAKE_EXE_LINKER_FLAGS="-Wl,-z,relro -Wl,-z,now,-fuse-ld=mold"
   )
@@ -257,18 +258,19 @@ build() {
 
   local _opts_rstudio=(
     -B build
-    -S "${_srcname}"
+    -S "$_srcname"
     -G Ninja
     -DCMAKE_BUILD_TYPE=None
+    -DBUILD_TESTING=OFF
+    -Wno-author
+    -DQUARTO_ENABLED=${_quarto}
+    -DRSTUDIO_DISABLE_CHECK_FOR_UPDATES=ON
+    -DRSTUDIO_NODE_VERSION="Current"
     -DRSTUDIO_TARGET=Electron
+    -DRSTUDIO_UNIT_TESTS_ENABLED=OFF
     -DRSTUDIO_USE_SYSTEM_BOOST=ON
     -DRSTUDIO_USE_SYSTEM_SOCI=OFF
     -DRSTUDIO_USE_SYSTEM_YAML_CPP=ON
-    -DRSTUDIO_NODE_VERSION="Current"
-    -DQUARTO_ENABLED=${_quarto}
-    -DRSTUDIO_UNIT_TESTS_ENABLED=OFF
-    -DBUILD_TESTING=OFF
-    -Wno-dev
     -DCMAKE_SHARED_LINKER_FLAGS="-fuse-ld=mold"
     -DCMAKE_EXE_LINKER_FLAGS="-Wl,-z,relro -Wl,-z,now,-fuse-ld=mold"
   )
