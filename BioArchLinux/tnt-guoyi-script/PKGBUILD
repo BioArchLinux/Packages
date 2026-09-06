@@ -2,7 +2,7 @@
 basename=tnt-guoyi-script
 pkgname=('tnt2winclada' 'tnt-guoyi-script')
 _pkgname=TNT_Script
-pkgver=0.1.8
+pkgver=0.1.9
 pkgrel=1
 pkgdesc="TNT Script for Maximum Parsimony Analysis \
 	 https://doi.org/10.5281/zenodo.8428198"
@@ -11,7 +11,7 @@ url="https://github.com/starsareintherose/TNT_Script"
 license=('MIT')
 makedepends=('gcc' 'cmake' 'make')
 source=(https://github.com/starsareintherose/TNT_Script/archive/refs/tags/${pkgver}.tar.gz)
-sha256sums=('c7d677b9ec86ef5acb141b327a949052e75db1ca7efba270f2a78a6615e0ab3e')
+sha256sums=('4e0a886e4e3d16cc2b092a7e2dffd3433532a0a1997f6a62053c2bd34bf5ac42')
 build() {
   cd "$_pkgname-$pkgver"
   mkdir -p build
