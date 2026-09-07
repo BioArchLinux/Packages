@@ -2,7 +2,7 @@
 
 pkgname='python-mizani'
 _module=${pkgname#python-}
-pkgver=0.14.5
+pkgver=0.14.6
 pkgrel=1
 pkgdesc="Scales for Python"
 arch=('x86_64')
@@ -18,7 +18,7 @@ makedepends=(python-build
              python-setuptools-scm
              python-wheel)
 source=("${pkgname}-${pkgver}.tar.gz::https://files.pythonhosted.org/packages/source/${_module::1}/$_module/${_module}-$pkgver.tar.gz")
-sha256sums=('3e45f2ac335d5b8823bbf07893595fd4e0168f3ad73db3bba8bf07c6d2b184a7')
+sha256sums=('5b37ec00adb30420f18272844688b91137297068c707f18d6fd32673aed58a23')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
