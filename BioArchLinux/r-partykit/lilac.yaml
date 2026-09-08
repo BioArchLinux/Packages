@@ -7,6 +7,7 @@ repo_depends:
 - r-inum
 - r-libcoin
 - r-mvtnorm
+- r-strucchange
 update_on:
 - regex: partykit_([\d._-]+).tar.gz
   source: regex
