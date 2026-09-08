@@ -9,12 +9,11 @@ repo_depends:
 - r-cpp11
 - r-desc
 - r-knitr
+- r-lifecycle
 - r-pkgload
-- r-purrr
 - r-r6
+- r-rdtools
 - r-rlang
-- r-stringi
-- r-stringr
 - r-withr
 - r-xml2
 update_on:

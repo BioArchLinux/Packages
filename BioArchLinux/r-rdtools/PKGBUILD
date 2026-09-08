@@ -1,0 +1,43 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=rdtools
+_pkgver=0.1.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Efficient Manipulation of 'Rd' Files and Help Topics"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r
+)
+checkdepends=(
+  r-testthat
+  r-withr
+)
+optdepends=(
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('15243eafd24d97371d15f573530d9a12')
+b2sums=('1148248769b621ec2d7a7b145b13ae28433edb8abaaf28c7d5ab29ad2c2a6f837ced3cf0c8d960f5f3f8b82fcbfa66a6d1af7e7705352765f78498b941218191')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+check() {
+  cd "$_pkgname/tests"
+  R_LIBS="$srcdir/build" Rscript --vanilla testthat.R
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
