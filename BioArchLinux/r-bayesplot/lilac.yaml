@@ -4,9 +4,11 @@ maintainers:
     email: sukanka@askk.cc
 repo_depends:
   - r-dplyr
+  - r-ggdist
   - r-ggplot2
   - r-ggridges
   - r-glue
+  - r-lifecycle
   - r-posterior
   - r-reshape2
   - r-rlang
