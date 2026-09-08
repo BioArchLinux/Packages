@@ -3,6 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-cli
 - r-prismatic
 - r-rematch2
 - r-rlang
