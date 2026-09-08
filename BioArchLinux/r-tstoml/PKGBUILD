@@ -1,0 +1,46 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=tstoml
+_commit=548e2e71195906584b17ac0aa83e4d3edcef8da2
+pkgname=r-tstoml
+pkgver=0.0.0.9000
+pkgrel=1
+pkgdesc="Edit TOML Files"
+arch=(x86_64)
+url="https://github.com/gaborcsardi/tstoml"
+license=('MIT')
+depends=(
+  r-tsitter
+)
+checkdepends=(
+  r-hms
+  r-pillar
+  r-testthat
+  r-withr
+)
+optdepends=(
+  r-asciicast
+  r-hms
+  r-pillar
+  r-testthat
+  r-withr
+)
+source=("${_pkgname}-${_commit}.tar.gz::${url}/archive/${_commit}.tar.gz")
+sha256sums=('9e8c3c7ea9505440901d8b2e12108cd1d0b1af9505c114e96da14c6f5583559c')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname-$_commit"
+}
+
+check() {
+  cd "$_pkgname-$_commit/tests"
+  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla testthat.R
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
