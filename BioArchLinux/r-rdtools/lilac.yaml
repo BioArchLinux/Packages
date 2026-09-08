@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_makedepends:
+- r-testthat
+- r-withr
+update_on:
+- source: rpkgs
+  pkgname: rdtools
+  repo: cran
+  md5: true
+- alias: r
