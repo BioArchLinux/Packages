@@ -22,6 +22,13 @@ depends=(
   r-robustbase
   r-sp
   r-vcd
+  r-xgboost
+  r-mlr3
+  r-mlr3pipelines
+  r-paradox
+  r-mlr3tuning
+  r-mlr3learners
+  r-future
 )
 optdepends=(
   r-covr
@@ -31,6 +38,23 @@ optdepends=(
   r-rmarkdown
   r-tinytest
   r-withr
+  r- mgcv
+  r-reactable
+  r-pdist
+  r-enetLTS
+  r-robmixglm
+  r-stringr
+  r-glmnet
+  r-validate
+  r-ECOSolveR
+  r-cellWise
+  r-crmReg
+  r-mice
+  r-car
+  r-lgr
+  r-rpart
+  r-missRanger
+  r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('afa7492c54508c46eff39ac66fa4b05627e0044253ebe4a61b2a78d459f715e4')

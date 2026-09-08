@@ -14,6 +14,13 @@ repo_depends:
 - r-robustbase
 - r-sp
 - r-vcd
+- r-xgboost
+- r-mlr3
+- r-mlr3pipelines
+- r-paradox
+- r-mlr3tuning
+- r-mlr3learners
+- r-future
 update_on:
 - regex: VIM_([\d._-]+).tar.gz
   source: regex
