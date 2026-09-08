@@ -1,6 +1,7 @@
 from lilac2.const import PACMAN_DB_DIR
 from lilaclib import edit_file, run_protected
 import pyalpm
+import shlex
 import tarfile
 from types import SimpleNamespace
 
@@ -573,7 +574,7 @@ def r_apply_dependency_fixes(fixes: dict):
             print("depends=(")
             # Print all depends
             for dep in fixes['depends']:
-                print(f"{indent}{dep}")
+                print(f"{indent}{shlex.quote(dep)}")
             # Skip until we find the closing parenthesis
             continue
         elif stripped.startswith("makedepends=("):
@@ -583,7 +584,7 @@ def r_apply_dependency_fixes(fixes: dict):
             print("makedepends=(")
             # Print all makedepends
             for dep in fixes['makedepends']:
-                print(f"{indent}{dep}")
+                print(f"{indent}{shlex.quote(dep)}")
             continue
         elif stripped.startswith("optdepends=("):
             in_depends = False
@@ -592,7 +593,7 @@ def r_apply_dependency_fixes(fixes: dict):
             print("optdepends=(")
             # Print all optdepends
             for dep in fixes['optdepends']:
-                print(f"{indent}{dep}")
+                print(f"{indent}{shlex.quote(dep)}")
             continue
         
         # Check if we're exiting a dependency array
