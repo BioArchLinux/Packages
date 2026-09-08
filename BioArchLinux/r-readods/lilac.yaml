@@ -12,6 +12,7 @@ repo_depends:
 - r-withr
 - r-zip
 repo_makedepends:
+- r-knitr
 - r-readr
 - r-testthat
 update_on:
