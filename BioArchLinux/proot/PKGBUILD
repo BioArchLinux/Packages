@@ -4,7 +4,7 @@
 pkgname=proot
 _pkgname=proot
 groups=('junest-extra')
-pkgver=5.4.0
+pkgver=5.4.1
 pkgrel=1
 pkgdesc="chroot, mount --bind, and binfmt_misc without privilege/setup"
 arch=('x86_64')
