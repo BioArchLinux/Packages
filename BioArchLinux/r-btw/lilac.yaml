@@ -6,6 +6,7 @@ repo_depends:
   - r-brio
   - r-cli
   - r-clipr
+  - r-commonmark
   - r-dplyr
   - r-ellmer
   - r-frontmatter

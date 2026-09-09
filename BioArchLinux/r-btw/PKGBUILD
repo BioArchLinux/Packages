@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=btw
-_pkgver=1.4.0
+_pkgver=1.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -13,6 +13,7 @@ depends=(
   r-brio
   r-cli
   r-clipr
+  r-commonmark
   r-dplyr
   r-ellmer
   r-frontmatter
@@ -35,11 +36,11 @@ optdepends=(
   r-callr
   r-chromote
   r-covr
+  r-curl
   r-dbi
   r-desc
   r-devtools
   r-diffviewer
-  r-duckdb
   r-evaluate
   r-fansi
   r-gert
@@ -48,10 +49,12 @@ optdepends=(
   r-pandoc
   r-pkgload
   r-processx
+  r-r6
   r-ragg
   r-rapp
   r-renv
   r-roxygen2
+  r-rsqlite
   r-shiny
   r-shinychat
   r-testthat
@@ -59,8 +62,8 @@ optdepends=(
   r-usethis
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c6ad155ead446c1c6860970128a738f5')
-b2sums=('2b0dbd3c4b9703f3390695b234eb2a80ff11344bd4c45fedd7ad090ef8ffdbfbb2f33bdb60675de8de041635c7e23dd4fe0211c22d46cd08a2ccc78499432a62')
+md5sums=('67ca8a8a5b7ac12d7f58e17535f1ccc1')
+b2sums=('821b4bc44132f58d7653210f2038510d816c789c4410377784897550f3c5514975a90d0a433a61f9d4c7dcdabbc6823dc2daedab0ef34b0cf4daea9a4413907a')
 
 build() {
   mkdir build
