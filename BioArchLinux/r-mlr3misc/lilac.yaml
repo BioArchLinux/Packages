@@ -8,6 +8,7 @@ repo_depends:
 - r-data.table
 - r-digest
 - r-r6
+- r-cli
 update_on:
 - regex: mlr3misc_([\d._-]+).tar.gz
   source: regex
