@@ -18,6 +18,7 @@ repo_depends:
 - r-parallelly
 - r-r6
 - r-uuid
+- r-mirai
 update_on:
 - source: rpkgs
   pkgname: mlr3

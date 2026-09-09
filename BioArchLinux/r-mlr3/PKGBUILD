@@ -25,6 +25,7 @@ depends=(
   r-parallelly
   r-r6
   r-uuid
+  r-mirai
 )
 optdepends=(
   r-callr
