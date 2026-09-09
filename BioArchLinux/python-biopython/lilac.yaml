@@ -10,7 +10,7 @@ post_build_script: |
 repo_makedepends:
   - python-mmtf
 update_on:
-  - source: regex
-    regex: 'biopython-(\d+.\d+).tar.gz'
-    url: "https://github.com/biopython/DIST"
+  update_on:
+  - source: pypi
+    pypi: biopython
   - alias: python
