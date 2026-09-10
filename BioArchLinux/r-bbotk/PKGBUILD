@@ -17,6 +17,7 @@ depends=(
   r-mlr3misc
   r-paradox
   r-r6
+  r-moocore
 )
 optdepends=(
   r-adagio

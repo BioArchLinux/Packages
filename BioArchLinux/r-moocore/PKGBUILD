@@ -1,0 +1,35 @@
+# Maintainer: Shun Wang <shuonwang at gmail dot com>
+# Contributor: Shun Wang <shuonwang at gmail dot com>
+
+_pkgname=moocore
+_pkgver=0.3.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Core Mathematical Functions for Multi-Objective Optimization"
+arch=('any')
+url="https://cran.r-project.org/package=$_pkgname"
+license=('LGPL-2.1-or-later')
+depends=(
+  r-matrixstats
+  r-rdpack
+)
+optdepends=(
+  r-doctest
+  r-spelling
+  r-testthat
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('73855242d0ebae5488632b98102cd699')
+b2sums=('e38e2ed75e265f19e296bc3ef16911e363ab796054891f30239ef1545bc6e4976cafa32ca74c336842fd167a01a4b706596703d142fee908fdb4f6da5276724a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

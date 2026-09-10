@@ -9,6 +9,7 @@ repo_depends:
 - r-mlr3misc
 - r-paradox
 - r-r6
+- r-moocore
 update_on:
 - regex: bbotk_([\d._-]+).tar.gz
   source: regex
