@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=ragnar
-_pkgver=0.3.0
+_pkgver=0.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Retrieval-Augmented Generation (RAG) Workflows"
 arch=(x86_64)
 url="https://ragnar.tidyverse.org/"
@@ -40,6 +40,7 @@ optdepends=(
   r-knitr
   r-lifecycle
   r-mcptools
+  r-nanoarrow
   r-openssl
   r-pandoc
   r-paws.common
@@ -50,8 +51,8 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('53df7d9518bdd2ab56d50f78a5e1bae8')
-b2sums=('713ad89609fcfccf7abc9b3b32270173cd3a192dbb7ed41737476d5fc8a34d25fde01a4884a98e388e15ef2fa0d2b8262526e454875a531f1b929767737a248e')
+md5sums=('77130bf6d7a4fa12729edaa4ce17204e')
+b2sums=('41e294ade462be491eb6afd5a0bf31705a2cd6f8149079602920762727d573b2109f9ea8dcdf8a7e28a798655cb3d942c8563381e52758d7e8632a4cee82fcf4')
 
 build() {
   mkdir build
