@@ -1,10 +1,10 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=shinychat
-_pkgver=0.4.0
+_pkgver=0.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Chat UI Component for 'shiny'"
 arch=(any)
 url="https://github.com/posit-dev/shinychat"
@@ -20,21 +20,24 @@ depends=(
   r-jsonlite
   r-lifecycle
   r-promises
+  r-r6
   r-rlang
   r-s7
   r-shiny
 )
 optdepends=(
+  r-chromote
   r-covr
   r-knitr
   r-later
-  r-r6
+  r-rmarkdown
+  r-shinytest2
   r-testthat
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('7879149128a3de496f25a98c251ab06c')
-b2sums=('fb1c0c5f420365a6a3ac2a89fe05a7f0dcb3a71067b398079a838ccf685d5ba6e7b6a06fc215f86aafd7b182ab08a2470ead678c24cb718fbbabf848b3f934f0')
+md5sums=('d7d1425f3a5fbaf457f196a82d694e57')
+b2sums=('3e03c586efff45b797a1e0df6366374a89b73ddc7aa36f8528e982b4bcd60139669b500152915805a4bb98b2846ce78d01723f1e86ce2e5c1dfef3861a6df8ae')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
