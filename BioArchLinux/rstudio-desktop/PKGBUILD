@@ -5,7 +5,7 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2026.08.2+200
+pkgver=2026.09.0+174
 _pkgver=${pkgver//+/.}
 _srcname=rstudio
 # _srcname=rstudio-${pkgver//+/-}
@@ -87,7 +87,7 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         )
 noextract+=("gwt-${_gwt_version}.tar.gz"
             "copilot-language-server-js-${_copilot_version}.zip")
-sha256sums=('1c7a14c14555a7926d3071afe466cab418cecdb79d3ecc3c63ab35dfef48b898'
+sha256sums=('79faa85ab6645e6d09e4e1a36a1f8543c88f06c31e6cb2b7a027d2d6e9501c62'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             'c838b311a49aa4fdcacf1c74c900b568faaff32fabfdcced0ae9c5adea552876'
