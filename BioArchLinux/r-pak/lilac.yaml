@@ -17,12 +17,18 @@ repo_depends:
 - r-processx
 - r-ps
 - r-r6
+- r-tsitter
+- r-tstoml
 - r-zip
 - r-keyring
 - r-yaml
 repo_makedepends:
 - r-mockery
+- r-pingr
+- r-pkgload
 - r-testthat
+- r-webfakes
+- r-withr
 update_on:
 - source: rpkgs
   pkgname: pak
