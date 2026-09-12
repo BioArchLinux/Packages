@@ -1,0 +1,24 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+pkgname=willi26
+pkgver=0.0.1
+pkgrel=0
+pkgdesc="An interactive parsimony phylogenetic analysis program"
+arch=('x86_64')
+url="https://crates.io/crates/$pkgname"
+depends=('glibc' 'libgcc')
+makedepends=('rust' 'cargo')
+license=('AGPL-3.0-or-later')
+source=("${pkgname}-${pkgver}.tar.gz::https://static.crates.io/crates/${pkgname}/${pkgname}-${pkgver}.crate"
+)
+sha256sums=('683269082da11cdeb0950da8a0eb38dd7262f37ee6236d45fbca54af84fe4eaf')
+
+build() {
+  cd "$pkgname-$pkgver"
+  cargo build --frozen --release
+}
+
+package(){
+  cd "$pkgname-$pkgver"
+  install -Dm755 target/release/$pkgname $pkgdir/usr/bin/$pkgname
+}
