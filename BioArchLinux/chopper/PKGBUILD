@@ -2,7 +2,7 @@
 pkgbase=chopper
 pkgname=('chopper' 'chopper-docs')
 pkgver=0.14.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Rust implementation of NanoFilt+NanoLyse intended for long read sequencing'
 arch=(x86_64)
 makedepends=('git' 'rust' 'cmake')
