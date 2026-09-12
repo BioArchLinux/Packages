@@ -2,7 +2,7 @@
 
 pkgname=willi26
 pkgver=0.0.1
-pkgrel=0
+pkgrel=1
 pkgdesc="An interactive parsimony phylogenetic analysis program"
 arch=('x86_64')
 url="https://crates.io/crates/$pkgname"
