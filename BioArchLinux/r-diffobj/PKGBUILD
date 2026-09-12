@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=diffobj
-_pkgver=0.3.8
+_pkgver=0.3.9
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -17,8 +17,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b9c3f8ec8b020bb807312c6c80d1c78c')
-b2sums=('d62bda8d665497166330b09a0f02c9c146726048a3fbce520bcb452b32de7c83ff2994695e9b21f1614a17a345e94a551d4fa0de6f4853364f0b528249744e8d')
+md5sums=('2211ade9964a649d33567a67bbbac2de')
+b2sums=('3b06abbaa178c1724b7030722a533d6cc525a58526e3c9ccf270f4e59cdf79c78352b9c3e32a4afab8da666522edcd622d6e236ad3a7975cc578314bc9f0a6b8')
 
 build() {
   mkdir build
