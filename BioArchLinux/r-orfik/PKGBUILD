@@ -31,6 +31,7 @@ depends=(
   r-httr
   r-iranges
   r-jsonlite
+  r-qs2
   r-r.utils
   r-rcpp
   r-rsamtools

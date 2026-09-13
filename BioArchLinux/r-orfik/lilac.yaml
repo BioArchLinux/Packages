@@ -23,6 +23,7 @@ repo_depends:
 - r-gridextra
 - r-httr
 - r-iranges
+- r-qs2
 - r-jsonlite
 - r-r.utils
 - r-rcpp
