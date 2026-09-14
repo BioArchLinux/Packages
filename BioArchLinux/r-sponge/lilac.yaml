@@ -21,6 +21,7 @@ repo_depends:
 - r-igraph
 - r-iterators
 - r-logging
+- r-logger
 - r-metbrewer
 - r-ppcor
 - r-randomforest
