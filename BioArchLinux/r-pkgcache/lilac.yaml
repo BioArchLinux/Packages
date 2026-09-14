@@ -10,16 +10,20 @@ repo_depends:
 - r-jsonlite
 - r-processx
 - r-r6
+- r-tsitter
+- r-tstoml
 repo_makedepends:
 - r-mockery
 - r-spelling
 - r-testthat
 - r-webfakes
+# pak 0.11.1 uses pkgcache's unreleased feature/ppm-sso branch.
+# Review the pinned commit manually when pak changes its bundled revision.
+pre_build_script: |
+  update_pkgver_and_pkgrel(_G.newver)
+post_build_script: |
+  git_pkgbuild_commit()
 update_on:
-- source: rpkgs
-  pkgname: pkgcache
-  repo: cran
-  md5: true
-- alias: r
 - source: manual
-  manual: 1
+  manual: '2.2.5.9000'
+- alias: r
