@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=tinytable
-_pkgver=0.18.0
+_pkgver=0.19.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -42,8 +42,8 @@ optdepends=(
   r-xfun
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('3adfccbca00bb4b3397b8c4f14b520d8')
-b2sums=('9e7a9614a226c90f0cb8f964b50db7b61801b20d52ced422e5d6911909705624e545164ee5fb0a4fbee4929b7195f797d526f8600abe790ef5f2cbece1918026')
+md5sums=('227477aae62d1332d8a93ed1db8919f2')
+b2sums=('aaa19fdab7a615da9334ab0745130da3bc35953ba958c5324ffb75f0e0858754aa11719c78224831e72710f11877198f56d085bc8ca98bdf893cf5122a34adf8')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
