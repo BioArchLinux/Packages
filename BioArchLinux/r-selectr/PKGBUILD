@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=selectr
-_pkgver=0.6-0
+_pkgver=0.7-0
 pkgname=r-${_pkgname,,}
-pkgver=0.6.0
+pkgver=0.7.0
 pkgrel=1
 pkgdesc='Translate CSS Selectors to XPath Expressions'
 arch=('any')
@@ -20,7 +20,7 @@ optdepends=(
   r-xml2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('b877dfd9cc8b7d9afda1be9e45dfafc942e14b4279a430e5f8f75325c05eddd9')
+sha256sums=('6622ceeb0c349ee8cf519abe6fc72cf654beac9636678fa467ab895f259555b4')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
