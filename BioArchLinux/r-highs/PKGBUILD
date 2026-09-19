@@ -7,7 +7,7 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="'HiGHS' Optimization Solver"
-arch=('any')
+arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
@@ -18,7 +18,6 @@ optdepends=(
   r-tinytest
   r-knitr
   r-rmarkdown
-  r-matrix
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('30520bb0378ccf4f2491603f7044abba')
