@@ -15,6 +15,7 @@ depends=(
   r-checkmate
   r-rcpp
 )
+makedepends=('cmake')
 optdepends=(
   r-tinytest
   r-knitr
