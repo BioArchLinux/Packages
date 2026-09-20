@@ -11,3 +11,8 @@ update_on:
   repo: cran
   md5: true
 - alias: r
+- source: alpm
+  alpm: highs
+  repo: extra
+  provided: libhighs.so
+  strip_release: true
