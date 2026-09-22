@@ -1,10 +1,10 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=easybgm
-_pkgver=0.4.0
+_pkgver=0.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Extracting and Visualizing Bayesian Graphical Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -22,7 +22,6 @@ depends=(
 )
 optdepends=(
   r-testthat
-  r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('46b94149f3f67637118d933bb56840c5')
