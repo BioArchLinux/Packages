@@ -4,28 +4,27 @@ _pkgname=easybgm
 _pkgver=0.5.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Extracting and Visualizing Bayesian Graphical Models"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-coda
   r-bdgraph
   r-bggm
   r-bgms
+  r-coda
   r-dplyr
   r-ggplot2
   r-hdinterval
-  r-igraph
   r-qgraph
 )
 optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('46b94149f3f67637118d933bb56840c5')
-b2sums=('eebb7c3f3f6609630186eace39e9cc3233723099eeb5f1e4b348afda65e507878dc9468ab1103a8c128a61c9e855a5612fa2a6a08e4b92c0e565088f458f4928')
+md5sums=('6b954376f052b75b08740ca5f923465e')
+b2sums=('010f909771a77ff4ed82c248a1b6fde9955f2294452312dd4627d86d11e5c9caf7252a8ac7f244823e3aef7d8fa67d60eb3883a1edfdb3a5832f8c3de5bad844')
 
 build() {
   mkdir build
