@@ -14,5 +14,4 @@ update_on:
 - source: alpm
   alpm: highs
   repo: extra
-  provided: libhighs.so
   strip_release: true
