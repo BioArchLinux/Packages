@@ -24,6 +24,7 @@ depends=(
   r-glue
   r-jsonlite
   r-lifecycle
+  r-pak
   r-purrr
   r-rappdirs
   r-rlang
