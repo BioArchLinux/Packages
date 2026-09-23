@@ -15,6 +15,7 @@ repo_depends:
 - r-jsonlite
 - r-lifecycle
 - r-purrr
+- r-pak
 - r-rappdirs
 - r-rlang
 - r-rprojroot
