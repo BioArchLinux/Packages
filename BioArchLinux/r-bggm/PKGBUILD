@@ -1,10 +1,10 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=BGGM
-_pkgver=2.1.6
+_pkgver=2.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Bayesian Gaussian Graphical Models"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,9 +16,10 @@ depends=(
   r-ggridges
   r-mvnfast
   r-network
-  r-reshape
   r-rcpp
   r-rdpack
+  r-reshape
+  r-rlang
   r-sna
   r-truncnorm
 )
@@ -30,16 +31,16 @@ makedepends=(
 optdepends=(
   r-abind
   r-assortnet
-  r-networktools
-  r-mice
-  r-psych
   r-knitr
+  r-mice
+  r-networktools
+  r-psych
   r-rmarkdown
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('d3901aa8597b590a7fd179348efb607a')
-b2sums=('6a316cfcdc8e6f5e7350812d6057893c1f7a77fa76602e41b2318de2ed78f930d7ff4e6a048c847890ac9208c99c27f5e5b16a1f903764fa92458bd72518b62a')
+md5sums=('008af197fd85f1d02e1ab0139466e596')
+b2sums=('c898c63b7db66174f7b6f9a565744f8d0a9bbee92f53d83f6fcc6c03e98e20cd791dd6103d3873245131941f0f6ed99536a6af4008db0e6f405d38fd03cb4595')
 
 build() {
   mkdir build
