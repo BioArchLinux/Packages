@@ -1,7 +1,7 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=mirai
-_pkgver=2.7.2
+_pkgver=2.7.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -21,8 +21,8 @@ optdepends=(
   r-secretbase
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('102c286631f6580ce76016a5620b601a')
-b2sums=('283da8d254d816292ee4a0b5b964981029b0c04fc7b57b321889bfb011497cde06740b0c491c08139f5f38be2d0ca972dcac839d287392b37e78c19dae35bcd0')
+md5sums=('84bfa1981bf129efeecfd973c264e146')
+b2sums=('b6d0f25424012e95eef92fe39b6017ba71e8548028e6de44fbb3f8252cde7603ec8ad84cda29362fe962ac6cfb3962d4f57690d30d8ca4bce1b74a019465d5eb')
 
 build() {
   mkdir build
