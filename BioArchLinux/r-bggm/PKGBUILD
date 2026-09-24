@@ -20,6 +20,7 @@ depends=(
   r-rcpp
   r-rdpack
   r-sna
+  r-truncnorm
 )
 makedepends=(
   r-rcpparmadillo

@@ -13,6 +13,7 @@ repo_depends:
 - r-rcpp
 - r-rdpack
 - r-sna
+- r-truncnorm
 repo_makedepends:
 - r-rcpparmadillo
 - r-rcppdist
