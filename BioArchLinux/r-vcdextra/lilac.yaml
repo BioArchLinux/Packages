@@ -6,6 +6,7 @@ repo_depends:
   - r-ca
   - r-dplyr
   - r-forcats
+  - r-ggplot2
   - r-glue
   - r-gnm
   - r-gt
