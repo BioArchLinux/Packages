@@ -1,0 +1,40 @@
+# Maintainer: sukanka <su975853527 AT gmail.com>
+
+_pkgname=DistributionS7
+# Commit recorded in jaspDistributions v0.97.1's renv.lock.
+_commit=8c5a709c120abc0f26697c6009769e4c2d889b9b
+pkgname=r-${_pkgname,,}
+pkgver=0.1.1
+pkgrel=1
+pkgdesc="Probability distributions with a S7 class system"
+arch=('any')
+url="https://github.com/Kucharssim/${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r
+  r-assertthat
+  r-generics
+  r-ggplot2
+  r-ggrepel
+  r-gnorm
+  r-goftest
+  r-jaspgraphs
+  r-nortest
+  r-patchwork
+  r-rlang
+  r-s7
+  r-sgt
+  r-sn
+)
+optdepends=(r-testthat)
+source=("${_pkgname}-${_commit}.tar.gz::${url}/archive/${_commit}.tar.gz")
+sha256sums=('49fc76843c178955334cb41eef07cceb42659e40e529f8d74c2ad7257bec9939')
+
+build() {
+  R CMD INSTALL "${_pkgname}-${_commit}.tar.gz" -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+}
