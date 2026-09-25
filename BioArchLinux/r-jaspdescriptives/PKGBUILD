@@ -3,7 +3,7 @@ _pkgname=jaspDescriptives
 _pkgver=0.98.1
 pkgname=r-${_pkgname,,}
 pkgver=0.98.1
-pkgrel=1
+pkgrel=2
 # Upstream resumed the 0.x release series after v1.0.
 epoch=1
 pkgdesc="Descriptives Module for JASP"
