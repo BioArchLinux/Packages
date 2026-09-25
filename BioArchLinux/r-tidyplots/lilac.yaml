@@ -1,0 +1,29 @@
+maintainers:
+- github: sukanka
+  email: sukanka@askk.cc
+build_prefix: extra-x86_64
+repo_depends:
+- r-cli
+- r-dplyr
+- r-forcats
+- r-ggbeeswarm
+- r-ggplot2
+- r-ggpubr
+- r-ggrastr
+- r-ggrepel
+- r-glue
+- r-gtable
+- r-hmisc
+- r-htmltools
+- r-lifecycle
+- r-purrr
+- r-rlang
+- r-scales
+- r-stringr
+- r-tidyr
+- r-tidyselect
+update_on:
+- source: rpkgs
+  pkgname: tidyplots
+  repo: cran
+- alias: r

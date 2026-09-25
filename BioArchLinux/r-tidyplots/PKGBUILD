@@ -1,0 +1,51 @@
+# Maintainer: sukanka <su975853527 AT gmail.com>
+
+_pkgname=tidyplots
+_pkgver=0.4.0
+pkgname=r-${_pkgname,,}
+pkgver=0.4.0
+pkgrel=1
+pkgdesc="Tidy Plots for Scientific Papers"
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('MIT')
+depends=(
+  r
+  r-cli
+  r-dplyr
+  r-forcats
+  r-ggbeeswarm
+  r-ggplot2
+  r-ggpubr
+  r-ggrastr
+  r-ggrepel
+  r-glue
+  r-gtable
+  r-hmisc
+  r-htmltools
+  r-lifecycle
+  r-purrr
+  r-rlang
+  r-scales
+  r-stringr
+  r-tidyr
+  r-tidyselect
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-testthat
+  r-vdiffr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+sha256sums=('ac01f8ca846d318fd89602d61c33b910633e0f3faca3e04f1334754500c28acc')
+
+build() {
+  R CMD INSTALL "${_pkgname}_${_pkgver}.tar.gz" -l "${srcdir}"
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
