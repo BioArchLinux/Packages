@@ -3,7 +3,8 @@ maintainers:
 - github: sukanka
   email: sukanka@askk.cc
 repo_depends:
-- r-quadprog
+- r-data.table
+- r-rcpp
 update_on:
 - source: rpkgs
   pkgname: directlabels
