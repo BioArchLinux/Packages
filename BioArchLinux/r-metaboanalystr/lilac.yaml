@@ -17,14 +17,12 @@ repo_depends:
   - r-igraph
   - r-impute
   - r-jsonlite
-  - r-msnbase
   - r-pcamethods
   - r-plotly
   - r-plyr
   - r-proc
-  - r-progress
   - r-purrr
-  - r-qs
+  - r-qs2
   - r-rbgl
   - r-rcolorbrewer
   - r-rcpp
