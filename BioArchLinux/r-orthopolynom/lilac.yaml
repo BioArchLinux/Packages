@@ -7,7 +7,8 @@ post_build_script: |
 repo_depends:
 - r-polynom
 update_on:
-- regex: orthopolynom_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=orthopolynom
+- source: rpkgs
+  pkgname: orthopolynom
+  repo: cran
+  md5: true
 - alias: r

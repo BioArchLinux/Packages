@@ -4,13 +4,12 @@ _pkgname=orthopolynom
 _pkgver=1.0-6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Collection of Functions for Orthogonal and Orthonormal Polynomials'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=('GPL-2.0-or-later')
 depends=(
-  r
   r-polynom
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
