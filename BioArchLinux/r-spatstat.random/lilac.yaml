@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-spatstat.data
 - r-spatstat.geom
+- r-spatstat.sparse
+- r-spatstat.univar
 - r-spatstat.utils
 update_on:
 - regex: spatstat.random_([\d._-]+).tar.gz
