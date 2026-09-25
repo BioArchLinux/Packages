@@ -7,7 +7,7 @@ sys.path.append(os.path.normpath(f'{__file__}/../../../lilac-extensions'))
 from lilac_r_utils import r_update_pkgver_and_pkgrel
 
 def pre_build():
-    r_update_pkgver_and_pkgrel(_G)
+    r_update_pkgver_and_pkgrel(_G.newver)
 
 def post_build():
     git_pkgbuild_commit()
