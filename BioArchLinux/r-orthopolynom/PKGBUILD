@@ -4,7 +4,7 @@ _pkgname=orthopolynom
 _pkgver=1.0-6.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=3
 pkgdesc='Collection of Functions for Orthogonal and Orthonormal Polynomials'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
