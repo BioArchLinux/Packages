@@ -1,0 +1,42 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=corHMM
+_pkgver=2.8
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Hidden Markov Models of Character Evolution'
+arch=('any')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r-ape
+  r-corpcor
+  r-expm
+  r-gensa
+  r-igraph
+  r-nloptr
+  r-numderiv
+  r-phangorn
+  r-phytools
+  r-rmpfr
+  r-viridis
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('96c9cb270ae2f933b887fe70fa43acea')
+b2sums=('7d8c5547bc8995323746c3a667949eca7631dfe42cccc8a179224f9e16eac9c6dab7ab08c78c4356bab307d78845d4e77d06ae5d0ca4d6e500fcff6a6e7d69f0')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-corpcor
+- r-expm
+- r-gensa
+- r-igraph
+- r-nloptr
+- r-numderiv
+- r-phangorn
+- r-phytools
+- r-rmpfr
+- r-viridis
+update_on:
+- source: rpkgs
+  pkgname: corHMM
+  repo: cran
+  md5: true
+- alias: r
