@@ -4,13 +4,12 @@ _pkgname=mpoly
 _pkgver=1.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Symbolic Computation and More with Multivariate Polynomials'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
-license=('GPL')
+license=('GPL-2.0-only')
 depends=(
-  r
   r-ggplot2
   r-orthopolynom
   r-partitions

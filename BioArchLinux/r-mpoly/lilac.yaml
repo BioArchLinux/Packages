@@ -14,7 +14,8 @@ repo_depends:
 - r-stringr
 - r-tidyr
 update_on:
-- regex: mpoly_([\d._-]+).tar.gz
-  source: regex
-  url: https://cran.r-project.org/package=mpoly
+- source: rpkgs
+  pkgname: mpoly
+  repo: cran
+  md5: true
 - alias: r
