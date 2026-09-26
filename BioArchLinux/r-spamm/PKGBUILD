@@ -15,6 +15,7 @@ depends=(
   r-cli
   r-geometry
   r-gmp
+  r-matrixstats
   r-minqa
   r-nloptr
   r-numderiv
