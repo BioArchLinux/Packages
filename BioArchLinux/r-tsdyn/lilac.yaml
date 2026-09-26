@@ -16,5 +16,5 @@ repo_depends:
 update_on:
   - regex: tsDyn_([\d._-]+).tar.gz
     source: regex
-    url: https://cran.r-project.org/package=tsDyn
+    url: https://cran.r-project.org/src/contrib/Archive/tsDyn/
   - alias: r
