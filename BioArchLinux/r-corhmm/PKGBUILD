@@ -4,7 +4,7 @@ _pkgname=corHMM
 _pkgver=2.8
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='Hidden Markov Models of Character Evolution'
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
