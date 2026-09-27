@@ -13,6 +13,9 @@ depends=(
   r-rcpp
   r-rcpparmadillo
 )
+makedepends=(
+  r-rcpparmadillo		
+)
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('11f2d2622212b61f36d3e7ed406a957d')
 b2sums=('5a830dd695aeed2bb822dfae4c3d69e145e6a0e08f2a8640dc0b38250f5af48436b10fa0faf1f2870764e6fd0659c3dd790bcdf55f56598b8aabaadd1e8fb22d')

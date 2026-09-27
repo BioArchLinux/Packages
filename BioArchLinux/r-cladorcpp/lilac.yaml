@@ -5,6 +5,8 @@ maintainers:
 repo_depends:
 - r-rcpp
 - r-rcpparmadillo
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
 - source: rpkgs
   pkgname: cladoRcpp
