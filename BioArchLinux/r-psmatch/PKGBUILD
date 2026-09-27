@@ -15,6 +15,7 @@ depends=(
   r-igraph
   r-mscoreutils
   r-protgenerics
+  r-ptmods
   r-qfeatures
   r-s4vectors
   r-spectra
