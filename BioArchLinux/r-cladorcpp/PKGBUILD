@@ -4,17 +4,16 @@ _pkgname=cladoRcpp
 _pkgver=0.15.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='C++ Implementations of Phylogenetic Cladogenesis Calculations'
 arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-2.0-or-later')
 depends=(
   r-rcpp
-  r-rcpparmadillo
 )
 makedepends=(
-  r-rcpparmadillo		
+  r-rcpparmadillo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('11f2d2622212b61f36d3e7ed406a957d')
