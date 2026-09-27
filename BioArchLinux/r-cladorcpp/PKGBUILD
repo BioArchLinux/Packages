@@ -1,0 +1,28 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=cladoRcpp
+_pkgver=0.15.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='C++ Implementations of Phylogenetic Cladogenesis Calculations'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r-rcpp
+  r-rcpparmadillo
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('11f2d2622212b61f36d3e7ed406a957d')
+b2sums=('5a830dd695aeed2bb822dfae4c3d69e145e6a0e08f2a8640dc0b38250f5af48436b10fa0faf1f2870764e6fd0659c3dd790bcdf55f56598b8aabaadd1e8fb22d')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

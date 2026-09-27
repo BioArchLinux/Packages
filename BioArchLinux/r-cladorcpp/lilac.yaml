@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-rcpp
+- r-rcpparmadillo
+update_on:
+- source: rpkgs
+  pkgname: cladoRcpp
+  repo: cran
+  md5: true
+- alias: r

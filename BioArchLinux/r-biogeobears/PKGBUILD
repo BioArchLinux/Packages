@@ -1,0 +1,41 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=BioGeoBEARS
+_pkgver=1.1.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="BioGeography with Bayesian (and Likelihood) Evolutionary Analysis in R Scripts"
+arch=(any)
+url="https://github.com/nmatzke/BioGeoBEARS"
+license=('GPL-2.0-or-later')
+depends=(
+  r-ape
+  r-cladorcpp
+  r-fd
+  r-gdata
+  r-gensa
+  r-optimx
+  r-phylobase
+  r-phytools
+  r-plotrix
+  r-rexpokit
+  r-snow
+  r-xtable
+)
+optdepends=(
+  r-testthat
+)
+source=("${_pkgname}-${_pkgver}.tar.gz::https://github.com/nmatzke/${_pkgname}/archive/refs/tags/v${_pkgver}.tar.gz")
+md5sums=('87632d116ad857b187270d0f7f5a9e51')
+b2sums=('f9ac46c0c45ce9b334a5f36a90703f4c64c566e2c3919552b1a6597c3ba35ddb0e80d5e71e7dcde7bd659187f5c9f39ad32970988f3ae875a0f33944edc89a76')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}-${_pkgver}"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

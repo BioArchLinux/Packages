@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-cladorcpp
+- r-fd
+- r-gdata
+- r-gensa
+- r-optimx
+- r-phylobase
+- r-phytools
+- r-plotrix
+- r-rexpokit
+- r-snow
+- r-xtable
+update_on:
+- source: github
+  github: nmatzke/BioGeoBEARS
+  use_max_tag: true
+  prefix: v
+- alias: r

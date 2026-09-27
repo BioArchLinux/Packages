@@ -1,0 +1,30 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=rexpokit
+_pkgver=0.26.6.15
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='R Wrappers for EXPOKIT; Other Matrix Functions'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-2.0-or-later')
+depends=(
+  r-rcpp
+)
+makedepends=(
+  gcc-fortran
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('e1cf5073bd83be67cf7c568bca662430')
+b2sums=('beb6d8a815f4e55eb9733933e3d3ec16d7b8a58eeaccecc351096168a7129741d20f92d4c3604d53bf5e63ccf328b46a766e94764fc76da23064624fc4379d3d')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
