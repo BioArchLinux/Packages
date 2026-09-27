@@ -2,10 +2,11 @@
 # Maintainer: Nathaniel Stickney <nstickney@gmail.com>
 # Contributor: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
 # shellcheck disable=SC2034,SC2148,SC2154
-pkgname=blast+
-pkgver=30.7.0
+pkgbase=blast-plus
+pkgname=('blast+')
+pkgver=30.8.0
 _pkgver=${pkgver//./_}
-pkgrel=1
+pkgrel=0
 pkgdesc="BLAST tool suite (blastn, blastp, blastx, psiblast) built from NCBI C++ toolkit sources"
 arch=('i686' 'x86_64')
 url="http://blast.ncbi.nlm.nih.gov/"
@@ -18,7 +19,7 @@ provides=('blast' 'igblast')
 replaces=('ncbi-blast')
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release/${pkgver}.tar.gz
         LICENSE)
-sha256sums=('81bfb82c75f4fe0e0d3cb7414d837d34d6d01089b6a06989b429e4f5c0726906'
+sha256sums=('0df68f90abe6a48ad8927cf8dca5888a11a520bf8855f1621a4a5d27839a2769'
             '78bbf3f310ff43f1b5f711e7221d51da1e6f055831bd6c6941e0650bf1261df2')
 
 build() {
@@ -83,7 +84,7 @@ build() {
     make -f Makefile.flat all_projects="${proj}"
 }
 
-package() {
+package_blast+() {
   cd "${srcdir}/ncbi-cxx-toolkit-public-release-${pkgver}"
   make prefix="${pkgdir}"/usr libdir="${pkgdir}"/usr/lib/blast+ install
   install -Dm644 "${srcdir}"/LICENSE "${pkgdir}"/usr/share/licenses/${pkgname}/license
