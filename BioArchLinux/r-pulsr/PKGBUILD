@@ -1,0 +1,37 @@
+# Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
+
+_pkgname=pulsR
+_commit=1eb86e8dab4945c30e934ccead38b8adf9bc03f2
+pkgname=r-${_pkgname,,}
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Tools to simulate, fit, and compare phylogenetic models of trait evolution"
+arch=(any)
+url="https://github.com/Schraiber/pulsR"
+license=('MIT')
+depends=(
+  r-ape
+  r-fbasics
+  r-geiger
+  r-gsl
+  r-matrix
+  r-neldermead
+  r-optimbase
+  r-optimsimplex
+  r-stabledist
+  r-statmod
+  r-timedate
+  r-timeseries
+)
+source=("${_pkgname}-${_commit}.tar.gz::$url/archive/${_commit}.tar.gz")
+sha256sums=('52a1c916f4d265a49e0701ec951ce97a8ef79d17f4618a12875b1dac651db06a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname-$_commit"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

@@ -1,0 +1,24 @@
+pkgbase = r-pulsr
+	pkgdesc = Tools to simulate, fit, and compare phylogenetic models of trait evolution
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/Schraiber/pulsR
+	arch = any
+	license = MIT
+	depends = r
+	depends = r-ape
+	depends = r-fbasics
+	depends = r-geiger
+	depends = r-gsl
+	depends = r-matrix
+	depends = r-neldermead
+	depends = r-optimbase
+	depends = r-optimsimplex
+	depends = r-stabledist
+	depends = r-statmod
+	depends = r-timedate
+	depends = r-timeseries
+	source = pulsR-1eb86e8dab4945c30e934ccead38b8adf9bc03f2.tar.gz::https://github.com/Schraiber/pulsR/archive/1eb86e8dab4945c30e934ccead38b8adf9bc03f2.tar.gz
+	sha256sums = 52a1c916f4d265a49e0701ec951ce97a8ef79d17f4618a12875b1dac651db06a
+
+pkgname = r-pulsr

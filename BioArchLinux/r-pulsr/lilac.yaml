@@ -1,0 +1,23 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-fbasics
+- r-geiger
+- r-gsl
+- r-matrix
+- r-neldermead
+- r-optimbase
+- r-optimsimplex
+- r-stabledist
+- r-statmod
+- r-timedate
+- r-timeseries
+update_on:
+- source: git
+  git: https://github.com/Schraiber/pulsR.git
+  branch: master
+  use_commit: true
+- alias: r
