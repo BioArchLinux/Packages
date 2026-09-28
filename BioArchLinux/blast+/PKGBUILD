@@ -6,18 +6,20 @@ pkgbase=blast-plus
 pkgname=('blast+')
 pkgver=30.8.0
 _pkgver=${pkgver//./_}
-pkgrel=1
+pkgrel=2
 pkgdesc="BLAST tool suite (blastn, blastp, blastx, psiblast) built from NCBI C++ toolkit sources"
-arch=('i686' 'x86_64')
-url="http://blast.ncbi.nlm.nih.gov/"
+arch=('x86_64')
+url="https://blast.ncbi.nlm.nih.gov/"
 license=('NCBI-PD')
-depends=('python' 'pcre2' 'sqlite' 'lzo' 'libtiff' 'giflib' 'libxpm' 'glibc' 'gcc-libs' 'curl'
-         'mariadb-libs' 'libpng' 'gnutls' 'libxml2' 'libxslt' 'lmdb' 'gnutls' 'openssl' 'krb5' 'hdf5' 'bzip2' 'zlib' 'lzo' 'zstd' 'bash' 'libjpeg-turbo' 'e2fsprogs' 'perl' 'db')
+depends=('bash' 'bzip2' 'curl' 'db' 'e2fsprogs' 'gcc-libs' 'giflib' 'glibc'
+         'gnutls' 'hdf5' 'krb5' 'libjpeg-turbo' 'libpng' 'libstdc++' 'libtiff' 'libxml2'
+         'libxpm' 'libxslt' 'lmdb' 'lzo' 'mariadb-libs' 'openssl' 'pcre2'
+         'perl' 'python' 'sqlite' 'zlib' 'zstd')
 makedepends=('autoconf' 'cpio')
 conflicts=('blast' 'blast+-bin' 'ncbi-blast' 'ncbi-tools++')
 provides=('blast' 'igblast')
 replaces=('ncbi-blast')
-source=(${pkgname}-${pkgver}.tar.gz::https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release/${pkgver}.tar.gz
+source=(${pkgbase}-${pkgver}.tar.gz::https://github.com/ncbi/ncbi-cxx-toolkit-public/archive/refs/tags/release/${pkgver}.tar.gz
         LICENSE)
 sha256sums=('0df68f90abe6a48ad8927cf8dca5888a11a520bf8855f1621a4a5d27839a2769'
             '78bbf3f310ff43f1b5f711e7221d51da1e6f055831bd6c6941e0650bf1261df2')
@@ -28,39 +30,37 @@ build() {
   cd "$srcdir/ncbi-cxx-toolkit-public-release-${pkgver}"
   rm -f "$srcdir"/build/inc/ncbiconf_unix.h # in case of previous build
   #---------Prebuild project_tree_builder binary separately--------------------------------
-  export CONFIGURE_COMMON_FLAGS="\
+  local CONFIGURE_COMMON_FLAGS="\
                           --without-autodep \
                           --without-makefile-auto-update \
                           --with-flat-makefile \
                           --without-caution \
                           --without-lzo \
                           --without-debug \
-                          --without-downloaded-vdb \
-                          --without-sse42"
-  export NATIVE=".native"
-  export NATIVE_BINDIR="${srcdir}/BUILD${NATIVE}/bin"
+                          --without-downloaded-vdb"
+  local NATIVE=".native"
+  local NATIVE_BINDIR="${srcdir}/BUILD${NATIVE}/bin"
 
+  # These two genuinely need export — configure reads them from env
   export PREBUILT_DATATOOL_EXE=${NATIVE_BINDIR}/datatool
   export PREBUILT_PTB_EXE=${NATIVE_BINDIR}/project_tree_builder
-  #export PREBUILT_DATATOOL_EXE PREBUILT_PTB_EXE
   PREBUILT_PTB_EXE=bootstrap \
             ./configure ${CONFIGURE_COMMON_FLAGS} --without-app \
-             --with-build-root=${srcdir}/BUILD${NATIVE}  ||  \
+             --with-build-root="${srcdir}/BUILD${NATIVE}"  ||  \
             (tail -v -n +0 config.log BUILD.native/status/config.log; exit 1)
-	make -C ${srcdir}/BUILD${NATIVE}/build -f Makefile.flat \
-	    datatool.exe
+  make -C "${srcdir}/BUILD${NATIVE}/build" -f Makefile.flat \
+      datatool.exe
 
   #-----------build only blast binaries and dependencies------------------------------------
-    export proj="algo/blast/ app/ objmgr/ objtools/align_format/ objtools/blast/"
-    ./configure --without-autodep \
+  local proj="algo/blast/ app/ objmgr/ objtools/align_format/ objtools/blast/"
+  ./configure --without-autodep \
       --without-makefile-auto-update \
-      --with-flat-makefile\
-      --without-caution\
+      --with-flat-makefile \
+      --without-caution \
       --without-debug \
       --without-downloaded-vdb \
       --prefix=/usr \
-      --libdir=/lib/blast+ \
-      --with-bin-release \
+      --libdir=/usr/lib/blast+ \
       --with-dll \
       --with-mt \
       --with-lmdb=/usr/lib \
@@ -78,10 +78,62 @@ build() {
       --with-curl=/usr/lib/ \
       --without-boost \
       --with-64 \
-      --with-build-root=${srcdir}/build_blast
+      --with-build-root="${srcdir}/build_blast"
 
-    cd $srcdir/build_blast/build
-    make -f Makefile.flat all_projects="${proj}"
+  cd "$srcdir/build_blast/build"
+  make -f Makefile.flat all_projects="${proj}"
+}
+
+check() {
+  local bindir="${srcdir}/build_blast/bin"
+  local libdir="${srcdir}/build_blast/lib"
+  export PATH="${bindir}:$PATH"
+  export LD_LIBRARY_PATH="${libdir}:${LD_LIBRARY_PATH}"
+
+  echo "--- Testing binary versions ---"
+  blastn -version
+  makeblastdb -version
+
+  echo "--- Testing functional nucleotide search ---"
+  local testdir="$(mktemp -d)"
+  trap 'rm -rf "$testdir"' EXIT
+  cd "$testdir"
+
+  # Create a toy nucleotide sequence
+  cat << 'EOF' > sample.fa
+>seq1
+ATGCGATCGATCGATCGATCGATCGA
+>seq2
+ATGCGATCGATCTTTTCGATCGATCGA
+EOF
+
+  # Build a database and search against it
+  makeblastdb -in sample.fa -dbtype nucl -out sample_db
+  blastn -task blastn -query sample.fa -db sample_db -outfmt 6 -out sample.tsv
+
+  # Verify the search produced results
+  if [[ ! -s sample.tsv ]]; then
+    echo "ERROR: blastn failed to produce output"
+    exit 1
+  fi
+
+  echo "--- Testing functional protein search ---"
+  cat << 'EOF' > sample_p.fa
+>p1
+MKFVKRRTTKVLVLALLFSLALISPAKA
+>p2
+MKFVKRRTTKVLVLALLFSLALISPAAA
+EOF
+
+  makeblastdb -in sample_p.fa -dbtype prot -out sample_pdb
+  blastp -query sample_p.fa -db sample_pdb -outfmt 6 -out sample_p.tsv
+
+  if [[ ! -s sample_p.tsv ]]; then
+    echo "ERROR: blastp failed to produce output"
+    exit 1
+  fi
+
+  echo "Tests passed successfully!"
 }
 
 package_blast+() {
