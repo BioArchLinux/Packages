@@ -22,6 +22,7 @@ depends=(
   r-rexpokit
   r-snow
   r-xtable
+  r-roxygen2
 )
 optdepends=(
   r-testthat

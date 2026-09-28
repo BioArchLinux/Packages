@@ -15,6 +15,7 @@ repo_depends:
 - r-rexpokit
 - r-snow
 - r-xtable
+- r-roxygen2
 update_on:
 - source: github
   github: nmatzke/BioGeoBEARS
