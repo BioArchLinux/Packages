@@ -1,0 +1,22 @@
+diff --unified --recursive --text BioGeoBEARS-1.1.1.orig/NAMESPACE BioGeoBEARS-1.1.1/NAMESPACE
+--- BioGeoBEARS-1.1.1.orig/NAMESPACE	2018-11-06 14:44:10.000000000 +1100
++++ BioGeoBEARS-1.1.1/NAMESPACE	2026-09-28 12:42:02.000000000 +1000
+@@ -1,6 +1,5 @@
+ exportPattern("^[[:alpha:]]+")
+ exportClasses(
+     "BioGeoBEARS_model",
+-     "BioGeoBEARS_run",
+      "tipranges" 
+ )
+diff --unified --recursive --text BioGeoBEARS-1.1.1.orig/R/BioGeoBEARS_classes_v1.R BioGeoBEARS-1.1.1/R/BioGeoBEARS_classes_v1.R
+--- BioGeoBEARS-1.1.1.orig/R/BioGeoBEARS_classes_v1.R	2018-11-06 14:44:10.000000000 +1100
++++ BioGeoBEARS-1.1.1/R/BioGeoBEARS_classes_v1.R	2026-09-28 12:41:13.000000000 +1000
+@@ -1494,7 +1494,7 @@
+ #' @examples
+ #' test=1
+ #'
+-setClass(Class="BioGeoBEARS_run", representation=representation(inputs="list"), prototype=define_BioGeoBEARS_run())
++# setClass(Class="BioGeoBEARS_run", representation=representation(inputs="list"), prototype=define_BioGeoBEARS_run())
+ 
+ 
+ 

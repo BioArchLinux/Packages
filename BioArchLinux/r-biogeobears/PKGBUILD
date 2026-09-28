@@ -27,9 +27,18 @@ depends=(
 optdepends=(
   r-testthat
 )
-source=("${_pkgname}-${_pkgver}.tar.gz::https://github.com/nmatzke/${_pkgname}/archive/refs/tags/v${_pkgver}.tar.gz")
-md5sums=('87632d116ad857b187270d0f7f5a9e51')
-b2sums=('f9ac46c0c45ce9b334a5f36a90703f4c64c566e2c3919552b1a6597c3ba35ddb0e80d5e71e7dcde7bd659187f5c9f39ad32970988f3ae875a0f33944edc89a76')
+source=(
+  "${_pkgname}-${_pkgver}.tar.gz::https://github.com/nmatzke/${_pkgname}/archive/refs/tags/v${_pkgver}.tar.gz"
+  r-4.6-s4-compat.patch
+)
+md5sums=('87632d116ad857b187270d0f7f5a9e51'
+         '762995cc6793d9180e4f03adf6b0813e')
+b2sums=('f9ac46c0c45ce9b334a5f36a90703f4c64c566e2c3919552b1a6597c3ba35ddb0e80d5e71e7dcde7bd659187f5c9f39ad32970988f3ae875a0f33944edc89a76'
+        '066a14d6767493c8be27769dc8457b236ac1e30c086237833697d59e782b10416b501dccffa6387fc355488a62f3d7dffb18dc760eef41e0ca5888dfe84409dd')
+
+prepare() {
+  patch -d "${_pkgname}-${_pkgver}" -p1 < r-4.6-s4-compat.patch
+}
 
 build() {
   mkdir build
