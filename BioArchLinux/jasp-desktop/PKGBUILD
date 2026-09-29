@@ -1,9 +1,9 @@
 #Maintainer: sukanka <su975853527 AT gmail.com>
 
 _pkgname=jasp
-_pkgver=0.95.3
+_pkgver=0.98.1
 pkgname=jasp-desktop
-pkgver=0.95.3
+pkgver=0.98.1
 _ColumnEncoder_ver=0.95.3
 pkgrel=1
 pkgdesc="A complete statistical package for both Bayesian and Frequentist statistical methods"
@@ -33,24 +33,27 @@ depends=('r'
     'qt6-base'
     'qt6-webengine'
     'qt6-shadertools'
+    qt6-httpserver
     librdata
     libfreexl
 )
 provides=($_pkgname)
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jasp-stats/jasp-desktop/archive/refs/tags/v${pkgver}.tar.gz"
     'jasp.sh'
-    "jaspColumnEncoder-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspColumnEncoder/archive/32c53153da95087feb109c0f5f69534ffa3f32b7.zip"
-    "jaspBase-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspBase/archive/0f0f59e18f5524ea422cb3dc5ad76ace6f0518e4.zip"
+    "jaspTools-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspTools/archive/4de898283e3817fdb072733f642ba5711897a592.zip"
+    "jaspBase-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspBase/archive/82594c249db30826990b0b195c20d1ac70ea1aa2.zip"
     # "jaspGraphs-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspGraphs/archive/refs/tags/v${pkgver}.tar.gz"
-    "jaspModuleBundleManager-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspModuleBundleManager/archive/466057fe2ca0602917be964ce032c4cb03a8619a.zip"
-    "remove_binary_pkgs.patch::https://github.com/jasp-stats/jasp-desktop/commit/3ff41e292c.patch"
+    "jaspModuleBundleManager-${pkgver}.tar.gz::https://github.com/jasp-stats/jaspModuleBundleManager/archive/e3ee06c982d19964cabfc4c2486a8c695addfdab.zip"
+    "rinside-shared-library.patch::https://github.com/sukanka/jasp-desktop/commit/8cee5d992b1fa474a48a2a4c397598aa7075c3ec.patch"
+    "linux-module-install.patch::https://github.com/sukanka/jasp-desktop/commit/1fa0ddc0157d9666a0b4e70fd2e6762d0bc3f0a6.patch"
 )
-sha256sums=('7c0e0fdd6a28ddd484ccd39069da6cb20e03547d2d8ec14b69df5f05cabfa0b2'
+sha256sums=('70d869d030678abed2fa32f3c469302a0bd0bf46e9f2915c8d8c52c1da171ab6'
     'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
-    '8afdd494d59bc6812fb4d957070d7a92eb21eceecc954636abb264a37e1bcf86'
-    '6a6ed34ed5f2514fff7e9568c045ccf530586ed37ce08e409729c52ba1336c47'
-    'c6e58ca68cc157b7ba56ed6ac83ad1340be5c9f2148c80fb9713562e2dbe6e3f'
-    'f5c145c33cdcb4c254f7e9f0eb7639e8cdf6887e56e2f7c15074973504469889')
+    '9d4b646abb7dcc5db9253e3e8ce60297df0f18a78a6992630c1fa1e40b467a64'
+    'e36d84e68b34fe613c9313ba36786f0dbc00b3f5fd8065ae6d6ecc3a48be7bb2'
+    '607cecbdea4544432b38ef131de508648bf7208efe2da43db6116ef42149b810'
+    'fe6b1d836f2ae79f8291506f41c227c887e0faa9b5a1ff79c0db0108417a1cb4'
+    'ccac9feca2cc7571d96bdbb03cf20a3822c265c9fb9425ccb974a75ba56ec30e')
 
 _add_libs() {
     local JASP_LIBS lib
@@ -101,19 +104,15 @@ _add_libs() {
         ln -s /usr/lib/R/library ${pkgdir}/usr/lib/jasp-desktop/Modules/module_libs/${lib}
     done
 }
-_apply_patch() {
-    pushd $srcdir/${pkgname}-${pkgver}
-    patch -p1 <$srcdir/remove_binary_pkgs.patch
-    popd
 
-}
 prepare() {
     for d in jaspBase jaspModuleBundleManager; do
         cp -ar ${d}-*/* ${pkgname}-${pkgver}/Engine/${d}
     done
-    cp -ar jaspColumnEncoder-*/* ${pkgname}-${pkgver}/Common/jaspColumnEncoder
+    # cp -ar jaspColumnEncoder-*/* ${pkgname}-${pkgver}/Common/jaspColumnEncoder
     cd $srcdir/${pkgname}-${pkgver}
-    _apply_patch
+    patch -Np1 -i "$srcdir/rinside-shared-library.patch"
+    patch -Np1 -i "$srcdir/linux-module-install.patch"
 
     find Tools/CMake -name *.cmake -print0 | xargs -0 sed -i "s|/usr/local|/usr|g"
     sed -i "s|lib='\${R_LIBRARY_PATH}'|lib='${srcdir}/usr/lib/R'|g" Tools/CMake/R.cmake
