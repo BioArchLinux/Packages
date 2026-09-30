@@ -1,7 +1,7 @@
 # Maintainer: Michael Schubert <mschu.dev at gmail> github.com/mschubert/PKGBUILDs
 pkgname=python-rchitect
 _pkgname=${pkgname#python-}
-pkgver=0.4.10
+pkgver=0.5.1
 pkgrel=1
 pkgdesc="Minimal R API for Python"
 url="https://github.com/randy3k/rchitect"
@@ -11,7 +11,7 @@ depends=('r>3.4.0' 'python-cffi>=1.10.0')
 makedepends=('python-setuptools' 'python-pip' 'python-six>=1.9.0')
 checkdepends=('python-pytest')
 source=("$_pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('6083b5763bb3df25df1d6cff656c610d9eefda971cf4c52238f1440cd6e4e7eb')
+sha256sums=('3323533ce857e218fb0e40a38d85035ab308e26e4ed8459aadbfb06e288e602c')
 
 build() {
   cd "$srcdir/$_pkgname-$pkgver"
