@@ -5,7 +5,7 @@ _pkgver=0.98.1
 pkgname=jasp-desktop
 pkgver=0.98.1
 _ColumnEncoder_ver=0.95.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A complete statistical package for both Bayesian and Frequentist statistical methods"
 arch=('x86_64' 'aarch64')
 url="https://github.com/jasp-stats/jasp-desktop"
@@ -48,12 +48,12 @@ source=("${pkgname}-${pkgver}.tar.gz::https://github.com/jasp-stats/jasp-desktop
     "linux-module-install.patch::https://github.com/sukanka/jasp-desktop/commit/1fa0ddc0157d9666a0b4e70fd2e6762d0bc3f0a6.patch"
 )
 sha256sums=('70d869d030678abed2fa32f3c469302a0bd0bf46e9f2915c8d8c52c1da171ab6'
-    'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
-    '9d4b646abb7dcc5db9253e3e8ce60297df0f18a78a6992630c1fa1e40b467a64'
-    'e36d84e68b34fe613c9313ba36786f0dbc00b3f5fd8065ae6d6ecc3a48be7bb2'
-    '607cecbdea4544432b38ef131de508648bf7208efe2da43db6116ef42149b810'
-    'fe6b1d836f2ae79f8291506f41c227c887e0faa9b5a1ff79c0db0108417a1cb4'
-    'ccac9feca2cc7571d96bdbb03cf20a3822c265c9fb9425ccb974a75ba56ec30e')
+            'e0714d980e7549b4c7dcbae50370e95b6ad2e7f0cf21a534ceb3a5a83ee583fd'
+            '9d4b646abb7dcc5db9253e3e8ce60297df0f18a78a6992630c1fa1e40b467a64'
+            'e36d84e68b34fe613c9313ba36786f0dbc00b3f5fd8065ae6d6ecc3a48be7bb2'
+            '607cecbdea4544432b38ef131de508648bf7208efe2da43db6116ef42149b810'
+            'fe6b1d836f2ae79f8291506f41c227c887e0faa9b5a1ff79c0db0108417a1cb4'
+            'ccac9feca2cc7571d96bdbb03cf20a3822c265c9fb9425ccb974a75ba56ec30e')
 
 _add_libs() {
     local JASP_LIBS lib
