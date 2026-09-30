@@ -16,4 +16,3 @@ def pre_build():
 def post_build():
     run_cmd(["sh", "-c", "sed -i '/ninja/s/ -j5//g' PKGBUILD"])
     git_pkgbuild_commit()
-    update_aur_repo()
