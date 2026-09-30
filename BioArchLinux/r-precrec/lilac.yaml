@@ -3,7 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-assertthat
+- r-checkmate
+- r-cli
 - r-data.table
 - r-ggplot2
 - r-gridextra
