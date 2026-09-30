@@ -1,0 +1,29 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: sukanka
+  email: sukanka@askk.cc
+repo_depends:
+- r-rcpp
+- r-tmb
+repo_makedepends:
+- r-rcppeigen
+update_on:
+- source: rpkgs
+  pkgname: RTMB
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
+- source: alpm
+  alpm: r
+  repo: extra
+  provided: r-matrix
+update_on_build:
+- pkgbase: r-tmb
