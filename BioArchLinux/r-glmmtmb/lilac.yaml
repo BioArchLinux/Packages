@@ -5,7 +5,10 @@ maintainers:
 repo_depends:
 - r-lme4
 - r-numderiv
+- r-pbkrtest
 - r-reformulas
+- r-rtmb
+- r-sandwich
 - r-tmb
 repo_makedepends:
 - r-rcppeigen
@@ -15,7 +18,6 @@ repo_makedepends:
 - r-effects
 - r-emmeans
 - r-pscl
-- r-sandwich
 - r-testthat
 update_on:
 - source: rpkgs
