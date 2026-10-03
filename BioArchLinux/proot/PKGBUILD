@@ -4,7 +4,7 @@
 pkgname=proot
 _pkgname=proot
 groups=('junest-extra')
-pkgver=5.4.1
+pkgver=5.5.0
 pkgrel=1
 pkgdesc="chroot, mount --bind, and binfmt_misc without privilege/setup"
 arch=('x86_64')
@@ -12,7 +12,7 @@ url="https://proot-me.github.io/"
 license=('GPL')
 depends=('gcc-libs')
 source=("${_pkgname}"::'https://proot.gitlab.io/proot/bin/proot')
-sha1sums=('aa10c69e4c03240c5fcbc18f8a646a14090c6f73')
+sha1sums=('856e3193de6f6473dc358797af6317d25b535224')
 
 package() {
 	install -dm755 "${pkgdir}"/usr/bin
