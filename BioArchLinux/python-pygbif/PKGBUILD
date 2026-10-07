@@ -1,7 +1,7 @@
 _base=pygbif
 pkgname=python-${_base}
-pkgver=0.6.6
-pkgrel=2
+pkgver=0.7.0
+pkgrel=1
 pkgdesc="Python client for the GBIF API"
 arch=('any')
 url="https://gbif.org"
@@ -23,7 +23,7 @@ makedepends=(python-setuptools)
 
 # options=(!emptydirs)
 source=(https://pypi.org/packages/source/${_base::1}/${_base}/${_base}-${pkgver}.tar.gz)
-sha512sums=('e31f436635622f0613fbd2e26b70000caed76858d6bf98107d346fc2193ddd44e9cb0ea5708ad6907312beaca5863467c48a914adf9720b12b7c64d4937df374')
+sha512sums=('bc199400e3144442e6bff836f4dd2cb16090658b5a0879bb8bee373e175c0f5ad0839cd652a03d3bb98db0835f0bc8f8b36be5fbebc4bed6dae66ef2d824e614')
 
 build() {
   cd "${_base}-${pkgver}"
