@@ -4,7 +4,7 @@
 # Contributor: Viktor Drobot (aka dviktor) linux776 [at] gmail [dot] com
 
 _pkgname=metR
-_pkgver=0.18.3
+_pkgver=0.19.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -61,9 +61,9 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")
-md5sums=('74ae327fcd153953e7e28b027c53557a'
+md5sums=('d7df8f4939971aa760491c418608869e'
          '11cae80fa1a7d5cf247b879f0598d154')
-b2sums=('ed323b75c8e5c56c57af80caf9448e7c7b676d3bb9a90aac0484a3f3cab522d09a3600f7e2317e2e0e5afdd8f5c50af90678769ba4b8f5a1c6e8753df1953da3'
+b2sums=('2ac7c5d7c235cfb0b506935fd57e6b9366fa2e1c09ecbb6ce928526084f53755fe36b2804cd346e569736eae25167281079da12e1f1979c4d9cff74478ddbec0'
         '11e180cc17fdbd84d50aab26d4c21ed8e79b2e217753f157e99b25c0ef55b9c1f9f8b91f33ca057b19460f2c4cb5cc5339eab5b5bf49688af281626331b168c6')
 
 
