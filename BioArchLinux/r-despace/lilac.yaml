@@ -20,6 +20,11 @@ repo_depends:
 - r-scales
 - r-spatialexperiment
 - r-summarizedexperiment
+- r-scuttle
+- r-sf
+- r-spatstat.explore
+- r-spatstat.geom
+- r-terra
 repo_makedepends:
 - r-statmod
 - r-testthat
