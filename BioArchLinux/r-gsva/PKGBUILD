@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Gene Set Variation Analysis for Microarray and RNA-Seq Data"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
-license=('GPL-2.0-or-later')
+license=('Artistic-2.0')
 depends=(
   r-biobase
   r-biocparallel
