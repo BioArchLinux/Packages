@@ -12,6 +12,7 @@ repo_depends:
 - r-gseabase
 - r-hdf5array
 - r-iranges
+- r-memuse
 - r-s4vectors
 - r-singlecellexperiment
 - r-sparsematrixstats
