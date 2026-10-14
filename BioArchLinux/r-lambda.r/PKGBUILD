@@ -1,10 +1,10 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=lambda.r
-_pkgver=1.2.4
+_pkgver=1.2.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=11
+pkgrel=1
 pkgdesc="Modeling Data with Functional Programming"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,8 +16,8 @@ optdepends=(
   r-testit
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('861157dc2fe66ce8ed1e755578a57e47')
-b2sums=('be22af4d7c54a6dcdef4f745edffa5a84dd42abdd22683f250b0fb84075fe6b666720a759e6e01c2532dddcdb62ba9beb6767f8512895489f8f47d0df44368e5')
+md5sums=('cfd18ed648c858a7873506af81469de2')
+b2sums=('a3e1e850088f1a43b7a75f12796186a7cab4217fd783680a5df1ba1926281efe63b1771adade003210d2d00c16eb74b2f6cdf991e6aa44759542983fbcf1817c')
 
 build() {
   mkdir build
