@@ -2,7 +2,7 @@
 
 pkgname=librdata
 _pkgname=librdata
-pkgver=0.1.0.r129.42099ee
+pkgver=0.1.0.r134.321fd18
 pkgrel=1
 pkgdesc="Read and write R data frames from C"
 arch=("x86_64" "aarch64")
