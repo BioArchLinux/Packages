@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=see
-_pkgver=0.14.2
+_pkgver=0.15.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -62,8 +62,8 @@ optdepends=(
   r-vdiffr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('f8492d739db23e540a85151ac3195e56')
-b2sums=('8f3e13925341b98ffcc32dd22c68ae93807f70e06c9d8da18bfab55b283e50868a9eac37ca6ae92208ee88edcfbc5556ccf580bdbd6186b496b8bb7dd239594c')
+md5sums=('f7b9ee1ddf9ade0b445eae348e762c0a')
+b2sums=('f61f8365e7f54e36a0bba21df1924fa031a85b68b9b4b78da44a7199fbbf3653725e336c9f883649babde6adcd6ab4ab2994ed61418703b74b995d71f2e57cbe')
 
 build() {
   mkdir build
