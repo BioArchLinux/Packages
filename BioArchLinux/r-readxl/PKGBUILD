@@ -1,9 +1,9 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=readxl
-_pkgver=1.5.0.1
+_pkgver=1.6.0
 pkgname=r-${_pkgname,,}
-pkgver=1.5.0.1
+pkgver=1.6.0
 pkgrel=1
 pkgdesc='Read Excel Files'
 arch=('x86_64')
@@ -24,7 +24,7 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-sha256sums=('197043d965ab95717c3b524e221b17cc783bbc3db7e76376ad8ac087337abad6')
+sha256sums=('16077587d5188449819a465c7b2065934653f80e36710da911ae238f772b36d1')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
