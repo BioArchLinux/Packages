@@ -1,0 +1,54 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=pandoc
+_pkgver=0.2.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Manage and Run Universal Converter 'Pandoc' from 'R'"
+arch=(any)
+url="https://github.com/cderv/pandoc"
+license=('MIT')
+depends=(
+  r-fs
+  r-rappdirs
+  r-rlang
+)
+checkdepends=(
+  pandoc-cli
+  r-gh
+  r-rmarkdown
+  r-testthat
+  r-tibble
+  r-withr
+)
+optdepends=(
+  'pandoc: system executable for document conversion'
+  r-covr
+  r-gh
+  r-rmarkdown
+  r-testthat
+  r-tibble
+  r-withr
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('3afcf6c2a93adc983933651fe1a23406')
+b2sums=('6a196d36b22184034e747429c17697e413ed68713ee06acc23ae042396ce6e7b4318a5b21737abea02ae2a8d4f13996978fa527ffdce51713a6900171b3085b4')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}"
+}
+
+check() {
+  cd "${_pkgname}/tests"
+  R_LIBS="${srcdir}/build" Rscript --vanilla testthat.R
+  R_LIBS="${srcdir}/build" Rscript --vanilla -e \
+    'stopifnot(grepl("<strong>BioArchLinux</strong>", paste(pandoc::pandoc_convert(text = "**BioArchLinux**", to = "html", version = "system"), collapse = "\n"), fixed = TRUE))'
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
