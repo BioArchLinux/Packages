@@ -3,13 +3,15 @@ maintainers:
 - github: bshor
   email: boris@bshor.com
 repo_depends:
+- r-cli
 - r-dplyr
-- r-httr
+- r-httr2
 - r-magrittr
 - r-rappdirs
+- r-rlang
 - r-sf
 - r-stringr
-- r-uuid
+- r-zip
 update_on:
 - source: rpkgs
   pkgname: tigris

@@ -1,35 +1,36 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=tigris
-_pkgver=2.2.1
+_pkgver=2.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Load Census TIGER/Line Shapefiles"
 arch=(any)
 url="https://github.com/walkerke/tigris"
 license=('MIT')
 depends=(
+  r-cli
   r-dplyr
-  r-httr
+  r-httr2
   r-magrittr
   r-rappdirs
+  r-rlang
   r-sf
   r-stringr
-  r-uuid
+  r-zip
 )
 optdepends=(
   r-ggplot2
-  r-ggthemes
   r-knitr
   r-leaflet
   r-sp
   r-testthat
-  r-tidycensus
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8a74612cc32d657429efcd6b40d5f087')
-b2sums=('3b9e92c0e3b719a51dd4286ca69ee0ec72114bc92113ee394d22fb917006bb9790fcc08a9722b05ac27f90884925c8cfd644db9f11f496ac2e46cc4074944c20')
+md5sums=('fa208243acb8d7cc65dbf9a970906036')
+b2sums=('034f44116b663704ee486dffec5af2c699840b712936dffeac0fc68aa6220bda2dbcb983d03af5a9f3b48ca89a6acc09a5f8f523b21983f7bcb33d3c5fc8e129')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
