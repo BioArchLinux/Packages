@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: bshor
+  email: boris@bshor.com
+repo_depends:
+- r-fs
+- r-rappdirs
+- r-rlang
+repo_makedepends:
+- r-gh
+- r-rmarkdown
+- r-testthat
+- r-tibble
+- r-withr
+update_on:
+- source: rpkgs
+  pkgname: pandoc
+  repo: cran
+  md5: true
+- alias: r
