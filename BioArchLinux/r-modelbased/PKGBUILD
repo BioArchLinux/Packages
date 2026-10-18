@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=modelbased
-_pkgver=0.17.0
+_pkgver=0.18.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -30,6 +30,7 @@ optdepends=(
   r-correlation
   r-coxme
   r-curl
+  r-dagitty
   r-discovr
   r-easystats
   r-effectsize
@@ -37,6 +38,7 @@ optdepends=(
   r-formula
   r-gamm4
   r-gganimate
+  r-ggdag
   r-ggplot2
   r-glmmtmb
   r-httr2
@@ -73,8 +75,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a8f3a86dfa711fb9bcf8a65f7968e3c3')
-b2sums=('70449b94303a483a09492c57d72eb53173d709ffd8ac37e188f323b3f7fb7a7a630e6a5bbccc0b271c0c2f22ad6460636ea120b5cf4f00d30106ee6daf1ce934')
+md5sums=('798049c3f322067cca87d29fc7daa0c4')
+b2sums=('dfa6093b2c8478356437c0946231180f250c8c267fd0241d5f784fb2ed0adadcef8b9c33df5e36f346175102288c5c10d19ac47fc045dd02a8a4763e0e06c2f7')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
