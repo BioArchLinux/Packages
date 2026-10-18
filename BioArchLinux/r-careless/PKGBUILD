@@ -1,0 +1,41 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=careless
+_pkgver=1.2.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Procedures for Computing Indices of Careless Responding"
+arch=(any)
+url="https://github.com/ryentes/careless"
+license=('MIT')
+depends=(
+  r-psych
+)
+checkdepends=(
+  r-testthat
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('088b2acc13af58c107af20e310031898')
+b2sums=('e87ce0f60f48540d5c408de945d4b5a7f3fc16704644887dad54bf43369f48f0941aa9a2666d7de950b5041aea3d5c679d2c297320ccde346034fcdf03795b5b')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "${_pkgname}"
+}
+
+check() {
+  cd "${_pkgname}/tests"
+  R_LIBS="${srcdir}/build" Rscript --vanilla testthat.R
+}
+
+package() {
+  install -dm0755 "${pkgdir}/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/${_pkgname}" "${pkgdir}/usr/lib/R/library"
+  install -Dm644 "${_pkgname}/LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
