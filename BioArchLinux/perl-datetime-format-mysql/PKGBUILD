@@ -2,7 +2,7 @@
 
 pkgname=perl-datetime-format-mysql
 pkgver='0.08'
-pkgrel=3
+pkgrel=4
 pkgdesc="Parse and format MySQL dates and times"
 arch=("any")
 license=('GPL' 'PerlArtistic')
