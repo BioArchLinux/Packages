@@ -2,10 +2,10 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=highs
-_pkgver=1.14.0-2
+_pkgver=1.15.1-1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="'HiGHS' Optimization Solver"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -22,8 +22,8 @@ optdepends=(
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('30520bb0378ccf4f2491603f7044abba')
-b2sums=('9c6dad22dafa4ee08fbd9fcc075f2b643bcd98304eeb9899d9adab068cc802ba2cdd2d3a23f6682a6d16e2eac4082675238fa6843d42cbe18638401592cf307d')
+md5sums=('28c73aa05551629a6d2aecb455affb7e')
+b2sums=('d8ddd60fdc3f58da4e66d42a4b2c5b6813756fa662fc669e4533694100580501c27b26a3c1c15d1d48f71e46aaa6ff4d027989f34e2215ebc95357b338bf13ed')
 
 build() {
   mkdir build
