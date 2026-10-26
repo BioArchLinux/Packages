@@ -1,7 +1,7 @@
 # Maintainer: Christian Holme (Nordwin) <hcmh [at] mailbox [dot] org>
 _base=vedo
 pkgname=python-${_base}
-pkgver=2026.6.1
+pkgver=2026.6.3
 pkgrel=1
 pkgdesc="Python module for scientific analysis and visualization of 3d objects"
 arch=(any)
@@ -10,7 +10,7 @@ license=(MIT)
 depends=(python-numpy vtk python-typing_extensions python-pygments)
 makedepends=(python-build python-installer python-wheel python-setuptools)
 source=(${_base}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz)
-sha512sums=('f812f63591f59edebb264ae24bb0e9e650f17be8c9807f9834193f1fb37867c3971b34e8fdd6619bf68eab0bab44aa27bed76129efe51287720017487ed4c5c9')
+sha512sums=('1da4f7cec835775a63d763c9443b11413f9d4ce0eae0657082f9d1ed53a95c4883934c1d995d2a128bb17e25740a4bf95495a8814909be081ce6dd8b1c841c97')
 
 build() {
   cd ${_base}-${pkgver}
