@@ -3,7 +3,7 @@
 # Contributor: mh00h <matt.halbert@gmail.com>
 
 pkgname=nextflow
-pkgver=26.10.3
+pkgver=26.10.4
 pkgrel=1
 pkgdesc="A DSL for data-driven computational pipelines"
 arch=('any')
@@ -11,7 +11,7 @@ url='https://www.nextflow.io'
 license=('Apache-2.0')
 depends=('java-runtime>=17' 'java-runtime<=26' 'bash')
 source=("${pkgname}-${pkgver}::https://github.com/nextflow-io/nextflow/releases/download/v${pkgver}/nextflow")
-sha256sums=('5f9b4069c4eb62104442e0a64d01a7b6557146008c6b180bf78a995605540896')
+sha256sums=('02859dfb8ea3108b36e124f0019c7d8c5f1183865fead7f8bb430a43598048ee')
 
 package() {
   install -Dm755 "${srcdir}/${pkgname}-${pkgver}" "${pkgdir}/usr/bin/nextflow"
