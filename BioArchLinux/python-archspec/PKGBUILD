@@ -3,7 +3,7 @@
 pkgbase='python-archspec'
 pkgname=('python-archspec')
 _module='archspec'
-pkgver=0.2.6
+pkgver=0.2.7
 pkgrel=1
 pkgdesc="A library for detecting, labeling, and reasoning about microarchitectures"
 url="https://github.com/archspec/archspec"
@@ -14,7 +14,7 @@ makedepends=('cython' 'python-build' 'python-installer' 'python-wheel' 'python-p
 license=('MIT')
 arch=('any')
 source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")
-sha256sums=('2ea980955530499865225eff917b649b39fd014b53f8c6461b6348c1d8b866f1')
+sha256sums=('87bd0f5664e641333c8878352987a7e7fadd225252279ac9f37c0ca185de3147')
 
 build() {
     cd "${srcdir}/${_module}-${pkgver}"
