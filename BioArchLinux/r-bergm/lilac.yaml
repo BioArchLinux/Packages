@@ -7,8 +7,10 @@ repo_depends:
 - r-coda
 - r-matrixcalc
 - r-mcmcpack
+- r-mice
 - r-mvtnorm
 - r-network
+- r-rcpp
 - r-rglpk
 - r-statnet.common
 update_on:
