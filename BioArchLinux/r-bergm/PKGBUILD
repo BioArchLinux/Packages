@@ -2,31 +2,29 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=Bergm
-_pkgver=5.0.7
+_pkgver=6.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=4
+pkgrel=1
 pkgdesc="Bayesian Exponential Random Graph Models"
 arch=('x86_64')
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  glpk
-  r-ergm
   r-coda
-  r-matrixcalc
-  r-mcmcpack
-  r-mvtnorm
+  r-ergm
+  r-mice
   r-network
-  r-rglpk
-  r-statnet.common
+  r-rcpp
+  glpk
 )
 optdepends=(
   r-spelling
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('5c72aacf9a396fab6611733ce10409ca')
-b2sums=('40703eb4fd5d3dd365776f265ccdcf133d3c86832b50cffe02019cd08c1b83e50bdc0370e12864f3531caa1a6f77afc498a541f9637e252043003eab4c7e2b5f')
+md5sums=('6b45683c5fa23e95529e45e5d057b297')
+b2sums=('f3667a98d99ce9f09129cb04becfcb3e958526b260bf79ee6c97350c2bb7980f0ddf4014185b800ecd522273567d7e899bf1c951b3b1741cf8886e56d8fe6118')
 
 build() {
   mkdir build
