@@ -2,7 +2,7 @@
 # Contributor: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=BFpack
-_pkgver=1.6.2
+_pkgver=1.6.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -37,8 +37,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('c08079ac2974d0392976f8e59acd9981')
-b2sums=('14287395a57c3d6d2e4134badb02f3d188fbe2af847d24421b6ab70156d261a1cb7e4090809fd56b0a8af1a824de06a8507a431d6dea050fcc91fc32a0d0b6e1')
+md5sums=('2daf4d340700663a2baec583b4f5a211')
+b2sums=('0cf8a7500334e3668e8ef154fa51b0000d66d32a6a5deef54e2b91ca6ba32ff03f274089061cc1650f5e094cf13aff1bdd7cf947e4e2fb2a3bdfc044380d2063')
 
 build() {
   mkdir build
