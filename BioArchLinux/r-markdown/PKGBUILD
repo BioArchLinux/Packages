@@ -9,7 +9,7 @@ _pkgver=2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc="Render Markdown with 'commonmark'"
+pkgdesc="A Thin Wrapper of 'litedown' to Render Markdown Documents"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
