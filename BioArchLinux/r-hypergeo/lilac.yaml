@@ -6,6 +6,8 @@ repo_depends:
 - r-contfrac
 - r-desolve
 - r-elliptic
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
 - source: rpkgs
   pkgname: hypergeo
