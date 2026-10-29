@@ -6,13 +6,20 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=3
 pkgdesc="The Gauss Hypergeometric Function"
-arch=(any)
+arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-only')
 depends=(
   r-contfrac
   r-desolve
   r-elliptic
+)
+makedepends=(
+  r-rcpparmadillo
+)
+optdepends=(
+  r-magrittr
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a4abecbbe6732d20d251ac9bc6d466ff')
