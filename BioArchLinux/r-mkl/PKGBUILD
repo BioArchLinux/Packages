@@ -5,8 +5,8 @@
 
 pkgname=r-mkl
 _name=R
-pkgver=4.6.1
-pkgrel=1
+pkgver=4.6.2
+pkgrel=0
 pkgdesc="Language and environment for statistical computing and graphics, linked to the Intel(R) MKL."
 _pkgdesc="Language and environment for statistical computing and graphics"
 arch=('x86_64')
@@ -24,7 +24,7 @@ depends=('intel-oneapi-mkl'
          'gcc-libs'
          'glibc'
          'libtirpc'
-         'libjpeg'
+         'libjpeg-turbo'
          'libpng'
          'libtiff'
          'libxmu'
@@ -44,10 +44,11 @@ makedepends=('jdk-openjdk'
              'gcc-fortran'
              'procps-ng'
              'gendesk'
+             'texlive-latex'
              'texlive-latexrecommended'
              'texlive-fontsrecommended'
              'tk')
-optdepends=('texlive-latex: LaTeX sty files'
+optdepends=('texlive-bin: LaTeX sty files'
             'gcc-fortran: needed to compile some CRAN packages'
             'tk: tcl-tk interface')
 backup=('etc/R/Makeconf'
@@ -60,10 +61,12 @@ install=r-mkl.install
 
 source=("http://cran.r-project.org/src/base/R-${pkgver%%.*}/R-${pkgver}.tar.gz"
         'R.conf'
+        'r.png'
         'vars.sh')
 
-sha256sums=('4da6e61d2c0aac5f14a2e7e432cb5fcc269efe83da4293050ba7f03dff4e2cf4'
+sha256sums=('c297040f6392b1dac6e5c0eb398422cfdaedf540ae2205edb9ad0d10cb10ee00'
             'b7833166041b06f716b6a79095d27d4abd83549816dc53193213827139eae6ef'
+            '1580d06a737951f4f3c903cbd514247d9071fc6868eb9c2de94bb999cc195cb1'
             'f14c5efb017f970363ddc7509960b7f04f9942074d82ef7567ecd41313bf0aeb')
 
 # Build with the Intel Compiler Suite or GCC/GFortran.
@@ -78,9 +81,10 @@ fi
 
 
 prepare() {
+  cp r.png R-${pkgver}/
   cd R-${pkgver}
   # generate desktop entry
-  gendesk --exec='R' --pkgname "$_name" --pkgdesc "$_pkgdesc" -n --icon=Rlogo --categories=Science --terminal=true --startupnotify=true
+  gendesk --exec='R' --pkgname "$_name" --pkgdesc "$_pkgdesc" -n --icon=r.png --categories=Science --terminal=true --startupnotify=true
   # set texmf dir correctly in makefile
   sed -i 's|$(rsharedir)/texmf|${datarootdir}/texmf|' share/Makefile.in
   # align vars.sh with Arch Linux intel-oneapi-mkl
@@ -196,15 +200,19 @@ build() {
 }
 
 
-#check() {
- # cd R-${pkgver}
- # make check-recommended
-#}
+check() {
+  cd R-${pkgver}
+  make check-recommended
+}
 
 
 package() {
   cd R-${pkgver}
   make DESTDIR="${pkgdir}" install install-pdf install-info
+
+  # install some freedesktop.org compatibility
+  install -Dm644 R.desktop -t "${pkgdir}"/usr/share/applications
+  install -Dm644 r.png -t "${pkgdir}"/usr/share/pixmaps
 
   # install libRmath.so
   cd src/nmath/standalone
@@ -215,10 +223,6 @@ package() {
   rm "${pkgdir}"/usr/lib/R/bin/R
   cd "${pkgdir}"/usr/lib/R/bin
   ln -s ../../../bin/R
-
-  # install some freedesktop.org compatibility
-  install -Dm644 "${srcdir}"/R-${pkgver}/R.desktop -t "${pkgdir}"/usr/share/applications
-  install -Dm644 "${srcdir}"/R-${pkgver}/doc/html/Rlogo.svg -t "$pkgdir"/usr/share/pixmaps/
 
   # move the config directory to /etc and create symlinks
   install -d "${pkgdir}"/etc/R
