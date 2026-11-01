@@ -5,20 +5,20 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2026.09.0+174
+pkgver=2026.10.1+239
 _pkgver=${pkgver//+/.}
 _srcname=rstudio
 # _srcname=rstudio-${pkgver//+/-}
 _pandocver="current"
 _quarto="FALSE"
-_gwt_version=2.12.2
+_gwt_version=2.13.1-montauk-daisy
 _java_version=17
 _soci_version="4.0.3"
 _nodeversion="25"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
-: ${_copilot_version:=1.520.0}
+: ${_copilot_version:=1.551.2}
 
-pkgrel=1
+pkgrel=0
 pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
@@ -87,12 +87,12 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         )
 noextract+=("gwt-${_gwt_version}.tar.gz"
             "copilot-language-server-js-${_copilot_version}.zip")
-sha256sums=('79faa85ab6645e6d09e4e1a36a1f8543c88f06c31e6cb2b7a027d2d6e9501c62'
+sha256sums=('a0afa4d876e6e8f881ea81303fd036e2ff03a04ab891572e8b21500a83f14570'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
-            'c838b311a49aa4fdcacf1c74c900b568faaff32fabfdcced0ae9c5adea552876'
-            '610830d36a453946a0314822820e78013a43c8e4299574bafc7a3588021a358c'
-            '27284accdad05ff8919a7ac6dc5f939a511a90842a35f6393517506d74809e76')
+            '9c54d39d431bebb50498eb23ccd02b7b688a205105c20f83cfe5e5e487bc896c'
+            '310543162b3afea0f8f02a2c919c764945deb2c11f928e081569494a86378104'
+            '0bcd8b33d2be7136a1b119e818f47b7930ffa9ec5a0564a5211f44bfeade8a3e')
 options=('!emptydirs' '!debug')
 
 _nvm_env() {
@@ -110,6 +110,10 @@ prepare() {
     _nvm_env
 
     cd ${srcdir}/${_srcname}
+    # Regenerate lockfile
+    pushd "src/node/desktop" &> /dev/null
+    npm install --package-lock-only --ignore-scripts
+    popd &> /dev/null
     # Do not use outdated version name of pandoc
     sed -E -e '/PANDOC_VERSION/s/"[0-9\.]+"/"'${_pandocver}'"/' -i cmake/globals.cmake
 
@@ -120,6 +124,18 @@ prepare() {
     sed -E -e 's&set\(RSTUDIO_NODE_PATH .*\)&set(RSTUDIO_NODE_PATH "/usr/bin")&' \
     -e 's&(set\((RSTUDIO_INSTALLED_NODE_VERSION|RSTUDIO_NODE_VERSION)) "\S+"&\1 "'${_node_version}'"&' \
      -i cmake/globals.cmake
+
+    # Remove conflicting js-yaml overrides causing npm ci lockfile sync error
+    node -e '
+      const fs = require("fs");
+      const file = "src/node/desktop/package.json";
+      const pkg = JSON.parse(fs.readFileSync(file, "utf8"));
+      if (pkg.overrides) {
+        delete pkg.overrides["js-yaml"];
+        delete pkg.overrides["json-schema-to-typescript"];
+        fs.writeFileSync(file, JSON.stringify(pkg, null, 2) + "\n");
+      }
+    '
 
     mkdir -p dependencies/common/node
     ln -sfT "$NVM_DIR/versions/node/v$_node_version" \
