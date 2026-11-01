@@ -3,7 +3,7 @@
 
 pkgname=jellyfish
 pkgver=2.3.1
-pkgrel=6
+pkgrel=7
 pkgdesc="A fast multi-threaded k-mer counter. https://doi.org/10.1093/bioinformatics/btr011"
 # Note: according to the README, "Support for 32-bits platform has not been
 # tested."
@@ -31,11 +31,13 @@ makedepends=(
 source=("https://github.com/gmarcais/Jellyfish/releases/download/v${pkgver}/jellyfish-${pkgver}.tar.gz"
         "python3.patch"
         "fix_tests.patch"
-        "autoconf_combined_fix.patch")
+        "autoconf_combined_fix.patch"
+        "hash_counter_fix.patch")
 sha256sums=('ee032b57257948ca0f0610883099267572c91a635eecbd88ae5d8974c2430fcd'
             'e5c2ee91cb1cc82055471198da4f01fea2f16f04ce735f364875fc58b36381da'
             '997945c89044702f88caa6aa2b215108dc28217d2c4c59d1b59b959b2b46bcc6'
-            '5597ebeea7c3741e22dc8a4bd78fff3edd116a73ff633684ae2792119cba29a1')
+            '5597ebeea7c3741e22dc8a4bd78fff3edd116a73ff633684ae2792119cba29a1'
+            '38a2fd599678fbb95654424bacb30648f207159c16c550943ae8582069e9ba96')
 
 prepare() {
     cp *.patch "${pkgname}-${pkgver}"
@@ -43,6 +45,7 @@ prepare() {
     patch -p1 < python3.patch
     patch -p1 < fix_tests.patch
     patch -p1 < autoconf_combined_fix.patch
+    patch -p1 < hash_counter_fix.patch
     autoreconf -fiv
 }
 
