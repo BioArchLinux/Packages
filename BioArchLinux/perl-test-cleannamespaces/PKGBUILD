@@ -6,7 +6,7 @@
 
 pkgname='perl-test-cleannamespaces'
 pkgver='0.24'
-pkgrel='1'
+pkgrel='3'
 pkgdesc="Check for uncleaned imports"
 arch=('any')
 license=('PerlArtistic' 'GPL')
