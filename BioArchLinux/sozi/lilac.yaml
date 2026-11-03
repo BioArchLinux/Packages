@@ -3,7 +3,7 @@ maintainers:
   - github: starsareintherose
     email: kuoi@bioarchlinux.org
 pre_build_script: |
-  update_pkgver_and_pkgrel(_G.newver.lstrip('v'))
+  update_pkgver_and_pkgrel(_G.newver.removeprefix('v').removesuffix('-beta'))
 post_build_script: |
   git_pkgbuild_commit()
 repo_depends:
@@ -13,4 +13,3 @@ update_on:
     github: sozi-projects/Sozi
     use_max_release: true
     include_prereleases: true
-    include_regex: '^v[0-9]+\.[0-9]+$'
