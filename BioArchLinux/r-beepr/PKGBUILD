@@ -1,10 +1,10 @@
 # Maintainer: Shun Wang <shuonwang at gmail dot com>
 
 _pkgname=beepr
-_pkgver=2.0
+_pkgver=2.0.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=5
+pkgrel=1
 pkgdesc="Easily Play Notification Sounds on any Platform"
 arch=('any')
 url="https://cran.r-project.org/package=$_pkgname"
@@ -16,8 +16,8 @@ optdepends=(
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('8779d44b2ea7ffd7e73915f0d9c7a8bc')
-b2sums=('9568a1b577aa03f8a99ad13a7c00e228a4d23cfd24b47944d01c70374e37714ebea6cc406bc9baab6dca70c905a12b4134146db1caa5a3429dbe3241074b3517')
+md5sums=('ae0ae1c30c0851749b4d8c3482b26980')
+b2sums=('3acbe59e4e7e95ee7b501804c372fba0a3700c280f98a8f2ca4feaa305a2f9361062d8fb22a279c66dcfe6da5eeba1b7dc5b9f494ab0eb5d45b324c42a598d33')
 
 build() {
   mkdir build
