@@ -1,7 +1,7 @@
 # Maintainer: Your Name <your-email@address.com>
 pkgname=perl-system-info
 _cpanname=System-Info
-pkgver=0.067
+pkgver=0.069
 pkgrel=1
 pkgdesc="Factory for system specific information objects"
 arch=('any')
@@ -11,7 +11,7 @@ depends=('perl')
 checkdepends=('perl-test-warnings')
 options=('!emptydirs')
 source=("https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/$_cpanname-$pkgver.tgz")
-sha256sums=('84268b8040254fb209779296a871ebde07d907b8acf3320bcb2f65f12c5a3d0f')
+sha256sums=('e64b6db121048b4f7bf090e3585c5a2be0ec86609096e6e6d64359640dc207bf')
 _distdir="${_cpanname}-${pkgver}"
 
 build() {
