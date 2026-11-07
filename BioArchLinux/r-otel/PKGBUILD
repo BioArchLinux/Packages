@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=otel
-_pkgver=0.2.0
+_pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="OpenTelemetry R API"
 arch=(any)
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -25,8 +25,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('cecd0f434a6327dcf5ca0bc2da494d06')
-b2sums=('8d2bea3f976d54abe6a28758c23a65edff6586b1fa2a0ecb18fbd2892b434795545426480d4ecad361934f86d560845783b9f957d9e18037bff379f609f0f8a3')
+md5sums=('b9c41923305ec69ba71e80b63e86ec02')
+b2sums=('2aa036f9808c21dfc0f722a00fccb35088c4b2473960c74c2173dd4ea02074e32bad2b25fb4ef7f7b6e662e68a5a07359c0969c37112e93eeea964749609b428')
 
 build() {
   mkdir build
