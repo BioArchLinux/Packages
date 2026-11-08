@@ -12,5 +12,6 @@ repo_depends:
 update_on:
   - source: github
     github: DerrickWood/kraken2
-    use_latest_release: true
+    use_max_tag = true
     prefix: 'v'
+    exclude_regex = ".*RC.*"
