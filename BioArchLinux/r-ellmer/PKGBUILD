@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=ellmer
-_pkgver=0.5.0
+_pkgver=0.5.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -45,8 +45,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('27f61f130720d7b77af84ded6a3afdba')
-b2sums=('eb62a603ae88ec73070655ae95fde367addfb0c42d13ce14a6130a05356a37820bc3e80b7d7b271de20c03f81ff8ae4e99edcf5b278927389571a72b52095c10')
+md5sums=('d7607a9400f5945d6d58143629b756f9')
+b2sums=('72de9b445ae5b9af40c9a12b92b5655c0f80707617b95676e5762fd03335ea25283b2e6c61eb6894efe5d6e822c96d02d2ad314bf1010c1966339ff11583aa0a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
