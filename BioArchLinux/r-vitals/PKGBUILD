@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=vitals
-_pkgver=0.4.0
+_pkgver=0.4.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -28,17 +28,17 @@ optdepends=(
   r-ggplot2
   r-here
   r-htmltools
+  r-httr2
   r-knitr
   r-magick
   r-ordinal
   r-reticulate
   r-rmarkdown
   r-testthat
-  r-vcr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a00ec59431cc0543e06f4188d0b10abe')
-b2sums=('3fd25adeeb29663597b917d3a918b94a3d7f6223934ee6bbc975523f02e8f735f818862e336d51e814587165392ca1ae4502ed32241d90b412e730c5b521a736')
+md5sums=('715c05f8da2f60d60173a4f26218946e')
+b2sums=('8c7674b42ece9862728007d193ef7ac1eed4b7db96dcc51128ab992a6b306bdf668065e0c02e155117b2d4aa0560b775d82b1ab3d6ec3ffc2299f37ddbd81c41')
 
 build() {
   mkdir build
