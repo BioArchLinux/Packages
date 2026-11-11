@@ -41,6 +41,7 @@ checkdepends=(
   r-parameters
   r-pscl
   r-randomforest
+  r-see
   r-rstanarm
   r-rstantools
   r-testthat
