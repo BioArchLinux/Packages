@@ -1,0 +1,39 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=lfe
+_pkgver=3.1.1
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Linear Group Fixed Effects"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('Apache-2.0')
+depends=(
+  r-formula
+  r-sandwich
+  r-xtable
+)
+optdepends=(
+  r-alpaca
+  r-cubature
+  r-data.table
+  r-digest
+  r-igraph
+  r-knitr
+  r-numderiv
+  r-plm
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('ef2055d07c2d857c1fab8ad09022b728')
+b2sums=('be3b081f5cff51ab2f8349893abcf264002f9f9c82c7f0be3bc0437f277a7acfeee3334b7e18344f9b3a30e0000bc6ac28e1465c4bb889d97209279fe51af5c7')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
