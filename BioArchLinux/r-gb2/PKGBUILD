@@ -1,0 +1,34 @@
+# Maintainer: Boris Shor <boris@bshor.com>
+
+_pkgname=GB2
+_pkgver=2.1.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Generalized Beta Distribution of the Second Kind: Properties, Likelihood, Estimation"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r-cubature
+  r-hypergeo
+  r-laeken
+  r-numderiv
+  r-survey
+)
+optdepends=(
+  r-simframe
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('a020d0cca6dc605e73a125376cca5a0f')
+b2sums=('73a532453de14e0959032b2cd4aa51b3c683373fae9f1430cdc1103c17e0728684c3633aa8037874316f327945f78b64ac250bfd50081a6e82e282a16e60dea6')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
