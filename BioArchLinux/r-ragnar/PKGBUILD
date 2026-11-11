@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=ragnar
-_pkgver=0.3.1
+_pkgver=0.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -22,6 +22,7 @@ depends=(
   r-httr2
   r-jsonlite
   r-mirai
+  r-nanonext
   r-reticulate
   r-rlang
   r-rvest
@@ -49,10 +50,11 @@ optdepends=(
   r-stringr
   r-testthat
   r-tibble
+  r-webfakes
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('77130bf6d7a4fa12729edaa4ce17204e')
-b2sums=('41e294ade462be491eb6afd5a0bf31705a2cd6f8149079602920762727d573b2109f9ea8dcdf8a7e28a798655cb3d942c8563381e52758d7e8632a4cee82fcf4')
+md5sums=('ee1024a3d8eb03edf273546e5b414f4a')
+b2sums=('f4c9f6b9401352865b732f7037fd50c5f53e9c5f3b71c342b2e6aa17d41f1291469e22fa644a75e87ac260fb9c3d774b019b1c7068b1c30575c3f123e97ac645')
 
 build() {
   mkdir build
