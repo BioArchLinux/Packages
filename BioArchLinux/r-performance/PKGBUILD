@@ -15,6 +15,9 @@ depends=(
   r-datawizard
   r-insight
 )
+makedepends=(
+  r-see
+)
 checkdepends=(
   r-aer
   r-afex
