@@ -4,6 +4,7 @@ maintainers:
     email: sukanka@askk.cc
 post_build_script: |
   git_pkgbuild_commit()
+  update_aur_repo()
 pre_build_script: |
   for line in edit_file('PKGBUILD'):
     if line.startswith('_pkgver='):
