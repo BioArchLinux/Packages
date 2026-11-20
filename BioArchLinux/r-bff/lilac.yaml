@@ -3,11 +3,13 @@ maintainers:
 - github: sukanka
   email: sukanka@askk.cc
 repo_depends:
+- r-dpq
 - r-ggplot2
 - r-gsl
 - r-rlang
 update_on:
-- regex: 'Version:\s*([\d._-]+)'
-  source: regex
-  url: https://raw.githubusercontent.com/rshudde/BFF/master/DESCRIPTION
+- source: rpkgs
+  pkgname: BFF
+  repo: cran
+  md5: true
 - alias: r
