@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=rsconnect
-_pkgver=1.11.2
+_pkgver=1.12.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -38,8 +38,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9b2f3b7d13a2283ff2ea80d17875eaec')
-b2sums=('3d0bff3e8663f09308842b139d1cf26fed4389c68e91e960db151bf8114dcf229764ab156a0457cb52c075ba2b466fbebd6ed9d5c58081c90a3580a67a14e604')
+md5sums=('bd1eeb6020fd5ef72b8bca640f6992f9')
+b2sums=('ba15848b8f872fe6eb77a0990296ae9fc13ce6a0a401088b8a77b29a0978b920c8eda60d2fde3a182be50861ac1bb28af119d1b4c6faeb627e5724073957d474')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
