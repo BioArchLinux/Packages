@@ -5,9 +5,9 @@
 # Contributor: Roman Perepelitsa <roman.perepelitsa@gmail.com>
 pkgname=zsh-theme-powerlevel10k
 # Whenever pkgver is updated, _libgit2ver below must also be updated.
-pkgver=1.20.0
+pkgver=1.21.0
 _libgit2ver="tag-2ecf33948a4df9ef45a66c68b8ef24a5e60eaac6"
-pkgrel=3
+pkgrel=1
 pkgdesc="Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience."
 arch=('x86_64')
 url='https://github.com/romkatv/powerlevel10k'
@@ -30,7 +30,7 @@ source=(
 #  "powerlevel10k-${pkgver}.tar.gz::https://github.com/romkatv/powerlevel10k/archive/v${pkgver}.tar.gz"
 #  "https://github.com/romkatv/powerlevel10k/releases/download/v$pkgver/powerlevel10k-$pkgver.tar.gz.asc"
   "libgit2-${_libgit2ver}.tar.gz::https://github.com/romkatv/libgit2/archive/${_libgit2ver}.tar.gz")
-sha256sums=('01ea7783665a4bb0deefb9a7ac90e4af867e0a70a275aaaf3b062e114264f92d'
+sha256sums=('d1dce32a0375cd6b293ce8d68070d35b8919f22ccad90257e2b562c13e0e4666'
             '4ce11d71ee576dbbc410b9fa33a9642809cc1fa687b315f7c23eeb825b251e93')
 validpgpkeys=('8B060F8B9EB395614A669F2A90ACE942EB90C3DD') # Roman Perepelitsa <roman.perepelitsa@gmail.com>
 
