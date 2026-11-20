@@ -8,7 +8,7 @@ _pkgname=covr
 _pkgver=4.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Test Coverage for Packages"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -56,10 +56,8 @@ optdepends=(
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         )
-md5sums=('1ec88f503a5f9e8cf9f42dc45b313fec'
-         )
-b2sums=('4d3ed7d2869275da92e565c013597993851798df5dc58082d49ea9cf060ac9c68656c73d50faae5a3abdcc9a089e8e105f4187c7a9a3337e19463618e75a0fa7'
-        )
+md5sums=('1ec88f503a5f9e8cf9f42dc45b313fec')
+b2sums=('4d3ed7d2869275da92e565c013597993851798df5dc58082d49ea9cf060ac9c68656c73d50faae5a3abdcc9a089e8e105f4187c7a9a3337e19463618e75a0fa7')
 
 # prepare() {
 #   # skip failing test
