@@ -4,16 +4,20 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-cli
+- r-curl
 - r-digest
-- r-httr
+- r-httr2
 - r-jsonlite
 - r-rex
+- r-rlang
+- r-sys
 - r-withr
 - r-yaml
 repo_makedepends:
 - r-box
 - r-dt
 - r-htmltools
+- r-httpuv
 - r-memoise
 - r-rstudioapi
 - r-s7
