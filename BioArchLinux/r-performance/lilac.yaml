@@ -34,7 +34,6 @@ repo_makedepends:
 - r-randomforest
 - r-rstanarm
 - r-rstantools
-- r-see
 - r-testthat
 update_on:
 - source: rpkgs
