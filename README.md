@@ -1,11 +1,13 @@
 <h3 align="center">
-<img src="https://raw.githubusercontent.com/BioArchLinux/Packages/master/logo/bioarchlinux.png" alt="BioArchLinux" width="150">
-</p>
-BioArchLinux</h3>
+<img src="logo/bioarchlinux.png" alt="BioArchLinux" width="150"><br>
+BioArchLinux
+</h3>
 
 <h3 align="center">
 <a href="https://bioarchlinux.org/packages">Packages</a> <a href="https://wiki.bioarchlinux.org">Wiki</a> <a href="https://matrix.to/#/#bioarchlinux:matrix.org">Matrix</a> <a href="https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio">Mirror</a> <a href="https://repo.bioarchlinux.org">Repo</a> <a href="https://build.bioarchlinux.org">Status</a>
 </h3>
+
+BioArchLinux is a community-driven repository of up-to-date, reproducible life-science software for Arch Linux and the distributions based on it.
 
 ## Special sponsor
 
@@ -17,42 +19,42 @@ BioArchLinux</h3>
 
 ### ArchLinux and ArchLinux based distributions
 
-Add the following content to the `/etc/pacman.conf`
+1. Add the repository to `/etc/pacman.conf`:
 ```
 [bioarchlinux]
 Server = https://repo.bioarchlinux.org/$arch
 ```
-You can replace the `https://repo.bioarchlinux.org/$arch` with any mirror in [mirrorlist](https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio)
+You can replace `https://repo.bioarchlinux.org/$arch` with any server from the [mirror list](https://raw.githubusercontent.com/BioArchLinux/mirror/main/mirrorlist.bio).
 
-install GPG keyring to use bioarchlinux
+2. Import and locally sign the repository's signing key:
 ```
 # pacman-key --recv-keys B1F96021DB62254D
 # pacman-key --finger B1F96021DB62254D
 # pacman-key --lsign-key B1F96021DB62254D
 ```
 
-update the database
+3. Update the system:
 ```
 # pacman -Syu
 ```
 
-install any package
+4. Install any package:
 ```
 # pacman -S foo
 ```
 
 ### Windows
 
-You can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) to use our repo, see [here](https://github.com/BioArchLinux/wsl)
+You can use the repository through [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) with the [BioArchLinux WSL image](https://github.com/BioArchLinux/wsl).
 
 ### Docker 
-You can use [docker](https://hub.docker.com/r/bioarchlinux/bioarchlinux) to use our repo, see [here](https://github.com/BioArchLinux/docker)
+You can use the [BioArchLinux Docker image](https://hub.docker.com/r/bioarchlinux/bioarchlinux), built from [BioArchLinux/docker](https://github.com/BioArchLinux/docker).
 
 ### ISO
-You can use ISO image via virtual machine software to use our repo, see [here](https://github.com/BioArchLinux/iso)
+You can run the [BioArchLinux ISO image](https://github.com/BioArchLinux/iso) in a virtual machine.
 
 ### non-root Linux users
-You can use [junest](https://github.com/fsquillace/junest) BioArchLinux image to use our repo, see [here](https://github.com/BioArchLinux/junest-img)
+You can use [JuNest](https://github.com/fsquillace/junest) with the [BioArchLinux JuNest image](https://github.com/BioArchLinux/junest-img).
 
 ## Citation
 
@@ -63,4 +65,4 @@ You can use [junest](https://github.com/fsquillace/junest) BioArchLinux image to
 [Get Bibtex Here](https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux.bibtex)
 
 ## Submitting packages
-Those wishing to submit 'PKGBUILD' for packages to repo please refer to [contributing guide](CONTRIBUTING.md)
+To add or fix a package, see the [contributing guide](CONTRIBUTING.md). Questions are welcome in the [Matrix room](https://matrix.to/#/#bioarchlinux:matrix.org).
