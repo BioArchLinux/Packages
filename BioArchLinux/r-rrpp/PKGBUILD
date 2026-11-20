@@ -1,7 +1,7 @@
 # Maintainer: Guoyi <kuoi@malacology.net>
 
 _pkgname=RRPP
-_pkgver=2.2.5
+_pkgver=2.2.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -22,8 +22,8 @@ optdepends=(
   r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('e1d5d6356d0a592787002a23a15163c7')
-b2sums=('ab4d0c4220379165348a0c56fd446257a2d2c66c2f7190b9e5c69adff42de72861f826f0f07568f79a5e51af35484974a0b1d4a88cf99d4bd800aec53d0ec7c5')
+md5sums=('139b9e12e7bc489331a1ef472b51284d')
+b2sums=('2c420dcf1f1275286c497a7fcc63bf421dcc2b0ffba58b8b7b28310b63f7bfb1ec74ad04eaf3993e9d34e4c1f3d95b575c8256940021ad3ee525ef43f986e936')
 
 build() {
   mkdir build
