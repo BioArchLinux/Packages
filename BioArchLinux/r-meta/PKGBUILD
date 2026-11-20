@@ -1,6 +1,6 @@
 # Maintainer: Christos Longros <chris.longros@gmail.com>
 _pkgname=meta
-_pkgver=8.5-0
+_pkgver=9.0-0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -28,6 +28,7 @@ depends=(
 optdepends=(
   r-biasedurn
   r-brglm2
+  r-clubsandwich
   r-estmeansd
   r-gemtc
   r-ggpubr
@@ -40,10 +41,12 @@ optdepends=(
   r-rmarkdown
   r-robvis
   r-svglite
+  r-testthat
+  r-withr
   r-writexl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('9c4930d6b5130d035a8d9f83722be80c')
+md5sums=('488930668a8e2f390940c4db310b31d1')
 build() {
   mkdir build
   R CMD INSTALL -l build "$_pkgname"
