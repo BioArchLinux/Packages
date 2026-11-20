@@ -9,7 +9,7 @@ license=(GPL-3.0-or-later)
 url="https://www.cog-genomics.org/plink/1.9/"
 source=("plink-ng-${_pkgver}.tar.gz::https://github.com/chrchang/plink-ng/archive/refs/tags/v${_pkgver}.tar.gz"
         'bin-name.patch')
-depends=('zlib>=1.2.4' 'cblas' 'lapack')
+depends=('glibc' 'libgcc' 'libstdc++' 'zlib>=1.2.4' 'blas' 'cblas' 'lapack')
 sha256sums=('c1da6fc12829108743affc94866391d96021d3c55ed52735e110b89654af85b3'
             '24f570e751f51b6ab05c29f92cad4a57b0a54b7bb4a81dd067cf1cdc1c887327')
 
