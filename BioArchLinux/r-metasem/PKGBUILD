@@ -1,31 +1,32 @@
 # Maintainer: shun2wang <shuonwang@gmail.com>
 
 _pkgname=metaSEM
-_pkgver=1.5.0
+_pkgver=2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=3
+pkgrel=1
 pkgdesc="Meta-Analysis using Structural Equation Modeling"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
   r-ellipse
+  r-lavaan
   r-mvtnorm
   r-numderiv
-  r-lavaan
   r-openmx
 )
 optdepends=(
-  r-metafor
-  r-semplot
-  r-r.rsp
-  r-testthat
   r-matrixcalc
+  r-metafor
+  r-r.rsp
+  r-sandwich
+  r-semplot
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('956b8446c8580710f07dc0e6f688aa8b')
-b2sums=('bd0ab832e00178a40e648e1c1b5e249c36464e1f7c77b85425e05015c7c17f2bfa0c7ba9ef72b765df82156c32d7b5a1ab2ca405e0fb1ef9497d5e3ce38b22fc')
+md5sums=('605bae9e460d82ce2530f2384a127d03')
+b2sums=('cbb79ef68dabf001ed9d935afc095a108b8607e1f62c9a806b01d06546abb1e1e1b7c8c7f32f6347140d7d67afcb76ef9fb15071bf01bb269abecb621e738661')
 
 build() {
   mkdir build
