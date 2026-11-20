@@ -63,4 +63,4 @@ You can use [junest](https://github.com/fsquillace/junest) BioArchLinux image to
 [Get Bibtex Here](https://raw.githubusercontent.com/BioArchLinux/Packages/master/BioArchLinux.bibtex)
 
 ## Submitting packages
-Those wishing to submit 'PKGBUILD' for packages to repo please refer to [adding packages](/Documentation/adding%20packages.md) document 
+Those wishing to submit 'PKGBUILD' for packages to repo please refer to [contributing guide](CONTRIBUTING.md)
