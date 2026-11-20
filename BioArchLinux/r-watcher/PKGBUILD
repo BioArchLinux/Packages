@@ -1,0 +1,36 @@
+# Maintainer: Adityarup Laha <me@adityaruplaha.me>
+
+_pkgname=watcher
+_pkgver=0.2.2
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Watch the File System for Changes"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  fswatch
+  r-later
+  r-r6
+  r-rlang
+)
+optdepends=(
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('c0f4049028385b1a98b3a8b8661cf247')
+b2sums=('5f2b51c49541051a7ba49a309f35f1ad3751a555357f93955ba380c30bab2fe5c64c134566d499492e2edfe81cca566ba37bf3b36eeddf8d9b35fd95637c7f3f')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}

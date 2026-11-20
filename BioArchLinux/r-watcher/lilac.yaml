@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-later
+- r-r6
+- r-rlang
+update_on:
+- source: rpkgs
+  pkgname: watcher
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: fswatch
+  filename: usr/lib/libfswatch\.so\.([^.]+)
+  repo: extra
