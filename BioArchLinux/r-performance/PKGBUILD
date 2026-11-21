@@ -2,7 +2,7 @@
 # Contributor: Hu Butui <hot123tea123@gmail.com>
 
 _pkgname=performance
-_pkgver=0.19.0
+_pkgver=0.20.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -121,8 +121,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('6c02738793c0ed8a3a960d9bfa5f29b5')
-b2sums=('61bc9488238d6d0baaff2108b5dc5e80606b78cd9079191d0c0ae504882653cb521d8f13fa371021724e4bd22d902673f4cb5b7bf5b9302034ab008f0af8d96e')
+md5sums=('8683c12be68bc9462d6aaa5ea3d130c8')
+b2sums=('2214099ef2aedd422c03e394205e7e47dcfdcfd6fd06a9b161bd14576a1f76fe973df4d0adfb2fae72849b332fb01ba8dbecb196fcbcd48c8b52456d10927fe0')
 
 prepare() {
   # skip failing tests
