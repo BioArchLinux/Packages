@@ -4,7 +4,7 @@ _pkgname=watcher
 _pkgver=0.2.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Watch the File System for Changes"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
