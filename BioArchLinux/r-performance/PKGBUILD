@@ -138,7 +138,7 @@ prepare() {
     test-check_group_variation.R
   # see depends on performance; avoid a circular check dependency.
   sed -i '/^skip_if_not_installed("lme4")/a skip_if_not_installed("see")' test-check_model_glmmTMB.R
-  sed -i '/^test_that("check_outliers, glmmTMB plot data shows the refit Cook/a\ \ skip_if_not_installed("see")' test-check_outliers_glmmTMB.R
+  sed -i '/^test_that("check_outliers, glmmTMB default method flags influential rows"/a\ \ skip_if_not_installed("see")' test-check_outliers_glmmTMB.R
 }
 
 build() {
