@@ -20,6 +20,7 @@ repo_depends:
 - r-r6
 - r-rlang
 - r-sourcetools
+- r-watcher
 - r-withr
 - r-xtable
 - r-cli
