@@ -3,9 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+-  r-charport
 -  r-rcpp
--  r-stringfish
-repo_makedepends:
 -  r-rcppparallel
 update_on:
 - source: rpkgs
