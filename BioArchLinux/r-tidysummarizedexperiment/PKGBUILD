@@ -20,7 +20,7 @@ depends=(
   r-magrittr
   r-pillar
   r-pkgconfig
-  r-plotly
+  r-plyxp
   r-purrr
   r-rlang
   r-s4vectors
