@@ -1,0 +1,18 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-biocparallel
+- r-data.table
+- r-dplyr
+- r-ggplot2
+- r-plotly
+- r-stringr
+- r-tidyr
+update_on:
+- source: rpkgs
+  pkgname: MSstatsResponse
+  repo: bioc
+  md5: true
+- alias: r
