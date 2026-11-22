@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-annotationhub
 - r-coin
 - r-delayedarray
 - r-dplyr
@@ -21,6 +20,7 @@ repo_depends:
 - r-summarizedexperiment
 - r-tibble
 - r-visnetwork
+- r-zen4r
 update_on:
 - regex: hipathia_([\d._-]+).tar.gz
   source: regex

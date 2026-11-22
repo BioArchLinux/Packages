@@ -11,7 +11,6 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-annotationhub
   r-coin
   r-delayedarray
   r-dplyr
@@ -29,6 +28,7 @@ depends=(
   r-summarizedexperiment
   r-tibble
   r-visnetwork
+  r-zen4r
 )
 optdepends=(
   r-biocstyle
