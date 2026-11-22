@@ -17,6 +17,7 @@ repo_depends:
 - r-zellkonverter
 - r-anndata
 - r-hdf5array
+- r-bread
 update_on:
 - regex: BgeeDB_([\d._-]+).tar.gz
   source: regex

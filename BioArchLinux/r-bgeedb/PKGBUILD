@@ -25,6 +25,7 @@ depends=(
   r-zellkonverter
   r-anndata
   r-hdf5array
+  r-bread
 )
 optdepends=(
   r-biocstyle
