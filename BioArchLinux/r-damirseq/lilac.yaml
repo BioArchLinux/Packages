@@ -26,6 +26,7 @@ repo_depends:
 - r-rcolorbrewer
 - r-reshape2
 - r-rsnns
+- r-seqinfo
 - r-summarizedexperiment
 - r-sva
 update_on:
