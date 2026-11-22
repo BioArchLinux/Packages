@@ -1,0 +1,35 @@
+# Maintainer: Adityarup Laha <me@adityaruplaha.me>
+
+_pkgname=charport
+_pkgver=0.2.0
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="ALTREP String Interoperability"
+arch=(x86_64)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('MIT')
+depends=(
+  r
+)
+optdepends=(
+  r-cpp11
+  r-quarto
+  r-rcpp
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('2f8583467b71c1a4731c94d1171a03b3')
+b2sums=('fae58bdd37c4bf9e59827d058dd1a7bad7189bfbad28c70bbe47e2e42c2822483d61708a11d7a99aa7fd9e161173b44942a13867767d2db6a3c8cf2efef0c89a')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "/usr/lib/R/library/$_pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname"
+}
