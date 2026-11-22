@@ -9,12 +9,14 @@ repo_depends:
 - r-circlize
 - r-clusterprofiler
 - r-complexheatmap
+- r-data.table
 - r-doparallel
 - r-dose
 - r-dplyr
 - r-easypubmed
 - r-epimix
 - r-experimenthub
+- r-fgsea
 - r-foreach
 - r-fuzzyjoin
 - r-genomicranges
@@ -31,12 +33,14 @@ repo_depends:
 - r-rcolorbrewer
 - r-readr
 - r-rismed
+- r-rlang
 - r-rtracklayer
 - r-seqminer
 - r-stringr
 - r-tibble
 - r-tidyheatmap
 - r-tidyr
+- r-withr
 repo_makedepends:
 - r-testthat
 update_on:
