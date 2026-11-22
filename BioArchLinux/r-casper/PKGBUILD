@@ -16,7 +16,6 @@ depends=(
   r-coda
   r-ebarrays
   r-gaga
-  r-genomeinfodb
   r-genomicfeatures
   r-genomicranges
   r-gtools
@@ -25,7 +24,9 @@ depends=(
   r-rsamtools
   r-rtracklayer
   r-s4vectors
+  r-seqinfo
   r-sqldf
+  r-txdbmaker
   r-vgam
 )
 optdepends=(
