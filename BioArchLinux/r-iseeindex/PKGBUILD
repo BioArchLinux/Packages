@@ -30,8 +30,10 @@ optdepends=(
   r-biocstyle
   r-covr
   r-knitr
+  r-markdown
   r-refmanager
   r-rmarkdown
+  r-scrnaseq
   r-sessioninfo
   r-testthat
   r-yaml
