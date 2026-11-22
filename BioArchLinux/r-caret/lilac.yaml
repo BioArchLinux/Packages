@@ -3,15 +3,16 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-cli
 - r-e1071
 - r-foreach
 - r-ggplot2
-- r-modelmetrics
 - r-plyr
-- r-proc
 - r-recipes
 - r-reshape2
+- r-vctrs
 - r-withr
+- r-yardstick
 repo_makedepends:
 - r-earth
 - r-fastica

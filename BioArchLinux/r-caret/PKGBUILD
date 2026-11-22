@@ -15,15 +15,16 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  r-cli
   r-e1071
   r-foreach
   r-ggplot2
-  r-modelmetrics
   r-plyr
-  r-proc
   r-recipes
   r-reshape2
+  r-vctrs
   r-withr
+  r-yardstick
 )
 checkdepends=(
   r-earth
@@ -37,7 +38,9 @@ checkdepends=(
   r-themis
 )
 optdepends=(
+  r-biocmanager
   r-bradleyterry2
+  r-c50
   r-covr
   r-cubist
   r-dplyr
@@ -45,13 +48,13 @@ optdepends=(
   r-ellipse
   r-fastica
   r-gam
+  r-gbm
   r-ipred
   r-kernlab
   r-klar
   r-knitr
   r-mda
   r-mlbench
-  r-mlmetrics
   r-pamr
   r-party
   r-pls
@@ -59,10 +62,12 @@ optdepends=(
   r-randomforest
   r-rann
   r-rmarkdown
+  r-rrf
   r-spls
   r-superpc
   r-testthat
   r-themis
+  r-xgboost
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c11d2d954241566f577841a58d101f75')
