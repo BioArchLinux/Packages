@@ -4,6 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocgenerics
+- r-dofuture
+- r-dorng
+- r-foreach
+- r-future
 - r-ggplot2
 - r-gplots
 - r-gridextra
