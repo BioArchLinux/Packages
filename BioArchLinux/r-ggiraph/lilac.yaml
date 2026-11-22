@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-cli
 - r-dplyr
 - r-gdtools
 - r-ggplot2
@@ -11,8 +12,8 @@ repo_depends:
 - r-purrr
 - r-rcpp
 - r-rlang
+- r-s7
 - r-systemfonts
-- r-uuid
 - r-vctrs
 update_on:
 - regex: ggiraph_([\d._-]+).tar.gz
