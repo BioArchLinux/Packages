@@ -6,6 +6,7 @@ repo_depends:
 - r-biocgenerics
 - r-httr
 - r-rlang
+- r-seqinfo
 update_on:
 - regex: ldblock_([\d._-]+).tar.gz
   source: regex

@@ -14,6 +14,7 @@ depends=(
   r-biocgenerics
   r-httr
   r-rlang
+  r-seqinfo
 )
 optdepends=(
   r-biocstyle
