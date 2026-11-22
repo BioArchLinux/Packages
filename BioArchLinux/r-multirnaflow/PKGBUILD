@@ -24,6 +24,7 @@ depends=(
   r-plot3d
   r-plot3drgl
   r-reshape2
+  r-rlang
   r-s4vectors
   r-summarizedexperiment
   r-upsetr
