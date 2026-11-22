@@ -1,0 +1,31 @@
+# Maintainer: Adityarup Laha <me@adityaruplaha.me>
+
+_pkgname=inflection
+_pkgver=1.3.7
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//-/.}
+pkgrel=1
+pkgdesc="Finds the Inflection Point of a Curve"
+arch=(any)
+url="https://cran.r-project.org/package=$_pkgname"
+license=('GPL-2.0-or-later')
+depends=(
+  r
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('91124abc239975638a9a91461628410b')
+b2sums=('4b1f43275e3bc45ecb92c66dfe384b5cf1814e2d5c8d24ff4667c5d42ac5dac888e797cca4442f3a48b32c114a28782afa9a5bbac402ff8f97edfe3a74515528')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}
