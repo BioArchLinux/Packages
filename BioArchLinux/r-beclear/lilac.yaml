@@ -7,8 +7,8 @@ repo_depends:
 - r-biocparallel
 - r-data.table
 - r-dixontest
-- r-futile.logger
 - r-ids
+- r-logger
 - r-rcpp
 - r-rdpack
 update_on:
