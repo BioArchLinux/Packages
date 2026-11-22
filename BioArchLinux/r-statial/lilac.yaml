@@ -7,6 +7,7 @@ repo_depends:
 - r-concaveman
 - r-data.table
 - r-dplyr
+- r-edger
 - r-ggplot2
 - r-limma
 - r-magrittr
@@ -23,6 +24,7 @@ repo_depends:
 - r-tibble
 - r-tidyr
 - r-tidyselect
+- r-treekor
 repo_makedepends:
 - r-testthat
 update_on:

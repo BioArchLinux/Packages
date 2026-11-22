@@ -14,6 +14,7 @@ depends=(
   r-concaveman
   r-data.table
   r-dplyr
+  r-edger
   r-ggplot2
   r-limma
   r-magrittr
@@ -30,6 +31,7 @@ depends=(
   r-tibble
   r-tidyr
   r-tidyselect
+  r-treekor
 )
 checkdepends=(
   r-testthat
