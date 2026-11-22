@@ -6,7 +6,7 @@ pkgname=r-${_pkgname,,}
 pkgver=2.13
 pkgrel=1
 pkgdesc='Multivariate Exploratory Data Analysis and Data Mining'
-arch=('any')
+arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
@@ -21,6 +21,10 @@ depends=(
   r-scatterplot3d
   r-multcompview
   r-emmeans
+  r-irlba
+  r-scales
+  r-showtext
+  r-sysfonts
 )
 optdepends=(
   r-factoshiny

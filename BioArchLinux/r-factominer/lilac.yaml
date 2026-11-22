@@ -13,6 +13,10 @@ repo_depends:
 - r-scatterplot3d
 - r-multcompview
 - r-emmeans
+- r-irlba
+- r-scales
+- r-showtext
+- r-sysfonts
 update_on:
 - regex: FactoMineR_([\d._-]+).tar.gz
   source: regex
