@@ -8,20 +8,20 @@ repo_depends:
 - r-ggfun
 - r-ggnewscale
 - r-ggplot2
-- r-ggraph
 - r-ggtree
 - r-gosemsim
 - r-igraph
-- r-magrittr
-- r-plyr
 - r-purrr
 - r-rcolorbrewer
 - r-reshape2
 - r-rlang
 - r-scatterpie
-- r-shadowtext
 - r-yulab.utils
 - r-ggtangle
+- r-dplyr
+- r-enrichit
+- r-ggrepel
+- r-tidydr
 update_on:
 - regex: enrichplot_([\d._-]+).tar.gz
   source: regex
