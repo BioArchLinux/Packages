@@ -6,6 +6,7 @@ repo_depends:
 - r-clusterprofiler
 - r-config
 - r-dt
+- r-enrichit
 - r-enrichplot
 - r-ggplot2
 - r-golem
@@ -15,6 +16,7 @@ repo_depends:
 - r-shiny
 - r-shinycustomloader
 - r-shinywidgets
+- r-yulab.utils
 update_on:
 - regex: MicrobiomeProfiler_([\d._-]+).tar.gz
   source: regex
