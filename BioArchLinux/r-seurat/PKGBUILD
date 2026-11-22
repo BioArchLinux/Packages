@@ -13,7 +13,6 @@ license=('MIT')
 depends=(
   r-cowplot
   r-fastdummies
-  r-fitdistrplus
   r-future
   r-future.apply
   r-generics
@@ -26,12 +25,11 @@ depends=(
   r-irlba
   r-jsonlite
   r-lifecycle
-  r-lmtest
   r-matrixstats
-  r-miniui
+  r-parallelly
   r-patchwork
   r-pbapply
-  r-plotly
+  r-pls
   r-png
   r-progressr
   r-rann
@@ -39,25 +37,20 @@ depends=(
   r-rcpp
   r-rcppannoy
   r-rcpphnsw
-  r-reticulate
   r-rlang
-  r-rocr
   r-rspectra
   r-rtsne
   r-scales
   r-scattermore
   r-sctransform
   r-seuratobject
-  r-shiny
-  r-spatstat.explore
-  r-spatstat.geom
-  r-tibble
   r-uwot
 )
 
 makedepends=(
   r-rcppeigen
   r-rcppprogress
+  r-rcppthread
 )
 checkdepends=(
   r-ape
@@ -76,13 +69,16 @@ optdepends=(
   r-arrow
   r-base64enc
   r-biobase
-  r-biocgenerics
+  r-blosc
   r-bpcells
+  r-circlize
+  r-complexheatmap
   r-data.table
   r-delayedarray
   r-deseq2
+  r-destiny
   r-enrichr
-  r-genomeinfodb
+  r-fitdistrplus
   r-genomicranges
   r-ggrastr
   r-glmgampoi
@@ -91,20 +87,28 @@ optdepends=(
   r-iranges
   r-leidenbase
   r-limma
-  r-magrittr
+  r-lmtest
   r-mast
   r-metap
+  r-miniui
   r-mixtools
   r-monocle
+  r-plotly
   r-presto
   r-r.utils
+  r-rbioformats
+  r-reticulate
   r-rfast2
+  r-rocr
   r-rsvd
-  r-rtracklayer
   r-s4vectors
   r-sf
+  r-shiny
   r-singlecellexperiment
   r-sp
+  r-spatstat.explore
+  r-spatstat.geom
+  r-spls
   r-summarizedexperiment
   r-testthat
   r-vgam

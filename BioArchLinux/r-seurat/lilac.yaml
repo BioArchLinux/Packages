@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-cowplot
 - r-fastdummies
-- r-fitdistrplus
 - r-future
 - r-future.apply
 - r-generics
@@ -17,14 +16,12 @@ repo_depends:
 - r-igraph
 - r-irlba
 - r-jsonlite
-- r-leidenbase
 - r-lifecycle
-- r-lmtest
 - r-matrixstats
-- r-miniui
+- r-parallelly
 - r-patchwork
 - r-pbapply
-- r-plotly
+- r-pls
 - r-png
 - r-progressr
 - r-rann
@@ -32,19 +29,13 @@ repo_depends:
 - r-rcpp
 - r-rcppannoy
 - r-rcpphnsw
-- r-reticulate
 - r-rlang
-- r-rocr
 - r-rspectra
 - r-rtsne
 - r-scales
 - r-scattermore
 - r-sctransform
 - r-seuratobject
-- r-shiny
-- r-spatstat.explore
-- r-spatstat.geom
-- r-tibble
 - r-uwot
 repo_makedepends:
 - r-rcppeigen
@@ -59,6 +50,7 @@ repo_makedepends:
 - r-sf
 - r-singlecellexperiment
 - r-testthat
+- r-rcppthread
 update_on:
 - source: rpkgs
   pkgname: Seurat
