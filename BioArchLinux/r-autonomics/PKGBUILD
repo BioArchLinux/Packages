@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-abind
+  r-arrow
   r-biocfilecache
   r-biocgenerics
   r-bit64
@@ -24,6 +25,7 @@ depends=(
   r-ggrepel
   r-gridextra
   r-limma
+  r-lme4
   r-magrittr
   r-matrixstats
   r-multiassayexperiment
@@ -51,19 +53,24 @@ optdepends=(
   r-biocmanager
   r-biocstyle
   r-biostrings
+  r-coin
   r-dbi
   r-diagram
   r-ensembldb
   r-genomicdatacommons
   r-genomicranges
   r-geoquery
+  r-ggridges
+  r-ggstance
+  r-ggtext
   r-hgu95av2.db
   r-icsnp
   r-jsonlite
   r-knitr
-  r-lme4
   r-lmertest
+  r-mclust
   r-mixomics
+  r-mixtools
   r-mpm
   r-olinkanalyze
   r-org.hs.eg.db
@@ -81,7 +88,6 @@ optdepends=(
   r-rsubread
   r-rtracklayer
   r-statmod
-  r-survminer
   r-testthat
   r-uniprot.ws
   r-writexl
