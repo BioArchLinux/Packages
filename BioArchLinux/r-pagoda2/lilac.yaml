@@ -1,0 +1,41 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-dendsort
+- r-drat
+- r-fastcluster
+- r-igraph
+- r-irlba
+- r-magrittr
+- r-n2r
+- r-plyr
+- r-r.utils
+- r-r6
+- r-rcpp
+- r-rjson
+- r-rlang
+- r-rmtstat
+- r-rook
+- r-rtsne
+- r-sccore
+- r-urltools
+repo_makedepends:
+- r-rcpparmadillo
+- r-rcppeigen
+- r-rcppprogress
+update_on:
+- source: rpkgs
+  pkgname: pagoda2
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
