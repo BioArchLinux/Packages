@@ -3,13 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-annotationhub
 - r-apeglm
 - r-biomart
 - r-deseq2
 - r-doparallel
 - r-dplyr
 - r-foreach
-- r-genomeinfodb
 - r-magrittr
 - r-rcpp
 - r-rtracklayer

@@ -10,13 +10,13 @@ arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('LGPL-3.0-or-later')
 depends=(
+  r-annotationhub
   r-apeglm
   r-biomart
   r-deseq2
   r-doparallel
   r-dplyr
   r-foreach
-  r-genomeinfodb
   r-magrittr
   r-rcpp
   r-rtracklayer
@@ -28,6 +28,7 @@ checkdepends=(
 optdepends=(
   r-biocstyle
   r-bslib
+  r-genomeinfodb
   r-ggplot2
   r-ggpubr
   r-knitr
