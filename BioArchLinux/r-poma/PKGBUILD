@@ -16,7 +16,9 @@ depends=(
   r-dbscan
   r-deseq2
   r-dplyr
+  r-fgsea
   r-fsa
+  r-ggcorrplot
   r-ggplot2
   r-ggrepel
   r-glmnet
@@ -26,6 +28,9 @@ depends=(
   r-lme4
   r-magrittr
   r-mixomics
+  r-msigdbr
+  r-multcomp
+  r-purrr
   r-randomforest
   r-rankprod
   r-rlang
