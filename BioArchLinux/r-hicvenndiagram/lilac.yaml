@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-complexupset
 - r-eulerr
-- r-genomeinfodb
 - r-genomicranges
 - r-ggplot2
 - r-htmlwidgets
@@ -14,6 +13,7 @@ repo_depends:
 - r-reshape2
 - r-rtracklayer
 - r-s4vectors
+- r-seqinfo
 - r-svglite
 repo_makedepends:
 - r-testthat
