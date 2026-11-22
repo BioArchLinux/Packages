@@ -6,14 +6,13 @@ _pkgver=1.14.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="a library and a development framework for connecting to chemical and biological databases"
+pkgdesc="a Library and a Development Framework for Connecting to Chemical and Biological Databases"
 arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('AGPL-3.0-only')
 depends=(
-  r-biocfilecache
   r-chk
-  r-git2r
+  r-fscache
   r-jsonlite
   r-lgr
   r-lifecycle
@@ -23,8 +22,9 @@ depends=(
   r-r6
   r-rappdirs
   r-rcpp
-  r-rcurl
   r-rsqlite
+  r-sched
+  r-sqlq
   r-stringr
   r-withr
   r-xml
@@ -38,7 +38,6 @@ checkdepends=(
 )
 optdepends=(
   r-biocstyle
-  r-covr
   r-devtools
   r-knitr
   r-rmarkdown

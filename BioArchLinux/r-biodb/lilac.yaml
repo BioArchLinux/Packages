@@ -3,9 +3,8 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-biocfilecache
 - r-chk
-- r-git2r
+- r-fscache
 - r-jsonlite
 - r-lgr
 - r-lifecycle
@@ -15,8 +14,9 @@ repo_depends:
 - r-r6
 - r-rappdirs
 - r-rcpp
-- r-rcurl
 - r-rsqlite
+- r-sched
+- r-sqlq
 - r-stringr
 - r-withr
 - r-xml
