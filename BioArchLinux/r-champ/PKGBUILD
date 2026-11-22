@@ -31,7 +31,6 @@ depends=(
   r-illuminaio
   r-impute
   r-isva
-  r-kpmt
   r-limma
   r-marray
   r-matrixstats
@@ -53,7 +52,6 @@ depends=(
 )
 optdepends=(
   r-knitr
-  r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('fbb0ac0878577a5a31954aec2621b4b6f0b6455492b370323e77d5057d1a051b')

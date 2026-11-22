@@ -23,7 +23,6 @@ repo_depends:
 - r-illuminaio
 - r-impute
 - r-isva
-- r-kpmt
 - r-limma
 - r-marray
 - r-matrixstats
