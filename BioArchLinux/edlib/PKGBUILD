@@ -1,4 +1,5 @@
-# Maintainer: Bao Trinh <qubidt at gmail dot com>
+# Maintainer: bipin kumar <kbipinkumar at pm dot me>
+# Contributor: Bao Trinh <qubidt at gmail dot com>
 
 pkgbase=edlib
 pkgname=('edlib' 'python-edlib')
