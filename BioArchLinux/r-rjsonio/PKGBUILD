@@ -5,12 +5,17 @@ _pkgver=2.0.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=3
-pkgdesc="Serialize R Objects to JSON, JavaScript Object Notation"
+pkgdesc="Serialize R Objects to JSON"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('BSD-3-Clause')
 depends=(
   r
+)
+optdepends=(
+  r-knitr
+  r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('f43a5bc14ece5584ebde01731845bc59')
