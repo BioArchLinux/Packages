@@ -21,6 +21,7 @@ depends=(
   r-dplyr
   r-dt
   r-edger
+  r-flexdashboard
   r-forcats
   r-fs
   r-genomicranges
@@ -35,7 +36,7 @@ depends=(
   r-matrixtests
   r-msigdbr
   r-plotly
-  r-qs
+  r-qs2
   r-qualv
   r-rcpp
   r-rlist
