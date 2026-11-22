@@ -3,11 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biocparallel
 - r-rcpp
-- r-rcpphnsw
-- r-s4vectors
+repo_makedepends:
 - r-assorthead
+- r-beachmat
 update_on:
 - regex: BiocNeighbors_([\d._-]+).tar.gz
   source: regex

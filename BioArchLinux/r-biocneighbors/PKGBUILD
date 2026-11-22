@@ -12,21 +12,19 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
-  r-biocparallel
   r-rcpp
-  r-rcpphnsw
-  r-s4vectors
-  r-assorthead
 )
 makedepends=(
   gcc
+  r-assorthead
+  r-beachmat
 )
 optdepends=(
+  r-beachmat
+  r-biocparallel
   r-biocstyle
-  r-fnn
+  r-delayedarray
   r-knitr
-  r-rcppannoy
-  r-rcpphnsw
   r-rmarkdown
   r-testthat
 )
