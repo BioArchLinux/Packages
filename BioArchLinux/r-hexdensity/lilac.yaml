@@ -1,0 +1,13 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-hexbin
+- r-spatstat.geom
+update_on:
+- source: rpkgs
+  pkgname: hexDensity
+  repo: cran
+  md5: true
+- alias: r
