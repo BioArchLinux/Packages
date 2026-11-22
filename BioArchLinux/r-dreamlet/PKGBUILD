@@ -27,19 +27,21 @@ depends=(
   r-iranges
   r-irlba
   r-limma
-  r-lme4
   r-mashr
   r-matrixgenerics
   r-metafor
   r-purrr
   r-rcpp
   r-rdpack
+  r-reformulas
   r-remacor
   r-reshape2
   r-rlang
+  r-s4arrays
   r-s4vectors
   r-scattermore
   r-singlecellexperiment
+  r-sparsearray
   r-sparsematrixstats
   r-summarizedexperiment
   r-tidyr
@@ -58,6 +60,7 @@ optdepends=(
   r-experimenthub
   r-knitr
   r-muscat
+  r-muscdata
   r-pander
   r-rmarkdown
   r-runit
