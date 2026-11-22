@@ -23,7 +23,6 @@ repo_depends:
 - r-reshape2
 - r-rmarkdown
 - r-seurat
-- r-singlecellsignalr
 - r-spatstat.explore
 - r-spatstat.geom
 - r-tidyr

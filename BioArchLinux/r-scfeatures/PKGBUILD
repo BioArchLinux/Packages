@@ -30,7 +30,6 @@ depends=(
   r-reshape2
   r-rmarkdown
   r-seurat
-  r-singlecellsignalr
   r-spatstat.explore
   r-spatstat.geom
   r-tidyr
@@ -39,8 +38,16 @@ optdepends=(
   r-biocstyle
   r-classifyr
   r-clusterprofiler
+  r-data.table
+  r-dose
+  r-enrichplot
+  r-ggplot2
+  r-igraph
   r-knitr
+  r-limma
   r-org.hs.eg.db
+  r-pheatmap
+  r-plotly
   r-s4vectors
   r-survminer
 )
