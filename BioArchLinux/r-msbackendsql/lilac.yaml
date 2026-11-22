@@ -7,14 +7,16 @@ repo_depends:
 - r-biocparallel
 - r-data.table
 - r-dbi
+- r-fastmatch
 - r-iranges
 - r-mscoreutils
 - r-progress
 - r-protgenerics
 - r-s4vectors
 - r-spectra
+- r-stringi
 repo_makedepends:
-- r-msdata
+- r-msdatahub
 - r-mzr
 - r-rsqlite
 - r-testthat

@@ -14,15 +14,17 @@ depends=(
   r-biocparallel
   r-data.table
   r-dbi
+  r-fastmatch
   r-iranges
   r-mscoreutils
   r-progress
   r-protgenerics
   r-s4vectors
   r-spectra
+  r-stringi
 )
 checkdepends=(
-  r-msdata
+  r-msdatahub
   r-mzr
   r-rsqlite
   r-testthat
@@ -31,7 +33,7 @@ optdepends=(
   r-biocstyle
   r-knitr
   r-microbenchmark
-  r-msdata
+  r-msdatahub
   r-mzr
   r-rmarkdown
   r-roxygen2
