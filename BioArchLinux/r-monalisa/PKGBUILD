@@ -16,23 +16,30 @@ depends=(
   r-biostrings
   r-bsgenome
   r-circlize
+  r-cli
   r-complexheatmap
-  r-genomeinfodb
   r-genomicranges
+  r-ggplot2
   r-glmnet
   r-iranges
+  r-rlang
+  r-rsqlite
   r-s4vectors
+  r-seqinfo
   r-stabs
   r-summarizedexperiment
   r-tfbstools
-  r-vioplot
+  r-tidyr
   r-xvector
 )
 optdepends=(
+  r-biocmanager
   r-biocstyle
   r-bsgenome.mmusculus.ucsc.mm10
+  r-ggrepel
   r-gridextra
   r-jaspar2020
+  r-jaspar2024
   r-knitr
   r-rmarkdown
   r-testthat
