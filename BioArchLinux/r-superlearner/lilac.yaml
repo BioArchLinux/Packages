@@ -6,6 +6,7 @@ repo_depends:
 - r-cvauc
 - r-gam
 - r-nnls
+- r-rlang
 update_on:
 - regex: SuperLearner_([\d._-]+).tar.gz
   source: regex

@@ -14,6 +14,7 @@ depends=(
   r-cvauc
   r-gam
   r-nnls
+  r-rlang
 )
 optdepends=(
   r-arm
@@ -25,7 +26,6 @@ optdepends=(
   r-devtools
   r-e1071
   r-earth
-  r-extratrees
   r-gbm
   r-genefilter
   r-ggplot2
