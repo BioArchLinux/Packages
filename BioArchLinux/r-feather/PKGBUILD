@@ -13,12 +13,12 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('Apache')
 depends=(
   r
-  r-hms
-  r-rcpp
-  r-tibble
+  r-arrow
 )
 optdepends=(
+  r-hms
   r-testthat
+  r-tibble
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('50ff06d5e24d38b5d5d62f84582861bd353b82363e37623f95529b520504adbf')

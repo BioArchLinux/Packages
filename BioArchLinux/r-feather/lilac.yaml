@@ -3,9 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-hms
-- r-rcpp
-- r-tibble
+- r-arrow
 update_on:
 - regex: feather_([\d._-]+).tar.gz
   source: regex
