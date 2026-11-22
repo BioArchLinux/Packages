@@ -13,6 +13,7 @@ depends=(
   r
   r-abind
   r-affxparser
+  r-aroma.light
   r-biostrings
   r-bsgenome
   r-cobs
@@ -20,7 +21,7 @@ depends=(
   r-fgsea
   r-foreach
   r-genomeinfodb
-  r-genomicfeatures
+  r-genomicalignments
   r-genomicranges
   r-glmnet
   r-graph
@@ -36,11 +37,13 @@ depends=(
   r-qvalue
   r-rbgl
   r-rhdf5
+  r-rsamtools
   r-s4vectors
   r-sgseq
   r-speedglm
   r-stringr
   r-summarizedexperiment
+  r-txdbmaker
   r-tximport
 )
 optdepends=(
