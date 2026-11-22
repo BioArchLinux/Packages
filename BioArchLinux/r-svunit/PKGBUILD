@@ -5,7 +5,7 @@ _pkgver=1.0.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=9
-pkgdesc="'SciViews' - Unit, Integration and System Testing"
+pkgdesc="'SciViews::R' - Unit, Integration and System Testing"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-only')
@@ -15,7 +15,7 @@ depends=(
 optdepends=(
   r-covr
   r-knitr
-  r-markdown
+  r-rmarkdown
   r-runit
   r-spelling
   r-svgui
