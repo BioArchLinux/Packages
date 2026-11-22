@@ -9,9 +9,12 @@ repo_depends:
 - r-data.table
 - r-dplyr
 - r-ggplot2
+- r-lifecycle
 - r-pheatmap
 - r-purrr
+- r-rlang
 - r-s4vectors
+- r-simpleseg
 - r-singlecellexperiment
 - r-spatialexperiment
 - r-spatstat.explore

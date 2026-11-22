@@ -17,9 +17,12 @@ depends=(
   r-data.table
   r-dplyr
   r-ggplot2
+  r-lifecycle
   r-pheatmap
   r-purrr
+  r-rlang
   r-s4vectors
+  r-simpleseg
   r-singlecellexperiment
   r-spatialexperiment
   r-spatstat.explore
@@ -33,6 +36,8 @@ optdepends=(
   r-biocstyle
   r-knitr
   r-rmarkdown
+  r-spatialdatasets
+  r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('60297add75b1eae61b8da515a969d2ff70c4fa537a447d6585ab9cbd63d9eddf')
