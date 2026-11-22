@@ -3,22 +3,32 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-arrow
+- r-biocneighbors
+- r-dbscan
+- r-dropletutils
 - r-ggplot2
+- r-hexbin
+- r-hexdensity
 - r-igraph
+- r-irlba
 - r-isoband
 - r-janitor
 - r-knitr
 - r-lwgeom
 - r-pheatmap
 - r-plotly
-- r-rlang
+- r-rbioformats
 - r-s4vectors
 - r-sf
 - r-shiny
+- r-singlecellexperiment
 - r-spatialexperiment
+- r-spatialpack
 - r-spatstat.explore
 - r-spatstat.geom
 - r-summarizedexperiment
+- r-uwot
 repo_makedepends:
 - r-edger
 - r-testthat

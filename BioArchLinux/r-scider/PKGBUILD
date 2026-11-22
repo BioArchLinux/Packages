@@ -6,26 +6,36 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Spatial cell-type inter-correlation by density in R"
-arch=(any)
+arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
+  r-arrow
+  r-biocneighbors
+  r-dbscan
+  r-dropletutils
   r-ggplot2
+  r-hexbin
+  r-hexdensity
   r-igraph
+  r-irlba
   r-isoband
   r-janitor
   r-knitr
   r-lwgeom
   r-pheatmap
   r-plotly
-  r-rlang
+  r-rbioformats
   r-s4vectors
   r-sf
   r-shiny
+  r-singlecellexperiment
   r-spatialexperiment
+  r-spatialpack
   r-spatstat.explore
   r-spatstat.geom
   r-summarizedexperiment
+  r-uwot
 )
 checkdepends=(
   r-edger
