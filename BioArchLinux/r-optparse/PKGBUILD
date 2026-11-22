@@ -11,7 +11,7 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-getopt
+  r
 )
 checkdepends=(
   r-stringr
@@ -19,6 +19,7 @@ checkdepends=(
 )
 optdepends=(
   r-knitr
+  r-rmarkdown
   r-stringr
   r-testthat
 )
