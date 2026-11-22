@@ -30,6 +30,7 @@ repo_depends:
 - r-ggh4x
 - r-ggnewscale
 - r-simpleseg
+- r-scales
 update_on:
 - source: rpkgs
   pkgname: spicyR
