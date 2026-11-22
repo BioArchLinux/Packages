@@ -13,9 +13,9 @@ depends=(
   r
   r-annotationdbi
   r-annotationhub
-  r-dose
-  r-enrichplot
+  r-enrichit
   r-gosemsim
+  r-gson
   r-meshdbi
   r-yulab.utils
 )
