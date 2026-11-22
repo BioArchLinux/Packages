@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-circlize
 - r-complexheatmap
+- r-fastmatch
 - r-getoptlong
 - r-globaloptions
 - r-igraph

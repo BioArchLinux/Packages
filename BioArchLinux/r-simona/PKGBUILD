@@ -14,6 +14,7 @@ depends=(
   perl
   r-circlize
   r-complexheatmap
+  r-fastmatch
   r-getoptlong
   r-globaloptions
   r-igraph
