@@ -13,17 +13,24 @@ depends=(
   r
   r-base64enc
   r-ggplot2
-  r-knitr
   r-matrixcalc
   r-matrixstats
   r-rcpp
-  r-rmarkdown
   r-summarizedexperiment
   r-truncdist
-  r-dss
   r-dendextend
   r-psych
   r-sva
+  r-fitdistrplus
+  r-magrittr
+  r-pbapply
+  r-s4vectors
+)
+optdepends=(
+  r-biocstyle
+  r-calibrate
+  r-knitr
+  r-rmarkdown
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('352dcd57c454e3c0ad0ab14c1586ac18dbec4c1e62fe30a0f4f2fb2de2e94fb1')

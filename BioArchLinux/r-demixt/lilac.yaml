@@ -5,17 +5,18 @@ maintainers:
 repo_depends:
 - r-base64enc
 - r-ggplot2
-- r-knitr
 - r-matrixcalc
 - r-matrixstats
 - r-rcpp
-- r-rmarkdown
 - r-summarizedexperiment
 - r-truncdist
-- r-dss
 - r-dendextend
 - r-psych
 - r-sva
+- r-fitdistrplus
+- r-magrittr
+- r-pbapply
+- r-s4vectors
 update_on:
 - regex: DeMixT_([\d._-]+).tar.gz
   source: regex
