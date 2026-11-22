@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "GPL (== 2)",
-        expect_systemrequirements = "JAGS 4.x.y",
+        expect_systemrequirements = "JAGS (>= 5.0.0)",
     )
 
 def post_build():
