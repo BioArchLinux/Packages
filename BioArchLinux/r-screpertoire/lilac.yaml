@@ -3,34 +3,26 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-cubature
 - r-dplyr
 - r-evmix
 - r-ggalluvial
 - r-ggdendro
 - r-ggplot2
 - r-ggraph
-- r-hash
 - r-igraph
 - r-inext
-- r-plyr
 - r-quantreg
 - r-rcpp
-- r-reshape2
 - r-rjson
 - r-rlang
 - r-s4vectors
 - r-seuratobject
 - r-singlecellexperiment
-- r-stringdist
-- r-stringr
 - r-summarizedexperiment
 - r-tidygraph
-- r-truncdist
-- r-vgam
 - r-lifecycle
 - r-purrr
-- r-assertthat
+- r-immapex
 update_on:
 - source: rpkgs
   pkgname: scRepertoire

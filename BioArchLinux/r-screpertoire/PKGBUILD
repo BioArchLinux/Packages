@@ -10,47 +10,39 @@ arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
-  r-cubature
   r-dplyr
   r-evmix
   r-ggalluvial
   r-ggdendro
   r-ggplot2
   r-ggraph
-  r-hash
   r-igraph
   r-inext
-  r-plyr
   r-quantreg
   r-rcpp
-  r-reshape2
   r-rjson
   r-rlang
   r-s4vectors
   r-seuratobject
   r-singlecellexperiment
-  r-stringdist
-  r-stringr
   r-summarizedexperiment
   r-tidygraph
-  r-truncdist
-  r-vgam
   r-lifecycle
   r-purrr
-  r-assertthat
+  r-immapex
 )
 optdepends=(
   r-biocmanager
   r-biocstyle
   r-circlize
   r-knitr
+  r-peptides
   r-rmarkdown
   r-scales
   r-scater
   r-seurat
   r-spelling
   r-testthat
-  r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('6499720e8ba9e80e3472a9b575ffbabd')
