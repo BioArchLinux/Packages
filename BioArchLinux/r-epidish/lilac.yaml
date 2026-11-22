@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-e1071
+- r-genefilter
 - r-locfdr
 - r-matrixstats
 - r-quadprog

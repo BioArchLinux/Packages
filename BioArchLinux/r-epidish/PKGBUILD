@@ -12,6 +12,7 @@ license=('GPL')
 depends=(
   r
   r-e1071
+  r-genefilter
   r-locfdr
   r-matrixstats
   r-quadprog
