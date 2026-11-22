@@ -4,6 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-colorspace
+- r-gtable
+- r-pals
 - r-rcolorbrewer
 update_on:
 - source: rpkgs

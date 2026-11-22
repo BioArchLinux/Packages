@@ -11,11 +11,15 @@ url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-colorspace
+  r-gtable
+  r-pals
   r-rcolorbrewer
 )
 optdepends=(
   r-knitr
+  r-png
   r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('93f820bace140900b65cb8c128eb4b6e')
