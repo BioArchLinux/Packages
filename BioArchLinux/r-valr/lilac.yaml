@@ -5,15 +5,16 @@ maintainers:
 repo_depends:
 - r-broom
 - r-cli
+- r-cpp11bigwig
 - r-dplyr
 - r-ggplot2
 - r-lifecycle
-- r-rcpp
 - r-readr
 - r-rlang
-- r-rtracklayer
 - r-stringr
 - r-tibble
+repo_makedepends:
+- r-cpp11
 update_on:
 - regex: valr_([\d._-]+).tar.gz
   source: regex

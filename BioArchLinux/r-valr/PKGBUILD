@@ -15,15 +15,17 @@ depends=(
   r
   r-broom
   r-cli
+  r-cpp11bigwig
   r-dplyr
   r-ggplot2
   r-lifecycle
-  r-rcpp
   r-readr
   r-rlang
-  r-rtracklayer
   r-stringr
   r-tibble
+)
+makedepends=(
+  r-cpp11
 )
 optdepends=(
   r-bench
