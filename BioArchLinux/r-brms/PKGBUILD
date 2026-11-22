@@ -59,6 +59,7 @@ optdepends=(
   r-colorspace
   r-mirai
   r-future.mirai
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('e590eda39674cccda783081afb1c27b3')
