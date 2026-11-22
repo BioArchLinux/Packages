@@ -15,20 +15,19 @@ depends=(
   r-ggplot2
   r-pracma
   r-rcpp
-  r-rcpparmadillo
+  r-rcppparallel
   r-reshape2
   r-sp
   gcc
 )
 optdepends=(
   r-abcanalysis
-  r-choroplethr
   r-colorspace
   r-diptest
-  r-dplyr
   r-ggextra
   r-ggmap
   r-ggrepel
+  r-gridextra
   r-htmlwidgets
   r-knitr
   r-mass
@@ -38,7 +37,6 @@ optdepends=(
   r-plotly
   r-plotrix
   r-plyr
-  r-r6
   r-rgl
   r-rmarkdown
   r-rocit

@@ -6,7 +6,7 @@ repo_depends:
 - r-ggplot2
 - r-pracma
 - r-rcpp
-- r-rcpparmadillo
+- r-rcppparallel
 - r-reshape2
 - r-sp
 update_on:
