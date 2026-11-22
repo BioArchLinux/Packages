@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-htmlwidgets
+- r-httr
+- r-jsonlite
+- r-msstats
+- r-r2r
+- r-rentrez
+- r-stopwords
+- r-text2vec
+- r-tidyr
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: MSstatsBioNet
+  repo: bioc
+  md5: true
+- alias: r
