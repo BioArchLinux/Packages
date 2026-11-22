@@ -18,9 +18,11 @@ repo_depends:
 - r-limma
 - r-lme4
 - r-maaslin2
+- r-maaslin3
 - r-mast
 - r-metagenomeseq
 - r-mglm
+- r-microbiome
 - r-microbiomestat
 - r-mixomics
 - r-noiseq
