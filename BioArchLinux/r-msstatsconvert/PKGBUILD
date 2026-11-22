@@ -6,17 +6,18 @@ pkgname=r-${_pkgname,,}
 pkgver=1.18.1
 pkgrel=1
 pkgdesc='Import Data from Various Mass Spectrometry Signal Processing Tools to MSstats Format'
-arch=('any')
+arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
   r-checkmate
   r-data.table
-  r-log4r
+  r-rcpp
   r-stringi
 )
 optdepends=(
+  r-arrow
   r-covr
   r-knitr
   r-rmarkdown

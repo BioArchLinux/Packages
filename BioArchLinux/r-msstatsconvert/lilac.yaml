@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-checkmate
 - r-data.table
-- r-log4r
+- r-rcpp
 - r-stringi
 update_on:
 - regex: MSstatsConvert_([\d._-]+).tar.gz
