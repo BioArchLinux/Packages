@@ -19,7 +19,11 @@ optdepends=(
   'ffmpeg: saveVideo()'
   'swftools: saveSWF()'
   'texlive-bin: saveLatex()'
+  r-cairo
+  r-fimport
+  r-rgl
   r-testit
+  r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('57e4bbd7c116ac0e6077eb613aa5ecf4')
