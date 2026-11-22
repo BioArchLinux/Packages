@@ -3,15 +3,19 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-biocgenerics
+- r-biocneighbors
 - r-biocparallel
+- r-bluster
 - r-cli
 - r-delayedarray
-- r-ggplot2
-- r-pheatmap
+- r-purrr
 - r-rlang
-- r-scales
+- r-singlecellexperiment
+- r-sparsematrixstats
+- r-spatialexperiment
+- r-summarizedexperiment
 repo_makedepends:
-- r-biocneighbors
 - r-testthat
 - r-vdiffr
 update_on:

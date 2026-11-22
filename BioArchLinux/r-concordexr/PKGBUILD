@@ -5,18 +5,23 @@ _pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Calculate the concordex coefficient"
+pkgdesc="Identify Spatial Homogeneous Regions with concordex"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
+  r-biocgenerics
+  r-biocneighbors
   r-biocparallel
+  r-bluster
   r-cli
   r-delayedarray
-  r-ggplot2
-  r-pheatmap
+  r-purrr
   r-rlang
-  r-scales
+  r-singlecellexperiment
+  r-sparsematrixstats
+  r-spatialexperiment
+  r-summarizedexperiment
 )
 checkdepends=(
   r-biocneighbors
@@ -24,17 +29,19 @@ checkdepends=(
   r-vdiffr
 )
 optdepends=(
-  r-biocneighbors
+  r-biocmanager
   r-biocstyle
-  r-bluster
-  r-covr
+  r-ggplot2
+  r-glue
   r-knitr
+  r-mbkmeans
   r-patchwork
   r-rmarkdown
   r-scater
+  r-sfedata
+  r-spatialfeatureexperiment
   r-tenxpbmcdata
   r-testthat
-  r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('957ceda27725ac78f8ea7a1168023d96')
