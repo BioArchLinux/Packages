@@ -1,0 +1,15 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-bigassertr
+- r-data.table
+- r-parallelly
+- r-rcpp
+update_on:
+- source: rpkgs
+  pkgname: bigreadr
+  repo: cran
+  md5: true
+- alias: r
