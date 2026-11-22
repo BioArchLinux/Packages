@@ -10,7 +10,9 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('Apache')
 depends=(
+  lz4
   r
+  zstd
 )
 checkdepends=(
   r-bit64

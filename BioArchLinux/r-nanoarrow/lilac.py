@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "libzstd (optional)",
+        expect_systemrequirements = "libzstd (optional), liblz4 (optional)",
     )
 
 def post_build():
