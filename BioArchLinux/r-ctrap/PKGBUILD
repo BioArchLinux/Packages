@@ -28,7 +28,7 @@ depends=(
   r-limma
   r-pbapply
   r-purrr
-  r-qs
+  r-qs2
   r-r.utils
   r-readxl
   r-reshape2
