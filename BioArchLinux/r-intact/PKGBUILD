@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only AND AGPL-3.0-only')
 depends=(
   r-bdsmatrix
+  r-ggplot2
   r-numderiv
   r-squarem
   r-tidyr
