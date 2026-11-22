@@ -24,6 +24,7 @@ repo_depends:
 - r-go.db
 - r-igraph
 - r-matrixstats
+- r-mosdef
 - r-plotly
 - r-rcolorbrewer
 - r-rintrojs
