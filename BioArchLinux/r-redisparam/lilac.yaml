@@ -4,7 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocparallel
-- r-futile.logger
+- r-logger
 - r-redux
 - r-withr
 repo_makedepends:

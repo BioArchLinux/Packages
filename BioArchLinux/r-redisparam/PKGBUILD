@@ -11,7 +11,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-biocparallel
-  r-futile.logger
+  r-logger
   r-redux
   r-withr
 )
