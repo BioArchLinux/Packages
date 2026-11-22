@@ -7,6 +7,6 @@ repo_depends:
 update_on:
 - source: rpkgs
   pkgname: IlluminaHumanMethylationEPICv2anno.20a1.hg38
-  repo: bioc
+  repo: bioc-data-annotation
   md5: true
 - alias: r
