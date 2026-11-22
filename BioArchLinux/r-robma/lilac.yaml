@@ -5,14 +5,18 @@ maintainers:
 repo_depends:
   - jags
   - r-bayestools
+  - r-bridgesampling
+  - r-coda
   - r-ggplot2
   - r-loo
   - r-mvtnorm
+  - r-ps
   - r-rdpack
   - r-rjags
   - r-rlang
   - r-runjags
   - r-scales
+  - r-statmod
 update_on:
   - regex: RoBMA_([\d._-]+).tar.gz
     source: regex

@@ -14,18 +14,23 @@ depends=(
   jags
   r
   r-bayestools
+  r-bridgesampling
+  r-coda
   r-ggplot2
   r-loo
   r-mvtnorm
+  r-ps
   r-rdpack
   r-rjags
   r-rlang
   r-runjags
   r-scales
-  r-loo
+  r-statmod
 )
 optdepends=(
+  r-cli
   r-covr
+  r-emmeans
   r-fixest
   r-knitr
   r-lme4
@@ -33,10 +38,15 @@ optdepends=(
   r-metadat
   r-metafor
   r-parallel
+  r-pkgload
+  r-posterior
+  r-processx
+  r-r6
   r-rmarkdown
   r-testthat
   r-vdiffr
   r-weightr
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('9fc78da8b60c0b8f86e14fd9529dabe3c4e1ba974e9c9e9d3ca622a3fa4763ce')
