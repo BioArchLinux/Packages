@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "GPL-3 | file LICENSE",
-        expect_systemrequirements = "cairo, freetype2, fontconfig",
+        expect_systemrequirements = "freetype2",
     )
 
 def post_build():
