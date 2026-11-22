@@ -1,6 +1,4 @@
-import contextlib
 import importlib.util
-import io
 from pathlib import Path
 import subprocess
 import sys
@@ -17,7 +15,7 @@ utils = importlib.util.module_from_spec(SPEC)
 # The writer needs no live Lilac service or pacman database.
 with patch.dict(sys.modules, {
     "lilac2.const": types.SimpleNamespace(PACMAN_DB_DIR="/unused"),
-    "lilaclib": types.SimpleNamespace(edit_file=None, run_protected=None),
+    "lilaclib": types.SimpleNamespace(edit_file=None, run_cmd=None, run_protected=None),
     "pyalpm": types.ModuleType("pyalpm"),
 }):
     SPEC.loader.exec_module(utils)
@@ -27,11 +25,7 @@ class DependencyQuotingTests(unittest.TestCase):
     template = "depends=(\n  old\n)\nmakedepends=(\n  old\n)\noptdepends=(\n  old\n)\n"
 
     def rewrite(self, text, fixes):
-        output = io.StringIO()
-        with patch.object(utils, "edit_file", return_value=iter(text.splitlines())):
-            with contextlib.redirect_stdout(output):
-                utils.r_apply_dependency_fixes(fixes)
-        return output.getvalue()
+        return utils.r_rewrite_pkgbuild(text, fixes)
 
     def assert_roundtrip(self, text, fixes):
         subprocess.run(["bash", "-n"], input=text, text=True, check=True)

@@ -1,8 +1,11 @@
 from lilac2.const import PACMAN_DB_DIR
-from lilaclib import edit_file, run_protected
+from lilaclib import edit_file, run_cmd, run_protected
+import os
 import pyalpm
+import re
 import shlex
 import tarfile
+import yaml
 from types import SimpleNamespace
 
 def r_update_pkgver_and_pkgrel(newver: str):
@@ -320,15 +323,14 @@ def check_optdepends(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if len(errors) > 0:
         raise CheckFailed('\n'.join(errors))
 
-def check_fortran(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
-    fortran_files = False
-    prefix = f"{pkg._pkgname}/src/"
+def has_fortran_files(tar: tarfile.TarFile, pkgname: str) -> bool:
+    prefix = f"{pkgname}/src/"
     # accepted Fortran file suffixes are listed in `/etc/R/Makeconf`
     suffixes = (".f", ".f90", ".f95")
-    for name in cfg.tar.getnames():
-        if name.startswith(prefix) and name.endswith(suffixes):
-            fortran_files = True
-            break
+    return any(name.startswith(prefix) and name.endswith(suffixes) for name in tar.getnames())
+
+def check_fortran(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
+    fortran_files = has_fortran_files(cfg.tar, pkg._pkgname)
     fortran_dep = "gcc-fortran" in pkg.makedepends
 
     if fortran_files and not fortran_dep:
@@ -337,19 +339,24 @@ def check_fortran(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     elif not fortran_files and fortran_dep:
         raise CheckFailed("Unnecessary make dependency: gcc-fortran")
     elif cfg.ignore_fortran_files and not fortran_files:
-        raise CheckFailed("Unnecessary config 'ignore_fortran_files'")
+        print("Warning: unnecessary config 'ignore_fortran_files'")
+
+def _relevant_systemrequirements(value: str):
+    """SystemRequirements without the C++ standard and GNU make, which every build has"""
+    if value is None:
+        return None
+    parts = [part.strip() for part in value.split(",")]
+    parts = [part for part in parts if part and not re.fullmatch(r"C\+\+\d\d|GNU make", part, re.I)]
+    return ", ".join(parts) or None
 
 def check_systemrequirements(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
-    ignored = [
-        "C++11",
-        "C++17",
-        "GNU make",
-    ]
-    sysrq = desc.systemrequirements
-    if sysrq in ignored:
-        sysrq = None
-    if cfg.expect_systemrequirements != sysrq:
-        raise CheckFailed(f"SystemRequirements have changed: {sysrq}")
+    sysrq = _relevant_systemrequirements(desc.systemrequirements)
+    if _relevant_systemrequirements(cfg.expect_systemrequirements) != sysrq:
+        if sysrq is None:
+            # nothing new is required, so the build is not affected
+            print("Warning: SystemRequirements have been removed, expect_systemrequirements is unnecessary")
+        else:
+            raise CheckFailed(f"SystemRequirements have changed: {desc.systemrequirements}")
 
 def check_license(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if cfg.expect_license is not None:
@@ -362,7 +369,7 @@ def check_license(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     else:
         raise CheckFailed(f"Unknown license: {desc.license}. Consider setting CheckConfig.expect_license")
 
-def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
+def expected_pkgdesc(pkg: Pkgbuild, desc: Description) -> str:
     title = desc.title
     title_lower = title.lower()
     name_lower = pkg._pkgname.lower()
@@ -375,10 +382,13 @@ def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     # detect and remove trailing dot from the title
     if len(title) > 1 and title[-1] == "." and title[-2] != ".":
         title = title[:-1]
+    return title
 
+def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
+    title = expected_pkgdesc(pkg, desc)
     if cfg.expect_title is not None:
         if pkg.pkgdesc == title:
-            raise CheckFailed("Unnecessary expect_title")
+            print("Warning: unnecessary expect_title")
         elif cfg.expect_title != desc.title:
             raise CheckFailed(f"Title has changed: {desc.title}")
     elif pkg.pkgdesc != title:
@@ -387,7 +397,11 @@ def check_pkgdesc(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
 def check_arch(pkg: Pkgbuild, desc: Description, cfg: CheckConfig):
     if cfg.expect_needscompilation is not None:
         if desc.needscompilation != cfg.expect_needscompilation:
-            raise CheckFailed(f"NeedsCompilation value has changed: {desc.needscompilation}")
+            if desc.needscompilation != "" and pkg.arch == ["x86_64" if desc.needscompilation else "any"]:
+                # arch already matches the new value
+                print("Warning: unnecessary expect_needscompilation")
+            else:
+                raise CheckFailed(f"NeedsCompilation value has changed: {desc.needscompilation}")
     else:
         if desc.needscompilation == "":
             raise CheckFailed("No NeedsCompilation value")
@@ -432,14 +446,14 @@ def r_check_pkgbuild(newver: str, cfg: CheckConfig):
 def r_fix_dependencies(pkg: Pkgbuild, desc: Description, cfg: CheckConfig, tar: tarfile.TarFile):
     """
     Automatically fix R package dependencies (r-*) in PKGBUILD file.
-    Only handles r-* dependencies, preserving all other dependencies as-is.
+    Only handles r-* dependencies and gcc-fortran, preserving all other dependencies as-is.
     Returns a dict with the corrected dependencies.
     
     Args:
         pkg: Parsed PKGBUILD
         desc: Parsed DESCRIPTION from R package
         cfg: CheckConfig with additional configuration
-        tar: Open tarfile for the R package (unused, kept for compatibility)
+        tar: Open tarfile for the R package
     
     Note: desc.depends and desc.imports are combined into a set, which
     automatically handles any duplicates from the DESCRIPTION file.
@@ -524,6 +538,13 @@ def r_fix_dependencies(pkg: Pkgbuild, desc: Description, cfg: CheckConfig, tar: 
         if (dep not in cfg.default_r_pkgs) and (dep not in new_depends) and (dep not in new_makedepends):
             new_makedepends.append(dep)
     
+    # gcc-fortran, as check_fortran expects it
+    if has_fortran_files(tar, pkg._pkgname):
+        if "gcc-fortran" not in new_makedepends and not cfg.ignore_fortran_files:
+            new_makedepends.append("gcc-fortran")
+    elif "gcc-fortran" in new_makedepends:
+        new_makedepends.remove("gcc-fortran")
+    
     new_makedepends = sorted(new_makedepends)
     fixes['makedepends'] = new_makedepends
     
@@ -554,163 +575,376 @@ def r_fix_dependencies(pkg: Pkgbuild, desc: Description, cfg: CheckConfig, tar: 
     
     return fixes
 
-def r_apply_dependency_fixes(fixes: dict):
+def r_fix_metadata(pkg: Pkgbuild, desc: Description, cfg: CheckConfig) -> dict:
+    """Return the pkgdesc and arch values expected by check_pkgdesc and check_arch, where they differ."""
+    fixes = {}
+    if cfg.expect_title is None:
+        title = expected_pkgdesc(pkg, desc)
+        if pkg.pkgdesc != title:
+            fixes['pkgdesc'] = title
+    if cfg.expect_needscompilation is None and desc.needscompilation != "":
+        arch = "x86_64" if desc.needscompilation else "any"
+        if pkg.arch != [arch]:
+            fixes['arch'] = arch
+    return fixes
+
+# The PKGBUILD is edited as text rather than regenerated, so that everything the
+# fixes do not touch stays as the maintainer wrote it.
+
+def _array_end(text: str, i: int) -> int:
+    """
+    Return the index after the ')' that closes the bash array opened just before text[i].
+    Quotes, backslash escapes and comments are skipped, so a ')' inside an optdepends
+    description does not end the array.
+    """
+    quote = None
+    while i < len(text):
+        c = text[i]
+        if quote == "'":
+            if c == "'":
+                quote = None
+        elif c == "\\":
+            i += 1
+        elif quote == '"':
+            if c == '"':
+                quote = None
+        elif c in "'\"":
+            quote = c
+        elif c == "#" and text[i - 1] in " \t\n(":
+            # a comment ends at the end of the line
+            i = text.find("\n", i)
+            if i == -1:
+                break
+            continue
+        elif c == ")":
+            return i + 1
+        i += 1
+    raise Exception("Array is not closed")
+
+def _find_definition(text: str, name: str):
+    """
+    Return the (start, end) of a top-level `name=...` definition in a PKGBUILD, or None.
+    An array ends at its closing ')', a plain variable at the end of its line.
+    """
+    m = re.search(rf"^{name}=", text, re.M)
+    if m is None:
+        return None
+    if text.startswith("(", m.end()):
+        return m.start(), _array_end(text, m.end() + 1)
+    end = text.find("\n", m.end())
+    return m.start(), len(text) if end == -1 else end
+
+def _quote_like(old: str, value: str) -> str:
+    """Quote value for bash, in the style of the old value where possible."""
+    if old.startswith("'") and "'" not in value:
+        return f"'{value}'"
+    if not any(c in value for c in "\"$`\\"):
+        return f'"{value}"'
+    return shlex.quote(value)
+
+# where to create a missing array, in order of preference
+_array_anchors = {
+    "depends": ("license", "arch"),
+    "makedepends": ("depends",),
+    "optdepends": ("checkdepends", "makedepends", "depends"),
+}
+
+def r_rewrite_pkgbuild(text: str, fixes: dict) -> str:
+    """
+    Apply dependency and metadata fixes to the text of a PKGBUILD.
+    Each array in fixes replaces the existing one, one entry per line, or is created
+    after the arrays in _array_anchors when the PKGBUILD has none. pkgdesc and arch
+    keep the quoting of the old value.
+    """
+    indent = "  "
+    for name in ("depends", "makedepends", "optdepends"):
+        if name not in fixes:
+            continue
+        block = f"{name}=(\n" + "".join(f"{indent}{shlex.quote(dep)}\n" for dep in fixes[name]) + ")"
+        span = _find_definition(text, name)
+        if span is not None:
+            text = text[:span[0]] + block + text[span[1]:]
+        elif fixes[name]:
+            for anchor in _array_anchors[name]:
+                span = _find_definition(text, anchor)
+                if span is not None:
+                    eol = text.find("\n", span[1])
+                    if eol == -1:
+                        eol = len(text)
+                    text = text[:eol] + "\n" + block + text[eol:]
+                    break
+            else:
+                raise Exception(f"Cannot place {name} in PKGBUILD")
+    if "pkgdesc" in fixes:
+        start, end = _find_definition(text, "pkgdesc")
+        old = text[start + len("pkgdesc="):end]
+        text = text[:start] + "pkgdesc=" + _quote_like(old, fixes["pkgdesc"]) + text[end:]
+    if "arch" in fixes:
+        start, end = _find_definition(text, "arch")
+        q = "'" if "'" in text[start:end] else ""
+        text = text[:start] + f"arch=({q}{fixes['arch']}{q})" + text[end:]
+    return text
+
+def r_apply_dependency_fixes(fixes: dict) -> bool:
     """
     Apply dependency fixes to PKGBUILD file.
+    Returns whether the file changed.
     """
-    in_depends = False
-    in_makedepends = False
-    in_optdepends = False
-    indent = "  "
-    
-    for line in edit_file("PKGBUILD"):
-        stripped = line.strip()
-        
-        # Check if we're entering a dependency array
-        if stripped.startswith("depends=("):
-            in_depends = True
-            in_makedepends = False
-            in_optdepends = False
-            print("depends=(")
-            # Print all depends
-            for dep in fixes['depends']:
-                print(f"{indent}{shlex.quote(dep)}")
-            # Skip until we find the closing parenthesis
-            continue
-        elif stripped.startswith("makedepends=("):
-            in_depends = False
-            in_makedepends = True
-            in_optdepends = False
-            print("makedepends=(")
-            # Print all makedepends
-            for dep in fixes['makedepends']:
-                print(f"{indent}{shlex.quote(dep)}")
-            continue
-        elif stripped.startswith("optdepends=("):
-            in_depends = False
-            in_makedepends = False
-            in_optdepends = True
-            print("optdepends=(")
-            # Print all optdepends
-            for dep in fixes['optdepends']:
-                print(f"{indent}{shlex.quote(dep)}")
-            continue
-        
-        # Check if we're exiting a dependency array
-        if in_depends or in_makedepends or in_optdepends:
-            if stripped == ")":
-                in_depends = False
-                in_makedepends = False
-                in_optdepends = False
-                print(line)
-            # Skip lines within dependency arrays (we already printed them)
-            continue
-        
-        # Print all other lines as-is
-        print(line)
+    with open("PKGBUILD") as f:
+        text = f.read()
+    new_text = r_rewrite_pkgbuild(text, fixes)
+    if new_text != text:
+        with open("PKGBUILD", "w") as f:
+            f.write(new_text)
+    return new_text != text
 
-def r_update_lilac_yaml(fixes: dict):
+def r_auto_fix(newver: str, cfg: CheckConfig) -> bool:
     """
-    Update lilac.yaml file with corrected R package dependencies.
-    Only updates repo_depends with r-* packages from the fixed depends list.
+    Fix the dependencies, pkgdesc and arch from the DESCRIPTION.
+    Returns whether the PKGBUILD changed.
     """
-    import os
-    import yaml
-    
+    pkgbuild = Pkgbuild()
+    cfg.default_r_pkgs = get_default_r_pkgs()
+    with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r:gz") as tar:
+        description = Description(tar, pkgbuild._pkgname)
+        cfg.tar = tar
+        fixes = r_fix_dependencies(pkgbuild, description, cfg, tar)
+        fixes.update(r_fix_metadata(pkgbuild, description, cfg))
+    # leave arrays that are already right as they are written
+    for name in ("depends", "makedepends", "optdepends"):
+        if set(fixes[name]) == set(getattr(pkgbuild, name)):
+            del fixes[name]
+    return r_apply_dependency_fixes(fixes)
+
+def _dep_name(dep: str) -> str:
+    """Strip a version constraint, as in r-foo>=1.0"""
+    return re.split("[<>=]", dep, maxsplit=1)[0]
+
+def _in_repo(dep: str) -> bool:
+    # lilac resolves repo_depends to directories of this repository
+    return os.path.exists(os.path.join("..", dep, "lilac.yaml"))
+
+def get_official_pkgs() -> set:
+    """Get the names and provides of the packages in [core] and [extra]"""
+    handle = pyalpm.Handle("/", str(PACMAN_DB_DIR))
+    official = set()
+    for repo in ("core", "extra"):
+        for p in handle.register_syncdb(repo, 0).pkgcache:
+            official.add(p.name)
+            official.update(_dep_name(pr) for pr in p.provides)
+    return official
+
+# lilac.yaml is also edited as text: yaml.dump would remove comments and change the
+# format of the rest of the file. Only top-level lists of plain entries are handled.
+
+def r_check_packaged(pkg: Pkgbuild, official: set):
+    """Fail if an R dependency is neither in this repository nor in [core] or [extra]."""
+    missing = sorted({
+        _dep_name(dep) for dep in pkg.depends + pkg.makedepends + pkg.checkdepends
+        if dep.startswith("r-") and _dep_name(dep) not in official and not _in_repo(_dep_name(dep))
+    })
+    if missing:
+        raise CheckFailed(f"Dependencies not packaged: {', '.join(missing)}")
+
+# a list entry such as "- r-foo", "  - 'r-foo'" or "- r-foo  # comment"
+_yaml_entry = re.compile(r"""^(\s*-\s+)(['"]?)([^\s'":#]+)\2\s*(#.*)?$""")
+
+def _yaml_name(line: str):
+    m = _yaml_entry.match(line)
+    return m.group(3) if m else None
+
+def _sync_yaml_list(lines: list, key: str, wanted: list, anchors: tuple) -> list:
+    """
+    Add the entries of wanted that a top-level list in lilac.yaml lacks, and remove
+    its r-* entries that are not wanted, keeping other entries, comments and the
+    order. Returns the entries it had before.
+    """
+    # find the key; a value on the same line (such as [a, b]) is not handled
+    start = None
+    for i, line in enumerate(lines):
+        if line.startswith(f"{key}:"):
+            start = i
+    if start is not None and lines[start].split("#", 1)[0].rstrip() != f"{key}:":
+        print(f"Warning: cannot update {key} in lilac.yaml")
+        return wanted
+    if start is None:
+        # create the list after the first anchor key that exists
+        if wanted:
+            at = len(lines)
+            for anchor in anchors:
+                found = [i for i, line in enumerate(lines) if line.startswith(f"{anchor}:")]
+                if found:
+                    at = found[0] + 1
+                    while at < len(lines) and lines[at][:1] in (" ", "\t", "-"):
+                        at += 1
+                    break
+            lines[at:at] = [f"{key}:"] + [f"- {dep}" for dep in sorted(wanted)]
+        return []
+
+    # the list continues while lines are entries, indented lines or comments
+    end = start + 1
+    while end < len(lines) and lines[end][:1] in (" ", "\t", "-", "#"):
+        end += 1
+    block = lines[start + 1:end]
+    present = [_yaml_name(line) for line in block if _yaml_name(line)]
+
+    # new entries are written like the existing ones
+    prefix, quote = "- ", ""
+    for line in block:
+        m = _yaml_entry.match(line)
+        if m:
+            prefix, quote = m.group(1) + m.group(2), m.group(2)
+            break
+        elif line.lstrip().startswith("-"):
+            prefix = line[:line.index("-")] + "- "
+            break
+
+    # remove r-* entries that are not needed; other entries may be needed for other reasons
+    block = [line for line in block if not (_yaml_name(line) or "").startswith("r-") or _yaml_name(line) in wanted]
+
+    # add the missing ones: in sorted position if the list is sorted, else at its end
+    in_order = present == sorted(present)
+    for dep in sorted(set(wanted) - set(present)):
+        entries = [i for i, line in enumerate(block) if line.lstrip().startswith("-")]
+        at = entries[-1] + 1 if entries else 0
+        if in_order:
+            later = [i for i in entries if (_yaml_name(block[i]) or "") > dep]
+            if later:
+                at = later[0]
+        block.insert(at, f"{prefix}{dep}{quote}")
+
+    if any(line.lstrip().startswith("-") for line in block):
+        lines[start + 1:end] = block
+    else:
+        # an empty list would load as None, so remove the key
+        lines[start:end] = [line for line in block if line.startswith("#")]
+    return present
+
+def r_update_lilac_yaml(pkg: Pkgbuild, official: set = frozenset()):
+    """
+    Update repo_depends and repo_makedepends in lilac.yaml from the PKGBUILD.
+    Dependencies that are packages of this repository, and not of [core] or [extra],
+    are added; r-* entries that are no longer needed are removed. Other entries,
+    comments and the order of entries are kept.
+    Returns whether the file changed, and the packages that were not listed before.
+    """
     if not os.path.exists("lilac.yaml"):
-        return  # No lilac.yaml file to update
-    
-    try:
-        # Load existing lilac.yaml
-        with open("lilac.yaml", "r") as f:
-            data = yaml.safe_load(f)
-        
-        if data is None:
-            data = {}
-        
-        # Extract only r-* dependencies (excluding 'r' itself)
-        r_deps = [dep for dep in fixes['depends'] if dep.startswith('r-')]
-        
-        # Update repo_depends with r-* packages
-        if r_deps:
-            data['repo_depends'] = r_deps
-        elif 'repo_depends' in data:
-            # Remove repo_depends if no r-* dependencies
-            del data['repo_depends']
-        
-        # Extract only r-* makedepends
-        r_makedeps = [dep for dep in fixes['makedepends'] if dep.startswith('r-')]
-        
-        # Update repo_makedepends with r-* packages
-        if r_makedeps:
-            data['repo_makedepends'] = r_makedeps
-        elif 'repo_makedepends' in data:
-            # Remove repo_makedepends if no r-* makedepends
-            del data['repo_makedepends']
-        
-        # Write updated lilac.yaml
+        return False, []
+    def ours(dep):
+        return dep not in official and _in_repo(dep)
+    depends = [dep for dep in dict.fromkeys(map(_dep_name, pkg.depends)) if ours(dep)]
+    # repo_makedepends takes what is needed only to build or check
+    makedepends = [_dep_name(dep) for dep in pkg.makedepends + pkg.checkdepends]
+    makedepends = [dep for dep in dict.fromkeys(makedepends) if ours(dep) and dep not in depends]
+
+    with open("lilac.yaml") as f:
+        text = f.read()
+    lines = text.splitlines()
+    before = set(_sync_yaml_list(lines, "repo_depends", depends, ("maintainers",)))
+    before.update(_sync_yaml_list(lines, "repo_makedepends", makedepends, ("repo_depends", "maintainers")))
+    new_text = "\n".join(lines) + "\n"
+    if new_text != text:
         with open("lilac.yaml", "w") as f:
-            yaml.dump(data, f, default_flow_style=False, sort_keys=False)
-    
-    except (IOError, OSError, PermissionError) as e:
-        # Log error but don't fail the build - lilac.yaml update is optional
-        print(f"Warning: Failed to update lilac.yaml: {e}")
-    except yaml.YAMLError as e:
-        # Log YAML parsing/serialization errors
-        print(f"Warning: YAML error while updating lilac.yaml: {e}")
+            f.write(new_text)
+    return new_text != text, sorted(set(depends + makedepends) - before)
+
+def _repo_entries(pkgbase: str, key: str) -> list:
+    """The pkgbase names in a list of a package's lilac.yaml; an entry may be {pkgbase: pkgname}"""
+    try:
+        with open(os.path.join("..", pkgbase, "lilac.yaml")) as f:
+            conf = yaml.safe_load(f) or {}
+    except FileNotFoundError:
+        return []
+    return [next(iter(e)) if isinstance(e, dict) else e for e in conf.get(key) or []]
+
+def r_chroot_packages(pkgbase: str) -> set:
+    """
+    The packages of this repository that lilac installs to build pkgbase, as its
+    get_dependency_map does: repo_depends and repo_makedepends, and the repo_depends
+    of each of those, recursively.
+    """
+    found = set()
+    def add(dep):
+        if dep not in found:
+            found.add(dep)
+            for d in _repo_entries(dep, "repo_depends"):
+                add(d)
+    for dep in _repo_entries(pkgbase, "repo_depends") + _repo_entries(pkgbase, "repo_makedepends"):
+        add(dep)
+    return found
+
+def _restore_version(text: str, old: str) -> str:
+    """Put back the version and checksum lines of old into text."""
+    for name in ("_pkgver", "pkgrel", "md5sums", "sha256sums", "sha512sums", "b2sums"):
+        span = _find_definition(text, name)
+        old_span = _find_definition(old, name)
+        if span is not None and old_span is not None:
+            text = text[:span[0]] + old[old_span[0]:old_span[1]] + text[span[1]:]
+    return text
+
+def r_commit_lilac_yaml(newver: str):
+    """
+    Commit lilac.yaml with the fixed PKGBUILD. The PKGBUILD is committed with its
+    old version and checksums, so that the next build updates it as usual.
+
+    git_commit() from lilaclib is not used: its message needs _G.built_version,
+    which is not set until after pre_build, and it commits the whole index.
+    """
+    pkgbase = os.path.basename(os.getcwd())
+    with open("PKGBUILD") as f:
+        text = f.read()
+    old = run_cmd(["git", "show", "HEAD:./PKGBUILD"])
+    try:
+        with open("PKGBUILD", "w") as f:
+            f.write(_restore_version(text, old))
+        run_cmd(["git", "commit", "--no-gpg-sign", "-m", f"{pkgbase}: autofix for {newver}", "--", "PKGBUILD", "lilac.yaml"])
+    finally:
+        # the build under way needs the new version
+        with open("PKGBUILD", "w") as f:
+            f.write(text)
 
 def r_pre_build(_G: SimpleNamespace, auto_fix: bool = True, **kwargs):
+    """
+    Update an R package to _G.newver and check the PKGBUILD against its DESCRIPTION.
+
+    With auto_fix, the values that come from the DESCRIPTION are fixed, and the
+    check runs again. Then repo_depends and repo_makedepends in lilac.yaml are
+    updated to match the PKGBUILD. A changed lilac.yaml is committed here, because
+    lilac does not commit it after the build. lilac chooses the packages for the
+    build chroot before pre_build. So if a new package in lilac.yaml is not one of
+    them, the build fails, and the next run uses it. Other errors of the check,
+    such as a licence change, still fail the build. kwargs are passed to CheckConfig.
+    """
     cfg = CheckConfig(**kwargs)
     newver, md5sum = _G.newver.rsplit("#", 1)
     cfg.md5sum = md5sum
 
     r_update_pkgver_and_pkgrel(newver)
     run_protected(["updpkgsums"])
-    
-    if auto_fix:
-        # Try to automatically fix dependencies
-        pkgbuild = Pkgbuild()
-        cfg.default_r_pkgs = get_default_r_pkgs()
-        
-        # Track if we applied fixes
-        applied_fixes = False
-        
-        with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r:gz") as tar:
-            description = Description(tar, pkgbuild._pkgname)
-            
-            # Try to check first
-            try:
-                # Create a temporary config with tar for checking
-                cfg.tar = tar
-                r_check_pkgbuild(newver, cfg)
-            except CheckFailed as e:
-                # Check if the error is related to dependencies
-                error_msg = str(e.msg)
-                dependency_keywords = [
-                    "Unnecessary dependency",
-                    "Missing dependency", 
-                    "Unnecessary make dependency",
-                    "Missing make dependency",
-                    "Unnecessary optional dependency",
-                    "Missing optional dependency",
-                    "gcc-fortran"
-                ]
-                
-                if any(keyword in error_msg for keyword in dependency_keywords):
-                    # Apply automatic fixes - pass tar object explicitly
-                    fixes = r_fix_dependencies(pkgbuild, description, cfg, tar)
-                    r_apply_dependency_fixes(fixes)
-                    r_update_lilac_yaml(fixes)
-                    applied_fixes = True
-                else:
-                    # Re-raise if it's not a dependency issue
-                    raise
-        
-        # If we applied fixes, re-run updpkgsums and check again
-        if applied_fixes:
-            run_protected(["updpkgsums"])
-            with tarfile.open(f"{pkgbuild._pkgname}_{newver}.tar.gz", "r:gz") as tar:
-                cfg.tar = tar
-                r_check_pkgbuild(newver, cfg)
+
+    if not auto_fix:
+        r_check_pkgbuild(newver, cfg)
+        return
+
+    # check, fix, check again; stop when a round of fixes changes nothing
+    for _ in range(3):
+        try:
+            r_check_pkgbuild(newver, cfg)
+            break
+        except CheckFailed:
+            if not r_auto_fix(newver, cfg):
+                raise
     else:
         r_check_pkgbuild(newver, cfg)
+
+    pkgbuild = Pkgbuild()
+    official = get_official_pkgs()
+    r_check_packaged(pkgbuild, official)
+    # lilac has chosen the packages for the build chroot before pre_build
+    in_chroot = r_chroot_packages(os.path.basename(os.getcwd()))
+    changed, added = r_update_lilac_yaml(pkgbuild, official)
+    if changed:
+        r_commit_lilac_yaml(newver)
+    missing = [dep for dep in added if dep not in in_chroot]
+    if missing:
+        raise CheckFailed(f"Committed new repo dependencies in lilac.yaml: {', '.join(missing)}. They are used from the next build.")
