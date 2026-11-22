@@ -17,22 +17,31 @@ depends=(
   r-data.table
   r-delayedarray
   r-dplyr
-  r-genomeinfodb
+  r-genomicfeatures
   r-genomicranges
+  r-gtools
   r-hash
   r-iranges
   r-keras
   r-mltools
+  r-openxlsx
   r-reticulate
   r-rhdf5
+  r-rio
+  r-rlang
   r-s4vectors
+  r-seqinfo
   r-seqinr
+  r-stringr
   r-xvector
 )
 optdepends=(
+  r-biocfilecache
   r-biocstyle
   r-bsgenome.hsapiens.ucsc.hg19
+  r-bsgenome.hsapiens.ucsc.hg38
   r-bsgenome.mmusculus.ucsc.mm10
+  r-knitr
   r-lattice
   r-mass
   r-org.hs.eg.db
@@ -41,6 +50,7 @@ optdepends=(
   r-tensorflow
   r-testthat
   r-txdb.hsapiens.ucsc.hg19.knowngene
+  r-txdb.hsapiens.ucsc.hg38.knowngene
   r-txdb.mmusculus.ucsc.mm10.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

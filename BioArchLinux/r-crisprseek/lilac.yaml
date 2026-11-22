@@ -9,16 +9,22 @@ repo_depends:
 - r-data.table
 - r-delayedarray
 - r-dplyr
-- r-genomeinfodb
+- r-genomicfeatures
 - r-genomicranges
+- r-gtools
 - r-hash
 - r-iranges
 - r-keras
 - r-mltools
+- r-openxlsx
 - r-reticulate
 - r-rhdf5
+- r-rio
+- r-rlang
 - r-s4vectors
+- r-seqinfo
 - r-seqinr
+- r-stringr
 - r-xvector
 update_on:
 - regex: CRISPRseek_([\d._-]+).tar.gz
