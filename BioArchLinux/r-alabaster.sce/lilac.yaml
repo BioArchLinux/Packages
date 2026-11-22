@@ -8,6 +8,7 @@ repo_depends:
 - r-jsonlite
 - r-singlecellexperiment
 repo_makedepends:
+- r-digest
 - r-testthat
 update_on:
 - source: rpkgs
