@@ -11,16 +11,18 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-aisdk
   r-annotationdbi
-  r-dose
-  r-downloader
   r-dplyr
+  r-enrichit
   r-enrichplot
+  r-ggplot2
   r-go.db
   r-gosemsim
   r-gson
   r-httr
   r-igraph
+  r-jsonlite
   r-magrittr
   r-plyr
   r-qvalue
