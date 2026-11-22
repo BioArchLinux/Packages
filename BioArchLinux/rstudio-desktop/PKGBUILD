@@ -19,7 +19,7 @@ _quarto_branch="release/rstudio-cranberry-hibiscus"
 _rig_version="0.11.0"
 : ${_copilot_version:=1.551.2}
 
-pkgrel=0
+pkgrel=1
 pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
