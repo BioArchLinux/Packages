@@ -1,35 +1,38 @@
 # Contributing to BioArchLinux
 
-This repository holds the build recipes for every package in the `[bioarchlinux]` repository. [lilac](https://github.com/archlinuxcn/lilac) builds the packages from here, checks for new upstream versions, and updates the packages automatically.
+Thanks for your interest in contributing packages to the repo. Before submitting packages, make sure your `PKGBUILD` is in line with the packaging guidelines in the [Arch Wiki](https://wiki.archlinux.org/title/PKGBUILD) and can be built in a [clean chroot](#building-in-a-clean-chroot). This document also assumes you have signed up for a GitHub account and set up SSH keys as outlined in the GitHub [documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh).
 
-Everyone taking part is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+[lilac](https://github.com/archlinuxcn/lilac) builds and updates the packages here. The [Contribution](https://wiki.bioarchlinux.org/Contribution) page on our wiki gives a short overview of it.
 
-## Reporting a problem or requesting a package
+## Workflow
 
-Use the issue templates, one package per issue:
+1. Create a fork of the [BioArchLinux Packages](https://github.com/BioArchLinux/Packages) repository and clone it locally.
+   ```
+   git clone <ssh link to your forked repo>
+   ```
+2. Create a new branch for the package you wish to add.
+   ```
+   git checkout -b <pkgname>
+   ```
+3. Set the BioArchLinux repository as upstream.
+   ```
+   git remote add upstream https://github.com/BioArchLinux/Packages.git
+   ```
+4. Add or edit the package folder under `BioArchLinux/` (see [Package layout](#package-layout)).
+5. Build the package in a clean chroot (see [Building in a clean chroot](#building-in-a-clean-chroot)).
+6. Commit the changes (see [Commit messages](#commit-messages)).
+   ```
+   git add BioArchLinux/<pkgname>
+   git commit -m "<pkgname>: init pkg"
+   ```
+7. Push the changes.
+   ```
+   git push -u origin <pkgname>
+   ```
+8. Open the URL in the output to create a pull request, and fill in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md).
+9. Wait for review and approval for the pull request to be merged.
 
-- [Packages Bug](https://github.com/BioArchLinux/Packages/issues/new?template=packages-bug-.md) for a package that fails to build, install, or run. Include the log and your package version.
-- [Package Request](https://github.com/BioArchLinux/Packages/issues/new?template=package-request.md) for software you would like to see packaged. Requests for widely used and cited software are considered first.
-
-The build status of every package is at [build.bioarchlinux.org](https://build.bioarchlinux.org).
-
-## Asking questions
-
-Ask in [GitHub Discussions](https://github.com/BioArchLinux/Packages/discussions) or in the [Matrix room](https://matrix.to/#/#bioarchlinux:matrix.org).
-
-## Adding or fixing a package
-
-Packages follow the Arch packaging rules, so read the ArchWiki pages on [PKGBUILD](https://wiki.archlinux.org/title/PKGBUILD) and the [Arch package guidelines](https://wiki.archlinux.org/title/Arch_package_guidelines) first. The [Contribution](https://wiki.bioarchlinux.org/Contribution) page on our wiki gives a short overview of lilac.
-
-### Workflow
-
-1. Fork this repository and clone your fork.
-2. Create a branch for your change.
-3. Add or edit the package folder under `BioArchLinux/` (see below).
-4. Build the package in a clean chroot.
-5. Commit, push to your fork, and open a pull request, filling in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md).
-
-### Package layout
+## Package layout
 
 Each package has its own folder, named after the package:
 
@@ -40,9 +43,9 @@ BioArchLinux/<pkgname>/
 └── lilac.py      (optional)
 ```
 
-### lilac.yaml
+## lilac.yaml
 
-`lilac.yaml` tells lilac who maintains the package, when to update or rebuild it, and what to build first. A typical one:
+`lilac.yaml` tells lilac three things: who maintains the package, when to update or rebuild it, and what to build first. For example:
 
 ```yaml
 build_prefix: extra-x86_64
@@ -59,18 +62,18 @@ update_on:
 - alias: r
 ```
 
-- **`maintainers`** receive lilac's email notifications about the package. Give your GitHub name, and an email address if the one on your GitHub profile is not public.
-- **`update_on`** is a list of [nvchecker](https://nvchecker.readthedocs.io/en/latest/usage.html) entries. The first one checks for new versions and the others only trigger rebuilds. Common sources here are `rpkgs` (CRAN and Bioconductor), `github`, `pypi`, `regex`, and `alpm` or `alpmfiles` for rebuilding against a package in the Arch repositories. `alias: r` and `alias: python` rebuild the package when R or Python moves to a new minor version.
-- **`repo_depends`** lists the packages from this repository in `depends`, and **`repo_makedepends`** those in `makedepends` or `checkdepends`. lilac builds them first and installs them into the build chroot.
-- **`pre_build_script`** and **`post_build_script`** hold the bodies of the `pre_build` and `post_build` functions, if you don't use a `lilac.py`. Almost every `post_build_script` calls `git_pkgbuild_commit()`, which commits the updated `PKGBUILD` back to this repository.
+lilac builds in a chroot. The chroot only has the Arch repositories, plus the packages from this repository that `lilac.yaml` lists. So:
 
-The full reference is the [lilac.yaml documentation](https://archlinuxcn.github.io/lilac/).
+- put every `[bioarchlinux]` package from `depends` under `repo_depends`;
+- put every `[bioarchlinux]` package from `makedepends` and `checkdepends` under `repo_makedepends`.
 
-### lilac.py
+If one is missing, the build fails with "target not found".
 
-`lilac.py` does the same as the two scripts, with Python functions `pre_build()` and `post_build()`, and has the [lilac API](https://lilac.readthedocs.io/en/latest/api.html) available. Use it when the update steps are more than a line or two.
+`update_on` takes [nvchecker](https://nvchecker.readthedocs.io/en/latest/usage.html) entries. The first entry checks for new versions. The other entries only trigger rebuilds. The [lilac.yaml documentation](https://archlinuxcn.github.io/lilac/) describes the other fields.
 
-### Building in a clean chroot
+If the update steps are longer than a line or two, write them in a `lilac.py` as `pre_build()` and `post_build()`, instead of `pre_build_script` and `post_build_script` (see the [lilac API](https://lilac.readthedocs.io/en/latest/api.html)).
+
+## Building in a clean chroot
 
 Build with devtools before opening the pull request. If every dependency is in the Arch repositories, run this in the package folder:
 
@@ -78,7 +81,7 @@ Build with devtools before opening the pull request. If every dependency is in t
 extra-x86_64-build
 ```
 
-If the package depends on something in `[bioarchlinux]`, you need a build target that includes our repository, which takes one-time setup. The chroot copies your system's pacman keyring, so import our signing key first, as in the [README](README.md).
+If the package depends on something in `[bioarchlinux]`, you need a build target that includes our repository. You only need to set this up once. The chroot copies the pacman keyring from your system, so first import our signing key as shown in the [README](README.md). Then run:
 
 ```sh
 sudo cp /usr/share/devtools/pacman.conf.d/extra.conf /usr/share/devtools/pacman.conf.d/bioarchlinux.conf
@@ -86,45 +89,48 @@ printf '\n[bioarchlinux]\nServer = https://repo.bioarchlinux.org/$arch\n' | sudo
 sudo ln -s /usr/bin/archbuild /usr/local/bin/bioarchlinux-x86_64-build
 ```
 
-Then build with `bioarchlinux-x86_64-build`. To build a package that depends on another new package from the same pull request, build that one first and install it into the chroot:
+Then build with `bioarchlinux-x86_64-build`. If the package needs another new package from the same pull request, build that one first and install it into the chroot:
 
 ```sh
 bioarchlinux-x86_64-build -- -I ../<dependency>/<dependency>-<version>-x86_64.pkg.tar.zst
 ```
 
-Add `-c` before the `--` to recreate the chroot from scratch. Read the namcap output at the end of the build. `pkgctl build` does not work here, since it only builds against the official Arch repositories.
+To recreate the chroot from scratch, add `-c` before the `--`. Read the namcap output at the end of the build.
 
-### Commit messages
+`pkgctl build` does not work here, because it only uses the official Arch repositories.
 
-Use one commit per package, with the package name as a prefix:
+## Commit messages
+
+One commit per package, with the package name as a prefix:
 
 - `<pkgname>: init pkg` (or just `init`) for a new package
 - `<pkgname>: update to <version>`
-- `<pkgname>: fix build`, `<pkgname>: fix depends`, and the like for fixes
+- `<pkgname>: fix build`, `<pkgname>: fix depends`, and so on for fixes
 - `<pkgname>: rm pkg` to remove a package
 
-Packages that depend on each other can go in one pull request, titled with all their names: `r-gpgp r-gpvecchia: init pkgs`. Put each dependency's commit before the package that needs it.
+Packages that depend on each other can go in one pull request. Use all their names in the title, like `r-gpgp r-gpvecchia: init pkgs`. Put the commit for each dependency before the package that needs it.
 
-Version updates are normally made by lilac itself, as `<pkgname>: auto updated to <version>`, so you rarely need to update a version by hand.
+lilac usually updates versions itself (`<pkgname>: auto updated to <version>`), so you seldom need to do it by hand.
 
 ## R packages
 
-Most packages here are R packages from CRAN and Bioconductor, named `r-<name in lower case>`. Copy a recent one, such as `BioArchLinux/r-brisc` for CRAN or `BioArchLinux/r-biocgenerics` for Bioconductor, and adapt it.
+Most packages here are R packages from CRAN and Bioconductor. They are named `r-<name in lower case>`. The easiest way to start is to copy a recent one, such as `BioArchLinux/r-brisc` for CRAN or `BioArchLinux/r-biocgenerics` for Bioconductor.
 
-### PKGBUILD
+On every update, `lilac-extensions/lilac_r_utils.py` compares the `PKGBUILD` with the package's `DESCRIPTION`. Fill in the `PKGBUILD` like this:
 
-`lilac-extensions/lilac_r_utils.py` checks the `PKGBUILD` against the package's `DESCRIPTION` file on every update, so write it to pass that check:
+| `PKGBUILD` | From `DESCRIPTION` |
+|---|---|
+| `pkgdesc` | `Title`, without a leading package name or a trailing full stop |
+| `arch` | `x86_64` if `NeedsCompilation: yes`, otherwise `any` |
+| `license` | `License` in SPDX form, from `license_map` in `lilac_r_utils.py` (`GPL (>= 2)` is `GPL-2.0-or-later`, `MIT + file LICENSE` is `MIT`) |
+| `depends` | `Depends` and `Imports` |
+| `makedepends` | `LinkingTo`, minus what is already in `depends`, plus `gcc-fortran` if there are Fortran sources |
+| `optdepends` | `Suggests` |
+| `md5sums` | the md5 sum CRAN or Bioconductor publishes |
 
-- **`pkgdesc`** is the `Title`, without a leading package name and without a trailing full stop.
-- **`arch`** is `x86_64` when the package has `NeedsCompilation: yes`, otherwise `any`.
-- **`license`** is the SPDX form of the `License` field, from `license_map` in `lilac_r_utils.py`. For example, `GPL (>= 2)` is `GPL-2.0-or-later` and `MIT + file LICENSE` is `MIT`.
-- **`depends`** holds every package in `Depends` and `Imports`, **`makedepends`** the `LinkingTo` packages not already in `depends`, and **`optdepends`** every package in `Suggests`. Add `gcc-fortran` to `makedepends` if the package has Fortran sources.
-- **Leave out the packages that come with R itself**, such as `methods`, `stats`, `Matrix`, and `MASS`. The `r` package provides them, and the check rejects them.
-- **`md5sums`** is checked against the md5 sum CRAN or Bioconductor publishes for the tarball.
+Do not list the packages that come with R, such as `methods`, `stats`, `Matrix` and `MASS`. The `r` package already provides them, and the check fails if they are listed.
 
-### lilac.py
-
-Use the `update_on` entry from the example above, with `repo: cran` or `repo: bioc`, and `md5: true`. Then call `r_pre_build` from `lilac.py`:
+Use the `update_on` entry from the example above, with `repo: cran` or `repo: bioc`, and call `r_pre_build` from `lilac.py`:
 
 ```python
 #!/usr/bin/env python3
@@ -140,18 +146,18 @@ def pre_build():
 
 def post_build():
     git_pkgbuild_commit()
-    update_aur_repo()
 ```
 
-`r_pre_build` updates `_pkgver`, `pkgrel`, and the checksums, then runs the check. If the `License` field is not in `license_map`, pass the field exactly as written in the `DESCRIPTION`, for example `r_pre_build(_G, expect_license = "GPL (>= 2) | file LICENSE")`, and write the `license` array yourself. `CheckConfig` in `lilac_r_utils.py` lists the other options, such as `expect_systemrequirements` for packages with a `SystemRequirements` field.
+`r_pre_build` updates the version and checksums, and then runs the check.
 
-> [!WARNING]
-> When the check finds a dependency error, `r_pre_build` rewrites the `r-*` entries of `depends`, `makedepends`, and `optdepends` itself, and rewrites `lilac.yaml` to match. `repo_depends` becomes the `r-*` entries of `depends` and `repo_makedepends` those of `makedepends`, and either is removed when it would be empty. Entries needed only by `checkdepends`, other packages from this repository, and comments are lost in the rewrite, so check `lilac.yaml` after an automatic fix.
+If the license is not in `license_map`, write the `license` array yourself. Then pass the license exactly as the `DESCRIPTION` writes it, for example `r_pre_build(_G, expect_license = "GPL (>= 2) | file LICENSE")`. Other options, like `expect_systemrequirements`, are in `CheckConfig` in `lilac_r_utils.py`.
 
 ## Syncing to the AUR
 
-Many packages here are also on the AUR. `update_aur_repo()` in `post_build` pushes each update there as the BioArchLinuxBot account ([its packages](https://aur.archlinux.org/packages?SeB=m&K=BioArchLinuxBot)). This only works if the AUR package already exists and BioArchLinuxBot is its maintainer or a co-maintainer, so add BioArchLinuxBot as a co-maintainer on the AUR before adding the call. `lilac.yaml` and `lilac.py` are not copied to the AUR, and a rebuild that only changes `pkgrel` is not pushed.
+Many packages here are also on the AUR. lilac keeps them up to date there as BioArchLinuxBot. To sync your package:
 
-## Removing packages
+1. Make sure the package exists on the AUR.
+2. Add BioArchLinuxBot as a co-maintainer there.
+3. Call `update_aur_repo()` in `post_build`, after `git_pkgbuild_commit()`.
 
-Packages removed from CRAN or Bioconductor are deleted here once nothing in this repository or on the AUR depends on them. To propose a removal, open a [Maintainers' Bug](https://github.com/BioArchLinux/Packages/issues/new?template=maintainers--bug.md) issue listing the packages, as in #197 and #205. A maintainer sends the AUR deletion requests from the BioArchLinuxBot account. A package that others on the list depend on is removed in a later batch, after those packages. The repository side is a `<pkgname>: rm pkg` commit that deletes the folder.
+Rebuilds that only change `pkgrel` are not pushed to the AUR.
