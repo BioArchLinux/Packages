@@ -12,26 +12,32 @@ license=('GPL-3.0-only')
 depends=(
   r-assertthat
   r-biocsingular
+  r-biocstyle
   r-circlize
   r-complexheatmap
+  r-conflicted
   r-dendextend
   r-dplyr
+  r-geoquery
+  r-ggdist
   r-ggplot2
   r-ggrepel
   r-ggthemes
   r-paralleldist
   r-parallelly
-  r-pcatools
-  r-plyr
+  r-proxy
+  r-r.utils
   r-rcolorbrewer
   r-rfast
   r-rlang
+  r-rspectra
   r-scales
   r-seurat
+  r-singlecellexperiment
   r-stringr
+  r-summarizedexperiment
   r-tibble
   r-tidyr
-  r-umap
   r-withr
   r-zeallot
 )
@@ -40,19 +46,19 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-biocstyle
+  r-cairo
   r-cowplot
   r-data.table
-  r-geoquery
   r-gsubfn
   r-htmlwidgets
   r-knitr
   r-plotly
   r-proto
   r-qpdf
-  r-r.utils
+  r-ragg
   r-rmarkdown
   r-rtsne
+  r-s4vectors
   r-sf
   r-spelling
   r-testthat
