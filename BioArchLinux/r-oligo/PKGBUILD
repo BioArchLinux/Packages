@@ -15,12 +15,12 @@ depends=(
   r-biobase
   r-biocgenerics
   r-biostrings
+  r-bit
   r-dbi
   r-ff
   r-oligoclasses
   r-preprocesscore
   r-rsqlite
-  r-zlibbioc
   zlib
 )
 optdepends=(

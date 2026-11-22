@@ -8,12 +8,12 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 - r-biostrings
+- r-bit
 - r-dbi
 - r-ff
 - r-oligoclasses
 - r-preprocesscore
 - r-rsqlite
-- r-zlibbioc
 update_on:
 - source: rpkgs
   pkgname: oligo
