@@ -10,21 +10,31 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
-  r-biomart
+  r-annotationdbi
   r-biostrings
+  r-curl
   r-data.table
   r-dplyr
   r-genomicfeatures
+  r-ggplot2
+  r-iranges
   r-jsonlite
+  r-rcurl
+  r-readr
   r-rhdf5
   r-rslurm
+  r-rsqlite
   r-rtracklayer
+  r-scales
   r-sjmisc
+  r-spatstat.univar
+  r-stringr
   r-txdbmaker
   r-tximport
 )
 optdepends=(
   r-annotationhub
+  r-genomeinfodb
   r-httr
   r-knitr
   r-rmarkdown

@@ -3,16 +3,25 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-biomart
+- r-annotationdbi
 - r-biostrings
+- r-curl
 - r-data.table
 - r-dplyr
 - r-genomicfeatures
+- r-ggplot2
+- r-iranges
 - r-jsonlite
+- r-rcurl
+- r-readr
 - r-rhdf5
 - r-rslurm
+- r-rsqlite
 - r-rtracklayer
+- r-scales
 - r-sjmisc
+- r-spatstat.univar
+- r-stringr
 - r-txdbmaker
 - r-tximport
 update_on:
