@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocmanager
 - r-rcolorbrewer
 update_on:
 - source: rpkgs

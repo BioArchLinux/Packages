@@ -10,6 +10,7 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('Artistic-2.0')
 depends=(
+  r-biocmanager
   r-rcolorbrewer
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
