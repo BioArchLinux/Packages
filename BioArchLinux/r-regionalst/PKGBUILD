@@ -5,13 +5,14 @@ _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Investigating regions of interest and performing cross-regional analysis with spatial transcriptomics data"
+pkgdesc="Investigating regions of interest and performing regional cell type-specific analysis with spatial transcriptomics data"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-assertthat
   r-bayesspace
+  r-biocstyle
   r-colorspace
   r-dplyr
   r-fgsea
@@ -32,7 +33,6 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-biocstyle
   r-gplots
   r-knitr
   r-rmarkdown
