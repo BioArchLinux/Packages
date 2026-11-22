@@ -3,9 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-bibitr
 - r-bicare
-- r-biclust
 - r-biobase
 - r-clusterprofiler
 - r-dbscan
@@ -16,10 +14,8 @@ repo_depends:
 - r-flashclust
 - r-gfa
 - r-gseabase
-- r-ibbig
 - r-igraph
 - r-isa2
-- r-linkcomm
 - r-matrixcorrelation
 - r-mcl
 - r-mclust
@@ -27,12 +23,11 @@ repo_depends:
 - r-org.hs.eg.db
 - r-pma
 - r-ppclust
+- r-rcolorbrewer
 - r-rcpp
 - r-reactomepa
-- r-rqubic
-- r-s4vd
+- r-rjava
 - r-sombrero
-- r-subspace
 - r-summarizedexperiment
 - r-wgcna
 update_on:
