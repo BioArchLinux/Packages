@@ -5,11 +5,12 @@ maintainers:
 repo_depends:
 - r-babelgene
 - r-dplyr
-- r-magrittr
 - r-rlang
 - r-tibble
 - r-tidyselect
 - r-assertthat
+- r-curl
+- r-lifecycle
 update_on:
 - regex: msigdbr_([\d._-]+).tar.gz
   source: regex
