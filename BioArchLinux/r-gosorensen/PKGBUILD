@@ -38,6 +38,11 @@ optdepends=(
   r-org.ss.eg.db
   r-org.pt.eg.db
   r-org.xl.eg.db
+  r-dt
+  r-ggplot2
+  r-ggrepel
+  r-go.db
+  r-magick
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('aba6bdd63cc6e5ee46dac40d3297caca')
