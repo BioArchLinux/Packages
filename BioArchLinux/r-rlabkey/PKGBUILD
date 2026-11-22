@@ -11,6 +11,7 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('Apache')
 depends=(
   r
+  r-bit64
   r-httr
   r-jsonlite
   r-rcpp
