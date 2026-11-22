@@ -22,6 +22,13 @@ depends=(
   r-forcats
   r-tibble
   r-tidyr
+  r-ape
+  r-biocgenerics
+  r-ggrepel
+  r-mia
+  r-purrr
+  r-tidyselect
+  r-treeio
 )
 
 optdepends=(
