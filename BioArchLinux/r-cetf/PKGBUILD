@@ -31,10 +31,12 @@ depends=(
   r-igraph
   r-network
   r-rcpp
-  r-rcpparmadillo
   r-rcy3
   r-s4vectors
   r-summarizedexperiment
+)
+makedepends=(
+  r-rcpparmadillo
 )
 optdepends=(
   r-airway

@@ -17,10 +17,11 @@ repo_depends:
 - r-igraph
 - r-network
 - r-rcpp
-- r-rcpparmadillo
 - r-rcy3
 - r-s4vectors
 - r-summarizedexperiment
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
 - regex: CeTF_([\d._-]+).tar.gz
   source: regex
