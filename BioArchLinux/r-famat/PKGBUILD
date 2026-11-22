@@ -15,6 +15,7 @@ depends=(
   r-clusterprofiler
   r-dplyr
   r-dt
+  r-enrichplot
   r-go.db
   r-gprofiler2
   r-keggrest
@@ -23,6 +24,7 @@ depends=(
   r-org.hs.eg.db
   r-plotly
   r-reactome.db
+  r-reactomepa
   r-rwikipathways
   r-shiny
   r-shinybs
