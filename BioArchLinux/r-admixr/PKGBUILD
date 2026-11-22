@@ -19,13 +19,13 @@ depends=(
   admixtools
 )
 optdepends=(
-  r-covr
+  r-forcats
+  r-ggplot2
   r-glue
   r-knitr
   r-rmarkdown
   r-testthat
   r-tidyr
-  r-tidyverse
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('4d93e5c867a34ffec51d421d40e68aa8')

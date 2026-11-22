@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "ADMIXTOOLS suite of command-line utilities for population genetics. See <https://reich.hms.harvard.edu/software> for the most recent installation instructions and further information."
+        expect_systemrequirements = "ADMIXTOOLS suite of command-line utilities for population genetics. See <https://github.com/dreichlab/admixtools> for the most recent installation instructions and further information."
     )
 
 
