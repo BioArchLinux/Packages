@@ -13,7 +13,7 @@ depends=(
   r
   r-biobase
   r-gseabase
-  r-hgu95a.db
+  r-spatialexperiment
   r-summarizedexperiment
 )
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
