@@ -25,6 +25,7 @@ depends=(
   r-rsqlite
   r-rtracklayer
   r-s4vectors
+  r-seqinfo
   r-ucsc.utils
 )
 checkdepends=(
@@ -34,8 +35,8 @@ checkdepends=(
 optdepends=(
   r-biocstyle
   r-ensembldb
+  r-genomeinfodbdata
   r-knitr
-  r-mirbase.db
   r-rmariadb
   r-runit
 )
