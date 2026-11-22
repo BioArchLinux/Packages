@@ -13,7 +13,6 @@ license=('GPL')
 depends=(
   r
   r-beachmat
-  r-bh
   r-biocparallel
   r-biocsingular
   r-cowplot
@@ -26,14 +25,18 @@ depends=(
   r-reshape2
   gcc
 )
+makedepends=(
+  r-assorthead
+  r-bh
+)
 optdepends=(
   r-airway
-  r-beachmat
   r-biobase
   r-biocgenerics
+  r-concaveman
   r-deseq2
   r-geoquery
-  r-ggalt
+  r-ggforce
   r-ggplotify
   r-hgu133a.db
   r-knitr
