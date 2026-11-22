@@ -18,6 +18,7 @@ repo_depends:
 - r-iranges
 - r-knitr
 - r-limma
+- r-mosdef
 - r-nmf
 - r-pheatmap
 - r-plotly
