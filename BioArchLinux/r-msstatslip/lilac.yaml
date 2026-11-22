@@ -11,9 +11,11 @@ repo_depends:
 - r-ggplot2
 - r-ggpubr
 - r-gridextra
+- r-htmltools
 - r-msstats
 - r-msstatsconvert
 - r-msstatsptm
+- r-plotly
 - r-purrr
 - r-rcpp
 - r-scales
