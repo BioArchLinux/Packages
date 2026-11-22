@@ -6,6 +6,8 @@ repo_depends:
 - r-annotationdbi
 - r-annotationforge
 - r-biomart
+- r-circlize
+- r-complexheatmap
 - r-data.table
 - r-dendextend
 - r-diagrammer
@@ -19,7 +21,6 @@ repo_depends:
 - r-htmlwidgets
 - r-igraph
 - r-plotly
-- r-processx
 - r-r.utils
 - r-rcolorbrewer
 - r-scales
