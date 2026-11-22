@@ -18,6 +18,7 @@ repo_depends:
 - r-s4vectors
 - r-scater
 - r-scran
+- r-scrapper
 - r-scuttle
 - r-singlecellexperiment
 - r-summarizedexperiment
