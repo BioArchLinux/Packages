@@ -23,11 +23,13 @@ depends=(
   r-ggplot2
   r-gplots
   r-matrixstats
+  r-rlang
   r-shiny
   r-shinycssloaders
 )
 optdepends=(
   r-biocstyle
+  r-quarto
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

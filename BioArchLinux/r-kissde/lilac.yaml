@@ -15,6 +15,7 @@ repo_depends:
 - r-ggplot2
 - r-gplots
 - r-matrixstats
+- r-rlang
 - r-shiny
 - r-shinycssloaders
 update_on:
