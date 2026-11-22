@@ -19,6 +19,7 @@ repo_depends:
 - r-plyr
 - r-protgenerics
 - r-psmatch
+- r-ptmods
 - r-rcpp
 - r-s4vectors
 - r-scales
