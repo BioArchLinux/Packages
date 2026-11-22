@@ -16,12 +16,12 @@ depends=(
   r-dartr.data
   r-data.table
   r-ggplot2
+  r-igraph
   r-raster
   r-sp
   r-stampp
   r-tidyr
   r-vegan
-  r-dismo
 )
 optdepends=(
   r-gdistance
@@ -31,6 +31,8 @@ optdepends=(
   r-rrblup
   r-sf
   r-terra
+  r-testthat
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c5ed5617ea1dfd53dee195147c435727')
