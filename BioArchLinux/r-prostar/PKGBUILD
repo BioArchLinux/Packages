@@ -21,10 +21,10 @@ depends=(
   r-ggplot2
   r-gplots
   r-gtools
-  r-highcharter
   r-htmlwidgets
   r-later
   r-markdown
+  r-plotly
   r-promises
   r-r.utils
   r-rclipboard
