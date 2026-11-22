@@ -18,19 +18,24 @@ depends=(
   r-ggplot2
   r-hierfstat
   r-rcpp
-  r-reshape2
   r-shiny
   r-shinybs
   r-shinyjs
   r-shinythemes
   r-shinywidgets
   r-stringi
-  r-stringr
   r-doparallel
   r-ggrepel
   r-foreach
   r-dplyr
   r-dartr.popgen
+  r-bigsnpr
+)
+optdepends=(
+  r-bigstatsr
+  r-knitr
+  r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('3a0b4a11dcaf2902339ebaccc22eb04f')
