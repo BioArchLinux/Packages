@@ -28,6 +28,7 @@ depends=(
 )
 checkdepends=(
   r-testthat
+  r-vdiffr
 )
 optdepends=(
   r-airway
@@ -36,6 +37,7 @@ optdepends=(
   r-org.hs.eg.db
   r-rmarkdown
   r-testthat
+  r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('c85125a8df2d8d71dfa4892b9d815865')

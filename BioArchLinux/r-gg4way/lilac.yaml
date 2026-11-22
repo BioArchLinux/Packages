@@ -20,6 +20,7 @@ repo_depends:
 - r-tidyr
 repo_makedepends:
 - r-testthat
+- r-vdiffr
 update_on:
 - source: rpkgs
   pkgname: gg4way
