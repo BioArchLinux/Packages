@@ -1,0 +1,37 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-bigassertr
+- r-bigparallelr
+- r-bigreadr
+- r-bigsparser
+- r-bigstatsr
+- r-bigutilsr
+- r-data.table
+- r-dorng
+- r-foreach
+- r-ggplot2
+- r-magrittr
+- r-rcpp
+- r-runonce
+- r-vctrs
+repo_makedepends:
+- r-rcpparmadillo
+- r-rmio
+- r-roptim
+update_on:
+- source: rpkgs
+  pkgname: bigsnpr
+  repo: cran
+  md5: true
+- alias: r
+- source: alpmfiles
+  pkgname: blas
+  filename: usr/lib/libblas\.so\.([^.]+)
+  repo: extra
+- source: alpmfiles
+  pkgname: lapack
+  filename: usr/lib/liblapack\.so\.([^.]+)
+  repo: extra
