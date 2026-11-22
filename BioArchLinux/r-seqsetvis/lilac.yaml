@@ -6,7 +6,6 @@ repo_depends:
 - r-cowplot
 - r-data.table
 - r-eulerr
-- r-genomeinfodb
 - r-genomicalignments
 - r-genomicranges
 - r-ggplot2
@@ -21,6 +20,7 @@ repo_depends:
 - r-rtracklayer
 - r-s4vectors
 - r-scales
+- r-seqinfo
 - r-upsetr
 update_on:
 - regex: seqsetvis_([\d._-]+).tar.gz
