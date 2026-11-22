@@ -11,24 +11,25 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-biobase
-  r-dose
-  r-enrichplot
-  r-enrichr
   r-genomicranges
   r-hash
-  r-rtcga
   r-rtensor
   r-shiny
-  r-stringdb
   r-tdbasedufe
 )
 optdepends=(
   r-biocstyle
+  r-dose
+  r-enrichplot
+  r-enrichr
+  r-ggplot2
+  r-gson
   r-knitr
   r-mofadata
   r-rmarkdown
   r-rtcga.clinical
   r-rtcga.rnaseq
+  r-stringdb
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

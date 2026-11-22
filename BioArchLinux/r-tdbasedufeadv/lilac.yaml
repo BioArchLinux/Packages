@@ -4,15 +4,10 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biobase
-- r-dose
-- r-enrichplot
-- r-enrichr
 - r-genomicranges
 - r-hash
-- r-rtcga
 - r-rtensor
 - r-shiny
-- r-stringdb
 - r-tdbasedufe
 update_on:
 - source: rpkgs
