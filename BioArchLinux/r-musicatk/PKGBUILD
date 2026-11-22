@@ -20,7 +20,6 @@ depends=(
   r-complexheatmap
   r-data.table
   r-decomptumor2sig
-  r-deconstructsigs
   r-dplyr
   r-factoextra
   r-genomeinfodb
@@ -41,6 +40,7 @@ depends=(
   r-plotly
   r-rlang
   r-s4vectors
+  r-scales
   r-shiny
   r-stringi
   r-stringr
@@ -69,7 +69,6 @@ optdepends=(
   r-shinyjs
   r-shinywidgets
   r-sortable
-  r-survival
   r-tcgabiolinks
   r-testthat
   r-withr
