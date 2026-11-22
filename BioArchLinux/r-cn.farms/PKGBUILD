@@ -21,12 +21,6 @@ depends=(
   r-preprocesscore
   r-snow
 )
-optdepends=(
-  r-pd.genomewidesnp.5
-  r-pd.genomewidesnp.6
-  r-pd.mapping250k.nsp
-  r-pd.mapping250k.sty
-)
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('ce44b546359d676705e7e6e8f344573aa49a299dc287aa32e960950f08089df1')
 
