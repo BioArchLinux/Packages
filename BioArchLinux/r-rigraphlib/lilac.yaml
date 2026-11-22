@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_makedepends:
+- r-biocmake
+update_on:
+- source: rpkgs
+  pkgname: Rigraphlib
+  repo: bioc
+  md5: true
+- alias: r
