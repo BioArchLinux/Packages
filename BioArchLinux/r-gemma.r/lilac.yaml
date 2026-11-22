@@ -12,9 +12,11 @@ repo_depends:
 - r-glue
 - r-httr
 - r-jsonlite
+- r-kableextra
 - r-lubridate
 - r-magrittr
 - r-memoise
+- r-pheatmap
 - r-r.utils
 - r-rappdirs
 - r-rlang

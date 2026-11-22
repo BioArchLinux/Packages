@@ -19,9 +19,11 @@ depends=(
   r-glue
   r-httr
   r-jsonlite
+  r-kableextra
   r-lubridate
   r-magrittr
   r-memoise
+  r-pheatmap
   r-r.utils
   r-rappdirs
   r-rlang
@@ -42,12 +44,10 @@ optdepends=(
   r-dplyr
   r-ggplot2
   r-ggrepel
-  r-kableextra
   r-knitr
   r-listviewer
   r-magick
   r-microbenchmark
-  r-pheatmap
   r-poolr
   r-purrr
   r-rmarkdown
