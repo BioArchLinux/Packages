@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-glue
 - r-knitr
 update_on:
 - regex: arsenal_([\d._-]+).tar.gz

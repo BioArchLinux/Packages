@@ -11,6 +11,7 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-glue
   r-knitr
 )
 optdepends=(
@@ -24,6 +25,7 @@ optdepends=(
   r-rmarkdown
   r-rpart
   r-splines
+  r-stddiff
   r-survival
   r-testthat
   r-xtable
