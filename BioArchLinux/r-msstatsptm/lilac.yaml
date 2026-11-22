@@ -10,10 +10,13 @@ repo_depends:
 - r-ggplot2
 - r-ggrepel
 - r-gridextra
+- r-htmltools
 - r-msstats
 - r-msstatsconvert
 - r-msstatstmt
+- r-plotly
 - r-rcpp
+- r-rlang
 - r-stringi
 - r-stringr
 update_on:

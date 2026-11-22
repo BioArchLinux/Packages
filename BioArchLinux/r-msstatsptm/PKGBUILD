@@ -18,17 +18,23 @@ depends=(
   r-ggplot2
   r-ggrepel
   r-gridextra
+  r-htmltools
   r-msstats
   r-msstatsconvert
   r-msstatstmt
+  r-plotly
   r-rcpp
+  r-rlang
   r-stringi
   r-stringr
 )
 optdepends=(
+  r-arrow
   r-covr
   r-knitr
+  r-mockery
   r-rmarkdown
+  r-testthat
   r-tinytest
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
