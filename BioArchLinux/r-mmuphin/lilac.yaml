@@ -8,7 +8,7 @@ repo_depends:
 - r-fpc
 - r-ggplot2
 - r-igraph
-- r-maaslin2
+- r-maaslin3
 - r-metafor
 - r-stringr
 - r-tidyr
