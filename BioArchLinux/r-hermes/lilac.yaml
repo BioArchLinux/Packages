@@ -20,7 +20,6 @@ repo_depends:
 - r-ggplot2
 - r-ggrepel
 - r-iranges
-- r-lifecycle
 - r-limma
 - r-magrittr
 - r-matrixstats
