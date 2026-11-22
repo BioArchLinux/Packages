@@ -11,6 +11,8 @@ repo_depends:
 - r-officer
 - r-pmcmrplus
 - r-rmarkdown
+- r-rmdformats
+- r-rstatix
 - r-writexl
 update_on:
 - source: rpkgs

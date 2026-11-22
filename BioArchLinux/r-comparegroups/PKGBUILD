@@ -18,6 +18,8 @@ depends=(
   r-officer
   r-pmcmrplus
   r-rmarkdown
+  r-rmdformats
+  r-rstatix
   r-writexl
 )
 optdepends=(
