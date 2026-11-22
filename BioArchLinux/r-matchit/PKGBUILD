@@ -11,8 +11,7 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-backports
-  r-chk
+  r-arg
   r-rcpp
   r-rlang
 )
@@ -37,9 +36,9 @@ optdepends=(
   r-rgenoud
   r-rglpk
   r-rmarkdown
-  r-rsymphony
   r-sandwich
   r-testthat
+  r-waldo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('a25b7a5f996ac8525faf5e8e6d69b053')

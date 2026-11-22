@@ -3,8 +3,7 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-backports
-- r-chk
+- r-arg
 - r-rcpp
 - r-rlang
 repo_makedepends:
