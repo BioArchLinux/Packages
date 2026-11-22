@@ -9,9 +9,9 @@ repo_depends:
 - r-org.hs.eg.db
 - r-org.mm.eg.db
 - r-plotly
-- r-reticulate
 - r-rlang
-- r-seurat
+- r-rspectra
+- r-seuratobject
 - r-singlecellexperiment
 - r-summarizedexperiment
 - r-topgo

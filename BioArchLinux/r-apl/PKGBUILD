@@ -16,9 +16,9 @@ depends=(
   r-org.hs.eg.db
   r-org.mm.eg.db
   r-plotly
-  r-reticulate
   r-rlang
-  r-seurat
+  r-rspectra
+  r-seuratobject
   r-singlecellexperiment
   r-summarizedexperiment
   r-topgo
@@ -36,6 +36,7 @@ optdepends=(
   r-scater
   r-scran
   r-scrnaseq
+  r-sparsematrixstats
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
