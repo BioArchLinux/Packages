@@ -13,6 +13,7 @@ repo_depends:
 - r-httr
 - r-jsonlite
 - r-lifecycle
+- r-nanoparquet
 - r-prettyunits
 - r-rlang
 - r-tibble

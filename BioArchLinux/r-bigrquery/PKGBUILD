@@ -21,6 +21,7 @@ depends=(
   r-httr
   r-jsonlite
   r-lifecycle
+  r-nanoparquet
   r-prettyunits
   r-rlang
   r-tibble
@@ -37,6 +38,7 @@ checkdepends=(
   r-wk
 )
 optdepends=(
+  r-bigrquerystorage
   r-blob
   r-covr
   r-dbplyr
