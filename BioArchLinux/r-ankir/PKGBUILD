@@ -4,7 +4,7 @@ _pkgver=0.6.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc='Read and Analyze 'Anki' Flashcard Databases'
+pkgdesc="Read and Analyze 'Anki' Flashcard Databases"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
