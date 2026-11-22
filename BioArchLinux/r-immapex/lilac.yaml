@@ -1,0 +1,16 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-immreferent
+- r-matrixstats
+- r-rcpp
+- r-singlecellexperiment
+- r-stringr
+update_on:
+- source: rpkgs
+  pkgname: immApex
+  repo: bioc
+  md5: true
+- alias: r
