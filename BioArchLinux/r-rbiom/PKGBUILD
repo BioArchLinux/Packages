@@ -12,6 +12,7 @@ license=('MIT')
 depends=(
   r-ape
   r-dplyr
+  r-ecodive
   r-emmeans
   r-fillpattern
   r-ggbeeswarm
@@ -21,13 +22,11 @@ depends=(
   r-ggtext
   r-jsonlite
   r-magrittr
-  r-parallelly
   r-patchwork
   r-pillar
   r-plyr
   r-readr
   r-readxl
-  r-slam
   r-vegan
 )
 optdepends=(
@@ -35,6 +34,7 @@ optdepends=(
   r-crayon
   r-ggdensity
   r-glue
+  r-h5lite
   r-labeling
   r-lifecycle
   r-openxlsx

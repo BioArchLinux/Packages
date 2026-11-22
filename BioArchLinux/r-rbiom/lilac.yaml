@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-ape
 - r-dplyr
+- r-ecodive
 - r-emmeans
 - r-fillpattern
 - r-ggbeeswarm
@@ -14,13 +15,11 @@ repo_depends:
 - r-ggtext
 - r-jsonlite
 - r-magrittr
-- r-parallelly
 - r-patchwork
 - r-pillar
 - r-plyr
 - r-readr
 - r-readxl
-- r-slam
 - r-vegan
 update_on:
 - source: rpkgs
