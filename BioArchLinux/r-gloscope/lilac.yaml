@@ -8,9 +8,13 @@ repo_depends:
 - r-ggplot2
 - r-mclust
 - r-mvnfast
+- r-permute
+- r-pheatmap
 - r-rann
+- r-rcolorbrewer
 - r-rlang
 - r-singlecellexperiment
+- r-vegan
 repo_makedepends:
 - r-testthat
 update_on:
