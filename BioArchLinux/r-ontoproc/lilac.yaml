@@ -9,13 +9,16 @@ repo_depends:
 - r-biocfilecache
 - r-dplyr
 - r-dt
+- r-ellmer
 - r-graph
 - r-httr
 - r-igraph
+- r-jsonlite
 - r-magrittr
 - r-ontologyindex
 - r-ontologyplot
 - r-r.utils
+- r-rbgl
 - r-reticulate
 - r-rgraphviz
 - r-s4vectors
