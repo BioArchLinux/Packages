@@ -8,7 +8,6 @@ repo_depends:
 - r-fastmatch
 - r-matrixstats
 - r-rdpack
-- r-rfast
 - r-treedist
 - r-treetools
 update_on:

@@ -15,7 +15,6 @@ depends=(
   r-fastmatch
   r-matrixstats
   r-rdpack
-  r-rfast
   r-treedist
   r-treetools
 )
