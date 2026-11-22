@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-annotationdbi
 - r-annotationfilter
+- r-annotationhub
 - r-biocgenerics
 - r-biomart
 - r-biostrings
@@ -16,6 +17,7 @@ repo_depends:
 - r-genomicranges
 - r-ggplot2
 - r-iranges
+- r-lifecycle
 - r-magrittr
 - r-plyranges
 - r-rcpp

@@ -13,6 +13,7 @@ license=('BSD-2-Clause')
 depends=(
   r-annotationdbi
   r-annotationfilter
+  r-annotationhub
   r-biocgenerics
   r-biomart
   r-biostrings
@@ -24,6 +25,7 @@ depends=(
   r-genomicranges
   r-ggplot2
   r-iranges
+  r-lifecycle
   r-magrittr
   r-plyranges
   r-rcpp
