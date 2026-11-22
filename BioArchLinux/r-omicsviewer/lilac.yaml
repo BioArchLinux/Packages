@@ -13,6 +13,7 @@ repo_depends:
 - r-flatxml
 - r-ggplot2
 - r-ggseqlogo
+- r-htmltools
 - r-htmlwidgets
 - r-httr
 - r-matrixstats
@@ -28,6 +29,7 @@ repo_depends:
 - r-shiny
 - r-shinybusy
 - r-shinycssloaders
+- r-shinydashboard
 - r-shinyjs
 - r-shinythemes
 - r-shinywidgets
