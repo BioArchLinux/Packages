@@ -12,10 +12,13 @@ license=('GPL')
 depends=(
   r
   r-base64enc
+  r-curl
   r-digest
+  r-jsonlite
 )
 optdepends=(
   r-aws.ec2metadata
+  r-devtools
   r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
