@@ -38,13 +38,13 @@ checkdepends=(
 optdepends=(
   r-biocmanager
   r-biocstyle
-  r-bisquerna
   r-clusterprofiler
   r-complexheatmap
   r-depmap
   r-enrichplot
   r-ggrepel
   r-ggvenn
+  r-glimma
   r-gridextra
   r-jsonlite
   r-knitr
