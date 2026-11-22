@@ -4,9 +4,6 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-ggplot2
-- r-matrixstats
-- r-nmf
-- r-nnls
 - r-singlecellexperiment
 - r-sparsematrixstats
 repo_makedepends:
@@ -16,6 +13,8 @@ repo_makedepends:
 - r-igraph
 - r-jpeg
 - r-png
+- r-rcpp
+- r-rcppeigen
 - r-scatterpie
 - r-spatialexperiment
 - r-tenxvisiumdata
