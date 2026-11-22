@@ -9,6 +9,7 @@ repo_depends:
 - r-s4vectors
 - r-spatialexperiment
 repo_makedepends:
+- r-digest
 - r-dropletutils
 - r-png
 - r-testthat

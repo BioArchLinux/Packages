@@ -17,6 +17,7 @@ depends=(
   r-spatialexperiment
 )
 checkdepends=(
+  r-digest
   r-dropletutils
   r-png
   r-testthat
