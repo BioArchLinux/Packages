@@ -12,8 +12,10 @@ license=('AGPL')
 depends=(
   r
   r-annotationdbi
+  r-dir.expiry
   r-graph
   r-httr
+  r-lifecycle
   r-purrr
   r-rappdirs
   r-rlang
@@ -23,13 +25,12 @@ optdepends=(
   r-all
   r-biocstyle
   r-checkmate
-  r-codetools
+  r-clipper
   r-hgu133plus2.db
   r-hgu95av2.db
   r-impute
   r-knitr
   r-org.hs.eg.db
-  r-parallel
   r-r.rsp
   r-rcy3
   r-rmarkdown

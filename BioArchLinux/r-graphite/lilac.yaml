@@ -4,8 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-dir.expiry
 - r-graph
 - r-httr
+- r-lifecycle
 - r-purrr
 - r-rappdirs
 - r-rlang
