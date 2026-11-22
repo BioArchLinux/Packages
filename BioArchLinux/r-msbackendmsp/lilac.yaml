@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocparallel
+- r-data.table
 - r-iranges
 - r-mscoreutils
 - r-protgenerics
