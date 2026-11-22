@@ -25,6 +25,7 @@ depends=(
   r-sfheaders
   r-singlecellexperiment
   r-spatialexperiment
+  r-spatialreg
   r-spdep
   r-summarizedexperiment
   r-terra
@@ -41,7 +42,9 @@ optdepends=(
   r-arrow
   r-biocstyle
   r-dplyr
+  r-gmp
   r-knitr
+  r-osta.data
   r-rbioformats
   r-rhdf5
   r-rmarkdown
@@ -50,9 +53,12 @@ optdepends=(
   r-seuratobject
   r-sfarrow
   r-sfedata
+  r-sparsematrixstats
   r-testthat
   r-tidyr
+  r-visiumio
   r-voyager
+  r-withr
   r-xml2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
