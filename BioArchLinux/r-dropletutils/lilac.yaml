@@ -3,9 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-assorthead
 - r-beachmat
-- r-bh
 - r-biocgenerics
 - r-biocparallel
 - r-delayedarray
@@ -18,11 +16,15 @@ repo_depends:
 - r-r.utils
 - r-rcpp
 - r-rhdf5
-- r-rhdf5lib
 - r-s4vectors
 - r-scuttle
 - r-singlecellexperiment
+- r-sparsearray
 - r-summarizedexperiment
+repo_makedepends:
+- r-assorthead
+- r-bh
+- r-rhdf5lib
 update_on:
 - regex: DropletUtils_([\d._-]+).tar.gz
   source: regex
