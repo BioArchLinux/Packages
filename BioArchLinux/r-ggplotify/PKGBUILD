@@ -6,7 +6,7 @@ _pkgver=0.1.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc="Convert Plot to 'grob' or 'ggplot' Object"
+pkgdesc="Convert Almost Any Plot to a 'grob' or 'ggplot' Object"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('Artistic-2.0')
@@ -19,11 +19,11 @@ depends=(
 optdepends=(
   r-aplot
   r-colorspace
-  r-cowplot
   r-ggimage
   r-knitr
-  r-prettydoc
-  r-rmarkdown
+  r-patchwork
+  r-quarto
+  r-testthat
   r-vcd
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
