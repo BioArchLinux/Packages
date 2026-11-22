@@ -7,13 +7,16 @@ repo_depends:
 - r-annotationhub
 - r-biocfilecache
 - r-biostrings
+- r-data.table
 - r-genomeinfodb
 - r-genomicfeatures
 - r-genomicranges
 - r-iranges
 - r-readr
 - r-s4vectors
+- r-seqinfo
 - r-snpstats
+- r-tibble
 - r-variantannotation
 update_on:
 - regex: gwascat_([\d._-]+).tar.gz
