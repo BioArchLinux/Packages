@@ -12,6 +12,7 @@ license=('Apache')
 depends=(
   r
   r-jsonlite
+  r-memuse
   r-rstudioapi
   r-snow
   r-xml2
