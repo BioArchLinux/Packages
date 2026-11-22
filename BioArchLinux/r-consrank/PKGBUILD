@@ -12,6 +12,7 @@ license=('GPL-3.0-only')
 depends=(
   r-gtools
   r-proxy
+  r-rcpp
   r-rlist
   r-tidyr
 )
