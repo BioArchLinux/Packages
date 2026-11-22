@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-biocgenerics
+- r-collapse
+- r-data.table
+- r-ggnewscale
+- r-ggplot2
+- r-lme4
+- r-lmertest
+- r-logging
+- r-mirai
+- r-multcomp
+- r-optparse
+- r-patchwork
+- r-rcolorbrewer
+- r-reformulas
+- r-rlang
+- r-scales
+update_on:
+- source: rpkgs
+  pkgname: maaslin3
+  repo: bioc
+  md5: true
+- alias: r
