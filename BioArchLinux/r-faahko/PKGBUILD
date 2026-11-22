@@ -13,6 +13,9 @@ depends=(
   r
   r-xcms
 )
+optdepends=(
+  r-msnbase
+)
 source=("https://bioconductor.org/packages/release/data/experiment/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('000402158c54bd8044d7a10cc6726eaed0d2e9809adfec5a6ed3ef7e06aa9e38')
 
