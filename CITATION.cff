@@ -39,12 +39,14 @@ preferred-citation:
     given-names: "Haoran"
   title: "BioArchLinux: community-driven fresh reproducible software repository for life sciences"
   journal: "Bioinformatics"
+  volume: 41
+  issue: 3
   pages: "btaf106"
   year: 2025
-  month: "03"
+  month: 3
   doi: "10.1093/bioinformatics/btaf106"
-other-citations:
-  type: article
+references:
+- type: generic
   authors:
   - family-names: "Zhang"
     given-names: "Guoyi"
@@ -57,14 +59,18 @@ other-citations:
     given-names: "Jens"
   - family-names: "Yi"
     given-names: "Yun"
-  doi: "10.7490/F1000RESEARCH.1119039.1"
-  journal: "F1000 Research"
+  - family-names: "Elliot"
+    given-names: "Michael G"
+    orcid: "https://orcid.org/0000-0003-3374-2409"
+  doi: "10.7490/f1000research.1119039.1"
+  conference:
+    name: "Bioinformatics Open Source Conference (BOSC) 2022"
+  journal: "F1000Research"
+  volume: 11
   start: 809
-  end: 809
   title: "BioArchLinux: bioinformatics community with Arch Linux"
-  volume: 2022
-  issue: 11
   year: 2022
+  month: 7
 authors:
 - family-names: "Zhang"
   given-names: "Guoyi"
@@ -77,6 +83,9 @@ authors:
   given-names: "Jens"
 - family-names: "Yi"
   given-names: "Yun"
+- family-names: "Elliot"
+  given-names: "Michael G"
+  orcid: "https://orcid.org/0000-0003-3374-2409"
 title: "BioArchLinux: bioinformatics community with Arch Linux"
 doi: 10.7490/F1000RESEARCH.1119039.1
 url: "https://github.com/BioArchLinux/Packages"
