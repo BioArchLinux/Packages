@@ -4,11 +4,22 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-betareg
+- r-biocmanager
+- r-biocparallel
+- r-biostrings
+- r-bsgenome
+- r-genomeinfodb
+- r-genomicalignments
 - r-genomicranges
+- r-inflection
+- r-interactionset
 - r-iranges
 - r-rcpp
 - r-rcpproll
+- r-rsamtools
 - r-s4vectors
+- r-seqinfo
+- r-stringr
 update_on:
 - regex: DMRcaller_([\d._-]+).tar.gz
   source: regex
