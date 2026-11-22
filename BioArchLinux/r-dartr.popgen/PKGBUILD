@@ -11,6 +11,7 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL-3.0-or-later')
 depends=(
   r-adegenet
+  r-ape
   r-crayon
   r-dartr.base
   r-dartr.data
@@ -20,22 +21,30 @@ depends=(
   r-future
   r-ggdendro
   r-ggplot2
+  r-lea
   r-patchwork
+  r-pillar
+  r-plyr
+  r-purrr
+  r-r.utils
+  r-stampp
   r-stringr
+  r-terra
 )
 optdepends=(
+  r-assignpop
+  r-coda
+  r-directlabels
   r-expm
   r-fields
   r-gplots
   r-gridextra
-  r-gsubfn
   r-igraph
   r-iterpc
   r-label.switching
   r-leaflet
-  r-plyr
+  r-pegas
   r-proxy
-  r-purrr
   r-qvalue
   r-raster
   r-reshape2
@@ -43,8 +52,10 @@ optdepends=(
   r-siber
   r-snpstats
   r-sp
+  r-testthat
   r-tidyr
   r-viridis
+  r-withr
   r-zoo
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

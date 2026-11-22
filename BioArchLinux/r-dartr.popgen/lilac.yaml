@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-adegenet
+- r-ape
 - r-crayon
 - r-dartr.base
 - r-dartr.data
@@ -13,8 +14,15 @@ repo_depends:
 - r-future
 - r-ggdendro
 - r-ggplot2
+- r-lea
 - r-patchwork
+- r-pillar
+- r-plyr
+- r-purrr
+- r-r.utils
+- r-stampp
 - r-stringr
+- r-terra
 update_on:
 - source: rpkgs
   pkgname: dartR.popgen
