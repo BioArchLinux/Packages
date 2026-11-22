@@ -5,7 +5,7 @@ _pkgver=0.3.6
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Use Image in 'ggplot2'"
+pkgdesc="Use Images in 'ggplot2'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('Artistic-2.0')
@@ -25,10 +25,8 @@ depends=(
   r-yulab.utils
 )
 optdepends=(
-  r-ape
-  r-ggtree
-  r-gridgraphics
   r-httr
+  r-quarto
   r-rsvg
   r-testthat
 )
