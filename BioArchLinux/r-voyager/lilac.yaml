@@ -5,10 +5,11 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-bluster
+- r-delayedarray
 - r-ggnewscale
 - r-ggplot2
 - r-lifecycle
-- r-matrixstats
+- r-matrixgenerics
 - r-memuse
 - r-patchwork
 - r-rlang
@@ -23,6 +24,7 @@ repo_depends:
 - r-spdep
 - r-summarizedexperiment
 - r-terra
+- r-zeallot
 repo_makedepends:
 - r-automap
 - r-ggh4x

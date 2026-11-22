@@ -12,10 +12,11 @@ license=('Artistic-2.0')
 depends=(
   r-biocparallel
   r-bluster
+  r-delayedarray
   r-ggnewscale
   r-ggplot2
   r-lifecycle
-  r-matrixstats
+  r-matrixgenerics
   r-memuse
   r-patchwork
   r-rlang
@@ -30,6 +31,7 @@ depends=(
   r-spdep
   r-summarizedexperiment
   r-terra
+  r-zeallot
 )
 checkdepends=(
   r-automap
@@ -46,16 +48,21 @@ checkdepends=(
   r-vdiffr
 )
 optdepends=(
+  r-arrow
   r-automap
   r-biocsingular
   r-biocstyle
+  r-biscale
   r-cowplot
+  r-data.table
+  r-delayedmatrixstats
   r-ebimage
   r-experimenthub
   r-ggh4x
   r-gstat
   r-hexbin
   r-knitr
+  r-matrixstats
   r-pheatmap
   r-rbioformats
   r-rhdf5
@@ -67,7 +74,6 @@ optdepends=(
   r-sfedata
   r-testthat
   r-vdiffr
-  r-vroom
   r-xml2
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
