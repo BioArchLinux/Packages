@@ -1,0 +1,22 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-base64enc
+- r-callr
+- r-curl
+- r-digest
+- r-httr2
+- r-jsonlite
+- r-memoise
+- r-processx
+- r-r6
+- r-rlang
+- r-yaml
+update_on:
+- source: rpkgs
+  pkgname: aisdk
+  repo: cran
+  md5: true
+- alias: r
