@@ -31,7 +31,6 @@ depends=(
 )
 checkdepends=(
   r-apcluster
-  r-blockcluster
   r-dbscan
   r-e1071
   r-kernlab
@@ -43,13 +42,13 @@ checkdepends=(
 )
 optdepends=(
   r-apcluster
-  r-blockcluster
   r-covr
   r-dbscan
   r-e1071
   r-kernlab
   r-knitr
   r-kohonen
+  r-mixedclust
   r-nmf
   r-pander
   r-polca
