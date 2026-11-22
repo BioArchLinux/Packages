@@ -12,7 +12,7 @@ license=('GPL')
 depends=(
   r
   r-annotationdbi
-  r-dose
+  r-enrichit
   r-enrichplot
   r-ggplot2
   r-ggraph
@@ -20,9 +20,9 @@ depends=(
   r-gson
   r-igraph
   r-reactome.db
+  r-yulab.utils
 )
 optdepends=(
-  r-biocstyle
   r-clusterprofiler
   r-knitr
   r-org.hs.eg.db

@@ -4,7 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
-- r-dose
+- r-enrichit
 - r-enrichplot
 - r-ggplot2
 - r-ggraph
@@ -12,6 +12,7 @@ repo_depends:
 - r-gson
 - r-igraph
 - r-reactome.db
+- r-yulab.utils
 update_on:
 - regex: ReactomePA_([\d._-]+).tar.gz
   source: regex
