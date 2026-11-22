@@ -14,7 +14,6 @@ depends=(
   openbabel
   r-biocgenerics
   r-rcpp
-  r-zlibbioc
 )
 makedepends=(
   eigen

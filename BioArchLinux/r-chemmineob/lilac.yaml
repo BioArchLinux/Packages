@@ -5,7 +5,6 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-rcpp
-- r-zlibbioc
 repo_makedepends:
 - r-bh
 - r-chemminer
