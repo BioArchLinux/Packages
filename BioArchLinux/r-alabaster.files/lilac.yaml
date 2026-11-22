@@ -8,6 +8,7 @@ repo_depends:
 - r-rsamtools
 - r-s4vectors
 repo_makedepends:
+- r-digest
 - r-testthat
 - r-variantannotation
 update_on:
