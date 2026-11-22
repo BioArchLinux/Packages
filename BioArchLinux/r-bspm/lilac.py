@@ -9,7 +9,7 @@ from lilac_r_utils import r_pre_build
 def pre_build():
     r_pre_build(
         _G,
-        expect_systemrequirements = "systemd, dbus-python, PyGObject, python-(dnf|apt|alpm)",
+        expect_systemrequirements = "systemd, dbus-python, PyGObject, python-(libdnf5|dnf|apt|alpm)",
     )
 
 def post_build():
