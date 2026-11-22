@@ -9,8 +9,8 @@ repo_depends:
 - r-flowcore
 - r-gbm
 - r-ggplot2
-- r-hrbrthemes
 - r-matrixstats
+- r-mixtools
 - r-randomforest
 - r-rmarkdown
 - r-s4vectors
