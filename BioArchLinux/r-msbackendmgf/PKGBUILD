@@ -12,8 +12,10 @@ license=('Artistic2.0')
 depends=(
   r
   r-biocparallel
+  r-data.table
   r-iranges
   r-mscoreutils
+  r-protgenerics
   r-s4vectors
   r-spectra
 )

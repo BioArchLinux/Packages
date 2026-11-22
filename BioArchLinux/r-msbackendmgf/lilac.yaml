@@ -4,8 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biocparallel
+- r-data.table
 - r-iranges
 - r-mscoreutils
+- r-protgenerics
 - r-s4vectors
 - r-spectra
 update_on:
