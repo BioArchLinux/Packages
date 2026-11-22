@@ -10,13 +10,18 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
+  r-dplyr
   r-gdsfmt
   r-ggplot2
   r-ggrepel
+  r-magrittr
+  r-paletteer
+  r-pals
   r-rcolorbrewer
   r-rlang
   r-scales
   r-seqarray
+  r-tidyr
 )
 checkdepends=(
   r-testthat
@@ -25,7 +30,6 @@ optdepends=(
   r-biocstyle
   r-genomicranges
   r-knitr
-  r-markdown
   r-rmarkdown
   r-testthat
 )
