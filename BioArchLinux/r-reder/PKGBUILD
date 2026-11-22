@@ -17,7 +17,6 @@ depends=(
 optdepends=(
   r-biocstyle
   r-knitr
-  r-markdown
   r-rmarkdown
   r-treeandleaf
 )
