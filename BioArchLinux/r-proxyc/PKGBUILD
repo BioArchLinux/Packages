@@ -6,7 +6,7 @@ _pkgver=0.5.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=2
-pkgdesc="Computes Proximity in Large Sparse Matrices"
+pkgdesc="Computes Proximity in Large Matrices"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
