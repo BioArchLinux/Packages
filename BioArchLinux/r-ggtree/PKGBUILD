@@ -16,6 +16,7 @@ depends=(
   r-cli
   r-dplyr
   r-ggfun
+  r-ggiraph
   r-ggplot2
   r-magrittr
   r-purrr
@@ -27,11 +28,12 @@ depends=(
   r-yulab.utils
 )
 optdepends=(
+  r-biostrings
   r-emojifont
   r-ggimage
   r-ggplotify
   r-glue
-  r-grdevices
+  r-igraph
   r-knitr
   r-prettydoc
   r-rmarkdown
