@@ -18,11 +18,8 @@ makedepends=(
   r-rcppgsl
 )
 optdepends=(
-  r-knitr
   r-microbenchmark
-  r-pinp
   r-rbenchmark
-  r-rmarkdown
   r-ggplot2
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
