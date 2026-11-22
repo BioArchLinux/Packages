@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - jags
 - r-coda
+- r-rjags
 update_on:
 - source: rpkgs
   pkgname: runjags

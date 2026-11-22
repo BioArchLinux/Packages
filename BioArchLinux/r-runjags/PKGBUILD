@@ -12,12 +12,13 @@ license=('GPL-2.0-only')
 depends=(
   jags
   r-coda
+  r-rjags
 )
 optdepends=(
   r-knitr
+  r-litedown
   r-markdown
   r-modeest
-  r-rjags
   r-spelling
   r-testthat
 )
