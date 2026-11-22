@@ -10,11 +10,12 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
-  r-dose
   r-enrichplot
   r-gprofiler2
+  r-igraph
   r-jsonlite
   r-rcy3
+  r-reshape2
   r-strex
   r-stringr
 )
@@ -28,6 +29,10 @@ optdepends=(
   r-rmarkdown
   r-testthat
   r-magick
+  r-ggnetwork
+  r-ggrepel
+  r-ggtangle
+  r-scatterpie
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('28f9156dcc2e3d0a8b8a9b94ad7ba1d4')
