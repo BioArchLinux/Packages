@@ -3,12 +3,18 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bbotk
+- r-dplyr
 - r-foreach
 - r-ggplot2
 - r-ggrepel
 - r-lmertest
 - r-matrixstats
+- r-mlr3
+- r-mlr3mbo
 - r-modeest
+- r-paradox
+- r-rcpp
 - r-statmod
 repo_makedepends:
 - r-rcpparmadillo

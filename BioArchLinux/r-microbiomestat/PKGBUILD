@@ -10,13 +10,21 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
+  r-bbotk
+  r-dplyr
   r-foreach
   r-ggplot2
   r-ggrepel
   r-lmertest
   r-matrixstats
+  r-mlr3
+  r-mlr3mbo
   r-modeest
+  r-paradox
+  r-rcpp
   r-statmod
+)
+makedepends=(
   r-rcpparmadillo
 )
 optdepends=(
