@@ -4,9 +4,12 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocparallel
+- r-chromatograms
 - r-ggplot2
 - r-htmlwidgets
-- r-msdata
+- r-metabocoreutils
+- r-mscoreutils
+- r-msdatahub
 - r-msexperiment
 - r-plotly
 - r-protgenerics

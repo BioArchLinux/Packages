@@ -5,15 +5,18 @@ _pkgver=1.8.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Quality metric calculation from Spectra and MsExperiment objects"
+pkgdesc="Quality metric calculation from Spectra, MsExperiment and Chromatograms objects"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-biocparallel
+  r-chromatograms
   r-ggplot2
   r-htmlwidgets
-  r-msdata
+  r-metabocoreutils
+  r-mscoreutils
+  r-msdatahub
   r-msexperiment
   r-plotly
   r-protgenerics
