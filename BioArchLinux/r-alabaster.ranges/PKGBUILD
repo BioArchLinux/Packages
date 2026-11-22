@@ -12,11 +12,11 @@ license=('MIT')
 depends=(
   r-alabaster.base
   r-biocgenerics
-  r-genomeinfodb
   r-genomicranges
   r-iranges
   r-rhdf5
   r-s4vectors
+  r-seqinfo
 )
 checkdepends=(
   r-testthat

@@ -5,11 +5,11 @@ maintainers:
 repo_depends:
 - r-alabaster.base
 - r-biocgenerics
-- r-genomeinfodb
 - r-genomicranges
 - r-iranges
 - r-rhdf5
 - r-s4vectors
+- r-seqinfo
 repo_makedepends:
 - r-testthat
 update_on:
