@@ -5,11 +5,14 @@ maintainers:
 repo_depends:
 - r-biomart
 - r-dplyr
+- r-experimenthub
 - r-genomicfeatures
 - r-genomicranges
 - r-iranges
 - r-org.hs.eg.db
+- r-org.mm.eg.db
 - r-r.utils
+- r-rlang
 update_on:
 - regex: TFEA.ChIP_([\d._-]+).tar.gz
   source: regex
