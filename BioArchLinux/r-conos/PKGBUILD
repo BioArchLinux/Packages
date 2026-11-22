@@ -25,6 +25,7 @@ depends=(
   r-leidenalg
   r-magrittr
   r-n2r
+  r-pagoda2
   r-r6
   r-reshape2
   r-rlang
@@ -51,7 +52,6 @@ optdepends=(
   r-org.hs.eg.db
   r-org.mm.eg.db
   r-p2data
-  r-pagoda2
   r-plyr
   r-pma
   r-rhdf5

@@ -16,6 +16,7 @@ repo_depends:
 - r-leidenalg
 - r-magrittr
 - r-n2r
+- r-pagoda2
 - r-r6
 - r-reshape2
 - r-rlang
