@@ -13,17 +13,17 @@ depends=(
   r-dfidx
   r-formula
   r-lmtest
+  r-micsr
+  r-numderiv
   r-rdpack
-  r-statmod
-  r-zoo
 )
 optdepends=(
   r-aer
   r-car
+  r-dplyr
   r-ggplot2
   r-knitr
-  r-rmarkdown
-  r-texreg
+  r-quarto
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('7730ed9af843f513212338c062adae30')

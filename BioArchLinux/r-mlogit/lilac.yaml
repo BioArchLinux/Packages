@@ -6,9 +6,9 @@ repo_depends:
 - r-dfidx
 - r-formula
 - r-lmtest
+- r-micsr
+- r-numderiv
 - r-rdpack
-- r-statmod
-- r-zoo
 update_on:
 - source: rpkgs
   pkgname: mlogit
