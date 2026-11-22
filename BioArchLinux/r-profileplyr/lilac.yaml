@@ -5,12 +5,14 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-biocparallel
+- r-biostrings
 - r-chipseeker
 - r-circlize
 - r-complexheatmap
 - r-dplyr
 - r-enrichedheatmap
 - r-genomeinfodb
+- r-genomicalignments
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
@@ -19,6 +21,7 @@ repo_depends:
 - r-org.hs.eg.db
 - r-org.mm.eg.db
 - r-pheatmap
+- r-plyranges
 - r-r.utils
 - r-rgreat
 - r-rjson
@@ -26,7 +29,6 @@ repo_depends:
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
-- r-soggi
 - r-summarizedexperiment
 - r-tidyr
 - r-tiff
@@ -34,6 +36,7 @@ repo_depends:
 - r-txdb.hsapiens.ucsc.hg38.knowngene
 - r-txdb.mmusculus.ucsc.mm10.knowngene
 - r-txdb.mmusculus.ucsc.mm9.knowngene
+- r-txdbmaker
 update_on:
 - regex: profileplyr_([\d._-]+).tar.gz
   source: regex
