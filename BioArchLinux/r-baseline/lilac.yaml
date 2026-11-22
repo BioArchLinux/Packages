@@ -3,7 +3,6 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-limsolve
 - r-sparsem
 update_on:
 - regex: baseline_([\d._-]+).tar.gz
