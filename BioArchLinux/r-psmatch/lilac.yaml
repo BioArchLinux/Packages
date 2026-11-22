@@ -12,12 +12,10 @@ repo_depends:
 - r-qfeatures
 - r-s4vectors
 - r-spectra
-- r-iranges
 repo_makedepends:
 - r-msdata
 - r-mzid
 - r-mzr
-- r-spectra
 - r-testthat
 update_on:
 - source: rpkgs

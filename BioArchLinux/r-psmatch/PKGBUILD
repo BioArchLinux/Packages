@@ -19,7 +19,6 @@ depends=(
   r-qfeatures
   r-s4vectors
   r-spectra
-  r-iranges
 )
 checkdepends=(
   r-msdata
@@ -32,7 +31,6 @@ optdepends=(
   r-biocstyle
   r-factoextra
   r-knitr
-  r-msdata
   r-mzid
   r-mzr
   r-rmarkdown
@@ -40,6 +38,7 @@ optdepends=(
   r-vdiffr
   r-summarizedexperiment
   r-testthat
+  r-msdatahub
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('5fc6c85bbcf8e253a156b84c168c96b7')
