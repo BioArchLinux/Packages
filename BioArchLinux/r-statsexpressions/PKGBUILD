@@ -19,7 +19,6 @@ depends=(
   r-effectsize
   r-glue
   r-insight
-  r-magrittr
   r-parameters
   r-performance
   r-pmcmrplus
@@ -29,7 +28,6 @@ depends=(
   r-tidyr
   r-withr
   r-wrs2
-  r-zeallot
 )
 optdepends=(
   r-ggplot2

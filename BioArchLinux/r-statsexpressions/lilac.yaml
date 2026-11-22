@@ -12,7 +12,6 @@ repo_depends:
 - r-effectsize
 - r-glue
 - r-insight
-- r-magrittr
 - r-parameters
 - r-performance
 - r-pmcmrplus
@@ -22,7 +21,6 @@ repo_depends:
 - r-tidyr
 - r-withr
 - r-wrs2
-- r-zeallot
 update_on:
 - source: rpkgs
   pkgname: statsExpressions
