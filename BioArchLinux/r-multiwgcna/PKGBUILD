@@ -17,14 +17,17 @@ depends=(
   r-flashclust
   r-ggalluvial
   r-ggplot2
+  r-ggraph
   r-ggrepel
   r-igraph
+  r-magrittr
   r-patchwork
   r-readr
   r-reshape2
   r-scales
   r-stringr
   r-summarizedexperiment
+  r-tidyr
   r-wgcna
 )
 checkdepends=(
