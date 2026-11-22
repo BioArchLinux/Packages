@@ -14,8 +14,8 @@ depends=(
   r-biobase
   r-dapardata
   r-foreach
-  r-highcharter
   r-msnbase
+  r-plotly
 )
 checkdepends=(
   r-imp4p

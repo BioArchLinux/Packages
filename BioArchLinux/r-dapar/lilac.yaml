@@ -6,8 +6,8 @@ repo_depends:
 - r-biobase
 - r-dapardata
 - r-foreach
-- r-highcharter
 - r-msnbase
+- r-plotly
 repo_makedepends:
 - r-imp4p
 - r-testthat
