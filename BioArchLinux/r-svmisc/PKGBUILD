@@ -5,18 +5,16 @@ _pkgver=1.2.3
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=10
-pkgdesc="'SciViews' - Miscellaneous Functions"
+pkgdesc="Miscellaneous Functions for 'SciViews::R'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-only')
 depends=(
-  r
+  r-cli
+  r-rlang
 )
 optdepends=(
-  r-covr
   r-knitr
-  r-markdown
-  r-rjava
   r-rmarkdown
   r-spelling
   r-testthat
