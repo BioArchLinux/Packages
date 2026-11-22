@@ -25,8 +25,11 @@ depends=(
   r-iranges
   r-magrittr
   r-plotrix
+  r-rcolorbrewer
+  r-rlang
   r-rtracklayer
   r-s4vectors
+  r-scales
   r-tibble
   r-txdb.hsapiens.ucsc.hg19.knowngene
   r-yulab.utils
@@ -43,6 +46,7 @@ optdepends=(
   r-reactomepa
   r-rmarkdown
   r-testthat
+  r-txdb.hsapiens.ucsc.hg38.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('95ebeff0e1bfeeef449c1f40742235130585dbc35f8df9768e7a7374ea7efda9')

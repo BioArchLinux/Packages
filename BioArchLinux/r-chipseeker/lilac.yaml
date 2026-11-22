@@ -17,8 +17,11 @@ repo_depends:
 - r-iranges
 - r-magrittr
 - r-plotrix
+- r-rcolorbrewer
+- r-rlang
 - r-rtracklayer
 - r-s4vectors
+- r-scales
 - r-tibble
 - r-txdb.hsapiens.ucsc.hg19.knowngene
 - r-yulab.utils
