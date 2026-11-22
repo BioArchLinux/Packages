@@ -16,6 +16,7 @@ depends=(
   r-plot3d
   r-rtensor
   r-tagcloud
+  r-vicus
 )
 optdepends=(
   r-dplyr

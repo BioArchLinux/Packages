@@ -8,6 +8,7 @@ repo_depends:
 - r-plot3d
 - r-rtensor
 - r-tagcloud
+- r-vicus
 update_on:
 - regex: nnTensor_([\d._-]+).tar.gz
   source: regex
