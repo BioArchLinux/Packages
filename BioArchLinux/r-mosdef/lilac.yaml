@@ -1,0 +1,27 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-annotationdbi
+- r-clusterprofiler
+- r-deseq2
+- r-dt
+- r-ggforce
+- r-ggplot2
+- r-ggrepel
+- r-go.db
+- r-goseq
+- r-htmltools
+- r-rcolorbrewer
+- r-rlang
+- r-s4vectors
+- r-scales
+- r-summarizedexperiment
+- r-topgo
+update_on:
+- source: rpkgs
+  pkgname: mosdef
+  repo: bioc
+  md5: true
+- alias: r
