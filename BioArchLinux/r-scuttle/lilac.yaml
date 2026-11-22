@@ -7,12 +7,16 @@ repo_depends:
 - r-biocgenerics
 - r-biocparallel
 - r-delayedarray
-- r-delayedmatrixstats
 - r-genomicranges
+- r-matrixgenerics
 - r-rcpp
+- r-s4arrays
 - r-s4vectors
 - r-singlecellexperiment
+- r-sparsearray
 - r-summarizedexperiment
+repo_makedepends:
+- r-assorthead
 update_on:
 - regex: scuttle_([\d._-]+).tar.gz
   source: regex

@@ -16,19 +16,26 @@ depends=(
   r-biocgenerics
   r-biocparallel
   r-delayedarray
-  r-delayedmatrixstats
   r-genomicranges
+  r-matrixgenerics
   r-rcpp
+  r-s4arrays
   r-s4vectors
   r-singlecellexperiment
+  r-sparsearray
   r-summarizedexperiment
+)
+makedepends=(
+  r-assorthead
 )
 optdepends=(
   r-biocstyle
+  r-delayedmatrixstats
   r-knitr
   r-rmarkdown
   r-scran
   r-scrnaseq
+  r-sparsematrixstats
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
