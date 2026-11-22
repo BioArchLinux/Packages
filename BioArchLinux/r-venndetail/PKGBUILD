@@ -12,18 +12,25 @@ license=('GPL')
 depends=(
   r
   r-dplyr
-  r-futile.logger
+  r-dt
   r-ggplot2
+  r-gridextra
+  r-htmlwidgets
   r-magrittr
+  r-patchwork
+  r-plotly
   r-purrr
+  r-rlang
+  r-shiny
   r-tibble
-  r-upsetr
-  r-venndiagram
+  r-tidyr
 )
 optdepends=(
   r-knitr
   r-markdown
+  r-rcolorbrewer
   r-rmarkdown
+  r-rstudioapi
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
