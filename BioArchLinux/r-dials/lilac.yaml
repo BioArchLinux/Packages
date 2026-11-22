@@ -15,6 +15,8 @@ repo_depends:
 - r-scales
 - r-sfd
 - r-tibble
+- r-tidyr
+- r-tidyselect
 - r-vctrs
 - r-withr
 repo_makedepends:
