@@ -22,7 +22,6 @@ depends=(
   r-clusterprofiler
   r-corrplot
   r-digest
-  r-genomeinfodb
   r-genomicalignments
   r-genomicfeatures
   r-genomicranges
@@ -42,6 +41,7 @@ depends=(
   r-rsamtools
   r-rtracklayer
   r-s4vectors
+  r-seqinfo
   r-shortread
   r-tfbstools
   r-venndiagram
