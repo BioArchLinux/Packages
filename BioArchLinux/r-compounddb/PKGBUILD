@@ -15,6 +15,7 @@ depends=(
   r-biocgenerics
   r-biocparallel
   r-chemminer
+  r-data.table
   r-dbi
   r-dbplyr
   r-dplyr
@@ -26,6 +27,7 @@ depends=(
   r-rsqlite
   r-s4vectors
   r-spectra
+  r-stringi
   r-tibble
   r-xml2
 )
