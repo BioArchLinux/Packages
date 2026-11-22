@@ -23,6 +23,7 @@ checkdepends=(
 optdepends=(
   r-biocfilecache
   r-biocstyle
+  r-ggtree
   r-knitr
   r-memuse
   r-rmarkdown
