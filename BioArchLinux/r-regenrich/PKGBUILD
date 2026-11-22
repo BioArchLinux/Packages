@@ -16,10 +16,13 @@ depends=(
   r-deseq2
   r-dose
   r-dplyr
+  r-enrichit
   r-fgsea
   r-ggplot2
+  r-gson
   r-limma
   r-magrittr
+  r-qvalue
   r-randomforest
   r-reshape2
   r-s4vectors
