@@ -13,6 +13,7 @@ depends=(
   r
   r-poorman
   r-rcpp
+  r-rcppparallel
 )
 optdepends=(
   r-knitr
