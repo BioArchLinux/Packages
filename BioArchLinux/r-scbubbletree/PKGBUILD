@@ -11,8 +11,8 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-ape
-  r-future
-  r-future.apply
+  r-biocparallel
+  r-dplyr
   r-ggplot2
   r-ggtree
   r-patchwork

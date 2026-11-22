@@ -4,8 +4,8 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-ape
-- r-future
-- r-future.apply
+- r-biocparallel
+- r-dplyr
 - r-ggplot2
 - r-ggtree
 - r-patchwork
