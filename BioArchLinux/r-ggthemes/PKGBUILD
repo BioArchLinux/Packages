@@ -18,7 +18,6 @@ depends=(
   r-purrr
   r-rlang
   r-scales
-  r-stringr
   r-tibble
 )
 checkdepends=(
@@ -27,18 +26,14 @@ checkdepends=(
   r-vdiffr
 )
 optdepends=(
-  r-covr
   r-dplyr
-  r-extrafont
-  r-glue
-  r-knitr
-  r-lintr
+  r-farver
   r-mapproj
   r-maps
   r-pander
   r-quantreg
-  r-rmarkdown
   r-spelling
+  r-systemfonts
   r-testthat
   r-tidyr
   r-vdiffr

@@ -9,7 +9,6 @@ repo_depends:
 - r-purrr
 - r-rlang
 - r-scales
-- r-stringr
 - r-tibble
 repo_makedepends:
 - r-dplyr
