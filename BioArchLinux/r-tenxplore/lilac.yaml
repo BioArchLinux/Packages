@@ -4,10 +4,10 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
+- r-biocfilecache
 - r-matrixstats
 - r-ontoproc
 - r-org.mm.eg.db
-- r-restfulse
 - r-shiny
 - r-summarizedexperiment
 repo_makedepends:

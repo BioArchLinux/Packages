@@ -12,10 +12,10 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-annotationdbi
+  r-biocfilecache
   r-matrixstats
   r-ontoproc
   r-org.mm.eg.db
-  r-restfulse
   r-shiny
   r-summarizedexperiment
 )
