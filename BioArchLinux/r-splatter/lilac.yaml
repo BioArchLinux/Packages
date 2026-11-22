@@ -9,10 +9,12 @@ repo_depends:
 - r-crayon
 - r-edger
 - r-fitdistrplus
+- r-lifecycle
 - r-locfit
 - r-matrixstats
 - r-rlang
 - r-s4vectors
+- r-scrapper
 - r-scuttle
 - r-singlecellexperiment
 - r-summarizedexperiment
