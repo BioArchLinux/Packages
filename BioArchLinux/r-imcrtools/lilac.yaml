@@ -20,9 +20,10 @@ repo_depends:
 - r-matrixgenerics
 - r-pheatmap
 - r-readr
+- r-rlang
 - r-rtriangle
 - r-s4vectors
-- r-scuttle
+- r-scrapper
 - r-sf
 - r-singlecellexperiment
 - r-spatialexperiment
