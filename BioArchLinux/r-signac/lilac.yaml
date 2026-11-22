@@ -13,7 +13,6 @@ repo_depends:
 - r-genomicranges
 - r-ggplot2
 - r-iranges
-- r-irlba
 - r-lifecycle
 - r-patchwork
 - r-pbapply
@@ -21,9 +20,11 @@ repo_depends:
 - r-rcpproll
 - r-rlang
 - r-rsamtools
+- r-rspectra
 - r-s4vectors
 - r-scales
 - r-seuratobject
+- r-sparsematrixstats
 - r-stringi
 - r-tidyr
 - r-tidyselect
