@@ -12,8 +12,8 @@ license=('GPL')
 depends=(
   r
   r-iso
-  r-missforest
   r-missmda
+  r-missranger
   r-norm
   r-rcpp
   r-truncnorm

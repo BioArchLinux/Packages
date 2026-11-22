@@ -4,8 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-iso
-- r-missforest
 - r-missmda
+- r-missranger
 - r-norm
 - r-rcpp
 - r-truncnorm
