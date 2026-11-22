@@ -29,7 +29,7 @@ depends=(
   r-org.hs.eg.db
   r-patchwork
   r-rcolorbrewer
-  r-sparrow
+  r-scales
   r-spatialexperiment
   r-summarizedexperiment
   r-survminer
