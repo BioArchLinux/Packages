@@ -6,13 +6,20 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=9
 pkgdesc="Collection of Common Astronomical Conversion Routines and Functions"
-arch=(any)
+arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-nistunits
   r-pracma
   r-rann
+)
+makedepends=(
+  r-rcpp
+)
+optdepends=(
+  r-igraph
+  r-plotrix
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('aa1ad3e1f3252c636fc4904f22c83370')

@@ -6,6 +6,8 @@ repo_depends:
 - r-nistunits
 - r-pracma
 - r-rann
+repo_makedepends:
+- r-rcpp
 update_on:
 - source: rpkgs
   pkgname: celestial
