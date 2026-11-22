@@ -3,7 +3,14 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-biocgenerics
+- r-biocparallel
+- r-biostrings
+- r-checkmate
+- r-cli
 - r-rjava
+- r-s4vectors
+- r-shortread
 repo_makedepends:
 - r-testthat
 update_on:
