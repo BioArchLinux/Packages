@@ -3,12 +3,17 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-assertthat
 - r-biocparallel
+- r-dplyr
+- r-ggplot2
 - r-limma
 - r-lme4
+- r-matrixstats
 - r-multiassayexperiment
 - r-purrr
 - r-qfeatures
+- r-rlang
 - r-summarizedexperiment
 update_on:
 - regex: msqrob2_([\d._-]+).tar.gz

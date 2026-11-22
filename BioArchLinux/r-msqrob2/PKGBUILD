@@ -11,29 +11,43 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-assertthat
   r-biocparallel
+  r-dplyr
+  r-ggplot2
   r-limma
   r-lme4
+  r-matrixstats
   r-multiassayexperiment
   r-purrr
   r-qfeatures
+  r-rlang
   r-summarizedexperiment
 )
 optdepends=(
+  r-arrow
   r-biocstyle
+  r-complexheatmap
   r-covr
+  r-data.table
+  r-exploremodelmatrix
+  r-ggcorrplot
   r-gridextra
+  r-iq
+  r-kableextra
   r-knitr
-  r-matrixstats
   r-mscoreutils
-  r-msdata
+  r-msdatahub
   r-msnbase
   r-multcomp
   r-plotly
   r-refmanager
   r-rmarkdown
+  r-scater
   r-sessioninfo
+  r-stringr
   r-testthat
+  r-tidyr
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
