@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-bslib
+- r-data.table
 - r-datamods
 - r-dplyr
 - r-dt
@@ -23,6 +24,7 @@ repo_depends:
 - r-stringr
 - r-tibble
 - r-tidyr
+- r-vegan
 update_on:
 - regex: ISAnalytics_([\d._-]+).tar.gz
   source: regex
