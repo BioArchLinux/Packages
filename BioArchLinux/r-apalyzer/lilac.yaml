@@ -10,13 +10,15 @@ repo_depends:
 - r-genomicranges
 - r-ggplot2
 - r-ggrepel
-- r-hybridmtest
 - r-repmis
+- r-rlang
 - r-rsamtools
 - r-rsubread
 - r-rtracklayer
+- r-s4vectors
 - r-summarizedexperiment
 - r-tidyr
+- r-txdbmaker
 - r-variantannotation
 update_on:
 - regex: APAlyzer_([\d._-]+).tar.gz
