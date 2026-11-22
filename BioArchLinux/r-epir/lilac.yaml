@@ -4,6 +4,7 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biasedurn
+- r-dfba
 - r-flextable
 - r-lubridate
 - r-officer
