@@ -11,6 +11,8 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-doparallel
+  r-foreach
   r-genomicranges
   r-igraph
   r-psych

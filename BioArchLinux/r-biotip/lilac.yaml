@@ -3,6 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-doparallel
+- r-foreach
 - r-genomicranges
 - r-igraph
 - r-psych
