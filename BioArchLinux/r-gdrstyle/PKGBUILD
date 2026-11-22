@@ -25,10 +25,12 @@ depends=(
   r-biocstyle
 )
 checkdepends=(
+  r-pkgdown
   r-testthat
 )
 optdepends=(
   r-knitr
+  r-pkgdown
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

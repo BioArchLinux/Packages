@@ -17,6 +17,7 @@ repo_depends:
 - r-yaml
 - r-biocstyle
 repo_makedepends:
+- r-pkgdown
 - r-testthat
 update_on:
 - source: rpkgs
