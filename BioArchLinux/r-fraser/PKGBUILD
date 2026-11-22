@@ -37,25 +37,39 @@ depends=(
   r-pcamethods
   r-pheatmap
   r-plotly
+  r-pracma
   r-prroc
   r-r.utils
   r-rcolorbrewer
-  r-rcpp
-  r-rcpparmadillo
   r-rhdf5
+  r-rmtstat
   r-rsamtools
   r-rsubread
   r-s4vectors
   r-summarizedexperiment
   r-tibble
+  r-txdbmaker
   r-vgam
+)
+makedepends=(
+  r-rcpp
+  r-rcpparmadillo
 )
 optdepends=(
   r-biocstyle
+  r-biovizbase
+  r-bsgenome.hsapiens.1000genomes.hs37d5
+  r-bsgenome.hsapiens.ncbi.grch38
+  r-bsgenome.hsapiens.ucsc.hg19
+  r-bsgenome.hsapiens.ucsc.hg38
   r-covr
+  r-ggbio
   r-knitr
+  r-magick
   r-org.hs.eg.db
   r-rmarkdown
+  r-rtracklayer
+  r-sgseq
   r-testthat
   r-txdb.hsapiens.ucsc.hg19.knowngene
 )

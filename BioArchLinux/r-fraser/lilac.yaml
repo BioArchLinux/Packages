@@ -29,18 +29,22 @@ repo_depends:
 - r-pcamethods
 - r-pheatmap
 - r-plotly
+- r-pracma
 - r-prroc
 - r-r.utils
 - r-rcolorbrewer
-- r-rcpp
-- r-rcpparmadillo
 - r-rhdf5
+- r-rmtstat
 - r-rsamtools
 - r-rsubread
 - r-s4vectors
 - r-summarizedexperiment
 - r-tibble
+- r-txdbmaker
 - r-vgam
+repo_makedepends:
+- r-rcpp
+- r-rcpparmadillo
 update_on:
 - regex: FRASER_([\d._-]+).tar.gz
   source: regex
