@@ -11,8 +11,8 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-httr
   r-rainbow
-  r-rcurl
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('1d86f83aa105abd3073e5cdac84da935e12183def93df6c5ed7b871d51df3b0e')
