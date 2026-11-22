@@ -13,15 +13,13 @@ arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
+  r-catools
   r-confintr
   r-dplyr
   r-generics
   r-ggplot2
   r-ggpp
-  r-lmodel2
   r-lubridate
-  r-multcomp
-  r-multcompview
   r-plyr
   r-polynom
   r-quantreg
@@ -29,6 +27,7 @@ depends=(
   r-scales
   r-splus2r
   r-tibble
+  r-tidyr
 )
 checkdepends=(
   r-broom
@@ -43,9 +42,21 @@ optdepends=(
   r-ggrepel
   r-ggtext
   r-knitr
+  r-lmodel2
+  r-lspline
+  r-marquee
+  r-mixtools
+  r-multcomp
+  r-multcompview
+  r-onls
+  r-ragg
   r-rmarkdown
+  r-robustbase
+  r-segmented
+  r-smatr
   r-testthat
   r-vdiffr
+  r-xdvir
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz"
         "fix-tests.patch")

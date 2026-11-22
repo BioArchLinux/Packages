@@ -3,15 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-catools
 - r-confintr
 - r-dplyr
 - r-generics
 - r-ggplot2
 - r-ggpp
-- r-lmodel2
 - r-lubridate
-- r-multcomp
-- r-multcompview
 - r-plyr
 - r-polynom
 - r-quantreg
@@ -19,6 +17,7 @@ repo_depends:
 - r-scales
 - r-splus2r
 - r-tibble
+- r-tidyr
 repo_makedepends:
 - r-broom
 - r-broom.mixed
