@@ -3,7 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-cvxr
 - r-desctools
 - r-doparallel
 - r-dorng
@@ -15,6 +14,7 @@ repo_depends:
 - r-lmertest
 - r-multcomp
 - r-nloptr
+- r-quadprog
 - r-rdpack
 repo_makedepends:
 - r-microbiome
