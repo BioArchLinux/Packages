@@ -6,7 +6,7 @@ pkgname=r-${_pkgname,,}
 pkgver=1.16.1
 pkgrel=1
 pkgdesc='Microbiome analysis'
-arch=('any')
+arch=('x86_64')
 url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
@@ -22,21 +22,21 @@ depends=(
   r-delayedmatrixstats
   r-dirichletmultinomial
   r-dplyr
+  r-ecodive
   r-iranges
   r-matrixgenerics
   r-multiassayexperiment
+  r-rcpp
   r-rlang
   r-s4vectors
   r-scater
-  r-scuttle
   r-singlecellexperiment
+  r-stringr
   r-summarizedexperiment
   r-tibble
   r-tidyr
   r-treesummarizedexperiment
   r-vegan
-  r-mediation
-  r-rbiom 
 )
 optdepends=(
   r-ade4
@@ -44,13 +44,21 @@ optdepends=(
   r-biomformat
   r-dada2
   r-knitr
+  r-mediation
+  r-miatime
+  r-miaviz
   r-microbiomedatasets
+  r-nmf
   r-patchwork
+  r-philr
   r-phyloseq
   r-reldist
+  r-rhdf5
   r-rmarkdown
-  r-stringr
+  r-scuttle
   r-testthat
+  r-topicdoc
+  r-topicmodels
   r-yaml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
