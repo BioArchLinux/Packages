@@ -18,7 +18,6 @@ depends=(
   r-factoextra
   r-factominer
   r-fpc
-  r-genomeinfodb
   r-ggplot2
   r-helloranges
   r-iranges
@@ -33,6 +32,7 @@ depends=(
   r-rgl
   r-rmarkdown
   r-rtracklayer
+  r-seqinfo
   r-tidyr
 )
 optdepends=(

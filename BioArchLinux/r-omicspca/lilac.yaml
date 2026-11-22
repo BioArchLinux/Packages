@@ -10,7 +10,6 @@ repo_depends:
 - r-factoextra
 - r-factominer
 - r-fpc
-- r-genomeinfodb
 - r-ggplot2
 - r-helloranges
 - r-iranges
@@ -25,6 +24,7 @@ repo_depends:
 - r-rgl
 - r-rmarkdown
 - r-rtracklayer
+- r-seqinfo
 - r-tidyr
 update_on:
 - regex: OMICsPCA_([\d._-]+).tar.gz
