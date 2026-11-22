@@ -5,13 +5,13 @@
 _pkgname=lilac
 pkgname=$_pkgname
 pkgver=2026.11.14
-pkgrel=1
+pkgrel=2
 pkgdesc='The build bot for bioarchlinux'
 arch=(any)
 url='https://github.com/archlinuxcn/lilac'
 license=(GPL-3.0-or-later)
 depends=(python git devtools nvchecker gnupg pid_children fakeroot bubblewrap pacman-contrib
-         python-requests python-lxml python-yaml python-tomli python-tomli-w pyalpm
+         python-httpx2 python-h2 python-lxml python-yaml python-tomli python-tomli-w pyalpm
          python-structlog python-prctl python-fluent.runtime)
 checkdepends=(python-pytest python-pytest-asyncio)
 makedepends=(python-setuptools-scm python-psycopg2)
