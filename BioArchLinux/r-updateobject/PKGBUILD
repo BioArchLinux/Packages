@@ -20,6 +20,7 @@ checkdepends=(
 )
 optdepends=(
   r-biocstyle
+  r-biseq
   r-genomicranges
   r-interactionset
   r-knitr
@@ -28,7 +29,6 @@ optdepends=(
   r-singlecellexperiment
   r-summarizedexperiment
   r-testthat
-  r-timirgen
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b89ed6f6a78a7c9bc7e602cdc9b6aae6')
