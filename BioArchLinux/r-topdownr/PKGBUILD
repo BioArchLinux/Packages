@@ -18,6 +18,7 @@ depends=(
   r-msnbase
   r-mzr
   r-protgenerics
+  r-psmatch
   r-s4vectors
 )
 optdepends=(
