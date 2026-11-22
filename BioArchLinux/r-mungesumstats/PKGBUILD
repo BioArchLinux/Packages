@@ -17,11 +17,8 @@ depends=(
   r-dplyr
   r-genomeinfodb
   r-genomicranges
-  r-googleauthr
-  r-httr
+  r-ieugwasr
   r-iranges
-  r-jsonlite
-  r-magrittr
   r-r.utils
   r-rcurl
   r-rtracklayer
