@@ -7,8 +7,6 @@ repo_depends:
 - r-biocparallel
 - r-biostrings
 - r-data.table
-- r-dplyr
-- r-genomeinfodb
 - r-genomicranges
 - r-ggplot2
 - r-ggthemes
@@ -17,12 +15,14 @@ repo_depends:
 - r-iranges
 - r-knitr
 - r-matrixstats
+- r-pwalign
 - r-rcpp
+- r-rlang
 - r-rmarkdown
 - r-s4vectors
+- r-seqinfo
 - r-shortread
 - r-stringr
-- r-waffle
 update_on:
 - regex: amplican_([\d._-]+).tar.gz
   source: regex

@@ -15,8 +15,6 @@ depends=(
   r-biocparallel
   r-biostrings
   r-data.table
-  r-dplyr
-  r-genomeinfodb
   r-genomicranges
   r-ggplot2
   r-ggthemes
@@ -25,12 +23,14 @@ depends=(
   r-iranges
   r-knitr
   r-matrixstats
+  r-pwalign
   r-rcpp
+  r-rlang
   r-rmarkdown
   r-s4vectors
+  r-seqinfo
   r-shortread
   r-stringr
-  r-waffle
 )
 optdepends=(
   r-biocstyle
