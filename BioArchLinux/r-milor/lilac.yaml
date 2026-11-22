@@ -22,6 +22,7 @@ repo_depends:
 - r-matrixstats
 - r-numderiv
 - r-patchwork
+- r-pracma
 - r-rcolorbrewer
 - r-rcpp
 - r-s4vectors
