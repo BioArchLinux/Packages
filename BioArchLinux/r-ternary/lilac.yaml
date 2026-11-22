@@ -3,8 +3,8 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-clue
 - r-plottools
-- r-rcpphungarian
 - r-shiny
 - r-sp
 update_on:
