@@ -14,11 +14,12 @@ depends=(
   r-benchmarkme
   r-biocfilecache
   r-biocgenerics
+  r-circlize
+  r-complexheatmap
   r-cowplot
   r-dt
   r-edger
   r-experimenthub
-  r-fields
   r-genomicranges
   r-ggplot2
   r-golem
@@ -30,7 +31,6 @@ depends=(
   r-paletteer
   r-plotly
   r-png
-  r-rcolorbrewer
   r-rlang
   r-rtracklayer
   r-s4vectors
@@ -58,6 +58,7 @@ optdepends=(
   r-here
   r-knitr
   r-lobstr
+  r-rcolorbrewer
   r-refmanager
   r-rmarkdown
   r-testthat
