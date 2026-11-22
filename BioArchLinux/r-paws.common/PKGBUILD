@@ -26,6 +26,7 @@ checkdepends=(
 optdepends=(
   r-covr
   r-crayon
+  r-litedown
   r-mockery
   r-rstudioapi
   r-testthat
