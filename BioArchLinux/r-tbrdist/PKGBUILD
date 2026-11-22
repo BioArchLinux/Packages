@@ -5,7 +5,7 @@ _pkgver=1.0.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=4
-pkgdesc="Rearrangement Distances Between Unrooted Phylogenetic Trees"
+pkgdesc="Rearrangement Distances Between Phylogenetic Trees"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
