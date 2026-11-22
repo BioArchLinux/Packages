@@ -4,13 +4,16 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
+- r-biocsingular
 - r-dplyr
 - r-ggplot2
 - r-gplots
 - r-httr
+- r-igraph
 - r-jsonlite
 - r-progress
 - r-rcolorbrewer
+- r-summarizedexperiment
 - r-tidyr
 update_on:
 - source: rpkgs
