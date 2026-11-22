@@ -19,6 +19,7 @@ depends=(
 )
 checkdepends=(
   r-biocparallel
+  r-digest
   r-testthat
 )
 optdepends=(
