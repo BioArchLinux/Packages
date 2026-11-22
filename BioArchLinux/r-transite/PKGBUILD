@@ -17,10 +17,10 @@ depends=(
   r-dplyr
   r-genomicranges
   r-ggplot2
-  r-ggseqlogo
   r-gridextra
   r-rcpp
   r-scales
+  r-stringr
   r-tfmpvalue
   gcc
 )
