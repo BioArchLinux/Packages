@@ -15,9 +15,13 @@ depends=(
   r-biocparallel
   r-biostrings
   r-bslib
+  r-complexheatmap
+  r-cowplot
+  r-crosstalk
   r-data.table
   r-dplyr
-  r-genomeinfodb
+  r-dt
+  r-fst
   r-genomicfeatures
   r-genomicranges
   r-ggplot2
@@ -30,13 +34,19 @@ depends=(
   r-nglviewer
   r-orfik
   r-plotly
+  r-rclipboard
   r-rcurl
   r-rlang
+  r-rtracklayer
+  r-seqinfo
   r-shiny
   r-shinycssloaders
   r-shinyhelper
   r-shinyjqui
+  r-shinyjs
+  r-shinywidgets
   r-stringr
+  r-writexl
 )
 optdepends=(
   r-biocstyle

@@ -7,9 +7,13 @@ repo_depends:
 - r-biocparallel
 - r-biostrings
 - r-bslib
+- r-complexheatmap
+- r-cowplot
+- r-crosstalk
 - r-data.table
 - r-dplyr
-- r-genomeinfodb
+- r-dt
+- r-fst
 - r-genomicfeatures
 - r-genomicranges
 - r-ggplot2
@@ -22,13 +26,19 @@ repo_depends:
 - r-nglviewer
 - r-orfik
 - r-plotly
+- r-rclipboard
 - r-rcurl
 - r-rlang
+- r-rtracklayer
+- r-seqinfo
 - r-shiny
 - r-shinycssloaders
 - r-shinyhelper
 - r-shinyjqui
+- r-shinyjs
+- r-shinywidgets
 - r-stringr
+- r-writexl
 update_on:
 - regex: RiboCrypt_([\d._-]+).tar.gz
   source: regex
