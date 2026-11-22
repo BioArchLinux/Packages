@@ -3,12 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-annotationhub
 - r-biomart
 - r-bsseq
-- r-dss
 - r-edger
 - r-experimenthub
-- r-genomeinfodb
 - r-genomicranges
 - r-gviz
 - r-iranges
@@ -17,6 +16,7 @@ repo_depends:
 - r-missmethyl
 - r-plyr
 - r-s4vectors
+- r-seqinfo
 - r-summarizedexperiment
 update_on:
 - regex: DMRcate_([\d._-]+).tar.gz

@@ -11,12 +11,11 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('custom')
 depends=(
   r
+  r-annotationhub
   r-biomart
   r-bsseq
-  r-dss
   r-edger
   r-experimenthub
-  r-genomeinfodb
   r-genomicranges
   r-gviz
   r-iranges
@@ -25,14 +24,18 @@ depends=(
   r-missmethyl
   r-plyr
   r-s4vectors
+  r-seqinfo
   r-summarizedexperiment
 )
 optdepends=(
   r-biocgenerics
   r-dmrcatedata
+  r-epicv2manifest
   r-flowsorted.blood.epic
+  r-genomeinfodb
   r-illuminahumanmethylation450kanno.ilmn12.hg19
   r-illuminahumanmethylationepicanno.ilm10b4.hg19
+  r-illuminahumanmethylationepicv2anno.20a1.hg38
   r-knitr
   r-runit
   r-tissuetreg
