@@ -16,9 +16,9 @@ depends=(
   r-dose
   r-foreach
   r-igraph
-  r-linkcomm
   r-mcl
   r-org.hs.eg.db
+  r-rcolorbrewer
   r-rcpp
   r-reactomepa
   r-sponge
