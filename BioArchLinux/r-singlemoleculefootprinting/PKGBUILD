@@ -14,11 +14,8 @@ depends=(
   r-biocgenerics
   r-biostrings
   r-bsgenome
-  r-data.table
-  r-genomeinfodb
   r-genomicranges
   r-iranges
-  r-plyr
   r-quasr
   r-rcolorbrewer
   r-ggpointdensity
@@ -26,8 +23,18 @@ depends=(
   r-ggrepel
   r-patchwork
   r-plyranges
-  r-tidyverse
   r-viridis
+  r-dplyr
+  r-seqinfo
+  r-magrittr
+  r-misctools
+  r-paralleldist
+  r-qs
+  r-rlang
+  r-s4vectors
+  r-stringr
+  r-tibble
+  r-tidyr
 )
 optdepends=(
   r-bsgenome.mmusculus.ucsc.mm10
@@ -37,8 +44,10 @@ optdepends=(
   r-parallel
   r-readr
   r-rmarkdown
+  r-rrapply
   r-singlemoleculefootprintingdata
   r-testthat
+  r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('91be0d6bc586bd64745b6ccf2bf318cd20e88490a0b1ee34093ba5b64e63e6fd')

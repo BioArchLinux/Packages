@@ -6,11 +6,8 @@ repo_depends:
 - r-biocgenerics
 - r-biostrings
 - r-bsgenome
-- r-data.table
-- r-genomeinfodb
 - r-genomicranges
 - r-iranges
-- r-plyr
 - r-quasr
 - r-rcolorbrewer
 - r-ggpointdensity
@@ -18,8 +15,18 @@ repo_depends:
 - r-ggrepel
 - r-patchwork
 - r-plyranges
-- r-tidyverse
 - r-viridis
+- r-dplyr
+- r-magrittr
+- r-misctools
+- r-paralleldist
+- r-qs
+- r-rlang
+- r-s4vectors
+- r-seqinfo
+- r-stringr
+- r-tibble
+- r-tidyr
 update_on:
 - regex: SingleMoleculeFootprinting_([\d._-]+).tar.gz
   source: regex
