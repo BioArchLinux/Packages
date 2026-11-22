@@ -1,0 +1,20 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-cli
+- r-httr
+- r-jsonlite
+- r-keyring
+- r-plyr
+- r-r6
+- r-utf8
+- r-xml
+- r-xml2
+update_on:
+- source: rpkgs
+  pkgname: zen4R
+  repo: cran
+  md5: true
+- alias: r
