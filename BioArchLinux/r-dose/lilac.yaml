@@ -4,11 +4,9 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-annotationdbi
-- r-biocparallel
-- r-fgsea
+- r-enrichit
 - r-ggplot2
 - r-gosemsim
-- r-qvalue
 - r-reshape2
 - r-yulab.utils
 update_on:

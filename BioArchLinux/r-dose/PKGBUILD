@@ -12,11 +12,9 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-annotationdbi
-  r-biocparallel
-  r-fgsea
+  r-enrichit
   r-ggplot2
   r-gosemsim
-  r-qvalue
   r-reshape2
   r-yulab.utils
 )
