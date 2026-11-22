@@ -10,8 +10,13 @@ repo_depends:
 - r-dartr.sim
 - r-data.table
 - r-ggplot2
+- r-gridextra
+- r-magrittr
 - r-patchwork
+- r-processx
+- r-reshape2
 - r-stringr
+- r-tidyr
 update_on:
 - source: rpkgs
   pkgname: dartR.captive

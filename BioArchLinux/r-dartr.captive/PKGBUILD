@@ -17,18 +17,28 @@ depends=(
   r-dartr.sim
   r-data.table
   r-ggplot2
+  r-gridextra
+  r-magrittr
   r-patchwork
+  r-processx
+  r-reshape2
   r-stringr
+  r-tidyr
 )
 optdepends=(
+  r-dartr.popgen
   r-fields
   r-gplots
   r-igraph
-  r-reshape2
+  r-kinship2
+  r-poibin
   r-rrblup
   r-scales
   r-siber
   r-spelling
+  r-testthat
+  r-tidyverse
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('203cd884f02aa3e82b55abc5e7340f74')
