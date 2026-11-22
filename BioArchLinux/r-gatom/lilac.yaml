@@ -5,7 +5,7 @@ maintainers:
 repo_depends:
 - r-bionet
 - r-data.table
-- r-ggally
+- r-ggnetwork
 - r-ggplot2
 - r-htmltools
 - r-htmlwidgets
@@ -14,7 +14,7 @@ repo_depends:
 - r-mwcsr
 - r-network
 - r-plyr
-- r-pryr
+- r-scales
 - r-shinycyjs
 - r-sna
 - r-xml
