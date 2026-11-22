@@ -3,10 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-data.table
 - r-digest
+- r-lifecycle
 - r-lme4
 - r-matrixstats
-- r-plyr
 - r-png
 - r-r.utils
 - r-signal
