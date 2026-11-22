@@ -11,15 +11,18 @@ repo_depends:
 - r-edger
 - r-gdata
 - r-ggplot2
+- r-glmnet
 - r-gsva
+- r-hgnchelper
 - r-magrittr
+- r-proc
 - r-rcolorbrewer
 - r-reshape2
-- r-rlang
 - r-rocit
 - r-s4vectors
 - r-singscore
 - r-summarizedexperiment
+- r-tibble
 update_on:
 - regex: TBSignatureProfiler_([\d._-]+).tar.gz
   source: regex

@@ -19,15 +19,18 @@ depends=(
   r-edger
   r-gdata
   r-ggplot2
+  r-glmnet
   r-gsva
+  r-hgnchelper
   r-magrittr
+  r-proc
   r-rcolorbrewer
   r-reshape2
-  r-rlang
   r-rocit
   r-s4vectors
   r-singscore
   r-summarizedexperiment
+  r-tibble
 )
 optdepends=(
   r-biocstyle
@@ -37,14 +40,11 @@ optdepends=(
   r-covr
   r-dplyr
   r-e1071
-  r-glmnet
-  r-hgnchelper
   r-impute
   r-knitr
   r-lintr
   r-mass
   r-plyr
-  r-proc
   r-randomforest
   r-rmarkdown
   r-shiny
