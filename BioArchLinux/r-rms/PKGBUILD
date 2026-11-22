@@ -21,10 +21,13 @@ depends=(
   r-multcomp
   r-polspline
   r-quantreg
+  r-scales
   r-sparsem
+  r-tinytable
 )
 optdepends=(
   r-boot
+  r-icenreg
   r-kableextra
   r-lattice
   r-mice
