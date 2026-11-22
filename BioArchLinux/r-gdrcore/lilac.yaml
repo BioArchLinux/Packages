@@ -17,7 +17,6 @@ repo_depends:
 repo_makedepends:
 - r-gdrimport
 - r-gdrtestdata
-- r-qs
 - r-testthat
 update_on:
 - source: rpkgs
