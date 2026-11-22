@@ -4,8 +4,8 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-delayedarray
-- r-rcpp
 - r-s4vectors
+- r-sparsearray
 - r-tiledb
 update_on:
 - regex: TileDBArray_([\d._-]+).tar.gz

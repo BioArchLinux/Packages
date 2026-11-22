@@ -12,8 +12,8 @@ license=('MIT')
 depends=(
   r
   r-delayedarray
-  r-rcpp
   r-s4vectors
+  r-sparsearray
   r-tiledb
 )
 optdepends=(
