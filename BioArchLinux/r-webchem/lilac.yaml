@@ -4,15 +4,21 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-base64enc
+- r-curl
 - r-data.tree
+- r-dbi
+- r-digest
 - r-dplyr
+- r-hoardr
 - r-httr
 - r-jsonlite
 - r-purrr
 - r-rlang
+- r-rsqlite
 - r-rvest
 - r-stringr
 - r-tibble
+- r-tidyr
 - r-xml2
 update_on:
 - regex: webchem_([\d._-]+).tar.gz
