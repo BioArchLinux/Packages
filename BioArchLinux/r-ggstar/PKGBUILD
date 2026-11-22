@@ -12,14 +12,17 @@ license=('Artistic2.0')
 depends=(
   r
   r-cli
+  r-ggiraph
   r-ggplot2
   r-gridextra
+  r-rlang
   r-scales
 )
 optdepends=(
   r-knitr
   r-markdown
   r-prettydoc
+  r-purrr
   r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
