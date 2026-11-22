@@ -5,20 +5,21 @@
 
 
 pkgname=rstudio-desktop
-pkgver=2026.10.1+239
+pkgver=2026.11.0+203
 _pkgver=${pkgver//+/.}
 _srcname=rstudio
 # _srcname=rstudio-${pkgver//+/-}
 _pandocver="current"
 _quarto="FALSE"
-_gwt_version=2.13.1-montauk-daisy
+_gwt_version=2.13.1-montauk-daisy-4
 _java_version=17
 _soci_version="4.0.3"
 _nodeversion="25"
 _quarto_branch="release/rstudio-cranberry-hibiscus"
+_rig_version="0.11.0"
 : ${_copilot_version:=1.551.2}
 
-pkgrel=1
+pkgrel=0
 pkgdesc="A powerful and productive integrated development environment (IDE) for R programming language"
 arch=('x86_64')
 url="https://posit.co/products/open-source/rstudio/"
@@ -84,15 +85,19 @@ source=("${_srcname}"::"git+https://github.com/rstudio/rstudio.git#tag=v${pkgver
         "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-linux-x64-${_copilot_version}.zip"
         "https://github.com/github/copilot-language-server-release/releases/download/${_copilot_version}/copilot-language-server-js-${_copilot_version}.zip"
         "https://rstudio-buildtools.s3.us-east-1.amazonaws.com/gwt/gwt-${_gwt_version}.tar.gz"
+        "https://github.com/r-lib/rig/releases/download/v${_rig_version}/rig-linux-x86_64-${_rig_version}.tar.gz"
         )
 noextract+=("gwt-${_gwt_version}.tar.gz"
-            "copilot-language-server-js-${_copilot_version}.zip")
-sha256sums=('a0afa4d876e6e8f881ea81303fd036e2ff03a04ab891572e8b21500a83f14570'
+            "copilot-language-server-js-${_copilot_version}.zip"
+            "rig-linux-x86_64-${_rig_version}.tar.gz"
+            )
+sha256sums=('1d701323e19402f488ec2cf39990e44e0d548a4f76ae81011b500c40d4fb9ab2'
             'SKIP'
             '4b1ff9c8545c5d802fbe06ee6cd2886630e5c03bf740e269bb625b45cf934928'
             '9c54d39d431bebb50498eb23ccd02b7b688a205105c20f83cfe5e5e487bc896c'
             '310543162b3afea0f8f02a2c919c764945deb2c11f928e081569494a86378104'
-            '0bcd8b33d2be7136a1b119e818f47b7930ffa9ec5a0564a5211f44bfeade8a3e')
+            'ca7a8469a866fe193d4f51709fbc0a7a2a416b0850d6cae1aaa9f7838786b518'
+            '27e063df84b6dadb325fa96d13951676b44b69103bb4237b061518fbf564fcf1')
 options=('!emptydirs' '!debug')
 
 _nvm_env() {
@@ -119,6 +124,10 @@ prepare() {
 
     # Suppress _FORTIFY_SOURCE mismatch warnings
     sed -e 's/D_FORTIFY_SOURCE=2/D_FORTIFY_SOURCE=3/' -i src/cpp/CMakeLists.txt
+
+    # Fix OpenSSL 4 compatibility in Ssl.cpp
+        sed -E -e 's&(X509_NAME\* p(Issuer|Subject))&const \1&' \
+          -i src/cpp/core/http/Ssl.cpp
 
     # fix npm/node paths
     sed -E -e 's&set\(RSTUDIO_NODE_PATH .*\)&set(RSTUDIO_NODE_PATH "/usr/bin")&' \
@@ -174,6 +183,10 @@ prepare() {
     ln -sfT /usr/share/mathjax mathjax-4
 
     ln -sfT "$srcdir/soci-$_soci_version" "soci-$_soci_version"
+
+    # rig
+        mkdir -p "rig/${_rig_version}"
+        bsdtar -xf "$srcdir/rig-linux-x86_64-${_rig_version}.tar.gz" -C "rig/${_rig_version}"
 
     # copilot
     install -Dm755 "$srcdir/copilot-language-server" -t "copilot-language-server"
