@@ -3,24 +3,16 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-car
 - r-colorspace
 - r-data.table
 - r-e1071
 - r-laeken
-- r-magrittr
 - r-ranger
 - r-rcpp
 - r-robustbase
 - r-sp
 - r-vcd
 - r-xgboost
-- r-mlr3
-- r-mlr3pipelines
-- r-paradox
-- r-mlr3tuning
-- r-mlr3learners
-- r-future
 update_on:
 - regex: VIM_([\d._-]+).tar.gz
   source: regex
