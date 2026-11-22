@@ -11,9 +11,13 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
   r
+  r-lifecycle
   r-rcpp
 )
 optdepends=(
+  r-ggplot2
+  r-mclust
+  r-pkgdown
   r-spelling
   r-testthat
 )

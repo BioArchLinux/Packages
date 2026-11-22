@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-lifecycle
 - r-rcpp
 update_on:
 - regex: aricode_([\d._-]+).tar.gz
