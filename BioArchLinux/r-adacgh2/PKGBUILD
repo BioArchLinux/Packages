@@ -15,8 +15,6 @@ depends=(
   r-bit
   r-dnacopy
   r-ff
-  r-glad
-  r-snapcgh
   r-tilingarray
   r-waveslim
 )
@@ -24,7 +22,6 @@ optdepends=(
   r-cairo
   r-cghregions
   r-limma
-  r-rmpi
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('044cb62248782504b3fc8f7712cdfb0d7ee301eaefb58b7fb2903a5e205effdf')
