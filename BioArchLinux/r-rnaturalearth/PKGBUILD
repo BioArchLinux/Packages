@@ -17,12 +17,12 @@ depends=(
   r-terra
 )
 optdepends=(
-  r-devtools
   r-dplyr
   r-ggplot2
   r-ggrepel
   r-knitr
   r-lifecycle
+  r-pak
   r-pbapply
   r-purrr
   r-rlang
