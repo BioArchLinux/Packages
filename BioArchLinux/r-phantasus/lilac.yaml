@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-annotationdbi
+- r-apeglm
 - r-assertthat
 - r-biobase
 - r-ccapp
@@ -28,7 +29,6 @@ repo_depends:
 - r-protolite
 - r-rhdf5
 - r-rhdf5client
-- r-rook
 - r-scales
 - r-stringr
 - r-svglite

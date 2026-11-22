@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
   r-annotationdbi
+  r-apeglm
   r-assertthat
   r-biobase
   r-ccapp
@@ -35,7 +36,6 @@ depends=(
   r-protolite
   r-rhdf5
   r-rhdf5client
-  r-rook
   r-scales
   r-stringr
   r-svglite
