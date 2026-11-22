@@ -23,9 +23,10 @@ depends=(
   r-ggrepel
   r-ggtree
   r-mia
-  r-purrr
+  r-patchwork
   r-rlang
   r-s4vectors
+  r-scales
   r-scater
   r-singlecellexperiment
   r-summarizedexperiment
@@ -38,14 +39,23 @@ depends=(
   r-viridis
 )
 optdepends=(
+  r-beeswarm
   r-biocstyle
   r-bluster
+  r-circlize
+  r-complexheatmap
+  r-ggh4x
+  r-ggpubr
   r-knitr
-  r-microbiomedatasets
-  r-patchwork
+  r-maaslin3
+  r-mediation
+  r-miatime
   r-rmarkdown
+  r-rstatix
+  r-shadowtext
   r-testthat
   r-vegan
+  r-vipor
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('2afc95fa6a853078751ec25abd5accd6a187a008a1a806603bd4f0648df0b600')

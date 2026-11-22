@@ -15,7 +15,6 @@ repo_depends:
 - r-ggrepel
 - r-ggtree
 - r-mia
-- r-purrr
 - r-rlang
 - r-s4vectors
 - r-scater
@@ -28,6 +27,8 @@ repo_depends:
 - r-tidytext
 - r-treesummarizedexperiment
 - r-viridis
+- r-patchwork
+- r-scales
 update_on:
 - regex: miaViz_([\d._-]+).tar.gz
   source: regex
