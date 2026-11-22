@@ -1,0 +1,17 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-chk
+- r-lgr
+- r-lifecycle
+- r-r.utils
+- r-r6
+- r-stringi
+update_on:
+- source: rpkgs
+  pkgname: fscache
+  repo: cran
+  md5: true
+- alias: r
