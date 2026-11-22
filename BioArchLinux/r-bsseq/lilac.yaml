@@ -12,7 +12,6 @@ repo_depends:
 - r-data.table
 - r-delayedarray
 - r-delayedmatrixstats
-- r-genomeinfodb
 - r-genomicranges
 - r-gtools
 - r-hdf5array
@@ -25,7 +24,10 @@ repo_depends:
 - r-rhdf5
 - r-s4vectors
 - r-scales
+- r-seqinfo
 - r-summarizedexperiment
+repo_makedepends:
+- r-assorthead
 update_on:
 - regex: bsseq_([\d._-]+).tar.gz
   source: regex

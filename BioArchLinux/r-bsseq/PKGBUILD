@@ -21,7 +21,6 @@ depends=(
   r-data.table
   r-delayedarray
   r-delayedmatrixstats
-  r-genomeinfodb
   r-genomicranges
   r-gtools
   r-hdf5array
@@ -34,12 +33,15 @@ depends=(
   r-rhdf5
   r-s4vectors
   r-scales
+  r-seqinfo
   r-summarizedexperiment
   gcc
 )
+makedepends=(
+  r-assorthead
+)
 optdepends=(
   r-batchtools
-  r-beachmat
   r-biocstyle
   r-bsgenome.hsapiens.ucsc.hg38
   r-bsseqdata
