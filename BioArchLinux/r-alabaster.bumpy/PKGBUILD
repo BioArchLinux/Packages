@@ -18,6 +18,7 @@ depends=(
   r-s4vectors
 )
 checkdepends=(
+  r-digest
   r-testthat
 )
 optdepends=(
