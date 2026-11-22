@@ -2,7 +2,7 @@ repo_depends:
 - r-ape
 - r-ggplot2
 - r-jpeg
-- r-rgl
+- r-plotly
 - r-rrpp
 build_prefix: extra-x86_64
 maintainers:

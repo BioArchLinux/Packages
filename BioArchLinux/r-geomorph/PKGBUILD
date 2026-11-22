@@ -13,7 +13,7 @@ depends=(
   r-ape
   r-ggplot2
   r-jpeg
-  r-rgl
+  r-plotly
   r-rrpp
 )
 optdepends=(
