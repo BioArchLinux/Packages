@@ -6,24 +6,29 @@ repo_depends:
 - r-biocfilecache
 - r-biocmanager
 - r-biocviews
+- r-curl
 - r-dplyr
 - r-dt
 - r-gh
+- r-glue
 - r-graph
 - r-htmltools
 - r-htmlwidgets
 - r-httr
+- r-httr2
 - r-igraph
 - r-jsonlite
-- r-magrittr
+- r-lubridate
+- r-purrr
 - r-rbgl
 - r-readr
 - r-rlang
-- r-rorcid
 - r-rvest
 - r-stringr
 - r-tibble
+- r-tidyr
 - r-xml2
+- r-yaml
 update_on:
 - regex: BiocPkgTools_([\d._-]+).tar.gz
   source: regex

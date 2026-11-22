@@ -15,24 +15,29 @@ depends=(
   r-biocfilecache
   r-biocmanager
   r-biocviews
+  r-curl
   r-dplyr
   r-dt
   r-gh
+  r-glue
   r-graph
   r-htmltools
   r-htmlwidgets
   r-httr
+  r-httr2
   r-igraph
   r-jsonlite
-  r-magrittr
+  r-lubridate
+  r-purrr
   r-rbgl
   r-readr
   r-rlang
-  r-rorcid
   r-rvest
   r-stringr
   r-tibble
+  r-tidyr
   r-xml2
+  r-yaml
 )
 optdepends=(
   r-biocstyle
@@ -41,7 +46,7 @@ optdepends=(
   r-diagrammer
   r-kableextra
   r-knitr
-  r-lubridate
+  r-networkd3
   r-rmarkdown
   r-summarizedexperiment
   r-testthat
