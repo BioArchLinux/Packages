@@ -6,15 +6,14 @@ repo_depends:
 - r-aplot
 - r-biostrings
 - r-dplyr
-- r-ggalt
 - r-ggforce
+- r-ggfun
 - r-ggplot2
 - r-ggtree
 - r-magrittr
 - r-r4rna
 - r-rcolorbrewer
 - r-seqmagick
-- r-statebins
 - r-tidyr
 update_on:
 - regex: ggmsa_([\d._-]+).tar.gz

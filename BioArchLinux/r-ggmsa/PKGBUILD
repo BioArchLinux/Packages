@@ -14,7 +14,6 @@ depends=(
   r-aplot
   r-biostrings
   r-dplyr
-  r-ggalt
   r-ggforce
   r-ggplot2
   r-magrittr
@@ -22,21 +21,23 @@ depends=(
   r-rcolorbrewer
   r-seqmagick
   r-tidyr
-  r-statebins
   r-ggtree
+  r-ggfun
 )
 optdepends=(
   r-ape
-  r-biocstyle
   r-cowplot
   r-gggenes
   r-ggnewscale
   r-ggtreeextra
   r-kableextra
   r-knitr
+  r-prettydoc
   r-readxl
   r-rmarkdown
+  r-statebins
   r-testthat
+  r-yulab.utils
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('0e5df41982d4d15a8f997562b092881391a15bc13c93db9dc0c79c3bfadea541')
