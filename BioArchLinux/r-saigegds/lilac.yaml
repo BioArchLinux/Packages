@@ -8,6 +8,7 @@ repo_depends:
 - r-rcpp
 - r-rcppparallel
 - r-seqarray
+- r-skat
 - r-survey
 repo_makedepends:
 - r-rcpparmadillo
