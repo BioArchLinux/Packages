@@ -3,14 +3,12 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-abind
 - r-dendextend
 - r-factominer
 - r-ggplot2
 - r-ggpubr
 - r-ggrepel
-- r-reshape2
-- r-tidyr
+- r-rlang
 update_on:
 - regex: factoextra_([\d._-]+).tar.gz
   source: regex
