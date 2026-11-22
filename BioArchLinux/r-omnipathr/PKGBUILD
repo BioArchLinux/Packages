@@ -16,7 +16,8 @@ depends=(
   r-curl
   r-digest
   r-dplyr
-  r-httr
+  r-fs
+  r-httr2
   r-igraph
   r-jsonlite
   r-later
@@ -30,7 +31,7 @@ depends=(
   r-readxl
   r-rlang
   r-rmarkdown
-  r-rvest
+  r-sessioninfo
   r-stringi
   r-stringr
   r-tibble
@@ -58,10 +59,9 @@ optdepends=(
   r-mlrmbo
   r-parallelmap
   r-paramhelpers
-  r-rgraphviz
+  r-sbmlr
   r-sigmajs
   r-smoof
-  r-suprahex
   r-testthat
   r-r.matlab
 )

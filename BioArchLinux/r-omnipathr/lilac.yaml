@@ -8,7 +8,8 @@ repo_depends:
 - r-curl
 - r-digest
 - r-dplyr
-- r-httr
+- r-fs
+- r-httr2
 - r-igraph
 - r-jsonlite
 - r-later
@@ -22,7 +23,7 @@ repo_depends:
 - r-readxl
 - r-rlang
 - r-rmarkdown
-- r-rvest
+- r-sessioninfo
 - r-stringi
 - r-stringr
 - r-tibble
