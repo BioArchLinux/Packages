@@ -17,6 +17,7 @@ repo_depends:
 - r-s4vectors
 - r-seqinr
 - r-stringr
+- r-txdbmaker
 update_on:
 - regex: wavClusteR_([\d._-]+).tar.gz
   source: regex

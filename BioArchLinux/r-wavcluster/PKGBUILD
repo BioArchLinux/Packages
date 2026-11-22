@@ -25,11 +25,11 @@ depends=(
   r-s4vectors
   r-seqinr
   r-stringr
+  r-txdbmaker
 )
 optdepends=(
   r-biocstyle
   r-bsgenome.hsapiens.ucsc.hg19
-  r-domc
   r-knitr
   r-rmarkdown
 )
