@@ -7,6 +7,7 @@ repo_depends:
 - r-biostrings
 - r-s4vectors
 repo_makedepends:
+- r-digest
 - r-testthat
 update_on:
 - source: rpkgs
