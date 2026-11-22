@@ -14,17 +14,18 @@ depends=(
   r-bumpymatrix
   r-checkmate
   r-data.table
+  r-digest
   r-drc
   r-jsonlite
   r-jsonvalidate
   r-multiassayexperiment
+  r-qs2
   r-s4vectors
   r-stringr
   r-summarizedexperiment
 )
 checkdepends=(
   r-gdrtestdata
-  r-qs
   r-testthat
   r-yaml
 )
@@ -38,13 +39,13 @@ optdepends=(
   r-knitr
   r-lintr
   r-purrr
-  r-qs
   r-rcmdcheck
   r-rmarkdown
   r-testthat
   r-yaml
   r-scales
   r-mockery
+  r-withr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b5d35b8fcda56b7fdea1aa550d77d5f7')

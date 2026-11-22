@@ -7,16 +7,17 @@ repo_depends:
 - r-bumpymatrix
 - r-checkmate
 - r-data.table
+- r-digest
 - r-drc
 - r-jsonlite
 - r-jsonvalidate
 - r-multiassayexperiment
+- r-qs2
 - r-s4vectors
 - r-stringr
 - r-summarizedexperiment
 repo_makedepends:
 - r-gdrtestdata
-- r-qs
 - r-testthat
 - r-yaml
 update_on:
