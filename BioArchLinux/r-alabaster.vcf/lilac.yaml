@@ -10,6 +10,7 @@ repo_depends:
 - r-s4vectors
 - r-variantannotation
 repo_makedepends:
+- r-digest
 - r-testthat
 update_on:
 - source: rpkgs

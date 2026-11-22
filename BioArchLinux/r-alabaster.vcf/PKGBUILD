@@ -18,6 +18,7 @@ depends=(
   r-variantannotation
 )
 checkdepends=(
+  r-digest
   r-testthat
 )
 optdepends=(
