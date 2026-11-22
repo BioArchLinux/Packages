@@ -9,6 +9,7 @@ repo_depends:
 - r-biomart
 - r-caret
 - r-coda
+- r-colorspace
 - r-dendextend
 - r-e1071
 - r-fnn
@@ -28,9 +29,10 @@ repo_depends:
 - r-randomforest
 - r-rcolorbrewer
 - r-rcpp
-- r-rcpparmadillo
 - r-sampling
 - r-scales
+repo_makedepends:
+- r-rcpparmadillo
 update_on:
 - regex: pRoloc_([\d._-]+).tar.gz
   source: regex

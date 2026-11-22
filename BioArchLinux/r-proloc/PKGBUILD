@@ -17,6 +17,7 @@ depends=(
   r-biomart
   r-caret
   r-coda
+  r-colorspace
   r-dendextend
   r-e1071
   r-fnn
@@ -36,9 +37,11 @@ depends=(
   r-randomforest
   r-rcolorbrewer
   r-rcpp
-  r-rcpparmadillo
   r-sampling
   r-scales
+)
+makedepends=(
+  r-rcpparmadillo
 )
 optdepends=(
   r-akima
@@ -57,6 +60,7 @@ optdepends=(
   r-roxygen2
   r-rtsne
   r-testthat
+  r-umap
   r-vegan
   r-xtable
 )
