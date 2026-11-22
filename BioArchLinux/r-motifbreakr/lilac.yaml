@@ -23,6 +23,11 @@ repo_depends:
 - r-dt
 - r-bsicons
 - r-shiny
+- r-biocfilecache
+- r-biomart
+- r-bslib
+- r-pwalign
+- r-vroom
 update_on:
 - regex: motifbreakR_([\d._-]+).tar.gz
   source: regex
