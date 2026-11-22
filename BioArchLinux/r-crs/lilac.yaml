@@ -1,0 +1,12 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-quantreg
+update_on:
+- source: rpkgs
+  pkgname: crs
+  repo: cran
+  md5: true
+- alias: r
