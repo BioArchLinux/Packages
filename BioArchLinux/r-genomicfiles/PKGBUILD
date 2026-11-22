@@ -11,6 +11,7 @@ url="https://bioconductor.org/packages/${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-biocbaseutils
   r-biocgenerics
   r-biocparallel
   r-genomeinfodb
@@ -21,6 +22,7 @@ depends=(
   r-rsamtools
   r-rtracklayer
   r-s4vectors
+  r-seqinfo
   r-summarizedexperiment
   r-variantannotation
 )

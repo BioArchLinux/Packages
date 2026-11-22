@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocbaseutils
 - r-biocgenerics
 - r-biocparallel
 - r-genomeinfodb
@@ -13,6 +14,7 @@ repo_depends:
 - r-rsamtools
 - r-rtracklayer
 - r-s4vectors
+- r-seqinfo
 - r-summarizedexperiment
 - r-variantannotation
 update_on:
