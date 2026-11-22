@@ -28,16 +28,26 @@ optdepends=(
   r-canvasxpress.data
   r-dplyr
   r-dt
+  r-ggalluvial
+  r-ggally
+  r-ggh4x
+  r-ggpattern
   r-ggplot2
+  r-ggpubr
   r-glue
   r-knitr
   r-limma
+  r-patchwork
   r-png
   r-readr
+  r-repr
   r-rlang
   r-rmarkdown
+  r-s7
+  r-scales
   r-shiny
   r-stringr
+  r-survminer
   r-testthat
   r-tibble
   r-tidyr
