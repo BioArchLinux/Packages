@@ -7,12 +7,13 @@ repo_depends:
 - r-dt
 - r-experimenthub
 - r-htmlwidgets
+- r-rclipboard
 - r-s4vectors
 - r-shiny
 - r-shinyace
+- r-shinybiocloader
 - r-shinyjs
 - r-shinythemes
-- r-shinytoastr
 update_on:
 - source: rpkgs
   pkgname: BiocHubsShiny

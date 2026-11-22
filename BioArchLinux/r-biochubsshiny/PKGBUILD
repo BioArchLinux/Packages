@@ -14,16 +14,19 @@ depends=(
   r-dt
   r-experimenthub
   r-htmlwidgets
+  r-rclipboard
   r-s4vectors
   r-shiny
   r-shinyace
+  r-shinybiocloader
   r-shinyjs
   r-shinythemes
-  r-shinytoastr
 )
 optdepends=(
   r-biocmanager
   r-biocstyle
+  r-curl
+  r-glue
   r-knitr
   r-rmarkdown
   r-sessioninfo
