@@ -21,9 +21,8 @@ depends=(
 optdepends=(
   r-biocgenerics
   r-faahko
-  r-rmpi
+  r-multtest
   r-runit
-  r-snow
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('f7abfb2dcc21812c475d8ad3df3305142d21577cbc3195acdd4ffbe7a71d8820')
