@@ -10,7 +10,7 @@ def pre_build():
     r_pre_build(
         _G,
         expect_license = "AGPL-3.0-only",
-        expect_systemrequirements = "xml2, GNU make, C++11",
+        expect_systemrequirements = "xml2, GNU make, C++17",
     )
 
 def post_build():
