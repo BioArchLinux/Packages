@@ -6,6 +6,9 @@ repo_depends:
 - r-ggplot2
 - r-ggthemes
 - r-gridextra
+- r-httr
+- r-jsonlite
+- r-limma
 - r-scales
 - r-sp
 - r-struct
