@@ -3,6 +3,14 @@ maintainers:
   - github: sukanka
     email: sukanka@askk.cc
 repo_depends:
+- r-bridgesampling
+- r-coda
+- r-extradistr
+- r-ggplot2
+- r-mvtnorm
+- r-rdpack
+- r-reformulas
+- r-rlang
   - jags
   - r-bridgesampling
   - r-coda

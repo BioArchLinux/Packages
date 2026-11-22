@@ -7,7 +7,7 @@ pkgname=r-${_pkgname,,}
 pkgver=0.3.0
 pkgrel=1
 pkgdesc='Tools for Bayesian Analyses'
-arch=('any')
+arch=('x86_64')
 url="https://cran.r-project.org/package=${_pkgname}"
 license=('GPL')
 depends=(
@@ -19,19 +19,29 @@ depends=(
   r-ggplot2
   r-mvtnorm
   r-rdpack
+  r-reformulas
   r-rlang
 )
 optdepends=(
   r-bayesfactor
+  r-brms
   r-covr
+  r-digest
   r-knitr
+  r-lme4
+  r-pkgload
+  r-r6
   r-rjags
   r-rmarkdown
+  r-robma
   r-rstan
   r-runjags
   r-scales
   r-testthat
+  r-tibble
   r-vdiffr
+  r-waldo
+  r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('cec1c7cf7ad7ec39240ce98c79d427aa6e58e09ec92fe8bad15a218c6bc53942')
