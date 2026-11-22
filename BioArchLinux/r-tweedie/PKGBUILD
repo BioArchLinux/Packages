@@ -10,14 +10,16 @@ arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r
+  r-lifecycle
+  r-statmod
 )
 makedepends=(
   gcc-fortran
 )
 optdepends=(
-  r-stabledist
-  r-statmod
+  r-knitr
+  r-rmarkdown
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b4048e492744c22b39c9ca631e1c1b81')
