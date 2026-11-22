@@ -12,7 +12,7 @@ license=('GPL-2.0-or-later')
 depends=(
   blas
   lapack
-  r
+  r-irlba
 )
 makedepends=(
   gcc-fortran
