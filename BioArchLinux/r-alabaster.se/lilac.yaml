@@ -13,6 +13,7 @@ repo_depends:
 - r-s4vectors
 - r-summarizedexperiment
 repo_makedepends:
+- r-digest
 - r-testthat
 update_on:
 - source: rpkgs

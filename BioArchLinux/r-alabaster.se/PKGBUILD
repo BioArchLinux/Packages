@@ -21,6 +21,7 @@ depends=(
   r-summarizedexperiment
 )
 checkdepends=(
+  r-digest
   r-testthat
 )
 optdepends=(
