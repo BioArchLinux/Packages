@@ -3,11 +3,11 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-httr
+- r-curl
 - r-jsonlite
+- r-lifecycle
 - r-paws.storage
 - r-r.utils
-- r-stringr
 repo_makedepends:
 - r-mockery
 - r-tinytest

@@ -11,11 +11,11 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
   blosc
-  r-httr
+  r-curl
   r-jsonlite
+  r-lifecycle
   r-paws.storage
   r-r.utils
-  r-stringr
   zstd
 )
 checkdepends=(
@@ -24,10 +24,11 @@ checkdepends=(
 )
 optdepends=(
   r-biocstyle
-  r-covr
   r-knitr
-  r-mockery
-  r-tinytest
+  r-rmarkdown
+  r-testthat
+  r-withr
+  r-zarrarray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b4ccf32bada187fdbb1ce37b6c49b23f')
