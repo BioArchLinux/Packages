@@ -10,11 +10,12 @@ repo_depends:
 - r-fgsea
 - r-ggplot2
 - r-limma
+- r-msigdbr
 - r-s4vectors
+- r-showtext
 - r-summarizedexperiment
 - r-sva
 repo_makedepends:
-- r-msigdbr
 - r-plotly
 - r-readr
 - r-testthat

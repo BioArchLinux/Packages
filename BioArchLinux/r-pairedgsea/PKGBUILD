@@ -17,7 +17,9 @@ depends=(
   r-fgsea
   r-ggplot2
   r-limma
+  r-msigdbr
   r-s4vectors
+  r-showtext
   r-summarizedexperiment
   r-sva
 )
@@ -32,7 +34,6 @@ optdepends=(
   r-biocstyle
   r-covr
   r-knitr
-  r-msigdbr
   r-plotly
   r-readr
   r-readxl
