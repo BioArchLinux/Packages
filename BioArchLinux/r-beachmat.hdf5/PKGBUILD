@@ -17,6 +17,7 @@ depends=(
   zlib
 )
 makedepends=(
+  r-assorthead
   r-rhdf5lib
 )
 checkdepends=(

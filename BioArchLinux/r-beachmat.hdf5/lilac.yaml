@@ -8,6 +8,7 @@ repo_depends:
 - r-hdf5array
 - r-rcpp
 repo_makedepends:
+- r-assorthead
 - r-rhdf5lib
 - r-testthat
 update_on:
