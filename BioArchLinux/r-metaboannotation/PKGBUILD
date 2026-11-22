@@ -32,7 +32,8 @@ optdepends=(
   r-dt
   r-knitr
   r-microbenchmark
-  r-msdata
+  r-msdatahub
+  r-msentropy
   r-mzr
   r-plotly
   r-rmarkdown
