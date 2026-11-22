@@ -9,11 +9,14 @@ repo_depends:
 - r-complexheatmap
 - r-data.table
 - r-dbi
+- r-desc
 - r-dt
+- r-fs
 - r-genomeinfodb
 - r-genomicranges
 - r-ggdendro
 - r-ggforce
+- r-ggnewscale
 - r-ggplot2
 - r-ggrepel
 - r-ggridges
@@ -26,6 +29,7 @@ repo_depends:
 - r-plotly
 - r-rcolorbrewer
 - r-refmanager
+- r-reshape2
 - r-rhdf5
 - r-rsamtools
 - r-rsqlite
