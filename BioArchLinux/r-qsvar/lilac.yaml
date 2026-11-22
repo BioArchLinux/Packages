@@ -3,7 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-dplyr
 - r-ggplot2
+- r-rlang
 - r-summarizedexperiment
 - r-sva
 repo_makedepends:

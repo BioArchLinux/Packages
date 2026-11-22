@@ -10,7 +10,9 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
+  r-dplyr
   r-ggplot2
+  r-rlang
   r-summarizedexperiment
   r-sva
 )
