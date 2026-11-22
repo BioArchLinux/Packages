@@ -45,6 +45,7 @@ depends=(
   r-gsva
   r-gsvadata
   r-igraph
+  r-lifecycle
   r-limma
   r-magrittr
   r-mast
@@ -77,10 +78,12 @@ depends=(
   r-singlecellexperiment
   r-singler
   r-soupx
+  r-stringr
   r-summarizedexperiment
   r-sva
   r-tenxpbmcdata
   r-tibble
+  r-tidyr
   r-trajectoryutils
   r-tscan
   r-tximport
@@ -98,16 +101,17 @@ optdepends=(
   r-kableextra
   r-knitr
   r-lintr
+  r-optparse
   r-org.mm.eg.db
   r-rcolorbrewer
   r-rsubread
+  r-seuratobject
   r-shinybs
   r-shinyfiles
   r-shinyjqui
   r-shinythemes
   r-shinywidgets
   r-spelling
-  r-stringr
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

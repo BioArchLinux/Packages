@@ -37,6 +37,7 @@ repo_depends:
 - r-gsva
 - r-gsvadata
 - r-igraph
+- r-lifecycle
 - r-limma
 - r-magrittr
 - r-mast
@@ -69,10 +70,12 @@ repo_depends:
 - r-singlecellexperiment
 - r-singler
 - r-soupx
+- r-stringr
 - r-summarizedexperiment
 - r-sva
 - r-tenxpbmcdata
 - r-tibble
+- r-tidyr
 - r-trajectoryutils
 - r-tscan
 - r-tximport
