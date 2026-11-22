@@ -15,17 +15,19 @@ depends=(
   r-annotationhub
   r-bumphunter
   r-derfinder
-  r-genomeinfodb
   r-genomicfeatures
   r-iranges
   r-org.hs.eg.db
   r-rtracklayer
+  r-seqinfo
+  r-txdbmaker
 )
 optdepends=(
   r-annotationhubdata
   r-biocstyle
   r-covr
   r-derfinderplot
+  r-genomeinfodbdata
   r-genomicranges
   r-glue
   r-knitr

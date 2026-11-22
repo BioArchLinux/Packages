@@ -7,11 +7,12 @@ repo_depends:
 - r-annotationhub
 - r-bumphunter
 - r-derfinder
-- r-genomeinfodb
 - r-genomicfeatures
 - r-iranges
 - r-org.hs.eg.db
 - r-rtracklayer
+- r-seqinfo
+- r-txdbmaker
 update_on:
 - regex: GenomicState_([\d._-]+).tar.gz
   source: regex
