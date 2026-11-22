@@ -15,22 +15,27 @@ depends=(
   r
   r-assertthat
   r-biobase
-  r-chemmineob
   r-chemminer
   r-data.table
   r-digest
+  r-dplyr
   r-envipat
   r-glue
   r-httr
+  r-httr2
   r-logger
   r-msnbase
   r-mzr
+  r-purrr
   r-r.utils
   r-rcdk
   r-rcpp
   r-readjdx
+  r-readr
   r-rjson
   r-s4vectors
+  r-tibble
+  r-tidyselect
   r-webchem
   r-xml
   r-yaml
@@ -40,6 +45,7 @@ optdepends=(
   r-camera
   r-gplots
   r-knitr
+  r-magick
   r-rmarkdown
   r-rmassbankdata
   r-runit
