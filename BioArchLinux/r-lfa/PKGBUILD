@@ -13,17 +13,18 @@ license=('GPL-3.0-or-later')
 depends=(
   blas
   lapack
+  r-bedmatrix
   r-corpcor
+  r-genio
   r-rspectra
 )
 checkdepends=(
   r-testthat
 )
 optdepends=(
-  r-bedmatrix
-  r-genio
   r-ggplot2
   r-knitr
+  r-rmarkdown
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

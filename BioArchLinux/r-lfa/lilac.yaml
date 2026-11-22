@@ -3,7 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bedmatrix
 - r-corpcor
+- r-genio
 - r-rspectra
 repo_makedepends:
 - r-testthat
