@@ -4,10 +4,10 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-anvil
+- r-biocbaseutils
 - r-biocfilecache
 - r-digest
 - r-dplyr
-- r-genomeinfodb
 - r-genomicranges
 - r-httr
 - r-iranges
@@ -16,6 +16,7 @@ repo_depends:
 - r-readr
 - r-rtcgatoolbox
 - r-s4vectors
+- r-seqinfo
 - r-summarizedexperiment
 - r-tcgautils
 - r-tibble

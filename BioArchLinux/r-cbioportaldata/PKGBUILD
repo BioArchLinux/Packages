@@ -12,10 +12,10 @@ license=('AGPL')
 depends=(
   r
   r-anvil
+  r-biocbaseutils
   r-biocfilecache
   r-digest
   r-dplyr
-  r-genomeinfodb
   r-genomicranges
   r-httr
   r-iranges
@@ -24,6 +24,7 @@ depends=(
   r-readr
   r-rtcgatoolbox
   r-s4vectors
+  r-seqinfo
   r-summarizedexperiment
   r-tcgautils
   r-tibble
@@ -31,6 +32,7 @@ depends=(
 )
 optdepends=(
   r-biocstyle
+  r-jsonlite
   r-knitr
   r-rmarkdown
   r-survival
