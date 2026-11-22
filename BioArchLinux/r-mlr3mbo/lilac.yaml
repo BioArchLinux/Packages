@@ -1,0 +1,21 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: adityaruplaha
+  email: me@adityaruplaha.me
+repo_depends:
+- r-bbotk
+- r-checkmate
+- r-data.table
+- r-lgr
+- r-mlr3
+- r-mlr3misc
+- r-mlr3tuning
+- r-paradox
+- r-r6
+- r-spacefillr
+update_on:
+- source: rpkgs
+  pkgname: mlr3mbo
+  repo: cran
+  md5: true
+- alias: r
