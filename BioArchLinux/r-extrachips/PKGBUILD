@@ -10,18 +10,13 @@ arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
-  r-biocio
   r-biocparallel
-  r-broom
-  r-complexupset
   r-csaw
   r-dplyr
   r-edger
   r-forcats
   r-genomeinfodb
-  r-genomicinteractions
   r-genomicranges
-  r-ggforce
   r-ggplot2
   r-ggrepel
   r-ggside
@@ -36,13 +31,13 @@ depends=(
   r-rtracklayer
   r-s4vectors
   r-scales
+  r-seqinfo
   r-stringr
   r-summarizedexperiment
   r-tibble
   r-tidyr
   r-tidyselect
   r-vctrs
-  r-venndiagram
 )
 checkdepends=(
   r-apeglm
@@ -57,6 +52,9 @@ optdepends=(
   r-covr
   r-deseq2
   r-enrichedheatmap
+  r-genomicalignments
+  r-genomicinteractions
+  r-ggforce
   r-gviz
   r-harmonicmeanp
   r-here
@@ -66,8 +64,10 @@ optdepends=(
   r-plyranges
   r-quantro
   r-rmarkdown
+  r-simpleupset
   r-testthat
   r-tidyverse
+  r-venndiagram
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('d515730a24ba1c2498470f5640bf8a27')
