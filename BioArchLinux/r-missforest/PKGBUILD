@@ -16,9 +16,13 @@ depends=(
   r-iterators
   r-itertools
   r-randomforest
+  r-ranger
+  r-rdpack
 )
 optdepends=(
   r-doparallel
+  r-knitr
+  r-rmarkdown
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 sha256sums=('417055a03b02ad8359cf1bdc8f89d49531a3a8ee2c98edf90c8a01432f44838d')
