@@ -15,6 +15,7 @@ depends=(
   r-biocfilecache
   r-dplyr
   r-dt
+  r-genomicfiles
   r-gseabase
   r-httr
   r-magrittr
@@ -24,6 +25,7 @@ depends=(
   r-rjson
   r-rsamtools
   r-shiny
+  r-summarizedexperiment
 )
 optdepends=(
   r-annotationfilter
@@ -32,9 +34,7 @@ optdepends=(
   r-biocstyle
   r-data.table
   r-ensdb.hsapiens.v75
-  r-genomeinfodb
   r-genomicfeatures
-  r-genomicfiles
   r-genomicranges
   r-ggplot2
   r-go.db
@@ -48,7 +48,7 @@ optdepends=(
   r-rcolorbrewer
   r-rmarkdown
   r-s4vectors
-  r-summarizedexperiment
+  r-seqinfo
   r-testthat
   r-upsetr
 )
