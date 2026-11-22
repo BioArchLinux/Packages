@@ -5,12 +5,15 @@ _pkgver=0.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=10
-pkgdesc="Sparse Principal Component Analysis (SPCA)"
+pkgdesc="Sparse Principal Component Analysis"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-3.0-or-later')
 depends=(
   r-rsvd
+)
+optdepends=(
+  r-testthat
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('fbbc7e20a66da7f318e3d8f87791a201')
