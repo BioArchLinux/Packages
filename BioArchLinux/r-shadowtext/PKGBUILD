@@ -11,7 +11,11 @@ url="https://cran.r-project.org/package=${_pkgname}"
 license=('Artistic2.0')
 depends=(
   r
+  r-ggiraph
   r-ggplot2
+  r-purrr
+  r-rlang
+  r-s7
   r-scales
 )
 optdepends=(

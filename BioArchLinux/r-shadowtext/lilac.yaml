@@ -3,7 +3,11 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-ggiraph
 - r-ggplot2
+- r-purrr
+- r-rlang
+- r-s7
 - r-scales
 update_on:
 - regex: shadowtext_([\d._-]+).tar.gz
