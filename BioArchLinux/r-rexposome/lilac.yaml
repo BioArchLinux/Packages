@@ -19,7 +19,6 @@ repo_depends:
 - r-lme4
 - r-lsr
 - r-mice
-- r-pryr
 - r-reshape2
 - r-s4vectors
 - r-scales
