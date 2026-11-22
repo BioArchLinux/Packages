@@ -5,7 +5,7 @@ _pkgver=1.2.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Accurate Inference of Genetic Ancestry from Cancer Sequences"
+pkgdesc="Robust Ancestry Inference using Data Synthesis"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=(Apache)
@@ -13,16 +13,20 @@ depends=(
   r-annotationdbi
   r-annotationfilter
   r-bsgenome
+  r-dplyr
   r-ensembldb
   r-gdsfmt
   r-genesis
   r-genomicranges
+  r-ggplot2
   r-iranges
   r-matrixgenerics
   r-proc
   r-rlang
+  r-rsamtools
   r-s4vectors
   r-snprelate
+  r-stringr
   r-variantannotation
 )
 checkdepends=(
@@ -32,9 +36,9 @@ optdepends=(
   r-biocstyle
   r-bsgenome.hsapiens.ucsc.hg38
   r-ensdb.hsapiens.v86
-  r-genomeinfodb
   r-knitr
   r-rmarkdown
+  r-seqinfo
   r-testthat
   r-withr
 )
