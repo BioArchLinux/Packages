@@ -33,14 +33,21 @@ depends=(
   r-shinythemes
   r-s4vectors
   r-shinyjs
+  r-edger
+  r-fnn
+  r-ggpubr
+  r-harman
+  r-umap
 )
 optdepends=(
   r-biocmanager
   r-biocstyle
   r-bladderbatch
+  r-curatedtbdata
   r-devtools
   r-knitr
   r-lintr
+  r-multiassayexperiment
   r-plotly
   r-rmarkdown
   r-spelling

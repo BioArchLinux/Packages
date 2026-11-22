@@ -26,6 +26,11 @@ repo_depends:
 - r-shinythemes
 - r-s4vectors
 - r-shinyjs
+- r-edger
+- r-fnn
+- r-ggpubr
+- r-harman
+- r-umap
 update_on:
 - source: rpkgs
   pkgname: BatchQC
