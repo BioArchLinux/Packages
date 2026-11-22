@@ -21,7 +21,7 @@ repo_depends:
 - r-iranges
 - r-knitr
 - r-limma
-- r-pcaexplorer
+- r-mosdef
 - r-pheatmap
 - r-plotly
 - r-rentrez
