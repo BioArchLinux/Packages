@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocgenerics
 - r-biocparallel
+- r-data.table
 - r-fs
 - r-iranges
 - r-metabocoreutils

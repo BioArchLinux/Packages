@@ -13,6 +13,7 @@ depends=(
   r
   r-biocgenerics
   r-biocparallel
+  r-data.table
   r-fs
   r-iranges
   r-metabocoreutils
@@ -23,7 +24,7 @@ depends=(
 optdepends=(
   r-biocstyle
   r-knitr
-  r-msdata
+  r-msdatahub
   r-msentropy
   r-mzr
   r-patrick
