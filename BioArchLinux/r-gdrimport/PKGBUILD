@@ -21,6 +21,7 @@ depends=(
   r-multiassayexperiment
   r-openxlsx
   r-pharmacogx
+  r-qs2
   r-readxl
   r-rio
   r-s4vectors
@@ -31,7 +32,6 @@ depends=(
   r-yaml
 )
 checkdepends=(
-  r-qs
   r-testthat
 )
 optdepends=(
@@ -40,7 +40,6 @@ optdepends=(
   r-gdrtestdata
   r-knitr
   r-purrr
-  r-qs
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

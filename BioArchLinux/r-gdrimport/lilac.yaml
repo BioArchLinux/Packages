@@ -14,6 +14,7 @@ repo_depends:
 - r-multiassayexperiment
 - r-openxlsx
 - r-pharmacogx
+- r-qs2
 - r-readxl
 - r-rio
 - r-s4vectors
@@ -23,7 +24,6 @@ repo_depends:
 - r-xml
 - r-yaml
 repo_makedepends:
-- r-qs
 - r-testthat
 update_on:
 - source: rpkgs
