@@ -24,6 +24,7 @@ depends=(
   r-mutationalpatterns
   r-nnls
   r-reshape2
+  r-rhpcblasctl
   r-s4vectors
 )
 checkdepends=(
