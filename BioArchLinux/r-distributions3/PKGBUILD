@@ -6,25 +6,30 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="Probability Distributions as S3 Objects"
-arch=(any)
+arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('MIT')
 depends=(
-  r-ggplot2
-  r-glue
   r-rlang
 )
 checkdepends=(
+  r-crch
+  r-ggplot2
   r-poissonbinomial
   r-revdbayes
+  r-scoringrules
   r-testthat
 )
 optdepends=(
   r-cowplot
+  r-crch
+  r-ggplot2
   r-knitr
+  r-numderiv
   r-poissonbinomial
   r-revdbayes
   r-rmarkdown
+  r-scoringrules
   r-testthat
   r-tibble
   r-vctrs

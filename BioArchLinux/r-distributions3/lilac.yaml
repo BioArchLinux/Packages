@@ -3,12 +3,13 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-ggplot2
-- r-glue
 - r-rlang
 repo_makedepends:
+- r-crch
+- r-ggplot2
 - r-poissonbinomial
 - r-revdbayes
+- r-scoringrules
 - r-testthat
 update_on:
 - source: rpkgs
