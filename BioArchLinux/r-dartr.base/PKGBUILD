@@ -12,18 +12,17 @@ license=('GPL-3.0-or-later')
 depends=(
   r-adegenet
   r-ape
+  r-bigsnpr
+  r-bigstatsr
   r-crayon
   r-dartr.data
   r-data.table
   r-dplyr
   r-foreach
   r-ggplot2
-  r-gridextra
   r-patchwork
   r-plyr
-  r-raster
   r-reshape2
-  r-snpassoc
   r-snprelate
   r-snpstats
   r-stampp
@@ -31,6 +30,7 @@ depends=(
   r-tidyr
 )
 optdepends=(
+  r-dendextend
   r-devtools
   r-directlabels
   r-dismo
@@ -38,7 +38,9 @@ optdepends=(
   r-expm
   r-fields
   r-gdistance
+  r-gdsfmt
   r-gganimate
+  r-ggdendro
   r-ggrepel
   r-ggtern
   r-ggthemes
@@ -62,8 +64,10 @@ optdepends=(
   r-proxy
   r-purrr
   r-qvalue
+  r-r.utils
   r-rcolorbrewer
   r-rcpp
+  r-rcppparallel
   r-rgl
   r-rmarkdown
   r-rrblup
@@ -79,6 +83,7 @@ optdepends=(
   r-terra
   r-testthat
   r-tibble
+  r-tidypopgen
   r-vcfr
   r-viridis
   r-zoo

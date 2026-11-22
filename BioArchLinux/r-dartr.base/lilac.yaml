@@ -5,18 +5,17 @@ maintainers:
 repo_depends:
 - r-adegenet
 - r-ape
+- r-bigsnpr
+- r-bigstatsr
 - r-crayon
 - r-dartr.data
 - r-data.table
 - r-dplyr
 - r-foreach
 - r-ggplot2
-- r-gridextra
 - r-patchwork
 - r-plyr
-- r-raster
 - r-reshape2
-- r-snpassoc
 - r-snprelate
 - r-snpstats
 - r-stampp
