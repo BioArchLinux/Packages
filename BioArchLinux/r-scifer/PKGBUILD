@@ -10,6 +10,8 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
+  r-basilisk
+  r-basilisk.utils
   r-biostrings
   r-data.table
   r-decipher
@@ -17,9 +19,12 @@ depends=(
   r-flowcore
   r-ggplot2
   r-gridextra
+  r-here
   r-kableextra
   r-knitr
   r-plyr
+  r-pwalign
+  r-reticulate
   r-rlang
   r-rmarkdown
   r-sangerseqr
@@ -31,6 +36,7 @@ checkdepends=(
   r-testthat
 )
 optdepends=(
+  r-biocbaseutils
   r-biocstyle
   r-fs
   r-testthat
