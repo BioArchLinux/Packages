@@ -26,23 +26,30 @@ optdepends=(
   r-bookdown
   r-broom
   r-broom.mixed
+  r-chromote
   r-cluster
   r-commonmark
   r-doconv
   r-equatags
+  r-formatters
   r-ggplot2
+  r-gtable
+  r-jsonlite
   r-lme4
   r-magick
   r-mgcv
   r-nlme
   r-officedown
+  r-patchwork
   r-pdftools
   r-pkgdown
+  r-rtables
   r-scales
   r-svglite
   r-tables
   r-testthat
   r-webshot2
+  r-withr
   r-xtable
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
