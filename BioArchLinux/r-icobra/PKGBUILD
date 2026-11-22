@@ -15,14 +15,14 @@ depends=(
   r-dt
   r-ggplot2
   r-limma
+  r-prompter
   r-reshape2
+  r-rlang
   r-rocr
   r-scales
   r-shiny
-  r-shinybs
   r-shinydashboard
   r-upsetr
-  r-markdown
 )
 optdepends=(
   r-knitr
