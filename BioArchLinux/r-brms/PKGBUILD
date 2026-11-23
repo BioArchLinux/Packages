@@ -3,13 +3,12 @@ _pkgname=brms
 _pkgver=2.23.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=3
 pkgdesc="Bayesian Regression Models using 'Stan'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
 license=('GPL-2.0-only')
 depends=(
-  r
   r-abind
   r-backports
   r-bayesplot
