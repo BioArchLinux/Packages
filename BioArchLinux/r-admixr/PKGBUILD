@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=admixr
-_pkgver=0.9.1
+_pkgver=0.9.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="An Interface for Running 'ADMIXTOOLS' Analyses"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -28,8 +28,8 @@ optdepends=(
   r-tidyr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('4d93e5c867a34ffec51d421d40e68aa8')
-b2sums=('2f86b30c708429f25799f7b31cef8a1416ee594cd4a020248ea5161390b4328f09cc8507c6c7d5fd14e0e037f12170e392ab40eca357ba919c093ab10c095934')
+md5sums=('2eee945e325a33d63d50b299b83e8510')
+b2sums=('3bbe3c6784694be9c9749533580507d82eb98e18e50cf37f751704980134a639bb0280edc34fb26ab2ede4149fcfa90148e6f13c62cd7048d03f558478114ce5')
 
 build() {
   mkdir build
