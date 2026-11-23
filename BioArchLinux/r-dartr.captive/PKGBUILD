@@ -1,10 +1,10 @@
 # Maintainer: Guoyi <kuoi@bioarchlinux.org>
 
 _pkgname=dartR.captive
-_pkgver=1.0.2
+_pkgver=1.3.1
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="Analysing 'SNP' Data to Support Captive Breeding"
 arch=('any')
 url="https://cran.r-project.org/package=${_pkgname}"
@@ -41,8 +41,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('203cd884f02aa3e82b55abc5e7340f74')
-b2sums=('33f309e040b5b4af852aa10d8a0354f1a53608569378766fac075f9495ea51d1be0f153a01b3778541a942d856b6a0c7358e2e151b0205c159d75b90b0fa371e')
+md5sums=('f187d5fe37e6c7768d52e1552e252780')
+b2sums=('121c951c11bdc825bd33e58c3d93d603490beff3f82f8bceadf2913cabca30b7ffa56a8b60e87269a60124c04d1f1f11c65c451a4796e0a62aafafc5b520b5dc')
 
 build() {
   mkdir build
