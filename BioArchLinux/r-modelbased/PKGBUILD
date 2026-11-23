@@ -1,7 +1,7 @@
 # Maintainer: Boris Shor <boris@bshor.com>
 
 _pkgname=modelbased
-_pkgver=0.18.0
+_pkgver=0.19.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -75,8 +75,8 @@ optdepends=(
   r-withr
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('798049c3f322067cca87d29fc7daa0c4')
-b2sums=('dfa6093b2c8478356437c0946231180f250c8c267fd0241d5f784fb2ed0adadcef8b9c33df5e36f346175102288c5c10d19ac47fc045dd02a8a4763e0e06c2f7')
+md5sums=('988b9de84e5567f615fb9ae97ac60c0d')
+b2sums=('b45d636fd33be22abebe5f6c4be9925dbbf787d4e3634aef3c25da994a0a59a97b0a7826a2791d2e172567d5fc055ed1fc579dce81d0dd7b14910cf3ca2c291a')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"
