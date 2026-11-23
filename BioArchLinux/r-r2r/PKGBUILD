@@ -4,7 +4,7 @@ _pkgname=r2r
 _pkgver=0.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="R-Object to R-Object Hash Maps"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
