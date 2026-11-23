@@ -1,8 +1,8 @@
 # Maintainer: Mark Wagie <mark dot wagie at proton dot me>
 pkgname=python-types-docutils
 _name=types_docutils
-pkgver=0.23.0.20261107
-pkgrel=2
+pkgver=0.23.0.20261122
+pkgrel=1
 pkgdesc="Typing stubs for docutils"
 arch=('any')
 url="https://github.com/python/typeshed"
@@ -10,7 +10,7 @@ license=('Apache-2.0')
 depends=('python')
 makedepends=('python-build' 'python-installer' 'python-setuptools' 'python-wheel')
 source=("https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz")
-sha256sums=('9bb297fc33fe0f606c883217779a4f532ee023d7da852dcc244513c0f100228a')
+sha256sums=('70d756960fe059596fabc144b696ef9da89a7ac4468399bb84eab5bc81fb026a')
 
 build() {
   cd "$_name-$pkgver"
