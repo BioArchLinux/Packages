@@ -4,7 +4,7 @@ _pkgname=bsicons
 _pkgver=0.1.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Easily Work with 'Bootstrap' Icons"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
