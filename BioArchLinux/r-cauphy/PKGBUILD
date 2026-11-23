@@ -1,0 +1,42 @@
+# Maintainer: Guoyi <kuoi@bioarchlinux.org>
+
+_pkgname=cauphy
+_pkgver=1.0.3
+pkgname=r-${_pkgname,,}
+pkgver=${_pkgver//[:-]/.}
+pkgrel=1
+pkgdesc='Trait Evolution on Phylogenies Using the Cauchy Process'
+arch=('x86_64')
+url="https://cran.r-project.org/package=${_pkgname}"
+license=('GPL-3.0-or-later')
+depends=(
+  r-ape
+  r-doparallel
+  r-foreach
+  r-hdinterval
+  r-nloptr
+  r-phylolm
+  r-pracma
+  r-robustbase
+)
+optdepends=(
+  r-covr
+  r-geiger
+  r-knitr
+  r-rmarkdown
+  r-spelling
+  r-testthat
+)
+source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
+md5sums=('1d85e071b51ffb427bdfd7a8c0b8a9e8')
+b2sums=('f8753562ecd52100270756770b2fbe86809f9e69ef98387b0a770d4647b12e1107f702869980750120fed4a4cf9218d60225e4688eb6d853d13c5bdb06fde62e')
+
+build() {
+  mkdir build
+  R CMD INSTALL -l build "$_pkgname"
+}
+
+package() {
+  install -d "$pkgdir/usr/lib/R/library"
+  cp -a --no-preserve=ownership "build/$_pkgname" "$pkgdir/usr/lib/R/library"
+}

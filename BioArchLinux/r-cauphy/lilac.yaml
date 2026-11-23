@@ -1,0 +1,19 @@
+build_prefix: extra-x86_64
+maintainers:
+- github: starsareintherose
+  email: kuoi@bioarchlinux.org
+repo_depends:
+- r-ape
+- r-doparallel
+- r-foreach
+- r-hdinterval
+- r-nloptr
+- r-phylolm
+- r-pracma
+- r-robustbase
+update_on:
+- source: rpkgs
+  pkgname: cauphy
+  repo: cran
+  md5: true
+- alias: r  
