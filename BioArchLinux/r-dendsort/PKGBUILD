@@ -4,7 +4,7 @@ _pkgname=dendsort
 _pkgver=0.3.4
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Modular Leaf Ordering Methods for Dendrogram Nodes"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
