@@ -4,10 +4,10 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-httr
-- r-devtools
-- r-rcurl
 - r-cli
 - r-rlang
+- r-biocmanager
+- r-remotes
 update_on:
 - source: rpkgs
   pkgname: dartRverse
