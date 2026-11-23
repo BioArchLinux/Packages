@@ -3,7 +3,7 @@
 # Contributor: Christian Krause ("wookietreiber") <kizkizzbangbang@googlemail.com>
 
 pkgname=mrbayes-mpi-beagle
-pkgver=3.2.9
+pkgver=3.2.10
 pkgrel=1
 pkgdesc="MrBayes is a program for Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models. https://doi.org/10.1093/sysbio/sys029"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('openmpi' 'readline' 'gcc-libs' 'beagle-lib')
 conflicts=(mrbayes)
 conflicts=('mrbayes-mpi' 'mrbayes-beagle' 'mrbayes')
 source=("https://github.com/NBISweden/MrBayes/archive/v${pkgver}.tar.gz")
-sha256sums=('03d86cbf6ef52336d3dc6d7cd73cde415bb368bba6994f0586b47083426ac17c')
+sha256sums=('09cfab9898ae6c8e0976add7745db14b13a07110080a9f56d892a49493121193')
 
 build() {
   cd ${srcdir}/MrBayes-$pkgver
