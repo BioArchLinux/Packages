@@ -4,7 +4,7 @@ _pkgname=inflection
 _pkgver=1.3.7
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Finds the Inflection Point of a Curve"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
