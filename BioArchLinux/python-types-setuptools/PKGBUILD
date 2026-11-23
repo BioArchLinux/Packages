@@ -2,7 +2,7 @@
 pkgname=python-types-setuptools
 _name=${pkgname#python-}
 pkgver=84.2.0.20261104
-pkgrel=1
+pkgrel=2
 pkgdesc="Typing stubs for setuptools"
 arch=('any')
 url="https://github.com/python/typeshed"

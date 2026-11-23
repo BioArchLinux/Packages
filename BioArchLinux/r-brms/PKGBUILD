@@ -3,7 +3,7 @@ _pkgname=brms
 _pkgver=2.23.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc="Bayesian Regression Models using 'Stan'"
 arch=(any)
 url="https://cran.r-project.org/package=$_pkgname"
