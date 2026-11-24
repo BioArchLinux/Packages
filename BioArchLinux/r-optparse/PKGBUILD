@@ -34,7 +34,7 @@ build() {
 
 check() {
   cd "$_pkgname/tests"
-  R_LIBS="$srcdir/build" NOT_CRAN=true Rscript --vanilla run-all.R
+  R_LIBS="$srcdir/build" NOT_CRAN=true R --vanilla -s -f run-all.R
 }
 
 package() {
