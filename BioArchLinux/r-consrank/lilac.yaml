@@ -7,7 +7,6 @@ repo_depends:
 - r-proxy
 - r-rcpp
 - r-rlist
-- r-tidyr
 update_on:
 - source: rpkgs
   pkgname: ConsRank
