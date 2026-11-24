@@ -10,11 +10,11 @@ depends=('glibc')
 makedepends=('make')
 source=("https://github.com/abacus-gene/paml/archive/refs/tags/v${pkgver}.zip")
 sha256sums=('7f71fb83fe57532e96e00dba3f7e3b5c746e170337ac0f91566de77163923f48')
-prepare(){
-	cd "$pkgname-$pkgver"/
-	patch -p1 < $srcdir/mcmctree78.patch
-	mkdir -p bin
-}
+#prepare(){
+#	cd "$pkgname-$pkgver"/
+#	patch -p1 < $srcdir/mcmctree78.patch
+#	mkdir -p bin
+#}
 build() {
 	cd "$pkgname-$pkgver"/src
 #	gcc -O3 -o baseml baseml.c tools.c
