@@ -11,14 +11,14 @@ repo_depends:
 - r-rdpack
 - r-reformulas
 - r-rlang
-  - jags
-  - r-bridgesampling
-  - r-coda
-  - r-extradistr
-  - r-ggplot2
-  - r-mvtnorm
-  - r-rdpack
-  - r-rlang
+- jags
+- r-bridgesampling
+- r-coda
+- r-extradistr
+- r-ggplot2
+- r-mvtnorm
+- r-rdpack
+- r-rlang
 update_on:
   - regex: BayesTools_([\d._-]+).tar.gz
     source: regex
