@@ -60,7 +60,7 @@ You can use [JuNest](https://github.com/fsquillace/junest) with the [BioArchLinu
 
 > Zhang G, Ristola P, Su H, Kumar B, Zhang B, Hu Y, Elliot MG, Drobot V, Zhu J, Staal J, Larralde M, Wang S, Yi Y, Yu H. 2025. BioArchLinux: community-driven fresh reproducible software repository for life sciences. Bioinformatics 41(3): btaf106. https://doi.org/10.1093/bioinformatics/btaf106
 > 
-> Zhang G, Hu Y, Drobot V, Staal J, Yi Y, Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux. Poster at BOSC 2022. F1000Research 11: 809. https://doi.org/10.7490/f1000research.1119039.1
+> Zhang G, Hu Y, Drobot V, Staal J, Yi Y, Elliot MG. 2022. BioArchLinux: bioinformatics community with Arch Linux [version 1; not peer reviewed]. F1000Research 11: 809 (poster). https://doi.org/10.7490/f1000research.1119039.1
 
 [BibTeX](BioArchLinux.bibtex)
 
