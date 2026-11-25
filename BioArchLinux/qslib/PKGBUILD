@@ -3,7 +3,7 @@
 pkgname=qslib
 _pkgname=qslib
 pkgver=0.15.3
-pkgrel=0
+pkgrel=1
 pkgdesc="Library for communicating with and using the QuantStudio qPCR machine"
 arch=('x86_64')
 url="https://github.com/cgevans/qslib"
