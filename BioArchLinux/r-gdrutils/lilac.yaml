@@ -3,7 +3,6 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-biocparallel
 - r-bumpymatrix
 - r-checkmate
 - r-data.table
