@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=DelayedArray
-_pkgver=0.38.2
+_pkgver=0.40.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -36,8 +36,8 @@ optdepends=(
   r-zarrarray
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('01223fbdc2a77a81a05b2683f1bd317f')
-b2sums=('668a86df7350c7460bd6062f89479876e47af42e0bd730e6ae905f97019cda62bdce76a8841f9e3133d27a011b785f4a6c6b94ba695f3656789b78879d38927a')
+md5sums=('2013a4d3b51c5c5d42e7c34fccc798d0')
+b2sums=('f15dacdbea464595e84738d92a09e1909b5018e376ba823564961cc3b6425785b874ea6e5422886e156d05d4dab0d6036542f338cb26bb4dd28657e6d73038cc')
 
 build() {
   mkdir build
