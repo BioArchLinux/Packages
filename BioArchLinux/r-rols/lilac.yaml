@@ -4,7 +4,6 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-biobase
-- r-biocgenerics
 - r-httr2
 - r-jsonlite
 update_on:
