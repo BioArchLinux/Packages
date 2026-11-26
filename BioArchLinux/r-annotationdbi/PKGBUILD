@@ -13,6 +13,7 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
   r-biobase
+  r-biocbaseutils
   r-biocgenerics
   r-dbi
   r-iranges
