@@ -53,6 +53,7 @@ depends=('r>=3.3.0'
         'libxext'
         'libxcb'
         'java-runtime'
+        'openssl'
         )
 
 makedepends=(
@@ -64,7 +65,6 @@ makedepends=(
   'libcups'
   'ninja'
   'nvm'
-  'openssl'
   'pam'
   'python'
   'python-setuptools'
