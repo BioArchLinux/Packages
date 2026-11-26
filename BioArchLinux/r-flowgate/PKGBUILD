@@ -16,9 +16,11 @@ depends=(
   r-flowworkspace
   r-ggcyto
   r-ggplot2
+  r-opencyto
   r-purrr
   r-rlang
   r-shiny
+  r-stringr
   r-tibble
 )
 checkdepends=(
@@ -27,9 +29,9 @@ checkdepends=(
 optdepends=(
   r-knitr
   r-rmarkdown
-  r-stringr
   r-testthat
   r-tidyverse
+  r-vdiffr
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('b12d8ceeb488381dd8bd0729ead344c1')

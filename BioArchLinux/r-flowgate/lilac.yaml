@@ -9,9 +9,11 @@ repo_depends:
 - r-flowworkspace
 - r-ggcyto
 - r-ggplot2
+- r-opencyto
 - r-purrr
 - r-rlang
 - r-shiny
+- r-stringr
 - r-tibble
 repo_makedepends:
 - r-testthat
