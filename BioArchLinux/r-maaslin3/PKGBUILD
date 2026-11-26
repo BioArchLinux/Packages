@@ -17,7 +17,6 @@ depends=(
   r-ggplot2
   r-lme4
   r-lmertest
-  r-logging
   r-mirai
   r-multcomp
   r-optparse
