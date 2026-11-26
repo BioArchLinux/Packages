@@ -7,15 +7,21 @@ repo_depends:
 - r-colourpicker
 - r-cytomapper
 - r-ebimage
+- r-ggplot2
+- r-ggraph
+- r-htmlwidgets
 - r-rcolorbrewer
+- r-rlang
 - r-s4vectors
 - r-shiny
 - r-shinycssloaders
 - r-shinydashboard
 - r-singlecellexperiment
+- r-spatialexperiment
 - r-summarizedexperiment
 - r-svglite
 - r-svgpanzoom
+- r-tidygraph
 - r-viridis
 repo_makedepends:
 - r-testthat
