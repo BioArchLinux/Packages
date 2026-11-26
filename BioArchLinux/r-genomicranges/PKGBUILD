@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomicRanges
-_pkgver=1.64.0
+_pkgver=1.66.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -63,8 +63,8 @@ optdepends=(
   r-xvector
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('16b687fa031d965176f4e50532fef0a1')
-b2sums=('4425132f1134a93ab5d1181c200a59efcfcff12b5603009a5adf96d5135e5b9251274f20a0f3340de9a5d2120bb83af55f92b0cdbe7ffd97fe6b4ac10bfeebdb')
+md5sums=('3bf29f68f3a3ccdb091702cfe19bbb13')
+b2sums=('de2ef418582568ada1e4a04f32343f45309a644d374ccb43bb2f0fcb97eb751af3d0eef4aaa3a86614e364217051e1a4299a21230beb4f7e9d32b5d71426c635')
 
 build() {
   mkdir build
