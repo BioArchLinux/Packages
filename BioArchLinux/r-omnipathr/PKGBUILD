@@ -16,6 +16,7 @@ depends=(
   r-curl
   r-digest
   r-dplyr
+  r-filelock
   r-fs
   r-httr2
   r-igraph
@@ -26,24 +27,24 @@ depends=(
   r-magrittr
   r-progress
   r-purrr
+  r-r.utils
   r-rappdirs
   r-readr
   r-readxl
   r-rlang
   r-rmarkdown
+  r-rsqlite
   r-sessioninfo
   r-stringi
   r-stringr
   r-tibble
   r-tidyr
   r-tidyselect
+  r-vctrs
   r-withr
+  r-xml
   r-xml2
   r-yaml
-  r-r.utils
-  r-vctrs
-  r-rsqlite
-  r-xml
   r-zip
 )
 checkdepends=(
@@ -56,14 +57,10 @@ optdepends=(
   r-ggraph
   r-gprofiler2
   r-knitr
-  r-mlrmbo
-  r-parallelmap
-  r-paramhelpers
+  r-r.matlab
   r-sbmlr
   r-sigmajs
-  r-smoof
   r-testthat
-  r-r.matlab
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('7509a1181863f35a51c55fae5afec636')

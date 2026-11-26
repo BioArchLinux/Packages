@@ -37,6 +37,7 @@ repo_depends:
 - r-rsqlite
 - r-xml
 - r-zip
+- r-filelock
 repo_makedepends:
 - r-testthat
 update_on:
