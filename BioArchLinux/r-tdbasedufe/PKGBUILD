@@ -12,11 +12,8 @@ license=('GPL-3.0-only')
 depends=(
   r-genomicranges
   r-mofadata
-  r-readr
   r-rtensor
   r-shiny
-  r-tximport
-  r-tximportdata
 )
 checkdepends=(
   r-testthat

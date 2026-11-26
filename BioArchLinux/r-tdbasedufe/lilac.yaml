@@ -5,11 +5,8 @@ maintainers:
 repo_depends:
 - r-genomicranges
 - r-mofadata
-- r-readr
 - r-rtensor
 - r-shiny
-- r-tximport
-- r-tximportdata
 repo_makedepends:
 - r-testthat
 update_on:
