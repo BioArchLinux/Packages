@@ -5,7 +5,7 @@
 # Contributor: Grey Christoforo <first name at last name dot net>
 
 _pkgname=GenomeInfoDb
-_pkgver=1.48.0
+_pkgver=1.50.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -38,8 +38,8 @@ optdepends=(
   r-txdb.dmelanogaster.ucsc.dm3.ensgene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('a2a1c79535a195453468244d738b17da')
-b2sums=('ac91aae3222217da5c256317d6f07f654fd5a5fab418e19f39f96e4a014bb65c660f6408714372d23fb3cde1312bc65a0f5271a51bac91ed9edf80e84c3a02e4')
+md5sums=('bbadde0b6fe30dd0dd9f66d5f4a2c1b0')
+b2sums=('e71820d10367d4ecc04b5f8eadc05eedea0db127077e423471dda9adc14e2ea7a5bc1f9471975a4a15005481a7d78259a12c353efbbe4a321209e7fd028be964')
 
 build() {
   mkdir build
