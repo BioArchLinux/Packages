@@ -4,10 +4,9 @@ maintainers:
   email: pekkarr@protonmail.com
 repo_depends:
 - r-biocgenerics
-- r-genomeinfodb
 - r-iranges
 - r-s4vectors
-- r-xvector
+- r-seqinfo
 repo_makedepends:
 - r-runit
 update_on:
