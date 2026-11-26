@@ -6,12 +6,12 @@ repo_depends:
 - r-biobase
 - r-biocgenerics
 - r-delayedarray
-- r-genomeinfodb
 - r-genomicranges
 - r-iranges
 - r-matrixgenerics
 - r-s4arrays
 - r-s4vectors
+- r-seqinfo
 update_on:
 - source: rpkgs
   pkgname: SummarizedExperiment
