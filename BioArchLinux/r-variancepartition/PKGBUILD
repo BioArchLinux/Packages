@@ -40,7 +40,6 @@ checkdepends=(
   r-runit
 )
 optdepends=(
-  r-ballgown
   r-biocgenerics
   r-biocstyle
   r-cowplot
