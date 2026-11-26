@@ -65,7 +65,6 @@ references:
   doi: "10.7490/f1000research.1119039.1"
   conference:
     name: "Bioinformatics Open Source Conference (BOSC) 2022"
-  journal: "F1000Research"
   volume: 11
   start: 809
   title: "BioArchLinux: bioinformatics community with Arch Linux"
