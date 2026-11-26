@@ -9,7 +9,6 @@ repo_depends:
 - r-ggplot2
 - r-plotly
 - r-stringr
-- r-tidyr
 update_on:
 - source: rpkgs
   pkgname: MSstatsResponse

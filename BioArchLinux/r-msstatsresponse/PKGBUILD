@@ -16,7 +16,6 @@ depends=(
   r-ggplot2
   r-plotly
   r-stringr
-  r-tidyr
 )
 optdepends=(
   r-biocstyle
