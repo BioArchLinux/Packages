@@ -5,6 +5,7 @@ maintainers:
 repo_depends:
 - r-biocparallel
 - r-data.table
+- r-ggplot2
 - r-mscoreutils
 - r-protgenerics
 - r-s4vectors

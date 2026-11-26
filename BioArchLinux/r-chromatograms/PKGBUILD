@@ -12,6 +12,7 @@ license=('Artistic-2.0')
 depends=(
   r-biocparallel
   r-data.table
+  r-ggplot2
   r-mscoreutils
   r-protgenerics
   r-s4vectors
@@ -19,10 +20,11 @@ depends=(
 )
 optdepends=(
   r-biocstyle
+  r-ggiraph
   r-iranges
   r-knitr
   r-msbackendmetabolights
-  r-msdata
+  r-msdatahub
   r-mzr
   r-pheatmap
   r-rcolorbrewer
