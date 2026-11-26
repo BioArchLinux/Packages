@@ -10,7 +10,7 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('LGPL-2.0-or-later')
 depends=(
-  r-rcolorbrewer
+  r
 )
 optdepends=(
   r-assertthat
