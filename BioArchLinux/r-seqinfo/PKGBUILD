@@ -1,16 +1,15 @@
 # Maintainer: sukanka <su975853527@gmail.com>
 
 _pkgname=Seqinfo
-_pkgver=1.2.0
+_pkgver=1.4.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//[:-]/.}
-pkgrel=2
+pkgrel=1
 pkgdesc='A simple S4 class for storing basic information about a collection of genomic sequences'
 arch=('any')
 url="https://bioconductor.org/packages/${_pkgname}"
-license=('Artistic2.0')
+license=('Artistic-2.0')
 depends=(
-  r
   r-biocgenerics
   r-iranges
   r-s4vectors
@@ -30,8 +29,8 @@ optdepends=(
   r-txdb.hsapiens.ucsc.hg38.knowngene
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('b6bda99a95704fab8638e7caaf4646e4')
-sha256sums=('f86693fd96ff24dc4f79c340040d68256be53690fe14f06330af5c356ea3a073')
+md5sums=('591b82edb8442041f4b1fb1c87c61dd8')
+sha256sums=('b276931da4606107ae730e1ca5b4ad89a348d99c06e4d7a6a8af47f2c23e40df')
 
 build() {
   R CMD INSTALL ${_pkgname}_${_pkgver}.tar.gz -l "${srcdir}"

@@ -9,7 +9,8 @@ repo_depends:
 - r-iranges
 - r-s4vectors
 update_on:
-- regex: Seqinfo_([\d._-]+).tar.gz
-  source: regex
-  url: https://bioconductor.org/packages/Seqinfo
+- source: rpkgs
+  pkgname: Seqinfo
+  repo: bioc
+  md5: true
 - alias: r
