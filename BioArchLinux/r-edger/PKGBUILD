@@ -11,9 +11,11 @@ url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
   r-limma
-  r-locfit
   blas
   lapack
+)
+makedepends=(
+  gcc-fortran
 )
 optdepends=(
   r-annotationdbi
