@@ -60,12 +60,15 @@ optdepends=(
   r-modeldata
   r-prodlim
   r-ranger
+  r-recipes
   r-remotes
   r-rmarkdown
+  r-robustbase
   r-sparklyr
   r-tensorflow
   r-testthat
   r-withr
+  r-workflows
   r-xgboost
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
