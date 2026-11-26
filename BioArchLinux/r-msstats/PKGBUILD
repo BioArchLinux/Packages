@@ -10,6 +10,7 @@ arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
+  r-biocparallel
   r-checkmate
   r-data.table
   r-ggplot2
@@ -19,10 +20,12 @@ depends=(
   r-limma
   r-lme4
   r-marray
+  r-matter
   r-msstatsconvert
   r-plotly
   r-preprocesscore
   r-rcpp
+  r-rhpcblasctl
   r-rlang
   r-statmod
   blas

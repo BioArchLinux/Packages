@@ -3,6 +3,7 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-biocparallel
 - r-checkmate
 - r-data.table
 - r-ggplot2
@@ -12,10 +13,13 @@ repo_depends:
 - r-limma
 - r-lme4
 - r-marray
+- r-matter
 - r-msstatsconvert
 - r-plotly
 - r-preprocesscore
 - r-rcpp
+- r-rhpcblasctl
+- r-rlang
 - r-statmod
 repo_makedepends:
 - r-rcpparmadillo
