@@ -17,6 +17,7 @@ depends=(
   r-protgenerics
   r-s4vectors
   r-spectra
+  r-stringi
 )
 checkdepends=(
   r-testthat

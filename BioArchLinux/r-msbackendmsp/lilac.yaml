@@ -10,6 +10,7 @@ repo_depends:
 - r-protgenerics
 - r-s4vectors
 - r-spectra
+- r-stringi
 repo_makedepends:
 - r-testthat
 update_on:
