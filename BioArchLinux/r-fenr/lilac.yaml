@@ -12,7 +12,6 @@ repo_depends:
 - r-purrr
 - r-readr
 - r-rlang
-- r-rvest
 - r-shiny
 - r-stringr
 - r-tibble
