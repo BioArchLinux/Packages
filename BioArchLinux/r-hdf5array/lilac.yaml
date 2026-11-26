@@ -8,12 +8,9 @@ repo_depends:
 - r-iranges
 - r-rhdf5
 - r-h5mread
-- r-rhdf5filters
 - r-s4arrays
 - r-s4vectors
 - r-sparsearray
-repo_makedepends:
-- r-rhdf5lib
 update_on:
 - source: rpkgs
   pkgname: HDF5Array
