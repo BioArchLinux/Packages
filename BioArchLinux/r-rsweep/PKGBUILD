@@ -8,7 +8,7 @@ pkgrel=1
 pkgdesc="Functions to creation of low dimensional comparative matrices of Amino Acid Sequence occurrences"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
-license=('GPL-3.0-only')
+license=('GPL-2.0-or-later')
 depends=(
   r-pracma
 )
