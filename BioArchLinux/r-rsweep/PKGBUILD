@@ -5,18 +5,25 @@ _pkgver=1.16.2
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
-pkgdesc="Functions to creation of low dimensional comparative matrices of Amino Acid Sequence occurrences"
+pkgdesc="Spaced Words Projection (SWeeP)"
 arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-2.0-or-later')
 depends=(
-  r-pracma
+  r-biostrings
+  r-doparallel
+  r-foreach
+  r-stringi
 )
 optdepends=(
+  r-ape
   r-biocstyle
-  r-biostrings
   r-knitr
   r-rmarkdown
+  r-rtsne
+  r-seurat
+  r-testthat
+  r-tictoc
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
 md5sums=('18cf9743d6a6e6deeb529ba896bf6790')

@@ -3,7 +3,10 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
-- r-pracma
+- r-biostrings
+- r-doparallel
+- r-foreach
+- r-stringi
 update_on:
 - source: rpkgs
   pkgname: rSWeeP
