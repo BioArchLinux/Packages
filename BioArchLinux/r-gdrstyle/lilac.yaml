@@ -16,6 +16,7 @@ repo_depends:
 - r-withr
 - r-yaml
 - r-biocstyle
+- r-data.table
 repo_makedepends:
 - r-pkgdown
 - r-testthat

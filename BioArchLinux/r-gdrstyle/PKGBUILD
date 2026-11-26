@@ -12,7 +12,9 @@ license=('Artistic-2.0')
 depends=(
   r-bioccheck
   r-biocmanager
+  r-biocstyle
   r-checkmate
+  r-data.table
   r-desc
   r-git2r
   r-lintr
@@ -22,7 +24,6 @@ depends=(
   r-rjson
   r-withr
   r-yaml
-  r-biocstyle
 )
 checkdepends=(
   r-pkgdown
