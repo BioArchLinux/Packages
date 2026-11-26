@@ -10,9 +10,11 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('MIT')
 depends=(
+  r-biocgenerics
   r-cli
   r-dplyr
   r-glue
+  r-iranges
   r-pillar
   r-purrr
   r-rlang
@@ -28,7 +30,6 @@ optdepends=(
   r-airway
   r-devtools
   r-here
-  r-iranges
   r-knitr
   r-rmarkdown
   r-testthat
