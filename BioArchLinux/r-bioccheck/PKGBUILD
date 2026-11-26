@@ -19,6 +19,7 @@ depends=(
   r-commonmark
   r-graph
   r-httr2
+  r-jsonlite
   r-knitr
   r-rvest
   r-stringdist
@@ -28,7 +29,6 @@ optdepends=(
   r-biocstyle
   r-devtools
   r-gert
-  r-jsonlite
   r-rmarkdown
   r-tinytest
   r-usethis
