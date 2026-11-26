@@ -6,17 +6,17 @@ pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
 pkgdesc="A package to perform simple cell segmentation"
-arch=(any)
+arch=(x86_64)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('GPL-3.0-only')
 depends=(
   r-biocparallel
   r-cytomapper
   r-ebimage
+  r-rcpp
+  r-rhpcblasctl
   r-s4vectors
-  r-spatstat.geom
   r-summarizedexperiment
-  r-terra
 )
 checkdepends=(
   r-testthat
@@ -25,6 +25,8 @@ optdepends=(
   r-biocstyle
   r-ggplot2
   r-knitr
+  r-spatialexperiment
+  r-terra
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

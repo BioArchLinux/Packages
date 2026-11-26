@@ -6,10 +6,10 @@ repo_depends:
 - r-biocparallel
 - r-cytomapper
 - r-ebimage
+- r-rcpp
+- r-rhpcblasctl
 - r-s4vectors
-- r-spatstat.geom
 - r-summarizedexperiment
-- r-terra
 repo_makedepends:
 - r-testthat
 update_on:
