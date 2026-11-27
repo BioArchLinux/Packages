@@ -7,7 +7,6 @@ repo_depends:
 - r-rcpp
 - r-s4vectors
 - r-summarizedexperiment
-- r-zlibbioc
 repo_makedepends:
 - r-biostrings
 - r-testthat
