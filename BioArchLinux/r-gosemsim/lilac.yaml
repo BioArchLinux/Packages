@@ -7,11 +7,9 @@ repo_depends:
 - r-dbi
 - r-digest
 - r-go.db
-- r-r.utils
+- r-rcpp
 - r-rlang
 - r-yulab.utils
-repo_makedepends:
-- r-rcpp
 update_on:
 - source: rpkgs
   pkgname: GOSemSim

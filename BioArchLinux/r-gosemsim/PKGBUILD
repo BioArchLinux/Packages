@@ -14,22 +14,23 @@ depends=(
   r-dbi
   r-digest
   r-go.db
+  r-rcpp
   r-rlang
   r-yulab.utils
 )
 makedepends=(
-  r-rcpp
 )
 optdepends=(
   r-annotationhub
   r-biocmanager
+  r-biocparallel
   r-clusterprofiler
   r-dose
+  r-gson
   r-knitr
   r-org.hs.eg.db
-  r-prettydoc
+  r-quarto
   r-readr
-  r-rmarkdown
   r-rocr
   r-testthat
   r-tidyr
