@@ -15,17 +15,18 @@ depends=(
   r-enrichit
   r-ggplot2
   r-gosemsim
+  r-gson
+  r-memoise
   r-reshape2
   r-yulab.utils
 )
 optdepends=(
+  r-aisdk
   r-clusterprofiler
-  r-gson
   r-knitr
-  r-memoise
   r-org.hs.eg.db
-  r-prettydoc
-  r-rmarkdown
+  r-org.mm.eg.db
+  r-quarto
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")

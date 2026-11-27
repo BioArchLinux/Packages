@@ -7,6 +7,8 @@ repo_depends:
 - r-enrichit
 - r-ggplot2
 - r-gosemsim
+- r-gson
+- r-memoise
 - r-reshape2
 - r-yulab.utils
 update_on:
