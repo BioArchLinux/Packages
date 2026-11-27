@@ -20,7 +20,6 @@ repo_depends:
 - r-grbase
 - r-igraph
 - r-iterators
-- r-logging
 - r-logger
 - r-metbrewer
 - r-ppcor
@@ -28,8 +27,8 @@ repo_depends:
 - r-rlang
 - r-stringr
 - r-tidyr
-- r-tidyverse
 - r-tnet
+- r-tibble
 update_on:
 - source: rpkgs
   pkgname: SPONGE
