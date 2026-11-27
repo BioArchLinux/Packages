@@ -6,10 +6,8 @@ repo_depends:
 - r-annotationdbi
 - r-biocfilecache
 - r-curl
-- r-digest
 - r-httr2
 - r-progress
-- r-rappdirs
 - r-stringr
 - r-xml2
 update_on:
