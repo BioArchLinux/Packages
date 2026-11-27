@@ -1,7 +1,7 @@
 # Maintainer: Pekka Ristola <pekkarr [at] protonmail [dot] com>
 
 _pkgname=nipalsMCIA
-_pkgver=1.10.0
+_pkgver=1.12.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -40,8 +40,8 @@ optdepends=(
   r-tidyverse
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('1d26068e873bf01b6b20f6d5a41ba0a7')
-b2sums=('18565d8cbb29a5bf9625ea78f4e872a33037c12b0fdc0355f8b60454e068e1dccc610d3ea05a5f6892b7dbc32fa94521e9e44e9327eb159cf92a092ae2583044')
+md5sums=('685392df0d0a2c3585b0a11cc7a51018')
+b2sums=('a83a8b82f8c51ccaa8b8f02a575c41b92cc0f03369848d419bd8276d740cbe4c6240e3528be2b302d3194baa965176286b5924f70f7a58196ef8486329de3b24')
 
 build() {
   mkdir build
