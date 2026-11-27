@@ -16,9 +16,9 @@ repo_depends:
 - r-janitor
 - r-knitr
 - r-lwgeom
+- r-patchwork
 - r-pheatmap
 - r-plotly
-- r-rbioformats
 - r-s4vectors
 - r-sf
 - r-shiny
@@ -29,6 +29,7 @@ repo_depends:
 - r-spatstat.geom
 - r-summarizedexperiment
 - r-uwot
+- r-withr
 repo_makedepends:
 - r-edger
 - r-testthat

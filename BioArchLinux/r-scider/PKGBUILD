@@ -23,9 +23,9 @@ depends=(
   r-janitor
   r-knitr
   r-lwgeom
+  r-patchwork
   r-pheatmap
   r-plotly
-  r-rbioformats
   r-s4vectors
   r-sf
   r-shiny
@@ -36,6 +36,7 @@ depends=(
   r-spatstat.geom
   r-summarizedexperiment
   r-uwot
+  r-withr
 )
 checkdepends=(
   r-edger
@@ -43,6 +44,7 @@ checkdepends=(
 )
 optdepends=(
   r-edger
+  r-rbioformats
   r-testthat
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
