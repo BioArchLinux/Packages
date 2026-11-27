@@ -8,7 +8,6 @@ repo_depends:
 - r-dorng
 - r-foreach
 - r-glmnet
-- r-hdci
 - r-mathjaxr
 - r-matrixextra
 - r-parallelly
