@@ -3,9 +3,18 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
+- r-bumpymatrix
+- r-checkmate
+- r-data.table
 - r-gdrcore
 - r-gdrimport
 - r-gdrutils
+- r-multiassayexperiment
+- r-qs2
+- r-rmarkdown
+- r-s4vectors
+- r-summarizedexperiment
+- r-whisker
 repo_makedepends:
 - r-gdrtestdata
 - r-testthat

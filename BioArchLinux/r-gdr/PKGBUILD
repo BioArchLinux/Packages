@@ -10,9 +10,18 @@ arch=(any)
 url="https://bioconductor.org/packages/$_pkgname"
 license=('Artistic-2.0')
 depends=(
+  r-bumpymatrix
+  r-checkmate
+  r-data.table
   r-gdrcore
   r-gdrimport
   r-gdrutils
+  r-multiassayexperiment
+  r-qs2
+  r-rmarkdown
+  r-s4vectors
+  r-summarizedexperiment
+  r-whisker
 )
 checkdepends=(
   r-gdrtestdata
@@ -20,17 +29,21 @@ checkdepends=(
 )
 optdepends=(
   r-biocstyle
-  r-bumpymatrix
   r-futile.logger
   r-gdrstyle
   r-gdrtestdata
+  r-ggplot2
   r-kableextra
   r-knitr
   r-markdown
+  r-mockery
+  r-patchwork
   r-purrr
-  r-rmarkdown
-  r-summarizedexperiment
+  r-rcolorbrewer
+  r-stringr
+  r-summarytools
   r-testthat
+  r-writexl
   r-yaml
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
