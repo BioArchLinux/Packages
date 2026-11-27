@@ -1,10 +1,10 @@
 # Maintainer: Adityarup Laha <me@adityaruplaha.me>
 
 _pkgname=charport
-_pkgver=0.2.0
+_pkgver=0.3.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=1
 pkgdesc="ALTREP String Interoperability"
 arch=(x86_64)
 url="https://cran.r-project.org/package=$_pkgname"
@@ -18,8 +18,8 @@ optdepends=(
   r-rcpp
 )
 source=("https://cran.r-project.org/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('2f8583467b71c1a4731c94d1171a03b3')
-b2sums=('fae58bdd37c4bf9e59827d058dd1a7bad7189bfbad28c70bbe47e2e42c2822483d61708a11d7a99aa7fd9e161173b44942a13867767d2db6a3c8cf2efef0c89a')
+md5sums=('b9e7b828e1179a448b2a28859e6581db')
+b2sums=('48a6758fc2f0c83ba516267c7a0dfb5f2dd5a944d269b1e24c93a544d0aa293e051e2e88091f690f741e84a07ed9b3e6ef939a63d9b2010ef80f789afb71fc9a')
 
 build() {
   mkdir build
