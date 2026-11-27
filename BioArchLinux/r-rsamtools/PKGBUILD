@@ -1,7 +1,7 @@
 # Maintainer: Guoyi Zhang <guoyizhang at malacology dot net>
 
 _pkgname=Rsamtools
-_pkgver=2.28.0
+_pkgver=2.30.0
 pkgname=r-${_pkgname,,}
 pkgver=${_pkgver//-/.}
 pkgrel=1
@@ -41,8 +41,8 @@ optdepends=(
   r-variantannotation
 )
 source=("https://bioconductor.org/packages/release/bioc/src/contrib/${_pkgname}_${_pkgver}.tar.gz")
-md5sums=('25f396ca7d0e44d30f6e46d70c7c1fc6')
-b2sums=('1e2318b93f65ee87cd87a85e2b8754589e1e33716768e0bd04b69e777bcbdda691705af537bcd26489b54ed759185c6c91e065f4f2dc994f6c3edabbf226d88e')
+md5sums=('efc207791308f028bc0b3b1b7f0f15de')
+b2sums=('3fa46c6ae98dc33db6f1e995f71485c5ec6d99d30a41301bd4252f9a4fe9c4bbc32aeac4feea60563d8c3dc4e8908cfa30559457124f3df86be76a4be984b31c')
 
 build() {
   mkdir build
