@@ -7,8 +7,10 @@ repo_depends:
 - r-bumpymatrix
 - r-checkmate
 - r-data.table
+- r-drc
 - r-futile.logger
 - r-gdrutils
+- r-jsonlite
 - r-multiassayexperiment
 - r-purrr
 - r-s4vectors
