@@ -7,7 +7,6 @@ repo_depends:
 - r-biocneighbors
 - r-delayedmatrixstats
 - r-glmgampoi
-- r-harmony
 - r-hdf5array
 - r-irlba
 - r-limma
