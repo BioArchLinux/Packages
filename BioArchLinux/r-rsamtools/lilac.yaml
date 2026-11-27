@@ -7,10 +7,10 @@ repo_depends:
 - r-biocparallel
 - r-biostrings
 - r-bitops
-- r-genomeinfodb
 - r-genomicranges
 - r-iranges
 - r-s4vectors
+- r-seqinfo
 - r-xvector
 repo_makedepends:
 - r-rhtslib
