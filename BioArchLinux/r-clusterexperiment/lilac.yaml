@@ -4,6 +4,7 @@ maintainers:
   email: kuoi@bioarchlinux.org
 repo_depends:
 - r-ape
+- r-biobase
 - r-biocgenerics
 - r-biocsingular
 - r-delayedarray
