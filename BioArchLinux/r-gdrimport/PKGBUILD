@@ -13,14 +13,12 @@ depends=(
   r-assertthat
   r-bumpymatrix
   r-checkmate
-  r-coregx
   r-data.table
   r-futile.logger
   r-gdrutils
   r-magrittr
   r-multiassayexperiment
   r-openxlsx
-  r-pharmacogx
   r-qs2
   r-readxl
   r-rio
@@ -36,9 +34,11 @@ checkdepends=(
 )
 optdepends=(
   r-biocstyle
+  r-coregx
   r-gdrstyle
   r-gdrtestdata
   r-knitr
+  r-pharmacogx
   r-purrr
   r-testthat
 )
