@@ -8,15 +8,12 @@ repo_depends:
 - r-delayedarray
 - r-dynamictreecut
 - r-ff
-- r-httr
 - r-logging
 - r-maaslin2
 - r-plyr
 - r-psych
-- r-rjsonio
 - r-summarizedexperiment
 - r-wgcna
-- r-xml2
 repo_makedepends:
 - r-testthat
 update_on:
