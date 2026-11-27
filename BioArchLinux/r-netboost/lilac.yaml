@@ -3,11 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-biocstyle
 - r-colorspace
 - r-dynamictreecut
 - r-impute
-- r-r.utils
 - r-rcpp
 - r-rcppparallel
 - r-wgcna
