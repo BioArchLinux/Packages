@@ -3,8 +3,9 @@ maintainers:
 - github: pekkarr
   email: pekkarr@protonmail.com
 repo_depends:
-- r-broom
 - r-car
+- r-generics
+- r-glue
 - r-magrittr
 - r-purrr
 - r-rgl
