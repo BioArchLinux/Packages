@@ -3,18 +3,24 @@ maintainers:
 - github: starsareintherose
   email: kuoi@bioarchlinux.org
 repo_depends:
+- r-annotate
+- r-annotationdbi
 - r-biobase
+- r-biocgenerics
 - r-biocparallel
-- r-biocsingular
 - r-cli
 - r-delayedarray
 - r-delayedmatrixstats
 - r-gseabase
 - r-hdf5array
 - r-iranges
+- r-matrixgenerics
 - r-memuse
+- r-rhdf5
+- r-s4arrays
 - r-s4vectors
 - r-singlecellexperiment
+- r-sparsearray
 - r-sparsematrixstats
 - r-spatialexperiment
 - r-summarizedexperiment
