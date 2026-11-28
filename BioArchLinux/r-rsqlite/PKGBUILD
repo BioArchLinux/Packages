@@ -15,7 +15,6 @@ depends=(
   r-blob
   r-dbi
   r-memoise
-  r-pkgconfig
   r-rlang
   sqlite
 )
@@ -38,6 +37,7 @@ optdepends=(
   r-httpuv
   r-knitr
   r-magrittr
+  r-pkgconfig
   r-rmarkdown
   r-rvest
   r-testthat

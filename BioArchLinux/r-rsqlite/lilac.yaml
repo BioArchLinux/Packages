@@ -7,12 +7,9 @@ repo_depends:
 - r-blob
 - r-dbi
 - r-memoise
-- r-pkgconfig
 - r-rlang
 repo_makedepends:
 - r-cpp11
-- r-dbitest
-- r-testthat
 update_on:
 - source: rpkgs
   pkgname: RSQLite
